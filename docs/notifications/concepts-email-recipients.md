@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-Who receives an email notification when an event matches a subscription involves many factors. Not understanding these factors can result in your inbox receiving too many or too few emails. Learn about how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
+Many factors determine the recipients of an email notification when an event matches a subscription. If you're unaware, these factors can result in your inbox receiving too many or too few emails. Learn about how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 
 [!INCLUDE [note-ui-changes](includes/note-ui-changes.md)]
 
@@ -121,7 +121,7 @@ The option _Skip initiator_, which appears for most event types, controls whethe
 The delivery option is taken from the team's delivery setting and can be one of the following options:
 
 * **Deliver to email address:** The email is delivered to the team's preferred email address.
-* **Deliver to individual members:** See the following option, [_Members of team_](#option-members-of-team).
+* **Deliver to individual members:** See the following option, [Members of team_](#members-of-a-team).
 * **Do not deliver:** No email is delivered.
 
 ![Screenshot showing email team delivery option preference.](media/email-team-delivery-option-preference.png)
@@ -133,7 +133,7 @@ The team's delivery setting value is displayed after the _Address_ label and can
 The notification gets sent to multiple custom email addresses, which are separated by semicolons.
 
 ![Screenshot showing custom email team delivery options.](media/email-team-delivery-option-custom.png)
-### Members of team
+### Members of a team
 
 The team or group membership is expanded to determine the email recipients. In the simple case, a team or group expands to a list of individuals and each is included on the **To:** line of the resulting email. However, the results of this expansion can be complicated and are explained in more detail in the [team and group expansion](#team-and-group-expansion-for-email-recipients) section.
 
@@ -167,21 +167,13 @@ Let's look at a few scenarios. We use the following symbols to denote the types 
 * `T`: nested team or group
 * `A`: mail-enabled Azure Active Directory (Azure AD) group.
 
-|Scenario  |Example  |
-|---------|---------|
-|A member with _Do not deliver_ preference     | The team has members `I1`, `I2`, and `T1`. 
-`T1`'s delivery preference is _Do not deliver_.
-
-What happens: only `I1` and `I2` get notified via their preferred email addresses. Members of `T1` aren't notified.        |
-|A member with _Deliver to individual members_ preference   | The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Deliver to individual members_. `T1` has members `I2` and `I3`.
-
-What happens: `T1` is expanded (because of its delivery preference) and so `I1`, `I2`, and `I3` get notified via their preferred email addresses.        |
-|A nested group   |The team has members `I1`, `I2`, and `T1`. `T1` has members `I2`, `I3`, and `T2`. `T1`'s delivery preference is _Do not deliver_. `T2` has members `I4` and `I5`. `T2`'s delivery preference is _Deliver to individual members_. 
-
-What happens: because `T1` isn't expanded (because its delivery preference is "do not deliver"), only `I1` and `I2` get notified via their preferred email addresses.         |
-|A member that's an Azure AD group    | The team has members `I1`, `I2`, and `A1`.
-
-What happens: only `I1` and `I2` get notified via their preferred email addresses. Members of `A1` don't get notified, as Azure DevOps doesn't expand AD groups when delivering notifications.         |
+| Scenario | Example |
+|--|--|
+| A member with _Do not deliver_ preference | The team has members `I1`, `I2`, and `T1`.
+| `T1`'s delivery preference is _Do not deliver_. What happens: only `I1` and `I2` get notified via their preferred email addresses. Members of `T1` aren't notified. |
+| A member with _Deliver to individual members_ preference | The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Deliver to individual members_. `T1` has members `I2` and `I3`. What happens: `T1` is expanded (because of its delivery preference) and so `I1`, `I2`, and `I3` get notified via their preferred email addresses. |
+| A nested group | The team has members `I1`, `I2`, and `T1`. `T1` has members `I2`, `I3`, and `T2`. `T1`'s delivery preference is _Do not deliver_. `T2` has members `I4` and `I5`. `T2`'s delivery preference is _Deliver to individual members_. What happens: because `T1` isn't expanded (because its delivery preference is "do not deliver"), only `I1` and `I2` get notified via their preferred email addresses. |
+| A member that's an Azure AD group | The team has members `I1`, `I2`, and `A1`. What happens: only `I1` and `I2` get notified via their preferred email addresses. Members of `A1` don't get notified, as Azure DevOps doesn't expand AD groups when delivering notifications. |
 
 ## Related articles
 
