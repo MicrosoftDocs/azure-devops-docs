@@ -49,7 +49,7 @@ From the web portal, open a work item and add a tag. Choose **Add tag** and type
 > ![Add one or more tags to a work item](media/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 From the web portal, open a work item and add a tag. Choose **Add** and type your keyword. Or, select from the list of previously assigned tags.  
 
 ![Add one or more tags to a work item](media/add-tags-to-work-items-vso-tfs.png)  

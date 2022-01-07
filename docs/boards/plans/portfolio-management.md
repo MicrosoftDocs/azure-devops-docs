@@ -60,7 +60,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 The Fabrikam Account Management portfolio owner has several campaigns to start and deliver in the coming year. The owner creates an epic for each campaign and then breaks down each epic into various features that contribute to each campaign. 
 

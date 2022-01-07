@@ -60,7 +60,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. From the web portal, open a backlog or query results page. Then, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 

@@ -22,7 +22,7 @@ ms.date: 12/03/2021
 With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. Once you have your plan in place, you can start driving code development efforts. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. 
 
 ::: moniker-end

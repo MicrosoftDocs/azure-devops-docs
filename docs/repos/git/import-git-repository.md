@@ -88,7 +88,7 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 >[!NOTE]
 >The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
 
-::: moniker range=">= tfs-2013"
+ 
 
 ## Manually import a repo
 
@@ -124,8 +124,7 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     cd ..
     rm -rf old-contoso-repo.git
     ```
-
-::: moniker-end
+ 
 
 ## Frequently asked questions
 
@@ -155,14 +154,13 @@ This failure can happen when creating import request or while import is in progr
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+ 
 
 ### Can I import from previous versions of Team Foundation Server?
 
 If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import will fail.
 This happens because of a contract mismatch between the latest Azure DevOps Services/TFS and pre-2017 RTM versions of TFS.
-
-::: moniker-end
+ 
 
 ::: moniker range=">= tfs-2017"
 

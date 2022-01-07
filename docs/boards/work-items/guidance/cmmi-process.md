@@ -85,7 +85,7 @@ If your project collection and the project are configured with SQL Server Analys
 If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="<= tfs-2017"
 <a id="dashboards"></a>
 
 ## Access SharePoint portal dashboards
