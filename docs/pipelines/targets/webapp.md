@@ -586,7 +586,7 @@ To learn more, see [Release, branch, and stage triggers](../release/triggers.md)
 
 * * *
 
-<h2 id="cd"> (Classic) Deploy with a release pipeline</h2>
+## (Classic) Deploy with a release pipeline
 
 You can use a release pipeline to pick up the artifacts published by your build and then deploy them to your Azure web site.
 
@@ -601,6 +601,7 @@ You can use a release pipeline to pick up the artifacts published by your build 
 1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node.js app, select the **Deploy Node.js App to Azure App Service** template.
    Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
 
+   > [!NOTE]
    > The only difference between these templates is that Node.js template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
 
 1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
@@ -610,6 +611,7 @@ You can use a release pipeline to pick up the artifacts published by your build 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
    continuous deployment trigger is enabled, and add a filter to include the **main** branch.
 
+   > [!NOTE]
    > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 
 1. Open the **Tasks** tab and, with **Stage 1** selected, configure the task property variables as follows:
@@ -630,7 +632,7 @@ You can use a release pipeline to pick up the artifacts published by your build 
 
 1. Save the release pipeline.
 
-<h3 id="deploy">Create a release to deploy your app</h2>
+### Create a release to deploy your app
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
@@ -643,6 +645,7 @@ You're now ready to create a release, which means to run the release pipeline wi
 1. In the pipeline view, choose the status link in the stages of the pipeline to see the logs and agent output.
 
 1. After the release is complete, navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
+
 
 [!INCLUDE [include](includes/webapp/deploy-options.md)]
 
