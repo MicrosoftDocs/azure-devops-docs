@@ -64,7 +64,7 @@ You can manage subscriptions and delivery settings at the team-level or organiza
 * **Deliver to individual members:** notifications get delivered to each member of the group or team. This setting is usually the default option. For more information about the default option, see [Team expansion](#team-and-group-expansion-for-email-recipients).
 * **Do not deliver:** notifications aren't delivered by default.
 
-![Screenshot showing Team Delivery settings dialog.](media/email-team-delivery-settings.png)
+    ![Screenshot showing Team Delivery settings dialog.](media/email-team-delivery-settings.png)
 
 If you don't explicitly choose delivery settings for a team or group, it gets determined from the [organization-level delivery setting](manage-team-group-global-organization-notifications.md). The default is either _Deliver to individual members_ or _Do not deliver_. 
 
