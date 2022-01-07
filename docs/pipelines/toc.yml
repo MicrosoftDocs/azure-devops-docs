@@ -386,9 +386,6 @@
           displayName: containers, docker, azure web app
         - name: Visual Studio Code Deploy to Azure extension
           href: targets/deploy-to-azure-vscode.md
-        - name: Azure Web App (Classic)
-          href: apps/cd/deploy-webdeploy-webapps.md
-          displayName: web app, webdeploy
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
