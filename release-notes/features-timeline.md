@@ -86,7 +86,7 @@ This list includes features that are currently in preview. The "Released" column
     <tbody>
 <tr><td rowspan="2"><strong>2021 Q1</strong></td>
     <td><a href="https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/" data-raw-source="[Limit user visibility and collaboration for projects](https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/)">Limit user visibility and collaboration for projects</a></td><td>General</td><td>Future</td>
-     <tr><td><a href=https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](./2020/sprint-179-update.md#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
+     <tr><td><a href=/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](./2020/sprint-179-update.md#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
 </tr>
 <tr><td rowspan="3"><strong>2021 Q2</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>General</td><td>Future</td>
@@ -4482,17 +4482,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020)">2020.1.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true)">2020.1.1</a></td>
           <td>August 26, 2021</td>
           <td>18.181.31626.1</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops)">2020.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops&preserve-view=true)">2020.1</a></td>
           <td>May 25, 2021</td>
           <td>18.181.31230.2</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops)">2020.0.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true)">2020.0.1</a></td>
           <td>January 19, 2021</td>
           <td>18.170.30910.2</td>
         </tr>
