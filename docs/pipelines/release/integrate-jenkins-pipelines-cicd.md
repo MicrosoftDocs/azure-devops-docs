@@ -3,7 +3,6 @@ title: Deploy Jenkins CI builds
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
 ms.topic: tutorial
 ms.author: ronai
-author: mlearned
 ms.reviewer: vijayma
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
 ms.custom: "mvc, seodec18"
