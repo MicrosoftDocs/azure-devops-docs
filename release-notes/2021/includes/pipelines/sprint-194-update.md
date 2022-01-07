@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Post neutral status to GitHub when a build is skipped 
 
-With Azure Pipelines, you could always [validate a pull request](/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#pr-triggers) in GitHub. You could also specify which [paths](/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#paths) in your GitHub repo should trigger a pipeline. For instance, the following pipeline is triggered when a change is pushed to `code` in the `main` branch, but not triggered when a change is pushed to the `docs` folder.
+With Azure Pipelines, you could always [validate a pull request](/azure/devops/pipelines/repos/github?view=azure-devops&preserve-view=true&tabs=yaml#pr-triggers) in GitHub. You could also specify which [paths](/azure/devops/pipelines/repos/github?view=azure-devops&preserve-view=true&tabs=yaml#paths) in your GitHub repo should trigger a pipeline. For instance, the following pipeline is triggered when a change is pushed to `code` in the `main` branch, but not triggered when a change is pushed to the `docs` folder.
 
 ```
 trigger: none
@@ -59,7 +59,7 @@ When you create one of these resources, the default experience grants access to 
 
 [Decorators](/azure/devops/extend/develop/add-pipeline-decorator) are a way to automatically inject tasks into a pipeline. They are commonly used by central teams in an organization to automatically run required compliance procedures. Decorators can be used with classic builds, classic releases, or YAML pipelines.
 
-Currently, a task can be injected through a decorator at the beginning of every job, at the end of every job, or right after a check-out task. To control this, you specify a `target` in the contribution section of the decorator's extension as described [here](/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops#author-a-pipeline-decorator). We are now expanding the list of targets to include the following:
+Currently, a task can be injected through a decorator at the beginning of every job, at the end of every job, or right after a check-out task. To control this, you specify a `target` in the contribution section of the decorator's extension as described [here](/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&preserve-view=true#author-a-pipeline-decorator). We are now expanding the list of targets to include the following:
 
 ```
 ms.azure-pipelines-agent-job.pre-task-tasks

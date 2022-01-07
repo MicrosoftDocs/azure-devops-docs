@@ -32,7 +32,7 @@ Here are a few things to note when using retries:
 
 ### Consume inputs from another task in a decorator
 
-We recently added a [feature](/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops#specifying-a-target-task) to inject a task automatically into a pipeline before another target task in that pipeline. We are now enhancing that feature by letting you customize that injected task using the input parameters of the target task. The syntax for writing a decorator to do this is as follows:
+We recently added a [feature](/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&preserve-view=true#specifying-a-target-task) to inject a task automatically into a pipeline before another target task in that pipeline. We are now enhancing that feature by letting you customize that injected task using the input parameters of the target task. The syntax for writing a decorator to do this is as follows:
 
 ```
 {
@@ -61,7 +61,7 @@ A common use case that can be accomplished by such a scenario is as follows. Let
 
 ### Improvements to service connections usage history
 
-When a pipeline uses a [service connection](/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml), that usage is logged in the connection's history. Administrators of the service connection can review the usage history by navigating to project settings and selecting the appropriate service connection. There were some issues with the usage history of service connections that have been fixed with this update. Fixes include the following: 
+When a pipeline uses a [service connection](/azure/devops/pipelines/library/service-endpoints?view=azure-devops&preserve-view=true&tabs=yaml), that usage is logged in the connection's history. Administrators of the service connection can review the usage history by navigating to project settings and selecting the appropriate service connection. There were some issues with the usage history of service connections that have been fixed with this update. Fixes include the following: 
 
 * When a service connection is used in a [deployment job](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops) (instead of a regular job), that usage was not being logged. 
 * If you used multiple service connections in multiple stages of a pipeline, all the service connections would show a record in their usage history even though some of the stages were skipped.
