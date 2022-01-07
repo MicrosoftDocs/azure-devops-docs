@@ -131,7 +131,7 @@ We’ve updated the software available in our hosted build pool to include:
 -.NET Core RC2 Tooling
 -Service Fabric runtime, SDK, and tools for Visual Studio 2015
 
-For a full list of software, see [https://docs.microsoft.com/azure/devops/pipelines/agents/hosted](/azure/devops/pipelines/agents/hosted).
+For a full list of software, see [/azure/devops/pipelines/agents/hosted](/azure/devops/pipelines/agents/hosted).
 
 ## Dashboards – Resizable query results widget
 
