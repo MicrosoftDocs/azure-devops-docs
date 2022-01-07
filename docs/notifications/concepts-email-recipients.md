@@ -61,7 +61,7 @@ You can manage subscriptions and delivery settings at the team-level or organiza
 2. Select from the following settings:
 
 * **Deliver to email address:** notifications get delivered to a specific email address.
-* **Deliver to individual members:** notifications get delivered to each member of the group or team. This is usually the default option. For more information about the default option, see [Team expansion](#team-and-group-expansion-for-email-recipients).
+* **Deliver to individual members:** notifications get delivered to each member of the group or team. This setting is usually the default option. For more information about the default option, see [Team expansion](#team-and-group-expansion-for-email-recipients).
 * **Do not deliver:** notifications aren't delivered by default.
 
 ![Screenshot showing Team Delivery settings dialog.](media/email-team-delivery-settings.png)
@@ -121,7 +121,7 @@ The option _Skip initiator_, which appears for most event types, controls whethe
 The delivery option is taken from the team's delivery setting and can be one of the following options:
 
 * **Deliver to email address:** The email is delivered to the team's preferred email address.
-* **Deliver to individual members:** See the following option, [Members of team_](#members-of-a-team).
+* **Deliver to individual members:** See the following option, [Members of team_](#members-of-team).
 * **Do not deliver:** No email is delivered.
 
 ![Screenshot showing email team delivery option preference.](media/email-team-delivery-option-preference.png)
@@ -133,7 +133,7 @@ The team's delivery setting value is displayed after the _Address_ label and can
 The notification gets sent to multiple custom email addresses, which are separated by semicolons.
 
 ![Screenshot showing custom email team delivery options.](media/email-team-delivery-option-custom.png)
-### Members of a team
+### Members of team
 
 The team or group membership is expanded to determine the email recipients. In the simple case, a team or group expands to a list of individuals and each is included on the **To:** line of the resulting email. However, the results of this expansion can be complicated and are explained in more detail in the [team and group expansion](#team-and-group-expansion-for-email-recipients) section.
 
@@ -149,7 +149,7 @@ The delivery option for a default subscription is usually one or more roles. You
 > The _Skip initiator_ option isn't available for all event types.
 ## Team and group expansion for email recipients
 
-When a team or group receives a notification and either the subscription or delivery preference is for all members, the team must be "expanded" to determine the actual set of email recipients. This is a potentially recursive process that starts by looking at the team's direct members.
+When a team or group receives a notification, and either the subscription or delivery preference is for all members, the team must be "expanded" to determine the actual set of email recipients. This is a potentially recursive process that starts by looking at the team's direct members.
 
 Only members who have **not** opted out of the subscription get considered for the final recipient list. Any member who's an individual user or mail-enabled group gets added to the recipient list. 
 
