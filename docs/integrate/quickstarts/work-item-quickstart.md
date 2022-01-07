@@ -67,7 +67,7 @@ public class QueryExecutor
     /// </param>
     /// <param name="personalAccessToken">
     ///     A Personal Access Token, find out how to create one:
-    ///     <see href="https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops" />.
+    ///     <see href="/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops" />.
     /// </param>
     public QueryExecutor(string orgName, string personalAccessToken)
     {
