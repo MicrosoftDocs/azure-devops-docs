@@ -32,7 +32,7 @@ Here are a few things to note when using retries:
 
 ### Consume inputs from another task in a decorator
 
-We recently added a [feature](https://docs.microsoft.com/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops#specifying-a-target-task) to inject a task automatically into a pipeline before another target task in that pipeline. We are now enhancing that feature by letting you customize that injected task using the input parameters of the target task. The syntax for writing a decorator to do this is as follows:
+We recently added a [feature](/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&preserve-view=true#specifying-a-target-task) to inject a task automatically into a pipeline before another target task in that pipeline. We are now enhancing that feature by letting you customize that injected task using the input parameters of the target task. The syntax for writing a decorator to do this is as follows:
 
 ```
 {
@@ -61,14 +61,14 @@ A common use case that can be accomplished by such a scenario is as follows. Let
 
 ### Improvements to service connections usage history
 
-When a pipeline uses a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml), that usage is logged in the connection's history. Administrators of the service connection can review the usage history by navigating to project settings and selecting the appropriate service connection. There were some issues with the usage history of service connections that have been fixed with this update. Fixes include the following: 
+When a pipeline uses a [service connection](/azure/devops/pipelines/library/service-endpoints?view=azure-devops&preserve-view=true&tabs=yaml), that usage is logged in the connection's history. Administrators of the service connection can review the usage history by navigating to project settings and selecting the appropriate service connection. There were some issues with the usage history of service connections that have been fixed with this update. Fixes include the following: 
 
-* When a service connection is used in a [deployment job](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops) (instead of a regular job), that usage was not being logged. 
+* When a service connection is used in a [deployment job](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true) (instead of a regular job), that usage was not being logged. 
 * If you used multiple service connections in multiple stages of a pipeline, all the service connections would show a record in their usage history even though some of the stages were skipped.
 ### The default agent specification for Classic pipelines is now Windows-2019
 
 
-In the last release notes, we [announced](https://docs.microsoft.com/azure/devops/release-notes/2021/sprint-194-update#announcing-a-deprecation-schedule-for-windows-2016-hosted-images) a deprecation schedule for `vs2017-win2016` hosted images. In preparation for that, we are now changing the default agent specification when creating new pipelines in Classic pipelines to `windows-2019`.
+In the last release notes, we [announced](/azure/devops/release-notes/2021/sprint-194-update#announcing-a-deprecation-schedule-for-windows-2016-hosted-images) a deprecation schedule for `vs2017-win2016` hosted images. In preparation for that, we are now changing the default agent specification when creating new pipelines in Classic pipelines to `windows-2019`.
 
 > [!div class="mx-imgBorder"]
 > ![Agent Specification](../../media/195-pipelines-01.png)

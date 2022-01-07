@@ -4,7 +4,6 @@ description: Test container structure by container task and integrate test repor
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.topic: reference
 ms.custom: seodec18
-ms.author: admahesh
 author: Additi
 ms.date: 04/20/2020
 monikerRange: 'azure-devops'
