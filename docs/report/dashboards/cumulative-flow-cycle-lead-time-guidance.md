@@ -244,7 +244,7 @@ You can also see how process changes affect your lead and cycle time. For exampl
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
+::: moniker range="<= tfs-2018" 
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow chart](cumulative-flow.md) 
 ::: moniker-end

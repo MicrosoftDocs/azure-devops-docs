@@ -106,7 +106,7 @@ The following link relationships are restricted:
     > ![Screenshot of Query results page, multi-select items, open context menu, choose Link to a new work item, TFS-2017 version.](media/add-link-query-new-work-item-2016.png) 
 
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 1. From the web portal, open a query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
 2. Open the context menu of one of the selected work items, and then choose **Link selected item(s) to a new work item...** or **Link to an existing item...**.
@@ -153,7 +153,7 @@ To view the work items selected for linking, you can choose the  :::image type="
 ::: moniker-end   
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of backlog context menu, choose Add link to an existing work item, TFS-2018 and previous versions.](media/add-link/link-multi-to-existing.png)   
 
@@ -168,7 +168,7 @@ If you're working from the Query Results page, you'll need to bulk save the work
 > ![Screenshot of Query results page, save bulk modified items.](media/bulk-modify/query-results-bulk-save-items.png) 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 ![Screenshot of Query results page, multi-select items, bulk save modified work items, TFS-2018 and earlier versions.](media/bulk-modify-link-existing-bulk-save-ts.png) 
 ::: moniker-end 
 
@@ -196,7 +196,7 @@ Here, we've selected to add a link to the selected work items.
     ::: moniker range=">= tfs-2018"
     ![Add link dialog, Link to a new work item, TFS-2018 and later versions.](media/add-link-related-new-item-issue.png)  
     ::: moniker-end
-    ::: moniker range=">= tfs-2013 <=tfs-2017"
+    ::: moniker range="<= tfs-2017"
     ![Add link dialog, Link to a new work item, TFS-2017 and earlier versions.](media/bulk-modify-link-new-ts.png)  
     ::: moniker-end
 
@@ -265,7 +265,7 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 [!INCLUDE [temp](../../includes/link-work-item-builds-projects.md)]
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 <a id="find-items"> </a>  
 

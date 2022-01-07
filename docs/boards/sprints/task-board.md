@@ -228,7 +228,7 @@ You can expand ![expand icon](../media/icons/expand_row_icon.png) and collapse !
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ![Group by backlog items, show All team members](media/taskboard/group-items-all.png)
 
@@ -281,7 +281,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 

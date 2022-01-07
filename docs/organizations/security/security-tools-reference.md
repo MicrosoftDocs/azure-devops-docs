@@ -187,7 +187,7 @@ In addition, Lab Management permissions can be managed through the [TFSLabConfig
    
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 
 ## Setting permissions for SQL Server reports 
 
@@ -195,7 +195,7 @@ For information about how to set permissions in Reporting Services,
 see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2017"  
+::: moniker range="<= tfs-2017"  
 
 ## Setting permissions for SharePoint integration     
 
