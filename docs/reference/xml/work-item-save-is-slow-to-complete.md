@@ -22,4 +22,4 @@ This problem might occur when you save a work item. The problem might be intermi
   
  **Solutions**  
   
- On the client computer, enable automatic detection of the link speed for the network adapter. For more information, see [Configure a network adapter to automatically adjust speed](/previous-versions/azure/devops/tfs-2013/reference/xml/configure-network-adapter-automatically-adjust-speed).
+ On the client computer, enable automatic detection of the link speed for the network adapter. For more information, see [Configure a network adapter to automatically adjust speed](configure-network-adapter-automatically-adjust-speed.md).
