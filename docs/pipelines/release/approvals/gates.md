@@ -116,7 +116,7 @@ this case, after the timeout period expires, the deployment is rejected.
 
 ## Additional resources
 
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)  
+* [Video: Deploy quicker and safer with gates in Azure Pipelines](/Events/Connect/2017/T181)  
 * [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
