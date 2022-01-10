@@ -68,4 +68,4 @@ The Azure DevOps Analytics offering is the future of reporting and we will conti
 
 * [OData endpoint](/azure/devops/report/extend-analytics/index?view=azure-devops&preserve-view=true)
 
-* [Azure DevOps Analytics](https://channel9.msdn.com/Events/connect/2017/T251)
+* [Azure DevOps Analytics](/Events/connect/2017/T251)
