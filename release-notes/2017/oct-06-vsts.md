@@ -23,8 +23,6 @@ Some of the other key feature highlights include:
 
 ## What’s new in VSTS
 
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-Team-Services-VSTS-Sprint-124--whats-new/player]
-
 ## Code
 
 ### Updated experience for code and work items search
