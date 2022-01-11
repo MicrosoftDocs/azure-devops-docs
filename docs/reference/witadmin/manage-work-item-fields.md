@@ -1,22 +1,22 @@
 ---
 title: Manage work item fields using witadmin
-titleSuffix: Azure DevOps Server
-description: Change an attribute for a work item field defined for a project in Azure DevOps Server
+titleSuffix: Azure DevOps  
+description: List or delete fields, or change a field attribute defined on Azure DevOps
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 08/02/2021
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Manage work item fields
 
 [!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
-You can manage the fields defined for work item types (WITs) that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
+You can manage the fields defined for work item types that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
 
 ::: moniker range=">= azure-devops-2019"
 
