@@ -23,9 +23,6 @@ You can change how you track your team's progress by creating and customizing ob
 ::: moniker range="< azure-devops"
 In addition, for on-premises Azure DevOps Servers, you can manage the resolution types, bug, and failure types used with test case management with the [**tcm fieldmapping**](#tcm) command.  
 ::: moniker-end
-  
-> [!NOTE]   
-> The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../../organizations/settings/work/manage-process.md). 
 
 As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
   
@@ -59,6 +56,8 @@ You run **witadmin** commands against Azure DevOps Services or an on-premises Az
 ## [Work item types](witadmin-import-export-manage-wits.md)
 
 Work items are used to track anything you need to track. Each work item is based on a work item type. Each work item types defines the fields available in which to store information. The available work item types depend on the process you used when your project was created (Agile, Scrum, Basic, or CMMI). To learn more, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
+
+For the Inherited process model, you can add and delete work item types from the web portal. To learn how, see [Add and manage work item types(Inheritance process)](../../organizations/settings/work/customize-process-work-item-type.md).
 
 ---
 :::row:::
@@ -131,14 +130,13 @@ Work items are used to track anything you need to track. Each work item is based
 ---
  
 
-
-
 ## [Fields](manage-work-item-fields.md)
 
 Fields are used to track the status and information associated with work items. Fields are defined for an organization or collection. 
 To learn more about fields, see [Work item fields and attributes](/boards/work-items/work-item-fields.md). To look up the description of a specific field, see [Field descriptions for default and work item fields used in process templates](../../boards/work-items/guidance/work-item-field.md).
  
- 
+For the Inherited process model, you can view and delete fields from the web portal. To learn how, see [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md).
+
 ---
 :::row:::
    :::column span="2":::
@@ -444,6 +442,9 @@ With global workflow, you can define and update fields and global lists that app
 ## [Process configuration](witadmin-import-export-process-configuration.md)
  
 Process configuration defines the default configuration and functional capabilities that your teams can access using Azure Boards.   The configuration determines the work item types that appear on the product backlog, sprint backlogs, Kanban board, and task board. To learn about process configuration and what you can customize, see [ProcessConfiguration](../xml/process-configuration-xml-element.md). 
+
+ 
+For the Inherited process model, you can customize backlogs from the web portal. To learn how, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).
  
 ---
 :::row:::
@@ -504,6 +505,8 @@ The following **witadmin** command is only available for Azure DevOps Server on-
 - **rebuildcache**: Rebuild the client cache  
 ::: moniker-end
 
+<a id="tcm" /> 
+
 ::: moniker range="< azure-devops"
 
 ## [Test case management field mapping](tcm-customize-manage-test-experience.md)  
@@ -522,8 +525,8 @@ To customize the resolution types, bug work item type, and failure types used wh
 - [Customize your work tracking experience](../customize-work.md)   
 - [**az boards** command-line tools](../../cli/quick-reference.md#azure-boards) 
 - [On-premises XML process model](../on-premises-xml-process-model.md)  
-- [Inheritance process model](../organizations/settings/work/inheritance-process-model.md)
-- [Hosted XML process model](../organizations/settings/work/hosted-xml-process-model.md)
+- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
+- [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
 - [What is Azure Test Plans?](../../test/overview.md)
  
 ::: moniker-end
