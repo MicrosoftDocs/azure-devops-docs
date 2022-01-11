@@ -488,7 +488,7 @@ tcm run /execute /id:id /collection:teamprojectcollectionurl /teamproject:projec
 
 | Parameter | Description |  
 |----------|------------|
-|**/id**:`id`| Optional. Specifies the **ID** for the test run that you want to run.    |
+|**/id**:`id`| Specifies the **ID** for the test run that you want to run.    |
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
 
@@ -521,7 +521,7 @@ tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project 
 
 | Parameter | Description |  
 |----------|------------| 
-|**/id**:`id`| Optional. Specifies the **ID** for the test run that you want to cancel.    |
+|**/id**:`id`| Specifies the **ID** for the test run that you want to cancel.    |
 
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
