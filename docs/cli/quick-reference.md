@@ -225,16 +225,19 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
    :::column-end:::
    :::column span="1":::
-      #### Wikis 
-      - [Open a wiki](../project/wiki/add-edit-wiki.md#open-wiki) 
-      - [Get the content of a page or open a page](../project/wiki/add-edit-wiki.md#view-a-wiki-page)  
-      - [Add a new page](../project/wiki/add-edit-wiki.md#add-a-wiki-page) 
-      - [Edit a page](../project/wiki/add-edit-wiki.md#edit-wiki-page) 
-      - [Delete a page](../project/wiki/add-edit-wiki.md#delete-wiki-page) 
-      - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)    
-      - [Delete a wiki](../project/wiki/manage-wikis.md#delete-a-wiki)  
-      - [List all the wikis](../project/wiki/manage-wikis.md#list-wikis)  
-      - [Show details of a wiki](../project/wiki/manage-wikis.md#show-wiki)  
+      #### Manage wikis
+      - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
+      - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
+      - [Delete a wiki](../project/wiki/manage-wikis.md#delete-wiki)
+      - [List wikis](../project/wiki/manage-wikis.md#list-wikis)
+      - [Publish a repo as a wiki](../project/wiki/publish-repo-to-wiki.md)
+      - [View wiki details](../project/wiki/manage-wikis.md#show-wiki)
+      #### Wiki pages
+      - [Add a wiki page](../project/wiki/add-edit-wiki.md#add-a-wiki-page)
+      - [Delete a wiki page](../project/wiki/add-edit-wiki.md#delete-wiki-page)
+      - [Edit a wiki page](../project/wiki/add-edit-wiki.md#edit-wiki-page)
+      - [Open a wiki](../project/wiki/add-edit-wiki.md#open-wiki)
+      - [View a wiki page](../project/wiki/add-edit-wiki.md#view-a-wiki-page)
    :::column-end:::
 :::row-end:::
 

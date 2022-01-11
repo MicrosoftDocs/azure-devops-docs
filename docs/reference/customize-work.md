@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 01/11/2022
 ---
 
 # Customize your work tracking experience 
@@ -269,7 +269,23 @@ The following table summarizes the differences between the three supported proce
 ::: moniker-end
 :::row:::
    :::column span="3":::
-      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects and list project information
+      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to list and export process information 
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+:::row:::
+   :::column span="3":::
+      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit process information 
    :::column-end:::
    :::column span="1":::
          
