@@ -4,7 +4,7 @@ description: Deploy container base web apps to App Service on Linux
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
-ms.date: 01/04/2022
+ms.date: 01/11/2022
 monikerRange: '> tfs-2017'
 "recommendations": "true"
 ---
@@ -142,7 +142,7 @@ Deploy to an Azure App custom container with the [Azure Web App for Container ta
 ```yaml
 
 trigger:
-- master
+- main
 
 resources:
 - repo: self
@@ -274,6 +274,6 @@ You can also deploy with a release pipeline. This is an optional step since you 
 
 <a name="endpoint"></a>
 
-App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
+App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Configuration** for the web app and update your Docker information.
 
-![Screenshot showing Update image source and Registry in container settings.](../../targets/media/webapp-linux/container-settings.png)
+[ ![Screenshot showing Update image source and Registry in container settings.](azure/media/configure-app-service-security.png) ](azure/media/configure-app-service-security.png#lightbox)
