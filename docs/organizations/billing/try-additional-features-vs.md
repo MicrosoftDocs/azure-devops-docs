@@ -1,7 +1,7 @@
 ---
 title: Try Azure Test Plans for free
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, content-perf-fy22q3
+ms.custom: seodec18, contperf-fy22q3
 description: Get a free 30-day trial for Azure Test Plans (formerly Test Manager).
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-You can try Azure Test Plans for free for 30 days. Basic users have full access to Test Plans during the trial. After the trial expires, buy Basic + Test Plans and assign it to specific users, so they can keep using the service. For more information, see [What is Azure Test Plans](../../test/overview.md).
+Basic users have full access to Azure Test Plans during the 30-day trial. After the trial expires, buy Basic + Test Plans and assign it to specific users, so they can keep using the service. For more information, see [What is Azure Test Plans](../../test/overview.md).
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
