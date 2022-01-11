@@ -8,8 +8,8 @@ ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 08/02/2021
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 
@@ -48,45 +48,274 @@ For most commands, you must be a member of the Project Administrators or Project
 
 You customize all work tracking objects&mdash;such as, work item types (WITs), process configuration, global lists&mdash;by updating their XML definitions.  
 
-You run **witadmin** commands against an on-premises Azure DevOps Server. If you're new to work tracking customization, see [Customize your work tracking experience](../customize-work.md). 
+You run **witadmin** commands against Azure DevOps Services or an on-premises Azure DevOps Server. As shown in the command lists below, only **witadmin** commands that list or export files are supported for the Azure DevOps Services. If you're new to work tracking customization, see [Customize your work tracking experience](../customize-work.md). 
 
 ## [Work item types](witadmin-import-export-manage-wits.md)
-  
-- **destroywitd**: Delete a WIT   
-- **exportwitd**: Export a WIT file  
-- **importwitd**: Import a WIT file  
-- **listwitd**:  List WIT names   
-- **renamewitd**: Change a WIT display name    
+
+---
+:::row:::
+   :::column span="3":::
+      **Command** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Services** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Server (on-premises)**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+   **destroywitd**: Delete a WIT   
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **exportwitd**: Export a WIT file  
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **importwitd**: Import a WIT file  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **listwitd**:  List WIT names   
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **renamewitd**: Change a WIT display name   
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+ 
+
 
 
 ## [Fields](manage-work-item-fields.md)
 
-::: moniker range=">= azure-devops-2019"
-- **deletefield**: Delete a field  
-- **listfields**: List field attributes  
-- **changefield**: Change a field attribute   
-::: moniker-end
 
+
+---
+:::row:::
+   :::column span="3":::
+      **Command** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Services** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Server (on-premises)**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+   **deletefield**: Delete a field  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **listfields**: List field attributes  
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
 ::: moniker range="< azure-devops-2019"
-- **deletefield**: Delete a field  
-- **listfields**: List field attributes  
-- **indexfield**: Turn field indexing on/off  
-- **changefield**: Change a field attribute   
+:::row:::
+   :::column span="3":::
+   **indexfield**: Turn field indexing on/off  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
+:::row:::
+   :::column span="3":::
+   **changefield**: Change a field attribute 
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **renamewitd**: Change a WIT display name   
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+ 
+ 
 
 ## [Process configuration](witadmin-import-export-process-configuration.md)
-  
-- **exportprocessconfig**: Export the ProcessConfiguration file   
-- **importprocessconfig**: Import the ProcessConfiguration file  
+ 
+---
+:::row:::
+   :::column span="3":::
+      **Command** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Services** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Server (on-premises)**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+   **exportprocessconfig**: Export the ProcessConfiguration file   
+   :::column-end:::
+   :::column span="1":::
+       ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **importprocessconfig**: Import the ProcessConfiguration file  
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+
 
 ## [Link types](manage-link-types.md)
-  
-- **deletelinktype**:  Delete a link type  
-- **exportlinktype**:  Export a link type file   
-- **importlinktype**:  Import a link type file  
-- **listlinktypes**:  List the defined link types   
-- **reactivatelinktype**: Reactivate or rename a link type   
+
+---
+:::row:::
+   :::column span="3":::
+      **Command** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Services** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Server (on-premises)**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+   **deletelinktype**:  Delete a link type  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **exportlinktype**:  Export a link type file 
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker range="< azure-devops-2019"
+:::row:::
+   :::column span="3":::  
+   **importlinktype**:  Import a link type file
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="3":::  
+   **listlinktypes**:  List the defined link types
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::   
+   **reactivatelinktype**: Reactivate or rename a link type  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
 
 
 ## [Global lists](manage-global-lists-for-work-item-types.md)
@@ -110,15 +339,73 @@ You run **witadmin** commands against an on-premises Azure DevOps Server. If you
 ::: moniker-end
 
 ## [Client cache](rebuild-client-cache.md)
-  
-- **rebuildcache**: Rebuild the client cache   
+ 
+---
+:::row:::
+   :::column span="3":::
+      **Command** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Services** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Server (on-premises)**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+   **rebuildcache**: Rebuild the client cache  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
 
 
 ## [Categories](witadmin-import-export-categories.md)
-  
-- **exportcategories**:  Export the Categories file   
-- **importcategories**:  Import the Categories file      
-  
+ 
+---
+:::row:::
+   :::column span="3":::
+      **Command** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Services** 
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Server (on-premises)**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+   **exportcategories**:  Export the Categories file   
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **importcategories**:  Import the Categories file   
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+
 
 ## Related articles
 -  [Customize your work tracking experience](../customize-work.md)   
