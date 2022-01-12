@@ -192,10 +192,38 @@ The **Azure Web App on Container** task will pull the appropriate Docker image c
 
 
 # [Classic](#tab/classic/)
-The simplest way to deploy to an Azure Web App Container is to use the **Azure Web App On Container Deploy** task.
-This task is added to the release pipeline when you select the deployment task for Azure Web App on Container deployment.
-Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
 
+1. From within your project, select **Pipelines** then **Release**.
+
+1. Select **New pipeline** to create a new release pipeline.
+
+1. Select the **Azure App Service deployment** template
+
+    :::image type="content" source="media/app-service-template.png" alt-text="Azure App Service template":::
+
+1. Select **Tasks**, then **Unlink all** in **stage 1** to unlink all the pipeline parameters. 
+
+    :::image type="content" source="media/unlink-parameters.png" alt-text="Unlink pipeline parameters":::
+
+1. Select the **Deploy Azure App Service** task, and fill out the required fields. Select **Save** when you are done.
+
+    :::image type="content" source="media/deploy-task.png" alt-text="Deploy Azure App Service task":::
+
+1. Select **Create release**, and then choose **Stage 1** from the dropdown menu. Select **Create** when you are done.
+
+    :::image type="content" source="media/create-release.png" alt-text="Create a release pipeline":::
+
+1. Hover over **Stage 1** in your pipeline, and select **Deploy** to queue and start the deployment.
+
+    :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
+
+1. Your pipeline logs should look similar to the screenshot below. 
+
+    :::image type="content" source="media/pipeline-logs.png" lightbox="media/pipeline-logs.png" alt-text="Pipeline logs":::
+
+1. Navigate to your newly deployed web app to verify your deployment.
+
+    :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
 ---
 
 ## Deploy to a slot
@@ -232,42 +260,6 @@ You can configure the Azure Web App for container to have multiple slots. Slots 
 Use the option **Deploy to Slot** in the **Azure Web App Container** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
 ---
-
-## Create a release pipeline
-
-You can also deploy with a release pipeline. This is an optional step since you can build and deploy within one YAML. 
-
-1. From within your project, select **Pipelines** then **Release**.
-
-1. Select **New pipeline** to create a new release pipeline.
-
-1. Select the **Azure App Service deployment** template
-
-    :::image type="content" source="media/app-service-template.png" alt-text="Azure App Service template":::
-
-1. Select **Tasks**, then **Unlink all** in **stage 1** to unlink all the pipeline parameters. 
-
-    :::image type="content" source="media/unlink-parameters.png" alt-text="Unlink pipeline parameters":::
-
-1. Select the **Deploy Azure App Service** task, and fill out the required fields. Select **Save** when you are done.
-
-    :::image type="content" source="media/deploy-task.png" alt-text="Deploy Azure App Service task":::
-
-1. Select **Create release**, and then choose **Stage 1** from the dropdown menu. Select **Create** when you are done.
-
-    :::image type="content" source="media/create-release.png" alt-text="Create a release pipeline":::
-
-1. Hover over **Stage 1** in your pipeline, and select **Deploy** to queue and start the deployment.
-
-    :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
-
-1. Your pipeline logs should look similar to the screenshot below. 
-
-    :::image type="content" source="media/pipeline-logs.png" lightbox="media/pipeline-logs.png" alt-text="Pipeline logs":::
-
-1. Navigate to your newly deployed web app to verify your deployment.
-
-    :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
 
 ## FAQ
 ### How do I find my registry credentials for the web app?
