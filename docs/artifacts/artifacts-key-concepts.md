@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 ## Immutability
 
-Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package with the same version number.
 
 Many package clients, including NuGet and npm, keep a local cache of packages on your machine. Once a client has cached a particular package version, it will return that copy on future install/restore requests.
 
@@ -22,7 +22,7 @@ If a package is broken, buggy, or shares unintended content (like secrets), the 
 The only way to work around the immutability constraint is to create a new feed and publish the desired package version to the new feed.
 
 > [!NOTE]
-> Deleted feeds remain in the recycle bin for 30 days then get deleted permanently. The feed name becomes available once the feed is permanently deleted.
+> Deleted feeds remain in the recycle bin for 30 days then are deleted permanently. The feed name becomes available once the feed is permanently deleted.
 
 ## Indexing
 
@@ -30,7 +30,7 @@ Azure Artifacts maintain an index of all the packages in each feed, which enable
 
 ## Well-formedness
 
-Azure Artifacts validate all the published packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when migrating to Azure Artifacts feeds.
+Azure Artifacts validate all the published packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when migrating to Azure Artifacts.
 
 ## Recycle Bin
 
