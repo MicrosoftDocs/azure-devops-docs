@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: how-to
-ms.date: 11/04/2021 
+ms.date: 01/11/2022
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -326,6 +326,9 @@ You may discard changes you made to an inherited field. From the **Layout** page
 ## Delete a field  
 
 Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
+
+We recommend that you only delete fields that are not in use. You can determine fields that aren't in use by exercising the **witadmin listfields** command. To learn how, see [Manage work item fields (witadmin)](../../../reference/witadmin/manage-work-item-fields.md).
+
 
 1. You delete the field from the **All processes>Fields** page.  
 

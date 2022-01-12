@@ -36,7 +36,7 @@ For most commands, you must be a member of the Project Administrators or Project
 
 <a name="global"></a> 
 
-## Global parameters
+### Global parameters
   
  You can use the following parameters to display help text for **witadmin**.  
   
@@ -47,11 +47,11 @@ For most commands, you must be a member of the Project Administrators or Project
 
 <a name="index"></a>
  
-## witadmin commands  
+### XML definition files  
 
-You customize all work tracking objects&mdash;such as, work item types, process configuration, global lists&mdash;by updating their XML definitions.  
+You customize all work tracking objects&mdash;such as, work item types, process configuration, global lists&mdash;by updating their XML definitions. If you're new to work tracking customization, see [Customize your work tracking experience](../customize-work.md).  
 
-You run **witadmin** commands against Azure DevOps Services or an on-premises Azure DevOps Server. As shown in the command lists below, only **witadmin** commands that list or export files are supported for the Azure DevOps Services. If you're new to work tracking customization, see [Customize your work tracking experience](../customize-work.md). 
+You run **witadmin** commands against Azure DevOps Services or an on-premises Azure DevOps Server. As shown in the command lists below, only **witadmin** commands that list or export files are supported for the Azure DevOps Services. 
 
 ## [Work item types](witadmin-import-export-manage-wits.md)
 
@@ -482,8 +482,6 @@ For the Inherited process model, you can customize backlogs from the web portal.
    :::column-end:::
 :::row-end:::
 ---
-
-
 
 ::: moniker range="< azure-devops-2019"
 
