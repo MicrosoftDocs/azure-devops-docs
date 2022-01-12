@@ -77,7 +77,7 @@ Use this index to quickly access examples that showcase use of command line tool
  
  
 
-## Organizations 
+## Organizations, projects, and collections 
 
 :::row:::
    :::column span="1":::
@@ -87,6 +87,19 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Remove a banner](../organizations/settings/manage-banners.md#remove-a-banner)
       - [Show banner details](../organizations/settings/manage-banners.md#list-banner-details)
       - [Update a banner](../organizations/settings/manage-banners.md#update-a-banner)
+      #### Extensions
+      - [Install an extension](../marketplace/install-extension.md) 
+      - [List extensions](../marketplace/uninstall-disable-extensions.md#list-extensions) 
+      - [List extension information](../marketplace/uninstall-disable-extensions.md#list-extension-information) 
+      - [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
+      - [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
+      - [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
+      #### Projects
+      - [Create a project](../organizations/projects/create-project.md) 
+      - [Delete a project](../organizations/projects/delete-project.md) 
+      - [List projects](../organizations/projects/create-project.md#list-projects) 
+      - [Show project information](../organizations/projects/create-project.md#show-project) 
+      - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
    :::column-end:::
    :::column span="1":::
       #### User accounts
@@ -95,10 +108,22 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Remove a user](../organizations/accounts/delete-organization-users.md#remove-user)
       - [Update a user](../organizations/accounts/add-organization-users.md#update-user)
       - [Show users](../organizations/accounts/add-organization-users.md#show-users)
+      #### Manage wikis
+      - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
+      - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
+      - [Delete a wiki](../project/wiki/manage-wikis.md#delete-a-wiki)
+      - [List wikis](../project/wiki/manage-wikis.md#list-wikis)
+      - [Publish a repo as a wiki](../project/wiki/publish-repo-to-wiki.md)
+      - [View wiki details](../project/wiki/manage-wikis.md#show-wiki)
+      #### Wiki pages
+      - [Add a wiki page](../project/wiki/add-edit-wiki.md#add-a-wiki-page)
+      - [Delete a wiki page](../project/wiki/add-edit-wiki.md#delete-wiki-page)
+      - [Edit a wiki page](../project/wiki/add-edit-wiki.md#edit-wiki-page)
+      - [Open a wiki](../project/wiki/add-edit-wiki.md#open-wiki)
+      - [View a wiki page](../project/wiki/add-edit-wiki.md#view-a-wiki-page)
    :::column-end:::
 :::row-end:::
-
-
+ 
 ## Azure Pipelines 
 
 :::row:::
@@ -206,37 +231,6 @@ Use this index to quickly access examples that showcase use of command line tool
 :::row-end:::
 
 
-## Projects, extensions, and wikis 
-
-:::row:::
-   :::column span="1":::
-      #### Extensions
-      - [Install an extension](../marketplace/install-extension.md) 
-      - [List extensions](../marketplace/uninstall-disable-extensions.md#list-extensions) 
-      - [List extension information](../marketplace/uninstall-disable-extensions.md#list-extension-information) 
-      - [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
-      - [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
-      - [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
-      #### Projects
-      - [Create a project](../organizations/projects/create-project.md) 
-      - [Delete a project](../organizations/projects/delete-project.md) 
-      - [List projects](../organizations/projects/create-project.md#list-projects) 
-      - [Show project information](../organizations/projects/create-project.md#show-project) 
-      - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
-   :::column-end:::
-   :::column span="1":::
-      #### Wikis 
-      - [Open a wiki](../project/wiki/add-edit-wiki.md#open-wiki) 
-      - [Get the content of a page or open a page](../project/wiki/add-edit-wiki.md#view-a-wiki-page)  
-      - [Add a new page](../project/wiki/add-edit-wiki.md#add-a-wiki-page) 
-      - [Edit a page](../project/wiki/add-edit-wiki.md#edit-wiki-page) 
-      - [Delete a page](../project/wiki/add-edit-wiki.md#delete-wiki-page) 
-      - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)    
-      - [Delete a wiki](../project/wiki/manage-wikis.md#delete-a-wiki)  
-      - [List all the wikis](../project/wiki/manage-wikis.md#list-wikis)  
-      - [Show details of a wiki](../project/wiki/manage-wikis.md#show-wiki)  
-   :::column-end:::
-:::row-end:::
 
 
 ## Security groups and permissions  
@@ -262,9 +256,9 @@ Use this index to quickly access examples that showcase use of command line tool
 - [Create a GitHub service endpoint](service-endpoint.md)
 - [Create an Azure RM service endpoint](service-endpoint.md)
 - [Create service endpoint using a configuration file](service-endpoint.md)
-
-
+ 
 
 ## Related articles
  
 - [Cross-service integration overview](../cross-service/cross-service-overview.md)
+- [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
