@@ -167,7 +167,7 @@ To fix this issue you will need to modify the supported account types, and who c
 
 1. Select you application from the list of registered applications.
 
-1. Under **Essentials**, select **Supported account types**.
+1. Under **Authentication**, select **Supported account types**.
 
 1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
