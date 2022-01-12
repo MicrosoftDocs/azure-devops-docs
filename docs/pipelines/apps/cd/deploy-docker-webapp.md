@@ -193,8 +193,6 @@ The **Azure Web App on Container** task will pull the appropriate Docker image c
 
 # [Classic](#tab/classic/)
 
-## Create a release pipeline
-
 1. From within your project, select **Pipelines** then **Release**.
 
 1. Select **New pipeline** to create a new release pipeline.
