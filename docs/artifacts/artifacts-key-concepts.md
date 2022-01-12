@@ -3,28 +3,26 @@ title: Key concepts for Azure Artifacts
 description: Important concepts for Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 2/6/2018
+ms.date: 01/12/2022
 monikerRange: '>= tfs-2017'
 ---
 
 # Key concepts for Azure Artifacts
 
-<!--  ## Feeds Add this later -->
-
 ## Immutability
 
 Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
-Many package clients, including NuGet and npm, keep a local cache of packages on your machine. 
-Once a client has cached a particular `package@version`, it will return that copy on future install/restore requests.
-If, on the server, you replace `package@version` (rev 1) with a new `package@version` (rev 2), the client is unable to tell the difference. This can lead to indeterminate build results from different machines. For example, a developer's machine and the build agent might have cached different revisions of the package, leading to unexpected build results.
+Many package clients, including NuGet and npm, keep a local cache of packages on your machine. Once a client has cached a particular package version, it will return that copy on future install/restore requests.
 
-If a package is broken, buggy, or shares unintended content (like secrets), the best response is to prepare a fix and publish it as a new version. Then, depending on the severity of the issue and how widely depended-on the package is, you can delete the package to make it unavailable for consumption.
+If, on the server side, you replace a package version v1 with a new version v2, the client is unable to tell the difference. This can lead to indeterminate build results from different machines. For example, a developer's machine and the build agent might have cached different revisions of the package, leading to unexpected build results.
+
+If a package is broken, buggy, or shares unintended content (like secrets), the best approach is to prepare a fix and publish it as a new version. Then, depending on the severity of the issue and how widely depended-on the package is, you can delete the package to make it unavailable for consumption.
 
 The only way to work around the immutability constraint is to create a new feed and publish the desired package version to the new feed.
 
 > [!NOTE]
-> If you delete a feed to recreate it, it will go in feed recycle bin and will be permanently deleted after 30 days. Feed name will free up once the feed is permanently deleted from the feed recycle bin.
+> Deleted feeds remain in the recycle bin for 30 days then get deleted permanently. The feed name becomes available once the feed is permanently deleted.
 
 ## Recycle Bin
 
