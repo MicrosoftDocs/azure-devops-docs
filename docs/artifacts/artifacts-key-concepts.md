@@ -30,10 +30,14 @@ Azure Artifacts maintain an index of all the packages in each feed, which enable
 
 ## Well-formedness
 
-Azure Artifacts validate all the published packages to ensure they're well-formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when migrating to Azure Artifacts feeds.
+Azure Artifacts validate all the published packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when migrating to Azure Artifacts feeds.
 
 ## Recycle Bin
 
-If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure DevOps Services, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](#immutability).  In order to recover the package and have builds start working again, a feed owner can recover it from the Recycle Bin.
+Packages can be deleted manually or by setting up retention policies for your feed. Deleted packages remain in the recycle bin for 30 days then get deleted permanently. Feed owners can recover the deleted packages from the Recycle Bin.
 
-Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
+## Related articles
+
+- [Package graphs](./concepts/package-graph.md)
+- [Use artifactignore](./reference/artifactignore.md)
+- [Packages componentization](./collaborate-with-packages.md)
