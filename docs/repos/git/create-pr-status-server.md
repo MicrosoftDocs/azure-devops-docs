@@ -238,7 +238,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 9. Build the status object to post on the PR. 
 
-   `State` is an enum of type [GitStatusState](/rest/api/azure/devops/git/pull%20request%20statuses/get#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+   `State` is an enum of type [GitStatusState](/rest/api/azure/devops/git/pull-request-statuses/get#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
    The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
