@@ -50,8 +50,22 @@ Make sure your machine has these prerequisites:
 
 ::: moniker-end
 
+### TFVC
+
 If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
 (The Oracle JRE and OpenJDK are not sufficient for this purpose.)
+
+[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
+It has an EULA which you'll need to accept during configuration if you plan to work with TFVC.
+
+Since TEE is no longer maintained, it's no longer included in the agent distribution.
+If required, it's downloaded during task execution, and removed when it's no longer needed.
+You may notice your checkout task taking a long time to start working because of this download mechanism.
+
+If you're facing issues with TEE downloading, you may try to do the following:
+1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`.
+2. Download TEE-CLC manually from [Team Explorer Everywhere Github releases](https://github.com/microsoft/team-explorer-everywhere/releases).
+3. Extract the contents of `TFS-SDK-<version>` folder to `<agent_directory>/externals/tee`.
 
 <h2 id="permissions">Prepare permissions</h2>
 

@@ -60,9 +60,6 @@ We support the following subset of .NET Core supported distributions:
 Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 
-If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
-(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
-
 > [!NOTE]
 > The agent installer knows how to check for other dependencies.
 You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
@@ -95,6 +92,23 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
+
+### TFVC
+
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
+
+[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
+It has an EULA which you'll need to accept during configuration if you plan to work with TFVC.
+
+Since TEE is no longer maintained, it's no longer included in the agent distribution.
+If required, it's downloaded during task execution, and removed when it's no longer needed.
+You may notice your checkout task taking a long time to start working because of this download mechanism.
+
+If you're facing issues with TEE downloading, you may try to do the following:
+1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`.
+2. Download TEE-CLC manually from [Team Explorer Everywhere Github releases](https://github.com/microsoft/team-explorer-everywhere/releases).
+3. Extract the contents of `TFS-SDK-<version>` folder to `<agent_directory>/externals/tee`.
 
 <h2 id="permissions">Prepare permissions</h2>
 
