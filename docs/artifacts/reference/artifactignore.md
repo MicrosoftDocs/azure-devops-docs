@@ -26,7 +26,7 @@ In the following example, we will be ignoring all files except the ones in the *
 !src/MyApp/bin/Release/**.*
 ```
 
-> [TIP]
+> [!TIP]
 > Make sure you check your *.artifactignore* file into the root of your repository.
 
 ## Syntax
