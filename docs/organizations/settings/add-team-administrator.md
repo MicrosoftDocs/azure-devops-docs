@@ -119,7 +119,7 @@ To get added as a team administrator, ask another team administrator or a member
    
 ::: moniker-end     
 
-monikerRange: '<= tfs-2015'
+::: moniker range="<= tfs-2015"
 
 1. From the web portal, select your project, and then select **Administration settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the administration page.
 

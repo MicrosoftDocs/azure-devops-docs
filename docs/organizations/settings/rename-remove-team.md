@@ -96,7 +96,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-monikerRange: '<= tfs-2015'
+::: moniker range="<= tfs-2015"
 
 <a id="add-team-tfs-2015" />
 
