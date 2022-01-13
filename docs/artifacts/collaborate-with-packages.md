@@ -1,9 +1,9 @@
 ---
-title: Collaborate more and build faster with package componentization
+title: Package componentization
 description: Using Azure Artifacts to facilitate collaboration
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.technology: devops-artifacts
-ms.date: 02/09/2021
+ms.date: 01/13/2022
 ms.topic: reference
 monikerRange: '>= tfs-2017'
 ---
@@ -13,31 +13,34 @@ monikerRange: '>= tfs-2017'
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
 Your product is successful, your organization is growing, and it's time to scale up your codebase to match this success. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
+
 - How do my teams effectively share reusable components?
+
 - How do I enable my feature teams to iterate rapidly without stepping on other teams' work?
+
 - How do I give my teams autonomy to iterate at the pace that's right for them?
 
-These questions aren't just applicable to newly growing teams. If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, faster than ever. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development. 
+These questions aren't just applicable to newly growing teams. If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, faster than ever. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development.
 
-In this article, we'll explore how binary composition through Azure Artifacts can help you manage and share your external dependencies, your OSS, and your isolated shared components.
+In this article, we'll explore how binary composition through Azure Artifacts can help you manage and share your external dependencies, your open-source software, and your isolated shared components.
 
 ## Components and composition
 
-Componentization is the act of separating and structuring of your product into a set of *components*. Most .NET projects already have some notion of components in the form of the projects in your solution. For example, a simple website might have a front-end component, a data access component, and a model/data storage component.
+Componentization is the act of separating and structuring of your product into a set of components. Most .NET projects already have some notion of components in the form of the projects in your solution. For example, a simple website might have a front-end component, a data access component, and a model/data storage component.
 
 ## Source componentization
 
-As your product grows, the solution and the project model can become inefficient. Changes take longer to integrate and are harder to merge, the build gets slower, and *components* start to grow from a single project to multiple projects. Generally, this is the point at which teams start breaking out these sets of related projects into separate solutions.
+As your product grows, the solution and the project model can become inefficient. Changes take longer to integrate and are harder to merge, the build gets slower, and components start to grow from a single project to multiple projects. Generally, this is the point at which teams start breaking out these sets of related projects into separate solutions.
 
-Once you've outgrown a single solution, how you componentize becomes an interesting question. We started with *source composition*, where each component is referenced via a project reference in Visual Studio. Source composition is possible as long as your source lives in a single composition boundary: a single solution within a single source repository.
+Once you've outgrown a single solution, how you componentize becomes an interesting question. We started with **source composition**, where each component is referenced via a project reference in Visual Studio. Source composition is possible as long as your source lives in a single composition boundary: a single solution within a single source repository.
 
-Unfortunately, these project references start to break down when multiple solutions are involved. At this point, when solution A depends on solution B it must refer to the built binaries (i.e. DLLs) produced by solution B - this is binary composition.
+Unfortunately, these project references start to break down when multiple solutions are involved. At this point, when solution A depends on solution B it must refer to the built binaries (i.e. DLLs) produced by solution B - this is **binary composition**.
 
-Accordingly, these binaries now need to be built and made available to A before A can build successfully. There are a few ways to do that:
+Accordingly, these binaries now need to be built and made available to solution A before it can build successfully. There are a few ways to do that:
 
-- You can check them into source control. Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance.
-If you start to work in branches, multiple teams can end up introducing the same binary at different versions, creating nasty merge conflicts at the root of the tree.
-- You can put them on a file share somewhere. File shares have a few limitations: there's no index for quick lookups, and there's no protection against overwriting a version later.
+- You can check them into source control. Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance. If you start to work in branches, multiple teams can end up introducing the same binary at different versions, creating nasty merge conflicts at the root of the tree.
+
+- You can host them on a file share somewhere. File shares have a few limitations: there's no index for quick lookups, and there's no protection against overwriting a version later.
 
 ## Package componentization
 
