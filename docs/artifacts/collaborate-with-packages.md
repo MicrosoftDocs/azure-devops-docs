@@ -1,14 +1,15 @@
 ---
-title: Package componentization
+title: Source and package componentization
 description: Using Azure Artifacts to facilitate collaboration
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.technology: devops-artifacts
 ms.date: 01/13/2022
 ms.topic: reference
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
-# Collaborate more and build faster with package componentization
+# Collaborate more and build faster with componentization
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
@@ -44,36 +45,42 @@ Accordingly, these binaries now need to be built and made available to solution 
 
 ## Package componentization
 
-Packages address many of the challenges of referencing binaries. Instead of checking them into source, you can have a solution *B* produce its binaries as NuGet packages that another solution *A* can then consume. If solution A and solution B are maintained as separate components, where simultaneous changes across A and B are rare, package composition is a great way to manage the dependency of A on B. Package composition allows B to iterate on its own cadence, while A is free to get updates from B when A's schedule permits, and it allows multiple teams to iterate and  update B without affecting A (or other solutions *C* or *D*).
+Packages address many of the challenges of referencing binaries. Instead of checking them into source, you can have a solution B produce its binaries as NuGet packages that another solution A can then consume. If solution A and solution B are maintained as separate components, where simultaneous changes across A and B are rare, package composition is a great way to manage the dependency of A on B. Package composition allows B to iterate on its own cadence, while A is free to get updates from B when A's schedule permits, and it allows multiple teams to iterate and update solution B without affecting solution A (or other solutions C or D).
 
 Package composition isn't without its challenges though. Thus far, we've looked at a simple example. However, scaling package composition up to the size of a large codebase (something like Windows or Bing) can cause a series of challenges:
 
 - Understanding the impact of breaking changes in a component low in the dependency graph becomes very challenging
-- *Diamond dependencies* can become a significant roadblock to agility.
+
+- **Diamond dependencies** can become a significant roadblock to agility.
+
 In a diamond dependency, components B and C both depend on a shared component A, and D depends on B and C.
-A releases a new version with breaking changes. If B updates, but C does not, D cannot take B's updates without introducing a dependency conflict.
-In this simple example, a conversation with C may be all that's needed to resolve the conflict.
-However, in a complex graph, diamonds can quickly become unresolvable.
-- If changes must be made across two components that are composed with packages, the dev inner loop is much slower. When A is updated, it must be re-built, re-packaged, and re-published. 
-B must then update to the newly-published version to validate A's change. Source composition, which can build A and B simultaneously, will always provide a faster inner loop for developers.
+Component A releases a new version with breaking changes. If B updates, but C does not, D cannot take B's updates without introducing a dependency conflict.
+In this simple example, a conversation with C may be all that's needed to resolve the conflict. However, in a complex graph, diamonds can quickly become unresolvable.
+
+- If changes must be made across two components that are composed with packages, the dev inner loop is much slower. When A is updated, it must be rebuilt, repackaged, and republished.
+B must then update to the newly published version to validate A's change. Source composition, which can build A and B simultaneously, will always provide a faster inner loop for developers.
 
 ## What should you use
 
-In general, we've seen large teams be most successful when they use a mixture of composition strategies.
-To help determine what's right for your codebase, first draw your product's dependency graph and start to group your components into sets of related components.
+In general, we've seen large teams be most successful when they use a mixture of composition strategies. To help determine what's right for your codebase, first draw your product's dependency graph and start to group your components into sets of related components.
+
 For example, you may have a set of components that make up your framework, including common controls, etc., and a set of components that make up your user-facing service.
 Then, for each set of related components, ask these questions:
+
 - Will my teams often make spanning check-ins across the sets I've created?
+
 - Is a single team responsible for the entire set?
+
 - For a single set, is there a shared release cadence?
 
-At a high level, we've found the most success when source composition is used for related projects that are worked on by a single team (or a group of related teams) and binary composition is used for OSS, externals (components from faraway or isolated teams), and isolated shared components.
+At a high level, we've found the most success when **source composition** is used for related projects that are worked on by a single team (or a group of related teams) and **binary composition** is used for open-source software, externals (components from faraway or isolated teams), and isolated shared components.
 
 ## Next steps
 
-- [Get started with Azure Artifacts](start-using-azure-artifacts.md)
-- [NuGet quickstart](get-started-nuget.md)
-- [Npm quickstart](get-started-npm.md)
-- [Maven quickstart](get-started-maven.md)
-- [Python quickstart](quickstarts/python-packages.md)
-- [Universal packages quickstart](quickstarts/universal-packages.md)
+> [!div class="nextstepaction"]
+> [Get started with Azure Artifacts](start-using-azure-artifacts.md)
+> [NuGet quickstart](get-started-nuget.md)
+> [Npm quickstart](get-started-npm.md)
+> [Maven quickstart](get-started-maven.md)
+> [Python quickstart](quickstarts/python-packages.md)
+> [Universal packages quickstart](quickstarts/universal-packages.md)
