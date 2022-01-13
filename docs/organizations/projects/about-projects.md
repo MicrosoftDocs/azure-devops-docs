@@ -107,7 +107,7 @@ To create or list projects, see [Create a project](create-project.md)
 
 ::: moniker-end
 
-monikerRange: '<= tfs-2015'
+::: moniker range="<= tfs-2015"
 
 1. Choose the name of the server.
 

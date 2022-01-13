@@ -29,7 +29,7 @@ You can use the following procedures to save data that users most care about, su
 
   ::: moniker-end
 
-  monikerRange: '<= tfs-2015'
+  ::: moniker range="<= tfs-2015"
 
   ![context menu with download as zip menu item](media/delete-project/ic760345.png)
 

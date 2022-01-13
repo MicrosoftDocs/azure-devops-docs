@@ -86,7 +86,7 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker-end
 
-    monikerRange: '<= tfs-2015'
+    ::: moniker range="<= tfs-2015"
 
     Choose your project or team from the set of available links, or choose **Browse** to access all projects and teams.
 
@@ -100,7 +100,7 @@ To learn more about each page and the tasks you can do, see [Web portal navigati
 
 ### Sign in with different credentials
 
-monikerRange: '<= tfs-2015'
+::: moniker range="<= tfs-2015"
 
 1. Open Windows Security from the context menu associated with your name.
 
