@@ -30,7 +30,7 @@ The extra header must include a base 64 encoding of "user:PAT". See the followin
 ### Format
 
    ```
-   git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:PAT"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
+   git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:password"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
    ```
 
 ### Example
