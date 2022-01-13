@@ -194,7 +194,7 @@ Use this index to quickly access examples that showcase use of command line tool
       - [List branch policies](../repos/git/branch-policies.md#configure-branch-policies)
       - [Show branch policy](../repos/git/branch-policies.md#show-details-of-a-policy)
       - [Create policies using a configurate file](/cli/azure/repos/policy#az_repos_policy_create)
-      - [Update policies using a configurate file](/cli/azure/repos/policy*az_repos_policy_update)
+      - [Update policies using a configurate file](/cli/azure/repos/policy?az_repos_policy_update)
       - [Manage required reviewer policy](../repos/git/branch-policies.md#require_reviewers)
       - [Manage external required reviewer policies](../repos/git/branch-policies.md#require-approval-from-external-services)
       - [Manage build validation policies](../repos/git/branch-policies.md#build-validation)
