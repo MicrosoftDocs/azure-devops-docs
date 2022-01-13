@@ -204,7 +204,7 @@
   - name: Use the .artifactignore file
     href: reference/artifactignore.md
     displayName: artifactignore, gitignore 
-  - name: Collaborate more with package componentization
+  - name: Componentization
     href: collaborate-with-packages.md
     displayName: componentization, artifacts, packages, concepts 
 - name: Developer resources
