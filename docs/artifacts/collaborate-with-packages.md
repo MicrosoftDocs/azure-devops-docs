@@ -49,7 +49,7 @@ Packages address many of the challenges of referencing binaries. Instead of chec
 
 Package composition isn't without its challenges though. Thus far, we've looked at a simple example. However, scaling package composition up to the size of a large codebase (something like Windows or Bing) can cause a series of challenges:
 
-- Understanding the impact of breaking changes in a component low in the dependency graph becomes very challenging
+- Understanding the impact of breaking changes in a component low in the dependency graph becomes very challenging.
 
 - **Diamond dependencies** can become a significant roadblock to agility.
 
