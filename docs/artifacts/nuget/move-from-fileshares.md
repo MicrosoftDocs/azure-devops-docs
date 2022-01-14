@@ -61,14 +61,14 @@ Look for your server path (example `<add key="SMBNuGetServer" value="\\server\sh
 
 When setting up your new feeds, you can either:
 
-    - Set up your feed permissions to match your existing file share permissions.
-    - Align your feed permissions with existing Azure DevOps teams and groups.
+  - Set up your feed permissions to match your existing file share permissions.
+  - Align your feed permissions with existing Azure DevOps teams and groups.
 
 If you want to match your existing file share permissions, note the permissions on each share that contains packages. Specifically, note the principals with:
 
-    - **Full control** 
-    - **Modify** or **write**
-    - **Read & execute**, **List folder contents**, or **Read**
+  - **Full control** 
+  - **Modify** or **write**
+  - **Read & execute**, **List folder contents**, or **Read**
 
 ### Set up your feeds
 
@@ -116,7 +116,7 @@ Once you've set up your feeds, you can do a bulk push from each file share to it
 
 #### Update your NuGet configuration
 
-Now, return to each of the *nuget.config* files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For each share, find the file share path (Example <add key="SMBNuGetServer" value="\\server\share\NuGet" />) and replace the `value` with your new feed's source URL.
+Now, return to each of the *nuget.config* files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For each share, find the file share path (Example `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and replace the `value` with your new feed's source URL.
 
 #### Integrate with your builds
 
@@ -126,5 +126,5 @@ Update your builds to ensure they have the right credentials to consume and publ
 
 - [Install NuGet packages with Visual Studio](./consume.md)
 - [Publish packages to NuGet.org](./publish-to-nuget-org.md)
-- [NuGet.org upstream source](.upstream-sources.md)
+- [NuGet.org upstream source](./upstream-sources.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
