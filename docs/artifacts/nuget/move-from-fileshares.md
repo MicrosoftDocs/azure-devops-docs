@@ -19,9 +19,9 @@ Azure Artifacts provides a number of benefits compared to file shares:
 
 - **Indexing:** Azure Artifacts maintains an index of all the packages in each feed, which enables fast `nuget list` operations. List operations on your file shares require the client to open every `nupkg` and examine the `nuspec` for metadata unless your file share has been configured to provide an index that the NuGet client understands.
 
-- **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. This ensures that any dependencies on that version are guaranteed to remain valid. However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure Artifacts feeds. Learn more about [Immutability](../artifacts-key-concepts.md#immutability) in Azure Artifacts.
+- **Immutability:** A package version (for example, `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. This ensures that any dependencies on that version are guaranteed to remain valid. However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure Artifacts feeds. Learn more about [Immutability](../artifacts-key-concepts.md#immutability) in Azure Artifacts.
 
-- **Well-formedness:** Azure Artifacts validates all pushed packages to ensure they're well-formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when moving to Azure Artifacts feeds.
+- **Well-formedness:** Azure Artifacts validates all pushed packages to ensure they're well formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when moving to Azure Artifacts feeds.
 
 > [!NOTE]
 > We recommend using NuGet version 4.8.2 or later. Legacy NuGet versions 2.x are also supported.
@@ -114,15 +114,17 @@ Once you've set up your feeds, you can do a bulk push from each file share to it
 > [!TIP]
 > For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
 
-<a name="update-your-nuget-configuration"></a>
-
 #### Update your NuGet configuration
 
-Now, return to each of the nuget.config files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For 
-each share, find the corresponding `<add key="SMBNuGetServer" value="\\server\share\NuGet" />` and replace the `value` with the new feed's source URL. 
-
-<a name="integrate-with-your-builds"></a>
+Now, return to each of the *nuget.config* files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For each share, find the file share path (Example <add key="SMBNuGetServer" value="\\server\share\NuGet" />) and replace the `value` with your new feed's source URL.
 
 #### Integrate with your builds
 
-Update your builds to ensure they have the right credentials to consume and publish packages to and from your feeds. See how to [Restore NuGet packages in Azure Pipelines](../../pipelines/packages/nuget-restore.md) and how to [Publish to NuGet feeds](../../pipelines/artifacts/nuget.md) for more details.
+Update your builds to ensure they have the right credentials to consume and publish packages to and from your feeds. See how to [Restore NuGet packages in Azure Pipelines](../../pipelines/packages/nuget-restore.md) and how to [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md) for more details.
+
+## Related articles
+
+- [Install NuGet packages with Visual Studio](./consume.md)
+- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
+- [NuGet.org upstream source](.upstream-sources.md)
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
