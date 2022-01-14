@@ -1,16 +1,17 @@
 ---
-title: Advanced package search syntax
+title: Search packages
 titleSuffix: Azure Artifacts
-description: Advanced options for using Package Search across all your feeds in an Azure DevOps organization.
+description: How to search for packages across all your feeds in an Azure DevOps organization.
 ms.technology: devops-collab
 ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2020'
-ms.date: 04/15/2021
+ms.date: 01/14/2021
 ---
-# Functional artifact or package search
+
+# Search packages across your feeds
 
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
@@ -18,13 +19,14 @@ Package Search is available to all users of Azure DevOps. For information on mai
 
 ## Prerequisites
 
-Package Search is automatically available to users of Azure DevOps.
+- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
+- [Azure Artifacts feed](../../artifacts/get-started-nuget.md).
 
 ## Apply supported functions to package search
 
-1. The Views filter only appears if a single feed is selected from Feeds filter. Use the filter to show the selector lists.
+1. Select the filter icon to show the filter panel.
 
-	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Showing the filter lists":::
+	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Screenshot Showing the filter lists":::
 
 2. Select the criteria you want in the selector lists, or search across the entire organization.
 
