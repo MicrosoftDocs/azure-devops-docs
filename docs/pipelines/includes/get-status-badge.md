@@ -19,7 +19,7 @@ To copy the status badge to your clipboard:
 
 1. In Azure Pipelines, go to the **Pipelines** page to view the list of pipelines. Select the pipeline you created in the previous section.
 
-2. Select "Edit" on the upper right to edit the pipeline build, and select "Options".
+2. On the upper right, select **Edit** to edit the pipeline build, and then select **Options**.
 
 3. Copy the sample Markdown from the status badge section.
 
