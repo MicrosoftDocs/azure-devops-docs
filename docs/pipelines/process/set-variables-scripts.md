@@ -285,6 +285,7 @@ stages:
      - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
        name: MyOutputVar
 - stage: B
+  dependsOn: A
   jobs:
   - job: B1
     variables:
