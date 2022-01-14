@@ -1,7 +1,7 @@
 - name: Azure Artifacts
   href: index.yml
   displayName: index, hub, artifacts 
-- name: Overview
+- name: Get started
   items:
   - name: Azure Artifacts overview
     href: start-using-azure-artifacts.md
