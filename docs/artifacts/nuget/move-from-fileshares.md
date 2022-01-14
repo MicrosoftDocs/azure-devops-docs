@@ -1,26 +1,30 @@
 ---
-title: Use Azure Artifacts feeds with NuGet
+title: Use Azure Artifacts feeds with NuGet packages
 description: Leave your file shares behind and bring your packages to Azure Artifacts feeds
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 01/14/2022
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
-# Use Azure Artifacts feeds with NuGet
+# Migrate your packages from file shares
 
-Azure Artifacts provides hosted NuGet feeds as a service. If you're using NuGet packages as a part of your continuous delivery flow, Azure Artifacts can help you manage your dependencies through public and private feeds. Azure Artifacts works with any CI system that supports authenticated NuGet feeds. 
+Azure Artifacts provides hosted NuGet feeds as a service. If you're using NuGet packages as a part of your continuous delivery workflow, Azure Artifacts can help you manage your dependencies through public and private feeds. Azure Artifacts works with any continuous integration system that supports authenticated NuGet feeds.
 
-## Before you start
+## Key concepts
 
-Azure Artifacts provides a number of benefits compared to file shares. However, some of these benefits may require changes to your existing workflows.
+Azure Artifacts provides a number of benefits compared to file shares:
 
 - **Indexing:** Azure Artifacts maintains an index of all the packages in each feed, which enables fast `nuget list` operations. List operations on your file shares require the client to open every `nupkg` and examine the `nuspec` for metadata unless your file share has been configured to provide an index that the NuGet client understands.
-- **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. This ensures that any dependencies on that version are guaranteed to remain valid. However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure Artifacts feeds. Learn more about [Immutability in Azure DevOps Services](../artifacts-key-concepts.md#immutability).
+
+- **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. This ensures that any dependencies on that version are guaranteed to remain valid. However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure Artifacts feeds. Learn more about [Immutability](../artifacts-key-concepts.md#immutability) in Azure Artifacts.
+
 - **Well-formedness:** Azure Artifacts validates all pushed packages to ensure they're well-formed. This prevents invalid packages from entering your development and build environments. However, any workflow that publishes malformed packages will break when moving to Azure Artifacts feeds.
 
-[!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
+> [!NOTE]
+> We recommend using NuGet version 4.8.2 or later. Legacy NuGet versions 2.x are also supported.
 
 ## Authentication and authorization
 
