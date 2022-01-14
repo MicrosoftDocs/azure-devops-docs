@@ -48,6 +48,7 @@ Migrating your packages is a 4-step process:
 ### Inventory your existing package sources
 
 Before making any configuration changes, find your existing NuGet file shares by checking:
+
 - Any nuget.config files in your codebase, likely in the same folder as your solution (.sln) file
 
 - The global nuget.config file at:
@@ -56,45 +57,39 @@ Before making any configuration changes, find your existing NuGet file shares by
 
 Look for your server path (example `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and copy it. You'll use the list of paths in the following sections.
 
-<a name="make-a-plan-for-permissions"></a>
-
 ### Make a plan for permissions
 
 When setting up your new feeds, you can either:
-  - Set up your feed permissions to match your existing file share permissions.
-  - Align your feed permissions with existing Azure DevOps teams and groups.
- 
-If you want to match your existing file share permissions, note the permissions on each share that contains packages. Specifically, note the principals with:
-  - **Full control** 
-  - **Modify** or **write**
-  - **Read & execute**, **List folder contents**, or **Read**
 
-<a name="set-up-your-feeds"></a>
+    - Set up your feed permissions to match your existing file share permissions.
+    - Align your feed permissions with existing Azure DevOps teams and groups.
+
+If you want to match your existing file share permissions, note the permissions on each share that contains packages. Specifically, note the principals with:
+
+    - **Full control** 
+    - **Modify** or **write**
+    - **Read & execute**, **List folder contents**, or **Read**
 
 ### Set up your feeds
 
-Now that you took inventory of your existing package sources, it's time to set up your feeds. For this walkthrough, we'll assume a 1:1 mapping of feeds to SMB shares. 
-
-<a name="create-your-feeds"></a>
+Now that you took inventory of your existing package sources, it's time to set up your feeds. For this walkthrough, we'll assume a 1:1 mapping of feeds to SMB shares.
 
 #### Create your feeds
 
-For each SMB share, follow the instructions to [Create a feed](../concepts/feeds.md#create-a-feed). In the create dialog:
-- Use the name of the SMB share folder as the **Feed name**
-- choose your feed **visibility**, **upstream sources**, and **scope**.
+For each SMB share, follow the instructions to [Create a feed](../concepts/feeds.md#create-a-feed). In the **Create new feed** dialog:
+
+- Use the name of the SMB share folder as the **Feed name**.
+- Choose your feed **Visibility**, **Upstream sources**, and **Scope**.
 
 For each feed you've created, there are a set of [feed permissions](../feeds/feed-permissions.md) that you should consider when setting up feed permissions.
 
-If you've chosen to set up your new feed permissions to match your existing file share permissions, use the following table to give 
-your principals the appropriate group membership:
+If you've chosen to set up your new feed permissions to match your existing file share permissions, use the following table to give your principals the appropriate permissions:
 
-| SMB permission                             | Feed group     |
-|--------------------------------------------|----------------|
-| Full control                               | Owners         |
-| Modify, Write                              | Contributors   |
-| Read & execute, List folder contents, Read | Readers        |
-
-<a name="use-your-feeds"></a>
+|            File share permissions          | Feed permissions |
+|--------------------------------------------|------------------|
+| Full control                               | Owners           |
+| Modify, Write                              | Contributors     |
+| Read & execute, List folder contents, Read | Readers          |
 
 ### Use your feeds
 
