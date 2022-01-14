@@ -93,22 +93,26 @@ If you've chosen to set up your new feed permissions to match your existing file
 
 ### Use your feeds
 
-For each feed, select **Connect to feed** and copy the **Source URL** under the NuGet section. You will need the source URL to [migrate your packages](#migrate-your-packages) and [update your NuGet configuration](#update-your-nuget-configuration).
+For each feed, select **Connect to feed** > **NuGet.exe** and copy the **Source URL** from the **Project setup** section. You will need the source URL to migrate your packages and update your NuGet configuration.
 
-<a name="migrate-your-packages"></a>
+#### Migrate your NuGet packages
 
-#### Migrate your packages
+Once you've set up your feeds, you can do a bulk push from each file share to its corresponding feed. To do so:
 
-Once you've set up your feeds, you can do a bulk push from each SMB share to its corresponding feed. To do so: 
+1. Run the following command in an elevated PowerShell prompt window. This sets up your environment to allow you to work with nuget.exe and Azure Artifacts feeds.
 
-1. If you haven't already, open a PowerShell window in the repo where you installed the NuGet tools and run `init.ps1`. This sets up your environment to allow you to work with nuget.exe and Azure Artifacts feeds.
+    ```Command
+    init.ps1
+    ```
+
 1. For each share, use the following command to push all packages in the share to your new feed:
 
-```Command
-  nuget push {your package path}\*.nupkg -Source {your NuGet package source URL} -ApiKey Azure DevOps Services
-``` 
+    ```Command
+    nuget push <YOUR_PACKAGE_PATH>\*.nupkg -Source <YOUR_SOURCE_URL> -ApiKey Azure DevOps Services
+    ```
 
-For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
+> [!TIP]
+> For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
 
 <a name="update-your-nuget-configuration"></a>
 
