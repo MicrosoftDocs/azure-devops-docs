@@ -4,7 +4,7 @@ description: Leave your file shares behind and bring your packages to Azure Arti
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/21/2020
+ms.date: 01/14/2022
 monikerRange: '>= tfs-2017'
 ---
 
