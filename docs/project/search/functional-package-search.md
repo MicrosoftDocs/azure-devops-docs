@@ -28,23 +28,12 @@ Package Search is available to all users of Azure DevOps. For information on mai
 
 	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Screenshot Showing the filter lists":::
 
-2. Select the criteria you want in the selector lists, or search across the entire organization.
+1. Select from the dropdown menues to search by feeds, views, or package types.
 
-	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Selector drop-down lists":::
+	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Screenshot showing the filter panel options":::
 
-3. By switching pivots, quickly search packages that contain the same search string.
-
-	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for packages containing the same search string":::
-
-By default, you search within all feeds of the organization, no matter which project you're in. 
-
-The Views filter only appears if a single feed gets selected from the Feeds filter. Use this filter to show the selector lists.
-
-Select :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **filter** and the function that you want to include in your search string from the list. Then, enter your criteria. 
-
-:::image type="content" source="media/shared/show-filters.png" alt-text="Show filter panel button.":::
-
-Add more criteria to either narrow or broaden your search by using the operators and functions listed in :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **view options**.
+By default, you search within all feeds of the organization, no matter which project you're in. The **Views** filter only appears if a single feed gets selected from the **Feeds** filter. Use this filter to show packages from a specific view.
+Using the **Type** filter, you can select the type of package you want to search for (such as NuGet packages).
 
 ## Search packages with REST API
 
