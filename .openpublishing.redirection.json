@@ -18299,6 +18299,12 @@
       "source_path": "docs/repos/git/share-your-code-in-git-vs-2017.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/devsecops/index.md",
+      "redirect_url": "/devops/devsecops/enable-devsecops-azure-github",
+      "redirect_document_id": false
+    },
     }
   ]
 }
