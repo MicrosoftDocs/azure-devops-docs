@@ -312,7 +312,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
         <tr><td>Improve error handling experience –– required fields on Bug/Task</td><td>Boards</td><td>N/A</td></tr>
         <tr><td>Preview of scale set agents</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Github packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>GitHub packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Ubuntu 20.04 in preview for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Notifications for disabled upstream sources</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>License expressions and embedded licenses</td><td>Artifacts</td><td>2020</td></tr>

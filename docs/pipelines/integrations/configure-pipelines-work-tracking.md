@@ -14,7 +14,7 @@ ms.date: 08/13/2021
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
-To support integration and traceability across Azure DevOps services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, and set up automatic linking of work items to builds and releases. 
+To support integration and traceability across Azure DevOps Services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, and set up automatic linking of work items to builds and releases. 
  
 
 ## Supported pipeline and work tracking integration features 
