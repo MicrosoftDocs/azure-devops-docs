@@ -16,7 +16,7 @@
 
 	Verify that and then step through the rest of the publish wizard.
 
-5. In the IIS Manager, select your web site and add an HTTPs binding if you don't already have one.
+5. In the IIS Manager, select your web site and add an HTTPS binding if you don't already have one.
 
 	![IIS with the Default Web Site selected in the connections pane, .NET Authorization in the main page, and Bindings in the actions pane](media/publish-app-iis/ssl-bindings.png)
 

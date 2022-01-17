@@ -997,7 +997,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Extend release gates with task extensions</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Use upstream npm packages from elsewhere in VSTS</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Maintain feed query speed with retention policies</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Publish markdown files from a Git repository as a Wiki</td><td></td><td><em>2019</em></td></tr>
+        <tr><td>Publish Markdown files from a Git repository as a Wiki</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Retain special characters in Wiki page titles</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Extend Wiki using REST APIs</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Integrate Power BI with VSTS Analytics using views</td><td></td><td><em>2019</em></td></tr>
@@ -1108,7 +1108,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Create work items from the Queries hub</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Expand/collapse requirements/people on the Task board</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Grant the bypassrule permission to specific users</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Rendered markdown in email notifications</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Rendered Markdown in email notifications</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Pull request comment notifications include the thread context</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Pull request service hooks merge events</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Improved error messages for work items completing with a pull request</td><td></td><td><em>2018.2</em></td></tr>
@@ -1137,7 +1137,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Promote, unlist, and deprecate multiple packages</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Wiki Search</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Link work items and Wiki pages</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Rich markdown rendering in code repo markdown</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Rich Markdown rendering in code repo Markdown</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Wiki supports mathematical formulas</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Analytics OData in Public Preview</td><td></td><td>N/A</td></tr>
         <tr><td>Deprecating the PowerBI.com Content Pack</td><td></td><td>N/A</td></tr>
@@ -2653,7 +2653,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
                 Overview <br />
                 Files <br />
                 Updates <br />
-                Comments, now with markdown and emoji <br />
+                Comments, now with Markdown and emoji <br />
                 Auto-complete pull requests waiting on policies</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>

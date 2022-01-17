@@ -38,9 +38,9 @@
     href: migrate-extension-wiki-pages.md
 - name: Reference
   items:
-  - name: Basic markdown guidance
+  - name: Basic Markdown guidance
     href: Markdown-guidance.md
-  - name: Wiki markdown guidance
+  - name: Wiki Markdown guidance
     href: wiki-markdown-guidance.md
   - name: Keyboard shortcuts to manage wiki pages 
     href: wiki-keyboard-shortcuts.md

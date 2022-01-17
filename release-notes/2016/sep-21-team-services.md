@@ -56,7 +56,7 @@ On the **Files page**, click the **Import repository** button and provide the cl
 
 ## Markdown preview button
 
-When viewing a diff of a markdown file in a commit, push, or pull request, you can now easily toggle to see the resulting rendered view.
+When viewing a diff of a Markdown file in a commit, push, or pull request, you can now easily toggle to see the resulting rendered view.
 
 ## Confirmation for deleting repos
 

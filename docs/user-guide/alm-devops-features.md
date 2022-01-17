@@ -1480,7 +1480,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Markdown widget</b></p>
-<p>Adds a configurable tile to your dashboard to <a href="../report/dashboards/widget-catalog.md#markdown-widget" data-raw-source="[display any type of information, guidance, or links](../report/dashboards/widget-catalog.md#markdown-widget)">display any type of information, guidance, or links</a> that you want using markdown syntax.   </p>
+<p>Adds a configurable tile to your dashboard to <a href="../report/dashboards/widget-catalog.md#markdown-widget" data-raw-source="[display any type of information, guidance, or links](../report/dashboards/widget-catalog.md#markdown-widget)">display any type of information, guidance, or links</a> that you want using Markdown syntax.   </p>
 <img src="media/features/alm-feature-markdown-widget.png" alt="Markdown widget"/><br/><br/>
 
 
