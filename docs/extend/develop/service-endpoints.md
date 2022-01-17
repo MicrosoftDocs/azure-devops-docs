@@ -213,7 +213,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
   "friendlyName": "Build Task that uses the service endpoint",
   "description": "Task with a dynamic property getting data from an endpoint REST data source",
   "author": "francistotten",
-  "helpMarkDown": "Replace with markdown to show in help",
+  "helpMarkDown": "Replace with Markdown to show in help",
   "category": "Build",
   "visibility": [
     "Build",

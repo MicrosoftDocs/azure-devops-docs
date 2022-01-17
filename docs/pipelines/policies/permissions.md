@@ -280,7 +280,7 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 
 ## Set agent pool permissions
 
-You can use pre-defined roles to configure [security on agent pools](../agents/pools-queues.md#security).
+You can use predefined roles to configure [security on agent pools](../agents/pools-queues.md#security).
 You can configure this in a hierarchical manner either for all pools, or for an individual pool.  
 
 ::: moniker range=">=azure-devops-2020"

@@ -234,7 +234,7 @@ We are releasing a public preview of Pipeline Artifacts, a new highly scalable a
 
 ### Publish code as wiki with Contribute permissions
 
-Earlier, only users having **Create Repository** permission on a git repository were able to publish code as wiki. This made the repository administrators or creators a bottleneck for any requests to publish markdown files hosted in git repos as wikis. Now, you can **Publish code as wiki** if you just have **Contribute permission** on the code repository.
+Earlier, only users having **Create Repository** permission on a git repository were able to publish code as wiki. This made the repository administrators or creators a bottleneck for any requests to publish Markdown files hosted in git repos as wikis. Now, you can **Publish code as wiki** if you just have **Contribute permission** on the code repository.
 
 ## Administration
 

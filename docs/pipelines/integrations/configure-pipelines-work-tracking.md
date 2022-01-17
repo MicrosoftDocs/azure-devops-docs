@@ -395,7 +395,7 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 	:::image type="content" source="media/pipelines-integration/yaml-pipeline-more-actions-menu-options.png" alt-text="Screenshot of YAML pipeline More Actions menu options.":::
 
-1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge.":::
 
@@ -406,7 +406,7 @@ To learn the reference name for a field, look it up from the [Work item field in
 
 1. Open pipeline **Build properties** as describe in [Build properties](#classic-build-properties).
 
-1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/classic-build-status-badge.png" alt-text="Screenshot of classic build properties, status badge section.":::
 
@@ -420,7 +420,7 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 	:::image type="content" source="media/pipelines-integration/enable-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages selected.":::
 
-1.	Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1.	Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or Markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/classic-release-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages that you can copy.":::
 	

@@ -24,7 +24,7 @@ This article shows you how to get started with pull request templates.
 
 ## What is a pull request template?
 
-A pull request template is a file containing [markdown](../../project/wiki/markdown-guidance.md) text that is added to your pull request description when the pull request is created. 
+A pull request template is a file containing [Markdown](../../project/wiki/markdown-guidance.md) text that is added to your pull request description when the pull request is created. 
 
 ```markdown
 Thank you for your contribution to the Fabrikam Fiber repo. 

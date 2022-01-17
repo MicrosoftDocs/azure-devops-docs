@@ -379,7 +379,7 @@ For example:
 
 We provide the `./svc.sh` script as a convenient way for you to run and manage your agent as a launchd LaunchAgent service. But you can use whatever kind of service mechanism you prefer.
 
-You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
+You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/macOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 
 [!INCLUDE [include](includes/v2/replace-agent.md)]
 
@@ -397,7 +397,7 @@ You can use the template described above as to facilitate generating other kinds
 
 ### Where can I learn more about how the launchd service works?
 
-[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
+[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/macOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 ::: moniker range="azure-devops"
 

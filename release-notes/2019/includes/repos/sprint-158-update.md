@@ -8,7 +8,7 @@ Previously, when configuring Azure Pipelines from the AKS Deployment Center, we 
 
 ### Preview Markdown files in pull request Side-by-side diff 
 
-You can now see a preview of how a markdown file will look by using the new **Preview** button. In addition, you can see the full content of a file from the Side-by-side diff by selecting the **View** button. 
+You can now see a preview of how a Markdown file will look by using the new **Preview** button. In addition, you can see the full content of a file from the Side-by-side diff by selecting the **View** button. 
 
 > [!div class="mx-imgBorder"]
 > ![Preview Markdown files in pull request Side-by-side diff.](../../media/158_10.png)
