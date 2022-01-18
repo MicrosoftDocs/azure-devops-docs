@@ -75,7 +75,7 @@ For a description of each group and each permission, see [Permissions and groups
 
 ## Add a user or group to a security group
 
-As roles and responsibilities change, you might need to change the permission levels for individual members of a project. The easiest way to do that is to add the user or a group of users to a pre-defined security group.  If roles change, you can then remove the user from a group.
+As roles and responsibilities change, you might need to change the permission levels for individual members of a project. The easiest way to do that is to add the user or a group of users to a predefined security group.  If roles change, you can then remove the user from a group.
 
 Here we show how to add a user to the built-in Project Administrators group. The method is similar to adding an Azure Active Directory or Active Directory group. 
 

@@ -319,7 +319,7 @@ az repos pr update --id
 |`--bypass-policy`|Bypass any required policies and complete the pull request once it can be merged. Accepted values: `false`, `true`.|
 |`--bypass-policy-reason`|Reason for bypassing required policies.|
 |`--delete-source-branch`|Delete the source branch after the pull request is completed and merged into the target branch. Accepted values: `false`, `true`.|
-|`--description -d`|New description for the pull request. Can include markdown. Each value is new line. For example: `--description "First Line" "Second Line"`.|
+|`--description -d`|New description for the pull request. Can include Markdown. Each value is new line. For example: `--description "First Line" "Second Line"`.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`--draft`|Convert the PR to draft mode or publish it. Accepted values: `false`, `true`.|
 |`--merge-commit-message`|Message to display when commits are merged.|

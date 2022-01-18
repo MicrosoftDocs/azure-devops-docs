@@ -77,7 +77,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Area paths](../organizations/settings/set-area-paths.md) 
    - [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
    - [Add a custom pick list](add-modify-field.md#picklist)  
-   - [Modify a pre-defined pick list](add-modify-field.md#picklist)  
+   - [Modify a predefined pick list](add-modify-field.md#picklist)  
    - [State or Reason fields (customize workflow)](xml/change-workflow-wit.md)  
    - [Person-name field (add users)](../organizations/security/add-users-team-project.md)   
    - [Resolution State & Failure Type](customize-work.md#test-experience)  

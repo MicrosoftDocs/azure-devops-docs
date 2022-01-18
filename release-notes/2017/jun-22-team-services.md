@@ -200,7 +200,7 @@ Note that it’s just the secret names that are mapped to the variable group var
 ## Package Management experience updates
 We got some great feedback on the updated __Package Management__ experience when we turned it on by default, so we have made a few more updates.
 
-Package URLs now work with the package name and version, rather than using GUIDs. This makes it easier to hand-craft package URLs. The format is: https://\<account\>.visualstudio.com/\<project|team\>/_packaging?feed=\<feed\>&package=\<package\>&version=\<version\>&protocolType=\<NuGet|Npm\>&_a=package.
+Package URLs now work with the package name and version, rather than using GUIDs. This makes it easier to hand-craft package URLs. The format is: https://\<account\>.visualstudio.com/\<project|team\>/_packaging?feed=\<feed\>&package=\<package\>&version=\<version\>&protocolType=\<NuGet|npm\>&_a=package.
 
 ![Friendly URI](media/06_22_04.png)
 
