@@ -7,7 +7,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/14/2022
+ms.date: 01/18/2022
 ---
 
 
@@ -16,18 +16,18 @@ ms.date: 01/14/2022
 
 [!INCLUDE [version-header](includes/version-header.md)]
 
-You can change how you track your team's progress by creating and customizing objects that track work items. By using the **witadmin** command-line tool, you can create, delete, import, and export objects such as categories, global lists, global workflow, types of links, and types of work items. You can also delete, list, or change the attributes of work item fields.  
+You can perform several tasks to list, view, copy/clone or run tests using the **tcm.exe** command-line tool. 
 
 ## Work with the TCM command-line tool 
 
 To exercise the TCM command-line tool, you must have the following in place: 
 
-- Installed Visual Studio 2017 Professional or earlier version. You access TCM from the command prompt and the following directories: 
+- Installed Visual Studio 2017 Professional or earlier version. You access **tcm.exe** from the command prompt and the following directories: 
 	`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE`  
 	`%programfiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE` 
 	`%programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
 
-- To run a TCM command, specify the `/collection` and `/teamproject` parameters, and `/login` as needed.   
+- To run a **tcm.exe** command, specify the `/collection` and `/teamproject` parameters, and `/login` as needed.   
 
 	| Parameter | Description |  
 	|----------|------------|  
@@ -39,7 +39,9 @@ To exercise the TCM command-line tool, you must have the following in place:
  
 ## TCM commands
 
-The following table provides links to articles that describe how to exercise the corresponding tcm command. Most commands are supported on both Azure DevOps Server, all versions, and Azure DevOps Services. 
+The following table provides links to articles that describe how to exercise the corresponding **tcm.exe** command. Most commands are supported on both Azure DevOps Server, all versions, and Azure DevOps Services.  
+
+
 
 ---
 :::row:::
@@ -59,10 +61,10 @@ The following table provides links to articles that describe how to exercise the
    [tcm configs](test-different-configurations.md):Lists test configurations
    :::column-end:::
    :::column span="1":::
-       ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -73,7 +75,7 @@ The following table provides links to articles that describe how to exercise the
        
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -81,10 +83,10 @@ The following table provides links to articles that describe how to exercise the
    [tcm plans](copy-clone-test-items.md#clone-test-plan): List or clone test plans.
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -92,10 +94,10 @@ The following table provides links to articles that describe how to exercise the
    [tcm run](run-automated-tests-from-test-hub.md): Creates, deletes, lists, aborts, publishes, exports, or runs a group of tests. 
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -103,10 +105,10 @@ The following table provides links to articles that describe how to exercise the
    [tcm suites](copy-clone-test-items.md#clone-test-suite): List or clone test suites. 
    :::column-end:::
    :::column span="1":::
-       ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -114,10 +116,10 @@ The following table provides links to articles that describe how to exercise the
    [tcm testenvironments](test-different-configurations.md): View and list test environments.
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -125,10 +127,10 @@ The following table provides links to articles that describe how to exercise the
    [tcm testcase](copy-clone-test-items.md#import-test-cases): Import test cases from a specified assembly or a test file 
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+      &nbsp;&nbsp;&nbsp;&nbsp;✔️
    :::column-end:::
 :::row-end:::
 ---
