@@ -56,7 +56,7 @@ If you want to publish NuGet packages using the dotnet or nuget CLI, make sure y
 - [Publish NuGet packages from Azure Pipelines](../../pipelines/artifacts/nuget.md)
 - [Publish npm packages from Azure Pipelines](../../pipelines/artifacts/npm.md)
 - [Publish Python packages from Azure Pipelines](../../pipelines/artifacts/pypi.md)
-- [Publish Maven artifacts using Gradle](../../pipelines/artifacts/publish-package-gradle.md)
+- [Publish Maven artifacts with Gradle](../maven/publish-package-gradle.md)
 
 ## Share packages
 

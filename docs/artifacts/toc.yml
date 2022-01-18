@@ -95,7 +95,10 @@
       displayName: maven pom, maven artifacts, maven packages, maven authentication
     - name: Install a Maven artifact
       href: maven/install.md
-      displayName: maven artifacts, maven packages, maven feeds 
+      displayName: maven artifacts, maven packages, maven feeds
+    - name: Publish Maven artifacts with Gradle
+      href: maven/publish-package-gradle.md
+      displayName: maven artifacts, maven packages 
     - name: Use packages from Maven Central
       href: maven/upstream-sources.md
       displayName: maven packages, maven artifacts, maven central
