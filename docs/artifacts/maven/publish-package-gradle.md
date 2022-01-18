@@ -9,7 +9,6 @@ monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
 
-
 # Publish Maven artifacts using Gradle
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
@@ -28,7 +27,7 @@ To make sure you have all the prerequisites set up, run the following command in
 java -version
 ```
 
-If the above command doesn't return a java version, make sure you go back and install the Java JDK or JRE first. 
+If the above command doesn't return a java version, make sure you go back and install the Java JDK or JRE first.
 
 To confirm the installation of Gradle, run the following command in an elevated command prompt:
 
@@ -44,7 +43,7 @@ gradle -v
 
     :::image type="content" source="media/create-pat.png" alt-text="Screenshot showing how to create a personal access token":::
 
-2. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
+2. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope.
 
     :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
@@ -56,7 +55,7 @@ gradle -v
 
 1. Select your profile icon, and then select **Security**.
 
-2. Select **New Token**, and then name your token and set its expiration date. 
+2. Select **New Token**, and then name your token and set its expiration date.
 
 3. Select the **Packaging (Read & write)** scope.
 
@@ -76,7 +75,7 @@ gradle -v
 
 7. Save your file when you are done.
 
-## Configure build.gradle 
+## Configure build.gradle
 
 1. Create a new file in the root of your project and name it *build.gradle*.
 
@@ -119,12 +118,12 @@ gradle -v
         } 
     } 
     ```
-    
+
 In the above example, we are publishing and downloading artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about pipeline variables and the *System.AccessToken* security token.
 
 ## Publish Maven packages with Gradle
 
-Run the following command in an elevated command prompt to publish your package to your feed. Your new package will be named: *groupId:artifactId*. 
+Run the following command in an elevated command prompt to publish your package to your feed. Your new package will be named: *groupId:artifactId*.
 
 ```Command
 gradle publish
@@ -132,6 +131,6 @@ gradle publish
 
 ## Related articles
 
-- [Publish and download pipeline Artifacts](pipeline-artifacts.md)
-- [Releases in Azure Pipelines](../release/releases.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Publish and download pipeline Artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
+- [Releases in Azure Pipelines](../../pipelines/release/releases.md)
+- [Release artifacts and artifact sources](../../pipelines/release/artifacts.md)
