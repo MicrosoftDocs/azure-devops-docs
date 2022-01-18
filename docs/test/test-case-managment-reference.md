@@ -73,6 +73,7 @@ The following table provides links to articles that describe how to exercise the
    ::: moniker range=">= azure-devops-2020"
    > [!NOTE]  
    > You can only exercise this command on collections that use the Online XML process model. For Azure DevOps Server 2020 and later versions that use the Inherited process model, import of XML files aren't supported. 
+   ::: moniker-end
    :::column-end:::
    :::column span="1":::
        
