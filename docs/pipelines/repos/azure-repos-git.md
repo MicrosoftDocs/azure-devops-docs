@@ -54,7 +54,7 @@ To clone additional repositories as part of your pipeline:
 
 * If the access token (explained below) does not have access to the repository:
 
-    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`
+    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `PAT:`
     2. Base64-encode this string to create a basic auth token.
     3. Add a script in your pipeline with the following command to clone that repo
        `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
