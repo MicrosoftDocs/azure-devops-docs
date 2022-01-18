@@ -66,6 +66,8 @@ To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visual
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
+[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
+
 <a name="run-web"></a>
 
 ## Run tests for web apps
@@ -389,8 +391,6 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ## Run tests with TCM
 
 You can run tests that are part of a test plan using the TCM command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
-
-[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
 
 [List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) 
 
