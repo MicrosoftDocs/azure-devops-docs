@@ -23,7 +23,7 @@ This sprint, we are releasing a much improved source browsing experience… The 
 
 ![new source viewer](media/8_27_02.png)
 
-We’ve also added a search experience to the source viewer so that you don’t have to use just the built in browser search. It supports regular expressions (click the R circle), whole word matches (the W circle) and Case sensitive matches (the C circle). Matches highlight in the document as you type and you can use the up and down arrows to move between matches.
+We’ve also added a search experience to the source viewer so that you don’t have to use just the built-in browser search. It supports regular expressions (click the R circle), whole word matches (the W circle) and Case sensitive matches (the C circle). Matches highlight in the document as you type and you can use the up and down arrows to move between matches.
 
 ![search in source viewer](media/8_27_03.png)
 

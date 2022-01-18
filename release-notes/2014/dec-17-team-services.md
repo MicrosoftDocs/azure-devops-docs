@@ -27,7 +27,7 @@ The new editing capabilities also show up in the **Welcome** hub, making it easy
 
 ![Creating a README file](media/12_17_03.png)
 
-We also enabled the ability to create links to existing (or new) markdown files by following the syntax in the screenshot below. Don’t worry if the page doesn’t exist, because you can edit and commit the new file when you click the link, wiki style.
+We also enabled the ability to create links to existing (or new) Markdown files by following the syntax in the screenshot below. Don’t worry if the page doesn’t exist, because you can edit and commit the new file when you click the link, wiki style.
 
 ![Linking to a new page](media/12_17_04.png)
 

@@ -43,9 +43,9 @@ The new Updates view is used to show how the  pull request is changing over time
 
 The Commits view is useful in conjunction with the Updates view to show the current changes to be merged when the PR is completed.
 
-### Comments, now with markdown and emoji
+### Comments, now with Markdown and emoji
 
-Use the full power of markdown in all of your discussions, including formatting, code with syntax highlighting, links, images, and emoji. The commenting controls also have a more user friendly editing experience allowing multiple comments to be edited (and then saved) at one time.
+Use the full power of Markdown in all of your discussions, including formatting, code with syntax highlighting, links, images, and emoji. The commenting controls also have a more user friendly editing experience allowing multiple comments to be edited (and then saved) at one time.
 
 ![Comments](media/8_17_05.png)
 

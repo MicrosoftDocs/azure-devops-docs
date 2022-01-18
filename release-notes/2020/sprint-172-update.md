@@ -41,7 +41,7 @@ Check out the [Features](#features) list below for more information.
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"] 
-> [Go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## How to provide feedback
 

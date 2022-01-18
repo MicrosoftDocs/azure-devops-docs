@@ -342,7 +342,7 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 
 ## Share data with team dashboards 
 
-You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide markdown information, query charts, and more. 
+You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide Markdown information, query charts, and more. 
 
 For details, see [Manage dashboards](../../report/dashboards/dashboards.md). 
 

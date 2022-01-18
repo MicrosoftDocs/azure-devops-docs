@@ -60,7 +60,7 @@ Before you package your integration as an extension, you'll need to create a `ho
     * Screenshots (1366x768 pixels)
 2. Create a file called `overview.md`
     * Describe your integration here
-    * To learn more about markdown, see [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+    * To learn more about Markdown, see [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 3. Create a file called `vss-integration.json`
     * This file is your Marketplace listing's manifest file, it contains many properties to describe your extension in your Marketplace listing. You can browse the [extension manifest reference here](../develop/manifest.md)
 

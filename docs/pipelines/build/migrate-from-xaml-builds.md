@@ -253,7 +253,7 @@ The new build pipeline offers you some new options. See [Build and release reten
 
 ## Build and release different kinds of apps
 
-In XAML builds you had to create your own custom templates to build different types of apps. In the new build system you can pick from a set of pre-defined templates. The largest and most current set of templates are available on Azure Pipelines and in our newest version of TFS.
+In XAML builds you had to create your own custom templates to build different types of apps. In the new build system you can pick from a set of predefined templates. The largest and most current set of templates are available on Azure Pipelines and in our newest version of TFS.
 
 ### Build
 
