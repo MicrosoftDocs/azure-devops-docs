@@ -149,14 +149,14 @@ Earlier in **Wiki**, users could not reorder or re-parent pages using keyboard a
 
 ### Preview content as you edit Wiki pages
 
-Data shows that users almost always **Preview** a wiki page multiple times while editing content. For each page edit, users click on **Preview** 1-2 times on average. This results in a slow and sub-optimal edit experience and can be particularly time consuming for those new to markdown. Now you can see the preview of your page while editing.
+Data shows that users almost always **Preview** a wiki page multiple times while editing content. For each page edit, users click on **Preview** 1-2 times on average. This results in a slow and sub-optimal edit experience and can be particularly time consuming for those new to Markdown. Now you can see the preview of your page while editing.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki preview](media/09_15_31.png)
 
 ### Paste rich content as HTML
 
-You can now paste rich text in the markdown editor of **Wiki** from any browser-based applications such as Confluence, OneNote, SharePoint, and mediawiki. This is particularly useful for those who have created rich content such as complex tables and want to show it in **Wiki**. Simply copy content and paste it as HTML.
+You can now paste rich text in the Markdown editor of **Wiki** from any browser-based applications such as Confluence, OneNote, SharePoint, and mediawiki. This is particularly useful for those who have created rich content such as complex tables and want to show it in **Wiki**. Simply copy content and paste it as HTML.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki rich content as HTML](media/09_15_32.png)
@@ -315,7 +315,7 @@ Users who had an MSA and AAD identity with the same sign in address would receiv
 
 ### Marketplace moves to new markdown-it parser
 
-Marketplace is moving to markdown-it parser, which is based on the CommonMark specification and will be used for all new extensions published going forward. Publishers of existing VSTS extensions can test their markdown content using the **try it** experience on the extension page and move to the new parser by making the manifest changes. Starting December 1, 2017 Marketplace will be leveraging only the new parser for both new and existing extensions.
+Marketplace is moving to markdown-it parser, which is based on the CommonMark specification and will be used for all new extensions published going forward. Publishers of existing VSTS extensions can test their Markdown content using the **try it** experience on the extension page and move to the new parser by making the manifest changes. Starting December 1, 2017 Marketplace will be leveraging only the new parser for both new and existing extensions.
 
 See the [documentation](https://aka.ms/vsmarketplace_parser) for more information.
 

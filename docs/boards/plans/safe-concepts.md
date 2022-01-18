@@ -112,7 +112,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 ## Iteration goals and objectives 
 
-SAFe® practices include Agile release teams defining their iteration goals and objectives. We recommend using the project wiki or team dashboards to capture team information. The project wiki and team dashboards both support markdown to add and format information. 
+SAFe® practices include Agile release teams defining their iteration goals and objectives. We recommend using the project wiki or team dashboards to capture team information. The project wiki and team dashboards both support Markdown to add and format information. 
 
 To learn more, see [Share information](#share-information) later in this article. 
 
@@ -146,7 +146,7 @@ To add custom fields, see [Customize Azure Boards, Add a custom field](safe-cust
 
 ## Use the project wiki to support your portfolio vision and strategic themes
 
-Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using markdown and a WYSIWYG editor. It versions each page so that it's easy to track who made changes and recover past versions.   
+Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using Markdown and a WYSIWYG editor. It versions each page so that it's easy to track who made changes and recover past versions.   
 
 Use your project wiki to support sharing the following SAFe® artifacts: 
 

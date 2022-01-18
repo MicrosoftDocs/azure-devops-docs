@@ -258,7 +258,7 @@ In the **Send release summary mail** window, you can further customize the infor
 
 The names of releases for a release pipeline are, by default, sequentially numbered. The first release is named **Release-1**, the next release is **Release-2**, and so on. You can change this naming scheme by editing the release name format mask. In the **Options** tab of a release pipeline, edit the **Release name format** property in the **General** page.
 
-When specifying the format mask, you can use the following pre-defined variables.
+When specifying the format mask, you can use the following predefined variables.
 
 | Variable | Description |
 |----------|-------------|

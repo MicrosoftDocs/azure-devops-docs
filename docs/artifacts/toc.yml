@@ -1,7 +1,7 @@
 - name: Azure Artifacts
   href: index.yml
   displayName: index, hub, artifacts 
-- name: Overview
+- name: Get started
   items:
   - name: Azure Artifacts overview
     href: start-using-azure-artifacts.md
@@ -62,7 +62,7 @@
     - name: Migrate from file shares
       href: nuget/move-from-fileshares.md
       displayName: nuget feeds, artifacts 
-  - name: Npm 
+  - name: npm 
     items:
     - name: npm quickstart
       href: get-started-npm.md

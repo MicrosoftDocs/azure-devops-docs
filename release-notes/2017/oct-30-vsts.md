@@ -71,7 +71,7 @@ Whenever you want to mention a PR, enter a `!`, and you’ll see an interactive 
 
 ### Toggle word wrap and white space in diff views
 
-Two new features are available in the file diff viewer: **Toggle Word Wrap** and **Toggle White Space**. The first allows the word wrap setting to be applied while in a diff view. This is particularly useful for reviewing PRs that contain files without frequent line breaks - markdown files are a good example. The option to toggle white space is helpful when only whitespace has changed in a line or file. Toggling this setting will both display and highlight the whitespace characters (dots for spaces, arrows for tabs, etc.) in the diff.
+Two new features are available in the file diff viewer: **Toggle Word Wrap** and **Toggle White Space**. The first allows the word wrap setting to be applied while in a diff view. This is particularly useful for reviewing PRs that contain files without frequent line breaks - Markdown files are a good example. The option to toggle white space is helpful when only whitespace has changed in a line or file. Toggling this setting will both display and highlight the whitespace characters (dots for spaces, arrows for tabs, etc.) in the diff.
 
 To toggle these settings, use the **F1** key to access the command palette. Then select the setting to toggle.
 
