@@ -18301,9 +18301,9 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/devsecops/index.md",
-      "redirect_url": "/devops/devsecops/enable-devsecops-azure-github",
-      "redirect_document_id": false
+      "source_path": "docs/migrate/migration.md",
+      "redirect_url": "/azure/devops/migrate/migration-overview",
+      "redirect_document_id": true
     }
   ]
 }

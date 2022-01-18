@@ -61,7 +61,7 @@ We have modernized the changeset and shelveset pages in TFVC. Both pages are mad
 
 ![changeset page](media/03_29_05.png)
 
-Both changeset and shelveset pages also host the a new markdown discussion control that will allow to type comments in markdown, @mention users, associate work items using #, and easily attach files and images.
+Both changeset and shelveset pages also host the a new Markdown discussion control that will allow to type comments in Markdown, @mention users, associate work items using #, and easily attach files and images.
 
 ![changeset discussion](media/03_29_06.png)
 
