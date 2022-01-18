@@ -39,7 +39,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
 ::: moniker-end
 
-## Services billed via Azure
+## All services billed via Azure
 
 During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services are billed via Azure. You aren't required to pay for or use any other Azure services.
  
@@ -53,6 +53,8 @@ The following links take you to the paid services that are offered by Microsoft:
 [!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
 
 Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
+
+:::image type="content" source="media/shared/select-billing-organization-settings.png" alt-text="Screenshot of Billing selection in Organization settings.":::
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
