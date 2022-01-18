@@ -294,7 +294,7 @@ The following table indicates those features available for each supported access
       Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
    :::column-end:::
    :::column span="1":::
-       
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
