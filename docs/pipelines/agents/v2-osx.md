@@ -59,10 +59,11 @@ If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.
 It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
 
 Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
-If the agent is running behind the proxy, you need to add to the white list the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
 
 > [!NOTE]
 > Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
+
+If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
 
 If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
 1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
