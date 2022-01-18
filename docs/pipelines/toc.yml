@@ -466,48 +466,45 @@
           href: ecosystems/kubernetes/canary-demo.md
 - name: Consume & publish artifacts
   items:
-    - name: About artifacts
+    - name: Artifacts in Azure Pipelines
       href: artifacts/artifacts-overview.md
       displayName: artifacts, artifacts overview
-    - name: Publish & download artifacts
+    - name: Publish & download pipeline artifacts
       href: artifacts/pipeline-artifacts.md
       displayName: download artifacts, publish artifacts, packages
     - name: Build artifacts
       href: artifacts/build-artifacts.md
       displayName: build, artifacts
-    - name: Releases in Azure Pipelines
+    - name: Release pipelines
       href: release/releases.md
       displayName: release artifacts, deployment artifacts
     - name: Release artifacts and artifact sources
       href: release/artifacts.md
       displayName: artifacts, source, release artifacts
-    - name: Install Maven Artifacts
-      href: artifacts/pull-package-gradle.md
-      displayName: Install maven, maven, package
-    - name: Publish Maven Artifacts
-      href: artifacts/publish-package-gradle.md
-      displayName: gradle, maven artifacts, maven feed
-    - name: npm
-      href: artifacts/npm.md
-      displayName: npm, package
     - name: NuGet
       href: artifacts/nuget.md
       displayName: nuget, package
+    - name: npm
+      href: artifacts/npm.md
+      displayName: npm, package
+    - name: Maven
+      href: artifacts/pull-package-gradle.md
+      displayName: maven, package
     - name: Python
       href: artifacts/pypi.md
       displayName: python, package
-    - name: Symbols
-      href: artifacts/symbols.md
-      displayName: symbols, debugging, debugger
     - name: Universal Packages
       href: artifacts/universal-packages.md
       displayName: package, universal
+    - name: Symbols
+      href: artifacts/symbols.md
+      displayName: symbols, debugging, debugger
     - name: Restore NuGet packages
       href: packages/nuget-restore.md
       displayName: nuget, package, restore
-    - name: Restore & publish NuGet packages (Jenkins)
+    - name: Publish NuGet packages with Jenkins
       href: packages/jenkins.md
-      displayName: nuget, package, restore, publish, jenkins
+      displayName: nuget, package, publish, jenkins
 - name: Create & use resources
   items:
     - name: About resources
