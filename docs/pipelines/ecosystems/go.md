@@ -74,7 +74,7 @@ Modern versions of Go are pre-installed on [Microsoft-hosted agents](../agents/h
 
 #### [Go 1.11+](#tab/go-current)
 
-Starting with Go 1.11, you no longer need to define a `$GOPATH` environment, set up a workspace layout, or use the `dep` module. Dependency management is now built in. 
+Starting with Go 1.11, you no longer need to define a `$GOPATH` environment, set up a workspace layout, or use the `dep` module. Dependency management is now built-in. 
 
 This YAML implements the `go get` command to download Go packages and their dependencies. It then uses `go build` to generate the content that is published with `PublishBuildArtifacts@1` task. 
 

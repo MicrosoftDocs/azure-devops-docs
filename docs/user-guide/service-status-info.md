@@ -47,7 +47,7 @@ we communicate impact of each of these services by geographic region in the serv
 
 ## Service health indicators 
 
-The Azure DevOps Services status portal indicates the status of Azure DevOps services according to the following indicators. These indicators reflect the severity of a service health event based on the number of customers affected by the issue. Typically, the highest severity events impact a large percentage of our customers and render some parts of the product unusable. 
+The Azure DevOps Services status portal indicates the status of Azure DevOps Services according to the following indicators. These indicators reflect the severity of a service health event based on the number of customers affected by the issue. Typically, the highest severity events impact a large percentage of our customers and render some parts of the product unusable. 
  
 :::image type="content" source="media/services-status/status-indicators.png" alt-text="Service status indicators"::: 
 

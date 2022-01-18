@@ -153,7 +153,7 @@ To add the Markdown widget to the dashboard, select :::image type="icon" source=
 
 	Here we show some simple text with a bulleted list of four links
 
-	<img src="media/add-markdown-configure.png" alt="Configure markdown" /> 
+	<img src="media/add-markdown-configure.png" alt="Configure Markdown" /> 
 
 	To link to a wiki page, repository file, or page within the project, use this format: 
 

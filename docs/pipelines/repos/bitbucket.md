@@ -46,7 +46,7 @@ OAuth is the simplest authentication type to get started with for repositories i
 To use OAuth, login to Bitbucket when prompted during pipeline creation. Then, click **Authorize** to authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
 
 > [!NOTE]
-> The maximum number of BitBucket repositories that the Azure DevOps Services user interface can load is 2,000. 
+> The maximum number of Bitbucket repositories that the Azure DevOps Services user interface can load is 2,000. 
 
 ### Password authentication
 

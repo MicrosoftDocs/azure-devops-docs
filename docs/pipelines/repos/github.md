@@ -516,7 +516,7 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 ## Pre-defined variables
 
-When you build a GitHub repository, most of the [pre-defined variables](../build/variables.md) are available to your jobs. However, since Azure Pipelines does not recognize the identity of a user making an update in GitHub, the following variables are set to system identity instead of user's identity:
+When you build a GitHub repository, most of the [predefined variables](../build/variables.md) are available to your jobs. However, since Azure Pipelines does not recognize the identity of a user making an update in GitHub, the following variables are set to system identity instead of user's identity:
 
 * `Build.RequestedFor`
 * `Build.RequestedForId`
