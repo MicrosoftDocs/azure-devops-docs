@@ -62,7 +62,7 @@
     - name: Migrate from file shares
       href: nuget/move-from-fileshares.md
       displayName: nuget feeds, artifacts 
-  - name: Npm 
+  - name: npm 
     items:
     - name: npm quickstart
       href: get-started-npm.md

@@ -53,7 +53,7 @@ steps:
 
 ### Markdown support in automated test error messages
 
-We've added markdown support to error messages for automated tests. Now you can easily format error messages for both test run and test result to improve readability and ease the test failure troubleshooting experience in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
+We've added Markdown support to error messages for automated tests. Now you can easily format error messages for both test run and test result to improve readability and ease the test failure troubleshooting experience in Azure Pipelines. The supported Markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Markdown support in automated test error messages.](../../media/162_03.png)
