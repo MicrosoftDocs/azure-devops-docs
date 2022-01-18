@@ -131,6 +131,6 @@ gradle publish
 
 ## Related articles
 
-- [Publish and download pipeline Artifacts](pipeline-artifacts.md)
-- [Releases in Azure Pipelines](../release/releases.md)
-- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Publish and download pipeline Artifacts](../../pipelines/artifacts/pipeline-artifacts.md)
+- [Releases in Azure Pipelines](../../pipelines/release/releases.md)
+- [Release artifacts and artifact sources](../../pipelines/release/artifacts.md)
