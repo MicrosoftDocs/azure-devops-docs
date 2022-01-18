@@ -48,8 +48,8 @@ Azure Artifacts enable developers to consume and publish different types of pack
 
 - [Maven quickstart](../../artifacts/get-started-maven.md)
 - [Install Maven Artifacts](../../artifacts/maven/install.md)
-- [Publish a Maven Artifact using Gradle](./publish-package-gradle.md)
-- [Install a Maven Artifact using Gradle](./pull-package-gradle.md)
+- [Publish a Maven Artifact with Gradle](../../artifacts/maven/publish-package-gradle.md)
+- [Publish Maven Artifacts with Azure Pipelines](./pull-package-gradle.md)
 
 #### [Universal Packages](#tab/universal-packages/)
 
