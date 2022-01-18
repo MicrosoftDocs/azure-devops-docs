@@ -62,9 +62,9 @@ See also [authentication information when using the Azure SQL Database Deploymen
 Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here is a simple example of a SQL script that creates an empty database.
 
 ```sql
-  USE [master]
+  USE [main]
   GO
-  IF NOT EXISTS (SELECT name FROM master.sys.databases WHERE name = N'DatabaseExample')
+  IF NOT EXISTS (SELECT name FROM main.sys.databases WHERE name = N'DatabaseExample')
   CREATE DATABASE [DatabaseExample]
   GO
 ```
