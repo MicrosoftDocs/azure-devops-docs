@@ -1,7 +1,7 @@
 ---
 title: Manage preview features
 titleSuffix: Azure DevOps Services
-description: Enable/disable or activate/deactivate features in preview at the user, team project, or organization level  
+description: Enable/disable or activate/deactivate features in preview at the user or organization level  
 ms.custom: Navigation
 ms.technology: devops-collab
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 05/18/2021
+ms.date: 01/19/2022
 ---
 
 
@@ -58,15 +58,40 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column span="3":::
       [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
       [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
+      Dependency Tracker Preview Features (supports updates to the [Dependency Tracker Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview)) 
       [Experimental themes](#experimental-themes)  
       [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
-      [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) 
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
        ✔️   
        ✔️   
+       ✔️   
       &nbsp;  
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) 
+      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
+      [New account manager](#account-manager)  
+      New Artifacts (Feeds) Experience (primarily consists of user interface updates to support accessbility) 
+      [New Boards Hubs](https://devblogs.microsoft.com/devops/azure-boards-ux-modernization-public-preview/)
+   :::column-end:::
+   :::column span=".5"::: 
+      &nbsp;  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
        ✔️   
    :::column-end:::
    :::column span=".5"::: 
@@ -80,21 +105,20 @@ The follow table indicates which preview features can be enabled per user or tea
 ---
 :::row:::
    :::column span="3":::
-      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
-      [New account manager](#account-manager)  
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
       [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
-   :::column-end:::
-   :::column span=".5"::: 
-      &nbsp;  
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
+      [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
+      [New Teams page](../../organizations/settings/add-teams.md)  
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+   :::column-end:::
+   :::column span=".5"::: 
        ✔️   
        ✔️   
        ✔️   
@@ -104,13 +128,13 @@ The follow table indicates which preview features can be enabled per user or tea
 ---
 :::row:::
    :::column span="3":::
-      [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
-      [New Teams page](../../organizations/settings/add-teams.md)  
-      New TFVC pages   
       New Wiki experience  
       [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
+      [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      [Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)   
+      [YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)
    :::column-end:::
-   :::column span=".5"::: 
+   :::column span=".5":::
        ✔️   
        ✔️   
        ✔️   
@@ -122,22 +146,7 @@ The follow table indicates which preview features can be enabled per user or tea
        ✔️   
        ✔️   
        ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
-      [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      [Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)    
-   :::column-end:::
-   :::column span=".5":::
-       ✔️   
-       ✔️   
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
+       ✔️  
    :::column-end:::
 :::row-end:::
 ---
@@ -297,7 +306,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 - [New Navigation](https://devblogs.microsoft.com/devops/new-navigation/)
 
 ### Azure Pipelines
-
+ 
 - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
 - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
@@ -318,6 +327,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 ### Azure Repos
 
+- New TFVC pages
 - [Git Forks](../../repos/git/forks.md) 
 - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos)  
 - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
