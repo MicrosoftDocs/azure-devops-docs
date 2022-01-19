@@ -12017,6 +12017,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/artifacts/publish-package-gradle.md",
+      "redirect_url": "/azure/devops/artifacts/maven/publish-package-gradle.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
       "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
