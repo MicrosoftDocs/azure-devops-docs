@@ -58,7 +58,7 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column span="3":::
       [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
       [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
-      Dependency Tracker Preview Features (supports updates to the [Dependency Tracker Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview)) 
+      [Dependency Tracker](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) Preview Features  
       [Experimental themes](#experimental-themes)  
       [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
    :::column-end:::
@@ -80,15 +80,15 @@ The follow table indicates which preview features can be enabled per user or tea
 ---
 :::row:::
    :::column span="3":::
-      [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) 
+      [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md)  
       [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
       [New account manager](#account-manager)  
-      New Artifacts (Feeds) Experience (primarily consists of user interface updates to support accessbility) 
-      [New Boards Hubs](https://devblogs.microsoft.com/devops/azure-boards-ux-modernization-public-preview/)
+      New Artifacts (Feeds) Experience (accessbility updates)  
+      [New Boards Hubs](https://devblogs.microsoft.com/devops/azure-boards-ux-modernization-public-preview/) 
    :::column-end:::
    :::column span=".5"::: 
-      &nbsp;  
        ✔️   
+      &nbsp;  
        ✔️   
        ✔️   
        ✔️   
@@ -119,6 +119,7 @@ The follow table indicates which preview features can be enabled per user or tea
        ✔️   
    :::column-end:::
    :::column span=".5"::: 
+       ✔️   
        ✔️   
        ✔️   
        ✔️   
