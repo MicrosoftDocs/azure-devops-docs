@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'azure-devops'
-ms.date: 11/17/2021
+ms.date: 01/19/2022
 ---
 
 
@@ -16,16 +16,15 @@ ms.date: 11/17/2021
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
-With Delivery Plans, you can track dependencies that have been added to work items. Dependency tracking supports the Predecessor/Successor link type between work items. The following image shows dependency lines between a work item and several of its predecessor work items. 
+With Delivery Plans, you can track dependencies that have been added to work items. Dependency tracking supports the Predecessor/Successor link type between work items. The following image shows several work items that have dependencies. Those cards with a :::image type="icon" source="media/dependencies/dependency-green-icon.png" border="false"::: green icon indicate there are no dependency issues. Those cards with a :::image type="icon" source="media/dependencies/dependency-red-icon.png" border="false"::: red icon indicate there are issues with one or more dependencies. Dependency issues arise when a predecessor work item is scheduled to finish after a sucessor work item. 
 
-:::image type="content" source="media/dependencies/dependency-lines.png" alt-text="Screenshot of dependency lines between several work items.":::
+:::image type="content" source="media/dependencies/dependencies-with-without-issues.png" alt-text="Screenshot of delivery plan showing work items with dependencies and dependencies with issues.":::
 
- 
 To view dependencies, you must first define the Delivery Plan and dependencies between work items. To learn how, see [Add or edit a Delivery Plans](add-edit-delivery-plan.md) and [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md#link-several-work-items). 
-
+ 
 
 > [!TIP]  
-> You can create dependencies between work items in different projects within the same organization, but not in projects in different organizations. 
+> You can create dependencies between work items in different projects and different teams within the same organization, but not in projects in different organizations. You can open a work item and add a dependency through the links tab. To track dependencies across organizations, you can try the [Dependency Tracker Marketplace extension](../extensions/dependency-tracker.md).
 
 ## Prerequisites
 
@@ -45,7 +44,7 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 
 ## Show dependency lines for a work item 
 
-1. Open the delivery plan from **Boards>Delivery Plans**. 
+1. Open the Delivery Plan from **Boards>Delivery Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
@@ -54,26 +53,32 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 
 	Dependency lines that have no issues show up as black lines. 
 
-	:::image type="content" source="media/dependencies/dependency-lines.png" alt-text="Screenshot of dependency lines between several work items.":::
+	:::image type="content" source="media/dependencies/dependency-lines-no-issue.png" alt-text="Screenshot of dependency lines that have no issues.":::
 
 	> [!TIP]    
-	> Dependency lines show between work items that exist on the same backlog for a team, but not for work items that exist in different projects and team backlogs.
+	> To view dependency lines across team backlogs, make sure to expand both teams.  
 
 	Dependency lines that have issues, show up with red lines. The issues indicate that the successor work item is scheduled to end later than the predecessor work item.  
 
 	:::image type="content" source="media/dependencies/dependency-lines-with-issues.png" alt-text="Screenshot of dependency lines that show issues between several work items.":::
 
+1. To view the issue, choose the :::image type="icon" source="media/dependency-issue-icon.png" border="false"::: icon. 
+
+	:::image type="content" source="media/dependencies/dependency-lines-issue-alert.png" alt-text="Screenshot of card showing dependent work items with an issue in predecessor-successor linkage.":::
+
+ 
+
 ## Open the dependency summary for a work item 
 
-To drill down into specific dependencies, open the Dependencies dialog for the work item. Hover over the card and then choose the :::image type="icon" source="../media/icons/dependency-links.png" border="false"::: link icon. 
+To drill down into specific dependencies, open the Dependencies dialog for the work item. Choose the icon that indicates the work item has dependencies, either the :::image type="icon" source="media/dependencies/dependency-green-icon.png" border="false"::: green or :::image type="icon" source="media/dependencies/dependency-red-icon.png" border="false"::: red icon.  
 
-For example, here we choose the link icon for a work item with dependencies to several work items within the same project.   
+For example, here we choose the link icon for a work item with dependencies to several work items within the same project and another project.   
 
 :::image type="content" source="media/dependencies/card-dependency-link.png" alt-text="Screen shot of card and link icon.":::
 
-The Dependencies dialog indicates that the work item has four predecessors and no issues.
+The Dependencies dialog indicates that the work item has three predecessors and no issues.
 
-:::image type="content" source="media/dependencies/dependency-dialog-no-issues.png" alt-text="Dependencies dialog for a work item with four predecessors and no issues.":::
+:::image type="content" source="media/dependencies/dependency-dialog-with-no-issues-cross-project.png" alt-text="Dependencies dialog for a work item with no issues.":::
 
 ## Identify dependency issues 
 
