@@ -3,8 +3,13 @@
 - name: Azure DevOps Services
   expanded: true
   items:
-    - name: 2021
+    - name: 2022
       expanded: true
+      items:
+        - name: January 19
+          href: 2022/sprint-198-update.md
+    - name: 2021
+      expanded: false
       items:
         - name: December 6
           href: 2021/sprint-196-update.md
@@ -568,6 +573,11 @@
 - name: Azure Pipelines
   expanded: false
   items:
+    - name: 2022
+      expanded: false
+      items:
+        - name: January 19
+          href: 2022/pipelines/sprint-198-update.md
     - name: 2021
       expanded: false
       items:
