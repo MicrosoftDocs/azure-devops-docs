@@ -92,7 +92,6 @@ The follow table indicates which preview features can be enabled per user or tea
        ✔️   
        ✔️   
        ✔️   
-       ✔️   
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
@@ -157,7 +156,7 @@ The follow table indicates which preview features can be enabled per user or tea
 
 
 ::: moniker range="azure-devops-2020"
-The follow table indicates those features that you can enable as a user, project administrator, or project collection administrator.  
+The follow table indicates those features that you can enable as a user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
 
 ---
 :::row:::
