@@ -15,11 +15,10 @@ ms.date: 01/20/2022
 
 [!INCLUDE [temp](../../includes/version-vsts-only.md)] 
 
-Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. This feature minimizes the work required to build similar dashboards from scratch.  
+Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. The copy operation copies the widgets defined on one dashboard to a new dashboard, and reconfigures them based on a selected team. This feature minimizes the work required to build similar dashboards from scratch.  
  
 > [!NOTE]  
 > The **Copy Dashboard** feature is currently in preview and enabled by default. To access the feature, the **Copy Dashboard Experience** must be enabled. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md). 
-> This feature copies the widgets to a new dashboard, but doesn't reconfigure them based on a selected team. Support for that function is planned for a later release. 
 
 To create a dashboard for a team or project, see [Add, rename, and delete dashboards](dashboards.md). To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
 
@@ -82,7 +81,7 @@ All dashboards are associated with either a team or a project. From the **Overvi
 
 	In the background, a folder with the name of the new dashboard is created in Shared Queries. All the queries for the new dashboard are copied to that folder. Query names remain the same. Widgets with a team configuration are updated with the new team. Widgets with a team configuration that are copied from a team dashboard to a project dashboard retain the original configuration.
 
-	:::image type="content" source="media/copy-dashboard/shared-query-folder-created.png" alt-text="Screenshot of Shared QUeries folder created with copy dashboard experience.":::
+	:::image type="content" source="media/copy-dashboard/shared-query-folder-created.png" alt-text="Screenshot of Shared Queries folder created with copy dashboard experience.":::
 
 1. Open each widget as needed to verify or modify the configuration.  
  
