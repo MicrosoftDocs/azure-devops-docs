@@ -65,9 +65,9 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 
-## Create a local Git repo for your project
+## Add a project or solution to a local Git repository
 
-The first step to sharing your Visual Studio solution with others using Git, is to create a local Git repo for your code.
+The first step to sharing your Visual Studio solution with others using Git, is to create a local Git repo for your code. If it's your first time using Visual Studio to connect to **Azure Repos**, see [Connect to a project from Visual Studio](/azure/devops/organizations/projects/connect-to-projects#connect-from-visual-studio-or-team-explorer) for details.
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
@@ -203,7 +203,7 @@ If you don't already have an app in the repo, create one.
     ```Git CLI
     > git init
     > git commit -am "first commit"
-    > git branch -M main
+    > git branch -m main
     ```
 
    Your local Git repo now contains both your Visual Studio solution and Git resources.
@@ -214,7 +214,7 @@ If you don't already have an app in the repo, create one.
 ***
 
 
-## Publish your code to Azure Repos
+## Publish your code
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -264,7 +264,7 @@ The next step to sharing your Visual Studio solution using Git and **Azure Repos
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the Azure DevOps account, organization, and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer-lrg.png":::
 
-       This step creates a new project in your Azure DevOps account with the same name that you selected for the repo. To create the repo in an existing project, select **Advanced** next to the **Repository name**, and then choose a project.<br>
+       This step creates a new project in your Azure DevOps account with the same name that you selected for the repo. To create the repo in an existing project, select **Advanced** next to the **Repository name**, and then choose a project.<br><br>
 
     4. Your code is now in a **Azure Repos** Git repository. You can view your code on the web by selecting **See it on the web**.
 
@@ -360,7 +360,7 @@ The next step to sharing your Visual Studio solution using Git and **Azure Repos
 ***
 
 
-## Review commit changes before publishing
+## Review commit changes
 
 It's good practice to review the code changes in your commit before publishing. Visual Studio provides a diff view that helps you see all the changes you've made since the previous commit.
 
@@ -515,7 +515,7 @@ You can link work items to commits by adding #_ID_ into the commit message. For 
 ***
 
 
-## Commit and push updates
+## Push commit changes
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -642,7 +642,7 @@ To publish new commits from your current local branch to the corresponding branc
 ***
 
 
-## Pull changes from your team
+## Pull changes
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -750,7 +750,7 @@ To download _and_ merge new commits from the **Azure Repos** Git repo into the c
 ***
 
 
-## Troubleshooting
+## FAQs
 
 <!-- BEGINSECTION class="md-qanda" -->
 
