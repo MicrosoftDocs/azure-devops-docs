@@ -7,7 +7,7 @@ ms.author: vijayma
 author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18, freshness-fy22q2
-ms.date: 12/28/2021
+ms.date: 01/20/2022
 monikerRange: azure-devops
 ---
 
@@ -15,17 +15,11 @@ monikerRange: azure-devops
 
 [!INCLUDE [include](../includes/version-team-services.md)]
 
-This guidance explains how to automatically build Ruby projects.
+This article explains how to automatically build Ruby projects.
 
 ## Get started
 
 Do the following steps to set up a pipeline for a Ruby app.
-
-1. Fork this repo to your GitHub account.
-
-    ```
-    https://github.com/MicrosoftDocs/pipelines-ruby
-    ```
 
 1. Sign in to your Azure DevOps organization and go to your project.
 
@@ -66,7 +60,7 @@ pool:
 steps:
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '>= 2.4'
+    versionSpec: '>= 2.5'
     addToPath: true
 ```
 
