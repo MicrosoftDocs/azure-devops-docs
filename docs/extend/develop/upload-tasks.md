@@ -8,7 +8,7 @@ monikerRange: 'azure-devops'
 
 # Update tasks in Azure DevOps collection using Cross-platform CLI for Azure DevOps
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 - You can download the latest version of **Node.js source code**, from the [Node.js source code downloads page](https://nodejs.org/en/download/)
 - Install the **Cross-platform CLI for Azure DevOps**
@@ -23,7 +23,7 @@ monikerRange: 'azure-devops'
 ## Tfx-cli sign in with Personal access token
 
 > [!IMPORTANT]
-> You should create [personal access token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with access to Environment (Read & manage).
+> You should create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with access to Environment (Read & manage).
 
 
 ```
