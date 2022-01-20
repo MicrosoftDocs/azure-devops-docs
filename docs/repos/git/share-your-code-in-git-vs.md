@@ -77,44 +77,38 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 > [!NOTE]
 > One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
 
+1. Create a new local Git repo for your Visual Studio solution, by right-clicking the solution name in **Solution Explorer**, and then selecting **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
+
+   :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
+
+   Or, choose **Git > Create Git Repository** from the menu bar to launch the **Create a Git repository** window. If you don't see this option, then your code is already in a Git repo.
+
+   :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
+
 :::row:::
   :::column span="":::
 
     **Visual Studio Git** <br>
 
-    Create a new local Git repo for your Visual Studio solution, by right-clicking the solution name in **Solution Explorer**, and then selecting **Create Git Repository** to launch the **Create a Git repository** window. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
+    2. In the **Create a Git repository** window, choose **Local only**, verify the **Local path** is correct, and choose **Create**.
 
-      :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
+       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window-lrg.png":::
 
-    Or, choose **Git > Create Git Repository** from the menu bar to launch the **Create a Git repository** window. If you don't see this option, then your code is already in a Git repo.
-
-      :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
-
-    In the **Create a Git repository** window, choose **Local only**, verify the **Local path** is correct, and choose **Create**.
-
-      :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window-lrg.png":::
+       You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and some Git resources.
+    
+       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
   :::column-end:::
   :::column span="":::
 
     **Visual Studio Team Explorer** <br>
 
-    Create a new local Git repo for your Visual Studio solution, by right-clicking the solution name in **Solution Explorer** and then selecting **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
+      You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and some Git resources.
 
-      :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
-
-    Or, choose **Git > Create Git Repository** from the menu bar. If you don't see this option, then your code is already in a Git repo.
-
-      :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
+      :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
   :::column-end:::
 :::row-end:::
-
-You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and some Git resources.
-
-  :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
-
-[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
@@ -272,6 +266,8 @@ The next step to sharing your Visual Studio solution using Git and **Azure Repos
 
    :::column-end:::
 :::row-end:::
+    
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
@@ -355,6 +351,8 @@ The next step to sharing your Visual Studio solution using Git and **Azure Repos
     ```
 
    Your code is now published to the `main` branch of an **Azure Repos** Git repository.
+    
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 
 ***
