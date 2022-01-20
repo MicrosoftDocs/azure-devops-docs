@@ -12018,7 +12018,7 @@
     },
     {
       "source_path": "docs/pipelines/artifacts/publish-package-gradle.md",
-      "redirect_url": "/azure/devops/artifacts/maven/publish-package-gradle.md",
+      "redirect_url": "/azure/devops/artifacts/maven/publish-package-gradle",
       "redirect_document_id": false
     },
     {
