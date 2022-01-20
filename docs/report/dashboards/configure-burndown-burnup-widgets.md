@@ -149,7 +149,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	::: moniker range="azure-devops"
 	You can even filter on a null value for the **Field Criteria**. This behavior is consistent with a query using the same field criteria. Here we select to filter on work items whose **Activity** value isn't defined. 
 
-	:::image type="content" source="media/burndown/field-criteria-null-value.png" alt-text="Screenshot of Field Critera that equals a null value for Activity.":::
+	:::image type="content" source="media/burndown/field-criteria-null-value.png" alt-text="Screenshot of Field Criteria that equals a null value for Activity.":::
 	::: moniker-end
 
 ## Decide how you want to calculate burndown or burnup 
