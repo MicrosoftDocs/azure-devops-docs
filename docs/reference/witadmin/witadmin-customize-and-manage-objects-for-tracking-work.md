@@ -133,7 +133,7 @@ For the Inherited process model, you can add and delete work item types from the
 ## [Fields](manage-work-item-fields.md)
 
 Fields are used to track the status and information associated with work items. Fields are defined for an organization or collection. 
-To learn more about fields, see [Work item fields and attributes](/boards/work-items/work-item-fields.md). To look up the description of a specific field, see [Field descriptions for default and work item fields used in process templates](../../boards/work-items/guidance/work-item-field.md).
+To learn more about fields, see [Work item fields and attributes](/azure/devops/boards/work-items/work-item-fields). To look up the description of a specific field, see [Field descriptions for default and work item fields used in process templates](../../boards/work-items/guidance/work-item-field.md).
  
 For the Inherited process model, you can view and delete fields from the web portal. To learn how, see [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md).
 
