@@ -65,7 +65,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 
-## Add a project or solution to a local Git repository
+## Add a project or solution to a new local Git repository
 
 The first step to sharing your Visual Studio solution with others using Git, is to create a local Git repo for your code. If it's your first time using Visual Studio to connect to **Azure Repos**, see [Connect to a project from Visual Studio](/azure/devops/organizations/projects/connect-to-projects#connect-from-visual-studio-or-team-explorer) for details.
 
