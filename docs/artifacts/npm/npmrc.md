@@ -4,7 +4,7 @@ description: How to set up your project and authenticate to Azure Artifacts feed
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/10/2021
+ms.date: 01/21/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 With Azure Artifacts, you can publish different types of packages to your feeds such as npm, NuGet, Python, Maven, and Universal packages. You can also install packages from feeds and public registries such as npmjs.com.
 
-To authenticate with Azure Artifacts, we must first set up our config file. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+To authenticate with Azure Artifacts, we must first set up our config file. Npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ## Project setup
 
@@ -64,7 +64,7 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker-end
         
-On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This *.npmrc* file should contain all your registries' credentials. 
+On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This second file should contain all your registries' credentials.
 
 ## Credentials setup
 
@@ -204,7 +204,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 ::: moniker-end
 
 > [!TIP]
-> To allow your pipeline to access your feed, make sure you set the build service to a contributor in your feed's settings. Azure Artifacts -> Select your feed -> Settings -> Permissions -> set the build service role to **Contributor**.
+> To allow your pipeline access to your feed, make sure you give the build service a **Contributor** role in your feed's settings. Select **Azure Artifacts** -> [YOUR_FEED] -> **Settings** -> **Permissions** -> set the build service role to **Contributor**.
 
 > [!div class="mx-imgBorder"]
 > ![tip screenshot](../media/project-collection-contributor.png)
