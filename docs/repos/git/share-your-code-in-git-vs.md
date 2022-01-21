@@ -97,27 +97,25 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br>
+    **Visual Studio Git** <br><br>
 
     2. In the **Create a Git repository** window, choose **Local only**, verify the **Local path** is correct, and choose **Create**.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window-lrg.png":::
-
-       You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and some Git resources.
-    
-       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
   :::column-end:::
   :::column span="":::
 
     **Visual Studio Team Explorer** <br>
 
-      You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and some Git resources.
-
-      :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
+    2. Team Explorer doesn't launch the **Create a Git repository** window and assumes that you've chosen a local Git repo.
 
   :::column-end:::
 :::row-end:::
+
+You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and some Git resources.
+
+:::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
@@ -255,21 +253,17 @@ The next step to sharing your Visual Studio solution using Git and **Azure Repos
 
     **Visual Studio Team Explorer** <br><br>
 
-    1. In **Team Explorer**, select **Home** and then choose **Sync** to open **Synchronization**.
-
-       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync-lrg.png":::
-
-    2. In the **Push to Azure Dev Ops Services** section, select the **Publish Git Repo** button.
+    1. In the **Push to Azure Dev Ops Services** section of the **Synchronization** view in **Team Explorer**, select the **Publish Git Repo** button.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/publish-git-repo-team-explorer.png" border="true" alt-text="Screenshot of the 'Push' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/publish-git-repo-team-explorer-lrg.png":::
 
-    3. Choose your Azure DevOps account, organization, and repo name, and then select **Publish Repository**.
+    2. Choose your Azure DevOps account, organization, and repo name, and then select **Publish Repository**.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the Azure DevOps account, organization, and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/publish-git-repo-details-team-explorer-lrg.png":::
 
        This step creates a new project in your Azure DevOps account with the same name that you selected for the repo. To create the repo in an existing project, select **Advanced** next to the **Repository name**, and then choose a project.<br><br>
 
-    4. Your code is now in a **Azure Repos** Git repository. You can view your code on the web by selecting **See it on the web**.
+    3. Your code is now in a **Azure Repos** Git repository. You can view your code on the web by selecting **See it on the web**.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/view-git-repo-on-web.png" border="true" alt-text="Screenshot of the 'See it on the web' link in the 'Home' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/view-git-repo-on-web-lrg.png":::
 
