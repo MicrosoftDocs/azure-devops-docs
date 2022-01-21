@@ -1,6 +1,7 @@
 - name: Developer resources 
   href: index.yml
 - name: Azure DevOps CLI
+  expanded: true
   href: ../cli/toc.yml
 - name: Git commands
   href: ../repos/git/command-prompt.md
