@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 08/23/2021
+ms.date: 01/21/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -184,7 +184,7 @@ steps:
 # parameters.yml
 parameters:
 - name: doThing
-  default: false # value passed to the condition
+  default: true # value passed to the condition
   type: boolean
 
 jobs:
@@ -198,7 +198,7 @@ jobs:
 # azure-pipeline.yml
 parameters:
 - name: doThing
-  default: true # will not be evaluated in time
+  default: true 
   type: boolean
 
 trigger:
@@ -207,6 +207,10 @@ trigger:
 extends:
   template: parameters.yml
 ```
+
+The output of this pipeline is `I did a thing` because the parameter `doThing` is true. 
+
+
 
 ### Use the output variable from a job in a condition in a subsequent job
 
