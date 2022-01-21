@@ -221,7 +221,7 @@ If you don't already have an app in the repo, create one.
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
-The next step to sharing your Visual Studio solution using Git and **Azure Repos**, is to [publish](#publish-your-code-to-azure-repos) from your local Git repo to an **Azure Repos** Git repo that others can access.
+The next step to sharing your Visual Studio solution using Git and **Azure Repos**, is to publish from your local Git repo to an **Azure Repos** Git repo that others can access.
 
 :::row:::
   :::column span="":::
