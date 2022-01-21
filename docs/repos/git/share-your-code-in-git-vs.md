@@ -478,6 +478,8 @@ As you develop your software, you can capture which commits support the completi
    :::column-end:::
 :::row-end:::
 
+> [!NOTE]
+> The #ID syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -511,6 +513,9 @@ You can link work items to commits by adding #_ID_ into the commit message. For 
 > git commit -am "Fix bug #<work item ID>"
 > git push
 ```
+
+> [!NOTE]
+> The #ID syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
 
 
 ***
@@ -777,3 +782,5 @@ See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](c
 
 - [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
 - [Git workflow](gitquickstart.md)
+- [Azure Boards-GitHub integration](/azure/devops/boards/github/)
+- [Link GitHub commits, pull requests, and issues to work items in Azure Boards](/azure/devops/boards/github/link-to-from-github)
