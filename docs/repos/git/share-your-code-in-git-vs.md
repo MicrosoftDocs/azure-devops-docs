@@ -759,7 +759,7 @@ To download _and_ merge new commits from the **Azure Repos** Git repo into the c
 [!INCLUDE [temp](includes/open-team-project-in-vs-qa.md)]
 
 
-### Can I use the Git command prompt with Visual Studio?
+#### Q: Can I use the Git command prompt with Visual Studio?
 
 **A:** Visual Studio's Team Explorer and the Git command-line work great together. Changes to your repos made in either tool will be reflected in the other. 
 Make sure to install the latest release of [Git for Windows](https://git-scm.com/download/win), which has tools to help you connect to your Azure DevOps Services/TFS repos.
