@@ -46,7 +46,7 @@ Examples of valid URLs are:
 ## Upload tasks to Azure DevOps collection
 
 > [!TIP]
-> If you need to update default Azure DevOps tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repo and build needed tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
+> If you need to update default pipeline tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repo and build required tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
 
 Now you can start to upload task using `tfx`.
 
