@@ -6,7 +6,7 @@ ms.date: 01/20/2022
 monikerRange: 'azure-devops'
 ---
 
-# Uppload tasks in Azure DevOps collection using Cross-platform CLI for Azure DevOps
+# Upload tasks in Azure DevOps collection using Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -27,6 +27,7 @@ monikerRange: 'azure-devops'
 > [!IMPORTANT]
 > You should create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with access to Environment (Read & manage).
 
+You should specify the path to DefaultCollection as URL, in case of Azure DevOps server it will depend on the domain where the server is located.
 
 ```
 ~$ tfx login
@@ -39,13 +40,13 @@ Logged in successfully
 
 Examples of valid URLs are:
 
-- `https://youraccount.visualstudio.com/DefaultCollection`
+- `https://yourorganization.visualstudio.com/DefaultCollection`
 - `http://localhost/DefaultCollection`
 
 ## Upload tasks to Azure DevOps collection
 
 > [!TIP]
-> If you need to update non-custom tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repo and build them following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
+> If you need to update default Azure DevOps tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repo and build needed tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
 
 Now you can start to upload task using `tfx`.
 
