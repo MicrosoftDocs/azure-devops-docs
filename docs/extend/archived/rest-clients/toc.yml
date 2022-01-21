@@ -1,13 +1,14 @@
 - name: Clients Services
-  href: /previous-versions/azure/devops/extend/reference/client//previous-versions/azure/devops/extend/reference/client/client-services
+  href: /previous-versions/azure/devops/extend/reference/client/client-services
 - name: Web Context
-  href: /previous-versions/azure/devops/extend/reference/client//previous-versions/azure/devops/extend/reference/client/context
+  href: /previous-versions/azure/devops/extend/reference/client/context
 - name: Core Client SDK
-  href: /previous-versions/azure/devops/extend/reference/client//previous-versions/azure/devops/extend/reference/client/core-sdk
+  href: /previous-versions/azure/devops/extend/reference/client/core-sdk
 - name: REST Clients
-  href: /previous-versions/azure/devops/extend/reference/client//previous-versions/azure/devops/extend/reference/client/rest-clients
+  href: /previous-versions/azure/devops/extend/reference/client/rest-clients
 - name: UI Controls
-  href: /previous-versions/azure/devops/extend/reference/client//previous-versions/azure/devops/extend/reference/client/ui-controls
+  href: /previous-versions/azure/devops/extend/reference/client/ui-controls
+- name: Client APIs
   items:
   - name: TFS/Build/Contracts AgentPoolQueue API	  
     href: /previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/AgentPoolQueue
