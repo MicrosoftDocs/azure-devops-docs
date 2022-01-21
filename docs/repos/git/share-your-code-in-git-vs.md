@@ -108,7 +108,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
     **Visual Studio Team Explorer** <br>
 
-    2. Team Explorer doesn't launch the **Create a Git repository** window and assumes that you've chosen a local Git repo.
+    **Team Explorer** doesn't launch the **Create a Git repository** window, and assumes you want a local Git repo.
 
   :::column-end:::
 :::row-end:::
