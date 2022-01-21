@@ -427,7 +427,7 @@ Once you've pushed your commits, you can create a [pull request](pull-requests.m
     
        :::image type="content" source="media/git-quickstart-visual-studio-2019/team-explorer/commit-created-locally.png" border="true" alt-text="Screenshot of the Sync link that appears after making a commit in Visual Studio 2019." lightbox="media/git-quickstart-visual-studio-2019/team-explorer/commit-created-locally-lrg.png":::
     
-    2. Select **Push** to share your commit with the remote repository. If this is your first push to the repository, you'll see the following message: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` **Push** uploads your changes to a new branch on the remote repository and sets it as the upstream branch.
+    2. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from your local branch will be uploaded to that remote branch.
     
        :::image type="content" source="media/git-quickstart-visual-studio-2019/team-explorer/push-to-origin.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/git-quickstart-visual-studio-2019/team-explorer/push-to-origin-lrg.png":::
 

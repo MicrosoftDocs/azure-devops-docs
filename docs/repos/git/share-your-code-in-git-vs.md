@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 Share your Visual Studio solution with others by hosting your code in an **Azure Repos** Git repository. If your Visual Studio solution is already hosted in an **Azure Repos** Git repository, see the [Git tutorial](gitquickstart.md).
 
-You can use Visual Studio to manage **Azure Repos** Git repositories or GitHub repositories. This article provides procedures to perform the following tasks:
+You can use Visual Studio to manage **Azure Repos** Git repositories or GitHub repositories. This article provides procedures for the following tasks:
 
 > [!div class="checklist"]
 > * Add a project or solution to a local Git repository
@@ -76,7 +76,7 @@ To learn more about permissions and access, see [Default Git repository and bran
 
 ## Add a project or solution to a new local Git repository
 
-The first step to sharing your Visual Studio solution with others using Git, is to create a local Git repo for your code. If it's your first time using Visual Studio to connect to **Azure Repos**, see [Connect to a project from Visual Studio](/azure/devops/organizations/projects/connect-to-projects#connect-from-visual-studio-or-team-explorer) for details.
+The first step to sharing your Visual Studio solution with others using Git is to create a local Git repo for your code. If it's your first time using Visual Studio to connect to **Azure Repos**, see [Connect to a project from Visual Studio](/azure/devops/organizations/projects/connect-to-projects#connect-from-visual-studio-or-team-explorer) for details.
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
@@ -198,7 +198,7 @@ If you don't already have an app in the repo, create one.
 
 1. [Download and install Git](http://git-scm.com/download). When prompted during the install, enable [Git Credential Manager](set-up-credential-managers.md).
 
-1. At the command prompt, go to the root folder that contains your Visual Studio solution and run the following commands to create a local Git repo in the Visual Studio solution folder and commit your code into that repo.
+1. At the command prompt, go to the root folder that contains your Visual Studio solution and run the following commands. These commands create a local Git repo in the Visual Studio solution folder and commit your code into that repo.
 
     > [!div class="tabbedCodeSnippets"]
     ```Git CLI
@@ -219,7 +219,7 @@ If you don't already have an app in the repo, create one.
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
-The next step to sharing your Visual Studio solution using Git and **Azure Repos**, is to publish from your local Git repo to an **Azure Repos** Git repo that others can access.
+The next step to sharing your Visual Studio solution using Git and **Azure Repos** is to publish from your local Git repo to an **Azure Repos** Git repo that others can access.
 
 :::row:::
   :::column span="":::
@@ -337,7 +337,7 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 #### [Git Command Line](#tab/command-line)
 
-The next step to sharing your Visual Studio solution using Git and **Azure Repos**, is to publish from your local Git repo to an **Azure Repos** Git repo that others can access.
+The next step to sharing your Visual Studio solution using Git and **Azure Repos** is to publish from your local Git repo to an **Azure Repos** Git repo that others can access.
 
 1. Open a browser and navigate to your Azure DevOps project using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 
@@ -451,7 +451,8 @@ To show a diff view of the last commit in your current branch, run the following
 
 ## Link work items to your commits
 
-As you develop your software, you can capture which commits support the completion of a work item, such as an Azure DevOps task or bugfix. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of work items linked to your commits.
+As you develop your software, you can capture which commits support the completion of work items like Azure DevOps tasks or bug fixes. The audit trail of work items linked to commits lets your team understand how tasks and bugs were resolved.
+
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -460,7 +461,7 @@ As you develop your software, you can capture which commits support the completi
 
     **Visual Studio Git** <br>
 
-    You can link work items to commits by adding #_ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**.
+    You can link work items to commits by adding _#ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**.
 
       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/add-related-work-item-git.png" border="true" alt-text="Screenshot of a work item linked to a commit in the 'Git Changes' window in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/add-related-work-item-git-lrg.png":::
 
@@ -473,13 +474,13 @@ As you develop your software, you can capture which commits support the completi
 
       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/add-related-work-item-team-explorer.png" border="true" alt-text="Screenshot of a work item linked to a commit in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/add-related-work-item-team-explorer-lrg.png":::
 
-    You can also link work items to commits by adding #_ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**.
+    You can also link work items to commits by adding _#ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**.
 
    :::column-end:::
 :::row-end:::
 
 > [!NOTE]
-> The #ID syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
+> The _#ID_ syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -506,7 +507,7 @@ As you develop your software, you can capture which commits support the completi
 
 #### [Git Command Line](#tab/command-line)
 
-You can link work items to commits by adding #_ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**. To test, make some code changes and run the following commands at the command prompt in your local git repo folder.
+You can link work items to commits by adding _#ID_ into the commit message. For example, the commit message "*Fix bug #12 in the reporting tools*" would link work item 12 to the commit when the commit is pushed to **Azure Repos**. To test, make some code changes and run the following commands at the command prompt in your local git repo folder.
 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
@@ -515,7 +516,7 @@ You can link work items to commits by adding #_ID_ into the commit message. For 
 ```
 
 > [!NOTE]
-> The #ID syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
+> The _#ID_ syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
 
 
 ***
@@ -532,7 +533,7 @@ As you write your code, your changes are automatically tracked by Visual Studio.
 
     **Visual Studio Git** <br><br>
 
-    1. In the **Git Changes** window, enter a message that describes the changes, and then select **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section of the **Git Changes** window.
+    1. In the **Git Changes** window, enter a message that describes the changes, and then choose **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section of the **Git Changes** window.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/commit-changes.png" border="true" alt-text="Screenshot of the 'Commit All' button in the 'Git Changes' window in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/commit-changes-lrg.png":::
 
@@ -557,7 +558,7 @@ As you write your code, your changes are automatically tracked by Visual Studio.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/changes.png" border="true" alt-text="Screenshot of the Changes option in Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/changes-lrg.png":::
 
-    2. In the **Git Changes** window, enter a message that describes the changes, and then select **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section in the **Git Changes** window.
+    2. In the **Git Changes** window, enter a message that describes the changes, and then choose **Commit All**. **Commit All** commits unstaged changes and skips the staging area. You can choose to stage all files before committing by selecting the stage all + (plus) button at the top of the Changes section in the **Git Changes** window.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/commit-changes.png" border="true" alt-text="Screenshot of the 'Screenshot of commit message text and 'Commit All' button in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/commit-changes-lrg.png":::
 
@@ -565,7 +566,7 @@ As you write your code, your changes are automatically tracked by Visual Studio.
     
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync-lrg.png":::
         
-    4. Select **Push** to share your commit with the remote repository. If this is your first push to the repository, you'll see the following message: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` **Push** uploads your changes to a new branch on the remote repository and sets it as the upstream branch.
+    4. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from your local branch will be uploaded to that remote branch.
     
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/push-commit.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/push-commit-lrg.png":::
 
@@ -663,28 +664,28 @@ You can keep your local branches in sync with their remote counterparts by pulli
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/push-fetch-git-repositories-window.png" border="true" alt-text="Screenshot of the Fetch, Pull, Push and Sync buttons in the 'Git Changes' window of Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/push-fetch-git-repositories-window-lrg.png":::
   
-    2. **Pull** performs a fetch and then merges the downloaded commits into your local branch. Choose **Pull** to merge the fetched remote commits into your local repo.
+    2. Choose **Pull** to merge the fetched remote commits into your local repo. **Pull** performs a fetch and then merges the downloaded commits into your local branch.
 
   :::column-end:::
   :::column span="":::
 
     **Visual Studio Team Explorer** <br><br>
 
-    1. In **Team Explorer**, select **Home** and choose **Sync** to open **Synchronization**.
+    1. In **Team Explorer**, select **Home** and choose **Sync** to open the **Synchronization** view.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in 'Team Explorer' in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync-lrg.png":::
 
-    2. You can preview the latest changes on the remote branch using the **Fetch** link. **Fetch** downloads remote commits that aren't in your local branch, but doesn't merge them. Fetched commits show up in the **Incoming Commits** section of the **Synchronization** view. You can double-click a commit to view its file changes.
+    2. In the **Synchronization** view, you can preview the latest changes on the remote branch by using the **Fetch** link. **Fetch** downloads remote commits that aren't in your local branch, but doesn't merge them. Fetched commits show up in the **Incoming Commits** section of the **Synchronization** view. You can double-click a commit to view its file changes.
 
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/incoming-commits.png" border="true" alt-text="Screenshot of the Pull link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/incoming-commits-lrg.png":::
 
-     3. **Pull** performs a fetch and then merges the downloaded commits into your local branch. Choose **Pull** to merge the fetched remote commits into your local repository.
+     3. Choose **Pull** to merge the fetched remote commits into your local repo. **Pull** performs a fetch and then merges the downloaded commits into your local branch.
 
    :::column-end:::
 :::row-end:::
   
 > [!NOTE]
-> **Fetch** and **Pull** links can be found in different windows and in the Git menu on the menu bar. They all do the same thing&mdash;fetch or pull from the remote repo to the  current branch of the local repo.
+> **Fetch** and **Pull** links can be found in different views and in the Git menu on the menu bar. Those links all do the same thing&mdash;fetch or pull from the remote repo to the current branch of the local repo.
 
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
