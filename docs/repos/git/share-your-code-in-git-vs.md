@@ -5,7 +5,7 @@ description: Learn how to share your Visual Studio solution with others by hosti
 ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.technology: devops-code-git 
 toc: show
-ms.topic: quickstart
+ms.topic: tutorial
 ms.date: 01/16/2022
 monikerRange: '>= tfs-2015'
 ---
@@ -16,9 +16,6 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
 
 Share your Visual Studio solution with others by hosting your code in an **Azure Repos** Git repository. If your Visual Studio solution is already hosted in an **Azure Repos** Git repository, see the [Git tutorial](gitquickstart.md).
-
->[!NOTE]
->This article describes how to use Visual Studio to manage Azure Repos Git repositories. Using similar procedures, you can use Visual Studio to manage GitHub repositories. To clone a GitHub repository, get the URL as described in [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
