@@ -236,9 +236,9 @@ The next step to sharing your Visual Studio solution using Git and **Azure Repos
 
     2. Open a browser and navigate to your Azure DevOps project by using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).<br>
     
-    3. In your Azure DevOps project, [Create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the repo clone URL from the **Clone Repository** popup.
+    3. In your Azure DevOps project, [Create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the clone URL from the **Clone Repository** popup.
 
-       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git-cli/clone-repository-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site." lightbox="media/share-your-code-in-git-visual-studio-2019/git-cli/clone-repository-popup.png":::
+       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/clone-repository-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site." lightbox="media/share-your-code-in-git-visual-studio-2019/common/clone-repository-popup-lrg.png":::
 
     4. In the **Create a Git repository** window, choose **Existing remote** and enter the repo clone URL from the previous step, and then choose **Push**. For more information on how to create a new Azure DevOps repo, see [Create a new Git repo in your project](/azure/devops/repos/git/create-new-repo?view=azure-devops&preserve-view=true).
 
@@ -343,13 +343,13 @@ The next step to sharing your Visual Studio solution using Git and **Azure Repos
 
 1. In your Azure DevOps project, [create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the clone URL from the **Clone Repository** popup.
 
-    :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git-cli/clone-repository-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site.":::
+    :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/clone-repository-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site.":::
 
 1. To publish your local commit to **Azure repos**, run the following commands at the command prompt in your local git repo folder, using the clone URL from the previous step.
 
     > [!div class="tabbedCodeSnippets"]
     ```Git CLI
-    > git remote add origin <repo clone URL>
+    > git remote add origin <clone URL>
     > git push -u origin main
     ```
 
