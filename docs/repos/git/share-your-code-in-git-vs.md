@@ -15,9 +15,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
 
-Share your Visual Studio solution with others by hosting your code in an **Azure Repos** Git repository. If your Visual Studio solution is already hosted in an **Azure Repos** Git repository, see the [Git tutorial](gitquickstart.md).
-
-You can use Visual Studio to manage **Azure Repos** Git repositories or GitHub repositories. This article provides procedures for the following tasks:
+Share your Visual Studio solution with others by hosting your code in an **Azure Repos** Git repository. You can use Visual Studio to manage **Azure Repos** Git repositories or GitHub repositories. This article provides procedures for the following tasks:
 
 > [!div class="checklist"]
 > * Add a project or solution to a local Git repository
@@ -453,6 +451,9 @@ To show a diff view of the last commit in your current branch, run the following
 
 As you develop your software, you can capture which commits support the completion of work items like Azure DevOps tasks or bug fixes. The audit trail of work items linked to commits lets your team understand how tasks and bugs were resolved.
 
+> [!NOTE]
+> The _#ID_ syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
+
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -478,9 +479,6 @@ As you develop your software, you can capture which commits support the completi
 
    :::column-end:::
 :::row-end:::
-
-> [!NOTE]
-> The _#ID_ syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -514,9 +512,6 @@ You can link work items to commits by adding _#ID_ into the commit message. For 
 > git commit -am "Fix bug #<work item ID>"
 > git push
 ```
-
-> [!NOTE]
-> The _#ID_ syntax is supported when you connect to an Azure Repos Git repository. If you connect to a GitHub repository, you can still [link to work items](/azure/devops/boards/github/link-to-from-github), but must use the _#ABID_ syntax, and have previously set up an [Azure Boards-GitHub connection](/azure/devops/boards/github/).
 
 
 ***
@@ -654,6 +649,9 @@ To publish new commits from your current local branch to the corresponding branc
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
 You can keep your local branches in sync with their remote counterparts by pulling commits created by others. While you're working on your feature branch, it's a good idea to periodically switch to your `main` branch and pull new commits to keep it current with the remote `main` branch.
+  
+> [!NOTE]
+> **Fetch** and **Pull** links can be found in different views and in the Git menu on the menu bar. Those links all do the same thing&mdash;fetch or pull from the remote repo to the current branch of the local repo.
 
 :::row:::
   :::column span="":::
@@ -683,9 +681,6 @@ You can keep your local branches in sync with their remote counterparts by pulli
 
    :::column-end:::
 :::row-end:::
-  
-> [!NOTE]
-> **Fetch** and **Pull** links can be found in different views and in the Git menu on the menu bar. Those links all do the same thing&mdash;fetch or pull from the remote repo to the current branch of the local repo.
 
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
@@ -782,6 +777,3 @@ See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](c
 ## Related articles
 
 - [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
-- [Git workflow](gitquickstart.md)
-- [Azure Boards-GitHub integration](/azure/devops/boards/github/)
-- [Link GitHub commits, pull requests, and issues to work items in Azure Boards](/azure/devops/boards/github/link-to-from-github)
