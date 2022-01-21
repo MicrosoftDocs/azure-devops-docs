@@ -22,8 +22,6 @@ Share your Visual Studio solution with others by hosting your code in an **Azure
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 
 ## Prerequisites
 
@@ -63,6 +61,8 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 ::: moniker-end
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 
 ## Add a project or solution to a new local Git repository
