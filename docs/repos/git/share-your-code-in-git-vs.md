@@ -764,8 +764,6 @@ To download _and_ merge new commits from the **Azure Repos** Git repo into the c
 
 [!INCLUDE [temp](includes/open-team-project-in-vs-qa.md)]
 
-[!INCLUDE [temp](includes/qa-vs-launch-fail.md)]
-
 
 ### Can I use the Git command prompt with Visual Studio?
 
