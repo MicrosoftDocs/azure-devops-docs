@@ -17,6 +17,18 @@ monikerRange: '>= tfs-2015'
 
 Share your Visual Studio solution with others by hosting your code in an **Azure Repos** Git repository. If your Visual Studio solution is already hosted in an **Azure Repos** Git repository, see the [Git tutorial](gitquickstart.md).
 
+You can use Visual Studio to manage **Azure Repos** Git repositories or GitHub repositories. This article provides procedures to perform the following tasks:
+
+> [!div class="checklist"]
+> * Add a project or solution to a local Git repository
+> * Publish your code to an **Azure Repos** Git repository or GitHub repository
+> * Review your code changes before publishing
+> * Link work items to your commits
+> * Commit and push updates
+> * Pull changes from the main branch of your repository
+
+To clone a GitHub repository, get the URL as described in [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository).
+
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
 
