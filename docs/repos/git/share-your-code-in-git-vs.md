@@ -566,7 +566,7 @@ As you write your code, your changes are automatically tracked by Visual Studio.
     
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/sync-lrg.png":::
         
-    4. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from your local branch will be uploaded to that remote branch.
+    4. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from the current branch will be uploaded to that remote branch.
     
        :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/team-explorer/push-commit.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/team-explorer/push-commit-lrg.png":::
 
