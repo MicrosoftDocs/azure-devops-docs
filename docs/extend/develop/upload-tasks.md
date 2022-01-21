@@ -6,9 +6,11 @@ ms.date: 01/20/2022
 monikerRange: 'azure-devops'
 ---
 
-# Update tasks in Azure DevOps collection using Cross-platform CLI for Azure DevOps
+# Uppload tasks in Azure DevOps collection using Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
+
+## Prerequisites
 
 - You can download the latest version of **Node.js source code**, from the [Node.js source code downloads page](https://nodejs.org/en/download/)
 - Install the **Cross-platform CLI for Azure DevOps**
