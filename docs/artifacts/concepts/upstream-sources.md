@@ -35,15 +35,13 @@ Upstream sources enable you to manage all of your product's dependencies in a si
 
 To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
-<a name="single-feed"></a>
-
 #### Use a single feed in your config file
 
 In order for your feed to provide [deterministic restore](#search-order), it is important to ensure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled.
 
 Example:
 
-- **nuget.config** 
+- **nuget.config**
 
     ```
     <packageSources>
@@ -82,8 +80,6 @@ When you add a remote feed as an upstream source, you must select its feed's vie
 
 To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
 
-<a name="local"></a>
-
 #### Use the default view
 
 The `@local` view is the default view for all newly created feeds. It contains all the packages published to your feed or saved from upstream sources.
@@ -93,8 +89,6 @@ If you want to use views to release new package versions, you can promote your p
 #### Construct a package graph
 
 When a feed query its upstream source for a package, Azure Artifacts return the packages in the view that was configured for that specific upstream source. To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package.
-
-<a name="search-order"></a>
 
 ## Search order
 
@@ -110,15 +104,11 @@ Upstream sources prevent this non-deterministic behavior by searching the feed a
 
 To take full advantage of the fast lookup feature, we recommend that you only include one feed in your config file.
 
-<a name="saved-packages"></a>
-
 ## Save packages from upstream sources
 
 When you enable upstream sources for your feed, packages installed from upstream sources will be automatically saved to your feed. These packages could be installed directly from the upstream as follows `npm install express` or they could be installed as part of a dependency resolution (installing `express` would also save dependencies like `accepts`).
 
 Saving packages can improve download performance and save network bandwidth especially for TFS servers in internal networks.
-
-<a name="overriding-packages"></a>
 
 ## Override packages from upstream sources
 
@@ -128,8 +118,6 @@ If you must publish a package version that already exists on one of your upstrea
 
 > [!Note]
 > You can only publish a package version that wasn't previously saved from upstream. Saved packages remain in the feed even if the upstream source is disabled or removed.
-
-<a name="upstream-health-status"></a>
 
 ## Health status
 
@@ -141,8 +129,6 @@ If there are any failures, a warning message will be displayed. The settings pag
 
 > [!NOTE]
 > For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download by your feed. This delay depends on job timing and data propagation. The is no latency when the upstream source is an Azure Artifacts feed.
-
-<a name="offline-upstreams"></a>
 
 ## Offline upstream sources
 

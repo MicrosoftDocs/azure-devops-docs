@@ -26,7 +26,7 @@ In order for other Azure Artifacts feeds to use your feed as an upstream source,
 
 All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. `@local` is the default view that's commonly used in [upstream sources](upstream-sources.md).
 
-The `@local` view contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#saved-packages). See [package graphs](package-graph.md) to learn how available packages are constructed.
+The `@local` view contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources). See [package graphs](package-graph.md) to learn how available packages are constructed.
 
 <a name="default-view"></a>
 
