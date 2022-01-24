@@ -3,7 +3,7 @@ title: Set up upstream sources for your feed
 description: How to configure upstream sources for your Azure Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/20/2022
+ms.date: 01/24/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -51,7 +51,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 1. Select **Add** when you are done.
 
 > [!NOTE]
-> Maven Central, Google Maven Repository, and Gradle Plugins are the only public sources supported for Maven.
+> Currently Maven Central is the only public source supported for Maven.
 
 ## Add a feed in your organization as an upstream source
 
