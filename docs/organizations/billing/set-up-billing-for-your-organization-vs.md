@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Set up billing in Azure DevOps before you make purchases, so it's already in place once you're ready to buy. You only need to set up billing once for your organization. Once you select an Azure subscription for billing, you can purchase additional user licenses by adding the user to the organization and assigning them a license. You can pay for a user once across multiple organizations, too. For more information, see [multi-organization billing](buy-basic-access-add-users.md#pay-for-a-user-once-across-multiple-organizations).
+Set up billing in Azure DevOps before you make purchases, so it's already in place once you're ready to buy. You only need to set up billing once for your organization. Once you select an Azure subscription for billing, you can purchase additional user licenses by adding the user to the organization and assigning them a license.
 
 *All services get billed via Azure*. You're not required to use any other Azure services.
 
@@ -24,7 +24,7 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 
 ## Prerequisites
 
-* If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
+* If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now.
 * To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md) in Azure DevOps.
 
 > [!NOTE]
