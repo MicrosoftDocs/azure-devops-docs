@@ -24,7 +24,7 @@
   - name: Change Azure subscription
     href: change-azure-subscription.md
     displayName: update, remove, billing
-  - name: Buy access to Azure DevOps Server or Azure Test Plans
+  - name: Buy access to Azure Test Plans
     href: buy-access-tfs-test-hub.md
     displayName: monthly, basic, CALs, users
   - name: Billing FAQs
