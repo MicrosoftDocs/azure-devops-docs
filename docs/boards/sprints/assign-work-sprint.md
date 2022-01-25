@@ -181,7 +181,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 Select one or more items and drag them to one of the listed sprints.  
 

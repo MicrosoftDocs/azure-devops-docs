@@ -55,7 +55,7 @@ If users no longer require access to a team, project, or your organization, you 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access). Then you're not charged in your next Azure billing cycle.
 
    To reduce or cancel users for the next month, make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
@@ -92,7 +92,7 @@ Choose the **Current page** tab for instructions.
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-with-no-access). Then you're not charged in your next Azure billing cycle.
 
    To reduce or cancel users for the next month, make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.

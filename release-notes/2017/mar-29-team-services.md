@@ -61,7 +61,7 @@ We have modernized the changeset and shelveset pages in TFVC. Both pages are mad
 
 ![changeset page](media/03_29_05.png)
 
-Both changeset and shelveset pages also host the a new markdown discussion control that will allow to type comments in markdown, @mention users, associate work items using #, and easily attach files and images.
+Both changeset and shelveset pages also host the a new Markdown discussion control that will allow to type comments in Markdown, @mention users, associate work items using #, and easily attach files and images.
 
 ![changeset discussion](media/03_29_06.png)
 
@@ -132,7 +132,7 @@ Users can now post questions for any extension on the [__Marketplace__](https://
 ![marketplace qa](media/03_29_09.png)
 
 ## Enhancements to display publisher’s terms, license, and privacy policy in Marketplace
-It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at [https://docs.microsoft.com/azure/devops/extend/develop/manifest](/azure/devops/extend/develop/manifest).
+It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at [/azure/devops/extend/develop/manifest](/azure/devops/extend/develop/manifest).
 
 The License and Privacy Policy is also available in the __extension details__ page and presented when the user downloads the extension.
 

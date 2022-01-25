@@ -11,6 +11,7 @@ author: yukom
 
 # Extensions, Previews, and more – Nov 18
 
+
 Today is our [Connect(); developer event](/events/connect-microsoft-connect--2018/d190) and we have a ton of news for VS Online…
 
 ## Visual Studio Team Services
@@ -65,7 +66,7 @@ Testing is an important part of a DevOps process. Today we showed a new set of t
 
 ## Exploratory Testing extension
 
-Since 2010, we've had a very nice exploratory testing tool that enables you to do manual exploratory testing, capture and mark up screen shots, collect diagnostic information, file bugs, etc. Today we are announcing the preview of a new browser-based exploratory testing extension. You can now perform exploratory testing of your web applications at any time, right from your Chrome browser, on any platform (Linux, macOS, or Windows)—no need for predefined test cases or test steps. Support for other browsers, like Edge, Firefox, etc., is coming soon.
+Since 2010, we've had a very nice exploratory testing tool that enables you to do manual exploratory testing, capture and mark up screenshots, collect diagnostic information, file bugs, etc. Today we are announcing the preview of a new browser-based exploratory testing extension. You can now perform exploratory testing of your web applications at any time, right from your Chrome browser, on any platform (Linux, macOS, or Windows)—no need for predefined test cases or test steps. Support for other browsers, like Edge, Firefox, etc., is coming soon.
 
 Learn more about the Exploratory Testing extension [here](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) or this [blog](https://devblogs.microsoft.com/devops/test-feedback-overview/).
 

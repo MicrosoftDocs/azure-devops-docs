@@ -125,7 +125,7 @@ From a query results page, you can also complete these actions:
 For details, see [Add link to work items](../backlogs/add-link.md#link). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 The new web form is only available from TFS 2017 and later versions. 
 
 ::: moniker-end
@@ -136,7 +136,7 @@ The new web form is only available from TFS 2017 and later versions.
 The old web form is only available for TFS 2017 and earlier versions. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="<= tfs-2017"
 <a id="tfs-portal-link" />
 
 Within the old web form, you can link work items to other work items or supported objects from one of the available link tabs. Some work item types have two or more link control tabs. Each tab is designed to support specific types of links and restricts the types of link relationships made.
@@ -221,7 +221,7 @@ The link types used to construct these links&mdash;as illustrated in the followi
 :::image type="content" source="media/link-type-reference/conceptual-link-types-devops-objects.png" alt-text="Conceptual image of devops link types.":::
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
 
 ![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  

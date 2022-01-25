@@ -33,7 +33,7 @@ semi-automated processes with **approvals** and **on-demand deployments**.
 
 See [Releases in Azure Pipelines](releases.md) to understand releases and deployments and watch the following video to see release pipelines in action.
 
-  > [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player]
+  > [!VIDEO https://docs.microsoft.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player]
 
 <a name="howrmworks"></a>
 
@@ -258,7 +258,7 @@ In the **Send release summary mail** window, you can further customize the infor
 
 The names of releases for a release pipeline are, by default, sequentially numbered. The first release is named **Release-1**, the next release is **Release-2**, and so on. You can change this naming scheme by editing the release name format mask. In the **Options** tab of a release pipeline, edit the **Release name format** property in the **General** page.
 
-When specifying the format mask, you can use the following pre-defined variables.
+When specifying the format mask, you can use the following predefined variables.
 
 | Variable | Description |
 |----------|-------------|

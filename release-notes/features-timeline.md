@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/16/2021
+ms.date: 1/19/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,15 +35,11 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="5"><strong>2021 Q4</strong></td>
-    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
+<tr><td rowspan="6"><strong>2022 Q1</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
-</tr>
-<tr><td rowspan="3"><strong>2022 Q1</strong></td>
-    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423" data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
@@ -84,14 +80,20 @@ This list includes features that are currently in preview. The "Released" column
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="2"><strong>2021 Q1</strong></td>
-    <td><a href="https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/" data-raw-source="[Limit user visibility and collaboration for projects](https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/)">Limit user visibility and collaboration for projects</a></td><td>General</td><td>Future</td>
-     <tr><td><a href=https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](./2020/sprint-179-update.md#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
+<tr><td rowspan="1"><strong>2021 Q4</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="1"><strong>2021 Q3</strong></td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Boards</td><td>Future</td>
 </tr>
 <tr><td rowspan="3"><strong>2021 Q2</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>General</td><td>Future</td>
     <tr><td><a href=https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/ data-raw-source="[Copy Dashboard](https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/)">Copy Dashboard</a></td><td>Reporting</td><td>Future</td></tr>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td>Pipelines</td><td>TBD</td>
+</tr>
+<tr><td rowspan="2"><strong>2021 Q1</strong></td>
+    <td><a href="https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/" data-raw-source="[Limit user visibility and collaboration for projects](https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/)">Limit user visibility and collaboration for projects</a></td><td>General</td><td>Future</td>
+     <tr><td><a href=https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](./2020/sprint-179-update.md#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
 </tr>
  </tbody>
 </table>
@@ -113,10 +115,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="2"><a href="2022/sprint-198-update.md" data-raw-source="[19 January 2022](2022/sprint-198-update.md)">19 January 2022</a></td> 
+    <td>The default agent specification for pipelines will be Windows-2022 </td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Pipeline folder rename validates permissions</td><td>Pipelines</td><td>N/A</td></tr>
+</tr> 
     <td rowspan="2"><a href="2021/sprint-196-update.md" data-raw-source="[6 December 2021](2021/sprint-196-update.md)">6 December 2021</a></td> 
     <td>Announcing retirement of macOS 10.14 Mojave images</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Brownout schedule for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
-</tr> 
     <td rowspan="7"><a href="2021/sprint-195-update.md" data-raw-source="[16 November 2021](2021/sprint-195-update.md)">16 November 2021</a></td> 
     <td>Assign Azure DevOps Administrator role to an Azure AD group</td><td>General</td><td>Future</td></tr>
     <td>Automatic retries for a task</td><td>Pipelines</td><td>Future</td></tr>
@@ -312,7 +317,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
         <tr><td>Improve error handling experience –– required fields on Bug/Task</td><td>Boards</td><td>N/A</td></tr>
         <tr><td>Preview of scale set agents</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Github packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>GitHub packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Ubuntu 20.04 in preview for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Notifications for disabled upstream sources</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>License expressions and embedded licenses</td><td>Artifacts</td><td>2020</td></tr>
@@ -997,7 +1002,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Extend release gates with task extensions</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Use upstream npm packages from elsewhere in VSTS</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Maintain feed query speed with retention policies</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Publish markdown files from a Git repository as a Wiki</td><td></td><td><em>2019</em></td></tr>
+        <tr><td>Publish Markdown files from a Git repository as a Wiki</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Retain special characters in Wiki page titles</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Extend Wiki using REST APIs</td><td></td><td><em>2019</em></td></tr>
         <tr><td>Integrate Power BI with VSTS Analytics using views</td><td></td><td><em>2019</em></td></tr>
@@ -1108,7 +1113,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Create work items from the Queries hub</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Expand/collapse requirements/people on the Task board</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Grant the bypassrule permission to specific users</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Rendered markdown in email notifications</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Rendered Markdown in email notifications</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Pull request comment notifications include the thread context</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Pull request service hooks merge events</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Improved error messages for work items completing with a pull request</td><td></td><td><em>2018.2</em></td></tr>
@@ -1137,7 +1142,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Promote, unlist, and deprecate multiple packages</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Wiki Search</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Link work items and Wiki pages</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Rich markdown rendering in code repo markdown</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Rich Markdown rendering in code repo Markdown</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Wiki supports mathematical formulas</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Analytics OData in Public Preview</td><td></td><td>N/A</td></tr>
         <tr><td>Deprecating the PowerBI.com Content Pack</td><td></td><td>N/A</td></tr>
@@ -2653,7 +2658,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
                 Overview <br />
                 Files <br />
                 Updates <br />
-                Comments, now with markdown and emoji <br />
+                Comments, now with Markdown and emoji <br />
                 Auto-complete pull requests waiting on policies</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
@@ -4482,17 +4487,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020)">2020.1.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true)">2020.1.1</a></td>
           <td>August 26, 2021</td>
           <td>18.181.31626.1</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops)">2020.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops&preserve-view=true)">2020.1</a></td>
           <td>May 25, 2021</td>
           <td>18.181.31230.2</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops)">2020.0.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true)">2020.0.1</a></td>
           <td>January 19, 2021</td>
           <td>18.170.30910.2</td>
         </tr>

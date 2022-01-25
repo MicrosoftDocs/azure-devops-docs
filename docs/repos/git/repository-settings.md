@@ -30,6 +30,7 @@ There are several ways to customize your Azure Repos Git repositories by using b
 [!INCLUDE [note-tfs-2018.2-update](includes/note-tfs-2018.2-update.md)]  
 
 <a id="all-repositories-settings-and-policies"></a>
+
 ## Summary of all repository and branch settings and policies
 
 You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. With Azure CLI, you use [az repos policy](/cli/azure/repos/policy).
@@ -582,6 +583,8 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ```
 
+<a id="update-policy"/> 
+
 
 ### Update policies
 
@@ -655,6 +658,7 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 
 ::: moniker range=">= azure-devops-2020"
 <a id="default-branch-name"></a>
+
 ## Default branch name
 
 You can set a default repository branch name at the organization or project level. The organization-level setting takes effect for all new repositories across all projects in the organization. The project-level setting affects all new repositories in a project, and supersedes any name set at the organization level.
@@ -688,6 +692,7 @@ To set a default branch name at the project level:
 
 ::: moniker range=">=azure-devops-2020"
 <a name="allow-users-to-manage-permissions-for-their-branches"></a>
+
 ## Branch permission management
 
 You can control who can manage permissions for repository branches by setting a permission management setting for all Git repositories or for individual repositories. If you enable the **Allow users to manage permissions for their created branches** setting at the **All Repositories** level, all new project repositories are configured to let users manage permissions for their created branches.
@@ -744,6 +749,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 ::: moniker range=">=azure-devops-2019"
 <a id="forks"></a>
 <a id="forks-setting"></a>
+
 ## Enable forks
 
 This repository setting controls whether users can create new server-side [forks](forks.md). Disabling this setting doesn't remove existing forks.
@@ -756,6 +762,7 @@ This repository setting controls whether users can create new server-side [forks
 ::: moniker-end
 
 <a id="work-item-linking"></a>
+
 ## Work item linking settings
 
 These repository settings manage work item linking.
@@ -770,12 +777,14 @@ These repository settings manage work item linking.
 When enabled, commit messages containing `#` followed by a valid work item ID automatically link the commit to that work item. Disable this setting if the repository previously used a different account or service. Those repositories might have commit messages with `#` mentions that don't match the work item IDs in the current account.
 
 ::: moniker range=">=azure-devops-2020"
+
 ### Commit mention work item resolution
 
 Enable this setting to automatically complete work items when linked pull requests complete. This setting also allows specifying other work item transition states in pull request commit messages. For more information, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
 
 ::: moniker-end
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"
+
 ### Commit mention work item resolution
 
 Enable this setting to automatically complete those work items when you successfully complete the PR. To learn more, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
@@ -786,6 +795,7 @@ Enable this setting to automatically complete those work items when you successf
 By default, the option to complete linked work items during pull request completion remembers each user's last choice. Teams that want to discourage users from completing work items with their pull requests can disable this setting. Users must then opt in to completing work items each time they complete a pull request.
 
 ::: moniker range="=azure-devops"
+
 ## Strict Vote Mode setting
 
 In certain situations, users who aren't contributors to a repository can submit a pull request and cause it to be merged, depending on policies. To prevent this possibility, enable **Strict Vote Mode** to change the required permission to vote on repository pull requests to **Contribute**. Enabling this setting is recommended if you rely on user forks in Azure Repos.
@@ -797,7 +807,8 @@ In certain situations, users who aren't contributors to a repository can submit 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-## Disable Repository setting
+
+## Disable repository setting
 
 Enabling this setting disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
 
@@ -808,6 +819,7 @@ Enabling this setting disables access to the repository, including builds and pu
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
+
 ## Searchable branches setting
 
 By default, code search in files applies only to the default branch. You can add up to five more branches to search.
@@ -852,6 +864,7 @@ To set policies to protect specific or default branch names across a project:
 
 <a id="commit-author-email"></a>
 <a id="commit-author-email-validation"></a>
+
 ## Commit author email validation policy
 
 This policy blocks commits to a repository by commit authors whose email addresses don't match a pattern.
@@ -865,6 +878,7 @@ This policy blocks commits to a repository by commit authors whose email address
 :::image type="content" source="media/repository-settings/add-policy-to-block-commits-email.png" alt-text="Screenshot that shows the Commit author email validation policy setting.":::
 
 <a id="file-path-validation"></a>
+
 ## File path validation policy
 
 You can set a policy that prevents commits to a repository from file paths that match a pattern.
@@ -879,6 +893,7 @@ You can set a policy that prevents commits to a repository from file paths that 
 
 
 <a id="case-enforcement"></a>
+
 ## Case enforcement policy
 
 ::: moniker range=">= tfs-2018"
@@ -999,6 +1014,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 ***
 
 <a id="reserved-names"></a>
+
 ## Reserved names policy
 
 Not all filenames are allowed on the three major OS file systems: Windows, macOS, and Linux. Commits to a shared repository might contain file or folder names that are invalid on one or more platforms. If invalid files or folders are fetched and checked out on these platforms, working directories can become corrupted. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
@@ -1013,6 +1029,7 @@ To set the reserved names policy:
 :::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Screenshot that shows the Reserved names policy setting.":::
 
 <a id="max-path-length"></a>
+
 ## Maximum path length policy
 
 Not all path lengths are allowed on the three major OS file systems: Windows, macOS, and Linux. Commits to a shared repository might contain files or directories with path lengths that are invalid on one or more platforms. If these files or directories are fetched and checked out on a platform where they're invalid, working directories can become corrupted. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).

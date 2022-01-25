@@ -71,6 +71,7 @@ From the Azure DevOps project website, you can create a new PR from:
 - [The Development control in a linked Azure Boards work item](#from-a-linked-work-item).
 
 <a name="from-the-pull-requests-page"></a>
+
 ### Create a PR from the Pull requests page
 
 You can create PRs for any branch from your project's **Pull requests** page on the web.
@@ -86,6 +87,7 @@ You can create PRs for any branch from your project's **Pull requests** page on 
 1. [Enter your PR details](pull-requests.md#finish) and create the PR.
 
 <a name="from-a-pushed-branch"></a>
+
 ### Create a PR from a pushed branch
 
 ::: moniker range=">= azure-devops-2019"
@@ -117,6 +119,7 @@ Select **Create a pull request** to go to a page where you can [enter your PR de
 ::: moniker-end
 
 <a name="from-a-linked-work-item"></a>
+
 ### Create a PR from a linked work item
 
 You can create a PR directly from an Azure Boards work item linked to the branch.
@@ -634,9 +637,10 @@ az repos pr work-item add --id
 
 
 ***
-
+<a name="add-tags"></a>
 
 ::: moniker range="> tfs-2018"
+
 ## Add tags to a pull request
 
 Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release. 

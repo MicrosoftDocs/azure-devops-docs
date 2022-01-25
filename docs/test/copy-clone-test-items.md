@@ -699,10 +699,9 @@ From the web portal, you can perform a bulk import or export of test cases from/
 
 ::: moniker-end
  
+<a id="import-test-cases" />
 
 ## Import automated test cases (TCM) 
-  
-<a id="import-test-cases" />
 
 To import automated test cases to a test suite, use `tcm testcase /import`. You must specify a .dll file for the test assembly that contains your tests. 
 

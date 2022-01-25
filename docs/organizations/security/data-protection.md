@@ -4,8 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
 ms.topic: article
 ms.technology: devops-security
-ms.author: mlearned
-author: mlearned
 ms.date: 04/28/2020
 monikerRange: 'azure-devops'
 ---

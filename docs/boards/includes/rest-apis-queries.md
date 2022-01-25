@@ -12,7 +12,7 @@ ms.topic: include
 To programmatically interact with queries, see one of these REST API resources:  
 
 - [Azure DevOps Services REST API Reference](/rest/api/azure/devops)
-- [Queries](/rest/api/vsts/wit/queries)
+- [Queries](/rest/api/azure/devops/wit/queries)
 - [Work item query language](/rest/api/azure/devops/wit/wiql)
 - [Work item query language (WIQL) syntax](../queries/wiql-syntax.md)
 - [Fetch work items with queries programmatically](../../integrate/quickstarts/work-item-quickstart.md) 

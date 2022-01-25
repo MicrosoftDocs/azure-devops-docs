@@ -12017,6 +12017,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/artifacts/publish-package-gradle.md",
+      "redirect_url": "/azure/devops/artifacts/maven/publish-package-gradle",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
       "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
@@ -18298,6 +18303,16 @@
     {
       "source_path": "docs/repos/git/share-your-code-in-git-vs-2017.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/migration.md",
+      "redirect_url": "/azure/devops/migrate/migration-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/devsecops/index.md",
+      "redirect_url": "/devops/devsecops/enable-devsecops-azure-github",
       "redirect_document_id": false
     }
   ]

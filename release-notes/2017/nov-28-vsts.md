@@ -156,9 +156,9 @@ The API to update a work item has a bypassrule flag to enable that scenario. Pre
 
 ## Code
 
-### Rendered markdown in email notifications
+### Rendered Markdown in email notifications
 
-Markdown is great for adding rich formatting, links, and images in pull request (PR) descriptions and comments. Email notifications for PRs now display the rendered markdown instead of the raw contents, which improves readability.
+Markdown is great for adding rich formatting, links, and images in pull request (PR) descriptions and comments. Email notifications for PRs now display the rendered Markdown instead of the raw contents, which improves readability.
 
 Inline images aren’t yet rendered inline (they’re just shown as links), but we’ve got that on our backlog to add in a future Update.
 
@@ -287,7 +287,7 @@ You can add an agentless phase to your build definition and then add one of thes
 You can also extend and add your own agentless tasks, but there are some restrictions:
 
 - Agentless tasks cannot run scripts.
-- You must select one of the pre-defined execution handlers: HttpRequest handler to call an HTTP endpoint, or ServiceBus handler to post a message on the Azure service bus.
+- You must select one of the predefined execution handlers: HttpRequest handler to call an HTTP endpoint, or ServiceBus handler to post a message on the Azure service bus.
 
 For examples on how to create such tasks, see the [InvokeRestAPI](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1) and [PublishToAzureServiceBus](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishToAzureServiceBusV1) tasks.
 
@@ -448,9 +448,9 @@ Add a link to a wiki page from a work item through the new “Wiki page” link 
 > [!div class="mx-imgBorder"]
 > ![Link to wiki from work item](media/126_15.png)
 
-### Rich markdown rendering in code repo markdown
+### Rich Markdown rendering in code repo Markdown
 
-You can now create rich README.MD files in the code repositories. The markdown rendering of the MD files in code repositories now supports HTML tags, Block quotes, Emojis, image resizing, and mathematical formulas. There is parity in [markdown rendering](/azure/devops/project/wiki/markdown-guidance) in Wiki and MD files in code.
+You can now create rich README.MD files in the code repositories. The Markdown rendering of the MD files in code repositories now supports HTML tags, Block quotes, Emojis, image resizing, and mathematical formulas. There is parity in [markdown rendering](/azure/devops/project/wiki/markdown-guidance) in Wiki and MD files in code.
 
 ### Wiki supports mathematical formulas
 

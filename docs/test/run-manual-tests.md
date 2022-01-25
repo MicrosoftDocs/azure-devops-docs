@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
 monikerRange: '>= tfs-2015'
-ms.date: 12/17/2021
+ms.date: 01/11/2022
 ---
 
 # Run manual tests
@@ -65,6 +65,8 @@ Testers can use it for manual testing needs. For more information, see [Guidance
 To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
 
 <a name="run-web"></a>
 
@@ -385,6 +387,183 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 ::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
+
+## Run tests with TCM
+
+You can run tests that are part of a test plan using the TCM command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
+
+[List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) 
+
+<a id="list-test-runs" /> 
+
+### List test runs  
+
+Use `tcm run /list` to list the runs available in a test plan and to show their **ID**.  The **ID** corresponds to the work item ID defined when the run was created.
+
+
+```tcm 
+tcm run /list /collection:teamprojectcollectionurl /teamproject:project 
+           [/planid:id  |  /querytext:query] [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/planid**:`id`| Optional. Indicates that only those test runs associated with the specified test plan are returned in the list.    |
+|**/querytext**:`query`| Optional. Specifies the query to use to list a subset of test runs.    |
+
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
+
+
+
+**Example**
+
+The following command lists the test runs defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The **ID** and **Title** correspond to the work item ID and title defined for the test run. For example, test run *1000052* is titled *Test Plan for Cycle 1 (Manual)*.  
+
+```tcm 
+tcm run /list /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Id        Title                              Owner               Date Completed
+--------- ---------------------------------- ------------------- -----------
+1000006   Sprint 2 (Manual)                  Tim Sherer          11/5/2021
+1000032   33 : Change initial view (Manual)  Kathryn Elliott     11/11/2021
+1000040   Sprint 2 (Manual)                  Tim Sherer          11/16/2021
+1000042   Sprint 3 (Manual)                  Tim Sherer          11/16/2021
+1000046   Special testing (Manual)           Tim Sherer          11/18/2021
+1000052   Test Plan for Cycle 1 (Manual)     Tim Sherer          12/1/2021
+1000060   Game Shopping (Manual)             Tim Sherer          12/6/2021
+```
+
+<a id="create-test-runs" /> 
+
+### Create test runs  
+
+Use `tcm run /create` to create a test run associated with the specified test plan. In addition to the test plan, you also define the test suite and configuration you want to use by their corresponding **ID**. You can gather these **IDs** using the `tcm plans /list`, `tcm suites /list`, and `tcm configs /list` commands.
+
+```tcm 
+tcm run /create /title:title /planid:id /collection:CollectionURL /teamproject:project 
+            (suiteid:id /configid:configid | /querytext:query) 
+            [/settingsname:name] [/owner:owner] [/builddir:directory]  
+            [/testenvironment:name] [/login:username,[password]] [/include]
+
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/title**:`title`| Specifies the title that you want to use for the test run that you create.    |
+|**/planid**:`id`| Specifies the test plan that where you want to create the test run.    |
+|**/suiteid**:`id`| Specifies the test suites that you want to use for your test run.    |
+|**/configid**:`id`| Specifies the test configuration you want to run for your test suites.    |
+|**/querytext**:`query`| Optional if you specify `suiteid` and `configid`. Specifies the query to use to select the tests that you want to run. <br><br>**Tip:** You can use the `/querytest` parameter to run more than one test suite. For example: `querytext:“SELECT * FROM TestPoint WHERE (ConfigurationId=20 OR ConfigurationId=21) AND (Suiteid=1185 OR Suiteid=1186)”`.    |
+|**/settingsname**:`name`| Optional. Specifies the test settings that you want to use for this test run. If you don't select test settings, the default test settings in the test plan are used.    |
+|**/owner**:`owner`| Optional. Specifies the owner of the test run.    |
+|**/builddir**:`directory`| Optional. Specifies the build directory to use to locate the test assemblies for the test. If this isn't specified, the build location is used based on the build that is currently assigned to the test plan.    |
+|**/testenvironment**:`name`| Optional. Specifies the test environment that you want to use for this test run. If you don't select a test environment, the default test environment in the test plan is used.    |
+|**/include**| Optional. Specifies that all tests that are selected for the test run are included, even if the tests are not currently set to the Active state.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command creates a test run called **MyTestRun** in the test plan with **ID** *77*. The run uses the test suite with **ID** *161* and the test configuration with **ID** *9*. The run is defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization.
+
+In this example, a test run is created with an **ID** of *1000082*.  
+
+```tcm 
+tcm run /create /title:MyTestRun /planid:77 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber" /suiteid:161 /configid:9
+
+Run created with ID: 1000082.
+
+```
+
+<a id="execute-test-runs" /> 
+
+### Execute test runs  
+
+Use `tcm run /execute` to kick off one of the runs in your test plan. The **ID** you specify corresponds to the work item ID defined when the run was created. You can see a list of all test run IDs with the [tcm run /list](#list-test-runs) command.
+
+```tcm
+tcm run /execute /id:id /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/id**:`id`| Specifies the **ID** for the test run that you want to run.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command starts a test run for the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results are returned in your CLI window.
+
+```tcm 
+tcm run /execute /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Executing run: MyTestRun
+
+Results
+------------------------
+Total:                   2
+Passed:                  1
+Failed:                  1
+Inconclusive:            0
+```
+
+<a id="abort-test-runs" /> 
+
+### Abort test runs  
+
+Use `tcm run /abort` to cancel a test run that is in progress. The **ID** you specify corresponds to the work item ID defined when the run was created.
+
+```tcm 
+tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/id**:`id`| Specifies the **ID** for the test run that you want to cancel.    |
+
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
+
+**Example**
+
+The following command stops the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results confirm the **ID** and **Title** of the cancelled run.
+
+```tcm 
+tcm run /abort /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Run with ID [1000082] and title [MyTestRun] has been aborted.
+```
+
+<a id="delete-test-runs" /> 
+
+### Delete test runs  
+
+Use `tcm run /delete` to delete a test run from your test plan. The **ID** you specify corresponds to the work item ID defined when the test run was created.
+
+```tcm 
+tcm run /delete /id:id [/noprompt] /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/id**:`id`| Specifies the **ID** for the test run that you want to delete.    |
+|**/noprompt**| Optional. Specifies that the user isn't prompted to confirm deletion of a test run.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command deletes the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The user is prompted to confirm that they want to delete the specified test run and the result is provided.
+
+```tcm
+tcm run /delete /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Are you sure you want to delete run [MyTestRun]? (Yes/No) y
+
+Run [MyTestRun] has been deleted.
+```
 
 ## Frequently asked questions
 
