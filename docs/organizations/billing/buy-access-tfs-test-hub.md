@@ -23,7 +23,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
 ## Prerequisites
 
-You must be a member of the Team Foundation Administrators group to add a user to this group. The person who installed Azure DevOps Server is automatically added to this group. For more information, see [Add a user to the server administrators group](/azure/devops/server/admin/add-administrator?view=azure-devops-2020).
+- You must be a member of the Team Foundation Administrators group. The person who installed Azure DevOps Server is automatically added to this group. For more information, see [Add a user to the server administrators group](/azure/devops/server/admin/add-administrator?view=azure-devops-2020).
 
 ## Buy users monthly access to Azure DevOps Server
 
@@ -43,7 +43,7 @@ You must be a member of the Team Foundation Administrators group to add a user t
     > Azure DevOps Server doesn't detect what happens in Azure DevOps Services. Make sure to add these users to Azure DevOps Server and assign them the Basic access level.
     > If you stop paying for these users within your organization, your administrator should remove them from Azure DevOps Server or buy them an Azure DevOps Server CAL.
 
-## Buy monthly access to Azure Test Plans
+## Buy users monthly access to Azure Test Plans
 
 ::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
