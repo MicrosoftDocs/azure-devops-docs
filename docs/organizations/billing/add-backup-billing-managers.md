@@ -25,6 +25,8 @@ You can add any of the following roles to a user within the Azure subscription y
 - [Service admin](/azure/billing/billing-add-change-azure-subscription-administrator)
 - [Co-admin](/azure/billing/billing-add-change-azure-subscription-administrator)
 
+For more information about these roles, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
