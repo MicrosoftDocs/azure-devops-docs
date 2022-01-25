@@ -64,6 +64,6 @@ A user who can [set up](set-up-billing-for-your-organization-vs.md) or [change b
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Change your Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
+* [Learn about Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Get Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
 
