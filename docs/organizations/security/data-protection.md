@@ -2,9 +2,10 @@
 title: Data protection overview
 titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
+ms.custom: freshness-fy22
 ms.topic: article
 ms.technology: devops-security
-ms.date: 04/28/2020
+ms.date: 01/25/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -80,7 +81,7 @@ For Azure Blob Storage, customer data is replicated three times within a single 
 
 To protect against accidental deletion of data, Microsoft also takes point-in-time backups of both the blobs in Azure Blob Storage, and the databases in Azure SQL Database. There's a separate copy of all blobs, and changes are appended to each storage account. Because this data is immutable, there's no need to rewrite any existing storage as part of the backup procedures. 
 
-Backups are a standard part of Azure SQL Database, and Azure DevOps Services makes use of this. In both cases, these backups are also replicated in a paired region, helping to ensure that you recover from a regional outage.
+Backups are a standard part of Azure SQL Database, and Azure DevOps Services makes use of this. We maintain 28 days' worth of your data. In both cases, these backups are also replicated in a paired region, helping to ensure that you recover from a regional outage.
 
 A further protection is that Microsoft can recover entire organizations for up to 28 days after deletion. This is because Microsoft performs a "soft delete" for organization deletion operations.
 
