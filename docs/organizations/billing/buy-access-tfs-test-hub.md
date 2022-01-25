@@ -21,6 +21,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 For more information about the requirements to access Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about licensing, see the [pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing). To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
+## Prerequisites
+
+You must be a member of the Team Foundation Administrators group to add a user to this group. The person who installed Azure DevOps Server is automatically added to this group. For more information, see [Add a user to the server administrators group](/azure/devops/server/admin/add-administrator?view=azure-devops-2020).
+
 ## Buy users monthly access to Azure DevOps Server
 
 1. [Create an organization](../accounts/create-organization.md), if you don't have one already.
