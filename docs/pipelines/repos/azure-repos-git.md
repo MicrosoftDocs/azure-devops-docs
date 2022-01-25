@@ -111,7 +111,7 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 
 ::: moniker range="> azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in any commit message or description, and Azure Pipelines will skip running CI when you push your changes. You can also use any of the variations below.
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in any commit message or description, and Azure Pipelines will skip running CI when you push your changes. You can also use any of the following variations.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
