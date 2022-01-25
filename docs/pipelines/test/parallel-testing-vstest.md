@@ -146,7 +146,7 @@ jobs:
     parallel: 2
 ```
 
-For more information, see [YAML schema - Job](../yaml-schema.md#job).
+For more information, see [YAML schema - Job](/azure/devops/pipelines/yaml-schema/jobs-job).
 
 ::: moniker-end
 

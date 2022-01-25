@@ -172,4 +172,4 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 * [Artifacts](artifacts.md)
 * [Stages](../process/stages.md)
 * [Triggers](triggers.md)
-* [YAML schema reference](../yaml-schema.md)
+* [YAML schema reference](/azure/devops/pipelines/yaml-schema)

@@ -54,7 +54,7 @@ pool:
 > [!NOTE]
 > Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the only two supported operations for demands.
 
-For more information and examples, see [YAML schema - Demands](../yaml-schema.md#demands).
+For more information and examples, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool).
 
 # [Classic](#tab/classic)
 
