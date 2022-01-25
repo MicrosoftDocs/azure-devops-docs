@@ -236,15 +236,16 @@ Some of you want to understand third-party
 evaluation of our data security procedures. Azure DevOps has achieved the following certifications:
 
 - ISO 27001:2013
+- ISO 27018:2019
 - HIPAA (Health Insurance Portability and Accountability Act)
 - BAA (Business Associate Agreement)
 - EU Model Clauses
 - SOC 1 Type 2
-- SOC 2 Type 2 
+- SOC 2 Type 2
+- Germany C5 
 
 The SOC audit for Azure DevOps covers controls for data security, availability, 
 processing integrity, and confidentiality. The SOC reports for Azure DevOps are available through the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
-You can also request a copy of these SOC reports.
 
 ## Steps you can take
 
