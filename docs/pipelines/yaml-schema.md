@@ -1345,9 +1345,9 @@ resources:
   packages:
     - package: myPackageAlias # alias for the package resource
       type: Npm # type of the package NuGet/npm
-      connection: GitHubConnectionName # Github service connection with the PAT type
+      connection: GitHubConnectionName # GitHub service connection with the PAT type
       name: nugetTest/nodeapp # <Repository>/<Name of the package>
-      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      version: 1.0.1 # Version of the package to consume; Optional; Defaults to latest
       trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
 ```
 

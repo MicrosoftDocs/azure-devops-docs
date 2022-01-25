@@ -49,7 +49,7 @@ If you want to see even more lines, we added another button to take the code int
 
 ![Browsing the contents of a file in full screen mode.](media/1_7_06.png)
 
-In the last update we showed off the new inline diff features. We have now added inline viewing and also diffing for images such as gifs, jpegs and png files. If you do a file comparison on an image that has changed, you now get to see the old and new image together so that you can play a little game of spot the difference. We’re going to be iterating on the image diffing functionality to make it even more useful but as you can see from the screen shot, it is already pretty handy.
+In the last update we showed off the new inline diff features. We have now added inline viewing and also diffing for images such as gifs, jpegs and png files. If you do a file comparison on an image that has changed, you now get to see the old and new image together so that you can play a little game of spot the difference. We’re going to be iterating on the image diffing functionality to make it even more useful but as you can see from the screenshot, it is already pretty handy.
 
 ![Diff images](media/1_7_07.png)
 

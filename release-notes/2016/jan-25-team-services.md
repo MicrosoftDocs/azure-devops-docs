@@ -41,7 +41,7 @@ As I wrote about in the [dashboards futures blog](https://devblogs.microsoft.com
 
 ## Markdown widget with file from repository
 
-The first version of the markdown widget allowed custom markdown stored inside the widget. You can now choose to display any markdown file in your existing repository.
+The first version of the Markdown widget allowed custom Markdown stored inside the widget. You can now choose to display any Markdown file in your existing repository.
 
 ![Selecting a markdown file for display in the widget](media/1_25_05.png)
 

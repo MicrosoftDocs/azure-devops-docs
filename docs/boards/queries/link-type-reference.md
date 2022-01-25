@@ -80,7 +80,7 @@ The following table describes the work item link types you can specify to scope 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
 
@@ -342,7 +342,7 @@ The following table describes the external link types you can choose when adding
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
 ::: moniker-end   
 

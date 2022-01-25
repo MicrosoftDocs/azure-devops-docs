@@ -37,7 +37,7 @@ For information on managing features and epics as a list and examples for featur
 > [!div class="mx-imgBorder"]
 > ![Web portal, Features Kanban board with several user stories defined](media/features-epics/features-with-stories-intro.png)
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 > [!NOTE]    
 >Child checklists for feature and epic Kanban boards are supported from TFS 2017 and later versions.
 ::: moniker-end

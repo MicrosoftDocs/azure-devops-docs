@@ -78,11 +78,11 @@ Learn more about [getting started with Wiki](/azure/devops/project/wiki/add-edi
 The [Wiki extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) on the Marketplace is now deprecated. If you are an existing Wiki extension user, then you can migrate your wiki pages to the new wiki using an this [migration tool](https://github.com/Microsoft/vsts-wikiTools). Learn more to [migrate your existing wiki pages to the new Wiki](/azure/devops/project/wiki/migrate-extension-wiki-pages).
 
 ### Improvements in Wiki edit experience
-The new Wiki edit experience now supports HTML tags in markdown. 
+The new Wiki edit experience now supports HTML tags in Markdown. 
 
 ![Wiki HTML](media/08_04_29.png)
 
-You can also conveniently resize images in the markdown folder.
+You can also conveniently resize images in the Markdown folder.
 
 ![Wiki resize](media/08_04_30.png)
 

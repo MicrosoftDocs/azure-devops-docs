@@ -330,7 +330,7 @@ Some teams want to work with physical cards when planning or updating their phys
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 <a id="tfs-portal-copy-url" />
 

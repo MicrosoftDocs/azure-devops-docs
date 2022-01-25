@@ -8,7 +8,7 @@ ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= tfs-2015'
+monikerRange: '<= tfs-2015'
 ms.date: 02/02/2017
 ---
 

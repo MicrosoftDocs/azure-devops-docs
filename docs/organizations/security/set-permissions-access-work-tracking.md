@@ -188,7 +188,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
 

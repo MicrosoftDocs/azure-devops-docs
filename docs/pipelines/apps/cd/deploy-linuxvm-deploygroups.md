@@ -21,8 +21,6 @@ Learn how to set up continuous deployment of your app to an nginx web server run
 Azure Pipelines. You can use the steps in this
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
 
-![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
-
 After you commit and push a code change, it is automatically built and then deployed. The results will
 automatically show up on your site.
 

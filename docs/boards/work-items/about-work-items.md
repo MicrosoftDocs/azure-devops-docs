@@ -346,7 +346,7 @@ Also, several tools support linking to other objects, such as builds, releases, 
 ::: moniker range=">= azure-devops-2019"
 ![Artifact-to-artifact link types](../queries/media/link-tracking-artifact-to-artifact-link-types.png)  
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 ![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  
 ::: moniker-end
 

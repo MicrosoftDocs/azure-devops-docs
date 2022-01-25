@@ -188,7 +188,7 @@ With each update, changes are recorded in the History field, which you can view 
 ![View change history](media/add-work-item-history.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 ![View change history](media/work-items-view-change-history.png)  
 ::: moniker-end
 

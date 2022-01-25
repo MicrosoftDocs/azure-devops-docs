@@ -12,11 +12,11 @@ ms.date: 11/11/2021
 monikerRange: 'azure-devops'
 ---
 
-# Add a user who can set up billing for Azure DevOps
+# Add user to manage billing
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Give another user access, so they can [set up billing](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization. You can add any of the following roles to a user within the Azure subscription your organization uses for billing.
+Give another user access, so they can [set up billing](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization. You can add any of the following roles to a user within the Azure subscription your organization uses for billing:
 
 - [Owner](/azure/role-based-access-control/built-in-roles#owner)
 - [Contributor](/azure/role-based-access-control/built-in-roles#contributor)
@@ -27,7 +27,7 @@ Give another user access, so they can [set up billing](set-up-billing-for-your-o
 
 ## Prerequisites
 
-- You must be the subscription administrator to give another user access to change or set up billing.
+- You must be the Azure subscription administrator to give another user access to change or set up billing.
 
 ## Give a user access to set up or change billing
 
@@ -64,6 +64,6 @@ A user who can [set up](set-up-billing-for-your-organization-vs.md) or [change b
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Change your Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
+* [Learn about Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Get Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
 

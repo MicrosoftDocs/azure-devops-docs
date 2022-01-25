@@ -25,6 +25,8 @@
     href: ../cross-service/github-integration.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Deploy to Azure
     href: ../pipelines/overview-azure.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+  - name: Enable DevSecOps with Azure and GitHub
+    href: /devsecops/enable-devsecops-azure-github 
 - name: Work across projects and services 
   items:
   - name: Project summary
