@@ -142,4 +142,7 @@ If you have more than one Azure DevOps organization, you can turn on multi-organ
 
 ## Related articles
 
-
+* [Set up billing](set-up-billing-for-your-organization-vs.md)
+* [Change your Azure subscription for billing](change-azure-subscription.md)
+* [Learn about Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Get Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
