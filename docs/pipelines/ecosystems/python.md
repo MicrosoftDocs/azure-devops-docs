@@ -308,7 +308,7 @@ To authenticate with `twine`, use the [Twine Authenticate task](../tasks/package
     pythonUploadServiceConnection: '<twine service connection from external organization>'
 ```
 
-Then, add a custom [script](../yaml-schema.md#script) that uses `twine` to publish your packages.
+Then, add a custom [script](/azure/devops/pipelines/yaml-schema/steps-script) that uses `twine` to publish your packages.
 
 ```yaml
 - script: |

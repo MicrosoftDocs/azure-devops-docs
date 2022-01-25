@@ -239,7 +239,7 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 ### Set task group permissions at the project-level
 
 > [!NOTE]
-> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](../yaml-schema.md#step-templates).
+> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](/azure/devops/pipelines/yaml-schema/steps-template).
 
 
 1. Open **Pipelines** > **Task groups** in your project. 
