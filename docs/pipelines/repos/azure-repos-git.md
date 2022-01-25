@@ -105,13 +105,13 @@ YAML pipelines are not available in TFS.
 
 ::: moniker range="<= azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI.
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in any commit message, and Azure Pipelines will skip running CI when you push your changes.
 
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in any commit message or description, and Azure Pipelines will skip running CI when you push your changes. You can also use any of the variations below.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
