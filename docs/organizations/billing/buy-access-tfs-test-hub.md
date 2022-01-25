@@ -23,7 +23,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
 ## Prerequisites
 
-- You must be a member of the Team Foundation Administrators group. The person who installed Azure DevOps Server is automatically added to this group. For more information, see [Add a user to the server administrators group](/azure/devops/server/admin/add-administrator.md).
+- You must be a member of the Team Foundation Administrators group. The person who installed Azure DevOps Server gets automatically added to this group. For more information, see [Add or remove a team administrator](../settings/add-team-administrator.md).
 
 ## Buy users monthly access to Azure DevOps Server
 

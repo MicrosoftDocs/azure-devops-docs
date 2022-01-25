@@ -18,7 +18,7 @@
   displayName: signup, billing, basic, extension, license, storage
 - name: Manage billing
   items:
-  - name: Add user who can set up billing
+  - name: Add user to manage billing
     href: add-backup-billing-managers.md
     displayName: assign, subscription
   - name: Change Azure subscription
