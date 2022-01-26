@@ -191,7 +191,7 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
     ```
 2. Select specific sets of VMs from the environment to receive the deployment by specifying the **tags** that you've defined for each VM in the environment.
 
-   For more information, see the [complete YAML schema for deployment job](../yaml-schema.md?tabs=schema#deployment-job).
+   For more information, see the [complete YAML schema for deployment job](/azure/devops/pipelines/yaml-schema/jobs-deployment).
 
 3. Specify either `runOnce` or `rolling` as a deployment strategy. 
 
@@ -278,4 +278,4 @@ The **Deployments** view provides complete traceability of commits and work item
 - [Variables](../process/variables.md)
 - [Triggers](../build/triggers.md)
 - [Troubleshooting](../troubleshooting/troubleshooting.md).
-- [YAML schema reference](../yaml-schema.md).
+- [YAML schema reference](/azure/devops/pipelines/yaml-schema).

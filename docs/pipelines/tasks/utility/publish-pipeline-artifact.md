@@ -24,7 +24,7 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 [!INCLUDE [temp](../includes/yaml/PublishPipelineArtifactV1.md)]
 
 > [!NOTE]
-> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the YAML schema.
+> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](/azure/devops/pipelines/yaml-schema/steps-publish) and [Download](/azure/devops/pipelines/yaml-schema/steps-download) in the YAML schema.
 
 ## Arguments
 

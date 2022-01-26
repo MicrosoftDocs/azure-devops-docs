@@ -96,7 +96,7 @@ productDirectory:
           text: What is Azure Pipelines?
         - url: ./pipelines/create-first-pipeline.md
           text: Create your first pipeline
-        - url: ./pipelines/yaml-schema.md
+        - url: /azure/devops/pipelines/yaml-schema/
           text: YAML schema  
         - url: ./pipelines/process/variables.md
           text: Define variables
