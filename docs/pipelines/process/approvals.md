@@ -88,6 +88,8 @@ The checks fail if the stage has not started execution within the specified **Ti
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
 
+> [!NOTE]
+> Please prefer the predefined "$(system.AccessToken)" over custom access tokens if you plan to send requests to ADO from your Azure Function. The token belongs to Build Service Identity.
 
 ## Invoke REST API
 
