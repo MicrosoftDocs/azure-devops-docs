@@ -6,7 +6,7 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 01/05/2021
+ms.date: 01/26/2022
 monikerRange: azure-devops
 ---
 
@@ -37,7 +37,8 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 | parallel | (Optional) Select whether to copy files in parallel using multiple threads. If this setting is not enabled, one thread will be used. Default value: false| 
 | parallelCount | (Optional) Enter the degree of parallelism, or number of threads used to publish a package. The value must be at least 1 and not greater than 128. | 
 
-
+> [!TIP]
+> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to to control which files will be published.
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
