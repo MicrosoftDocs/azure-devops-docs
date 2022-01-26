@@ -39,10 +39,6 @@
       "source_path_from_root":"/docs/pipelines/apps/cd/deploy-webdeploy-webapps.md",
       "redirect_url":"/azure/devops/pipelines/targets/webapp",
       "redirect_document_id": false
-    },
-    {
-      "source_path_from_root":"/docs/pipelines/yaml-schema.md",
-      "redirect_url":"/azure/devops/pipelines/yaml-schema/"
     }
   ]
 }
