@@ -392,7 +392,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 You can run tests that are part of a test plan using the TCM command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
 
-[List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) 
+[List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) | [Export test runs](#export-test-runs) | [Publish test runs](#publish-test-runs) 
 
 <a id="list-test-runs" /> 
 
@@ -425,13 +425,13 @@ tcm run /list /collection:https://fabrikamprime.visualstudio.com /teamproject:"F
 
 Id        Title                              Owner               Date Completed
 --------- ---------------------------------- ------------------- -----------
-1000006   Sprint 2 (Manual)                  Tim Sherer          11/5/2021
-1000032   33 : Change initial view (Manual)  Kathryn Elliott     11/11/2021
-1000040   Sprint 2 (Manual)                  Tim Sherer          11/16/2021
-1000042   Sprint 3 (Manual)                  Tim Sherer          11/16/2021
-1000046   Special testing (Manual)           Tim Sherer          11/18/2021
-1000052   Test Plan for Cycle 1 (Manual)     Tim Sherer          12/1/2021
-1000060   Game Shopping (Manual)             Tim Sherer          12/6/2021
+1000006   Sprint 2 (Manual)                  Thomas Margand      11/5/2021
+1000032   33 : Change initial view (Manual)  Danielle Brasseur   11/11/2021
+1000040   Sprint 2 (Manual)                  Thomas Margand      11/16/2021
+1000042   Sprint 3 (Manual)                  Thomas Margand      11/16/2021
+1000046   Special testing (Manual)           Nicoletta Guibord   11/18/2021
+1000052   Test Plan for Cycle 1 (Manual)     Bukhosi Bhengu      12/1/2021
+1000060   Game Shopping (Manual)             Bukhosi Bhengu      12/6/2021
 ```
 
 <a id="create-test-runs" /> 
@@ -563,6 +563,70 @@ tcm run /delete /id:1000082 /collection:https://fabrikamprime.visualstudio.com /
 Are you sure you want to delete run [MyTestRun]? (Yes/No) y
 
 Run [MyTestRun] has been deleted.
+```
+
+<a id="export-test-runs" /> 
+
+### Export test runs  
+
+Use `tcm run /export` to export a test run to a specified location. The **ID** you specify corresponds to the work item ID defined when the run was created.
+
+```tcm
+tcm run /export /id:id /resultsfile:path /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/id**:`id`| Specifies the test run **ID** that you want to export.    |
+|**/resultsfile**:`path`| Specifies a location and filename for the test run you want to export.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command specifies that the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization is exported to *c:\temp\ResultsForDeveloper.trx*.
+
+```tcm
+tcm run /export /id:1000082 /resultsfile:"c:\temp\ResultsForDeveloper.trx" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+```
+
+<a id="publish-test-runs" /> 
+
+### Publish test runs  
+
+Use `tcm run /publish` to publish the results from a Visual Studio test run results file for a specified test plan.
+
+```tcm 
+tcm run /publish /suiteid:id /configid:id /resultowner:owner /resultsfile:path 
+            /collection:teamprojectcollectionurl /teamproject:project [/title:runtitle] 
+            [/runowner:owner] [/build:buildnumber /builddefinition:builddefinition] 
+            [/flavor:flavor] [/platform:platform] [/assignfailurestouser:user] 
+            [/login:username,[password]] [/buildverification]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/suiteid**:`id`| Specifies the test suite to use when you publish a test run.   |
+|**/configid**:`id`| Specifies which test configuration you want to use when you publish a test run.    |
+|**/resultowner**:`owner`| Specifies the owner for the test results.    |
+|**/resultsfile**:`path`| Specifies the location of the test run you want to publish. For example, "c:\temp\ResultsForDeveloper.trx".    |
+|**/title**:`runtitle`| Optional. Specifies a title that you want to use for the test run that you publish.    |
+|**/runowner**:`owner`| Optional. Specifies the owner of the test run.    |
+|**/build**:`buildnumber`| Optional. Specifies the build number to use to publish a test run. This parameter must be used with `/builddefinition`.    |
+|**/builddefinition**:`builddefinition`| Optional. Specifies the build definition to use to publish a test run. This parameter must be used with `/build`.    |
+|**/flavor**:`flavor`| Optional. Specifies the build flavor, such as **Release**. This parameter can only be used if the `/build` parameter is used.    |
+|**/platform**:`platform`| Optional. Specifies the build platform, such as **x86**. This parameter can only be used if the `/build` parameter is used.    |
+|**/assignfailurestouser**:`user`| Optional. Specifies the user to whom any failed tests in the test run are assigned.    |
+|**/buildverification**| Optional. Specifies that this test run contains build verification tests that check the basic functionality of your build.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
+
+**Example**
+
+The following command publishes a test run for the test suite with **ID** *161* and test configuration with **ID** *9* and reassigns the owner. This updates the existing test points for the test cases in the test suite that is paired with this configuration and publishes the results in the specified *.trx* file. And any failed tests in the test run are assigned to the specified user.
+
+```tcm 
+tcm run /publish /suiteid:167 /configid:9 /resultowner:"Thomas Margand" /resultsfile:"c:\temp\ResultsForDeveloper.trx" /assignfailurestouser:"Bukhosi Bhengu" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
 ```
 
 ## Frequently asked questions

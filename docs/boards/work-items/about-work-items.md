@@ -87,7 +87,7 @@ Each work item type belongs to a category. Categories are used to group work ite
 > |Category | Work item type | Controls backlogs/boards |
 > |----------|----------------|--------------------------|
 > |Epic| Epic | Epic portfolio backlogs and boards |
-> |Feature| Feature | Feature portfoliobacklogs and boards |
+> |Feature| Feature | Feature portfolio backlogs and boards |
 > |Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
 > |Task | Task | Sprints Taskboards  |
 > |Bug | Bug | Dependent on [how bugs are tracked](#track)  |
