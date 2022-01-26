@@ -196,7 +196,7 @@ You can opt out of pull request validation entirely by specifying `pr: none`.
 pr: none
 ```
 
-For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
+For more information, see [PR trigger](/azure/devops/pipelines/yaml-schema/pr) in the [YAML schema](/azure/devops/pipelines/yaml-schema).
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting).

@@ -766,4 +766,4 @@ When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pi
 * [Define variables](variables.md)
 * [Create and target an environment](environments.md)
 * [Use YAML pipeline editor](../get-started/yaml-pipeline-editor.md)
-* [YAML schema reference](../yaml-schema.md)
+* [YAML schema reference](/azure/devops/pipelines/yaml-schema)
