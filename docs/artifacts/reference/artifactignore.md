@@ -4,14 +4,14 @@ description: Use .artifactignore to exclude files and folders when you publish A
 ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
 ms.technology: devops-artifacts
 ms.topic: reference
-ms.date: 01/11/2022
+ms.date: 01/26/2022
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
 # Use .artifactignore
 
-The *.artifactignore* is a text file that controls what files are uploaded when you publish a Universal Package or a Pipeline Artifact.
+The *.artifactignore* is a text file that controls which files are uploaded when you publish a Universal Package or a Pipeline Artifact.
 
 *.artifactignore* is typically checked into your version control repository and the syntax is similar to that of *.gitignore*.
 
@@ -21,13 +21,13 @@ Using the *.artifactignore* file can help reduce your pipeline execution time by
 
 In the following example, we will be ignoring all files except the ones in the *src/MyApp/bin/Release* directory.
 
-```
+```artifactignore
 **/*
 !src/MyApp/bin/Release/**.*
 ```
 
-> [!TIP]
-> Make sure you check your *.artifactignore* file into the root of your repository.
+> [!IMPORTANT]
+> The *.artifactignore* file must be in the same directory as the path defined by the `targetPath` of your [Publish Pipeline Artifacts](../../pipelines/tasks/utility/publish-pipeline-artifact.md) task.
 
 ## Syntax
 
