@@ -374,34 +374,7 @@ The following table summarizes the integration features between Azure Repos and 
       Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](../pipelines/tasks/test/publish-code-coverage-results.md) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
    :::column-end:::
 :::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-      View test results in builds and releases
-   :::column-end::: 
-   :::column span="2":::
-      Measure pipeline quality, review traceability, and troubleshoot failures by surfacing test reulst in pipeline builds and releases. To learn more, see [Review test results](../pipelines/test/review-continuous-test-results-after-build.md). 
-   :::column-end:::
-:::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-      Run automated tests in build pipelines
-   :::column-end::: 
-   :::column span="2":::
-      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
-   :::column-end:::
-:::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-      Run automated tests in build pipelines
-   :::column-end::: 
-   :::column span="2":::
-      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
-   :::column-end:::
-:::row-end:::
---- 
+---
 
  
 
@@ -592,6 +565,124 @@ When tracking bugs using the Bug work item type, note the following supported in
    :::column-end:::
 :::row-end:::
 ---
+
+
+## Azure Pipelines - Azure Test Plans
+
+Azure Test Plans is fully integrated with Azure Pipelines to support testing within continuous integration/continuous deployment (CI/CD). Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.  The following table summarizes the integration points between Azure Pipelines and Azure Test Plans.  
+
+:::row:::
+   :::column span="1":::
+      **Feature**
+   :::column-end::: 
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Test plans setting
+   :::column-end::: 
+   :::column span="2":::
+      With test plan settings, you configure the Test Run settings to associate build or release pipelines and Test Outcome settings. To learn more, see [Run automated tests from test plans](../test/run-automated-tests-from-test-hub.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Pipeline test-enable tasks 
+   :::column-end::: 
+   :::column span="2":::
+      Specify test-enable tasks within a pipeline definition. Azure Pipelines provides several tasks, including those listed below, that support a comprehensive test reporting and analytics experience.  
+      - [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md): Use to publish test results to Azure Pipelines.
+      - [Visual Studio Test task](../pipelines/tasks/test/vstest.md): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
+      - [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application.  
+      For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Run automated tests in build pipelines
+   :::column-end::: 
+   :::column span="2":::
+      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+      Associate automated tests with test cases 
+   :::column-end::: 
+   :::column span="2":::
+      See [Associate automated tests with test cases](../test/associate-automated-test-with-test-case.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Set retention policy for automated test results associated with builds
+   :::column-end::: 
+   :::column span="2":::
+      You can set the test retention policy for automated buidls from the **Pipelines>Retention** page. See [Set test retention policies](../test/how-long-to-keep-test-results.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Requirements traceability
+   :::column-end::: 
+   :::column span="2":::
+      The Requirements quality widget supports tracking quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability. to learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Test results trend
+   :::column-end::: 
+   :::column span="2":::
+      The Test results trend configurable widget displays the trend of test results for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc. To learn more, see [Configure the Test Results Trend (Advanced) widget](../report/dashboards/configure-test-results-trend.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Deployment status 
+   :::column-end::: 
+   :::column span="2":::
+      The Deployment status configurable widget shows a combined view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. To view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. See [Associate automated tests with test cases](../test/how-long-to-keep-test-results.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      View test results in builds and releases
+   :::column-end::: 
+   :::column span="2":::
+      Both build and release summaries provide details of test execution. Review these summaries to assess pipeline quality, review traceability, and troubleshoot failures. Choose **Test summary** to view the details in the **Tests** tab. To learn more, see [Review test results, Tests tab](../pipelines/test/review-continuous-test-results-after-build.md#tests-tab).   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Test analytics for builds
+   :::column-end::: 
+   :::column span="2":::
+      Each build summary includes an **Analytics** tab that hosts the Test analytics report. To learn more, see [Test Analytics](../pipelines/test/test-analytics.md)
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+       Test analytics for builds
+   :::column-end::: 
+   :::column span="2":::
+      Each build summary includes an **Analytics** tab that hosts the Test analytics report. To learn more, see [Test Analytics](../pipelines/test/test-analytics.md)
+   :::column-end:::
+:::row-end
+--- 
 
 <a id="analytics" /> 
 
