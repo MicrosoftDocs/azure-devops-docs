@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Learn how to upload tasks to organization for custom tasks or off-the-shelf tasks in Azure DevOps services or server using the cross-platform CLI for Azure DevOps (tfx-cli).
+Learn how to upload tasks to organization for custom tasks or in-the-box tasks in Azure DevOps services or server using the cross-platform CLI for Azure DevOps (tfx-cli).
 
 For example, this guideline can help to update in-the-box tasks on Azure DevOps server.
 
@@ -44,6 +44,8 @@ In case of Azure DevOps server it will depend on the domain where the server is 
 
 > [!TIP]
 > If the Azure DevOps server is hosted on the current computer, you can specify `http://localhost/DefaultCollection` by default.
+
+Enter the following command:
 
 ```
 ~$ tfx login
