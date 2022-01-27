@@ -291,7 +291,7 @@
     href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: create, update, user, group, access, security
   - name: Set SharePoint project portal permissions
-    href: set-sharepoint-permissions.md
+    href: /previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions
     displayName: access, settings
 - name: Reference
   items:

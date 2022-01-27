@@ -497,7 +497,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you'll nee
 ::: moniker range="<= tfs-2017"
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
 
-* [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
+* [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
 * [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)
 
 ::: moniker-end 

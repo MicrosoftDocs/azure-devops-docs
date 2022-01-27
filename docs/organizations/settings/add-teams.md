@@ -680,7 +680,7 @@ If your deployment is integrated with SQL Server Reports, you need to [Grant per
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites. 
 
--  [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) 
+-  [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) 
 -  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
 
 ::: moniker-end 
