@@ -42,7 +42,7 @@ In this article you'll learn:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/prerequisites.md)]
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 ## Supported tasks
 
