@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 Learn how to upload tasks to organization for custom tasks or in-the-box tasks in Azure DevOps Services or Azure DevOps Server using the cross-platform CLI for Azure DevOps (tfx-cli).
 
-For example, this guideline can help to update in-the-box tasks on Azure DevOps server.
+For example, this guideline can help to update in-the-box tasks on Azure DevOps Server.
 
 For more information about **tfx-cli**, see the [Node CLI for Azure DevOps on GitHub](https://github.com/Microsoft/tfs-cli).
 
@@ -39,11 +39,11 @@ To connect tfx-cli to your Azure DevOps instance - you should specify the path t
 In case of Azure DevOps services path to DefaultCollection has template:
 `https://{Azure DevOps organization name}.visualstudio.com/DefaultCollection`
 
-In case of Azure DevOps server it will depend on the domain where the server is located and has template:
+For Azure DevOps Server default collection URL will depend on the domain where the server is located and its template will be:
 `http://{Azure DevOps Server domain}/DefaultCollection`
 
 > [!TIP]
-> If the Azure DevOps server is hosted on the current computer, you can specify `http://localhost/DefaultCollection` by default.
+> If the Azure DevOps Server is hosted on the current computer, you can specify `http://localhost/DefaultCollection` by default.
 
 Enter the following command:
 
