@@ -36,7 +36,7 @@ You can later configure your pipeline to check out a different repository or mul
 
 ::: moniker range="< azure-devops-2019"
 
-YAML pipelines are not available in TFS.
+YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-YAML pipelines are not available in TFS.
+YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 # [Classic](#tab/classic/)
