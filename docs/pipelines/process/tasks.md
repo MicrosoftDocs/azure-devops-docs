@@ -54,7 +54,7 @@ to add tasks to Azure Pipelines or TFS.
 ::: moniker range=">= azure-devops-2019"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task will take precedence. You can use the task GUID or a fully-qualified
+and a custom task, the in-box task will take precedence. You can use the task GUID or a fully qualified
 name for the custom task to avoid this risk:
 
 ```yaml
@@ -63,7 +63,7 @@ steps:
 - task: qetza.replacetokens.replacetokens-task.replacetokens@3 #working example
 ```
 
-To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully-qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
+To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
 
 ::: moniker-end
 
@@ -240,6 +240,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 ```
 
 > [!NOTE]
+> * Requires agent version 2.194.0 or later. Not supported for [agentless tasks](./phases.md#agentless-tasks).
 > * The failing task is retried immediately.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.
