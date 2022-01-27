@@ -93,7 +93,7 @@ This list includes features that are currently in preview. The "Released" column
 </tr>
 <tr><td rowspan="2"><strong>2021 Q1</strong></td>
     <td><a href="https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/" data-raw-source="[Limit user visibility and collaboration for projects](https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/)">Limit user visibility and collaboration for projects</a></td><td>General</td><td>Future</td>
-     <tr><td><a href=https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](./2020/sprint-179-update.md#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
+     <tr><td><a href=2020/sprint-179-update.md#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](2020/sprint-179-update.md#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
 </tr>
  </tbody>
 </table>

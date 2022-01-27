@@ -8618,7 +8618,12 @@
     },
     {
       "source_path": "docs/security/set-sharepoint-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/set-sharepoint-permissions",
+      "redirect_url": "/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/set-sharepoint-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions",
       "redirect_document_id": false
     },
     {
