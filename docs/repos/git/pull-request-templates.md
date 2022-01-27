@@ -20,7 +20,7 @@ Writing good pull request descriptions is a great way to help reviewers know wha
 This article shows you how to get started with pull request templates.
 
 >[!NOTE]
->Pull request templates can provide guidance, but are advisory only. Use branch policies to enforce best practices such as requiring pull requests for key branches like master, requiring a successful build, and enforcing required reviewers. For more information, see [branch policies](branch-policies-overview.md).
+>Pull request templates can provide guidance, but are advisory only. Use branch policies to enforce best practices such as requiring pull requests for key branches like main, requiring a successful build, and enforcing required reviewers. For more information, see [branch policies](branch-policies-overview.md).
 
 ## What is a pull request template?
 
@@ -44,7 +44,7 @@ Azure Repos allows you to create the following type of pull request templates:
 The type of pull request template is determined by its filename and folder location, as covered in the following sections. The filenames and folder locations are not case sensitive, but they must be in the default branch of your repository.
 
 >[!NOTE]
->All pull request template files must be located in the default branch (typically master) of your repository. Only pull request template files from the default branch are used.
+>All pull request template files must be located in the default branch (typically main) of your repository. Only pull request template files from the default branch are used.
 
 ## Default pull request templates
 
@@ -68,7 +68,7 @@ You can edit or add to this description and append [additional pull request temp
 
 ## Branch specific pull request templates
 
-Branch specific pull request templates can be configured for pull requests that target a specific branch. To configure your repository with a branch specific pull request template, create a `.txt` or `.md` file named after your branch. The name must match the first level of the branch name, such as `master`, `dev`, `release`, or `feature`. Each branch specific pull request template is applied any time a pull request targets that branch or any branches contained under it. For example the pull request template named `feature.md` would be applied if a pull request targeted the `feature` branch or any `feature/*` branches.
+Branch specific pull request templates can be configured for pull requests that target a specific branch. To configure your repository with a branch specific pull request template, create a `.txt` or `.md` file named after your branch. The name must match the first level of the branch name, such as `main`, `dev`, `release`, or `feature`. Each branch specific pull request template is applied any time a pull request targets that branch or any branches contained under it. For example the pull request template named `feature.md` would be applied if a pull request targeted the `feature` branch or any `feature/*` branches.
 
 Branch specific pull request templates must be saved in the default branch of your repository using the following folder hierarchy: `pull_request_template/branches/`. These folders must be based in one of the following folders in your repository.
 
