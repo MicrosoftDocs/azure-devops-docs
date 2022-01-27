@@ -8,7 +8,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-date: 01/03/2022
+date: 01/27/2022
 ---
 
 # Add a custom pipelines task extension
@@ -33,7 +33,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 - An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
-  The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
+  The production environment uses only Node10 or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
 - TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
 - [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
