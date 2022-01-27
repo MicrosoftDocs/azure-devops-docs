@@ -10,7 +10,7 @@ ms.topic: include
 
 When you have a flaky task that fails intermittently in a pipeline, you may have to re-run the pipeline to have it succeed. In most cases, the best way to address a flaky task or script is by fixing the task or script itself. For instance, if your test task fails in a pipeline because of flaky tests, it is always a good idea to fix the flaky tests and make them more reliable. Similarly, if your script fails once in a while, it is better to fix the script, for instance by introducing retries within the script.
 
-However, there are some cases, where you might want to retry the task. A common use case for this is a task that downloads a package (e.g., Nuget, npm, etc). We have often observed that these tasks are susceptible to networking failures and to the transient failures on the package hosting servers. We heard your feedback that it would be better to automatically retry such failing tasks without having to restart the entire pipeline again.
+However, there are some cases, where you might want to retry the task. A common use case for this is a task that downloads a package (e.g., NuGet, npm, etc.). We have often observed that these tasks are susceptible to networking failures and to the transient failures on the package hosting servers. We heard your feedback that it would be better to automatically retry such failing tasks without having to restart the entire pipeline again.
 
 Based on your feedback, we've added a feature to automatically retry a task in a pipeline when it fails. If you use YAML pipelines, then you can set this input as follows:
 
@@ -29,6 +29,9 @@ Here are a few things to note when using retries:
 * There is no information about the retry count made available to the task.
 * A warning is added to the task logs indicating that it has failed before it is retried.
 * All of the attempts to retry a task are shown in the UI as part of the same task node.
+
+> [!NOTE]
+> Requires agent version 2.194.0 or later. Not supported for agentless tasks.
 
 ### Consume inputs from another task in a decorator
 
