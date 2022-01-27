@@ -678,17 +678,17 @@ Azure Test Plans is fully integrated with Azure Pipelines to support testing wit
 --- 
  
 ::: moniker-end 
- 
 
 
 <a id="analytics" /> 
- 
  
 ::: moniker range=">= azure-devops-2019" 
 
 ## Dashboards, reporting, and Analytics  
 
-Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. The Analytics service provides: 
+Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. To learn more, see [About dashboards, charts, reports, & widgets](../report/dashboards/overview.md). 
+
+The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. The Analytics service provides: 
 
 - Analytics widgets that you can add to your dashboards
 - In-context Analytics reports available from select Azure DevOps pages
@@ -697,22 +697,19 @@ Dashboards provide an easy way to monitor progress and status. Using widgets, te
 - Custom reports you can create using OData queries
 - Support to develop and add your custom Analytics widgets you can add to dashboards
 
-To learn more, see [What is the Analytics service](../report/powerbi/what-is-analytics.md). 
+To learn more, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md) 
 
 ::: moniker-end  
-
-::: moniker range=">= azure-devops-2019 <= azure-devops-2020" 
-
-For on-premises deployments, SQL Server reports provides additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md).
-
-::: moniker-end 
  
 
 ::: moniker range="< azure-devops-2019" 
 
 ## Dashboards and reporting
 
-Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md). 
+Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals.  To learn more, see [About dashboards, charts, reports, & widgets](../report/dashboards/overview.md). 
+
+SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md). 
+
 ::: moniker-end 
 
 Built-in widgets you can add to your dashboard are listed below. They are organized under the service they support. You may find additional widgets from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
