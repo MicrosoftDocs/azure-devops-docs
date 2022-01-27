@@ -92,6 +92,7 @@
   },
   "redirection_files": [
     ".openpublishing.redirection.json",
+    "docs/legacy/.openpublishing.redirection.legacy.json",
     "docs/pipelines/.openpublishing.redirection.pipelines.json"
   ],
   "need_generate_pdf_url_template": true,

@@ -25,7 +25,7 @@ Specifically, consider doing one or more of the following tasks:
 ::: moniker range=">= tfs-2018"
 
 - [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project. 
-- [Share your project vision](#share-vision). To support people who will contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/index.md). 
+- [Share your project vision](#share-vision). To support people who will contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/about-readme-wiki.md). 
 - [Define area and iteration paths](#areas-iterations). Define Iteration Paths if you work with Scrum methods or want to time-box your issues and tasks.
 - [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.  
 
