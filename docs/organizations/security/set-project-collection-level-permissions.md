@@ -290,7 +290,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end
 
-
+<a id="add-group" />
 <a id="collection-level" />
 
 ## Add a group and change its permissions at the organization or collection-level group 

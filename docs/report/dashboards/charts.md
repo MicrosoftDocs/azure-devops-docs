@@ -458,6 +458,7 @@ Query-based charts generate data from the work item tracking data store and ther
 
 ## Related articles
 
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Cumulative flow diagram](cumulative-flow.md)  
 - [Team velocity](team-velocity.md)  
 - [View/configure sprint burndown](configure-sprint-burndown.md)  
