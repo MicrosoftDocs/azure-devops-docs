@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 11/18/2021
+ms.date: 01/26/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -696,7 +696,7 @@ This requires using the `stageDependencies` context.
 }
 ```
 
-In this example, job B1 will run whether job A1 is successful or skipped.
+In this example, job B1 will run if job A1 is skipped.
 Job B2 will check the value of the output variable from job A1 to determine whether it should run.
 
 ```yaml
@@ -719,7 +719,7 @@ stages:
   dependsOn: A
   jobs:
   - job: B1
-    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+    condition: in(stageDependencies.A.A1.result, 'Skipped') # change condition to `Succeeded and stage will be skipped`
     steps:
     - script: echo hello from Job B1
   - job: B2
