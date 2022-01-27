@@ -567,6 +567,8 @@ When tracking bugs using the Bug work item type, note the following supported in
 ---
 
 
+::: moniker range=">= azure-devops-2019" 
+
 ## Azure Pipelines - Azure Test Plans
 
 Azure Test Plans is fully integrated with Azure Pipelines to support testing within continuous integration/continuous deployment (CI/CD). Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.  The following table summarizes the integration points between Azure Pipelines and Azure Test Plans.  
@@ -674,33 +676,17 @@ Azure Test Plans is fully integrated with Azure Pipelines to support testing wit
    :::column-end:::
 :::row-end:::
 --- 
-:::row:::
-   :::column span="1":::
-       Test analytics for builds
-   :::column-end::: 
-   :::column span="2":::
-      Each build summary includes an **Analytics** tab that hosts the Test analytics report. To learn more, see [Test Analytics](../pipelines/test/test-analytics.md)
-   :::column-end:::
-:::row-end
---- 
+ 
+::: moniker-end 
+ 
+
 
 <a id="analytics" /> 
-
-
-
+ 
+ 
 ::: moniker range=">= azure-devops-2019" 
 
 ## Dashboards, reporting, and Analytics  
-
-::: moniker-end  
-
-::: moniker range="< azure-devops-2019" 
-
-## Dashboards and reporting
-
-::: moniker-end  
-
-::: moniker range=">= azure-devops-2019" 
 
 Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. The Analytics service provides: 
 
@@ -720,9 +706,11 @@ To learn more, see [What is the Analytics service](../report/powerbi/what-is-ana
 For on-premises deployments, SQL Server reports provides additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md).
 
 ::: moniker-end 
-
+ 
 
 ::: moniker range="< azure-devops-2019" 
+
+## Dashboards and reporting
 
 Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md). 
 ::: moniker-end 
