@@ -251,10 +251,10 @@ Install-Module AzureAD
 // Install the MSOnline PowerShell module -  ensuring to select Yes to All
 Install-Module MSOnline
 
-// Connect to AAD and use your AAD credentials (someone@somecompany.com) to login when the pop-up appears
+// Connect to Azure AD and use your Azure AD credentials (someone@somecompany.com) to login when the pop-up appears
 Connect-MsolService 
 
-// Try to retrieve information on a user from your AAD
+// Try to retrieve information on a user from your Azure AD
 Get-MsolUser -UserPrincipalName someone@somecompany.com
 ```
 
