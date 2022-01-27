@@ -207,38 +207,35 @@ Widgets listed in the following table are provided out-of-box. They're organized
 
 ## Prerequisites
 
-
 ::: moniker range="azure-devops"
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md). 
 - To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
 ::: moniker-end
 
-
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
 - To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
 - To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
 ::: moniker-end
 
 ::: moniker range="tfs-2017 || tfs-2018"
 
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md). 
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 - To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md). 
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).    
 
 ::: moniker-end
+
+> [!NOTE]
+> Data displayed within a chart or widget is subject to permissions granted to the signed in user. To learn more, see [FAQs on Azure DevOps dashboards, charts, and reports, Access and permissions](faqs.yml).
 
 ::: moniker range=">= azure-devops-2019"
 ## Azure Boards widgets 
@@ -862,6 +859,7 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 ## Related articles
 
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Track progress with status and trend query-based charts](charts.md)
 - [Add, rename, and delete dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  

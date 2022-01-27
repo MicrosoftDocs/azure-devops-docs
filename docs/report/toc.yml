@@ -12,6 +12,8 @@
     href: dashboards/widget-catalog.md
   - name: Analytics-based widgets
     href: dashboards/analytics-widgets.md
+  - name: FAQs
+    href: dashboards/faqs.yml
 - name: Dashboards
   items:
   - name: "Add, rename, & delete dashboards"
@@ -52,15 +54,6 @@
   - name: Configure Lead/Cycle time widget
     href: dashboards/cycle-time-and-lead-time.md
     displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation
-- name: Test tracking  
-  items:
-  - name: Create test tracking charts
-    href: ../test/track-test-status.md?bc=%2fazure%2fdevops%2freport%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2ftoc.json
-    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
-  - name: Test progress report 
-    href: ../test/progress-report.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-- name: Pipelines & test results 
-  href: dashboards/toc.yml 
 - name: Work tracking guidance
   items:
   - name: Burndown guidance
@@ -75,6 +68,15 @@
   - name: Visibility across teams & projects
     href: ../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
     displayname: delivery plans, calendar, portfolio backlogs, multi-teams
+- name: Test tracking  
+  items:
+  - name: Create test tracking charts
+    href: ../test/track-test-status.md?bc=%2fazure%2fdevops%2freport%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2ftoc.json
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
+  - name: Test progress report 
+    href: ../test/progress-report.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+- name: Pipelines & test results 
+  href: dashboards/toc.yml 
 - name: Analytics & Power BI integration 
   href: powerbi/toc.yml   
 - name: SQL Server Reporting (Legacy)  
