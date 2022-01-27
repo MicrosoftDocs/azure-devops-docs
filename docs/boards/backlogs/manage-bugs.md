@@ -8,7 +8,7 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 11/19/2021 
+ms.date: 01/27/2022
 ---
 
 # Define, capture, triage, and manage software bugs in Azure Boards
@@ -291,14 +291,32 @@ When verifying a bug resolution, you may find that the bug wasn't fixed or you m
 
 ### Close a bug  
 
-You close a bug once it's verified as fixed. However, you may also close a bug for one of these reasons:
+You close a bug once it's verified as fixed. However, you may also close a bug for one of the following reasons. Reasons available to select depend on the process selected for your project and the transition states defined for the bug. 
+
+**Agile process:**
 
 - **Deferred** - deferring a fix until the next product release
+- **Fixed** - bug has been verified as fixed
 - **Duplicate** - bug has already been reported, you can link each bug with the Duplicate/Duplicate of link type and close one of the bugs  
 - **As Designed** - feature works as designed
 - **Cannot Reproduce** - tests prove that the bug can't be reproduced
 - **Obsolete** - the bug's feature is no longer in the product
-- **Copied to Backlog** - a PBI or user story has been opened to track the bug
+- **Copied to Backlog** - a user story has been opened to track the bug.
+
+**Scrum process:**
+
+- **Not a Bug** - closing as issue has been verified that it's not a bug
+- **Duplicate** - bug has already been reported, you can link each bug with the Duplicate/Duplicate of link type and close one of the bugs  
+- **Removed from the backlog** - Removing the bug from the backlog. 
+- **Work finished** - Bug has been verified as fixed.
+
+**CMMI process:**
+
+- **Deferred** - deferring a fix until the next product release
+- **Duplicate** - bug has already been reported, you can link each bug with the Duplicate/Duplicate of link type and close one of the bugs  
+- **Rejected** - closing as issue has been verified that it's not a bug
+- **Verified** - bug has been verified as fixed.
+
 
 > [!TIP]   
 > Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug. 
