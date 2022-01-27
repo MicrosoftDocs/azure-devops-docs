@@ -680,7 +680,6 @@ Azure Test Plans is fully integrated with Azure Pipelines to support testing wit
 ::: moniker-end 
 
 
-<a id="analytics" /> 
  
 ::: moniker range=">= azure-devops-2019" 
 
