@@ -329,9 +329,7 @@ With Role-based permissions, user accounts are assigned to a role, with each rol
 
 ## Feature flags 
  
-Access to select, new features are controlled by feature flags. Periodically, Azure DevOps Services introduces new features by placing them behind a feature flag. Features under a private preview require the organization owner to request that the feature be turned on. Other features may be introduced as a preview feature which general users can enable or disable. 
-
-To learn more, see [Manage or enable features](../../project/navigation/preview-features.md).
+Access to select, new features are controlled by feature flags. Periodically, Azure DevOps Services introduces new features by placing them behind a feature flag. Preview features can be enabled or disabled by project members or organization owners. To learn more, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 ## Next steps
 

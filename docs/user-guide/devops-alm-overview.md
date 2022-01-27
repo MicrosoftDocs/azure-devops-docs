@@ -139,7 +139,7 @@ On-premises Azure DevOps Server provides three access levels: [Stakeholder, Basi
 
 Our extensibility framework enables you to build integrations directly within Azure DevOps to create first-class, seamless connections between different tools and services.  
 
-With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
+With Marketplace extensions, you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
 - [Find marketplace extensions](../marketplace/overview.md)
 - [Get extensions](../marketplace/install-extension.md)</li>

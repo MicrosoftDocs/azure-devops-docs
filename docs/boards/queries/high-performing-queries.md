@@ -52,7 +52,7 @@ While the `Contains` operator runs a table scan, which isn't only slower, but al
 
 The `In Group` operator supports matching a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. 
 
-If you filter on a group that contains a large number of members, your result set will tend to be non-selective, returning a large result set. Also, if a group corresponds to a large Azure Active Directory (AAD) group, the query generates a fairly large cost to resolve that group from AAD.  
+If you filter on a group that contains a large number of members, your result set will tend to be non-selective, returning a large result set. Also, if a group corresponds to a large Azure Active Directory (Azure AD) group, the query generates a fairly large cost to resolve that group from AAD.  
 
 ## Avoid use of negated operators 
 

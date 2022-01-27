@@ -174,24 +174,6 @@ With the new process-customization capability, you can make changes directly wit
 
 To learn more, see [Customize your work-tracking experience](../reference/customize-work.md).
 
-<!---
-Over time we will support more and more types of process customizations with this new approach. If you need
-process customization features that are not yet available and you cannot wait for them, a second option for process
-customization in Azure DevOps Services is available. This option is referred to as the **Hosted XML** process model, and it is in private preview and available by request only. 
-
-With this option, you 
-[import customized process templates](../organizations/settings/work/import-process/import-process.md).
-The option is similar to using custom process templates, except that:
-
-* [Restrictions](../organizations/settings/work/import-process/import-process.md) exist in the customizations that can be imported into Azure DevOps Services. 
-
-* Process templates are associated with all projects that are created from them, and changes made to the process are reflected 
-in each project.
-
-Projects in organizations that participate in this process-customization private preview are not updated automatically with Azure DevOps Services upgrades. 
-
--->
-
 <a name="reporting"></a>
 
 ## Reporting
