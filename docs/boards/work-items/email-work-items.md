@@ -15,10 +15,14 @@ ms.date: 11/07/2021
 
 # Email or print user stories, bugs, and other work items 
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio 2019 - Visual Studio 2015 | Team Explorer Everywhere** 
+[!INCLUDE [temp](../includes/version-all.md)]
+** Visual Studio 2019 - Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
+
+
+## Supported tasks 
 
 Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items. Some features are only available from the web portal, an Azure DevOps client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  Here's a list of the most common ways in which teams share information and plans using work item tracking. 
  
@@ -31,7 +35,7 @@ Some of the most common ways information is shared within a team or across teams
       **Web portal**
    :::column-end:::
    :::column span="":::
-      **Visual Studio 2015-2017**
+      **Visual Studio 2019-2015**
    :::column-end:::
    :::column span="":::
       **TEE (Eclipse)**
@@ -129,6 +133,8 @@ The tasks/features listed in the table aren't available when you're connected to
 ::: moniker-end 
 
 If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/access-levels.md) so that they can view work items and dashboards.  
+
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 
 <a id="email-print-send-links"></a>
