@@ -51,7 +51,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 1. Select **Add** when you are done.
 
 > [!NOTE]
-> Currently Maven Central is the only public source supported for Maven.
+> Azure Artifacts support Maven Central, Google Maven Repository, Gradle Plugins, and JitPack as upstream sources for Maven.
 
 ## Add a feed in your organization as an upstream source
 
