@@ -306,4 +306,4 @@
   - name: Manage permissions with CLI
     href: manage-tokens-namespaces.md
   - name: Enable DevSecOps with Azure and GitHub
-    href: /devsecops/enable-devsecops-azure-github
+    href: /devops/devsecops/enable-devsecops-azure-github
