@@ -248,6 +248,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     ```powershell
     $credsAzureDevopsServices = New-Object System.Management.Automation.PSCredential("YOUR EMAIL", $patToken)
     ```
+
 1. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
 
     - Project-scoped feed:
