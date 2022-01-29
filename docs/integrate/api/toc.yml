@@ -1,12 +1,12 @@
 - name: Overview
   href: /previous-versions/azure/devops/integrate/previous-apis/overview
 - name: Build
-  href: /previous-versions/azure/devops/integrate//previous-versions/azure/devops/integrate/previous-apis/build/overview
+  href: /previous-versions/azure/devops/integrate/previous-apis/build/overview
   items:
   - name: Builds
-    href: /previous-versions/azure/devops/integrate//previous-versions/azure/devops/integrate/previous-apis/build/builds
+    href: /previous-versions/azure/devops/integrate/previous-apis/build/builds
   - name: Definition templates
-    href: /previous-versions/azure/devops/integrate//previous-versions/azure/devops/integrate/previous-apis/build/definition-templates
+    href: /previous-versions/azure/devops/integrate/previous-apis/build/definition-templates
   - name: Definitions
     href: /previous-versions/azure/devops/integrate/previous-apis/build/definitions
   - name: Tags
