@@ -491,7 +491,7 @@ steps:
 
 ### Conditionally run a step
 
-If there is no variable set or the value of `foo` does not match the `if` conditions, the `else` statement will run. Here the value of `foo` is true in the `ifelse` condition. 
+If there is no variable set, or the value of `foo` does not match the `if` conditions, the `else` statement will run. Here the value of `foo` returns true in the `elseif` condition. 
 
 ```yaml
 variables:
