@@ -1,12 +1,12 @@
 ---
-title: Uploading tasks to the Azure DevOps collection
-description: Uploading tasks to the Azure DevOps collection using the Cross-platform CLI for Azure DevOps
+title: Uploading tasks to the Azure DevOps Services or Azure DevOps Server collection
+description: Uploading tasks to the Azure DevOps Services or Azure DevOps Server collection using the Cross-platform CLI for Azure DevOps
 ms.topic: conceptual
 ms.date: 01/20/2022
 monikerRange: 'azure-devops'
 ---
 
-# Uploading tasks to the Azure DevOps collection using the Cross-platform CLI for Azure DevOps
+# Uploading tasks to the Azure DevOps Services or Azure DevOps Server collection using the Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -18,7 +18,7 @@ For more information about **tfx-cli**, see the [Node CLI for Azure DevOps on Gi
 
 ## Prerequisites
 
-To upload tasks to collection in Azure DevOps, you need the following software and tools:
+To upload tasks to collection in Azure DevOps Services or Azure DevOps Server, you need the following software and tools:
 
 - The [latest version](https://nodejs.org/en/download/) of **Node.js**.
 - The **Cross-platform CLI for Azure DevOps** to upload tasks.
@@ -34,9 +34,9 @@ To upload tasks to collection in Azure DevOps, you need the following software a
 > [!IMPORTANT]
 > You should create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with access to Environment (Read & manage).
 
-To connect tfx-cli to your Azure DevOps instance - you should specify the path to DefaultCollection as URL.
+To connect tfx-cli to Azure DevOps Services or Azure DevOps Server instance - you should specify the path to DefaultCollection as URL.
 
-In case of Azure DevOps services path to DefaultCollection has template:
+In case of Azure DevOps Services path to DefaultCollection has template:
 `https://{Azure DevOps organization name}.visualstudio.com/DefaultCollection`
 
 For Azure DevOps Server default collection URL will depend on the domain where the server is located and its template will be:
@@ -56,7 +56,7 @@ Copyright Microsoft Corporation
 Logged in successfully
 ```
 
-## Uploading tasks to the Azure DevOps collection
+## Uploading tasks to the Azure DevOps Services or Azure DevOps Server collection
 
 > [!TIP]
 > If you need to update in-the-box pipeline tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repository, and build required tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
