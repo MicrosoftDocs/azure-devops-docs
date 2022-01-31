@@ -491,10 +491,12 @@ steps:
 
 ### Conditionally run a step
 
+If there is no variable set, or the value of `foo` does not match the `if` conditions, the `else` statement will run. Here the value of `foo` returns true in the `elseif` condition. 
+
 ```yaml
 variables:
   - name: foo
-    value: fabrikam # triggers else condition
+    value: contoso # triggers elseif condition
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -503,8 +505,8 @@ steps:
 - script: echo "start"
 - ${{ if eq(variables.foo, 'adaptum') }}:
   - script: echo "this is adaptum"
-- ${{ elseif eq(variables.foo, 'contoso') }}:
-  - script: echo "this is contoso"
+- ${{ elseif eq(variables.foo, 'contoso') }}: # true
+  - script: echo "this is contoso" 
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
