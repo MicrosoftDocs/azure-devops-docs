@@ -463,6 +463,24 @@ steps:
   condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
 ```
 
+- **Windows**
+
+    ```yaml
+    - task: Cache@2
+      displayName: Cache Anaconda
+      inputs:
+        key: 'conda | "$(Agent.OS)" | environment.yml'
+        restoreKeys: | 
+          python | "$(Agent.OS)"
+          python
+        path: $(Pipeline.Workspace)/miniconda/envs
+        cacheHitVar: CONDA_CACHE_RESTORED
+    
+    - script: conda env create --quiet --file environment.yml
+      displayName: Create environment
+      condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
+    ```
+
 ## PHP/Composer
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
