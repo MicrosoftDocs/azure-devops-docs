@@ -1,12 +1,12 @@
 ---
-title: Upload tasks to Azure DevOps collection
-description: Upload tasks to Azure DevOps collection using Cross-platform CLI for Azure DevOps
-ms.topic: conceptual 
+title: Uploading tasks to the Azure DevOps collection
+description: Uploading tasks to the Azure DevOps collection using the Cross-platform CLI for Azure DevOps
+ms.topic: conceptual
 ms.date: 01/20/2022
 monikerRange: 'azure-devops'
 ---
 
-# Upload tasks in Azure DevOps collection using Cross-platform CLI for Azure DevOps
+# Uploading tasks to the Azure DevOps collection using the Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -56,10 +56,10 @@ Copyright Microsoft Corporation
 Logged in successfully
 ```
 
-## Upload tasks to Azure DevOps collection
+## Uploading tasks to the Azure DevOps collection
 
 > [!TIP]
-> If you need to update in-the-box pipeline tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repository and build required tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
+> If you need to update in-the-box pipeline tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repository, and build required tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
 
 Now you can start to upload task using `tfx`.
 
