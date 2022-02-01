@@ -10,6 +10,8 @@ monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 
 # Template types & usage
 
+[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
+
 ::: moniker range=">=azure-devops-2020"
 
 Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. The second approach is useful for [building secure pipelines with templates](../security/templates.md).

@@ -9,6 +9,8 @@ monikerRange: azure-devops
 
 # Migrate from Jenkins to Azure Pipelines
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 [Jenkins](https://www.jenkins.io/), an open-source automation server, has traditionally been installed by enterprises in their own data
 centers and managed on-premises. Many providers
 also offer managed Jenkins hosting.
