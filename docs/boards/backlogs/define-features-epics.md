@@ -174,7 +174,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 1. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 

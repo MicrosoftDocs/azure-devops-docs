@@ -103,7 +103,7 @@ From **Work**, choose **Impediment** from the **New Work Item** list of options.
   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 From the Queries page, choose Impediment from the **New** drop-down menu.
 

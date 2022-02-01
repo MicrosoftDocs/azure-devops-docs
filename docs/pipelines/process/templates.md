@@ -4,11 +4,13 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 01/11/2022
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
 # Template types & usage
+
+[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -181,7 +183,10 @@ steps:
 
 You can copy content from one YAML and reuse it in a different YAML. Copying content from one YAML to another saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
-Template files need to exist on your filesystem at the start of a pipeline run. You can't reference templates in an artifact. 
+> [!NOTE]
+> Template files need to exist on your filesystem at the start of a pipeline run. You can't reference templates in an artifact. 
+
+
 
 ```yaml
 # File: templates/include-npm-steps.yml

@@ -29,7 +29,7 @@ They can be kept privately for you and your team or shared with the millions of 
 > ![Screenshot of components of an extension.](./media/extension-components.png)
 
 - A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
-- Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the Marketplace. 
+- Discovery assets - the Markdown and images that make up your extension's overview and aesthetics in the Marketplace. 
 - Static files that contain the logic of your extension, including HTML, JS, and CSS files. Static files are only applicable to contribution-based extensions.
 
 These files and assets get bundled up to make a Team Extensions Service Package (.vsix file) that's published to the Marketplace. From the Marketplace,

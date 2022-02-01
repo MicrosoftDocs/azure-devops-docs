@@ -58,7 +58,7 @@ You can view the packages you saved in your feed by selecting a source from the 
 
 ## Scopes
 
-Using scopes instead of upstream sources limit your private package consumption to those with the `@scope` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [Npm scopes](scopes.md) for more details.
+Using scopes instead of upstream sources limit your private package consumption to those with the `@scope` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [npm scopes](scopes.md) for more details.
 
 ## Related articles
 

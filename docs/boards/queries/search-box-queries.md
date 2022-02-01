@@ -102,7 +102,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
@@ -215,7 +215,7 @@ Improvised search isn't available from Azure DevOps Services. Only [semantic sea
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) context menu and select an option.
 

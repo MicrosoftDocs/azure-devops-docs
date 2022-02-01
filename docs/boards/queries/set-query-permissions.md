@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 01/05/2022
 ---
 
 
@@ -38,7 +38,7 @@ Users with Stakeholder access can't create or save queries in a Shared folder. T
 
 ## Default query permissions
 
-A ✔️ in the following table indicates that the corresponding access level or security group has access to a feature by default. 
+A ✔️ in the following table indicates that the corresponding security group has permission to exercise the task by default. 
 
 [!INCLUDE [temp](../../organizations/security/includes/boards-queries.md)]
 

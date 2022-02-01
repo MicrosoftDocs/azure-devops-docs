@@ -24,7 +24,7 @@ For details about building GitHub repositories, see [Build GitHub repositories](
 
 To lean how to publish your Pipeline Artifacts, see [Publish Pipeline Artifacts](../publish-pipeline-artifact.md).
 
-To find out what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).
+To find out what else you can do in YAML pipelines, see [YAML schema reference](/azure/devops/pipelines/yaml-schema).
 
 ### Clean up
 

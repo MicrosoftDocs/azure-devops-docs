@@ -267,6 +267,12 @@ A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure 
 
 A: Check that you set the content type to application/x-www-form-urlencoded in your request header.
 
+### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
+
+A: Verify that **Third-party application access via OAuth** hasn't been disabled by your organization's admin at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
+
+In this scenario, the entire flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
+
 ### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
 
 A: No. OAuth is only supported in the REST APIs at this point.
