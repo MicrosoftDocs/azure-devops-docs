@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 11/02/2020
+ms.date: 02/01/2022
 monikerRange: azure-devops
 ---
 
@@ -309,14 +309,14 @@ pr:
 >[!IMPORTANT]
 >When you specify a `pr` trigger with a subset of branches, a pipeline is triggered only when updates are pushed to those branches.
 
-For more complex triggers that need to exclude certain branches, you must use the full syntax as shown in the following example.
+For more complex triggers that need to exclude certain branches, you must use the full syntax as shown in the following example. In this example, pull requests are validated that target `main` or `releases/*` and the branch `releases/old*` is excluded. 
 
 ```yaml
 # specific branch
 pr:
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/old*
@@ -339,7 +339,6 @@ pr:
     exclude:
     - docs/README.md
 ```
-
 > **Tips:**
 >  * Wild cards are not supported with path filters.
 >  * Paths are always specified relative to the root of the repository.
@@ -348,6 +347,7 @@ pr:
 >  * The order of path filters doesn't matter.
 >  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
 >  * You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+>  * Azure Pipelines posts a neutral status back to GitHub when it decides not to run a validation build because of a path exclusion rule.
 
 ### Multiple PR updates
 
