@@ -158,6 +158,9 @@
   - name: Set project-level permissions
     href: set-project-collection-level-permissions.md
     displayName: access, security, add, remove, project, administrators, collection
+  - name: Set object-level permissions
+    href: set-object-level-permissions.md
+    displayName: artifacts, boards, repos, projects, area, iteration, path, work items, access
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md
     displayName: give, revoke, access, users

@@ -552,9 +552,9 @@ A: You can find detailed information about individual permissions and their rela
 > [Manage projects](../projects/about-projects.md)
 
 ## Related articles
-
+- 
+- [Set object-level permissions](set-object-level-permissions.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-- [Troubleshoot permissions](troubleshoot-permissions.md)
