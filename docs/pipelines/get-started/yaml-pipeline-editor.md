@@ -10,6 +10,8 @@ monikerRange: '>=azure-devops-2019'
 
 # YAML pipeline editor
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 Azure Pipelines provides a YAML pipeline editor based on the [Monaco Editor](https://github.com/microsoft/monaco-editor) that you can use to author and edit your pipelines from the Azure DevOps portal. The editor provides tools like Intellisense support and a task assistant to provide guidance when editing a pipeline.
 
 :::moniker range="azure-devops-2019"

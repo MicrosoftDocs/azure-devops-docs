@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Add users to Azure Pipelines
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 Permissions for build and release pipelines are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
 
