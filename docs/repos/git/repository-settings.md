@@ -412,7 +412,7 @@ The following table summarizes the policies you can define to customize a branch
 
 ::: moniker range=">= azure-devops-2020"
 
-- If you want to use [az repos](/cli/azure/repos?view=azure-cli-latest&preserve-view=true) Azure DevOps CLI commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+- If you want to use [az repos](/cli/azure/repos) Azure DevOps CLI commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 <a name="view-and-edit-repository-settings"></a>
@@ -913,11 +913,11 @@ To set case enforcement policy:
 
 ::: moniker range="> azure-devops-2019" 
  
-You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to configure or update case enforcement policy.
+You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement#az_repos_policy_case_enforcement_create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to configure or update case enforcement policy.
 
 ### Create case enforcement policy
 
-Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_create) to create a case enforcement policy.
+Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement#az_repos_policy_case_enforcement_create) to create a case enforcement policy.
 
 ```azurecli
 az repos policy case-enforcement create --blocking {false, true}
@@ -953,7 +953,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ### Update case enforcement policy
 
-Use [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to manage [Case enforcement](#case-enforcement) policy.
+Use [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement#az_repos_policy_case_enforcement_update) to manage [Case enforcement](#case-enforcement) policy.
 
 ```azurecli
 az repos policy case-enforcement update --id
@@ -1058,7 +1058,7 @@ To configure **Maximum file size** policy:
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">= azure-devops-2020"
-Use [az repos policy file-size create](/cli/azure/repos/policy/file-size?view=azure-cli-latest&preserve-view=true#az_repos_policy_file_size_create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
+Use [az repos policy file-size create](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
 
 ### Create file size policy
 
