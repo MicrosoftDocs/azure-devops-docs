@@ -10,6 +10,8 @@ monikerRange: azure-devops
 
 # Migrate from Travis to Azure Pipelines
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 Azure Pipelines is more than just a Continuous Integration tool, it's a
 flexible build and release orchestration platform.  It's designed for
 the software development and deployment process, but because of this

@@ -12,7 +12,7 @@ author: JuliaKM
 
 # Run pipelines with Anaconda environments
 
-**Azure Pipelines**
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 Learn how to set up and use Anaconda with Python in your pipeline. Anaconda is a Python distribution for data science and machine learning.  
 
