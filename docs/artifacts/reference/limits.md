@@ -13,17 +13,20 @@ Azure Artifacts is a highly-scalable package management solution that enables de
 
 ## Count limits
 
-* **5000 versions** per package ID; use [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) to automatically clean up old versions
-* **Unlimited package IDs** per feed
+- **5000 versions** per package ID.
+- **Unlimited package IDs** per feed.
+
+> [!NOTE]
+> You can use [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) to automatically delete older versions of your package.
 
 ## Size limits
 
-* NuGet packages are limited to 500 MB.
-* npm packages are limited to 500 MB.
-* Maven packages are limited to 500 MB per file.
-* Python packages are limited to 500 MB per file.
-::: moniker range="<= tfs-2018 || azure-devops"
-* Universal Packages have been tested up to 1 TB and are recommended for managing large binary content.
+- **NuGet packages**: limited to 500 MB per file.
+- **Npm packages**: limited to 500 MB per file.
+- **Maven packages**: limited to 500 MB per file.
+- **Python packages**: limited to 500 MB per file.
+::: moniker range=">= tfs-2017"
+- **Universal Packages**: up to 1 TB per file (Recommended for large binary content).
 ::: moniker-end
 
 > [!NOTE]
