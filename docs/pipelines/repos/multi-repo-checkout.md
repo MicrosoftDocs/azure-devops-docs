@@ -14,7 +14,7 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 
 ## Specify multiple repositories
 
-Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
+Repositories can be specified as a [repository resource](/azure/devops/pipelines/yaml-schema/resources-repositories-repository), or inline with the `checkout` step. 
 
 The following repository types are supported.
 
@@ -118,7 +118,7 @@ The following combinations of `checkout` steps are supported.
 
 ## Repository resource definition
 
-You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
+You must use a [repository resource](/azure/devops/pipelines/yaml-schema/resources-repositories-repository) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
 | Repository type | Service connection |
 |-----------------|--------------------|

@@ -4,7 +4,7 @@ description: How to set up your project and authenticate to Azure Artifacts feed
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/10/2021
+ms.date: 01/21/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 With Azure Artifacts, you can publish different types of packages to your feeds such as npm, NuGet, Python, Maven, and Universal packages. You can also install packages from feeds and public registries such as npmjs.com.
 
-To authenticate with Azure Artifacts, we must first set up our config file. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+To authenticate with Azure Artifacts, we must first set up our config file. Npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ## Project setup
 
@@ -64,7 +64,7 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker-end
         
-On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This *.npmrc* file should contain all your registries' credentials. 
+On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This second file should contain all your registries' credentials.
 
 ## Credentials setup
 
@@ -146,89 +146,9 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-## Set up authentication in your pipeline
+## Set up authentication
 
-There are two options for setting up authentication in your pipeline:
-
-- [Without a task runner](#without-a-task-runner).
-- [With a task runner](#with-a-task-runner) (e.g. gulp).
-
-### Without a Task Runner
-
-To authenticate with Azure Artifacts from your pipeline without a task runner, follow the steps below: 
-
-::: moniker range=">= azure-devops-2019"
-
-1. Select **Azure Pipelines**, and then select your pipeline definition.
-
-1. Select **Edit** to modify your pipeline.
-
-1. Select `+` to add a task to your pipeline.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing how to add the npm task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
-
-1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
-
-1. Select the folder that contains your package.json.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing where to add the path to your package.json](../media/build-definition/build-definition-npm-install-newnav.png)
-
-1. Expand the **Custom registries and authentication** section, and then select **Registry I select here**. Select your feed from the dropdown menu.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Registries to use](../media/build-definition/registry-i-select-here.png)
-
-      > [!NOTE]
-      > When you select this option, the task will create a temporary *.npmrc* for the feed you selected here and override the project's *.npmrc*.
-   
-1. Select **Save & queue** when you are done.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops-2019"
-
-1. Select **Build and Release**, and then select **Builds**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing how to access builds in TFS](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
-
-1. Select your pipeline, and then select **Edit**.
-
-1. Select `+` to add a task to your pipeline.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to add a task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
-
-1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing the npm task added to the pipeline](../media/build-definition/build-definition-npm-install.png)
-
-1. Select the folder that contains your package.json.
-
-1. Expand the **Custom registries and authentication** section, and then select **Registry I select here**. Select your feed from the dropdown menu. 
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to use packages from a specific feed](../media/build-definition/registry-i-select-here.png)
-
-   > [!NOTE]
-   > When you select this option, the task will create a temporary *.npmrc* for the feed you selected here and override the project's *.npmrc*.
-   
-1. Select **Save & queue** when you are done.
-
-::: moniker-end
-
-> [!TIP]
-> To allow your pipeline to access your feed, make sure you set the build service to a contributor in your feed's settings. Azure Artifacts -> Select your feed -> Settings -> Permissions -> set the build service role to **Contributor**.
-
-> [!div class="mx-imgBorder"]
-> ![tip screenshot](../media/project-collection-contributor.png)
-
-### With a Task Runner
-
-When using a task runner, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the *.npmrc*.
+Azure Artifacts recommend using the `npmAuthenticate` task to set up authentication for your pipeline tasks. When using a task runner such as gulp or Grunt, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the *.npmrc*.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -282,6 +202,12 @@ When using a task runner, you'll need to add the **npm Authenticate** task at th
 1. Select **Save & queue** when you are done.
 
 ::: moniker-end
+
+> [!TIP]
+> To allow your pipeline access to your feed, make sure you give the build service a **Contributor** role in your feed's settings. Select **Azure Artifacts** -> [YOUR_FEED] -> **Settings** -> **Permissions** -> set the build service role to **Contributor**.
+
+> [!div class="mx-imgBorder"]
+> ![tip screenshot](../media/project-collection-contributor.png)
 
 ## Troubleshooting
 

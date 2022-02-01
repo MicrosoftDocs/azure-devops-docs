@@ -285,7 +285,7 @@ A new window opens that shows the inheritance information for that permission.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 ![Permissions dialog, earlier versions, Why link annotated.](media/permissions/inherited-permissions.png)  
 

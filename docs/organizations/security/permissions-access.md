@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 08/18/2021
+ms.date: 01/26/2022
 ---
 
 # Default permissions quick reference for Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md). 
+To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps Services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md). 
 
 
 ## Assign users to a security group 
@@ -62,7 +62,7 @@ Access to the following tasks are controlled by each user's access level or by p
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md). 
 
 <!---
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 > [!NOTE]  
 > There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).   
 ::: moniker-end  
@@ -140,19 +140,15 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 
 ### TFVC
 
-::: moniker-end
 
-::: moniker range=">= tfs-2013"
 
 [Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control. 
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 
-::: moniker-end
 
 <a id="pipelines" />
 
@@ -282,18 +278,15 @@ You can define and manage team dashboards from the web portal, **Dashboards**. F
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 [!INCLUDE [temp](includes/report.md)]
-
-::: moniker-end
-
+ 
 ::: moniker range="tfs-2013" 
 
 ## Dashboards and charts
 
 You can pin charts to a team dashboard **Home** page. 
 
-[!INCLUDE [temp](includes/report.md)]
+[!INCLUDE [temp](includes/report-tfs-2013.md)]
 
 ::: moniker-end
 

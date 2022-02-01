@@ -32,12 +32,6 @@ In this tutorial you learn how to:
 > * Force push to update your remote branch
 > * Squash local commits
 
-<!--- 
-### Video overview
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Rebase/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe> 
-
--->
 
 ### Use caution 
 

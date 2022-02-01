@@ -161,7 +161,7 @@ Introducing the new hub for **Test Plans**! Not only can you add, edit, and dele
 Broken page links are one of the leading causes of poor page quality in any documentation solution. Previously in **Wiki**, when you moved a page within the tree structure or renamed a page, it could potentially break links to the page from other pages and work items. Now, you can check for and fix links before they get broken.
 
 > [!IMPORTANT]
-> Remember to use the `[]()` markdown syntax for links in pages and the **Wiki page** link type in work items to allow **Wiki** to find and fix these potentially broken links. Plain text URLs and hyperlinks in work items won’t get picked up by this feature.
+> Remember to use the `[]()` Markdown syntax for links in pages and the **Wiki page** link type in work items to allow **Wiki** to find and fix these potentially broken links. Plain text URLs and hyperlinks in work items won’t get picked up by this feature.
 
 When you rename or move a page, you’ll be prompted to check for affected absolute or relative links.
 

@@ -40,7 +40,7 @@ ms.topic: include
 
     Here are some recommended credential managers:
 
-    *	Git: [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) 
+    *	Git: [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) 
     *	NuGet: [NuGet Credential Provider](../../../artifacts/nuget/nuget-exe.md)
 
 7. When you don't need your token anymore, just revoke it to remove its access.

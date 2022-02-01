@@ -137,7 +137,7 @@ steps:
   persistCredentials: true
 ```
 
-Learn more about [`checkout`](../yaml-schema.md#checkout).
+Learn more about [`checkout`](/azure/devops/pipelines/yaml-schema/steps-checkout).
 
 # [Classic](#tab/classic)
 

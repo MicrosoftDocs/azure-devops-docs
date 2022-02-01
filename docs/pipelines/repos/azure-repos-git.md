@@ -101,17 +101,17 @@ YAML pipelines are not available in TFS.
 
 ---
 
-### Skipping CI for individual commits
+### Skipping CI for individual pushes
 
 ::: moniker range="<= azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `***NO_CI***` in the message of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push.
 
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `[skip ci]` in the message or description of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push. You can also use any of the following variations.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
@@ -197,7 +197,7 @@ To configure this setting, navigate to **Pipelines**, **Settings** at either **O
 > [!IMPORTANT]
 > **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
 
-When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](../yaml-schema.md#checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](/azure/devops/pipelines/yaml-schema/steps-checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
 
 There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled.
 

@@ -61,7 +61,7 @@ If you don't see :::image type="icon" source="../media/icons/save-items.png" bor
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 The buttons to move up or down within the query results list are inside the work item form. Choose **Bottom** to cycle through the choices for where the work item form appears: **Bottom**, **Right**, or **Off**.
 
@@ -115,7 +115,7 @@ Multi-select the work items you want to update, choose the :::image type="icon" 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 Multi-select the work items you want to update, choose the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon, and then select the option you want from the menu of options.
 
@@ -132,7 +132,7 @@ Choose **Save items** to save all work items you've modified.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 Choose the ![double-save-icon](../media/icons/icon-double-save.png) double-save icon to save all work items you've modified.
 

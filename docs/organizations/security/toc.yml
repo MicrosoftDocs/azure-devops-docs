@@ -144,7 +144,7 @@
   - name: Use SSH key authentication
     href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: access, security
-  - name: Use Git Credential Manager Core 
+  - name: Use Git Credential Manager 
     href: ../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: authenticate, access, security
   - name: Revoke users' PATs (for admins)
@@ -291,7 +291,7 @@
     href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: create, update, user, group, access, security
   - name: Set SharePoint project portal permissions
-    href: set-sharepoint-permissions.md
+    href: /previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions
     displayName: access, settings
 - name: Reference
   items:
@@ -305,3 +305,6 @@
     href: add-manage-security-groups.md 
   - name: Manage permissions with CLI
     href: manage-tokens-namespaces.md
+  - name: Enable DevSecOps with Azure and GitHub
+    href: /devops/devsecops/enable-devsecops-azure-github
+
