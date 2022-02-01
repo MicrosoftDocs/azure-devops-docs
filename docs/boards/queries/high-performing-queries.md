@@ -1,7 +1,7 @@
 ---
 title: Learn how to create high-performing work item queries
 titleSuffix: Azure Boards
-description: Learn about guidelines for creating high-performing work item queries in Azure Boards and Azure DevOps. 
+description: Learn how to create high-performing work item queries in Azure Boards. 
 ms.custom: "boards-queries, linked-from-support"  
 ms.technology: devops-agile
 ms.assetid: 
@@ -9,11 +9,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021  
----
+ms.date: 01/31/2022  
+--- 
 
 
-# Guidance to create high-performing queries in Azure Boards and Azure DevOps
+# Guidance to create high-performing queries in Azure Boards
  
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -46,11 +46,12 @@ Unlike matching or partial matching on a custom field, query with a `Tags Contai
  
 When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator runs a full-text search on the specified field, which is faster in most cases. 
 
-While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
+The `Contains` operator runs a table scan, which is a slower operation than using  `Contains Words` and also consumes more CPU cycles. These CPU cycles can cause you to encounter rate limitations. For more information, see [Service limits and rate limits](../../user-guide/service-limits.md) and [Rate limits](../../integrate/concepts/rate-limits.md).
+
  
 ## Specify small groups when using the `In Group` operator 
 
-The `In Group` operator supports matching a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. 
+The `In Group` operator supports matching a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of a team. 
 
 If you filter on a group that contains a large number of members, your result set will tend to be non-selective, returning a large result set. Also, if a group corresponds to a large Azure Active Directory (Azure AD) group, the query generates a fairly large cost to resolve that group from AAD.  
 
@@ -60,11 +61,9 @@ Negated operators&mdash;such as `<>, Not In, Not Under, Not In Group`&mdash;are 
 
 Only use negated operators when it's necessary. Always try to find alternatives first. For example, if Field1 has values A, B, C, D; specifying `Field1 In A, B, C` provides a better alternative to the clause `Field1 <> D`.
 
-
 ## Avoid string comparisons  
 
-Comparing one string field with another string always runs a work item table scan, which is inefficient. Recommended guidance is to use tags or a specific custom field as alternatives, particularly when a query performs poorly. 
- 
+Queries that contain string comparisons require running a table scan, which is inherently inefficient. Instead, we recommend you use tags or a specific custom field as alternatives, particularly when a query performs poorly. 
 ## Limit `Or` operators
 
 Queries run better when fewer `Or` operators are used. Too many `Or` operators can make your query non-selective. If your query runs slowly, try moving the `Or` operator clause towards the top of the query clauses.  
@@ -72,7 +71,7 @@ Queries run better when fewer `Or` operators are used. Too many `Or` operators c
 
 ## Save your query 
 
-Saved queries have a higher chance of performing better because of internal optimizations. Always save your query when you plan to reuse it.  Even when you execute the query by WIQL through a REST API, saving the WIQL through the web portal will make your REST API calls less prone to performance regressions in the future. 
+Saved queries have a higher chance of performing better because of internal optimizations. Always save your query when you plan to reuse it.  Even when you execute the query using Work Item Query Language (WIQL) through a REST API, saving the WIQL through the web portal will make your REST API calls less prone to performance regressions in the future. 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
