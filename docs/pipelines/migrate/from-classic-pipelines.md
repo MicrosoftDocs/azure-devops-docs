@@ -10,6 +10,8 @@ monikerRange: azure-devops
 
 # Migrate your Classic pipeline to YAML
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 Get started with Azure Pipelines by converting your existing Classic pipeline to use YAML. With a YAML-based pipeline, you can implement your CI/CD strategy as code and see its history, compare versions, blame, annotate, and so on.
 
 ## Prerequisites
