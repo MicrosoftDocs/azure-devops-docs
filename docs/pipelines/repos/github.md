@@ -407,6 +407,12 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
+If you have an open PR and you push changes to its source branch, multiple pipelines may run:
+ - The pipeline specified by the target branch's policy will run on the _merged commit_ (the merged code between the source and target branches of the pull request), regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
+ - The pipelines triggered by changes to the PR's source branch, if there is **no** pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). If at least one pushed commit contains `[skip ci]`, the pipelines will run.
+
+ Finally, when you merge the PR, the pipelines triggered by changes to the target branch's policy will run, even though some of the merged commits' messages or descriptions contain `[skip ci]` (or any of its variants).
+
 ### Protected branches
 
 You can run a validation build with each commit or pull request that targets a branch, and even prevent pull requests from merging until a validation build succeeds.
