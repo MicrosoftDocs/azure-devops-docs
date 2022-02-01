@@ -122,7 +122,7 @@ schedules:
     - release
 ```
 
-Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
+Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `release` branch is added to the branch filters in the YAML file **in the release branch** will the scheduled build be added to the scheduler.
 
 ::: moniker-end
 
@@ -390,10 +390,25 @@ YAML pipelines are not available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+::: moniker range=">= azure-devops-2020"
+
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+
+![Scheduled runs menu](media/triggers/scheduled-runs-menu-classic.png)
+
+After you create or update your scheduled triggers, you can verify them using this view.
+
+![Scheduled runs](media/triggers/scheduled-runs-classic.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
 
 Classic scheduled pipelines don't have a **Scheduled runs** view, but you can can view the schedule for a pipeline in the classic schedule editor for your pipeline.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker-end
+
+::: moniker range="= azure-devops-2019"
 
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
