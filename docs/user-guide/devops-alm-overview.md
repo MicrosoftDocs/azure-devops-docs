@@ -2,12 +2,12 @@
 title: DevOps tools overview for Azure DevOps 
 titleSuffix: Azure DevOps
 ms.custom: seodec18  
-description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Team Foundation Server (TFS)
+description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Azure DevOps Server
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.author: kaelli
 author: KathrynEE 
-ms.date: 06/02/2019
+ms.date: 01/31/2022  
 monikerRange: '<= azure-devops'
 ---
 
@@ -19,37 +19,37 @@ Learn how to use our integrated tool set to speed the development and delivery o
  
 ![Continuous planning and delivery](media/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
-Azure DevOps Services and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
+Azure DevOps Services and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Azure DevOps Server, when you want to maintain your data within your network. 
 
-Both options are enterprise-ready, supporting teams of any size, from tens to thousands. Azure DevOps Services provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24-7 operations team, and available in local data centers around the world.
+Both options are enterprise-ready, supporting teams of any size, from tens to thousands. Azure DevOps Services provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% Service Level Agreement (SLA), monitored by our 24-7 operations team, and available in local data centers around the world.
 
-Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
+Using service hooks and extensions, you can quickly expand the power of Azure DevOps through integration with other services and tools.  
 
 For the key differences between Azure DevOps Services and Azure DevOps Server, see [Understand the differences between Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
 
 ## Get started in the cloud or on-premises
 
-Whether you work in the cloud, on-premises, or a hybrid of each, you have a comprehensive set of DevOps and Agile tools to support team collaboration throughout the cycles of planning, development and test, and continuous delivery.
+Whether you work in the cloud, on-premises, or a hybrid of each, you have a comprehensive set of DevOps and Agile tools. All of these tools support team collaboration throughout the cycles of planning, development, test, and continuous delivery.
 
 ### Work in the cloud
 
-Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to continuous testing, cloud build servers, and application insights. [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
+Choose Azure DevOps Services when you want quick setup and maintenance-free operations. In addition, cloud hosted services support easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to continuous testing and cloud build servers. [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
 
 [![Sign up for Azure DevOps Services](media/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add code to repository](media/overview/vsts-setup-4.png)](code-with-git.md)   
 
 ### Work on-premises
 
-Choose on-premises when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with data and tools.  
+Choose on-premises when you need your data to stay within your network.  
 
-[![Install TFS](media/overview/tfs-setup-1.png)](/azure/devops/server/install/single-server)[![Create a project](media/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](media/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](media/overview/tfs-setup-4.png)](/azure/devops/server/admin/backup/back-up-restore)
+[![Install Azure DevOps Server](media/overview/tfs-setup-1.png)](/azure/devops/server/install/single-server)[![Create a project](media/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](media/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](media/overview/tfs-setup-4.png)](/azure/devops/server/admin/backup/back-up-restore)
  
 <a id="add-code">  </a>
 
 ## Develop code using your IDE of choice
 
-Azure DevOps Services supports two types of version control Git and Team Foundation Version Control (TFVC). Use Git, Team Foundation version control (TFVC) or both to store code for your app and give you access to different versions of your code. 
+Azure DevOps supports two types of version control: Git and Team Foundation Version Control (TFVC). Use Git, Team Foundation version control (TFVC), or both to store code for your applications and give you access to different versions of your code. 
 
-Depending on whether you use Git or TFVC as a repo, you can develop your code in Android Studio, Eclipse, IntelliJ, Visual Studio, Visual Studio Code, or Xcode.  
+You can develop your code in Android Studio, Eclipse, IntelliJ, Visual Studio, Visual Studio Code, or Xcode.  
 
 ### Git
 
@@ -156,6 +156,6 @@ Industry-standard RESTful APIs extend the power of Azure DevOps from your apps a
 
 Monitor your web and device apps to gain actionable insight to improve performance, determine usage patterns, and plan for the next version of your software.  
 
-[Use Application Insights](https://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
+[Use Application Insights](https://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own Internet Information Services (IIS) or Java EE servers.  
 
 [Use HockeyApp](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
