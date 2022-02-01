@@ -312,4 +312,4 @@ Or, to grow your CI pipeline to a CI/CD pipeline, include a [deployment job](../
 
 To learn more about the topics in this guide see [Jobs](../pipelines/process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../pipelines/process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting/troubleshooting.md).
 
-To learn what else you can do in YAML pipelines, see [YAML schema reference](yaml-schema.md).
+To learn what else you can do in YAML pipelines, see [YAML schema reference](/azure/devops/pipelines/yaml-schema/).

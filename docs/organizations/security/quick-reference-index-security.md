@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/10/2020
+ms.date: 01/13/2022
 ---
 
 # Security quick reference index
@@ -258,6 +258,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [About Microsoft Security Code Analysis](/azure/security/develop/security-code-analysis-overview)
        - [Microsoft Threat Modeling Tool](/azure/security/develop/threat-modeling-tool)
        - [Security in DevOps (DevSecOps)](/devops/operate/security-in-devops)
+       - [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github)
    :::column-end:::
 :::row-end:::
 ---

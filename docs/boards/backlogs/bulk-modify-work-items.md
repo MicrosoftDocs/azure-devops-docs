@@ -393,7 +393,7 @@ Here, we use the context menu to move several non-sequential items to the curren
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 ![TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration](media/backlog-multi-select-non-sequential-items.png)  
 
@@ -456,7 +456,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 <!---#### TFS 2015, TFS 2013-->
 

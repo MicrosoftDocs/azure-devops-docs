@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 11/18/2021
+ms.date: 01/31/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -167,6 +167,29 @@ The following built-in functions can be used in expressions.
 > There is no literal syntax in a YAML pipeline for specifying an array.
 > This function is of limited use in general pipelines.
 > It's intended for use in the [pipeline decorator context](../../extend/develop/pipeline-decorator-context.md) with system-provided arrays such as the list of steps.
+
+You can use the `containsValue` expression to find a matching value in an object. Here is an example that demonstrates looking in list of source branches for a match for `Build.SourceBranch`. 
+
+```yaml
+parameters:
+- name: branchOptions
+  displayName: Source branch options
+  type: object
+  default:
+    - refs/heads/main
+    - refs/heads/test
+
+jobs:
+  - job: A1 
+    steps:
+    - ${{ each value in parameters.branchOptions }}:
+      - script: echo ${{ value }}
+
+  - job: B1 
+    condition: ${{ containsValue(parameters.branchOptions, variables['Build.SourceBranch']) }}
+    steps:
+      - script: echo "Matching branch found"
+```
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -440,7 +463,7 @@ You can use the following status check functions as expressions in conditions, b
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
   * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
-  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition.
+  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, the job will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
   * Evaluates to `False` if the pipeline is canceled.
 
@@ -491,10 +514,12 @@ steps:
 
 ### Conditionally run a step
 
+If there is no variable set, or the value of `foo` does not match the `if` conditions, the `else` statement will run. Here the value of `foo` returns true in the `elseif` condition. 
+
 ```yaml
 variables:
   - name: foo
-    value: fabrikam # triggers else condition
+    value: contoso # triggers elseif condition
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -503,8 +528,8 @@ steps:
 - script: echo "start"
 - ${{ if eq(variables.foo, 'adaptum') }}:
   - script: echo "this is adaptum"
-- ${{ elseif eq(variables.foo, 'contoso') }}:
-  - script: echo "this is contoso"
+- ${{ elseif eq(variables.foo, 'contoso') }}: # true
+  - script: echo "this is contoso" 
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
@@ -696,7 +721,7 @@ This requires using the `stageDependencies` context.
 }
 ```
 
-In this example, job B1 will run whether job A1 is successful or skipped.
+In this example, job B1 will run if job A1 is skipped.
 Job B2 will check the value of the output variable from job A1 to determine whether it should run.
 
 ```yaml
@@ -719,7 +744,7 @@ stages:
   dependsOn: A
   jobs:
   - job: B1
-    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+    condition: in(stageDependencies.A.A1.result, 'Skipped') # change condition to `Succeeded and stage will be skipped`
     steps:
     - script: echo hello from Job B1
   - job: B2

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Sign up and get started using Azure Repos 
 ms.technology: devops-new-user
 ms.custom: seo-javascript-september2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/18/2021
 ---
 

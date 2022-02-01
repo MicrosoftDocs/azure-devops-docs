@@ -13,7 +13,7 @@ ms.date: 10/10/2017
 # Add extensions in work item form via work item type definition xml
 
 > [!NOTE]
-> Work item form customization via xml is supported only on Azure Devops Server, not Azure DevOps Services. 
+> Work item form customization via xml is supported only on Azure DevOps Server, not Azure DevOps Services. 
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 

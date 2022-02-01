@@ -37,7 +37,7 @@ an Azure Pipelines YAML configuration. The two are conceptually similar,
 supporting "configuration as code" and allowing you to check your configuration
 into your version control system. Unlike Jenkins, however, Azure Pipelines
 uses the industry-standard [YAML to configure the build
-pipeline](../yaml-schema.md).
+pipeline](/azure/devops/pipelines/yaml-schema).
 
 The concepts between Jenkins and
 Azure Pipelines and the way they're configured are similar. A Jenkinsfile

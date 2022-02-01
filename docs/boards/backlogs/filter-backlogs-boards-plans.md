@@ -20,14 +20,17 @@ ms.date: 10/13/2021
 ::: moniker range=">= tfs-2017"
 
 With filter functions, you can interactively apply one or more filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, Backlogs and Boards display work items based on the selected **Area Paths** and **Iteration Paths** for the team. **Query Results** list work items based on the query clauses you've defined. 
-::: moniker-end 
-::: moniker range=">= tfs-2017"
+
 You enable the filter feature by choosing :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter**.
 ::: moniker-end 
+
+::: moniker range="tfs-2015"
+With the filter function, you can interactively apply a keyword to filter a page. Each page is already filtered to show a subset of work items according to the tool function. For example, **Backlogs** and **Boards** display work items based on the selected **Area Paths** and **Iteration Paths** for the team. **Query Results** list work items based on the query clauses you've defined.  You can use the filter function to filter work items based on a keyword, ID or tag.   
+::: moniker-end 
+
 ::: moniker range=">=azure-devops-2019"
 :::image type="content" source="media/filter/filter-backlogs.png" alt-text="Screenshot of choosing Filter function latest versions.":::
 ::: moniker-end 
-
 
 ::: moniker range="tfs-2017 || tfs-2018"
 :::image type="content" source="media/filter/filter-backlogs-options-tfs-2017.png" alt-text="Screenshot of initial keyword filter function.  ":::
@@ -41,10 +44,7 @@ You enable the filter feature by choosing :::image type="icon" source="../../med
 From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Boards tools.  
 ::: moniker-end 
 
-::: moniker range="tfs-2015"
-With the filter function, you can interactively apply a keyword filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, **Backlogs** and **Boards** display work items based on the selected **Area Paths** and **Iteration Paths** for the team. **Query Results** list work items based on the query clauses you've defined.  You can use the filter function to filter work items based on a keyword, ID or tag.   
-::: moniker-end 
-
+ 
 ::: moniker range=">= tfs-2017"
 
 Use filters to complete these tasks:  
@@ -890,10 +890,12 @@ Filters remain in place until you explicitly clear them.  When you refresh your 
 Once the board is filtered, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
 
 
+
+::: moniker range=">= tfs-2017"
 ## Filter logic and Boolean operators
 
 Applying Boolean operators to filters is only supported for tags, as described in [Filter based on tags](#tags) later in this article. All other filters are applied with an implicit **AND** operator.  
-
+::: moniker-end 
 
 <a id="text-filter"></a>
 

@@ -75,7 +75,7 @@ For a description of each group and each permission, see [Permissions and groups
 
 ## Add a user or group to a security group
 
-As roles and responsibilities change, you might need to change the permission levels for individual members of a project. The easiest way to do that is to add the user or a group of users to a pre-defined security group.  If roles change, you can then remove the user from a group.
+As roles and responsibilities change, you might need to change the permission levels for individual members of a project. The easiest way to do that is to add the user or a group of users to a predefined security group.  If roles change, you can then remove the user from a group.
 
 Here we show how to add a user to the built-in Project Administrators group. The method is similar to adding an Azure Active Directory or Active Directory group. 
 
@@ -290,7 +290,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end
 
-
+<a id="add-group" />
 <a id="collection-level" />
 
 ## Add a group and change its permissions at the organization or collection-level group 
@@ -497,7 +497,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you'll nee
 ::: moniker range="<= tfs-2017"
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
 
-* [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
+* [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
 * [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)
 
 ::: moniker-end 

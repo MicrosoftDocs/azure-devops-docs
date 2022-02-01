@@ -18,7 +18,7 @@
     },
     "files": [
         {
-            "path": "buildAndReleaseTask"
+            "path": "buildandreleasetask"
         }
     ],
     "contributions": [
@@ -29,7 +29,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "buildAndReleaseTask"
+                "name": "buildandreleasetask"
             }
         }
     ]

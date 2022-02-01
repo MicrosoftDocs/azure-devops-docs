@@ -253,7 +253,7 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 ### Skipping CI for individual commits
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `[skip ci]` in the message or description of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push. You can also use any of the following variations.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
@@ -387,7 +387,7 @@ You can opt out of pull request validation entirely by specifying `pr: none`.
 pr: none
 ```
 
-For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
+For more information, see [PR trigger](/azure/devops/pipelines/yaml-schema/pr) in the [YAML schema](/azure/devops/pipelines/yaml-schema).
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, follow the troubleshooting steps in the [FAQ](#failing-triggers).
@@ -516,7 +516,7 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 ## Pre-defined variables
 
-When you build a GitHub repository, most of the [pre-defined variables](../build/variables.md) are available to your jobs. However, since Azure Pipelines does not recognize the identity of a user making an update in GitHub, the following variables are set to system identity instead of user's identity:
+When you build a GitHub repository, most of the [predefined variables](../build/variables.md) are available to your jobs. However, since Azure Pipelines does not recognize the identity of a user making an update in GitHub, the following variables are set to system identity instead of user's identity:
 
 * `Build.RequestedFor`
 * `Build.RequestedForId`
