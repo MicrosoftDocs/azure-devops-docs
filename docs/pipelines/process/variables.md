@@ -558,7 +558,7 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
- - To reference a variable from a task within the same job, use `TASK.VARIABLE`.
+ - To reference a variable from a different task within the same job, use `TASK.VARIABLE`.
  - To reference a variable from a task from a different job, use `dependencies.JOB.outputs['TASK.VARIABLE']`.
 
 > [!NOTE]
