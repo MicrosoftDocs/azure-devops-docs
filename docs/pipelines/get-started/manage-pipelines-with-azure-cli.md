@@ -13,6 +13,8 @@ ms.date: 11/12/2021
 
 # Manage your pipeline with Azure CLI
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 You can manage the pipelines in your organization using these `az pipelines` commands:
 
 - [az pipelines run](#run-a-pipeline): Run an existing pipeline

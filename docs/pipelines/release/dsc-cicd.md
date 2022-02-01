@@ -34,7 +34,7 @@ To use this example, you should be familiar with the following:
 - CI-CD concepts. A good reference can be found at [The Release Pipeline Model](../get-started/key-pipelines-concepts.md).
 - [Git](https://git-scm.com/) source control
 - The [Pester](https://github.com/pester/Pester) testing framework
-- [Desired State Configuration](/powershell/scripting/dsc/overview/overview)(DSC)
+- [Desired State Configuration](/powershell/dsc/overview)(DSC)
 
 ## What you will need
 

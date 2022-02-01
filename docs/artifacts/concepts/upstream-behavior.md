@@ -76,7 +76,7 @@ Aside from using the feed's user interface, you can also configure the upstream 
 - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior)
 - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set-upstreaming-behavior)
  
-#### [Npm](#tab/npm/)
+#### [npm](#tab/npm/)
 
 - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)
 - [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior)

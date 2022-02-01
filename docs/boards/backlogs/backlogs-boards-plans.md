@@ -133,7 +133,7 @@ To choose another team, open the project/team selector and select a different te
 > ![The drop-down list for Fabrikam Fiber / Phone shows a Fabrikam Fiber Home button, a list titled Recent project/teams, a Browse button, and a New team button.](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
@@ -926,7 +926,7 @@ If you need more than three backlog and board levels, you can add more. To learn
 Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 Now that you understand how backlogs and boards work, [get started using them to plan and track your work](../get-started/plan-track-work.md).
 ::: moniker-end
 

@@ -32,10 +32,6 @@ landingContent:
         links:
           - text: Capturing actionable feedback with manual testing
             url: https://www.youtube.com/embed/u-fdqhxonPc
-          - text: Test Case Explorer
-            url: https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player
-          - text: Test & Feedback
-            url: https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player
   - title: Run manual tests
     linkLists:
       - linkListType: quickstart

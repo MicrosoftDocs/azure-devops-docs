@@ -95,7 +95,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: YAML Schema
-            url: ../pipelines/yaml-schema.md
+            url: /azure/devops/pipelines/yaml-schema/
   - title: Set your preferences
     linkLists:
       - linkListType: quickstart

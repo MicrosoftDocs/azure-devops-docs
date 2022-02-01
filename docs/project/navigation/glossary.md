@@ -76,7 +76,7 @@ Pipelines are artifacts that you define to run concurrent builds or deploy concu
 
 ## Repositories
 
-A source control folder or container you configure to help you track file changes in. You can have any number of repository on your computer, each stored in their own folder. Each repository is independent, so changes saved in one repository don't affect the contents of another. Learn more: [Create a new Git repo](../../repos/git/creatingrepo.md).    
+A source control folder or container you configure to help you track file changes in. You can have any number of repositories on your computer, each stored in their own folder. Each repository is independent, so changes saved in one repository don't affect the contents of another. Learn more: [Create a new Git repo](../../repos/git/creatingrepo.md).    
 
 [!INCLUDE [temp](../../includes/glossary-terms/sprints.md)] 
 

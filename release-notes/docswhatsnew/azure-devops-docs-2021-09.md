@@ -112,7 +112,6 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2021 through Se
 - [Create and target an environment](/azure/devops/pipelines/process/environments)
 - [Task types & usage](/azure/devops/pipelines/process/tasks)
 - [Pipeline caching](/azure/devops/pipelines/release/caching)
-- [Deploy an Azure App custom container](/azure/devops/pipelines/targets/webapp-on-container-linux)
 - [Visual Studio Build task](/azure/devops/pipelines/tasks/build/visual-studio-build)
 
 ## Project

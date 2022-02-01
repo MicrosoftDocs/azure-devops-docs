@@ -1,6 +1,6 @@
 ---
 title: Import, export, and manage work item types
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps  
 description: Manage work item types for a project 
 ms.technology: devops-agile
 ms.custom: witadmin
@@ -8,8 +8,8 @@ ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Import, export, and manage work item types
@@ -22,7 +22,10 @@ You can manage work item types for a project by using the following **witadmin**
 -   **importwitd**:  Imports work item types from an XML definition file into a project. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type doesn't exist, a new work item type is created. To validate the XML that defines a work item type, but not import the file, use the **/v** option.   
 -   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window. 
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
-  
+
+To learn more about how work item types are used to track work, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
+
+
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
  

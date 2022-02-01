@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops 
 ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: gsaral
+ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
 ms.date: 08/17/2020
