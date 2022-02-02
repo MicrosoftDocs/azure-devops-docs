@@ -61,8 +61,6 @@ Logged in successfully
 > [!TIP]
 > If you need to update in-the-box pipeline tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repository, and build required tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
 
-To upload the task to collection using tfx-cli, you should specify the path to the folder with the compiled task.
-
 Now you can start to upload task using `tfx`.
 
 Enter the following command:
@@ -70,3 +68,6 @@ Enter the following command:
 ```no-highlight
 tfx build tasks upload --task-path <PATH_TO_TASK>
 ```
+
+> [!TIP]
+> PATH_TO_TASK is the path to the folder with the compiled task.
