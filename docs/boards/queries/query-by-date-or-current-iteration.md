@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 11/19/2021
+ms.date: 02/01/2022
 ---
 
 # Query by date or current iteration in Azure Boards
@@ -416,7 +416,7 @@ You can use date fields to filter your queries. Some of these fields are populat
    :::column-end:::
    :::column span="2":::
       The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state.   
-      Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime</p>
+      Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
       Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  
@@ -443,7 +443,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
-      All</p>
+      All
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -511,8 +511,8 @@ You can use date fields to filter your queries. Some of these fields are populat
       Start Date (Note 3)
     :::column-end:::
     :::column span="2":::
-      The date and time when the schedule indicates that the task will start.  </p>
-<p>Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime
+      The date and time when the schedule indicates that the task will start.
+   Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
       Epic, Feature, Requirement, Task, Test Plan, User Story
