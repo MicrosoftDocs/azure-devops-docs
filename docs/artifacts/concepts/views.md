@@ -6,6 +6,7 @@ ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 02/02/2022
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # What are feed views?
@@ -16,9 +17,9 @@ Feed views enable developers to share a subset of package-versions with their co
 
 ## Default view
 
-All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. `@local` is the default view that's commonly used in [upstream sources](upstream-sources.md).
+All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. `@local` is the default view that's commonly used in upstream sources.
 
-The `@local` view contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources).
+The `@local` view contains all packages published directly to the feed and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources).
 
 Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources. See [package graphs](package-graph.md) to learn how available packages are constructed.
 
@@ -29,7 +30,7 @@ In order for other Azure Artifacts feeds to use your feed as an upstream source,
 
 ## Release packages with feed views
 
-When creating packages in continuous integration and delivery scenarios, it's important to convey three pieces of information: the **nature** of the change, the **risk** of the change, and the **quality** of the change.
+When creating release packages, it's important to convey three pieces of information: the **nature** of the change, the **risk** of the change, and the **quality** of the change.
 
 :::image type="content" source="media/release-views-quality-nature.png" alt-text="The semantic version breakdown: 1.2.3 represents the nature of change and beta2 represents the quality of change.":::
 
@@ -39,16 +40,16 @@ The nature and the risk of the change both pertain to the _change itself_, that 
 
 ### Quality of the change
 
-The **quality** of the change isn't generally known until the validation process is complete. This comes after your change is built and packaged. Because of this detail, it's not feasible to communicate the quality in the version number, which is specified during packaging and before validation. There are workarounds to pre-validate (e.g. consume the build's DLLs directly before they're packaged and publish the packages to a "debug" or "CI" environment then validate and republish those packages to a "release" environment) but none that we've seen can truly guarantee that the built package meets the correct quality standard.
+The **quality** of the change isn't generally known until the validation process is complete. This comes after your change is built and packaged. Because of this detail, it's not feasible to communicate the quality in the version number, which is specified during packaging and before validation. There are workarounds to pre-validate (e.g. consume the build's DLLs directly before they're packaged and publish the packages to a "debug" or "CI" environment then validate and republish those packages to a "release" environment) but none that we've seen can truly guarantee that the built package will meet the correct quality standard.
 
 :::image type="content" source="media/release-views-flow.png" alt-text="publishing packages workflow":::
 
-`@Release` views enable your consumers to see only the subset of package versions that were tested, validated, and are ready to be consumed.
+You can use the `@Release` view as a mean to convey the quality of your changes. Using the `@Release` view, you can share packages that met your quality bar and allow your consumers to only see the subset of package versions that were tested, validated, and are ready to be consumed.
 
 :::image type="content" source="media/release-views-quality-tags.png" alt-text="deployment semantic version":::
 
-## What's next?
+## Related articles
 
 - [Promote a package to a view](../feeds/views.md)
-- [Understand upstream sources](upstream-sources.md)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+- [Configure permissions](../feeds/feed-permissions.md)
