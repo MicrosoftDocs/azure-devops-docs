@@ -69,12 +69,12 @@ Queries that contain string comparisons generate table scans that are inherently
 
 ## Limit `Or` operators
 
-Try to limit the numer of `Or` operators defined in your query. Queries run better when fewer `Or` operators are used. Too many `Or` operators can make your query non-selective. If your query runs slowly, reorder the `Or` operator clause towards the top of the query clauses.  
+Try to limit the number of `Or` operators defined in your query. Queries run better when fewer `Or` operators are used. Too many `Or` operators can make your query non-selective. If your query runs slowly, reorder the `Or` operator clause towards the top of the query clauses.  
  
 
 ## Save your query 
 
-Save your query to improve query performance. Due to internal optimizaitons, saved queries tend to perform better over unsaved queries. Always save your query when you plan to reuse it. Even WIQL queries run through a REST API, save the WIQL through the web portal to make your REST API calls less prone to future performance regressions. 
+Save your query to improve query performance. Due to internal optimizations, saved queries tend to perform better over unsaved queries. Always save your query when you plan to reuse it. Even WIQL queries run through a REST API, save the WIQL through the web portal to make your REST API calls less prone to future performance regressions. 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
