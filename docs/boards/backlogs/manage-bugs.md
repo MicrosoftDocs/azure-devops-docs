@@ -294,9 +294,9 @@ You close a bug once it's verified as fixed. However, you might also close a bug
 
 **Agile process:**
 
-- **Deferred**:Defer bug fix until the next product release.
+- **Deferred**: Defer bug fix until the next product release.
 - **Fixed**: Bug is verified as fixed.
-- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the ** Duplicate/Duplicate of** link type and close one of the bugs. 
+- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the **Duplicate/Duplicate of** link type and close one of the bugs. 
 - **As Designed**: Feature works as designed.
 - **Cannot Reproduce**: Tests prove that the bug can't be reproduced.
 - **Obsolete**: The bug's feature is no longer in the product.
@@ -305,14 +305,14 @@ You close a bug once it's verified as fixed. However, you might also close a bug
 **Scrum process:**
 
 - **Not a Bug**: Bug is verified that it isn't a bug.
-- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the ** Duplicate/Duplicate of** link type and close one of the bugs.  
+- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the **Duplicate/Duplicate of** link type and close one of the bugs.  
 - **Removed from the backlog**: Bug is verified that it isn't a bug. Remove the bug from the backlog. 
 - **Work finished**: Bug has been verified as fixed.
 
 **CMMI process:**
 
 - **Deferred**: Defer bug fix until the next product release.
-- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the ** Duplicate/Duplicate of** link type and close one of the bugs.  
+- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the **Duplicate/Duplicate of** link type and close one of the bugs.  
 - **Rejected**: Bug is verified that it isn't a bug.  
 - **Verified**: Bug is verified as fixed.
 
