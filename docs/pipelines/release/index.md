@@ -245,7 +245,7 @@ You can't abandon a release when a deployment is in progress, you must cancel th
 
 ## How do I send release summaries by email?
 
-After a release is triggered and completed, you may want to email the summary to stakeholders. Use the **Send Email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
+After a release is triggered and completed, you may want to email the summary to stakeholders. Use the **Send email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
 
 > [!div class="mx-imgBorder"]
 > ![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
