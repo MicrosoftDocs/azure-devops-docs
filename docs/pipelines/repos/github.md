@@ -411,7 +411,7 @@ If you have an open PR and you push changes to its source branch, multiple pipel
  - The pipelines triggered by changes to the PR's target branch will run on the _merge commit_ (the merged code between the source and target branches of the pull request), regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
  - The pipelines triggered by changes to the PR's source branch, if there is **no** pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). If at least one pushed commit contains `[skip ci]`, the pipelines will not run.
 
- Finally, when you merge the PR, the pipelines triggered by changes to the target branch will run, even if some of the merged commits' messages or descriptions contain `[skip ci]` (or any of its variants).
+ Finally, after you merge the PR, Azure Pipelines will run the CI pipelines triggered by pushes to the target branch, if the merge commit's message or description doesn't contain `[skip ci]` (or any of its variants). 
 
 ### Protected branches
 
