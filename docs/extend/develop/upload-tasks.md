@@ -32,7 +32,7 @@ To upload tasks to project collection, you need prerequisites:
    ```
 - Permissions to update required project collection, PAT generated with scope **Environment (Read & Write)** to be able to upload tasks to the project collection.
 
-## Tfx-cli sign in with Personal access token
+## Tfx-cli sign in with personal access token
 
 > [!IMPORTANT]
 > You should create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with scope **Environment (Read & manage)**.
