@@ -24,7 +24,7 @@ With Azure Pipelines, you can publish your Python packages to Artifacts feeds, p
 - script: 'pip install twine'
 ```
 
-See [script shortcut](../yaml-schema.md#script) for more details.
+See [script shortcut](/azure/devops/pipelines/yaml-schema/steps-script) for more details.
 
 #### [Classic](#tab/classic/)
 

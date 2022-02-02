@@ -407,7 +407,7 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 ![Results List Showing a Tree Query](media/12.png)  
 
@@ -453,7 +453,7 @@ Use the direct links query to track dependencies across teams. The query also he
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 ![Direct Links Query Editor](media/18.png)  
 

@@ -33,16 +33,6 @@ In this tutorial you learn how to:
 > If there's a merge conflict between a commit you haven't [pushed](pushing.md) yet and a commit you're merging or pulling, [resolve those conflicts](merging.md) before you finish updating your code.
 
 
-<!--- 
-## Video Overview
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Pull/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
-
-
-
--->
-
-
 
 ## Download changes with fetch
 

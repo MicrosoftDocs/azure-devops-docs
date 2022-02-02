@@ -413,7 +413,7 @@ The following table describes fields associated with links and attachments. Most
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 ### Add custom link types or customize the links controls 
 

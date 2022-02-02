@@ -7,7 +7,9 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-* A GitHub account, where you can create a repository. If you don't have one, you can [create one for free](https://github.com).
+Make sure you have the following items:
+
+* A GitHub account where you can create a repository. If you don't have one, you can [create one for free](https://github.com).
 
 * An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md). (An Azure DevOps organization is different from your GitHub organization. You can give your DevOps organization and your GitHub organization the same name if you want alignment between them.)
 

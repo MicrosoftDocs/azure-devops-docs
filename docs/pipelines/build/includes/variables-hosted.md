@@ -485,7 +485,7 @@ Note: This variable yields a value that is invalid for build use in a build numb
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 
 <td>No</td>
@@ -497,7 +497,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -508,7 +508,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -519,7 +519,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -530,7 +530,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>

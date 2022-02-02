@@ -29,7 +29,7 @@ In this article you'll learn how to:
 > * Review which area paths are assigned to teams  
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 >[!div class="checklist"]    
 > * Set up a hierarchical set of teams and backlogs
 > * Define a single sprint cadence for all teams 
@@ -111,7 +111,7 @@ In this step, you want to move the areas paths associated with feature teams fro
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013  <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 | Flat area structure | Hierarchical area structure |
 |---------------------|-----------------------------|

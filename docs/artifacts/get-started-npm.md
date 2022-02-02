@@ -58,7 +58,7 @@ You can change these settings later by editing your feed's settings.
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-We recommend having two .npmrc files. The first one should be placed in the same directory as your package.json file. The second one should be placed in the **$home** directory (Linux/MacOS) or **$env.HOME** (Windows) to store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
+We recommend having two .npmrc files. The first one should be placed in the same directory as your package.json file. The second one should be placed in the **$home** directory (Linux/macOS) or **$env.HOME** (Windows) to store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
@@ -85,9 +85,9 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 }
 ```
 
-#### [Linux/MacOS](#tab/Linux/)
+#### [Linux/macOS](#tab/Linux/)
 
-`vsts-npm-auth` is not supported in Linux/MacOS. In order to authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
+`vsts-npm-auth` is not supported in Linux/macOS. In order to authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
 
 1. Copy the following code snippet to your .npmrc file.
 

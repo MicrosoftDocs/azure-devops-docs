@@ -47,7 +47,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Control                  | Function                      |
