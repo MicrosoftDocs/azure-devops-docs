@@ -37,12 +37,12 @@ To upload tasks to project collection, you need prerequisites:
 > [!IMPORTANT]
 > You should create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with scope **Environment (Read & manage)**.
 
-To connect tfx-cli to project collection - you should specify the path to DefaultCollection as URL.
+To login - you should specify the path to project collection as URL. The default name of the project collection is `DefaultCollection`.
 
-For Azure DevOps Services, path to DefaultCollection would have the following format:
+For Azure DevOps Services, path to project collection would have the following format:
 `https://{Azure DevOps organization name}.visualstudio.com/DefaultCollection`
 
-For Azure DevOps Server default project collection URL will depend on the url where the server is located and its template will be:
+For Azure DevOps Server default project collection URL will depend on the domain where the server is located and its template will be:
 `http://{Azure DevOps Server domain}/DefaultCollection`
 
 Enter the following command and provide requested information:
@@ -50,6 +50,10 @@ Enter the following command and provide requested information:
 ```
 ~$ tfx login
 ```
+
+> [!TIP]
+> About other authorization type for tfx-cli, see [Authenticate in Cross-platform CLI for Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/auth/tfs-basic-auth?view=azure-devops) and 
+
 
 ## Uploading tasks to the project collection
 
