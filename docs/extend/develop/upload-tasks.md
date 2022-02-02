@@ -52,7 +52,7 @@ Enter the following command and provide requested information:
 ```
 
 > [!TIP]
-> About other authorization type for tfx-cli, see [Authenticate in Cross-platform CLI for Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/auth/tfs-basic-auth?view=azure-devops) and 
+> About other authorization type for tfx-cli, see [Authenticate in Cross-platform CLI for Azure DevOps](../../integrate/get-started/auth/tfs-basic-auth.md).
 
 
 ## Uploading tasks to the project collection
