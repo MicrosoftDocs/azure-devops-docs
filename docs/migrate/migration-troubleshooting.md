@@ -110,7 +110,7 @@ In order to continue, you need to [change your collection's collation](/sql/rela
     
 ## Resolve identity errors
 
-Identity errors aren't common when validating a collection, but when they do occur you need to fix them prior to migration to avoid undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while is was once allowed for some users to be members of a built-in valid users group, it isn't in the more recent versions. 
+Identity errors aren't common when validating a collection, but when they do occur you need to fix them prior to migration to avoid undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while it was once allowed for some users to be members of a built-in valid users group, it isn't in the more recent versions. 
 
 The following sections provide guidance for resolving the most common identity errors.
 
@@ -340,7 +340,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 ## Resolve import errors
 
-Failures that occur during import fall into one of two categories, v[erification failure](#verification-failures) and [import failure](#import-failures).  
+Failures that occur during import fall into one of two categories, [verification failure](#verification-failures) and [import failure](#import-failures).  
 
 ### Verification failures
 
