@@ -128,7 +128,6 @@ You can also tell Azure Pipelines to skip running a pipeline that a push would n
 
 Pull request (PR) triggers cause a pipeline to run whenever you open a pull request, or when you push changes to it. In Azure Repos Git, this functionality is implemented using branch policies. To enable PR validation, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
-
 If you have an open PR and you push changes to its source branch, multiple pipelines may run:
  - The pipelines specified by the target branch's build validation policy will run on the _merge commit_ (the merged code between the source and target branches of the pull request), regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
  - The pipelines triggered by changes to the PR's source branch, if there is **no** pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). If at least one pushed commit contains `[skip ci]`, the pipelines will not run.
