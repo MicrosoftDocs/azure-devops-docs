@@ -95,7 +95,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: YAML schema
-            url: yaml-schema.md
+            url: /azure/devops/pipelines/yaml-schema/
           - text: Predefined variables
             url: ./build/variables.md
           - text: Release & artifacts variables

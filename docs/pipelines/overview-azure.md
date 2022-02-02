@@ -305,7 +305,7 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column span="3":::
       Use publish profile to deploy Azure WebApps for Windows from the Deployment Center. To learn more, see the following articles:   
      - [Deploy an Azure Web App](./targets/webapp.md)
-     - [Deploy an Azure Web App Container](targets/webapp-on-container-linux.md)
+     - [Deploy an Azure Web App Container](apps/cd/deploy-docker-webapp.md)
      - [Deploy to Azure App Service using Visual Studio Code](targets/deploy-to-azure-vscode.md)
      - [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md)
      - [Azure App Service Manage task](tasks/deploy/azure-app-service-manage.md)

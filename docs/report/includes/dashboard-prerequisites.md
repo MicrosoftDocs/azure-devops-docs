@@ -44,3 +44,7 @@ ms.topic: include
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).    
 
 ::: moniker-end
+
+
+> [!NOTE]
+> Data displayed within a chart or widget is subject to permissions granted to the signed in user. To learn more, see [FAQs on Azure DevOps dashboards, charts, and reports, Access and permissions](../dashboards/faqs.yml).

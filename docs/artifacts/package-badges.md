@@ -72,7 +72,7 @@ You can create a badge for any package in your feed with package-sharing enabled
 
     :::image type="content" source="media/package-badge-setup.png" alt-text="package badge configuration":::
 
-1. You can now share your package by using the markdown snippet or the direct image link.
+1. You can now share your package by using the Markdown snippet or the direct image link.
 
 ## Related articles
 

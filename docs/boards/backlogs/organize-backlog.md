@@ -31,7 +31,7 @@ In this article you'll learn how to:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="<= tfs-2017"
 
 > [!div class="checklist"] 
 > * Open your product backlog or portfolio backlog  

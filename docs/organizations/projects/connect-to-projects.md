@@ -53,7 +53,7 @@ A project defines a process and data storage in which you manage your software p
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
    ::: moniker-end
-   ::: moniker range=">= tfs-2013 < azure-devops-2019" 
+   ::: moniker range="< azure-devops-2019"  
    <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
@@ -86,7 +86,7 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker-end
 
-    ::: moniker range=">= tfs-2013 <= tfs-2015"
+    ::: moniker range="<= tfs-2015"
 
     Choose your project or team from the set of available links, or choose **Browse** to access all projects and teams.
 
@@ -100,7 +100,7 @@ To learn more about each page and the tasks you can do, see [Web portal navigati
 
 ### Sign in with different credentials
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. Open Windows Security from the context menu associated with your name.
 
@@ -274,7 +274,7 @@ To connect to a project, you need your user account added to the project. The [o
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Azure DevOps Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 

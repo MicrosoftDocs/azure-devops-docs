@@ -12,7 +12,7 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 > [!TIP]  
 > With **witadmin**, you can [import and export definition files](../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Other tools you can use include the Process Editor (requires that you have installed a version of Visual Studio). Install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 

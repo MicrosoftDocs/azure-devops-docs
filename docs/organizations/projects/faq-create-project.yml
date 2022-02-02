@@ -34,7 +34,7 @@ sections:
           ::: moniker-end
           
           ::: moniker range=">= tfs-2013 <= tfs-2017"
-          If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md), the [Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md), and gain [Full Control permissions](../security/set-sharepoint-permissions.md) on the server that hosts SharePoint Products.   
+          If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md), the [Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md), and gain [Full Control permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) on the server that hosts SharePoint Products.   
           ::: moniker-end
           
           ::: moniker range=">= tfs-2013 <= tfs-2018"

@@ -22,6 +22,7 @@ Learn why you may not be receiving an expected subscription or notification emai
 
 If you're not receiving an expected notification email, it could be for one of the following reasons.
 
+* The email server is down, unreachable, or rejected authenticated.
 * The email was delivered to an unchecked folder
 * The subscription is disabled or opted-out
 * The event doesn't match the specified subscription filter conditions

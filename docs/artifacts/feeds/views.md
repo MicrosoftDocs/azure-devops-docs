@@ -18,7 +18,7 @@ By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**,
 
 ## Promote packages
 
-To promote a package to a view
+With Azure Artifacts, you can promote packages to a specific to only share a subset of packages with your customers. Note that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view as follows.
 
 1. Select **Artifacts**.
 
@@ -35,11 +35,11 @@ To promote a package to a view
     :::image type="content" source="media/release-views-promote-choice.png" alt-text="Screenshot showing the promote package dialog box.":::
 
 > [!NOTE]
-> Package demotion is not supported. If you want this feature to be added to future releases, please feel free to *Suggest a feature* on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+> Package demotion is not supported. If you want this feature to be added to a future release, please feel free to **Suggest a feature** on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Promote packages using the REST API
 
-In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API. Note that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view. 
+In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API.
 
 - **NuGet**:
 
@@ -49,13 +49,13 @@ In addition to using the Azure Artifacts user interface, you can also promote pa
     
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
-- **Npm**:
+- **npm**:
   
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation#jsonpatchoperation) to construct the body of your request. See [Npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation#jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
 - **Python**:
    
@@ -96,7 +96,6 @@ You can create your own views or rename and delete existing ones from your feed'
 1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
 
 1. Select **Save** when you are done.
-
 
 ## Related articles
 

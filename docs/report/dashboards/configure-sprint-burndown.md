@@ -535,7 +535,7 @@ To view a past sprint and its burndown chart, select the sprint listed under the
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 To view a past sprint and its burndown chart, select the sprint listed under the **Past** section of the sidebar.  
 ![Past sprints provide historical record, 2015 and earlier](media/burndown/ALM_DS_PastSprints.png)  

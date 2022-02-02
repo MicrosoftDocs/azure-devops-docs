@@ -1,6 +1,6 @@
 ---
 title: Manage link types
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps   
 description: Customize the link types to track related work, dependencies, and changes made over time  
 ms.technology: devops-agile
 ms.custom: witadmin
@@ -8,8 +8,8 @@ ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Manage link types

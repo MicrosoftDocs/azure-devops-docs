@@ -15,7 +15,7 @@ ms.date: 04/14/2021
 # Set TFVC repository permissions 
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
-
+[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
 
 You grant or restrict access to a TFVC repository to lock down who can contribute to your source code. There is only one TFVC repository per project.   
 

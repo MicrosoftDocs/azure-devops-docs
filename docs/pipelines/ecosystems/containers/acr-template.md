@@ -5,11 +5,12 @@ ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 05/20/2021
+ms.date: 01/31/2022
 monikerRange: 'azure-devops'
 ---
-
 # Build and push Docker images to Azure Container Registry
+
+[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
 
 In this step-by-step tutorial, you'll learn how to set up a continuous integration pipeline to build a containerized application. New pull requests trigger the pipeline to build and publish Docker images to Azure Container Registry.
 
@@ -90,7 +91,7 @@ You can also use the Azure portal web UI to create your Azure Container Registry
 
 ## How we build your pipeline
 
-The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](../../tasks/build/docker.md?view=azure-devops) `Docker@2` to build and push your Docker image to the container registry.
+The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](../../tasks/build/docker.md?view=azure-devops&preserve-view=true) `Docker@2` to build and push your Docker image to the container registry.
 
 ```YAML
 - stage: Build

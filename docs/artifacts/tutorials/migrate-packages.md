@@ -38,7 +38,7 @@ In this article, you'll learn how to:
 Install-Module -Name AzureArtifactsPackageMigration -Scope CurrentUser -Force
 Import-Module -Name AzureArtifactsPackageMigration
 ```
-### [Linux/MacOS](#tab/Linux/)
+### [Linux/macOS](#tab/Linux/)
 
 1. Open a terminal and run the `pwsh` command to start PowerShell. 
  

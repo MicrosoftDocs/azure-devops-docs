@@ -16,7 +16,7 @@ In this sample, use the Microsoft Azure DevOps CLI (azure-devops extension) to c
 
 This script demonstrates three operations:
 
-* Defining a [Azure Pipeline](../../index.yml) using [YAML](../../yaml-schema.md) files
+* Defining a [Azure Pipeline](../../index.yml) using [YAML](/azure/devops/pipelines/yaml-schema/) files
 * Creating a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in a pipeline
 * Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run's processing and output
 
