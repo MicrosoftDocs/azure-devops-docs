@@ -90,7 +90,7 @@ You also gain access to a [rich set of customization capabilities](../reference/
  
 ## DevOps: Build - Test - Release
 
-Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily provision test environments. Track when the quality is sufficient to release to the customer.  
+Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check-in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily provision test environments. Track when the quality is sufficient to release to the customer.  
 
 [![Build your software](media/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](media/overview/ov-devops-test.png)](../pipelines/index.yml)[![Create a release](media/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
 
