@@ -4,7 +4,7 @@ description: Learn about feed views and why it's useful for package release
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/23/2020
+ms.date: 02/02/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -12,32 +12,20 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-Feed views enable you to share subsets of package-versions with your consumers. A common use of feed views is to share package versions that have been tested and validated but hold back on packages that are still under development and/or didn't meet your quality bar.
+Feed views enable developers to share a subset of package-versions with their consumers. A common use of feed views is to share package versions that have been tested and validated but hold back on packages that are still under development and/or didn't meet a certain quality bar.
 
 ## Feed views and upstream sources
 
-Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages. 
+Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed, and all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
 
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed, and all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
-
-<a name="local"></a>
-
-### The `@local` view
+## Default view
 
 All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. `@local` is the default view that's commonly used in [upstream sources](upstream-sources.md).
 
-The `@local` view contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources). See [package graphs](package-graph.md) to learn how available packages are constructed.
+The `@local` view contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources).
 
-<a name="default-view"></a>
-
-### Default view
-
-Your Artifacts feed must have a default view. When the feed is created, your default view is `@local`. This view is used when other feeds add your feed as an [upstream source](upstream-sources.md). To learn more about why upstream sources require the use of views, check out the [package graphs](package-graph.md) article.
-
-<a name="read-only"></a>
-
-> [!NOTE]
-> Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources.
+Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources. See [package graphs](package-graph.md) to learn how available packages are constructed.
 
 ## Using feed views to release packages
 
