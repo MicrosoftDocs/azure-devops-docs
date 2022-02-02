@@ -97,7 +97,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
    > [!TIP]
    > If you encounter a "Permission denied" error with a *.zip* file, you may have tried to run the command from a folder that doesn't contain a Python app. The `az webapp up` command then tries to create a Windows app service plan, and fails. 
 
-1. If your app uses a custom startup command, set the [az webapp config](/cli/azure/webapp/config#az_webapp_config_set) property. For example, the *python-sample-vscode-flask-tutorial* app contains a file named *startup.txt* that contains its specific startup command, so you set the `az webapp config` property to `startup.txt`.
+4. If your app uses a custom startup command, set the [az webapp config](/cli/azure/webapp/config#az_webapp_config_set) property. For example, the *python-sample-vscode-flask-tutorial* app contains a file named *startup.txt* that contains its specific startup command, so you set the `az webapp config` property to `startup.txt`.
 
    1. From the first line of output from the previous `az webapp up` command, copy the name of your resource group, which is similar to **\<your-name>\_rg\_Linux\_\<your-region>**.
 
