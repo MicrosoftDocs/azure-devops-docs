@@ -125,7 +125,7 @@ Typically, you should install Active Directory prior to installing Azure DevOps 
 When you add accounts of users directly to a security group, they are automatically added to one of the valid user groups.
 
 ::: moniker range="azure-devops"
-- Project Collection Valid Users: All members added to an organization-level groups.
+- Project Collection Valid Users: All members added to an organization-level group.
 - Project Valid Users: All members added to a project-level group.
 ::: moniker-end
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
@@ -331,7 +331,7 @@ With Role-based permissions, user accounts are assigned to a role, with each rol
 
 - [Artifact or package feed security roles](../../artifacts/feeds/feed-permissions.md): Roles support various permission levels to edit and manage package feeds.   
 - [Marketplace extension Manager role](../../marketplace/how-to/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
-- [Pipeline security roles](about-security-roles.md): Several role are used to manage library resources, project-level and collection-level pipeline resources. 
+- [Pipeline security roles](about-security-roles.md): Several roles are used to manage library resources, project-level and collection-level pipeline resources. 
 - [Team administrator role](../settings/manage-teams.md)  Team administrators are able to manage all team tools.   
 
 	> [!NOTE]
