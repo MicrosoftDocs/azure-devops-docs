@@ -15,7 +15,7 @@ Learn how to upload tasks to organization for custom tasks or in-the-box tasks i
 For example, this guideline can help to update in-the-box tasks on Azure DevOps Server.
 
 > [!IMPORTANT]
->  For the case of in-the-box tasks being uploaded to on-prem instance, there could be some task capabilities not supported due to the old agent version/lack of support on Azure DevOps server side.
+>  For the case of in-the-box tasks being uploaded to on-prem instance, there could be some task capabilities not supported due to the old agent version/lack of support on Azure DevOps Server side.
 
 For more information about **tfx-cli**, see the [Node CLI for Azure DevOps on GitHub](https://github.com/Microsoft/tfs-cli).
 
@@ -34,16 +34,18 @@ To upload tasks to project collection, you need prerequisites:
 
 ## Tfx-cli sign in with personal access token
 
+You need to login to Azure DevOps with tfx-cli - to be able to upload pipeline tasks to the project collection.
+
 > [!IMPORTANT]
-> You should create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with scope **Environment (Read & manage)**.
+> A personal access token is required by default for authentication to project collection in Azure DevOps. You need to create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with scope **Environment (Read & manage)**.
 
 To login - you should specify the path to project collection as URL. The default name of the project collection is `DefaultCollection`.
 
 For Azure DevOps Services, path to project collection would have the following format:
 `https://{Azure DevOps organization name}.visualstudio.com/DefaultCollection`
 
-For Azure DevOps Server default project collection URL will depend on the domain where the server is located and its template will be:
-`http://{Azure DevOps Server domain}/DefaultCollection`
+For Azure DevOps Server default project collection URL will depend on the url where the server is located and its template will be:
+`http://{Azure DevOps Server url}/DefaultCollection`
 
 Enter the following command and provide requested information:
 
@@ -52,7 +54,7 @@ Enter the following command and provide requested information:
 ```
 
 > [!TIP]
-> About other authorization type for tfx-cli, see [Authenticate in Cross-platform CLI for Azure DevOps](../../integrate/get-started/auth/tfs-basic-auth.md).
+> You can use other ways to authorize with tfx-cli - see [Authenticate in Cross-platform CLI for Azure DevOps](../../integrate/get-started/auth/tfs-basic-auth.md) for more details.
 
 
 ## Uploading tasks to the project collection
