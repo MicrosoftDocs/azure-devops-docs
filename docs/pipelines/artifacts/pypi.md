@@ -78,6 +78,8 @@ To use `twine` to publish your Python packages, you must first set up authentica
 
 ## Publish Python packages to Azure Artifacts feeds
 
+# [YAML](#tab/yaml)
+
 ```YAML
 - script: |
      pip install wheel
@@ -95,8 +97,17 @@ To use `twine` to publish your Python packages, you must first set up authentica
      python -m twine upload -r feedName --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
-> [!WARNING]
-> Make sure you are not checking your credentials into source control.
+# [Classic](#tab/classic)
+
+- **Twine Authenticate**:
+
+    :::image type="content" source="media/twine-authenticate.png" alt-text="Screenshot of the twine authenticate task to publish python packages.":::
+
+- **PowerShell**:
+
+    :::image type="content" source="media/powershell-pipelines.png" alt-text="Screenshot of the PowerShell task to publish python packages.":::
+
+* * *
 
 ## Related articles
 
