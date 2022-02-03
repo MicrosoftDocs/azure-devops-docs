@@ -39,6 +39,9 @@ You need to login to Azure DevOps with tfx-cli - to be able to upload pipeline t
 > [!IMPORTANT]
 > A personal access token is required by default for authentication to project collection in Azure DevOps. You need to create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with scope **Environment (Read & manage)**.
 
+> [!TIP]
+> You can use other ways to authorize with tfx-cli - see [Authenticate in Cross-platform CLI for Azure DevOps](../../integrate/get-started/auth/tfs-basic-auth.md) for more details.
+
 To login - you should specify the path to project collection as URL. The default name of the project collection is `DefaultCollection`.
 
 For Azure DevOps Services, path to project collection would have the following format:
@@ -52,9 +55,6 @@ Enter the following command and provide requested information:
 ```
 ~$ tfx login
 ```
-
-> [!TIP]
-> You can use other ways to authorize with tfx-cli - see [Authenticate in Cross-platform CLI for Azure DevOps](../../integrate/get-started/auth/tfs-basic-auth.md) for more details.
 
 
 ## Uploading tasks to the project collection
