@@ -4,7 +4,7 @@ ms.custom: seodec18, devx-track-python
 description: How to publish Python packages with Azure Pipelines
 services: vsts
 ms.topic: conceptual
-ms.date: 10/25/2021
+ms.date: 02/03/2022
 monikerRange: azure-devops
 ---
 
@@ -40,6 +40,8 @@ See [script shortcut](/azure/devops/pipelines/yaml-schema/steps-script) for more
     pip install twine
     ```
 
+:::image type="content" source="media/powershell-pipelines.png" alt-text="Screenshot of the PowerShell task in Azure Pipelines":::
+
 * * *
 
 ## Authenticate with Azure Artifacts
@@ -65,6 +67,8 @@ To use `twine` to publish your Python packages, you must first set up authentica
 1. Select **Add** to add the task to your pipeline.
 
 1. Select your feed from the **My feed** dropdown menu or select a **Feed from external organizations** if you want to authenticate with a feed outside your organization.
+
+:::image type="content" source="media/twine-authenticate.png" alt-text="Screenshot of the Python twine task in Azure Pipelines":::
 
 * * *
 
