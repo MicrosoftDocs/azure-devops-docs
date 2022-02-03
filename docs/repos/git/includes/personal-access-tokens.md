@@ -102,11 +102,11 @@ ms.topic: include
 
 Users receive two notifications during the lifetime of a PAT - one upon creation and the other seven days before the expiration.
 
-After you create a PAT, you receive a notification similar to the following example.
+After you create a PAT, you receive a notification similar to the following example. This notification confirms that your PAT was added to your organization.
 
    :::image type="content" source="/azure/devops/organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="PAT created notification":::
 
-Seven days before your PAT expires, you receive a notification similar to the following example.
+The following image shows an example of the seven-day notification before your PAT expires.
 
    :::image type="content" source="/azure/devops/organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-expiration.png" alt-text="PAT near expiration notification":::
 
@@ -119,7 +119,8 @@ If you receive an unexpected PAT notification, an administrator or tool might ha
 - When you or an administrator sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
-If you believe that a PAT exists in error, we suggest that you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
+> [!WARNING]
+> If you believe that a PAT exists in error, we suggest that you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 
@@ -127,8 +128,8 @@ Your token is your identity and represents you when it's used. Treat and use a P
 
 Git interactions require a username, which can be anything except the empty string.
 The PAT is used as the password.
-Additionally, you have to Base64-encode the username and PAT to use it with HTTP basic authentication.
-On Linux or macOS, in Bash, you can enter:
+Also, you have to Base64-encode the username and PAT to use it with HTTP basic authentication.
+On Linux or macOS, in Bash, you can enter the following code.
 
 ```bash
 MY_PAT=yourPAT # replace "yourPAT" with your actual PAT
@@ -136,11 +137,13 @@ B64_PAT=$(printf "%s"":$MY_PAT" | base64)
 git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
 ```
 
-> [!TIP]
-> For existing repositories, if you've already added the origin using the username, run the following command first.
-> ``git remote remove origin``
-> Otherwise, run the following command:
-> ``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
+For existing repositories, if you already added the origin using the username, run the following command first.
+
+``git remote remove origin``
+
+Otherwise, run the following command.
+
+``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
 
 On Windows, you can do something similar in PowerShell:
 
@@ -150,24 +153,22 @@ $B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$MyPa
 git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
-To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential manager:
-
-- [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
+To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win)).
 
 ### Use a PAT in your code
 
-See the following sample that gets a list of builds using curl.
+The following sample gets a list of builds using curl.
 
 ```curl
 
 curl -u :{PAT} https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
 
-If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:
+If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format.
 
 `Authorization: Basic BASE64_USERNAME_PAT_STRING`
 
-Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
+Here's C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 
 ```cs
 public static async void GetBuilds()
@@ -242,7 +243,12 @@ When your code is working, it's a good time to switch from basic auth to <a href
 
 If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](../../../integrate/get-started/authentication/iis-basic-auth.md).
 
-For more examples of how to use PATs, see [Git credential managers](../set-up-credential-managers.md), [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request), [NuGet on a Mac](../../../artifacts/nuget/consume.md#mac-os), [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](../../../cli/index.md).
+For more examples of how to use PATs, see the following articles:
+- [Git credential managers](../set-up-credential-managers.md)
+- [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request)
+- [NuGet on a Mac](../../../artifacts/nuget/consume.md#mac-os)
+- [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
+- [Get started with Azure DevOps CLI](../../../cli/index.md).
 
 ::: moniker range="azure-devops"
 
