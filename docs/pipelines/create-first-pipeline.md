@@ -1325,7 +1325,7 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/).
 
 <!-- ENDSECTION -->
 
