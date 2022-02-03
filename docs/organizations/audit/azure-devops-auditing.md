@@ -5,7 +5,7 @@ description: Get started accessing, reviewing, exporting, and filtering the Azur
 ms.technology: devops-audit
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
-author: roferg
+author: chcomley
 ms.topic: quickstart
 monikerRange: 'azure-devops'
 ms.date: 03/30/2021
