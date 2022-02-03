@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Best practices when integrating with the REST APIs for Azure DevOps Services
 ms.technology: devops-ecosystem
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 07/15/2020

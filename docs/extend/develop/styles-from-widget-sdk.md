@@ -14,10 +14,10 @@ ms.date: 08/04/2016
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
-
 We recommend you use the basic styles provided via the Widget SDK. Using these styles helps you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
 To use these styles, add the below line inside the `VSS.require` block in the JavaScript code for your widget.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ```javascript
 	WidgetHelpers.IncludeWidgetStyles();
