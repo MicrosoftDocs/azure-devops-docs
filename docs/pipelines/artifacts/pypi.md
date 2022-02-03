@@ -6,25 +6,27 @@ services: vsts
 ms.topic: conceptual
 ms.date: 02/03/2022
 monikerRange: azure-devops
+"recommendations": "true"
 ---
 
 # Publish Python packages with Azure Pipelines
 
-With Azure Pipelines, you can publish your Python packages to Artifacts feeds, public registries, and within your Pipelines. This article will show you how to: 
+Using Azure Pipelines, you can publish your Python packages to Azure Artifacts feeds, public registries, or as a pipeline artifacts. 
+
+This article will show you how to: 
 
 > [!div class="checklist"]  
-> * Install `twine` 
-> * Authenticate with your Azure Artifacts feed
-> * Publish Python packages to your feed
+> * Install `Twine` 
+> * Authenticate with your Azure Artifacts feeds
+> * Publish Python packages to an Azure Artifacts feed
 
-## Install twine 
+## Install twine
 
 #### [YAML](#tab/yaml/)
+
 ```yaml
 - script: 'pip install twine'
 ```
-
-See [script shortcut](/azure/devops/pipelines/yaml-schema/steps-script) for more details.
 
 #### [Classic](#tab/classic/)
 
@@ -46,7 +48,7 @@ See [script shortcut](/azure/devops/pipelines/yaml-schema/steps-script) for more
 
 ## Authenticate with Azure Artifacts
 
-To use `twine` to publish your Python packages, you must first set up authentication. The [TwineAuthenticate](../tasks/package/twine-authenticate.md) task stores your  credentials in a `PYPIRC_PATH` environment variable. `twine` will reference this variable to publish your packages from your pipeline.
+To use `twine` to publish your Python packages, you must first set up authentication to you Azure Artifacts feed. The [TwineAuthenticate](../tasks/package/twine-authenticate.md) task stores your  credentials in a `PYPIRC_PATH` environment variable. `twine` will reference this variable to publish your packages from your pipeline.
 
 # [YAML](#tab/yaml)
 
@@ -74,7 +76,7 @@ To use `twine` to publish your Python packages, you must first set up authentica
 
 > [!TIP]
 > The credentials stored in the `PYPIRC_PATH` environment variable supersede those in your `.ini` and `.conf` files.  
-> If you add multiple TwineAuthenticate tasks at different stages in your pipeline, each additional task execution will extend (not override) the existing `PYPIRC_PATH` environment variable.
+> If you add multiple TwineAuthenticate tasks at different stages in your pipeline, each additional task execution will extend **(not override)** the existing `PYPIRC_PATH` environment variable.
 
 ## Publish Python packages to Azure Artifacts feeds
 
