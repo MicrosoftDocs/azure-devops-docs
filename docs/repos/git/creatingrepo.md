@@ -16,13 +16,13 @@ monikerRange: '<= azure-devops'
 
 A Git repository, or repo, tracks changes to files within a folder. You can create any number of local Git repos on your computer, each stored in its own folder. Each Git repo that you create is independent of other Git repos, so changes you make in one repo won't affect the others.
 
-A Git repo stores every version of every file in the repo, unless you tell Git to ignore a file. Git saves file versions efficiently, so storing a large number of versions doesn't necessarily require a lot of disk space. Git supports comparing file versions, merging different versions, switching between versions, and much more. You can use Git to manage your source code,  regardless of whether your code files are inside or outside of a Visual Studio solution. To share your work, you can connect your local Git repo to a remote Git repo that others can access. This article provides procedures for the following tasks:
+A Git repo stores every version of every file in the repo, unless you tell Git to ignore a file. Git saves file versions efficiently, so storing a large number of versions doesn't necessarily require a lot of disk space. Git supports comparing file versions, merging different versions, switching between versions, and much more. You can use Git to manage your source code,  regardless of whether your code files are inside or outside of a Visual Studio solution. To share your work, you can connect your local Git repo to a remote Git repo that others can access. The remote repo can be an **Azure Repos** Git repo, a **GitHub** repo, or other hosted Git repo. This article provides procedures for the following tasks:
 
 > [!div class="checklist"]
 > * Create a local Git repo from a new solution
 > * Create a local Git repo from an existing solution
 > * Create a local Git repo in an empty folder
-> * Connect a local Git repo to an **Azure Repos** Git repo
+> * Connect a local Git repo to an **Azure Repos** Git repo or a **GitHub** repo
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
