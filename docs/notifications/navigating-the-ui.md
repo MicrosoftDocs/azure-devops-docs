@@ -14,7 +14,7 @@ ms.date: 12/07/2020
 
 # Access notification settings
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
 Learn about navigating the notifications user interface.
 

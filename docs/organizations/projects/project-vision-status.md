@@ -13,7 +13,7 @@ ms.date: 08/24/2021
 
 # Share your project vision, view project activity
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range="> tfs-2017"
 Each project provides a **Summary** or home page to share information and showcase the latest project activity. Use this page to perform one or more of the following tasks. 
