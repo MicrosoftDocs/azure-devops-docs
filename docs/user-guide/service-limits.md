@@ -12,6 +12,8 @@ monikerRange: 'azure-devops'
 
 # Service limits and rate limits
 
+[!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
+
 Learn which service limits and rate limits that all projects and organizations are subject to.
 
 ## Work items

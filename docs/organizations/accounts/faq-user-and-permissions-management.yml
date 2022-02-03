@@ -14,7 +14,7 @@ metadata:
     
 title: User and permissions management FAQs
 summary: |
-  [!INCLUDE [temp](../../includes/version-all.md)]
+  [!INCLUDE [version-all](../../includes/version-all.md)]
   
   Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
   - [General permissions](#general-permissions)
