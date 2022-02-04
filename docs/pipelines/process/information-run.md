@@ -30,6 +30,6 @@ A pipeline may run in response to:
 
 Here's an example of when a pipeline information run is created. Suppose you have a repo in your local BitBucket Server and a pipeline that builds the code in that repo. Assume you scheduled your pipeline to run every day, at 03:00. Now, imagine it's 03:00 and your BitBucket Server is experiencing an outage. Azure DevOps reaches out to your local BitBucket Server to fetch the pipeline's YAML code, but it can't, because of the outage. At this moment, the system creates a pipeline information run, similar to the one shown in the previous screenshot.
 
-# Next Steps
+## Next Steps
 
 Learn more about [Triggers](../build/triggers.md) and building your [GitHub](../repos/github.md) or [BitBucket](../repos/bitbucket.md) repositories.
