@@ -48,7 +48,7 @@ Use this procedure when you work from the Team Explorer plug-in for Visual Studi
 
 1. Create or open a [flat-list query](../../boards/queries/using-queries.md) that contains the work items that you want to include in the report.  
 	> [!NOTE]   
-	> To view queries in Visual Studio 2019 and later versions, you must choose the **Tools** option **Legacy experience (compatibility mode)** as described in [Set the Work Items experience in Visual Studio 2019](../boards/work-items/set-work-item-experience-vs.md).
+	> To view queries in Visual Studio 2019 and later versions, you must choose the **Tools** option **Legacy experience (compatibility mode)** as described in [Set the Work Items experience in Visual Studio 2019](../../boards/work-items/set-work-item-experience-vs.md).
 
    Choose the fields you want to base reports on and include them in the filter criteria or as a column option. For non-reportable fields, see [Q: Which fields are non-reportable](#which_fields_are_non_reportable)?
 
