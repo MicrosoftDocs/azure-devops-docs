@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley
 author: chcomley
-ms.date: 06/08/2021
+ms.date: 02/03/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -184,3 +184,10 @@ If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `
 Doing so allows you to approximate how quickly you're approaching the delay threshold.
 
 Your client can intelligently react by spreading its requests out over time.
+
+## Related articles
+
+- [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md)
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md)
+- [Configure and customize Azure Boards](../../boards/configure-customize.md)
+- [Usage monitoring](../../organizations/accounts/usage-monitoring.md)
