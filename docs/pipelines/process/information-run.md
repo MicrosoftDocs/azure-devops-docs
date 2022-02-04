@@ -21,7 +21,7 @@ Retrieving a pipeline's YAML code can fail due to:
 - Repository provider experiencing an outage
 - Request throttling
 - Authentication issues
-- The `.yml` file missing
+- Unable to retrieve the `.yml` file
 
 A pipeline may run in response to:
 - Pushes to branches in its `trigger` branch list
