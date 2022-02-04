@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2021
+ms.date: 02/03/2022
 ---
 
 # Define area paths and assign to a team
@@ -417,7 +417,10 @@ All work items that are assigned to a team area path appear on the backlogs and 
 
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas. 
 
-::: moniker-end  
+::: moniker-end
+  
+> [!NOTE]  
+> Teams can be assigned a maximum of 300 **Area Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
 
 The default area path determines the default area path assigned to work items that are created from the team context.  
 
