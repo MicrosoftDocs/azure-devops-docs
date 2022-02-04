@@ -69,10 +69,10 @@ To allow traffic from Azure DevOps to reach your Bitbucket Server, add the IP ad
 
 Allow Azure Pipelines to attempt accessing the Git server in the **Other Git** service connection.
 
-## Pipeline information runs
-[!INCLUDE [header](../includes/information-run-include.md)]
+## Information pipeline runs
+[!INCLUDE [information-runs](../includes/information-run-include.md)]
 
-Learn more about [pipeline information runs](../process/information-run.md).
+Learn more about [information pipeline runs](../process/information-run.md).
 
 ## FAQ
 
