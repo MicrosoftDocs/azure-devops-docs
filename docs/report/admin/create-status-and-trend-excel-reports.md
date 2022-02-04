@@ -112,7 +112,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 ### Q: How do I refresh the report to show the most recent data?
 
-   **A:** At any time, you can choose **Refresh** on the **Data** tab within Excel to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](https://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
+   **A:** At any time, you can choose **Refresh** on the **Data** tab within Excel to update the data for the PivotTables in your workbook. To learn more, see [Refresh PivotTable data](https://support.microsoft.com/office/refresh-pivottable-data-6d24cece-a038-468a-8176-8b6568ca9be2?ocmsassetid=ha102840043&ctt=1&correlationid=3703ddd7-cb0b-4f36-90ed-3574726e8537).
 
 <!-- ENDSECTION -->
 

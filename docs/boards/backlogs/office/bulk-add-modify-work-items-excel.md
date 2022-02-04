@@ -150,7 +150,7 @@ Here's some more guidance:
 - Use an input list, tree list: To complete top down planning and publish parent-child linked work items  
 - Use a query list, flat list: To create an Excel report based on the query of work items  
 	> [!NOTE]
-	To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](../../../report/admin/create-status-and-trend-excel-reports.md).
+	> To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](../../../report/admin/create-status-and-trend-excel-reports.md).
 - Use a query list, tree list: To view and modify the hierarchy and parent-child link relationships of many existing work items. 
 
  

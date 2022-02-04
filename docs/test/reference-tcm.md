@@ -168,7 +168,7 @@ All the test-related measures present in the Analysis Services cube are shown be
 
 Description for each of above measures can be found here: [Analyze and report on test results using the test perspective](../report/sql-reports/perspective-test-analyze-report-test-results.md#measures)
 
-A list of all the perspectives and measure groups present in Team Foundation Server can be found here:[Perspectives and measure groups](../report/sql-reports/perspective-measure-groups-cube.md)
+A list of all the perspectives and measure groups present in Team Foundation Server can be found here: [Perspectives and measure groups](../report/sql-reports/perspective-measure-groups-cube.md)
 
 ## What are the different Test-related dimensions in the Analysis Services cube that I can use to create my custom test reports?
 
