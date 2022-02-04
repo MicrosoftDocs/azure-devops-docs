@@ -7,7 +7,7 @@ ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/15/2021
+ms.date: 02/03/2022
 ---
 
 # Reporting Services reports
@@ -17,10 +17,7 @@ ms.date: 10/15/2021
 
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
 Azure DevOps Server 2019 and 2020 versions support both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). Azure DevOps Server 2020 is the last version to support both. To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
-
-::: moniker-end
 
 > [!IMPORTANT]  
 > Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises Azure DevOps Server versions. If you don't have a reporting site and want to add it, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).  
@@ -28,21 +25,10 @@ Azure DevOps Server 2019 and 2020 versions support both the SQL Server Reporting
 > For information on what is supported for Azure DevOps Services, see [Dashboards and reports overview](../dashboards/overview.md). 
 
 
-::: moniker range="<= tfs-2018"
-
-To learn more about the future of reporting for TFS, read [Reporting roadmap](../powerbi/reporting-roadmap.md).
-
-::: moniker-end
 
 You can analyze the progress and quality of your project by using the reports in SQL Server Reporting Services. These reports aggregate metrics from work items, version control, test results, and builds. These reports answer questions about the actual state of your project.  
   
 Most of these reports provide filters that you can use to specify contents to include in the report. Filters include time period, iteration and area paths, work item types, and work item states. The questions that they answer relate to all types of work items such as user stories, test cases, tasks, and bugs.  
-
-::: moniker range="<= tfs-2018"
-
-To learn more about the future of reporting for TFS, read [Reporting roadmap](../powerbi/reporting-roadmap.md).
-
-::: moniker-end
 
   
  ## Prerequisites

@@ -7,7 +7,6 @@ ms.topic: reference
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
 ms.date: 10/15/2021
 ---
 
@@ -57,7 +56,7 @@ By using PivotChart reports in Excel, you can display the build status over time
   
 1.  In Excel, connect to the Analysis Services cube for Azure DevOps Server, and insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../admin/create-status-and-trend-excel-reports.md).  
   
 2.  Open the context menu for the chart and then choose **Change Chart Type**, **Area**, **Stacked Column**.  
   

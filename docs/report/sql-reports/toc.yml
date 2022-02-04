@@ -1,7 +1,7 @@
 - name: Reporting Services Reports
   href: reporting-services-reports.md
 - name: Create status and trend reports from a work item query
-  href: ../create-status-and-trend-excel-reports.md
+  href: ../admin/create-status-and-trend-excel-reports.md
 - name: Grant permissions to view or create reports
   href: ../admin/grant-permissions-to-reports.md
 - name: Choose data source and authoring tool
