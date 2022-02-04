@@ -163,10 +163,14 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
+  - name: "2022"
+    items:
+    - name: January 2022
+      href: docswhatsnew/azure-devops-docs-whats-new.md
   - name: "2021"
     items:
     - name: December 2021
-      href: docswhatsnew/azure-devops-docs-whats-new.md
+      href: docswhatsnew/azure-devops-docs-2021-12.md
     - name: November 2021
       href: docswhatsnew/azure-devops-docs-2021-11.md
     - name: October 2021
