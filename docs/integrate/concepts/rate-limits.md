@@ -8,7 +8,7 @@ ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB
 ms.author: chcomley
 author: chcomley
 ms.date: 02/03/2022
-monikerRange: '>= tfs-2018'
+monikerRange: 'azure-devops'
 ---
 
 <!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
