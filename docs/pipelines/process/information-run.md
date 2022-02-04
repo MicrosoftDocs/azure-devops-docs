@@ -17,6 +17,12 @@ monikerRange: 'azure-devops'
 
 The first step of running a YAML pipeline is to retrieve its source code. When this step fails, the system creates an information run. These runs are created only if the pipeline's code is in a GitHub or BitBucket repository.
 
+Retrieving a pipeline's YAML code can fail due to: 
+- Repository provider experiencing an outage
+- Request throttling
+- Authentication issues
+- The `.yml` file missing
+
 A pipeline may run in response to:
 - Pushes to branches in its `trigger` branch list
 - Creating or updating Pull Requests that target branches in its `pr` branch list
