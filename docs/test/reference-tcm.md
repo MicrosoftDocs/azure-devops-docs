@@ -35,11 +35,11 @@ You can view basic reporting information within Microsoft Test Manager:
 
 ## I would like to create reports in Excel using Work Item Queries, but I cannot do so for all the Test artifacts such as Test Suites, Test Runs, etc.? Why?
 
-[Creating Reports in Microsoft Excel by Using Work Item Queries](../report/create-status-and-trend-excel-reports.md?viewFallbackFrom=azure-devops)
+[Create reports in Microsoft Excel by using Work Item Queries](../report/admin/create-status-and-trend-excel-reports.md?viewFallbackFrom=azure-devops)
 
 You can use the above method to query for any TFS "Work Items". So, you should be able to create a report for "Test Case", "Bug", "Task" work items.
 
-However, all the other Test artifacts, such as Test Plan, Test Settings, Test Configurations, Test Suites, Test Points, etc., are not "work items". Hence, you cannot use the work item queries for them.
+However, all the other test artifacts, such as test configurations, test points, or test runs, etc., are not "work items". Hence, you cannot use the work item queries for them.
 
 ![clip_image003](media/tcm-reporting/tcm-03.png)
 
