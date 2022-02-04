@@ -18,7 +18,6 @@ You can recognize an information pipeline run by the following attributes:
 - Duration is `< 1s`
 - Run name contains one of the following texts:
     - `Could not retrieve file content for {file_path} from repository {repo_name} hosted on {host} using commit {commit_sha}.`
-    - `Could not find {file_path} in repository {repo_name} hosted on {host} using commit {commit_sha}.`
     - `Could not retrieve content for object {commit_sha} from repository {repo_name} hosted on {host}.`
     - `Could not retrieve the tree object {tree_sha} from the repository {repo_name} hosted on {host}.`
     - `Could not find {file_path} from repository {repo_name} hosted on {host} using version {commit_sha}. One of the directories in the path contains too many files or subdirectories.`
