@@ -4,8 +4,6 @@ ms.topic: include
 
 ## Create a PAT
 
-::: moniker range="azure-devops
-
 > [!NOTE]
 > The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to Azure DevOps or enabled preview features. We've enabled the [New account manager page](/azure/devops/project/navigation/preview-features) feature. The basic functionality available to you remains the same unless explicitly mentioned.
 
@@ -40,8 +38,6 @@ ms.topic: include
 > [!WARNING]
 > Treat and use a PAT like your password and keep it a secret.
 
-::: moniker-end
-
 <!---
 #### [Current page](#tab/current-page) 
 
@@ -75,7 +71,7 @@ ms.topic: include
 
 -->
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=" < azure-devops-2019"
 
 1. Sign in to your web portal (```https://{server}:8080/tfs/```).
 
@@ -288,7 +284,7 @@ For more information and examples of how to use PATs, see the following articles
 - [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
 - [Get started with Azure DevOps CLI](../../../cli/index.md).
 
-::: moniker range=">= azure-devops-2017 < azure-devops"
+::: moniker range="< azure-devops-2019"
 
 If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](../../../integrate/get-started/authentication/iis-basic-auth.md).
 
