@@ -6,7 +6,7 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: sandrica
 author: silviu.andrica
 ms.date: 02/03/2022
-monikerRange: '>= azure-devops-services'
+monikerRange: 'azure-devops'
 ---
 
 # Pipeline information runs
