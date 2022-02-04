@@ -55,7 +55,7 @@ You can create a code churn report by carrying out the following steps:
   
 1.  In Excel, connect to the SQL Server Analysis Services cube for Azure DevOps Server, and insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../admin/create-status-and-trend-excel-reports.md).  
   
 2.  Right-click the chart and then choose **Change Chart Type**, **Area**, **Stacked Area**.  
   

@@ -7,46 +7,33 @@ ms.technology: devops-analytics
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
 ms.date: 09/22/2021
 ---
 
 # Create status and trend reports from a work item query  
 
-[!INCLUDE [temp](./includes/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 One of the quickest ways to generate a custom work tracking report is to use Excel and start with a flat list query. You can generate both status and trend charts. Also, once you've built a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]  
-> This feature is only available with an on-premises Azure DevOps Server 2019 and later versions configured with SQL Server Analysis Services. Also, this feature only supports projects that are defined on project collections configured with the On-premises XML process model. If your collection is configured to support the Inheritance process model, you can use Analytics views to filter work items and generate Power BI reports. To learn more, see [What are Analytics views?](./powerbi/what-are-analytics-views.md) To learn more about process models, see [Customize your work tracking experience](../reference/customize-work.md#process-models).
+> This feature is supported for the following versions and configurations: 
+> - Azure DevOps Server 2020 and earlier versions configured with SQL Server Analysis Services.
+> - For Azure DevOps Server 2019 and Azure DevOps Server 2020, supports projects that are defined on project collections configured with the On-premises XML process model. If your collection is configured to support the Inheritance process model, you can use Analytics views to filter work items and generate Power BI reports. To learn more, see [What are Analytics views?](../powerbi/what-are-analytics-views.md) To learn more about process models, see [Customize your work tracking experience](../../reference/customize-work.md#process-models).
 > 
-> If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). To get the latest version of the Azure DevOps add-in for Office, install [Azure DevOps Office® Integration 2019](https://go.microsoft.com/fwlink/?linkid=2076587&clcid=0x409).  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-> [!NOTE]  
-> This feature is available with an on-premises Team Foundation Server (TFS) configured with SQL Server Analysis Services. 
-> 
->If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). To get the latest version of the Azure Devops add-in for Office, install [Azure DevOps Office® Integration 2019](https://go.microsoft.com/fwlink/?linkid=2076587&clcid=0x409). 
-
-::: moniker-end
-
+> If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). To get the latest version of the Azure DevOps add-in for Office, install [Azure DevOps Office® Integration 2019](https://go.microsoft.com/fwlink/?linkid=2076587&clcid=0x409).  
 
 Here's an example of a status report generated from a flat-list query.  
 
 ![Excel State pie chart report](media/excel-reports/excel-pie-chart.png)   
 
-
 ## Prerequisites
 
 You can generate these reports only when you work with an on-premises Azure DevOps Server that has been configured with reporting services. 
-- Your deployment needs to be integrated with reporting services. If your on-premises application-tier server hasn't been configured to support reporting services, you can add that functionality by following the steps provided here: [Add reports to a team project](./admin/add-reports-to-a-team-project.md). 
+- Your deployment needs to be integrated with reporting services. If your on-premises application-tier server hasn't been configured to support reporting services, you can add that functionality by following the steps provided here: [Add reports to a team project](add-reports-to-a-team-project.md). 
 
-- You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in Azure DevOps Server](./admin/grant-permissions-to-reports.md).
+- You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in Azure DevOps Server](grant-permissions-to-reports.md).
 
 - A version of Excel that is compatible with your version of Azure DevOps, such as Office 2010 or later version. For a complete list of supported versions, see [Azure DevOps client compatibility, Microsoft Office integration](/azure/devops/server/compatibility#microsoft-office-integration). If you don't have Excel, [install it now](https://office.microsoft.com/excel/). 
 
@@ -59,7 +46,7 @@ You can generate these reports only when you work with an on-premises Azure DevO
  
 Use this procedure when you work from the Team Explorer plug-in for Visual Studio. 
 
-1. Create or open a [flat-list query](../boards/queries/using-queries.md) that contains the work items that you want to include in the report.  
+1. Create or open a [flat-list query](../../boards/queries/using-queries.md) that contains the work items that you want to include in the report.  
 	> [!NOTE]   
 	> To view queries in Visual Studio 2019 and later versions, you must choose the **Tools** option **Legacy experience (compatibility mode)** as described in [Set the Work Items experience in Visual Studio 2019](../boards/work-items/set-work-item-experience-vs.md).
 
@@ -96,7 +83,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 2. Connect to the project and choose the query.   
 
-   If the server you need isn't listed, [add it now](../organizations/projects/connect-to-projects.md).  
+   If the server you need isn't listed, [add it now](../../organizations/projects/connect-to-projects.md).  
 
 3. Choose the reports to generate (steps 3 and 4 from the previous procedure).  
 
@@ -106,7 +93,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 ### Q: Can I export a query to Excel? 
 
-**A:** If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal **Queries** page, install the [Azure DevOps Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension adds an **Open in Excel** link to the toolbar of the query results page.
+**A:** If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal **Queries** page, install the [Azure DevOps Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension adds an **Open in Excel** link to the toolbar of the query results page.
 
 
 <a id="which_fields_are_non_reportable"></a>
@@ -117,11 +104,11 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
    * **Description**, **History**, and other HTML data-type fields. These fields won't be added to the PivotTable or used to generate a report. Excel does not support generating reports on these fields.
 
-   * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators. To learn more about these operators, see [Query fields, operators, and macros](../boards/queries/query-operators-variables.md).
+   * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators. To learn more about these operators, see [Query fields, operators, and macros](../../boards/queries/query-operators-variables.md).
 
 ### Q: Can I create reports if I'm working in Azure DevOps?
  
-   **A:** You can't create Excel reports; however, you can create [query-based charts](./dashboards/charts.md), generate Power BI reports using an [Analytics views](./powerbi/create-quick-report.md), or use the [Analytics Service](./powerbi/what-is-analytics.md). 
+   **A:** You can't create Excel reports; however, you can create [query-based charts](../dashboards/charts.md), generate Power BI reports using an [Analytics views](../powerbi/create-quick-report.md), or use the [Analytics Service](../powerbi/what-is-analytics.md). 
 
 ### Q: How do I refresh the report to show the most recent data?
 
@@ -131,20 +118,8 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 ## Related articles
 
-::: moniker range=">= azure-devops-2019"
-- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Track progress with status and trend query-based charts](./dashboards/charts.md)
-- [What are Analytics views?](./powerbi/what-are-analytics-views.md)
-- [Create a Power BI report with a default Analytics view](./powerbi/create-quick-report.md)
-- [Analytics Service](./powerbi/what-is-analytics.md)
-- [Reporting Services reports](./sql-reports/reporting-services-reports.md)
-- [Grant permissions to view or create SQL Server reports in Azure DevOps Server](./admin/grant-permissions-to-reports.md)
-::: moniker-end
+- [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Track progress with status and trend query-based charts](../dashboards/charts.md)
+- [Reporting Services reports](../sql-reports/reporting-services-reports.md)
+- [Grant permissions to view or create SQL Server reports in Azure DevOps Server](grant-permissions-to-reports.md)
 
-::: moniker range="<= tfs-2018"
-
-- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Track progress with status and trend query-based charts](./dashboards/charts.md)
-- [Reporting Services reports](./sql-reports/reporting-services-reports.md)
-- [Grant permissions to view or create SQL Server reports in Azure DevOps Server](./admin/grant-permissions-to-reports.md)
-::: moniker-end

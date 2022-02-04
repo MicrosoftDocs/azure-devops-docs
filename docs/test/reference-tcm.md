@@ -10,7 +10,7 @@ ms.date: 01/18/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# FAQs for Test Case Management Reporting
+# FAQs for Test Case Management reporting
 
 [!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
 
@@ -60,27 +60,17 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
    Details of each of the Test-related reports can be found below:
 
    * [Test Management Reports](/previous-versions/azure/devops/report/excel/test-management-reports)
-
      - [Build Quality Excel Report](/previous-versions/azure/devops/report/excel/build-quality-excel-report)
-
      - [Test Team Productivity Excel Report](/previous-versions/azure/devops/report/excel/test-team-productivity-excel-report)
-
      - [Test Team Progress Excel Report](/previous-versions/azure/devops/report/excel/test-team-progress-excel-report)
-
-     - [Testing Gaps Excel Report (Agile)](../index.yml?viewFallbackFrom=vsts)
-
+     - [Testing Gaps Excel Report (Agile)](/previous-versions/azure/devops/report/excel/testing-gaps-excel-report-agile)
      - [Testing Gaps Excel Report (CMMI)](/previous-versions/azure/devops/report/excel/testing-gaps-excel-report-cmmi)
 
    * [Failure Analysis Excel Report](/previous-versions/azure/devops/report/excel/failure-analysis-excel-report)
-
    * [Test Activity Excel Report](/previous-versions/azure/devops/report/excel/test-activity-excel-report)
-
    * [Test Case Readiness Report](../report/sql-reports/test-case-readiness-report.md)
-
    * [Test Plan Progress Report](../report/sql-reports/test-plan-progress-report.md)
-
-   * [User Story Test Status Excel Report (Agile)](../index.yml?viewFallbackFrom=vsts)
-
+   * [User Story Test Status Excel Report (Agile)](/previous-versions/azure/devops/report/excel/user-story-test-status-excel-report-agile)
    * [Requirement Test Status Excel Report (CMMI)](/previous-versions/azure/devops/report/excel/requirement-test-status-excel-report-cmmi)
 
 2. Reporting Services based Reports: The figure below shows the list of all Reporting Services based reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
@@ -110,14 +100,9 @@ Team Foundation Server requires a report server that is dedicated only to its us
 Links:
 
 * [Installing Team Foundation Components](/azure/devops/server/install/get-started)
-
-* [Configuring Resources to Support Team Projects](/previous-versions/dd386330(v=vs.120))
-
-* [Add a Report Server to Your Deployment](/previous-versions/ee712737(v=vs.120))
-
-* [Add a Report Server to a Team Project Collection](/previous-versions/visualstudio/visual-studio-2012/dd386355(v=vs.110))
-
-* [Add Reports to a Team Project](/previous-versions/visualstudio/visual-studio-2010/ee712730(v=vs.100))
+* [Configuring resources to support team projects](/previous-versions/visualstudio/visual-studio-2013/dd273719(v=vs.120))
+* [Add a report server](../report/admin/add-a-report-server.md)
+* [Upload reports to a team project](..//report/admin/upload-reports.md)
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Excel Reports listed above. Why?
 
@@ -129,15 +114,13 @@ In addition, for Excel Reports, you also need to enable SharePoint on the Team F
 
 Links:
 
-* [Installing Team Foundation Components](/azure/devops/server/install/get-started)
-
-* [Configuring Resources to Support Team Projects](/previous-versions/dd386330(v=vs.120))
-
-* [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](/previous-versions/visualstudio/visual-studio-2012/dd386329(v=vs.110))
-
-* [Add a SharePoint Web Application to Your Deployment](/previous-versions/dd236907(v=vs.140))
-
-* [Configure a Default Location for Team Project Portals](/previous-versions/visualstudio/visual-studio-2012/dd386357(v=vs.110))
+* [Installing Team Foundation components](/azure/devops/server/install/get-started)
+* [Configuring resources to support team projects](/previous-versions/visualstudio/visual-studio-2013/dd273719(v=vs.120))
+* [Add a report server](../report/admin/add-a-report-server.md)
+* [Upload reports to a team project](..//report/admin/upload-reports.md)
+* [Modify or remove access between a SharePoint web application and TFS](/previous-versions/azure/devops/server/sharepoint/modify-remove-access-sharepoint)
+* [Add a SharePoint Web Application to Your Deployment](/previous-versions/azure/devops/server/sharepoint/add-sharepoint-to-tfs)
+* [Configure a Default Location for Team Project Portals](../project/configure-or-add-a-project-portal.md)
 
 ## I would like to create custom test reports in Excel based off the Analysis Services cube. How should I go about it?
 
@@ -183,13 +166,9 @@ All the test-related measures present in the Analysis Services cube are shown be
 
 ![clip_image016](media/tcm-reporting/tcm-16.png)
 
-Description for each of above measures can be found here:
+Description for each of above measures can be found here: [Analyze and report on test results using the test perspective](../report/sql-reports/perspective-test-analyze-report-test-results.md#measures)
 
-[https://msdn.microsoft.com/library/ms244708.aspx#measures](../report/sql-reports/perspective-test-analyze-report-test-results.md#measures)
-
-A list of all the perspectives and measure groups present in Team Foundation Server can be found here:
-
-[https://msdn.microsoft.com/library/ms244710.aspx](../report/sql-reports/perspective-measure-groups-cube.md)
+A list of all the perspectives and measure groups present in Team Foundation Server can be found here:[Perspectives and measure groups](../report/sql-reports/perspective-measure-groups-cube.md)
 
 ## What are the different Test-related dimensions in the Analysis Services cube that I can use to create my custom test reports?
 
@@ -199,13 +178,13 @@ All the dimensions present in the Analysis Services cube are shown below:
 
 Description for all the Test-specific dimensions can be found here:
 
-[https://msdn.microsoft.com/library/ms244708.aspx#dimensions](../report/sql-reports/perspective-test-analyze-report-test-results.md#dimensions)
+[Analyze and report on test results using the test perspective](../report/sql-reports/perspective-test-analyze-report-test-results.md#dimensions)
 
 ## Can I control what information makes it into the warehouse or cube? If so, how?
 
 Here is a quick primer on the different components of data warehouse and how data moves from the Operation store to Warehouse to Cube using the warehouse adapters.
 
-[Components of the Data Warehouse for Team Foundation](../report/dashboards/choose-source-data-authoring-tool.md?viewFallbackFrom=vsts)
+[Components of the data warehouse for Team Foundation](../report/dashboards/choose-source-data-authoring-tool.md?viewFallbackFrom=vsts)
 
 Yes, you can control what goes into the warehouse - refer to below topic for details around work item specific fields:
 
@@ -219,24 +198,17 @@ That is correct - Test Steps along with expected results and the passed or faile
 
 However, there are couple of ways of getting this Step related data:
 
-1. **TFS APIs**: You could get this information using the [TFS APIs](/previous-versions/dd998375(v=vs.140))
+1. **TFS APIs**: You could get this information using the [Microsoft.TeamFoundation.TestManagement.Client Namespace](/previous-versions/dd998375(v=vs.140))
    Refer to a sample Test Steps Report, which was created using the TFS APIs.
 
    `http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx`
 
    Since this sample also has source code, you could customize it to suit your organization needs.
 
-1. **Test Scribe**: You could also use [Test Scribe](https://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
+1. **Test Scribe**: You could also use [Test Scribe](https://marketplace.visualstudio.com/items?itemName=VSTSQualityTools.TestScribeforVisualStudioUltimate2010andTestProfes) tool to generate a document containing Test Steps.
    There are two modes of generating the document using this tool -
 
    - "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
 
    - "Test Run Summary" view which you can use to get detailed Run level information - however it does not provide a breakdown of individual test results within a particular test run.
 
-## I want to write a custom third-party warehouse adapter, how should I go about it?
-
-You can find a Sample custom warehouse adapter below, that you can use as a starting point:
-
-[https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
-
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
