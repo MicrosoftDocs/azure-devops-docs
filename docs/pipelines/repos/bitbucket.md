@@ -211,6 +211,11 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
+## Pipeline information runs
+[!INCLUDE [header](../includes/information-run-include.md)]
+
+Learn more about [pipeline information runs](../process/information-run.md).
+
 ## FAQ
 
 Problems related to Bitbucket integration fall into the following categories:
