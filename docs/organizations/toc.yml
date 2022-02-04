@@ -28,7 +28,7 @@
   - name: Set personal favorites
     href: ../project/navigation/set-favorites.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
     displayName: project, team, backlog, dashboard, view, query, repository, pipeline, test plan
-  - name: Personal access tokens
+  - name: Use personal access tokens
     href: ./accounts/use-personal-access-tokens-to-authenticate.md
     displayName: alternate, password, create, modify, revoke
   - name: SSH public keys
