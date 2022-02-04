@@ -76,4 +76,4 @@ Wikis defined for a project are limited to 1 GB per git repository.
 - [Rate limits](../integrate/concepts/rate-limits.md)
 - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
 - [Configure and customize Azure Boards](../boards/configure-customize.md)
-- [Usage monitoring](../../organizations/accounts/usage-monitoring.md)
+- [Usage monitoring](../organizations/accounts/usage-monitoring.md)
