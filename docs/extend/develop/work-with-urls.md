@@ -5,8 +5,8 @@ description: Learn about best practices for working with URLs in Azure DevOps ex
 ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.author: apawast
-author: apawast
+ms.author: chcomley
+author: chcomley
 ms.date: 06/02/2020
 ---
 

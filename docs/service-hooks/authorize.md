@@ -4,6 +4,8 @@ ms.topic: conceptual
 title: Authorize services 
 description: Authorize services to work with Azure DevOps
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---

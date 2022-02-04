@@ -5,6 +5,9 @@ description: Learn how Microsoft helps protect your projects and data in Azure D
 ms.custom: freshness-fy22
 ms.topic: article
 ms.technology: devops-security
+ms.author: chcomley
+author: chcomley
+ms.reviewer: jominana
 ms.date: 01/25/2022
 monikerRange: 'azure-devops'
 ---

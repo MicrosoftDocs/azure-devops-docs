@@ -40,7 +40,10 @@ You must be a [Project Collection Administrator](../organizations/security/set-p
 
    ![Disable or uninstall extension](media/disable-or-uninstall-extension.png)
 
+::: moniker-end
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range=">= azure-devops-2020"
 
 [Uninstall extension](#uninstall-extension) | [Disable extension](#disable-extension) 
 
@@ -101,11 +104,11 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 7pace           Timetracker     Timetracker  5.0.1.34507  2019-11-13       disabled
 ```
 
+::: moniker-end
+
 [!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
 
