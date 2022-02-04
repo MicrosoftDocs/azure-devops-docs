@@ -18,7 +18,7 @@
   - name: Add privacy policy URL
     href: add-privacy-policy-url.md
     displayName: GDPR, organization, public project, external guest, data, protection
-  - name: Use policies to manage users' PATs (for admins)
+  - name: Use policies to manage user PATs (for admins)
     href: manage-pats-with-policies-for-administrators.md
     displayName: restrict, creation, global, full, scope, maximum, lifespan, authentication
   - name: Change time zone
