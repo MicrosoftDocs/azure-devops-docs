@@ -17,7 +17,7 @@ monikerRange: '<= azure-devops'
 Get started with developing your code using Azure Repos and Git repositories. You can use Visual Studio or Git commands to clone a repository, define local branches, commit and push changes, and sync with others. If you need to create or import a repository, see [Create a new Git repo in your project](create-new-repo.md) or [Import a Git repository](import-git-repository.md).
 
 >[!NOTE]
->This article addresses working with Azure Repos Git repositories. However, you can use Visual Studio to manage GitHub repositories using similar procedures. To clone a GitHub repository, get the URL as described in [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+>This article describes how to use Visual Studio to manage Azure Repos Git repositories. Using similar procedures, you can use Visual Studio to manage GitHub repositories. To clone a GitHub repository, get the URL as described in [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
@@ -30,7 +30,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 ::: moniker range="azure-devops"
 
-- **Azure Repos** must be enabled on your project. If the **Azure Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Azure Repos**.
+- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
 
 - To view code, you must be a member of an Azure DevOps project with **Basic** access or higher.
 
@@ -47,7 +47,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- **Azure Repos** must be enabled on your project. If the **Azure Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Azure Repos**.
+- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
 
 - To view code, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
@@ -427,7 +427,7 @@ Once you've pushed your commits, you can create a [pull request](pull-requests.m
     
        :::image type="content" source="media/git-quickstart-visual-studio-2019/team-explorer/commit-created-locally.png" border="true" alt-text="Screenshot of the Sync link that appears after making a commit in Visual Studio 2019." lightbox="media/git-quickstart-visual-studio-2019/team-explorer/commit-created-locally-lrg.png":::
     
-    2. Select **Push** to share your commit with the remote repository. If this is your first push to the repository, you'll see the following message: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` **Push** uploads your changes to a new branch on the remote repository and sets it as the upstream branch.
+    2. In the **Synchronization** view, choose **Push** to upload your commit to the remote repo. If this is your first push to the repo, you'll see the message: `The current branch does not track a remote branch...`, which lets you know that your commit was pushed to a new branch on the remote repo and that future commits pushed from the current branch will be uploaded to that remote branch.
     
        :::image type="content" source="media/git-quickstart-visual-studio-2019/team-explorer/push-to-origin.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/git-quickstart-visual-studio-2019/team-explorer/push-to-origin-lrg.png":::
 
@@ -538,7 +538,7 @@ To share the changes in your topic branch, you'll need to publish it to the serv
 
 ## Sync with others
 
-You can keep your local branches in sync with their remote counterparts by [pulling](pulling.md) commits created by others. Although Git is good at merging incoming changes with your changes, sometimes you might have to [resolve a merge conflict](merging.md). Even if you're working on your feature branch, it's a good idea to periodically switch to your `main` branch and pull new commits to keep it current with the remote `main` branch.
+You can keep your local branches in sync with their remote counterparts by [pulling](pulling.md) commits created by others. Although Git is good at merging incoming changes with your changes, sometimes you might have to [resolve a merge conflict](merging.md). While you're working on your feature branch, it's a good idea to periodically switch to your `main` branch and pull new commits to keep it current with the remote `main` branch.
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)

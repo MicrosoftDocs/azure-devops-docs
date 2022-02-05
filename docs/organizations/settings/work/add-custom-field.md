@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/16/2021
+ms.date: 01/11/2022
 ---
 
 # Add a custom field to a work item type (Inheritance process)    

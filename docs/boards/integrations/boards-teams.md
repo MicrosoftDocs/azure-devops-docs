@@ -51,6 +51,7 @@ Read this article to learn how to:
 > [!NOTE]
 > * You can link the Azure Boards app for Microsoft Teams only to a project hosted on Azure DevOps Services at this time.  
 > * Notifications are currently not supported inside direct messages.
+> * Only public channels are supported.
 
 ## Add the Azure Boards app to Microsoft Teams
 

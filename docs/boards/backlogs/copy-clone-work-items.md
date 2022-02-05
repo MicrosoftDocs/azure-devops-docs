@@ -198,7 +198,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
     ![TFS 2017, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/bulk-modify-copy-as-html.png) 
    ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
@@ -231,7 +231,7 @@ Copy the URL from the web browser address or hover over the title and then selec
 <img src="media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" />
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 Right-click the link ID to open the browser copy link option.
 
 <img src="media/copy-work-item-url-2015.png" alt="Copy hyperlink for a work item from web portal" /> 

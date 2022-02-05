@@ -11,6 +11,8 @@ monikerRange: ">=azure-devops-2020"
 
 # Trigger one pipeline after another
 
+[!INCLUDE [version-server-2020](../../test/includes/version-2020-rtm.md)]
+
 > [!div class="op_single_selector"]
 > - [YAML pipelines](pipeline-triggers.md)
 > - [Classic pipelines](pipeline-triggers-classic.md)
@@ -43,11 +45,13 @@ resources:
 
 * `pipeline: securitylib` specifies the name of the pipeline resource, and is used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables.
 * `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). By default, pipelines are named after the repository that contains the pipeline. To update a pipeline's name, see [Pipeline settings](../get-started/multi-stage-pipelines-experience.md#pipeline-settings).
-
-* `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project.
+* `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project. If you specify this value and your pipeline doesn't trigger, see the note at the end of this section.
 * `trigger: true` - Use this syntax to trigger the pipeline when any version of the source pipeline completes. See the following sections in this article to learn how to filter which versions of the source pipeline completing will trigger a run. When filters are specified, the source pipeline run must match all of the filters to trigger a run.
 
-If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the `Default branch for manual and scheduled builds` setting, as described in the following [Branch considerations for pipeline completion triggers](#branch-considerations) section.
+If the triggering pipeline and the triggered pipeline use the same repository, both pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code and the second pipeline tests it. However, if the two pipelines use different repositories, the triggered pipeline will use the version of the code in the branch specified by the `Default branch for manual and scheduled builds` setting, as described in [Branch considerations for pipeline completion triggers](#branch-considerations).
+
+> [!NOTE]
+> In some scenarios, the default branch for manual builds and scheduled builds doesn't include a `refs/heads` prefix. For example, the default branch might be set to `main` instead of to `refs/heads/main`. In this scenario, *a trigger from a different project doesn't work*. If you encounter issues when you set `project` to a value other than the target pipeline's, you can update the default branch to include `refs/heads` by changing its value to a different branch, and then by changing it back to the default branch you want to use.
 
 ## Branch filters
 

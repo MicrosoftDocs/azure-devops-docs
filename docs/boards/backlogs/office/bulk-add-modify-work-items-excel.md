@@ -75,7 +75,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 
 - Installed Microsoft 2007, Microsoft Excel 2010, or Microsoft Excel 2013 

@@ -40,7 +40,7 @@ If you're already using `Web.Contents` to access work tracking data from Analyti
 > [!div class="mx-tdCol2BreakAll"]  
 > | Argument|Description|
 > |--------|-----------|
-> |`url`  |URL to one of the Azure Devops service endpoints. | 
+> |`url`  |URL to one of the Azure DevOps service endpoints. | 
 > |`options` |An options record to control the behavior of this function.| 
 
 ### Options fields for VSTS.Contents

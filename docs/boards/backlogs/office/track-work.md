@@ -7,7 +7,7 @@ ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 11/19/2021
 ---
 
@@ -161,7 +161,7 @@ Connection from an Office client to an Azure Boards project requires that you've
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 - To connect Excel to Azure Boards, you must have installed Office Excel 2007 or later version. 
 - To connect Project to Azure Boards, you must have installed Office Project 2007 or later version. 
@@ -193,7 +193,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 - Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
 - Office Project 2007, Office Project 2010, or Office Project 2013

@@ -206,13 +206,13 @@ Enter the pound sign (`#`), and then enter a work item ID.
 In wiki pages, you can also create rich content using HTML tags.
 
 > [!TIP]
-> You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
+> You can nest Markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
 
 
  ```HTML
 <p>
   
-  [A markdown link](https://microsoft.com) 
+  [A Markdown link](https://microsoft.com) 
 </p>
 ```
 

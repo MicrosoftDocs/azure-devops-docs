@@ -1,7 +1,7 @@
 ---
 title: Customize your work tracking experience
 titleSuffix: Azure DevOps 
-description: Guide to configuring and customizing work tracking features in Azure DevOps Services & Team Foundation Server 
+description: Guide to configuring and customizing work tracking features in Azure DevOps  
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 01/11/2022
 ---
 
 # Customize your work tracking experience 
@@ -235,6 +235,7 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="< azure-devops-2020"
 :::row:::
    :::column span="3":::
       Update Microsoft field mappings using the [**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file) command-line tool (see note 4)
@@ -250,6 +251,7 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="3":::
@@ -269,7 +271,23 @@ The following table summarizes the differences between the three supported proce
 ::: moniker-end
 :::row:::
    :::column span="3":::
-      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects and list project information
+      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to list and export process information 
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="3":::
+      Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit process information 
    :::column-end:::
    :::column span="1":::
          
@@ -282,6 +300,24 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="3":::
+      Use the [**tcm fieldmapping** command-line tool](witadmin/tcm-customize-manage-test-experience.md) to list and export test case management mapping for resolution types, bug filing, and failure types. 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
 :::row:::
    :::column span="3":::
       REST API (read)
@@ -329,7 +365,7 @@ The following table summarizes the differences between the three supported proce
 	::: moniker range=">= azure-devops-2020"
 	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
 	::: moniker-end
-4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
+4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
 5. You can use the REST API to [import and export process templates](/rest/api/azure/devops/processadmin/processes/import%20process%20template).
 
 <a id="choose-process-model" />

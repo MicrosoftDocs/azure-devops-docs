@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 07/09/2021
+ms.date: 12/22/2021
 monikerRange: azure-devops
 ---
 
@@ -97,7 +97,7 @@ In the following example, a new resource group and virtual machine scale set are
 
     * `--disable-overprovision` - required
     * `--upgrade-policy-mode manual` - required
-    * `--load-balancer ""` - Azure Pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss?view=azure-cli-latest&preserve-view=true#az_vmss_create).
+    * `--load-balancer ""` - Azure Pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss#az_vmss_create).
     * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
     > [!IMPORTANT]
@@ -447,6 +447,7 @@ To delete the saved agent when you are done with your investigation, navigate to
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
 * [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
+* [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
@@ -464,3 +465,11 @@ Click the 'Enabled' toggle button to disable the agent. The disabled agent will 
 ### Can I configure the scale set agent pool to have zero agents on standby?
 
 Yes, if you set **Number of agents to keep on standby** to zero, for example to conserve cost for a low volume of jobs, Azure Pipelines starts a VM only when it has a job.
+
+### How much do scale set agents cost?
+
+Pricing for scale set agents is similar to other self-hosted agents. You provide the infrastructure on which to run the agent software and the jobs, and you pay for the desired number of jobs that can run concurrently by purchasing parallel jobs.
+
+For scale set agents, the infrastructure to run the agent software and jobs is Azure Virtual Machine Scale Sets, and the pricing is described in [Virtual Machine Scale Sets pricing](https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/).
+
+For information on purchasing parallel jobs, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).

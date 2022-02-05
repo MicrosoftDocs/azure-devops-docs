@@ -29,7 +29,7 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
@@ -296,7 +296,7 @@ From the web portal, open a work item and choose **Add tag** and type a keyword 
 > ![Screenshot of work item form, Add one or more tags to a work item.](../../boards/queries/media/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 ![Screenshot of work item form, Add one or more tags to a work item, TFS 2015 version](../../boards/queries/media/add-tags-to-work-items-vso-tfs.png)  
 ::: moniker-end

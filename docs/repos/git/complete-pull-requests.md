@@ -54,7 +54,7 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker range=">= azure-devops-2020"
-- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 ::: moniker-end
 
 ## Check merge changes
@@ -93,7 +93,7 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 
 ::: moniker range=">= azure-devops-2020"
 
-To see all branch policies that are in effect for a PR, use [az repos pr policy list](/cli/azure/repos/pr/policy?view=azure-cli-latest&preserve-view=true) with the required `id` parameter.
+To see all branch policies that are in effect for a PR, use [az repos pr policy list](/cli/azure/repos/pr/policy) with the required `id` parameter.
 
 ```azurecli
 az repos pr policy list --id
@@ -144,6 +144,7 @@ a6e4380e-9f38-4aa5-863c-0fc496027362  Work item linking                         
 
 
 <a name="complete-the-pull-request"></a>
+
 ## Complete a pull request
 
 After you resolve any merge conflicts, and the PR meets all branch policies and has all required approvals, you can complete the PR.
@@ -274,6 +275,8 @@ For example, to complete PR #21, use:
 az repos pr update --id 21 --status completed
 ```
 
+<a id="set-completion-options" /> 
+
 ### Set completion options
 
 You can set PR completion options when you [create a PR](pull-requests.md#create-a-pull-request) with `az repos pr create`, or update creation options in existing PRs with `az repos pr update`. 
@@ -316,7 +319,7 @@ az repos pr update --id
 |`--bypass-policy`|Bypass any required policies and complete the pull request once it can be merged. Accepted values: `false`, `true`.|
 |`--bypass-policy-reason`|Reason for bypassing required policies.|
 |`--delete-source-branch`|Delete the source branch after the pull request is completed and merged into the target branch. Accepted values: `false`, `true`.|
-|`--description -d`|New description for the pull request. Can include markdown. Each value is new line. For example: `--description "First Line" "Second Line"`.|
+|`--description -d`|New description for the pull request. Can include Markdown. Each value is new line. For example: `--description "First Line" "Second Line"`.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`--draft`|Convert the PR to draft mode or publish it. Accepted values: `false`, `true`.|
 |`--merge-commit-message`|Message to display when commits are merged.|
@@ -376,6 +379,7 @@ File changes in your branch can conflict with changes in another branch. When it
 ::: moniker-end
 
 <a name="complete-automatically"></a>
+
 ## Set a pull request to autocomplete
 
 # [Browser](#tab/browser)
@@ -468,6 +472,7 @@ To abandon a PR without merging the changes, use `az repos pr update --id <PR Id
 
 ::: moniker range=">= tfs-2017"
 <a name="revert-a-completed-pr"></a>
+
 ## Revert a completed pull request
 
 To undo the changes from a PR, follow these steps. For more information, see [Undo changes](undo.md).

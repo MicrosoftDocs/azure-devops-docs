@@ -14,7 +14,7 @@ metadata:
     
 title: Create and configure organization FAQs
 summary: |
-  [!INCLUDE [temp](../../includes/version-all.md)]
+  [!INCLUDE [version-all](../../includes/version-all.md)]
   
   Learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
   

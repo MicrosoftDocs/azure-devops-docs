@@ -283,6 +283,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Analytics-based widgets](../dashboards/analytics-widgets.md)
 - [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
@@ -291,6 +292,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 - [Velocity guidance](velocity-guidance.md)

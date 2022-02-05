@@ -81,7 +81,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -156,7 +156,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Select the
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
@@ -196,7 +196,7 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who 
 ![New task form](media/sp-scrum-task-form.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 <a id="task-form-tfs-2015-13" /> 
 
@@ -277,7 +277,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 > ![Unparented tasks, agile taskboard](media/add-tasks/unparented-tasks.png) 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ![Unparented tasks](media/ALM_TB_UnparentedTasks_CO.png)
 

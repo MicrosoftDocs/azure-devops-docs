@@ -2,8 +2,6 @@
 title: Deploy to Kubernetes on AKS with Jenkins
 description: Set up continuous integration (CI) and continuous deployment (CD) with Kubernetes for your apps using Jenkins, Azure Container Service (AKS), and Azure Pipelines
 ms.topic: tutorial
-ms.author: mlearned
-author: mlearned
 ms.reviewer: nicolela
 ms.custom: "mvc, seodec18"
 ms.date: 04/17/2018
@@ -47,7 +45,7 @@ You will:
 
 * An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest&preserve-view=true).
+* The [Azure Command-Line Interface (CLI)](/cli/azure/index).
 
 * You need a Spring Boot app.  You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 

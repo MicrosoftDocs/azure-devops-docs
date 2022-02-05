@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 06/08/2021
+ms.date: 01/27/2022
 --- 
 
 
@@ -141,30 +141,67 @@ The following table summarizes the different permissions you can set at the obje
 
 <a name="set-permissions-area-path" /> 
 
-## Create child nodes, modify work items under an area path   
+## Create child nodes, modify work items under an area or iteration path   
 
 Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
-::: moniker range=">= azure-devops-2019" 
+> [!NOTE]
+> If you haven't defined the group yet whose permissions you want to set, then first create the group, usually at the project level. To learn how, see [Add a group](set-project-collection-level-permissions.md#add-group). 
+ 
+ 
+::: moniker range="azure-devops" 
 
-You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
+You define both areas and iterations for a project from the **Project Settings>Project configuration**. 
 
-1. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
+1. Choose (1) **Project Settings**, then choose (2) **Project configuration** under **Boards**, and then choose (3) **Areas** or **Iterations** to modify Area Paths or Iteration Paths. 
 
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Work>Project Configuration](../settings/media/areas/open-project-work-areas-settings-vert.png)   
 
-1. Choose the ... context menu for the node you want to manage and select **Security**.  
+1. Choose the **...** context menu for the node you want to manage and select **Security**.  
 
-    ![Open the security dialog](media/set-permissions-area-node-open.png)
+    :::image type="content" source="media/work-tracking/open-area-node-permissions.png" alt-text="Screenshot of context menu for Area Path, choose Security."::: 
 
-1. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
+1. Select the group or project member, and then change the permission settings. To add a user or group, enter their name in the search box.
 
-    For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
+    For example, here we added the *Disallow Access Group*, and disallowed members of this group the ability to view, modify, or edit work items in the **Account Management** area path.   
 
-    ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
+    :::image type="content" source="media/work-tracking/set-area-node-permissions.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions. "::: 
 
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
+
+1. (Optional) Choose the **Inheritance** slider to disable inheritance. Disabling **Inheritance** persists all inherited permissions as explicit Access Control Entries (ACEs). 
+
+1. When done, simply close the dialog. Your changes are automatically saved. 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019 || azure-devops-2020" 
+
+You define both areas and iterations for a project from the **Project Settings>Project configuration**. 
+
+1. Choose (1) **Project Settings**, then choose (2) **Project configuration** under **Boards**, and then choose (3) **Areas**.   
+
+    > [!div class="mx-imgBorder"]  
+    > ![Project Settings>Work>Project Configuration](../settings/media/areas/open-project-work-areas-settings-vert.png)   
+
+1. Choose the **...** context menu for the node you want to manage and select **Security**.  
+
+    :::image type="content" source="media/work-tracking/set-permissions-area-node-open.png" alt-text="Screenshot of context menu for Area Path, choose Security, Azure DevOps Server 2020."::: 
+
+1. Select the group or team member, and then change the permission settings.  To add a user or group, enter their name in the search box.
+
+    For example, here we've added the *Disallow Access Group*, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
+
+    :::image type="content" source="media/work-tracking/set-permissions-area-node-dialog.png" alt-text="Screenshot of Area Path node Security, selected group, and setting Deny permissions, Azure DevOps Server 2020 and earlier versions. "::: 
+ 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
+
+1. (Optional) Toggle **Inheritance** to **Off** to disable inheritance. Disabling **Inheritance** persists all inherited permissions as explicit Access Control Entries (ACEs). 
+
+1. When done, choose **Save changes**.  
+
 
 ::: moniker-end
 
@@ -184,11 +221,11 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![In the context menu, select Security.](media/set-permissions-area-node-open.png)
+    ![In the context menu, select Security.](media/work-tracking/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
 
@@ -202,7 +239,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
     For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
 
-    ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
+    ![Permissions for an area node](media/work-tracking/set-permissions-area-node-dialog.png)  
 
     You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
