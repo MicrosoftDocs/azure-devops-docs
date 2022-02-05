@@ -5,8 +5,8 @@ description: Guidance for developing extensions to be used with vertical web nav
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.author: apawast
-author: apawast
+ms.author: chcomley
+author: chcomley
 ms.date: 06/08/2021
 ---
 
