@@ -14,8 +14,6 @@ ms.date: 12/31/2019
 
 [!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
-
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
 ![Location of a new hub in Azure DevOps Services](../media-procedures/hub-location.png)
@@ -33,6 +31,9 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 |--- hello-world.html				// html page to be used for your hub  
 |--- vss-extension.json				// extension's manifest
 ```
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
 ## Get the client SDK: `VSS.SDK.js`
 The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host, Azure DevOps Services, frame. This script also initializes, notifies that the extension loaded, or gets context about the current page. Get the Client SDK `VSS.SDK.js` file and add it to your web app. 
 Place it in the `home/sdk/scripts` folder.

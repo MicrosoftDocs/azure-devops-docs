@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Add a dashboard widget
 
-[!INCLUDE [ ](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
 Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). 
 A single extension can have multiple contributions. Learn how to create an extension with multiple widgets as contributions.

@@ -15,7 +15,7 @@ ms.date: 02/17/2021
 
 # Use &#64;mentions in work items and pull requests
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker of the **@mention** control, you can select a project member or group from the search list, and they'll receive an email notifying them of your comment. 
 
