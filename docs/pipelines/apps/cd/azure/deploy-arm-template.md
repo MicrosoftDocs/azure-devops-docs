@@ -4,7 +4,7 @@ description: Use an Azure Resource Manager template to deploy a Linux web app to
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 07/30/2021
+ms.date: 02/02/2022
 monikerRange: '=azure-devops'
 ms.custom: subject-armqs, contperf-fy21q2
 ---
@@ -65,9 +65,9 @@ The template defines several resources:
 
    :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="4-8":::
 
-7. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
+7. Create three variables:  `siteName`, `administratorLogin`, and `adminPass`. `adminPass` needs to be a secret variable.
     * Select **Variables**. 
-    * Use the `+` sign to add three variables. When you create `administratorLoginPassword`, select **Keep this value secret**.
+    * Use the `+` sign to add three variables. When you create `adminPass`, select **Keep this value secret**.
     * Click **Save** when you're done.
         
    |Variable  |Value  |Secret?  |

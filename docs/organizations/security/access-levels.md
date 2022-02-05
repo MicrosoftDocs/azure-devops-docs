@@ -294,7 +294,7 @@ The following table indicates those features available for each supported access
       Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
    :::column-end:::
    :::column span="1":::
-       
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -453,7 +453,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Standard Features**  
-      Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), and [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). Stakeholders can't view markdown README files defined for repositories and can only read wiki pages.  
+      Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), and [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). Stakeholders can't view Markdown README files defined for repositories and can only read wiki pages.  
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -624,7 +624,7 @@ Users assigned Advanced access can manage test cases when you have [purchased th
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-Users assigned Advanced access have all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md). You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-access-to-azure-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription. 
+Users assigned Advanced access have all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md). You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-users-monthly-access-to-azure-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription. 
  
 ::: moniker-end
 

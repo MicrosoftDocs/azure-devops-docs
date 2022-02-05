@@ -562,21 +562,25 @@
 
 *To see the full image, click to expand*.
 
-[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+[![Project Settings>Security - Cloud](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 * * * 
 
 ::: moniker-end
 
 
-::: moniker range="< azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 *To see the full image, click to expand*.
 
-[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+[![Project Settings>Security - Azure DevOps Server](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 ::: moniker-end
 
+
+::: moniker range="<= tfs-2018"
+:::image type="content" source="media/permissions/project-level-groups-permissions-tfs-2018.png" alt-text="Project-level groups and permissions, TFS-2018 and earlier versions.":::
+::: moniker-end
 
 > [!TIP]  
 > The full name of each of these groups is **[{project name}]\\{group name}**. 
@@ -2213,13 +2217,16 @@
 
 ## Analytics views (object-level)  
 
-   With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../../report/powerbi/analytics-security.md).  
-
-> [!div class="mx-imgBorder"]
-> ![Manage permissions](../../report/powerbi/media/editable-views/view-permissions.png)  
-
-   The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views](../../report/powerbi/what-are-analytics-views.md)?  
-
+With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../../report/powerbi/analytics-security.md).  
+::: moniker-end
+::: moniker range="azure-devops"
+:::image type="content" source="media/permissions/set-analytics-view-shared-permissions.png" alt-text="Shared Analytics view security dialog, change permissions for a user.":::
+::: moniker-end
+::: moniker range=">= azure-devops-2019 < azure-devops"
+:::image type="content" source="media/permissions/analytics-view-permissions.png" alt-text="Manage Shared Analytics view security dialog, change permissions for a user, Azure DevOps Server.":::
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
+The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views](../../report/powerbi/what-are-analytics-views.md)?  
 
 :::row:::
    :::column span="1":::
@@ -2234,19 +2241,15 @@
    <a id="av-delete-permission"></a> Delete shared Analytics views
    :::column-end:::
    :::column span="2":::
-   
    Can delete the shared Analytics view.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    <a id="av-edit-permission"></a> Edit shared Analytics views
    :::column-end:::
-   :::column span="2":::
-   
+   :::column span="2":::  
    Can change the parameters of the shared Analytics view.
-
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2254,9 +2257,8 @@
    <a id="av-view-permission"></a> View shared Analytics views
    :::column-end:::
    :::column span="2":::
-   
+  
    Can view and use the shared Analytics view from Power BI desktop. 
-
    :::column-end:::
 :::row-end:::
 
@@ -3903,11 +3905,11 @@
 
 ## Related articles
 
-- [About permissions](about-permissions.md)  
+- [Get started with permissions, access, and security groups](about-permissions.md)  
 - [Security and permission management tools](security-tools-reference.md)  
 - [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)  
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
-- [Make a user a team admin](../settings/manage-teams.md)  
+- [Make a user a team administrator](../settings/manage-teams.md)  
 - [Troubleshoot permissions](troubleshoot-permissions.md)

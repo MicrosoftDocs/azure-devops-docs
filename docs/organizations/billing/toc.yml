@@ -18,13 +18,13 @@
   displayName: signup, billing, basic, extension, license, storage
 - name: Manage billing
   items:
-  - name: Add user who can set up billing
+  - name: Add user to manage billing
     href: add-backup-billing-managers.md
     displayName: assign, subscription
   - name: Change Azure subscription
     href: change-azure-subscription.md
     displayName: update, remove, billing
-  - name: Buy access to Azure DevOps Server or Azure Test Plans
+  - name: Buy access to Azure Test Plans
     href: buy-access-tfs-test-hub.md
     displayName: monthly, basic, CALs, users
   - name: Billing FAQs

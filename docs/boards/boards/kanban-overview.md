@@ -60,7 +60,7 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 ![Kanban board, Agile template](media/kanban-basics-intro.png)     
 ::: moniker-end  
  
-::: moniker range=">= tfs-2013 <= tfs-2015"    
+::: moniker range="<= tfs-2015"    
 > [!div class="mx-imgBorder"]  
 > ![TFS 2015, Kanban board, Agile template](media/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   

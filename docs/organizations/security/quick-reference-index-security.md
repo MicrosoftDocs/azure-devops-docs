@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/10/2020
+ms.date: 01/13/2022
 ---
 
 # Security quick reference index
@@ -163,7 +163,12 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
       **Set organization or collection-level permissions**  
        - [Set organization-level permissions](set-project-collection-level-permissions.md)  
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
-       - [Enable Project-Scoped Users Group](../projects/about-projects.md#project-scoped-user-group)  
+       - [Enable Project-Scoped Users Group](../projects/about-projects.md#project-scoped-user-group) 
+      
+      
+      
+      **Set object-level permissions**
+       - [Set object-level permissions](set-object-level-permissions.md) 
    :::column-end:::
    :::column span="1":::
       **Set organization policies**  
@@ -258,6 +263,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [About Microsoft Security Code Analysis](/azure/security/develop/security-code-analysis-overview)
        - [Microsoft Threat Modeling Tool](/azure/security/develop/threat-modeling-tool)
        - [Security in DevOps (DevSecOps)](/devops/operate/security-in-devops)
+       - [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github)
    :::column-end:::
 :::row-end:::
 ---

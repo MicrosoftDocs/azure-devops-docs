@@ -6,7 +6,6 @@ description: Understand the services provided in Azure DevOps.
 ms.technology: devops-new-user 
 ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
-ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -22,7 +21,7 @@ With Azure DevOps, you gain an integrated set of services and tools to manage yo
 
 ::: moniker range=">= azure-devops-2019"
 
-You access Azure DevOps services through the left pane, as shown in the following image. To jump to information for each major service, see the associated articles. 
+You access Azure DevOps Services through the left pane, as shown in the following image. To jump to information for each major service, see the associated articles. 
 
 ---
 :::row:::
@@ -47,7 +46,7 @@ You access Azure DevOps services through the left pane, as shown in the followin
 
 ::: moniker range="<= tfs-2018"
 
-You access Azure DevOps services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
+You access Azure DevOps Services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
 
 ![Azure DevOps Services, main](../media/services-hubs.png) 
 

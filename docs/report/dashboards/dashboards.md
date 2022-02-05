@@ -306,6 +306,7 @@ As you can see, you can use team dashboards to provide guidance and keep your te
   
 ## Related articles
 
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Add a team](../../organizations/settings/add-teams.md)
 - [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)

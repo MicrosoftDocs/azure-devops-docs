@@ -6,6 +6,7 @@ ms.topic: article
 ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
+ms.reviewer: jominana
 ms.date: 08/18/2021
 monikerRange: 'azure-devops'
 ---

@@ -10,6 +10,8 @@ monikerRange: ">=azure-devops-2019"
 
 # Trigger one pipeline after another (classic)
 
+[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
+
 > [!div class="op_single_selector"]
 > - [YAML pipelines](pipeline-triggers.md)
 > - [Classic pipelines](pipeline-triggers-classic.md)

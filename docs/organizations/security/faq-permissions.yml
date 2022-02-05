@@ -3,10 +3,9 @@ metadata:
   title: Permissions and access frequently asked questions 
   description: Learn about frequently asked questions (FAQs) on permissions and access in Azure DevOps.
   titleSuffix: Azure DevOps
-  ms.custom:
-  ms.technology: azure-devops
+  ms.technology: devops-security
   ms.author: chcomley
-  author: ChComley
+  author: chcomley
   ms.topic: FAQ
   monikerRange: 'azure-devops'
   ms.date: 03/30/2021

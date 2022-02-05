@@ -132,24 +132,24 @@
   - name: Authentication guidance 
     href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: permission, security, mechanism, type, application
-  - name: Authenticate access with personal access tokens
+  - name: Use personal access tokens (PATs)
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: permission, security, credential, sign, in
-  - name: Manage personal access tokens via API
+  - name: Manage PATs via API
     href: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayName: lifecycle, authenticate, 
+    displayName: lifecycle, authenticate
+  - name: Revoke user PATs (for admins)
+    href: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: delete, remove, token, administrator
   - name: Authorize access to REST APIs with OAuth 2.0
     href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: authenticate, access, token, app, security
   - name: Use SSH key authentication
     href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: access, security
-  - name: Use Git Credential Manager Core 
+  - name: Use Git Credential Manager 
     href: ../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: authenticate, access, security
-  - name: Revoke users' PATs (for admins)
-    href: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayName: delete, remove, token, administrator
 - name: Secure projects
   items:
   - name: Change individual permissions
@@ -158,6 +158,9 @@
   - name: Set project-level permissions
     href: set-project-collection-level-permissions.md
     displayName: access, security, add, remove, project, administrators, collection
+  - name: Set object-level permissions
+    href: set-object-level-permissions.md
+    displayName: artifacts, boards, repos, projects, area, iteration, path, work items, access
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md
     displayName: give, revoke, access, users
@@ -291,7 +294,7 @@
     href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: create, update, user, group, access, security
   - name: Set SharePoint project portal permissions
-    href: set-sharepoint-permissions.md
+    href: /previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions
     displayName: access, settings
 - name: Reference
   items:
@@ -305,3 +308,6 @@
     href: add-manage-security-groups.md 
   - name: Manage permissions with CLI
     href: manage-tokens-namespaces.md
+  - name: Enable DevSecOps with Azure and GitHub
+    href: /devops/devsecops/enable-devsecops-azure-github
+

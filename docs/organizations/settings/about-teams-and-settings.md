@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 09/09/2020
+ms.date: 02/03/2022
 ---
 
 # About teams and Agile tools
@@ -43,6 +43,9 @@ Teams make their selections as follows:
 - Feature teams can choose one or more area paths to specify which work items will appear on their backlogs and boards. 
 - Management teams typically choose all area paths that their feature teams work on.
 - Additionally, management teams may only focus on Features and Epics, while Feature teams may focus only on product backlog items such as User Stories (Agile), Product Backlog Items (Scrum), and Requirements (CMMI).
+
+> [!NOTE]  
+> Teams can be assigned a maximum of 300 **Area Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
 
 For steps to define area paths and assign them to a team, see [Define area paths and assign to a team](set-area-paths.md). 
 
