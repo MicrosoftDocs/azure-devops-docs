@@ -118,6 +118,9 @@ steps:
 
 - **current**: download artifacts produced by the current pipeline run. Options: current, specific.
 
+> [!NOTE]
+> List of published artifacts will be available only in following dependant jobs. Therefore, use `current` option only in separate jobs, that has dependency on jobs with publish artifacts tasks. 
+
 > [!TIP]
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
