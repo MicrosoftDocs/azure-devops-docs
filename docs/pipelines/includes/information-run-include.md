@@ -22,3 +22,4 @@ You can recognize an information pipeline run by the following attributes:
     - `Could not retrieve the tree object {tree_sha} from the repository {repo_name} hosted on {host}.`
     - `Could not find {file_path} from repository {repo_name} hosted on {host} using version {commit_sha}. One of the directories in the path contains too many files or subdirectories.`
 - Run name generally contains the BitBucket / GitHub error that caused the YAML pipeline load to fail
+- No stages / jobs / steps
