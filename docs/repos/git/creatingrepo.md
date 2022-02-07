@@ -277,7 +277,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/creatingrepo/git-visual-studio-2019/push-to-git-service-git-menu.png" border="true" alt-text="Screenshot of the 'Push to Git service' option in the in Visual Studio 2019 context menu." lightbox="media/creatingrepo/git-visual-studio-2019/push-to-git-service-git-menu-lrg.png":::
 
-    2. In the **Create a Git repository** window, choose **GitHub**, select your **GitHub** account, owner name, and new repo name, and then choose **Push**.
+    2. In the **Create a Git repository** window, choose **GitHub**, select your **GitHub** account, owner name, and a new repo name, and then choose **Push**.
 
        :::image type="content" source="media/creatingrepo/git-visual-studio-2019/create-git-repo-window-remote-github.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window, with the URL of an empty GitHub repo, in Visual Studio 2019." lightbox="media/creatingrepo/git-visual-studio-2019/create-git-repo-window-remote-github-lrg.png":::
 
