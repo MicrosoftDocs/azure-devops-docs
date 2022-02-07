@@ -151,7 +151,7 @@ stages:
   dependsOn: Build
 
   jobs:
-  - deployment: Deploy
+  - deployment: MyDeploy
     condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
     displayName: Deploy
     pool:
