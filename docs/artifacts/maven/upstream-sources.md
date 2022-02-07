@@ -3,7 +3,7 @@ title: Use packages from Maven Central
 description: How to use packages from Maven upstream
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 01/28/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
-With upstream sources, you can use both private packages you've created and public packages from Maven Central. When you enable upstream sources in your feed, Azure Artifacts will save a copy of any packages you install from Maven central.
+With upstream sources, you can use both private packages you've created and public packages from Maven Central. When you enable upstream sources in your feed, Azure Artifacts will save a copy of any packages you install from Maven central. Azure Artifacts also support other Maven upstream sources such as Google Maven Repository, Gradle Plugins, and JitPack.
 
 > [!NOTE]
 > Maven snapshots are not supported in upstream sources.

@@ -139,7 +139,7 @@ This command deletes all the subscriptions related to any pipeline in the projec
 > [!IMPORTANT] 
 > Only Project Administrators can run this command.
 
-<!-- ## Link your notifications
+## Link your notifications
 
 Link a set of related notifications to reduce the space occupied by notifications in a channel. All notifications linked to a particular run of a pipeline get linked together.
 
@@ -152,7 +152,7 @@ Link a set of related notifications to reduce the space occupied by notification
 
 > [!div class="mx-imgBorder"]
 > ![Expanded thread](./media/integrations-teams/threads-pipelines-expanded-view.png)
- -->
+
 ## Use commands in Azure Pipelines app
 
 See the following commands supported by the Azure Pipelines app:

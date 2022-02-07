@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 03/19/2020
+ms.date: 02/01/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -154,7 +154,7 @@ To open your user and workspace settings, use the following VS Code menu command
 
 You can also open the Settings editor from the Command Palette (`Ctrl+Shift+P`) with Preferences: Open Settings or use the keyboard shortcut (`Ctrl+,`).
 
-When you open the settings editor, you can search and discover settings you are looking for. Search for the name `deployToAzure.UseAzurePipelinesForGithub` and enable as shown below.
+When you open the settings editor, you can search and discover settings you’re looking for. Search for the name `deployToAzure.UseAzurePipelinesForGithub` and enable as shown below.
 
 ![Search for and enable deployToAzure.UseAzurePipelinesForGithub.](media/deploy-to-azure/vscode-settings.png)
 
@@ -187,7 +187,7 @@ When you open the settings editor, you can search and discover settings you are 
 
     ![org](media/deploy-to-azure/azure-devops-org.png)
 
-1. Select an Azure DevOps project.
+1. Select an DevOps project.
 
     ![project](media/deploy-to-azure/azure-devops-project.png)
 
@@ -198,7 +198,7 @@ When you open the settings editor, you can search and discover settings you are 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
-1. Navigate to your Azure DevOps project to see the pipeline in progress.
+1. Navigate to your DevOps project to see the pipeline in progress.
 
     ![Navigate to your Azure DevOps project to see the pipeline in progress.](media/deploy-to-azure/pipeline-in-progress.png)
 
@@ -232,7 +232,7 @@ When you open the settings editor, you can search and discover settings you are 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
-1. Navigate to your Azure DevOps project to see the pipeline in progress.
+1. Navigate to your DevOps project to see the pipeline in progress.
 
     ![Navigate to your Azure DevOps project to see the Azure pipeline in progress.](media/deploy-to-azure/azure-pipelines-in-progress.png)
 

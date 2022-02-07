@@ -12,7 +12,7 @@ metadata:
   ms.technology: devops-collab
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/22/2020
+  ms.date: 01/25/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
-      url: /azure/devops/release-notes/index
+      url: https://aka.ms/azuredevops/releasenotes
     # Card
     - title: What's new in Azure DevOps documentation? 
       itemType: whats-new 
@@ -96,7 +96,7 @@ productDirectory:
           text: What is Azure Pipelines?
         - url: ./pipelines/create-first-pipeline.md
           text: Create your first pipeline
-        - url: ./pipelines/yaml-schema.md
+        - url: /azure/devops/pipelines/yaml-schema/
           text: YAML schema  
         - url: ./pipelines/process/variables.md
           text: Define variables
@@ -124,14 +124,14 @@ productDirectory:
       links:
         - url: ./artifacts/start-using-azure-artifacts.md
           text: What is Azure Artifacts?
-        - url: ./artifacts/start-using-azure-artifacts.md
-          text: Start using Azure Artifacts 
-        - url: ./artifacts/npm/npmrc.md
-          text: NuGet
-        - url: ./artifacts/get-started-npm.md
-          text: Use npm to store JavaScript packages
-        - url: ./artifacts/get-started-maven.md
-          text: Maven packages
+        - url: ./artifacts/concepts/feeds.md
+          text: Artifacts feeds
+        - url: ./artifacts/concepts/upstream-sources.md
+          text: Upstream sources
+        - url: ./artifacts/feeds/feed-permissions.md
+          text: Configure permissions
+        - url: ./pipelines/artifacts/artifacts-overview.md
+          text: Artifacts in Azure Pipelines
         - url: ./artifacts/index.yml
           text: See more >
     # Card

@@ -11,6 +11,8 @@ monikerRange: ">=azure-devops-2020"
 
 # Trigger one pipeline after another
 
+[!INCLUDE [version-server-2020](../../test/includes/version-2020-rtm.md)]
+
 > [!div class="op_single_selector"]
 > - [YAML pipelines](pipeline-triggers.md)
 > - [Classic pipelines](pipeline-triggers-classic.md)

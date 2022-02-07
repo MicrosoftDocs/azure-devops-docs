@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 08/18/2021
+ms.date: 01/26/2022
 ---
 
 # Default permissions quick reference for Azure DevOps
@@ -278,18 +278,15 @@ You can define and manage team dashboards from the web portal, **Dashboards**. F
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 [!INCLUDE [temp](includes/report.md)]
-
-::: moniker-end
-
+ 
 ::: moniker range="tfs-2013" 
 
 ## Dashboards and charts
 
 You can pin charts to a team dashboard **Home** page. 
 
-[!INCLUDE [temp](includes/report.md)]
+[!INCLUDE [temp](includes/report-tfs-2013.md)]
 
 ::: moniker-end
 

@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2019'
 ms.date: 06/24/2021
 ---
 
@@ -103,6 +103,8 @@ To give other users access to your organization, add their email addresses.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range=">= azure-devops-2020"
+
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
 <a id="add-user" />
@@ -157,6 +159,10 @@ az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM
 ```
 
 You can see all security groups in a project using the [az devops security group list](/cli/azure/devops/security/group#az-devops-security-group-list) command.
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -233,6 +239,8 @@ The Users view shows key information per user in a table. In this view, you can 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range=">= azure-devops-2020"
+
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
 <a id="update-user" />
@@ -295,6 +303,10 @@ ID                                    Display Name         Email                
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
 
 ```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 

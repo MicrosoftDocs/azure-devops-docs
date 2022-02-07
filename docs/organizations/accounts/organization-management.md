@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Manage your organizations
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 With an organization, you gain access to the platform in which you can do the following tasks:
 

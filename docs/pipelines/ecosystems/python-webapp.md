@@ -97,7 +97,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
    > [!TIP]
    > If you encounter a "Permission denied" error with a *.zip* file, you may have tried to run the command from a folder that doesn't contain a Python app. The `az webapp up` command then tries to create a Windows app service plan, and fails. 
 
-4. If your app uses a custom startup command, set the [az webapp config](/cli/azure/webapp/config?view=azure-cli-latest&preserve-view=true#az_webapp_config_set) property. For example, the *python-sample-vscode-flask-tutorial* app contains a file named *startup.txt* that contains its specific startup command, so you set the `az webapp config` property to `startup.txt`.
+4. If your app uses a custom startup command, set the [az webapp config](/cli/azure/webapp/config#az_webapp_config_set) property. For example, the *python-sample-vscode-flask-tutorial* app contains a file named *startup.txt* that contains its specific startup command, so you set the `az webapp config` property to `startup.txt`.
 
    1. From the first line of output from the previous `az webapp up` command, copy the name of your resource group, which is similar to **\<your-name>\_rg\_Linux\_\<your-region>**.
 
@@ -416,7 +416,7 @@ The following steps do the equivalent of the `az webapp up` command:
 
 To avoid incurring charges on the Azure resources created in this tutorial, delete the resource group that contains the App Service and the App Service Plan. To delete the resource group from the Azure portal, select **Resource groups** in the left navigation. In the resource group list, select the **...** to the right of the resource group you want to delete, select **Delete resource group**, and follow the prompts.
 
-You can also use [az group delete](/cli/azure/group?view=azure-cli-latest&preserve-view=true#az_group_delete) in the Cloud Shell to delete resource groups.
+You can also use [az group delete](/cli/azure/group#az_group_delete) in the Cloud Shell to delete resource groups.
 
 To delete the storage account that maintains the file system for Cloud Shell, which incurs a small monthly charge, delete the resource group that begins with **cloud-shell-storage-**.
 

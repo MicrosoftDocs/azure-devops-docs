@@ -148,7 +148,7 @@ pool:
   vmImage: 'ubuntu-18.04' # examples of other options: 'macOS-10.15', 'windows-2019'
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](../yaml-schema.md#pool) for further examples.
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema/pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the [UseDotNet@2](../tasks/tool/dotnet-core-tool-installer.md) task to your YAML file.
@@ -648,7 +648,7 @@ Repeat the same commands in the same order on your development machine to locate
   you should also use the **NuGet** task to restore packages specified in `packages.config` files.
 Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
-* Your builds might fail intermittently while restoring packages. Dither NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You may want to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
+* Your builds might fail intermittently while restoring packages: either NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You may want to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
 
 * Occasionally, when we roll out a new version of the .NET Core SDK or Visual Studio, your build might break. For example, if a newer version or feature of the NuGet tool gets shipped with the SDK. To isolate this issue, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK that's used in your build.
 

@@ -23,7 +23,7 @@ A branch that has required policies configured can't be deleted, and requires pu
 
 - To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 
-- If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy?view=azure-cli-latest&preserve-view=true) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+- If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
@@ -337,13 +337,13 @@ To set the policy, under **Branch Policies**, set **Check for linked work items*
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking) to create and update work item linking policies for a branch or repository.
+You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking#az_repos_policy_work_item_linking) to create and update work item linking policies for a branch or repository.
 
 <a id="create-wi-policy" /> 
 
 ### Create work item linking policy
 
-Use [az repos policy work-item-linking create](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az-repos-policy-work-item-linking-create) to create a work item linking policy for a repository or branches.
+Use [az repos policy work-item-linking create](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking-create) to create a work item linking policy for a repository or branches.
 
 ```azurecli
 az repos policy work-item-linking create --blocking {false, true}
@@ -375,7 +375,7 @@ az repos policy work-item-linking create --blocking {false, true}
 
 ### Update work item linking policy
 
-Use [az repos policy work-item-linking update](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az-repos-policy-work-item-linking-update) to update a work item linking policy for a repository or one or more branches.
+Use [az repos policy work-item-linking update](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking-update) to update a work item linking policy for a repository or one or more branches.
 
 ```azurecli
 az repos policy work-item-linking update --id

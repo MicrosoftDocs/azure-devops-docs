@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: "<= azure-devops"
-ms.date: 06/09/2021
+ms.date: 02/03/2022
 ---
 
 # Work tracking, process, and project limits
@@ -71,10 +71,13 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Taskboard | 1,000 tasks  | 
 | Teams | 5,000 per organization | 
 | Work item tags | 150,000 tag definitions per organization or collection | 
-| Area Paths | 10,000 per organization
-| Area Path Depth | 14
-| Iteration Paths | 10,000 per organization
-| Iteration Path Depth | 14
+| Area Paths | 10,000 per organization | 
+| Area Path Depth | 14 | 
+| Area Paths per team | 300 | 
+| Iteration Paths | 10,000 per organization | 
+| Iteration Path Depth | 14 | 
+| Iteration Paths per team | 300 | 
+
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
@@ -312,15 +315,10 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 TBD
 
 - Naming restrictions 
-
 - persistence of work items - they don't delete 
 https://developercommunity.visualstudio.com/idea/849727/i-have-a-few-questions-about-usage-and-limits-for.html
 
 Usage limit warning -- can occur with a corrupt query 
 https://developercommunity.visualstudio.com/content/problem/778106/being-told-that-were-approaching-rate-limiting-thr.html
 
-
-
-
-  
 --> 

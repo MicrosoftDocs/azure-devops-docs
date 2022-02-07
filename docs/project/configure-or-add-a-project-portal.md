@@ -121,7 +121,7 @@ Configure this option when you aren't using SharePoint Products.
   
    5. If you aren't an administrator for the team project, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
   
-   6. If you haven't been granted Full Control for the SharePoint site, [get that permission now](../organizations/security/set-sharepoint-permissions.md).  
+   6. If you haven't been granted Full Control for the SharePoint site, [get that permission now](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).  
   
 3. Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
   
@@ -164,7 +164,7 @@ Configure this option when you aren't using SharePoint Products.
   
     ![Show Project Portal link on Documents page](media/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
-8. From your project portal, [add team member accounts to the Contributors group](../organizations/security/set-sharepoint-permissions.md) for the SharePoint site.  
+8. From your project portal, [add team member accounts to the Contributors group](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) for the SharePoint site.  
   
 ## Related notes 
 

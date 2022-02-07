@@ -510,7 +510,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="2":::
       - [Set test retention policies](../../test/how-long-to-keep-test-results.md)
       - [Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)
-      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)
+      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
    :::column-end:::
    :::column span="2":::
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
@@ -525,7 +525,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)
-      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)
+      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
    :::column-end:::
    :::column span="2":::
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
