@@ -116,7 +116,6 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2022 through Janu
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-01-01..2022-01-31).
 
 - [anyway to publish to a artifact feed view? #11900](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11900)
-- [Malicious Script embedded #11897](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11897)
 - [Tipp is out of date #11896](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11896)
 - [Error in Source Code #11888](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11888)
 - [More FAQs needed to describe upstream sources behavior #11869](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11869)
