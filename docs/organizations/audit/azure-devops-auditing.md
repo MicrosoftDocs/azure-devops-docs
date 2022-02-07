@@ -27,13 +27,18 @@ Audit changes occur whenever a user or service identity within the organization 
 
 Events are stored for 90 days, after which they are deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
 
+Auditing events can be accessed through two methods on the Auditing page in your Organization Settings:
+- Through the Auditing logs available under the main Logs tab, and
+- via any Auditing streams set up through the [Streams](auditing-streaming.md) tab.
+
+> [!NOTE]
+> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an [Auditing stream](auditing-streaming.md) from an Azure DevOps Services instance to an on-premises or cloud-based instance of Splunk, but you must make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
+
+
 ## Prerequisites
 
 Auditing is turned off by default for all Azure DevOps Services organizations and can be toggled on and off by Project Collection Administrators.
 By default, Project Collection Administrators are the only group that have full access to the Auditing feature.
-
-> [!NOTE]
-> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an [Auditing stream](auditing-streaming.md) to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ### Audit permissions
 
@@ -135,9 +140,6 @@ As you look through the audit events, you may find the *Category* and *Area* col
 
 ### Areas
 
-> [!Note]
-> While auditing is in a public preview, we're working hard to get more areas audited. We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
-
 |Area            |Description |
 |----------------|------------|
 | Auditing       | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
@@ -158,8 +160,12 @@ As you look through the audit events, you may find the *Category* and *Area* col
 | Release        | Create, modify, and delete releases and release pipelines in Azure Pipelines. Track deployments and deployment approvals.      |
 | Token          | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events are not currently logged. |
 
+We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
+
+For a full list of all events that we currently can emit through the Auditing feature, see the [Auditing Events List](/auditing-events.md).
+
 > [!Note]
-> Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit. 
+> Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events (or actions) your organization could emit. 
 
 ## Filter audit log by date and time
 
