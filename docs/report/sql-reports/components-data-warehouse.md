@@ -94,7 +94,7 @@ It will be referenced by the Code Churn fact table for the Checked In By propert
 
 ## Excel reports 
  
- Azure DevOps integrates with Microsoft Excel to allow you to use Microsoft Excel to manage your project and produce reports. Microsoft Excel provides pivot tables and charts for viewing and analyzing multi-dimensional data. You can bind these pivot tables directly to the Azure DevOps cube, so you can interact with the data in the cube. For more information about using Microsoft Excel for reporting, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
+ Azure DevOps integrates with Microsoft Excel to allow you to use Microsoft Excel to manage your project and produce reports. Microsoft Excel provides pivot tables and charts for viewing and analyzing multi-dimensional data. You can bind these pivot tables directly to the Azure DevOps cube, so you can interact with the data in the cube. For more information about using Microsoft Excel for reporting, see [Create Excel reports from a work item query](../admin/create-status-and-trend-excel-reports.md).  
   
 <a name="security"></a> 
 

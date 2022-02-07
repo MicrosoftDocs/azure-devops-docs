@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.assetid: f382806c-9509-45bf-b175-51a2c853621a
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops' 
 ms.date: 09/23/2021
 ---
 

@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/docs/report/create-status-and-trend-excel-reports.md",
+      "redirect_url": "/azure/devops/report/admin/create-status-and-trend-excel-reports",
+      "redirect_document_id": false
+    }
+  ]
+}

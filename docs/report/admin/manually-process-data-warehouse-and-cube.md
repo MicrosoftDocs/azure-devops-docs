@@ -7,7 +7,6 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops' 
 ms.date: 09/23/2021
 ---
 
@@ -42,15 +41,14 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 2. Sign in to the application-tier server and open the Warehouse Control Web Service by entering the following URL in a supported web browser:  
 
-	::: moniker range=">= azure-devops-2019"
 	`http://localhost:8080/DefaultCollection/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx`  
-	::: moniker-end
-	::: moniker range="< azure-devops-2019"
+	
+	Or,  
     ```
 	http://localhost:8080/VirtualDirectory/DefaultCollection/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx   
     ```
 	For VirtualDirectory, type the IIS Virtual Directory that was specified when TFS was installed. By default, the virtual directory is **tfs**. 
-	::: moniker-end
+	
 	If the project is on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
 
 3. The **WarehouseControlWebService** page opens.
