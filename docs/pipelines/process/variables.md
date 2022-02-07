@@ -560,6 +560,9 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
+ - To reference a variable from a different task within the same job, use `TASK.VARIABLE`.
+ - To reference a variable from a task from a different job, use `dependencies.JOB.outputs['TASK.VARIABLE']`.
+
 > [!NOTE]
 > By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
@@ -602,7 +605,10 @@ jobs:
 
 ### Use outputs in a different stage
 
-To use the output from a different stage at the job level, you use the `stageDependencies` syntax.
+To use the output from a different stage at the job level, you use the `stageDependencies` syntax:
+
+ - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`
+ - At the job level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
 
 ```yaml
 stages:
