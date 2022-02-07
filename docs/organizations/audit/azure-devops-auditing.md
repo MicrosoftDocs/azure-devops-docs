@@ -23,31 +23,27 @@ Audit changes occur whenever a user or service identity within the organization 
 - deleted resources
 - branch policy changes
 - auditing log access and downloads
-- and much more...
-
-> [!NOTE]
-> Auditing is currently in a Public Preview for Azure DevOps Services. Auditing isn't available for on-premises deployments. To connect auditing to an on-premises or cloud-based Splunk, make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
-
-During the Public Preview, Auditing will be turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which also ensures that you never miss an actionable event. After Public Preview, Auditing can be toggled on and off by Project Collection Administrators.
+- and much much more...
 
 Events are stored for 90 days, after which they are deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
 
 ## Prerequisites
 
-By default, Project Collection Administrators are the only group that have full access to the auditing feature.
+Auditing is turned off by default for all Azure DevOps Services organizations and can be toggled on and off by Project Collection Administrators.
+By default, Project Collection Administrators are the only group that have full access to the Auditing feature.
+
+> [!NOTE]
+> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an [Auditing stream](auditing-streaming.md) to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ### Audit permissions
 
-- Members of the **Project Collection Administrators** group have full access to all auditing features.
+- Members of the **Project Collection Administrators** group have full access to all Auditing features.
 - Members of the **Project Collection Valid Users** group can view the Auditing page and export audit logs.
 
 > [!NOTE]  
 > If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages.  To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 ## Access auditing
-
-> [!NOTE]
-> To enable the new user interface for the Organization Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page)
 
