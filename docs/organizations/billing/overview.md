@@ -1,7 +1,7 @@
 ---
 title: Overview of billing articles
 titleSuffix: Azure DevOps 
-ms.custom: seodec18, freshness-fy22
+ms.custom: seodec18, freshness-fy22, contperf-fy22q3
 description: Understand billing management tasks, including how to set up billing, make purchases, and change the Azure subscription for billing.
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b

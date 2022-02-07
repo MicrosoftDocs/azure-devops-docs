@@ -1,5 +1,5 @@
 ---
-title: Assign object-level permissions
+title: Set object-level permissions
 titleSuffix: Azure DevOps
 description: How to grant permission and access at the object-level - repos, pipelines, work items, area paths, queries, wikis, dashboards, and more.
 ms.technology: devops-agile
