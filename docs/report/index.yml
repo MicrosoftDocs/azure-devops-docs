@@ -136,7 +136,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Create Excel reports from a work item query
-            url: create-status-and-trend-excel-reports.md
+            url: ./admin/create-status-and-trend-excel-reports.md
           - text: Create a Detailed Report using Report Designer
             url: ./sql-reports/create-a-detailed-report-using-report-designer.md
           - text: Add reports to a team project

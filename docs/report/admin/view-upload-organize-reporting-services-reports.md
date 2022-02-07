@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.assetid: 6368a79e-32d4-4451-89de-0975530e3d17
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= tfs-2017" 
 ms.date: 09/23/2021
 ---
 

@@ -7,7 +7,6 @@ ms.technology: devops-analytics
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops' 
 ms.date: 09/23/2021
 ---
 
@@ -94,7 +93,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 ## Related notes
  
-- [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)  
+- [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md)  
 
     
 

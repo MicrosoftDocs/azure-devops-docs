@@ -7,7 +7,6 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops' 
 ms.date: 09/23/2021
 ---
 
@@ -41,15 +40,17 @@ You can determine the current settings and change a setting by using the Warehou
 1. Sign in to the application-tier server.
 
 2. Open a web browser, type the following string in the Address bar, and then press ENTER:
-	::: moniker range=">= azure-devops-2019"
+	
 	`http://localhost:8080/DefaultCollection/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx`  
-	::: moniker-end
-	::: moniker range="< azure-devops-2019"
+	
+	Or,  
+
     ```
 	http://localhost:8080/VirtualDirectory/DefaultCollection/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx   
     ```
+
 	For VirtualDirectory, type the IIS Virtual Directory that was specified when TFS was installed. By default, the virtual directory is **tfs**. 
-	::: moniker-end
+	
 	If the project is on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
 
 	The **WarehouseControlWebService** page opens.
