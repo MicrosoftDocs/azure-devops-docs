@@ -114,7 +114,7 @@ To use a private pool with no demands:
 pool: MyPool
 ```
 
-For more information, see the [YAML schema](../yaml-schema.md) for [pools](../yaml-schema.md#pool).
+For more information, see the [YAML schema](/azure/devops/pipelines/yaml-schema) for [pools](/azure/devops/pipelines/yaml-schema/pool).
 
 # [Classic](#tab/classic)
 

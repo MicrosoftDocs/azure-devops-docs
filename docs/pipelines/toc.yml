@@ -84,6 +84,8 @@
           displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
         - name: Add a custom task extension
           href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+        - name: Upload tasks to project collection
+          href: ../extend/develop/upload-tasks.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Jobs & stages
       items:
         - name: Specify jobs in your pipeline
@@ -965,7 +967,7 @@
 - name: Reference
   items:
     - name: YAML schema
-      href: yaml-schema.md
+      href: /azure/devops/pipelines/yaml-schema/
       displayName: pipeline structure, pipeline, stage, job, steps, variables, templates, resources, triggers, ci trigger, push trigger, pr trigger, comment trigger, pool, server, script, bash, pwsh, powershell, checkout, task
     - name: Expressions
       href: process/expressions.md

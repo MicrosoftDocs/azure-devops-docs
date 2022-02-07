@@ -11,6 +11,8 @@ monikerRange: '> azure-devops-2019'
 
 # Multi-stage pipelines user experience
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. This article shows you how to view and manage your pipelines using this new experience.
 
 ## Navigating pipelines
@@ -173,7 +175,7 @@ Learn more about configuring pipelines in the language of your choice:
 
 Learn more about building [Azure Repos](../repos/azure-repos-git.md) and [GitHub](../repos/github.md) repositories.
 
-To learn what else you can do in YAML pipelines, see [Customize your pipeline](../customize-pipeline.md), and for a complete reference see [YAML schema reference](../yaml-schema.md).
+To learn what else you can do in YAML pipelines, see [Customize your pipeline](../customize-pipeline.md), and for a complete reference see [YAML schema reference](/azure/devops/pipelines/yaml-schema).
 
 
 

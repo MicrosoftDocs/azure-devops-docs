@@ -290,7 +290,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end
 
-
+<a id="add-group" />
 <a id="collection-level" />
 
 ## Add a group and change its permissions at the organization or collection-level group 
@@ -497,7 +497,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you'll nee
 ::: moniker range="<= tfs-2017"
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
 
-* [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
+* [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
 * [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)
 
 ::: moniker-end 
@@ -552,9 +552,9 @@ A: You can find detailed information about individual permissions and their rela
 > [Manage projects](../projects/about-projects.md)
 
 ## Related articles
-
+- 
+- [Set object-level permissions](set-object-level-permissions.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-- [Troubleshoot permissions](troubleshoot-permissions.md)

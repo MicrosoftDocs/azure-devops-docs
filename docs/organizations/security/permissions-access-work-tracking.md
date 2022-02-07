@@ -380,7 +380,7 @@ If your on-premises deployment includes reporting, add users to those resources.
 
 ::: moniker range="<= tfs-2017"  
 
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md) and [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
+If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md) and [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).
 
 ::: moniker-end  
 

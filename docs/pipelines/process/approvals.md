@@ -12,7 +12,7 @@ monikerRange: azure-devops
 
 # Define approvals and checks
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [azure-pipelines](../includes/version-team-services.md)]
 
 A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining [conditions](conditions.md) on the stage. Another way to control if and when a stage should run is through **approvals and checks**. 
 
@@ -87,7 +87,6 @@ The checks fail if the stage has not started execution within the specified **Ti
 
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
-
 
 ## Invoke REST API
 

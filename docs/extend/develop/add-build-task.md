@@ -8,7 +8,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-date: 01/03/2022
+date: 01/27/2022
 ---
 
 # Add a custom pipelines task extension
@@ -33,7 +33,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 - An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
-  The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
+  The production environment uses only Node10 or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
 - TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
 - [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
@@ -540,7 +540,7 @@ Create a new Visual Studio Marketplace service connection and grant access permi
 
 ![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)
 
-Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](../../pipelines/yaml-schema.md?tabs=schema%2Cparameter-schema).
+Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
 
 ```yaml
 trigger: 
