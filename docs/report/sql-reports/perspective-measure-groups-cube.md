@@ -74,6 +74,6 @@ A cube represents a set of measures that are grouped into measure groups and hie
 ## Related articles
 
 -  [Resolve schema conflicts occurring in the data warehouse](../admin/resolve-schema-conflicts.md)   
--  [Create status and trend reports in Excel](../create-status-and-trend-excel-reports.md)   
+-  [Create status and trend reports in Excel](../admin/create-status-and-trend-excel-reports.md)   
 -  [Manage reports, data warehouse, and cube](../admin/manage-reports-data-warehouse-cube.md)
 -  [Dashboards and reports](../dashboards/overview.md)
