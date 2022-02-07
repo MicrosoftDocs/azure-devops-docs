@@ -26,7 +26,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2022 through Janu
 
 ### Updated articles
 
-- [Index to az devops examples](/azure/devops/cli/quick-reference)
+- [Index to Azure DevOps examples](/azure/devops/cli/quick-reference)
 - [Add a custom pipelines task extension](/azure/devops/extend/develop/add-build-task)
 
 ## Notifications
