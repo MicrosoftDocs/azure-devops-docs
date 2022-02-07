@@ -161,7 +161,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
   displayName: Deploy stage
   dependsOn: Build
   jobs:
-  - deployment: Deploy
+  - deployment: MyDeploy
     displayName: Deploy job
     pool:
       vmImage: $(vmImageName)
