@@ -60,7 +60,7 @@ By carrying out the following steps, you can create a progress report for testin
   
 1.  In Excel, connect to the Analysis Services cube for Azure DevOps Server, and then insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../admin/create-status-and-trend-excel-reports.md).  
   
 2.  Right-click the chart, then choose **Change Chart Type**, **Area**, **Stacked Bar**.  
   

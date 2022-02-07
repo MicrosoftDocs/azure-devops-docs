@@ -19,7 +19,7 @@ You can analyze current or historical data for work items and test cases by usin
  The Work Item perspective is based on the relational tables that enable reporting on work items as either a property of the work item or a linked work item. For more information, see [Work Item History tables](work-item-history-tables.md).  
   
 > [!NOTE]  
-> You can use **Create Report in Microsoft Excel** to create status and trend reports based on a work item query. For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
+> You can use **Create Report in Microsoft Excel** to create status and trend reports based on a work item query. For more information, see [Create Excel reports from a work item query](../admin/create-status-and-trend-excel-reports.md).  
   
 
 ![Work Item Measure Group](media/rpt_wit_mg.png "RPT_WIT_MG")  
@@ -53,7 +53,7 @@ You can create a bug reactivations report by carrying out the following steps:
   
 1.  In Excel, connect to the Analysis Services cube for Azure DevOps Server, and insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../admin/create-status-and-trend-excel-reports.md).  
   
 2.  Open the shortcut menu for the chart, choose **Change Chart Type**, choose **Area**, and then choose **Stacked Area**.  
   
