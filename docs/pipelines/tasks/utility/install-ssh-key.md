@@ -141,6 +141,52 @@ steps:
 > [!NOTE]
 > Your public key should be added to the repository\organization otherwise you'll get issue with the access. For GitHub please follow [the guide above](#example-setup-using-github). For Azure DevOps Services please use the following guide: [Add the public key to Azure DevOps Services/TFS](../../../repos/git/use-ssh-keys-to-authenticate.md).
 
+## Multiple Install SSH Key tasks in the same pipeline job.
+
+When using more than one key in the same pipeline job, the first one is used by default. To be able to use the desired key when establishing an SSH connection, you can use the `Advanced` section of the `InstallSSHKey` task to set the following parameters:
+* `addEntryToConfig` — Add entry related to the key installed to the SSH config file. The key file will be available for all subsequent tasks.
+* `configHostAlias` — Name of SSH config entry.
+* `configHostname` — Host name property of SSH config entry.
+* `configUser` — Username property of SSH config entry.
+* `configPort` — Port of SSH config entry.
+
+These parameters allow you to add a host to the SSH config file (e.g. `/root/.ssh/config` for Linux) in order to further use it in scripts via alias.
+This file will be removed from the agent after build will be finished, for security purposes.
+
+Multiple keys usage example:
+```yml
+pool: <Some Agent Pool>
+
+steps:
+- task: InstallSSHKey@0
+  inputs:
+    knownHostsEntry: $(known_host)
+    sshPublicKey: $(first_public_key)
+    sshKeySecureFile: $(first_private_key)
+    addEntryToConfig: true
+    configHostAlias: <first-host-alias>
+    configHostname: github.com
+    configUser: git
+  displayName: Install First Repo SSH Key
+
+- task: InstallSSHKey@0
+  inputs:
+    knownHostsEntry: $(known_host)
+    sshPublicKey: $(second_public_key)
+    sshKeySecureFile: $(second_private_key)
+    addEntryToConfig: true
+    configHostAlias: <second-host-alias>
+    configHostname: github.com
+    configUser: git
+  displayName: Install Second Repo SSH Key
+
+- bash: git clone git@<first-host-alias>:<owner>/<first-repo>.git
+  displayName: Clone First Repo
+
+- bash: git clone git@<second-host-alias>:<owner>/<second-repo>.git
+  displayName: Clone Second Repo
+```
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
