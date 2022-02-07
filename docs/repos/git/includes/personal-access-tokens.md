@@ -144,7 +144,8 @@ In PowerShell, enter the following code.
 
 ```powershell
 $MyPat = ':PatStringFromWebUI'
-$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$MyPat"))
+$UserName = ':UserNameToUseWithToken'
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$UserName:$MyPat"))
 git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
