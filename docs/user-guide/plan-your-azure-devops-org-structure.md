@@ -15,7 +15,7 @@ ms.date: 11/16/2020
 
 # Plan your organizational structure
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-all.md)]
 
 Your business structure should act as a guide for the number of organizations, projects, and teams that you create in Azure DevOps. This article helps you plan for different structures and scenarios for Azure DevOps.  
 

@@ -12,7 +12,7 @@ ms.date: 05/08/2019
 
 # Make your extension or integration public
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-azure-devops.md)]
 
 > **Developing for Visual Studio or Visual Studio Code?** If so, you do not need to request verification. Verification is only required for Azure DevOps integrations or extensions.
 

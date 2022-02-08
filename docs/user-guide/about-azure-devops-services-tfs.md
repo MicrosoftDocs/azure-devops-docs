@@ -16,7 +16,7 @@ ms.date: 01/13/2021
 
 # Compare Azure DevOps Services with Azure DevOps Server
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 The **cloud offering**, Azure DevOps Services, provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 

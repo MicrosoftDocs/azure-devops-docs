@@ -13,7 +13,7 @@ ms.date: 07/22/2021
 
 # Add or remove a team administrator 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 
 <a id="add-team-admin">  </a>  

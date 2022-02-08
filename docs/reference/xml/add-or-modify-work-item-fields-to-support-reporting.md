@@ -15,7 +15,7 @@ ms.date: 02/10/2017
 
 # Add or modify work item fields to support reporting
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and project to support reporting. See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md). 

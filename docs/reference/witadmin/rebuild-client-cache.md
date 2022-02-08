@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Rebuild the client cache
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 After certain maintenance operations, client computers require a cache refresh. After you move, restore, rename, or fail over a data-tier or application-tier server, you must refresh the cache for tracking work items and users must refresh the version control cache on client computers.  
 

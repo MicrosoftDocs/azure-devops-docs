@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Quickstart: Code with Git
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 In this quickstart, learn how to share your code with others. After you create a new organization and project in Azure DevOps, you can begin coding with Git.
 

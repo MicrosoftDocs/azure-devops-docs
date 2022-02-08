@@ -7,7 +7,7 @@ ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2017'
 ms.date: 04/15/2020
 ---
 

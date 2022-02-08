@@ -8,16 +8,16 @@ ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '< azure-devops' 
+monikerRange: '<= azure-devops' 
 ms.date: 12/15/2017  
 ---
 
 # Add a portfolio backlog level
 
-[!INCLUDE [temp](../includes/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 > [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 
+>This article applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](customize-work.md).  
 

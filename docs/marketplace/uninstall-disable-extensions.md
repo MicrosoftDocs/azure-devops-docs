@@ -17,6 +17,10 @@ monikerRange: '>= tfs-2015'
 
 Learn how to uninstall or disable an extension that you don't need.
 
+
+> [!NOTE]
+> Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](install-extension.md). 
+> 
 ## Prerequisites
 
 You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) to uninstall or disable extensions.
@@ -110,9 +114,9 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 * * *
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="> tfs-2017 < azure-devops"
 
-## Uninstall extensions from the local gallery in TFS or Azure DevOps Server
+## Uninstall extensions from the local gallery in Azure DevOps on-premises server
 
 1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
 
@@ -122,7 +126,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="> tfs-2017 < azure-devops"
 
 ## Uninstall extensions in a collection
 
@@ -133,6 +137,31 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
    ![Remove extension](media/remove-extension-TFS.png)
 
 ::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+## Uninstall or disable extension
+
+1. From your TFS home page (```https://{server}:8080/tfs/```), go to the project collection where you want to uninstall or disable the extension.
+
+2. Select **Manage extensions**.
+
+   **TFS 2015 Update 3**
+
+   <img alt="Manage extensions in TFS 2015 Update 3." src="media/manage-extensions.png" />
+
+   **TFS 2017**
+
+   <img alt="Manage extensions" src="media/manage-extensions2-new.png" />
+
+3. On the extensions tab, select the extension, and then uninstall or disable it.
+
+   <img alt="Uninstall or disable an extension" src="media/uninstall-disable.png" />
+
+   [[Need help?](faq-extensions.yml)]
+
+::: moniker-end
+
 
 ::: moniker range="azure-devops"
 

@@ -14,7 +14,7 @@ ms.date: 09/17/2020
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-azure-devops.md)]
 
 <a id="inherited" /> 
 

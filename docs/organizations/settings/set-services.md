@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Turn a service on or off
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-azure-devops.md)]
 
 You can control which services are available through the web portal, by turning a service on or off. Turning off a service removes the service from the user interface for all project users. However, service data's preserved and available if you decide to turn on the service.  
 
