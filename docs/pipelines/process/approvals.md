@@ -88,6 +88,7 @@ The checks fail if the stage has not started execution within the specified **Ti
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
+
 ## Invoke REST API
 
 Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
