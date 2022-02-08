@@ -44,7 +44,8 @@ sections:
           - If you need to create a project, [create one on-premises](../organizations/projects/create-project.md).
           - If you don't have access to the project, [get invited to the team](../organizations/security/add-users-team-project.md).  
           - If it's your first time connecting to a project, see [Connect to a project](../organizations/projects/connect-to-projects.md).  
-        
+          ::: moniker-end
+          
       - question: How do I connect with a client tool?
         answer: |
           Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
@@ -54,8 +55,6 @@ sections:
           - [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)
           - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
           - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
-          
-          ::: moniker-end
           
       - question: How much does Azure DevOps cost?
         answer: |
