@@ -18309,6 +18309,36 @@
       "source_path_from_root": "/docs/repos/git/share-your-code-in-git-vs-2017.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/administration.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/advanced-code-search-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/code-search.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/work-item-search.md",
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/index.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
     }
   ]
 }
