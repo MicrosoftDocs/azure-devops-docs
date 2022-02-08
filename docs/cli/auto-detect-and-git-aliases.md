@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Auto detect configuration and git aliases
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 The Azure DevOps CLI has been optimized to allow developers to use Azure Repos and work well with their git workflows.
 

@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Requirements field reference for the CMMI process in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="fields" /> 
 

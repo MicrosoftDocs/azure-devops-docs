@@ -13,7 +13,7 @@ ms.date: 09/13/2021
 
 # Set permissions and access for testing
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To exercise the full features of Azure Test Plans, you must be granted [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
 

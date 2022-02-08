@@ -13,7 +13,7 @@ ms.date: 10/20/2021
 
 # Implement Agile practices that scale
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Enterprise organizations adopt Agile practices for many reasons. Prime among these reasons include:  
 

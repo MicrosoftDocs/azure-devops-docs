@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Index of system or basic work item fields in Azure Boards 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to look up a description of a field used to track an issue, task, or epic. This reference includes all fields defined for the Basic process. If you use another process&mdash;such as Agile, CMMI, or Scrum&mdash;see [Work item field index](work-item-field.md) for more field definitions.
  

@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Default TFVC permissions
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 All members of the Contributors group with Basic access can contribute to a TFVC repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to the repository as listed below.
 

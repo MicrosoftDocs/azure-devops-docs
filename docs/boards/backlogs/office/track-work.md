@@ -13,7 +13,7 @@ ms.date: 11/19/2021
 
 # Connect Azure Boards to an Office client 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 
 ::: moniker range=">= azure-devops-2019"

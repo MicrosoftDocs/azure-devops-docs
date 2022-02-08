@@ -13,7 +13,7 @@ ms.date: 09/28/2021
 
 # Set dashboard permissions    
 
-[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 <a id="set-permissions">  </a>
 

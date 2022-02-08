@@ -13,7 +13,7 @@ ms.date: 04/15/2020
 
 # Configure or add a project portal
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="> tfs-2017"
 

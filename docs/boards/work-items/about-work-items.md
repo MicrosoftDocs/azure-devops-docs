@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Track your work items in Azure Boards user stories, issues, bugs, features, and epics 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Track the features and requirements you're developing, code defects or bugs, and other details using work items. Work items are similar to GitHub issues, but offer different types to track various types of information.
 

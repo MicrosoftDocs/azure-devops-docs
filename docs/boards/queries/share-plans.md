@@ -16,7 +16,7 @@ ms.date: 10/26/2021
 # Share information within work items and social tools in Azure Boards
 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  

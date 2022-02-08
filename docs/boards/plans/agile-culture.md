@@ -13,7 +13,7 @@ ms.date: 10/20/2021
 
 # Promote an Agile culture within your team  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE] 
 > Are you new to Agile? Learn more about [Agile Culture](/devops/plan/adopting-agile) and [Scaling Agile to Large Teams](/devops/plan/scaling-agile).

@@ -13,7 +13,7 @@ ms.date: 06/04/2020
 
 # Permissions lookup guide for Azure DevOps
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [Get started with permissions, access, and security groups](about-permissions.md)and [About security roles](about-security-roles.md), and [Troubleshoot permissions](troubleshoot-permissions.md).  
 

@@ -13,7 +13,7 @@ ms.date: 11/19/2018
 
 # Design the work item form
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
+[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!IMPORTANT]  
 > This articles applies to project customization for the On-premises XML process model and for the old webform. For the new web form and for the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  

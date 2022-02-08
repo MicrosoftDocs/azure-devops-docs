@@ -14,7 +14,7 @@ ms.date: 09/20/2021
 
 # Adjust work to fit sprint capacity
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="adjust-work">  </a>
 

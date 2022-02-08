@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Connect your organization to Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to connect your Azure DevOps organization to [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis). You can sign in with the same username and password that you use with Microsoft services. Add members to your Azure DevOps organization who are already a part of your work organization. You can also enforce policies for accessing your team's critical resources and key assets. 
 

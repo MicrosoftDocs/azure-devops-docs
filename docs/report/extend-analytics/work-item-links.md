@@ -13,7 +13,7 @@ ms.date: 09/30/2020
 
 # Query for linked work items 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there's some extra complexity.
 

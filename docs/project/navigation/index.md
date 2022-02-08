@@ -14,7 +14,7 @@ ms.date: 11/11/2020
 
 # Web portal navigation in Azure DevOps  
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 ::: moniker range="azure-devops"
 

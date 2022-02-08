@@ -13,7 +13,7 @@ ms.date: 04/01/2021
 
 # Validate and resolve errors related to process templates
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 As part of the migration import process, the data migration tool checks the process used by the projects in the collection. Fix any errors that get flagged.  
 

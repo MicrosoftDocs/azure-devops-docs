@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Contribution model
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Extensions add new capabilities into the system by providing contributions and by defining ways for other extensions to plug in to them.
 A contribution type defines something that can be added to the system. A contribution is a specific instance of a contribution type. For

@@ -14,7 +14,7 @@ ms.date: 02/16/2021
 
 # Manage your project 
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-all.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 

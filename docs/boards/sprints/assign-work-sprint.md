@@ -15,7 +15,7 @@ ms.date: 09/20/2021
 
 # 1. Assign backlog items to a sprint in Azure Boards
  
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 The first step in planning your sprint is to assign work from your backlog to a sprint. Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. Each sprint corresponds to a time-boxed interval that supports your team's ability to work using Agile processes and tools. During the planning meeting, your product owner works with your team to identify those stories or backlog items to complete in the sprint.  
 

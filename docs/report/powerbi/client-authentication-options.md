@@ -14,7 +14,7 @@ ms.date: 07/14/2020
 
 # Enter client credentials in Power BI or Excel 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range="azure-devops"
 

@@ -15,7 +15,7 @@ ms.date: 07/23/2020
 
 # Keyboard shortcuts for managing Wiki pages
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  

@@ -12,7 +12,7 @@ ms.date: 10/24/2019
 
 # What are extensions?
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps.
 They're written with standard technologies - HTML, JavaScript, CSS - and are developed using your preferred development tools.

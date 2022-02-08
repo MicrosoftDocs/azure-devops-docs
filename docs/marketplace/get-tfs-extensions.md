@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 # Install extensions for on-premises servers
 
-[!INCLUDE [version-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015-lt-azure-devops](../includes/version-gt-eq-2015-lt-azure-devops.md)]
 
 To add new features and capabilities to your Azure DevOps Server,
 install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).

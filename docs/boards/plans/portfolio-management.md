@@ -13,7 +13,7 @@ ms.date: 10/20/2021
 
 # Use Azure Boards to manage your product and portfolio backlogs 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Portfolio backlogs provide product owners insight into the work done by several agile feature teams. Product owners can define the high-level goals as Epics or Features. Feature teams can break down these work items into the user stories they'll prioritize and develop.  
 

@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 ---
 # Disconnect your organization from Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 <a name="DisconnectDirectory"></a>
 

@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Add panels on backlog pages
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Here, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
 

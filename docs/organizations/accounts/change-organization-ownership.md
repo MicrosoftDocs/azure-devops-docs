@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Change the organization owner
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 As roles and responsibilities change, you can change the owner for your organization.
 

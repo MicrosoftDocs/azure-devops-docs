@@ -12,7 +12,7 @@ ms.date: 03/15/2021
 
 # Integrate applications  
 
-[!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)] 
 
 You can build custom applications or services that integrate with Azure DevOps by using the **REST APIs** to make direct HTTP calls, or use our **.NET Client Libraries**.
 

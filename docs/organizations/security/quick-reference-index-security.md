@@ -14,7 +14,7 @@ ms.date: 01/13/2022
 
 # Security quick reference index
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts and tasks related to securing Azure DevOps. If you're new to Azure DevOps, see [What is Azure DevOps?](../../user-guide/what-is-azure-devops.md)   
 

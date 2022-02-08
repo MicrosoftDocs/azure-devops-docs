@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Rename your organization in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can change your organization name (URL) at any time in Azure DevOps. This article shows you how.
 

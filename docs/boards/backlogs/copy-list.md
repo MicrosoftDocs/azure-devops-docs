@@ -14,7 +14,7 @@ ms.date: 10/08/2021
 
 # Copy a list of stories, issues, or other work items
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="html"></a>
 

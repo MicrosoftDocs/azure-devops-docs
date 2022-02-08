@@ -1,4 +1,4 @@
-﻿### YamlMime:FAQ
+### YamlMime:FAQ
 metadata:
   title: Access via Azure AD FAQs
   ms.custom: seodec18, fasttrack-edit
@@ -13,7 +13,7 @@ metadata:
     
 title: Access via Azure AD FAQs
 summary: |
-  [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+  [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
   
   [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
   

@@ -15,7 +15,7 @@ ms.date: 10/26/2021
 
 # Publish a Git repository to a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 In this quickstart, learn how to do the following tasks:
 

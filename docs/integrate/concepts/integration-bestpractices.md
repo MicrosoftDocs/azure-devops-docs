@@ -14,7 +14,7 @@ ms.date: 07/15/2020
 
 # Best integration practices
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance.  This multi-tenancy leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, Azure DevOps Services enforces [Rate Limits](./rate-limits.md) to limit the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, later requests may be either delayed or blocked. 
 

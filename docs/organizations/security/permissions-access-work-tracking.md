@@ -13,7 +13,7 @@ ms.date: 11/20/2019
 
 # Permissions and access for work tracking
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Agile process work item types for workflow management in Azure Boards  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Teams use the work item types (WITs) provided with the Agile process. Work item types help your team to plan and track progress of software projects. You define user stories to manage the backlog of work. Then, using the Kanban board, you track progress by updating the status of those stories.
 

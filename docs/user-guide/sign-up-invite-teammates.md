@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Sign up, sign in to Azure DevOps
 
-[!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 Learn how to sign up for Azure DevOps for free. Also, sign in with a Microsoft or GitHub account, create an organization or project, and invite your teammates.
 

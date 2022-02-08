@@ -12,7 +12,7 @@ ms.date: 05/04/2021
 
 # Extension manifest reference
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Every extension has a JSON manifest file that defines basic info about the extension. The file also defines how it can extend and enhance the experience. This article shows you how to create a manifest for your extension to Azure DevOps.
 

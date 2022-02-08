@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Customize and manage the test experience
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Using the `tcm fieldmapping` command, you can customize the following three features that Azure Test Plans supports. 
 - Change the bug type used to automatically file bugs in Test Manager

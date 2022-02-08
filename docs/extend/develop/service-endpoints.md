@@ -12,7 +12,7 @@ ms.date: 09/27/2021
 
 # Create a service endpoint
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]

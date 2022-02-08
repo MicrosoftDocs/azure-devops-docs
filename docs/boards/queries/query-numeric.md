@@ -14,7 +14,7 @@ ms.date: 10/25/2021
 
 # Query by numeric fields in Azure Boards and Azure DevOps   
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 

@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Add a menu action
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 In this example, we add an action to the query context menu in the work item queries hub.
 

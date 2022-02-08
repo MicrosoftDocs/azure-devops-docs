@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 # Create a service hook for Azure DevOps with Slack
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps organization,
 such as completed builds, code changes, pull requests, releases, work items changes, and more.

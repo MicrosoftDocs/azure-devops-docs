@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Data storage
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Azure DevOps extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other organization and project data. It also means for simple data storage needs, you (as the extension provider) are not required to setup or manage (or pay for) third-party data storage services.
 

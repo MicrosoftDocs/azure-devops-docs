@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Troubleshoot common errors in Azure DevOps CLI
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 You can resolve most common errors encountered when running the team-level `az devops boards area` and `az devops boards iteration` commands by following the guidance provided in this article. 
 

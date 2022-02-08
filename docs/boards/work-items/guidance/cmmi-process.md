@@ -15,7 +15,7 @@ ms.date: 11/07/2021
 # Understand CMMI process template artifacts
 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They're based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts) process.
 

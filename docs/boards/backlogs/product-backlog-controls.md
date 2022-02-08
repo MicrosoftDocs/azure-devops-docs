@@ -15,7 +15,7 @@ ms.date: 10/08/2021
 
 # Use product backlog controls in Azure Boards  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="backlog-controls">  </a>
 

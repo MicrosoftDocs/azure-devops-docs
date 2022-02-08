@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Get support and provide feedback
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process! 
 

@@ -15,7 +15,7 @@ ms.date: 01/19/2022
 
 # Manage or enable features 
 
-[!INCLUDE [temp](../../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 ::: moniker range="azure-devops"
 

@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 

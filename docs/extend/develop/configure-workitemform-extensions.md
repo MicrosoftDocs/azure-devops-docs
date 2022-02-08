@@ -13,7 +13,7 @@ ms.date: 02/03/2022
 
 # Add extensions in work item form via work item type definition xml
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 You can export a work item type as xml using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml](../../reference/xml/weblayout-xml-elements.md). 
 

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 ---
 # Determine recipients of notification emails
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Many factors determine the recipients of an email notification when an event matches a subscription. If you're unaware, these factors can result in your inbox receiving too many or too few emails. Learn about how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 

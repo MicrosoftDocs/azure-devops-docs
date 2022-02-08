@@ -11,7 +11,7 @@ ms.date: 10/01/2021
 
 # Create a column in Power BI for last refresh date
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 After [creating a report](create-quick-report.md) and [publishing it to Power BI](publish-power-bi-desktop-to-power-bi.md), one of the most common requests is a way to determine the last time the data was refreshed.  
 

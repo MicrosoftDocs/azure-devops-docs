@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 # Create a service hook for Azure DevOps with Microsoft Teams 
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 See activity about your Azure DevOps Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 * Work item updates

@@ -16,7 +16,7 @@ ms.date: 10/26/2021
 
 # Triage work items with a work item query in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 **Visual Studio 2019 | Visual Studio 2015 | Visual Studio 2013**  
 
 Using a work item query you can quickly review and update work items. Teams often use the triage mode for a query to complete the following tasks: 

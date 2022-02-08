@@ -14,7 +14,7 @@ ms.date: 01/31/2022
 
 # Get started with permissions, access, and security groups  
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When it comes to accessing an Azure DevOps feature, it's helpful to understand the following key concepts. 
 

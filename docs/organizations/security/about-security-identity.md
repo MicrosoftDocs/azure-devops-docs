@@ -14,7 +14,7 @@ ms.date: 4/26/2021
 
 # About security, authentication, and authorization 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 

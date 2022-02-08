@@ -14,7 +14,7 @@ ms.date: 10/26/2021
 
 # View, run, or email a work item query  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 To find work items assigned to you or your team, run a query. Many work item queries are predefined with your process. Members of your team may have created shared queries that you can view and run. Often, it's easier to define a new query by building on the query definition that's already available to you. 

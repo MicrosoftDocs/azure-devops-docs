@@ -15,7 +15,7 @@ ms.date: 01/25/2021
 
 # Define a query as a hyperlink in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="define-query-hyperlink" />  
 

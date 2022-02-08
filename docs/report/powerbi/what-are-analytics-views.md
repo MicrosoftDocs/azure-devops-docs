@@ -13,7 +13,7 @@ ms.date: 10/13/2021
 
 # What are Analytics views?
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=865481  --> 
 

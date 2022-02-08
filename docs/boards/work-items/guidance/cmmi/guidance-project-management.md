@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Project management process in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 You can use the Project Management section of the MSF for Capability Maturity Model Integration (CMMI) process improvement guidance to better understand how to manage, plan, and coordinate the development and maintenance of software products. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
   

@@ -14,7 +14,7 @@ ms.date: 11/16/2020
 
 # Export a list of users and their access levels
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="export-audit-log" >  </a>
 

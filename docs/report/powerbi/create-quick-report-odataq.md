@@ -13,7 +13,7 @@ ms date: 10/04/2021
 
 # Create a Power BI report with an OData Query
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Power BI Desktop, you can easily start creating reports for your project in Azure DevOps. 
 

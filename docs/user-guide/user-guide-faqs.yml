@@ -14,7 +14,7 @@ metadata:
     
 title: FAQs about signing up and getting started
 summary: |
-  [!INCLUDE [version-all](../includes/version-all.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
   
   Signing up for Azure DevOps is now easier than ever - it's a two-minute process. See the following frequently asked questions (FAQs), which contain links for getting started.
   

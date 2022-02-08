@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Deploy web content to Azure
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 <div class="alert alert-info">
     If your extension doesn't require any back-end logic, consider hosting your static content directly on Azure DevOps. See <a href="../develop/static-content.md" data-raw-source="[content hosting](../develop/static-content.md)">content hosting</a>.

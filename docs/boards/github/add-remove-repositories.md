@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Add or remove GitHub repositories 
 
-[!INCLUDE[temp](../includes/version-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 Once you make a connection to a GitHub repository from Azure Boards, you can add or remove repositories under the same GitHub account or organization. Or, you can completely remove the connection to all repositories. 
 

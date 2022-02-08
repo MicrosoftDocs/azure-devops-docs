@@ -14,7 +14,7 @@ ms.date: 04/22/2019
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../../boards/includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 
 ::: moniker range="azure-devops"

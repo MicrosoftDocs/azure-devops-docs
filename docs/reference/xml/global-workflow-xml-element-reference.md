@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Global workflow XML element reference
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 > This article applies to project customization for On-premises XML process models. The Inheritance and Hosted XML process models don't support global workflow. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 

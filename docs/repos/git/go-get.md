@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Go get command support in Azure Repos Git
 
-[!INCLUDE [version-azure-devops](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Go is an open-source programming language, also referred to as Golang. 
 In Go, you can use the `get` command to download and install packages and dependencies. 

@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Access with Azure Active Directory groups
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Do you want an easier way to control who can access your team's critical resources and key business assets in Azure DevOps Services?
 If you already use Microsoft services like Microsoft 365 or [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/), you can use the same identities with your organization.

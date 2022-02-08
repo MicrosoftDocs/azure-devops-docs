@@ -14,7 +14,7 @@ ms.date: 04/07/2021
 
 # Apply rules to workflow states (Inheritance process)   
 
-[!INCLUDE [temp](../../../boards/includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 After you add or modify your workflow states for a work item type, you may want to define one or more rules that are applied depending on the workflow state change. Adding rules to workflow states supports the following scenarios: 
 

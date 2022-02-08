@@ -15,7 +15,7 @@ ms.date: 10/26/2021
 
 # Run a semantic work item search in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="search-box"/>
 

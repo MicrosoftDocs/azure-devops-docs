@@ -13,7 +13,7 @@ ms date: 10/04/2021
 
 # Example reports for Power BI data connector
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Learn how to generate the following example reports in Power BI: 
 

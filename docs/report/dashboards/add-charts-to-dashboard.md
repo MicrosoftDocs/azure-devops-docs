@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Add charts to a dashboard
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 <a id="add-charts"></a>
 

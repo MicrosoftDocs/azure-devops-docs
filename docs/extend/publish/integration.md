@@ -12,7 +12,7 @@ ms.date: 08/29/2016
 
 # Package and publish an integration to the Marketplace
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Do you have a tool, service, or product that integrates with Azure DevOps or Team Foundation Server (TFS)?
 If so, help users find it by publishing it on the Visual Studio Marketplace.

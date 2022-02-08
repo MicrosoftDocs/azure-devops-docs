@@ -13,7 +13,7 @@ ms.date: 09/10/2020
 
 # Get started as a Stakeholder
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops" 
 

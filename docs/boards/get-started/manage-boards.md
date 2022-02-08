@@ -14,7 +14,7 @@ ms.date: 09/15/2021
 
 # Configure and manage your Azure Boards project
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can start using Azure Boards project and configure resources as you go. No up-front work is required. Most settings define defaults.
 

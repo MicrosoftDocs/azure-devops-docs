@@ -15,7 +15,7 @@ ms.date: 05/27/2021
 
 # Wiki files and file structure
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 Learn about the files and file structure for project wikis and code wikis. The following guidance might specify code wikis, however it applies to both types of wiki.
 

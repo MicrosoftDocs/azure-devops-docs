@@ -14,7 +14,7 @@ ms.date: 11/10/2021
 
 # Copy or clone stories, issues and other work items
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
    
 ::: moniker range=">= azure-devops-2019"
 

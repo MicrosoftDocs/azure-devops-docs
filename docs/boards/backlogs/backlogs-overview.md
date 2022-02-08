@@ -15,7 +15,7 @@ ms.date: 12/03/2021
 
 # Use backlogs for effective project management in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 ::: moniker range=">= tfs-2017"

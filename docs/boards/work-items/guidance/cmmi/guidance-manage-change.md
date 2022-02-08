@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Manage change with the CMMI process in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 You can use change request work items to track and control all changes to the product and supporting systems. All change requests are started as the result of a deviation from the baseline, which consists of the original requirements that were identified for the project. For example, if a meeting with a user uncovers new requirements, a change request should be created to propose updating the requirements baseline. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
   

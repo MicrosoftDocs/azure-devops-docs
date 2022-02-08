@@ -12,7 +12,7 @@ ms.date: 10/12/2020
 
 # Security and permission management tools for Azure DevOps
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 While you set most permissions through the web portal, you can use other tools to manage security groups and permissions. For permissions that aren't available to manage through the web portal,you have the option to manage them using a command line tool. 
 

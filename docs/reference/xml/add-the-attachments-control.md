@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 
 # Add the Attachments control
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
+[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!NOTE]  
 > This topic applies to project customization for the On-premises XML process model using the old form layout. For the new form layout, see [WebLayout and Control elements](weblayout-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  

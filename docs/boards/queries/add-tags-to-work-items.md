@@ -14,7 +14,7 @@ ms.date: 04/13/2021
 
 # Add work item tags to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 

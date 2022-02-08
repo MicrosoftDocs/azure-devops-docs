@@ -14,7 +14,7 @@ ms.date: 11/18/2020
 
 # Change the maximum attachment size for work items
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
  
 ::: moniker range="> tfs-2017"

@@ -14,7 +14,7 @@ ms.date: 12/02/2021
 
 # Plan and track work in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board. You can learn the Basic process or the Agile process for creating these items. 
 

@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Assign owner to orphaned organization
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When the Owner and all Project Collection Administrators are inactive, the organization is considered orphaned. An orphaned organization doesn't have an administrator, so there's no way of transferring administrator rights to another user.
 

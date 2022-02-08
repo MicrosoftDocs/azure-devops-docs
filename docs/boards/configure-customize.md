@@ -15,7 +15,7 @@ ms.date: 05/18/2021
 
 # Configure and customize Azure Boards  
 
-[!INCLUDE [temp](includes/version-vsts-only.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 This article provides guidance to configure and customize Azure Boards. You should read this article if you are tasked with administrating a project for several teams and supporting the following business objectives: 
 

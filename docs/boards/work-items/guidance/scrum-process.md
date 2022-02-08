@@ -15,7 +15,7 @@ ms.date: 11/07/2021
 
 # Manage your Scrum process template artifacts  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They're based on [Scrum principles and values](https://www.scrum.org/). 
 

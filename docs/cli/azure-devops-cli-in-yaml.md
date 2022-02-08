@@ -14,7 +14,7 @@ ms.date: 09/22/2021
 
 # Azure DevOps CLI in Azure Pipeline YAML
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 If you wish to use Azure DevOps CLI with a YAML pipeline, you can use the following example to understand how YAML can be used to install Azure CLI, add the Azure DevOps extension, and run Azure DevOps CLI commands.
 

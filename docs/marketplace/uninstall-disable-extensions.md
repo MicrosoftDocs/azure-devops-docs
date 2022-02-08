@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
  
 # Uninstall or disable extensions
 
-[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 Learn how to uninstall or disable an extension that you don't need.
 

@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Default permissions and access set for collaboration tools
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Collaboration tools encompass READMEs, team project Wikis, notifications, feedback, and search.  
 

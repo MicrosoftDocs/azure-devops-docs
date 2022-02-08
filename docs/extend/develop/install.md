@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Install your extension
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 [!INCLUDE [Install](../includes/procedures/install.md)]
 

@@ -13,7 +13,7 @@ date: 01/27/2022
 
 # Add a custom pipelines task extension
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps.
 

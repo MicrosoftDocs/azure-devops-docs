@@ -12,7 +12,7 @@ ms.date: 06/02/2020
 
 # Work with URLs in extensions and integrations
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 With the introduction of Azure DevOps Services, organizational resources and APIs are now accessible via either of the following URLs:
 

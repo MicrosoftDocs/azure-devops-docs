@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Authentication overview
 
-[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Choose a method to securely access the code in Azure Repos, Azure DevOps Server 2019, or Team Foundation Server (TFS) Git repositories.
 Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.

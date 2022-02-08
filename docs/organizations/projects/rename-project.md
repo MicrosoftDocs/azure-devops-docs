@@ -15,7 +15,7 @@ ms.date: 03/03/2021
 
 # Rename a project in Azure DevOps
 
-[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Learn how to rename a project. When you rename a project, it updates the project name in the following areas:
 - version control paths

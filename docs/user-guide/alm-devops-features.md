@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # What are the features in Azure DevOps?
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 

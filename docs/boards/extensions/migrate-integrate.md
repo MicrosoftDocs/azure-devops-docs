@@ -13,7 +13,7 @@ ms.date: 10/01/2021
 
 # Migrate and integrate work tracking data in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You have a choice of tools to help you migrate your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. You can also integrate Azure Boards with many third-party tools. 
 

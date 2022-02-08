@@ -14,7 +14,7 @@ ms.date: 11/03/2021
 
 # Add columns to your Kanban board to manage your workflow
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Kanban's number one practice is to visualize the flow of work. So, your number one task is to visualize your team's workflow. You do this task by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 

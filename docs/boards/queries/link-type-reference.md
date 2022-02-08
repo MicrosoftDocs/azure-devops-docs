@@ -15,7 +15,7 @@ ms.date: 10/21/2021
 
 # Reference guide for link types used in Azure DevOps and Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="link-type-guidance"></a>
 

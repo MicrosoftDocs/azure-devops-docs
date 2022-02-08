@@ -15,7 +15,7 @@ ms.date: 01/31/2022
 
 # Email or print user stories, bugs, and other work items 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 ** Visual Studio 2019 - Visual Studio 2015 | Team Explorer Everywhere** 
 
 

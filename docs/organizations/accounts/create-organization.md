@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Create an organization or project collection
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="= azure-devops"
 

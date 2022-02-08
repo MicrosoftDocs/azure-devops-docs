@@ -14,7 +14,7 @@ ms.date: 12/07/2020
 
 # Quick reference index for Azure Boards settings 
 
-[!INCLUDE [temp](../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
 

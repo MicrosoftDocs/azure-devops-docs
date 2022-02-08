@@ -12,7 +12,7 @@ ms.date: 10/08/2021
 
 # Resolve data validation errors that occur when you publish from Excel
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 A data validation error occurs when a change in the work item list or project plan violates a work item type's rule. The following examples show common data validation errors:  
   
