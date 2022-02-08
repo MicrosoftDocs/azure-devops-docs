@@ -15,9 +15,6 @@ ms.date: 12/20/2021
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-> [!Note]
-> Audit streaming is currently in Public Preview.
-
 Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Send auditing data to other Security Incident and Event Management (SIEM) tools to open possibilities, such as the ability to trigger alerts for specific events, create views on auditing data, and perform anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which is the maximum amount of data that Azure DevOps keeps for your organizations.
 
 Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every half hour or less, new audit events are bundled and streamed to your targets. The following stream targets are available for configuration.
@@ -38,6 +35,9 @@ By default, Project Collection Administrators (PCAs) are the only group that hav
   :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set audit permissions to Allow":::
 
 These permissions can be given to any users or groups you wish to have manage your organization's streams. Additionally, there's also a *Delete audit streams* permission that you can add on for users or groups.
+
+> [!Note]
+> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an [Auditing stream](auditing-streaming.md) to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ## Create a stream
 
