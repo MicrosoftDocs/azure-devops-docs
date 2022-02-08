@@ -4438,7 +4438,7 @@
     },
     {
       "source_path_from_root": "/docs/search/administration.md",
-      "redirect_url": "/azure/devops/project/search/administration",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
     {
@@ -4494,21 +4494,6 @@
     {
       "source_path_from_root": "/docs/search/workitem/search-results.md",
       "redirect_url": "/azure/devops/project/search/advanced-work-item-search-syntax",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/search/index.md",
-      "redirect_url": "/azure/devops/project/search/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/search/overview.md",
-      "redirect_url": "/azure/devops/project/search/overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/search/code/administration.md",
-      "redirect_url": "/azure/devops/project/search/administration",
       "redirect_document_id": false
     },
     {
@@ -18151,11 +18136,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/project/search/overview.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/project/navigation/search-basics.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
@@ -18171,11 +18151,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/project/search/administration.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/project/search/advanced-package-syntax.md",
       "redirect_url": "/azure/devops/project/search/functional-code-search",
       "redirect_document_id": false
@@ -18187,16 +18162,11 @@
     },
     {
       "source_path_from_root": "/docs/project/search/code-search.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/project/search/package-search.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/project/search/work-item-search.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
@@ -18308,6 +18278,21 @@
     {
       "source_path_from_root": "/docs/repos/git/share-your-code-in-git-vs-2017.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/advanced-code-search-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/work-item-search.md",
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
       "redirect_document_id": false
     }
   ]
