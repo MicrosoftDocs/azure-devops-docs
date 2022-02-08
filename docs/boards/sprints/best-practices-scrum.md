@@ -14,7 +14,7 @@ ms.date: 09/20/2021
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
 ## Sprint planning meetings 

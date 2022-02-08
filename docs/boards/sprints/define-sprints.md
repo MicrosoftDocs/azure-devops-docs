@@ -15,7 +15,7 @@ ms.date: 09/20/2021
 
 # Manage sprint timelines 
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. You define Iteration Paths, also referred to as *sprints*, to support the assignment of work items to time-box intervals. Iteration paths are a shared resource used by all teams that select them. Many teams choose a two or three week cadence. You can, however, specify shorter or longer sprint cycles. Or, you can create a release schedule that encompasses several sprints.  
 

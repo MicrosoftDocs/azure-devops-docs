@@ -15,7 +15,7 @@ ms.date: 07/22/2020
 
 # Create a project in Azure DevOps
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="tfs-2013"
 

@@ -14,7 +14,7 @@ ms.date: 10/17/2019
 
 # Best tool to add, update, and link work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
 

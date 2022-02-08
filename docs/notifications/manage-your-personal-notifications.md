@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Manage your personal notifications
 
-[!INCLUDE [version-all](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 You can manage your personal notifications in the following ways:
 

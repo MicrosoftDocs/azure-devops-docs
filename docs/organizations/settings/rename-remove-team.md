@@ -13,7 +13,7 @@ ms.date: 05/24/2021
 
 # Rename or remove a team  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your organization changes, you may need to rename or remove a team.  
 

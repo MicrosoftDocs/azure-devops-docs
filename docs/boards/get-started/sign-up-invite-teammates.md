@@ -15,7 +15,7 @@ ms.date: 09/15/2021
 
 # Sign up for free and invite others to collaborate in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Sign up for an Azure DevOps and Azure Boards to start planning and tracking work. We walk you through the sign-up process for [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following tasks: 
 - Create a private or public project with Azure Boards enabled services  

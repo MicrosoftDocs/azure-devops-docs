@@ -14,7 +14,7 @@ ms.date: 09/27/2021
 
 # Widgets based on Analytics data
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range=">= azure-devops-2020"
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 

@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Save project data
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you delete a project, you can't recover its data later. So, you should save project data.
 

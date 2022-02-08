@@ -12,7 +12,7 @@ ms.date: 10/28/2021
 
 # Azure Repos with Microsoft Teams
 
-[!INCLUDE [temp](../../includes/version-azure-devops.md)]  
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]  
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the 
 [Azure Repos app for Teams](https://appsource.microsoft.com/product/office/WA200000643) to easily monitor your repositories. 

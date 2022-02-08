@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Connect to a project in Azure DevOps
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   

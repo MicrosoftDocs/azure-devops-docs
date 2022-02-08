@@ -13,7 +13,7 @@ ms.date: 03/29/2021
 
 # Troubleshoot access and permission issues
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps security and permission structure is extensive, so you may find yourself needing to investigate why you or a project member doesn’t have the access to a project, service, or feature that they expect to have. Find step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
 

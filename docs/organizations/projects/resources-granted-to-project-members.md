@@ -15,7 +15,7 @@ ms.date: 02/17/2021
 
 # Resources granted to project members
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 An Azure DevOps project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.

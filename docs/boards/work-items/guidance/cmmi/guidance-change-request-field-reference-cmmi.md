@@ -12,7 +12,7 @@ ms.date: 10/27/2021
 
 # Change request field reference for Capability Maturity Model Integration (CMMI) work items
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 You can track change requests for CMMI work items by using these six fields: Justification, Impact on Architecture, Impact on User Experience, Impact on Test, Impact on Development, and Impact on Technical Publications. A description and a reference name for each of the change request fields are provided in the following table. When you open a work item form for a change request, the **Justification** field appears on the **Justification** tab, and all other fields appear on the **Analysis** tab.  
   

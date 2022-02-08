@@ -12,7 +12,7 @@ ms.date: 11/17/2021
 
 # Time zone settings and usage
 
-[!INCLUDE [temp](../../includes/version-all.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 There are three time zone settings that can be referenced by Azure DevOps: 
 

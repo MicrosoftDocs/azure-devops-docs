@@ -14,7 +14,7 @@ ms.date: 10/08/2021
 
 # Link user stories, issues, bugs, and other work items in Azure Boards  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 

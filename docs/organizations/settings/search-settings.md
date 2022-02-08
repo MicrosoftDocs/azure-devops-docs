@@ -12,7 +12,7 @@ ms.date: 12/17/2020
 
 # Search organization settings
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 The preview feature, **New Settings Search in the organization settings panel**, enables a search box for searching within **Organization Settings**. To enable this feature, see [Manage or enable preview features](../../project/navigation/preview-features.md).  
 

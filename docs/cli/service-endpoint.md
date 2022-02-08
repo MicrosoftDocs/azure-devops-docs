@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Azure DevOps CLI service endpoint
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 You can use the `az devops service-endpoint` command to create different types of service endpoints. 
 

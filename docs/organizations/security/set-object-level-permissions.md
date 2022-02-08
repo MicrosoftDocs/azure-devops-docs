@@ -13,7 +13,7 @@ ms.date: 02/01/2022
 
 # Set object-level permissions
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As you manage security for your organization, you can set permissions at the organization/collection-level, project-level, and object-level. This article helps you go to the security dialogs for setting permissions at the object-level, as the user interface varies somewhat across Azure Devops. For more information, see [Get started with permissions, access, and security groups](about-permissions.md#permissions).
 

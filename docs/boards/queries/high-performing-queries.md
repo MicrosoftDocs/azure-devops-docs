@@ -15,7 +15,7 @@ ms.date: 01/31/2022
 
 # Guidance to create high-performing queries in Azure Boards
  
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 While you can easily create work item queries, to create high-performing queries requires a deeper understanding. By improving your query performance, you improve your individual productivity, dashboard performance, and resource rate limits.  
 

@@ -13,7 +13,7 @@ ms.date: 10/13/2021
 
 # Resolve errors associated with an Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them with the [Power BI Connector](data-connector-connect.md). 
 

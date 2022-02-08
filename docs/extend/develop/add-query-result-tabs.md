@@ -12,7 +12,7 @@ ms.date: 05/15/2018
 
 # Add tabs on query result pages
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.

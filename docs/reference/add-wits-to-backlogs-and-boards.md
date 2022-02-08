@@ -14,7 +14,7 @@ ms.date: 08/03/2021
 
 # Add a work item type to a backlog and board
 
-[!INCLUDE [version-all.md](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 > [!IMPORTANT]  

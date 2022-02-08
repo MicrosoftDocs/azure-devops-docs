@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Sign in with a personal access token (PAT)
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 You can sign in using an Azure DevOps personal access token (PAT). To create a PAT, see [Use personal access tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
 

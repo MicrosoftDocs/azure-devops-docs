@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Configure a hierarchy of teams
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In [Portfolio management](portfolio-management.md), we showed how management teams and feature teams can use their backlogs to focus on the work that's most important to them. In this article, we show how to configure teams that best support the different backlog views of management and feature teams. 
 

@@ -13,7 +13,7 @@ ms.date: 02/03/2022
 
 # About teams and Agile tools
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="teams"></a>
 

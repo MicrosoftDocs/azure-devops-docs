@@ -14,7 +14,7 @@ ms.date: 06/18/2021
 
 # Add users or groups to a team or project
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 

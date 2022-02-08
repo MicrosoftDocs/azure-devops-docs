@@ -14,7 +14,7 @@ ms.date: 09/17/2021
 
 # Naming restrictions and conventions  
 
-[!INCLUDE [temp](../../includes/version-all.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 Most components in Azure DevOps must follow naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.

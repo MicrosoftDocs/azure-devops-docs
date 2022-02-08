@@ -13,7 +13,7 @@ ms.date: 09/20/2021
 
 # Add tasks to backlog items to support sprint planning
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="define-tasks">  </a>
 

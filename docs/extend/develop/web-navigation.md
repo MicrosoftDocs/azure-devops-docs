@@ -12,7 +12,7 @@ ms.date: 06/08/2021
 
 # Vertical navigation guidance
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Vertical navigation brings with it changes that affect some extensions. These outcomes include support for extension icons along with changes to team context.
 

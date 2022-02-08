@@ -14,7 +14,7 @@ ms.date: 02/01/2022
 
 # Query by date or current iteration in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The **\@Today** and **\@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **\@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **\@CurrentIteration**. 
 

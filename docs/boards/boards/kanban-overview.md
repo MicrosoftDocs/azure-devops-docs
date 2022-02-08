@@ -15,7 +15,7 @@ ms.date: 11/17/2021
 
 # Add, review, and update work items in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 

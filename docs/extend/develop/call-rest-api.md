@@ -12,7 +12,7 @@ ms.date: 10/18/2019
 
 # Call a REST API
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 To call a REST API from your extension, get the client service first, and then use that to call the API.
 

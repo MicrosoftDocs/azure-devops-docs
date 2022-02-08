@@ -13,7 +13,7 @@ ms.date: 10/12/2021
 
 # Overview of sample reports using OData queries
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 In this article, we provide samples for the most popular reports:
 

@@ -14,7 +14,7 @@ ms.date: 01/19/2022
 
 # Add or edit a Delivery Plan 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Delivery Plans provide a highly interactive calendar view of multiple team backlogs. For the use cases, benefits, and interactions you can do, see [Review team Delivery Plans](review-team-plans.md). 
 

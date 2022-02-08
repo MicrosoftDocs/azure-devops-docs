@@ -15,7 +15,7 @@ ms.date: 01/04/2022
 # Index to az devops examples 
 
 
-[!INCLUDE [temp](../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 Use this index to quickly access examples that showcase use of command line tools.  For a list of commands that support Azure DevOps operations, see the following Azure CLI reference articles: 
 - [az artifacts](/cli/azure/azure-cli-reference-for-devops#azure-artifacts)

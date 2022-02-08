@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 
 # Package and publish extensions
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Once you've written your extension, the next step is to package it. Then, you publish or upload it to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). Users can install the extension from the Marketplace if it's shared with them. The Marketplace is a global repository for private and public extensions, integrations, and other offers from Microsoft.
 

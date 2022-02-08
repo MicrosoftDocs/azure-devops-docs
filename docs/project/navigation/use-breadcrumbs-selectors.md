@@ -15,7 +15,7 @@ ms.date: 07/30/2020
 
 # Use breadcrumbs, selectors, and directories to navigate and open artifacts 
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs, selectors, and directories. 
 

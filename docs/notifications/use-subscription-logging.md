@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2018'
 
 # How to enable subscription logging for troubleshooting
 
-[!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)] 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 

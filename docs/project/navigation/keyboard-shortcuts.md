@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Keyboard shortcuts for Azure DevOps and Team Explorer
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]    
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]    
 
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 

@@ -14,7 +14,7 @@ ms.date: 12/15/2017
 
 # Add a portfolio backlog level
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This article applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 

@@ -15,7 +15,7 @@ ms.date: 10/26/2021
 
 # Add or modify Azure Boards work items in bulk with Microsoft Excel 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 When you need to add or modify many work items, using Microsoft Excel can save you time. Excel supports adding work items, updating existing work items, adding links and attachments to multiple work items, and more. You can also use native Excel features to support other actions, such as summing a column, copy-and-paste rows, fill down data into cells, and more. 
 

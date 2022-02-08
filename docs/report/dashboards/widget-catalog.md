@@ -14,7 +14,7 @@ ms.date: 09/28/2021
 
 # Out Of Box widget catalog 
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 ::: moniker range=">= tfs-2018"
 Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another. To learn how, see [Add a widget to a dashboard](add-widget-to-dashboard.md). 

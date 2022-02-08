@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Cross-origin resource sharing (CORS)
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps supports cross-origin resource sharing (CORS). CORS enables JavaScript code served from a domain other than `dev.azure.com/*` to make Ajax requests to Azure DevOps Services REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
 

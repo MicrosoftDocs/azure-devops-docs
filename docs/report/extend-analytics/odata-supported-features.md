@@ -15,7 +15,7 @@ ms.date: 09/30/2020
 
 # Supported OData functions and clauses
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article covers how Analytics supports several OData functions. Unsupported functions are also listed. OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/). 
 

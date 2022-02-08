@@ -12,7 +12,7 @@ ms.date: 09/19/2019
 
 # Modal dialog
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 The HostDialogService enables you to present a modal dialog to the user and prevent interaction with all parts of web access until the dialog is dismissed. 
 

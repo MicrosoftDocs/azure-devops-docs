@@ -14,7 +14,7 @@ ms.date: 10/25/2021
 
 # Query by assignment or workflow changes in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The states in the workflow support tracking work status as it moves from a new state to a closed or done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 

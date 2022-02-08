@@ -14,7 +14,7 @@ ms.date: 09/28/2021
 
 # Dashboards, charts, and quick reference 
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
  

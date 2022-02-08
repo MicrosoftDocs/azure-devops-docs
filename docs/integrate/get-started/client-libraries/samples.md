@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # C# client library samples 
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Samples showing how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 

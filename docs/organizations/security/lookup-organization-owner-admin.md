@@ -13,7 +13,7 @@ ms.date: 11/17/2021
 
 # Increase permission levels, find an admin 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
  
 To get access to features you don't have, you need to request an increase to your permissions or be added to a security role. Typically you need to request permissions from a member of the Project Administrators group or Project Collection Administrators group. To find a member of one of these groups, follow the steps provided in this article. You can then request that they add you to an administrators group or set one or more of your permissions at the project, organization, or collection level to **Allow**. To learn more, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).

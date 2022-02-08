@@ -12,7 +12,7 @@ ms.date: 02/16/2021
 
 # About settings for users, teams, projects, or organizations
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 

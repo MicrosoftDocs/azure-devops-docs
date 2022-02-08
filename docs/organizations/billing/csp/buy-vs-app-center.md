@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ---
 # Cloud Solution Providers: Buy Visual Studio App Center resources
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Partners in the Cloud Solution Provider (CSP) program can enable their customers to purchase [Visual Studio App Center resources](https://azure.microsoft.com/services/app-center/) by using a CSP-based Azure subscription. Resources include build pipelines, test device concurrencies, and advanced push notifications.
 

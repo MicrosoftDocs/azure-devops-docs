@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Usage monitoring
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can investigate the usage of your users in Azure DevOps Services. Usage monitoring is important to identify causes for bandwidth bottlenecks, that aren't caused by faulty systems. See the following most common commands or operations that might trigger a usage message.
 

@@ -15,7 +15,7 @@ metadata:
 title: Create a project FAQs
 
 summary: |
-  [!INCLUDE [version-all](../../includes/version-all.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
   ## Resolve errors
 

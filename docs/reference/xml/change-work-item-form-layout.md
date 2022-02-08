@@ -14,7 +14,7 @@ ms.date: 03/31/2017
 
 # Change the work item form layout
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)] 
+[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)] 
 
 You can change the work item form layout by exporting the XML file and modifying the contents of the `FORM` section. After you modify and import the XML file, you can verify the changes you made in the updated work item type. Types of layout changes you can make include but are not limited to the following:  
   

@@ -13,7 +13,7 @@ ms.date: 10/24/2019
 
 # Hosted XML process model  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 <a id="hosted-xml-process-model">  </a>
 

@@ -14,7 +14,7 @@ ms.date: 09/15/2021
 
 # Reasons to use Azure Boards to plan and track your work 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 We know you have a choice of tracking systems. So why use Azure Boards to plan and track your work, bugs, and customer issues? 
 

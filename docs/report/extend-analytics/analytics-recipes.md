@@ -13,7 +13,7 @@ ms.date: 09/30/2020
 
 # Query work tracking data using Analytics  
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of 
 Analytics. You can adapt most of these queries to meet your needs.

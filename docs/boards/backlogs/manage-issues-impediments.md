@@ -13,7 +13,7 @@ ms.date: 10/08/2021
 
 # Manage issues or impediments in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a name="manage-impediments"></a>
 

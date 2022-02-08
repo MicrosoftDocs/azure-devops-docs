@@ -16,7 +16,7 @@ ms.date: 10/15/2021
 
 # Add Kanban board features and epics  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you track progress on your backlog with Kanban, you can also use Kanban boards to track epics and features.  
 

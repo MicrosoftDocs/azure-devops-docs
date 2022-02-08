@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Define the URL for a work item 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
 

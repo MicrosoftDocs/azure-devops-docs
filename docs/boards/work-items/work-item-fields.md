@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Work item fields and attributes in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models. 

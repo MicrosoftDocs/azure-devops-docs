@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # About Power BI integration
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Azure DevOps, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). Azure DevOps also provides several reports in the product itself. Both dashboards and in-line reports offer easy access to Azure DevOps Analytics to enable data-driven decisions. However, we concede that customers often need more than what is provided in the product. 
 

@@ -13,7 +13,7 @@ ms.date: 10/27/2021
 
 # Review meeting field reference
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 The following fields track information and changes for review meetings. Your team can specify this kind of information by using the Review type of work item that is provided with the [CMMI process](../cmmi-process.md).  
   

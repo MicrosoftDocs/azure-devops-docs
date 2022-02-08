@@ -13,7 +13,7 @@ ms.date: 12/15/2017
 # Update the workflow for agile projects
 
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)]
+[!INCLUDE [version-lt-eq-2015](../../includes/version-lt-eq-2015.md)]
 
 
 > [!IMPORTANT]  

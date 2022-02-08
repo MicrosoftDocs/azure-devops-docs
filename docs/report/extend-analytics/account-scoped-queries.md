@@ -13,7 +13,7 @@ ms.date: 09/30/2021
 
 # Project and organization-scoped queries
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Using Analytics for Azure DevOps, you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
 

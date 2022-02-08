@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Set up billing
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Set up billing in Azure DevOps before you make purchases, so it's already in place once you're ready to buy. You only need to set up billing once for your organization. Once you select an Azure subscription for billing, you can purchase additional user licenses by adding the user to the organization and assigning them a license.
 

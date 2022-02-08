@@ -14,7 +14,7 @@ ms.date: 05/06/2019
 
 # On-premises XML process customization
 
-[!INCLUDE [temp](../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 

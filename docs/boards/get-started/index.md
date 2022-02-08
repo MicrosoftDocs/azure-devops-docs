@@ -14,7 +14,7 @@ ms.date: 09/15/2021
 
 # How to get started with Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this guide to sign up and start using Azure Boards. Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 

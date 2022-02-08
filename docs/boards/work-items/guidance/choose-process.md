@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Choose an Azure DevOps Server process flow or process template to work in Azure Boards or Azure DevOps 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
 

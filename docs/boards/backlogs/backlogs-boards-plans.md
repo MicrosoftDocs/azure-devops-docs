@@ -16,7 +16,7 @@ ms.date: 10/08/2021
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= tfs-2017"
 

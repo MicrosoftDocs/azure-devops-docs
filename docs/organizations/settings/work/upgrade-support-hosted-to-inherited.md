@@ -15,7 +15,7 @@ ms.date: 05/30/2018
 
 # Supported operations when moving from Hosted XML to an inherited process   
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 <a id="hosted-xml-process-model">  </a>
 

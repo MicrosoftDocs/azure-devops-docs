@@ -17,7 +17,7 @@ ms.date: 10/30/2021
 
 <a id="set-capacity">  </a>
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="set-capacity">  </a>
 

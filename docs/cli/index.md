@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Get started with Azure DevOps CLI
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 With the Azure DevOps extension for Azure Command Line Interface (CLI),  you can manage many Azure DevOps Services from the command line. CLI commands enable you to streamline your tasks with faster and flexible interactive canvas, bypassing user interface workflows.
 

@@ -12,7 +12,7 @@ ms.date: 12/31/2019
 
 # Add a hub
 
-[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 

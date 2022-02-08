@@ -13,7 +13,7 @@ ms.date: 01/27/2022
 
 # Define, capture, triage, and manage software bugs in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed quickly to support high-quality software deployments? And, how do you do make good progress on new features and address your technical debt? 
 

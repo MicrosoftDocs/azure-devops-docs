@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Disable your organization's Request Access policy
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Stop your users from requesting access to your organization or project within your organization, by disabling the Request Access policy.
 

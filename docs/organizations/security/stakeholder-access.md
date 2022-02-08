@@ -14,7 +14,7 @@ ms.date: 08/18/2021
 # Stakeholder access quick reference
 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards, Azure Pipelines, and collaboration tools. They have no access to code repositories. 
 

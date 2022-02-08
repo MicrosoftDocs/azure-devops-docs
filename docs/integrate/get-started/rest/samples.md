@@ -13,7 +13,7 @@ ms.date: 10/06/2020
 
 # Get started sample
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 ## Personal access tokens
 

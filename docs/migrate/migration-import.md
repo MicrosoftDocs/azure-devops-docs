@@ -13,7 +13,7 @@ ms.date: 10/07/2021
 
 # Validation and import processes
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 This article walks you through the preparation that's required to get an import to Azure DevOps Services ready to run. If you encounter errors during the process, see [Troubleshoot import and migration errors](migration-troubleshooting.md).
 

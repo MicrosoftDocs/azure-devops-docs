@@ -16,7 +16,7 @@ ms.date: 11/17/2021
 
 # Work Item Query Language (WIQL) syntax reference 
 
-[!INCLUDE [temp](../includes/version-all.md)]   
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]   
 
 You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md) or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 

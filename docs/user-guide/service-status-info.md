@@ -13,7 +13,7 @@ ms.date: 03/15/2021
 
 # Azure DevOps Services status
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 We have a team of engineers around the world who look after the 
 health of Azure DevOps 24 hours a day. Their primary goal is to ensure 

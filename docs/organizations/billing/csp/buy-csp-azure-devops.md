@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 ---
 # Cloud Solution Providers: Buy Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Partners in the Cloud Solution Provider (CSP) program can enable their customers to [pay for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) by using a CSP-based Azure subscription.
 

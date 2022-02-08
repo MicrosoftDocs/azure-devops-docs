@@ -14,7 +14,7 @@ ms.date: 09/13/2021
 
 # Syntax guidance for basic Markdown usage
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 

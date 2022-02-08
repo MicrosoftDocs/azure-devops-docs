@@ -12,7 +12,7 @@ ms.date: 08/13/2021
 
 # Configure pipelines to support work tracking
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 To support integration and traceability across Azure DevOps Services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, and set up automatic linking of work items to builds and releases. 
  

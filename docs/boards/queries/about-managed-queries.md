@@ -15,7 +15,7 @@ ms.date: 10/21/2021
 
 # Track your work by using managed queries 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or  bulk update work items. Along with managed queries, the semantic search tool provides some overlapping and different functionality worth exploring. 
 

@@ -14,7 +14,7 @@ ms.date: 06/24/2021
 
 # Add organization users and manage access
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to add users to your organization and manage user access through direct assignment. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
 

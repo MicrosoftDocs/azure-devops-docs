@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Manage paid access for users
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 We simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You get billed according to those assignments. This article helps you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
 

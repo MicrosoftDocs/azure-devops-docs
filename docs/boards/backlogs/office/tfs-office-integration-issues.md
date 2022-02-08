@@ -13,7 +13,7 @@ ms.date: 10/08/2021
 
 # Resolve Azure DevOps Office integration issues
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image below, you may want to resolve the issue with the procedures provided in this article. 
 

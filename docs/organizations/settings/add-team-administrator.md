@@ -13,7 +13,7 @@ ms.date: 07/22/2021
 
 # Add or remove a team administrator 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 <a id="add-team-admin">  </a>  

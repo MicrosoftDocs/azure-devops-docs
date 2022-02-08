@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 # Manage notifications for a team, group, or organization
 
-[!INCLUDE [version-all](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Your team or group can receive email notifications as changes occur to the following items in Azure DevOps:
 - work items 

@@ -15,7 +15,7 @@ ms.date: 01/27/2022
 
 # Set permissions and access for work tracking
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, you can specify custom rules for a process or project that apply to users or groups which may restrict or require users to perform a select action. In general, you'll want to add users to a project's Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 

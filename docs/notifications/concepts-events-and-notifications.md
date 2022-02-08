@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Events, subscriptions, and notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 This article describes the different actions or operations that generate email notifications. 
 

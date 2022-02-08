@@ -15,7 +15,7 @@ ms.date: 09/24/2020
 
 # Add comments to wiki pages
 
-[!INCLUDE [temp](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Learn how to add comments to wiki pages for better collaboration.
 

@@ -14,7 +14,7 @@ ms.date: 10/28/2021
 
 # Remove, delete, or restore work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work items can live forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions: 
 

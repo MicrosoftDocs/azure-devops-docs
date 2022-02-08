@@ -14,7 +14,7 @@ ms.date: 06/07/2021
 
 # Add a rule to a work item type (Inheritance process)
 
-[!INCLUDE [temp](../../../boards/includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
 

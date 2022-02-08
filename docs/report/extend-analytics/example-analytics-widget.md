@@ -13,7 +13,7 @@ ms.date: 09/30/2020
 
 # Create an Analytics widget for Azure DevOps
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 
 You can build your own Analytics widget to display in a [dashboard](../dashboards/overview.md) in Azure DevOps. The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates: 

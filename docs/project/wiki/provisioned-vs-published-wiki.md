@@ -15,7 +15,7 @@ ms.date: 06/07/2021
 
 # Provisioned wikis vs. published code as a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 
