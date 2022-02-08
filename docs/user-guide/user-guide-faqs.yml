@@ -99,18 +99,15 @@ sections:
           - [Azure Test Plans](/previous-versions/jj635157(v=vs.140))  
           - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
           - [Microsoft Feedback Client](../project/feedback/give-feedback.md) 
+          - For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../reference/process/new-work-item-experience.md).      
+          - For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provide enhancements, tools, and command-line utilities that support increased productivity.                
           ::: moniker range="tfs-2017"          
           > [!NOTE]  
           > Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs) for details.  
           > Test Manager is deprecated for TFS 2017.
           > You can also find several open-source clients that have been added to [Marketplace extensions](https://marketplace.visualstudio.com). For example, you can install extensions to Visual Studio that support additional features:          
           ::: moniker-end          
-          ::: moniker range=">= tfs-2017"
-          - For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../reference/process/new-work-item-experience.md).
-          ::: moniker-end         
-          ::: moniker range="<= tfs-2015"         
-          - For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provide enhancements, tools, and command-line utilities that support increased productivity.         
-          ::: moniker-end         
+
           ::: moniker range=">= tfs-2017"         
           > [!NOTE]  
           > Team Foundation Server Power Tools is deprecated for TFS 2017 and later versions.         
