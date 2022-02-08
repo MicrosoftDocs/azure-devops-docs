@@ -13,7 +13,7 @@ ms.date: 05/24/2021
 
 # Rename or remove a team  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 As your organization changes, you may need to rename or remove a team.  
 

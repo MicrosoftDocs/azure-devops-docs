@@ -14,9 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
-Add new features and capabilities to your organization by installing extensions.
-
-Learn how to [install extensions](#install-extension) for Azure DevOps.
+Add new features and capabilities to your organization by installing extensions for Azure DevOps.
 
 To learn about building your own Azure DevOps extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
 

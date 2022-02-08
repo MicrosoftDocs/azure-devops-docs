@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Customize your work tracking experience 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context for Azure Boards. The method you use to customize projects, which impacts all teams, depends on the process model you use. 
 

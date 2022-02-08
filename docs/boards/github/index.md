@@ -14,7 +14,7 @@ ms.date: 08/26/2021
 
 # Azure Boards-GitHub integration 
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Use this guide to connect Azure Boards with one or more GitHub repositories. This connection uses the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. 
 

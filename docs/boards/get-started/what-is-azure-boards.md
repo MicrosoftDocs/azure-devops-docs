@@ -14,7 +14,7 @@ ms.date: 12/01/2021
 
 # What is Azure Boards?
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. It provides a rich set of capabilities including native support for Agile, Scrum, and Kanban processes, calendar views, configurable dashboards, and integrated reporting. These tools scale as your business grows. 
   

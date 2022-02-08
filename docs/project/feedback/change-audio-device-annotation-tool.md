@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Change the audio device or annotation tool
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 You can change the default settings used by Microsoft Feedback Client for the annotation tool or audio device. The annotation tool that you set automatically opens when you double-click an image within the feedback tool, and the audio device is used when you start a **Screen & Voice** or a **Voice only** recording.  You might want to make a change if you do not have the default tools available on the computer that you use to provide feedback.  
   

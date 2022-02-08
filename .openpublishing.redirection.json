@@ -14,6 +14,11 @@
       "source_path": "docs/user-guide/faqs.md",
       "redirect_url": "/azure/devops/user-guide/user-guide-faqs",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/how-to/uninstall-disable-extensions-tfs.md",
+      "redirect_url": "/azure/devops/marketplace/uninstall-disable-extensions",
+      "redirect_document_id": false
     }
   ]
 }

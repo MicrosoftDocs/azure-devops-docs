@@ -13,7 +13,7 @@ ms.date: 11/19/2021
 
 # Bulk move work items and change the work item type in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Often you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
