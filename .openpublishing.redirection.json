@@ -9,6 +9,11 @@
       "source_path": "docs/devsecops/index.md",
       "redirect_url": "/devops/devsecops/enable-devsecops-azure-github",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/faqs.md",
+      "redirect_url": "/azure/devops/user-guide/user-guide-faqs",
+      "redirect_document_id": false
     }
   ]
 }
