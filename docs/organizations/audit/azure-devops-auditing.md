@@ -127,38 +127,7 @@ Selecting the information icon displays additional information about what happen
 
 As you look through the audit events, you may find the *Category* and *Area* columns of interest. These columns allow you to sift through to find only the types of events that you are interested in. The following tables are a list of categories and areas, as well as their descriptions:
 
-### Categories
-
-|Category  |Description |
-|---------|---------|
-|Access     | Viewed or opened artifacts in an organization.        |
-|Create     | Newly created artifacts in an organization.        |
-|Delete     | Deleted or removed artifacts from an organization.        |
-|Execute    | Completed processes done within an organization. |
-|Modify     | Changed artifacts, such as a state or property change, made in an organization.        |
-|Rename     | Name changes done on artifacts in an organization.        |
-
-### Areas
-
-|Area            |Description |
-|----------------|------------|
-| Auditing       | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
-| Billing        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
-| Checks         | Create, modify, delete, and track usage of checks including approvals on protected resources in Azure Pipelines (YAML only). |
-| Extension      | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
-| Git            | Create, modify, enable, disable, fork, delete and undelete Git repositories in Azure Repos. Bypass PR policies. Change branch policies.   |
-| Group          | Create groups and modify group memberships.          |
-| Library        | Create, modify, delete, and track usage of service connections, variable groups, secure files, and agent pools in Azure Pipelines. |
-| Licensing      | Assign, modify, and remove licensing. Create, modify, and delete group licensing rules.           |
-| Organization   | Create and modify Azure DevOps organization. Link and unlink to Azure Active Directory organizations. |
-| OrganizationPolicy | Add, modify, or remove organization policies.           |
-| Permissions    | Modify or remove permissions and access control lists for users and groups throughout an Azure DevOps organization.           |
-| Pipelines      | Create, modify, and delete Pipelines in Azure Pipelines. Authorize and unauthorize resource for projects and pipelines. Modify pipeline retention settings. Retain and unretain pipeline runs. |
-| Policy         |  Create, modify, and delete policies for a Git repository in Azure Repos.       |
-| Process        | Create, modify, and delete attributes for processes (portfolio backlogs, controls, fields, groups, lists, pages, processes, rules, states, control settings, work items, etc.) in Azure Boards.           |
-| Project        | Create, modify, change visibility of, delete, and restore projects in Azure Boards. Create, modify, and delete Area paths. |
-| Release        | Create, modify, and delete releases and release pipelines in Azure Pipelines. Track deployments and deployment approvals.      |
-| Token          | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events are not currently logged. |
+### List of Events
 
 We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
