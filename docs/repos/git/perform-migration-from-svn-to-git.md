@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/devops/develop/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a migration *with* history.
 

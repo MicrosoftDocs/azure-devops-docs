@@ -13,8 +13,8 @@ monikerRange: '<= azure-devops'
 
 # Review pull requests
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 After you [create a pull request](pull-requests.md) (PR), send the PR for review by stakeholders. You can add required or optional reviewers to your PR. Required reviewers must approve the PR before it can merge.
 

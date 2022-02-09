@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2018'
 
 # Git Cross-Platform Compatibility
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working directory due to unsupported file or paths names.
 

@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
 
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
 to an Azure DevOps project.

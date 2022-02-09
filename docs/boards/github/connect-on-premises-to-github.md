@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Connect an on-premises Azure DevOps Server to GitHub Enterprise Server
 
-[**Azure Boards**](./connect-to-github.md?preserve-view=true&view=azure-devops) | **Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=2095009 --> 
 

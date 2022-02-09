@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Find a file or folder in your Git repository
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Files** page.
 

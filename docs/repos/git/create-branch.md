@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Create a new Git branch
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial]().

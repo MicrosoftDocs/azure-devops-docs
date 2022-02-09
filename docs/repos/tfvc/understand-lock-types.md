@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Understand lock types
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can use the lock command to temporarily prevent changes to a particular file or folder in the source control server. This can be helpful if you want to change an item in your workspace and then check it in without being forced to resolve any merge conflicts. Only one user at a time may hold a lock on a particular file or folder. If you want to prevent access to an item in a persistent way, you should use the [Permission command](permission-command.md) instead.
 

@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Delete a Git branch from the web portal
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 >[!IMPORTANT]
 > This topic covers deleting a Git branch via the web in Azure DevOps Services and TFS. If you need to delete a Git branch in your own repo from Visual Studio or the command line,

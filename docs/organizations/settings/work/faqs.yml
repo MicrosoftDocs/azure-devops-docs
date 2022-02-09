@@ -14,7 +14,7 @@ title: Azure Boards configuration and customization FAQs
 
  
 summary: | 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]   
 
   You have many options to configure and customize an Azure Boards project. If you are new to this subject, see [Azure Boards Configuration and Customization](../../../boards/configure-customize.md). Here, you'll find answers to frequently asked questions when configuring or customizing Azure Boards. For FAQs specific to using Azure Boards or working with queries, see [Azure Boards FAQs](../../../boards/faqs.yml) and [Query FAQs](../../../boards/queries/query-faqs.yml). 
 

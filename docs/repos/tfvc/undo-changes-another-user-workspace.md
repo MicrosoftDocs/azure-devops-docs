@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Undo changes in another user's workspace
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)] 
  
 
 If a team member is blocked from checking in a file that is locked by someone else, you can use the **tf undo** command to delete Team Foundation version control pending changes in another user's workspace.

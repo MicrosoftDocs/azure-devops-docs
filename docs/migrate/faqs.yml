@@ -15,7 +15,7 @@ metadata:
 title: Migration and process model FAQs  
  
 summary: | 
-  **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
   Find answers to frequently asked questions when using migrating to Azure DevOps Services from on-premises. 
 

@@ -11,8 +11,8 @@ monikerRange: '>= tfs-2015'
 
 # Ignore file changes with Git
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Not every file created or updated in your code should be committed to Git.
 Temporary files from your development environment, test outputs, and logs are all examples of files that you create but aren't part of your codebase.

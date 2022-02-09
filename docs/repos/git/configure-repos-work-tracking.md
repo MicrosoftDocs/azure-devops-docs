@@ -12,7 +12,7 @@ ms.date: 08/02/2021
  
 # Configure repositories and branches to integrate with work tracking  
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 To support traceability of your Git code with work tracking, you can exercise one or more features and configure several options.  
  

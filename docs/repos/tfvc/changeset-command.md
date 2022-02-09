@@ -11,8 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Changeset Command
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 
 Displays information about and lets you change the attributes, such as comments and check-in notes, that are associated with a changeset.

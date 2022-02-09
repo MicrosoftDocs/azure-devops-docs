@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 
 # How names work in Git
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 When you commit to your local repo, Git includes your name and email address as part of the commit.
 This can sometimes lead to confusion.

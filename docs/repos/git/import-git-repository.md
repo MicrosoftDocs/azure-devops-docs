@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Import a Git repo
 
-[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
 

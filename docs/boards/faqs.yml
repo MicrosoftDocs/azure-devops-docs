@@ -16,7 +16,7 @@ title: Azure Boards FAQs
 
  
 summary: | 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
   Find answers to frequently asked questions when using Azure Boards. For FAQs specific to queries or Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [Query FAQs](queries/query-faqs.yml) and [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml). 
 

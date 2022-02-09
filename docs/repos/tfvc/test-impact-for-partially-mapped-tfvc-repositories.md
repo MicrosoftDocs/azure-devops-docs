@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Test Impact for partially mapped TFVC repositories in TFS/Azure DevOps Services
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Test Impact Analysis (TIA) has been part of the **VSTest** task starting with version 2 of the task. This feature helps speed up the DevOps cycle by helping you run only relevant tests for a build. Effectively, you end up running tests which are affected by incoming changes and not the entire test suite. For more information about Test Impact Analysis, see [Speed up testing by using Test Impact Analysis (TIA)](../../pipelines/test/test-impact-analysis.md). 
 

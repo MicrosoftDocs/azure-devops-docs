@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Merge strategies and squash merge
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 When you complete a [pull request](pull-requests.md), you merge the topic branch into your default branch, usually `main`. This merge adds the commits of the topic branch to your main branch and creates a merge commit to reconcile any conflicts between the default and topic branch. The comments and discussion in the pull request give additional context for the changes made in the topic branch.
 

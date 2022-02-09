@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Explore work items with the Test & Feedback extension
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 Use the Test & Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 

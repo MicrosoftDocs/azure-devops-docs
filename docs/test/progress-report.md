@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Progress Report
 
-[!INCLUDE [version-header](includes/version-2020-rtm.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]  
   
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 - How much testing is complete?
