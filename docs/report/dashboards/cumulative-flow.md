@@ -16,7 +16,7 @@ ms.date: 09/28/2021
 # View and configure a Cumulative Flow Diagram
 
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 

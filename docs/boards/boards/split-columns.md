@@ -14,7 +14,7 @@ ms.date: 10/15/2021
 ---
 
 # Split columns on your Kanban board to show work in progress
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at each stage.  
 

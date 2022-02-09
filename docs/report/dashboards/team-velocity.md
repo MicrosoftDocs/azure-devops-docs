@@ -15,7 +15,7 @@ ms.date: 09/28/2021
 
 # View or configure team velocity
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 

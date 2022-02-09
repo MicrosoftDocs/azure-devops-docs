@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Manually process the data warehouse and analysis services cube for Azure DevOps
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)] 
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)] 
 
  You can manually process the Team Foundation Server (TFS) relational database (Tfs\_Warehouse) or SQL Server Analysis Services cube (Tfs\_Analysis):
 - When you need the freshest data in your reports.

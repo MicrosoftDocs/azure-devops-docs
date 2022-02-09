@@ -16,7 +16,7 @@ ms.date: 10/13/2021
 
 # Test duration trend sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows the day wise trend of the average time taken to execute a test for a selected time range.
 

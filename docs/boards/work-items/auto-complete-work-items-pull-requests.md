@@ -13,7 +13,7 @@ ms.date: 08/24/2021
 
 # Autocomplete work items with pull requests 
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-2018-2020.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 ::: moniker range=">= azure-devops-2020"
 When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. Or, you can specify the workflow state to transition the work item to upon merging the PR. 

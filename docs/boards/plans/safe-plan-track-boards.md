@@ -14,7 +14,7 @@ ms.date: 10/20/2021
 
 # Plan and track SAFe® programs and portfolios in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Once you've configured your Agile tools to support SAFe®, trace relationships can be created from Stories all the way up to Epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 

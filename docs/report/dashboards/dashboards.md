@@ -14,7 +14,7 @@ ms.date: 09/28/2021
 
 # Add, rename, and delete dashboards in Azure DevOps
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2020"
 Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 

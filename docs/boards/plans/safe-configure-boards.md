@@ -14,7 +14,7 @@ ms.date: 10/20/2021
 
 # Configure Azure Boards to support SAFe® programs and portfolios
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This tutorial walks you through the steps to convert a new project with a single team to one that is configured to support Scaled Agile Framework (SAFe®) programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by completing the following tasks: 
 

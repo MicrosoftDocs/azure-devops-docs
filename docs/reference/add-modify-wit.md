@@ -14,7 +14,7 @@ ms.date: 11/17/2021
 
 # Add or modify a work item type 
 
-[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops-plus-xml-process](../includes/version-lt-azure-devops-plus-xml-process.md)]
 
 Your project contains a number of work item types, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A work item type is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
 

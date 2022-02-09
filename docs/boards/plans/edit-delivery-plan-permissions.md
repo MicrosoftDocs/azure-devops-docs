@@ -14,7 +14,7 @@ ms.date: 10/20/2021
 
 # Manage Delivery Plan permissions in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>

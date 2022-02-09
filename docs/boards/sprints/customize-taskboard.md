@@ -15,7 +15,7 @@ ms.date: 09/20/2021
 
 # Customize cards on a sprint taskboard in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
 ::: moniker range=">= azure-devops-2020"
 

@@ -14,7 +14,7 @@ ms.date: 10/13/2021
 
 # Progress status sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 

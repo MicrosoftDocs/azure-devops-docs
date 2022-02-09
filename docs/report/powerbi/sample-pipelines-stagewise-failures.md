@@ -14,7 +14,7 @@ ms.date: 10/12/2021
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 

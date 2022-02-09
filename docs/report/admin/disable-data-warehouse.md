@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Disable the data warehouse and cube
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
 
 This article describes how to disable the data warehouse and cube on your Azure DevOps Server instance.
 

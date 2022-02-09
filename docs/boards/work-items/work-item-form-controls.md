@@ -14,7 +14,7 @@ ms.date: 07/09/2020
 
 # Use work item form controls 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;and to fields specific to the type. You can link work items to one another and to changesets and source code files. 
 

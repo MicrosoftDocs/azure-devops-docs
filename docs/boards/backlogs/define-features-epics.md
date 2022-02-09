@@ -14,7 +14,7 @@ ms.date: 10/11/2021
 
 # Define features and epics in Azure Boards to organize your product and portfolio backlogs  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 

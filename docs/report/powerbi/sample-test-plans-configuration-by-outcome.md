@@ -14,7 +14,7 @@ ms.date: 10/13/2021
 
 # Configuration by outcome matrix sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 When you have multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
 

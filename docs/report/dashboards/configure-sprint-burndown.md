@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Configure and monitor sprint burndown 
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 ::: moniker range=">= azure-devops-2020"

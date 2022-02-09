@@ -14,7 +14,7 @@ ms.date: 10/08/2021
 
 # Delete test artifacts in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 <a id="delete-test"> </a> 
 

@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Add reports to a team project
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
 
 By adding a report server to your on-premises Azure DevOps Server deployment, you can access a wealth of data about your team's projects, like:
 - Build quality
@@ -30,7 +30,10 @@ The sequence of tasks is as follows:
 [![Review team activities](media/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 
-[!INCLUDE [temp](../includes/tfs-header-17-15.md)]
+> [!IMPORTANT]  
+> Excel reports, Reporting Services reports, and SharePoint dashboards are only supported for on-premises deployments of Azure DevOps Server or TFS. For information on what is supported for Azure DevOps, see [Dashboards, charts, & widgets](../dashboards/overview.md).
+> 
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
 
 
 If your reports don't appear as expected, review the checklists provided under [Review team activities](review-team-activities-for-useful-reports.md) for the necessary team activities to generate useful reports. Also, access information that describes healthy and unhealthy versions of each report.

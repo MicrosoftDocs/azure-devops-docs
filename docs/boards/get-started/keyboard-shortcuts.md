@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Keyboard shortcuts for Azure Boards and Team Explorer
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]    
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]    
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. Along with these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 
 For specific guidance on navigating within the web portal, see [Web portal navigation](../../project/navigation/index.md).

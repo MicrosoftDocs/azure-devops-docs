@@ -15,7 +15,7 @@ ms.date: 10/15/2021
 
 # Speed up your team's work by using swimlanes in your Kanban board
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
 Your Kanban board helps you visualize the flow of work as it moves from defined to completed. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 

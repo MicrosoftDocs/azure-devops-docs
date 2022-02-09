@@ -12,7 +12,7 @@ ms.date: 10/19/2021
 
 
 # Stories Progress Report (Agile)
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
 
 The Stories Progress report lists all user stories, filtered by product area and iteration in order of importance.  
   

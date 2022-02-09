@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 # Edit a WIT definition to add web content to a work item form
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
 
 You can add web content or HTML content to a work item form by exporting the type definition XML file and adding a `WebpageControl` in the `FORM` section. After you modify and import the XML file, you can verify the display of the Web content in the updated work item type.  
   
