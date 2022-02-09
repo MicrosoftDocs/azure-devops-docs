@@ -304,16 +304,11 @@ The tables below describe the type of events (or actions) that are available for
 ### Token
 | ActionId |	Category |	Details |
 |----------|-----------|----------|
-| Token.PatAccessExpiredEvent |	Access |	Expired Personal Access Token "{DisplayName}" failed to be exchanged for an access token. |
-| Token.PatAccessInvalidEvent	| Access |	Invalid Personal Access Token failed to be exchanged for an access token. |
 | Token.PatCreateEvent	| Create | Personal Access Token "{DisplayName}" was created. |
 | Token.PatExpiredEvent	| Modify | Personal Access Token "{DisplayName}" expired. |
-| Token.PatPublicDiscoveryEvent	| Access	Personal Access Token "{DisplayName}" associated with user "{OwnerName}" was discovered in a public repository. |
 | Token.PatRevokeEvent	| Remove	| Personal Access Token "{DisplayName}" was revoked. |
-| Token.PatSystemRevokeEvent	| Remove	Personal Access Token "{DisplayName}" associated with user "{OwnerName}" was revoked by the system. |
+| Token.PatSystemRevokeEvent	| Remove |	Personal Access Token "{DisplayName}" associated with user "{OwnerName}" was revoked by the system. |
 | Token.PatUpdateEvent	| Modify	| Personal Access Token "{DisplayName}" was updated. |
-| Token.SshAccessExpiredEvent	| Access | 	Expired SSH Key "{DisplayName}" failed to be exchanged for an |
 | Token.SshCreateEvent	| Create	| SSH Key "{DisplayName}" was created. |
-| Token.SshRemoveEvent	| Remove	| SSH Key "{DisplayName}" was removed. |
 | Token.SshRevokeEvent	| Remove	| SSH Key "{DisplayName}" was revoked. |
 | Token.SshUpdateEvent	| Modify	| SSH Key "{DisplayName}" was updated. |
