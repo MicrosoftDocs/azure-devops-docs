@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Default roles & access for public projects
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Public projects enable anyone to view its contents. Access is limited when the user isn't signed in. These users are also referred to as anonymous users or public users. Also, there are users, ones who are signed in to Azure DevOps, but aren't members of a project. Both of these types of users are granted limited, read-only access as indicated in the following table.  
 

@@ -12,7 +12,7 @@ ms.date: 09/25/2020
 
 # Customize a Hosted XML process
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps Services supports adding and updating processes through an administrative experience that is a web-based [import process](import-process.md). After you add a process, you can create one or more projects from it. You can update the process at any time by importing it again. The changes made to the process template are then applied to all projects that use the process.
 

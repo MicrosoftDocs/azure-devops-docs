@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Search the code base of a public project
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 In this quickstart, you learn how to search the code base of a public projects. With code search, you can locate specific types of code and easily narrow or widen your search.
 

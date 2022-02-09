@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 <a id="invite-others" />
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn how to enable public users to contribute to your project.
 
