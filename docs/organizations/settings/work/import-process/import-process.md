@@ -12,7 +12,7 @@ ms.date: 03/06/2020
 
 # Import and export a Hosted XML process  
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]  
 > Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Database Import Service](../../../../migrate/migration-overview.md).  

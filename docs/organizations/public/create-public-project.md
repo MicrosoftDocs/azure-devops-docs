@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Create a public project in your organization
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn how to create or add a public project to your organization. A public project is similar to any other project that you add to your organization. Every project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions.
 

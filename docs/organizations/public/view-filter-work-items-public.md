@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # View and filter work items  
 
-[!INCLUDE [temp](includes/version-public-projects.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
