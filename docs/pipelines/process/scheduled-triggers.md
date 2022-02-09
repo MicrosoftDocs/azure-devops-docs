@@ -631,7 +631,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 * You might have updated the service connection used to connect to the repository. This will cause a new run to be scheduled even if you have not updated your source code.
 
-* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will create an [information pipeline run](./information-run.md). It is a dummy build to let you know that Azure Pipelines is unable to reach your repository.
+* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will create an [informational run](./information-run.md). It is a dummy build to let you know that Azure Pipelines is unable to reach your repository.
 
 ### I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?
 
