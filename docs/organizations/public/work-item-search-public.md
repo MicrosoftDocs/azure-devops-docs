@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Search for work items defined in a public project
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn how to perform a work item search to quickly find work items defined within a public project.
 

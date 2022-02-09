@@ -12,7 +12,7 @@ ms.date: 03/20/2018
 
 # Process template customizations differences between Azure DevOps Services and TFS  
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
  
 > [!IMPORTANT]  
 > Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](../../../../migrate/migration-overview.md). 

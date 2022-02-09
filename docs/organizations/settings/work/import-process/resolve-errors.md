@@ -12,7 +12,7 @@ ms.date: 03/20/2018
 
 # Resolve validation errors for process import
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]  
 > Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [Azure DevOps data import service](../../../../migrate/migration-overview.md). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
