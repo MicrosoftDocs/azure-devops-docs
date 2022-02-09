@@ -512,10 +512,10 @@ The following commands can be issued to Azure Pipelines in comments:
 
 If you have the necessary repository permissions, but pipelines aren't getting triggered by your comments, make sure that your membership is **public** in the repository's organization, or directly add yourself as a repository collaborator. Azure Pipelines cannot see private organization members unless they are direct collaborators or belong to a team that is a direct collaborator. You can change your GitHub organization membership from private to public here (replace `Your-Organization` with your organization name): `https://github.com/orgs/Your-Organization/people`.
 
-## Information pipeline runs
-[!INCLUDE [information-runs](../includes/information-run-include.md)]
+## Informational runs
+[!INCLUDE [informational-runs](../includes/information-run-include.md)]
 
-Learn more about [information pipeline runs](../process/information-run.md).
+Learn more about [informational runs](../process/information-run.md).
 
 
 [!INCLUDE [ci-triggers](includes/source-options.md)]

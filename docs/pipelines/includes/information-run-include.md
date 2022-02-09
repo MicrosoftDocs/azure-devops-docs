@@ -1,6 +1,6 @@
 ---
-title: Information pipeline runs
-description: What are information pipeline runs
+title: Informational runs
+description: What are informational runs
 ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: sandrica
@@ -9,11 +9,11 @@ ms.date: 02/04/2022
 monikerRange: 'azure-devops'
 ---
 
-An information pipeline run tells you Azure DevOps tried running a YAML pipeline, but failed to retrieve its source code. Such a run looks like in the following screenshot. 
+An informational run tells you Azure DevOps tried running a YAML pipeline, but failed to retrieve its source code. Such a run looks like in the following screenshot. 
 
-![information pipeline run](../process/media/pipeline-information-run.png)
+![informational run](../process/media/pipeline-information-run.png)
 
-You can recognize an information pipeline run by the following attributes:
+You can recognize an informational run by the following attributes:
 - Status is `Canceled`
 - Duration is `< 1s`
 - Run name contains one of the following texts:
