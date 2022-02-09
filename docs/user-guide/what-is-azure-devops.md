@@ -86,7 +86,7 @@ To learn more about managing Azure DevOps Server, see the [Administrative tasks 
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-- [Azure DevOps release notes](/azure/devops/release-notes/index)
+- [Azure DevOps release notes](/azure/devops/server/release-notes/)
 - [Azure DevOps blog](https://blogs.msdn.microsoft.com/devops/)
 
 
