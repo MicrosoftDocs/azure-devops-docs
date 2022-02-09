@@ -13,7 +13,7 @@ ms.date: 10/15/2021
 
 # Requirements Progress Report (CMMI)
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
 
 The Requirements Progress report lists all requirements, filtered by product area and iteration in order of importance.  
   

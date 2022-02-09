@@ -14,7 +14,7 @@ ms.date: 10/13/2021
 
 # Manual test suites aggregated view sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Some scenarios have a hierarchical organization of test suites as per organization departments or modules as shown below. 
 

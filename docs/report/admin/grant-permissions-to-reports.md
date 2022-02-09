@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Grant permissions to view or create SQL Server reports in Azure DevOps Server
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
 
 Here's the third task in the four-task sequence to add reports to your team project. You can use the procedures in this article to set permissions to view or author reports.  
 

@@ -13,7 +13,7 @@ ms.date: 02/24/2017
 
 # Define a work item query to add to a process template
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
 
 <a name="top"></a> 
 

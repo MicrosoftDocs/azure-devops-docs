@@ -14,7 +14,7 @@ ms.date: 10/12/2021
 
 # Pipeline task duration trend sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to get the daily trend report of the time taken to execute a pipeline task. 
 

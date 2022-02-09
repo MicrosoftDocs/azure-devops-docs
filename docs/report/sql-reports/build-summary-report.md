@@ -12,7 +12,7 @@ ms.date: 10/14/2021
 
 # Build Summary report
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
 
 
 The Build Summary report builds and provides information about test results, test coverage, code churn, and quality notes for each build. 

@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Review team activities to support useful reports 
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
 
 
 > [!IMPORTANT]

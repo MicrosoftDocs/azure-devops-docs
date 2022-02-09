@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Define objects for tracking work items using the work Item tracking plug-in
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
 
 By using the plug-in for tracking work items, you define a project's initial objects for tracking work. These objects include types of work items, work item queries, categories, link types, and instances of work items. After you create a project, you can modify these objects by using the **witadmin** command-line tool.  
   

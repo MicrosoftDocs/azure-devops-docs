@@ -14,7 +14,7 @@ ms.date: 10/15/2021
 
 # Add, run, and update inline tests in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../../includes/dev15-and-ts-version-header.md)]  
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]  
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. See [Kanban basics](kanban-basics.md) if you're new to working with the Kanban board. If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
 

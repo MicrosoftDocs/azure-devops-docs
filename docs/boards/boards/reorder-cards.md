@@ -15,7 +15,7 @@ ms.date: 10/15/2021
 
 # Reorder cards on your Kanban board  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 <a id="reorder-cards"></a>
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 

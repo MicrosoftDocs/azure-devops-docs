@@ -13,7 +13,7 @@ ms.date: 10/13/2021
 
 # Interactively filter backlogs, boards, queries, and plans in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 <a id="filter"></a>
 

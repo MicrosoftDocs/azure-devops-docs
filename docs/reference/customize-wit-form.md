@@ -13,7 +13,7 @@ ms.date: 12/15/2017
 
 # Customize the work tracking web form  
 
-[!INCLUDE [temp](../includes/dev15-and-ts-version-header.md)]  
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]  
 
 
 > [!IMPORTANT]  
