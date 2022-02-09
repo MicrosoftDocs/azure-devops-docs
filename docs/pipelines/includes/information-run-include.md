@@ -7,7 +7,7 @@ ms.date: 02/04/2022
 
 An information pipeline run tells you Azure DevOps tried running a YAML pipeline, but failed to retrieve its source code. Such a run looks like in the following screenshot. 
 
-![information pipeline run](../process/media/pipeline-information-run.png)
+:::image type="content" source="../process/media/pipeline-information-run.png" alt-text="Information pipeline run.":::
 
 You can recognize an information pipeline run by the following attributes:
 - Status is `Canceled`
