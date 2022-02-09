@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # What is a public project?
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Create a public project, make an existing project public, or work in a public project to support your development of software applications.  
 

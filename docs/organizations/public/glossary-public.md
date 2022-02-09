@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Public projects glossary
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 This glossary describes terms used when working with public projects in Azure DevOps Services. See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 

@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Review rate and service limits 
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn which service limits and rate that your public projects are subject to. 
 
