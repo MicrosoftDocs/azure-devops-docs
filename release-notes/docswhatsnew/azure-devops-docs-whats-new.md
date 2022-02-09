@@ -156,6 +156,7 @@ The following people contributed to the Azure DevOps docs during this period. Th
 - [NathanMCarlson](https://github.com/NathanMCarlson) - Nathan Carlson (1)
 - [PagatHackimo](https://github.com/PagatHackimo) (1)
 - [sguitardude](https://github.com/sguitardude) (1)
+- [smholvoet](https://github.com/smholvoet) - Sander Holvoet (1)
 - [stan-sz](https://github.com/stan-sz) (1)
 - [tarrball](https://github.com/tarrball) (1)
 - [tkimmm](https://github.com/tkimmm) (1)
