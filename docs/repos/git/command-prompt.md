@@ -13,8 +13,8 @@ ms.date: 04/14/2021
 
 #  Git command reference 
 
-[!INCLUDE [version-azure-devops-2020](../includes/version-azure-devops-2020.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 <a name="set_up"></a>
 <a name="pat"></a>

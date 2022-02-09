@@ -11,8 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Git permission command
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Modifies the user access control list (ACL) and displays authorization settings for a Git repository or branch within a Git repository.        
 

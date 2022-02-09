@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # SSH passphrases
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 SSH uses private/public key pairs to protect your communication with the server. 
 SSH passphrases protect your private key from being used by someone who doesn't know the passphrase. 

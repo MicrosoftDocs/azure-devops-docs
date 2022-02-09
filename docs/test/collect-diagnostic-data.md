@@ -12,7 +12,7 @@ ms.date: 12/06/2021
 
 # Collect diagnostic data while testing
 
-[!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
 
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 

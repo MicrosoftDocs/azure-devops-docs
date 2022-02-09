@@ -11,8 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Get started with Git in Azure Repos
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)] 
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)] 
 
 Get started with developing your code using Azure Repos and Git repositories. You can use Visual Studio or Git commands to clone a repository, define local branches, commit and push changes, and sync with others. If you need to create or import a repository, see [Create a new Git repo in your project](create-new-repo.md) or [Import a Git repository](import-git-repository.md).
 

@@ -12,7 +12,8 @@ monikerRange: '>= tfs-2015'
 
 # Associate automated tests with test cases
 
-[!INCLUDE [version-header](includes/version-vs-only.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../includes/version-vs-gt-2015.md)]
 
 Consider using Visual Studio to associate automated tests with a test case when:
 

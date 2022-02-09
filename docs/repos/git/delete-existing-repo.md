@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Delete a Git repo from your project
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Remove unused Git repos from your project when they are no longer needed. 
 

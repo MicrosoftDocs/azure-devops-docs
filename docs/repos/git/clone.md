@@ -11,8 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Clone an existing Git repo
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Create a complete local copy of an existing Git repository by cloning it.
 Cloning a repo downloads all [commits](commits.md) and [branches](./create-branch.md) in the repo.

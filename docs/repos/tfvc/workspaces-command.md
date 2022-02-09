@@ -11,8 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Workspaces command (Team Foundation Version Control)
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 The **workspaces** command displays information about workspaces in the system and updates cached information about a user name or computer name change on an Azure DevOps server.
 

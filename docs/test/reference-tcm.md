@@ -12,7 +12,8 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for Test Case Management reporting
 
-[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../includes/version-vs-gt-2015.md)]
 
 ## I am using Microsoft Test Manager (MTM) for my testing activities - what type of reports can I see within MTM?
 

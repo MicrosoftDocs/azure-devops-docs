@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Assign tests for user acceptance testing
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
 
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based

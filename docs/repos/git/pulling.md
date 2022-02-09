@@ -11,8 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Update code with fetch and pull
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Update the code in your local repo with the changes from other members of your team using the following commands:
 

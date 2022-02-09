@@ -12,7 +12,7 @@ ms.date: 09/15/2021
 
 # Manual test access and permissions 
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 
 Access to Azure Test Plans features are controlled by access level and permissions. To access the Test Plans web portal, you must have a **Basic** access level or greater. To define and manage test plans, test suites, and test cases, you need **Basic + Test Plans**, which is available from Azure DevOps.

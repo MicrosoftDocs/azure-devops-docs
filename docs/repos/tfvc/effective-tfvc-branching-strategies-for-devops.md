@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Choose a branching strategies with a DevOps mindset  
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using Team Foundation Version Control ([TFVC](./what-is-tfvc.md)) with Azure DevOps? You probably have a few questions, such as:
 

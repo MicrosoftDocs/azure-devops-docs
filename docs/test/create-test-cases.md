@@ -14,7 +14,7 @@ ms.date: 11/04/2021
 
 # Create manual test cases
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
 
 <a name="test-cases"></a>
 

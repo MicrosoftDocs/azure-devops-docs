@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Check in to a folder that is controlled by a gated check-in build process
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 

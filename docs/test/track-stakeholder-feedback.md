@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Track stakeholder feedback
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 All feedback is captured in a *Feedback Response* work item.
 You can track feedback, whether captured by the [Test & Feedback extension](provide-stakeholder-feedback.md) or the [Microsoft Feedback client](../project/feedback/give-feedback.md), through a work item query.

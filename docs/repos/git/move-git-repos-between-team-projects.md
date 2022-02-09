@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Move Git repositories to another project with full-fidelity history
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 ![Git logo](./media/move-git-repos-between-team-projects/git.png)
 

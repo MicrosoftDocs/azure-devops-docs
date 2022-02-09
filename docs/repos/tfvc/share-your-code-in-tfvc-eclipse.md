@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Share your code in TFVC using Eclipse
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 
 Share your code with your team with Azure DevOps Services and Eclipse.

@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Navigate Test Plans 
 
-[!INCLUDE [version-2020-rtm](includes/version-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks. 
  

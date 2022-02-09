@@ -12,7 +12,7 @@ ms.date: 11/02/2021
 
 # Create test plans and test suites
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 Create test plans and test suites to track manual testing for sprints or milestones.
 That way, you can see when the testing for a specific sprint or milestone is complete.
