@@ -634,7 +634,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 * Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to you YAML file, and push the update to your repository. This should re-sync the schedules.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to your YAML file, and push the update to your repository. This should re-sync the schedules.
 
 * If you use GitHub for storing your code, it is possible that Azure Pipelines may have been throttled by GitHub when it tried to start a new run. Check if you can start a new run manually.
 
