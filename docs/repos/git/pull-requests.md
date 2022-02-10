@@ -161,7 +161,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 <a id="create-pr" />
 
 ::: moniker range=">= azure-devops-2020"
-To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). To open the PR in your browser after creation, use the `--open` parameter.
+To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az-repos-pr-create). To open the PR in your browser after creation, use the `--open` parameter.
 
 ```azurecli
 az repos pr create [--auto-complete {false, true}]
@@ -370,7 +370,7 @@ To edit the title, description, or any other details in an existing PR, open the
 ::: moniker range=">= azure-devops-2020"
 <a id="add-details-pr" /> 
 
-You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
+You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az-repos-pr-create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az-repos-pr-update).
 
 When you create a PR with `az repos pr create`, add a `--title` and a detailed `--description` of your changes so others can see what problems the changes solve. The `--description` parameter accepts Markdown entry, and each value in the argument is a new line of the PR description.
 
