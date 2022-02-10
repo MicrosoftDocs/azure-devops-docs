@@ -31,6 +31,11 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 <tr><td>SSH Public Key</td><td>(Optional) The contents of the public SSH key.</td></tr>
 <tr><td>SSH Passphrase</td><td>(Optional) The passphrase for the SSH key, if any.</td></tr>
 <tr><td>SSH Key (Secure File)</td><td>(Required) Select the SSH key that was uploaded to <code>Secure Files</code> to install on the agent.</td></tr>
+<tr><td>Add Entry To Config</td><td>(Optional) Add entry related to the key installed to the SSH config file. The key file will be available for all subsequent tasks.</td></tr>
+<tr><td>Config Host Alias</td><td>(Optional) Name of SSH config entry.</td></tr>
+<tr><td>Config Host Name</td><td>(Optional) Host name property of SSH config entry.</td></tr>
+<tr><td>Config User</td><td>(Optional) Username property of SSH config entry.</td></tr>
+<tr><td>Config Port</td><td>(Optional) Port of SSH config entry.</td></tr>
 
 [!INCLUDE [temp](../includes/control-options-arguments.md)]
 
@@ -143,12 +148,7 @@ steps:
 
 ## Multiple Install SSH Key tasks in the same pipeline job.
 
-When using more than one key in the same pipeline job, the first one is used by default. To be able to use the desired key when establishing an SSH connection, you can use the `Advanced` section of the `InstallSSHKey` task to set the following parameters:
-* `addEntryToConfig` — Add entry related to the key installed to the SSH config file. The key file will be available for all subsequent tasks.
-* `configHostAlias` — Name of SSH config entry.
-* `configHostname` — Host name property of SSH config entry.
-* `configUser` — Username property of SSH config entry.
-* `configPort` — Port of SSH config entry.
+When using more than one key in the same pipeline job, the first one is used by default. To be able to use the desired key when establishing an SSH connection, you can use the `Advanced` section of the `InstallSSHKey` task to set the following parameters: `addEntryToConfig`, `configHostAlias`, `configHostname`, `configUser`, and `configPort`.
 
 These parameters allow you to add a host to the SSH config file (e.g. `/root/.ssh/config` for Linux) in order to further use it in scripts via alias.
 This file will be removed from the agent after build will be finished, for security purposes.
