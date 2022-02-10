@@ -5,7 +5,7 @@ author: silviuandrica
 ms.date: 02/04/2022
 ---
 
-An informational run tells you Azure DevOps failed to retrieve a YAML pipeline's source code. This retrieval can happen in response to external triggers, e.g., a pushed commit, or in response to internal, system triggers, e.g., while evaluating whether to start a scheduled run or not.
+An informational run tells you Azure DevOps failed to retrieve a YAML pipeline's source code. Source code retrieval happens in response to external events, for example, a pushed commit. It also happens in response to internal triggers, for example, to check if there are code changes and start a scheduled run or not. Thus, the existence of such a run doesn't always mean Azure DevOps was going to run the pipeline. 
 
 An informational run looks like in the following screenshot. 
 
