@@ -53,25 +53,25 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
     - Set default subscription:
     
-    ```Command
+    ```azurecli
     az account set --subscription <your_subscription_name_or_subscription_ID>
     ```
 
     - Set default region:
     
-    ```Command
+    ```azurecli
     az config set defaults.location=<your_region>
     ```
 
 1. Create a new resource group to host your Azure Key Vault. A resource group is a container that holds related resources for an Azure solution.
 
-    ```Command
+    ```azurecli
     az group create --name <your-resource-group>
     ```
    
 1. Create a new Azure Key Vault.
 
-    ```Command
+    ```azurecli
     az keyvault create \
       --name <your-key-vault-name> \
       --resource-group <your-resource-group>
