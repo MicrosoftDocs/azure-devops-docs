@@ -58,7 +58,7 @@ steps:
 If you want to manually publish your Artifact, run the following command in an elevated command prompt:
 
 
-```Command
+```azurecli
 az pipelines runs artifact upload --artifact-name your_artifact_name --path your_path_to_publish --run-id '<artifact_run_id>'
 ```
 
