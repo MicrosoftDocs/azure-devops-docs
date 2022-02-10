@@ -500,7 +500,7 @@ You can use Azure CLI to list, show, and update policies for a branch or reposit
 <a name="repos-policy-list"></a>
 ### List policies
 
-Use [az repos policy list](/cli/azure/repos/policy#az_repos_policy_list) to list all policies for all project repositories and branches. Use the `repository-id` and `branch` parameters to list policies for specific repositories and branches.
+Use [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list) to list all policies for all project repositories and branches. Use the `repository-id` and `branch` parameters to list policies for specific repositories and branches.
 
 ```azurecli
 az repos policy list [--branch]
@@ -549,7 +549,7 @@ ID    Name                         Is Blocking    Is Enabled    Repository Id   
 <a name="show-policy"></a>
 ### Show policy details
 
-To show the details of any policy, use [az repos policy show](/cli/azure/repos/policy#az_repos_policy_show). You can get the policy ID by running `az repos policy list`.
+To show the details of any policy, use [az repos policy show](/cli/azure/repos/policy#az-repos-policy-show). You can get the policy ID by running `az repos policy list`.
 
 ```azurecli
 az repos policy show --id
@@ -588,7 +588,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ### Update policies
 
-You can use Azure CLI [az repos policy update](/cli/azure/repos/policy#az_repos_policy_update) with a policy configuration file to update policies. A policy configuration file can apply a policy across more than one scope at a time. For more information, see [Configure Git repository policies by using a configuration file](../../cli/policy-configuration-file.md). For examples of policy configuration files, see [Configurations - Create](/rest/api/azure/devops/policy/configurations/create#examples).
+You can use Azure CLI [az repos policy update](/cli/azure/repos/policy#az-repos-policy-update) with a policy configuration file to update policies. A policy configuration file can apply a policy across more than one scope at a time. For more information, see [Configure Git repository policies by using a configuration file](../../cli/policy-configuration-file.md). For examples of policy configuration files, see [Configurations - Create](/rest/api/azure/devops/policy/configurations/create#examples).
 
 ```azurecli
 az repos policy update --config
@@ -635,7 +635,7 @@ The following *policy.json* file sets the minimum reviewers policy to require th
 }
 ``` 
 
-The `az repos policy update` command line updates the minimum reviewers policy per the *policy.json* file. You can find the policy ID by using [az repos policy list](/cli/azure/repos/policy#az_repos_policy_list). The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
+The `az repos policy update` command line updates the minimum reviewers policy per the *policy.json* file. You can find the policy ID by using [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list). The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
 
 ```azurecli
 az repos policy update --config C:\policies\policy.json --id 7 --output table
@@ -928,11 +928,11 @@ To set case enforcement policy:
 
 ::: moniker range="> azure-devops-2019" 
  
-You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement#az_repos_policy_case_enforcement_create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to configure or update case enforcement policy.
+You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to configure or update case enforcement policy.
 
 ### Create case enforcement policy
 
-Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement#az_repos_policy_case_enforcement_create) to create a case enforcement policy.
+Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-create) to create a case enforcement policy.
 
 ```azurecli
 az repos policy case-enforcement create --blocking {false, true}
@@ -956,7 +956,7 @@ az repos policy case-enforcement create --blocking {false, true}
 
 **Example**
 
-The following example implements a required case enforcement policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az_repos_list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following example implements a required case enforcement policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az-repos-list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos policy case-enforcement create --blocking true --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
@@ -1075,7 +1075,7 @@ To configure **Maximum file size** policy:
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">= azure-devops-2020"
-Use [az repos policy file-size create](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
+Use [az repos policy file-size create](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
 
 ### Create file size policy
 
@@ -1119,7 +1119,7 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 
 ### Update file size policy
 
-Use [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
+Use [az repos policy file-size update](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-update) to manage maximum file size policy.
 
 ```azurecli
 az repos policy file-size update --id

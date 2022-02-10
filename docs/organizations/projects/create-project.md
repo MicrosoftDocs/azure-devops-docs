@@ -246,7 +246,7 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can create a project using the [az devops project create](/cli/azure/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can create a project using the [az devops project create](/cli/azure/devops/project#az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -479,7 +479,7 @@ You can choose a project to open project settings for that project on this page.
 
 ### List projects
 
-You can list projects defined for an organization using the [az devops project list](/cli/azure/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list projects defined for an organization using the [az devops project list](/cli/azure/devops/project#az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -525,7 +525,7 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ### Show project information, and open in web portal
 
-You can list project information and optionally open the project in the web portal using the [az devops project show](/cli/azure/devops/project#ext-azure-devops-az-devops-project-show) command.  
+You can list project information and optionally open the project in the web portal using the [az devops project show](/cli/azure/devops/project#az-devops-project-show) command.  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli

@@ -220,7 +220,7 @@ To vote on a PR, open the PR in the browser, and on the **Overview** page, use t
 
 ::: moniker range=">= azure-devops-2020"
 
-To vote on whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote).
+To vote on whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az-repos-pr-set-vote).
 
 ```azurecli
 az repos pr set-vote --id

@@ -267,7 +267,7 @@ To complete a PR, open the PR in the browser, and on the **Overview** page, sele
 
 ::: moniker range=">= azure-devops-2020"
 
-To complete a PR and merge the changes, use [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update) to update the PR `--status` to `completed`.
+To complete a PR and merge the changes, use [az repos pr update](/cli/azure/repos/pr#az-repos-pr-update) to update the PR `--status` to `completed`.
 
 For example, to complete PR #21, use:
 

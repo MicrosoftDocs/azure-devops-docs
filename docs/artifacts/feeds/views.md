@@ -55,7 +55,7 @@ In addition to using the Azure Artifacts user interface, you can also promote pa
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation#jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
 - **Python**:
    
