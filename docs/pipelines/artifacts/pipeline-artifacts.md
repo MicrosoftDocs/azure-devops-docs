@@ -60,7 +60,7 @@ steps:
 
 - Run the following command to publish your Artifact:
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 
@@ -153,7 +153,7 @@ steps:
 
 - Run the following command to download your Artifact
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 

@@ -23,25 +23,25 @@ With universal packages, you can store different types of packages other than th
 
 1. To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
 
-   ```Command
+   ```azurecli
    az --version
    ```
 
 2. Install the Azure DevOps extension.
 
-   ```Command
+   ```azurecli
    az extension add --name azure-devops
    ```
 
 3. If you already have the Azure DevOps extension but you want to update to the latest version, run the following command:
 
-   ```Command
+   ```azurecli
    az extension update --name azure-devops
    ```
 
 4. Log in to Azure.
 
-    ```Command
+    ```azurecli
     az login
     ```
 
@@ -50,7 +50,7 @@ With universal packages, you can store different types of packages other than th
 
 5. Set your project and organization as the CLI's default.
 
-    ```Command
+    ```azurecli
     az devops configure --defaults project=<YOUR_PROJECT_NAME> organization=https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
     ```
 
@@ -60,7 +60,7 @@ To publish a universal package, run the following command in an elevated command
 
 The following command will publish a universal package to an organization-scoped feed:
 
-```Command
+```azurecli
 az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --description <PACKAGE_DESCRIPTION> --path <PACKAGE_DIRECTORY>
 ```
 
@@ -78,7 +78,7 @@ az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANI
 
 To download a universal package using Azure CLI, run the following command in an elevated command prompt.
 
-```Command
+```azurecli
 az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME>  --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
 ```
 
@@ -88,7 +88,7 @@ If you only want to download specific files, you can use the `--file-filter` par
 
 Example: `--file-filter *logs/*.log` would match any file ending with *logs* and with the extension *.log* (Example: build123_logs.log). See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
 
-```Command
+```azurecli
 az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION>  --path <DOWNLOAD_PATH>  --file-filter <MATCH_PATTERN>
 ```
 
