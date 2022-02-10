@@ -38,7 +38,7 @@ All `az repos` commands will now be aliased to `git repo` and all `az repos pr` 
 For example, a pull request can now be created using the following command:
 
 
-```azurecli
+```bash
 git pr create --target-branch {branch\_name}
 ```
 
