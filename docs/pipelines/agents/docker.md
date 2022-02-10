@@ -433,7 +433,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 3. Configure Container Registry integration for existing AKS clusters.
 
-   ```shell
+   ```azurecli
    az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
    ```
 

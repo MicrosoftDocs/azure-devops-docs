@@ -32,7 +32,7 @@ To use a PAT with the Azure DevOps CLI, use one of these options:
 
 You're prompted to enter a PAT after you run the `az devops login` command:
 
-```bash
+```azurecli
 $az devops login --organization https://dev.azure.com/contoso
 Token:
 ```
@@ -48,13 +48,13 @@ When you're successfully signed in, this command also can set your default organ
 
 This option is useful in pipelines in which `#####` can be replaced by `$(System.AccessToken)` or another pipeline variable:
 
-```bash
+```azurecli
 echo  "######" | az devops login --organization https://dev.azure.com/contoso/
 ```
 
 ### From a file
 
-```bash
+```azurecli
 cat my_pat_token.txt | az devops login --organization https://dev.azure.com/contoso/
 ```
 
