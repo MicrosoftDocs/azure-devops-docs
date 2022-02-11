@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Service Fabric Application Deployment task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to deploy a Service Fabric application to a cluster.
 This task deploys an Azure Service Fabric application to a cluster 

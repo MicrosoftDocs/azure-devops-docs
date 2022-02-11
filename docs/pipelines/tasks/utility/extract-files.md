@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Extract Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to extract files from archives to a target folder using match patterns.
 A range of standard archive formats is supported, including .zip, .jar, .war, .ear, .tar, .7z, and more.

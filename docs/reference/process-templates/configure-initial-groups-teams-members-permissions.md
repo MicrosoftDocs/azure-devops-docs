@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Configure initial groups, teams, members, and permissions
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
   

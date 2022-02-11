@@ -12,7 +12,7 @@ ms.date: 12/13/2021
 
 # What is Azure Test Plans?  
 
-**Azure Test Plans | Azure DevOps Server 2020**
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 Azure Test Plans provides rich and powerful
 tools everyone in the team can use to drive quality and collaboration

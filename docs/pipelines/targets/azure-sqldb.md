@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

@@ -14,7 +14,7 @@ ms.date: 09/27/2021
 
 # Choose the source of data and authoring tool
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 When you create reports that show data from Azure DevOps Server, you specify one of three sources of data and use one of three authoring tools. The choice of data source and authoring tool are interrelated.
 

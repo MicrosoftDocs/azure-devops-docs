@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Share code with push
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Share changes made in [commits](commits.md) and [branches](./create-branch.md) using the `push` command.

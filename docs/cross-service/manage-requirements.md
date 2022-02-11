@@ -14,7 +14,7 @@ ms.date: 09/08/2020
 
 # Manage requirements 
 
-[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. This article maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   

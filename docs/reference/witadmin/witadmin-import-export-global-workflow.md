@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Import and export global workflow
 
-[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 By using global workflow, you can minimize the work required to define and update work item fields and global lists that multiple projects and types of work items share. With global workflow, you can define and update fields and global lists. You can manage the global workflow for a project collection or a project by using the following commands in the **witadmin** command-line tool:  
   

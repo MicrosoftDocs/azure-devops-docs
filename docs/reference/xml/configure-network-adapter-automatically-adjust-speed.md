@@ -13,7 +13,7 @@ ms.date: 02/22/2017
 
 # Configure a network adapter to automatically adjust speed
 
-**TFS 2013**
+[!INCLUDE [version-eq-2013](../../includes/version-eq-2013.md)]
 
 When a client computer is not configured to automatically adjust the link speed of its network adapter, some functions might take a long time to finish. Such functions include creating projects, saving work items, or merging code changes. In some cases, these functions might never finish, and an error message might appear that contains the phrase "The underlying connection was closed."  
   

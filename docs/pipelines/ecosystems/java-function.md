@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Build and deploy Java to Azure Functions
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can use Azure Functions to run small pieces of code in the cloud without the overhead of running a server. Learn how to create a pipeline that continuously builds and deploys your Java function app. Your team can then automatically build each commit at GitHub, and if you want, automatically deploy the change to Azure Functions.
 

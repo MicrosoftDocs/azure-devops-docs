@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Index Sources & Publish Symbols task
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 

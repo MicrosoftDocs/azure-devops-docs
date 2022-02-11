@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Rebuild the data warehouse and cube
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), rebuild the data warehouse and cube to access high-level reports. It's also a good idea to rebuild the warehouse and cube when you move, attach, detach, or delete a team project collection.  
 

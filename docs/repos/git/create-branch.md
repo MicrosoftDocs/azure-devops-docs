@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Create a new Git branch
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial]().

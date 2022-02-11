@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 ---
 
 # Bake manifests
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Bake action of the [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) is useful for turning templates into manifests with the help of a template engine. The bake action of Kubernetes manifest task is intended to provide visibility into the transformation between the input templates and the end manifest files that are used in the deployments. [Helm 2](https://helm.sh), [kustomize](https://github.com/kubernetes-sigs/kustomize), and [kompose](https://github.com/kubernetes/kompose) are supported as templating options under the bake action.
 

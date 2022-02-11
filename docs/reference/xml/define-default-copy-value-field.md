@@ -13,7 +13,7 @@ ms.date: 04/05/2017
 
 # Define a default value or copy a value to a field
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 
 You can specify a default value for a field, or you can copy the value from another field or system-defined value.  Field defaults are rules that control how field values are automatically assigned. You can assign a field default by using one of the following elements: `COPY`, `DEFAULT`, and `SERVERDEFAULT`. You can specify these elements as child elements of the `FIELD` (Definition) element or the `FIELD` (Workflow) element.  

@@ -10,7 +10,7 @@ monikerRange: azure-devops
 
 # Define resources in YAML
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.

@@ -12,7 +12,7 @@ ms.date: 10/14/2021
 
 # Build Summary report
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 
 The Build Summary report builds and provides information about test results, test coverage, code churn, and quality notes for each build. 

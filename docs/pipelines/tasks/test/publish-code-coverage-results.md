@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Publish Code Coverage Results task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task in a build pipeline to publish code coverage results produced when
 running tests to Azure Pipelines or TFS in order to obtain coverage reporting.

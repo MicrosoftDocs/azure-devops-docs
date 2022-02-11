@@ -13,7 +13,7 @@ ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2
 
 # Use CI/CD to deploy a Python web app to Azure App Service on Linux
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Use Azure Pipelines continuous integration and continuous delivery (CI/CD) to deploy a Python web app to Azure App Service on Linux. Your pipeline automatically builds the code and deploys it to the App Service whenever there's a commit to the repository. You can add other functionalities in your pipeline, such as test scripts, security checks, multistages deployment, and so on.
 

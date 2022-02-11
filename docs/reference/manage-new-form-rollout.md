@@ -13,7 +13,7 @@ ms.date: 03/16/2017
 
 # Manage roll out of the new web form
 
-**TFS 2017**
+[!INCLUDE [version-eq-2017](../includes/version-eq-2017.md)]
 
 > [!IMPORTANT]  
 > **Feature availability:** The new form and its corresponding features are available for the web portal for TFS 2017 and later versions.

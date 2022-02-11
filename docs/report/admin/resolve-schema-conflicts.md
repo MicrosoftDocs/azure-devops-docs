@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Resolve data warehouse schema conflicts
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 Schema conflicts occur when a set of attributes for reportable fields differs across team project collections. When a schema conflict occurs, fields that aren't in conflict are processed as usual. The fields that are in conflict are assigned null values until you resolve the conflicts and then they process as usual. Also, the system generates a notification event for each conflict that it detects. By subscribing to the event, you can receive alerts when schema conflicts occur for any team projects that are defined for a collection. Correct all schema conflicts to unblock the processing of the associated data for the warehouse and to enable the associated reports to display current data. 
 

@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Review history
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 

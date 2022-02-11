@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Define the tasks to process a plug-in
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 <a name="top"></a> 
 

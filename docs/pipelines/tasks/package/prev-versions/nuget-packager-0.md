@@ -5,31 +5,18 @@ description: Learn all about how you can produce NuGet packages when building co
 ms.technology: vs-devops-package
 ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
 ms.date: 08/10/2016
+monikerRange: '<= tfs-2017'
 ---
 
 # NuGet Packager task version 0.*
 
-**Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
+[!INCLUDE [version-lt-eq-2017](../../../../includes/version-lt-eq-2017.md)]
 
 Use this task to create a NuGet package from either a .csproj or .nuspec file.
-
-::: moniker range="<= tfs-2018"
-
-[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 ## Demands
 
 None
-
-::: moniker range="> tfs-2018"
-
-## YAML snippet
-
-[!INCLUDE [temp](../../includes/yaml/NuGetPackagerV0.md)]
-
-::: moniker-end
 
 ## Arguments
 

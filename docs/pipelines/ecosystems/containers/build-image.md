@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Build an image
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Get started with container images by using Azure Pipelines to build an image. All you need to build an image is a Dockerfile in your repository. 
 

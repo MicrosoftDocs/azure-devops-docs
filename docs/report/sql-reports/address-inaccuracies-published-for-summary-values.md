@@ -12,7 +12,7 @@ ms.date: 10/14/2021
 
 # Address inaccuracies published for summary values
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 If you see that hours are counted twice in reports that contain task hours, you can correct the problem with the procedure in this article. The Progress dashboard and the Burndown and Burn Rate and Remaining Work reports may show double-counting of work hours.  
   

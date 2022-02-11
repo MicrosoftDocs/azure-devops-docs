@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Review team activities to support useful reports 
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 
 > [!IMPORTANT]

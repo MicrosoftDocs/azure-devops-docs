@@ -14,7 +14,7 @@ ms.date: 12/19/2017
 
 # Resolve errors received when configuring features
 
-[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You may be able to resolve errors and warnings that the [Configure Features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) wizard displays. These problems occur because definitions in the project conflict with definitions in the process templates uploaded to your project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your project and then rerun the wizard.    
 

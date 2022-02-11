@@ -12,7 +12,7 @@ ms.date: 10/15/2021
 
 # Analyze and report on test results using the test perspective
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 <a name="top"></a> By using the Test perspective in the SQL Server Analysis Services cube, view just the measures, dimensions, and attributes that pertain to reporting on tests results and test runs. For example, use these measures to determine the overall quality of each build, the tests that a particular build affected, and the number of test cases that were run. You can also answer questions about changes to the result outcomes.  
   

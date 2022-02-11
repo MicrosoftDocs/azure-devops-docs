@@ -11,7 +11,7 @@ ms.date: 10/14/2021
 
 # Bug Trends report
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can use the Bug Trends report to help track the rate at which your team is discovering and resolving bugs. This report shows a rolling or moving average of bugs being reported, resolved, and closed over time. When you manage a large team or a large number of bugs, you can monitor the Bug Trends report weekly to gain insight into how well the team is finding, resolving, and closing bugs.  
   

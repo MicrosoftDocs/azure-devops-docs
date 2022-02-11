@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017 < azure-devops'
 
 # Run the agent with a self-signed certificate
 
-[!INCLUDE [version-tfs-only-2017](../includes/version-tfs-only-2017.md)]
+[!INCLUDE [version-gt-eq-2017-lt-azure-devops](../../includes/version-gt-eq-2017-lt-azure-devops.md)]
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 

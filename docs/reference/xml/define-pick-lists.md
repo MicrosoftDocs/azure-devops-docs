@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 
 # Define pick lists
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can enumerate a set of values for a field by defining a pick list as part of its definition or at some point during the workflow. You can specify that the list can contain only allowed values, cannot contain prohibited values, or can suggest values. If you suggest values, users can specify a value other those in the pick list.  
 

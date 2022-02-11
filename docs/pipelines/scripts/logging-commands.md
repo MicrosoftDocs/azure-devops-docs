@@ -5,6 +5,7 @@ ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
 ms.date: 12/06/2021
 ms.custom: contperf-fy21q3
+monikerRange: '>=tfs-2013'
 ---
 
 # Logging commands

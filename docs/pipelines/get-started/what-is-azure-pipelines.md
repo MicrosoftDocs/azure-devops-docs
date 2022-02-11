@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 
 # What is Azure Pipelines?
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Azure Pipelines automatically builds and tests code projects to make them available to others. 
 It works with just about any language or project type. Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. 

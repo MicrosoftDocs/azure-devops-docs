@@ -13,7 +13,7 @@ ms.date: 10/15/2021
 
 # Analyze and report on code churn and coverage
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can report on the software quality by using the Code Churn and Run Coverage perspectives from the SQL Server Analysis Services cube for Azure DevOps Server. By using these perspectives, you can view just the measures, dimensions, and attributes that are associated with the changes in lines of codes and the extent to which code is covered in builds and test runs.  
   

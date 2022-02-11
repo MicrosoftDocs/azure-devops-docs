@@ -11,7 +11,7 @@ monikerRange: '=azure-devops'
 
 # Quickstart: Deploy to an Azure MySQL database
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Get started with [Azure Database for MySQL](/azure/mysql/) by deploying a database update with Azure Pipelines. Azure Database for MySQL is a relational database service in the Microsoft cloud. This quickstart walks through updating a single-server database. 
 

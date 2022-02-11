@@ -12,7 +12,7 @@ ms.date: 03/20/2018
 
 # New work item tracking experience
 
-**TFS 2018 | TFS 2017**  
+[!INCLUDE [version-gt-eq-2017-lt-eq-2019](../../includes/version-gt-eq-2017-lt-eq-2019.md)]
 
 > [!IMPORTANT]  
 > The new form and its corresponding features are available from the web portal for TFS 2017 and later versions.<br/> 

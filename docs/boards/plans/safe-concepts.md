@@ -14,7 +14,7 @@ ms.date: 10/20/2021
 
 # How SAFe&reg; concepts map to Azure Boards artifacts 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you're interested in using Scaled Agile Framework (SAFe®), you can configure your Azure Boards project to track SAFe® deliverables. Just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on Epics that span releases. 
 

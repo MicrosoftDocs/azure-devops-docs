@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # About branches and branch policies
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Branch policies are an important part of the Git workflow and enable you to:
 

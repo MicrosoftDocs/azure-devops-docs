@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Deploy with System Center Virtual Machine Manager
 
-[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build.
 

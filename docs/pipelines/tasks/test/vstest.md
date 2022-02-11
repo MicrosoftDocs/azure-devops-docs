@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Visual Studio Test task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run unit and functional tests (Selenium, Appium, Coded UI test, and more)
 using the Visual Studio Test Runner. Other than MSTest-based tests, test frameworks that have a

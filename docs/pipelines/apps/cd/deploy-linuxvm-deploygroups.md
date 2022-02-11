@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Deploy a web app to an nginx web server on a Linux Virtual Machine
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 > [!NOTE]
 > If you want to deploy your application to a Linux virtual machine using YAML, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).

@@ -10,7 +10,7 @@ ms.custom: devx-track-python, freshness-fy22q2
 
 # Build Python apps
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a basic pipeline. 
 

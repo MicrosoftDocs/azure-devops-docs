@@ -13,7 +13,7 @@ monikerRange: azure-devops
 
 # Build and test Ruby apps
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 This article explains how to automatically build Ruby projects.
 

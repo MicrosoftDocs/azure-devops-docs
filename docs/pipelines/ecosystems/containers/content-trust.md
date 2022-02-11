@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 ---
 # Docker Content Trust
 
-[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Docker Content Trust (DCT) provides the ability to use digital signatures for data sent to and received from remote Docker registries. These signatures allow client-side or runtime verification of the integrity and publisher of specific image tags.
 

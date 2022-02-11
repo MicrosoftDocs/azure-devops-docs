@@ -13,7 +13,7 @@ ms.date: 03/30/2021
 
 # Manage change 
 
-[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Managing change is an aspect of managing your project plan, your requirements, and your sprints. In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change?
 

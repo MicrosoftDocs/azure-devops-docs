@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Table reference for the relational warehouse database
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can create reports and query for data by using the warehouse database. The data in the warehouse is collected from the Azure DevOps operational stores and organized in a set of tables, views, and table-valued functions that are designed for creating reports.  
   

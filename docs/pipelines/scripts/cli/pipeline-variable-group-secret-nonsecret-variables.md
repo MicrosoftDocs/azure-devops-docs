@@ -7,6 +7,7 @@ manager: mijacobs
 ms.date: 05/20/2021
 ms.topic: sample
 ms.devlang: azurecli 
+monikerRange: '>=azure-devops-2020'
 ms.custom: devx-track-azurecli
 ---
 

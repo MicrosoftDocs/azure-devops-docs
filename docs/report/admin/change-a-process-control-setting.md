@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Change a process control setting for the data warehouse or Analysis Services cube
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can change the refresh frequency and time-out values that control the processing of the data warehouse. You change a process control setting only if you want to tune it for your specific deployment.
 

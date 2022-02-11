@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # UI testing considerations
 
-[!INCLUDE [version-header-vsts-tfs2017](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes

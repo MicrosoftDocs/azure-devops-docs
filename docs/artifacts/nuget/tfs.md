@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017 < azure-devops'
 
 # Use NuGet or dotnet with Team Foundation Server feeds
 
-**TFS 2018** | **TFS 2017**
+[!INCLUDE [version-gt-eq-2017-lt-azure-devops](../../includes/version-gt-eq-2017-lt-azure-devops.md)]
 
 Authentication from command-line clients like `nuget` and `dotnet` is a little different for Team Foundation Server users.
 

@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Task types & usage
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

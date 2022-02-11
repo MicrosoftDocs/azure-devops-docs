@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use Azure Key Vault secrets in Azure Pipelines
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 > [!NOTE]
 > This article will guide you through working with Azure key vault in your pipeline. if you want to set secret variables or reference variable groups, see [Define variables](../process/variables.md#secret-variables) for more details.

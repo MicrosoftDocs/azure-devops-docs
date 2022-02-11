@@ -13,7 +13,7 @@ ms.date: 09/23/2021
 
 # View, organize, and configure reports using Report Manager 
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 After you create and publish reports in SQL Server Report Designer, use SQL Server Reporting Services' Report Manager to view, organize, and configure those reports. By using Report Manager, you can:
 - Group related reports in folders, adjust parameters and data sources, and schedule automated reports.

@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # How dates work in Git
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Git tracks two dates in commits: author date and commit date.
 In addition, Azure DevOps Services and TFS track when a commit was first pushed to the server.

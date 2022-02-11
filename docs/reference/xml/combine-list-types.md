@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 
 # Combine list types
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]  
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]  
 
 You can specify multiple types of lists for a single field. This topic defines how the resulting list of items is determined.  
   

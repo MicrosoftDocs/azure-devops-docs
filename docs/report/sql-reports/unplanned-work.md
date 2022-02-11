@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Unplanned Work report
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Toward the end of an iteration, you can use the Unplanned Work report to determine how much work was added to the iteration that wasn't planned at the start of the iteration. You can view the unplanned work as measured by work items added, such as tasks, test cases, user stories, and bugs.  
   

@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # File matching patterns reference
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ## Pattern syntax
 

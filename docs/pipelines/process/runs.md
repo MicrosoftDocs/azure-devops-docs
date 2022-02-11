@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Pipeline run sequence
 
-[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Runs represent one execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. A pipeline run includes [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md). Runs power both continuous integration (CI) and continuous delivery (CD) pipelines.
 

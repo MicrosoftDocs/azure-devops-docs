@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 
 # Building a Continuous Integration and Continuous Deployment pipeline with DSC
 
-[!INCLUDE [version-tfs-2017](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 

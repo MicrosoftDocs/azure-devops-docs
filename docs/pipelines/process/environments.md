@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 

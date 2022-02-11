@@ -14,7 +14,7 @@ ms.date: 02/14/2017
 
 # Layout XML element reference
 
-**TFS 2015 | TFS 2013**
+[!INCLUDE [version-lt-eq-2015](../../includes/version-lt-eq-2015.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).

@@ -12,7 +12,7 @@ ms.date: 10/19/2021
 
 
 # Sprint Burndown (Scrum)
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By reviewing a sprint burndown report, you can:
 - Track how much work remains in a sprint backlog.

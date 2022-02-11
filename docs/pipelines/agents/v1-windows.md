@@ -10,7 +10,7 @@ monikerRange: 'tfs-2015'
 
 # Deploy an agent on Windows for TFS 2015
 
-**[Azure Pipelines](v2-windows.md) | [TFS 2018](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120))**
+[!INCLUDE [version-lt-eq-2015](../../includes/version-lt-eq-2015.md)]
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you may need a Windows agent. Windows agents can also build and deploy Java and Android apps.
 

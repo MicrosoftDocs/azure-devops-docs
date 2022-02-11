@@ -15,7 +15,7 @@ ms.date: 01/11/2022
 
 # Import and export categories
 
-[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 You can import and export categories defined for a project by using the following **witadmin** commands:   
 -   **exportcategories**:  Exports the XML definition of categories defined for a project.   

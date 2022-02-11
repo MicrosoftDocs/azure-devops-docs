@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Git repository settings and policies
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 

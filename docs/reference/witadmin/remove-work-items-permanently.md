@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Remove work items permanently
 
-[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
+[!INCLUDE [version-lt-eq-2018](../../includes/version-lt-eq-2018.md)]
 
 You can permanently remove work items from the on-premises Team Foundation Server work tracking data store by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Use this command to permanently delete work items, after which you can't restore or reactivate them.  
 

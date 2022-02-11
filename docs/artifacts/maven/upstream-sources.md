@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Use packages from Maven Central
 
-**Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 With upstream sources, you can use both private packages you've created and public packages from Maven Central. When you enable upstream sources in your feed, Azure Artifacts will save a copy of any packages you install from Maven central. Azure Artifacts also support other Maven upstream sources such as Google Maven Repository, Gradle Plugins, and JitPack.
 

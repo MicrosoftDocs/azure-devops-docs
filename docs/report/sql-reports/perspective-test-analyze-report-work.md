@@ -12,7 +12,7 @@ ms.date: 10/15/2021
 
 # Analyze and report on work items and test case data using the Work Item perspective
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can analyze current or historical data for work items and test cases by using the measures, dimensions, and attributes that are defined for the Work Item perspective in the SQL Server Analysis Services cube for Azure DevOps Server. A test case is a type of work item that is associated within its own dimension and used specifically to support Azure Test Plans. For more information, see [Create your tests](../../test/create-test-cases.md).  
   

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get started with NuGet packages
 description: Use Azure Artifacts to publish and consume NuGet packages
 ms.technology: devops-artifacts
@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Get started with NuGet packages
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Developers can use Azure Artifacts to publish and consume NuGet packages both to and from feeds and public registries. A feed is an organizational construct that hosts packages. You can create public and private feeds, and you can control who can access your packages by modifying feed permissions.
 

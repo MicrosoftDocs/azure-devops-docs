@@ -6,12 +6,13 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: moala
 author: Raiyan
+monikerRange: '>= azure-devops-2020'
 ms.date: 12/02/2021
 ---
 
 # Manual Validation task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
 
 Use this task in a YAML pipeline to pause a run within a stage, typically to perform some manual actions or validations, and then resume/reject the run.
 

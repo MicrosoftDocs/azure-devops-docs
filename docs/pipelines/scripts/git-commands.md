@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Run Git commands in a script
 
-[!INCLUDE [temp](../includes/version.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

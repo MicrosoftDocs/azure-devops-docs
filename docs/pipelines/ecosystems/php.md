@@ -13,7 +13,7 @@ author: vijayma
 
 # Build and test PHP apps
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can create a pipeline that continuously builds, deploys, and tests your PHP projects. 
 

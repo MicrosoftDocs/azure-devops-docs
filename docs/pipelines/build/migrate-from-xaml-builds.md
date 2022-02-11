@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2013'
 
 # Migrate from XAML builds to new builds
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | XAML builds**
+[!INCLUDE [version-gt-eq-2013](../../includes/version-gt-eq-2013.md)]
 
 ::: moniker range="<= tfs-2018"
 

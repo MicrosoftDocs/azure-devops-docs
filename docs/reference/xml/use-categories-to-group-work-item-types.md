@@ -13,7 +13,7 @@ ms.date: 04/04/2017
 
 # Use categories to group work item types
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 By using categories, you can generate flexible reports, and support increased integration across projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
 

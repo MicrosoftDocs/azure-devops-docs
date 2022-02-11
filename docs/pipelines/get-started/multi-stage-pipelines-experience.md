@@ -11,7 +11,7 @@ monikerRange: '> azure-devops-2019'
 
 # Multi-stage pipelines user experience
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. This article shows you how to view and manage your pipelines using this new experience.
 
