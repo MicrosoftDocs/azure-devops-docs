@@ -113,7 +113,7 @@ For guidance in using the new form, see:
 - [Drive Git development for a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
-- [Azure DevOps Services Features Timeline](/azure/devops/release-notes/index)  
+- [Azure DevOps Services Features Timeline](/azure/devops/release-notes/features-timeline)  
 - [REST API, Work Item Types](/rest/api/azure/devops/wit/work%20item%20types)  
 
 
