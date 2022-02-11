@@ -15,7 +15,7 @@ ms.date: 12/20/2021
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Send auditing data to other Security Incident and Event Management (SIEM) tools to open possibilities, such as the ability to trigger alerts for specific events, create views on auditing data, and perform anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which is the maximum amount of data that Azure DevOps keeps for your organizations.
+Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Send auditing data to other Security Incident and Event Management (SIEM) tools and open new possibilities, such as the ability to trigger alerts for specific events, create views on auditing data, and perform anomaly detection. Setting up a stream also allows you to store more than 90-days worth of auditing data, which is the maximum amount of data that Azure DevOps keeps for your organizations.
 
 Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every half hour or less, new audit events are bundled and streamed to your targets. The following stream targets are available for configuration.
 
@@ -24,6 +24,9 @@ Audit streams represent a pipeline that flows audit events from your Azure DevOp
 - [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent somewhere else, whether inside or outside of Azure, you can set up an [Azure Event Grid](#set-up-an-event-grid-stream) connection.
 
 Private linked workspaces aren't supported today.
+
+> [!Note]
+> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an audit stream to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ## Prerequisites
 
@@ -35,9 +38,6 @@ By default, Project Collection Administrators (PCAs) are the only group that hav
   :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set audit permissions to Allow":::
 
 These permissions can be given to any users or groups you wish to have manage your organization's streams. Additionally, there's also a *Delete audit streams* permission that you can add on for users or groups.
-
-> [!Note]
-> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an [Auditing stream](auditing-streaming.md) to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ## Create a stream
 
@@ -51,7 +51,7 @@ These permissions can be given to any users or groups you wish to have manage yo
    ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
 
 > [!NOTE]
-> If you don't see *Auditing* in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators (PCAs) group, you can give permissions to other users and groups, so they can view the auditing pages.
+> If you don't see *Auditing* in Organization Settings, then your organization doesn't have access to view audit events. Someone in the Organization Owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-auditing) in Organization Policies.
 
 4. Go to the **Streams** tab, and then select **New stream**. 
 
@@ -168,6 +168,5 @@ Your stream gets removed. Any events that haven't been sent before the deletion 
 
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
 - [Export audit events](azure-devops-auditing.md#export-auditing-events)
-- [Audit categories](azure-devops-auditing.md#categories)
-- [Audit areas](azure-devops-auditing.md#areas)
+- [List of audit events](auditing-events.md)
 - [Introducing Azure DevOps Audit Stream on Azure DevOps blog](https://devblogs.microsoft.com/devops/introducing-azure-devops-audit-stream/)
