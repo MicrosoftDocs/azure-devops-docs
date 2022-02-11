@@ -23,30 +23,30 @@ The tables below describe the type of events (or actions) that are available for
 
 ## Areas
 
-|Area            | Description |
-|----------------|-------------|
-| Auditing       | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
-| Billing        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
-| Checks         | Create, modify, delete, and track usage of checks including approvals on protected resources in Azure Pipelines (YAML only). |
-| Extension      | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
-| Git            | Create, modify, enable, disable, fork, delete and undelete Git repositories in Azure Repos. Bypass PR policies. Change branch policies.   |
-| Group          | Create groups and modify group memberships.          |
-| Library        | Create, modify, delete, and track usage of service connections, variable groups, secure files, and agent pools in Azure Pipelines. |
-| Licensing      | Assign, modify, and remove licensing. Create, modify, and delete group licensing rules.           |
-| Organization   | Create and modify Azure DevOps organization. Link and unlink to Azure Active Directory organizations. |
-| OrganizationPolicy | Add, modify, or remove organization policies.           |
-| Permissions    | Modify or remove permissions and access control lists for users and groups throughout an Azure DevOps organization.           |
-| Pipelines      | Create, modify, and delete Pipelines in Azure Pipelines. Authorize and unauthorize resource for projects and pipelines. Modify pipeline retention settings. Retain and unretain pipeline runs. |
-| Policy         |  Create, modify, and delete policies for a Git repository in Azure Repos.       |
-| Process        | Create, modify, and delete attributes for processes (portfolio backlogs, controls, fields, groups, lists, pages, processes, rules, states, control settings, work items, etc.) in Azure Boards.           |
-| Project        | Create, modify, change visibility of, delete, and restore projects in Azure Boards. Create, modify, and delete Area paths. |
-| Release        | Create, modify, and delete releases and release pipelines in Azure Pipelines. Track deployments and deployment approvals.      |
-| Token          | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events are not currently logged. |
+| Area                       | Description |
+|----------------------------|-------------|
+| [Auditing](#auditing)      | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
+| [Billing](#billing)        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
+| [Checks](#checks)          | Create, modify, delete, and track usage of checks including approvals on protected resources in Azure Pipelines (YAML only). |
+| [Extension](#extension)    | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
+| [Git](#git)                | Create, modify, enable, disable, fork, delete and undelete Git repositories in Azure Repos. Bypass PR policies. Change branch policies.   |
+| [Group](#group)            | Create groups and modify group memberships.          |
+| [Library](#library)        | Create, modify, delete, and track usage of service connections, variable groups, secure files, and agent pools in Azure Pipelines. |
+| [Licensing](#licensing)    | Assign, modify, and remove licensing. Create, modify, and delete group licensing rules.           |
+| [Organization](#organization)| Create and modify Azure DevOps organization. Link and unlink to Azure Active Directory organizations. |
+| [OrganizationPolicy](#organizationpolicy) | Add, modify, or remove organization policies.           |
+| [Permissions](#permissions)| Modify or remove permissions and access control lists for users and groups throughout an Azure DevOps organization.           |
+| [Pipelines](#pipelines)    | Create, modify, and delete Pipelines in Azure Pipelines. Authorize and unauthorize resource for projects and pipelines. Modify pipeline retention settings. Retain and unretain pipeline runs. |
+| [Policy](#policy)          |  Create, modify, and delete policies for a Git repository in Azure Repos.       |
+| [Process](#process)        | Create, modify, and delete attributes for processes (portfolio backlogs, controls, fields, groups, lists, pages, processes, rules, states, control settings, work items, etc.) in Azure Boards.           |
+| [Project](#project)        | Create, modify, change visibility of, delete, and restore projects in Azure Boards. Create, modify, and delete Area paths. |
+| [Release](#release)        | Create, modify, and delete releases and release pipelines in Azure Pipelines. Track deployments and deployment approvals.      |
+| [Token](#token)            | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events are not currently logged. |
 
 ## Categories
 
-|Category  |Description |
-|---------|---------|
+|Category   |Description |
+|-----------|------------|
 |Access     | Viewed or opened artifacts in an organization.        |
 |Create     | Newly created artifacts in an organization.        |
 |Delete     | Deleted or removed artifacts from an organization.        |
@@ -66,7 +66,7 @@ The tables below describe the type of events (or actions) that are available for
 |AuditLog.AccessLog |	Access |	Accessed the audit log |
 |AuditLog.DownloadLog |	Access |	Downloaded a {Format} copy of the audit log |
 |AuditLog.StreamCreated |	Create |	Stream for {ConsumerType:consumerType} was setup to send auditing events to {displayName}. |
-|AuditLog.StreamDeleted	Remove |	Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was deleted. |
+|AuditLog.StreamDeleted	| Remove |	Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was deleted. |
 |AuditLog.StreamDisabledBySystem	| Modify |	Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was disabled by the system. |
 |AuditLog.StreamDisabledByUser	| Modify	| Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was disabled. |
 |AuditLog.StreamEnabled |	Modify | Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was enabled. |
@@ -90,7 +90,7 @@ The tables below describe the type of events (or actions) that are available for
 | CheckConfiguration.Created |	Create |	{Type} check has been added to {ResourceType} {ResourceName} |
 | CheckConfiguration.Deleted |	Remove |	{Type} check has been removed from {ResourceType} {ResourceName} |
 | CheckConfiguration.Updated |	Modify |	{Type} check has been updated for {ResourceType} {ResourceName} |
-| CheckSuite.Completed |	Execute	Checks on stage {StageName} of run #{RunName} of pipeline {PipelineName} in Project {ResolveProjectId:ProjectId} have been {CheckSuiteStatus} |
+| CheckSuite.Completed |	Execute	| Checks on stage {StageName} of run #{RunName} of pipeline {PipelineName} in Project {ResolveProjectId:ProjectId} have been {CheckSuiteStatus} |
 
 ### Extensions
 | ActionId |	Category |	Details |
@@ -312,3 +312,9 @@ The tables below describe the type of events (or actions) that are available for
 | Token.SshCreateEvent	| Create	| SSH Key "{DisplayName}" was created. |
 | Token.SshRevokeEvent	| Remove	| SSH Key "{DisplayName}" was revoked. |
 | Token.SshUpdateEvent	| Modify	| SSH Key "{DisplayName}" was updated. |
+
+
+## Related Articles
+- [Review audit log](azure-devops-auditing.md#review-audit-log)
+- [Export audit events](azure-devops-auditing.md#export-auditing-events)
+- [Set up an audit stream](audit-streaming.md)
