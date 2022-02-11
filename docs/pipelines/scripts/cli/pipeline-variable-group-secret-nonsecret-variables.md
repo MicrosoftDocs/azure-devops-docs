@@ -13,6 +13,8 @@ ms.custom: devx-track-azurecli
 
 # Use a variable group's secret and nonsecret variables in an Azure Pipeline
 
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
+
 In this sample, use the Microsoft Azure DevOps CLI (azure-devops extension) to create an Azure Pipeline that accesses a variable group containing both secret and nonsecret variables.
 
 This script demonstrates three operations:

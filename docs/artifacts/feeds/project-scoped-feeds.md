@@ -9,6 +9,8 @@ monikerRange: '>= tfs-2017'
 
 # Project-scoped feeds
 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
 Historically, all feeds used to be scoped to an organization. However, to enable public feeds and to become more consistent with the rest of Azure DevOps, feeds created through the new create feed web UI will now be scoped to a project. 
 
 New organizations will automatically have one feed scoped to the organization and all subsequent feeds created will be scoped to a project. All existing organization-scoped feeds will remain organization-scoped.

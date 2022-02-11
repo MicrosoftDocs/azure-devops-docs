@@ -10,6 +10,8 @@ monikerRange: '>= tfs-2015'
 
 # View release progress and test summary
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 Azure Pipelines provides a quick and easy way to check the status of your deployment and test results right from your pipeline definition page. The user interface provides a live update of deployment progress and easy access to logs for more details.
 
 ::: moniker range=">= azure-devops-2019"

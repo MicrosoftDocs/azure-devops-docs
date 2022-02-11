@@ -16,6 +16,8 @@ monikerRange: '>= tfs-2015'
 
 # Create your Azure Pipelines ecosystem
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 You can select from the following languages and platforms to find guidance for building and deploying your app. 
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || >= azure-devops-2019"

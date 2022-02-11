@@ -10,6 +10,8 @@ monikerRange: '>= tfs-2017'
 
 # Publish and download universal packages with Azure CLI
 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
 With universal packages, you can store different types of packages other than the widely used ones such as NuGet, npm, Maven, or Python packages. Using Azure CLI, you can publish and download universal packages from the command line. Uploaded packages can vary in size (up to 4 TB), but should always have a name and a version number. This article will walk you through the steps to publish and download your universal packages to Azure Artifacts feeds.
 
 ## Prerequisites

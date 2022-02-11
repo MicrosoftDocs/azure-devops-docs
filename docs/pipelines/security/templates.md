@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # Security through templates
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 [Checks on protected resources](resources.md) are the basic building block of security for Azure Pipelines.
 Checks work no matter the structure - the stages and jobs - of your pipeline.
 If several pipelines in your team or organization have the same structure, you can further simplify security using [templates](../process/templates.md).

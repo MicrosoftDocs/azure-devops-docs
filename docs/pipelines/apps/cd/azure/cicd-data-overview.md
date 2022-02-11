@@ -11,6 +11,8 @@ monikerRange: '=azure-devops'
 
 # Why data pipelines?
 
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
+
 You can use data pipelines to:
 * Ingest data from various data sources
 * Process and transform the data 

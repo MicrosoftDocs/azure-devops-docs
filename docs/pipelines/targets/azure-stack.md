@@ -12,6 +12,8 @@ monikerRange: '> tfs-2018'
 
 # Deploy to Azure Stack Hub App Service using Azure Pipelines
 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+
 This article walks you through setting up a CI/CD pipeline for deploying an application to app services in an Azure Stack Hub instance using Azure Pipelines.
 
 In this article you can learn to create or validate:

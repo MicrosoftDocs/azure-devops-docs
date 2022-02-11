@@ -10,6 +10,8 @@ monikerRange: 'azure-devops'
 
 # Tutorial: Deploy a Java app to a virtual machine scale set
 
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
+
 A [virtual machine scale set](/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, autoscaling virtual machines. 
 
 VMs are created as needed in a scale set. You define rules to control how and when VMs are added or removed from the scale set. These rules can be triggered based on metrics such as CPU load, memory usage, or network traffic.

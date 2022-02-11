@@ -10,6 +10,8 @@ monikerRange: '>= azure-devops-2020'
 
 # Publish Pipeline Artifacts
 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+
 Azure Artifacts enable developers to store and manage their packages and control who they want to share it with. Pipeline Artifacts are generally generated after you build your application. The output can then deployed or consumed by another job in your pipeline.
 
 ## Publish Artifacts

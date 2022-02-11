@@ -10,6 +10,8 @@ monikerRange: '>= tfs-2015'
 
 # Change the default branch
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 The default branch is the first branch that Git will check out on a fresh clone.
 Also, [pull requests](pull-requests.md) target this branch by default.
 
