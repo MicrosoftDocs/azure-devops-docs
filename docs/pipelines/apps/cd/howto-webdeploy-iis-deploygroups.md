@@ -1,4 +1,4 @@
-﻿---
+---
 title: Deploy apps & databases with Deployment Groups
 description: Deploy an app to IIS servers using Deployment Groups in Azure Pipelines
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # How To: Extend your deployments to IIS Deployment Groups
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 You can quickly and easily deploy your ASP.NET or Node.js app to an IIS Deployment Group using
 Azure Pipelines,

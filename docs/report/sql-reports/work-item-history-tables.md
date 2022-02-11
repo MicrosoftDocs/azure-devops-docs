@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Work Item History tables
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can query for historical data about bugs, tasks, and other types of work items by using FactWorkItemHistory and the associated dimension tables as the following illustration shows. Historical data provides information about the status of a work item or a value of a field for a work item as it changed over time. Progress and burndown charts are examples of reports that are built from work item history tables. The data is stored by using compensating records.  
   

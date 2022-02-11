@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Collaborate more and build faster with componentization
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Your product is successful, your organization is growing, and it's time to scale up your codebase to match this success. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 

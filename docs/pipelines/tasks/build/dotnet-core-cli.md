@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # .NET Core CLI task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 > [!NOTE]
 > The [NuGet Authenticate](../package/nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. The restore and push commands of this task no longer take new features and only critical bugs are addressed. 

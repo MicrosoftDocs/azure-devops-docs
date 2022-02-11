@@ -12,7 +12,14 @@ monikerRange: '>= tfs-2015'
 
 # Publish Build Artifacts task
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015.3**
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+
+::: moniker range="tfs-2015"
+
+This article applies to TFS 2015.3 and higher.
+
+::: moniker-end
+
 
 ::: moniker range="azure-devops"
 

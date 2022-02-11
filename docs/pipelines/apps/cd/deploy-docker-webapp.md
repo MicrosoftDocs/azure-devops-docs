@@ -11,7 +11,7 @@ monikerRange: '> tfs-2017'
 
 # Deploy to Azure Web App for Containers
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 Use App Service on Linux and pipelines to deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container).  In this quickstart, you'll use Azure Pipelines to build and deploy a sample application to an App Service custom container.
 

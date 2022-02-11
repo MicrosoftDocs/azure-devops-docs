@@ -13,7 +13,7 @@ ms.date: 10/01/2021
 
 # Delivery Plans 1.0 Marketplace extension
 
-[!INCLUDE [version-gt--eq-2017-lt-eq-2020](../../includes/version-gt--eq-2017-lt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 
 Use the visualization options that Delivery Plans provide to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.

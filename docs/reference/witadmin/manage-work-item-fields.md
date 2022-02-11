@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Manage work item fields
 
-[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can manage the fields defined for work item types that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
 

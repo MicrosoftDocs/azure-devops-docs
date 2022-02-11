@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Deploy to Azure
 
-[!INCLUDE [version-tfs-2015-rtm](includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
  Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you do not have to use Azure services with Pipelines, Pipelines can help you take advantage of Azure. You can use Pipelines to integrate your CI/CD process with most Azure services. 
 

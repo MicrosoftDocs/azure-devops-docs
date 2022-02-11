@@ -12,7 +12,7 @@ ms.date: 10/19/2021
 
 # Build Project tables 
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
  Use FactBuildProjects and the associated dimensions to query for data. Find out about the files and projects that were built and information about those files. Records contain the static analysis and compiler warnings and errors for each file that was built. If it was built for more than one platform or flavor, you can find records for each platform and flavor.  
  

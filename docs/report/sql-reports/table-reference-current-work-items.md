@@ -12,7 +12,7 @@ ms.date: 10/19/2021
 
 # Current Work Item tables
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Use the FactCurrentWorkItem table and the associated dimension tables to query for data. Find out about the current state of bugs, tasks, and other types of work items.
   

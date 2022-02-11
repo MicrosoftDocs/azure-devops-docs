@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Test Case Readiness report
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 After the team starts to define test cases, you can use the Test Case Readiness report to determine how many test cases have been defined and are ready to run.  
   

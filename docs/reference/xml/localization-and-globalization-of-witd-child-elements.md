@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Localization and globalization of WITD child elements
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can change some parts of the work item type definition so that they appear in your native language.  
   

@@ -13,7 +13,7 @@ author: steved0x
 
 # Troubleshoot pipeline runs
 
-[!INCLUDE [temp](../includes/version.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](../ecosystems/dotnet-core.md#troubleshooting).
 

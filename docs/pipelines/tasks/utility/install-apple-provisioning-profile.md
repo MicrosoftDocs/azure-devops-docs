@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Install Apple Provisioning Profile task
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 Use this task to install an Apple provisioning profile that is required to build on a macOS agent.
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and App Extensions.

@@ -6,6 +6,7 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
+monikerRange: '>= azure-devops-2019'
 ms.date: 10/01/2021
 ---
 

@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Import, export, and manage work item types
 
-[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can manage work item types for a project by using the following **witadmin** commands:  
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    

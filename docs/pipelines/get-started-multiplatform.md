@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Create a multi-platform pipeline
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
 This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, and Windows.
 

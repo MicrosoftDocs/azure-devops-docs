@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Deploy to a Linux Virtual Machine
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to set up a continuous improvement/continuous development (CI/CD) pipeline for multi-virtual machine deployments. Use the instructions in this article for any app that publishes a web deployment package.
 

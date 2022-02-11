@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Integrate with ServiceNow change management
 
-[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 Azure Pipelines and ServiceNow bring an integration of Azure Pipelines with
 ServiceNow Change Management to enhance collaboration between development and IT teams.

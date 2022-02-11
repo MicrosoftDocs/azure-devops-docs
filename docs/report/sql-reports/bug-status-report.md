@@ -11,7 +11,7 @@ ms.date: 10/14/2021
 
 # Bug Status report
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 After the team has started to find and fix bugs, you can track the team's progress toward resolving and closing bugs by viewing the Bug Status report. This report shows the cumulative bug count based on the bug state, priority, and severity.  
   

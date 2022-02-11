@@ -14,7 +14,7 @@ ms.date: 4/01/2020
 
 # Differences between Inheritance and Hosted XML
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 If you are currently on Hosted XML and looking to move your process to Inherited, here is a comparison chart of the differences you can expect between the two customization models.
 

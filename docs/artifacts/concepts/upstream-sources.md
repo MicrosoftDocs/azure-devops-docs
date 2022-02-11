@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Upstream sources
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Upstream sources enable you to use a single feed to store packages from different sources: the ones you publish and the ones you consume from feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once you enable an upstream source, any user connected to your feed can install a package from upstream and a copy will be saved to your feed.
 

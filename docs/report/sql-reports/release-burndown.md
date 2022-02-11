@@ -13,7 +13,7 @@ ms.date: 10/15/2021
 
 # Release Burndown
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By reviewing the Release Burndown report, you can understand how quickly your team has delivered backlog items and track how much work the team must still do to complete a product release.  
   

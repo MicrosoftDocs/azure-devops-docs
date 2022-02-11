@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Deploy to a Windows Virtual Machine
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 Learn how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
 Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.

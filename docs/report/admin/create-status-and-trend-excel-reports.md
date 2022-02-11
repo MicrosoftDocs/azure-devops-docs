@@ -12,7 +12,7 @@ ms.date: 09/22/2021
 
 # Create status and trend reports from a work item query  
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 One of the quickest ways to generate a custom work tracking report is to use Excel and start with a flat list query. You can generate both status and trend charts. Also, once you've built a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
 

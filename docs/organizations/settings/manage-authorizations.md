@@ -12,7 +12,7 @@ ms.date: 09/29/2020
 
 #  Authorize other services to access Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to give a service access to Azure DevOps. The OAuth 2.0 framework provides safe, secure access to your resources. Some of these resources include work items, source code, and build results.
 

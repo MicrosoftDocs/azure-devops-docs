@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 If users no longer require access to a team, project, or your organization, you can remove their access. Work items that are assigned to the users aren't affected by removing user access.
 

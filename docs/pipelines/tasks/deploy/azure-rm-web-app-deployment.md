@@ -13,7 +13,7 @@ monikerRange: '> tfs-2018'
 
 # Azure App Service Deploy task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac 

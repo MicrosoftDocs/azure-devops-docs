@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # About pipeline tests
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 This article describes commonly used terms used in pipeline [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md).
 

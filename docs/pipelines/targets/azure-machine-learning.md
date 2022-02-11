@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 # Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can use a pipeline to automate the machine learning lifecycle. Some of the operations you can automate are:
 

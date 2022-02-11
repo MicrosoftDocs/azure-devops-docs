@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Resolve merge conflicts
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes in the other.

@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 
 # Link and Param XML elements reference
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can add a hyperlink to a field or a standalone label on a work item form by using the `Link` element. You use the `Link` element in the following instances to:  
   

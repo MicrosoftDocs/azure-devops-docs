@@ -8,7 +8,7 @@ monikerRange: "> azure-devops-2019"
 
 # Check out multiple repositories in your pipeline
 
-[!INCLUDE [version-team-services](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Pipelines often rely on multiple repositories that contain source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 

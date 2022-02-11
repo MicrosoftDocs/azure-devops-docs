@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and deploy Xcode apps
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Learn how to build and deploy Xcode projects with Azure Pipelines. 
 

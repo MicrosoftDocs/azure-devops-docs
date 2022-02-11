@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Upload reports to a team project
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Here's the second task in the four-task sequence to add reports to your team project. You can use the procedures in this article to upload reports for the first time, or to upload updated reports provided with the latest process templates. 
 

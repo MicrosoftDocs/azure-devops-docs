@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Install or enable the Analytics service
 
-[!INCLUDE [temp](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
 
 ::: moniker range="azure-devops-2020" 
 

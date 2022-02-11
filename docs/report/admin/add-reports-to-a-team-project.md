@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # Add reports to a team project
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By adding a report server to your on-premises Azure DevOps Server deployment, you can access a wealth of data about your team's projects, like:
 - Build quality

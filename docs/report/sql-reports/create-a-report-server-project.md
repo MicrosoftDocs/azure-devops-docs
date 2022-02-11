@@ -12,7 +12,7 @@ ms.date: 10/14/2021
 
 # Create a Report Server project 
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can track your team's progress by using SQL Server Report Designer to create reports. Before you can base these reports on data from Azure DevOps, you must first create a Report Server project in Visual Studio.  
   

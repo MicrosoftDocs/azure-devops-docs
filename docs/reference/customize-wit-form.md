@@ -13,7 +13,7 @@ ms.date: 12/15/2017
 
 # Customize the work tracking web form  
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]  
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]  
 
 
 > [!IMPORTANT]  

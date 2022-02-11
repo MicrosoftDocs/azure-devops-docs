@@ -13,7 +13,7 @@ monikerRange: ">= azure-devops-2019"
 
 # Customize your pipeline
 
-[!INCLUDE [version-server-2019-rtm](includes/version-server-2019-rtm.md)]
+[!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
 
 This is a step-by-step guide on common ways to customize your pipeline.
 

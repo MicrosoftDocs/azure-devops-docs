@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get started with Maven packages
 description: Quickly start publishing and consuming Maven Artifacts to/from your feed
 ms.technology: devops-artifacts
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Get started with Maven feeds and Artifacts
 
-**Azure DevOps Services | TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 This quickstart will guide you through setting up Maven to publish and consume Artifacts from your feed.
 

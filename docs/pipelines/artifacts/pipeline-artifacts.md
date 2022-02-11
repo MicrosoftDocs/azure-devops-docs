@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Publish and download pipeline Artifacts
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
 

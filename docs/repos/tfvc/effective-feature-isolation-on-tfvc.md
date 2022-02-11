@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Explore the feature isolation strategy  
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Are you planning to implement [Team Foundation Version Control](./what-is-tfvc.md)'s feature isolation strategy in Azure DevOps? You probably have a few questions, such as:
 

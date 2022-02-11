@@ -12,7 +12,7 @@ ms.date: 10/19/2021
 
 
 # Stories Progress Report (Agile)
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 The Stories Progress report lists all user stories, filtered by product area and iteration in order of importance.  
   

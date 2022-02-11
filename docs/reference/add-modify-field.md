@@ -14,7 +14,7 @@ ms.date: 07/20/2020
 
 # Add or modify a field to track work 
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 Your project contains 100 or more data fields, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 

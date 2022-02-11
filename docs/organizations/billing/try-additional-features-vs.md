@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Try Azure Test Plans for free
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Basic users have full access to Azure Test Plans during the 30-day trial. After the trial expires, buy Basic + Test Plans and assign it to specific users, so they can keep using the service. For more information, see [What is Azure Test Plans](../../test/overview.md).
 

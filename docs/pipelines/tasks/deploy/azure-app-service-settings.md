@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Azure App Service Settings task
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to configure App settings, connection strings and other general settings in bulk using JSON syntax on your web app or any of its deployment slots. 
 The task works on cross platform Azure Pipelines agents running Windows, Linux or Mac.

@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Work Item Category tables
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can query for categories of work items by using the FactWorkItemToCategory and DimWorkItemCategory tables. You can organize the results of other work item queries by category if you join these tables with the DimWorkItem by using `FactWorkItemToCategory.WorkItemTypeName = DimWorkItem.System_WorkItemType`.  
   

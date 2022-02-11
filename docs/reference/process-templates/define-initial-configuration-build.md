@@ -14,7 +14,7 @@ ms.date: 10/11/2017
 
 # Define the initial configuration of Team Foundation Build
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can customize a project's initial build permissions that are used by Team Foundation Build. The build.xml plug-in file specifies the security permissions for build activities of all projects that are created with the same process template. The following template files are uploaded to the project database:  
   

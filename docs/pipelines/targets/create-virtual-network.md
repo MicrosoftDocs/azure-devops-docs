@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

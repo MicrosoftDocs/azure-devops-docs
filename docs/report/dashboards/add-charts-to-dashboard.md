@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Add charts to a dashboard
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="add-charts"></a>
 

@@ -10,7 +10,14 @@ monikerRange: '>= tfs-2017'
 
 # Expressions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
+::: moniker range="tfs-2017"
+
+This article applies to TFS 2017.3 and higher.
+
+::: moniker-end
+
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

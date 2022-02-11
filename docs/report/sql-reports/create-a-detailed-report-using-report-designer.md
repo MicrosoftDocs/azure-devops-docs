@@ -12,7 +12,7 @@ ms.date: 10/14/2021
 
 # Create a detailed report with Report Designer
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 This article describes how to track your team's progress by creating reports that contain detailed information from Visual Studio Application Lifecycle Management. For example, you can create a report that includes details such as titles of work items. To create this type of report, you can use SQL Server's Report Designer and the relational database of the Azure DevOps data warehouse.  
   

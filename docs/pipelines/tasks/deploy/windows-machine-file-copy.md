@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Windows Machine File Copy task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to copy application files and other artifacts such as
 PowerShell scripts and PowerShell-DSC modules that are required to 

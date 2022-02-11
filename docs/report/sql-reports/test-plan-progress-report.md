@@ -12,7 +12,7 @@ ms.date: 10/19/2021
 
 # Test Plan Progress report
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 After the team creates test plans and starts to run tests by using the test management tools provided with Azure DevOps Server which include Test Runner and Azure Test Plans. With the Test Plan Progress report, you can track the team's progress in testing the product.
   

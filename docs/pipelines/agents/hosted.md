@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Microsoft-hosted agents
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="< azure-devops"
 

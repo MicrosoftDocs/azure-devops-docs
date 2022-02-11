@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and deploy .NET Core apps
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Use a pipeline to automatically build and test your .NET Core projects. Learn how to do the following tasks:
 

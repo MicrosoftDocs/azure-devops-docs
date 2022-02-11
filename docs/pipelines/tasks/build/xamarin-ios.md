@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Xamarin.iOS task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task in a pipeline to build an iOS app with Xamarin on macOS. For more information, see the [Xamarin guidance](../../ecosystems/xamarin.md) and [Sign your app during CI](../../apps/mobile/app-signing.md).
 

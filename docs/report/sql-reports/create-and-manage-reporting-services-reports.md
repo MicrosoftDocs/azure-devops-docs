@@ -13,7 +13,7 @@ ms.date: 10/15/2021
 
 # Create and manage Reporting Services reports
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 If you added SQL Server Reporting Services at installation, then your on-premises Azure DevOps deployment is configured with:
 - A data warehouse

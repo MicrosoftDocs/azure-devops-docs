@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Release deployment control using gates
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Gates allow automatic collection of health signals from external services, and then
 promote the release when all the signals are successful at the same time or stop the

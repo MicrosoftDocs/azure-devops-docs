@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Use npm scopes
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Npm scopes are a way of grouping related packages together. A scope allows you to create a package with the same name as a package created by another user or Org without conflict. They allow the user to separate public and private packages by prefixing their packages with a scope `@SCOPE_NAME` and configuring the `.npmrc` file to only use an Azure Artifacts feed for that scope.
 With Azure Artifacts, you can publish and download both scoped and non-scoped packages to/from your Artifacts feeds or public registries. Using npm scopes is also useful with self-hosted on-premise servers that do not have internet access because setting up upstream sources in that case is not possible. Using scopes:

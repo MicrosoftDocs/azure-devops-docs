@@ -13,7 +13,7 @@ ms.date: 10/19/2021
 
 # Build Details tables
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Use FactBuildDetails and the associated dimension tables to query for data. Find out about things like the status and quality of builds.
 

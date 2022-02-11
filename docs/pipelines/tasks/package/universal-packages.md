@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2018'
 
 # Universal Package task
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 Use this task to download, or package and publish Universal Packages.
 

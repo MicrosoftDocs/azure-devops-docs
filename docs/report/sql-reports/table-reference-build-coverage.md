@@ -13,7 +13,7 @@ ms.date: 10/19/2021
 
 # Build Coverage tables
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Use FactBuildCoverage and the associated dimension tables to query for data. Find out how thoroughly source code was covered by the tests that use specific builds.   
 

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Jenkins Queue Job task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to queue a job on a Jenkins server.
 

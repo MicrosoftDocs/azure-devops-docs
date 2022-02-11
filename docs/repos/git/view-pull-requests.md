@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # View, filter, and open pull requests
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 You create pull requests (PRs) to [review](review-pull-requests.md) and [merge](complete-pull-requests.md) code changes in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Team members and stakeholders can review changes and give feedback before merging the code into the target branch. Reviewers can also comment on changes and vote to approve or reject the code.

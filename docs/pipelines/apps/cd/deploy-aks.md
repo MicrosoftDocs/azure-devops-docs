@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Deploy a Docker container app to Azure Kubernetes Service
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 We'll show you how to set up continuous deployment of your containerized application to an Azure Kubernetes Service (AKS) using
 Azure Pipelines.

@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 ---
 # Build and push Docker images to Azure Container Registry
 
-[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 In this step-by-step tutorial, you'll learn how to set up a continuous integration pipeline to build a containerized application. New pull requests trigger the pipeline to build and publish Docker images to Azure Container Registry.
 

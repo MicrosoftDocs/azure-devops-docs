@@ -14,7 +14,7 @@ ms.date: 06/16/2017
 
 # All FIELD XML elements reference
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Use this topic to look up the syntax of the `FIELD` element or one of its child elements.  
 

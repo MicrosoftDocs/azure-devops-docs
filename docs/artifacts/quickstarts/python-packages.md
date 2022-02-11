@@ -11,7 +11,7 @@ ms.custom: devx-track-python
 
 # Get started with Python packages in Azure Artifacts
 
-**Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 This guide will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
 

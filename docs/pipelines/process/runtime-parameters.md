@@ -9,7 +9,7 @@ monikerRange: 'azure-devops || >= azure-devops-2020'
 
 # Runtime parameters
 
-[!INCLUDE [version-server-2020-rtm](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 - Supply different values to scripts and tasks at runtime

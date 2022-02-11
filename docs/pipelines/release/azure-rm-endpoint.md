@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Troubleshoot ARM service connections
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 This article presents the common troubleshooting scenarios to help you resolve issues you may encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 

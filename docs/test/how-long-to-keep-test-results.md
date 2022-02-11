@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Set test retention policies
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,

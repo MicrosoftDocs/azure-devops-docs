@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Key concepts for Azure Artifacts
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 ## Immutability
 

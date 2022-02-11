@@ -10,9 +10,7 @@ monikerRange: '>= tfs-2018'
 
 # NuGet task
 
-**Version 2.**
-
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 > [!NOTE]
 > The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. This task no longer takes new features and only critical bugs are addressed. 

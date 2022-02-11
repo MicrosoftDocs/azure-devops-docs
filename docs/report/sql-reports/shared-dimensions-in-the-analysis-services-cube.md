@@ -11,7 +11,7 @@ ms.date: 10/19/2021
 ---
 
 # Shared dimensions in the Analysis Services Cube
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can report data from across team project collections because all reportable data in a deployment of Azure DevOps is written to the SQL Server Analysis Services cube for Azure DevOps Server. Use the Team Project dimension to show the data for only those team projects that you specify. Also, use the Date dimension to create trend reports that show changes over a day, a week, a month, or a year. All perspectives in the cube share these dimensions.  
   

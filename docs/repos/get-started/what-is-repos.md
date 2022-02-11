@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # What is Azure Repos?
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)] 
 
 Azure Repos is a set of version control tools that you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. 

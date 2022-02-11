@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Delete and recover packages
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Team Foundation Server 2018 | Team Foundation Server 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Azure Artifacts safely stores different types of packages in your feed, whether you published them directly or saved them from upstream sources. As older package versions fall out of use, you might want to clean them up either manually or automatically by using retention policies. 
 

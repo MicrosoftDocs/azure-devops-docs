@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use Azure Key Vault secrets in your Pipeline
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Azure Key Vault, you can securely store and manage your sensitive information such as passwords, API keys, certificates, etc. using Azure Key Vault, you can easily create and manage encryption keys to encrypt your data. Azure Key Vault can also be used to manage certificates for all your resources.
 

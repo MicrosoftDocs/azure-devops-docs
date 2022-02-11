@@ -12,7 +12,7 @@ ms.date: 07/14/2021
 
 # Use secure files
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Secure files give you a way to store files that you can share across pipelines. Use the secure files library to store files such as:
 

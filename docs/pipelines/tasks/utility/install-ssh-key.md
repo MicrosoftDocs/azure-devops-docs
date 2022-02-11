@@ -12,7 +12,7 @@ monikerRange: azure-devops
 
 # Install SSH Key task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task in a pipeline to install an SSH key prior to a build or release step.
 

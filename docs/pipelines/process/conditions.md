@@ -10,7 +10,14 @@ monikerRange: '>= tfs-2017'
 
 # Specify conditions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3** 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
+::: moniker range="tfs-2017"
+
+This article applies to TFS 2017.3 and higher.
+
+::: moniker-end
+
 
 You can specify the conditions under which each stage, job, or step runs.
 By default, a job or stage runs if it does not depend on any other job or stage, or if all of the jobs or stages that it depends on have completed and succeeded.

@@ -14,7 +14,7 @@ ms.date: 02/24/2017
 
 # Add type definitions for work items to a process template
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 Work item types (WITs) provide the foundation for all tracking, monitoring, and reporting on the development of a product and its features. A WIT defines the data fields, the workflow, and the work item form for an item of work that you will track. Types of work items include bugs, user stories, and tasks. 
 

@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Use Azure Artifacts as a private PowerShell repository
 
-**Azure DevOps Services**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
 

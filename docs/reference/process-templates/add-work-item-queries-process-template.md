@@ -13,7 +13,7 @@ ms.date: 04/11/2019
 
 # Add work item queries to a process template
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By adding work item queries to your process template, you can define the initial set of shared queries and query folder structure for a project. All team members use queries to find the bugs, tasks, and other work items on which they must take action.  
   

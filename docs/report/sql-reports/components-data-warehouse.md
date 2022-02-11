@@ -13,7 +13,7 @@ ms.date: 10/14/2021
 
 # Components of the data warehouse for Azure DevOps
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 The Azure DevOps Server reporting warehouse is a traditional data warehouse. It consists of:
 - A relational database organized in an approximate star schema.

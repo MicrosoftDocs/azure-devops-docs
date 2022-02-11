@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Control access to functional areas
 
-[!INCLUDE [version-lt-azure-devops-plus-xml-process](../../includes/version-lt-azure-devops-plus-xml-process.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can configure the initial security settings for the following functional areas for a project: 
 - Work item queries

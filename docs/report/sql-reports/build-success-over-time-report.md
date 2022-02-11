@@ -12,7 +12,7 @@ ms.date: 10/14/2021
 
 # Build Success Over Time report
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 The Build Success Over Time report provides a pictorial version of the Build Summary report. The Build Success Over Time report displays the status of the last build for each build category run for each day. You can use this report to help track the quality of the code that the team is checking in. Also, for any day on which a build ran, you can view the Build Summary for that day.  
   

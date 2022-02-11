@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Configure permissions
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 With Azure Artifacts you can publish, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
 

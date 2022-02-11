@@ -14,7 +14,7 @@ ms.date: 12/14/2021
 # Manage permissions with command line tool
 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Permissions grant access to perform a specific action on a specific resource as described in [Get started with permissions, access, and security groups](about-permissions.md). You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
 

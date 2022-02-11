@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use .NET Core task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to acquire a specific version of .NET Core from the Internet or the tools cache
 and add it to the PATH. 

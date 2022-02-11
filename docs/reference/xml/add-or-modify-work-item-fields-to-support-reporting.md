@@ -15,7 +15,7 @@ ms.date: 02/10/2017
 
 # Add or modify work item fields to support reporting
 
-[!INCLUDE [version-lt-eq-2020](../../includes/version-lt-eq-2020.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and project to support reporting. See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md). 

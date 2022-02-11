@@ -12,7 +12,7 @@ ms.date: 09/23/2021
 
 # View, upload, and organize Reporting Services reports
 
-[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can analyze the progress and quality of your project by viewing the reports in SQL Server Reporting Services.  
 

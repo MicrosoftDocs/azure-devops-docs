@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Provide feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
 
 <a name="provide"></a>
 Stakeholders and other users can respond to feedback requests using the 
