@@ -16,7 +16,9 @@ monikerRange: '<= azure-devops'
 
 A Git repository, or repo, tracks changes to files within a folder. You can create any number of local Git repos on your computer, each stored in its own folder. Each Git repo that you create is independent of other Git repos, so changes you make in one repo won't affect the others.
 
-A Git repo stores every version of every file in the repo, unless you tell Git to ignore a file. Git saves file versions efficiently, so storing a large number of versions doesn't necessarily require a lot of disk space. Git supports comparing file versions, merging different versions, switching between versions, and much more. You can use Git to manage your source code,  regardless of whether your code files are inside or outside of a Visual Studio solution. To share your work, you can connect your local Git repo to a remote Git repo that others can access. The remote repo can be an **Azure Repos** Git repo, a **GitHub** repo, or other hosted Git repo. This article provides procedures for the following tasks:
+A Git repo stores every version of every file in the repo, unless you tell Git to ignore a file. Git saves file versions efficiently, so storing a large number of versions doesn't necessarily require a lot of disk space. Git supports comparing file versions, merging different versions, switching between versions, and much more. You can use Git to manage your source code, regardless of whether your code files are inside or outside of a Visual Studio solution. To share your work, you can connect your local Git repo to a remote Git repo that others can access. The remote repo can be an **Azure Repos** Git repo, a **GitHub** repo, or other hosted Git repo.
+
+This article provides procedures for the following tasks:
 
 > [!div class="checklist"]
 > * Create a local Git repo from a new solution
@@ -116,7 +118,23 @@ another remote Git repository.
 
 #### [Visual Studio 2019](#tab/visual-studio-2019/)
 
-Visual Studio 2019 doesn't support creating a new Git repo in an empty folder. Although you can open an empty folder in Visual Studio, the folder won't remain empty because Visual Studio will add a `.vs` cache folder to it. Use the Git command line instead.
+You can create a new local repo in an empty folder from **Team Explorer**.
+
+1. Under **Local Git Repositories** in the **Connect** view of **Team Explorer**, choose **New**.
+
+   :::image type="content" source="media/creatingrepo/team-explorer-visual-studio-2019/new-git-repo.png" border="true" alt-text="Screenshot of the new repository option in the 'Local Git Repositories' section of the 'Connect' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/team-explorer-visual-studio-2019/new-git-repo-lrg.png":::
+
+1. Enter a folder path where the repo will be created. The specified folder must be empty, or not exist. Choose **Create**.
+
+   :::image type="content" source="media/creatingrepo/team-explorer-visual-studio-2019/create-new-git-repo.png" border="true" alt-text="Screenshot of the new repository path and Create button in the 'Local Git Repositories' section of the 'Connect' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/team-explorer-visual-studio-2019/create-new-git-repo-lrg.png":::
+
+1. You've now created a new local Git repo. To view the folder contents, right-click the new repo entry and select **Open in File Explorer**.
+
+   :::image type="content" source="media/creatingrepo/team-explorer-visual-studio-2019/create-new-git-repo-entry.png" border="true" alt-text="Screenshot of the new repository entry and its context menu in the 'Local Git Repositories' section of the 'Connect' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/team-explorer-visual-studio-2019/create-new-git-repo-entry-lrg.png":::
+
+   Your new local Git repo only contains Git resources.
+
+   :::image type="content" source="media/creatingrepo/team-explorer-visual-studio-2019/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the new repository folder in Windows File explorer showing a .git folder, a .gitignore file, and a .gitattributes file." lightbox="media/creatingrepo/team-explorer-visual-studio-2019/file-explorer-git-folder-lrg.png":::
 
 
 #### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier/)
@@ -181,7 +199,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
     2. Open a browser and navigate to your **Azure DevOps** project by using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).<br>
     
-    3. In your **Azure DevOps** project, [Create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the clone URL from the **Clone Repository** popup.
+    3. In your **Azure DevOps** project, [create](/azure/devops/repos/git/create-new-repo) an empty Git repo without a README file. Copy the clone URL from the **Clone Repository** popup.
 
        :::image type="content" source="media/creatingrepo/common/azure-clone-repo-popup.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup from the Azure DevOps project site." lightbox="media/creatingrepo/common/azure-clone-repo-popup-lrg.png":::
 
@@ -198,7 +216,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/creatingrepo/team-explorer-visual-studio-2019/publish-git-repo-team-explorer.png" border="true" alt-text="Screenshot of the 'Push' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/team-explorer-visual-studio-2019/publish-git-repo-team-explorer-lrg.png":::<br><br>
 
-    2. Choose your **Azure DevOps** account, organization, and repo name, and then select **Publish Repository**.
+    2. Choose your **Azure DevOps** account, organization, and a repo name, and then select **Publish Repository**.
 
        :::image type="content" source="media/creatingrepo/team-explorer-visual-studio-2019/publish-git-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the Azure DevOps account, organization, and repo name options and the 'Publish Repository' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/team-explorer-visual-studio-2019/publish-git-repo-details-team-explorer-lrg.png":::
 
@@ -261,9 +279,6 @@ You can also share your code with others by connecting your local Git repo to a 
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison for publishing your work to a **GitHub** repo.
 
-> [!NOTE]
-> One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
-
 :::row:::
   :::column span="":::
 
@@ -288,7 +303,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
     **Visual Studio Team Explorer** <br><br>
 
-    1. In the **Publish to GitHub** section of the **Synchronization** view in **Team Explorer**, select your **GitHub** account, owner name, and new repo name, and then choose **Publish**.
+    1. In the **Publish to GitHub** section of the **Synchronization** view in **Team Explorer**, select your **GitHub** account, owner name, and a new repo name, and then choose **Publish**.
 
        :::image type="content" source="media/creatingrepo/team-explorer-visual-studio-2019/publish-github-repo-details-team-explorer.png" border="true" alt-text="Screenshot of the GitHub account, name, and repo name options and the 'Publish' button in the 'Synchronization' view of 'Team Explorer' in Visual Studio 2019." lightbox="media/creatingrepo/team-explorer-visual-studio-2019/publish-github-repo-details-team-explorer-lrg.png":::
 
