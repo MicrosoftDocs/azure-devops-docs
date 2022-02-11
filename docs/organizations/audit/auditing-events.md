@@ -92,7 +92,7 @@ The tables below describe the type of events (or actions) that are available for
 | CheckConfiguration.Updated |	Modify |	{Type} check has been updated for {ResourceType} {ResourceName} |
 | CheckSuite.Completed |	Execute	| Checks on stage {StageName} of run #{RunName} of pipeline {PipelineName} in Project {ResolveProjectId:ProjectId} have been {CheckSuiteStatus} |
 
-### Extensions
+### Extension
 | ActionId |	Category |	Details |
 |----------|-----------|----------|
 | Extension.Disabled	| Modify |	Extension "{ExtensionName}" from publisher "{PublisherName}" was disabled |
