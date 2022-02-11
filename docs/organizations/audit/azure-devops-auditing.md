@@ -55,7 +55,7 @@ By default, Project Collection Administrators are the only group that have full 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 3. Select **Policies** under the **Security** header.   
-4. Toggle the **Enable Auditing** button ON.
+4. Toggle the **Log Audit Events** button ON.
 
    ![Screenshot of Auditing policy enabled.](media/azure-devops-auditing/enable-auditing-policy.png)  
 
@@ -68,7 +68,7 @@ The organization will now have Auditing enabled. You may need to refresh the pag
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 3. Select **Policies** under the **Security** header.   
-4. Toggle the **Enable Auditing** button ON.
+4. Toggle the **Log Audit Events** button ON.
 
    ![Screenshot of Auditing policy enabled.](media/azure-devops-auditing/enable-auditing-policy.png)  
 
