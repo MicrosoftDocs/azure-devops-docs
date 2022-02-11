@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/19/2021
+ms.date: 2/11/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -115,10 +115,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="2"><a href="2022/sprint-199-update.md" data-raw-source="[11 February 2022](2022/sprint-199-update.md)">11 February 2022</a></td> 
+    <td>Improvements to strengthen security in Azure DevOps</td><td>General</td><td>Future</td></tr>
+    <td>Pipelines Agent runtime upgrade planning</td><td>Pipelines</td><td>N/A</td></tr>
+</tr> 
     <td rowspan="2"><a href="2022/sprint-198-update.md" data-raw-source="[19 January 2022](2022/sprint-198-update.md)">19 January 2022</a></td> 
     <td>The default agent specification for pipelines will be Windows-2022 </td><td>Pipelines</td><td>N/A</td></tr>
     <td>Pipeline folder rename validates permissions</td><td>Pipelines</td><td>N/A</td></tr>
-</tr> 
     <td rowspan="2"><a href="2021/sprint-196-update.md" data-raw-source="[6 December 2021](2021/sprint-196-update.md)">6 December 2021</a></td> 
     <td>Announcing retirement of macOS 10.14 Mojave images</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Brownout schedule for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
