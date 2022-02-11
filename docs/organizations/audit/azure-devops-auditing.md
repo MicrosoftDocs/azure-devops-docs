@@ -15,7 +15,7 @@ ms.date: 03/30/2021
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-On the Auditing page of your Organization settings, you can access, export, and filter audit logs, which track the many changes that occur within your Azure DevOps organization(s). With these logs, you can use them to meet your organization's compliance and governance goals.
+On the Auditing page of your Organization Settings, you can access, export, and filter audit logs, which track the many changes that occur within your Azure DevOps organization(s). With these logs, you can use them to meet your organization's compliance and governance goals.
 
 Audit changes occur whenever a user or service identity within the organization edits the state of an artifact. You may see events logged for any of the following occurrences:
 
@@ -37,16 +37,47 @@ Auditing events can be accessed through two methods on the Auditing page in your
 
 ## Prerequisites
 
-Auditing is turned off by default for all Azure DevOps Services organizations and can be toggled on and off by Project Collection Administrators.
+Auditing is turned off by default for all Azure DevOps Services organizations and can be toggled on and off by Organization Owners and Project Collection Administrators.
 By default, Project Collection Administrators are the only group that have full access to the Auditing feature.
 
 ### Audit permissions
 
-- Members of the **Project Collection Administrators** group have full access to all Auditing features.
-- Members of the **Project Collection Valid Users** group can view the Auditing page and export audit logs.
+- By default, members of the **Organization Owners** and **Project Collection Administrators** groups have full access to all Auditing features.
+- Specific Audit permissions can be granted to any group via the Security Permissions page in Organization Settings. 
 
 > [!NOTE]  
 > If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages.  To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+## Enable and disable auditing
+
+#### [Preview page](#tab/preview-page)
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+3. Select **Policies** under the **Security** header.   
+4. Toggle the **Enable Auditing** button ON.
+
+   ![Screenshot of Auditing policy enabled.](media/azure-devops-auditing/enable-auditing-policy.png)  
+
+The organization will now have Auditing enabled. You may need to refresh the page to see **Auditing** appear in the sidebar. Audit events will start appearing on Auditing Logs and through any audit streams that have been configured.
+
+5. If you no longer want to receive Auditing events, toggle the **Enable Auditing** button to OFF. When the button is toggled off, the **Auditing** page will no longer appear in the sidebar and the Auditing Logs page will be unavailable. Any audit streams will stop receiving events.
+
+#### [Current page](#tab/current-page)
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+3. Select **Policies** under the **Security** header.   
+4. Toggle the **Enable Auditing** button ON.
+
+   ![Screenshot of Auditing policy enabled.](media/azure-devops-auditing/enable-auditing-policy.png)  
+
+The organization will now have Auditing enabled. You may need to refresh the page to see **Auditing** appear in the sidebar. Audit events will start appearing on Auditing Logs and through any audit streams that have been configured.
+
+5. If you no longer want to receive Auditing events, toggle the **Enable Auditing** button to OFF. When the button is toggled off, the **Auditing** page will no longer appear in the sidebar and the Auditing Logs page will be unavailable. Any audit streams will stop receiving events.
+
+* * *
+
 
 ## Access auditing
 
@@ -61,7 +92,7 @@ By default, Project Collection Administrators are the only group that have full 
 
    ![Auditing preview page](media/azure-devops-auditing/access-audit-log-red-box-preview.png)
    
-4. If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so that they can view the auditing pages. Select **Permissions**, and then find the group or users to provide auditing access to.
+4. If you don't see Auditing in Organization settings, then you don't have access to view audit events. Project Collection Administrators group can give permissions to other users and groups so that they can view the auditing pages. To do so, select **Permissions**, and then find the group or users to provide auditing access to.
 
    ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
@@ -82,7 +113,7 @@ The user or group members will now have access to view your organization's audit
 
    ![Screenshot of Auditing view current page](media/azure-devops-auditing/access-audit-log-red-box.png)
 
-4. If you do not see Auditing in Organization settings, then you do not have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing. Select **Security**, and then find the group or users to provide auditing access to.
+4. If you do not see Auditing in Organization settings, then you do not have access to view audit events. Project Collection Administrators group can give permissions to other users and groups so that they can view the auditing pages. Select **Security**, and then find the group or users to provide auditing access to.
 
    ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
