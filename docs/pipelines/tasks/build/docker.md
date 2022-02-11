@@ -13,6 +13,8 @@ monikerRange: '>= tfs-2018'
 
 # Docker task
 
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
+
 Use this task to build and push Docker images to any container registry using Docker registry service connection.
 
 ## Overview

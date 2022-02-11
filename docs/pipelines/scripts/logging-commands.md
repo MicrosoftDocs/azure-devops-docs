@@ -10,6 +10,8 @@ monikerRange: '>=tfs-2013'
 
 # Logging commands
 
+[!INCLUDE [version-gt-eq-2013](../../includes/version-gt-eq-2013.md)]
+
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
 They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you are troubleshooting a pipeline. 
 

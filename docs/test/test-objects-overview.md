@@ -13,6 +13,8 @@ ms.date: 09/15/2021
 
 # Test objects and terms
 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+
 Read this article to gain an understanding of the objects and terms used in manual and exploratory testing. 
 
 

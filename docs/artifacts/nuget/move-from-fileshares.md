@@ -11,6 +11,8 @@ monikerRange: '>= tfs-2017'
 
 # Migrate your packages from file shares
 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
 Azure Artifacts provides hosted NuGet feeds as a service. If you're using NuGet packages as a part of your continuous delivery workflow, Azure Artifacts can help you manage your dependencies through public and private feeds. Azure Artifacts works with any continuous integration system that supports authenticated NuGet feeds.
 
 ## Key concepts

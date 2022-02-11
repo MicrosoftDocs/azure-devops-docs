@@ -11,6 +11,8 @@ monikerRange: '>= tfs-2017'
 
 # How to cache NuGet packages to reduce the build time
 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
 With pipeline caching, you can reduce your build time by caching your dependencies to be used in later runs. In this article, we will walk through the steps to cache and restore NuGet packages.
 
 ## Lock dependencies

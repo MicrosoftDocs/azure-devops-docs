@@ -12,6 +12,8 @@ monikerRange: '>= tfs-2017'
 
 # Deploy to Azure App Service using Visual Studio Code
 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
 This tutorial walks you through setting up a CI/CD pipeline for deploying Node.js application to Azure App Service using [Deploy to Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extension.
 
 ## Prerequisites

@@ -12,6 +12,8 @@ monikerRange: '>= tfs-2017'
 
 # Get started with npm packages in Azure Artifacts
 
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+
 With Azure Artifacts, you can publish and download npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your own feed, setting up your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"

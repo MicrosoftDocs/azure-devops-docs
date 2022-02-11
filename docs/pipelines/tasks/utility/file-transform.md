@@ -12,6 +12,8 @@ monikerRange: '> tfs-2018'
 
 # File Transform task
 
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+
 Use this task to apply file transformations and variable substitutions on configuration and parameters files. 
 For details of how translations are processed, see [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 

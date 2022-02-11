@@ -13,6 +13,8 @@ ms.date: 10/21/2019
 
 # Azure Repos with Slack
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 If you use [Slack](https://slack.com), you can use the [Azure Repos app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installreposapp) to easily monitor your Azure Repos repositories. You 
 can set up and manage subscriptions to receive notifications in your channel whenever code is pushed/checked 
 in and whenever a pull request (PR) is created, updated or a merge is attempted. This app supports both Git and 

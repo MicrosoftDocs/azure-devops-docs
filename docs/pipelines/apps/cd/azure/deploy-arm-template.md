@@ -11,6 +11,8 @@ ms.custom: subject-armqs, contperf-fy21q2
 
 # Quickstart: Use an ARM template to deploy a Linux web app to Azure
 
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
+
 Get started with [Azure Resource Manager templates (ARM templates)](/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
 An [ARM template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax. In declarative syntax, you describe your intended deployment without writing the sequence of programming commands to create the deployment.

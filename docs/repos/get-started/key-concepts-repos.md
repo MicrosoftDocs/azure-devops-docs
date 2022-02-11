@@ -1,4 +1,4 @@
-﻿---
+---
 title: Key concepts and terminology used for Azure Repos
 titleSuffix: Azure Repos  
 description: Key definitions for objects and items used to code with Azure Repos
@@ -9,6 +9,8 @@ ms.date: 09/10/2018
 ---
 
 # Key concepts
+
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 Here you'll find definitions of key concepts and artifacts used in Azure Repos.
 
