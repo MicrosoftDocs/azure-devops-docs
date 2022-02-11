@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<=azure-devops'
+monikerRange: 'azure-devops'
 ms.date: 09/15/2021
 ---
 
