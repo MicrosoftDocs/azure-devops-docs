@@ -98,11 +98,11 @@ You can use wildcards to download the latest version of your Universal Packages.
 
 **Examples**:
 
-- `--version *`: the latest version.
+- `--version '*'`: the latest version.
 
-- `--version 1.*`: the latest version with major 1. 
+- `--version '1.*'`: the latest version with major 1. 
 
-- `--version 1.2.*`: the latest patch release with major 1 and minor 2.  
+- `--version '1.2.*'`: the latest patch release with major 1 and minor 2.  
   
 > [!NOTE]
 > Wildcards are not supported in pre-release pipelines.
