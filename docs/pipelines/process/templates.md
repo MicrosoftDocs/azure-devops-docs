@@ -288,7 +288,7 @@ jobs:
   steps:
   - bash: echo "Hello Ubuntu"
 
-- job: Windows
+- job:
   pool:
     vmImage: 'windows-latest'
   steps:
