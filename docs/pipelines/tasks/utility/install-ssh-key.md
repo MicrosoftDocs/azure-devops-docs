@@ -150,10 +150,10 @@ steps:
 
 When using more than one key in the same pipeline job, the first one is used by default. To be able to use the desired key when establishing an SSH connection, you can use the `Advanced` section of the `InstallSSHKey` task to set the following parameters: `addEntryToConfig`, `configHostAlias`, `configHostname`, `configUser`, and `configPort`.
 
-These parameters allow you to add a host to the SSH config file (e.g. `/root/.ssh/config` for Linux) in order to further use it in scripts via alias.
+These parameters allow you to add a host to the SSH config file (for example, `/root/.ssh/config` for Linux) in order to further use it in custom scripts via alias.
 After build is completed, the task will attempt to restore the original SSH config file. If there was no SSH config file initially, it will just be removed from the agent.
 
-An example of multiple SSH keys installation for case with several GitHub repositories and different keys for each one — for further use in custom scripts ([related GitHub documentation](https://docs.github.com/en/developers/overview/managing-deploy-keys#using-multiple-repositories-on-one-server)):
+An example of multiple SSH keys installation for case with several GitHub repos and their own key for each one ([related GitHub docs](https://docs.github.com/en/developers/overview/managing-deploy-keys#using-multiple-repositories-on-one-server)):
 ```yml
 pool: <Some Agent Pool>
 
