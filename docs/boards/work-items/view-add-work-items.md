@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/07/2021
+ms.date: 02/14/2022
 ---
 
 # View and add work items using the Work Items page  
@@ -188,6 +188,8 @@ ID    Type    Title      Assigned To          State
 
 Adding a work item is just one click away. Choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
+> [!NOTE]   
+> New work items are assigned the last **Area Path** and **Iteration Path** selected by the user. 
 
 # [Web portal](#tab/browser)
 

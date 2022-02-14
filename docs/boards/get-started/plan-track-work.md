@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 12/02/2021
+ms.date: 02/14/2022
 ---
 
 
@@ -186,9 +186,9 @@ To open the Features board from the Requirements board, choose **Features** from
 
 ## Add work items to your board
 
+Work items you add to your board are automatically assigned the default **Area Path** and **Iteration Path** assigned to the team. To learn more, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
 #### [Agile process](#tab/agile-process) 
-
 
 1. From the Stories board, choose **New item** and start adding those stories you want to track. 
 
@@ -363,7 +363,7 @@ As work starts, drag the requirement card from the **Backlog** column to the **A
 Task checklists provide a quick and easy way to track elements of work that are important to support completing a backlog item. Also, you can assign individual tasks to different team members. 
 
 > [!TIP]   
-> Tasks that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
+> Tasks that you create from the Kanban board are automatically assigned the **Area Path** and **Iteration Path** of their parent work item. 
 
 Tasks that you create from the Kanban board show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) show up within tasks checklists on the Kanban board.  
 
