@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'  
-ms.date: 09/28/2021
+ms.date: 02/14/2022
 ---
 
 # Out Of Box widget catalog 
@@ -363,7 +363,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="new-work-item-widget"></a>
-      Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration.  
+      Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default **Area Path**. The **Iteration Path** assigned matches the last **Iteration Path** assigned to a work item by the currently signed in user.  
       
       To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
       ::: moniker range="tfs-2015"
