@@ -48,7 +48,7 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
     This will enable the **Create badge** button for every package in that feed.
 
-    :::image type="content" source="media/pm-create-badge-newnav.png" alt-text="Create a package badge":::
+    :::image type="content" source="media/create-badge-dropdown.png" alt-text="A screenshot showing how to create a package badge.":::
 
     ::: moniker-end
 
@@ -56,7 +56,7 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
     This will enable the **Create badge** button for every package in that feed.
 
-    :::image type="content" source="media/pm-create-badge.png" alt-text="Create a package badge TFS":::
+    :::image type="content" source="media/pm-create-badge.png" alt-text="A screenshot showing how to create a package badge in TFS.":::
 
     ::: moniker-end
 
@@ -64,9 +64,9 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
 You can create a badge for any package in your feed with package-sharing enabled. You can only create a badge for the latest version of each package.
 
-1. From within your feed, select your package and then select the **Create badge** button. 
+1. From within your feed, select your package and then select **Create badge**. 
 
-    :::image type="content" source="media/create-badge.png" alt-text="Create a package for a specific package":::
+    :::image type="content" source="media/create-badge-new-ui.png" alt-text="A screenshot showing how to create a new package badge.":::
 
 1. Select a **Feed view** for your package badge. If you're using release views, select the view that contains the packages you want to share; otherwise, just use *No view*.
 
