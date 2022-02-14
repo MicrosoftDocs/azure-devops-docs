@@ -36,7 +36,7 @@ A pipeline may run in response to:
 
 Here's an example of when an informational run is created. Suppose you have a repo in your local BitBucket Server and a pipeline that builds the code in that repo. Assume you scheduled your pipeline to run every day, at 03:00. Now, imagine it's 03:00 and your BitBucket Server is experiencing an outage. Azure DevOps reaches out to your local BitBucket Server to fetch the pipeline's YAML code, but it can't, because of the outage. At this moment, the system creates an informational run, similar to the one shown in the previous screenshot.
 
-Request throttling by the git repository provider is a frequent cause of Azure DevOps Services creating an informational run. Throttling occurs when Azure DevOps makes too many requests to the repository in a short amount of time. This can be due to a spike in commit activity, for example. Throttling issues are generally transitory.
+Request throttling by the git repository provider is a frequent cause of Azure DevOps Services creating an informational run. Throttling occurs when Azure DevOps makes too many requests to the repository in a short amount of time. These requests can be due to a spike in commit activity, for example. Throttling issues are transitory.
 
 ## Next Steps
 
