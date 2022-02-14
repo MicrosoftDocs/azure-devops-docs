@@ -4,7 +4,7 @@ description: How to use packages from nuget.org with Azure Artifacts
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 09/16/2021
+ms.date: 02/14/2022
 monikerRange: '>= tfs-2018'
 "recommendations": "true"
 ---
@@ -21,15 +21,15 @@ Enabling upstream sources on your feed allow you to publish and consume packages
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png) button in the top right of the page to open **Feed settings**.
+1. Navigate to **Feed settings** by selecting the gear icon button ![gear icon](../../media/icons/gear-icon.png).
 
-1. Select the **Upstream sources** tab.
+1. Select **Upstream sources**.
 
-    :::image type="content" source="../media/upstreams-settings.png" alt-text="Screenshot showing how to access feed settings.":::
+    :::image type="content" source="../media/upstream-sources.png" alt-text="A screenshot showing how to access upstream sources from feed settings.":::
 
-1. Select **Add upstream source**.
+1. Select **Add Upstream**.
 
-    :::image type="content" source="../media/add-upstream.png" alt-text="Screenshot showing the add a new upstream source button.":::
+    :::image type="content" source="../media/add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
 1. Select **Public source**, and then fill out the required fields.
 
