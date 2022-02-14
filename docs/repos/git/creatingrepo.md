@@ -318,7 +318,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 To connect a local repository to a hosted remote Git repository to share your work, go the **Settings** page in Team Explorer. Select **Repository Settings**.
 Under **Remotes**, select **Add**.
 
-![Add a remote for a repo in Visual Studio 2017 Team Explorer](media/creatingrepo/team-explorer-visual-studio-2017/add_remote_vs.png)
+![Add a remote for a repo in Visual Studio 2017 Team Explorer](media/creatingrepo/team-explorer-visual-studio-2017/add-remote-repo.png)
 
 Enter `origin` in the **Name** field and enter the [clone URL](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) for your repo in the **Fetch** field. 
 Make sure that **Push matches fetch** is checked and select **Save**. 

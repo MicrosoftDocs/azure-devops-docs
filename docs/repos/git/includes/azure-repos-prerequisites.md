@@ -1,4 +1,6 @@
 ---
+ms.technology: devops-code-git
+ms.prod: devops
 ms.topic: include
 ms.date: 02/03/2022
 ---
