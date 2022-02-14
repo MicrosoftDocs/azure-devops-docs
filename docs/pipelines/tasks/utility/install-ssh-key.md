@@ -153,7 +153,7 @@ When using more than one key in the same pipeline job, the first one is used by 
 These parameters allow you to add a host to the SSH config file (for example, `/root/.ssh/config` for Linux) in order to further use it in custom scripts via alias.
 After build is completed, the task will attempt to restore the original SSH config file. If there was no SSH config file initially, it will just be removed from the agent.
 
-An example of multiple SSH keys installation for case with several GitHub repos and their own key for each one ([related GitHub docs](https://docs.github.com/en/developers/overview/managing-deploy-keys#using-multiple-repositories-on-one-server)):
+An example of multiple SSH keys installation for case with several GitHub repos and their own key for each one:
 ```yml
 pool: <Some Agent Pool>
 
@@ -186,6 +186,8 @@ steps:
 - bash: git clone git@<second-host-alias>:<owner>/<second-repo>.git
   displayName: Clone Second Repo
 ```
+
+[Related GitHub docs](https://docs.github.com/en/developers/overview/managing-deploy-keys#using-multiple-repositories-on-one-server).
 
 ## Open source
 
