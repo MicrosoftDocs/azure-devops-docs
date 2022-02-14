@@ -6,12 +6,11 @@ metadata:
   description: View frequently asked questions (FAQs), like creating a project and how to resolve various errors.
   ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
   ms.technology: devops-accounts
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 12/19/2017
   monikerRange: '<= azure-devops'
-    
 title: Create a project FAQs
 
 summary: |
