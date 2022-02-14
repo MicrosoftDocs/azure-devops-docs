@@ -146,14 +146,14 @@ steps:
 > [!NOTE]
 > Your public key should be added to the repository\organization otherwise you'll get issue with the access. For GitHub please follow [the guide above](#example-setup-using-github). For Azure DevOps Services please use the following guide: [Add the public key to Azure DevOps Services/TFS](../../../repos/git/use-ssh-keys-to-authenticate.md).
 
-## Multiple Install SSH Key tasks in the same pipeline job.
+## Installing of multiple SSH keys in the same pipeline job
 
 When using more than one key in the same pipeline job, the first one is used by default. To be able to use the desired key when establishing an SSH connection, you can use the `Advanced` section of the `InstallSSHKey` task to set the following parameters: `addEntryToConfig`, `configHostAlias`, `configHostname`, `configUser`, and `configPort`.
 
 These parameters allow you to add a host to the SSH config file (e.g. `/root/.ssh/config` for Linux) in order to further use it in scripts via alias.
-This file will be removed from the agent after build will be finished, for security purposes.
+After build is completed, the task will attempt to restore the original SSH config file. If there was no SSH config file initially, it will just be removed from the agent.
 
-Multiple keys usage example:
+An example of multiple SSH keys installation for case with several GitHub repositories and different keys for each one — for further use in custom scripts ([related GitHub documentation](https://docs.github.com/en/developers/overview/managing-deploy-keys#using-multiple-repositories-on-one-server)):
 ```yml
 pool: <Some Agent Pool>
 
