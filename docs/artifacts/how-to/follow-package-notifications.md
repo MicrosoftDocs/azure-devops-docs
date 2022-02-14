@@ -3,7 +3,7 @@ title: Receive package notifications
 description: How to follow a package and get notified every time a new version is published
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 07/9/2021
+ms.date: 02/14/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -15,13 +15,13 @@ Notifications are a great tool to stay informed about specific changes within yo
 
 ## Follow a package
 
-1. From within your project, select **Artifacts** and then select the feed hosting your package.
+1. Select **Artifacts**, and then select your feed.
 
-1. Find and select the package you want to follow.
+1. Select the package you want to follow.
 
-1. Select the **Follow** button to start getting notified whenever a new version is published.
+1. Select **Follow** to start getting notified whenever a new version is published.
 
-    :::image type="content" source="../media/follow-package.png" alt-text="Follow a package":::
+    :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot showing how to follow a package.":::
 
 ## Views notifications
 
