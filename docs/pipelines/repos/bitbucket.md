@@ -211,10 +211,10 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
-## Informational pipeline runs
+## Informational runs
 [!INCLUDE [informational-runs](../includes/information-run-include.md)]
 
-Learn more about [informational pipeline runs](../process/information-run.md).
+Learn more about [informational runs](../process/information-run.md).
 
 ## FAQ
 
