@@ -56,11 +56,11 @@ If you would like to change the default settings of the code coverage experience
 
 The settings that can be changed are: 
 
-| Setting | Description | Default | Permissible values
+| Setting | Description | Default | Permissible values |
 |:---:|:---:|:---:|:---:|
 | status | Indicates whether code coverage status check should be posted on pull requests. <br/> Turning this off will not post any coverage checks and coverage annotations will not appear in the changed files view. | on | on, off |
 | target | Target threshold value for diff coverage must be met for a successful coverage status to be posted. | 70% | Desired % number | 
-| comments | Indicates whether a comment containing coverage details for each code file should be posted in the pull request | off | on, off
+| comments | Indicates whether a comment containing coverage details for each code file should be posted in the pull request | off | on, off |
 
 Example configuration:
 
