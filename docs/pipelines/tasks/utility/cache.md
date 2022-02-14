@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Cache task
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Improve build performance by caching files, like dependencies, between pipeline runs.
 
