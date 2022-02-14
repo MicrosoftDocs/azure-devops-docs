@@ -17,7 +17,7 @@ ms.topic: include
 
    ![Taking you to your organization notification](/azure/devops/media/taking-you-to-your-azure-devops-organization.png)
 
-   Congratulations, you're now an organization owner!
+   Congratulations, you're an organization owner!
 
    Sign in to your organization at any time, `https://dev.azure.com/{yourorganization}`.
 
