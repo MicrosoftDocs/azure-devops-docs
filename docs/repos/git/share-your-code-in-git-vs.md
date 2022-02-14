@@ -32,40 +32,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
-- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
-
-- To view code, you must be a member of an Azure DevOps project with **Basic** access or higher.
-
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
-
-- To clone or contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
-
-  > [!NOTE]
-  > For public projects, users granted **Stakeholder** access have full access to **Azure Repos**.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
-
-- To view code, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-
-- To clone or contribute to code, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-- To view code, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-
-- To clone or contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
-
-::: moniker-end
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -79,11 +46,6 @@ The first step to sharing your Visual Studio solution with others using Git is t
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. You can exercise Git features from either interface interchangeably. Below, we provide a side-by-side comparison for creating a Git repository.
-
-> [!NOTE]
-> One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
-
 1. Create a new local Git repo for your Visual Studio solution, by right-clicking the solution name in **Solution Explorer**, and then selecting **Create Git Repository**. Or, choose **Add to Source Control** on the status bar in the lower right-hand corner of Visual Studio, and then select **Git**. If you don't see these options, then your code is already in a Git repo.
 
    :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer.png" border="true" alt-text="Screenshot of the 'Create Git repository' option in the Solution Explorer context menu in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-solution-explorer-lrg.png":::
@@ -92,26 +54,13 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
    :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu.png" border="true" alt-text="Screenshot of the 'Create Git Repository' option in the Git menu from the menu bar of Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/common/create-git-repository-git-menu-lrg.png":::
 
-:::row:::
-  :::column span="":::
+2. This step only applies to the Visual Studio Git version control experience: in the **Create a Git repository** window, choose **Local only**, verify the local path is correct, and then choose **Create**.
 
-    **Visual Studio Git** <br><br>
+   :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window-lrg.png":::
 
-    2. In the **Create a Git repository** window, choose **Local only**, verify the **Local path** is correct, and choose **Create**.
+   **Team Explorer** doesn't launch the **Create a Git repository** window, and assumes you want a local Git repo.
 
-       :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window.png" border="true" alt-text="Screenshot of the 'Create a Git repository' window with the 'Local only' option selected in Visual Studio 2019." lightbox="media/share-your-code-in-git-visual-studio-2019/git/create-git-repository-window-lrg.png":::
-
-  :::column-end:::
-  :::column span="":::
-
-    **Visual Studio Team Explorer** <br>
-
-    **Team Explorer** doesn't launch the **Create a Git repository** window, and assumes you want a local Git repo.
-
-  :::column-end:::
-:::row-end:::
-
-You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and some Git resources.
+You've now created a local Git repo in the Visual Studio solution folder and committed your code into that repo. Your local Git repo contains both your Visual Studio solution and Git resources.
 
 :::image type="content" source="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder.png" border="true" alt-text="Screenshot of the Git folder, Git ignore file, and Git attributes file in Windows file explorer." lightbox="media/share-your-code-in-git-visual-studio-2019/common/file-explorer-git-folder-lrg.png":::
 
@@ -215,9 +164,14 @@ If you don't already have an app in the repo, create one.
 
 ## Publish your code
 
+You can share your work with others by publishing your local Git repo to an **Azure Repos** Git repo.
+
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
-The next step to sharing your Visual Studio solution using Git and **Azure Repos** is to publish from your local Git repo to an **Azure Repos** Git repo that others can access.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably. Below, we provide a side-by-side comparison for publishing your code.
+
+> [!NOTE]
+> One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
 
 :::row:::
   :::column span="":::
@@ -334,8 +288,6 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 
 #### [Git Command Line](#tab/command-line)
-
-The next step to sharing your Visual Studio solution using Git and **Azure Repos** is to publish from your local Git repo to an **Azure Repos** Git repo that others can access.
 
 1. Open a browser and navigate to your Azure DevOps project using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 

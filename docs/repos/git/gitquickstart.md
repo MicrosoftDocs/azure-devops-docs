@@ -28,40 +28,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
-- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
-
-- To view code, you must be a member of an Azure DevOps project with **Basic** access or higher.
-
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
-
-- To clone or contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
-
-  > [!NOTE]
-  > For public projects, users granted **Stakeholder** access have full access to **Azure Repos**.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-- **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
-
-- To view code, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-
-- To clone or contribute to code, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-- To view code, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
-
-- To clone or contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
-
-::: moniker-end
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
