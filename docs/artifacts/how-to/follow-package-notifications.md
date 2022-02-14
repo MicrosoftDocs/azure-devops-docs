@@ -27,17 +27,17 @@ Notifications are a great tool to stay informed about specific changes within yo
 
 Aside from getting notifications when a new package version is published, you can also set up alerts to be notified when a package is promoted to a view. This can be helpful to filter alerts and only receive specific notifications especially in a busy development cycle when numerous packages are being published.
 
-1. From within your project, select **Artifacts** and then select the feed hosting your package.
+1. Select **Artifacts**, and then select your feed.
 
 1. Filter to a specific view (for example, @Prerelease, @Release)
 
-    :::image type="content" source="../media/filter-by-view.png" alt-text="Filter packages by a specific view":::
+    :::image type="content" source="../media/notifications-filter-view.png" alt-text="A screenshot showing how to filter packages by a specific view.":::
 
 1. Select the package you want to follow.
 
-1. Select the **Follow** button to start getting notified whenever a new version is published.
+1. Select **Follow**.
 
-    :::image type="content" source="../media/follow-package.png" alt-text="Follow a package":::
+    :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot showing how to follow a package from a specific view.":::
 
 ## Follow a package with personal notifications
 
