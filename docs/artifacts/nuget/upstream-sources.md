@@ -15,15 +15,13 @@ monikerRange: '>= tfs-2018'
 
 Enabling upstream sources on your feed allow you to publish and consume packages from your feed and public registries. Adding the nuget.org upstream allows you to consume NuGet packages from the public registry.
 
-<a name="existing-feed"></a>
-
 ## Add a new upstream source
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Navigate to **Feed settings** by selecting the gear icon button ![gear icon](../../media/icons/gear-icon.png).
+1. Navigate to **Feed settings** by selecting the gear icon ![gear icon](../../media/icons/gear-icon.png) button.
 
-1. Select **Upstream sources**.
+1. Select **Upstream Sources**.
 
     :::image type="content" source="../media/upstream-sources.png" alt-text="A screenshot showing how to access upstream sources from feed settings.":::
 
@@ -36,8 +34,6 @@ Enabling upstream sources on your feed allow you to publish and consume packages
     :::image type="content" source="../media/add-new-upstream.png" alt-text="Screenshot showing how to add a new upstream source.":::
 
 1. Select **Add** when you are done.
-
-<a name="update-nuget-configuration"></a>
 
 ## Update nuget.config
 
@@ -55,17 +51,17 @@ Enabling upstream sources on your feed allow you to publish and consume packages
 
 ## View saved packages
 
-You can view the packages you saved in your feed by selecting the appropriate **Source** filter.
+You can view the packages you saved from upstreams by selecting your **Source** from the dropdown menu.
 
 ::: moniker range=">= azure-devops-2019"
 
-:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="Screenshot showing how to filter upstream sources.":::
+:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="A screenshot showing how to filter packages by source.":::
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot showing how to filter upstream sources - TFS.":::
+:::image type="content" source="media/view-cached-packages.png" alt-text="A screenshot showing how to filter packages by source in TFS":::
 
 ::: moniker-end
 
