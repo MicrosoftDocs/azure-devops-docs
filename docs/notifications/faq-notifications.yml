@@ -5,12 +5,11 @@ metadata:
   description: General questions and answers about notifications settings in Azure DevOps.
   ms.technology: devops-collab
   toc: show
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 12/30/2019
   monikerRange: '>= tfs-2015'
-    
 title: Notifications FAQS
 summary: |
   [!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
