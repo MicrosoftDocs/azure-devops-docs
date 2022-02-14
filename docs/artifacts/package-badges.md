@@ -4,7 +4,7 @@ description: Share your NuGet, npm, Maven, Python, or Universal Packages with pa
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 02/14/2022
 monikerRange: '>= tfs-2018'
 ---
 
@@ -26,17 +26,17 @@ To start sharing your Artifacts packages using package badges, you'll first have
 > [!NOTE]
 > Only feed administrators can enable package sharing.
 
-1. From within your project, select **Artifacts**, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) then select **Feed settings** from the dropdown menu. 
+1. Select **Artifacts**, select your feed from the dropdown menu, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) to access the **Feed settings**. 
 
    ::: moniker range=">= azure-devops-2019"
 
-   :::image type="content" source="media/edit-feed-full-newnav.png" alt-text="Feed settings":::
+   :::image type="content" source="media/feed-settings.png" alt-text="A screenshot showing how to navigate to the feed settings":::
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
-   :::image type="content" source="media/edit-feed-full.png" alt-text="Feed settings TFS":::
+   :::image type="content" source="media/edit-feed-full.png" alt-text="A screenshot showing how to navigate to the feed settings in TFS":::
 
    ::: moniker-end
 
