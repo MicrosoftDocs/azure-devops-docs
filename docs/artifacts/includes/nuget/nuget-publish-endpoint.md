@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 07/15/2021
+ms.date: 04/14/2022
 ---
 
 ::: moniker range=">= azure-devops-2019"
@@ -14,7 +14,7 @@ ms.date: 07/15/2021
 
     :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
 
-1. Select **NuGet.exe** under the **NuGet** header.
+1. Select **NuGet.exe**.
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
