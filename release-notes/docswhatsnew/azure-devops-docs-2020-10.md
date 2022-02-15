@@ -76,7 +76,7 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2020 through Octo
 
 ### Updated articles
 
-- [Install and manage Search](/azure/devops/project/search/administration)
+- [Install and manage Search](/azure/devops/project/search/)
 
 ## GitHub issue content updates
 
