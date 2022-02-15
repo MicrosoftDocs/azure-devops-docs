@@ -1,8 +1,8 @@
 ---
-title: Azure Pipelines YAML pipeline editor guide
-description: Learn how to author and edit pipelines with the YAML pipeline editor
+title: YAML pipeline editor guide
+description: Learn how to author and edit pipelines with the YAML pipeline editor.
 ms.topic: reference
-ms.date: 06/24/2021
+ms.date: 02/15/2022
 author: steved0x
 ms.author: sdanie
 monikerRange: '>=azure-devops-2019'
@@ -12,12 +12,12 @@ monikerRange: '>=azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Azure Pipelines provides a YAML pipeline editor based on the [Monaco Editor](https://github.com/microsoft/monaco-editor) that you can use to author and edit your pipelines from the Azure DevOps portal. The editor provides tools like Intellisense support and a task assistant to provide guidance when editing a pipeline.
+Azure Pipelines provides a YAML pipeline editor that you can use to author and edit your pipelines. The YAML editor is based on the [Monaco Editor](https://github.com/microsoft/monaco-editor), and so it provides tools like Intellisense support and a task assistant to provide guidance when you edit a pipeline.
 
 :::moniker range="azure-devops-2019"
 
 > [!IMPORTANT]
-> The YAML pipeline editor was introduced in Azure DevOps Server 2019 Update 1. If you are using Azure DevOps Server 2019 RTW, the YAML pipeline editor described in this article is not available, but you can edit your YAML using the text editor of your choice and check it into your pipeline's repository.
+> The YAML pipeline editor was introduced in Azure DevOps Server 2019 Update 1. If you're using Azure DevOps Server 2019 RTW, the YAML pipeline editor described in this article isn't available, but you can edit your YAML using the text editor of your choice and check it into your pipeline's repository.
 
 :::moniker-end
 ## Edit a YAML pipeline
@@ -62,7 +62,7 @@ Choose **Save** to save your pipeline. You can commit directly to your branch, o
 
 The YAML pipeline editor provides several types of keyboard shortcuts.
 
-Press Ctrl+Space for Intellisense support while you are editing the YAML pipeline.
+Press Ctrl+Space for Intellisense support while you're editing the YAML pipeline.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-intellisense.png" alt-text="YAML pipeline editor intellisense.":::
 
@@ -96,7 +96,7 @@ Choose **Add** to insert the task YAML into your pipeline.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019-1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
 
-Edit the inserted YAML to make additional configuration changes to the task.
+Edit the inserted YAML to make more configuration changes to the task.
 
 :::moniker-end
 
@@ -104,7 +104,7 @@ Edit the inserted YAML to make additional configuration changes to the task.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
 
-You can edit the YAML to make additional configuration changes to the task, or you can choose **Settings** above the task in the YAML pipeline editor to configure the inserted task in the task assistant.
+You can edit the YAML to make more configuration changes to the task, or you can choose **Settings** above the task in the YAML pipeline editor to configure the inserted task in the task assistant.
 
 :::moniker-end
 
@@ -112,7 +112,7 @@ You can edit the YAML to make additional configuration changes to the task, or y
 
 ## Validate
 
-When editing a YAML pipeline, you can validate your changes by choosing **More actions**, **Validate**. You can use this feature to catch syntax errors in your pipeline that will prevent it from starting.
+When you're editing a YAML pipeline, you can validate your changes by choosing **More actions**, **Validate**. You can use this feature to catch syntax errors in your pipeline that will prevent it from starting.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
 
@@ -140,7 +140,7 @@ Choose **New variable** to add your first variable and **Add** :::image type="ic
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
-In addition to managing your variables directly from the YAML pipeline editor, you can also manage them in the pipeline settings UI.
+You can also manage your variables in the pipeline settings UI.
 
 :::moniker-end
 
@@ -168,15 +168,15 @@ For more information on working with pipeline variables, see [Define variables](
 
 ## View and edit templates
 
-[Templates](../process/templates.md) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](../security/templates.md) through your pipeline.
+[Templates](../process/templates.md) are a commonly used feature in YAML pipelines. They're an easy way to share pipeline snippets. They're also a powerful mechanism in verifying or enforcing [security and governance](../security/templates.md) through your pipeline.
 
-Azure Pipelines supports a YAML editor which can be handy when editing your pipeline. Previously, the editor did not support templates. Authors of YAML pipelines could not get intellisense assistance when using a template. With this release, we are previewing support for templates in the YAML editor. To enable this preview, [navigate to preview features](../../project/navigation/preview-features.md) in your Azure DevOps organization, and enable **YAML templates editor**.
+Azure Pipelines supports a YAML editor, which can be handy when editing your pipeline. Previously, the editor didn't support templates. Authors of YAML pipelines couldn't get intellisense assistance when using a template. With this release, we're previewing support for templates in the YAML editor. To enable this preview, [navigate to preview features](../../project/navigation/preview-features.md) in your Azure DevOps organization, and enable **YAML templates editor**.
 
 As you edit your main Azure Pipelines YAML file, you can either _include_ or _extend_ a template. As you type in the name of your template, you may be prompted to validate your template. Once validated, the YAML editor understands the schema of the template including the input parameters.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-templates.png" alt-text="YAML template.":::
 
-Post validation, you can navigate into the template by choosing **View template**, which opens the template in a new browser tab. You will be able to make changes to the template using all the features of the YAML editor.
+Post validation, you can navigate into the template by choosing **View template**, which opens the template in a new browser tab. You'll be able to make changes to the template using all the features of the YAML editor.
 
 > [!IMPORTANT]
 > This feature is in preview. There are known limitations. If the template has required parameters that are not provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In addition, you cannot create a new template from the editor. You can only use or edit existing templates.
@@ -185,6 +185,10 @@ Post validation, you can navigate into the template by choosing **View template*
 
 ## Next steps
 
+> [!div class="nextstepaction"]
+> [Customize your pipeline](../customize-pipeline.md)
+
+## Related articles
+
 * [Learn how to navigate and view your pipelines](multi-stage-pipelines-experience.md)
 * [Create your first pipeline](../create-first-pipeline.md)
-* [Customize your pipeline](../customize-pipeline.md)
