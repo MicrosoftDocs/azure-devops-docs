@@ -90,4 +90,4 @@ To change a policy, you need at least Basic access and organization Owner or Pro
 - [Restrict users from creating new organizations with Azure AD policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
 - [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access)
-- [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps)
+- [Detailed instructions and requirements for Conditional Access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
