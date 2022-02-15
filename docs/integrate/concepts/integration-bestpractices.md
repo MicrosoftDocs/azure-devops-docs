@@ -4,10 +4,11 @@ titleSuffix: Azure DevOps Services
 description: Best practices for integrating Azure DevOps Services with REST APIs.
 ms.technology: devops-ecosystem
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
+ms.custom: content-health, FY22Q3, freshness
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/15/2020
+ms.date: 02/15/2022
 ---
 
 <!--- Supports FWLINK:  https://go.microsoft.com/fwlink/?LinkId=692096   --> 
@@ -16,16 +17,14 @@ ms.date: 07/15/2020
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure DevOps Services, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and enhance scalability and performance. This multi-tenancy leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, we enforce [rate limits](./rate-limits.md). Rate limits restrict the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, later requests may be either delayed or blocked. 
-
-For many teams, Azure DevOps Services is one of several tools that are used to effectively run an organization. So, tools and integrations between services get built to improve efficiencies. For example, you may have application that automatically creates a bug in Azure DevOps Services when an error gets logged. If you aren't careful, automated tools can get out of control executing a high rate of requests. The requests quickly cause Azure DevOps Services to enforce rate limits to your organization. To help reduce your risk of hitting the rate limits, follow these best practices when using the REST APIs to integrate with Azure DevOps Services.
+Tools and integrations between services get built to improve efficiencies for Azure DevOps Services. If you aren't careful, automated tools can get out of control executing a high rate of requests. The requests quickly cause Azure DevOps Services to enforce [rate limits](./rate-limits.md) to your organization. To help reduce your risk of hitting the rate limits, follow these best practices when you're using the REST APIs to integrate with Azure DevOps Services. 
 
 ## Push only actionable work items
-Only push actionable items into Azure DevOps Services that your team plans to engage on or address in the future. Keep work items out of Azure DevOps Services until necessary. 
 
-For example, don't attempt to store telemetry data in Azure DevOps.
+Only push actionable items into Azure DevOps Services that your team plans to engage on or address in the future. Keep work items out of Azure DevOps Services until necessary. For example, don't attempt to store telemetry data in Azure DevOps.
 
 ## Maintain your own data store
+
 Don't add work items into Azure DevOps Services for the sake of having them all in one place. Azure DevOps Services isn't designed as a data storage service. Maintain your own data store.
 
 ## Batch your changes
