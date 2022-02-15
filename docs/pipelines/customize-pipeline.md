@@ -1,13 +1,14 @@
 ---
 title: Customize your pipeline
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Step-by-step tutorial to customize a pipeline
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 07/21/2021
+ms.date: 07/21/2021 
+ms.devlang: azurecli
 monikerRange: ">= azure-devops-2019"
 ---
 
