@@ -4,7 +4,7 @@ description: Use packages from npmjs.com using scopes or upstream sources
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 02/14/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -28,20 +28,21 @@ You can use npmjs.com as an upstream source with new and existing feeds.
 
 ### On an existing feed
 
-1. Navigate to your feed and then select the **gear icon** in the top right of the page to open the feed settings.
-1. Select the **Upstream sources** tab, and then select **Add upstream source**.
+1. Select **Artifacts**, and then select your feed.
 
-    :::image type="content" source="media/add-upstream-source.png" alt-text="Screenshot showing how the add upstream source button":::
+1. Navigate to **Feed settings** by selecting the gear icon ![gear icon](../../media/icons/gear-icon.png) button.
 
-1. Select **Public source** and then select the **npmjs** public source from the dropdown menu.
+1. Select **Upstream sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="media/npmjs-upstream.png" alt-text="Screenshot showing how the add the npmjs upstream":::
+    :::image type="content" source="../media/add-upstream.png" alt-text="A screenshot showing how to add an upstream source":::
 
-1. Select **Add** when you are done.
+1. Select **Public source**, and then select **npmjs** from the dropdown menu.
+
+1. Select **Save** when you are done.
 
 ## Filter to saved packages
 
-You can view the packages you saved in your feed by selecting a source from the dropdown menu.
+You can view the packages you saved from upstreams by selecting your **Source** from the dropdown menu.
 
 ::: moniker range=">= azure-devops-2019"  
 
