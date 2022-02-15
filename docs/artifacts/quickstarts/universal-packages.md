@@ -4,7 +4,7 @@ description: How to publish and download universal packages to and from Artifact
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/03/2021
+ms.date: 02/15/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -74,7 +74,7 @@ az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANI
 
 1. Select your feed from the drop-down menu. 
 
-    :::image type="content" source="media/universal-in-feed.png" alt-text="Screenshot showing the newly published package.":::
+    :::image type="content" source="media/universal-package-published.png" alt-text="A screenshot showing the newly published universal package.":::
 
 ## Download universal packages
 
