@@ -30,7 +30,7 @@ Data pipelines provide:
 ## What is CI/CD?
 Continuous integration and continuous delivery (CI/CD) is a software development approach where all developers work together on a shared repository of code – and as changes are made, there are automated build process for detecting code issues.  The outcome is a faster development life cycle and a lower error rate.   
 
-## What is a CICD/ data pipeline and why does it matter for data science?
+## What is a CI/CD data pipeline and why does it matter for data science?
 The building of machine learning models is similar to traditional software development in the sense that the data scientist needs to write code to train and score machine learning models. 
 
 Unlike traditional software development where the product is based on code, data science machine learning models are based on both the code (algorithm, hyper parameters) and the data used to train the model.  That’s why most data scientists will tell you that they spend 80% of the time doing data preparation, cleaning and feature engineering.  
