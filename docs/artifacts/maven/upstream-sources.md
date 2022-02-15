@@ -3,7 +3,7 @@ title: Use packages from Maven Central
 description: How to use packages from Maven upstream
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/28/2022
+ms.date: 02/15/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
@@ -33,19 +33,19 @@ Follow the instructions below to create a new feed and enable upstream sources. 
 
 1. Select **Upstream sources**.
 
-1. Select **Add upstream source**.
+1. Select **Add Upstream**.
 
 1. Select **Public source**, and then select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu.
 
-    :::image type="content" source="../media/maven-upstream-source.png" alt-text="Screenshot showing how to add Maven central upstream source.":::
+    :::image type="content" source="../media/maven-add-upstream.png" alt-text="A screenshot showing how to add Maven central upstream source.":::
 
-1. Select **Add** when you are done.
+1. Select **Save** when you are done.
 
 ## Filter to saved packages
 
-You can see the packages you have saved in your feed by selecting the **Maven Central** Source filter.
+You can view the packages you saved from upstreams by selecting the **Maven Central** source from the dropdown menu.
 
-:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot showing how to filter upstream sources.":::
+:::image type="content" source="media/maven-central-packages.png" alt-text="A screenshot showing how to filter for packages from Maven Central.":::
 
 ## Related articles
 
