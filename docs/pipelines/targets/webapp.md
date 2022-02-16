@@ -7,8 +7,7 @@ ms.assetid:
 ms.custom: seodec18, contperf-fy22q1, devx-track-azurecli
 ms.author: jukullam
 author: juliakm
-ms.date: 01/06/2022 
-ms.devlang: azurecli
+ms.date: 01/06/2022
 monikerRange: '>= tfs-2017'
 ---
 

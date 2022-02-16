@@ -4,8 +4,7 @@ description: Continuous integration and deployment (CI/CD) to a PHP web app on L
 ms.topic: tutorial
 ms.custom: freshness-fy22q2, devx-track-azurecli
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
-ms.date: 12/22/2021 
-ms.devlang: azurecli
+ms.date: 12/22/2021
 monikerRange: 'azure-devops'
 ---
 
