@@ -4,7 +4,7 @@ description: Configure Artifacts permissions for feeds, views, and pipelines
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/06/2021
+ms.date: 02/16/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
@@ -17,11 +17,14 @@ With Azure Artifacts you can publish, consume, and store different types of pack
 
 ## Configure Azure Artifacts settings
 
-Feed owners have the ability to specify who can create or administer Artifacts feeds. The settings icon will not be visible if you don't have the right permissions. To access the settings panel, select **Artifacts** from within your project, and then select the **Azure Artifacts settings** icon on the right side of the screen.
+Feed owners can specify who can create and administer Artifacts feeds. To access Azure Artifacts settings, select the **Azure Artifacts settings** icon on the right.
 
-:::image type="content" source="media/artifacts-settings-button.png" alt-text="Screenshot showing the Artifacts settings icon":::
+:::image type="content" source="media/azure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings":::
 
-By default, everyone in the same organization have the permission to create new feeds. A user who creates a feed is both an owner and an administrator of that feed.
+> [!NOTE]
+> The Azure Artifacts settings icon will not be visible if you don't have the right permissions.
+
+By default, everyone in the same organization can create new feeds. A user who creates a feed is both an owner and an administrator of that feed.
 
 1. Users in the same organization are able to create new feeds.
 
