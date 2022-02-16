@@ -51,17 +51,15 @@ By default, everyone in the same organization can create new feeds. A user who c
 
 ::: moniker range=">= azure-devops-2019"
 
-2. Select **Permissions**.
+2. Select **Permissions**, and then select **Add users/groups**.
 
-    :::image type="content" source="media/editfeeddialog-azure-devops-newnav.png" alt-text="Screenshot showing feed permissions.":::
+    :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot showing the feed's permissions.":::
 
-3. Select **Add users/groups**.
-
-    :::image type="content" source="media/add-users-groups.png" alt-text="Screenshot showing the add users/groups button.":::
-
-4. Add new user(s)/group(s), and then select their access role. Select **Save** when you are done.
+3. Add new user(s)/group(s), and then select their **Role**.
 
     :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
+
+4. Select **Save** when you are done.
 
 ::: moniker-end
 
@@ -117,7 +115,7 @@ You can restrict access to a view by changing its visibility to **specific peopl
 
 After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
 
-:::image type="content" source="media/view-settings.png" alt-text="Screenshot showing views settings.":::
+:::image type="content" source="media/edit-views.png" alt-text="A screenshot showing the access permissions for the preRelease view.":::
 
 > [!IMPORTANT]
 > Views inherit their permissions from the parent feed. Setting a view's visibility to **Specific people** without specifying users or groups will default the view's permissions back to its parent's feed permissions.
