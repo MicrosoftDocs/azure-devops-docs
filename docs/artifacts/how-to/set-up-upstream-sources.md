@@ -3,7 +3,7 @@ title: Set up upstream sources for your feed
 description: How to configure upstream sources for your Azure Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 02/16/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -69,8 +69,6 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select **Add** when you are done.
 
-    :::image type="content" source="../media/feed-org-upstream.png" alt-text="Screenshot showing how to add a feed in your organization as an upstream source.":::
-
 ## Add a feed in a different organization as an upstream source
 
 > [!NOTE]
@@ -89,8 +87,6 @@ With upstream sources, you can use a single feed to store the packages you gener
 1. Select the **Package type(s)** you want to use and enter an **Upstream source name**.
 
 1. Select **Add** when you are done.
-
-    :::image type="content" source="../media/feed-outorg-upstream.png" alt-text="Screenshot showing how to add a feed in a different organization as an upstream source.":::
 
 ## Example: install NuGet packages from upstream sources with Visual Studio
 
