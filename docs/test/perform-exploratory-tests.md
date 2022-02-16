@@ -127,7 +127,7 @@ the topic [TF31002: Unable to connect](../organizations/projects/tf31002-unable-
 
 ## Related articles
 
-*  [FAQs for manual testing](reference-qa.md#tandfext)
+*  [FAQs for manual testing](reference-qa.yml#tandfext)
 
 ## Next step
 
