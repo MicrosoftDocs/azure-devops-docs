@@ -87,7 +87,7 @@ You can create your own views or rename and delete existing ones from your feed'
 
 1. Select the gear icon :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to access your feed's settings.
 
-    :::image type="content" source="../media/editfeed-azure-devops-newnav.png" alt-text="Screenshot showing how to access the feed's settings.":::
+    :::image type="content" source="../media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings.":::
 
 1. Select **Views**.
 
