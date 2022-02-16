@@ -7,8 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 07/21/2021 
-ms.devlang: azurecli
+ms.date: 07/21/2021
 monikerRange: ">= azure-devops-2019"
 ---
 
