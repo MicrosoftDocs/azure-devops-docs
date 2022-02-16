@@ -318,6 +318,6 @@ Use the **Extensions** page to manage installed extensions.
 
 ## Related articles
 
-- [Uninstall or disable extensions](how-to/uninstall-disable-extensions-tfs.md)
+- [Uninstall or disable extensions](/azure/devops/marketplace/uninstall-disable-extensions)
 - [Request extensions](request-extensions.md)
 - [About permissions](../organizations/security/about-permissions.md)
