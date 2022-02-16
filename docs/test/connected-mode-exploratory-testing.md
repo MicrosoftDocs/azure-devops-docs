@@ -108,7 +108,7 @@ After you have connected, you are ready to begin testing your app.
 
    ![Save the bug or task](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   > You can also [add your findings to an existing similar bug](reference-qa.md#addsimilar). 
+   > You can also [add your findings to an existing similar bug](reference-qa.yml#addsimilar). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. It shows all the screenshots, videos, and notes 
@@ -128,7 +128,7 @@ After you have connected, you are ready to begin testing your app.
 
    ![The bug or task in TS or TFS](media/connected-mode-exploratory-testing/create-bugs-10.png)
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
  
 <a name="create-testcase"></a>
 ## Create test cases
@@ -175,5 +175,5 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
 

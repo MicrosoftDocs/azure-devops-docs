@@ -118,13 +118,13 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
       (deprecated) 
    :::column-end:::
    :::column span="1":::
-      ✔️ (Clone plan)
+      ✔️ ([Clone plan](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases))
    :::column-end:::
    :::column span="1":::
-      ✔️ (Copy a test suite)
+      ✔️ ([Copy a test suite](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases))
    :::column-end:::
    :::column span="1":::
-      ✔️ (Create copy)
+      ✔️ ([Create copy](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases))
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -133,13 +133,13 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
       **TCM CLI** <sup>2</sup>   
    :::column-end:::
    :::column span="1":::
-      ✔️ ([Clone](#clone-test-plan))
+      ✔️ ([Clone](#clone-test-plan&tabs=tcm-cli))
    :::column-end:::
    :::column span="1":::
-      ✔️ ([Clone](#clone-test-suite))
+      ✔️ ([Clone](#clone-test-suite&tabs=tcm-cli))
    :::column-end:::
    :::column span="1":::
-      ✔️ ([Import automated](#import-test-cases))
+      ✔️ ([Import automated](#import-test-cases&tabs=tcm-cli))
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2019"

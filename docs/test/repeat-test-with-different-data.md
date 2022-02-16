@@ -235,7 +235,7 @@ For details, see [Supported configurations and platforms for coded UI tests and 
 
 ## Related articles
 
-* [FAQs for manual testing](reference-qa.md#repeatdifferent)
+* [FAQs for manual testing](reference-qa.yml#repeatdifferent)
 * [Overview of manual and exploratory testing](index.yml)
 * [Testing different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)
