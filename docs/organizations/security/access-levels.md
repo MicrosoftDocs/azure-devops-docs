@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 09/07/2021
+ms.date: 02/16/2022
 ---
 
 
@@ -36,13 +36,13 @@ Assign users or groups of users to one of the following access levels:
 
 ::: moniker range="azure-devops"
 
-- **Stakeholder**: Can be assigned to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features. For feature access details, see [Stakeholder access quick reference](stakeholder-access.md). 
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
-- **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
-- **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
+- **Basic + Test Plans**: Provides access to all features included in **Basic**, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
+- **Stakeholder**: Can be assigned to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features. For feature access details, see [Stakeholder access quick reference](stakeholder-access.md). 
+- **Visual Studio Subscriber**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign **Basic** or **Stakeholder**, they also receive their Visual Studio subscription benefits upon sign-in.
 
 > [!TIP]
-> As a best practice when adding new users, we recommend assigning the Visual Studio subscriber level when appropriate (as opposed to Basic) to prevent being charged the Basic rate before the user signs in for the first time.
+> As a best practice when adding new users, we recommend assigning the **Visual Studio Subscriber** level when appropriate (as opposed to Basic) to prevent being charged the **Basic** rate before the user signs in for the first time.
 
 ::: moniker-end  
 
@@ -74,10 +74,14 @@ Assign users or groups of users to one of the following access levels:
 - **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
 - **VS Enterprise** (TFS 2017.1 and later versions): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 
-
 ::: moniker-end
 
+::: moniker range="<= tfs-2015"
 
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
+- **Advanced**: Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
+::: moniker-end
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
@@ -686,17 +690,17 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 
 You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
-| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
-| --------------------------|-----------------------------|-----------|
-| Stakeholder | stakeholder | none | 
-| Basic              | express  | none | 
-| Basic + Test Plans | advanced | none | 
-| Visual Studio subscriber | none | eligible | 
-| Visual Studio Enterprise | none | enterprise | 
+| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | 
+| ------------------------------------------------------|--------------------|----------------|------------------|
+| Basic                                                 | express            | account        | none             | 
+| Basic + Test Plans                                    | advanced           | account        | none             | 
+| Visual Studio Subscriber                              | none               | msdn           | eligible         | 
+| Stakeholder                                           | stakeholder        | account        | none             | 
+| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise       | 
 
 
  > [!NOTE]   
- > The `earlyAdopter` AccountLicenseType is an internal value used solely by Microsoft.  
+ > The `earlyAdopter` accountLicenseType is an internal value used solely by Microsoft.  
 
 ::: moniker-end
 
@@ -704,13 +708,14 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
 You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
-| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
-| --------------------------|-----------------------------|
-| Stakeholder | stakeholder | none | 
-| Basic              | express  | none | 
-| Basic + Test Plans | advanced | none | 
-| Visual Studio subscriber | none | eligible | 
-| Visual Studio Enterprise | none | enterprise | 
+| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | 
+| ------------------------------------------------------|--------------------|----------------|------------------|
+| Basic                                                 | express            | account        | none             | 
+| Basic + Test Plans                                    | advanced           | account        | none             | 
+| Visual Studio Subscriber                              | none               | msdn           | eligible         | 
+| Stakeholder                                           | stakeholder        | account        | none             | 
+| VS Enterprise                                         | none               | msdn           | enterprise       | 
+
 
 ::: moniker-end
 
@@ -718,13 +723,12 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 
 You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
-| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
-| --------------------------|-----------------------------|
-| Stakeholder | stakeholder | none | 
-| Basic       | express  | none | 
-| Advanced | advanced | none | 
-| MSDN Platforms | none | platforms | 
-| VS Enterprise | none | enterprise | 
+| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | 
+| ------------------------------------------------------|--------------------|----------------|------------------|
+| Basic                                                 | express            | account        | none             | 
+| Advanced                                              | advanced           | account        | none             | 
+| Stakeholder                                           | stakeholder        | account        | none             | 
+| VS Enterprise                                         | none               | msdn           | enterprise       | 
 
 ::: moniker-end
 
