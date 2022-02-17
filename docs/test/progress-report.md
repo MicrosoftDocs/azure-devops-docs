@@ -83,6 +83,6 @@ Use the filter barto filter by **Test Suites**, **Configuration**, **Tester**, T
 ## Related articles
 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.md#trackstatus)
+- [FAQs for manual testing](reference-qa.yml#trackstatus)
 
 
