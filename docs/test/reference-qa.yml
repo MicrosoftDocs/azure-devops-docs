@@ -23,10 +23,12 @@ summary: |
   - [Set test retention policies](how-long-to-keep-test-results.md)
   - [Install the Test & Feedback extension](perform-exploratory-tests.md)
 
+  <a name="testplans" /> 
+
 sections:
 
   - name: Test plans and test suites
-    <a name="testplans"></a>
+    
     questions: 
 
            <a name="query-based-suites"></a> 
