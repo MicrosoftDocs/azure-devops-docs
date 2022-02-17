@@ -2,7 +2,7 @@
 title: YAML pipeline editor guide
 description: Learn how to author and edit pipelines with the YAML pipeline editor.
 ms.topic: reference
-ms.date: 02/16/2022
+ms.date: 02/17/2022
 author: steved0x
 ms.author: sdanie
 monikerRange: '>=azure-devops-2019'
@@ -38,7 +38,7 @@ To access the YAML pipeline editor, do the following steps.
 
 4. Make edits to your pipeline using [Intellisense](#use-keyboard-shortcuts) keyboard shortcuts and the [task assistant](#use-task-assistant) for guidance.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019-1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019-1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
 
 :::moniker-end
 
@@ -143,8 +143,6 @@ With Azure DevOps 2019 Update 1, you can manage your pipeline variables using th
 
 :::moniker-end
 
-:::moniker range=">= azure-devops-2019"
-
 ### YAML pipeline
 
 To manage pipeline variables, do the following steps.
@@ -161,8 +159,6 @@ To manage pipeline variables, do the following steps.
 
    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
-:::moniker-end
-
 ### Pipeline settings UI
 
 To manage pipelines variables in the UI, do the following steps.
@@ -174,8 +170,6 @@ To manage pipelines variables in the UI, do the following steps.
 2. Choose **Variables**.
 
    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-variables.png" alt-text="Pipeline settings UI for variables.":::
-
-:::moniker-end
 
 For more information on working with pipeline variables, see [Define variables](../process/variables.md).
 
