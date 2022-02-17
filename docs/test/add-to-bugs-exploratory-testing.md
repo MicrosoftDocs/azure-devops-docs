@@ -59,7 +59,7 @@ your findings to an existing bug.
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans.
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 

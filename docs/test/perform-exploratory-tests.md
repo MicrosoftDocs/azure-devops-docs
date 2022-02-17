@@ -118,11 +118,11 @@ update it automatically.
    - Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
  
    **[Standalone mode](standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to Azure DevOps or TFS is required. Take notes and screenshots with
+   Available to everyone. No connection to Azure DevOps is required. Take notes and screenshots with
    inline annotations to capture issues. Create bugs and export
    a session report to share findings.
  
-If you have problems connecting to Azure DevOps or TFS, you may find
+If you have problems connecting to Azure DevOps, you may find
 the topic [TF31002: Unable to connect](../organizations/projects/tf31002-unable-connect-tfs.md) useful.
 
 ## Related articles

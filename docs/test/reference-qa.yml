@@ -61,12 +61,13 @@ sections:
 
             <a name="ViewAssignedTests" />
 
-      - question: Why do I see the wrong test suite and tests when I select **View Tests** from the notification email about tests that are assigned to me?
+      - question: Why do I see the wrong test suite and tests when I select View Tests from the notification email about tests that are assigned to me?
         answer: |
             This situation might happen if you were prompted to enter credentials for Azure DevOps when you clicked the link.
             Without signing out of Azure DevOps, select **View Tests** again to see the correct test suite and tests.
 
-            <a name="testcases"></a>
+            <a name="testcases" />
+            <a name="create-manual-test-cases" />
 
   - name: Test cases
 
@@ -131,7 +132,8 @@ sections:
 
       - question: How can I edit or delete a chart?
         answer: |
-            Choose :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  **Configure**  and s the option you want from the chart's context menu.
+            Choose :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  **Configure**  and the option you want from the chart's context menu.  
+
             :::image type="content" source="media/track-test-status/test-chart-options-context-menu.png" alt-text="Screenshot of test tracking chart configure options menu.":::
 
             <a name="repeatdifferent"></a>
@@ -179,7 +181,8 @@ sections:
         answer: |
             See [Set retention policies for builds, releases, and tests](../pipelines/policies/retention.md).
 
-            <a name="tandfext"></a>
+            <a name="tandfext" />
+            <a name="recording-playback" />
 
   - name: Test & Feedback extension 
 
@@ -187,7 +190,7 @@ sections:
 
       - question: How do I play the video recordings I created with the extension?
         answer: |
-            The video recordings created by the Test &amp; Feedback extension can be viewed in [Google Chrome](https://www.google.com/chrome/) browser and in the [VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
+            YOu can view the video recordings created by the Test & Feedback extension in [Google Chrome](https://www.google.com/chrome/) browser and in the [VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
 
       - question: Does the extension support Team Foundation Server?
         answer: |
@@ -212,8 +215,8 @@ sections:
 
 additionalContent: | 
   ## Related articles
-  - [Create test plans and test suites](create-a-test-plan.md)
-  - [Create manual test cases](create-test-cases.md)
+  - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
+  - [Run manual tests](run-manual-tests.md)
   - [Track test status](track-test-status.md)
   - [Repeat a test with different data](repeat-test-with-different-data.md)
   - [Set test retention policies](how-long-to-keep-test-results.md)
