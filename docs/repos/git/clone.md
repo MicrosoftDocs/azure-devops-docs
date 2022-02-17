@@ -68,11 +68,11 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 1. In Team Explorer, open the **Connect** page by selecting the **Connect** button. Choose **Manage Connections** then **Connect to Project**.
 
-   ![Cloning Azure Repos Git repositories in Visual Studio](media/gitquickstart-vs2017/manage-connections.png)
+   ![Cloning Azure Repos Git repositories in Visual Studio](media/gitquickstart/visual-studio-2017/manage-connections.png)
 
 1. In **Connect to a Project**, select the repo you want to clone from the list and select **Clone**.
 
-   ![Cloning a Git Repository from a connected Azure DevOps organization](media/gitquickstart-vs2017/vs2017-connect-dialog.png)
+   ![Cloning a Git Repository from a connected Azure DevOps organization](media/gitquickstart/visual-studio-2017/connect-dialog.png)
 
    If you don't see your repo listed, filter the list to find it.
    You may need to add an Azure DevOps Server where the repo is hosted.
