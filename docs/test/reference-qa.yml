@@ -24,6 +24,7 @@ summary: |
   - [Install the Test & Feedback extension](perform-exploratory-tests.md)
 
   <a name="testplans" /> 
+  <a name="query-based-suites"></a> 
 
 sections:
 
@@ -31,15 +32,12 @@ sections:
     
     questions: 
 
-           <a name="query-based-suites"></a> 
-
       - question: What are query-based test suites?
         answer: |
             <a name="query-based-suites"></a> 
             Query-based test suites use a query to group together test cases that have a particular characteristic, for example, all tests that have Priority=1. The test suite automatically includes every test case that is returned by the query.
 
             <a name="copyclonetce"></a>
-
 
       - question: Can I copy or clone test plans and test suites?
         answer: |
