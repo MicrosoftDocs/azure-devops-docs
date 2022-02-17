@@ -36,7 +36,7 @@ To access the YAML pipeline editor, do the following steps.
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit-2019-1.png" alt-text="Azure Pipelines YAML edit button in Azure DevOps Server 2019 Update 1.":::
 
-4. Make edits to your pipeline using [Intellisense](#keyboard-shortcuts) keyboard shortcuts and the [task assistant](#task-assistant) for guidance.
+4. Make edits to your pipeline using [Intellisense](#use-keyboard-shortcuts) keyboard shortcuts and the [task assistant](#use-task-assistant) for guidance.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019-1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
 
@@ -55,7 +55,7 @@ To access the YAML pipeline editor, do the following steps.
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit.png" alt-text="Azure Pipelines YAML edit button.":::
 
-4. Make edits to your pipeline using [Intellisense](#keyboard-shortcuts) and the [task assistant](#task-assistant) for guidance.
+4. Make edits to your pipeline using [Intellisense](#use-keyboard-shortcuts) and the [task assistant](#use-task-assistant) for guidance.
 
     :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor.png" alt-text="YAML pipeline editor.":::
 
@@ -83,35 +83,35 @@ The task assistant provides a method for adding tasks to your YAML pipeline.
 
 - To display the task assistant, edit your YAML pipeline and choose **Show assistant**.
 
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-show.png" alt-text="Show ask assistant for editing YAML pipelines.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-show.png" alt-text="Show ask assistant for editing YAML pipelines.":::
 
 - To hide the task assistant, choose **Hide assistant**.
 
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-hide.png" alt-text="Hide task assistant for editing YAML pipelines.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-hide.png" alt-text="Hide task assistant for editing YAML pipelines.":::
 
 - To use the task assistant, browse or search for tasks in the **Tasks** pane. 
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-search.png" alt-text="Task assistant search.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-search.png" alt-text="Task assistant search.":::
 
-    - Select the desired task and configure its inputs.
+- Select the desired task and configure its inputs.
 
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-add.png" alt-text="Task assistant add.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-add.png" alt-text="Task assistant add.":::
 
-    - Choose **Add** to insert the task YAML into your pipeline.
+- Choose **Add** to insert the task YAML into your pipeline.
 
 :::moniker range="= azure-devops-2019"
 
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019-1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019-1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
 
-    - Edit the inserted YAML to make more configuration changes to the task.
+- Edit the inserted YAML to make more configuration changes to the task.
 
 :::moniker-end
 
 :::moniker range=">= azure-devops-2020"
 
-    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
 
-    - You can edit the YAML to make more configuration changes to the task, or you can choose **Settings** above the task in the YAML pipeline editor to configure the inserted task in the task assistant.
+- You can edit the YAML to make more configuration changes to the task, or you can choose **Settings** above the task in the YAML pipeline editor to configure the inserted task in the task assistant.
 
 :::moniker-end
 
@@ -145,15 +145,13 @@ With Azure DevOps 2019 Update 1, you can manage your pipeline variables using th
 
 :::moniker range=">= azure-devops-2019"
 
-:::moniker range=">= azure-devops-2020"
-
 ### YAML pipeline
 
 To manage pipeline variables, do the following steps.
 
 1. Edit your YAML pipeline and choose **Variables** to manage pipeline variables.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-variables-button.png" alt-text="Manage pipeline variables button.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-variables-button.png" alt-text="Manage pipeline variables button.":::
 
 2. Choose from the following functions:
     - **New variable**: to add your first variable.
@@ -161,7 +159,7 @@ To manage pipeline variables, do the following steps.
     - *Variable name* to edit a variable.
     - **Delete** :::image type="icon" source="../../media/icons/delete-icon-bin.png":::: to delete a variable.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
 :::moniker-end
 
@@ -171,11 +169,11 @@ To manage pipelines variables in the UI, do the following steps.
 
 1. Edit the pipeline and choose **More actions** > **Triggers**.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Pipeline settings UI menu.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-menu.png" alt-text="Pipeline settings UI menu.":::
 
 2. Choose **Variables**.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-variables.png" alt-text="Pipeline settings UI for variables.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-variables.png" alt-text="Pipeline settings UI for variables.":::
 
 :::moniker-end
 
