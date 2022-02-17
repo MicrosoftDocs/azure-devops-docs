@@ -7,7 +7,6 @@ ms.topic: reference
 ms.author: sdanie
 author: steved0x
 ms.date: 01/18/2019
-monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for Test Case Management reporting
