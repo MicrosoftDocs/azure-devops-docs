@@ -59,10 +59,9 @@ sections:
             The test case still exists in your project, but the test case is removed from the test suite.
             Also, it's no longer linked to the backlog item for that test suite.
 
-            <a name="ViewAssignedTests"></a>
+            <a name="ViewAssignedTests" />
 
       - question: Why do I see the wrong test suite and tests when I select **View Tests** from the notification email about tests that are assigned to me?
-      - question: What happens when I delete a test case from a requirement-based test suite?
         answer: |
             This situation might happen if you were prompted to enter credentials for Azure DevOps when you clicked the link.
             Without signing out of Azure DevOps, select **View Tests** again to see the correct test suite and tests.
