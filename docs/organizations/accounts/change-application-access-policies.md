@@ -79,7 +79,7 @@ You can enable or disable the following security policy.
 ## Prerequisites
 
 To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+[How do I find the organization Owner?](../security/look-up-organization-owner.md)
 
 [!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 

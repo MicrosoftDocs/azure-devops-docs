@@ -21,7 +21,7 @@ After you delete your organization, it's disabled but available for 28 days. If 
 ## Prerequisites
 
 * An organization deleted within the last 28 days.
-* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/look-up-organization-owner.md)
 
 ## Recover organization
 

@@ -30,7 +30,7 @@ can add users who are already in the organization to their team       |
 
 ## Prerequisites
 
-You must be a Project Collection Administrator to manage this policy.
+- You must be a member of the **Project Collection Administrator** group to manage this policy. To get added, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 ## Turn off policy
 
@@ -54,4 +54,5 @@ Now, only Project Collection Administrators can invite new users to Azure DevOps
 - [Permission lookup guide](permissions-lookup-guide.md) 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)

@@ -21,7 +21,7 @@ A privacy policy is a legal requirement for all websites and apps that collect o
 
 ## Prerequisites
 
-You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md) to add a privacy policy URL.
+You must be [an organization owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md) to add a privacy policy URL.
 
 ## Add your privacy policy URL in Azure DevOps
 

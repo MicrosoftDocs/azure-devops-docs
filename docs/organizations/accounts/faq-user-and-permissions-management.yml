@@ -39,7 +39,7 @@ sections:
       - question: |
           Q: Why can't I manage users?
         answer: |
-          A: You must be a Project Collection Administrator or [organization Owner](../security/lookup-organization-owner-admin.md) to manage users at the organization level. To get added, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md)
+          A: You must be a member of the Project Collection Administrators group or [Organization owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
           
           <a name="find-owner"></a>
           
@@ -59,17 +59,17 @@ sections:
       - question: |
           Q: How do I find a Project Collection Administrator?
         answer: |
-          A: If you have at least Basic access, you can find your [Project Collection Administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
+          A: If you have at least **Basic** access, you can find a member of the **Project Collection Administrators** group in your organization's or collection's settings.
           
           ::: moniker range=">= azure-devops-2019"
           
-          For more information, see [Show members of the Project Collection Administrators group](../security/lookup-organization-owner-admin.md#show-members-of-the-project-collection-administrators-group).
+          For more information, see [Look up a project collection administrator](../security/look-up-project-collection-administrators.md).
           
           ::: moniker-end
           
           ::: moniker range="<= tfs-2018"  
           
-          For more information, see [Show members of the Project Administrators group](../security/lookup-organization-owner-admin.md#show-members-of-the-project-administrators-group).
+          For more information, see [Look up a project administrator](../security/look-up-project-administrators.md).
           
           ::: moniker-end
           

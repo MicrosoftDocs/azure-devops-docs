@@ -32,7 +32,7 @@ The following types of users can join your Azure DevOps Services organization fo
 ## Prerequisites
 
 * You must have an organization. If you don't have an organization yet, [create one](create-organization.md).
-* You must be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). Organization owners are automatically members of this group.
+* You must be a member of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md). Organization owners are automatically members of this group.
 
 For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](organization-management.md#add-users).
 
@@ -152,13 +152,13 @@ ID                                    Display Name          Email               
 ```
 
 
-You can also add the user to an Azure DevOps Group - Project Contributors, the default security group for people who contribute to your project. To learn more, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+You can also add the user to the project-level **Contributors** group, the default Azure DevOps security group for people who contribute to your project. To learn more, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
 
 ```azurecli
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
 ```
 
-You can see all security groups in a project using the [az devops security group list](/cli/azure/devops/security/group#az-devops-security-group-list) command.
+You can see all security groups in a project using the [az devops security group list](../security/add-manage-security-groups.md) command.
 
 ::: moniker-end
 
@@ -334,7 +334,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 5. Open **Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to.
 
-   For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+   For more information, see [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md).
 
 ## FAQ
 

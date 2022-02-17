@@ -70,7 +70,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git](../repos/git/set-git-repository-permissions.md)">Git</a><br/>- <a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
+- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git](../repos/git/set-git-repository-permissions.md)">Git</a><br/>- <a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[Test](../organizations/security/change-project-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
 
 </td>
 </tr>
@@ -1253,7 +1253,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><a href="../test/test-different-configurations.md" data-raw-source="[Specify a combination of hardware and software](../test/test-different-configurations.md)">Specify a combination of hardware and software</a> that represents a user or machine environment in which your app runs.</p>
 
 <p><b>Test permissions</b></p>
-<p>Set permissions on who can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage test configurations, test environments, and publish and delete test results](../organizations/security/set-project-collection-level-permissions.md)">manage test configurations, test environments, and publish and delete test results</a>.</p>
+<p>Set permissions on who can <a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[manage test configurations, test environments, and publish and delete test results](../organizations/security/change-project-level-permissions.md)">manage test configurations, test environments, and publish and delete test results</a>.</p>
 
 
 
@@ -2044,12 +2044,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project admin context</b></p>
-<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)"> manage permissions</a>. From any project hub, choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context.</p>
+<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-project-level-permissions.md)"> manage permissions</a>. From any project hub, choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context.</p>
 <img src="media/features/alm-feature-admin-context.png" alt="Admin context"/><br/><br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context, and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can <a href="../organizations/security/change-organization-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context, and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2181,7 +2181,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li><a href="../repos/git/branch-permissions.md" data-raw-source="[Git branches](../repos/git/branch-permissions.md)">Git branches</a></li>
 <li><a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC source code and folders](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC source code and folders</a></li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build](../pipelines/policies/set-permissions.md)">Build</a></li>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a>)</li>
+<li><a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[Test](../organizations/security/change-project-level-permissions.md)">Test</a>)</li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Release](../pipelines/policies/set-permissions.md)">Release</a></li>
 </ul>
 <br/>
@@ -2207,8 +2207,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Manage administrative permissions </b></p>
 <p>Add users to one of the following built-in groups to provide them permissions assigned to that group: </p>
 <ul>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>
+<li><a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/change-project-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
+<li><a href="../organizations/security/change-organization-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/change-organization-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>
 <li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator)">Azure DevOps Server Administrators</a>, who manage on-premises application servers </li>
 </ul>
 <br/>

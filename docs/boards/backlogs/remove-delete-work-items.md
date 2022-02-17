@@ -408,7 +408,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
-- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)  
 - [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 ::: moniker-end
 
@@ -419,7 +419,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
-- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)  
 - [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 
 ::: moniker-end

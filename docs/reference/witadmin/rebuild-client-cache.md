@@ -31,7 +31,7 @@ You can force a rebuild of the cache on each client computer the next time it co
 
 ## Prerequisites 
   
-- To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** group or the **Project Administrators** group for the project collection that you want to manage. See [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+- To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** group or the **Project Administrators** group for the project collection that you want to manage. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]  
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  

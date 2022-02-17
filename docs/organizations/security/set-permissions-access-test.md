@@ -64,7 +64,8 @@ For more information, see the following articles:
 - [About access levels](access-levels.md)
 - [Add organization users and manage access](../accounts/add-organization-users.md)
 - [Change access levels for users or groups](change-access-levels.md)  
-- [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md)  
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -78,7 +79,8 @@ For more information, see the following articles:
 - [About access levels](access-levels.md)
 - [Add a server-level administrator](/azure/devops/server/admin/add-administrator) 
 - [Change access levels for users or groups](change-access-levels.md)  
-- [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md)  
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 ::: moniker-end
 
 <a id="license"></a>
@@ -135,7 +137,7 @@ You must be a member of the Project Administrators group or have the [**Delete t
 
 For more information, see [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md). 
 
-As a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
+As a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. To learn how to access project-level **Security**, see [Change project-level permissions](change-project-level-permissions.md).
 
 ::: moniker-end
 
@@ -175,7 +177,7 @@ In this example, we grant members assigned to the Test Admin group permissions t
 
 Test controllers are used to perform load testing. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests).
 
-To set permissions for managing test controllers, open **Organization** settings and choose **Security** or **Permissions**. Choose the group you want to grant permissions. To learn how to access organization or collection-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+To set permissions for managing test controllers, open **Organization** settings and choose **Security** or **Permissions**. Choose the group you want to grant permissions. To learn how to access organization or collection-level **Security**, see [Change project collection-level permissions](change-organization-collection-level-permissions.md).
 
 In this example, we grant members assigned to the Team Collection Admin group permissions to manage test controllers.  
 

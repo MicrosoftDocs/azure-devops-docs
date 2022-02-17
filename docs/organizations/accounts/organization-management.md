@@ -189,9 +189,10 @@ You can then pay for more users with Basic access, buy more services, and purcha
    
    #### Manage permissions
    
-   - [Add project or organization-level administrators ](../security/set-project-collection-level-permissions.md)
+   - [Change project-level permissions](../security/change-project-level-permissions.md)
+   - [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)  
    - [Add a team admin](../settings/add-team-administrator.md)
-   - [Change individual permissions](../security/change-individual-permissions.md)
+   - [Request an increase in permission levels](../security/request-changes-permissions.md)
    - [Grant or restrict permissions](../security/restrict-access.md)
    - [Resources granted to project members](../projects/resources-granted-to-project-members.md)
    
@@ -202,7 +203,8 @@ You can then pay for more users with Basic access, buy more services, and purcha
 
 * [About access levels](../security/access-levels.md)
 * [Default permissions and access](../security/permissions-access.md)
-* [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md)
+* [Change project-level permissions](../security/change-project-level-permissions.md)
+* [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)
 * [Add a user as a team administrator](../settings/add-team-administrator.md)
 * [About using Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
 * [Troubleshoot permissions and access with Azure AD](faq-azure-access.yml)
