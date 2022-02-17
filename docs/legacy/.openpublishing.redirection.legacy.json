@@ -1653,7 +1653,7 @@
     },
     {
       "source_path_from_root": "/docs/setup-admin/add-administrator-tfs.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {
@@ -2998,7 +2998,7 @@
     },
     {
       "source_path_from_root": "/docs/tfs-server/tfs/admin/change-permission-levels.md",
-      "redirect_url": "/azure/devops/organizations/security/change-individual-permissions",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -6328,12 +6328,12 @@
     },
     {
       "source_path_from_root": "/docs/accounts/add-administrator-project-collection.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/accounts/add-administrator-team-project.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {
@@ -6578,7 +6578,7 @@
     },
     {
       "source_path_from_root": "/docs/tfs-server/admin/change-permission-levels.md",
-      "redirect_url": "/azure/devops/organizations/security/change-individual-permissions",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -8503,7 +8503,7 @@
     },
     {
       "source_path_from_root": "/docs/security/change-individual-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/change-individual-permissions",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -8548,7 +8548,7 @@
     },
     {
       "source_path_from_root": "/docs/security/lookup-account-owner-admin.md",
-      "redirect_url": "/azure/devops/organizations/security/lookup-organization-owner-admin",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -8598,7 +8598,7 @@
     },
     {
       "source_path_from_root": "/docs/security/set-project-collection-level-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {

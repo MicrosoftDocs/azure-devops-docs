@@ -95,7 +95,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	> [!div class="mx-imgBorder"]  
 	> ![Open Settings>Developer settings>Oauth Apps and choose New OAuth App.](media/github-ent/ghe-settings-dev-oauth.png)  
 
-2. Fill out the form to register your Azure DevOps Server application.  
+1. Fill out the form to register your Azure DevOps Server application.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Register your Azure DevOps Server project](media/github-ent/ghe-register-app.png)  
@@ -117,9 +117,9 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 	`https://tfs.contoso.com/MyCollection/_admin/oauth2/callback`
 
-3. Choose **Register application**.
+1. Choose **Register application**.
 
-4. Upon success, you'll see a page that provides the **Client ID** and **Client Secret** for your registered OAuth application. 
+1. Upon success, you'll see a page that provides the **Client ID** and **Client Secret** for your registered OAuth application. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Client ID and Client Secret for your registered OAuth application.](media/github-ent/ghe-register-app-success.png)  
@@ -136,12 +136,12 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 1. Add the GitHub Enterprise Oauth configuration to your Azure DevOps Server collection. 
 
-2. Open <strong>Admin settings>Oauth configurations</strong>, and choose <strong>Add Oauth configuration</strong>.  
+1. Open <strong>Admin settings>Oauth configurations</strong>, and choose <strong>Add Oauth configuration</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Admin Settings>OAuth configurations](media/github-ent/open-admin-settings-server-oauth-add.png)  
 
-3. Fill in the form that appears, and then choose <strong>Create</strong>.
+1. Fill in the form that appears, and then choose <strong>Create</strong>.
 
 	> [!div class="mx-imgBorder"]  
 	> ![OAuth configuration dialog](media/github-ent/add-oauth-configuration.png)  
