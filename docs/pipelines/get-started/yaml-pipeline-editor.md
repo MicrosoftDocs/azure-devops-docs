@@ -101,7 +101,7 @@ The task assistant provides a method for adding tasks to your YAML pipeline.
 
 :::moniker range="= azure-devops-2019"
 
-> :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019-1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019-1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
 
 - Edit the inserted YAML to make more configuration changes to the task.
 
@@ -109,7 +109,7 @@ The task assistant provides a method for adding tasks to your YAML pipeline.
 
 :::moniker range=">= azure-devops-2020"
 
-> :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
+   :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
 
 - You can edit the YAML to make more configuration changes to the task, or you can choose **Settings** above the task in the YAML pipeline editor to configure the inserted task in the task assistant.
 
