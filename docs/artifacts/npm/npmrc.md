@@ -18,7 +18,7 @@ To authenticate with Azure Artifacts, we must first set up our config file. Npm 
 
 ## Project setup
 
-We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept locally to store our credentials. This enables you to share your project's **.npmrc** while keeping your credentials secure.
+We recommend using two **.npmrc_** files, the first one we'll use to authenticate to Azure Artifacts, and the second one should be kept locally to store our credentials. This enables you to share your project's **.npmrc** while keeping your credentials secure.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -73,7 +73,7 @@ On your development machine, place the second *.npmrc* file in your *$HOME* for 
 
 ### [Windows](#tab/windows/)
 
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch the credentials and inject them into your *%USERPROFILE%\\.npmrc*.  The easiest way to set this up is to install `vsts-npm-auth` globally and then add a run script to your *package.json*.
+If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fetch the credentials and inject them into your *%USERPROFILE%\\.npmrc*.  The easiest way to set this up is to install `vsts-npm-auth` globally and then add a run script to your *package.json*.
 
 - Install vsts-npm-auth globally:
 
@@ -173,7 +173,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing how to add your .npmrc file](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 ::: moniker-end
 
@@ -201,7 +201,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing how to add your .npmrc file to the npm authenticate task](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-1. Select **Save & queue** when you are done.
+1. Select **Save & queue** when you're done.
 
 ::: moniker-end
 
@@ -230,7 +230,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 
 - Command is not recognized:
 
-    If you are running into the following error:
+    If you're running into the following error:
     
     - Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
     - PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
@@ -244,7 +244,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 
 - Unable to authenticate:
 
-    If you are running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with the **-F** flag to reauthenticate.
+    If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with the **-F** flag to reauthenticate.
 
     ```Command
     vsts-npm-auth -config .npmrc -F
