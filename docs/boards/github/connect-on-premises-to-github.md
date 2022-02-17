@@ -7,16 +7,28 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019 < azure-devops'
-ms.date: 10/20/2021
+ms.date: 02/16/2022
 ---
 
-# Connect an on-premises Azure DevOps Server to GitHub Enterprise Server
+# Connect an on-premises Azure DevOps Server to a GitHub repo 
 
 [!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=2095009 --> 
 
+::: moniker range="azure-devops-2020"
+By connecting your Azure DevOps Server project to your GitHub repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.  
+
+To connect to GitHub.com repositories, you must install Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 By connecting your Azure DevOps Server project with your GitHub Enterprise Server repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub Enterprise for software development while using Azure Boards to plan and track your work. 
+::: moniker-end
+GitHub Enterprise Server
+
+
 
 > [!NOTE]   
 > On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops).
@@ -145,7 +157,8 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 You can connect up to 250 GitHub repositories to an Azure Boards project. 
 
 > [!NOTE]   
-> Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.
+> Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.  
+> Connection to GitHub.com repositories requires Azure DevOps Server 2020.1.1 Patch 2 or later version.
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
@@ -182,6 +195,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 #### Connect using OAuth  
 
 - Choose the configuration that you set up in [Step 4 of Register your OAuth configuration in Azure DevOps Server](#register-server-github-ent-oauth). Then, choose <strong>Connect</strong>. 
