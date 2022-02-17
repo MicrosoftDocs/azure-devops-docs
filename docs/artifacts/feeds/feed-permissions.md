@@ -124,19 +124,15 @@ After restricting your view's visibility to `specific people`, the access permis
 
 ## Pipelines permissions
 
-To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** set to *Contributor*. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor. The project-level build identity is named as follows:
+To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** role set to *Contributor*. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor. 
 
-`[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
+The project-level build identity is named as follows: `[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
 
-You can also use the **Allow project-scoped builds** feature to automatically set up permissions for your project-scoped build identity. To do so
-
-1. From within your feed, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
+1. From within your feed, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
 1. Select the **Permissions** tab.
 
-1. Select the ellipsis on the right, and then select **Allow project-scoped builds**.
-
-:::image type="content" source="media/project-scoped-builds.png" alt-text="Screenshot showing how to allow project-scoped builds.":::
+1. Select **Add users/groups**, and then add your build identity as a **Contributor**.
 
 > [!NOTE]
 > If you want to access a feed in a different project from your pipeline, you must set up the other project to grant read/write access to the build service.
