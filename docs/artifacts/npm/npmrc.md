@@ -146,7 +146,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-## Set up authentication
+## Authentication setup
 
 Azure Artifacts recommend using the `npmAuthenticate` task to set up authentication for your pipeline tasks. When using a task runner such as gulp or Grunt, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the *.npmrc*.
 
@@ -226,29 +226,29 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 > [!div class="mx-imgBorder"]
 > ![tip screenshot](../media/project-collection-contributor.png)
 
-## Troubleshooting
+## Troubleshoot
 
-- Command is not recognized:
+- **Command is not recognized**:
 
-    If you're running into the following error:
-    
-    - Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
-    - PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
-    
-    Then it's likely that the npm modules folder is not in your path. To fix this issue, rerun the Node.js setup and make sure that the `Add to PATH` options are selected.
-    
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to set up node.js](./media/node-setup.png)
-    
-    Alternatively, you can edit the PATH variable `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell) to add it to your path.
+If you're running into the following error:
 
-- Unable to authenticate:
+- Cmd: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
+- PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
 
-    If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with the **-F** flag to reauthenticate.
+Then it's likely that the npm modules folder is not in your path. To fix this issue, rerun the Node.js setup and make sure that the `Add to PATH` options are selected.
 
-    ```Command
-    vsts-npm-auth -config .npmrc -F
-    ```
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing how to set up node.js](./media/node-setup.png)
+
+Alternatively, you can edit the PATH variable `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell) to add it to your path.
+
+- **Unable to authenticate**:
+
+If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
+
+```Command
+vsts-npm-auth -config .npmrc -F
+```
 
 ## Related articles
 
