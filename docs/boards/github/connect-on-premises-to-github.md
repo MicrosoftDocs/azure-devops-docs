@@ -21,17 +21,20 @@ By connecting your Azure DevOps Server project to your GitHub repositories, you 
 
 To connect to GitHub.com repositories, you must install Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
 
+> [!NOTE]   
+> On-premises Azure DevOps Server 2020 supports integration with GitHub.com and GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops).
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 By connecting your Azure DevOps Server project with your GitHub Enterprise Server repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub Enterprise for software development while using Azure Boards to plan and track your work. 
-::: moniker-end
-GitHub Enterprise Server
-
-
 
 > [!NOTE]   
-> On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops).
+> On-premises Azure DevOps Server 2019 supports integration with GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops).
+
+::: moniker-end
+
+
 
 
 ## Prerequisites 
