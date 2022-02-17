@@ -105,7 +105,7 @@ You can control access to activities in Lab Management by changing the Lab plug-
   
 ## Related articles
 - [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
-- [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
+- [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md)
 - [Configure Lab Management with TFSLabConfig, Permissions](/previous-versions/azure/devops/server/lab-management/tfslabconfig-cmd)
 
  

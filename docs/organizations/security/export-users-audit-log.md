@@ -34,11 +34,11 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ::: moniker range="azure-devops"
 
-* You must be the organization Owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](./set-project-collection-level-permissions.md).
+* You must be the **Organization owner** or a member of the **Project Collection Administrators** group. See [Change project collection-level permissions](change-organization-collection-level-permissions.md)
   ::: moniker-end
 
   ::: moniker range="< azure-devops"
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators](/azure/devops/server/admin/add-administrator).
+* You must be a member of the Azure DevOps Server Administrators group. If you aren't a member, get added now. See [Add administrators](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
 
 ## Export a list of users

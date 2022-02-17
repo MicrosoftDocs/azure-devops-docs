@@ -341,7 +341,7 @@ There are a number of permissions that control select features for viewing, modi
 :::row-end:::
 
 
-To learn more about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Set permissions at the project- or collection-level](../organizations/security/set-project-collection-level-permissions.md). 
+To learn more about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Change project-level permissions](../organizations/security/change-project-level-permissions.md). 
 
 ## Export, import, and bulk update of test-specific work items 
 

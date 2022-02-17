@@ -84,7 +84,7 @@ For more information about permissions, see [Permissions and groups](permissions
 
 ## Trace a permission
 
-Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions. To trace a permission from the web portal, open the permission or security page for the corresponding level. For more information, see [Change individual permissions](change-individual-permissions.md).
+Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions. To trace a permission from the web portal, open the permission or security page for the corresponding level. For more information, see [Request an increase in permission levels](request-changes-permissions.md).
 
 
 ::: moniker range=" azure-devops"
@@ -154,7 +154,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Change individual permissions](change-individual-permissions.md).
+For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
 
 ## Refresh or reevaluate permissions
 
@@ -306,7 +306,7 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 ## Related articles
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
-- [Change individual or group permissions](change-individual-permissions.md)
+- [Request an increase in permission levels](request-changes-permissions.md)
 - [Security and permission management tools](security-tools-reference.md)  
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   

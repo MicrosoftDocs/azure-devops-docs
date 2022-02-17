@@ -22,9 +22,8 @@ install extensions from the [Azure DevOps Marketplace](https://marketplace.visua
 
 ## Prerequisites
 
-- You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) 
-and have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection). 
-If you don't have permissions, you can [request extensions](request-extensions.md) instead.
+- To install an extension, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. To learn more see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).  
+- If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 > [!NOTE]
 > To use an existing Azure subscription for billing,
@@ -101,17 +100,11 @@ for future Marketplace purchases.
 When you're disconnected from Azure DevOps Server, you can install free and preview extensions by downloading them, uploading them to your Azure DevOps Server, 
 and then installing them in a project collection. You can't install extensions when you're disconnected from Azure DevOps Server.
 
-### Who can upload extensions?
+### Who can upload extensions to a server?
 
 [Team Foundation Administrators](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group) 
 with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 can upload extensions.
-
-### Who can install extensions?
-
-[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
-can install extensions. If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 <a name="difference"></a>
 

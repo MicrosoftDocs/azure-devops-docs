@@ -32,7 +32,7 @@ To learn more about administrative tasks see [About user, team, project, and org
 
 In the tables provided in this article, a ✔️ (checkmark) indicates that the corresponding access level or security group has access to a feature by default. 
  
-To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
+To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](request-changes-permissions.md), you can do so.
  
 <a id="agile-tools-and-work-tracking" />
 
@@ -40,7 +40,7 @@ To assign or change an access level, see [Add users and assign licenses](../acco
 
 ## Azure Boards
 
-You can plan and track work from the web portal **Boards** hub, and using Visual Studio, Excel, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). To change permissions, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md). In addition to the permissions set at the [project level via the built-in groups](set-project-collection-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
+You can plan and track work from the web portal **Boards** hub, and using Visual Studio, Excel, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). To change permissions, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md). In addition to the permissions set at the [project level via the built-in groups](change-project-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
 
 ::: moniker-end
  
@@ -53,7 +53,7 @@ You can plan and track work from the web portal **Work** hub, and using Eclipse,
 ::: moniker-end
 
 > [!NOTE]   
-> Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
+> Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md). 
 
 Access to the following tasks are controlled by each user's access level or by permission assignments. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
 
@@ -206,7 +206,7 @@ You can define and manage your builds and releases from the web portal, **Build 
 
 ## Azure Test Plans
 
-Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set most [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings > Permissions**. 
+Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set several [test permissions at the project level](change-project-level-permissions.md) from **Project Settings>Permissions**. 
 
 ::: moniker-end
 
@@ -214,7 +214,7 @@ Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access leve
 
 ## Test
 
-Users granted **Visual Studio Enterprise** or **Advanced** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set most [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings > Permissions**. 
+Users granted **Visual Studio Enterprise** or **Advanced** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set  several [test permissions at the project level](change-project-level-permissions.md)  from **Project Settings>Permissions**. 
 
 ::: moniker-end
 

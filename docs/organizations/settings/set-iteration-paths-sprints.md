@@ -33,7 +33,7 @@ For information about naming restrictions and limits placed on addition of Itera
 - To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**. 
 - To set team iteration paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
 
-For more information about acquiring permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md) or [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
+For more information about acquiring permissions, see [Change project-level permissions](../security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
 
 ## Get started
 
