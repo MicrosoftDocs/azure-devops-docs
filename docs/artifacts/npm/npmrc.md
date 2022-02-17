@@ -4,7 +4,7 @@ description: How to set up your project and authenticate to Azure Artifacts feed
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/21/2022
+ms.date: 02/17/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -150,6 +150,8 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 Azure Artifacts recommend using the `npmAuthenticate` task to set up authentication for your pipeline tasks. When using a task runner such as gulp or Grunt, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the *.npmrc*.
 
+### [Classic](#tab/classic)
+
 ::: moniker range=">= azure-devops-2019"
 
 1. Select **Azure Pipelines**, and then select your pipeline definition.
@@ -202,6 +204,21 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 1. Select **Save & queue** when you are done.
 
 ::: moniker-end
+
+### [YAML](#tab/yaml)
+
+```yaml
+- task: npmAuthenticate@0
+  inputs:
+    workingFile: .npmrc
+    customEndpoint: #Optional
+- script: npm ci
+```
+
+- **workingFile**: Path to the .npmrc file
+- **customEndpoint**: Comma-separated list of npm service connection names for registries from external organizations. For registries in your org, leave this blank
+
+* * *
 
 > [!TIP]
 > To allow your pipeline access to your feed, make sure you give the build service a **Contributor** role in your feed's settings. Select **Azure Artifacts** -> [YOUR_FEED] -> **Settings** -> **Permissions** -> set the build service role to **Contributor**.
