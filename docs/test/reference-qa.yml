@@ -25,10 +25,8 @@ summary: |
 
 sections:
 
-  <a name="testplans"></a>
-
   - name: Test plans and test suites
-
+    <a name="testplans"></a>
     questions: 
 
            <a name="query-based-suites"></a> 
