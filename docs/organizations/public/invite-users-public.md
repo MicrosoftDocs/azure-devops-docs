@@ -26,8 +26,7 @@ Learn how to enable public users to contribute to your project.
 
 ## Prerequisites
 
-You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
-
+- To invite others to be a member of your public project, you must be a member of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md). Organization owners are automatically members of this group.
 
 ## Add users
 

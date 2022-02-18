@@ -278,7 +278,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 ## Add users or groups to a team 
 
-Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
+Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
  
 ::: moniker range="= azure-devops"
 
@@ -546,7 +546,7 @@ As a member of the Project Administrators group, you can add members to a projec
  
 ## Add users or groups to a project
 
-As a member of the Project Administrators group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
+As a member of the **Project Administrators** group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
 
 
 ::: moniker range="azure-devops"
@@ -570,7 +570,7 @@ As a member of the Project Administrators group, you can add users or groups to 
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Change project-level permissions](change-project-level-permissions.md).
 
 	Or, you can choose any team group to add users to a specific team. 
 
@@ -629,7 +629,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Change project-level permissions](change-project-level-permissions.md).
 
 4. Next, choose the **Members** tab.
 
@@ -674,7 +674,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 3. Choose **Security** and under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Change project-level permissions](change-project-level-permissions.md).
 
 4. Next, choose the **Members** tab.
 

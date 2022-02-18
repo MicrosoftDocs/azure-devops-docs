@@ -46,7 +46,7 @@ The process to associate an automated test with a test case is:
    been added to a test plan that uses the build you just defined. 
 
 If you are using the build and release services in
-Azure DevOps or TFS (not a [XAML build](#xaml-build)), you can run associated tests in the 
+Azure DevOps (not a [XAML build](#xaml-build)), you can run associated tests in the 
 build and release pipelines by using the
 [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
 You _cannot_ run tests on-demand using Microsoft Test Manager unless you are using a XAML build. 
@@ -72,7 +72,7 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 
 3. When you know the identifier of the work item for the test case:
 
-   **If you are using Visual Studio 2017 or later**, follow these steps to associate your tests.
+   **If you are using Visual Studio 2017 or later version**, follow these steps to associate your tests.
 
    - If the **Test Explorer** window is not displayed, open it from the **Test | Windows** menu.
 
@@ -114,7 +114,7 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 <a name="xaml-build"></a>
 ### Q: What are the differences if I am still using a XAML build?
 
-**A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
+**A**: If you are using a XAML build in Azure Pipelines, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
 [Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager and a
@@ -124,7 +124,7 @@ You can also run tests using Microsoft Test Manager and a
 ### Q: Can I configure work items to open in Visual Studio?
 
 **A**: Yes, if you want test work items to open inside Visual Studio
-instead of the default Azure Pipelines or TFS UI in your web browser,
+instead of the default Azure Pipelines UI in your web browser,
 change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio.
 
 ![Change work item display mode](media/work-item-compatibility.png)

@@ -209,10 +209,11 @@ The method for adding a user or group to a built-in security group is the same, 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Change individual permissions, grant select access to specific functions](change-individual-permissions.md)
+> [Request an increase in permission levels](request-changes-permissions.md)
 
 ## Related articles
 
 - [Get started with permissions, access, and security groups](about-permissions.md)
-- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [About security, authentication, and authorization](about-security-identity.md)

@@ -34,11 +34,13 @@ landingContent:
           - text: Get started as an administrator
             url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Add users to a team or project
-            url: ../organizations/security/add-users-team-project.md
+            url: ./security/add-users-team-project.md
           - text: Set Git repository permissions
             url: ../repos/git/set-git-repository-permissions.md
-          - text: Add project or collection administrators
-            url: ../organizations/security/set-project-collection-level-permissions.md
+          - text: Add a project administrator
+            url: ./security/change-project-level-permissions.md
+          - text: Add a project collection administrator
+            url: ./security/change-organization-collection-level-permissions.md
           - text: Set user preferences
             url: ./settings/set-your-preferences.md
   - title: Manage your organization (cloud)
@@ -70,7 +72,7 @@ landingContent:
           - text: View permissions
             url: ./security/view-permissions.md
           - text: Change individual permissions
-            url: ./security/change-individual-permissions.md
+            url: ./security/request-changes-permissions.md
           - text: Add users to a team or project
             url: ./security/add-users-team-project.md
   - title: Manage billing

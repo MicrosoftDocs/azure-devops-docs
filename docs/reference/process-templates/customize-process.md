@@ -195,7 +195,7 @@ Sometimes third parties make available process templates that they've created. Y
  
 ### Required permissions 
 
-To download or upload process templates, you must either be a member of the **Project Collection Administrators** group, or your **Manage process template** permission must be set to **Allow**. See [Add accounts to administer project collections](../../organizations/security/set-project-collection-level-permissions.md).  
+To download or upload process templates, you must either be a member of the **Project Collection Administrators** group, or your **Manage process template** permission must be set to **Allow**. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 ### Tools that support customizing a process template 
 

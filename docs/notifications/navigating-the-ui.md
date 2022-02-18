@@ -36,9 +36,9 @@ You can set notifications at the following four levels:
 ## Prerequisites
 
 * Each user can manage their personal notifications
-* To manage team notifications, you must be added as a [team administrator](../organizations/settings/add-team-administrator.md) or be a member of a [Project Administrator Group or Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
-* To manage project-level notifications, you must be a member of the  [Project Administrator Group or Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
-* To manage organization notifications, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). 
+* To manage team notifications, you must be added as a [team administrator](../organizations/settings/add-team-administrator.md) or be a member of [**Project Administrators** group](../organizations/security/change-project-level-permissions.md)
+* To manage project-level notifications, you must be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md)
+* To manage organization or collection-level notifications, you must be a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md). 
 
 For additional permission settings regarding notifications, see [Permissions and groups, Notifications or alerts](../organizations/security/permissions.md#notifications-or-alerts).
 

@@ -97,7 +97,7 @@ sections:
           **No**. This isn't a supported feature.      
           ::: moniker-end
 
-      - question: Can I copy a dasbhoard widget? 
+      - question: Can I copy a dashboard widget? 
         answer: |
           ::: moniker range=">= tfs-2018"
           **Yes**. You can copy or add a widget configured on one dashboard to another dashboard. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget). 

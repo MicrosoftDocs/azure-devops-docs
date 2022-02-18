@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 02/14/2022
 ---
 
 
@@ -159,7 +159,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Planning](media/define-sprints/view-options-planning-menu.png)
 
-	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).  <!--- Check with Marina about what permissions are needed to add a sprint or select a sprint --> 
+	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).   
 
 1. You can drag and drop items from the **Backlog** onto a sprint.  
 

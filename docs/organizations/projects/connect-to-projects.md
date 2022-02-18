@@ -268,7 +268,7 @@ Select Shift and right-click *devenv.exe*, then select **Run as different user**
 
 ### User accounts and licensing for Visual Studio
 
-To connect to a project, you need your user account added to the project. The [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [Project Administrator](../security/set-project-collection-level-permissions.md) usually does adds user accounts.
+To connect to a project, you need your user account added to the project. The **Organization owner** for Azure DevOps Services or a member of the **Project Administrators** group usually adds user accounts. To learn more, see [Add organization users and manage access](../accounts/add-organization-users.md) or [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md). 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
