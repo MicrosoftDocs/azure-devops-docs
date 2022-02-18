@@ -6,12 +6,11 @@ metadata:
   description: Learn the answers to frequently asked questions (FAQs) about creating, deleting, restoring, and configuring your organization in Azure DevOps.
   ms.technology: devops-accounts
   ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 03/11/2020
   monikerRange: '<= azure-devops'
-    
 title: Create and configure organization FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]

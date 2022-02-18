@@ -6,7 +6,7 @@ metadata:
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
   ms.date: 04/12/2021
 
@@ -136,4 +136,3 @@ additionalContent: |
   - [Work tracking, process, and project limits](object-limits.md)   
   - [Azure Boards extensions](../../../boards/extensions/index.md)  
   - [About teams and Agile tools](../about-teams-and-settings.md)  
-
