@@ -27,6 +27,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 > [!NOTE]
 > Before you begin, be sure your account's default identity is set with:
+> This must be done as the very first step after checking out your code.
 > ```
 > git config --global user.email "you@example.com"
 > git config --global user.name "Your Name"
