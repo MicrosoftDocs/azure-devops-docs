@@ -4,9 +4,7 @@ description: Quickly start publishing and consuming Maven Artifacts to/from your
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.manager: jenp
-ms.reviewer: dastahel
-ms.date: 07/22/2020
+ms.date: 02/18/2022
 monikerRange: '>= tfs-2018'
 ---
 
