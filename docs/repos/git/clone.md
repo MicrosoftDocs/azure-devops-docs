@@ -41,7 +41,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 Typically, you need to know the clone URL of the remote repo that you want to clone. The clone URL uniquely identifies the remote repo.
 
 > [!NOTE]
-> When signed into an Azure DevOps project, Visual Studio supports searching for and cloning project repos without needing to know the clone URL.
+> When you're signed into an Azure DevOps project, Visual Studio supports searching for and cloning project repos without needing to know the clone URL.
 
 1. From your web browser, open the team project for your Azure DevOps organization, and then choose **Repos** > **Files** to open the **Files** view.
 
@@ -63,13 +63,13 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
 Typically, you need to know the clone URL of the remote repo that you want to clone. The clone URL uniquely identifies the remote repo. 
 
 > [!NOTE]
-> When signed into **GitHub**, Visual Studio supports searching for and cloning GitHub repos without needing to know the clone URL.
+> When you're signed into **GitHub**, Visual Studio supports searching for and cloning GitHub repos without needing to know the clone URL.
 
 1. Open a browser and navigate to your **GitHub** account, select the **Repositories** tab, and choose the repository to clone.
 
    :::image type="content" source="media/clone/visual-studio-2019/common/github-repo.png" border="true" alt-text="Screenshot of the repository page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-repo-lrg.png":::
 
-1. On the GitHub repository page, choose **Code** to launch the **Clone** popup. Copy the clone URL from the **Clone** popup.
+1. On the **GitHub** repository page, choose **Code** to launch the **Clone** popup. Copy the clone URL from the **Clone** popup.
 
    :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the  page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
 
