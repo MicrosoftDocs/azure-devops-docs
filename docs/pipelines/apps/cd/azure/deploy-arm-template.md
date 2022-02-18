@@ -4,7 +4,7 @@ description: Use an Azure Resource Manager template to deploy a Linux web app to
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 02/02/2022
+ms.date: 02/18/2022
 monikerRange: '=azure-devops'
 ms.custom: subject-armqs, contperf-fy21q2
 ---
@@ -16,6 +16,8 @@ ms.custom: subject-armqs, contperf-fy21q2
 Get started with [Azure Resource Manager templates (ARM templates)](/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
 An [ARM template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax. In declarative syntax, you describe your intended deployment without writing the sequence of programming commands to create the deployment.
+
+You can use either JSON or [Bicep syntax](/azure/azure-resource-manager/bicep/overview) to deploy Azure resources. Learn more about the [difference between JSON and Bicep for templates](/azure/azure-resource-manager/bicep/compare-template-syntax). 
 
 ## Prerequisites
 
@@ -32,6 +34,8 @@ https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/micr
 ```
 
 ## Review the template
+
+# [JSON](#tab/json)
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/webapp-linux-managed-mysql/). 
 
@@ -108,7 +112,23 @@ The template defines several resources:
 
 11. Click **Save and run** to deploy your template. The pipeline job will be launched and after few minutes, depending on your agent, the job status should indicate `Success`.
 
+# [Bicep](#tab/bicep)
+
+1. Fork the repo
+2. Create a service connection
+	- need to have a resource group in advance for the service connection
+	- you’ll need to give the pipeline access to the service connection
+	- Select the service connection in the AzureCLI task??
+3. Create variables in YAML file
+4. Create variables in UI 
+administratorLogin, administratorLoginPassword
+- create as variables and pass in CLI command
+
+
+---
 ## Review deployed resources
+
+# [JSON](#tab/json)
 
 1. Verify that the resources deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
 
@@ -121,13 +141,21 @@ The template defines several resources:
    ```
 
 2. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+# [Bicep](#tab/bicep)
+
+___
 
 ## Clean up resources
+
+# [JSON](#tab/json)
 
 You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
 
   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-cleanup.yml" range="1-24" highlight="17-24":::
 
+# [Bicep](#tab/bicep)
+
+---
 
 ## Next steps
 
