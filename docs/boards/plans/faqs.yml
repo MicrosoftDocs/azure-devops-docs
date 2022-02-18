@@ -7,7 +7,7 @@ metadata:
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: 'azure-devops'
   ms.date: 10/20/2021
 
@@ -163,4 +163,3 @@ additionalContent: |
   -  [Azure Boards FAQs](../faqs.yml) 
   -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
  
-

@@ -6,12 +6,11 @@ metadata:
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
   ms.technology: devops-accounts
   ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 07/24/2020
   monikerRange: '<= azure-devops'
-    
 title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]

@@ -6,13 +6,13 @@ metadata:
   description: Learn how to resolve errors and address frequently asked questions (FAQs) when creating or deleting a project.
   ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
   ms.technology: devops-accounts
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 02/17/2022
   monikerRange: '<= azure-devops'
     
-title: Create or delete a project in Azure DevOps FAQs
+title: Create or delete a project in Azure DevOps FAQ
 
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]

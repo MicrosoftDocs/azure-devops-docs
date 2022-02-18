@@ -6,7 +6,7 @@ metadata:
   ms.technology: devops-marketplace
   ms.author: chcomley
   author: chcomley
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '>= tfs-2015'
   ms.date: 03/15/2021
 
@@ -141,4 +141,3 @@ additionalContent: |
   - [How to pay for Azure DevOps Server users](../organizations/billing/buy-access-tfs-test-hub.md)
   - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
   - [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)  
-
