@@ -187,6 +187,9 @@ To clone a **GitHub** repo using **Team Explorer**, see [Clone any Git repo](#cl
 
 To clone a **GitHub** repo from the command line, see [Clone any Git repo](#clone-any-git-repo).
 
+> [!NOTE]
+> You can also clone a **GitHub** repo from the command line by using the [GitHub CLI](https://cli.github.com/manual/gh_repo_clone).
+
 
 * * *
 
@@ -329,7 +332,7 @@ In the **Home** view in Team Explorer, double-click your project solution file i
 
 #### [Git Command Line](#tab/git-command-line/)
 
-At the command prompt, run the following command to open a Visual Studio solution from a cloned repo. This isn't a Git command.
+At the command prompt, run the following command to open a Visual Studio solution from a cloned repo. This command isn't a Git command.
 
 ```cmd
 start <solution filepath>
