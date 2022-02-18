@@ -31,7 +31,7 @@ This guide assumes you've already set up Azure Artifacts. See [Start using Azure
 
 ## Create a feed
 
-_Already have a feed?_ [Skip to the next step](#setup-your-POM-and-settings-.xml).
+_Already have a feed?_ [Skip to the next step](#set-up-authentication).
 
 [!INCLUDE [](includes/create-feed.md)]
 
