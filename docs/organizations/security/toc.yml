@@ -5,6 +5,8 @@
   - name: About permissions, access, & security groups  
     href: about-permissions.md
     displayName: security, group, membership, inheritance, roles
+  - name: Add or remove users or groups, manage security groups
+    href: add-remove-manage-user-group-security-group.md
   - name: Default permissions
     href: permissions-access.md
     displayName: security, group, role, Basic, administrator
@@ -14,9 +16,9 @@
   - name: View permissions 
     href: view-permissions.md
     displayName: default, project, object, valid, user, group
-  - name: Increase permission levels, find an admin
-    href: lookup-organization-owner-admin.md
-    displayName: features, security, role, request, default
+  - name: Request an increase in permission levels
+    displayName: security, role, refresh, object, collection
+    href: request-changes-permissions.md
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
     displayName: index, reference, manage, roles, groups
@@ -40,9 +42,12 @@
   - name: Add users or groups to a team or project
     href: add-users-team-project.md
     displayName: create, new, account, default, custom, access, permission
-  - name: Remove user accounts
-    href: remove-users-prohibit-access.md
+  - name: Remove users from Azure DevOps
     displayName: delete, revoke, organization, members
+    href: ../accounts/delete-organization-users.md 
+  - name: Remove user accounts from Active Directory
+    displayName: delete, revoke, organization, members
+    href: remove-users-prohibit-access.md
   - name: Manage access with Azure Active Directory
     items:
     - name: Connect organization to Azure AD
@@ -108,9 +113,12 @@
   - name: Add users or groups to a team or project
     href: add-users-team-project.md
     displayName: create, new, account, default, custom, access, permission
-  - name: Remove user accounts
-    href: remove-users-prohibit-access.md
+  - name: Remove users from Azure DevOps
     displayName: delete, revoke, organization, members
+    href: ../accounts/delete-organization-users.md 
+  - name: Remove user accounts from Active Directory
+    displayName: delete, revoke, organization, members
+    href: remove-users-prohibit-access.md
   - name: FAQs
     items:
     - name: User & permissions management
@@ -153,11 +161,14 @@
 - name: Secure projects
   items:
   - name: Change individual permissions
-    href: change-individual-permissions.md
+    href: request-changes-permissions.md
     displayName: access, update, user, remove
-  - name: Set project-level permissions
-    href: set-project-collection-level-permissions.md
-    displayName: access, security, add, remove, project, administrators, collection
+  - name: Look up a project administrator 
+    href: look-up-project-administrators.md
+    displayName: access, security, add, remove, project, administrators
+  - name: Change project-level permissions
+    displayName: access, security, add, remove, project, administrators
+    href: change-project-level-permissions.md
   - name: Set object-level permissions
     href: set-object-level-permissions.md
     displayName: artifacts, boards, repos, projects, area, iteration, path, work items, access
@@ -175,9 +186,13 @@
     displayName: users, access, settings, response
 - name: Secure organizations/collections
   items:
-  - name: Set organization/collection-level permissions
-    href: set-project-collection-level-permissions.md
-    displayName: Project Collection Administrators, project collection build service, add, remove
+  - name: Look up the organization owner
+    href: look-up-organization-owner.md
+  - name: Look up a project collection administrator 
+    href: look-up-project-collection-administrators.md
+  - name: Change permissions at the organization or collection-level
+    displayName: Project Collection Administrators, project collection build service, add, remove, administrators, collection
+    href: change-organization-collection-level-permissions.md
   - name: Set permissions to manage extensions
     href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: Marketplace, access, settings, users

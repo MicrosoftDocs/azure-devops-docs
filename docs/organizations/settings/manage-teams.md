@@ -29,8 +29,8 @@ Also, consider the following optional tasks:
 
 ## Prerequisites
 
-- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
-- To add a team, you must be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md). For more information, see [Add teams](add-teams.md).
+- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md).  
+- To add a team, you must be a member of the **Project Administrators** group. For more information, see [Add teams](add-teams.md).
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 

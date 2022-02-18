@@ -38,7 +38,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 - (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
+To get added as an administrator, [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
 
 
 ## Methods by which work item fields get added 

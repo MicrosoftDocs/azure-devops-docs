@@ -225,7 +225,7 @@ Workflow rules are applied when adding or modifying work items through any of th
 Prior to defining a rule based on workflow states, make sure you first define the following elements: 
 - The workflow states that you want as described in [Customize a workflow](customize-process-workflow.md)
 - If your rule requires specification of a custom field, add that field to the work item type as described in [Add and manage fields](customize-process-field.md)
-- If your rule requires specification of a security group to grant or restrict changes based on user or group membership, define that security group as described in [Add a group and change its permissions at the organization or collection-level group](../../security/set-project-collection-level-permissions.md#collection-level). 
+- If your rule requires specification of a security group to grant or restrict changes based on user or group membership, define that security group as described in [Add or remove users or groups, manage security groups](../../security/add-remove-manage-user-group-security-group.md). 
 
 For the basics of defining rules, see [Add a custom rule](custom-rules.md). You must meet the prerequisites defined in that article.  
 

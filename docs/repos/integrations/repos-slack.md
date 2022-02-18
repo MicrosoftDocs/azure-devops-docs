@@ -35,8 +35,7 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group or Team Administrators group. 
-To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
+- To create subscriptions in a Slack channel for repository-related events, you must be a member of the **Project Administrators** group, or a team administrator. To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. See [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 

@@ -23,7 +23,7 @@ If you see that hours are counted twice in reports that contain task hours, you 
   
 ## Prerequisites  
   
- To carry out this procedure, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. For more information, see [Permission reference](../../organizations/security/set-project-collection-level-permissions.md).  
+ To address inaccuracies, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**.  
   
 ## Clear the hour fields of parent or summary tasks
   
@@ -63,5 +63,5 @@ If you see that hours are counted twice in reports that contain task hours, you 
   
 ## Related articles 
 
- [Add or change Project-to-TFS field mapping](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file)   
- [Create your backlog and tasks using Project](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)
+-  [Add or change Project-to-TFS field mapping](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file)   
+-  [Create your backlog and tasks using Project](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)

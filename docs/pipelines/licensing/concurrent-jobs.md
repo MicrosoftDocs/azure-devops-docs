@@ -162,7 +162,7 @@ In the following scenarios, you might need multiple parallel jobs:
 To buy more parallel jobs:
 
 * [Billing must be set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md)
-* You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/lookup-organization-owner-admin.md)
+* You need to be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
 
 ### Buy parallel jobs
 

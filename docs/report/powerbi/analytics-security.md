@@ -73,7 +73,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ### [Current page](#tab/current-page) 
   
-1. Open **Project Settings > Permissions**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+1. Open **Project Settings > Permissions**. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). 
   
 1. Choose the person or group that you want to modify permissions for and then change their permission assignment. 
 
@@ -111,5 +111,5 @@ Because of this scenario, the recommended approach for querying Analytics is to 
 
 ## Related articles 
 
--  [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
+-  [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)
 -  [Power BI integration overview](overview.md)

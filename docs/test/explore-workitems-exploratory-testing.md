@@ -94,13 +94,13 @@ To explore another work item, you must first dissociate the current work item fr
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans.
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 
-* [FAQs for manual testing](reference-qa.md#tandfext)
+* [FAQs for manual testing](reference-qa.yml#tandfext)
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)

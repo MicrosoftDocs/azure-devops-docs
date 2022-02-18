@@ -370,7 +370,7 @@ sections:
         answer: |
           A: You might not see the directory for any of the following circumstances:
           
-          * You don't have [organization Owner permissions](../security/lookup-organization-owner-admin.md) to manage directory connections.
+          * You aren't recognized as the [**Organization owner**](../security/look-up-organization-owner.md) to manage directory connections.
           
           * Talk to your Azure AD organization administrator and ask them to make you a member of the organization. It's possible that you're not  part of the organization.
           

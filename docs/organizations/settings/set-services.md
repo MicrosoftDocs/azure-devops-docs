@@ -23,12 +23,12 @@ You can control which services are available through the web portal, by turning 
 ::: moniker range="azure-devops"
 
 - You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
-- As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/set-project-collection-level-permissions.md#project-level).
+- As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/change-project-level-permissions.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 - You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
-- As a member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/set-project-collection-level-permissions.md#project-level).
+- As a member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/change-project-level-permissions.md).
 - 
   ::: moniker-end
 
