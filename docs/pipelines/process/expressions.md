@@ -217,6 +217,9 @@ parameters:
  
 steps:
 - script: |
+    # Based on Solution Provided by Jochen van Wylick
+    # This is required to properly format the JSON
+    # https://stackoverflow.com/a/57388706/1341806
     json=$(echo "${{ convertToJson(parameters.listOfValues) }}" | \
       sed -e 's/^  /  "/g' | \
       sed -e 's/: /": "/g' | \
