@@ -217,7 +217,15 @@ parameters:
  
 steps:
 - script: |
-    echo "${{ convertToJson(parameters.listOfValues) }}"
+    json=$(echo "${{ convertToJson(parameters.listOfValues) }}" | \
+      sed -e 's/^  /  "/g' | \
+      sed -e 's/: /": "/g' | \
+      sed -e 's/,$/",/g' | \
+      sed -e 's/"}/}/g' | \
+      sed -e 's/}"/}/g' | \
+      sed -e 's/"{/{/g' | \
+      sed -e 's/\([a-zA-Z0-9]\)$/\1"/g')
+    echo "$json"
 ```
 
 ```json
