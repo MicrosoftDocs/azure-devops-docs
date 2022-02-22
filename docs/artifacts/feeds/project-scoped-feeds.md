@@ -21,21 +21,19 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 
 1. **Visibility**:
 
-    * Project-scoped feeds will always use the visibility of the project. If a project is public, the feed is also public and if the project is private, the feed is also private. 
-    * Organization-scoped feeds will always remain private.
+    * Project-scoped feeds inherit the visibility of the project.
+    * Organization-scoped feeds are always private by default.
 
 1. **Links**:
 
     * The URL of a project-scoped feed includes the project.
-        * Project-scoped feed: `https://feeds.dev.azure.com/contoso/projectId/_apis/Packaging/Feeds`
+        * Example: `https://pkgs.dev.azure.com/<ORG_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json`
 
     * The URL of an organization-scoped feed doesn't include a project.
-        * Organization-scoped feed: `https://feeds.dev.azure.com/contoso/_apis/Packaging/Feeds`
+        * Example: `https://pkgs.dev.azure.com/<ORG_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json`
 
 1. **User interface**:
-    * All organization-scoped feeds will show up in the feed list of the Artifacts feed UI. To see a project-scoped feed in the list you have to be navigated to the project the feed is scoped to.
-
-    * All new feeds are recommended to be project-scoped. Creating a new feed through the create feed web UI will create a project-scoped feed.
+    * All organization-scoped feeds are available from the feeds' dropdown menu. To see a project-scoped feed in the list of feeds, you have to navigate to the project hosting that feed.
 
 1. **Connection**:
     * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. See [Package permissions](./feed-permissions.md#pipelines-permissions) for more details.
