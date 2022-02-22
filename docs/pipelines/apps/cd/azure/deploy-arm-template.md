@@ -149,7 +149,7 @@ The template defines several resources:
 
 1. At the top of your YAML file, map values for `location` and `resourceGroupName`. Your location should be the location of the resource group. Your resource group needs to already exist. 
 
-   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-3" highlight="1-6":::
+   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-bicep.yml" range="1-6" highlight="3-4":::
 
 1. If you do not already have an Azure Resource Manager service connection, [create a service connection](../../../library/service-endpoints.md#create-a-service-connection). Learn more about [connecting to Azure](../../../library/connect-to-azure.md). 
     *  The service connection be in the same resource group as your `resourceGroupName`.  
@@ -188,7 +188,7 @@ The template defines several resources:
 
    You can also verify the resources using Azure CLI. 
 
-   ```azurecli-interactive
+   ```azurecli
    az resource list --resource-group <resource-group-name> --output table
    ```
 
@@ -207,6 +207,10 @@ You can also use an ARM template to delete resources. Change the `action` value 
 # [Bicep](#tab/bicep)
 
 If you no longer need your deployed resource, delete your resource group.
+
+```azurecli
+az group delete -n  <resource-group-name>
+```
 
 ---
 
