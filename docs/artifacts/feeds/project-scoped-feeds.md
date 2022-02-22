@@ -3,23 +3,21 @@ title: Project scoped feeds
 description: Understand the difference between project-scoped and organization-scoped feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/05/2020
+ms.date: 02/22/2022
 monikerRange: '>= tfs-2017'
 ---
 
 # Project-scoped feeds
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-Historically, all feeds used to be scoped to an organization. However, to enable public feeds and to become more consistent with the rest of Azure DevOps, feeds created through the new create feed web UI will now be scoped to a project. 
+Previously, Azure Artifacts feeds used to be scoped to an organization. To enable public feeds and for more consistency with other services in Azure DevOps, feeds that are created through the web interface are now scoped to a project. 
 
-New organizations will automatically have one feed scoped to the organization and all subsequent feeds created will be scoped to a project. All existing organization-scoped feeds will remain organization-scoped.
+New organizations will automatically have one feed scoped to the organization and all subsequent feeds created will be scoped to a project. All existing organization-scoped feeds will remain scoped to an organization.
 
-## Understanding the difference between an organization-scoped feed and a project-scoped feed
+## Project-scoped vs organization-scoped feeds
 
-A project-scoped feed is scoped to a project instead of an organization. 
-
-Here are the main differences between the two feed types:
+A project-scoped feed is scoped to a project instead of an organization. Here are the main differences between the two types of feeds:
 
 1. **Visibility**:
 
