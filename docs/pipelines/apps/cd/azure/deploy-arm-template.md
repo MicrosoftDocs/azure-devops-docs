@@ -206,7 +206,7 @@ You can also use an ARM template to delete resources. Change the `action` value 
 
 # [Bicep](#tab/bicep)
 
-If you no longer need your deployed resource, delete your resource group.
+If you no longer need your deployed resources, delete your resource group.
 
 ```azurecli
 az group delete -n  <resource-group-name>
