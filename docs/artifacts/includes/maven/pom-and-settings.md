@@ -27,7 +27,7 @@ ms.date: 02/18/2022
 
 3. If this is the first time using Azure Artifacts with Maven, select **Get the tools** to download and install Maven.
 
-4. Follow the **Project setup**instructions to set up your project.
+4. Follow the **Project setup** instructions to set up your project.
 
    > [!div class="mx-imgBorder"] 
    >![Set up Maven authentication](../../media/maven-azure-devops-newnav.png)
