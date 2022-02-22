@@ -43,7 +43,7 @@ _Already have a feed?_ [Skip to the next step](#set-up-authentication).
 
 [!INCLUDE [](includes/maven/publish.md)]
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > In order to automatically authenticate with your Maven feed, you must set the `mavenAuthenticateFeed` argument to true in the [Maven task](../pipelines/tasks/build/maven.md).
 
 ## Install an artifact from your feed
