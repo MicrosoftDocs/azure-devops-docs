@@ -156,7 +156,7 @@ The template defines several resources:
 
     :::image type="content" source="media/service-connection-arm.png" alt-text="Add a service connection.":::
 
-1. Add the Azure CLI task to deploy with Bicep. The task uses the [az deployment group create](/cli/azure/deployment/group?view=azure-cli-latest#az-deployment-group-create) Azure CLI command. You'll pass the `administratorLogin` and `administratorLoginPassword` parameter values as variables. 
+1. Add the Azure CLI task to deploy with Bicep. The task uses the [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create) Azure CLI command. You'll pass the `administratorLogin` and `administratorLoginPassword` parameter values as variables. 
     * Set the **Azure Resource Manager connection** to your service connection. 
     * The **Script Type** is *Shell*. 
     * The Script Location is *Inline script*. 
