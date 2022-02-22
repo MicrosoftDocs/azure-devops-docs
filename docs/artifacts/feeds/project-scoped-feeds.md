@@ -35,22 +35,17 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 1. **User interface**:
     * All organization-scoped feeds are available from the feeds' dropdown menu. To see a project-scoped feed in the list of feeds, you have to navigate to the project hosting that feed.
 
+    > [!IMPORTANT]
+    > Creating new organization-scoped feeds is not recommended.
+
 1. **Connection**:
     * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. See [Package permissions](./feed-permissions.md#pipelines-permissions) for more details.
 
-## What can I do if I'm concerned about my project-scoped feed's visibility?
+## Security policies
 
-There is an option to not allow public projects in an organization. It can be set under Security policies in [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
-
-If you're concerned that your project will be turned public in the future and you want your feed remain private, you can use the organization-scoped feed that's automatically created when a new organization is created.
+if you want to add an extra layer of security to your project-scoped feed and protect your feed's visibility, you can disable the **Allow public projects** policy from the [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
 
 Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed?view=azure-devops-rest-5.1&preserve-view=true) to manually create a new organization-scoped feed. You will have to set the default permissions for the new feed manually either by using the [Feed Permission API](/rest/api/azure/devops/artifacts/feed%20%20management/set%20feed%20permissions?view=azure-devops-rest-5.1&preserve-view=true) or the Artifacts feed settings.
-
-> [!IMPORTANT]
-> Creating new organization-scoped feeds is not recommended.
-
-> [!NOTE]
-> If you want to share a package in your feed with all the users in your organization, you can promote that package to a `view` and set its visibility to `People in my organization`. See [Get started with feed views](./views.md) for more information.
 
 > [!IMPORTANT]
 > If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.  
