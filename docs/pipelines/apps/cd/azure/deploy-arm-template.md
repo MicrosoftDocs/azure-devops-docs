@@ -4,7 +4,7 @@ description: Use an Azure Resource Manager template to deploy a Linux web app to
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 02/18/2022
+ms.date: 02/22/2022
 monikerRange: '=azure-devops'
 ms.custom: subject-armqs, contperf-fy21q2
 ---
@@ -24,6 +24,7 @@ You can use either JSON or [Bicep syntax](/azure/azure-resource-manager/bicep/ov
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- (For Bicep deployments) An existing resource group. Create a resource group with [Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups), [Azure CLI](/azure/azure-resource-manager/management/manage-resource-groups-cli#create-resource-groups), or [Azure PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell#create-resource-groups). 
 
 ## Get the code
 
@@ -114,17 +115,55 @@ The template defines several resources:
 
 # [Bicep](#tab/bicep)
 
-1. Fork the repo
-2. Create a service connection
-	- need to have a resource group in advance for the service connection
-	- you’ll need to give the pipeline access to the service connection
-	- Select the service connection in the AzureCLI task??
-3. Create variables in YAML file
-4. Create variables in UI 
-administratorLogin, administratorLoginPassword
-- create as variables and pass in CLI command
+1. Sign in to your Azure DevOps organization and navigate to your project. [Create a project](../../../../organizations/projects/create-project.md) if you do not already have one. 
+
+1. Go to **Pipelines**, and then select **Create Pipeline**.
+
+1. Select **GitHub** as the location of your source code. 
+
+   > [!NOTE]
+   > You may be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When the list of repositories appears, select `yourname/azure-quickstart-templates/`.
+
+   > [!NOTE]
+   > You may be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
+
+1. When the Configure tab appears, select `Starter pipeline`.
+
+1. Replace the content of your pipeline with this code:
+
+   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-bicep.yml" range="8-12":::
+
+1. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
+    * Select **Variables**. 
+    * Use the `+` sign to add three variables. When you create `adminPass`, select **Keep this value secret**.
+    * Click **Save** when you're done.
+        
+   |Variable  |Value  |Secret?  |
+   |---------|---------|---------|
+   |siteName     |  `mytestsite`       |    No     |
+   |administratorLogin     |     `fabrikam`    |    No     |
+   |administratorLoginPassword     |    `Fqdn:5362!`     |    Yes     |
 
 
+1. At the top of your YAML file, map values for `location` and `resourceGroupName`. Your location should be the location of the resource group. Your resource group needs to already exist. 
+
+   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-3" highlight="1-6":::
+
+1. If you do not already have an Azure Resource Manager service connection, [create a service connection](../../../library/service-endpoints.md#create-a-service-connection). Learn more about [connecting to Azure](../../../library/connect-to-azure.md). 
+    *  The service connection be in the same resource group as your `resourceGroupName`.  
+
+    :::image type="content" source="media/service-connection-arm.png" alt-text="Add a service connection.":::
+
+1. Add the Azure CLI task to deploy with Bicep. The task uses the [az deployment group create](/cli/azure/deployment/group?view=azure-cli-latest#az-deployment-group-create) Azure CLI command. You'll pass the `administratorLogin` and `administratorLoginPassword` parameter values as variables. 
+    * Set the **Azure Resource Manager connection** to your service connection. 
+    * The **Script Type** is *Shell*. 
+    * The Script Location is *Inline script*. 
+
+   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-bicep.yml" range="1-24" highlight="17-24":::
+
+    
 ---
 ## Review deployed resources
 
@@ -143,6 +182,18 @@ administratorLogin, administratorLoginPassword
 2. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 # [Bicep](#tab/bicep)
 
+1. Verify that the resources deployed. Go to your resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
+
+   :::image type="content" source="media/azure-resources-portal.png" alt-text="ARM template resources in the Azure portal":::
+
+   You can also verify the resources using Azure CLI. 
+
+   ```azurecli-interactive
+   az resource list --resource-group <resource-group-name> --output table
+   ```
+
+2. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+
 ___
 
 ## Clean up resources
@@ -154,6 +205,8 @@ You can also use an ARM template to delete resources. Change the `action` value 
   :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-cleanup.yml" range="1-24" highlight="17-24":::
 
 # [Bicep](#tab/bicep)
+
+If you no longer need your deployed resource, delete your resource group.
 
 ---
 
