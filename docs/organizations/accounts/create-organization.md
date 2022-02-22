@@ -56,6 +56,14 @@ For more information about how to create a project collection, see [Create a pro
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+With your organization, the following aspects are included in the free tier:
+
+[!INCLUDE [free-tier](../../includes/free-tier.md)]
+
+::: moniker-end
+
 ## Next steps
 
 > [!div class="nextstepaction"]
