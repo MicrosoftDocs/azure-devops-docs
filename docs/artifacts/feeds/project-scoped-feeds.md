@@ -5,6 +5,7 @@ ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 02/22/2022
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # Project-scoped feeds
@@ -48,5 +49,11 @@ if you want to add an extra layer of security to your project-scoped feed and pr
 Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed?view=azure-devops-rest-5.1&preserve-view=true) to manually create a new organization-scoped feed. You will have to set the default permissions for the new feed manually either by using the [Feed Permission API](/rest/api/azure/devops/artifacts/feed%20%20management/set%20feed%20permissions?view=azure-devops-rest-5.1&preserve-view=true) or the Artifacts feed settings.
 
 > [!IMPORTANT]
-> If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.  
-> If you want to completely hide your packages, you must restrict both feeds and views permissions. See [Feeds and views permissions](feed-permissions.md) for more information.
+> If a user has permissions to access a specific view, and they don't have permissions to the feed, they will still be able to access and download packages through that view.  
+> If you want to completely hide your packages, you must restrict access to both the feed and the view. See [Feeds and views permissions](feed-permissions.md) for more details.
+
+## Related articles
+
+- [Configure permissions](./feed-permissions.md)
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
+- [Use feed views to share packages](./views.md)
