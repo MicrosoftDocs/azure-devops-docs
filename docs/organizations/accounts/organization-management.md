@@ -1,18 +1,18 @@
 ---
-title: About creating and managing organizations
+title: Manage an organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
-description: An organization gives you access to a platform where you can collaborate with others to develop apps, plan and track work, integrate with other services, get more features and extensions.
+ms.custom: seodec18, contperf-fy22q3
+description: Manage an organization, so you can collaborate with others to develop apps, plan and track work, integrate with other services, get more features and extensions.
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 05/21/2021
+ms.date: 02/22/2022
 monikerRange: 'azure-devops'
 ---
 
-# Manage your organizations
+# Manage your organization
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -23,7 +23,7 @@ With an organization, you gain access to Azure DevOps Services, where you can do
 * Set up continuous integration and deployment
 * Integrate with other services by using service hooks
 * Obtain more features and extensions
-* Create one or more projects to segment work.
+* Create one or more projects to segment work
 
 > [!NOTE]
 > For information about managing an on-premises Azure DevOps Server, see [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
