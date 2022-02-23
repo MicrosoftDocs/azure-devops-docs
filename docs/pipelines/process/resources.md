@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 08/28/2021
+ms.date: 01/21/2022
 monikerRange: azure-devops
 ---
 
@@ -761,6 +761,21 @@ You can choose to download the artifacts in build jobs or to override the downlo
 
 When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss traceability and triggers. Sometimes it makes sense to use the Download Pipeline Artifacts task directly. For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template wants to add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
 
+### How can I trigger a pipeline run when my Docker Hub image gets updated? 
+
+You'll need to set up a [classic release pipeline](../release/index.md) because the containers resource trigger is not available for Docker Hub for YAML pipelines.  
+
+1. Create a new Docker Hub [service connection](../library/service-endpoints.md). 
+1. Create a classic release pipeline and add a Docker Hub artifact. Set your service connection. Select the namespace, repository, version, and source alias. 
+    
+    :::image type="content" source="media/docker-artifact-release-pipeline.png" alt-text="Add a Docker Hub artifact. ":::
+
+1. Select the trigger and toggle the continuous deployment trigger to **Enable**. You'll create a release every time a Docker push occurs to the selected repository.
+1. Create a new stage and job. Add two tasks, Docker login and Bash:
+ * The Docker task has the `login` action and logs you into  Docker Hub.  
+ *  The Bash task runs `docker pull <hub-user>/<repo-name>[:<tag>]`. Replace `hub-user`, `repo-name`, and `tag` with your values. 
+
+    :::image type="content" source="media/docker-hub-tasks-classic-pipeline.png" alt-text="Add Docker login and Bash tasks. ":::
 ## Related articles
 
 * [Define variables](variables.md)
