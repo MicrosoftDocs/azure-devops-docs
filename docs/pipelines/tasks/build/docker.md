@@ -43,7 +43,7 @@ Following are the key benefits of using Docker task as compared to directly usin
 |------------|-------------|
 | `command`<br/>Command | (Required) Possible values: `buildAndPush`, `build`, `push`, `login`, `logout`<br/>Added in version 2.173.0: `start`, `stop`<br/>Default value: `buildAndPush` |
 | `containerRegistry`<br/>Container registry | (Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) |
-| `repository`<br/>Repository | (Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for `containerRegistry` |
+| `repository`<br/>Repository | (Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for `containerRegistry`. Prefix with `username/` for DockerHub. |
 | `container`<br/>Container | (Required for commands `start` and `stop`) The container resource to start or stop |
 | `tags`<br/>Tags | (Optional) Multiline input where each line contains a tag to be used in `build`, `push` or `buildAndPush` commands<br/>Default value: `$(Build.BuildId)` |
 | `Dockerfile`<br/>Dockerfile | (Optional) Path to the Dockerfile. The task will use the **first** dockerfile it finds to build the image.<br/>Default value: `**/Dockerfile` |
@@ -82,7 +82,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: contosoRepository
+    repository: contosoRepository # username/contosoRepository for DockerHub
     tags: |
       tag1
       tag2
@@ -151,7 +151,7 @@ steps:
   displayName: Build
   inputs:
     command: build
-    repository: contosoRepository
+    repository: contosoRepository # username/contosoRepository for DockerHub
     tags: tag1
     arguments: --secret id=mysecret,src=mysecret.txt
 ```
