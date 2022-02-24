@@ -788,6 +788,8 @@
       items:
         - name: App Center Test
           href: tasks/test/app-center-test.md
+        - name: Azure Load Testing
+          href: tasks/test/azure-load-testing.md
         - name: Cloud-based Apache JMeter Load Test
           href: tasks/test/run-jmeter-load-test.md
         - name: Cloud-based Load Test
