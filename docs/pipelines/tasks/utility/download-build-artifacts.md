@@ -46,7 +46,7 @@ Use this task to download build artifacts.
 |`downloadPath`<br/>Destination directory|(Required) Path on the agent machine where the artifacts will be downloaded <br/>Default value: `$(System.ArtifactsDirectory)`|
 |`cleanDestinationFolder`<br/>Clean destination folder|(Optional) Delete all existing files in destination folder before artifacts are downloaded <br/>Default value: `false`|
 |`parallelizationLimit`<br/>Parallelization limit|(Optional) Number of files to download simultaneously <br/>Default value: `8`|
-|`extractTars`<br/>Extract all files that are stored inside tar archives|(Optional) Extract all .tar files. Enabling `StoreAsTar` option in [PublishBuildArtifacts](./publish-build-artifacts.md) task will store artifacts as .tar files automatically. This allows to preserve Unix file permissions. <br/>Default value: `false`|
+|`extractTars`<br/>Extract all files that are stored inside tar archives|(Optional) Extract all .tar files. Enabling `StoreAsTar` option in [PublishBuildArtifacts](./publish-build-artifacts.md) task will store artifacts as .tar files automatically. This option allows you to preserve Unix file permissions. <br/>Default value: `false`|
 
 ## Open source
 
