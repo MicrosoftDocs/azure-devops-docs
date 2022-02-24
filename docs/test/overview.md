@@ -346,7 +346,7 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 
 ### Requirements quality widget 
 
-The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate **for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
+The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate** for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
 
 :::image type="content" source="../pipelines/test/media/requirements-traceability/requirements-quality-widget.png" alt-text="Screenshot of Requirements traceability widget added to dashboard.":::
 

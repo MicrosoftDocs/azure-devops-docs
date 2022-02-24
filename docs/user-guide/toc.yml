@@ -38,6 +38,8 @@
     href: ../organizations/security/request-changes-permissions.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
   - name: Grant or restrict permissions to select tasks
     href: ../organizations/security/restrict-access.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
+  - name: Security best practices
+    href: ../organizations/security/security-best-practices.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
 - name: Key concepts
   items:
   - name: Plan your organizational structure

@@ -55,5 +55,6 @@ additionalContent: |
   ## Related articles
     - [Troubleshoot access and permission issues in Azure DevOps](troubleshoot-permissions.md)
     - [Azure access FAQs](../accounts/faq-azure-access.yml)
+    - [Security best practices](security-best-practices.md)
 
   *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
