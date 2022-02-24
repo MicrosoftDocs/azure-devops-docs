@@ -267,6 +267,8 @@ additionalContent:
               url: ./organizations/security/about-permissions.md
             - text: Security quick reference index
               url: ./organizations/security/quick-reference-index-security.md
+            - text: Security best practices
+              url: ./organizations/security/security-best-practices.md
             - text: Access levels
               url: ./organizations/security/access-levels.md
             - text: Billing  

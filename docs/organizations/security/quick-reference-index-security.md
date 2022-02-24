@@ -87,6 +87,7 @@ For project collection and project administrators, learn more about security and
       - [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
    :::column-end:::
    :::column span="1":::
+      - [Security best practices](security-best-practices.md)
       - [Security groups](about-permissions.md#security-group-membership)  
       - [Security policies](../accounts/change-application-access-policies.md#security-policies)  
       - [Security roles](about-security-roles.md)  
