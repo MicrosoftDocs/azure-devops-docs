@@ -706,6 +706,8 @@
           href: tasks/utility/archive-files.md
         - name: Azure Network Load Balancer
           href: tasks/utility/azure-nlb-management.md
+        - name: Azure Static Web App
+          href: tasks/utility/azure-static-web-app.md
         - name: Bash
           href: tasks/utility/bash.md
         - name: Batch script
