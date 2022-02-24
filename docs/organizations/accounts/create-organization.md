@@ -32,7 +32,7 @@ Use an organization to connect groups of related projects, and help to scale up 
 ## Prerequisites
 
 * Understand how to [plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
-* Determine whether you want to use only Microsoft accounts or authenticate users with Azure AD. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choosing-your-organization-administrator-account-type).
+* Determine whether you want to use only Microsoft accounts or authenticate users with Azure AD. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).
 
 ::: moniker-end
 
