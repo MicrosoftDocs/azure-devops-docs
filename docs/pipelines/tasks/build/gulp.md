@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: EC168F1F-4B27-4688-87CE-E4D12E885CC5
 ms.author: vijayma
 author: vijayma
-ms.date: 12/17/2019
+ms.date: 02/24/2022
 monikerRange: '>= tfs-2015'
 ---
 
@@ -14,6 +14,10 @@ monikerRange: '>= tfs-2015'
 # Gulp task
 
 [!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+
+> [!NOTE]
+> Gulp is not preinstalled on all hosted agents. See [installed software on virtual machine images](../../agents/hosted.md#software). 
+
 
 Use this task to run gulp tasks using the Node.js streaming task-based build system.
 
