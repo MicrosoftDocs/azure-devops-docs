@@ -26,8 +26,7 @@ Use this task to build and deploy an Azure Static Web App.
 | `routes_location`<br/>Routes location | (Optional) Directory location where the routes.json file can be found, relative to working directory. Use `staticwebapp.config.json`. |
 | `config_file_location`<br/>Config file location | (Optional) Directory location where the `staticwebapp.config.json` file can be found, relative to working directory. |
 | `skip_app_build`<br/>Skip app build | (Optional) Skips Oryx build for app folder.|
-
-| `azure_static_web_apps_api_token`<br/>Azure Static Web Apps api token | (Optional) Api token for deployment. Not required if passed as an environment variable.|
+| `azure_static_web_apps_api_token`<br/>(Optional) Azure Static Web Apps api token | (Optional) Api token for deployment. Not required if passed as an environment variable.|
 
 
 The following is an example YAML snippet to build and publish a static web app.
