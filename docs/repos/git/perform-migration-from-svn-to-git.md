@@ -3,15 +3,15 @@ title: Migrate from Subversion (SVN) to Git
 description: Learn how to migrate from Subversion (SVN) to Git, including history
 ms.topic: article
 ms.technology: devops-code-git
-ms.date: 06/04/2019
 monikerRange: '<= azure-devops'
+ms.date: 02/24/2022
 ---
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/devops/develop/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a migration *with* history.
+When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/devops/develop/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history. The guidance provided in this article introduces a migration *with* history.
 
 SVN migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, and whether you're using regular SVN or close relative like SVK. 
 
@@ -140,12 +140,12 @@ In this step, you will create a bare repository and make its default branch matc
     git push bare 
     ```
 
-3. Rename "trunk" branch to "master"
-Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard "master" branch using:
+3. Rename the `trunk` branch to `main`. 
+Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard `main` branch using:
    
     ```
     cd c:\new-bare.git
-    git branch -m svn/trunk master
+    git branch -m svn/trunk main
     ```
 4. Clean up branches and tags
 git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
@@ -187,7 +187,7 @@ Moving from a centralized version control system to Git is more than just migrat
 - [Ignore file changes with Git](./ignore-files.md?tabs=visual-studio)
 - [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
 
-> Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
+> Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [Branching guidance](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
