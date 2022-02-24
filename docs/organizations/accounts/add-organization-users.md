@@ -9,7 +9,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/24/2021
+ms.date: 02/20/2022
 ---
 
 # Add organization users and manage access
@@ -103,7 +103,7 @@ To give other users access to your organization, add their email addresses.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
@@ -162,7 +162,7 @@ You can see all security groups in a project using the [az devops security group
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported-on-premises.md)]
 
 * * *
 
@@ -239,7 +239,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
@@ -306,7 +306,7 @@ ID                                    Display Name         Email                
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported-on-premises.md)]
 
 * * *
 
@@ -340,7 +340,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 #### Q: Which email addresses can I add?
 
-A:
+**A:**
 
 * If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
 
@@ -354,19 +354,19 @@ After you add members to your project, each member gets an invitation email that
 
 #### Q: What if they don't get or lose the invitation email?
 
-A:
+**A:**
 
-* **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+- For **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 
-* **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
+- For **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
 ### Q: Why can't I add any more members?
 
-A: See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.yml#q--why-can-t-i-add-any-more-members-to-my-project-).
+**A:** See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.yml#q--why-can-t-i-add-any-more-members-to-my-project-).
 
-#### Q: How is *access* different from *permissions?
+#### Q: How is *access* different from *permissions*?
 
-A: Access levels control user access to select web portal features, based on the user's subscription. Permissions control a user's access to select operations, based on security group membership or specific Access Control Level (ACL) assignments made to a specific user or group.
+**A:** Access levels control user access to select web portal features, based on the user's subscription. Permissions control a user's access to select operations, based on security group membership or specific Access Control Level (ACL) assignments made to a specific user or group.
 
 ## Next steps
 

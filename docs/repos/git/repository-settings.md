@@ -1,15 +1,15 @@
 ---
-title: Git repository settings
+title: Set Git repository settings
 titleSuffix: Azure Repos
-description: Learn about settings you can set for a Git repository  
+description: Learn how to configure a Git repository and its branches.   
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
-ms.topic: conceptual
-ms.date: 12/13/2021
+ms.topic: how-to
 monikerRange: '>= tfs-2017' 
+ms.date: 02/23/2022
 ---
 
-# Git repository settings and policies
+# Set Git repository settings and policies
 
 [!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
@@ -215,6 +215,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ### Repository policies or options
 
 The following table summarizes the policies or options you can set for either all or individual repositories. Policies set for **All Repositories** set the default for individual repositories added at a later date.
@@ -409,14 +410,19 @@ The following table summarizes the policies you can define to customize a branch
 
 ## Prerequisites 
 
-- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 
 ::: moniker range=">= azure-devops-2020"
-
-- If you want to use [az repos](/cli/azure/repos) Azure DevOps CLI commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+::: moniker-end
+ 
+::: moniker range="< azure-devops-2020"
+- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 ::: moniker-end
 
+
 <a name="view-and-edit-repository-settings"></a>
+
 ## View and edit settings and policies
 
 You can configure *settings* for all repositories across an organization or project, or for individual repositories. You can configure *policies* for all repositories, for individual repositories, or for specified branches across repositories. For information about setting branch policies, see [Branch policies](branch-policies.md).
@@ -495,9 +501,129 @@ To configure repository settings and policies through the web portal, open **Pro
 
 ::: moniker range="> azure-devops-2020" 
 
+You can use Azure DevOps CLI to list respositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
+
+[List repositories](#repos-list) &#124; [List repository details](#repos-show) &#124; [Update or rename a repository](#repos-update)  
+[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update respository policy](#update-policy)
+
+
 You can use Azure CLI to list, show, and update policies for a branch or repository, or for all repositories in a project.
 
+<a name="repos-list" />
+
+### List repositories
+
+Use [az repos list](/cli/azure/repos#az-repos-list) to list all repositories for a project. 
+
+```azurecli
+az repos list [--detect {false, true}]
+              [--org]
+              [--project]
+              [--subscription]
+```
+
+**Parameters**
+
+|Parameter|Description|
+|---------|-----------|
+|`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+
+**Example**
+
+The following command returns all Git repositories for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+
+```azurecli
+az repos list --output table
+ID                                    Name            Default Branch    Project
+------------------------------------  --------------  ----------------  --------------
+50a9df8e-5024-49d7-bf63-d3989139627e  Fabrikam Fiber  main              Fabrikam Fiber
+ac228555-ea89-4881-9ace-dfa065baf7d3  Test 1-2-3      main              Fabrikam Fiber
+0d58f562-4a10-495d-94d7-7ac61a22d7cc  Testing 1 2 3   main              Fabrikam Fiber
+30954ce5-417b-4930-b8d2-8b6cac934a34  contosoREPO     main              Fabrikam Fiber
+```
+
+
+<a name="repos-show" />
+
+### List repository details
+
+Use [az repos show](/cli/azure/repos#az-repos-show) to list information about a repository or open it in a web browser. 
+
+```azurecli
+az repos show --repository
+              [--detect {false, true}]
+              [--open]
+              [--org]
+              [--project]
+              [--subscription]
+```
+
+**Parameters**
+
+|Parameter|Description|
+|---------|-----------|
+|`repository`|Name or ID of a repository.  |
+|`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`open`|Open the repository page in your web browser.|
+|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+
+**Example**
+
+The following command lists the details of the *contosoREPO* for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+```azurecli
+az repos show --repository contosoREPO --output table
+ID                                    Name         Default Branch    Project
+------------------------------------  -----------  ----------------  --------------
+30954ce5-417b-4930-b8d2-8b6cac934a34  contosoREPO  main              Fabrikam Fiber
+```
+For more details, enter the following command: 
+
+```azurecli
+az repos show --repository contosoREPO
+{
+  "defaultBranch": "refs/heads/main",
+  "id": "30954ce5-417b-4930-b8d2-8b6cac934a34",
+  "isDisabled": false,
+  "isFork": null,
+  "name": "contosoREPO",
+  "parentRepository": null,
+  "project": {
+    "abbreviation": null,
+    "defaultTeamImageUrl": null,
+    "description": "Guidance and source control to foster a vibrant ecosystem for Fabrikam Fiber applications and extensions.",
+    "id": "56af920d-393b-4236-9a07-24439ccaa85c",
+    "lastUpdateTime": "2021-05-24T21:52:14.95Z",
+    "name": "Fabrikam Fiber",
+    "revision": 438023732,
+    "state": "wellFormed",
+    "url": "https://dev.azure.com/fabrikamprime/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c",
+    "visibility": "private"
+  },
+  "remoteUrl": "https://fabrikamprime@dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_git/contosoREPO",
+  "size": 1627,
+  "sshUrl": "git@ssh.dev.azure.com:v3/fabrikamprime/Fabrikam%20Fiber/contosoREPO",
+  "url": "https://dev.azure.com/fabrikamprime/56af920d-393b-4236-9a07-24439ccaa85c/_apis/git/repositories/30954ce5-417b-4930-b8d2-8b6cac934a34",
+  "validRemoteUrls": null,
+  "webUrl": "https://dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_git/contosoREPO"
+}
+```
+
+<a name="repos-update" />
+
+### Update a repository  
+[!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
+
 <a name="repos-policy-list"></a>
+
 ### List policies
 
 Use [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list) to list all policies for all project repositories and branches. Use the `repository-id` and `branch` parameters to list policies for specific repositories and branches.
@@ -547,6 +673,7 @@ ID    Name                         Is Blocking    Is Enabled    Repository Id   
 ```
 
 <a name="show-policy"></a>
+
 ### Show policy details
 
 To show the details of any policy, use [az repos policy show](/cli/azure/repos/policy#az-repos-policy-show). You can get the policy ID by running `az repos policy list`.
@@ -657,6 +784,7 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 
 
 ::: moniker range=">= azure-devops-2020"
+
 <a id="default-branch-name"></a>
 
 ## Default branch name

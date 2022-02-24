@@ -719,7 +719,7 @@ For additional information, see the following resources:
       Reset your local branch to the most recent commit on a remote branch
    :::column-end:::
    :::column span="1":::
-     `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/master`)
+     `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/main`)
    :::column-end:::
    :::column span="1":::
      Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**  

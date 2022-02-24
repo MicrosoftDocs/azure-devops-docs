@@ -12,7 +12,7 @@
     href: git-config.md
   - name: Clone an existing repo
     href: clone.md
-  - name: Import repo - Web
+  - name: Import repo 
     href: import-git-repository.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
