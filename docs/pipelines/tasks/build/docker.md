@@ -82,7 +82,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: contosoRepository
+    repository: contosoRepository # user/contosoRepository for DockerHub
     tags: |
       tag1
       tag2
