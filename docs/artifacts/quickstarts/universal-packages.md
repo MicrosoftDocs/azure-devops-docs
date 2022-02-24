@@ -58,7 +58,7 @@ With universal packages, you can store different types of packages other than th
 
 ## Publish universal packages
 
-To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase and can only use letters, numbers, and dashes. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
+To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and non-consecutive dashes, underscores, and periods. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
 
 The following command will publish a universal package to an organization-scoped feed:
 
