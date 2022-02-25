@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 02/16/2021
 ---
@@ -38,7 +38,7 @@ Ensure that all members of your organization or group are added to your organiza
 
 ::: moniker-end
 
-To delegate the task of managing user access, add a user with Stakeholder or higher access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
+To delegate the task of managing user access, add a user with **Stakeholder** or higher access to the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md).
 
 ## Grant or restrict permissions  
 
@@ -53,8 +53,8 @@ Access to features and functions is controlled by access-level assignments, perm
 
 To delegate specific tasks to others, add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
 
-- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)  
-- [Set permissions at the project level or project collection level](../organizations/security/set-project-collection-level-permissions.md)
+- [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
+- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
 
 To learn more about permissions and security, review the following articles:
 
@@ -85,7 +85,7 @@ To limit the identity selection to just those users and groups added to a projec
 
 1. Enable the **Limit user visibility for projects** preview feature for the organization. To learn how, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
 2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
-3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. To learn more, see [Set permissions at the project- or collection-level](../organizations/security/set-project-collection-level-permissions.md). 
+3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. To learn more, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility for projects** preview feature is enabled. 
 
 ::: moniker-end  

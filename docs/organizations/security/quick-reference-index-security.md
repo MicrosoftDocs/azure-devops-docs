@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Index to concepts and tasks for configuring security.
 ms.custom: quick-reference-index
 ms.technology: devops-security
-ms.assetid:
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
@@ -28,7 +27,7 @@ As individual contributors to Azure DevOps, learn about how permissions and acce
 - [Default permissions & access](permissions-access.md)   
 - [View permissions](view-permissions.md)   
 - [Troubleshoot permissions](troubleshoot-permissions.md)   
-- [Increase permission levels, find an admin](lookup-organization-owner-admin.md)   
+- [Request an increase in permission levels](request-changes-permissions.md)   
 - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
 
 ::: moniker range="azure-devops"
@@ -77,7 +76,7 @@ For project collection and project administrators, learn more about security and
       - [Namespaces](about-security-identity.md#namespaces)   
       - [OAuth](../../integrate/get-started/authentication/oauth.md)
       - [Organizations](../../user-guide/plan-your-azure-devops-org-structure.md)  
-      - [Organization owner](lookup-organization-owner-admin.md#find-owner)  
+      - [Organization owner](look-up-organization-owner.md)  
       - [Permissions](about-permissions.md#permissions)  
       - [Permission states](about-permissions.md#permission-states) 
       - [Personal Access Tokens (PATs)](about-security-identity.md#authentication)   
@@ -87,6 +86,7 @@ For project collection and project administrators, learn more about security and
       - [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
    :::column-end:::
    :::column span="1":::
+      - [Security best practices](security-best-practices.md)
       - [Security groups](about-permissions.md#security-group-membership)  
       - [Security policies](../accounts/change-application-access-policies.md#security-policies)  
       - [Security roles](about-security-roles.md)  
@@ -123,8 +123,8 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        
        
       **Set project-level permissions** 
-       - [Change individual permissions](change-individual-permissions.md)   
-       - [Set project-level permissions](set-project-collection-level-permissions.md)   
+       - [Request an increase in permission levels](request-changes-permissions.md)   
+       - [Change project-level permissions](change-project-level-permissions.md)   
        - [Grant or restrict permissions to select tasks](restrict-access.md)   
        - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Analytics permissions](../../report/powerbi/analytics-security.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
@@ -161,7 +161,9 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        
        
       **Set organization or collection-level permissions**  
-       - [Set organization-level permissions](set-project-collection-level-permissions.md)  
+       - [Change organization-level permissions](change-organization-collection-level-permissions.md)   
+       - [Change project collection-level permissions](change-organization-collection-level-permissions.md)   
+       - [Change process permissions](set-permissions-access-work-tracking.md#process-permissions) 
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Enable Project-Scoped Users Group](../projects/about-projects.md#project-scoped-user-group) 
       
@@ -199,9 +201,9 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Manage Active Directory groups](/azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
        - [Add Active Directory security groups to Azure DevOps security groups](add-ad-aad-built-in-security-groups.md)    
        
-       
-       **Set collection and server instance permissions** 
-       - [Set collection-level permissions](set-project-collection-level-permissions.md)  
+       **Set collection and server instance permissions**  
+       - [Change project collection-level permissions](change-organization-collection-level-permissions.md)   
+       - [Change process permissions](set-permissions-access-work-tracking.md#process-permissions) 
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Add server administrators](/azure/devops/server/admin/add-administrator)  
    :::column-end:::
@@ -221,22 +223,22 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
 :::row:::
    :::column span="1":::
       **Set Boards/work tracking permissions** 
-       - [Create tag definition](set-project-collection-level-permissions.md#project-level)
+       - [Create tag definition](change-project-level-permissions.md)
        - [Delete and restore work items](set-permissions-access-work-tracking.md#move-delete-permissions)  
-       - [Delete field from organization](set-project-collection-level-permissions.md#collection-level)
+       - [Delete field from organization](change-organization-collection-level-permissions.md)
        - [Delivery plans](../../boards/plans/edit-delivery-plan-permissions.md)
        - [Move work items out of a project](set-permissions-access-work-tracking.md#move-delete-permissions)  
        - [Manage area and iteration paths](set-permissions-access-work-tracking.md#set-permissions-area-path)
        - [Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path) 
-       - [Permanently delete work items](set-project-collection-level-permissions.md#project-level)       
+       - [Permanently delete work items](change-project-level-permissions.md)       
        - [Process permissions](set-permissions-access-work-tracking.md#process-permissions)
        - [Queries and query folders](../../boards/queries/set-query-permissions.md)       
        
        
       **Set test permissions**
        - [Create, delete, and view test runs](set-permissions-access-test.md#delete-test-artifacts)  
-       - [Manage test configurations](set-project-collection-level-permissions.md#project-level)  
-       - [Manage test environments](set-project-collection-level-permissions.md#project-level)  
+       - [Manage test configurations](change-project-level-permissions.md)  
+       - [Manage test environments](change-project-level-permissions.md)  
        - [Manage test controllers](set-permissions-access-test.md#test-controllers)
        - [Manage test plans and test suites under an area path](set-permissions-access-test.md#manage-test-artifacts)
        - [Set access, license requirements](../../test/manual-test-permissions.md)
@@ -246,9 +248,9 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Git repository permissions](../../repos/git/set-git-repository-permissions.md)  
        - [TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)  
        - [Git branch permissions](../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
-       - [Administer shelved changes (TFVC)](set-project-collection-level-permissions.md#project-level)
-       - [Administer workspaces (TFVC)](set-project-collection-level-permissions.md#project-level)
-       - [Create a workspace (TFVC)](set-project-collection-level-permissions.md#project-level)
+       - [Administer shelved changes (TFVC)](change-project-level-permissions.md)
+       - [Administer workspaces (TFVC)](change-project-level-permissions.md)
+       - [Create a workspace (TFVC)](change-project-level-permissions.md)
        
        
       **Set Git repository and branch policies**  
@@ -272,11 +274,11 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
       **Set pipeline permissions and policies** 
        - [Assign pipeline security roles](../../pipelines/policies/permissions.md)
        - [Grant version control permissions to the build service](../../pipelines/scripts/git-commands.md)  
-       - [Administer build resource permissions](set-project-collection-level-permissions.md#project-level)
-       - [Manage build resources](set-project-collection-level-permissions.md#project-level)
-       - [Manage pipeline policies](set-project-collection-level-permissions.md#project-level)
-       - [Use build resources](set-project-collection-level-permissions.md#project-level)
-       - [View build resources](set-project-collection-level-permissions.md#project-level)  
+       - [Administer build resource permissions](change-project-level-permissions.md)
+       - [Manage build resources](change-project-level-permissions.md)
+       - [Manage pipeline policies](change-project-level-permissions.md)
+       - [Use build resources](change-project-level-permissions.md)
+       - [View build resources](change-project-level-permissions.md)  
        - [Set pipeline permissions](../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)    
    :::column-end:::
    :::column span="1":::

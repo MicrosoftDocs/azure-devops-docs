@@ -7,7 +7,7 @@ ms.technology: devops-collab
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= azure-devops-2020'
 ms.date: 01/19/2022
 ---
@@ -129,8 +129,8 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       New Wiki experience  
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
-      [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      [Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)  
+      [Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)  
       [Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)   
       [YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)
    :::column-end:::
@@ -240,7 +240,7 @@ For information on other user settings and preferences, see [Set user preference
 When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings are not changed. Users can enable or disable the feature on their own. 
 
 > [!TIP]  
-> If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
+> If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Preview features options for the organization, part 1.](media/preview-features/org-features-s187-1.png)
@@ -262,7 +262,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 1. Select the level from the menu provided. 
 
 	> [!TIP]  
-	> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
+	> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
 
 1. To enable or disable a feature, choose the slider. 
 

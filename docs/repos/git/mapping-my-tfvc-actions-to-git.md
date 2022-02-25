@@ -1,22 +1,22 @@
 ---
-title: Version Control - Map TFVC actions to Git
+title: Map TFVC actions to Git
 titleSuffix: Azure Repos
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
 ms.topic: conceptual
-ms.date: 04/25/2018
 monikerRange: '<= azure-devops'
+ms.date: 02/24/2022
 ---
 
 
-# Learn to map your familiar Team Foundation Version Control (TFVC) commands and workflows to Git 
+# Understand how Team Foundation Version Control (TFVC) commands map to Git workflows 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.yml) actions, and wondering how they map to [Git](index.yml)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
-This article will not delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
+This article doesn't delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
 
 ## Start at the beginning by creating a new repo
 
@@ -28,7 +28,7 @@ Once the repo is created, you are presented with step-by-step instructions to qu
 
 ![Get Started with a new Git repo in Azure Repos](./media/mapping-my-tfvc-actions-to-git/actionmap-newrepoinfo.png)
 
-Click on the `Create a ReadMe file' at the end of the instruction page, to give the repo context and to create some history.
+Click **Create a ReadMe file** at the end of the instruction page, to give the repo context and to create some history.
 
 ![Create a README to initialize a new Git repo in Azure Repos](./media/mapping-my-tfvc-actions-to-git/actionmap-readme.png)
 
@@ -56,7 +56,7 @@ You only need to clone once per repo, but like TFVC workspaces, you can have mul
 
 ## Create a branch
 
-With Git, you are always working in a branch and by default in the "master" branch. You are recommended to create multiple local branches. It's a process that takes seconds and allows you to seamlessly context switch between branches and work in isolation. Unlike TFVC branches, which are paths scoped, Git branches are repository scoped. They are lightweight, can be local only, or shared with others when you are ready to share your changes.
+With Git, you are always working in a branch and by default in the`main` branch. We recommend you create multiple local branches. It's a process that takes seconds and allows you to seamlessly context switch between branches and work in isolation. Unlike TFVC branches, which are scoped to paths, Git branches are repository scoped. They are lightweight, can be local only, or shared with others when you are ready to share your changes.
 
 Consider branching if you need to work in isolation, need to suspend your work, focus on new features, or if you are planning to conduct a Git [pull request](pull-requests.md).
 
@@ -142,11 +142,11 @@ In Visual Studio, choose **Team Explorer > Changes > Included Changes**
 
 ---
 
-## Checkin changes and commit locally
+## Check in changes and commit locally
 
-In TFVC, you share your changes with a Check In, which sends your pending changes to the server.  The Git process is a bit different.  First, you commit to the local repository, creating a commit object (like a changeset), then you push to send those changes with the server.
+In TFVC, you share your changes with a Check In, which sends your pending changes to the server.  The Git process is a bit different.  First, you commit to the local repository, creating a commit object (like a changeset), then you push to send those changes to the server.
 
-You commit the changes to your local repository using `git commit`, which feels like doing a `Checkin Pending Changes` in TFVC. A key difference is that the `git commit` commits your changes to the **local**, not the **remote** repository. 
+You commit the changes to your local repository using `git commit`, similar to a `Checkin Pending Changes` in TFVC. A key difference is that the `git commit` commits your changes to the **local** repository instead of the **remote** repository. 
 
 # [Command Line](#tab/command-line)
 
@@ -299,7 +299,7 @@ git clean -xdf
 
 The scenario is synonymous to doing a `Get > Latest Version` with the `Overwrite writable files that are not checked out` and `Overwrite all files if the local version matches the specified version` options in TFVC.
 
-Alternatively you can manually delete your local repo - after making a validated copy off course - and then `clone` the repository again.
+Alternatively you can manually delete your local repo&mdash;after making a validated copy of course&mdash;and then `clone` the repository again.
 
 There are a lot more actions and options available to Git users. Here are some useful reference sites for further reading:
 

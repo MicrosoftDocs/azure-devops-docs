@@ -83,7 +83,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      `git init` *foldername*<br>`cd` *foldername*<br>`git add --all`<br>`git commit -m "Initial commit"`
    :::column-end:::
    :::column span="1":::
-     Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](media/share-your-code-in-git-vs/publish_status_bar.png)  ) from the status bar in the lower right.  
+     Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](media/share-your-code-in-git-vs/visual-studio-2013-2015/publish-status-bar.png)  ) from the status bar in the lower right.  
    :::column-end:::
 :::row-end:::
 ---
@@ -719,7 +719,7 @@ For additional information, see the following resources:
       Reset your local branch to the most recent commit on a remote branch
    :::column-end:::
    :::column span="1":::
-     `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/master`)
+     `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/main`)
    :::column-end:::
    :::column span="1":::
      Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**  

@@ -1,11 +1,11 @@
-﻿---
+---
 title: Revoke personal access tokens for users
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Administrators can revoke personal access tokens (PATs) for users when they're compromised, protecting the organization.
-ms.technology: devops-accounts
+ms.technology: devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 07/28/2020
@@ -20,7 +20,7 @@ If your personal access token (PAT) is compromised, take immediate action. Learn
 
 ## Prerequisites
 
-Only an organization administrator or Project Collection Administrator (PCA) can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To learn how to find your organization's admin, see [Look up administrators and organization Owner](../security/lookup-organization-owner-admin.md).
+Only the **Organization owner** or a member of the **Project Collection Administrators** group can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/change-organization-collection-level-permissions.md). To learn how to find your **Organization owner**, see [Look up the organization Owner](../security/look-up-organization-owner.md).
 
 For users, if you want to create or revoke your own PATs, see [Create or revoke personal access tokens](use-personal-access-tokens-to-authenticate.md).
 

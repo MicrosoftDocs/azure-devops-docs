@@ -31,7 +31,7 @@ As your team grows, you can easily move from one team to two. In this example, w
 ## Prerequisites 
 
 - If you don't have a project yet, [create one](../projects/create-project.md).  
-- If you're not a Project Administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
+- To add a team, you must be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
 
 ## Add two feature teams 
 
@@ -374,7 +374,13 @@ Now that your two feature teams are configured, you need to move existing work i
 
 #### [New Teams page](#tab/preview-page)
 
-[!INCLUDE [note-new-teams-not-supported](../../includes/note-new-teams-not-supported.md)]
+1. [Create a query](../../boards/queries/using-queries.md) of all work items you want to reassign. Multi-select those items, which belong to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
+
+   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items, New Teams page." />
+
+2. After you bulk modify, do a bulk save.  
+  
+   <img src="media/add-team/query-bulk-save.png" alt="Screenshot of Bulk save edited work items, New Teams page." />  
 
 #### [Current page](#tab/current-page) 
  
@@ -382,7 +388,7 @@ Now that your two feature teams are configured, you need to move existing work i
 
 1. [Create a query](../../boards/queries/using-queries.md) of all work items you want to reassign. Multi-select those items, which belong to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
 
-   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items" />
+   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items." />
 
 2. After you bulk modify, do a bulk save.  
   

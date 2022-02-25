@@ -125,9 +125,7 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/sql-reports/**": "< azure-devops",
         "reference/witadmin/**": "<= azure-devops"
       },
       "ms.author": {

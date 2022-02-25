@@ -2,7 +2,7 @@
 title: Default work tracking permissions & access 
 titleSuffix: Azure Boards & TFS 
 description: Default permissions and access levels for tracking work tracking in Azure Boards & Team Foundation Server
-ms.technology: devops-agile
+ms.technology: devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
 author: KathrynEE
@@ -30,9 +30,9 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
-> Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
+> Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md). 
 
-For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
+For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](request-changes-permissions.md), you can do so.
 
 ## Work items
 
@@ -81,7 +81,7 @@ You can manage permissions for individual plans. To learn more, see [Edit or man
 
 ## Test management
 
-Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context Security page.  
+Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](change-project-level-permissions.md) from the **Project settings>Security** page.  
 
 [!INCLUDE [temp](includes/test.md)]
 
@@ -126,7 +126,7 @@ You set project-level information permissions from **Project settings** > **Perm
 ---
 :::row:::
    :::column span="2":::
-      [View project-level information](set-project-collection-level-permissions.md)
+      [View project-level information](change-project-level-permissions.md)
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -189,7 +189,7 @@ You set project-level information permissions from **Project settings** > **Perm
 ---
 :::row:::
    :::column span="2":::
-      [Edit project-level information](set-project-collection-level-permissions.md)
+      [Edit project-level information](change-organization-collection-level-permissions.md)
    :::column-end:::
    :::column span="1":::
       

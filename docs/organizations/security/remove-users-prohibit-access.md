@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/14/2019
 ---
 
-# Remove user accounts
+# Remove user accounts from Azure Active Directory or Active Directory
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -62,5 +62,6 @@ For information on removing users from AD or Azure AD, see one of the following 
 ## Related articles
 
 * [About permissions and inheritance](../../organizations/security/about-permissions.md)
-* [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 * [About security, authentication, and authorization](about-security-identity.md)

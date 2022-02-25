@@ -31,7 +31,7 @@ When you [create an organization](create-organization.md) in Azure DevOps, you c
 
 ## Prerequisites
 
-You must be [the organization Owner](../security/lookup-organization-owner-admin.md) to change your organization region.
+- You must be [an organization owner](../security/look-up-organization-owner.md) to change your organization region.
 
 ## Change organization region
 

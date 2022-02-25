@@ -16,7 +16,7 @@ ms.date: 12/31/2019
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
-![Location of a new hub in Azure DevOps Services](../media-procedures/hub-location.png)
+![Location of a new hub in Azure DevOps Services](../media/hub-location.png)
 
 ## Structure of an extension
 ```no-highlight
@@ -48,7 +48,7 @@ npm install vss-web-extension-sdk
 
 ## Your hub page: `hello-world.html`
 * Every hub displays a web page
-* Check out the targetable hub groups in the [extension points reference](/previous-versions/azure/devops/extend/reference/targets/overview#hubs)
+* Check out the targetable hub groups in the [extension points reference](../reference/targets/overview.md#hubs)
 
 Create a `hello-world.html` file in the `home` directory of your extension.
 Reference the SDK and call *init()* and *notifyLoadSucceeded()*.
@@ -72,7 +72,7 @@ Reference the SDK and call *init()* and *notifyLoadSucceeded()*.
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](../develop/manifest.md)
-* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/extend/reference/targets/overview)
+* Find out more about the contribution points in [Extensibility points](../reference/targets/overview.md)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -139,7 +139,7 @@ The **contributions** stanza adds your contribution - the Hello hub - to your ex
 
 For each contribution in your extension, the manifest defines
 - the type of contribution, hub, 
-- the contribution target, the work hub group (check out all of the [targetable hub groups](/previous-versions/azure/devops/extend/reference/targets/overview#targetable-hub-groups)),
+- the contribution target, the work hub group (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups)),
 - and the properties that are specific to each type of contribution. For a hub, there are the following properties:
 
 | Property           | Description                                                                                                                         

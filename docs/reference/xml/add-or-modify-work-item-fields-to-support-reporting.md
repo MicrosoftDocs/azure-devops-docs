@@ -5,10 +5,7 @@ description: Customize which fields appear in the relational warehouse or cube t
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
-ms.author: kaelli
-author: KathrynEE
 ms.topic: conceptual
-monikerRange: '< azure-devops'
 ms.date: 02/10/2017
 ---
 

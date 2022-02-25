@@ -2,7 +2,7 @@
 title: Set object-level permissions
 titleSuffix: Azure DevOps
 description: How to grant permission and access at the object-level - repos, pipelines, work items, area paths, queries, wikis, dashboards, and more.
-ms.technology: devops-agile
+ms.technology: devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: chcomley
 author: chcomley
@@ -227,9 +227,9 @@ The following table provides information about setting permissions at the object
 | Object | Default group membership | How to access security | Inherited? |
 |--|--|--|--|
 | [Repos](../../repos/git/set-git-repository-permissions.md#open-security-for-a-repository) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) | Open **Project settings**, **Repositories** > highlight your repo > **Security**. | ✔️  |
-| [Git repository](../../repos/git/set-git-repository-permissions.md) |[Project Administrator](../../organizations/security/set-project-collection-level-permissions.md)  | Open **Project settings** > **Repositories** and the Git repository.  | ✔️ (from project settings for Git repository) |
-| [Git branch](../../repos/git/branch-permissions.md) |[Project Administrator](../../organizations/security/set-project-collection-level-permissions.md) | Open **Repos** > **Branches** > your branch > **More** ... > **Branch security**. | ✔️ |
-| [TFVC repository](../../repos/tfvc/set-tfvc-repository-permissions.md) |[Project Administrator](../../organizations/security/set-project-collection-level-permissions.md) | Open **Project settings** > **Repositories** and the TFVC repository.  | ✔️ |
+| [Git repository](../../repos/git/set-git-repository-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md)  | Open **Project settings** > **Repositories** and the Git repository.  | ✔️ (from project settings for Git repository) |
+| [Git branch](../../repos/git/branch-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md) | Open **Repos** > **Branches** > your branch > **More** ... > **Branch security**. | ✔️ |
+| [TFVC repository](../../repos/tfvc/set-tfvc-repository-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md) | Open **Project settings** > **Repositories** and the TFVC repository.  | ✔️ |
 
 ### Tips
 
@@ -309,7 +309,8 @@ Here are some additional tips for managing notifications.
 
 ## Related articles
 
-- [Set project-level permissions](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [Download permissions report for a repository](download-permissions-report.md)
 - [Manage permissions with command line tool](manage-tokens-namespaces.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)

@@ -215,7 +215,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Look up the organization owner or a Project Administrator](lookup-organization-owner-admin.md) 
+> [Look up a member of the Project Administrators group](look-up-project-administrators.md) 
+
 
 ## Related articles
 
