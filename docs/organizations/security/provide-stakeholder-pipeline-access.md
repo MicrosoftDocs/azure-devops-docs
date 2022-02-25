@@ -2,11 +2,11 @@
 title: Provide free access to pipelines for Stakeholders 
 titleSuffix: Azure DevOps Services
 description: Add & update work items, approve releases, view work tracking progress with Stakeholder access
-ms.technology: devops-new-user
+ms.technology: devops-security
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 07/28/2020
 ---

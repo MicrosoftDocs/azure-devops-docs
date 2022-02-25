@@ -7,7 +7,7 @@ ms.technology: devops-collab
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= azure-devops-2020'
 ms.date: 01/19/2022
 ---

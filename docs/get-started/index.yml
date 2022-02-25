@@ -1,11 +1,12 @@
 ### YamlMime:Landing
 
-title: Get started documentation
+title: Get started with Azure DevOps documentation 
 summary: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
 
 metadata:
-  title: Learn how to start using Azure DevOps
-  description: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
+  title: Get started with Azure DevOps documentation
+  titleSuffix: Azure DevOps  
+  description: Learn how to start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
   ms.prod: devops 
   ms.technology: devops-new-user
   ms.topic: landing-page 

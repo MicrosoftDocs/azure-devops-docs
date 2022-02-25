@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 02/16/2021
 ---

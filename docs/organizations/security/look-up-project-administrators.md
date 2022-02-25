@@ -1,12 +1,12 @@
 ---
 title: Find a project administrator
 titleSuffix: Azure DevOps
-description: How-to guide to learn who is a member of the Project Administrators group in Azure DevOps
+description: Quickstart guide to learn who is a member of the Project Administrators group in Azure DevOps
 ms.technology: devops-security
 ms.custom: security-refresh
 ms.author: kaelli
 author: KathrynEE
-ms.topic: how-to
+ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 02/11/2022
 --- 

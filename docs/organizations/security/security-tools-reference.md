@@ -5,7 +5,7 @@ description: Learn about the available tools to manage security and permissions 
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 10/12/2020
 ---

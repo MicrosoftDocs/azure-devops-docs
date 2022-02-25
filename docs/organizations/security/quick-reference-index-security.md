@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Index to concepts and tasks for configuring security.
 ms.custom: quick-reference-index
 ms.technology: devops-security
-ms.assetid:
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
