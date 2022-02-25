@@ -2,19 +2,19 @@
 title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
 ms.custom: seodec18, devx-track-azurecli
-description: How to add users to an organization. How to manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
+description: Learn how to add users to an organization and manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: how-to
 ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
-ms.date: 02/20/2022
+monikerRange: 'azure-devops'
+ms.date: 02/25/2022
 ---
 
 # Add organization users and manage access
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to add users to your organization and manage user access through direct assignment. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
 
@@ -103,8 +103,6 @@ To give other users access to your organization, add their email addresses.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
-
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
 <a id="add-user" />
@@ -159,10 +157,6 @@ az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM
 ```
 
 You can see all security groups in a project using the [az devops security group list](../security/add-manage-security-groups.md) command.
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported-on-premises.md)]
 
 * * *
 
@@ -239,8 +233,6 @@ The Users view shows key information per user in a table. In this view, you can 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
-
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
 <a id="update-user" />
@@ -303,10 +295,6 @@ ID                                    Display Name         Email                
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
 
 ```
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported-on-premises.md)]
 
 * * *
 
@@ -371,13 +359,11 @@ After you add members to your project, each member gets an invitation email that
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a project](../projects/create-project.md) or
-> [!div class="nextstepaction"]
 > [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
 
 ## Related articles
 
-* [Connect to a project](../../organizations/projects/connect-to-projects.md)
+* [Create a project](../projects/create-project.md)
 * [Invite external users](add-external-user.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
