@@ -3,6 +3,8 @@
   - name: Develop a web extension
     href: get-started/node.md
     displayName: package, publish, install, debug, dashboard, widget, build, task
+  - name: Extensibility points  
+    href: reference/targets/overview.md
   - name: Contribution model
     href: develop/contributions-overview.md
     displayName: plug, hub, action, build, task
@@ -129,8 +131,6 @@
     displayName: publish, extension, install, subscription
 - name: Reference (archived)
   items:
-  - name: Extension Points
-    href: /previous-versions/azure/devops/extend/reference/targets/overview
   - name: Client reference
     href: archived/rest-clients/toc.yml
   - name: Extension Debugging in a Browser
