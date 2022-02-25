@@ -40,6 +40,10 @@ You can use npmjs.com as an upstream source with new and existing feeds.
 
 1. Select **Save** when you are done.
 
+1. Select **Save** to save your changes.
+
+    :::image type="content" source="../media/save-upstream-source.png" alt-text="A screenshot showing how to save changes in upstream sources":::
+
 ## Filter to saved packages
 
 You can view the packages you saved from upstreams by selecting your **Source** from the dropdown menu.
