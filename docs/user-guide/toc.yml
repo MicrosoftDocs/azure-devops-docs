@@ -30,6 +30,8 @@
     href: ../organizations/accounts/create-organization.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
   - name: Manage your project
     href: project-admin-tutorial.md
+  - name: Manage your organization or collection
+    href: manage-organization-collection.md
   - name: Add users to a project or team 
     href: ../organizations/security/add-users-team-project.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
   - name: Manage teams and configure team tools
