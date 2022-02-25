@@ -41,9 +41,10 @@ sections:
       - question: I added a user to my project. Why can't they see the project?  
         answer: |
           Verify that the user hasn't been added to a group where the project-level **View project-level information** permission is not set or is set to **Deny**. To learn more, see [Change project-level permissions](change-project-level-permissions.md).  
+
       - question: Why can't guest users search for Azure Active Directory users?
         answer: |
-          By default, [Azure AD guests can't search the Azure AD in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#q--why-are--no-identities-found--when-i-try-to-add-users-from-azure-ad-to-my-azure-devops-organization-).
+          By default, [Access via Azure AD FAQs. Azure AD guests can't search the Azure AD in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities).
 
   - name: Organizations
     questions:

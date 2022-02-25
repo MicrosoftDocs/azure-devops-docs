@@ -5,7 +5,7 @@ ms.custom: seodec18
 description: Learn how to connect your organization to your Azure Active Directory
 ms.technology: devops-accounts
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 06/22/2020
@@ -24,7 +24,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 - You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help connecting to Azure AD. 
 - You must be a [member of the **Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) or the [**Organization owner**](../security/look-up-organization-owner.md) to make the connection.
-- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](./faq-azure-access.yml#q--how-can-i-convert-an-azure-ad-guest-into-a-member-).
+- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](./faq-azure-access.yml#how-can-i-convert-an-azure-ad-guest-into-a-member).
 - Inform users of the upcoming change.
    There's no downtime during this change, but users are affected. Let them know before you begin that there's a short series of steps they need to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
 - Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.

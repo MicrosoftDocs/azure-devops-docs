@@ -1,10 +1,10 @@
 ---
-title: Guidance for authentication | Azure DevOps Services REST APIs
-description: Guidance for authentication with Azure DevOps Services.
+title: Guidance for authentication
+titleSuffix: Azure DevOps  
+description: Guidance for authentication with Azure DevOps  
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
-ms.technology: devops-ecosystem
-ms.topic: conceptual
-ms.custom:
+ms.technology: devops-security
+ms.topic: conceptual 
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

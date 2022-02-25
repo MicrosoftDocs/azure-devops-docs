@@ -3,7 +3,7 @@ title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
 ms.custom: seodec18, devx-track-azurecli
 description: How to add users to an organization. How to manage users' access levels (like Stakeholder), direct assignments, invitations, and more.
-ms.topic: conceptual
+ms.topic: how-to
 ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley

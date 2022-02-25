@@ -12607,11 +12607,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/organizations/security/index.md",
-      "redirect_url": "/azure/devops/organizations/security/about-security-identity",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/boards/sprints/sprint-burndown.md",
       "redirect_url": "/azure/devops/report/dashboards/configure-sprint-burndown",
       "redirect_document_id": false

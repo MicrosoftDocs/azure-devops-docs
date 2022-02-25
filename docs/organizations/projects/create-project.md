@@ -5,7 +5,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Learn how to create a new project where your team can plan, track progress, and collaborate on building software solutions.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.technology: devops-accounts
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
