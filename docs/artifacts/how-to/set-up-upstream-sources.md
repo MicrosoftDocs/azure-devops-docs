@@ -59,7 +59,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select **Upstream sources**.
 
-1. Select **Add upstream source**.
+1. Select **Add Upstream**.
 
 1. Select **Azure Artifacts feed in this organization**.
 
@@ -67,7 +67,9 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select the package types you want to use, select the **View** and name your upstream source.
 
-1. Select **Add** when you are done.
+1. Select **Save** when you are done.
+
+    :::image type="content" source="../media/add-upstream-same-org.png" alt-text="A screenshot showing how to add a feed in your organization as an upstream source.":::
 
 ## Add a feed in a different organization as an upstream source
 
@@ -78,7 +80,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select **Upstream sources**.
 
-1. Select **Add upstream source**.
+1. Select **Add Upstream**.
 
 1. Select **Azure Artifacts feed in another organization**.
 
@@ -86,7 +88,9 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select the **Package type(s)** you want to use and enter an **Upstream source name**.
 
-1. Select **Add** when you are done.
+1. Select **Save** when you are done.
+
+    :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot showing how to add a feed in a different organization as an upstream source.":::
 
 ## Example: install NuGet packages from upstream sources with Visual Studio
 
