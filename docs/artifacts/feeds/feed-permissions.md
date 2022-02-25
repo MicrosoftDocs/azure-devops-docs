@@ -24,7 +24,7 @@ Feed owners can specify who can create and administer Artifacts feeds. To access
 > [!NOTE]
 > The Azure Artifacts settings icon will not be visible if you don't have the right permissions.
 
-By default, everyone in the same organization can create new feeds. A user who creates a feed is both an owner and an administrator of that feed.
+By default, users in an Azure DevOps organization can create new feeds in that organization. A user who creates a feed is both an owner and an administrator of that feed.
 
 1. Users in the same organization are able to create new feeds.
 

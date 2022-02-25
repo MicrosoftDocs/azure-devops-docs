@@ -58,13 +58,13 @@ There some important things to note regarding public feeds:
 
 ## Restore deleted feeds
 
-If you accidentally delete a feed, Azure Artifacts provides a 30 days window to recover your feed to its original state. After the 30 days, the feed will be deleted permanently. During the recovery window, the name of the feed remains reserved, packages are unavailable for download, and the write access is suspended for that feed.
+If you accidentally delete a feed, Azure Artifacts provides a 30 days window to recover your feed to its original state. After the 30 days, the feed will be deleted permanently. During the recovery window, the name of the feed remains reserved, packages are unavailable for download, and write access is suspended for that feed.
 
-You can view the feeds that are pending permanent deletion in your feed's dropdown list under the **Deleted Feeds** tab.
+You can view the feeds that are pending permanent deletion in the feed picker dropdown list under the **Deleted Feeds** tab.
 
 1. Select **Artifacts**.
 
-1. Select your feed's dropdown menu, and then select **Deleted Feeds**
+1. Select the feed picker dropdown menu, and then select **Deleted Feeds**
 
     > [!div class="mx-imgBorder"] 
     > ![Deleted feeds dropdown](media/deleted-feeds.png)
@@ -82,7 +82,7 @@ A feed pending deletion will still use storage space. If you want to permanently
 
 1. Select **Artifacts**.
 
-1. Select your feed's dropdown menu, and then select **Deleted Feeds**
+1. Select the feed picker dropdown menu, and then select **Deleted Feeds**
 
     > [!div class="mx-imgBorder"] 
     > ![Deleted feeds list](media/deleted-feeds.png)

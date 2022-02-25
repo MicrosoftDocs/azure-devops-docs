@@ -271,9 +271,9 @@ Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll
 
     :::image type="content" source="../media/recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin.":::
 
-1. Select your package, and then select the version that you want to delete.
+1. Select your package, and then select **Restore**.
 
-1. Select **Restore to feed**.
+    :::image type="content" source="../media/restore-package.png" alt-text="A screenshot showing how to restore deleted packages.":::
 
 ::: moniker-end
 
