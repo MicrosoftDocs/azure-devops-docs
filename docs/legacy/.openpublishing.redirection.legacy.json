@@ -16962,11 +16962,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/extend/reference/targets/overview.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/targets/overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/extend/test/debug-in-browser.md",
       "redirect_url": "/previous-versions/azure/devops/docs/extend/test/debug-in-browser",
       "redirect_document_id": false

@@ -58,7 +58,7 @@ Below is the code snippet that adds your action to the contributions section of 
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 
-Learn about all of the places where you can add actions in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
+Learn about all of the places where you can add actions in [Extensibility points](../reference/targets/overview.md).
 
 ## Your HTML page
 
