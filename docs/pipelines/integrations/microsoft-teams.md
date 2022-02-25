@@ -1,6 +1,6 @@
 ---
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: freshness-fy22q2, 
 title: Integrate Azure Pipelines and Microsoft Teams
 description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelines in your channel and subscribe to notifications. 

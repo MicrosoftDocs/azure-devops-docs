@@ -32,7 +32,7 @@ Also, you can use `tcm` command options to [copy and clone test plans and test s
 
 ## Prerequisites 
 
- For the project where you define the work item types, you must be a member of the **Project Administrators** security groups. See [Add accounts to administer project collections](../../organizations/security/set-project-collection-level-permissions.md).  
+ For the project where you define the work item types, you must be a member of the **Project Administrators** security group. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).  
 
 To run the **tcm** command-line tool, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 

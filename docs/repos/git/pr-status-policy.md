@@ -25,7 +25,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 ## Configure the branch policy 
 
-1. Navigate to Code > Branches and find the branch that you want to configure the policy on (typically `master` or `develop`). From the context menu, select the **Branch policies** option.
+1. Navigate to **Code>Branches** and find the branch that you want to configure the policy on (typically `main` or `develop`). From the context menu, select the **Branch policies** option.
 
     ![Select Branch policies from the context menu](media/pr-status-policy/branches.png)
 

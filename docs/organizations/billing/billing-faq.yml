@@ -1,4 +1,4 @@
-﻿### YamlMime:FAQ
+### YamlMime:FAQ
 metadata:
   title: Frequent questions about billing management
   titleSuffix: Azure DevOps
@@ -6,12 +6,11 @@ metadata:
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.technology: devops-billing
   ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 01/26/2022
   monikerRange: '>= tfs-2015'
-    
 title: Billing FAQs
 summary: |
   [!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]

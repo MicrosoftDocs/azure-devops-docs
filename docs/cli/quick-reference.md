@@ -1,7 +1,7 @@
 ---
-title: Index to az devops CLI examples
+title: Index to Azure DevOps CLI examples
 titleSuffix: Azure DevOps
-description: Index to az devops CLI examples  
+description: Find examples that showcase use of Azure DevOps CLI. 
 ms.topic: conceptual
 ms.prod: devops 
 ms.technology: devops-reference
@@ -9,25 +9,20 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 01/04/2022
+ms.date: 02/23/2022
 ---
 
-# Index to az devops examples 
+# Index to Azure DevOps CLI examples 
 
 
 [!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
 
-Use this index to quickly access examples that showcase use of command line tools.  For a list of commands that support Azure DevOps operations, see the following Azure CLI reference articles: 
-- [az artifacts](/cli/azure/azure-cli-reference-for-devops#azure-artifacts)
-- [az boards](/cli/azure/azure-cli-reference-for-devops#azure-boards)
-- [az devops](/cli/azure/azure-cli-reference-for-devops#azure-devops-organizations)
-- [az pipelines](/cli/azure/azure-cli-reference-for-devops#azure-pipelines)
-- [az repos](/cli/azure/azure-cli-reference-for-devops#azure-repos)
+Use this index to quickly access examples that showcase use of the Azure DevOps Command Line Interface (CLI). 
 
-
+To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.md). 
 
 > [!NOTE]  
-> The Azure DevOps Command Line Interface (CLI) is available for Azure DevOps Server 2020 and Azure DevOps Services. 
+> The Azure DevOps Command Line Interface (CLI) is available for Azure DevOps Server 2020 and Azure DevOps Services.  
 
 ## Azure Artifacts
 
@@ -102,12 +97,14 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
    :::column-end:::
    :::column span="1":::
+      ::: moniker range="azure-devops"
       #### User accounts
       - [Add a user](../organizations/accounts/add-organization-users.md#add-user)
       - [List users](../organizations/security/export-users-audit-log.md#list-users)
       - [Remove a user](../organizations/accounts/delete-organization-users.md#remove-user)
       - [Update a user](../organizations/accounts/add-organization-users.md#update-user)
       - [Show users](../organizations/accounts/add-organization-users.md#show-users)
+      ::: moniker-end
       #### Manage wikis
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
       - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
@@ -179,11 +176,12 @@ Use this index to quickly access examples that showcase use of command line tool
    :::column span="1":::
       #### Create and manage Git repositories  
       - [Create a repository](../repos/git/share-your-code-in-git-cmdline.md)
-      - [Delete a repository](../repos/git/share-your-code-in-git-cmdline.md)
-      - [Import a repository](/cli/azure/repos/import)
-      - [List repositories](../repos/git/repository-settings.md)
-      - [Show repository details](/cli/azure/repos#az_repos_show)
-      - [Update a repository](/cli/azure/repos#az_repos_update)
+      - [Delete a repository](../repos/git/delete-existing-repo.md)
+      - [Import a repository](../repos/git/import-git-repository.md)
+      - [List repositories](../repos/git/repository-settings.md#repos-list)
+      - [Rename a repository](../repos/git/repo-rename.md)
+      - [Show repository details](../repos/git/repository-settings.md#repos-show)
+      - [Update a repository](../repos/git/repository-settings.md#repos-update)
       #### Manage repository policies
       - [List repository policies](../repos/git/repository-settings.md#repos-policy-list)
       - [Show repository policies](../repos/git/repository-settings.md#show-policy)
@@ -193,8 +191,8 @@ Use this index to quickly access examples that showcase use of command line tool
       #### Manage branch policies
       - [List branch policies](../repos/git/branch-policies.md#configure-branch-policies)
       - [Show branch policy](../repos/git/branch-policies.md#show-details-of-a-policy)
-      - [Create policies using a configurate file](/cli/azure/repos/policy#az-repos-policy-create)
-      - [Update policies using a configurate file](/cli/azure/repos/policy#az-repos-policy-update)
+      - [Create policies using a configuration file](/cli/azure/repos/policy#az-repos-policy-create)
+      - [Update policies using a configuration file](/cli/azure/repos/policy#az-repos-policy-update)
       - [Manage required reviewer policy](../repos/git/branch-policies.md#require_reviewers)
       - [Manage external required reviewer policies](../repos/git/branch-policies.md#require-approval-from-external-services)
       - [Manage build validation policies](../repos/git/branch-policies.md#build-validation)
@@ -219,19 +217,18 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Set pull request completion options](../repos/git/complete-pull-requests.md#set-completion-options)
       - [Set pull request to autocomplete](../repos/git/complete-pull-requests.md#complete-automatically)
       - [Abandon a pull request](../repos/git/complete-pull-requests.md#abandon-pr)
-      - [Manage pull request policies](/cli/azure/repos//pr/policy)
+      - [Manage pull request policies](/cli/azure/repos/pr/policy)
       - [Manage pull request reviewers](/cli/azure/repos/pr/reviewer)
       #### Import and manage references
-      - [Create a reference](/cli/azure/repos/ref#az_repos_ref_create)
-      - [Delete a reference](/cli/azure/repos/ref#az_repos_ref_delete)
-      - [List references](/cli/azure/repos/ref#az_repos_ref_list)
-      - [Lock a reference](/cli/azure/repos/ref#az_repos_ref_lock)
-      - [Unlock a reference](/cli/azure/repos/ref#az_repos_ref_unlock)
+      - [Create a reference](/cli/azure/repos/ref#az-repos-ref-create)
+      - [Delete a reference](/cli/azure/repos/ref##az-repos-ref-delete)
+      - [List references](/cli/azure/repos/ref#az-repos-ref-list)
+      - [Lock a reference](/cli/azure/repos/ref#az-repos-ref-lock)
+      - [Unlock a reference](/cli/azure/repos/ref#az-repos-ref-unlock)
    :::column-end:::
 :::row-end:::
 
-
-
+ 
 
 ## Security groups and permissions  
 
@@ -262,3 +259,13 @@ Use this index to quickly access examples that showcase use of command line tool
  
 - [Cross-service integration overview](../cross-service/cross-service-overview.md)
 - [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+
+## Azure CLI reference articles  
+
+- [az artifacts](/cli/azure/azure-cli-reference-for-devops#azure-artifacts)
+- [az boards](/cli/azure/azure-cli-reference-for-devops#azure-boards)
+- [az devops](/cli/azure/azure-cli-reference-for-devops#azure-devops-organizations)
+- [az pipelines](/cli/azure/azure-cli-reference-for-devops#azure-pipelines)
+- [az repos](/cli/azure/azure-cli-reference-for-devops#azure-repos)
+
+

@@ -107,7 +107,7 @@ VSS.register(VSS.getContribution(), {
 });
 ```
 
-Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
+Learn about all of the places where you can add a hub in [Extensibility points](../reference/targets/overview.md).
 
 ## Next steps
 

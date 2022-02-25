@@ -2,7 +2,7 @@
 title: Build and deploy a Java web app to Azure Functions
 description: Learn about continuous integration and deployment (CI/CD) to a Java web app on Linux.
 ms.topic: tutorial
-ms.custom: freshness-fy22q2
+ms.custom: freshness-fy22q2, devx-track-azurecli
 ms.assetid: 3156B628-1DEA-4F92-84E5-6C3E18B4DAC1
 ms.date: 12/22/2021
 monikerRange: 'azure-devops'

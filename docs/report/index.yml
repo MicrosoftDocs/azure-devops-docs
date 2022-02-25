@@ -1,17 +1,18 @@
 ### YamlMime:Landing
 
-title: Azure DevOps Reporting documentation
+title: Analytics & Reporting documentation
 summary: Reporting in Azure DevOps enables software development teams to make data driven decisions and deliver value to their customers faster. 
 
 metadata:
-  title: Azure DevOps Reporting documentation
+  title: Analytics & Reporting
+  titleSuffix: Azure DevOps 
   description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
   ms.prod: devops 
   ms.technology: devops-analytics
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/13/2021
+  ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

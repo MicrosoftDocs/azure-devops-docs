@@ -3696,7 +3696,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://azure.microsoft.com/blog//previous-versions/azure/devops/release-notes/2015/04/29/announcing-application-insights-public-preview-2/" data-raw-source="[29 April 2015](https://azure.microsoft.com/blog//previous-versions/azure/devops/release-notes/2015/04/29/announcing-application-insights-public-preview-2/)">29 April 2015</a></td>
+            <td><a href="https://azure.microsoft.com/blog/announcing-application-insights-public-preview-2/" data-raw-source="[29 April 2015](https://azure.microsoft.com/blog/announcing-application-insights-public-preview-2/)">29 April 2015</a></td>
             <td>Application Insights Public Commercial Preview</td>
             <td></td><td>N/A</td>
         </tr>

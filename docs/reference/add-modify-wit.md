@@ -62,7 +62,7 @@ Most work item type customizations are made to the work item type XML definition
 - To add or customize a work item type, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
 ::: moniker-end
 
-To get added as an administrator, see [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
+To get added as an administrator, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
 
 
 
@@ -88,7 +88,7 @@ If you want to completely remove the fields from the data store, use [`witadmin 
 > [!NOTE]    
 >If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
+1. If you don't have administration permissions for your project, [get them](../organizations/security/change-organization-collection-level-permissions.md).   
    [!INCLUDE [temp](../includes/witadmin-run-tool-example.md)] 
 
 2. Export the work item type definition file where you want to modify or add a field. Specify the name of the work item type and a name for the file.  

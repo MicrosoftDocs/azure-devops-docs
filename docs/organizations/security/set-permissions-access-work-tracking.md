@@ -1,26 +1,30 @@
 ---
-title: Set permissions and access for work tracking
+title: Set permissions for work tracking
 titleSuffix: Azure DevOps
-description: How to grant or restrict access to work tracking tasks for Azure DevOps & Team Foundation Server
+description: How to grant or restrict access to work tracking tasks by setting object or project-level permissions for Azure DevOps
 ms.custom: "boards-permissions, linked-from-support"
-ms.technology: devops-agile
+ms.technology: devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/27/2022
+ms.date: 02/09/2022
 --- 
 
 
-# Set permissions and access for work tracking
+# Set work tracking permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, you can specify custom rules for a process or project that apply to users or groups which may restrict or require users to perform a select action. In general, you'll want to add users to a project's Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
+
+::: moniker-end
 
 <a id="business-workflows" /> 
 
@@ -108,14 +112,14 @@ The following table summarizes the different permissions you can set at the obje
       - [Permanently delete work items](#move-delete-permissions) 
       - [Edit shared work item queries](../../boards/queries/set-query-permissions.md)
       - [Add teams and team administrators](../settings/add-team-administrator.md))
-      - [Edit project-level permissions](set-project-collection-level-permissions.md#project-level)  
+      - [Edit project-level permissions](change-project-level-permissions.md)  
       ::: moniker-end
       ::: moniker range="< azure-devops-2020"
       - [Create work item tags](../../boards/queries/add-tags-to-work-items.md) 
       - [Permanently delete work items](#move-delete-permissions) 
       - [Edit shared work item queries](../../boards/queries/set-query-permissions.md)
       - [Add teams and team administrators](../settings/add-team-administrator.md))
-      - [Edit project-level permissions](set-project-collection-level-permissions.md#project-level)
+      - [Edit project-level permissions](change-project-level-permissions.md)
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -127,12 +131,12 @@ The following table summarizes the different permissions you can set at the obje
    :::column span="2":::
       ::: moniker range=">= azure-devops-2019"
       - [Create, delete, or edit a process (Inheritance process model)](#process-permissions)  
-      - [Delete field from account (Inheritance process model)](set-project-collection-level-permissions.md#collection-level) 
-      - [Manage process permissions (Inheritance process model)](set-project-collection-level-permissions.md#collection-level) 
-      - [Edit collection level permissions](set-project-collection-level-permissions.md#collection-level) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
+      - [Delete field from account (Inheritance process model)](change-organization-collection-level-permissions.md) 
+      - [Manage process permissions (Inheritance process model)](change-organization-collection-level-permissions.md) 
+      - [Edit collection level permissions](change-organization-collection-level-permissions.md) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
       ::: moniker-end
       ::: moniker range="< azure-devops-2019"
-      - [Edit collection level permissions](set-project-collection-level-permissions.md#collection-level) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
+      - [Edit collection level permissions](change-organization-collection-level-permissions.md) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -146,7 +150,7 @@ The following table summarizes the different permissions you can set at the obje
 Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
-> If you haven't defined the group yet whose permissions you want to set, then first create the group, usually at the project level. To learn how, see [Add a group](set-project-collection-level-permissions.md#add-group). 
+> If you haven't defined the group yet whose permissions you want to set, then first create the group, usually at the project level. To learn how, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md). 
  
  
 ::: moniker range="azure-devops" 
@@ -266,7 +270,7 @@ For details, see [Set permissions on a shared query or query folder](../../organ
 
 ## Set permissions on work item tags 
 
-By default, all users of the Contributors group can create and add tags to work items. To set permissions for a group or user to restrict this ability, you can set the **Create tag definition** to **Deny** at the project-level. To learn how, see [Change the permission level for a project-level group](set-project-collection-level-permissions.md#project-level). 
+By default, all users of the Contributors group can create and add tags to work items. To set permissions for a group or user to restrict this ability, you can set the **Create tag definition** to **Deny** at the project-level. To learn how, see [Change the permission level for a project-level group](change-project-level-permissions.md). 
 
 ::: moniker-end
 
@@ -298,7 +302,7 @@ To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the **Recycle Bin**. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
-For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
+For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. To learn how to access project-level **Security**, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 > [!NOTE]   
 > The **Move work items out of this project** permission requires the project uses the Inherited process model. 

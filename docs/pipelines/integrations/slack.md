@@ -1,6 +1,6 @@
 ---
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 title: Azure Pipelines with Slack
 description: Connect and monitor your pipelines in Azure Pipelines to Slack by subscribing to notifications right from Slack 
 ms.manager: bijuv

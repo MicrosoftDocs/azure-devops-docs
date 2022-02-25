@@ -6,7 +6,7 @@ metadata:
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
   ms.date: 11/04/2021
 
@@ -212,4 +212,3 @@ additionalContent: |
   - [Create your backlog](../../backlogs/create-your-backlog.md) 
   - [Azure DevOps Office integration issues](tfs-office-integration-issues.md) 
   - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
-

@@ -33,19 +33,19 @@ Post rename, there may be some [required team member actions](#required-user-act
 
 ::: moniker range="azure-devops" 
 
-You must be a member of the Project Collection Administrators group. When you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
-You must be a member of the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project  Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
 
 ::: moniker range="> tfs-2015 <= tfs-2017"
 
-You must be a member of the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ You must be a member of the Project Collection Administrators group. If you aren
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](media/rename-project/rename-project-dialog.png)
 	
-	If the Rename Project dialog doesn't appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
+	If the **Rename Project** dialog doesn't appear, then you're not a member of the **Project Administrators** group for that particular project. 
 
 ::: moniker-end  
 
@@ -102,7 +102,7 @@ You must be a member of the Project Collection Administrators group. If you aren
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](media/rename-project/rename-project-dialog.png)
 	
-	If the Rename Project dialog doesn't appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
+	If the **Rename Project** dialog doesn't appear, then you're not a member of the Project Administrators group for that particular project. 
 
 ::: moniker-end
 

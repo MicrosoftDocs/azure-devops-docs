@@ -49,7 +49,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 You'll make your changes to your process definition files, and then import that process to either update existing projects or use the process to create a project. 
 
-- If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md). 
+- If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../organizations/security/change-organization-collection-level-permissions.md). 
 - [Export the process you want to update](../organizations/settings/work/import-process/import-process.md) 
 -  If you're new to customizing a process, read [Customize a process for import](../organizations/settings/work/import-process/customize-process.md).
 
@@ -57,7 +57,7 @@ You'll make your changes to your process definition files, and then import that 
 ### On-premises XML process model customization sequence 
 
 You'll first export your work tracking definition files, update them, and then import them to your project.  
--  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md). 
+-  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/change-organization-collection-level-permissions.md). 
 -  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 -  [Export the following objects from your project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md))

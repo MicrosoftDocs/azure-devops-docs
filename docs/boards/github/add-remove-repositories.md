@@ -25,7 +25,7 @@ You can manage which GitHub repositories can participate in Azure Boards integra
 ## Prerequisites 
  
 * To add repositories to a connection, you must be the person who created the connection.  
-* To remove repositories or remove a connection, you must be the person who created the connection or belong to the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md).  
+* To remove repositories or remove a connection, you must be the person who created the connection or belong to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md).  
 * To add repositories, you must be an administrator or owner of the GitHub repository you'll connect to. You can connect to multiple GitHub repositories so long as you're an administrator for those repositories.  
 
 ## Open Project Settings>GitHub Connections
