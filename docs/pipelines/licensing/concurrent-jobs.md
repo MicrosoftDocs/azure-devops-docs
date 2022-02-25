@@ -6,7 +6,7 @@ description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 05/05/2021
+ms.date: 02/25/2022
 monikerRange: '>= tfs-2015'
 ---
 
@@ -105,7 +105,7 @@ For public projects that are self-hosted, you can have unlimited parallel jobs r
 
 When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
-[Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
+[Buy self-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
 ---
 
