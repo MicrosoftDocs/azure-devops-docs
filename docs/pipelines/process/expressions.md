@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 01/31/2022
+ms.date: 02/25/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -468,9 +468,9 @@ You can use the following status check functions as expressions in conditions, b
 
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
+* Use with `dependsOn` when working with jobs and you want to evaluate whether a previous job was successful. Jobs are designed to run in parallel while stages run sequentially. 
 * For a job:
   * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
-  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, the job will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
   * Evaluates to `False` if the pipeline is canceled.
 
