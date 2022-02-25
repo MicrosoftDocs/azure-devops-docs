@@ -59,7 +59,7 @@ Welcome to what's new in the Azure DevOps docs from December 1, 2020 through Dec
 - [Add AD/Azure AD users or groups to a built-in security group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups)
 - [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project)
 - [Allowed address lists and network connections](/azure/devops/organizations/security/allow-list-ip-url)
-- [Increase permission levels, find an admin](/azure/devops/organizations/security/lookup-organization-owner-admin)
+- [Increase permission levels, find an admin](/azure/devops/organizations/security/request-changes-permissions)
 - [Security namespace and permission reference for Azure DevOps](/azure/devops/organizations/security/namespace-reference)
 - [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions)
 - [Grant or restrict access](/azure/devops/organizations/security/restrict-access)
