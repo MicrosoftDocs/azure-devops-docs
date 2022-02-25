@@ -79,7 +79,7 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2021 through Se
 - [Create audit streaming](/azure/devops/organizations/audit/auditing-streaming)
 - [Create a project in Azure DevOps](/azure/devops/organizations/projects/create-project)
 - [View and filter work items](/azure/devops/organizations/public/view-filter-work-items-public)
-- [Change individual or group permissions](/azure/devops/organizations/security/change-individual-permissions)
+- [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)
 - [Security groups, service accounts, and permissions in Azure DevOps](/azure/devops/organizations/security/permissions)
 - [Permissions and access for work tracking](/azure/devops/organizations/security/permissions-access-work-tracking)
 - [Permissions lookup guide for Azure DevOps](/azure/devops/organizations/security/permissions-lookup-guide)
