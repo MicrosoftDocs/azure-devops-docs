@@ -26,6 +26,8 @@ You must have at least a Basic license and access to the following areas:
 
 For more information about security for Azure Pipelines, see [Pipeline security resources](../security/resources.md).
 
+To add a VM into an environment you must have Administrator permission at the correspondent Deployment pool
+
 ## Create a VM resource
 
 > [!NOTE]
