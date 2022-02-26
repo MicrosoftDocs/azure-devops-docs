@@ -245,10 +245,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Preview features options for the organization, part 1.](media/preview-features/org-features-s187-1.png)
 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Preview features options for the organization, part 2.](media/preview-features/org-features-s187-2.png)
-> 
+ 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"

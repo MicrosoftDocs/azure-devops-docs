@@ -234,7 +234,7 @@ As shown in the following image, you simply start typing into a people picker bo
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
 
-Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection).
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection).
 
 ::: moniker-end
  

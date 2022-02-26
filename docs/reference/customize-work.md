@@ -72,7 +72,7 @@ For organizations that manage their users and groups using Azure Active Director
 
 ::: moniker range="azure-devops"
 
-To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. To learn how, see [Manage your project, Limit identity search and selection](../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. To learn how, see [Manage your organization, Limit identity search and selection](../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ::: moniker-end
 
