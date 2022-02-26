@@ -124,9 +124,9 @@ Use the **\@mention** control in pull request discussions, commit comments, chan
 
 In general, people pickers search and select any user or group added to an organization's Azure Active Directory (Azure AD). 
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching users and groups added to the Azure AD. For organizations that want to limit the search and selection to just those users and groups added to a specific project, they can do so by enabling the **Limit user visibility for projects** preview feature for their organization. 
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching users and groups added to the Azure AD. For organizations that want to limit the search and selection to just those users and groups added to a specific project, they can do so by enabling the **Limit user visibility and collaboration to specific projects** preview feature for their organization. 
 
-When the **Limit user visibility for projects** preview feature is enabled for an organization, the list of identities you can select from a people picker is limited in one of the following ways: 
+When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for an organization, the list of identities you can select from a people picker is limited in one of the following ways: 
 
 - Users added to the **Project-Scoped Users** group are only able to select from an identity list that contains users and groups added explicitly to the project they're connected to. 
 - If all project members are added to the **Project-Scoped Users** group, then people pickers are limited to only those users and groups added to the project. All project members are only able to select identities that match users and groups added explicitly to the project they're connected to. 
