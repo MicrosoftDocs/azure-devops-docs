@@ -492,16 +492,24 @@ the template parameters.
 # File: azure-pipelines.yml
 
 variables: # Global variables
-  - template: templates/package-release-with-params.yml # Template reference
+  - template: package-release-with-params.yml # Template reference
     parameters:
       DIRECTORY: "azure/checker"
 
-stage: Release_Stage 
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Release_Stage 
   displayName: Release Version
   variables: # Stage variables
-    - template: templates/package-release-with-params.yml  # Template reference
-      parameters:
-        DIRECTORY: "azure/todo-list"
+  - template: package-release-with-params.yml  # Template reference
+    parameters:
+      DIRECTORY: "azure/todo-list"
+  jobs: 
+  - job: A
+    steps: 
+    - bash: $(RELEASE_COMMAND) #output release command
 ```
 
 ## Reference template paths
