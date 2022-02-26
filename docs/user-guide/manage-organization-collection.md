@@ -122,15 +122,23 @@ The **Limit user visibility for projects** preview feature for the organization 
 > [!IMPORTANT]
 > The limited visibility features described in this section apply only to interactions through the web portal. With the REST APIs or **azure devops** CLI commands, project members can access the restricted data. 
 
+::: moniker-end 
+
+::: moniker range="azure-devops"
+
 ### Limit access to Organization settings 
 
 To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
 
-[!INCLUDE [version-all](../organizations/security/includes/hidden-security-groups.md)]
+> [!NOTE]  
+> All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups may be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. To learn more, see [Add and manage security groups](../add-manage-security-groups.md).
+::: moniker-end  
 
- 
+
+::: moniker range="azure-devops"
+
 ### Limit visibility within people pickers
 
 For organizations that manage users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those users and groups added to your project. people pickers support the following Azure DevOps functions: 
@@ -147,8 +155,10 @@ As shown in the following image, you simply start typing into a people picker bo
 > When the **Limit user visibility for projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility for projects** preview feature for the organization.  
 
 
-Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Limit identity search and selection](#limit-identity-selection). 
+::: moniker-end  
 
+::: moniker range="azure-devops"
 
 ### Set security policies
 
@@ -161,6 +171,8 @@ Configure the security policies for your organization through the **Organization
 :::image type="content" source="../media/policies/security-policies.png" alt-text="Screenshot of Azure DevOps Security Policies.":::
 
 To learn more, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md). 
+
+::: moniker-end  
 
 ::: moniker range="azure-devops"
 
@@ -282,18 +294,16 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 ## Review and update notifications
 
-A number of notifications are predefined at the organization or collection level. Notifications are based on subscription rules which you can modify.  Subscriptions arise from the following areas:
+A number of notifications are predefined at the organization or collection level. Notifications are based on subscription rules which you can modify. Subscriptions arise from the following areas:
 
 
 global-notifications.png
 :::image type="content" source="../media/global-notifications.png" alt-text="Screenshot of Azure DevOps global notifications.":::
 
-If users believe they're getting too many notifications, direct them to [opt out of a subscription](../../notifications/manage-your-personal-notifications.md).
+If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/manage-your-personal-notifications.md).
 
 > [!div class="mx-imgBorder"]  
-> ![Personal notifications](../../user-guide/media/services/personal-notifications.png)   
-
- 
+> ![Personal notifications](media/services/personal-notifications.png)   
 
 
 ::: moniker range="< azure-devops"  
