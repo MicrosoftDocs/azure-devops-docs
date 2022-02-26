@@ -20,6 +20,11 @@ With most Azure DevOps Services, you can start using the service and configure r
 
 If you've created a project or been added to the **Project Administrators** group, you'll want to be familiar with the administrative tasks your charged with. there are a few tasks you might want to do to ensure a smooth operational experience. 
 
+> [!NOTE]   
+> This article provides an overview of tasks a member of the **Project Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Collection Administrators** group, see [Manage your organization or project collection](manage-organization-collection.md).
+
+
+
 [!INCLUDE [add-users-project](../includes/get-started/add-users-project.md)]  
 
 [!INCLUDE [add-project-administrators](../includes/get-started/add-project-administrators.md)]  
@@ -57,29 +62,15 @@ To learn more about permissions and security, review the following articles:
 
 ## Set DevOps policies 
 
-Set policies to support collaboration across your teams, secure your projects, and automatically remove obsolete files. To set policies, review the following articles: 
+Set policies to support collaboration across your teams and automatically remove obsolete files. To set policies that govern Azure Repos, Azure Pipelines, and Azure Test Plans, review the following articles: 
 
-::: moniker-end  
-
-::: moniker range=">= azure-devops-2019"
-
-- [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
 - [Set test retention policies](../test/how-long-to-keep-test-results.md) 
+
 ::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-- [Manage branch policies](../repos/git/branch-policies.md)  
-- [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)  
-- [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
-- [Set test retention policies](../test/how-long-to-keep-test-results.md) 
-::: moniker-end  
-
-
-
+ 
 
 [!INCLUDE [define-area-iteration-paths](../includes/get-started/define-area-iteration-paths.md)] 
 
@@ -141,5 +132,6 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 <!--- 
 What to tell their users?
+- advantage for setting up teams for repos and pipelines 
 
 -->

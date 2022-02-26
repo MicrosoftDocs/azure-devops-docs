@@ -16,21 +16,21 @@ ms.date: 02/25/2022
 
 After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks you'll want to review to ensure you're setting up your organization or collection to get maximal use of your services. 
 
-Other resources to review: 
-- [Plan your organizational structure](plan-your-azure-devops-org-structure.md)  
-- [About projects and scaling your organization](../organizations/projects/about-projects.md)
-- 
 ::: moniker range="azure-devops"
-If you need to create an organization, see [Create an organization](../../organizations/accounts/create-organization.md).
+If you need to create an organization, see [Create an organization](../organizations/accounts/create-organization.md).
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
 When you install Azure DevOps Server, you automatically create a default collection. If you need to create another project collection, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 ::: moniker-end
 
+> [!NOTE]   
+> This article provides an overview of tasks a member of the **Project Collection Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Administrators** group, see [Manage your project](project-admin-tutorial.md).
 
+ 
+## Add users and set up billing 
 
-## Add users to your organization 
+### Add users to your organization 
 
 ::: moniker range="azure-devops" 
 For large enterprises, the recommended method to manage Azure DevOps users, is to connect Azure DevOps to Azure Active Directory (Azure AD) and manage user access through security groups defined in Azure AD. That way, when you add and remove users or groups from Azure AD, you automatically add and remove these same users and groups from Azure DevOps.  You limit the maintenance of managing permissions and user access. 
@@ -48,7 +48,7 @@ When you add users, you specify their *access level* which determines the featur
 ::: moniker range="azure-devops" 
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)  
 - [About access levels](../organizations/security/access-levels.md)   
-- [Add organization users and manage access](../organizations/accounts/add-organization-user.md)  
+- [Add organization users and manage access](../organizations/accounts/add-organization-users.md)  
 - [Connect your organization to Azure Active Directory](../organizations/accounts/connect-organization-to-azure-ad.md) 
 ::: moniker-end 
 
@@ -59,18 +59,8 @@ When you add users, you specify their *access level* which determines the featur
 - [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
  
 > [!NOTE]  
-> Even if you add a user or group to an access level, you must also [add them to a project](add-users-team-project.md) for them to connect to a project and access features available through a supported client or the web portal. 
+> Even if you add a user or group to an access level, you must also [add them to a project](../organizations/security/add-users-team-project.md) for them to connect to a project and access features available through a supported client or the web portal. 
 ::: moniker-end 
-
-::: moniker range="azure-devops"
-
-
-::: moniker range="< azure-devops"
- 
-Ensure that all members of your organization or group are added to your organization and project. For small projects, you can [invite users to your project or team](../organizations/security/add-users-team-project.md#invite-users-from-the-summary-page). Larger organizations may want to consider using Azure Active Directory to limit the maintenance of managing permissions and user access. To learn more, see the following articles.
-
-::: moniker-end
-
 
 ::: moniker range="azure-devops"
 
@@ -80,31 +70,11 @@ All organizations can add up to five users with **Basic** access and unlimited u
 
 ::: moniker-end
 
-<a id="limit-identity-selection" /> 
+## Manage security and permissions
 
-## Limit identity search and selection  
+Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those added to your project. people pickers support the following Azure DevOps functions: 
-- Selection of a user identity from a work tracking identity field such as **Assigned To**
-- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
-- Selection of a user or group using **@mention** from a wiki page  
-
-As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
- 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker](../notifications/media/at-mention/identity-selector.png)  
-
-
-To limit the identity selection to just those users and groups added to a project, perform the following procedure for your organization and projects. 
-
-1. Enable the **Limit user visibility for projects** preview feature for the organization. To learn how, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
-2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
-3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. To learn more, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
-	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility for projects** preview feature is enabled. 
-
-::: moniker-end  
-
-## Add members to the Project Collection Administrators group 
+### Add members to the Project Collection Administrators group 
 
 ::: moniker range="azure-devops"
 The person who creates an organization is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization, create and manage all projects defined in the organization, and install and manage extensions.   
@@ -114,55 +84,8 @@ The person who creates a project collection is automatically added as a member t
 ::: moniker-end
 
 It's always a good idea to have more than one person who has administrative privileges. To add a user to this group, see [Change permissions at the organization level,Add members to the Project Collection Administrators group](../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-collection-administrators-group).
-  
 
-::: moniker range="azure-devops"
-
-<a id="limit-identity-selection" /> 
-
-## Limit identity search and selection  
-
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those added to your project. people pickers support the following Azure DevOps functions: 
-- Selection of a user identity from a work tracking identity field such as **Assigned To**
-- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
-- Selection of a user or group using **@mention** from a wiki page  
-
-As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
- 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker](../notifications/media/at-mention/identity-selector.png)  
-
-
-To limit the identity selection to just those users and groups added to a project, perform the following procedure for your organization and projects. 
-
-1. Enable the **Limit user visibility for projects** preview feature for the organization. To learn how, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
-2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
-3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. To learn more, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
-	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility for projects** preview feature is enabled. 
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"
-## Install Code Search 
-
-Code Search is a free Marketplace extension that you must install to enable searching across all your source repositories. 
-
-For on-premises deployments, you must first configure your project collection. To learn how, see [Install and configure Search](../project/search/install-configure-search.md).
-::: moniker-end 
-
-<!--- TBD
-
-- Analytics
-- Install Code Search
-- Integrate with other services 
-- PReview features
- 
---> 
- 
- 
-## Grant or restrict permissions  
-
-Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
+### Grant or restrict permissions  
 
 ::: moniker range="azure-devops"  
 
@@ -183,7 +106,130 @@ To learn more about permissions and security, review the following articles:
 - [About security roles](../organizations/security/about-security-roles.md)  
 - [About access levels](../organizations/security/access-levels.md)  
  
+
+<a id="project-scoped-user-group" /> 
+
+::: moniker range="azure-devops"
+
+## Limit user visibility for projects using the Project-Scoped Users group 
+
+By default, users added to an organization can view all organization and project information and settings.  
+
+The **Limit user visibility for projects** preview feature for the organization limits user access in two ways:
+- Restricting views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
+- Limiting the set of people or groups that appear through people-picker search selections and the ability to @mention people. 
+
+> [!IMPORTANT]
+> The limited visibility features described in this section apply only to interactions through the web portal. With the REST APIs or **azure devops** CLI commands, project members can access the restricted data. 
+
+### Limit access to Organization settings 
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+
+To enable this feature, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
+
+[!INCLUDE [version-all](../organizations/security/includes/hidden-security-groups.md)]
+
  
+### Limit visibility within people pickers
+
+For organizations that manage users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those users and groups added to your project. people pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**  
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page 
+
+As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+ 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of people picker](../notifications/media/at-mention/identity-selector.png)  
+
+> [!WARNING]   
+> When the **Limit user visibility for projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility for projects** preview feature for the organization.  
+
+
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
+
+
+### Set security policies
+
+Configure the security policies for your organization through the **Organization settings>Policies** page. These policies enable you to grant or restrict the following features: 
+- Third-party application access via OAuth 
+- SSH authentication
+- Creation of public projects
+- Invitation of GitHub user accounts
+
+:::image type="content" source="../media/policies/security-policies.png" alt-text="Screenshot of Azure DevOps Security Policies.":::
+
+To learn more, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md). 
+
+::: moniker range="azure-devops"
+
+## Enable preview features for your organization 
+
+As new features are introduced to Azure DevOps Services, you can choose to enable them or not for an organization. Some features are introduced and automatically enabled. You can try them out, provide feedback, and work with those features that meet your requirements.
+
+When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings are not changed. Users can enable or disable the feature on their own. 
+
+To enable or disable a preview feature, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
+
+The following features are only enabled or disabled at the organization-level:  
+- [Limit identity search and selection](#limit-identity-selection)
+- [Full Access to Azure Pipelines for Stakeholders](../organizations/security/provide-stakeholder-pipeline-access.md)
+
+
+<a id="limit-identity-selection" /> 
+
+### Limit identity search and selection  
+
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those added to your project. people pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page  
+
+As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+ 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of people picker](../notifications/media/at-mention/identity-selector.png)  
+
+
+To limit the identity selection to just those users and groups added to a project, perform the following procedure for your organization and projects. 
+
+1. Enable the **Limit user visibility for projects** preview feature for the organization. To learn how, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
+2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
+3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. To learn more, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
+	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility for projects** preview feature is enabled. 
+
+::: moniker-end  
+
+
+[!INCLUDE [install-manage-extensions](../includes/get-started/install-manage-extensions.md)] 
+
+::: moniker range=">= tfs-2015"
+
+### Install Code Search 
+
+Code Search is a free Marketplace extension that you must install to enable searching across all your source repositories. To learn how, see [Install and configure Search](../project/search/install-configure-search.md).
+::: moniker-end 
+
+<!--- TBD
+
+- Analytics
+- Install Code Search
+- Integrate with other services 
+- PReview features
+ 
+--> 
+ 
+::: moniker range="azure-devops"
+
+## Adjust time zone and other organization settings
+
+When you create an organization, you specify the name of your organization and select the region where your organization is hosted. The default **Time zone** is set to *UTC*. You can update the **Time zone** and specify a Privacy URL from the **Organization settings>Overview** page. To learn more about these settings, see the following articles:  
+
+- [Time zone settings and usage](../organizations/settings/timezone-settings-usage.md)
+- [Add a privacy policy URL for your organization](../organizations/accounts/add-privacy-policy-url.md)
+
+::: moniker-end 
 
 ::: moniker range=">= tfs-2015"  
 
@@ -195,7 +241,6 @@ Set policies to support collaboration across your teams, secure your projects, a
 
 ::: moniker range=">= azure-devops-2019"
 
-- [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
@@ -233,6 +278,23 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 ::: moniker-end
 
+ 
+
+## Review and update notifications
+
+A number of notifications are predefined at the organization or collection level. Notifications are based on subscription rules which you can modify.  Subscriptions arise from the following areas:
+
+
+global-notifications.png
+:::image type="content" source="../media/global-notifications.png" alt-text="Screenshot of Azure DevOps global notifications.":::
+
+If users believe they're getting too many notifications, direct them to [opt out of a subscription](../../notifications/manage-your-personal-notifications.md).
+
+> [!div class="mx-imgBorder"]  
+> ![Personal notifications](../../user-guide/media/services/personal-notifications.png)   
+
+ 
+
 
 ::: moniker range="< azure-devops"  
 
@@ -243,9 +305,12 @@ In order for team members to receive notifications, [you must configure an SMTP 
 ::: moniker-end  
  
 
-[!INCLUDE [install-manage-extensions](../includes/get-started/install-manage-extensions.md)] 
 
+## Scale your organization or collection  
 
+- [Plan your organizational structure](plan-your-azure-devops-org-structure.md)  
+- [About projects and scaling your organization](../organizations/projects/about-projects.md)
+ 
 
 ## Next steps  
 
@@ -267,8 +332,7 @@ In order for team members to receive notifications, [you must configure an SMTP 
 
 - [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
 - [Security & identity](../organizations/security/about-security-identity.md)
-- [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
-- [TFS administration](/azure/devops/server/index)
+- [Azure DevOps Server administration](/azure/devops/server/index)
 
 ::: moniker-end

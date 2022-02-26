@@ -22,7 +22,7 @@ An extension is an installable unit that adds new capabilities to your projects.
 
 ::: moniker range=">= tfs-2017"
 
-For example, to support [code search](../project/search/functional-code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
+For example, to support [code search](../../project/search/functional-code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
 
 ::: moniker-end  
 

@@ -16,12 +16,12 @@ ms.date: 02/25/2022
 
 ::: moniker range="azure-devops"  
 
-Each project has a summary page that's useful for sharing information through **README** files. Or, redirect users to a project Wiki. For users who are new to your project, we recommend that you [set up your project summary page](../../organizations/projects/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md). Use these features to share established processes and procedures for your project.
+Each project has a summary page that's useful for sharing information through **README** files. Or, redirect users to a project Wiki. For users who are new to your project, we recommend that you [set up your project summary page](../../organizations/projects/project-vision-status.md) or [provision a Wiki](../../project/wiki/wiki-create-repo.md). Use these features to share established processes and procedures for your project.
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
-Each project has a summary page that's useful for sharing information through **README files**. For users who are new to your project, we recommend that you [set up your project summary page](../../organizations/projects/project-vision-status.md). Or, you can [provision a Wiki](../project/wiki/wiki-create-repo.md). Use these features to share established processes and procedures for your project. 
+Each project has a summary page that's useful for sharing information through **README files**. For users who are new to your project, we recommend that you [set up your project summary page](../../organizations/projects/project-vision-status.md). Or, you can [provision a Wiki](../../project/wiki/wiki-create-repo.md). Use these features to share established processes and procedures for your project. 
 
 ::: moniker-end
 
