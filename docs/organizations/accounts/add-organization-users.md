@@ -303,7 +303,7 @@ ID                                    Display Name         Email                
 To limit select users access to organizational information, enable the **Limit user visibility and collaboration to specific projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they haven't been added to.
 
 > [!NOTE]
-> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. To learn more, see [Manage your organization,  Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 Complete the following steps to add users to the new **Project-Scoped Users** group:
 

@@ -139,7 +139,7 @@ To restrict select users, such as Stakeholders, Azure Active Directory guest use
 To enable this feature, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
 
 > [!NOTE]  
-> All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups may be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. To learn more, see [Add and manage security groups](../add-manage-security-groups.md).
+> All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups may be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. To learn more, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
 ::: moniker-end  
 ::: moniker-end 
 
@@ -203,6 +203,8 @@ The following features are only enabled or disabled at the organization-level:
 - [Limit identity search and selection](#limit-identity-selection)
 - [Full Access to Azure Pipelines for Stakeholders](../organizations/security/provide-stakeholder-pipeline-access.md)
 
+::: moniker-end 
+
 [!INCLUDE [install-manage-extensions](../includes/get-started/install-manage-extensions.md)] 
 
 ::: moniker range=">= tfs-2015"
@@ -217,18 +219,10 @@ Code Search is a free Marketplace extension that you must install to enable sear
 
 ### Enable or disable Analytics
 
-Code Search is a free Marketplace extension that you must install to enable searching across all your source repositories. To learn how, see [Install and configure Search](../project/search/install-configure-search.md).
+Analytics is ...  . To learn more, see [Install or enable the Analytics service](../report/dashboards/analytics-extension.md).
 ::: moniker-end 
 
 
-<!--- TBD
-
-- Analytics
-- Install Code Search
-- Integrate with other services 
-- PReview features
- 
---> 
  
 ::: moniker range="azure-devops"
 
@@ -287,7 +281,6 @@ All work-tracking tools are available immediately after you create a project. Of
 To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end
-
  
 
 ## Review and update notifications
@@ -311,9 +304,6 @@ If users believe they're getting too many notifications, direct them to [opt out
 In order for team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end  
- 
-## Integrate with other services 
-
 
 
 ## Scale your organization or collection  
@@ -346,3 +336,5 @@ In order for team members to receive notifications, [you must configure an SMTP 
 - [Azure DevOps Server administration](/azure/devops/server/index)
 
 ::: moniker-end
+
+ 

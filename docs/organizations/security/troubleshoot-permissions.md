@@ -211,7 +211,7 @@ Examples of restricted users include Stakeholders, or members of a security grou
 
 ::: moniker-end
 
-For more information about hiding organization settings from users, see [Manage your organization,  Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
+For more information about hiding organization settings from users, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 ::: moniker range=" azure-devops"
 
