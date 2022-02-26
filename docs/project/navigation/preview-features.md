@@ -81,7 +81,7 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md)  
-      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
+      [Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)  
       [New account manager](#account-manager)  
       New Artifacts (Feeds) Experience (accessbility updates)  
       [New Boards Hubs](https://devblogs.microsoft.com/devops/azure-boards-ux-modernization-public-preview/) 

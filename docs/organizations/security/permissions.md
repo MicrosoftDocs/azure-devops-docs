@@ -513,7 +513,7 @@
    :::column span="2":::
    Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
    > [!NOTE]   
-   > The **Project-Scoped Users** group becomes available with restricted access when the organization-level preview feature, **Limit user visibility for projects** is enabled. To learn more, see [About projects, Limit user visibility for projects](../projects/about-projects.md#project-scoped-user-group).
+   > The **Project-Scoped Users** group becomes available with restricted access when the organization-level preview feature, **Limit user visibility and collaboration to specific projects** is enabled. To learn more, see [Manage your organization,  Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
    :::column-end:::
 :::row-end:::
 ::: moniker-end

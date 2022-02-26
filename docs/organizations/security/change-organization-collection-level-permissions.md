@@ -116,7 +116,7 @@ The following table lists the permissions assigned at the project-level. For a d
 
 ::: moniker range="azure-devops"  
 > [!NOTE]   
-> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including **Permissions**. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including **Permissions**. To learn more, see [Manage your organization,  Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 > 
 > Also, users granted **Stakeholder** access, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
