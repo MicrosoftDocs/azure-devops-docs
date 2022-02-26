@@ -478,7 +478,7 @@ You can pass parameters to variables with templates. In this example, you're pas
 parameters:
 - name: DIRECTORY 
   type: string
-  default: "." # defaults for any parameters that specifield with "." (current directory)
+  default: "." # defaults for any parameters that specified with "." (current directory)
 
 variables:
 - name: RELEASE_COMMAND
