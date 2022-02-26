@@ -158,7 +158,7 @@ As shown in the following image, you simply start typing into a people picker bo
 > When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility and collaboration to specific projects** preview feature for the organization.  
 
 
-Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ### Historical data remains visible 
 

@@ -244,7 +244,7 @@ To restrict select users, such as Stakeholders, Azure Active Directory guest use
 - Can only connect and view those projects to which they've been added to explicitly (see [Add users to a project or team](add-users-team-project.md). 
 - Can only select user and group identities that have been added explicitly to the project they are connected to. 
 
-To learn more about the **Limit user visibility and collaboration to specific projects**, see [Manage your organization,  Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+To learn more about the **Limit user visibility and collaboration to specific projects**, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 ### Git repository and branch policies 
 
