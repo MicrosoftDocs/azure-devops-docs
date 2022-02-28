@@ -4,7 +4,7 @@ description: Configure Artifacts permissions for feeds, views, and pipelines
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/16/2022
+ms.date: 02/28/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
@@ -26,9 +26,9 @@ Feed owners can specify who can create and administer Artifacts feeds. To access
 
 By default, users in an Azure DevOps organization can create new feeds in that organization. A user who creates a feed is both an owner and an administrator of that feed.
 
-1. Users in the same organization are able to create new feeds.
+1. Users in this Azure DevOps organization can create new feeds.
 
-2. Only feed administrators and users or groups specified here 2 are able to create new feeds.
+2. Only feed administrators and users or groups specified here are able to create new feeds.
 
 3. Users or groups added here become administrators of all the feeds in the organization.
 
