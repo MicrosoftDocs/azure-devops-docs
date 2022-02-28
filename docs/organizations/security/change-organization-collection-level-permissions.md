@@ -37,76 +37,12 @@ See the following articles for related information:
 - [Look up a project collection administrator](look-up-project-collection-administrators.md)
 - [Look up the organization owner](look-up-organization-owner.md)
 
-[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+[!INCLUDE [hidden-security-groups](./includes/hidden-security-groups.md)]
 
 
 ## Collection-level permissions 
 
-The following table lists the permissions assigned at the project-level. For a description of each permission, see [Permissions and groups reference, Groups](permissions.md#collection-level).
- 
-:::row:::
-   :::column span="":::
-      **General**  
-      - Alter trace settings  
-      - Create new projects  
-      - Delete team project  
-      - Edit instance-level information
-      - View instance-level information  
-
-      **Service Account**
-      - Make requests on behalf of others
-      - Trigger events
-      - View system synchronization information  
-
-      **Boards**  
-   :::column span="":::
-      ::: moniker range=">= azure-devops-2019"
-      - Administer process permissions
-      - Create process
-      - Delete field from organization or account  
-      - Delete process
-      - Edit process
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - Delete field from organization or account  
-      ::: moniker-end
-   :::column-end:::
-   :::column span="":::
-      **Repos** (TFVC)  
-      - Administer shelved changes  
-      - Administer workspaces  
-      - Create a workspace  
-      
-      **Pipelines**  
-      ::: moniker range=">= azure-devops-2019"
-      - Administer build resource permissions  
-      - Manage build resources
-      - Manage pipeline policies
-      - Use build resources
-      - View build resources
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - Administer build resource permissions  
-      - Manage build resources 
-      - Use build resources
-      - View build resources
-      ::: moniker-end
-      **Test Plans**  
-      - Manage test controllers  
-      ::: moniker range="azure-devops"
-      **Auditing**
-      - Delete audit streams
-      - Manage audit streams
-      - View audit log
-      ::: moniker-end
-      ::: moniker range="azure-devops-2019"
-      **Policies**  
-      - Manage enterprise policies
-      ::: moniker-end
-   :::column-end:::
-:::row-end:::
- 
-
+[!INCLUDE [collection-level-permissions](./includes/collection-level-permissions.md)]
 
 ## Prerequisites
 

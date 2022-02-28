@@ -7,7 +7,7 @@ ms.date: 02/25/2022
 ---
 
 
-## Define area and iteration paths to track work
+### Define area and iteration paths to track work
 
 If you support several products, you can assign work items by feature area by defining [area paths](../../organizations/settings/set-area-paths.md). To assign work items to specific time intervals, also known as sprints, you configure [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). To use the Scrum tools&mdash;sprint backlogs, taskboards, and team capacity&mdash;you need to configure several sprints. For an overview, see [About areas and iteration paths](../../organizations/settings/about-areas-iterations.md).  
 
