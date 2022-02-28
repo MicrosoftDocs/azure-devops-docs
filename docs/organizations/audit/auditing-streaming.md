@@ -23,7 +23,7 @@ Learn how to create an [audit](azure-devops-auditing.md) stream, which sends dat
 Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every half hour or less, new audit events are bundled and streamed to your targets. The following stream targets are available for configuration.
 
 - [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
-- [Azure Monitor Logs](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](/azure/azure-monitor/platform/data-platform-logs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. Look for the table named AzureDevOpsAuditing. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
+- [Azure Monitor Logs](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](/azure/azure-monitor/platform/data-platform-logs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. Look for the table named AzureDevOpsAuditing. You can also connect [Microsoft Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
 - [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent somewhere else, whether inside or outside of Azure, you can set up an [Azure Event Grid](#set-up-an-event-grid-stream) connection.
 
 Private linked workspaces aren't supported today.
