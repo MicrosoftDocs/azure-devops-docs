@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 04/14/2022
+ms.date: 02/18/2022
 ---
 
 ::: moniker range=">= azure-devops-2019"
@@ -23,23 +23,9 @@ ms.date: 04/14/2022
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
     1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-1. Follow the instructions in the **Project setup** to connect to your feed. 
+1. Follow the instructions in the **Project setup** to add a config file. 
 
     :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
-
-## Publish a NuGet package by using the command line
-
-If you don't have a NuGet package but you want to try publishing your package to your feed, you can install the *HelloWorld* sample package.
-
-```Command
-nuget install HelloWorld -ExcludeVersion
-```
-
-Run the following command to publish your package to your feed:
-
-```Command
-nuget.exe push -Source "<YOUR_FEED_NAME>" -ApiKey <ANY_STRING> <PACKAGE_PATH>
-```
 
 ::: moniker-end
 

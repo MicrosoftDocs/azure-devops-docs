@@ -29,8 +29,8 @@ When you remove or delete a team, all of its configuration settings get deleted.
  
 ## Prerequisites 
 
-- To rename a team, you must be a team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md). 
-- To remove or delete a team, you must be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md). 
+- To rename a team, you must be a team administrator or a member of the [**Project Administrators** group](../security/(../security/change-project-level-permissions.md)
+- To remove or delete a team, you must be a member of the **Project Administrators** group. 
 
 ## Rename a team
 

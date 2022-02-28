@@ -3,7 +3,7 @@ title: Configure upstream behavior
 description: Allow or block the consumption of package versions from public registries.
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 02/23/2022
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: '>= tfs-2017'
@@ -113,7 +113,7 @@ $env:PATVAR = "YOUR_PAT_GOES_HERE"
 The following commands will convert your personal access token to baser64 encoded string and construct the HTTP request header.
 
 ```PowerShell
-$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$PatVar")))
+$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
 $headers = @{
     Authorization = "Basic $token"
 }

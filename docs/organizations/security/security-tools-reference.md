@@ -5,7 +5,7 @@ description: Learn about the available tools to manage security and permissions 
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 10/12/2020
 ---
@@ -68,12 +68,12 @@ You can use the tools listed in the following table to set permissions. Links in
 | Permission level  | Web portal security pages  | az devops CLI  | Tf CLI | 
 |------------------|:---------------------------:|:--------------:|:---------------------:|  
 | [Add users to an organization](../accounts/add-organization-users.md)                |   ✔️  |   ✔️  |     |  
-| [Organization-level, auditing, enterprise policies, process, workspaces](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |   ✔️  |     |  
-| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |   ✔️  |     |  
+| [Organization-level, auditing, enterprise policies, process, workspaces](change-organization-collection-level-permissions.md)     |   ✔️  |   ✔️  |     |  
+| [Project-level, test management, create tags](change-project-level-permissions.md)  |   ✔️  |   ✔️  |     |  
 | [Git repository](../../repos/git/set-git-repository-permissions.md)                             |   ✔️  |   ✔️  |  ✔️ |  
 | [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)            |   ✔️  |   ✔️  |  ✔️ |  
 | [Builds, Task groups](../../pipelines/policies/permissions.md#set-pipeline-permissions)  |   ✔️  |   ✔️  |     |  
-| [Build resources](set-project-collection-level-permissions.md#collection-level)      |   ✔️  |   ✔️  |     |  
+| [Build resources](change-organization-collection-level-permissions.md)      |   ✔️  |   ✔️  |     |  
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                   |   ✔️  |   ✔️  |     |  
 | [Releases](../../pipelines/policies/permissions.md#set-release-permissions)              |   ✔️  |   ✔️  |     | 
 | [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |   ✔️  |     |  
@@ -92,12 +92,12 @@ You can use the tools listed in the following table to set permissions. Links in
 | Permission level  | Web portal security pages   | az devops CLI   |  TFSSecurity CLI | Tf CLI |
 |-------------------|:---------------------------:|:---------------:|:----------------:|:----------:| 
 | [Add users to a server instance](../accounts/add-organization-users.md)              |   ✔️  |  ✔️  |   ✔️   |     | 
-| [Collection-level, enterprise policies, process, workspaces](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️  |   ✔️   |     | 
-| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |  ✔️  |   ✔️   |     | 
+| [Collection-level, enterprise policies, process, workspaces](change-organization-collection-level-permissions.md)     |   ✔️  |  ✔️  |   ✔️   |     | 
+| [Project-level, test management, create tags](change-project-level-permissions.md)  |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️  |   ✔️   |  ✔️ | 
 | [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)             |   ✔️  |  ✔️ |   ✔️   |  ✔️ | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)               |   ✔️  |  ✔️  |   ✔️   |     | 
-| [Build resources](set-project-collection-level-permissions.md#collection-level)      |   ✔️  |  ✔️  |   ✔️   |     | 
+| [Build resources](change-organization-collection-level-permissions.md)      |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                   |   ✔️  |   ✔️ |  ✔️   |     | 
 | [Releases](../../pipelines/policies/permissions.md#set-release-permissions)              |   ✔️  |  ✔️ |   ✔️   |     | 
 | [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path)       |   ✔️  |  ✔️ |   ✔️   |     | 
@@ -119,12 +119,12 @@ You can use the tools listed in the following table to set permissions. Links in
 |  Permission level |  Web portal security pages |  TFSSecurity CLI | Tf CLI |   
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
-| [Collection-level, process, workspaces](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
-| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
+| [Collection-level, process, workspaces](change-organization-collection-level-permissions.md)    |   ✔️  |  ✔️ |     | 
+| [Project-level, test management, create tags](change-project-level-permissions.md) |   ✔️  |  ✔️ |     | 
 | [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
 | [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)          |   ✔️  |  ✔️ |  ✔️   | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
-| [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
+| [Build resources](change-organization-collection-level-permissions.md)     |   ✔️  |  ✔️ |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
 | [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
 | [Area path](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
@@ -144,12 +144,12 @@ You can use the tools listed in the following table to set permissions. Links in
 |  Permission level |  Web portal security pages |  TFSSecurity CLI | Tf CLI |   
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
-| [Collection-level, workspaces](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
-| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
+| [Collection-level, workspaces](change-organization-collection-level-permissions.md)    |   ✔️  |  ✔️ |     | 
+| [Project-level, test management, create tags](change-project-level-permissions.md) |   ✔️  |  ✔️ |     | 
 | [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
 | [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
-| [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
+| [Build resources](change-organization-collection-level-permissions.md)     |   ✔️  |  ✔️ |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
 | [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
 | [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
@@ -170,10 +170,10 @@ You can use the tools listed in the following table to set permissions. Links in
 | Permission level  |   Web portal security pages  |  TFSSecurity CLI | Tf CLI |   
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
-| [Collection-level](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
-| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
+| [Collection-level](change-organization-collection-level-permissions.md)    |   ✔️  |  ✔️ |     | 
+| [Project-level, test management, create tags](change-project-level-permissions.md) |   ✔️  |  ✔️ |     | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
-| [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
+| [Build resources](change-organization-collection-level-permissions.md)     |   ✔️  |  ✔️ |     | 
 | [Git repository](../../repos/git/set-git-repository-permissions.md)                                    |   ✔️  |  ✔️ |  ✔️ | 
 | [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️ | 
 | [Area path](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
@@ -210,7 +210,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops" 
 
-- [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
+- [Change project-level permissions](change-project-level-permissions.md)  
 - [Add users to a project or team](add-users-team-project.md)  
 - [Add and manage security groups CLI](add-manage-security-groups.md)        
 - [Manage permissions CLI](manage-tokens-namespaces.md)              
@@ -221,7 +221,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops-2020" 
 
-- [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
+- [Change project-level permissions](change-project-level-permissions.md)  
 - [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator)  
 - [Add users to a project or team](add-users-team-project.md)  
 - [Add and manage security groups CLI](add-manage-security-groups.md)        
@@ -233,7 +233,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="< azure-devops-2020" 
 
-- [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
+- [Change project-level permissions](change-project-level-permissions.md)  
 - [Add users to a project or team](add-users-team-project.md)             
 - [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator)  
 - [Permissions and groups reference](permissions.md)  

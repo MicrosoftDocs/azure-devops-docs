@@ -8,7 +8,7 @@
   href: create-organization.md
   displayName: new, project
 - name: Look up organization owner
-  href:  ../security/lookup-organization-owner-admin.md
+  href:  ../security/look-up-organization-owner.md
   displayName: access, permissions, owner, project collection administrator, valid
 - name: Add and manage banners 
   href:  ../settings/manage-banners.md

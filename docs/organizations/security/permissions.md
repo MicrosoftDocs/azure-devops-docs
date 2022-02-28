@@ -25,72 +25,72 @@
 ---
 :::row:::
    :::column span="1":::
-  **Users and groups**
+  **Users and groups**  
   ::: moniker range="azure-devops"
-  -[Add users to an administrator role](set-project-collection-level-permissions.md)  
-  -[Add users to an organization](../accounts/add-organization-users.md)  
-  -[Add users to a project or a team](add-users-team-project.md)  
-  -[Add a team admin](../settings/add-team-administrator.md)  
+     - [Add users to the Project Administrators group](change-project-level-permissions.md)
+     - [Add users to the Project Collection Administrators group](change-organization-collection-level-permissions.md)
+     - [Add users to an organization](../accounts/add-organization-users.md)  
+     - [Add users to a project or a team](add-users-team-project.md)  
+     - [Add a team administrator](../settings/add-team-administrator.md)  
   ::: moniker-end
   ::: moniker range="< azure-devops"
-  -[Add a server-level administrator](/azure/devops/server/admin/add-administrator)  
-  -[Add users to an administrator role](set-project-collection-level-permissions.md)  
-  -[Add users to a project or team](add-users-team-project.md)  
-  -[Add a team admin](../settings/add-team-administrator.md)  
+     - [Add users to the Project Administrators group](change-project-level-permissions.md)
+     - [Add users to the Project Collection Administrators group](change-organization-collection-level-permissions.md)
+     - [Add a server-level administrator](/azure/devops/server/admin/add-administrator)  
+     - [Add users to a project or team](add-users-team-project.md)  
+     - [Add a team administrator](../settings/add-team-administrator.md)  
   ::: moniker-end
   ---
   **Wiki**  
-
-  -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
+     - [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
    :::column-end:::
    :::column span="1":::
-  **DevOps**  
-
-  -[Git branch](../../repos/git/branch-permissions.md)  
-  -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
-  -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
-  -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
-  -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
-  -[Task groups](../../pipelines/policies/set-permissions.md)   
-  -[Variable groups](../../pipelines/policies/set-permissions.md)  
-  -[Role-based resources](../../pipelines/policies/set-permissions.md)  
+  **DevOps**   
+     - [Git branch](../../repos/git/branch-permissions.md)  
+     - [Git repositories](../../repos/git/set-git-repository-permissions.md)  
+     - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
+     - [Build and release pipelines](../../pipelines/policies/set-permissions.md)  
+     - [Approvals and approvers](../../pipelines/release/approvals/index.md)  
+     - [Task groups](../../pipelines/policies/set-permissions.md)   
+     - [Variable groups](../../pipelines/policies/set-permissions.md)  
+     - [Role-based resources](../../pipelines/policies/set-permissions.md)  
    :::column-end:::
    :::column span="1":::
-  **Work tracking**
+  **Work tracking**  
   ::: moniker range=">= tfs-2017"
-  -[Area and iteration paths](set-permissions-access-work-tracking.md)  
-  -[Queries and folders](../../boards/queries/set-query-permissions.md)  
-  -[Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)  
-  -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+     - [Area and iteration paths](set-permissions-access-work-tracking.md)  
+     - [Queries and folders](../../boards/queries/set-query-permissions.md)  
+     - [Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)  
+     - [Customize process](set-permissions-access-work-tracking.md#process-permissions)  
   ::: moniker-end
   ::: moniker range="< tfs-2017"
-  -[Area and iteration paths](set-permissions-access-work-tracking.md)  
-  -[Queries and folders](../../boards/queries/set-query-permissions.md)  
-  -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+     - [Area and iteration paths](set-permissions-access-work-tracking.md)  
+     - [Queries and folders](../../boards/queries/set-query-permissions.md)  
+     - [Customize process](set-permissions-access-work-tracking.md#process-permissions)  
   ::: moniker-end
   ---
   **Reporting**
   ::: moniker range="azure-devops"
-  -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
-  -[Analytics](../../report/powerbi/analytics-security.md)  
-  -[Analytics views](../../report/powerbi/analytics-security.md)  
+     - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+     - [Analytics](../../report/powerbi/analytics-security.md)  
+     - [Analytics views](../../report/powerbi/analytics-security.md)  
   ::: moniker-end
   ::: moniker range="> tfs-2018 < azure-devops"
-  -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
-  -[Analytics](../../report/powerbi/analytics-security.md)  
-  -[Analytics views](../../report/powerbi/analytics-security.md) 
-  -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+     - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+     - [Analytics](../../report/powerbi/analytics-security.md)  
+     - [Analytics views](../../report/powerbi/analytics-security.md) 
+     - [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
   ::: moniker-end
   ::: moniker range="<= tfs-2018"
-  -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
-  -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+     - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+     - [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
   ::: moniker-end
    :::column-end:::
 :::row-end:::
 
    <a id="image-diff"></a>  
 
->[!NOTE]  
+> [!NOTE]  
 > The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps. However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
    <a name="service-accounts"></a>
@@ -1476,7 +1476,7 @@
 
 ::: moniker range="azure-devops"
 
-   You manage project-level permissions through the [web portal admin context](set-project-collection-level-permissions.md#project-level) or with the [az devops security group](add-manage-security-groups.md) commands. Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+   You manage project-level permissions through the [web portal admin context](change-project-level-permissions.md) or with the [az devops security group](add-manage-security-groups.md) commands. Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
  
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -1498,12 +1498,12 @@
 
 ::: moniker range=">= azure-devops-2020 < azure-devops"
 
-   You manage project-level permissions through the [web portal admin context](set-project-collection-level-permissions.md#project-level), with the [az devops security group](add-manage-security-groups.md) commands, or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+   You manage project-level permissions through the [web portal admin context](change-project-level-permissions.md), with the [az devops security group](add-manage-security-groups.md) commands, or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-   You manage project-level permissions through the [web portal admin context](set-project-collection-level-permissions.md#project-level) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+   You manage project-level permissions through the [web portal admin context](change-project-level-permissions.md) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 > [!NOTE]
 > Several permissions are granted to members of the [Project Administrators group](#project-administrator-group) and aren't surfaced within the user interface.  

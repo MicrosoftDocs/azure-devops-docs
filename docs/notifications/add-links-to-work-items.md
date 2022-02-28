@@ -7,7 +7,7 @@ toc: show
 ms.custom: contperf-fy21q2, cross-project
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
 ms.date: 04/16/2021
 ---

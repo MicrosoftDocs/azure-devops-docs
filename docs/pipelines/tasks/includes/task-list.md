@@ -43,6 +43,7 @@ ms.technology: devops-cicd-tasks
 |--------|-----------|
 | :::image type="icon" source="../utility/media/archive-files.png" border="false"::: [Archive Files task](../utility/archive-files.md) - Use an archive file to then create a source folder | Azure Pipelines, TFS 2017 and newer |
 | :::image type="icon" source="../utility/media/azurenlbmanagement.png" border="false"::: [Azure Network Load Balancer task](../utility/azure-nlb-management.md) - Connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool | Azure Pipelines |
+| :::image type="icon" source="../deploy/media/azure-static-app.png" border="false"::: [Azure Static Web App task](../utility/azure-static-web-app.md) - Build and deploy an [Azure Static Web App](/azure/static-web-apps/overview). | Azure Pipelines |
 | :::image type="icon" source="../utility/media/bash.png" border="false"::: [Bash task](../utility/bash.md) - Run a Bash script on macOS, Linux, or Windows | Azure Pipelines |
 | :::image type="icon" source="../utility/media/batch-script.png" border="false"::: [Batch Script task](../utility/batch-script.md) - Execute .bat or .cmd scripts when building your code | Azure Pipelines, TFS 2015 RTM and newer |
 | [Cache task](../utility/cache.md) - Improve build performance by caching files, like dependencies, between pipeline runs. | Azure Pipelines, TFS 2017 and newer |

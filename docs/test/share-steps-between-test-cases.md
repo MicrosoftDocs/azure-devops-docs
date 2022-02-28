@@ -121,4 +121,4 @@ When you [run a test](run-manual-tests.md), you can either mark the whole shared
 - [Create a test case](create-test-cases.md)
 - [Repeat a test with different data](repeat-test-with-different-data.md)
 - [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
-- [FAQs for manual testing](reference-qa.md)
+- [FAQs for manual testing](reference-qa.yml)

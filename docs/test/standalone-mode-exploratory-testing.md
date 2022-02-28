@@ -82,7 +82,7 @@ or Team Foundation Server connection to use this mode.
    Share it with the rest of your team as an email attachment, or 
    copy it to OneNote, Word, or in any other format you prefer.
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
 
 ## Next step
 

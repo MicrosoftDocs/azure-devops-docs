@@ -25,19 +25,19 @@ If you have a project that's no longer valid, you can delete it from your organi
 
 ::: moniker range="azure-devops" 
 
-- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the project-level **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
-- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2017"  
 
-- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**.  For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 

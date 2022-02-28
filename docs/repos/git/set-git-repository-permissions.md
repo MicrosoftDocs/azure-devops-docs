@@ -27,7 +27,7 @@ For guidance on who to provide greater permission levels, see [Grant or restrict
 ## Prerequisites
 
 - You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises Azure DevOps](../../organizations/projects/create-project.md).
-- You must be a member of the [Project Administrators Group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories.  
+- You must be a member of the [**Project Administrators** Group](../../organizations/security/change-project-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories.  
 
 ::: moniker range="azure-devops"
 
@@ -162,7 +162,7 @@ Individual repositories inherit permissions from the top-level **Git Repository*
 
 ## Change permissions for a security group
 
-To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md#project-level). 
+To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project-level](../../organizations/security/change-project-level-permissions.md). 
 
 1. To set permissions for a specific group, choose the group. For example, here we choose the Contributors group.
 

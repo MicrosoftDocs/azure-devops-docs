@@ -6,7 +6,7 @@ metadata:
   ms.technology: devops-migrate
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
   ms.date: 04/01/2021
@@ -64,4 +64,3 @@ additionalContent: |
   - [Troubleshooting process errors](migration-processtemplates.md#dealing-with-process-errors)
   - [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
   - [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
-

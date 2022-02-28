@@ -2,7 +2,7 @@
 ms.topic: include
 author: vijayma
 ms.author: vijayma
-ms.date: 07/05/2017
+ms.date: 02/24/2022
 ms.prod: devops
 ms.technology: devops-cicd-tasks
 ---
@@ -12,7 +12,7 @@ ms.technology: devops-cicd-tasks
 # Install and publish npm packages, or run an npm command. Supports npmjs.com and authenticated registries like Azure Artifacts.
 - task: Npm@1
   inputs:
-    #command: 'install' # Options: install, publish, custom
+    #command: 'install' # Options: install, publish, custom, ci. Default: install.
     #workingDir: # Optional
     #verbose: # Optional
     #customCommand: # Required when command == Custom
