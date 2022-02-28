@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '>= tfs-2015'  
-ms.date: 02/25/2022
+ms.date: 02/28/2022
 ---
 
 # Manage your project 
@@ -43,9 +43,6 @@ To learn more about security and setting permissions at the project-level, revie
 
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
 - [Change permissions at the organization or collection-level](../organizations/security/change-project-level-permissions.md) 
-
- 
-[!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)] 
  
 ### Add members to the Project Administrators group 
 
@@ -99,7 +96,9 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 [!INCLUDE [review-notifications](../includes/get-started/review-notifications.md)] 
 
- 
+[!INCLUDE [determine-traceability-requirements](../includes/get-started/determine-traceability-requirements.md)]  
+
+
 ## Integrate with other services 
 
 TBD - Mention:

@@ -1,12 +1,14 @@
 ---
-ms.technology: devops-security
+ms.technology: devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 04/15/2021
+ms.date: 02/28/2022
 ---
 
-<!--- ability-to-find-user-once-added)]  --> 
+## Determine traceability requirements
 
-> [!NOTE]   
-> You may not be able to find a user from a permissions page or identity field if the user hasn't been added to the project&mdash;either by adding it to a security group or to a project team. Also, when a user is added to Azure Active Directory or Active Directory, there can be a delay between the time they are added to the project and when they are searchable from an identity field. The delay can be between 5 minutes to 7 days. 
+If you're using most of Azure DevOps Services&mdash;Boards, Repos, Pipelines, and Test Plans&mdash; you'll want to alert your teams to those features that support end-to-end traceability. To get started, we recommend that you review the following articles: 
+
+- [Cross-service integration and collaboration overview](../../cross-service/cross-service-overview.md)
+- [End-to-end traceability](../..//cross-service/end-to-end-traceability.md)
