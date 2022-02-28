@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 12/06/2021
+ms.date: 02/28/2022
 ms.custom: contperf-fy21q3
 monikerRange: '>=tfs-2013'
 ---
@@ -13,7 +13,7 @@ monikerRange: '>=tfs-2013'
 [!INCLUDE [version-gt-eq-2013](../../includes/version-gt-eq-2013.md)]
 
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
-They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you are troubleshooting a pipeline. 
+They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you're troubleshooting a pipeline. 
 
 
 
@@ -298,7 +298,7 @@ Update exist timeline record:
 
 Sets a variable in the variable service of taskcontext. The first task can set a variable, and following tasks are able to use the variable. The variable is exposed to the following tasks as an environment variable.
 
-When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must instead be passed as inputs.
+When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
 
 See [set variables in scripts](../process/variables.md#set-variables-in-scripts) for more details.
 
@@ -451,7 +451,7 @@ Value updated will be retained in the endpoint for the subsequent tasks that exe
 
 #### Usage
 
-Upload and attach attachment to current timeline record. These files are not available for download with logs. These can only be referred to by extensions using the type or name values.
+Upload and attach attachment to current timeline record. These files aren't available for download with logs. These can only be referred to by extensions using the type or name values.
 
 #### Properties
 
@@ -478,7 +478,7 @@ Upload and attach summary Markdown to current timeline record. This summary shal
 ##vso[task.uploadsummary]c:\testsummary.md
 ```
 
-It is a short hand form for the command
+It's a short hand form for the command
 
 ```
 ##vso[task.addattachment type=Distributedtask.Core.Summary;name=testsummaryname;]c:\testsummary.md
