@@ -7,11 +7,11 @@ ms.date: 02/28/2022
 ---
 
 ::: moniker range=">= azure-devops-2019"
-The following table lists the permissions assigned at the project-level. All of these permissions are granted to members of the **Project Collection Administrators** group, except for the **Delete shared Analytics views** and **Edit shared Analytics views** permissions which are not set. For a description of each permission, see [Permissions and groups reference, Groups](permissions.md#project-level-permissions).
+The following table lists the permissions assigned at the project-level. All of these permissions are granted to members of the **Project Collection Administrators** group, except for the **Delete shared Analytics views** and **Edit shared Analytics views** permissions which are not set. For a description of each permission, see [Permissions and groups reference, Groups](../permissions.md#project-level-permissions).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-The following table lists the permissions assigned at the project-level. All of these permissions are granted to members of the **Project Collection Administrators** group. For a description of each permission, see [Permissions and groups reference, Groups](permissions.md#project-level-permissions).
+The following table lists the permissions assigned at the project-level. All of these permissions are granted to members of the **Project Collection Administrators** group. For a description of each permission, see [Permissions and groups reference, Groups](../permissions.md#project-level-permissions).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
