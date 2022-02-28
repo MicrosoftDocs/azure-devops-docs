@@ -8,57 +8,57 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '<= azure-devops'
+monikerRange: '>= tfs-2015'  
 ms.date: 02/25/2022
 ---
 
 # Manage your project 
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
+[!INCLUDE [version-gt-eq-2015.md](../includes/version-gt-eq-2015.md)]  
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults. 
 
 If you've created a project or been added to the **Project Administrators** group, you'll want to be familiar with the administrative tasks your charged with. there are a few tasks you might want to do to ensure a smooth operational experience. 
 
+::: moniker range=">= tfs-2018"
 > [!NOTE]   
 > This article provides an overview of tasks a member of the **Project Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Collection Administrators** group, see [Manage your organization or project collection](manage-organization-collection.md).
-
+::: moniker-end 
 
 
 [!INCLUDE [add-users-project](../includes/get-started/add-users-project.md)]  
 
-[!INCLUDE [add-project-administrators](../includes/get-started/add-project-administrators.md)]  
+
 
 [!INCLUDE [share-project-vision](../includes/get-started/share-project-vision.md)]  
 
 
-## Grant or restrict permissions  
+## Manage security and permissions
 
-Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
+Access to select tasks is controlled by permissions and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md).  
 
-::: moniker range="azure-devops"  
+[!INCLUDE [project-level-permissions](../organizations/security/includes/project-level-permissions.md)]
 
-> [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](manage-organization-collection.md#project-scoped-user-group).
+To learn more about security and setting permissions at the project-level, review the following articles:
 
-::: moniker-end  
+- [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
+- [Change permissions at the organization or collection-level](../organizations/security/change-project-level-permissions.md) 
+
+ 
+[!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)] 
+ 
+### Add members to the Project Administrators group 
+
+[!INCLUDE [add-project-administrators](../includes/get-started/add-project-administrators.md)]  
+
+### Grant or restrict permissions  
 
 To delegate specific tasks to others, add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
 
 - [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
 
-To learn more about permissions and security, review the following articles:
-
-- [About security and identity](../organizations/security/about-security-identity.md)  
-- [About permissions and groups](../organizations/security/about-permissions.md)  
-- [About security roles](../organizations/security/about-security-roles.md)  
-- [About access levels](../organizations/security/access-levels.md)  
-
-
 [!INCLUDE [enable-remove-services](../includes/get-started/enable-remove-services.md)]  
-
-::: moniker range=">= tfs-2015"  
 
 ## Set DevOps policies 
 
@@ -68,15 +68,14 @@ Set policies to support collaboration across your teams and automatically remove
 - [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
 - [Set test retention policies](../test/how-long-to-keep-test-results.md) 
-
-::: moniker-end  
  
+## Configure and customize Azure Boards 
 
 [!INCLUDE [define-area-iteration-paths](../includes/get-started/define-area-iteration-paths.md)] 
 
 
 
-## Customize work-tracking processes
+### Customize work-tracking processes
 
 ::: moniker range=">= azure-devops-2019"
   
@@ -145,5 +144,10 @@ GitHub integration
 <!--- 
 What to tell their users?
 - advantage for setting up teams for repos and pipelines 
+::: moniker range="azure-devops"  
 
+> [!NOTE]  
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](manage-organization-collection.md#project-scoped-user-group).
+
+::: moniker-end  
 -->

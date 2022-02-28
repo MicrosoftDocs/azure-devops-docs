@@ -24,6 +24,7 @@ Each organization is associated with one and only one collection. If you need to
 When you install Azure DevOps Server, you automatically create a default collection. If you need to create another project collection, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 ::: moniker-end
 
+
 > [!NOTE]   
 > This article provides an overview of tasks that require membership in the **Project Collection Administrators** group. For information on tasks to be performed by members of a **Project Administrators** group, see [Manage your project](project-admin-tutorial.md).
 
@@ -70,28 +71,27 @@ When you add users, you specify their *access level* which determines the featur
 
 Azure DevOps Services charges for the following services as described in [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).  
 - Individual services:
-	- Microsoft-hosted CI/CD parallel job 
-	- Self-hosted CI'CD parallel job Users added to organizations
+	- Microsoft-hosted CI/CD parallel jobs 
+	- Self-hosted CI/CD parallel jobs
 	- Storage of Azure Artifacts feeds 
 - User licenses for **Basic** or **Basic + Test Plans**. 
  
-All organizations are granted five free **Basic** licenses. If your organization requires more than five contributors, then you'll need to set up billing. Users that have a Visual Studio subscription can be added without incurring any further billing charges. Billing is based on the access level, **Basic** or **Basic + Test Plans**, that you assign to the user. 
+All organizations are granted five free **Basic** licenses and unlimited users with **Stakeholder** access. For information on each access level, see [About access levels](../organizations/security/access-levels.md). 
 
-All organizations can add up to five users with **Basic** access and unlimited users with **Stakeholder** access. If you need to add more users or pay for additional services, refer to the following articles: 
-- [About access levels](../organizations/security/access-levels.md)  
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).  
+If your organization requires more than five contributors, then you'll need to set up billing. Users that have a Visual Studio subscription can be added without incurring any further billing charges. Billing is based on the access level, **Basic** or **Basic + Test Plans**, that you assign to the user. To learn more, see [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).  
 
 ::: moniker-end
 
 ## Manage security and permissions
 
-Access to select tasks is controlled by permissions and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
+Access to select tasks is controlled by permissions and security groups.  
 
-To learn more about permissions and security, review the following articles:
+[!INCLUDE [collection-level-permissions](../organizations/security/includes/collection-level-permissions.md)]
 
-- [About security and identity](../organizations/security/about-security-identity.md)  
-- [About permissions and groups](../organizations/security/about-permissions.md)  
-- [About security roles](../organizations/security/about-security-roles.md) 
+To learn more about security and setting permissions at the collection-level, review the following articles:
+
+- [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
+- [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md) 
  
 ### Grant or restrict permissions  
 
