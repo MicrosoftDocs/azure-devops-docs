@@ -6,13 +6,13 @@ ms.technology: devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '<= azure-devops'
+monikerRange: '>=tfs-2018'
 ms.date: 02/25/2022
 ---
 
 # Manage your organization or project collection
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]  
 
 After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks you'll want to review to ensure you're setting up your organization or collection to get maximal use of your services. 
 
@@ -53,8 +53,6 @@ When you add users, you specify their *access level* which determines the featur
 > If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Limit user visibility for projects and more](#limit-identity-selection) later in this article. 
 
 ::: moniker-end  
-
-::: moniker-end 
 
 ::: moniker range="< azure-devops" 
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)  
@@ -141,7 +139,6 @@ To enable this feature, see [Manage or enable features](../project/navigation/pr
 > [!NOTE]  
 > All security groups are organization-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups may be limited based on user permissions. However, you can discover the names of all groups in an organization using the **azure devops** CLI tool or our REST APIs. To learn more, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
 ::: moniker-end  
-::: moniker-end 
 
 ::: moniker range="azure-devops"
  
