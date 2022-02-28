@@ -71,7 +71,7 @@ If your team project was created using the Basic configuration or is hosted on A
 
  Choose this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
-1.  If you aren't a member of the Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
+1.  If you aren't a member of the **Project Administrators** group, [get added now](../organizations/security/change-project-level-permissions.md).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -88,7 +88,7 @@ If your team project was created using the Basic configuration or is hosted on A
 
 Some process guidance links will work only if process guidance has been enabled for your team project.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
+1.  If you aren't a member of the Team **Project Administrators** group, [get added now](../organizations/security/change-project-level-permissions.md).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   

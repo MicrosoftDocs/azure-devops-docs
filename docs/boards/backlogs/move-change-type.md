@@ -60,7 +60,7 @@ In this article you'll learn:
 
 ::: moniker-end 
 
-To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). 
 
 ::: moniker range="azure-devops"
 

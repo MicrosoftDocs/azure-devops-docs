@@ -32,12 +32,13 @@ Values in parenthesis indicate what level the permission is managed:
    ### A
    
    - [Administer build permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer build resource permissions (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Administer build resource permissions (Collection)](change-organization-collection-level-permissions.md)
    - [Administer release permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer process permissions (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [Administer shelved changes (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Administer process permissions (Collection)](change-organization-collection-level-permissions.md)
+   - [Administer shelved changes (Collection)](change-organization-collection-level-permissions.md)
    - [Administer task group permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer shelved changes (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Administer shelved changes (Collection)](change-organization-collection-level-permissions.md)
+   - [Administer workspaces (Collection)](change-organization-collection-level-permissions.md)
    - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
    - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
@@ -62,37 +63,37 @@ Values in parenthesis indicate what level the permission is managed:
    - [Build permissions, manage (Object)](../../pipelines/policies/set-permissions.md)
    - [Builds, manage (Object)](../../pipelines/policies/set-permissions.md)
    - [Bypass branch policies (Object)](../../repos/git/branch-permissions.md)
-   - [Bypass rules on work item updates (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Bypass rules on work item updates (Project)](change-project-level-permissions.md)
    
    ### C
    
-   - [Change process of team project (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Change work item type (Project)](set-project-collection-level-permissions.md)
+   - [Change process of team project (Project)](change-project-level-permissions.md)
+   - [Change work item type (Project)](change-project-level-permissions.md)
    - [Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Collection-level information](set-project-collection-level-permissions.md)
+   - [Collection-level information](change-organization-collection-level-permissions.md)
    - [Configure Azure Boards (Team)](../settings/manage-teams.md)
-   - [Create a workspace (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Create a workspace (Collection)](change-organization-collection-level-permissions.md)
    - [Create child nodes (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Create child nodes (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
-   - [Create new projects (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [Create process (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Create new projects (Collection)](change-organization-collection-level-permissions.md)
+   - [Create process (Collection)](change-organization-collection-level-permissions.md)
    - [Create releases (Object)](../../pipelines/policies/permissions.md)
-   - [Create tag definition (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Create test runs (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Create tag definition (Project)](change-project-level-permissions.md)
+   - [Create test runs (Project)](change-project-level-permissions.md)
    - [Contribute (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Customize process](set-project-collection-level-permissions.md#collection-level)
+   - [Customize process](set-permissions-access-work-tracking.md#process-permissions)
    
    ### D
    
    - [Dashboards, manage (Team)](../../report/dashboards/dashboard-permissions.md)
    - [Delete audit streams (Collection)](permissions.md#delete-audit-streams-permission)
    - [Delete (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Delete and restore work items (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Delete and restore work items (Project)](change-project-level-permissions.md)
    - [Delete build pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Delete builds (Object)](../../pipelines/policies/permissions.md)
    - [Delete field from organization (Collection)](../settings/work/customize-process-field.md)
-   - [Delete team project (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Delete test runs (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Delete team project (Project)](change-project-level-permissions.md)
+   - [Delete test runs (Project)](change-project-level-permissions.md)
    - [Delete release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Delete release stage (Object)](../../pipelines/policies/permissions.md)
    - [Delete releases (Object)](../../pipelines/policies/permissions.md)
@@ -114,27 +115,27 @@ Values in parenthesis indicate what level the permission is managed:
    
    - [Edit build definition (Object)](../../pipelines/policies/permissions.md)
    - [Edit build quality (Object)](../../pipelines/policies/permissions.md)
-   - [Edit collection-level information (Collection)](set-project-collection-level-permissions.md)
+   - [Edit collection-level information (Collection)](change-organization-collection-level-permissions.md)
    - [Edit build pipeline (Object)](../../pipelines/policies/permissions.md)
-   - [Edit instance-level information (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [Edit process (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [Edit project-level information (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Edit instance-level information (Collection)](change-organization-collection-level-permissions.md)
+   - [Edit process (Collection)](change-organization-collection-level-permissions.md)
+   - [Edit project-level information (Project)](change-project-level-permissions.md)
    - [Edit release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Edit release state (Object)](../../pipelines/policies/permissions.md)
    - [Edit shared Analytics views (Object)](../../report/powerbi/analytics-security.md)
-   - [Edit shared Analytics views (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Edit shared Analytics views (Project)](change-project-level-permissions.md)
    - [Edit task group (Object)](../../pipelines/policies/permissions.md)
    - [Edit this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Edit this node (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Edit work items in this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Enumerate tag definition (Project)](permissions.md#work-item-tags) 
-   - [Events (Collection)](set-project-collection-level-permissions.md)
+   - [Events (Collection)](change-organization-collection-level-permissions.md)
    - [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
    
    ### F-L
    
    - [Feeds](../../artifacts/feeds/feed-permissions.md)
-   - [Field, delete (Collection)](set-project-collection-level-permissions.md)
+   - [Field, delete (Collection)](change-organization-collection-level-permissions.md)
    - [Git branch (Object)](../../repos/git/branch-permissions.md)
    - [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)
    - [Iteration paths (Object)](set-permissions-access-work-tracking.md)
@@ -147,37 +148,37 @@ Values in parenthesis indicate what level the permission is managed:
    
    - [Make requests on behalf of others (Collection)](permissions.md#make-requests-on-behalf-of-others)
    - [Manage audit streams (Collection)](permissions.md#manage-audit-streams-permission)
-   - [Manage build resources (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Manage build resources (Collection)](change-organization-collection-level-permissions.md)
 
    - [Manage build qualities (Object)](../../pipelines/policies/permissions.md)
    - [Manage deployments (Object)](../../pipelines/policies/permissions.md)
-   - [Manage enterprise policies (Collection)](permissions.md#manage-enterprise-policies-permission)
+   - [Manage enterprise policies (Collection)](change-organization-collection-level-permissions.md))
    - [Manage permissions (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Manage project properties (Project)](set-project-collection-level-permissions.md)
+   - [Manage project properties (Project)](change-project-level-permissions.md)
 
    - [Manage release approvers (Object)](../../pipelines/policies/permissions.md)
    - [Manage releases (Object)](../../pipelines/policies/permissions.md)
    - [Manage test plans (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Manage test suites (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
-   - [Manage test configurations (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Manage test environments (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Manage test controllers (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Manage test configurations (Project)](change-project-level-permissions.md)
+   - [Manage test environments (Project)](change-project-level-permissions.md)
+   - [Manage test controllers (Collection)](change-organization-collection-level-permissions.md)
    - [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
    - [Merge, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Move work items out of this project (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Move work items out of this project (Project)](change-project-level-permissions.md)
    - [Notes, Git (Object)](../../repos/git/branch-permissions.md)
    - [Notifications (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
    
    ### O-P
    
    - [Override check-in validation by build (Object)](../../pipelines/policies/permissions.md)
-   - [Permanently delete work items (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Permanently delete work items (Project)](change-project-level-permissions.md)
    - [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)
    - [Policies, Git repository (Object)](../../repos/git/set-git-repository-permissions.md)
    - [Power BI (Analytics Service)](../../report/powerbi/analytics-security.md)
    - [Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)
-   - [Project properties (Project)](set-project-collection-level-permissions.md)
-   - [Project-level information](set-project-collection-level-permissions.md)
+   - [Project properties (Project)](change-project-level-permissions.md)
+   - [Project-level information](change-project-level-permissions.md)
    
    
 
@@ -190,7 +191,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Query (Object)](../../boards/queries/set-query-permissions.md)
    - [Query folder (Object)](../../boards/queries/set-query-permissions.md)
    - [Read (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Rename team project (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Rename team project (Project)](change-project-level-permissions.md)
    - [Release pipelines (Object)](../../pipelines/policies/set-permissions.md)
    - [Repository, Git (Object)](../../repos/git/set-git-repository-permissions.md)
    - [Retain (build) indefinitely (Object)](../../pipelines/policies/permissions.md)
@@ -200,51 +201,51 @@ Values in parenthesis indicate what level the permission is managed:
    - [Secure files (Object, Role)](../../pipelines/policies/set-permissions.md)
    - [Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Service hooks](../../service-hooks/overview.md#subscription-permissions)
-   - [Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)
+   - [Shelvesets, TFVC (Collection)](change-organization-collection-level-permissions.md)
    - [Sprint, define (Object)](set-permissions-access-work-tracking.md)
    - [Sprints, select (Team)](../settings/set-iteration-paths-sprints.md)
    - [Stop builds (Object)](../../pipelines/policies/permissions.md)
-   - [Suppress notifications for work item updates (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Suppress notifications for work item updates (Project)](change-project-level-permissions.md)
    
    ### T
    
    - [Tags, Git (Object)](../../repos/git/branch-permissions.md)
    - [Tags, work items (Project)](set-permissions-access-work-tracking.md)
    - [Task groups (Object)](../../pipelines/policies/set-permissions.md)
-   - [Team projects (Collection)](set-project-collection-level-permissions.md)
+   - [Team projects (Collection)](change-project-level-permissions.md)
    - [Test artifacts, delete](set-permissions-access-work-tracking.md#delete-test-permissions)
-   - [Test configurations (Project)](set-project-collection-level-permissions.md)
-   - [Test controllers (Project)](set-project-collection-level-permissions.md)
-   - [Test environments (Project)](set-project-collection-level-permissions.md)
-   - [Test runs  (Project)](set-project-collection-level-permissions.md)
+   - [Test configurations (Project)](change-project-level-permissions.md)
+   - [Test controllers (Project)](change-project-level-permissions.md)
+   - [Test environments (Project)](change-project-level-permissions.md)
+   - [Test runs  (Project)](change-project-level-permissions.md)
    - [TFVC repositories (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Trace settings (Collection)](set-project-collection-level-permissions.md)
-   - [Trigger events (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Trace settings (Collection)](change-project-level-permissions.md)
+   - [Trigger events (Collection)](change-organization-collection-level-permissions.md)
    
    ### U-V-W
    
    - [Update build information (Object)](../../pipelines/policies/permissions.md)
    - [Update build queue (Object)](../../pipelines/policies/permissions.md)
-   - [Update project visibility (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Update project visibility (Project)](change-project-level-permissions.md)
    - [Update tag definition (Project)](permissions.md#work-item-tags) 
-   - [Use build resources (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Use build resources (Collection)](change-organization-collection-level-permissions.md)
    - [Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md)
    - [View analytics (Project)](permissions.md#view-analytics-permission)
    - [View audit log (Collection)](permissions.md#view-audit-log-permission)
-   - [View build resources (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [View build resources (Collection)](change-organization-collection-level-permissions.md)
    - [View builds (Object)](../../pipelines/policies/permissions.md)
    - [View release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [View releases (Object)](../../pipelines/policies/permissions.md)
-   - [View instance-level information (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [View project-level information (Project)](set-project-collection-level-permissions.md#project-level)
+   - [View instance-level information (Collection)](change-organization-collection-level-permissions.md)
+   - [View project-level information (Project)](change-project-level-permissions.md)
    - [View shared Analytics views (Object)](../../report/powerbi/analytics-security.md)
-   - [View system synchronization information (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [View test runs (Project)](set-project-collection-level-permissions.md#project-level)
+   - [View system synchronization information (Collection)](change-organization-collection-level-permissions.md)
+   - [View test runs (Project)](change-project-level-permissions.md)
    - [View work items in this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [View permissions for this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [View permissions for this node (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Work items (Project)](set-permissions-access-work-tracking.md)
-   - [Workspaces (Collection)](set-project-collection-level-permissions.md) 
+   - [Workspaces (Collection)](change-project-level-permissions.md) 
    
 
    :::column-end:::
@@ -272,13 +273,13 @@ Values in parenthesis indicate what level the permission is managed:
    ### A
    
    - [Administer build permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer build resource permissions (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Administer build resource permissions (Collection)](change-organization-collection-level-permissions.md)
 
    - [Administer release permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer process permissions (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [Administer shelved changes (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Administer process permissions (Collection)](change-organization-collection-level-permissions.md)
+   - [Administer shelved changes (Collection)](change-organization-collection-level-permissions.md)
    - [Administer task group permissions (Object)](../../pipelines/policies/permissions.md)
-   - [Administer shelved changes (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Administer shelved changes (Collection)](change-organization-collection-level-permissions.md)
    - [Administer warehouse (Server)](permissions.md#server-permissions)
    - [Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)
    - [Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
@@ -303,32 +304,32 @@ Values in parenthesis indicate what level the permission is managed:
    - [Build permissions, manage (Object)](../../pipelines/policies/set-permissions.md)
    - [Builds, manage (Object)](../../pipelines/policies/set-permissions.md)
    - [Bypass branch policies (Object)](../../repos/git/branch-permissions.md)
-   - [Bypass rules on work item updates (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Bypass rules on work item updates (Project)](change-project-level-permissions.md)
    
    ### C
    
-   - [Change process of team project (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Change work item type (Project)](set-project-collection-level-permissions.md)
+   - [Change process of team project (Project)](change-project-level-permissions.md)
+   - [Change work item type (Project)](change-project-level-permissions.md)
    - [Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Collection-level information](set-project-collection-level-permissions.md)
+   - [Collection-level information](change-project-level-permissions.md)
    - [Configure Azure Boards (Team)](../settings/manage-teams.md)
-   - [Create a workspace (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Create a workspace (Collection)](change-organization-collection-level-permissions.md)
    - [Create child nodes (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Create child nodes (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
-   - [Create new projects (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [Create process (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Create new projects (Collection)](change-organization-collection-level-permissions.md)
+   - [Create process (Collection)](change-organization-collection-level-permissions.md)
    - [Create project collection (Server)](permissions.md#server-permissions)
    - [Create releases (Object)](../../pipelines/policies/permissions.md)
-   - [Create tag definition (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Create test runs (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Create tag definition (Project)](change-project-level-permissions.md)
+   - [Create test runs (Project)](change-project-level-permissions.md)
    - [Contribute (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Customize process](set-project-collection-level-permissions.md#collection-level)
+   - [Customize process](change-organization-collection-level-permissions.md)
    
    ### D
    
    - [Dashboards, manage (Team)](../../report/dashboards/dashboard-permissions.md)
    - [Delete (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Delete and restore work items (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Delete and restore work items (Project)](change-project-level-permissions.md)
    - [Delete build pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Delete builds (Object)](../../pipelines/policies/permissions.md)
    - [Delete field from organization (Collection)](../settings/work/customize-process-field.md)
@@ -338,8 +339,8 @@ Values in parenthesis indicate what level the permission is managed:
    - [Delete releases (Object)](../../pipelines/policies/permissions.md)
    - [Delete tag definition (Project)](permissions.md#work-item-tags) 
    - [Delete task group(Object)](../../pipelines/policies/permissions.md)
-   - [Delete team project (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Delete test runs (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Delete team project (Project)](change-project-level-permissions.md)
+   - [Delete test runs (Project)](change-project-level-permissions.md)
    - [Delete this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Delete this node (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)
@@ -356,28 +357,28 @@ Values in parenthesis indicate what level the permission is managed:
    
    - [Edit build definition (Object)](../../pipelines/policies/permissions.md)
    - [Edit build quality (Object)](../../pipelines/policies/permissions.md)
-   - [Edit collection-level information (Collection)](set-project-collection-level-permissions.md)
+   - [Edit collection-level information (Collection)](change-project-level-permissions.md)
    - [Edit build pipeline (Object)](../../pipelines/policies/permissions.md)
-   - [Edit instance-level information (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Edit instance-level information (Collection)](change-organization-collection-level-permissions.md)
    - [Edit instance level information (Server)](permissions.md#server-permissions)
-   - [Edit process (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [Edit project-level information (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Edit process (Collection)](change-organization-collection-level-permissions.md)
+   - [Edit project-level information (Project)](change-project-level-permissions.md)
    - [Edit release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Edit release state (Object)](../../pipelines/policies/permissions.md)
    - [Edit shared Analytics views (Object)](../../report/powerbi/analytics-security.md)
-   - [Edit shared Analytics views (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Edit shared Analytics views (Project)](change-project-level-permissions.md)
    - [Edit task group (Object)](../../pipelines/policies/permissions.md)
    - [Edit this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Edit this node (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Edit work items in this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Enumerate tag definition (Project)](permissions.md#work-item-tags) 
-   - [Events (Collection)](set-project-collection-level-permissions.md)
+   - [Events (Collection)](change-project-level-permissions.md)
    - [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
    
    ### F-L
    
    - [Feeds](../../artifacts/feeds/feed-permissions.md)
-   - [Field, delete (Collection)](set-project-collection-level-permissions.md)
+   - [Field, delete (Collection)](change-project-level-permissions.md)
    - [Git branch (Object)](../../repos/git/branch-permissions.md)
    - [Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)
    - [Iteration paths (Object)](set-permissions-access-work-tracking.md)
@@ -390,37 +391,37 @@ Values in parenthesis indicate what level the permission is managed:
    
    - [Make requests on behalf of others (Collection)](permissions.md#make-requests-on-behalf-of-others)
    - [Make requests on behalf of others (Server)](permissions.md#server-permissions)
-   - [Manage build resources (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Manage build resources (Collection)](change-organization-collection-level-permissions.md)
 
    - [Manage build qualities (Object)](../../pipelines/policies/permissions.md)
    - [Manage deployments (Object)](../../pipelines/policies/permissions.md)
-   - [Manage enterprise policies (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Manage enterprise policies (Collection)](change-organization-collection-level-permissions.md)
    - [Manage permissions (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Manage project properties (Project)](set-project-collection-level-permissions.md)
+   - [Manage project properties (Project)](change-project-level-permissions.md)
 
    - [Manage release approvers (Object)](../../pipelines/policies/permissions.md)
    - [Manage releases (Object)](../../pipelines/policies/permissions.md)
    - [Manage test plans (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [Manage test suites (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
-   - [Manage test configurations (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Manage test environments (Project)](set-project-collection-level-permissions.md#project-level)
-   - [Manage test controllers (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Manage test configurations (Project)](change-project-level-permissions.md)
+   - [Manage test environments (Project)](change-project-level-permissions.md)
+   - [Manage test controllers (Collection)](change-organization-collection-level-permissions.md)
    - [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
    - [Merge, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Move work items out of this project (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Move work items out of this project (Project)](change-project-level-permissions.md)
    - [Notes, Git (Object)](../../repos/git/branch-permissions.md)
    - [Notifications (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)
    
    ### O-P
    
    - [Override check-in validation by build (Object)](../../pipelines/policies/permissions.md)
-   - [Permanently delete work items (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Permanently delete work items (Project)](change-project-level-permissions.md)
    - [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)
    - [Policies, Git repository (Object)](../../repos/git/set-git-repository-permissions.md)
    - [Power BI (Analytics Service)](../../report/powerbi/analytics-security.md)
    - [Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)
-   - [Project properties (Project)](set-project-collection-level-permissions.md)
-   - [Project-level information](set-project-collection-level-permissions.md)
+   - [Project properties (Project)](change-project-level-permissions.md)
+   - [Project-level information](change-project-level-permissions.md)
    
    
 
@@ -433,7 +434,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Query (Object)](../../boards/queries/set-query-permissions.md)
    - [Query folder (Object)](../../boards/queries/set-query-permissions.md)
    - [Read (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
-   - [Rename team project (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Rename team project (Project)](change-project-level-permissions.md)
    - [Release pipelines (Object)](../../pipelines/policies/set-permissions.md)
    - [Repository, Git (Object)](../../repos/git/set-git-repository-permissions.md)
    - [Retain (build) indefinitely (Object)](../../pipelines/policies/permissions.md)
@@ -443,54 +444,55 @@ Values in parenthesis indicate what level the permission is managed:
    - [Secure files (Object, Role)](../../pipelines/policies/set-permissions.md)
    - [Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Service hooks](../../service-hooks/overview.md#subscription-permissions)
-   - [Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)
+   - [Shelvesets, TFVC (Collection)](change-project-level-permissions.md)
    - [Sprint, define (Object)](set-permissions-access-work-tracking.md)
    - [Sprints, select (Team)](../settings/set-iteration-paths-sprints.md)
    - [Stop builds (Object)](../../pipelines/policies/permissions.md)
-   - [Suppress notifications for work item updates (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Suppress notifications for work item updates (Project)](change-project-level-permissions.md)
    
    ### T
    
    - [Tags, Git (Object)](../../repos/git/branch-permissions.md)
    - [Tags, work items (Project)](set-permissions-access-work-tracking.md)
    - [Task groups (Object)](../../pipelines/policies/set-permissions.md)
-   - [Team projects (Collection)](set-project-collection-level-permissions.md)
+   - [Team projects (Collection)](change-project-level-permissions.md)
    - [Test artifacts, delete](set-permissions-access-work-tracking.md#delete-test-permissions)
-   - [Test configurations (Project)](set-project-collection-level-permissions.md)
-   - [Test controllers (Project)](set-project-collection-level-permissions.md)
-   - [Test environments (Project)](set-project-collection-level-permissions.md)
-   - [Test runs  (Project)](set-project-collection-level-permissions.md)
+   - [Test configurations (Project)](change-project-level-permissions.md)
+   - [Test controllers (Project)](change-project-level-permissions.md)
+   - [Test environments (Project)](change-project-level-permissions.md)
+   - [Test runs  (Project)](change-project-level-permissions.md)
+   - [TFVC repositories (Collection)](change-organization-collection-level-permissions.md)
    - [TFVC repositories (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Trace settings (Collection)](set-project-collection-level-permissions.md)
-   - [Trigger events (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Trace settings (Collection)](change-project-level-permissions.md)
+   - [Trigger events (Collection)](change-organization-collection-level-permissions.md)
    - [Trigger events (Server)](permissions.md#server-permissions)
    
    ### U-V-W
    
    - [Update build information (Object)](../../pipelines/policies/permissions.md)
    - [Update build queue (Object)](../../pipelines/policies/permissions.md)
-   - [Update project visibility (Project)](set-project-collection-level-permissions.md#project-level)
+   - [Update project visibility (Project)](change-project-level-permissions.md)
    - [Update tag definition (Project)](permissions.md#work-item-tags) 
-   - [Use build resources (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [Use build resources (Collection)](change-organization-collection-level-permissions.md)
    - [Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md)
-   - [View analytics(Project)](set-project-collection-level-permissions.md#project-level)
-   - [View audit log (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [View build resources (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [View analytics(Project)](change-project-level-permissions.md)
+   - [View audit log (Collection)](change-organization-collection-level-permissions.md)
+   - [View build resources (Collection)](change-organization-collection-level-permissions.md)
    - [View builds (Object)](../../pipelines/policies/permissions.md)
    - [View release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [View releases (Object)](../../pipelines/policies/permissions.md)
-   - [View instance-level information (Collection)](set-project-collection-level-permissions.md#collection-level)
+   - [View instance-level information (Collection)](change-organization-collection-level-permissions.md)
    - [View instance level information (Server)](permissions.md#server-permissions)
-   - [View project-level information (Project)](set-project-collection-level-permissions.md#project-level)
+   - [View project-level information (Project)](change-project-level-permissions.md)
    - [View shared Analytics views (Object)](../../report/powerbi/analytics-security.md)
-   - [View system synchronization information (Collection)](set-project-collection-level-permissions.md#collection-level)
-   - [View test runs (Project)](set-project-collection-level-permissions.md#project-level)
+   - [View system synchronization information (Collection)](change-organization-collection-level-permissions.md)
+   - [View test runs (Project)](change-project-level-permissions.md)
    - [View work items in this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [View permissions for this node (Area Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [View permissions for this node (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
 
    - [Work items (Project)](set-permissions-access-work-tracking.md)
-   - [Workspaces (Collection)](set-project-collection-level-permissions.md) 
+   - [Workspaces (Collection)](change-organization-collection-level-permissions.md)
    
 
    :::column-end:::
@@ -541,7 +543,7 @@ Values in parenthesis indicate what level the permission is managed:
    ### C
    
    - [Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Collection-level information](set-project-collection-level-permissions.md)
+   - [Collection-level information](change-organization-collection-level-permissions.md)
    - [Configure Agile tools (Team)](../settings/manage-teams.md)
    - [Create project collection (Server)](permissions.md#server-permissions)
    - [Create releases (Object)](../../pipelines/policies/permissions.md)
@@ -573,18 +575,18 @@ Values in parenthesis indicate what level the permission is managed:
    
    - [Edit build definition (Object)](../../pipelines/policies/permissions.md)
    - [Edit build quality (Object)](../../pipelines/policies/permissions.md)
-   - [Edit collection-level information (Collection)](set-project-collection-level-permissions.md)
-   - [Edit project-level information (Project)](set-project-collection-level-permissions.md)
+   - [Edit collection-level information (Collection)](change-organization-collection-level-permissions.md)
+   - [Edit project-level information (Project)](change-project-level-permissions.md)
    - [Edit release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Edit release state (Object)](../../pipelines/policies/permissions.md)
    - [Edit task group (Object)](../../pipelines/policies/permissions.md)
-   - [Events (Collection)](set-project-collection-level-permissions.md)
+   - [Events (Collection)](change-organization-collection-level-permissions.md)
    - [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
    
    ### F-L
    
    - [Feeds](../../artifacts/feeds/feed-permissions.md)
-   - [Field, delete (Collection)](set-project-collection-level-permissions.md)
+   - [Field, delete (Collection)](change-organization-collection-level-permissions.md)
    - [Git branch (Object)](../../repos/git/branch-permissions.md)
    - [Inherited process (Object)](set-permissions-access-work-tracking.md)
    - [Iteration paths (Object)](set-permissions-access-work-tracking.md)
@@ -597,7 +599,7 @@ Values in parenthesis indicate what level the permission is managed:
    
    - [Manage build qualities (Object)](../../pipelines/policies/permissions.md)
    - [Manage deployments (Object)](../../pipelines/policies/permissions.md)
-   - [Manage project properties (Project)](set-project-collection-level-permissions.md)
+   - [Manage project properties (Project)](change-project-level-permissions.md)
    - [Manage release approvers (Object)](../../pipelines/policies/permissions.md)
    - [Manage releases (Object)](../../pipelines/policies/permissions.md)
    - [Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
@@ -611,8 +613,8 @@ Values in parenthesis indicate what level the permission is managed:
    - [Policies, Git branch (Object)](../../repos/git/branch-permissions.md)
    - [Policies, Git repository (Object)](../../repos/git/set-git-repository-permissions.md)
    - [Project collection (Server)](permissions.md#server-permissions)
-   - [Project properties (Project)](set-project-collection-level-permissions.md)
-   - [Project-level information](set-project-collection-level-permissions.md)
+   - [Project properties (Project)](change-project-level-permissions.md)
+   - [Project-level information](change-project-level-permissions.md)
    
    
 
@@ -633,25 +635,25 @@ Values in parenthesis indicate what level the permission is managed:
    - [Secure files (Object, Role)](../../pipelines/policies/set-permissions.md)
    - [Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Service hook](../../service-hooks/overview.md#subscription-permissions)
-   - [Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)
+   - [Shelvesets, TFVC (Collection)](change-organization-collection-level-permissions.md)
    - [Sprint, define (Object)](set-permissions-access-work-tracking.md)
    - [Sprints, select (Team)](../settings/set-iteration-paths-sprints.md)
    - [Stop builds (Object)](../../pipelines/policies/permissions.md)
-   - [Suppress notifications work items (Project)](set-project-collection-level-permissions.md)
-   - [Synchronization information (Collection)](set-project-collection-level-permissions.md)
+   - [Suppress notifications work items (Project)](change-project-level-permissions.md)
+   - [Synchronization information (Collection)](change-organization-collection-level-permissions.md)
    
    ### T
    
    - [Tags, Git (Object)](../../repos/git/branch-permissions.md)
    - [Tags, work items (Project)](set-permissions-access-work-tracking.md)
    - [Task groups (Object)](../../pipelines/policies/set-permissions.md)
-   - [Team projects (Collection)](set-project-collection-level-permissions.md)
-   - [Test configurations (Project)](set-project-collection-level-permissions.md)
-   - [Test controllers (Project)](set-project-collection-level-permissions.md)
-   - [Test environments (Project)](set-project-collection-level-permissions.md)
-   - [Test runs  (Project)](set-project-collection-level-permissions.md)
+   - [Team projects (Collection)](change-organization-collection-level-permissions.md)
+   - [Test configurations (Project)](change-project-level-permissions.md)
+   - [Test controllers (Project)](change-project-level-permissions.md)
+   - [Test environments (Project)](change-project-level-permissions.md)
+   - [Test runs  (Project)](change-project-level-permissions.md)
    - [TFVC repositories (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Trace settings (Collection)](set-project-collection-level-permissions.md)
+   - [Trace settings (Collection)](change-organization-collection-level-permissions.md)
    - [Trigger events (Server)](permissions.md#server-permissions)
    
    ### U-V-W
@@ -664,7 +666,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [View release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [View releases (Object)](../../pipelines/policies/permissions.md)
    - [Work items (Project)](set-permissions-access-work-tracking.md)
-   - [Workspaces (Collection)](set-project-collection-level-permissions.md) 
+   - [Workspaces (Collection)](change-organization-collection-level-permissions.md)
    
 
    :::column-end:::
@@ -677,7 +679,7 @@ Values in parenthesis indicate what level the permission is managed:
 
 ## Edit project-level information
 
-The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
+The **Edit project-level information** permission is set through the [Security admin page for a project](change-project-level-permissions.md). It includes the ability to perform the following tasks 
 for all projects defined in the organization or collection:
 
 - Edit the project description
@@ -689,7 +691,7 @@ for all projects defined in the organization or collection:
 
 ## Edit instance-level or collection-level information
 
-The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an organization or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
+The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an organization or collection](change-organization-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
                 
 - Add and administer teams and all team-related features
@@ -706,5 +708,6 @@ for all team projects defined in the account or collection:
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [About security roles](about-security-roles.md). 
 - [Permissions and groups reference](permissions.md) 
-- [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [Troubleshoot permissions](troubleshoot-permissions.md)

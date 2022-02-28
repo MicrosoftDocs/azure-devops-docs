@@ -6,7 +6,7 @@ ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235
 ms.author: jukullam
 author: juliakm
 ms.date: 08/17/2021
-ms.type: reference
+ms.topic: overview
 monikerRange: '>= tfs-2015'
 ---
 

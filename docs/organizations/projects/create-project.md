@@ -5,7 +5,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Learn how to create a new project where your team can plan, track progress, and collaborate on building software solutions.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.technology: devops-accounts
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -42,14 +42,13 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
 ::: moniker range="azure-devops" 
 
 - You need an organization before you can create a project. If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Create an organization or project collection](../accounts/create-organization.md).  
-- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-
+- You must be a member of the **Project Collection Administrators** group or have the collection-level **Create new projects** permission set to **Allow**. If you're the **Organization owner**, you're automatically added to the Project Collection Administrators group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
 - You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).
-- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Collection Administrators** group or have the **Create new projects** permission set to **Allow**. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ::: moniker-end  
 
@@ -57,7 +56,7 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
 ::: moniker range="<= tfs-2017"  
 
 - You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=tfs-2017#create-a-project-collection&preserve-view=true ).
-- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Collection Administrators** group or have the **Create new projects** permission set to **Allow**. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 - Ask your administrator about the following resources and get additional permissions as needed:
 
     - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).

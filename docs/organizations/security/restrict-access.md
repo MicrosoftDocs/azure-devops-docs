@@ -3,12 +3,12 @@ title: Grant or restrict access to select features
 titleSuffix: Azure DevOps 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
-ms.topic: conceptual
+ms.topic: overview
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 02/17/2021 
+ms.date: 02/10/2022 
 --- 
 
 # Grant or restrict access using permissions
@@ -46,7 +46,7 @@ In this article you learn how to do the following tasks:
 
 ## Recommended method for granting and restricting permissions 
 
-For maintenance purposes, we recommend you use either the built-in security groups or [custom security groups to manage permissions](change-individual-permissions.md). 
+For maintenance purposes, we recommend you use either the built-in security groups or [custom security groups to manage permissions](add-remove-manage-user-group-security-group.md). 
 
 You can't change the permission settings for the Project Administrators group or the Project Collection Administrators group, which is by design. However, for all other groups, you can change the permissions. 
 
@@ -61,7 +61,7 @@ As an administrator or account owner, it's a good idea to delegate administrativ
 - Project Administrators
 - Project Collection Administrators  
 
-For a summary of permissions for the above roles, see [Default permissions and access](permissions-access.md), or for the Project Collection Administrators, see [Add administrators](set-project-collection-level-permissions.md) 
+For a summary of permissions for the above roles, see [Default permissions and access](permissions-access.md), or for the Project Collection Administrators, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 To delegate tasks to other members within your organization, consider creating a custom security group and then granting permissions as indicated in the following table.  
 
@@ -147,7 +147,7 @@ To delegate tasks to other members within your organization, consider creating a
    Delete and restore work items, Move work items out of this project, Permanently delete work items
    :::column-end:::
    :::column span="2":::
-   Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   Edit project-level information, See [Change project-level permissions](change-project-level-permissions.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,7 +159,7 @@ To delegate tasks to other members within your organization, consider creating a
    :::column-end:::
    :::column span="2":::
    Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process  
-   See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   See [Change project collection-level permissions](change-organization-collection-level-permissions.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -170,7 +170,7 @@ To delegate tasks to other members within your organization, consider creating a
    Work tracking customization 
    :::column-end:::
    :::column span="2":::
-   Edit collection-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   Edit collection-level information, See [Change project collection-level permissions](change-organization-collection-level-permissions.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -181,7 +181,7 @@ To delegate tasks to other members within your organization, consider creating a
    Work tracking customization 
    :::column-end:::
    :::column span="2":::
-   Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   Edit project-level information, See [Change project-level permissions](change-project-level-permissions.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -194,7 +194,7 @@ To delegate tasks to other members within your organization, consider creating a
    :::column span="2":::
    For a project, Edit project-level information  
    For an account or collection, Edit instance-level (or collection-level) information  
-   To understand the scope of these permissions, see [Permission lookup guide](permissions-lookup-guide.md). To grant permissions, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).  
+   To understand the scope of these permissions, see [Permission lookup guide](permissions-lookup-guide.md). To request a change in permissions, See [Request an increase in permission levels](request-changes-permissions.md).  
    
    You can also grant permissions to manage permissions for the following objects:
    
@@ -240,7 +240,7 @@ Users and groups who are added to the **Project-Scoped Users** group can only se
  
 ## Restrict access to view or modify objects  
 
-Azure DevOps is designed to enable all valid users to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
+Azure DevOps is designed to enable all valid users to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Request an increase in permission levels](request-changes-permissions.md). 
 
 :::row:::
    :::column span="1":::
@@ -307,7 +307,8 @@ For examples that illustrate how to restrict modification of work items or selec
 - [Permission lookup guide](permissions-lookup-guide.md) 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 
 <!--- 
 This topic should provide useful steps to think about what they want to shut down, addressing the most common areas that admins have expressed that they want to shut down or open up. Also - consider how they might structure their project - repos, area paths, etc. and how that influences permissions 

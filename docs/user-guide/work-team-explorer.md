@@ -302,44 +302,28 @@ If your project is missing one or more pages, you may be able to [add functional
 
 From the **Settings** page, you can configure administrative features for either a project or project collection. To learn more about each page, see the following articles. Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="33%">Project</th>
-<th width="34%">Project Collection</th>
-<th width="33%">Other</th>
-</tr>
+:::row:::
+   :::column span="":::
+      **Project**  
+      - [Security, Group Membership](../organizations/security/change-project-level-permissions.md)
+      - [Security, Source Control (TFVC)](../repos/tfvc/set-tfvc-repository-permissions.md)  
+      - [Work Item Areas](../organizations/settings/set-area-paths.md)  
+      - [Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)  
+      - [Portal Settings](../project/configure-or-add-a-project-portal.md)  
+      - [Project Alerts](../notifications/manage-team-group-global-organization-notifications.md)  
 
-<tr>
-<td> 
-<ul>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Security, Group Membership](../organizations/security/set-project-collection-level-permissions.md)">Security, Group Membership</a></li>
-<li><a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../repos/tfvc/set-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
-<li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Work Item Areas](../organizations/settings/set-area-paths.md)">Work Item Areas</a></li>
-<li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)">Work Item Iterations</a></li>
-<li><a href="../project/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../project/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
-<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Project Alerts](../notifications/manage-team-group-global-organization-notifications.md)">Project Alerts</a></li>
-</ul>
-</td>
-
-<td> 
-<ul>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Security, Group Membership](../organizations/security/set-project-collection-level-permissions.md)">Security, Group Membership</a></li>
-<li><a href="../repos/tfvc/decide-between-using-local-server-workspace.md" data-raw-source="[Source Control (TFVC)](../repos/tfvc/decide-between-using-local-server-workspace.md)">Source Control (TFVC)</a></li>
-<li><a href="../boards/work-items/guidance/manage-process-templates.md" data-raw-source="[Process Template Manager](../boards/work-items/guidance/manage-process-templates.md)">Process Template Manager</a></li>
-</ul>
-</td>
-
-<td> 
-<ul>
-<li><a href="../repos/git/git-config.md" data-raw-source="[Git Global Settings](../repos/git/git-config.md)">Git Global Settings</a></li>
-<li><a href="../repos/git/git-config.md" data-raw-source="[Git Repository Settings](../repos/git/git-config.md)">Git Repository Settings</a></li>
-</ul>
-</td>
-
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+   :::column span="":::
+      **Project Collection**  
+      - [Security, Group Membership](../organizations/security/change-organization-collection-level-permissions.md) 
+      - [Source Control (TFVC)](../repos/tfvc/decide-between-using-local-server-workspace.md) 
+      - [Process Template Manager](../boards/work-items/guidance/manage-process-templates.md) 
+        <br/>
+      **Other**  
+      - [Git Global Settings](../repos/git/git-config.md)  
+      - [Git Repository Settings](../repos/git/git-config.md)  
+   :::column-end:::
+:::row-end:::
 
 
 To learn more about settings, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).

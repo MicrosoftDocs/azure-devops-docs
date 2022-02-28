@@ -98,7 +98,7 @@
 - name: Troubleshooting
   items:
   - name: Manual testing FAQs
-    href: reference-qa.md 
+    href: reference-qa.yml 
   - name: Test case management reporting FAQs
     href: reference-tcm.md
   - name: Unable to connect

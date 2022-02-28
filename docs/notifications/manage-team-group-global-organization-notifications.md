@@ -303,7 +303,7 @@ You can set filters for as many as 20 different alert types, specify the email a
 
 ## Set alerts for a project
 
-To set alerts for a project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
+To set alerts for a project, you must be a member of the **Project Collection Administrators** or **Azure DevOps Serer Administrators** groups. To get added, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
 
 As an administrator, you can view, create, edit, and delete alerts for team members and teams. 
 

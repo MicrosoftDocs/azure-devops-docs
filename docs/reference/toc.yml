@@ -1,4 +1,4 @@
-- name: Azure Boards Configuration & Customization Documentation
+- name: Azure Boards Configuration & Customization 
   href: index.yml
 - name: Get started
   expanded: true
@@ -54,6 +54,10 @@
     displayname: reorder, disable, nest, natural hierarchy, in progress  
   - name: Work item form caching
     href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json  
+  - name: Support bug update status using My Work 
+    href: xml/support-bug-update-status-using-my-work.md
+  - name: Resolve errors received when configuring features
+    href: xml/resolve-errors-received-when-configuring-features.md
 - name: Reference
   items:
   - name: Naming restrictions

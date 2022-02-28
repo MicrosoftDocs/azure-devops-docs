@@ -1,10 +1,11 @@
 ### YamlMime:Landing
 
-title: Azure Repos Documentation
+title: Azure Repos documentation
 summary: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
 
 metadata:
-  title: Azure Repos Documentation
+  title: Azure Repos documentation
+  titleSuffix: Azure DevOps 
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
   ms.prod: devops 
   ms.technology: devops-code-git

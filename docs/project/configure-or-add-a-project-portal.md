@@ -80,7 +80,7 @@ Choose one of the following options based on your deployment configuration and t
 
 Configure this option when you aren't using SharePoint Products.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
+1.  If you aren't a member of the Team **Project Administrators** group, [get added now](../organizations/security/change-project-level-permissions.md).  
   
 2.  Open Portal Settings.  
   
@@ -94,7 +94,7 @@ Configure this option when you aren't using SharePoint Products.
 
  Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/azure/devops/server/requirements#sharepoint).  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
+1.  If you aren't a member of the Team **Project Administrators** group, [get added now](../organizations/security/change-project-level-permissions.md).  
   
 2.  Open Portal Settings from the Settings page in Team Explorer.  
   
@@ -119,7 +119,7 @@ Configure this option when you aren't using SharePoint Products.
   
    4. If you haven't installed a version of Visual Studio, [install one of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
   
-   5. If you aren't an administrator for the team project, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
+   5. If you aren't a member of the **Project Administrators** group, [get added now](../organizations/security/change-project-level-permissions.md).  
   
    6. If you haven't been granted Full Control for the SharePoint site, [get that permission now](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).  
   

@@ -1,10 +1,11 @@
 ### YamlMime:Landing
 
-title: Azure Boards settings documentation
+title: Azure Boards Configuration & Customization documentation
 summary: Configure and customize Azure Boards including area paths, iteration paths, projects, and processes. 
 
 metadata:
-  title: Azure Boards Settings & process documentation
+  title: Azure Boards Configuration & Customization documentation
+  titleSuffix: Azure DevOps 
   description: Configure and customize Azure Boards including area paths, iteration paths, projects, and processes.
   ms.prod: devops 
   ms.technology: devops-agile

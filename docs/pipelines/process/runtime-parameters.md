@@ -3,7 +3,7 @@ title: Use runtime and type-safe parameters
 ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 02/24/2022
 monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 

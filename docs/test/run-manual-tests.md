@@ -732,7 +732,7 @@ For more information, see [Microsoft Privacy policy](https://privacy.microsoft.c
 
 ## Related articles
 
-- [FAQs for manual testing](reference-qa.md#runtests)
+- [FAQs for manual testing](reference-qa.yml#runtests)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)

@@ -309,8 +309,8 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
-> the permission **Create tag definition** at the project-level. To learn
-> more, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md).
+> the project-level **Create tag definition** permission. To learn
+> more, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end	
 

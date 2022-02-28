@@ -27,7 +27,7 @@ To understand how the system uses area paths, see [About area and iteration path
 <a name="permissions"></a>
 
 - If you don't have a project yet, [create one now](../projects/create-project.md).
-- Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Change project-level permissions](../security/change-project-level-permissions.md).
 - Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:   
     - **Create child nodes**
     - **Delete this node**
