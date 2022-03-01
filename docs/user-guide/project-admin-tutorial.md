@@ -49,13 +49,6 @@ To learn more about security and setting permissions at the project-level, revie
 
 ### Grant or restrict permissions  
 
-To delegate specific tasks to others, add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
-
-- [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
-- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
- 
-### Grant or restrict permissions  
-
 Permissions are managed at the following three levels and through role-based assignments. 
 - object
 - project
