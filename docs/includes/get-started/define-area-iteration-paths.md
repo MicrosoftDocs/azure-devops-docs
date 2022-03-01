@@ -6,6 +6,7 @@ ms.topic: include
 ms.date: 02/28/2022
 ---
 
+<a id="areas-iterations" />
 
 ### Define area and iteration paths to track work
 

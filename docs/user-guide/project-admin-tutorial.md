@@ -89,32 +89,13 @@ You can configure and customize Azure Boards to support a number of business req
 - Area paths to group work items by team, product, or feature area
 - Iteration paths to group work into sprints, milestones, or other event-specific or time-related periods. 
 
-If you're new to Azure Boards and want an indepth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md)
+If you're new to Azure Boards and want an indepth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md).
 
 [!INCLUDE [define-area-iteration-paths](../includes/get-started/define-area-iteration-paths.md)] 
  
-### Customize work-tracking processes
 
-::: moniker range=">= azure-devops-2019"
-  
-All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you may want to establish a methodology for who manages the updates and evaluates requests.
-
-To learn more, see the following articles:
-
-- [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md)  
-- [Customize a project](../organizations/settings/work/customize-process.md)  
-- [Add and manage processes](../organizations/settings/work/manage-process.md)
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2018"
-
-All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. But, you may want to establish a methodology for who manages the updates and evaluates requests.
-
-To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
-
-::: moniker-end
-
+[!INCLUDE [customize-work-tracking](../includes/get-started/customize-work-tracking.md)] 
+ 
 
 ## Integrate with other services 
 
