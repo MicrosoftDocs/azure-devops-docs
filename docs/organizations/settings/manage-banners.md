@@ -6,7 +6,7 @@ ms.technology: devops-settings
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= azure-devops-2020'
 ms.date: 09/24/2020
 ---

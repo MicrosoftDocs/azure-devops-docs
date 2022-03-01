@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops"
-ms.topic: example-scenario
+ms.topic: sample
 ms.date: 06/30/2021
 
 
