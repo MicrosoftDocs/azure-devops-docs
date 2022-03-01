@@ -99,7 +99,7 @@ If you're new to Azure Boards and want an indepth overview of what you can confi
 
 ## Integrate with other services 
 
-Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the Project Administrators group, you can configure integration with many of these services. To learn more, see the following articles. 
+Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the **Project Administrators** group, you can configure integration with many of these services. To learn more, see the following articles. 
 
 - [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md)
 
