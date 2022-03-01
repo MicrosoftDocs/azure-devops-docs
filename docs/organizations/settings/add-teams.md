@@ -6,7 +6,7 @@ ms.technology: devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 09/10/2020
 ---
@@ -17,12 +17,18 @@ ms.date: 09/10/2020
 
 As your organization grows, make sure that you configure your Agile tools to support that growth. Each team needs their own set of team tools to enable the autonomy it needs to manage their backlog and plan their sprints. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-Each new project is configured with a default team with the project name. You can rename the default team and you can reassign a new team as the default. 
+Each new project is configured with a default team with the project name. You can rename the default team and you can reassign a new team as the default. For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/devops/plan/scaling-agile) article.
+
+Use this article to learn how to perform the following tasks: 
+> [!div class="checklist"]   
+> * Move from one team to two teams
+> * Add members to a team       
+> * Move work items to a team backlog
+> * Set the default team for a project  
 
 > [!NOTE]    
 > This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
->
-> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/devops/plan/scaling-agile) article.
+
 
 <a id="add-team"> </a>  
 
