@@ -42,9 +42,9 @@ Specifically, consider doing one or more of the following tasks:
 
 [!INCLUDE [add-users-project](../../includes/get-started/add-users-project.md)]  
 
-[!INCLUDE [share-project-vision](../..includes/get-started/share-project-vision.md)]  
+[!INCLUDE [share-project-vision](../../includes/get-started/share-project-vision.md)]  
 
-[!INCLUDE [enable-remove-services](../..includes/get-started/enable-remove-services.md)]   
+[!INCLUDE [enable-remove-services](../../includes/get-started/enable-remove-services.md)]   
 
 ## Manage security and permissions
 
@@ -98,10 +98,10 @@ You can configure and customize Azure Boards to support a number of business req
 If you're new to Azure Boards and want an indepth overview of what you can configure and customize, see [Configure and customize Azure Boards](../configure-customize.md).
 
 
-[!INCLUDE [define-area-iteration-paths](../..includes/get-started/define-area-iteration-paths.md)] 
+[!INCLUDE [define-area-iteration-paths](../../includes/get-started/define-area-iteration-paths.md)] 
  
 
-[!INCLUDE [customize-work-tracking](../..includes/get-started/customize-work-tracking.md)] 
+[!INCLUDE [customize-work-tracking](../../includes/get-started/customize-work-tracking.md)] 
  
 
 
