@@ -27,9 +27,10 @@ Each project has a summary page that's useful for sharing information through **
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
+::: moniker range="< tfs-2018" 
 
-## Share your project vision   
+## Share your project vision 
+
 Each project has a summary page that's useful for sharing information through **README files**. You can use this page to share information relevant to your project. To learn more, see [set up your project summary page](../../organizations/projects/project-vision-status.md). 
 
 ::: moniker-end
