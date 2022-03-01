@@ -7,17 +7,17 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>=tfs-2018'
-ms.date: 02/25/2022
+ms.date: 02/28/2022
 ---
 
-# Manage your organization or project collection
+# Get started managing your organization or project collection
 
 [!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]  
 
 After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks you'll want to review to ensure you're setting up your organization or collection to get maximal use of your services. 
 
 ::: moniker range="azure-devops"
-Each organization is associated with one and only one collection. If you need to create another organization, see [Create an organization](../organizations/accounts/create-organization.md).
+Each organization is associated with one and only one collection. If you need to create another organization, see [Plan your organizational structure](plan-your-azure-devops-org-structure.md) and [Create an organization](../organizations/accounts/create-organization.md).
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"
@@ -92,20 +92,7 @@ To learn more about security and setting permissions at the collection-level, re
 
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
 - [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md) 
- 
-### Grant or restrict permissions  
 
-Permissions are managed at the following three levels and through role-based assignments. 
-- object
-- project
-- organization or collection
-
-As a member of the Project Collection Administrators group, you can grant or restrict permissions at all levels within the organization or collection.  
-
-To delegate specific tasks to others, we recommend that you add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
-
-- [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
-- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
 
 ### Add members to the Project Collection Administrators group 
 
@@ -319,7 +306,7 @@ In order for team members to receive notifications, [you must configure an SMTP 
 ::: moniker range="azure-devops"  
 
 - [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [Security & identity](../organizations/security/about-security-identity.md)
+- [FAQs about signing up and getting started](user-guide-faqs.yml)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
@@ -334,4 +321,3 @@ In order for team members to receive notifications, [you must configure an SMTP 
 
 ::: moniker-end
 
- 
