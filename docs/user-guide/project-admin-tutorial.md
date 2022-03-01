@@ -3,8 +3,7 @@ title: Get started as a project administrator
 titleSuffix:  Azure DevOps
 ms.custom: seodec18
 description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps.
-ms.technology: devops-new-user 
-ms.assetid: 
+ms.technology: devops-new-user  
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
@@ -12,7 +11,7 @@ monikerRange: '>= tfs-2015'
 ms.date: 02/28/2022
 ---
 
-# Manage your project 
+# Get started managing your project 
 
 [!INCLUDE [version-gt-eq-2015.md](../includes/version-gt-eq-2015.md)]  
 
@@ -27,10 +26,10 @@ If you've created a project or been added to the **Project Administrators** grou
 
 
 [!INCLUDE [add-users-project](../includes/get-started/add-users-project.md)]  
-
-
-
+ 
 [!INCLUDE [share-project-vision](../includes/get-started/share-project-vision.md)]  
+
+[!INCLUDE [enable-remove-services](../includes/get-started/enable-remove-services.md)]  
 
 
 ## Manage security and permissions
@@ -54,8 +53,21 @@ To delegate specific tasks to others, add them to a built-in or custom security 
 
 - [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
+ 
+### Grant or restrict permissions  
 
-[!INCLUDE [enable-remove-services](../includes/get-started/enable-remove-services.md)]  
+Permissions are managed at the following three levels and through role-based assignments. 
+- object
+- project
+- organization or collection
+
+As a member of the **Project Administrators** group, you can grant or restrict permissions for all objects and at the project-level. To delegate specific tasks to others, we recommend that you add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
+
+- [Role-based permissions](../organizations/security/about-permissions.md#role-based-permissions)
+- [Add or remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
+- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
+- [Set object-level permissions](../organizations/security/set-object-level-permissions.md) 
+
 
 ## Set DevOps policies 
 
@@ -68,10 +80,15 @@ Set policies to support collaboration across your teams and automatically remove
  
 ## Configure and customize Azure Boards 
 
+You can configure and customize Azure Boards to support a number of business requirements for planning and tracking work. At a minimum, you'll want to configure the following elements:
+
+- Area paths to group work items by team, product, or feature area
+- Iteration paths to group work into sprints, milestones, or other event-specific or time-related periods. 
+
+If you're new to Azure Boards and want an indepth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md)
+
 [!INCLUDE [define-area-iteration-paths](../includes/get-started/define-area-iteration-paths.md)] 
-
-
-
+ 
 ### Customize work-tracking processes
 
 ::: moniker range=">= azure-devops-2019"
@@ -101,12 +118,23 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 ## Integrate with other services 
 
-TBD - Mention:
-service Hooks
-Slack
-Microsoft Teams
-GitHub integration 
+Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the Project Administrators group, you can configure integration with many of these services. To learn more, see the following articles. 
 
+- [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md)
+
+- [Azure Boards and GitHub integration](../boards/github/index.md)
+
+- Microsoft teams integration:  
+	- [Azure Boards with Microsoft Teams](../boards/integrations/boards-teams.md) 
+	- [Azure Repos with Microsoft Teams](../repos/integrations/repos-teams.md)
+	- [Azure Pipelines with Microsoft Teams](../pipelines/integrations/slack.md)
+
+- Slack integration:
+- 	- [Azure Boards with Slack](../boards/integrations/boards-slack.md) 
+	- [Azure Repos with Slack](../repos/integrations/repos-slack.md)
+	- [Azure Pipelines with Slack](../pipelines/integrations/microsoft-teams.md)
+
+- [Integrate with service hooks](../service-hooks/overview.md) 
 
 
 
@@ -122,18 +150,24 @@ GitHub integration
 
 ::: moniker range="azure-devops"  
 
-- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [Security & identity](../organizations/security/about-security-identity.md)
-- [Organization management](../organizations/accounts/organization-management.md)
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)   
+- [Get started managing your organization or project collection](manage-organization-collection.md) 
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"  
+::: moniker range=">= tfs-2018 < azure-devops"  
 
 - [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [Security & identity](../organizations/security/about-security-identity.md)
-- [Organization management](../organizations/accounts/organization-management.md)
+- [Get started managing your organization or project collection](manage-organization-collection.md) 
+- [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
+- [TFS administration](/azure/devops/server/index)
+
+::: moniker-end
+
+::: moniker range="< tfs-2018"  
+
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 - [TFS administration](/azure/devops/server/index)
 
