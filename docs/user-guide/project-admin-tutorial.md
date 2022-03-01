@@ -41,7 +41,7 @@ Access to select tasks is controlled by permissions and security groups. To quic
 To learn more about security and setting permissions at the project-level, review the following articles:
 
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
-- [Change permissions at the organization or collection-level](../organizations/security/change-project-level-permissions.md) 
+- [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md) 
  
 ### Add members to the Project Administrators group 
 
@@ -68,6 +68,10 @@ As a member of the **Project Administrators** group, you can grant or restrict p
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)   
 - [Set object-level permissions](../organizations/security/set-object-level-permissions.md) 
 
+
+[!INCLUDE [review-notifications](../includes/get-started/review-notifications.md)] 
+
+[!INCLUDE [determine-traceability-requirements](../includes/get-started/determine-traceability-requirements.md)]  
 
 ## Set DevOps policies 
 
@@ -110,10 +114,6 @@ All work-tracking tools are available immediately after you create a project. Of
 To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end
-
-[!INCLUDE [review-notifications](../includes/get-started/review-notifications.md)] 
-
-[!INCLUDE [determine-traceability-requirements](../includes/get-started/determine-traceability-requirements.md)]  
 
 
 ## Integrate with other services 

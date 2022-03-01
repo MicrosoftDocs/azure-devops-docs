@@ -91,7 +91,7 @@ Access to select tasks is controlled by permissions and security groups.
 To learn more about security and setting permissions at the collection-level, review the following articles:
 
 - [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
-- [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md) 
+- [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 
 
 ### Add members to the Project Collection Administrators group 
@@ -189,25 +189,37 @@ The following features are only enabled or disabled at the organization-level:
 
 ::: moniker-end 
 
-[!INCLUDE [install-manage-extensions](../includes/get-started/install-manage-extensions.md)] 
+ 
+  
+## Install and manage extensions 
 
-::: moniker range=">= tfs-2015"
+An extension is an installable unit that adds new capabilities to your projects. Azure DevOps extensions support the following functions:
+
+- Planning and tracking of work items, sprints, scrums, and so on  
+- Build and release flows
+- Code testing and tracking
+- Collaboration among team members
+
+ 
+
+For example, to support [code search](../project/search/functional-code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
+ 
+You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the **Project Collection Administrators** group. Or, you can get added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
+  
 
 ### Install Code Search 
 
 Code Search is a free Marketplace extension that you must install to enable searching across all your source repositories. To learn how, see [Install and configure Search](../project/search/install-configure-search.md).
-::: moniker-end 
-
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### Enable or disable Analytics
 
-Analytics is ...  . To learn more, see [Install or enable the Analytics service](../report/dashboards/analytics-extension.md).
+The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
+
+To learn more, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md) and [Install or enable the Analytics service](../report/dashboards/analytics-extension.md).
 ::: moniker-end 
 
-
- 
 ::: moniker range="azure-devops"
 
 ## Adjust time zone and other organization settings
@@ -219,30 +231,18 @@ When you create an organization, you specify the name of your organization and s
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2015"  
+ 
 
-## Set DevOps policies 
+## Configure DevOps settings 
 
-Set policies to support collaboration across your teams, secure your projects, and automatically remove obsolete files. To set policies, review the following articles: 
+There are a few settings that you define at the organization-level to support devops work. These include the following items: 
 
-::: moniker-end  
-
-::: moniker range=">= azure-devops-2019"
-
-- [Manage branch policies](../repos/git/branch-policies.md)  
-- [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
-- [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
-- [Set test retention policies](../test/how-long-to-keep-test-results.md) 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-- [Manage branch policies](../repos/git/branch-policies.md)  
-- [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)  
-- [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
-- [Set test retention policies](../test/how-long-to-keep-test-results.md) 
-::: moniker-end  
-
+- [Add agent pools](../pipelines/agents/pools-queues.md)
+- [Define pipeline retention settings](../pipelines/policies/retention.md#set-collection-level-retention-policies)
+- Define repository settings:
+	- [Default branch name for new repositories](../repos/git/repository-settings.md#default-branch-name)
+	- [Gravatar images](../repos/git/repository-settings.md#gravatar-images).
+ 
 
 ## Customize work-tracking processes
 
@@ -258,7 +258,7 @@ To learn more, see the following articles:
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. But, you may want to establish a methodology for who manages the updates and evaluates requests.
 
@@ -269,17 +269,10 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 ## Review and update notifications
 
-A number of notifications are predefined at the organization or collection level. Notifications are based on subscription rules which you can modify. Subscriptions arise from the following areas:
-
-
-global-notifications.png
+A number of notifications are predefined at the organization or collection level. You can disable or modify these subscriptions, or add new subscriptions as described in [Manage notifications for a team, project, or organization](../../notifications/manage-team-group-global-organization-notifications.md).  
+ 
 :::image type="content" source="../media/global-notifications.png" alt-text="Screenshot of Azure DevOps global notifications.":::
-
-If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/manage-your-personal-notifications.md).
-
-> [!div class="mx-imgBorder"]  
-> ![Personal notifications](media/services/personal-notifications.png)   
-
+ 
 
 ::: moniker range="< azure-devops"  
 
@@ -292,15 +285,11 @@ In order for team members to receive notifications, [you must configure an SMTP 
 
 ## Scale your organization or collection  
 
-- [Plan your organizational structure](plan-your-azure-devops-org-structure.md)  
+To learn about scaling your organization, review the following articles. 
+
 - [About projects and scaling your organization](../organizations/projects/about-projects.md)
+- [Plan your organizational structure](plan-your-azure-devops-org-structure.md)  
  
-
-## Next steps  
-
-> [!div class="nextstepaction"]
-> [Share your project vision](../organizations/projects/project-vision-status.md)
-
 ## Related articles
 
 ::: moniker range="azure-devops"  

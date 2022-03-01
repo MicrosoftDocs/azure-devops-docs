@@ -1,11 +1,10 @@
 ---
-title: Manage notifications for a team, group, global organization
-titleSuffix: Azure DevOps
-description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps.  
+title: Manage notifications for a team, project, organization or collection
+titleSuffix: Azure DevOps 
+description: Learn how to configure team, project, and organization/collection notifications for when changes occur to source code, git, work items, and builds in Azure DevOps.  
 ms.technology: devops-collab
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
 ms.custom: contperf-fy21q2, cross-project
-ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -13,24 +12,29 @@ ms.date: 10/09/2020
 monikerRange: '<= azure-devops'
 ---
 
-# Manage notifications for a team, group, or organization
+# Manage notifications for a team, project, or organization
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Your team or group can receive email notifications as changes occur to the following items in Azure DevOps:
+Your team, project, or organization can receive email notifications as changes occur to the following items in Azure DevOps:
 - work items 
 - code reviews
 - pull requests
 - source control files
 - builds
 
-For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team.
+For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team. For more information, see [Notification types](about-notifications.md#notification-types).
 
 [!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
 
 ## Prerequisites
 
-You must be a Team-, Project-, or Project Collection Administrator to create group and team notifications. If you're not an administrator, [get added as one](../organizations/settings/add-team-administrator.md). For more information, see [Notification types](about-notifications.md#notification-types).
+- To manage notifications, you must be an administrator at the level you want to manage them:
+	- Team administrator to modify subscription for a team
+	- A member of the **Project Administrators** group to create or modify subscriptions for a project.  
+	- A member of the **Project Collection Administrators** group to create or modify subscriptions for an organization orcollection.  
+
+	If you're not an administrator, get added as one. See [Add a team administrator](../organizations/settings/add-team-administrator.md), [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md), or [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
