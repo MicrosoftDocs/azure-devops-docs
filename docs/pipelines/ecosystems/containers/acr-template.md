@@ -72,14 +72,14 @@ You can also use the Azure portal web UI to create your Azure Container Registry
 1. Select your **Container registry** from the dropdown menu, and then provide an **Image Name** to your container image.
 
 1. Select **Validate and configure** when you are done.
+    
+    :::image type="content" source="../media/docker-container-registry.png" alt-text="A screenshot showing how to configure a docker pipeline to build and publish an image to Azure Container Registry":::
 
-  :::image type="content" source="../media/docker-container-registry.png" alt-text="A screenshot showing how to configure a docker pipeline to build and publish an image to Azure Container Registry":::
-
-   As Azure Pipelines creates your pipeline, it will:
-
-   * Create a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
-
-   * Generate an *azure-pipelines.yml* file, which defines your pipeline.
+    As Azure Pipelines creates your pipeline, it will:
+    
+    * Create a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
+    
+    * Generate an *azure-pipelines.yml* file, which defines your pipeline.
   
 1. Review your pipeline YAML, and then select **Save and run** when you are ready.
 
