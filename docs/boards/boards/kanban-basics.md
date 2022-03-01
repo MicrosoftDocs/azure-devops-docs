@@ -6,11 +6,12 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '<= azure-devops'
+ms.date: 03/01/2022
 ---
 
-# Implement Kanban practices
+# Implement Kanban practices using Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
