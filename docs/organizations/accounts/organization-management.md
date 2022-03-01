@@ -12,7 +12,7 @@ ms.date: 02/22/2022
 monikerRange: 'azure-devops'
 ---
 
-# Manage your organization
+# Organization management overview
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -26,7 +26,7 @@ With an organization, you gain access to Azure DevOps Services, where you can do
 * Create one or more projects to segment work
 
 > [!NOTE]
-> For information about managing an on-premises Azure DevOps Server, see [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
+> If you're just getting started, see [Get started managing your organization](../../user-guide/manage-organization-collection.md). For information about managing an on-premises Azure DevOps Server, see [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
 
 ## Prerequisites
 
