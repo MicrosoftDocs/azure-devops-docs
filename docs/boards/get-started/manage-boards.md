@@ -44,7 +44,20 @@ Specifically, consider doing one or more of the following tasks:
 
 [!INCLUDE [share-project-vision](../../includes/get-started/share-project-vision.md)]  
 
-[!INCLUDE [enable-remove-services](../../includes/get-started/enable-remove-services.md)]   
+
+
+::: moniker range=">= azure-devops-2019"  
+
+## Remove unused services 
+
+To simplify the web portal user interface, you can disable select services. For example, if you use a project only to plan and track work, then disable all services except for **Boards** as shown in the following image. Once you disable the services, refresh your browser to see the changes take effect. To learn more, see 
+[Turn a service on or off](../../organizations/settings/set-services.md).
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows disable all services except for Boards.](media/disable-services-except-boards.png)
+
+::: moniker-end   
+ 
 
 ## Manage security and permissions
 
@@ -96,8 +109,6 @@ If you're new to Azure Boards and want an indepth overview of what you can confi
 
 [!INCLUDE [customize-work-tracking](../../includes/get-started/customize-work-tracking.md)] 
  
-
-
 ::: moniker range=">= tfs-2015"
 
 ## Install and manage extensions 
