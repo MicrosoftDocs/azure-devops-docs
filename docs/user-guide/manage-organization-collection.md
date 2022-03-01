@@ -269,7 +269,7 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 ## Review and update notifications
 
-A number of notifications are predefined at the organization or collection level. You can disable or modify these subscriptions, or add new subscriptions as described in [Manage notifications for a team, project, or organization](../../notifications/manage-team-group-global-organization-notifications.md).  
+A number of notifications are predefined at the organization or collection level. You can disable or modify these subscriptions, or add new subscriptions as described in [Manage notifications for a team, project, or organization](../notifications/manage-team-group-global-organization-notifications.md).  
  
 :::image type="content" source="../media/global-notifications.png" alt-text="Screenshot of Azure DevOps global notifications.":::
  

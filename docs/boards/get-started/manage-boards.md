@@ -40,16 +40,11 @@ Specifically, consider doing one or more of the following tasks:
 ::: moniker-end
 
 
-<a id="add-users" />
-
 [!INCLUDE [add-users-project](../../includes/get-started/add-users-project.md)]  
-
- 
 
 [!INCLUDE [share-project-vision](../..includes/get-started/share-project-vision.md)]  
 
-[!INCLUDE [enable-remove-services](../..includes/get-started/enable-remove-services.md)]  
-
+[!INCLUDE [enable-remove-services](../..includes/get-started/enable-remove-services.md)]   
 
 ## Manage security and permissions
 
