@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 02/14/2022
 ---
 
-# Create your Azure Boards product backlog 
+# Create your product backlog in Azure Boards 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

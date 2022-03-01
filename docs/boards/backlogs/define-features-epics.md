@@ -1,5 +1,5 @@
 ---
-title: Define Azure Boards features and epics, organize backlog items
+title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define Azure Boards features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 10/11/2021
+ms.date: 03/01/2022
 ---
 
-# Define features and epics in Azure Boards to organize your product and portfolio backlogs  
+# Define features and epics, organize your product and portfolio backlogs in Azure Boards 
 
 [!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
