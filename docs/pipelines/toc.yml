@@ -388,6 +388,10 @@
           displayName: containers, docker, azure web app
         - name: Visual Studio Code Deploy to Azure extension
           href: targets/deploy-to-azure-vscode.md
+    - name: Azure Functions
+      items:
+        - name: Azure Functions
+          href: /azure/azure-functions/functions-how-to-azure-devops
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
