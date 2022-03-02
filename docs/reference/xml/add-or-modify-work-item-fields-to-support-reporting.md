@@ -1,12 +1,12 @@
 ---
 title: Change reporting attributes 
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: Customize which fields appear in the relational warehouse or cube to support reporting for Team Foundation Server 
 ms.technology: devops-agile
-ms.custom: process
+ms.custom: archive-candidate
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
-ms.topic: conceptual
-ms.date: 02/10/2017
+ms.topic: how-to
+ms.date: 03/01/2022
 ---
 
 
@@ -15,9 +15,9 @@ ms.date: 02/10/2017
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
->This topic applies to project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and project to support reporting. See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md). 
+> This article applies to project customization for On-premises XML process models. For you to view reports, you must have configured your on-premises Azure DevOps Server and project to support reporting. See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md). 
 >
->For an overview of process models and customization options, see [Customize your work tracking experience](../customize-work.md). 
+> For an overview of process models and customization options, see [Customize your work tracking experience](../customize-work.md). 
 
 
 You use work item fields to track data for a work item type, to define the filter criteria for queries, and to use in reports. Any field, except system fields, that you want to appear in a report must be defined in the definition file for the types of work items that the field will track. System fields are automatically defined for every work item type. However, they must be included in the work item form to support data entry.  
@@ -30,6 +30,7 @@ You use work item fields to track data for a work item type, to define the filte
 <a name="best_practices"></a> 
  
 ###  Best practices  
+
  Before you add or modify a field, review the following best practices:  
   
 -   Determine whether you can use a field that is already defined in the project collection that contains your project. Use of an existing field supports cross-project reporting.    
