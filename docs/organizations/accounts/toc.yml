@@ -1,11 +1,12 @@
-- name: About managing organizations
+- name: Organization management overview
   href: organization-management.md
-  displayName:
 - name: Plan your organizational structure
   href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayName: projects, teams, repos, version control, scenarios, quantity, mapping, reporting, structure, data
 - name: Create your organization
   href: create-organization.md
+- name: Manage your organization  
+  href: ../../user-guide/manage-organization-collection.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayName: new, project
 - name: Look up organization owner
   href:  ../security/look-up-organization-owner.md
@@ -13,6 +14,9 @@
 - name: Add and manage banners 
   href:  ../settings/manage-banners.md
   displayName: add, update, remove, information, organization
+- name: Manage preview features
+  href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  displayName: set, enable, user, organization, features, pipelines, boards, repos, artifacts, test plans, dashboard, analytics, social, project
 - name: Adjust organization settings
   items:
   - name: Add privacy policy URL
@@ -30,11 +34,8 @@
   - name: Change organization Owner
     href: change-organization-ownership.md
     displayName: update, reassign, Project Collection Administrator, owner
-- name: Manage your organization
+- name: Rename or delete an organization 
   items:
-  - name:  Manage preview features
-    href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayName: set, enable, user, organization, features, pipelines, boards, repos, artifacts, test plans, dashboard, analytics, social, project
   - name: Rename organization
     href: rename-organization.md
     displayName: owner, collection, administrator, new, name, Basic, URL, switch

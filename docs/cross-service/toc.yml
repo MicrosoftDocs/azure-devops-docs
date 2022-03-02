@@ -36,6 +36,8 @@
     href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
 - name: Public projects
   href: ../organizations/public/toc.yml
+- name: Notifications
+  href: ../notifications/toc.yml
 - name: Azure Boards & GitHub
   href: ../boards/github/toc.yml
 - name: Microsoft Teams & Slack integration
@@ -72,8 +74,6 @@
     href: ../marketplace-extensibility/index.yml
   - name: Settings & Usage
     href: ../organizations/index.yml
-  - name: Notifications
-    href: ../notifications/about-notifications.md
   - name: Azure Boards
     href:  ../boards/index.yml
   - name: Analytics & reporting
