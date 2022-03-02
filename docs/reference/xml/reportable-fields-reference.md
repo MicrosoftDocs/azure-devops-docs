@@ -1,9 +1,9 @@
 ---
 title: Reportable fields reference
-titleSuffix: TFS
+titleSuffix: Azure DevOps
 description: Default set of fields that appear in the relational warehouse database or the cube 
 ms.technology: devops-agile
-ms.custom: process
+ms.custom: archive-candidate
 ms.assetid: 06284b8a-d780-471e-b6d8-f100400eebfa
 ms.date: 02/01/2019 
 ---
@@ -24,7 +24,9 @@ A default set of fields appears in the relational warehouse database or the cube
 For a complete list of fields that are defined in the default process templates, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). For descriptions of each data type, see [Query fields, operators, and macros](../../boards/queries/query-operators-variables.md). 
 
 <a name="detail"></a> 
+
 ## Detail fields  
+
 Detail fields are written to the relational warehouse database, but not to the cube.  
 
 > [!div class="mx-tdCol2BreakAll"]
@@ -96,6 +98,7 @@ Detail fields are written to the relational warehouse database, but not to the c
 > |   Story Points    |                                                               A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it. (Agile process  only)<br/><br/>Reference name: Microsoft.VSTS.Scheduling.StoryPoints                                                                |                 Double                  |
 
 ## Related articles
+
 -  [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
 -  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md)
 -  [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)

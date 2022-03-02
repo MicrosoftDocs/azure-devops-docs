@@ -28,16 +28,16 @@ Customizations you make occur at one of these four levels:
 ::: moniker range="azure-devops"
 - **Project-level shared resources**: Define area and iteration paths which teams select to configure their backlogs and boards. Shared queries and work item tags are additional objects that once defined can be shared across the project.  
 - **Team assets or tools**: Each team can configure their specific tools, such as backlogs, boards, and dashboards. For details, see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
-- **Organization-level process customization**: Customize the fields, work item types, and backlogs and boards available to all teams.   
 - **Project and object-level permissions**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
-::: moniker-end
+- **Organization-level process customization**: Customize the fields, work item types, and backlogs and boards available to all teams.  ::: moniker-end
+
 
 
 ::: moniker range="< azure-devops"
 - **Project-level shared resources**: Define area and iteration paths which teams select to configure their backlogs and boards. Shared queries and work item tags are additional objects that once defined can be shared across the project.  
 - **Team assets or tools**: Each team can configure their specific tools, such as backlogs, boards, and dashboards. For details, see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
-- **Collection-level process customization**:  Customize the fields, work item types, and backlogs and boards available to all teams. 
-- **Project and object-level permissions**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
+- **Project and object-level permissions**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.
+- **Collection-level process customization**:  Customize the fields, work item types, and backlogs and boards available to all teams.  
 ::: moniker-end
  
 
@@ -506,6 +506,7 @@ Do you want to customize your tools in a way that's not supported?
 Here are a few options available to you:  
 
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes  
+- [Develop your own extension](../extend/get-started/node.md)
 - Determine if a [Service hook](../service-hooks/overview.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../integrate/index.md)  
 - Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).   
@@ -523,6 +524,4 @@ Here are a few options available to you:
 - [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
-
-[add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
-[add-team-admin]: ../../organizations/settings/add-team-administrator.md
+ 

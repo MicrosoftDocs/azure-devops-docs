@@ -7,16 +7,17 @@ ms.custom: process
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops' 
+ms.topic: how-to
+monikerRange: '<= tfs-2017' 
 ms.date: 02/14/2017
 ---
 
 # Define link controls to restrict link relationships
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [version-lteq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!IMPORTANT]  
->This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
+>This article applies to customization for the On-premises XML process model and the old webform. For the new web form, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 

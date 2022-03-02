@@ -1,15 +1,15 @@
 ---
 title: Change the maximum attachment size for work items
 titleSuffix: Azure DevOps Server
-description: Use the web service to increase the size of files you attach for Team Foundation Server 
+description: Use the web service to increase the size of files you attach to a work item
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: a37734d7-8db0-44e5-9e4a-31ddf9261e9e
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '< azure-devops'
-ms.date: 11/18/2020  
+ms.date: 03/01/2022
 ---
 
 # Change the maximum attachment size for work items

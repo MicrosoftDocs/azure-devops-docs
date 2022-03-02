@@ -6,6 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.author: kaelli
 author: KathrynEE
+ms.topic: how-to
 monikerRange: '<= tfs-2015'
 ms.date: 12/15/2017
 ---
@@ -33,11 +34,12 @@ Task board for an Agile project without the recommended manual updates
  To support the desired behaviors, you must add the **New** and **Removed** states to the user story and task work item types, and update the metastate mappings assigned in the process configuration.  
    
   
-**Requirements**  
+## Prerequisites
   
 To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the project. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 <a name="agile_updates"></a> 
+
 ## Update the workflow and metastates
   
 > [!IMPORTANT]  
