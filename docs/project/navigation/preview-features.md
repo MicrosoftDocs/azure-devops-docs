@@ -81,7 +81,7 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md)  
-      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
+      [Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)  
       [New account manager](#account-manager)  
       New Artifacts (Feeds) Experience (accessbility updates)  
       [New Boards Hubs](https://devblogs.microsoft.com/devops/azure-boards-ux-modernization-public-preview/) 
@@ -245,10 +245,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Preview features options for the organization, part 1.](media/preview-features/org-features-s187-1.png)
 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Preview features options for the organization, part 2.](media/preview-features/org-features-s187-2.png)
-> 
+ 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"

@@ -852,8 +852,8 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 * [Add users and manage access](../accounts/add-organization-users.md)   
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md)
-* [Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-search-and-selection)
-* [Limit user visibility for projects using the Project-Scoped Users group](../projects/about-projects.md#project-scoped-user-group)
+* [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection)
+* [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group)
 * [Grant or restrict access using permissions](restrict-access.md).
 ::: moniker-end
  
