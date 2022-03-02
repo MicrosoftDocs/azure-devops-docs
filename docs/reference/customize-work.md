@@ -29,7 +29,8 @@ Customizations you make occur at one of these four levels:
 - **Project-level shared resources**: Define area and iteration paths which teams select to configure their backlogs and boards. Shared queries and work item tags are additional objects that once defined can be shared across the project.  
 - **Team assets or tools**: Each team can configure their specific tools, such as backlogs, boards, and dashboards. For details, see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
 - **Project and object-level permissions**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
-- **Organization-level process customization**: Customize the fields, work item types, and backlogs and boards available to all teams.  ::: moniker-end
+- **Organization-level process customization**: Customize the fields, work item types, and backlogs and boards available to all teams. 
+::: moniker-end
 
 
 
