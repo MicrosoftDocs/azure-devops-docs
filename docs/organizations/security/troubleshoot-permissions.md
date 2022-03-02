@@ -306,8 +306,7 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 ## Related articles
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
-- [Change individual or group permissions](change-individual-permissions.md)
+- [Change individual or group permissions](./change-individual-permissions.md)
 - [Security best practices](security-best-practices.md)
 - [Security and permission management tools](security-tools-reference.md)    
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)
-
