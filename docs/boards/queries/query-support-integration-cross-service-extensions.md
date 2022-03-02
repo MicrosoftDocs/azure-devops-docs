@@ -4,11 +4,11 @@ titleSuffix: Azure Boards
 description: Learn about extra features, like cross-service operations, that are supported by work tracking queries in Azure Boards and Azure DevOps. 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.topic: overview
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
-ms.date: 10/26/2021
+ms.date: 03/01/2022
 ---
 
 
