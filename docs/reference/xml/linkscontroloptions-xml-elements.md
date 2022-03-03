@@ -1,14 +1,15 @@
 ---
 title: LinksControlOptions XML elements reference 
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps 
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '>= tfs-2017 < azure-devops'
-ms.date: 06/25/2019
+ms.date: 03/01/2022
 ---
 
 # LinksControlOptions XML elements (Web form) 
@@ -71,7 +72,6 @@ The following table summarizes the differences between the **LinksControlOptions
    Specify to include or exclude external link types using **ExternalLinkFilters**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Restrict link relationships to other work items 
@@ -84,7 +84,6 @@ The following table summarizes the differences between the **LinksControlOptions
    Specify to include or exclude work link types using **WorkItemLinkFilters**, specify a link type reference category 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Restrict links allowed based on work item type 
@@ -108,7 +107,6 @@ The following table summarizes the differences between the **LinksControlOptions
    All links grouped by type and listed alphabetically or ordered by column field 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Composite display of link information
@@ -123,7 +121,6 @@ The following table summarizes the differences between the **LinksControlOptions
    Not supported
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Field and attribute display 
@@ -373,7 +370,7 @@ The following table describes the **LinksControlOptions** element and its child 
    
    The following lists the default work item types available based on the default system processes:
 
-   Agile
+   **Agile**
    
    - Bug
    - Epic
@@ -382,8 +379,16 @@ The following table describes the **LinksControlOptions** element and its child 
    - Task
    - Test Case
    - User Story
+
+   **Basic**
    
-   Scrum
+   - Epic
+   - Feature
+   - Issue
+   - Task
+   - Test Case
+
+   **Scrum**
    
    - Bug
    - Epic
@@ -393,7 +398,7 @@ The following table describes the **LinksControlOptions** element and its child 
    - Task
    - Test Case
    
-   CMMI
+   **CMMI**
    
    - Bug
    - Change Request

@@ -63,7 +63,7 @@ In the new web form layout, the system manages several header elements within th
 - **Fields**: Work item ID, Title, Assigned To, State, Reason, Area Path, Iteration Path, and tags
 - **Pages**: ![History page icon](../../boards/media/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/media/icons/icon-attachments-tab-wi.png) Attachments.  
 
-<img src="media/weblayout-system-controls-details-page.png" alt="Header element within web form" />
+![Header element within web form](media/weblayout-system-controls-details-page.png)
 
 When you export a WIT definition, you'll see a **SystemControls** section at the beginning of the **WebLayout** section, similar to the following:
 
@@ -465,7 +465,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 > [!div class="tabbedCodeSnippets"]
 > ```XML
 > <Control FieldName="FieldRefName" Type="DateTimeControl | FieldControl | 
-> HtmlFieldControl | LabelControl | WebpageControl&quot; Label="LabelText" 
+> HtmlFieldControl | LabelControl | WebpageControl Label="LabelText" 
 > LabelPosition="Top | Bottom | Left | Right" EmptyText="TextString" 
 > ReadOnly="True | False" Name="InstanceName" [Visible="false" | 
 > FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
@@ -485,46 +485,37 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **FieldName** 
    :::column-end:::
    :::column span="3":::   
    Optional. Specifies the work item field with which the control is associated. Specify the reference name of the field which should be between 1 and 70 characters. 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **Type** 
-
    :::column-end:::
    :::column span="3":::
    Required. Specifies the data type of the control. Specify a string from one of these built-in types: 
-
-   
    - **DateTimeControl**: Use to display formatted date fields with a field type of **DateTime**.
-   - **FieldControl**: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of **Boolean**, **Double**, **Identity**, **Integer**,**PlainText**m and **String**.<br/><br/>
-   > **Feature availability:** The Boolean data type field is supported for TFS 2017 and later versions.     
+   - **FieldControl**: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of **Boolean**, **Double**, **Identity**, **Integer**,**PlainText**, and **String**.  
+      > [!NOTE] 
+      > **Feature availability:** The Boolean data type field is supported for TFS 2017 and later versions.     
    - **HtmlFieldControl**: Use to display multi-line, rich-text format of fields with a field type of **HTML**.
    - **LabelControl**: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the **LabelText**, **Link** and **Text** elements.
-   - **WebpageControl**: Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type. You specify the content and links to display using the **WebpageControlOptions** element.
-   
+   - **WebpageControl**: Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type. You specify the content and links to display using the **WebpageControlOptions** element. 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **EmptyText** 
-
    :::column-end:::
    :::column span="3":::   
    Optional. Specifies a text string between 1 and 255 characters in length that appears when a field is empty.
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Label**
@@ -533,24 +524,19 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    Optional. Specifies the visible text on the form that identifies the control. Specify a string of no more than 80 characters. If unspecified, the friendly name of the `FieldName` is used. 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **ReadOnly**
    :::column-end:::
    :::column span="3":::
    Optional. Specifies that the field is read-only:
-   
    - **True**: Control field is read-only.
    - **False**: Control field isn't read-only.
-   
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Name** 
-
    :::column-end:::
    :::column span="3":::
    Optional. Identifies a control uniquely. The **Name** is important if more than one control on the form is associated with the same work item field.  
@@ -559,7 +545,6 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    > You use the **Name** attribute when you want to have the same field displayed on more than one **Page** on the form. You specify a unique value for the **Name** attribute for both control entries so that the system identifies each control uniquely.  
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Visible**
@@ -568,7 +553,6 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    Optional. Specify `Visible="false"` when you want to hide a field normally included within the header area. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Replaces` attribute. 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Replaces**
