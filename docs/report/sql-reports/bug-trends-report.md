@@ -3,7 +3,7 @@ title: Bug Trends report
 titleSuffix: Azure DevOps Server
 description: Learn how to track the rate at which your team is discovering and resolving bugs.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 631ec793-644f-4eff-8403-e48e746e369e
 ms.author: kaelli
 ms.date: 10/14/2021

@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---

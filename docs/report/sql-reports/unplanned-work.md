@@ -3,7 +3,7 @@ title: Unplanned Work report
 titleSuffix: Azure DevOps Server
 description: Learn how to use the Unplanned Work report to determine how much work was added to the iteration that wasn't planned at the start of the iteration.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 4c174c3c-2e3d-4f09-913d-bbc17b6382a8
 ms.author: kaelli
 author: KathrynEE

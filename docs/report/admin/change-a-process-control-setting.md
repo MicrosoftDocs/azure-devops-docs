@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Learn how to change a process control setting for the data warehouse or analysis services cube when you connect to Azure DevOps Server.
 ms.assetid: 48F5B9C9-66B4-4211-8622-5F93CDA9A19A  
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021

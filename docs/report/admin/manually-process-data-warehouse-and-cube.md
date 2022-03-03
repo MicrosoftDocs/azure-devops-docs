@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Learn how to manually process the data warehouse and analysis services cube when connecting to Azure DevOps Server. 
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021
