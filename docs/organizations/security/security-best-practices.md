@@ -57,7 +57,7 @@ The system manages permissions at different levels - individual, external, serve
 
 ### Individual permissions
 
-For more information, see [Set individual permissions](./change-individual-permissions.md).
+For more information, see [Set individual permissions](/azure/devops/organizations/security/request-changes-permissions).
 
 ### External guest access 
 
