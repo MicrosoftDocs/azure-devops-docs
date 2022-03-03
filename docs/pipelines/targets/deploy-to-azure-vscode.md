@@ -14,17 +14,14 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
-This tutorial walks you through setting up a CI/CD pipeline for deploying Node.js application to Azure App Service using [Deploy to Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extension.
+Use [Azure Pipelines](/azure/devops/pipelines/) to deploy a Node.js application to Azure App Service using [Deploy to Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extension. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 
 ## Prerequisites
 
-- An Azure account. If you don't have one, you can [create for free](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-app-service-extension&mktingSource=vscode-tutorial-app-service-extension).
-
-- You need [Visual Studio Code](https://code.visualstudio.com/)  installed along with the [Node.js and npm the Node.js package manager](https://nodejs.org/download) and the below extensions:
-
-- You need [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy)
-
-- A GitHub account, where you can create a repository. If you don't have one, you can [create one for free](https://github.com/).
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+* [Visual Studio Code](https://code.visualstudio.com/) installed with the [Node.js and npm the Node.js package manager](https://nodejs.org/download).
+    * The Visual Studio Code [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure ](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extensions.
 
 > [!IMPORTANT]
 > Ensure that you have all the prerequisites installed and configured. 
