@@ -14,12 +14,13 @@ ms.date: 09/28/2021
 
 # Team home page or dashboard
 
-<b>TFS 2015 | TFS 2013</b>  
+[!INCLUDE [version-lt-eq-2015](../../includes/version-lt-eq-2015.md)]
+
+
+Teams can view the progress of work from the team home page. Team administrators can add or pin items to this dashboard and resequence tiles. Each tile provides team members quick access to work items, build progress, code changes, and more.
 
 > [!NOTE]  
 > **Feature availability:** For on-premises TFS, install TFS 2015 Update 1 to get access to [multiple team dashboards](dashboards.md) and [widgets](widget-catalog.md) that you can add to these dashboards.   
-
-Teams can view the progress of work from the team home page. Team administrators can add or pin items to this dashboard and resequence tiles. Each tile provides team members quick access to work items, build progress, code changes, and more.
 
 From the web portal, you can view pinned items on the home page, including flat-list query charts.
 

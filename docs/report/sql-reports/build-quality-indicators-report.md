@@ -2,7 +2,7 @@
 title: Build Quality Indicators report
 titleSuffix: Azure DevOps Server
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 description: Learn about test coverage, code churn, and bug counts for a specified build definition.
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli

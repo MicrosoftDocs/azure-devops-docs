@@ -3,7 +3,7 @@ title: Stories Overview Report (Agile)
 titleSuffix: Azure DevOps Server
 description: Learn how the Stories Overview report (Agile) lists all user stories, filtered by area and iteration in the order of importance.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 2b21601e-c737-4eda-b836-87517e19cf63
 ms.author: kaelli
 author: KathrynEE

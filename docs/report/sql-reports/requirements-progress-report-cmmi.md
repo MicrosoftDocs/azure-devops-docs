@@ -3,7 +3,7 @@ title: Requirements Progress Report (CMMI)
 titleSuffix: Azure DevOps Server
 description: Learn how to build a report that lists all requirements, filtered by product area and iteration in order of importance.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: c5ecc16d-9645-4b5f-97b9-e92f76a88852
 ms.author: kaelli
 author: KathrynEE

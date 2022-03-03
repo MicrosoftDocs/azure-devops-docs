@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Add a report server and upload reports to a team project hosted on an on-premises Azure DevOps Server so you can access data about your team's projects.
 ms.assetid: 17C16BE3-6F7D-466F-A3D9-402C79D53768  
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021

@@ -5,7 +5,7 @@ description: Learn how Analytics for Azure DevOps manages changes to the OData A
 ms.technology: devops-analytics 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---
