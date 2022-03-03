@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2018'
 ms.date: 10/22/2021 
 ---
