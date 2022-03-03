@@ -98,7 +98,8 @@ The following table describes conditional rules that you can specify as child el
        <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
        <READONLY> . . . </READONLY>
        <REQUIRED> . . . </REQUIRED>
-       <SERVERDEFAULT> . . . </SERVERDEFAULT><br/><SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
        <VALIDUSER> . . . </VALIDUSER>
    </WHENNOT>
    ```
