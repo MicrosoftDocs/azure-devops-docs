@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 01/31/2022
+ms.date: 03/01/2022
 monikerRange: 'azure-devops'
 ---
 # Build and push Docker images to Azure Container Registry
@@ -67,17 +67,21 @@ You can also use the Azure portal web UI to create your Azure Container Registry
 
     :::image type="content" source="../media/docker-task.png" alt-text="Build and push Docker images to Azure Container Registry":::
 
-1. Select your **Azure Subscription**, and then select your **Container registry** from the dropdown menu. 
+1. Select your **Azure Subscription**, and then select **Continue**.
 
-1. Provide an **Image Name** to your container image, and then select **Validate and configure**.
+1. Select your **Container registry** from the dropdown menu, and then provide an **Image Name** to your container image.
 
-   As Azure Pipelines creates your pipeline, it:
+1. Select **Validate and configure** when you are done.
+    
+    :::image type="content" source="../media/docker-container-registry.png" alt-text="A screenshot showing how to configure a docker pipeline to build and publish an image to Azure Container Registry":::
 
-   * Creates a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
-
-   * Generates an *azure-pipelines.yml* file, which defines your pipeline.
+    As Azure Pipelines creates your pipeline, it will:
+    
+    * Create a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
+    
+    * Generate an *azure-pipelines.yml* file, which defines your pipeline.
   
-1. Review your pipeline YAML and select **Save and run** when you are ready.
+1. Review your pipeline YAML, and then select **Save and run** when you are ready.
 
     :::image type="content" source="../media/review-your-pipeline.png" alt-text="Review your pipeline, save & run":::
 
@@ -86,8 +90,6 @@ You can also use the Azure portal web UI to create your Azure Container Registry
 1. As your pipeline runs, select the build job to watch your pipeline in action.
 
     :::image type="content" source="../media/jobs-build.png" alt-text="Monitor builds":::
-
-<a name="how"></a>
 
 ## How we build your pipeline
 
