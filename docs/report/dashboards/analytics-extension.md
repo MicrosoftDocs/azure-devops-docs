@@ -2,9 +2,8 @@
 title: Install or enable Analytics
 titleSuffix: Azure DevOps Server
 description: Learn how to add or enable Analytics for your Azure DevOps Server collection.
-ms.topic: conceptual
-ms.technology: devops-analytics
-ms.assetid:  
+ms.topic: how-to
+ms.technology: devops-analytics 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019 < azure-devops'

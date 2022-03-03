@@ -3,7 +3,7 @@ title: Locate Reporting Services reports after upgrade
 titleSuffix: Azure DevOps Server
 description: Learn how to locate reports in SQL Server Reporting Services after upgrading earlier versions of Azure DevOps Server. 
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021

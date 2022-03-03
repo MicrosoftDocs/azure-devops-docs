@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: How to create status and trend Excel charts from a flat list query with SQL Server Analysis Services installed for on-premises projects and collections. 
 ms.assetid: EBBA2C3A-A9F4-4808-B746-5DC0F039EA53  
 ms.technology: devops-analytics
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/22/2021

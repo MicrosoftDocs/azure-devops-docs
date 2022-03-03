@@ -3,7 +3,7 @@ title: Bug Status report
 titleSuffix: Azure DevOps Server
 description: Learn how to track the team's progress toward resolving and closing bugs by viewing the Bug Status report.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: ede30011-e04a-4914-ab68-b4c725a54f96
 ms.author: kaelli
 ms.date: 10/14/2021

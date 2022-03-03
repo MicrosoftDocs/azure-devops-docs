@@ -3,7 +3,7 @@ title: View, upload, and organize Reporting Services reports
 titleSuffix: Azure DevOps Server
 description: View, upload, and organize Reporting Services reports to analyze the progress and quality of the project.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 6368a79e-32d4-4451-89de-0975530e3d17
 ms.author: kaelli
 author: KathrynEE
@@ -40,7 +40,7 @@ You can use the default reports, or you can customize each report to fit your sp
   
  You use Report Manager to manage reports and report folders. To access the team report site from Team Web Access, on the Home page, select ![Report](media/icon_reportte.png "Icon_reportTE") **Reports**.  
   
- **Requirements**  
+## Prerequisites
   
 -   To open a report from Team Explorer, your **View project-level information** permission on the team project must be set to **Allow**. You must also be a member of the SQL Server Reporting Services **Browser** role.  
   
@@ -49,9 +49,7 @@ You can use the default reports, or you can customize each report to fit your sp
     > [!NOTE]
     >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
-## Viewing
-
-### To view a report from Team Explorer  
+## View a report from Team Explorer  
   
 1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**.  
   
@@ -72,7 +70,7 @@ You can use the default reports, or you can customize each report to fit your sp
   
 2.  At the top of the report, specify your filter parameters, and then choose **View Report**.  
   
-### To view a report from Report Manager
+## View a report from Report Manager
   
 1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose  ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, and then choose the **Go to site** link.  
   
@@ -84,6 +82,7 @@ You can use the default reports, or you can customize each report to fit your sp
   
 4.  At the top of the report, specify your filter parameters, and then choose **View Report**.  
   
-## Related notes
+## Related articles
+
 -  [Reporting Services Reports](../sql-reports/reporting-services-reports.md)   
 -  [Create and manage Reporting Services reports](../sql-reports/create-and-manage-reporting-services-reports.md)

@@ -3,7 +3,7 @@ title: Query work tracking data using OData
 titleSuffix: Azure DevOps
 description: Learn how to generate work item tracking reports for Azure DevOps using OData Analytics.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.author: kaelli
 author: KathrynEE

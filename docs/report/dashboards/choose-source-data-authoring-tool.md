@@ -2,7 +2,7 @@
 title: Choose the source of data and authoring tool
 titleSuffix: Azure DevOps Server
 description: Learn about data sources and tools for creating and customizing reports for Azure DevOps Server.
-ms.custom: dashboards
+ms.custom: archive-candidate
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: cc71c69f-230b-47e6-b29b-398e3e280894

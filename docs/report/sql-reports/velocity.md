@@ -2,7 +2,7 @@
 title: Velocity (Scrum) report
 titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 description: Learn how to use the velocity report to forecast release and product completion dates and plan future projects.
 ms.assetid: 4c2c4f98-ca0f-4003-8292-4c50b66a996c
 ms.author: kaelli

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Learn how to add and configure a report server so you can include Azure DevOps reports to help you manage your software development projects.
 ms.assetid: 1BB64B5F-708B-4E6E-9E88-4DCAEE58A231
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021
@@ -186,9 +186,10 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 Now that you've added reporting to the server and to the team project collection, you're ready to start adding reports to your projects.
 
-## Next step
+## Next step 
+> [!div class="nextstepaction"]
+> [Upload reports to a team project](upload-reports.md) 
 
-[Upload reports to a team project](upload-reports.md) 
 
 ## Related content
 You can learn more about installing and configuring SQL Server for use with on-premises TFS from these articles:  

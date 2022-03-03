@@ -25,7 +25,7 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
 |-------------------|------------------------------------------|  
 |-   How much work does each PBI require?<br />-   Does the amount of work that remains for each PBI correspond to your expectations?<br />-   Are top-ranked PBIs being implemented first?<br />-   How many tests are defined for each PBI? How many tests are passing?<br />-   Which PBIs don't have test cases?|-   How many test cases have run for each PBI, and how many have passed?<br />-   Which PBIs are at risk?<br />-   Which PBIs aren't stable enough for release?<br />-   Which PBIs can the team ship today?|  
   
- **Requirements**  
+ ## Prerequisites  
   
 -   This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report isn't available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** doesn't appear when you open Team Explorer and expand your team project node.  
   
