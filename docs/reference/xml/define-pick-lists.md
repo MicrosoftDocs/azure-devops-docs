@@ -171,7 +171,7 @@ Field lists are composed of individual list items. Each field list must contain 
 
 ##  Define dependent pick lists  
 
-You can define a pick list that is active only when its parent conditional clause is true. In the following example, two sets of picks list are defined for My Field. At run time,  only one list appears based on whether Requirements is assigned to the `MyCompany.MyTeam.Discipline` field.  
+You can define a pick list that is active only when its parent conditional clause is true. In the following example, two sets of pick lists are defined for *My Field*. At run time, only one list appears based on whether *Requirements* is assigned to the `MyCompany.MyTeam.Discipline` field.  
 
 > [!NOTE]  
 >  The **WHEN** and **WHENNOT** rules in this example can also apply to other rules to specify when those rules should be evaluated. For more information, see [WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED XML elements](assign-conditional-based-values-and-rules.md).  

@@ -772,7 +772,7 @@ Non-working days are removed from calculations made by the [capacity planning to
 
 At a glance, you can differentiate WITs when viewing a query result or backlog based on the color and icon assigned to the WIT. The system applies the color defined for the work item type to the [icon specified for the WIT](#wit-icons).  
 
-<img src="../media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" />  
+![Query results showing wit color, icon, and state color](../media/add-modiy-wit-color-icon-state-color.png)
 
 The Scrum process template defines the following color assignments. Similar ones are made for the Agile and CMMI templates.
 
@@ -808,29 +808,22 @@ The Scrum process template defines the following color assignments. Similar ones
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **WorkItemColors**
-
    :::column-end:::
    :::column span="3":::
    Optional. Container element for specifying colors for work item types.
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **WorkItemColor**
-
    :::column-end:::
    :::column span="3":::
    Specifies the colors used to display a WIT within the web portal. The primary color is used in list displays. The secondary color is no longer referenced, however you must specify it for the syntax to validate.  
 
    When specifying the color, always prefix the six-digit Hex color code with **FF** which denotes that the color should be fully visible. 
- 
-
    ```
    <WorkItemColor primary="HexColorCode" secondary="HexColorCode"  
       name="witName" />
@@ -874,29 +867,22 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Properties**
-
    :::column-end:::
    :::column span="3":::
    Optional. Container element for specifying default properties and behaviors.
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Property**
-
    :::column-end:::
    :::column span="3":::
    Specifies the default assignment made to new teams or existing teams when updating a project with new features. Teams can choose the behavior they want through their team settings.
 
-   Valid property names are:
-
-   
+   Valid property names are:  
    - **BugsBehavior** sets the default for the [Show bugs on backlogs and  board](../../organizations/settings/show-bugs-on-backlog.md). Allowed values correspond to:<br/>   
       - **AsRequirements** &mdash; Bugs appear on backlogs and boards similar to requirements (default for Scrum process)  
       - **AsTasks** &mdash; Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)  
@@ -928,8 +914,7 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 ### Specify workflow state colors
 
 > [!NOTE]    
-><b>Feature availability: </b> To specify workflow state colors, you must upgrade to TFS 2015.2 or later version.   
-
+> **Feature availability**: To specify workflow state colors, you must upgrade to TFS 2015.2 or later version.   
 
 The color you associate with your work item states will appear across the product. This includes the following areas:  
 
@@ -941,10 +926,10 @@ The color you associate with your work item states will appear across the produc
 
 Here we show how it appears in the work item form:  
 
-<img src="media/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" />  
+![Bug work item form header, State color shown](media/process-config-bug-form-header-state-colors.png)  
 
 > [!NOTE]    
->No colors are displayed in the client work item forms or within the old links control within the client form. 
+> No colors are displayed in the client work item forms or within the old links control within the client form. 
 
 **Details:**
 - You must specify the color as an eight-digit hexadecimal value, similar to that used for the color defined for a WIT    
@@ -973,11 +958,11 @@ The system applies the color defined for the work item type to the icon. Colors 
 
 For example, here you see a list view&hellip; 
 
-<img src="media/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" /> 
+![Web portal, list of work items with icons](media/processconfig-list-wi-with-icons.png)
 
 and, here the icon is shown within the work item form.
 
-<img src="media/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" />  
+![Bug work item form header, Work item type icon shown](media/process-config-bug-form-header-bug-icon.png) 
 
 
 ## Related articles

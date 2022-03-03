@@ -45,24 +45,16 @@ The following table describes conditional rules that you can specify as child el
 -   `value`: When the specified field has this value, the rules in the `WHEN` and `WHENNOT` elements are applied to the current field.    
 
 :::row:::
-   :::column span="1":::
-   **Element**
+   :::column span="2":::
+   **Element and syntax**
    :::column-end:::
    :::column span="2":::
-   **Syntax**
-   :::column-end:::
-   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
-
 :::row:::
-   :::column span="1":::
-   **WHEN**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHEN**  
    ```
    <WHEN field="fieldReferenceName" value="value">
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -83,20 +75,15 @@ The following table describes conditional rules that you can specify as child el
    </WHEN>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies one or more rules to apply to the current field when another field has a specific value. The parent element defines the current field.  
    
    When the specified field has the specified value, the rules in this element are applied to the current field.
-
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-   **WHENNOT**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHENNOT**  
    ```
    <WHENNOT field="fieldReferenceName" value="value">
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -116,20 +103,15 @@ The following table describes conditional rules that you can specify as child el
    </WHENNOT>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field changes. The parent element defines the current field.  
    
    When the specified field does not contain the specified value, the rules in this element are applied to the current field.
-
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-   **WHENCHANGED**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHENCHANGED**
    ```
    <WHENCHANGED field="fieldReferenceName" >
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -150,18 +132,13 @@ The following table describes conditional rules that you can specify as child el
    </WHENCHANGED>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is changed in a revision to a work item. The parent element defines the current field.
-
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-   **WHENNOTCHANGED**
-
-   :::column-end:::
    :::column span="2":::
-   
+   **WHENNOTCHANGED**
    ```
    <WHENNOTCHANGED field="fieldReferenceName">
        <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
@@ -182,7 +159,7 @@ The following table describes conditional rules that you can specify as child el
    </WHENNOTCHANGED>
    ```
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is not changed in a revision to a work item. The parent element defines the current field.
    :::column-end:::
 :::row-end:::
