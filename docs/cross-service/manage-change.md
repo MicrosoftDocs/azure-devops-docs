@@ -3,7 +3,7 @@ title: Manage change, Agile methods
 titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage change when using Agile methods  
 ms.technology: devops-agile 
-ms.topic: overview
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
