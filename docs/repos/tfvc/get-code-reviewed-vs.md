@@ -91,6 +91,8 @@ Johnnie will see the code review request in the Team Explorer, look at the chang
 
    ![Work environment restored after resuming work](media/get-code-reviewed-vs/IC683039.png)
 
+3. Jamal closes the review by selecting "Close Review".
+
 ## Next steps
 
 > [!div class="nextstepaction"]
