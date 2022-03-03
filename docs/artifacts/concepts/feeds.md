@@ -4,7 +4,7 @@ description: Learn about Artifacts feeds and the difference between project-scop
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/28/2021
+ms.date: 03/03/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -36,9 +36,23 @@ There some important things to note regarding public feeds:
 * Public feeds cannot have upstream sources.
 * Public users cannot currently download universal packages. All other package types are supported for public access.
 
-## Create a feed
+## Create public feeds
 
-[!INCLUDE [](../includes/create-feed.md)]
+Public feeds are project-scoped feeds in a public project.
+
+1. Select **Artifacts**.
+
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing Artifacts in the Azure DevOps dashboard.":::
+
+1. Select **Create Feed**.
+
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
+
+1. Give your feed a **Name**, and then select **Project** for your feed's scope.
+
+    :::image type="content" source="../media/create-public-feed.png" alt-text="Screenshot showing how to create a new public feed.":::
+
+1. Select **Create** when you are done.
 
 ::: moniker range=">= azure-devops-2019"
 
