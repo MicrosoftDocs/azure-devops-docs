@@ -632,26 +632,24 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    **For Agile tools:**
    
    - **Activity**: Used to support the capacity-by-activity feature. Specify the same field used in the WIT assigned to the Task Category.
-
-   > [!NOTE]  
-   > The values displayed by the Capacity tool reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for sprint Capacity, you must make the values match in all the projects for the field assigned to `type="Activity"`.
+       > [!NOTE]  
+       > The values displayed by the Capacity tool reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for sprint Capacity, you must make the values match in all the projects for the field assigned to `type="Activity"`.
 
    - **Effort**: Used to calculate the team velocity. Specify the same field used in the WIT assigned to the Requirement Category that you use to capture the estimated level of effort, story points, or size for the amount of work that a backlog item requires to implement.
 
    - **Order**: Used to define the sort order for items on the backlogs and boards. The system lists work items according to their ascending order as defined by the field for this type.
-
-   > [!NOTE]  
-   > You can move items by dragging them up or down the list on a backlog or board. As you move items, a background process updates the field assigned to the `type="Order"`.
+       > [!NOTE]  
+       > You can move items by dragging them up or down the list on a backlog or board. As you move items, a background process updates the field assigned to the `type="Order"`.
    
-   - **RemainingWork**: Used to calculate remaining work and burndown charts. Specify the same field used in the WIT assigned to the Task Category which you use to capture the hours, days, or other unit of measurement that remain to finish a task.<br/><br/>
-   The value that you specify for **format** is used on the sprint backlogs and task boards wherever remaining work is reported. For example, when reporting capacity-by-activity or capacity per team member, or next to the column heading for the task states on the task board.<br/><br/>
-   For *TimeUnitString*, specify any text string that you want to use to reflect the time value, such as hours or days.<br/><br/>
-   For example, the following values are all valid:<br/><br/>
-   `format="{0} h"`<br/><br/>
-   `format="{0} hours"`<br/><br/>
-   `format="hours {0}"`<br/><br/>
-   `format="time {0}"`<br/><br/>
-   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).<br/><br/>
+   - **RemainingWork**: Used to calculate remaining work and burndown charts. Specify the same field used in the WIT assigned to the Task Category which you use to capture the hours, days, or other unit of measurement that remain to finish a task.  
+   The value that you specify for **format** is used on the sprint backlogs and task boards wherever remaining work is reported. For example, when reporting capacity-by-activity or capacity per team member, or next to the column heading for the task states on the task board.  
+   For *TimeUnitString*, specify any text string that you want to use to reflect the time value, such as hours or days.  
+   For example, the following values are all valid:  
+   `format="{0} h"`  
+   `format="{0} hours"`  
+   `format="hours {0}"`  
+   `format="time {0}"`  
+   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).  
    **For the feedback request form:**<br/>
      > [!NOTE]  
      > You should not have to change the default assignments made for the following **TypeField** elements. These assignments correspond to the fields used to capture the corresponding information in the WIT assigned to the Feedback Request Category.  
@@ -663,35 +661,25 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    - **ApplicationType**: Used to capture the type of application. The types listed correspond to the allowed values specified in the WIT definition for the feedback request.     
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **TypeFieldValues**
-
    :::column-end:::
    :::column span="3":::
-   Required for the **TypeFieldValue** when `type="ApplicationType"`.
-
+   Required for the **TypeFieldValue** when `type="ApplicationType"`. 
    Specifies a collection of **TypeFieldValue** elements which are used in the feedback request form.
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **TypeFieldValue**
-
    :::column-end:::
    :::column span="3":::
-   Required. Do not customize.
-
-   Specifies the name of an application type to appear on the feedback request form.
-
+   Required. Do not customize. Specifies the name of an application type to appear on the feedback request form.
    ```
    <TypeFieldValue value="ApplicationTypeName" type="TypeApp"/>
    ```
    The default assignments correspond to the allowed values specified in the type definition for the feedback request form.
-
    ```
    <TypeFieldValues>
          <TypeFieldValue value="Web application" type="WebApp" />
