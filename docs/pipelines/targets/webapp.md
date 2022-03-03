@@ -7,7 +7,7 @@ ms.assetid:
 ms.custom: seodec18, contperf-fy22q1, devx-track-azurecli
 ms.author: jukullam
 author: juliakm
-ms.date: 01/06/2022
+ms.date: 03/03/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. 
+Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 
-Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
+YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](/azure/devops/pipelines/get-started/key-pipelines-concepts).
 
 You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. For more complicated scenarios such as needing to use XML parameters in your deploy, you can use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md).  
 
