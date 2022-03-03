@@ -3,7 +3,7 @@ title: Sprint Burndown (Scrum)
 titleSuffix: Azure DevOps Server
 description: Learn about the Sprint Burndown (Scrum) report and how it tracks how much work remains in a sprint backlog.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: f7422ba3-c309-4092-87cf-17a83c77ac01
 ms.author: kaelli
 author: KathrynEE

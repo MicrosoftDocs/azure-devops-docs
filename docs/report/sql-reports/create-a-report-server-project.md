@@ -3,7 +3,7 @@ title: Create a Report Server Project
 titleSuffix: Azure DevOps Server
 description: Learn how to use SQL Server Report Designer to create a report to track the team's progress.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 5fc5d272-2569-4dd8-b493-704f03f2aca1
 ms.author: kaelli
 author: KathrynEE
@@ -18,7 +18,7 @@ You can track your team's progress by using SQL Server Report Designer to create
   
  For an overview of Report Designer, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](/previous-versions/sql/sql-server-2008-r2/ms159253(v=sql.105)). For more information about how to create reports in Report Designer, see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md) and [Create an aggregate report using Report Designer and the Analysis Services Cube](create-aggregate-report-report-designer-analysis-services-cube.md).  
   
- **Requirements**  
+ ## Prerequisites  
   
 -   You must have Visual Studio and SQL Server Business Intelligence Development Studio installed on the same computer.  
   

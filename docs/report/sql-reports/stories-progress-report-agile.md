@@ -3,7 +3,7 @@ title: Stories Progress Report (Agile)
 titleSuffix: Azure DevOps Server
 description: Lists all user stories, filtered by product area and iteration in order of importance.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
 ms.author: kaelli
 author: KathrynEE

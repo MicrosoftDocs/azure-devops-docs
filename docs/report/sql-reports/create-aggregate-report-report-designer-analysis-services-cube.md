@@ -2,7 +2,7 @@
 title: Create an aggregate report with Report Designer 
 titleSuffix: Azure DevOps Server
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 description: Learn how to create a report that shows how many active work items are assigned to each person on the team.  
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
 ms.author: kaelli
@@ -20,7 +20,7 @@ You can track your team's progress more easily by creating reports that aggregat
 
  If you haven't created reports for TFS before, see [Dashboards and reports](../admin/review-team-activities-for-useful-reports.md). If you haven't used Report Designer before, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](/previous-versions/sql/sql-server-2008-r2/ms159253(v=sql.105)). For information about how to create reports that include line-item details (such as titles of work items), see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md).  
 
- **Requirements**  
+ ## Prerequisites  
 
 -   You must have Visual Studio and SQL Server Business Intelligence Development Studio installed on the same computer.  
 

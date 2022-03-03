@@ -1,12 +1,13 @@
 ---
 title: Use categories to group work item types 
-titleSuffix: TFS
+titleSuffix: Azure DevOps
 description: Generate flexible reports, and support increased integration across projects using categories 
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops' 
 ms.date: 04/04/2017
 ---

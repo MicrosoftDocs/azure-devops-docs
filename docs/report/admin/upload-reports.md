@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Learn how to manually upload SQL Server reports to a team project hosted on Azure DevOps Server.
 ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117  
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021
@@ -125,9 +125,11 @@ You use the **tfpt** command-line tool that TFS Power Tools provides.
 
 	Depending upon the amount of data that has been collected for your team project, it can take several minutes to several hours for the data warehouse and cube to build. Once they do, however, you can view progress for your team project since TFS was first deployed. 
 
-## Next step
+## Next step 
+> [!div class="nextstepaction"]
+> [Grant permissions to view or create reports](grant-permissions-to-reports.md)
 
-[Grant permissions to view or create reports](grant-permissions-to-reports.md).
+ 
 
 ## Related notes
 

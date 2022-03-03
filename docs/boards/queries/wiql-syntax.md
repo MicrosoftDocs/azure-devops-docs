@@ -1,11 +1,10 @@
 ---
-title: Work Item Query Language (WIQL) reference syntax overview 
+title: Work Item Query Language (WIQL) reference syntax   
 titleSuffix: Azure Boards   
-description: Learn about the reference syntax for the Work Item Query Language. This language supports queries in Azure Boards and Azure DevOps. 
+description: Learn about the reference syntax for the Work Item Query Language used by Azure Boards. 
 ms.custom: boards-queries  
 ms.technology: devops-agile  
-ms.prod: devops  
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.author: kaelli  
 author: KathrynEE  
@@ -403,7 +402,7 @@ You can use the `@StartOf...` macros with any <strong>DateTime</strong> field. T
 
 These macros accept a modifier string that has a format of `(+/-)nn(y|M|w|d|h|m)`. Similar to the `@Today` macro, you can specify plus or minus integer offsets. If the time unit qualifier is omitted, it defaults to the natural period of the function. For example, `@StartOfWeek("+1")` is the same as `@StartOfWeek("+1w")`. If the plus/minus (+/-) sign is omitted, plus is assumed.
 
-This syntax allows you to nest modifiers and offset your query twice. For example, the following clause filters work items that have been closed last year and three months into the start of the current year.  
+This syntax allows you to nest modifiers and offset your query twice. For example, the clause `Closed Date >= @StartOfYear - 1`, filters work items that have been closed since last year. By modifying it to `Closed Date >= @StartOfYear('+3M') - 1`, it excludes work items closed within the first three months of the last year. The WIQL syntax is as shown in the following example. 
 
 ```WIQL
 [Microsoft.VSTS.Common.ClosedDate] >=@StartOfYear('+3M') - 1
