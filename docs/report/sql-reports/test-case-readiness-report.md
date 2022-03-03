@@ -3,7 +3,7 @@ title: Test Case Readiness report
 titleSuffix: Azure DevOps Server
 description: Learn to determine how many test cases have been defined and are ready to run.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
 ms.author: kaelli
 author: KathrynEE

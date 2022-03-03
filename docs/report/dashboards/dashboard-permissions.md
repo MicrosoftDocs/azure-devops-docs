@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to set permissions to create, edit, or delete dashboards in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'

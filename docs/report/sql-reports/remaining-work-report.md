@@ -3,7 +3,7 @@ title: Remaining Work Report
 titleSuffix: Azure DevOps Server
 description: Learn how to build a report that tracks the team's progress and identify any problems in the flow of work.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 61990591-ac5a-4cec-80f6-6627a723a910
 ms.author: kaelli
 author: KathrynEE

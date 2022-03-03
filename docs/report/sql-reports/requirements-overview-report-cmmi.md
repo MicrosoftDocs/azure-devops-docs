@@ -3,7 +3,7 @@ title: Requirements Overview report (CMMI)
 titleSuffix: Azure DevOps Server
 description: Learn how to build a report that lists all requirements filtered by area and iteration and in order of importance.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
 ms.author: kaelli
 author: KathrynEE
@@ -170,4 +170,4 @@ You can filter the Requirements Overview report to show only those requirements 
   
 ## Related articles 
 
-[Reporting Services Reports](reporting-services-reports.md)
+- [Reporting Services Reports](reporting-services-reports.md)

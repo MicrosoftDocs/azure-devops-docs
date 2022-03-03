@@ -3,7 +3,7 @@ title: Burndown and Burn Rate Report
 titleSuffix: Azure DevOps Server
 description: Learn how to determine the rate of team progress by reviewing the Burndown and Burn Rate report.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 68941ffa-eb19-4d52-9418-7de1b6aca335
 ms.author: kaelli
 ms.date: 10/19/2021

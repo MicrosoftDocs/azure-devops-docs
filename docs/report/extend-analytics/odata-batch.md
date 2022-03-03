@@ -6,6 +6,7 @@ ms.technology: devops-analytics
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---

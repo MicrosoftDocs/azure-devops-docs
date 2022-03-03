@@ -3,7 +3,7 @@ title: Create and manage Reporting Services reports
 titleSuffix: Azure DevOps Server
 description: Learn how to use SQL Server Reporting Services to analyze the progress and quality of your project.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
 ms.author: kaelli
 author: KathrynEE

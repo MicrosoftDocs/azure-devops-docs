@@ -3,7 +3,7 @@ title: Build Summary report
 titleSuffix: Azure DevOps Server
 description: Learn how to build a report that provides information about test results, test coverage, code churn, and quality notes for each build. 
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelli
 author: KathrynEE
