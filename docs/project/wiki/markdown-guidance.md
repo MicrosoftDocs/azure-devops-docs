@@ -7,7 +7,7 @@ ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 09/13/2021
 ---
