@@ -7,7 +7,7 @@ ms.custom: process
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 11/17/2021
 ---
