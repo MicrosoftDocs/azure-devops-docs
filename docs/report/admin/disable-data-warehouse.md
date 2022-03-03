@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Learn how to disable the data warehouse and cube for Azure DevOps Server.
 ms.assetid:   
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Ensure basic operations are performed by team members to generate useful SQL Server reports when working in Azure DevOps Server.    
 ms.assetid: 46456FBF-EECC-4096-9A98-3A9457F97EB2  
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021
@@ -16,7 +16,7 @@ ms.date: 09/23/2021
 
 
 > [!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
+> **Feature availability**: You can only add a report server to an on-premises Azure DevOps Server.  If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
 
 Here's the fourth task in the four-task sequence to add reports to your team project. To generate useful reports, team members must carry out certain tasks. This article summarizes those tasks.     
 

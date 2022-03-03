@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Learn how to grant permissions to view or create SQL Server reports configured to support Azure DevOps Server.
 ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333  
 ms.technology: devops-analytics
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021
@@ -86,10 +86,10 @@ If members need to create or customize reports, add their accounts to the **TfsW
 > Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.  
 
 
-## Next step
+## Next step 
+> [!div class="nextstepaction"]
+> [Review team activities to support useful reports](review-team-activities-for-useful-reports.md)
  
-- [Review team activities to support useful reports](review-team-activities-for-useful-reports.md).
-
 
 ## Related notes
  

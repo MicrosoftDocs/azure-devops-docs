@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Server
 description: Learn how to rebuild the data warehouse and cube after carrying out maintenance operations on Azure DevOps Server.
 ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D  
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/23/2021

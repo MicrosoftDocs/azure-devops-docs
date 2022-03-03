@@ -3,7 +3,7 @@ title: Reactivations Report
 titleSuffix: Azure DevOps Server
 description: Learn how to build a report that determines how effectively the team is fixing bugs.
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: de38d7e8-4bd4-4b43-be4f-a116ea424bee
 ms.author: kaelli
 author: KathrynEE

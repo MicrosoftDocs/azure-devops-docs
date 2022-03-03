@@ -5,7 +5,7 @@ description: Learn how to add a field showing the last refresh date to an existi
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 10/01/2021
 ---

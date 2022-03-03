@@ -76,3 +76,6 @@
     - name: Track bugs
       href: cmmi/track-bugs.md
       displayName: bugs, triage, unit tests
+- name: Changes made to process templates
+  displayName: Agile, CMMI, Scrum, Basic, rules, work item types 
+  href: changes-to-process-templates.md

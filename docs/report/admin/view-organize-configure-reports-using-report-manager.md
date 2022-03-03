@@ -3,7 +3,7 @@ title: Manage reports with Report Manager
 titleSuffix: Azure DevOps Server
 description: Use the SQL Server Reporting Services' Report Manager to view, organize, and configure reports.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f382806c-9509-45bf-b175-51a2c853621a
 ms.author: kaelli
 author: KathrynEE

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn about the different integration options you can use to connect to Power BI to access Analytics for Azure DevOps.
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>=azure-devops-2019'
