@@ -78,7 +78,7 @@ Now that you took inventory of your existing package sources, it's time to set u
 
 #### Create your feeds
 
-For each SMB share, follow the instructions to [Create a feed](../concepts/feeds.md#create-a-feed). In the **Create new feed** dialog:
+For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-a-feed):
 
 - Use the name of the SMB share folder as the **Feed name**.
 - Choose your feed **Visibility**, **Upstream sources**, and **Scope**.
