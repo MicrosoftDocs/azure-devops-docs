@@ -22,7 +22,7 @@ To run your pipeline in a container, see [Container jobs](../process/container-p
 
 For details about building GitHub repositories, see [Build GitHub repositories](../repos/github.md).
 
-To lean how to publish your Pipeline Artifacts, see [Publish Pipeline Artifacts](../publish-pipeline-artifact.md).
+To learn how to publish your Pipeline Artifacts, see [Publish Pipeline Artifacts](../publish-pipeline-artifact.md).
 
 To find out what else you can do in YAML pipelines, see [YAML schema reference](/azure/devops/pipelines/yaml-schema).
 
