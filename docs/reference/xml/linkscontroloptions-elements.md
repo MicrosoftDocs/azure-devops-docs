@@ -17,7 +17,7 @@ ms.date: 02/02/2017
 [!INCLUDE [version-lteq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!IMPORTANT]  
-> This article applies to customization for the On-premises XML process model for old web form. For the new web form and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
+> This article applies to customization for the On-premises XML process model for the old web form. For the new web form and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add a links control to a work item form, you can specify filters that restrict the types of links that users can be view and create and the types of work items to which users can create links. Specifically, you use the following elements as indicated:  
   

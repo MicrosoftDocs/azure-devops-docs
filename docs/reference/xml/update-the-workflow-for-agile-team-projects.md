@@ -61,20 +61,22 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 >  For the following procedures to work, the **Active** state must be specified in the workflow defined for the User Story and Task types of work items.  
   
 #### To update the workflow states and transitions for User Story  
-  
-[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)]
-  
+
+1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md#run-witadmin-tool). For example:  
+	```
+	%programfiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+	```
 1. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a project collection, *ProjectName* specifies the name of a project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
   
     ```  
     witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"User Story" /f:"DirectoryPath\FileName.xml"  
     ```  
   
-     Use this format for the URL:  **http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>, for example: `http://srvalm:8080/tfs/DefaultCollection`.  
+     Use this format for the URL: **http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>, for example: `http://srvalm:8080/tfs/DefaultCollection`.  
   
 1. In a text editor or in Visual Studio, open the file you exported.  
   
-2. Add this code snippet between the lines `<STATES>` and `<STATE value="Active">`:  
+1. Add this code snippet between the lines `<STATES>` and `<STATE value="Active">`:  
   
    > [!div class="tabbedCodeSnippets"]
    > ```XML 
@@ -103,7 +105,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
    > <STATE value="Removed" />  
    > ```  
 
-3. Replace the section that begins with `<TRANSITION from=" " to="Active">` and ends with `<TRANSITION>` with this code snippet:  
+1. Replace the section that begins with `<TRANSITION from=" " to="Active">` and ends with `<TRANSITION>` with this code snippet:  
   
    > [!div class="tabbedCodeSnippets"]
    > ```XML 
@@ -152,9 +154,9 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
    > </TRANSITION>  
    > ```  
   
-4. Save and close the file.  
+1. Save and close the file.  
   
-5. Import the file, substituting your data for the arguments that are shown.  
+1. Import the file, substituting your data for the arguments that are shown.  
   
    ```  
    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  

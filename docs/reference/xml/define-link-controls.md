@@ -17,7 +17,7 @@ ms.date: 02/14/2017
 [!INCLUDE [version-lteq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!IMPORTANT]  
->This article applies to customization for the On-premises XML process model and the old webform. For the new web form, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
+>This article applies to customization for the On-premises XML process model and the old web form. For the new web form, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
