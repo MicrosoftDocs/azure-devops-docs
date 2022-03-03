@@ -15,6 +15,8 @@ monikerRange: '> tfs-2017'
 
 Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 
+YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](../../get-started/key-pipelines-concepts.md).
+
 With Azure Pipelines, you can implement a CI/CD workflow to automatically generate build artifacts and trigger deployment to specific environments. 
 
 ## Prerequisites
