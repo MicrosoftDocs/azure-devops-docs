@@ -2,7 +2,7 @@
 title: Configure branch policies for Azure DevOps CLI 
 titleSuffix: Azure DevOps 
 description: Configure branch policies using Azure DevOps CLI  
-ms.topic: reference 
+ms.topic: how-to
 ms.prod: devops 
 ms.technology: devops-reference
 ms.manager: mijacobs 
