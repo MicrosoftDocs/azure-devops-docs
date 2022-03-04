@@ -19,7 +19,7 @@ Canary deployment strategy involves deploying new versions of an application nex
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
 * An [Azure Container Registry (ACR)](/azure/container-registry/container-registry-intro), Google Container Registry, Docker Hub registry with push privileges. [Create an Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
-* A Kubernetes cluster (Azure Kubernetes Service (AKS), Google Kubernetes Engine, Amazon Elastic Kubernetes Service). [Deploy an Azure Kubernetes Service (AKS) cluster](azure/aks/tutorial-kubernetes-deploy-cluster).
+* A Kubernetes cluster (Azure Kubernetes Service (AKS), Google Kubernetes Engine, Amazon Elastic Kubernetes Service). [Deploy an Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 ## Sample code
 
