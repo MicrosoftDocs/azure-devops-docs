@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 Azure Pipelines can be used to deploy to Kubernetes clusters offered by multiple cloud providers. This document contains the concepts associated with setting up deployments for any Kubernetes cluster.
 
-While it's possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the [KubernetesManifest task]((../../tasks/deploy/kubernetes-manifest.md)) and [Kubernetes service connection](../../library/service-endpoints.md) are the recommended approach. 
+While it's possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the [KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) and [Kubernetes service connection](../../library/service-endpoints.md) are the recommended approach. 
 
 ## KubernetesManifest task
 
