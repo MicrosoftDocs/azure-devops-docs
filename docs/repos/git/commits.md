@@ -40,15 +40,15 @@ As you work in your repo, Git tracks changes to all _tracked_ files. Tracked fil
 
 When you create a commit, only staged files and unmodified files are used for the snapshot. Unstaged changes to the modified files are kept, but the snapshot contains the unmodified version of those files. Git doesn't track changes to new files or include new files in the snapshot until you stage them.
 
-Commits are created in your local Git repo. Each commit doesn't have to be perfect, and you might need to make several commits to accomplish an intended change. Create commits as you work, and when you're done you can [push](pushing.md) your commits to a remote repo to share your work with others.
+Commits are created in your local Git repo. Each commit doesn't have to be perfect, and it might take several commits to accomplish an intended change. Create commits as you work, and when you're done you can [push](pushing.md) your commits to a remote repo to share your work with others.
 
 
 ## What's in a commit
 
 Each [commit](https://docs.github.com/en/rest/reference/git#commits) includes the following information:
 
-- A snapshot of all tracked files in your repo at the time of the commit. A snapshot isn't the difference between commits, although Git uses snapshots to compute the difference between commits. Snapshots enable fast switching between [branches](./create-branch.md) and support [merging](merging.md) branches.
-- A reference to the parent commit(s). Most commits have one parent, but the commit after a branch merge has multiple parents and the first commit in a repo has none.
+- A snapshot of all tracked files in your repo at the time of the commit. A snapshot isn't the difference between commits, although Git uses snapshots to compute the difference. Snapshots enable fast switching between [branches](./create-branch.md) and support [merging](merging.md) branches.
+- A reference to the parent commit(s). Most commits have one parent, but the next commit after a branch merge has multiple parents and the first commit in a repo has none.
 - A message describing the changes in the commit. You enter the message when you create the commit.
 
 Git uses the snapshot and parent reference(s) of each commit to maintain a complete record of development in the repo. To investigate changes in your code, you can review the [Git history](history.md) of your repo.
@@ -66,7 +66,7 @@ To create a snapshot for a commit:
 To exclude temp files, log files, or other files from your snapshot, you can configure Git to [ignore specific files](ignore-files.md).
   
 > [!NOTE]
-> Git supports interactive staging of edited files so you can choose to stage specific changes within a file. This is useful when you want to save different file edits to different commits.
+> Git supports interactive staging of edited files so you can choose to stage specific changes within a file. This is a useful feature when you want different file edits in different commits.
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
@@ -238,7 +238,7 @@ These options are available in the drop-down on the **Commit** button.
 
 #### [Git Command Line](#tab/git-command-line)
 
-You can create a commit using the `git commit` command with the `-m` flag to specify a commit message. If you don't provide a commit message, Git will open up an editor so you can enter one.
+You can create a commit using the `git commit` command with the `-m` flag to specify a commit message. If you don't provide a commit message, Git will open up an editor so you can provide one.
 
 ```
 git commit -m "<commit message>"
