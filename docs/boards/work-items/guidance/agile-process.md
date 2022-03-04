@@ -208,7 +208,7 @@ The project administrator for each project [defines area and iteration paths](..
    :::column span="3":::
    Lists all active bugs that aren't assigned to a team member.
 
-   The [Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) this query. 
+   The [Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) this query. 
 
    :::column-end:::
 :::row-end:::
@@ -240,7 +240,7 @@ The project administrator for each project [defines area and iteration paths](..
    :::column span="3":::
    Lists all issues under the specified iteration path that aren't closed and any tasks that are linked to the issues and then sorts the issues by rank and priority.
 
-   The [Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) references this query. 
+   The [Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) references this query. 
 
    :::column-end:::
 :::row-end:::

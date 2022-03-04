@@ -219,7 +219,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Removed the **Backlog Priority** field from the work item form for the Product Backlog type definition. This field is used in the background to track the relative priority of items displayed on the backlog pages.  
       - The *Removed* state was added to the workflow state for the Bug, Product Backlog Item, and Task type definitions, which supports removing cut items from the backlog.
       - Added the **Storyboards** tab to the Product Backlog Item type definition.  
-      - Added the [Backlog Overview report](../../../report/sql-reports/backlog-overview-scrum.md) to the set of SQL Server Reporting Services reports, similar to the Agile[Stories Overview report](../../../index.yml?viewFallbackFrom=vsts). 
+      - Added the [Backlog Overview report](../../../report/sql-reports/backlog-overview-scrum.md) to the set of SQL Server Reporting Services reports, similar to the Agile[Stories Overview report](../../../index.yml). 
 
       #### The following changes were made to the Agile process:  
       - The *New* state was added as the initial state for User Stories and Tasks. This change was introduced to support transitioning User Stories and Tasks from a *New* state to an *Active* state. Without the *New* state, User Stories assigned to an iteration remain on the product backlog until they are resolved, which is not a desired or expected behavior. To learn more, see [Update the Workflow for Agile Team Projects](/previous-versions/visualstudio/visual-studio-2012/hh500412(v=vs.110).

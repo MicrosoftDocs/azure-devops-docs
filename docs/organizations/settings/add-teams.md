@@ -684,7 +684,7 @@ For more information on setting permissions and access for select users, see [Se
 
 ::: moniker range="< azure-devops" 
 
-If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
+If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 
 ::: moniker-end 
 
@@ -693,7 +693,7 @@ If your deployment is integrated with SQL Server Reports, you need to [Grant per
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites. 
 
 -  [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) 
--  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
+-  [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 
 ::: moniker-end 
 

@@ -531,11 +531,11 @@ You can use Power BI to create more complex reports than what you can get from a
 
 The following reports are supported for Agile and CMMI processes.  
 
-- [Bug Status](../../report/sql-reports/bug-status-report.md)  
-- [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
-- [Reactivations](../../report/sql-reports/reactivations-report.md)  
+- [Bug Status](/previous-versions/azure/devops/report/sql-reports/bug-status-report)  
+- [Bug Trends](/previous-versions/azure/devops/report/sql-reports/bug-trends-report)  
+- [Reactivations](/previous-versions/azure/devops/report/sql-reports/reactivations-report)  
 
-These reports require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
+These reports require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
 ::: moniker-end  
 
