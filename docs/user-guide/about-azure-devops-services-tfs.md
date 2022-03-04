@@ -220,6 +220,6 @@ You can still use `visualstudio.com` to access Azure DevOps Services. We've move
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing for Azure DevOps Services](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)
-- [Pricing for Azure DevOps Server](https://azure.microsoft.com/en-us/pricing/details/devops/server/)
+- [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/)
  
