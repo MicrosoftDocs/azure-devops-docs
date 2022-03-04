@@ -150,7 +150,7 @@ Here's some more guidance:
 - Use an input list, tree list: To complete top down planning and publish parent-child linked work items  
 - Use a query list, flat list: To create an Excel report based on the query of work items  
 	> [!NOTE]
-	> To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](../../../report/admin/create-status-and-trend-excel-reports.md).
+	> To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - Use a query list, tree list: To view and modify the hierarchy and parent-child link relationships of many existing work items. 
 
  
@@ -657,7 +657,7 @@ You can create a report using the **New Report** feature based on a flat list of
 > [!div class="mx-imgBorder"]  
 > ![Create a report using the New Report feature.](media/excel/team-ribbon-new-report.png)
 
-To learn more, see [Create Excel reports from a work item query](../../../report/admin/create-status-and-trend-excel-reports.md). 
+To learn more, see [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports). 
 
 
 ## Resolve publishing errors  
@@ -694,7 +694,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
-- [Create Excel reports from a work item query](../../../report/admin/create-status-and-trend-excel-reports.md)
+- [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  

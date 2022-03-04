@@ -128,7 +128,6 @@ All of the following actions can be completed by team members that belong to the
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-
 :::row:::
    :::column span="1":::
    **Area**
@@ -142,8 +141,6 @@ All of the following actions can be completed by team members that belong to the
    Multi-select work items  
    :::column-end:::
    :::column span="1":::
-   
-   
    - [Multi-select-query results](#multi-select)
    - [Multi-select-backlog](#multi-select)
    
