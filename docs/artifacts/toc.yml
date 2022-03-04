@@ -102,6 +102,9 @@
     - name: Use packages from Maven Central
       href: maven/upstream-sources.md
       displayName: maven packages, maven artifacts, maven central
+    - name: Use packages from Google Maven Repository
+      href: maven/google-maven.md
+      displayName: google maven, maven packages
   - name: Python
     items:
     - name: Python quickstart 
