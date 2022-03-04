@@ -79,11 +79,11 @@
      - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
      - [Analytics](../../report/powerbi/analytics-security.md)  
      - [Analytics views](../../report/powerbi/analytics-security.md) 
-     - [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+     - [SQL Server Reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) 
   ::: moniker-end
   ::: moniker range="<= tfs-2018"
      - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
-     - [SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+     - [SQL Server Reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) 
   ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -432,7 +432,7 @@
    This group should be restricted to the smallest possible number of users who need total administrative control over the collection. For Azure DevOps, assign to administrators who customize work tracking. 
    ::: moniker range="< azure-devops"
    > [!NOTE]
-   > If your deployment uses Reporting Services, consider adding the members of this group to the [Team Foundation Content Managers groups in Reporting Services](../../report/admin/grant-permissions-to-reports.md).
+   > If your deployment uses Reporting Services, consider adding the members of this group to the [Team Foundation Content Managers groups in Reporting Services](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
    ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -741,10 +741,10 @@
    :::column-end:::
    :::column span="2":::
    Can process or change settings for the data warehouse or SQL Server Analysis cube
-   by using the [Warehouse Control Web Service](../../report/admin/manage-reports-data-warehouse-cube.md).  
+   by using the [Warehouse Control Web Service](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube).  
 
    Additional permissions may be required to fully process
-   or [rebuild the data warehouse and Analysis cube](../../report/admin/rebuild-data-warehouse-and-cube.md).
+   or [rebuild the data warehouse and Analysis cube](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube).
    :::column-end:::
 :::row-end:::
 :::row:::

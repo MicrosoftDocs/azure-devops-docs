@@ -667,7 +667,7 @@ The following table describes those security namespaces and permissions defined 
       `Administer`                  
    :::column-end:::
    :::column span="2":::
-      Grants permission to process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](../../report/admin/manage-reports-data-warehouse-cube.md).   
+      Grants permission to process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube).   
       <br/>
       **ID:** `b8fbab8b-69c8-4cd9-98b5-873656788efb`
    :::column-end:::

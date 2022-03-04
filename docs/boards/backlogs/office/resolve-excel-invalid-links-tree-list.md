@@ -79,7 +79,7 @@ If the first work item in the list has no value in the **Title 1** column, the e
   
     2.  If the first work item should be lower in the list, move the correct work item to the top of the list.  
   
-         For more information about how to move work items, see [Bulk add work items with Excel](./bulk-add-modify-work-items-excel.md?viewFallbackFrom=vsts).  
+         For more information about how to move work items, see [Bulk add work items with Excel](./bulk-add-modify-work-items-excel.md).  
   
 3.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
   

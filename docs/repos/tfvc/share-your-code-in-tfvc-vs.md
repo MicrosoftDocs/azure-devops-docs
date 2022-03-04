@@ -163,8 +163,8 @@ Yes. See [Migrate from Team Foundation Server into Azure DevOps Services](../../
 
 You might already have a workspace on your computer. To see your workspace, open Source 
 Control Explorer. Or change your workspace. Find out how to [manage files under 
-source control](./use-source-control-explorer-manage-files-under-version-control.md?viewFallbackFrom=vsts) or 
-[manage workspaces](./create-work-workspaces.md?viewFallbackFrom=vsts).
+source control](./use-source-control-explorer-manage-files-under-version-control.md) or 
+[manage workspaces](./create-work-workspaces.md).
 
 ![In Team Explorer, click Source Control Explorer or Manage Workspaces](media/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
 

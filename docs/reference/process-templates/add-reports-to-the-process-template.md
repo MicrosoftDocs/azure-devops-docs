@@ -1,7 +1,7 @@
 ---
 title: Add reports via a process template 
-titleSuffix: TFS
-description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Team Foundation Server 
+titleSuffix: Azure DevOps Server
+description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Azure DevOps Server 
 ms.technology: devops-agile
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
 ms.author: kaelli
@@ -22,13 +22,13 @@ When you create a project, the Reporting plug-in creates a Report site and speci
 > [!IMPORTANT]  
 > When you create a project from the web portal, the ReportsTasks.xml  
 > plug-in file is ignored. To add reports after you create your project, 
-> see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
+> see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 > Clients that support project creation vary depending on the TFS version. 
 > For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
 
-You specify two main tasks by using the Reporting plug-in. First, you create the reporting site by using the **site** element. Second, you specify the folder structure and the reports to be uploaded to the site by using the **folder** and **report** elements. The reports that you upload have an .rdl extension and are designed for use with Reporting Services. For an overview of the reports that the TFS process templates provide, see [Reporting Services Reports](../../report/sql-reports/reporting-services-reports.md).  
+You specify two main tasks by using the Reporting plug-in. First, you create the reporting site by using the **site** element. Second, you specify the folder structure and the reports to be uploaded to the site by using the **folder** and **report** elements. The reports that you upload have an .rdl extension and are designed for use with Reporting Services. For an overview of the reports that the TFS process templates provide, see [Reporting Services Reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports).  
 
-After a project is created from the process template, you can add, remove, rename, and change the folder structure for reports. For more information, see [View, upload, and organize reports](../../report/admin/view-upload-organize-reporting-services-reports.md).  
+After a project is created from the process template, you can add, remove, rename, and change the folder structure for reports. For more information, see [View, upload, and organize reports](/previous-versions/azure/devops/report/admin/view-upload-organize-reporting-services-reports).  
 
 <a name="name"></a> 
 ##  Reporting plug-in name and location  
@@ -284,7 +284,7 @@ The following table describes the elements that you use to specify a report to u
    ```   
    Where each attribute has the following definition:
 
-   - **name**: The name of a property that you want to specify. For more information, see [View, organize, and configure reports using Report Manager](../../report/admin/view-upload-organize-reporting-services-reports.md).  
+   - **name**: The name of a property that you want to specify. For more information, see [View, organize, and configure reports using Report Manager](/previous-versions/azure/devops/report/admin/view-upload-organize-reporting-services-reports).  
    - **value**: The value to assign to the property..
    :::column-end:::
 :::row-end:::
@@ -303,7 +303,7 @@ The following table describes the elements that you use to specify a report to u
    - **name**: The name of the TFS data source. For Team Foundation Server 2010 and later versions, this value is Tfs2010OlapReportDS for the Analysis Services cube or Tfs2010ReportsDS for the relational data warehouse.  
    - **dsname**: The name of the database resource. Specify TfsOlapReportDS for the Analysis Services cube, and TfsReportsDS for the relational data warehouse.  
    
-   For more information about the names of reporting data sources, see [Locate reports after the upgrade to TFS 2010](../../report/admin/locate-reports-after-upgrade.md).  
+   For more information about the names of reporting data sources, see [Locate reports after the upgrade to TFS 2010](/previous-versions/azure/devops/report/admin/locate-reports-after-upgrade).  
    :::column-end:::
 :::row-end:::
 
