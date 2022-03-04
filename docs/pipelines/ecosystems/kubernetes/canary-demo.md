@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/06/2020
+ms.date: 03/04/2022
 ms.custom: fasttrack-edit
 monikerRange: 'azure-devops'
 ---
@@ -16,49 +16,55 @@ monikerRange: 'azure-devops'
 Canary deployment strategy involves deploying new versions of an application next to stable production versions to see how the canary version compares against the baseline before promoting or rejecting the deployment. This step-by-step guide covers usage of [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy support for setting up canary deployments for Kubernetes and the associated workflow in terms of instrumenting code and using the same for comparing baseline and canary before taking a manual judgment on promotion/rejection of the canary.
 
 ## Prerequisites
-- A repository in Azure Container Registry or Docker Hub (Azure Container Registry, Google Container Registry, Docker Hub) with push privileges.
-- Any Kubernetes cluster (Azure Kubernetes Service, Google Kubernetes Engine, Amazon Elastic Kubernetes Service).
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+* An [Azure Container Registry (ACR)](/azure/container-registry/container-registry-intro), Google Container Registry, Docker Hub registry with push privileges. [Create an Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
+* A Kubernetes cluster (Azure Kubernetes Service (AKS), Google Kubernetes Engine, Amazon Elastic Kubernetes Service). [Deploy an Azure Kubernetes Service (AKS) cluster](azure/aks/tutorial-kubernetes-deploy-cluster).
 
 ## Sample code
 
-Fork the following repository on GitHub - 
+Fork the following repository on GitHub.
 ```
 https://github.com/MicrosoftDocs/azure-pipelines-canary-k8s
 ```
 
-Here's a brief overview of the files in the repository that are used during the course of this guide - 
-- ./app:
-    - app.py - Simple Flask based web server instrumented using [Prometheus instrumentation library for Python applications](https://github.com/prometheus/client_python). A custom counter is set up for the number of 'good' and 'bad' responses given out based on the value of `success_rate` variable.
+Here's a brief overview of the files in the repository that are used during this guide - 
+- `./app`:
+    - `app.py` - Simple Flask based web server instrumented using [Prometheus instrumentation library for Python applications](https://github.com/prometheus/client_python). A custom counter is set up for the number of 'good' and 'bad' responses given out based on the value of `success_rate` variable.
     - Dockerfile - Used for building the image with each change made to app.py. With each change made to app.py, build pipeline (CI) is triggered and the image gets built and pushed to the container registry.
-- ./manifests:
-    - deployment.yml - Contains specification of the `sampleapp` Deployment workload corresponding to the image published earlier. This manifest file is used not just for the stable version of Deployment object, but for deriving the -baseline and -canary variants of the workloads as well.
-    - service.yml - Creates `sampleapp` service for routing requests to the pods spun up by the Deployments (stable, baseline, and canary) mentioned above.
-- ./misc
-    - service-monitor.yml - Used for setup of a [ServiceMonitor](https://github.com/coreos/prometheus-operator#customresourcedefinitions) object to set up Prometheus metric scraping.
-    - fortio-deploy.yml - Used for setup of fortio deployment that is subsequently used as a load-testing tool to send a stream of requests to the `sampleapp` service deployed earlier. With `sampleapp` service's selector being applicable for all the three pods resulting from the Deployment objects that get created during the course of this how-to guide - `sampleapp`, `sampleapp-baseline` and `sampleapp-canary`, the stream of requests sent to `sampleapp` get routed to pods under all these three deployments.
+- `./manifests`:
+    - `deployment.yml` - Contains specification of the `sampleapp` Deployment workload corresponding to the image published earlier. This manifest file is used not just for the stable version of Deployment object, but for deriving the -baseline and -canary variants of the workloads as well.
+    - `service.yml` - Creates `sampleapp` service for routing requests to the pods spun up by the Deployments (stable, baseline, and canary) mentioned above.
+- `./misc`
+    - `service-monitor.yml` - Used for setup of a [ServiceMonitor](https://github.com/coreos/prometheus-operator#customresourcedefinitions) object to set up Prometheus metric scraping.
+    - `fortio-deploy.yml` - Used for setup of fortio deployment that is later used as a load-testing tool to send a stream of requests to the `sampleapp` service deployed earlier. With `sampleapp` service's selector being applicable for all the three pods resulting from the Deployment objects that get created during this how-to guide - `sampleapp`, `sampleapp-baseline` and `sampleapp-canary`, the stream of requests sent to `sampleapp` get routed to pods under all these three deployments.
 
 > [!NOTE]
 > While [Prometheus](https://prometheus.io/) is used for code instrumentation and monitoring in this how-to guide, any equivalent solution like [Azure Application Insights](/azure/azure-monitor/learn/nodejs-quick-start) can be used as an alternative as well.
 
 ## Install prometheus-operator
-Use the following command from your development machine (with kubectl and Helm installed and context set to the cluster you want to deploy against) to install Prometheus on your cluster. [Grafana](https://grafana.com), which is used later in this how-to guide for visualizing the baseline and canary metrics on dashboards, is installed as part of this Helm chart  - 
+
+Use the following command from your development machine (with kubectl and Helm installed and context set to the cluster you want to deploy against) to install Prometheus on your cluster. [Grafana](https://grafana.com), which is used later in this how-to guide for visualizing the baseline and canary metrics on dashboards, is installed as part of this Helm chart.
 ```
 helm install --name sampleapp stable/prometheus-operator
 ```
 
 
 ## Create service connections
-- Navigate to **Project settings** -> **Pipelines** -> **Service connections**.
-- Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
-- Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
+
+1. Go to **Project settings** > **Pipelines** > **Service connections**.
+2. Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
+3. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
 
 ## Setup continuous integration
-1. Navigate to **Pipelines** -> **New pipeline** and select your repository.
+
+1. Go to **Pipelines** > **Create Pipeline** and select your repository.
 1. Upon reaching **Configure** tab, choose **Starter pipeline**
-1. In **Review** tab, replace the contents of the pipeline YAML with the following snippet - 
+1. In **Review** tab, replace the pipeline YAML with this code.
+
     ```YAML
     trigger:
-    - master
+    - main
     
     pool:
       vmImage: ubuntu-latest
@@ -70,7 +76,7 @@ helm install --name sampleapp stable/prometheus-operator
     - task: Docker@2
       displayName: Build and push image
       inputs:
-        containerRegistry: dockerRegistryServiceConnectionName #replace with name of your Docker registry service connection
+        containerRegistry: azure-pipelines-canary-k8s #replace with name of your Docker registry service connection
         repository: $(imageName)
         command: buildAndPush
         Dockerfile: app/Dockerfile
@@ -87,22 +93,22 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 ### Deploy canary stage
 #### [YAML](#tab/yaml/)
 
-1. Navigate to **Pipelines** -> **Environments** -> **New environment**
-1. Configure the new environment as follows -
+1. Navigate to **Pipelines** > **Environments** > **Create environment**
+1. Create a new environment.
     - **Name**: akscanary
     - **Resource**: choose Kubernetes
-1. Click on **Next** and now configure your Kubernetes resource as follows - 
+1. Select on **Next** and now configure your Kubernetes resource as follows - 
     - **Provider**: Azure Kubernetes Service
     - **Azure subscription**: Choose the subscription that holds your kubernetes cluster
     - **Cluster**: Choose your cluster
     - **Namespace**: Create a new namespace with the name **canarydemo**
 1. Click on **Validate and Create**
-1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
-1. Change the step you created previously to now use a Stage. And add two additional steps to copy the manifests and mics directories as artifacts for use by consecutive stages. You might also want to move a couple of values to variables for easier usage later in your pipeline. Your complete YAML should now look like this: 
+1. Go to **Pipelines**. Select the pipeline you created and **Edit**. 
+1. Change the step you created previously to now use a Stage. And add two more steps to copy the manifests and misc directories as artifacts for use by consecutive stages. You might also want to move a couple of values to variables for easier usage later in your pipeline. Your complete YAML should now look like this.
 
     ```YAML
     trigger:
-    - master
+    - main
     
     pool:
       vmImage: ubuntu-latest
@@ -133,14 +139,14 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
             tags: |
               $(tag)
 
-        - upload: manifests
+        - publish: manifests
           artifact: manifests
     
-        - upload: misc
+        - publish: misc
           artifact: misc
     ```
 
- 1. Add an additional stage at the bottom of your YAML file to deploy the canary version.
+ 1. Add an more stage at the end of your YAML file to deploy the canary version.
 
     ```YAML
     - stage: DeployCanary
@@ -188,18 +194,18 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 
 
 #### [Classic](#tab/classic/)
-1. Navigate to **Pipelines** -> **Releases** -> **New** -> **New release pipeline**. Name it **CanaryK8sDemo**
+1. Navigate to **Pipelines** > **Releases** > **New** > **New release pipeline**. Name it **CanaryK8sDemo**
 1. In the subsequent model for selecting a template for Stage 1, choose **Empty job**. Name the stage as **Deploy canary**.
-1. Select **Add an artifact**, choose **GitHub**, and configure the following - 
+1. Select **Add an artifact**, choose **GitHub**.
     - Choose an existing Git service connection or create a new one through which the forked repository can be accessed, and then choose the same in **Source (repository)** dropdown.
     - **Default branch**: master
     - **Default version**: Latest from the default branch
     - **Source alias**: azure-pipelines-canary-k8s
     - Confirm your inputs by choosing **Add**.
-1. Select **Add an artifact**, choose **Azure container registry** or **Docker Hub** depending on the container registry you had chosen under Prerequisites. Provide appropriate values for the input dropdowns to locate your container registry, provide `image` as the alias for this artifact, and confirm the inputs by choosing **Add**. Once the artifact has been added, click on the lightning bolt icon on the artifact card to enable continuous deployment trigger.
-1. In **Deploy Canary** stage that you created, click on **1 job, 0 task** link to be navigated to the window for adding jobs and stages
-1. Click on **Agent job**. In the configuration window, in the **Agent pool** dropdown window, choose **Hosted Ubuntu 1604**
-1. Click on the '+' on the agent job row to add a new task. Add **Deploy Kubernetes manifests** task with the following configuration -
+1. Select **Add an artifact**, choose **Azure container registry** or **Docker Hub** depending on the container registry you had chosen under Prerequisites. Provide appropriate values for the input dropdowns to locate your container registry, provide `image` as the alias for this artifact, and confirm the inputs by choosing **Add**. Once the artifact has been added, select on the lightning bolt icon on the artifact card to enable continuous deployment trigger.
+1. In **Deploy Canary** stage that you created, select on **1 job, 0 task** link to be navigated to the window for adding jobs and stages
+1. Select  **Agent job**. In the configuration window, in the **Agent pool** dropdown window, choose **Hosted Ubuntu 1604**
+1. Select the '+' on the agent job row to add a new task. Add **Deploy Kubernetes manifests** task with the following configuration.
     - **Display name**: Create secret
     - **Action**: create secret
     - **Kubernetes service connection**: azure-pipelines-canary-k8s
@@ -226,27 +232,29 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Manifests**: azure-pipelines-canary-k8s/misc/*
 
 * * *
+
 ### Manual intervention for promoting or rejecting canary
+
 #### [YAML](#tab/yaml/)
 
-1. Navigate to **Pipelines** -> **Environments** -> **New environment**
-1. Configure the new environment as follows -
+1. Navigate to **Pipelines** > **Environments** > **New environment**
+1. Configure the new environment.
     - **Name**: akspromote
     - **Resource**: choose Kubernetes
-1. Click on **Next** and now configure your Kubernetes resource as follows - 
+1. Select **Next** and now configure your Kubernetes resource as follows - 
     - **Provider**: Azure Kubernetes Service
     - **Azure subscription**: Choose the subscription that holds your kubernetes cluster
     - **Cluster**: Choose your cluster
     - **Namespace**: Choose the namespace canarydemo namespace you created earlier
-1. Click on **Validate and Create**
+1. Select **Validate and Create**
 1. Select your new akspromote environment from the list of environments. 
-1. Click on the button with the **three dots** in the top right -> **Approvals and checks** -> **Approvals**
+1. Select the button with the **three dots** in the top right -> **Approvals and checks** -> **Approvals**
 1. Configure your approval as follows -
     - **Approvers**: Add your own user account
     - **Advanced**: Make sure the **Allow approvers to approve their own runs** checkbox is checked.
-1. Click on **Create**
+1. Select **Create**
 1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
-1. Add an additional stage PromoteRejectCanary at the end of your YAML file to promote the changes. 
+1. Add another stage PromoteRejectCanary at the end of your YAML file to promote the changes. 
 
     ```YAML
     - stage: PromoteRejectCanary
@@ -301,14 +309,14 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 1. Save your YAML pipeline by clicking on **Save** and commit it directly to the main branch. 
 
 #### [Classic](#tab/classic/)
-1. Click on **Pipeline** tab to go back to the pipeline view. Add a new stage named **Promote/reject canary** based on the empty job template.
+1. Select **Pipeline** tab to go back to the pipeline view. Add a new stage named **Promote/reject canary** based on the empty job template.
 1. Add an agentless job to this stage and reorder this job to be the first job of this stage. Name this agentless job **Promote/reject input**.
 1. Add a **Manual Intervention** task to this job and change the display name of the task to **Promote or reject canary**
-1. Configure the currently empty agent job placed after the **Promote/reject input** agentless job as follows - 
+1. Configure the currently empty agent job placed after the **Promote/reject input** agentless job. 
     - **Display name**: Promote canary
     - **Agent pool**: Hosted Ubuntu 1604
     - **Run this job**: Only when all previous jobs have succeeded
-1. Add **Deploy Kubernetes manifests** task with the following configuration to the **Promote canary** job -
+1. Add **Deploy Kubernetes manifests** task with the following configuration to the **Promote canary** job.
     - **Display name**: Promote canary
     - **Action**: promote
     - **Kubernetes service connection**: azure-pipelines-canary-k8s
@@ -318,11 +326,11 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Manifests**: azure-pipelines-canary-k8s/manifests/*
     - **Containers**: `<foobar>/azure-pipelines-canary-k8s:$(Release.Artifacts.image.BuildId)` where `<foobar>` is to be replaced with the container registry URL
     - **ImagePullSecrets**: azure-pipelines-canary-k8s
-1. Add another agent job with the following configuration after **Promote canary** agent job - 
+1. Add another agent job with the following configuration after **Promote canary** agent job.
     - **Display name**: Reject canary
     - **Agent pool**: Hosted Ubuntu 1604
     - **Run this job**: Only when a previous job has failed
-1. Add **Deploy Kubernetes manifests** task with the following configuration to the **Reject canary** job -
+1. Add **Deploy Kubernetes manifests** task with the following configuration to the **Reject canary** job.
     - **Display name**: Reject canary
     - **Action**: reject
     - **Kubernetes service connection**: azure-pipelines-canary-k8s
@@ -334,14 +342,14 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 * * *
 ## Deploy a stable version
 #### [YAML](#tab/yaml/)
-Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version -
+Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version.
 1. In `app/app.py`, change `success_rate = 5` to `success_rate = 10`.This change triggers the  pipeline leading to build and push of the image to container registry. It will also trigger the DeployCanary stage. 
 2. Given you have configured an approval on the **akspromote** environment, the release will wait before executing that stage. 
 3. In the summary of the run click on **Review** and next click on **Approve** in the subsequent fly-out. This will result in the stable version of the workloads (`sampleapp` deployment in manifests/deployment.yml) being deployed to the namespace
 
 
 #### [Classic](#tab/classic/)
-Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version -
+Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version.
 1. In `app/app.py`, change `success_rate = 5` to `success_rate = 10`.This change triggers the  pipeline leading to build and push of the image to container registry. The continuous deployment trigger setup earlier on the image push event results in triggering of the release pipeline.
 2. In the **CanaryK8sDemo** release pipeline, select the **Promote/reject canary** stage of the release where it is waiting on manual intervention.
 3. Click on **Resume/Reject** button and then on **Resume button** in the subsequent dialog box. This will result in the stable version of the workloads (`sampleapp` deployment in manifests/deployment.yml) being deployed to the namespace
@@ -362,15 +370,15 @@ kubectl exec -it $FORTIO_POD -c fortio /usr/bin/fortio -- load -allow-initial-er
 ```
 
 ## Setup Grafana dashboard
-1. Run the following port forwarding command on your local development machine to be able to access Grafana -
+1. Run the following port forwarding command on your local development machine to be able to access Grafana.
     ```
     kubectl port-forward svc/sampleapp-grafana 3000:80
     ```
-1. In a browser, open the following URL -
+1. In a browser, open the following URL.
     ```
     http://localhost:3000/login
     ```
-1. When prompted for login credentials, unless the adminPassword value was overridden during prometheus-operator Helm chart installation, use the following values - 
+1. When prompted for login credentials, unless the adminPassword value was overridden during prometheus-operator Helm chart installation, use the following values.
     - username: admin
     - password: prom-operator
 1. In the left navigation menu, choose **+** -> **Dashboard** -> **Graph**
