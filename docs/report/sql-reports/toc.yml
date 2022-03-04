@@ -90,7 +90,19 @@
     href: /previous-versions/azure/devops/report/sql-reports/sprint-burndown-scrum
   - name: Velocity (Scrum)
     href: /previous-versions/azure/devops/report/sql-reports/velocity
-- name: Reference-Data warehouse tables
+- name: Troubleshooting
+  items:
+  - name: Address inaccuracies published for summary values
+    href: /previous-versions/azure/devops/report/sql-reports/address-inaccuracies-published-for-summary-values
+  - name: Resolve schema conflicts in the data warehouse
+    href: /previous-versions/azure/devops/report/admin/resolve-schema-conflicts
+- name: Reference, Reportable fields
+  items:
+  - name: Add or modify work item fields 
+    href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting 
+  - name: Reportable fields reference 
+    href: /previous-versions/azure/devops/reference/xml/reportable-fields-reference 
+- name: Reference, Data warehouse tables
   items:
   - name: Data warehouse tables
     href: /previous-versions/azure/devops/report/sql-reports/table-reference-relational-warehouse-database
@@ -120,7 +132,7 @@
     href: /previous-versions/azure/devops/report/sql-reports/work-item-link-history-tables
   - name: Work Item Test Result tables
     href: /previous-versions/azure/devops/report/sql-reports/work-item-test-result-tables
-- name: Reference-Cube perspectives and measure groups
+- name: Reference, Cube perspectives and measure groups
   items:
   - name: Cube perspectives and measure groups
     href: /previous-versions/azure/devops/report/sql-reports/perspective-measure-groups-cube
@@ -134,10 +146,5 @@
     href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-test-results
   - name: Work items and test case data
     href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-work
-- name: Troubleshooting
-  items:
-  - name: Address inaccuracies published for summary values
-    href: /previous-versions/azure/devops/report/sql-reports/address-inaccuracies-published-for-summary-values
-  - name: Resolve schema conflicts in the data warehouse
-    href: /previous-versions/azure/devops/report/admin/resolve-schema-conflicts
+
 
