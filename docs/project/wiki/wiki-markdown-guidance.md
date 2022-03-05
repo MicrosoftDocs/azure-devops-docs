@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 10/22/2021 
+ms.date: 03/04/2022 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -55,7 +55,13 @@ Wiki supports the following Mermaid diagram types:
 
 - [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
 - [Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
-- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
+- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart
+
+> [!NOTE]
+> The Mermaid diagram type links go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For flowcharts, for instance:
+> - We support the LongArrow `---->` in Mermaid live editor, but not in Azure DevOps.
+> - We support the `graph` syntax, but not `subgraph`.
+> Also, Mermaid isn't supported in the Internet Explorer browser.
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
@@ -68,12 +74,6 @@ To add Mermaid diagrams to a wiki page, use the following syntax:
 There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 ![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
-
-> [!NOTE]
->
-> - Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax.
-> - Mermaid isn't supported in the Internet Explorer browser.
-> - The previous diagram-type links go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, for flowcharts we support the LongArrow `---->` in Mermaid live editor, but not in Azure DevOps.
 
 ::: moniker-end
 
