@@ -55,20 +55,19 @@ Wiki supports the following Mermaid diagram types:
 
 - [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
 - [Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
-- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart
+- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
 ``` wiki-mermaid
 ::: mermaid
-<mermaid diagram syntax> //graph LR
+<mermaid diagram syntax>
 :::
 ```
 
 > [!NOTE]
-> - Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax.
-> - Mermaid isn't supported in the Internet Explorer browser.
-> - The diagram-type links at the beginning of this section go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, we don't support LongArrow `---->`, `flowchart` (use `graph`), or `subgraph`. 
+> - The diagram type hyperlinks at the beginning of this section go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, we don't support most HTML tags, Font Awesome, LongArrow `---->`, `flowchart` (use `graph`, as shown in the following image), or `subgraph` syntax.
+> - Mermaid isn't supported in the Internet Explorer browser. 
 
 There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
