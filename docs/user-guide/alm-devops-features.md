@@ -1354,11 +1354,11 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 <a id="power-bi">  </a>
 
-### Power BI dashboards and reports (Azure DevOps Services)
+### Power BI dashboards and reports
 
 <table>
 <tbody>
@@ -1394,7 +1394,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="<= azure-devops-2020"
 
 <a id="sql-server-reports">  </a>
 
@@ -1476,7 +1476,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Drag-and-drop widgets</b></p>
 <p>Drag widgets, tiles, or charts anywhere on a dashboard to <a href="../report/dashboards/dashboards.md" data-raw-source="[configure the layout you want](../report/dashboards/dashboards.md)">configure the layout you want</a>. </p>
 
-<h4><i>Informational content and other links</i></h4>
+<h4>Informational content and other links</h4>
 
 
 <p><b>Markdown widget</b></p>
@@ -1498,7 +1498,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Provides quick access to <a href="../report/dashboards/widget-catalog.md#how-to-widget" data-raw-source="[getting started info on how to track work, code, build, and test](../report/dashboards/widget-catalog.md#how-to-widget)">getting started info on how to track work, code, build, and test</a>. </p>
 <img src="../report/dashboards/media/widget-how-to.png" alt="How to links widget"/><br/><br/>
 
-<h4><i>Code widgets</i></h4>
+<h4>Code widgets</h4>
 
 <p><b>Code tile </b></p>
 <p>Configurable tile to display <a href="../report/dashboards/widget-catalog.md#code-tile-widget" data-raw-source="[status and links to a Git or TFVC code repository, branch, or folder](../report/dashboards/widget-catalog.md#code-tile-widget)">status and links to a Git or TFVC code repository, branch, or folder</a>.
@@ -1513,7 +1513,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 
-<h4><i>Plan and track work</i></h4>
+<h4>Plan and track work</h4>
 
 
 <p><b>Assigned to me widget  </b></p>
@@ -1570,7 +1570,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Provides quick access links from a team dashboard to open the <a href="../report/dashboards/widget-catalog.md#work-links-widget" data-raw-source="[team backlog, Kanban board, task board, and queries](../report/dashboards/widget-catalog.md#work-links-widget)">team backlog, Kanban board, task board, and queries</a>.   </p>
 
 
-<h4><i>Build and test widgets</i></h4>
+<h4>Build and test widgets</h4>
 
 <p><b>Chart for build history </b></p>
 <p>Configurable tile to display the <a href="../report/dashboards/widget-catalog.md#build-history-widget" data-raw-source="[histogram for a specific build definition](../report/dashboards/widget-catalog.md#build-history-widget)">histogram for a specific build definition</a>.
@@ -1589,7 +1589,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 
-<h4><i>Extensibility</i></h4>
+<h4>Extensibility</h4>
 
 <p><b>Marketplace widgets</b></p>
 <p>You can find additional widgets by browsing the <a href="https://marketplace.visualstudio.com/search?term=webpage%20widget&amp;target=vsts&amp;sortby=relevance." data-raw-source="[Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&amp;target=vsts&amp;sortby=relevance.)">Marketplace</a></p>
