@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 10/22/2021 
+ms.date: 03/04/2022 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -65,15 +65,13 @@ To add Mermaid diagrams to a wiki page, use the following syntax:
 :::
 ```
 
+> [!NOTE]
+> - The diagram type hyperlinks at the beginning of this section go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, we don't support most HTML tags, Font Awesome, LongArrow `---->`, `flowchart` (use `graph`, as shown in the following image), or `subgraph` syntax.
+> - Mermaid isn't supported in the Internet Explorer browser. 
+
 There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 ![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
-
-> [!NOTE]
->
-> - Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax.
-> - Mermaid isn't supported in the Internet Explorer browser.
-> - The previous diagram-type links go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, for flowcharts we support the LongArrow `---->` in Mermaid live editor, but not in Azure DevOps.
 
 ::: moniker-end
 
