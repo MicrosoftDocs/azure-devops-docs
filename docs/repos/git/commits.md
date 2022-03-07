@@ -315,7 +315,7 @@ git commit --amend -m "<new message>"
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create work in branches](./create-branch.md).
+> [Create work in branches](./create-branch.md)
 
 
 ## Related articles
