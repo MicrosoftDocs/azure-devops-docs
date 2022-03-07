@@ -199,7 +199,7 @@ Following are descriptions of some of the components of the `task.json` file:
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task about [Visual Studio Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks. For more information, see [How can I restrict Visual Studio Codespaces commands usage for task?](#how-can-i-restrict-vso-commands-usage-for-task)|
+| `restrictions`       | Restrictions being applied to the task about [Visual Studio Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks. For more information, see [How can I restrict Visual Studio Codespaces commands usage for task?](#how-can-i-restrict-visual-studio-codespaces-commands-usage-for-task)|
 |
 
 >[!NOTE]
