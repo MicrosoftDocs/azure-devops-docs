@@ -34,7 +34,7 @@ The following YAML snippet showcases how to perform parallel deployments to clus
 
 ```YAML
 trigger:
-- master
+- main
 
 jobs:
 - deployment:
@@ -51,6 +51,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: aksnamespace
             manifests: manifests/*
 - deployment:
@@ -67,6 +68,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: gkenamespace
             manifests: manifests/*
 - deployment:
@@ -83,6 +85,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: eksnamespace
             manifests: manifests/*
 - deployment:
@@ -99,6 +102,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: openshiftnamespace
             manifests: manifests/*
 - deployment:
@@ -115,6 +119,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: digitaloceannamespace
             manifests: manifests/*
 ```
