@@ -327,7 +327,6 @@ Portfolio backlogs are a great way to organize your project plan and provide vis
 ## Related articles  
 
 -  [Azure Boards FAQs](../faqs.yml) 
-- [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
