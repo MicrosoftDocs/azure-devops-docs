@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/docs/report/admin/create-status-and-trend-excel-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/report/admin/add-a-report-server.md",
       "redirect_url": "/previous-versions/azure/devops/report/admin/add-a-report-server",
       "redirect_document_id": false
