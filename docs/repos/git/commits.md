@@ -257,8 +257,8 @@ Git supports changing the staged files or message of your last commit. This oper
 
 > [!WARNING]
 > Don't amend an already [pushed](pushing.md) commit because that will cause sync issues with your remote repo. For a pushed commit, use one of these strategies:
-> 1. Create and push another commit that fixes the issues caused by the prior commit.
-> 1. Undo the prior commit that was pushed, by using `git revert` to create a new commit that [reverts](undo.md) all changes made by the prior commit. Then push the new commit.
+> - Create and push another commit that fixes the issues caused by the prior commit.
+> - Undo the prior commit that was pushed, by using `git revert` to create a new commit that [reverts](undo.md) all changes made by the prior commit. Then push the new commit.
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
