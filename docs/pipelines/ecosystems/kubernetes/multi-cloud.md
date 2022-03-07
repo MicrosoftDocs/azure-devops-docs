@@ -5,14 +5,14 @@ ms.topic: quickstart
 ms.assetid: 525536ba-94c7-487b-bcf9-ca7733135e89
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 08/28/2019
+ms.date: 03/07/2022
 monikerRange: 'azure-devops'
 ---
 
 # Multi-cloud Kubernetes deployments
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
-With Kubernetes having a standard interface and running the same way on all cloud providers, Azure Pipelines can be used for deploying to Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), or clusters from any other cloud providers. This document contains information on how to connect to each of these clusters, and how to perform parallel deployments to multiple clouds. 
+Kubernetes has a standard interface and runs the same way on all cloud providers. Azure Pipelines can be used for deploying to Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), or clusters from any other cloud providers. This article explains how to connect to each of these clusters, and how to perform parallel deployments to multiple clouds. 
 
 ## Setup environment and Kubernetes resources
 
@@ -21,7 +21,7 @@ With Kubernetes having a standard interface and running the same way on all clou
 > [!NOTE]
 > Deployments to Kubernetes clusters are possible using regular [jobs](../../process/phases.md) as well, but the benefits of pipeline traceability and ability to diagnose resource health are not available in this option.
 
-To set up multi-cloud deployment, [create an environment](../../process/environments.md#creation) and subsequently add Kubernetes resources associated with namespaces of Kubernetes clusters. Follow the steps under the linked sections based on the cloud provider of your Kubernetes cluster - 
+To set up multi-cloud deployment, [create an environment](../../process/environments.md#creation) and then add your Kubernetes resources associated with namespaces of Kubernetes clusters. Follow the steps under the linked sections based on the cloud provider of your Kubernetes cluster - 
 - [Azure Kubernetes Service](../../process/environments-kubernetes.md#use-azure-kubernetes-service)
 - [Generic provider using existing service account](../../process/environments-kubernetes.md#use-an-existing-service-account)
 
@@ -34,7 +34,7 @@ The following YAML snippet showcases how to perform parallel deployments to clus
 
 ```YAML
 trigger:
-- master
+- main
 
 jobs:
 - deployment:
@@ -51,6 +51,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: aksnamespace
             manifests: manifests/*
 - deployment:
@@ -67,6 +68,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: gkenamespace
             manifests: manifests/*
 - deployment:
@@ -83,6 +85,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: eksnamespace
             manifests: manifests/*
 - deployment:
@@ -99,6 +102,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: openshiftnamespace
             manifests: manifests/*
 - deployment:
@@ -115,6 +119,7 @@ jobs:
           displayName: Deploy to Kubernetes cluster
           inputs:
             action: deploy
+            kubernetesServiceConnection: serviceConnection #replace with your service connection
             namespace: digitaloceannamespace
             manifests: manifests/*
 ```
