@@ -132,29 +132,46 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 Use these shortcuts when working in Team Explorer. 
 
-<table>
-<tbody>
-<tr>
-<td width="56%">
-<p><strong>Navigate</strong></p> 
-<strong>Ctrl+0,a</strong>&nbsp;&nbsp;&nbsp;Open web portal<br/><strong>Ctrl+0,b</strong>&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[Build](../../pipelines/get-started/what-is-azure-pipelines.md)">Build</a><br/><strong>Ctrl+0,c</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../organizations/projects/connect-to-projects.md" data-raw-source="[Connect](../../organizations/projects/connect-to-projects.md)">Connect</a><br/><strong>Ctrl+0,d</strong>&nbsp;&nbsp;&nbsp;Open <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal" data-raw-source="[Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)">Documents</a><br/><strong>Ctrl+0,e</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Branches (Git)](../../repos/git/gitquickstart.md)">Branches (Git)</a><br/><strong>Ctrl+0,g</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Changes (Git)](../../repos/git/gitquickstart.md)">Changes (Git)</a><br/><strong>Ctrl+0,h</strong>&nbsp;&nbsp;&nbsp;Open Home<br/><strong>Ctrl+0,m</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/share-your-code-in-tfvc-vs.md" data-raw-source="[My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)">My Work (TFVC)</a><br/><strong>Ctrl+0,p</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Pending changes (TFVC)</a><br/><strong>Ctrl+0,r</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[Reports](../../report/sql-reports/reporting-services-reports.md)">Reports</a><br/><strong>Ctrl+0,s</strong>&nbsp;&nbsp;&nbsp;Open Settings<br/><strong>Ctrl+0,w</strong>&nbsp;&nbsp;&nbsp;Open Work items<br/><strong>Ctrl+0,y</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Synchronization (Git)](../../repos/git/gitquickstart.md)">Synchronization (Git)</a><br/>
-<br/>
-<strong>Ctrl+&#39;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><strong>Alt+0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page<br/><strong>Alt+1</strong>&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 thru 9]<br/><strong>Alt+↑↓</strong>&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
+:::row:::
+   :::column span="":::
+      **Navigate**
+      - **Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal
+      - **Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[Build](../../pipelines/get-started/what-is-azure-pipelines.md)">Build</a>
+      - **Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open <a href="../../organizations/projects/connect-to-projects.md" data-raw-source="[Connect](../../organizations/projects/connect-to-projects.md)">Connect</a>
+      - **Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal" data-raw-source="[Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)">Documents</a>
+      - **Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Branches (Git)](../../repos/git/gitquickstart.md)">Branches (Git)</a>
+      - **Ctrl+0,g**&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Changes (Git)](../../repos/git/gitquickstart.md)">Changes (Git)</a>
+      - **Ctrl+0,h**&nbsp;&nbsp;&nbsp;Open Home
+      - **Ctrl+0,m**&nbsp;&nbsp;&nbsp;Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)
+      - **Ctrl+0,p**&nbsp;&nbsp;&nbsp;Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)
+      - **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)
+      - **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings
+      - **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items
+      - **Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../../repos/git/gitquickstart.md)
+        
+      - **Ctrl+&#39;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box
+      - **Alt+0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page
+      - **Alt+1**&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 thru 9]
+      - **Alt+↑↓**&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
+   :::column-end:::
+   :::column span="":::
+      **Context menu**   
+      - ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a context menu<
+      - **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss a context menu
+      - ← →&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right
+      - ↑↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down
+      - **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Context menu
 
-</td>
-
-
-<td width="44%">
-<p><strong>Context menu</strong></p> 
-↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a context menu<br/><strong>Esc</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss a context menu<br/>← →&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right<br/>↑↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down<br/><strong>Enter</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Context menu<br/><br/>
-<p><strong>Work item commands</strong></p> 
-
-<strong>Alt+m,g</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open work item<br/><strong>Alt+m,i</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Add a work item](../../boards/backlogs/add-work-items.md)">Add a work item</a><br/><strong>Alt+m,q</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../boards/queries/using-queries.md" data-raw-source="[Add a query](../../boards/queries/using-queries.md)">Add a query</a><br/><strong>Shift+Alt,c</strong>&nbsp;&nbsp;Copy selected work item<br/><strong>Shift+Alt,l</strong>&nbsp;&nbsp;Link to new work item<br/><strong>Enter</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item<br/>
-
-</td>
-</tr>
-</tbody>
-</table>
+      **Work item commands**
+      - **Alt+m,g**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open work item
+      - **Alt+m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Add a work item](../../boards/backlogs/add-work-items.md) 
+      - **Alt+m,q**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Add a query](../../boards/queries/using-queries.md) 
+      - **Shift+Alt,c**&nbsp;&nbsp;Copy selected work item
+      - **Shift+Alt,l**&nbsp;&nbsp;Link to new work item
+      - **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item 
+   :::column-end:::
+:::row-end:::
+  
 
 You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
@@ -164,9 +181,8 @@ You can use query results shortcuts whenever you have a list of work items, such
 
 ## Related articles 
 
-
 - [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))  
-- [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
+- [Identify and customize keyboard shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
 - [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
 - [Web portal navigation](..//navigation/index.md) 

@@ -143,7 +143,7 @@ Azure Boards is designed to support software development processes through the d
 :::row::: 
    :::column span="2":::
    [**Capability Maturity Model Integration** (CMMI)](../work-items/guidance/cmmi-process.md) supports a framework for process improvement and an auditable record of decisions. With this process, you can track requirements, change requests, risks, and reviews.
-   This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts). 
+   This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md). 
    :::column-end:::
    :::column span="2":::
    :::image type="content" source="../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png" alt-text="CMMI work item types":::  

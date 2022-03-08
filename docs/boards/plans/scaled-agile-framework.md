@@ -361,10 +361,7 @@ Each of the following articles within this suite of tutorials provide details on
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
 - [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
-
-<!---
-[Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
--->
+ 
 
 ### About the authors
 

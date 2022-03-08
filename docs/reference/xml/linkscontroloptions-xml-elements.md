@@ -35,7 +35,7 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 
 ## Summary of what's changed
 
-The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](./control-xml-element-reference.md?viewFallbackFrom=vsts). Overall, it's a much simpler syntax structure than its predecessor. 
+The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](./control-xml-element-reference.md). Overall, it's a much simpler syntax structure than its predecessor. 
 
 
 > [!div class="mx-tdBreakAll"]  

@@ -99,8 +99,6 @@
   items:
   - name: Manual testing FAQs
     href: reference-qa.yml 
-  - name: Test case management reporting FAQs
-    href: reference-tcm.md
   - name: Unable to connect
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: Reference
@@ -112,6 +110,8 @@
     href: ../boards/work-items/guidance/work-item-field.md
   - name: Build and test integration fields
     href: ../boards/queries/build-test-integration.md
+  - name: Microsoft Test Manager (deprecated)
+    href: /previous-versions/azure/devops/test/mtm/guidance-mtm-usage
 - name: REST API Reference
   items:
   - name: Test  
