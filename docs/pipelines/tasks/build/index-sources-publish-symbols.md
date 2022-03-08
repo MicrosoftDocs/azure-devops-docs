@@ -57,7 +57,7 @@ None
     <tr>
         <td><code>IndexSources</code><br/>Index sources</td>
         <td>
-            <p>(Optional) Indicates whether to inject source server information into the PDB files</p><br/>Default value: true
+            <p>(Optional) Indicates whether to inject source server information into PDB files. This option is only supported on Windows agents.</p><br/>Default value: true
         </td>
     </tr>
     <tr>
@@ -111,18 +111,23 @@ None
         </tr>
     </thead>
     <tr>
-        <tr>
-            <td><code>DetailedLog</code><br/>Verbose logging</td>
-            <td>
-                (Optional) Enables additional log details. <br/>Default value: true
-            </td>
-        </tr>
+        <td><code>DetailedLog</code><br/>Verbose logging</td>
+        <td>
+            (Optional) Enables additional log details. <br/>Default value: true
+        </td>
+    </tr>
+    <tr>
         <td><code>TreatNotIndexedAsWarning</code><br/>Warn if not indexed</td>
         <td>
             <p>(Optional) Indicates whether to warn if sources are not indexed for a PDB file. Otherwise the messages are logged as normal output. <br/>
                 A common cause of sources to not be indexed are when your solution depends on binaries that it doesn&#39;t build.</p> 
             <p>Even if you don&#39;t select this option, the messages are written in log.
             </p><br/>Default value: false
+        </td>
+    </tr>
+    <tr>
+        <td><code>UseNetCoreClientTool</code><br/>Use version of tool that supports Linux symbols</td>
+        <td>(Optional) Uses a version of the symbol upload tool that supports DWARF and ELF files. This option only matters on Windows agents. On non-Windows agents, the version of the symbol upload tool that supports DWARF and ELF files will always be used.<br/>Default value: false
         </td>
     </tr>
     <tr>
