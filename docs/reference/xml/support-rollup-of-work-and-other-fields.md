@@ -201,11 +201,11 @@ You can use the [Analytics Service](../../report/powerbi/what-is-analytics.md) t
   
  If you have SQL Server Analysis Services deployed, you can get rollup for backlog items from these reports. The refresh frequency for these reports is 2 hours.  
   
--   [Backlog Overview](../../report/sql-reports/backlog-overview-scrum.md)  
--   [Stories Overview](../../report/sql-reports/stories-overview-report-agile.md)   
--   [Requirements Overview](../../report/sql-reports/requirements-overview-report-cmmi.md)  
+-   [Backlog Overview](/previous-versions/azure/devops/report/sql-reports/backlog-overview-scrum)  
+-   [Stories Overview](/previous-versions/azure/devops/report/sql-reports/stories-overview-report-agile)   
+-   [Requirements Overview](/previous-versions/azure/devops/report/sql-reports/requirements-overview-report-cmmi)  
   
-If you need to add reports to your on-premises TFS deployment, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reports to your on-premises TFS deployment, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
 ::: moniker-end  
 

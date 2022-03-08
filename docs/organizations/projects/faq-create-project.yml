@@ -30,11 +30,11 @@ sections:
           ::: moniker-end
           
           ::: moniker range=">= tfs-2018 < azure-devops"
-          If you receive an error message that states you don't have permission to create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md). If you have SQL Reporting Services installed in the collection, you also need permissions for reports to the [Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md).  
+          If you receive an error message that states you don't have permission to create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md). If you have SQL Reporting Services installed in the collection, you also need permissions for reports to the [Team Foundation Content Managers group](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).  
           ::: moniker-end
           
           ::: moniker range="<= tfs-2017"
-          If you receive an error message that states you don't have permissionto create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md). If you have SQL Reporting Services installed in the collection, you also need permissions for reports to the [Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md). Also, if you have SharePoint integrated with TFS, you'll need to gain [Full Control permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) on the server that hosts SharePoint Products.   
+          If you receive an error message that states you don't have permissionto create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md). If you have SQL Reporting Services installed in the collection, you also need permissions for reports to the [Team Foundation Content Managers group](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). Also, if you have SharePoint integrated with TFS, you'll need to gain [Full Control permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) on the server that hosts SharePoint Products.   
           ::: moniker-end
           
           ::: moniker range="<= tfs-2017"
@@ -114,7 +114,7 @@ sections:
 
           #### How do I add SQL Server Reporting services?
 
-          See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
+          See [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
           ::: moniker-end
           ::: moniker range="<= tfs-2017" 
           #### How do I add SharePoint portal resources?

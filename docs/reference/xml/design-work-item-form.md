@@ -107,7 +107,7 @@ Custom Form with Three Tabs in a Two Column Layout
 
 ##  Work with tabs  
 
-You use tabs to cluster a group of fields or to support one or more special controls, such as the controls that link work items, link work item history, or attach files. Several definitions of work item types for the Microsoft Solutions Framework (MSF) process templates use several tabs to control the types of links that can be created, based on the link type. For more information, see [Work Items and Workflow (Agile)](../../boards/work-items/guidance/agile-process-workflow.md?viewFallbackFrom=vsts) or [Work Items and Workflow (CMMI)](../../boards/work-items/guidance/cmmi-process-workflow.md?viewFallbackFrom=vsts).  
+You use tabs to cluster a group of fields or to support one or more special controls, such as the controls that link work items, link work item history, or attach files. Several definitions of work item types for the Microsoft Solutions Framework (MSF) process templates use several tabs to control the types of links that can be created, based on the link type. For more information, see [Work Items and Workflow (Agile)](../../boards/work-items/guidance/agile-process-workflow.md) or [Work Items and Workflow (CMMI)](../../boards/work-items/guidance/cmmi-process-workflow.md).  
 
 For more information about how to use special controls, see the following topics:  
 - [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)  

@@ -625,7 +625,7 @@ Attributes assigned to a field depend on the platform and version you use. For e
 
 ## Reportable attributes
 
-All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
+All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
 
 For a description of each reportable attribute, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md). 
 

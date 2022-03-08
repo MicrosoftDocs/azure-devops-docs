@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '<= azure-devops' 
-ms.date: 01/13/2021 
+ms.date: 03/03/2022 
 ---
 
 # Compare Azure DevOps Services with Azure DevOps Server
@@ -176,23 +176,27 @@ To learn more, see [Customize your work-tracking experience](../reference/custom
 
 <a name="reporting"></a>
 
-## Reporting
+## Analytics and reporting
 
-Azure DevOps Services and Azure DevOps Server offer a many tools that give you insight into the progress and quality of your software projects. Included are the following tools:
+Azure DevOps Services and Azure DevOps Server offer many tools that give you insight into the progress and quality of your software projects. Included are the following tools:
+
+::: moniker range=">= azure-devops-2019"
 
 - [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
-
-Azure DevOps Services and Azure DevOps Server 2019 also provide access to the following services:
-
 - [The Analytics service](../report/powerbi/what-is-analytics.md) and [Analytics widgets](../report/dashboards/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 - [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
-- [OData support](../report/extend-analytics/quick-ref.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization.
+- [OData support](../report/extend-analytics/quick-ref.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization. To learn more about the Analytics service, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
+::: moniker-end
 
-To learn more about the Analytics service and future releases, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
+::: moniker range="< azure-devops-2019"
 
-[SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md) are available from Azure DevOps Server when configured with SQL Server Analysis Services.  
+- [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
+- [SQL Server Reporting Services (SSRS) reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports) are available when Azure DevOps Server is configured with SQL Server Analysis Services.   
+::: moniker-end
 
-## Visual Studio Team Services is now Azure DevOps Services<a id="vsts" />
+<a id="vsts" />
+
+## Visual Studio Team Services is now Azure DevOps Services
 
 Many of the featured services in VSTS are now offered as standalone services in both Azure DevOps Services and Azure DevOps Server 2019. You can get services separately or all together as Azure DevOps Services. If you're an Azure DevOps subscriber, you have access to all of the services already.
 
@@ -216,16 +220,6 @@ You can still use `visualstudio.com` to access Azure DevOps Services. We've move
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Azure DevOps Services - pricing](https://visualstudio.microsoft.com/team-services/pricing/)
-- [Azure DevOps Server - pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
-
-<!---
-*(c) 2016 Microsoft Corporation. All rights reserved. This document is
-provided "as-is." Information and views expressed in this document,
-including URL and other Internet Web site references, may change without
-notice. You bear the risk of using it.*
-
-*This document does not provide you with any legal rights to any
-intellectual property in any Microsoft product. You may copy and use
-this document for your internal, reference purposes.*
--->
+- [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/)
+ 

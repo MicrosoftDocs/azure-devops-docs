@@ -59,13 +59,13 @@ SQL Server Reporting is the legacy reporting solution available with Azure DevOp
 ::: moniker-end  
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
-- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](../admin/create-status-and-trend-excel-reports.md).
-- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports.md).
+- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server.md).
 ::: moniker-end  
  
 ::: moniker range="< azure-devops-2019"
-- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](../admin/create-status-and-trend-excel-reports.md).
-- **SQL Server reports**: Allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports.md).
+- **SQL Server reports**: Allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server.md).
 ::: moniker-end   
 
 ### Supported features and access level 

@@ -108,8 +108,8 @@ Use this index to quickly access information on tasks for configuring or accessi
       ::: moniker-end
       ::: moniker range="<= azure-devops-2019"
       **SQL Reports** 
-      - [SQL Server reports](../../report/sql-reports/reporting-services-reports.md)  
-      - [Excel work tracking reports](../../report/admin/create-status-and-trend-excel-reports.md)  
+      - [SQL Server reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
+      - [Excel work tracking reports](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)  
       ::: moniker-end
       **Widgets** 
       ::: moniker range=">= azure-devops-2019"
