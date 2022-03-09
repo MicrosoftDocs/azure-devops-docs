@@ -166,7 +166,7 @@ Create a NuGet package in the destination folder.
         nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
     ```
 
-* Push/Publish a package to a organization scoped feed
+* Push/Publish a package to an organization scoped feed
 
     ```YAML
     # Push a project
