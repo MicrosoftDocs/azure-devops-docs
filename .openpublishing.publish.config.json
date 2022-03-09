@@ -30,7 +30,8 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
       },
       "template_folder": "_themes"
     }
