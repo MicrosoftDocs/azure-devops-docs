@@ -6,12 +6,13 @@ ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 08/24/2020
-monikerRange: '<= azure-devops'
+monikerRange: '>= tfs-2015'
 ---
 
 # Ignore file changes with Git
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Not every file created or updated in your code should be committed to Git.
 Temporary files from your development environment, test outputs, and logs are all examples of files that you create but aren't part of your codebase.

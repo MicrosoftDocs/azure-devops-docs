@@ -1,18 +1,18 @@
 ---
-title: Share your code with Git from the command line
+title: Use Azure CLI to share Git code
 titleSuffix: Azure Repos
-description: Share code in Git using the command line
+description: Use Azure CLI to share code in Git repository.  
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.technology: devops-code-git 
 ms.topic: quickstart
-ms.date: 05/11/2020 
+ms.date: 10/15/2021
 ms.custom: devx-track-azurecli
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Get started with Git from the command line
 
-**Azure Repos**
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
@@ -23,6 +23,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 * An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Azure CLI and add Azure DevOps extension
+
 1. [Install the Azure CLI](/cli/azure/install-azure-cli). You must have at least `v2.0.49`, which you can verify with `az --version` command.
 
 2. Add the Azure DevOps Extension `az extension add --name azure-devops`

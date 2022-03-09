@@ -7,14 +7,14 @@ ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= tfs-2017' 
+monikerRange: '<= tfs-2017' 
 ms.date: 10/11/2017
 ---
 
 
 # Define the initial configuration of Git and TFVC
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!NOTE]  
 >  For TFS 2017.3 and later versions, you create projects from the web 

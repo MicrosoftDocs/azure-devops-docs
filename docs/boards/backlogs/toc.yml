@@ -17,8 +17,9 @@
   href: ../sprints/forecast.md
 - name: Customize your backlogs
   items:
-  - name: Product backlog controls
+  - name: Backlog controls
     href: product-backlog-controls.md 
+    displayname: selector, Analytics, view options, parents, forecasting, mapping, completed, full screen mode, expand, collapse, Configure team settings, filter  
   - name: Change column options
     href: set-column-options.md
   - name: Display rollup progress bars or totals

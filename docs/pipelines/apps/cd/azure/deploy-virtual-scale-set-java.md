@@ -10,6 +10,8 @@ monikerRange: 'azure-devops'
 
 # Tutorial: Deploy a Java app to a virtual machine scale set
 
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
+
 A [virtual machine scale set](/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, autoscaling virtual machines. 
 
 VMs are created as needed in a scale set. You define rules to control how and when VMs are added or removed from the scale set. These rules can be triggered based on metrics such as CPU load, memory usage, or network traffic.
@@ -106,13 +108,13 @@ You'll need a resource group, storage account, and shared image gallery for your
       --sku Standard_LRS 
     ```
 
-3. Create a [shared image gallery](/azure/virtual-machines/shared-images-cli). 
+3. Create a [shared image gallery](/azure/virtual-machines/shared-image-galleries). 
 
     ```azurecli-interactive
     az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
     ```
 
-4. Create a new image gallery in the `myVMSSGallery` resource. See [Create an Azure Shared Image Gallery using the portal](/azure/virtual-machines/windows/shared-images-portal) to learn more about working with image galleries. 
+4. Create a new image gallery in the `myVMSSGallery` resource. See [Create an Azure Shared Image Gallery using the portal](/azure/virtual-machines/linux/shared-images-portal) to learn more about working with image galleries. 
 
     ```azurecli-interactive
     az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
@@ -188,4 +190,3 @@ Go to the Azure portal and delete your resource group, `myVMSSResourceGroup`.
 ## Next steps
 > [!div class="nextstepaction"]
 > [Learn more about virtual machine scale sets](/azure/virtual-machine-scale-sets/overview)
-

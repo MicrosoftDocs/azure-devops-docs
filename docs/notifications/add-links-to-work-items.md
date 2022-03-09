@@ -4,17 +4,17 @@ titleSuffix: Azure DevOps
 description: Learn how to link work items to builds, commits, pull requests, and more. 
 ms.technology: devops-collab 
 toc: show
-ms.custom: contperf-fy21q2
+ms.custom: contperf-fy21q2, cross-project
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
 ms.date: 04/16/2021
 ---
 
 # Link to work items from other objects
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 By linking to work items from other objects, such as builds, commits, pull requests, and more, you support your team's ability to maintain an audit trail of related work. All users can add links to their work items.
 
@@ -144,11 +144,11 @@ Keyword logic helps with intent matching. For example, you might enter “Resolv
 
 Enter `#` to trigger the `#ID` work item picker from within a Wiki page.
 
-For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md).
+For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-You can also you link a query results table to a wiki. This supports quick access to each linked work item in the query. For more information, see [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
+You can also you link a query results table to a wiki. This supports quick access to each linked work item in the query. For more information, see [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
 ::: moniker-end
 
 
@@ -166,7 +166,7 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Link type reference](../boards/queries/link-type-reference.md)
-- [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+- [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
 ::: moniker-end
 
 
@@ -180,7 +180,7 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Link type reference](../boards/queries/link-type-reference.md)
-- [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+- [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
 ::: moniker-end
 
 

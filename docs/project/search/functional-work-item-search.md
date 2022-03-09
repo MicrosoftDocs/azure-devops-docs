@@ -3,6 +3,7 @@ title: Use functional work item search options
 description: How to use Work Item Search - functional options for Work Item Search in Microsoft Azure DevOps for all projects. 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.technology: devops-collab
+ms.custom: cross-service, cross-project
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
@@ -12,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Functional work item search
 
-[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Functional work item search command filters extend your ability to refine your search of work items based on assignment, work item type, specific fields, and more. This is in addition to the filter functions documented in [Get started with search](get-started-search.md). Work item search is a built-in feature available to all Azure DevOps users.
 
@@ -237,7 +238,7 @@ If you're using a portrait orientation screen, use the **Preview pane: Right** l
 
 ## Search Work Items with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](/rest/api/azure/devops/search/work%20item%20search%20results/fetch%20work%20item%20search%20results).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](/rest/api/azure/devops/search/work-item-search-results/fetch-work-item-search-results).
 
 ## Next steps
 

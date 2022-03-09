@@ -1,19 +1,18 @@
 ---
 title: Reporting roadmap
 titleSuffix: Azure DevOps 
-description: Reporting roadmap for Azure DevOps and Team Foundation Server (TFS) 
+description: Learn about the reporting roadmap for Azure DevOps.
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 08/24/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/05/2021
 ---
 
 # Reporting roadmap for Azure DevOps 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The future of reporting for Azure DevOps and Azure DevOps Server is the Analytics service. Analytics replaces the previous platform based on SQL Server Reporting Services.
 
@@ -42,14 +41,11 @@ Analytics is in Public Preview for Azure DevOps Server 2019 and later versions. 
 
 Analytics will become generally available in the next major release of Azure DevOps Server. While in Public Preview, Analytics is free.
 
-Team Foundation Server (TFS) 2018 and earlier versions do not support Analytics. 
+Team Foundation Server (TFS) 2018 and earlier versions don't support Analytics. 
 
 ::: moniker-end
 
-To learn more, see [What is Analytics](what-is-analytics.md). It currently contains partial data. We are working to add all reportable data to Analytics. See [Data Available in Analytics](./data-available-in-analytics.md) for more information.
-
-
-
+To learn more, see [What is Analytics](what-is-analytics.md). It currently contains partial data. We're working to add all reportable data to Analytics. For more information, see [Data Available in Analytics](./data-available-in-analytics.md).
 
 ## Azure DevOps Server, TFS, and SQL Server Reporting
 
@@ -57,7 +53,7 @@ Since [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) wa
 
 <!--- ![TFS Data warehouse architecture conceptual diagram](../sql-reports/media/tfs_datawarearch_r.png)  -->
 
-While the configuration is somewhat complex, it provides a powerful solution. You can create custom reports by writing [customized SSRS reports](../sql-reports/create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/to]c.json). You can also create reports [using Excel](../create-status-and-trend-excel-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), and share them on SharePoint once you've [configured SharePoint to host Excel Charts](/previous-versions/azure/devops/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier).
+While the configuration is complex, it provides a powerful solution. You can create custom reports by writing [customized SSRS reports](../sql-reports/create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/to]c.json). You can also create reports [using Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), and share them on SharePoint once you've [configured SharePoint to host Excel Charts](/previous-versions/azure/devops/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier).
 
 We have no plans to bring a cloud version of our SQL Server Reporting story to Azure DevOps Services.
 

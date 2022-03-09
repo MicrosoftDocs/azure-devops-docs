@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Query Azure Monitor Alerts task
 
-[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to observe the configured Azure monitor rules for active alerts.
 

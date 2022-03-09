@@ -2,7 +2,7 @@
 title: Learn about Azure DevOps command line interface extension
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps extension command line interface 
-ms.topic: conceptual
+ms.topic: quickstart
 ms.prod: devops 
 ms.technology: devops-reference
 ms.manager: mijacobs 
@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Get started with Azure DevOps CLI
 
-[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
 
 With the Azure DevOps extension for Azure Command Line Interface (CLI),  you can manage many Azure DevOps Services from the command line. CLI commands enable you to streamline your tasks with faster and flexible interactive canvas, bypassing user interface workflows.
 
@@ -52,9 +52,11 @@ To start using the Azure DevOps extension for Azure CLI, perform the following s
 Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boards`, and `repos` groups.
 For usage and help content for any command, enter the **-h** parameter, for example:
 
-```bash
+```azurecli
 $ az devops -h
-   
+```
+
+```output
 Group
     az devops : Manage Azure DevOps organization level operations.
         Related Groups
@@ -89,7 +91,7 @@ You can use `--open` switch to open any artifact in Azure DevOps portal in your 
 
 For example :
 
-```bash
+```azurecli
 az pipelines build show --id 1 --open
 ```
 

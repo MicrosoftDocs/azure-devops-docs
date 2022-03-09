@@ -3,34 +3,43 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/19/2020
+ms.date: 10/15/2021
 ---
 
-This article will show you how to connect your npm client to your feed in Azure Artifacts and share your packages with your team and your organization.
+Follow this quick tutorial to learn how to connect your npm client to your feed and publish your packages using the command line. If you don't have a feed yet, you can follow the steps in the quickstart to [Create your own feed](../../get-started-npm.md#create-a-feed). 
 
-If you don't have a feed yet, check out the [Create a feed](../../get-started-npm.md#create-a-feed) section in the npm quickstart to set up your own Azure Artifacts feed.
+## Project setup
 
-## Publish your packages
+1. From within your project, select **Artifacts** and then select **Connect to feed**. 
 
-To publish an npm package to your feed, follow these steps:
+1. Select **npm** and then follow the instructions under **Project setup** to configure your .npmrc file.
 
-1. [Set up the npm client with your feed](../../npm/npmrc.md).
+    :::image type="content" source="../../npm/media/project-setup-npm.png" alt-text="Screenshot showing how to set up your project":::
 
-1. Open a shell and navigate to the directory that contains your package's **package.json** file.
-   If you don't have a **package.json** file, run the following command:
+## Publish npm packages
 
-   ```
-   npm init
-   ```
-    See the [npm CLI docs](https://docs.npmjs.com/cli-documentation/cli) for a list of npm commands.
+1. Open a command prompt window and navigate to the directory that contains your *package.json*. If you don't have a *package.json* file, run the following command:
+
+    ```Command
+    npm init 
+    ```
+
+1. Run the following command in your project directory to publish your npm packages:
+
+    ```Command
+    npm publish
+    ```
+
+## Restore npm packages
+
+1. Run the following command in your project directory to restore your npm packages: 
    
-1. Push your package to your feed 
-   ```
-   npm publish
-   ```
+    ```Command
+    npm install
+    ```
 
-    See the [npm publish docs](https://docs.npmjs.com/cli/publish) for more information on the `publish` command.
+## Related articles
 
-## What's next?
-
-Check out the [Azure Artifacts landing page](../../index.yml) to learn about other topics.
+- [Publish npm packages (YAML/Classic)](../../../pipelines/artifacts/npm.md)
+- [Use packages from npmjs.com](../../npm/upstream-sources.md)
+- [Use npm audit](../../npm/npm-audit.md)

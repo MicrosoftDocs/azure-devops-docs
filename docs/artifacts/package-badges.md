@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2018'
 
 # Share your Artifacts with package badges
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 Azure Artifacts offers a way to share your packages anywhere you can share an image by using package badges. You can embed package badges directly into your project's home page or in any Markdown file so your customers can easily discover and consume your packages.
 
@@ -72,7 +72,7 @@ You can create a badge for any package in your feed with package-sharing enabled
 
     :::image type="content" source="media/package-badge-setup.png" alt-text="package badge configuration":::
 
-1. You can now share your package by using the markdown snippet or the direct image link.
+1. You can now share your package by using the Markdown snippet or the direct image link.
 
 ## Related articles
 

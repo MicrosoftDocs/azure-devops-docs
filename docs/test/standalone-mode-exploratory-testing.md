@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
 
 All teams can use the Test &amp; Feedback extension in **Standalone** mode. 
 Users don't need an Azure DevOps subscription 
@@ -82,7 +82,7 @@ or Team Foundation Server connection to use this mode.
    Share it with the rest of your team as an email attachment, or 
    copy it to OneNote, Word, or in any other format you prefer.
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
 
 ## Next step
 

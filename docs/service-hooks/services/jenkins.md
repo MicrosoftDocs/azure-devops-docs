@@ -10,7 +10,7 @@ ms.date: 10/01/2020
 
 # Create a service hook for Azure DevOps with Jenkins
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 If you use Jenkins to build your apps, you can store your code in Azure DevOps and continue to use Jenkins for your continuous integration builds.
 You can trigger a Jenkins build when you push code to your project's

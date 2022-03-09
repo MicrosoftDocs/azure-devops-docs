@@ -11,6 +11,9 @@ ms.date: 06/04/2020
 
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
 
+> [!NOTE]
+> When you include a checkout step in your pipeline, we run the following command: `git -c fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin`.
+If this does not meet your needs, you can choose to exclude built-in checkout by `checkout: none` and then use a script task to perform your own checkout.
 ### Preferred version of Git
 
 The Windows agent comes with its own copy of Git.
@@ -27,7 +30,7 @@ If you are using multiple `checkout` steps and checking out multiple repositorie
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
-You can configure the `path` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
+You can configure the `path` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
 ```yaml
 steps:
@@ -50,7 +53,7 @@ This setting is not configurable in the classic editor. Your source code will be
 
 # [YAML](#tab/yaml/)
 
-You can configure the `submodules` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+You can configure the `submodules` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ```yaml
 steps:
@@ -117,7 +120,7 @@ You may want to limit how far back in history to download. Effectively this resu
 
 # [YAML](#tab/yaml/)
 
-You can configure the `fetchDepth` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
+You can configure the `fetchDepth` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
 ```yaml
 steps:
@@ -157,7 +160,7 @@ You may want to skip fetching new commits. This option can be useful in cases wh
 
 # [YAML](#tab/yaml/)
 
-You can configure the **Don't sync sources** setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline, by setting `checkout: none`.
+You can configure the **Don't sync sources** setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline, by setting `checkout: none`.
 
 ```yaml
 steps:
@@ -184,7 +187,7 @@ Select the **Don't sync sources** setting from the properties of the **Get sourc
 
 # [YAML](#tab/yaml/)
 
-You can configure the `clean` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
+You can configure the `clean` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
 ```yaml
 steps:
@@ -204,7 +207,7 @@ When `clean` is set to `true` the build pipeline performs an undo of any changes
  git reset --hard HEAD
  ```
 
-For more options, you can configure the `workspace` setting of a [Job](../../yaml-schema.md#job). 
+For more options, you can configure the `workspace` setting of a [Job](/azure/devops/pipelines/yaml-schema/jobs-job). 
 
 ```yaml
 jobs:

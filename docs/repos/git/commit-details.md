@@ -13,20 +13,28 @@ monikerRange: '>= tfs-2017'
 
 # Commit details
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1**
 
-## Commit details view
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+ 
 
 The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit. <!-- c123: Images need updated. -->
 
+::: moniker range=">= azure-devops-2020"
+:::image type="content" source="media/commit-details/git-repo-file-history.png" alt-text="Files, Commits page example":::
+::: moniker-end
+::: moniker range="<= azure-devops-2019"
 ![Commit details page](media/commit-details/1Commitdetails.png)
-
+::: moniker-end
+::: moniker range="tfs-2017"
+> [!NOTE]
+> The feature documented in this article requires TFS 2017 Update 1 or later version.  
+::: moniker-end
 
 ## What information do you see on the commit details page?
 
-* Commit ID and commit message - You can view the commit Id and commit message of the commit. You also have the option to copy the commit Id or commit message by clicking on the **Copy** buttons.
+* Commit ID and commit message - You can view the commit ID and commit message of the commit. You also have the option to copy the commit ID or commit message by clicking on the **Copy** buttons.
 	
-* Author details - You can also view the author, committer, and pusher details in the author drop-down. Click on the **Pushed on** link to access the associated push details  
+* Author details - You can also view details about the person making the commit in the author drop-down menu. Select **Pushed on** link to access the associated push details  
 
     ![Author page](media/commit-details/2AuthorDetails.png)
 

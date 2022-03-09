@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Use predefined variables
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -137,7 +137,7 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 <a name="identity_values"></a>
 ### How are the identity variables set?
 
-The value depends on what caused the build.
+The value depends on what caused the build and are specific to Azure Repos repositories. 
 
 | If the build is triggered... | Then the Build.QueuedBy and Build.QueuedById values are based on... | Then the Build.RequestedFor and Build.RequestedForId values are based on... |
 | --- | --- | ---|

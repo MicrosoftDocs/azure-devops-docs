@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Azure PowerShell task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run a PowerShell script within an Azure environment. The Azure context is authenticated with the provided Azure Resource Manager service connection.
 
@@ -28,7 +28,7 @@ Use this task to run a PowerShell script within an Azure environment. The Azure 
 
 |Argument|Description|
 |--- |--- |
-|`ConnectedServiceNameARM`<br/>Azure Subscription|(Required) name of an Azure Resource Manager service connection for authentication. <br/>Argument alias: `azureSubscription`|
+|`ConnectedServiceNameARM`<br/>Azure Subscription|(Required) Name of an Azure Resource Manager service connection for authentication. <br/>Argument alias: `azureSubscription`|
 |`ScriptType`<br/>Script Type|(Optional) Type of the script: filePath or inlineScript <br/>Default value: `FilePath`|
 |`ScriptPath`<br/>Script Path|(Optional) Path of the script. Should be fully qualified path or relative to the default working directory.|
 |`Inline`<br/>Inline Script|(Optional) Enter the script to execute. <br/>Default value: <br/># You can write your Azure PowerShell scripts inline here.|

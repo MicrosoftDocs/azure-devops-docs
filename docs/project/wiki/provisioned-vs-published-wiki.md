@@ -15,7 +15,7 @@ ms.date: 06/07/2021
 
 # Provisioned wikis vs. published code as a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 
@@ -120,7 +120,7 @@ Deleting a project wiki isn't supported with wiki APIs, but you can delete the w
 
    :::image type="content" source="media/wiki/clone-wiki.png" alt-text="Clone the wiki repository":::
 
-2. Get the git repository ID that is backing this wiki. Use [this REST API](/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
+2. Get the git repository ID that is backing this wiki. Use [this REST API](/rest/api/azure/devops/wiki/wikis/get) to get all the wikis in the project.
    
    For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
    This returns all the wikis in the project, "sampleProject". Here you can get the repository ID of the wiki that you want to delete.

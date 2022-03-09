@@ -10,7 +10,7 @@ monikerRange: '> tfs-2018'
 
 # Package and Deploy Helm Charts task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to deploy, configure, or update a Kubernetes cluster in Azure Container Service by running Helm commands.
 Helm is a tool that streamlines deploying and managing Kubernetes apps using a packaging format called

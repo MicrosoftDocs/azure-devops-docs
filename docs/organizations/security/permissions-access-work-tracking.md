@@ -2,7 +2,7 @@
 title: Default work tracking permissions & access 
 titleSuffix: Azure Boards & TFS 
 description: Default permissions and access levels for tracking work tracking in Azure Boards & Team Foundation Server
-ms.technology: devops-agile
+ms.technology: devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 11/20/2019
 
 # Permissions and access for work tracking
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -27,14 +27,12 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 
 ::: moniker-end
 
-
 In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
-> Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
+> Team administrators can configure settings for their team's tools. Organization owners and members of the **Project Administrators** group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Change project-level permissions](change-project-level-permissions.md). 
 
-For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
-
+For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](request-changes-permissions.md), you can do so.
 
 ## Work items
 
@@ -54,7 +52,6 @@ You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanb
 
 [!INCLUDE [temp](includes/boards-backlogs.md)]
 
-
 ## Sprints 
 
 You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints. 
@@ -70,7 +67,6 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [!INCLUDE [temp](includes/boards-queries.md)]
 
-
 ::: moniker range=">= tfs-2017"  
 
 ## Delivery plans
@@ -83,13 +79,11 @@ You can manage permissions for individual plans. To learn more, see [Edit or man
 
 ::: moniker-end
 
-
 ## Test management
 
-Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context Security page.  
+Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](change-project-level-permissions.md) from the **Project settings>Security** page.  
 
 [!INCLUDE [temp](includes/test.md)]
-
 
 Area permissions for web-based test case management and test execution control access to the following actions.  
 
@@ -104,11 +98,9 @@ The **Manage test plans** permission enables users to:
 - Add or remove test suites to or from test plans 
 - Change test plan properties such as build and test settings 
 
-
 ## Project-level resources  
 
 You set project-level information permissions from **Project settings** > **Permissions**. You set permissions for area and iteration paths under **Project settings**> **Project configuration**. These resources are defined for a project which all valid users of the project can view. 
-
 
 ---
 :::row:::
@@ -134,7 +126,7 @@ You set project-level information permissions from **Project settings** > **Perm
 ---
 :::row:::
    :::column span="2":::
-      [View project-level information](set-project-collection-level-permissions.md)
+      [View project-level information](change-project-level-permissions.md)
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -197,7 +189,7 @@ You set project-level information permissions from **Project settings** > **Perm
 ---
 :::row:::
    :::column span="2":::
-      [Edit project-level information](set-project-collection-level-permissions.md)
+      [Edit project-level information](change-organization-collection-level-permissions.md)
    :::column-end:::
    :::column span="1":::
       
@@ -246,80 +238,113 @@ The **Edit project-level information** permission includes the ability to perfor
 - Create and modify global lists  
 - Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on project level events.
 
-
-
-
 ## Team administrator role and permissions  
 
 The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project Administrator permissions extend across all teams defined for the project.
 
-
-<table>
-
-<tr valign="bottom">
-<th width="38%">Permission</th>
-<th width="10%">Readers</th>
-<th width="16%">Contributors</th>
-<th width="18%">Team Administrators</th>
-<th width="18%">Project Administrators</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-
-<td align="left"><a href="../../organizations/settings/add-team-administrator.md" data-raw-source="[Add a team administrator](../../organizations/settings/add-team-administrator.md)">Add a team administrator</a> </p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-
-<td align="left">
-<a href="../../organizations/settings/add-teams.md" data-raw-source="[Add team members](../../organizations/settings/add-teams.md)">Add team members</a> </p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-
-<td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-<tr>
-<td align="left">
-<a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)">Manage shared query and query folder permissions</a><br/>(Contribute, Delete, Manage Permissions)
-</p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-</tr>
-
-<tr>
-<td align="left">
-<a href="/azure/devops/report/dashboards/dashboards" data-raw-source="[Add and edit dashboards](../../report/dashboards/dashboards.md)">Add and edit dashboards</a> 
-</p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-</tbody>
-</table>
-
-
-
+:::row:::
+   :::column span="1":::
+   **Permission**
+   :::column-end:::
+   :::column span="1":::
+   **Readers**
+   :::column-end:::
+   :::column span="1":::
+   **Contributors**
+   :::column-end:::
+   :::column span="1":::
+   **Team Administrators**
+   :::column-end:::
+   :::column span="1":::
+   **Project Administrators**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::   
+   [Add team members](../../organizations/settings/add-teams.md)
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [View shared work item queries](../../boards/queries/using-queries.md)
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)  
+   (Contribute, Delete, Manage Permissions)
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Add and edit dashboards](../../report/dashboards/dashboards.md)
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
 
 <a id="stakeholder-access"></a>
 
@@ -332,7 +357,6 @@ For a comparison chart of Stakeholder versus basic access, see the [Feature Matr
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
 - **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
 - **Azure DevOps Server, TFS**: [Change access levels](change-access-levels.md)  
-
 
 <a id="grant-add-permissions"></a>  
 
@@ -350,13 +374,13 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ::: moniker range="tfs-2018 < azure-devops"
 
-If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2017"  
 
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md) and [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
+If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) and [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).
 
 ::: moniker-end  
 
@@ -366,4 +390,4 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 - [Get started as a Stakeholder](get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
 - [Manage teams and configure team tools](../settings/manage-teams.md)
-- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)  
+- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)

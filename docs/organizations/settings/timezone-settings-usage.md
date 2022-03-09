@@ -7,14 +7,20 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/15/2021
+ms.date: 11/17/2021
 ---
 
 # Time zone settings and usage
 
-[!INCLUDE [temp](../../includes/version-all.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
-There are two main time zone settings: organization and each user's personal profile. Most times displayed in the web portal are based on the organization's time zone, except for those times noted later is this article. 
+There are three time zone settings that can be referenced by Azure DevOps: 
+
+- Your browser's settings for the time and date formats 
+- Your organization or sever's time and date formats
+- Your personal profile **Time and Locale** setting. 
+
+Most times displayed in the web portal are based on your browser settings for the time and date formats as well as non-pipleine timezones. 
 
 By default, all Azure DevOps organizations and user accounts are set to UTC (Coordinated Universal Time) irrespective of what zones they are hosted in. Even if your organization migrated from an on-premises server to Azure DevOps Services, your timezone is set to UTC time.
 
@@ -48,13 +54,9 @@ If you change the organization time zone, it impacts future time stamps, but doe
 
 The user profile time zone and date-time pattern are used when displaying the following information in the web portal.  
 
-- Boards: 
-  - Project configuration, Iteration Start and End Dates
-  - Team configuration, Iteration Start and End Dates
-  - Work item form 
 - Organization Settings: Usage, Time Range
 
-For work items, the History date-time fields reference the organization's time zone setting. 
+For work items, the History date-time fields reference the organization's or server's time zone setting. 
 
 ## On-premises time zone settings
 
@@ -64,3 +66,14 @@ The time zone setting for on-premises Azure DevOps corresponds to the time zone 
 
 - [Change the time zone in Azure DevOps](../accounts/change-time-zone.md)
 - [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md)
+
+
+<!--- REMOVED from user profile time zone on 11/17/2021
+
+
+- Boards: 
+  - Project configuration, Iteration Start and End Dates
+  - Team configuration, Iteration Start and End Dates
+  - Work item form 
+
+-->

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # .NET Core CLI task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 > [!NOTE]
 > The [NuGet Authenticate](../package/nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. The restore and push commands of this task no longer take new features and only critical bugs are addressed. 
@@ -70,7 +70,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>publishWebProjects</code><br/>Publish Web Projects</td><td>If <code>true</code>, the <code>projects</code> property value will be skipped and the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory. In the absence of a web.config file or wwwroot folder, projects that use a web SDK, like Microsoft.NET.Sdk.Web, are selected. Note that this argument defaults to <code>true</code> if not specified.</td></tr>
 <tr><td><code>zipAfterPublish</code><br/>Zip Published Projects</td><td>If <code>true</code>, folder created by the publish command will be zipped and deleted.</td></tr>
 <tr><td><code>modifyOutputPath</code><br/>Add project name to publish path</td><td>If <code>true</code>, folders created by the publish command will have project file name prefixed to their folder names when output path is specified explicitly in arguments. This is useful if you want to publish multiple projects to the same folder.</td></tr>
-<tr><td><code>publishTestResults</code><br/>Publish test results</td><td>Enabling this option will generate a test results TRX file in <code>$(Agent.TempDirectory)</code> and results will be published to the server. <br>This option appends <code>--logger trx --results-directory $(Agent.TempDirectory)</code> to the command line arguments.<br>Code coverage can be collected by adding <code>--collect "Code coverage"</code> to the command line arguments. This is currently only available on the Windows platform.</td></tr>
+<tr><td><code>publishTestResults</code><br/>Publish test results</td><td>Enabling this option will generate a test results TRX file in <code>$(Agent.TempDirectory)</code> and results will be published to the server. <br>This option appends <code>--logger trx --results-directory $(Agent.TempDirectory)</code> to the command line arguments.<br>Code coverage can be collected by adding <code>--collect "Code coverage"</code> to the command line arguments.</td></tr>
 <tr><td><code>testRunTitle</code><br/>Test run title</td><td>Provides a name for the test run</td></tr>
 <tr><td><code>custom</code><br/>Custom command</td><td>The command to pass to dotnet.exe for execution.<br/>For a full list of available commands, see the <a href="/dotnet/core/tools/?tabs=netcore2x#cli-commands" data-raw-source="[dotnet CLI documentation](/dotnet/core/tools/?tabs=netcore2x#cli-commands)">dotnet CLI documentation</a></td></tr>
 <tr><td><code>feedRestore</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here. projectName/feedName for project-scoped feed. FeedName only for organization-scoped feed. Note that this is not supported for the test command.<br/>Argument aliases: <code>vstsFeed</code></td></tr>
@@ -242,7 +242,7 @@ steps:
 
 ### Project using Entity Framework has stopped working on Hosted Agents
 
-The latest .NET Core: 3.0 does not have Entity Framework(EF) built in. You will have to either install EF before beginning execution or add global.json to the project with required .NET Core SDK version. This will ensure that correct SDK is used to build EF project. If the required version is not present on the machine, add UseDotNetV2 task to your pipeline to install the required version.
+The latest .NET Core: 3.0 does not have Entity Framework(EF) built-in. You will have to either install EF before beginning execution or add global.json to the project with required .NET Core SDK version. This will ensure that correct SDK is used to build EF project. If the required version is not present on the machine, add UseDotNetV2 task to your pipeline to install the required version.
 [Learn more about EF with .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-3-0-preview-4/)
 
 ## Open Source

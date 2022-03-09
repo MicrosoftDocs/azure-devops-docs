@@ -6,14 +6,14 @@ ms.topic: reference
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
 ms.author: vijayma
 author: vijayma
-ms.date: 12/17/2019
+ms.date: 09/21/2021
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Maven task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to build your Java code.
 
@@ -152,7 +152,7 @@ The build agent must have the following capability:
     </tr>
     <tr>
        <td><code>checkstyleAnalysisEnabled</code><br/>Run Checkstyle</td>
-       <td>(Optional) Run the Checkstyle tool with the default Sun checks. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>checkStyleRunAnalysis</code></td>
+       <td>(Optional) Run the Checkstyle tool. If no checkstyle configuration is specified in the pom.xml file, default Sun checks will be used. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>checkStyleRunAnalysis</code></td>
     </tr>
     <tr>
        <td><code>pmdAnalysisEnabled</code><br/>Run PMD</td>
@@ -161,9 +161,6 @@ The build agent must have the following capability:
     <tr>
        <td><code>findbugsAnalysisEnabled</code><br/>Run FindBugs</td>
        <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code></td>
-    </tr>
-    <tr>
-       <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
     </tr>
 </table>
 
@@ -190,3 +187,8 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ::: moniker-end
 
 <!-- ENDSECTION -->
+
+## Related articles
+
+- [Maven authenticate](../package/maven-authenticate.md)
+- [Build Java apps](../../ecosystems/java.md)

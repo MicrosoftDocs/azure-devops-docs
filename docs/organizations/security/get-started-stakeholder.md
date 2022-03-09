@@ -13,7 +13,7 @@ ms.date: 09/10/2020
 
 # Get started as a Stakeholder
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops" 
 
@@ -29,7 +29,7 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
@@ -296,7 +296,7 @@ From the web portal, open a work item and choose **Add tag** and type a keyword 
 > ![Screenshot of work item form, Add one or more tags to a work item.](../../boards/queries/media/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 ![Screenshot of work item form, Add one or more tags to a work item, TFS 2015 version](../../boards/queries/media/add-tags-to-work-items-vso-tfs.png)  
 ::: moniker-end
@@ -309,8 +309,8 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
-> the permission **Create tag definition** at the project-level. To learn
-> more, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md).
+> the project-level **Create tag definition** permission. To learn
+> more, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end	
 

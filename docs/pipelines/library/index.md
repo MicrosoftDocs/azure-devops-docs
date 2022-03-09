@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Library of assets
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 A *library* is a collection of build and release assets for an Azure DevOps project.
 Assets defined in a library can be used in multiple build and release pipelines of the project.

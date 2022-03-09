@@ -6,29 +6,20 @@ ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.author: shashban
 author: shashban
-ms.date: 04/13/2020
+ms.date: 12/08/2021
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Index Sources & Publish Symbols task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
-
-> [!NOTE]
-> A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
-> **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
 Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../../../artifacts/concepts/symbols.md); to publish symbols, use this task and see [the walkthrough](../../artifacts/symbols.md).
-
-> [!NOTE]
-> This build task works only:
-> 
-> * For code in Git or TFVC stored in Team Foundation Server (TFS) or Azure Repos. It does not work for any other type of repository.
 
 ## Demands
 
@@ -108,9 +99,17 @@ None
             <p>(Required) Only available when <strong>File share</strong> is selected as the <strong>Symbol server type</strong>. Compresses your <code>pdbs</code> to save space. <br/>Default value: false
         </td>
     </tr>
-    <tr>
-        <th style="text-align: center" colspan="2">Advanced</th>
-    </tr>
+</table>
+
+### Advanced options
+
+<table>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Description</th>
+        </tr>
+    </thead>
     <tr>
         <tr>
             <td><code>DetailedLog</code><br/>Verbose logging</td>
@@ -172,17 +171,23 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 ### Where can I learn more about symbol stores and debugging?
 
-[Symbol Server and Symbol Stores](/windows/win32/debug/symbol-servers-and-symbol-stores)
+- [Publish symbols for debugging](../../artifacts/symbols.md) 
 
-[SymStore](/windows-hardware/drivers/debugger/symstore)
+- [Add symbol server to Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio.md#add-azure-artifacts-symbol-server)
 
-[Use the Microsoft Symbol Server to obtain debug symbol files](/windows/win32/dxtecharts/debugging-with-symbols)
+- [Add symbol server to WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg.md#add-the-symbol-server-to-windbg)
 
-[The Srcsrv.ini File](/windows-hardware/drivers/debugger/the-srcsrv-ini-file)
+- [Symbol Server and Symbol Stores](/windows/win32/debug/symbol-servers-and-symbol-stores)
 
-[Source Server](/windows/win32/debug/source-server-and-source-indexing)
+- [SymStore](/windows-hardware/drivers/debugger/symstore)
 
-[Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
+- [Use the Microsoft Symbol Server to obtain debug symbol files](/windows/win32/dxtecharts/debugging-with-symbols)
+
+- [The Srcsrv.ini File](/windows-hardware/drivers/debugger/the-srcsrv-ini-file)
+
+- [Source Server](/windows/win32/debug/source-server-and-source-indexing)
+
+- [Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]
 

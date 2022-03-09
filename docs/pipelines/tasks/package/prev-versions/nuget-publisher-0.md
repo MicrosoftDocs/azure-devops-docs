@@ -5,25 +5,18 @@ description: Learn all about how you can publish NuGet packages when building co
 ms.technology: vs-devops-package
 ms.assetid: E592A505-C253-4190-86D2-E4F679F5FCBE
 ms.date: 08/10/2016
+monikerRange: '<= tfs-2017'
 ---
 
 # Package: NuGet Publisher task version 0.*
 
-**Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
+[!INCLUDE [version-lt-eq-2017](../../../../includes/version-lt-eq-2017.md)]
 
 Use this task to publish your NuGet package to a server and update your feed.
 
 ## Demands
 
 None
-
-::: moniker range="> tfs-2018"
-
-## YAML snippet
-
-[!INCLUDE [temp](../../includes/yaml/NuGetPublisherV0.md)]
-
-::: moniker-end
 
 ## Arguments
 
@@ -58,7 +51,17 @@ None
 </ul>
 </td>
 </tr>
-<tr><th style="text-align: center" colspan="2">Advanced</th></tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
 <tr>
 <td>NuGet Arguments</td>
 <td>
@@ -67,6 +70,8 @@ None
 </tr>
 
 [!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
+
+</table>
 
 [!INCLUDE [temp](../../includes/control-options-arguments.md)]
 

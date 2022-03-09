@@ -1,49 +1,51 @@
 ---
 title: Try Azure Test Plans for free
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy22q3
 description: Get a free 30-day trial for Azure Test Plans (formerly Test Manager).
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 05/12/2020
+ms.date: 01/10/2021
 monikerRange: 'azure-devops'
 ---
 
 # Try Azure Test Plans for free
 
-[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to try Azure Test Plans for free for 30 days.
+Basic users have full access to Azure Test Plans during the 30-day trial. After the trial expires, buy Basic + Test Plans and assign it to specific users, so they can keep using the service. For more information, see [What is Azure Test Plans](../../test/overview.md).
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
-You must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md).
+To try Azure Test Plans, you must be the [**Organization owner**](../security/look-up-organization-owner.md) or a member of the [**Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) group. If you created the organization or collection, you're automatically a member of this group.
 
-## Try Azure Test Plans 
+## Try Azure Test Plans
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Link to "Organization settings"  highlighted.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3. Choose **Billing**.
 
-   ![Select Billing](media/shared/select-billing-organization-settings.png)
+   ![Link to "Billing" highlighted.](media/shared/select-billing-organization-settings.png)
 
 4. Select **Start free trial**.
 
-   ![Select Start free trial](media/try-additional-features/start-free-trial.png)
+   ![Link to "Start free trial" is highlighted.](media/try-additional-features/start-free-trial.png)
 
 5. Select **Start free trial**.
 
-    ![Start 30-day Test Plans trial, select Start free trial](media/try-additional-features/start-thirty-day-test-plans-trial.png)
+    ![Select the Start free trial button.](media/try-additional-features/start-thirty-day-test-plans-trial.png)
 
-6. (Optional) Assign users **Basic** or **Basic + Test Plans**, and they can access Test Plans during the trial. Assigning **Basic + Test Plans** requires that you [set up billing](set-up-billing-for-your-organization-vs.md) first. But, charges for those users don't start until the trial expires.
+6. Assign users **Basic + Test Plans**, so they can access Test Plans during the trial. 
+
+For more information about using Azure Test Plans, see [Navigate Test Plans](../../test/navigate-test-plans.md).
 
 ## Next steps
 

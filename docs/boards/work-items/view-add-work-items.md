@@ -1,7 +1,7 @@
 ---
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
-description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views 
+description: Learn how to view and filter work items like user stories, issues, and bugs from the Work Items hub and seven personalized pivot views. 
 ms.custom: boards-work-items, seodec18, devx-track-azurecli, contperf-fy20q4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
@@ -12,15 +12,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/16/2021
+ms.date: 02/14/2022
 ---
 
 # View and add work items using the Work Items page  
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019** 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
-
-View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, as well as interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
+View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, and interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -46,7 +46,7 @@ You can start viewing and adding work items once you connect to a project.
 
 # [Web portal](#tab/browser)
 
-(1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
+(1) Check that you've selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open Boards>Work Items](media/view-add/open-work-items-agile.png)
@@ -77,7 +77,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
+There's no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
 
 ***
 
@@ -106,11 +106,11 @@ Using the drop-down menu, you can focus on relevant items inside a project using
    :::column-end:::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2020" 
-      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. Does not include items moved to the Removed state. To open or update a work item, simply click its title.  
+      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. Doesn't include items moved to the Removed state. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
       - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
       - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
-      - **My team(s)**: lists work items that you&#39;re team members have recently viewed or updated.  
+      - **My team(s)**: lists work items that your team members have recently viewed or updated.  
       ::: moniker-end
       ::: moniker range="< azure-devops-2020" 
       - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
@@ -186,8 +186,10 @@ ID    Type    Title      Assigned To          State
 
 ## Add a work item
 
-Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
+Adding a work item is just one click away. Choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
+> [!NOTE]   
+> New work items are assigned the last **Area Path** and **Iteration Path** selected by the user. 
 
 # [Web portal](#tab/browser)
 
@@ -256,7 +258,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
+There's no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
 
 ***
 
@@ -280,9 +282,9 @@ To select several items in a sequence, hold down the shift key from a web portal
 
 ## Open a view as a query  
 
-From the web portal, you can open any view, filtered view, or selected set of work items as a query. Simply choose **Open in Queries** or the **Open selected items in Queries** option from the context menu. 
+From the web portal, you can open any view, filtered view, or selected set of work items as a query. Choose **Open in Queries** or the **Open selected items in Queries** option from the context menu. 
 
-Queries provide additional features that you can use, including: 
+Queries provide other features that you can use, including: 
 * Edit one or more fields of several work items    
 * Add or remove tags from several work items 
 * Change the work item type 

@@ -1,24 +1,24 @@
 ---
-title: Display rollup columns that show progress, counts, or totals 
+title: Display rollup columns to show progress, counts, or totals in Azure Boards
 titleSuffix: Azure Boards
-description: Add or remove the display of rollup columns that show progress or totals of hierarchical items 
+description: Learn how to add or remove the rollup column displays that show progress or totals of hierarchical items in Azure Boards
 ms.technology: devops-agile
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 05/21/2021
+ms.date: 10/08/2021
 ---
 
-# Display rollup progress or totals
+# Display rollup progress or totals in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 <a id="column-options">  </a>
 
 Rollup columns allow you to view progress bars or totals of numeric fields or descendant items within a hierarchy. Descendant items correspond to all child items within the hierarchy. You can add one or more rollup columns to a product or portfolio backlog. For information on linking work items in a hierarchy, see [Linking, traceability, and managing dependencies, Parent-child work item links](../queries/link-work-items-support-traceability.md#parent-child-work-item-links).
 
-For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics includes all child Features and their child or grand-child work items. Descendant items for Features includes all child User Stories and their child work items.
+For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics include all child Features and their child or grand-child work items. Descendant items for Features include all child User Stories and their child work items.
 
 > [!IMPORTANT]   
 > Rollup data supports progress bars, counts of work items, or sums of numeric fields within a project. Child items that link to a different project aren't counted within the parent rollup calculations. Also, links to test cases or test artifacts are also not included in rollup calculation. These items are linked using a test-specific link types. 
@@ -45,26 +45,26 @@ For example, here we show **Progress by Work Items** which displays progress bar
 
 ## Rollup and hierarchical work items
 
-The default set of backlog work items which support a natural hierarchical grouping varies depending on the process chosen for your project. The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](../boards/kanban-epics-features-stories.md).
+The default set of backlog work items that supports a natural hierarchical grouping varies depending on the process chosen for your project. The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](../boards/kanban-epics-features-stories.md).
 
 #### [Agile process](#tab/agile-process) 
 
-The following image shows the Agile process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as User Stories or Tasks&mdash; by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. 
+The following image shows the Agile process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as User Stories or Tasks—by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > ![Agile process hierarchy, conceptual image](media/rollup/agile-process-hierarchy.png)  
 
 
-#### [Basic process](#tab/basic-process) 
+### [Basic process](#tab/basic-process) 
 
 The following image shows the Basic process backlog work item hierarchy that includes epics, issues, and tasks.  
 
 > [!div class="mx-imgBorder"]  
 > ![Basic process hierarchy, conceptual image](media/rollup/basic-process-hierarchy.png) 
 
-#### [Scrum process](#tab/scrum-process) 
+### [Scrum process](#tab/scrum-process) 
 
-The following image shows the Scrum process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as Product Backlog Items or Tasks&mdash; by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.   
+The following image shows the Scrum process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as Product Backlog Items or Tasks—by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.   
 
 > [!div class="mx-tdCol2BreakAll"]
 > ![Agile process hierarchy, conceptual image](media/rollup/scrum-process-hierarchy.png)  
@@ -72,9 +72,9 @@ The following image shows the Scrum process backlog work item hierarchy. Each te
 
 
 
-#### [CMMI process](#tab/cmmi-process) 
+### [CMMI process](#tab/cmmi-process) 
 
-The following image shows the CMMI process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as Requirements or Tasks&mdash; by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. 
+The following image shows the CMMI process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as Requirements or Tasks—by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting. 
 
 > [!div class="mx-imgBorder"]  
 > ![CMMI process hierarchy, conceptual image](media/rollup/cmmi-process-hierarchy.png) 
@@ -85,9 +85,9 @@ The following image shows the CMMI process backlog work item hierarchy. Each tea
  
 ## Open a product or portfolio backlog 
 
-Each user can set their own column options which persist for each backlog across the user's sessions. 
+Each user can set their own column options that persist for each backlog across the user's sessions. 
 
-1. Open a product or portfolio backlog. Optionally, enable **Show parents** from your view options. Note that even if child items aren't listed, rollup for them displays.
+1. Open a product or portfolio backlog. Optionally, enable **Show parents** from your view options. Even if child items aren't listed, rollup for them displays.
 
 	> [!TIP]  
 	> Consider opening a portfolio backlog and choose to view **In Progress Items** and **Completed Child Items**. That way, you can check the State value of items against the rollup value. 
@@ -115,7 +115,7 @@ Each user can set their own column options which persist for each backlog across
 
 1. Choose from the menu provided. 
 
-	- **Progress bar** displays progress bars based on the percentage of associated descendant work items which have been completed or closed. 
+	- **Progress bar** displays progress bars based on the percentage of associated descendant work items that have been completed or closed. 
 	- **Total number** displays the sum of descendant items or the associated fields of descendant items. Totals provide a measure of the size of a Feature or Epic based on the number of its child items. For example, **Count of Tasks** shows the sum of all tasks that are linked to parent items. The active or closed state is ignored. 
 
 	> [!div class="mx-imgBorder"]  
@@ -136,9 +136,9 @@ Each user can set their own column options which persist for each backlog across
 
 ## Analytics, latency, and error states
 
-Rollup data is calculated from the Analytics service. When there is a large amount of data, it's possible to experience some latency in displaying rollup. If you hover over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon, you can determine the state of the data. 
+Rollup data is calculated from the Analytics service. When there's a large amount of data, it's possible to experience some latency in displaying rollup. If you hover over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon, you can determine the state of the data. 
 
-If an error occurs in retrieving rollup data, you'll see an  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services is still processing changes made which may affect rollup calculations. Once the Analytics data is up-to-date, the rollup columns will refresh with the latest data.  
+If an error occurs in retrieving rollup data, you'll see an  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services are still processing changes made which may affect rollup calculations. Once the Analytics data is up to date, the rollup columns will refresh with the latest data.  
 
 > [!div class="mx-imgBorder"]  
 > ![Error getting data](media/rollup/error-getting-data.png) 
@@ -165,15 +165,15 @@ If you add a custom work item type or field to a backlog level, you can view rol
 	> [!div class="mx-imgBorder"]  
 	> ![Custom Rollup column dialog](media/rollup/custom-rollup-column-dialog.png) 
 
-1. Choose **OK**. and then **OK** to complete your operations.. 
+1. Choose **OK**. and then **OK** to complete your operations. 
 
 	> [!TIP]  
 	> If you add custom fields or custom work item types, you must refresh the backlog page to reflect your changes.  
 ## Use keyboard shortcuts to change the column order, column width, or sort options
 
 You can change the column order, column size, or sort options by using the following keyboard commands:
-- To change the column order, click the field and drag it to a new location
-- To re-size a column, choose the column divider to the right of the field and drag to a new location  
+- To change the column order, select the field and drag it to a new location
+- To resize a column, choose the column divider to the right of the field and drag to a new location  
  
  
 ## Related articles

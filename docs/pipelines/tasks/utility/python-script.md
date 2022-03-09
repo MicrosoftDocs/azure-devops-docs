@@ -10,7 +10,7 @@ monikerRange: azure-devops
 
 # Python Script task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run a Python script.
 
@@ -34,12 +34,7 @@ Use this task to run a Python script.
 | `workingDirectory`<br>Working directory | (Optional) |
 | `failOnStderr`<br>Fail on standard error | (Optional) If true, this task will fail if any text is written to `stderr`. |
 
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Remarks
 

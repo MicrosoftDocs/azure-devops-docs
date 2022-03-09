@@ -5,20 +5,24 @@ description: Lock or unlock files or folder under TFVC version control using the
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Lock Command
+# Lock command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Locks or unlocks a file or folder to deny or restore the right of users to check out an item for edit into a different workspace or to check in pending changes to an item from a different workspace.
+The **lock** command locks or unlocks a file or folder to deny or restore the right of users to check out an item for edit into a different workspace or to check in pending changes to an item from a different workspace.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md#lock-permission).
+To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace.
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf lock itemspec /lock:(none|checkout|checkin) 
@@ -27,37 +31,103 @@ tf lock itemspec /lock:(none|checkout|checkin)
 
 ## Parameters
 
-<table><thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>itemspec</em></p></td>
-	<td><p>Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
-<tr>
-	<td><p><em>workspacename</em></p></td>
-	<td><p>The user-provided value for the <strong>/workspace</strong> option.</p></td></tr>
-<tr>
-	<td><p><em>username</em></p></td>
-    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
-<tr>
-	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains the file or folder that you want to lock or unlock (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
-</table>
+### Argument
 
-<table><thead>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/lock</strong></p></td>
-	<td><p>Specifies a lock type or removes a lock from an item. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Removes a lock from an item.</p></li><li><p><strong>Checkin</strong></p><p>Enables an item to be checked out and edited in all workspaces but prevents users from checking in changes to the item outside the specified <strong>/workspace</strong> until you explicitly release the check-in lock. If the specified item is locked in any other workspace, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or checking out the specified items until you explicitly release the lock. If users have locked any one of the specified items, or if pending changes exists against any one of the items, the lock operation fails.</p></li></ul></td></tr>
-<tr>
-	<td><p><strong>/workspace</strong></p></td>
-	<td><p>Specifies the name of a different workspace in which to apply the lock. By default, the lock is applied in the workspace in which you are currently.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td></tr>
-<tr>
-	<td><p><strong>/collection</strong></p></td>
-	<td><p>Specifies the project collection.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="3":::
+   Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+
+   > [!Note]  
+   > You can specify more than one *Itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *workspacename*
+   :::column-end:::
+   :::column span="3":::
+   The user-provided value for the **/workspace** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName.*
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="3":::
+   The URL of the project collection that contains the file or folder that you want to lock or unlock (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+
+### Option
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/lock**
+   :::column-end:::
+   :::column span="3":::
+   Specifies a lock type or removes a lock from an item. For more information, see [Understanding Lock Types](understand-lock-types.md).
+   Lock Options:
+   - **None**  
+     Removes a lock from an item.
+
+   - **Checkin**  
+     Enables an item to be checked out and edited in all workspaces but prevents users from checking in changes to the item outside the specified **/workspace** until you explicitly release the check-in lock. If the specified item is locked in any other workspace, the lock operation fails.
+
+   - **Checkout**  
+     Prevents users from checking in or checking out the specified items until you explicitly release the lock. If users have locked any one of the specified items, or if pending changes exists against any one of the items, the lock operation fails.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/workspace**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the name of a different workspace in which to apply the lock. By default, the lock is applied in the workspace in which you are currently.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the user name and password to authenticate the user with Azure DevOps.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 You can use the lock command to temporarily freeze the Team Foundation version control server version of an item so that you can check in a pending change without having to resolve any merge conflicts. If you want to permanently prevent access to an item in the Team Foundation version control server, you should use the [Permission Command](permission-command.md) instead.
@@ -65,7 +135,7 @@ You can use the lock command to temporarily freeze the Team Foundation version c
 > [!NOTE]
 > As a courtesy to your teammates, notify them when you apply a lock to an item, explain why you are doing this, and estimate when you plan to remove the lock, if you can.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ### How to Lock an Item
 
@@ -136,10 +206,9 @@ c:\projects>tf lock /lock:none src/
 
 ## Related articles
 
-- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
 - [Checkout and Edit Commands](checkout-or-edit-command.md)
 - [Status Command](status-command.md)
 - [Understanding Lock Types](understand-lock-types.md)
-- [Create a Workspace to Work with your Project](create-work-workspaces.md)
-- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-- [Working with Version Control Locks](work-version-control-locks.md)
+- [Create and work with workspaces](create-work-workspaces.md)
+- [Work with version control locks](work-version-control-locks.md)

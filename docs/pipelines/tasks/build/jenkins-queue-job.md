@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Jenkins Queue Job task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to queue a job on a Jenkins server.
 
@@ -103,6 +103,19 @@ None
               <li>Password</li></ul>
               </p>
        </td>
+   </tr>
+   <tr>
+      <td><code>retryCount</code><br/>Number of times agent shall retry connection on error</td>
+      <td>
+         <p>(Option) This option sets the amount of connection retries when connection failure or error occurs.</p><br/>Default value: '3'
+      </td>
+       </td>
+   </tr>
+   <tr>
+      <td><code>delayBetweenRetries</code><br/>Timeout between connection retries</td>
+      <td>
+         <p>(Optional) This option sets the amount of time between connection retries when an error occurs. This is specified in seconds.</p><br/>Default value: '60'
+      </td>
    </tr>
    <tr>
       <td><code>failOnUnstableResult</code><br/>Fail when Jenkins build returns unstable result</td>

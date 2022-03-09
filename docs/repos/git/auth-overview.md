@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Authentication overview
 
-[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Choose a method to securely access the code in Azure Repos, Azure DevOps Server 2019, or Team Foundation Server (TFS) Git repositories.
 Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.
@@ -43,7 +43,7 @@ Use PATs to authenticate if you don't already have SSH keys set up on your syste
 
 ### <a name="use-credential-managers-to-generate-tokens"></a>Use Git Credential Manager to generate tokens
 
-The [Git Credential Manager Core](set-up-credential-managers.md) is an optional tool that makes it easy to create PATs when you're working with Azure Repos. 
+The [Git Credential Manager](set-up-credential-managers.md) is an optional tool that makes it easy to create PATs when you're working with Azure Repos. 
 Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. 
 
 PATs are generated on demand when you have the credential manager installed. 

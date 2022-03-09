@@ -7,13 +7,13 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017 <= azure-devops'
+monikerRange: '>= tfs-2017'
 ms.date: 04/26/2021
 ---
 
 # Install and configure Search
 
-[!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 Learn how to do the following actions for the Search extension for Code, Wiki, and Work item searches in Azure DevOps Server.
 - [Configure Search](#configure-search)

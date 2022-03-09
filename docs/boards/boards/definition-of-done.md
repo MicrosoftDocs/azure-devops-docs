@@ -2,7 +2,7 @@
 title: Definition of Done on the Kanban board
 titleSuffix: Azure Boards
 ms.global_help.title: Definition of Done
-description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board  
+description: Learn how to support your team's shared understanding. Build this understanding by providing a definition for what "done" means for each column of the Kanban board. 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
@@ -10,14 +10,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 02/14/2019
+ms.date: 10/15/2021
 ---
 
-# Definition of Done
+# Specify the Definition of Done criteria for your Kanban columns
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
-As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
+As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. Help your team agree what "done" means by specifying the Definition of Done criteria for each Kanban column. Defining what "done" means helps you identify the essential tasks to complete before moving an item into a downstream stage. 
 Also, you'll have implemented one of the core Kanban tenets: **make processes and policies explicit.**
 
 When set, team members can quickly double-check the done criteria.
@@ -39,7 +39,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
-## Specify the Definition of Done for a column 
+## Add the Definition of Done to a column 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -100,13 +100,13 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker-end   
 
-Team members can quickly check that they have met the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
+Team members can quickly check that they've met the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
 
 
 ## Related articles
 
 - [Add, rename, move, and delete columns](add-columns.md)
 - [Work in Progress limits](wip-limits.md)  
-- [Add swimlanes, expedite work](expedite-work.md)
+- [Add swimlanes, speed up work](expedite-work.md)
 - [Split columns](split-columns.md) 
 - [Customize cards](../../boards/boards/customize-cards.md)

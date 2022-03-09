@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # cURL Upload Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to use [cURL](https://curl.haxx.se/) to upload files with supported protocols
 such as FTP, FTPS, SFTP, HTTP, and more.

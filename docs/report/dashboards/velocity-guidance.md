@@ -1,19 +1,19 @@
 ---
 title: Velocity metrics and usage guidance
 titleSuffix: Azure DevOps 
-description: Guidance for working with velocity charts generated for an Azure DevOps team or project 
+description: Learn about working with velocity charts generated for an Azure DevOps team or project.
 ms.custom: dashboards
 ms.technology: devops-analytics  
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 07/14/2020
+monikerRange: '<= azure-devops'
+ms.date: 09/28/2021
 ---
 
 # Velocity metrics and usage guidance  
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 Velocity metrics provide useful information to support the following team and product management activities:  
 - Sprint planning  
@@ -30,12 +30,12 @@ Velocity metrics provide useful information to support the following team and pr
 ::: moniker range=">= azure-devops-2020"
 
 You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:  
-- **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
+- **Planned** - calculated based on the amount of work assigned to the sprint before the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
 	> [!TIP]   
 	> To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
-- **Completed** - calculated based on the amount of work  assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
-- **Completed Late**  - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.  
-- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed. 
+- **Completed** - calculated based on the amount of work  assigned to the sprint before the start of the sprint and completed before the sprint end date.
+- **Completed Late**  - calculated based on the amount of work assigned to the sprint before the start of the sprint but was completed after the end of the sprint.  
+- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint before the start of the sprint and hasn't been set to completed. 
 
 #### [In-context Velocity chart](#tab/in-context)
 
@@ -53,7 +53,7 @@ You can configure each chart in the following ways:
 - Count of work items that appear on the backlog
 - Number of iterations.   
 
-The widget supports some additional configuration options. To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
+The widget supports some more configuration options. To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
  
 
 ::: moniker-end
@@ -104,11 +104,11 @@ To configure or view Velocity charts, see [Configure and view Velocity charts](t
 
 ## Minimize variability in your estimates 
 
-Estimates, by their nature, don't reflect reality. They represent a best guess by the team as to the effort required to complete an item, relative to the effort of other items on the backlog.  
+Estimates, by their nature, don't reflect reality. They represent a best guess by the team as to the effort required to complete an item, as it relates to the effort to complete other items on the backlog.  
 
-By minimizing the size variability of your backlog items, you help strengthen the team's ability to  create more accurate estimates.  Variability increases uncertainty. By minimizing the variability of your estimates, you increase the likelihood of more reliable velocity metrics and forecast results.  
+By minimizing the size variability of your backlog items, you help strengthen the team's ability to create truer estimates.  Variability increases uncertainty. By minimizing the variability of your estimates, you increase the likelihood of more reliable velocity metrics and forecast results.  
 
-## Velocity is not a KPI 
+## Velocity not a key performance indicator 
 
 While velocity provides a measure of a team's ability to deliver work, you shouldn't confuse it as a key performance indicator for the team. 
 

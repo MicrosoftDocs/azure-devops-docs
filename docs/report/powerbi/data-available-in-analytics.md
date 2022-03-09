@@ -1,19 +1,18 @@
 ---
 title: Data available from Analytics
 titleSuffix: Azure DevOps
-description: Data available for reporting purposes using Analytics for Azure DevOps 
+description: Review the data available for reporting purposes using Analytics for Azure DevOps.
 ms.technology: devops-analytics
-ms.reviewer: greggboe   
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms date: 10/04/2021
 ---
 
 # Data available from Analytics
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020. It is in preview for Azure DevOps Server 2019. 
 
@@ -50,10 +49,15 @@ Currently, you can access the following data from Analytics. This information wa
       [Boards](https://azure.microsoft.com/services/devops/boards/)
    :::column-end:::
    :::column span="":::
-      [In-context reports](../dashboards/overview.md#in-context-reports-work-tracking), [Widgets](../dashboards/analytics-widgets.md), [OData](../extend-analytics/quick-ref.md), [Power BI](overview.md)
+      - [In-context reports](../dashboards/overview.md#in-context-reports-work-tracking)
+      - [Widgets](../dashboards/analytics-widgets.md)
+      - [OData](../extend-analytics/quick-ref.md)
+      - [Power BI](overview.md)
    :::column-end:::
    :::column span="":::
-      [Widgets](../dashboards/analytics-widgets.md), [OData](../extend-analytics/quick-ref.md), [Power BI](overview.md)
+      - [Widgets](../dashboards/analytics-widgets.md)
+      - [OData](../extend-analytics/quick-ref.md)
+      - [Power BI](overview.md)
    :::column-end:::
    :::column span="":::
          
@@ -65,10 +69,12 @@ Currently, you can access the following data from Analytics. This information wa
       [Pipelines](https://azure.microsoft.com/services/devops/pipelines/)
    :::column-end:::
    :::column span="":::
-      [Test Analytics](../../pipelines/test/test-analytics.md), [Pipeline Analytics](../../pipelines/reports/pipelinereport.md), [OData Preview](../extend-analytics/quick-ref.md)
+      - [Test Analytics](../../pipelines/test/test-analytics.md)
+      - [Pipeline Analytics](../../pipelines/reports/pipelinereport.md)
+      - [OData Preview](../extend-analytics/quick-ref.md)
    :::column-end:::
    :::column span="":::
-      [Test Analytics](../../pipelines/test/test-analytics.md)
+      - [Test Analytics](../../pipelines/test/test-analytics.md)
    :::column-end:::
    :::column span="":::
          
@@ -80,7 +86,7 @@ Currently, you can access the following data from Analytics. This information wa
       [Test Plans](https://azure.microsoft.com/services/devops/test-plans/)
    :::column-end:::
    :::column span="":::
-      [Progress Report](../../test/track-test-status.md)
+      - [Progress Report](../../test/progress-report.md)
    :::column-end:::
    :::column span="":::
       None
@@ -123,12 +129,9 @@ Currently, you can access the following data from Analytics. This information wa
  
 
 > [!NOTE]   
-> Analytics doesn't support reporting on plain text and HTML fields at this time. 
+> Analytics doesn't support reporting on plain text and HTML fields.  
 
-As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/).
-
-
-## Try this next
+## Next step
 
 > [!div class="nextstepaction"]
 > [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)

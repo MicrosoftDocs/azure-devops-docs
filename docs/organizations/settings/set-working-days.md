@@ -6,14 +6,14 @@ ms.technology: devops-agile
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 11/03/2020
 ---
 
 # Configure working days  
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Configure the days that your team works. Your team's working days aid in capacity planning purposes and when you're using sprint and scrum methods in Azure Boards. Each team's sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked.
 

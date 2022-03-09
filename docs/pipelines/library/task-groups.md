@@ -1,4 +1,4 @@
-﻿---
+---
 title: Task groups in Azure Pipelines and TFS (classic)
 ms.custom: seodec18
 description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS)
@@ -12,14 +12,14 @@ monikerRange: '>= tfs-2017'
 
 # Task groups for builds and releases (classic)
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > [!NOTE]
-> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](../yaml-schema.md#step-templates).
+> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](/azure/devops/pipelines/yaml-schema/steps-template).
 
 A *task group* allows you to encapsulate a sequence of tasks, already defined
 in a build or a release pipeline, into a single reusable task that can be
@@ -178,7 +178,7 @@ Any task group update can be a minor or major version update.
 **Reason:** When you have a substantial change which might break the existing pipelines, you would like to test it out and roll out as a new version. Users can choose to upgrade to new version or choose to stay on the same version. This functionality is same as a normal task version update. 
 
 However, if your task group update is not a breaking change but you would like to validate first and then enforce pipelines to consume the latest changes, you can follow below steps.
-1.	Update the task group with your desired changes and save it as a draft. A new draft task group ‘<Taskgroupname>-Draft’ will be created which contains the changes you have done. And this draft task group is accessible for you to consume in your pipelines.
+1.	Update the task group with your desired changes and save it as a draft. A new draft task group ‘\<Taskgroupname\>-Draft’ will be created which contains the changes you have done. And this draft task group is accessible for you to consume in your pipelines.
 1.	Now, instead of publishing as preview, you can directly consume this draft task group in your test pipeline.
 1.	Validate this new draft task group in your test pipeline and once you are confident, go back to your main task group and do the same changes and save it directly. This will be taken as minor version update.
 1.	The new changes will now show up in all the pipelines where this task group is used.

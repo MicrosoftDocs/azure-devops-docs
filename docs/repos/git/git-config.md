@@ -11,7 +11,8 @@ monikerRange: '>= tfs-2018'
 
 # Git preferences and settings in Visual Studio
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Visual Studio allows you to configure and view common Git settings and preferences, such as your name and email address, your preferred diff and merge tools, and more. These preferences and settings can be viewed and configured in **Team Explorer** on either the **Global Settings** page (applies to all your repositories) or the **Repository Settings** page (applies to the current repository).
 
@@ -56,6 +57,7 @@ Visual Studio allows you to configure and check some of the most common Git conf
 >Git settings configured in Visual Studio's **Global Settings** correspond to settings in Git's user-specific configuration file, and the settings in **Repository Settings** correspond to settings in the repository-specific configuration file. For more information about Git configuration, see the [Pro Git chapter on customizing Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration), the [git-config documentation](https://git-scm.com/docs/git-config), and the [Pro Git reference on configuration files](https://git-scm.com/docs/git-config#FILES). To configure Git settings not exposed in Visual Studio, use the `git config` command to write a value to your configuration files: `git config [--local|--global|--system] section.key value`.
 
 ### Name and email
+
 The name and email that you provide will be used as the committer information for any commit you make. This setting is available at both global and repository scopes, and corresponds to the `git config` [user.email](https://git-scm.com/docs/git-config#git-config-useremail) and [user.name](https://git-scm.com/docs/git-config#git-config-username) settings.
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -73,6 +75,7 @@ The name and email that you provide will be used as the committer information fo
     ![Repository settings username and email](media/git-config/repository-settings-username-email.png)
 
 #### [Command Line](#tab/command-line/)
+
 To set your user name, open a command prompt, navigate to the repository, and run:
 ```console
 git config user.name "Jamal Hartnett"
@@ -89,6 +92,7 @@ Similarly, to set your email, run `git config --global user.email "jamal@fabrika
 
 * * *
 ### Prune remote branches during fetch
+
 Pruning removes remote-tracking branches that no longer exist on the remote and helps you keep your branches list clean and up to date. This setting is available at both global and repository scopes, and corresponds to the `git config` [fetch.prune](https://git-scm.com/docs/git-config#git-config-fetchprune) setting.
 
 
@@ -149,6 +153,8 @@ git config [--local|--global|--system] pull.rebase [true|false|interactive|prese
 ```
 
 * * *
+
+
 ### Cryptographic network provider
 
 Cryptographic network provider is a Git configuration setting at global scope that configures which SSL backend to use at runtime, and corresponds to the `git config` http.sslBackend setting. The values are:
@@ -179,6 +185,8 @@ git config --global http.sslBackend [openssl|schannel]
 ```
 
 * * *
+
+
 ### Ignore & attributes files
 
 The **Ignore & attributes files** section is available at repository scope and allows you to view and edit the [gitignore](https://git-scm.com/docs/gitignore) and [gitattributes](https://git-scm.com/docs/gitattributes) files for your repository.
@@ -188,10 +196,10 @@ The **Ignore & attributes files** section is available at repository scope and a
 
 
 ### Diff & merge Tools
+
 Git will show diffs and merge conflicts in your preferred tools. The settings in this section correspond to the `git config` [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) and [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) settings. You can configure Git to use Visual Studio as your merge or diff tool in **Global Settings** and **Repository Settings** by selecting **Use Visual Studio**. To configure other diff and merge tools, use `git config` with the [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) or [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) switch.
 
 ![Diff and merge tools.](media/git-config/diff-merge-tools.png)
-
 
 
 
@@ -249,7 +257,9 @@ For more information on these options, see [--commit and --no-commit](https://gi
 
 
 ### Enable push --force
-Requires Visual Studio 2017 and later.
+
+> [!NOTE]  
+> Requires Visual Studio 2017 and later.
 
 When enabled, this setting allows you to `push --force` from within Visual Studio. By default **Enable push --force** is disabled.
 

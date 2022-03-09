@@ -1,4 +1,4 @@
-﻿---
+---
 title: Use PowerShell scripts to customize pipelines
 ms.custom: seodec18
 description: Learn how you can use a script to customize your pipeline
@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Use a PowerShell script to customize your pipeline
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/dn376353(v=vs.120))**
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

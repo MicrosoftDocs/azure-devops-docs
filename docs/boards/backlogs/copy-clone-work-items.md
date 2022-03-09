@@ -1,24 +1,24 @@
 ---
-title: Copy or clone stories, issues, or other work items
+title: Copy or clone stories, issues, or other work items in Azure Boards
 titleSuffix: Azure Boards  
-description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure Boards, Azure DevOps  
-ms.custom: seodec18  
+description: Learn how to copy or clone user stories, issues, bugs, tasks, or other work items in Azure Boards. 
+ms.custom: "seodec18, cross-project"   
 ms.technology: devops-agile
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 04/09/2021 
+monikerRange: '<= azure-devops'
+ms.date: 11/10/2021
 ---
 
-# Copy or clone work items  
+# Copy or clone stories, issues and other work items
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
    
 ::: moniker range=">= azure-devops-2019"
 
-There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
+There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. Also, you can choose to change the project or work item type when copying/cloning a work item. 
 
 ::: moniker-end
 
@@ -65,26 +65,23 @@ Clone a work item when you want to create another instance of it. This action op
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
     ![web portal, user story work item form, open context menu, choose Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
 
-1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. 
+1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide more details. 
 
     :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Copy work item dialog":::
 
 	Optionally, check one or more of the boxes: 
-
-	> [!NOTE]   
-	> When you copy the work item to a different project, **Include child work items** is disabled. 
-
+ 
 	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
 	- **Include existing attachments**: To include attachments in the copied work item
 	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
+	
+	> [!NOTE]   
+	> - When you copy the work item to a different project, **Include child work items** is disabled. 
+	> - When you copy a work item and choose to **Include child work items**, a copy is made of each child work item and linked to the copied work item through a Parent-Child link. 
+	> - The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update.   
 
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#copy-work-item-to-copy-children).  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -110,7 +107,7 @@ Clone a work item when you want to create another instance of it. This action op
 ::: moniker range="tfs-2018"
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
     ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy-work-item-copy-clone-ts.png) 
-1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide more details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
     ![Copy work item dialog](media/copy-work-item-copy-clone-ts-dialogue.png)  
 
@@ -121,13 +118,13 @@ Clone a work item when you want to create another instance of it. This action op
 
 ::: moniker range="tfs-2017"
 
-1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and select **Create copy of work item**.  
 
-    ![TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item](media/copy-work-item-copy-clone-2017.png) 
+    ![TFS 2017, web portal, user story work item form, open context menu, select Create copy of work item](media/copy-work-item-copy-clone-2017.png) 
 
 1. Choose the project and work item type if different from the copied work item. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-    ![TFS 2017, web portal, user story work item form, open context menu, click Copy work item](media/copy-work-item-copy-clone-2017-dialogue.png)  
+    ![TFS 2017, web portal, user story work item form, open context menu, select Copy work item](media/copy-work-item-copy-clone-2017-dialogue.png)  
 
 1. Choose **OK**.
 
@@ -148,18 +145,23 @@ Clone a work item when you want to create another instance of it. This action op
 
 ::: moniker range="tfs-2013"
 
-1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type. 
+1. From the web portal, open the work item you want to copy or clone, and select the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type. 
 
     ![TFS 2013, web portal, user story work item form, click copy-clone icon](media/IC712055.png)  
 
-2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type.  
+2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide more details. The copied work item is automatically linked to the original work item through a Related link type.  
 ::: moniker-end
+
+> [!TIP]    
+> Copied or cloned work items always have an ID that is greater than the work items from which they were copied or cloned.   
+
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Change the work item type  
 
-If you have a large number of work items whose type you want to change, use [Change work item type](../../reference/add-modify-wit.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+If you have a large number of work items whose type you want to change, use [Change work item type](move-change-type.md). If the **Change work item type** option isn't available to you, you can export a set of work items using Excel or CSV, copy them to a new list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md). 
+
 ::: moniker-end
 
 <a id="html"></a>
@@ -196,7 +198,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
     ![TFS 2017, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/bulk-modify-copy-as-html.png) 
    ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
@@ -221,22 +223,22 @@ The formatted table contains a link to each work item included in your selected 
 
 ## Copy the URL
 
-#### [Browser](#tab/browser/)
+### [Browser](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"
-Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
+Copy the URL from the web browser address or hover over the title and then select the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
 <img src="media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" />
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
-Right click the link ID to open the browser copy link option.
+::: moniker range="<= tfs-2015" 
+Right-click the link ID to open the browser copy link option.
 
 <img src="media/copy-work-item-url-2015.png" alt="Copy hyperlink for a work item from web portal" /> 
 ::: moniker-end
 
 
-#### [Visual Studio](#tab/visual-studio/)
+### [Visual Studio](#tab/visual-studio/)
 
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
@@ -245,10 +247,15 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 * * *
 
 
-## Related topics
+## Related articles
 
--  [Azure Boards FAQs](../faqs.yml) 
+- [Copy or clone test plans, test suites, test cases, and other test items](../../test/copy-clone-test-items.md) 
 - [Bulk modify work items](bulk-modify-work-items.md)   
-- [Move, change, or delete work items](remove-delete-work-items.md)  
+- [Move work items and change the work item type](move-change-type.md)
+- [Remove, delete, or restore work items](remove-delete-work-items.md)  
 - [Pre-populate fields using work item templates](work-item-template.md)
+- [Azure Boards FAQs](../faqs.yml) 
+
+
+
 

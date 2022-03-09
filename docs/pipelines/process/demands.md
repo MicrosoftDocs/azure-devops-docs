@@ -12,6 +12,8 @@ monikerRange: '>= tfs-2015'
 
 # Specify demands
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
@@ -38,7 +40,7 @@ To add a single demand to your YAML build pipeline, add the `demands:` line to t
 ```yaml
 pool:
   name: Default
-  demands: SpecialSoftware # Check if SpecialSoftware capability exists
+  demands: SpecialSoftware # exists check for SpecialSoftware
 ```
 
 Or if you need to add multiple demands, add one per line.
@@ -47,14 +49,14 @@ Or if you need to add multiple demands, add one per line.
 pool:
   name: MyPool
   demands:
-  - myCustomCapability   # check for existence of capability
-  - agent.os -equals Darwin  # check for specific string in capability
+  - myCustomCapability   # exists check for myCustomCapability
+  - Agent.Version -equals 2.144.0 # equals check for Agent.Version 2.144.0
 ```
 
 > [!NOTE]
 > Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the only two supported operations for demands.
 
-For more information and examples, see [YAML schema - Demands](../yaml-schema.md#demands).
+For more information and examples, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool).
 
 # [Classic](#tab/classic)
 

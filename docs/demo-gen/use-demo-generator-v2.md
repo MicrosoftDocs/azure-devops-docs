@@ -11,6 +11,8 @@ ms.date: 10/10/2019
 
 # Get started creating and populating demo Azure DevOps Services projects
 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+
 1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by selecting the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
 2. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
@@ -36,7 +38,7 @@ ms.date: 10/10/2019
 
     The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. 
 
-    There are several other templates available, including **MyHealthClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD pipelines; and **MyShuttle**, which defines a Java app and Azure App service deployment. If you are following a lab from [Azure DevOps Labs](https://www.azuredevopslabs.com), select the **DevOps Labs** tab to choose the template
+    There are several other templates available, including **MyHealthClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD pipelines; and **MyShuttle**, which defines a Java app and Azure App Service deployment. If you are following a lab from [Azure DevOps Labs](https://www.azuredevopslabs.com), select the **DevOps Labs** tab to choose the template
 
     > [!NOTE]
     > All  templates provide fictional Azure DevOps users and pre-populated Agile planning and tracking work items and data, along with source code in an Azure Repos Git repo, as well as access to Azure Pipelines.

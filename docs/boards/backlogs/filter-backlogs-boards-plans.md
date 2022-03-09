@@ -1,64 +1,73 @@
 ---
-title: Filter backlogs, boards, queries, and plans 
+title: Apply filters to backlogs, boards, queries, and plans in Azure Boards 
 titleSuffix: Azure Boards
-description: Filter backlogs, boards, queries, and plans based on keywords, tags, or other fields   
+description: Learn how to apply filters to backlogs, boards, queries, and plans in Azure Boards  
 ms.custom: "boards-backlogs, boards-kanban, seodec18, contperf-fy21q3"    
 ms.technology: devops-agile  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '<= azure-devops'
-ms.date: 05/06/2021
+monikerRange: '>= tfs-2015'
+ms.date: 10/13/2021
 ---
 
- 
-# Interactively filter backlogs, boards, queries, and plans 
+# Interactively filter backlogs, boards, queries, and plans in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 <a id="filter"></a>
 
-With filter functions, you can interactively apply one or more filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, Backlogs and Boards display work items based on the selected Area Paths and Iteration Paths for the team. Query Results list work items based on the query clauses you've defined. 
+::: moniker range=">= tfs-2017"
+
+With filter functions, you can interactively apply one or more filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, Backlogs and Boards display work items based on the selected **Area Paths** and **Iteration Paths** for the team. **Query Results** list work items based on the query clauses you've defined. 
 
 You enable the filter feature by choosing :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter**.
+::: moniker-end 
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of choosing Filter function latest versions.](media/filter/filter-backlogs.png)
+::: moniker range="tfs-2015"
+With the filter function, you can interactively apply a keyword to filter a page. Each page is already filtered to show a subset of work items according to the tool function. For example, **Backlogs** and **Boards** display work items based on the selected **Area Paths** and **Iteration Paths** for the team. **Query Results** list work items based on the query clauses you've defined.  You can use the filter function to filter work items based on a keyword, ID or tag.   
+::: moniker-end 
 
+::: moniker range=">=azure-devops-2019"
+:::image type="content" source="media/filter/filter-backlogs.png" alt-text="Screenshot of choosing Filter function latest versions.":::
+::: moniker-end 
 
-From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Boards tools.  
+::: moniker range="tfs-2017 || tfs-2018"
+:::image type="content" source="media/filter/filter-backlogs-options-tfs-2017.png" alt-text="Screenshot of initial keyword filter function.  ":::
+::: moniker-end 
 
-::: moniker range="<= tfs-2015"
-You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
+::: moniker range="tfs-2015"
+:::image type="content" source="media/filter/initial-keyword-filter-function.png" alt-text="Screenshot of initial keyword filter function.  ":::
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017"
+From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Boards tools.  
+::: moniker-end 
 
-Use filters to perform these tasks:  
+ 
+::: moniker range=">= tfs-2017"
+
+Use filters to complete these tasks:  
 - In daily scrum meetings, filter the Kanban board to focus on assigned work for a specific sprint. 
 - Or, if your team uses the Sprints Taskboard, filter for a team member's completed assigned work. 
-- To focus on a group of work items, filter based on the Parent Work Item, by Area Path, or Tags.  
+- To focus on a group of work items, filter based on the **Parent Work Item**, by **Area Path**, or **Tags**.  
 - To triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
 
  
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017"
-
 ## Supported filter functions 
-
 ::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
-
 Filter functions are available from all Azure Boards tools: Work items, Boards, Backlogs, Sprint Backlogs and Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
 
-The following table indicates the supported options based on the tool indicated with a ✔️ or are listed. 
+The following table indicates the supported options based on the tool indicated with a ✔️ or is listed. 
 
 Backlogs and boards are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). Other tools have predefined filters based on the view, query filter clauses, or settings you select. 
 
 ::: moniker-end 
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -78,7 +87,7 @@ Supported options are indicated with a ✔️ or listed.
       <br/>**Tool** 
    :::column-end:::
    :::column span="1":::
-      **Keywords**<br/>or **ID**
+      **Keywords** or **ID**
    :::column-end:::
    :::column span="2":::
       <br/>**Fields**
@@ -138,7 +147,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1.5":::
       [**Backlogs**](backlogs-overview.md) 
@@ -161,7 +170,31 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="1.5":::
+     [**Sprints** (Backlogs  
+     & Taskboards)](../sprints/scrum-overview.md)  
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Type
+      - States  
+      - Area Path 
+   :::column-end:::
+   :::column span="1.5":::
+      ✔️ (Note 2)   
+   :::column-end:::
+   :::column span="1":::
+      ✔️ 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2018 < azure-devops-2020"
 :::row:::
    :::column span="1.5":::
      [**Sprints** (Backlogs  
@@ -177,15 +210,15 @@ Supported options are indicated with a ✔️ or listed.
       - Area Path  
    :::column-end:::
    :::column span="1.5":::
-      ✔️    
+           
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 2)
+      ✔️  
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1.5":::
      [**Query Results**](../queries/view-run-query.md)
@@ -223,7 +256,6 @@ Supported options are indicated with a ✔️ or listed.
       - Area Path
       - Iteration Path
       - Tags
-      - Parent Work Item
    :::column-end:::
    :::column span="1.5":::
       ✔️   
@@ -234,7 +266,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
+::: moniker range=">= tfs-2018 <= azure-devops-2020"
 :::row:::
    :::column span="1.5":::
      [**Plans**](../extensions/delivery-plans.md)
@@ -282,23 +314,22 @@ Supported options are indicated with a ✔️ or listed.
 ---
 ::: moniker-end   
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= tfs-2017"
 
 **Notes**
 
-1. While the **Parent Work Item** isn't a filter function for Backlogs or Query Results, you can add the **Parent** field as a column and then perform a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
+1. While the **Parent Work Item** isn't a filter function for Backlogs or Query Results, you can add the **Parent** field as a column and then do a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
 2. The **Parent Work Item** filter is supported for Sprint Backlogs and Taskboards for Azure DevOps Server 2020 and later versions. 
 
 ::: moniker-end 
 
-
-
+ 
 
 ::: moniker range=">= azure-devops-2020"
 
 ### Additional filter, sort, group, reorder, and rollup functions 
 
-In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
+Along with the standard filter functions summarized in the previous table, the following table indicates which tools have more filters you can apply, sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
 
 <br/>
 ::: moniker-end 
@@ -480,29 +511,6 @@ In addition to the standard filter functions summarized in the previous table, t
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
-:::row:::
-   :::column span="2":::
-     [**Plans**](../extensions/delivery-plans.md)
-   :::column-end:::
-   :::column span="2":::
-          
-   :::column-end:::
-   :::column span="1":::
-        
-   :::column-end:::
-   :::column span="1":::
-      ✔️ (Note 6)  
-   :::column-end:::
-   :::column span="1":::
-            
-   :::column-end:::
-   :::column span="1":::
-            
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
@@ -529,9 +537,9 @@ In addition to the standard filter functions summarized in the previous table, t
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
-### Additional filter, sort, group, and reorder functions 
+### Other filter, sort, group, and reorder functions 
 
-In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, and reorder functions. Some functions, such as reorder, don't work when the filter function is enabled. 
+Along with the standard filter functions summarized in the previous table, the following table indicates which tools have other filters you can apply, sort, group, and reorder functions. Some functions, such as reorder, don't work when the filter function is enabled. 
 
 ::: moniker-end 
 
@@ -756,7 +764,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2020"
-To learn more about these additional functions, see the following articles: 
+To learn more about these other functions, see the following articles: 
 - [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 - [Display rollup progress or totals](display-rollup.md) 
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
@@ -764,7 +772,7 @@ To learn more about these additional functions, see the following articles:
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
-To learn more about these additional functions, see the following articles: 
+To learn more about these other functions, see the following articles: 
 - [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
@@ -787,7 +795,7 @@ You can also add the **Parent** field to cards on the Kanban Boards and Taskboar
 
 ## Persistence and saving filter options
 
-Once you set the filter options for a specific view, your settings persist until you change them. There is no save button or other action you need to take.   
+Once you set the filter options for a specific view, your settings persist until you change them. There's no save button or other action you need to take.   
  
 > [!NOTE]    
 > You can't set default filter options, nor set filter options for other members in your team. 
@@ -802,12 +810,17 @@ Once you set the filter options for a specific view, your settings persist until
 - To filter using fields, first add the field as a column or to the card. For example, to filter by **Assign To**, **Iteration Path**, or **Work Item Type**&mdash;or the contents of any other field&mdash;add those fields to show on the cards, backlog, plan, or list. 
 
 To add columns or fields, see the following articles: 
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
 - For Backlogs and Queries, see [Change column options](set-column-options.md)
 - For Boards, see [Customize cards](../boards/customize-cards.md)
 - For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 - For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
 ::: moniker-end
-
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+- For Backlogs and Queries, see [Change column options](set-column-options.md)
+- For Boards, see [Customize cards](../boards/customize-cards.md).
+::: moniker-end
 
 ## Open and clear filter functions  
 
@@ -825,7 +838,7 @@ To add columns or fields, see the following articles:
 	- For queries, define the query filter criteria of interest. 
 	::: moniker-end 
 
-1. Choose any additional view settings available for your view.  For example: 
+1. Choose any other view settings available for your view.  For example: 
 	::: moniker range=">= azure-devops-2019"
 	- For Work items, from the **View options** menu, enable/disable **Completed Work Items** 
 	- For Backlogs, from the **View options** menu, enable/disable **In Progress items** or **Completed Child items**  
@@ -862,7 +875,7 @@ To add columns or fields, see the following articles:
 	The page refreshes to show only those work items that meet all the selected filter criteria.
 
 
-### Disabled functions
+### Inactive functions
  
 When filtering is applied, the following functions are disabled or altered. 
 - For backlogs, the add-a-backlog-item panel, reordering (stack ranking), and forecasting tools are disabled. 
@@ -877,22 +890,24 @@ Filters remain in place until you explicitly clear them.  When you refresh your 
 Once the board is filtered, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
 
 
+
+::: moniker range=">= tfs-2017"
 ## Filter logic and Boolean operators
 
 Applying Boolean operators to filters is only supported for tags, as described in [Filter based on tags](#tags) later in this article. All other filters are applied with an implicit **AND** operator.  
-
+::: moniker-end 
 
 <a id="text-filter"></a>
 
 ## Apply keyword and ID filters
 
-The keyword filter function filters lists or cards based on the fields displayed via **Column Options** or board settings. Also, you can enter a value for an ID, whether or not the ID field is visible. Therefore, when filtering, consider what fields contain the keyword text or tags you want to filter on and make sure it is displayed.  
+The keyword filter function filters lists or cards based on the fields displayed via **Column Options** or board settings. Also, you can enter a value for an ID, even the ID field is visible. As such, when filtering, consider what fields contain the keyword text or tags you want to filter on and make sure it's displayed.  
 
 Filtering is case-insensitive. 
 
 <a id="characters-ignore" />  
 
-### Characters ignored by keyword filter criteria
+### Ignore characters by keyword filter criteria
 
 ::: moniker range=">= azure-devops-2019"
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
@@ -909,8 +924,6 @@ The filter criteria ignores the following characters when the field value starts
 
 ### Filter a board using a keyword
 
-
-
 ::: moniker range=">= azure-devops-2019"
 
 Here we filter the Kanban board to only show those cards that include 'web', either in the title, tag, or field.
@@ -921,10 +934,8 @@ Here we filter the Kanban board to only show those cards that include 'web', eit
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
-
-![Kanban board, Filter using keyword search, earlier versions.](media/filter-boards/filter-options-web.png)
 Here we filter the Kanban board to only show those cards that include 'Web', either in the title, tag, or displayed field.
-
+![Kanban board, Filter using keyword search, earlier versions.](media/filter-boards/filter-options-web.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -935,17 +946,16 @@ Here we filter the Kanban board to only show those cards that include 'web', eit
 
 ::: moniker-end
 
-
-### Filter a backlog using a keyword
+::: moniker range=">= tfs-2017"
+## Filter a backlog by using a keyword
 
 Here we filter the Backlog with **Show Parents** enabled, to only show work items that include 'web'. 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog, Hierarchy, Filter using keyword search.](media/filter/filter-backlog-web-keyword.png)
 
-
 The filtered set is always a flat list, even if you've selected to show parents. 
-
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
@@ -966,7 +976,7 @@ With filtering turned on, choose one or more values from the multi-select drop-d
 > [!NOTE]   
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
 
-### Filter a Kanban board using select field values
+### Filter a Kanban board by using select field values
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
@@ -1015,7 +1025,7 @@ Cards are filtered based on the assignments made in the following order and logi
 
 ::: moniker range=">= tfs-2017"
 
-### Filter a backlog using fields
+### Filter a backlog by using fields
 
 Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
 
@@ -1062,12 +1072,12 @@ The final board displays just those stories linked as child work items to the se
 
 ## Filter based on tags
 
-If you've added tags to your work items, you can filter your work using one or more tags. For backlogs and query results, add **Tags** as a column option prior to filtering on tags.  
+If you've added tags to your work items, you can filter your work using one or more tags. For backlogs and query results, add **Tags** as a column option before filtering on tags.  
 
  
 ::: moniker range=">= tfs-2017"
 
-Check the boxes of those tags that you want to filter on. Keep the **OR** selection to perform a logical OR for all the  you selected. Or, choose the **AND** option to perform a logical AND on all the selected tags. 
+Check the boxes of those tags that you want to filter on. Keep the **OR** selection to do a logical OR for all the tags  you selected. Or, choose the **AND** option to do a logical AND on all the selected tags. 
 
 ::: moniker-end 
 
@@ -1084,7 +1094,7 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 > ![Screenshot of filtering board based on tags, TFS 2017 and 2018 versions. ](../queries/media/add-tags/filter-backlog-tags.png) 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
+::: moniker range="tfs-2015"
 
 1. Turn on filtering and choose a tag.  
 
@@ -1094,7 +1104,7 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 	![Filtered list disables other features](../queries/media/filtered-list-based-on-tags.png)  
 
-2. To apply a sub-filter, choose another tag. You filter successively by choosing from the set of tags that appear in the filter tag bar. To start your filter process over, choose All to show all tags.  
+2. To apply a subfilter, choose another tag. You filter successively by choosing from the set of tags that appear in the filter tag bar. To start your filter process over, choose All to show all tags.  
 
 3. To show all items, choose All or choose the Tag filter image on backlog and queries pages filter icon to turn filtering off.   
 

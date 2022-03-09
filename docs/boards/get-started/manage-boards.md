@@ -1,113 +1,114 @@
 ---
 title: Quickstart guide to configure and manage your project  
 titleSuffix: Azure Boards 
-description: Understand how to manage your project
+description: Learn concepts in Azure Boards that help you understand how to manage your project.
+ms.technology: devops-agile
 ms.custom: boards-get-started
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
-ms.date: 07/17/2019
+monikerRange: '<= azure-devops'
+ms.date: 02/28/2022 
 ---
 
 
-# Configure settings and manage your Azure Boards project
+# Configure and manage your Azure Boards project
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can start using Azure Boards and configure resources as you go. No up-front work is required. Most settings define defaults.
+You can start using Azure Boards project and configure resources as you go. No up-front work is required. Most settings define defaults.
 
-As an organization owner or a project admin, there are a few items you might want to attend to at the start, to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.
+As an organization owner or a project administrator, there are a few items you might want to attend to at the start. If you own a large organization, you'll want to consider other tasks to structure your projects. More tasks can be structured to help support multiple teams or software development apps.
 
-Specifically, consider performing one or more of the following tasks: 
+Specifically, consider doing one or more of the following tasks: 
 
 ::: moniker range=">= tfs-2018"
 
 - [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project. 
-- [Share your project vision](#share-vision). To support people who'll contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/index.md). 
-- [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
-- [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.  
+- [Share your project vision](#share-vision). To support people who will contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/about-readme-wiki.md). 
+- [Define area and iteration paths](#areas-iterations). Define Iteration Paths if you work with Scrum methods or want to time-box your issues and tasks.
+- [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
 - [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project. 
-- [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
-- [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.  
+- [Define area and iteration paths](#areas-iterations). Define Iteration Paths if you work with Scrum methods or want to time-box your issues and tasks.
+- [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.  
 
 ::: moniker-end
 
 
-<a id="add-users" />
+[!INCLUDE [add-users-project](../../includes/get-started/add-users-project.md)]  
 
-## Add users to your project 
-
-The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine. For details, see [Add users](../../organizations/accounts/add-organization-users.md).
-
-<a id="share-vision" />
-
-::: moniker range=">= tfs-2018"
-
-## Share your project vision and support collaboration 
-
-Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../../organizations/projects/project-vision-status.md) or [provision a Wiki](../../project/wiki/wiki-create-repo.md). 
-
-::: moniker-end
-
-<a id="areas-iterations" />
-
-## Define area and iteration paths for work tracking
-
-If you support several products or feature areas, you can assign issues and tasks (Basic process) or user stories and tasks (Agile process) to a feature area by defining [Area Paths](../../organizations/settings/set-area-paths.md). To assign work items to specific time intervals, also known as sprints, you'll want to configure [Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md). To use the Scrum tools&mdash;sprint backlogs, taskboards, and team capacity&mdash;you need to configure several sprints. For an overview, see [About areas and iteration paths](../../organizations/settings/about-areas-iterations.md).  
+[!INCLUDE [share-project-vision](../../includes/get-started/share-project-vision.md)]  
 
 
-> [!div class="mx-tdBreakAll"] 
-> |Iterations| Areas |
-> |-------------|----------| 
-> |![Default iterations, Basic process](../../organizations/settings/media/areas/areas-iterations-iterations-intro-ts-2016.png) | ![A set of sample area paths](../../organizations/settings/media/areas/areas-iterations-areas-intro-ts-2016.png)  | 
 
-<a id="customize" />
+::: moniker range=">= azure-devops-2019"  
 
-## Customize your work item types
+## Remove unused services 
 
-You and your team can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. Although you can customize the process easily through the user interface, you'll want to establish a methodology for who will manage the updates and evaluate requests. 
+To simplify the web portal user interface, you can disable select services. For example, if you use a project only to plan and track work, then disable all services except for **Boards** as shown in the following image. Once you disable the services, refresh your browser to see the changes take effect. To learn more, see 
+[Turn a service on or off](../../organizations/settings/set-services.md).
 
-> [!NOTE]   
-> By default, organization owners and users added to the **Project Collection Administrators** security group are granted permission to create, edit, and manage processes used to customize the work-tracking experience. If you want to lock down who is able to perform these tasks, you can set permissions at the organization-level to **Deny**.  
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows disable all services except for Boards.](media/disable-services-except-boards.png)
 
-To learn more, see these articles: 
+::: moniker-end   
+ 
 
-::: moniker range=">= azure-devops-2019"
+## Manage security and permissions
 
-- [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md)  
-- [Customize a project](../../organizations/settings/work/customize-process.md)  
-- [Add and manage processes](../../organizations/settings/work/manage-process.md)  
+Access to select tasks is controlled by permissions and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../../organizations/security/permissions-access.md).  
 
-::: moniker-end
+[!INCLUDE [project-level-permissions](../../organizations/security/includes/project-level-permissions.md)]
 
-::: moniker range="<= tfs-2017"
+To learn more about security and setting permissions at the project-level, review the following articles:
 
-- [On-premises XML process customization](../../reference/on-premises-xml-process-model.md)  
-- [Add or modify a field to track work](../../reference/add-modify-field.md)  
-- [Add or modify a work item type](../../reference/add-modify-wit.md)  
+- [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md)   
+- [Change permissions at the project-level](../../organizations/security/change-project-level-permissions.md) 
+ 
+### Add members to the Project Administrators group 
 
-::: moniker-end
+[!INCLUDE [add-project-administrators](../../includes/get-started/add-project-administrators.md)]  
 
-## Review and update notifications
+### Grant or restrict permissions  
 
-A number of notifications are predefined for each project. Notifications are based on subscription rules. Subscriptions arise from the following areas:
+Permissions are managed at the following three levels and through role-based assignments. 
+- object
+- project
+- organization or collection
 
-- [Out-of-the-box or default subscriptions](../../notifications/oob-built-in-notifications.md).
-- [Team notifications](../../notifications/manage-team-group-global-organization-notifications.md), managed by a team administrator.
-- Project notifications, managed by a member of the Project Administrators group.
+As a member of the **Project Administrators** group, you can grant or restrict permissions for all objects and at the project-level. To delegate specific tasks to others, we recommend that you add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
 
-If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/manage-your-personal-notifications.md). 
-
-> [!div class="mx-imgBorder"]  
-> ![Personal notifications](../../user-guide/media/services/personal-notifications.png) 
+- [Role-based permissions](../../organizations/security/about-permissions.md#role-based-permissions)
+- [Add or remove users or groups, manage security groups](../../organizations/security/add-remove-manage-user-group-security-group.md)
+- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)   
+- [Set object-level permissions](../../organizations/security/set-object-level-permissions.md) 
 
 
+[!INCLUDE [review-notifications](../../includes/get-started/review-notifications.md)] 
+
+[!INCLUDE [determine-traceability-requirements](../../includes/get-started/determine-traceability-requirements.md)]  
+
+
+## Configure and customize Azure Boards 
+
+You can configure and customize Azure Boards to support a number of business requirements for planning and tracking work. At a minimum, you'll want to configure the following elements:
+
+- Area paths to group work items by team, product, or feature area
+- Iteration paths to group work into sprints, milestones, or other event-specific or time-related periods. 
+
+If you're new to Azure Boards and want an indepth overview of what you can configure and customize, see [Configure and customize Azure Boards](../configure-customize.md).
+
+
+[!INCLUDE [define-area-iteration-paths](../../includes/get-started/define-area-iteration-paths.md)] 
+ 
+
+[!INCLUDE [customize-work-tracking](../../includes/get-started/customize-work-tracking.md)] 
+ 
 ::: moniker range=">= tfs-2015"
 
 ## Install and manage extensions 
@@ -117,24 +118,23 @@ To add new features and capabilities to Azure Boards, install extensions from th
 To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](../../extend/overview.md) and [publishing](../../extend/publish/overview.md) extensions.
 
 ::: moniker-end
+ 
+## Integrate with other services 
 
-::: moniker range=">= azure-devops-2019"
+Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the **Project Administrators** group, you can configure integration with many of these services. To learn more, see the following articles. 
 
-## Enable or remove services from the user interface
+- [Azure DevOps and GitHub integration overview](../../cross-service/github-integration.md)
+- [Azure Boards and GitHub integration](../github/index.md)
+- [Azure Boards with Microsoft Teams](../integrations/boards-teams.md) 
+- [Azure Boards with Slack](../integrations/boards-slack.md) 
+- [Integrate with service hooks](../../service-hooks/overview.md) 
 
-To simplify the web portal user interface, you can disable select services. If you use a project only to log bugs, then you can remove all services except for **Boards**. 
 
-This example shows that **Test Plans** has been disabled:
-
-> [!div class="mx-imgBorder"]  
-> ![Disable a service](../../user-guide/media/services/set-service-visibility.png)   
-
-::: moniker-end
-
+[!INCLUDE [add-teams-to-scale](../../includes/get-started/add-teams-to-scale.md)] 
 
 ## Related articles
 
 - [Web portal navigation](../../project/navigation/index.md)  
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)  
 - [Enable a preview feature](../../project/navigation/preview-features.md)   
-- [Get started as an administrator for Azure DevOps](../../user-guide/project-admin-tutorial.md)
+- [Get started managing your organization or project collection](../../user-guide/manage-organization-collection.md)

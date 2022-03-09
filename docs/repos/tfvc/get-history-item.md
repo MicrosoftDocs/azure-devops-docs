@@ -5,14 +5,15 @@ description: Get the history of an item
 ms.assetid: 5a29031c-7fb6-42ac-885c-276b59a4b951
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Get the history of an item
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation version control maintains historical data related to every version of every file that has ever been checked in.
 
@@ -30,9 +31,9 @@ Often when you look over the history of a file, folder, or branch, you are tryin
 
 Use the **History** window to get detailed historical data about a project, branch, folder, or file.
 
-**Required permissions**
+## Prerequisites
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 To display the History window:
 
@@ -79,42 +80,115 @@ If the item is a file, then additional data is displayed in the following column
 
 By using the **Changesets** tab, you can perform the following tasks:
 
-<table><thead>
-<tr><th><p>Task</p></th><th><p>Supporting content</p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>View the item as it existed when the changeset was checked in:</strong> Double click the changeset or right-click it, and then click <strong>View</strong>. (This command is available only if the item is a file.)</p><p></p></td>
-	<td><p>None</p></td></tr>
-<tr>
-	<td><p><strong>Get more details about a changeset:</strong> Right-click a changeset and then click <strong>Changeset Details</strong> to get information such as:</p><ul><li><p>Other source files that are part of the changeset.</p></li><li><p>Work items associated with the changeset.</p></li><li><p>Any check-in notes left for reviewers.</p></li></ul></td>
-	<td><p> <a href="find-view-changesets.md">Find and view changesets</a> </p></td></tr>
-<tr>
-	<td><p><strong>Compare a past version with the current version:</strong> Right-click a changeset and then click <strong>Compare</strong>.</p><p><strong>Compare a past version with another past version:</strong></p><ol><li><p>Select a changeset.</p></li><li><p>Press and hold the CONTROL key and then select the second changeset.</p></li><li><p>Right-click the second changeset and click <strong>Compare</strong>.</p></li></ol></td>
-	<td><p> <a href="compare-files.md">Compare files</a> </p><p> <a href="compare-folders.md">Compare folders</a> </p></td></tr>
-<tr>
-	<td><p><strong>Get a past version of the item: </strong>Right-click a changeset and then click <strong>Get This Version</strong> to download the past version of the item to your workspace.</p></td>
-	<td><p> <a href="download-get-files-from-server.md">Download (get) files from the Server</a> </p></td></tr>
-<tr>
-	<td><p><strong>View which users made specific changes within a file:</strong> Right-click a changeset and then click <strong>Annotate</strong>. (This command is available only if the item is a file.)</p></td>
-	<td><p> <a href="view-file-changes-using-annotate.md">View file changes using annotate</a> </p></td></tr>
-<tr>
-	<td><p><strong>Get more details about a merge:</strong> If the changeset resulted from a <strong>merge</strong> change, you can expand this item. Expand the node to display the changesets that were merged into this item from another branch. (This command is available only if the item is a file.)</p></td>
-	<td><p>None</p></td></tr>
-<tr>
-	<td><p><strong>Get more details about changes that were made before a rename change:</strong> If the changeset includes a <strong>rename</strong> change, you can expand this item. Expand the node to display the changesets that occurred before the <strong>rename</strong> change was made.</p></td>
-	<td><p>None</p></td></tr>
-<tr>
-	<td><p><strong>View other branches to which this changeset has been merged: </strong>Right-click the changeset and click <strong>Track Changeset</strong>.</p></td>
-	<td><p> <a href="view-where-when-changesets-have-been-merged.md">View where and when changesets have been merged</a> </p></td></tr>
-<tr>
-	<td><p><strong>Roll back changes from one changeset</strong> Select a single changeset and choose <strong>Rollback Entire Changeset</strong>.</p></td>
-	<td><p> <a href="roll-back-changesets.md">Roll back changesets</a> </p></td></tr>
-<tr>
-	<td><p><strong>Roll back changes from two or more consecutive changesets</strong> Select a set of consecutive changesets and choose <strong>Rollback</strong>.</p></td>
-	<td><p> <a href="roll-back-changesets.md">Roll back changesets</a> </p></td></tr>
-<tr>
-	<td><p><strong>Display non-recursive history of a folder</strong> You can get this data only from the command prompt.</p></td>
-	<td><p><a href="history-command.md">History Command</a></p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="3":::
+   **Task**
+   :::column-end:::
+   :::column span="1":::
+   **Supporting content**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **View the item as it existed when the changeset was checked in:** Double click the changeset or right-click it, and then click **View**. (This command is available only if the item is a file.)
+   :::column-end:::
+   :::column span="1":::
+   None
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Get more details about a changeset:** Right-click a changeset and then click **Changeset Details** to get information such as:
+
+   - Other source files that are part of the changeset.
+   - Work items associated with the changeset.
+   - Any check-in notes left for reviewers.
+   :::column-end:::
+   :::column span="1":::
+   [Find and view changesets](find-view-changesets.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Compare a past version with the current version:** Right-click a changeset and then click **Compare**.
+   
+   **Compare a past version with another past version:**
+   
+   1. Select a changeset.
+   2. Press and hold the CONTROL key and then select the second changeset.
+   3. Right-click the second changeset and click **Compare**.
+
+   :::column-end:::
+   :::column span="1":::
+   [Compare files](compare-files.md) 
+   
+   [Compare folders](compare-folders.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Get a past version of the item:** Right-click a changeset and then click **Get This Version** to download the past version of the item to your workspace.
+   :::column-end:::
+   :::column span="1":::
+   [Download (get) files from the Server](download-get-files-from-server.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **View which users made specific changes within a file:** Right-click a changeset and then click **Annotate**. (This command is available only if the item is a file.)
+   :::column-end:::
+   :::column span="1":::
+   [View file changes using annotate](view-file-changes-using-annotate.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Get more details about a merge:** If the changeset resulted from a **merge** change, you can expand this item. Expand the node to display the changesets that were merged into this item from another branch. (This command is available only if the item is a file.)
+   :::column-end:::
+   :::column span="1":::
+   None
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Get more details about changes that were made before a rename change:** If the changeset includes a **rename** change, you can expand this item. Expand the node to display the changesets that occurred before the **rename** change was made.
+   :::column-end:::
+   :::column span="1":::
+   None
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **View other branches to which this changeset has been merged:** Right-click the changeset and click **Track Changeset**.
+   :::column-end:::
+   :::column span="1":::
+   [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Roll back changes from one changeset** Select a single changeset and choose **Rollback Entire Changeset**.
+   :::column-end:::
+   :::column span="1":::
+   [Roll back changesets](roll-back-changesets.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Roll back changes from two or more consecutive changesets** Select a set of consecutive changesets and choose **Rollback**.
+   :::column-end:::
+   :::column span="1":::
+   [Roll back changesets](roll-back-changesets.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Display non-recursive history of a folder** You can get this data only from the command prompt.
+   :::column-end:::
+   :::column span="1":::
+   [History Command](history-command.md)
+   :::column-end:::
+:::row-end:::
 
 <a name="labels_tab"><a/>
 
@@ -152,12 +226,8 @@ All labels that have been applied to the item are listed in a table that include
 |      **View other branches to which the labeled changeset has merged: \*\*Right-click the label and click \*\*Track Changeset**. (This command is available only if the item is a file.)      | [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md) |
 | **View which users made specific changes within the labeled version of a file:** Right-click a changeset and then click **Annotate**. (This command is available only if the item is a file.) |              [View file changes using annotate](view-file-changes-using-annotate.md)              |
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Find and view changesets](find-view-changesets.md) 
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
-
- [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md)
+-  [Find and view changesets](find-view-changesets.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+-  [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md)

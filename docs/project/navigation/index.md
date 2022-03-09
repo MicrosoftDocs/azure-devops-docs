@@ -3,18 +3,17 @@ title: Navigating within the web portal
 titleSuffix: Azure DevOps
 description: Navigate within the user interface/web portal of Azure DevOps
 ms.custom: "Navigation, seodec18"
-ms.technology: devops-collab
-ms.assetid: 
+ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 11/11/2020
 ---
 
 # Web portal navigation in Azure DevOps  
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 ::: moniker range="azure-devops"
 

@@ -1,23 +1,30 @@
 ---
-title: CMMI process guidance, Engineering
+title: Engineering process areas for designing software in Azure Boards
 titleSuffix: Azure Boards
-description: Value-added activities for discovering information required to design and build software products  
+description: Learn about the value-added activities for discovering information required to design and build software products in Azure Boards.
 ms.technology: devops-agile
 ms.assetid: 53c52c0e-da53-4f9c-afc4-6c6260d32ccc
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/20/2017
 ---
 
-# Engineering
+# Engineering processing areas in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
-The Engineering section of the MSF for CMMI Process Improvement guidance covers the value-added activities for discovering the information that is required to design and build software products. The Engineering grouping of process areas in the CMMI includes Requirements Development, Requirements Management, Technical Solution, Product Integration, Verification, and Validation. 
+The Engineering section of the MSF for CMMI Process Improvement guidance covers the value-added activities. These activities are for discovering the information that is required to design and build software products. The Engineering grouping of process areas in the CMMI includes:
 
-All of these are model level 2 or 3 process areas.  
+* Requirements Development
+* Requirements Management
+* Technical Solution
+* Product Integration
+* Verification
+* Validation
+
+All of these areas are model level 2 or 3 process areas.  
   
 
 - **Vision and Requirements:** Capture the product vision and requirements  
@@ -31,4 +38,4 @@ All of these are model level 2 or 3 process areas.
 - **Verify and Validate:** Verify your solution.
 	- [Track bugs](track-bugs.md)  
 
-For more information about CMMI see [Background to CMMI](guidance-background-to-cmmi.md).  
+For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  

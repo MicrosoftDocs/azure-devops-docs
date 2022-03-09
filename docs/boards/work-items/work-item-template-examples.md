@@ -1,21 +1,21 @@
 ---
-title: Sample work item templates showing usage
+title: View sample work item templates that show usage in Azure Boards
 titleSuffix: Azure Boards   
-description: Sample work item templates to pre-populate fields and provide guidance in work item forms 
+description: Learn about sample work item templates you can use to pre-populate fields and provide guidance in work item forms. 
 ms.technology: devops-agile
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '>= tfs-2017'
-ms.date: 04/24/2019 
+ms.date: 11/07/2021 
 ---
 
-# Sample work item templates  
+# View sample work item templates in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
-Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following objectives:
+Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following goals:
 
 - Create bugs for specific product areas 
 - Provide guidance to fill out the work item 
@@ -58,7 +58,7 @@ For example, here we add the following syntax into the <strong>Repos Steps</stro
 > [!div class="mx-imgBorder"]  
 > ![Add syntax into the Repos Steps field.](media/template/repo-steps.png) 
 
-The work item form renders this as shown. 
+The work item form renders this example as shown. 
 
 > [!div class="mx-imgBorder"]  
 > ![Rendered syntax in work item form.](media/template/repo-steps-rendered.png) 
@@ -70,7 +70,7 @@ For more information about rich-text fields, see [Share information within work 
 
 <a id="add-tags"> </a> 
 
-## Add tags 
+## Add work item tags 
 
 Work item tags are useful to quickly filter backlogs, boards, or queries. You can add tags to track anything of interest, for example: Customer issue, Release, Milestone.
 
@@ -87,7 +87,7 @@ You can also use the <strong>Tags (Remove)</strong> template field to remove tag
 
 ## Define and pre-populate custom fields 
 
-You can pre-populate a custom field that has been added to the work item type. Prior to adding it to a template, you must first add it to the work item type. For inherited process models, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md). For On-premises XML process models, see [Add or modify a field to track work](../../reference/add-modify-field.md).  
+You can pre-populate a custom field that has been added to the work item type. Before adding it to a template, you must first add it to the work item type. For inherited process models, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md). For On-premises XML process models, see [Add or modify a field to track work](../../reference/add-modify-field.md).  
 
 For example, the <strong>Triage</strong> custom field can be set to `False`, indicating the bug needs to be triaged. 
 
@@ -95,9 +95,9 @@ For example, the <strong>Triage</strong> custom field can be set to `False`, ind
 > ![Set Triage custom field to False.](media/template/custom-field.png) 
 
 
-## Access additional features through extensions  
+## Access other features through extensions  
 
-An often requested feature is to be able to create a work item which automatically links to one or more work items. For example, a user story that links to 5 tasks. Work item templates don't support this capability. However, you may find a Marketplace extension will support this feature. For example, see the following extensions: 
+An often requested feature is to allow the creation of a work item that automatically links to one or more work items. For example, a user story that links to five tasks. Work item templates don't support this capability. However, you may find a Marketplace extension will support this feature. For example, see the following extensions: 
 
 - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 

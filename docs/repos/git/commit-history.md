@@ -13,7 +13,8 @@ monikerRange: '>= tfs-2017'
 
 # Commit history
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1**
+
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ## Commit history view
 
@@ -21,6 +22,9 @@ The commit history view shows you the history of all the commits for a particula
  
 ![Commit history page](media/commit-history/1-CommitHistory.png)
 
+
+> [!NOTE]
+> The feature documented in this article requires TFS 2017 Update 1 or later version.  
 For each commit, you can view the following key elements:
 
 * Author details - You can view the author and committer of each commit along with the associated time. 

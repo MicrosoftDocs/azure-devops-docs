@@ -184,7 +184,7 @@ The following people contributed to the Azure DevOps docs during this period. Th
 - [baobao98](https://github.com/baobao98) - Silence Dogood - Bảo (1)
 - [davecluderay](https://github.com/davecluderay) - Dave Cluderay (1)
 - [DenWin](https://github.com/DenWin) - Dennis Winter (1)
-- [ds-ms](https://github.com/ds-ms) - Deepak Sattiraju (1)
+- [thesattiraju](https://github.com/thesattiraju) - Deepak Sattiraju (1)
 - [ericmutta](https://github.com/ericmutta) - Eric Mutta (1)
 - [Geoff1900](https://github.com/Geoff1900) - Geoff (1)
 - [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (1)

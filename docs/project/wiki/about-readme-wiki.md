@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # About Wikis, READMEs, and Markdown
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range=">= tfs-2018"
 

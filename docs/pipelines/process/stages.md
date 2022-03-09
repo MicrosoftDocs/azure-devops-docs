@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
-ms.date: 04/07/2021
+ms.date: 12/22/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Add stages, dependencies, & conditions  
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -23,7 +23,7 @@ The concept of stages varies depending on whether you use YAML pipelines or clas
 
 You can organize pipeline jobs into stages. Stages are the major divisions in a pipeline: "build this app", "run these tests", and "deploy to pre-production" are good examples of stages. They are logical boundaries in your pipeline where you can pause the pipeline and perform various checks.
 
-Every pipeline has at least one stage even if you do not explicitly define it. You can also arrange stages into a dependency graph so that one stage runs before another one. 
+Every pipeline has at least one stage even if you do not explicitly define it. You can also arrange stages into a dependency graph so that one stage runs before another one. There is a limit of 256 jobs for a stage. 
 
 ::: moniker-end
 
@@ -309,7 +309,7 @@ stages:
 - stage: A
 
 - stage: B
-  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
 ```
 
 ::: moniker-end

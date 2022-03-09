@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # About branches and branch policies
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Branch policies are an important part of the Git workflow and enable you to:
 
@@ -21,6 +21,107 @@ Branch policies are an important part of the Git workflow and enable you to:
 * Enforce who can create branches and the naming guidelines for the branches
 * Automatically include the right reviewers for every code change
 * Enforce best practices with required code reviewers
+
+
+The following table summarizes the policies you can define to customize a branch. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md). 
+
+:::row:::
+   :::column span="2":::
+      **Policy**
+   :::column-end:::
+   :::column span="1"::: 
+      **Default**
+   :::column-end:::
+   :::column span="3"::: 
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [**Require a minimum number of reviewers**](branch-policies.md#require_reviewers)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Require approval from a specified number of reviewers on pull requests.
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="2":::
+      [**Check for linked work items**](branch-policies.md#check-linked-wi)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Encourage traceability by checking for linked work items on pull requests
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="2":::
+      [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Check to see that all comments have been resolved on pull requests.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      [**Limit merge types**](branch-policies.md#limit-merge-types)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Control branch history by limiting the available types of merge when pull requests are completed.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="2":::
+      [**Add Build Validation policies**](branch-policies.md#build-validation)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add one or more policies to validate code by pre-merging and building pull request changes. Can also enable or disable policies.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Add Status Check policies**](branch-policies.md#require-approval-from-external-services)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add one or more policies to require other services to post successful status to complete pull requests. Can also enable or disable policies.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Automatically included reviewers**](branch-policies.md#include-code-reviewers)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add one or more policies to designate code reviewers to automatically include when pull requests change certain areas of code. Can also enable or disable policies.
+   :::column-end:::
+:::row-end:::
+
+ 
 
 ## Adopt a Git branching strategy
 
@@ -60,9 +161,6 @@ The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing 
 
 Isolating work in branches makes it simple to change what you are working on by changing your current branch.
 
-## Video Overview
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Branches/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## How are Git branches created?
 
@@ -111,3 +209,13 @@ Learn how to complete common tasks when working with branches.
 - [How to delete a branch](delete-branch.md)
 - [Restore a deleted branch](restore-deleted-branch.md)
 - [How to lock branches](lock-branches.md)
+
+
+## Related articles
+
+- [Improve code quality with branch policies](branch-policies.md)
+- [Git repository settings and policies](repository-settings.md)
+- [Configure Git repository policies using a configuration file](../../cli/policy-configuration-file.md)
+- [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
+- [Set permissions (Security)](set-git-repository-permissions.md)
+- [Cross-service integration overview](../../cross-service/cross-service-overview.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)

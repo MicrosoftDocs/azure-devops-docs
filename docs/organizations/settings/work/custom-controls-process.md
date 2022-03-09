@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms.date: 11/19/2018
 ---
 
 # Add extensions and custom controls to a work item type  (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 With extensions, you can add rich functionality to your work item forms. An extension comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution (custom controls) 
@@ -29,8 +29,7 @@ You add all contributions by installing its extension from the [Visual Studio Ma
 
 For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown.
 
-<img src="media/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" />
-
+![Work item form, group extension example, Who viewed this](media/process/custom-controls-group-extension-example-who-recently-viewed.png)
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
@@ -105,8 +104,8 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.
 
-	<img src="media/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" />
-
+	![Custom control dialog](media/process/custom-control-add-field-level-control-to-bug-options-tab.png)
+	
 6. (Optional) Open the **Layout** tab and specify the label for the field. 
  
 	Fill in any additional required fields. Review the extension description for guidance. 
@@ -115,15 +114,24 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
    Here, we show how the control appears by default with the checkbox and then with the toggle control.  
 
-   <table>
-   <tr><th>Boolean field with checkbox</th>
-   <th>Boolean field with toggle control</th></tr> 
-   <tr><td><img src="media/process/boolean-checkbox.png" alt="Boolean field with checkbox"/></td>
-   <td><img src="media/process/boolean-toggle.png" alt="Boolean field with toggle control"/></td>
-   </tr> 
-   </table>
+:::row:::
+   :::column span="1":::
+   **Boolean field with checkbox**
+   :::column-end:::
+   :::column span="1":::
+   **Boolean field with toggle control**
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="1":::
+   ![Boolean field with checkbox](media/process/boolean-checkbox.png)
+   :::column-end:::
+   :::column span="1":::
+   ![Boolean field with toggle control](media/process/boolean-toggle.png)
+   :::column-end:::
+:::row-end::: 
 
-<a id="group-level" />
+<a id="group-level"> </a>
 
 ## Group-level and page-level contributions
 

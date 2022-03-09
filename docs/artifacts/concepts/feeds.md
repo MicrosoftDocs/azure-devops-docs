@@ -4,13 +4,13 @@ description: Learn about Artifacts feeds and the difference between project-scop
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/23/2020
+ms.date: 03/03/2022
 monikerRange: '>= tfs-2017'
 ---
 
 # What are feeds?
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Artifacts Feeds are organizational constructs that allow you to store, manage, and group your packages and control who to share it with. Feeds are not package-type dependent. You can store all the following package types in a single feed: npm, NuGet, Maven, Python, and Universal packages. 
 
@@ -36,11 +36,43 @@ There some important things to note regarding public feeds:
 * Public feeds cannot have upstream sources.
 * Public users cannot currently download universal packages. All other package types are supported for public access.
 
-## Create a feed
+## Create public feeds
 
-[!INCLUDE [](../includes/create-feed.md)]
+Public feeds are project-scoped feeds in a public project.
+
+1. Select **Artifacts**.
+
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing Artifacts in the Azure DevOps dashboard.":::
+
+1. Select **Create Feed**.
+
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
+
+1. Give your feed a **Name**, and then select **Project** for your feed's scope.
+
+    :::image type="content" source="../media/create-public-feed.png" alt-text="Screenshot showing how to create a new public feed.":::
+
+1. Select **Create** when you are done.
 
 ::: moniker range=">= azure-devops-2019"
+
+## Delete a feed
+
+1. Select **Artifacts**.
+
+1. Select your feed from the dropdown menu.
+
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the feed's settings.
+
+    :::image type="content" source="media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings":::
+
+1. Select **Delete feed**.
+
+    :::image type="content" source="media/delete-a-feed.png" alt-text="Screenshot showing how to delete a feed":::
+
+1. Select **Delete** when you are ready.
+
+    :::image type="content" source="media/delete-warning.png" alt-text="Screenshot showing a warning message prior to deleting a feed":::
 
 ## Restoring a deleted feed
 

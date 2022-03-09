@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # RPC failures and http.postBuffer
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you see an `RPC failed` error during `git push`, such as:
 

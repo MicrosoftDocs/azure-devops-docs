@@ -1,20 +1,19 @@
 ---
-title: Visibility across teams 
+title: Gain visibility into projects and across teams using Azure Boards 
 titleSuffix: Azure Boards
-description: Determine which methods best support your ability to monitor status and progress across several teams in Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Determine which methods best support your ability to monitor status and progress across several teams in Azure Boards and Azure DevOps.  
 ms.technology: devops-agile
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 05/04/2021
+monikerRange: '<= azure-devops'
+ms.date: 10/20/2021
 ---
 
+# Manage priorities and gain visibility across teams
 
-# Visibility across teams
-
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Agile tools provide each team a wealth of ways to gain visibility into their work&mdash;to manage priorities and status and to monitor progress and trends. However, how do you gain visibility across several teams? What tools should you use?
 
@@ -28,13 +27,17 @@ For an overview of all team tools, see [Manage teams and configure team tools](.
 
 <a id="plans">  </a>
 
+
+::: moniker range=">= tfs-2017"
+
 ## Delivery Plans support a view of team backlogs on a calendar timeline
 
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.
-
+::: moniker-end  
+::: moniker range="tfs-2017" 
 > [!NOTE]
 > Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Azure Boards and TFS 2017.2 and later versions. All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
-
+::: moniker-end   
 
 ::: moniker range="azure-devops"  
 
@@ -43,8 +46,7 @@ When you configure a Delivery Plan, you select the teams and backlog levels of i
 :::image type="content" source="media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
 ::: moniker-end 
 
-::: moniker range="< azure-devops"  
-
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../extensions/delivery-plans.md).
 
@@ -62,10 +64,10 @@ We recommend that you structure your teams as follows:
 - Add a management team for a group of feature teams; these teams own epics and turn on only the Epic portfolio backlog level
 - Add feature teams to manage features, stories and tasks, and turn on the stories and features backlog levels
 
-The management team creates the epics, and then they or their feature teams break the epics down into features and then [map their features to the epics](../backlogs/organize-backlog.md) on the management backlog.
+The management team creates the epics. Then, they or their feature teams break down the epics into features and then [map their features to the epics](../backlogs/organize-backlog.md) on the management backlog.
 
 > [!TIP]
->By breaking down large goals, epics, scenarios, or features into smaller ones, teams can make better estimates and identify risks and dependencies.
+> By breaking down large goals, epics, scenarios, or features into smaller ones, teams can make better estimates and identify risks and dependencies.
 
 Limiting the backlog levels for each team&mdash;Epics for management teams and Features and Stories for feature teams&mdash;helps each team to stay focused on monitoring the progress of their work. For details on managing team backlog levels, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md).
 
@@ -147,18 +149,19 @@ To learn more about this configuration, see [Portfolio management](portfolio-man
 
 <a id="dashboards">  </a>
 ::: moniker range=">= tfs-2015"
+
 ## Add management dashboards with multi-team views
 
-A second method for gaining visibility across teams is to define multi-team focused dashboards that let you view progress, status, and trends. You do this primarily by defining queries that either capture the progress of a single team or several teams. You can then create charts and view trends for each team or for several teams.
+A second method for gaining visibility across teams is to define multi-team focused dashboards that let you view progress, status, and trends. You do define focused dashboards primarily by defining queries that either capture the progress of a single team or several teams. You can then create charts and view trends for each team or for several teams.
 
-The two areas of most interest to management teams are project health and bug debt. The widget catalog provides 10+ widgets you can add to a dashboard to track the status, progress, and health of your project and teams. Also, you can find additional widgets in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=AzureDevOps&category=All%20categories&sortBy=Relevance), Azure DevOps tab.  
+The two areas of most interest to management teams are project health and bug debt. The widget catalog provides 10+ widgets you can add to a dashboard to track the status, progress, and health of your project and teams. Also, you can find other widgets in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=AzureDevOps&category=All%20categories&sortBy=Relevance), Azure DevOps tab.  
 
-For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous 4 weeks.
+For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous four weeks.
 
 <img src="media/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" />  <img src="media/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" />  <img src="media/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" />
 
 
-When defining multi-team dashboards, consider the following:
+When defining multi-team dashboards, consider the following questions:
 - What are you wanting to learn and how will it drive your organization's actions
 - What time frame is of interest.
 
@@ -167,6 +170,7 @@ Review [Agile culture](agile-culture.md) and [Practices that scale](practices-th
 ::: moniker-end
 
 ### Project health and progress against goals dashboard 
+
 Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to provide a list of features by state: 
 
 - Completed features (Done or Closed)
@@ -176,23 +180,12 @@ Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-r
 Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. To learn more about creating query-based charts, see [Charts](../../report/dashboards/charts.md).
 
 
-<!---TIPS
-consider the time frame you want to monitor
-snapshot or trends
-what's shipping when?
-Track bug debt, progress
-Active bugs
-Stale bugs
-Hi priority bugs
-Triage bugs
-Active bug trends
--
--->
 
 ### Technical debt, bug debt, and activity dashboard 
+
 Another measure of project health and the health of the teams is to monitor bug activity and bug debt. Consider the charts you can create that will help you answer these questions: 
  
-- Are bugs getting fixed? at a rate that's acceptable? 
+- Are bugs getting fixed? At a rate that's acceptable? 
 - How stale are bugs? 
 - Is the bug debt per team being maintained? 
 - Is the ratio of high priority bugs being kept within organizational goals? 
@@ -201,7 +194,8 @@ For tips on creating queries based on counts or numeric fields, see [Query by nu
 
  
 ::: moniker range=">= azure-devops-2019"
-## Use Analytics to gain visibility across teams   
+
+## Use the Analytics Service to gain visibility across teams   
 
 You can add [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
@@ -224,9 +218,9 @@ Only when the work item state changes does the card column reflect the same on a
 
 ## Related articles
 
-As you can see, there are a number of ways you can monitor progress and trends across several teams. The methods you choose will depend on your focus and organizational goals.
+As you can see, there are many ways you can monitor progress and trends across several teams. The methods you choose will depend on your focus and organizational goals.
 
-Here are some additional topics that address working with multiple teams:
+Here are some other articles that address working with multiple teams:
 
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
 - [Review team plans](review-team-plans.md)

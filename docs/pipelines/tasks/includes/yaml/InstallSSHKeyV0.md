@@ -16,4 +16,9 @@ ms.technology: devops-cicd-tasks
     sshPublicKey: 
     #sshPassphrase: # Optional
     sshKeySecureFile: 
+    #addEntryToConfig: # Optional
+    #configHostAlias: # Optional
+    #configHostname: # Optional
+    #configUser: # Optional
+    #configPort: # Optional
 ```

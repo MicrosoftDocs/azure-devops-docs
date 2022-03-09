@@ -5,29 +5,27 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 11/15/2019
+ms.date: 09/02/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Use Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
 Azure Pipelines supports continuous integration (CI) and continuous 
-delivery (CD) to constantly and consistently test and build your code 
-and ship it to any target. You accomplish this by defining a pipeline. 
-You define pipelines using the YAML syntax or through the user 
-interface (Classic). 
+delivery (CD) to continuously test, build, and deploy your code. You accomplish this by defining a pipeline. 
+
+The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeline-editor.md). You can also use Classic pipelines with the [Classic editor](../release/define-multistage-release-process.md). 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
 Azure Pipelines supports continuous integration (CI) and continuous 
-delivery (CD) to constantly and consistently test and build your code 
-and ship it to any target. You accomplish this by defining a pipeline 
+delivery (CD) to continuously test, build, and deploy your code.  You accomplish this by defining a pipeline 
 using the user interface, also referred to as _Classic_. 
 
 ::: moniker-end
@@ -36,13 +34,13 @@ using the user interface, also referred to as _Classic_.
 
 ## Automate tests, builds, and delivery
 
-Continuous integration automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
+Continuous integration (CI) automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
 
 Continuous delivery automatically deploys and tests code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which include infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
 
 | Continuous integration (CI)                         |  Continuous delivery (CD)                       |
 | ----------------------------------------------------|-------------------------------------------------|
-|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually. |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process.|
+|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process|
 
 
 ## Define pipelines using YAML syntax
@@ -54,7 +52,7 @@ You define your pipeline in a YAML file called `azure-pipelines.yml` with the re
 ![Pipelines YAML intro image](../media/pipelines-image-yaml.png)
 
 * The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
+* Every branch you use can modify the pipeline by modifying the `azure-pipelines.yml` file. Learn more about [branch consideration for YAML pipelines](../build/triggers.md#branch-considerations).
 * A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
 
 Follow these basic steps:
@@ -155,7 +153,7 @@ TFS 2015 through TFS 2018 supports the Classic interface only. The following tab
 
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create your first pipeline](../create-first-pipeline.md)

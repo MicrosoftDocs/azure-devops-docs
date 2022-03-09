@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Artifacts storage consumption
 
-[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 With Azure Artifacts free-tier plan, you get two Gibibytes (GiB) of free storage to store different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
 

@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # IIS Web App Manage task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to create or update a Website, Web App, Virtual Directory, or Application Pool.
 
@@ -97,13 +97,9 @@ Example: To create an application Site/Application enter /Application. The paren
 <tr><td>Password</td><td>(Optional) Provide the password for custom account. <br/>The best practice is to create a variable in the Build or Release pipeline, and mark it as &#39;Secret&#39; to secure it, and then use it here, like &#39;$(userCredentials)&#39;. <br> Note: Special characters in password are interpreted as per <a href="/cpp/c-language/parsing-c-command-line-arguments">command-line arguments</a></td></tr>
 <tr><td>Application pool name</td><td>(Required) Provide the name of the IIS application pool.</td></tr>
 <tr><td>Additional appcmd.exe commands</td><td>(Optional) Enter additional AppCmd.exe commands. For more than one command use a line separator, like <br/> list apppools <br/> list sites<br/> recycle apppool /apppool.name:ExampleAppPoolName</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

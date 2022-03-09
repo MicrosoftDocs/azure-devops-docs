@@ -10,6 +10,8 @@ monikerRange: '>= tfs-2015'
 
 # Learn how to remove a large binary from your Git history to manage the size of cloned repositories
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 Git has gained much popularity in recent years as a distributed source code repository that lets users work with the full repository while in a disconnected state. The benefits of git are well-documented, but what happens if you need to "roll back the clock" on the primary repository? Doing so is not so intuitive and requires elevated permissions, as you might expect for something that affects every single user of the repository.
 
 So how can you roll back the central repository safely?

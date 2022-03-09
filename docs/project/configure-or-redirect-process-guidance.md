@@ -7,13 +7,13 @@ ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2017'
 ms.date: 04/15/2020
 ---
 
 # Configure or redirect process guidance  
 
-[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
+[!INCLUDE [version-lt-eq-2017](../includes/version-lt-eq-2017.md)]
 
 Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), and [CMMI](../boards/work-items/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
 
@@ -71,7 +71,7 @@ If your team project was created using the Basic configuration or is hosted on A
 
  Choose this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
-1.  If you aren't a member of the Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
+1.  If you aren't a member of the **Project Administrators** group, [get added now](../organizations/security/change-project-level-permissions.md).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -88,7 +88,7 @@ If your team project was created using the Basic configuration or is hosted on A
 
 Some process guidance links will work only if process guidance has been enabled for your team project.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
+1.  If you aren't a member of the Team **Project Administrators** group, [get added now](../organizations/security/change-project-level-permissions.md).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   

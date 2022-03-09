@@ -1,22 +1,22 @@
 ---
 title: Manage work item fields using witadmin
-titleSuffix: Azure DevOps Server
-description: Change an attribute for a work item field defined for a project in Azure DevOps Server
+titleSuffix: Azure DevOps  
+description: List or delete fields, or change a field attribute defined on Azure DevOps
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 08/02/2021
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Manage work item fields
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
-You can manage the fields defined for work item types (WITs) that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
+You can manage the fields defined for work item types that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -65,7 +65,7 @@ For an overview of the fields defined within a default process template, see [Wo
 -  To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.    
 -   To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]  
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  

@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Command Line task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to run a program from the command prompt.
 

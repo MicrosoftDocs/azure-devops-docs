@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Install Apple Certificate task
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 Use this task to install an Apple certificate that is required to build on a macOS agent.
 You can use this task to install an Apple certificate that is stored as a [secure file](../../library/secure-files.md) on the server.

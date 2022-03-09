@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 # Webhooks
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Webhooks provide a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
 

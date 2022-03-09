@@ -12,6 +12,8 @@ monikerRange: 'azure-devops'
 
 # Kubectl installer task
 
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
 This task can be used for installing a specific version of kubectl binary on agents.
 
 ::: moniker range="> tfs-2018"

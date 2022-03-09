@@ -5,14 +5,15 @@ description: Find and view changesets
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Find and view changesets
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
 
@@ -20,9 +21,9 @@ When you [check in your changes](check-your-work-team-codebase.md), they are sto
 
 You can view a changeset to see what the exact file changes were, discover the owner's comments, find linked work items, and see if any policy warnings were triggered.
 
-**Required Permissions**
+## Prerequisites
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Find a changeset by ID
 
@@ -45,21 +46,21 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
     The **Changeset Details** page appears in Team Explorer.   
     ![Changeset Details page](media/find-view-changesets/IC592883.png)
     
-<table>
-<thead>
-<tr>
-<th> <strong>Tip</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><ul>
-<li><p>You can <img src="media/find-view-changesets/IC667296.png" title="Undock" alt="Undock" /> undock the <strong>Pending Changes</strong> page from Team Explorer and open it in a new window.</p></li>
-<li><p>You can toggle between tree and list view from the <strong>Actions</strong> menu (Visual Studio 2013) or <strong>View Options</strong> menu (Visual Studio 2015).</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+    **Tip**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   - You can ![Undock](media/find-view-changesets/IC667296.png) undock the **Pending Changes** page from Team Explorer and open it in a new window.
+
+   - You can toggle between tree and list view from the **Actions** menu (Visual Studio 2013) or **View Options** menu (Visual Studio 2015).  
+   :::column-end:::
+:::row-end:::
+
 
 <a name="find"></a>
 

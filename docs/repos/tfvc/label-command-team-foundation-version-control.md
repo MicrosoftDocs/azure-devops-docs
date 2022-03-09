@@ -5,22 +5,25 @@ description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Label Command (Team Foundation Version Control)
+# Label command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
-
-Updated: October 2011
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+ 
 
 Attaches a label to or removes a label from a version of a file or folder in the server for Team Foundation version control.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**.
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf label labelname[@scope] [/owner:ownername] 
@@ -35,62 +38,94 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 
 ## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>labelname</i></p></td>
-<td><p>Identifies the name of the label to attach, modify, or remove from the specified items.</p></td>
-</tr>
-<tr>
-<td><p><i><xref href="scope" data-throw-if-not-resolved="False" data-raw-source="@scope"></xref></i></p></td>
-<td><p>Specifies a Team Foundation version control server directory within which the labelname is unique. This parameter lets you independently create, manage, retrieve, and delete one label or set of labeled items when two labels of the same name are in different parts of the Team Foundation version control server.</p></td>
-</tr>
-<tr>
-<td><p><i>ownername</i></p></td>
-<td><p>Provides a value such as DOMAIN\JuanGo or just juango to the <strong>/owner</strong> option.</p></td>
-</tr>
-<tr>
-<td><p><i>itemspec</i></p></td>
-<td><p>Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-You can specify more than one <i>Itemspec</i> argument.
-</div>
-</div>
-</div></td>
-</tr>
-<tr>
-<td><p><i>versionspec</i></p></td>
-<td><p>Provides a value such as c2 for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
-</tr>
-<tr>
-<td><p><i>comment</i></p></td>
-<td><p>A user-provided comment about the label.</p></td>
-</tr>
-<tr>
-<td><p><i><xref href="commentfile" data-throw-if-not-resolved="False" data-raw-source="@commentfile"></xref></i></p></td>
-<td><p>The user-provided path of a file on disk that contains the comment to use for the check-in.</p></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
-</tr>
-<tr>
-<td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
-</tr>
-</tbody>
-</table>
+### Argument
+
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *labelname*
+   :::column-end:::
+   :::column span="3":::
+   Identifies the name of the label to attach, modify, or remove from the specified items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *<xref href="scope" data-throw-if-not-resolved="False" data-raw-source="@scope"></xref>*
+   :::column-end:::
+   :::column span="3":::
+   Specifies a Team Foundation version control server directory within which the labelname is unique. This parameter lets you independently create, manage, retrieve, and delete one label or set of labeled items when two labels of the same name are in different parts of the Team Foundation version control server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *ownername*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value such as DOMAIN\JuanGo or just juango to the **/owner** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="3":::
+   Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
+   > [!Note]  
+   > You can specify more than one *itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *versionspec*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value such as c2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *comment*
+   :::column-end:::
+   :::column span="3":::
+   A user-provided comment about the label.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *<xref href="commentfile" data-throw-if-not-resolved="False" data-raw-source="@commentfile"></xref>*
+   :::column-end:::
+   :::column span="3":::
+   The user-provided path of a file on disk that contains the comment to use for the check-in.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="3":::
+   The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+
+### Option
 
 | **Option** | **Description** |
 |---|---|
@@ -100,7 +135,7 @@ You can specify more than one <i>Itemspec</i> argument.
 | **/child** | Not documented. |
 | **/recursive** | Labels all items in the directory that matches your *itemspec* and *versionspec*. Cannot be used with the **/delete** option. |
 | **/delete** | Removes the label. |
-| **/login** | Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server. |
+| **/login** | Specifies the user name and password to authenticate the user with Azure DevOps. |
 | **/collection** | Specifies the project collection. |
 
 
@@ -127,7 +162,7 @@ Labels are version-specific, that is, you can only attach a label to one version
 
 A label is not a versioned object; therefore, the label history of files is not tracked. Additionally, a label operation does not create a pending change in your workspace. When you issue the **label** command, the update is immediately reflected in the Team Foundation version control server.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ### Removing and Deleting Labels
 
@@ -137,7 +172,7 @@ For information about an existing label that includes a list of the items to whi
 
 ### Managing Overloaded Labels
 
-Label names must be unique throughout a specified scope. When you add a label, you reserve the use of that label name at or under the specified or implied scope. The default value for the <em>@scope</em> parameter is the project, for example, $/TeamProject1.
+Label names must be unique throughout a specified scope. When you add a label, you reserve the use of that label name at or under the specified or implied scope. The default value for the *@scope* parameter is the project, for example, $/TeamProject1.
 
 If another team or user adds a common label such as "M3" to a set of version-controlled files in a different part of the Team Foundation version control server, you can apply the M3 label to version-controlled files in your project as long as the root project folders are in different directories. For example, if files in the $/math directory are labeled "M3," you can apply the "M3" to files in your $/projects directory.
 
@@ -177,10 +212,10 @@ c:\projects>tf label goodbuild@$/TeamProject1 314.cs
 
 ## Related articles
 
-- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
 - [Labels Command](labels-command.md)
 - [Unlabel Command](unlabel-command.md)
 - [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
 - [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
-- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+
  

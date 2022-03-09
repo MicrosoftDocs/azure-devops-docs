@@ -10,6 +10,8 @@ monikerRange: '>= tfs-2017'
 
 # Azure Artifacts: best practices
 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
 This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure Artifacts.
 
 ## Create and publish packages

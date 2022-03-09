@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Grunt task
  
-[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to run Grunt tasks using the JavaScript Task Runner.
 

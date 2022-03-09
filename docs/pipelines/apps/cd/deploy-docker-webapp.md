@@ -1,32 +1,29 @@
 ---
-title: Deploy containerized applications to Web App for Containers
-description: Deploy container base web apps to Web App for Containers
+title: Deploy containerized applications to App Service on Linux
+description: Deploy container base web apps to App Service on Linux
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
-ms.date: 04/08/2021
-monikerRange: '> tfs-2018'
+ms.date: 03/03/2022
+monikerRange: '> tfs-2017'
 "recommendations": "true"
 ---
 
 # Deploy to Azure Web App for Containers
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
-With Azure Web App for Containers, you can easily deploy and run container-based web apps on Windows and Linux. In this quickstart, we will use Azure Pipelines to build and deploy our sample application to Web App for Containers App service.
+Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 
-With Azure Pipelines, you can implement a CI/CD workflow to automatically generate build Artifacts and trigger deployment to specific environments. 
+YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](../../get-started/key-pipelines-concepts.md).
 
-:::image type="content" source="azure/media/vscode-git-ci-cd-to-azure.png" alt-text="CI/CD workflow":::
+With Azure Pipelines, you can implement a CI/CD workflow to automatically generate build artifacts and trigger deployment to specific environments. 
 
 ## Prerequisites
 
-- Azure DevOps account. Create a free [Azure DevOps account](https://azure.microsoft.com/services/devops/) if you don't have one already.
-- GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-- Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/) if you don't have one already.
-- [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+* An [Azure Container Registry](/azure/container-registry/container-registry-intro). [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
 
 ## Get the code
 
@@ -37,7 +34,7 @@ With Azure Pipelines, you can implement a CI/CD workflow to automatically genera
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
@@ -45,7 +42,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 #### [Python](#tab/python)
 
 ```
-https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
 #### [.NET Core](#tab/dotnet-core)
 
@@ -68,7 +65,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/docker-template.png" alt-text="Select Docker pipeline template":::
 
-1. Select your Azure Subscription, and then select **Continue**.
+1. Select your Azure subscription, and then select **Continue**.
 
 1. Select your **Container registry** from the drop-down menu, and then select **Validate and configure**.
 
@@ -78,7 +75,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     ```YAML
     trigger:
-    - master
+    - main
     
     resources:
     - repo: self
@@ -113,7 +110,7 @@ To complete this section successfully, you must have an [Azure Container Registr
             tags: |
                 $(tag)
     ```
-1. To view the published docker image after your pipeline run has been completed, navigate to your container registry in Azure portal, and then select **Repositories**.
+1. To view the published Docker image after your pipeline run has been completed, navigate to your container registry in Azure portal, and then select **Repositories**.
 
     :::image type="content" source="media/docker-image-in-azure-portal.png" alt-text="Docker image published to Azure Container Registry":::
 
@@ -121,7 +118,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
 
-## Create an Azure Web App for Containers
+## Create your Web App for Containers
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
@@ -139,7 +136,64 @@ To complete this section successfully, you must have an [Azure Container Registr
 
 1. Select **Review and create**. Review your configuration, and select **Create** when you are done.
 
-## Create a release pipeline
+## Deploy with the Azure Web App for Container task
+
+# [YAML](#tab/yaml/)
+
+Deploy to an Azure App custom container with the [Azure Web App for Container task](../../tasks/deploy/azure-rm-web-app-containers.md)
+```yaml
+
+trigger:
+- main
+
+resources:
+- repo: self
+
+variables: 
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Web App>
+  containerRegistry: <Name of the Azure container registry>
+  dockerRegistryServiceConnection: '4fa4efbc-59af-4c0b-8637-1d5bf7f268fc'
+  imageRepository: <Name of image repository>
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  tag: '$(Build.BuildId)'
+
+  vmImageName: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  displayName: Build and push stage
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+
+
+    ## Add the below snippet at the end of your pipeline
+    - task: AzureWebAppContainer@1
+      displayName: 'Azure Web App on Container Deploy'
+      inputs:
+        azureSubscription: $(azureSubscription)
+        appName: $(appName)
+        containers: $(containerRegistry)/$(imageRepository):$(tag)
+```
+
+The **Azure Web App on Container** task will pull the appropriate Docker image corresponding to the BuildId from the repository specified, and then deploy the image to your Azure App Service on Linux.
+
+
+# [Classic](#tab/classic/)
 
 1. From within your project, select **Pipelines** then **Release**.
 
@@ -172,9 +226,48 @@ To complete this section successfully, you must have an [Azure Container Registr
 1. Navigate to your newly deployed web app to verify your deployment.
 
     :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
+---
 
-## Next steps
+## Deploy to a slot
 
-- [Set up multi-stage release](../../release/define-multistage-release-process.md)
-- [Stage templates in Azure Pipelines](../../release/env-templates.md)
-- [Deploy from multiple branches using Azure Pipelines](../../release/deploy-multiple-branches.md)
+# [YAML](#tab/yaml/)
+
+
+You can configure the Azure Web App container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+
+The following YAML snippet shows how to deploy to a staging slot, and then swap to a production slot:
+
+```yaml
+- task: AzureWebAppContainer@1
+  inputs:
+    azureSubscription: '<Azure service connection>'
+    appName: '<Name of the web app>'
+    containers: $(containerRegistry)/$(imageRepository):$(tag)
+    deployToSlotOrASE: true
+    resourceGroupName: '<Name of the resource group>'
+    slotName: staging
+
+- task: AzureAppServiceManage@0
+  inputs:
+    azureSubscription: '<Azure service connection>'
+    WebAppName: '<name of web app>'
+    ResourceGroupName: '<name of resource group>'
+    SourceSlot: staging
+    SwapWithProduction: true
+```
+
+# [Classic](#tab/classic/)
+
+You can configure the Azure Web App for container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+Use the option **Deploy to Slot** in the **Azure Web App Container** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
+
+---
+
+## FAQ
+### How do I find my registry credentials for the web app?
+
+<a name="endpoint"></a>
+
+App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Configuration** for the web app and update your Docker information.
+
+[ ![Screenshot showing Update image source and Registry in container settings.](azure/media/configure-app-service-security.png) ](azure/media/configure-app-service-security.png#lightbox)

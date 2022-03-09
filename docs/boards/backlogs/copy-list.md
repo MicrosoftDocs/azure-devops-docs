@@ -1,20 +1,20 @@
 ---
-title: Copy list of stories, issues, or other work items
+title: Copy a list of stories, issues, or other work items in Azure Boards
 titleSuffix: Azure Boards   
-description: Copy a list of user stories, issues, bugs, tasks, or other work items  from a backlog or query  
+description: Learn how to copy a list of user stories, issues, bugs, tasks, or other work items from a backlog or query in Azure Boards.
 ms.custom: seodec18
 ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+monikerRange: '<= azure-devops'
+ms.date: 10/08/2021
 ---
 
-# Copy a list of work items  
+# Copy a list of stories, issues, or other work items
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="html"></a>
 
@@ -36,7 +36,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 ::: moniker range=">= tfs-2018"
 
-1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
+1. From the web portal, open a backlog or query results page. Then, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
 2. Open the &hellip; context menu of one of the selected work items, and then choose **Copy to clipboard** or **Copy as HTML**. 
 
@@ -49,7 +49,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 ::: moniker range="tfs-2017"
 
-1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
+1. From the web portal, open a backlog or query results page. Then, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
 2. Open the &hellip; context menu of one of the selected work items, and then choose **Copy as HTML**.   
 
@@ -60,9 +60,9 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
-1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
+1. From the web portal, open a backlog or query results page. Then, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
 2. Open the ![context icon](../media/icons/context_menu.png) context menu of one of the selected work items, and then choose **Copy as HTML**. 
 
@@ -74,7 +74,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 ## Paste the contents into your email client
 
-Once you've copied your list, you can optionally paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the project or area node for those work items. 
+Once you've copied your list, you can paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the project or area node for those work items. 
 
 The formatted table contains a link to each work item included in your selected results list. A link to a query that will open only those work items selected is also provided.</p>
 

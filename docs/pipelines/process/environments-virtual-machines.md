@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Environment - virtual machine resource
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Use virtual machine (VM) resources to manage deployments across multiple machines with YAML pipelines. VM resources let you install agents on your own servers for rolling deployments.
 
@@ -114,7 +114,7 @@ jobs:
           - script: echo "Hello world"
 ```
 
-To learn more about deployment jobs, see the [YAML schema](../yaml-schema.md?tabs=schema#deployment-job).
+To learn more about deployment jobs, see the [YAML schema](/azure/devops/pipelines/yaml-schema/jobs-deployment).
 
 ## Add and manage tags
 
@@ -192,4 +192,4 @@ When you retry a stage, it reruns the deployment on all VMs and not just failed 
 
 - [About environments](environments.md)
 - [Learn about deployment jobs](deployment-jobs.md)
-- [YAML schema reference](../yaml-schema.md)
+- [YAML schema reference](/azure/devops/pipelines/yaml-schema)

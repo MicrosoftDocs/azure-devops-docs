@@ -3,13 +3,15 @@ title: Configure upstream behavior
 description: Allow or block the consumption of package versions from public registries.
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 02/23/2022
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: '>= tfs-2017'
 ---
 
 # Configure upstream behavior
+
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Upstream sources enables developers to use a single feed to publish and consume packages from Artifact feeds and public registries such as NuGet.org or npmjs.com. To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
@@ -73,25 +75,25 @@ Aside from using the feed's user interface, you can also configure the upstream 
 
 #### [NuGet](#tab/nuget/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get%20upstreaming%20behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set-upstreaming-behavior)
  
-#### [Npm](#tab/npm/)
+#### [npm](#tab/npm/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/getpackageupstreamingbehavior)
-- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/getscopedpackageupstreamingbehavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set%20upstreaming%20behavior)
-- [Set scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set%20scoped%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)
+- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-upstreaming-behavior)
+- [Set scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-scoped-upstreaming-behavior)
 
 #### [Python](#tab/python/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get%20upstreaming%20behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set-upstreaming-behavior)
 
 #### [Maven](#tab/maven/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get%20upstreaming%20behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set-upstreaming-behavior)
 
 * * * 
 
@@ -111,7 +113,7 @@ $env:PATVAR = "YOUR_PAT_GOES_HERE"
 The following commands will convert your personal access token to baser64 encoded string and construct the HTTP request header.
 
 ```PowerShell
-$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$PatVar")))
+$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
 $headers = @{
     Authorization = "Basic $token"
 }

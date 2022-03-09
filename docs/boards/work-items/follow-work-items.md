@@ -1,26 +1,26 @@
 ---
-title: Track updates by getting notified of changes made to a user story, bug, or other work item or pull request
+title: Track updates to a user story, bug, or other work item
 titleSuffix: Azure Boards & Azure Repos
-description: Track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos 
-ms.custom: work-items, seodec18
+description: Learn how to track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos.
+ms.custom: work-items, seodec18, cross-project 
 ms.technology: devops-collab
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 11/07/2021
 ---
 
-# Tutorial: Follow a user story, bug, issue, or other work item or pull request  
+# Tutorial: Track a user story, bug, issue, or other work item or pull request  
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 <a id="follow"></a>  
 
-To get notified of changes made to a specific work item or a pull request, you can elect to follow them. The Follow feature provides an ad hoc way of getting notified on a case-by-case basis. 
+To get notified of changes made to a specific work item or a pull request, you can choose to follow them. The Follow feature provides an improvised way of getting notified on a case-by-case basis. 
 
-On the other hand, if you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
+If you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
 
 > [!NOTE]  
 > Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../notifications/manage-your-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
@@ -37,7 +37,7 @@ This article shows you how to:
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-[You must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
+[Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
 
 
@@ -45,7 +45,7 @@ This article shows you how to:
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+* Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To view or follow work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md). Also, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 * To view or follow pull requests, you must have **Basic** access or higher.   
@@ -75,7 +75,7 @@ If you want to specify conditions on when you'll get notified of changes, choose
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Notification settings dialog for follow](media/follow-work/notification-settings-for-follow.png) 
 
-By default, you are **Subscribed** to receive a notification when any change is made to the work item. Choose **Not Subscribed** to receive notification only when you are @mentioned. Or choose **Custom** to receive notifications when one of the checked fields changes, **State**, **Assigned To**, or **Iteration Path**. 
+By default, you're **Subscribed** to receive a notification when any change is made to the work item. Choose **Not Subscribed** to receive notification only when you're @mentioned. Or choose **Custom** to receive notifications when one of the checked fields changes, **State**, **Assigned To**, or **Iteration Path**. 
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ By default, you are **Subscribed** to receive a notification when any change is 
 
 ::: moniker-end
 
-You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
+You'll only receive notifications when other members of your team modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
 
@@ -107,7 +107,7 @@ To track the progress of a single pull request, choose the  :::image type="icon"
 
 <img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" />  
 
-You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
+You'll only receive notifications when other members of your team modify the PR, such as adding to the discussion or adding an attachment. 
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
@@ -124,7 +124,7 @@ Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Foll
 > [!div class="mx-imgBorder"]  
 > ![Boards>Queries>All>Followed work items, new nav](media/follow-work/following-work-items-vert.png)   
 
-From this view, you can view all items you're following across all projects. Also, you can perform similar actions supported with a query results view, such as:
+From this view, you can view all items you're following across all projects. Also, you can complete similar actions supported with a query results view, such as:
 - Refresh the view
 - Add or remove visible columns
 - Sort the order of specific columns
@@ -146,7 +146,7 @@ Open **Work>Queries** and choose **Followed work items**.
 
 <img src="media/follows-followed-work-items.png" alt="Followed work items, Follow icon control" />  
 
-From this view, you can view all items you're following across all projects. Also, you can perform similar actions supported with a query results view, such as:
+From this view, you can view all items you're following across all projects. Also, you can complete similar actions supported with a query results view, such as:
 - Refresh the view
 - Add or remove visible columns
 - Sort the order of specific columns
@@ -162,7 +162,7 @@ You can also view and manage work that you're following from your Project pages.
 
 ## Query work items that you're following
 
-You can use the **\@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
+You can use the **\@Follows** macro in a query to filter a list based on work items you're following along with other query filters. 
 
 For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **\@Follows** macro.  
 

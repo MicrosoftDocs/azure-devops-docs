@@ -2,7 +2,7 @@
 title: Split columns on your Kanban board
 titleSuffix: Azure Boards
 ms.global_help.title: Split columns
-description: Implement Kanban pull model by dividing each column into Doing and Done when working in Azure Boards or Team Foundation Server  
+description: Learn how to implement the Kanban pull model by dividing each column into Doing and Done when you work in Azure Boards.  
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
@@ -10,31 +10,31 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 03/24/2021
+ms.date: 10/15/2021
 ---
 
-# Split columns
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+# Split columns on your Kanban board to show work in progress
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
-You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
+You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at each stage.  
 
 However, a lag often exists between when work gets moved into a column and when work actually starts. To counter that lag and reveal the actual state of work in progress, you can turn on split columns.  
 
-When split, each column contains two sub-columns, **Doing** and **Done**.
+When split, each column contains two subcolumns, **Doing** and **Done**.
 
 ![Kanban with split columns](media/kanban-board-split-columns-example-chart.png)  
 
-Split columns lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
+Split columns let your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
 
 By contrast, with split columns, your team knows exactly how many items sit idle, waiting for work to begin. You now have greater visibility into the quantity of items that sit idle at each stage throughout your workflow process. 
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
-## Push items into Done, pull items into Doing 
+## Move items into the Doing and Done columns 
 
-With split columns turned on, you update status of items on the Kanban board in the same way you have before. However, now when you've completed work on an item, you move it into Done, instead of a downstream column. When the next team member becomes free to work on the next high priority item, she pulls it into Doing and reassigns it to herself.  
+With split columns turned on, you update status of items on the Kanban board in the same way you have before. However, now when you've completed work on an item, you move it into Done, instead of a downstream column. When the next team member becomes free to work on the next high priority item, they pull it into Doing and reassigns it to themself.  
 
-For example, as a team member completes his coding task, he moves the item into Done under the Develop column. When the tester is ready to test the item, she pulls it into Doing under the Test column.  
+For example, as a team member completes their coding task, they move the item into Done under the Develop column. When the tester is ready to test the item, they pull it into Doing under the Test column.  
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board showing split column](media/columns/split-columns-move-item.png)
@@ -44,14 +44,14 @@ If you're new to Kanban, review [Kanban basics](kanban-basics.md)  to get an ove
 
 <a id="id-bottlenecks" />
 
-## Identify bottlenecks, drive toward a perfect flow scenario
+## Identify bottlenecks to drive toward a perfect flow scenario
 How can you use split columns to improve workflow?  
 
-Split columns provides you even greater insight into how many items sit idle in a Done column. Your team can readily see when items pile up, which signal a potential bottleneck.   
+Split columns provide you even greater insight into how many items sit idle in a Done column. Your team can readily see when items pile up, which signal a potential bottleneck.   
 
 ![Kanban board, split columns showing stacked items](media/kanban-board-identify-bottlenecks.png)  
 
-By reviewing the frequency of pile ups and where they occur, your team can adjust their processes to eliminate the bottlenecks. Workflow processes that incur no or very few bottlenecks correspond to perfect flows. No item sits in a queue for any 
+By reviewing the frequency of pile ups and where they occur, your team can adjust their processes to eliminate the bottlenecks. Workflow processes that incur no or few bottlenecks correspond to perfect flows. No item sits in a queue for any 
 
 ## Choose which columns you want to split  
 Now that you understand how your team can use split columns, here's how to turn them on. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).

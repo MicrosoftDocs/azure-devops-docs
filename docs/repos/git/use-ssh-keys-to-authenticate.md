@@ -11,9 +11,9 @@ monikerRange: '>= tfs-2015'
 
 # Use SSH key authentication
 
-[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
-Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the use of [Git Credential Manager](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 > [!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:

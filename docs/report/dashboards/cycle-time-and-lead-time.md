@@ -1,25 +1,24 @@
 ---
-title: Cycle time and lead time control charts
-titleSuffix: Azure DevOps Services  
-description: Configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes  
-ms.custom: dashboards
-ms.prod: devops  
+title: Cycle Time and Lead Time control charts
+titleSuffix: Azure DevOps Services
+description: Learn how to configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes.
+ms.custom: dashboards 
 ms.technology: devops-analytics  
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
-ms.date: 08/27/2020
+ms.date: 09/28/2021
 ---
 
 
-# Lead time and cycle time widgets
+# Lead Time and Cycle Time widgets
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
-Both lead time and cycle time widgets are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
+Both lead time and cycle time widgets are useful to teams. They both indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 
 The following diagram illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a completed state. Cycle time is calculated from first entering an In Progress or Resolved state category to entering a Completed state category. To understand how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](../../boards/work-items/workflow-and-state-categories.md). 
 
@@ -44,7 +43,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 ## Add the widget to your dashboard   
 
 1. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
-2. If you haven't yet [added the widget to your dashboard](./add-widget-to-dashboard.md), do that now. There are two widgets: [Cycle Time](widget-catalog.md#cycle-time-widget) and [Lead Time](widget-catalog.md#lead-time-widget). Choose the one you want to display and configure.
+2. If you haven't yet [added the widget to your dashboard](./add-widget-to-dashboard.md), do that now. There are two widgets: [Cycle Time](widget-catalog.md#cycle-time-widget) and [Lead Time](widget-catalog.md#lead-time-widget). Select the one you want to display and configure.
 
 
 <a id="configure-widget"></a>
@@ -55,7 +54,12 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Configure** to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlane, field criteria, and time period you want to monitor.  
+1. Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon and select **Configure** to open the configuration dialog. Modify the title, and then select the values you want to monitor:
+   - Team
+   - Backlog level
+   - Swimlane
+   - Field criteria
+   - Time period  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Configure dialog, Lead Time widget, latest version.](media/lead-cycle/cycle-lead-time-configure-dialog-s156.png)
@@ -74,39 +78,41 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 	> [!NOTE]   
 	> Supplying no values to the filter may lead to selection of all workitems, or may be an invalid filter argument depending on type of filter criteria.
 
-1. For a continuous flow, choose **Rolling period** and specify the number of days you want to view on the chart.  
+1. For a continuous flow, select **Rolling period** and specify the number of days you want to view on the chart.  
 
-	Or, for a fixed scope view, choose and specify the Start date. Choose this view if your team employs a Scrumban process or follows a standard sprint process. 
+	Or, for a fixed scope view, select and specify the Start date. Select this view if your team employs a Scrumban process or follows a standard sprint process. 
 
 	The main difference between these two types of charts is that the fixed scope chart will provide information (in most cases) of scope change.    
 
-2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
+2. Select **Save** when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot ofExample CFD chart, rolling 30 days" /> 
-
-	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
+    :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot ofExample CFD chart, rolling 30 days.":::
+	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-basics.md#track-work) of those work items that the widgets track. 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Configure** to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlane, and time period you want to monitor.  
+1. Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon and select **Configure** to open the configuration dialog. Modify the title and then select the values you want to monitor:
+   - Team
+   - Backlog level
+   - Swimlane
+   - Time period  
 
 	![Screenshot of Configure dialog, Configure dialog, Lead Time widget, 2019 version.](media/cycle-lead-time-configure-dialog.png)
 
 	To select a **Swimlane**, you must select a **Backlog**. 
 
-1. For a continuous flow, choose **Rolling period** and specify the number of days you want to view on the chart.  
+1. For a continuous flow, select **Rolling period** and specify the number of days you want to view on the chart.  
 
-	Or, for a fixed scope view, choose and specify the Start date. Choose this view if your team employs a Scrumban process or follows a standard sprint process. 
+	Or, for a fixed scope view, select and specify the Start date. Select this view if your team employs a Scrumban process or follows a standard sprint process. 
 
 	The main difference between these two types of charts is that the fixed scope chart will provide information (in most cases) of scope change.    
 
-2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
+2. Select **Save** when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot  Example CFD chart, rolling 30 days, 2019 version" /> 
-
-	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
+    :::image type="content" source="media/cycle-lead-time-lt-sample-chart.png" alt-text="Screenshot  Example CFD chart, rolling 30 days, 2019 version.":::
+	For your lead/cycle time charts to provide useful data, your team must quickly [update the status](../../boards/boards/kanban-basics.md#track-work) of those work items that the widgets track. 
 
 ::: moniker-end
  
@@ -114,39 +120,41 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 
 ## Interpret the scatter-plot control charts 
 
-Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. 
+Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information and provide several interactive elements. 
 
 **Example Lead Time widget**  
 
-<img src="media/lead-time-control-chart.png" alt="Screenshot of Cycle Time widget." />
-
-The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time. 
+:::image type="content" source="media/lead-time-control-chart.png" alt-text="Screenshot of Cycle Time widget.":::
+The chart dots represent completed work items where their position on the horizontal axis represents the date the team completed them. Their position on the vertical axis represents the calculated lead time or cycle time. 
 - Larger dots represent multiple work items with the same lead/cycle time 
 - Dot color corresponds to the work item type displayed in the legend
 - Dark gray dots correspond to a mix of work item types.
 
-#### Summary elements include: 
+### Summary elements 
 
 - Days on average (average lead time or cycle time) for the main work item types configured for the chart 
 - The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other  
 - The black trend line indicates the moving average 
 - The band around the trend line shows the standard deviation.
 
-#### Interactive elements include:  
+### Interactive elements  
 
 - Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
-- Choose a dot to open the work item or query that lists the work items   
-- To filter the chart, choose a work item type in the legend (:::image type="icon" source="../../media/icons/user-story-icon.png" border="false":::, :::image type="icon" source="../../media/icons/bug-icon.png" border="false":::, or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
+- Select a dot to open the work item or query that lists the work items   
+- To filter the chart, select a work item type in the legend (:::image type="icon" source="../../media/icons/user-story-icon.png" border="false":::, :::image type="icon" source="../../media/icons/bug-icon.png" border="false":::, or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
 
 
 ## Moving average and standard deviation calculations 
 
 The daily moving average value corresponds to the average of data points that fall within the moving average window. 
-The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
+The time-based moving average window is calculated based on the current day and previous *N* days. *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
 
-For example, if the chart displays the last 30 days, then *N*=5 days (20% of 30 days=6 days, rounded down to 5). The moving average window for April 10th corresponds to the previous 5 days. Therefore, the April 10th moving average is the average of all data points that fall on April 5th through April 10th.  
+Here's an example. If the chart displays the last 30 days, then *N* = 5 days:
+> 20% of 30 days is 6 days rounded down to the nearest odd number which is 5.
 
-If there are no data points that fall within the moving average window, the chart doesn't show a moving average line. This can happen if you are starting out and there aren't enough days to calculate a moving average. 
+The moving average window for April 10 corresponds to the previous 5 days. So, the April 10 moving average is the average of all data points that fall on April 5 through April 10.  
+
+If you don't have data points that fall within the moving average window, the chart doesn't show a moving average line. This scenario can occur if you're starting out and there aren't enough days to calculate a moving average.
 
 The standard deviation appears as a band that encompasses the moving average. Standard deviation is calculated based on all data points falling within the same moving average window. Like moving average, if no data points fall within the moving average window, the chart doesn't plot standard deviation.  
 

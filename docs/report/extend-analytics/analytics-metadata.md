@@ -1,27 +1,26 @@
 ---
 title: Explore the OData metadata for Analytics 
 titleSuffix: Azure DevOps  
-description: Understand the entity model OData metadata defined for Analytics in Azure DevOps  
+description: Learn about the entity model OData metadata defined for Analytics in Azure DevOps.
 ms.technology: devops-analytics
 ms.reviewer: angurusw
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/30/2020
 ---
 
 # Explore the Analytics OData metadata
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Understanding the metadata associated with the entity model for Analytics is a pre-requisite for programmatically querying the [Data model for Analytics](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
+Understanding the metadata associated with the entity model for Analytics is a prerequisite for programmatically querying the [Data model for Analytics](data-model-analytics-service.md). OData metadata is a machine-readable description of the entity model designed to enable client consumption. 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
 In this article you'll learn how to:
 > [!div class="checklist"]
-> 
 > * Query the metadata on a specific project
 > * Query the metadata on an organization
 > * Identify the keys, properties, and navigational properties associated with an Entity
@@ -117,7 +116,7 @@ Keys define the Entity properties available for use as a Navigational Property.
 
 ### Properties
 
-The set of Entity properties available for query. Annotations represent additional details about a given property. 
+The set of Entity properties available for query. Annotations represent other details about a given property. 
 
 Any property of Analytics that should be visible to end users is annotated with a DisplayName.
 
@@ -144,9 +143,9 @@ ReferenceName is another common annotation used to define the system identifier 
 
 ### Navigational properties
 
-Querying an individual Entity is useful, but eventually you will want to be able to filter or expand details of another Entity. To do this, you need to understand how to use the [Navigational Properties](data-model-analytics-service.md) of the Entity model. 
+Querying an individual Entity is useful. Eventually, you'll probably want to filter or expand details of another Entity. To do so, you need to understand how to use the [Navigational Properties](data-model-analytics-service.md) of the Entity model. 
 
-A Navigational Property with a Collection type represents a many to many relationship in the model.
+A Navigational Property with a Collection type represents a many-to-many relationship in the model.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -242,7 +241,7 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 > ```
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Data model for Analytics](data-model-analytics-service.md)

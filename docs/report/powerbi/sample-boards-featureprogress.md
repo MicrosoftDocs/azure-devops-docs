@@ -1,26 +1,23 @@
 ---
 title: Feature Progress rollup sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to display Feature progress rollup by Story Pointas  
+description: Learn how to generate feature progress rollup by Story Points Power BI report.
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 03/06/2020
+ms.date: 10/05/2021
 ---
 
 # Feature progress rollup sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
-This article shows you how to display the percentage complete by rollup of Story Points  for a given set of active Features. An example is shown in the following image. 
+This article shows you how to create a stacked bar report to display progress of Features based on completed child User Stories. The report displays the percentage complete by rollup of Story Points for a given set of active Features. An example is shown in the following image. 
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
-> 
+![Feature Progress sample report, intro.](media/reports-boards/feature-progress-percentage-complete-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -28,6 +25,8 @@ This article shows you how to display the percentage complete by rollup of Story
 
 
 ## Sample queries
+
+
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -39,9 +38,10 @@ let
         &"$filter=WorkItemType eq 'Feature' "
             &"and State ne 'Cut' "
             &"and startswith(Area/AreaPath,'{areapath}') "
+            &"and Descendants/any()"
             &"&$select=WorkItemId,Title,Area,Iteration,AssignedTo,WorkItemType,State,AreaSK"
             &"&$expand=Descendants( "
-            &"$apply=filter(WorkItemType eq 'User Story') "
+            &"$apply=filter(WorkItemType eq 'User Story') " 
                 &"/groupby((StateCategory), "
                 &"aggregate(StoryPoints with sum as TotalStoryPoints)) "
             &")  "
@@ -73,7 +73,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- `{areapath}` - Your Area Path. Example format: `Project/Level1/Level2`
 
 
 ### Query breakdown
@@ -119,7 +119,7 @@ The following table describes each part of the query.
       `and startswith(Area/AreaPath,'{areapath}')`  
    :::column-end:::
    :::column span="2":::
-      Work items under a specific Area Path. Replacing with Area/AreaPath eq '{areapath}' returns items at a specific Area Path.  
+      Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.  
       To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
@@ -134,7 +134,7 @@ The following table describes each part of the query.
       &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
       &$expand=Descendants($select=WorkItemId)`  
       <br/>
-      For all workitems with **at least one descendant**:
+      For all work items with **at least one descendant**:
       `$filter=endswith(Area/AreaPath, 'suffix')and Descendants/any()
       &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
       &$expand=Descendants($select=WorkItemId)`
@@ -190,67 +190,83 @@ The following table describes each part of the query.
 :::row-end:::
  
 
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
 ## Power BI transforms
 
-[!INCLUDE [temp](includes/sample-expandcolumns.md)]
+The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.  
+
+For the Feature Progress report, you'll need to carry out the following transforms: 
+
+- Expand the **Descendants** column into two columns: **Descendants.StateCategory** and **Descendants.TotalStoryPoints**
+- Apply **Pivot Column** transform on **Descendants.StateCategory** column to separate out individual State categories  
+- Replace null values in pivoted columns 
+- Add a custom column to represent percentage complete.
+
+
+> [!NOTE]   
+> In this example, the State values for **User Story** include **Proposed**, **In Progress**, and **Completed**.
+
 
 ### Expand Descendants column
 
-The Descendants column contains a table with two fields: State and TotalStoryPoints. You need to expand it.
+The **Descendants** column contains a table with two fields: **State** and **TotalStoryPoints**. Expand it. 
 
-1. Select the expand button on the Descendants column.
+
+1. Select the expand button on the **Descendants** column.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
+    > ![Power BI + OData - expand the Descendants column](media/reports-boards/expand-descendants-column.png)
 
 2. Check all the fields and choose **OK**.
  
     > [!div class="mx-imgBorder"] 
-    > ![Check all the fields and choose OK.](media/odatapowerbi-expanddescendants2.png)
+    > ![Expand dialog for Descendants column.](media/reports-boards/expand-dialog-descendants.png)
 
 3. Table now contains rollup fields.
  
     > [!div class="mx-imgBorder"] 
-    > ![Table now contains rollup fields.](media/odatapowerbi-expanddescendants3.png)
+    > ![Expanded Descendants columns include StateCategory and TotalStoryPoints.](media/reports-boards/expanded-descendants.png)
 
 ### Pivot Descendants.StateCategory column
 
-1. Click the Descendants.StateCategory column header to select it.
-1. Select **Transform** menu
-1. Select **Pivot Column**
-1. For **Values** select "Descendants.TotalStoryPoints"
+1. Select the Descendants.StateCategory column header to select it.
+1. Select **Transform** menu and then **Pivot Column**. 
+	:::image type="content" source="media/reports-boards/transform-menu-pivot-column.png" alt-text="Transform menu, Pivot Column option.":::
+1. For **Values** select "Descendants.TotalStoryPoints".  
 1. Press **OK**.
 	Power BI creates a column for every StateCategory value.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Pivot Descendants.StateCategory column.](media/odatapowerbi-expanddescendants4.png)
+	> ![Pivot Descendants.StateCategory column.](media/reports-boards/pivot-column-transform-state-categories.png)
 
-### Replace Nulls in the pivoted columns
+### Replace null values in pivoted columns
 
 Some of the new Pivoted StateCategory columns will have null values. For easier reporting, replace the nulls with zeroes. 
 
 [!INCLUDE [temp](includes/sample-replace-nulls.md)]
 
-Repeat for every Pivoted StateCategory column.
+Repeat for every Pivoted **StateCategory** column.
 
-### Create a Percentage Complete computed column
+### Create a percentage complete computed column
 
 1. Select **Add Column** menu.
 1. Select **Custom Column**.
-1. Enter "PercentComplete" for **New column name**.
+1. Enter **PercentComplete** for **New column name**.
 1. Enter the following in **Custom column formula**.
 
     ```
     = [Completed]/([Proposed]+[InProgress]+[Resolved]+[Completed])
     ```
+	:::image type="content" source="media/reports-boards/custom-column-dialog-percent-complete.png" alt-text="Custom Column Dialog, PercentComplete syntax.":::
 
     > [!NOTE]
-    > It is possible you won't have a Resolved column, if the work items don't have States mapped to the Resolved State Category. 
+    > It is possible you won't have a **Resolved** column, if the work items don't have States mapped to the Resolved State Category. 
     > If so, then omit "[Resolved]" in the above formula.
 
 1. Press **OK**.
 1. Select **Transform** menu.
-1. Select **Data Type** and select Percentage.
+1. Select **Data Type** and select **Percentage**.
 
 [!INCLUDE [temp](includes/sample-finish-query.md)]
 
@@ -263,32 +279,26 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Fields](media/odatapowerbi-featureprogress-fields.png)
+> ![Feature Progress fields.](media/reports-boards/feature-progress-fields.png)
 
-For a simple report, do the following steps:
+For the report, do the following steps:
 
-1. Select the "PercentageComplete" field in the **Fields** list.
-1. Select **Modeling** menu.
-1. Select **Format** and choose **Percentage**.
-1. Select Power BI Visualization **Clustered bar chart**. 
-1. Add the field "Title" to **Axis**.
-1. Add the field "PercentageComplete" to **Values**.
-    - Right-click PercentageComplete and select **Sum**.
+1. Under **Visualizations**, choose the **Stacked Bar Chart**.
+1. Add the **Title** field to **Axis**.
+1. Add the **PercentComplete** to **Values**. 
+   - Right-click PercentageComplete and select **Sum**.
 
 The example report displays.
 
-> [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
-
-[!INCLUDE [temp](includes/sample-multipleteams.md)]
+![Feature Progress sample report.](media/reports-boards/feature-progress-percentage-complete-report.png)
 
 ## Additional queries
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article. 
 
-### Filter by Teams, rather than Area Path
+### Filter by teams, rather than Area Path
 
-This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
+This query is the same as the one used above, except it filters by **Team Name** rather than **Area Path**. 
 
 #### [Power BI query](#tab/powerbi/)
 

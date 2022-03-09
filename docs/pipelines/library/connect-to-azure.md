@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Connect to Microsoft Azure
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -55,7 +55,7 @@ We recommend this simple approach if:
 
 1. To deploy to a specific Azure resource, the task will need additional data about that resource.
 
-   * If you're using the classic editor, select data you need. For example, the App service name.
+   * If you're using the classic editor, select data you need. For example, the App Service name.
    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ or a [VM with a managed service identity](#use-msi).
 
 ## Create an Azure Resource Manager service connection with an existing service principal
 
-1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
+1. If you want to use a predefined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
    * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   

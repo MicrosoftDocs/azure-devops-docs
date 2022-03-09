@@ -1,17 +1,18 @@
 ### YamlMime:Landing
 
-title: Wikis, Public Projects, & work across projects
-summary: Share information, create public projects, and work across projects.  
+title: Wikis, search, & navigation documentation 
+summary: Share information with wikis, search within and across projects, and learn how to navigate within Azure DevOps. 
 
 metadata:
-  title: Wikis, Public Projects, work across projects documentation
-  description: Share information, create public projects, and work across projects.
+  title: Wikis, search, & navigation documentation
+  titleSuffix: Azure DevOps 
+  description: Work across Azure DevOps Services and projects, share information, and create public projects. 
   ms.prod: devops 
   ms.technology: devops-collab
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 12/17/2020
+  ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -19,20 +20,42 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Create and manage a public project
+  - title: Get started
     linkLists:
       - linkListType: overview
         links:
-          - text: What is a public project?
-            url: ../organizations/public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
-      - linkListType: quickstart
+          - text: Navigate the web portal 
+            url: ./navigation/index.md
+          - text: Get started with Search
+            url: ./search/get-started-search.md
+      - linkListType: how-to-guide
         links:
-          - text: Create a public project
-            url: ../organizations/public/create-public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
-          - text: Invite users to your public project
-            url: ../organizations/public/invite-users-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
-          - text: Make a private project public
-            url: ../organizations/public/make-project-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+          - text: Set your preferences
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+          - text: Enable or disable preview features
+            url: ./navigation/preview-features.md
+          - text: Set personal or team favorites
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+          - text: Connect to a project
+            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  - title: Search
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Search across all your code, wiki, packages and work items
+            url: ./search/get-started-search.md
+      - linkListType: video
+        links:
+          - text: Code search
+            url: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+      - linkListType: how-to-guide
+        links:
+          - text: Search code
+            url: ./search/functional-code-search.md
+          - text: Search packages
+            url: ./search/functional-package-search.md
+          - text: Search work items
+            url: ./search/functional-work-item-search.md
   - title: Add and manage wikis
     linkLists:
       - linkListType: overview
@@ -59,35 +82,34 @@ landingContent:
             url: ./wiki/markdown-guidance.md
           - text: Syntax guidance for Markdown usage in Wiki
             url: ./wiki/wiki-markdown-guidance.md
-  - title: Work across projects
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: View work assigned to you
-            url: ./navigation/work-across-projects.md
-      - linkListType: tutorial
-        links:
-          - text: Set personal or team favorites
-            url: ./navigation/set-favorites.md
-      - linkListType: overview
-        links:
-          - text: Work across projects FAQs 
-            url: ./work-across-projects-faqs.yml
-  - title: Search
+  - title: Navigating the web portal
     linkLists:
       - linkListType: overview
         links:
-          - text: Search across all your code, wiki, packages and work items
-            url: ./search/get-started-search.md
-      - linkListType: video
-        links:
-          - text: Code search
-            url: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+          - text: Navigation overview
+            url: ./navigation/index.md
       - linkListType: how-to-guide
         links:
-          - text: Search code
-            url: ./search/functional-code-search.md
-          - text: Search packages
-            url: ./search/functional-package-search.md
-          - text: Search work items
-            url: ./search/functional-work-item-search.md
+          - text: Enable or disable preview features
+            url: ./navigation/preview-features.md
+          - text: Work with favorites
+            url: ./navigation/set-favorites.md
+          - text: Filter lists, boards, and directories
+            url: ./navigation/filter-basics.md
+          - text: Keyboard shortcuts 
+            url: ./navigation/keyboard-shortcuts.md
+  - title: Request, get, & track feedback
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About requesting and providing feedback
+            url: ./feedback/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Request feedback, Test & Feedback extension
+            url: ../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+          - text: Request feedback, Microsoft Feedback Client
+            url: ./feedback/get-feedback.md
+          - text: Track feedback
+            url: ../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+ 

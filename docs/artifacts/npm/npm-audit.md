@@ -9,6 +9,8 @@ monikerRange: 'azure-devops'
 
 # Use npm audit
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 The *npm audit* command scans your project for security vulnerabilities and provides a detailed report of any identified anomaly. Performing security audits is an essential part in identifying and fixing vulnerabilities in the project's dependencies. Fixing these vulnerabilities could prevent things like data loss, service outages, and unauthorized access to sensitive information.
 
 Azure DevOps does not support *npm audit*, if you try to run the default *npm audit* command from your pipeline, the task will fail with the following message: *Unexpected end of JSON input while parsing...*.

@@ -11,6 +11,8 @@ monikerRange: '>= tfs-2017'
 
 # Debug with WinDbg
 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
  Azure Artifacts offers a dedicated symbols server to publish your symbols. You can connect a debugger to automatically retrieve the correct symbol files and debug your application. Using WinDbg, you can load an executable or attach the debugger to a running process, consume your symbols, set up breakpoints, and step through and analyze your code.
 
 ## Add the symbol server to WinDbg
@@ -44,4 +46,3 @@ With WinDbg, you can debug both kernel-mode and user-mode components:
 
 - [Symbols overview](../concepts/symbols.md).
 - [Debug with Visual Studio](./debug-with-symbols-visual-studio.md).
-- [How the Debugger Recognizes Symbols](/windows-hardware/drivers/debugger/how-the-debugger-recognizes-symbols).

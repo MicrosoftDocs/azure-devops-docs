@@ -1,7 +1,7 @@
 ---
-title: Customize cards on a board
+title: Customize cards on a Kanban board
 titleSuffix: Azure Boards
-description: Customize cards on the Kanban or Sprint/Scrum/taskboards in Azure Boards and Azure DevOps 
+description: Learn how to customize cards to provide at-a-glance information of interest to your team in Azure Boards and Azure DevOps. 
 ms.custom: boards-kanban, contperf-fy21q3
 ms.technology: devops-agile
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 03/12/2021 
+ms.date: 10/15/2021
 ---
  
-# Customize cards  
+# Customize cards on a Kanban board  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
 With the Kanban board, you gain a rich set of tools and a rich set of customization options. Kanban boards display work items as cards. Each card corresponds to a work item that you use to share information, track status, and assign work. Information rich cards provide at-a-glance info of interest to you and your team and allow you to update a field without opening the work item. With style rules, you can highlight cards and tasks based on the criteria you set.  
 
@@ -54,7 +54,7 @@ In the card shown below, the following options have been set for the bug work it
 
 ::: moniker range="< tfs-2017"
 
-In this example, the bug work item type shows all the core fields, three more fields, and tags. Also, To make severity 1 bugs stand out, a styling rule causes the card to display as yellow.  
+The bug work item type in this example shows all the core fields, three more fields, and tags. Also, to make severity 1 bugs stand out, a styling rule causes the card to display as yellow.  
 
 ![Card customize to show additional fields, tags, and style rule ](media/card-customize-example-bug-with-callouts.png)
 ::: moniker-end
@@ -74,14 +74,14 @@ Your best bet is to show fields on cards based on what your team frequently refe
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+> You can customize a work item type which is different than customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"
 
 > [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+> You can customize a work item type which is different than customizing the card displayed on the Kanban board. You customize a work item type by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 
 ::: moniker-end
 
@@ -229,7 +229,7 @@ You can customize cards that appear on the Kanban board for your product backlog
 
 <a id="fields"></a>
 
-## Choose fields to appear on cards 
+## Choose which fields appear on cards 
  
 By showing a field on a card, you can edit that field directly on the board without having to open the card, unless it's a read-only field, such as the Change By and Changed Date fields. This quick update feature is useful when you need to update many work items at once. For example, you can add estimates for backlog items on the Kanban board. 
 
@@ -329,7 +329,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 <a id="style-rule" > </a>  
 
-## Define style rules to highlight cards  
+## Define style rules to highlight cards 
  
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight severity 1 bugs by having the cards display as yellow. 
 
@@ -345,7 +345,7 @@ This feature requires TFS 2015.1 or later versions.
 ::: moniker-end
 
 
-### Example styling rules 
+### Examples of styling rules 
 
 What rules should you apply to highlight work items? Here are a few examples and their associated criteria.
 
@@ -377,7 +377,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
    - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md). 
    - All clauses are considered AND clauses, grouping clauses isn't supported. 
    - Card rules apply to all work items that meet the rule criteria. 
-   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied. 
+   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied. 
    - You can quickly enable and disable a style rule.
 
      Here we add a Stale tasks rule that highlights tasks that haven't changed in the last five days.
@@ -403,10 +403,10 @@ You can apply style rules to change the color of cards on Kanban boards and task
    - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md) 
    - All clauses are considered AND clauses, grouping clauses isn't supported  
    - Card rules apply to all work items that meet the rule criteria  
-   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
+   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied.  
    - You can quickly enable and disable a style rule. 
 
-     Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
+     Here we add a Stale tasks rule that highlights tasks that haven't changed in the last five days.
 
      ![taskboard, Style dialog, example style rule.](../sprints/media/customize/task-board-card-style-rule-stale-tasks.png)   
 
@@ -419,9 +419,9 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
 <a id="color-tags" > </a>
 
-## Color-code tags   
+## Assign a color to a tag   
 
-Prior to setting tag colors, first [add tags to backlog items](../../boards/queries/add-tags-to-work-items.md) that you want to highlight with color.   
+Before setting tag colors, [add tags to backlog items](../../boards/queries/add-tags-to-work-items.md) that you want to highlight with color.   
  
 ::: moniker range="tfs-2015"  
 Requires TFS 2015.1 or later version.  
@@ -451,11 +451,11 @@ Requires TFS 2015.1 or later version.
 
 ## Enable or disable an annotation
 
-By default, all annotations are enabled that are applicable for the board you selected. This includes all work item types added to the next level backlog, GitHub, and Tests. Disable those annotations, which your team won't use or which you don't want teams to use for a particular backlog level. 
+By default, all annotations are enabled that are applicable for the board you selected. These annotations include all work item types added to the next level backlog, GitHub, and Tests. Disable those annotations, which your team won't use or which you don't want teams to use for a particular backlog level. 
 
 When you disable an annotation, you also disable the feature to add the associated object from the Kanban board. For example, if you disable the Tests annotation, you disable the ability to add tests from the currently selected Kanban board. 
 
-As shown in the following examples, the **Task** and **Test** annotations indicate that two each of tasks and tests have been defined for the work item. Disable the annotations you're team doesn't use from the **Annotations** tab. 
+As shown in the following examples, the **Task** and **Test** annotations indicate that two each of tasks and tests have been defined for the work item. Disable the annotations your team doesn't use from the **Annotations** tab. 
 
 > [!div class="mx-tdBreakAll"]  
 > | Task annotations  |Test annotations  |No annotations |
@@ -504,7 +504,7 @@ To learn more about using these features, see [Add tasks or child items as check
 
 ## Configure inline tests 
 
-You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add, or add all new tests to a selected test plan. 
+You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add. Or, add all new tests to a selected test plan. 
 
 ::: moniker-end
 
@@ -517,9 +517,9 @@ You can control the test plan under which inline tests you add through the Kanba
 	> [!div class="mx-imgBorder"]  
 	> ![Configure inline tests.](media/customize-cards/settings-tests.png)  
 
-   In a test plan, a test case can exist in multiple test suites. For example, you may define several test suites for each product feature and the test cases test scenarios across features. The test case might exist in both feature's test suite with the same configurations and test steps. As a result of this setup, the tester might run the same test case multiple times for the same product version. 
+   In a test plan, a test case can exist in multiple test suites. For example, you may define several test suites for each product feature and the test cases test scenarios across features. The test case might exist in both feature's test suite with the same configurations and test steps. Because of this setup, the tester might run the same test case multiple times for the same product version. 
 
-    To avoid the redundancies that can occur under this scenario, you should choose **Show same outcome of the tests in multiple suites under the same plan** checkbox. When checked, the Test Points of the same Test Case and configuration, shows the same latest outcome. When the tester runs any one test, the output is synced with all other test points (which are of same Test Case work item and same configuration) in the Test Plans. The tester can use the outcome and choose not to run the test again.
+    To avoid the redundancies that can occur under this scenario, you should choose **Show same outcome of the tests in multiple suites under the same plan** checkbox. When checked, the Test Points of the same Test Case and configuration, shows the same latest outcome. When the tester runs any one test, the output is synced with all other test points (which are of the same Test Case work item and same configuration) in the Test Plans. The tester can use the outcome and choose not to run the test again.
 
 1. Save your changes. 
 

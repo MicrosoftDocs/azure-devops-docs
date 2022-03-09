@@ -6,14 +6,15 @@ ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
 ms.technology: devops-code-git 
 ms.topic: reference
-monikerRange: '<= azure-devops'
+monikerRange: '>= tfs-2015'
 ms.date: 04/14/2021
 ---
 
 
 #  Git command reference 
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 <a name="set_up"></a>
 <a name="pat"></a>
@@ -26,7 +27,7 @@ Team Explorer and the Git command-line work great together. When you make update
 [Git Installation instructions](/devops/develop/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
 
 > [!TIP]
-> Windows users: If you aren't using Visual Studio, install[Git for Windows](https://git-scm.com/download/win) to set up the [Git Credential Manager Core](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
+> Windows users: If you aren't using Visual Studio, install [Git for Windows](https://git-scm.com/download/win) to set up the [Git Credential Manager](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
 
 While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click your local repo and select **Open Command Prompt**
    
@@ -82,7 +83,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
      `git init` *foldername*<br>`cd` *foldername*<br>`git add --all`<br>`git commit -m "Initial commit"`
    :::column-end:::
    :::column span="1":::
-     Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](media/share-your-code-in-git-vs/publish_status_bar.png)  ) from the status bar in the lower right.  
+     Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](media/share-your-code-in-git-vs/visual-studio-2013-2015/publish-status-bar.png)  ) from the status bar in the lower right.  
    :::column-end:::
 :::row-end:::
 ---
@@ -200,13 +201,11 @@ For additional information, see the following resources:
 - [Create a new repo](creatingrepo.md)  
 - [Clone an existing repo](clone.md)   
 - [Share your code in Git with the command line](share-your-code-in-git-cmdline.md)   
-- [Share your code in Git with Visual Studio 2015](share-your-code-in-git-vs.md)   
-- [Share your code in Git with Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
+- [Share your code in Git with Visual Studio](share-your-code-in-git-vs.md)      
 - [Create a new repo in your Project](create-new-repo.md)   
 - [Delete a repo in your Project](delete-existing-repo.md)
 
 ## Branches
-
 
 ---
 :::row:::
@@ -574,8 +573,8 @@ To learn more, see [Compare versions and review history](review-history.md).
 For additional information, see the following resources: 
 
 - [Share code with push](pushing.md)   
-[Update your code with fetch and pull](pulling.md)   
-[Resolve merge conflicts](merging.md)
+- [Update your code with fetch and pull](pulling.md)   
+- [Resolve merge conflicts](merging.md)
 
 ## Merge and rebase
 
@@ -720,7 +719,7 @@ For additional information, see the following resources:
       Reset your local branch to the most recent commit on a remote branch
    :::column-end:::
    :::column span="1":::
-     `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/master`)
+     `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/main`)
    :::column-end:::
    :::column span="1":::
      Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**  
@@ -740,5 +739,6 @@ For additional information, see the following resources:
 :::row-end:::
 --- 
 
- 
-To learn more, see [Undo changes and commits](undo.md).
+## Related articles
+
+- [Undo changes and commits](undo.md).

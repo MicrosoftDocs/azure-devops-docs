@@ -1,22 +1,22 @@
 ---
-title: Sprint calendar view of features and epics
+title: View of features and epics on the Feature Timeline
 titleSuffix: Azure DevOps
-description: Learn how to manage portfolios with a calendar view of features and epics  
+description: Learn how to manage portfolios with a calendar view of features and epics on the Feature Timeline. 
 ms.custom: extensions
 ms.technology: devops-agile
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 07/09/2020
+ms.date: 10/01/2021
 ---
  
 # View portfolio progress with the Feature Timeline 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 
-The Feature Timeline supports portfolio management by providing an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level. 
+The Feature Timeline supports portfolio management. It provides an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level. 
 
 [!INCLUDE [temp](../../includes/lightbox-image.md)] 
 
@@ -40,13 +40,13 @@ Use the Feature Timeline to support the following tasks:
 
 ## Prerequisites
 
-- Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
-- To view the Feature Timeline, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
-- To modify work items, you must have permissions to edit work items under the area path they are assigned to.   
+- Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization or collection for which you want to track progress at the epic and feature level. To install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
+- To view the Feature Timeline, you must be a member of the project. You must also have view permissions to work items under the area path they're assigned to.
+- To modify work items, you must have permissions to edit work items under the area path they're assigned to.   
 
 ## Define your features and requirements
  
-The Feature Timeline is designed to display features and the progress made to their child requirements. The Feature Timeline displays features grouped under epics when they are linked to parent epics. Ungrouped features appear at the bottom of the view. 
+The Feature Timeline is designed to display features and the progress made to their child requirements. The Feature Timeline displays features grouped under epics when they're linked to parent epics. Ungrouped features appear at the bottom of the view. 
 
 [!INCLUDE [note-requirements](../includes/note-requirements-terms.md)]
 
@@ -56,7 +56,7 @@ To gain the most from the Feature Timeline view, make the following definitions:
 - Define sprints with dates for the project. Select sprints for the team.  
 	> [!NOTE]   
 	> Make sure you assign work items to a **flat set of sprints**. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.  
-- For work to be performed in some future iteration, you can leave the dates unset for the iteration and it will appear as the last sprint in the roadmap. 
+- For work to be completed in some future iteration, you can leave the dates unset for the iteration and it will appear as the last sprint in the roadmap. 
 - Make sure the team is subscribed to the sprints of interest. 
 - Define features and child work items. If no child work items are defined, then assign the feature to a sprint. 
 - When child work items are defined, assign the child items to sprints. 
@@ -76,7 +76,7 @@ To learn more, review the following articles:
 <a id="open-boards" />
 
 
-## Open Boards or Backlogs 
+## Open boards or backlogs 
 
 You can access the Feature Timeline from either your team's Kanban board or backlog. 
 
@@ -142,7 +142,7 @@ Choose **Feature Timeline**.
 > [!div class="mx-imgBorder"]  
 > ![Choose Feature Timeline from Azure Boards](media/feature-timeline/choose-feature-timeline.png)
 
-If you don't see the **Feature Timeline** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request that it be installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
+If you don't see the **Feature Timeline** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request to have it installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
 
 <a id="customize" /> 
 
@@ -156,10 +156,10 @@ You can customize your view of the Feature Timeline with the controls shown in t
 - **View Sprints**: Enter the number of iterations to show. The maximum number is 11. 
 	> [!NOTE]  
 	Sprint labels may not display for iterations above six, however, the calendar view represents those iterations.
-- **Plan Features**: Opens a side panel of additional features participating in a Portfolio Plan. 
+- **Plan Features**: Opens a side panel of other features participating in a Portfolio Plan. 
 - **Show Details**: Displays progress bars of Feature child items
 - **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort. 
-- **Closed Features**: Filters the Features based on those closed within the selected time frame. 
+- **Closed Features**: Filters the Features based on those features closed within the selected time frame. 
 
 > [!NOTE]  
 > The Plan Features is in preview and available for Azure DevOps Services only at this time. Use of this feature integrates with Portfolio plans. Portfolio Plans are  not yet documented.
@@ -168,7 +168,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 
 <a id="drill-down" /> 
 
-## Drill-down and change Start and End iterations 
+## Drill down and change Start and End iterations 
  
 1. To view the requirements linked to a feature, choose the  :::image type="icon" source="../media/icons/info.png" border="false":::  info icon for that feature. 
 
@@ -180,7 +180,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 	> [!div class="mx-imgBorder"]  
 	> ![Dialog showing the child items of the feature.](media/feature-timeline/drill-down-2.png)
 
-	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
+	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop-down path. 
 
 1.	Or, you can also drag and drop a child item to a new iteration. 
 

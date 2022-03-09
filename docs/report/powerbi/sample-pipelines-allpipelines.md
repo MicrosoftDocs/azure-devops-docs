@@ -1,7 +1,7 @@
 ---
 title: Pipeline outcome summary for all pipelines sample report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pipeline outcome summary Power BI report for all pipelines in the project  
+description: Learn how to generate a pipeline outcome summary Power BI report for all pipelines in the project.  
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,14 +9,14 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 12/18/2020
+ms.date: 10/12/2021
 ---
 
 # Pipeline outcome summary for all pipelines sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-You may want to see pipeline metrics such as pass rate, number of failures, duration etc. for all the pipelines together, in a single report. This article shows you how to get pipeline outcome summary, for all the pipelines in a project. A similar approach can be taken to get other metrics like pipeline duration and number of failures for all pipelines of the project in a single report.
+You may want to see pipeline metrics such as pass rate, number of failures, duration, and so on. for all the pipelines together, in a single report. This article shows you how to get pipeline outcome summary, for all the pipelines in a project. You can take a similar approach to get other metrics like pipeline duration and number of failures for all pipelines of the project in a single report.
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -25,7 +25,7 @@ An example is shown in the following image.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report1.png)
 
-As shown in the above image, you can select any pipeline from the "Pipeline Name" drop down at top right and the report will show the outcome summary for the selected pipeline only
+As shown in the above image, you can select any pipeline from the "Pipeline Name" drop-down at top right and the report will show the outcome summary for the selected pipeline only
 
 > [!div class="mx-imgBorder"] 
 > ![Report shows the outcome summary for the selected pipeline only.](media/odatapowerbi-pipelines/allpipelines-report2.png)
@@ -36,7 +36,7 @@ As shown in the above image, you can select any pipeline from the "Pipeline Name
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -60,7 +60,7 @@ in
     Source
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -85,59 +85,123 @@ aggregate(
 
 ### Substitution strings
 
-Each query contains the following strings that you must substitute with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
+Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
  
 - {organization} - Your organization name
 - {project} - Your team project name
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2019-09-04Z** represents September 4, 2019. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2021-09-01Z** represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>CompletedDate ge {startdate}</code></td>
-<td>Return pipeline runs for date greater than specified date</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(Pipeline/PipelineName),</code></td>
-<td>Group the below result by Pipeline Name</td>
-<tr>
-<tr><td><code>aggregate(</code></td>
-<td>Start aggregate. For each Pipeline:</td>
-<tr>
-<tr><td><code>$count as TotalCount,</code></td>
-<td>Count the total number of runs as TotalCount</td>
-<tr>
-<tr><td><code>SucceededCount with sum as SucceededCount ,</code></td>
-<td>Count the number of successful runs as SucceededCount</td>
-<tr>
-<tr><td><code>FailedCount with sum as FailedCount,</code></td>
-<td>Count the number of failed runs as FailedCount</td>
-<tr>
-<tr><td><code>PartiallySucceededCount with sum as PartiallySucceededCount,</code></td>
-<td>Count the number of partially successful runs as PartiallySucceededCount</td>
-<tr>
-<tr><td><code>CanceledCount with sum as CanceledCount</code></td>
-<td>Count the number of canceled runs as CanceledCount</td>
-<tr>
-<tr><td><code>))</code></td>
-<td>Close aggregate() and groupby()</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `CompletedDate ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs for date greater than specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(Pipeline/PipelineName),`
+   :::column-end:::
+   :::column span="1":::
+   Group the below result by Pipeline Name
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start aggregate. For each Pipeline:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$count as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of runs as TotalCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `SucceededCount with sum as SucceededCount ,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of successful runs as SucceededCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `FailedCount with sum as FailedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of failed runs as FailedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `PartiallySucceededCount with sum as PartiallySucceededCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of partially successful runs as PartiallySucceededCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `CanceledCount with sum as CanceledCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of canceled runs as CanceledCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `))`
+   :::column-end:::
+   :::column span="1":::
+   Close aggregate() and groupby()
+   :::column-end:::
+:::row-end:::
 
+
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ## Power BI transforms
 

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Symbols overview
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 To debug compiled executables from native languages like C and C++, you need symbol files that contain mapping information to the source code. These files are created from source code during compilation and generally have the PDB (program database) extension. Azure Artifacts offers a dedicated symbols server to publish your symbols.
 

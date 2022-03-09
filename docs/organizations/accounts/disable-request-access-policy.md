@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Disable your organization's Request Access policy
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Stop your users from requesting access to your organization or project within your organization, by disabling the Request Access policy.
 
@@ -23,7 +23,7 @@ When this policy is on, users can request access to a resource. A request result
 ## Prerequisites
 
 To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+[How do I find the organization Owner?](../security/look-up-organization-owner.md)
 
 ## Disable Request Access policy
 

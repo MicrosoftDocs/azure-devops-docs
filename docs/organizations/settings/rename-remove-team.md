@@ -6,14 +6,14 @@ ms.technology: devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 05/24/2021
 ---
 
 # Rename or remove a team  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your organization changes, you may need to rename or remove a team.  
 
@@ -29,8 +29,8 @@ When you remove or delete a team, all of its configuration settings get deleted.
  
 ## Prerequisites 
 
-- To rename a team, you must be a team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md). 
-- To remove or delete a team, you must be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md). 
+- To rename a team, you must be a team administrator or a member of the [**Project Administrators** group](../security/(../security/change-project-level-permissions.md)
+- To remove or delete a team, you must be a member of the **Project Administrators** group. 
 
 ## Rename a team
 
@@ -96,7 +96,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 <a id="add-team-tfs-2015" />
 

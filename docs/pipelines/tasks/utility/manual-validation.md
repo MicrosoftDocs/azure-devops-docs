@@ -6,12 +6,13 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: moala
 author: Raiyan
-ms.date: 08/25/2021
+monikerRange: '>= azure-devops-2020'
+ms.date: 02/24/2022
 ---
 
 # Manual Validation task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
 
 Use this task in a YAML pipeline to pause a run within a stage, typically to perform some manual actions or validations, and then resume/reject the run.
 
@@ -24,7 +25,7 @@ This task is supported only in YAML pipelines. Can be used only in an [agentless
 | Parameter | Comments |
 | --- | --- |
 | **instructions** | Optional. The instruction text to display to the user when the task is activated. |
-| **notifyUsers** | Optional. The list of users that will be notified that the task has been activated. |
+| **notifyUsers** | Optional. The list of email addresses for users that will be notified that the task has been activated. Only users with queue build permission can act on a manual validation. You can send to a group using `[org name]\group name` syntax. |
 | **onTimeout** | Optional. The action to take (reject or resume) if the task times out. Defaults to reject. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 

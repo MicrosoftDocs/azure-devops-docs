@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Xcode Package iOS task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to generate an .ipa file from Xcode build output.
 
@@ -66,9 +66,17 @@ Name of the provisioning profile to use when signing.
 The SDK you want to use.  Run <strong>xcodebuild -showsdks</strong> to see a list of valid SDK values.
 </td>
 </tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">Advanced</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Path to .app</td>
 <td>
@@ -85,13 +93,9 @@ The default value is <code>$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(
 Make sure to specify the variable values on the <a href="../../build/variables.md" data-raw-source="[variables tab](../../build/variables.md)">variables tab</a>.
 </td>
 </tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

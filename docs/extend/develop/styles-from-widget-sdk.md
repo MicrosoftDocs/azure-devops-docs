@@ -12,12 +12,12 @@ ms.date: 08/04/2016
 
 # Basic styles for your widgets
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 We recommend you use the basic styles provided via the Widget SDK. Using these styles helps you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
 To use these styles, add the below line inside the `VSS.require` block in the JavaScript code for your widget.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ```javascript
 	WidgetHelpers.IncludeWidgetStyles();
@@ -47,7 +47,7 @@ By adding the class "widget" on the HTML element that contains your widget, you 
 You should always have a title for your widget. This helps the user identify your widget and its functionality at a glance. 
 Use `<h2>` with class "title". This also helps people using screen readers to quickly identify the different widgets on the dashboard.
 
-![Widget with title and description](../media-procedures/styles-from-widget-sdk/title-description.png)
+![Widget with title and description](../media/styles-from-widget-sdk/title-description.png)
 
 > **Design principle:** Widgets should have a title. Use the `<h2>` tag with the "title" class. 
 
@@ -68,7 +68,7 @@ In such cases, use the class "description" on the HTML element you wish to use f
 
 Subtitles are text that supplement the title. They may not always make sense when read out of context without reading the title.
 
-![Widget with title and subtitle](../media-procedures/styles-from-widget-sdk/title-subtitle.png)
+![Widget with title and subtitle](../media/styles-from-widget-sdk/title-subtitle.png)
 
 > **Design principle:** Use the "subtitle" class to provide more information about the widget. It may not make sense out of the widget context.  
 
@@ -93,7 +93,7 @@ You can use any html element for the title and subtitle combination. Here are so
 
 Some widgets have links which have an icon, text and subtext per link.
 
-![Widget that has link with icon and text](../media-procedures/styles-from-widget-sdk/link-with-icon-text.png)
+![Widget that has link with icon and text](../media/styles-from-widget-sdk/link-with-icon-text.png)
 
 > **Design principle:** Use links with an icon and subtext to make the purpose of the link obvious to the user. Ensure that the icon symbolizes the link's target. 
 
@@ -120,7 +120,7 @@ To get the same look and feel, use the below HTML structure and classes.
 The primary purpose of some widgets is to display the count of some data. The Query Tile and the Code Tile widgets are examples in this category of widgets. 
 To use the same styles as these widgets, add the "big-count" class on the HTML element holding the number to get the big font that is used by the Query Tile and the Code Tile widgets.
 
-![Counter Widget](../media-procedures/styles-from-widget-sdk/counter.png)
+![Counter Widget](../media/styles-from-widget-sdk/counter.png)
 
 > **Design principle:** Use the "big-count" class to present the user with numbers in large font. It should not be used with non-numeric characters.
 
@@ -173,7 +173,7 @@ To use basic styles from the widget sdk for common form elements in widget confi
 
 The example below uses each of the form elements listed in the table.  
 
-![Example for Widget Configuration](../media-procedures/styles-from-widget-sdk/widget-configuration.png)
+![Example for Widget Configuration](../media/styles-from-widget-sdk/widget-configuration.png)
 
 ```html
 <div class="widget-configuration">
@@ -236,7 +236,7 @@ The previous code snippet has the visibility hidden by default. Whenever you wan
 Example:
 There is a simple text box where the user needs to type in a string. You need to show an error message if the text box is empty.
 
-![Example for Widget Configuration Error](../media-procedures/styles-from-widget-sdk/widget-configuration-error.png)
+![Example for Widget Configuration Error](../media/styles-from-widget-sdk/widget-configuration-error.png)
 
 
 The html for this would be:

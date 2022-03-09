@@ -1,7 +1,7 @@
 ---
 title: Manual test Tester by Outcome matrix sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate a tester by outcome matrix report
+description: Learn about sample Power BI queries that generate a tester by outcome matrix report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/14/2020
+ms.date: 10/13/2021
 ---
 
 # Tester by outcome matrix sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
 
@@ -30,7 +30,7 @@ The report generated is similar to following image.
 
 [!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
-For the report to generate useful data, the team must perform the following activities to manage test plans:
+For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
 - Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md). 
 - Assign test cases to specific testers.
@@ -80,15 +80,41 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 The following table describes each part of the query.
 
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) </code></td><td>Return data for only selected test plan. You can add multiple plans with a clause like <code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))</code>. You can also apply any other filters related to test suites, test configurations here.</td><tr>
-<tr><td><code>/groupby((Tester/UserName, LastResultOutcome),</code></td><td>Grouping the points by the user names of testers and their outcome.</td><tr>
-<tr><td><code>/aggregate($count as Count)</code></td><td>Aggregate data across the filtered test points with having count as <code>Count</code>.</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) `
+   :::column-end:::
+   :::column span="1":::
+   Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby((Tester/UserName, LastResultOutcome),`
+   :::column-end:::
+   :::column span="1":::
+   Grouping the points by the user names of testers and their outcome.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as Count)`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate data across the filtered test points with having count as `Count`.
+   :::column-end:::
+:::row-end:::
 
+
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 ## Power BI transforms
 
@@ -96,7 +122,7 @@ In Power BI, do the following steps.
 
 When finished, you may choose to rename columns. 
 
-1. Expand <code>Tester</code>
+1. Expand `Tester`
     - Choose the expand button.
 
         > [!div class="mx-imgBorder"] 
@@ -107,7 +133,7 @@ When finished, you may choose to rename columns.
         > [!div class="mx-imgBorder"] 
 	    > ![Power BI select fields to flatten](media/powerbi-tester-flatten.png)
 
-    - The table now contains entity field of <code>Tester.UserName</code>.
+    - The table now contains entity field of `Tester.UserName`.
 
         > [!div class="mx-imgBorder"] 
 	    > ![Power BI expanded tester](media/powerbi-expanded-tester.png)

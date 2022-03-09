@@ -1,24 +1,24 @@
 ---
 title: Open bugs sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate an open bugs Power BI report  
+description: Learn how to generate an open bugs Power BI report.
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 10/05/2021
 ---
 
 # Open bugs sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to display, for a given set of open Bugs, a breakdown by State and Assigned To fields. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/odatapowerbi-openbugs-report.png)
+> ![Open Bugs sample matrix report](media/reports-boards/open-bugs-report.png)
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -63,35 +63,66 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
 
 
 ### Query breakdown
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$filter=WorkItemType eq 'Bug'</code></td>
-<td>Return Bugs.</td>
-<tr>
-<tr>
-<td><code>and StateCategory ne 'Completed'</code></td>
-<td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td>
-<tr>
-<tr>
-<td><code>and startswith(Area/AreaPath,'{areapath}')</code></td>
-<td>Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code>.</td>
-<tr>
-<tr><td><code>&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames</code></td>
-<td>Select fields to return.</td>
-<tr>
-<tr><td><code>&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)</code></td>
-<td>Expand Assigned To, Iteration, Area entities and select entity fields.</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$filter=WorkItemType eq 'Bug'`
+   :::column-end:::
+   :::column span="3":::
+   Return Bugs.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and StateCategory ne 'Completed'`
+   :::column-end:::
+   :::column span="3":::
+   Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and startswith(Area/AreaPath,'{areapath}')`
+   :::column-end:::
+   :::column span="3":::
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
+   
+   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
+   :::column-end:::
+   :::column span="3":::
+   Select fields to return.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
+   :::column-end:::
+   :::column span="3":::
+   Expand Assigned To, Iteration, Area entities and select entity fields.
+   :::column-end:::
+:::row-end:::
 
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 
@@ -108,7 +139,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Fields](media/odatapowerbi-openbugs-fields.png)
+> ![Sample - Boards Open Bugs - Fields](media/reports-boards/open-bugs-fields.png)
 
 For a simple report, do the following steps:
 
@@ -121,7 +152,7 @@ For a simple report, do the following steps:
 The example report displays. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/odatapowerbi-openbugs-report.png)
+> ![Sample - Boards Open Bugs - Report](media/reports-boards/open-bugs-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 

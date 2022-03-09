@@ -1,7 +1,7 @@
 ---
 title: Manual test execution trend sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate an execution trend of manual tests
+description: Learn about sample Power BI queries that generate an execution trend of manual tests.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -9,18 +9,18 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/14/2020
+ms.date: 10/13/2021
 ---
 
 # Manual test execution trend sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 
 [!INCLUDE [temp](includes/preview-note.md)]
  
-The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
+The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
@@ -43,14 +43,14 @@ This report helps you track the team's progress with respect to planned testing 
 - *How many tests are failing?*
 - *How many tests are blocked and what does the trend indicate?*
 
-A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should decrease.
+A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should go down.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 [!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
-For the report to generate useful data, the team must perform the following activities to manage test plans:
+For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
 - Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md). 
 - Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
@@ -113,30 +113,71 @@ $apply=filter(
 ### Substitution strings
 
 
-Each query contains the following strings that you must substitute with your values. Do not include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}. 
+Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`. 
 
-- {organization} - Your organization name 
-- {project} - Your team project name, or omit "/{project}" entirely, for a cross-project query
-- {testPlanTitle} - Title of your test plan. Example: Fabrikam test plan.
-- {startDate} and {endDate} - Date range of interest. You can enter the dates in YYYYMMDD format. e.g. 20190822 for 22nd August 2019.
+- `{organization}` - Your organization name 
+- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{testPlanTitle}` - Title of your test plan. Example: `Fabrikam test plan`.
+- `{startDate}` and `{endDate}` - Date range of interest. You can enter the dates in YYYYMMDD format. For example, `20190822` for 22 August 2019.
 
 
 ### Query breakdown
 
 The following table describes each part of the query.
 
+---
+:::row:::
+   :::column span="1":::
+      **Query part**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))`
+   :::column-end:::
+   :::column span="2":::
+      Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}'` or `TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `and (DateSK ge {startDate} and DateSK le {endDate})`
+   :::column-end:::
+   :::column span="2":::
+      Date range of interest. You can enter the dates in **YYYYMMDD** format. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `/groupby((DateSK)`
+   :::column-end:::
+   :::column span="2":::
+      Group the data into bins of same date. It produces one set of values per day in given date range.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `/aggregate($count as TotalCount,`
+   :::column-end:::
+   :::column span="2":::
+      Aggregate data across the filtered test points with having count as `TotalCount`. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,`
+   :::column-end:::
+   :::column span="2":::
+      While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as `Passed` metric. 
+   :::column-end:::
+:::row-end:::
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))</code></td><td>Return data for only selected test plan. You can add multiple plans with a clause like <code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))</code>. You can also apply any other filters related to test suites, test configurations here.</td><tr>
-<tr><td><code>and (DateSK ge {startDate} and DateSK le {endDate})</code></td><td>Date range of interest. You can enter the dates in YYYYMMDD format.</td><tr>
-<tr><td><code>/groupby((DateSK)</code></td><td>Group the data into bins of same date. This produces one set of values per day in given date range.</td><tr>
-<tr><td><code>/aggregate($count as TotalCount,</code></td><td>Aggregate data across the filtered test points with having count as <code>TotalCount</code></td><tr>
-<tr><td><code>cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,</code></td><td>While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '<code>Passed</code>' metric.</td><tr>
-</tbody>
-</table>
-
+ 
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 ## Power BI transforms
 
@@ -158,7 +199,7 @@ To create the report, do the following steps:
 
 1. Create a Power BI visualization **Stacked Area Chart**.
 1. Drag and drop **DateSK** in **Axis**.
-1. Drag and drop **Passed, Failed, Blocked, NotApplicable** and **NotExecuted** in **Values**.
+1. Drag and drop **Passed**, **Failed**, **Blocked**, **NotApplicable** and **NotExecuted** in **Values**.
 
 Your report should look similar to the following image.
 

@@ -1,15 +1,15 @@
 ### YamlMime:FAQ
 metadata:
-  title: Delivery Plans FAQs 
-  description: Get answers to common questions about working with Delivery Plans. 
+  title: Frequently asked questions (FAQs) about Delivery Plans 
+  description: Learn how to get answers to common questions about working with Delivery Plans. 
   titleSuffix: Azure Boards
   ms.custom: boards-queries
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: 'azure-devops'
-  ms.date: 05/03/2021
+  ms.date: 10/20/2021
 
 title: Delivery Plans FAQs 
 
@@ -139,7 +139,7 @@ sections:
 
       - question: Can I use Delivery Plans 2.0 with Azure DevOps Server 2020?
         answer: |
-          Not at this time. Delivery Plans 2.0 will be made available with Azure DevOps Server 2020 update 2. 
+          Not at this time. Delivery Plans 2.0 will be made available with Azure DevOps Server 2022. 
 
       - question: Why don't my work items show on the plan?
         answer: |
@@ -147,7 +147,7 @@ sections:
 
       - question: How do I get dependency lines to show?
         answer: |
-          Click  the bottom of the card to show the dependency lines of the work item. To turn them off, click on the bottom of the card or anywhere else in the plan. Clicking the bottom of the card is a toggle for the display of the dependency lines. 
+          Select the bottom of the card to show the dependency lines of the work item. To turn them off, select the bottom of the card or anywhere else in the plan. Clicking the bottom of the card is a toggle for the display of the dependency lines. 
 
       - question: Why can't I see all the fields I've configured?
         answer: |
@@ -163,4 +163,3 @@ additionalContent: |
   -  [Azure Boards FAQs](../faqs.yml) 
   -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
  
-

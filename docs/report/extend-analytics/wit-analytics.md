@@ -1,19 +1,19 @@
 ---
 title: Query work tracking data using OData 
 titleSuffix: Azure DevOps
-description: How to generate work item tracking reports for Azure DevOps using OData Analytics  
+description: Learn how to generate work item tracking reports for Azure DevOps using OData Analytics.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/11/2021
+ms.date: 09/30/2020
 ---
 
 # Query your work tracking data using OData Analytics
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
 Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
@@ -42,24 +42,24 @@ In this article, the base root URL is scoped to a project as shown:
 
 ::: moniker-end
 
-All additional URL parts are specified as an additional part of the query string.
+All other URL parts are specified as an extra part of the query string.
 
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
+- You'll need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
 - If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). 
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
-- You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
+- You'll have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.  
+- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.  
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
-- You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
+- You'll have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
 ::: moniker-end
 
 <a id="basic-query" />
@@ -88,7 +88,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 
 ### Query a single entity set
 
-To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for Analytics](data-model-analytics-service.md).
+To query a single entity set, such as Work Items or Areas or Projects, add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for Analytics](data-model-analytics-service.md).
 
 For example, you query Areas by adding `/Areas`. The full URL is:
 
@@ -97,7 +97,7 @@ For example, you query Areas by adding `/Areas`. The full URL is:
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/Areas 
 > ```
 
-This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds. If you have more than 10000 work items [server-side paging will be enforced](#server-force-paging).
+It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, it may take several seconds. If you've more than 10000 work items, [server-side paging will be enforced](#server-force-paging).
 
 
  
@@ -116,7 +116,7 @@ For example, to return only the Work Item ID, Work Item Type, Title, and State o
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State
 > ```
 
-This is equivalent to selecting all rows in the entity, but returning only these specific fields.  
+It's equivalent to selecting all rows in the entity, but returning only these specific fields.  
 
 > [!NOTE]  
 > Field names don't contain any spaces. Your query will fail if you add spaces. OData queries require attention is paid to both spacing and casing.   
@@ -136,7 +136,7 @@ With the full OData query:
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'
 > ```
 
-Alternatively, you can exclude the ```$select``` clause altogether and just filter the results as follows:
+Instead, you can exclude the ```$select``` clause altogether and just filter the results as follows:
 
 `/WorkItems?$filter=State eq 'In Progress'`
 
@@ -147,7 +147,7 @@ With the full OData query:
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=State eq 'In Progress'
 > ```
 
-Also, you can apply multiple filters by concatenating two or more filters. For example, here we filter for In Progress tasks.
+You can also apply multiple filters by concatenating two or more filters. Here, we filter for In Progress tasks:
 
 `/WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'`
 
@@ -172,7 +172,7 @@ The following example returns work items whose **Changed Date** is greater than 
 > ```
 
 
-The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30th, 2021.  
+The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30, 2021.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -184,11 +184,11 @@ The following example returns work items whose **Changed Date** occurs during th
 
 <a id="filter-related-entities" />
 
-## Filter using related entities such as Area Path, Iteration Path, and more 
+## Filter using related entities
 
-Querying work items is helpful, but you will eventually want to filter by other data such as the Iteration Path, Area Path,  or project. To do this, you need to understand the navigation properties of the entity model. You can get metadata using `/$metadata` URL. For details, see [Explore Analytics OData metadata](analytics-metadata.md) 
+Querying work items is helpful, but you'll eventually want to filter by other data such as the Iteration Path, Area Path, or project. To do so, you need to understand the navigation properties of the entity model. You can get metadata using `/$metadata` URL. For details, see [Explore Analytics OData metadata](analytics-metadata.md) 
 
-Here is a partial view of the metadata for the Work Items entity:
+Here's a partial view of the metadata for the Work Items entity:
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -211,7 +211,7 @@ Here is a partial view of the metadata for the Work Items entity:
 >     <NavigationProperty Name="Iteration" Type="Microsoft.VisualStudio.Services.Analytics.Model.Iteration"/>
 > ```
 
-The navigation properties appear towards the bottom of the metadata, which include `Revisions`, `BoardLocations` (Kanban metadata), `Project`, `Area`, and `Iteration`. 
+The navigation properties appear towards the bottom of the metadata, which includes `Revisions`, `BoardLocations` (Kanban metadata), `Project`, `Area`, and `Iteration`. 
 
 <a id="filter-navigation" />
 
@@ -237,18 +237,18 @@ In this example, `Iteration` is the navigation property name and `IterationPath`
 
 How do you use navigation properties to select related fields?
 
-The username for Custom fields based on an Identity is not directly accessible using a `$select` statement. The following query uses a `$expand` statement to retrieve the user name:
+The username for Custom fields based on an Identity isn't directly accessible using a `$select` statement. The following query uses a `$expand` statement to retrieve the user name:
 
 `/WorkItems?$expand=MyIdentityField($select=UserName)`
 
 > [!NOTE]  
 > You can't use the navigation property directly in a `$select` statement. Instead, you will need to use `$expand`.  
 
-The previous filtering example for the Iteration Path doesn't return the iteration path  in the results because it is contained in a related entity. To return data in a related entity, add an `$expand` statement:
+The previous filtering example for the Iteration Path doesn't return the iteration path  in the results because it's contained in a related entity. To return data in a related entity, add an `$expand` statement:
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration`
 
-This returns the following:  
+It returns the following JSON:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -278,13 +278,13 @@ This returns the following:
 > }
 > ```
 
-As you can see, the Iteration Path is expanded in the JSON result and all of the iteration data is returned. This is probably more data than you want.  
+As you can see, the Iteration Path is expanded in the JSON result and all of the iteration data is returned. It's probably more data than you want.  
 
 To return less data, add a `$select` statement against the iteration as well:
 
 `/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration($select=Name,IterationPath)`
 
-Which returns the following:
+It returns the following JSON:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -309,7 +309,7 @@ In OData, you can nest `$expand` statements. For example, you can write the prev
 
 `/WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($expand=Project)`
 
-This results in:
+It returns the following JSON:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -357,7 +357,7 @@ You can also combine `$expand` and `$select` statements. For example, you can ch
 
 `/WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($select=IterationId,IterationPath;$expand=Project)`
 
-This results in:
+It returns the following JSON:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -390,7 +390,7 @@ This results in:
 > }
 > ```
 
-Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result. Another key item to note is the URL itself. When using a `$select` statement and an `$expand` clause you must use a semi-colon (;) before the `$expand`. Anything else will result in an error.
+Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result. Another key item to note is the URL itself. When using a `$select` statement and an `$expand` clause, you must use a semi-colon (;) before the `$expand`. Anything else will result in an error.
 
 <a id="sort-results" />
 
@@ -412,7 +412,7 @@ And, you can order by multiple items:
 
 ## Enforce server-side paging
 
-Analytics forces paging when query results exceed 10000 records. In that case, you will get first page of data and link to follow to get next page. Link (`@odata.nextLink`) can be found at the end of the JSON output. It will look like an original query followed by `$skip` or `$skiptoken`. For example:
+Analytics forces paging when query results exceed 10000 records. In that case, you'll get first page of data and link to follow to get next page. Link (`@odata.nextLink`) can be found at the end of the JSON output. It will look like an original query followed by `$skip` or `$skiptoken`. For example:
 
 
 > [!div class="tabbedCodeSnippets"]
@@ -431,7 +431,7 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Project & organization-scoped queries](account-scoped-queries.md)

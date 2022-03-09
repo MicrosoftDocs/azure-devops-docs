@@ -4,8 +4,7 @@ titleSuffix: Azure DevOps
 description: Add and update pages offline for your built-in team project wiki in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.topic: conceptual
-ms.assetid:
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
@@ -15,7 +14,7 @@ ms.date: 03/05/2021
 
 # Clone and update wiki content offline
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 You can update your wiki pages offline the same way you develop code in a Git repo.
 

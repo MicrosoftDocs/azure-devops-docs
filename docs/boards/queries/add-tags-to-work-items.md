@@ -1,7 +1,7 @@
 ---
-title: Add tags to work items 
+title: Add tags to work items to categorize lists and boards 
 titleSuffix: Azure Boards
-description: Add work item tags to categorize and filter lists & boards when working in Azure Boards and Azure DevOps 
+description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
@@ -14,7 +14,7 @@ ms.date: 04/13/2021
 
 # Add work item tags to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 
@@ -23,7 +23,7 @@ A tag corresponds to a one or two keyword phrase that you define and that suppor
 
 Tags are a better choice to filter work items than using text strings as described in [Guidance to create high-performing queries](high-performing-queries.md).
 
-You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
+You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.  
 
 > [!NOTE]   
 > Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags.  
@@ -49,7 +49,7 @@ From the web portal, open a work item and add a tag. Choose **Add tag** and type
 > ![Add one or more tags to a work item](media/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 From the web portal, open a work item and add a tag. Choose **Add** and type your keyword. Or, select from the list of previously assigned tags.  
 
 ![Add one or more tags to a work item](media/add-tags-to-work-items-vso-tfs.png)  
@@ -57,7 +57,7 @@ From the web portal, open a work item and add a tag. Choose **Add** and type you
 
 To add several tags at one time, type a comma between tags. Tags are case sensitive.  
 
-Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](media/add-tags/unassign-a-tag.png).   
+Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, choose the x on the tag,![Delete a tag assigned to a work item](media/add-tags/unassign-a-tag.png).   
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
@@ -65,7 +65,7 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
-> more, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+> more, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 ::: moniker-end	
 
 
@@ -160,7 +160,7 @@ From the web portal, you can filter backlogs, boards, and query results using ta
 
 Begin by choosing **Filter** :::image type="icon" source="../media/icons/filter-icon.png" border="false":::. 
 
-Check the boxes of those tags that you want to filter on. Keep the **OR** selection to perform a logical OR for all the tags you selected. Or, choose the **AND** option to perform a logical AND on all the selected tags. 
+Check the boxes of those tags that you want to filter on. Keep the **OR** selection to run a logical OR for all the tags you selected. Or, choose the **AND** option to run a logical AND on all the selected tags. 
 
 > [!div class="mx-imgBorder"]
 > ![View with Tags column added](media/add-tags/filter-backlog-tags.png) 
@@ -178,7 +178,7 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 	![Filtered list disables other features](media/filtered-list-based-on-tags.png)  
 
-2. To apply a sub-filter, choose another tag. You filter successively by choosing from the set of tags that appear in the filter tag bar. To start your filter process over, choose All to show all tags.  
+2. To apply a subfilter, choose another tag. You filter successively by choosing from the set of tags that appear in the filter tag bar. To start your filter process over, choose All to show all tags.  
 
 3. To show all items, choose All or choose the Tag filter image on backlog and queries pages filter icon to turn filtering off.   
 
@@ -186,13 +186,13 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 ## Delete, remove, or manage tags 
 
-You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system will delete the tag. The system automatically deletes unassigned tags after 3 days of disuse.  
+You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system will delete the tag. The system automatically deletes unassigned tags after three days of disuse.  
 
-If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within 3 days.  
+If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within three days.  
 
 ::: moniker range=">= tfs-2018" 
 
-Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a **Tags** page under **Boards** or **Work** to manage tags. 
+Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2), which adds a **Tags** page under **Boards** or **Work** to manage tags. 
 
 ::: moniker-end
 
@@ -200,7 +200,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
   
 ## Color-code tags on boards
 
-You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. they don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. They don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
 ::: moniker-end   
 
 ::: moniker range="tfs-2015"  
@@ -214,16 +214,16 @@ Requires TFS 2015.1 or later version.
 
 ::: moniker-end   
 
-::: moniker range="azure-devops"
 
 <a id="group-by-tags"></a> 
+::: moniker range="azure-devops"
 
 ## Chart work items and group by tags
 
 > [!NOTE]   
 > You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.    This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
 
-To group a **Chart for Work Items** widget by tags, perform the same steps provided in [Track progress with status and trend query-based charts, Add a chart widget to a dashboard](../../report/dashboards/charts.md#add-chart-widget). Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
+To group a **Chart for Work Items** widget by tags, complete the same steps provided in [Track progress with status and trend query-based charts, Add a chart widget to a dashboard](../../report/dashboards/charts.md#add-chart-widget). Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
 :::image type="content" source="../../report/dashboards/media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
 
@@ -237,9 +237,9 @@ To group a **Chart for Work Items** widget by tags, perform the same steps provi
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
-### Limits on number of tags
+### Limits on the number of tags
 
-While no hard limit exists, creating more than 100K tags for a project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
+While no hard limit exists, creating more than 100,000 tags for a project collection can negatively impact performance. Also, the autocomplete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  
 
@@ -247,9 +247,9 @@ You can't assign more than 100 tags to a work item or you'll receive the followi
 TF401243: Failed to save work item because too many new tags were added to the work item.
 ```
 
-Simply save the work item with the tags (100 or less) that you've added, and then you can add more tags. 
+Save the work item with the tags (100 or less) that you've added, and then you can add more tags. 
 
-Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
+Limit queries to fewer than 25 tags. More than that amount and the query will likely time out.  
 
 
 ::: moniker range="< azure-devops"

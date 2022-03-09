@@ -6,35 +6,29 @@ ms.topic: reference
 ms.custom: seodec18, devx-track-azurecli
 ms.author: ushan
 author: N-Usha
-ms.date: 08/12/2021
+ms.date: 11/08/2021
 monikerRange: '> tfs-2018'
 ---
 
 # Azure CLI task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-Use this task to run a shell or batch 
-script containing Azure CLI commands against an Azure subscription.
-
-This task is used to run Azure CLI commands on 
-cross-platform agents running on Linux, macOS, or Windows operating systems.
-
+Use this task to run a shell or batch script containing Azure CLI commands against an Azure subscription. This task is used to run Azure CLI commands on cross-platform agents running on Linux, macOS, or Windows operating systems.
 
 ### What's new in Version 2.0
 
-- Supports running PowerShell and PowerShell Core script
-- PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or higher
-- PowerShell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower
+- Supports running PowerShell and PowerShell Core script.
+- PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or higher.
+- PowerShell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower.
 
 ## Prerequisites
 
-- A Microsoft Azure subscription
+- A Microsoft Azure subscription.
 
-- [Azure Resource Manager service connection](../../library/connect-to-azure.md) to your Azure account
+- [Azure Resource Manager service connection](../../library/connect-to-azure.md) to your Azure account.
 
-- Microsoft hosted agents have Azure CLI pre-installed. However if you are using private agents, [install Azure CLI](/cli/azure/install-azure-cli) on the computer(s) that run the build and release agent. 
-  If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevant stage variables are updated.
+- Microsoft hosted agents have Azure CLI pre-installed. However if you are using private agents, [install Azure CLI](/cli/azure/install-azure-cli) on the computer(s) that run the build and release agent. If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevant stage variables are updated.
   
 ## Task Inputs
 
@@ -47,7 +41,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
   </thead>
 <tr>
     <td><code>azureSubscription</code><br/>Azure subscription</td>
-    <td>(Required) Select an Azure Resource Manager subscription for the deployment. This parameter is shown only when the selected task version is 0.* as Azure CLI task v1.0 supports only Azure Resource Manager (ARM) subscriptions</td>
+    <td>(Required) Name of the Azure Resource Manager service connection</td>
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
@@ -87,7 +81,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>addSpnToEnvironment</code><br/>Access service principal details in script</td>
-    <td>(Optional) Adds service principal id and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: <b>$env:servicePrincipalId, $env:servicePrincipalKey and $env:tenantId</b> in your script. This is honored only when the Azure endpoint has Service Principal authentication scheme<br/>Default value: false</td>
+    <td>(Optional) Adds service principal ID and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: <b>$env:servicePrincipalId, $env:servicePrincipalKey and $env:tenantId</b> in your script. This is honored only when the Azure endpoint has Service Principal authentication scheme<br/>Default value: false</td>
 </tr>
 <tr>
     <td><code>useGlobalConfig</code><br/>Use global Azure CLI configuration</td>
@@ -127,20 +121,29 @@ Following is an example of a YAML snippet that lists the version of Azure CLI an
 
 The following example illustrates how to pass arguments to your script.
 
-```yaml
-- task: AzureCLI@2
-  displayName: Azure CLI
-  inputs:
-    azureSubscription: <Name of the Azure Resource Manager service connection>
-    scriptType: ps
-    scriptLocation: inlineScript
-    arguments:
-      -Arg1 val1 `
-      -Arg2 val2 `
-      -Arg3 val3
-    inlineScript: |
-      az login --allow-no-subscription
-```
+- Passing arguments to inline scripts: 
+
+    ```yaml
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: <Azure_Resource_Manager_Service_Connection>
+        scriptType: 'ps'
+        scriptLocation: 'inlineScript'
+        arguments: '$(AZURE_STORAGE_ACCOUNT) $(AZURE_STORAGE_KEY)'
+        inlineScript: './scripts/publish.ps1 $1 $2'
+    ```
+
+- Passing arguments with script path:
+
+    ```yaml
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: <Azure_Resource_Manager_Service_Connection>
+        scriptType: 'ps'
+        scriptLocation: 'scriptPath'
+        arguments: '$(AZURE_STORAGE_ACCOUNT) $(AZURE_STORAGE_KEY)'
+        scriptPath: './scripts/publish.ps1'
+    ```
 
 ::: moniker-end
 

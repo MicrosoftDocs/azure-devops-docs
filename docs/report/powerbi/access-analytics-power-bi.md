@@ -1,19 +1,19 @@
 ---
 title: Access Analytics data from Power BI Desktop
 titleSuffix: Azure DevOps
-description: How to access Analytics OData from a Power BI Desktop OData feed for Azure DevOps  
+description: Learn how to access Analytics OData from a Power BI Desktop OData feed for Azure DevOps.  
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/18/2020
+ms.date: 10/01/2021
 ---
 
 # Connect to Analytics data by using the Power BI OData feed
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 You can access Analytics data through the Power BI Desktop OData feed. 
 
@@ -55,7 +55,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
    >`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/`
    >Using this format trims the results by the specified project across all entities related to that project.
 
-1. At the prompt, authenticate against the service. If you have not already done so, see [Client Authentication Options](client-authentication-options.md). 
+1. At the prompt, authenticate against the service. If you haven't already done so, see [Client Authentication Options](client-authentication-options.md). 
 
 1. Select the check boxes next to the entities whose data you want to retrieve.
 
@@ -64,7 +64,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
 
     ![The Entities list on the Navigator page](media/pbi4.png)
 
-1. Select **Transform Data**. Do *not* select **Load**. 
+1. Select **Transform Data**. *Don't* select **Load**. 
 
    > [!IMPORTANT]
    > For each entity that you've selected, Power Query creates a query. Each query must be updated manually, because doing so *prevents throttling errors*. Power Query attempts to resolve null values as errors by generating an additional query for every null value it encounters. This can result in thousands of queries, which will quickly exceed your usage threshold, beyond which your user account will be throttled.
@@ -73,7 +73,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
    > - Instruct Power BI to reference OData v4.
    > - Instruct the Analytics service to omit any values that are null, which improves query performance.
 
-1. For each entity that you've selected in the preceding steps, do the following:
+1. For each entity that you've selected in the preceding steps, carry out these steps:
 
     a. In the **Queries** list, select an entity whose query you want to. In this example, **Areas** is selected.
       

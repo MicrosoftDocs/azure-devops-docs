@@ -8,13 +8,13 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/26/2021
+ms.date: 02/16/2022
 ---
 
 
 # Azure Boards-GitHub integration 
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Use this guide to connect Azure Boards with one or more GitHub repositories. This connection uses the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. 
 
@@ -22,7 +22,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 
 <br/> 
 
-> [!VIDEO https://channel9.msdn.com/Shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
+> [!VIDEO https://docs.microsoft.com/shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
 
 > [!NOTE]   
 > Azure DevOps only supports integation with GitHub repositories or Azure Repos Git repositories. Integration with other Git repositories is not supported.  
@@ -37,13 +37,17 @@ If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up
 > [!div class="mx-imgBorder"]  
 > ![GitHub signin](media/sign-in.png)   
 
-In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to XBox.
+Along with accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to XBox.
 
 ::: moniker-end
 
 ## Supported integration scenarios 
 
-Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories.  
+Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories. 
+
+> [!NOTE]   
+> By installing the Azure DevOps Server 2020.1.1 Patch 2, you can create connections from your Azure DevOps Server to GitHub.com repositories in addition to GitHub Enterprise Server repositories.
+
 
 Azure Boards-GitHub integration supports the following connections:  
 
@@ -61,7 +65,7 @@ Azure Boards-GitHub integration supports the following connections:
 Azure Boards-GitHub integration supports the following operational tasks:  
 
 - Create links between work items and GitHub commit, pull requests, and issues based on GitHub mentions 
-- Support state transition of work items to a done or completed state when using GitHub mention by using `fix`, `fixes`, or `fixed` 
+- Support state transition of work items to a "Done" or "Completed" state when using GitHub mention by using `fix`, `fixes`, or `fixed` 
 - Support full traceability by posting a discussion comment to GitHub when linking from a work item to a GitHub commit, pull requests, or issue 
 - Show linked to GitHub code artifacts within the work item Development section
 - Show linked to GitHub artifacts as annotations on Kanban board cards 
@@ -129,7 +133,7 @@ You can start from Azure Boards or from GitHub to make the connection. You can c
 
 ## Exercise Azure Boards-GitHub integration features
 
-Once you've configured the connection, you can perform the following tasks. 
+Once you've configured the connection, you can complete the following tasks. 
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
 - [Configure status badges](configure-status-badges.md)
  
@@ -143,7 +147,7 @@ Once you've configured the connection, you can perform the following tasks.
  
 ## Restrictions 
 
-- You should only connect a GitHub repository to one Azure DevOps organization and project.  
+- Only connect a GitHub repository to one Azure DevOps organization and project.  
 	Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
   
 ## Related articles

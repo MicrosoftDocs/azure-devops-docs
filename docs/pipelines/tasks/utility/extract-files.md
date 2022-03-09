@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Extract Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to extract files from archives to a target folder using match patterns.
 A range of standard archive formats is supported, including .zip, .jar, .war, .ear, .tar, .7z, and more.
@@ -61,7 +61,7 @@ None
 </tr>
 <tr>
 <td>Overwrite files in the destination directory</td>
-<td>Select this option to overwrite files in the output directory if they already exist.</td>
+<td>Select this option to overwrite files in the output directory if they already exist. If the option is <code>false</code>, the script prompts on existing files, asking whether you want to overwrite them.</td>
 </tr>
 <tr>
 <td>Path to 7z utility</td>
@@ -69,13 +69,9 @@ None
 </tr>
 <tr>
 </tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Examples
 

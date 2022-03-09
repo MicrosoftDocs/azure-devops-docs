@@ -5,78 +5,114 @@ description: Branches Command
 ms.assetid: dae78c90-c65a-444d-96cb-84027b91ad4a
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Branches Command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Displays the history of a branch for a specified file or folder.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **branches** command, your **Read** permission must be set to **Allow** for the item and any branches to view their history. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **branches** command, your **Read** permission must be set to **Allow** for the item and any branches to view their history.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUrl] [/login:username,[password]]
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>Itemspec</i></p></td>
-<td><p>Identifies the file or folder that contains the branch you want to examine. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p></td>
-</tr>
-<tr>
-<td><p><i>Versionspec</i></p></td>
-<td><p>Provides a value for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
-</tr>
-<tr>
-<td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains a file or folder in a branch for which you want to display the history (for example, `http://myserver:8080/tfs/DefaultCollection`.</p></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>Domain\UserName</i> or <i>UserName</i>.</p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Option</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/version</strong></p></td>
-<td><p>Specifies the version for the path. This option is rarely used.</p></td>
-</tr>
-<tr>
-<td><p><strong>/collection</strong></p></td>
-<td><p>Specifies the project collection.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td>
-</tr>
-</tbody>
-</table>
+### Argument
+
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Itemspec*
+   :::column-end:::
+   :::column span="3":::
+   Identifies the file or folder that contains the branch you want to examine. For more information about how Team Foundation parses *itemspecs* to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Versionspec*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="3":::
+   The URL of the project collection that contains a file or folder in a branch for which you want to display the history (for example, `http://myserver:8080/tfs/DefaultCollection`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value to the **/login** option. You can specify a username value as either *Domain\UserName* or *UserName*.
+   :::column-end:::
+:::row-end:::
+
+### Option
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/version**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the version for the path. This option is rarely used.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the user name and password to authenticate the user with Azure DevOps.
+   :::column-end:::
+:::row-end:::
+
 ## Remarks
 The branches command tells you when an item has been the source or destination of a branch operation. The output displays the parent branch for each version.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -108,20 +144,8 @@ $/jun16-1/WindowsApplication13
         $/jun16-1/WindowsApplication13-branch2  Branched from version 3
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Branch Command](branch-command.md)
-
-[Merges Command](merges-command.md)
-
-#### Concepts
-
-[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Branching and Merging](./branching-strategies-with-tfvc.md)
+- [Branch Command](branch-command.md)
+- [Merges Command](merges-command.md)
+- [Branching and Merging](./branching-strategies-with-tfvc.md)

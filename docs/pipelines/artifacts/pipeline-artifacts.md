@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Publish and download pipeline Artifacts
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
 
@@ -60,7 +60,7 @@ steps:
 
 - Run the following command to publish your Artifact:
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 
@@ -68,7 +68,7 @@ steps:
 
 Although the artifact's name is optional, it is a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
 
-The path of the file/folder to you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
+The path of the file/folder that you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
 Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
 
@@ -118,6 +118,9 @@ steps:
 
 - **current**: download artifacts produced by the current pipeline run. Options: current, specific.
 
+> [!NOTE]
+> List of published artifacts will be available only in following dependant jobs. Therefore, use `current` option only in separate jobs, that has dependency on jobs with publish artifacts tasks. 
+
 > [!TIP]
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
@@ -150,13 +153,22 @@ steps:
 
 - Run the following command to download your Artifact
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 
 ---
 
-By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded.
+By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
+
+```yml
+steps:
+- download: current
+  artifact: WebApp
+  patterns: |
+    **/*.js
+    **/*.zip
+```
 
 ### Artifacts selection
 
@@ -300,6 +312,52 @@ stages:
     condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
     steps:
      - script: echo hello from Job B2
+```
+### Example
+
+In the following example, we will copy and publish a script folder from our repo to the `$(Build.ArtifactStagingDirectory)`. In the second stage, we will download and run our script.
+
+:::image type="content" source="media/artifacts-across-stages.png " alt-text="Screenshot showing the PowerShell task output":::
+
+```YAML
+trigger:
+- main
+stages:
+- stage: build
+  jobs:
+  - job: run_build
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+    - task: VSBuild@1
+      inputs:
+        solution: '**/*.sln'
+        msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
+        platform: 'Any CPU'
+        configuration: 'Release'
+
+    - task: CopyFiles@2
+      displayName: 'Copy scripts'
+      inputs:
+        contents: 'scripts/**'
+        targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+    - publish: '$(Build.ArtifactStagingDirectory)/scripts'
+      displayName: 'Publish script'
+      artifact: drop
+
+- stage: test
+  dependsOn: build
+  jobs:
+  - job: run_test
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+    - download: current
+      artifact: drop
+    - task: PowerShell@2
+      inputs:
+        filePath: '$(Pipeline.Workspace)\drop\test.ps1'
 ```
 
 ## Migrate from build artifacts

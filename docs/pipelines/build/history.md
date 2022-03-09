@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Build pipeline history
 
-[!INCLUDE [temp](../includes/version.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -26,7 +26,7 @@ From the **History** tab you can see a list of changes that includes who made th
 
 ::: moniker range=">= tfs-2017"
 
-To work with a change, select it, click <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span>, and then click **Compare Difference** or **Revert Pipeline**.
+To work with a change, select it, click **...**, and then click **Compare Difference** or **Revert Pipeline**.
 
 ::: moniker-end
 

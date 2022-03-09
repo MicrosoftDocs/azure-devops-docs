@@ -3,18 +3,18 @@ title: Change the work item form layout
 titleSuffix: TFS 
 description: Change the work item form layout by exporting the XML file and modifying its contents for Team Foundation Server  
 ms.technology: devops-agile
-ms.custom: process
+ms.custom: archive-candidate
 ms.assetid: 73869d51-eaa2-4aad-90f4-3081b8d26963
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2017'
+ms.topic: how-to
+monikerRange: '<= tfs-2015'
 ms.date: 03/31/2017
 ---
 
 # Change the work item form layout
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)] 
+[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)] 
 
 You can change the work item form layout by exporting the XML file and modifying the contents of the `FORM` section. After you modify and import the XML file, you can verify the changes you made in the updated work item type. Types of layout changes you can make include but are not limited to the following:  
   
@@ -33,6 +33,7 @@ For an overview of the controls you can place in a work item form, see [Specify 
 [!INCLUDE [temp](../../includes/update-xml-wit.md)] 
   
 <a name="Export"></a> 
+
 ## Export and open the WIT definition file  
   
 Perform one of the following steps based on the scope of the customization you are making:  
@@ -50,6 +51,7 @@ Perform one of the following steps based on the scope of the customization you a
 2.  Open the WIT XML file.  
   
 <a name="ChangeForm"></a> 
+
 ## Change the layout of the FORM section  
   
 1.  Find the `<TabGroup>` section of the XML file. Notice that there are `<Tab>` elements for items such as Links and File Attachments in which each `<Tab>` element contains a `<Control>` element that renders the respective control.  
@@ -185,6 +187,7 @@ Perform one of the following steps based on the scope of the customization you a
 10. To import the new work item type to a single project, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md). To add the work item type to your process template, see [Add type definitions for work items](../process-templates/add-wit-definitions-process-template.md).  
   
 <a name="Verify"></a> 
+
 ##  Verify the Web page or HTML content appears in the work item form  
   
 1.  In Team Explorer, choose **Refresh** to download the latest updates from the server.  
@@ -196,6 +199,7 @@ Perform one of the following steps based on the scope of the customization you a
      Notice that the Classification group is no longer on the main form. On the **Links and Attachments** tab choose the **Details** tab to see the results of the changes that you made.  
   
 ## Related articles 
+
 -  [Design the work item form](design-work-item-form.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)

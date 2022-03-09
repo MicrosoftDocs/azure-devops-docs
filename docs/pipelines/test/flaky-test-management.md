@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Manage flaky tests
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Productivity for developers relies on the ability of tests to find real problems with the code under development or update in a timely and reliable fashion. Flaky tests present a barrier to finding real problems, since the failures often don't relate to the changes being tested. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. Flaky tests also impact the quality of shipped code. 
 
@@ -54,7 +54,7 @@ Flaky test management supports system and custom detection.
    > [!Note]
    > Once a test is marked as flaky, the data is available for all pipelines for that branch to assist with troubleshooting in every pipeline. 
 
-- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update). 
+- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update). 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Test Management, Flaky test detection enabled, Custom detection.](media/flaky-test-management/custom-detection.png) 
@@ -99,4 +99,4 @@ You can create bugs to manage flaky test debt. If you create or add to bug for a
 - [Review test results](review-continuous-test-results-after-build.md)
 - [Visual Studio Test task](../tasks/test/vstest.md)
 - [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml)
-- [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update)
+- [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update)

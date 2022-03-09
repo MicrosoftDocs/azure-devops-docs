@@ -1,7 +1,7 @@
 ---
 title: Pipeline task duration trend sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pipeline task duration trend Power BI report  
+description: Learn how to generate a pipeline task duration trend Power BI report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 07/14/2020
+ms.date: 10/12/2021
 ---
 
 # Pipeline task duration trend sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the daily trend report of the time taken to execute a pipeline task. 
 
@@ -31,7 +31,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -55,7 +55,7 @@ in
     Source
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -86,52 +86,112 @@ $apply=filter(
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
-<td>Return task results for a specific pipeline</td>
-<tr>
-<tr>
-<td><code>and TaskDisplayName eq '{taskname}'</code></td>
-<td>Return task results for a specific task</td>
-<tr>
-<tr>
-<td><code>and PipelineRunCompletedOn/Date ge {startdate}</code></td>
-<td>Return task results for pipeline runs on or after the specified date</td>
-<tr>
-<tr>
-<td><code>and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')</code></td>
-<td>Return task results from only the successful or partially successful pipeline runs</td>
-<tr>
-<td><code>and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)</code></td>
-<td>Omit the pipeline runs that were canceled, skipper or abandoned</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)</code></td>
-<td>For each day, compute the 80th percentile of task durations of all tasks that match the filter criteria</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))</code></td>
-<td>Group by date of completion of pipeline run and calculated day wise 80th percentile task duration</td>
-<tr>
-<tr><td><code>&$orderby=PipelineRunCompletedOn/Date asc</code></td>
-<td>Order the response by completed date</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelinename}'`
+   :::column-end:::
+   :::column span="1":::
+   Return task results for a specific pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and TaskDisplayName eq '{taskname}'`
+   :::column-end:::
+   :::column span="1":::
+   Return task results for a specific task
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and PipelineRunCompletedOn/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return task results for pipeline runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')`
+   :::column-end:::
+   :::column span="1":::
+   Return task results from only the successful or partially successful pipeline runs
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)`
+   :::column-end:::
+   :::column span="1":::
+   Omit the pipeline runs that were canceled, skipped, or abandoned
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start compute()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)`
+   :::column-end:::
+   :::column span="1":::
+   For each day, compute the 80th percentile of task durations of all tasks that match the filter criteria
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))`
+   :::column-end:::
+   :::column span="1":::
+   Group by date of completion of pipeline run and calculated day wise 80th percentile task duration
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$orderby=PipelineRunCompletedOn/Date asc`
+   :::column-end:::
+   :::column span="1":::
+   Order the response by completed date
+   :::column-end:::
+:::row-end:::
 
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ## Power BI transforms
 
@@ -200,13 +260,13 @@ For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**.
 
-1. Add the field "PipelineRunCompletedOn.Date" to **Axis**.
+1. Add the field **PipelineRunCompletedOn.Date** to **Axis**.
 
-    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click **PipelineRunCompletedOn.Date** and select **PipelineRunCompletedOn.Date**, rather than Date Hierarchy.
 	
-1. Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
+1. Add the field **TaskDuration80thPercentileInSeconds** to **Values**.
 
-    - Right-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    - Right-click **TaskDuration80thPercentileInSeconds** field and ensure **Sum** is selected.
 
 Your report should look like this. 
 
@@ -214,15 +274,15 @@ Your report should look like this.
 > ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following extra queries to create different but similar reports using the same steps defined previously in this article.
 
 
-### Use Pipeline Id, rather than Pipeline Name
+### Use Pipeline ID, rather than Pipeline Name
 
 You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use the pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
-https:\//dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
+https:\//dev.azure.com/{organization}/{project}/_build?definitionId= `{pipelineid}`
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -324,7 +384,7 @@ percentile_cont(ActivityDurationSeconds, 0.95, PipelineRunCompletedDateSK) as Ta
 
 ### Filter by branch
 
-You may want to view the duration trend of a task for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the duration trend of a task for a particular **branch** only. To create the report, follow the extra steps below along with what is defined previously in this article.
 
 - Expand Branch into Branch.BranchName
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
@@ -378,7 +438,7 @@ $apply=filter(
 
 ### Task duration trend for all pipeline tasks
 
-You may want to view the task duration trend for all the pipeline tasks in a single report. To create the report, perform the following additional steps along with those steps defined previously in this article.
+You may want to view the task duration trend for all the pipeline tasks in a single report. To create the report, carry out the following extra steps along with those steps defined previously in this article.
 
 - Select Power BI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**  
 

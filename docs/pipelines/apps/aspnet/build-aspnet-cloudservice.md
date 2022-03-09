@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Build your Azure Cloud Service
 
-[!INCLUDE [temp](../../includes/version.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Here we'll show you how to define your continuous integration (CI) pipeline for your Azure Cloud Service project.
 

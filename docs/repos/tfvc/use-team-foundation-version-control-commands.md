@@ -5,22 +5,24 @@ description: Use Team Foundation version control commands
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Use Team Foundation version control commands
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can't be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
 
 ## Run a command
 
-To launch the Visual Studio command prompt, from Windows **Start**, choose **Visual Studio 2015**,   then choose the **Developer Command Prompt for V2015** shortcut.
+To launch the Visual Studio command prompt, from Windows **Start**, choose the **Developer Command Prompt for VS2019** or earlier version shortcut.
 
-> Visual Studio 2017 users: The tf.exe binary is no longer in a fixed location in the Visual Studio install path as in previous releases (for example, C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE). Scripts using tf.exe should not hardcode a path to the file based on the Visual Studio 2017 install path.
+> [!NOTE]   
+> For Visual Studio 2017 and later versions, the **tf.exe** binary is no longer in a fixed location in the Visual Studio install path as in previous releases. (for example, `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE`). Scripts using **tf.exe** should not hard-code a path to the file based on the Visual Studio install path.
 
 In most cases, you run the version control command in the context of a directory that is mapped in the workspace. For example, `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\`. To get the latest version of all items in the workspace:
 
@@ -32,13 +34,10 @@ c:\code\SiteApp\Main\SolutionA>tf get
 
 Your workspace is a local copy of your team's codebase. Because it is a local copy on your dev machine, you can develop and test your code in isolation until you are ready to check in your work. Here are some commands to manage your workspace:
 
-[Proxy Command](proxy-command.md) (Visual Studio 2010)  
-
-[Workfold Command](workfold-command.md) (Visual Studio 2010)  
-
-[Workspace Command](workspace-command.md) (Visual Studio 2010)  
-
-[Workspaces Command](workspaces-command.md) (Visual Studio 2010)  
+- [Proxy Command](proxy-command.md) 
+- [Workfold Command](workfold-command.md) 
+- [Workspace Command](workspace-command.md)  
+- [Workspaces Command](workspaces-command.md) 
 
 See also: [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md), [Create and work with workspaces](create-work-workspaces.md)
 
@@ -46,26 +45,14 @@ See also: [Set up Team Foundation Version Control on your dev machine](set-up-te
 
 Use these commands to develop your app under version control with your team:
 
-[Add command](add-command.md)  
-Adds files and folders to version control.
-
-[Checkout (or Edit) command](checkout-or-edit-command.md)  
-Checks out a file and changes its pending change status to "edit".
-
-[Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Get command](get-command.md)  
-Gets (downloads) the latest or a specified version of one or more files or folders from Team Foundation Server to the workspace.
-
-[Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Status command](status-command.md)  
-Displays information about pending changes to files and folders items in one or more workspaces, or in a shelveset.
-
-[Undo command](undo-command.md)  
-Discards one or more pending changes to files or folders.
-
-[Undelete Command](undelete-command.md) (Visual Studio 2010)  
+- [Add command](add-command.md): Adds files and folders to version control.
+- [Checkout (or Edit) command](checkout-or-edit-command.md): Checks out a file and changes its pending change status to "edit".
+- [Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md)  
+- [Get command](get-command.md): Gets (downloads) the latest or a specified version of one or more files or folders from Team Foundation Server to the workspace.
+- [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md)  
+- [Status command](status-command.md): Displays information about pending changes to files and folders items in one or more workspaces, or in a shelveset.
+- [Undo command](undo-command.md): Discards one or more pending changes to files or folders.
+- [Undelete Command](undelete-command.md) 
 
 See also: [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md)
 
@@ -73,20 +60,17 @@ See also: [Develop your app in Team Foundation version control](develop-your-app
 
 For a variety of reasons, sometimes you need to set aside some or all of your work in progress. To suspend and resume your work, and to manage your shelvesets, use these commands:
 
-[Shelve Command](shelve-command.md) (Visual Studio 2010)  
-
-[Shelvesets Command](shelvesets-command.md) (Visual Studio 2010)  
-
-[Unshelve Command](unshelve-command.md) (Visual Studio 2010)  
+- [Shelve Command](shelve-command.md)  
+- [Shelvesets Command](shelvesets-command.md) 
+- [Unshelve Command](unshelve-command.md) 
 
 See also: [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
 ### Contribute your work
 
-Here's how to check in your code to the team's codebase:
+Use the checkin command to check in your code to the team's code base:
 
-[Checkin command](checkin-command.md)  
-Checks in pending changes to files or folders to the server.
+- [Checkin command](checkin-command.md): Checks in pending changes to files or folders to the server.
 
 See also: [Check in your work to the team's codebase](check-your-work-team-codebase.md)
 
@@ -94,54 +78,41 @@ See also: [Check in your work to the team's codebase](check-your-work-team-codeb
 
 **View and Manage Version Control Files and Folders**  
 
-[Properties (or Info) Command](properties-or-info-command.md) (Visual Studio 2010)  
-
-Property Command (not documented)  
-
-[Dir Command](dir-command.md) (Visual Studio 2010)  
-
-[Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[LocalVersions Command](localversions-command.md) (Visual Studio 2010)  
+- [Properties (or Info) Command](properties-or-info-command.md) 
+- [Dir Command](dir-command.md)   
+- [Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)   
+- [LocalVersions Command](localversions-command.md) 
 
 See also: [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)
 
 **View and Manage Past Versions**  
 
-[Changeset Command](changeset-command.md) (Visual Studio 2010)  
-
-[History command](history-command.md)  
-Displays the revision history of one or more files or folders.
-
-[Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Labels Command](labels-command.md) (Visual Studio 2010)  
-
-[Rollback Command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Unlabel Command](unlabel-command.md) (Visual Studio 2010)  
-
-[View Command](view-command.md) (Visual Studio 2010)  
+- [Changeset Command](changeset-command.md)  
+- [History command](history-command.md): Displays the revision history of one or more files or folders.
+- [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md) 
+- [Labels Command](labels-command.md) 
+- [Rollback Command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md) 
+- [Unlabel Command](unlabel-command.md)   
+- [View Command](view-command.md) 
 
 See also: [View and manage past versions](view-manage-past-versions.md)
 
 **Compare Folders and Files**  
 
-[Difference Command](difference-command.md) (Visual Studio 2010)  
-
-[Folderdiff Command](folderdiff-command.md) (Visual Studio 2010)  
+- [Difference Command](difference-command.md)  
+- [Folderdiff Command](folderdiff-command.md) 
 
 See also: [View and manage past versions](view-manage-past-versions.md)
 
 **Resolve File Conflicts**  
 
-[Resolve Command](resolve-command.md) (Visual Studio 2010)
+- [Resolve Command](resolve-command.md) 
 
 See also: [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
 
 **Work with Version Control Locks**  
 
-[Lock Command](lock-command.md) (Visual Studio 2010)
+- [Lock Command](lock-command.md) 
 
 See also: [Work with version control locks](work-version-control-locks.md).
 
@@ -149,33 +120,28 @@ See also: [Work with version control locks](work-version-control-locks.md).
 
 Use the following commands to isolate risk using branches:
 
-[Branch Command](branch-command.md) (Visual Studio 2010)  
-
-[Branches Command](branches-command.md) (Visual Studio 2010)  
-
-[Merge Command](merge-command.md) (Visual Studio 2010)  
-
-[Merges Command](merges-command.md) (Visual Studio 2010)  
+- [Branch Command](branch-command.md) 
+- [Branches Command](branches-command.md) 
+- [Merge Command](merge-command.md) 
+- [Merges Command](merges-command.md) 
 
 See also: [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
 
 ### Administer Version Control
 
-Use the following commands to administer your version control system:
+Use the following commands to manage your version control system:
 
-[Configure Command](configure-command.md) (Visual Studio 2010)  
+- [Configure command](configure-command.md)  
+- [Permission command](permission-command.md)  
 
-[Permission Command](permission-command.md) (Visual Studio 2010)  
-
-See also: [Administering Team Foundation Version Control](./configure-check-out-settings.md) (Visual Studio 2010).
+See also: [Configure check-out settings](configure-check-out-settings.md).
 
 ### Get Help on Version Control Commands
 
 Use the following commands to get more information about version control commands:
 
-[Help Command (Team Foundation Version Control)](help-command-team-foundation-version-control.md) (Visual Studio 2010)  
-
-[Msdn Command](msdn-command.md) (Visual Studio 2010)  
+- [Help Command (Team Foundation Version Control)](help-command-team-foundation-version-control.md)  
+- [Msdn Command](msdn-command.md)  
 
 ## Understand command syntax
 
@@ -215,7 +181,7 @@ Let's review the arguments from this example:
 
   - **/recursive**: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
 
-  - **/login**:*username*<em>,password</em>: If you want to run the command as another user, you must specify the **/login** option verbatim, replace *username* with the name of the user, and if necessary, you can supply the password.
+  - **/login**:*username,password*: If you want to run the command as another user, you must specify the **/login** option verbatim, replace *username* with the name of the user, and if necessary, you can supply the password.
 
 ## Specify the items affected by a command
 
@@ -269,129 +235,173 @@ c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D
 
 Use the following syntax to specify a *versionspec*.
 
-<table>
-<thead>
-<tr>
-<th><p>Type</p></th>
-<th><p>Syntax</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Changeset</p></td>
-<td><p><strong>[C]</strong><i>n</i></p></td>
-<td><p>Specifies items based on a changeset number. If an item that is in scope was not modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset.</p>
-<div class="alert">
-<table>
-<thead>
-<tr>
-<th><strong>Tip</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>You can omit the <i>C</i> if you specify only a number.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Examples</strong></p>
+:::row:::
+   :::column span="1":::
+   **Type**
+   :::column-end:::
+   :::column span="1":::
+   **Syntax**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+   Changeset
+   :::column-end:::
+   :::column span="1":::
+   [**C**]*n*
+   :::column-end:::
+   :::column span="3":::
+   Specifies items based on a changeset number. If an item that is in scope was not modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset.
+   > [!Tip]  
+   > You can omit the *C* if you specify only a number.
+   **Examples**
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt /v:C8
+   ```
+   -- or --
+   <a id="CodeSnippetContainerCode_3ec2c94a-8633-431c-b2d0-29836c305073"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt /v:8
+   ```
+   -- or --
 
-<div id="CodeSnippetContainerCode_ef3e28b0-5bde-46de-89e7-1607a4329249" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt /v:C8</code></pre>
-</div>
-</div>
-<p>-- or --</p>
-<div id="code-snippet-7" class="codeSnippetContainer" xmlns="">
-<div class="codeSnippetContainerTabs">
+   <a id="CodeSnippetContainerCode_69203803-1efd-4882-8d47-b4c20c45426a"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt;8
+   ```
 
-<div id="CodeSnippetContainerCode_3ec2c94a-8633-431c-b2d0-29836c305073" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt /v:8</code></pre>
-</div>
-</div>
+   If readme.txt was modified in changeset 8, gets that version of the file. Otherwise, gets the most recent version of readme.txt before version 8.
 
-<p>-- or --</p>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Label
 
-<div id="CodeSnippetContainerCode_69203803-1efd-4882-8d47-b4c20c45426a" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt;8</code></pre>
-</div>
-</div>
+   :::column-end:::
+   :::column span="1":::
+   **L***label*
 
-<p>If readme.txt was modified in changeset 8, gets that version of the file. Otherwise, gets the most recent version of readme.txt before version 8.</p></td>
-</tr>
-<tr>
-<td><p>Label</p></td>
-<td><p><strong>L</strong><i>label</i></p></td>
-<td><p>Specifies items to which <i>label</i> was applied.</p>
-<p><strong>Examples</strong></p>
+   :::column-end:::
+   :::column span="3":::
+   Specifies items to which *label* was applied.
 
-<div id="CodeSnippetContainerCode_08cf74c6-4a77-4c72-b034-1b2f0360d827" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt;LJulyHotFix</code></pre>
-</div>
-</div>
+   **Examples**
 
-<p>Gets the version of readme.txt that was labeled <strong>JulyHotFix</strong>.</p>
 
-<div id="CodeSnippetContainerCode_3517ab06-4897-4514-bf12-fb70aa3848f4" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get /version:LLastKnownGood</code></pre>
-</div>
-</div>
+   <a id="CodeSnippetContainerCode_08cf74c6-4a77-4c72-b034-1b2f0360d827"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt;LJulyHotFix
+   ```
 
-<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../../pipelines/build/triggers.md">automated build process<a/>.</p></td>
-</tr>
-<tr>
-<td><p>Date and time</p></td>
-<td><p><strong>D</strong><i>yyyy-mm-ddTxx:xx</i></p>
-<p>-or-</p>
-<p><strong>D</strong><i>mm/dd/yyyy</i></p>
-<p>-or-</p>
-<p>Any .NET Framework-supported format.</p>
-<p>-or-</p>
-<p>Any of the date formats supported on the local machine.</p></td>
-<td><p>Specifies a changeset created on a specified date and time.</p>
-<p><strong>Examples</strong></p>
+   Gets the version of readme.txt that was labeled **JulyHotFix**.
 
-<div id="CodeSnippetContainerCode_3e2c85b3-6c9b-4323-92f7-f43b953c7f15" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22</code></pre>
-</div>
-</div>
 
-<p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 00:00 (midnight).</p>
+   <a id="CodeSnippetContainerCode_3517ab06-4897-4514-bf12-fb70aa3848f4"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get /version:LLastKnownGood
+   ```
+   
+   Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as **LastKnownGood** was created, for example, perhaps as part of an <a href="../../pipelines/build/triggers.md">automated build process<a/>.
 
-<div id="CodeSnippetContainerCode_1f0ebab8-23be-4987-bf44-3424224903c9" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22T09:00</code></pre>
-</div>
-</div>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Date and time
 
-<p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see <a href="/dotnet/api/system.datetime" data-raw-source="[DateTime](/dotnet/api/system.datetime)">DateTime</a> and <a href="/dotnet/standard/base-types/standard-date-and-time-format-strings" data-raw-source="[Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings)">Standard Date and Time Format Strings</a>.</p></td>
-</tr>
-<tr>
-<td><p>Workspace (current)</p></td>
-<td><p><strong>W</strong></p></td>
-<td><p>Specifies the version in your workspace.</p></td>
-</tr>
-<tr>
-<td><p>Workspace (specified)</p></td>
-<td><p><strong>W</strong><i>workspacename</i>; <i>workspaceowner</i></p></td>
-<td><p>Specifies the version in a specified workspace.</p>
-<p>For example: <strong>WResolveRIConflicts;PeterW</strong></p></td>
-</tr>
-<tr>
-<td><p>Tip</p></td>
-<td><p><strong>T</strong></p></td>
-<td><p>Specifies the most recent version.</p></td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+   :::column span="1":::
+   **D***yyyy-mm-ddTxx:xx*
+
+   -or-
+
+   **D***mm/dd/yyyy*
+
+   -or-
+
+   Any .NET Framework-supported format.
+
+   -or-
+
+   Any of the date formats supported on the local machine.
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies a changeset created on a specified date and time.
+
+   **Examples**
+
+
+   <a id="CodeSnippetContainerCode_3e2c85b3-6c9b-4323-92f7-f43b953c7f15"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22
+   ```
+
+   Updates the workspace to match the codebase as it existed on 3/22/2004 at 00:00 (midnight).
+
+
+   <a id="CodeSnippetContainerCode_1f0ebab8-23be-4987-bf44-3424224903c9"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22T09:00
+   ```
+
+   Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).
+
+   For more information about .NET Framework-supported date and time formats see [DateTime](/dotnet/api/system.datetime) and [Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings).
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Workspace (current)
+
+   :::column-end:::
+   :::column span="1":::
+   **W**
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies the version in your workspace.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Workspace (specified)
+
+   :::column-end:::
+   :::column span="1":::
+   **W***workspacename*; *workspaceowner*
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies the version in a specified workspace.
+
+   For example: **WResolveRIConflicts;PeterW**
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Tip
+
+   :::column-end:::
+   :::column span="1":::
+   **T**
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies the most recent version.
+
+   :::column-end:::
+:::row-end:::
+
+<a id="use-options" /> 
 
 ## Use options to modify how a command functions
 
@@ -431,18 +441,8 @@ After she enters this command, the system then prompts her to type her password 
 
 ### Use the /lock option to apply or remove a lock
 
-<table>
-<thead>
-<tr>
-<th> <strong>Important</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>As a best practice, use the <strong>/lock</strong> option with discretion and notify your teammates why you are locking an item, and when you plan to remove the lock.</p></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> As a best practice, use the **/lock** option with discretion and notify your teammates why you are locking an item, and when you plan to remove the lock.
 
 Use the **/lock** option to apply or remove a lock at the same time you run another command such as [Add](add-command.md) or [Edit](checkout-or-edit-command.md).
 
@@ -464,119 +464,206 @@ Use the **/lock** option to apply or remove a lock at the same time you run anot
 
 You can abbreviate the following options.
 
-<table>
-<thead>
-<tr>
-<th><p>Option</p></th>
-<th><p>Option Alias</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/comment</strong></p></td>
-<td><p><strong>-C</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/computer</strong></p></td>
-<td><p><strong>-M</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/delete</strong></p></td>
-<td><p><strong>-D</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/force</strong></p></td>
-<td><p><strong>-P</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/format</strong></p></td>
-<td><p><strong>-F</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/help</strong></p></td>
-<td><p><strong>-?, -H</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/lock</strong></p></td>
-<td><p><strong>-K</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p><strong>-Y</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/newname</strong></p></td>
-<td><p><strong>-N</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p><strong>-I</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/owner</strong></p></td>
-<td><p><strong>-O</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p><strong>-R</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/server</strong></p></td>
-<td><p><strong>-S</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/slotmode</strong></p></td>
-<td><p><strong>-X</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/template</strong></p></td>
-<td><p><strong>-T</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/user</strong></p></td>
-<td><p><strong>-U</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/version</strong></p></td>
-<td><p><strong>-V</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/workspace</strong></p></td>
-<td><p><strong>-W</strong></p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Option Alias**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/comment**
+   :::column-end:::
+   :::column span="1":::
+   **-C**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/computer**
+   :::column-end:::
+   :::column span="1":::
+   **-M**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/delete**
+   :::column-end:::
+   :::column span="1":::
+   **-D**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/force**
+   :::column-end:::
+   :::column span="1":::
+   **-P**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/format**
+   :::column-end:::
+   :::column span="1":::
+   **-F**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/help**
+   :::column-end:::
+   :::column span="1":::
+   **-?, -H**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/lock**
+   :::column-end:::
+   :::column span="1":::
+   **-K**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   **-Y**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/newname**
+   :::column-end:::
+   :::column span="1":::
+   **-N**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   **-I**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/owner**
+   :::column-end:::
+   :::column span="1":::
+   **-O**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   **-R**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/server**
+   :::column-end:::
+   :::column span="1":::
+   **-S**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/slotmode**
+   :::column-end:::
+   :::column span="1":::
+   **-X**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/template**
+   :::column-end:::
+   :::column span="1":::
+   **-T**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/user**
+   :::column-end:::
+   :::column span="1":::
+   **-U**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/version**
+   :::column-end:::
+   :::column span="1":::
+   **-V**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/workspace**
+   :::column-end:::
+   :::column span="1":::
+   **-W**
+   :::column-end:::
+:::row-end:::
+
 
 ## Understand exit codes
 
 Version control commands return the following exit codes:
 
-<table>
-<thead>
-<tr>
-<th><p>Exit Code</p></th>
-<th><p>Definition</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>0</strong></p></td>
-<td><p>Success.</p></td>
-</tr>
-<tr>
-<td><p><strong>1</strong></p></td>
-<td><p>Partial success; this means at least something, or possibly everything, failed to succeed.</p></td>
-</tr>
-<tr>
-<td><p><strong>2</strong></p></td>
-<td><p>Unrecognized command.</p></td>
-</tr>
-<tr>
-<td><p><strong>100</strong></p></td>
-<td><p>Nothing succeeded.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Exit Code**
+   :::column-end:::
+   :::column span="3":::
+   **Definition**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **0**
+   :::column-end:::
+   :::column span="3":::
+   Success.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **1**
+   :::column-end:::
+   :::column span="3":::
+   Partial success; this means at least something, or possibly everything, failed to succeed.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **2**
+   :::column-end:::
+   :::column span="3":::
+   Unrecognized command.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **100**
+   :::column-end:::
+   :::column span="3":::
+   Nothing succeeded.
+   :::column-end:::
+:::row-end:::
+
 
 For example:
 

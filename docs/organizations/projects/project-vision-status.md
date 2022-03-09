@@ -13,7 +13,7 @@ ms.date: 08/24/2021
 
 # Share your project vision, view project activity
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="> tfs-2017"
 Each project provides a **Summary** or home page to share information and showcase the latest project activity. Use this page to perform one or more of the following tasks. 
@@ -89,18 +89,18 @@ Use this page to perform one or more of the following tasks.
 ## Prerequisites
 
 ::: moniker range=">= tfs-2018" 
-- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
+- You must be a member of the [**Project Administrators** group](../security/change-project-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
   - Edit information on the project page
   - Change the repository that you use to share project information
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers).
+- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../security/about-permissions.md#validusers).
 - To add or edit project **Tags**, you must have the project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API. The project properties REST API is used to drive the project tags experience in the product.  
 ::: moniker-end
 
 
 ::: moniker range="< tfs-2018" 
-- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
+- You must be a member of the [**Project Administrators** group](../security/change-project-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
   - Edit information on the project page
   - Change the repository that you use to share project information
   - Manage project membership

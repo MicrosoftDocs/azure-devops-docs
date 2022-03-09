@@ -1,4 +1,4 @@
-﻿---
+---
 title: (Classic) Deployment group jobs in release pipelines
 ms.custom: seodec18
 description: Understand deployment group jobs in Azure Pipelines and Team Foundation Server (TFS)
@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2018'
 
 # Deployment group jobs
 
-[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

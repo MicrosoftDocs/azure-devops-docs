@@ -1,7 +1,7 @@
 ---
 title: Manual test progress status sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate an overall execution state or progress status of manual tests
+description: Learn about sample Power BI queries that generate an overall execution state or progress status of manual tests.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/14/2020
+ms.date: 10/13/2021
 ---
 
 # Progress status sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 
@@ -48,7 +48,7 @@ The overall execution state report helps you track the team's progress with resp
 
 [!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
-For the report to generate useful data, the team must perform the following activities to manage test plans:
+For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
 - Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create manual test cases](../../test/create-test-cases.md). 
 - Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
@@ -121,16 +121,49 @@ $apply=filter(
 The following table describes each part of the query.
 
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) </code></td><td>Return data for only selected test plan. You can add multiple plans with a clause like <code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))</code>. You can also apply any other filters related to test suites, test configurations here.</td><tr>
-<tr><td><code>/aggregate($count as TotalCount,</code></td><td>Aggregate data across the filtered test points with having count as <code>TotalCount</code>.</td><tr>
-<tr><td><code>cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed</code></td><td>While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '<code>Passed</code>' metric.</td><tr>
-<tr><td><code>/compute(Executed mul 100 div TotalCount as ExecPct</code>.</td><td>Provide a computed metric <code>ExecPct</code> which is equal to (Executed test points / Total count * 100).</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) `
+   :::column-end:::
+   :::column span="1":::
+   Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate data across the filtered test points with having count as `TotalCount`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed`
+   :::column-end:::
+   :::column span="1":::
+   While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '`Passed`' metric.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(Executed mul 100 div TotalCount as ExecPct`.
+   :::column-end:::
+   :::column span="1":::
+   Provide a computed metric `ExecPct` that is equal to (Executed test points / Total count * 100).
+   :::column-end:::
+:::row-end:::
 
+
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 ## Power BI transforms
 
@@ -155,7 +188,7 @@ To create the report, do the following steps:
     - Drag and drop **Executed** and **NotExecuted** in **Values**.
 2. To create donut chart of split by outcome
     - Create a Power BI visualization **Donut chart**.
-    - Drag and drop outcome values like **Passed, Failed, Blocked, NotApplicable** etc. into **Values**.
+    - Drag and drop outcome values like **Passed**, **Failed**, **Blocked**, **NotApplicable**, and so on, into **Values**.
 
 Your report should appear similar to the following image. 
 

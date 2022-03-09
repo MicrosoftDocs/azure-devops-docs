@@ -1,7 +1,7 @@
 ---
-title: Pipeline pass rate trend of a test sample Power BI reports 
+title: Pipeline pass rate trend of a test sample Power BI report
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pass rate trend Power BI report for a given test of a pipeline in the project  
+description: Learn how to generate a pass rate trend Power BI report for a given test of a pipeline in the project.
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
@@ -11,12 +11,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 08/14/2020
+ms.date: 10/13/2021
 ---
 
 # Pass rate trend of a test sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows day wise trend of number of times a test passed and failed, along with its pass rate of any given test of a pipeline.
 
@@ -40,9 +40,8 @@ An example is shown in the following image.
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Test/TestName eq '{testName}' "
@@ -95,89 +94,190 @@ $apply=filter(
 
 ### Substitution strings
 
-Each query contains the following strings that you must substitute with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
+Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
  
-- {organization} - Your organization name
-- {project} - Your team project name
-- {pipelinename} - Your pipeline name. Example: **Fabrikam hourly build pipeline**.
-- {testName} - Your test name
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2019-09-04Z** represents September 4, 2019. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{organization}` - Your organization name
+- `{project}` - Your team project name
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{testName}` - Your test name
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelineName}'</code></td>
-<td>Return test runs for the specified pipeline</td>
-<tr>
-<tr><td><code>And Date/Date ge {startdate}</code></td>
-<td>Return test runs on or after the specified date</td>
-<tr>
-<tr><td><code>And Test/TestName eq '{testName}'</code></td>
-<td>Return test runs only for the specified test name</td>
-<tr>
-<tr><td><code>and Workflow eq 'Build'</code></td>
-<td>Return test runs for 'Build' workflow</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(Date/Date),</code></td>
-<td>Group by the date of completion of test run</td>
-<tr>
-<tr><td><code>aggregate(</code></td>
-<td>Start aggregate. For all the test runs matching the above filter criteria:</td>
-<tr>
-<tr><td><code>ResultCount with sum as TotalCount,</code></td>
-<td>Count the total number of test runs as TotalCount</td>
-<tr>
-<tr><td><code>ResultPassCount with sum as ResultPassCount,</code></td>
-<td>Count the total number of passed test runs as ResultPassCount</td>
-<tr>
-<tr><td><code>ResultFailCount with sum as ResultFailCount,</code></td>
-<td>Count the total number of failed test runs as ResultFailCount</td>
-<tr>
-<tr><td><code>ResultAbortedCount with sum as ResultAbortedCount,</code></td>
-<td>Count the total number of aborted test runs as ResultAbortedCount</td>
-<tr>
-<tr><td><code>ResultErrorCount with sum as ResultErrorCount,</code></td>
-<td>Count the total number of errored test runs as ResultErrorCount</td>
-<tr>
-<tr><td><code>ResultNotExecutedCount with sum as ResultNotExecutedCount,</code></td>
-<td>Count the total number of not executed test runs as ResultNotExecutedCount</td>
-<tr>
-<tr><td><code>ResultNotImpactedCount with sum as ResultNotImpactedCount</code></td>
-<td>Count the total number of not impacted test runs as ResultNotImpactedCount</td>
-<tr>
-<tr><td><code>))</code></td>
-<td>Close aggregate() and groupby()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>iif(TotalCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpactedCount) div cast(TotalCount sub ResultNotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate)</code></td>
-<td>For all the days, calculate Pass rate</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close compute()</td>
-<tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelineName}'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for the specified pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `And Date/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `And Test/TestName eq '{testName}'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs only for the specified test name
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Workflow eq 'Build'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for 'Build' workflow
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(Date/Date),`
+   :::column-end:::
+   :::column span="1":::
+   Group by the date of completion of test run
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start aggregate. For all the test runs matching the above filter criteria:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultCount with sum as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of test runs as TotalCount.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultPassCount with sum as ResultPassCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of passed test runs as ResultPassCount.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultFailCount with sum as ResultFailCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of failed test runs as ResultFailCount.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultAbortedCount with sum as ResultAbortedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of aborted test runs as ResultAbortedCount.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultErrorCount with sum as ResultErrorCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of errored test runs as ResultErrorCount.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not executed test runs as ResultNotExecutedCount.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotImpactedCount with sum as ResultNotImpactedCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not affected test runs as ResultNotImpactedCount.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `))`
+   :::column-end:::
+   :::column span="1":::
+   Close aggregate() and groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start compute()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `iif(TotalCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpactedCount) div cast(TotalCount sub ResultNotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate)`
+   :::column-end:::
+   :::column span="1":::
+   For all the days, calculate Pass rate.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close compute()
+   :::column-end:::
+:::row-end:::
 
 ## Power BI transforms
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example such an entity is Date.
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such an entity is Date.
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **Date**.
 

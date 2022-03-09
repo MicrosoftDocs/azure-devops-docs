@@ -1,24 +1,25 @@
 ---
-title: Working with Git tags
+title: Use Git tags
 titleSuffix: Azure Repos
 description: Learn how to use Git tags
 ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
 ms.technology: devops-code-git
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/28/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Working with Git tags
+# Use Git tags
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | VS 2017 | VS 2015**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-Azure DevOps Services and TFS support both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can create annotated tags using the web portal, and starting with Visual Studio 2017 Update 6, you can create both lightweight and annotated tags from within Visual Studio. For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
+Azure DevOps supports both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can create annotated tags using the web portal, and starting with Visual Studio 2017 Update 6, you can create both lightweight and annotated tags from within Visual Studio. For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
 
-This article provides an overview of working with Git tags in Azure DevOps Services, TFS, and Visual Studio.
+This article provides an overview of working with Git tags in Azure DevOps and Visual Studio.
 
->[!IMPORTANT]
->The **Tags** view in Visual Studio was introduced in Visual Studio 2017 Update 6. If you are on versions earlier than this, you can view and create tags from the history and commit details views starting with Visual Studio 2015, but you won't be able to perform the operations in the **Tags** view as described in this article.
+> [!IMPORTANT]
+> The **Tags** view in Visual Studio was introduced in Visual Studio 2017 Update 6. If you are on versions earlier than this, you can view and create tags from the history and commit details views starting with Visual Studio 2015, but you won't be able to perform the operations in the **Tags** view as described in this article.
 
 ## View and filter tags
 
@@ -190,7 +191,7 @@ You can create both annotated and lightweight tags in Visual Studio from both th
 
    ![Create tag in Visual Studio.](media/git-tags/create-tag-button-vs.png)
 
-2. To create a tag against the tip of the current branch, specify a name in the **Enter a tag name <Required>** box, optionally provide a tag message, and select **Create Tag**.
+2. To create a tag against the tip of the current branch, specify a name in the **Enter a tag name** box, optionally provide a tag message, and select **Create Tag**.
 
    ![Select Create Tag in Visual Studio.](media/git-tags/create-tag-current-branch-vs.png)
 
@@ -215,7 +216,7 @@ To create a tag directly from the history view, right-click the desired commit a
 >[!IMPORTANT]
 >Use caution when deleting tags from your repo. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags, or if you are sure that the repo hasn't been pulled, cloned, or forked since you created your tag.
 
-To delete a tag, you must have the [Force Push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set). Force push permissions for a branch are also automatically inherited by the branch creator.
+To delete a tag, you must have the [Force Push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set). Force push permissions for a tag are also automatically inherited by the tag creator.
 
 #### [Browser](#tab/browser)
 

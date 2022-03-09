@@ -1,19 +1,20 @@
 ---
 title: Link type element reference
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 02/14/2018  
 ---
 
 # LinkTypes elements reference 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This topic provides a reference of link types defined for Azure DevOps Services and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
@@ -77,39 +78,61 @@ Each link type has a reference name and two optional friendly names, or name lab
 The topology types described in the following table determine the restrictions placed on the usage of each link type.
 
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="55%">Topology type</th>
-<th width="45%">Illustration</th>
+:::row:::
+   :::column span="2":::
+   **Topology type**
+   :::column-end:::
+   :::column span="1":::
+   **Illustration**
+   :::column-end:::
+:::row-end:::
 
-</tr>
-<tr>
-<td><p><strong>Dependency</strong>: You can use dependency links to create relationships between work items that have directionality and to restrict circular relationships. The link name is different at the end points.</p><p><strong>Example usage</strong>: Use a dependency link to record the features that must be completed to deliver a user requirement. You can&#39;t create a dependent link between two work items that are linked to the same work items via dependent links. </p></td>
-<td><img src="media/IC268537.png" alt="Dependency topology"/> </td>
-</tr>
+:::row:::
+   :::column span="2":::
+   **Dependency**: You can use dependency links to create relationships between work items that have directionality and to restrict circular relationships. The link name is different at the end points.  
+   **Example usage**: Use a dependency link to record the features that must be completed to deliver a user requirement. You can't create a dependent link between two work items that are linked to the same work items via dependent links. 
 
+   :::column-end:::
+   :::column span="1":::
+   ![Dependency topology](media/IC268537.png) 
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td><p><strong>Directed Network</strong>: You can use directed network links to create relationships between work items that indicate directionality. The link name is different at the end points. Circular relationships are allowed.</p>
-<p><strong>Example usage</strong>: Use a directed network link to record a relationship between two features that might share dependencies and which you want to distinguish from each other in some way.  </p></td>
-<td><img src="media/IC268536.png" alt="Directed network topology"/></td>
-</tr>
+:::row:::
+   :::column span="2":::
+   **Directed Network**: You can use directed network links to create relationships between work items that indicate directionality. The link name is different at the end points. Circular relationships are allowed.  
 
-<tr>
-<td><p><strong>Network</strong>: You can use network links to create basic relationships between work items that are non-restrictive. The link is the same at both end points. Circular relationships are allowed.</p>
-<p><strong>Example usage</strong>: Use a network link, such as Related, to record a relationship between two features that might share dependencies.</p></td>
-<td><img src="media/IC268535.png" alt="Network topology"/></td>
-</tr>
+   **Example usage**: Use a directed network link to record a relationship between two features that might share dependencies and which you want to distinguish from each other in some way.  
 
-<tr>
-<td><p><strong>Tree</strong>: You can use tree links to create hierarchical relationships among work items. Tree links support multi-level hierarchical views, have directionality, and restrict circular relationships. The link name is different at the end points. Tree links are the only type of link that is supported by the <strong>Tree of Work Items</strong> query. With Parent/Child links, you can&#39;t assign two parents to a child.</p>
-<p><strong>Example usage</strong>: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, <a href="../../boards/backlogs/organize-backlog.md" data-raw-source="[map backlog items to features, and features to epics](../../boards/backlogs/organize-backlog.md)">map backlog items to features, and features to epics</a>. </p></td>
-<td><img src="media/IC268538.png" alt="Tree topology"/></td>
-</tr>
+   :::column-end:::
+   :::column span="1":::
+   ![Directed network topology](media/IC268536.png)
+   :::column-end:::
+:::row-end:::
 
-</tbody>
-</table>
+:::row:::
+   :::column span="2":::
+   **Network**: You can use network links to create basic relationships between work items that are non-restrictive. The link is the same at both end points. Circular relationships are allowed.
+
+   **Example usage**: Use a network link, such as Related, to record a relationship between two features that might share dependencies.
+
+   :::column-end:::
+   :::column span="1":::
+   ![Network topology](media/IC268535.png)
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+   **Tree**: You can use tree links to create hierarchical relationships among work items. Tree links support multi-level hierarchical views, have directionality, and restrict circular relationships. The link name is different at the end points. Tree links are the only type of link that is supported by the **Tree of Work Items** query. With Parent/Child links, you can't assign two parents to a child.
+
+   **Example usage**: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, [map backlog items to features, and features to epics](../../boards/backlogs/organize-backlog.md). 
+
+   :::column-end:::
+   :::column span="1":::
+   ![Tree topology](media/IC268538.png)
+   :::column-end:::
+:::row-end:::
  
 
 <a id="custom-link-type"></a>
@@ -145,10 +168,4 @@ In addition to defining link types, you can customize the work item type definit
 -  [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)    
 -  [Customizing your work tracking experience](../customize-work.md)
 
-To programmatically interact with link types, see [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list).
-
-
-
-
- 
-  
+To programmatically interact with link types, see [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list).

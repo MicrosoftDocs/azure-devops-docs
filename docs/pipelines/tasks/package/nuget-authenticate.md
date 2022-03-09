@@ -9,7 +9,7 @@ monikerRange: 'azure-devops'
 
 # Package: NuGet Authenticate
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories.
 

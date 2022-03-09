@@ -6,7 +6,7 @@ ms.topic: include
 
 Previously, when editing a code wiki page, you were redirected to the Azure Repos hub for editing. Currently, the Repo hub is not optimized for markdown editing. 
 
-Now you can edit a code wiki page in the side-by-side editor inside wiki. This lets you use the rich markdown toolbar to create your content making the editing experience identical to the one in project wiki. You can still choose to edit in repos by selecting the **Edit in Repos** option in the context menu.
+Now you can edit a code wiki page in the side-by-side editor inside wiki. This lets you use the rich Markdown toolbar to create your content making the editing experience identical to the one in project wiki. You can still choose to edit in repos by selecting the **Edit in Repos** option in the context menu.
 
 > [!div class="mx-imgBorder"]
 > ![Rich editing for code wiki in Wiki Hub.](../../media/154_06.png "Rich editing for code wiki in Wiki Hub")

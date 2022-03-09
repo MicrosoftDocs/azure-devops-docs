@@ -1,14 +1,16 @@
 ---
 title: Move Git repositories between projects
 description: Explore how to move git repositories between Team Projects with full-fidelity history
-ms.topic: article
+ms.topic: conceptual
 ms.technology: devops-code-git
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
-ms.date: 04/27/2018
+ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
 ---
 
 # Move Git repositories to another project with full-fidelity history
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 ![Git logo](./media/move-git-repos-between-team-projects/git.png)
 
@@ -81,8 +83,8 @@ Verify that all your branches were moved over to the new repo.
  Verify that the permissions and policies are correctly configured for the new repo. You can configure the security after step 1, or at this stage. Reconfigure your builds to connect with the new repo. Lastly, notify users of the original repo to update their remotes in Visual Studio, or running the `git remote set-url origin` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CMD
-git remote set-url origin https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/MigrationDemo
+```Git CLI
+> git remote set-url origin https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/MigrationDemo
 ```
 
 > [!IMPORTANT]  

@@ -1,7 +1,7 @@
 ---
 title: Pipeline duration sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pipeline duration Power BI report  
+description: Learn how to generate a pipeline duration Power BI report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 12/18/2020
+ms.date: 10/12/2021
 ---
 
 # Pipeline duration sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This article shows you how to get pipeline duration, or the time taken to run a pipeline. This report is similar to the duration summary metric in the 'Pipeline duration' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
@@ -84,48 +84,103 @@ $apply=filter(
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
-<td>Return pipeline runs for the specified pipeline</td>
-<tr>
-<tr>
-<td><code>and CompletedDate ge {startdate}</code></td>
-<td>Return pipeline runs on or after the specified date</td>
-<tr>
-<tr>
-<td><code>and (SucceededCount eq 1 or PartiallySucceededCount eq 1)</code></td>
-<td>Return only the successful or partially successful runs</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,</code></td>
-<td>Compute 50th percentile of Pipeline durations of all pipeline runs that match the filter criteria/td>
-<tr>
-<tr><td><code>percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,</code></td>
-<td>Compute 80th percentile of Pipeline durations of all pipeline runs that match the filter criteria</td>
-<tr>
-<tr><td><code>percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)</code></td>
-<td>Compute 95th percentile of Pipeline durations of all pipeline runs that match the filter criteria</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))</code></td>
-<td>Group the response by - Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelinename}'`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs for the specified pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CompletedDate ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and (SucceededCount eq 1 or PartiallySucceededCount eq 1)`
+   :::column-end:::
+   :::column span="1":::
+   Return only the successful or partially successful runs
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start compute()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,`
+   :::column-end:::
+   :::column span="1":::
+   Compute 50th percentile of Pipeline durations of all pipeline runs that match the filter criteria/td>
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,`
+   :::column-end:::
+   :::column span="1":::
+   Compute 80th percentile of Pipeline durations of all pipeline runs that match the filter criteria
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)`
+   :::column-end:::
+   :::column span="1":::
+   Compute 95th percentile of Pipeline durations of all pipeline runs that match the filter criteria
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))`
+   :::column-end:::
+   :::column span="1":::
+   Group the response by - Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds
+   :::column-end:::
+:::row-end:::
 
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ## Power BI transforms
 
@@ -185,9 +240,9 @@ Your report should appear similar to the following image.
 > ![Sample - Pipelines Duration - Report](media/odatapowerbi-pipelines/duration-report.png)
 
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
 
 
 ### Use Pipeline ID, rather than Pipeline Name
@@ -242,7 +297,7 @@ $apply=filter(
 
 ### Filter by branch
 
-You may want to view the duration of a pipeline for a particular **branch** only. To create the report, perform the following additional steps along with those steps defined previously in this article.
+You may want to view the duration of a pipeline for a particular **branch** only. To create the report, carry out the following extra steps along with those steps defined previously in this article.
 
 - Expand Branch into Branch.BranchName.  
 - Add the field **Branch.BranchName** to **Axis**.  
@@ -293,12 +348,12 @@ $apply=filter(
 
 ### Duration for all project pipelines
 
-You may want to view the duration for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the duration for all the pipelines of the project in a single report. To create the report, follow the below extra steps along with what is defined previously in this article.
 
 - Expand Pipeline into  Pipeline.PipelineName.
 - Add the field **PIpeline.PipelineName** to **Axis**.
 
-Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report that has detailed similar steps as required here.
 
 #### [Power BI query](#tab/powerbi/)
 

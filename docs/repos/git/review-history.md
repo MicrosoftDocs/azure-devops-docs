@@ -5,13 +5,14 @@ description: Git history tools with Visual Studio and git command line tools to 
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 10/10/2018
 monikerRange: '<= azure-devops'
+ms.date: 09/28/2021
 ---
 
 # Review history
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.
@@ -31,7 +32,7 @@ In this tutorial you learn how to:
 
 Compare the changes between two versions of a file in your Git repo.
 
-#### [Browser](#tab/browser)
+#### [Browser](#tab/browser) 
 
 1. In your project, click **Repos**, and then click **Files**. 
 
@@ -60,12 +61,14 @@ Compare the changes between two versions of a file in your Git repo.
     ![View diff changes in Visual Studio](media/history/vs-diff-changes.png)
 
 #### [Command Line](#tab/command-line/)
+
 Use the `git log` command to view the commits that changed a file in your repo for your current branch.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git log index.html   
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git log index.html   
 
-<font color="#b5bd68">commit bbc3b679197b659544a6f8070c79fb535b496613
+ commit bbc3b679197b659544a6f8070c79fb535b496613
 Date:   Thu Jun 30 13:42:50 2016 -0400
 
     update landing page
@@ -74,29 +77,32 @@ commit e5402fe710c25eca1b96a4e238eee9c01ed41c6a
 Date:   Thu Jun 30 13:42:23 2016 -0400
 
     initial commit
-</font>
-</pre>
+```
 
 Filter the `git log` output based on author, description or date information by using the corresponding options. 
 Leave out the filename if you want to see the commits matching all files in your repo.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git log <font color="#b5bd68">--author=frank@fabrikam.com index.html</font>
-&gt; git log <font color="#b5bd68">--since="2016-1-1"</font>
-&gt; git log <font color="#b5bd68">--before="2 weeks ago"</font>
-&gt; git log <font color="#b5bd68">--grep="css change"</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git log --author=frank@fabrikam.com index.html  
+> git log --since="2016-1-1"  
+> git log --before="2 weeks ago"  
+> git log --grep="css change"  
+```
 
 View changes between two commits using `git diff`:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git diff bbc3b67 e5402fe71 index.html
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git diff bbc3b67 e5402fe71 index.html
 
-<font color="#c66">-    &lt;link rel="stylesheet" href="app.cs"/&gt;</font>   
-<font color="#b5bd68">+    &lt;link rel="stylesheet" href="fabrikam.cs"/&gt;</font>
-</pre>
+-   <link rel="stylesheet" href="app.cs"/>   
++   <link rel="stylesheet" href="fabrikam.cs"/>
+```
 
 * * *
+
+
 ## Retrieve files
 
 Retrieve a specific version of a file from your history, even if the file was deleted or renamed in the latest version of your code.
@@ -152,22 +158,26 @@ To retrieve a previous version of a file that was deleted in a previous commit:
 an existing one, you'll need to commit your changes to add the previous version to your local branch.
 
 #### [Command Line](#tab/command-line/)
+
 Use `git log` to find the version to restore and `git checkout` or `git show` to restore the file from your history.
 
 Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](review-history.md?tabs=command-line#compare-files) above.
 Restore the version in its current location using `git checkout`:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git checkout <font color="#b5bd68">85435fac src/app.ts</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git checkout 85435fac src/app.ts 
+```
 
 Using `git checkout` this way will rewrite the current version of the file at that path location.
 
 Restore a file to any location by using `git show`. This command prints the file contents to the terminal-you'll want to redirect the output to your desired location.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git show <font color="#b5bd68">85435fac:src/app.ts &gt; /home/frank/oldapp.ts</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git show 85435fac:src/app.ts
+> /home/frank/oldapp.ts
+```
 
 * * *
 ## Compare branches
@@ -209,42 +219,45 @@ Select the branch to compare to from the drop-downs at the top. The view will di
 
 # [Command Line](#tab/command-line)
 
-<div class="tab-pane fade" id="cmdline1" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-
 Use `git diff` to compare the contents of two branches. You can compare any combination of local and remote branches. 
 The output shows the deletions and additions between the two versions of the code.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git diff <font color="#b5bd68">users/frank/feature origin/master</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git diff users/frank/feature origin/main
+```
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+> [!div class="tabbedCodeSnippets"]
+```
 index 36843b8..03afc4b 100644
 --- a/tsapp/index.html
 +++ b/tsapp/index.html
 @@ -4,7 +4,7 @@
- &lt;head&gt;
-     &lt;meta charset="utf-8" /&gt;
-     &lt;title>TypeScript HTML App&lt;/title&gt;
-<font color="#c66">-    &lt;link rel="stylesheet" href="fabrikam-test.css" type="text/css" /&gt;</font><br/><font color="#b5bd68">+    &lt;link rel="stylesheet" href="fabrikam.css" type="text/css" /&gt;</font>
-     &lt;script src="app.js">&lt;/script&gt;
- &lt;/head>
+ <head>
+     <meta charset="utf-8" />
+     <title>TypeScript HTML App</title>
+-    <link rel="stylesheet" href="fabrikam-test.css" type="text/css" />
++    <link rel="stylesheet" href="fabrikam.css" type="text/css" />
+     <script src="app.js"></script>
+ </head>
  ...
 --- a/tsapp/app.ts
 +++ b/tsapp/app.ts
      constructor(element: HTMLElement) {
          this.element = element;
-<font color="#c66">-        this.element.innerHTML += "The time is: ";</font><br/><font color="#b5bd68">+        this.element.innerHTML += "The time is now: ";</font>
+-        this.element.innerHTML += "The time is: ";
++        this.element.innerHTML += "The time is now: ";
          this.span = document.createElement('span');
          this.element.appendChild(this.span);
          this.span.innerText = new Date().toUTCString();
- </pre>
+```
 
 This will output the diff for every change between the branches. 
 You can narrow down specific file changes by specifying a file after the branch names:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git diff <font color="#b5bd68">users/frank/feature origin/master index.html</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git diff users/frank/feature origin/main index.html
+```
 
----
+***

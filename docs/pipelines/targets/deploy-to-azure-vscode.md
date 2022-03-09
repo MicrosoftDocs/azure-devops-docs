@@ -6,23 +6,22 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 03/19/2020
+ms.date: 02/01/2022
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy to Azure App Service using Visual Studio Code
 
-This tutorial walks you through setting up a CI/CD pipeline for deploying Node.js application to Azure App Service using [Deploy to Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extension.
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
+Use [Azure Pipelines](/azure/devops/pipelines/) to deploy a Node.js application to Azure App Service using the [Deploy to Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extension. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 
 ## Prerequisites
 
-- An Azure account. If you don't have one, you can [create for free](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-app-service-extension&mktingSource=vscode-tutorial-app-service-extension).
-
-- You need [Visual Studio Code](https://code.visualstudio.com/)  installed along with the [Node.js and npm the Node.js package manager](https://nodejs.org/download) and the below extensions:
-
-- You need [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy)
-
-- A GitHub account, where you can create a repository. If you don't have one, you can [create one for free](https://github.com/).
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+* [Visual Studio Code](https://code.visualstudio.com/) installed with the [Node.js and npm the Node.js package manager](https://nodejs.org/download).
+    * The Visual Studio Code [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure ](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extensions.
 
 > [!IMPORTANT]
 > Ensure that you have all the prerequisites installed and configured. 
@@ -93,7 +92,7 @@ At this point, we should test that our application runs. The generated Express a
 
 ## Setup CI/CD Pipeline
 
-Now you can deploy to Azure App Services, Azure Function App and AKS using VS code. This VS Code extension helps you set up continuous build and deployment for Azure App Services without leaving VS Code.
+Now you can deploy to Azure App Services, Azure function apps and AKS using VS Code. This VS Code extension helps you set up continuous build and deployment for Azure App Services without leaving VS Code.
 
 To use this service, you need to install the extension on VS Code. You can browse and install extensions from within VS Code. 
 
@@ -154,7 +153,7 @@ To open your user and workspace settings, use the following VS Code menu command
 
 You can also open the Settings editor from the Command Palette (`Ctrl+Shift+P`) with Preferences: Open Settings or use the keyboard shortcut (`Ctrl+,`).
 
-When you open the settings editor, you can search and discover settings you are looking for. Search for the name `deployToAzure.UseAzurePipelinesForGithub` and enable as shown below.
+When you open the settings editor, you can search and discover settings you’re looking for. Search for the name `deployToAzure.UseAzurePipelinesForGithub` and enable as shown below.
 
 ![Search for and enable deployToAzure.UseAzurePipelinesForGithub.](media/deploy-to-azure/vscode-settings.png)
 
@@ -187,7 +186,7 @@ When you open the settings editor, you can search and discover settings you are 
 
     ![org](media/deploy-to-azure/azure-devops-org.png)
 
-1. Select an Azure DevOps project.
+1. Select an DevOps project.
 
     ![project](media/deploy-to-azure/azure-devops-project.png)
 
@@ -198,7 +197,7 @@ When you open the settings editor, you can search and discover settings you are 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
-1. Navigate to your Azure DevOps project to see the pipeline in progress.
+1. Navigate to your DevOps project to see the pipeline in progress.
 
     ![Navigate to your Azure DevOps project to see the pipeline in progress.](media/deploy-to-azure/pipeline-in-progress.png)
 
@@ -232,7 +231,7 @@ When you open the settings editor, you can search and discover settings you are 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
-1. Navigate to your Azure DevOps project to see the pipeline in progress.
+1. Navigate to your DevOps project to see the pipeline in progress.
 
     ![Navigate to your Azure DevOps project to see the Azure pipeline in progress.](media/deploy-to-azure/azure-pipelines-in-progress.png)
 

@@ -1,23 +1,23 @@
 ---
-title: Product and portfolio backlog best practices
+title: Best practices for backlog management in Azure Boards
 titleSuffix: Azure Boards
-description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
+description: Learn best practices to manage and refine your product backlog in Azure Boards. 
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.author: kaelli
 author: KathrynEE
 ms.topic: best-practice
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+monikerRange: '<= azure-devops'
+ms.date: 10/08/2021
 ---
 
-# Refine your backlog  
+# Backlog management in Azure Boards  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
-information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
+information to each backlog item, break them down into smaller items, prioritize, and estimate them, and finally, 
 implement them and deliver the results to your customers. 
 
 To get started, see [Create your backlog](create-your-backlog.md). 
@@ -26,18 +26,18 @@ To get started, see [Create your backlog](create-your-backlog.md).
 
 ## Role of the product owner  
 
-Product owners play an important role in Scrum, primarily as the interface between customers and the team. To enable product owners to perform the following responsibilities, they need to be added to the Contributors group. 
+Product owners play an important role in Scrum, primarily as the interface between customers and the team. To enable product owners to fulfill the following responsibilities, they need to be added to the Contributors group. 
 
-* Analyzing customer requirements and articulate them as user stories, features, or requirements  
+* Analyzing customer requirements and express them as user stories, features, or requirements  
 * Building, prioritizing, and refining the product backlog  
 * Representing customer and stakeholder requirements to the team and responding to questions your team has about them  
 * Meeting regularly with stakeholders to address their needs and keep them informed  
 * Helping stakeholders understand the decisions underlying the priority order of your backlog  
-* Responding to any and all requests from your team for more information concerning backlog priorities and requirements  
+* Responding to all requests from your team for more information concerning backlog priorities and requirements  
 
-If they will also be responsible for configuring team settings, [add them as a team administrator](../../organizations/settings/add-team-administrator.md).  
+If they'll also be responsible for configuring team settings, [add them as a team administrator](../../organizations/settings/add-team-administrator.md).  
 
-A product owner can reduce the need for detailed specifications by being more responsive to the team's questions about implementation details and clearly articulating acceptance criteria within each requirement.
+A product owner can reduce the need for detailed specifications by being more responsive to the team's questions about implementation details and clearly expressing acceptance criteria within each requirement.
 
  
 <a name="acceptance"></a>
@@ -96,15 +96,15 @@ Backlog refinement supports your sprint planning efforts and helps minimize thes
 * Defocus on the business value team wants to achieve  
 * Inability to forecast  
 
-A meeting to refine the backlog should occur separate from the sprint planning meeting. Use this meeting to perform these activities:  
+A meeting to refine the backlog should occur separate from the sprint planning meeting. Use this meeting to complete these activities:  
 * Right-size backlog items by splitting larger items into smaller items. No backlog item should be larger than it will take to complete in a single sprint.  
 * Identify and fill in gaps in the product backlog. Capture new ideas and stories, architecture and design requirements, and other spikes.  
 * Reorder the backlog to represent today's priorities and business value focus.  
-* Ensure well defined acceptance criteria has been added to each item.  
+* Ensure well-defined acceptance criteria has been added to each item.  
 * Revisit estimates made to backlog items and adjust upwards or downwards based on recent understanding about scope and acceptance criteria.  
-* Review all potential backlog items to consider for the upcoming sprint to make sure they are well understood and that any additional work required to support their development is well understood by both product owner and the team.  
+* Review all potential backlog items to consider for the upcoming sprint to make sure they're well understood and that any other work required to support their development is well understood by both product owner and the team.  
 
-You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain a lot of surprises, and your team should feel they can contribute fully.    
+You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain many surprises, and your team should feel they can contribute fully.    
 
 
 
@@ -112,11 +112,11 @@ You'll know that you've done a good job refining your backlog when your sprint p
 
 ## Capture and manage spikes
 
-In addition to new features and requirements to build, you can capture non-feature work that still needs to be done for a healthy ecosystem of delivery. This work can include necessary research, design, exploration, or prototyping. Any work done that doesn't directly lead to shippable software can be considered and captured as a spike.
+Also, to new features and requirements to build, you can capture non-feature work that still needs to be done for a healthy ecosystem of delivery. This work can include necessary research, design, exploration, or prototyping. Any work done that doesn't directly lead to shippable software can be considered and captured as a spike.
 
-As the need to perform this work arises, capture it along with other items on your backlog. To track that it is a spike, you can either preface the title with the word "[Spike]" or add the tag "Spike" to the work item.  
+As the need to do this work arises, capture it along with other items on your backlog. To track that it's a spike, you can either preface the title with the word "[Spike]" or add the tag "Spike" to the work item.  
 
-## Additional resources
+## Other resources
 
 - [What is Agile?](/devops/plan/what-is-agile)  
 - [Building productive, customer focused teams](/devops/plan/building-productive-teams)  

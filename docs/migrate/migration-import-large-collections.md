@@ -7,12 +7,12 @@ ms.technology: devops-migrate
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2021
+ms.date: 10/07/2021
 ---
 
 # Import large collections 
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 <a id="import-large-collections"></a>
 
@@ -54,14 +54,14 @@ If you're using this import method, determine where to create your SQL Azure VM 
 
 | Desired import region | SQL Azure VM region |
 | --- | --- |
-| Central United States | Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2 |
-| Western Europe | North Europe, West Europe |
-| Australia East | Australia Central, Australia East, Australia Southeast |
+| Central United States | Central US |
+| Western Europe |  West Europe |
+| Australia East | Australia East |
 | Brazil South | Brazil South |
-| South India | Central India, South India, West India |
-| Central Canada | Canada Central, Canada East |
+| South India | South India |
+| Central Canada | Canada Central |
 | Asia Pacific | Southeast Asia (Singapore) |
-| UK South | UK South, UK West |
+| UK South | UK South |
 
 <br> 
 
@@ -242,7 +242,7 @@ If you included preview features with your import, add an exception for the anal
 
 ## Configure IP firewall exceptions
 
-Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1431. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
 
 ![Screenshot of the "Add inbound port rule" button on your SQL Azure VM network interface page.](media/migration-import/inbound.png)
 
@@ -323,7 +323,7 @@ Following the Fabrikam example, after you apply the changes, the import specific
 
 ![Screenshot of the import specification referencing a SQL Azure VM.](media/migration-import/importSpecIaaS.png)
 
-Your import specification is now configured to use a SQL Azure VM for import. Proceed with the rest of preparation steps to import to Azure DevOps Services. After the import has finished, be sure to delete the SQL login or rotate the password. Microsoft does not retain the login information after the import has finished. 
+Your import specification is now configured to use a SQL Azure VM for import. Proceed with the [rest of preparation steps](migration-import.md#determine-the-import-type) to import to Azure DevOps Services. After the import has finished, be sure to delete the SQL login or rotate the password. Microsoft does not retain the login information after the import has finished. 
  
 
 ## Related articles

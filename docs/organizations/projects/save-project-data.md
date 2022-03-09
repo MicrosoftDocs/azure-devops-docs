@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Save project data
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you delete a project, you can't recover its data later. So, you should save project data.
 
@@ -29,7 +29,7 @@ You can use the following procedures to save data that users most care about, su
 
   ::: moniker-end
 
-  ::: moniker range=">= tfs-2013 <= tfs-2015"
+  ::: moniker range="<= tfs-2015"
 
   ![context menu with download as zip menu item](media/delete-project/ic760345.png)
 
@@ -47,7 +47,7 @@ You can use the following procedures to save data that users most care about, su
 
 To learn more about how we manage and protect your data, read our [Data Protection Overview](../../organizations/security/data-protection.md).
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 You can easily save data stored for a project collection
 by [making a backup of the database](/azure/devops/server/admin/backup/config-backup-sched-plan). You can also

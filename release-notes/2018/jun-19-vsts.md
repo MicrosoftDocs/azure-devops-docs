@@ -186,7 +186,7 @@ In order to enhance end-to-end traceability, you can see all the commits that we
 
 ### Use upstream sources in legacy feeds
 
-Until now, [legacy feeds](/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops&preserve-view=true) could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed’s packages for more information, including behavior changes you should be aware of before upgrading.
+Until now, legacy feeds could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed’s packages for more information, including behavior changes you should be aware of before upgrading.
 
 ### Use arbitrary public npm feeds as upstream sources
 

@@ -1,23 +1,23 @@
 ---
-title: Customize Azure Boards to support SAFe®
+title: Customize Azure Boards to support Scaled Agile Framework (SAFe®)
 titleSuffix: Azure Boards
-description: Customize Azure Boards to support specific SAFe® practices
+description: Learn how to customize Azure Boards to support specific SAFe® practices.
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 08/31/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/20/2021
 ---
 
 
-# Customize Azure Boards to support SAFe&reg;  
+# Customize Azure Boards to support SAFe&reg; practices
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe® practices. Most of these customizations are optional. 
+The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article, you'll learn about select process customizations you can make and why you might want to make them support your Scaled Agile Framework (SAFe®) practices. Most of these customizations are optional. 
 
 Specifically, you'll learn how Azure Boards supports SAFe® practices through the following operations. 
 
@@ -57,7 +57,7 @@ For details on customizing a work item type, see [Add and manage work item types
 
 ## Add a custom field 
 
-You add a custom field to support tracking data requirements that aren't met with the existing set of fields. Some fields to consider adding to one or more work item types include those listed in the following table. 
+You add a custom field to support tracking data requirements that aren't met with the existing set of fields. Some fields to consider adding to one or more work item types include those items listed in the following table. 
 
 
 :::row:::
@@ -121,7 +121,7 @@ For details on adding a custom field, see [Add a custom field to a work item typ
 
 ### Field versus tags usage  
 
-You can capture a value stream using a field or tags. Tags represent a more informal and adhoc method for categorizing work. A specific field, particularly one with preset items, is more formal. When determining how you want to use tags and fields, consider the following: 
+You can capture a value stream using a field or tags. Tags represent a more informal and adhoc method for categorizing work. A specific field, particularly one with preset items, is more formal. When determining how you want to use tags and fields, consider the following statements: 
 
 - You can make a field required through custom rules, however, you can't require tags be added to a work item. 
 - You can create query charts based on custom fields, however, you can't specify a tag for use in query charts. 
@@ -150,7 +150,7 @@ For an index of existing fields, see [Work item field index](../work-items/guida
 
 ## Add rules to a field  
 
-Field rules provide support for a number of business use cases. Rules specify an action to take based on a selected condition. For example you can make a field required based on the value assigned to another field. You can add several rules to a field. 
+Field rules provide support for many business use cases. Rules specify an action to take based on a selected condition. For example, you can make a field required based on the value assigned to another field. You can add several rules to a field. 
 
 The following images show the supported conditions and actions you can select from. 
 
@@ -194,16 +194,16 @@ For details on setting field rules, see [Add a rule to a work item type (Inherit
 
 ## Customize the workflow
 
-You may want to customize the workflow for User Stories, Features, and Epics so that it matches your workflow process. By doing this early, you minimize the Kanban board configuration teams must do. 
+You may want to customize the workflow for User Stories, Features, and Epics so that it matches your workflow process. By customizing the workflow early, you minimize the Kanban board configuration teams must do. 
 
-The default workflow for the Agile process include *New*, *Active*, *Resolved*, and *Closed* states. While each team can add workflow columns to their Kanban board, you might want to customize the workflow to track these additional columns instead. That way the Kanban boards for all teams are set up to use the same workflow states. 
+The default workflow for the Agile process includes *New*, *Active*, *Resolved*, and *Closed* states. While each team can add workflow columns to their Kanban board, you might want to customize the workflow to track these columns instead. That way the Kanban boards for all teams are set up to use the same workflow states. 
 
 For example, you can add and rename workflow States to match the Kanban columns shown in the following image&mdash;*Backlog*, *Analyze*, *Develop*, *Test*, and *Done*.  
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board columns to visualize flow and limit WIP](../boards/media/alm_kb_board2.png)  
 
-Review with your team's what workflow states will most support their Agile practices. For additional details, review the following articles:  
+Review with your team's what workflow states will most support their Agile practices. For more details, review the following articles:  
 - [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md)  
 - [Add columns to your Kanban board](../boards/add-columns.md)  
 - [Definition of Done](../boards/definition-of-done.md)  
@@ -219,7 +219,7 @@ With custom controls, you can add rich functionality to a work item form. A cust
 You can add controls from the Marketplace or create your own. 
 
 
-- [WorkBoard OKRs](https://marketplace.visualstudio.com/items?itemName=wobo-okrs.workboard-ado-extension) Integrates WorkBoard helps organizations align, localize and measure Objectives and Key Results (OKRs) across the business. With this integration, teams can view and update their OKRs from within Azure DevOps. 
+- [WorkBoard OKRs](https://marketplace.visualstudio.com/items?itemName=wobo-okrs.workboard-ado-extension) Integrates WorkBoard helps organizations align, localize, and measure Objectives and Key Results (OKRs) across the business. With this integration, teams can view and update their OKRs from within Azure DevOps. 
 
 
 
@@ -229,7 +229,7 @@ You can add controls from the Marketplace or create your own.
 
 The User Story, Feature, and Epic work item types are meant to support product planning and tracking. However, other work item types might be useful to support your SAFe® organization's customer-centric focus. Specifically, you might want to add work items to capture customer feedback, customer requests, and more. 
 
-When defining a new work item type, think through the following: 
+When defining a new work item type, think through the following items: 
 - Information you want to capture, track, and report on 
 - How work will be captured 
 - The workflow to support tracking the work
@@ -249,7 +249,7 @@ Each team's backlog and board is designed to support specific work item types. F
 
 However, you can add other work item types, existing or custom, to these backlogs. Each team can subscribe to the set of backlogs that they need to track. 
 
-Also, you can add up to three additional portfolio backlogs as shown in the following illustration. Portfolio backlogs are designed to be hierarchical. For SAFe, you may want to add a Solution Backlog that appears as a parent to the Epic backlog. 
+You can also add up to three more portfolio backlogs as shown in the following illustration. Portfolio backlogs are designed to be hierarchical. For SAFe, you may want to add a Solution Backlog that appears as a parent to the Epic backlog. 
 
 > [!div class="mx-imgBorder"]  
 > ![Additional portfolio backlogs](../../organizations/settings/work/media/process/portfolio-backlogs-modified.png)  
@@ -260,7 +260,7 @@ For details on customizing backlogs, see [Customize your backlogs or boards (Inh
 
 ## Add even more functionality 
 
-You add the following Marketplace extensions to get access to a number of rich features that support SAFe. 
+You add the following Marketplace extensions to get access to many rich features that support SAFe. 
 
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
@@ -277,7 +277,7 @@ You add the following Marketplace extensions to get access to a number of rich f
 
 ## Related articles
 
-Prior to customizing your project, we recommend you read the [Configure and customize Azure Boards](../configure-customize.md). It provides detailed information on administrating a project for several teams and supporting various business objectives.  
+Before customizing your project, we recommend you read the [Configure and customize Azure Boards](../configure-customize.md). It provides detailed information on administrating a project for several teams and supporting various business objectives.  
 
 See also: 
 
