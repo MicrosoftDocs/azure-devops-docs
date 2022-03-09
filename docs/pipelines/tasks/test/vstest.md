@@ -121,7 +121,7 @@ Data-driven tests that use xUnit and NUnit test frameworks have some known limit
 
 The above limitations are because of how the adapters for these test frameworks discover and report data-driven tests.
 
-### Does the Vstest task support running tests targeting multiple target frameworks at a time?
+### Does the VsTest task support running tests that target multiple target frameworks at a time?
 
-The VsTest task does not support running tests targeting multiple target frameworks at a time as this is a limitation from the [vstest platform](https://github.com/microsoft/vstest/issues/2310) side.
-If you want to run tests belonging to multiple target frameworks you'll need to have multiple instances of the vstest task, one per set of dlls targeting a particular framework.
+The VsTest task doesn't support running tests that target multiple target frameworks at a time as this is a limitation from the [vstest platform](https://github.com/microsoft/vstest/issues/2310) side.
+If you want to run tests that belong to multiple target frameworks, you'll need multiple instances of the vstest task, one per set of dlls that target a particular framework.
