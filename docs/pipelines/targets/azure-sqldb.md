@@ -173,7 +173,7 @@ steps:
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
 - task: CmdLine@1
