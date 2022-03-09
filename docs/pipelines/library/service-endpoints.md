@@ -201,13 +201,13 @@ The user who created the service connection is automatically added as an organiz
 
 ### Pipeline permissions
 
-Pipeline permissions control which YAML pipelines are authorized to use the service connection.
+Pipeline permissions control which YAML pipelines are authorized to use the service connection.  Pipeline permissions do not restrict access from Classic pipelines.
 
 You can choose from the following options:
 
 * Open access for all pipelines to consume the service connection from the more options at top-right corner of the **Pipeline permissions** section in security tab of a service connection.
 
-* Lock down the service connection and only allow selected YAML pipelines to consume the service connection. If any other YAML pipeline refers to the service connection, an authorization request gets raised, which must be approved by a connection Administrator.
+* Lock down the service connection and only allow selected YAML pipelines to consume the service connection. If any other YAML pipeline refers to the service connection, an authorization request gets raised, which must be approved by a connection Administrator.  This does not limit access from Classic pipelines.
 
 ![Azure Resource Manager pipeline permissions](../release/_img/azure-rm-endpoint/azure-rm-pipeline-permissions.png)
 
