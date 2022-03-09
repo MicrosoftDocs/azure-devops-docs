@@ -1,7 +1,5 @@
 ### YamlMime:ZonePivotGroups
 groups:
-# Owner: jukullam
-# One-off groups
 - id: pipelines-version
   title: Pipelines version
   prompt: Choose a Pipelines version
