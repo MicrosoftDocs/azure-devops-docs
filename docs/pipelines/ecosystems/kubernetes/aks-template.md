@@ -1,11 +1,11 @@
 ---
-title: Deploy to Azure Kubernetes Service
-description: Build and push images to Azure Container Registry; Deploy to Azure Kubernetes Service
+title: Deploy to Azure Kubernetes Service with Azure Pipelines
+description: Build and push images to Azure Container Registry; Deploy to Azure Kubernetes Service with Azure Pipelines
 ms.topic: tutorial
 ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -19,11 +19,9 @@ In this article, you'll learn how to create a pipeline that continuously builds 
 
 ## Prerequisites
 
-* [Create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security). The service connection is required to deploy to Azure Kubernetes Service.    
-
-[!INCLUDE [include](../../includes/prerequisites.md)]
-
-[!INCLUDE [include](../../includes/azure-prerequisites.md)]
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An Azure Resource Manager service connection. [Create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security).     
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
 
 ## Get the code
 
@@ -63,7 +61,8 @@ az aks create \
 
 
 ## Create the pipeline
-### Connect and select repository
+
+### Connect and select your repository
 [!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service**. 
@@ -96,7 +95,7 @@ When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service*
 
 10. You can change the **Commit message** to something like _Add pipeline to our repository_. When you're ready, select **Save and run** to commit the new pipeline into your repo, and then begin the first run of your new pipeline!
 
-## See the pipeline run, and your app deployed
+## See your app deploy
 
 As your pipeline runs, watch as your build stage, and then your deployment stage, go from blue (running) to green (completed). You can select the stages and jobs to watch your pipeline in action.
 
@@ -122,9 +121,9 @@ If you're building our sample app, then _Hello world_ appears in your browser.
 
 <a name="how"></a>
 
-## How we build your pipeline
+## How the pipeline builds
 
-When you finished selecting options and then proceeded to validate and configure the pipeline (see above) Azure Pipelines created a pipeline for you, using the _Deploy to Azure Kubernetes Service_ template.
+When you finished selecting options and then proceeded to validate and configure the pipeline Azure Pipelines created a pipeline for you, using the _Deploy to Azure Kubernetes Service_ template.
 
 The build stage uses the [Docker task](../../tasks/build/docker.md) to build and push the image to the Azure Container Registry.
 
@@ -164,7 +163,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
     displayName: Deploy job
     pool:
       vmImage: $(vmImageName)
-    environment: 'azooinmyluggagepipelinesjavascriptdocker.aksnamespace'
+    environment: 'myenv.aksnamespace' #customize with your environment
     strategy:
       runOnce:
         deploy:

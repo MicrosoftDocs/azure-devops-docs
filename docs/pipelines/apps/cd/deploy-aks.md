@@ -1,28 +1,34 @@
 ---
-title: Deploy a Docker container app to an Azure Kubernetes Service cluster
+title: (Classic) Deploy a Docker container app to an Azure Kubernetes Service cluster
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid: 
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/07/2021
+ms.date: 03/09/2022
 monikerRange: '> tfs-2018'
 ---
 
-# Deploy a Docker container app to Azure Kubernetes Service
+# (Classic) Deploy a Docker container app to Azure Kubernetes Service
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-We'll show you how to set up continuous deployment of your containerized application to an Azure Kubernetes Service (AKS) using
-Azure Pipelines.
+Learn how to create a pipeline that continuously deploys a containerized application to [Azure Kubernetes Service (AKS)](/azure/aks/) with Azure Pipelines.
 
-After you commit and push a code change, it will be automatically built and deployed to the target Kubernetes cluster.
+After you commit and push a code change, your application will be automatically built and deployed to the target Kubernetes cluster.
 
+
+## Prerequisites
+
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An existing CI pipeline for for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+* An [Azure Container Registry](/azure/container-registry/container-registry-intro). [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
 
 ## Get the code
 
-If you want some sample code that works with this guidance, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps), or fork (into GitHub), the following repository, based on the desired runtime.
+Fork the following repository containing a sample application, based on the desired runtime:
 
 #### [Java](#tab/java)
 
@@ -55,14 +61,6 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 * * *
 
 
-## Define your CI build process
-
-Set up a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
-
-## Prerequisites
-
-You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
-
 ## Create an AKS cluster to host your app
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
@@ -90,7 +88,7 @@ you must establish an authentication mechanism. This can be achieved in two ways
 The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry.
 It also packaged and published a Helm chart as an artifact. In the release pipeline, we'll deploy the container image as a Helm application to the AKS cluster.
 
-1. In **Azure Pipelines**, or the **Build &amp; Release** hub in TFS, open the summary for your build.
+1. In **Azure Pipelines** open the summary for your build.
 
 1. In the build summary, choose the **Release** icon to start a new release pipeline.
 
