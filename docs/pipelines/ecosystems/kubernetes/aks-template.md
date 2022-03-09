@@ -212,64 +212,49 @@ Type `y` when prompted.
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-Learn how to create a pipeline that continuously deploys a containerized application to [Azure Kubernetes Service (AKS)](/azure/aks/) with Azure Pipelines.
+[Azure Kubernetes Service (AKS)](/azure/aks/) manages your hosted Kubernetes environment, making it quicker and easier for you to deploy and manage containerized applications. AKS makes ongoing maintenance easier by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
 
-After you commit and push a code change, your application will be automatically built and deployed to the target Kubernetes cluster.
-
+In this article, you'll learn how to create a pipeline that continuously builds and deploys your app. Every time you change your code in a repository that contains a Dockerfile, the images are pushed to your Azure Container Registry, and the manifests are then deployed to your AKS cluster.
 
 ## Prerequisites
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* An existing CI pipeline for for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
+* An Azure Resource Manager service connection. [Create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security).     
 * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-* An [Azure Container Registry](/azure/container-registry/container-registry-intro). [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
+
 
 ## Get the code
 
-Fork the following repository containing a sample application, based on the desired runtime:
 
-#### [Java](#tab/java)
-
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/spring-guides/gs-spring-boot-docker.git
-```
-#### [JavaScript](#tab/javascript)
-
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
+Fork the following repository containing a sample application and a Dockerfile:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
-#### [Python](#tab/python)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
+## Create the Azure resources
 
+[!INCLUDE [include](../includes/sign-in-azure-cli.md)]
+
+### Create a container registry
+
+```azurecli-interactive
+# Create a resource group
+az group create --name myapp-rg --location eastus
+
+# Create a container registry
+az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
+
+# Create a Kubernetes cluster
+az aks create \
+    --resource-group myapp-rg \
+    --name myapp \
+    --node-count 1 \
+    --enable-addons monitoring \
+    --generate-ssh-keys \
+    --kubernetes-version 1.16.10
 ```
-https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
-```
-#### [.NET Core](#tab/dotnet-core)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
-```
-* * *
-
-
-## Create an AKS cluster to host your app
-
-1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
-
-1. In the Azure portal, choose **Create a resource**, **New**, **Containers**, then choose **Kubernetes Service**.    
-
-1. Select or create a new Resource Group, enter name for your new Kubernetes Service cluster and DNS name prefix.
-
-1. Choose **Review + Create** and then, after validation, choose **Create**.
-
-1. Wait until the new AKS cluster has been created.
 
 ## Configure authentication
 
