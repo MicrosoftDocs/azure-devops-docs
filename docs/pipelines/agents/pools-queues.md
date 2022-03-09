@@ -1,5 +1,5 @@
 ---
-title: Agents pools
+title: Create and manage agent pools
 ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
@@ -8,7 +8,7 @@ ms.date: 12/01/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Agent pools
+# Create and manage agent pools
 
 [!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="<= tfs-2018"
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
+An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
 
 An **agent queue** provides access to an **agent pool** within a project. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer, so you can only use them across build and release pipelines within a project.
 
@@ -42,11 +42,21 @@ Agent pools are scoped to project collections.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="= azure-devops"
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In Azure Pipelines, pools are scoped to the entire organization; so you can share the agent machines across projects. In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections.
+An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](../process/demands.md) of the pipeline.
 
-When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify which pool the pipeline uses. When you run the pipeline, it runs on an agent from that pool that meets the [demands](../process/demands.md) of the pipeline.
+::: moniker-end
+
+::: moniker range="= azure-devops"
+
+In Azure Pipelines, pools are scoped to the entire organization; so you can share the agent machines across projects. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections. 
 
 ::: moniker-end
 
@@ -77,8 +87,6 @@ If you are a project team member, you create and manage agent queues from the ag
 
 [!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
-
-
 ## Default agent pools
 
 The following agent pools are provided by default:
@@ -97,7 +105,7 @@ By default, all contributors in a project are members of the **User** role on ho
 
 ::: moniker-end
 
-### Choosing a pool and agent in your pipeline
+## Designate a pool in your pipeline
 
 # [YAML](#tab/yaml)
 
@@ -124,7 +132,7 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 * * *
 
-### Managing pools and queues
+### Manage pools and queues
 
 #### [Browser](#tab/browser)
 
@@ -340,7 +348,7 @@ Pools are used to run jobs. Learn about [specifying pools for jobs](../process/p
 
 If you've got a lot of self-hosted agents intended for different teams or purposes, you might want to create additional pools as explained below.
 
-## Creating agent pools
+## Create agent pools
 
 Here are some typical situations when you might want to create self-hosted agent pools:
 
