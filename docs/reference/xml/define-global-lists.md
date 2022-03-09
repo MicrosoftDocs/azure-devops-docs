@@ -7,6 +7,7 @@ ms.custom: process
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 05/23/2017
 ---
@@ -14,7 +15,7 @@ ms.date: 05/23/2017
 
 # Define global lists  
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 > This article applies to project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Process template customization differences](../../organizations/settings/work/import-process/differences.md).
@@ -32,7 +33,7 @@ You can share list items among several WITs for a collection by including the li
 > [!NOTE]    
 >There are no system-defined nor predefined global lists specified in the default processes or process templates provides.  
 
-**Requirements**  
+## Prerequisites
 
 For the project collection where the global lists are defined, you must have the following permissions set:  
 
@@ -42,7 +43,8 @@ For the project collection where the global lists are defined, you must have the
 
 To add or modify a global list, use the **witadmin** command-line tool to import and export the definition for global lists. See [Manage global lists](../witadmin/manage-global-lists-for-work-item-types.md). To use a global list, add it to the `FIELD` definition within a work item type. See [All FIELD elements](field-definition-element-reference.md).  
 
-<a name="add-manage"></a>   
+<a name="add-manage"></a>  
+ 
 ##  Add and manage global lists  
 
 A global list is a set of `LISTITEM` elements that is stored and used globally by all projects in a collection. Global lists are useful for fields that are defined within several types of work items, such as Operating System, Found in Build, and Fixed in Build.  
@@ -66,39 +68,50 @@ You can define one or more global lists and their items by using one of the foll
 
 The following table describes the **GLOBALLIST** and **LISTITEM** elements. You can use these elements to enumerate a list of values that is presented to the user as a pick list or drop-down menu of items.  
 
-<table width="80%">
-<thead>
-<tr>
-<th width="15%"><p>Element</p></th>
-<th width="95%"><p>Description</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p><strong>GLOBALLIST</strong></p></td>
-<td><p>Defines a set of <strong>LISTITEM</strong> elements that are stored for a collection and that all projects in a collection can use.</p>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<code>
-&#60;GLOBALLIST name=&quot;globalListName&quot;&#62;<br/>    &#60;LISTITEM&#62; . . . &#60;/LISTITEM&#62;<br/>&#60;/GLOBALLIST&#62;<br/></code>
+:::row:::
+   :::column span="1":::
+   **GLOBALLIST**
 
-<p><em>globalListName</em>: A string of text that contains between 1 and 255 characters.</p>
-<p><strong>GLOBALLIST</strong> is a required child element of the <strong>GLOBALLISTS</strong> element and an optional child element of the <code>ALLOWEDVALUES</code>, <code>SUGGESTEDVALUES</code>, and <code>PROHIBITEDVALUES</code> elements. For more information, see <a href="define-pick-lists.md" data-raw-source="[ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md)">ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements</a>.</p>
+   :::column-end:::
+   :::column span="3":::
+   Defines a set of **LISTITEM** elements that are stored for a collection and that all projects in a collection can use.
 
-</td>
-</tr>
-<tr>
-<td><p><strong>LISTITEM</strong></p></td>
-<td><p>Defines a valid list value. Global lists must not include project-scoped groups because they are not scoped to a project.</p>
 
-<code>&#60;LISTITEM value="Name" /&#62;
-</code>
+   ```
+   <GLOBALLIST name="globalListName">  
+   <LISTITEM> . . . </LISTITEM>  
+   </GLOBALLIST>
+   ```
+   *globalListName*: A string of text that contains between 1 and 255 characters. 
 
-<p><strong>LISTITEM</strong> is a required child element of <strong>GLOBALLIST</strong> and an optional child element of the <code>ALLOWEDVALUES</code>, <code>SUGGESTEDVALUES</code>, and <code>PROHIBITEDVALUES</code> elements.</p>
+   **GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. For more information, see [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md).
+   :::column-end:::
+:::row-end:::
 
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **LISTITEM**
+
+   :::column-end:::
+   :::column span="3":::
+   Defines a valid list value. Global lists must not include project-scoped groups because they are not scoped to a project.
+
+   ```
+   <LISTITEM value="Name" />
+   ```
+
+   **LISTITEM** is a required child element of **GLOBALLIST** and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements.
+   :::column-end:::
+:::row-end:::
 
 <a name="SyntaxWITD"></a> 
 
@@ -135,6 +148,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 For information about the structure and location of definition files for types of work items or global workflow, see [All WITD elements](all-witd-xml-elements-reference.md) or [GLOBALWORKFLOW](global-workflow-xml-element-reference.md), respectively.  
 
 <a name="project-collection"></a>   
+
 ## Sample global list maintained for a project collection  
 
 To add a global list to a project collection, you can import the following syntax by using the **witadmin importgloballist** command:  
@@ -161,7 +175,8 @@ To add a global list to a project collection, you can import the following synta
 - [Customize work tracking](../customize-work.md)
 
 ### Are any global lists auto-populated with data?  
-Yes for on-premises TFS. The global list named **Builds**.*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
+
+Yes for on-premises Azure DevOps Server. The global list named **Builds**.*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
 
 To learn more about using this list, see [Query based on build and test integration fields](../../boards/queries/build-test-integration.md).  
 

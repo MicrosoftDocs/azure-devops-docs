@@ -1,24 +1,23 @@
 ---
 title: OData API versioning
 titleSuffix: Azure DevOps 
-description: How Analytics for Azure DevOps manages changes to the OData API  
-ms.technology: devops-analytics
-ms.reviewer: prprice
+description: Learn how Analytics for Azure DevOps manages changes to the OData API.
+ms.technology: devops-analytics 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/30/2020
 ---
 
 # OData API versioning
 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-As Analytics grows we are dedicated to providing consistency and reliability to our users. Therefore Analytics for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
+As Analytics grows, we're dedicated to providing consistency and reliability to our users. As such, Analytics for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with more functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
-The API version follows the _odata element in the request path and has value as one of our supported versions: **v1.0**, **v2.0** or **v3.0-preview**.
+The API version follows the _odata element in the request path and has value as one of our supported versions: **v1.0**, **v2.0**, **v3.0-preview**, or **v4.0-preview**.
 
 ::: moniker range="azure-devops"
 
@@ -43,12 +42,13 @@ The API version follows the _odata element in the request path and has value as 
 
 ## Preview versions
 
-<strong>v3.0-preview</strong>
+- **v3.0-preview** 
+- **v4.0-preview** 
 
 ## Released versions
 
-<strong>v1.0</strong>  
-<strong>v2.0</strong>
+- **v1.0**
+- **v2.0**
 
 ## Entity sets supported in each version
 
@@ -59,27 +59,25 @@ For information on which EntitySets are supported with each API version, see [Da
 
 Each version of the OData API will go through three phases during its lifecycle. 
 
-### 1 - Preview
+### Preview
 
-All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible, we will release new versions in **preview** mode. Breaking changes are still possible while a version is in preview mode. Also, there is no guarantee that what is included in a preview version will be included in a released version.
+All breaking changes will be combined and released together in future versions of the API. To make this functionality available as early as possible, well release new versions in **preview** mode. Breaking changes are still possible while a version is in preview mode. Also, there's no guarantee that what is included in a preview version will be included in a released version.
 
-The preview of a version will be available for a minimum of 6 weeks after it is released.
+The preview of a version will be available for a minimum of six weeks after it's released.
 
-### 2 - Released
+### Released
 
-Once a preview version matures enough for release it will be made available without the -preview suffix. No breaking changes will be introduced to released versions, but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. 
+Once a preview version matures enough for release, it will be made available without the **-preview** suffix. No breaking changes will be introduced to released versions, but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. 
 
-### 3 - Deprecated
+### Deprecated
 
-Deprecated versions are no longer supported, and requests made to them will not be fulfilled. If you attempt to request a deprecated or unsupported version you will receive an HTTP 410 response code and a message like:
+Deprecated versions are no longer supported. Requests made to a deprecated version won't be fulfilled. If you attempt to request a deprecated or unsupported version, you'll receive an HTTP 410 response code and a message like:
 
 > *The {version} OData endpoint for Analytics is not supported. Information on the latest recommended version is available here: https://go.microsoft.com/fwlink/?linkid=856818*
-
-
-
+ 
 ## Breaking vs non-breaking changes
 
-The data model exposed by Analytics defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model, so breaking changes will be introduced in future versions. For more information see the OData spec: 
+The data model exposed by Analytics defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model. Breaking changes will be introduced in future versions. For more information, see 
 [OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
 
 > [!NOTE]  

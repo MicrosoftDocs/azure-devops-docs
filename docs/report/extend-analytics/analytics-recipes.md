@@ -1,19 +1,19 @@
 ---
 title: Analytics basic queries
 titleSuffix: Azure DevOps  
-description: Examples of how to create queries of work item tracking from Analytics for Azure DevOps
+description: Learn how to create queries of work item tracking from Analytics for Azure DevOps.
 ms.technology: devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/1/2018
+ms.date: 09/30/2020
 ---
 
 # Query work tracking data using Analytics  
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of 
 Analytics. You can adapt most of these queries to meet your needs.
@@ -61,11 +61,11 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
-This query will fail when the user does not have access to all the projects. Read more about [project and organization-scoped queries](account-scoped-queries.md).
+This query will fail when the user doesn't have access to all the projects. Read more about [project and organization-scoped queries](account-scoped-queries.md).
 
-## Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration
+## Retrieve all work items for a given iteration
 
-Here your query is constrained by data contained within the work tracking data. 
+You can retrieve all work items for a given iteration that fall between the first day of the iteration and the last day of the iteration. Here, your query is constrained by data contained within the work tracking data.
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
@@ -79,9 +79,9 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ## Retrieve all work items with a specific tag 
 
-Note that the **any** operator is used here because there are a collection of tags that can be associated with a work item.
-From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by curly brackets ({}) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
-but following this format keeps it simple.
+The **any** operator is used here because there are a collection of tags that can be associated with a work item.
+From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by curly brackets ({}) is a literal. There are some variations. For example, you don't have to use "d" as used in the expression above.
+Following this format keeps it simple.
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?

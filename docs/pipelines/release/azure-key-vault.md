@@ -2,7 +2,7 @@
 title: Use Azure Key Vault secrets in Azure Pipelines
 description: How to create Azure Key vaults, store secrets, and use those secrets in your Azure Pipelines
 ms.topic: tutorial
-ms.date: 02/16/2021
+ms.date: 10/14/2021
 ms.custom: contperf-fy21q3, devx-track-azurecli
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use Azure Key Vault secrets in Azure Pipelines
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 > [!NOTE]
 > This article will guide you through working with Azure key vault in your pipeline. if you want to set secret variables or reference variable groups, see [Define variables](../process/variables.md#secret-variables) for more details.
@@ -41,31 +41,31 @@ Azure key vaults can be created and managed through the Azure portal or Azure CL
 
 1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
 
-    ```Command
+    ```azurecli
     az account set --subscription <your_subscription_name_or_ID>
     ```
 
 1. Run the following command to set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
 
-    ```Command
+    ```azurecli
     az config set defaults.location=<your_region>
     ```
 
     For example, this command will select the westus2 region:
 
-    ```Command
+    ```azurecli
     az config set defaults.location=westus2
     ```
 
 1. Run the following command to create a new resource group. A resource group is a container that holds related resources for an Azure solution.
 
-    ```Command
+    ```azurecli
     az group create --name <your-resource-group>
     ```
    
 1. Run the following command to create a new key vault.
 
-    ```Command
+    ```azurecli
     az keyvault create \
       --name <your-key-vault> \
       --resource-group <your-resource-group>
@@ -73,7 +73,7 @@ Azure key vaults can be created and managed through the Azure portal or Azure CL
 
 1. Run the following command to create a new secret in your key vault. Secrets are stored as a key value pair. In the example below, *Password* is the key and *mysecretpassword* is the value. 
 
-    ```Command
+    ```azurecli
     az keyvault secret set \
       --name "Password" \
       --value "mysecretpassword" \
@@ -214,14 +214,15 @@ In order to access our Azure Key Vault, we must first set up a service principal
 1. The text file should contain our secret: *mysecretpassword* from earlier.
 
 > [!WARNING]
-> This tutorial is for For educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 If you encounter an error indicating that the user or group does not have secrets list permission on key vault, run the following commands to authorize your application to access the key or secret in the Azure Key Vault:
 
 ```Command
 $ErrorActionPreference="Stop";
-Login-AzureRmAccount -SubscriptionId your-subscription-ID;
-$spn=(Get-AzureRmADServicePrincipal -SPN service-principal-ID);
+$Credential = Get-Credential;
+Connect-AzAccount -SubscriptionId <YOUR_SUBSCRIPTION_ID> -Credential $Credential;
+$spn=(Get-AzureRmADServicePrincipal -SPN <YOUR_SERVICE_PRINCIPAL_ID>);
 $spnObjectId=$spn.Id;
 Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
 ```
@@ -234,7 +235,7 @@ Follow the steps below to delete the resources you created:
 
 1. All Azure resources created during this tutorial are hosted under a single resource group *PipelinesKeyVaultResourceGroup*. Run the following command to delete the resource group and all of its resources.
 
-    ```Command
+    ```azurecli
     az group delete --name PipelinesKeyVaultResourceGroup
     ```
 

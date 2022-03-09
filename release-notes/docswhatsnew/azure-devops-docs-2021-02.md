@@ -120,7 +120,7 @@ The following people contributed to the Azure DevOps docs during this period. Th
 - [Jaykul](https://github.com/Jaykul) - Joel Bennett (1)
 - [JFolberth](https://github.com/JFolberth) (1)
 - [mattboothman](https://github.com/mattboothman) - Matt Boothman (1)
-- [mdgrotheer](https://github.com/mdgrotheer) - Matthew Grotheer (1)
+- [mgrotheer](https://github.com/mgrotheer) - Matthew Grotheer (1)
 - [nkramer](https://github.com/nkramer) - Nick Kramer (1)
 - [rickpetersen](https://github.com/rickpetersen) (1)
 - [stefkiourk](https://github.com/stefkiourk) - Stef Ki (1)

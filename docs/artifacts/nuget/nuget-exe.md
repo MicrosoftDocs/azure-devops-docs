@@ -1,89 +1,76 @@
 ---
-title: Use NuGet with Azure DevOps Services feeds
-description: Authenticating to feeds with NuGet in Azure DevOps Services
+title: Connect to a feed - NuGet.exe
+description: How to connect to an Azure Artifacts feed
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 10/18/2021
 monikerRange: '>= tfs-2018'
 ---
 
-# Use NuGet with Azure DevOps Services feeds
+# Connect to Azure Artifacts feeds
 
-**Azure DevOps Services**
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 [!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 
-## Add a feed to NuGet 4.8.2 or later
-NuGet 4.8.2 and later supports the Azure Artifacts Credential Provider, which automatically acquires feed credentials when needed. For more information on using credential providers with NuGet, see [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
+## Project setup (NuGet 4.8.2 or later)
 
-1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
-
-2. Select **Connect to feed**:
+1. Select **Artifacts** and then select your feed.
 
 ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
-   > 
+2. Select **Connect to feed**.
 
-3. Select **NuGet.exe** under the **NuGet** header
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing the connect to feed button":::
 
-4. Select **Get the tools** in the top-right corner
+3. Select **NuGet.exe** from the left panel.
 
-5. Follow steps **1** and **2** to download the latest NuGet version and the credential provider.
+4. If this is your first time using Azure Artifacts with NuGet.exe, select **Get the tools** in the top-right corner and follow the instructions to set up the credential provider and NuGet. 
 
-6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.
+5. Follow the instructions in the **Project setup** to set up your config file.
 
-   > [!div class="mx-imgBorder"] 
-   >![NuGet publish instructions in the Connect to feed](../media/nuget-azure-devops-newnav.png)
-   > 
-
-   > [!NOTE]
-   > You can also paste the **Project setup** XML snippet in your default nuget.config file to use outside of a project.
+   :::image type="content" source="../media/nuget-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project's config file":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-   ![Connect to feed button in the upper right of the page](../media/connect-to-feed.png)
+2. Select **Connect to feed**.
 
-3. Follow steps 1, 2, and 3 to get the tools, add the feed to your local NuGet configuration, and push the package.
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing the connect to feed button in TFS":::
 
-   ![NuGet publish instructions in the Connect to feed dialog](../media/nugeturl.png)
+3. Follow the highlighted steps to get the tools, add the feed to your local NuGet configuration, and push your package.
 
-   ::: moniker-end
-
-::: moniker range="<= tfs-2018 || azure-devops"
-
-## Add a feed to NuGet 2
-
+    :::image type="content" source="../media/nugeturl.png" alt-text="Screenshot showing how to push your package using NuGet.exe in TFS":::
+   
 ::: moniker-end
+
+> [!NOTE]
+> Azure Artifacts Credential Provider is supported in NuGet version 4.8.2 or later. See [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider) for more information.
+
 
 ::: moniker range="azure-devops"
 
-NuGet 2 uses Personal Access Tokens to access feeds.
+## Project setup (NuGet 2)
 
-To use a 2.x client, first get the v3 feed URL: 
+With NuGet version 2, you must use a Personal Access Tokens to authenticate to your feed. To do so, we must first get the package source URL:
 
-1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
+1. Select **Artifacts** and then select your feed. 
 
-2. Select **Connect to feed**:
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing the connect to feed button":::
+
+1. Select **NuGet.exe** from the left panel.
    
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in the upper-right of the page](../media/connect-to-feed-azure-devops-newnav.png)
-   > 
-3. Copy the NuGet package source URL:
+1. Copy your package source URL, and then replace `/v3/index.json` with `/v2`.
 
-   > [!div class="mx-imgBorder"] 
-   >![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url-azure-devops-newnav.png)
-   > 
+    :::image type="content" source="../media/nuget-consume-url-azure-devops-newnav.png" alt-text="Screenshot showing the source URL":::
 
-Then replace `/v3/index.json` with `/v2`. 
+1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat). Scope your PAT to the organization(s) you want to access and to one of the following scopes: Packaging (read), Packaging (read and write), or Packaging (read, write, and manage).
 
-[!INCLUDE [generate-pat](../includes/generate-pat.md)]
-
-Run the following command in an elevated command prompt window to add a NuGet package source:
+Run the following command in an elevated command prompt window to add your package source:
 
 ```Command
 nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
@@ -99,28 +86,23 @@ nuget setapikey <Personal_Access_Token> -source <Feed_URL>
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-NuGet 2 uses Personal Access Tokens to access feeds.
+## Project setup (NuGet 2)
 
-To use a 2.x client, first get the v3 feed URL: 
+With NuGet version 2, you must use a Personal Access Tokens to authenticate to your feed. To do so, we must first get the feed URL:
 
-1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
+1. Navigate to your feed, and then select **Connect to feed**.
 
-2. Select **Connect to feed**:
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot of the connect to feed button in TFS":::
 
-   ![Connect to feed button in the upper-right of the page](../media/connect-to-feed.png)
+1. Select **NuGet** and then copy your NuGet package source URL. Replace `/v3/index.json` with `/v2`. 
 
-3. Copy the NuGet package source URL:
+    :::image type="content" source="../media/nuget-consume-url.png" alt-text="Screenshot showing how to get the package source URL":::
 
-   ![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url.png)
+1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat). Scope your PAT to the organization(s) you want to access and to one of the following scopes: Packaging (read), Packaging (read and write), or Packaging (read, write, and manage).
 
-   
-Then replace `/v3/index.json` with `/v2`. 
-
-[!INCLUDE [generate-pat](../includes/generate-pat.md)]
-
-Run the following command in an elevated command prompt window to add a NuGet package source:
+Run the following command in an elevated command prompt window to add your package source:
 
 ```Command
 nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
@@ -135,3 +117,9 @@ nuget setapikey <Personal_Access_Token> -source <Feed_URL>
 ```
 
 ::: moniker-end
+
+## Related articles
+
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Publish a NuGet package using the command line](./publish.md)
+- [NuGet.org upstream source](./upstream-sources.md)

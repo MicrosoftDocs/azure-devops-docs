@@ -4,13 +4,13 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 07/29/2021
+ms.date: 12/01/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Create and manage agent pools
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -113,7 +113,7 @@ To choose a Microsoft-hosted agent from the Azure Pipelines pool in your Azure D
 
 ```yaml
 pool:
-  vmImage: ubuntu-latest
+  vmImage: ubuntu-latest # This is the default if you don't specify a pool or vmImage.
 ```
 
 To use a private pool with no demands:
@@ -122,11 +122,11 @@ To use a private pool with no demands:
 pool: MyPool
 ```
 
-For more information, see the [YAML schema](../yaml-schema.md) for [pools](../yaml-schema.md#pool).
+For more information, see the [YAML schema](/azure/devops/pipelines/yaml-schema) for [pools](/azure/devops/pipelines/yaml-schema/pool).
 
 # [Classic](#tab/classic)
 
-To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down. For more information about the software installed on the Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this](hosted.md#use-a-microsoft-hosted-agent) table.
+To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down. The default **Agent Specification** is *windows-2019*. For more information about the software installed on the Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
 ![Select Agent pool and choose the desired agent](media/agent-pool-classic.png)
 
@@ -244,7 +244,7 @@ az pipelines pool show --id 4
 }
 ```
 
-You can also use `--output table` which returns the same information as the `list` command.
+You can also use `--output table` that returns the same information as the `list` command.
 
 ```azurecli
 az pipelines pool show --id 4 --output table
@@ -270,7 +270,7 @@ az pipelines queue list [--action {manage, none, use}]
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **queue-name**: Filter the list with matching queue name regex. e.g. *ubuntu* for queue with name 'Hosted Ubuntu 1604'.
+- **queue-name**: Filter the list with matching queue name regex, e.g., *ubuntu* for queue with name 'Hosted Ubuntu 1604'.
 
 #### Example
 
@@ -462,6 +462,14 @@ Select **Maintenance History** to see the maintenance job history for the curren
 :::moniker-end
 
 The maintenance is done per agent pool, not per machine; so if you have multiple agent pools on a single machine, you may still run into disk space issues.
+
+### The maintenance job of my self-hosted agent pool looks stuck. Why?
+
+Typically, a maintenance job gets "stuck" when it's waiting to run on an agent that is no longer in the agent pool. This happens when, for example, the agent has been purposefully taken offline or when there are issues communicating with it.
+
+Maintenance jobs that have been queued to run will wait seven days to run. Afterward, they'll be automatically canceled if not run. The limit is hardcoded in the system and cannot be changed. 
+
+The seven-day limit is different from the _maintenance job timeout_ setting. The latter controls the maximum number of minutes an agent can spend doing maintenance. The timer starts when the job starts, not when the job is queued on an agent.
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 

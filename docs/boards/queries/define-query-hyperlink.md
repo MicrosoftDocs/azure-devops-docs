@@ -1,7 +1,7 @@
 ---
-title: Define query as a hyperlink
+title: Define a query as a hyperlink in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
-description: Construct a URL for a query in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Learn how to construct a hyperlink for use in a query in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.article:   
@@ -13,9 +13,9 @@ monikerRange: '<= azure-devops'
 ms.date: 01/25/2021
 ---
 
-# Define a query as a hyperlink  
+# Define a query as a hyperlink in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="define-query-hyperlink" />  
 
@@ -32,7 +32,7 @@ A query hyperlink uses the Work Item Query Language (WIQL), which resembles Tran
 
 ## Query hyperlink syntax for Azure DevOps Services
 
-You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
+Encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
 ```  
 https://dev.azure.com/OrganizationName/ProjectName/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}

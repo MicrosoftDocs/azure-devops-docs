@@ -132,7 +132,7 @@ On the package list, you can now see the view(s) of each package version to quic
 
 ### Link to packages from anywhere
 
-Although you could share the URL to a package found in the **Packages** hub in the past, it was often difficult to use because you needed to include a project in the URL, which may or may not apply to those using the link. With this Update, you can now share packages using an account-level URL that will automatically select a project the recipient has access to. The URL format is: `https://<account>.visualstudio.com/_packaging?feed=<feed>&package=<package>&version=<version>&protocolType=<NuGet|Npm|Maven>&_a=package` All parameters except `<account>` are optional, but if you provide a package, you must provide the protocol type.
+Although you could share the URL to a package found in the **Packages** hub in the past, it was often difficult to use because you needed to include a project in the URL, which may or may not apply to those using the link. With this Update, you can now share packages using an account-level URL that will automatically select a project the recipient has access to. The URL format is: `https://<account>.visualstudio.com/_packaging?feed=<feed>&package=<package>&version=<version>&protocolType=<NuGet|npm|Maven>&_a=package` All parameters except `<account>` are optional, but if you provide a package, you must provide the protocol type.
 
 ### Share your packages using a badge
 
@@ -165,7 +165,7 @@ If you are managing permissions through Azure Active Directory (Azure AD) group 
 
 ### Manage users with Graph REST APIs Public Preview
 
-The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Azure Active Directory (Azure AD) user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](https://visualstudio.microsoft.com/docs/integrate/api/graph/overview) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
+The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Azure Active Directory (Azure AD) user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](/azure/devops/integrate/) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
 
 ### Leave account
 

@@ -1,51 +1,55 @@
 ---
-title: Publish a Power BI Desktop file to PowerBI.com  
+title: Publish a Power BI Desktop file to Power BI  
 titleSuffix: Azure DevOps 
-description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses Analytics for Azure DevOps 
+description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps. 
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.author: kaelli
 monikerRange: '>=azure-devops-2019'
 author: KathrynEE
-ms.date: 11/01/2018
+ms.date: 10/05/2021
 ---
 
-# Publish a Power BI Desktop file to PowerBI.com 
+# Publish a Power BI Desktop file to Power BI 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on PowerBI.com. This article shows you how.   
+Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures, and charts, you can share them with others by creating a dashboard on Power BI. This article shows you how.   
+
+## Publish to Power BI
 
 1. If using an [Analytics View](what-are-analytics-views.md), verify that the view is Shared and not Private.
 
-2. Open the **Power BI Desktop** file with your data.  
+1. Open the **Power BI Desktop** file with your data.  
 
-3. Choose **Publish** on the **Home** tab. 
+1. Select **Publish** on the **Home** tab. 
 
-    <img src="media/publish-1.png" alt="Publish Power BI Desktop file" /> 
+    :::image type="content" source="media/publish-1.png" alt-text="Publish Power BI Desktop file":::
 
-4. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Choose **Sign in**.
+4. Respond to the prompts to sign in. If you don't already have a Power BI account, you'll need to create one. Select **Sign in**.
   
-     <img src="media/publish-2.png" alt="Publishing successful" />
+    :::image type="content" source="media/publish-2.png" alt-text="Publishing successful":::
 
-5. Choose the **Open 'file name' in Power BI** link.
+1. Select the **Open \<file name\> in Power BI** link.
 
-6. Expand the navigation pane in Power BI and select the work space that you selected when you published the report.  
+## Configure refresh schedule
 
-7. Choose **Datasets** in the upper right corner.
+1. Expand the navigation pane in Power BI and select the work space that you selected when you published the report.  
 
-8. Choose the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name.   
+1. Select **Datasets** in the upper right corner.
 
-     <img src="media/publish-3.png" alt="Select the dataset" />
+8. Select the ellipsis next to the dataset that represents the report you just loaded. It's typically the file name.
 
-9. Choose **Schedule Refresh**.  
+    :::image type="content" source="media/publish-3.png" alt-text="Select the dataset":::
 
-11. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
+1. Select **Schedule Refresh**.  
 
-      <img src="media/publish-4.png" alt="Update odata credentials" />
+1. Select the **Edit credentials** link next to ODATA under Data source credentials as shown here:
 
-11. Select the appropriate authentication option. 
+    :::image type="content" source="media/publish-4.png" alt-text="Update odata credentials":::
+
+1. Select the appropriate authentication option. 
 
 	* Use **oAuth2**  for Azure Active Directory (Azure AD) or Windows credentials.
 
@@ -58,12 +62,12 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
       > [!IMPORTANT]  
       > If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
 
-12. Choose **Sign in**.  
+1. Select **Sign in**.  
 
 At this point, the data will update on your scheduled basis using the credentials entered.
 
 > [!IMPORTANT]   
-> Any data included in the Analytics view and published Power BI.com will be accessible to all users with access to the report, regardless of the project permissions configured in Azure DevOps.    
+> Any data included in the Analytics view and published Power BI will be accessible to all users with access to the report, regardless of the project permissions configured in Azure DevOps.    
 
 
 ## Related articles

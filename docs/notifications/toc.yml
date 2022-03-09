@@ -21,10 +21,10 @@
   - name: Unsubscribe from default notification
     href: unsubscribe-default-notification.md
     displayName: stop, settings, turn, off, avoid
-  - name: Manage team, group, and Global notifications
+  - name: Manage team, group, Global notifications
     href: manage-team-group-global-organization-notifications.md
     displayName: organization, project, collection, administrator, settings, email, alert
-  - name: Exclude yourself from notification of events you initiated
+  - name: Limit your emails
     href: exclude-self-from-email.md
     displayName: skip, initiator, trigger, events, subscription, avoid
 - name: Follow work, link work items, use @mentions  

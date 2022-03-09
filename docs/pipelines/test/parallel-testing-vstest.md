@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Run tests in parallel using the Visual Studio Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="< tfs-2018"
 
@@ -146,7 +146,7 @@ jobs:
     parallel: 2
 ```
 
-For more information, see [YAML schema - Job](../yaml-schema.md#job).
+For more information, see [YAML schema - Job](/azure/devops/pipelines/yaml-schema/jobs-job).
 
 ::: moniker-end
 

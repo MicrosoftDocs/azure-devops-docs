@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Batch Script task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to run a Windows .bat or .cmd script.
 Optionally, allow it to permanently modify environment variables.

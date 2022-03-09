@@ -1,21 +1,21 @@
 ---
-title: Query by area or iteration path
+title: Query by area or iteration path in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
-description: Query for work items based on their area or iteration path in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Learn how to query for work items based on their area or iteration path in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
-monikerRange: '>= tfs-2013'
-ms.date: 07/30/2020 
+monikerRange: '<= azure-devops'
+ms.date: 10/24/2021 
 ---
 
 
 # Query by area or iteration path 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team. 
 
@@ -40,7 +40,7 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 > | **Not Under**   | Exclude items assigned under a specific area or iteration path.  |
 
 
-In addition to these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
+Along with these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
@@ -61,7 +61,7 @@ You can specify to filter for work items assigned to several area paths by using
 > ![Query on Area Path for several areas](media/query-area-iteration/query-with-in-operator.png)
 
 
-## Node Name and keyword based queries  
+## Node Name and keyword-based queries  
 
 Use the **Node Name** field to filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the last node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
 
@@ -75,7 +75,7 @@ In this example, the filter will return any work items assigned to an area path 
 > [!div class="mx-imgBorder"]
 > ![Query for several sprints](media/query-area-iteration/query-filter-contains-node-name.png)
 
-Here's another example which uses the **Node Name** and the **In** operator. 
+Here's another example that uses the **Node Name** and the **In** operator. 
 
 > [!div class="mx-imgBorder"]
 > ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
@@ -95,6 +95,7 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 ::: moniker-end
 
 <a name="field-reference"></a>
+<a id="fields" />
 
 ## Classification field reference 
 
@@ -106,11 +107,11 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 
 For each field, data path=```TreePath```, reportable type=```Dimension```, index attribute=```True```. 
 
-If you define a path name that is longer than 256 characters, you will not be able to specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and do not nest nodes more than 14 levels deep.
+If you define a path name that is longer than 256 characters, you can't specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and don't nest nodes more than 14 levels deep.
 
 You can't apply most field rules to system fields, such as System.AreaPath and System.IterationPath fields. To learn more, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).
 
-The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
+The following fields don't appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |**Field name**|**Description**|**Reference name**|**Data type**|
@@ -119,7 +120,7 @@ The following fields do not appear on work item forms but are tracked for each w
 > |Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
 > |Node Name|The name of the last node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
-The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
+The default reportable type is none. Area ID and Iteration ID are indexed, Node Name isn't. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 
 ## Related articles 

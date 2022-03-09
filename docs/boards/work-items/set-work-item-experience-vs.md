@@ -1,49 +1,54 @@
 ---
-title: Change Work Items page experience
-titleSuffix: Azure Boards and TFS
-description: Change the Work Items page setting from default to legacy in Visual Studio 2019 Team Explorer  
+title: Change the Work Items page experience
+titleSuffix: Azure Boards
+description: Learn how to change the Work Items page setting from default to legacy. 
 ms.custom: work-items, seodec18  
 ms.technology: devops-agile
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: kaelli
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/11/2020
+ms.date: 11/07/2021
 ---
 
-# Set the Work Items experience in Visual Studio 2019
+# Set the Work Items experience
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019**  
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]   
 
 Visual Studio 2019 supports switching between the default view of the Work Items page and the legacy view. The default view is designed to match the Work Items page available in the web portal. The legacy view supports the Work Items page available with the previous versions of Visual Studio. 
 
 Each view supports the following tasks: 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="50%">Default experience</th>
-<th width="50%">Legacy experience</th>
-</tr>
+:::row:::
+   :::column span="1":::
+   **Default experience**
+   :::column-end:::
+   :::column span="1":::
+   **Legacy experience**
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td> 
-<ul>
-<li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](./view-add-work-items.md)">View and add work items</a></li>
-</ul>
-</td>
-<td>
-<li><a href="/azure/devops/boards/backlogs/add-work-items" data-raw-source="[Add work items](../backlogs/add-work-items.md)">Add work items</a></li>
-<li><a href="/azure/devops/boards/queries/using-queries" data-raw-source="[Use the query editor to list and manage queries](../queries/using-queries.md)">Use the query editor to list and manage queries</a></li>
-<li><a href="/azure/devops/boards/queries/set-query-permissions" data-raw-source="[Organize query folders and set query permissions](../queries/set-query-permissions.md)">Organize query folders and set query permissions</a></li>
-<li><a href="/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel" data-raw-source="[Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
-<li><a href="/azure/devops/boards/queries/share-plans" data-raw-source="[Email query results list using Outlook](../queries/share-plans.md)">Email query results list using Outlook</a></li>
-<li><a href="/azure/devops/report/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](../../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (on-premises Azure DevOps Server only)</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+    
+   
+   - [View and add work items](./view-add-work-items.md)
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   - [Add work items](../backlogs/add-work-items.md)
+   - [Use the query editor to list and manage queries](../queries/using-queries.md)
+   - [Organize query folders and set query permissions](../queries/set-query-permissions.md)
+   - [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+   - [Email query results list using Outlook](../queries/share-plans.md)
+   - [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) (on-premises Azure DevOps Server only)
+   
+   :::column-end:::
+:::row-end:::
+
+
 
 ## Change your Work Items view
 

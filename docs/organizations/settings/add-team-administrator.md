@@ -13,27 +13,27 @@ ms.date: 07/22/2021
 
 # Add or remove a team administrator 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 <a id="add-team-admin">  </a>  
 
 Learn how to add or remove an administrator for your team. It's always a good idea to have more than one user with administration permissions for a team. Team administrators can [manage teams and configure team tools](manage-teams.md) and manage projects. You may want to remove a user's administration permissions, for instance if the user is no longer active. 
 
-To add a team, see [Add teams](add-teams.md). To add or remove a project administrator, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+To add a team, see [Add teams](add-teams.md). To add or remove a project administrator, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 <a name="permissions"></a>
 
 ## Prerequisites
 
-- To add or remove a user as a team administrator, you must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
-- To be added as a team administrator, you must be a user in the organization and granted **Basic** or higher access-level. Users granted Stakeholder access can't be added as a team administrator. 
+- To add or remove a user as a team administrator, you must be a member of the [**Project Administrators** group](../security/change-project-level-permissions.md), or a team administrator for the team you want to update.
+- To be added as a team administrator, you must be granted **Basic** or higher access-level. Users granted **Stakeholder** access can't be added as a team administrator. 
 
 <a id="open-admin-context">  </a>
 
 ## Add an administrator
 
-To get added as a team administrator, ask another team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
+To get added as a team administrator, ask another team administrator or a member of the **Project Administrators** group. See [Look up a project administrator](../security/look-up-project-administrators.md).
 
 ::: moniker range="azure-devops"
 
@@ -119,7 +119,7 @@ To get added as a team administrator, ask another team administrator or a member
    
 ::: moniker-end     
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. From the web portal, select your project, and then select **Administration settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the administration page.
 
@@ -177,7 +177,7 @@ From the Administrators section, choose ![delete icon](../../media/icons/delete-
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < azure-devops-2019"
+::: moniker range="< azure-devops-2019" 
 
 From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
 

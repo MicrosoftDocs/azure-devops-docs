@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # View and filter work items  
 
-[!INCLUDE [temp](includes/version-public-projects.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
@@ -35,23 +35,19 @@ To view a work item, choose its title. As an anonymous user (one not signed into
 
 Using the drop-down menu, you can focus on relevant items using one of the three pivots described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
 
-<table>
-<tbody valign="top">
-<tr>
-<td>
-<img src="media/view-work-items/view-recently-changed-items.png" alt="Work Items page, Menu options"/>
-</td>
-<td>
-<ul>
-<li><strong>Recently updated</strong>: lists work items recently updated in the project. </li>
-<li><strong>Recently completed</strong>: lists work items completed or closed in the project.</li>
-<li><strong>Recently created</strong>: lists work items created within the last 30 days in the project.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="1":::
+   
+   ![Work Items page, Menu options](media/view-work-items/view-recently-changed-items.png)
+   :::column-end:::
+   :::column span="3":::   
+   
+   - **Recently updated**: lists work items recently updated in the project. 
+   - **Recently completed**: lists work items completed or closed in the project.
+   - **Recently created**: lists work items created within the last 30 days in the project.
+   
+   :::column-end:::
+:::row-end:::
 
 
 <a id="filter" />

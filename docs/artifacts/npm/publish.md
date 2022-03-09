@@ -1,15 +1,15 @@
 ---
-title: Publish an npm package
-description: Publish npm packages to Azure DevOps Services, TFS 2017, and TFS 2018 using the command line. This article will guide you through setting up your npm client with your feed to publish your npm packages.
+title: Publish an npm package with the command line interface
+description: How to publish npm packages using the command line
 ms.assetid: 85773969-1491-4242-A060-BD5D193961A0
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/19/2020
+ms.date: 10/14/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish an npm package from the command line
+# Publish npm packages from the command line
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 [!INCLUDE [](../includes/npm/publish.md)]

@@ -13,6 +13,9 @@
 - name: Filter your work items
   href: ../backlogs/filter-backlogs-boards-plans.md  
   displayname: sort, reorder, group, parent, tags  
+- name: Manage requirements
+  href: ../../cross-service/manage-requirements.md 
+  displayName: track status, requirements, analyze and prioritize, monitor, report, work item fields, work item types, burndown, team velocity
 - name: Manage bugs
   href: ../backlogs/manage-bugs.md
   displayname: status, inline tests, monitor, triage, lifecycle, capture
@@ -25,8 +28,6 @@
 - name: Copy/clone 
   href: ../backlogs/copy-clone-work-items.md
   displayname: change type, URL, list 
-- name: Go mobile
-  href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Collaborate with others
   items:
   - name: Follow work
@@ -66,13 +67,6 @@
     href: ../backlogs/delete-test-artifacts.md
   - name: Use work item templates
     href: ../backlogs/work-item-template.md
-- name: Configure & customize
-  items:
-  - name: Change column options
-    href: ../backlogs/set-column-options.md
-    displayName: sort, persistence
-  - name: Set the Work Items experience (Visual Studio)
-    href: set-work-item-experience-vs.md
 - name: Samples
   items:
   - name: Sample work item templates
@@ -80,5 +74,7 @@
     displayname: rich text, tags
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
+- name: Go mobile
+  href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 
 

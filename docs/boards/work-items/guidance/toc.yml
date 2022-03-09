@@ -1,0 +1,81 @@
+- name: Agile culture
+  href: ../../plans/agile-culture.md
+  displayName: agile transformation, ship, DevOps
+- name: Agile process guidance
+  href: agile-process.md
+  displayname: MSF
+- name: Agile workflow
+  href: agile-process-workflow.md
+  displayName: discussion, map stories, track progress, kanban, taskboards
+- name: Scrum process guidance
+  href: scrum-process.md
+  displayName: work item, azure boards, user stories, item types, links
+- name: Scrum workflow
+  href: scrum-process-workflow.md
+  displayName: PBI, WITs, capture comments, map PBIs
+- name: CMMI process  
+  items:
+  - name: CMMI process guidance
+    href: cmmi-process.md
+    displayname: Capability Maturity Model Integration 
+  - name: CMMI workflow
+    href: cmmi-process-workflow.md
+    displayname: requirements
+  - name: CMMI background
+    href: cmmi/guidance-background-to-cmmi.md
+    displayName: Capability Maturity Model Integration, Capability Maturity Model, CMM
+  - name: Manage projects
+    items:
+    - name: Project management process
+      href: cmmi/guidance-project-management.md
+      displayName: Iterative development, agile software, waterfall, extreme programming, stakeholder
+    - name: Project activities
+      href: cmmi/guidance-project-activities.md
+      displayName: requirements models, storyboards, agile software
+    - name: Project inception
+      href: cmmi/guidance-project-inception.md
+      displayName: methodology, prioritize, development costs, scope-driven, date-driven
+    - name: Plan a project
+      href: cmmi/guidance-plan-a-project-cmmi.md
+      displayName: scope, schedule, budget, modeling requirements, requirements
+    - name: Manage change
+      href: cmmi/guidance-manage-change.md
+      displayName: change request, CMMI
+    - name: Manage risk
+      href: cmmi/guidance-manage-risks.md
+      displayName: SCAMPI, CMMI, risk work item, risk
+    - name: Iteration activities
+      href: cmmi/guidance-iteration-activities.md?
+      displayName: task execution, tests, builds
+    - name: Plan an iteration
+      href: cmmi/guidance-plan-an-iteration-cmmi.md
+      displayName: requirements, work load, burndown
+    - name: Manage issues
+      href: cmmi/guidance-manage-issues-cmmi.md
+      displayName: SCAMPI, issues, action plan
+  - name: Engineering management
+    items:
+    - name: Process overview
+      href: cmmi/guidance-engineering.md
+      displayName: MSF, engineering section
+    - name: Develop requirements 
+      href: cmmi/guidance-develop-requirements.md
+      displayName: vision statement, scenarios
+    - name: Arrange requirements into a product plan
+      href: cmmi/arrange-requirements-into-a-product-plan.md
+      displayName: customer requirements, features, decomposition
+    - name: Create a solution architecture
+      href: cmmi/guidance-create-solution-architecture.md
+      displayName: domain model, candidate group
+    - name: Implement development tasks
+      href: cmmi/guidance-implement-development-tasks.md
+      displayName: estimate, design review, complexity
+    - name: Build a product
+      href: cmmi/guidance-build-product.md
+      displayName: CMMI, SCAMPI
+    - name: Track bugs
+      href: cmmi/track-bugs.md
+      displayName: bugs, triage, unit tests
+- name: Changes made to process templates
+  displayName: Agile, CMMI, Scrum, Basic, rules, work item types 
+  href: changes-to-process-templates.md

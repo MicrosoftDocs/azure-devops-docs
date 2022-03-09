@@ -1,7 +1,7 @@
 ---
-title: Perform semantic searches 
+title: Use semantic searches in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
-description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards, Azure DevOps  
+description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards and Azure DevOps.  
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
@@ -9,28 +9,28 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 01/25/2021
+ms.date: 10/26/2021
 ---
 
 
-# Perform a semantic work item search
+# Run a semantic work item search in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="search-box"/>
 
-You can find work items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching is not case-sensitive. Use semantic searches when you want to perform the following tasks:
+You can find work items by using shortcut filters or by specifying keywords or phrases. You can also use specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching isn't case-sensitive. Use semantic searches when you want to do the following tasks:
 
 - Find a specific work item using its ID or a keyword
 - Find one or more work items across all projects in a fast, flexible manner
-- Perform full text search across all work item fields
+- Run a full text search across all work item fields
 - Review work items assigned to a specific team member
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words will support a managed search
 
-You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
+You can run a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
 
-For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can perform [semantic searches](#initiate-an-ad-hoc-search-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
+For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can run [semantic searches](#start-an-improvised-search-and-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 > [!TIP]   
@@ -41,7 +41,7 @@ For TFS 2017.1 and earlier versions, or where the work item search extension has
 
 <a name="start-search"></a>
 
-## Initiate a semantic search for work items
+## Start a semantic search for work items
 
 With semantic search you can search: 
 - Across one or more projects  
@@ -60,9 +60,9 @@ Free text search easily searches across all work item fields, including custom f
 
    ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
-   This is a full text search that uses simple search strings for words or phrases.
+   This search is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   "updating" will also find instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
 
 3. Select a snippet of a work item to display it in the right window. 
 
@@ -88,9 +88,9 @@ Free text search easily searches across all work item fields, including custom f
 
    ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
-   This is a full text search that uses simple search strings for words or phrases.
+   This search is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   "updating" will also find instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
 
 1. Select a snippet of a work item to display it in the right window. 
 
@@ -102,9 +102,9 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#initiate-an-ad-hoc-search-use-shortcut-filters).
+Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -133,11 +133,11 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
+   that match user input and help the user to complete the search faster. For example, a search such as 
    `tags:Critical` finds all work items tagged "Critical". 
 
 3. Add more filters to further narrow your search, and use Boolean operators
-   to combine terms if required. For example, 
+   to combine terms if necessary. For example, 
    `a: Chris t: Bug s: Active` finds all active bugs assigned
    to a user named "Chris".
 
@@ -166,11 +166,11 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
+   that match user input and help the user to complete the search faster. For example, a search such as 
    `tags:Critical` finds all work items tagged "Critical". 
 
 3. Add more filters to further narrow your search, and use Boolean operators
-   to combine terms if required. For example, 
+   to combine terms if necessary. For example, 
    `a: Chris t: Bug s: Active` finds all active bugs assigned
    to a user named "Chris".
 
@@ -180,14 +180,14 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 ::: moniker range="<= tfs-2015" 
 
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#initiate-an-ad-hoc-search-use-shortcut-filters).
+Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017" 
 
-## Initiate an ad hoc search, use shortcut filters
+## Start an improvised search and use shortcut filters
 
-For TFS 2017.1 and earlier versions, you can perform ad hoc searches from the web portal or from Visual Studio Team Explorer. Ad hoc searches automatically scope to the items defined to the project you're currently connected to.  
+For TFS 2017.1 and earlier versions, you can run improvised searches from the web portal or from Visual Studio Team Explorer. Improvised searches automatically scope to the items defined to the project you're currently connected to.  
 
 You can enter or select one or more of the following shortcut identifiers:
 
@@ -205,7 +205,7 @@ Use the `=`, `:`, and `-` operators to specify the operations **Equals**, **Cont
 ### From the web portal 
 
 ::: moniker range="azure-devops"
-Ad hoc search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
+Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
 
 ::: moniker-end
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
@@ -215,7 +215,7 @@ Ad hoc search isn't available from Azure DevOps Services. Only [semantic search]
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) context menu and select an option.
 
@@ -245,7 +245,7 @@ Use the ![Search box clear icon (Team Explorer)](media/example-search-box-querie
 
 ## Find items based on keywords or phrases
 
-Keywords or phrases that you type into the search box return a list of work items that contain those keywords or phrases in the **Description**, **Repro Steps**, or **Title** fields. You must enclose each phrase in quotation marks.
+Keywords or phrases that you type into the search box return a list of work items that contain those keywords or phrases in the **Description**, **Repro Steps**, or **Title** fields. Enclose each phrase in quotation marks.
 
 In the **Search work items** box, type a keyword or phrase that appears in the **Title**, **Description**, or **Repro Steps** fields for the work items of interest.
 
@@ -253,21 +253,21 @@ Enclose multiple words in quotation marks.
 
 For example, to find work items with the specified keywords in the **Title** or **Description** fields:
 
--   For the keyword "duplication" enter **duplication**.  
--   For the phrase "Getting Started" enter **"Getting Started"**.  
--   For the phrase "Getting Started" or the keyword "feature" enter **feature "Getting Started"**.
+-   For the keyword "duplication", enter **duplication**.  
+-   For the phrase "Getting Started", enter **"Getting Started"**.  
+-   For the phrase "Getting Started" or the keyword "feature", enter **feature "Getting Started"**.
 
 |Filter for items that contain these keywords or phrases:|Type the following string:|
 |---|---|
-|duplication|`duplication`|
+|Duplication|`duplication`|
 |Getting Started|`"Getting Started"`|
-|feature and Getting Started|`feature "Getting Started"`|
+|Feature and Getting Started|`feature "Getting Started"`|
 
-You can perform partial or exact match queries on a keyword or a phrase contained within any text field. Or, you can perform a full-text search query by filtering on keywords and phrases contained within the full-text search index. Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search.
+You can run partial or exact match queries on a keyword or a phrase contained within any text field. Or, you can run a full-text search query by filtering on keywords and phrases contained within the full-text search index. Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search.
 
 ## Find items based on specific fields and field values
 
-To find work items based on a keyword or phrase contained within other text string fields, specify either the friendly name or the reference name of the field. Enclose each phrase in quotation marks. You can determine the friendly name of a field by hovering over the field within a work item form. To determine the reference name of commonly used fields or to find a field that is not listed on the form, see [Work item field index](../work-items/guidance/work-item-field.md).
+To find work items based on a keyword or phrase contained within other text string fields, specify either the friendly name or the reference name of the field. Enclose each phrase in quotation marks. You can determine the friendly name of a field by hovering over the field within a work item form. To determine the reference name of commonly used fields or to find a field that isn't listed on the form, see [Work item field index](../work-items/guidance/work-item-field.md).
 
 |Filter for items that meet this criteria:|Type the following string:|  
 |---|---|  
@@ -325,7 +325,7 @@ The <strong>@Me</strong> macro expands to the full name of the current user in a
 ---
 :::row:::
    :::column span="2":::
-      Modified 7 days ago
+      Modified seven days ago
    :::column-end::: 
    :::column span="2":::
       `System.ChangedDate=@Today-7`
@@ -357,10 +357,10 @@ The following examples show how to use operators when you create a search string
 |Filter for items that meet this criteria:|Type the following string:|  
 |-----------------------------------------|--------------------------|
 |Assigned to Peter and not Active.|`A:Peter -S=Active`|
-|In which the Activity field was not `Development`.|`- Activity=Development`|
+|In which the Activity field wasn't `Development`.|`- Activity=Development`|
 |Resolved by Peter.|`"Resolved By":Peter`|
-|Contain the keyword `triage` in the title or description, are not assigned to you, and are not closed.|`triage -A=@me -S=Closed`|
-|Active bugs that are assigned to you that do not contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
+|Contain the keyword `triage` in the title or description, aren't assigned to you, and aren't closed.|`triage -A=@me -S=Closed`|
+|Active bugs that are assigned to you that don't contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
 
 
 ## Related articles

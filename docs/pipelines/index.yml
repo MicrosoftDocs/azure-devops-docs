@@ -5,6 +5,7 @@ summary: Implement continuous integration and continuous delivery (CI/CD) for th
 
 metadata:
   title: Azure Pipelines documentation
+  titleSuffix: Azure DevOps 
   description: Configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
   ms.prod: devops 
   ms.technology: devops-cicd
@@ -12,7 +13,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 05/13/2020 
+  ms.date: 09/27/2021 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -95,7 +96,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: YAML schema
-            url: yaml-schema.md
+            url: /azure/devops/pipelines/yaml-schema/
           - text: Predefined variables
             url: ./build/variables.md
           - text: Release & artifacts variables
@@ -196,12 +197,20 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Publish NuGet feeds
+          - text: Publish & download artifacts
+            url: artifacts/pipeline-artifacts.md
+          - text: Publish NuGet packages
             url: ./artifacts/nuget.md
-          - text: Publish symbols for debugging
-            url: ./artifacts/symbols.md
+          - text: Publish npm packages 
+            url: ./artifacts/npm.md
+          - text: Publish Python packages
+            url: ./artifacts/pypi.md
           - text: Publish and download Universal Packages
             url: ./artifacts/universal-packages.md
+          - text: Publish Maven Packages
+            url: ../artifacts/get-started-maven.md
+          - text: Publish symbols for debugging
+            url: ./artifacts/symbols.md
   - title: Integrate with other apps
     linkLists:
       - linkListType: how-to-guide

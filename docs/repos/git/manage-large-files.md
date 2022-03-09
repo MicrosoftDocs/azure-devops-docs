@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Manage and store large files in Git
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Git is great at keeping the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed. 
 Large files that don't compress well and change entirely between versions (such as binaries) present problems when stored in your Git repos. 
@@ -27,7 +27,7 @@ If many versions of these files exist in your repo, they will dramatically incre
 
 As your team works with editors and tools to create and update files, you should put these files into Git so your team can enjoy the benefits of Git's workflow.
 Don't commit other types of files, such as DLLs, library files, and other dependencies that aren't created by your team but your code depends on into your repo. Deliver these files 
-through [package management](../../artifacts/overview.md) to your systems. 
+through [package management](../../artifacts/start-using-azure-artifacts.md) to your systems. 
 
 Package management bundles your dependencies and installs the files on your system when you deploy the package. 
 Packages are versioned to ensure that code tested in one environment runs the same in another environment as long as they have the same installed packages. 
@@ -82,7 +82,7 @@ Just follow the [instructions to install the client](https://git-lfs.github.com/
 
 Git LFS has some drawbacks that you should consider before adopting:
 
-1. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/master/docs).
+1. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/main/docs).
 2. If the Git LFS client is not installed and configured correctly, you will not see the binary files committed through Git LFS when you clone your repo. 
    Git will download the data describing the large file (which is what Git LFS commits to the repo) and not the actual binary file itself. 
    Committing large binaries without the Git LFS client installed will push the binary to your repo.
@@ -92,6 +92,8 @@ Git LFS has some drawbacks that you should consider before adopting:
    Users must still take care to always pull the latest copy of a binary asset before beginning work.
 4. Azure Repos currently does not support using SSH in repos with Git LFS tracked files.   
 5. If a user drags and drops a binary file via the web interface into a repo which is configured for Git LFS, the binary will be committed to the repo and not the pointers that would be committed via the Git LFS client.
+6. File size limit is 50 GB.
+7. One file upload time limit is 1 hour.
 
 ### File format
 

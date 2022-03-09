@@ -12,14 +12,14 @@ monikerRange: '>= tfs-2015'
 
 # Set different levels of pipeline permissions
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Pipeline permissions are the permissions associated with pipelines in an Azure DevOps project. 
 Permissions in Azure DevOps are hierarchical and can be set at the organization, server (for on-premises), project, and object levels. 
 
-Object-level permissions are designed to be more granular than organization-level permissions. For example, a user could have access to your Azure repository thanks to their organization-level permissions. However, that same user could be prevented from running a pipeline manually because of that pipeline's permissions. 
+Object-level permissions are designed to be more granular than organization-level permissions. For example, a user could have access to your Azure Repos repository thanks to their organization-level permissions. However, that same user could be prevented from running a pipeline manually because of that pipeline's permissions. 
 
 You can increase the security of your pipeline by fine-tuning the object-level permissions associated with your pipeline. To learn more about best practices for pipeline security, see [Security Azure Pipelines](../security/overview.md). 
 
@@ -239,7 +239,7 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 ### Set task group permissions at the project-level
 
 > [!NOTE]
-> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](../yaml-schema.md#step-templates).
+> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](/azure/devops/pipelines/yaml-schema/steps-template).
 
 
 1. Open **Pipelines** > **Task groups** in your project. 
@@ -280,7 +280,7 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 
 ## Set agent pool permissions
 
-You can use pre-defined roles to configure [security on agent pools](../agents/pools-queues.md#security).
+You can use predefined roles to configure [security on agent pools](../agents/pools-queues.md#security).
 You can configure this in a hierarchical manner either for all pools, or for an individual pool.  
 
 ::: moniker range=">=azure-devops-2020"

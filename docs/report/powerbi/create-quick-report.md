@@ -1,19 +1,19 @@
 ---
 title: Create a Power BI report with an Analytics view
 titleSuffix: Azure DevOps
-description: Quickstart helping users to create a trend report using an Analytics view
+description: Learn how to create a trend report using an Analytics view.
 ms.technology: devops-analytics
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms.date: 07/14/2020
+ms date: 10/04/2021
 ---
 
 # Create a Power BI report with a default Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. 
 
@@ -38,7 +38,7 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 
 ## Prerequisites  
 
-In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
+To create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
 ::: moniker range="azure-devops"
 
@@ -56,7 +56,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
 - **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
@@ -72,7 +72,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 By verifying the view you'll use in Power BI, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
 
-1. From the **Analytics view>All** page, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
+1. From the **Analytics view>All** page, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, use the **Stories -Last 30 days** view.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Analytics>All, Edit the Stories -Last 30 days view](media/create-report/edit-default-view-last-30-days.png)  
@@ -87,7 +87,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
  	> [!div class="mx-imgBorder"]  
 	> ![Wait until the verification process completes.](media/create-report/verified-view.png)  
 
-2. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
+2. If your view successfully verifies, then go to the next step. If it's unsuccessful, select the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
 	To learn more about defining views, see [Create an Analytics view](analytics-views-create.md).  
 
@@ -100,14 +100,14 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
     > [!div class="mx-imgBorder"]  
     > ![Select work item field](media/create-report/select-line-chart-work-id.png)  
 
-	This will change your chart to a single dot.  
+	It will change your chart to a single dot.  
 
 	> [!TIP]    
 	> To change the chart size, choose the **View** tab, **Page View**, and then select the **Adjust Size** option as shown. You can then resize the chart to your desired dimensions.  
 	> 
 	> ![Adjust chart size](media/active-bugs-report/adjust-view-size.png)  
 	
-1. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
+1. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) select the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
 
    > [!div class="mx-imgBorder"]
    > ![Select Date, and change date hierarchy to date](media/create-report/select-date.png)
@@ -159,7 +159,7 @@ The reports shown in this quickstart illustrate how easy it is to generate repor
 
 <a id="q-a">  </a>
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create an Active bugs report](active-bugs-sample-report.md)

@@ -5,13 +5,13 @@ description: Find your work and search for branches using the branches page in A
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 07/10/2020
 monikerRange: '>= tfs-2017'
+ms.date: 02/23/2022
 ---
 
 # Manage branches
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
@@ -34,7 +34,7 @@ View your repo's branches by selecting **Branches** while viewing your repo on t
 
 ## Organize your branches
 
-The default **Mine** tab on the branches page shows branches you've created, pushed changes to, or set as a favorite, along with the default branch for the repo, such as `master`. The **All** tab lists all branches in the repo, and the **Stale** tab lists branches in the repo that haven't had any commits in three months or longer.
+The default **Mine** tab on the branches page shows branches you've created, pushed changes to, or set as a favorite, along with the default branch for the repo, such as `main`. The **All** tab lists all branches in the repo, and the **Stale** tab lists branches in the repo that haven't had any commits in three months or longer.
 
 ![My branches](media/branches/my-branches.png)
 
@@ -91,4 +91,4 @@ browse the files based on the most recent commit on the branch. **View history**
 [!INCLUDE [](includes/change-default-branch-instructions.md)]
 
 There are other aspects you should consider before making this change.
-Learn about them in the topic on [changing your default branch](change-default-branch.md).
+Learn about them in this article on [changing your default branch](change-default-branch.md).

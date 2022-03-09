@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # FTP Upload task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
 

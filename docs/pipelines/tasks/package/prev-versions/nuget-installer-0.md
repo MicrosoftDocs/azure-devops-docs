@@ -5,11 +5,12 @@ description: Learn all about how you can use NuGet packages when building code i
 ms.technology: vs-devops-package
 ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
 ms.date: 08/10/2016
+monikerRange: '<= tfs-2017'
 ---
 
 # NuGet Installer task version 0.*
 
-**Azure Pipelines (deprecated) | TFS 2017 (deprecated in 2017 Update 2)**
+[!INCLUDE [version-lt-eq-2017](../../../../includes/version-lt-eq-2017.md)]
 
 Use this task to install and update NuGet package dependencies.
 
@@ -50,9 +51,21 @@ Equivalent to <a href="https://docs.nuget.org/consume/command-line-reference#use
 Additional arguments passed to <a href="https://docs.nuget.org/consume/command-line-reference#user-content-restore-command" data-raw-source="[nuget restore](https://docs.nuget.org/consume/command-line-reference#user-content-restore-command)">nuget restore</a>.
 </td>
 </tr>
-<tr><th style="text-align: center" colspan="2">Advanced</th></tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
 
 [!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
+
+</table>
 
 [!INCLUDE [temp](../../includes/control-options-arguments.md)]
 

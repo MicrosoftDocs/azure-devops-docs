@@ -12,6 +12,8 @@ monikerRange: 'azure-devops'
 
 # Kubernetes manifest task
 
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
 Use a Kubernetes manifest task in a build or release pipeline to bake and deploy manifests to Kubernetes clusters.
 
 ## Overview

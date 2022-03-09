@@ -1,7 +1,7 @@
 ---
-title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
+title: Find the best tool to add or update stories, bugs, issues, and other work items
 titleSuffix: Azure Boards
-description: Learn which tool is best to add or update user stories, bugs, issues, and other work items 
+description: Learn which tool is best to add or update user stories, bugs, issues, and other work items in Azure Boards. 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: 
@@ -12,16 +12,16 @@ ms.date: 10/17/2019
 ---
 
 
-# Best tool to add, update, and link work items 
+# Best tool to add, update, and link work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Azure Boards provides you several tools&mdash;many designed to perform a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
+Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
 
 
 ## Work item form 
 
-If you want to make a single update to one work item, you can do that from within the work item form. When you want to add or update several work items at a time, then you'll want to use a backlog or query. 
+If you want to make a single update to one work item, you can make an update from within the work item form. When you want to add or update several work items at a time, then you'll want to use a backlog or query. 
 
 [Work item form controls](work-item-form-controls.md) | [Work item field index](guidance/work-item-field.md)
 
@@ -55,7 +55,7 @@ Use the [Work Items](view-add-work-items.md) page to quickly focus on work items
 	- That you've recently viewed or updated
 	- That has been recently updated, completed, or created for the project. 
 
-#### Additional supported tasks: 
+#### Other supported tasks: 
 
 - [Add a work item](view-add-work-items.md)  
 - [Restore work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)  
@@ -74,7 +74,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 
 **Best tool for**: 
 - [Implementing Kanban methods](../boards/best-practices-kanban.md)  
-- Viewing the flow of work from inception to completion  
+- Viewing the flow of work from start to completion  
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
 - Adding linked child items ([checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
@@ -152,7 +152,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 ::: moniker-end
 
 
-## Sprints 
+## Sprint tools
 
 Sprint tools provide teams a focused view of work items they've assigned to a specific sprint. You can add tasks to work items and prioritize your sprint backlog.  
 
@@ -178,7 +178,7 @@ Queries enable you to filter work items within or across projects for the purpos
 - [Queries](../queries/view-run-query.md) | [Query operators](../queries/query-operators-variables.md) 
 
 **Best tool for**:  
-- [Listing items to perform bulk updates, assign or reassign](../backlogs/bulk-modify-work-items.md)
+- [Listing items to run bulk updates, assign, or reassign](../backlogs/bulk-modify-work-items.md)
 - Listing a [tree of parent-child related work item](../queries/linking-attachments.md#tree) or [dependent work items](../queries/linking-attachments.md#dependents)
 - [Triaging work items (review, set priority, update)](../queries/triage-work-items.md)
 - [Creating simple progress and trend charts](../../report/dashboards/charts.md)
@@ -205,49 +205,59 @@ When you want to review the schedule of stories or features your teams plan to d
 > [!NOTE]   
 > Starting with Azure DevOps Server 2019 and Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project and Storyboarding with PowerPoint.  
 
-Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform the following tasks: 
+Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to complete the following tasks: 
 - Add or update many work items and their fields
 - Add or change hierarchical links between work items. 
 
 
-<!--- 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="30%">Office application</th>
-<th width="70%">Best tool for:</th>
-</tr>
-<tr>
-<td><a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md)"><strong>Excel</strong></a> </td>
-<td> 
-<ul>
-<li>Adding or updating many work items and their fields</li>
-<li>Adding or changing hierarchical links between work items</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[**Project**](../backlogs/office/create-your-backlog-tasks-using-project.md)"><strong>Project</strong></a> </td>
-<td>
-<ul> 
-<li>Importing a project plan to a project</li>
-<li>Adding tasks to Project and publishing them as work items</li>
-<li>Creating or updating parent-child links or predecessor-successor </li>links
-</ul>
-</td>
-</tr>
-<tr>
-<td><a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[**Storyboarding with PowerPoint**](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)"><strong>Storyboarding with PowerPoint</strong></a>   </td>
-<td> 
-<ul>
-<li>Storyboarding features and user interface changes </li>
-<li><a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item" data-raw-source="[Linking your storyboard to a work item](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item)">Linking your storyboard to a work item</a></li>
-<li><a href="../backlogs/office/add-share-storyboard-shapes.md" data-raw-source="[Adding and sharing storyboard shapes](../backlogs/office/add-share-storyboard-shapes.md)">Adding and sharing storyboard shapes</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+<!--
+
+:::row:::
+   :::column span="1":::
+   **Office application**
+   :::column-end:::
+   :::column span="3":::
+   **Best tool for:**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) 
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - Adding or updating many work items and their fields
+   - Adding or changing hierarchical links between work items
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [**Project**](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) 
+   :::column-end:::
+   :::column span="3":::
+   
+    
+   - Importing a project plan to a project
+   - Adding tasks to Project and publishing them as work items
+   - Creating or updating parent-child links or predecessor-successor links
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [**Storyboarding with PowerPoint**](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)   
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - Storyboarding features and user interface changes 
+   - [Linking your storyboard to a work item](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint#link-your-storyboard-to-a-backlog-item)
+   - [Adding and sharing storyboard shapes](/previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes)
+   
+   :::column-end:::
+:::row-end:::
 
 -->
 
@@ -256,134 +266,157 @@ Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perfo
 Testing tools used several work item types&mdash;such as test plans, test suites, test cases, and more. You create and manage them from **Test Plans/Test** or using one or more test tools. Several of these tools also support creating bugs.  
 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="30%">Test tool</th>
-<th width="70%">Best tool for:</th>
-</tr>
-<tr>
-<td><a href="../../test/create-a-test-plan.md" data-raw-source="[Test Plans](../../test/create-a-test-plan.md)">Test Plans</a> </td>
-<td> 
-<ul>
-<li><a href="../../test/create-a-test-plan.md" data-raw-source="[Test Plans and Test Suites](../../test/create-a-test-plan.md)">Test Plans and Test Suites</a></li>
-<li><a href="../../test/create-test-cases.md" data-raw-source="[Test Cases](../../test/create-test-cases.md)">Test Cases</a></li>
-<li><a href="../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time" data-raw-source="[Test Cases, grid view](../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time)">Test Cases, grid view</a></li>
-<li><a href="../../test/repeat-test-with-different-data.md" data-raw-source="[Shared Steps, Shared Parameters](../../test/repeat-test-with-different-data.md)">Shared Steps, Shared Parameters</a></li>
-<li><a href="../backlogs/delete-test-artifacts.md" data-raw-source="[Delete test artifacts](../backlogs/delete-test-artifacts.md)">Delete test artifacts</a></li>
-</ul>
-<p><strong>Additional supported tasks</strong>:</p>
-<ul>
-<li><a href="../../test/track-test-status.md" data-raw-source="[Track test status](../../test/track-test-status.md)">Track test status</a></li>
-<li><a href="/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub" data-raw-source="[Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)">Order manual tests within suites</a></li>
-<li><a href="../../test/reference-qa.md#testcases" data-raw-source="[Export test plans and test suites](../../test/reference-qa.md#testcases)">Export test plans and test suites</a></li>
-<li><a href="../../test/user-acceptance-testing.md#assign-and-invite-testers" data-raw-source="[Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)">Assign testers to test cases</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><a href="../../test/run-manual-tests.md" data-raw-source="[Test Runner](../../test/run-manual-tests.md)">Test Runner</a></td>
-<td> 
-<ul>
-<li><a href="../../test/run-manual-tests.md" data-raw-source="[Running tests, adding bugs](../../test/run-manual-tests.md)">Running tests, adding bugs</a> </li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><a href="../../test/connected-mode-exploratory-testing.md" data-raw-source="[Test &amp; Feedback extension](../../test/connected-mode-exploratory-testing.md)">Test &amp; Feedback extension</a> </td>
-<td> 
-<ul>
-<li><a href="../../test/connected-mode-exploratory-testing.md" data-raw-source="[Exploratory testing, capture feedback in connected mode](../../test/connected-mode-exploratory-testing.md)">Exploratory testing, capture feedback in connected mode</a></li>
-<li><a href="../../test/explore-workitems-exploratory-testing.md" data-raw-source="[Adding bugs, tasks, and test cases linked to a work item](../../test/explore-workitems-exploratory-testing.md)">Adding bugs, tasks, and test cases linked to a work item</a></li>
-<li><a href="../../test/request-stakeholder-feedback.md" data-raw-source="[Requesting feedback](../../test/request-stakeholder-feedback.md)">Requesting feedback</a></li>
-<li><a href="../../test/provide-stakeholder-feedback.md" data-raw-source="[Providing feedback](../../test/provide-stakeholder-feedback.md)">Providing feedback</a></li>
-</ul>
-<p><strong>Additional supported tasks</strong>: </p>
-<ul>
-<li><a href="../../test/add-to-bugs-exploratory-testing.md" data-raw-source="[Updating existing bugs](../../test/add-to-bugs-exploratory-testing.md)">Updating existing bugs</a></li>
-<li><a href="../../test/standalone-mode-exploratory-testing.md" data-raw-source="[Capture feedback in standalone mode](../../test/standalone-mode-exploratory-testing.md)">Capture feedback in standalone mode</a></li>
-<li><a href="../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app" data-raw-source="[Capture screen recordings of your app during testing](../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app)">Capture screen recordings of your app during testing</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Test tool**
+   :::column-end:::
+   :::column span="3":::
+   **Best tool for:**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Test Plans](../../test/create-a-test-plan.md) 
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - [Test Plans and Test Suites](../../test/create-a-test-plan.md)
+   - [Test Cases](../../test/create-test-cases.md)
+   - [Test Cases, grid view](../../test/create-test-cases.md#use-the-grid-view-to-edit-test-cases)
+   - [Shared Steps, Shared Parameters](../../test/repeat-test-with-different-data.md)
+   - [Delete test artifacts](../backlogs/delete-test-artifacts.md)
+   
+   **Additional supported tasks**:
 
+   
+   - [Track test status](../../test/track-test-status.md)
+   - [Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
+   - [Export test plans and test suites](../../test/reference-qa.yml#testcases)
+   - [Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Test Runner](../../test/run-manual-tests.md)
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - [Running tests, adding bugs](../../test/run-manual-tests.md) 
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Test &amp; Feedback extension](../../test/connected-mode-exploratory-testing.md) 
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - [Exploratory testing, capture feedback in connected mode](../../test/connected-mode-exploratory-testing.md)
+   - [Adding bugs, tasks, and test cases linked to a work item](../../test/explore-workitems-exploratory-testing.md)
+   - [Requesting feedback](../../test/request-stakeholder-feedback.md)
+   - [Providing feedback](../../test/provide-stakeholder-feedback.md)
+   
+   **Additional supported tasks**: 
 
+   
+   - [Updating existing bugs](../../test/add-to-bugs-exploratory-testing.md)
+   - [Capture feedback in standalone mode](../../test/standalone-mode-exploratory-testing.md)
+   - [Capture screen recordings of your app during testing](../../test/run-manual-tests.md)
+   
+   :::column-end:::
+:::row-end:::
 
 
 ## Other tools 
 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="30%">Tool</th>
-<th width="70%">Best tool for:</th>
+:::row:::
+   :::column span="1":::
+   **Tool**
+   :::column-end:::
+   :::column span="3":::
+   **Best tool for:**
+   :::column-end:::
 
 
 
-</tr>
+:::row-end:::
 
-<tr>
-<td><a href="../queries/search-box-queries.md" data-raw-source="[Adhoc search](../queries/search-box-queries.md)">Adhoc search</a> </td>
-<td> 
-<ul>
-<li>Find a specific work item using its ID or a keyword</li>
-<li>Find one or more work items across all projects in a fast, flexible manner</li>
-<li>Perform full text search across all work item fields</li>
-<li>Review work items assigned to a specific team member</li>
-<li>Search against specific work item fields to quickly narrow down a list of work items</li>
-<li>Determine what key words will support a managed search.</li>
-</ul>
-</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   [Adhoc search](../queries/search-box-queries.md) 
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - Find a specific work item using its ID or a keyword
+   - Find one or more work items across all projects in a fast, flexible manner
+   - Run full text search across all work item fields
+   - Review work items assigned to a specific team member
+   - Search against specific work item fields to quickly narrow down a list of work items
+   - Determine what key words will support a managed search.
+   
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td><a href="../backlogs/work-item-template.md" data-raw-source="[Work item templates](../backlogs/work-item-template.md)">Work item templates</a> </td>
-<td> 
-<ul>
-<li>Capture templates</li>
-<li>Apply templates to update work items</li>
-<li>Use templates to create work items</li>
-<li>Manage work item templates.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><strong>Request and capture feedback</strong></td>
-<td> 
-<ul>
-<li><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request feedback](../../project/feedback/get-feedback.md)">Request feedback</a></li>
-<li><a href="../../project/feedback/give-feedback.md" data-raw-source="[Give feedback using Microsoft Feedback Client](../../project/feedback/give-feedback.md)">Give feedback using Microsoft Feedback Client</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><strong>Notifications</strong></td>
-<td> 
-<ul>
-<li><a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[Manage personal notifications](../../notifications/manage-your-personal-notifications.md)">Manage personal notifications</a></li>
-<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team and project notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage team and project notifications</a></li>
-<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage organization notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage organization notifications</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><strong>Favorites</strong></td>
-<td> 
-<ul>
-<li><a href="../../project/navigation/set-favorites.md" data-raw-source="[Set personal and team favorites](../../project/navigation/set-favorites.md)">Set personal and team favorites</a>  </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="1":::
+   [Work item templates](../backlogs/work-item-template.md) 
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - Capture templates
+   - Apply templates to update work items
+   - Use templates to create work items
+   - Manage work item templates.
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Request and capture feedback**
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - [Request feedback](../../project/feedback/get-feedback.md)
+   - [Give feedback using Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Notifications**
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)
+   - [Manage team and project notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+   - [Manage organization notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Favorites**
+   :::column-end:::
+   :::column span="3":::
+    
+   
+   - [Set personal and team favorites](../../project/navigation/set-favorites.md)  
+   
+   :::column-end:::
+:::row-end:::
 
 ## Marketplace extensions 
 
-A number of additional tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
+Other tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
 
 See also [Azure Boards extensions developed by Microsoft](../extensions/index.md).
 

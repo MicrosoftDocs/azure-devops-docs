@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Azure virtual machine scale set Deployment task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy a virtual machine scale set image.
 
@@ -38,13 +38,9 @@ Use this task to deploy a virtual machine scale set image.
 <tr><td>Arguments</td><td>(Optional) The custom script will be invoked with arguments passed. Build/Release variables can be used which makes it easy to use secrets.</td></tr>
 <tr><td>Azure storage account where custom scripts will be uploaded</td><td>(Optional) The Custom Script Extension downloads and executes scripts provided by you on each virtual machines in the virtual machine scale set. These scripts will be stored in the storage account specified here. Specify a pre-existing ARM storage account.</td></tr>
 <tr><td>Skip Archiving custom scripts</td><td>(Optional) By default, this task creates a compressed archive of directory containing custom scripts. This improves performance and reliability while uploading to azure storage. If not selected, archiving will not be done and all files will be individually uploaded.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 
 ## Troubleshooting

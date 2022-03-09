@@ -1,6 +1,6 @@
 ---
 title: Voluntarily provide stakeholder feedback
-description: Voluntarily provide stakeholder feedback in Azure DevOps or TFS using the Exploratory Testing browser extension when you want to test your applications
+description: Voluntarily provide stakeholder feedback in Azure DevOps using the Exploratory Testing browser extension when you want to test your applications
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.technology: devops-test
 ms.topic: conceptual
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Voluntarily provide stakeholder feedback using the Test &amp; Feedback extension
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
 
 [!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 
@@ -49,7 +49,7 @@ voluntarily, even if you haven't received a specific
    such as capturing screenshots, notes, and screen recordings.
 
    >Some browsers may not provide all of the capture capabilities.
-   See [Which web browsers does the extension support?](reference-qa.md#browser-support) 
+   See [Supported web browsers for the extension](perform-exploratory-tests.md#browser-support).
  
 1. When you are done capturing feedback, Choose **Provide feedback**.
 
@@ -65,8 +65,7 @@ voluntarily, even if you haven't received a specific
 
    ![Entering a title and star rating](media/shared/provide-stakeholder-feedback-09.png)
 
-1. Save your feedback. This create a work item in Azure DevOps
-   or TFS containing all your feedback.
+1. Save your feedback. This create a work item in Azure DevOps containing all your feedback.
  
 1. Continue to capture more feedback if required. You can submit 
    multiple feedback responses, bugs, and tasks for the same feedback request. 
@@ -75,7 +74,7 @@ voluntarily, even if you haven't received a specific
      
    ![Ending your feedback session](media/shared/provide-stakeholder-feedback-12.png)
 
-## See also
+## Related articles
 
 * [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
@@ -83,4 +82,4 @@ voluntarily, even if you haven't received a specific
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

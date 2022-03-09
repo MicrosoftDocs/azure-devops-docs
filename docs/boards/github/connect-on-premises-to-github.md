@@ -1,32 +1,47 @@
 ---
 title: Connect an on-premises project to a GitHub Enterprise Server 
 titleSuffix: Azure DevOps Server
-description: Configure one or more GitHub repositories to integrate with Azure Boards on-premises
+description: Learn how to configure one or more GitHub repositories to integrate with an Azure Boards on-premises project.
 ms.technology: devops-agile
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019 < azure-devops'
-ms.date: 07/06/2021
+ms.date: 02/16/2022
 ---
 
-# Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)
+# Connect an on-premises Azure DevOps Server to a GitHub repo 
 
-[**Azure Boards**](/azure/devops/boards/github/connect-to-github?view=azure-devops&preserve-view=true) | **Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=2095009 --> 
 
+::: moniker range="azure-devops-2020"
+By connecting your Azure DevOps Server project to your GitHub repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.  
+
+To connect to GitHub.com repositories, you must install Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories.
+
+> [!NOTE]   
+> On-premises Azure DevOps Server 2020 supports integration with GitHub.com and GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops).
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 By connecting your Azure DevOps Server project with your GitHub Enterprise Server repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub Enterprise for software development while using Azure Boards to plan and track your work. 
 
 > [!NOTE]   
-> On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](/azure/devops/boards/github/connect-to-github?view=azure-devops&preserve-view=true).
+> On-premises Azure DevOps Server 2019 supports integration with GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops).
+
+::: moniker-end
+
+
 
 
 ## Prerequisites 
  
 * [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
-* You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
+* Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+* You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
 * You must be an administrator of the GitHub Enterprise Server you'll connect to. 
  
 
@@ -80,7 +95,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	> [!div class="mx-imgBorder"]  
 	> ![Open Settings>Developer settings>Oauth Apps and choose New OAuth App.](media/github-ent/ghe-settings-dev-oauth.png)  
 
-2. Fill out the form to register your Azure DevOps Server application.  
+1. Fill out the form to register your Azure DevOps Server application.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Register your Azure DevOps Server project](media/github-ent/ghe-register-app.png)  
@@ -102,9 +117,9 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 	`https://tfs.contoso.com/MyCollection/_admin/oauth2/callback`
 
-3. Choose **Register application**.
+1. Choose **Register application**.
 
-4. Upon success, you'll see a page that provides the **Client ID** and **Client Secret** for your registered OAuth application. 
+1. Upon success, you'll see a page that provides the **Client ID** and **Client Secret** for your registered OAuth application. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Client ID and Client Secret for your registered OAuth application.](media/github-ent/ghe-register-app-success.png)  
@@ -121,12 +136,12 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 1. Add the GitHub Enterprise Oauth configuration to your Azure DevOps Server collection. 
 
-2. Open <strong>Admin settings>Oauth configurations</strong>, and choose <strong>Add Oauth configuration</strong>.  
+1. Open <strong>Admin settings>Oauth configurations</strong>, and choose <strong>Add Oauth configuration</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Admin Settings>OAuth configurations](media/github-ent/open-admin-settings-server-oauth-add.png)  
 
-3. Fill in the form that appears, and then choose <strong>Create</strong>.
+1. Fill in the form that appears, and then choose <strong>Create</strong>.
 
 	> [!div class="mx-imgBorder"]  
 	> ![OAuth configuration dialog](media/github-ent/add-oauth-configuration.png)  
@@ -145,11 +160,12 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 You can connect up to 250 GitHub repositories to an Azure Boards project. 
 
 > [!NOTE]   
-> Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.
+> Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.  
+> Connection to GitHub.com repositories requires Azure DevOps Server 2020.1.1 Patch 2 or later version.
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
-You can connect up to 100 GitHub repositories to an Azure Boards project. This is a hard limit. 
+You can connect up to 100 GitHub repositories to an Azure Boards project. This limit can't be changed.
  
 ::: moniker-end 
 
@@ -162,7 +178,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This i
 
 	:::image type="content" source="media/github-ent/open-project-settings-github-connections-2020-1.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::  
 
-1.	If it is the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
+1.	If it's the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
 
 	- **Personal Access Token**, for details see [Connect using a Personal Access Token](#github-ent-pat). 
 	- **User Name and Password**, see [Connect using a Username and Password](#server-github-ent-username).
@@ -178,13 +194,14 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This i
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Integrations](media/github-ent/open-project-settings-github-connections.png)   
 
-	Or, choose a **personal access token** or **username and password**, if you are using those credentials.
+	Or, choose a **personal access token** or **username and password**, if you're using those credentials.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 #### Connect using OAuth  
 
-- Choose the configuration that you set up in [Step 4 of Register your OAuth configuration in Azure DevOps Server](#register-server-github-ent-oauth), and then choose <strong>Connect</strong>. 
+- Choose the configuration that you set up in [Step 4 of Register your OAuth configuration in Azure DevOps Server](#register-server-github-ent-oauth). Then, choose <strong>Connect</strong>. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![New GitHub Enterprise connection, OAuth dialog](media/github-ent/new-github-ent-connect-oauth.png)  
@@ -220,7 +237,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This i
 	> [!div class="mx-imgBorder"]  
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
 
-1. If this is the first time connecting to a GitHub account or organization from Azure Boards, you'll also be installing the Azure Boards app for GitHub. Complete the integration by following the procedures outlined in [Confirm the connection](connect-to-github.md#confirm-connection). 
+1. If you're connecting to a GitHub account or organization from Azure Boards for the first time, you'll also be installing the Azure Boards app for GitHub. Complete the integration by following the procedures outlined in [Confirm the connection](connect-to-github.md#confirm-connection). 
 
 ## Resolve connection issues
 

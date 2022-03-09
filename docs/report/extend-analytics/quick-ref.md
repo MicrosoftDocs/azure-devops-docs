@@ -1,24 +1,23 @@
 ---
 title: Tasks & concepts using Data & Analytics
 titleSuffix: Azure DevOps  
-description: Supported tasks and concepts to generate results using OData backed Analytics for Azure DevOps 
+description: An index of articles that explain how to generate results using OData backed Analytics for Azure DevOps.
 ms.technology: devops-analytics
 ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/11/2021
+ms.date: 09/30/2020
 ---
 
 # Extend Analytics with OData (Preview) quick reference
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Using OData, you can directly query Analytics for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
+Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
-Use this quick reference to access information and sample queries using OData and Analytics. You can also find additional OData query examples in the articles available from [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md).
-
+Use this quick reference to access information and sample queries using OData and Analytics. You can find more OData query examples in the [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md) articles.
 
 ## Supported tasks 
 
@@ -68,8 +67,6 @@ Use this quick reference to access information and sample queries using OData an
       - [Sort results](wit-analytics.md#sort-results)  
    :::column-end:::
 :::row-end:::
-
- 
 
 ## Key concepts 
 
@@ -130,9 +127,6 @@ Use this quick reference to access information and sample queries using OData an
       - [Weekly or monthly snapshots for trend queries](odata-query-guidelines.md#perf-snapshots)  
    :::column-end:::
 :::row-end:::
-
-  
-
 
 ## Related articles
 - [Power BI](../powerbi/overview.md)  

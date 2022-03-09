@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 # Evaluate a Marketplace extension publisher 
 
-[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 *Can you trust an offering in the Marketplace?*
 
@@ -38,7 +38,7 @@ To evaluate a Marketplace extension, review the information and resources descri
 :::row:::
    :::column span="1":::
       **Top Publisher badge**  
-      ![Top Publisher badge.](media/top-publisher-badge.png) 
+      <img src="media/top-publisher-badge.png" alt="Top Publisher badge and label" width="120"/>
    :::column-end:::
    :::column span="2":::
       The publisher has demonstrated commitment to its customers and the Marketplace through excellent policies, quality, reliability, and support. Note: the Top Publisher program is currently only applicable to publishers of Azure DevOps offerings (extensions/integrations).

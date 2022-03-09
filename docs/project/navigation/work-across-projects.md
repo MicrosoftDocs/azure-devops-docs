@@ -2,10 +2,10 @@
 title: Work across projects 
 titleSuffix: Azure DevOps
 description: How to access work items, pull requests, team projects, and more using your account home page in Azure DevOps
-ms.custom: Navigation
+ms.custom: navigation, cross-project
 ms.technology: devops-collab
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
-ms.topic: conceptual
+ms.topic: quickstart
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ ms.date: 11/16/2020
 
 # Work across projects
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 When you work on several projects, you can use select pages to support your cross-project work. These pages provide quick access and filter functions to support your work within a single project or work you're doing across several projects.  
 
@@ -60,7 +60,7 @@ For additional notes on working across projects, see [Work across projects FAQs]
  
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
   ::: moniker-end  
 
 ## View and open work items

@@ -1,20 +1,20 @@
 ---
-title: Catalog of OOB widgets you can add to a dashboard
+title: Catalog of Out Of Box widgets you can add to a dashboard
 titleSuffix: Azure DevOps
-description: Determine which widgets you want to add to your dashboards when working in Azure DevOps   
-ms.custom: dashboards
+description: An index of widgets you might want to add to your dashboards when working in Azure DevOps.
+ms.custom: dashboards, contperf-fy22q1 
 ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'  
-ms.date: 08/24/2021
+ms.date: 02/14/2022
 ---
 
-# Widget catalog 
+# Out Of Box widget catalog 
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 ::: moniker range=">= tfs-2018"
 Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another. To learn how, see [Add a widget to a dashboard](add-widget-to-dashboard.md). 
@@ -28,11 +28,11 @@ Widgets display information and charts on dashboards. Many widgets are configura
 
 ![Build history widget](media/widget-build-history-chart.png)   
 
-This article provides a quick reference of all out-of-box (OOB) widgets that you can add to your dashboard. In addition to the OOB widgets, you may find additional widgets from the [Marketplace](#marketplace) or create your own.
+This article provides a quick reference of all out of box (OOB) widgets that you can add to your dashboard. In addition to the OOB widgets, you may find more widgets in the [Marketplace](#marketplace) or create your own.
 
 ## Supported OOB widgets
 
-Widgets listed in the following table are provided out-of-box. They are organized under the service they support. Widgets are annotated as follows: 
+Widgets listed in the following table are provided out-of-box. They're organized under the service they support. Widgets are annotated as follows: 
 
 ::: moniker range=">= azure-devops-2019"
 - **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md)  
@@ -146,7 +146,7 @@ Widgets listed in the following table are provided out-of-box. They are organize
       - [Test results trend](#test-trend-results) (Build or Release pipeline)  
       ---
       **Information and links**
-      - [Embedded web page](#embedded-webpage-widget)  
+      - [Embedded Webpage](#embedded-webpage-widget)  
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget)  
       - [Team members](#team-members-widget) (Team) 
@@ -167,7 +167,7 @@ Widgets listed in the following table are provided out-of-box. They are organize
       ---
       ::: moniker range="tfs-2018"
       **Information and links**
-      - [Embedded web page](#embedded-webpage-widget)  
+      - [Embedded Webpage](#embedded-webpage-widget) 
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget-2018)  
       - [Team members](#team-members-widget) (Team) 
@@ -176,7 +176,7 @@ Widgets listed in the following table are provided out-of-box. They are organize
       ::: moniker-end
       ::: moniker range="tfs-2017"
       **Information and links**
-      - [Embedded web page](#embedded-webpage-widget)  
+      - [Embedded Webpage](#embedded-webpage-widget)   
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget-2018)  
       - [Team members](#team-members-widget) (Team) 
@@ -207,38 +207,35 @@ Widgets listed in the following table are provided out-of-box. They are organize
 
 ## Prerequisites
 
-
 ::: moniker range="azure-devops"
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
 - To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
 ::: moniker-end
 
-
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
 - To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
 ::: moniker-end
 
 ::: moniker range="tfs-2017 || tfs-2018"
 
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 - To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).    
 
 ::: moniker-end
+
+> [!NOTE]
+> Data displayed within a chart or widget is subject to permissions granted to the signed in user. To learn more, see [FAQs on Azure DevOps dashboards, charts, and reports, Access and permissions](faqs.yml).
 
 ::: moniker range=">= azure-devops-2019"
 ## Azure Boards widgets 
@@ -261,7 +258,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="assigned-to-me-widget"></a>
-      Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items.
+      Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items and other work item types which are not aligned to any backlogs.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -274,7 +271,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="burndown-analytics-widget"></a>  
-      Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints.    
+      Adds a tile that displays a burndown chart that you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints.    
       
       To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
@@ -289,7 +286,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="burnup-analytics-widget"></a> 	    
-      Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints.  
+      Adds a tile that displays a burnup chart that you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints.  
       
       To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
@@ -321,7 +318,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="cfd-widget"></a>   
-      Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. Hover over each color within the chart to see the count of items for a particular Kanban column.  
+      Displays the cumulative flow of backlog items based on the time frame, team, backlog level, and swimlane you select. Hover over each color within the chart to see the count of items for a particular Kanban column.  
       
       From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget). 
    :::column-end:::
@@ -366,7 +363,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="new-work-item-widget"></a>
-      Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration.  
+      Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default **Area Path**. The **Iteration Path** assigned matches the last **Iteration Path** assigned to a work item by the currently signed in user.  
       
       To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
       ::: moniker range="tfs-2015"
@@ -396,7 +393,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="query-tile-widget"></a> 
-      Adds a configurable tile to display the summary of a shared query results.
+      Adds a configurable tile to display the summary of shared query results.
       From the configuration dialog, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query. 
       
       To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
@@ -507,7 +504,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="work-links-widget"></a> 
-      Provides quick access to open the following Agile tools and team resources:     
+      Provides quick access to open these Agile tools and team resources:     
       
       - [Backlog](../../boards/backlogs/create-your-backlog.md)   
       - [Kanban board](../../boards/boards/kanban-basics.md)    
@@ -536,7 +533,7 @@ Add code tracking widgets to track changes made within a repository or get quick
    :::column span="1":::
       <br/>
       <a id="code-tile-widget"></a> 
-      Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply choose the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
+      Adds a configurable tile to display the summary of a code folder or Git repository. To configure, select the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -547,7 +544,7 @@ Add code tracking widgets to track changes made within a repository or get quick
    :::column span="1":::
       <br/>
       <a id="pull-request-widget"></a> 
-      Adds a configurable widget to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the team and  Git repository for the pull requests of interest.   
+      Adds a configurable widget to display active PRs requested by the team, or assigned to or requested by the person logged in. Select the team and  Git repository for the pull requests of interest.   
       
       To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
    :::column-end:::
@@ -584,7 +581,7 @@ Add the Build History pipeline widget to track the health of your builds.
       <a id="build-history-widget"></a> 
       Adds a tile to display a histogram of all builds run for the configured build pipeline.
       From the configuration dialog, select the build you want to monitor. 
-      Hover over a bar to learn how long the build took to complete. Choose the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+      Hover over a bar to learn how long the build took to complete. Select the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= tfs-2017"
@@ -596,8 +593,8 @@ Add the Build History pipeline widget to track the health of your builds.
    :::column span="1":::
       <br/>
       <a id="deployment-status-widget"></a> 
-      Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines.  
-      In order to view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate.   
+      Configurable widget that shows a combined view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines.  
+      To view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate.   
       
       You can choose any cell to see a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
       Requires TFS 2017.1 or later version. 
@@ -628,7 +625,7 @@ Add the Build History pipeline widget to track the health of your builds.
    :::column span="1":::
       <br/>
       <a id="requirements-quality-widget"></a>  
-      Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability e.g. requirements not meeting the quality, requirements not tested etc.   
+      Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability. For example, requirements not meeting the quality, requirements not tested, and so on.   
       
       To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
    :::column-end:::
@@ -671,7 +668,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="test-trend-results"></a> <a id="test-results-widget"></a>
-      Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.    
+      Adds a configurable tile that displays the trend of test results for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.    
       
       From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart.    
       
@@ -701,7 +698,10 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
 
 ## Informational content and other links 
 
-Add one or more of the following widgets to support adding configurable content or links to features or functions your team accesses often.
+Add one or more of the following widgets to support adding:
+- Configurable content
+- Links to features
+- Functions your team accesses often
 
 ::: moniker range=">= tfs-2017"
 :::row:::
@@ -775,7 +775,7 @@ Add one or more of the following widgets to support adding configurable content 
       - [View process guidance](../../project/configure-or-redirect-process-guidance.md)  
       - [View reports](../sql-reports/reporting-services-reports.md)  
       
-      To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
+      To add or update reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -805,7 +805,7 @@ Add one or more of the following widgets to support adding configurable content 
       <br/>
       <a id="team-room-widget"></a> 
       Provides status and access to [team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room). Available for TFS 2015.1 through TFS 2017.2 versions.  
-      Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.     
+      Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create more team rooms.     
       
       > [!NOTE]  
       > Team Rooms have been deprecated as described in [Deprecation of Team Rooms](https://devblogs.microsoft.com/devops/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).
@@ -843,7 +843,7 @@ Add one or more of the following widgets to support adding configurable content 
 
 ## Marketplace widgets
 
-You may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
+You may find more widgets of interest in the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
@@ -859,6 +859,7 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 ## Related articles
 
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Track progress with status and trend query-based charts](charts.md)
 - [Add, rename, and delete dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  

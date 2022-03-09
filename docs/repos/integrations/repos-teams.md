@@ -3,15 +3,16 @@ title: Azure Repos with Microsoft Teams
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Microsoft Teams
 ms.technology: devops-code-git
-ms.topic: conceptual
-ms.manager: gopinach
-ms.author: divais
-author: Divya
+ms.topic: how-to 
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/21/2019
+ms.date: 10/28/2021
 ---
 
 # Azure Repos with Microsoft Teams
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the 
 [Azure Repos app for Teams](https://appsource.microsoft.com/product/office/WA200000643) to easily monitor your repositories. 
@@ -33,15 +34,12 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
-To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
-- To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization, see [Change application 
-access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
-- To enable subscriptions, the project and/or repository must be public, see [Make your project public or private](../../organizations/public/make-project-public.md).
+- To create subscriptions for repository-related events, you must be a member of the **Project Administrators** group, or a team administrator.  To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
+- To receive notifications, you must enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
 > * Notifications are currently not supported inside direct messages.
-> * You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services at this time.
+> * You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services.
 
 ## Add the Azure Repos app to your team in Microsoft Teams
 
@@ -98,9 +96,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    ```
    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
    ```
-   
-   > [!NOTE]
-   > You can subscribe only to public repositories. 
+ 
 
 3. The `subscribe` command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event (with target branch = master). For TFVC repositories, the channel is subscribed to the **Code checked in** event.
 

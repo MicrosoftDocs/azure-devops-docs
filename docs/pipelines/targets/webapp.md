@@ -4,22 +4,22 @@ description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.topic: conceptual
 ms.assetid:
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy22q1, devx-track-azurecli
 ms.author: jukullam
 author: juliakm
-ms.date: 08/23/2021
+ms.date: 03/03/2022
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy an Azure Web App
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. 
+Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 
-Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
+YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](/azure/devops/pipelines/get-started/key-pipelines-concepts).
 
 You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. For more complicated scenarios such as needing to use XML parameters in your deploy, you can use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md).  
 
@@ -65,13 +65,13 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet --ru
 ```
 # [Windows](#tab/windows)
 
-Create an Azure App Service on Linux.
+Create an Azure App Service on Windows.
 
 ```azurecli
 # Create a resource group
 az group create --location eastus2 --name myapp-rg
 
-# Create an app service plan of type Linux
+# Create an app service plan of type Windows
 az appservice plan create -g myapp-rg -n myapp-service-plan
 
 # Create an App Service from the plan 
@@ -84,11 +84,7 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet-win 
 
 ::: moniker range="azure-devops"
 
-To get started, fork the following repository into your GitHub account.
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core
-```
+[!INCLUDE [include](../includes/dotnet-setup.md)]
 
 ### Create your pipeline
 
@@ -167,20 +163,14 @@ YAML pipelines aren't available on TFS.
 
 To get started: 
 
-1. Fork this repo in GitHub, or import it into Azure Repos:
+1. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
-   ```
-   https://github.com/MicrosoftDocs/pipelines-dotnet-core
-   ```
+2. Save the pipeline and queue a build to see it in action.
 
-2. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
-
-3. Save the pipeline and queue a build to see it in action.
-
-4. Create a release pipeline and select the **Azure App Service Deployment** template for your stage.
+3. Create a release pipeline and select the **Azure App Service Deployment** template for your stage.
    This automatically adds the necessary tasks. 
 
-5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
+4. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
 ---
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
@@ -425,39 +415,50 @@ By using jobs, you can control the order of deployment to multiple web apps.
 
 ```yaml
 jobs:
-
 - job: buildandtest
   pool:
-    vmImage: 'ubuntu-latest'
+    vmImage: ubuntu-latest
+ 
   steps:
   # publish an artifact called drop
-  - task: PublishBuildArtifacts@1
+  - task: PublishPipelineArtifact@1
     inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)' 
       artifactName: drop
-
+  
   # deploy to Azure Web App staging
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<test stage Azure service connection>'
+      azureSubscription: '<Azure service connection>'
+      appType: <app type>
       appName: '<name of test stage web app>'
+      deployToSlotOrASE: true
+      resourceGroupName: <resource group name>
+      slotName: 'staging'
+      package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
 
 - job: deploy
-  pool:
-    vmImage: 'ubuntu-latest'
   dependsOn: buildandtest
   condition: succeeded()
-  steps:
 
-  # download the artifact drop from the previous job
-  - task: DownloadBuildArtifacts@0
-    inputs:
-      artifactName: drop
+  pool: 
+    vmImage: ubuntu-latest  
   
-  # deploy to Azure Web App production
+  steps:
+    # download the artifact drop from the previous job
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      source: 'current'
+      artifact: 'drop'
+      path: '$(Pipeline.Workspace)'
+
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<prod Azure service connection>'
-      appName: '<name of prod web app>'
+      azureSubscription: '<Azure service connection>'
+      appType: <app type>
+      appName: '<name of test stage web app>'
+      resourceGroupName: <resource group name>
+      package: '$(Pipeline.Workspace)/**/*.zip'
 ```
 
 ::: moniker-end
@@ -584,4 +585,67 @@ In your release pipeline, you can implement various checks and conditions to con
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
+
+## (Classic) Deploy with a release pipeline
+
+You can use a release pipeline to pick up the artifacts published by your build and then deploy them to your Azure web site.
+
+1. Do one of the following to start creating a release pipeline:
+
+   * If you've just completed a CI build, choose the link (for example, _Build 20170815.1_)
+     to open the build summary. Then choose **Release** to start a new release pipeline that's automatically linked to the build pipeline.
+
+   * Open the **Releases** tab in **Azure Pipelines**, open the **+** drop-down
+     in the list of release pipelines, and choose **Create release pipeline**.
+
+1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node.js app, select the **Deploy Node.js App to Azure App Service** template.
+   Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
+
+   > [!NOTE]
+   > The only difference between these templates is that Node.js template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
+
+1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
+   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
+   the **Releases** tab, choose the **+ Add** link and select your build artifact.
+
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
+   continuous deployment trigger is enabled, and add a filter to include the **main** branch.
+
+   > [!NOTE]
+   > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
+
+1. Open the **Tasks** tab and, with **Stage 1** selected, configure the task property variables as follows:
+
+   * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
+     If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../library/connect-to-azure.md) to manually set up the connection.
+
+   * **App Service Name**: Select the name of the web app from your subscription.
+
+    > [!NOTE]
+    > Some settings for the tasks may have been automatically defined as
+    > [stage variables](../release/variables.md#custom-variables)
+    > when you created a release pipeline from a template.
+    > These settings cannot be modified in the task settings; instead you must
+    > select the parent stage item in order to edit these settings.
+    
+
+1. Save the release pipeline.
+
+### Create a release to deploy your app
+
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+
+1. Choose **+ Release** and select **Create a release**.
+
+1. In the **Create a new release** panel, check that the artifact version you want to use is selected and choose **Create**.
+
+1. Choose the release link in the information bar message. For example: "Release **Release-1** has been created".
+
+1. In the pipeline view, choose the status link in the stages of the pipeline to see the logs and agent output.
+
+1. After the release is complete, navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
+
+
 [!INCLUDE [include](includes/webapp/deploy-options.md)]
+

@@ -1,18 +1,18 @@
 ---
 title: Azure Key Vault task
-description: Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+description: Use the Azure Key Vault task in Azure Pipelines to use key vault secrets in your pipelines
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 06/17/2020
+ms.date: 09/30/2021
 monikerRange: '> tfs-2018'
 ---
 
 # Azure Key Vault task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 ### Overview
 
@@ -26,22 +26,18 @@ The task is Node-based, and works with agents on Linux, macOS, and Windows.
 The task has the following Prerequisites:
 
 * An Azure subscription linked to Azure Pipelines or Team Foundation Server using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
-
 * An [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) containing the secrets.
 
 You can create a key vault:
 
 * In the [Azure portal](https://ms.portal.azure.com/#create/Microsoft.KeyVault)
-
 * By using [Azure PowerShell](/azure/key-vault/key-vault-get-started)
-
 * By using the [Azure CLI](/azure/key-vault/key-vault-manage-with-cli2)
 
 Add secrets to a key vault:
 
 * By using the PowerShell cmdlet [Set-AzureKeyVaultSecret](/powershell/module/azurerm.keyvault/set-azurekeyvaultsecret).
   If the secret does not exist, this cmdlet creates it. If the secret already exists, this cmdlet creates a new version of that secret.
-
 * By using the Azure CLI. To add a secret to a key vault, for example a secret named **SQLPassword** with the value **Pa$$w0rd**, type:
 
   ```azurecli
@@ -54,11 +50,8 @@ When you want to access secrets:
   on the vault. You can set these permissions in the [Azure portal](https://portal.azure.com):
 
   - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
-
   - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
-
   - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
-
   - Choose **OK** to save the changes.<p />
   
 > [!NOTE]
@@ -69,7 +62,7 @@ When you want to access secrets:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../includes/yaml/AzureKeyVaultV1.md)]
+[!INCLUDE [temp](../includes/yaml/azure-key-vault-v2.md)]
 
 ::: moniker-end
 
@@ -79,10 +72,10 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
-|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
-|`RunAsPreJob`<br/>Make secrets available to whole job| (Required) Run the task before job execution begins. Exposes secrets to all tasks in the job, not just tasks that follow this one. <br/>Default value: `false`|
+|`connectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`keyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`secretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
+|`runAsPreJob`<br/>Make secrets available to whole job| (Required) Run the task before job execution begins. Exposes secrets to all tasks in the job, not just tasks that follow this one. <br/>Default value: `false`|
 
 :::moniker-end
 
@@ -90,9 +83,9 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
-|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+|`connectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`keyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`secretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
 
 :::moniker-end
 
@@ -123,12 +116,7 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 [System.IO.File]::WriteAllBytes($pfxPath, $protectedCertificateBytes)
 ```
 
-For more details, see [Get started with Azure Key Vault certificates](/archive/blogs/kv/get-started-with-azure-key-vault-certificates).
-
-## Contact Information
-
-Contact [RM\_Customer\_Queries@microsoft.com](mailto:RM_Customer_Queries@microsoft.com) if you discover issues using the task, to share feedback about the task,
-or to suggest new features that you would like to see.
+For more information, see [Get started with Azure Key Vault certificates](/archive/blogs/kv/get-started-with-azure-key-vault-certificates).
 
 ## Open source
 
@@ -145,6 +133,6 @@ This occurs if the required permissions are missing in the Azure key vault. To r
 
 ### I can't connect with Key Vault from Azure DevOps.
 
-This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Datacenter (TFS) can access the key vault. Ensure that the [agent IP ranges for Microsoft-hosted agents](../../agents/hosted.md#agent-ip-ranges) are allow listed.
+This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Datacenter (TFS) can access the key vault. Ensure that the [agent IP ranges for Microsoft-hosted agents](../../agents/hosted.md#agent-ip-ranges) are allowed.
 
 <!-- ENDSECTION -->

@@ -13,7 +13,7 @@ ms.date: 10/06/2020
 
 # Get started sample
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 ## Personal access tokens
 
@@ -48,7 +48,7 @@ ListOfProjectsResponse.Projects viewModel = null;
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri($"https://dev.azure.com/{OrgName}");  //url of your organization
+    client.BaseAddress = new Uri($"https://dev.azure.com/{OrgName}/");  //url of your organization
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 

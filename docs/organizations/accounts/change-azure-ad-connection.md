@@ -8,13 +8,13 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 06/09/2021
+ms.date: 10/15/2021
 monikerRange: 'azure-devops'
 ---
 
-# Change your organization connection to another Azure AD
+# Change your organization connection to a different Azure AD
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 If you need to switch your organization connection from one Azure Active Directory (Azure AD) to another, complete the following steps.
 
@@ -31,6 +31,10 @@ Before you switch your organization directory, make sure the following statement
 Do the following task:
 
 - Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/). You can find the steps for how to recreate SSH keys [further in this article](#inform-users-of-the-completed-change).
+
+> [!IMPORTANT]
+> Users and groups that inherit membership and permissions from an Azure AD group, will no longer inherit those permissions after the transfer. Azure AD groups that were added to your Azure DevOps organization don't get transferred and will cease to exist in your organization when the Azure AD connection is changed. All permissions and membership relationships made with these Azure AD groups will also cease to exist after the transfer.
+          
 
 ## Change the Azure AD connection
 
@@ -67,7 +71,7 @@ Do the following task:
 
 When you inform your users of the completed change, include the following tasks for each user in the organization to complete:
 
-- [Change your organization connection to another Azure AD](#change-your-organization-connection-to-another-azure-ad)
+- [Change your organization connection to a different Azure AD](#change-your-organization-connection-to-a-different-azure-ad)
   - [Prerequisites](#prerequisites)
   - [Change the Azure AD connection](#change-the-azure-ad-connection)
   - [Inform users of the completed change](#inform-users-of-the-completed-change)
@@ -98,7 +102,7 @@ Complete the following steps to [Regenerate new personal access tokens](use-pers
 
    ![Create new token](media/shared/create-new-personal-access-token.png)
 
-4. When the token is created, copy it, as it can't be viewed again.
+4. Copy your token and put it in a safe place, as it can't be viewed again.
 
 ### Recreate SSH keys
 
@@ -116,7 +120,7 @@ Complete the following steps to recreate your SSH keys.
 
    ![Add info to create SSH key](media/shared/add-ssh-public-key-info.png)
 
-4. Cope your token, as it can't be viewed again.
+4. Copy your key and put it in a safe place, as it can't be viewed again.
 
 ### Rename your MSA
 

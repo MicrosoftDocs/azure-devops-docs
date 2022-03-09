@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Update Service Fabric Manifests task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="= tfs-2017"
 

@@ -1,17 +1,17 @@
 ---
 title: Undo changes in your Git repo
 titleSuffix: Azure Repos
-description: Undoing Changes with Git in Azure Repos using reset and revert 
-ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
+description: Use git reset or revert to undo changes in Git repo 
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 09/10/2018
+ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
 ---
 
 # Undo changes
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 When undoing changes in Git, first decide what type of changes you are looking to undo. These changes fall into three categories:
 
@@ -52,15 +52,17 @@ Visual Studio 2015 &amp; 2017
 #### [Command Line](#tab/command-line/)
 You can use the `checkout` command and give it the filename(s) to change. Use wildcards for undoing changes to multiple files.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git checkout <font color="#b5bd68">approuter.js</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git checkout approuter.js
+```
 
 You can revert the file to the version in a specific commit by providing the commit ID:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git checkout <font color="#b5bd68">38035acd2 approuter.js</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git checkout 38035acd2 approuter.js
+```
 
 This differs from the earlier use of the `checkout` command used to swap to a different [branch](./create-branch.md). 
 Git will tell you if it is changing a file or swapping between branches in the output, and complain if it's not clear which one you are trying to do.
@@ -84,10 +86,11 @@ select **Revert** from the context menu.
 
 # [Command Line](#tab/command-line)
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git revert <font color="#b5bd68">8437fbaf</font>
-&gt; git commit
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git revert 8437fbaf
+> git commit
+```
 
 These commands will undo the changes made in commit 8437fbaf and create a new commit on the branch. The original commit at `commit_id` is still in the Git history.
 `Revert` is flexible but it requires a branch history and commit identifiers to use. Review your [history](review-history.md) to find the commits you want to revert. 
@@ -111,14 +114,17 @@ to simply discard all changed files since the last commit and return the files t
     ![Reset a branch from Visual Studio](media/vs_reset_branch.png)
 
 #### [Command Line](#tab/command-line/)
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git reset --hard HEAD 
-</pre>
+
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git reset --hard HEAD 
+```
 
 The `--hard` part of the command tells Git to reset the files to the state of the previous commit and discard any staged changes. 
 The `HEAD` argument tells Git to reset the local repository to the most recent commit. If you want to reset the repo to a different commit, provide the ID instead of HEAD.
 
 * * *
+* 
 A `reset` affects all files in the current branch on the repository, not just those in your current directory. `Reset` only discards changes that haven't 
 been committed yet.
 

@@ -1,20 +1,20 @@
 ---
 title: Drive Git development from user story and requirements  
 titleSuffix: Azure Boards 
-description: Create a branch, commit, or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+description: Learn how to create a branch, commit, or a pull request in Azure Boards. Also, automatically link work items with source control branches, builds, and commits. 
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ---
 
-# Drive Git development from a work item   
+# Drive Git development from a work item in Azure Boards   
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -29,7 +29,7 @@ Review this article to learn:
 
 
 ::: moniker range=">= azure-devops-2019"  
-This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
+This article addresses creating new branches, adding links to commits, and adding pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
 ::: moniker-end
 
 > [!TIP]
@@ -54,7 +54,7 @@ The **Development** control records all Git development processes that support c
 > The **Development** control within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later Azure DevOps Server version](https://visualstudio.microsoft.com/downloads/). 
 ::: moniker-end
 
-From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
+From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can start a pull request for a branch you've created or linked to from the work item.  
 
 Keep in mind that the **Development** control only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients don't display several of the features that are available from the web portal. 
 
@@ -62,7 +62,7 @@ Keep in mind that the **Development** control only appears within the web portal
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+* Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
@@ -70,7 +70,7 @@ Keep in mind that the **Development** control only appears within the web portal
 
 ::: moniker range="< azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
@@ -81,7 +81,7 @@ Keep in mind that the **Development** control only appears within the web portal
 
 ## Workflow process 
 
-Consider creating a new branch when there are no linked code artifacts. If there is a branch but no pull requests, consider creating a pull request. Here's a typical workflow sequence when working with a Git repository. 
+Consider creating a new branch when there are no linked code artifacts. If a branch exists, but no pull requests, consider creating a pull request. Here's a typical workflow sequence when working with a Git repository. 
 
 1. Start work on the work item by creating a branch. You can add a new Git branch from within the Development section...  
 
@@ -105,11 +105,11 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	> [!NOTE]  
 	> You can only create a branch once you've added files to the main branch, which we recommend you label ```main``` or other distinctive label. The system automatically adds a README file to the initial repo created with each new project.   
 
-2. The system will open to the repository and branch that you just created. 
+2. The system will open to the repository and branch that you created. 
 
 	You can edit a file within the web portal. 
 
-	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you just created. For details, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process will work, we work best with an edition of Visual Studio.)  
+	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you created. For details, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process will work, we work best with an edition of Visual Studio.)  
 
 3. Add or modify files in the branch that you created.   
 
@@ -117,7 +117,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	![Commit and push changes](media/git/git-dev-commit-sync.png)  
 
-	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more details, see [Share code with push](../../repos/git/pushing.md).   
+	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more information, see [Share code with push](../../repos/git/pushing.md).   
 
 4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md) from the work item form.  
 
@@ -143,7 +143,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	> [!div class="mx-imgBorder"]
 	> ![Pull request, completed notification](media/git/git-dev-pr-completed.png)
 
-7.	Open the work item form or refresh the form, expand the **Development** section (choose **Maximize Development** :::image type="icon" source="../media/icons/full-screen-icon.png" border="false":::), and you'll see the links that have been added to support the operations you just completed.  
+7.	Open the work item form or refresh the form, expand the **Development** section (choose **Maximize Development** :::image type="icon" source="../media/icons/full-screen-icon.png" border="false":::), and you'll see the links that have been added to support the operations you completed.  
 
 	![Work item form, Development section, links added](media/git/git-dev-development-section-completed-links.png)  
 
@@ -167,7 +167,7 @@ And, we specify the name of the branch.
 
 ## Link to existing development and build objects
 
-All items listed under the Development section also appear under the **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab. All development actions initiated from the Development section are also recorded under the **History** :::image type="icon" source="media/icon-history-tab-wi.png" border="false"::: tab. 
+All items listed under the Development section also appear under the **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab. All development actions started from the Development section are also recorded under the **History** :::image type="icon" source="media/icon-history-tab-wi.png" border="false"::: tab. 
 
 ![Links tab, development links](media/add-work-item-dev-links.png)  
 
@@ -195,8 +195,6 @@ Or, you can select it from the **Links** :::image type="icon" source="media/icon
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
 - [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
 
-
-
 ### Associated work items in build 
 
 With Git commits, any work items that have been linked to a commit are listed under the Associated work items in the build summary page.  
@@ -208,7 +206,7 @@ With Git commits, any work items that have been linked to a commit are listed un
 
 ### Link types showing in the Development section
 
-Links shown in this section appear as a result of these actions:   
+Links shown in this section appear because of these actions:   
 - Creating a branch, commit, or pull request from the work item    
 - Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation   
 - Specifically linking the work item from the **Development** section or **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab to a source code branch, build, or other supported Git or TFVC operation.  

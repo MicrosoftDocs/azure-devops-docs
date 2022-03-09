@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Azure File Copy task version 3 or earlier
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).

@@ -1,7 +1,7 @@
 ---
 title: Resolve Git merge conflicts
 titleSuffix: Azure Repos
-description: Resolving Merge Conflicts in Git from Visual Studio or the command line.
+description: Resolve merge conflicts in Git from Visual Studio or the command line.
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.technology: devops-code-git 
 ms.topic: tutorial
@@ -11,7 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Resolve merge conflicts
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes in the other.
 Git attempts to resolve these changes by using the [history](review-history.md) in your repo to determine what the merged files should look like.

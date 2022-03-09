@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Copy Files Over SSH task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to copy files from a source folder to a target folder on a remote machine over SSH.
 

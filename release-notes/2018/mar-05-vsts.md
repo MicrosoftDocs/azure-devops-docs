@@ -37,7 +37,7 @@ In this Update, you’ll find two new [repository settings](/azure/devops/git/co
 
 ### Focus on important work using the Work Items hub
 
-While queries, backlogs, and boards give you a number of ways to see your work, we want the work that is most important to you to be right at your fingertips. After a 6-month preview of the **Work Items** hub, it’s now available to everyone. We have iterated on the hub a lot since the start of [preview](../2017/aug-28-team-services.md#work-items-hub), and below includes a few of the changes we’ve made.
+While queries, backlogs, and boards give you a number of ways to see your work, we want the work that is most important to you to be right at your fingertips. After a 6-month preview of the **Work Items** hub, it’s now available to everyone. We have iterated on the hub a lot since the start of [preview](/previous-versions/azure/devops/release-notes/2017/aug-28-team-services#work-items-hub), and below includes a few of the changes we’ve made.
 
 The **Work Items** Hub now has 4 person-centric pivots to allow you to focus on what is important to you, as well as 3 project-centric views to get a better idea of your project’s work.
 
@@ -89,7 +89,7 @@ Previously, as part of a deployment phase, you could choose to either download a
 
 ### Improve code quality with the latest extensions from SonarSource
 
-SonarSource recently released an updated [SonarQube extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube) and a new [SonarCloud extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud), which enable static code analysis for numerous languages. The VSTS Gradle and Maven tasks take advantage of these extensions for Java builds in particular. Just enable **Run SonarQube or SonarCloud Analysis** on version 2.* of the Gradle or Maven task, then add the **Prepare** and **Publish** SonarQube/SonarCloud tasks as shown below. See the [Analyzing with SonarQube](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS) documentation for more information.
+SonarSource recently released an updated [SonarQube extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube) and a new [SonarCloud extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud), which enable static code analysis for numerous languages. The VSTS Gradle and Maven tasks take advantage of these extensions for Java builds in particular. Just enable **Run SonarQube or SonarCloud Analysis** on version 2.* of the Gradle or Maven task, then add the **Prepare** and **Publish** SonarQube/SonarCloud tasks as shown below.
 
 > [!div class="mx-imgBorder"]
 > ![Tasks for Gradle and Maven](media/131_03.png)

@@ -2,18 +2,18 @@
 title:  Define iteration paths and configure team iterations
 titleSuffix: Azure Boards 
 description: Learn how to define the iteration and sprint fields when you assign work items and configure dashboards in Azure DevOps.
-ms.technology: devops-agile
+ms.technology: devops-settings 
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2021
+ms.date: 02/03/2022
 ---
 
 # Define iteration paths (sprints) and configure team iterations 
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Iteration Paths, also referred to as *sprints*, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. Iteration paths are a shared resource used by all teams that select them. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
@@ -33,7 +33,7 @@ For information about naming restrictions and limits placed on addition of Itera
 - To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**. 
 - To set team iteration paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
 
-For more information about acquiring permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md) or [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
+For more information about acquiring permissions, see [Change project-level permissions](../security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
 
 ## Get started
 
@@ -369,6 +369,9 @@ az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --
 
 You can set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
 
+> [!NOTE]  
+> Teams can be assigned a maximum of 300 **Iteration Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
+
 #### [Browser](#tab/browser) 
 
 ::: moniker range=">= azure-devops-2019"
@@ -475,11 +478,14 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-3. **Default iteration**. The default iteration defines the iteration that's used when you create a work item from the team dashboard and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
+3. **Default iteration**. The default iteration defines the iteration that's used when you create a work item from the team backlog or Kanban board. You can specify any iteration defined under the **Backlog iteration** path. To assign new work items to the current iteration, specify **@CurrentIteration**. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
 
 	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.  
 
 	![Screenshot of Work, Iterations page for team, set team default for new work items for Azure DevOps Server 2019 and on.](media/team-defaults/stdefaults-team-default-iteration-vert.png)
+
+	> [!NOTE]   
+	> New work items added through the **Work Items** page or the **New Work Items** widget on a team dashboard don't reference the **Default Iteration Path** assigned to the team. Instead, new work items are assigned the last **Iteration Path** selected by the user. New work items added through a team's **Sprints** backlog or taskboard are always assigned the **Iteration Path** associated with the selected sprint. 
 
 4. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
 

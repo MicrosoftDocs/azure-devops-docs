@@ -6,23 +6,29 @@ ms.technology: devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 09/10/2020
 ---
 
 # Add team, go from one default team to others
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your organization grows, make sure that you configure your Agile tools to support that growth. Each team needs their own set of team tools to enable the autonomy it needs to manage their backlog and plan their sprints. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-Each new project is configured with a default team with the project name. You can rename the default team and you can reassign a new team as the default. 
+Each new project is configured with a default team with the project name. You can rename the default team and you can reassign a new team as the default. For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/devops/plan/scaling-agile) article.
+
+Use this article to learn how to perform the following tasks: 
+> [!div class="checklist"]   
+> * Move from one team to two teams
+> * Add members to a team       
+> * Move work items to a team backlog
+> * Set the default team for a project  
 
 > [!NOTE]    
 > This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
->
-> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/devops/plan/scaling-agile) article.
+
 
 <a id="add-team"> </a>  
 
@@ -31,7 +37,7 @@ As your team grows, you can easily move from one team to two. In this example, w
 ## Prerequisites 
 
 - If you don't have a project yet, [create one](../projects/create-project.md).  
-- If you're not a Project Administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
+- To add a team, you must be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
 
 ## Add two feature teams 
 
@@ -147,7 +153,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 <a id="add-team-tfs-2015" />
 
@@ -374,7 +380,13 @@ Now that your two feature teams are configured, you need to move existing work i
 
 #### [New Teams page](#tab/preview-page)
 
-[!INCLUDE [note-new-teams-not-supported](../../includes/note-new-teams-not-supported.md)]
+1. [Create a query](../../boards/queries/using-queries.md) of all work items you want to reassign. Multi-select those items, which belong to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
+
+   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items, New Teams page." />
+
+2. After you bulk modify, do a bulk save.  
+  
+   <img src="media/add-team/query-bulk-save.png" alt="Screenshot of Bulk save edited work items, New Teams page." />  
 
 #### [Current page](#tab/current-page) 
  
@@ -382,7 +394,7 @@ Now that your two feature teams are configured, you need to move existing work i
 
 1. [Create a query](../../boards/queries/using-queries.md) of all work items you want to reassign. Multi-select those items, which belong to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
 
-   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items" />
+   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items." />
 
 2. After you bulk modify, do a bulk save.  
   
@@ -672,7 +684,7 @@ For more information on setting permissions and access for select users, see [Se
 
 ::: moniker range="< azure-devops" 
 
-If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
+If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 
 ::: moniker-end 
 
@@ -680,8 +692,8 @@ If your deployment is integrated with SQL Server Reports, you need to [Grant per
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites. 
 
--  [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) 
--  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
+-  [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) 
+-  [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 
 ::: moniker-end 
 

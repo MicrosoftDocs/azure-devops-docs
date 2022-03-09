@@ -1,7 +1,7 @@
 ---
 title: Fork your repository
 titleSuffix: Azure Repos
-description: Learn to isolate code using forks in Azure DevOps Services & TFS
+description: Learn to isolate code using forks in Azure DevOps Services 
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.technology: devops-code-git 
 ms.topic: conceptual
@@ -12,7 +12,8 @@ monikerRange: '>= tfs-2018'
 
 # Forks
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
  
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to push the changes back to the original repository.

@@ -1,8 +1,8 @@
 ---
-title: Expedite work with swimlanes
+title: Visualize the status of work by using swimlanes
 titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
-description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards 
+description: Learn how to use swimlanes to differentiate different types of work you track on the Kanban board in Azure Board.
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
@@ -10,14 +10,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 09/24/2020
+ms.date: 10/15/2021
 ---
 
-# Expedite work with swimlanes
+# Speed up your team's work by using swimlanes in your Kanban board
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
-Your Kanban board supports your ability to visualize the flow of work as it moves from just defined to completed. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
+Your Kanban board helps you visualize the flow of work as it moves from defined to completed. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
 For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked&mdash;to track high-priority work, standard work, and work that's currently blocked.  
 
@@ -40,7 +40,7 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 
 ## Track work in swimlanes  
 
-Once you've set up your swimlanes, you can drag items into a swimlane as well as reorder them within the lane.  
+Once you've set up your swimlanes, you can drag items into a swimlane and also reorder them within the lane.  
 
 > [!TIP]  
 > When you have many swimlanes or cards on your board, you may encounter slow performance when dragging a card. We recommend that you use swimlanes in conjunction with card styles, tags, and board filters to manage your work items. If you have a lot of cards in the default lane, place that lane lower on the board to enhance performance when dragging a card to another swimlane.  
@@ -97,7 +97,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
     
-3. To reorder your swimlanes, simply grab the lane and move it up or down.   
+3. To reorder your swimlanes, grab the lane and move it up or down.   
 
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Reorder a swimlane](media/expedite/swimlanes-reorder.png)  
@@ -127,7 +127,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
     
-4. To reorder your swimlanes, simply grab the lane and move it up or down. 
+4. To reorder your swimlanes, grab the lane and move it up or down. 
 
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Reorder a swimlane](media/expedite/swimlanes-reorder.png)  
@@ -159,7 +159,7 @@ Once you've identified one or two, add them to your Kanban board.
    ![Add a swimlane](media/ALM_SW.AddLane.png)     
    The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it.   
     
-10. To reorder your swimlanes, simply grab the lane and move it up or down.   
+10. To reorder your swimlanes, grab the lane and move it up or down.   
      <img src="media/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" />   
 
 11. If you need to delete a lane, first move all items out of the lane. Then, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete**.      
@@ -180,7 +180,7 @@ You can track which work items have been added to a Kanban board swimlane by cre
 
 ::: moniker range="tfs-2015"  
 
-## Track lane moves  
+## Track moves across swimlanes 
 
 **For TFS 2015.1 and later versions**  
 
@@ -192,7 +192,7 @@ Similar to the way [column moves are tracked](add-columns.md), swimlane moves ar
 
 <img src="media/ALM_EW_HistorySwimLanes.png" alt="Work item form, History tab, History of a swimlane move" />   
 
-For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md) for all items in a particular swimlane. To perform such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../queries/add-tags-to-work-items.md) each item in a similar way.  
+For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md) for all items in a particular swimlane. To do such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../queries/add-tags-to-work-items.md) each item in a similar way.  
 ::: moniker-end  
 
 

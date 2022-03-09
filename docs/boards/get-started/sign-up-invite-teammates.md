@@ -1,21 +1,21 @@
 ---
-title: Start using Azure Boards
+title: Sign up for and invite teammates to use projects in Azure Boards
 titleSuffix: Azure Boards
-description: Quickstart guide to signing up and inviting others to join a team project in Azure Boards
+description: Learn how to sign up for and invite others to join a team project in Azure Boards.
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 07/22/2021
+ms.date: 09/15/2021
 ---
 
 
 
 # Sign up for free and invite others to collaborate in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Sign up for an Azure DevOps and Azure Boards to start planning and tracking work. We walk you through the sign-up process for [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following tasks: 
 - Create a private or public project with Azure Boards enabled services  
@@ -222,7 +222,7 @@ Your first project is automatically created using the Basic process and a Git re
 
 <a id="invite-others" />
 
-## Invite team members
+## Invite team members to your project
 
 You can add and invite others to work on your project by adding their email address to your organization and project.
 
@@ -254,7 +254,7 @@ For more information, see [Add users or groups to a team or project](../../organ
 
 <a id="change-settings" />
 
-## Change organization or project settings
+## Change your organization or project settings
 
 You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
 
@@ -262,7 +262,7 @@ You can rename and delete your organization, or change the organization location
 - [Rename an organization](../../organizations/accounts/rename-organization.md)
 - [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 
-You can rename your project or change it's visibility. To learn more about managing projects, see the following articles:
+You can rename your project or change its visibility. To learn more about managing projects, see the following articles:
 
 - [Manage projects](../../organizations/projects/about-projects.md)  
 - [Rename a project](../../organizations/projects/rename-project.md)  

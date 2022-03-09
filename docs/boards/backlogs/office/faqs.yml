@@ -1,25 +1,25 @@
 ### YamlMime:FAQ
 metadata:
   title: Work in Excel connected to Azure Boards FAQs
-  description: Answers to frequently asked questions about Excel and Azure Boards 
+  description: Learn answers to frequently asked questions about Excel and Azure Boards.
   titleSuffix: Azure Boards
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 03/03/2021
+  ms.date: 11/04/2021
 
 
 title: Work in Excel connected to Azure Boards FAQs   
 
  
 summary: | 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]  
 
   Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
-  If you are having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) and have reviewed the information in [Azure Boards and Office integration](track-work.md). 
+  If you're having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). Also be sure you've reviewed the information in [Azure Boards and Office integration](track-work.md). 
 
 sections:
 
@@ -33,10 +33,10 @@ sections:
 
       - question: What do I need to use Excel to add or modify work items?
         answer: |
-          You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
+          You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools, and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
 
           > [!IMPORTANT]  
-          > Microsoft Project Integration and the **TFSFieldMapping** command are not supported for:  
+          > Microsoft Project Integration and the **TFSFieldMapping** command aren't supported for:  
           > - Visual Studio 2019 and Azure DevOps Office® Integration 2019  
           > - Azure DevOps Server 2019 and later versions, including Azure DevOps Services. 
           > 
@@ -55,9 +55,6 @@ sections:
           > [!div class="mx-imgBorder"]  
           > ![Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
 
-      - question: What query macros aren't supported in Excel?
-        answer: |
-          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
       - question: Can I import or update work items without using Excel?  
         answer: | 
@@ -70,7 +67,7 @@ sections:
           ::: moniker-end  
 
           ::: moniker range="<= tfs-2018"  
-          **Yes**. For TFS 2018 and earlier versions, you can use Microsoft Project to perform bulk import and updates of work items. See [Create your backlog and tasks using Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).  
+          **Yes**. For TFS 2018 and earlier versions, you can use Microsoft Project to import and update work items in bulk. See [Create your backlog and tasks using Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).  
           ::: moniker-end  
 
       - question: How do I connect an existing Excel workbook to Azure DevOps?  
@@ -88,6 +85,19 @@ sections:
       - question: How do I disable the Team menu?   
         answer: |
           If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460).  
+
+  - name: Unsupported queries 
+
+    questions: 
+
+      - question: What query macros aren't supported in Excel?
+        answer: |
+          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+
+      - question: Can I view queries that list work items from different team projects? 
+        answer: |
+          **No**. You will receive an error message with error code TF208015. You can only view work items defined in the team project that you connect to from Excel. To view work items from other team projects, create a query and open it in a separate Excel workbook. Each Excel workbook can only connect to one team project at a time.   
+
 
   - name: Work with linked work items
      
@@ -128,7 +138,7 @@ sections:
 
       - question: Can I bulk add or edit test cases with Excel? 
         answer: |
-          **No**. You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
+          **No**. You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/create-test-cases.md#use-the-grid-view-to-edit-test-cases).  
             
           > [!div class="mx-imgBorder"]  
           > ![Test grid view](/azure/devops/test/media/create-test-cases/newtestcasesusinggrid.png)
@@ -137,7 +147,7 @@ sections:
      
     questions: 
 
-      - question: How can I show additional fields?
+      - question: How can I show other fields?
         answer: |
           If you start your worksheet with a **New List**, you'll see only a set of default field columns. You can add columns using the **Choose Columns** on the Team menu. 
 
@@ -148,7 +158,7 @@ sections:
 
       - question: How do I resolve publishing issues?  
         answer: |
-          To resolve publishing errors that arise when working in Excel, see one of the following topics: 
+          To resolve publishing errors that arise when working in Excel, see one of the following articles: 
           - [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
             A data conflict occurs when one team member changes a field value in Excel at the same time another team member changes the same field in Azure Boards.
 
@@ -202,4 +212,3 @@ additionalContent: |
   - [Create your backlog](../../backlogs/create-your-backlog.md) 
   - [Azure DevOps Office integration issues](tfs-office-integration-issues.md) 
   - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
-

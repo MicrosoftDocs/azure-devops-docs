@@ -12,7 +12,8 @@ monikerRange: '>= tfs-2015'
 
 # Associate automated tests with test cases
 
-[!INCLUDE [version-header](includes/version-vs-only.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../includes/version-vs-gt-2015.md)]
 
 Consider using Visual Studio to associate automated tests with a test case when:
 
@@ -20,7 +21,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
-  Automated tests can also be run from [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
+  Automated tests can also be run from the **Test Plans** web portal.
   If you are using XAML builds you can also
   [run these automated tests by using Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager).
 
@@ -45,7 +46,7 @@ The process to associate an automated test with a test case is:
    been added to a test plan that uses the build you just defined. 
 
 If you are using the build and release services in
-Azure DevOps or TFS (not a [XAML build](#xaml-build)), you can run associated tests in the 
+Azure DevOps (not a [XAML build](#xaml-build)), you can run associated tests in the 
 build and release pipelines by using the
 [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
 You _cannot_ run tests on-demand using Microsoft Test Manager unless you are using a XAML build. 
@@ -67,11 +68,11 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 1. Open your solution in Visual Studio Enterprise or Professional 2017 or a later version.
 
 2. If you don't know the identifier of the work item for the test case,
-   locate the test case in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
+   locate the test case in **Azure Test Plans** , or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
 
 3. When you know the identifier of the work item for the test case:
 
-   **If you are using Visual Studio 2017 or later**, follow these steps to associate your tests.
+   **If you are using Visual Studio 2017 or later version**, follow these steps to associate your tests.
 
    - If the **Test Explorer** window is not displayed, open it from the **Test | Windows** menu.
 
@@ -113,7 +114,7 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 <a name="xaml-build"></a>
 ### Q: What are the differences if I am still using a XAML build?
 
-**A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
+**A**: If you are using a XAML build in Azure Pipelines, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
 [Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager and a
@@ -123,7 +124,7 @@ You can also run tests using Microsoft Test Manager and a
 ### Q: Can I configure work items to open in Visual Studio?
 
 **A**: Yes, if you want test work items to open inside Visual Studio
-instead of the default Azure Pipelines or TFS UI in your web browser,
+instead of the default Azure Pipelines UI in your web browser,
 change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio.
 
 ![Change work item display mode](media/work-item-compatibility.png)
@@ -134,4 +135,3 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 * [Run automated tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

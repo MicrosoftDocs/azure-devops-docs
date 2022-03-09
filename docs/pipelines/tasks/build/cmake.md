@@ -4,8 +4,8 @@ ms.custom: seodec18
 description: CMake build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
-ms.author: whjenkin
-author: wnjenkin
+ms.author: vijayma
+author: vijayma
 ms.date: 12/17/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # CMake task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to build with the CMake cross-platform build system.
 
@@ -58,10 +58,9 @@ cmake
          (Optional) Arguments that you want to pass to CMake.
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-   </tr>
 </table>
+
+[Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

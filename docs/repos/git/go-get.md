@@ -1,16 +1,16 @@
 ---
 title: Go get support
 titleSuffix: Azure Repos
-description: Learn how to use Go get command  with Azure Repos Git
+description: Learn how to use Go get command with Azure Repos Git
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 12/15/2020
-monikerRange: 'azure-devops'
+ms.date: 10/15/2021
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Go get command support in Azure Repos Git
 
-**Azure Repos**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Go is an open-source programming language, also referred to as Golang. 
 In Go, you can use the `get` command to download and install packages and dependencies. 
@@ -18,6 +18,9 @@ Azure Repos Git provides support for `go get` within an Azure Repos Git reposito
 With `go get`, you will be able to download packages with their dependencies named by the import paths. 
 You can also use the `import` key word inside a go file to specify the import path, using the 
 same syntax described in the following sections.
+
+> [!NOTE]
+> The feature documented in this article requires Azure DevOps Server 2019 Update 1 or later version. 
 
 ## Go get with public projects
 

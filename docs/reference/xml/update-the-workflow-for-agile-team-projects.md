@@ -6,6 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.author: kaelli
 author: KathrynEE
+ms.topic: how-to
 monikerRange: '<= tfs-2015'
 ms.date: 12/15/2017
 ---
@@ -13,7 +14,7 @@ ms.date: 12/15/2017
 # Update the workflow for agile projects
 
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)]
+[!INCLUDE [version-lt-eq-2015](../../includes/version-lt-eq-2015.md)]
 
 
 > [!IMPORTANT]  
@@ -33,11 +34,12 @@ Task board for an Agile project without the recommended manual updates
  To support the desired behaviors, you must add the **New** and **Removed** states to the user story and task work item types, and update the metastate mappings assigned in the process configuration.  
    
   
-**Requirements**  
+## Prerequisites
   
-To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the project. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
+To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the project. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 <a name="agile_updates"></a> 
+
 ## Update the workflow and metastates
   
 > [!IMPORTANT]  
@@ -59,20 +61,22 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 >  For the following procedures to work, the **Active** state must be specified in the workflow defined for the User Story and Task types of work items.  
   
 #### To update the workflow states and transitions for User Story  
-  
-[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)]
-  
+
+1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md#run-witadmin-tool). For example:  
+	```
+	%programfiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+	```
 1. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a project collection, *ProjectName* specifies the name of a project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
   
     ```  
     witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"User Story" /f:"DirectoryPath\FileName.xml"  
     ```  
   
-     Use this format for the URL:  **http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>, for example: `http://srvalm:8080/tfs/DefaultCollection`.  
+     Use this format for the URL: **http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>, for example: `http://srvalm:8080/tfs/DefaultCollection`.  
   
 1. In a text editor or in Visual Studio, open the file you exported.  
   
-2. Add this code snippet between the lines `<STATES>` and `<STATE value="Active">`:  
+1. Add this code snippet between the lines `<STATES>` and `<STATE value="Active">`:  
   
    > [!div class="tabbedCodeSnippets"]
    > ```XML 
@@ -101,7 +105,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
    > <STATE value="Removed" />  
    > ```  
 
-3. Replace the section that begins with `<TRANSITION from=" " to="Active">` and ends with `<TRANSITION>` with this code snippet:  
+1. Replace the section that begins with `<TRANSITION from=" " to="Active">` and ends with `<TRANSITION>` with this code snippet:  
   
    > [!div class="tabbedCodeSnippets"]
    > ```XML 
@@ -150,9 +154,9 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
    > </TRANSITION>  
    > ```  
   
-4. Save and close the file.  
+1. Save and close the file.  
   
-5. Import the file, substituting your data for the arguments that are shown.  
+1. Import the file, substituting your data for the arguments that are shown.  
   
    ```  
    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  

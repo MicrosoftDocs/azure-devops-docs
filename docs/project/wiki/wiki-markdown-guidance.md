@@ -1,20 +1,20 @@
 ---
 title: Markdown syntax for wikis in Azure DevOps
 titleSuffix: Azure DevOps
-description: Learn how to share information, add tables & mathematical notation using Markdown within wikis
+description: Learn how to share information and add tables & mathematical notation using Markdown within wikis.
 ms.technology: devops-collab
 ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 04/26/2021 
+ms.date: 03/04/2022 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -35,7 +35,7 @@ The \[[\_TOC\_]] can be placed anywhere in the page to render the table of conte
 Only Markdown headings are considered for TOC (HTML heading tags aren't considered).
 
 All HTML and Markdown tags get stripped from the headings while adding it inside the TOC block.
-For example, adding bold and italics to a heading text renders the TOC as follows.
+See the following example of how the TOC renders when you add bold and italics to a heading.
 
 > [!div class="mx-imgBorder"]
 > ![Tags for TOC](media/toc_tags.png)
@@ -47,7 +47,7 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Add Mermaid diagrams to a Wiki page
 
@@ -65,14 +65,13 @@ To add Mermaid diagrams to a wiki page, use the following syntax:
 :::
 ```
 
+> [!NOTE]
+> - The diagram type hyperlinks at the beginning of this section go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, we don't support most HTML tags, Font Awesome, LongArrow `---->`, `flowchart` (use `graph`, as shown in the following image), or `subgraph` syntax.
+> - Mermaid isn't supported in the Internet Explorer browser. 
+
 There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 ![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
-
-> [!NOTE]
-> Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
-> 
-> This feature is supported only in Azure DevOps Services (not in Azure DevOps Server).
 
 ::: moniker-end
 
@@ -137,12 +136,19 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 :::
 ```
 
+For example:
+
+:::
+query-table 6ff7777e-8ca5-4f04-a7f6-9e63737dddf7
+:::
+
 You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
 ![Query Results Icon](media/query_selector_icon.png)
 
 ![Query Selector Pane](media/query_selector_pane.png)
 
+For more information about how to copy the query URL, which provides a GUID for the query, see [Email query items or share query URL](../../boards/queries/view-run-query.md#email-query-items-or-share-a-query-url).
 
 ## @mention users and groups
 
@@ -153,6 +159,8 @@ To @mention users or groups in wiki, key in "@" in the wiki editor. This @mentio
 You can also select "@mention" from the edit toolbar.
 
 > ![Mention from edit toolbar](media/mention-toolbar.png)
+
+When you're editing pages directly in code, use the following pattern, `@<{identity-guid}>`.
 
 ::: moniker-end
 
@@ -196,13 +204,13 @@ Enter the pound sign (`#`), and then enter a work item ID.
 In wiki pages, you can also create rich content using HTML tags.
 
 > [!TIP]
-> You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
+> You can nest Markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
 
 
  ```HTML
 <p>
   
-  [A markdown link](https://microsoft.com) 
+  [A Markdown link](https://microsoft.com) 
 </p>
 ```
 

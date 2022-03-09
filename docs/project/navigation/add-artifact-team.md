@@ -3,18 +3,17 @@ title: Add artifact or team
 titleSuffix: Azure DevOps
 description: How to add a new artifact, view, or team within the web portal in Azure DevOps
 ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
+ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2017'
 ms.date: 07/30/2020 
 ---
 
 # Add an artifact or team artifacts
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 Select the service of interest to get started adding new artifacts or objects. For example, to add work items, choose **Boards** or **Work**. Some artifacts&mdash;such as a product backlog, Kanban board, portfolio backlogs&mdash;are added when you add a team.  
 

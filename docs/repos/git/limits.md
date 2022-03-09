@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Git limits
 
-**Azure Repos**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 We impose a few resource limits on Git repositories in Azure Repos.
 Our goal is to ensure reliability and availability for all customers.

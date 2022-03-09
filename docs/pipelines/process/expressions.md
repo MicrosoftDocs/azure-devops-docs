@@ -4,13 +4,20 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 07/22/2021
+ms.date: 02/25/2022
 monikerRange: '>= tfs-2017'
 ---
 
 # Expressions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
+::: moniker range="tfs-2017"
+
+This article applies to TFS 2017.3 and higher.
+
+::: moniker-end
+
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -168,6 +175,29 @@ The following built-in functions can be used in expressions.
 > This function is of limited use in general pipelines.
 > It's intended for use in the [pipeline decorator context](../../extend/develop/pipeline-decorator-context.md) with system-provided arrays such as the list of steps.
 
+You can use the `containsValue` expression to find a matching value in an object. Here is an example that demonstrates looking in list of source branches for a match for `Build.SourceBranch`. 
+
+```yaml
+parameters:
+- name: branchOptions
+  displayName: Source branch options
+  type: object
+  default:
+    - refs/heads/main
+    - refs/heads/test
+
+jobs:
+  - job: A1 
+    steps:
+    - ${{ each value in parameters.branchOptions }}:
+      - script: echo ${{ value }}
+
+  - job: B1 
+    condition: ${{ containsValue(parameters.branchOptions, variables['Build.SourceBranch']) }}
+    steps:
+      - script: echo "Matching branch found"
+```
+
 ::: moniker range=">= azure-devops-2019"
 
 ### convertToJson
@@ -207,10 +237,10 @@ steps:
 * This function can only be used in an expression that defines a variable. It cannot be used as part of a condition for a step, job, or stage.
 * Evaluates a number that is incremented with each run of a pipeline.
 * Parameters: 2. `prefix` and `seed`.
-* Prefix is a string expression. A separate value of counter is tracked for each unique value of prefix
+* Prefix is a string expression. A separate value of counter is tracked for each unique value of prefix. The `prefix` should use UTF-16 characters.
 * Seed is the starting value of the counter
 
-You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here is an example that demonstrates this.
+You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here is an example that demonstrates this. 
 
 ```yaml
 variables:
@@ -438,9 +468,9 @@ You can use the following status check functions as expressions in conditions, b
 
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
+* Use with `dependsOn` when working with jobs and you want to evaluate whether a previous job was successful. Jobs are designed to run in parallel while stages run sequentially. 
 * For a job:
   * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
-  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
   * Evaluates to `False` if the pipeline is canceled.
 
@@ -454,7 +484,9 @@ You can use the following status check functions as expressions in conditions, b
 
 ## Conditional insertion
 
-You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
+You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+
+Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
 
 For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
 
@@ -482,11 +514,32 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'prod'
-    ${{ if ne(variables['Build.SourceBranchName'], 'main') }}:
+    ${{ else }}:
       artifact: 'dev'
     publishLocation: 'pipeline'
 ```
 
+### Conditionally run a step
+
+If there is no variable set, or the value of `foo` does not match the `if` conditions, the `else` statement will run. Here the value of `foo` returns true in the `elseif` condition. 
+
+```yaml
+variables:
+  - name: foo
+    value: contoso # triggers elseif condition
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "start"
+- ${{ if eq(variables.foo, 'adaptum') }}:
+  - script: echo "this is adaptum"
+- ${{ elseif eq(variables.foo, 'contoso') }}: # true
+  - script: echo "this is contoso" 
+- ${{ else }}:
+  - script: echo "the value is not adaptum or contoso"
+```
 
 ## Each keyword
 
@@ -675,7 +728,7 @@ This requires using the `stageDependencies` context.
 }
 ```
 
-In this example, job B1 will run whether job A1 is successful or skipped.
+In this example, job B1 will run if job A1 is skipped.
 Job B2 will check the value of the output variable from job A1 to determine whether it should run.
 
 ```yaml
@@ -698,7 +751,7 @@ stages:
   dependsOn: A
   jobs:
   - job: B1
-    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+    condition: in(stageDependencies.A.A1.result, 'Skipped') # change condition to `Succeeded and stage will be skipped`
     steps:
     - script: echo hello from Job B1
   - job: B2

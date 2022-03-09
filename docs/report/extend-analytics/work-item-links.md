@@ -1,21 +1,21 @@
 ---
 title: Query for linked work items 
 titleSuffix: Azure DevOps 
-description: How to guidance for creating a query for linked work items using Analytics for Azure DevOps   
+description: Learn how to create a query for linked work items using Analytics for Azure DevOps.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: tutorial
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/30/2020
 ---
 
 # Query for linked work items 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
+Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there's some extra complexity.
 
 There are two ways to query for linked work items. The first is the Parent/Child hierarchy, and the second is the Links navigation property.  
 
@@ -48,7 +48,7 @@ You can include items related through Parent/Child links by using ```$expand``` 
 
 ### Example: Parent to child query
 
-To return information about an item's children use ```$expand``` on the **Children** navigation property.
+To return information about an item's children, use ```$expand``` on the **Children** navigation property.
 
 **Request**
 
@@ -87,7 +87,7 @@ To return information about an item's children use ```$expand``` on the **Childr
 
 ### Example: Child to parent query
 
-By replacing **Children** with **Parent** in the ```$expand``` option you can retrieve an item's ancestry.
+By replacing **Children** with **Parent** in the ```$expand``` option, you can retrieve an item's ancestry.
 
 **Request**
 
@@ -117,11 +117,11 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 
 ## Query for non-hierarchical links
 
-In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
+In addition to the Parent/Child hierarchy, items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
 ### Example: Request an item's links
 
-To retrieve the links associated with an item you may ```$expand``` the **Links** navigation property. In this example the SourceWorkItemId, TargetWorkItemId, and LinkTypeName will be retrieved for all links associated with the work item.
+To retrieve the links associated with an item, you may ```$expand``` the **Links** navigation property. In this example the SourceWorkItemId, TargetWorkItemId, and LinkTypeName will be retrieved for all links associated with the work item.
 
 **Request**
 
@@ -163,7 +163,7 @@ To retrieve the links associated with an item you may ```$expand``` the **Links*
 > ```
 > ### Example: Request details of linked items
 
-You may include the details of your linked work items by using ```$expand``` on the **TargetWorkItem** or **SourceWorkItem** navigation properties. In this example we will retrieve the WorkItemId, Title, and State of the target work item for each link.
+You may include the details of your linked work items by using ```$expand``` on the **TargetWorkItem** or **SourceWorkItem** navigation properties. In this example, we'll retrieve the WorkItemId, Title, and State of the target work item for each link.
 
 **Request**
 
@@ -260,7 +260,7 @@ You may also be interested in a particular type of link between items, in which 
 > ```
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Explore Analytics metadata](analytics-metadata.md) 

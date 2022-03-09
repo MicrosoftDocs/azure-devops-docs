@@ -5,31 +5,18 @@ description: Learn all about how you can produce NuGet packages when building co
 ms.technology: vs-devops-package
 ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
 ms.date: 08/10/2016
+monikerRange: '<= tfs-2017'
 ---
 
 # NuGet Packager task version 0.*
 
-**Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
+[!INCLUDE [version-lt-eq-2017](../../../../includes/version-lt-eq-2017.md)]
 
 Use this task to create a NuGet package from either a .csproj or .nuspec file.
-
-::: moniker range="<= tfs-2018"
-
-[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
-
-::: moniker-end
 
 ## Demands
 
 None
-
-::: moniker range="> tfs-2018"
-
-## YAML snippet
-
-[!INCLUDE [temp](../../includes/yaml/NuGetPackagerV0.md)]
-
-::: moniker-end
 
 ## Arguments
 
@@ -79,7 +66,17 @@ Select if you want to use the build number to version your package. If you selec
 <p>If you leave it empty, the package will be created in the same directory that contains the .csproj or .nuspec file.</p>
 </td>
 </tr>
-<tr><th style="text-align: center" colspan="2">Advanced</th></tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
 <tr>
 <td>Configuration to Package</td>
 <td>
@@ -102,9 +99,9 @@ Semicolon delimited list of properties used to build the package. For example, y
 
 [!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
 
-[!INCLUDE [temp](../../includes/control-options-arguments.md)]
-
 </table>
+
+[!INCLUDE [temp](../../includes/control-options-arguments.md)]
 
 ## Examples
 

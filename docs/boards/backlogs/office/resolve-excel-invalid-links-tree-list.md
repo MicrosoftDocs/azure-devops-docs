@@ -1,30 +1,30 @@
 ---
-title: Resolve invalid links
+title: Resolve invalid links when publishing to Azure Boards
 titleSuffix: Azure Boards
-description: Address invalid link error messages that occur when publishing an Excel tree list to Azure Boards, Azure DevOps 
+description: Learn how to resolve invalid link error messages that occur when publishing an Excel tree list to Azure Boards.
 ms.technology: devops-agile
 ms.assetid: f2250e37-5150-4546-81b8-4ec8023046c2
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-ms.date: 02/22/2017  
+ms.date: 10/08/2021
 ---
 
-# Resolve invalid links in an Excel tree list 
+# Resolve invalid links in an Excel tree list in Azure Boards
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items if the title of a work item title is missing or occurs in the wrong title column.  
+If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items. It occurs if the title of a work item title is missing or occurs in the wrong title column.  
   
 You can resolve most errors using the procedures provided in this article.  
 
 ## Prerequisites  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md).
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md).
 
 <a name="tf208000"></a>
 
-## TF208000: Duplicate titles  
+## Error message TF208000: Duplicate titles  
 
 If you add a value to multiple Title columns of a work item, when you try to publish the tree, the error message **TF208000** appears in the **Work Item Publishing Errors** dialog box. The error message specifies the row number of the invalid link.  
   
@@ -40,7 +40,7 @@ If you add a value to multiple Title columns of a work item, when you try to pub
  
 <a name="TF208001"></a> 
  
-## TF208001: Child work item disconnected from parent  
+## Error message TF208001: Child work item disconnected from parent  
 
 If you remove the title of a child work item, when you try to publish the work item list the error message **TF208001** appears in the **Work Item Publishing Errors** dialog box. The error message specifies the row number of the invalid link. This error message also appears if you create an invalid link structure by putting the title of a child work item into the wrong column.  
   
@@ -64,7 +64,7 @@ If you remove the title of a child work item, when you try to publish the work i
   
 <a name="tf208017"></a> 
 
-##  TF208017: Missing Title 1 in the first row  
+##  Error message TF208017: Missing Title 1 in the first row  
 
 If the first work item in the list has no value in the **Title 1** column, the error message **TF208017** appears in the **Work Item Publishing Errors** dialog box when you try to publish the work item list.  
  
@@ -79,21 +79,21 @@ If the first work item in the list has no value in the **Title 1** column, the e
   
     2.  If the first work item should be lower in the list, move the correct work item to the top of the list.  
   
-         For more information about how to move work items, see [Bulk add work items with Excel](./bulk-add-modify-work-items-excel.md?viewFallbackFrom=vsts).  
+         For more information about how to move work items, see [Bulk add work items with Excel](./bulk-add-modify-work-items-excel.md).  
   
 3.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
   
 <a name="tf208022"></a> 
 
-##  TF208022: Sorted tree list  
+##  Error message TF208022: Sorted tree list  
 
-If you have not installed Service Pack 1 for Visual Studio 2010 or later version, the following error message appears when you choose **Publish** after you have sorted the work items in a tree list:  
+If you haven't installed Service Pack 1 for Visual Studio 2010 or later version, the following error message appears when you choose **Publish** after you've sorted the work items in a tree list:  
   
 >TF208022: Cannot publish a sorted tree list. Before you can publish, you must clear any sort criteria applied to this work item list. Be aware that the order of work items has changed. Removing sort criteria will not return the list to its original order. Verify that all of the parent-child relationships in the tree are correct before you publish.   
   
-You cannot publish your changes until you re-establish the tree hierarchy. You can resolve this error either by discarding your changes and refreshing the list or by manually restoring the hierarchy and then publishing the list.  
+You can't publish your changes until you re-establish the tree hierarchy. You can resolve this error either by discarding your changes and refreshing the list or by manually restoring the hierarchy and then publishing the list.  
   
-#### To resolve sorted tree list issues  
+### To resolve sorted tree list issues  
   
 -   Choose **Refresh** to discard your changes and restore the tree hierarchy.  
   
@@ -104,7 +104,7 @@ You cannot publish your changes until you re-establish the tree hierarchy. You c
   
 <a name="tf208102"></a> 
 
-##  TF208102: Excel sort on a tree list  
+## Error message TF208102: Excel sort on a tree list  
 
 The following error message appears if you sort the work items in a tree list in Excel:  
   
@@ -117,7 +117,7 @@ The following error message appears if you sort the work items in a tree list in
 
 This message indicates that you can publish the changes that you made to the fields, but all changes that you made to the link hierarchy have been discarded. The tree hierarchy automatically reverts to its original structure.  
   
-#### To publish changes and retrieve the tree hierarchy  
+### To publish changes and retrieve the tree hierarchy  
   
 1.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
   
@@ -125,7 +125,7 @@ This message indicates that you can publish the changes that you made to the fie
 
 <a name="tf208104"></a>  
  
-##  TF208104: Hierarchical link Relationship is locked  
+##  Error message TF208104: Hierarchical link Relationship is locked  
 
  If you publish a worksheet that contains work items that are synchronized with Project Server and whose hierarchical link relationships are locked (![Locked link icon](media/icon_lockedlink.png "Icon_lockedLink")), the following error message may appear:  
   
@@ -133,15 +133,15 @@ This message indicates that you can publish the changes that you made to the fie
 >
 >Changes that you made to individual work items were published. Changes that you made to locked links were auto-corrected.  
   
- This error appears when you change the link hierarchy that contains locked links. This message indicates that the changes that you made to the fields are published, but all changes that you made to the link hierarchy, whether locked or not locked, are not published and were reverted to their original assignments.  
+ This error appears when you change the link hierarchy that contains locked links. This message indicates that the changes that you made to the fields are published. All changes you made to the link hierarchy, whether locked or not locked, aren't published and were reverted to their original assignments.  
   
- To modify hierarchical links that are locked, make your changes in the enterprise project plan that is mapped to the project. For more information, see [Manage project details](/previous-versions/azure/devops/reference/tfs-ps-sync/manage-project-details).  
+ To modify locked hierarchical, make your changes in the enterprise project plan mapped to the project. For more information, see [Manage project details](/previous-versions/azure/devops/reference/tfs-ps-sync/manage-project-details).  
   
-#### To publish changes to links that are not locked  
+### To publish changes to links that aren't locked  
   
--   For work items that are not synchronized, you can modify the hierarchical link relationship from Team Explorer or the web portal. For more information, see [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md).  
+-   For work items that aren't synchronized, you can modify the hierarchical link relationship from Team Explorer or the web portal. For more information, see [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md).  
   
--   To modify hierarchical link relationships that are not locked in Excel, revise the query that you use to export the work items to exclude all work items whose links are locked. For example, you can add a clause to the filter criteria to omit items whose **Project Server Is Linked** field is set to **Yes**.  
+-   To modify unlocked hierarchical link relationships in Excel, revise the query that you use to export the work items to exclude all work items with locked links. For example, you can add a clause to the filter criteria to omit items whose **Project Server Is Linked** field is set to **Yes**.  
   
 ## Related articles
 

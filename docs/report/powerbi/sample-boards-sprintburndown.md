@@ -1,19 +1,19 @@
 ---
 title: Sprint Burndown sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate a Sprint Burndown report
+description: Learn how to generate a sprint burndown Power BI report.
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/18/2020
+ms.date: 10/05/2021
 ---
 
 # Sprint burndown sample reports
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to display the current sprint's burndown of User Stories. The following example shows a burndown of both a sum of Story Points and a count of User Stories.
 
@@ -81,7 +81,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* {areapath} - Your Area Path. Example format: Project\Level1\Level2 
+* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`. 
 
 
 ### Query breakdown
@@ -89,25 +89,123 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td><td>Start filter()</td><tr>
-<tr><td><code>WorkItemType eq 'User Story'</code></td><td>Burndown on User Stories</td><tr>
-<tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code></td><tr>
-<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
-<tr><td><code>and DateValue ge Iteration/StartDate</code></td><td>Begin trend at Iteration start.</td><tr>
-<tr><td><code>and DateValue le Iteration/EndDate</code></td><td>End trend at Interation end.</td><tr>
-<tr><td><code>and Iteration/StartDate le now()</code></td><td>Select current Iteration.</td><tr>
-<tr><td><code>and Iteration/EndDate ge now()</code></td><td>Select current Iteration</td><tr>
-<tr><td><code>)</td><td>Close filter()</code></td><tr>
-<tr><td><code>/groupby(</td><td>Start groupby()</code></td><tr>
-<tr><td><code>(DateValue, State, WorkItemType, Priority, Area/AreaPath, Iteration/IterationPath), </code></td><td>Group by DateValue (used for trending), and any fields you want to report on</td><tr>
-<tr><td><code>aggregate($count as Count,  StoryPoints with sum as TotalStoryPoints)</code></td><td>Aggregate by count of user stories, and sum of Story Points</td><tr>
-<tr><td><code>)</code></td><td>Close groupby()</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `WorkItemType eq 'User Story'`
+   :::column-end:::
+   :::column span="1":::
+   Burndown on User Stories
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and startswith(Area/AreaPath,'{areapath}')`
+   :::column-end:::
+   :::column span="1":::
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
+   
+   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and StateCategory ne 'Completed'`
+   :::column-end:::
+   :::column span="1":::
+   Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and DateValue ge Iteration/StartDate`
+   :::column-end:::
+   :::column span="1":::
+   Begin trend at Iteration start.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and DateValue le Iteration/EndDate`
+   :::column-end:::
+   :::column span="1":::
+   End trend at Iteration end.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Iteration/StartDate le now()`
+   :::column-end:::
+   :::column span="1":::
+   Select current Iteration.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Iteration/EndDate ge now()`
+   :::column-end:::
+   :::column span="1":::
+   Select current Iteration
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(DateValue, State, WorkItemType, Priority, Area/AreaPath, Iteration/IterationPath), `
+   :::column-end:::
+   :::column span="1":::
+   Group by DateValue (used for trending), and any fields you want to report on
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate($count as Count,  StoryPoints with sum as TotalStoryPoints)`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate by count of user stories, and sum of Story Points
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close groupby()
+   :::column-end:::
+:::row-end:::
 
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 
@@ -143,7 +241,7 @@ The example report, which displays burndown on both Story Points and Count of St
 
 ## Additional queries
 
-You can use the following additional queries to create different but similar reports.You can use these queries with the steps defined above.
+You can use the following additional queries to create different but similar reports. You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 

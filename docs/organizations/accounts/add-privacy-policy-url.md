@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Add a privacy policy URL for your organization
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 A privacy policy is a legal requirement for all websites and apps that collect or use personal data from users. Learn how to add your privacy policy URL to your organization in Azure DevOps for public projects. Your privacy policy URL links to your custom document that describes how you handle both internal and external guest data privacy. The custom privacy policy URL displays only in **Organization settings** on the **Overview** page in Azure DevOps. The Microsoft Privacy Statement continues to display throughout Azure DevOps, whether or not you add a privacy policy URL for your organization.
 
@@ -21,7 +21,7 @@ A privacy policy is a legal requirement for all websites and apps that collect o
 
 ## Prerequisites
 
-You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md) to add a privacy policy URL.
+You must be [an organization owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md) to add a privacy policy URL.
 
 ## Add your privacy policy URL in Azure DevOps
 

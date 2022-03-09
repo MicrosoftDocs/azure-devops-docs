@@ -12,7 +12,7 @@ ms.date: 09/29/2020
 
 # REST API versioning
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
@@ -58,4 +58,4 @@ A few undocumented version 1.0 APIs existed in Team Foundation Server 2013, but 
 ## Related articles
 
 * [Get started with REST APIs](../how-to/call-rest-api.md)
-* [Azure DevOps Services REST API reference](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-6.1&preserve-view=true)
+* [Azure DevOps Services REST API reference](/rest/api/azure/devops/?preserve-view=true&view=azure-devops-rest-6.1)

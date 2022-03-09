@@ -2,18 +2,17 @@
 title: Manage teams, configure team tools 
 titleSuffix: Azure DevOps
 description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, Kanban boards, and more in Azure DevOps. 
-ms.technology: devops-agile
-ms.assetid:  
+ms.technology: devops-settings 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 12/07/2020
 ---
 
 # Manage and configure team tools
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As a team administrator, you can customize your backlogs and board to best meet how your team works. If you need to have a team created, request a member of your Project Administrators group do so. It only takes a minute to add a new team.    Team settings are managed by the team administrator role. Users assigned as team administrator can configure and manage all team tools.  
 
@@ -29,8 +28,8 @@ Also, consider the following optional tasks:
 
 ## Prerequisites
 
-- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
-- To add a team, you must be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md). For more information, see [Add teams](add-teams.md).
+- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md).  
+- To add a team, you must be a member of the **Project Administrators** group. For more information, see [Add teams](add-teams.md).
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 
@@ -205,14 +204,14 @@ For more information on each configuration option, see the following articles:
       ::: moniker range=">= tfs-2017"
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
+      - [Add tag colors](../../boards/boards/customize-cards.md#assign-a-color-to-a-tag)
       - [Enable annotations](../../boards/boards/customize-cards.md#enable-annotations)
       - [Configure inline tests](../../boards/boards/customize-cards.md#configure-inline-tests)
       ::: moniker-end
       ::: moniker range="< tfs-2017"
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
+      - [Add tag colors](../../boards/boards/customize-cards.md#assign-a-color-to-a-tag)
       ::: moniker-end
    :::column-end:::
    :::column span="1":::
@@ -271,6 +270,9 @@ Similar to Kanban boards, each sprint Taskboard can be customized to support inf
 
 :::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of Taskboard selection.":::
 
+
+<a id="add-and-manage-team-dashboards" /> 
+
 ::: moniker range=">= tfs-2017" 
 
 ## Add and manage team dashboards   
@@ -283,7 +285,6 @@ By default, all team members can add and edit team dashboards. In addition, team
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 Team administrators can add, configure, and manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
-
 ::: moniker-end
 
 :::image type="content" source="media/edit-team-dashboard.png" alt-text="Screenshot of team dashboard.":::

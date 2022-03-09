@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Publish a NuGet package using the command line
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 With Azure Artifacts, you can publish your NuGet packages to public or private feeds, and then share them with others depending on your feed's visibility settings. 
 

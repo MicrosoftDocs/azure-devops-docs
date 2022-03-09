@@ -1,25 +1,30 @@
 ---
 title: Build and deploy apps, any app and platform ecosystems index
-titleSuffix: Azure DevOps Services
-description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines and Team Foundation Server (TFS).  
+titleSuffix: Azure DevOps
+description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines.  
 ms.topic: article
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: mijacobs 
 ms.author: sdanie
 author: steved0x
-ms.date: 06/26/2020
+ms.custom: freshness-fy22q2
+ms.date: 12/22/2021
 featureFlags:
 - clicktale 
 monikerRange: '>= tfs-2015'
 ---
 
-# Azure Pipelines ecosystem support
+# Create your Azure Pipelines ecosystem
 
-Build and deploy your apps. Find guidance based on your language and platform. 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
+You can select from the following languages and platforms to find guidance for building and deploying your app. 
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || >= azure-devops-2019"
 
 ## Build your app
+
+Build your app with any of the following languages.
 
 ::: moniker-end
 
@@ -89,7 +94,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_uwp.png":::
-        [UWP](../apps/windows/universal.md)
+        [UWP](/previous-versions/azure/devops/pipelines/apps/windows/universal)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_xamarin.png":::
@@ -165,7 +170,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 :::row:::
     :::column:::
         :::image type="icon" source="./media/index/logo_uwp.png":::
-        [UWP](../apps/windows/universal.md)
+        [UWP](/previous-versions/azure/devops/pipelines/apps/windows/universal)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_xamarin.png":::
@@ -184,6 +189,8 @@ Build and deploy your apps. Find guidance based on your language and platform.
 ::: moniker range=">= tfs-2015 <= tfs-2018 || >= azure-devops-2019"
 
 ## Deploy your app
+
+Deploy your app to any of the following platforms.
 
 ::: moniker-end
 
@@ -300,4 +307,3 @@ Build and deploy your apps. Find guidance based on your language and platform.
 :::row-end:::
 
 ::: moniker-end
-

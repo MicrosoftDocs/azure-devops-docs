@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Shell Script task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to run a shell script using bash.
 
@@ -60,9 +60,17 @@ Relative path from the repo root to the shell script file that you want to run.
 Arguments that you want to pass to the script.
 </td>
 </tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">Advanced</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Working Directory</td>
 <td>
@@ -75,13 +83,9 @@ Working directory in which you want to run the script.  If you leave it empty it
 Select if you want this task to fail if any errors are written to the StandardError stream.
 </td>
 </tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Example
 

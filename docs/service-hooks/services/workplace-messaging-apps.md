@@ -12,7 +12,7 @@ ms.date: 07/27/2020
 
 # Workplace messaging apps 
 
-[!INCLUDE [version](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
 The following integrations help users receive notifications in response to events in Azure DevOps within their workplace messaging apps such as

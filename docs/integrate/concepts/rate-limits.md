@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: chcomley
 author: chcomley
-ms.date: 06/08/2021
-monikerRange: '>= tfs-2018'
+ms.date: 02/03/2022
+monikerRange: 'azure-devops'
 ---
 
 <!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 # Rate limits
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance. This design leaves users vulnerable to performance issues and even outages when other users, of their shared resources, have spikes in their consumption.
 To combat these problems, Azure DevOps limits the resources individuals can consume and the amount of requests they can make to certain commands.
@@ -184,3 +184,10 @@ If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `
 Doing so allows you to approximate how quickly you're approaching the delay threshold.
 
 Your client can intelligently react by spreading its requests out over time.
+
+## Related articles
+
+- [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md)
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md)
+- [Configure and customize Azure Boards](../../boards/configure-customize.md)
+- [Usage monitoring](../../organizations/accounts/usage-monitoring.md)

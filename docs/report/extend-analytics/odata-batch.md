@@ -1,21 +1,22 @@
 ---
 title: OData batch support 
 titleSuffix: Azure DevOps 
-description: Guidelines for extension developers who want to learn how to write good OData queries 
+description: Learn how to write good OData queries for Analytics for Azure DevOps.
 ms.technology: devops-analytics
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/30/2020
 ---
 
 # OData batch support
 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Batch requests are part of the OData spec, and Analytics for Azure DevOps provides limited support, as a means to submit large requests. For more information about batch operations in OData see section [11.7 Batch Requests](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
+Batch requests are part of the OData spec. Analytics for Azure DevOps provides limited support, as a means to submit large requests. For more information about batch operations in OData, see section [11.7 Batch Requests](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -50,13 +51,13 @@ The $batch endpoint is located at:
 
 ### Supported $batch operations
 
-The OData spec allows for numerous operations per $batch request, however Analytics limits each $batch request to a single query. The Analytics $batch endpoint is also read-only, no change sets may be published to it.
+The OData spec allows for many operations per $batch request, however Analytics limits each $batch request to a single query. The Analytics $batch endpoint is also read-only, no change sets may be published to it.
 
 ### When to use $batch queries
 
 Use $batch requests when you are in danger of exceeding the browser's limit on URL length. Many modern browsers have these limits and exceeding them can result in undesirable behavior. Using a $batch request allows long queries to be issued against Analytics as the OData query is delivered in a POST body. You may use $batch requests for all your queries, though GET requests are slightly faster.
 
-## $batch request example
+## $batch example
 
 ### Request
 

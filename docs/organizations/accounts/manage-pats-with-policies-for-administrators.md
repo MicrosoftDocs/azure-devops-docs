@@ -7,25 +7,14 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 08/18/2021
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ---
 
-# Use policies to manage users' personal access tokens
+# Use policies to manage personal access tokens for users
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps.
-
-The following policies can be turned on or off. By default, these policies are set to *off*.
-
-- [Use policies to manage users' personal access tokens](#use-policies-to-manage-users-personal-access-tokens)
-  - [Prerequisites](#prerequisites)
-  - [Restrict creation of global PATs](#restrict-creation-of-global-pats)
-  - [Restrict creation of full-scoped PATs](#restrict-creation-of-full-scoped-pats)
-  - [Set maximum lifespan for new PATs](#set-maximum-lifespan-for-new-pats)
-  - [Add Azure AD users or groups to the allowlist](#add-azure-ad-users-or-groups-to-the-allowlist)
-  - [Next steps](#next-steps)
-  - [Related articles](#related-articles)
+Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps. These policies can be turned on or off. By default, they're set to *off*.
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction.
@@ -55,8 +44,7 @@ The Azure DevOps Administrator in Azure AD restricts users from creating global 
 
 The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means new PATs must be limited to a specific custom defined set of scopes.
 
-> [!WARNING]
-> Some of our public APIs are currently unassociated with a PAT scope, and can therefore only be used with “full-scoped” PATs. Because of this, restricting the creation of full-scoped PATs might block some workflows. We're working to identify and document the affected APIs and eventually associate them with the appropriate scope. For now, these workflows can be unblocked by using the allow list.
+[!INCLUDE [warning-api-scopes](includes/warning-api-scopes.md)]
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

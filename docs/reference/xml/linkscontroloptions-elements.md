@@ -8,19 +8,16 @@ ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= tfs-2015'
+monikerRange: '<= tfs-2017'
 ms.date: 02/02/2017
 ---
 
 # LinksControlOptions elements
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)] 
+[!INCLUDE [version-lteq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!IMPORTANT]  
->This topic applies to project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  
->
->Customizing link control options is not a supported feature for the Hosted XML process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
-
+> This article applies to customization for the On-premises XML process model for the old web form. For the new web form and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add a links control to a work item form, you can specify filters that restrict the types of links that users can be view and create and the types of work items to which users can create links. Specifically, you use the following elements as indicated:  
   
@@ -121,8 +118,10 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 > </Control>  
 > ```  
 
-<a name="Toolbar"></a>   
+<a name="Toolbar"></a>  
+ 
 ##  LinksControl toolbar buttons  
+
 Each `Control` element of Type=LinksControl provides a toolbar, which contains the buttons shown in the next illustration:  
   
 ![Work item form link toolbar controls](media/procguid_linktoolbar.png "ProcGuid_LinkToolbar")  
@@ -140,7 +139,8 @@ The links control that is displayed is the same for both the web portal and Team
 
   
 ## Related articles  
--  [LinkTypes elements reference, Define a custom link type](link-type-element-reference.md)   
--  [Define link controls to restrict link relationships](define-link-controls.md)
--  [Specify work item form controls](specify-work-item-form-controls.md)  
+
+- [LinkTypes elements reference, Define a custom link type](link-type-element-reference.md)   
+- [Define link controls to restrict link relationships](define-link-controls.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)  
  

@@ -5,29 +5,27 @@ description: Add Check-In Policies
 ms.assetid: 1f3046e3-1ea2-4477-99ca-76d3fc70c47b
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/18/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Add Check-In Policies
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)). By default, the following check-in policy types are available:
+Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md). By default, the following check-in policy types are available:
 
--   **Builds**   Requires that the last build was successful before a check-in.
+- **Builds**   Requires that the last build was successful before a check-in.
+- **Code Analysis**   Requires that code analysis is run before check-in.
+- **Work Items**   Requires that one or more work items be associated with the check-in.
 
--   **Code Analysis**   Requires that code analysis is run before check-in.
-
--   **Work Items**   Requires that one or more work items be associated with the check-in.
-
-> Visual Studio 2017 : Check-in policies in Visual Studio 2017 must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio 2017 on your computer. If you have multiple installations of Visual Studio 2017, you'll need to set the check-in policy on each installation. [Learn more](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
+> [!NOTE]
+> For Visual Studio 2017 and later versions, Visual Studio check-in policies must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio on your computer. If you have multiple installations of Visual Studio, you'll need to set the check-in policy on each installation. For more information, see [What's New in the Visual Studio 2017 SDK?](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk) 
 
 
-## Procedure
-
-### To create a check-in policy
+## To create a check-in policy
 
 1.  From Team Explorer, select the **Settings** page, then select  **Source Control** under the **Project** section.
 
@@ -57,6 +55,6 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 ## Related articles 
 
-- [Configure Command](configure-command.md)
-- [Set and Enforce Quality Gates](set-enforce-quality-gates.md)
-- [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))
+- [Configure command](configure-command.md)
+- [Set and enforce quality gates](set-enforce-quality-gates.md)
+- [Walkthrough: Customizing checkin policies and notes](/previous-versions/ms181281(v=vs.100))

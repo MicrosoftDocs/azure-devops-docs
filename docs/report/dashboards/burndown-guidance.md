@@ -1,20 +1,19 @@
 ---
 title: Burndown guidance
 titleSuffix: Azure DevOps  
-description: Review Scrum progress during and at the end of a sprint when working in Azure DevOps and Team Foundation Server 
+description: Learn about reviewing scrum progress during and at the end of a sprint when working in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 10/23/2019
+monikerRange: '<= azure-devops'
+ms.date: 09/27/2021
 ---
 
 # Burndown guidance
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 
@@ -31,7 +30,7 @@ To configure or view sprint burndown charts, see [Sprint burndown](configure-spr
 
 ## Scope management  
 
-By estimating remaining work of tasks for each backlog item, teams better understand what they can accomplish within a sprint. Because the sprint tasks define the overall sprint scope, defining the remaining work leads to a well-defined sprint scope. Anything that is not represented by a task in the sprint should be considered out of scope for the sprint.
+By estimating remaining work of tasks for each backlog item, teams better understand what they can accomplish within a sprint. Because the sprint tasks define the overall sprint scope, defining the remaining work leads to a well-defined sprint scope. Anything that isn't represented by a task in the sprint should be considered out of scope for the sprint.
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -47,11 +46,11 @@ Increases instead of decreases within the blue graph may indicate:
 
 - Poor estimates made to tasks 
 - Discovery of new work not accounted for in sprint planning 
-- Scope creep, additional work not agreed to by the team. 
+- Scope creep, other work not agreed to by the team. 
  
 Whatever the cause, teams should come together quickly to determine how to remedy the increased workload. 
 
-Solutions may include reassigning tasks or recruiting additional resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.
+Solutions may include reassigning tasks or recruiting more resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.
 
 ::: moniker-end
 
@@ -59,25 +58,30 @@ Solutions may include reassigning tasks or recruiting additional resources. The 
 ::: moniker range="<= azure-devops-2019"
 
 As the team makes progress, divergences from the ideal trend line help the team monitor divergences from scope. 
-<table>
-<tr valign="top">
-<td width="35%">
-<p>Increases instead of decreases within the blue graph may indicate:</p> 
-<ul>
-<li>Poor estimates made to tasks</li>
-<li>Discovery of new work not accounted for in sprint planning</li>
-<li>Scope creep, additional work not agreed to by the team.</li>
-</ul>
-<p>Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.</p>
 
-<p>Solutions may include reassigning tasks or recruiting additional resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.</p>
-</td>
-<td>
-<img src="media/burndown/ALM_SB_ScopeCreep_75.png" alt="Sprint burndown chart: Increasing remaining work can indicate scope creep"/>
+:::row:::
+   :::column span="1":::
+   
+   Increases instead of decreases within the blue graph may indicate:
+    
+   - Poor estimates made to tasks
+   - Discovery of new work not accounted for in sprint planning
+   - Scope creep, other work not agreed to by the team.
+   
+   Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.
 
-</td>
-</tr>
-</table>
+
+   Solutions may include reassigning tasks or recruiting more resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.
+
+   :::column-end:::
+   :::column span="3":::
+   
+   ![Sprint burndown chart: Increasing remaining work can indicate scope creep](media/burndown/ALM_SB_ScopeCreep_75.png)
+
+   :::column-end:::
+:::row-end:::
+
+
 
 ::: moniker-end
 
@@ -108,17 +112,19 @@ Teams should meet immediately to course correct and either reassign work, recrui
 
 Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
 
-<table>
-<tr valign="top">
-<td width="35%">
-<p>For example, when the actual remaining work (blue area) goes flat for a period of time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.</p>
-<p>Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.</p>
-</td>
-<td>
-<img src="media/burndown/ALM_SB_RiskMitigation.png" alt="Sprint burndown chart: Actual remaining work high above ideal trend line"/>
-</td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   
+   For example, when the actual remaining work (blue area) goes flat over time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.
+
+   Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.
+
+   :::column-end:::
+   :::column span="3":::
+   
+   ![Sprint burndown chart: Actual remaining work high above ideal trend line](media/burndown/ALM_SB_RiskMitigation.png)
+   :::column-end:::
+:::row-end:::
   
 ::: moniker-end
 
@@ -129,7 +135,7 @@ In addition to the sprint burndown chart, teams can review the velocity at which
 You can use your team [velocity](team-velocity.md) as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 
 
-### Industry resources
+## Industry resources
  
 - [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  
 - [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)  

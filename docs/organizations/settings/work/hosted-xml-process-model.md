@@ -2,8 +2,8 @@
 title: Hosted XML process model 
 titleSuffix: Azure DevOps Services
 description: How to customize work tracking features using the Hosted XML process model 
-ms.technology: devops-agile
-ms.assetid: 
+ms.technology: devops-agile 
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -13,7 +13,7 @@ ms.date: 10/24/2019
 
 # Hosted XML process model  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 <a id="hosted-xml-process-model">  </a>
 
@@ -30,81 +30,91 @@ The Hosted XML process model provides support for customizing work tracking obje
 You can perform the following tasks with the Hosted XML process model. 
 
 
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Area</th>
-<th width="65%">Customization support</th>
-</tr>
-<tr>
-<td>Fields  </td>
-<td>
-<ul>
-<li><a href="../../../reference/add-modify-field.md" data-raw-source="[Add or modify a field](../../../reference/add-modify-field.md)">Add or modify a field</a></li>
-<li><a href="../../../reference/add-modify-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](../../../reference/add-modify-field.md#boolean-field)">Add a checkbox (Boolean) field</a></li>
-<li><a href="../../../reference/add-modify-field.md#add-rules" data-raw-source="[Add rules to a field](../../../reference/add-modify-field.md#add-rules)">Add rules to a field</a></li>
-<li><a href="../../../reference/add-modify-field.md#change-label" data-raw-source="[Change a field label](../../../reference/add-modify-field.md#change-label)">Change a field label</a></li>
-<li><a href="../../../reference/add-modify-field.md#custom-control" data-raw-source="[Add a custom control field](../../../reference/add-modify-field.md#custom-control)">Add a custom control field</a></li>
-<li><a href="../../../reference/add-modify-field.md#change-label" data-raw-source="[Remove a field](../../../reference/add-modify-field.md#change-label)">Remove a field</a> </li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Pick lists  </td>
-<td>
-<ul>
-<li><a href="../set-area-paths.md" data-raw-source="[Area paths](../set-area-paths.md)">Area paths</a></li><li><a href="../set-iteration-paths-sprints.md" data-raw-source="[Iteration paths](../set-iteration-paths-sprints.md)">Iteration paths</a></li>
-<li><a href="../../../reference/xml/change-workflow-wit.md" data-raw-source="[State or Reason fields](../../../reference/xml/change-workflow-wit.md)">State or Reason fields</a></li>
-<li><a href="../../security/add-users-team-project.md" data-raw-source="[Person-name field (add users)](../../security/add-users-team-project.md)">Person-name field (add users)</a></li>
-<li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Add a custom pick list](../../../reference/add-modify-field.md#picklist)">Add a custom pick list</a></li>
-<li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Predefined field](../../../reference/add-modify-field.md#picklist)">Predefined field</a></li>
-<li><a href="../../../reference/customize-work.md" data-raw-source="[Resolution State or Failure Type](../../../reference/customize-work.md)">Resolution State or Failure Type</a></li>
-<li><a href="../../../reference/xml/define-global-lists.md" data-raw-source="[Define global lists](../../../reference/xml/define-global-lists.md)">Define global lists</a> </li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Work item types</td>
-<td>
-<ul>
-<li><a href="../../../reference/add-modify-wit.md" data-raw-source="[Add or modify a work item type](../../../reference/add-modify-wit.md)">Add or modify a work item type</a></li>
-<li><a href="../../../reference/xml/change-workflow-wit.md" data-raw-source="[Change the workflow (States, Reasons, Transitions)](../../../reference/xml/change-workflow-wit.md)">Change the workflow (States, Reasons, Transitions)</a></li>
-<li><a href="../../../reference/xml/change-work-item-form-layout.md" data-raw-source="[Customize the form](../../../reference/xml/change-work-item-form-layout.md)">Customize the form</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#wit-colors" data-raw-source="[Specify the WIT color](../../../reference/xml/process-configuration-xml-element.md#wit-colors)">Specify the WIT color</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md" data-raw-source="[Specify the WIT icon](../../../reference/xml/process-configuration-xml-element.md)">Specify the WIT icon</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#state-colors" data-raw-source="[Specify the workflow state color](../../../reference/xml/process-configuration-xml-element.md#state-colors)">Specify the workflow state color</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Backlogs and process configuration  </td>
-<td>
-<ul>
-<li><a href="../../../reference/add-wits-to-backlogs-and-boards.md" data-raw-source="[Add WITs to backlogs or boards](../../../reference/add-wits-to-backlogs-and-boards.md)">Add WITs to backlogs or boards</a></li>
-<li><a href="../../../reference/add-portfolio-backlogs.md" data-raw-source="[Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md)">Add portfolio backlogs</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#add" data-raw-source="[Configure the quick add panel](../../../reference/xml/process-configuration-xml-element.md#add)">Configure the quick add panel</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#columns" data-raw-source="[Configure the default backlog columns](../../../reference/xml/process-configuration-xml-element.md#columns)">Configure the default backlog columns</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#number_items" data-raw-source="[Set maximum number of Taskboard items](../../../reference/xml/process-configuration-xml-element.md#number_items)">Set maximum number of Taskboard items</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#weekend_days" data-raw-source="[Set default weekend days (Scrum)](../../../reference/xml/process-configuration-xml-element.md#weekend_days)">Set default weekend days (Scrum)</a> </li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default bug management behavior](../../../reference/xml/process-configuration-xml-element.md#behaviors)">Set default bug management behavior</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default hidden backlogs](../../../reference/xml/process-configuration-xml-element.md#behaviors)">Set default hidden backlogs</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md" data-raw-source="[Process configuration](../../../reference/xml/process-configuration-xml-element.md)">Process configuration</a></li>
-<li><a href="../../../reference/xml/categories-xml-element-reference.md" data-raw-source="[Categories](../../../reference/xml/categories-xml-element-reference.md)">Categories</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Process template </td>
-<td>
-<ul>
-<li><a href="import-process/import-process.md#import-from-TFS" data-raw-source="[Import a process template](import-process/import-process.md#import-from-TFS)">Import a process template</a></li>
-<li><a href="import-process/import-process.md#export-process" data-raw-source="[Export a process template](import-process/import-process.md#export-process)">Export a process template</a></li>
-<li><a href="import-process/customize-process.md" data-raw-source="[Customize a process template](import-process/customize-process.md)">Customize a process template</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Area**
+   :::column-end:::
+   :::column span="3":::
+   **Customization support**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Fields  
+   :::column-end:::
+   :::column span="3":::   
+   
+   - [Add or modify a field](../../../reference/add-modify-field.md)
+   - [Add a checkbox (Boolean) field](../../../reference/add-modify-field.md#boolean-field)
+   - [Add rules to a field](../../../reference/add-modify-field.md#add-rules)
+   - [Change a field label](../../../reference/add-modify-field.md#change-label)
+   - [Add a custom control field](../../../reference/add-modify-field.md#custom-control)
+   - [Remove a field](../../../reference/add-modify-field.md#change-label)    
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Pick lists  
+   :::column-end:::
+   :::column span="3":::   
+   
+   - [Area paths](../set-area-paths.md)- [Iteration paths](../set-iteration-paths-sprints.md)
+   - [State or Reason fields](../../../reference/xml/change-workflow-wit.md)
+   - [Person-name field (add users)](../../security/add-users-team-project.md)
+   - [Add a custom pick list](../../../reference/add-modify-field.md#picklist)
+   - [Predefined field](../../../reference/add-modify-field.md#picklist)
+   - [Resolution State or Failure Type](../../../reference/customize-work.md)
+   - [Define global lists](../../../reference/xml/define-global-lists.md)    
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Work item types
+   :::column-end:::
+   :::column span="3":::   
+   
+   - [Add or modify a work item type](../../../reference/add-modify-wit.md)
+   - [Change the workflow (States, Reasons, Transitions)](../../../reference/xml/change-workflow-wit.md)
+   - [Customize the form](../../../reference/xml/change-work-item-form-layout.md)
+   - [Specify the WIT color](../../../reference/xml/process-configuration-xml-element.md#wit-colors)
+   - [Specify the WIT icon](../../../reference/xml/process-configuration-xml-element.md)
+   - [Specify the workflow state color](../../../reference/xml/process-configuration-xml-element.md#state-colors)     
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Backlogs and process configuration  
+   :::column-end:::
+   :::column span="3":::   
+   
+   - [Add WITs to backlogs or boards](../../../reference/add-wits-to-backlogs-and-boards.md)
+   - [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md)
+   - [Configure the quick add panel](../../../reference/xml/process-configuration-xml-element.md#add)
+   - [Configure the default backlog columns](../../../reference/xml/process-configuration-xml-element.md#columns)
+   - [Set maximum number of Taskboard items](../../../reference/xml/process-configuration-xml-element.md#number_items)
+   - [Set default weekend days (Scrum)](../../../reference/xml/process-configuration-xml-element.md#weekend_days) 
+   - [Set default bug management behavior](../../../reference/xml/process-configuration-xml-element.md#behaviors)
+   - [Set default hidden backlogs](../../../reference/xml/process-configuration-xml-element.md#behaviors)
+   - [Process configuration](../../../reference/xml/process-configuration-xml-element.md)
+   - [Categories](../../../reference/xml/categories-xml-element-reference.md)     
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Process template 
+   :::column-end:::
+   :::column span="3":::    
+   
+   - [Import a process template](import-process/import-process.md#import-from-TFS)
+   - [Export a process template](import-process/import-process.md#export-process)
+   - [Customize a process template](import-process/customize-process.md)
+   
+   :::column-end:::
+:::row-end:::
 
 <a id="add-support-wit" />
 

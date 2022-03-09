@@ -5,71 +5,148 @@ description: Merges Command
 ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Merges Command
+# Merges command  (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Displays detailed information about past merges between the specified source and destination branches.
+The **merges** command displays detailed information about past merges between the specified source and destination branches.
 
-**Required Permissions**  
-To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. 
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
 ```
 
-## Parameters<table>
+## Parameters
 
-<thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>source</em></p></td>
-	<td><p>Filters the merge history to include only entries with the specified sources.</p><p>This parameter is optional.</p></td></tr>
-<tr>
-	<td><p><em>destination</em></p></td>
-	<td><p>Specifies the destination branch for which merge history is displayed.</p><p>This parameter is required.</p></td></tr>
-<tr>
-	<td><p><em>username</em></p></td>
-    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td></tr>
-<tr>
-	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains the branches about which you want to display the merge history (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
-</table>
+### Argument
 
-<table><thead>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/recursive</strong></p></td>
-	<td><p>Displays information for all merges in specified Team Foundation version control server folder and its subfolders.</p></td></tr>
-<tr>
-	<td><p><strong>/extended</strong></p></td>
-	<td><p>Displays a list of merges for a specific range of target items (for example: <strong>tf merges</strong> tgt\file1.txt; C21-25). This option displays the types of merges (for example, add or edit) and detailed information about the source and target items. This option implies <strong>/format: Detailed</strong>.</p><strong>Note</strong>
- You cannot use this option if you have specified a source item. 
-</td></tr>
-<tr>
-	<td><p><strong>/format</strong></p></td>
-	<td><p>Specifies the formats in which merge history can appear:</p><ul><li><p><strong>Brief</strong>: default value, shows the changeset numbers for both the source and target items and the author and the date of the target checkin.</p></li><li><p><strong>Detailed</strong>: shows the detailed paths and changeset numbers for both the source and target items.</p></li></ul></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td></tr>
-<tr>
-	<td><p><strong>/showall</strong></p></td>
-	<td><p>Displays all past merges for a given target item under its current name and all previously used names.</p></td></tr>
-<tr>
-	<td><p><strong>/collection</strong></p></td>
-	<td><p>Specifies the project collection.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *source*
+   :::column-end:::
+   :::column span="3":::
+   Filters the merge history to include only entries with the specified sources.
+
+   This parameter is optional.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *destination*
+   :::column-end:::
+   :::column span="3":::
+   Specifies the destination branch for which merge history is displayed.
+
+   This parameter is required.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="3":::
+   The URL of the project collection that contains the branches about which you want to display the merge history (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+
+### Option
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="3":::
+   Displays information for all merges in specified Team Foundation version control server folder and its subfolders.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/extended**
+   :::column-end:::
+   :::column span="3":::
+   Displays a list of merges for a specific range of target items (for example: **tf merges** tgt\file1.txt; C21-25). This option displays the types of merges (for example, add or edit) and detailed information about the source and target items. This option implies **/format: Detailed**.
+
+   > [!Note]  
+   > You cannot use this option if you have specified a source item. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/format**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the formats in which merge history can appear:
+
+   - **Brief**: default value, shows the changeset numbers for both the source and target items and the author and the date of the target checkin.
+   - **Detailed**: shows the detailed paths and changeset numbers for both the source and target items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the user name and password to authenticate the user with Azure DevOps.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/showall**
+   :::column-end:::
+   :::column span="3":::
+   Displays all past merges for a given target item under its current name and all previously used names.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -94,9 +171,7 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 
 ## Related articles
 
-- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)  
 - [Merge Command](merge-command.md)  
 - [Branch Command](branch-command.md)  
-- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
-- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
 - [Branching and Merging](./branching-strategies-with-tfvc.md)

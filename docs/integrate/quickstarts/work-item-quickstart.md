@@ -12,13 +12,13 @@ ms.date: 06/27/2017
 
 # Fetch work items with queries programmatically 
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programmatically using our REST APIs or .NET client libraries. 
+A common scenario in Azure DevOps Services is to fetch work items using queries. This article details how to implement that scenario programmatically using our REST APIs or .NET client libraries.
 
 ## Prerequisites
 
-You need the following prerequisites:
+You must have the following items:
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
@@ -26,13 +26,13 @@ You need the following prerequisites:
 
 ## Create a C# project in Visual Studio
 
-To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
+To learn about C# programming within Visual Studio, see the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/).
 
 ## C# code content
 
-There are a few things happening in the following code sample:
+The following tasks occur in the following code sample:
 
-1. Authenticating
+1. Authenticate
    1. Create credentials using your PAT
    2. Generate the client
 2. Get the work items
@@ -67,7 +67,7 @@ public class QueryExecutor
     /// </param>
     /// <param name="personalAccessToken">
     ///     A Personal Access Token, find out how to create one:
-    ///     <see href="https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops" />.
+    ///     <see href="/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops" />.
     /// </param>
     public QueryExecutor(string orgName, string personalAccessToken)
     {

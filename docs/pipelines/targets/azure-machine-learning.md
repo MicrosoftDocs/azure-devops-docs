@@ -4,18 +4,17 @@ titleSuffix: Azure Pipelines
 description: Use Azure Pipelines for flexible MLOps automation
 services: machine-learning
 ms.topic: tutorial
-manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
 ms.author: atulmal
 ms.reviewer: laobri
 author: azooinmyluggage
-ms.date: 08/12/2021
+ms.date: 02/01/2022
 monikerRange: azure-devops
 ---
 
 # Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can use a pipeline to automate the machine learning lifecycle. Some of the operations you can automate are:
 
@@ -28,7 +27,7 @@ This article will teach you how to create an Azure Pipeline that builds and depl
 
 ## Prerequisites
 
-Before you read this topic, you should understand [how the Azure Machine Learning service works](/azure/machine-learning/service/concept-azure-machine-learning-architecture).
+Before you read this article, you should understand [how the Azure Machine Learning service works](/azure/machine-learning/service/concept-azure-machine-learning-architecture).
 
 Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-learning/service/setup-create-workspace) to create a workspace.
 

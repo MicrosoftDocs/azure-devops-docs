@@ -1,26 +1,26 @@
 ---
 title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
-description: Write and test OData queries for use in Power BI integration
+description: Learn how to write and test OData queries for use in Power BI integration.
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/18/2020
+ms.date: 10/05/2021
 ---
 
 # Connect with data by using Power BI and OData queries
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Using OData queries is the recommended approach for pulling data into Power BI. OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard which defines best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
+Using OData queries is the recommended approach for pulling data into Power BI. OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
 
 To get started quickly, check out the [Overview of sample reports that use OData queries](sample-odata-overview.md). For information about other approaches, see [Power BI integration overview](overview.md). 
 
 Power BI can run OData queries, which can return a filtered or aggregated set of data to Power BI. OData queries have two advantages: 
 * All filtering is done server-side. Only the data you need is returned, which leads to shorter refresh times.
-* You can pre-aggregate data server-side. An OData query can perform aggregations such as work item rollup and build failure rates. The aggregations are accomplished server-side, and only the aggregate values are returned to Power BI. With pre-aggregation, you can perform aggregations across large data sets, without needing to pull all the detail data into Power BI.
+* You can pre-aggregate data server-side. An OData query can carry out aggregations such as work item rollup and build failure rates. The aggregations are accomplished server-side, and only the aggregate values are returned to Power BI. With pre-aggregation, you can carry out aggregations across large data sets, without needing to pull all the detail data into Power BI.
 
 In this article, you learn how to:
 
@@ -34,19 +34,19 @@ In this article, you learn how to:
 
 The easiest way to write and test OData is to use [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata). Visual Studio Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions that are useful for writing and testing queries. 
 
-### 1. Install Visual Studio Code
+### Install Visual Studio Code
  
 To download and install Visual Studio Code, go to the [Visual Studio Code download page](https://aka.ms/vscode).
 
-### 2. Install the OData extension
+### Install the OData extension
 
 Open Visual Studio Code, select **Extensions**, and then search for *odata*. In the results list, select **vscode-odata**, and then install it.
 
-### 3. Create an .odata file
+### Create an .odata file
 
 In Visual Studio Code, create and save a file called *filename.odata*. You may name it whatever you want, but it must have an *.odata* extension to enable the OData extension functionality.
 
-### 4. Write the OData query
+### Write the OData query
 
 Write the OData query. For example queries, review the [Overview of sample reports using OData queries](sample-odata-overview.md). 
 
@@ -67,7 +67,7 @@ After you've written the query in Visual Studio Code, you should see syntax high
 
 ![Visual Studio Code OData extension - syntax highlighting](media/odataquery-syntaxhighlighting.png)
 
-### 5. Test the OData query
+### Test the OData query
 
 To test the OData query, place your cursor anywhere in the query text and select **View** > **Command Palette**. In the search box, type **odata** to bring up all the OData commands:
 
@@ -87,9 +87,9 @@ After you've verified that the query works correctly, you can run it from Power 
 
 ## Run the OData query from Power BI
 
-### 1. Combine the multiline OData query into a single-line query
+### Combine the multiline OData query into a single-line query
 
-Before you use the query in Power BI, you must convert the multiline OData query into a single-line query. The simplest way to do this is to use [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) and use the **OData: Combine** command.
+Before you use the query in Power BI, you must convert the multiline OData query into a single-line query. The simplest way to do so is to use [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) and use the **OData: Combine** command.
 
 > [!NOTE]
 > In your *filename.odata* file, you might want to first create a copy of the multiline query text and then run **OData: Combine** on the copy. You do this because there's no way to convert the single-line query back to a readable multiline query. 
@@ -102,7 +102,7 @@ The multiline query is converted into a single-line query.
 
 Copy the entire line for use in the next section.
 
-### 2. Run the query from Power BI
+### Run the query from Power BI
 
 Open Power BI, select **Get Data**, and then select the **OData feed** connector. For more information, see [Create a Power BI report with an OData query](create-quick-report-odataq.md).
 
@@ -117,7 +117,7 @@ Power BI displays a preview page:
 ![Power BI - OData Feed - Power BI Data Preview](media/odataquery-powerbi-preview.png)
 
 
-### 3. Specify query options
+### Specify query options
 
 On the preview page, select **Edit** to open the Power Query Editor.
 
@@ -156,7 +156,7 @@ Replace `[Implementation="2.0"]` with the following string:
 > - Remove columns.
 > - Expand columns into specific fields.
 
-### 4. Create a report by using the data
+### Create a report by using the data
 
 Select **Close & Apply** to save your settings and pull the data into Power BI. After the data is refreshed, you can create a report as you would normally in Power BI.
 

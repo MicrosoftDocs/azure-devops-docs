@@ -1,21 +1,21 @@
 ---
 title: Create an Analytics view 
 titleSuffix: Azure DevOps
-description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
+description: Learn how to add a custom Analytics view for easy generation of Power BI reports for Azure DevOps.
 ms.technology: devops-analytics
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/10/2020
+ms.date: 10/01/2021
 ---
 
 # Create an Analytics view in Azure DevOps 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
+You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view.
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
@@ -58,12 +58,12 @@ Choose ![plus icon](../media/icons/blue-plus.png) **New View** to open the dialo
 4.	Choose the amount of historical data contained within the view
 5.	Verify and save the view
 
-Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, simply click the tab title. 
+Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, select the tab title. 
 
 > [!NOTE]   
 > The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics View - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
 
-### 1. Name the view and choose a sharing option
+### Name the view and choose a sharing option
 
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
 
@@ -73,7 +73,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 <a id="specify-wi-filters" />
 
-### 2. Specify Work items filters
+### Specify Work items filters
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
 > [!div class="mx-imgBorder"]
@@ -84,9 +84,9 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 * **Add Teams or Area Path filters**
 
-   By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add additional projects defined in the organization to the filter. 
+   By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add other projects defined in the organization to the filter. 
 
-  You can change the selected teams for the current project or add additional projects to the filter. You can also change from filtering on teams to area Paths. Here is a view filtered by two Fabrikam area paths.
+  You can change the selected teams for the current project or add other projects to the filter. You can also change from filtering on teams to area Paths. Here's a view filtered by two Fabrikam area paths.
   > [!div class="mx-imgBorder"]
   > ![Area Path picker example](media/editable-views/area-path.png)
 
@@ -111,7 +111,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 <a id="select-fields" />
 
-### 3. Select the fields to appear in the report
+### Select the fields to appear in the report
 
 In the next tab, <strong>Fields</strong>, you can add and remove fields that you'll use in your report. Choose the ![plus icon](../media/icons/blue-plus.png) <strong>Add</strong> to add a field. To start with a fresh list, choose <strong>Remove All</strong>. 
 
@@ -126,11 +126,11 @@ You can add any custom fields you've added through an inherited process.
 
 <a id="select-trend-data" />
 
-### 4. Select trend data options 
+### Select trend data options 
 
 In the next tab, **History**, you choose the options that determine how much history data will be available from the view. 
 
-As shown in the following example, if you have 10 work items and choose a rolling period of 14 days (two weeks) with a weekly granularity, your view will contain 30 rows. If you refresh on Saturday, then you have a row on the last two Saturdays for each work item and a row for the most recent data on Saturday. 
+In this example, if you have 10 work items and choose a rolling period of 14 days with a weekly granularity, your view will contain 30 rows. If you refresh on Saturday, then you have a row on the last two Saturdays for each work item and a row for the most recent data on Saturday. 
 
 
  > [!div class="mx-imgBorder"]
@@ -149,7 +149,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 > | **Date range** | Choose this option and select a specific start and end date to include in the dataset, or check the to present checkbox to specify a rolling window with no fixed end date. When you check **to present**, the end date corresponds to the day the reports is refreshed. If you uncheck it, the end date is always the date selected on the end date field. |
 > | **All history** | Choose this option to include the complete history for all work items you've selected in your filter criteria. If you have a significant history, specify a Weekly or Monthly granularity.|
 
-**Exclude closed items**  - Analytics stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view if you select a rolling period of 14 days your view will include the current revision for all work items that were closed before this period. To Exclude work items that were completed before a specific date,simply check the corresponding box under any of the options for history. This greatly decreases the amount of data loaded into Power BI and helps advanced calculations, like [time in state](create-timeinstate-report.md) to be much more performant. For Rolling period and Date range, the date work items will be excluded by is set by the start of the period. For Current only and All history, you need to provide that date. For example, the image below excludes all work times that were completed before Mon May 14.
+**Exclude closed items**  - Analytics stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view, if you select a rolling period of 14 days, your view will include the current revision for all work items that were closed before this period. To Exclude work items that were completed before a specific date, check the corresponding box under any of the options for history. It greatly reduces the amount of data loaded into Power BI and helps advanced calculations, like [time in state](create-timeinstate-report.md) to be much more performant. For Rolling period and Date range, the date work items will be excluded by is set by the start of the period. For Current only and All history, you need to provide that date. For example, the image below excludes all work times that were completed before Mon May 14.
 
  > [!div class="mx-imgBorder"]
  >![Exclude work items for a rolling period of 14 days](media/editable-views/history-exclude.png)
@@ -170,9 +170,9 @@ You can choose to get a snapshot of every work item for each day, week, or month
 
 <a id="verify-and-save" />
 
-### 5. Verify and save the view
+### Verify and save the view
 
-The last step verifies your view by running a test query against the view and validating all the filter criteria. Verification time can vary according to the amount of data defined in your view. For example, a view that includes all work item types and specifies "All history", takes more time to verify than a view that includes only bugs and specifies a rolling period of 30 days.
+The last step verifies your view by running a test query against the view and validating the filter criteria. Verification time can vary according to the amount of data defined in your view. For example, a view that includes all work item types and specifies **All history**, takes more time to verify than a view that includes only bugs and specifies a rolling period of 30 days.
 
 > [!TIP]  
 > Verifying your view is an important step. When verification ends successfully, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
@@ -198,7 +198,7 @@ Choose the **Edit** link to edit a view.
 
 <a id="q-a">  </a>
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create an Active bugs Power BI report with a custom Analytics view](active-bugs-sample-report.md)

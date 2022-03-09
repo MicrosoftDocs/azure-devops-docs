@@ -1,7 +1,7 @@
 ---
 title: Pipeline stage wise failures sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pipeline stage wise failure Power BI report  
+description: Learn how to generate a pipeline stage wise failure Power BI report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 12/18/2020
+ms.date: 10/12/2021
 ---
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
@@ -31,7 +31,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -57,7 +57,7 @@ in
 
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -89,54 +89,121 @@ $apply=filter(
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
-<td>Return task results for a specific pipeline</td>
-<tr>
-<tr>
-<td><code>and PipelineRunCompletedOn/Date ge {startdate}</code></td>
-<td>Return task results for pipeline runs on or after the specified date</td>
-<tr>
-<tr>
-<td><code>and PipelineRunOutcome eq 'Failed'</code></td>
-<td>Return task results where build outcome is failed</td>
-<tr>
-<tr><td><code>and TaskOutcome eq 'Failed'</code></td>
-<td>Return task results where task outcome is failed</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close of filter statement</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),</code></td>
-<td>Group by date of completion of pipeline run, Build Id and stage name.</td>
-<tr>
-<tr><td><code>aggregate (FailedCount with sum as FailedCount))</code></td>
-<td>For each day, build Id and Stage, count the total number of failures. This will be the total number of task failures & not stage failures</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(PipelineRunCompletedOn/Date, PipelineJob/StageName ),</code></td>
-<td>Group by day and stage name.</td>
-<tr>
-<tr><td><code>aggregate</code></td>
-<td>Start of aggregate</td>
-<tr>
-<tr><td><code>(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))</code></td>
-<td>For each day, sum the number of times a stage failed</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelinename}'`
+   :::column-end:::
+   :::column span="1":::
+   Return task results for a specific pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and PipelineRunCompletedOn/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return task results for pipeline runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and PipelineRunOutcome eq 'Failed'`
+   :::column-end:::
+   :::column span="1":::
+   Return task results where build outcome is failed
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and TaskOutcome eq 'Failed'`
+   :::column-end:::
+   :::column span="1":::
+   Return task results where task outcome is failed
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close of filter statement
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),`
+   :::column-end:::
+   :::column span="1":::
+   Group by date of completion of pipeline run, Build ID and stage name.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate (FailedCount with sum as FailedCount))`
+   :::column-end:::
+   :::column span="1":::
+   For each day, build ID and Stage, count the total number of failures. It will be the total number of task failures & not stage failures
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(PipelineRunCompletedOn/Date, PipelineJob/StageName ),`
+   :::column-end:::
+   :::column span="1":::
+   Group by day and stage name.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate`
+   :::column-end:::
+   :::column span="1":::
+   Start of aggregate
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))`
+   :::column-end:::
+   :::column span="1":::
+   For each day, sum the number of times a stage failed
+   :::column-end:::
+:::row-end:::
 
+
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ## Power BI transforms
 
@@ -206,14 +273,14 @@ For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Stacked column chart**. 
 
-1. Add the field "PipelineRunCompletedOn.Date" to **Axis**.
-    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
+1. Add the field **PipelineRunCompletedOn.Date** to **Axis**.
+    - Right-click **PipelineRunCompletedOn.Date** and select **PipelineRunCompletedOn.Date**, rather than Date Hierarchy.
 	
-1. Add the field "FailedStageCount" to **Values**.
-	  - Right-click "FailedStageCount" field and ensure **Sum** is selected.
+1. Add the field **FailedStageCount** to **Values**.
+	  - Right-click **FailedStageCount** field and ensure **Sum** is selected.
 
-1. Add the field "PipelineJob.StageName" to **Legend**.
-	  - Right-click "PipelineJob.StageName" field and ensure **Sum** is selected.
+1. Add the field **PipelineJob.StageName** to **Legend**.
+	  - Right-click **PipelineJob.StageName** field and ensure **Sum** is selected.
   
 
 Your report should look similar to the following image. 
@@ -222,9 +289,9 @@ Your report should look similar to the following image.
 > ![Sample - Pipelines Stage wise failures - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
 
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following extra queries to create different but similar reports using the same steps defined previously in this article.
 
 
 ### Task wise failure trend, rather than Stage wise failure trend

@@ -42,7 +42,7 @@ ms.technology: devops-cicd-tasks
     #includesymbols: false # Optional
     #includesource: false # Optional
     #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
-    #versionEnvVar: # Required when versioningScheme == ByEnvVar
+    #versionEnvVar: # Required when versioningScheme == byEnvVar
     #majorVersion: '1' # Required when versioningScheme == ByPrereleaseNumber
     #minorVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
     #patchVersion: '0' # Required when versioningScheme == ByPrereleaseNumber

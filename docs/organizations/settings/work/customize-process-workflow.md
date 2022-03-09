@@ -14,7 +14,7 @@ ms.date: 08/17/2020
 
 # Customize the workflow (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories.  
 

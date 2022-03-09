@@ -1,22 +1,22 @@
 ---
-title: Scrum process work items types & workflow
+title: Understand Scrum process work items types & workflow
 titleSuffix: Azure Boards
-description: How to guide for using the Scrum process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to use the Scrum process work item types and workflow to track work in Azure Boards and Azure DevOps.
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+monikerRange: '<= azure-devops'
+ms.date: 11/07/2021
 ---
 
-# Scrum process work item types and workflow  
+# Manage your Scrum process work item types and workflow  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
+To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners, and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks that automatically link to PBIs and bugs.
 
 ![Scrum process, WITs used to plan and track](media/scrum-process-plan-wits.png) 
 
@@ -45,33 +45,59 @@ By defining the **Effort** for PBIs and bugs, teams can use the forecast feature
 
 Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form. For details about creating bugs, see [Manage bugs](../../backlogs/manage-bugs.md). 
 
-<table>
-<thead>
-<tr><th><p>Field/tab</p></th><th><p>Usage</p></th></tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td width="20%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Effort](../../queries/query-numeric.md)">Effort</a></p></td>
-    <td><p>Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. </p><p>Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools reference the values in this field. For additional guidance, see the <a href="/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)" data-raw-source="[Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120))">Estimating</a> white paper.</p></td></tr>
-<tr>
-    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Business Value](../../queries/query-numeric.md)">Business Value</a></p></td>
-    <td><p>Specify a number that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.</p></td>
+:::row:::
+   :::column span="1":::
+   **Field/tab**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
 
-</tr>
-<tr>
-    <td><p><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Description](../../queries/titles-ids-descriptions.md)">Description</a>  </p></td>
-    <td><p>Provide enough detail for estimating how much work will be required to implement the item. Focus on who the feature is for, what users want to accomplish, and why. Don&#39;t describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item. </p>
-    </td>
-</tr>
-<tr>
-    <td><p><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </p></td>
-    <td><p>Define what &quot;Done&quot; means by describing the criteria that the team should use to verify whether the PBI or the bug fix has been fully implemented.<br /><br />Before work begins on a PBI or bug, describe the criteria for customer acceptance as clearly as possible. Conversations between the team and customers to determine the acceptance criteria helps ensure a common understanding within the team to meet customers&#39;  expectations. The acceptance criteria can be used as the basis for acceptance tests so that the team can more effectively evaluate whether an item has been satisfactorily completed.</p>
+:::row:::
+   :::column span="1":::
+   [Effort](../../queries/query-numeric.md)
 
-</td>
-</tr>
+   :::column-end:::
+   :::column span="3":::
+   Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required.  
 
-</tbody>
-</table>
+   Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Business Value](../../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   Specify a number that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.
+
+   :::column-end:::
+
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Description](../../queries/titles-ids-descriptions.md)  
+
+   :::column-end:::
+   :::column span="3":::
+   Provide enough detail for estimating how much work will be required to implement the item. Focus on who the feature is for, what users want to accomplish, and why. Don&#39;t describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item. 
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Acceptance Criteria](../../queries/titles-ids-descriptions.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Define what &quot;Done&quot; means by describing the criteria that the team should use to verify whether the PBI or the bug fix has been fully implemented.<br /><br />Before work begins on a PBI or bug, describe the criteria for customer acceptance as clearly as possible. Conversations between the team and customers to determine the acceptance criteria helps ensure a common understanding within the team to meet customers&#39;  expectations. The acceptance criteria can be used as the basis for acceptance tests so that the team can more effectively evaluate whether an item has been satisfactorily completed.
+
+
+   :::column-end:::
+:::row-end:::
 
 
 [!INCLUDE [temp](../../includes/discussion-tip.md)] 
@@ -96,7 +122,7 @@ By updating the State, teams know which items are new, in progress, or completed
 PBIs and bugs follow this typical workflow progression:
 
 -   The product owner creates a PBI or a tester creates a bug in the **New** state with the default reason, **New backlog item**  
--   The product owner moves the item to **Approved** after it is sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state  
+-   The product owner moves the item to **Approved** after it's sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state  
 -   The team updates the status to **Committed** when they decide to commit to working on it during the sprint  
 -   The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
@@ -107,7 +133,7 @@ Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the st
 
 ![Track progress on the Kanban board](../../boards/media/ALM_CC_MoveCard.png)
 
-You can customize the Kanban board to support additional [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
+You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For other customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
 
 ## Map PBIs to features
@@ -126,21 +152,38 @@ Name the task and estimate the work it will take.
 
 <img src="media/scrum-task-form.png" alt="Scrum process, Task work item form" />  
 
-Using Scrum, teams forecast work and define tasks at the start of each sprint, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement PBIs, and a tester can define tasks to write and run test cases.
+Using Scrum, teams forecast work and define tasks at the start of each sprint, and each team member completes a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement PBIs, and a tester can define tasks to write and run test cases.
 
 When teams estimate work using hours or days, they define tasks and the **Remaining Work** and **Activity** (optional) fields.
 
-<table><thead>
-<tr><th><p>Field/tab</p></th><th><p>Usage</p></th></tr></thead>
-<tbody valign="top"><br/><tr>
-    <td width="18%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a> </p></td>
-    <td><p>Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It&#39;s used to calculate capacity charts, the sprint burndown chart, and the <a href="../../../report/sql-reports/sprint-burndown-scrum.md" data-raw-source="[Sprint Burndown (Scrum)](../../../report/sql-reports/sprint-burndown-scrum.md)">Sprint Burndown (Scrum)</a> report.<br />If you divide a task into subtasks, specify Remaining Work for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td>
-</tr>
-<tr>
-    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Activity](../../queries/query-numeric.md)">Activity</a> </p></td>
-    <td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
-</tbody>
-</table>  
+:::row:::
+   :::column span="1":::
+   **Field/tab**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Remaining Work](../../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It&#39;s used to calculate capacity charts, the sprint burndown chart, and the [Sprint Burndown (Scrum)](../../../report/sql-reports/sprint-burndown-scrum.md) report.<br />If you divide a task into subtasks, specify Remaining Work for the subtasks only. You can specify work in any unit of measurement your team chooses.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Activity](../../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Select the type of activity this task represents when your team estimates sprint capacity by activity.
+
+   :::column-end:::
+:::row-end:::
 
 
 ## Track test progress
@@ -153,7 +196,7 @@ From the web portal or Test Manager, you can [create test cases that automatical
 <img src="media/IC793453.png" alt="Web portal, Select the test suite and add a test case" /> 
 
 
-The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
+The test case contains many fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
 ![Scrum Test case work item form](media/scrum-test-case-form.png)  
 
@@ -187,7 +230,7 @@ Work items you add from the widget are automatically scoped to your team's defau
 
 ### Backlog list order
 
-The [Backlog Priority](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of PBIs, bugs, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
+The [Backlog Priority](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of PBIs, bugs, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
 
 
 
@@ -197,89 +240,181 @@ The [Backlog Priority](../../queries/planning-ranking-priorities.md) field is us
 
 Work item forms displayed in a client and the web portal for TFS 2015 and earlier versions display link tabs and link control restrictions as described in the following table. 
 
-<table>
-<thead>
-<tr>
-<th><p>Tab name</p></th>
-<th><p>Work item type</p></th>
-<th><p>Link restrictions</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p><strong>All Links</strong></p></td>
-<td><p>Feedback Request</p>
-<p>Feedback Response</p></td>
-<td><ul>
-<li><p>No restrictions.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Links</strong></p></td>
-<td><p>Product Backlog Item</p>
-<p>Bug</p>
-<p>Impediment</p>
-<p>Shared steps</p>
-<p>Task</p>
-<p>Test Case</p>
-<p></p></td>
-<td><ul>
-<li><p>No restrictions.</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr>
-<td><p><strong>Links</strong></p></td>
-<td><p>Code Review Request</p></td>
-<td><ul>
-<li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links to Code Review Response work items.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr>
-<td><p><strong>Stories</strong></p></td>
-<td><p>Feedback Response</p></td>
-<td><ul>
-<li><p>Allows only <strong>Related</strong> links.</p></li>
-<li><p>Allows links to Bug and Product Backlog Items.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr>
-<td><p><strong>Storyboards</strong></p></td>
-<td><p>Product Backlog Item</p></td>
-<td><ul>
-<li><p>Allows only <strong>Storyboard</strong> links.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Tasks</strong></p></td>
-<td><p>Product Backlog Item</p></td>
-<td><ul>
-<li><p>Allows only <strong>Child</strong> links to Tasks.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Test Cases</strong></p></td>
-<td><p>Product Backlog Item</p>
-<p>Bug</p></td>
-<td><ul>
-<li><p>Allows only <strong>Tested By</strong> links.</p></li>
-<li><p>Allows links only to test cases.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Tested Backlog Items</strong></p></td>
-<td><p>Test case</p></td>
-<td><ul>
-<li><p>Allows only <strong>Tests</strong> links.</p></li>
-<li><p>Allows links to Bug and Product Backlog Items.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Tab name**
+   :::column-end:::
+   :::column span="3":::
+   **Work item type**
+   :::column-end:::
+   :::column span="3":::
+   **Link restrictions**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **All Links**
+
+   :::column-end:::
+   :::column span="3":::
+   Feedback Request
+
+   Feedback Response
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - No restrictions.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Links**
+
+   :::column-end:::
+   :::column span="3":::
+   Product Backlog Item
+
+   Bug
+
+   Impediment
+
+   Shared steps
+
+   Task
+
+   Test Case
+
+   
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - No restrictions.
+
+   
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Links**
+
+   :::column-end:::
+   :::column span="3":::
+   Code Review Request
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Parent** and **Child** links to Code Review Response work items.
+
+   - Excludes links to work items in other projects.
+
+   
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Stories**
+
+   :::column-end:::
+   :::column span="3":::
+   Feedback Response
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Related** links.
+
+   - Allows links to Bug and Product Backlog Items.
+
+   - Excludes links to work items in other projects.
+
+   
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Storyboards**
+
+   :::column-end:::
+   :::column span="3":::
+   Product Backlog Item
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Storyboard** links.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Tasks**
+
+   :::column-end:::
+   :::column span="3":::
+   Product Backlog Item
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Child** links to Tasks.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Test Cases**
+
+   :::column-end:::
+   :::column span="3":::
+   Product Backlog Item
+
+   Bug
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Tested By** links.
+
+   - Allows links only to test cases.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Tested Backlog Items**
+
+   :::column-end:::
+   :::column span="3":::
+   Test case
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Tests** links.
+
+   - Allows links to Bug and Product Backlog Items.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::

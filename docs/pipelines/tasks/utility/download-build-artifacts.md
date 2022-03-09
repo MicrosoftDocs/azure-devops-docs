@@ -12,7 +12,10 @@ monikerRange: 'azure-devops'
 
 # Download Build Artifacts task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
+> [!NOTE]
+> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](../../artifacts/pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
 
 Use this task to download build artifacts.
 
@@ -43,6 +46,7 @@ Use this task to download build artifacts.
 |`downloadPath`<br/>Destination directory|(Required) Path on the agent machine where the artifacts will be downloaded <br/>Default value: `$(System.ArtifactsDirectory)`|
 |`cleanDestinationFolder`<br/>Clean destination folder|(Optional) Delete all existing files in destination folder before artifacts are downloaded <br/>Default value: `false`|
 |`parallelizationLimit`<br/>Parallelization limit|(Optional) Number of files to download simultaneously <br/>Default value: `8`|
+|`extractTars`<br/>Extract all files that are stored inside tar archives|(Optional) Extract all `.tar` files. Enabling `StoreAsTar` option in [PublishBuildArtifacts](./publish-build-artifacts.md) task will store artifacts as `.tar` files automatically. This option allows you to preserve Unix file permissions. **Ignored on Windows**. <br/>Default value: `false`|
 
 ## Open source
 

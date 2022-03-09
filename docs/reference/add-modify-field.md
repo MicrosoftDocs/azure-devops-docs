@@ -7,14 +7,14 @@ ms.custom: process
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: "< azure-devops"  
 ms.date: 07/20/2020
 ---
 
 # Add or modify a field to track work 
 
-[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 Your project contains 100 or more data fields, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
@@ -29,8 +29,16 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 > [!div class="mx-tdCol2BreakAll"]  
 > |WIT definition  |Command line change (On-premises XML) |
 > |-------------|----------|  
-> |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
+> |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](../boards/work-items/work-item-fields.md#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
 
+
+## Required permissions
+ 
+- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
+- (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
+- (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
+  
+To get added as an administrator, [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
 
 
 ## Methods by which work item fields get added 
@@ -71,8 +79,10 @@ To add rules or add a custom field, export, edit, and then import the WIT defini
 
 Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
-::: moniker range=">= tfs-2017"
 <a id="boolean-field">  </a>
+
+::: moniker range=">= tfs-2017"
+
 ## Add a checkbox or Boolean field 
 ::: moniker-end
 
@@ -110,28 +120,27 @@ Pick lists are the enumerated values that appear within a drop-down menu in a wo
 
 To modify the pick list for most string or integer fields within a work item form, edit the WIT definition. For example, to add a custom Resolution field and pick-list, specify the XML code as shown.
 
-<table>
-<tbody>
-<tr>
-<td>Custom field and pick list<br /><br />
-<img src="media/custom-pick-list.png" alt="Custom pick list"/><br/></td>
-<td>
-<pre><code>&lt;FIELD name=&quot;Resolution&quot; refname=&quot;MyCompany.Resolution&quot; type=&quot;String&quot;&gt;    
-&lt;ALLOWEDVALUES&gt;
-   &lt;LISTITEM value=&quot;By Design&quot; /&gt;
-   &lt;LISTITEM value=&quot;Duplicate&quot; /&gt;
-   &lt;LISTITEM value=&quot;External&quot; /&gt;
-   &lt;LISTITEM value=&quot;Fixed&quot; /&gt;
-   &lt;LISTITEM value=&quot;Not Repro&quot; /&gt;
-   &lt;LISTITEM value=&quot;Postponed&quot; /&gt;
-   &lt;LISTITEM value=&quot;Won't Fix&quot; /&gt;
-&lt;/ALLOWEDVALUES&gt;
-&lt;/FIELD&gt;</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="1":::
+   Custom field and pick list   
+   ![Custom pick list](media/custom-pick-list.png)
+   :::column-end:::
+   :::column span="2":::
+   ```
+   <FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
+   <ALLOWEDVALUES>
+      <LISTITEM value="By Design" />
+      <LISTITEM value="Duplicate" />
+      <LISTITEM value="External" />
+      <LISTITEM value="Fixed" />
+      <LISTITEM value="Not Repro" />
+      <LISTITEM value="Postponed" />
+      <LISTITEM value="Won't Fix" />
+   </ALLOWEDVALUES>
+   </FIELD>
+   ```
+   :::column-end:::
+:::row-end:::
 
 Rules support combining lists, restricting to whom a list applies, and setting conditions on when a list appears on the work item form. Rules control whether a distribution list is expanded to show its individual members or a list is filtered by using the optional **expanditems** and **filteritems** attributes. Use global lists to minimize the work that is required to update a list that is shared across WITs or projects.
 
@@ -275,8 +284,6 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 
 ::: moniker-end 
 
-
-
 <a id="change-attribute">  </a>
 
 ## Change an attribute of an existing field 
@@ -307,6 +314,37 @@ You can enable indexing for a field to improve query response times when filteri
 To enable or disable indexing for a field, use the [**witadmin indexfield** command](witadmin/manage-work-item-fields.md). 
 
 
+<a id="delete-field">  </a>
+
+## Delete a field
+
+When you remove a field from a specific type of work item, that field is not removed from the collection or the database server, even if it is no longer referenced by any WIT. To remove a field, follow these steps.
+
+1.  Remove the `FIELD` definition from all WIT definitions and any global workflows that reference it.
+
+2.  Verify the field is not in use. For example:
+
+    ```
+    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+
+    Field: MyCompany.CustomContact
+    Name: Custom Contact
+    Type: String
+    Reportable As: dimension
+    Use: Not In Use
+    Indexed: False
+    ```
+
+3.  Delete the field. For example:
+
+    ```
+    witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+    ```
+
+4.  If the deleted field was reportable and your project uses SQL Server Reporting Services, [rebuild the data warehouse to purge the old field and its values](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube).
+
+For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).  
+
 ## Related articles
 
 This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). 
@@ -320,77 +358,6 @@ Other related topics or resources:
 - [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
 - [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).
 
-
-### Required permissions
- 
-- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
-- (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
-- (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
-  
-To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
-
-<a id="field-reference"></a>
-
-[!INCLUDE [temp](../includes/field-reference.md)]
-
-<a id="list-fields"></a> 
-
-### List or review fields  
-
-To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../boards/work-items/guidance/work-item-field.md).  
-
-<table>
-<tr valign="bottom">
-<th>Tool</th>
-<th>Inheritance</th>
-<th>Hosted XML </th>
-<th>On-premises XML </th>
-</tr>
-
-<tbody valign="top" align="center">
-
-<tr>
-<td align="left"><a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields)">Web portal: List inherited and custom-defined fields</a></td>
-<td>✔️</td>
-<td>✔️<sup>1</sup></td>
-<td> </td>
-</tr>
-
-<tr>
-<td align="left"><a href="#wi-explorer" data-raw-source="[Work Item Field Explorer](#wi-explorer)">Work item field explorer</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-<tr>
-<td align="left"><a href="witadmin/manage-work-item-fields.md" data-raw-source="[witadmin listfields command line tool](witadmin/manage-work-item-fields.md)">witadmin listfields command line tool</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-</tbody>
-</table>
-
- 
-**Notes:** 
-1. Only supported for default processes (Agile, CMMI, Scrum). 
-
-
-<a id="wi-explorer">  </a>
-
-**Work Item Field Explorer**
-
-In addition to the attributes that you can change for a work item field, there are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
-
-![Work Item Field Explorer](media/IC633020.png)
-
-For a description of each attribute, see [Work item fields and attributes](../boards/work-items/work-item-fields.md).
-
-To access the Work Item Field Explorer, you must install the Process Editor Tool. Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
-
-[!INCLUDE [temp](../includes/process-editor-tool.md)]
 
 
 <a id="integration-fields">  </a>
@@ -417,36 +384,3 @@ For more information, see [Query based on build and test integration fields](../
 ### Field names and reporting
 
 You can add fields or change the attributes of existing fields to support reporting. When you add or change fields, you should name them systematically so that you can find the field in the Analysis Services cube because the fields are logically grouped into folders. To learn more, see [Add or modify work item fields to support reporting](xml/add-or-modify-work-item-fields-to-support-reporting.md).
-
-<a id="delete-field">  </a>
-
-### Delete a field
-
-When you remove a field from a specific type of work item, that field is not removed from the collection or the database server, even if it is no longer referenced by any WIT. To remove a field, follow these steps.
-
-1.  Remove the `FIELD` definition from all WIT definitions and any global workflows that reference it.
-
-2.  Verify the field is not in use. For example:
-
-    ```
-    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
-
-    Field: MyCompany.CustomContact
-    Name: Custom Contact
-    Type: String
-    Reportable As: dimension
-    Use: Not In Use
-    Indexed: False
-    ```
-
-3.  Delete the field. For example:
-
-    ```
-    witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
-    ```
-
-4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
-
-For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).  
-
-::: moniker-end

@@ -1,4 +1,4 @@
-﻿---
+---
 title: MySQL Database Deployment On Machine Group task
 description: The task is used to deploy for MySQL Database.
 ms.topic: reference
@@ -10,6 +10,8 @@ monikerRange: 'azure-devops'
 ---
 
 # MySql Database Deployment on Machine Group task
+
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run your scripts and make changes to your MySQL Database. There are two ways to deploy, either using a script file or writing the script in our inline editor. Note that this is an early preview version. Since this task is server based, it appears on Deployment group jobs.
 

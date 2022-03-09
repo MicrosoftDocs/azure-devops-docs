@@ -7,13 +7,13 @@ ms.assetid: 87247b22-4919-4507-af64-372f4cc9bd2f
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/20/2017
 ---
 
 # Track bugs
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 As you run tests to verify your requirements, you are bound to find bugs. Use the bug work item to describe and track progress for each bug that you find.  
   

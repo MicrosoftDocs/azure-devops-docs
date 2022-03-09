@@ -1,18 +1,19 @@
-﻿---
+---
 title: Destroy Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Destroy Command (Team Foundation Version Control)
 ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Destroy Command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Use the **tf destroy** command to destroy, or permanently delete, version-controlled files from Team Foundation version control.
 
@@ -22,10 +23,11 @@ Before you run **tf destroy** without the **/keephistory** option, we recommend 
 
 After you delete the files you can synchronize the Team Foundation warehouse. Otherwise, the warehouse will not be synchronized with the destroyed items.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
+## Syntax
 ```
 tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>] 
 [/stopat:<versionspec>] [/preview] [/startcleanup] [/noprompt] [/silent] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]]
@@ -33,52 +35,140 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 
 ## Parameters
 
-<table>
-<thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>itemspec1</em> <em>[itemspec2...itemspecN]</em></p></td>
-	<td><p>Specifies the server path of the file or folder to be destroyed. Use multiple <em>itemspec</em> values to delete multiple items. For example, <code>tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3</code>.</p><p>Local paths are not supported.</p></td></tr>
-<tr>
-	<td><p><em>versionspec</em></p></td>
-	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
-<tr>
-	<td><p><em>username</em></p></td>
-    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
-<tr>
-	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
-</table>
+### Argument
 
-<table><thead>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/keephistory</strong></p></td>
-	<td><p>Optional. Specifies that the history of a file is preserved even as its contents are destroyed. This cannot be specified with the <strong>/preview</strong> option.</p></td></tr>
-<tr>
-	<td><p><strong>/stopat</strong></p></td>
-	<td><p>Optional. Can be used only if <strong>/keephistory</strong> is specified also.</p><p>Specifies the file version for the file, and the files that follow thereafter, for which the history is preserved.</p><p>The default version for <strong>/stopat</strong> is tip (T) for the latest checked-in version of an item.</p><p>You cannot use label or workspace <em>versionspec</em> values to specify an item for <strong>/stopat</strong> option.</p></td></tr>
-<tr>
-	<td><p><strong>/preview</strong></p></td>
-	<td><p>Displays in the Command Prompt window the files that would be destroyed. When <strong>tf destroy</strong> runs in the preview mode, the files are not actually destroyed.</p><strong>Note:</strong> The text in the Command Prompt window displays the word &quot;Destroyed&quot; with each file that would be destroyed. However, the file is actually not destroyed when the <strong>/preview</strong> option is used.</td></tr>
-<tr>
-	<td><p><strong>/startcleanup</strong></p></td>
-	<td><p>Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify <strong>/startcleanup</strong>, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.</p></td></tr>
-<tr>
-	<td><p><strong>/noprompt</strong></p><p><strong>/i</strong></p></td>
-	<td><p>Specifies that the destruction of files is non-interactive. <strong>/i</strong> is an alias for <strong>/noprompt</strong>.</p></td></tr>
-<tr>
-	<td><p><strong>/silent</strong></p></td>
-	<td><p>Specifies that, when you destroy files or folders, the output is not written to the command prompt window.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user name and password to authenticate the user with Team Foundation Server.</p></td></tr>
-<tr>
-	<td><p><strong>/collection</strong></p></td>
-	<td><p>Specifies the project collection.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::   
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec1* *[itemspec2...itemspecN]*
+   :::column-end:::
+   :::column span="3":::
+   Specifies the server path of the file or folder to be destroyed. Use multiple *itemspec* values to delete multiple items. For example, `tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3`.
+   
+   Local paths are not supported.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *versionspec*
+   :::column-end:::
+   :::column span="3":::
+   Provides a version such as C58 for the **/keephistory** or **/stopat** options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN UserName* or *UserName.*
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="3":::
+   The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+
+
+### Option
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/keephistory**
+   :::column-end:::
+   :::column span="3":::
+   Optional. Specifies that the history of a file is preserved even as its contents are destroyed. This cannot be specified with the **/preview** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/stopat**
+   :::column-end:::
+   :::column span="3":::
+   Optional. Can be used only if **/keephistory** is specified also.
+   
+   Specifies the file version for the file, and the files that follow thereafter, for which the history is preserved.
+   
+   The default version for **/stopat** is tip (T) for the latest checked-in version of an item.
+   
+   You cannot use label or workspace *versionspec* values to specify an item for **/stopat** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/preview**
+   :::column-end:::
+   :::column span="3":::
+   Displays in the Command Prompt window the files that would be destroyed. When **tf destroy** runs in the preview mode, the files are not actually destroyed.
+
+   > [!Note]  
+   > The text in the Command Prompt window displays the word &quot;Destroyed&quot; with each file that would be destroyed. However, the file is actually not destroyed when the **/preview** option is used.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/startcleanup**
+   :::column-end:::
+   :::column span="3":::
+   Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify **/startcleanup**, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   
+   **/i**
+   :::column-end:::
+   :::column span="3":::
+   Specifies that the destruction of files is non-interactive. **/i** is an alias for **/noprompt**.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/silent**
+   :::column-end:::
+   :::column span="3":::
+   Specifies that, when you destroy files or folders, the output is not written to the command prompt window.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the user name and password to authenticate the user with Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
+
 When you use **tf destroy** to destroy version-control files, the application tier of Team Foundation Server receives the destroy request and checks to see whether you are a member of the **Team Foundation Administrators** security group. If you are not a member, the system displays an error-message dialog box that tells you that you do not have sufficient permissions to perform the operation.
 
 After the system verifies your permissions, it runs the destroy command. This command deletes all file references, shelvesets, and pending changes. The actual destruction of files, which is a permanent deletion, happens the next time that the content that is no longer referenced by Team Foundation Server is cleaned up. You can also specify the **/startcleanup** option to clean up the files immediately after **tf destroy** runs.
@@ -99,7 +189,7 @@ Destroyed: $/Test1/MyProject/MyProject/Program.cs
 
 However, the file is actually not destroyed because you used the **/preview** option.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 
 ### Effects of /keephistory on Other Version Control Operations
@@ -152,16 +242,9 @@ tf destroy $/MyTeamProject/sFolder;x123
 
 Where x123 is the deletion ID.
 
-## See Also
+## Related articles
 
-#### Tasks
+- [Destroy Version Controlled Files](destroy-version-controlled-files.md)
+- [What is TFVC?, Operations available only from the tf command-line](what-is-tfvc.md#command-line-only)
 
-[Destroy Version Controlled Files](destroy-version-controlled-files.md)
 
-#### Concepts
-
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

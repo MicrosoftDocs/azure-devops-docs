@@ -6,18 +6,30 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/07/2018
+ms.date: 09/21/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Publish Build Artifacts task
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3**
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+
+::: moniker range="tfs-2015"
+
+This article applies to TFS 2015.3 and higher.
+
+::: moniker-end
+
+
+::: moniker range="azure-devops"
 
 > [!NOTE]
-> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
+> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
+
+::: moniker-end
 
 Use this task in a build pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
+
 
 ## Demands
 
@@ -42,6 +54,7 @@ None
 | `Parallel`<br/>Parallel copy (**Azure Pipelines**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
 | `ParallelCount`<br/>Parallel count (**Azure Pipelines**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. <br/>Default value: `8` |
 | `FileCopyOptions`<br/>File copy options | Pass additional options to the Robocopy command. For example, the recursive minimatch pattern `**/*`. |
+| `StoreAsTar`<br/>Tar the artifact before uploading | Add all files from the publish path to a tar archive before uploading. This option allows you to preserve the UNIX file permissions. Use `extractTars` option of [DownloadBuildArtifacts](./download-build-artifacts.md) task to extract the downloaded items automatically. **Ignored on Windows**. <br> Default value: `false` |
 | [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 > [!NOTE]

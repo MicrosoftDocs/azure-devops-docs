@@ -6,13 +6,13 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/29/2021
+ms.date: 11/05/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Manage service connections
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -265,7 +265,7 @@ You can also create your own [custom service connections](../../extend/develop/s
 
 Azure Pipelines supports the following service connection types by default:
 
-[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [BitBucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [External Git](#external-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
+[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [Bitbucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [External Git](#external-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
 
 ### Azure Classic service connection
 
@@ -277,14 +277,14 @@ Use the following parameters to define and secure a connection to a Microsoft Az
 | --------- | ----------- |
 | \[authentication type\] | Required. Select **Credentials** or **Certificate based**. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Environment | Required. Select **Azure Cloud**, **Azure Stack**, or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
+| Environment | Required. Select **Azure Cloud**, **Azure Stack**, or one of the predefined [Azure Government Clouds](/azure/azure-government/connect-with-azure-pipelines) where your subscription is defined. |
 | Subscription ID | Required. The GUID-like identifier for your Azure subscription (not the subscription name). You can copy the subscription ID from the Azure portal. |
 | Subscription name | Required. The name of your Microsoft Azure subscription. |
 | User name | Required for Credentials authentication. User name of a work or school account (for example @fabrikam.com). Microsoft accounts (for example @live or @hotmail) are't supported. |
 | Password | Required for Credentials authentication. Password for the user specified above. |
 | Management certificate | Required for Certificate-based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
 
-If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service connection.
+If your subscription is defined in an [Azure Government Cloud](/azure/azure-government/connect-with-azure-pipelines), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
 ### Azure Repos
 
@@ -515,7 +515,7 @@ Use the following parameters to define a connection to the Jenkins service.
 |             User name             |                                                                                                               Required. The username to connect to the service.                                                                                                                |
 |             Password              |                                                                                                               Required. The password for the specified username.                                                                                                               |
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://devblogs.microsoft.com/devops/vsts-visual-studio-team-services-integration-with-jenkins/) and [Artifact sources](../release/artifacts.md#jenkinssource).
+For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources](../release/artifacts.md#jenkinssource).
 
 ### Kubernetes service connection
 
@@ -593,7 +593,7 @@ Use the following parameters when you define and secure a connection to a Maven 
 |       Password        |                                                                                           Required when connection type is **Username and Password**. The password for the username.                                                                                           |
 | Personal Access Token |                                  Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                                   |
 
-### Npm service connection
+### npm service connection
 
 Use the following parameters when you define and secure a connection to an npm server.
 
@@ -713,6 +713,20 @@ Other service connection types and tasks can be installed as extensions. See the
 
 * [VMware Resource Deployment](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp).
   Connect to a VMware vCenter Server from Visual Studio Team Services or TFS to provision. Start, stop, or snapshot VMware virtual machines.
+
+* [Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools).
+  Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related to apps built on [Microsoft Power Platform](/power-platform/alm/devops-build-tools). After installing the extension, the **Power Platform** service connection type has the following properties.
+
+    |    Parameter                       | Description  |
+    |------------------------------------|--------------|
+    |    Connection Name                 | Required. The name you will use to refer to this service connection in task properties. |
+    |    Server URL                      | Required. The URL of the Power Platform instance. Example: `https://contoso.crm4.dynamics.com` |
+    |    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](/power-platform/alm/devops-build-tools#configure-service-connections-using-a-service-principal) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
+    |    Application ID                  | Required. Azure Application ID to authenticate with. |
+    |    Client secret of Application ID | Required. Client secret of the Service Principal associated to above Application ID used to prove identity. |
+
+---
+
 
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 

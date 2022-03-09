@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 08/12/2021
+ms.date: 01/21/2022
 monikerRange: azure-devops
 ---
 
 # Define resources in YAML
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
@@ -148,21 +148,10 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 ---
 
 > [!IMPORTANT]
-> When you define a resource trigger, if its pipeline resource is from the same repository as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But, if the pipeline resource is from a different repository, the current pipeline triggers on the default branch.
+> When you define a resource trigger, if its pipeline resource is from the same repository (say self) as the current pipeline, triggering follows the same branch and commit on which the event is raised.
+> But, if the pipeline resource is from a different repository, the current pipeline triggers on the default branch of the self repository.
 
-### Change default branch for triggers (optional)
 
-Triggers for resources get created based on the default branch configuration of your YAML, which is `main`. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. Do the following steps to change the default branch for a pipeline.
-
-1. Go to the pipeline and select **Edit**.
-2. Select  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **more actions** and choose **Triggers**.
-
-   ![Triggers view in a pipeline](media/triggers-view.png)
-
-3. Select **YAML** > **Get sources**, and then select a source, which is the default branch for your pipeline.
-
-   ![Triggers default branch for a pipeline](media/triggers-default-branch.png)
 
 ### Evaluation of artifact version
 
@@ -233,7 +222,7 @@ All artifacts from the current pipeline and from all `pipeline` resources are au
 steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
-  terns: string # terns representing files to include; optional
+  patterns: string # patterns representing files to include; optional
 ```
 
 ## [Example](#tab/example)
@@ -468,7 +457,7 @@ resources:
       work: boolean # the work directory
 ```
 
-You can use a generic container resource as an image consumed as part of your job, or it can also be used for [Container jobs](../process/container-phases.md).
+You can use a generic container resource as an image consumed as part of your job, or it can also be used for [Container jobs](../process/container-phases.md). If your pipeline requires the support of one or more services, you'll want to create and connect to [service containers](service-containers.md). You can use volumes to share data between services.
 
 ## [Example](#tab/example)
 
@@ -589,9 +578,9 @@ resources:
   packages:
     - package: myPackageAlias # alias for the package resource
       type: Npm # type of the package NuGet/npm
-      connection: GitHubConnectionName # Github service connection with the PAT type
+      connection: GitHubConnectionName # GitHub service connection with the PAT type
       name: nugetTest/nodeapp # <Repository>/<Name of the package>
-      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      version: 1.0.1 # Version of the package to consume; Optional; Defaults to latest
       trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
 ```
 
@@ -772,9 +761,24 @@ You can choose to download the artifacts in build jobs or to override the downlo
 
 When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss traceability and triggers. Sometimes it makes sense to use the Download Pipeline Artifacts task directly. For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template wants to add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
 
+### How can I trigger a pipeline run when my Docker Hub image gets updated? 
+
+You'll need to set up a [classic release pipeline](../release/index.md) because the containers resource trigger is not available for Docker Hub for YAML pipelines.  
+
+1. Create a new Docker Hub [service connection](../library/service-endpoints.md). 
+1. Create a classic release pipeline and add a Docker Hub artifact. Set your service connection. Select the namespace, repository, version, and source alias. 
+    
+    :::image type="content" source="media/docker-artifact-release-pipeline.png" alt-text="Add a Docker Hub artifact. ":::
+
+1. Select the trigger and toggle the continuous deployment trigger to **Enable**. You'll create a release every time a Docker push occurs to the selected repository.
+1. Create a new stage and job. Add two tasks, Docker login and Bash:
+ * The Docker task has the `login` action and logs you into  Docker Hub.  
+ *  The Bash task runs `docker pull <hub-user>/<repo-name>[:<tag>]`. Replace `hub-user`, `repo-name`, and `tag` with your values. 
+
+    :::image type="content" source="media/docker-hub-tasks-classic-pipeline.png" alt-text="Add Docker login and Bash tasks. ":::
 ## Related articles
 
 * [Define variables](variables.md)
 * [Create and target an environment](environments.md)
 * [Use YAML pipeline editor](../get-started/yaml-pipeline-editor.md)
-* [YAML schema reference](../yaml-schema.md)
+* [YAML schema reference](/azure/devops/pipelines/yaml-schema)

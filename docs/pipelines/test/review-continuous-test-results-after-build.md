@@ -5,14 +5,14 @@ ms.assetid: EA5D7524-3683-4660-B3B6-3F29AD3587AC
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
 ms.author: vinojos
-author: vinojos
-ms.date: 06/28/2019
+author: vinodjo
+ms.date: 10/06/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Review test results
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
@@ -53,7 +53,7 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
   This is done by parsing the error logs generated during the build operation and then checking for signatures of test failures.
   <a name="inferred_runners_list"></a>Currently, Azure DevOps supports the following languages and test runners for automatically inferring the test results: 
 
-  - Javascript - Mocha,  Jest  and  Jasmine
+  - JavaScript - Mocha,  Jest  and  Jasmine
   - Python- Unittest
  
     > [!NOTE]
@@ -158,7 +158,7 @@ you can organize the **Results** view exactly as you require.
 
 ### Test debt management with bugs
 
-To manage your test debt for failing or long running tests you can create a bug or add data to exisiting bug and all view all associated work items in the work item tab. 
+To manage your test debt for failing or long running tests you can create a bug or add data to existing bug and all view all associated work items in the work item tab. 
 
 ### Immersive troubleshooting experience
 
@@ -234,10 +234,7 @@ These test results are reported as a summarized test result in the **Tests** tab
 
   ![Rerun failed tests](media/review-continuous-test-results-after-build/rerun-failed-test.png)
 
-* **Data driven tests**: Similar to the rerun of failed tests, all iterations of data driven tests are reported under that test.
-  The summarized result view for data driven tests depends on the behavior of the test framework.
-  If the framework produces a hierarchy of results (for example, MSTest v1 and v2) they will be reported in a summarized view.
-  If the framework produces individual results for each iteration (for example, xUnit) they will not be grouped together.
+* **Data driven tests**: Similar to the rerun of failed tests, all iterations of data driven tests are reported under that test in a summarized view.
   The summarized view is also available for ordered tests (**.orderedtest** in Visual Studio).
 
   ![Data driven test](media/review-continuous-test-results-after-build/data-driven-test.png)

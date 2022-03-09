@@ -5,6 +5,7 @@ summary: Improve your overall code quality by using manual and exploratory testi
 
 metadata:
   title: Azure Test Plans documentation
+  titleSuffix: Azure DevOps 
   description: Test your software using using manual and exploratory testing services to improve your overall code quality. 
   ms.prod: devops 
   ms.technology: devops-test
@@ -26,14 +27,12 @@ landingContent:
         links:
           - text: What is Azure Test Plans?
             url: ../test/overview.md
+          - text: Navigate Test Plans
+            url: ../test/navigate-test-plans.md
       - linkListType: video
         links:
           - text: Capturing actionable feedback with manual testing
             url: https://www.youtube.com/embed/u-fdqhxonPc
-          - text: Test Case Explorer
-            url: https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player
-          - text: Test & Feedback
-            url: https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player
   - title: Run manual tests
     linkLists:
       - linkListType: quickstart

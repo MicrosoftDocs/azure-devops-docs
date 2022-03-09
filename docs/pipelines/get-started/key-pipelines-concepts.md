@@ -3,13 +3,17 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.date: 07/21/2021
+ms.date: 10/11/2021
 monikerRange: 'azure-devops'
 ---
 
 # Key concepts for new Azure Pipelines users
 
-Learn about the key concepts and components that make up a pipeline. Understanding the basic terms and parts of a pipeline can help you deliver better code more efficiently and reliably.
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
+Learn about the key concepts and components that make up a pipeline. Understanding the basic terms and parts of a pipeline can help you deliver better code more efficiently and reliably.  
+<br />
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMlMo]  
 
 
 **Key concepts overview**
@@ -106,6 +110,10 @@ A [task](../process/tasks.md) is the building block for defining automation in a
 ## Trigger
 
 A trigger is something that's set up to tell the pipeline when to run. You can configure a pipeline to run upon a push to a repository, at scheduled times, or upon the completion of another build. All of these actions are known as triggers. For more information, see [build triggers](../build/triggers.md) and [release triggers](../release/triggers.md).
+
+## Library
+
+The [Library](../library/index.md) includes **secure files** and **variable groups**. [Secure files](../library/secure-files.md) are a way to store files and share them across pipelines. You may need to save a file at the DevOps level and then use it during build or deployment. In that case, you can save the file within [Library](../library/index.md) and use it when you need it. [Variable groups](../library/variable-groups.md) store values and secrets that you might want to to be passed into a YAML pipeline or make available across multiple pipelines.
 
 ### About the authors
 - [Dave Jarvis](https://github.com/DaveJarvis) contributed to the key concepts overview graphic.

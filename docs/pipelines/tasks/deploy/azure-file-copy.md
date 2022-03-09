@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Azure File Copy task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
@@ -72,7 +72,7 @@ The task supports authentication based on Azure Active Directory. Authentication
 
 | Argument | Description |
 |------------------------------------------|----------------------------------------|
-| `sourcePath` - **Source** | Required. The source of the files to copy. YAML Pipelines and Classic Release support [pre-defined system variables](../../build/variables.md?tabs=yaml) like *Build.Repository.LocalPath* as well. [Release variables](../../release/variables.md?tabs=batch) are supported only in classic releases. Wild card symbol (\*) is supported anywhere in the file path or file name. |
+| `sourcePath` - **Source** | Required. The source of the files to copy. YAML Pipelines and Classic Release support [predefined system variables](../../build/variables.md?tabs=yaml) like *Build.Repository.LocalPath* as well. [Release variables](../../release/variables.md?tabs=batch) are supported only in classic releases. Wild card symbol (\*) is supported anywhere in the file path or file name. |
 | `connectedServiceNameARM` or `azureSubscription` - **Azure Subscription** | Required. The name of an [Azure Resource Manager service connection](../../library/connect-to-azure.md) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](/azure/azure-resource-manager/management/overview) for more details. |
 | `destination` - **Destination Type** | Required. The type of target destination for the files. Choose **Azure Blob** or **Azure VMs**. |
 | `storageAccountRM` or `storage` - **RM Storage Account** | Required. The name of an existing storage account within the Azure subscription. |

@@ -15,13 +15,13 @@ ms.date: 02/17/2021
 
 # Use &#64;mentions in work items and pull requests
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 The **@mention** control allows you to quickly add a user or group to a work item or pull request discussion. Using the people picker of the **@mention** control, you can select a project member or group from the search list, and they'll receive an email notifying them of your comment. 
 
 ::: moniker range="azure-devops"
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those users and groups added to your project. To limit the set to project members and groups, see [Manage your project, Limit identity search and selection](../user-guide/project-admin-tutorial.md#limit-identity-selection).  
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those users and groups added to your project. To limit the set to project members and groups, see [Manage your organization, Limit  identity search and selection](../user-guide/manage-organization-collection.md#limit-identity-selection).  
 
 ::: moniker-end
 
@@ -124,14 +124,14 @@ Use the **\@mention** control in pull request discussions, commit comments, chan
 
 In general, people pickers search and select any user or group added to an organization's Azure Active Directory (Azure AD). 
 
-For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching users and groups added to the Azure AD. For organizations that want to limit the search and selection to just those users and groups added to a specific project, they can do so by enabling the **Limit user visibility for projects** preview feature for their organization. 
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching users and groups added to the Azure AD. For organizations that want to limit the search and selection to just those users and groups added to a specific project, they can do so by enabling the **Limit user visibility and collaboration to specific projects** preview feature for their organization. 
 
-When the **Limit user visibility for projects** preview feature is enabled for an organization, the list of identities you can select from a people picker is limited in one of the following ways: 
+When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for an organization, the list of identities you can select from a people picker is limited in one of the following ways: 
 
 - Users added to the **Project-Scoped Users** group are only able to select from an identity list that contains users and groups added explicitly to the project they're connected to. 
 - If all project members are added to the **Project-Scoped Users** group, then people pickers are limited to only those users and groups added to the project. All project members are only able to select identities that match users and groups added explicitly to the project they're connected to. 
   
-To learn how, see [Manage your project, Limit identity search and selection](../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+To learn how, see [Manage your organization, Limit  identity search and selection](../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ::: moniker-end
 

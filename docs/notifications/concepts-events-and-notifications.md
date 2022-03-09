@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Events, subscriptions, and notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 This article describes the different actions or operations that generate email notifications. 
 
@@ -27,7 +27,7 @@ A notification **subscription** is associated with a [supported event type](oob-
 
 ### Default email subscriptions
 
-Many useful email subscriptions are pre-defined and enabled by default in the system. They're known as **default subscriptions**. Default subscriptions provide out-of-box support for the most common notification scenarios. See the list of [available default subscriptions](oob-built-in-notifications.md).
+Many useful email subscriptions are predefined and enabled by default in the system. They're known as **default subscriptions**. Default subscriptions provide out-of-box support for the most common notification scenarios. See the list of [available default subscriptions](oob-built-in-notifications.md).
 
 An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team and organization notifications](manage-team-group-global-organization-notifications.md).
 

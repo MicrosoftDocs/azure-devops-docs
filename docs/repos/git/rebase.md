@@ -5,14 +5,15 @@ description: Rewriting History using Git rebase
 ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
 ---
 
 
 #  Apply changes with rebase
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 One of the tradeoffs from the [Git feature branch workflow](gitworkflow.md) is that you do not actively manage your version control history. 
 Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the main branch with [pull requests](pull-requests.md).  
@@ -31,9 +32,6 @@ In this tutorial you learn how to:
 > * Force push to update your remote branch
 > * Squash local commits
 
-### Video overview
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Rebase/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe> 
 
 ### Use caution 
 
@@ -69,14 +67,15 @@ the changes in the current branch should be replayed on top of. If there is a co
 The `rebase` command takes a target branch to replay the current branch's commits onto. After the rebase finishes, your current branch will have the commit history from 
  the target branch. 
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git checkout <font color="#b5bd68">feature1</font>
-&gt; git rebase <font color="#b5bd68">main</font><br/>
-<font color="#b5bd68">First, rewinding head to replay your work on top of it...
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git checkout feature1
+> git rebase main 
+First, rewinding head to replay your work on top of it...
 Applying: Updated feature 
 Applying: updated feature again
 Applying: final feature update</font>
-</pre>
+```
 
 If you hit a conflict, resolve the conflicting files, do a `git add` to stage the merged changes, then continue the rebase with `git rebase --continue`. 
 
@@ -92,9 +91,10 @@ If you hit a conflict, resolve the conflicting files, do a `git add` to stage th
 
 After a successful rebase, your local branch will have a different history than your remote branch. You must force push your local branch to update your remote branch.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git push -f <font color="#b5bd68">users/frank/myfixes</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git push -f users/frank/myfixes 
+```
 
 ## Squash local commits
 
@@ -107,23 +107,28 @@ changes easily.
 To consolidate commits, first decide about how many commits you'd like to squash into one. You don't have be exact as you'll get to pick out exactly which commits to squash when you run the
 command. If you had five commits to squash, then you'd make sure there are no unstaged changes and run:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git rebase -i <font color="#b5bd68">HEAD~5</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git rebase -i HEAD~5
+```
 
 This will open up an editor where you will see something like:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-<font color="#b5bd68">pick 7b43f3f Updated router.js<br/>pick 00859d9 Updated README.md 
-pick 9d247f7 initial commits<br/>pick 7068b09 Updated README.md with build instructions</font>
-</pre>
+> [!div class="tabbedCodeSnippets"]
+```
+pick 7b43f3f Updated router.js  
+pick 00859d9 Updated README.md  
+pick 9d247f7 initial commits  
+pick 7068b09 Updated README.md with build instructions  
+```
 
 You'll keep the first of the changes (leave it `pick`), and then change `pick` to `squash` for the rest of the changes. Save and close the editor. 
 Git will now attempt to condense the commits into a single commit. After the rebase completes, you will have a new editor 
 window open up where Git asks you to give a commit message for the commit with the combined changes. You'll want to condense
 this down to one line of text (just like you would have for a normal commit) and save and quit the editor. 
 
-> Azure DevOps Services and TFS users can [squash merge](merging-with-squash.md) their pull requests to consolidate commits added to the main branch.
+> [!NOTE]  
+> Azure DevOps users can [squash merge](merging-with-squash.md) their pull requests to consolidate commits added to the main branch.
 
 ## Next steps
 

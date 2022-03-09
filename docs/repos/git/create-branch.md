@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Create a new Git branch
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial]().

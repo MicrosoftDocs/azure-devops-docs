@@ -1,7 +1,7 @@
 ---
 title: Add a widget to a team dashboard 
 titleSuffix: Azure DevOps
-description: Choose and configure widgets that you add to a team dashboard in Azure DevOps & Team Foundation Server  
+description: Learn how to select and configure widgets that you add to a team dashboard in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 04/05/2019
+ms.date: 09/27/2021
 ---
 
 
 # Add widgets to a dashboard
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
@@ -34,38 +34,38 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widgets t
 ::: moniker-end
 
 
-## Select a dashboard 
+## Open a dashboard 
 
 All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
+1. Open a web browser, connect to your project, and select **Overview>Dashboards**. The dashboard directory page opens.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](media/dashboards/open-dashboards-vert.png)
 
-	If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+	If you need to switch to a different project, select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
-1. Choose the dashboard you want to modify. 
+1. Select the dashboard you want to modify. 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-Open a web browser, connect to your project, and choose **Dashboards**. 
+Open a web browser, connect to your project, and select **Dashboards**. 
 
 ![Dashboards directory, previous navigation](media/dashboards-go-to.png) 
 
 Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
 
-Choose the name of the dashboard to modify it. 
+Select the name of the dashboard to modify it. 
 
-For example, here we choose to view the Work in Progress dashboard. 
+For example, here we select to view the Work in Progress dashboard. 
 
 > [!div class="mx-imgBorder"]  
-> ![Dashboards, Choose a team dashboard](media/dashboards/choose-dashboard.png)  
+> ![Dashboards, Select a team dashboard](media/dashboards/choose-dashboard.png)  
 
-If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 ::: moniker-end  
 
 
@@ -73,16 +73,16 @@ If you need to switch to a different project, choose the :::image type="icon" so
 
 ::: moniker range=">= azure-devops-2019"
 
-To add widgets to the dashboard, choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. 
+To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. 
 
 The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
 
-When you're finished with your additions, choose  **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then [configure the widgets](#configure) as needed.
+When you're finished with your additions, select  **Done Editing** to exit dashboard editing. The widget catalog will close. You can then [configure the widgets](#configure) as needed.
 
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.
 
-To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
+To remove a widget, select ![actions icon](../../media/icons/actions-icon.png) **More actions** and select **Delete** from the menu.  
 
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](media/dashboards/delete-widget.png) 
@@ -90,9 +90,9 @@ To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.pn
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-Choose ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify a dashboard. Choose ![add a widget icon](media/add-widget-icon.png) to add a widget to the dashboard.  
+Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify a dashboard. Select ![add a widget icon](media/add-widget-icon.png) to add a widget to the dashboard.  
 
-The [widget catalog](widget-catalog.md) describes all the available widgets, many of which are scoped to the selected team context.  
+The [widget catalog](widget-catalog.md) describes all available widgets, many of which are scoped to the selected team context.  
 
 ::: moniker-end
 
@@ -103,34 +103,23 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 <a id="add-analytics-widget" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Add an Analytics widget
 
 This example shows how to add the Velocity widget available from Analytics to a dashboard. 
 
-1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](media/dashboards/open-dashboards-vert.png)
-
-	If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
-
-1. Make sure that the [Analytics Marketplace extension](../dashboards/analytics-extension.md) has been installed. The Analytics widgets won't be available until it is installed.  
-
-2. [Choose the dashboard](dashboards.md#choose-dashboard) that you want to modify. 
-
-3. Choose ![edit icon](media/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
+1. Select ![edit icon](media/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
 
 4. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Velocity widget in widget catalog](media/add-widgets/velocity-in-widget-catalog.png)
 
-5. Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
+5. Select the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
 
 6. Next, configure the widget. For details, see the following articles: 
-	- [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
+	- [Configure burndown or Turnup](configure-burndown-burnup-widgets.md)
 	- [Configure cumulative flow](cumulative-flow.md)  
 	- [Configure lead/cycle time](cycle-time-and-lead-time.md)  
 	- [Configure velocity](team-velocity.md)  
@@ -147,7 +136,7 @@ Most widgets support configuration, which may include specifying the title, sett
 
 ::: moniker range=">= tfs-2018"
 
-To configure a widget, add the widget to a dashboard, choose open the ![actions icon](../../media/icons/actions-icon.png) menu, and select **Configure**.  
+To configure a widget, add the widget to a dashboard, select open the ![actions icon](../../media/icons/actions-icon.png) menu, and select **Configure**.  
 
 > [!div class="mx-imgBorder"]  
 > ![Open the create a dashboard dialog](media/add-widgets/configure-widget.png) 
@@ -177,7 +166,7 @@ Additional information is provided to configure the following widgets:
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-To configure a widget, add the widget to a dashboard and then choose the ![configure icon](media/icons/configure-icon.png) configure icon. 
+To configure a widget, add the widget to a dashboard and then select the ![configure icon](media/icons/configure-icon.png) configure icon. 
 ![Work item chart unconfigured widget](media/add-widget-configure-initial.png)  
  
 Once you've configured the widget, you can edit it by opening the actions menu. 
@@ -190,33 +179,33 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 
 ## Move or delete a widget 
 
-To move a widget, you need to enable the dashboard edit mode. To delete a widget, simply select the delete option provided from the widget&#39;s options menu. 
+To move a widget, you need to enable the dashboard edit mode. To delete a widget, select the delete option provided from the widget&#39;s **More actions** menu. 
 
 ::: moniker range="tfs-2015"
 Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items. 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-Choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
+Select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
 
-To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
+To remove a widget, select the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](media/dashboards/delete-widget.png) 
 
-When you're finished with your changes, choose  **Done Editing** to exit dashboard editing.
+When you're finished with your changes, select  **Done Editing** to exit dashboard editing.
   
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-Choose ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
+Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
+To remove a widget, select the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](media/dashboards/delete-widget.png) 
@@ -225,13 +214,13 @@ To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.pn
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-To remove a widget, choose the widget's ![Trash icon](media/dashboard-trash-icon.png) or ![Delete icon](media/dashboard-delete-icon.png) delete icons.  
+To remove a widget, select the widget's ![Trash icon](media/dashboard-trash-icon.png) or ![Delete icon](media/dashboard-delete-icon.png) delete icons.  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
-When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
+When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 
 ::: moniker-end
 
@@ -242,11 +231,11 @@ When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](
 
 ## Copy a widget
 
-You can copy a widget to the same dashboard or to another team dashboard. If you want to move widgets you have configured to another dashboard, this is how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
+You can copy a widget to the same dashboard or to another team dashboard. If you want to move widgets you've configured to another dashboard, here's how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-To copy a configured widget to another team dashboard, choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Copy to dashboard** and then the dashboard to copy it to. 
+To copy a configured widget to another team dashboard, select the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Copy to dashboard** and then the dashboard to copy it to. 
 
 > [!div class="mx-imgBorder"]  
 > ![Copy a widget to another dashboard](media/add-widgets/copy-to-dashboard.png) 
@@ -255,7 +244,8 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 
 ::: moniker range="tfs-2018"
 
-To copy a configured widget to another team dashboard, choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
+To copy a configured widget to another team dashboard, select 
+the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
 
 <img src="media/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" />  
 ::: moniker-end
@@ -271,9 +261,11 @@ For example, the Chart for work items widget allows you to select an area size r
 
 ## Extensibility and Marketplace widgets
 
-In addition to the widgets described in the Widget catalog, you can add widgets from the [Marketplace](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance), or create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md). 
+In addition to the widgets described in the Widget catalog, you can:
+- Add widgets from the [Marketplace](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance).
+- Create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md).
 
-### Disabled Marketplace widget 
+## Disabled Marketplace widgets 
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
 <img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" />   
@@ -281,7 +273,7 @@ If your organization owner or project collection administrator disables a market
 To regain access to it, request your admin to reinstate or reinstall the widget. 
 
 
-## Try this next 
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Review the widget catalog](widget-catalog.md)
@@ -291,6 +283,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Analytics-based widgets](../dashboards/analytics-widgets.md)
 - [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
@@ -299,6 +292,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 - [Velocity guidance](velocity-guidance.md)

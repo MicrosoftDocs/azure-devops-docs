@@ -8,13 +8,13 @@ monikerRange: "> azure-devops-2019"
 
 # Check out multiple repositories in your pipeline
 
-[!INCLUDE [version-team-services](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Pipelines often rely on multiple repositories that contain source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
 ## Specify multiple repositories
 
-Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
+Repositories can be specified as a [repository resource](/azure/devops/pipelines/yaml-schema/resources-repositories-repository), or inline with the `checkout` step. 
 
 The following repository types are supported.
 
@@ -118,7 +118,7 @@ The following combinations of `checkout` steps are supported.
 
 ## Repository resource definition
 
-You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
+You must use a [repository resource](/azure/devops/pipelines/yaml-schema/resources-repositories-repository) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
 | Repository type | Service connection |
 |-----------------|--------------------|

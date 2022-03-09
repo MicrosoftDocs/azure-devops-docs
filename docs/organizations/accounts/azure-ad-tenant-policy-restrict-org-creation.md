@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Restrict organization creation via Azure AD tenant policy
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which restricts users from creating an organization in Azure DevOps. This policy is turned off, by default.
 
@@ -26,13 +26,13 @@ If you don't see the policy section in Azure DevOps, then you aren't an administ
 
 ![Check Azure AD roles and administrators](media/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
 
+> [!NOTE]
+> Currently, an Azure DevOps Administrator can restrict new organization creation only for individual users, and not for groups. 
+
 You can also check your role using the Azure AD PowerShell module.
 ![Azure AD PowerShell to enable policy](media/azure-ad-tenant-policy/azure-ad-powershell.png)
 
 For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-
-> [!NOTE]
-> An Azure DevOps Administrator can only restrict new organization creation for individual users, rather than groups at this time. 
 
 ## Turn on the policy
 

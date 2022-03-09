@@ -4,17 +4,15 @@ titleSuffix: Azure Repos
 description: Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
 ms.technology: devops-code-tfvc 
-ms.date: 04/25/2018
-author: wpschaub
+ms.date: 04/25/2018 
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Select an effective branching strategy
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
-
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Creating branches for your Team Foundation Version Control (TFVC) repositories are useful to isolate risk. Consider some challenges team members typically face when they work on a software project that is staffed by more than five or ten people:
 

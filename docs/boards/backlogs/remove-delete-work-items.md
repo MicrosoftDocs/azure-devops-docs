@@ -1,7 +1,7 @@
 ---
-title: Remove, delete, restore work items
+title: Remove, delete, and restore work items in Azure Boards
 titleSuffix: Azure Boards
-description: How to remove, delete, or restore (from Recycle Bin) work items in Azure Boards 
+description: Learn how to remove, delete, or restore work items in Azure Boards to manage backlogs and boards more efficiently.
 ms.custom: "boards-backlogs, seodec18, contperf-fy21q2, linked-from-support"  
 ms.technology: devops-agile
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
@@ -9,24 +9,24 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/21/2021 
+ms.date: 10/28/2021
 ---
 
-# Remove, delete, or restore work items 
+# Remove, delete, or restore work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Work items can live forever in your work tracking data store. You never have to delete them. However, depending on your business needs, you may want to perform one or more of these actions: 
+Work items can live forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions: 
 
 ::: moniker range=">= tfs-2017"
-- **Change state**: Remove work items from appearing on backlogs and boards by simply changing the work item **State** to *Remove* or *Cut*.  
-- **Delete**: Remove work items from backlogs, boards, and queries. Deleted work items are moved to a Recycle Bin. From the Recycle Bin you can restore or permanently delete them. 
+- **Change state**: Remove work items from appearing on backlogs and boards by changing the work item **State** to *Remove* or *Cut*.  
+- **Delete**: Remove work items from backlogs, boards, and queries. Deleted work items are moved to a Recycle Bin. From the **Recycle Bin**, you can restore or permanently delete them. 
 - **Destroy**: Permanently delete work items, deleting all data from the work tracking data store. 
 - **Restore**: Recover deleted work items, restoring them from the Recycle Bin.  
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-- **Change state**: Remove work items from appearing on backlogs and boards by simply changing the work item **State** to *Remove* or *Cut*.  
+- **Change state**: Remove work items from appearing on backlogs and boards by changing the work item **State** to *Remove* or *Cut*.  
 - **Destroy**: Permanently delete work items, deleting all data from the work tracking data store. 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ To move a work item from one project to another, or to change the work item type
 ::: moniker range=">= tfs-2015"
 - To remove, modify, or delete work items, you must be a member of the **Contributors** group or have the following permissions set to **Allow**. 
 	- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.   
-	- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
+	- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to delete or restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
 ::: moniker-end
 ::: moniker range="tfs-2013"
 - To remove, modify, or delete work items, you must be a member of the **Contributors** group or have the following permissions set to **Allow**. 
@@ -83,7 +83,7 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 ::: moniker range="azure-devops" 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 
@@ -93,17 +93,17 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 ## Remove or delete multiple work items 
 
-You can perform operations on individual work items or bulk modify several work items. 
+You can act on individual work items or bulk modify several work items. 
 
-From the web portal, you can multi-select several work items from a backlog or query results page and perform a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
+From the web portal, you can multi-select several work items from a backlog or query results page. You can also do a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
 
 ::: moniker-end
 
 <a id="remove"> </a>  
 
-## Remove work items
+### Remove work items
 
-By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you define custom workflow states, any state you map to the **Removed** workflow category state will act in a similar way. 
+By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and Taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you define custom workflow states, any state you map to the **Removed** workflow category state will act in a similar way. 
 
 > [!div class="mx-imgBorder"]  
 > ![Change State to Removed](media/move-change-delete/remove-state.png)  
@@ -124,21 +124,22 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 ::: moniker range=">= tfs-2015"
 
-## Delete work items   
+### Delete work items   
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a **Recycle Bin** from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a **Recycle Bin** from which you can recover them if needed. To delete a test case, test plan, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
 
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
+1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or Taskboard. 
 
-	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Delete**. 
+	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
+	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png) 
+ 
 	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
@@ -160,7 +161,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 ::: moniker range="tfs-2015"  
 
 > [!NOTE]  
-> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. 
+> The **Delete and Recycle Bin** features are available from TFS 2015.2 and later versions. 
 
 ::: moniker-end
 
@@ -168,12 +169,12 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
-	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
+	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
 
-	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
+	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md). Then, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![List of work items, actions menu, Delete](media/move-change-delete/multi-delete.png)  
@@ -195,6 +196,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 
 <a id="restore" />
+<a id="restore-or-destroy-work-items" />
 <a id="restore-or-permanently-delete-work-items" />
 
 ::: moniker range=">= tfs-2015"  
@@ -215,9 +217,9 @@ You restore deleted work items or permanently delete them from the web portal Re
 	If you don't see the **Recycle Bin** option, choose **More commands &hellip;** and choose it from the menu of options.
 
 	> [!NOTE]   
-	> Deleted test artifacts won't appear in the **Recycle Bin** and can't be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+	> Deleted test artifacts won't appear in the **Recycle Bin** and can't be restored. Deletion of test artifacts deletes the selected test artifact and all of its associated child items, such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
 
-1.  A new browser tab opens with the query which lists work items added to the Recycle Bin. 
+1.  A new browser tab opens with the query that lists work items added to the Recycle Bin. 
 1.	Select the items you want to restore and then choose **Restore**.  
 	![Restore selected items](media/move-change-delete/restore-from-recycle-bin.png) 
 
@@ -251,7 +253,7 @@ You restore deleted work items from the web portal **Recycle Bin**.
  
 	![Open Recycle bin](media/move-change-delete/open-recycle-bin.png)
 
-	A new browser tab opens with the query which lists work items added to the **Recycle Bin**. 
+	A new browser tab opens with the query that lists work items added to the **Recycle Bin**. 
 
 1. Select the items you want to restore  and then choose **Restore**.  
 
@@ -271,7 +273,7 @@ You restore deleted work items from the web portal **Recycle Bin**.
 
 ::: moniker range=">= azure-devops-2020" 
  
-## Delete or destroy work items (command line)
+## Delete or destroy work items from the command line
 
 You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -286,13 +288,13 @@ az boards work-item delete --id
                            [--yes] 
 ``` 
 
-#### Parameters 
+### Parameters 
 
 - **id**: Required. The ID of the work item.
 - **destroy**: Optional. Permanently delete this work item.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **yes**: Optional. Do not prompt for confirmation.
+- **yes**: Optional. Don't prompt for confirmation.
 
 #### Example 
 
@@ -309,7 +311,7 @@ az boards work-item delete --id 864 --destroy --yes
 
 <a id="witadmin-cli" />
  
-## Destroy work items (command line)  
+### Destroy work items from the command line  
 
 Use the **witadmin destroywi** command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated.  
 
@@ -348,7 +350,7 @@ The **witadmin** command-line tool installs with any version of Visual Studio or
 	``` CLI
 	witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23
 	```
-- To delete a single work item, simply enter the ID as shown:  
+- To delete a single work item, enter the ID as shown:  
 
 	``` CLI
 	witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003
@@ -357,15 +359,15 @@ The **witadmin** command-line tool installs with any version of Visual Studio or
 
 ::: moniker range=">= tfs-2015"  
 
-## How delete and restore actions work  
+## How to delete and restore actions work  
 
 **When you delete a work item, the following actions occur:**
 
 - Generates a new revision of the work item  
 - Updates the **Changed By/Changed Date** fields to support traceability  
 - Preserves the work item completely, including all field assignments, attachments, tags, and links  
-- Causes work item to become non-queryable and therefore won't appear in any work tracking experience, query result, or report  
-- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to remove deleted work items  
+- Causes the work item to become non-queryable and, as such, won't appear in any work tracking experience, query result, or report  
+- Updates charts correctly. The CFD, velocity, burndown, and lightweight charts are updated to remove deleted work items  
 - Removes work tracking extensions  
 - Preserves trend data except for the latest value 
 - Removes the work item from the data warehouse/cube similar to as if it was permanently removed.  
@@ -379,7 +381,7 @@ The **witadmin** command-line tool installs with any version of Visual Studio or
 - All fields remain unchanged  
 - History contains two new revisions, one for deletion, and one for restore  
 - Reattaches work tracking extensions  
-- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to include the restored work items  
+- Updates charts correctly. The CFD, velocity, burndown, and lightweight charts are updated to include the restored work items  
 - Restores trend data  
 - Adds the work item back to the data warehouse/cube  
 - Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
@@ -389,12 +391,12 @@ The **witadmin** command-line tool installs with any version of Visual Studio or
 
 ::: moniker range=">= tfs-2018"
 
-##  REST API 
+## Use a REST API to delete, restore, and destroy work items
 
 To programmatically delete, restore, and destroy work items, see one of the following REST API resources:  
 
-- [Recyclebin REST API Reference](/rest/api/azure/devops/wit/recyclebin)
-- [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work%20items/delete)
+- [Recycle bin REST API Reference](/rest/api/azure/devops/wit/recyclebin)
+- [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work-items/delete)
   
 ::: moniker-end
 
@@ -406,8 +408,8 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
-- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
-- [About access levels](../../organizations/security/access-levels.md) 
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)  
+- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
@@ -417,8 +419,8 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
-- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
-- [About access levels](../../organizations/security/access-levels.md) 
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)  
+- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 
 ::: moniker-end
  
@@ -489,5 +491,4 @@ In this article you'll learn:
 > * How to permanently delete work items (**witadmin destroy** command-line tool)   
 
 ::: moniker-end
---> 
-	
+-->

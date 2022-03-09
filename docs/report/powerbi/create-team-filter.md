@@ -1,20 +1,20 @@
 ---
 title: Apply a team filter to a Power BI report
 titleSuffix: Azure DevOps 
-description: Sample report that show how to create a trend report with a team filter using an Analytics view
+description: Learn how to create a trend report with a team filter using an Analytics view.
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/18/2020
+ms date: 10/04/2021
 ---
 
 # Create a Power BI report filtered by team using a custom Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Analytics views support field criteria to filter work items based on teams. However, there is no team-specific field available to support filtering a Power BI report. While each work item is associated with a specific area path, area paths can be associated with more than one team. Due to this one-to-many associations, Analytics doesn't provide a team-specific field. 
+Analytics views support field criteria to filter work items based on teams. However, there's no team-specific field available to support filtering a Power BI report. While each work item is associated with a specific area path, area paths can be associated with more than one team. Because of this one-to-many association, Analytics doesn't provide a team-specific field. 
 
 However, you can still filter on a team using the steps provided in this article. The general process introduces a mapping table between the [Analytics view](create-quick-report.md) and the [teams](../extend-analytics/data-model-analytics-service.md) entity.
 
@@ -28,10 +28,10 @@ However, you can still filter on a team using the steps provided in this article
 The default fields included within the default Analytics views don't include the fields necessary to create the relationship mapping in Power BI. Use the following steps to introduce the mapping table to your model and build the necessary relationships to support filtering on teams.
 
 1. [Edit](analytics-views-manage.md) your Analytics view.
-2. In the **Field** tab add the *AreaSK* field.  
+2. In the **Field** tab, add the *AreaSK* field.  
 3. Save the updated view.
 4. Load the Power BI pbix file associated with your Analytics view in Power BI Desktop.
-5. Refresh the view and verify that the *AreaSK* field appears in the.  
+5. Refresh the view and verify that the *AreaSK* field appears as expected.  
 
 ## Add tables for teams 
 
@@ -49,7 +49,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
     > [!div class="mx-imgBorder"]    
     > ![Advanced Editor](media/AdvancedEditor.png) 
 
-5. Add the following query code, substituting organization information and team names to match your Analytics view. 
+5. Add the following query code, replacing organization information and team names to match your Analytics view. 
    
     ```Query
     let
@@ -66,7 +66,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 7. From the **Home** tab, choose **New Source** to add another blank query and rename it to 
  *Areas*. 
 
-8. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
+8. Open **Advanced Editor** and add the following query code, replacing organization information to match your view.
 
     ```Query
     let
@@ -78,7 +78,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
 9. From the **Home** tab, choose **New Source** to add another blank query and rename it to *AreaToTeam*.
 
-11. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
+11. Open **Advanced Editor** and add the following query code, replacing organization information to match your view.
 
     ```Query
     let
@@ -133,7 +133,7 @@ The last step is to create the necessary relationships in Power BI.
 
 6. Return to the **Report** view, and open the context menu for *TeamName* and *TeamSK* fields and choose the **Hide** option. <!--- Hide Area and AreaToTeam Tables --> 
 
-    <img src="media/HideArea.png" alt="Hide Area" />
+    :::image type="content" source="media/HideArea.png" alt-text="Hide Area":::
 
 7. Hide corresponding SKs in your *View* and *Team* tables. 
 

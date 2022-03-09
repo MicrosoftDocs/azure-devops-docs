@@ -1,20 +1,20 @@
 ### YamlMime:FAQ
 metadata:
-  title: Query FAQs 
+  title: Frequently Asked Questions (FAQs) about Queries in Azure Boards and Azure DevOps
   description: Get answers to common questions about working with work item queries in Azure DevOps. 
   titleSuffix: Azure Boards
   ms.custom: boards-queries
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 05/21/2021
+  ms.date: 10/25/2021
 
-title: Query FAQs 
+title: FAQs about queries in Azure Boards and Azure DevOps
 
 summary: | 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
   The Query Editor supports finding work items by specifying query clauses based on fields, operators, and values. You can save and share these queries with others in your team. Here are some answers to frequently asked questions about work item queries. 
  
@@ -27,7 +27,7 @@ sections:
 
       - question: What's the difference between a query and a semantic search? 
         answer: |
-          While both query and semantic search finds and list work items, the filter features and results presentation are different. To learn more, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md#search-vs-managed-work-item-queries).  
+          While both query and semantic searches find and list work items, the filter features and results presentation are different. To learn more, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md#search-vs-managed-work-item-queries).  
 
       - question: Can I export a query and import to another project?  
         answer: |
@@ -39,7 +39,7 @@ sections:
           From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs-boards-plans).  
           ::: moniker range=">= azure-devops-2019"
           > [!NOTE] 
-          > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
+          > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
           ::: moniker-end
 
           ---
@@ -102,21 +102,21 @@ sections:
              :::column span="1":::
                ::: moniker range=">= azure-devops-2019"
                 - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
-                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
-                - [Kanban board fields](./query-by-workflow-changes.md#kanban-board-change-queries)
+                - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md#across-projects)
                 ::: moniker-end
                 ::: moniker range="tfs-2018"
-                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md#across-projects)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 ::: moniker-end
                 ::: moniker range="tfs-2017"
-                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
                 - [Search across projects](./using-queries.md#across-projects)
                 ::: moniker-end
@@ -174,7 +174,7 @@ sections:
 
       - question: Can I run several queries at the same time?
         answer: |
-          **Yes**. Simply open a query in a new browser tab to run several queries at the same time.  
+          **Yes**. Open a query in a new browser tab to run several queries at the same time.  
 
       - question: What query macros are only supported from the web portal?
         answer: |
@@ -210,7 +210,7 @@ sections:
         answer: | 
           - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
 
-          - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
+          - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries. These queries can filter for work items assigned to you, that you're following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
 
 
       - question: How do I sort on the Parent field?  
@@ -222,19 +222,19 @@ sections:
 
       - question: How do I query for a list of related work items?   
         answer:  |
-          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`, however, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecesor-Successor**, and other link types. 
+          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`. However, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecesor-Successor**, and other link types. 
 
       - question: Can I query for work items linked across projects? 
         answer:  |
-          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported. 
+          **No**. There's a prohibitive performance cost for trying to execute such a query, so it isn't supported. 
 
       - question: Can I link work items across organizations or collections?
         answer: |
           ::: moniker range="azure-devops"
-          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md#link-to-a-remote-work-item). However, you can't perform a search for work items linked from other projects than the current project you are connected to. 
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md#link-to-a-remote-work-item). However, you can't run a search for work items linked from other projects than the current project you're connected to. 
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          **No** across collections. This isn't a supported feature. 
+          **No** across collections. This feature isn't supported. 
           ::: moniker-end
 
   - name: Bulk add and update work items using queries
@@ -260,16 +260,16 @@ sections:
           **No**. You can only enable permissions for users and groups from the permissions window for the query or folder.
           ::: moniker-end
           ::: moniker range="<= tfs-2015"
-          **Yes**. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
+          **Yes**. This feature is supported from the [query Security dialog](set-query-permissions.md). 
           ::: moniker-end
  
       - question: Can I move a query or a folder?
         answer: |
-          **Yes**. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, simply drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
+          **Yes**. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
 
       - question: Can I add folders to My Favorites or Team Favorites?
         answer: |
-          **No**. This is not a supported feature. 
+          **No**. This feature isn't supported. 
 
       - question: Are the queries and folders I create from the web portal the same as in Team Explorer?
         answer: |
@@ -287,4 +287,3 @@ additionalContent: |
   -  [Azure Boards FAQs](../faqs.yml) 
   -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
   -  [Excel FAQs](../backlogs/office/faqs.yml)
-

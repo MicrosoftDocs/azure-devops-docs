@@ -1,27 +1,27 @@
 ---
 title:  Analytics widgets 
 titleSuffix: Azure DevOps
-description: Learn about the widgets based on Analytics data that you can add to a dashboard  
+description: Learn about the widgets based on Analytics data that you can add to a dashboard in Azure DevOps.
 ms.technology: devops-analytics
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 09/27/2021
 ---
 
 
-# Widgets based on Analytics
+# Widgets based on Analytics data
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range=">= azure-devops-2020"
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-Analytics supports several dashboard widgets that take advantage of the power of the service. Once you [enable or install Analytics](../dashboards/analytics-extension.md) on a project collection, you can add these widgets to your dashboard. You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
+Analytics supports several dashboard widgets that take advantage of the power of the service. Once you [enable or install Analytics](../dashboards/analytics-extension.md) on a project collection, you can add these widgets to your dashboard. To add extensions or enable the service, you must be an organization owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). Using these widgets, you and your team can gain valuable insights into the health and status of your work.
 ::: moniker-end
 
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
@@ -30,16 +30,19 @@ You add an Analytics widget to a dashboard the same way you add any other type o
 
 ## Prerequisites
 
-- Analytics widget data is calculated from the Analytics service.  
-
+::: moniker range="azure-devops"
+- Analytics widget data is calculated from the Analytics service. The Analytics service is enabled for all Azure DevOps organizations.  
+- To view Analytics data, you must have the **View analytics** project-level permission set to **Allow**. By default, this permission is set for all project members in all security groups. Users granted **Stakeholder** access or greater can view Analytics widgets.  
+::: moniker-end
 ::: moniker range="< azure-devops"
+- Analytics widget data is calculated from the Analytics service.
 - For Analytics widgets to display correctly, the Analytics service must be enabled on your on-premises Azure DevOps Server. To learn more, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
-
+- To view Analytics data, you must have the **View analytics** project-level permission set to **Allow**. By default, this permission is set for all project members in all security groups. Users granted **Stakeholder** access or greater can view Analytics widgets.  
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
-## Burndown
+## Burndown widget
 
 The Burndown widget lets you display a trend of remaining work across multiple teams and multiple sprints. You can use it to create a release burndown, a bug burndown, or a burndown on any scope of work over time. It will help you answer questions like: 
 
@@ -53,7 +56,7 @@ The Burndown widget lets you display a trend of remaining work across multiple t
 
 To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
-## Burnup
+## Burnup widget
 
 The Burnup widget lets you display a trend of completed work across multiple teams and multiple sprints. You can use it to create a release burnup, a bug burnup, or a burnup on any scope of work over time. When completed work meets total scope, your project is done! 
 
@@ -76,9 +79,9 @@ The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sp
 To learn more, see [Configure and monitor sprint burndown](configure-sprint-burndown.md).  
 
 
-## Cumulative Flow Diagram (CFD)
+## Cumulative Flow Diagram (CFD) widget
 
-The CFD widget shows the count of work items (over time) for each column of a Kanban board. This allows you to see patterns in your team's development cycle over time. It will help you answer questions like: 
+The CFD widget shows the count of work items (over time) for each column of a Kanban board. It allows you to see patterns in your team's development cycle over time. It will help you answer questions like: 
 * Is there a bottleneck in my process? 
 * Am I consistently delivering value to my users? 
 
@@ -88,34 +91,34 @@ The CFD widget shows the count of work items (over time) for each column of a Ka
 
 To learn more, see [Cumulative flow diagram widget](cumulative-flow.md).  
 
-## Cycle Time
+## Cycle Time widget
 
-The Cycle time widget will help you analyze the time it takes for your team to complete work items once they begin actively working on them. A lower cycle time is typically indicative of a healthier team process. Using the Cycle time widget you will be able to answer questions like: 
+The Cycle Time widget will help you analyze the time it takes for your team to complete work items once they begin actively working on them. A lower cycle time is typically indicative of a healthier team process. Using the Cycle Time widget you can answer questions like: 
 * On average, how long does it take my team to build a feature or fix a bug? 
-* Are bugs costing my team a lot of development time?
+* Are bugs costing my team many development hours?
 
-**Cycle time widget showing 30 days of data**
+**Cycle Time widget showing 30 days of data**
 
-![Cycle time widget](media/cycle-time-planning.png) 
+![Cycle Time widget](media/cycle-time-planning.png) 
 
-To learn more, see [Cycle time and lead time control charts](cycle-time-and-lead-time.md).  
+To learn more, see [Cycle Time and lead time control charts](cycle-time-and-lead-time.md).  
 
-## Lead Time
+## Lead Time widget
 
-The Lead time widget will help you analyze the time it takes to deliver work from your backlog. Lead time measures the total time elapsed from the creation of work items to their completion. Using the Lead time widget you will be able to answer questions like: 
+The Lead Time widget will help you analyze the time it takes to deliver work from your backlog. Lead Time measures the total time elapsed from the creation of work items to their completion. Using the Lead Time widget, you can answer questions like: 
 * How long does it take for work requested by a customer to be delivered?
 * Did work items take longer than usual to complete?
 
 
-**Lead time widget showing 60 days of data**
+**Lead Time widget showing 60 days of data**
 
-![Lead time widget](media/lead-time-control-chart.png) 
+![Lead Time widget](media/lead-time-control-chart.png) 
 
-To learn more, see [Cycle time and lead time control charts](cycle-time-and-lead-time.md). 
+To learn more, see [Cycle Time and lead time control charts](cycle-time-and-lead-time.md). 
 
-## Velocity
+## Velocity widget
 
-The Velocity widget will help you learn how much work your team can complete during a sprint. The widget shows the team's velocity by Story Points, work item count, or any custom field. You can also compare the work delivered against your plan and track work completed late. Using the Velocity widget, you will be able to answer questions like:
+The Velocity widget will help you learn how much work your team can complete during a sprint. The widget shows the team's velocity by Story Points, work item count, or any custom field. It allows you to compare the work delivered against your plan and track work that's completed late. Using the Velocity widget, you can answer questions like:
 * On average, what is the velocity of my team?
 * Is my team consistently delivering what we planned?
 * How much work can we commit to deliver in upcoming sprints? 

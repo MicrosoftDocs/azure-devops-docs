@@ -1,25 +1,25 @@
 ---
-title: Add and manage issues or impediments 
+title: Manage and resolve issues or impediments in Azure Boards 
 titleSuffix: Azure Boards 
-description: Track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards & TFS
+description: Learn how to track issues or impediments to more effectively execute plans or stay on schedule by using Azure Boards.
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 08/18/2020
+ms.date: 10/08/2021
 ---
 
-# Manage issues or impediments 
+# Manage issues or impediments in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a name="manage-impediments"></a>
 
-If you have known issues you want to track, you can do so by defining an impediment (Scrum) or issue (Agile or CMMI). Impediments and issues represent unplanned activities. Resolving them requires more work beyond what's tracked for actual requirements. Using the impediment work item type helps you track and manage these issues until you can resolve and close them. 
+If you have known issues you want to track, you can do so by defining an impediment (Scrum) or issue (Agile or CMMI). Impediments and issues represent unplanned activities. Resolving them requires more work beyond what's tracked for actual requirements. Use the impediment work item type to help you track and manage these issues until you can resolve and close them. 
 
-Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to address feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
+Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to fix feature ambiguity, personnel or resource issues, problems with environments, or other risks that influence scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
 ::: moniker range="> tfs-2018"
 
@@ -62,11 +62,11 @@ In this article you'll learn:
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
 
-## When to use issues versus tasks
+## Define a task
 
 You use issues or impediments to track items that may block work from getting done. In general, you link these items to user stories or other work items using a Related link type.
 
-You define tasks when you want to create a [checklist of tasks](../boards/add-task-checklists.md) or if you use Scrum methods and track work using the [Remaining Work](../sprints/task-board.md) field. By linking user stories, or other requirement work item types, to tasks using the Parent-Child link type, the tasks appear on the taskboard for each linked user story.
+Define tasks when you want to create a [checklist of tasks](../boards/add-task-checklists.md). You can also define tasks if you use Scrum methods and track work using the [Remaining Work](../sprints/task-board.md) field. By linking requirement work item types to tasks using the Parent-Child link type, the tasks appear on the taskboard for each linked user story.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
@@ -103,9 +103,9 @@ From **Work**, choose **Impediment** from the **New Work Item** list of options.
   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
-From the Queries page, choose Impediment from the **New** drop down menu.
+From the Queries page, choose Impediment from the **New** drop-down menu.
 
 <img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" />  
 
@@ -114,20 +114,20 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 <a id="customize"> </a>
 
-## Customize issues tracking
+## Customize issue tracking
 
 [!INCLUDE [temp](../includes/customize-work-tracking.md)] 
 
 
 ::: moniker range="azure-devops"
 
-By default, issues and impediments don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). To track them on a backlog, see the next section, [Add issues or impediments to your product backlog](#add-to-backlog). 
+Issues and impediments don't appear on your backlog by default. Instead, you track them using [queries](../queries/using-queries.md). To track them on a backlog, see the next section, [Add issues or impediments to your product backlog](#add-to-backlog). 
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). You can only have them appear on your backlog if your project is customized using the On-premises XML process model. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
+Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). They only appear on your backlog if your project is customized using the On-premises XML process model. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ## Add issues or impediments to your product backlog  
 
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 
 ::: moniker-end
 

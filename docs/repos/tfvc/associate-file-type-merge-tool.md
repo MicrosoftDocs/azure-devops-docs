@@ -5,20 +5,21 @@ description: Associate a file type with a merge tool
 ms.assetid: be153b5c-b26d-4bfe-aec2-fd23156ead68
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Associate a file type with a merge tool
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 The diff/merge tool included in Team Foundation opens when the user tries to compare two files (or two versions of a file), or when the user elects to perform a manual merge of a file that has conflicting changes.
 
 The tool is compatible with text and XML based files; however, should you want to associate a specific file type with a third-party merging or diff tool, use the procedure that is described in the following procedure.
 
-**Required Permissions**
+## Prerequisites
 
 To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
@@ -48,8 +49,6 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
 11. Click **OK**.
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Merge folders and files](merge-folders-files.md) 
+- [Merge folders and files](merge-folders-files.md) 

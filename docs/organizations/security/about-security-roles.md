@@ -7,12 +7,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/10/2020
+ms.date: 10/11/2021
 ---
 
 # About pipeline security roles
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 <a id="security-roles" />
 

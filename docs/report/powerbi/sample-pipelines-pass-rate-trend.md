@@ -1,7 +1,7 @@
 ---
 title: Pipeline pass rate sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pipeline pass rate Power BI report  
+description: How-to generate a pipeline pass rate Power BI report  
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,14 +9,14 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'      
-ms.date: 12/18/2020
+ms.date: 10/12/2021
 ---
 
 # Pipeline pass rate trend sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. This is similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
+This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. It's similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -31,7 +31,7 @@ The following image shows an example of such a trend.
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -60,7 +60,7 @@ in
     Source
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -96,65 +96,152 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
-<td>Return pipeline runs for the specified pipeline</td>
-<tr>
-<tr>
-<td><code>and CompletedDate ge {startdate}</code></td>
-<td>Return pipeline runs on or after the specified date</td>
-<tr>
-<tr>
-<td><code>and CanceledCount ne 1</code></td>
-<td>Omit the canceled pipeline runs</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(CompletedOn/Date),</code></td>
-<td>Group by date of completion of pipeline run</td>
-<tr>
-<tr><td><code>aggregate</code></td>
-<td>Start aggregate. For all the pipeline runs matching the above filter criteria:</td>
-<tr>
-<tr><td><code>($count as TotalCount,</code></td>
-<td>Count the total number of runs as TotalCount</td>
-<tr>
-<tr><td><code>SucceededCount with sum as SucceededCount ,</code></td>
-<td>Count the number of successful runs as SucceededCount</td>
-<tr>
-<tr><td><code>FailedCount with sum as FailedCount,</code></td>
-<td>Count the number of failed runs as FailedCount</td>
-<tr>
-<tr><td><code>PartiallySucceededCount with sum as PartiallySucceededCount))</code></td>
-<td>Count the number of partially successful runs as PartiallySucceededCount. Close aggregate() and groupby()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start of compute()</td>
-<tr>
-<tr><td><code>SucceededCount mul 100.0 div TotalCount as PassRate,</code></td>
-<td>Calculate PassRate for each day by dividing number of successful runs by number of total runs</td>
-<tr>
-<tr><td><code>FailedCount mul 100.0 div TotalCount as FailRate,</code></td>
-<td>Calculate FailRate for each day by dividing number of failed runs by number of total runs</td>
-<tr>
-<tr><td><code>PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)</code></td>
-<td>Calculate PartiallySuccessfulRate for each day by dividing number of partially successful runs by number of total runs</td>
-<tr>
-<tr><td><code>&$orderby=CompletedOn/Date asc</code></td>
-<td>Order the result in ascending order based on date of pipeline run</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelinename}'`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs for the specified pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CompletedDate ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CanceledCount ne 1`
+   :::column-end:::
+   :::column span="1":::
+   Omit the canceled pipeline runs
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(CompletedOn/Date),`
+   :::column-end:::
+   :::column span="1":::
+   Group by date of completion of pipeline run
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate`
+   :::column-end:::
+   :::column span="1":::
+   Start aggregate. For all the pipeline runs matching the above filter criteria:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `($count as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of runs as TotalCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `SucceededCount with sum as SucceededCount ,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of successful runs as SucceededCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `FailedCount with sum as FailedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of failed runs as FailedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `PartiallySucceededCount with sum as PartiallySucceededCount))`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of partially successful runs as PartiallySucceededCount. Close aggregate() and groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start of compute()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `SucceededCount mul 100.0 div TotalCount as PassRate,`
+   :::column-end:::
+   :::column span="1":::
+   Calculate PassRate for each day by dividing number of successful runs by number of total runs
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `FailedCount mul 100.0 div TotalCount as FailRate,`
+   :::column-end:::
+   :::column span="1":::
+   Calculate FailRate for each day by dividing number of failed runs by number of total runs
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)`
+   :::column-end:::
+   :::column span="1":::
+   Calculate PartiallySuccessfulRate for each day by dividing number of partially successful runs by number of total runs
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$orderby=CompletedOn/Date asc`
+   :::column-end:::
+   :::column span="1":::
+   Order the result in ascending order based on date of pipeline run
+   :::column-end:::
+:::row-end:::
+
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 
 ## Power BI transforms
@@ -183,7 +270,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. This section lists the columns whose type needs to be changed for creating reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. This section lists the columns whose type you have to change for creating reports.
 
 1. Change the type of columns **PassRate, FailRate** and **PartiallySuccessfulRate** to **Decimal Number**.
 
@@ -228,10 +315,10 @@ Power BI shows you the fields you can report on.
 For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**. 
-1. Add the field "CompletedOn.Date" to **Axis**.
-    - Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
-1. Add the field "PassRate" to **Values**.
-	  - Right-click "PassRate" field and ensure **Sum** is selected.
+1. Add the field **CompletedOn.Date** to **Axis**.
+    - Right-click **CompletedOn.Date** and select **CompletedOn.Date**, rather than Date Hierarchy.
+1. Add the field **PassRate** to **Values**.
+	  - Right-click **PassRate** field and ensure **Sum** is selected.
   
 
 Your report should look like this. 
@@ -240,14 +327,14 @@ Your report should look like this.
 > ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
 
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
 
 
-### Use Pipeline Id, rather than Pipeline Name
+### Use Pipeline ID, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline Id from the URL of the pipelines runs page.
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID from the URL of the pipelines runs page.
 
 `https://dev.azure.com/{organization}/{project}/_build?definitionId=**{pipelineid}**`
 
@@ -308,7 +395,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Filter by branch
 
-You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow the extra steps below along with what is defined previously in this article.
 - Expand Branch into Branch.BranchName
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary
@@ -370,7 +457,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Filter by Build Reason
 
-You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow these additional steps along with what is defined previously in this article.
+You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request, and so on) only. To create the report, follow these extra steps along with what is defined previously in this article.
 - Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary.
 
@@ -431,12 +518,12 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Pass rate trend for all project pipelines
 
-You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.  
+You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the extra steps below along with what is defined previously in this article.  
 - Expand Pipeline into  Pipeline.PipelineName  
 - Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**  
 - Select the Build pipeline from the slicer for which you need to see the outcome summary
 
-Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report that has detailed similar steps as required here.
 
 #### [Power BI query](#tab/powerbi/)
 

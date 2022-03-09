@@ -1,19 +1,19 @@
 ---
 title: Create a Power BI report with an OData Query
 titleSuffix: Azure DevOps
-description: Quick start to create a trend report using an OData Query
+description: Learn how to create a trend report using an OData Query.
 ms.technology: devops-analytics
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms.date: 07/14/2020
+ms date: 10/04/2021
 ---
 
 # Create a Power BI report with an OData Query
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Power BI Desktop, you can easily start creating reports for your project in Azure DevOps. 
 
@@ -30,7 +30,7 @@ Follow the steps to create a report in Power BI desktop that shows a **daily tre
 
 ## Prerequisites  
 
-In order to create a Power BI report, you must meet the following criteria:  
+To create a Power BI report, you must meet the following criteria:  
 
 ::: moniker range="azure-devops"
 
@@ -47,7 +47,7 @@ In order to create a Power BI report, you must meet the following criteria:
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.
 - **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
@@ -102,17 +102,17 @@ Create a Power BI Query to pull the data into Power BI as follows:
 
     The sample query has strings that you must replace with your values:
 
-    * {organization} - Your organization name 
-    * {project} - Your team project name. Or omit "/{project}" entirely, for a cross-project query
-    * {areapath} - Your Area Path. Format: Project\Level1\Level2
-    * {startdate} - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: 2019-07-01Z represents 2019-July-01. Do not enclose in quotes.
+    * `{organization}` - Your organization name 
+    * `{project}` - Your team project name. Or omit `/{project}` entirely, for a cross-project query
+    * `{areapath}` - Your Area Path. Format: Project\Level1\Level2
+    * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2019-07-01Z` represents 2019-July-01. Don't enclose in quotes.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI - Advanced Editor - Replace strings in query](media/odatapowerbi-advancededitor-replaced.png)
 
 6. Choose **Done** to execute the query.
 
-    If you have never connected to your account, Power BI may require you to authenticate. See [Client authentication options](client-authentication-options.md) for more information.
+    If you've never connected to your account, Power BI may require you to authenticate. For more information, see [Client authentication options](client-authentication-options.md).
 
 ## Create Power BI transforms
 
@@ -149,7 +149,7 @@ The example report:
 
 <a id="q-a">  </a>
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create an Open bugs report](sample-boards-openbugs.md)

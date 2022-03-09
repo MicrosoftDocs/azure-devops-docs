@@ -1,21 +1,21 @@
 ---
 title: Configure WIP limits for Kanban board
 titleSuffix: Azure Boards
-description: Set Work In Progress Limits on the Kanban board in Azure Boards and Team Foundation Server 
+description: Learn how to set Work In Progress Limits on the Kanban board in Azure Boards.
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+monikerRange: '<= azure-devops'
+ms.date: 10/15/2021
 ---
 
 
-# Work in Progress limits
+# Set Work in Progress limits in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
@@ -35,7 +35,7 @@ To get started, have your team determine the initial WIP limits to set and how t
 
 * Set limits based on current works in progress. Count the items present in your existing Kanban columns.
 
-* Set limits that don't exceed 2 or 3 items per team member that works within a stage. For example, if you have three team members and each team member can work on no more than two tasks at a time, the resulting WIP limit is 6 (= 3 developers X 2 tasks/developer).
+* Set limits that don't exceed two or three items per team member that works within a stage. For example, if you have three team members and each team member can work on no more than two tasks at a time, the resulting WIP limit is 6 (= 3 developers X 2 tasks/developer).
 
 Starting low may help your team discover bottlenecks more quickly and identify process issues to address.
 
@@ -54,7 +54,7 @@ Respecting WIP limits means teams don't pull items into a column if doing so cau
 
 <img src="media/WIP_2.png" alt="Kanban board showing a column over the WIP limit" /> 
 
-Although simple in theory, keeping within WIP limits can force individuals, teams, and organizations out of their comfort zone. Team members who like to multitask might feel unnecessarily constrained. Others might find themselves without work as they wait for work to complete at an upstream stage. 
+Although simple in theory, keeping within WIP limits can force individuals, teams, and organizations out of their comfort zone. Team members who like to multitask might feel constrained. Others might find themselves without work as they wait for work to complete at an upstream stage. 
 
 To gain the advantages of constraining work-in-progress, have your team meet frequently to discuss the process changes taking place. As a starting point, consider hosting discussions around some of the [challenges and solutions to support successful implementation of WIP limits](best-practices-kanban.md#practices) provided below.
 
@@ -65,7 +65,7 @@ To gain the advantages of constraining work-in-progress, have your team meet fre
 
 To optimize the flow of value, you naturally want to identify and eliminate bottlenecks. Bottlenecks indicate waste exists in the overall workflow process. 
 
-By monitoring your Kanban board over time, you can learn where bottlenecks occur. When several items sit in a column unworked for several days, a bottleneck has occurred. Bottlenecks typically occur when WIP limits are too high. On the other hand, no bottlenecks could indicate that WIP limits are too low. 
+By monitoring your Kanban board over time, you can learn where bottlenecks occur. When several items sit in a column unworked for several days, a bottleneck has occurred. Bottlenecks typically occur when WIP limits are too high. However, no bottlenecks could indicate that WIP limits are too low. 
 
 The free eBook, [Kanban and Scrum - making the most of both](https://www.infoq.com/minibooks/kanban-scrum-minibook), provides this guidance:
 
@@ -78,7 +78,7 @@ Taking periodic snapshots of your Kanban board can visually catalog where work f
 
 Such snapshots can show your team:
 
-* How many items on average reside within a workflow stage/column  
+* How many items on average exist within a workflow stage/column  
 * How many items are being worked versus team members who work within a workflow stage/column  
 * How many and which items remained in a workflow stage/column for long periods of time  
 * How many items did the team complete at the end of a one, two, or three week period?  
@@ -92,13 +92,13 @@ Because bottlenecks signal waste in your workflow process, you'll want to identi
 Common wastes in software development include:
 
 * Unused code or features
-* Defects that lead to re-work
+* Defects that lead to rework
 * Delays or time spent waiting for something
 * Handoffs from one person, team, or business process to another
 * Insufficient requirements
 * Slow or poor communication
 
-Eliminating waste calls for team discussions to identify causes and solutions acceptable to the team. In addition to addressing the [challenges and solutions posed by WIP limits](best-practices-kanban.md#practices), the team may decide to adjust their workflow process or WIP limits. 
+Eliminating waste calls for team discussions to identify causes and solutions acceptable to the team. Along with addressing the [challenges and solutions posed by WIP limits](best-practices-kanban.md#practices), the team may decide to adjust their workflow process or WIP limits. 
 
 
 <a id="Set" />
@@ -184,7 +184,7 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 ::: moniker range=">= tfs-2015"
 
 - [Split columns](split-columns.md)  
-- [Expedite work](expedite-work.md)  
+- [Speed up work](expedite-work.md)  
 - [Definition of Done](definition-of-done.md)  
 - [Customize cards](../../boards/boards/customize-cards.md)  
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  

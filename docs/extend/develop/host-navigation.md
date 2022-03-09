@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Host page navigation
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 The HostNavigationService provides APIs for interacting with the parent host frame, including refreshing it and accessing the hash of the URL:
 

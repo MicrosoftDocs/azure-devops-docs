@@ -12,9 +12,7 @@ ms.date: 08/04/2016
 
 # Add a hub group
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 We'll create a hub group and add a hub to it.
 If you haven't already, [create the Hello hub](./add-hub.md) first, and then follow these steps to create the hub group.
@@ -58,3 +56,5 @@ Here's the complete extension manifest with Hello in the samples hub group.
 	}
 }
 ```
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]

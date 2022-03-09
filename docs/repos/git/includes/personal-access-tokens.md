@@ -4,24 +4,20 @@ ms.topic: include
 
 ## Create a PAT
 
-::: moniker range="azure-devops"
-
 > [!NOTE]
-> To enable the new user interface for the New account manager page, see [Manage or enable features](/azure/devops/project/navigation/preview-features).
+> The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to Azure DevOps or enabled preview features. We've enabled the [New account manager page](/azure/devops/project/navigation/preview-features) feature. The basic functionality available to you remains the same unless explicitly mentioned.
 
-#### [Preview page](#tab/preview-page)
-
-1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
   
-2. From your home page, open your user settings, and then select **Personal access tokens**.
+2. From your home page, open user settings :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false":::, and then select **Personal access tokens**.
 
    ![Select Personal Access Tokens](/azure/devops/repos/git/media/select-personal-access-tokens.jpg)
 
-3. And then select **+ New Token**.
+3. Select **+ New Token**.
 
    ![Select New Token to create](/azure/devops/repos/git/media/select-new-token.png)
 
-4. Name your token, select the organization where you want to use the token, and then choose a lifespan for your token.
+4. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
 
    ![Enter basic token information](/azure/devops/repos/git/media/create-new-pat.png)
 
@@ -30,17 +26,25 @@ ms.topic: include
 
    For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, limit your token's scope to **Agent Pools (Read & manage)**. To read audit log events, and manage and delete streams, select **Read Audit Log**, and then select **Create**.
 
-   ![Select scopes for your PAT](/azure/devops/repos/git/media/select-pat-scopes-preview.png)
+   ![Select scopes for your PAT](/azure/devops/repos/git/media/select-pat-scopes-preview.png)   
 
-6. When you're done, make sure to copy the token. For your security, it won't be shown again. Use this token as your password.
+   > [!NOTE]
+   > You may be restricted from creating full-scoped PATs. If so, your Azure DevOps Administrator in Azure AD has enabled a policy which limits you to a specific custom defined set of scopes. For more information, see [Manage PATs with policies/Restrict creation of full-scoped PATs](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats).
+   > For a custom defined PAT, the required scope for accessing the Component Governance API, `vso.governance`, isn't selectable in the UI.
+
+6. When you're done, make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
 
    ![Copy the token to your clipboard](/azure/devops/repos/git/media/copy-token-to-clipboard.png)
 
-#### [Current page](#tab/current-page)
+> [!WARNING]
+> Treat and use a PAT like your password and keep it a secret.
 
-1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
+<!---
+#### [Current page](#tab/current-page) 
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
   
-2. From your home page, open your profile. Go to your security details.
+2. From your home page, open your profile and go to your security details.
 
    ![My profile Team Services](/azure/devops/repos/git/media/my-profile-team-services.png)
 
@@ -48,7 +52,7 @@ ms.topic: include
 
    ![Select New Token to create](/azure/devops/repos/git/media/select-new-token.png)
 
-4. Name your token, select the organization where you want to use the token, and then choose a lifespan for your token.
+4. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
 
    ![Enter basic token information](/azure/devops/repos/git/media/create-new-pat.png)
 
@@ -59,13 +63,16 @@ ms.topic: include
 
    ![Select scopes for your PAT](~/repos/git/media/select-pat-scopes.png)
 
-6. When you're done, make sure to copy the token. For your security, it won't be shown again. Use this token as your password.
+6. When you're done, make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
 
    ![Copy the token to your clipboard](/azure/devops/repos/git/media/copy-token-to-clipboard.png)
 
-::: moniker-end
+> [!WARNING]
+> Treat and use a PAT like your password and keep it a secret.
 
-::: moniker range=">= tfs-2017 < azure-devops"
+-->
+
+::: moniker range=" < azure-devops-2019"
 
 1. Sign in to your web portal (```https://{server}:8080/tfs/```).
 
@@ -94,19 +101,20 @@ ms.topic: include
 
 ::: moniker-end
 
-* * *
+ Use your PAT anywhere your user credentials are required for authentication in Azure DevOps.
 
- Once your PAT is created, you can use it anywhere your user credentials are required for authentication in Azure DevOps.
+> [!IMPORTANT]
+> For organizations backed by Azure Active Directory, you have 90 days to sign in with your new PAT, otherwise it's considered inactive. For more information, see [User sign-in frequency for Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime).
 
 ### Notifications
 
 Users receive two notifications during the lifetime of a PAT - one upon creation and the other seven days before the expiration.
 
-After you create a PAT, you receive a notification similar to the following example.
+After you create a PAT, you receive a notification similar to the following example. This notification confirms that your PAT was added to your organization.
 
    :::image type="content" source="/azure/devops/organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="PAT created notification":::
 
-Seven days before your PAT expires, you receive a notification similar to the following example.
+The following image shows an example of the seven-day notification before your PAT expires.
 
    :::image type="content" source="/azure/devops/organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-expiration.png" alt-text="PAT near expiration notification":::
 
@@ -116,63 +124,76 @@ If you receive an unexpected PAT notification, an administrator or tool might ha
 
 - When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
 - When you or an administrator sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
-- When you or an administrator sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
+- When you or an administrator sets up web load testing as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
-If you believe that a PAT exists in error, we suggest that you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
+> [!WARNING]
+> If you believe that a PAT exists in error, we suggest that you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 
-Your token is your identity and represents you when it's used. Treat and use a PAT like your password.
+Your PAT is your identity and represents you when you use it, just like a password. 
 
-1. Git interactions require a username, which can be anything except the empty string.
-The PAT is used as the password.
-Additionally, you have to Base64-encode the username and PAT to use it with HTTP basic authentication.
-On Linux or macOS, in Bash, you can enter:
+**Git**
+
+Git interactions require a username, which can be anything except the empty string.
+The PAT is used as the password. Also, you have to Base64-encode the username and PAT to use with HTTP basic authentication.
+
+#### [Windows](#tab/Windows/)
+
+In PowerShell, enter the following code.
+
+```powershell
+$MyPat = ':PatStringFromWebUI'
+$UserName = ':UserNameToUseWithToken'
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$UserName:$MyPat"))
+git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+```
+
+To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager). [Git for Windows](https://www.git-scm.com/download/win) is required.
+
+#### [Linux/macOS](#tab/Linux/)
+
+In Bash, enter the following code.
 
 ```bash
-MY_PAT=yourPAT # replace "yourPAT" with your actual PAT
+MY_PAT=yourPAT # replace "yourPAT" with ":PatStringFromWebUI"
 B64_PAT=$(printf "%s"":$MY_PAT" | base64)
 git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
 ```
 
-> [!TIP]
-> For existing repositories, if you've already added the origin using the username, run the following command first.
-> <br>
-> ``git remote remove origin``
-> </br>
-> Otherwise run the following command:
-> <br>
-> ``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo>`` path to git repo = <project name>/_git/<repo_name>
-  </br>
-> ``git push -u origin --all``
+To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
 
-On Windows, you can do something similar in PowerShell:
+***
 
-```powershell
-$MyPat = 'yourPAT'
-$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyPat"))
-git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
-```
+**Existing repos**
 
-To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential manager:
+For existing repositories, if you already added the origin using the username, run the following command first.
 
-- [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
+``git remote remove origin``
+
+Otherwise, run the following command.
+
+``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
 
 ### Use a PAT in your code
 
-See the following sample that gets a list of builds using curl.
+You can use a PAT in your code, however note the following warning.
 
-```curl
+[!INCLUDE [warning-api-scopes](../../../organizations/accounts/includes/warning-api-scopes.md)]
 
-curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/build-release/builds
+#### [Windows](#tab/Windows/)
+
+If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string. The following example shows how to convert to Base64 using C#.
+
+```cs
+
+Authorization: Basic BASE64_USERNAME_PAT_STRING
 ```
 
-If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:
+The resulting string can then be provided as an HTTP header in the following format.
 
-`Authorization: Basic BASE64_USERNAME_PAT_STRING`
-
-Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
+The following sample uses the [HttpClient class](/dotnet/api/system.net.http.httpclient) in C#.
 
 ```cs
 public static async void GetBuilds()
@@ -209,62 +230,78 @@ public static async void GetBuilds()
 
 > [!TIP]
 > When you're using variables, add a `$` at the beginning of the string, like in the following example.
+>
+>```cs
+>public static async void GetBuilds()
+>{
+>    try
+>   {
+>       var personalaccesstoken = "PATFROMWEB";
+>
+>       using (HttpClient client = new HttpClient())
+>        {
+>            client.DefaultRequestHeaders.Accept.Add(
+>               new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+>
+>            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+>                Convert.ToBase64String(
+>                    System.Text.ASCIIEncoding.ASCII.GetBytes(
+>                        string.Format("{0}:{1}", "", personalaccesstoken))));
+>
+>           using (HttpResponseMessage response = client.GetAsync(
+>                        $"https://dev.azure.com/{organization}/{project}/_apis/build/builds?api-version=5.0").Result)
+>            {
+>                response.EnsureSuccessStatusCode();
+>                string responseBody = await response.Content.ReadAsStringAsync();
+>                Console.WriteLine(responseBody);
+>            }
+>        }
+>    }
+>    catch (Exception ex)
+>    {
+>        Console.WriteLine(ex.ToString());
+>    }
+>}
+>```
 
-```cs
-public static async void GetBuilds()
-{
-    try
-    {
-        var personalaccesstoken = "PATFROMWEB";
 
-        using (HttpClient client = new HttpClient())
-        {
-            client.DefaultRequestHeaders.Accept.Add(
-                new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+#### [Linux/macOS](#tab/Linux/)
 
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
-                Convert.ToBase64String(
-                    System.Text.ASCIIEncoding.ASCII.GetBytes(
-                        string.Format("{0}:{1}", "", personalaccesstoken))));
+The following sample gets a list of builds using curl.
 
-            using (HttpResponseMessage response = client.GetAsync(
-                        $"https://dev.azure.com/{organization}/{project}/_apis/build/builds?api-version=5.0").Result)
-            {
-                response.EnsureSuccessStatusCode();
-                string responseBody = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(responseBody);
-            }
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine(ex.ToString());
-    }
-}
+```curl
+
+curl -u :{PAT} https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
 
-When your code is working, it's a good time to switch from basic auth to <a href="/azure/devops/integrate/get-started/authentication/oauth" data-raw-source="[OAuth](../../../integrate/get-started/authentication/oauth.md)">OAuth</a>.
+***
+
+When your code is working, it's a good time to switch from basic auth to [OAuth](../../../integrate/get-started/authentication/oauth.md).
+
+For more information and examples of how to use PATs, see the following articles:
+
+- [Git credential managers](../set-up-credential-managers.md)
+- [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request)
+- [NuGet on a Mac](../../../artifacts/nuget/consume.md#mac-os)
+- [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client)
+- [Get started with Azure DevOps CLI](../../../cli/index.md).
+
+::: moniker range="< azure-devops-2019"
 
 If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](../../../integrate/get-started/authentication/iis-basic-auth.md).
 
-For more examples of how to use PATs, see [Git credential managers](../set-up-credential-managers.md), [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request), [NuGet on a Mac](../../../artifacts/nuget/consume.md#mac-os), [Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](../../../cli/index.md).
+::: moniker-end
 
 ::: moniker range="azure-devops"
-
 ## Modify a PAT
 
 You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes).
 
-> [!NOTE]
-> To enable the new user interface for the New account manager page, see [Manage or enable features](/azure/devops/project/navigation/preview-features).
-
-#### [Preview page](#tab/preview-page)
-
-1. From your home page, open your user settings, and then select **Profile**.
+1. From your home page, open your user settings :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
    ![My profile Team Services, Preview page, modify a PAT.](/azure/devops/repos/git/media/my-profile-team-services-preview.png)
 
-2. Under Security, select **Personal access tokens**. Select the token for which you want to modify, and then select **Edit**.
+2. Under Security, select **Personal access tokens**. Select the token you want to modify, and then  **Edit**.
 
     :::image type="content" source="/azure/devops/repos/git/media/select-edit-pat-current-view.png" alt-text="Select Edit to modify PAT":::
 
@@ -272,7 +309,7 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
    ![Modify and Save PAT](/azure/devops/repos/git/media/modify-pat.png)
 
-#### [Current page](#tab/current-page)
+<!---
 
 1. From your home page, open your profile. Go to **Security** details.
 
@@ -286,18 +323,13 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
    ![Modify and Save PAT](/azure/devops/repos/git/media/modify-pat.png)
 
-* * *
+-->
 
 ## Revoke a PAT
 
 You can revoke a PAT at any time, for various reasons.
 
-> [!NOTE]
-> To enable the new user interface for the New account manager page, see [Manage or enable features](/azure/devops/project/navigation/preview-features).
-
-#### [Preview page](#tab/preview-page)
-
-1. From your home page, open your user settings, and then select **Profile**.
+1. From your home page, open your user settings :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
    ![My profile Team Services, Preview page, revoke a PAT.](/azure/devops/repos/git/media/my-profile-team-services-preview.png)
 
@@ -309,6 +341,7 @@ You can revoke a PAT at any time, for various reasons.
 
    ![Confirm revoke](/azure/devops/repos/git/media/revoke-token-confirmation-dialog-preview.png)
 
+<!--
 #### [Current page](#tab/current-page) 
 
 1. From your home page, open your profile. Go to **Security** details.
@@ -323,6 +356,6 @@ You can revoke a PAT at any time, for various reasons.
 
    ![Confirm revoke](/azure/devops/repos/git/media/revoke-token-confirmation-dialog-preview.png)
 
-* * *
+-->
 
 ::: moniker-end

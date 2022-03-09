@@ -10,12 +10,12 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 03/05/2021  
+ms.date: 10/26/2021  
 ---
 
 # Publish a Git repository to a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 In this quickstart, learn how to do the following tasks:
 
@@ -112,7 +112,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
 
 > [!NOTE]
-> You're limited to publishing 10 branches as code wikis.
+> You can publish up to 10 total wikis.
 
 For the Wiki that's provisioned with the Markdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
 
@@ -267,10 +267,7 @@ To add a parent page, you'll first add a Markdown file at the root folder level 
 
 ### Add or update a .order file
 
-The last step when adding files or folders to the wiki repo is to add or update the **.order** file of the updated folders to reflect the sequence of pages you want to show in the TOC. For details, see [Change the page sequence, add, or update a .order file](#page-sequence).
-
-> [!TIP]
-> Files that you upload or add won't show up in the wiki TOC until you add or update the **.order** file to include them.
+The last step when you're adding files or folders to the wiki repo is to add or update the **.order** file of the updated folders. This action reflects the sequence of pages you want to show in the TOC. For details, see [Change the page sequence, add, or update a .order file](#page-sequence). Any files that aren't listed in the .order file get added to the end of the alphabetical list, as their order is set to int.MaxValue.
 
 <a id="page-sequence" />
 
@@ -311,7 +308,7 @@ Misc content
 
 ## Promote folder to page
 
-For a folder to be a page as well, there should be a markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
+For a folder to be a page as well, there should be a Markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
 
 Displayed in the following example, Test has both a folder and an md file, which creates a hierarchy within the Wiki tree.
 

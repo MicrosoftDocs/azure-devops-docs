@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configure Maven client
 description: How to set up Maven client
 ms.technology: devops-artifacts
@@ -14,6 +14,6 @@ monikerRange: '>= tfs-2018'
 
 # Set up the Maven client
 
-**Azure DevOps Services** | **TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 [!INCLUDE [](../includes/maven/pom-and-settings.md)]

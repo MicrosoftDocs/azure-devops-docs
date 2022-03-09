@@ -1,7 +1,7 @@
 ---
 title: Requirements tracking, Stories overview rollup report 
 titleSuffix: Azure DevOps
-description: Use sample Power BI and OData queries to generate a one level roll-up report of aggregated metrics for work progress and status of tests and bugs.
+description: Learn how to use sample Power BI and OData queries to generate a one level roll-up report of aggregated metrics for work progress and status of tests and bugs.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 06/22/2020
+ms.date: 10/12/2021
 ---
 
 # Requirements tracking rollup sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This report builds on the [Requirements tracking report](sample-stories-overview.md) report and does a one level roll-up to provide aggregated metrics. For example, if you are tracking requirements with User Stories, you can have a one-level roll up (up to Features) with the queries provided in this section.
 
@@ -24,6 +24,9 @@ An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Stories Overview Rollup Report](media/odatapowerbi-storiesoverview-rollup.png)
+
+> [!NOTE] 
+> Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
 
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]
 

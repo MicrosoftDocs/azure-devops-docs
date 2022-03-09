@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Software development roles supported by Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 If you're a sole developer or work in a small setting, you track issues, plan features, code, test, build, and deploy.  
 

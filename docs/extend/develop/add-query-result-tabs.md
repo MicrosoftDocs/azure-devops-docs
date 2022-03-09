@@ -12,14 +12,14 @@ ms.date: 05/15/2018
 
 # Add tabs on query result pages
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.
 
 ![Tab location on the Azure DevOps Query Results.](media/query-results-pivot-tab.png)
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Create your web page
 
@@ -107,7 +107,7 @@ VSS.register(VSS.getContribution(), {
 });
 ```
 
-Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
+Learn about all of the places where you can add a hub in [Extensibility points](../reference/targets/overview.md).
 
 ## Next steps
 
@@ -115,4 +115,4 @@ Learn about all of the places where you can add a hub in the [contributions refe
 > [Package, Publish, and Install](../publish/overview.md)
 or
 > [!div class="nextstepaction"]
-> [Test and Debug](https://docs.microsoft.com/previous-versions/azure/devops/extend/test/debug-in-browser)
+> [Test and Debug](/previous-versions/azure/devops/extend/test/debug-in-browser)

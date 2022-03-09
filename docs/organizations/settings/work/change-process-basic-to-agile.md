@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.custom: seodec18
 description: Change the process for your project from Basic to Agile
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid:
 ms.author: kaelli
 author: KathrynEE
@@ -15,9 +15,9 @@ ms.date: 07/17/2020
 
 # Change a project process from Basic to Agile
 
-[!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
 
-You can change a project based on the Basic process to use to use an inherited Agile process.  This article provides the steps needed to make this change. 
+You can change a project based on the Basic process to use an inherited Agile process.  This article provides the steps needed to make this change. 
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
 

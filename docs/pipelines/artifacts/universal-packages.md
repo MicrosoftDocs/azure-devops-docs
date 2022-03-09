@@ -11,12 +11,12 @@ monikerRange: 'azure-devops'
 
 # Publish and download Universal Packages in Azure Pipelines
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Using Universal Packages you can pack any number of files of any type and share it with your team. Using the Universal Package task, you can pack, publish, and download packages of various sizes up to 4 TB. Each package will be uniquely identified with a name and a version number. Packages can be published and consumed to and from Artifacts feeds by using the Azure CLI or Azure Pipelines.
 
 > [!NOTE]
-> Universal Packages are only available for Azure DevOps Services.
+> Universal Packages are only available in Azure DevOps Services.
 
 ## Prepare a Universal Package
 
@@ -183,7 +183,7 @@ To download a Universal Package, add the **Universal Package** task to your pipe
 ---
 
 > [!NOTE]
-> You can use wildcards in the string you pass to the download command to download the latest version of a Universal Package. See [Universal Packages quickstart](../../artifacts/quickstarts/universal-packages.md#downloading-the-latest-version) for more details.
+> You can use wildcards in the string you pass to the download command to download the latest version of a Universal Package. See [Universal Packages quickstart](../../artifacts/quickstarts/universal-packages.md#download-the-latest-version) for more details.
 
 ## Next Steps
 

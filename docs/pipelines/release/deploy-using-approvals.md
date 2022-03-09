@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Use gates and approvals to control your deployment
 
-[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

@@ -1,19 +1,19 @@
 ---
 title: Link GitHub commits and PRs to work items
 titleSuffix: Azure Boards 
-description: Add links to GitHub commits and pull requests to or from Azure Boards work items 
+description: Learn how to add links to your GitHub commits and pull requests. These links can link to or from Azure Boards work items.
 ms.technology: devops-agile
 ms.assetid:    
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/06/2021
+ms.date: 10/20/2021
 ---
 
-# Link GitHub commits, pull requests, and issues to work items
+# Link GitHub commits, pull requests, and issues to work items in Azure Boards
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 Once you've connected your Azure Boards project with a GitHub repository, you can link work items to your GitHub commits and pull requests. You can add links using the **#mention** syntax familiar to GitHub users or by adding a GitHub Commit or GitHub Pull Request link type from the Azure Boards work item.
 
@@ -26,7 +26,7 @@ Once you've connected your Azure Boards project with a GitHub repository, you ca
 * You must be a  Contributor to the GitHub repository.  
 * If your organization uses the Hosted XML process model to customize the work tracking experience, you'll need to update the work item types to link to and view the GitHub link types from the Development section in the work item form. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
 
-## Use AB# mention to link from GitHub to Azure Boards work items 
+## Use `AB#` mention to link from GitHub to Azure Boards work items 
 
 ::: moniker range="azure-devops"
 
@@ -47,7 +47,7 @@ AB#{ID}
 
 For example, `AB#125` will link to work item ID 125. 
 
-In addition, you can enter a commit or pull request message to transition the work item. The system will recognize `fix, fixes, fixed` and apply it to the #-mention item that follows. Some examples are provided as shown. 
+You can also enter a commit or pull request message to transition the work item. The system will recognize `fix, fixes, fixed` and apply it to the #-mention item that follows. Some examples are provided as shown. 
 
 Examples: 
 
@@ -98,7 +98,7 @@ Examples:
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub pull request link dialog](media/link/link-from-azb-gh-pull-requests.png)  
 
-	Azure Boards performs a check to ensure that you've entered a valid link. The linked-to GitHub repository [must be integrated with the project](connect-to-github.md) or the validation will fail.
+	Azure Boards completes a check to ensure that you've entered a valid link. The linked-to GitHub repository [must be integrated with the project](connect-to-github.md) or the validation will fail.
 
 	Here, we add a link to a GitHub issue. 
 

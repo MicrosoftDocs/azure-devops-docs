@@ -6,13 +6,13 @@ ms.topic: reference
 ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
 ms.author: vijayma
 author: vijayma
-ms.date: 12/23/2019
+ms.date: 12/01/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Visual Studio Build task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -20,13 +20,26 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Use this task to build with MSBuild and set the Visual Studio version property.
+Use this task to build with MSBuild and set the Visual Studio version property. Learn more about installing [Visual Studio images on Azure](/visualstudio/install/using-visual-studio-vm). 
+
+> [!NOTE]
+> This task is only supported on agents running Windows. 
 
 ## Demands
 
-msbuild, visualstudio
+- msbuild
+- visualstudio
 
-> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
+```YAML
+pool:
+  name: Azure Pipelines
+  demands:
+  - msbuild
+  - visualstudio
+```
+
+> [!Note]
+> If your team wants to use Visual Studio with the Microsoft-hosted agents, select **windows-latest** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md) for more details.
 
 ::: moniker range="> tfs-2018"
 
@@ -71,7 +84,7 @@ msbuild, visualstudio
          <p>To avoid problems overall, you must make sure this value matches the version of Visual Studio used to create your solution.</p>
          <p>The value you select here adds the <code>/p:VisualStudioVersion={numeric_visual_studio_version}</code> argument to the MSBuild command run by the build. For example, if you select <strong>Visual Studio 2015</strong>, <code>/p:VisualStudioVersion=14.0</code> is added to the MSBuild command.</p>
          <blockquote>
-            <p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select <strong>Hosted VS2017</strong> as your default build pool. See <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
+            <p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio with the Microsoft-hosted agents, select <strong>windows-latest</strong> as your default build pool. See <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
          </blockquote>
          <br/>Default value: latest
       </td>
@@ -106,7 +119,7 @@ msbuild, visualstudio
       </td>
    </tr>
    <tr>
-      <th style="text-align: center" colspan="2">Advanced</th>
+      <th colspan="2">Advanced</th>
    </tr>
    <tr>
       <td><code>maximumCpuCount</code><br/>Build in Parallel</td>
@@ -146,7 +159,17 @@ msbuild, visualstudio
       </td>
    </tr>
    <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+      <td><code>customVersion</code><br/>Custom Version</td>
+      <td>
+         <p>(Optional) Allows setting custom version of Visual Studio. Examples: <code>15.0</code>, <code>16.0</code>, <code>17.0</code>. </p>
+         <p>Tip: Make sure that the required version of Visual Studio is installed in the system. </p>
+         <blockquote>
+            <p><strong>Azure Pipelines:</strong> If your team wants to use Visual Studio 2022 with the Microsoft-hosted agents, select <strong>windows-2022</strong> as your default build pool. For more info see <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
+         </blockquote>
+      </td>
+   </tr>
+   <tr>
+      <th colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
    </tr>
 </table>
 

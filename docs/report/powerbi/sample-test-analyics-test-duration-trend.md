@@ -1,7 +1,7 @@
 ---
 title: Pipeline test duration trend sample Power BI reports 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a test duration trend Power BI report for a given pipeline in the project  
+description: Learn how to generate a test duration trend Power BI report for a given pipeline in the project.
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
@@ -11,12 +11,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 01/30/2020
+ms.date: 10/13/2021
 ---
 
 # Test duration trend sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows the day wise trend of the average time taken to execute a test for a selected time range.
 
@@ -40,9 +40,8 @@ An example is shown in the following image.
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build' "
@@ -87,70 +86,144 @@ $apply=filter(
 
 ### Substitution strings
 
-Each query contains the following strings that you must substitute with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
+Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
  
-- {organization} - Your organization name
-- {project} - Your team project name
-- {pipelinename} - Your pipeline name. Example: **Fabrikam hourly build pipeline**.
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2019-09-04Z** represents September 4, 2019. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{organization}` - Your organization name
+- `{project}` - Your team project name
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelineName}'</code></td>
-<td>Return test runs for the specified pipeline</td>
-<tr>
-<tr><td><code>And Date/Date ge {startdate}</code></td>
-<td>Return test runs on or after the specified date</td>
-<tr>
-<tr><td><code>and Workflow eq 'Build'</code></td>
-<td>Return test runs for 'Build' workflow</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(TestSK, Test/TestName, Date/Date),</code></td>
-<td>Group by the test Name and date of execution of test</td>
-<tr>
-<tr><td><code>aggregate(</code></td>
-<td>Start aggregate. For all the test runs matching the above filter criteria:</td>
-<tr>
-<tr><td><code>ResultCount with sum as TotalCount,</code></td>
-<td>Count the total number of test runs as TotalCount</td>
-<tr>
-<tr><td><code>ResultDurationSeconds with sum as TotalDuration</code></td>
-<td>Sum the total duration of all the runs as TotalDuration</td>
-<tr>
-<tr><td><code>))</code></td>
-<td>Close aggregate() and groupby()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>TotalDuration div TotalCount as AvgDuration</code></td>
-<td>For all the tests, we already have total number of runs and total duration. Calculate average duration by diving total duration by total number of runs</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close compute()</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelineName}'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for the specified pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `And Date/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Workflow eq 'Build'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for 'Build' workflow
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(TestSK, Test/TestName, Date/Date),`
+   :::column-end:::
+   :::column span="1":::
+   Group by the test Name and date of execution of test
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start aggregate. For all the test runs matching the above filter criteria:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultCount with sum as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of test runs as TotalCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultDurationSeconds with sum as TotalDuration`
+   :::column-end:::
+   :::column span="1":::
+   Sum the total duration of all the runs as TotalDuration.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `))`
+   :::column-end:::
+   :::column span="1":::
+   Close aggregate() and groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start compute()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `TotalDuration div TotalCount as AvgDuration`
+   :::column-end:::
+   :::column span="1":::
+   For all the tests, we already have total number of runs and total duration. Calculate average duration by diving total duration by total number of runs.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close compute()
+   :::column-end:::
+:::row-end:::
 
+
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 ## Power BI transforms
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example such entities are Test and Date.
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such entities are Test and Date.
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **Test** and **Date**.
 
@@ -174,7 +247,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. Therefore, you can change the column type as shown.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. You can change the column type as shown.
 
 1. Change the type of column **TotalCount** to **Whole Number**.
 
@@ -221,7 +294,7 @@ For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**.
 1. Add the field "Date.Date" to **Axis**.
-    - Right click "Date.Date" and select "Date.Date", rather than Date Hierarchy.
+    - Right-click "Date.Date" and select "Date.Date", rather than Date Hierarchy.
 1. Add the field "AvgDuration" to **Values**.
 1. Add Power Visualization **Slicer**.
 1. Add the field "Test.TestName" to **Field** of Slicer.

@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Azure Web App for Container task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy Web Apps, Azure Functions, and WebJobs to Azure App Services
 using a [custom Docker image](/azure/app-service/containers/tutorial-custom-docker-image).

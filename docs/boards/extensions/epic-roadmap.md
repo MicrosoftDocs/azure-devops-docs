@@ -1,5 +1,5 @@
 ---
-title: Calendar view with drill down of epics and features 
+title: Use the Epic Roadmap to provide a calendar view 
 titleSuffix: Azure DevOps
 description: Learn how to view progress by using the Epic Roadmap to provide a calendar view of a single epic and its child features.
 ms.custom: extensions
@@ -10,14 +10,14 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 06/25/2020
+ms.date: 10/01/2021
 ---
 
 # View progress using the Epic Roadmap 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
-Similar to the Feature Timeline, the Epic Roadmap supports portfolio management by providing a calendar view of a single epic and it's child features. Within each epic roadmap view, you can drill down to see details at the feature and requirements level.  
+Similar to the Feature Timeline, the Epic Roadmap supports portfolio management. It provides a calendar view of a single epic and its child features. Within each epic roadmap view, you can drill down to see details at the feature and requirements level.  
 
 > [!div class="mx-imgBorder"]  
 > ![Epic Roadmap initial view](media/epic-roadmap/intro.png)
@@ -38,36 +38,36 @@ Use the Epic Roadmap to focus on a single epic and to support the following task
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
 
-## Minimum Viable Product (MVP)
+## Minimum Viable Product (MVP) overview
 
-Agile methodologies favor defining a Minimum Viable Product (MVP) over Critical Path Management (CPM). An MVP defines a product with just enough features to satisfy early adopters. You then define and complete additional features after receiving feedback from the early adopters users. By gleaning insights from an MVP, you're more likely to decrease development costs and risks.  
+Agile methodologies favor defining a Minimum Viable Product (MVP) over Critical Path Management (CPM). An MVP defines a product with enough features to satisfy early adopters. You then define and complete other features after receiving feedback from the early adopters users. By gleaning insights from an MVP, you're more likely to reduce development costs and risks.  
 
-By using MVP, you identify the shortest path and dependencies by performing these tasks: 
+By using MVP, you identify the shortest path and dependencies by completing these tasks: 
 
 - Define requirements, features, and epics that support MVPs 
-- Prioritize your requirements, features, and epics to work on the most important work to deliver your MVPs
+- Organize your requirements, features, and epics to work on the most important work to deliver your MVPs
 - Group features under epics, and requirements under features. 
 
 
 
 [!INCLUDE [note-requirements](../includes/note-requirements-terms.md)]
 
-For additional context, see [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+For more context, see [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
 
 [!INCLUDE [section-portfolio-backlog-requirements](../includes/section-portfolio-backlog-requirements.md)]
 
 
 ## Prerequisites
 
-- Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
-- To view the Epic Roadmap, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
-- To modify work items, you must have permissions to edit work items under the area path they are assigned to.  
+- Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization or collection for which you want to track progress at the epic and feature level. To install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
+- To view the Epic Roadmap, you must be a member of the project and have view permissions to work items under the area path they're assigned to.
+- To modify work items, you must have permissions to edit work items under the area path they're assigned to.  
 
 
 
 ## Define your epics, features, and stories 
 
-The Epic Roadmap displays individual epics, and the features and requirements mapped to them. Features are grouped under the Area Path their assigned to, which generally corresponds to a feature team. Only those features that are children of an epic appear in the Epic Roadmap view. 
+The Epic Roadmap displays individual epics, and the features and requirements mapped to them. Features are grouped under the Area Path they're assigned to. The Area Path generally corresponds to a feature team. Only those features that are children of an epic appear in the Epic Roadmap view. 
 
 To use the Epic Roadmap, make the following definitions:
 
@@ -96,7 +96,7 @@ To learn more, review the following articles:
 
 You can access the Epic Roadmap from either your team's Kanban board or backlog. 
 
-1. Open the Board or Backlog for your team, see [View portfolio progress with the Feature Timeline, Open Boards or Backlogs](feature-timeline.md#open-boards). 
+1. Open the Board or Backlog for your team, see [View portfolio progress with the Feature Timeline, Open Boards, or Backlogs](feature-timeline.md#open-boards). 
 
 
 1. Choose **Epic Roadmap** and then choose the Epic you want to view. 
@@ -104,7 +104,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Epic Roadmap from Azure Boards](media/epic-roadmap/open-epic-roadmap.png)
 
-	If you don't see the **Epic Road** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request that it be installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
+	If you don't see the **Epic Road** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request to have it installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
 
 2. Choose the Epic you want to view from the drop-down menu. 
 
@@ -120,7 +120,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 	- **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort. 
 
 
-## Drill-down to view details 
+## Drill down to view details 
 
 1. To view the requirements linked to a feature, choose the  info :::image type="icon" source="../media/icons/info.png" border="false":::  icon for that feature. 
 
@@ -132,7 +132,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Feature Timeline controls](media/feature-timeline/drill-down-2.png)
 
-	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
+	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop-down path. 
 
 1. To view the dependency linked to a feature, choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: link icon for that feature. 
 

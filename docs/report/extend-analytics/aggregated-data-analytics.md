@@ -1,20 +1,20 @@
 ---
 title: Aggregate work tracking data 
 titleSuffix: Azure DevOps
-description: How to guide to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps
+description: Learn how to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps.
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/30/2020
 ---
 
-# Aggregate work tracking data using Analytics   
+# Aggregate work tracking data using Analytics
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You can get a sum of your work tracking data in one of two ways using Analytics with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
+You can get a sum of your work tracking data in one of two ways using Analytics with OData. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query that exercises the OData Aggregation Extension.   
 
 In this article you'll learn: 
 
@@ -34,7 +34,7 @@ Analytics relies on OData to author queries over your work tracking data. Aggreg
 
 ## Basic root URL
 
-Use the following basic root URL as a prefix for all the examples provided in this article.
+Use this basic root URL as a prefix for all the examples provided in this article.
 
 ::: moniker range="azure-devops"
 
@@ -63,7 +63,7 @@ Use the following basic root URL as a prefix for all the examples provided in th
 
 First, let's look at how to do counts without the aggregation extensions.
 
-Basic counting is done by adding the `$count` query option to the end of the URL. For example, to find out how many work items are defined in your organization, you add the following to your query:
+Basic counting is done by adding the `$count` query option to the end of the URL. For example, to find out how many work items are defined in your organization, you add this string to your query:
 
 `/WorkItems/$count`
 
@@ -75,7 +75,7 @@ Where the full OData query is:
 > ``` 
 > [!INCLUDE [temp](../includes/api-versioning.md)]
 
-For comparison, using the OData aggregation extension, you add the following to your query:
+For comparison, using the OData aggregation extension, you add this string to your query:
 
 `/WorkItems?$apply=aggregate($count as Count)`
 
@@ -92,7 +92,7 @@ For simple counts, the non-aggregation approach has a simpler syntax.
 > [!NOTE] 
 > Using `$count` returns a single number; using the OData aggregation extension returns a formatted JSON.  
   
-You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify the following in your query:
+You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify the  following string in your query:
 
 `/WorkItems/$count?$filter=State eq 'In Progress'`
 
@@ -104,7 +104,7 @@ Where the full OData query is:
 >   $filter=State eq 'In Progress'
 > ```
 
-For comparison, using data aggregations you add the following snippet to your query:
+For comparison, using data aggregations you add this snippet to your query:
 
 `/WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)`
 
@@ -179,10 +179,10 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
 
 ## Group results using the groupby clause
 
-The OData aggregation extension also supports a `groupby` clause which is identical to the SQL `GROUP BY` clause. You can use this clause to quickly break down numbers
+The OData aggregation extension also supports a `groupby` clause that is identical to the SQL `GROUP BY` clause. You can use this clause to quickly break down numbers
 in more detail.  
 
-For example, the following clause will return a  count of work items:
+For example, this clause will return a  count of work items:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -198,7 +198,7 @@ Add the `groupby` clause to return a count of work items by type:
 >   $apply=groupby((WorkItemType), aggregate($count as Count))
 > ```
 
-This returns a result similar to the following:
+It returns a result similar to this example:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -214,7 +214,7 @@ This returns a result similar to the following:
 > }
 > ```
 
-You can also group by multiple properties as in the following:
+You can also group by multiple properties as in this example:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -222,7 +222,7 @@ You can also group by multiple properties as in the following:
 >   $apply=groupby((WorkItemType, State), aggregate($count as Count))
 > ```
 
-This returns a result similar to the following:
+It returns a result similar to this example:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -274,9 +274,9 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
 
 ## Filter aggregated results
 
-You can also filter aggregated results, however they are applied slightly differently than when you are not using aggregation. Analytics evaluates filters along a pipe so it's always best to do the most discrete filtering first. 
+You can also filter aggregated results, however they're applied slightly differently than when you aren't using aggregation. Analytics evaluates filters along a pipe so it's always best to do the most discrete filtering first. 
 
-Filters look like the following:
+Filters look like this example:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -294,11 +294,11 @@ Filters look like the following:
 
 ## Generate multiple aggregations within a single call
 
-When you want to provide multiple pieces of information, such as the sum of completed work and separately the sum of remaining work, you can accomplish this with separate calls or with a single call as follows:  
+You might want to provide multiple pieces of information. An example is the sum of completed work and separately the sum of remaining work. In such a case, you can make separate calls or a single call as follows:  
 
 `/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)`
 
-This will return a result that looks like the following:
+It will return a result that looks like this example:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -316,7 +316,7 @@ This will return a result that looks like the following:
 
 ## Generate calculated properties for use within a single call
 
-When you need to use a mathematical expression to calculate properties for use in a result set, such as the sum of completed work which is divided by the sum of completed work plus the sum of remaining work to calculate the percentage of work completed, you can accomplish this as follows:
+You might need to use a mathematical expression to calculate properties for use in a result set. An example is the sum of completed work that is divided by the sum of completed work plus the sum of remaining work to calculate the percentage of work completed. In such a case, you can use this example:
 
 `/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)/compute(SumOfCompletedWork div (SumOfCompletedWork add SumOfRemainingWork) as DonePercentage)`
 
@@ -342,7 +342,7 @@ Let's say you want to create a [cumulative flow diagram](../dashboards/cumulativ
 > https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardName eq 'Stories' and Team/TeamName eq '{teamName}')/groupby((DateValue, ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
 > ```
 
-This returns a result similar to the following, which you can then use directly within your data visualization of choice.
+It returns a result similar to this example. You can then use it directly within your data visualization of choice.
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
@@ -373,7 +373,7 @@ Let's take a look at what this query actually does:
 
 When refreshing Power BI or Excel, the fewer rows required, the faster the refresh occurs.
 
-## Try this next
+## Next steps
 > [!div class="nextstepaction"]
 > [Query trend data](querying-for-trend-data.md)
 

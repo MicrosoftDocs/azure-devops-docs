@@ -4,14 +4,14 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 09/04/2020
+ms.date: 11/05/2021
 ---
 
 ## Deploy to an Azure Government cloud or to Azure Stack
 
 Create a suitable service connection:
 
-* [Azure Government Cloud deployment](../../../library/government-cloud.md)
+* [Azure Government Cloud deployment](/azure/azure-government/connect-with-azure-pipelines)
 * [Azure Stack deployment](../../../library/connect-to-azure.md#connect-stack)
 
 ## Deployment mechanisms

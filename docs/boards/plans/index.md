@@ -1,20 +1,20 @@
 ---
-title: Learn how to manage portfolios and gain visibility across teams  
+title: Use Agile tools to use portfolios, dashboards, and delivery plans in Azure Boards   
 titleSuffix: Azure Boards
-description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards and Azure DevOps.
 ms.custom: seodec18
 ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
-ms.date: 10/14/2018
+monikerRange: '<= azure-devops'
+ms.date: 10/20/2021
 ---
 
-# Plans (Agile at scale) 
+# Plan for Agile at scale 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your organization grows, you want your tools to scale to support your growing business needs. Azure Boards tools scale primarily by supporting the addition of teams. Each team provides configurable tools that allow teams to focus on their set of work. 
 
@@ -46,9 +46,10 @@ To learn more, see [Review delivery plans](review-team-plans.md).
 
 
 ::: moniker range=">= tfs-2015" 
+
 ## Team dashboards
 
-Each team can construct a number of dashboards to track and monitor their progress. In addition, portfolio managers can create dashboards to monitor progress across several teams. 
+Each team can construct several dashboards to track and monitor their progress. Also, portfolio managers can create dashboards to monitor progress across several teams. 
 
 To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json). 
 

@@ -1,11 +1,10 @@
 ---
-title: Manage notifications for a team, group, global organization
-titleSuffix: Azure DevOps
-description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps.  
+title: Manage notifications for a team, project, organization or collection
+titleSuffix: Azure DevOps 
+description: Learn how to configure team, project, and organization/collection notifications for when changes occur to source code, git, work items, and builds in Azure DevOps.  
 ms.technology: devops-collab
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
-ms.custom: contperf-fy21q2
-ms.reviewer: wismythe
+ms.custom: contperf-fy21q2, cross-project
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -13,24 +12,29 @@ ms.date: 10/09/2020
 monikerRange: '<= azure-devops'
 ---
 
-# Manage notifications for a team, group, or organization
+# Manage notifications for a team, project, or organization
 
-[!INCLUDE [version-all](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Your team or group can receive email notifications as changes occur to the following items in Azure DevOps:
+Your team, project, or organization can receive email notifications as changes occur to the following items in Azure DevOps:
 - work items 
 - code reviews
 - pull requests
 - source control files
 - builds
 
-For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team.
+For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team. For more information, see [Notification types](about-notifications.md#notification-types).
 
 [!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
 
 ## Prerequisites
 
-You must be a Team-, Project-, or Project Collection Administrator to create group and team notifications. If you're not an administrator, [get added as one](../organizations/settings/add-team-administrator.md). For more information, see [Notification types](about-notifications.md#notification-types).
+- To manage notifications, you must be an administrator at the level you want to manage them:
+	- Team administrator to modify subscription for a team
+	- A member of the **Project Administrators** group to create or modify subscriptions for a project.  
+	- A member of the **Project Collection Administrators** group to create or modify subscriptions for an organization orcollection.  
+
+	If you're not an administrator, get added as one. See [Add a team administrator](../organizations/settings/add-team-administrator.md), [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md), or [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
@@ -177,7 +181,7 @@ A subscription lets you control what your team is notified of and how the team r
    |**Team preference**   | use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).        |
    |**Custom email address**    |  Send an email to a specified email address.       |
    |**Members of Azure DevOps**   |  Send an individual email to each member of the team.       |
-   |**SOAP**    | Send to an eamil address.      |
+   |**SOAP**    | Send to an email address.      |
 
    See the following roles and their descriptions:
 
@@ -203,6 +207,9 @@ A subscription lets you control what your team is notified of and how the team r
 <a name="manage" />
 
 ::: moniker range=">= tfs-2017"
+
+> [!TIP]
+> If you don't want to receive a notification for an event that you initiated, you can turn on the option, *Skip initiator*. For more information, see [Exclude yourself from notification emails for events that you initiate](exclude-self-from-email.md).
 
 ## Manage global delivery settings
 
@@ -300,7 +307,7 @@ You can set filters for as many as 20 different alert types, specify the email a
 
 ## Set alerts for a project
 
-To set alerts for a project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
+To set alerts for a project, you must be a member of the **Project Collection Administrators** or **Azure DevOps Serer Administrators** groups. To get added, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
 
 As an administrator, you can view, create, edit, and delete alerts for team members and teams. 
 

@@ -5,24 +5,24 @@ ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 01/19/2021
+ms.date: 03/03/2022
 monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Build an image
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Get started with container images by using Azure Pipelines to build an image. All you need to build an image is a Dockerfile in your repository. 
 
 You can build both Linux and Windows containers depending on what agent you use in your pipeline.
-Once you build an image, you can then push it to Azure Container Registry, Docker Hub, and Google Container registry. See [push an image](push-image.md) to learn more about pushing images to container registries. 
+Once you build an image, you'll push the image to Azure Container Registry, Docker Hub, and Google Container registry. See [push an image](push-image.md) to learn more about pushing images to container registries. 
 
 
 ## Prerequisites
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - A GitHub account. If you don't have one, sign up for [free](https://github.com/join). 
-- A GitHub repository with a Dockerfile. If you do not have a repository to use, fork this repository that contains a sample application and a Dockerfile:
+- A GitHub repository with a Dockerfile. If you don't have a repository to use, fork this repository that contains a sample application and a Dockerfile:
     ```
     https://github.com/MicrosoftDocs/pipelines-javascript-docker
     ```
@@ -36,14 +36,14 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
    > You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
    > You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 
-4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you are building a Linux app, use `ubuntu-1604` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
+4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you're building a Linux app, use `ubuntu-1604` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
  
    ```yaml
            trigger:
            - main
            
            pool:
-             vmImage: 'ubuntu-1604' # set to windows-latest or another Windows vmImage for Windows builds
+             vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
            
            variables:
              imageName: 'pipelines-javascript-docker'
@@ -60,7 +60,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
     Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
     
     > [!NOTE]
-    > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
+    > Currently the Microsoft hosted macOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
         
 5. Select **Save and run**. You'll see a prompt to add a commit message when adding `azure-pipelines.yml`  to your repository. Edit the message and then select **Save and run** again to see the pipeline in action.
 
@@ -126,11 +126,11 @@ The Docker task itself internally calls the Docker binary on a script, and also 
 
 In the current design of Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine (based on the image generated from [azure-pipelines-image-generation](https://github.com/microsoft/azure-pipelines-image-generation) repository templates). These virtual machines are cleaned up after the job reaches completion, not persisted and thus not reusable for subsequent jobs. The ephemeral nature of virtual machines prevents the reuse of cached Docker layers.
 
-However, you can cache Docker layers with self-hosted agents because the ephemeral lifespan problem is not applicable for these agents.
+However, you can cache Docker layers with self-hosted agents because the ephemeral lifespan problem isn't applicable for these agents. You could also create multiple images in a multi-stage build as an alternate solution. 
 
 ### How to build Linux container images for architectures other than x64?
 
-When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86 or ARM), you can use a machine emulator like [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image by using QEMU:
+When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86 or ARM processor), you can use a machine emulator like [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM processor container image by using QEMU:
 
 1. Author your Dockerfile with a base image that matches the target architecture:
  

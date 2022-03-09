@@ -1,18 +1,18 @@
 ---
-ms.technology: devops-ecosystem
-ms.topic: conceptual
+ms.topic: how-to
 title: Authorization using OAuth 2.0 | Azure DevOps Services REST APIs
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
+ms.technology: devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/14/2021
+ms.date: 10/22/2021
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
 
-[!INCLUDE [version-azure-devops](../../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
 > The following guidance is intended for Azure DevOps Services users since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
@@ -61,7 +61,7 @@ If your user hasn't yet authorized your app to access their organization, call t
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
         ?client_id={app ID}
-        &response_type=Assertion
+        &response_type={Assertion}
         &state={state}
         &scope={scope}
         &redirect_uri={callback URL}
@@ -69,9 +69,9 @@ https://app.vssps.visualstudio.com/oauth2/authorize
 
 Parameter     | Type   | Notes
 --------------|--------|----------------------------
-client_id     | GUID   | The ID assigned to your app when it was registered
+client_id     | GUID   | The ID assigned to your app when it was registered.
 response_type | string | `Assertion`
-state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
+state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization. request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
 redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL registered with the app**.
 
@@ -267,25 +267,31 @@ A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure 
 
 A: Check that you set the content type to application/x-www-form-urlencoded in your request header.
 
+### Q: I get an HTTP 401 error when I use an OAuth-based access token, but a PAT with the same scope works fine. Why?
+
+A: Verify that **Third-party application access via OAuth** hasn't been disabled by your organization's admin at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
+
+In this scenario, the entire flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
+
 ### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
 
 A: No. OAuth is only supported in the REST APIs at this point.
 
 ### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
 
-A: First, get the work item details with [Work items - Get work item](https://docs.microsoft.com/rest/api/azure/devops/wit/work-items?view=azure-devops-rest-6.1&preserve-view=true) REST API:
+A: First, get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work-items?preserve-view=true&view=azure-devops-rest-6.1) REST API:
 
 ```REST
 GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
 ```
 
-To get the attachments details you need to add the following parameter to the URL:
+To get the attachments details, you need to add the following parameter to the URL:
 
 ```REST
 $expand=all
 ```
 
-With the results you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
+With the results, you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
 
 ```REST API
 $url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=5.0

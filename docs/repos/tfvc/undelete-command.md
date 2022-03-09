@@ -5,23 +5,27 @@ description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Undelete Command
+# Undelete command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 The **undelete** command restores items that were previously deleted.
 
 > [!NOTE]
-> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
-**Required Permissions**
+## Prerequisites
 
-To use the **undelete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than none, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **undelete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than none, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf undelete [/noget] [/lock:(none|checkin|checkout)] 
@@ -30,29 +34,64 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
 
 ## Parameters
 
+### Argument
+
 | **Argument** |                                                                                                                 **Description**                                                                                                                 |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  *itemspec*  | Identifies the file or folder to undelete. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)). |
+|  *itemspec*  | Identifies the file or folder to undelete. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). |
 | *deletionID* |                                                                           Specifies a unique identifier that disambiguates multiple deleted items with the same name.                                                                           |
 |  *username*  |                                                            Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                            |
 
-<table><thead>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/noget</strong></p></td>
-	<td><p>Restores the deleted item to your workspace and then, pending completion of a check-in operation, restores the item on the server but does not immediately retrieve a physical copy of the item to disk.</p></td></tr>
-<tr>
-	<td><p><strong>/lock</strong></p></td>
-	<td><p>Prevents other users from checking in or checking out the specified files. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.</p></li></ul></td></tr>
-<tr>
-	<td><p><strong>/recursive</strong></p></td>
-	<td><p>Restores all files and subfolders from the specified directory.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td></tr></tbody>
-</table>
+### Option
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noget**
+   :::column-end:::
+   :::column span="3":::
+   Restores the deleted item to your workspace and then, pending completion of a check-in operation, restores the item on the server but does not immediately retrieve a physical copy of the item to disk.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/lock**
+   :::column-end:::
+   :::column span="3":::
+   Prevents other users from checking in or checking out the specified files. For more information, see [Understanding Lock Types](understand-lock-types.md).
+
+   **Lock Options:**  
+   - **None**: Default. No lock is applied.
+   - **Checkin**: Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+   - **Checkout**: Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="3":::
+   Restores all files and subfolders from the specified directory.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the user name and password to authenticate the user with Azure DevOps.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
+
 The Undelete command of the tf command-line feature schedules specified files or folders for restoration pending the completion of a check-in operation. It also retrieves the specified items from the server to the local disk unless you explicitly include the **/noget** option.
 
 When files or folders that have the same name have been deleted from the same server folder, you must include a value for the *deletionID* parameter to indicate which of the deleted items that you want to restore. You can obtain a *deletionID* using the **dir** command.
@@ -61,8 +100,10 @@ If you want to change the file after restoring it, you may check out the file fo
 
 When your *itemspec* specifies a folder, Team Foundation restores all its files and subfolders and the files they contain, by default. If you do not want to restore all the items in a folder, you must first undelete the folder and its items and then delete the items that you do not want to keep.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
 ## Examples
+
 The following example restores 314.cs to the server folder from which 314.cs was deleted and retrieves a read-only copy of the latest version in the current workspace.
 
 ```
@@ -88,24 +129,11 @@ The following example restores the X11 version of 314.cs to the server folder fr
 c:\projects>tf undelete 314.cs;X11
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md)
-
-[Delete Command](delete-command-team-foundation-version-control.md)
-
-[Dir Command](dir-command.md)
-
-#### Concepts
-
-[Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100))
-
-[Understanding Lock Types](understand-lock-types.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md)
+- [Delete Command](delete-command-team-foundation-version-control.md)
+- [Dir Command](dir-command.md)
+- [Check in your work to the team's codebase](check-your-work-team-codebase.md)
+- [Understanding Lock Types](understand-lock-types.md)

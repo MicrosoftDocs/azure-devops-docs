@@ -15,7 +15,7 @@ ms.date: 05/18/2021
 
 # Configure and customize Azure Boards  
 
-[!INCLUDE [temp](includes/version-vsts-only.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 This article provides guidance to configure and customize Azure Boards. You should read this article if you are tasked with administrating a project for several teams and supporting the following business objectives: 
 
@@ -103,14 +103,14 @@ One of the main choices teams have is choosing the work item types they use to t
    :::column span="2":::
      **Supports Scrum methods**  
      Recommended for teams that follow Scrum methods and want to track time associated with work.  
-     - Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md)</li>
+     - Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md)
      - Forecast sprints using team velocity: [Forecast](sprints/forecast.md)  
      - Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)  
      - Plan and track capacity: [Sprint capacity tool](sprints/set-capacity.md)
      - Track estimated and remaining work: [Taskboard](sprints/adjust-work.md)
      - Monitor sprint burndown based on remaining work such as hours or days: [Sprint burndown](../report/dashboards/configure-sprint-burndown.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)
      - Conduct daily scrums, update and monitor task status: [Sprint Taskboard](sprints/task-board.md)  
-     - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)
+     - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates-to-backlog-items)
      - View progress bars, counts, or sums of rollup on tasks: [Rollup](backlogs/display-rollup.md)  
      - Track dependencies across teams and projects: [Dependency Tracker](extensions/dependency-tracker.md)  
 
@@ -126,7 +126,7 @@ One of the main choices teams have is choosing the work item types they use to t
       Recommended for teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work.  
       - Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md)  
       - Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)  
-      - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)  
+      - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates-to-backlog-items)  
       - Forecast sprints using team velocity: [Forecast](sprints/forecast.md)  
       - Monitor sprint burndown based on requirement estimates: [Sprint burndown](../report/dashboards/configure-sprint-burndown.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)  
       - Update requirement status: [Kanban board](boards/kanban-quickstart.md)  
@@ -156,150 +156,178 @@ One of the main choices teams have is choosing the work item types they use to t
 ## Configure and customization options 
 
 The following table indicates the areas you can configure and customize and the tools impacted by those customizations. Each area is customized either at the Organization, Project, or Team level as noted, or a combination of two. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](../report/dashboards/overview.md#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md). 
-
-
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="23%">Configure or customize</th>
-<th width="28%">Standard tools</th>
-<th width="24%">Analytics</th>
-<th width="25%">Portfolio planning tools</th>
-</tr>
-<tr>
-<td><a href="#area-path">Area paths, project configuration, and team subscriptions</a> (Project, Team)</td>
-<td>
-<ul>
-<li>Boards>All tools</li>
-<li>Backlogs>All tools</li>
-<li>Sprints>All tools</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Cumulative flow diagram</li>
-<li>Velocity</li>
-<li>Burndown trend </li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Delivery plans</li>
-<li>Feature timeline</li>
-<li>Epic Roadmap</li>
-<li>Portfolio plans (Beta)</li>
-<li>Dependency Tracker</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><a href="#iteration-path">Iteration paths, project configuration, and team subscription</a> (Project, Team)</td>
-<td>
-<ul>
-<li>Backlogs>Sprint planning</li>
-<li>Sprints>Sprint backlogs</li>
-<li>Sprints>Sprint capacity</li>
-<li>Sprints>Taskboard</li>
-</td>
-<td>
-<ul>
-<li>Velocity</li>
-<li>Burndown trend </li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Delivery plans</li>
-<li>Feature timeline</li>
-<li>Epic Roadmap</li>
-<li>Portfolio plans (Beta)</li>
-<li>Dependency Tracker</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><a href="/azure/devops/organizations/settings/show-bugs-on-backlog">Show bugs on backlogs &amp; boards (Team)</a><br/>
-Custom work item types, Product backlog (Process)<br/>
-Custom work item types, Taskboard (Process)
-</td>
-<td>
-<ul>
-<li>Boards>Product board</li>
-<li>Backlogs>Product backlog</li>
-<li>Backlogs> Mapping tool</li>
-<li>Sprints>Sprint backlogs</li>
-<li>Sprints>Taskboard</li>
-</td>
-<td>
-<ul>
-<li>Velocity</li>
-</ul>
-</td>
-<td>   
-</td>
-</tr>
-<tr>
-<td>
-Custom work item types, Portfolio backlog (Process)<br/>
-Additional portfolio backlogs (Process)
-</td>
-<td>
-<ul>
-<li>Boards>Portfolio boards</li>
-<li>Backlogs>Portfolio backlogs</li>
-<li>Backlogs> Mapping tool</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Velocity</li>
-</ul>
-</td>
-<td>   
-</td>
-</tr>
-<tr>
-<td>
-Custom workflow (Process)
-</td>
-<td>
-<ul>
-<li>Boards>Product board</li>
-<li>Boards>Portfolio boards</li>
-<li>Sprints>Taskboard</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Cumulative flow diagram</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Dependency Tracker</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-Custom field (Process)
-</td>
-<td>
-<ul>
-<li>Boards>Product board</li>
-<li>Boards>Portfolio boards</li>
-</ul>
-</td>
-<td>
-<ul>
-<li><a href="#rollup">Rollup progress bars, sum, or count</a></li>
-</ul>
-</td>
-<td>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Configure or customize**
+   :::column-end:::
+   :::column span="1":::
+   **Standard tools**
+   :::column-end:::
+   :::column span="1":::
+   **Analytics**
+   :::column-end:::
+   :::column span="1":::
+   **Portfolio planning tools**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Area paths, project configuration, and team subscriptions](#area-path) (Project, Team)
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Boards>All tools
+   - Backlogs>All tools
+   - Sprints>All tools
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Cumulative flow diagram
+   - Velocity
+   - Burndown trend 
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Delivery plans
+   - Feature timeline
+   - Epic Roadmap
+   - Portfolio plans (Beta)
+   - Dependency Tracker
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Iteration paths, project configuration, and team subscription](#iteration-path) (Project, Team)
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Backlogs>Sprint planning
+   - Sprints>Sprint backlogs
+   - Sprints>Sprint capacity
+   - Sprints>Taskboard
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Velocity
+   - Burndown trend 
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Delivery plans
+   - Feature timeline
+   - Epic Roadmap
+   - Portfolio plans (Beta)
+   - Dependency Tracker
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Show bugs on backlogs &amp; boards (Team)](../organizations/settings/show-bugs-on-backlog.md)  
+   Custom work item types, Product backlog (Process)  
+   Custom work item types, Taskboard (Process)
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Boards>Product board
+   - Backlogs>Product backlog
+   - Backlogs> Mapping tool
+   - Sprints>Sprint backlogs
+   - Sprints>Taskboard
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Velocity
+   
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Custom work item types, Portfolio backlog (Process)  
+   Additional portfolio backlogs (Process)
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Boards>Portfolio boards
+   - Backlogs>Portfolio backlogs
+   - Backlogs> Mapping tool
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Velocity
+   
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Custom workflow (Process)
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Boards>Product board
+   - Boards>Portfolio boards
+   - Sprints>Taskboard
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Cumulative flow diagram
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Dependency Tracker
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Custom field (Process)
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - Boards>Product board
+   - Boards>Portfolio boards
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - [Rollup progress bars, sum, or count](#rollup)
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   :::column-end:::
+:::row-end:::
 
 <a id="area-path" />
 
@@ -495,7 +523,7 @@ Because process-level, project-level and team-level settings can have a wide imp
 
 ### Process-level changes 
 
-To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 For additional information, see the following articles:  
 
@@ -505,7 +533,7 @@ For additional information, see the following articles:
 
 ### Project-level changes 
 
-To add Area Paths or Iteration Paths, you must be a member of the [Project Administrators or Project Collection Administrators groups](../organizations/security/set-project-collection-level-permissions.md). 
+To add Area Paths or Iteration Paths, you must be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
 
 Or, to add, edit, and manage Area Paths or Iteration Paths under a specific node, you must have been granted one or more of the following permissions set to **Allow**:
 
@@ -520,7 +548,7 @@ For additional information, see the following articles:
 
 ### Team-level changes
 
-All team tools can be configured by a [team administrator](../organizations/settings/add-team-administrator.md) or a member of the [Project Administrators or Project Collection Administrators groups](../organizations/security/set-project-collection-level-permissions.md).  
+All team tools can be configured by a [team administrator](../organizations/settings/add-team-administrator.md) or a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md). 
  
 Team administrators are tasked with performing the following operations:  
 - Add team members 

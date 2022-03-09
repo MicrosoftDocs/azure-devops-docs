@@ -14,7 +14,7 @@ ms.date: 08/16/2021
 
 # Delete a project
 
-[!INCLUDE [version-all](../../includes/version-all.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 If you have a project that's no longer valid, you can delete it from your organization or collection in Azure DevOps. Or, if you are migrating from an on-premises Azure DevOps Server to Azure DevOps Services, you'll need to delete project(s). Deleting projects also helps to simplify navigating to only those projects that are in use. 
 
@@ -25,19 +25,19 @@ If you have a project that's no longer valid, you can delete it from your organi
 
 ::: moniker range="azure-devops" 
 
-- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the project-level **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
-- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2017"  
 
-- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**.  For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Using the administration console, you can delete a project from a project collec
 
 ::: moniker range=">= azure-devops-2020"
 
-You can delete a team project with the [az devops project delete](/cli/azure/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can delete a team project with the [az devops project delete](/cli/azure/devops/project#az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az devops project delete --id
@@ -139,7 +139,7 @@ az devops project delete --id
 
 #### Parameters 
 
-- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/devops/project#ext-azure-devops-az-devops-project-list) command.
+- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/devops/project#az-devops-project-list) command.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **yes**: Don't prompt for confirmation.
 

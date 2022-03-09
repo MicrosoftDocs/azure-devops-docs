@@ -7,24 +7,24 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/08/2021
+ms.date: 10/07/2021
 monikerRange: 'azure-devops'
 ---
 
 # Add a group rule to assign access levels
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. Learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
-When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
+When users leave the group, the licenses get freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
 > [!NOTE]
-> We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Automated reevaluation occurs every six hours and any time the group rule changes.
+> We recommend that you re-evaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Automated reevaluation occurs every 24 hours and any time the group rule changes.
 
 ## Prerequisites
 
-To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
+- To manage licenses and group rules, you must be a member of the **Project Collection Administrators** group. If you're not a member, get added as one. See [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ## Add group rule
 
@@ -48,9 +48,9 @@ To manage licenses and group rules, you must be a Project Collection Administrat
 
    ![Complete add a group rule dialog](media/assign-access-levels/add-group-rule-dialog-new.png)
 
-A notification displays, showing the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
+   A notification displays, showing the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
 
-![Group rule completed](media/assign-access-levels/group-rule-completed-successfully.png)
+   ![Group rule completed](media/assign-access-levels/group-rule-completed-successfully.png)
 
 > [!IMPORTANT]
 > Group rules only apply to users without direct assignments and to users added to the group going forward. [Remove direct assignments](#remove-direct-assignments) so the group rules apply to those users.
@@ -71,11 +71,12 @@ When you assign the same access level to a user, the user consumes only one acce
 
 > [!NOTE]
 > You can assign Group rules to support both access levels and project memberships. Users are granted the highest access level when assigned to more than one rule or Azure AD group which specify different levels of access.  For example, if John is assigned to two Azure AD groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
+
 ## Verify group rule
 
-- Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
+Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
 
-   :::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Verify user summary for group rule":::
+:::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Verify user summary for group rule":::
 
 ## Remove direct assignments
 

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Jenkins Download Artifacts task
 
-[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to download artifacts produced by a Jenkins job.
 
@@ -43,19 +43,15 @@ Use this task to download artifacts produced by a Jenkins job.
 <tr><td>Download Commits and WorkItems</td><td>(Optional) Enables downloading the commits and workitem details associated with the Jenkins Job</td></tr>
 <tr><td>Download commits and workitems from</td><td>(Optional) Optional start build number for downloading commits and work items. If provided, all commits and work items between start build number and build number given as input to download artifacts will be downloaded.</td></tr>
 <tr><td>Commit and WorkItem FileName</td><td>(Optional) Optional file name suffix for commits and workitem attachment. Attachment will be created with commits_{suffix}.json and workitem_{suffix}.json. If this input is not provided attachments will be create with the name commits.json and workitems.json</td></tr>
-<tr><td>Artifacts are propagated to Azure</td><td>(Optional) Check this if Jenkins artifacts were propagated to Azure. To upload Jenkins artifacts to azure, refer to this <a href="https://wiki.jenkins.io/display/JENKINS/Windows+Azure+Storage+Plugin" data-raw-source="[Jenkins plugin](https://wiki.jenkins.io/display/JENKINS/Windows+Azure+Storage+Plugin)">Jenkins plugin</a></td></tr>
+<tr><td>Artifacts are propagated to Azure</td><td>(Optional) Check this if Jenkins artifacts were propagated to Azure. To upload Jenkins artifacts to azure, refer to this <a href="https://plugins.jenkins.io/windows-azure-storage/" data-raw-source="[Jenkins plugin](https://plugins.jenkins.io/windows-azure-storage/)">Jenkins plugin</a></td></tr>
 <tr><td>Artifact Provider</td><td>(Required) Choose the external storage provider used in Jenkins job to upload the artifacts.</td></tr>
 <tr><td>Azure Subscription</td><td>(Required) Choose the Azure Resource Manager subscription for the artifacts.</td></tr>
 <tr><td>Storage Account Name</td><td>(Required) Azure Classic and Resource Manager storage accounts are listed. Select the Storage account name in which the artifacts are propagated.</td></tr>
 <tr><td>Container Name</td><td>(Required) Name of the container in the storage account to which artifacts are uploaded.</td></tr>
 <tr><td>Common Virtual Path</td><td>(Optional) Path to the artifacts inside the Azure storage container.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

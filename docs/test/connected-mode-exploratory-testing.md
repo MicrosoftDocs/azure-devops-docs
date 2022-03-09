@@ -6,16 +6,16 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
 
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
-to Azure DevOps or TFS 2015 and later.
+to an Azure DevOps project.
 This automatically configures the extension based on your access level: 
 
 * Users with **Basic** access can use the extension to perform exploratory
@@ -29,10 +29,11 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](provide-stakeholder-feedback.md#email).
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
 <a name="connectvtfs"></a>
-## Connect to Azure DevOps or TFS
+
+## Connect to Azure DevOps 
 
 1. If you want to use Azure DevOps, and you haven't already done so, 
    [sign up for a subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
@@ -44,9 +45,9 @@ This automatically configures the extension based on your access level:
 
    ![Start the extension in Connected mode](media/shared/connectedmode-01.png)
  
-1. Enter the Azure DevOps or TFS URL you want to connect to and choose **Next**.
+1. Enter the Azure DevOps URL you want to connect to and choose **Next**.
 
-   ![Enter the Azure DevOps or TFS URL you want to connect to](media/shared/connectedmode-02.png)
+   ![Enter the Azure DevOps URL you want to connect to](media/shared/connectedmode-02.png)
 
    If you are connecting for the first time, you may be prompted to sign in. 
  
@@ -83,7 +84,7 @@ After you have connected, you are ready to begin testing your app.
    ![Take a screenshot, make notes, or record your actions as a video](media/connected-mode-exploratory-testing/create-bugs-01a.png)
 
    >Some browsers may not provide all of the capture capabilities.
-   See [Which web browsers does the extension support?](reference-qa.md#browser-support) 
+   See [Supported web browsers for the extension](perform-exploratory-tests.md#browser-support).
 
 1. When you are done exploring and capturing information, create a bug or a task. 
 
@@ -107,7 +108,7 @@ After you have connected, you are ready to begin testing your app.
 
    ![Save the bug or task](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   > You can also [add your findings to an existing similar bug](reference-qa.md#addsimilar). 
+   > You can also [add your findings to an existing similar bug](reference-qa.yml#addsimilar). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. It shows all the screenshots, videos, and notes 
@@ -117,17 +118,17 @@ After you have connected, you are ready to begin testing your app.
    ![Review your captured information](media/connected-mode-exploratory-testing/create-bugs-08.png)
 
    > You can use the extension to [explore work items](explore-workitems-exploratory-testing.md)
-   in Azure DevOps or TFS.
+   in Azure DevOps.
 
-1. To view a bug or task in Azure DevOps or TFS, choose the link in the session timeline.
+1. To view a bug or task in Azure DevOps, choose the link in the session timeline.
 
    ![View a bug or task](media/connected-mode-exploratory-testing/create-bugs-09.png)
 
-   This opens the work item form in Azure DevOps or TFS.
+   This opens the work item form in Azure DevOps.
 
-   ![The bug or task in TS or TFS](media/connected-mode-exploratory-testing/create-bugs-10.png)
+   ![The bug or task in TS](media/connected-mode-exploratory-testing/create-bugs-10.png)
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
  
 <a name="create-testcase"></a>
 ## Create test cases
@@ -159,20 +160,20 @@ The extension lets you create test cases as you explore your application.
 
    ![Stop the exploratory testing session](media/connected-mode-exploratory-testing/create-bugs-05.png)
 
-2. If you are using Azure DevOps, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
-   sessions in Azure DevOps or TFS.
+2. If you are using Azure DevOps, TFS 2017, or later version, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
+   sessions in Azure DevOps.
 
    ![View the exploratory testing session](media/connected-mode-exploratory-testing/create-bugs-06.png)
 
-   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
+   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of the **Test Plans** web portal.
  
    ![View exploratory testing sessions on the server](media/connected-mode-exploratory-testing/create-bugs-07.png)
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans.
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
 

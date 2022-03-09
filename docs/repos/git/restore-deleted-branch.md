@@ -11,15 +11,14 @@ monikerRange: '>= tfs-2018'
 
 # Restore a deleted Git branch from the web portal
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
->[!IMPORTANT]
-> This topic covers restoring a deleted Git branch via the web in Azure Repos and TFS 2018.
+This article addresses how to restore a deleted Git branch using the web portal in Azure Repos.
 If you need to restore a Git branch in your own repo from Visual Studio or the command line,
 [push](pushing.md) your branch from your local repo to Azure Repos to restore it.
 
->[!NOTE]
->There is no retention policy on deleted branches. A deleted Git branch can be restored at any time, regardless of when it was deleted.
+> [!NOTE]
+> There is no retention policy on deleted branches. A deleted Git branch can be restored at any time, regardless of when it was deleted.
 
 1. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
 

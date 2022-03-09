@@ -3,18 +3,18 @@ metadata:
   title: FAQs search
   description: Get answers to common questions about searching in Azure DevOps. 
   titleSuffix: Azure Boards
-  ms.custom: boards-queries
-  ms.technology: devops-agile
+  ms.custom: cross-service, cross-project
+  ms.technology: devops-collab
   ms.author: chcomley
   author: chcomley
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '>= tfs-2017'
   ms.date: 04/14/2021
 
 title: Search FAQs 
 
 summary: | 
-  **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**  
+  [!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
   Learn the answers to frequently asked questions (FAQs) about the search function for Azure DevOps. 
 

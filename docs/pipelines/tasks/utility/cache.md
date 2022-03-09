@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Cache task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Improve build performance by caching files, like dependencies, between pipeline runs.
 

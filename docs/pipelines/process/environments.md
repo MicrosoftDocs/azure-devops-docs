@@ -3,13 +3,13 @@ title: Create target environment
 description: Collection of deployment targets useful for traceability and recording deployment history.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 08/16/2021
+ms.date: 10/16/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
@@ -66,7 +66,6 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
           - script: echo Hello world
 ```
 
-If the specified environment doesn't already exist, an empty environment gets created using the environment name provided.
 
 <a name="target-resource-from-deployment-job"></a>
 
@@ -140,7 +139,6 @@ Control who can create, view, use, and manage the environments with user permiss
 
 > [!NOTE]
 >
-> - If you create an environment within a YAML, contributors and project administrators are granted the **Administrator** role. This is typically used in provisioning Dev/Test environments.
 > - If you create an environment through the UI, only the creator is granted the **Administrator** role. You should use the UI to create protected environments like for a production environment.
 
 ### Pipeline permissions
@@ -160,6 +158,20 @@ Use pipeline permissions to authorize all or selected pipelines for deployment t
 
 A: If you see the message "Access denied: {User} needs Create permissions to do the action", check your organization-level permissions. Go to **Organization Settings** > **Users** and check if you have the stakeholder role. The stakeholder role can't create environments. Change your access level and then check to see if you can create environments. For more information, see [User and permissions management FAQ](../../organizations/accounts/faq-user-and-permissions-management.yml).
 
+### Q: Why am I getting error "Job XXXX: Environment XXXX could not be found. The environment does not exist or has not been authorized for use"?
+
+A: These are some of the possible reasons of the failure:
+
+  * When you author a YAML pipeline and refer to an environment that does not exist in the YAML file, Azure Pipelines automatically creates the environment in some cases:  
+    * You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
+    * You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.  
+
+  * In the following flows, Azure Pipelines does not have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment  that does not exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment. 
+
+  * If you are using [runtime parameters](./runtime-parameters.md?tabs=script&view=azure-devops&preserve-view=true) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](./variables.md?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) to create the environment.
+
+  * A user with stakeholder access level cannot create the environment as stakeholders do not access to repository.
+  
 ## Related articles
 
 - [Define variables](variables.md)

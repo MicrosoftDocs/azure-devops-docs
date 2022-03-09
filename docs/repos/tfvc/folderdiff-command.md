@@ -6,98 +6,159 @@ ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.technology: devops-code-tfvc
 ms.topic: reference
 ms.date: 03/26/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
-# Folderdiff Command
+# Folderdiff command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Use the **folderdiff** command to display and compare a visual representation of the differences between files in two server folders, in a server folder and a local folder, or in two local folders.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **folderdiff** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **folderdiff** command, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:TeamProjectCollectionUrl] [/filter:filter] [/filterLocalPathsOnly] [/login:username,[password]] [/view:same,different,sourceOnly,targetOnly]
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>sourcePath</i></p></td>
-<td><p>The local or server path that is the source path in the compare operation. If this argument is not supplied and <i>targetPath</i> is the local mapped path, <i>sourcePath</i> is the server path that is mapped to it.</p></td>
-</tr>
-<tr>
-<td><p><i>targetPath</i></p></td>
-<td><p>The local or server path that is the target path in the compare operation.</p></td>
-</tr>
-<tr>
-<td><p><i>filter</i></p></td>
-<td><p>Specifies a semicolon delimited list of inclusion and exclusion filter masks for the <strong>/filter</strong> option. Default is &quot;*&quot; (include all). The Remarks section in this topic includes a detailed description of filters and masks.</p></td>
-</tr>
-<tr>
-<td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the files for which you want to display and compare the differences (for example,`http://myserver:8080/tfs/DefaultCollection`).</p></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName.</i></p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Option</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>Optional. Specifies that the two folders are fully compared recursively.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p>Optional. <strong>tf folderdiff</strong> runs without displaying user interface. The output is displayed in the Command Prompt window instead.</p></td>
-</tr>
-<tr>
-<td><p><strong>/filter</strong></p></td>
-<td><p>Optional. Specifies a list of inclusion and filter masks that are used to match the names of files and folders to be compared.</p></td>
-</tr>
-<tr>
-<td><p><strong>/filterLocalPathsOnly</strong></p></td>
-<td><p>Optional. Specifies that only the local paths will be filtered, unless the corresponding server path exists.</p></td>
-</tr>
-<tr>
-<td><p><strong>/view</strong></p></td>
-<td><p>Optional. Specifies what information is included in the output using a comma separated list of the following values:</p>
-<p><i>same</i>-output displays files with the same content in both source and target directories.</p>
-<p><i>different</i>-output displays files with different content in both source and target directories.</p>
-<p><i>sourceOnly</i>-output displays files that exist only in source directory.</p>
-<p><i>targetOnly</i>-output displays files that exist only in target directory.</p>
-<p>The default is &quot;<i>different</i>,<i>sourceOnly</i>,<i>targetOnly</i>&quot;</p></td>
-</tr>
-<tr>
-<td><p><strong>/collection</strong></p></td>
-<td><p>Specifies the project collection.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td>
-</tr>
-</tbody>
-</table>
+### Argument
+
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *sourcePath*
+   :::column-end:::
+   :::column span="3":::
+   The local or server path that is the source path in the compare operation. If this argument is not supplied and *targetPath* is the local mapped path, *sourcePath* is the server path that is mapped to it.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *targetPath*
+   :::column-end:::
+   :::column span="3":::
+   The local or server path that is the target path in the compare operation.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *filter*
+   :::column-end:::
+   :::column span="3":::
+   Specifies a semicolon delimited list of inclusion and exclusion filter masks for the **/filter** option. Default is &quot;*&quot; (include all). The Remarks section in this topic includes a detailed description of filters and masks.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="3":::
+   The URL of the project collection that contains the files for which you want to display and compare the differences (for example,`http://myserver:8080/tfs/DefaultCollection`).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="3":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName.*
+   :::column-end:::
+:::row-end:::
+
+### Option
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="3":::
+   Optional. Specifies that the two folders are fully compared recursively.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="3":::
+   Optional. **tf folderdiff** runs without displaying user interface. The output is displayed in the Command Prompt window instead.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/filter**
+   :::column-end:::
+   :::column span="3":::
+   Optional. Specifies a list of inclusion and filter masks that are used to match the names of files and folders to be compared.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/filterLocalPathsOnly**
+   :::column-end:::
+   :::column span="3":::
+   Optional. Specifies that only the local paths will be filtered, unless the corresponding server path exists.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/view**
+   :::column-end:::
+   :::column span="3":::
+   Optional. Specifies what information is included in the output using a comma separated list of the following values:
+
+   *same*-output displays files with the same content in both source and target directories.
+
+   *different*-output displays files with different content in both source and target directories.
+
+   *sourceOnly*-output displays files that exist only in source directory.
+
+   *targetOnly*-output displays files that exist only in target directory.
+
+   The default is &quot;*different*,*sourceOnly*,*targetOnly*&quot;
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="3":::
+   Specifies the user name and password to authenticate the user with Azure DevOps.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 The Command Prompt window displays the output if you specify **/noprompt**. Otherwise, the **Folder Difference** window displays the output. When the system compares the local mapped folder to the server folder to which it is mapped, the output in the **Folder Difference** window includes a list of pending changes. Also, the output in the **Folder Difference** window tells you whether the local folder contains the latest copy or not.
@@ -149,7 +210,7 @@ The following table lists filter examples.
 |\*.cs;!objd\\;!obj\\;!bin\\ | Matches all C# files except those in objd, obj, or bin folders.|
 |!\*.resx;!\*.ini;!resources\\;!\*junk\*\\ | Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 The following example compares the files in the server folder and a local folder. It organizes the files in the localFolder recursively and displays the output in the Command Prompt window.
@@ -158,22 +219,11 @@ The following example compares the files in the server folder and a local folder
 C:>tf folderdiff $/serverFolder F:\localFolder /recursive /noprompt
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
+- [Compare Two Folders](compare-folders.md)
+- [View File Changes Using Annotate](view-file-changes-using-annotate.md)
+- [Reconcile Differences Between Two Folders](reconcile-differences-between-two-folders.md)
+- [Folder Comparison Filters](folder-comparison-filters.md)
+- [Comparing Folders and Files](./compare-files.md)
 
-[Compare Two Folders](compare-folders.md)
-
-[View File Changes Using Annotate](view-file-changes-using-annotate.md)
-
-[Reconcile Differences Between Two Folders](reconcile-differences-between-two-folders.md)
-
-#### Concepts
-
-[Folder Comparison Filters](folder-comparison-filters.md)
-
-#### Other Resources
-
-[Comparing Folders and Files](./compare-files.md)
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

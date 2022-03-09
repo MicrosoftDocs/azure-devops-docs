@@ -279,11 +279,15 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>. Important note: if you only check out one Git repository, this path will be the exact path to the code. If you check out multiple repositories, it will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>.
-<br><br>
-This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 
-<p>This variable is synonymous with Build.SourcesDirectory.</p>
+Important note: If you check out only one Git repository, this path will be the exact path to the code.
+If you check out multiple repositories, the behavior is as follows (and might differ from the value of the Build.SourcesDirectory variable):
+<ul>
+<li>If the checkout step for the self (primary) repository has no custom checkout path defined, or the checkout path is the multi-checkout default path <code>$(Pipeline.Workspace)/s/&lt;RepoName&gt;</code> for the self repository, the value of this variable will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>.</li>
+<li>If the checkout step for the self (primary) repository does have a custom checkout path defined (and it's not its multi-checkout default path), this variable will contain the exact path to the self repository.</li>
+</ul>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 <td>No</td>
 </tr>
@@ -405,11 +409,9 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 
 The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. 
 
-Important note: if you only check out one Git repository, this path will be the exact path to the code. If you check out multiple repositories, it will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>.
+Important note: If you check out only one Git repository, this path will be the exact path to the code. If you check out multiple repositories, it will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>, even if the self (primary) repository is checked out to a custom path different from its multi-checkout default path <code>$(Pipeline.Workspace)/s/&lt;RepoName&gt;</code> (in this respect, the variable differs from the behavior of the Build.Repository.LocalPath variable).
 <br><br>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
-
-<p>This variable is synonymous with Build.Repository.LocalPath.</p>
 </td>
 <td>No</td>
 </tr>
@@ -483,7 +485,7 @@ Note: This variable yields a value that is invalid for build use in a build numb
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 
 <td>No</td>
@@ -495,7 +497,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -506,7 +508,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -517,7 +519,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -528,7 +530,7 @@ If you are triggering a YAML pipeline using <code>resources</code>, you should u
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
 <br /><br />
-If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using <code>resources</code>, you should use the <a href="/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>

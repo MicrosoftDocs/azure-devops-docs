@@ -1,23 +1,21 @@
 ---
-title: Backlog controls to switch views or enable options
+title: Change or filter the view for your backlogs in Azure Boards
 titleSuffix: Azure Boards 
-description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards or TFS 
+description: Learn how to switch views and enable from your product or portfolio backlogs in Azure Boards.
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 7/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/08/2021
 ---
 
 
+# Use product backlog controls in Azure Boards  
 
-
-# Product backlog controls  
-
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="backlog-controls">  </a>
 
@@ -144,7 +142,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png)  
       > [!NOTE]
-      > Your backlog levels may differ from that shown in the previous image based on the process selected or customizations made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). To learn more, see [Choose a process](../work-items/guidance/choose-process.md). 
+      > Your backlog levels may differ from the level shown in the previous image based on the process selected or customizations you made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). To learn more, see [Choose a process](../work-items/guidance/choose-process.md). 
    :::column-end:::
 :::row-end:::
 ::: moniker-end

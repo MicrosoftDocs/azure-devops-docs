@@ -7,12 +7,12 @@
   - name: Create repo - Web
     href: create-new-repo.md
   - name: Create repo - Visual Studio
-    href: share-your-code-in-git-vs-2017.md
+    href: share-your-code-in-git-vs.md
   - name: Git preferences and settings
     href: git-config.md
   - name: Clone an existing repo
     href: clone.md
-  - name: Import repo - Web
+  - name: Import repo 
     href: import-git-repository.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
@@ -125,10 +125,20 @@
     href: commit-details.md
 - name: Pull requests
   items:
-  - name: View and manage pull requests
-    href: pull-requests.md
-  - name: Squash merge pull requests 
+  - name: About pull requests
+    href: about-pull-requests.md
+  - name: Merge strategies and squash merge
     href: merging-with-squash.md
+  - name: View and open pull requests
+    href: view-pull-requests.md
+  - name: Create pull requests
+    href: pull-requests.md
+  - name: Review pull requests
+    href: review-pull-requests.md
+  - name: Complete pull requests
+    href: complete-pull-requests.md
+  - name: Pull request notifications
+    href: pull-request-notifications.md
   - name: Pull request templates
     href: pull-request-templates.md
   - name: Extend pull request workflows with pull request status
@@ -179,6 +189,8 @@
   items:
   - name: "Default Git permissions (Security)"
     href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Download permissions report
+    href: ../../organizations/security/download-permissions-report.md
   - name: Frequently asked questions
     href: howto.yml
   - name: Git limits
@@ -187,9 +199,9 @@
     href: mapping-my-tfvc-actions-to-git.md
   - name: RPC failures & http.postBuffer
     href: rpc-failures-http-postbuffer.md 
-  - name: Download permissions report
-    href: ../../organizations/security/download-permissions-report.md
     displayName: json
+  - name: SSH passphrases
+    href: gcm-ssh-passphrase.md
 - name: Resources
   items:
   - name: Pro Git

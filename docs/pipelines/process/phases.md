@@ -4,13 +4,13 @@ ms.custom: seodec18, contperf-fy20q4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 03/24/2021
+ms.date: 09/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Specify jobs in your pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -657,6 +657,8 @@ From a single job you author, you can run multiple jobs on multiple agents in pa
 
 * **Multi-configuration testing:** You can run test multiple configurations in parallel.
 
+* Multi-configuration will always generate at least one job, even if a multi-configuration variable is empty. 
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
@@ -845,7 +847,9 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+The `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build.
+
+When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories other than `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 > [!IMPORTANT]
 > The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
@@ -862,8 +866,6 @@ When you specify one of the `clean` options, they are interpreted as follows:
 - `resources`: Delete `Build.SourcesDirectory` before running a new job.
 - `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
 
-`$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
-
 ```yaml
   jobs:
   - deployment: deploy
@@ -877,7 +879,7 @@ When you specify one of the `clean` options, they are interpreted as follows:
 > [!NOTE]
 > Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
 
-In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline. To configure the **Clean** setting:
+In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step in your pipeline. To configure the **Clean** setting:
 
 1. Edit your pipeline, choose **...**, and select **Triggers**.
 

@@ -12,7 +12,7 @@ ms.date: 11/12/2019
 
 # Extension reporting hub
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Once your extension is available in the [Visual Studio Marketplace]() you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or select the **Reports** link on the extension details page.

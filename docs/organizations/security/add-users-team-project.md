@@ -14,7 +14,7 @@ ms.date: 06/18/2021
 
 # Add users or groups to a team or project
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -278,7 +278,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 ## Add users or groups to a team 
 
-Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
+Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
  
 ::: moniker range="= azure-devops"
 
@@ -546,7 +546,7 @@ As a member of the Project Administrators group, you can add members to a projec
  
 ## Add users or groups to a project
 
-As a member of the Project Administrators group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
+As a member of the **Project Administrators** group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
 
 
 ::: moniker range="azure-devops"
@@ -570,7 +570,7 @@ As a member of the Project Administrators group, you can add users or groups to 
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Change project-level permissions](change-project-level-permissions.md).
 
 	Or, you can choose any team group to add users to a specific team. 
 
@@ -629,7 +629,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Change project-level permissions](change-project-level-permissions.md).
 
 4. Next, choose the **Members** tab.
 
@@ -674,7 +674,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 3. Choose **Security** and under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose.
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Change project-level permissions](change-project-level-permissions.md).
 
 4. Next, choose the **Members** tab.
 
@@ -826,7 +826,7 @@ For on-premises deployments, you may need to set the access level for a user or 
 
 ## Add users or groups to SQL Server Reports
 
-If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](../../report/admin/grant-permissions-to-reports.md).
+If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end
 
@@ -836,8 +836,8 @@ If your on-premises deployment is integrated with SQL Server Reports, you need t
 
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites.
 
-* [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
-* [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
+* [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
+* [Grant permissions to view or create SQL Server reports in Azure DevOps Server](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports)
 
 ::: moniker-end
 
@@ -852,8 +852,8 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 * [Add users and manage access](../accounts/add-organization-users.md)   
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md)
-* [Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-search-and-selection)
-* [Limit user visibility for projects using the Project-Scoped Users group](../projects/about-projects.md#project-scoped-user-group)
+* [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection)
+* [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group)
 * [Grant or restrict access using permissions](restrict-access.md).
 ::: moniker-end
  

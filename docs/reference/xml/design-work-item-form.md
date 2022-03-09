@@ -1,22 +1,23 @@
 ---
 title: Design the work item form 
 titleSuffix: TFS
-description: Place and group fields on the form so that they can support the data entry and workflow processes that will be followed by team members - Team Foundation Server (TFS)
+description: Place and group fields on the form so that they can support the data entry and workflow processes that will be followed by team members  
 ms.technology: devops-agile
-ms.custom: process
+ms.custom: archive-candidate
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
 ms.author: kaelli
 author: KathrynEE
+ms.topic: how-to
 monikerRange: '<= tfs-2017'
 ms.date: 11/19/2018
 ---
 
 # Design the work item form
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
+[!INCLUDE [version-lt-eq-2017](../../includes/version-lt-eq-2017.md)]
 
 > [!IMPORTANT]  
-> This articles applies to project customization for the On-premises XML process model and for the old webform. For the new web form and for the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
+> This article applies to customization for the On-premises XML process model and for the old web form. For the new web form and for the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 When you design a work item form, you want to position fields on the form so that they support the data entry and workflow processes that will be followed by team members. If you are adding just a few fields to an existing form, you must determine where you want to add them on the form. If you are adding several fields to support a new collection of data to track, you may want to add a new tab just for these fields. To minimize the need to scroll a form, you can group fields into several columns in the top of the form or in a tab.  
 
@@ -106,7 +107,7 @@ Custom Form with Three Tabs in a Two Column Layout
 
 ##  Work with tabs  
 
-You use tabs to cluster a group of fields or to support one or more special controls, such as the controls that link work items, link work item history, or attach files. Several definitions of work item types for the Microsoft Solutions Framework (MSF) process templates use several tabs to control the types of links that can be created, based on the link type. For more information, see [Work Items and Workflow (Agile)](../../boards/work-items/guidance/agile-process-workflow.md?viewFallbackFrom=vsts) or [Work Items and Workflow (CMMI)](../../boards/work-items/guidance/cmmi-process-workflow.md?viewFallbackFrom=vsts).  
+You use tabs to cluster a group of fields or to support one or more special controls, such as the controls that link work items, link work item history, or attach files. Several definitions of work item types for the Microsoft Solutions Framework (MSF) process templates use several tabs to control the types of links that can be created, based on the link type. For more information, see [Work Items and Workflow (Agile)](../../boards/work-items/guidance/agile-process-workflow.md) or [Work Items and Workflow (CMMI)](../../boards/work-items/guidance/cmmi-process-workflow.md).  
 
 For more information about how to use special controls, see the following topics:  
 - [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)  

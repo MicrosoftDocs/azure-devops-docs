@@ -92,16 +92,16 @@ We've made updates to several of the Azure Pipelines hosted VM images. You can f
 
 * For VS2017 and VS2019:
     * Added Azul Java 7
-    * [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/pull/1036) to match host kernel version
+    * [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/) to match host kernel version
     * Added Az Powershell Module v2.3.2
     * Pinned Mercurial to v5.0.0
     * Updated Python to versions 2.7.16, 3.4.4, 3.5.4, 3.6.8, 3.7.4
     * Added Portable Class Library (VS 2019 only)
-    * Changed [Rust default paths and environment variables](https://github.com/microsoft/azure-pipelines-image-generation/pull/1056)
+    * Changed [Rust default paths and environment variables](https://github.com/microsoft/azure-pipelines-image-generation/)
 
 * For Ubuntu 16.04:
     * Updated helm to always pull latest (no longer pinned at v2.14.0)
-    * Added several [popular Docker containers](https://github.com/microsoft/azure-pipelines-image-generation/pull/1060)
+    * Added several [popular Docker containers](https://github.com/microsoft/azure-pipelines-image-generation/)
     * Updated Python to versions 2.7.16, 3.4.10, 3.5.7, 3.6.9, 3.7.4
     * Changed Rust default paths and environment variables
 
@@ -185,16 +185,16 @@ For more details, see the blog post with the full announcement [here](https://de
 
 ### Pipeline variable group and variable management commands
 
-It can be challenging to port YAML based pipelines from one project to another as you need to manually set up the pipeline variables and variable groups. However, with the pipeline [variable group](/cli/azure/pipelines/variable-group?view=azure-cli-latest&preserve-view=true) and [variable](/cli/azure/pipelines/variable?view=azure-cli-latest&preserve-view=true) management commands, you can now script the set up and management of pipeline variables and variable groups which can in turn be version controlled, allowing you to easily share the instructions to move and set up pipelines from one project to another.
+It can be challenging to port YAML based pipelines from one project to another as you need to manually set up the pipeline variables and variable groups. However, with the pipeline [variable group](/cli/azure/pipelines/variable-group) and [variable](/cli/azure/pipelines/variable) management commands, you can now script the set up and management of pipeline variables and variable groups which can in turn be version controlled, allowing you to easily share the instructions to move and set up pipelines from one project to another.
 
 ### Run pipeline for a PR branch
 
-When creating a PR, it can be challenging to validate if the changes might break the pipeline run on the target branch. However, with the capability to trigger a pipeline run or queue a build for a PR branch, you can now validate and visualize the changes going in by running it against the target pipeline. Refer [az pipelines run](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-run) and [az pipelines build queue](/cli/azure/pipelines/build?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-build-queue) command documentation for more information.
+When creating a PR, it can be challenging to validate if the changes might break the pipeline run on the target branch. However, with the capability to trigger a pipeline run or queue a build for a PR branch, you can now validate and visualize the changes going in by running it against the target pipeline. Refer [az pipelines run](/cli/azure/pipelines#ext-azure-devops-az-pipelines-run) and [az pipelines build queue](/cli/azure/pipelines/build#ext-azure-devops-az-pipelines-build-queue) command documentation for more information.
 
 ### Skip the first pipeline run
 
-When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-create) for more information.
+When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](/cli/azure/pipelines#ext-azure-devops-az-pipelines-create) for more information.
 
 ### Service endpoint command enhancement
 
-Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](/cli/azure/devops/service-endpoint?view=azure-cli-latest&preserve-view=true) for more information.
+Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](/cli/azure/devops/service-endpoint) for more information.

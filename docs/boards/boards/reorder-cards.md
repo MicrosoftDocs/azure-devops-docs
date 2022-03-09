@@ -1,7 +1,7 @@
 ---
 title: Set Kanban board card reordering
 titleSuffix: Azure Boards
-description: Use the Kanban board, process, and tools to plan and track work in Azure Boards and Team Foundation Server 
+description: Learn how to use the Kanban board, process, and tools reorder Kanban board cards in Azure Boards and Team Foundation Server.
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
@@ -9,12 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 02/14/2019
+ms.date: 10/15/2021
 ---
 
 
-# Reorder cards  
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+# Reorder cards on your Kanban board  
+
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 <a id="reorder-cards"></a>
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
@@ -23,14 +24,14 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 <a id="card-reorder-note"></a>
 
-The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they are reorder based on the Card reordering setting selected.  
+The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they're reordered based on the Card reordering setting selected.  
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 
 <a id="card-reorder-setting"></a>
 
-## Set card reordering team preference  
+## Set the team preference for reordering cards
 
 If you want to preserve the backlog priority when you move a card to a new column, you can change the Kanban board card reordering setting for your team. 
 

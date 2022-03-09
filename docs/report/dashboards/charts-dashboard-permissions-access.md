@@ -1,21 +1,21 @@
 ---
 title: Permissions and access for charts and dashboards
 titleSuffix: Azure DevOps  
-description: How to set permissions and access levels to view and configure charts and dashboards
+description: How to set permissions and access levels to view and configure charts and dashboards in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 07/14/2020
+monikerRange: '<= azure-devops'
+ms.date: 09/27/2021
 ---
 
 # Default permissions and access for charts and dashboards   
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Team members and members of the of the Contributors group for a project can view charts and dashboards. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
+Team members and members of the Contributors group for a project can view charts and dashboards. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
 
 Stakeholders have limited access to view charts and dashboards. To learn more, see [About access levels](../../organizations/security/access-levels.md).
 

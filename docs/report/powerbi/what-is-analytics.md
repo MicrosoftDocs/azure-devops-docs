@@ -1,19 +1,18 @@
 ---
 title: What is the Analytics service
 titleSuffix: Azure DevOps
-description: Understand how you can use Analytics data to answer quantitative questions about your projects in Azure DevOps
+description: Learn how you can use Analytics data to answer quantitative questions about your projects in Azure DevOps.
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 10/13/2021
 ---
 
 # What is the Analytics service?
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
 
@@ -46,8 +45,8 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 > - Support to develop and add your custom Analytics widgets you can add to dashboards  
 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+ 
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 ## Data available in Analytics
 
@@ -56,7 +55,7 @@ Analytics is generally available for Azure DevOps Service and Azure DevOps Serve
 Data available via the Analytics service depends on your version and platform.   For specifics, read [Data available in Analytics](./data-available-in-analytics.md) and [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
 
-[!INCLUDE [temp](../includes/analytics-preview.md)]
+
 
 ::: moniker range="azure-devops"
 
@@ -106,7 +105,7 @@ If you want to develop your own widget based on Analytics, see [Create an Analyt
 
 ## In-context reports and roll-up columns 
 
-Work tracking in-context reports are now based on Analytics data. These reports appear on the **Analytics** tab of the product and portfolio backlogs and Kanban boards. In addition, there are some pipelines and test in-context reports. To learn more, see the following articles: 
+Work tracking in-context reports are now based on Analytics data. These reports appear on the **Analytics** tab of the product and portfolio backlogs and Kanban boards. Also, there are some pipelines and test in-context reports. To learn more, see the following articles: 
 
 - [Cumulative flow](../dashboards/cumulative-flow.md)
 - [Team velocity](../dashboards/team-velocity.md)
@@ -114,7 +113,7 @@ Work tracking in-context reports are now based on Analytics data. These reports 
 - [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
 - [Test failures report](../../pipelines/test/test-analytics.md#test-failures)
 
-Also, you can add rollup columns to product and portfolio backlogs which provide progress bars, counts of work items, or sums of selected fields. For details, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md). 
+Also, you can add rollup columns to product and portfolio backlogs that provide progress bars, counts of work items, or sums of selected fields. For details, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md). 
 
 
 ::: moniker-end
@@ -122,18 +121,18 @@ Also, you can add rollup columns to product and portfolio backlogs which provide
 
 ## Custom Power BI reports
 
-[Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad hoc analysis, produce beautiful reports, and publish for enterprise consumption.
+[Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do impromptu analysis, produce beautiful reports, and publish for enterprise consumption.
 
 To get started with Power BI and Azure DevOps Analytics:
 
 1. Read the [Power BI integration overview](overview.md)
-1. Check out the [Power BI Sample Reports](sample-odata-overview.md). They will get you started quickly on the most popular reports.
+1. Check out the [Power BI Sample Reports](sample-odata-overview.md). They'll get you started quickly on the most popular reports.
  
 ## Custom reports based on OData queries
 
 Analytics is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/quick-ref.md).
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Analytics widgets](../dashboards/analytics-widgets.md) 

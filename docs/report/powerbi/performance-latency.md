@@ -1,20 +1,20 @@
 ---
 title: Performance and latency with Analytics
 titleSuffix: Azure DevOps   
-description: Understand how data is updated and time requirements associated with querying Analytics 
+description: Learn about how data is updated and time requirements associated with querying Analytics. 
 ms.technology: devops-analytics
 ms.reviewer: angurusw
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/13/2017
+ms.date: 10/05/2021
 ---
 
 
 # Performance and latency of Analytics
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
  When you use Analytics for reporting, you should understand data latency and query performance. To get started using Analytics, see what is the [Analytics](./what-is-analytics.md).
 
@@ -24,15 +24,15 @@ ms.date: 11/13/2017
 
 ## Install or enable Analytics 
 
-When you [enable or install Analytics](../dashboards/analytics-extension.md) for a project collection, you should expect the initial setup to take between 5 to 30 minutes. If after 24 hours you aren't able to access your data, contact [Microsoft Support](../../user-guide/provide-feedback.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json).
+When you [enable or install Analytics](../dashboards/analytics-extension.md) for a project collection, expect the initial setup to take between 5 and 30 minutes. After 24 hours, if you aren't able to access your data, contact [Microsoft Support](../../user-guide/provide-feedback.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json).
 
 ::: moniker-end
 
 ## Data latency
 
-When you use Analytics, you query a curated copy of the data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on Azure DevOps.
+When you use Analytics, you query a curated copy of the data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and greatly reduces the effect reporting scenarios have on Azure DevOps.
 
-Because the data is copied, Analytics is **not a real-time time store**.  Copying the data introduces a 5 to 30 second delay before the data associated with any one change shows up in Analytics. 
+Because the data is copied, Analytics is **not a real-time time store**.  Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. 
 
 ## Query performance
 

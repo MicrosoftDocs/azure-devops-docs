@@ -7,16 +7,19 @@ manager: mijacobs
 ms.date: 05/20/2021
 ms.topic: sample
 ms.devlang: azurecli 
+monikerRange: '>=azure-devops-2020'
 ms.custom: devx-track-azurecli
 ---
 
 # Use a variable group's secret and nonsecret variables in an Azure Pipeline
 
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
+
 In this sample, use the Microsoft Azure DevOps CLI (azure-devops extension) to create an Azure Pipeline that accesses a variable group containing both secret and nonsecret variables.
 
 This script demonstrates three operations:
 
-* Defining a [Azure Pipeline](../../index.yml) using [YAML](../../yaml-schema.md) files
+* Defining a [Azure Pipeline](../../index.yml) using [YAML](/azure/devops/pipelines/yaml-schema/) files
 * Creating a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in a pipeline
 * Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run's processing and output
 

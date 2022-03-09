@@ -3,6 +3,8 @@
   - name: Develop a web extension
     href: get-started/node.md
     displayName: package, publish, install, debug, dashboard, widget, build, task
+  - name: Extensibility points  
+    href: reference/targets/overview.md
   - name: Contribution model
     href: develop/contributions-overview.md
     displayName: plug, hub, action, build, task
@@ -127,3 +129,11 @@
   - name: Deploy web content to Azure
     href: publish/publish-azure.md
     displayName: publish, extension, install, subscription
+- name: Reference (archived)
+  items:
+  - name: Client reference
+    href: archived/rest-clients/toc.yml
+  - name: Extension Debugging in a Browser
+    href: /previous-versions/azure/devops/extend/test/debug-in-browser 
+  - name: REST APIs for TFS 2015, 2017, and 2018
+    href: ../integrate/api/toc.yml 

@@ -1,27 +1,26 @@
 ---
 title: Copy a dashboard
 titleSuffix: Azure DevOps  
-description: Copy a project or team dashboard 
-ms.custom: "dashboards" 
+description: Learn how to copy a project or team dashboard in Azure DevOps. 
+ms.custom: "dashboards, cross-project" 
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 05/18/2021
+ms.date: 01/20/2022
 ---
 
 # Copy a dashboard 
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)] 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. This feature minimizes the work required to build similar dashboards from scratch.  
+Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. The copy operation copies the widgets defined on one dashboard to a new dashboard, and reconfigures them based on a selected team. This feature minimizes the work required to build similar dashboards from scratch.  
  
 > [!NOTE]  
-> The **Copy Dashboard** feature is currently in preview. To access the feature, you must enable the **Copy Dashboard Experience**. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md). 
-> This feature copies the widgets to a new dashboard, but doesn't reconfigure them based on a selected team. Support for that function is planned for a later release. 
+> The **Copy Dashboard** feature is currently in preview and enabled by default. To access the feature, the **Copy Dashboard Experience** must be enabled. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md). 
 
-To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
+To create a dashboard for a team or project, see [Add, rename, and delete dashboards](dashboards.md). To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
 
 <a id="permissions">  </a>
 
@@ -35,9 +34,9 @@ To add a team or project, see [Add a team](../../organizations/settings/add-team
 
 ## Open the dashboard you want to copy
 
-All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they are a project dashboard.  
+All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they're a project dashboard.  
 
-1. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
+1. Open a web browser, connect to your project, and select **Overview>Dashboards**. The dashboard directory page opens. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Dashboards Directory.](media/dashboards/open-dashboards-vert.png)
@@ -48,41 +47,47 @@ All dashboards are associated with either a team or a project. From the **Overvi
 	- All dashboards of teams that you belong to
 	- All dashboards defined for the project in alphabetical order. 
 
-	Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
+	Select the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Filter the dashboard directory.](media/dashboards/filter-directory.png)   
 
-1.  If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+1.  If you need to switch to a different project, select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
-1. If you open a dashboard, you can choose a different dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
+1. If you open a dashboard, you can select a different dashboard from the directory list, or from the selector. To return to the dashboard directory, select the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Dashboard selector, Browse all dashboards option.](media/dashboards/browse-all-dashboards.png)  
  
 ## Copy the dashboard 
 
-1. From the dashboard page, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** and then choose **Copy Dashboard**.  
+1. From the dashboard page, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** and then select **Copy Dashboard**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](media/copy-dashboard/dashboard-copy-dashboard-selected.png)  
 
 	If you don't see the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** icon, make sure that you've enabled the **Copy Dashboard Experience** preview feature. See [Manage or enable features](../../project/navigation/preview-features.md).
 
-2. Enter a **Name** and **Description** for the new dashboard. To copy the dashboard as a team dashboard, choose **Team Dashboard** and then select the **Project** and the **Team**. To copy the dashboard as a project dashboard, choose **Project Dashboard** and then the **Project**. 
+1. Enter a **Name** and **Description** for the new dashboard. To copy the dashboard as a team dashboard, select **Team Dashboard** and then select the **Project** and the **Team**. To copy the dashboard as a project dashboard, select **Project Dashboard** and then the **Project**. 
 
-	Here we choose to copy a team dashboard to another team dashboard. 
+	Here we choose to copy the Fabrikam Fiber project - Fabrikam Team Bug Activity dashboard to the Design Agile project, Design Agile team dashboard. 
+
 	> [!div class="mx-imgBorder"]  
 	> ![New dashboard dialog, copy dashboard for a different team.](media/copy-dashboard/new-dashboard-dialog.png)  
 
-	Choose **Create**. 
+1. Select **Create**. 
 
-	The page updates to reflect the new dashboard. Only the widgets have been copied. 
+	The page updates to reflect the new dashboard. The widgets and layout appear the same as the dashboard selected for copy.  
 
-3.  Open each widget as needed to configure it to the specific project or team. 
+	In the background, a folder with the name of the new dashboard is created in Shared Queries. All the queries for the new dashboard are copied to that folder. Query names remain the same. Widgets with a team configuration are updated with the new team. Widgets with a team configuration that are copied from a team dashboard to a project dashboard retain the original configuration.
+
+	:::image type="content" source="media/copy-dashboard/shared-query-folder-created.png" alt-text="Screenshot of Shared Queries folder created with copy dashboard experience.":::
+
+1. Open each widget as needed to verify or modify the configuration.  
  
 
-## Try this next 
+
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)

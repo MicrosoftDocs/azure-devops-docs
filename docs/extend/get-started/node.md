@@ -7,12 +7,12 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/04/2021
+ms.date: 09/27/2021
 ---
 
 # Develop a web extension
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Use extensions to enhance Azure DevOps with new web experiences, dashboard widgets, build tasks, and more. You can develop extensions using standard technologies like HTML, JavaScript, and CSS. They're packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 
@@ -33,11 +33,9 @@ This tutorial guides you through creating your first web extension, which includ
 
 You must have the following permission and installations.
 
-- You're an organization Owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
-
-- Install [Node.js](https://nodejs.org).
-
-- Install the extension packaging tool (TFX) by running `npm install -g tfx-cli` from a command prompt.
+* You're an organization Owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
+* Install [Node.js](https://nodejs.org).
+* Install the extension packaging tool (TFX) by running `npm install -g tfx-cli` from a command prompt.
 
 ## Create a directory and manifest
 
@@ -156,7 +154,7 @@ You're now ready to package, publish, and test your extension.
 
 All extensions, including extensions from Microsoft, are under a publisher. Anyone can create a publisher and publish extensions under it. You can also give other people access to your publisher if a team is developing the extension.
 
-1. Sign in to the Visual Studio [Marketplace management portal](https://aka.ms/vsmarketplace-manage)
+1. Sign in to the Visual Studio [Marketplace management portal](https://aka.ms/vsmarketplace-manage).
 
 2. If you don't already have a publisher, you'll be prompted to create one.
 
@@ -214,7 +212,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
     <img src="media/upload-new-extension.png" alt="Visual Studio Marketplace new extension development" /> 
 
-3. Drag and drop your file or select it to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**. 
+3. Drag and drop your file or select it to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**.
 
    ![Upload new extension for Azure DevOps](media/upload-new-extension2.png)
 
@@ -289,6 +287,9 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 
    <img src="media/organization-settings-extensions.png" alt="Organization settings, extensions page" /> 
 
+> [!TIP]
+> Make sure to refresh your browser after you install the extension. You should see the new extension hub in the left pane under the main hub that you added the extension to. If you don't see the new extension hub, post this issue to the <a href="https://go.microsoft.com/fwlink/?LinkId=615292" data-raw-source="[Azure DevOps Services Developer Community](https://go.microsoft.com/fwlink/?LinkId=615292)">Azure DevOps Services Developer Community</a>.
+
 :::moniker-end
    
 ## Debugging your extension
@@ -300,14 +301,13 @@ To debug the extension using Visual Studio or Browser Developer Tools and speed 
     "baseUri": "https://localhost:44300",
     ...
 }
-```     
+```
 
 Changing the manifest loads the extension from your local web server instance. For example, IISExpress in Visual Studio.
 After you change the manifest, deploy and install this debugging extension only once.
 
 > [!NOTE]
 > Run your local web server in SSL mode, because Azure DevOps demands that the web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
-
 
 ## Next steps
 
@@ -316,5 +316,6 @@ After you change the manifest, deploy and install this debugging extension only 
 
 ## Related articles
 
-- [Developer Formula Design System](https://developer.microsoft.com/azure-devops/)
-
+* [Developer Formula Design System](https://developer.microsoft.com/azure-devops/)
+* [Contribution model](../develop/contributions-overview.md)
+* [Package and publish extensions](../publish/overview.md)

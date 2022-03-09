@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Run tests in parallel for any test runner
 
-[!INCLUDE [include](../includes/version-server-2019-rtm.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite

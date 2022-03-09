@@ -1,7 +1,7 @@
 ---
-title: Organize and view queries, create query folders 
+title: Manage and organize your queries in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
-description: Manage your queries by using favorites and folders in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
 ms.custom: boards-queries 
 ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2021
+ms.date: 10/24/2021
 ---
 
 
-# Manage and organize queries   
+# Manage and organize queries in Azure Boards and Azure DevOps  
 
-[!INCLUDE [temp](../includes/version-all.md)]
-[!INCLUDE [temp](../includes/version-visual-studio.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013.md](../../includes/version-vs-gt-2013.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
@@ -26,7 +26,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
  
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
-## Open Queries 
+## Open a query 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
@@ -103,7 +103,7 @@ Specify the file name and folder location to use to save the query.
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-dialog.png" alt-text="Screenshot, Visual Studio, Save Query As dialog.":::
 
 
-To save the query as a .wiq file, choose the **File** radio button and specify the file location. 
+To save the query as a `.wiq` file, choose the **File** radio button and specify the file location. 
 
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-wiq-file.png" alt-text="Screenshot, Visual Studio, Save Query As a WIQ file dialog.":::
 
@@ -126,7 +126,7 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 
 ![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
 
-For shared queries, you can also choose to perform one of these tasks: 
+For shared queries, you can also choose to do one of these tasks: 
 - **Add to team queries**: Select the team to add the query as a team favorite
 - **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
 - **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
@@ -152,7 +152,7 @@ From the **Work Items** page, open the context menu for the query you want to ru
 
 * * * 
  
-## Add a query folder, move items into a folder 
+## Add a query folder and move items into a folder 
 
 > [!TIP]   
 > You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To view or set permissions, see [Set permissions on queries and query folders](set-query-permissions.md).
@@ -185,7 +185,7 @@ You add query folders from the **Boards>Queries>All** page.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 You add query folders from the **Boards>Queries** page.
 
@@ -225,7 +225,7 @@ A **New Folder** is added under the area you selected. Select the folder to rena
 
 To add a query to a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
-Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+Share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
@@ -237,5 +237,5 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 - [Query FAQs](query-faqs.yml)  
 - [Set query permissions](set-query-permissions.md)  
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-- [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) 
 

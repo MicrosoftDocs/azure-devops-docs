@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Publish and consume Python packages from the command line
 
-**Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 With Azure Artifacts, you can publish and consume packages from Azure Artifacts feeds as well as public registries such as pypi.org. Follow this quickstart to learn how to publish and consume Python packages using the command line.
 
