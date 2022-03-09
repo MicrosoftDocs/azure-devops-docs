@@ -24,7 +24,7 @@ This article applies to TFS 2015.3 and higher.
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
+> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead. The [current version](/azure/devops/release-notes/2021/sprint-190-update#changes-to-publishbuildartifacts-and-downloadbuildartifacts-tasks) of the Pipeline Artifacts task scales better, allows parallel uploads, and is faster.
 
 ::: moniker-end
 
