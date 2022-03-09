@@ -42,7 +42,7 @@ You must be a member of the [**Project Administrators** group](../../organizatio
 Your repository has a resource check.
 ## Add pipeline permissions to a repository resource
 
-You can also set a repository to only be used on specific pipelines. Restricting a repository to specific pipelines prevents an unauthorized pipeline in your project from using your repository.
+You can also set a repository to only be used on specific pipelines ?? is this true for classic ??. Restricting a repository to specific pipelines prevents an unauthorized pipeline in your project from using your repository.
 
 > [!IMPORTANT]
 > Access to all pipelines is turned *off* for [protected resources](../security/resources.md#protected-resources) by default. To grant access to all pipelines, enter a check in the security box next to "Grant access permission to all pipelines" for the resource. You can do so when you're creating or editing a resource.
