@@ -8,7 +8,7 @@ ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/24/2022
+ms.date: 03/10/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -90,6 +90,9 @@ To change the access level for new users added to projects, do the following ste
 ## Automate access with group rules
 
 Group rules provide a great way to automate access level assignment for your organization. This way, you don't have to manually assign access each time a user gets added or removed. For more information, see [Group rules](../accounts/assign-access-levels-by-group-membership.md).
+
+> [!NOTE]
+> A group rule supersedes the default access level. For instance, if a user's part of a group that's assigned Basic access level, they get Basic, even if the default access level's set to Stakeholder. The default access level applies to users who aren't part of any group rules.
 
 ## Reduce charges for users with no access
 
