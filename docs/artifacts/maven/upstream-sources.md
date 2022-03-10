@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 With upstream sources, you can use both private packages you've created and public packages from Maven Central. When you enable upstream sources in your feed, Azure Artifacts will save a copy of any packages you install from Maven central. Azure Artifacts also support other Maven upstream sources such as Google Maven Repository, Gradle Plugins, and JitPack.
 
 > [!NOTE]
-> Maven snapshots are not supported in upstream sources.
+> Maven snapshots are not supported with Maven upstream sources.
 
 ## Enable upstream sources
 
@@ -42,6 +42,10 @@ Follow the instructions below to create a new feed and enable upstream sources:
 You can see the packages you have saved in your feed by selecting the **Maven Central** Source filter.
 
 :::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot showing how to filter upstream sources.":::
+
+> [!TIP]
+> If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
+> `mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true`
 
 ## Related articles
 
