@@ -77,6 +77,30 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 ::: moniker range=">= azure-devops-2019"
 
+## Add a collapsible section
+
+To add a collapsible section in a wiki page, use the following syntax:
+
+```html
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+```
+
+:::image type="content" source="media/wiki/add-collapsible-section-wiki.png" alt-text="Screenshot showing markdown on one side and how the collapsible section renders on the other.":::
+
+Make sure to add an empty line in the following areas:
+
+- after the closing `</summary>` tag, otherwise the markdown/code blocks don't show correctly
+- after the closing `</details>` tag if you have multiple collapsible sections
+
 ## Embed videos in a Wiki page
 
 To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
