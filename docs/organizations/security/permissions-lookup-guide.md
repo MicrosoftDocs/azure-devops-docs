@@ -411,7 +411,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [View permissions for this node (Iteration Path, Object)](set-permissions-access-work-tracking.md#set-permissions-area-path)
    - [View system synchronization information (Collection)](change-organization-collection-level-permissions.md)
    ::: moniker-end
-   ::: moniker range="< tfs-2018"
+   ::: moniker range="< azure-devops-2019"
    - [Update build information (Object)](../../pipelines/policies/permissions.md)
    - [Update build queue (Object)](../../pipelines/policies/permissions.md)
    - [Use full Web Access features (Server)](permissions.md#server-permissions)
