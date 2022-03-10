@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 03/09/2022 
+ms.date: 03/10/2022 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -93,38 +93,6 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 (The ending ":::" is required to prevent a break in the page)
-
-## YAML tags
-
-Any file that contains a YAML block in a Wiki gets processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic data types, lists, and objects as values. The syntax is supported in wiki, code file preview.
-
-Basic example:
-
-```yaml
----
-tag: post
-title: Hello world
----
-```
-
-![YAML tag, basic example](media/wiki/yaml_basic_example.png)
-
-Tags with list:
-```yaml
----
-tags:
-- post
-- code
-- web
-title: Hello world
----
-```
-
-![YAML tags with list example](media/wiki/yaml_tags_with_list.png)
-
-
-
-
 
 ## Embed Azure Boards query results in Wiki
 
