@@ -1,15 +1,18 @@
 ---
-title: Deploy to Azure Kubernetes Service
-description: Build and push images to Azure Container Registry; Deploy to Azure Kubernetes Service
+title: Deploy to Azure Kubernetes Service with Azure Pipelines
+description: Build and push images to Azure Container Registry; Deploy to Azure Kubernetes Service with Azure Pipelines
 ms.topic: tutorial
 ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 monikerRange: 'azure-devops'
+zone_pivot_groups: pipelines-version
 ---
 
 # Build and deploy to Azure Kubernetes Service
+
+::: zone pivot="pipelines-yaml"
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
@@ -19,11 +22,9 @@ In this article, you'll learn how to create a pipeline that continuously builds 
 
 ## Prerequisites
 
-* [Create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security). The service connection is required to deploy to Azure Kubernetes Service.    
-
-[!INCLUDE [include](../../includes/prerequisites.md)]
-
-[!INCLUDE [include](../../includes/azure-prerequisites.md)]
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An Azure Resource Manager service connection. [Create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security).     
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
 
 ## Get the code
 
@@ -63,7 +64,8 @@ az aks create \
 
 
 ## Create the pipeline
-### Connect and select repository
+
+### Connect and select your repository
 [!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service**. 
@@ -96,7 +98,7 @@ When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service*
 
 10. You can change the **Commit message** to something like _Add pipeline to our repository_. When you're ready, select **Save and run** to commit the new pipeline into your repo, and then begin the first run of your new pipeline!
 
-## See the pipeline run, and your app deployed
+## See your app deploy
 
 As your pipeline runs, watch as your build stage, and then your deployment stage, go from blue (running) to green (completed). You can select the stages and jobs to watch your pipeline in action.
 
@@ -122,9 +124,9 @@ If you're building our sample app, then _Hello world_ appears in your browser.
 
 <a name="how"></a>
 
-## How we build your pipeline
+## How the pipeline builds
 
-When you finished selecting options and then proceeded to validate and configure the pipeline (see above) Azure Pipelines created a pipeline for you, using the _Deploy to Azure Kubernetes Service_ template.
+When you finished selecting options and then proceeded to validate and configure the pipeline Azure Pipelines created a pipeline for you, using the _Deploy to Azure Kubernetes Service_ template.
 
 The build stage uses the [Docker task](../../tasks/build/docker.md) to build and push the image to the Azure Container Registry.
 
@@ -164,7 +166,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
     displayName: Deploy job
     pool:
       vmImage: $(vmImageName)
-    environment: 'azooinmyluggagepipelinesjavascriptdocker.aksnamespace'
+    environment: 'myenv.aksnamespace' #customize with your environment
     strategy:
       runOnce:
         deploy:
@@ -203,3 +205,195 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
 az group delete --name MC_myapp-rg_myapp_eastus
 ```
 Type `y` when prompted.
+
+::: zone-end
+
+::: zone pivot="pipelines-classic"
+
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+
+[Azure Kubernetes Service (AKS)](/azure/aks/) manages your hosted Kubernetes environment, making it quicker and easier for you to deploy and manage containerized applications. AKS makes ongoing maintenance easier by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
+
+In this article, you'll learn how to create a pipeline that continuously builds and deploys your app. Every time you change your code in a repository that contains a Dockerfile, the images are pushed to your Azure Container Registry, and the manifests are then deployed to your AKS cluster.
+
+## Prerequisites
+
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An Azure Resource Manager service connection. [Create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security).     
+* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+
+
+## Get the code
+
+
+Fork the following repository containing a sample application and a Dockerfile:
+
+```
+https://github.com/MicrosoftDocs/pipelines-javascript-docker
+```
+
+## Create the Azure resources
+
+[!INCLUDE [include](../includes/sign-in-azure-cli.md)]
+
+### Create a container registry
+
+```azurecli-interactive
+# Create a resource group
+az group create --name myapp-rg --location eastus
+
+# Create a container registry
+az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
+
+# Create a Kubernetes cluster
+az aks create \
+    --resource-group myapp-rg \
+    --name myapp \
+    --node-count 1 \
+    --enable-addons monitoring \
+    --generate-ssh-keys \
+    --kubernetes-version 1.16.10
+```
+
+
+## Configure authentication
+
+When you use Azure Container Registry (ACR) with Azure Kubernetes Service (AKS),
+you must establish an authentication mechanism. This can be achieved in two ways:
+
+1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](/azure/container-registry/container-registry-auth-aks).
+
+1. Use a [Kubernetes image pull secret](/azure/container-registry/container-registry-auth-aks).
+   An image pull secret can be created by using the [Kubernetes deployment task](../../tasks/deploy/kubernetes.md).
+
+## Create a release pipeline
+
+The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry.
+It also packaged and published a Helm chart as an artifact. In the release pipeline, we'll deploy the container image as a Helm application to the AKS cluster.
+
+1. In **Azure Pipelines** open the summary for your build.
+
+1. In the build summary, choose the **Release** icon to start a new release pipeline.
+
+   If you have previously created a release pipeline that uses these build artifacts, you will
+   be prompted to create a new release instead. In that case, go to the **Releases** page and
+   start a new release pipeline from there by choosing the **+** icon.
+
+1. Select the **Empty job** template.
+
+1. Open the **Tasks** page and select **Agent job**.
+
+1. Choose **+** to add a new task and add a **Helm tool installer** task.
+   This ensures the agent that runs the subsequent tasks has Helm and Kubectl installed on it.
+
+1. Choose **+** again and add a **Package and deploy Helm charts** task.
+   Configure the settings for this task as follows:
+
+   - **Connection Type**: Select **Azure Resource Manager** to connect to an AKS cluster by using
+     an Azure service connection. Alternatively, if you want to connect to any Kubernetes
+     cluster by using kubeconfig or a service account, you can select **Kubernetes Service Connection**.
+     In this case, you will need to create and select a Kubernetes service connection instead of
+     an Azure subscription for the following setting.
+ 
+   - **Azure subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
+     If you see an **Authorize** button next to the input, use it to authorize the connection to your Azure subscription.
+     If you do not see the required Azure subscription in the list of subscriptions, see [Create an Azure service connection](../../library/connect-to-azure.md) to manually set up the connection.
+
+   - **Resource group**: Enter or select the resource group containing your AKS cluster.  
+   
+   - **Kubernetes cluster**: Enter or select the AKS cluster you created.  
+   
+   - **Command**: Select **init** as the Helm command. This will install Tiller to your running Kubernetes cluster.
+     It will also set up any necessary local configuration.
+     Tick **Use canary image version** to install the latest pre-release version of Tiller.
+     You could also choose to upgrade Tiller if it is pre-installed by ticking **Upgrade Tiller**.
+     If these options are enabled, the task will run `helm init --canary-image --upgrade`
+   
+1. Choose **+** in the **Agent job** and add another **Package and deploy Helm charts** task.
+   Configure the settings for this task as follows:
+   
+   - **Kubernetes cluster**: Enter or select the AKS cluster you created.  
+   
+   - **Namespace**: Enter your Kubernetes cluster namespace where you want to deploy your application.
+     Kubernetes supports multiple virtual clusters backed by the same physical cluster.
+     These virtual clusters are called _namespaces_.
+     You can use namespaces to create different environments such as dev, test, and staging in the same cluster. 
+
+   - **Command**: Select **upgrade** as the Helm command.
+     You can run any Helm command using this task and pass in command options as arguments.
+     When you select the **upgrade**, the task shows some additional fields:
+
+     * **Chart Type**: Select **File Path**. Alternatively, you can specify **Chart Name** if you want to
+       specify a URL or a chart name. For example, if the chart name is `stable/mysql`, the task will execute
+       `helm upgrade stable/mysql` 
+   
+     * **Chart Path**: This can be a path to a packaged chart or a path to an unpacked chart directory.
+       In this example, you are publishing the chart using a CI build, so select the file package using file picker
+       or enter `$(System.DefaultWorkingDirectory)/**/*.tgz`
+   
+     * **Release Name**: Enter a name for your release; for example, `azuredevops`
+   
+     * **Recreate Pods**: Tick this checkbox if there is a configuration change during the release and you want to replace a running pod with the new configuration.
+
+     * **Reset Values**: Tick this checkbox if you want the values built into the chart to override all values provided by the task.
+
+     * **Force**: Tick this checkbox if, should conflicts occur, you want to upgrade and rollback to delete, recreate the resource, and reinstall the full release.
+       This is useful in scenarios where applying patches can fail (for example, for services because the cluster IP address is immutable). 
+
+     * **Arguments**: Enter the Helm command arguments and their values; for this example
+       `--set image.repository=$(imageRepoName) --set image.tag=$(Build.BuildId)` 
+       See [this section](#argument-details) for a description of why we are using these arguments. 
+   
+     * **Enable TLS**: Tick this checkbox to enable strong TLS-based connections between Helm and Tiller.
+
+     * **CA certificate**: Specify a CA certificate to be uploaded and used to issue certificates for Tiller and Helm client.
+ 
+     * **Certificate**: Specify the Tiller certificate or Helm client certificate
+
+     * **Key**: Specify the Tiller Key or Helm client key
+
+1. In the **Variables** page of the pipeline, add a variable named **imageRepoName** and set the value
+   to the name of your Helm image repository. Typically, this is in the format `name.azurecr.io/coderepository`
+
+1. Save the release pipeline.
+
+<a name="argument-details"></a>
+
+### Arguments used in the Helm upgrade task
+
+In the build pipeline, the container image is tagged with `$(Build.BuildId)` and this is pushed to an Azure Container Registry. 
+In a Helm chart, you can parameterize the container image details such as the name and tag
+because the same chart can be used to deploy to different environments.
+These values can also be specified in the **values.yaml** file or be overridden by a user-supplied values file,
+which can in turn be overridden by `--set` parameters during the Helm install or upgrade.
+   
+In this example, we pass the following arguments:   
+
+`--set image.repository=$(imageRepoName) --set image.tag=$(Build.BuildId)` 
+   
+The value of `$(imageRepoName)` was set in the **Variables** page (or the **variables** section of your YAML file).
+Alternatively, you can directly replace it with your image repository name in the `--set` arguments value or **values.yaml** file.
+For example:
+
+```
+  image:
+    repository: VALUE_TO_BE_OVERRIDDEN
+    tag: latest
+```
+
+Another alternative is to set the **Set Values** option of the task to specify the argument values as comma-separated key-value pairs.
+
+## Create a release to deploy your app
+
+You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+
+1. Choose **+ Release** and select **Create a release**.
+
+1. In the **Create a new release** panel, check that the artifact version you want to use is selected and choose **Create**.
+
+1. Choose the release link in the information bar message. For example: "Release **Release-1** has been created".
+
+1. In the pipeline view, choose the status link in the stages of the pipeline to see the logs and agent output.
+
+
+::: zone-end
