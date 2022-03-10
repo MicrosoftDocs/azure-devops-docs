@@ -3322,8 +3322,12 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 ## Work item tags
 
-   You manage tagging permissions mostly from the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions). Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
-
+::: moniker range=">= azure-devops-2020"
+You can manage tagging permissions using [az devops security permission](manage-tokens-namespaces.md) or the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tools. Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
+::: moniker-end
+::: moniker range="< azure-devops-2020"
+You can manage tagging permissions using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions). Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
+   ::: moniker-end
 
 :::row:::
    :::column span="1":::
@@ -3333,18 +3337,17 @@ The following permissions are defined for each shared Analytics view. All valid 
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    <a id="create-tag-definition-permission"></a> Create tag definition
    :::column-end:::
    :::column span="2":::
-   
    [Can create new tags and apply them to work items.](../../boards/queries/add-tags-to-work-items.md)
    Users without this permission can only select from the existing set of tags for the project.
    
-   > By default, Contributors are assinged the **Create tag definition** permission.  
-   >
-   > Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when using the TFSSecurity command, you must provide the GUID for the project as part of the command syntax. Otherwise, your change will apply to the entire collection. Keep this in mind when changing or setting these permissions.
+   > [!NOTE]
+   > By default, Contributors are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when usinga command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change will apply to the entire collection. Keep this in mind when changing or setting these permissions.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3355,9 +3358,8 @@ The following permissions are defined for each shared Analytics view. All valid 
    
    Can remove a tag from the list of available tags for that project.
    
-   > This permissions does not appear in the UI. It can only be set by using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command.
-   > 
-   > There is also no UI to explicitly delete a tag. Instead, when a tag has not been in use for 3 days, TFS automatically deletes it.
+   > [!NOTE]
+   > This permission doesn't appear in the UI. It can only be set by using a command-line tool. There is also no UI to explicitly delete a tag. Instead, when a tag has not been in use for 3 days, the system automatically deletes it.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3369,8 +3371,8 @@ The following permissions are defined for each shared Analytics view. All valid 
    Users without this permission will not have a list of available tags
    from which to choose in the work item form or in the query editor.
    
-   > This permissions does not appear in the UI. It can only be set by using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command.
-   > 
+   > [!NOTE]
+   > This permission doesn't appear in the UI. It can only be set by using a command-line tool. 
    > The **View project-level information** implicitly allows users to view existing tags.
    :::column-end:::
 :::row-end:::
@@ -3382,7 +3384,8 @@ The following permissions are defined for each shared Analytics view. All valid 
    
    Can rename a tag by using the REST API.
    
-   > This permissions does not appear in the UI. It can only be set by using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command.
+   > [!NOTE]
+   > This permission doesn't appear in the UI. It can only be set by using a command-line tool. 
    :::column-end:::
 :::row-end:::
 
