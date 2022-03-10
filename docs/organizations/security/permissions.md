@@ -3322,6 +3322,7 @@ The following permissions are defined for each shared Analytics view. All valid 
 ::: moniker-end
 
 <a id="work-item-tags">  </a>
+<a id="tags">  </a>
 
 ## Work item tags
 
