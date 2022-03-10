@@ -33,6 +33,7 @@ With Azure Artifacts, developers can enable upstream sources to store packages f
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.
 
+
 ## View saved packages
 
 To view the packages you installed from Google Maven Repository, select the appropriate source from the dropdown menu.
