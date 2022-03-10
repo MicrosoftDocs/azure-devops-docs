@@ -31,13 +31,17 @@ With Azure Artifacts, developers can enable upstream sources to store packages f
 1. Select **Save** at the top right corner to save your changes.
 
 > [!NOTE]
-> Maven snapshots are not supported in upstream sources.
+> Maven snapshots are not supported with Maven upstream sources.
 
 ## View saved packages
 
 To view the packages you installed from Google Maven Repository, select the appropriate source from the dropdown menu.
 
 :::image type="content" source="media/google-maven-source.png" alt-text="A screenshot showing how to filter for packages from Google Maven Repository.":::
+
+> [!TIP]
+> If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
+> `mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true`
 
 ## Related articles
 
