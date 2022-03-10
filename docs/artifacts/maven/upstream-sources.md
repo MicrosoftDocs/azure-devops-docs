@@ -17,17 +17,13 @@ With upstream sources, you can use both private packages you've created and publ
 > [!NOTE]
 > Maven snapshots are not supported in upstream sources.
 
-## Enable Maven Central as an upstream
+## Enable upstream sources
 
-To use Maven Central as an upstream source, either create a new feed and enable upstream sources, or edit an existing feed to add the upstream sources feature.
-
-### On a new feed
-
-Follow the instructions below to create a new feed and enable upstream sources. Make sure you check the **Include packages from common public sources** checkbox.
+Follow the instructions below to create a new feed and enable upstream sources:
 
 [!INCLUDE [](../includes/create-feed.md)]
 
-### On an existing feed
+### Add Maven Central upstream
 
 1. Select the ![gear icon](../../media/icons/gear-icon.png)  in the top right of the page to access your feed's settings.
 
@@ -41,7 +37,7 @@ Follow the instructions below to create a new feed and enable upstream sources. 
 
 1. Select **Add** when you are done.
 
-## Filter to saved packages
+## View saved packages
 
 You can see the packages you have saved in your feed by selecting the **Maven Central** Source filter.
 
