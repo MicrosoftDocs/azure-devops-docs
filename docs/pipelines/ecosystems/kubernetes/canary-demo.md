@@ -1,6 +1,6 @@
 ---
 title: Canary deployment strategy for Kubernetes deployments
-description: Demo of performing canary deployments on Kubernetes clusters using Azure Pipelines
+description: Demo of performing canary deployments on Kubernetes clusters by using Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.author: atulmal
@@ -11,15 +11,19 @@ monikerRange: 'azure-devops'
 ---
 
 # Canary deployment strategy for Kubernetes deployments
+
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Canary deployment strategy involves deploying new versions of an application next to stable production versions to see how the canary version compares against the baseline before promoting or rejecting the deployment. This step-by-step guide covers usage of [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy support for setting up canary deployments for Kubernetes and the associated workflow in terms of instrumenting code and using the same for comparing baseline and canary before taking a manual judgment on promotion/rejection of the canary.
+A *canary* deployment strategy means to deploy new versions of an application next to stable, production versions. You can then see how the canary version compares to the baseline, before promoting or rejecting the deployment.
+
+This step-by-step guide covers how to use the [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy. Specifically, you learn about setting up canary deployments for Kubernetes, and the associated workflow, in terms of instrumenting code. You then use that code to compare baseline and canary app deployments, so you can decide whether to promote or reject the canary deployment.
 
 ## Prerequisites
+
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-* An [Azure Container Registry (ACR)](/azure/container-registry/container-registry-intro), Google Container Registry, Docker Hub registry with push privileges. [Create an Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
-* A Kubernetes cluster (Azure Kubernetes Service (AKS), Google Kubernetes Engine, Amazon Elastic Kubernetes Service). [Deploy an Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster).
+* An [Azure Container Registry](/azure/container-registry/container-registry-intro), a Google Container Registry, and a Docker Hub registry with push privileges. [Create an Azure Container Registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
+* A Kubernetes cluster (such as Azure Kubernetes Service, Google Kubernetes Engine, Amazon Elastic Kubernetes Service). [Deploy an Azure Kubernetes Service (AKS) cluster](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 ## Sample code
 
@@ -28,39 +32,39 @@ Fork the following repository on GitHub.
 https://github.com/MicrosoftDocs/azure-pipelines-canary-k8s
 ```
 
-Here's a brief overview of the files in the repository that are used during this guide - 
-- `./app`:
-    - `app.py` - Simple Flask based web server instrumented using [Prometheus instrumentation library for Python applications](https://github.com/prometheus/client_python). A custom counter is set up for the number of 'good' and 'bad' responses given out based on the value of `success_rate` variable.
-    - Dockerfile - Used for building the image with each change made to app.py. With each change made to app.py, build pipeline (CI) is triggered and the image gets built and pushed to the container registry.
-- `./manifests`:
-    - `deployment.yml` - Contains specification of the `sampleapp` Deployment workload corresponding to the image published earlier. This manifest file is used not just for the stable version of Deployment object, but for deriving the -baseline and -canary variants of the workloads as well.
-    - `service.yml` - Creates `sampleapp` service for routing requests to the pods spun up by the Deployments (stable, baseline, and canary) mentioned above.
-- `./misc`
-    - `service-monitor.yml` - Used for setup of a [ServiceMonitor](https://github.com/coreos/prometheus-operator#customresourcedefinitions) object to set up Prometheus metric scraping.
-    - `fortio-deploy.yml` - Used for setup of fortio deployment that is later used as a load-testing tool to send a stream of requests to the `sampleapp` service deployed earlier. With `sampleapp` service's selector being applicable for all the three pods resulting from the Deployment objects that get created during this how-to guide - `sampleapp`, `sampleapp-baseline` and `sampleapp-canary`, the stream of requests sent to `sampleapp` get routed to pods under all these three deployments.
+Here's a brief overview of the files in the repository that are used during this guide: 
+
+- *./app*:
+    - *app.py* - A simple, Flask-based web server that is instrumented by using the  [Prometheus instrumentation library for Python applications](https://github.com/prometheus/client_python). A custom counter is set up for the number of good and bad responses given out, based on the value of the `success_rate` variable.
+    - *Dockerfile* - Used for building the image with each change made to *app.py*. With each change, the build pipeline is triggered and the image gets built and pushed to the container registry.
+- *./manifests*:
+    - *deployment.yml* - Contains the specification of the `sampleapp` deployment workload corresponding to the image published earlier. You use this manifest file not just for the stable version of deployment object, but also for deriving the baseline and canary variants of the workloads.
+    - *service.yml* - Creates the `sampleapp` service. This service routes requests to the pods spun up by the deployments (stable, baseline, and canary) mentioned previously.
+- *./misc*
+    - *service-monitor.yml* - Used to set up a [ServiceMonitor](https://github.com/coreos/prometheus-operator#customresourcedefinitions) object. This object sets up Prometheus metric scraping.
+    - *fortio-deploy.yml* - Used to set up a fortio deployment. This deployment is later used as a load-testing tool, to send a stream of requests to the `sampleapp` service deployed earlier. The stream of requests sent to `sampleapp` get routed to pods under all three deployments (stable, baseline, and canary).
 
 > [!NOTE]
-> While [Prometheus](https://prometheus.io/) is used for code instrumentation and monitoring in this how-to guide, any equivalent solution like [Azure Application Insights](/azure/azure-monitor/learn/nodejs-quick-start) can be used as an alternative as well.
+> In this guide, you use [Prometheus](https://prometheus.io/) for code instrumentation and monitoring. Any equivalent solution, like [Azure Application Insights](/azure/azure-monitor/learn/nodejs-quick-start), can be used as an alternative.
 
 ## Install prometheus-operator
 
-Use the following command from your development machine (with kubectl and Helm installed and context set to the cluster you want to deploy against) to install Prometheus on your cluster. [Grafana](https://grafana.com), which is used later in this how-to guide for visualizing the baseline and canary metrics on dashboards, is installed as part of this Helm chart.
+To install Prometheus on your cluster, use the following command from your development machine. You must have kubectl and Helm installed, and you must set the context to the cluster you want to deploy against. [Grafana](https://grafana.com), which you use later to visualize the baseline and canary metrics on dashboards, is installed as part of this Helm chart.
 ```
 helm install --name sampleapp stable/prometheus-operator
 ```
 
-
 ## Create service connections
 
 1. Go to **Project settings** > **Pipelines** > **Service connections**.
-2. Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
-3. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
+1. Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
+1. Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
 
-## Setup continuous integration
+## Set up continuous integration
 
-1. Go to **Pipelines** > **Create Pipeline** and select your repository.
-1. Upon reaching **Configure** tab, choose **Starter pipeline**
-1. In **Review** tab, replace the pipeline YAML with this code.
+1. Go to **Pipelines** > **Create Pipeline**, and select your repository.
+1. On the **Configure** tab, choose **Starter pipeline**.
+1. In the **Review** tab, replace the pipeline YAML with this code.
 
     ```YAML
     trigger:
@@ -83,14 +87,20 @@ helm install --name sampleapp stable/prometheus-operator
         tags: |
           $(Build.BuildId)
     ```
-    If the Docker registry service connection created by you was associated with `foobar.azurecr.io`, then the image is to `foobar.azurecr.io/azure-pipelines-canary-k8s:$(Build.BuildId)` based on the above configuration.
+    If the Docker registry service connection that you created is associated with `example.azurecr.io`, then the image is to `example.azurecr.io/azure-pipelines-canary-k8s:$(Build.BuildId)`, based on the preceding configuration.
 
 ## Edit manifest file
-In manifests/deployment.yml, replace `<foobar>` with your container registry's URL. For example after replacement, the image field should look something like `contosodemo.azurecr.io/azure-pipelines-canary-k8s`.
 
-## Setup continuous deployment
+In *manifests/deployment.yml*, replace `<example>` with your container registry's URL. For example, after replacement, the image field should look something like `contosodemo.azurecr.io/azure-pipelines-canary-k8s`.
+
+## Set up continuous deployment
+
+The following sections provide steps for setting up continuous deployment, including how to deploy the canary stage, and how to promote or reject the canary through manual intervention.
 
 ### Deploy canary stage
+
+You can deploy by using YAML, or by using the classic deployment model.
+
 #### [YAML](#tab/yaml/)
 
 1. Navigate to **Pipelines** > **Environments** > **Create environment**
