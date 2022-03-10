@@ -195,8 +195,6 @@ Values in parenthesis indicate what level the permission is managed:
    - [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Destroy builds (Object)](../../pipelines/policies/permissions.md)
    ::: moniker-end
-   :::column-end:::
-   :::column span="1":::
    
    ### E
    ::: moniker range=">= azure-devops-2019"
@@ -269,6 +267,10 @@ Values in parenthesis indicate what level the permission is managed:
    - [Library (Object, Role)](../../pipelines/policies/set-permissions.md)
    - [Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    ::: moniker-end
+
+   :::column-end:::
+   :::column span="1":::
+
    ### M-N
    ::: moniker range="azure-devops"
    - [Make requests on behalf of others (Collection)](permissions.md#make-requests-on-behalf-of-others)
@@ -336,9 +338,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Project properties (Project)](change-project-level-permissions.md)
    - [Project-level information](change-project-level-permissions.md)
    ::: moniker-end
-   :::column-end:::
-   :::column span="1":::
-   
+
    ### Q-R
    
    - [Queue builds (Object)](../../pipelines/policies/permissions.md)
