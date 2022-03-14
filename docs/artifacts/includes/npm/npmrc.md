@@ -3,22 +3,22 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 11/02/2021
+ms.date: 02/15/2022
 ---
 
 #### Project setup
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From within your project, select **Azure Artifacts**, and then select **Connect to feed**.
+1. Select **Artifacts**, and then select **Connect to feed**.
 
-    :::image type="content" source="../../media/connect-to-feed-devops.png" alt-text="Screenshot showing how to connect to a feed.":::   
+    :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="A screenshot showing how to connect to a feed.":::   
 
 1. Select **npm**.
 
-1. Select the **Other** tab.
+1. Select **Other**.
 
-    :::image type="content" source="../../media/connect-to-feed-npm-creds-azure-devops-newnav.png" alt-text="Screenshot showing how to set up a project.":::
+    :::image type="content" source="../../media/connect-to-feed-npm-creds-azure-devops-newnav.png" alt-text="A screenshot showing how to set up your npm project.":::
 
 1. Add a .npmrc file in the same directory as your package.json, and paste the following snippet into your file.
 
