@@ -1,9 +1,10 @@
-﻿---
+---
 title: Differences between process customizations
 titleSuffix: Azure DevOps Services  
 description: Summary of what you can and can't customize in a process template to support customized work tracking in Azure DevOps Services.
 ms.technology: devops-agile
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

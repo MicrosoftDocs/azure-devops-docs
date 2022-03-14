@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual 
+ms.topic: overview 
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/17/2020
 ---

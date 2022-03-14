@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration
 ms.technology: devops-agile
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

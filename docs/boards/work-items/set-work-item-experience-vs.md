@@ -43,7 +43,7 @@ Each view supports the following tasks:
    - [Organize query folders and set query permissions](../queries/set-query-permissions.md)
    - [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
    - [Email query results list using Outlook](../queries/share-plans.md)
-   - [Create reports from query in Excel](../../report/admin/create-status-and-trend-excel-reports.md) (on-premises Azure DevOps Server only)
+   - [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) (on-premises Azure DevOps Server only)
    
    :::column-end:::
 :::row-end:::

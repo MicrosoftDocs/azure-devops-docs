@@ -2,8 +2,8 @@
 title: Hosted XML process model 
 titleSuffix: Azure DevOps Services
 description: How to customize work tracking features using the Hosted XML process model 
-ms.technology: devops-agile
-ms.assetid: 
+ms.technology: devops-agile 
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

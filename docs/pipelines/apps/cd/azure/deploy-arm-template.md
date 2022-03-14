@@ -28,7 +28,7 @@ Before you begin, you need:
 
 ## Get the code
 
-For this repository on GitHub:
+Fork this repository on GitHub:
 
 ```
 https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.web/webapp-linux-managed-mysql

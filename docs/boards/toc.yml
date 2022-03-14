@@ -112,6 +112,16 @@
   href: github/toc.yml
 - name: Work items
   href: work-items/toc.yml 
+- name: Boards & Kanban
+  href: boards/toc.yml 
+- name: Backlogs
+  href: backlogs/toc.yml 
+- name: Sprints & Scrum
+  href: sprints/toc.yml 
+- name: Queries & search 
+  href: queries/toc.yml 
+- name: Plans & portfolios
+  href: plans/toc.yml
 - name: Track work, code, builds, and releases
   items:
   - name: End-to-end traceability
@@ -136,16 +146,6 @@
     href: work-items/auto-complete-work-items-pull-requests.md  
   - name: Request and track feedback
     href: ../project/feedback/toc.yml 
-- name: Boards & Kanban
-  href: boards/toc.yml 
-- name: Backlogs
-  href: backlogs/toc.yml 
-- name: Sprints & Scrum
-  href: sprints/toc.yml 
-- name: Queries & search 
-  href: queries/toc.yml 
-- name: Plans & portfolios
-  href: plans/toc.yml
 - name: Excel, Project, PowerPoint 
   items:
   - name: Connect to an Office client

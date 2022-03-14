@@ -3,7 +3,7 @@ title: Give reviewers permission to provide feedback
 titleSuffix: Azure DevOps 
 description: Grant users access to provide feedback initiated from a team project in Azure DevOps. 
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: db5148e8-0dd2-4ddd-b563-d9b924356263  
 ms.author: kaelli
 author: KathrynEE 

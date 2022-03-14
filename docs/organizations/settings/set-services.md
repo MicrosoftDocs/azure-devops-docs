@@ -7,7 +7,7 @@ ms.technology: devops-settings
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'  
 ms.date: 08/17/2020
 ---

@@ -826,7 +826,7 @@ For on-premises deployments, you may need to set the access level for a user or 
 
 ## Add users or groups to SQL Server Reports
 
-If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](../../report/admin/grant-permissions-to-reports.md).
+If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end
 
@@ -837,7 +837,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you need t
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites.
 
 * [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
-* [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
+* [Grant permissions to view or create SQL Server reports in Azure DevOps Server](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports)
 
 ::: moniker-end
 
@@ -852,8 +852,8 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 * [Add users and manage access](../accounts/add-organization-users.md)   
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md)
-* [Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-search-and-selection)
-* [Limit user visibility for projects using the Project-Scoped Users group](../projects/about-projects.md#project-scoped-user-group)
+* [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection)
+* [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group)
 * [Grant or restrict access using permissions](restrict-access.md).
 ::: moniker-end
  

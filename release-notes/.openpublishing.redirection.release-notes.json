@@ -529,6 +529,10 @@
       "source_path_from_root": "/release-notes/2017/sep-15-team-services.md",
       "redirect_url": "/previous-versions/azure/devops/release-notes/2017/sep-15-team-services",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/release-notes/index.md",
+      "redirect_url": "/azure/devops/release-notes/features-timeline",
     }
   ]
 }

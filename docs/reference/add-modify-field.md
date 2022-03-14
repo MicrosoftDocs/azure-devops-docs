@@ -7,7 +7,7 @@ ms.custom: process
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: "< azure-devops"  
 ms.date: 07/20/2020
 ---
@@ -341,7 +341,7 @@ When you remove a field from a specific type of work item, that field is not rem
     witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
     ```
 
-4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
+4.  If the deleted field was reportable and your project uses SQL Server Reporting Services, [rebuild the data warehouse to purge the old field and its values](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube).
 
 For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).  
 

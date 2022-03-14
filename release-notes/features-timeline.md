@@ -35,19 +35,17 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="6"><strong>2022 Q1</strong></td>
+<tr><td rowspan="4"><strong>2022 Q1</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423" data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
 <tr><td rowspan="2"><strong>2022 Q2</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
 </tr>
-<tr><td rowspan="14"><strong>Future</strong></td>
+<tr><td rowspan="16"><strong>Future</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>General</td><td>N/A</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1845287" data-raw-source="[Auditing GA](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1845287)">Auditing GA</a></td><td>General</td><td>N/A</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954" data-raw-source="[Associate all public APIs with PAT scopes](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954)">Associate all public APIs with PAT scopes</a></td><td>General</td><td>TBD</td>
@@ -61,6 +59,8 @@ Each feature is linked to the public roadmap project where you can learn more ab
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289 data-raw-source="[Elastic self-hosted pools (Kubernetes)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289)">Elastic self-hosted pools (Kubernetes)</a></td><td>Pipelines</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423" data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Repos</td><td>Future</td> </tr>
    </tr>
     </tbody>
@@ -115,6 +115,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="3"><a href="2022/sprint-200-update.md" data-raw-source="[28 February 2022](2022/sprint-200-update.md)">28 February 2022</a></td> 
+    <td>Updates to Azure File Copy task</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improvement to user interface</td><td>Artifacts</td><td>Future</td></tr>
+    <td>Support for additional diagram types in wiki pages</td><td>Wiki</td><td>Future</td></tr>
+</tr> 
     <td rowspan="2"><a href="2022/sprint-199-update.md" data-raw-source="[11 February 2022](2022/sprint-199-update.md)">11 February 2022</a></td> 
     <td>Improvements to strengthen security in Azure DevOps</td><td>General</td><td>Future</td></tr>
     <td>Pipelines Agent runtime upgrade planning</td><td>Pipelines</td><td>N/A</td></tr>

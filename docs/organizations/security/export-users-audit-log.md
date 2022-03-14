@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
 ms.technology: devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer:  
 ms.author: kaelli
 author: KathrynEE

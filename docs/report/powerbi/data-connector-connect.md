@@ -6,7 +6,7 @@ ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.technology: devops-analytics 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= azure-devops-2019'
 ms date: 10/04/2021
 ---
@@ -15,7 +15,7 @@ ms date: 10/04/2021
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+
 
 The Power BI Data Connector uses [Analytics Views](what-are-analytics-views.md). 
 
@@ -38,7 +38,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 - If you aren't familiar with Analytics, read [what is Analytics?](what-is-analytics.md) before continuing. 
 - Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
@@ -51,6 +51,8 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 - Review the [knowledge base of Power BI articles](/power-bi). 
 
 ::: moniker-end
+
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 [!INCLUDE [temp](../includes/connect-analytics-view.md)]
 

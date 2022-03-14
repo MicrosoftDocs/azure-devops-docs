@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 02/09/2022
 --- 
@@ -352,7 +352,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Limit user visibility for projects** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

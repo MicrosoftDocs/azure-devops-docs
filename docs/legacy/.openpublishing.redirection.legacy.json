@@ -17007,6 +17007,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/docs/test/reference-tcm.md",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/reference-tcm",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/test/mtm/share-steps-between-test-cases.md",
       "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
