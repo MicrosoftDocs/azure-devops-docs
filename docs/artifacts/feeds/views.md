@@ -4,7 +4,7 @@ description: How to use feed views to share your packages
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 02/16/2022
 monikerRange: '>= tfs-2017'
 ---
  
@@ -28,7 +28,7 @@ With Azure Artifacts, you can promote packages to a specific to only share a sub
 
 1. Select **Promote**.
 
-    :::image type="content" source="media/release-views-promote.png" alt-text="Screenshot showing how to promote a package to a view.":::
+    :::image type="content" source="media/promote-package.png" alt-text="A screenshot showing how to promote a package to a view.":::
 
 1. Select a view from the dropdown menu, and then select **Promote**.
 
@@ -87,11 +87,11 @@ You can create your own views or rename and delete existing ones from your feed'
 
 1. Select the gear icon :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to access your feed's settings.
 
-    :::image type="content" source="../media/editfeed-azure-devops-newnav.png" alt-text="Screenshot showing how to access the feed's settings.":::
+    :::image type="content" source="../media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings.":::
 
 1. Select **Views**.
 
-    :::image type="content" source="./media/feed-settings-views.png" alt-text="Screenshot showing views settings.":::
+    :::image type="content" source="./media/views-settings.png" alt-text="A screenshot showing how to navigate to views.":::
 
 1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
 

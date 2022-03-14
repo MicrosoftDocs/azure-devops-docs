@@ -5,7 +5,7 @@ ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
-ms.date: 10/22/2021
+ms.date: 02/14/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
@@ -48,10 +48,6 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 A feed is an organizational construct that allows users to store their packages and control who can access them. Azure Artifacts support storing several package types in a single feed such as NuGet, npm, Maven, Python, and Universal packages.
 
 [!INCLUDE [](includes/create-feed.md)]
-
-You can change these settings later by editing your feed's settings.
-
-[!INCLUDE [edit-feed](includes/edit-feed.md)]
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -4,7 +4,7 @@ description: Understand upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 02/16/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
@@ -125,7 +125,7 @@ If a feed has a failing upstream source, the metadata can no longer be refreshed
 
 If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing upstream will provide more details such as the reason of failure and instructions on how to solve it.
 
-:::image type="content" source="media/upstream-health.png" alt-text="Screenshot showing the upstream source's health status":::
+:::image type="content" source="media/upstreams-health-status.png" alt-text="Screenshot showing the upstream source's health status":::
 
 > [!NOTE]
 > For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download by your feed. This delay depends on job timing and data propagation. The is no latency when the upstream source is an Azure Artifacts feed.
