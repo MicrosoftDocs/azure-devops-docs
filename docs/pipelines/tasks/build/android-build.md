@@ -18,7 +18,7 @@ Use this task to build an Android app using Gradle and optionally start the emul
 
 ## Deprecated
 
-**The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**
+**The AndroidBuild@1 task has been deprecated. Use the [Gradle](gradle.md) task instead.**
 
 ## Demands
 

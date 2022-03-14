@@ -3,13 +3,13 @@ title: Layout XML element reference
 titleSuffix: TFS 
 description: Use the Layout element to define how the elements on the work item form appear in Team Foundation Server
 ms.technology: devops-agile
-ms.custom: process
+ms.custom: archive-candidate
 ms.assetid: 8898c116-62f8-416f-af33-90c389a038bb
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= tfs-2015'
-ms.date: 02/14/2017
+ms.date: 03/01/2022
 ---
 
 # Layout XML element reference
@@ -17,7 +17,7 @@ ms.date: 02/14/2017
 [!INCLUDE [version-lt-eq-2015](../../includes/version-lt-eq-2015.md)]
 
 > [!IMPORTANT]  
->This topic applies to project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
+> This article applies to project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).   
 

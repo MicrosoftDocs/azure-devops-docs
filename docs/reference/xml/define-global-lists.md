@@ -7,6 +7,7 @@ ms.custom: process
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 05/23/2017
 ---
@@ -32,7 +33,7 @@ You can share list items among several WITs for a collection by including the li
 > [!NOTE]    
 >There are no system-defined nor predefined global lists specified in the default processes or process templates provides.  
 
-**Requirements**  
+## Prerequisites
 
 For the project collection where the global lists are defined, you must have the following permissions set:  
 
@@ -42,7 +43,8 @@ For the project collection where the global lists are defined, you must have the
 
 To add or modify a global list, use the **witadmin** command-line tool to import and export the definition for global lists. See [Manage global lists](../witadmin/manage-global-lists-for-work-item-types.md). To use a global list, add it to the `FIELD` definition within a work item type. See [All FIELD elements](field-definition-element-reference.md).  
 
-<a name="add-manage"></a>   
+<a name="add-manage"></a>  
+ 
 ##  Add and manage global lists  
 
 A global list is a set of `LISTITEM` elements that is stored and used globally by all projects in a collection. Global lists are useful for fields that are defined within several types of work items, such as Operating System, Found in Build, and Fixed in Build.  
@@ -146,6 +148,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 For information about the structure and location of definition files for types of work items or global workflow, see [All WITD elements](all-witd-xml-elements-reference.md) or [GLOBALWORKFLOW](global-workflow-xml-element-reference.md), respectively.  
 
 <a name="project-collection"></a>   
+
 ## Sample global list maintained for a project collection  
 
 To add a global list to a project collection, you can import the following syntax by using the **witadmin importgloballist** command:  
@@ -172,7 +175,8 @@ To add a global list to a project collection, you can import the following synta
 - [Customize work tracking](../customize-work.md)
 
 ### Are any global lists auto-populated with data?  
-Yes for on-premises TFS. The global list named **Builds**.*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
+
+Yes for on-premises Azure DevOps Server. The global list named **Builds**.*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
 
 To learn more about using this list, see [Query based on build and test integration fields](../../boards/queries/build-test-integration.md).  
 

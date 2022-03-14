@@ -99,9 +99,12 @@
     - name: Publish Maven artifacts with Gradle
       href: maven/publish-package-gradle.md
       displayName: maven artifacts, maven packages 
-    - name: Use packages from Maven Central
+    - name: Maven Central Repository
       href: maven/upstream-sources.md
       displayName: maven packages, maven artifacts, maven central
+    - name: Google Maven Repository
+      href: maven/google-maven.md
+      displayName: google maven, maven packages
   - name: Python
     items:
     - name: Python quickstart 

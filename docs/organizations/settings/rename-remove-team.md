@@ -6,7 +6,7 @@ ms.technology: devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 05/24/2021
 ---

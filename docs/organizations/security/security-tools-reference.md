@@ -192,7 +192,7 @@ In addition, Lab Management permissions can be managed through the [TFSLabConfig
 ## Setting permissions for SQL Server reports 
 
 For information about how to set permissions in Reporting Services,
-see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+see [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2017"  

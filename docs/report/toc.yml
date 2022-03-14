@@ -8,6 +8,12 @@
   items:
   - name: Quick reference
     href: dashboards/quick-ref.md
+  - name: "Add, rename, & delete dashboards"
+    displayname: filter, dashboard, auto-refresh, add widget, delete widget
+    href: dashboards/dashboards.md
+  - name: Add widgets to a dashboard
+    displayname: select dashboard, add widget, configure widget, move widget, delete widget, copy widget, widget size, disabled widget 
+    href: dashboards/add-widget-to-dashboard.md
   - name: Widget catalog
     href: dashboards/widget-catalog.md
   - name: Analytics-based widgets
@@ -16,14 +22,6 @@
     href: dashboards/faqs.yml
 - name: Dashboards
   items:
-  - name: "Add, rename, & delete dashboards"
-    displayname: filter, dashboard, auto-refresh, add widget, delete widget
-    href: dashboards/dashboards.md
-  - name: Add widgets to a dashboard
-    displayname: select dashboard, add widget, configure widget, move widget, delete widget, copy widget, widget size, disabled widget 
-    href: dashboards/add-widget-to-dashboard.md
-  - name: Pin items to a team dashboard
-    href: dashboards/team-dashboard.md
   - name: Add charts to a dashboard
     href: dashboards/add-charts-to-dashboard.md
   - name: Add Markdown to a dashboard
@@ -34,6 +32,8 @@
     href: dashboards/copy-dashboard.md
   - name: Set dashboard permissions (Security)
     href: dashboards/dashboard-permissions.md
+  - name: Pin items to a team dashboard
+    href: dashboards/team-dashboard.md
 - name: Work tracking 
   items:
   - name: Create work tracking charts

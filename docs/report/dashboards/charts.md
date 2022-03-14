@@ -452,7 +452,7 @@ To learn more about using tags, see [Add tags to work items](../../boards/querie
 
 ## Query-based charts versus Excel-generated PivotCharts  
 
-Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../admin/create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
+Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
 
 ::: moniker-end
 

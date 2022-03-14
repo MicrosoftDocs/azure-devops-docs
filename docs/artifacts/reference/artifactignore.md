@@ -38,6 +38,10 @@ The *.artifactignore* follows the same syntax as the [.gitignore](https://git-sc
 > [!IMPORTANT]
 > The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
 
+## Ignored by default
+
+To reduce the chances of publishing the *.git* folder, we automatically ignore this path if you do not have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
+
 ## Related articles
 
 - [Package graphs](../concepts/package-graph.md)

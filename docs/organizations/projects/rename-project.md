@@ -183,7 +183,7 @@ Both SharePoint and Reporting Services integrations continue to work, but some r
 The old project name is still present until caches are updated with the new name. 
 The reporting and SharePoint server administrator can manually run these jobs to immediately populate the new name.
 
-- If your team uses reports, they reflect the new names after the next incremental analysis job runs for the data warehouse. By default the job runs every two hours. But, you can [manually run the warehouse jobs and incremental analysis job](../../report/admin/manually-process-data-warehouse-and-cube.md). Then, the new name gets synced to warehouse and reports start using the new name. Reports don't work as expected until the jobs have run.
+- If your team uses reports, they reflect the new names after the next incremental analysis job runs for the data warehouse. By default the job runs every two hours. But, you can [manually run the warehouse jobs and incremental analysis job](/previous-versions/azure/devops/report/admin/manually-process-data-warehouse-and-cube). Then, the new name gets synced to warehouse and reports start using the new name. Reports don't work as expected until the jobs have run.
 
 - If your team uses SharePoint Integration and has custom queries or web parts that directly reference the project name,
   update the name in each to the new project name. You don't need to update default queries and web parts, as they continue to work.
@@ -191,7 +191,7 @@ The reporting and SharePoint server administrator can manually run these jobs to
 
 - Excel reports and Excel web parts on MOSS don't show the right data until you execute the following.
 
-  1. Warehouse job - [Run the warehouse jobs](../../report/admin/manually-process-data-warehouse-and-cube.md)
+  1. Warehouse job - [Run the warehouse jobs](/previous-versions/azure/devops/report/admin/manually-process-data-warehouse-and-cube)
      so that Excel reports contain the correct data.
      If the new project name isn't synced to the warehouse,
      Excel reports don't show the correct data.

@@ -81,6 +81,7 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
+      "zone_pivot_group_filename": "devops/zone-pivot-groups.json",
       "searchScope": [
         "Azure DevOps Services"
       ],

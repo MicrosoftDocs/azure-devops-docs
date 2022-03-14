@@ -1,5 +1,5 @@
 ---
-title: Change access levels for users or groups
+title: Add users or groups to an access level 
 titleSuffix: Azure DevOps 
 description: Learn how to set the access level for a user or group based on their license 
 ms.technology: devops-security
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 06/02/2019
 ---
 
-# Change access levels for users or groups
+# Add users or groups to an access level 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

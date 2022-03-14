@@ -4,12 +4,12 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Requirements for consistency in labeling objects like organizations, projects, tags, templates, and more, by length, uniqueness, and special characters. 
 ms.technology: devops-settings
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/17/2021
+ms.date: 02/28/2022
 ---
 
 # Naming restrictions and conventions  
@@ -29,6 +29,38 @@ Common restrictions include not exceeding the character length for a name, not c
 The length restrictions in this article are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count as two characters against the length restriction. For details, see [About Unicode and Character Sets](/windows/win32/intl/about-unicode-and-character-sets). 
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
+
+## Azure Artifacts
+
+Universal packages must conform to the following restrictions.
+
+:::row:::
+   :::column span="1":::
+      **Restriction type**
+   :::column-end:::
+   :::column span="3":::
+      **Restriction**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Package name
+   :::column-end:::
+   :::column span="3":::
+      - Must be lowercase.
+      - Must start and end with letters or numbers.
+      - Must only contain letters, numbers, and non-consecutive dashes, underscore, or periods.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Package version
+   :::column-end:::
+   :::column span="3":::
+      - Must be lowercase without build metadata.
+   :::column-end:::
+:::row-end:::
 
 ## Azure Boards 
 

@@ -1,8 +1,8 @@
 ---
-ms.technology: devops-collab
 ms.topic: conceptual
 title: Authorize other services to access Azure DevOps
 description: Learn how to authorize other services to work with Azure DevOps Services.
+ms.technology: devops-security
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: 'azure-devops'
 ms.author: chcomley

@@ -1,5 +1,5 @@
 ---
-title: Add stories & other work items to help manage your project
+title: Add user stories & other work items to help manage your project
 titleSuffix: Azure Boards 
 description: Add work items so you can plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Azure DevOps.  
 ms.custom: seodec18, devx-track-azurecli
@@ -8,17 +8,21 @@ ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.topic: quickstart
-ms.date: 10/08/2021
+ms.topic: tutorial
+ms.date: 03/01/2022
 ---
 
 # Add and update a work item
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You add work items to plan and manage your project. Different types of work items track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. Use work items to describe the work to be done, assign work, track status, and coordinate efforts within your team.   
+You add work items to plan and manage your project. Different types of work items track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. Use work items to describe the work to be done, assign work, track status, and coordinate efforts within your team.  
 
-For other clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
+
+> [!NOTE]  
+> This article shows how to add any type of work item. However, the recommended tool for adding backlog or portfolio items&mdash;such as, user stories, product backlog items, features, or epics&mdash; is to use the backlog or Kanban board to add new items. To learn more, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md) and [Start using your Kanban board](../boards/kanban-quickstart.md). To create test cases and link them to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
+ 
+For other clients that you can use to add and update work items, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 

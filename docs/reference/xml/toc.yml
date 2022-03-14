@@ -28,16 +28,8 @@
     href: ../add-modify-wit.md
   - name: Customize the work item form
     href: ../customize-wit-form.md
-  - name: Design the work item form
-    href: design-work-item-form.md
-  - name: Add the Attachments control
-    href: add-the-attachments-control.md
   - name: "Provide help text, hyperlinks, or web content"
     href: provide-help-text-hyperlinks-web-content-form.md
-  - name: Add web content to a form
-    href: edit-wit-definition-add-web-content-form.md
-  - name: Change the work item form layout
-    href: change-work-item-form-layout.md
   - name: Specify work item form controls
     href: specify-work-item-form-controls.md
   - name: Define link controls
@@ -100,10 +92,22 @@
         href: weblayout-xml-elements.md 
       - name: LinksControlOptions (web)
         href: linkscontroloptions-xml-elements.md 
-      - name: Manage roll out of the new web form
-        href: ../manage-new-form-rollout.md 
+      - name: WebpageControlOptions
+        href: webpagecontroloptions-xml-elements-reference.md
+      - name: LabelText and Text
+        href: labeltext-and-text-xml-elements-reference.md
     - name: Old (web and client) form layout
       items:
+      - name: Manage roll out of the new web form
+        href: ../manage-new-form-rollout.md 
+      - name: Add web content to a form
+        href: edit-wit-definition-add-web-content-form.md
+      - name: Change the work item form layout
+        href: change-work-item-form-layout.md
+      - name: Design the work item form
+        href: design-work-item-form.md
+      - name: Add the Attachments control
+        href: add-the-attachments-control.md
       - name: Layout
         href: layout-xml-element-reference.md
       - name: Control
@@ -112,16 +116,12 @@
         href: tab-xml-element-reference.md
       - name: LinksControlOptions (web/client)
         href: linkscontroloptions-elements.md
-      - name: LabelText and Text
-        href: labeltext-and-text-xml-elements-reference.md
       - name: Link and Param
         href: link-param-xml-elements-reference.md
-      - name: WebpageControlOptions
-        href: webpagecontroloptions-xml-elements-reference.md
-      - name: LinkTypes elements reference
-        href: link-type-element-reference.md
   - name: CATEGORIES XML reference
     href: categories-xml-element-reference.md
+  - name: LinkTypes elements reference
+    href: link-type-element-reference.md
   - name: ProcessConfiguration XML reference
     href: process-configuration-xml-element.md
 - name: Manual updates

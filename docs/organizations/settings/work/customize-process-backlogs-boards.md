@@ -8,7 +8,7 @@ ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/07/2021 
 ---
 

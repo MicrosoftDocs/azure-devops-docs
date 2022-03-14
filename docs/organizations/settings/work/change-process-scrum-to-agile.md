@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.custom: seodec18
 description: Change the process for your project from Scrum to Agile
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid:
 ms.author: kaelli
 author: KathrynEE
