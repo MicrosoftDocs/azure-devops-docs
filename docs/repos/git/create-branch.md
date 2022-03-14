@@ -22,6 +22,9 @@ monikerRange: '<= azure-devops'
 
 ## Create a new branch
 
+> [!NOTE]
+> Branch names of 40 hexadecimal characters aren't supported. For additional naming restrictions, see [Git Cross-Platform Compatibility](os-compatibility.md).    
+
 #### [Browser](#tab/browser) 
 
 ::: moniker range=">= azure-devops-2019"
@@ -60,7 +63,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker-end
 
->[!TIP]
+> [!TIP]
 > You will need to [fetch](pulling.md) the branch before you can see it and swap to it in your local repo.
 
 #### [Visual Studio](#tab/visual-studio)
