@@ -119,6 +119,9 @@ You can also view tags in the **History** view, for example by navigating to the
 
 To create a tag, you must have the [Create Tag](../../organizations/security/permissions.md#git-repository-object-level) permission, which is included [by default](../../organizations/security/default-git-permissions.md) in the [Contributors](../../organizations/security/permissions.md#project-level-groups) group and higher.
 
+> [!NOTE]
+> Tag names of 40 hexadecimal characters aren't supported. For additional naming restrictions, see [Git Cross-Platform Compatibility](os-compatibility.md).     
+
 #### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
