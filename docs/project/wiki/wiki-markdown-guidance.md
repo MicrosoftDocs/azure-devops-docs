@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 03/10/2022 
+ms.date: 03/15/2022 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -51,27 +51,77 @@ Consistency is maintained in the formatting in TOC.
 
 ## Add Mermaid diagrams to a Wiki page
 
-Wiki supports the following Mermaid diagram types:
+Mermaid lets you create diagrams and visualizations using text and code. Wiki supports the following Mermaid diagram types:
 
 - [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-- [Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
-- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
+- [Gantt charts](https://mermaid-js.github.io/mermaid/#/gantt)
+- [Flowcharts](http://mermaid-js.github.io/mermaid/#/flowchart)
 
-To add Mermaid diagrams to a wiki page, use the following syntax:
+> [!NOTE]
+> - Not all syntax in the previously linked content for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, or LongArrow `---->`. 
+> - Mermaid isn't supported in the Internet Explorer browser.
+
+To add a Mermaid diagram to a wiki page, use the following syntax:
 
 ``` wiki-mermaid
 ::: mermaid
 <mermaid diagram syntax>
 :::
 ```
+### Sequence diagram example
+
+A sequence diagram is an interaction diagram that shows how processes operate with one another and in which order.
+
+```markdown
+::: mermaid
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text=".":::
+
+### Gantt chart example
+
+A Gantt chart records each scheduled task as one continuous bar that extends from the left to the right. The x axis represents time and the y records the different tasks and the order in which they are to be completed.
+
+When you exclude a date, day, or collection of dates specific to a task, the Gantt chart accommodates those changes by extending an equal number of days toward the right, not by creating a gap inside the task.
+
+```markdown
+::: mermaid
+gantt
+    title A Gantt chart
+    dateFormat YYYY-MM-DD
+    excludes 2022-03-16,2022-03-18,2022-03-19
+    section Section
+
+    A task          :a1, 2022-03-07, 7d
+    Another task    :after a1 , 5d
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-gantt-chart.png" alt-text="image showing the Mermaid Live Editor with code and preview for Gantt chart.":::
+
+### Flowchart example
+
+A flowchart is composed of nodes, geometric shapes and edges, and arrows or lines.
+The following example shows a flowchart using `graph` rather than `flowchart`. 
 
 > [!NOTE]
-> - The diagram type hyperlinks at the beginning of this section go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, we don't support most HTML tags, Font Awesome, LongArrow `---->`, or links to and from `subgraph`.
-> - Mermaid isn't supported in the Internet Explorer browser. 
+> We don't support `---->` or `flowchart` syntax, nor links to and from `subgraph`.
 
-There's also a toolbar button to add a default Mermaid diagram to a wiki page.
+```
+:::mermaid
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge) --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+:::
+```
 
-![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
+:::image type="content" source="media/wiki/wiki-mermaid-flowchart.png" alt-text="image showing the Mermaid Live Editor with code and preview for flowchart.":::
 
 ::: moniker-end
 
