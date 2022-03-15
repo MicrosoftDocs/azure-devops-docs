@@ -249,7 +249,7 @@ You can intervene manually by using YAML, or by using the classic deployment mod
 
 #### [YAML](#tab/yaml/)
 
-1. Go to **Pipelines** > **Environments** > **New environment**
+1. Go to **Pipelines** > **Environments** > **New environment**.
 1. Configure the new environment.
     - **Name**: *akspromote*
     - **Resource**: Choose Kubernetes.
@@ -259,7 +259,7 @@ You can intervene manually by using YAML, or by using the classic deployment mod
     - **Cluster**: Choose your cluster.
     - **Namespace**: Choose the namespace, *canarydemo*, that you created earlier.
 1. Select **Validate and Create**.
-1. Select your new *akspromote* environment from the list of environments. 
+1. Select your new `akspromote` environment from the list of environments. 
 1. Select **Approvals and checks** > **Approvals**. Then select the ellipsis icon (the three dots).
 1. Configure your approval as follows:
     - **Approvers**: Add your own user account.
