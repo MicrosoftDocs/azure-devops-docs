@@ -16,3 +16,21 @@ With Azure Artifacts feeds, you can enable upstream sources to include packages 
 
 > [!NOTE]
 > Organization-scoped feeds cannot be converted into project-scoped feeds.
+
+## Add Gradle Plugins
+
+1. Select the ![gear icon](../../media/icons/gear-icon.png) at the top right corner to navigate to **Feed Settings**.
+
+1. Select **Upstream Sources**.
+
+1. Select **Add Upstream**.
+
+    :::image type="content" source="./media/upstream-settings-add-upstream.png" alt-text="A screenshot showing how to access upstream sources to add a new upstream.":::
+
+1. Select **Public source**, and then select **Gradle Plugins (https://plugins.gradle.org/m2/)** from the dropdown menu.
+
+    :::image type="content" source="./media/gradle-plugins.png" alt-text="A screenshot showing how to add Gradle Plugins.":::
+
+1. Select **Save** when you are done.
+
+1. Select **Save** at the top right corner to save your changes.
