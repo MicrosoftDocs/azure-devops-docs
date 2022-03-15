@@ -87,7 +87,7 @@ sequenceDiagram
 
 A Gantt chart records each scheduled task as one continuous bar that extends from the left to the right. The x axis represents time and the y records the different tasks and the order in which they are to be completed.
 
-When you exclude a date, day, or collection of dates specific to a task, the Gantt chart accomodates those changes by extending an equal number of days toward the right, not by creating a gap inside the task.
+When you exclude a date, day, or collection of dates specific to a task, the Gantt chart accommodates those changes by extending an equal number of days toward the right, not by creating a gap inside the task.
 
 ```markdown
 ::: mermaid
