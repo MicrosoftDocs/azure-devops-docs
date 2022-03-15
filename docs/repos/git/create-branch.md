@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn about Git branches and how to create a new branch in your local Git repo, Azure Repos Git repo, and GitHub.
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.technology: devops-code-git
-ms.topic: tutorial
+ms.topic: how-to
 ms.date: 03/15/2022
 monikerRange: '<= azure-devops'
 ---
@@ -16,15 +16,10 @@ monikerRange: '<= azure-devops'
 
 The first commit in a new Git repo is the start of the `main` branch. As you work in the `main` branch, you make commits to record your work in that branch. Branching in Git occurs when you create a new line of development that diverges from a prior branch. You might choose to create a new branch to develop and test a new feature before adding it to your `main` branch. The recommended [Git workflow](gitworkflow.md) is to use a new branch for every feature or bugfix. When you switch between branches, Git almost instantly switches the version of your repo files to match the branch you selected. Your [commits](commits.md) are always saved to the current branch, and are isolated from commits in other branches.
 
-This article provides procedures for the following task:
-
-> [!div class="checklist"]
-> * How to create a new branch
-
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
 
-## How to create a new branch
+## Create a new branch
 
 > [!NOTE]
 > Branch names can't contain ASCII control characters, such as spaces, tildes, and colons. It's common practice to use lowercase characters and to separate words with a hyphen. Forward slashes can be used to group branches. Branch name length shouldn't exceed 250 ASCII characters. To avoid ambiguity between branch names and commit hashes, don't use branch names that consist of 40 hexadecimal characters. For more information on branch naming, see [git-check-ref-format](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html) and [Git cross-platform compatibility](os-compatibility.md).
@@ -188,9 +183,6 @@ git checkout -b <existing branch name>
 
 
 * * *
-
-
-Branch names can't contain ASCII control characters, such as spaces, tildes, and colons. It's common practice to use a hyphen to separate words. Forward slashes can be used to group branches. For more information on branch naming, see [git-check-ref-format](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html).
 
 
 ## Next steps
