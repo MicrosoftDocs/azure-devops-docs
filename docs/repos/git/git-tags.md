@@ -120,7 +120,7 @@ You can also view tags in the **History** view, for example by navigating to the
 To create a tag, you must have the [Create Tag](../../organizations/security/permissions.md#git-repository-object-level) permission, which is included [by default](../../organizations/security/default-git-permissions.md) in the [Contributors](../../organizations/security/permissions.md#project-level-groups) group and higher.
 
 > [!NOTE]
-> Tag names of 40 hexadecimal characters aren't supported. For additional naming restrictions, see [Git Cross-Platform Compatibility](os-compatibility.md).     
+> Tag names can't contain ASCII control characters, such as spaces, tildes, and colons. It's common practice to use lowercase characters and to separate words with a hyphen. Tag name length shouldn't exceed 250 ASCII characters. To avoid ambiguity between tag names and commit hashes, don't use tag names that consist of 40 hexadecimal characters. For more information on tag naming, see [git-check-ref-format](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html).
 
 #### [Browser](#tab/browser)
 
