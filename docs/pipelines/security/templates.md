@@ -111,7 +111,6 @@ One of the commands still allowed in restricted mode is the `setvariable` comman
       Write-Host "##vso[task.setvariable variable=BadVar]myValue"
 ```
 
-::: moniker range=">=azure-devops"
 ### Conditional insertion of stages or jobs
 
 Restrict stages and jobs to run under specific conditions.
@@ -140,6 +139,8 @@ You can, for example, prevent inline script execution.
 > In the example below, the steps type "bash", "powershell", "pwsh" and "script" are prevented from executing.
 > For full lockdown of ad-hoc scripts, you would also need to block "BatchScript" and "ShellScript".
 
+::: moniker range="=azure-devops"
+
 ```yaml
 # template.yml
 parameters:
@@ -162,9 +163,25 @@ steps:
                 ${{ attribute.key }}: ${{ attribute.value }}
         ${{ elseif ne(pair.key, 'displayName') }}:
           ${{ pair.key }}: ${{ pair.value }}
-
           displayName: 'Disabled by template: ${{ step.displayName }}'
 ```
+::: moniker-end
+
+::: moniker range="=azure-devops-2020"
+
+```yaml
+# template.yml
+parameters:
+- name: usersteps
+  type: stepList
+  default: []
+steps:
+- ${{ each step in parameters.usersteps }}:
+  - ${{ if not(or(startsWith(step.task, 'Bash'),startsWith(step.task, 'CmdLine'),startsWith(step.task, 'PowerShell'))) }}:  
+    - ${{ step }}
+```
+
+::: moniker-end
 
 ```yaml
 # azure-pipelines.yml
