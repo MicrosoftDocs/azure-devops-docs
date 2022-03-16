@@ -4,7 +4,6 @@ description: Target Kubernetes clusters with the Kubernetes resource. Use Kubern
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.manager: atulmal
 ms.date: 03/16/2022
 monikerRange: azure-devops
 ---
