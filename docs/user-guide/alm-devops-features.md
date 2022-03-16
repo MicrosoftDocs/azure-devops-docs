@@ -1407,7 +1407,7 @@ Use features supported by these familiar clients to manage your project and illu
       You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process [Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md) that you choose.  
 
       **Add Reporting Services reports**  
-      If you need to add reporting services to a project or on-premises Azure DevOps Server after you've created your team projects, you can by [adding a report server and uploading reports](/previous-versions/azure/devops/report/report/admin/add-reports-to-a-team-project).  
+      If you need to add reporting services to a project or on-premises Azure DevOps Server after you've created your team projects, you can by [adding a report server and uploading reports](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
       **Manage the data warehouse**  
       The reporting warehouse is a traditional data warehouse that consists of a [relational database and an Analysis Services database](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube). You manage it through the following activities:  
@@ -1419,9 +1419,9 @@ Use features supported by these familiar clients to manage your project and illu
    :::column span="1":::
       **Build reports**  
       Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code.  
-      - [Build Quality Indicators](/previous-versions/azure/devops/report/sql-reports/build-quality-indicators-report.md) 
-      - [Build Success Over Time](/previous-versions/azure/devops/report/sql-reports/build-success-over-time-report.md)
-      - [Build Summary](/previous-versions/azure/devops/report/sql-reports/build-summary-report.md)
+      - [Build Quality Indicators](/previous-versions/azure/devops/report/sql-reports/build-quality-indicators-report) 
+      - [Build Success Over Time](/previous-versions/azure/devops/report/sql-reports/build-success-over-time-report)
+      - [Build Summary](/previous-versions/azure/devops/report/sql-reports/build-summary-report)
        
       **Test and bug reports**  
       Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.  
