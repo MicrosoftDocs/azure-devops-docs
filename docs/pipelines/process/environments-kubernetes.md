@@ -5,7 +5,7 @@ ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: atulmal
-ms.date: 10/11/2021
+ms.date: 03/16/2022
 monikerRange: azure-devops
 ---
 
@@ -146,14 +146,14 @@ stages:
     - upload: manifests
       artifact: manifests
 
-- stage: Deploy
+- stage: Production
   displayName: Deploy stage
   dependsOn: Build
 
   jobs:
-  - deployment: Deploy
+  - deployment: Production
     condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
-    displayName: Deploy
+    displayName: Production
     pool:
       vmImage: $(vmImageName)
     environment: $(envName).$(resourceName)
