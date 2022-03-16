@@ -71,7 +71,7 @@ Running `which bash` on Linux/macOS or `where bash` on Windows will give you an 
 
 The Bash task invokes the Bash as a non-interactive, non-login shell. When Bash is started non-interactively, to run a shell script, the Bash looks for the variable `BASH_ENV` in the environment, unfolds its value if it appears there, and uses the value as the name of a file to read and execute.
 
-There are several options for defining the `BASH_ENV` environment variable in a pipeline. Firstly, It's possible to set the `BASH_ENV` environment variable as a pipeline variable. In this case, each instance of the Bash task will try to unfold the value of the `BASH_ENV` variable and use its value.
+There are several options for defining the `BASH_ENV` environment variable in a pipeline. Firstly, it's possible to set the `BASH_ENV` environment variable as a pipeline variable. In this case, each instance of the Bash task will try to unfold the value of the `BASH_ENV` variable and use its value.
 
 ```YAML
 variables:
@@ -109,7 +109,7 @@ Another way is to set the `BASH_ENV` variable as an environment variable for the
 ```
 
 > [!NOTE]
-> Note that if the `bashEnvValue` input is defined in the Bask task, the pipeline task will override the value of the `BASH_ENV` variable with the value from the `bashEnvValue` input in a case when the `BASH_ENV` environment variable was already defined in the environment.
+> Note that if the `bashEnvValue` input is defined in the Bash task, the pipeline task will override the value of the `BASH_ENV` variable with the value from the `bashEnvValue` input in a case when the `BASH_ENV` environment variable was already defined in the environment.
 
 ::: moniker range=">= azure-devops-2019"
 
