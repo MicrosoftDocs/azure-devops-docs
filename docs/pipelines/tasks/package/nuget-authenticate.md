@@ -3,7 +3,7 @@ title: NuGet Authenticate
 ms.custom: seodec18
 description: Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories
 ms.topic: reference
-ms.date: 01/13/2021
+ms.date: 05/23/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -14,11 +14,12 @@ monikerRange: 'azure-devops'
 Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories.
 
 > [!IMPORTANT]
-> This task is only compatible with NuGet >= 4.8.0.5385, dotnet >= 2.1.400, or MSBuild >= 15.8.166.59604
+> This task is only compatible with NuGet >= 4.8.0.5385, dotnet >= 6, or MSBuild >= 15.8.166.59604
+
 
 ## YAML snippet
 
-[!INCLUDE [temp](../includes/yaml/NuGetAuthenticateV0.md)]
+[!INCLUDE [temp](../includes/yaml/NuGetAuthenticateV1.md)]
 
 ## Arguments
 
@@ -54,7 +55,7 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
 To use a service connection, specify the service connection in the `nuGetServiceConnections` input for the NuGet Authenticate task. You can then reference the service connection with `-ApiKey AzureArtifacts` in a task. 
 #### nuget.exe
 ```YAML
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1
   inputs:
     nuGetServiceConnections: OtherOrganizationFeedConnection, ThirdPartyRepositoryConnection
 - task: NuGetToolInstaller@1 # Optional if nuget.exe >= 4.8.5385 is already on the path
@@ -68,7 +69,7 @@ To use a service connection, specify the service connection in the `nuGetService
 
 #### dotnet
 ```YAML
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1
   inputs:
     nuGetServiceConnections: OtherOrganizationFeedConnection, ThirdPartyRepositoryConnection
 - task: UseDotNet@2 # Optional if the .NET Core SDK is already installed
@@ -102,7 +103,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 
 #### nuget.exe
 ```YAML
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1
   inputs:
     nuGetServiceConnections: OtherOrganizationFeedConnection, ThirdPartyRepositoryConnection
 - task: NuGetToolInstaller@1 # Optional if nuget.exe >= 4.8.5385 is already on the path
@@ -116,7 +117,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 
 #### dotnet
 ```YAML
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1
   inputs:
     nuGetServiceConnections: OtherOrganizationFeedConnection, ThirdPartyRepositoryConnection
 - task: UseDotNet@2 # Optional if the .NET Core SDK is already installed
@@ -142,7 +143,7 @@ This task will configure tools that support [NuGet cross platform plugins](/nuge
 
 Specifically, this task will configure:
 * nuget.exe, version 4.8.5385 or higher
-* dotnet / .NET Core SDK, version 2.1.400 or higher
+* dotnet / .NET 6 SDK or higher (NuGetAuthenticateV0 required .NET Core 2.1 that is now out of support)
 * MSBuild, version 15.8.166.59604 or higher
 
 However, upgrading to the latest stable version is recommended if you encounter any issues.  
@@ -212,5 +213,16 @@ If the pipeline is running in a different project than the project hosting the f
 
 No. Pipeline runs that are triggered from an external fork don't have access to the proper secrets for internal feed authentication. Thus, it will appear like the authenticate task is successful, but subsequent tasks that require authentication (such as Nuget push) will fail with an error along the lines of: `##[error]The nuget command failed with exit code(1) and error(Response status code does not indicate success: 500 (Internal Server Error - VS800075: The project with id 'vstfs:///Classification/TeamProject/341ec244-e856-40ad-845c-af31c33c2152' does not exist, or you do not have permission to access it. (DevOps Activity ID: C12C19DC-642C-469A-8F58-C89F2D81FEA7)).`
 After the Pull Request is merged into the origin, then a pipeline that is triggered from that event will authenticate properly.
+
+### I updated from NuGetAuthenticateV0 to NuGetAuthenticateV1 and now my dotnet command fails with 401
+
+If you are updating from NuGetAuthenticateV0 to NuGetAuthenticateV1 and get an error running a dotnet command, look for the message `It was not possible to find any compatible framework version` from the logs. For dotnet users, NuGetAuthenticateV1 requires .NET 6 instead of .NET Core 2.1 that is required in NuGetAuthenticateV0 and is now out of support. To resolve the issue, use the UseDotNet@2 task before the dotnet command to install .NET 6.
+```YAML
+- task: UseDotNet@2
+  displayName: Use .NET 6 SDK
+  inputs:
+    packageType: sdk
+    version: 6.x
+```
 
 <!-- ENDSECTION -->
