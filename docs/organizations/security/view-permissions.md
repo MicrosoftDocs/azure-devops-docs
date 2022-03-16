@@ -120,10 +120,10 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range="azure-devops"
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
+    > ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 2. Choose **Permissions**, the **Project Collection Administrators** group, and then **Members**. 
 
@@ -136,10 +136,10 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
+    > ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 1. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
 
@@ -152,10 +152,10 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range="<= tfs-2018"
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** or **Collection settings**.  
+1. Choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** or **Collection settings**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
+    > ![Open Organization Settings](../../media/settings/open-account-settings.png)  
 
 1. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 

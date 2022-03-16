@@ -110,11 +110,11 @@ sections:
           
           **Not connected**
           
-          ![Check for a connected directory in Organization settings = Not connected](/azure/devops/media/connect-your-organization-to-azure-ad.png)
+          ![Check for a connected directory in Organization settings = Not connected](../../media/connect-your-organization-to-azure-ad.png)
           
           **Connected**
           
-          ![Check for a connected directory in Organization settings = Connected](/azure/devops/media/organization-connected-azure-ad.png)
+          ![Check for a connected directory in Organization settings = Connected](../../media/organization-connected-azure-ad.png)
           
           If your organization is connected to your organization's directory, only users from your organization's directory can join your organization. For more information, see [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
           

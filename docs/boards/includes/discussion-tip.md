@@ -17,7 +17,7 @@ ms.date: 11/19/2021
 Use the **Discussion** section to add and review comments made about the work being performed. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section within a work item form](/azure/devops/boards/backlogs/media/discussion-section.png)   
+> ![Discussion section within a work item form](../backlogs/media/discussion-section.png)   
 
 ::: moniker-end 
 
@@ -26,7 +26,7 @@ Use the **Discussion** section to add and review comments made about the work be
 The rich text editor tool bar displays below the text entry area. It appears when you click your cursor within each text box that supports text formatting. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/discussion-rich-text-editor-toolbar.png) 
+> ![Discussion section, New Rich Text Editor toolbar](../queries/media/share-plans/discussion-rich-text-editor-toolbar.png) 
 
 > [!NOTE]  
 > There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered into the Discussion text box is added to the History field. 
@@ -48,10 +48,10 @@ Type a name, or enter a number and the menu list will filter to match your entry
 
 ### Edit or delete a comment 
 
-If you need to edit or delete any of your discussion comments, choose :::image type="icon" source="/azure/devops/media/icons/edit.png" border="false"::: <strong>Edit</strong> or choose the :::image type="icon" source="/azure/devops/media/icons/actions-icon.png" border="false"::: actions icon and then choose **Delete**. 
+If you need to edit or delete any of your discussion comments, choose :::image type="icon" source="../../media/icons/edit.png" border="false"::: <strong>Edit</strong> or choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and then choose **Delete**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, Edit, Delete actions](/azure/devops/boards/media/discussion-edit-delete.png)  
+> ![Discussion section, Edit, Delete actions](../media/discussion-edit-delete.png)  
 
 ::: moniker-end
 

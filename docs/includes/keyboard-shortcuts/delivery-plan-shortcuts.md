@@ -16,7 +16,7 @@ To toggle between card titles only and card details, enter **t**.
 
 :::row:::
    :::column span="2":::
-      ![Delivery plans keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/delivery-plans-cloud.png)  
+      ![Delivery plans keyboard shortcuts](../../media/keyboard-shortcuts/delivery-plans-cloud.png)  
    :::column-end:::
    :::column span="2":::
       <br/> <br/> 
