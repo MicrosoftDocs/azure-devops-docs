@@ -8,17 +8,17 @@ ms.topic: include
 
 2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Select **Next**.
 
-   ![Sign in with your Microsoft account](/azure/devops/media/sign-in-with-microsoft-account.png)
+   ![Sign in with your Microsoft account](../media/sign-in-with-microsoft-account.png)
 
    If you don't have a Microsoft account, choose **Create one**. To learn more, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create).
 
 3. Enter your password and select **Sign in**.
 
-   ![Enter your password and sign in](/azure/devops/media/enter-password-sign-in.png)
+   ![Enter your password and sign in](../media/enter-password-sign-in.png)
 
 4. To get started with Azure DevOps, select **Continue**.
 
-   ![Choose Continue to sign up for Azure DevOps](/azure/devops/media/sign-up-azure-devops.png)
+   ![Choose Continue to sign up for Azure DevOps](../media/sign-up-azure-devops.png)
 
 An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
 

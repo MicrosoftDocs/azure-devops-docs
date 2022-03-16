@@ -28,7 +28,7 @@ To change the **Organization owner**, see [Change organization owner](../account
 
 ## Look up the organization owner 
 
-1. Choose the Azure DevOps logo :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
+1. Choose the Azure DevOps logo :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
 
 	![Open organization settings](../../media/open-organization-settings-preview.png)  
 

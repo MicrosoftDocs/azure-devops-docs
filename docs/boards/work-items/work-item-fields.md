@@ -159,10 +159,10 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 To review the list of fields defined for an organization or collection, open **Organization settings>Process>Fields**.   
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Organization settings.](/azure/devops/media/settings/open-admin-settings-vert.png)  
+	> ![Choose Organization settings.](../../media/settings/open-admin-settings-vert.png)  
 
 1. Then, choose **Process**. 
    

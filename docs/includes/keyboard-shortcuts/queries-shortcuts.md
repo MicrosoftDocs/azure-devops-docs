@@ -26,7 +26,7 @@ You can use the following keyboard shortcuts when [working with queries](../../b
 
 :::row:::
    :::column span="2":::
-      ![Queries keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/queries-shortcuts-cloud.png)  
+      ![Queries keyboard shortcuts](../../media/keyboard-shortcuts/queries-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
       <br/> <br/> 
@@ -48,7 +48,7 @@ You can use the following keyboard shortcuts when [working with queries](../../b
 
 :::row:::
    :::column span="2":::
-      ![Queries keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/queries-new-shortcut.png)  
+      ![Queries keyboard shortcuts](../../media/keyboard-shortcuts/queries-new-shortcut.png)  
    :::column-end:::
    :::column span="2":::
       <br/> <br/> 
