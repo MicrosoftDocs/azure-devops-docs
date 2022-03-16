@@ -105,6 +105,9 @@
     - name: Google Maven Repository
       href: maven/google-maven.md
       displayName: google maven, maven packages
+    - name: Gradle Plugins
+      href: maven/gradle-plugins.md
+      displayName: gradle plugins, maven packages
   - name: Python
     items:
     - name: Python quickstart 
