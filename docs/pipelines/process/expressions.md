@@ -761,6 +761,40 @@ stages:
 
 ```
 
+If a job depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the job `run_tests` runs if the `build_job` deployment job set `runTests` to `true`. Notice that the key used for the `outputs` dictionary is `build_job.setRunTests.runTests`.
+
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: Production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  jobs:  
+    - job: run_tests
+      condition: eq(stageDependencies.build.build_job.outputs['build_job.setRunTests.runTests'], 'true')
+      steps:
+        ...
+```
+
+
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
@@ -788,6 +822,36 @@ stages:
   - job: part_b
     steps:
     - bash: echo "BA"
+```
+
+If a stage depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the stage `test` depends on the deployment `build_job` setting `shouldTest` to `true`. Notice that in the `condition` of the `test` stage, `build_job` appears twice.
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: Production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  condition: eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')
+  jobs:
+    ...
 ```
 
 ::: moniker-end
