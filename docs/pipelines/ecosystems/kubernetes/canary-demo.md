@@ -14,9 +14,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-A *canary* deployment strategy means to deploy new versions of an application next to stable, production versions. You can then see how the canary version compares to the baseline, before promoting or rejecting the deployment.
+A *canary* deployment strategy means deploying new versions of an application next to stable, production versions. You can then see how the canary version compares to the baseline, before promoting or rejecting the deployment.
 
-This step-by-step guide covers how to use the [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy. Specifically, you learn about setting up canary deployments for Kubernetes, and the associated workflow, in terms of instrumenting code. You then use that code to compare baseline and canary app deployments, so you can decide whether to promote or reject the canary deployment.
+This step-by-step guide covers how to use the [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy. Specifically, you'll learn how to set up canary deployments for Kubernetes, and the associated workflow to evaluate code. You then use that code to compare baseline and canary app deployments, so you can decide whether to promote or reject the canary deployment.
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ helm install --name sampleapp stable/prometheus-operator
 
 1. Go to **Pipelines** > **Create Pipeline**, and select your repository.
 1. On the **Configure** tab, choose **Starter pipeline**.
-1. In the **Review** tab, replace the pipeline YAML with this code.
+1. On the **Review** tab, replace the pipeline YAML with this code.
 
     ```YAML
     trigger:
