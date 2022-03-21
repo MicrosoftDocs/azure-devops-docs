@@ -473,6 +473,8 @@ The following table describes the namespaces that manage organization-level perm
 
 ::: moniker-end
 
+<a id="process" />
+
 ---
 :::row:::
    :::column span="1":::
@@ -550,7 +552,7 @@ The following table describes the namespaces that manage organization-level perm
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      Process <a id="process" />
+      Process 
    :::column-end:::
    :::column span="1":::
       `Edit`                           
