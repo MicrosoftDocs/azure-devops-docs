@@ -267,10 +267,9 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 
 [!INCLUDE [temp](../../includes/link-work-item-builds-projects.md)]
 
+<a id="find-items"> </a> 
 
 ::: moniker range="<= tfs-2018"
-
-<a id="find-items"> </a>  
 
 ## Find work items to link to   
 
