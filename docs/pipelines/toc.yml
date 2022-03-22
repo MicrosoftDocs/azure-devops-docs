@@ -625,6 +625,8 @@
         - name: Other security considerations
           href: security/misc.md
           displayName: PATH, containers, control tasks, auditing
+    - name: Download release permissions report
+      href: ../organizations/security/download-permissions-report-release.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
