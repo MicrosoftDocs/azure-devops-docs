@@ -15,6 +15,9 @@ ms.date: 03/30/2021
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
+> [!Note]
+> Auditing is still in private preview.
+
 On the Auditing page of your Organization Settings, you can access, export, and filter audit logs, which track the many changes that occur within your Azure DevOps organization(s). With these logs, you can use them to meet your organization's compliance and governance goals.
 
 Audit changes occur whenever a user or service identity within the organization edits the state of an artifact. You may see events logged for any of the following occurrences:
