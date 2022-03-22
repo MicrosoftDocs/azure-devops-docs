@@ -137,11 +137,11 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-> [!Note]
+> [!IMPORTANT]
 > We strongly recommend you configure the agent from an elevated PowerShell window.
 > If you want to configure as a service, this is **required**.
 
-> [!Note]
+> [!IMPORTANT]
 > For security reasons we strongly recommend making sure the agents folder (`C:\agents`) is only editable by admins.
 
 > [!Note]
