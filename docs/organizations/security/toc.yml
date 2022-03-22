@@ -234,6 +234,9 @@
   - name: Other security considerations
     href: ../../pipelines/security/misc.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
     displayName: miscellaneous, secure, details, information
+  - name: Download release permissions report
+    href: download-permissions-report-release.md
+    displayName: json
 - name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing
