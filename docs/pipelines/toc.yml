@@ -432,7 +432,7 @@
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
-        href: ecosystems/kubernetes/aks-template.md
+        href: /azure/aks/devops-pipeline
       - name: Deploy to AKS with Jenkins
         href: release/integrate-jenkins-pipelines-aks.md
         displayName: cluster, Jenkins, Maven, Docker
