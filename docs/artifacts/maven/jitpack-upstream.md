@@ -31,3 +31,16 @@ With Azure Artifacts, you can consume packages from different public registries 
 1. Select **Save** when you are done.
 
 1. Select **Save** at the top right corner to save your changes.
+
+## View saved packages
+
+To view saved packages from JitPack, select **JitPack** from **Source**.
+
+:::image type="content" source="./media/jitpack-source.png" alt-text="A screenshot showing how to filter for packages from JitPack":::
+
+## Related articles
+
+- [Google Maven Repository](./google-maven.md)
+- [Gradle Plugins](./gradle-plugins.md)
+- [Maven Central upstream source](./upstream-sources.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
