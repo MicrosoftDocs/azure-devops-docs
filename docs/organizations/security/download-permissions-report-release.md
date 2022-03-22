@@ -21,14 +21,16 @@ You can also use the [Permissions Report REST API](/rest/api/azure/devops/permis
 
 ## Prerequisites
 
-- To download the permissions report, you must be a member of the Project Collection Administrators group. The user interface button won't appear for users who aren't a member of this group. 
+- To download the permissions report, you must be a member of the **Project Collection Administrators** group. The user interface button won't appear for users who aren't a member of this group. 
+
+	To find a member of the **Project Collection Administrators** group, see [Look up a project collection administrator](look-up-project-collection-administrators.md).
 
 
 ## Open the security dialog for the release
 
-You can download the report for a select release from the release's Security dialog.  
+You can download the report for a specific release from the release's Security dialog.  
 
-- Open the web portal and choose the release you want to download permissions for. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** and then choose **Security**.   
+- Open the web portal, navigate to **Pipelines>Releases**, and choose the release you want to download permissions for. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** and then choose **Security**.   
 
  
 
@@ -36,7 +38,7 @@ You can download the report for a select release from the release's Security dia
 
 1. Choose **Download detailed report**. 
 
-	:::image type="content" source="media/download-report/release-permissions-dialog.png.png" alt-text="Screenshot of Permissions dialog for a release, Download detailed report button.":::
+	:::image type="content" source="media/download-report/release-permissions-dialog.png" alt-text="Screenshot of Permissions dialog for a release, Download detailed report button.":::
 
 	The following message displays indicating the request was submitted to the server. 
 
@@ -50,6 +52,6 @@ You can download the report for a select release from the release's Security dia
 ## Related articles  
 
 - [Set different levels of pipeline permissions](../../pipelines/policies/permissions.md) 
-- [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1&preserve-view=true)
 - [Manage permissions with command line tool](manage-tokens-namespaces.md) 
+- [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1&preserve-view=true)
 
