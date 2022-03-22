@@ -11,7 +11,10 @@ monikerRange: '>= tfs-2017'
 
 # Cache task
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+**Azure DevOps Services | TFS 2018 - TFS 2017**
+
+> [!NOTE]
+> This task is only available in Azure DevOps Services and TFS 2017 & 2018.
 
 Improve build performance by caching files, like dependencies, between pipeline runs.
 
