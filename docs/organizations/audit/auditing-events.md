@@ -13,6 +13,9 @@ ms.date: 02/07/2022
 
 # Auditing Events List
 
+> [!NOTE]
+> Auditing is still in private preview.
+
 The tables below describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature. 
 * Any given event will belong to a specific Product Area. The full list of Areas are given in the [Area table](#Areas).
 * An event has a Category field that reflects the type of action performed during the event. The list of possible action types can be seen in the [Categories table](#Categories).
