@@ -409,16 +409,16 @@ kubectl exec -it $FORTIO_POD -c fortio /usr/bin/fortio -- load -allow-initial-er
     - password: prom-operator
 1. From the menu on the left, choose **+** > **Dashboard** > **Graph**.
 1. Select anywhere on the newly added panel, and type `e` to edit the panel.
-1. In the **Metrics** tab, enter the following query:
+1. On the **Metrics** tab, enter the following query:
     ```
     rate(requests_total{pod=~"sampleapp-.*", custom_status="good"}[1m])
     ```
-1. In the **General** tab, change the name of this panel to **All sampleapp pods**.
+1. On the **General** tab, change the name of this panel to **All sampleapp pods**.
 1. In the overview bar at the top of the page, change the duration range to **Last 5 minutes** or **Last 15 minutes**.
 1. To save this panel, select the save icon in the overview bar.
 1. The preceding panel visualizes success rate metrics from all the variants. These include stable (from the `sampleapp` deployment), baseline (from the `sampleapp-baseline` deployment), and canary (from the `sampleapp-canary` deployment). Note that you can visualize just the baseline and canary metrics by adding another panel, with the following configuration: 
-    - In the **General** tab, for **Title**, select **sampleapp baseline and canary**.
-    - In the **Metrics** tab, use the following query: 
+    - On the **General** tab, for **Title**, select **sampleapp baseline and canary**.
+    - On the **Metrics** tab, use the following query: 
     ```
     rate(requests_total{pod=~"sampleapp-baseline-.*|sampleapp-canary-.*", custom_status="good"}[1m])
     ```
@@ -431,7 +431,7 @@ kubectl exec -it $FORTIO_POD -c fortio /usr/bin/fortio -- load -allow-initial-er
 
 ## Compare baseline and canary
 
-1. At this point, the **Deploy canary** stage has successfully completed (based on the change of `success_rate` from '10' to '20'). The **Promote/reject canary** stage is waiting on manual intervention. You can now compare the success rate (as determined by `custom_status=good`) of the baseline and canary variants in the Grafana dashboard. It should look similar to the following: 
+1. At this point, the **Deploy canary** stage has successfully completed (based on the change of `success_rate` from `10` to `20`). The **Promote/reject canary** stage is waiting on manual intervention. You can now compare the success rate (as determined by `custom_status=good`) of the baseline and canary variants in the Grafana dashboard. It should look similar to the following: 
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that shows a comparison of baseline and canary metrics.](../media/k8s-baseline-canary.png)
