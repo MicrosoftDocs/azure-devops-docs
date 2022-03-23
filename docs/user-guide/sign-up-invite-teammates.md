@@ -43,7 +43,7 @@ When you create a new Azure DevOps organization with your GitHub account, we tur
 
 Once the setting gets changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. You're recognized as a GitHub user and the GitHub invitation experience is available to you.
 
-![Invite GitHub users policy ](/azure/devops/media/invite-github-users-policy.png)
+![Invite GitHub users policy ](../media/invite-github-users-policy.png)
 
 For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.yml).
 

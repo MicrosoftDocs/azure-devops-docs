@@ -36,7 +36,7 @@ install extensions from the [Azure DevOps Marketplace](https://marketplace.visua
 
 Your project collection reuses your Azure subscription 
 for future Marketplace purchases. 
-[Where can I find more info about Azure billing?](faq-extensions.yml)]
+[Where can I find more info about Azure billing?](faq-extensions.yml)
 
 ::: moniker range="<= tfs-2018"
 
