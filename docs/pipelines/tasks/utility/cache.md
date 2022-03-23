@@ -5,13 +5,16 @@ ms.topic: reference
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.custom: seodec18
 author: damccorm
-ms.date: 12/13/2019
-monikerRange: '>= tfs-2017'
+ms.date: 03/22/2022
+monikerRange: '= azure-devops'
 ---
 
 # Cache task
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+**Azure DevOps Services**
+
+> [!NOTE]
+> This task is only available in Azure DevOps Services.
 
 Improve build performance by caching files, like dependencies, between pipeline runs.
 
@@ -19,13 +22,9 @@ Improve build performance by caching files, like dependencies, between pipeline 
 
 None
 
-::: moniker range="> tfs-2018"
-
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/cache-v2.md)]
-
-::: moniker-end
 
 ## Arguments
 
