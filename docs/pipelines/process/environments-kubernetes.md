@@ -4,7 +4,7 @@ description: Target Kubernetes clusters with the Kubernetes resource. Use Kubern
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.date: 03/16/2022
+ms.date: 03/23/2022
 monikerRange: azure-devops
 ---
 
@@ -14,9 +14,9 @@ monikerRange: azure-devops
 
 The Kubernetes resource view provides a glimpse into the status of objects within the namespace that's mapped to the resource. This view also overlays pipeline traceability so you can trace back from a Kubernetes object to the pipeline, and then back to the commit.
 
-Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider.
+Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider. 
 
-To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
+You can use Kubernetes resources with both public or private clusters. To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
 
 ## Overview
 
