@@ -15,7 +15,7 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 
 :::row:::
    :::column span="2":::
-      ![Boards>Backlogs page shortcuts](/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-cloud.png)  
+      ![Boards>Backlogs page shortcuts](../../media/keyboard-shortcuts/work-backlogs-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/>      
@@ -35,7 +35,7 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 
 :::row:::
    :::column span="2":::
-      ![Boards>Backlogs page shortcuts](/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)  
+      ![Boards>Backlogs page shortcuts](../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/>
@@ -58,7 +58,7 @@ You can use the following keyboard shortcuts when working from a **Work**>**Back
 <tbody valign="top">
 <tr>
 <td>
-<img src="/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
+<img src="../../media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
 </td>
 <td>
 <br/><strong>Backlogs</strong><br/><br/>

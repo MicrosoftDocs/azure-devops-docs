@@ -4,7 +4,7 @@ description: How to set up your project and authenticate to Azure Artifacts feed
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/17/2022
+ms.date: 03/16/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -63,8 +63,11 @@ We recommend using two **.npmrc_** files, the first one we'll use to authenticat
     :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
 
 ::: moniker-end
-        
+
 On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This second file should contain all your registries' credentials.
+
+> [!NOTE]
+> if your organization is using a firewall or a proxy server, make sure you allow the appropriate domain URLs. See [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md) for more details.
 
 ## Credentials setup
 
