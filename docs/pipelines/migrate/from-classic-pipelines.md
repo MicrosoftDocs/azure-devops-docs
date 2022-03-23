@@ -89,7 +89,7 @@ If you're not going to use this sample pipeline anymore, delete it from your pro
 
 YAML pipelines don't have a [Create work item on failure setting](../build/options.md#create-a-work-item-on-failure) like classic build pipelines. You have a couple of options for creating this functionality yourself.
 - You can use a script or PowerShell task and call the [REST API](/rest/api/azure/devops/pipelines/). 
-- You can use Azure CLI to call [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) in your pipeline. [See an example](../customize-pipeline.md#create-work-item-on-failure) of using the CLI to create a bug on failure.
+- You can use Azure CLI to call [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) in your pipeline. [See an example](../customize-pipeline.md#create-work-item-on-failure) of using the CLI to create a bug on failure.
 
 ## Next steps
 
