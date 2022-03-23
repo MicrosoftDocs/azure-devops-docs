@@ -185,6 +185,8 @@ extends:
     - task: MyOtherTask@2
 ```
 
+:::moniker-end
+
 ### Type-safe parameters
 
 Templates and their parameters are turned into constants before the pipeline runs.
