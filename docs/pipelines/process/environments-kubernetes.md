@@ -16,7 +16,7 @@ The Kubernetes resource view provides a glimpse into the status of objects withi
 
 Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider. 
 
-You can use Kubernetes resources with both public and private clusters. To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
+You can use Kubernetes resources with public or private clusters. To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
 
 ## Overview
 
