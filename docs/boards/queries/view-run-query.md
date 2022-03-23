@@ -73,7 +73,7 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 
 ## Run a query from the command line 
 
-You can run a query in the CLI with the [az boards query](/cli/azure/boards#az_boards_query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can run a query in the CLI with the [az boards query](/cli/azure/boards#az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards query [--id]

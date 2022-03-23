@@ -1056,7 +1056,7 @@ To set case enforcement policy:
 
 ::: moniker range="> azure-devops-2019" 
  
-You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to configure or update case enforcement policy.
+You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az-repos-policy-case-enforcement-update) to configure or update case enforcement policy.
 
 ### Create case enforcement policy
 
@@ -1096,7 +1096,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ### Update case enforcement policy
 
-Use [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement#az_repos_policy_case_enforcement_update) to manage [Case enforcement](#case-enforcement) policy.
+Use [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-update) to manage [Case enforcement](#case-enforcement) policy.
 
 ```azurecli
 az repos policy case-enforcement update --id
@@ -1203,7 +1203,7 @@ To configure **Maximum file size** policy:
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">= azure-devops-2020"
-Use [az repos policy file-size create](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
+Use [az repos policy file-size create](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-update) to manage maximum file size policy.
 
 ### Create file size policy
 
@@ -1235,7 +1235,7 @@ az repos policy file-size create --blocking {false, true}
 
 **Example**
 
-The following example creates a 1 GB blocking maximum file size policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az_repos_list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following example creates a 1 GB blocking maximum file size policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az-repos-list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos policy file-size create --blocking true --enabled true --maximum-git-blob-size 10485760 --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --use-uncompressed-size true --output table
