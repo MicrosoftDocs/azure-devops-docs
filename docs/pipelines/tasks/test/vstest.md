@@ -117,7 +117,7 @@ Data-driven tests that use xUnit and NUnit test frameworks have some known limit
 
 1. Distributing tests on multiple agents and batching options.
 
-1. Test Impact Analysis 
+1. Test Impact Analysis. 
 
 The above limitations are because of how the adapters for these test frameworks discover and report data-driven tests.
 

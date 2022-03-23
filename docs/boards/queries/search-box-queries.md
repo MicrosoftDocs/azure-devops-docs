@@ -183,6 +183,8 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
 
+<a id="start-an-improvised-search-and-use-shortcut-filters" />
+
 ::: moniker range="<= tfs-2017" 
 
 ## Start an improvised search and use shortcut filters
