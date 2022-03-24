@@ -1,10 +1,9 @@
 ---
 title: Cache task
-description: Improve build performance by caching files, like dependencies, between pipeline runs.
+description: Improve build performance by caching dependencies between pipeline runs.
 ms.topic: reference
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.custom: seodec18
-author: damccorm
 ms.date: 03/22/2022
 monikerRange: '= azure-devops'
 ---
@@ -43,6 +42,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ## Next steps
 
-Learn more about pipeline caching:
-
+> [!div class="nextstepaction"]
 > [Pipeline Caching](../../release/caching.md)
+> [Cache NuGet packages](../../artifacts/caching-nuget.md)
