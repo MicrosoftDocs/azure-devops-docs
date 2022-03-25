@@ -437,7 +437,7 @@
         href: release/integrate-jenkins-pipelines-aks.md
         displayName: cluster, Jenkins, Maven, Docker
     - name: Azure Policy Compliance (Classic)
-      href: policies/azure-policy.md
+      href: /azure/governance/policy/tutorials/policy-devops-pipelines
       displayName: policy, compliance
 - name: Deploy apps using containers
   items:
