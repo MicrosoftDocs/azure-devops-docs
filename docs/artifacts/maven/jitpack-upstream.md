@@ -34,9 +34,9 @@ With Azure Artifacts, you can consume packages from different public registries 
 
 ## View saved packages
 
-To view saved packages from JitPack, select **JitPack** from **Source**.
+To view saved packages from JitPack, select **JitPack** from the **Source** dropdown menu.
 
-:::image type="content" source="./media/jitpack-source.png" alt-text="A screenshot showing how to filter for packages from JitPack":::
+:::image type="content" source="./media/packages-jitpack.png" alt-text="A screenshot showing how to filter for packages from JitPack":::
 
 ## Related articles
 
