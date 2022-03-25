@@ -2103,7 +2103,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. Bulk update work items to add or remove tags: <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags)">Azure DevOps Services</a> | <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Azure DevOps Server](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Azure DevOps Server</a>. </p>
 <img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
 
-&lt;p
 </td>
 <td width="33%">
 
