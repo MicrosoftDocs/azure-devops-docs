@@ -280,7 +280,7 @@ The following services work across the previously mentioned services to support:
 - SQL Server Reporting
 
 > [!NOTE]  
-> Team rooms are deprecated for TFS 2017.2. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
+> Team rooms are deprecated. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
 ::: moniker-end
 
 ::: moniker range="tfs-2015"

@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 04-19-2021
+  ms.date: 03/25/2022
   monikerRange: 'azure-devops'
 title: Access via Azure AD FAQs
 summary: |
@@ -244,12 +244,7 @@ sections:
         answer: |
           The team capacity pane shows only users who previously signed in to your organization.
           To set capacity, manually add users to your team.
-          
-      - question: |
-          Why doesn't the team room show offline users?
-        answer: |
-          The team room shows Azure AD group members, but only when they're online.
-          
+ 
       - question: |
           Why doesn't Azure DevOps reclaim access levels from users who aren't Azure AD group members anymore?
         answer: |
