@@ -166,6 +166,12 @@ To keep your token more secure, use credential managers so you don't have to ent
 
 ***
 
+```powershell
+$MyPat = 'yourPAT'
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyPat"))
+git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+```
+
 **Existing repos**
 
 For existing repositories, if you already added the origin using the username, run the following command first.
