@@ -1487,8 +1487,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Team member </b></p>
 <p>Opens the team&#39;s quick dialog to <a href="../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[add or remove team members](../report/dashboards/widget-catalog.md#team-members-widget)">add or remove team members</a>.</p>
 <img src="media/features/alm-feature-manage-members-widget.png" alt="Team member widget"/><br/>
-<p><b>Team rooms </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+
 
 <p><b>Visual Studio widget</b></p>
 <p><a href="../report/dashboards/widget-catalog.md#visual-studio-widget" data-raw-source="[Provides links to open or download Visual Studio](../report/dashboards/widget-catalog.md#visual-studio-widget)">Provides links to open or download Visual Studio</a>. The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren&#39;t available through the web portal). </p>
@@ -2564,10 +2563,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Team alerts</b></p>
 <p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
-
-
-<p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a <a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>
