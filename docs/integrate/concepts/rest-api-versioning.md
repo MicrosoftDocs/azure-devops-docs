@@ -34,10 +34,12 @@ HTTP request header:
 Accept: application/json;api-version=1.0
 ```
 
-Query parameter:
+Uri:
 
 ```no-highlight
-GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
+[scheme"://"][host[':'port]]"/v" major-version '/'namespace '/'resource ('/'resource)* '?' query
+We could delete the below, unless we want an example of something specific to azure dev ops...
+GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-query=1000
 ```
 
 ### Supported versions
