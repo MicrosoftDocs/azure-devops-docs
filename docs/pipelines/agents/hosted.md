@@ -30,8 +30,8 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2022 with Visual Studio 2022 | *windows-2022* |  `windows-2022` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) |
+| Windows Server 2022 with Visual Studio 2022 | *windows-2022* |  `windows-latest` OR `windows-2022` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) |
+| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) |
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-Readme.md)
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-Readme.md) |
 | macOS 11 Big Sur | *macOS-11* | `macOS-latest` OR `macOS-11` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
