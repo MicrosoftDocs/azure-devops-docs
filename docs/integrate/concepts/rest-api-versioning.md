@@ -39,7 +39,7 @@ Uri:
 ```no-highlight
 [scheme"://"][host[':'port]]"/v" major-version '/'namespace '/'resource ('/'resource)* '?' query
 
-GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-query=1000
+i.e. GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-query=1000
 ```
 
 ### Supported versions
