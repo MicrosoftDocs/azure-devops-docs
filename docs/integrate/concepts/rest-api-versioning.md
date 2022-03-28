@@ -38,7 +38,7 @@ Uri:
 
 ```no-highlight
 [scheme"://"][host[':'port]]"/v" major-version '/'namespace '/'resource ('/'resource)* '?' query
-We could delete the below, unless we want an example of something specific to azure dev ops...
+
 GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-query=1000
 ```
 
