@@ -9,12 +9,12 @@ toc: show
 ms.author: chcomley
 author: chcomley
 ms.date: 12/20/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ---
 
 # Default and supported notifications
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 Configure default subscriptions to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item.
 

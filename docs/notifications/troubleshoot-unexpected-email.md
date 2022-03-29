@@ -8,12 +8,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/30/2019  
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ---
 
 # Why did I get this email
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 
 If you receive a notification email that you didn't expect, it could be for one of the following reasons:
