@@ -126,8 +126,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Improvement to user interface</td><td>Artifacts</td><td>Future</td></tr>
     <td>Support for additional diagram types in wiki pages</td><td>Wiki</td><td>Future</td></tr>
 </tr> 
-    <td rowspan="2"><a href="2022/sprint-199-update.md" data-raw-source="[11 February 2022](2022/sprint-199-update.md)">11 February 2022</a></td> 
+    <td rowspan="3"><a href="2022/sprint-199-update.md" data-raw-source="[11 February 2022](2022/sprint-199-update.md)">11 February 2022</a></td> 
     <td>Improvements to strengthen security in Azure DevOps</td><td>General</td><td>Future</td></tr>
+    <td>Changes to third-party applications access</td><td>General</td><td>Future</td></tr>
     <td>Pipelines Agent runtime upgrade planning</td><td>Pipelines</td><td>N/A</td></tr>
 </tr> 
     <td rowspan="2"><a href="2022/sprint-198-update.md" data-raw-source="[19 January 2022](2022/sprint-198-update.md)">19 January 2022</a></td> 
