@@ -8,13 +8,13 @@ ms.custom: contperf-fy21q2, cross-project
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2018'
 ms.date: 04/16/2021
 ---
 
 # Link to work items from other objects
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 By linking to work items from other objects, such as builds, commits, pull requests, and more, you support your team's ability to maintain an audit trail of related work. All users can add links to their work items.
 
@@ -51,16 +51,7 @@ From the work item form, **Links** tab, you can [view all the objects linked to 
 
 
 > [!NOTE]
-> You can also link to work items from GitHub commits, pull requests, and issues. This requires connecting your Azure DevOps project to your GitHub repository. To learn more, see [Azure Boards-GitHub integration](../boards/github/index.md).
-
-
-<a id="mention-wit-id">  </a>
-
-::: moniker range="tfs-2015"
-> [!NOTE]  
-> The `#ID` feature is available from TFS 2015 Update 1 and later versions.
-
-::: moniker-end
+> You can also link to work items from GitHub commits, pull requests, and issues. This requires connecting your Azure DevOps project to your GitHub repository. For more information, see [Azure Boards-GitHub integration](../boards/github/index.md).
 
 <a id="link-wit-id">  </a>
 
@@ -75,11 +66,6 @@ From the work item form, **Links** tab, you can [view all the objects linked to 
    :::image type="content" source="media/keyword-pr-link.png" alt-text="Screenshot of entering keyword after # and resulting work item in search":::
 
    To further filter the list, continue to enter keywords until you find a match. You can enter up to five keywords.
-
-::: moniker range="tfs-2015"
-> [!NOTE]  
-> Requires TFS 2015 Update 2 or a later version.
-::: moniker-end
 
 <a id="work-item-state-pull-request" />
 

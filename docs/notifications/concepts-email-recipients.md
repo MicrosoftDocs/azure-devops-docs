@@ -8,11 +8,11 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 01/06/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ---
 # Determine recipients of notification emails
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 Many factors determine the recipients of an email notification when an event matches a subscription. If you're unaware, these factors can result in your inbox receiving too many or too few emails. Learn about how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 
@@ -50,7 +50,7 @@ You can manage subscriptions and delivery settings at the team-level or organiza
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In Organization settings, select your **Team** > **Subscribers** > **Delivery settings**.
 
@@ -91,7 +91,7 @@ The following delivery options are available for a group or team subscription:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot showing email team delivery options.](media/email-team-delivery-options.png)
 

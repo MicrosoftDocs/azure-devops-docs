@@ -8,13 +8,13 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/30/2019 
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ---
 
 
 # Emails from subscriptions or notifications are delayed
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 You might not receive an expected notification email. Learn how to check the notification statistics.
 

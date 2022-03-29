@@ -7,7 +7,7 @@ ms.topic: include
 ms.date: 07/19/2021
 ---
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2018"
 
 ## Unsubscribe or opt out of a team or out-of-box (OOB) notification subscription
 
