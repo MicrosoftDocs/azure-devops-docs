@@ -25,8 +25,6 @@ Your team, project, or organization can receive email notifications as changes o
 
 For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team. For more information, see [Notification types](about-notifications.md#notification-types).
 
-[!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
-
 ## Prerequisites
 
 - To manage notifications, you must be an administrator at the level you want to manage them:
