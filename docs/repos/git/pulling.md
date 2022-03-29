@@ -21,7 +21,7 @@ When there are several contributors to a project, keep your local Git repo updat
 - `rebase` integrates commits from a source branch into a target branch, but uses a different strategy to `merge`.
 - `pull` performs a `fetch` and then a `merge` or `rebase` to integrate fetched commits into your current local branch.
 
-Visual Studio uses those Git commands when you [synchronize](/visualstudio/version-control/git-fetch-pull-sync) your local repo with a remote repo.
+Visual Studio uses a subset of those Git commands when you [synchronize](/visualstudio/version-control/git-fetch-pull-sync) your local repo with a remote repo.
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
@@ -32,11 +32,9 @@ This article provides procedures for the following tasks:
 > * Update branches with _merge_ or _rebase_
 > * Download changes and update branches with _pull_
 
-<!-- #region fetch -->
-
 ## Download changes with fetch
 
-Git `fetch` downloads remote branch commits and referenced file objects that don't exist in your local repo and updates the *remote-tracking* branches in local repo cache. Remote-tracking branches are locally cached read-only copies of remote branches and aren't your local branches. Git `fetch` doesn't update your local branches. For example, if a remote repo designated by `origin` has a `bugfix3` branch, Git `fetch` will update the remote-tracking branch named `origin/bugfix3` and not your local `bugfix3` branch. You can use remote-tracking branches to:
+Git `fetch` downloads remote branch commits and referenced file objects that don't exist in your local repo and updates the [remote-tracking](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) branches in local repo cache. Remote-tracking branches are locally cached read-only copies of remote branches and aren't your local branches. Git `fetch` doesn't update your local branches. For example, if a remote repo designated by `origin` has a `bugfix3` branch, Git `fetch` will update the remote-tracking branch named `origin/bugfix3` and not your local `bugfix3` branch. You can use remote-tracking branches to:
 
 - Compare a remote-tracking branch with a local branch to review fetched changes.
 - Merge a remote-tracking branch into a local branch.
@@ -152,10 +150,6 @@ For more information on Git `fetch` options, see the [Git reference manual](http
 
 After a Git `fetch`, you can compare a local branch with its corresponding remote-tracking branch to see what changed on the remote branch. If you decide to update your current local branch with fetched changes, you can perform a Git [merge](/azure/devops/repos/git/merging?tabs=visual-studio) or [rebase](/azure/devops/repos/git/rebase?tabs=visual-studio). Or, you can run Git `pull`, which combines a Git `fetch` with a Git `merge` or `rebase`. Both Git `merge` and `rebase` update a target branch by applying commits from a source branch onto it. However, Git `merge` and Git `rebase` use different strategies. For more information, see [Update branches with merge or rebase](#update-branches-with-merge-or-rebase) and [When to rebase vs. merge](/azure/devops/repos/git/rebase?view=azure-devops&tabs=visual-studio#when-to-rebase-vs-merge&preserve-view=true).
 
-<!-- #endregion fetch -->
-
-<!-- #region merge/rebase -->
-
 ## Update branches with merge or rebase
 
 Git `merge` and Git `rebase` are extensively used in the [Git workflow](gitworkflow.md). When working on a local feature or bugfix branch, it's common practice to:
@@ -176,8 +170,6 @@ Here's a visual comparison of the most common merge and rebase strategies.
 
 :::image type="content" source="media/pulling/merge-types.png" border="true" alt-text="Diagram showing the before and after commits when using merge and rebase.":::
 
-<!-- #region merge -->
-
 ### Merge
 
 Git `merge` integrates commits from a source branch into your current local branch (the target branch). If the last target branch commit exists within the source branch, the merge will be a [fast-forward merge](https://git-scm.com/docs/git-merge#_fast_forward_merge). Otherwise, the merge will be a [no fast-forward merge](https://git-scm.com/docs/git-merge#_true_merge), which generates an extra merge commit.
@@ -187,7 +179,6 @@ If you don't work directly in your local `main` branch, Git `merge` can update y
 > [!TIP]
 > If the source branch is a remote-tracking branch, ensure that branch is up-to-date by running a Git [fetch](#download-changes-with-fetch) before the merge.
 
-<!-- #region merge Visual Studio 2019 -->
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -250,9 +241,6 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
   :::column-end:::
 :::row-end:::
 
-<!-- #endregion merge Visual Studio 2019 -->
-
-<!-- #region merge Visual Studio 2017 -->
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -281,9 +269,6 @@ To merge the latest changes from the main branch to your branch:
 
    ![Push](media/pulling/merge-from-master-push.png)
 
-<!-- #endregion merge Visual Studio 2017 -->
-
-<!-- #region merge Git Command Line -->
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -295,13 +280,9 @@ git merge <source branch name>
 
 Git will notify you if there are conflicts during the merge. Then, you can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git merge --continue`, or run `git merge --abort` to undo the merge and return to the pre-merge state.
 
-<!-- #endregion merge Git Command Line -->
-
-<!-- #endregion merge -->
 
 * * *
 
-<!-- #region rebase -->
 
 ### Rebase
 
@@ -312,7 +293,6 @@ For more information on `rebase` and when to use it, see [Apply changes with reb
 > [!TIP]
 > If the source branch is a remote-tracking branch, ensure that branch is up-to-date by running a Git [fetch](#download-changes-with-fetch) before the rebase.
 
-<!-- #region rebase Visual Studio 2019 -->
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -375,9 +355,6 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
   :::column-end:::
 :::row-end:::
 
-<!-- #endregion rebase Visual Studio 2019 -->
-
-<!-- #region rebase Visual Studio 2017 -->
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -406,9 +383,6 @@ To merge the latest changes from the main branch to your branch:
 
    ![Push](media/pulling/merge-from-master-push.png)
 
-<!-- #endregion rebase Visual Studio 2017 -->
-
-<!-- #region rebase Git Command Line -->
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -426,15 +400,9 @@ git rebase <source branch name>
 
 Git will notify you if there are conflicts during the rebase. Then, you can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git rebase --continue`, or run `git rebase --abort` to undo the rebase and return to the pre-rebase state.
 
-<!-- #endregion rebase Git Command Line -->
-
-<!-- #endregion rebase -->
-
-<!-- #endregion merge/rebase -->
 
 * * *
 
-<!-- #region pull -->
 
 <a name="pull"></a>
 
@@ -444,7 +412,6 @@ By default, Git `pull` combines a Git [fetch](#download-changes-with-fetch) and 
 
 Unlike Git `fetch`, Git `pull` will update your current local branch immediately after downloading new commits from the remote repo. Use Git `pull` when you know you want to update your current local branch right after a Git `fetch`.
 
-<!-- #region pull Visual Studio 2019 -->
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
@@ -503,9 +470,6 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 > [!NOTE]
 > In Visual Studio, **Sync** performs a **Pull** then a **Push** to synchronize a local and remote branch. For more information on **Sync**, see [Use git fetch, pull, push and sync for version control in Visual Studio](/visualstudio/version-control/git-fetch-pull-sync).
 
-<!-- #endregion pull Visual Studio 2019 -->
-
-<!-- #region pull Visual Studio 2017 -->
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -529,9 +493,6 @@ updates files in your open project, so make sure to [commit your changes](commit
 > [!NOTE]
 > In Visual Studio, **Sync** performs a **Pull** then a **Push** to synchronize a local and remote branch. For more information on **Sync**, see [Use git fetch, pull, push and sync for version control in Visual Studio](/visualstudio/version-control/git-fetch-pull-sync).
 
-<!-- #endregion pull Visual Studio 2017 -->
-
-<!-- #region pull Git Command Line -->
 
 #### [Git Command Line](#tab/git-command-line)
 
@@ -558,11 +519,9 @@ To use a rebase strategy to integrate commits from a remote branch into the curr
 > [!TIP]
 > Git will notify you if there are conflicts during the merge/rebase portion of the Git `pull` operation. Then, you can [resolve the conflicts](merging.md?tabs=command-line) and then run `git merge --continue` or `git rebase --continue`, or run `git merge --abort` or `git rebase --abort` to undo the merge/rebase.
 
+
 * * *
 
-<!-- #endregion pull Git Command Line -->
-
-<!-- #endregion pull-->
 
 ## Next steps
 
