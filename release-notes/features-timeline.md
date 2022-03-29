@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 2/11/2021
+ms.date: 3/29/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -115,6 +115,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+     <td rowspan="4"><a href="2022/sprint-201-update.md" data-raw-source="[29 March 2022](2022/sprint-201-update.md)">29 March 2022</a></td> 
+    <td>Remove the ability to download a deleted attachment from work item history</td><td>Boards</td><td>Future</td></tr>
+    <td>New extension points for Pipelines details view</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved migration to Azure DevOps Services</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improvement to Pipelines Runs REST API</td><td>Pipelines</td><td>Future</td></tr>
+</tr> 
     <td rowspan="3"><a href="2022/sprint-200-update.md" data-raw-source="[28 February 2022](2022/sprint-200-update.md)">28 February 2022</a></td> 
     <td>Updates to Azure File Copy task</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvement to user interface</td><td>Artifacts</td><td>Future</td></tr>
