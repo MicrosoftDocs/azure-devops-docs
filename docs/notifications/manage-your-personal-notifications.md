@@ -28,8 +28,6 @@ Personal notifications get sent to you in the form of an email as changes occur 
 
 For information about team and project-level notifications, see [Team and project-level notifications](about-notifications.md#team-and-project-level-notifications) and [Manage team or group notifications](manage-team-group-global-organization-notifications.md).
 
-[!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
-
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ::: moniker range="azure-devops"
