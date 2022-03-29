@@ -37,7 +37,7 @@ This article specifies certain limits placed on the use and configuration of Azu
 
 | Configuration object |  Limit | 
 |--------|-------|
-| Projects | 300 per organization | 
+| Projects | 1000 per organization for Azure DevOps Services</br>No prescribed limit for on-premises</br>(See also [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md#projects) | 
 | Teams | 5,000 per organization | 
 | Work item tags | 150,000 tag definitions per organization | 
 | Area Paths | 10,000 per organization | 
