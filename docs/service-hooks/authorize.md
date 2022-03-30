@@ -4,13 +4,15 @@ ms.topic: conceptual
 title: Authorize services 
 description: Authorize services to work with Azure DevOps
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---
 
 #  Manage authorization of services to access Azure DevOps 
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 When you use a service that's integrated with Azure DevOps,
 we use the industry-standard OAuth 2.0 authorization framework to provide safe,

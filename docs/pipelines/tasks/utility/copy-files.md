@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Copy Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to copy files from a source folder to a target folder using match patterns.
 

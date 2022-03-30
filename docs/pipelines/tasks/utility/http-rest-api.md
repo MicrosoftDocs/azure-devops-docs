@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Invoke REST API task
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 Use this task to invoke an HTTP API and parse the response.
 

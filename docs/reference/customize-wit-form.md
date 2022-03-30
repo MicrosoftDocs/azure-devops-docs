@@ -6,14 +6,14 @@ ms.technology: devops-agile
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---
 
 # Customize the work tracking web form  
 
-[!INCLUDE [temp](../includes/dev15-and-ts-version-header.md)]  
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]  
 
 
 > [!IMPORTANT]  
@@ -70,7 +70,7 @@ See the following topics to make the indicated customizations:
 > [!NOTE]   
 > The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../organizations/settings/work/manage-process.md) to modify the work item type. 
 
-1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
+1. If you don't have administration permissions for your project, [get them](../organizations/security/change-organization-collection-level-permissions.md).  
   
 1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](./witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md#run-witadmin-tool). 
 

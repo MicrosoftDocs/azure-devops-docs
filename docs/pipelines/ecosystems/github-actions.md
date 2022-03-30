@@ -8,8 +8,9 @@ monikerRange: azure-devops
 author: juliakm
 ms.topic: quickstart
 ---
-
 # Trigger an Azure Pipelines run from GitHub Actions
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Get started using [GitHub Actions](https://docs.github.com/en/actions) with Azure Pipelines. GitHub Actions help you automate your software development workflows from within GitHub. You can deploy workflows in the same place where you store code and collaborate on pull requests and issues. 
 

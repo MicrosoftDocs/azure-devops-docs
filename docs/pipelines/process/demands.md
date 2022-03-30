@@ -12,6 +12,8 @@ monikerRange: '>= tfs-2015'
 
 # Specify demands
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
@@ -54,7 +56,7 @@ pool:
 > [!NOTE]
 > Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the only two supported operations for demands.
 
-For more information and examples, see [YAML schema - Demands](../yaml-schema.md#demands).
+For more information and examples, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool).
 
 # [Classic](#tab/classic)
 

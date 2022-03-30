@@ -11,7 +11,14 @@ monikerRange: 'tfs-2017'
 
 # Sign your mobile app in your Xcode, Xamarin.iOS, Android, or Xamarin.Android build
 
-**TFS 2017.2**
+[!INCLUDE [version-eq-2017](../../../includes/version-eq-2017.md)]
+
+::: moniker range="tfs-2017"
+
+This article applies to TFS 2017.2 and higher.
+
+::: moniker-end
+
 
 This article highlights how to manage and secure profiles for your app.
 You'll need to manage signing certificates if you're developing an app for Android or iOS. For iOS, you'll use [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). 

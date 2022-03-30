@@ -1,6 +1,6 @@
 ---
 title: Import, export, and manage work item types
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps  
 description: Manage work item types for a project 
 ms.technology: devops-agile
 ms.custom: witadmin
@@ -8,13 +8,13 @@ ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Import, export, and manage work item types
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 You can manage work item types for a project by using the following **witadmin** commands:  
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
@@ -22,7 +22,10 @@ You can manage work item types for a project by using the following **witadmin**
 -   **importwitd**:  Imports work item types from an XML definition file into a project. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type doesn't exist, a new work item type is created. To validate the XML that defines a work item type, but not import the file, use the **/v** option.   
 -   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window. 
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
-  
+
+To learn more about how work item types are used to track work, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
+
+
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
  
@@ -35,7 +38,7 @@ For the project where the work item types are defined, you must have the followi
 -   To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.    
 -   To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
   
-For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  

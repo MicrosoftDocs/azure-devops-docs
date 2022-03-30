@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2018'
 
 # Connect to Azure Artifacts feeds
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 [!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 

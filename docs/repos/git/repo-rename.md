@@ -5,15 +5,15 @@ description: You can rename a Git repository in a few steps. Your team will have
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 10/15/2021
 monikerRange: '>= tfs-2015'
+ms.date: 02/23/2022
 ---
 
 
 #  Rename a Git repository in your project
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
 
@@ -22,8 +22,14 @@ You can rename a Git repository in a project from your web browser. After you re
 ## Prerequisites
 
 - To rename a repository, you must have [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
+::: moniker range=">= azure-devops-2020"
+- If you want to use **az repos update** command to rename a repository, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+::: moniker-end
 
 ## Rename the repository
+
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -80,6 +86,24 @@ You can rename a Git repository in a project from your web browser. After you re
    ![Rename a repository](media/repo-rename/AdminVC.png)
 
 ::: moniker-end
+
+
+<a name="repos-rename" />
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="> azure-devops-2020" 
+[!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
+
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
+
+
+***
 
 ## Update the Git remotes on your dev machines
 
@@ -176,3 +200,8 @@ A: If you're using:
 
 
 <!-- ENDSECTION -->
+
+
+## Related articles
+
+- [Set Git repository settings and policies](repository-settings.md)

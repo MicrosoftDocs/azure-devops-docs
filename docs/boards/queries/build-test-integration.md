@@ -14,7 +14,7 @@ ms.date: 10/21/2021
 
 # Create a query based on build and test integration fields
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work item fields that support build and test integration support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  

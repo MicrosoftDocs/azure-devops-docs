@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Define the tasks to process a plug-in
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 <a name="top"></a> 
 

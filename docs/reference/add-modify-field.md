@@ -7,14 +7,14 @@ ms.custom: process
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: "< azure-devops"  
 ms.date: 07/20/2020
 ---
 
 # Add or modify a field to track work 
 
-[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 Your project contains 100 or more data fields, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
@@ -38,7 +38,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 - (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
+To get added as an administrator, [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
 
 
 ## Methods by which work item fields get added 
@@ -341,7 +341,7 @@ When you remove a field from a specific type of work item, that field is not rem
     witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
     ```
 
-4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
+4.  If the deleted field was reportable and your project uses SQL Server Reporting Services, [rebuild the data warehouse to purge the old field and its values](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube).
 
 For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).  
 

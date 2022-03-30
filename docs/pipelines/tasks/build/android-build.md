@@ -12,13 +12,13 @@ monikerRange: '>= tfs-2015'
 
 # Android build task (deprecated; use Gradle)
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to build an Android app using Gradle and optionally start the emulator for unit tests.
 
 ## Deprecated
 
-**The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**
+**The AndroidBuild@1 task has been deprecated. Use the [Gradle](gradle.md) task instead.**
 
 ## Demands
 

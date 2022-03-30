@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 
 # Configure a hierarchy of teams
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In [Portfolio management](portfolio-management.md), we showed how management teams and feature teams can use their backlogs to focus on the work that's most important to them. In this article, we show how to configure teams that best support the different backlog views of management and feature teams. 
 
@@ -39,7 +39,7 @@ In this article you'll learn how to:
 ## Prerequisites 
 
 - If you don't have a project yet, [create one](../../organizations/projects/create-project.md).  
-- If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group or those users who have been [granted explicit permissions to edit project information](../../organizations/security/set-project-collection-level-permissions.md) can add teams and configure the project.   
+- To add teams, you must be a member of the **Project Administrator**s group. To get added to this group, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).     
 
 
 <a id="set_up"></a>

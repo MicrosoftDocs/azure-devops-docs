@@ -12,6 +12,8 @@ monikerRange: '> tfs-2018'
 
 # Security and Compliance Assessment task
 
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+
 [Azure Policy](/azure/governance/policy/) allows you to assess and enforce resource compliance against defined IT policies.
 Use this task in a gate to identify, analyze and evaluate the security risks,
 and determine the mitigation measures required to reduce the risks.

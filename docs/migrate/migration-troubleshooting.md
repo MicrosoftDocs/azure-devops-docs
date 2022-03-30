@@ -8,12 +8,12 @@ ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/16/2019
+ms.date: 01/31/2022
 ---
 
 # Troubleshoot import and migration errors
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The data migration tool flags errors that you need to correct prior to performing a migration to Azure DevOps Services. This article describes the most common warnings and errors that you may receive when preparing to migrate. After correcting each error, run the **migrator validate** command again to verify resolution of all errors.
 
@@ -21,7 +21,7 @@ The data migration tool flags errors that you need to correct prior to performin
 > [!NOTE]
 > We recommended that you use the [Migration guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
 >
-> With the release of Azure DevOps Server 2019, the TFS Database Import Service was re-branded to become the data migration tool for Azure DevOps. The data migration tool, **TfsMigrator** has been renamed **migrator** for short. The service still works exactly the same as the previous import service. If you're on an older version of on-premises with TFS as the branding, you can still use **migrator** to migrate to Azure DevOps as long as you upgrade to one of the supported versions. For details, see [Migrate data from Azure DevOps Server to Azure DevOps Services](migration-overview.md).
+> With the release of Azure DevOps Server 2019, the Team Foundation Server (TFS) Database Import Service was re-branded to become the data migration tool for Azure DevOps. The data migration tool, **TfsMigrator** has been renamed **migrator** for short. The service still works exactly the same as the previous import service. If you're on an older version of on-premises with TFS as the branding, you can still use **migrator** to migrate to Azure DevOps as long as you upgrade to one of the supported versions. For details, see [Migrate data from Azure DevOps Server to Azure DevOps Services](migration-overview.md).
 
 
 ## Resolve size warnings
@@ -40,7 +40,7 @@ This warning **DOES NOT** mean that your collection is too large for import.
 
 ### Table size above recommended size
 
-Similar to the previous warning, the following warning means you must use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import.  
+Similar to the previous warning, the following warning means you must use the SQL Azure Virtual Machine (VM) method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import.  
 
 ```cmdline
 The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection  
@@ -72,7 +72,7 @@ The database metadata size is currently {Metadata Size}GBs. This is above the ma
 
 ## Resolve collation warnings
 
-Collation warnings refer to your collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the **warning** messages.  
+Collation warnings refer to your collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either `SQL_Latin1_General_CP1_CI_AS` or `Latin1_General_CI_AS` will generally receive one of the **warning** messages.  
 
 ### No native support
 
@@ -110,7 +110,7 @@ In order to continue, you need to [change your collection's collation](/sql/rela
     
 ## Resolve identity errors
 
-Identity errors aren't common when validating a collection, but when they do occur you need to fix them prior to migration to avoid undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while is was once allowed for some users to be members of a built-in valid users group, it isn't in the more recent versions. 
+Identity errors aren't common when validating a collection, but when they do occur you need to fix them prior to migration to avoid undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while it was once allowed for some users to be members of a built-in valid users group, it isn't in the more recent versions. 
 
 The following sections provide guidance for resolving the most common identity errors.
 
@@ -122,7 +122,7 @@ This error indicates that one or more groups is missing a permission that it's e
 
 #### Project Collection Valid Users error message
 
-Examine the error message(s) the data migration tool highlighted. If the flagged group ends with "**0-0-0-0-3**", such as in the example below, you need to fix a missing permission for the **Project Collection Valid Users** group. 
+Examine the error message(s) the data migration tool highlighted. If the flagged group ends with "**0-0-0-0-3**", such as in the following example, you need to fix a missing permission for the **Project Collection Valid Users** group. 
 
 Run the following command, replace the scope with the one from the error message and specify your collection URL.
 
@@ -130,7 +130,7 @@ Run the following command, replace the scope with the one from the error message
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
 
-You determine the scope and group SID from the error message. 
+You determine the scope and group security ID (SID) from the error message. 
 
 ```cmdline
 ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 for scope:397c326b-b97c-4510-8271-75aac13de7a9. Expected:1 and Actual:0 
@@ -144,7 +144,7 @@ TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S
 
 #### Project Collection Administrators error message
 
-Carefully examine the error message(s) the data migration tool highlighted. If the flagged group that ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe**, replace the scope with the one from the error message and specify your collection.
+Carefully examine the error message(s) the data migration tool highlighted. If the flagged group that ends with "**0-0-0-0-1**", such as in the following example, then you will need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe**, replace the scope with the one from the error message and specify your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -156,7 +156,7 @@ TFSSecurity.exe /a+ Identity "{scope}\\" Delete sid:{Group SID} ALLOW /collectio
 TFSSecurity.exe /a+ Identity "{scope}\\" ManageMembership sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
 
-In the following example, take the scope and group SID from the error message and add them to the preceding command. 
+In the following example, take the scope and group `SID` from the error message and add them to the preceding command. 
 
 ```cmdline
 ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 for scope:0c7c2216-fa4b-4107-a203-82b324a147ef. Expected:15 and Actual:0 
@@ -178,12 +178,12 @@ When you need to correct  multiple errors, we recommend that you create a batch 
 
 ### ISVError: 300005
 
-ISVError: 300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are default groups defined for all projects and collections. They're non-editable groups that only contain other Azure DevOps security groups as members.This error indicates that an AD group or user identity has a direct membership in a Valid Users group. 
+ISVError: 300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are default groups defined for all projects and collections. These groups are not editable. They are designed to only contain other Azure DevOps permission or security groups as members. This error indicates that an Active Directory (AD) group or user identity has a direct membership in a Valid Users group. 
 
 > [!IMPORTANT]
 > Ensure that you have a backup of your collection and configuration databases before running the following commands to resolve the error. 
 
-Since you can't directly edit Valid Users groups, you need to correct the invalid membership by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error messages the data migration tool highlights. Copy down the GroupSid, MemberId, and ScopeId as you'll need to place these values into the following command.
+Since you can't directly edit Valid Users groups, you need to run a SQL statement against the configuration database to remove the offending identity and correct the invalid membership. Carefully examine the error messages highlighted by the data migration tool. Copy the `GroupSid`, `MemberId`, and `ScopeId` as you'll need to place these values into the following command.
 
 ```SQL
 DECLARE @p6 dbo.typ_GroupMembershipTable
@@ -193,12 +193,13 @@ INSERT into @p6 values('{GroupSid}','Microsoft.TeamFoundation.Identity','{Member
 EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='{ScopeId}',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5',@updateGroupAudit=0
 ```
 
-Below is an example ISVError: 300005 message from the data migration tool. 
+The following example lists an example of an ISVError: 300005 message from the data migration tool. 
 
 ```cmdline
 ISVError:300005 Unexpected non group identity was found to have direct membership to everyone group. GroupSid:S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3, MemberId:76050ddf-4fd8-48c4-a1ff-859e44364519, ScopeId:7df650df-0f8b-4596-928d-13dd89e5f34f
 ```
-If you see the MemberId from the error message comes back as a SID instead of a GUID, you need to get the MemberID from the dbo.tbl_Identity table in Configuration DB to get the GUID for the Member Sid.
+
+If the error message lists a `MemberSid`, you need to get the `MemberID` from the dbo.tbl_Identity table in the configuration database. With the `MemberID`, you can then look up the GUID for the `MemberSid`.
 
 ```cmdline
 ISVError:300005 Unexpected non group identity was found to have direct membership to everyone group. GroupSid:S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3, MemberSid:System.Security.Principal.WindowsIdentity;S-1-5-21-124525095-708259637-1543119021-1737349, ScopeId:7df650df-0f8b-4596-928d-13dd89e5f34f
@@ -211,7 +212,7 @@ SET @MemberId = (Select Id from dbo.tbl_Identity where Sid ='S-1-5-21-124525095-
 SELECT @MemberId
 ```
 
-Copy the GroupSid, MemberId, and ScopeId into the SQL command.
+Copy the `GroupSid`, `MemberId`, and `ScopeId` into the SQL command.
 
 ```SQL
 
@@ -251,10 +252,10 @@ Install-Module AzureAD
 // Install the MSOnline PowerShell module -  ensuring to select Yes to All
 Install-Module MSOnline
 
-// Connect to AAD and use your AAD credentials (someone@somecompany.com) to login when the pop-up appears
+// Connect to Azure AD and use your Azure AD credentials (someone@somecompany.com) to login when the pop-up appears
 Connect-MsolService 
 
-// Try to retrieve information on a user from your AAD
+// Try to retrieve information on a user from your Azure AD
 Get-MsolUser -UserPrincipalName someone@somecompany.com
 ```
 
@@ -265,7 +266,7 @@ If you're able to retrieve user information, open your log file from the **prepa
 Number of active users is {Number of Users}.
 ```
 
-If this number is in the high five-digits or even six-digits ranges, it may indicate that the volume of identities being mapped requires more time than the timeout limit provides. Inspect your collection for inclusions of large AD groups such as an 'everyone' group. If possible, remove these groups and try again. If you still can't resolve this error, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
+If the number of active users is over 50,000, the volume of identities being mapped may require more time than provided by the timeout limit. Inspect your collection for inclusions of large AD groups such as an 'everyone' group. If possible, remove these groups and try again. If you still can't resolve this error, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
 ## Resolve process errors
 
@@ -339,13 +340,11 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 ## Resolve import errors
 
-Hit a failure when running your import? Failures in the import space fall into one of two categories. 
-- Verification failures occur when the import fails to start. This failure indicates that the data migration tool attempted to queue an import, but returned an error instead. 
-- Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import receives a failure email. 
+Failures that occur during import fall into one of two categories, [verification failure](#verification-failures) and [import failure](#import-failures).  
 
 ### Verification failures
 
-Verification failure issues indicate that your import request isn't valid. Follow the recommended guidance provided below based on the error messages you receive. Then try to queue the import again.   
+Verification failures occur when the import fails to start. The data migration tool attempted to queue an import, but returned an error instead. Verification failure issues indicate that your import request isn't valid. Address the error messages you receive according to the following guidance and then try to import again.   
 
 **VS403254**
 
@@ -490,7 +489,7 @@ AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /Source
 
 **VS403316**
 
-Inconsistencies were detected in some TFVC files within your collection.
+Inconsistencies were detected in some Team Foundation version control (TFVC) files within your collection.
 
 ```cmdline
 VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.
@@ -529,7 +528,7 @@ Verify the collection against which you are running the data migration tool has 
 
 ### Import failures
 
-When an import fails, the individual that queued the import receives an email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your import. 
+Import failures happen when the data migration tool successfully queues an import, but fails to complete the import. The individual that queued the import receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your import. 
 
 If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. We recommended you not attempt the import again until the failure causing issue is resolved. 
  

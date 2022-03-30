@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 

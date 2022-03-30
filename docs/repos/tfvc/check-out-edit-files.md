@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Check out and edit files
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 When you want to edit a file you can open it from Solution Explorer or from Source Control Explorer. When you begin editing a file, it is automatically checked out to you. In rare situations (for example, you want to check out and lock the file to make sure your changes are checked in before changes from other team members), you might need to manually check out (and optionally lock) an item.
 

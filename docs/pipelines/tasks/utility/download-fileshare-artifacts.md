@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Download Fileshare Artifacts task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to download fileshare artifacts.
 

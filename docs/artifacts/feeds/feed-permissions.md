@@ -4,28 +4,31 @@ description: Configure Artifacts permissions for feeds, views, and pipelines
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/06/2021
+ms.date: 02/28/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
 
 # Configure permissions
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 With Azure Artifacts you can publish, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
 
 ## Configure Azure Artifacts settings
 
-Feed owners have the ability to specify who can create or administer Artifacts feeds. The settings icon will not be visible if you don't have the right permissions. To access the settings panel, select **Artifacts** from within your project, and then select the **Azure Artifacts settings** icon on the right side of the screen.
+Feed owners can specify who can create and administer Artifacts feeds. To access Azure Artifacts settings, select the **Azure Artifacts settings** icon on the right.
 
-:::image type="content" source="media/artifacts-settings-button.png" alt-text="Screenshot showing the Artifacts settings icon":::
+:::image type="content" source="media/azure-artifacts-settings.png" alt-text="A screenshot showing how to access Azure Artifacts settings":::
 
-By default, everyone in the same organization have the permission to create new feeds. A user who creates a feed is both an owner and an administrator of that feed.
+> [!NOTE]
+> The Azure Artifacts settings icon will not be visible if you don't have the right permissions.
 
-1. Users in the same organization are able to create new feeds.
+By default, users in an Azure DevOps organization can create new feeds in that organization. A user who creates a feed is both an owner and an administrator of that feed.
 
-2. Only feed administrators and users or groups specified here 2 are able to create new feeds.
+1. Users in this Azure DevOps organization can create new feeds.
+
+2. Only feed administrators and users or groups specified here are able to create new feeds.
 
 3. Users or groups added here become administrators of all the feeds in the organization.
 
@@ -48,17 +51,15 @@ By default, everyone in the same organization have the permission to create new 
 
 ::: moniker range=">= azure-devops-2019"
 
-2. Select **Permissions**.
+2. Select **Permissions**, and then select **Add users/groups**.
 
-    :::image type="content" source="media/editfeeddialog-azure-devops-newnav.png" alt-text="Screenshot showing feed permissions.":::
+    :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot showing the feed's permissions.":::
 
-3. Select **Add users/groups**.
-
-    :::image type="content" source="media/add-users-groups.png" alt-text="Screenshot showing the add users/groups button.":::
-
-4. Add new user(s)/group(s), and then select their access role. Select **Save** when you are done.
+3. Add new user(s)/group(s), and then select their **Role**.
 
     :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
+
+4. Select **Save** when you are done.
 
 ::: moniker-end
 
@@ -114,7 +115,7 @@ You can restrict access to a view by changing its visibility to **specific peopl
 
 After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
 
-:::image type="content" source="media/view-settings.png" alt-text="Screenshot showing views settings.":::
+:::image type="content" source="media/edit-views.png" alt-text="A screenshot showing the access permissions for the preRelease view.":::
 
 > [!IMPORTANT]
 > Views inherit their permissions from the parent feed. Setting a view's visibility to **Specific people** without specifying users or groups will default the view's permissions back to its parent's feed permissions.
@@ -123,19 +124,15 @@ After restricting your view's visibility to `specific people`, the access permis
 
 ## Pipelines permissions
 
-To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** set to *Contributor*. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor. The project-level build identity is named as follows:
+To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** role set to *Contributor*. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor. 
 
-`[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
+The project-level build identity is named as follows: `[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
 
-You can also use the **Allow project-scoped builds** feature to automatically set up permissions for your project-scoped build identity. To do so
-
-1. From within your feed, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
+1. From within your feed, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
 
 1. Select the **Permissions** tab.
 
-1. Select the ellipsis on the right, and then select **Allow project-scoped builds**.
-
-:::image type="content" source="media/project-scoped-builds.png" alt-text="Screenshot showing how to allow project-scoped builds.":::
+1. Select **Add users/groups**, and then add your build identity as a **Contributor**.
 
 > [!NOTE]
 > If you want to access a feed in a different project from your pipeline, you must set up the other project to grant read/write access to the build service.

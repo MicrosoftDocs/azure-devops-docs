@@ -1,4 +1,4 @@
-﻿---
+---
 title: Task groups in Azure Pipelines and TFS (classic)
 ms.custom: seodec18
 description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS)
@@ -12,14 +12,14 @@ monikerRange: '>= tfs-2017'
 
 # Task groups for builds and releases (classic)
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > [!NOTE]
-> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](../yaml-schema.md#step-templates).
+> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](/azure/devops/pipelines/yaml-schema/steps-template).
 
 A *task group* allows you to encapsulate a sequence of tasks, already defined
 in a build or a release pipeline, into a single reusable task that can be

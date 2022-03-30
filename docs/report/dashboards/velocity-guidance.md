@@ -13,7 +13,7 @@ ms.date: 09/28/2021
 
 # Velocity metrics and usage guidance  
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 Velocity metrics provide useful information to support the following team and product management activities:  
 - Sprint planning  

@@ -6,7 +6,7 @@ metadata:
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
   ms.date: 11/04/2021
 
@@ -15,7 +15,7 @@ title: Work in Excel connected to Azure Boards FAQs
 
  
 summary: | 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]  
 
   Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
@@ -141,7 +141,7 @@ sections:
           **No**. You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/create-test-cases.md#use-the-grid-view-to-edit-test-cases).  
             
           > [!div class="mx-imgBorder"]  
-          > ![Test grid view](/azure/devops/test/media/create-test-cases/newtestcasesusinggrid.png)
+          > ![Test grid view](../../../test/media/create-test-cases/newtestcasesusinggrid.png)
 
   - name: Publish and refresh 
      
@@ -212,4 +212,3 @@ additionalContent: |
   - [Create your backlog](../../backlogs/create-your-backlog.md) 
   - [Azure DevOps Office integration issues](tfs-office-integration-issues.md) 
   - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
-

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # CocoaPods task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
 

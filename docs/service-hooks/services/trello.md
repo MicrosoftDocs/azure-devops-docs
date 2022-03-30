@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 # Create a service hook for Azure DevOps Services and TFS with Trello
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Create cards and lists in Trello in response to events from Azure DevOps.
 For example, when code is pushed, or a build occurs.

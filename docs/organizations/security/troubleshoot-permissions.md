@@ -13,7 +13,7 @@ ms.date: 03/29/2021
 
 # Troubleshoot access and permission issues
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps security and permission structure is extensive, so you may find yourself needing to investigate why you or a project member doesn’t have the access to a project, service, or feature that they expect to have. Find step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
 
@@ -84,7 +84,7 @@ For more information about permissions, see [Permissions and groups](permissions
 
 ## Trace a permission
 
-Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions. To trace a permission from the web portal, open the permission or security page for the corresponding level. For more information, see [Change individual permissions](change-individual-permissions.md).
+Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions. To trace a permission from the web portal, open the permission or security page for the corresponding level. For more information, see [Request an increase in permission levels](request-changes-permissions.md).
 
 
 ::: moniker range=" azure-devops"
@@ -154,7 +154,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Change individual permissions](change-individual-permissions.md).
+For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
 
 ## Refresh or reevaluate permissions
 
@@ -196,7 +196,7 @@ For more information about work item type rules that apply toward restricting op
 
 ## Hide organization settings from users
 
-If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility for projects** preview feature. 
+If a user's limited to seeing only their projects, or from seeing the organization settings, the following information may explain why. To restrict users from accessing organization settings, you can enable the **Limit user visibility and collaboration to specific projects** preview feature. 
 
 ::: moniker range=" azure-devops"
 
@@ -211,7 +211,7 @@ Examples of restricted users include Stakeholders, or members of a security grou
 
 ::: moniker-end
 
-For more information about hiding organization settings from users, see [About projects, Project-scoped User group](../projects/about-projects.md#project-scoped-user-group).
+For more information about hiding organization settings from users, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 ::: moniker range=" azure-devops"
 
@@ -306,8 +306,7 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 ## Related articles
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
-- [Change individual or group permissions](change-individual-permissions.md)
-- [Security and permission management tools](security-tools-reference.md)  
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
-- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
+- [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)
+- [Security best practices](security-best-practices.md)
+- [Security and permission management tools](security-tools-reference.md)    
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)

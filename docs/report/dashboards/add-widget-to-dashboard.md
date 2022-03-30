@@ -15,7 +15,7 @@ ms.date: 09/27/2021
 
 # Add widgets to a dashboard
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
@@ -283,6 +283,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Analytics-based widgets](../dashboards/analytics-widgets.md)
 - [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
@@ -291,6 +292,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 - [Velocity guidance](velocity-guidance.md)

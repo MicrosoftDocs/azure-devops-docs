@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Download (get) files from the Server
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 In general, you should get the latest files from the server on a regular basis so that the code you develop is compatible with the code developed by others on your team and to minimize the risk of creating bugs when you check in your code. You can download the latest version or a previous version of one or more files from your Team Foundation Server to your workspace on your dev machine.
 

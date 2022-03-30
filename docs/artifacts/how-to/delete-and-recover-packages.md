@@ -5,14 +5,14 @@ ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: contperf-fy21q2, contperf-fy22q1
 ms.topic: conceptual
-ms.date: 08/17/2021
+ms.date: 02/16/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
 
 # Delete and recover packages
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Team Foundation Server 2018 | Team Foundation Server 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Azure Artifacts safely stores different types of packages in your feed, whether you published them directly or saved them from upstream sources. As older package versions fall out of use, you might want to clean them up either manually or automatically by using retention policies. 
 
@@ -210,11 +210,11 @@ To configure retention policies:
 
     :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot that shows the Artifacts button.":::
 
-1. Select the gear icon in your feed, and then select **Feed settings**.
+1. Select the gear icon to navigate to your feed's settings.
 
-    :::image type="content" source="../media/feed-settings-azure-devops-newnav.png" alt-text="Screenshot that shows feed settings.":::
+    :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to navigate to feed settings.":::
 
-1. Select the **Feed details** tab, and then select the **Enable package retention** checkbox. Then enter values for:
+1. Select **Feed details**, and then select the **Enable package retention** checkbox. Then enter values for:
 
     - **Maximum number of versions per package**: How many versions of a package you want to keep.
     - **Days to keep recently downloaded packages**: Packages will be deleted only if they haven't been downloaded for the number of days set in here.
@@ -269,13 +269,11 @@ Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll
 
 1. Select **Recycle Bin**.
 
-    :::image type="content" source="../media/artifacts-recycle-bin.png" alt-text="Screenshot of the Recycle Bin button.":::
+    :::image type="content" source="../media/recycle-bin.png" alt-text="A screenshot showing how to access the recycle bin.":::
 
-1. Select the appropriate package, and then select the package version that you want to delete.
+1. Select your package, and then select **Restore**.
 
-1. Select **Restore to feed**.
-
-    :::image type="content" source="../media/restore-packages.png" alt-text="Screenshot of how to restore deleted packages.":::
+    :::image type="content" source="../media/restore-package.png" alt-text="A screenshot showing how to restore deleted packages.":::
 
 ::: moniker-end
 

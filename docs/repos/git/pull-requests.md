@@ -13,8 +13,8 @@ monikerRange: '<= azure-devops'
 
 # Create pull requests
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Create pull requests (PRs) to change, review, and merge code in a [Git repository](creatingrepo.md). You can create PRs from branches in the upstream repository or from branches in your [fork](forks.md) of the repository. Your team can [review the PRs](review-pull-requests.md) and give feedback on changes. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs. Depending on [branch policies](branch-policies.md) and other requirements, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
 
@@ -51,7 +51,7 @@ For PR guidelines and management considerations, see [About pull requests](about
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker range=">= azure-devops-2020"
-- You can create and manage PRs from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+- You can create and manage PRs from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 <a id="create-pr" />
 
 ::: moniker range=">= azure-devops-2020"
-To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). To open the PR in your browser after creation, use the `--open` parameter.
+To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az-repos-pr-create). To open the PR in your browser after creation, use the `--open` parameter.
 
 ```azurecli
 az repos pr create [--auto-complete {false, true}]
@@ -370,7 +370,7 @@ To edit the title, description, or any other details in an existing PR, open the
 ::: moniker range=">= azure-devops-2020"
 <a id="add-details-pr" /> 
 
-You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
+You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az-repos-pr-create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az-repos-pr-update).
 
 When you create a PR with `az repos pr create`, add a `--title` and a detailed `--description` of your changes so others can see what problems the changes solve. The `--description` parameter accepts Markdown entry, and each value in the argument is a new line of the PR description.
 

@@ -5,17 +5,17 @@ description: Learn how to track work by creating queries to list work items in A
 ms.custom: boards-queries, contperf-fy21q3 
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
-ms.topic: overview
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021
+ms.date: 03/01/2022
 ---
 
 
-# Track your work by using managed queries 
+# Track your work by using managed queries in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or  bulk update work items. Along with managed queries, the semantic search tool provides some overlapping and different functionality worth exploring. 
 

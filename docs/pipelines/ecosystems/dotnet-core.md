@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and deploy .NET Core apps
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Use a pipeline to automatically build and test your .NET Core projects. Learn how to do the following tasks:
 
@@ -148,7 +148,7 @@ pool:
   vmImage: 'ubuntu-18.04' # examples of other options: 'macOS-10.15', 'windows-2019'
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](../yaml-schema.md#pool) for further examples.
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema/pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the [UseDotNet@2](../tasks/tool/dotnet-core-tool-installer.md) task to your YAML file.
@@ -181,7 +181,7 @@ steps:
 ```
 
 > [!TIP]
-> To save the cost of running the tool installer, you can set up a [self-hosted agent](../agents/agents.md#install). See [Linux](../agents/v2-linux.md), [MacOS](../agents/v2-osx.md), or [Windows](../agents/v2-windows.md). 
+> To save the cost of running the tool installer, you can set up a [self-hosted agent](../agents/agents.md#install). See [Linux](../agents/v2-linux.md), [macOS](../agents/v2-osx.md), or [Windows](../agents/v2-windows.md). 
 > You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the preview or private SDKs that aren't officially supported by Azure DevOps or you have available on your corporate or on-premises environments only. 
 
 ::: moniker-end
@@ -648,7 +648,7 @@ Repeat the same commands in the same order on your development machine to locate
   you should also use the **NuGet** task to restore packages specified in `packages.config` files.
 Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
-* Your builds might fail intermittently while restoring packages. Dither NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You may want to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
+* Your builds might fail intermittently while restoring packages: either NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You may want to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
 
 * Occasionally, when we roll out a new version of the .NET Core SDK or Visual Studio, your build might break. For example, if a newer version or feature of the NuGet tool gets shipped with the SDK. To isolate this issue, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK that's used in your build.
 

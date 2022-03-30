@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Msdn command  (Team Foundation Version Control)
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 
 The **msdn** command displays a help topic from the MSDN library that contains detailed information about a Team Foundation version control command.

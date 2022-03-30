@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # IIS Web App Deploy task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy a website or web app using WebDeploy.
 

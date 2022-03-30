@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Lock a branch
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Prevent updates to a Git [branch](./create-branch.md) by locking the branch. 
 Locking a branch prevents other users from changing the existing commit history. 

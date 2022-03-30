@@ -13,7 +13,7 @@ author: vijayma
 
 # Build, test, & deploy Android apps
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can set up pipelines to automatically build, test, and deploy Android applications.
 ## Prerequisites

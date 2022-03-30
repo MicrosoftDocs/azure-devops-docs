@@ -5,10 +5,13 @@ ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.reviewer: amullans
+monikerRange: '>= tfs-2018'
 ms.date: 2/6/2018
 ---
 
 # Constructing a complete package graph
+
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 > [!NOTE]
 > Check your [package type](../start-using-azure-artifacts.md#feature-availability) to ensure compatibility with Azure DevOps Services or on-premises. 

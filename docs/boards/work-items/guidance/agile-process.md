@@ -15,7 +15,7 @@ ms.date: 11/07/2021
 
 # Agile process work item types 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a project using the Agile  process. They're based on Agile principles and values.  
  
@@ -208,7 +208,7 @@ The project administrator for each project [defines area and iteration paths](..
    :::column span="3":::
    Lists all active bugs that aren't assigned to a team member.
 
-   The [Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) this query. 
+   The [Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) this query. 
 
    :::column-end:::
 :::row-end:::
@@ -240,7 +240,7 @@ The project administrator for each project [defines area and iteration paths](..
    :::column span="3":::
    Lists all issues under the specified iteration path that aren't closed and any tasks that are linked to the issues and then sorts the issues by rank and priority.
 
-   The [Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) references this query. 
+   The [Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) references this query. 
 
    :::column-end:::
 :::row-end:::

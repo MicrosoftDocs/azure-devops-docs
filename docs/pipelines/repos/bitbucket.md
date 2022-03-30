@@ -10,7 +10,7 @@ monikerRange: azure-devops
 
 # Build Bitbucket Cloud repositories
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Pipelines can automatically build and validate every pull request and commit to your Bitbucket Cloud repository. This article describes how to configure the integration between Bitbucket Cloud and Azure Pipelines.
 
@@ -46,7 +46,7 @@ OAuth is the simplest authentication type to get started with for repositories i
 To use OAuth, login to Bitbucket when prompted during pipeline creation. Then, click **Authorize** to authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
 
 > [!NOTE]
-> The maximum number of BitBucket repositories that the Azure DevOps Services user interface can load is 2,000. 
+> The maximum number of Bitbucket repositories that the Azure DevOps Services user interface can load is 2,000. 
 
 ### Password authentication
 
@@ -78,7 +78,7 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 ### Skipping CI for individual commits
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `[skip ci]` in the message or description of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push. You can also use any of the following variations.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
@@ -196,7 +196,7 @@ You can opt out of pull request validation entirely by specifying `pr: none`.
 pr: none
 ```
 
-For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
+For more information, see [PR trigger](/azure/devops/pipelines/yaml-schema/pr) in the [YAML schema](/azure/devops/pipelines/yaml-schema).
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting).

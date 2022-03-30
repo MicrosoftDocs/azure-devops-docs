@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # MSBuild task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -297,7 +297,7 @@ To setup your own self-hosted agent and run the build jobs:
 
 * [Self-hosted Windows agents](../../agents/v2-windows.md#self-hosted-windows-agents)
 * [Self-hosted Linux agents](../../agents/v2-linux.md#self-hosted-linux-agents)
-* [Self-hosted MacOS agents](../../agents/v2-osx.md#self-hosted-macos-agents)
+* [Self-hosted macOS agents](../../agents/v2-osx.md#self-hosted-macos-agents)
 
 ##### What else can I do?
 

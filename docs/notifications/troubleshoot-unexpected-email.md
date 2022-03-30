@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Why did I get this email
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 
 If you receive a notification email that you didn't expect, it could be for one of the following reasons:

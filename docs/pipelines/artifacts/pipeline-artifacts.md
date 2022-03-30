@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Publish and download pipeline Artifacts
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
 
@@ -60,7 +60,7 @@ steps:
 
 - Run the following command to publish your Artifact:
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 
@@ -92,17 +92,20 @@ Packages in Azure Artifacts are immutable. Once you publish a package, its versi
 
 ### Use .artifactignore
 
-`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
+`.artifactignore` uses a similar syntax to `.gitignore` (with few limitations) to specify which files should be ignored when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
 
-Example: ignore all files except **.exe** files:
+> [!NOTE]
+> The plus sign character `+` is not supported in URL paths and some builds metadata for package types such as Maven.
+
+**Example**: ignore all files except **.exe** files:
 
 ```
 **/*
 !*.exe
 ```
 
-> [!NOTE]
-> `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
+> [!IMPORTANT]
+> Azure Artifacts automatically ignore the *.git* folder path when you don't have a *.artifactignore* file. You can bypass this by creating an empty *.artifactignore* file.
 
 ## Download artifacts
 
@@ -117,6 +120,9 @@ steps:
 ```
 
 - **current**: download artifacts produced by the current pipeline run. Options: current, specific.
+
+> [!NOTE]
+> List of published artifacts will be available only in following dependant jobs. Therefore, use `current` option only in separate jobs, that has dependency on jobs with publish artifacts tasks. 
 
 > [!TIP]
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
@@ -150,7 +156,7 @@ steps:
 
 - Run the following command to download your Artifact
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 

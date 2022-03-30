@@ -7,14 +7,14 @@ ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 09/13/2021
+ms.date: 03/04/2022
 ---
 
 # Syntax guidance for basic Markdown usage
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -406,7 +406,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 2. Second item.
 3. Third item.
 
-### Bullet lists
+### Bulleted lists
 
 **Example:**
 
@@ -432,8 +432,11 @@ Ordered lists start with a number followed by a period for each list item. Unord
    - Item 3
 1. Second item.
    - Nested item 1
+      - Further nested item 1
+      - Further nested item 2
+      - Further nested item 3
    - Nested item 2
-   - Nested item 3 
+   - Nested item 3
 ```
 
 **Result:**  
@@ -444,6 +447,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
     - Item 3
 2. Second item.
     - Nested item 1
+       - Further nested item 1
+       - Further nested item 2
+       - Further nested item 3 
     - Nested item 2
     - Nested item 3
 
@@ -464,7 +470,7 @@ In Markdown files and widgets, you can set text hyperlinks for your URL using th
 [Link Text](Link URL)
 ```
 
-When linking to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
+When you're linking to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
 
 **Supported links for Welcome pages:**
 
@@ -488,7 +494,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 > [!NOTE]  
 > Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
-> For information on how to specify relative links from a Welcome page or Markdown widget, see **Source control relative links**.
+> For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#source-control-relative-links).
 
 **Example:**  
 
@@ -782,7 +788,7 @@ In pull request comments, you can attach files to illustrate your point or to gi
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it renders directly into your comment or wiki page.
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
-Attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and can select links to download attached files.
+Attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and select links to download attached files.
 
 Attachments support the following file formats.
 

@@ -15,7 +15,7 @@ ms.date: 10/26/2021
 
 # Run a semantic work item search in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="search-box"/>
 
@@ -182,6 +182,8 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
+
+<a id="start-an-improvised-search-and-use-shortcut-filters" />
 
 ::: moniker range="<= tfs-2017" 
 

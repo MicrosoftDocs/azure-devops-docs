@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Keyboard shortcuts for Azure Boards and Team Explorer
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]    
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]    
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. Along with these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 
 For specific guidance on navigating within the web portal, see [Web portal navigation](../../project/navigation/index.md).
@@ -110,7 +110,7 @@ Use these shortcuts when working in Team Explorer.
    **Ctrl+0,h**&nbsp;&nbsp;&nbsp;Open Home  
    **Ctrl+0,m**&nbsp;&nbsp;&nbsp;Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)  
    **Ctrl+0,p**&nbsp;&nbsp;&nbsp;Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  
-   **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](../../report/sql-reports/reporting-services-reports.md)  
+   **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
    **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings  
    **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items  
    **Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../../repos/git/gitquickstart.md)  

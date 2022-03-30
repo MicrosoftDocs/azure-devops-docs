@@ -12,7 +12,7 @@ ms.date: 04/30/2021
 
 # Show bugs on backlogs and boards  
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to tracking requirements. Or, they can schedule bugs to be fixed within a sprint along with other tasks.  
 When you *track bugs as requirements*, they appear on the product Backlogs and Kanban Boards. When you *track bugs as tasks*, the bugs appear on the Sprint Backlogs and Taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).

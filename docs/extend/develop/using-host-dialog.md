@@ -12,11 +12,11 @@ ms.date: 09/19/2019
 
 # Modal dialog
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 The HostDialogService enables you to present a modal dialog to the user and prevent interaction with all parts of web access until the dialog is dismissed. 
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 <div class="alert alert-info">
     In contrast to the standard dialog control, a modal dialog presented via the HostDialogService prevents interaction by the user on the entire page, not just within the extension.

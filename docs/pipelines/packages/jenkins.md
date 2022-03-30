@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 
 # Publish NuGet packages with Jenkins 
 
-**Azure DevOps Services | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 With Azure Artifacts, you can leverage a variety of build and deployment automation tools such as Maven, Gradle, and Jenkins. This article will walk you through creating and publishing NuGet packages using Jenkins.
 

@@ -15,9 +15,9 @@ ms.date: 11/07/2021
 # Understand CMMI process template artifacts
 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They're based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts) process.
+The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They're based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md) process.
 
 <img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" />  
 
@@ -205,7 +205,7 @@ Product owners can use the shared queries that are described in the following ta
 > | Blocked Work Items | Lists all work items where the **Blocked** field is set to **Yes**.<br /><br />Only requirements, tasks, bugs, issues, and change requests can be blocked. |
 > | Corrective Action Status | Lists all tasks whose **Task Type** is set to **Corrective Action**. |
 > | Mitigation Actions | Lists all tasks whose **Task Type** is set to **Mitigation Action**. |
-> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) references this query. |
+> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) references this query. |
 > | Risks | Lists all risks, sorted by ID. |
 
 ::: moniker-end

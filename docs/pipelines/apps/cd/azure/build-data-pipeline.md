@@ -11,6 +11,8 @@ monikerRange: '=azure-devops'
 
 # Build a data pipeline by using Azure Data Factory, DevOps, and machine learning
 
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
+
 Get started building a data pipeline with data ingestion, data transformation, and model training. 
 
 Learn how to grab data from a CSV (comma-separated values) file and save the data to Azure Blob Storage. Transform the data and save it to a staging area. Then train a machine learning model by using the transformed data. Write the model to blob storage as a Python [pickle file](https://docs.python.org/3/library/pickle.html). 

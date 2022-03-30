@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Android signing task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task in a pipeline to sign and align Android APK files.
 

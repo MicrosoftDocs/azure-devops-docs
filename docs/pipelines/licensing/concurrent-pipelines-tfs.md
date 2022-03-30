@@ -1,7 +1,7 @@
 ---
-title: Parallel jobs in Team Foundation Server
+title: Parallel jobs in Azure DevOps Server
 ms.custom: seodec18
-description: Learn about the parallel jobs pricing and availability in Team Foundation Server (TFS)
+description: Learn about the parallel jobs pricing and availability in Azure DevOps Server
 ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.author: jukullam
@@ -9,9 +9,9 @@ ms.date: 09/23/2020
 monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
-# Parallel release jobs in Team Foundation Server
+# Parallel release jobs in Azure DevOps Server
 
-[!INCLUDE [version-tfs-only-2017](../includes/version-tfs-only-2017.md)]
+[!INCLUDE [version-gt-eq-2015-lt-azure-devops](../../includes/version-gt-eq-2015-lt-azure-devops.md)]
 
 This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL). For information on licensing in Azure Pipelines, see [Run parallel jobs](concurrent-jobs.md).
 

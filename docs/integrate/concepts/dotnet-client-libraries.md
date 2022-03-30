@@ -4,7 +4,7 @@ description: Easily integrate with Azure DevOps from apps and services on Window
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 11/08/2021
@@ -12,7 +12,7 @@ ms.date: 11/08/2021
 
 # .NET client libraries
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps. Client libraries integrate with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
 

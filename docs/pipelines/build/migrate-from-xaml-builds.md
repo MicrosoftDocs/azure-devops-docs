@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2013'
 
 # Migrate from XAML builds to new builds
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | XAML builds**
+[!INCLUDE [version-gt-eq-2013](../../includes/version-gt-eq-2013.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -253,7 +253,7 @@ The new build pipeline offers you some new options. See [Build and release reten
 
 ## Build and release different kinds of apps
 
-In XAML builds you had to create your own custom templates to build different types of apps. In the new build system you can pick from a set of pre-defined templates. The largest and most current set of templates are available on Azure Pipelines and in our newest version of TFS.
+In XAML builds you had to create your own custom templates to build different types of apps. In the new build system you can pick from a set of predefined templates. The largest and most current set of templates are available on Azure Pipelines and in our newest version of TFS.
 
 ### Build
 

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to add system-generated charts or query-based charts to a team dashboard in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Add charts to a dashboard
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="add-charts"></a>
 
@@ -265,7 +265,7 @@ Requires TFS 2017.2 or later version.
 
 Open the Markdown file defined in your repository and make sure you are in your team context. 
 
-Select **Add to dashboard**, and then select the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
+Select **Add to dashboard**, and then select the team dashboard to add the Markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"

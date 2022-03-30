@@ -1,27 +1,27 @@
 ---
 title: Define, capture, triage, and manage bugs or code defects in Azure Boards
 titleSuffix: Azure Boards 
-description: Learn how to define, capture, and triage bugs, code defects, and software issues in Azure Boards to manage technical debt and maintain software quality 
+description: Define, capture, and triage bugs and code defects to manage technical debt and maintain software quality. 
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.technology: devops-agile
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 11/19/2021 
+ms.date: 01/27/2022
 ---
 
 # Define, capture, triage, and manage software bugs in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed quickly to support high-quality software deployments? And, how do you do make good progress on new features while addressing your technical debt? 
+How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed quickly to support high-quality software deployments? And, how do you do make good progress on new features and address your technical debt? 
 
-At a minimum, you need a way to capture your software issues, stack rank them, assign them to a team member, and track progress. You'll want to manage your code defects in ways that align with your Agile practices. 
+At a minimum, you need a way to capture your software issues, prioritize them, assign them to a team member, and track progress. And, you want to manage your code defects in ways that align with your Agile practices. 
 
-To support these scenarios, Azure Boards provides a Bug work item type. The Bug work item type shares all the standard features of other work item types with a few more. For an overview of standard features, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).
+To support these scenarios, Azure Boards provides a specific work item type to track code defects named Bug. Bug work items share all the standard features of other work item types with a few more. For an overview of standard features, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).
 
-Extra features for managing bugs include the following benefits:
+Bugs also provide the following additional features:
 
 - Options for each team to choose how they want to track bugs 
 - Test tools to capture bugs 
@@ -59,13 +59,13 @@ The following image shows the Bug work item type for the Scrum process. The Bug 
 
 ::: moniker range=">= tfs-2017"
 > [!TIP]
-> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
+> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments added to the work item form.  
 ::: moniker-end
 
 
 ## Fields specific to bugs  
 
-The Bug work item type uses some bug-specific fields. Use the fields described in the following table to capture both the initial issue and ongoing discoveries. For information about fields specific to the CMMI process Bug, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
+The Bug work item type uses some bug-specific fields. To capture both the initial issue and ongoing discoveries, use the fields described in the following table. For information about fields specific to the Bug defined for the Capability Maturity Model Integration (CMMI) process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 ---
 :::row:::
@@ -93,7 +93,7 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
       [Found In Build](../queries/build-test-integration.md) 
    :::column-end:::
    :::column span="3":::
-       Information about the software and system configuration that is relevant to the bug and tests to apply.  The **System Info** and **Found in Build** fields are automatically filled in when a bug is created using a testing tool. These fields specify information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/test-different-configurations.md). 
+       Information about the software and system configuration that is relevant to the bug and tests to apply.  The **System Info** and **Found in Build** fields are automatically filled in when you create a bug through a testing tool. These fields specify information about the software environment and build where the bug occurred. To learn more, see [Test different configurations](../../test/test-different-configurations.md). 
    :::column-end:::
 :::row-end:::
 ---
@@ -122,8 +122,8 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
       [Priority](../queries/planning-ranking-priorities.md)<sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      - **1**: Product shouldn't ship without the successful resolution of the work item. The bug should be addressed soon.
-      - **2**: Product shouldn't ship without the successful resolution of the work item, but it doesn't need to be addressed immediately.
+      - **1**: Product requires successful resolution of the work item before it ships and addressed soon.
+      - **2**: Product requires successful resolution of the work item before it ships, but doesn't need to be addressed immediately.
       - **3**: Resolution of the work item is optional based on resources, time, and risk.
    :::column-end:::
 :::row-end:::
@@ -133,7 +133,7 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
       [Severity](../queries/planning-ranking-priorities.md)<sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      A subjective rating of the impact of a bug on the project or software system. For example: If choosing a remote link (a rare event) causes an application or web page to crash (a severe customer experience), you might specify **Severity = 2 - High** and **Priority = 3**.  Allowed values and suggested guidelines are: 
+      A subjective rating of the impact of a bug or work item on the project or software system. For example: If a remote link within the user interface&mdash;a rare event&mdash;causes an application or web page to crash&mdash;a severe customer experience, you might specify **Severity = 2 - High** and **Priority = 3**.  Allowed values and suggested guidelines are: 
       - **1 - Critical**: Must fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. And, there are no acceptable alternative methods to achieve required results.
       - **2 - High**: Consider fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. However, an acceptable alternative method exists to achieve required results.
       - **3 - Medium**: (Default) A defect that causes the system to produce incorrect, incomplete, or inconsistent results.
@@ -158,7 +158,7 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
       [Development](#development-control) 
    :::column-end:::
    :::column span="3":::
-      The **Development** control supports linking to and displaying links made to development objects. These objects include Git commits and pull requests, or TFVC changesets and versioned items. You can define links from the work item or from the commits, pull requests, or other development objects. To learn more, see [Link work items to development](#development-control) later in this article. 
+      The **Development** control supports links to and display of links made to development objects. These objects include Git commits and pull requests, or TFVC changesets and versioned items. You can define links from the work item or from the commits, pull requests, or other development objects. To learn more, see [Link work items to development](#development-control) later in this article. 
    :::column-end:::
 :::row-end:::
 ---
@@ -172,11 +172,11 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
 
 ## Choose how your team tracks bugs
 
-When determining how your team will track bug, consider the following factors.
+Your team can track bugs as requirements or as tasks. To support the team choice, consider the following factors.
 
-- Size of your team. Smaller teams will want to maintain a lightweight footprint and tracking bugs as requirements may be the most lightweight.
-- Organization requirements to track work. If your team is required to track hours, then tracking bugs as tasks aligns with this requirement.
-- How your team organizes work. If your team relies on the product backlog to order work, tracking bugs as requirements supports this activity. 
+- Size of your team. Smaller teams can maintain a lightweight footprint by tracking bugs as requirements.
+- Organization requirements to track work. If your team is required to track hours, then choose to track bugs as tasks.
+- How your team organizes work. If your team relies on the product backlog to prioritize work and add bugs, track bugs as requirements.
 - Tools your team wants to use such as the Planning pane, velocity chart, forecast, rollup, and delivery plans. Tracking bugs as tasks prevents use of several of these tools.  
 
 The following table summarizes the three options teams have to track bugs. To learn more and to set the option for your team, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
@@ -185,15 +185,15 @@ The following table summarizes the three options teams have to track bugs. To le
 
 <a id="customize"> </a>
 
-## Customize your bug work item type 
+## Customize work item type 
 
-You can customize your bug work item type or create another work item types to track software issues or customer feedback. With all work item types, you can customize the following elements: 
+You can customize the Bug and other work item types. Or, create custom types to track software issues or customer feedback. With all work item types, you can customize the following elements: 
 
 - Add or remove custom fields 
 - Add custom controls or custom tabs within the work item form
 - Customize the workflow states 
 - Add conditional rules 
-- Choose the backlog level the work item type appears 
+- Choose the backlog level in which work items appear 
   
 Before you customize your process, we recommend you review [Configure and customize Azure Boards](../configure-customize.md). 
 
@@ -208,15 +208,14 @@ To customize your particular process, see [Customize an inheritance process](../
 ::: moniker range="<= tfs-2018"
 To customize your particular process, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
-
-
+ 
 
 ## Add or capture bugs 
 
 You can define bugs from several different Azure DevOps tools. These include backlogs and boards and testing tools.  
 
 > [!TIP]   
-> By default, the only required field when creating a bug is the **Title** field. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, do that by adding conditional rules based on a state change. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
+> By default, the **Title** field is the only required field when creating a bug. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, do that by adding conditional rules based on a state change. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
 ### Add a bug from your backlog or board 
 
@@ -272,7 +271,7 @@ As with all other work item types, the Bug work item type has a well-defined wor
 |------------|------------|-----------| 
 | ![Bug workflow states, Agile process template](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/media/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
 
-For Scrum bugs, you change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from *Resolved* to *Closed*. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active.
+For Scrum bugs, you change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug and select a reason that indicates the bug is fixed. Typically, the person who created the bug then verifies the fix and updates the **State** from *Resolved* to *Closed*. If more work has been found after a bug has been resolved or closed, you can reactivate it by setting the **State** to *Committed* or *Active*.
 
 ::: moniker range=">= azure-devops-2020"  
 > [!NOTE]  
@@ -282,23 +281,41 @@ For Scrum bugs, you change the **State** from *Committed* (similar to *Active*) 
 
 ### Verify a fix 
 
-To verify a fix, a developer or tester should attempt to reproduce the bug and look for more unexpected behavior. If necessary, they should reactivate the bug.
+To verify a fix, a developer or tester attempts to reproduce the bug and look for more unexpected behavior. If necessary, they should reactivate the bug.
 
-When verifying a bug resolution, you may find that the bug wasn't fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
+When verifying a bug fix, you might find that the bug wasn't fixed or you might disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
 
 
 <a id="close">  </a>
 
 ### Close a bug  
 
-You close a bug once it's verified as fixed. However, you may also close a bug for one of these reasons:
+You close a bug once it's verified as fixed. However, you might also close a bug for one of the following reasons. Reasons available to select depend on the project process and the bug transition states. 
 
-- **Deferred** - deferring a fix until the next product release
-- **Duplicate** - bug has already been reported, you can link each bug with the Duplicate/Duplicate of link type and close one of the bugs  
-- **As Designed** - feature works as designed
-- **Cannot Reproduce** - tests prove that the bug can't be reproduced
-- **Obsolete** - the bug's feature is no longer in the product
-- **Copied to Backlog** - a PBI or user story has been opened to track the bug
+**Agile process:**
+
+- **Deferred**: Defer bug fix until the next product release.
+- **Fixed**: Bug is verified as fixed.
+- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the **Duplicate/Duplicate of** link type and close one of the bugs. 
+- **As Designed**: Feature works as designed.
+- **Cannot Reproduce**: Tests prove that the bug can't be reproduced.
+- **Obsolete**: The bug's feature is no longer in the product.
+- **Copied to Backlog**: A user story has been opened to track the bug.
+
+**Scrum process:**
+
+- **Not a Bug**: Bug is verified that it isn't a bug.
+- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the **Duplicate/Duplicate of** link type and close one of the bugs.  
+- **Removed from the backlog**: Bug is verified that it isn't a bug. Remove the bug from the backlog. 
+- **Work finished**: Bug has been verified as fixed.
+
+**CMMI process:**
+
+- **Deferred**: Defer bug fix until the next product release.
+- **Duplicate**: Bug tracks another bug currently defined. You can link each bug with the **Duplicate/Duplicate of** link type and close one of the bugs.  
+- **Rejected**: Bug is verified that it isn't a bug.  
+- **Verified**: Bug is verified as fixed.
+
 
 > [!TIP]   
 > Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug. 
@@ -378,7 +395,7 @@ When your team *tracks bugs as requirements*, you can use the Kanban board to ad
 
 You can update the bug status by dragging and dropping bugs to a new column on a board. 
 
-- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md#update-status).  
+- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  To learn more, see [Get started with your Kanban board](../boards/kanban-quickstart.md#update-status).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Kanban board, drag and drop to update status.](media/manage-bugs/kanban-board-update-status.png) 
@@ -514,11 +531,11 @@ You can use Power BI to create more complex reports than what you can get from a
 
 The following reports are supported for Agile and CMMI processes.  
 
-- [Bug Status](../../report/sql-reports/bug-status-report.md)  
-- [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
-- [Reactivations](../../report/sql-reports/reactivations-report.md)  
+- [Bug Status](/previous-versions/azure/devops/report/sql-reports/bug-status-report)  
+- [Bug Trends](/previous-versions/azure/devops/report/sql-reports/bug-trends-report)  
+- [Reactivations](/previous-versions/azure/devops/report/sql-reports/reactivations-report)  
 
-These reports require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
+These reports require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
 ::: moniker-end  
 

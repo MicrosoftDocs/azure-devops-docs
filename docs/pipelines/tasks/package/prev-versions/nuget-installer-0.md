@@ -5,11 +5,12 @@ description: Learn all about how you can use NuGet packages when building code i
 ms.technology: vs-devops-package
 ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
 ms.date: 08/10/2016
+monikerRange: '<= tfs-2017'
 ---
 
 # NuGet Installer task version 0.*
 
-**Azure Pipelines (deprecated) | TFS 2017 (deprecated in 2017 Update 2)**
+[!INCLUDE [version-lt-eq-2017](../../../../includes/version-lt-eq-2017.md)]
 
 Use this task to install and update NuGet package dependencies.
 

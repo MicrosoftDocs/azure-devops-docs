@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Delete a Git branch
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 This article describes how to delete a Git branch by using two different methods: in Visual Studio and from the command line.
 

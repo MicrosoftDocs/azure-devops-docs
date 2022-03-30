@@ -4,14 +4,14 @@ description: Understand upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/20/2021
+ms.date: 02/16/2022
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
 
 # Upstream sources
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Upstream sources enable you to use a single feed to store packages from different sources: the ones you publish and the ones you consume from feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once you enable an upstream source, any user connected to your feed can install a package from upstream and a copy will be saved to your feed.
 
@@ -28,22 +28,20 @@ Upstream sources enable you to manage all of your product's dependencies in a si
 
 - **Simplicity:** your config file such as NuGet.config, .npmrc, or settings.xml will contain only one feed so it less prone to mistakes and bugs.
 - **Determinism:** your feed resolves package requests in order, so rebuilding your code will be more consistent.
-- **Provenance:** your feed knows the provenance of the packages it saved from upstream sources, so you can verify that you're using the original package and not a copy or malicious package.
+- **Provenance:** your feed knows the provenance of the packages it saved from upstream sources, so you can verify that you are using the original package and not a copy or malicious package.
 - **Peace of mind:** a copy will be saved to your feed for any package installed from upstream sources. So if the upstream source is disabled, removed, or undergoing maintenance, you can still continue to develop and build because you have a copy of that package in your feed.
 
 ## Best practices - package consumers
 
 To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
-<a name="single-feed"></a>
-
 #### Use a single feed in your config file
 
-In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled.
+In order for your feed to provide [deterministic restore](#search-order), it is important to ensure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled.
 
 Example:
 
-- **nuget.config** 
+- **nuget.config**
 
     ```
     <packageSources>
@@ -64,7 +62,7 @@ Example:
 
 #### Order your upstream sources intentionally
 
-If you're only using public registries such as nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
+If you are only using public registries such as nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
 
 If you are using multiple sources such as a mixture of feeds and public registries, then each upstream is searched in the order it's listed in the feed's configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
 
@@ -82,8 +80,6 @@ When you add a remote feed as an upstream source, you must select its feed's vie
 
 To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
 
-<a name="local"></a>
-
 #### Use the default view
 
 The `@local` view is the default view for all newly created feeds. It contains all the packages published to your feed or saved from upstream sources.
@@ -93,8 +89,6 @@ If you want to use views to release new package versions, you can promote your p
 #### Construct a package graph
 
 When a feed query its upstream source for a package, Azure Artifacts return the packages in the view that was configured for that specific upstream source. To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package.
-
-<a name="search-order"></a>
 
 ## Search order
 
@@ -106,11 +100,9 @@ Upstream sources prevent this non-deterministic behavior by searching the feed a
 
 1. Packages saved from an upstream source.
 
-1. Packages available from upstream sources: each upstream is searched in the order it's listed in the feed's configuration
+1. Packages available from upstream sources: each upstream is searched in the order it is listed in the feed's configuration
 
 To take full advantage of the fast lookup feature, we recommend that you only include one feed in your config file.
-
-<a name="saved-packages"></a>
 
 ## Save packages from upstream sources
 
@@ -118,18 +110,14 @@ When you enable upstream sources for your feed, packages installed from upstream
 
 Saving packages can improve download performance and save network bandwidth especially for TFS servers in internal networks.
 
-<a name="overriding-packages"></a>
-
 ## Override packages from upstream sources
 
-When you enable upstream sources, you must be aware that publishing a package version that already exists in upstream won't be possible. For instance, when you enable the NuGet.org upstream, you cannot publish the `Newtonsoft.Json 10.0.3` package because that same package version is already present NuGet.org.
+When you enable upstream sources, you must be aware that publishing a package version that already exists in upstream will not be possible. For instance, when you enable the NuGet.org upstream, you cannot publish the `Newtonsoft.Json 10.0.3` package because that same package version is already present NuGet.org.
 
 If you must publish a package version that already exists on one of your upstream sources, you must disable that upstream source, publish your package, and then re-enable the upstream source.
 
 > [!Note]
 > You can only publish a package version that wasn't previously saved from upstream. Saved packages remain in the feed even if the upstream source is disabled or removed.
-
-<a name="upstream-health-status"></a>
 
 ## Health status
 
@@ -137,12 +125,10 @@ If a feed has a failing upstream source, the metadata can no longer be refreshed
 
 If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing upstream will provide more details such as the reason of failure and instructions on how to solve it.
 
-:::image type="content" source="media/upstream-health.png" alt-text="Screenshot showing the upstream source's health status":::
+:::image type="content" source="media/upstreams-health-status.png" alt-text="Screenshot showing the upstream source's health status":::
 
 > [!NOTE]
 > For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download by your feed. This delay depends on job timing and data propagation. The is no latency when the upstream source is an Azure Artifacts feed.
-
-<a name="offline-upstreams"></a>
 
 ## Offline upstream sources
 
@@ -150,17 +136,26 @@ Upstream sources are a great way to protect your consumers and infrastructure fr
 
 ## FAQs
 
-##### Q: I can't see my package even though I can see it in one of my feed's upstreams?
+##### Q: I cannot find my package even though I can see it in one of my feed's upstreams?
 
 A: Packages belonging to an upstream are available downstream soon after they are published. However the package will only show up in your feed's UI once they have been ingested, which requires installing the package version for the first time in the downstream feed.
 
 ##### Q: What are feed views?
 
-A: Views enable developers to only share a subset of package versions that have been tested and validated and excluding any packages that are still under development and/or didn't meet the quality bar. See [What are feed views](./views.md) for more details.
+A: Views enable developers to only share a subset of package versions that have been tested and validated and excluding any packages that are still under development and/or did not meet the quality bar. See [What are feed views](./views.md) for more details.
 
-##### Q: I can't find the feed that I want to configure as an upstream?
+##### Q: I cannot find the feed that I want to configure as an upstream source?
 
 A: Make sure that the feed's owner is sharing a view as an upstream source.
+
+##### Q: Can a user with **Reader** role download packages from an upstream source?
+A: No. A user with **Reader** role in an Azure Artifacts feed can only download packages that have been saved to the feed. Packages are saved to the feed when a **Collaborator**, a **Contributor**, or an **Owner** install those packages from upstream.
+
+##### Q: What happens when a user delete or unpublish a package saved from an upstream source?
+A: The package will not be available for download from the feed and the version number gets reserved permanently. The package also will no longer be saved from the upstream source. Earlier and later versions of the package will not be affected.
+
+##### Q: What happens when a user deprecate a package saved from an upstream source?
+A: A warning message gets added to the package's metadata and displayed whenever the package is viewed or installed from the feed.
 
 ## Related articles
 

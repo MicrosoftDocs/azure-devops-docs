@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 # Evaluate a Marketplace extension publisher 
 
-[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 *Can you trust an offering in the Marketplace?*
 

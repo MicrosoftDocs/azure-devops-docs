@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # About branches and branch policies
 
-[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Branch policies are an important part of the Git workflow and enable you to:
 
@@ -186,7 +186,7 @@ Your most recent changes will no longer be on the filesystem since each branch h
 
 Git brings the files' state back to the last commit on the branch you swapped into, not the previous branch where you made your changes. 
 
-You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch or [merge](pulling.md#update-branches-with-merge) the changes into the correct branch.
+You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch or [merge](pulling.md#update-branches-with-merge-or-rebase) the changes into the correct branch.
 
 ## Use branches to manage development
 

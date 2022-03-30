@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Extend the work item form
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 

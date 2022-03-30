@@ -19,4 +19,5 @@ ms.technology: devops-cicd-tasks
     #parallel: false # Optional
     #parallelCount: # Optional
     #fileCopyOptions: #Optional
+    #storeAsTar: false # Optional
 ```

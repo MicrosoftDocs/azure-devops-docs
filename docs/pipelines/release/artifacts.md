@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Release artifacts and artifact sources
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -330,7 +330,7 @@ The source alias is, by default, the name of the source selected when you linked
 
 ## Primary source
 
-When you link multiple artifact sources to a release pipeline, one of them is designated as the primary artifact source. The primary artifact source is used to set a number of pre-defined [variables](variables.md#artifact-variables). It can also be used in [naming releases](index.md#numbering).
+When you link multiple artifact sources to a release pipeline, one of them is designated as the primary artifact source. The primary artifact source is used to set a number of predefined [variables](variables.md#artifact-variables). It can also be used in [naming releases](index.md#numbering).
 
 <a id="download"></a>
 
@@ -360,7 +360,7 @@ In Azure Pipelines, you can, however, [select which artifacts you want to downlo
 
 ## Artifact variables
 
-Azure Pipelines exposes a set of pre-defined variables that you can access and use in tasks and scripts; for example, when executing PowerShell scripts in deployment jobs. When there are multiple artifact sources linked to a release pipeline, you can access information about each of these. For a list of all pre-defined artifact variables, see [variables](variables.md#artifact-variables).
+Azure Pipelines exposes a set of predefined variables that you can access and use in tasks and scripts; for example, when executing PowerShell scripts in deployment jobs. When there are multiple artifact sources linked to a release pipeline, you can access information about each of these. For a list of all predefined artifact variables, see [variables](variables.md#artifact-variables).
 
 ## Additional information
 

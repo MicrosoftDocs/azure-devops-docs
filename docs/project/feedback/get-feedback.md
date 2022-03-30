@@ -3,7 +3,7 @@ title: Request feedback
 titleSuffix: Azure DevOps Services & TFS 
 description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application developed using Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b8fc1618-6501-41dd-86a6-78290bb84dcd  
 ms.author: kaelli
 author: KathrynEE 
@@ -13,7 +13,7 @@ ms.date: 01/15/2019
 
 # Get feedback
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Once you have working software, you're ready to get feedback from your stakeholders. You can ask reviewers to provide videos, screenshots, type-written comments, and ratings. Their feedback is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 

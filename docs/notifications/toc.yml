@@ -77,6 +77,3 @@
   - name: Events
     href: oob-supported-event-types.md
     displayName: subscription, automatic, alert, trigger, notification
-  - name: Collaborate in a Team room
-    href: /previous-versions/azure/devops/notifications/collaborate-in-a-team-room
-    displayName: chat, status, clarify, issue, productivity, interact, conversation

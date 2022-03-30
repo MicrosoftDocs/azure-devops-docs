@@ -9,18 +9,22 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 01/31/2022  
 ---
 
 
 # Email or print user stories, bugs, and other work items 
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio 2019 - Visual Studio 2015 | Team Explorer Everywhere** 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+** Visual Studio 2019 - Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
-Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items. Some features are only available from the web portal, an Azure DevOps client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  Here's a list of the most common ways in which teams share information and plans using work item tracking. 
+
+## Supported tasks 
+
+Emailing lists of work items is a common way to share work tracking information. The following table indicates which tasks or features are supported from the web portal, Visual Studio, or the Eclipse plug-in, Team Explorer Everywhere (TEE).   
  
 ---
 :::row:::
@@ -31,7 +35,7 @@ Some of the most common ways information is shared within a team or across teams
       **Web portal**
    :::column-end:::
    :::column span="":::
-      **Visual Studio 2015-2017**
+      **Visual Studio 2019-2015**
    :::column-end:::
    :::column span="":::
       **TEE (Eclipse)**
@@ -82,7 +86,7 @@ Some of the most common ways information is shared within a team or across teams
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Email query results list](#email-summary-lists)
+      [Email query results](#email-summary-lists)
    :::column-end:::
    :::column span="":::
       ✔️
@@ -97,7 +101,7 @@ Some of the most common ways information is shared within a team or across teams
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
-      [Export query result list as CSV](#export)
+      [Export query result as CSV](#export)
    :::column-end:::
    :::column span="":::
       ✔️
@@ -124,11 +128,13 @@ The tasks/features listed in the table aren't available when you're connected to
 
 ::: moniker range="< azure-devops"
 > [!NOTE]   
-> For the email feature to work, your administrator for Azure DevOps Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
+> For the email feature to work, your administrator for Azure DevOps Server must [configure a Simple Mail Transfer Protocol (SMTP) server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end 
 
-If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/access-levels.md) so that they can view work items and dashboards.  
+Make sure you provide members of your organization [Stakeholder access](../../organizations/security/access-levels.md) who want to contribute to the discussion and review progress. These are typically members who don't contribute to code, but want to view work items, backlogs, Kanban boards, and dashboards.  
+
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 
 <a id="email-print-send-links"></a>
@@ -297,7 +303,7 @@ With this option, you can copy an HTML formatted table of selected items. You ca
 
 ## Print items  
 
-To print the details of a work item, open a query in Visual Studio that contains the work item(s) you want to print, and select or highlight those items that you want to print. Then, choose the print option from the context menu.   
+To print work item details, open a query in Visual Studio that contains the work item(s) you want to print, and select or highlight those items that you want to print. Then, choose the **Print** option from the context menu.   
 
 > [!IMPORTANT]  
 > To print work items in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.

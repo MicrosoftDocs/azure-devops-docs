@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # App Center Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 This task lets you run test suites against an application binary (`.apk` or `.ipa` file) using App Center Test.
 - [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.

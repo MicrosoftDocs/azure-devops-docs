@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # npm task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to install and publish npm packages.
 
@@ -42,7 +42,7 @@ Use this task to install and publish npm packages.
 
 |Argument|Description|
 |--- |--- |
-|`command`<br/>Command| (Required) npm command to run. Select `install` here|
+|`command`<br/>Command| (Required) npm command to run. Default: install. Options: install, publish, custom, ci. |
 |`workingDir`<br/>Working folder that contains `package.json` | Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. "/packages/mypackage".|
 |`advanced` <br/>Verbose logging| Select to print more information to the console on run|
 |`customRegistries`<br/>Registries to use|You can either commit a `.npmrc` file to your source code repository and set its path or select a registry from Azure Artifacts.<br/>**useNpmrc**<br/><li>Select this option to use feeds specified in a .npmrc file you've checked into source control. If no `.npmrc` file is present, the task will default to using packages directly from npmjs. <br/><li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an npm service connection into your .npmrc as the build runs.<br/>**useFeed**<br/><li>Select this option to use one Azure Artifacts feed in the same organization/collection as the build.|

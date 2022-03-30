@@ -9,15 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azure-devops'
-ms.date: 11/11/2021
+ms.date: 01/11/2022
 ---
-
 
 # Customize and manage the test experience
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using the `tcm fieldmapping` command, you can customize the following three features that Microsoft Test Manager supports. 
+Using the `tcm fieldmapping` command, you can customize the following three features that Azure Test Plans supports. 
 - Change the bug type used to automatically file bugs in Test Manager
 - Customize the resolution states pick list  
 - Customize the failure types pick list. 
@@ -29,12 +28,11 @@ The **tcm** command-line tool works when run against Azure DevOps Services and o
 > [!IMPORTANT]
 > The **tcm** tool is available through Visual Studio 2017 and earlier versions. It isn't available in Visual Studio 2019 and later versions.
 
-
 Also, you can use `tcm` command options to [copy and clone test plans and test suites](../../test/copy-clone-test-items.md).  
 
 ## Prerequisites 
 
- For the project where you define the work item types, you must be a member of the **Project Administrators** security groups. See [Add accounts to administer project collections](../../organizations/security/set-project-collection-level-permissions.md).  
+ For the project where you define the work item types, you must be a member of the **Project Administrators** security group. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).  
 
 To run the **tcm** command-line tool, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 
@@ -92,11 +90,11 @@ Each time that you run the **tcm fieldmapping import** command, the contents of 
 
 ## Mapping file for bug work item type  
  
-When Test Manager creates a bug, the mapping file defines the work item type to create and fills in three data fields: reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which these three fields are automatically filled in.  
+When the supported clients for Azure Test Plans creates a bug, the mapping file defines the work item type to create and fills in three data fields: reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which these three fields are automatically filled in.  
 
-If your project was created with one of the default process templates provided with TFS, the bug work item type is already enabled. However, if you're adding another type of work item to the bug category or you're working with a customized process template, you might have to use the **tcm** command.  
+If your project was created with one of the default process templates, the bug work item type is already enabled. However, if you're adding another type of work item to the bug category or you're working with a customized process template, you might have to use the **tcm** command.  
 
-You can define only one work item type to be created when you run tests that use Test Manager.  
+You can define only one work item type to be created when you run tests for Azure Test Plans.  
 
 The following XML syntax lists the default contents of the bug field mappings file. All three fields must be specified when you import a bug field mappings file.  
 
@@ -169,4 +167,7 @@ tcm fieldmapping /import /type:bug /mappingfile:"C:\Users\AdminUser\Documents\bu
 
 ## Related articles
 
+- [Run manual tests](../../test/run-manual-tests.md)
+- [What is Azure Test Plans?](../../test/overview.md)
+- [Copy or clone test plans, test suites, and test cases](../../test/copy-clone-test-items.md)
 - [Using TCM from the command line](/previous-versions/visualstudio/visual-studio-2012/jj155799(v=vs.110))   

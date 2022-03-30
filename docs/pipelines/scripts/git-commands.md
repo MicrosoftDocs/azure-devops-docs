@@ -1,16 +1,16 @@
 ---
 title: Run Git commands in a script
 ms.custom: seodec18
-description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
+description: Learn how you can run a Git command in a build script for your workflow with Azure Pipelines
 ms.topic: conceptual
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.date: 12/22/2020
+ms.date: 02/28/2022
 monikerRange: '>= tfs-2015'
 ---
 
 # Run Git commands in a script
 
-[!INCLUDE [temp](../includes/version.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -52,7 +52,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
     :::image type="content" source="media/modify-repo-security.png" alt-text="Choose Security to edit your repository security. ":::
 
-1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})** (not the group **Project Collection Build Service Accounts ({your organization})**). By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
+1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})** (not the group **Project Collection Build Service Accounts ({your organization})**). By default, this identity can read from the repo but can’t push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
       * **Create branch:**  Allow
       * **Contribute:**  Allow
@@ -78,7 +78,7 @@ Go to the Version Control control panel tab
 
 </p>
 
-<p>If you see this page, select the repo, and then click the link:</p>
+<p>If you see this page, select the repo, and then select the link:</p>
 
 <p>
 
@@ -92,7 +92,7 @@ Go to the Version Control control panel tab
 
 </p>
 
-On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it.
+On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but can’t push any changes back to it.
 
 ![permissions](media/control-panel-version-control-project-collection-build-service.png)
 
@@ -103,7 +103,7 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 * **Read:**  Allow
 * **Create tag:**  Allow
 
-When you're done granting the permissions, make sure to click **Save changes**.
+When you're done granting the permissions, make sure to select **Save changes**.
 
 ::: moniker-end
 
@@ -137,7 +137,7 @@ steps:
   persistCredentials: true
 ```
 
-Learn more about [`checkout`](../yaml-schema.md#checkout).
+Learn more about [`checkout`](/azure/devops/pipelines/yaml-schema/steps-checkout).
 
 # [Classic](#tab/classic)
 
@@ -155,7 +155,7 @@ On the [options tab](../build/options.md), select **Allow scripts to access OAut
 
 ## Make sure to clean up the local repo
 
-Certain kinds of changes to the local repository are not automatically cleaned up by the build pipeline. So make sure to:
+Certain kinds of changes to the local repository aren't automatically cleaned up by the build pipeline. So make sure to:
 
 * Delete local branches you create.
 * Undo git config changes.
@@ -293,7 +293,7 @@ You can also use any of the variations below. This is supported for commits to A
 
 ::: moniker range="< tfs-2018"
 
-### How does enabling scripts to run Git commands affect how the build pipeline gets build sources?
+### How does enabling scripts to run Git commands affect how the build pipeline pulls in build sources?
 
 When you set ```system.prefergit``` to ```true```, the build pipeline uses command-line Git instead of LibGit2Sharp to clone or fetch the source files.
 

@@ -14,7 +14,7 @@ ms.date: 05/06/2019
 
 # On-premises XML process customization
 
-[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
@@ -77,7 +77,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Area paths](../organizations/settings/set-area-paths.md) 
    - [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
    - [Add a custom pick list](add-modify-field.md#picklist)  
-   - [Modify a pre-defined pick list](add-modify-field.md#picklist)  
+   - [Modify a predefined pick list](add-modify-field.md#picklist)  
    - [State or Reason fields (customize workflow)](xml/change-workflow-wit.md)  
    - [Person-name field (add users)](../organizations/security/add-users-team-project.md)   
    - [Resolution State & Failure Type](customize-work.md#test-experience)  

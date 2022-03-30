@@ -1,4 +1,4 @@
-﻿---
+---
 title: Azure DevOps Plugin for IntelliJ, IDEA, Android Studio
 titleSuffix: Azure Repos
 description: Intro to the IntelliJ plugin available for Azure DevOps.
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Azure DevOps Plugin for IntelliJ IDEA and Android Studio
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
 The [Azure DevOps Plugin for IntelliJ](https://plugins.jetbrains.com/plugin/7981-azure-devops) allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.
@@ -157,10 +157,11 @@ You can give the pull request a title and a description.
 
 After you click **Create Pull Request**, you should receive a notification that the pull request was created.
 It also contains a link to the pull request in case you want to add specific reviewers or comments.
-Once the code reviews are done, you can merge the pull request into master.
+Once the code reviews are done, you can merge the pull request into your main branch.
 
 ## Check build status
-After you have merged your changes into master, you can check if your CI build has succeeded from within IntelliJ. In the bottom right corner,
+
+After you have merged your changes into your main branch, you can check if your CI build has succeeded from within IntelliJ. In the bottom right corner,
 there is an icon that displays your build status to you. If you see a green checkmark, that means your build has succeeded. If you see a red X,
 then your build failed. If you see a gray question mark, your build was not found or your credentials may have expired.
 

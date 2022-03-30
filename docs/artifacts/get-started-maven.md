@@ -1,18 +1,16 @@
-﻿---
+---
 title: Get started with Maven packages
 description: Quickly start publishing and consuming Maven Artifacts to/from your feed
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.manager: jenp
-ms.reviewer: dastahel
-ms.date: 07/22/2020
+ms.date: 02/18/2022
 monikerRange: '>= tfs-2018'
 ---
 
 # Get started with Maven feeds and Artifacts
 
-**Azure DevOps Services | TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
 
 This quickstart will guide you through setting up Maven to publish and consume Artifacts from your feed.
 
@@ -33,33 +31,21 @@ This guide assumes you've already set up Azure Artifacts. See [Start using Azure
 
 ## Create a feed
 
-_Already have a feed?_ [Skip to the next step](#setup-your-POM-and-settings-.xml).
+_Already have a feed?_ [Skip to the next step](#set-up-authentication).
 
 [!INCLUDE [](includes/create-feed.md)]
-
-<a name="setup-your-POM-and-settings-.xml"></a>
 
 ## Set up authentication
 
 [!INCLUDE [](includes/maven/pom-and-settings.md)]
 
-<a name="publish-a-package"></a>
-
 ## Publish an artifact
 
 [!INCLUDE [](includes/maven/publish.md)]
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > In order to automatically authenticate with your Maven feed, you must set the `mavenAuthenticateFeed` argument to true in the [Maven task](../pipelines/tasks/build/maven.md).
-
-<a name="consume-in-visual-studio"></a>
 
 ## Install an artifact from your feed
 
 [!INCLUDE [](includes/maven/install.md)]
-
-<a name="automate-with-continuous-integration"></a>
-
-## What's next?
-
-Check out the [Azure Artifacts landing page](index.yml) to learn about other topics.

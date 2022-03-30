@@ -13,8 +13,8 @@ monikerRange: '<= azure-devops'
 
 # Review pull requests
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 After you [create a pull request](pull-requests.md) (PR), send the PR for review by stakeholders. You can add required or optional reviewers to your PR. Required reviewers must approve the PR before it can merge.
 
@@ -47,7 +47,7 @@ High-quality reviews start with high-quality feedback. For guidelines on getting
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker range=">= azure-devops-2020"
-- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 ::: moniker-end
 
@@ -220,7 +220,7 @@ To vote on a PR, open the PR in the browser, and on the **Overview** page, use t
 
 ::: moniker range=">= azure-devops-2020"
 
-To vote on whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote).
+To vote on whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az-repos-pr-set-vote).
 
 ```azurecli
 az repos pr set-vote --id

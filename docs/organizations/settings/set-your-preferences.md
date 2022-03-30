@@ -7,14 +7,14 @@ ms.technology: devops-settings
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 09/02/2021
 ---
 
 # Set your preferences
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 

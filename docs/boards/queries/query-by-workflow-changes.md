@@ -14,7 +14,7 @@ ms.date: 10/25/2021
 
 # Query by assignment or workflow changes in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The states in the workflow support tracking work status as it moves from a new state to a closed or done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
@@ -853,7 +853,7 @@ For organizations that manage their users and groups using Azure Active Director
 
 ::: moniker range="azure-devops"
 
-To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. For more information, see [Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. For more information, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
  
 
 ::: moniker-end

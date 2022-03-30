@@ -12,7 +12,7 @@ ms.date: 02/16/2021
 
 # About settings for users, teams, projects, or organizations
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -21,7 +21,7 @@ You configure resources either for yourself or for your team, project, or organi
 If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md). To quickly find a setting or related settings, see [Search organization settings](search-settings.md).
 
 > [!NOTE]  
-> You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). For more information about Stakeholder access, see [Stakeholder access quick reference](../security/stakeholder-access.md). 
+> You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md). For more information about Stakeholder access, see [Stakeholder access quick reference](../security/stakeholder-access.md). 
 
 ::: moniker-end
 
@@ -284,7 +284,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 
 ## Project Administrator role and managing projects
 
-Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) configure resources for a project and managing permissions at the project-level. Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
+Members of the [**Project Administrators** group](../security/change-project-level-permissions.md) configure resources for a project and manage permissions at the project-level. Members of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) can configure team settings as well.
 
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
@@ -388,10 +388,15 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Add user to a project](../security/add-users-team-project.md)
-      - [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](add-team-administrator.md)
-      - [Manage project-level permissions](../security/permissions.md#project-level-permissions)
+      - [Add a team administrator](add-team-administrator.md)
+      - [Request an increase in permission levels](../security/request-changes-permissions.md)
+      - [Look up a project administrator](../security/look-up-project-administrators.md)
+      - [Change project-level permissions](../security/change-project-level-permissions.md)
+      - [Set object-level permissions](../security/set-object-level-permissions.md)
+      - [Grant or restrict permissions to select tasks](../security/restrict-access.md)
+      - [Set dashboard permissions](../security/../../report/dashboards/dashboard-permissions.md)
+      - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
+      - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md)
       - [Set build and release permissions](../../pipelines/policies/set-permissions.md)
    :::column-end:::
    :::column span="2":::
@@ -407,10 +412,12 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Add user to a project](../security/add-users-team-project.md)
-      - [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](add-team-administrator.md)
-      - [Manage project-level permissions](../security/permissions.md#project-level-permissions)
+      - [Add a team administrator](add-team-administrator.md)
+      - [Request an increase in permission levels](../security/request-changes-permissions.md)
+      - [Look up a project administrator](../security/look-up-project-administrators.md)
+      - [Change project-level permissions](../security/change-project-level-permissions.md)
+      - [Grant or restrict permissions to select tasks](../security/restrict-access.md)
+      - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md)
    :::column-end:::
    :::column span="2":::
       Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
@@ -509,8 +516,8 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Set test retention policies](../../test/how-long-to-keep-test-results.md)
-      - [Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)
-      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)
+      - [Manage test-related permissions at project level](../security/change-project-level-permissions.md)
+      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
    :::column-end:::
    :::column span="2":::
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
@@ -524,8 +531,8 @@ From the administrative **Project settings** page, you can configure settings av
       **Test**
    :::column-end:::
    :::column span="2":::
-      - [Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)
-      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)
+      - [Manage test-related permissions at project level](../security/change-project-level-permissions.md)
+      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
    :::column-end:::
    :::column span="2":::
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
@@ -623,7 +630,7 @@ From the administrative **Project settings** page, you can configure settings av
 
 ## Project Collection Administrator (PCA) role and managing collections of projects 
 
-Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, a team, or an object.   
+Members of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, a team, or an object.   
 
 ::: moniker range="azure-devops"
   
@@ -631,7 +638,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image and table. 
 
 > [!NOTE]  
-> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. To learn more, see [About projects and scaling your organization, Limit user visibility for projects using the Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 
 > [!div class="mx-imgBorder"]  
@@ -841,11 +848,12 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Security: Permissions**
    :::column-end:::
    :::column span="2":::
-      - [Change individual permissions](../security/change-individual-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators, set organization-level permissions](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
+      - [Look up the organization owner](../security/look-up-organization-owner.md)
+      - [Look up a project collection administrator ](../security/look-up-project-collection-administrators.md)
+      - [Add administrators, set organization-level permissions](../security/change-organization-collection-level-permissions.md)
       - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
       - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
+      - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)
       - [Manage conditional access](../accounts/change-application-access-policies.md)
    :::column-end:::
    :::column span="2":::
@@ -860,9 +868,10 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Security**
    :::column-end:::
    :::column span="2":::
-      - [Change individual permissions](../security/change-individual-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators, set collection-level permissions](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
+      - [Look up the organization owner](../security/look-up-organization-owner.md)
+      - [Look up a project collection administrator ](../security/look-up-project-collection-administrators.md)
+      - [Add administrators, set organization-level permissions](../security/change-organization-collection-level-permissions.md)
+      - [Grant or restrict access to select features](../security/restrict-access.md) 
    :::column-end:::
    :::column span="2":::
       For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).

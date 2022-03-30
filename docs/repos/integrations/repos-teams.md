@@ -3,7 +3,7 @@ title: Azure Repos with Microsoft Teams
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Microsoft Teams
 ms.technology: devops-code-git
-ms.topic: conceptual 
+ms.topic: how-to 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -12,7 +12,7 @@ ms.date: 10/28/2021
 
 # Azure Repos with Microsoft Teams
 
-[!INCLUDE [temp](../../includes/version-azure-devops.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the 
 [Azure Repos app for Teams](https://appsource.microsoft.com/product/office/WA200000643) to easily monitor your repositories. 
@@ -34,7 +34,7 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions for repository-related events, you must be a member of the Project Administrators group or added to the team administrator role for the team.  To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
+- To create subscriptions for repository-related events, you must be a member of the **Project Administrators** group, or a team administrator.  To get added, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, you must enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]

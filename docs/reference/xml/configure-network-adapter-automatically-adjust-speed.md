@@ -6,6 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 26b43d25-a60e-4d8d-b12b-890d152b0d14
 ms.author: kaelli
 author: KathrynEE 
+ms.topic: reference
 monikerRange: 'tfs-2013'
 ms.date: 02/22/2017 
 ---
@@ -13,7 +14,7 @@ ms.date: 02/22/2017
 
 # Configure a network adapter to automatically adjust speed
 
-**TFS 2013**
+[!INCLUDE [version-eq-2013](../../includes/version-eq-2013.md)]
 
 When a client computer is not configured to automatically adjust the link speed of its network adapter, some functions might take a long time to finish. Such functions include creating projects, saving work items, or merging code changes. In some cases, these functions might never finish, and an error message might appear that contains the phrase "The underlying connection was closed."  
   
@@ -22,7 +23,7 @@ The speed with which a function finishes depends, in part, on the speed of the c
 To minimize the time required for a function to finish, you should confirm that these settings are set appropriately for maximum throughput. For more information about how full-duplex mode differs from half-duplex mode, contact your network administrator.  
    
   
-**Required Permissions**  
+## Prerequisites 
   
 To perform these procedures, you must be a member of the **Administrators** security group on your local computer.  
   

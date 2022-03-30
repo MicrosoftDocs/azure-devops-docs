@@ -12,7 +12,7 @@ ms.date: 10/10/2017
 
 # Add a custom control to the work item form
 
-[!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 Custom controls allow you to change how users view and interact with a field on the work item form. The following article walks you through how this sample custom control was built.  Learn how to build your own custom control.
 

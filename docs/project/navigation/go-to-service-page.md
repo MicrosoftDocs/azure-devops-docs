@@ -3,11 +3,10 @@ title: Navigate to an application or functional area
 titleSuffix: Azure DevOps 
 description: Access the application area or change your view
 ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
+ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2017'
 ms.date: 02/08/2019
 ---
@@ -15,7 +14,7 @@ ms.date: 02/08/2019
 
 # Open a service, page, or settings 
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 The web portal for Azure DevOps provides support for software development teams to collaborate through the planning, development, and release cycles. You can manage source code, plan and track work, define builds, run tests, and manage releases. 
 

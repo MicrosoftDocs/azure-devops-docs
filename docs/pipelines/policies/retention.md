@@ -12,6 +12,8 @@ monikerRange: '>= tfs-2015'
 
 # Set retention policies for builds, releases, and tests
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 ::: moniker range="<= tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

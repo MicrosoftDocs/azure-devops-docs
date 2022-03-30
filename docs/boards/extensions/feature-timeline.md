@@ -13,7 +13,7 @@ ms.date: 10/01/2021
  
 # View portfolio progress with the Feature Timeline 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 
 The Feature Timeline supports portfolio management. It provides an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level. 

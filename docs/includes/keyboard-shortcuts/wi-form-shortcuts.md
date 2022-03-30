@@ -24,7 +24,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 
 :::row:::
    :::column span="2":::
-      ![Work item form keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/work-item-form-cloud.png)  
+      ![Work item form keyboard shortcuts](../../media/keyboard-shortcuts/work-item-form-cloud.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/><br/> 
@@ -43,7 +43,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 
 :::row:::
    :::column span="2":::
-      ![Work item form keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/work-item-form.png)  
+      ![Work item form keyboard shortcuts](../../media/keyboard-shortcuts/work-item-form.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/><br/> 
@@ -71,9 +71,9 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 
 > [!div class="mx-imgBorder"]  
-> ![New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/new-rich-text-editor-toolbar.png) 
+> ![New Rich Text Editor toolbar](../../boards/queries/media/share-plans/new-rich-text-editor-toolbar.png) 
 
-You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=:::image type="icon" source="/azure/devops/media/icons/mac-command-symbol.png" border="false":::)
+You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=:::image type="icon" source="../../media/icons/mac-command-symbol.png" border="false":::)
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
@@ -89,7 +89,7 @@ You can use the following keyboard shortcuts when working in a web browser on on
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
-![Rich text tool bar](/azure/devops/boards/queries/media/rich-text-ui-team-services.png)
+![Rich text tool bar](../../boards/queries/media/rich-text-ui-team-services.png)
 
 You can use the following keyboard shortcuts when working in the editor from a web browser running on a Windows operating system. 
 

@@ -12,7 +12,7 @@ ms.date: 03/20/2018
 
 # New work item tracking experience
 
-**TFS 2018 | TFS 2017**  
+[!INCLUDE [version-gt-eq-2017-lt-eq-2019](../../includes/version-gt-eq-2017-lt-eq-2019.md)]
 
 > [!IMPORTANT]  
 > The new form and its corresponding features are available from the web portal for TFS 2017 and later versions.<br/> 
@@ -113,7 +113,7 @@ For guidance in using the new form, see:
 - [Drive Git development for a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
-- [Azure DevOps Services Features Timeline](/azure/devops/release-notes/index)  
+- [Azure DevOps Services Features Timeline](/azure/devops/release-notes/features-timeline)  
 - [REST API, Work Item Types](/rest/api/azure/devops/wit/work%20item%20types)  
 
 

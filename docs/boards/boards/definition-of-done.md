@@ -15,7 +15,7 @@ ms.date: 10/15/2021
 
 # Specify the Definition of Done criteria for your Kanban columns
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
 
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. Help your team agree what "done" means by specifying the Definition of Done criteria for each Kanban column. Defining what "done" means helps you identify the essential tasks to complete before moving an item into a downstream stage. 
 Also, you'll have implemented one of the core Kanban tenets: **make processes and policies explicit.**

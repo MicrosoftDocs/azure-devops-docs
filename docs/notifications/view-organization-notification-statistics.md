@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Analyze organization-level notifications statistics
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Notification statistics show the top 10 most active subscriptions and top event initiators in your organization, for the current day. Administrators should periodically review statistics to ensure there are no unintended high volume subscriptions or event initiators.
 

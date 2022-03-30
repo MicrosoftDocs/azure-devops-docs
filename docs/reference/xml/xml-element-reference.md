@@ -7,13 +7,14 @@ ms.custom: process
 ms.assetid: f65e3ae0-817a-413e-b5c3-0ebadc3ba944
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops' 
 ms.date: 04/04/2017
 ---
 
 # XML element reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can customize your project to support specific processes and practices that your team uses, and to design your workflow, work item forms, and data fields. Customization requires modifying one or more XML definition files. Each file corresponds to a work item tracking object. You can look up the syntax structure of each XML element from the topics provided in this section.  
 
@@ -248,7 +249,7 @@ For descriptions of the
 |Object|Description||  
 |------------|-----------------|-|  
 |**Category**|[Use categories to group work item types](use-categories-to-group-work-item-types.md)<br /><br /> A category defines a group of work item types that track similar items of work but are referred to by different names. You can group one or more work item types in the same project into a category. You define categories to support running queries, generating reports, and setting default work item types in specific instances. You use the **In Group** operator to find work items that belong to a category. For more information, see [Track](../../boards/queries/query-operators-variables.md).||  
-|**Field**|[Modify a field or add a custom field](../add-modify-field.md)<br /><br /> A field defines a type of data that is used to track work.  You use work item fields to track data for a work item type, to define the filter criteria for queries, and to generate reports. You must define each data element that is not built in, that the process template does not provide, and that you want to track, use to define the workflow, or appear on the form for a work item type. You define a data element using the **FIELD** element.<br /><br /> Each field is defined by one or more attributes, which include what type of data it can contain, whether it is used in reporting, and whether it is indexed. You can also specify optional elements that restrict, auto-populate, or specify conditions for the values to which users can set the field by using a work item form.<br /><br /> You can add a field, remove it, or customize how you use it to track data.||  
+|**Field**|[Modify a field or add a custom field](../add-modify-field.md)<br /><br /> A field defines a type of data that is used to track work.  You use work item fields to track data for a work item type, to define the filter criteria for queries, and to generate reports. You must define each data element that is not built-in, that the process template does not provide, and that you want to track, use to define the workflow, or appear on the form for a work item type. You define a data element using the **FIELD** element.<br /><br /> Each field is defined by one or more attributes, which include what type of data it can contain, whether it is used in reporting, and whether it is indexed. You can also specify optional elements that restrict, auto-populate, or specify conditions for the values to which users can set the field by using a work item form.<br /><br /> You can add a field, remove it, or customize how you use it to track data.||  
 |**Global list**|[GLOBALLIST XML element reference](define-global-lists.md)<br /><br /> A global list defines a list of values, when is known as a pick list, that you can use across work item types to control the value or values to which users can set a field in a work item. You use global lists to quickly update the contents of pick lists that are used for many types of work items.<br /><br /> You can define global lists within a type of work item type, but this practice is not recommended because the definition of the work item type will overwrite changes that are defined elsewhere if that definition is imported. A best practice is to define and import global lists through a definition file for global lists or global workflow.||  
 |**Global workflow**|[Customize global workflow](customize-global-workflow.md)<br /><br /> A global workflow defines fields and global lists that are available to all types of work items for either a project or a collection.||  
 |**Link type**|[Define a custom link type](link-type-element-reference.md)<br /><br /> A link type defines the rules and restrictions that control the relationships that users can make between work items. In addition to the built-in types of links, you can create link types to support your project-tracking requirements. Before you start to create links between work items, you should analyze how you might use links to plan your project and track the status of work items.||  

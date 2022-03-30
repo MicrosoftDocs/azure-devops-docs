@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Contact support
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 If you've reviewed the troubleshooting sections and can't resolve your issue, [contact Support in the Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
