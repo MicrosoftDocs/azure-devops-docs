@@ -163,7 +163,8 @@ The following example shows a use case of the task to submit an already publishe
 ```
 
 This is a AML Workspace REST API task to invoke ML pipelines, scripts and notebooks.
-A similar behavior to this task can be achieved by invoking the following [Azure ML CLI command](https://docs.microsoft.com/cli/azure/ml(v1)/run?view=azure-cli-latest#az_ml_v1__run_submit_pipeline).
+
+A similar behavior to this task can be achieved by invoking the following [Azure ML CLI command](/cli/azure/ml(v1)/run?view=azure-cli-latest&preserve-view=true#az-ml-v1--run-submit-pipeline).
 
 The additional benefit of the az ml task, besides submitting the pipeline with all specified PipelineParameters, is that it represents for the AML pipeline run status in the Azure Pipeline and doesn't need an unspecified amount of wait time for the task to finish.
 

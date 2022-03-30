@@ -1407,7 +1407,7 @@ Use features supported by these familiar clients to manage your project and illu
       You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process [Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md) that you choose.  
 
       **Add Reporting Services reports**  
-      If you need to add reporting services to a project or on-premises Azure DevOps Server after you've created your team projects, you can by [adding a report server and uploading reports](/previous-versions/azure/devops/report/report/admin/add-reports-to-a-team-project).  
+      If you need to add reporting services to a project or on-premises Azure DevOps Server after you've created your team projects, you can by [adding a report server and uploading reports](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
       **Manage the data warehouse**  
       The reporting warehouse is a traditional data warehouse that consists of a [relational database and an Analysis Services database](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube). You manage it through the following activities:  
@@ -1419,9 +1419,9 @@ Use features supported by these familiar clients to manage your project and illu
    :::column span="1":::
       **Build reports**  
       Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code.  
-      - [Build Quality Indicators](/previous-versions/azure/devops/report/sql-reports/build-quality-indicators-report.md) 
-      - [Build Success Over Time](/previous-versions/azure/devops/report/sql-reports/build-success-over-time-report.md)
-      - [Build Summary](/previous-versions/azure/devops/report/sql-reports/build-summary-report.md)
+      - [Build Quality Indicators](/previous-versions/azure/devops/report/sql-reports/build-quality-indicators-report) 
+      - [Build Success Over Time](/previous-versions/azure/devops/report/sql-reports/build-success-over-time-report)
+      - [Build Summary](/previous-versions/azure/devops/report/sql-reports/build-summary-report)
        
       **Test and bug reports**  
       Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.  
@@ -1487,8 +1487,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Team member </b></p>
 <p>Opens the team&#39;s quick dialog to <a href="../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[add or remove team members](../report/dashboards/widget-catalog.md#team-members-widget)">add or remove team members</a>.</p>
 <img src="media/features/alm-feature-manage-members-widget.png" alt="Team member widget"/><br/>
-<p><b>Team rooms </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+
 
 <p><b>Visual Studio widget</b></p>
 <p><a href="../report/dashboards/widget-catalog.md#visual-studio-widget" data-raw-source="[Provides links to open or download Visual Studio](../report/dashboards/widget-catalog.md#visual-studio-widget)">Provides links to open or download Visual Studio</a>. The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren&#39;t available through the web portal). </p>
@@ -2104,7 +2103,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. Bulk update work items to add or remove tags: <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags)">Azure DevOps Services</a> | <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Azure DevOps Server](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Azure DevOps Server</a>. </p>
 <img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
 
-&lt;p
 </td>
 <td width="33%">
 
@@ -2564,10 +2562,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Team alerts</b></p>
 <p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
-
-
-<p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a <a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>

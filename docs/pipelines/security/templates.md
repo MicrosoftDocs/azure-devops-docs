@@ -184,7 +184,8 @@ extends:
         script: echo This step will be stripped out and not run!
     - task: MyOtherTask@2
 ```
-::: moniker-end
+
+:::moniker-end
 
 ### Type-safe parameters
 

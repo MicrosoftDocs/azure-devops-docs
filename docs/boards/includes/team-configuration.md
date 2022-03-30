@@ -204,7 +204,7 @@ ms.date: 01/09/2020
    - [Queries](../queries/using-queries.md)
    - [Velocity](../../report/dashboards/team-velocity.md)
    - [Dashboards](../../report/dashboards/dashboards.md)
-   - [Team rooms](/previous-versions/azure/devops/collaborate-in-a-team-room)
+   - [Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)
    - [Alerts](../../notifications/howto-manage-team-notifications.md)  
    
    :::column-end:::

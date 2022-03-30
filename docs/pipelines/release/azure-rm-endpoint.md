@@ -6,7 +6,7 @@ ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/16/2021
+ms.date: 03/22/2022
 monikerRange: '>= tfs-2015'
 "recommendations": "true"
 ---
@@ -57,8 +57,8 @@ Below are some of the issues that may occur when creating service connections:
 - [Failed to obtain an access token](#sessionexpired)
 - [A valid refresh token was not found](#sessionexpired)
 - [Failed to assign contributor role](#contributorrole)
-- [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 - [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
+- [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 - [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 - [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
 - [Azure subscription is not passed from the previous task output](#azure-subscription-is-not-passed-from-the-previous-task-output)
@@ -149,11 +149,25 @@ This error typically occurs when you do not have **Write** permission for the se
 
 To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) in Azure Active Directory.
 
+<a name="subscription-isnt-listed-service-connection"></a>
+
+### Subscription isn't listed when creating a service connection
+
+A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete the following steps:
+
+1. Create a new, native Azure AD user in the Azure AD instance of your Azure subscription. 
+
+1. Set up the Azure AD user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
+ 
+1. Add the Azure AD user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+
+1. Log in to Azure DevOps with the new user credentials, and set up a billing. You'll only see one Azure subscription in the list.
+
 <a name="missingSubscriptions"></a>
 
 ### Some subscriptions are missing from the list of subscriptions
 
-To fix this issue you will need to modify the supported account types, and who can use your application. To do so, follow the steps below:
+This issue can be fixed by changing the **supported account types** settings and defining who can use your application. To do so, follow the steps below:
 
 1. Sign in to the Azure portal.
 
@@ -174,20 +188,6 @@ To fix this issue you will need to modify the supported account types, and who c
     :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
 
 1. Select **Save** when you are done.
-
-<a name="subscription-isnt-listed-service-connection"></a>
-
-### Subscription isn't listed when creating a service connection
-
-A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete the following steps:
-
-1. Create a new, native Azure AD user in the Azure AD instance of your Azure subscription. 
-
-1. Set up the Azure AD user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
- 
-1. Add the Azure AD user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
-
-1. Log in to Azure DevOps with the new user credentials, and set up a billing. You'll only see one Azure subscription in the list.
 
 <a name="autoCreatedSecretExpiration"></a>
 

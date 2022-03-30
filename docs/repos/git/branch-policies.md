@@ -337,7 +337,7 @@ To set the policy, under **Branch Policies**, set **Check for linked work items*
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking#az_repos_policy_work_item_linking) to create and update work item linking policies for a branch or repository.
+You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking) to create and update work item linking policies for a branch or repository.
 
 <a id="create-wi-policy" /> 
 
