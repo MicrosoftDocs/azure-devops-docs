@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # View your subscriptions, opt-out as needed
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md).  
 

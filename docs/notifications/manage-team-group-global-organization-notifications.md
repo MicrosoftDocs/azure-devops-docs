@@ -36,26 +36,22 @@ For example, when a high priority work item is assigned to your team's area path
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
-::: moniker range=">= tfs-2018"
-
 ## Create an email subscription
 
 A subscription lets you control what your team is notified of and how the team receives those notifications. For more information, see [notification types](about-notifications.md#notification-types).
 
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-1. Select **Project settings** > **Notifications**.
+2. Select **Project settings** > **Notifications**.
 
     :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted":::
 
-2. Select **New subscription**. 
+3. Select **New subscription**. 
 
     ![Screenshot of New subscription highlighted.](media/new-subscription-newnav.png) 
 
-3. Select the type of activity you want your team to be notified of.
+4. Select the type of activity you want your team to be notified of.
 
 	![Screenshot of select event category and template page.](media/new-sub-page-preview.png)
 
@@ -198,8 +194,6 @@ A subscription lets you control what your team is notified of and how the team r
 
 <a name="manage" />
 
-::: moniker range=">= tfs-2018"
-
 > [!TIP]
 > If you don't want to receive a notification for an event that you initiated, you can turn on the option, *Skip initiator*. For more information, see [Exclude yourself from notification emails for events that you initiate](exclude-self-from-email.md).
 
@@ -207,8 +201,6 @@ A subscription lets you control what your team is notified of and how the team r
 
 Global notifications apply to all **projects** defined for an organization or collection. 
 Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. It's a default setting which applies only if the team or group hasn't explicitly set the option. For more information, see [Global notifications](about-notifications.md#global-notifications).
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -230,7 +222,7 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"  
+::: moniker range="tfs-2018"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.

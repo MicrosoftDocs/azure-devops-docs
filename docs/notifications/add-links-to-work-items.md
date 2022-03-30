@@ -8,13 +8,13 @@ ms.custom: contperf-fy21q2, cross-project
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 04/16/2021
 ---
 
 # Link to work items from other objects
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 By linking to work items from other objects, such as builds, commits, pull requests, and more, you support your team's ability to maintain an audit trail of related work. All users can add links to their work items.
 
@@ -124,14 +124,11 @@ Keyword logic helps with intent matching. For example, you might enter “Resolv
 
 [!INCLUDE [temp](../includes/link-work-item-builds-projects.md)]
 
-::: moniker range=">= tfs-2018"
-
 ## Link to work items from a Wiki page
 
 Enter `#` to trigger the `#ID` work item picker from within a Wiki page.
 
 For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md).
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 You can also you link a query results table to a wiki. This supports quick access to each linked work item in the query. For more information, see [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).

@@ -8,13 +8,13 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 01/22/2020  
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 
 # How to enable subscription logging for troubleshooting
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
