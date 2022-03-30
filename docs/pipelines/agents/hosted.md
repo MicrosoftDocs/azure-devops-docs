@@ -43,7 +43,10 @@ The default agent image for classic build pipelines is *windows-2019*, and the d
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
 > [!NOTE]
-> [`macOS-latest` is changing to `macOS-11`](https://github.com/actions/virtual-environments/issues/4060).
+>
+> [`windows-latest` workflows will use `windows-2022`](https://github.com/actions/virtual-environments/issues/4856).
+>
+> [`macOS-latest` workflows will use `macOS-11`](https://github.com/actions/virtual-environments/issues/4060).
 >
 > [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/virtual-environments/issues/3287).
 >
