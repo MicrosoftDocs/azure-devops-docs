@@ -85,4 +85,4 @@ Save your query to improve query performance. Due to internal optimizations, sav
 - [Query fields, operators & macros](query-operators-variables.md)
 - [WIQL syntax](wiql-syntax.md)  
 - [Query quick reference](query-index-quick-ref.md)
-- [az boards query command](/cli/azure/boards#az_boards_query)
+- [az boards query command](/cli/azure/boards#az-boards-query)

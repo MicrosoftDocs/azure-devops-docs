@@ -37,76 +37,12 @@ See the following articles for related information:
 - [Look up a project collection administrator](look-up-project-collection-administrators.md)
 - [Look up the organization owner](look-up-organization-owner.md)
 
-[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+[!INCLUDE [hidden-security-groups](./includes/hidden-security-groups.md)]
 
 
 ## Collection-level permissions 
 
-The following table lists the permissions assigned at the project-level. For a description of each permission, see [Permissions and groups reference, Groups](permissions.md#collection-level).
- 
-:::row:::
-   :::column span="":::
-      **General**  
-      - Alter trace settings  
-      - Create new projects  
-      - Delete team project  
-      - Edit instance-level information
-      - View instance-level information  
-
-      **Service Account**
-      - Make requests on behalf of others
-      - Trigger events
-      - View system synchronization information  
-
-      **Boards**  
-   :::column span="":::
-      ::: moniker range=">= azure-devops-2019"
-      - Administer process permissions
-      - Create process
-      - Delete field from organization or account  
-      - Delete process
-      - Edit process
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - Delete field from organization or account  
-      ::: moniker-end
-   :::column-end:::
-   :::column span="":::
-      **Repos** (TFVC)  
-      - Administer shelved changes  
-      - Administer workspaces  
-      - Create a workspace  
-      
-      **Pipelines**  
-      ::: moniker range=">= azure-devops-2019"
-      - Administer build resource permissions  
-      - Manage build resources
-      - Manage pipeline policies
-      - Use build resources
-      - View build resources
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - Administer build resource permissions  
-      - Manage build resources 
-      - Use build resources
-      - View build resources
-      ::: moniker-end
-      **Test Plans**  
-      - Manage test controllers  
-      ::: moniker range="azure-devops"
-      **Auditing**
-      - Delete audit streams
-      - Manage audit streams
-      - View audit log
-      ::: moniker-end
-      ::: moniker range="azure-devops-2019"
-      **Policies**  
-      - Manage enterprise policies
-      ::: moniker-end
-   :::column-end:::
-:::row-end:::
- 
-
+[!INCLUDE [collection-level-permissions](./includes/collection-level-permissions.md)]
 
 ## Prerequisites
 
@@ -116,7 +52,7 @@ The following table lists the permissions assigned at the project-level. For a d
 
 ::: moniker range="azure-devops"  
 > [!NOTE]   
-> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including **Permissions**. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including **Permissions**. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 > 
 > Also, users granted **Stakeholder** access, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
@@ -374,7 +310,7 @@ For on-premises deployments, see these additional articles:
 
 ::: moniker range="tfs-2018 < azure-devops"
 
-If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end 
 
@@ -382,7 +318,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you'll nee
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
 
 * [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
-* [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)
+* [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports)
 
 ::: moniker-end 
 

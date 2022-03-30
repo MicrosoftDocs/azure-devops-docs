@@ -8,21 +8,21 @@ ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli  
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 02/23/2022
 ---
 
 # Index to Azure DevOps CLI examples 
 
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 Use this index to quickly access examples that showcase use of the Azure DevOps Command Line Interface (CLI). 
 
 To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.md). 
 
 > [!NOTE]  
-> The Azure DevOps Command Line Interface (CLI) is available for Azure DevOps Server 2020 and Azure DevOps Services.  
+> The Azure DevOps Command Line Interface (CLI) is only available for use with Azure DevOps Services. The Azure DevOps extension for the Azure CLI does not support any version of Azure DevOps Server. 
 
 ## Azure Artifacts
 
@@ -97,14 +97,12 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
    :::column-end:::
    :::column span="1":::
-      ::: moniker range="azure-devops"
       #### User accounts
       - [Add a user](../organizations/accounts/add-organization-users.md#add-user)
       - [List users](../organizations/security/export-users-audit-log.md#list-users)
       - [Remove a user](../organizations/accounts/delete-organization-users.md#remove-user)
       - [Update a user](../organizations/accounts/add-organization-users.md#update-user)
       - [Show users](../organizations/accounts/add-organization-users.md#show-users)
-      ::: moniker-end
       #### Manage wikis
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
       - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)

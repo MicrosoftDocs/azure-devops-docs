@@ -32,79 +32,10 @@ See the following articles for related information:
 
 ## Project-level permissions 
 
-The following table lists the permissions assigned at the project-level. For a description of each permission, see [Permissions and groups reference, Groups](permissions.md#project-level-permissions).
+[!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)]
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
-> [!NOTE]   
-> Permissions associated with Analytics requires that the Inherited process model is selected for an on-premises project collection. 
-::: moniker-end
-
-:::row:::
-   :::column span="":::
-      **General**  
-      ::: moniker range="azure-devops"
-      - Delete team project
-      - Edit project-level information
-      - Manage project properties
-      - Rename team project
-      - Suppress notifications for work item updates
-      - Update project visibility
-      - View project-level information  
-      ::: moniker-end
-      ::: moniker range=">= azure-devops-2019 < azure-devops"
-      - Delete team project
-      - Edit project-level information
-      - Manage project properties
-      - Rename team project
-      - Suppress notifications for work item updates
-      - View project-level information  
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - Delete team project
-      - Edit project-level information
-      - Manage project properties
-      - Rename team project
-      - View project-level information  
-      ::: moniker-end
-      **Boards**  
-      ::: moniker range="azure-devops"
-      - Bypass rules on work item updates
-      - Change process of team project 
-      - Create tag definition
-      - Delete and restore work items
-      - Move work items out of this project
-      - Permanently delete work items
-      ::: moniker-end
-      ::: moniker range=">= azure-devops-2019 < azure-devops"
-      - Bypass rules on work item updates
-      - Change process of team project 
-      - Create tag definition
-      - Delete and restore work items
-      - Move work items out of this project
-      - Permanently delete work items
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2019"
-      - Create tag definition
-      - Delete and restore work items
-      - Permanently delete work items
-      ::: moniker-end
-   :::column-end:::
-   :::column span="":::
-      ::: moniker range=">= azure-devops-2019"
-      **Analytics**  
-      - Delete shared Analytics views
-      - Edit shared Analytics views
-      - View analytics  
-      ::: moniker-end
-      **Test Plans**  
-      - Create test runs
-      - Delete test runs
-      - Manage test configurations
-      - Manage test environments
-      - View test runs 
-   :::column-end:::
-:::row-end:::
- 
+> [!NOTE]
+> By default, Contributors are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when using a command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change will apply to the entire collection. To learn more about work item tagging permissions, see [Security groups, service accounts, and permissions, Work item tags](permissions.md#work-item-tags). 
 
 ## Prerequisites
 
@@ -112,7 +43,7 @@ The following table lists the permissions assigned at the project-level. For a d
 - If want to add security groups defined in Azure Active Directory or Active Directory, make sure those are first defined. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
 > [!NOTE]   
-> Users granted **Stakeholder** access, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+> Users granted **Stakeholder** access, aren't able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
  
 
 <a id="add-user-group" />

@@ -172,7 +172,7 @@ You can connect up to 100 GitHub repositories to an Azure Boards project. This l
 
 1. Open the web portal for your Azure DevOps Server.   
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open  **Projects**, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open  **Projects**, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
 ::: moniker range="azure-devops-2020"
 1. Choose (1) **Project Settings**> (2) **GitHub connections**.   
 

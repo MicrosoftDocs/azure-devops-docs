@@ -374,13 +374,13 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ::: moniker range="tfs-2018 < azure-devops"
 
-If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2017"  
 
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md) and [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).
+If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) and [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).
 
 ::: moniker-end  
 

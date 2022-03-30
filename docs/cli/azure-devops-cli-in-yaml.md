@@ -2,19 +2,19 @@
 title: Azure DevOps CLI in Azure Pipeline YAML
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create Azure Pipeline YAML
-ms.topic: reference 
+ms.topic: how-to
 ms.prod: devops 
 ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli  
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 09/22/2021
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 If you wish to use Azure DevOps CLI with a YAML pipeline, you can use the following example to understand how YAML can be used to install Azure CLI, add the Azure DevOps extension, and run Azure DevOps CLI commands.
 

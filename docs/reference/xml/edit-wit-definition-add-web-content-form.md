@@ -1,28 +1,34 @@
 ---
 title: Edit WIT definition to add web content
 titleSuffix: TFS
-description: Adds a Web content or HTML content to a work item form by exporting the type definition XML file and adding a WebpageControl in the FORM section - Team Foundation Server (TFS)
+description: Adds a Web content or HTML content to a work item form by exporting the type definition XML file and adding a WebpageControl in the FORM section 
 ms.technology: devops-agile
-ms.custom: process
+ms.custom: archive-candidate
 ms.assetid: 212ce627-db5c-4d19-a6c5-68f10cb6ca1c
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops' 
-ms.date: 02/14/2017
+ms.topic: how-to
+monikerRange: '<= tfs-2015'
+ms.date: 03/01/2022
 ---
 
 # Edit a WIT definition to add web content to a work item form
 
-[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
+[!INCLUDE [version-lt-eq-2015](../../includes/version-lt-eq-2015.md)]
+
+
+> [!IMPORTANT]  
+> This article applies to customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
+>
+> For an overview of process models, see [Customize your work tracking experience](../customize-work.md).   
+
 
 You can add web content or HTML content to a work item form by exporting the type definition XML file and adding a `WebpageControl` in the `FORM` section. After you modify and import the XML file, you can verify the display of the Web content in the updated work item type.  
   
 The Web content that you display can be specified in one of the following ways:  
   
 -   URL of a Web page  
-  
 -   A URL path that is dynamically determined at run time based on one or more field values defined for the work item  
-  
 -   HTML content  
   
 For information about the syntax structure of the elements used to add Web content to a work item type (WIT), see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md) and [Link and Param](link-param-xml-elements-reference.md).  
@@ -31,7 +37,8 @@ For information about the syntax structure of the elements used to add Web conte
 [!INCLUDE [temp](../../includes/update-xml-wit.md)] 
   
   
-<a name="Export"></a> 
+<a name="Export"></a>
+ 
 ## Export and open the WIT definition file  
   
 1.  Perform one of the following steps based on the scope of the customization that you want to perform:  
@@ -51,6 +58,7 @@ For information about the syntax structure of the elements used to add Web conte
     2.  Select the work item type XML file that you want to update, and then choose **Open**. When you are prompted about line endings, click **No**.  
   
 <a name="AddWebContent"></a> 
+
 ## Add Web content to the FORM section of the definition file  
   
 1.  Find the `<TabGroup>` section of the XML file. Notice that there are `<Tab>` elements for items such as Links and File Attachments in which each `<Tab>` element contains a `<Control>` element that renders the respective control.  
@@ -132,6 +140,7 @@ For information about the syntax structure of the elements used to add Web conte
 4.  Use `witadmin importwitd` to import the new work item type to a single project. To add the work item type to your process template, see [Add type definitions for work items](../process-templates/add-wit-definitions-process-template.md).  
   
 <a name="Verify"></a> 
+
 ## Verify the Web page or HTML content appears in the form  
   
 1.  In Team Explorer, open Work Items for the project that contains the WIT definition that you modified, and choose ![Refresh](media/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
@@ -145,6 +154,7 @@ For information about the syntax structure of the elements used to add Web conte
 3.  Choose **Close** to close the new work item.  
   
 ## Related articles   
+
 -  [Customize your work tracking experience](../customize-work.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)   

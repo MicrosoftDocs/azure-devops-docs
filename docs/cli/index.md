@@ -2,24 +2,24 @@
 title: Learn about Azure DevOps command line interface extension
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps extension command line interface 
-ms.topic: conceptual
+ms.topic: quickstart
 ms.prod: devops 
 ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli  
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 08/17/2020
 ---
 
 # Get started with Azure DevOps CLI
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 With the Azure DevOps extension for Azure Command Line Interface (CLI),  you can manage many Azure DevOps Services from the command line. CLI commands enable you to streamline your tasks with faster and flexible interactive canvas, bypassing user interface workflows.
 
 > [!NOTE]  
-> The Azure DevOps Command Line Interface (CLI) is available for Azure DevOps Server 2020 and Azure DevOps Services. 
+> The Azure DevOps Command Line Interface (CLI) is only available for use with Azure DevOps Services. The Azure DevOps extension for the Azure CLI does not support any version of Azure DevOps Server. 
 
 To start using the Azure DevOps extension for Azure CLI, perform the following steps:
 
@@ -33,18 +33,12 @@ To start using the Azure DevOps extension for Azure CLI, perform the following s
 
 	You can use `az extension list` or `az extension show --name azure-devops` to confirm the installation.
 
-3. Sign in: Run `az login` to sign in. Note that we support only interactive or log in using user name and password with `az login`. To sign in using a Personal Access Token (PAT), see [Sign in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md). When connecting to an on-premises server instance, sign in using a PAT may be required to run select commands. 
+3. Sign in: Run `az login` to sign in. Note that we support only interactive or log in using user name and password with `az login`. To sign in using a Personal Access Token (PAT), see [Sign in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md). 
 
 4. Configure defaults: We recommend you set the default configuration for your organization and project. Otherwise, you can set these within the individual commands themselves.  
 
     ```
 	az devops configure --defaults organization=https://dev.azure.com/contoso project=ContosoWebApp
-    ```
-
-	If you're connecting to an Azure DevOps Server, specify the URL for your server instance. For example: 
-
-    ```
-	az devops configure --defaults organization=https://ServerName/CollectionName project=ProjectName
     ```
 
 ## Command usage

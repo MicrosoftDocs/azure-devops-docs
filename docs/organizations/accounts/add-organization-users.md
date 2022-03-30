@@ -300,19 +300,19 @@ ID                                    Display Name         Email                
 
 ## Restrict user view to organization projects
 
-To limit select users access to organizational information, enable the **Limit user visibility for projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they haven't been added to.
+To limit select users access to organizational information, enable the **Limit user visibility and collaboration to specific projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group can't access projects that they haven't been added to.
 
 > [!NOTE]
-> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. To learn more, see [About projects and scaling your organization, Limit user visibility for projects using the Project-Scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group).
+> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group).
 
 Complete the following steps to add users to the new **Project-Scoped Users** group:
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Enable the **Limit user visibility for projects** preview feature for the organization. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
+2. Enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
 
    > [!TIP]  
-   > The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility for projects** preview feature is enabled.
+   > The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility and collaboration to specific projects** preview feature is enabled.
 
 3. Add users or groups to your project(s) as described in [Add users to a project or team](../security/add-users-team-project.md). Users added to a team are automatically added to the project and team group.
 

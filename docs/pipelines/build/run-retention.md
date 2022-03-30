@@ -38,7 +38,7 @@ If a pipeline in this project is important and runs should be retained for longe
     script: |
       $contentType = "application/json";
       $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-      $rawRequest = @{ daysValid = 365 * 2; definitionId = 1; ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+      $rawRequest = @{ daysValid = 365 * 2; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
       $request = ConvertTo-Json @($rawRequest);
       $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
       Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;

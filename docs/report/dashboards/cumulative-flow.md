@@ -2,8 +2,7 @@
 title: View and configure the cumulative flow diagram (CFD) reports
 titleSuffix: Azure DevOps 
 description: Learn how to configure and view cumulative flow diagrams to improve your Kanban processes.
-ms.custom: dashboards
-ms.prod: devops  
+ms.custom: dashboards 
 ms.technology: devops-analytics  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.author: kaelli
@@ -14,7 +13,6 @@ ms.date: 09/28/2021
 ---
 
 # View and configure a Cumulative Flow Diagram
-
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

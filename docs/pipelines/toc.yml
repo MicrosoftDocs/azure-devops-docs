@@ -388,6 +388,10 @@
           displayName: containers, docker, azure web app
         - name: Visual Studio Code Deploy to Azure extension
           href: targets/deploy-to-azure-vscode.md
+    - name: Azure Functions
+      items:
+        - name: Azure Functions
+          href: /azure/azure-functions/functions-how-to-azure-devops
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
@@ -428,10 +432,7 @@
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
-        href: ecosystems/kubernetes/aks-template.md
-      - name: Deploy a Docker container app
-        href: apps/cd/deploy-aks.md
-        displayName: kubernetes, classic release
+        href: /azure/aks/devops-pipeline
       - name: Deploy to AKS with Jenkins
         href: release/integrate-jenkins-pipelines-aks.md
         displayName: cluster, Jenkins, Maven, Docker
@@ -540,7 +541,7 @@
     - name: About agents & agent pools
       href: agents/agents.md
       displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
-    - name: Add & manage agent pools
+    - name: Create & manage agent pools
       href: agents/pools-queues.md
       displayName: queue, default, hosted, maintenance
     - name: Historical graph for agent pools
@@ -624,6 +625,8 @@
         - name: Other security considerations
           href: security/misc.md
           displayName: PATH, containers, control tasks, auditing
+    - name: Download release permissions report
+      href: ../organizations/security/download-permissions-report-release.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
