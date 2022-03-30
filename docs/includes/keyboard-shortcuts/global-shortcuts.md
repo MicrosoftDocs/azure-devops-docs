@@ -12,7 +12,7 @@ You can use the following keyboard shortcuts from the web portal.
 
 :::row:::
    :::column span="2":::
-      ![Global shortcuts](/azure/devops/media/keyboard-shortcuts/global-shortcuts-cloud.png)  
+      ![Global shortcuts](../../media/keyboard-shortcuts/global-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/>
@@ -41,7 +41,7 @@ You can use the following keyboard shortcuts from the web portal.
 
 :::row:::
    :::column span="2":::
-      ![Global shortcuts](/azure/devops/media/keyboard-shortcuts/global-shortcuts.png)  
+      ![Global shortcuts](../../media/keyboard-shortcuts/global-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/>

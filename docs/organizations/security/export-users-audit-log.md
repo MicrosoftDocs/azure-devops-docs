@@ -59,10 +59,10 @@ From the Azure DevOps CLI command, you can get a list of the users in your organ
 
 ::: moniker range="azure-devops"
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 2. Choose **Users**, and then **Export users**.
 
@@ -120,7 +120,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
-1. From the web portal home page for a project, choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo, (1) the project collection, and (2) **Access levels**. 
+1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo, (1) the project collection, and (2) **Access levels**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Azure DevOps Server 2019, Web portal, open collection Access levels](media/export-users-audit/open-access-levels-2019.png) 
@@ -143,7 +143,7 @@ You can get a list of users and groups that have accessed your Azure DevOps Serv
 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
-1. From the web portal home page for a project, choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
+1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
 
 	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" />  
 
@@ -163,7 +163,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
-1. From the web portal home page for a project, choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: gear icon. The URL is similar to `http://myserver:8080/tfs`.
+1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. The URL is similar to `http://myserver:8080/tfs`.
 
 	![TFS 2015, Web portal, open the Server settings admin context](media/ALM_CAL_OpenAdminPage.png)
 

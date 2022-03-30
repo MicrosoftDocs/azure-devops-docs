@@ -81,7 +81,7 @@ For project collection and project administrators, learn more about security and
       - [Permission states](about-permissions.md#permission-states) 
       - [Personal Access Tokens (PATs)](about-security-identity.md#authentication)   
       - [Preview features](../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json) 
-      - [Project-scoped User Groups](../projects/about-projects.md#project-scoped-user-group)  
+      - [Project-scoped User Groups](../../user-guide/manage-organization-collection.md#project-scoped-user-group)  
       - [Projects](../projects/about-projects.md)  
       - [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
    :::column-end:::
@@ -165,7 +165,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Change project collection-level permissions](change-organization-collection-level-permissions.md)   
        - [Change process permissions](set-permissions-access-work-tracking.md#process-permissions) 
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
-       - [Enable Project-Scoped Users Group](../projects/about-projects.md#project-scoped-user-group) 
+       - [Enable Project-Scoped Users Group](../../user-guide/manage-organization-collection.md#project-scoped-user-group) 
       
       
       
@@ -216,7 +216,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Web site settings & security](/azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-       - [Set SQL Server report permissions](../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)     
+       - [Set SQL Server report permissions](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports)     
 :::row-end:::
 ---
 ::: moniker-end

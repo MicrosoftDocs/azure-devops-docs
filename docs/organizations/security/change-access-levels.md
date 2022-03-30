@@ -1,5 +1,5 @@
 ---
-title: Change access levels for users or groups
+title: Add users or groups to an access level 
 titleSuffix: Azure DevOps 
 description: Learn how to set the access level for a user or group based on their license 
 ms.technology: devops-security
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 06/02/2019
 ---
 
-# Change access levels for users or groups
+# Add users or groups to an access level 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -22,7 +22,7 @@ This article applies to managing access levels for project collections defined o
 
 > [!IMPORTANT]  
 > Make sure that you select the correct version of this article for Azure DevOps Services or Azure DevOps Server, renamed from Team Foundation Server (TFS). The version selector is located above the table of contents. <br/>
-> ![Content version selector](/azure/devops/media/version-selector.png)
+> ![Content version selector](../../media/version-selector.png)
 
 For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
@@ -52,7 +52,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-- From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
+- From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Open Access levels dialog](media/change-access-levels/open-access-levels-2019.png)

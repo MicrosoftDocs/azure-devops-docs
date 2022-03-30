@@ -73,7 +73,7 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 
 ## Run a query from the command line 
 
-You can run a query in the CLI with the [az boards query](/cli/azure/boards#az_boards_query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can run a query in the CLI with the [az boards query](/cli/azure/boards#az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards query [--id]
@@ -203,7 +203,7 @@ You can do most tasks for viewing and running queries from each of the queries l
 > |Expand or collapse container folders or query folders |✔️ |✔️|✔️|  
 > |Filter the list of queries |✔️ |✔️ |  |
 > |Favorite a query (for web portal, choose ![Favorite](../media/icons/icon-favorite-star.png)) |  |✔️ | |  
-> |Unfavorite a query (for web portal, choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false":::) |✔️ |✔️ | ✔️ |   
+> |Unfavorite a query (for web portal, choose :::image type="icon" source="../../media/icons/icon-favorited.png" border="false":::) |✔️ |✔️ | ✔️ |   
 > |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | ✔️|  
 
 ::: moniker-end	

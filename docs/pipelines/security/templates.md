@@ -4,7 +4,7 @@ description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: vijayma
 ms.date: 02/24/2021
-monikerRange: '> azure-devops-2019'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Security through templates
@@ -111,6 +111,7 @@ One of the commands still allowed in restricted mode is the `setvariable` comman
       Write-Host "##vso[task.setvariable variable=BadVar]myValue"
 ```
 
+::: moniker range=">=azure-devops"
 ### Conditional insertion of stages or jobs
 
 Restrict stages and jobs to run under specific conditions.
@@ -183,6 +184,8 @@ extends:
         script: echo This step will be stripped out and not run!
     - task: MyOtherTask@2
 ```
+
+:::moniker-end
 
 ### Type-safe parameters
 
@@ -267,6 +270,7 @@ extends:
         image: 'windows-latest'
 
 ```
+::: moniker range=">=azure-devops"
 
 ### Additional steps
 
@@ -289,7 +293,7 @@ jobs:
     - task: PublishMyTelemetry@1      # Post steps
       condition: always()
 ```
-
+::: moniker-end
 <!-- Coming Q1 CY20
 ## Template enforcement
 A template is only a security mechanism if you can enforce it.

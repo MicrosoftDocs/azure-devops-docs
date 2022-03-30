@@ -28,6 +28,8 @@ Do you need to do any of the following?
 
 * **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks.
 
+* **Chat with our virtual support agent** Get help with common issues, troubleshooting steps, or create a request to change the region your Azure DevOps instance is hosted in using our [virtual support agent](https://go.microsoft.com/fwlink/?linkid=2160944).
+
 <!---
 Removed section per work item 1791710, as all Support links should go to Developer Community.
 

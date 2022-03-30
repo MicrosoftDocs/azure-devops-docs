@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: How to set permissions and access levels to view and configure charts and dashboards in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.topic: reference
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

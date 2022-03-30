@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---

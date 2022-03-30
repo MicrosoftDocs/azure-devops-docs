@@ -251,7 +251,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
     {
       "target": "project",
       "endpointId": "$(FabrikamService)",
-      "dataSourceName": "Fabfrikam Projects"
+      "dataSourceName": "Fabrikam Projects"
     }
   ],
   "execution": {

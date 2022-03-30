@@ -57,7 +57,7 @@ For a description of each project collection-level group, see [Security groups, 
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Limit user visibility for projects** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
  
@@ -101,7 +101,7 @@ To find out who is a member, check the **Security** settings at the collection l
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: settings icon and choose **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
+	> ![Open Organization Settings](../../media/settings/open-account-settings.png)  
 
 2. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 

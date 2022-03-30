@@ -60,7 +60,7 @@ For additional notes on working across projects, see [Work across projects FAQs]
  
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
   ::: moniker-end  
 
 ## View and open work items

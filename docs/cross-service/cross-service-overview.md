@@ -707,7 +707,7 @@ To learn more, see [What is the Analytics service?](../report/powerbi/what-is-an
 
 Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals.  To learn more, see [About dashboards, charts, reports, & widgets](../report/dashboards/overview.md). 
 
-SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md). 
+SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports).
 
 ::: moniker-end 
 

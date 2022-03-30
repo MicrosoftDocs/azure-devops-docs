@@ -7,9 +7,9 @@ ms.technology: devops-agile
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart 
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 03/01/2022
 ---
 
 # Link user stories, issues, bugs, and other work items in Azure Boards  
@@ -61,7 +61,10 @@ Use this article to learn how to:
 > * Bulk modify link relationships     
 ::: moniker-end    
 
-For a list of all link types and supported link relationships, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). 
+> [!NOTE]  
+> If you want to link work items in a parent-child hierarchy, use the mapping pane as described in [Organize your backlog and map child work items to parents](organize-backlog.md). If you want to link test cases to user stories, see [Add, run, and update inline tests](../boards/add-run-update-tests.md) and [Create test plans and test suites](../../test/create-a-test-plan.md).
+
+For an overview of how links are used to support traceability, see [End-to-end traceability](../../cross-service/end-to-end-traceability.md). 
 
 ## Link guidance 
 
@@ -264,10 +267,9 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 
 [!INCLUDE [temp](../../includes/link-work-item-builds-projects.md)]
 
+<a id="find-items"> </a> 
 
 ::: moniker range="<= tfs-2018"
-
-<a id="find-items"> </a>  
 
 ## Find work items to link to   
 

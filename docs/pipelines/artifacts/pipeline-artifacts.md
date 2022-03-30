@@ -92,17 +92,20 @@ Packages in Azure Artifacts are immutable. Once you publish a package, its versi
 
 ### Use .artifactignore
 
-`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
+`.artifactignore` uses a similar syntax to `.gitignore` (with few limitations) to specify which files should be ignored when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
 
-Example: ignore all files except **.exe** files:
+> [!NOTE]
+> The plus sign character `+` is not supported in URL paths and some builds metadata for package types such as Maven.
+
+**Example**: ignore all files except **.exe** files:
 
 ```
 **/*
 !*.exe
 ```
 
-> [!NOTE]
-> `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
+> [!IMPORTANT]
+> Azure Artifacts automatically ignore the *.git* folder path when you don't have a *.artifactignore* file. You can bypass this by creating an empty *.artifactignore* file.
 
 ## Download artifacts
 

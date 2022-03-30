@@ -775,7 +775,7 @@ Add one or more of the following widgets to support adding:
       - [View process guidance](../../project/configure-or-redirect-process-guidance.md)  
       - [View reports](../sql-reports/reporting-services-reports.md)  
       
-      To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
+      To add or update reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end

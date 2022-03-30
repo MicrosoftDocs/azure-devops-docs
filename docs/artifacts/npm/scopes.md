@@ -4,7 +4,7 @@ description: How to use npm scopes with Azure Artifacts
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 02/15/2022
 monikerRange: '>= tfs-2017'
 ---
 
@@ -31,7 +31,8 @@ To use an Azure Artifacts feed with a specific scope, we will need to set up our
 In your .npmrc file, replace `registry=<YOUR_SOURCE_URL>` with `@SCOPE_NAME:registry=<YOUR_SOURCE_URL>`.
 
 > [!NOTE]
-> Make sure you add the scope and package names to your `package.json` file: `{ "name": "@SCOPE_NAME/PACKAGE_NAME" }`.
+> Make sure you add the scope and package names to your `package.json` file:
+> `{ "name": "@SCOPE_NAME/PACKAGE_NAME" }`.
 
 
 ## Upstream sources or scopes?

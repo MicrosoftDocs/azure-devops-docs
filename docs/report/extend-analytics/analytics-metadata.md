@@ -21,7 +21,6 @@ Understanding the metadata associated with the entity model for Analytics is a p
 
 In this article you'll learn how to:
 > [!div class="checklist"]
-> 
 > * Query the metadata on a specific project
 > * Query the metadata on an organization
 > * Identify the keys, properties, and navigational properties associated with an Entity

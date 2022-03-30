@@ -57,7 +57,7 @@ The system manages permissions at different levels - individual, external, serve
 
 ### Individual permissions
 
-For more information, see [Set individual permissions](change-individual-permissions.md).
+For more information, see [Set individual permissions](/azure/devops/organizations/security/request-changes-permissions).
 
 ### External guest access 
 
@@ -217,7 +217,7 @@ For more information, see the following articles:
 
 Always authenticate with identity services rather than cryptographic keys when available. Managing keys securely with application code is difficult and regularly leads to mistakes like accidentally publishing sensitive access keys to code repositories like GitHub. But, if you're using PATs, see the following recommendations:
 
-- Administrators should audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list.md) and revoke any PATs that don’t meet the following criteria for PATs in use: 
+- Administrators should audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any PATs that don’t meet the following criteria for PATs in use: 
 
   - Should always be scoped (roles). 
   - Shouldn’t be global (can access more than one organization). 

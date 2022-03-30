@@ -152,7 +152,7 @@ Create a NuGet package in the destination folder.
 ### Push
 
 > [!NOTE]
-> Pipeline artifacts are downloaded to `System.ArtifactsDirectory` directory. `packagesToPush` value can be set to `$(System.ArtifactsDirectory)/**/*.nupkg` in your release pipeline.
+> Pipeline artifacts are downloaded to the `Pipeline.Workspace` directory, and to the `System.ArtifactsDirectory` directory for classic release pipelines. `packagesToPush` value can be set to `$(Pipeline.Workspace)/**/*.nupkg` or `$(System.ArtifactsDirectory)/**/*.nupkg` respectively.
 
 * Push/Publish a package to a feed defined in your NuGet.config.
 
@@ -166,16 +166,26 @@ Create a NuGet package in the destination folder.
         nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
     ```
 
-* Push/Publish a package to a project scoped
+* Push/Publish a package to an organization scoped feed
 
     ```YAML
     # Push a project
     - task: NuGetCommand@2
       inputs:
         command: 'push'
-        feedsToUse: 'select'
-        vstsFeed: 'my-project/my-project-scoped-feed'
-        publishVstsFeed: 'myTestFeed'
+        nuGetFeedType: 'internal'
+        publishVstsFeed: 'my-organization-scoped-feed'
+    ```
+    
+* Push/Publish a package to a project scoped feed
+
+    ```YAML
+    # Push a project
+    - task: NuGetCommand@2
+      inputs:
+        command: 'push'
+        nuGetFeedType: 'internal'
+        publishVstsFeed: 'my-project/my-project-scoped-feed'
     ```
 
 * Push/Publish a package to NuGet.org

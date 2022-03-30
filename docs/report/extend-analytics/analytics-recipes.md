@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---

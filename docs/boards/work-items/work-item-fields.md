@@ -159,10 +159,10 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 To review the list of fields defined for an organization or collection, open **Organization settings>Process>Fields**.   
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Organization settings.](/azure/devops/media/settings/open-admin-settings-vert.png)  
+	> ![Choose Organization settings.](../../media/settings/open-admin-settings-vert.png)  
 
 1. Then, choose **Process**. 
    
@@ -618,21 +618,24 @@ Attributes assigned to a field depend on the platform and version you use. For e
 > 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Server 2019 and later versions. To learn more, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md).
 > 3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services.   
 
-::: moniker range="< azure-devops"
 
 <a id="reportable-attributes"> </a>
 
+::: moniker range="< azure-devops"
 
 ## Reportable attributes
 
-All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
+All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
 
 For a description of each reportable attribute, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md). 
 
 For a list of fields that have reportable attributes defined by default, see [Reportable fields reference](../../reference/xml/reportable-fields-reference.md).
 
+::: moniker-end
 
 <a id="index-fields" />
+
+::: moniker range="< azure-devops"
 
 ## Indexed fields
 
