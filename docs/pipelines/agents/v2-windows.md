@@ -137,9 +137,12 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-> [!Note]
+> [!IMPORTANT]
 > We strongly recommend you configure the agent from an elevated PowerShell window.
 > If you want to configure as a service, this is **required**.
+
+> [!IMPORTANT]
+> For security reasons we strongly recommend making sure the agents folder (`C:\agents`) is only editable by admins.
 
 > [!Note]
 > Please avoid using mintty based shells, such as git-bash, for agent configuration. Mintty is not fully compatible with native Input/Output Windows API ([here](https://github.com/mintty/mintty/wiki/Tips#inputoutput-interaction-with-alien-programs) is some info about it) and we couldn't guarantee correct work of setup script in this case.

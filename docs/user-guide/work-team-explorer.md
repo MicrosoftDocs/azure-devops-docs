@@ -79,8 +79,7 @@ To learn more about each page, see the following articles.
    :::column span="1":::
       **Home** 
       - [Web portal](../project/navigation/index.md) 
-      - [Task Board](../boards/sprints/task-board.md) 
-      - [Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room) 
+      - [Task Board](../boards/sprints/task-board.md)
        
       **Builds** 
       - [Create build pipelines](../pipelines/tasks/index.md) 
@@ -147,7 +146,6 @@ To learn more about each page, see the following articles.
       **Home** 
       - [Web portal](../project/navigation/index.md) 
       - [Task Board](../boards/sprints/task-board.md) 
-      - [Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room) 
        
       **Builds** 
       - [Create build pipelines](../pipelines/tasks/index.md) 

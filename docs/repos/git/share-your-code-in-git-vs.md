@@ -25,7 +25,7 @@ Share your Visual Studio solution with others by hosting your code in an **Azure
 > * Commit and push updates
 > * Pull changes from the main branch of your repository
 
-To clone a GitHub repository, get the URL as described in [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository).
+To clone a GitHub repository, get the clone URL as described in [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
@@ -724,7 +724,8 @@ See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](c
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md) for your code and learn more about using Git in the [Azure Repos Git tutorial](gitworkflow.md).
+> [Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md)
+> [Azure Repos Git tutorial](gitworkflow.md)
 
 ## Related articles
 

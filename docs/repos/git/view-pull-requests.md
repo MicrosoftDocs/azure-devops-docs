@@ -124,7 +124,7 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 
 ::: moniker range=">= azure-devops-2020"
 
-To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list).
+To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az-repos-pr-list).
 
 ```azurecli
 az repos pr list [--creator]
@@ -255,7 +255,7 @@ From the Team Explorer **Pull Requests** view:
 
 ::: moniker range=">= azure-devops-2020"
 
-You can use several [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
+You can use several [az repos pr list](/cli/azure/repos/pr#az-repos-pr-list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
 
 The `--creator` and `--reviewer` values can be display names or email addresses. The `--top` parameter defines the maximum number of PRs to list.
 
@@ -309,7 +309,7 @@ Starting with Visual Studio 2017 Update 6, you can check out a PR's source branc
 
 ::: moniker range=">= azure-devops-2020"
 
-To show the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `--id` parameter. To open the PR in your browser, use `--open`.
+To show the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az-repos-pr-show) with the required `--id` parameter. To open the PR in your browser, use `--open`.
 
 ```azurecli
 az repos pr show --id
@@ -345,7 +345,7 @@ ID    Created     Creator              Title                         Status    I
 
 ### Check out a branch
 
-Use [az repos pr checkout](/cli/azure/repos/pr#az_repos_pr_checkout) with the required `--id` parameter to check out a PR branch locally, as long as there are no local changes.
+Use [az repos pr checkout](/cli/azure/repos/pr#az-repos-pr-checkout) with the required `--id` parameter to check out a PR branch locally, as long as there are no local changes.
 
 ```azurecli
 az repos pr checkout --id

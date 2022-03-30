@@ -106,7 +106,7 @@ Developers commit each set of changes and do version control operations like his
 > [!NOTE]
 > Git in Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
 
-With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server
+With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -280,7 +280,7 @@ The following services work across the previously mentioned services to support:
 - SQL Server Reporting
 
 > [!NOTE]  
-> Team rooms are deprecated for TFS 2017.2. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
+> Team rooms are deprecated. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
