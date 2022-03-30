@@ -70,21 +70,15 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]
 >![Go to the personal notifications page.](media/nav-personal-notifications-hub.png)
 ::: moniker-end
 
-
-
-::: moniker range=">= tfs-2018"
-
 ## View and edit all notification subscriptions
 
 This view shows all notification subscriptions that you've created or that were created by an administrator. Notification subscriptions let you control what you get notified about. Subscribed notifications are indicated with the State as **On**.
-
-::: moniker-end  
 
 ::: moniker range="azure-devops"
 
@@ -104,13 +98,13 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range="< azure-devops"
 
 :::image type="content" source="media/unsubscribe-personal-notifications.png" alt-text="Screenshot of unsubscribe from notification subscriptions.":::
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="tfs-2018"
 
 A notification subscription can be only for you. Or, if you're a team administrator you can ensure that it's shared by everyone on the team.
 

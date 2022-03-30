@@ -8,13 +8,13 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 12/07/2020 
 ---
 
 # Access notification settings
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn about navigating the notifications user interface.
 
@@ -90,16 +90,12 @@ For more information, see [Manage your notifications](manage-your-personal-notif
 
 Enter the following URL to reach a team or project-level notifications page, replacing {organization} and {project} with your organization's and project's name. 
 
-::: moniker range=">= tfs-2018" 
-
 ```URL
 https://dev.azure.com/{organization}/{project}/_settings/notifications
 ```
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of team notifications page](media/nav-team-notifications-hub-newnav.png)  
-
-::: moniker-end
 
 For more information, see [Manage notifications for a team or group](manage-team-group-global-organization-notifications.md)
 

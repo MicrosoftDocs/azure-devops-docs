@@ -8,12 +8,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/30/2019  
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Integrate third-party services
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Integrate with your favorite services by notifying them when events happen in Azure DevOps. We have multiple [messaging app integrations](../service-hooks/services/workplace-messaging-apps.md) to help users receive notifications in response to events in Azure DevOps, complete workflows and take proactive actions such as allowing users to approve release deployments and creating work items from their channels.
 

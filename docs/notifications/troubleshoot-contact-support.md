@@ -8,12 +8,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/30/2019 
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Contact support
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 If you've reviewed the troubleshooting sections and can't resolve your issue, [contact Support in the Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
