@@ -14,7 +14,7 @@ ms.date: 02/24/2017
 
 # Process template plug-ins: Index to XML element definitions
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema definition for process templates.  
 

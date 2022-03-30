@@ -6,7 +6,6 @@ description: Understand the services provided in Azure DevOps.
 ms.technology: devops-new-user 
 ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
-ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -15,14 +14,14 @@ ms.date: 11/11/2020
 
 # What features and services do I get with Azure DevOps?
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 With Azure DevOps, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client/server model. Many of them are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
 
 
 ::: moniker range=">= azure-devops-2019"
 
-You access Azure DevOps services through the left pane, as shown in the following image. To jump to information for each major service, see the associated articles. 
+You access Azure DevOps Services through the left pane, as shown in the following image. To jump to information for each major service, see the associated articles. 
 
 ---
 :::row:::
@@ -47,7 +46,7 @@ You access Azure DevOps services through the left pane, as shown in the followin
 
 ::: moniker range="<= tfs-2018"
 
-You access Azure DevOps services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
+You access Azure DevOps Services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
 
 ![Azure DevOps Services, main](../media/services-hubs.png) 
 
@@ -107,7 +106,7 @@ Developers commit each set of changes and do version control operations like his
 > [!NOTE]
 > Git in Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
 
-With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server
+With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -281,7 +280,7 @@ The following services work across the previously mentioned services to support:
 - SQL Server Reporting
 
 > [!NOTE]  
-> Team rooms are deprecated for TFS 2017.2. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
+> Team rooms are deprecated. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
 ::: moniker-end
 
 ::: moniker range="tfs-2015"

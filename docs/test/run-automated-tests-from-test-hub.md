@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Run automated tests from test plans
 
-[!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
 
 Automate test cases in your test plans and run them directly from **Azure Test Plans** . Automated tests provide you with the following benefits:
 

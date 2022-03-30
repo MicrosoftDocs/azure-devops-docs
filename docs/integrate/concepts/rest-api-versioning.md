@@ -12,7 +12,7 @@ ms.date: 09/29/2020
 
 # REST API versioning
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 

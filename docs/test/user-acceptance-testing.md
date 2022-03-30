@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Assign tests for user acceptance testing
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
 
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based
@@ -99,4 +99,4 @@ For details see [this blog post](https://devblogs.microsoft.com/devops/visual-st
 - [Test objects and terms](test-objects-overview.md)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
-- [FAQs for manual testing](reference-qa.md)
+- [FAQs for manual testing](reference-qa.yml)

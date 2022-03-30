@@ -12,7 +12,7 @@ ms.date: 09/27/2021
 
 # Develop a web extension
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Use extensions to enhance Azure DevOps with new web experiences, dashboard widgets, build tasks, and more. You can develop extensions using standard technologies like HTML, JavaScript, and CSS. They're packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 

@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch policies and settings
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Branch policies help teams protect their important [branches](./create-branch.md) of development. Policies enforce your team's code quality and change management standards. This article describes how to set and manage branch policies. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md).
 
@@ -23,7 +23,7 @@ A branch that has required policies configured can't be deleted, and requires pu
 
 - To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 
-- If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy?view=azure-cli-latest&preserve-view=true) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+- If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
@@ -86,7 +86,7 @@ You can use Azure DevOps CLI to list or show policies for a branch or repository
 
 ### List policies
 
-To list all policies in a project, use [az repos policy list](/cli/azure/repos/policy#az_repos_policy_list).
+To list all policies in a project, use [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list).
 
 ```azurecli
 az repos policy list [--branch]
@@ -130,7 +130,7 @@ ID    Name                         Is Blocking    Is Enabled    Repository Id   
 
 ### Show details of a policy
 
-To show the details of any policy, use [az repos policy show](/cli/azure/repos/policy#az_repos_policy_show).
+To show the details of any policy, use [az repos policy show](/cli/azure/repos/policy#az-repos-policy-show).
 
 ```azurecli
 az repos policy show --id
@@ -209,7 +209,7 @@ You can manage pull request required approver counts with [az repos policy appro
 
 ### Create approver count policy
 
-To create an approver count policy, use [az repos policy approver-count create](/cli/azure/repos/policy/approver-count#az_repos_policy_approver_count_create).
+To create an approver count policy, use [az repos policy approver-count create](/cli/azure/repos/policy/approver-count#az-repos-policy-approver-count-create).
 
 ```azurecli
 az repos policy approver-count create --allow-downvotes {false, true}
@@ -262,7 +262,7 @@ ID    Name                         Is Blocking    Is Enabled    Repository Id   
 
 ### Update approver count policy
 
-To update an approver count policy, use [az repos policy approver-count update](/cli/azure/repos/policy/approver-count#az_repos_policy_approver_count_update).
+To update an approver count policy, use [az repos policy approver-count update](/cli/azure/repos/policy/approver-count#az-repos-policy-approver-count-update).
 
 ```azurecli
 az repos policy approver-count update --id
@@ -337,13 +337,13 @@ To set the policy, under **Branch Policies**, set **Check for linked work items*
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking) to create and update work item linking policies for a branch or repository.
+You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking) to create and update work item linking policies for a branch or repository.
 
 <a id="create-wi-policy" /> 
 
 ### Create work item linking policy
 
-Use [az repos policy work-item-linking create](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking_create) to create a work item linking policy for a repository or branches.
+Use [az repos policy work-item-linking create](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking-create) to create a work item linking policy for a repository or branches.
 
 ```azurecli
 az repos policy work-item-linking create --blocking {false, true}
@@ -375,7 +375,7 @@ az repos policy work-item-linking create --blocking {false, true}
 
 ### Update work item linking policy
 
-Use [az repos policy work-item-linking update](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking_update) to update a work item linking policy for a repository or one or more branches.
+Use [az repos policy work-item-linking update](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking-update) to update a work item linking policy for a repository or one or more branches.
 
 ```azurecli
 az repos policy work-item-linking update --id
@@ -469,7 +469,7 @@ You can use Azure DevOps CLI [az repos policy comment-required](/cli/azure/repos
 
 ### Create comment resolution policy
 
-To create a comment resolution policy, use [az repos policy comment-required create](/cli/azure/repos/policy/comment-required#az_repos_policy_comment_required_create).
+To create a comment resolution policy, use [az repos policy comment-required create](/cli/azure/repos/policy/comment-required#az-repos-policy-comment-required-create).
 
 ```azurecli
 az repos policy comment-required create --blocking {false, true}
@@ -499,7 +499,7 @@ az repos policy comment-required create --blocking {false, true}
 
 ### Update comment resolution policy
 
-To update a comment resolution policy, use [az repos policy comment-required update](/cli/azure/repos/policy/comment-required#az_repos_policy_comment_required_update).
+To update a comment resolution policy, use [az repos policy comment-required update](/cli/azure/repos/policy/comment-required#az-repos-policy-comment-required-update).
 
 ```azurecli
 az repos policy comment-required update --id
@@ -578,7 +578,7 @@ You can use Azure DevOps CLI [az repos policy merge-strategy](/cli/azure/repos/p
 
 ### Create a merge strategy policy
 
-Use [az repos policy merge-strategy create](/cli/azure/repos/policy/merge-strategy#az_repos_policy_merge_strategy_create) to create a merge strategy policy.
+Use [az repos policy merge-strategy create](/cli/azure/repos/policy/merge-strategy#az-repos-policy-merge-strategy-create) to create a merge strategy policy.
 
 ```azurecli
 az repos policy merge-strategy create --blocking {false, true}
@@ -630,7 +630,7 @@ ID    Name                      Is Blocking    Is Enabled    Repository Id      
 
 ### Update a merge strategy policy
 
-Use [az repos policy merge-strategy update](/cli/azure/repos/policy/merge-strategy#az_repos_policy_merge_strategy_update) to update a merge strategy policy.
+Use [az repos policy merge-strategy update](/cli/azure/repos/policy/merge-strategy#az-repos-policy-merge-strategy-update) to update a merge strategy policy.
 
 ```azurecli
 az repos policy merge-strategy update --id
@@ -753,7 +753,7 @@ You can use Azure DevOps CLI [az repos policy build](/cli/azure/repos/policy/bui
 
 ### Create a build validation policy
 
-Use [az repos policy build create](/cli/azure/repos/policy/build#az_repos_policy_build_create) to create a build validation policy.
+Use [az repos policy build create](/cli/azure/repos/policy/build#az-repos-policy-build-create) to create a build validation policy.
 
 ```azurecli
 az repos policy build create --blocking {false, true}
@@ -808,7 +808,7 @@ ID    Name          Is Blocking    Is Enabled    Repository Id                  
 
 ### Update a build validation policy
 
-Use [az repos policy build update](/cli/azure/repos/policy/build#az_repos_policy_build_update) to update a build validation policy.
+Use [az repos policy build update](/cli/azure/repos/policy/build#az-repos-policy-build-update) to update a build validation policy.
 
 ```azurecli
 az repos policy build update --id
@@ -959,7 +959,7 @@ You can use Azure DevOps CLI [az repos policy required-reviewer](/cli/azure/repo
 
 ### Create a required reviewer policy
 
-Use [az repos policy required-reviewer create](/cli/azure/repos/policy/required-reviewer#az_repos_policy_required_reviewer_create) to create a required reviewer policy.
+Use [az repos policy required-reviewer create](/cli/azure/repos/policy/required-reviewer#az-repos-policy-required-reviewer-create) to create a required reviewer policy.
 
 ```azurecli
 az repos policy required-reviewer create --blocking {false, true}
@@ -1007,7 +1007,7 @@ ID    Name                Is Blocking    Is Enabled    Repository Id            
 
 ### Update a required reviewer policy
 
-Use [az repos policy required-reviewer update](/cli/azure/repos/policy/required-reviewer#az_repos_policy_required_reviewer_update) to update a required reviewer policy.
+Use [az repos policy required-reviewer update](/cli/azure/repos/policy/required-reviewer#az-repos-policy-required-reviewer-update) to update a required reviewer policy.
 
 ```azurecli
 

@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Use deployment rings with extension releases
 
-[!INCLUDE [version-azure-devops](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 With deployment rings, you can gradually deploy and validate changes to your extension in production, while limiting the affect on your users.
 

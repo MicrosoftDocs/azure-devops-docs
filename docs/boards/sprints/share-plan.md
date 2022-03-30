@@ -13,7 +13,7 @@ ms.date: 09/20/2021
 
 # 5. Share your sprint plan
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 <a id="share" >  </a>
 

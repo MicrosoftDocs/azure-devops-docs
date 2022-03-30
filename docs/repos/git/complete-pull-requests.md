@@ -13,8 +13,8 @@ monikerRange: '<= azure-devops'
 
 # Complete, abandon, or revert pull requests
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Once all required reviewers approve your pull request (PR) and the PR meets all [branch policy](branch-policies.md) requirements, you can merge your changes into the target branch and [complete the PR](#complete-a-pull-request). Or if you decide not to proceed with the changes in the PR, you can [abandon the PR](#abandon-the-pr).
 
@@ -54,7 +54,7 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker range=">= azure-devops-2020"
-- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 ::: moniker-end
 
 ## Check merge changes
@@ -93,7 +93,7 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 
 ::: moniker range=">= azure-devops-2020"
 
-To see all branch policies that are in effect for a PR, use [az repos pr policy list](/cli/azure/repos/pr/policy?view=azure-cli-latest&preserve-view=true) with the required `id` parameter.
+To see all branch policies that are in effect for a PR, use [az repos pr policy list](/cli/azure/repos/pr/policy) with the required `id` parameter.
 
 ```azurecli
 az repos pr policy list --id
@@ -267,7 +267,7 @@ To complete a PR, open the PR in the browser, and on the **Overview** page, sele
 
 ::: moniker range=">= azure-devops-2020"
 
-To complete a PR and merge the changes, use [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update) to update the PR `--status` to `completed`.
+To complete a PR and merge the changes, use [az repos pr update](/cli/azure/repos/pr#az-repos-pr-update) to update the PR `--status` to `completed`.
 
 For example, to complete PR #21, use:
 
@@ -319,7 +319,7 @@ az repos pr update --id
 |`--bypass-policy`|Bypass any required policies and complete the pull request once it can be merged. Accepted values: `false`, `true`.|
 |`--bypass-policy-reason`|Reason for bypassing required policies.|
 |`--delete-source-branch`|Delete the source branch after the pull request is completed and merged into the target branch. Accepted values: `false`, `true`.|
-|`--description -d`|New description for the pull request. Can include markdown. Each value is new line. For example: `--description "First Line" "Second Line"`.|
+|`--description -d`|New description for the pull request. Can include Markdown. Each value is new line. For example: `--description "First Line" "Second Line"`.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`--draft`|Convert the PR to draft mode or publish it. Accepted values: `false`, `true`.|
 |`--merge-commit-message`|Message to display when commits are merged.|

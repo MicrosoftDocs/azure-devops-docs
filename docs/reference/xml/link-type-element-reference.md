@@ -1,19 +1,20 @@
 ---
 title: Link type element reference
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops'
 ms.date: 02/14/2018  
 ---
 
 # LinkTypes elements reference 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This topic provides a reference of link types defined for Azure DevOps Services and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  

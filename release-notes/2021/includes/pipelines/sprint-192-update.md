@@ -26,7 +26,7 @@ steps:
 variables:
   ${{ if eq(parameters.os, 'win') }}:
     testsFolder: windows
-  ${{ elseif eq(parameters.os, 'linux' }}:
+  ${{ elseif eq(parameters.os, 'linux') }}:
     testsFolder: linux
   ${{ else }}:
     testsFolder: mac

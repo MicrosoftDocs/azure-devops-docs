@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Create your first pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="azure-devops"
 
@@ -1325,7 +1325,7 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/).
 
 <!-- ENDSECTION -->
 

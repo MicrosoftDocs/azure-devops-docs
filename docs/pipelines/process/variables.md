@@ -11,6 +11,8 @@ monikerRange: '>= tfs-2015'
 
 # Define variables
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline. The most common use of variables is to define a value that you can then use in your pipeline. All variables are stored as strings and are mutable. The value of a variable can change from run to run or job to job of your pipeline.
@@ -283,7 +285,7 @@ Using the Azure DevOps CLI, you can create and update variables for the pipeline
 
 ### Create a variable
 
-You can create variables in your pipeline with the [az pipelines variable create](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can create variables in your pipeline with the [az pipelines variable create](/cli/azure/pipelines/variable#az-pipelines-variable-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable create --name
@@ -323,7 +325,7 @@ Configuration  False             False        platform
 
 ### Update a variable
 
-You can update variables in your pipeline with the [az pipelines variable update](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can update variables in your pipeline with the [az pipelines variable update](/cli/azure/pipelines/variable#az-pipelines-variable-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable update --name
@@ -367,7 +369,7 @@ Configuration  False             False        config.debug
 
 ### Delete a variable
 
-You can delete variables in your pipeline with the [az pipelines variable delete](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can delete variables in your pipeline with the [az pipelines variable delete](/cli/azure/pipelines/variable#az-pipelines-variable-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable delete --name
@@ -558,6 +560,9 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
+ - To reference a variable from a different task within the same job, use `TASK.VARIABLE`.
+ - To reference a variable from a task from a different job, use `dependencies.JOB.outputs['TASK.VARIABLE']`.
+
 > [!NOTE]
 > By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
@@ -600,7 +605,10 @@ jobs:
 
 ### Use outputs in a different stage
 
-To use the output from a different stage at the job level, you use the `stageDependencies` syntax.
+To use the output from a different stage at the job level, you use the `stageDependencies` syntax:
+
+ - At the stage level, the format for referencing variables from a different stage is `dependencies.STAGE.outputs['JOB.TASK.VARIABLE']`
+ - At the job level, the format for referencing variables from a different stage is `stageDependencies.STAGE.JOB.outputs['TASK.VARIABLE']`
 
 ```yaml
 stages:
@@ -708,7 +716,7 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to usi
 
 ## List variables
 
-You can list all of the variables in your pipeline with the [az pipelines variable list](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can list all of the variables in your pipeline with the [az pipelines variable list](/cli/azure/pipelines/variable#az-pipelines-variable-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable list [--org]

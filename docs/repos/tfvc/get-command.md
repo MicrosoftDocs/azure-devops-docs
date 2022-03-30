@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Get command (Team Foundation Version Control)
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Gets (downloads) either the latest version or a specified version of one or more files or folders from Team Foundation Server to the workspace. Although the **Get** command provides a different user interface than Visual Studio (see [Download (get) files from the Server](download-get-files-from-server.md)), the process is fundamentally the same.
 

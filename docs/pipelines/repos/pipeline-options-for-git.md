@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Pipeline options for Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -84,7 +84,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 There are several different clean options available for YAML pipelines.
 
-* The `checkout` step has a `clean` option. When set to `true`, the pipeline runs `execute git clean -ffdx && git reset --hard HEAD` before fetching the repo. For more information, see [Checkout](../yaml-schema.md#checkout).
+* The `checkout` step has a `clean` option. When set to `true`, the pipeline runs `execute git clean -ffdx && git reset --hard HEAD` before fetching the repo. For more information, see [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout).
 * The `workspace` setting for `job` has multiple clean options (outputs, resources, all). For more information, see [Workspace](../process/phases.md#workspace).
 * The pipeline settings UI has a **Clean** setting, that when set to true is equivalent of specifying `clean: true` for every `checkout` step in your pipeline. To configure the **Clean** setting:
   1. Edit your pipeline, choose **...**, and select **Triggers**.
@@ -233,7 +233,7 @@ If you are using multiple `checkout` steps and checking out multiple repositorie
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
 > [!NOTE]
-> The checkout path can only be specified for YAML pipelines. For more information, see [Checkout](../yaml-schema.md#checkout) in the [YAML schema](../yaml-schema.md).
+> The checkout path can only be specified for YAML pipelines. For more information, see [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) in the [YAML schema](/azure/devops/pipelines/yaml-schema).
 
 ::: moniker-end
 
@@ -246,7 +246,7 @@ You can either choose to get the immediate submodules or all submodules nested t
 If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
 
 > [!NOTE]
-> For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](../yaml-schema.md#checkout).
+> For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](/azure/devops/pipelines/yaml-schema/steps-checkout).
 
 The build pipeline will check out your Git submodules as long as they are:
 

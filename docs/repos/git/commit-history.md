@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 # Commit history
 
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ## Commit history view
 

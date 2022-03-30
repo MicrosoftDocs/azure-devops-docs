@@ -31,7 +31,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
 <table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png" alt="Repos - Git shortcuts"/></td>
+<td><img src="../../media/keyboard-shortcuts/code-shortcuts-cloud.png" alt="Repos - Git shortcuts"/></td>
 <td>
 <strong>Repos-Git</strong><br/><br/> 
 <strong>z</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
@@ -56,7 +56,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
 
 :::row:::
    :::column span="2":::
-      ![Repos-TFVC shortcuts](/azure/devops/media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
+      ![Repos-TFVC shortcuts](../../media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/> 
@@ -84,7 +84,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
 
 :::row:::
    :::column span="2":::
-      ![Repos or Code shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts.png)  
+      ![Repos or Code shortcuts](../../media/keyboard-shortcuts/code-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
       **Code**<br/> 

@@ -9,7 +9,7 @@ monikerRange: '>=tfs-2017'
 
 # Build multiple branches
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -37,7 +37,7 @@ A common workflow with Git is to create temporary branches from your main branch
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
+Unless you specify a [trigger](/azure/devops/pipelines/yaml-schema/trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
 
 ```yaml
 trigger:

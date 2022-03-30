@@ -15,7 +15,7 @@ ms.date: 10/20/2021
 
 # Customize Azure Boards to support SAFe&reg; practices
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article, you'll learn about select process customizations you can make and why you might want to make them support your Scaled Agile Framework (SAFe®) practices. Most of these customizations are optional. 
 

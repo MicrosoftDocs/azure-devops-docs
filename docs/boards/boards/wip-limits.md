@@ -15,7 +15,7 @@ ms.date: 10/15/2021
 
 # Set Work in Progress limits in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 

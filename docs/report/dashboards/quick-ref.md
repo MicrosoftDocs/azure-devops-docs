@@ -14,7 +14,7 @@ ms.date: 09/28/2021
 
 # Dashboards, charts, and quick reference 
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
  
@@ -24,7 +24,31 @@ Use this index to quickly access information on tasks for configuring or accessi
 :::row:::
    :::column span="2":::
       **Dashboards** 
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="azure-devops"
+      - [Add a dashboard](dashboards.md)  
+      - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
+      - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
+      - [Add a work-tracking query chart](charts.md)  
+      - [Add a test status or progress chart](../../test/track-test-status.md)  
+      - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
+      - [Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)  
+<br/>
+      - [Copy a dashboard](copy-dashboard.md)  
+      - [Delete a dashboard](dashboards.md)  
+      - [Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)   
+      - [Edit a dashboard](dashboards.md)  
+      - [Enable auto-refresh](dashboards.md)  
+      - [Favorite a dashboard](dashboards.md)  
+      - [Filter a dashboard](dashboards.md)  
+<br/> 
+      - [Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)  
+      - [Open a dashboard](dashboards.md)  
+      - [Rename a dashboard](dashboards.md)  
+      - [Refresh a dashboard](dashboards.md)  
+      - [Set dashboard permissions](dashboard-permissions.md)  
+      - [View a dashboard](dashboards.md)  
+      ::: moniker-end
+      ::: moniker range=">= azure-devops-2019 < azure-devops"
       - [Add a dashboard](dashboards.md)  
       - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
       - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
@@ -84,8 +108,8 @@ Use this index to quickly access information on tasks for configuring or accessi
       ::: moniker-end
       ::: moniker range="<= azure-devops-2019"
       **SQL Reports** 
-      - [SQL Server reports](../../report/sql-reports/reporting-services-reports.md)  
-      - [Excel work tracking reports](../../report/create-status-and-trend-excel-reports.md)  
+      - [SQL Server reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
+      - [Excel work tracking reports](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)  
       ::: moniker-end
       **Widgets** 
       ::: moniker range=">= azure-devops-2019"
@@ -102,6 +126,8 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Configure a widget](add-widget-to-dashboard.md#configure)  
       - [Resize a widget](add-widget-to-dashboard.md) 
       ::: moniker-end
+      **Troubleshoot** 
+      - [FAQs: Dashboards, charts, and reports](faqs.yml)   
    :::column-end:::
 :::row-end:::
 ---

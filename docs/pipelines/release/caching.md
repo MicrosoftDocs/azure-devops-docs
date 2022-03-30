@@ -4,11 +4,13 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 12/03/2021
+ms.date: 01/19/2022
 monikerRange: azure-devops
 ---
 
 # Pipeline caching
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Pipeline caching can help reduce build time by allowing the outputs or downloaded dependencies from one run to be reused in later runs, thereby reducing or avoiding the cost to recreate or redownload the same files again. Caching is especially useful in scenarios where the same dependencies are downloaded over and over at the start of each run. This is often a time consuming process involving hundreds or thousands of network calls.
 
@@ -49,15 +51,15 @@ The `Cache` task has two required inputs: `key` and `path`.
 `key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
 * **Strings**: <br>
-fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
+Fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
 * **File paths**: <br>
-path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
+Path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
 * **File patterns**: <br>
-comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
+Comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
   * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
 
@@ -190,7 +192,7 @@ steps:
 
 ## Bundler
 
-For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v0.9/bundle_install.html) will look for Gems in.
+For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v2.3/man/bundle-config.1.html) will look for Gems in.
 
 **Example**:
 
@@ -435,13 +437,13 @@ steps:
 
 ## Python/Anaconda
 
-Set up your pipeline caching with Anaconda environments 
+Set up your pipeline caching with Anaconda environments:
 
 ### Example
 
 ```yaml
 variables:
-  CONDA_CACHE_DIR: $(Pipeline.Workspace)/.condarc
+  CONDA_CACHE_DIR: /usr/share/miniconda/envs
 
 # Add conda to system path
 steps:
@@ -462,6 +464,24 @@ steps:
   displayName: Create Anaconda environment
   condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
 ```
+
+- **Windows**
+
+    ```yaml
+    - task: Cache@2
+      displayName: Cache Anaconda
+      inputs:
+        key: 'conda | "$(Agent.OS)" | environment.yml'
+        restoreKeys: | 
+          python | "$(Agent.OS)"
+          python
+        path: $(Pipeline.Workspace)/miniconda/envs
+        cacheHitVar: CONDA_CACHE_RESTORED
+    
+    - script: conda env create --quiet --file environment.yml
+      displayName: Create environment
+      condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
+    ```
 
 ## PHP/Composer
 
@@ -513,4 +533,3 @@ A: Caches expire after seven days of no activity.
 ### Q: Is there a limit on the size of a cache?
 
 A: There is no enforced limit on the size of individual caches or the total size of all caches in an organization.
-

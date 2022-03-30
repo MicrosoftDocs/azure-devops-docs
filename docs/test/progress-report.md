@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Progress Report
 
-[!INCLUDE [version-header](includes/version-2020-rtm.md)] 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]  
   
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 - How much testing is complete?
@@ -42,7 +42,7 @@ To track the progress of more than one test plan or test suite, use the Progress
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must be a member of a project with Basic access or higher. If you haven't been added as a project member, [get added now](../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- [Verify that Analytics](../report/dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
+- [Verify that Analytics](../report/dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be the **Organization owner** or a member of the [**Project Collection Administrators** group](../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service. 
 - **Test Plans** must be enabled. If it is disabled, the **Test Plans>Progress Report** page won't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
 - Have the **View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).
 
@@ -83,6 +83,6 @@ Use the filter barto filter by **Test Suites**, **Configuration**, **Tester**, T
 ## Related articles
 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.md#trackstatus)
+- [FAQs for manual testing](reference-qa.yml#trackstatus)
 
 

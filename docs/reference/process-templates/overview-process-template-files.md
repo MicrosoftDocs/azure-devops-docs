@@ -14,7 +14,7 @@ ms.date: 10/19/2017
 
 # Process template and plug-in files
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You customize the initial configuration of projects by customizing one or more process template files. You can customize several types of template files, which include the root XML file, plug-in files, and XML definition files. By customizing these files, you can define the initial configuration of all projects that are created from the process template.  
 
@@ -37,7 +37,7 @@ When you create a project from the web portal, the following plug-in files are i
 
 - **Build**: Default security permissions are defined for build functions.
 - **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management). 
-- **Reports**: See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md) to add SQL Reports after you create the project. 
+- **Reports**: See [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project) to add SQL Reports after you create the project. 
 - **Version Control**: Default security permissions and TFVC check-in policies are defined for git and TFVC functions.
 - **Windows SharePoint Services**: TFS 2018 and later versions no longer support native integration with SharePoint products. See [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. 
 - **Custom plug-ins**: Not supported.
@@ -166,7 +166,7 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="2":::
    Creates the Report Manager site for the project and uploads the Reporting Services reports. Only supported for on-premises TFS.   
    
-   > For TFS 2017.3 and later versions, you can only create projects through the web portal which ignores this plug-in. To add reports after creating a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
+   > For TFS 2017.3 and later versions, you can only create projects through the web portal which ignores this plug-in. To add reports after creating a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
    
    :::column-end:::
 :::row-end:::

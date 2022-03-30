@@ -12,7 +12,7 @@ ms.date: 10/08/2021
 
 # Display rollup progress or totals in Azure Boards
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 <a id="column-options">  </a>
 

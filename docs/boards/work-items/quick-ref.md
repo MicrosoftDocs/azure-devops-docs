@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
@@ -341,7 +341,7 @@ You customize work item types using the On-premises XML process model. For more 
       - [Define Iteration Paths](../../organizations/settings/set-iteration-paths-sprints.md)    
       - [Define global lists](../../reference/xml/define-global-lists.md)    
       - [Delete a field](../../reference/add-modify-field.md#delete-field)    
-      - [Modify a pre-defined pick list](../../reference/add-modify-field.md#picklist)  
+      - [Modify a predefined pick list](../../reference/add-modify-field.md#picklist)  
       - [Remove a field from a form](../../reference/add-modify-field.md#change-label)  
    :::column-end:::
 :::row-end:::

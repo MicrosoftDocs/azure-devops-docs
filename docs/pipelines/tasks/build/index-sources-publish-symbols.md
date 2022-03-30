@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Index Sources & Publish Symbols task
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
 Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 
@@ -167,7 +167,7 @@ tf.exe git view /collection:http://SERVER:8080/tfs/DefaultCollection /teamprojec
 
 ### Can I use source indexing on a portable PDB created from a .NET Core assembly?
 
-No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn't support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs. Note that if you are generating a .NET Standard 2.0 assembly and are generating full PDBs and consuming them in a .NET Framework (full CLR) application then you will be able to fetch sources from Azure Repos (provided you have embedded SourceLink information and enabled it in your IDE).
+No, [Source Link](/dotnet/standard/library-guidance/sourcelink) is the equivalent to source indexing for portable PDBs.
 
 ### Where can I learn more about symbol stores and debugging?
 

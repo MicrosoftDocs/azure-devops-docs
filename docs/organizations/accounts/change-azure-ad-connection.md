@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Change your organization connection to a different Azure AD
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 If you need to switch your organization connection from one Azure Active Directory (Azure AD) to another, complete the following steps.
 

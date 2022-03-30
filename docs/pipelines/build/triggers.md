@@ -11,6 +11,8 @@ monikerRange: '>= tfs-2015'
 
 # Specify events that trigger pipelines
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end

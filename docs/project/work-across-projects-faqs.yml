@@ -7,7 +7,7 @@ metadata:
   ms.custom: cross-project
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
   ms.date: 10/13/2021
 
@@ -42,7 +42,7 @@ sections:
 
       - question: How do I turn off cross-project collaboration? 
         answer: | 
-          If you want to limit users to view or modify select work items, you can by [setting permissions on Area Paths](../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).  However, there's no method for limiting users to linking work items that reside in different projects.  
+          If you want to limit users to view or modify select work items, you can by [setting permissions on Area Paths](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).  However, there's no method for limiting users to linking work items that reside in different projects.  
 
   - name: Dashboards and reports
     questions:

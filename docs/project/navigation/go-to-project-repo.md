@@ -3,18 +3,17 @@ title: Switch project, repository, or team
 titleSuffix: Azure DevOps
 description: Open another project or repository for Azure DevOps
 ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
+ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2017'
 ms.date: 02/08/2019
 ---
 
 # Switch project, repository, team 
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
 
 
 Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.
@@ -28,7 +27,7 @@ Also, when you add a work item, the system references the default area and itera
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

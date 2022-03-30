@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Add users to Azure Pipelines
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Permissions for build and release pipelines are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
 
@@ -35,7 +35,7 @@ You can manage security for different types of resources such as variable groups
 > [!NOTE]
 > A security best practice is to only grant permissions to required users or groups. The **Contributors** group may be too broad in a given project.  
 
-To verify the permissions for your project's contributors, make sure you are a member of the *Build Administrators group* or the *Project Administrators group*. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) for more details.
+To verify the permissions for your project's contributors, make sure you are a member of the **Build Administrators** group or the **Project Administrators** group. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) for more details.
 
 1. From within your project, select **Pipelines** > **Pipelines**. Select the **All** tab, and then select the more actions menu then **Manage security**.
 

@@ -12,13 +12,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/07/2021
+ms.date: 02/14/2022
 ---
 
 # View and add work items using the Work Items page  
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019** 
-
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, and interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
@@ -188,6 +188,8 @@ ID    Type    Title      Assigned To          State
 
 Adding a work item is just one click away. Choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
+> [!NOTE]   
+> New work items are assigned the last **Area Path** and **Iteration Path** selected by the user. 
 
 # [Web portal](#tab/browser)
 

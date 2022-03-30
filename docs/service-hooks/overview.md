@@ -4,13 +4,15 @@ description: Perform tasks with other services when events happen in Azure DevOp
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.technology: devops-collab
 ms.topic: conceptual
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2017'
 ms.date: 11/19/2020
 ---
 
 # Integrate with service hooks
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Service hooks let you run tasks on other services when events happen in your Azure DevOps 
 projects. For example, create a card in Trello when a work item is created 

@@ -12,10 +12,9 @@ ms.date: 08/29/2016
 
 # Auth and security
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
-> [!NOTE]
-> This page pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
+This article pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 

@@ -13,7 +13,8 @@ ms.date: 10/27/2021
 
 # Create a consumer service for service hooks
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+
 With service hooks, you can do tasks on other services when events happen in your project. For example, create a card in Trello when a work item gets created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services, as a more efficient way to drive activities when events happen in your projects.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]

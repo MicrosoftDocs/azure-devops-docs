@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Install NuGet packages with Visual Studio
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Using Azure Artifacts and Visual Studio, you can set up your development machine to access and install packages from your feeds and public registries such as NuGet.org. 
 

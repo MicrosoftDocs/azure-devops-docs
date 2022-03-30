@@ -6,13 +6,14 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '<= azure-devops'
+ms.date: 03/01/2022
 ---
 
-# Implement Kanban practices
+# Implement Kanban practices using Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To maximize a team's ability to consistently deliver high-quality software, Kanban emphasizes two main practices. The first is to visualize the flow of work. This practice requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 

@@ -7,7 +7,7 @@ metadata:
   title: Team Foundation Version Control (TFVC) Documentation
   description: Collaborate on code development using TFVC centralized version control.
   ms.prod: devops 
-  ms.technology: azure-repos
+  ms.technology: devops-code-tfvc
   ms.topic: landing-page 
   ms.author: sdanie
   author: steved0x

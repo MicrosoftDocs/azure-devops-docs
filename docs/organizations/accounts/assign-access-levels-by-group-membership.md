@@ -13,18 +13,18 @@ monikerRange: 'azure-devops'
 
 # Add a group rule to assign access levels
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. Learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
 When users leave the group, the licenses get freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
 > [!NOTE]
-> We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Automated reevaluation occurs every 24 hours and any time the group rule changes.
+> We recommend that you re-evaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Automated reevaluation occurs every 24 hours and any time the group rule changes.
 
 ## Prerequisites
 
-To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
+- To manage licenses and group rules, you must be a member of the **Project Collection Administrators** group. If you're not a member, get added as one. See [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ## Add group rule
 

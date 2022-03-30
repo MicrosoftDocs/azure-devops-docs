@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Troubleshoot connecting to a project
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 

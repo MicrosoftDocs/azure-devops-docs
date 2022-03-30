@@ -14,7 +14,7 @@ ms.date: 10/15/2021
 
 # Enable live updates in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 <a id="live-updates"></a>
 

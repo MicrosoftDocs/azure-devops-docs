@@ -1,21 +1,21 @@
 ---
 title: Import or export process configuration  
-titleSuffix: Azure DevOps Server 
-description: Modify the display of the Agile planning tool pages that you view through the web portal 
+titleSuffix: Azure DevOps
+description: Modify the display of the Azure Boards pages that you view through the web portal 
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 
 # Import and export process configuration
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 You customize the process configuration to modify the display of the web portal Agile tools. A few additional tools require that you map workflow states to metastate mappings.  
 
@@ -23,8 +23,8 @@ You customize the process configuration to modify the display of the web portal 
 > If you receive error message TF400917, an invalid configuration has occurred. Re-import the process configuration file to your project using **witadmin importprocessconfig**. You'll get the messages you need to resolve the error.  
 
 To manage the process configuration for a project, use the **witadmin** command line tool to export and import the process configuration XML definition file. To learn about process configuration, see [ProcessConfiguration](../xml/process-configuration-xml-element.md).   
--   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window.    
--   **importprocessconfig**:  Imports the process configuration definition XML file.  
+- **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window.    
+- **importprocessconfig**:  Imports the process configuration definition XML file.  
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
@@ -36,7 +36,7 @@ To manage the process configuration for a project, use the **witadmin** command 
 - To export process configuration definitions, you must be a valid user of the project or collection.    
 - To import process configuration definitions, you must be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.  
 
-For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
 
 ## Syntax  
 
@@ -117,7 +117,8 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
 :::row-end:::
 
 ## Remarks  
- Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
+
+Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 
  If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management).  
 
@@ -139,7 +140,7 @@ You can add fields for any quick add panel. For example, the following example a
 
 The panel only displays fields that are included in the `FIELDS` section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, as Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category. See [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md).  
 
-1.  If you don't have administrative permissions for your project, [get them](../../organizations/security/set-project-collection-level-permissions.md).  
+1.  If you don't have administrative permissions for your project, [get them](../../organizations/security/change-organization-collection-level-permissions.md).  
 
 2.  Open a Command Prompt window according to the instructions provided in [How to run the witadmin command-line tool](#run-witadmin-tool). For example:   
 
@@ -260,26 +261,33 @@ If you modify the test suite workflow, then you have to make a similar update if
 - [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) 
 - [Control XML element reference](../xml/control-xml-element-reference.md)  
 - [Change the work item form layout](../xml/change-work-item-form-layout.md)   
-- [Edit a WIT definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
+- [Edit a work item type definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
+
+
+
+
+
 
 
 ## Q & A  
 
+::: moniker range="< azure-devops-2019"
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
 **A:** You can customize the quick add panel. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
 
 Other changes might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../customize-work.md).  
+::: moniker-end
 
 ### Q: When do I need to map workflow states to metastates?  
 
-**A:** When you add or remove workflow states to the following WITs, you should consider updating the process configuration to add or remove corresponding metastate mappings.  
+**A:** When you add or remove workflow states to the following work item types, you should consider updating the process configuration to add or remove corresponding metastate mappings.  
 
-- **WITs that belong to the Requirement Category or Task Category**: Metastate mappings support the display of the Agile planning tools.  
+- **Work item types that belong to the Requirement Category or Task Category**: Metastate mappings support the display of the Agile planning tools.  
 
-- **WITs that belong to the Bug Category**: Metastate mappings to support **My Work** tool (Agile and CMMI-based projects).  
+- **Work item types that belong to the Bug Category**: Metastate mappings to support **My Work** tool (Agile and CMMI-based projects).  
 
-- **Test Plan and Test Suite**: Updates to the workflow of these WITs must be mapped only when you support team members connecting to TFS from a version of Test Manager that is based on Visual Studio 2013.2 or earlier version.  
+- **Test Plan and Test Suite**: Updates to the workflow of these work item types must be mapped only when you support team members connecting to Azure DevOps from a version of Test Manager that is based on Visual Studio 2013.2 or earlier version.  
 
     Update the metastate mappings if you receive an **Application detected an unexpected fault** error when you connect to your project.  
 
@@ -287,14 +295,14 @@ Other changes might require you to perform some manual operations when updating 
 
 ### How do I resolve process configuration errors?  
 
-**A:**  When you make one of the following changes to a project, you'll need to update the definitions for the WIT, categories, or process configuration. To avoid errors, always make your changes in this order: (1) WITs, (2) categories, and (3) process configuration.
+**A:**  When you make one of the following changes to a project, you'll need to update the definitions for the work item type, categories, or process configuration. To avoid errors, always make your changes in this order: (1) work item types, (2) categories, and (3) process configuration.
 
 :::row:::
    :::column span="1":::   
    **Customization**
    :::column-end:::
    :::column span="1":::   
-   **Update or verify the WIT definition**
+   **Update or verify the work item type definition**
    :::column-end:::
    :::column span="1":::   
    **Update or verify the process configuration definition**
@@ -302,9 +310,9 @@ Other changes might require you to perform some manual operations when updating 
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Add a WIT to the Requirements Category  
+   Add a work item type to the Requirements Category  
    
-   (A WIT can belong to the Requirements Category or the Task Category, but not both.)
+   (A work item type can belong to the Requirements Category or the Task Category, but not both.)
    :::column-end:::
    :::column span="1":::
    To include the following fields:  
@@ -329,19 +337,19 @@ Other changes might require you to perform some manual operations when updating 
 
 :::row:::
    :::column span="1":::
-   Change the workflow of a WIT in the Requirements Category
+   Change the workflow of a work item type in the Requirements Category
    :::column-end:::
    :::column span="1":::
    N/A
    :::column-end:::
    :::column span="1":::
-   To contain the necessary metastate mappings as described above for adding a WIT to the Requirements Category. 
+   To contain the necessary metastate mappings as described above for adding a work item type to the Requirements Category. 
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="1":::
-   Add a WIT to the Task Category
+   Add a work item type to the Task Category
 
    :::column-end:::
    :::column span="1":::
@@ -370,7 +378,7 @@ Other changes might require you to perform some manual operations when updating 
 
 :::row:::
    :::column span="1":::
-   Change the workflow of a WIT in the Task Category
+   Change the workflow of a work item type in the Task Category
 
    :::column-end:::
    :::column span="1":::
@@ -378,16 +386,16 @@ Other changes might require you to perform some manual operations when updating 
 
    :::column-end:::
    :::column span="1":::
-   To contain the necessary metastate mappings as described above for adding a WIT to the Task Category. 
+   To contain the necessary metastate mappings as described above for adding a work item type to the Task Category. 
 
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="1":::
-   Add a WIT to the Bug Category (Agile and CMMI only)   
+   Add a work item type to the Bug Category (Agile and CMMI only)   
    
-   Change the workflow of a WIT in the Bug Category (Agile and CMMI only)
+   Change the workflow of a work item type in the Bug Category (Agile and CMMI only)
 
    :::column-end:::
    :::column span="1":::
@@ -409,7 +417,7 @@ Other changes might require you to perform some manual operations when updating 
 
 :::row:::
    :::column span="1":::
-   Remove a WIT from the Requirements Category or Task Category
+   Remove a work item type from the Requirements Category or Task Category
 
    :::column-end:::
    :::column span="1":::
@@ -417,22 +425,22 @@ Other changes might require you to perform some manual operations when updating 
 
    :::column-end:::
    :::column span="1":::
-   To remove any metastate mappings that are only associated with that WIT
+   To remove any metastate mappings that are only associated with that work item type
 
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="1":::
-   Remove a WIT from a project
+   Remove a work item type from a project
 
    :::column-end:::
    :::column span="1":::
-   To remove the WIT from the categories file.
+   To remove the work item type from the categories file.
 
    :::column-end:::
    :::column span="1":::
-   To remove any metastate mappings that are only associated with the WIT that you removed and the `WorkItemColor` element that defines the color codes for the WIT you removed.
+   To remove any metastate mappings that are only associated with the work item type that you removed and the `WorkItemColor` element that defines the color codes for the work item type you removed.
 
    :::column-end:::
 :::row-end:::
@@ -443,6 +451,6 @@ Other changes might require you to perform some manual operations when updating 
 
 **A:** The default experience supports one level of portfolio backlog. You can add up to five levels as described in [Add portfolio backlogs to Agile tools](../add-portfolio-backlogs.md).  
 
-### Q: Do you want to add or change the WITs that appear on your task board or product backlog?  
+### Q: Do you want to add or change the work item types that appear on your task board or product backlog?  
 
-**A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).
+**A:** If you've added a custom work item type and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).

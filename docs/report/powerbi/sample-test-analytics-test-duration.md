@@ -16,7 +16,7 @@ ms.date: 10/13/2021
 
 # Test duration sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows list of all the tests in a pipeline and the average time taken to execute each test for a selected time range.
 

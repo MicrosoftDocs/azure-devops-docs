@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Adopt a Git branching strategy
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Distributed version control systems like Git give you flexibility in how you use version control to share and manage code.
 Your team should find a balance between this flexibility and the need to collaborate and share code in a consistent manner.

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # SSH Deployment task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task to run shell commands or a script on a remote machine using SSH.
 This task enables you to connect to a remote machine using SSH and run commands or a script.

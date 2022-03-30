@@ -12,7 +12,7 @@ ms.date: 09/27/2021
 
 # Create a service endpoint
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
@@ -213,7 +213,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
   "friendlyName": "Build Task that uses the service endpoint",
   "description": "Task with a dynamic property getting data from an endpoint REST data source",
   "author": "francistotten",
-  "helpMarkDown": "Replace with markdown to show in help",
+  "helpMarkDown": "Replace with Markdown to show in help",
   "category": "Build",
   "visibility": [
     "Build",
@@ -251,7 +251,7 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't cr
     {
       "target": "project",
       "endpointId": "$(FabrikamService)",
-      "dataSourceName": "Fabfrikam Projects"
+      "dataSourceName": "Fabrikam Projects"
     }
   ],
   "execution": {

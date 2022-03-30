@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Invoke a function task
 
-[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
 Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to invoke an HTTP triggered function in a function app that is created and hosted in Azure Functions and parse the response.
 

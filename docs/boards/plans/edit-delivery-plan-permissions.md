@@ -14,7 +14,7 @@ ms.date: 10/20/2021
 
 # Manage Delivery Plan permissions in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
@@ -53,7 +53,7 @@ By default all members of an organization or project collection can view Deliver
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](media/permissions/open-security.png)  
-2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md). By default, non-administrators can't delete or edit a plan. 
+2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). By default, non-administrators can't delete or edit a plan. 
 
 3. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
 
@@ -75,7 +75,7 @@ By default all members of an organization or project collection can view Deliver
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](media/permissions/open-plans-security.png)     
 
-2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md). By default, non-administrators can't delete or edit a plan. 
+2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). By default, non-administrators can't delete or edit a plan. 
 
 3. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
 
@@ -97,7 +97,7 @@ By default all members of an organization or project collection can view Deliver
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](media/permissions/open-plans-security.png)     
 
-2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
+2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
 
 3. With the user or group selected, set the permission you want them to have to **Allow**. 
 

@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 
 # Xcode Build task
 
-**[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-gt-eq-2015-lt-eq-2018](../../../includes/version-gt-eq-2015-lt-eq-2018.md)]
 
 Use this task to build an Xcode workspace on macOS.
 

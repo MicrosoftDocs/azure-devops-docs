@@ -14,7 +14,7 @@ ms.date: 10/15/2021
 
 # Use Kanban board controls to enable interface features
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can quickly switch from the backlog view to the board view using the **Backlog** and **Board** links. Use the following icons to enable other user interface features. 
 

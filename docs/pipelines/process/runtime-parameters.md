@@ -3,11 +3,13 @@ title: Use runtime and type-safe parameters
 ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 02/24/2022
 monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
 # Runtime parameters
+
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 - Supply different values to scripts and tasks at runtime

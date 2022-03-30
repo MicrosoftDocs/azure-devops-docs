@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Choose an Azure DevOps Server process flow or process template to work in Azure Boards or Azure DevOps 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
 
@@ -120,7 +120,7 @@ Choose the process that provides the best fit for your team.
    you can track requirements, change requests, risks, and reviews.
    
    
-   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts).
+   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md).
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::

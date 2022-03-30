@@ -14,7 +14,8 @@ ms.date: 10/29/2021
 
 # Use templates to add and update work items in Azure Boards and Visual Studio
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio 2015** 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)] 
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
@@ -197,7 +198,7 @@ Templates captured through the web portal are assigned a GUID.
 
 3. Once you've saved the template, choose **Copy link** to capture the URL for the template. 
 
-4. You can paste the URL link into a browser to create a work item, or provide it to others for their use to add work items. For example, you can add it as a hyperlink to a [project wiki](../../project/wiki/wiki-create-repo.md), a [dashboard via a markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), or other shared network resource.
+4. You can paste the URL link into a browser to create a work item, or provide it to others for their use to add work items. For example, you can add it as a hyperlink to a [project wiki](../../project/wiki/wiki-create-repo.md), a [dashboard via a Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), or other shared network resource.
 
 	Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 
@@ -547,7 +548,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ### Apply a template within a work item 
 
-1. Open a new work item or an existing work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates**, and then select the name of a pre-defined template.  
+1. Open a new work item or an existing work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates**, and then select the name of a predefined template.  
 
     > [!div class="mx-imgBorder"]
     > ![Apply a template to an existing work item within the form](media/templates/apply-template-vsts-s136.png) 
@@ -565,7 +566,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ### Apply a template within a work item 
 
-1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates**, and then select the name of a pre-defined template.  
+1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates**, and then select the name of a predefined template.  
 
     <img src="media/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" /> 
 
@@ -724,7 +725,7 @@ You can save the URL as a text file or add the URL to a dashboard or web page as
 
 ## Add a template link to a team dashboard   
 
-You can add links to a markdown widget that appear on your team dashboard in the web portal. These links open a work item with the template defined fields predefined.
+You can add links to a Markdown widget that appear on your team dashboard in the web portal. These links open a work item with the template defined fields predefined.
 
 ::: moniker-end
 
@@ -741,7 +742,7 @@ For example, the following widget contains links to three templates.
 
 ![Markdown widget with links to templates](media/wi-templates-markdown-widget-with-template-links.png) 
 
-To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md).  
+To learn more about the Markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md).  
 
 ::: moniker-end
 

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Continuously deploy from a Jenkins build
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -172,4 +172,4 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 * [Artifacts](artifacts.md)
 * [Stages](../process/stages.md)
 * [Triggers](triggers.md)
-* [YAML schema reference](../yaml-schema.md)
+* [YAML schema reference](/azure/devops/pipelines/yaml-schema)

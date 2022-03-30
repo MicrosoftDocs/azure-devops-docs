@@ -31,9 +31,9 @@
   - name: az repos
     href: /cli/azure/azure-cli-reference-for-devops#azure-repos
   - name: Output formats
-    href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
+    href: /cli/azure/format-output-azure-cli
   - name: Query
-    href: /cli/azure/query-azure-cli?view=azure-cli-latest
+    href: /cli/azure/query-azure-cli
 
 
 

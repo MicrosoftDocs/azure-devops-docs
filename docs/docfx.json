@@ -81,6 +81,7 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
+      "zone_pivot_group_filename": "devops/zone-pivot-groups.json",
       "searchScope": [
         "Azure DevOps Services"
       ],
@@ -125,10 +126,8 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/sql-reports/**": "< azure-devops",
-        "reference/witadmin/**": "< azure-devops"
+        "reference/witadmin/**": "<= azure-devops"
       },
       "ms.author": {
         "artifacts/**": "rabououn",

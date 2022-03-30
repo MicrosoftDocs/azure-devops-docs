@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # Pipeline resources
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 Azure Pipelines offers security mechanisms beyond just protecting the YAML file and source code.
 When pipelines run, access to resources goes through a system called [checks](../process/approvals.md).
 Checks can suspend or even fail a pipeline run in order to keep resources safe.

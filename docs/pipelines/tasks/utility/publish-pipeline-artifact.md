@@ -6,13 +6,13 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 01/05/2021
+ms.date: 01/26/2022
 monikerRange: azure-devops
 ---
 
 # Publish Pipeline Artifacts task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task in a pipeline to publish your artifacts(note that publishing is NOT supported in release pipelines. It is supported in multi-stage pipelines, build pipelines, and yaml pipelines).
 
@@ -24,7 +24,7 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 [!INCLUDE [temp](../includes/yaml/PublishPipelineArtifactV1.md)]
 
 > [!NOTE]
-> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the YAML schema.
+> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](/azure/devops/pipelines/yaml-schema/steps-publish) and [Download](/azure/devops/pipelines/yaml-schema/steps-download) in the YAML schema.
 
 ## Arguments
 
@@ -37,7 +37,8 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 | parallel | (Optional) Select whether to copy files in parallel using multiple threads. If this setting is not enabled, one thread will be used. Default value: false| 
 | parallelCount | (Optional) Enter the degree of parallelism, or number of threads used to publish a package. The value must be at least 1 and not greater than 128. | 
 
-
+> [!TIP]
+> You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to to control which files will be published.
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->

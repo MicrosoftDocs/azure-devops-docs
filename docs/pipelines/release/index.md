@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Release pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -220,7 +220,7 @@ Select this option if you want to display the deployment status on an external w
 
 **Report deployment status to Jira**
 
-Select this option if you want to link your release pipeline to Jira issues. You must install [Azure Pipelines for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) and connect your Azure DevOps organization with your Jira account. Check out the [Jira integration](https://devblogs.microsoft.com/devops/azure-pipelines-integration-with-jira-software/) tutorial for more details.
+Select this option if you want to link your release pipeline to Jira issues. You must install [Azure Pipelines for Jira](https://github.com/Microsoft/azure-pipelines-jira) and connect your Azure DevOps organization with your Jira account. Check out the [Jira integration](https://devblogs.microsoft.com/devops/azure-pipelines-integration-with-jira-software/) tutorial for more details.
 
 <a name="editrelease"></a>
 
@@ -245,7 +245,7 @@ You can't abandon a release when a deployment is in progress, you must cancel th
 
 ## How do I send release summaries by email?
 
-After a release is triggered and completed, you may want to email the summary to stakeholders. Use the **Send Email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
+After a release is triggered and completed, you may want to email the summary to stakeholders. Use the **Send email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
 
 > [!div class="mx-imgBorder"]
 > ![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
@@ -258,7 +258,7 @@ In the **Send release summary mail** window, you can further customize the infor
 
 The names of releases for a release pipeline are, by default, sequentially numbered. The first release is named **Release-1**, the next release is **Release-2**, and so on. You can change this naming scheme by editing the release name format mask. In the **Options** tab of a release pipeline, edit the **Release name format** property in the **General** page.
 
-When specifying the format mask, you can use the following pre-defined variables.
+When specifying the format mask, you can use the following predefined variables.
 
 | Variable | Description |
 |----------|-------------|

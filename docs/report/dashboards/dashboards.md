@@ -14,7 +14,7 @@ ms.date: 09/28/2021
 
 # Add, rename, and delete dashboards in Azure DevOps
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range=">= azure-devops-2020"
 Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
@@ -205,7 +205,7 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 
 ::: moniker range=">= azure-devops-2020"  
 > [!NOTE]  
-> To delete a project dashboard, you must be a member of the [Project Collection Administrators group](../../organizations/security/set-project-collection-level-permissions.md).  
+> To delete a project dashboard, you must be a member of the[**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"  
@@ -306,6 +306,7 @@ As you can see, you can use team dashboards to provide guidance and keep your te
   
 ## Related articles
 
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Add a team](../../organizations/settings/add-teams.md)
 - [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)

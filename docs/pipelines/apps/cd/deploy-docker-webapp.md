@@ -4,16 +4,18 @@ description: Deploy container base web apps to App Service on Linux
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
-ms.date: 01/04/2022
+ms.date: 03/03/2022
 monikerRange: '> tfs-2017'
 "recommendations": "true"
 ---
 
 # Deploy to Azure Web App for Containers
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
-Use App Service on Linux and pipelines to deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container).  In this quickstart, you'll use Azure Pipelines to build and deploy a sample application to an App Service custom container.
+Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
+
+YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](../../get-started/key-pipelines-concepts.md).
 
 With Azure Pipelines, you can implement a CI/CD workflow to automatically generate build artifacts and trigger deployment to specific environments. 
 
@@ -142,7 +144,7 @@ Deploy to an Azure App custom container with the [Azure Web App for Container ta
 ```yaml
 
 trigger:
-- master
+- main
 
 resources:
 - repo: self
@@ -192,10 +194,38 @@ The **Azure Web App on Container** task will pull the appropriate Docker image c
 
 
 # [Classic](#tab/classic/)
-The simplest way to deploy to an Azure Web App Container is to use the **Azure Web App On Container Deploy** task.
-This task is added to the release pipeline when you select the deployment task for Azure Web App on Container deployment.
-Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
 
+1. From within your project, select **Pipelines** then **Release**.
+
+1. Select **New pipeline** to create a new release pipeline.
+
+1. Select the **Azure App Service deployment** template
+
+    :::image type="content" source="media/app-service-template.png" alt-text="Azure App Service template":::
+
+1. Select **Tasks**, then **Unlink all** in **stage 1** to unlink all the pipeline parameters. 
+
+    :::image type="content" source="media/unlink-parameters.png" alt-text="Unlink pipeline parameters":::
+
+1. Select the **Deploy Azure App Service** task, and fill out the required fields. Select **Save** when you are done.
+
+    :::image type="content" source="media/deploy-task.png" alt-text="Deploy Azure App Service task":::
+
+1. Select **Create release**, and then choose **Stage 1** from the dropdown menu. Select **Create** when you are done.
+
+    :::image type="content" source="media/create-release.png" alt-text="Create a release pipeline":::
+
+1. Hover over **Stage 1** in your pipeline, and select **Deploy** to queue and start the deployment.
+
+    :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
+
+1. Your pipeline logs should look similar to the screenshot below. 
+
+    :::image type="content" source="media/pipeline-logs.png" lightbox="media/pipeline-logs.png" alt-text="Pipeline logs":::
+
+1. Navigate to your newly deployed web app to verify your deployment.
+
+    :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
 ---
 
 ## Deploy to a slot
@@ -233,47 +263,11 @@ Use the option **Deploy to Slot** in the **Azure Web App Container** task to spe
 
 ---
 
-## Create a release pipeline
-
-You can also deploy with a release pipeline. This is an optional step since you can build and deploy within one YAML. 
-
-1. From within your project, select **Pipelines** then **Release**.
-
-1. Select **New pipeline** to create a new release pipeline.
-
-1. Select the **Azure App Service deployment** template
-
-    :::image type="content" source="media/app-service-template.png" alt-text="Azure App Service template":::
-
-1. Select **Tasks**, then **Unlink all** in **stage 1** to unlink all the pipeline parameters. 
-
-    :::image type="content" source="media/unlink-parameters.png" alt-text="Unlink pipeline parameters":::
-
-1. Select the **Deploy Azure App Service** task, and fill out the required fields. Select **Save** when you are done.
-
-    :::image type="content" source="media/deploy-task.png" alt-text="Deploy Azure App Service task":::
-
-1. Select **Create release**, and then choose **Stage 1** from the dropdown menu. Select **Create** when you are done.
-
-    :::image type="content" source="media/create-release.png" alt-text="Create a release pipeline":::
-
-1. Hover over **Stage 1** in your pipeline, and select **Deploy** to queue and start the deployment.
-
-    :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
-
-1. Your pipeline logs should look similar to the screenshot below. 
-
-    :::image type="content" source="media/pipeline-logs.png" lightbox="media/pipeline-logs.png" alt-text="Pipeline logs":::
-
-1. Navigate to your newly deployed web app to verify your deployment.
-
-    :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
-
 ## FAQ
 ### How do I find my registry credentials for the web app?
 
 <a name="endpoint"></a>
 
-App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
+App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Configuration** for the web app and update your Docker information.
 
-![Screenshot showing Update image source and Registry in container settings.](../../targets/media/webapp-linux/container-settings.png)
+[ ![Screenshot showing Update image source and Registry in container settings.](azure/media/configure-app-service-security.png) ](azure/media/configure-app-service-security.png#lightbox)

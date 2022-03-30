@@ -2,18 +2,18 @@
 title: Define area paths and assign to a team
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
-ms.technology: devops-agile
+ms.technology: devops-settings 
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2021
+ms.date: 02/03/2022
 ---
 
 # Define area paths and assign to a team
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Add area paths to support teams and group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support sub-areas, up to 14 levels deep.
@@ -27,7 +27,7 @@ To understand how the system uses area paths, see [About area and iteration path
 <a name="permissions"></a>
 
 - If you don't have a project yet, [create one now](../projects/create-project.md).
-- Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Change project-level permissions](../security/change-project-level-permissions.md).
 - Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:   
     - **Create child nodes**
     - **Delete this node**
@@ -417,7 +417,10 @@ All work items that are assigned to a team area path appear on the backlogs and 
 
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas. 
 
-::: moniker-end  
+::: moniker-end
+  
+> [!NOTE]  
+> Teams can be assigned a maximum of 300 **Area Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
 
 The default area path determines the default area path assigned to work items that are created from the team context.  
 

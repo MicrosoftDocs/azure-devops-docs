@@ -14,7 +14,7 @@ ms.date: 03/02/2017
 
 # All FORM XML elements reference (TFS 2015)
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).

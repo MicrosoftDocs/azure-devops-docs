@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Add, run, update inline tests
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
 
 Learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 
@@ -26,7 +26,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](../organizations/projects/create-project.md). If you haven't been added as a team member, [get invited now](../organizations/security/add-users-team-project.md).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_boards/board```  
 
@@ -40,7 +40,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker range="<= tfs-2018"
 
-1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](../organizations/projects/create-project.md). If you haven't been added as a team member, [get invited now](../organizations/security/add-users-team-project.md).
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
 

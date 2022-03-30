@@ -1,6 +1,6 @@
 ---
 title: Remove work items permanently
-titleSuffix: Azure DevOps Server 
+titleSuffix: TFS
 description: Permanently delete work items added to Team Foundation Server
 ms.technology: devops-agile
 ms.custom: witadmin
@@ -9,19 +9,18 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops-2019'
-ms.date: 07/12/2018
+ms.date: 01/11/2022
 ---
 
 # Remove work items permanently
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-eq-2018](../../includes/version-lt-eq-2018.md)]
 
-You can permanently remove work items from the on-premises Azure DevOps work tracking data store by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Use this command to permanently delete work items, after which you can't restore or reactivate them.  
+You can permanently remove work items from the on-premises Team Foundation Server work tracking data store by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Use this command to permanently delete work items, after which you can't restore or reactivate them.  
 
 > [!NOTE]
-> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore) to permanently delete work items, or use [REST API `DELETE`](/rest/api/azure/devops/wit/work-items/delete).
-
-You can run **witadmin destroywi** against an on-premises Azure DevOps Server only. 
+> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can permanently delete work items from the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore), or use [REST API `DELETE`](/rest/api/azure/devops/wit/work-items/delete).
+ 
 
 <a id="run-witadmin-tool" />
 
@@ -30,7 +29,7 @@ You can run **witadmin destroywi** against an on-premises Azure DevOps Server on
 To run the **witadmin** command-line tool, open a Command Prompt window where Visual Studio is installed. The **witadmin** command-line tool installs with any version of Visual Studio. You can access this tool by installing the free version of [Visual Studio Community or Visual Studio Team Explorer](https://visualstudio.microsoft.com/downloads/).  
 
 > [!NOTE]   
-> If you are connecting to an on-premises server, you must use the same or later version of Visual Studio or Team Explorer as Azure DevOps Server or TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017. There is no Team Explorer 2015 version. 
+> You must use the same or later version of Visual Studio or Team Explorer as Azure DevOps Server or TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017.  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -66,7 +65,7 @@ On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programf
 
 ## Prerequisites
   
--  You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
+-  You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
@@ -96,7 +95,7 @@ The following example deletes the work item *2003* from the database for *Collec
 witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:2003  
 ```  
   
-The following example deletes the work items with IDs, 12, 15, and 23 from the database for Collection1 on the AdventureWorksServer server:  
+The following example deletes the work items with IDs 12, 15, and 23 from the database for *Collection1* on the *AdventureWorksServer* server:  
   
 ```  
 witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:12,15,23  
@@ -104,6 +103,6 @@ witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultColle
   
 ## Related articles  
 
-- [Move, change, or delete work items](../../boards/backlogs/remove-delete-work-items.md)  
+- [Remove, delete, or restore work items](../../boards/backlogs/remove-delete-work-items.md) 
 - [Add work items](../../boards/backlogs/add-work-items.md)   
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

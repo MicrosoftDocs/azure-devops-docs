@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Azure Pipelines agents
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -174,16 +174,16 @@ You can view the details of an agent, including its version and system capabilit
 
 ::: moniker range="> azure-devops-2019"
 
-You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent?view=azure-cli-latest&preserve-view=true) Azure CLI methods.
+You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent) Azure CLI methods.
 
 [List agents](#list-agents) | [Show agent details](#show-agent-details)
 
 > [!NOTE]
-> If this is your first time using [az pipelines](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> If this is your first time using [az pipelines](/cli/azure/pipelines) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### List agents
 
-You can list your agents using the [az pipelines agent list](/cli/azure/pipelines/agent?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-agent-list) command.
+You can list your agents using the [az pipelines agent list](/cli/azure/pipelines/agent#az-pipelines-agent-list) command.
 
 ```azurecli
 az pipelines agent list --pool-id
@@ -223,7 +223,7 @@ ID    Name          Is Enabled    Status    Version
 
 ### Show agent details
 
-You can retrieve agent details using the [az pipelines agent show](/cli/azure/pipelines/agent?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-agent-show) command.
+You can retrieve agent details using the [az pipelines agent show](/cli/azure/pipelines/agent#az-pipelines-agent-show) command.
 
 ```azurecli
 az pipelines agent show --agent-id

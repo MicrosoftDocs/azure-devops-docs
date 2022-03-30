@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Set and enforce quality gates
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 
 Check-in policies are a mechanism for enforcing development practices across your development team. Check-in notes are a communication mechanism for collecting data from team members during the check-in process. Both of these are customizable to meet the needs of a team. This section explains the purpose of these items and also describes how to configure them.

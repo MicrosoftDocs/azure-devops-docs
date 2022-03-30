@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Create and work with workspaces
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
 

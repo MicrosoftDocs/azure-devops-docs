@@ -27,6 +27,18 @@ To publish a Maven artifact to your feed, follow these steps:
     - **Build your package**: `mvn build`
     - **Deploy your package**: `mvn deploy` 
 
+If you get the following error `Unknown lifecycle phase "build"` when you run `mvn build`, you can use M2Eclipse to build your maven project.
+
+1. Right click on your project.
+
+1. Select **Run as**, and then select **Maven Build...**.
+
+1. Write *package* in the **Goals** text box.
+
+1. Select **Run**.
+
+:::image type="content" source="../../maven/media/build-eclipse.png" alt-text="A screenshot showing how to build a project using Eclipse.":::
+
 If you want to publish a third-party artifact, you can use the [deploy:deploy-file](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html) mojo. This can be used with or without a POM file to deploy your packages.
 
 ```Command

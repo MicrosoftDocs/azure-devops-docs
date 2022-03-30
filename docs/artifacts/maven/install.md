@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Install Maven Artifacts
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 With Azure Artifacts, you can publish and restore Maven packages to/from your Azure Artifacts feed. In this article, we will be covering how to restore your packages from an Azure Artifacts feed.
 

@@ -24,7 +24,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt="Kanban board shortcuts"/></td>
+<td><img src="../../media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt="Kanban board shortcuts"/></td>
 <td>
 <br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
@@ -64,7 +64,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts.png" alt="Kanban board shortcuts"/></td>
+<td><img src="../../media/keyboard-shortcuts/kanban-board-shortcuts.png" alt="Kanban board shortcuts"/></td>
 <td>
 <br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>

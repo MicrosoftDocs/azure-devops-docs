@@ -11,7 +11,7 @@ monikerRange: '> tfs-2018'
 
 # Docker Compose task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.

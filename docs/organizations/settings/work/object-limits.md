@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 06/09/2021
+ms.date: 03/29/2022
 ---
 
 # Work tracking, process, and project limits
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 
@@ -71,10 +71,13 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Taskboard | 1,000 tasks  | 
 | Teams | 5,000 per organization | 
 | Work item tags | 150,000 tag definitions per organization or collection | 
-| Area Paths | 10,000 per organization
-| Area Path Depth | 14
-| Iteration Paths | 10,000 per organization
-| Iteration Path Depth | 14
+| Area Paths | 10,000 per organization | 
+| Area Path Depth | 14 | 
+| Area Paths per team | 300 | 
+| Iteration Paths | 10,000 per organization | 
+| Iteration Path Depth | 14 | 
+| Iteration Paths per team | 300 | 
+
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
@@ -116,7 +119,10 @@ For the On-premises XML process model, you can modify the backlog and taskboard 
 
 ## Projects
 
-Azure DevOps Services limits each organization to 300 projects per organization. Above 300 projects certain experiences, such as connecting to the organization from Visual Studio, start to degrade. 
+Azure DevOps Services limits each organization to 1000 projects per organization, an increase over the previous limit of 300 projects.  
+
+> [!NOTE]   
+> Above 300 projects certain experiences, such as connecting to a project from Visual Studio, may start to degrade. 
 
 For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If you plan to migrate your on-premises collection to Azure DevOps Services, you'll need to observe the maximum limit of 300 projects. If your collection has more than 300 projects, you'll either need to split the collection or delete older projects.
 
@@ -312,15 +318,10 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 TBD
 
 - Naming restrictions 
-
 - persistence of work items - they don't delete 
 https://developercommunity.visualstudio.com/idea/849727/i-have-a-few-questions-about-usage-and-limits-for.html
 
 Usage limit warning -- can occur with a corrupt query 
 https://developercommunity.visualstudio.com/content/problem/778106/being-told-that-were-approaching-rate-limiting-thr.html
 
-
-
-
-  
 --> 

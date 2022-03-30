@@ -4,15 +4,15 @@ description: Inject steps before and after every pipeline job
 ms.topic: reference
 ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
+ms.author: chcomley
+author: chcomley
 ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
 # Use a decorator to inject steps into a pipeline
 
-[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Pipeline decorators let you add steps to the beginning and end of every job.
 This process is different than adding steps to a single definition because it applies to all pipelines in an organization.
@@ -20,6 +20,8 @@ This process is different than adding steps to a single definition because it ap
 Suppose our organization requires running a virus scanner on all build outputs that could be released.
 Pipeline authors don't need to remember to add that step. We create a decorator that automatically injects the step.
 Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Author a pipeline decorator
 

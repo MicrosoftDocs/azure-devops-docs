@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Publish Maven artifacts with Azure Pipelines
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and build and publish our Maven artifacts.
 

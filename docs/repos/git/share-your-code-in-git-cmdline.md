@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Get started with Git from the command line
 
-[!INCLUDE [version-azure-devops-2020](../includes/version-azure-devops-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 

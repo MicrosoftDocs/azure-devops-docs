@@ -13,7 +13,7 @@ ms.date: 12/14/2021
 
 # Security namespace and permission reference for Azure DevOps 
 
-[!INCLUDE [version-all](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces determines the level of access the following entities have to perform a specific action on a specific resource.
 - Azure DevOps user 
@@ -344,7 +344,7 @@ The following table describes the namespaces that manage object-level permission
 
 ## Project-level namespaces and permissions
 
-The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#project-level). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 ---
 :::row:::
@@ -419,7 +419,7 @@ The following table describes the namespaces that manage project-level permissio
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](set-project-collection-level-permissions.md#change-the-permission-level-for-a-project-level-group).  
+      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](change-project-level-permissions.md).  
       <br/>
       **Token format for project-level permissions**: `/PROJECT_ID`  
       **Example**: `/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
@@ -455,21 +455,25 @@ The following table describes the namespaces that manage project-level permissio
 :::row-end:::
 ---
 
-
 ::: moniker range="azure-devops"
+
+
 ## Organization-level namespaces and permissions 
 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#collection-level). The organization owner and members of the Project Collection Administrators group are granted most of these permissions.  
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions.  To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
 ## Collection-level namespaces and permissions 
 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#collection-level). Members of the Project Collection Administrators group are granted most of these permissions.  
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 ::: moniker-end
+
+<a id="process" />
 
 ---
 :::row:::
@@ -548,7 +552,7 @@ The following table describes the namespaces that manage organization-level perm
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      Process <a id="process" />
+      Process 
    :::column-end:::
    :::column span="1":::
       `Edit`                           
@@ -665,7 +669,7 @@ The following table describes those security namespaces and permissions defined 
       `Administer`                  
    :::column-end:::
    :::column span="2":::
-      Grants permission to process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](../../report/admin/manage-reports-data-warehouse-cube.md).   
+      Grants permission to process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube).   
       <br/>
       **ID:** `b8fbab8b-69c8-4cd9-98b5-873656788efb`
    :::column-end:::
@@ -1068,7 +1072,7 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
+      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
       **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::

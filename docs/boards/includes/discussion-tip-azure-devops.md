@@ -42,7 +42,7 @@ Type a name, or enter a number and the menu list will filter to match your entry
 If you need to edit or delete any of your discussion comments, choose :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit** or choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and then choose **Delete**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, Edit, Delete actions](/azure/devops/boards/media/discussion-edit-delete.png)  
+> ![Discussion section, Edit, Delete actions](../media/discussion-edit-delete.png)  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"  

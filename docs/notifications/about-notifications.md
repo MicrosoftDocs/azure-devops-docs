@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # About notifications
 
-[!INCLUDE [version-all](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Notifications help you and your team stay informed about activity that occurs within your projects in Azure DevOps. You can get notified when changes occur to the following items:
 

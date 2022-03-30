@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 # Commit details
 
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
  
 
 The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit. <!-- c123: Images need updated. -->

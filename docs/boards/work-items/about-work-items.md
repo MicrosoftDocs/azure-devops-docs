@@ -1,5 +1,5 @@
 ---
-title: Use Azure Boards work items to track user stories & more
+title: Understand how to use work items to track user stories & more
 titleSuffix: Azure Boards
 description: How to use Azure Boards work items to plan, track, & collaborate with others when developing software apps in Azure DevOps. 
 ms.custom: work-items, seodec18, contperf-fy20q4
@@ -7,20 +7,20 @@ ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 03/01/2022
 ---
 
-# Track your work items in Azure Boards user stories, issues, bugs, features, and epics 
+# Track user stories, issues, bugs, and other work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Track the features and requirements you're developing, code defects or bugs, and other details using work items. Work items are similar to GitHub issues, but offer different types to track various types of information.
 
 If you're just getting started, read the information provided in this article. To jump right in and start tracking work on a Kanban board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
 
-## Track work to do
+## Plan and track work
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -73,6 +73,17 @@ Use work items to track anything you need to track. Each work item represents an
 ::: moniker-end
 
 
+<a id="permissions-access" />
+
+## Required permissions and access
+
+As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+
+To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).  
+
+To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
+
+
 <a id="wit" />
 
 ## Work item types (WITs)
@@ -87,7 +98,7 @@ Each work item type belongs to a category. Categories are used to group work ite
 > |Category | Work item type | Controls backlogs/boards |
 > |----------|----------------|--------------------------|
 > |Epic| Epic | Epic portfolio backlogs and boards |
-> |Feature| Feature | Feature portfoliobacklogs and boards |
+> |Feature| Feature | Feature portfolio backlogs and boards |
 > |Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
 > |Task | Task | Sprints Taskboards  |
 > |Bug | Bug | Dependent on [how bugs are tracked](#track)  |
@@ -394,17 +405,6 @@ You can add or modify the fields contained within a work item type or add a cust
 ::: moniker range="< azure-devops-2019"
 You can add or modify the fields contained within a work item type or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
-
-
-<a id="permissions-access" />
-
-## Required permissions and access
-
-As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
-
-To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).  
-
-To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
 
 

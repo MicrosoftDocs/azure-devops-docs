@@ -1,21 +1,21 @@
 ﻿---
-title: Plan, code, collaborate, ship applications
+title: What is Azure DevOps?
 titleSuffix: Azure DevOps 
 ms.custom: seodec18, contperf-fy21q3
+ms.topic: overview
 description: Get an integrated set of features to help you plan, code, collaborate, and ship your applications faster.
 ms.technology: devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.date: 01/22/2021
-ms.topic: overview
 monikerRange: '<= azure-devops'
+ms.date: 02/07/2022
 ---
 
 # What is Azure DevOps?
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps provides developer services for allowing teams to plan work, collaborate on code development, and build and deploy applications. Azure DevOps supports a culture and set of processes that bring developers, project managers, and contributors together to collaboratively develop software. It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
+Azure DevOps provides developer services for allowing teams to plan work, collaborate on code development, and build and deploy applications. Azure DevOps supports a collaborative culture and set of processes that bring together developers, project managers, and contributors to develop software. It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
 
 You can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server. For information on the differences between the cloud versus on-premises platforms, see [Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
 
@@ -35,7 +35,7 @@ You can also use the following collaboration tools:
 
 Azure DevOps supports adding extensions and integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
-Azure DevOps Services supports integration with GitHub.com and GitHub Enterprise Server repositories. Azure DevOps Server supports integration with GitHub Enterprise Server repositories. For more information, see the following video, [Using GitHub with Azure DevOps](https://msit.microsoftstream.com/video/77d07845-8091-48df-8f56-adc1e5b4d8eb?referrer=https:%2F%2Fmicrosoft.sharepoint.com%2F).
+Azure DevOps Services supports integration with GitHub.com and GitHub Enterprise Server repositories. Azure DevOps Server supports integration with GitHub Enterprise Server repositories. For more information, see the [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md).
 
 ## Choose Azure DevOps Services
 
@@ -86,7 +86,7 @@ To learn more about managing Azure DevOps Server, see the [Administrative tasks 
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-- [Azure DevOps release notes](/azure/devops/release-notes/index)
+- [Azure DevOps release notes](/azure/devops/server/release-notes/)
 - [Azure DevOps blog](https://blogs.msdn.microsoft.com/devops/)
 
 

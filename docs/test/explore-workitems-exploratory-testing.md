@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Explore work items with the Test & Feedback extension
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
 
 Use the Test & Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
@@ -94,13 +94,13 @@ To explore another work item, you must first dissociate the current work item fr
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans.
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 
-* [FAQs for manual testing](reference-qa.md#tandfext)
+* [FAQs for manual testing](reference-qa.yml#tandfext)
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)

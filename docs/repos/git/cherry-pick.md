@@ -12,16 +12,16 @@ monikerRange: '<= azure-devops'
 
 # Copy changes with cherry-pick
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 
 Cherry-pick is a great way to tackle these common problems:
 
 - Accidentally committing on the wrong branch. Cherry-pick the change(s) over to the correct branch and then reset the original branch to the previous commit.
-- Pulling out a set of commits made in a feature branch so you merge them back to your `master` branch sooner.
-- Porting in specific commits from the `master` branch without rebasing your branch.   
+- Pulling out a set of commits made in a feature branch so you merge them back to your `main` branch sooner.
+- Porting in specific commits from the `main` branch without rebasing your branch.   
 
 In this tutorial you learn how to:
 

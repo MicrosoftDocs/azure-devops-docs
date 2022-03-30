@@ -9,6 +9,8 @@ monikerRange: '>= tfs-2015'
 
 # Set variables in scripts
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 When you use PowerShell and Bash scripts in your pipelines, it's often useful to be able to set variables that you can then use in future tasks. Scripts are great for when you want to do something that isn't supported by a task like calling a custom REST API and parsing the response. 
 
 You'll use the `task.setvariable` logging command to set variables in [PowerShell](../scripts/powershell.md) and [Bash](../tasks/utility/bash.md) scripts. 
@@ -285,6 +287,7 @@ stages:
      - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
        name: MyOutputVar
 - stage: B
+  dependsOn: A
   jobs:
   - job: B1
     variables:

@@ -53,8 +53,8 @@
     href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     displayName: access, permissions
   - name: Set test retention policies
-    href: how-long-to-keep-test-results.md
     displayName: results, logs
+    href: how-long-to-keep-test-results.md
 - name: Automated tests
   items:
   - name: Associate automated tests with test cases
@@ -98,17 +98,20 @@
 - name: Troubleshooting
   items:
   - name: Manual testing FAQs
-    href: reference-qa.md 
-  - name: Test case management reporting FAQs
-    href: reference-tcm.md
+    href: reference-qa.yml 
   - name: Unable to connect
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-- name: Field reference
+- name: Reference
   items:
+  - name: Test case management commands
+    displayName: tcm.exe
+    href: test-case-managment-reference.md
   - name: Work item field index
     href: ../boards/work-items/guidance/work-item-field.md
   - name: Build and test integration fields
     href: ../boards/queries/build-test-integration.md
+  - name: Microsoft Test Manager (deprecated)
+    href: /previous-versions/azure/devops/test/mtm/guidance-mtm-usage
 - name: REST API Reference
   items:
   - name: Test  

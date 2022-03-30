@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2018'
 
 # Restore a deleted Git branch from the web portal
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 This article addresses how to restore a deleted Git branch using the web portal in Azure Repos.
 If you need to restore a Git branch in your own repo from Visual Studio or the command line,

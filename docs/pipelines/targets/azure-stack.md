@@ -6,11 +6,13 @@ ms.topic: how-to
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 3/16/2021
+ms.date: 02/01/2022
 monikerRange: '> tfs-2018'
 ---
 
 # Deploy to Azure Stack Hub App Service using Azure Pipelines
+
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article walks you through setting up a CI/CD pipeline for deploying an application to app services in an Azure Stack Hub instance using Azure Pipelines.
 
@@ -26,13 +28,13 @@ In this article you can learn to create or validate:
 
 ## Create or validate your SPN
 
-An SPN provides role-based credentials so that processes outside of Azure can connect to and interact with resources. You will need an SPN with contributor access and the attributes specified in these instructions to use with your Azure DevOps pipeline.
+An SPN provides role-based credentials so that processes outside of Azure can connect to and interact with resources. You’ll need an SPN with contributor access and the attributes specified in these instructions to use with your Azure DevOps pipeline.
 
-As a user of Azure Stack Hub you do not have the permission to create the SPN. You will need to request this principal from your cloud operator. The instructions are being provided here so you can create the SPN if you are a cloud operator, or you can validate the SPN if you are a developer using an SPN in your workflow provided by a cloud operator.
+As a user of Azure Stack Hub you don’t have the permission to create the SPN. You’ll need to request this principal from your cloud operator. The instructions are being provided here so you can create the SPN if you’re a cloud operator, or you can validate the SPN if you’re a developer using an SPN in your workflow provided by a cloud operator.
 
 The cloud operator will need to create the SPN using Azure CLI.
 
-The following code snippets are written for a Windows machine using the PowerShell prompt with [Azure CLI for Azure Stack Hub](/azure-stack/user/azure-stack-version-profiles-azurecli2). If you are using CLI on a Linux machine and bash, either remove the line extension or replace them with a `\`.
+The following code snippets are written for a Windows machine using the PowerShell prompt with [Azure CLI for Azure Stack Hub](/azure-stack/user/azure-stack-version-profiles-azurecli2). If you’re using CLI on a Linux machine and bash, either remove the line extension or replace them with a `\`.
 
 1. Prepare the values of the following parameters used to create the SPN:
 
@@ -51,7 +53,7 @@ The following code snippets are written for a Windows machine using the PowerShe
     az login
     ```
 
-3. Use the `register` command for a new environment or the `update` command if you are using an existing environment. Use the following command.
+3. Use the `register` command for a new environment or the `update` command if you’re using an existing environment. Use the following command.
 
     ```azurecli  
     az cloud register `
@@ -74,14 +76,14 @@ The following code snippets are written for a Windows machine using the PowerShe
         --sdk-auth
     ```
 
-    If you do not have cloud operator privileges, you can also sign in with the SPN provided to you by your cloud operator. You will need the client ID, the secret, and your tenant ID. With these values, you can use the following Azure CLI commands to create the JSON object that contains the values you will need to create your service connection.
+    If you don’t have cloud operator privileges, you can also sign in with the SPN provided to you by your cloud operator. You’ll need the client ID, the secret, and your tenant ID. With these values, you can use the following Azure CLI commands to create the JSON object that contains the values you’ll need to create your service connection.
 
     ```azurecli  
     az login --service-principal -u "<client-id>" -p "<secret>" --tenant "<tenant-ID>" --allow-no-subscriptions
     az account show --sdk-auth
     ```
 
-6. Check the resulting JSON object. You will use the JSON object to create your service connection. The JSON object should have the following attributes:
+6. Check the resulting JSON object. You’ll use the JSON object to create your service connection. The JSON object should have the following attributes:
 
     ```json
     {
@@ -112,15 +114,15 @@ The following code snippets are written for a Windows machine using the PowerShe
 1. Select **Review + Create**.
 1. Review your web app. Select **Create**.
 1. Select **Go to resource**.
-1. Make note of your app name. You will add the name to the yml document that defines your pipeline in your repository.
+1. Make note of your app name. You’ll add the name to the yml document that defines your pipeline in your repository.
 
-## Create an Azure DevOps instance
+## Create an DevOps instance
 
-You will need an Azure DevOps instance associated with your Azure Stack Hub instance.
+You’ll need an DevOps instance associated with your Azure Stack Hub instance.
 
 ## Create a service connection
 
-Create a service connection. You will need the values from your SPN and the name of your Azure Stack Hub subscription.
+Create a service connection. You’ll need the values from your SPN and the name of your Azure Stack Hub subscription.
 
 1. Sign in to [Azure DevOps](https://dev.azure.com/). 
 2. Select **Service connections** > **New service connection**.
@@ -139,11 +141,11 @@ Create a service connection. You will need the values from your SPN and the name
 1. Add `clientSecret` for the **Service principal key**.
 1. Add `tenantId` for **Tenant ID**.
 1. Select **Verify**.
-1. Add the name of the connection and make a note of it. You will add the name of the connection to the yaml document that defines your pipeline in your repository.
+1. Add the name of the connection and make a note of it. You’ll add the name of the connection to the yaml document that defines your pipeline in your repository.
 
 ## Create your repository and add pipeline
 
-1. If you have not added your web app code to the repository, add it now.
+1. If you haven’t added your web app code to the repository, add it now.
 2. Open the repository. Select the repo and select **Browse**.
 3. Select **Pipelines**
 4. Select **New pipeline**.
@@ -175,7 +177,7 @@ Create a service connection. You will need the values from your SPN and the name
    > To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline, as in this example.
 
 10. Update the `azureSubscription` value with the name of your service connection.
-11. Update the `appName` with your app name. You are now ready to deploy.
+11. Update the `appName` with your app name. You’re now ready to deploy.
 
 ## Notes about using Azure tasks with Azure Stack Hub
 

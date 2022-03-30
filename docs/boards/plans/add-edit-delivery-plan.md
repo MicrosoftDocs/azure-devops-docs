@@ -7,14 +7,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 10/14/2021
+ms.date: 01/19/2022
 ---
 
  
 
 # Add or edit a Delivery Plan 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Delivery Plans provide a highly interactive calendar view of multiple team backlogs. For the use cases, benefits, and interactions you can do, see [Review team Delivery Plans](review-team-plans.md). 
 
@@ -49,89 +49,25 @@ To add and configure a Delivery Plan, the following elements must be configured:
 > [!TIP]  
 > If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.   
 
+<a id="customization-options" />
 
 ## Plan customization options
  
 
 Once you open the Plan settings dialog, choose one of the following tabs to set your customization options. 
 
----
-:::row:::
-   :::column span="1":::
-      **Tab** 
-   :::column-end:::
-   :::column span="3":::
-      **Use to...**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Overview** 
-   :::column-end:::
-   :::column span="3":::
-      Modify the plan **Name** or **Description** 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **[Teams](#teams)** 
-   :::column-end:::
-   :::column span="3":::
-      Add or remove a team backlog. You can add up to 15 backlog levels. You can add a mix of backlog levels.  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **[Field criteria](#field-criteria)** 
-   :::column-end:::
-   :::column span="3":::
-      Specify field criteria to filter work item types displayed on the plan. All criteria is evaluated as an AND statement.  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **[Markers](#markers)** 
-   :::column-end:::
-   :::column span="3":::
-      Add milestone markers to the plan. Specify a label and select a color.   
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **[Fields](#fields)** 
-   :::column-end:::
-   :::column span="3":::
-      Add or remove fields from cards to display on the plan.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **[Styles](#styles)** 
-   :::column-end:::
-   :::column span="3":::
-      Add styling rules to change card color based on field criteria. 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **[Tag colors](#tag-colors)** 
-   :::column-end:::
-   :::column span="3":::
-      Add tags and specify a tag color. Optionally enable or disable a tag color. 
-   :::column-end:::
-:::row-end:::
----
-
+|Page         | Use to... |
+|-------------|-------------------|
+|**Overview**|Edit the plan **Name** or **Description**. |
+|**[Teams](#teams)** |Add or remove a team backlog. You can add up to 15 backlog levels. You can add a mix of backlog levels and teams from any project defined for the organization.  |
+|**[Field criteria](#field-criteria)**|Specify field criteria to filter work item types displayed on the plan. All criteria is evaluated as an AND statement.  If no fields are specified, then all work item types that appear on the teams backlog level appear on the delivery plan.  |
+|**[Markers](#markers)** |Add up to 30 milestone markers to the plan. Specify a label and select a color.  |  
+|**[Fields](#fields)** |Add or remove fields from cards to display on the plan, similar to how you [customize them for your Kanban board](../../boards/boards/customize-cards.md). You can't add rich-text (HTML) fields, such as the Description field, to a card even if it appears in the list. These field types represent too many challenges to format on a card.    |
+|**[Styles](#styles)** |Add styling rules to change card color based on field criteria. |
+|**[Tag colors](#tag-colors)**|Add tags and specify a tag color. Optionally enable or disable a tag color. |
+ 
+ 
 <a id="teams" />
-
-
 
 ## Add a plan  
 
@@ -153,7 +89,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 
 When defining a plan, note the following information:  
 - Use the name and description field to clearly identify your plan within the project 
-- You can choose one or more teams from any project defined in the organization or collection. There can be up to a maximum of 10 teams   
+- You can choose one or more teams from any project defined in the organization or collection. There can be up to a maximum of 15 teams   
 - You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md) 
 	> [!NOTE] 
 	> If you aren't able to select a backlog level, check the Team Backlog settings to ensure the backlog level is enabled for the team. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
@@ -164,21 +100,15 @@ When defining a plan, note the following information:
 
 ## Edit a plan 
 
-Once you've defined a plan, you can further customize it. 
+Once you've defined a plan, you can modify it or further customize it. 
 
-1. Choose the **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to open **Plans settings** dialog. 
+1. Choose the **Settings** to open the **Plans settings** dialog. 
 
-2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
-   - Edit the teams you've selected and their backlog level  
-   - Set field criteria to further limit the work items that will appear on the plan 
-   - Add markers to show important upcoming events on your timeline 
-   - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
-     > [!NOTE]  
-     > You can't add rich-text (HTML) fields, such as the Description field, to a card even if it appears in the list. These field types represent to many challenges to format on a card.  
- 
-  Here, we add the **Tags** field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+	:::image type="content" source="media/plans/settings.png" border="true" alt-text="Screenshot of Delivery Plans title and settings button.":::  
 
-  :::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
+2. Then, choose the page you want to edit based on the [customizations you want to make](#customization-options). Here, we add the **Tags** to the **Field criteria**. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+
+	:::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
 
 
 <a id="fields"></a>
@@ -213,7 +143,11 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 	:::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Plans settings, Markers tab, two markers defined.":::   
 
-	Markers appear on the plan as shown: 
+1.	To add additional markers, choose **+ Add marker**. You can add up to 30 markers. The **+ Add marker** button becomes disabled after 30 markers have been added.  
+
+2.	Choose **Save** when done. 
+
+	Markers appear on the plan as shown. 
 
 	:::image type="content" source="media/plans/markers.png" border="true" alt-text="Screenshot of Plans, Markers appear on calendar.":::   
 
@@ -272,9 +206,9 @@ You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/pla
 ## Related articles  
 
 - [Review team plans](review-team-plans.md)
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Edit Delivery Plan permissions](edit-delivery-plan-permissions.md)
-- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
-- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md)  
+- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)    
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  

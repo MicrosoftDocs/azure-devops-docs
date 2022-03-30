@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Release triggers
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -34,7 +34,7 @@ Continuous deployment triggers allow you to create a release every time a new bu
 :::image type="content" source="media/trigger-01.png" alt-text="Configure continuous deployment triggers":::
 
 > [!NOTE]
-> Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up stages triggers to deploy your app to the various stages.
+> Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up triggers to deploy your app to the various stages.
 
 <a id="scheduled-triggers"></a>
 
@@ -59,6 +59,10 @@ If you chose to enable the pull-request triggers, a release will be created ever
 > ![Configure a pull request trigger.](media/trigger-01a.png)
 
 To use a pull request trigger, you must also enable it for specific stages. We will go through stage triggers in the next section. You may also want to set up a [branch policies](../../repos/git/pr-status-policy.md) for your branches.
+
+You can also use **Build tags** to organize your workflow and tag specific runs. The following pull request trigger will create a release every time a new artifact version is available as part of a pull request to the *main* branch with the tags *Migration* and *Deployment*.
+
+:::image type="content" source="media/build-tags-example.png" alt-text="Screenshot showing an example of how to set up a pull request trigger with build tags":::
 
 ::: moniker-end
 

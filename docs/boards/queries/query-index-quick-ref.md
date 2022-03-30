@@ -13,7 +13,7 @@ ms.date: 01/25/2021
 
 # Use an index to query quick reference data in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 

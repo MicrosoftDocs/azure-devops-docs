@@ -12,7 +12,7 @@ ms.date: 10/11/2021
 
 # About pipeline security roles
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 <a id="security-roles" />
 

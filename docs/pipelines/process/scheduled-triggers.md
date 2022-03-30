@@ -11,6 +11,8 @@ monikerRange: '>= tfs-2015'
 
 # Configure schedules for pipelines
 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
@@ -122,7 +124,7 @@ schedules:
     - release
 ```
 
-Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
+Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `release` branch is added to the branch filters in the YAML file **in the release branch** will the scheduled build be added to the scheduler.
 
 ::: moniker-end
 
@@ -192,7 +194,7 @@ schedules:
   always: true
 ```
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `main` and all `releases/*` branches, except those under `releases/ancient/*`.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `main` and all `releases/*` branches, except the branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
 
@@ -222,7 +224,7 @@ YAML pipelines are not available on TFS.
 
 ::: moniker range=">= azure-devops-2019"
 
-In this example, the classic editor scheduled trigger has two entries, producing the following builds.
+In this example, the classic editor scheduled trigger has two entries, which produce the following builds.
 
 * Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
 
@@ -390,10 +392,25 @@ YAML pipelines are not available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+::: moniker range=">= azure-devops-2020"
 
-Classic scheduled pipelines don't have a **Scheduled runs** view, but you can can view the schedule for a pipeline in the classic schedule editor for your pipeline.
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
 
-::: moniker range=">= azure-devops-2019"
+![Scheduled runs menu](media/triggers/scheduled-runs-menu-classic.png)
+
+After you create or update your scheduled triggers, you can verify them using this view.
+
+![Scheduled runs](media/triggers/scheduled-runs-classic.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+Classic scheduled pipelines don't have a **Scheduled runs** view, but you can view the schedule for a pipeline in the classic schedule editor for your pipeline.
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2019"
 
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
@@ -486,7 +503,7 @@ To configure the scheduled pipeline to build only if there has been a change sin
 <a name="limits"></a>
 ## Limits on the number of scheduled runs
 
-There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. This limit is around 1000 runs per pipeline per week.
+There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources, particularly the Microsoft-hosted agents. This limit is around 1000 runs per pipeline per week.
 
 ::: moniker range=">azure-devops-2019"
 ## Migrating from the classic editor
@@ -599,7 +616,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
 
 * Make a small trivial change to your YAML file and push that update into your repository. If there was any problem in reading the schedules from the YAML file earlier, it should be fixed now.
 
@@ -615,11 +632,11 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 * There is a [limit](#limits) on how many times you can schedule your pipeline. Check if you have exceeded those limits.
 
-* Check if someone enabled additional schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
+* Check if someone enabled more schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
 
 * Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to you YAML file, and push the update to your repository. This should re-sync the schedules.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to your YAML file, and push the update to your repository. This should re-sync the schedules.
 
 * If you use GitHub for storing your code, it is possible that Azure Pipelines may have been throttled by GitHub when it tried to start a new run. Check if you can start a new run manually.
 
@@ -639,7 +656,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 ### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
 
-Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say `features/X`, then make sure that the YAML file **in that branch** has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in the `features/X` branch should have the following in this example: 
+Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say `features/X`, then make sure that the YAML file **in that branch** has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in the `features/X` branch should have the following `schedule` in this example: 
  
 ```yaml
 schedules: 

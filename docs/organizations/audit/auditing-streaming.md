@@ -13,7 +13,7 @@ ms.date: 12/20/2021
 
 # Create audit streaming
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!Note]
 > Audit streaming is currently in Public Preview.

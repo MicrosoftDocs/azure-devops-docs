@@ -14,7 +14,7 @@ ms.date: 10/11/2017
 
 # Define the project portal plug-in for a process template
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 ::: moniker range=">= tfs-2018"
 > [!IMPORTANT]   

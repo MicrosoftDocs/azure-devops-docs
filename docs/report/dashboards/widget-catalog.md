@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'  
-ms.date: 09/28/2021
+ms.date: 02/14/2022
 ---
 
 # Out Of Box widget catalog 
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
 
 ::: moniker range=">= tfs-2018"
 Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another. To learn how, see [Add a widget to a dashboard](add-widget-to-dashboard.md). 
@@ -207,38 +207,35 @@ Widgets listed in the following table are provided out-of-box. They're organized
 
 ## Prerequisites
 
-
 ::: moniker range="azure-devops"
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
 - To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
 ::: moniker-end
 
-
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
 - To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
 ::: moniker-end
 
 ::: moniker range="tfs-2017 || tfs-2018"
 
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 - To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
-- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).    
 
 ::: moniker-end
+
+> [!NOTE]
+> Data displayed within a chart or widget is subject to permissions granted to the signed in user. To learn more, see [FAQs on Azure DevOps dashboards, charts, and reports, Access and permissions](faqs.yml).
 
 ::: moniker range=">= azure-devops-2019"
 ## Azure Boards widgets 
@@ -366,7 +363,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="new-work-item-widget"></a>
-      Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration.  
+      Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default **Area Path**. The **Iteration Path** assigned matches the last **Iteration Path** assigned to a work item by the currently signed in user.  
       
       To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
       ::: moniker range="tfs-2015"
@@ -778,7 +775,7 @@ Add one or more of the following widgets to support adding:
       - [View process guidance](../../project/configure-or-redirect-process-guidance.md)  
       - [View reports](../sql-reports/reporting-services-reports.md)  
       
-      To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
+      To add or update reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -862,6 +859,7 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 ## Related articles
 
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Track progress with status and trend query-based charts](charts.md)
 - [Add, rename, and delete dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  

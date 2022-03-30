@@ -12,7 +12,7 @@ ms.date: 12/08/2021
 
 # Track test status
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
 
 View the status of planned tests or monitor testing progress by defining test case or test result charts. To learn more about test planning, see [Create test plans and test suites](create-a-test-plan.md). For information about test result terms, see [Test objects and terms](test-objects-overview.md#test-terms).
 
@@ -295,7 +295,7 @@ You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
 
 - [Progress report](progress-report.md) 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.md#trackstatus)
+- [FAQs for manual testing](reference-qa.yml#trackstatus)
 - [Widget catalog](../report/dashboards/widget-catalog.md)
 - [Team administration](../organizations/settings/manage-teams.md) 
 

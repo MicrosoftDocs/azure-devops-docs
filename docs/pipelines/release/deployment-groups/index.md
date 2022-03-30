@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2018'
 
 # Provision deployment groups
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 A deployment group is a logical set of deployment target machines that have agents installed on each one. Deployment groups represent the physical environments; for example, "Dev", "Test", or "Production" environment. In effect, a deployment group is just another grouping of agents, much like an agent pool.
 

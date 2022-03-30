@@ -27,4 +27,5 @@ ms.technology: devops-cicd-tasks
     #downloadPath: '$(System.ArtifactsDirectory)' 
     #cleanDestinationFolder: false # Optional
     #parallelizationLimit: '8' # Optional
+    #extractTars: false # Optional
 ```

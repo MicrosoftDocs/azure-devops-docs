@@ -14,7 +14,7 @@ ms.date: 10/28/2021
 
 # Remove, delete, or restore work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work items can live forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions: 
 
@@ -49,7 +49,7 @@ To move a work item from one project to another, or to change the work item type
 ::: moniker range=">= tfs-2015"
 - To remove, modify, or delete work items, you must be a member of the **Contributors** group or have the following permissions set to **Allow**. 
 	- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.   
-	- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
+	- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to delete or restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
 ::: moniker-end
 ::: moniker range="tfs-2013"
 - To remove, modify, or delete work items, you must be a member of the **Contributors** group or have the following permissions set to **Allow**. 
@@ -408,7 +408,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
-- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)  
 - [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 ::: moniker-end
 
@@ -419,7 +419,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
-- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
+- [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)  
 - [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 
 ::: moniker-end

@@ -13,7 +13,7 @@ ms.date: 09/10/2020
 
 # Get started as a Stakeholder
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops" 
 
@@ -29,7 +29,7 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 ::: moniker-end  
 
-monikerRange: '<= tfs-2015'
+::: moniker range="<= tfs-2015"
 
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
@@ -100,13 +100,13 @@ You can start viewing work items once you connect to a project.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Open your Kanban board, cloud version.](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile-s155.png)  
 
-	To select another team's board, open the selector. Then select a different team, or select the ![home icon](/azure/devops/media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Select another team's board.](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
@@ -122,13 +122,13 @@ You can start viewing work items once you connect to a project.
 
 	![Screenshot of Open your Kanban board, on-premises versions.](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile.png)  
 
-	To select another team's board, open the selector. Then select a different team, or select the ![home icon](/azure/devops/media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of select another team's board, on-premises versions.](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 	Here we have selected **Backlog Items** for the Scrum process.
@@ -145,7 +145,7 @@ You can start viewing work items once you connect to a project.
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -166,7 +166,7 @@ You can start viewing work items once you connect to a project.
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -296,7 +296,7 @@ From the web portal, open a work item and choose **Add tag** and type a keyword 
 > ![Screenshot of work item form, Add one or more tags to a work item.](../../boards/queries/media/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
-monikerRange: '<= tfs-2015'
+::: moniker range="<= tfs-2015"
 
 ![Screenshot of work item form, Add one or more tags to a work item, TFS 2015 version](../../boards/queries/media/add-tags-to-work-items-vso-tfs.png)  
 ::: moniker-end
@@ -309,8 +309,8 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
-> the permission **Create tag definition** at the project-level. To learn
-> more, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md).
+> the project-level **Create tag definition** permission. To learn
+> more, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end	
 

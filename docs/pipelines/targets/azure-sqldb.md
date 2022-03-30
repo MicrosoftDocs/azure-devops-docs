@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 04/27/2020
+ms.date: 02/01/2022
 monikerRange: '>= tfs-2017'
 ---
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -22,7 +22,7 @@ You can automatically deploy your database updates to Azure SQL database after e
 
 ## DACPAC
 
-The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
+The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes and data. You can create a DACPAC using the **SQL database project** in Visual Studio.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -59,7 +59,7 @@ See also [authentication information when using the Azure SQL Database Deploymen
 
 ## SQL scripts
 
-Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here is a simple example of a SQL script that creates an empty database.
+Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here’s a simple example of a SQL script that creates an empty database.
 
 ```sql
   USE [main]
@@ -69,9 +69,9 @@ Instead of using a DACPAC, you can also use SQL scripts to deploy your database.
   GO
 ```
 
-To run SQL scripts as part of a pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the Azure Pipelines agent cannot communicate with Azure SQL Database.
+To run SQL scripts as part of a pipeline, you’ll need Azure PowerShell scripts to create and remove firewall rules in Azure. Without the firewall rules, the Azure Pipelines agent can’t communicate with Azure SQL Database.
 
-The following Powershell script creates firewall rules. You can check-in this script as `SetAzureFirewallRule.ps1` into your repository.
+The following PowerShell script creates firewall rules. You can check in this script as `SetAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
@@ -119,7 +119,7 @@ else
 }
 ```
 
-The following Powershell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
+The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
 
 ### ARM
 
@@ -173,7 +173,7 @@ steps:
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
 - task: CmdLine@1
@@ -200,13 +200,13 @@ YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure powershell scripts to configure firewall rules are part of the build artifact.
+When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure PowerShell scripts to configure firewall rules are part of the build artifact.
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- First, use an [Azure PowerShell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
 - Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
-- Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
+- Third, use another [Azure PowerShell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
 
 * * *
 ## Azure service connection
@@ -279,10 +279,10 @@ In your release pipeline, you can implement various checks and conditions to con
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
-## Additional SQL actions
+## More SQL actions
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
-that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need.
+that you want to perform. In these cases, you can simply use PowerShell or command-line scripts to run the commands you need.
 This section shows some of the common use cases for invoking the [SqlPackage.exe tool](/sql/tools/sqlpackage-download).
 As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
 
@@ -329,7 +329,7 @@ sqlpackage.exe /Action:Extract /?
 
 ### Publish
 
-Incrementally updates a database schema to match the schema of a source .dacpac file. If the database does not exist on the server, the publish operation will create it. Otherwise, an existing database will be updated.
+Incrementally updates a database schema to match the schema of a source .dacpac file. If the database doesn’t exist on the server, the publish operation will create it. Otherwise, an existing database will be updated.
 
 **Command Syntax:**
 

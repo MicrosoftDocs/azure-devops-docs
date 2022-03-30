@@ -3,8 +3,6 @@ title: About security, authentication, authorization, and security policies
 titleSuffix: Azure DevOps
 description: Learn how Azure DevOps manages security through authentication, authorization, and policies 
 ms.technology: devops-security
-ms.assetid: 
-toc: show
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -14,7 +12,7 @@ ms.date: 4/26/2021
 
 # About security, authentication, and authorization 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 
@@ -121,7 +119,7 @@ While the main types of accounts of interest are the user accounts that you add 
 
 
 ::: moniker range="azure-devops"
-- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Increase your permissions; find an admin](lookup-organization-owner-admin.md#find-owner). 
+- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Look up the organization owner](look-up-organization-owner.md). 
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
 - **Service principals**: Internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
@@ -241,12 +239,12 @@ To secure your organization and code, you can set a number of policies. Specific
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
 - Can only access the **Overview** and **Projects** pages of **Organization Settings**.
 - Can only connect and view those projects to which they've been added to explicitly (see [Add users to a project or team](add-users-team-project.md). 
 - Can only select user and group identities that have been added explicitly to the project they are connected to. 
 
-To learn more about the **Limit user visibility for projects**, see [About projects, Limit user visibility for projects](../projects/about-projects.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+To learn more about the **Limit user visibility and collaboration to specific projects**, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 ### Git repository and branch policies 
 

@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 ---
 # Pull request update notifications
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 You can subscribe to email alerts to be notified of changes in pull requests (PRs). By default, you're subscribed to several common PR notifications. For a complete list of default subscription notifications, see [Out-of-the-box (OOB) or default subscriptions](../../notifications/oob-built-in-notifications.md#out-of-the-box-oob-or-default-subscriptions).
 

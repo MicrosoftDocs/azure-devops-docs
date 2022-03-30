@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Manage and store large files in Git
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
 
 Git is great at keeping the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed. 
 Large files that don't compress well and change entirely between versions (such as binaries) present problems when stored in your Git repos. 

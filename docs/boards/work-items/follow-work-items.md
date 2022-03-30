@@ -14,7 +14,7 @@ ms.date: 11/07/2021
 
 # Tutorial: Track a user story, bug, issue, or other work item or pull request  
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 <a id="follow"></a>  
 

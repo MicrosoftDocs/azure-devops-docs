@@ -14,7 +14,7 @@ ms.date: 10/17/2019
 
 # Best tool to add, update, and link work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Azure Boards provides you several tools&mdash;many designed to support a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
 
@@ -292,7 +292,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    
    - [Track test status](../../test/track-test-status.md)
    - [Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
-   - [Export test plans and test suites](../../test/reference-qa.md#testcases)
+   - [Export test plans and test suites](../../test/reference-qa.yml#testcases)
    - [Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)
    
    :::column-end:::

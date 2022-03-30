@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 02/14/2022
 ---
 
 # Add tasks to backlog items to support sprint planning
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="define-tasks">  </a>
 
@@ -136,7 +136,7 @@ For each sprint backlog item, add a task. Adding tasks from the sprint backlog o
 
 ::: moniker range=">= azure-devops-2019"
 
-You can add tasks from the sprint **Backlog** or **Taskboard**. 
+You can add tasks from the sprint **Backlog** or **Taskboard**.  ALl items you add are automatically assigned the **Iteration Path** of the selected sprint.
 
 From the **Backlog** view, choose the plus sign to open the work item form for a task.
 

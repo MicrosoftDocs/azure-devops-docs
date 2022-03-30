@@ -12,7 +12,7 @@ ms.date: 12/06/2021
 
 # Collect diagnostic data while testing
 
-[!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
 
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 
@@ -139,7 +139,7 @@ view it before you save the bug.
 
 ![Viewing the diagnostic data in the bug you are creating](media/collect-diagnostic-data/collect-diagnostic-data-15.png) 
 
-[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
 
 If you want to collect advanced diagnostic data such as code coverage, 
 IntelliTrace, and Test Impact data in addition to the data items listed above,
@@ -161,4 +161,4 @@ tests using Microsoft Test Manager. For more information, see
 - [Overview of manual and exploratory testing](index.yml)
 - [Testing different configurations](test-different-configurations.md)
 - [Manage test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.md#repeatdifferent)
+- [FAQs for manual testing](reference-qa.yml#repeatdifferent)

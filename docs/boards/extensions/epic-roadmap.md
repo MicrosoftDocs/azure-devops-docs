@@ -15,7 +15,7 @@ ms.date: 10/01/2021
 
 # View progress using the Epic Roadmap 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 Similar to the Feature Timeline, the Epic Roadmap supports portfolio management. It provides a calendar view of a single epic and its child features. Within each epic roadmap view, you can drill down to see details at the feature and requirements level.  
 

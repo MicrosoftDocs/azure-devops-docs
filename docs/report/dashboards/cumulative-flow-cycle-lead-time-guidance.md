@@ -14,7 +14,7 @@ ms.date: 09/28/2021
 
 # Cumulative flow, lead time, and cycle time guidance
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md). 
 

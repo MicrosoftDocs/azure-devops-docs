@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and deploy JavaScript and Node.js apps
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 You can use an Azure DevOps pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets.
 

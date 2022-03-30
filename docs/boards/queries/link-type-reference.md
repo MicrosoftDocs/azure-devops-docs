@@ -15,7 +15,7 @@ ms.date: 10/21/2021
 
 # Reference guide for link types used in Azure DevOps and Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="link-type-guidance"></a>
 
@@ -255,7 +255,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See [Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress).
+   Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See [Review team activities to support useful reports](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports#monitor-progress).
 
    :::column-end:::
 :::row-end:::
@@ -751,7 +751,7 @@ To get a list of link types, you can use one of the supported command-line tools
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item relation list-type [--org]

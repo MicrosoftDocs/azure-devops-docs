@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Customize and extend pull request workflows with pull request status
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
@@ -92,7 +92,7 @@ This further guarantees that the PR will not be able to be merged until the late
 
 ![Status policy reset conditions](media/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
-See the REST API examples for posting status [on an iteration](/rest/api/azure/devops/git/pull%20request%20statuses/create#on-iteration) and [on a pull request](/rest/api/azure/devops/git/pull%20request%20statuses/create#on-pull-request).
+See the REST API examples for posting status [on an iteration](/rest/api/azure/devops/git/pull-request-statuses/create#on-iteration) and [on a pull request](/rest/api/azure/devops/git/pull-request-statuses/create#on-pull-request).
 
 ## Status policy
 

@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Shelve command (Team Foundation Version Control)
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 
 The **shelve** command stores a set of pending changes, together with pending check-in notes, a comment, and a list of associated work items on an Azure DevOps server without actually checking them into the version control server.

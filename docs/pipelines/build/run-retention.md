@@ -10,6 +10,8 @@ monikerRange: ">= azure-devops-2020"
 
 # Pipeline Run Retention
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are a some examples of tasks that you can add to your yaml pipeline that will cause a run to retain itself.
 
 ## Prerequisites
@@ -36,7 +38,7 @@ If a pipeline in this project is important and runs should be retained for longe
     script: |
       $contentType = "application/json";
       $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-      $rawRequest = @{ daysValid = 365 * 2; definitionId = 1; ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+      $rawRequest = @{ daysValid = 365 * 2; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
       $request = ConvertTo-Json @($rawRequest);
       $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
       Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;

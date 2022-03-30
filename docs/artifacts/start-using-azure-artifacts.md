@@ -12,7 +12,9 @@ monikerRange: '>= tfs-2017'
 
 # Azure Artifacts overview
 
-Azure Artifacts enables developers to share and consume packages from different feeds and public registries. Packages can be shared within the same team, the same organization, and even publicly. Azure Artifacts supports multiple package types such as NuGet, Npm, Python, Maven, and Universal Packages.
+[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+
+Azure Artifacts enables developers to share and consume packages from different feeds and public registries. Packages can be shared within the same team, the same organization, and even publicly. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
 
 Azure Artifacts gets billed on a consumption basis, and is free up until 2 GiB of storage. If your organization needs more storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).
 
@@ -52,7 +54,7 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need. Select your package type to learn more: 
 
 - [NuGet](./get-started-nuget.md)
-- [Npm](./get-started-npm.md)
+- [npm](./get-started-npm.md)
 - [Maven](./get-started-maven.md)
 - [Python](./quickstarts/python-packages.md)
 - [Universal Packages](./quickstarts/universal-packages.md)

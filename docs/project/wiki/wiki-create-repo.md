@@ -15,7 +15,7 @@ ms.date: 03/05/2021
 
 # Create a Wiki for your project
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
 
 Learn how to open a wiki and provision a Git repo for your wiki.
 
