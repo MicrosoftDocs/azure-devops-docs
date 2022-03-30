@@ -724,7 +724,8 @@ See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](c
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md) for your code and learn more about using Git in the [Azure Repos Git tutorial](gitworkflow.md).
+> [Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md)
+> [Azure Repos Git tutorial](gitworkflow.md)
 
 ## Related articles
 
