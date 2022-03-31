@@ -17,9 +17,9 @@ ms.date: 02/07/2022
 > Auditing is still in public preview.
 
 The tables below describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature. 
-* Any given event will belong to a specific Product Area. The full list of Areas are given in the [Area table](#Areas).
-* An event has a Category field that reflects the type of action performed during the event. The list of possible action types can be seen in the [Categories table](#Categories).
-* The list of all possible actions are grouped in table by their Product Area can be found in the [Actions section](#Actions).
+* Any given event will belong to a specific Product Area. The full list of Areas are given in the [Area table](#areas).
+* An event has a Category field that reflects the type of action performed during the event. The list of possible action types can be seen in the [Categories table](#categories).
+* The list of all possible actions are grouped in table by their Product Area can be found in the [Actions section](#actions).
 
 > [!Note]
 > We try our best to keep adding new actions regularly. If you would like to see an event that is not currently in the tables below, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
@@ -320,4 +320,4 @@ The tables below describe the type of events (or actions) that are available for
 ## Related Articles
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
 - [Export audit events](azure-devops-auditing.md#export-auditing-events)
-- [Set up an audit stream](audit-streaming.md)
+- [Set up an audit stream](auditing-streaming.md)
