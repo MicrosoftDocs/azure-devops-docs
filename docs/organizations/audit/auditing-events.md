@@ -14,7 +14,7 @@ ms.date: 02/07/2022
 # Auditing Events List
 
 > [!NOTE]
-> Auditing is still in private preview.
+> Auditing is still in public preview.
 
 The tables below describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature. 
 * Any given event will belong to a specific Product Area. The full list of Areas are given in the [Area table](#Areas).
