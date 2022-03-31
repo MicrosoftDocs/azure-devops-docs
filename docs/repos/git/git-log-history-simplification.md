@@ -1,6 +1,6 @@
 ---
 title: Understand Git history simplification
-description: Learn ho git log history simplification works
+description: Learn how git log history simplification works
 ms.topic: conceptual
 ms.technology: devops-code-git
 ms.assetid: 663ea04b-ee1e-41f9-8c5b-dfc269b093c2
