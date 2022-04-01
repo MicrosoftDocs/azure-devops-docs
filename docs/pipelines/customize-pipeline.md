@@ -25,8 +25,12 @@ Follow instructions in [Create your first pipeline](create-first-pipeline.md) to
 
 A pipeline is defined using a YAML file in your repo. Usually, this file is named `azure-pipelines.yml` and is located at the root of your repo.
 
-* Navigate to the **Pipelines** page in Azure Pipelines and select the pipeline you created.
-* Select **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. Examine the contents of the YAML file.
+Navigate to the **Pipelines** page in Azure Pipelines, select the pipeline you created, and choose **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. 
+
+> [!NOTE]
+> For instructions on how to view and manage your pipelines in the Azure DevOps portal, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
+
+Examine the contents of the YAML file.
 
    ```yaml
     trigger:
