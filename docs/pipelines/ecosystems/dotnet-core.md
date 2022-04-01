@@ -6,12 +6,12 @@ ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
 ms.date: 12/27/2021
 ms.custom: contperf-fy20q4, freshness-fy22q2
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build, test, and deploy .NET Core apps
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use a pipeline to automatically build and test your .NET Core projects. Learn how to do the following tasks:
 

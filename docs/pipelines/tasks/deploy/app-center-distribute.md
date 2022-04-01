@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 04/22/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # App Center Distribute task

@@ -7,7 +7,7 @@ ms.assetid: 21C3DC47-7D67-4427-8386-ACE3A6279995
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Android build task (deprecated; use Gradle)

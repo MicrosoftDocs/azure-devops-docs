@@ -8,14 +8,14 @@ ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 10/15/2021
 ---
 
 
 # Reorder cards on your Kanban board  
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 <a id="reorder-cards"></a>
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 

@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 02/12/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # cURL Upload Files task

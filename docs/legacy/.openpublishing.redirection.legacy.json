@@ -5637,11 +5637,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/reference/witadmin/remove-work-items-permanently.md",
-      "redirect_url": "/azure/devops/reference/witadmin/remove-work-items-permanently",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/reference/witadmin/tcm-customize-manage-test-experience.md",
       "redirect_url": "/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
       "redirect_document_id": false
@@ -5727,11 +5722,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/reference/process-templates/define-groups-teams-permissions-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/reference/process-templates/define-initial-configuration-build.md",
       "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-build",
       "redirect_document_id": false
@@ -5744,11 +5734,6 @@
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-initial-configuration-version-control.md",
       "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/process-templates/define-objects-track-work-items-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-objects-track-work-items-plug-in",
       "redirect_document_id": false
     },
     {
@@ -7219,11 +7204,6 @@
     {
       "source_path_from_root": "/docs/build-release/tasks/build/xamarin-ios.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/xamarin-ios",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/build-release/tasks/build/xcode-build.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/build/xcode-build",
       "redirect_document_id": false
     },
     {
@@ -10392,11 +10372,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/customize/reference/process-templates/define-groups-teams-permissions-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-build.md",
       "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-build",
       "redirect_document_id": false
@@ -10409,11 +10384,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-version-control.md",
       "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-version-control",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/process-templates/define-objects-track-work-items-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-objects-track-work-items-plug-in",
       "redirect_document_id": false
     },
     {
@@ -10469,11 +10439,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/rebuild-client-cache.md",
       "redirect_url": "/azure/devops/reference/witadmin/rebuild-client-cache",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/witadmin/remove-work-items-permanently.md",
-      "redirect_url": "/azure/devops/reference/witadmin/remove-work-items-permanently",
       "redirect_document_id": false
     },
     {

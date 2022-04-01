@@ -5,14 +5,14 @@ description: Understand how to add and consume secure files for Azure Pipelines.
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.author: vijayma
 author: vijayma
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 07/14/2021
 
 ---
 
 # Use secure files
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Secure files give you a way to store files that you can share across pipelines. Use the secure files library to store files such as:
 

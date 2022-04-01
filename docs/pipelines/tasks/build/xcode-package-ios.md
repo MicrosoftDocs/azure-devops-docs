@@ -6,7 +6,7 @@ ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298
 ms.author: vijayma
 author: vijayma
 ms.date: 11/13/2017
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 

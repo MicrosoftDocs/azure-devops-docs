@@ -7,7 +7,7 @@ ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/30/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # .NET Core CLI task

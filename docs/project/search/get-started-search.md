@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 08/23/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Get started with search
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= tfs-2018"
 

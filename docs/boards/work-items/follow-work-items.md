@@ -8,13 +8,13 @@ ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 11/07/2021
 ---
 
 # Tutorial: Track a user story, bug, issue, or other work item or pull request  
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="follow"></a>  
 

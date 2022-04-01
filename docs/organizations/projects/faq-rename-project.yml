@@ -11,7 +11,7 @@ metadata:
   ms.author: chcomley
   author: chcomley
   ms.date: 12/07/2018
-  monikerRange: '>= tfs-2015'
+  monikerRange: '<= azure-devops'
 title: Rename project FAQs
 summary: |
   [!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]

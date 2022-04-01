@@ -9,12 +9,12 @@ ms.author: chcomley
 author: chcomley
 ms.date: 04/23/2019
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Add, run, update inline tests
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 

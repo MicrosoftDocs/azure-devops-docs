@@ -9,12 +9,12 @@ ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 10/15/2021
 ---
 
 # Split columns on your Kanban board to show work in progress
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at each stage.  
 

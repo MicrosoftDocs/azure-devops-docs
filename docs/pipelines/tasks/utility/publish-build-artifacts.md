@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 09/21/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish Build Artifacts task

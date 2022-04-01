@@ -7,14 +7,14 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
 ---
 
 
 # Manage Delivery Plan permissions in Azure Boards
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>

@@ -7,7 +7,7 @@ ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/17/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Jenkins Queue Job task

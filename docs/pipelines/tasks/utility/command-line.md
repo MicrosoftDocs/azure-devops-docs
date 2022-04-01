@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
 ms.custom: seodec18
 ms.date: 02/13/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Command Line task

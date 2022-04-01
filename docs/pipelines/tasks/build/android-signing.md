@@ -7,7 +7,7 @@ ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 

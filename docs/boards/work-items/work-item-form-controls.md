@@ -8,13 +8,13 @@ ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE 
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 07/09/2020
 ---
 
 # Use work item form controls 
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;and to fields specific to the type. You can link work items to one another and to changesets and source code files. 
 

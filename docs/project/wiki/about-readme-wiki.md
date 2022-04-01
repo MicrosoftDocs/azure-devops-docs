@@ -10,13 +10,13 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: overview
 ms.date: 07/23/2020  
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # About Wikis, READMEs, and Markdown
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= tfs-2018"
 

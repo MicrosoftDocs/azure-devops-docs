@@ -7,7 +7,7 @@ ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Marketplace extensions for Azure DevOps

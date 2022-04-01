@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.author: jukullam
 ms.date: 09/23/2020
-monikerRange: '>= tfs-2015 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 
 # Parallel release jobs in Azure DevOps Server

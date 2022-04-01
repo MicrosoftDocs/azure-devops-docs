@@ -4,7 +4,7 @@ description: Understand the difference between project-scoped and organization-s
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 02/22/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 

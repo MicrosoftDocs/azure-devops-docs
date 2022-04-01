@@ -8,13 +8,13 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 03/04/2022
 ---
 
 # Syntax guidance for basic Markdown usage
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 

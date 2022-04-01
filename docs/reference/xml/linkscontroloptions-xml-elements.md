@@ -8,13 +8,13 @@ ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2017 < azure-devops'
+monikerRange: '< azure-devops'
 ms.date: 03/01/2022
 ---
 
 # LinksControlOptions XML elements (Web form) 
 
-[!INCLUDE [version-gt-eq-2017-lt-azure-devops](../../includes/version-gt-eq-2017-lt-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2018-lt-azure-devops](../../includes/version-gt-eq-2018-lt-azure-devops.md)] 
 
 By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.   
 

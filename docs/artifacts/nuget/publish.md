@@ -5,12 +5,12 @@ ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 07/15/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish a NuGet package using the command line
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can publish your NuGet packages to public or private feeds, and then share them with others depending on your feed's visibility settings. 
 

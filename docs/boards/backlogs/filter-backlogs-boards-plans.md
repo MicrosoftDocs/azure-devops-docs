@@ -7,13 +7,13 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 10/13/2021
 ---
 
 # Interactively filter backlogs, boards, queries, and plans in Azure Boards
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="filter"></a>
 

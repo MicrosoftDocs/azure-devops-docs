@@ -4,7 +4,7 @@ description: Describes how to extend work item tracking, including adding an act
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/22/2016
@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Extend the work item form
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 

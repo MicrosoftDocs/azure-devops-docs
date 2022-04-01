@@ -5,7 +5,7 @@ ms.topic: reference
 ms.author: nicktrog
 author: ntrogh
 ms.date: 02/16/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure Load Testing task

@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: conceptual 
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
 # Run automated tests from test plans
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Automate test cases in your test plans and run them directly from **Azure Test Plans** . Automated tests provide you with the following benefits:
 
