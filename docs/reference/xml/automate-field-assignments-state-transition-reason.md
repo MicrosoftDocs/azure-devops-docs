@@ -189,6 +189,6 @@ To integrate a tool with Work Item Tracking, the tool must perform the following
 ## Related articles
 
 - [Customize your work tracking experience](../customize-work.md)
-- [Control](control-xml-element-reference.md)    
+- [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)    
 - [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)  
 - [Change the workflow](change-workflow-wit.md)

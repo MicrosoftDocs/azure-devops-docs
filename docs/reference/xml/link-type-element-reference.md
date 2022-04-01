@@ -161,7 +161,7 @@ Using the web portal or Test Manager, you can view which test cases are defined 
 
 ## Customize the links control 
 
-In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](define-link-controls.md).  
+In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true).  
 
 ## Related articles  
 -  [Link type reference](../../boards/queries/link-type-reference.md)
