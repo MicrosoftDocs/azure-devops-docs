@@ -758,6 +758,8 @@ When the PR owner pushes changes that build successfully, the policy status upda
 
 If you have an **Immediately when \<branch name> is updated** or **After \<n> hours if \<branch name> has been updated** build policy, the policy status updates when the protected branch updates, if the previous build is no longer valid.
 
+::: moniker-end
+
 ::: moniker range="< azure-devops-2020"
 > [!NOTE]   
 > This feature is available for Azure DevOps Server 2020 and later versions. 
