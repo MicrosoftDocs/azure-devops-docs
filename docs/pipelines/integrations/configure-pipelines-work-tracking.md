@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 08/13/2021
+ms.date: 04/01/2022
 ---
 
 # Configure pipelines to support work tracking
@@ -368,7 +368,7 @@ If a build pipeline fails, you can automatically create a work item to track get
  
 
 > [!TIP]   
-> The option to **Create work item on failure** is only supported for Classic pipelines. To accomplish this with a YAML  pipeline, see the [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) marketplace extension. 
+> The option to **Create work item on failure** is only supported for Classic pipelines. To accomplish this with a YAML  pipeline, you can use a marketplace extension like [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) or you can [implement it yourself using Azure CLI or REST API calls](../customize-pipeline.md#create-work-item-on-failure). 
  
 
 <a id="classic-options-integrations" /> 
