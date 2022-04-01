@@ -202,7 +202,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
  
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Widgets and multiple dashboards are not supported features in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
+> Widgets and multiple dashboards are not supported features in TFS 2013, instead, you can [pin items to a team homepage](/previous-versions/azure/devops/report/dashboards/team-dashboard?view=tfs-2013&preserve-view=true).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
 ## Prerequisites
@@ -772,7 +772,7 @@ Add one or more of the following widgets to support adding:
       
       ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
       - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)  
-      - [View process guidance](../../project/configure-or-redirect-process-guidance.md)  
+      - [View process guidance](/previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true)  
       - [View reports](../sql-reports/reporting-services-reports.md)  
       
       To add or update reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).

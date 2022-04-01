@@ -7,20 +7,6 @@
           "**/*.yml"
         ],
         "exclude": [
-          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
-          "migrate/build-deployment-best-practices.md",
-          "pipelines/release/automate-terraform.md",
-          "pipelines/archive/apps/aspnet/**",
-          "pipelines/archive/apps/java/**",
-          "pipelines/archive/apps/nodejs/**",
-          "pipelines/archive/release/**",
-          "pipelines/apps/windows/universal.md",
-          "reference/api-ref/**",
-          "boards/backlogs/office/create-your-backlog-tasks-using-project.md",
-          "boards/backlogs/office/schedule-projects-using-microsoft-project.md",
-          "boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md",
-          "boards/backlogs/office/add-share-storyboard-shapes.md",
-          "boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
           "artifacts/nuget/bootstrap-nuget.md",
           "**/obj/**",
           "**/includes/**",
@@ -35,14 +21,6 @@
       },
       {
         "files": [
-          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
-          "migrate/build-deployment-best-practices.md",
-          "pipelines/release/automate-terraform.md",
-          "pipelines/archive/apps/aspnet/**",
-          "pipelines/archive/apps/java/**",
-          "pipelines/archive/apps/nodejs/**",
-          "pipelines/archive/release/**",
-          "pipelines/apps/windows/universal.md",
           "artifacts/nuget/bootstrap-nuget.md"
         ],
         "exclude": [
@@ -222,13 +200,253 @@
         "repos/tfvc/**": "true",
         "repos/get-started/**": "true",
         "repos/git/**": "true"
-      },
-      "ROBOTS": {
-        "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
-      },
+     },
       "exclude_monikers": {
         "reference/error/**/*.md": [
           "azure-devops"
+        ],
+        "boards/backlogs/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/boards/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/plans/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/queries/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/sprints/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/work-items/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/best-practices-agile-project-management.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/configure-customize.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/faqs.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "get-started/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "get-started/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "notifications/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "notifications/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "reference/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "reference/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/security/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/projects/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/work/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "organizations/settings/work/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/feedback/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/navigation/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/wiki/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/search/**/*.md": [
+          "tfs-2017"
+        ],
+        "project/configure-or-add-a-project-portal.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/configure-or-redirect-process-guidance.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "project/work-across-projects-faqs.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "report/dashboards/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/tfvc/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/get-started/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "user-guide/**/*.md": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "user-guide/**/*.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "boards/get-started/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "marketplace/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "marketplace/**/*.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "marketplace-extensibility/index.yml": [
+          "tfs-2017"
+        ],
+        "organizations/accounts/**/*.md": [
+          "tfs-2017"
+        ],
+        "organizations/index.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "pipelines/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "pipelines/index.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "report/index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "repos/git/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "test/**/*.md": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "test/**/*.yml": [
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "index.yml": [
+          "tfs-2013",
+          "tfs-2015",
+          "tfs-2017"
+        ],
+        "artifacts/**/*.md": [
+          "tfs-2017"
+        ],
+        "artifacts/**/*.yml": [
+          "tfs-2017"
+        ],
+        "extend/**/*.md": [
+          "tfs-2017"
+        ],
+        "integrate/**/*.md": [
+          "tfs-2017"
+        ],
+        "service-hooks/**/*.md": [
+          "tfs-2017"
         ]
       }
     },

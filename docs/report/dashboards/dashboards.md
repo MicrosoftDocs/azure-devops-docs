@@ -30,7 +30,7 @@ When a project is first created, a default team and default team dashboard is cr
 ::: moniker range="tfs-2015"
 
 > [!NOTE]   
-> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
+> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](/previous-versions/azure/devops/report/dashboards/team-dashboard?view=tfs-2013&preserve-view=true). For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"

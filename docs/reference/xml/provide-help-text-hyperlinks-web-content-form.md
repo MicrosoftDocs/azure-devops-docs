@@ -228,5 +228,5 @@ To make process guidance available on the work item form, you may want to add a 
 
 ## Related articles
 
--  [Design the work item form](design-work-item-form.md)   
+-  [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)   
 -  [Customizing Project Tracking Data, Forms, Workflow, and Other Objects](../customize-work.md)

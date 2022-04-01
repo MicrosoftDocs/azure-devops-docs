@@ -226,7 +226,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
    ```
    
    > [!TIP]
-   > The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](xml/control-xml-element-reference.md).   
+   > The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).   
 
 4. Import the WIT definition file according to the process model you use.
 
