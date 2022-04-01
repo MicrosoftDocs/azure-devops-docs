@@ -9,13 +9,13 @@ ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 10/15/2021
 ---
 
 # Specify the Definition of Done criteria for your Kanban columns
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. Help your team agree what "done" means by specifying the Definition of Done criteria for each Kanban column. Defining what "done" means helps you identify the essential tasks to complete before moving an item into a downstream stage. 
 Also, you'll have implemented one of the core Kanban tenets: **make processes and policies explicit.**

@@ -6,12 +6,12 @@ ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 11/02/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Find a file or folder in your Git repository
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Files** page.
 

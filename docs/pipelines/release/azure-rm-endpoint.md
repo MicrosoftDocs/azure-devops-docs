@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 03/22/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Troubleshoot ARM service connections
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article presents the common troubleshooting scenarios to help you resolve issues you may encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 

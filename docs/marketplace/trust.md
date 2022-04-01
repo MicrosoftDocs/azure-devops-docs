@@ -5,7 +5,7 @@ ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.technology: devops-marketplace
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 03/15/2021
 ms.topic: conceptual
 ---

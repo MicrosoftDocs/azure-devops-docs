@@ -7,13 +7,13 @@ ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '< azure-devops-2019'
+monikerRange: '= tfs-2018'
 ms.date: 09/08/2017
 ---
 
 # Define objects for tracking work items using the work Item tracking plug-in
 
-[!INCLUDE [version-lt-eq-2018](../../includes/version-lt-eq-2018.md)]
+[!INCLUDE [version-eq-2018](../../includes/version-eq-2018.md)]
 
 By using the plug-in for tracking work items, you define a project's initial objects for tracking work. These objects include types of work items, work item queries, categories, link types, and instances of work items. After you create a project, you can modify these objects by using the **witadmin** command-line tool.  
   
@@ -23,6 +23,7 @@ By using the plug-in for tracking work items, you define a project's initial obj
 > You must specify the tasks to upload files and define queries in a specific sequence: link types first, then work item types, and then queries. Each definition file for these objects depends on the definitions that are specified in the tasks that precede them. In general, you should maintain the task sequence that is defined in the process template that you are customizing. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
 <a name="plugin"></a> 
+
 ## Plug-in name and location  
 
 The names of the file, the folder, and the plug-in for the default process templates are as follows:  
@@ -44,7 +45,9 @@ The names of the file, the folder, and the plug-in for the default process templ
 -   [Add work items](add-work-item-instance-process-template.md)  
   
 <a name="syntax"></a> 
+
 ## Work item tracking plug-in syntax structure  
+
  The plug-in file for work item tracking must conform to the schema definition that is defined in the WorkItemMethodology.xsd file, and the plug-in must be specified in its own file.   
   
  The following syntax shows the high-level structure of the WorkItemTracking plug-in. Four tasks are specified, one each to upload the definitions for link types, types of work items, queries, and categories. If you were to add definitions work item instances, you would specify an additional task for each.  

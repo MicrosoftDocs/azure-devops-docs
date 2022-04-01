@@ -56,6 +56,7 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
+      "archive_url": "https://docs.microsoft.com/en-us/previous-versions/azure/devops/all/",
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
@@ -456,7 +457,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
+        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2017 || tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
       }
     }
   }

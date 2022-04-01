@@ -5,12 +5,12 @@ ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
 ms.date: 02/28/2022
 ms.custom: contperf-fy21q3
-monikerRange: '>=tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Logging commands
 
-[!INCLUDE [version-gt-eq-2013](../../includes/version-gt-eq-2013.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
 They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you're troubleshooting a pipeline. 

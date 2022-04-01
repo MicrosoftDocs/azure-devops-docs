@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 09/07/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set

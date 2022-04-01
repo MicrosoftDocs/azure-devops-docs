@@ -4,7 +4,7 @@ description: How to add Google Maven Repository upstream source
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 03/03/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 

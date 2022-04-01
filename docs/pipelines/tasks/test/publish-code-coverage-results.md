@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: shashban
 author: shashban
 ms.date: 04/20/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish Code Coverage Results task

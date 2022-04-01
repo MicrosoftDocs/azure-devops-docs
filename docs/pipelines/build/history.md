@@ -5,12 +5,12 @@ description: Learn about how you can determine what changed, when it happened, a
 ms.topic: reference
 ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
 ms.date: 3/15/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Build pipeline history
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

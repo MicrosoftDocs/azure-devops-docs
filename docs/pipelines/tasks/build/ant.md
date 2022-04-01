@@ -7,7 +7,7 @@ ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Ant task

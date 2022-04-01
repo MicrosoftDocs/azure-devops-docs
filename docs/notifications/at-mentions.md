@@ -9,7 +9,7 @@ toc: show
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 02/17/2021 
 --- 
 

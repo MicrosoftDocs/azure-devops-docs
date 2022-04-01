@@ -8,13 +8,13 @@ ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 03/01/2022
 ---
 
 # Define features and epics, organize your product and portfolio backlogs in Azure Boards 
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 

@@ -5,7 +5,7 @@ ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
 ms.date: 03/03/2022
-monikerRange: '> tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 

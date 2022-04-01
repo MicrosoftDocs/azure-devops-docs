@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
 ms.date: 02/18/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Release gates and approvals overview

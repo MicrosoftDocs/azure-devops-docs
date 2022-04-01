@@ -6,12 +6,12 @@ ms.reviewer: dastahel
 ms.custom: freshness-fy22q2
 ms.topic: quickstart
 ms.date: 12/22/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build Java apps
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]

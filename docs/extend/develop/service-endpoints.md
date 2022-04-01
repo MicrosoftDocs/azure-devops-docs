@@ -4,7 +4,7 @@ title: Create service endpoints | Extensions for Azure DevOps
 description: Browse through the places where your extension can extend GitHub Codespaces for Azure DevOps.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/27/2021
@@ -12,7 +12,7 @@ ms.date: 09/27/2021
 
 # Create a service endpoint
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]

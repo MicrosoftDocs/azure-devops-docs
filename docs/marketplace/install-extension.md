@@ -7,7 +7,7 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Install extensions

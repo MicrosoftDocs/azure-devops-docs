@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Voluntarily provide stakeholder feedback using the Test &amp; Feedback extension
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 

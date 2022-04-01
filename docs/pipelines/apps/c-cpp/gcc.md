@@ -5,7 +5,7 @@ description: Learn how you can use continuous integration in Azure Pipelines or 
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.date: 03/17/2021
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build your GCC C/C++ app

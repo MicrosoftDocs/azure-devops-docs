@@ -8,11 +8,11 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 01/06/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 # Determine recipients of notification emails
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Many factors determine the recipients of an email notification when an event matches a subscription. If you're unaware, these factors can result in your inbox receiving too many or too few emails. Learn about how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 

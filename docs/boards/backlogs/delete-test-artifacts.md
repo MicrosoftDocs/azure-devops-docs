@@ -8,13 +8,13 @@ ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 10/08/2021
 ---
 
 # Delete test artifacts in Azure Boards
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="delete-test"> </a> 
 

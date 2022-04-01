@@ -5,13 +5,13 @@ description: Learn how to configure a Git repository and its branches.
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
 ms.topic: how-to
-monikerRange: '>= tfs-2017' 
+monikerRange: '<= azure-devops' 
 ms.date: 03/31/2022
 ---
 
 # Set Git repository settings and policies
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 

@@ -4,7 +4,7 @@ description: How to add Gradle Plugins upstream source
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 03/11/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 

@@ -7,14 +7,14 @@ ms.topic: how-to
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 10/15/2021
 ---
 
 
 # Enable live updates in Azure Boards
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="live-updates"></a>
 
