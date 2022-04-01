@@ -31,7 +31,7 @@ You can add the charts described in this article to a dashboard from their corre
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md). Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the [widget catalog](widget-catalog.md) and [multiple team dashboards](dashboards.md).  
+> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](/previous-versions/azure/devops/report/dashboards/team-dashboard?view=tfs-2013&preserve-view=true). Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the [widget catalog](widget-catalog.md) and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
 <a id="prerequisites">  </a>
@@ -60,7 +60,7 @@ You can add the charts described in this article to a dashboard from their corre
 ::: moniker range="tfs-2015"
 
 > [!NOTE]   
-> Adding charts to a dashboard requires TFS 2015.1 or later version. For TFS 2015, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).
+> Adding charts to a dashboard requires TFS 2015.1 or later version. For TFS 2015, you can [pin items to a team homepage](/previous-versions/azure/devops/report/dashboards/team-dashboard?view=tfs-2013&preserve-view=true).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).
 
 ::: moniker-end
 
