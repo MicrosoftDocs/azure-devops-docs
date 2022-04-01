@@ -69,7 +69,7 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 
 <a id="cli" />
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="azure-devops"  
 
 ## Run a query from the command line 
 
@@ -121,8 +121,6 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 2           Fabrikam Fiber  Bug               Secure Sign-in 
 ``` 
 ::: moniker-end
- 
-
 
 
 <a id="tips-queries-hub"> </a> 

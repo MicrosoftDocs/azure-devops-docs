@@ -23,11 +23,19 @@ While you can easily create work item queries, to create high-performing queries
 > Reference to service or resource rate limits only applies to queries run against Azure DevOps Services. To learn more, see [Service limits and rate limits](../../user-guide/service-limits.md). 
 
 This article provides general guidelines on how to write a high-performing query. These guidelines apply to the following queries you create:
+
+::: moniker range="azure-devops"
 - [Web portal queries](view-run-query.md)
 - [Work Item Query Language (WIQL) queries](wiql-syntax.md) 
-- [az boards query command line](view-run-query.md#run-a-query-from-the-command-line).
+- [az boards query command line](view-run-query.md#run-a-query-from-the-command-line)
 - [REST API queries](/rest/api/azure/devops/wit/queries)
+::: moniker-end
 
+::: moniker range="< azure-devops"
+- [Web portal queries](view-run-query.md)
+- [Work Item Query Language (WIQL) queries](wiql-syntax.md) 
+- [REST API queries](/rest/api/azure/devops/wit/queries)
+::: moniker-end
 
 ## Create focused, selective queries  
 

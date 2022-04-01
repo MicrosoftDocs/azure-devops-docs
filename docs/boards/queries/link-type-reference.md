@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021
+ms.date: 03/31/2022
 ---
 
 
@@ -747,7 +747,7 @@ You can create custom link types; export and import definitions of link types; a
 
 To get a list of link types, you can use one of the supported command-line tools. 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 ### az boards work-item relation list-type  
 
@@ -833,8 +833,6 @@ The default json format provides additional information about the attributes def
 
 ::: moniker-end
 
-::: moniker range="< azure-devops" 
-
 ### `witadmin listlinktypes` 
 
 You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command-line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
@@ -880,8 +878,6 @@ Topology: Network
 Is Active: True
 
 ```
-
-::: moniker-end
 
 ### Link type attributes
 

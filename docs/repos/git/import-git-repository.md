@@ -37,7 +37,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 - An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 - To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 - To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
@@ -45,7 +45,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 - If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="< azure-devops"
 - An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 - To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 - To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
@@ -98,7 +98,7 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 > The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Manually import a repo using az repos CLI
 
@@ -195,8 +195,6 @@ az repos import create --git-source-url https://github.com/fabrikamprime/fabrika
   "url": "https://dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_apis/git/repositories/0f6919cd-a4db-4f34-a73f-2354114a66c4/importRequests/8"
 }
 ```
-
-
 
 ::: moniker-end
 
