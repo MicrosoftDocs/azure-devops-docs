@@ -5,7 +5,7 @@ description: Learn how to create a new Git repo using Visual Studio or Git comma
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 02/02/2022
+ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -245,8 +245,11 @@ Make sure that **Push matches fetch** is checked and select **Save**.
 
 #### [Git Command Line](#tab/command-line/)
 
+::: moniker range="azure-devops"
 > [!NOTE]
 > You can also create an **Azure Repos** Git repo from the command line by using the [Azure CLI](/cli/azure/repos?view=azure-cli-lates&preserve-view=truet#az-repos-create).
+
+::: moniker-end
 
 1. Open a browser and navigate to your **Azure DevOps** project using a URL in the form of `https://dev.azure.com/<OrganizationName>/<ProjectName>`. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 

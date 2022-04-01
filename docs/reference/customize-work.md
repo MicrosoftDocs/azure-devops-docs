@@ -259,7 +259,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
       Use [**az boards** command-line tools](../cli/quick-reference.md#azure-boards) to edit projects and teams and list information
@@ -366,10 +366,10 @@ The following table summarizes the differences between the three supported proce
 	- Work item queries  
 	- Security groups and permissions   
 	- Permissions and access to functional areas such as version control and build 
-	::: moniker range=">= tfs-2017 < azure-devops-2020"
+	::: moniker range=">= tfs-2017 < azure-devops"
 	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update). 
 	::: moniker-end
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="azure-devops"
 	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
 	::: moniker-end
 4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.

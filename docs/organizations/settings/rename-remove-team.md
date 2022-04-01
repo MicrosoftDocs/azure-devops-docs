@@ -118,7 +118,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="update-team" /> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -138,11 +138,6 @@ az devops team update --team
 - **org**: Optional. URL of organization. You can configure the default organization using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
-::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -309,7 +304,7 @@ You can delete any team except the default team. At least one team must be defin
 
 <a id="delete-team" /> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can delete a team using [az devops team delete](/cli/azure/devops/team#ext-azure-devops-az-devops-team-delete).  
 
@@ -338,7 +333,6 @@ Are you sure you want to delete this team? (y/n): y
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
-
 
 * * *
 

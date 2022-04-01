@@ -99,7 +99,7 @@ To uninstall or disable an extension, perform the following steps.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 [Uninstall extension](#uninstall-extension) | [Disable extension](#disable-extension) 
 
@@ -167,7 +167,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 * * *
  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Enable or list extensions through the command line
 

@@ -7,13 +7,13 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 09/24/2020
 ---
 
 # Add and manage information banners
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 A quick and effective way to communicate with your organization is through information banners. You can specify one of three types of banners: error, information, and warning. Only one banner, the last one added or updated, is displayed at a time. Banners remain in effect until their expiration date. 
 
