@@ -403,21 +403,21 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Custom pick lists </b></p>
-<p><a href="/azure/devops/reference/xml/define-pick-lists?viewFallbackFrom=vsts" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md)">Define or modify pick list values</a> by editing the work item type definition.</p>
+<p><a href="/azure/devops/reference/xml/define-pick-lists" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md)">Define or modify pick list values</a> by editing the work item type definition.</p>
 </td>
 <td width="33%">
 
 
 
 <p><b>Modify the workflow </b></p>
-<p><a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
+<p><a href="/azure/devops/reference/xml/change-workflow-wit" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
 
 
 <p><b>Change the work item form </b></p>
-<p><a href="/azure/devops/reference/xml/design-work-item-form?viewFallbackFrom=vsts" data-raw-source="[Change the layout of your work item form](../reference/xml/design-work-item-form.md)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
+<p><a href="/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true" data-raw-source="[Change the layout of your work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
 
 <p><b>Add a custom work item type </b></p>
-<p><a href="/azure/devops/reference/customize-work?viewFallbackFrom=vsts" data-raw-source="[Add a custom work item type](../reference/customize-work.md)">Add a custom work item type</a> to track different data requirements.</p>
+<p><a href="/azure/devops/reference/customize-work" data-raw-source="[Add a custom work item type](../reference/customize-work.md)">Add a custom work item type</a> to track different data requirements.</p>
 
 
 </td>

@@ -53,7 +53,7 @@ The `LabelText` element is a child element of the `Control` element.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[Control](control-xml-element-reference.md)|Required. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
+|[Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)|Required. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
   
 ## Remarks  
 You can combine plain and hyperlinked text by adding multiple `Text`elements in a `LabelText` element.  

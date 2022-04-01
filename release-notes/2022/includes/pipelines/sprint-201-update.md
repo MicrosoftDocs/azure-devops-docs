@@ -13,7 +13,7 @@ We've added two new extensibility points that you can target in your extensions.
 * Custom button in the pipeline header: `ms.vss-build-web.pipelines-header-menu`
 * Custom menu on a pipeline folder: `ms.vss-build-web.pipelines-folder-menu`
 
-To use these new extensibility points, simply add a new contribution that targets them in your [Azure DevOps extension's `vss-extension.json` manifest file](https://docs.microsoft.com/azure/devops/extend/get-started/node?view=azure-devops#create-a-directory-and-manifest).
+To use these new extensibility points, simply add a new contribution that targets them in your [Azure DevOps extension's `vss-extension.json` manifest file](/azure/devops/extend/get-started/node?view=azure-devops&preserve-view=true#create-a-directory-and-manifest).
 
 For example:
 
@@ -66,8 +66,8 @@ The result will be:
     > ![Custom menu on a pipeline folder](../../media/201-pipelines-02.png)
 ### Improved migration to Azure DevOps Services
 
-When running an import from Azure DevOps Server to Azure DevOps Services, you have to consider that Azure DevOps no longer supports per-pipeline retention rules. With this update, we removed these policies when you migrate to Azure DevOps Services from your on-premises Azure DevOps Server. To learn more about configuring retention policies, see our [documentation on setting retention policies for builds, releases, and tests](https://docs.microsoft.com/azure/devops/pipelines/policies/retention?view=azure-devops&tabs=yaml).
+When running an import from Azure DevOps Server to Azure DevOps Services, you have to consider that Azure DevOps no longer supports per-pipeline retention rules. With this update, we removed these policies when you migrate to Azure DevOps Services from your on-premises Azure DevOps Server. To learn more about configuring retention policies, see our [documentation on setting retention policies for builds, releases, and tests](/azure/devops/pipelines/policies/retention?view=azure-devops&preserve-view=true&tabs=yaml).
 
 ### Improvement to Pipelines Runs REST API
 
-Previously, the [Pipelines Runs REST API](https://docs.microsoft.com/rest/api/azure/devops/pipelines/runs/get) returned only the `self` repository. With this update, the Pipelines Runs REST API returns all repository resources of a build.
+Previously, the [Pipelines Runs REST API](/rest/api/azure/devops/pipelines/runs/get) returned only the `self` repository. With this update, the Pipelines Runs REST API returns all repository resources of a build.

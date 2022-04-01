@@ -58,7 +58,7 @@ You'll make your changes to your process definition files, and then import that 
 
 You'll first export your work tracking definition files, update them, and then import them to your project.  
 -  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/change-organization-collection-level-permissions.md). 
--  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
+-  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true)
 -  [Export the following objects from your project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md))
 	- ProcessConfiguration  

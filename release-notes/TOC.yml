@@ -164,7 +164,7 @@
       href: /previous-versions/azure/devops/index
   expanded: true
 - name: Azure DevOps Server
-  href: /azure/devops/server/release-notes/azuredevops2020?view=azure-devops
+  href: /azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true
 - name: Documentation updates
   items:
   - name: What's new

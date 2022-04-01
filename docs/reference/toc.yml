@@ -1,7 +1,6 @@
-- name: Azure Boards Configuration & Customization 
+- name: Azure Boards Configuration & Customization
   href: index.yml
 - name: Get started
-  expanded: true
   items:
   - name: Customize work tracking
     href: customize-work.md
@@ -21,6 +20,7 @@
     href: ../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set process permissions
     href: ../organizations/security/set-permissions-access-work-tracking.md#process-permissions
+  expanded: true
 - name: Configure teams
   items:
   - name: Configure team tools
@@ -41,20 +41,20 @@
   href: process-templates/toc.yml
 - name: witadmin Reference
   href: witadmin/toc.yml
-- name: Troubleshooting 
+- name: Troubleshooting
   items:
-  - name: Azure Boards FAQs 
-    href: ../boards/faqs.yml?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+  - name: Azure Boards FAQs
+    href: ../boards/faqs.yml?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Azure Boards customization FAQs
     href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set up your backlogs & boards
     href: ../boards/backlogs/set-up-your-backlog.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Fix "Ordering backlog items is disabled"
     href: ../boards/backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    displayname: reorder, disable, nest, natural hierarchy, in progress  
+    displayname: reorder, disable, nest, natural hierarchy, in progress
   - name: Work item form caching
-    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json  
-  - name: Support bug update status using My Work 
+    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Support bug update status using My Work
     href: xml/support-bug-update-status-using-my-work.md
   - name: Resolve errors received when configuring features
     href: xml/resolve-errors-received-when-configuring-features.md
@@ -91,7 +91,7 @@
   items:
   - name: Microsoft Project Field Mapping
     href: mapping/toc.yml
-  - name: Configure Features Wizard  
+  - name: Configure Features Wizard
     items:
     - name: Configure features after an upgrade
       href: /previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade
@@ -102,7 +102,7 @@
     - name: Additional configuration options
       href: /previous-versions/azure/devops/reference/upgrade/additional-configuration-options
     - name: Update a customized process template to access new features
-      href: /previous-versions/azure/devops/reference/upgrade/update-customized-process-template 
+      href: /previous-versions/azure/devops/reference/upgrade/update-customized-process-template
     - name: When upgrading from TFS 2008 or TFS 2010
       href: /previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010
   - name: API SDK reference
