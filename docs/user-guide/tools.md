@@ -148,16 +148,18 @@ Find more extensions in Azure DevOps **Organization settings** > **Extensions** 
 
 You can do many code development and administrative tasks by using the following command-line tools:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 - [az devops commands](../cli/quick-reference.md)
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
 - [TCM commands](../test/copy-clone-test-items.md)
+- [Manage permissions with command line tool (az devops security)](../organizations/security/manage-tokens-namespaces.md) 
+- [witadmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="< azure-devops"
 
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)

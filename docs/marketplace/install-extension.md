@@ -54,7 +54,7 @@ Your extension is now installed! You can now go to your organization to use your
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can install an extension with the [az devops extension install](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 

@@ -19,14 +19,14 @@ Area paths allow you to group work items by team, product, or feature area. Iter
 
 You define area and iteration paths for a project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](about-teams-and-settings.md).
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 > [!NOTE] 
 > Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) or the Azure DevOps CLI command [az boards iteration](/cli/azure/boards/iteration).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops-2020" 
+::: moniker range=">= tfs-2018 < azure-devops" 
 
 > [!NOTE] 
 > Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).

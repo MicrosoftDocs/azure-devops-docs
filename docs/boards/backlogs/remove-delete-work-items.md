@@ -28,6 +28,15 @@ Work items can live forever in your work tracking data store. You never have to 
 ::: moniker range="tfs-2013"
 - **Change state**: Remove work items from appearing on backlogs and boards by changing the work item **State** to *Remove* or *Cut*.  
 - **Destroy**: Permanently delete work items, deleting all data from the work tracking data store. 
+
+> [!NOTE]  
+> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi** command. 
+
+::: moniker-end
+
+::: moniker range="tfs-2015" 
+> [!NOTE]  
+> The **Delete** and **Recycle Bin** features are available from TFS 2015.2 and later versions.
 ::: moniker-end
 
 The ability to archive work items or projects isn't a supported feature at this time. 
@@ -56,11 +65,11 @@ To move a work item from one project to another, or to change the work item type
 	- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 - To [Restore or destroy work items](#restore) or [Delete or destroy work items (az boards CLI)](#az-boards-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - To [Restore or destroy work items](#restore), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker-end
 
@@ -271,7 +280,7 @@ You restore deleted work items from the web portal **Recycle Bin**.
 
 <a id="az-boards-cli" />
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
  
 ## Delete or destroy work items from the command line
 
@@ -424,71 +433,4 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 
 ::: moniker-end
  
-
-<!--- 
-rest api 
-ARCHIVE WORK ITEMS
- I am looking for a way to archive the work items to an on-premise file share as a Disaster Recovery solution. It would be good to have a tool or a feature in Azure DevOps that could do that for us.
-
-
-::: moniker range="tfs-2013"  
-
-> [!NOTE]  
-> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi** command. 
-
-::: moniker-end
-
-
-In this article you'll learn:  
-
-
-::: moniker range=">= azure-devops-2020"
-
-> [!div class="checklist"]
-> * Which permissions you need to delete, destroy, or restore work items   
-> * How to remove work items from the backlog by changing the State  
-> * How to delete work items  
-> * How to restore or destroy work items (from the Recycle Bin, web portal)  
-> * How to permanently delete work items (**az boards** command-line tool)  
-
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-> [!div class="checklist"]
-> * Which permissions you need to delete, destroy, or restore work items   
-> * How to remove work items from the backlog by changing the State  
-> * How to delete work items  
-> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
-
-::: moniker-end
-
-
-::: moniker range=">= tfs-2015 < azure-devops-2019"
-
-> [!div class="checklist"]
-> * Which permissions you need to delete, destroy, or restore work items   
-> * How to remove work items from the backlog by changing the State  
-> * How to delete work items  
-> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
-> * How to permanently delete work items (**witadmin destroy** command-line tool)  
  
-::: moniker-end
-
-::: moniker range="tfs-2015"
- 
-> [!NOTE]  
-> The **Delete** and **Recycle Bin** features are available from TFS 2015.2 and later versions.
-::: moniker-end
-
-
-::: moniker range="tfs-2013"
-
->[!div class="checklist"]         
-> * Which permissions you need to remove or destroy work items   
-> * How to remove work items from the backlog by changing the State to Removed     
-> * How to permanently delete work items (**witadmin destroy** command-line tool)   
-
-::: moniker-end
--->
