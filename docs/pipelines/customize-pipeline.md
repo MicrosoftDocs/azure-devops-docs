@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 07/21/2021
+ms.date: 04/01/2022
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -296,6 +296,9 @@ The previous example uses [Runtime parameters](process/runtime-parameters.md) to
 The second job in the pipeline has a dependency on the first pipeline and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
 
 This example uses two jobs, but this same approach could be used across [multiple stages](process/stages.md).
+
+> [!NOTE]
+> You can also use marketplace extension like [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) which has support for YAML multi-stage pipelines.
 
 ## Next steps
 
