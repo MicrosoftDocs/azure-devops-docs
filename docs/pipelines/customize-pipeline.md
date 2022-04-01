@@ -298,7 +298,7 @@ The second job in the pipeline has a dependency on the first pipeline and only r
 This example uses two jobs, but this same approach could be used across [multiple stages](process/stages.md).
 
 > [!NOTE]
-> You can also use marketplace extension like [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) which has support for YAML multi-stage pipelines.
+> You can also use a marketplace extension like [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) which has support for YAML multi-stage pipelines.
 
 ## Next steps
 
