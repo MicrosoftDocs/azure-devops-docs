@@ -508,10 +508,6 @@ az boards area team add --path  --team
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 - **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
 
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
-
 #### Example
 
 For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
@@ -525,7 +521,6 @@ Fabrikam Fiber\Service Delivery\Voice  False                False
 Fabrikam Fiber\Voice                   True                 True
 ```
 ::: moniker-end
-
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 

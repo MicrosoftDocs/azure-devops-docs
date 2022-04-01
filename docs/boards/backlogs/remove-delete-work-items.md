@@ -69,7 +69,7 @@ To move a work item from one project to another, or to change the work item type
 - To [Restore or destroy work items](#restore) or [Delete or destroy work items (az boards CLI)](#az-boards-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 ||| azure-devops-2020"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - To [Restore or destroy work items](#restore), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker-end
 

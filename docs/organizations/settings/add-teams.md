@@ -546,7 +546,7 @@ az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Emai
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 

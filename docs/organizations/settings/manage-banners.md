@@ -31,8 +31,6 @@ You can only manage banners using the Azure DevOps Command Line Interface (CLI),
 - Sign into Azure DevOps using `az login`.  
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
 
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
 ## admin banner commands
 
 > [!div class="mx-tdBreakAll"]  
