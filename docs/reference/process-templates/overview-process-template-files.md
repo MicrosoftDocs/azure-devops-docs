@@ -136,7 +136,7 @@ The following table describes each plug-in file and whether or not it is support
 :::row:::
    :::column span="1":::
    Lab Management  
-   [Lab.xml](define-initial-configuration-lab-management.md)
+   [Lab.xml](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-lab-management?view=tfs-2017&preserve-view=true)
    :::column-end:::
    :::column span="1":::
    ✔️
@@ -197,7 +197,7 @@ The following table describes each plug-in file and whether or not it is support
 :::row:::
    :::column span="1":::
    Version Control  
-  [VersionControl.xml](define-initial-configuration-version-control.md)
+  [VersionControl.xml](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true)
    :::column-end:::
    :::column span="1":::
    ✔️

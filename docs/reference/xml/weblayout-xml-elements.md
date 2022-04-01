@@ -19,7 +19,7 @@ ms.date: 09/17/2021
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
 > [!IMPORTANT]  
-> This article applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
+> This article applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](/previous-versions/azure/devops/reference/xml/layout-xml-element-reference?view=tfs-2015&preserve-view=true). 
 >
 > For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -28,16 +28,16 @@ The **WebLayout** element is a required child element of the **FORM** element. T
 <a id="customize"></a>
 To modify the web layout, use the information provided in this topic to modify the XML definition file for a specific work item type. To import and export your changes, see [Customize the work tracking web form](../customize-wit-form.md).     
 
-To customize the windows client layout, see [Layout XML element](layout-xml-element-reference.md).  
+To customize the windows client layout, see [Layout XML element](/previous-versions/azure/devops/reference/xml/layout-xml-element-reference?view=tfs-2015&preserve-view=true).  
 
 ## Enablement of the new form and WebLayout section
 
 When the new form roll out is enabled, the XML definitions for all work item types (WITs) in the collection are updated to include a **WebLayout** section within the **FORM** section.  
 
-The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](../manage-new-form-rollout.md).  
+The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true).  
 - For the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic for all user accounts.  
-- For the [Hosted XML process model](../../organizations/settings/work/import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
-- For TFS 2017, the new form is automatically available when you add projects to a new collection. For existing projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For the [Hosted XML process model](../../organizations/settings/work/import-process/import-process.md), an admin must [enable the new form](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true). <br/>
+- For TFS 2017, the new form is automatically available when you add projects to a new collection. For existing projects, an admin must [enable the new form](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true). <br/>
 - For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads/) to access the new form.
 
 
@@ -211,7 +211,7 @@ You can specify how information and work item fields are grouped and appear in a
 |`ShowEmptyReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `true` to display read-only and empty fields (default), and `false` to hide these fields.|  
 
 > [!TIP]  
-> The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).    
+> The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).    
 
 
 :::row:::
@@ -672,7 +672,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 ## Related articles
 
 If you're just getting started with the new form, see these additional topics to manage the roll out or customize it: 
-- [Manage new form rollout](../manage-new-form-rollout.md)
+- [Manage new form rollout](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true)
 - [New work item experience](../process/new-work-item-experience.md)
 - [Customize the new form](../customize-wit-form.md) (Hosted XML and On-premises XML process models)
 - [LinksControlOptions elements](linkscontroloptions-xml-elements.md) 

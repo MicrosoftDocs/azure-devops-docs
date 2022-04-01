@@ -73,7 +73,7 @@ You can install the agent on Linux, macOS, or Windows machines. For more informa
 * [Red Hat agent](v2-linux.md)
 * [Ubuntu 14.04 agent](v2-linux.md)
 * [Ubuntu 16.04 agent](v2-linux.md)
-* [Windows agent v1](v1-windows.md)
+* [Windows agent v1](/previous-versions/azure/devops/pipelines/v1-windows?&view=azure-devops&preserve-view=true)
 
 ::: moniker-end
 
