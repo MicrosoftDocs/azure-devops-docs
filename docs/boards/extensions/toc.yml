@@ -5,14 +5,14 @@
   href: migrate-integrate.md
   displayname: export, import, integrate, GitHub, third-party, service hooks, Project, project management, portfolio management, ConnectAll, TaskTop, process model
 - name: Delivery Plans
-  href: delivery-plans.md 
-  displayname: filter, roadmap, calendar, multi-team views, cards   
+  href: delivery-plans.md
+  displayname: filter, roadmap, calendar, multi-team views, cards
 - name: Feature Timeline
-  href: feature-timeline.md      
+  href: feature-timeline.md
 - name: Epic Roadmap
-  href: epic-roadmap.md      
+  href: epic-roadmap.md
 - name: Dependency Tracker
-  href: dependency-tracker.md  
+  href: dependency-tracker.md
 - name: Azure Boards with Slack
   href: ../integrations/boards-slack.md
 - name: Azure Boards with Teams
