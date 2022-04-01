@@ -518,7 +518,7 @@ To customize the resolution types, bug work item type, and failure types used wh
 
 ## Related articles
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 - [Customize your work tracking experience](../customize-work.md)   
 - [**az boards** command-line tools](../../cli/quick-reference.md#azure-boards) 
@@ -529,9 +529,17 @@ To customize the resolution types, bug work item type, and failure types used wh
  
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+- [Customize your work tracking experience](../customize-work.md)    
+- [On-premises XML process model](../on-premises-xml-process-model.md)  
+- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md) 
+- [What is Azure Test Plans?](../../test/overview.md)
+ 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 - [Customize your work tracking experience](../customize-work.md)   
 - [On-premises XML process model](../on-premises-xml-process-model.md)  
 - [What is Azure Test Plans?](../../test/overview.md)
-
 ::: moniker-end

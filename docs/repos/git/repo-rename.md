@@ -92,16 +92,13 @@ You can rename a Git repository in a project from your web browser. After you re
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2020" 
+::: moniker range="azure-devops" 
 [!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
-
 
 ***
 

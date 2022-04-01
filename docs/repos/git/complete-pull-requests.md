@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 11/02/2021
+ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -53,8 +53,8 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 
 - To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
-::: moniker range=">= azure-devops-2020"
-- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+::: moniker range="azure-devops"
+- In Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 ::: moniker-end
 
 ## Check merge changes
@@ -91,7 +91,7 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 To see all branch policies that are in effect for a PR, use [az repos pr policy list](/cli/azure/repos/pr/policy) with the required `id` parameter.
 
@@ -133,11 +133,8 @@ a6e4380e-9f38-4aa5-863c-0fc496027362  Work item linking                         
 
 ```
 ::: moniker-end
- 
-::: moniker range="<= azure-devops-2019"
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 
 ***
@@ -265,7 +262,7 @@ To complete a PR, open the PR in the browser, and on the **Overview** page, sele
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 To complete a PR and merge the changes, use [az repos pr update](/cli/azure/repos/pr#az-repos-pr-update) to update the PR `--status` to `completed`.
 
@@ -339,12 +336,8 @@ az repos pr update --id 21 --status completed --delete-source-branch true --tran
 ```
 
 ::: moniker-end
- 
-::: moniker range="<= azure-devops-2019"
+
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
-
-::: moniker-end
-
 
 ***
 
@@ -383,6 +376,7 @@ File changes in your branch can conflict with changes in another branch. When it
 ## Set a pull request to autocomplete
 
 # [Browser](#tab/browser)
+
 ::: moniker range=">= tfs-2017"
 Select **Set auto-complete** from the **Complete** dropdown list to complete and merge the PR changes as soon as conditions satisfy all [branch policies](branch-policies.md). When the PR is completed, you receive an email notification. If a conflict or error prevents PR completion, email notifies you of the issue.
 
@@ -417,7 +411,7 @@ In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click th
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 Set autocomplete to complete a PR automatically when it passes all required approvals and branch policies. You can set autocomplete at PR creation, or update an existing PR.
 
@@ -425,15 +419,11 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 - To update an existing PR to autocomplete, use `az repos pr update --id <PR Id> --auto-complete true`.
 
 ::: moniker-end
- 
-::: moniker range="<= azure-devops-2019"
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 
 ***
-
 
 
 <a name="abandon-the-pr"></a>
@@ -455,23 +445,19 @@ In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click th
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 To abandon a PR without merging the changes, use `az repos pr update --id <PR Id> –-status abandoned`. You can reactivate the PR by setting the status to `active`.
 
 ::: moniker-end
- 
-::: moniker range="<= azure-devops-2019"
+
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
-
-::: moniker-end
-
 
 ***
 
+<a name="revert-a-completed-pr"></a>
 
 ::: moniker range=">= tfs-2017"
-<a name="revert-a-completed-pr"></a>
 
 ## Revert a completed pull request
 

@@ -48,7 +48,7 @@ To upload, install, or assign extensions you need [Project Collection Administra
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 Add an extension to your organization by first searching for and then installing the extension from the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 

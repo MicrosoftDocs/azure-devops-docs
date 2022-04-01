@@ -181,7 +181,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 From the Azure DevOps CLI command, you can list teams, add teams, and run other team management commands. 
 
@@ -208,12 +208,6 @@ az devops team list [--project]
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 - **skip**: Optional. Number of teams to skip.  
 - **top**: Optional. Maximum number of teams to return. 
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
-::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -416,7 +410,7 @@ Now that your two feature teams are configured, you need to move existing work i
 
 <a id="move-work-items" /> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can move work items to a new area paths using [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
 
@@ -625,7 +619,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -644,10 +638,6 @@ az boards area team add --path  --team
 - **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true. 
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 - **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
-
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
 
 #### Example
 

@@ -684,7 +684,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
-- [View and add work items, az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) 
+- [View and add work items](../../work-items/view-add-work-items.md) 
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  

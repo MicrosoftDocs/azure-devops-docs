@@ -6,7 +6,7 @@ ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
 ms.topic: how-to
 monikerRange: '>= tfs-2017' 
-ms.date: 02/23/2022
+ms.date: 03/31/2022
 ---
 
 # Set Git repository settings and policies
@@ -33,10 +33,11 @@ There are several ways to customize your Azure Repos Git repositories by using b
 
 ## Summary of all repository and branch settings and policies
 
-You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. With Azure CLI, you use [az repos policy](/cli/azure/repos/policy).
+You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. 
 
-::: moniker range="< azure-devops-2020"
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker range="azure-devops"
+> [!NOTE]   
+> You can set several branch settings and policies with the Azure CLI using [az repos policy](/cli/azure/repos/policy).
 ::: moniker-end
 
 The following tables summarize the settings and policies you can enable and configure for Git repositories and branches.
@@ -82,7 +83,7 @@ The following table summarizes the settings you can enable and configure for all
 :::row-end:::
 ::: moniker-end
 
-### Repository Settings
+### Repository settings
 
 The following table summarizes the settings you can enable or configure for each individual Git repository. 
 
@@ -499,7 +500,7 @@ To configure repository settings and policies through the web portal, open **Pro
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 You can use Azure DevOps CLI to list respositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
 
@@ -620,6 +621,7 @@ az repos show --repository contosoREPO
 <a name="repos-update" />
 
 ### Update a repository  
+
 [!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
 
 <a name="repos-policy-list"></a>
@@ -775,9 +777,8 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 
 ***
@@ -1054,7 +1055,7 @@ To set case enforcement policy:
  
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2019" 
+::: moniker range="azure-devops" 
  
 You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az-repos-policy-case-enforcement-update) to configure or update case enforcement policy.
 
@@ -1135,9 +1136,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 ***
 
@@ -1176,6 +1175,7 @@ To set the maximum path length policy:
 
 
 <a id="maximum-file-size"></a>
+
 ## Maximum file size policy
 
 Large files checked into Git remain in the repository indefinitely, increasing clone times and disk usage. For guidance on managing large files, see [Manage and store large files in Git](manage-large-files.md).
@@ -1202,7 +1202,7 @@ To configure **Maximum file size** policy:
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 Use [az repos policy file-size create](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-update) to manage maximum file size policy.
 
 ### Create file size policy
@@ -1292,9 +1292,7 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 ***
 
