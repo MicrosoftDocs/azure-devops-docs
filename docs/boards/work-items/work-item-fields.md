@@ -9,8 +9,9 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.topic: how-to
-ms.date: 11/07/2021 
+ms.date: 04/01/2022
 ---
+
 
 # Work item fields and attributes in Azure Boards
 
@@ -145,7 +146,7 @@ If the On-premises XML process model is used, you can look up the data type thro
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 You can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes.  For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
@@ -713,7 +714,7 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range="< azure-devops"  
 
 You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get/?view=vsts-rest-tfs-4.1&preserve-view=true). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1&preserve-view=true)
 
@@ -805,7 +806,7 @@ The **Use** parameter indicates the name of each project and the work item type 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 ## Project integration and project field mapping  
 
@@ -862,7 +863,7 @@ You can change the field name, the index, and the report attributes for any fiel
 ::: moniker-end  
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 

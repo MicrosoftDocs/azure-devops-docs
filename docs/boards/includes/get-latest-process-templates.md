@@ -16,7 +16,7 @@ ms.date: 01/22/2021
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!TIP]  
 > To access the latest versions of the default process templates: 

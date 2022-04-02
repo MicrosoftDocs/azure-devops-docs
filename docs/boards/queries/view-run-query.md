@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -242,7 +242,7 @@ Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 	
 Choose **Copy query URL**. To email query items, see [Copy a list of work items](../backlogs/copy-clone-work-items.md#html).
 

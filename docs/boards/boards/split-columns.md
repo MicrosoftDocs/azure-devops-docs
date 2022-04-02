@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2021
+ms.date: 04/01/2022
 ---
 
 # Split columns on your Kanban board to show work in progress
@@ -83,7 +83,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
@@ -104,47 +104,11 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
    ::: moniker-end
 
-::: moniker range="tfs-2015"  
-1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-1. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
-
-	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
-
-	**For TFS 2015.1 and later versions**  
-2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
-
-   ![Kanban board, Customize columns, split columns, Agile process](media/vso-kanban-split-columns-settings-analyze-no-tags.png)  
-
-   > [!NOTE]   
-   > You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
-
-3. When done with your changes, choose **Save**.  
-
-	**For TFS 2015**   
-4. Choose the column tab that you want to set.   
-
-	![Customize Kanban board with split columns](media/kanban-board-configure-split-columns.png)  
-   
-::: moniker-end
-
-::: moniker range=">= tfs-2015"  
-
 ## List work items in a Doing or Done column 
 
 You can query for work items in a split column using the **Board Column Done** field. This field takes of a value of False when in the Doing column and True when in the Done column. 
 
-For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)  
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-> [!NOTE]   
-> Kanban query fields are available with TFS 2015.1 or later versions. 
-::: moniker-end
-
-
-
+For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
 
 ## Related articles   
 

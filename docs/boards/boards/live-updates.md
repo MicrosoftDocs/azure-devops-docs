@@ -8,7 +8,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -32,7 +32,7 @@ Choose the :::image type="icon" source="../media/icons/view-options-icon.png" bo
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 From the Kanban board, choose the :::image type="icon" source="../media/icons/live-updates-icon.png" border="false"::: **Live updates** icon.  
 

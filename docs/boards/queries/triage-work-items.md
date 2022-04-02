@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -61,7 +61,7 @@ If you don't see :::image type="icon" source="../media/icons/save-items.png" bor
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 The buttons to move up or down within the query results list are inside the work item form. Choose **Bottom** to cycle through the choices for where the work item form appears: **Bottom**, **Right**, or **Off**.
 
@@ -69,7 +69,6 @@ The buttons to move up or down within the query results list are inside the work
 
 
 You can save each work item as you change it. Or, you can update multiple work items and save them all at once with  :::image type="icon" source="../media/icons/save-items.png" border="false"::: **Save Items**. 
-
 
 ::: moniker-end
 
@@ -100,28 +99,11 @@ After making several changes to work items, choose **Save Results** to save all 
  
 From the web portal, you can update several work items through the triage process, and then do a bulk save when you're finished. 
 
-::: moniker range=">= tfs-2018"
 
 Multi-select the work items you want to update, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More commands**, and then select the option you want from the menu of options.
 
 ![Query results multi-select menu](../backlogs/media/bulk-m-query-results-menu-options-ts.png) 
-::: moniker-end
 
-::: moniker range="tfs-2017" 
-
-Multi-select the work items you want to update, choose the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon, and then select the option you want from the menu of options.
-
-![Query results multi-select menu, TFS-2017](../backlogs/media/bulk-m-query-r-tfs-2016-menu-options.png)   
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-Multi-select the work items you want to update, choose the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon, and then select the option you want from the menu of options.
-
-![Query results multi-select menu, TFS 2015](../backlogs/media/bulk-m-query-r-tfs-menu-options.png)  
-
-::: moniker-end
 
 Work items shown in bold text indicate that local changes haven't yet been saved to the data store.   
 
@@ -132,7 +114,7 @@ Choose **Save items** to save all work items you've modified.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Choose the ![double-save-icon](../media/icons/icon-double-save.png) double-save icon to save all work items you've modified.
 
