@@ -9,8 +9,9 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
+
 
 # Understand CMMI process template artifacts
 
@@ -50,7 +51,7 @@ You can use work item queries to list work items based on their type, such as ch
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Or, use one of the shared queries that the CMMI process provides.
 
@@ -75,8 +76,10 @@ To get started, you can open a shared query and create a chart based on your tra
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2020"
+
 <a id="reports"></a>
+
 ## SQL Server reports  
 
 
@@ -84,18 +87,7 @@ If your project collection and the project are configured with SQL Server Analys
 
 If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
 ::: moniker-end
-
-::: moniker range="<= tfs-2017"
-<a id="dashboards"></a>
-
-## Access SharePoint portal dashboards
-
-You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to complete common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
-
-To use [SharePoint dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards), your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
-
-::: moniker-end
-
+ 
 
 ## Related notes  
 
@@ -137,7 +129,7 @@ Using the CMMI template and guidance can help you achieve the aims of CMMI if yo
 
 <a id="predefined-queries" />
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### CMMI process predefined queries  
 
@@ -209,16 +201,4 @@ Product owners can use the shared queries that are described in the following ta
 > | Risks | Lists all risks, sorted by ID. |
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-### Workbooks
-
-You can use Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. Each workbook references a shared query.  
-
--  The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Open Issues shared query
--  The [Triage workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Untriaged Work Items shared query  
-
-Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
  
-::: moniker-end

@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 04/01/2022
 ---
 
 # Configure a hierarchy of teams
@@ -22,19 +22,11 @@ Specifically, we'll show you how to configure a team structure like the one show
 
 In this article you'll learn how to:  
 
-::: moniker range=">= tfs-2017" 
 >[!div class="checklist"]    
 > * Set up a hierarchical set of teams and backlogs
 > * Define a single sprint cadence for all teams 
 > * Review which area paths are assigned to teams  
-::: moniker-end 
 
-::: moniker range="<= tfs-2015" 
->[!div class="checklist"]    
-> * Set up a hierarchical set of teams and backlogs
-> * Define a single sprint cadence for all teams 
-> * Review which area paths are assigned to teams  
-::: moniker-end 
 
 ## Prerequisites 
 
@@ -66,7 +58,7 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="add-team-team-services" /> 
 
@@ -82,42 +74,15 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2015"
-<a id="add-team-tfs-2015" />
-
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
-
-    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" />
-
-2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
-
-    If you don't select this option, you'll have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
-
-    ![Create a sub-team with its own area path](../../organizations/settings/media/add-team/scale-agile-co.png)
-
-    Repeat this step for all feature and management teams you want to create.  
-
-::: moniker-end   
 
 ## Move area paths into a hierarchical structure
 
 In this step, you want to move the areas paths associated with feature teams from a flat structure to a hierarchical structure. 
 
-::: moniker range=">= tfs-2017"
-
 | Flat area structure | Hierarchical area structure |
 |---------------------|-----------------------------|
 |![Flat area paths](media/config-teams/team-list-flat-structure.png) | ![Hierarchical area paths](media/config-teams/team-list-hierarchy-structure.png) |
 
-::: moniker-end  
-
-::: moniker range="<= tfs-2015"
-
-| Flat area structure | Hierarchical area structure |
-|---------------------|-----------------------------|
-|![Flat area structure](media/pm-flat-area-structure.png)| ![Hierarchical area structure](media/pm-hierarchical-area-structure.png) |
-
-::: moniker-end  
 
 You do this by opening each area path associated with a feature team and changing its location to be under the management area path. 
 
@@ -140,7 +105,7 @@ You do this by opening each area path associated with a feature team and changin
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.   
 
@@ -165,21 +130,6 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker-end   
 
-::: moniker range="<= tfs-2015"  
-
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
-
-    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
-
-1. Next, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under its corresponding management team area path.  
-
-    For example, here we move the Customer Profile to under Account Management.
-
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." />  
-
-    Repeat this step for all feature team area paths. 
-
-::: moniker-end
 
 ## Include subarea paths for management teams
 
@@ -220,7 +170,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"   
+::: moniker range="tfs-2018"   
 
 1. You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -243,18 +193,6 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"  
-
-From **Areas**, open the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu and select **Include sub-areas**.  
-
-Here we choose to include subarea paths for the Account Management area.  
-
-<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." /> 
-
-Repeat this step for all your management areas. If you want to enable rollup across all feature teams and management areas to the top-level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
-
-::: moniker-end
-
 
 ## Define a single sprint cadence for all teams 
 
@@ -267,15 +205,9 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 > 
 > Here we define the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
 
-::: moniker range=">= tfs-2017"  
 > [!div class="mx-imgBorder"]  
 > ![Iteration path](../../organizations/settings/media/areas/modify-areas-its-iterations-scheduled-ts.png)   
-::: moniker-end
 
-::: moniker range="<= tfs-2015"  
-
-<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" />
-::: moniker-end
 
 
 ## Configure other team settings 
@@ -283,11 +215,6 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure other team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
 
 ## Review area paths assigned to teams 
-
-
-::: moniker range="<= tfs-2015" 
-This feature isn't supported for TFS 2015 and earlier versions.
-::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -297,7 +224,7 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 > ![Area Paths and Teams](media/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 From **Project Settings>Work>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
 
 > [!div class="mx-imgBorder"]  
@@ -332,7 +259,7 @@ By design, the team with the longest area path wins the conflict and determines 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
  The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
 ::: moniker-end
 

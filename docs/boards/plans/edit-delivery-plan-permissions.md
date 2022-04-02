@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -26,13 +26,8 @@ You can control who has access to a Delivery Plan by setting its permissions. Yo
 By default all members of an organization or project collection can view Delivery Plans, including users with Stakeholder access for private projects. The plan creator and the project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Review team delivery plans](review-team-plans.md).  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
+::: moniker range="< azure-devops"
 By default all members of an organization or project collection can view Delivery Plans, except users with Stakeholder access for private projects. The plan creator and project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Delivery Plans 1.0](../extensions/delivery-plans.md).  
-::: moniker-end  
-
-::: moniker range="tfs-2017"
-> [!NOTE]  
-> **Feature availability**: Delivery plans are available for TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
 ::: moniker-end  
 
 ## Prerequisites
@@ -66,7 +61,7 @@ By default all members of an organization or project collection can view Deliver
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Open **Boards>Plans**. For details, see [Review team delivery plans](../extensions/delivery-plans.md).  
 
@@ -88,7 +83,7 @@ By default all members of an organization or project collection can view Deliver
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 

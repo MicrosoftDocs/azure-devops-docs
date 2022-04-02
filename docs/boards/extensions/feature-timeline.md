@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/01/2021
+ms.date: 04/01/2022
 ---
  
 # View portfolio progress with the Feature Timeline 
@@ -111,7 +111,7 @@ Here we open Boards.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
 

@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE 
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 04/01/2022
 ---
 
 # Use work item form controls 
@@ -82,17 +82,12 @@ While the workflow states differ for different work item types, they usually fol
    :::column span="2":::
    
    **Typical workflow progression:** 
- 
-   
    - Create a user story in the default state, New.
    - Change the state from New to Active.
    - Change the state from Active to Resolved.
    - Change the state from Resolved to Closed.
-   
-     
+
    **Atypical transitions:** 
- 
-   
    - Change the state from New to Removed.
    - Change the state from Removed to New.
    - Change the state from Active to Removed.
@@ -170,7 +165,6 @@ From the web portal, simply copy the URL from the web browser address or hover o
 ![Copy hyperlink for a work item from web portal](../backlogs/media/add-work-item-copy-URL.png) 
 
 
-
 <a id="start-storyboarding">  </a>
 
 ## Use the Start storyboarding menu option  
@@ -181,6 +175,7 @@ From the web portal, simply copy the URL from the web browser address or hover o
 The **Start storyboarding** menu option is only available from the new web form. However, from the old web form, you can choose the **Start Storyboarding** link from the **Storyboard** tab from a backlog item, or open PowerPoint. See [Storyboard your ideas using PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint) for requirements and usage.    
 
 You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
+
 ![Work item form, Start storyboarding menu option](../backlogs/media/add-work-item-start-storyboarding.png)
 
 

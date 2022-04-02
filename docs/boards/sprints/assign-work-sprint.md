@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 02/14/2022
+ms.date: 04/01/2022
 ---
 
 
@@ -33,7 +33,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Sprint planning, horizontal nav](media/sp-intro.png) 
 
@@ -123,7 +123,7 @@ From your web browser, open your product backlog.
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).  
 
@@ -181,7 +181,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Select one or more items and drag them to one of the listed sprints.  
 
@@ -190,8 +190,6 @@ Select one or more items and drag them to one of the listed sprints.
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2015"
 
 <a id="bulk-modify">  </a>
 
@@ -208,21 +206,10 @@ With multi-select, you can complete several actions on several work items at onc
 - Add links
 - [Map items or change the parent an item is linked to](../backlogs/organize-backlog.md#mapping)
 
-::: moniker-end  
-
-::: moniker range="tfs-2015"  
-
-Multi-select of backlog work items requires TFS 2015.1 or later version.  
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"  
 
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../media/icons/context_menu.png)) or action (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) menu of one of the items. 
 
 To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
-
-::: moniker-end
 
 ## Next step
 

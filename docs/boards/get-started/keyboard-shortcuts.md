@@ -7,9 +7,10 @@ ms.technology: devops-agile
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/15/2021
 monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
+
 
 
 # Keyboard shortcuts for Azure Boards and Team Explorer
@@ -52,7 +53,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= azure-devops-2019"
 
-
 ## Work items 
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
@@ -79,8 +79,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
-::: moniker range=">= tfs-2017"
-
 <a id="plan-shortcuts"></a>
 
 ## Plans
@@ -89,8 +87,6 @@ You can use the following keyboard shortcuts when [interacting with a delivery p
  
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
-
-::: moniker-end
 
 ## Team Explorer navigational shortcuts
 

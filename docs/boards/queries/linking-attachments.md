@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -29,7 +29,7 @@ You can [link work items to track related work and dependencies](link-work-items
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops" 
 - Attachment File Count
 - (Discussion) Comment Count 
 - External Link count
@@ -38,14 +38,6 @@ You can [link work items to track related work and dependencies](link-work-items
 - Related Link Count
 ::: moniker-end 
 
-
-::: moniker range="<= tfs-2015" 
-- Attachment File Count
-- External Link count
-- Hyperlink Count
-- Link Comment
-- Related Link Count
-::: moniker-end 
 
 For descriptions of each of these fields, see the [table provided later in this article](#table-field). 
 
@@ -406,7 +398,7 @@ The following table describes fields associated with links and attachments. Most
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
 
-::: moniker range=">= tfs-2015 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 ### Visualize related work and other objects 
 

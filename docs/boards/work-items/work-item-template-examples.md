@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021 
+ms.date: 04/01/2022
 ---
 
 # View sample work item templates in Azure Boards
@@ -103,7 +103,7 @@ An often requested feature is to allow the creation of a work item that automati
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Customize the work item web form 
 

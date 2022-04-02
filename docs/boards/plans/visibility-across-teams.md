@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 04/01/2022
 ---
 
 # Manage priorities and gain visibility across teams
@@ -28,16 +28,10 @@ For an overview of all team tools, see [Manage teams and configure team tools](.
 <a id="plans">  </a>
 
 
-::: moniker range=">= tfs-2017"
 
 ## Delivery Plans support a view of team backlogs on a calendar timeline
 
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.
-::: moniker-end  
-::: moniker range="tfs-2017" 
-> [!NOTE]
-> Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Azure Boards and TFS 2017.2 and later versions. All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
-::: moniker-end   
 
 ::: moniker range="azure-devops"  
 
@@ -46,7 +40,7 @@ When you configure a Delivery Plan, you select the teams and backlog levels of i
 :::image type="content" source="media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 < azure-devops"  
+::: moniker range="< azure-devops"  
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../extensions/delivery-plans.md).
 
@@ -93,7 +87,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
@@ -104,13 +98,6 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2015" 
-
-Items that are owned by other teams appear with hollow-filled bars.  
-
-<img src="media/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" /> 
-
-::: moniker-end 
 
 ### View backlog items and parent items owned by other teams
 
@@ -126,18 +113,11 @@ Items that are owned by other teams appear with an information icon,  :::image t
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
    
 > [!div class="mx-imgBorder"]  
 > ![Items that are owned by other teams appear with an information icon.](media/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
-::: moniker-end 
-
-::: moniker range="<= tfs-2015" 
-Items that are owned by other teams appear with hollow-filled bars.  
-
-<img src="media/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" />
-
 ::: moniker-end 
 
 
@@ -148,7 +128,6 @@ To learn more about this configuration, see [Portfolio management](portfolio-man
 
 
 <a id="dashboards">  </a>
-::: moniker range=">= tfs-2015"
 
 ## Add management dashboards with multi-team views
 
@@ -167,8 +146,6 @@ When defining multi-team dashboards, consider the following questions:
 
 Review [Agile culture](agile-culture.md) and [Practices that scale](practices-that-scale.md) for guidance on team autonomy and organizational alignment.
 
-::: moniker-end
-
 ### Project health and progress against goals dashboard 
 
 Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to provide a list of features by state: 
@@ -178,8 +155,6 @@ Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-r
 - Features being actively worked (In Progress or Active)
 
 Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. To learn more about creating query-based charts, see [Charts](../../report/dashboards/charts.md).
-
-
 
 ### Technical debt, bug debt, and activity dashboard 
 
@@ -192,7 +167,6 @@ Another measure of project health and the health of the teams is to monitor bug 
 
 For tips on creating queries based on counts or numeric fields, see [Query by numeric field](../queries/query-numeric.md).
 
- 
 ::: moniker range=">= azure-devops-2019"
 
 ## Use the Analytics Service to gain visibility across teams   
@@ -205,8 +179,6 @@ You can add [Widgets based on the Analytics Service](../../report/dashboards/ana
 ## Track capacity when working on more than one team 
 
 You can track capacity for individuals that participate on more than one team. To learn how, see [Set sprint capacity, Track capacity when working on more than one team](../sprints/set-capacity.md#track-capacity-per-team).
-
-
 
 ## Limitations of multi-team Kanban board views 
 
