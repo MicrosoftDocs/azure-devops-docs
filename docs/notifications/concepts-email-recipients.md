@@ -50,7 +50,7 @@ You can manage subscriptions and delivery settings at the team-level or organiza
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In Organization settings, select your **Team** > **Subscribers** > **Delivery settings**.
 
@@ -91,7 +91,7 @@ The following delivery options are available for a group or team subscription:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot showing email team delivery options.](media/email-team-delivery-options.png)
 
