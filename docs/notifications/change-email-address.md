@@ -12,7 +12,7 @@ ms.date: 07/24/2020
 
 # Change your preferred email address for notifications
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 You can change your preferred email address for notifications from your organization preferences profile page. Notifications are sent by default to the preferred email address for your organization profile. It's typically the email address you signed into Azure DevOps with.
 
@@ -67,7 +67,7 @@ For additional settings, see [Set your preferences](../organizations/settings/se
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To change your preferred email address, open your organization menu and select **My profile**.
 

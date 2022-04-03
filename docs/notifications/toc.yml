@@ -40,7 +40,7 @@
     displayName: build, commit, pull, request, audit, connect, discussion, changeset, shelveset, comment
 - name: Notifications to third parties
   items:
-  - name: Send notifications to third-party services (Slack, Teams, etc.)
+  - name: Send notifications to third-party services (Slack, Teams)
     href: integrate-third-party-services.md
     displayName: service, hooks, integration, endpoint, webhook
 - name: Troubleshooting

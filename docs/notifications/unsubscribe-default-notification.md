@@ -45,7 +45,7 @@ Start by opening your personal notification settings from your home page. Select
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 1. From the web portal, select your initials or picture, and select **Notification settings** from the drop-down menu.
 
