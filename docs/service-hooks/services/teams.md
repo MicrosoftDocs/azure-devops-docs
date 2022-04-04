@@ -38,7 +38,7 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
+::: moniker range="<= azure-devops-2020"
 
 ## Configure a new connector for Azure DevOps Server
 
