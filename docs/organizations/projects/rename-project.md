@@ -43,18 +43,6 @@ Post rename, there may be some [required team member actions](#required-user-act
 
 ::: moniker-end  
 
-::: moniker range="> tfs-2015 <= tfs-2017"
-
-- You must be a member of the **Project Administrators** group. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
-
-::: moniker-end
-
-::: moniker range=" tfs-2015"  
-
- You must have the **Edit project-level information** permission on a project to rename it.
-
-::: moniker-end
-
 ## Rename a project
 
 ::: moniker range=">= azure-devops-2019"
@@ -73,7 +61,7 @@ Post rename, there may be some [required team member actions](#required-user-act
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Sign in to your organization.
 2. From the Projects page, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **actions** for the project that you want to rename, and then choose **Rename**.
@@ -89,23 +77,6 @@ Post rename, there may be some [required team member actions](#required-user-act
 	If the **Rename Project** dialog doesn't appear, then you're not a member of the **Project Administrators** group for that particular project. 
 
 ::: moniker-end  
-
-::: moniker range="tfs-2015"
-
-1. Sign in to your organization.
-2. From the **Overview** tab, open :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: **menu** for the project that you want to rename, and then choose **Rename**.
-
-	![Choose Rename.](media/rename-project/collection-rename.png)
-
-3. Edit the name. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Enter a new project name](media/rename-project/rename-project-dialog.png)
-	
-	If the **Rename Project** dialog doesn't appear, then you're not a member of the Project Administrators group for that particular project. 
-
-::: moniker-end
-
 
 <a id="more-work"></a>
 
@@ -173,7 +144,7 @@ We recommend you update your clients to the latest update or release, if possibl
 
 Local workspaces get managed locally and not on the server. Older clients without the updated rename logic can't update local workspaces to the new project name. 
  
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="tfs-onprem"></a>
 
