@@ -7,7 +7,7 @@ ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8
 ms.author: chcomley
 author: chcomley
 ms.date: 03/29/2022
-monikerRange: '>= tfs-2018 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 
 # Install extensions for on-premises servers
