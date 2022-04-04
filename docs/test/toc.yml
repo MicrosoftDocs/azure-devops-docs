@@ -1,94 +1,94 @@
-- name: Azure Test Plans 
-  href: index.yml
+- name: Azure Test Plans
   displayName: test plans
+  href: index.yml
 - name: What is Azure Test Plans?
-  href: overview.md
   displayName: manual, testing, automated, load, report, analytics
+  href: overview.md
 - name: Get started
-  expanded: true
   items:
   - name: Navigate Test Plans
+    displayName: test suites tree, define, execute, chart
     href: navigate-test-plans.md
-    displayName: test suites tree, define, execute, chart 
   - name: Test objects and terms
-    href: test-objects-overview.md
     displayName: test plan, test case, test suites, test runs, test results, test points
+    href: test-objects-overview.md
   - name: Create test plans and test suites
+    displayName: create, plan
     href: create-a-test-plan.md
-    displayName: create, plan 
   - name: Create test cases
-    href: create-test-cases.md
     displayName: create, case
+    href: create-test-cases.md
   - name: Share steps between test cases
     href: share-steps-between-test-cases.md
   - name: Copy/clone test plans, suites, cases
+    displayName: copy, clone, import, export, test plans, test suites, test cases
     href: copy-clone-test-items.md
-    displayName: copy, clone, import, export, test plans, test suites, test cases 
   - name: Run manual tests
-    href: run-manual-tests.md
     displayName: manual test, run, test runs
+    href: run-manual-tests.md
   - name: Default permissions (Security)
     href: manual-test-permissions.md
+  expanded: true
 - name: Manual tests
   items:
   - name: Test different configurations
-    href: test-different-configurations.md
     displayName: configuration, testing
+    href: test-different-configurations.md
   - name: Repeat a test with different data
-    href: repeat-test-with-different-data.md
     displayName: data, testing, shared steps, shared parameters
+    href: repeat-test-with-different-data.md
   - name: Test from the Kanban board
-    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     displayName: inline testing
+    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Perform user acceptance testing
-    href: user-acceptance-testing.md
     displayName: user acceptance, testing
+    href: user-acceptance-testing.md
   - name: Collect diagnostic data
-    href: collect-diagnostic-data.md
     displayName: diagnostic, data, testing
+    href: collect-diagnostic-data.md
   - name: Delete test artifacts
+    displayName: delete, artifacts
     href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
-    displayName: delete, artifacts 
-  - name: Set permissions and access 
-    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+  - name: Set permissions and access
     displayName: access, permissions
+    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Set test retention policies
     displayName: results, logs
     href: how-long-to-keep-test-results.md
 - name: Automated tests
   items:
   - name: Associate automated tests with test cases
-    href: associate-automated-test-with-test-case.md
     displayName: test cases, automated, associate
+    href: associate-automated-test-with-test-case.md
   - name: Run automated tests from test plans
-    href: run-automated-tests-from-test-hub.md
     displayName: automated, test plans, run
+    href: run-automated-tests-from-test-hub.md
 - name: Request & track feedback
   href: ../project/feedback/toc.yml
 - name: Track progress and results
   items:
   - name: Track test status
-    href: track-test-status.md
     displayName: track, status
+    href: track-test-status.md
   - name: Progress report
-    href: progress-report.md 
-  - name: Pipelines & test results 
+    href: progress-report.md
+  - name: Pipelines & test results
     items:
-    - name: Code coverage 
+    - name: Code coverage
       href: ../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-    - name: Pipeline Analytics 
+    - name: Pipeline Analytics
       href: ../pipelines/reports/pipelinereport.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
       displayname: pipeline pass rate, pipeline duration, test pass rate, failed runs, failure trend, tests in the pipeline, unique failing tests, top 10 steps by duration
-    - name: Test Analytics 
+    - name: Test Analytics
       href: ../pipelines/test/test-analytics.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-      displayname: test failures, trends, pass rate, failing tests, group tests, individual tests, failure analysis 
-    - name: Build and release test results    
+      displayname: test failures, trends, pass rate, failing tests, group tests, individual tests, failure analysis
+    - name: Build and release test results
       href: ../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     - name: Tests and Requirements traceability
       href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     - name: Pool consumption report
       href: ../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-      displayname: agent usage, private self-hosted, public hosted, concurrency, historical graph, preview 
+      displayname: agent usage, private self-hosted, public hosted, concurrency, historical graph, preview
     - name: Configure a Test Results Trend widget
       href: ../report/dashboards/configure-test-results-trend.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     - name: Test Impact Analysis (TIA)
@@ -98,7 +98,7 @@
 - name: Troubleshooting
   items:
   - name: Manual testing FAQs
-    href: reference-qa.yml 
+    href: reference-qa.yml
   - name: Unable to connect
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: Reference
@@ -114,7 +114,7 @@
     href: /previous-versions/azure/devops/test/mtm/guidance-mtm-usage
 - name: REST API Reference
   items:
-  - name: Test  
+  - name: Test
     href: /rest/api/azure/devops/test
   - name: Test Plans
     href: /rest/api/azure/devops/testplan/test-plans
@@ -128,13 +128,13 @@
   items:
   - name: Azure Load Test Preview
     href: /azure/load-testing/overview-what-is-azure-load-testing
-  - name: Azure Pipelines 
+  - name: Azure Pipelines
     href: ../pipelines/index.yml
-  - name: Azure Boards 
+  - name: Azure Boards
     href: ../boards/index.yml
   - name: Marketplace Test Plan extensions
     href: https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance
   - name: Marketplace Visual Studio test extensions
     href: https://marketplace.visualstudio.com/search?term=test&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance
-  - name: Azure DevOps Blog 
+  - name: Azure DevOps Blog
     href: https://devblogs.microsoft.com/devops/

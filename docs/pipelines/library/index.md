@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/14/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Library of assets
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 A *library* is a collection of build and release assets for an Azure DevOps project.
 Assets defined in a library can be used in multiple build and release pipelines of the project.

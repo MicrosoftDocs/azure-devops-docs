@@ -8,14 +8,14 @@ ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/27/2021
 ---
 
 
 # Add widgets to a dashboard
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 

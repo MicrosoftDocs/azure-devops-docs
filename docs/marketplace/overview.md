@@ -7,7 +7,7 @@ ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Marketplace extensions for Azure DevOps
@@ -48,7 +48,7 @@ To upload, install, or assign extensions you need [Project Collection Administra
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 Add an extension to your organization by first searching for and then installing the extension from the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 

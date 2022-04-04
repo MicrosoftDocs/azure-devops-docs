@@ -5,12 +5,12 @@ description: You can link all important fields for tasks used across the build d
 ms.topic: conceptual
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.date: 01/04/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Process parameters
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > This guidances does not apply to YAML pipelines. For parameters in YAML pipelines, see [runtime parameters](runtime-parameters.md).

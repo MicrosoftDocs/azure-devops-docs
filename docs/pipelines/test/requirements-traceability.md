@@ -7,12 +7,12 @@ ms.custom: "continuous-test, seodec18"
 ms.author: vinojos
 author: vinodjo
 ms.date: 07/01/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Requirements traceability
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 **Requirements traceability** is the ability to relate and document two or more phases of 
 a development process, which can then be traced both forward or backward from its origin.

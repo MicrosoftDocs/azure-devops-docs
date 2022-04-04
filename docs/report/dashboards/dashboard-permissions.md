@@ -7,13 +7,13 @@ ms.technology: devops-analytics
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 09/28/2021
 ---
 
 # Set dashboard permissions    
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="set-permissions">  </a>
 

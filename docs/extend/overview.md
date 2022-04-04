@@ -4,7 +4,7 @@ title: Developing extensions for Azure DevOps
 description: Overview of creating extensions for Azure DevOps.
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2019
@@ -12,7 +12,7 @@ ms.date: 10/24/2019
 
 # What are extensions?
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps.
 They're written with standard technologies - HTML, JavaScript, CSS - and are developed using your preferred development tools.

@@ -5,12 +5,12 @@ description: Learn about how you can use expressions in Azure Pipelines or Team 
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.date: 02/25/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Expressions
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="tfs-2017"
 

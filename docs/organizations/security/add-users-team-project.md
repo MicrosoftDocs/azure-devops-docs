@@ -730,7 +730,7 @@ To learn more, see [Add account users for Azure DevOps](../accounts/add-organiza
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## List team members or team details  
 
@@ -811,8 +811,6 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 ::: moniker-end 
  
- 
-
 
 ::: moniker range="< azure-devops"
 
@@ -854,6 +852,7 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md)
 * [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection)
 * [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group)
+* [Manage permissions with command line tool](manage-tokens-namespaces.md)
 * [Grant or restrict access using permissions](restrict-access.md).
 ::: moniker-end
  

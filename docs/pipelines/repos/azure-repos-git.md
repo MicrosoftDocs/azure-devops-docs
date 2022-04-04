@@ -5,12 +5,12 @@ ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
 ms.date: 07/14/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Build Azure Repos Git or TFS Git repositories
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

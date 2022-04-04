@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/14/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Invoke a function task
@@ -70,3 +70,66 @@ In addition, a C# helper library is available to enable live logging and managin
 ### Why does the task failed within 1 minute when the timeout is longer?
 
 If the function executes for more than 1 minute, use the **Callback** completion event. The API Response completion option is supported for requests that complete within 60 seconds.
+
+### Is there an example of an Azure Function that uses the callback completion mode? 
+```
+#r "Newtonsoft.Json"
+
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
+using Newtonsoft.Json;
+
+public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
+{
+    var url = req.Headers["PlanUrl"];
+    var projectId = req.Headers["ProjectId"];
+    var hubName = req.Headers["HubName"];
+    var planId = req.Headers["PlanId"];
+    var jobId = req.Headers["JobId"];
+    var timelineId = req.Headers["TimelineId"];
+    var taskInstanceId = req.Headers["TaskinstanceId"];
+    var authToken = req.Headers["AuthToken"];
+
+    var callbackUrl = $"{url}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1";
+  
+    var successBody = JsonConvert.SerializeObject(new {
+        name = "TaskCompleted",
+        taskId = taskInstanceId.ToString(),
+        jobId = jobId.ToString(),
+        result = "succeeded"
+    });
+
+    // the following call does not block
+    Task.Run(() =>
+    {
+        Thread.Sleep(70000); // simulate long running work
+        PostEvent(callbackUrl, successBody, authToken, log);
+    });
+   
+    return new OkObjectResult("Long-running job succesfully scheduled!");
+}
+    
+public static void PostEvent(String callbackUrl, String body, String authToken, ILogger log)
+{
+    try
+    {
+        var client = new HttpClient();
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
+        var requestContent = new StringContent(body, Encoding.UTF8, "application/json");
+        var response = client.PostAsync(new Uri(callbackUrl), requestContent).Result;
+        var responseContent = response.Content.ReadAsStringAsync().Result;
+        log.LogInformation(response.StatusCode.ToString());
+        log.LogInformation(responseContent);
+    }
+    catch (Exception ex)
+    {
+        log.LogError(ex.Message);
+    }
+}
+```

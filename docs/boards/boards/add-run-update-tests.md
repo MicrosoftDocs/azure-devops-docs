@@ -8,13 +8,13 @@ ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
-ms.date: 10/15/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # Add, run, and update inline tests in Azure Boards and Azure DevOps
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. See [Kanban basics](kanban-basics.md) if you're new to working with the Kanban board. If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
 
@@ -68,7 +68,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](media/quickstart/open-kanban-board.png)
@@ -168,6 +168,7 @@ Other ways you can quickly add linked items and objects to user stories from the
 To start web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
 
 <a name="test-status-kanban"></a>
+
 ### Test status in the Kanban board
 
 Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later, when required. When test cases are created from the Kanban board and updated afterwards in Test Manager, or the other way around, when users create requirement-based suites with Test Manager and update them in Test Manager, the Kanban board shows the correct status. However, the Test status in Kanban board doesn't work if the requirement-based suite has more than one configuration assigned to it. In such scenario, the Kanban board only shows the test outcome for the default configuration. As such, it's recommended to use Test Manager to manage/track the testing progress across multiple configurations. 

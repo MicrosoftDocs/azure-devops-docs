@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2021
+ms.date: 04/01/2022
 ---
 
 # Key Kanban concepts and terms in Azure Boards
@@ -29,16 +29,12 @@ An issue that prevents work from progressing. You can highlight work that is blo
 ## Bottleneck
 
 A constraint in the system that limits the flow of work. Identifying bottlenecks makes it easier to reduce their impact and provides a mechanism for controlling work flowing through the process. Learn more: [Split columns, Identify bottlenecks](split-columns.md#id-bottlenecks).
-
-::: moniker range=">= tfs-2015" 
  
 ## Card reordering 
 
 Card reordering is a configurable setting for a team's Kanban board that either forces cards to maintain the backlog priority when dragged and dropped on the board, or allows the priority order to change. Learn more: [Reorder cards](reorder-cards.md). 
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
-
-::: moniker-end  
 
 ## Cumulative flow diagram (CFD) 
 
@@ -79,13 +75,11 @@ You can gain valuable metrics and visualize the lead time for a team and a confi
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2017"  
 
 ## Live updates 
 
 Live updates is a Kanban board view option that when enabled automatically refreshes the Kanban board as other team members move or reorder cards. Learn more: [Enable live updates](live-updates.md).   
-
-::: moniker-end   
+ 
 
 [!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
@@ -98,7 +92,6 @@ Live updates is a Kanban board view option that when enabled automatically refre
 -->
 
 
-::: moniker range=">= tfs-2015"  
 
 ## Swimlanes
 
@@ -107,25 +100,15 @@ A swimlane is a configurable row on a Kanban board, used to support different se
 > [!div class="mx-imgBorder"]
 > ![Kanban board, Drag items into a swimlane](media/expedite/swimlanes-move-item.png)  
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"  
-
 ## Split columns
 
 The Split columns feature lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item. With split columns, your team knows exactly how many items sit idle, waiting for work to begin. Learn more: [Split columns](split-columns.md). 
 
 ![Kanban board, Split columns](media/kanban-board-split-columns-example-chart.png)
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"  
-
 ## Task checklists
 
 A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board that appear as a checklist of work to be done. As you complete a task, you can update its status by checking the checkbox for the task.  Learn more: [Add tasks or child items as checklists](add-task-checklists.md). 
-
-::: moniker-end  
 
 ## Task switching
 
@@ -169,7 +152,7 @@ You can customize your workflow states, adding states, renaming states, and chan
 
 ## Workflow state categories 
 
-State categories determine how the Kanban board treats each workflow state. The state categories used by the backlogs are <em>Proposed</em>, <em>In Progress</em>, <em>Resolved</em>, and <em>Completed</em>. Learn more: <a href="../work-items/workflow-and-state-categories.md" data-raw-source="[Workflow states and state categories](../work-items/workflow-and-state-categories.md)">Workflow states and state categories</a>. 
+State categories determine how the Kanban board treats each workflow state. The state categories used by the backlogs are *Proposed*, *In Progress*,  *Resolved*, and *Completed*. To learn more, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
 ## Related articles 
 

@@ -11,7 +11,7 @@ metadata:
   ms.author: chcomley
   author: chcomley
   ms.date: 12/07/2018
-  monikerRange: '>= tfs-2015'
+  monikerRange: '<= azure-devops'
 title: Rename project FAQs
 summary: |
   [!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
@@ -58,7 +58,7 @@ sections:
           ::: moniker-end
           ::: moniker range=">= tfs-2013 <= tfs-2017"
           
-          Yes, all artifacts which share the same name get renamed along with the project. The only exceptions to this are for the default team room, team, and repo. The rename of these artifacts is performed as a best effort. 
+          Yes, all artifacts which share the same name get renamed along with the project. The only exceptions to this are for the default team and repo. The rename of these artifacts is performed as a best effort. 
           For example, if a project *Foo* was renamed to *Bar*, the default team *Foo* would not be renamed if a team named *Bar* already existed in the project. 
           
           ::: moniker-end

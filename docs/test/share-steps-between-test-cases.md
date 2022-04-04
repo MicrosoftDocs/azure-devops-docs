@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: how-to
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
 ---
 

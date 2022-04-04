@@ -4,12 +4,12 @@ description: How to set permissions to access a project-scoped feed in a differe
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 08/05/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # How to allow a Pipeline to access a project-scoped feed in a different project
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When a Pipeline needs to connect to a project-scoped feed in a different project, the pipeline must have access to both the project that the feed is scoped to and the feed itself.
 Your **Project build service** identity will look as follows:

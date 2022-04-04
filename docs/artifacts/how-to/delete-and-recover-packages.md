@@ -6,13 +6,13 @@ ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: contperf-fy21q2, contperf-fy22q1
 ms.topic: conceptual
 ms.date: 02/16/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Delete and recover packages
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts safely stores different types of packages in your feed, whether you published them directly or saved them from upstream sources. As older package versions fall out of use, you might want to clean them up either manually or automatically by using retention policies. 
 

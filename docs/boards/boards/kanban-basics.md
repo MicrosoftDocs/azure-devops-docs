@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/01/2022
+ms.date: 04/01/2022
 ---
 
 # Implement Kanban practices using Azure Boards
@@ -96,20 +96,10 @@ Here are a few things you can do. See at a glance the estimated size of work for
 
 ![Kanban board, move a card to update status](media/ALM_CC_MoveCard.png)
 
-::: moniker range="tfs-2015"
-
-> [!NOTE]  
-> You can [reorder items within a column](../../boards/boards/reorder-cards.md#reorder-cards) from TFS 2015.1 and later versions.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
 Also, you can quickly update a field or reassign ownership directly from the board.
 
 ![Kanban, assign items](media/ALM_CC_UpdateFieldOnCard.png)
 
-::: moniker-end
 
 Updating your Kanban board as work progresses helps keep you and your team in sync. Also, you can see and share the value stream your team is delivering to customers.
 
@@ -181,12 +171,7 @@ Each team can manage their backlog and customize their Kanban board. [Add teams]
 
 If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-::: moniker range=">= tfs-2017"
-
 [!INCLUDE [temp](../includes/live-updates.md)]  
-
-::: moniker-end
-
 
 ## Related articles
 

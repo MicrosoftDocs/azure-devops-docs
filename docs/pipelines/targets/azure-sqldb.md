@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 02/01/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

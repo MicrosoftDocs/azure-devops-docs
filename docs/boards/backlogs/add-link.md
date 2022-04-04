@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/01/2022
+ms.date: 04/01/2022
 ---
 
 # Link user stories, issues, bugs, and other work items in Azure Boards  
@@ -86,8 +86,6 @@ The following link relationships are restricted:
 
 ## Link several work items 
 
-::: moniker range=">= tfs-2018"
-
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md), and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
 2. Open the **&hellip;** context menu of one of the selected work items, choose **Add link**, and then choose **Existing item...** or **New item...**. 
@@ -97,27 +95,6 @@ The following link relationships are restricted:
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of backlog context menu, Multi-select items in backlog, open context menu, choose Add link to an existing work item.](media/add-link/multi-select-add-link-vsts.png)   
 
-::: moniker-end
-::: moniker range="tfs-2017"
-1. From the web portal, open a query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to. 
-
-2. Open the **...** context menu of one of the selected work items, and then choose **Link to a new item...** or **Link to an existing item...**.  
-
-    Here we multi-select from the Queries page and choose <b>Link to a new item&hellip;</b>.</p>
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of Query results page, multi-select items, open context menu, choose Link to a new work item, TFS-2017 version.](media/add-link-query-new-work-item-2016.png) 
-
-::: moniker-end
-::: moniker range="<= tfs-2015"
-1. From the web portal, open a query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
-
-2. Open the context menu of one of the selected work items, and then choose **Link selected item(s) to a new work item...** or **Link to an existing item...**.
-
-    Here we multi-select from the Queries page and choose **Link selected item(s) to a new work item...**.  
-
-    ![Screenshot of Query results page, multi-select items, open context menu, choose Link to a new work item, TFS-2015 and eaqrlier versions](media/add-link-query-new-work-item-2015.png)  
-   ::: moniker-end
 
 <a id="link-existing"> </a>  
 
@@ -148,15 +125,11 @@ To link to multiple work items, you can use inline add which finds work items ba
 
 ::: moniker-end 
 
-
-::: moniker range=">= tfs-2018"
 To view the work items selected for linking, you can choose the  :::image type="icon" source="../media/icons/info.png" border="false":::.   
 > [!div class="mx-imgBorder"]  
 > ![Add link dialog to an existing work item](media/add-link/info-linked-items.png) 
-::: moniker-end   
 
-
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of backlog context menu, choose Add link to an existing work item, TFS-2018 and previous versions.](media/add-link/link-multi-to-existing.png)   
 
@@ -171,7 +144,7 @@ If you're working from the Query Results page, you'll need to bulk save the work
 > ![Screenshot of Query results page, save bulk modified items.](media/bulk-modify/query-results-bulk-save-items.png) 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Screenshot of Query results page, multi-select items, bulk save modified work items, TFS-2018 and earlier versions.](media/bulk-modify-link-existing-bulk-save-ts.png) 
 ::: moniker-end 
 
@@ -196,20 +169,16 @@ You'll need to bulk save the work items you've modified.
 Here, we've selected to add a link to the selected work items.  
 
 1. Specify the link type, work item type, and title of the new work item. Choose **OK**.  
-    ::: moniker range=">= tfs-2018"
+
     ![Add link dialog, Link to a new work item, TFS-2018 and later versions.](media/add-link-related-new-item-issue.png)  
-    ::: moniker-end
-    ::: moniker range="<= tfs-2017"
-    ![Add link dialog, Link to a new work item, TFS-2017 and earlier versions.](media/bulk-modify-link-new-ts.png)  
-    ::: moniker-end
+
 
 2. A work item of the type selected opens. Enter additional information and save the work item.
-    ::: moniker range=">= tfs-2017"
+
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of new work item Issue added.](media/add-link/new-issue-linked-item.png)   
-    ::: moniker-end
-3. If you're working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
+3. If you're working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
 
 ::: moniker range="azure-devops"
@@ -242,26 +211,15 @@ The following image shows an example of two remote links, indicated by the  :::i
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017"
-
 ## Link several work items to a new git branch 
 
 You can add a new git branch and link them to existing work items at the same time. 
 
 From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then **New branch...**. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
-::: moniker-end
 
-::: moniker range=">= tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch.](media/add-link/link-git-branch.png)   
 
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch, TFS 2017 version.](media/add-link-new-branch.png)  
-::: moniker-end
 
 <a id="link-builds" />
 
@@ -269,7 +227,7 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 
 <a id="find-items"> </a> 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Find work items to link to   
 

@@ -5,12 +5,12 @@ ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.date: 12/01/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Create and manage agent pools
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 

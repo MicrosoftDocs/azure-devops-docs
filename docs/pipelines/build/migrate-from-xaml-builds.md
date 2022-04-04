@@ -5,7 +5,7 @@ description: How to migrate from XAML builds to new builds in your Azure Pipelin
 ms.topic: conceptual
 ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
 ms.date: 04/17/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Migrate from XAML builds to new builds

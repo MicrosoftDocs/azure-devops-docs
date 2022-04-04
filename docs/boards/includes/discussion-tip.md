@@ -10,7 +10,6 @@ ms.date: 11/19/2021
 <a id="discussion" />
 <a id="capture-comments-in-the-discussion-section" />
 
-::: moniker range=">= tfs-2017" 
 
 ## Capture comments in the Discussion section 
 
@@ -18,8 +17,6 @@ Use the **Discussion** section to add and review comments made about the work be
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section within a work item form](../backlogs/media/discussion-section.png)   
-
-::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -39,8 +36,6 @@ Choose one of these icons &mdash;:::image type="icon" source="../../media/icons/
 > ![Discussion section, @mention drop-down menu](../media/discussion-at-mention.png)  
 
 ::: moniker-end
-
-
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -68,7 +63,7 @@ A full audit trail of all  edited and deleted comments is maintained in the **Hi
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
@@ -78,7 +73,7 @@ You can't edit or delete comments once you've entered them.
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020" 
+::: moniker range="< azure-devops" 
 
 > [!IMPORTANT]  
 > For on-premises Azure DevOps Server, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.

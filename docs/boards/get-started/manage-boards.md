@@ -8,8 +8,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 02/28/2022 
+ms.date: 04/01/2022
 ---
+
 
 
 # Configure and manage your Azure Boards project
@@ -22,23 +23,11 @@ As an organization owner or a project administrator, there are a few items you m
 
 Specifically, consider doing one or more of the following tasks: 
 
-::: moniker range=">= tfs-2018"
 
 - [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project. 
 - [Share your project vision](#share-vision). To support people who will contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/about-readme-wiki.md). 
 - [Define area and iteration paths](#areas-iterations). Define Iteration Paths if you work with Scrum methods or want to time-box your issues and tasks.
-- [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-- [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project. 
-- [Define area and iteration paths](#areas-iterations). Define Iteration Paths if you work with Scrum methods or want to time-box your issues and tasks.
-- [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.  
-
-::: moniker-end
-
+- [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.
 
 [!INCLUDE [add-users-project](../../includes/get-started/add-users-project.md)]  
 
@@ -108,8 +97,6 @@ If you're new to Azure Boards and want an indepth overview of what you can confi
  
 
 [!INCLUDE [customize-work-tracking](../../includes/get-started/customize-work-tracking.md)] 
- 
-::: moniker range=">= tfs-2015"
 
 ## Install and manage extensions 
 
@@ -117,8 +104,6 @@ To add new features and capabilities to Azure Boards, install extensions from th
 
 To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](../../extend/overview.md) and [publishing](../../extend/publish/overview.md) extensions.
 
-::: moniker-end
- 
 ## Integrate with other services 
 
 Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the **Project Administrators** group, you can configure integration with many of these services. To learn more, see the following articles. 

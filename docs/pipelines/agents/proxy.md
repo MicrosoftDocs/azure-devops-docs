@@ -5,12 +5,12 @@ description: Learn how you can run a v2 private build and release agent behind a
 ms.topic: conceptual
 ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
 ms.date: 03/15/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Run a self-hosted agent behind a web proxy
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 

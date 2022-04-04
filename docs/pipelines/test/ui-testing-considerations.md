@@ -7,12 +7,12 @@ ms.custom: "continuous-test, seodec18"
 ms.author: shashban
 author: shashban
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # UI testing considerations
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes

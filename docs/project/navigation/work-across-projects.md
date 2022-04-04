@@ -8,14 +8,14 @@ ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: quickstart
 ms.author: kaelli   
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 11/16/2020
 --- 
 
 
 # Work across projects
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 When you work on several projects, you can use select pages to support your cross-project work. These pages provide quick access and filter functions to support your work within a single project or work you're doing across several projects.  
 

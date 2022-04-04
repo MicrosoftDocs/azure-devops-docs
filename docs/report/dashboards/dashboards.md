@@ -8,13 +8,13 @@ ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/28/2021
 ---
 
 # Add, rename, and delete dashboards in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2020"
 Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
@@ -30,7 +30,7 @@ When a project is first created, a default team and default team dashboard is cr
 ::: moniker range="tfs-2015"
 
 > [!NOTE]   
-> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
+> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](/previous-versions/azure/devops/report/dashboards/team-dashboard?view=tfs-2013&preserve-view=true). For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"

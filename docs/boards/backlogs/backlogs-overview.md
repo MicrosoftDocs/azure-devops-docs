@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 12/03/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -18,14 +18,7 @@ ms.date: 12/03/2021
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
-::: moniker range=">= tfs-2017"
 With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. Once you have your plan in place, you can start driving code development efforts. 
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. 
-
-::: moniker-end
 
 If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md). Review the settings to learn more about defining area and iteration paths and customizing your work item types. Backlogs are automatically created when you create a project or add a team. Each team has access to their own product, portfolio, and sprint backlogs as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools). 
 
@@ -74,15 +67,9 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 !["Web portal, choose Boards>Backlogs](../work-items/media/view-add/view-stories-backlogs-standard.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-![Boards>backlogs, TFS 2015, 2013 web portal](media/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 
@@ -143,17 +130,7 @@ The preferred method for bulk edit is to use multi-select to move items to the t
 
 ## In Progress items and work listed on the backlog 
 
-::: moniker range=">= tfs-2018" 
-
 Backlogs are designed to display work that corresponds to a Proposed, In Progress, or Resolved category state. Once you've completed work and its state enters a *Done*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work, or view the [**Recently completed** pivot from the **Work Items** page](../work-items/view-add-work-items.md). 
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2017" 
-
-Backlogs are designed to display work that is in progress. Once you've completed work and its state enters a *Done*, *Completed*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work. 
-
-::: moniker-end 
 
 In general, you'll want to display all items that are in the **In Progress** category state, which corresponds to the *Active* and *Committed* states. To focus on work that is proposed but not in progress, you can toggle the backlog view to turn off [**In Progress**](create-your-backlog.md#convert-ideas). This toggle is useful when [forecasting your product backlog](../sprints/forecast.md). 
 
@@ -221,7 +198,7 @@ Items that are owned by other teams appear with an information icon :::image typ
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Items that are owned by other teams appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::. 
 
@@ -233,20 +210,6 @@ Items that are owned by other teams appear with an information icon :::image typ
 
 ::: moniker-end   
 
-::: moniker range="tfs-2017" 
-
-Backlog displays the work item icons supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items owned by other teams appear with hollow-filled bars.  
-
-<img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership, TFS 2017 version." /> 
-::: moniker-end
-
-::: moniker range="<= tfs-2015" 
-
-Items that are owned by other teams appear with hollow-filled bars.  
-
-![Team backlog is filtered based on area path ownership, TFS 2015 and earlier versions.](media/ALM_OB_CustServTeamBacklog.png)  
-
-::: moniker-end   
 
 For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
 
@@ -270,7 +233,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 Here's another example that shows the **Epics** backlog for the **Management** team. 
 Drilling down, you can see all the backlog items and features, even though they 
@@ -278,12 +241,6 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 > [!div class="mx-imgBorder"]  
 > ![Example that shows the Epics backlog for the Management team, TFS 2017 and TFS 2018 versions.](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2015" 
-
-<img src="media/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" />  
 
 ::: moniker-end 
 
@@ -300,7 +257,6 @@ For example, you can create a team structure similar to this one with two manage
 
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
-
 ### Reordering and reparenting work items 
 
 All backlogs and boards support drag-and-drop to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
@@ -316,8 +272,6 @@ You can only use drag-and-drop to reorder or reparent work items assigned to are
 For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
-
-
 
 ## Permissions and access
 

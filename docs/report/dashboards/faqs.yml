@@ -7,7 +7,7 @@ metadata:
   ms.author: kaelli
   author: KathrynEE
   ms.topic: faq
-  monikerRange: '>= tfs-2017'
+  monikerRange: '<= azure-devops'
   "recommendations": "true"
   ms.date: 01/27/2022
 

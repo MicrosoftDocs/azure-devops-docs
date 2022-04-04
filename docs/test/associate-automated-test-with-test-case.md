@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Associate automated tests with test cases

@@ -149,7 +149,7 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 
 You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
--   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).   
+-   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).   
 -   **Help text**. See [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).    
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).  
   
@@ -278,7 +278,7 @@ You can change the friendly name of a work item field to meet the naming convent
 11. Notice, in the **Status** box, that the label for the renamed field, **Rank**, has not changed. This is because the field labels on the work item forms are scoped to the parent project and are independent of the server-wide field name just specified.  
   
     > [!NOTE]  
-    > For more information about how to change field labels on work item forms, see [Control XML element reference](../xml/control-xml-element-reference.md).  
+    > For more information about how to change field labels on work item forms, see [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).  
   
 12. Close the new Task and choose **No** when you are prompted to save the work item.  
   
@@ -366,7 +366,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
     Indexed: False  
     ```  
   
-     Before you can delete this field, you must remove it from each of the work item types listed for each project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](../xml/field-definition-element-reference.md), and [Control](../xml/control-xml-element-reference.md).  
+     Before you can delete this field, you must remove it from each of the work item types listed for each project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](../xml/field-definition-element-reference.md), and [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).  
   
 #### Delete a field from a project collection  
   
@@ -387,7 +387,7 @@ Enter **y** at the confirmation prompt to complete this step.
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
+**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.  
   
 Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
 

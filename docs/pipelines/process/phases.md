@@ -5,12 +5,12 @@ description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team F
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
 ms.date: 09/23/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Specify jobs in your pipeline
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

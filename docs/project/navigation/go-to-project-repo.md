@@ -7,13 +7,13 @@ ms.technology: devops-collab
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 02/08/2019
 ---
 
 # Switch project, repository, team 
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 
 Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.

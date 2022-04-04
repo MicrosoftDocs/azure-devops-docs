@@ -8,7 +8,7 @@ ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.author: chcomley
 author: chcomley
 ms.date: 02/17/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
  
 # Uninstall or disable extensions for Azure DevOps
@@ -99,7 +99,7 @@ To uninstall or disable an extension, perform the following steps.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 [Uninstall extension](#uninstall-extension) | [Disable extension](#disable-extension) 
 
@@ -167,7 +167,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 * * *
  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Enable or list extensions through the command line
 

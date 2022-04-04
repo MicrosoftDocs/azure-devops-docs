@@ -7,7 +7,7 @@ ms.author: jukullam
 author: juliakm
 ms.date: 08/17/2021
 ms.topic: overview
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to Azure

@@ -7,14 +7,14 @@ toc: show
 ms.technology: devops-code-git 
 ms.topic: reference
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Commit details
 
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 
 The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit. <!-- c123: Images need updated. -->

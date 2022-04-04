@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 01/24/2022
-monikerRange: '>= tfs-2015 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 # Buy access to Azure Test Plans
 

@@ -23,7 +23,7 @@ For example, you can find work items that were modified in the last three days w
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/example-work-item-queries/query-changed-date-last-3-days.png" alt-text="Screenshot of Query Editor, Changed Date >= 3.":::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Editor query filter based on recent changes.](media/query-by-date-example.png)  
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
@@ -68,7 +68,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="1":::
       **DateTime**   
@@ -292,7 +292,7 @@ To change the team parameter the system automatically sets, you choose it by typ
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Before creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 

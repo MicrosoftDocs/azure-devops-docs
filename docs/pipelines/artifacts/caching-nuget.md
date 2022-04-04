@@ -5,13 +5,13 @@ ms.topic: conceptual
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 11/30/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # How to cache NuGet packages to reduce the build time
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With pipeline caching, you can reduce your build time by caching your dependencies to be used in later runs. In this article, we will walk through the steps to cache and restore NuGet packages.
 

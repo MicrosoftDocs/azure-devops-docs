@@ -7,14 +7,14 @@ ms.assetid:
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops'
-ms.date: 12/14/2021
+monikerRange: 'azure-devops'
+ms.date: 03/31/2022
 ---
 
 # Manage permissions with command line tool
 
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Permissions grant access to perform a specific action on a specific resource as described in [Get started with permissions, access, and security groups](about-permissions.md). You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
 
@@ -442,9 +442,4 @@ See [Security namespace and permission reference for Azure DevOps](namespace-ref
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
 
-
-<!--- QUESTIONS   
-
-What is --local option? 
-
---> 
+ 

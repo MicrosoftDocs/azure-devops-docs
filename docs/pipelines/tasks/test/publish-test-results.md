@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: shashban
 author: shashban
 ms.date: 11/05/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish Test Results task

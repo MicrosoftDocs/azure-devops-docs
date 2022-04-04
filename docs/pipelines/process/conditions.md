@@ -5,12 +5,12 @@ description: Learn about how you can write custom conditions in Azure Pipelines 
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.date: 01/21/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Specify conditions
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="tfs-2017"
 

@@ -4,13 +4,13 @@ ms.topic: conceptual
 title: Webhooks with Azure DevOps
 description: Use webhooks with your Azure DevOps organization
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---
 
 # Webhooks
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Webhooks provide a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
 

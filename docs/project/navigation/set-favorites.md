@@ -8,13 +8,13 @@ ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 03/21/2019
 ---
 
 # Tutorial: Set personal or team favorites    
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Favorite ![start icon](../../media/icons/icon-favorite-star.png) those views that you frequently access. You can favorite all sorts of Azure DevOps features and tools&mdash;such as a project, repository, build pipeline, dashboard, backlog, board, or query. You can set favorites for yourself or your team. 
 

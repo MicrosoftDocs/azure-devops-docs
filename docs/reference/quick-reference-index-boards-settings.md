@@ -246,7 +246,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout.md?view=tfs-2015&preserve-view=true)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -296,7 +296,7 @@ With the On-premises XML process model, you modify the XML definition of work it
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout.md?view=tfs-2015&preserve-view=true)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  

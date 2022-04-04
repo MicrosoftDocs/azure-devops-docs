@@ -24,7 +24,7 @@ If it is your first time opening **Queries**, the page opens to **Favorites**. T
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 From your web browser, open **Boards>Queries**. 
 

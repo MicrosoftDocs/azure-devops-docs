@@ -7,12 +7,12 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
 ms.date: 06/03/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Use predefined variables
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

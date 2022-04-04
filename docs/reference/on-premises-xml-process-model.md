@@ -92,7 +92,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="2":::
    - [Add or modify a work item type](add-modify-wit.md)  
    - [Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
-   - [Customize the form](xml/change-work-item-form-layout.md)  
+   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout.md?view=tfs-2015&preserve-view=true)  
    - [Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)  
    - [Specify the WIT icon](xml/process-configuration-xml-element.md)  
    - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)   
@@ -171,7 +171,7 @@ With the following customizations, you can use the Configure Features Wizard to 
 - Agile tools: Customize the columns on the Kanban board, customize the quick add panel   
 - Office integration: Add or change how Project fields map to TFS fields    
 
-To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
+To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true).
 
 
 ### Compatible, but may require manual updates
