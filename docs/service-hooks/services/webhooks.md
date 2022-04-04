@@ -48,7 +48,7 @@ Only organization Owners or Project Collection Administrators can manage webhook
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Go to your project Service Hooks page: 
 

@@ -6,13 +6,13 @@ ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
+ms.date: 04/04/2022
 monikerRange: '<= azure-devops'
 ---
 
 # Install extensions
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Add new features and capabilities to your organization by installing extensions for Azure DevOps.
 

@@ -16,17 +16,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= tfs-2018"
-
 You can quickly find work items, code files, wiki pages, or packages based on a keyword, wildcards, and other supported search filters with the search function.
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-You can quickly find work items and code files based on a keyword, wildcards, and other supported search filters with the search function.
-
-::: moniker-end
 
 Take an at-a-glance look at all of the [search features](#search-features-usage-and-examples) further in this article.
 
@@ -53,7 +43,7 @@ Start your search using a keyword. You can then apply other options, as needed, 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 :::image type="content" source="media/shared/title-bar-search-box-select-type.png" alt-text="Search boxes in TFS 2018 and earlier":::
 

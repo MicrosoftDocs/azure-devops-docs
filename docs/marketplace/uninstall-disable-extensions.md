@@ -7,13 +7,13 @@ ms.technology: devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.author: chcomley
 author: chcomley
-ms.date: 02/17/2022
+ms.date: 04/04/2022
 monikerRange: '<= azure-devops'
 ---
  
 # Uninstall or disable extensions for Azure DevOps
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to uninstall or disable an extension that you don't need.
 
@@ -48,7 +48,7 @@ Learn how to uninstall or disable an extension that you don't need.
 ::: moniker-end
 
 
-::: moniker range="> tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 To uninstall extensions from the local gallery in Azure DevOps on-premises server, perform the following steps. 
 
@@ -60,7 +60,7 @@ To uninstall extensions from the local gallery in Azure DevOps on-premises serve
 
 ::: moniker-end
 
-::: moniker range="> tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 To uninstall extensions in a collection, perform the following steps. 
 
@@ -69,30 +69,6 @@ To uninstall extensions in a collection, perform the following steps.
 2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
 
    ![Remove extension](media/remove-extension-TFS.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-To uninstall or disable an extension, perform the following steps. 
-
-1. From your TFS home page (```https://{server}:8080/tfs/```), go to the project collection where you want to uninstall or disable the extension.
-
-2. Select **Manage extensions**.
-
-   **TFS 2015 Update 3**
-
-   <img alt="Manage extensions in TFS 2015 Update 3." src="media/manage-extensions.png" />
-
-   **TFS 2017**
-
-   <img alt="Manage extensions" src="media/manage-extensions2-new.png" />
-
-3. On the extensions tab, select the extension, and then uninstall or disable it.
-
-   <img alt="Uninstall or disable an extension" src="media/uninstall-disable.png" />
-
-   [[Need help?](faq-extensions.yml)]
 
 ::: moniker-end
 

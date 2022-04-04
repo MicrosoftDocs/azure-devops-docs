@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 10/26/2021  
 ---
 
 # Publish a Git repository to a wiki
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 In this quickstart, learn how to do the following tasks:
 

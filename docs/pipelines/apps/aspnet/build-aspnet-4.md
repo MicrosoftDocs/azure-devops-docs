@@ -21,16 +21,6 @@ monikerRange: '<= azure-devops'
 > [!NOTE]
 >
 > This article focuses on building .NET Framework projects with Azure Pipelines. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
-
-
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> 
-> This guidance applies to TFS version 2017.3 and newer.
-
-::: moniker-end
-
 ## Create your first pipeline
 
 ::: moniker range=">=azure-devops-2020"
