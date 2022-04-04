@@ -47,7 +47,7 @@ modal dialog, providing quick access to read and edit work items.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"  
+::: moniker range="tfs-2018"  
 
 ![Opening the work item in a modal dialogue](media/advanced-work-item-search-syntax/open-work-item-modal.png)
 
@@ -160,7 +160,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 
 ::: moniker-end
 
-::: moniker range=" <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
    
