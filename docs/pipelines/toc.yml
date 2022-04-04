@@ -167,7 +167,7 @@
         - name: Add widgets to a dashboard
           href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
         - name: Test Results Trend (Advanced)
-          href: ../report/dashboards/analytics-widgets.md?toc=%2Fazure%2Fdevops%2Fpipelines%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fpipelines%2Fbreadcrumb%2Ftoc.json&view=azure-devops#test-results-trend-advanced
+          href: ../report/dashboards/analytics-widgets.md?toc=%2Fazure%2Fdevops%2Fpipelines%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fpipelines%2Fbreadcrumb%2Ftoc.json&#test-results-trend-advanced
     - name: Manage pipelines with Azure CLI
       href: get-started/manage-pipelines-with-azure-cli.md
     - name: Clone or import a pipeline
