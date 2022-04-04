@@ -27,13 +27,6 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> 
-> The following guidance applies to TFS version 2017.3 and newer.
-
-::: moniker-end
 
 ## Create your first pipeline
 
@@ -229,7 +222,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 
 You can download NuGet packages from NuGet.org.
 
@@ -238,7 +231,7 @@ You can download NuGet packages from NuGet.org.
 `dotnet restore` internally uses a version of `NuGet.exe` that's packaged with the .NET Core SDK. `dotnet restore` can only restore packages specified in the .NET Core project `.csproj` files. 
 If you also have a Microsoft .NET Framework project in your solution or use `package.json` to specify your dependencies, use the **NuGet** task to restore those dependencies.
 
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 
 In .NET Core SDK version 2.0 and newer, packages get restored automatically when running other commands such as `dotnet build`.
 
