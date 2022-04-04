@@ -9,8 +9,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/28/2021
+ms.date: 04/04/2022
 ---
+
 
 # Dashboards, charts, and quick reference 
 
@@ -144,7 +145,7 @@ In context reports appear on the **Analytics** tab of these specific service pag
 In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 In-context reports appear on specific service pages, such as **Work>Backlog**, **Work>Backlogs** and **Build and Release>Builds**. 
 ::: moniker-end

@@ -9,14 +9,13 @@ metadata:
   ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
-  ms.date: 01/27/2022
-
+  ms.date: 04/04/2022
 
 title: FAQs on Azure DevOps dashboards, charts, and reports 
 
  
 summary: | 
-  [!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]  
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]   
 
   Find answers to frequently asked questions when using Azure DevOps dashboards, charts, and reports.  
 
@@ -99,23 +98,15 @@ sections:
 
       - question: Can I copy a dashboard widget? 
         answer: |
-          ::: moniker range=">= tfs-2018"
           **Yes**. You can copy or add a widget configured on one dashboard to another dashboard. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget). 
-          ::: moniker-end
-          ::: moniker range="< tfs-2018"
-          **No**. This feature isn't supported for TFS 2017 and earlier versions.      
-          ::: moniker-end
 
       - question: Can I copy a query chart? 
         answer: |
           ::: moniker range="azure-devops"
           **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget). Also, when you copy a dashboard, it copies any query charts added to the dashboard and configures them for the team you select. This essentially adds new queries and configures the charts. To learn more, see [Copy a dashboard](copy-dashboard.md). 
           ::: moniker-end
-          ::: moniker range=">= tfs-2018 < azure-devops"
-          **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget).  Also, when you copy a dashboard, it copies any query charts added to the dashboard and configures them for the team you select. This essentially adds new queries and configures the charts. To learn more, see [Copy a dashboard](copy-dashboard.md). 
-          ::: moniker-end
-          ::: moniker range="< tfs-2018"
-          **No**. This isn't a supported feature.      
+          ::: moniker range="< azure-devops"
+          **Yes**. You can copy a query-based widget from one dashboard to another. To learn how, see [Add widgets to a dashboard](add-widget-to-dashboard.md#copy-a-widget).  
           ::: moniker-end
 
       - question: Can I interact with a dashboard widget? 
