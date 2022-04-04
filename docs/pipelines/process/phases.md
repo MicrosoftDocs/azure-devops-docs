@@ -35,16 +35,6 @@ In other words, a job is the smallest unit of work that can be scheduled to run.
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-You can organize your release pipeline into jobs. Every release pipeline has at least one job. Jobs are not supported in a build pipeline in this version of TFS.
-
-> [!NOTE]
-> You must install Update 2 to use jobs in a release pipeline in TFS 2017.
-> Jobs in build pipelines are available in Azure Pipelines, TFS 2018.2, and newer versions.
-
-::: moniker-end
-
 ## Define a single job
 
 #### [YAML](#tab/yaml/)
@@ -256,13 +246,6 @@ Jobs can be of different types, depending on where they run.
 
 ::: moniker-end
 
-
-::: moniker range="tfs-2017"
-
-* **Agent pool jobs** run on an agent in the agent pool. These jobs are only available release pipelines.
-
-::: moniker-end
-
 ### Agent pool jobs
 
 These are the most common type of jobs and they run on an agent in an agent pool. 
@@ -360,13 +343,7 @@ YAML is not yet supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-::: moniker range="> tfs-2017"
 You add a server job in the editor by selecting '...' on the **Pipeline** channel in the **Tasks** tab of a pipeline. The properties for the server job are displayed when you select the job in the editor.
-::: moniker-end
-
-::: moniker range="tfs-2017"
-Server jobs are not supported in this version of TFS.
-::: moniker-end
 
 ---
 
@@ -475,7 +452,7 @@ When you specify multiple jobs in a build pipeline, they run in parallel by defa
 Multiple jobs you add to a build or a release pipeline run in sequence. You cannot configure the order of dependencies between jobs in this version of TFS.
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 Multiple jobs you add to a release pipeline run in sequence. You cannot configure the order of dependencies between jobs in this version of TFS. You cannot also use jobs with build pipelines.
 ::: moniker-end
 
@@ -594,7 +571,7 @@ Use the **Run this job** option on an agent or server job to run the tasks
   expressions can access variables available in the release pipeline.
 
 ::: moniker-end
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 Conditions are not supported in this version of TFS.
 ::: moniker-end
 

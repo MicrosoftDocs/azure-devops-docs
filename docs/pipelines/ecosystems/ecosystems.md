@@ -20,7 +20,7 @@ monikerRange: '<= azure-devops'
 
 You can select from the following languages and platforms to find guidance for building and deploying your app. 
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || >= azure-devops-2019"
+::: moniker range=" <= tfs-2018 || >= azure-devops-2019"
 
 ## Build your app
 
@@ -108,7 +108,7 @@ Build your app with any of the following languages.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 :::row:::
     :::column:::
@@ -186,7 +186,7 @@ Build your app with any of the following languages.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || >= azure-devops-2019"
+::: moniker range="tfs-2018 || >= azure-devops-2019"
 
 ## Deploy your app
 
@@ -253,7 +253,7 @@ Deploy your app to any of the following platforms.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 :::row:::
     :::column:::

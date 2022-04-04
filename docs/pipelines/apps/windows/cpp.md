@@ -18,14 +18,6 @@ monikerRange: '<= azure-devops'
 
 This guidance explains how to automatically build C++ projects for Windows.
 
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> 
-> This guidance applies to TFS version 2017.3 and newer.
-
-::: moniker-end
-
 ## Example
 
 This example shows how to build a C++ project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:

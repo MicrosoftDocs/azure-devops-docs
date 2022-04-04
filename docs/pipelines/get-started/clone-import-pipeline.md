@@ -212,12 +212,6 @@ To import a build definition, choose **+Import** from the **Build Definitions** 
 
 :::moniker-end
 
-:::moniker range="tfs-2017"
-
-This version of TFS doesn't support import/export for build definitions. For release definitions, you can import/export using the [Clone release definition (for TFS 2015 U2 and above)](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-import-export) extension.
-
-:::moniker-end
-
 * * *
 
 ## Next steps
