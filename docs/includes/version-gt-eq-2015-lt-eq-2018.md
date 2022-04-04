@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-**TFS 2018 - TFS 2015**
+**TFS 2018**
