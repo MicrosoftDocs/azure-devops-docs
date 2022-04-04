@@ -13,17 +13,14 @@ ms.date: 02/28/2022
 
 # Get started managing your project 
 
-[!INCLUDE [version-gt-eq-2015.md](../includes/version-gt-eq-2015.md)]  
+[!INCLUDE [version-lt-eq-azure-devops.md](../includes/version-lt-eq-azure-devops.md)]  
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults. 
 
 If you've created a project or been added to the **Project Administrators** group, you'll want to be familiar with the administrative tasks your charged with. there are a few tasks you might want to do to ensure a smooth operational experience. 
 
-::: moniker range=">= tfs-2018"
 > [!NOTE]   
 > This article provides an overview of tasks a member of the **Project Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Collection Administrators** group, see [Manage your organization or project collection](manage-organization-collection.md).
-::: moniker-end 
-
 
 [!INCLUDE [add-users-project](../includes/get-started/add-users-project.md)]  
  
@@ -138,15 +135,6 @@ Azure DevOps supports integration with Azure, GitHub, and many other services. A
 - [TFS administration](/azure/devops/server/index)
 
 ::: moniker-end
-
-::: moniker range="< tfs-2018"  
-
-- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
-- [TFS administration](/azure/devops/server/index)
-
-::: moniker-end
-
 
 <!--- 
 What to tell their users?
