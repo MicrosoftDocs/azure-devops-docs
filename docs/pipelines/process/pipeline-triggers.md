@@ -42,9 +42,10 @@ In this example we want to configure a pipeline resource trigger so that a pipel
 # pipeline runs when a run of the security-lib-ci pipeline completes
 resources:
   pipelines:
-  - pipeline: securitylib   # Name of the pipeline resource. Use this name when referencing the pipeline
-                            # e.g. to reference published artifacts
-    source: security-lib-ci # Azure Pipelines name of the source pipeline referenced
+  - pipeline: securitylib # Name of the pipeline resource. Use this name when referencing the pipeline
+                          # e.g. to reference published artifacts
+    source: security-lib-ci # The name of the pipeline referenced by this pipeline resource.
+                            # You can retrieve this name from the Pipelines landing page
     project: FabrikamProject # Required only if the source pipeline is in another project
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 ```
