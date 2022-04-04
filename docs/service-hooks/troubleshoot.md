@@ -37,7 +37,7 @@ and event payload data, select a subscription in the table and select **History*
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. To view the activity and status of your subscriptions,
 go to the Service Hooks page. 

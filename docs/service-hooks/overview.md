@@ -85,7 +85,7 @@ look at the information on the service that you're interested in.
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1.	Open the admin page for a project in web access.
 
@@ -173,8 +173,6 @@ A: Atlassian officially dropped support for HipChat. See more on that announceme
 
 
 <!-- ENDSECTION -->
-
-
 
 ## Related articles
 

@@ -121,7 +121,7 @@ Responsible for configuring project-level resources, including:
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
@@ -145,7 +145,7 @@ Responsible for configuring organization-level resources, including the followin
 To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Project Collection Administrators
 

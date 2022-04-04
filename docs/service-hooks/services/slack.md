@@ -36,7 +36,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="tfs-2018"
 
 ## Create a custom app in Slack
 
@@ -87,7 +87,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Go to your project Service Hooks page: 
 
@@ -109,10 +109,6 @@ subscriptions for completed builds, releases, pending approvals and more from th
 4. Now, when the event you configured occurs in your project, a notification appears in your team's Slack channel.
 
 	![Screenshot that shows a notification in a Slack channel.](./media/slack/notifications.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops-2019"
 
 ## Q & A
 
