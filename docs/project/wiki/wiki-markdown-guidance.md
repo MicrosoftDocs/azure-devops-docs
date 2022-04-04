@@ -8,13 +8,13 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 03/15/2022 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -256,11 +256,8 @@ In wiki pages, you can also create rich content using HTML tags.
 </p>
 ```
 
-::: moniker range=">= tfs-2018"
-
 > [!NOTE]
 > Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
-
 
 **Example - Embedded video**
 
@@ -311,8 +308,6 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
 <p><big>Bigger text</big></p>
 -->
-
-::: moniker-end
 
 ## Related articles
 

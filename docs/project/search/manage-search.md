@@ -12,7 +12,7 @@ monikerRange: '< azure-devops'
 
 # Manage Search indexing
 
-[!INCLUDE [version-gt-eq-2018-lt-azure-devops](../../includes/version-gt-eq-2018-lt-azure-devops.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can manage your search extension and indexing status, which include the following actions:
 [Check indexing status](#check-indexing-status)
