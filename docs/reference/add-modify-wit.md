@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '< azure-devops' 
-ms.date: 11/17/2021
+ms.date: 04/04/2022
 ---
 
 # Add or modify a work item type 
@@ -227,7 +227,6 @@ To learn how to add or remove work item types from the backlog or task board, se
 
 
 <a id="change-wit-color">  </a>
-::: moniker range=">= tfs-2015"
 
 ## Change the color, icon, or workflow state color of a work item type
 
@@ -238,7 +237,6 @@ In the web portal, work items appear in query results and on the backlog and boa
  
 <img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing work item type color, icon, and state color" />  
 
-::: moniker-end
 
 ## Change the type of an existing work item  
 
@@ -288,7 +286,7 @@ When you rename a work item type that belongs to a category, you have to update 
 For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).  
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Enable features after upgrade 
 

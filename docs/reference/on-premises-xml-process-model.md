@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '< azure-devops'
-ms.date: 05/06/2019
+ms.date: 04/04/2022
 ---
 
 
@@ -28,7 +28,7 @@ For Azure DevOps Server 2019 and later versions, you have a choice of process mo
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Team Foundation Server uses the On-premises XML process model to support customizations. This model relies on updating and importing XML files using the **witadmin** command line tool. 
 ::: moniker-end  
