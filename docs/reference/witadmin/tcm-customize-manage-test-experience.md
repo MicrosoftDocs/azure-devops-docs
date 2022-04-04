@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2022
+ms.date: 04/04/2022
 ---
 
 # Customize and manage the test experience
@@ -37,29 +37,10 @@ Also, you can use `tcm` command options to [copy and clone test plans and test s
 To run the **tcm** command-line tool, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 
 
-::: moniker range=">= tfs-2017"
 
 #### Azure DevOps Services, Azure DevOps Server 2020 - 2019, TFS 2018 and TFS 2017, Visual Studio 2017 client:
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-#### TFS 2015, Visual Studio 2015 client 
-
-`%programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-
-#### TFS 2013, Visual Studio 2013 client 
-
-`%programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE`
-
-::: moniker-end
 
 ## Syntax  
 
