@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 01/27/2022
+ms.date: 04/04/2022
 ---
 
 # About dashboards, charts, reports, & widgets
@@ -246,7 +246,7 @@ For details, see:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Active bugs](media/gs-monitor-charts-active-bugs.png)   
 
@@ -549,7 +549,7 @@ You can add data to support reporting requirements by [adding a custom field](..
 You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
 ::: moniker-end
