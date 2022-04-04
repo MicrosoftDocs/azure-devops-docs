@@ -1,18 +1,18 @@
 ---
 title: New work item web form 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
 ms.technology: devops-agile
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '<= azure-devops'
 ms.date: 03/20/2018
 ---
 
 # New work item tracking experience
 
-[!INCLUDE [version-gt-eq-2017-lt-eq-2019](../../includes/version-gt-eq-2017-lt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!IMPORTANT]  
 > The new form and its corresponding features are available from the web portal for TFS 2017 and later versions.<br/> 
@@ -90,6 +90,7 @@ When you switch, all forms displayed through the web portal for all work item ty
 As this switch is set on a per-user basis, other users will continue to see the old form until they also choose to switch.  
 
 <a id="switch-back">  </a> 
+
 ### Switch back to the old form 
 
 If your admin has enabled opt-in to support switch back. Simply choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the context menu to switch back to the old layouts.  

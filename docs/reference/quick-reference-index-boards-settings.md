@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 04/04/2022
 ---
 
 # Quick reference index for Azure Boards settings 

@@ -7,8 +7,8 @@ ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '= tfs-2018' 
-ms.date: 09/08/2017
+monikerRange: 'tfs-2018' 
+ms.date: 04/04/2022
 ---
 
 # Define groups, teams, and permissions using the Groups and Permissions Plug-in
