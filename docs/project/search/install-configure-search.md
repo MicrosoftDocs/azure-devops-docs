@@ -247,7 +247,7 @@ However, there might be cases where you no longer want to use Search or you want
    ![Screenshot of checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
    ![Screenshot of Checking the extension is installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 
@@ -281,7 +281,7 @@ However, there might be cases where you no longer want to use Search or you want
    ![Screenshot Checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
-   ::: moniker range="< azure-devops-2019"
+   ::: moniker range="tfs-2018"
    ![Screenshot of Checking that the extension's installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 
