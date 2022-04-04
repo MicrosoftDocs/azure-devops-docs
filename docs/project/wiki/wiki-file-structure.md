@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 05/27/2021  
 ---
 
 # Wiki files and file structure
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn about the files and file structure for project wikis and code wikis. The following guidance might specify code wikis, however it applies to both types of wiki.
 

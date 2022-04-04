@@ -154,15 +154,9 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
 
 ::: moniker-end
 
@@ -236,17 +230,12 @@ In this example, the classic editor scheduled trigger has two entries, which pro
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-
-![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
-
-::: moniker-end
 
 #### Example: Nightly build with different frequencies
 
@@ -266,21 +255,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-**TFS 2017.3 through TFS 2018**
 
 ![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-
-**TFS 2017.1 and older versions**
-
-![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
-
-::: moniker-end
 
 * * *
 
@@ -416,17 +397,12 @@ Classic scheduled pipelines don't have a **Scheduled runs** view, but you can vi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="= tfs-2018"
 
 ![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-
-![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
-
-::: moniker-end
 
 * * *
 

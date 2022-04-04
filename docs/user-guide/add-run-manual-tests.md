@@ -38,7 +38,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](../organizations/projects/create-project.md). If you haven't been added as a team member, [get invited now](../organizations/security/add-users-team-project.md).
 
@@ -80,7 +80,7 @@ Before you run the test, you must add details.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To add tests, open the menu for the work item.
 
@@ -121,7 +121,7 @@ Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run test** from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu for the inline test.  
 
@@ -142,7 +142,7 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can update the status of the test from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu.
 
@@ -166,7 +166,7 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 When you first open the Kanban board, you'll see an unexpanded view of checklists.
 

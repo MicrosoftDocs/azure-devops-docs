@@ -91,7 +91,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range=" tfs-2018"
 
 :::row:::
    :::column span="":::

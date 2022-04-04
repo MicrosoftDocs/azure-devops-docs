@@ -77,20 +77,12 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker-end
  
-    ::: moniker range=">= tfs-2017 <=tfs-2018"
+    ::: moniker range="tfs-2018"
 
     From the project summary page, hover over a service and then choose the page you want. To choose another project, choose the ![Azure DevOps logo](../../media/icons/project-icon.png) Azure DevOps logo.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](media/connect-projects/project-summary-page-choose-app-horz.png)  
-
-    ::: moniker-end
-
-    ::: moniker range="<= tfs-2015"
-
-    Choose your project or team from the set of available links, or choose **Browse** to access all projects and teams.
-
-	![Web portal, TFS, Overview](media/connect-tp-tfs-web-portal.png) 
 
     ::: moniker-end
 
@@ -100,28 +92,12 @@ To learn more about each page and the tasks you can do, see [Web portal navigati
 
 ### Sign in with different credentials
 
-::: moniker range="<= tfs-2015"
-
-1. Open Windows Security from the context menu associated with your name.
-
-    ![Sign in As link in user profile menu](media/connect-tp-open-profile.png)
-
-1. Enter your credentials.
-
-    ![Enter user name and password to access TFS](media/connect-projects-tfs/IC657077.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
 1. Open your profile menu and choose **Sign out**.
 
     > [!div class="mx-imgBorder"]  
 	> ![Sign out](media/sign-out.png)
 
 1. Choose **Sign in** and enter your credentials.
-
-::: moniker-end
 
 ### Open the web portal from Team Explorer
 
@@ -274,7 +250,7 @@ To connect to a project, you need your user account added to the project. The **
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Azure DevOps Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
