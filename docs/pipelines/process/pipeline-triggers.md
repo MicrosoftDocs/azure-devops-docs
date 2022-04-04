@@ -4,7 +4,7 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 05/07/2021
+ms.date: 04/04/2022
 ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2020"
 ---
@@ -29,14 +29,20 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#define-a-pipelines-resource).
 
-The following example has two pipelines - `app-ci` (the pipeline defined by the YAML snippet), and `security-lib-ci` (the triggering pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of `security-lib-ci` is built.
+In this example we want to configure a pipeline resource trigger so that a pipeline named `app-ci` runs after a run of the `security-lib-ci` pipeline completes.
 
+- `security-lib-ci` - This pipeline runs first. We want to run the `app-ci` pipeline anytime a run of `security-lib-ci` completes.
+
+- `app-ci` - This pipeline is depicted in the following YAML snippet and is configured with a pipeline resource trigger that causes the `app-ci` pipeline to run automatically every time a new version of `security-lib-ci` is built.
 
 ```yaml
-# this is being defined in app-ci pipeline
+# app-ci pipeline YAML file resources section
+# We are setting up a pipeline resource that references the security-lib-ci
+# pipeline and setting up a pipeline completion trigger so that our app-ci
+# pipeline runs when a run of the security-lib-ci pipeline completes
 resources:
   pipelines:
-  - pipeline: securitylib   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+  - pipeline: securitylib   # Name of the pipeline resource. Use this name when referencing the pipeline
                             # e.g. to reference published artifacts
     source: security-lib-ci # Azure Pipelines name of the source pipeline referenced
     project: FabrikamProject # Required only if the source pipeline is in another project
