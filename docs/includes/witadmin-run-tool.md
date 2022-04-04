@@ -24,33 +24,13 @@ or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depe
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 *Visual Studio 2017 or Team Explorer 2017 client:*
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
 or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.  
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-*Visual Studio 2015 client:*
-
-`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-
-*Visual Studio 2013 client:*
-
-`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE`
-
-*Team Explorer 2013 client:* 
-
-`cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
 ::: moniker-end
 
