@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
 ms.custom: seodec18
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Extract Files task

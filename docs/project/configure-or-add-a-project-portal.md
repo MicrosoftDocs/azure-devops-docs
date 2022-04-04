@@ -34,7 +34,7 @@ The project portal is a site associated with a team project for the purposes of 
 
 ::: moniker range="<= tfs-2017"
 
-If your team project was created using the Basic configuration, you won't have access to a SharePoint integrated project portal. If you want to configure a portal that points to a networked web site, you can. Also, you can configure the portal and [process guidance](configure-or-redirect-process-guidance.md) independently of each other.  
+If your team project was created using the Basic configuration, you won't have access to a SharePoint integrated project portal. If you want to configure a portal that points to a networked web site, you can. Also, you can configure the portal and [process guidance](/previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true) independently of each other.  
   
 Choose one of the following options based on your deployment configuration and team requirements:  
   

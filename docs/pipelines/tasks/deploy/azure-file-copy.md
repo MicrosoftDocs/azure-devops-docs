@@ -7,7 +7,7 @@ ms.custom: seodec18, fasttrack-edit
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure File Copy task

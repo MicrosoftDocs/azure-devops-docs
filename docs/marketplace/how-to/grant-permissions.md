@@ -7,12 +7,12 @@ ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage extension permissions
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 

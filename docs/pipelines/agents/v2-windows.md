@@ -5,17 +5,17 @@ description: Learn how to use Windows agents to build and deploy your Windows an
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.date: 07/15/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Self-hosted Windows agents
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="tfs-2015"
 
 > [!IMPORTANT]
-> For TFS 2015, see [Self-hosted Windows agents - TFS 2015](v1-windows.md).
+> For TFS 2015, see [Self-hosted Windows agents - TFS 2015](/previous-versions/azure/devops/pipelines/v1-windows?&view=azure-devops&preserve-view=true).
 
 ::: moniker-end
 
@@ -23,7 +23,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
-> * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
+> * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](/previous-versions/azure/devops/pipelines/v1-windows?&view=azure-devops&preserve-view=true).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
 [!INCLUDE [include](includes/concepts.md)]

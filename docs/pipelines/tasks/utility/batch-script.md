@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.custom: seodec18
 ms.date: 02/18/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Batch Script task

@@ -303,7 +303,7 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 
 **A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 Also, you can use the [**az devops project** commands](/cli/azure/devops/project).  
 ::: moniker-end
 
@@ -315,10 +315,4 @@ Also, you can use the [**az devops project** commands](/cli/azure/devops/project
 - [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Understand differences between Azure DevOps](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
-<!--- Various blog resources 
-
-- [](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx)  
-- [One project to rule them out](https://nkdagility.com/one-team-project/)  
-- [Working within a single Project with Team Foundation Server 2012](https://nkdagility.com/working-within-a-single-team-project-with-team-foundation-server-2012/)
-
--->
+ 

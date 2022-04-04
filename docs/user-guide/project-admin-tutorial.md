@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '>= tfs-2015'  
+monikerRange: '<= azure-devops'  
 ms.date: 02/28/2022
 ---
 

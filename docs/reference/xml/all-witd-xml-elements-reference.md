@@ -158,7 +158,7 @@ The structural elements used in the previous example are described in the follow
    **FORM**
    :::column-end:::
    :::column span="3":::
-   Specifies the  [design of the work item form](design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.
+   Specifies the  [design of the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true) by defining the fields and controls that appear on the form and in what order.
 
    **For TFS 2015 and earlier versions**, the **FORM** element contains **Layout**, **Control**, **Group**, **TAB**, **TabGroup**, **Splitter**, and other elements. 
 

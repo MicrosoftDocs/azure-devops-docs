@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2020
+ms.date: 04/01/2022
 ---
 
 # Field descriptions for default and work item fields used in process templates
@@ -30,7 +30,7 @@ To support other tracking needs, you can [define your own custom work item field
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 To support other tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
 

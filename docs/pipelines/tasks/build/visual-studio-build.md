@@ -7,7 +7,7 @@ ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
 ms.author: vijayma
 author: vijayma
 ms.date: 12/01/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Visual Studio Build task

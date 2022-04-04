@@ -9,12 +9,12 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.date: 06/08/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage Wiki permissions
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn about managing permissions for your wiki. By default, all members of the Contributors group can edit Wiki pages.
 

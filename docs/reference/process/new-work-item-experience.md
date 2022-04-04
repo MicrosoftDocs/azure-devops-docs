@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017 <= azure-devops-2019'
+monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
 
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 > [!IMPORTANT]  
 > The new form and its corresponding features are available from the web portal for TFS 2017 and later versions.<br/> 
-> - For TFS 2017 users, the new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
+> - For TFS 2017 users, the new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true).<br/>
 > - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017 or later version](https://visualstudio.microsoft.com/downloads/) to access the new form.  
 
 Work items have received a facelift. To provide a fresher, more modern experience to tracking work, we've replaced our "old and clunky" form. Along with the noticeable responsive form layout, with the nre form you now have access to these features:
@@ -105,7 +105,7 @@ When you switch back, all forms revert to the layout they had previously. If you
 The new form also supports customization through the user interface with the Inheritance process model. To learn more about process models and what's supported with each, see [Customize your work tracking experience](../customize-work.md). 
 
 To manage the rollout of the new form or customize it, see:  
-- [Manage new form rollout](../manage-new-form-rollout.md)  
+- [Manage new form rollout](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true)  
 - [Customize the new form](../customize-wit-form.md) (On-premises XML process model)
 
 For guidance in using the new form, see:

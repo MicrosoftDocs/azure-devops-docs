@@ -7,12 +7,12 @@ ms.author: rabououn
 author: juliakm
 ms.date: 11/02/2021
 ms.custom: contperf-fy21q1, contperf-fy21q2
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Set retention policies for builds, releases, and tests
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="<= tfs-2018"
 

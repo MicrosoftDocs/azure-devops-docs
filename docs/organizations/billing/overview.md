@@ -9,12 +9,12 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 ms.date: 01/18/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Billing overview for Azure DevOps
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [Set up billing](set-up-billing-for-your-organization-vs.md) when you need more than the *free tier* of resources in your organization, or to buy other features offered by Microsoft or other companies.
 

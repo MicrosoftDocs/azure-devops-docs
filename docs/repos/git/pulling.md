@@ -1,51 +1,102 @@
 ---
 title: Pull changes to your local Git repo
 titleSuffix: Azure Repos
-description: Use Git pull, fetch, and merge to get code from others
+description: Learn how to use Git fetch, merge, rebase, and pull to get code from others by using Visual Studio or the Git command line.
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 09/28/2021
+ms.date: 03/29/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Update code with fetch and pull
+# Update code with fetch, merge, and pull
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-Update the code in your local repo with the changes from other members of your team using the following commands:
+When there are several contributors to a project, keep your local Git repo updated by downloading and integrating work that others uploaded to the project's remote repo. These Git commands update your local repo:
 
-- `fetch` , which downloads the changes from your remote repo but doesn't apply them to your code.
-- `merge` , which applies changes taken from `fetch` to a branch on your local repo.
-- `pull` , which is a combined command that does a `fetch` and then a `merge`.
+- `fetch` downloads any new commits that others uploaded to the remote repo. The remote-tracking branches in local repo cache are updated&mdash;local branches remain unchanged.
+- `merge` integrates commits from one or more source branches into a target branch.
+- `rebase` integrates commits from a source branch into a target branch, but uses a different strategy to `merge`.
+- `pull` performs a `fetch` and then a `merge` or `rebase` to integrate fetched commits into your current local branch.
 
-In this tutorial you learn how to:
+Visual Studio uses a subset of those Git commands when you [synchronize](/visualstudio/version-control/git-fetch-pull-sync) your local repo with a remote repo.
+
+For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
+
+This article provides procedures for the following tasks:
 
 > [!div class="checklist"]
-> * Download changes with fetch
-> * Update branches with merge
-> * Fetch and merge with pull
-> * Update your local branch with the latest changes from main
-
-
-> [!TIP]   
-> If there's a merge conflict between a commit you haven't [pushed](pushing.md) yet and a commit you're merging or pulling, [resolve those conflicts](merging.md) before you finish updating your code.
-
-
+> * Download changes with _fetch_
+> * Update branches with _merge_ or _rebase_
+> * Download changes and update branches with _pull_
 
 ## Download changes with fetch
 
-You download changes to your local branch from the remote through `fetch`. `Fetch` asks the remote repo for all commits and new branches that others have pushed but you don't have and downloads them into your repo, creating local branches as needed.
+Git `fetch` downloads remote branch commits and referenced file objects that don't exist in your local repo and updates the [remote-tracking](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) branches in local repo cache. Remote-tracking branches are locally cached read-only copies of remote branches and aren't your local branches. Git `fetch` doesn't update your local branches. For example, if a remote repo designated by `origin` has a `bugfix3` branch, Git `fetch` will update the remote-tracking branch named `origin/bugfix3` and not your local `bugfix3` branch. You can use remote-tracking branches to:
 
-`Fetch` doesn't merge any changes into your local branches. It only downloads the new commits for your review.
+- Compare a remote-tracking branch with a local branch to review fetched changes.
+- Merge a remote-tracking branch into a local branch.
+- Create a new local branch from a remote-tracking branch.
+
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git `fetch`.
+
+:::row:::
+  :::column span="":::
+
+    **Visual Studio Git** <br><br>
+
+    1. In the **Git Changes** window, choose **Fetch**. Then select **outgoing/incoming** to open the **Git Repository** window.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window.png" border="true" alt-text="Screenshot of the Fetch buttons and Incoming link in the Git Changes window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-changes-window-lrg.png":::
+
+       You can also choose **Fetch** from the Git menu.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-menu.png" border="true" alt-text="Screenshot of the Fetch option in the Git menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-menu-lrg.png":::
+
+    2. In the **Git Repository** window, fetched commits appear in the **Incoming** section. Select a fetched commit to see the list of changed files in that commit. Select a changed file to see a diff view of changed content.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/fetch-git-repository-window.png" border="true" alt-text="Screenshot of the Git Repository menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/fetch-git-repository-window-lrg.png":::
+
+  :::column-end:::
+  :::column span="":::
+
+    **Visual Studio Team Explorer** <br><br>
+
+    1. In **Team Explorer**, select **Home** and then choose **Sync** to open the **Synchronization** view.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option within Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/sync-lrg.png":::
+
+    2. In the **Synchronization** view, choose **Fetch**. Both **Fetch** buttons do the same thing. When downloaded, fetched commits will appear in the **Incoming Commits** section.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetch-synchronization-view.png" border="true" alt-text="Screenshot of the Fetch button in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetch-synchronization-view-lrg.png":::
+
+    3. In the **Incoming Commits** section, right-click a commit and then choose **View Commit Details** to see the changed files.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetched-synchronization-view.png" border="true" alt-text="Screenshot of the context menu for incoming commits in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetched-synchronization-view-lrg.png":::
+
+    4. In the **Commit Details** window, the changed files are listed in the **Changes** section.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/fetch-commit-details-window.png" border="true" alt-text="Screenshot of the Commit Details window within Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/fetch-commit-details-window-lrg.png":::
+
+       Double-click a changed file to open a diff view of changed content.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/file-diff.png" border="true" alt-text="Screenshot of a file diff window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/file-diff-lrg.png":::
+
+  :::column-end:::
+:::row-end:::
 
 > [!TIP]
-> To help keep your branches list clean and up to date, configure Git to prune remote branches during fetch. You can configure this setting from the [command line](git-config.md?tabs=command-line#prune-remote-branches-during-fetch) or from within [Visual Studio](git-config.md?tabs=visual-studio#prune-remote-branches-during-fetch).
+> **Fetch** won't delete remote-tracking branches in your local repo cache that no longer have a remote counterpart. To configure Visual Studio to [prune](https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt---prune) stale remote-tracking branches during a **Fetch**:
+> - Select **Tools** > **Options** > **Source Control** > **Git Global Settings**.
+> - Set the **Prune remote branches during fetch** option to `True`.
 
-#### [Visual Studio](#tab/visual-studio/)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+#### [Visual Studio 2017](#tab/visual-studio-2017)
 
 Visual Studio uses the **Sync** view in Team Explorer to `fetch` changes.
 Changes downloaded by `fetch` aren't applied until you **Pull** or **Sync** the changes.
@@ -60,138 +111,138 @@ Changes downloaded by `fetch` aren't applied until you **Pull** or **Sync** the 
 
    There are two **Fetch** links, one near the top and one in the **Incoming Commits** section. You can use either one.
 
-1. Review the results of the fetch operation in under **Incoming Commits**.
+1. Review the results of the fetch operation under **Incoming Commits**.
 
    ![Incoming commits](media/pulling/incoming-commits.png)
 
-#### [Command Line](#tab/command-line/)
+> [!TIP]
+> **Fetch** won't delete remote-tracking branches in your local repo cache that no longer have a remote counterpart. To remove stale remote-tracking branches, configure [Visual Studio to prune remote-tracking branches](git-config.md?tabs=visual-studio#prune-remote-branches-during-fetch) during a **Fetch**.
 
-Run the `git fetch` command from the command line to download changes to your local branch.
+
+#### [Git Command Line](#tab/git-command-line)
+
+To download new commits from a specific remote branch, run the Git `fetch` command:
+
+```cmd
+git fetch <remote repo> <remote branch name>
+```
+
+To run Git `fetch` for all remote branches, use:
+
+```cmd
+git fetch <remote repo>
+```
+
+When you clone a remote repo, Git assigns the alias `origin` as shorthand for the URL of the remote repo that you cloned. Run `git remote -v` to check the `origin` alias value. To add the `origin` alias manually, run `git remote add origin <remote repo url>`. With the `origin` alias, you can simplify the Git `fetch` command to:
 
 ```cmd
 git fetch
 ```
 
-After you run `git fetch`, you'll see results similar to the following example:
-
-```cmd
-remote: Found 3 objects to send. (9 ms)
-Unpacking objects: 100% (3/3), done.
-   e2ccee6..55b26a5  feature1   -> origin/feature1
-```
-
-* * *
-
-## Update branches with merge
-
-Apply changes downloaded through `fetch` using the `merge` command. `Merge` takes the commits retrieved from `fetch` and tries to add them to your local branch.
-The merge keeps the commit history of your local changes. When you share your branch with [push](pushing.md), Git knows how others should merge your changes.
-
-The challenge with `merge` is when a commit taken from `fetch` conflicts with an existing unpushed commit on your branch.
-Git is generally very smart about resolving merge conflicts automatically, but sometimes you must [resolve merge conflicts manually](merging.md) and complete the merge with a new `merge` commit.
-
-#### [Visual Studio](#tab/visual-studio/)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
-Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** view.
-
-**Sync** is a combined operation of pulling remote changes and then pushing local ones. This operation synchronizes the commits on the local and remote branch.
-
-1. In Team Explorer, select the **Home** button and choose **Sync**.
-
-   ![Synchronization view, Visual Studio.](media/pulling/synchronization-menu.png)
-
-1. In **Synchronization**, select **Sync**.
-
-   ![In Synchronization, select Sync.](media/pulling/sync.png)
-
-1. Review the confirmation message when the sync operation completes.
-
-   ![Synch operation complete](media/pulling/sync-results.png)
-
-#### [Command Line](#tab/command-line/)
-
-Running `merge` without any flags or parameters adds the commits downloaded from `fetch` into the local branch.
-Git adds a merge commit if you have any conflicts. This merge commit has two parent commits, one for each branch, and contains the changes committed to resolve the conflicts between branches.
-
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git merge
-```
-
-
-```Updating e2ccee6..55b26a5
- 1 file changed, 1 insertion(+) 
-```
-
-Specify the `--no-commit` parameter to merge without committing. The command attempts to merge but not commit the final changes. This parameter gives you a chance to inspect the changed files before finalizing the merge with a commit.
-
-* * *
-<a name="pull"></a>  
-
-## Fetch and merge with pull
-
-`Pull` does a `fetch` and then a `merge` to download the commits and update your local branch in one command instead of two.
-Use `pull` to make your branch current with the remote when you aren't worried about reviewing the changes before merging them into your own branch.
-
-#### [Visual Studio](#tab/visual-studio/)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
-Open the Team Explorer and open the Sync view. Then click the **Pull** link under **Incoming Commits** to `pull` remote changes and merge them into your local branch. Pulling
-updates files in your open project, so make sure to [commit your changes](commits.md) before pulling.
-
-1. In Team Explorer, select the **Home** button and choose **Sync**.
-
-   ![Synchronization view in Team Explorer.](media/pulling/synchronization-menu.png)
-
-1. In **Synchronization**, choose **Pull** to fetch remote changes and merge them into your local branch.
-
-   ![Screenshot that shows choosing Pull.](media/pulling/pull.png)
-
-   There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one.
-
-1. Review the confirmation message when the pull operation completes.
-
-   ![Pull operation complete](media/pulling/pull-results.png)
-
-#### [Command Line](#tab/command-line/)
-
-`git pull` without any options does a `fetch` of the changes you don't have from `origin` and will `merge` the changes for your current branch.
-
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git pull
-
-Updating 55b26a5..e7926cd
- 1 file changed, 2 insertions(+), 1 deletion(-) 
-```
-
-Pull a remote branch into a local one by passing remote branch information into `pull`:
-
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git pull origin users/frank/bugfix
-```
-
-A `pull` command is a useful way to directly merge the work from remote branch into your local branch.
-
-* * *
-
-## Update your branch with the latest changes from main
-
-When working in a branch, you may want to incorporate the latest changes from the main branch into your branch. There are two approaches you can use: rebase or merge.
-
-- **Rebase** takes the changes made in the commits in your current branch and replays them on the history of another branch. Rebasing rewrites the commit history of your current branch. The history starts from the most recent commit in the target branch of the rebase.
-- **Merge** merges the changes from the source branch to the target branch using a merge commit, which becomes part of the commit history.
+For more information on Git `fetch` options, see the [Git reference manual](https://git-scm.com/docs/git-fetch#_options).
 
 > [!NOTE]
-> This article demonstrates the `merge` approach. For more information on `rebase` and guidance on which method is right for your scenario, see [Apply changes with Rebase - When to rebase vs. merge](rebase.md#when-to-rebase-vs-merge) and [Rebase vs merge](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_vs_merge) from the Pro Git book.
+> By default, Git `fetch` won't delete remote-tracking branches in your local repo cache that no longer have a remote counterpart. To remove stale remote-tracking branches, run Git `fetch` with the `--prune` flag, or configure [Git to prune remote-tracking branches](git-config.md?tabs=command-line#prune-remote-branches-during-fetch) during Git `fetch`.
 
-#### [Visual Studio](#tab/visual-studio/)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
+* * *
+
+
+After a Git `fetch`, you can compare a local branch with its corresponding remote-tracking branch to see what changed on the remote branch. If you decide to update your current local branch with fetched changes, you can perform a Git [merge](/azure/devops/repos/git/merging?tabs=visual-studio) or [rebase](/azure/devops/repos/git/rebase?tabs=visual-studio). Or, you can run Git `pull`, which combines a Git `fetch` with a Git `merge` or `rebase`. Both Git `merge` and `rebase` update a target branch by applying commits from a source branch onto it. However, Git `merge` and Git `rebase` use different strategies. For more information, see [Update branches with merge or rebase](#update-branches-with-merge-or-rebase) and [When to rebase vs. merge](/azure/devops/repos/git/rebase?view=azure-devops&tabs=visual-studio#when-to-rebase-vs-merge&preserve-view=true).
+
+## Update branches with merge or rebase
+
+Git `merge` and Git `rebase` are extensively used in the [Git workflow](gitworkflow.md). When working on a local feature or bugfix branch, it's common practice to:
+
+1. Periodically, switch to the local `main` branch in order to [pull](#download-changes-and-update-branches-with-pull) new remote commits to keep it up-to-date. If you don't work directly in your local `main` branch, Git `pull` will update your local `main` branch using a simple [fast-forward merge](https://git-scm.com/docs/git-merge#_fast_forward_merge).
+1. Integrate the new commits in your local `main` branch into your local feature branch. If you're the only person working on your feature branch, consider using Git `rebase` to integrate the new commits. Otherwise, use Git `merge` to perform a [no-fast-forward merge](https://git-scm.com/docs/git-merge#_true_merge), which generates an extra merge commit.
+1. Frequently [push](pushing.md) your new local feature branch commits to the corresponding remote branch to back up your work.
+1. On completion of your feature, create a [pull request](pull-requests.md) to merge your remote feature branch into the remote `main` branch.
+
+This approach helps you:
+
+- Stay aware of recent work by others that might affect your work.
+- Promptly resolve any conflicts between your work and that of others.
+- Apply your new feature on top of up-to-date project content.
+- Get a [pull request](pull-requests.md) review of your work.
+
+Here's a visual comparison of the most common merge and rebase strategies.
+
+:::image type="content" source="media/pulling/merge-types.png" border="true" alt-text="Diagram showing the before and after commits when using merge and rebase.":::
+
+### Merge
+
+Git `merge` integrates commits from a source branch into your current local branch (the target branch). If the last target branch commit exists within the source branch, the merge will be a [fast-forward merge](https://git-scm.com/docs/git-merge#_fast_forward_merge). Otherwise, the merge will be a [no fast-forward merge](https://git-scm.com/docs/git-merge#_true_merge), which generates an extra merge commit.
+
+If you don't work directly in your local `main` branch, Git `merge` can update your local `main` branch using a simple fast-forward merge. For more information on Git `merge` and merge strategies, see the [Git reference manual](https://git-scm.com/docs/git-merge#_options).
+
+> [!TIP]
+> If the source branch is a remote-tracking branch, ensure that branch is up-to-date by running a Git [fetch](#download-changes-with-fetch) before the merge.
+
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git `merge`.
+
+:::row:::
+  :::column span="":::
+
+    **Visual Studio Git** <br><br>
+
+    1. Choose **Git > Manage Branches** from the menu bar to open the **Git Repository** window.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+
+    2. In the **Git Repository** window, right-click the target branch and select **Checkout**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
+
+    3. Right-click the source branch, and select **Merge \<source-branch\> into \<target-branch\>**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-git-repository-window.png" border="true" alt-text="Screenshot of the Merge option in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-git-repository-window-lrg.png":::
+
+    4. Visual Studio will display a confirmation message after a successful merge.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation-lrg.png":::
+
+       If the merge is halted due to merge conflicts, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict-lrg.png":::
+    
+  :::column-end:::
+  :::column span="":::
+
+    **Visual Studio Team Explorer** <br><br>
+
+    1. In **Team Explorer**, select **Home** and choose **Branches**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
+
+    2. In the **Branches** view, right-click the target branch and select **Checkout**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
+
+    3. Right-click the source branch, and select **Merge From**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge.png" border="true" alt-text="Screenshot of the Merge From option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-lrg.png":::
+
+    4. Verify the merge options and then click **Merge**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-details.png" border="true" alt-text="Screenshot of the merge details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-details-lrg.png":::
+
+    5. Visual Studio will display a confirmation message after a successful merge.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation-lrg.png":::
+
+       If there are conflicts during the merge, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict-lrg.png":::
+
+  :::column-end:::
+:::row-end:::
+
+
+#### [Visual Studio 2017](#tab/visual-studio-2017)
 
 > [!NOTE]
 > The `git pull origin main` command combines `git fetch` and `git merge` commands. To do this properly in Visual Studio integration, you will need to **Sync** in **Team Explorer** to do the `fetch` part. This ensures your local git repository is up to date with its remote origin. 
@@ -208,35 +259,277 @@ To merge the latest changes from the main branch to your branch:
 
    ![Merge from main](media/pulling/merge-from.png)
 
-   If there are any merge conflicts, Team Explorer tells you now. [Resolve the merge commits](merging.md?tabs=visual-studio) before the next step.
+   If there are any merge conflicts, Team Explorer tells you now. [resolve the conflicts](merging.md?tabs=visual-studio) before the next step.
 
 1. Enter a commit message and select **Commit Staged**.
-
+ 
    ![Commit merge from main](media/pulling/commit-merge-from-master.png)
 
 1. When you're ready to push your local commits, including your new merge commit, to the remote server, choose **Push** from the **Synchronization** view.
 
    ![Push](media/pulling/merge-from-master-push.png)
 
-#### [Command Line](#tab/command-line/)
 
-To merge the latest changes from main into your branch, in this example named `users/jamal/readme-fix`, you can use the following commands:
+#### [Git Command Line](#tab/git-command-line)
 
-> [!div class="tabbedCodeSnippets"]
-```Git CLI
-> git checkout users/jamal/readme-fix
-> git pull origin main
-> git push
+To integrate commits from one or more source branches into your current local branch, run the following Git `merge` command. For multiple source branches, separate their names with spaces.
+
+```cmd
+git merge <source branch name>
 ```
 
-`git pull origin main` fetches and merges the contents of the main branch with your branch and creates a merge commit. If there are any merge conflicts, git shows you after the `pull`. [Resolve the merge commits](merging.md?tabs=command-line) before you continue. When you're ready to push your local commits, including your new merge commit, to the remote server, run `git push`.
+Git will notify you if there are conflicts during the merge. Then, you can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git merge --continue`, or run `git merge --abort` to undo the merge and return to the pre-merge state.
+
 
 * * *
+
+
+### Rebase
+
+Git `rebase` integrates commits from a source branch into a target branch. After a Git `rebase`, the target branch will contain all source branch commits with the target branch changes applied on top. If you're the only person working on your feature or bugfix branch, consider using Git `rebase` to integrate new `main` branch commits into it. Otherwise, use Git `merge`.
+
+For more information on `rebase` and when to use it, see [Apply changes with rebase](rebase.md) and [Rebase vs merge](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_vs_merge).
+
+> [!TIP]
+> If the source branch is a remote-tracking branch, ensure that branch is up-to-date by running a Git [fetch](#download-changes-with-fetch) before the rebase.
+
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git `rebase`.
+
+:::row:::
+  :::column span="":::
+
+    **Visual Studio Git** <br><br>
+
+    1. Choose **Git > Manage Branches** to open the **Git Repository** window.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu.png" border="true" alt-text="Screenshot of the Manage Branches option in the Git menu of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/manage-branches-git-menu-lrg.png":::
+
+    2. In the **Git Repository** window, right-click the target branch and select **Checkout**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window.png" border="true" alt-text="Screenshot of the Checkout option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-checkout-git-repository-window-lrg.png":::
+
+    3. Right-click the source branch, and select **Rebase \<target-branch\> onto \<source-branch\>**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window.png" border="true" alt-text="Screenshot of the Rebase option in the branch context menu in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-git-repository-window-lrg.png":::
+
+    4. Visual Studio will display a confirmation message after a successful rebase.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
+
+       If the rebase is halted due to rebase conflicts, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
+
+  :::column-end:::
+  :::column span="":::
+
+    **Visual Studio Team Explorer** <br><br>
+
+    1. In **Team Explorer**, select **Home** and choose **Branches**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branches.png" border="true" alt-text="Screenshot of the Branches option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branches-lrg.png":::
+
+    2. In the **Branches** view, right-click the target branch and select **Checkout**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-checkout.png" border="true" alt-text="Screenshot of the Checkout option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-checkout-lrg.png":::
+
+    3. Right-click the source branch, and select **Rebase Onto**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase.png" border="true" alt-text="Screenshot of the Rebase Onto option in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-lrg.png":::
+
+    4. Verify the rebase options and then click **Rebase**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details.png" border="true" alt-text="Screenshot of the rebase details in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-details-lrg.png":::
+
+    5. Visual Studio will display a confirmation message after a successful rebase.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation-lrg.png":::
+
+       If there are conflicts during the rebase, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict-lrg.png":::
+
+  :::column-end:::
+:::row-end:::
+
+
+#### [Visual Studio 2017](#tab/visual-studio-2017)
+
+> [!NOTE]
+> The `git pull origin main` command combines `git fetch` and `git merge` commands. To do this properly in Visual Studio integration, you will need to **Sync** in **Team Explorer** to do the `fetch` part. This ensures your local git repository is up to date with its remote origin. 
+
+To merge the latest changes from the main branch to your branch:
+
+1. In Team Explorer, select the **Home** button and choose **Branches**.
+
+1. Check out your target branch. Right-click the target branch, and choose **Merge From**.
+
+   ![Merge from](media/pulling/merge-from-menu.png)
+
+1. Specify a **Merge from branch**, which is `main` in this example, and then select **Merge**.
+
+   ![Merge from main](media/pulling/merge-from.png)
+
+   If there are any merge conflicts, Team Explorer tells you now. [resolve the conflicts](merging.md?tabs=visual-studio) before the next step.
+
+1. Enter a commit message and select **Commit Staged**.
+ 
+   ![Commit merge from main](media/pulling/commit-merge-from-master.png)
+
+1. When you're ready to push your local commits, including your new merge commit, to the remote server, choose **Push** from the **Synchronization** view.
+
+   ![Push](media/pulling/merge-from-master-push.png)
+
+
+#### [Git Command Line](#tab/git-command-line)
+
+To integrate the commits from a source branch into a target branch, run the Git [rebase](https://git-scm.com/docs/git-rebase) command:
+
+```cmd
+git rebase <source branch name> <target branch name>
+```
+
+If your current local branch is the target branch, you can simplify the Git `rebase` command to:
+
+```cmd
+git rebase <source branch name>
+```
+
+Git will notify you if there are conflicts during the rebase. Then, you can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git rebase --continue`, or run `git rebase --abort` to undo the rebase and return to the pre-rebase state.
+
+
+* * *
+
+
+<a name="pull"></a>
+
+## Download changes and update branches with pull
+
+By default, Git `pull` combines a Git [fetch](#download-changes-with-fetch) and a Git [merge](/azure/devops/repos/git/merging?tabs=visual-studio) to update your current local branch from its remote counterpart. Optionally, Git `pull` can perform a Git [rebase](/azure/devops/repos/git/rebase?tabs=visual-studio) instead of a Git `merge`.  
+
+Unlike Git `fetch`, Git `pull` will update your current local branch immediately after downloading new commits from the remote repo. Use Git `pull` when you know you want to update your current local branch right after a Git `fetch`.
+
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
+
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to perform a Git `pull`.
+
+> [!TIP]
+> To configure Visual Studio to rebase instead of merge when you **Pull**:
+> - From the Git menu, got to **Tools** > **Options** > **Source Control** > **Git Global Settings**.
+> - Set the **Rebase local branch when pulling** option to `True`.
+
+:::row:::
+  :::column span="":::
+
+    **Visual Studio Git** <br><br>
+
+    1. In the **Git Changes** window, choose **Pull**.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-git-changes-window.png" border="true" alt-text="Screenshot of the Pull button in the Git Changes window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-git-changes-window-lrg.png":::
+
+       You can also choose **Pull** from the Git menu.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-git-menu.png" border="true" alt-text="Screenshot of the Pull option in the Git menu in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-git-menu-lrg.png":::
+
+    2. A confirmation message displays when the pull operation completes.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window.png" border="true" alt-text="Screenshot of the pull confirmation message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window-lrg.png":::
+
+       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict-lrg.png":::
+
+  :::column-end:::
+  :::column span="":::
+
+    **Visual Studio Team Explorer** <br><br>
+
+    1. In **Team Explorer**, select **Home** and choose **Sync** to open the **Synchronization** view.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/sync-lrg.png":::
+
+    2. In the **Synchronization** view, choose **Pull**. Both **Pull** buttons do the same thing.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/pull-synchronization-view.png" border="true" alt-text="Screenshot of the Pull options in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/pull-synchronization-view-lrg.png":::
+
+    3.  Visual Studio will display a confirmation message when the pull operation completes.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view.png" border="true" alt-text="Screenshot of the pull confirmation message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view-lrg.png":::
+
+       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+
+       :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict-lrg.png":::
+
+  :::column-end:::
+:::row-end:::
+
+> [!NOTE]
+> In Visual Studio, **Sync** performs a **Pull** then a **Push** to synchronize a local and remote branch. For more information on **Sync**, see [Use git fetch, pull, push and sync for version control in Visual Studio](/visualstudio/version-control/git-fetch-pull-sync).
+
+
+#### [Visual Studio 2017](#tab/visual-studio-2017)
+
+Open the Team Explorer and open the Sync view. Then select the **Pull** link under **Incoming Commits** to `pull` remote changes and merge them into your local branch. Pulling
+updates files in your open project, so make sure to [commit your changes](commits.md) before pulling.
+
+1. In Team Explorer, select the **Home** button and choose **Sync**.
+
+   ![Synchronization view in Team Explorer.](media/pulling/synchronization-menu.png)
+
+1. In **Synchronization**, choose **Pull** to fetch remote changes and merge them into your local branch.
+
+   ![Screenshot that shows choosing Pull.](media/pulling/pull.png)
+
+   There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one.
+
+1. Review the confirmation message when the pull operation completes.
+
+   ![Pull operation complete](media/pulling/pull-results.png)
+
+> [!NOTE]
+> In Visual Studio, **Sync** performs a **Pull** then a **Push** to synchronize a local and remote branch. For more information on **Sync**, see [Use git fetch, pull, push and sync for version control in Visual Studio](/visualstudio/version-control/git-fetch-pull-sync).
+
+
+#### [Git Command Line](#tab/git-command-line)
+
+To use fetch and integrate commits from a remote branch into the current working branch, run the Git `pull` command:
+
+```cmd
+git pull <remote repo> <remote branch name>
+```
+
+If the remote repo has a branch with the same name branch as your current working branch, you can simplify the Git `pull` command to:
+
+```cmd
+git pull <remote repo>
+```
+
+When you clone a remote repo, Git assigns the alias `origin` as shorthand for the URL of the remote repo that you cloned. Run `git remote -v` to check the `origin` alias value. To add the `origin` alias manually, run `git remote add origin <remote repo url>`. With the `origin` alias, you can further simplify the Git `pull` command to:
+
+```cmd
+git pull
+```
+
+To use a rebase strategy to integrate commits from a remote branch into the current working branch, run the Git `pull` command with the `--rebase` flag. For more information on Git `pull` options, see the [Git reference manual](https://git-scm.com/docs/git-pull#_options).
+
+> [!TIP]
+> Git will notify you if there are conflicts during the merge/rebase portion of the Git `pull` operation. Then, you can [resolve the conflicts](merging.md?tabs=command-line) and then run `git merge --continue` or `git rebase --continue`, or run `git merge --abort` or `git rebase --abort` to undo the merge/rebase.
+
+
+* * *
+
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Share code with push](pushing.md)
-
-> [!div class="nextstepaction"]
 > [Resolve merge conflicts](merging.md)
+
+
+## Related articles
+
+- [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)

@@ -6,13 +6,13 @@ ms.assetid: 266f5d0e-78b9-4911-9bdf-ab509f17ff23
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 11/13/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # SSH passphrases
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 SSH uses private/public key pairs to protect your communication with the server. 
 SSH passphrases protect your private key from being used by someone who doesn't know the passphrase. 

@@ -89,7 +89,7 @@
     items:
     - name: Billing
       tocHref: /azure/devops/organizations/billing/
-      topicHref: /azure/devops/organizations/billing/overview?view=azure-devops
+      topicHref: /azure/devops/organizations/billing/overview?view=azure-devops&preserve-view=true
   - name: Azure Boards customization 
     tocHref: /azure/devops/reference/
     topicHref: /azure/devops/reference/index

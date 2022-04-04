@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 02/03/2022
+ms.date: 03/29/2022
 ---
 
 # Work tracking, process, and project limits
@@ -119,7 +119,10 @@ For the On-premises XML process model, you can modify the backlog and taskboard 
 
 ## Projects
 
-Azure DevOps Services limits each organization to 300 projects per organization. Above 300 projects certain experiences, such as connecting to the organization from Visual Studio, start to degrade. 
+Azure DevOps Services limits each organization to 1000 projects per organization, an increase over the previous limit of 300 projects.  
+
+> [!NOTE]   
+> Above 300 projects certain experiences, such as connecting to a project from Visual Studio, may start to degrade. 
 
 For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If you plan to migrate your on-premises collection to Azure DevOps Services, you'll need to observe the maximum limit of 300 projects. If your collection has more than 300 projects, you'll either need to split the collection or delete older projects.
 

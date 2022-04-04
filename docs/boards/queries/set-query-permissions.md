@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/05/2022
+ms.date: 04/01/2022
 ---
 
 
@@ -120,7 +120,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Add a query folder under **Shared queries** or a subfolder. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon for the folder and choose **New query folder**.  
 
@@ -165,7 +165,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon and select **Security**. 
 

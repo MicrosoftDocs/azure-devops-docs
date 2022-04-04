@@ -403,21 +403,21 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Custom pick lists </b></p>
-<p><a href="/azure/devops/reference/xml/define-pick-lists?viewFallbackFrom=vsts" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md)">Define or modify pick list values</a> by editing the work item type definition.</p>
+<p><a href="/azure/devops/reference/xml/define-pick-lists" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md)">Define or modify pick list values</a> by editing the work item type definition.</p>
 </td>
 <td width="33%">
 
 
 
 <p><b>Modify the workflow </b></p>
-<p><a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
+<p><a href="/azure/devops/reference/xml/change-workflow-wit" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
 
 
 <p><b>Change the work item form </b></p>
-<p><a href="/azure/devops/reference/xml/design-work-item-form?viewFallbackFrom=vsts" data-raw-source="[Change the layout of your work item form](../reference/xml/design-work-item-form.md)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
+<p><a href="/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true" data-raw-source="[Change the layout of your work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
 
 <p><b>Add a custom work item type </b></p>
-<p><a href="/azure/devops/reference/customize-work?viewFallbackFrom=vsts" data-raw-source="[Add a custom work item type](../reference/customize-work.md)">Add a custom work item type</a> to track different data requirements.</p>
+<p><a href="/azure/devops/reference/customize-work" data-raw-source="[Add a custom work item type](../reference/customize-work.md)">Add a custom work item type</a> to track different data requirements.</p>
 
 
 </td>
@@ -1487,8 +1487,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Team member </b></p>
 <p>Opens the team&#39;s quick dialog to <a href="../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[add or remove team members](../report/dashboards/widget-catalog.md#team-members-widget)">add or remove team members</a>.</p>
 <img src="media/features/alm-feature-manage-members-widget.png" alt="Team member widget"/><br/>
-<p><b>Team rooms </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+
 
 <p><b>Visual Studio widget</b></p>
 <p><a href="../report/dashboards/widget-catalog.md#visual-studio-widget" data-raw-source="[Provides links to open or download Visual Studio](../report/dashboards/widget-catalog.md#visual-studio-widget)">Provides links to open or download Visual Studio</a>. The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren&#39;t available through the web portal). </p>
@@ -2104,7 +2103,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. Bulk update work items to add or remove tags: <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags)">Azure DevOps Services</a> | <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Azure DevOps Server](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Azure DevOps Server</a>. </p>
 <img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
 
-&lt;p
 </td>
 <td width="33%">
 
@@ -2564,10 +2562,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Team alerts</b></p>
 <p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
-
-
-<p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a <a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>

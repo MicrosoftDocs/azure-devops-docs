@@ -5,7 +5,7 @@ description: Using Git LFS versions older than 2.4.0 with TFS
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2015 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 
 # Kerberos authentication

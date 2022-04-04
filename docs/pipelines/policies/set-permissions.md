@@ -5,12 +5,12 @@ description: Add users to Azure Pipelines
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.topic: conceptual
 ms.date: 06/03/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Add users to Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Permissions for build and release pipelines are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
 

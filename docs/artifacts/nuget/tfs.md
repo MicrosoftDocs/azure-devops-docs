@@ -5,12 +5,12 @@ ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 09/01/2017
-monikerRange: '>= tfs-2017 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 
 # Use NuGet or dotnet with Team Foundation Server feeds
 
-[!INCLUDE [version-gt-eq-2017-lt-azure-devops](../../includes/version-gt-eq-2017-lt-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2018-lt-azure-devops](../../includes/version-gt-eq-2018-lt-azure-devops.md)]
 
 Authentication from command-line clients like `nuget` and `dotnet` is a little different for Team Foundation Server users.
 

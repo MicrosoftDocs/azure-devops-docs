@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.custom: seodec18
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Shell Script task

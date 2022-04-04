@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 12/09/2021
+ms.date: 04/01/2022
 ---
 
 # How to use workflow states and state categories in Azure Boards backlogs and boards
@@ -55,6 +55,7 @@ Here's how the default, inherited states map to the state categories for all thr
    **Test tracking WITs** 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
@@ -126,6 +127,7 @@ Here's how the default, inherited states map to the state categories for all thr
    **Test tracking WITs**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
@@ -197,6 +199,7 @@ Here's how the default, inherited states map to the state categories for all thr
    **Test tracking WITs**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
@@ -268,6 +271,7 @@ Here's how the default, inherited states map to the state categories for all thr
    **Test tracking WITs** 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
@@ -344,13 +348,9 @@ Adding custom states to support workflow states that multiple teams want to trac
 
 <a id="auto-complete-work-items-with-pr" />
 
-::: moniker range=">= tfs-2018"
-
 ## Auto completion of work items with pull requests 
 
 When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. To learn how, see [Auto complete work items with pull requests](auto-complete-work-items-pull-requests.md).
-
-::: moniker-end
 
 ## Related articles
 

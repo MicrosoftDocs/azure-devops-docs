@@ -7,7 +7,7 @@ ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Request and approve extensions

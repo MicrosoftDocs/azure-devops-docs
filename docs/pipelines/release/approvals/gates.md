@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
 ms.date: 08/24/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Release deployment control using gates

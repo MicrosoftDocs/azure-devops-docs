@@ -6,13 +6,13 @@ description: Troubleshoot problems with the services you have integrated with yo
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---
 
 # Troubleshoot a service hooks issue
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ## View activity and debug problems
 

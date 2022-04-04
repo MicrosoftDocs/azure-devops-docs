@@ -7,7 +7,7 @@ ms.custom: cross-project
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 11/11/2021
 ---
 

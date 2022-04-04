@@ -5,13 +5,13 @@ description: Remove an existing Git repo in an Azure DevOps Services or Team Fou
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 02/22/2022
-monikerRange: '>= tfs-2015'
+ms.date: 03/31/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Delete a Git repo from your project
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Remove unused Git repos from your project when they are no longer needed. The steps in this article show how to delete a Git repo from your Azure DevOps project. If you want to delete the entire project, see [Delete a project](../../organizations/projects/delete-project.md).
 
@@ -22,8 +22,11 @@ Remove unused Git repos from your project when they are no longer needed. The st
 ## Prerequisites 
 
 - You must have [Delete Repository permissions](set-git-repository-permissions.md) to delete a repo from a project. 
-::: moniker range=">= azure-devops-2020"
-- If you want to use the Azure DevOps CLI **az repos delete** command, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> If you want to use the Azure DevOps CLI **az repos delete** command, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 

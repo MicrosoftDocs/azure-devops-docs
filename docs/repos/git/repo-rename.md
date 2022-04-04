@@ -5,14 +5,14 @@ description: You can rename a Git repository in a few steps. Your team will have
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.technology: devops-code-git 
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 02/23/2022
 ---
 
 
 #  Rename a Git repository in your project
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
@@ -92,16 +92,13 @@ You can rename a Git repository in a project from your web browser. After you re
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2020" 
+::: moniker range="azure-devops" 
 [!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
-
 
 ***
 

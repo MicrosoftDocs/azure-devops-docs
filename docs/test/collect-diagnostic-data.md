@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
 ---
 
 # Collect diagnostic data while testing
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 

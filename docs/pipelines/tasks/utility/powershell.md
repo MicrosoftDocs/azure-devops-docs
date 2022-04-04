@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.custom: seodec18
 ms.date: 08/25/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # PowerShell task

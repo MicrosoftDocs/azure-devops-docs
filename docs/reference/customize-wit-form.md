@@ -21,11 +21,11 @@ ms.date: 12/15/2017
 >
 >For an overview of process models, see [Customize your work tracking experience](customize-work.md). 
 
-Just as you have been able to customize the form layout for your work item types, you can continue to do so with the new web form. The new form makes available several features that are not available with the old form.  Your account or project collection administrator manages the [switch to the new form](manage-new-form-rollout.md). When the new form is enabled for the account or project collection, the WebLayout section is added to the XML definition for each WIT defined in the collection.  
+Just as you have been able to customize the form layout for your work item types, you can continue to do so with the new web form. The new form makes available several features that are not available with the old form.  Your account or project collection administrator manages the [switch to the new form](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true). When the new form is enabled for the account or project collection, the WebLayout section is added to the XML definition for each WIT defined in the collection.  
  
 
 > [!NOTE]    
-> Prior to customizing the web form, your administrator must have [enabled the new form](manage-new-form-rollout.md). 
+> Prior to customizing the web form, your administrator must have [enabled the new form](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true). 
 
 You customize transformed WITs in much the same way as you have previously.  The path is slightly different depending on your platform and previous customization choices. 
 
@@ -61,7 +61,7 @@ See the following topics to make the indicated customizations:
  
 - To customize the form for the web portal (**WebLayout** node), see [WebLayout and Control XML elements](xml/weblayout-xml-elements.md)
 - To add a scoped links control to the form for the web portal (**LinksControlOptions**), see [LinksControlOptions XML elements](xml/linkscontroloptions-xml-elements.md)
-- To customize the client form (**Layout** node), see [Layout XML elements](xml/layout-xml-element-reference.md).
+- To customize the client form (**Layout** node), see [Layout XML elements](/previous-versions/azure/devops/reference/xml/layout-xml-element-reference?view=tfs-2015&preserve-view=true).
 
 
 <a id="witadmin">  </a>  
@@ -150,7 +150,7 @@ By default the global lists will be attached to the Shared Steps work item type.
 
 If you're new to WIT customization, see [Add and modify a WIT](add-modify-wit.md). 
 
-- [Manage new form rollout](manage-new-form-rollout.md)
+- [Manage new form rollout](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true)
 - [New work item experience](process/new-work-item-experience.md)
 - [WebLayout and Control XML elements](xml/weblayout-xml-elements.md)
 

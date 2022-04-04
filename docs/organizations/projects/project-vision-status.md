@@ -7,13 +7,13 @@ ms.technology: devops-collab
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 08/24/2021
 ---
 
 # Share your project vision, view project activity
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="> tfs-2017"
 Each project provides a **Summary** or home page to share information and showcase the latest project activity. Use this page to perform one or more of the following tasks. 

@@ -7,7 +7,7 @@ ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4
 ms.author: vijayma
 author: vijayma
 ms.date: 03/03/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Gradle task

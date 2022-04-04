@@ -4,7 +4,7 @@ description: Find the different ways to authenticate with external services usin
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/10/2020
@@ -12,7 +12,7 @@ ms.date: 09/10/2020
 
 # Service endpoint authentication schemes
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to set the credentials in the HTTP request header when you're calling the external endpoint. Azure DevOps can then connect to the external service using the credentials. Azure DevOps supports a closed set of authentication schemes 
 that can be utilized by a custom service endpoint type. Azure DevOps interprets the authentication scheme that's used in any custom endpoint & support connection to the external service.

@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 02/01/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to Azure App Service using Visual Studio Code
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use [Azure Pipelines](/azure/devops/pipelines/) to deploy a Node.js application to Azure App Service using the [Deploy to Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extension. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 

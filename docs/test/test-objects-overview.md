@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
 ---
 

@@ -7,7 +7,7 @@ ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
 ms.author: vijayma
 author: vijayma
 ms.date: 04/21/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # npm task
