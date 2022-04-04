@@ -44,7 +44,7 @@ This example has the following two pipelines.
 - `app-ci` - This pipeline is configured with a pipeline resource trigger that causes the `app-ci` pipeline to run automatically every time a run of the `security-lib-ci` pipeline completes.
 
     ```yaml
-    # app-ci pipeline YAML file resources section
+    # app-ci YAML pipeline
     # We are setting up a pipeline resource that references the security-lib-ci
     # pipeline and setting up a pipeline completion trigger so that our app-ci
     # pipeline runs when a run of the security-lib-ci pipeline completes
