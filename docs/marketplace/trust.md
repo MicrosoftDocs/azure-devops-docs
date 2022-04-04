@@ -5,17 +5,16 @@ ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.technology: devops-marketplace
 ms.author: chcomley
 author: chcomley
-monikerRange: '<= azure-devops'
-ms.date: 03/15/2021
 ms.topic: conceptual
+ms.date: 04/04/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Evaluate a Marketplace extension publisher 
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 *Can you trust an offering in the Marketplace?*
-
 
 We recommend you install a Marketplace extension in an isolated organization or collection first, to experience it and to eliminate any concerns. Once you're comfortable, install it on your other organizations or collections. 
 
@@ -59,7 +58,7 @@ To evaluate a Marketplace extension, review the information and resources descri
       **Q & A**
    :::column-end:::
    :::column span="2":::
-      The Q & A section of published extensions may answer questions you may have. Also, they are a good mechanism to engage with the extension’s publisher(s) to have a meaningful dialogue to make yourself comfortable. Use the Q & A information to understand the development, testing, and security practices the publisher follows. It also gives you a sense of the publisher's responsiveness. 
+      The Q & A section of published extensions may answer questions you may have. Also, they're a good mechanism to engage with the extension’s publisher(s) to have a meaningful dialogue to make yourself comfortable. Use the Q & A information to understand the development, testing, and security practices the publisher follows. It also gives you a sense of the publisher's responsiveness. 
    :::column-end:::
 :::row-end:::
 ---
