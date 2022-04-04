@@ -27,9 +27,9 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 ## Configure pipeline resource triggers
 
-To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#define-a-pipelines-resource).
+To trigger a pipeline upon the completion of another pipeline, configure a [pipeline resource](resources.md#define-a-pipelines-resource) trigger.
 
-In this example we want to configure a pipeline resource trigger so that a pipeline named `app-ci` runs after a run of the `security-lib-ci` pipeline completes.
+The following example configures a pipeline resource trigger so that a pipeline named `app-ci` runs after any run of the `security-lib-ci` pipeline completes.
 
 This example has the following two pipelines.
 
@@ -41,7 +41,7 @@ This example has the following two pipelines.
     - bash: echo "The security-lib-ci pipeline runs first"
     ```
 
-- `app-ci` - This pipeline is configured with a pipeline resource trigger that causes the `app-ci` pipeline to run automatically every time a run of the `security-lib-ci` pipeline completes.
+- `app-ci` - This pipeline has a pipeline resource trigger that configures the `app-ci` pipeline to run automatically every time a run of the `security-lib-ci` pipeline completes.
 
     ```yaml
     # app-ci YAML pipeline
