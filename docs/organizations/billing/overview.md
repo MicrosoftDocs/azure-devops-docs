@@ -30,7 +30,7 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="< azure-devops"
 
 Make some purchases for Azure DevOps Server on your monthly Azure bill.  
 

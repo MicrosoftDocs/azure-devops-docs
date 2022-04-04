@@ -92,7 +92,7 @@ To create or list projects, see [Create a project](create-project.md)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
 
@@ -105,18 +105,6 @@ To create or list projects, see [Create a project](create-project.md)
     > ![Choose a project from the set of projects listed.](media/about-projects/projects-hub-horz.png)
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-1. Choose the name of the server.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of open Projects, TFS 2013 - 2015](media/about-projects/open-projects-tfs-15.png)
-
-2. From there, you can choose a project from the set of projects listed.
-
-::: moniker-end
-
 
 <a id="project-scoped-user-group" /> 
 
@@ -237,7 +225,7 @@ You can configure and customize most services and applications to support your b
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
@@ -280,7 +268,7 @@ In addition to connecting through a web browser, you can connect to a project fr
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
