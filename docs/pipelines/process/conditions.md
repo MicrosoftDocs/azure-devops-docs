@@ -12,13 +12,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2017"
-
-This article applies to TFS 2017.3 and higher.
-
-::: moniker-end
-
-
 You can specify the conditions under which each stage, job, or step runs.
 By default, a job or stage runs if it does not depend on any other job or stage, or if all of the jobs or stages that it depends on have completed and succeeded.
 By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
@@ -93,12 +86,6 @@ you can specify the conditions under which the task or job will run.
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
-
-::: moniker range="= tfs-2017"
-
-> In TFS 2017.3, custom task conditions are available in the user interface only for Build pipelines. You can use the Release [REST APIs](../../integrate/index.md) to establish custom conditions for Release pipelines.
-
-::: moniker-end
 
 Conditions are written as expressions in YAML pipelines.
 The agent evaluates the expression beginning with the innermost function and works its way out.

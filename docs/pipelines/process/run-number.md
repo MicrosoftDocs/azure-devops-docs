@@ -122,7 +122,7 @@ The time zone is UTC.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2018 < azure-devops"
 
 The time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 
