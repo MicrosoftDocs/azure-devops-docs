@@ -54,11 +54,12 @@ This example has the following two pipelines.
         source: security-lib-ci # The name of the pipeline referenced by this pipeline resource.
         project: FabrikamProject # Required only if the source pipeline is in another project
         trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+
     steps:
     - bash: echo "app-ci runs after security-lib-ci completes"
     ```
 
-* `pipeline: securitylib` specifies the name of the pipeline resource. Use the label defined here when referring to the pipeline resource from other parts of the pipeline, such as when using pipeline resource variables or downloading artifacts.
+* `- pipeline: securitylib` specifies the name of the pipeline resource. Use the label defined here when referring to the pipeline resource from other parts of the pipeline, such as when using pipeline resource variables or downloading artifacts.
 * `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). By default, pipelines are named after the repository that contains the pipeline. To update a pipeline's name, see [Pipeline settings](../get-started/multi-stage-pipelines-experience.md#pipeline-settings).
 * `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project. If you specify this value and your pipeline doesn't trigger, see the note at the end of this section.
 * `trigger: true` - Use this syntax to trigger the pipeline when any version of the source pipeline completes. See the following sections in this article to learn how to filter which versions of the source pipeline completing will trigger a run. When filters are specified, the source pipeline run must match all of the filters to trigger a run.
@@ -73,7 +74,7 @@ If the triggering pipeline and the triggered pipeline use the same repository, b
 You can optionally specify the branches to include or exclude when configuring the trigger. If you specify branch filters, a new pipeline is triggered whenever a source pipeline run is successfully completed that matches the branch filters. In the following example, the `app-ci` pipeline runs if the `security-lib-ci` completes on any `releases/*` branch, except for `releases/old*`.
 
 ```yaml
-# this is being defined in app-ci pipeline
+# app-ci YAML pipeline
 resources:
   pipelines:
   - pipeline: securitylib
