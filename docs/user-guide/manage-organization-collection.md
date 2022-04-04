@@ -6,13 +6,13 @@ ms.technology: devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>=tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 02/28/2022
 ---
 
 # Get started managing your organization or project collection
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
 After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks you'll want to review to ensure you're setting up your organization or collection to get maximal use of your services. 
 

@@ -367,7 +367,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="customize-tfs"></a>
 
@@ -2394,7 +2394,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="process-templates"></a>
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Process templates (Azure DevOps Server)
 
