@@ -14,7 +14,7 @@ metadata:
 title: Search FAQs 
 
 summary: | 
-  [!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
   Learn the answers to frequently asked questions (FAQs) about the search function for Azure DevOps. 
 
