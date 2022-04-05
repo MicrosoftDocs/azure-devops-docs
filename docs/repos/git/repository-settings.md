@@ -485,17 +485,6 @@ To configure repository settings and policies through the web portal, open **Pro
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-1. From your web browser, open the project and choose the gear icon, **Version Control**, and select your repository.
-
-   ![Screenshot that shows the 'Version Control' options for your repository.](media/repository-settings/project-repository-settings-prev-nav.png)
-
-2. Select **Options** to view and configure your repository settings.
-
-   ![Screenshot that shows the options UI.](media/repository-settings/repository-settings.png)
-
-::: moniker-end
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
@@ -869,7 +858,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 1. On the **Settings** tab of the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="= tfs-2018"
 **Gravatar images** is an individual repository setting.
 ::: moniker-end
 

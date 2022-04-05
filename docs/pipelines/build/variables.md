@@ -34,19 +34,8 @@ Learn more about [working with variables](../process/variables.md).
 
 ## Build.Clean 
 
-::: moniker range="> tfs-2017"
-
 This is a deprecated variable that modifies how the build agent cleans up source.
 To learn how to clean up source, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-This variable modifies how the build agent cleans up source.
-To learn more, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
-
-::: moniker-end
 
 <h2 id="systemaccesstoken">System.AccessToken</h2>
 
@@ -122,17 +111,6 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-[!INCLUDE [include](includes/variables-tfs2017.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-[!INCLUDE [include](includes/variables-tfs2015.md)]
-
-::: moniker-end
 
 <a name="identity_values"></a>
 ### How are the identity variables set?

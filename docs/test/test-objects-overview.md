@@ -279,7 +279,7 @@ There are a number of permissions that control select features for viewing, modi
      Add new tags to test-based work items.
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2015"
+
 :::row:::
    :::column span="2":::
       **Delete and restore work items**  
@@ -291,8 +291,7 @@ There are a number of permissions that control select features for viewing, modi
      Delete test-specific work items and restore them from the Recycle bin.
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2015"
+
 :::row:::
    :::column span="2":::
       **Permanently delete work items**  
@@ -304,7 +303,7 @@ There are a number of permissions that control select features for viewing, modi
      Permanently delete test-specific work items from the data store.
    :::column-end:::
 :::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="2":::
       **View work items in this node**  

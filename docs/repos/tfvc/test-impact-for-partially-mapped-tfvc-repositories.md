@@ -14,11 +14,6 @@ monikerRange: '<= azure-devops'
 
 Test Impact Analysis (TIA) has been part of the **VSTest** task starting with version 2 of the task. This feature helps speed up the DevOps cycle by helping you run only relevant tests for a build. Effectively, you end up running tests which are affected by incoming changes and not the entire test suite. For more information about Test Impact Analysis, see [Speed up testing by using Test Impact Analysis (TIA)](../../pipelines/test/test-impact-analysis.md). 
 
-::: moniker range=">= tfs-2017"
-> [!NOTE]   
-> The TIA feature is supported on TFS 2017.1 or later version. 
-::: moniker-end
-
 In addition to supporting GitHub and Git in Azure DevOps, TIA also supports TFVC. This article describes a known limitation about TIA in build/release pipelines based on TFVC and a work around to get past this limitation. 
 
 ## Issue with partially mapped TFVC repositories 

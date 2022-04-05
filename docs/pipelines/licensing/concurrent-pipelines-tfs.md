@@ -32,12 +32,6 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 ::: moniker-end
 
-::: moniker range="= tfs-2015"
-
-> Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
-
-::: moniker-end
-
 ::: moniker range="< azure-devops-2019"
 
 ## How a parallel job is consumed

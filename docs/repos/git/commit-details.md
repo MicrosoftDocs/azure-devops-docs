@@ -25,10 +25,7 @@ The commit details view provides information regarding all the changes made as p
 ::: moniker range="<= azure-devops-2019"
 ![Commit details page](media/commit-details/1Commitdetails.png)
 ::: moniker-end
-::: moniker range="tfs-2017"
-> [!NOTE]
-> The feature documented in this article requires TFS 2017 Update 1 or later version.  
-::: moniker-end
+
 
 ## What information do you see on the commit details page?
 
