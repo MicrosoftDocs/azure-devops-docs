@@ -10,7 +10,7 @@ ms.date: 09/10/2018
 
 # Key concepts
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Here you'll find definitions of key concepts and artifacts used in Azure Repos.
 

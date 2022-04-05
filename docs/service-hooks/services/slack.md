@@ -5,7 +5,7 @@ title: Create a service hook with Slack
 description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2020
+ms.date: 04/04/2022
 ---
 
 # Create a service hook for Azure DevOps with Slack
@@ -15,9 +15,9 @@ ms.date: 07/27/2020
 Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps organization,
 such as completed builds, code changes, pull requests, releases, work items changes, and more.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 > [!NOTE]
-> For Azure DevOps Services and Azure DevOps 2020 and later versions, we recommend you use the following suite of apps  which offer rich features, to integrate with Slack.
+> For Azure DevOps Services, we recommend you use the following suite of apps  which offer rich features, to integrate with Slack.
 
 ### Azure Boards app for Slack
 
@@ -36,7 +36,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="<= azure-devops"
 
 ## Create a custom app in Slack
 
@@ -58,8 +58,11 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 	![copy Web Hook](./media/slack/copy-webhook.png)
 
-## Create a service hook subscription in your organization
+::: moniker-end
 
+::: moniker range="<= azure-devops"
+
+## Create a service hook subscription in your organization
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -110,6 +113,8 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 	![Screenshot that shows a notification in a Slack channel.](./media/slack/notifications.png)
 
+::: moniker-end
+
 ## Q & A
 
 <!-- BEGINSECTION class="m-qanda" -->
@@ -127,5 +132,4 @@ For example, if you want to see build failures and new work items in your Slack 
 create two additional subscriptions.
 
 <!-- ENDSECTION -->
-
-::: moniker-end
+ 
