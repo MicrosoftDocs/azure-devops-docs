@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -78,7 +78,7 @@ You can install those dependencies on supported Linux platforms by running `./bi
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 **TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
 We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
@@ -173,7 +173,7 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### TFS 2018
 

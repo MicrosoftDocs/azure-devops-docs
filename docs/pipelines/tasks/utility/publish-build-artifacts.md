@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Publish Build Artifacts task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 
 ::: moniker range="azure-devops"

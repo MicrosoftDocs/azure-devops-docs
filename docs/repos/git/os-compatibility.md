@@ -6,7 +6,7 @@ ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.date: 08/14/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Git Cross-Platform Compatibility

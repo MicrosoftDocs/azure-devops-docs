@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Copy and Publish Build Artifacts task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy build artifacts to a staging folder and then publish them to the server or a file share.
 Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and then published.

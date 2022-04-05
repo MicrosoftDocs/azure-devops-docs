@@ -51,7 +51,7 @@ To view tags for a specific branch in the **Commits** view, navigate to your rep
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can view tags in the **Tags** view and in the **Commits** view in the web portal.
 
@@ -153,7 +153,7 @@ To create a tag directly from the commits view, right-click the desired tag and 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view.
 
@@ -243,7 +243,7 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Delete a tag in the remote repo
 
@@ -298,7 +298,7 @@ Right-click the tag to delete and choose **Delete Locally**
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To create a branch from a tag, select the ellipsis to the right of the tag name and choose **New branch**.
 
@@ -352,7 +352,7 @@ Right-click the tag to delete and choose **Delete Locally**
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To view the history for a tag, select the ellipsis to the right of the tag name and choose **View history**.
 

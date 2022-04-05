@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 09/07/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to a Windows Virtual Machine
 
-[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
 Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.

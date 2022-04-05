@@ -15,7 +15,7 @@ ms.date: 02/23/2022
 
 This article shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps project.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 >[!IMPORTANT]
 >The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS 2017.1 to TFS 2018.1. For more information about this issue, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html)
@@ -73,7 +73,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 From the repo drop-down, select **Import repository**.
 

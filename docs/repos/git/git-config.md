@@ -6,7 +6,7 @@ ms.assetid:
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Git preferences and settings in Visual Studio

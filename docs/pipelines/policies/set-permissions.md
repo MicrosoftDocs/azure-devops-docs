@@ -47,7 +47,7 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Set permissions for build pipelines
 
@@ -91,7 +91,7 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
@@ -115,7 +115,7 @@ In the following example, we will configure permissions for variable groups.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="task-group" />
 
@@ -137,7 +137,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="collection-level" /> 
 
@@ -153,7 +153,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Manage permissions for service connections
 

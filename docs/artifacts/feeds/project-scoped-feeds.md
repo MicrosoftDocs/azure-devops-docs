@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Project-scoped feeds
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Previously, Azure Artifacts feeds used to be scoped to an organization. To enable public feeds and for more consistency with other services in Azure DevOps, feeds that are created through the web interface are now scoped to a project. 
 
