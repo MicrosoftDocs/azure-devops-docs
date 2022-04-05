@@ -28,7 +28,7 @@ We recommend using two **.npmrc_** files, the first one we'll use to authenticat
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Packages**, and then select **Connect to feed**.
 
@@ -56,7 +56,7 @@ We recommend using two **.npmrc_** files, the first one we'll use to authenticat
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 4. Follow the instructions to set up your project.
 
@@ -180,7 +180,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build and Release**, and then select **Builds**.
 

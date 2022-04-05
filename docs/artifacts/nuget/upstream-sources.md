@@ -59,7 +59,7 @@ You can view the packages you saved from upstreams by selecting your **Source** 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 :::image type="content" source="media/view-cached-packages.png" alt-text="A screenshot showing how to filter packages by source in TFS":::
 

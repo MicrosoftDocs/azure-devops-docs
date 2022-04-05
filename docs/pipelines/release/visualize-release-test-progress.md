@@ -60,16 +60,6 @@ You can also click into the logs to enter a focused view for each of the tasks.
 
 ::: moniker-end
 
-::: moniker range="= tfs-2015 || tfs-2017 "
-
-## View build results
-
-The build results view provides insights into the multiple components that make up your build. The user interface gives a snapshot view of the status of your current and previous builds. You can also view your logs, issues, commits, and all the work items related to your build.
-
-:::image type="content" source="media/build-status-view.png" alt-text="View your build results TFS 2015":::
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
 
 ## Review test summary
