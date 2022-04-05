@@ -8,8 +8,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/13/2021
----
+ms.date: 04/04/2022
+--- 
 
 # Set permissions and access for testing
 
@@ -28,7 +28,6 @@ In addition, you can grant or restrict access to various manual test features by
 	- **Manage test plans**: Modify test plan properties such as build and test settings. 
 	- **Manage test suites**: Create and delete test suites, add, and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite). 
 - **Project-level** 
-	::: moniker range=">= tfs-2017"
 	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
 	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
 	- **Create test runs**: [Run manual tests](../../test/run-manual-tests.md) 
@@ -38,17 +37,6 @@ In addition, you can grant or restrict access to various manual test features by
 	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
 	- **Move work items out of this project**: [Move work items from one project to another](../../boards/backlogs/move-change-type.md)
 	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
-	::: moniker-end
-	::: moniker range="< tfs-2017"
-	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
-	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
-	- **Create test runs**: [Run manual tests](../../test/run-manual-tests.md) 
-	- **Delete and restore work items**: [Delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
-	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
-	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
-	- **Move work items out of this project**: [Move work items from one project to another](../../boards/backlogs/move-change-type.md)
-	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
-	::: moniker-end
 - **Organization or collection-level** 
 	- **Manage test controllers**: Permission associated with a deprecated feature for TFS 2018 and later versions. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) and [Install test agents and test controllers](/visualstudio/test/lab-management/install-configure-test-agents).   
  
@@ -72,7 +60,6 @@ For more information, see the following articles:
 - To manage access-levels, you must be a member of the **Azure DevOps Server Administrators** group.  
 - To manage project or object-level test-related permissions, you must be a member of the **Project Administrators** security group. 
 - To manage collection-level permissions or manage access levels, you must be a member of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**.
- 
 
 For more information, see the following articles: 
 
@@ -108,7 +95,6 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 <a id="delete-test-artifacts"></a>
 
-::: moniker range=">= tfs-2017"  
 
 ## Set permissions to create and delete test artifacts 
 
@@ -123,7 +109,6 @@ When you delete test artifacts, the following actions occur:
 2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
 3.	Causes all information in the work item tracking data store and TCM data store to be deleted and cannot be reactivated nor restored. 
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -131,7 +116,7 @@ You must be a member of the Project Administrators group or have the [**Delete t
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 You must be a member of the Project Administrators group or have the [**Delete test runs** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). You must also have your [access level set to Basic+Test Plans or Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
@@ -162,7 +147,7 @@ In this example, we grant members assigned to the Team Admin group permissions t
 
 * * *
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 In this example, we grant members assigned to the Test Admin group permissions to delete test runs.   
 

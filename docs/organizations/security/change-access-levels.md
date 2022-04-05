@@ -9,7 +9,7 @@ ms.reviewer:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 06/02/2019
+ms.date: 04/04/2022  
 ---
 
 # Add users or groups to an access level 
@@ -61,22 +61,13 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From a user context, open **Server Settings** by choosing the :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: gear icon. The tabs and pages available differ depending on which settings level you access.
 
 - From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open **Server settings**.
 
 	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" />  
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2015"
-
-- From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open administration settings.
-
-	![Open the administration page](media/ALM_CAL_OpenAdminPage.png)
 
 ::: moniker-end
 
@@ -109,7 +100,7 @@ Changes you make to the access level settings take affect immediately. You can a
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
 
@@ -123,16 +114,6 @@ Changes you make to the access level settings take affect immediately. You can a
 	> ![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
 
 3. Choose **Save changes**.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-1. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.
-
-	<img src="media/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" />
-
-	If you don't see **Access levels**, you aren't an administrator and don't have permission. Learn more about [how to get permissions](/azure/devops/server/admin/add-administrator).
 
 ::: moniker-end
 
@@ -169,7 +150,7 @@ You set an access level from its page. Choose **Set as default access level** as
 > ![Stakeholder access level, set as default](media/change-access-levels/set-stakeholder-as-default-2019.png)
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 <img src="media/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" />  
 ::: moniker-end
 

@@ -8,13 +8,13 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-monikerRange: '>= tfs-2018'
-ms.date: 03/05/2021  
+monikerRange: '<= azure-devops'
+ms.date: 04/02/2022  
 ---
 
 # Clone and update wiki content offline
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can update your wiki pages offline the same way you develop code in a Git repo.
 
@@ -160,7 +160,7 @@ In the web portal, you can view the repo files based on the following URL:
 ::: moniker range=">= azure-devops-2019"
 	`https://*AccountName*.visualstudio.com/DefaultCollection/*ProjectName*/_git/*ProjectName*.wiki`
 ::: moniker-end
-::: moniker range=">= tfs-2018"
+::: moniker range="tfs-2018"
 	`https://*ServerName*/DefaultCollection/*ProjectName*/_git/*ProjectName*.wiki`
 ::: moniker-end
 

@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2021
+ms.date: 04/04/2022
 ---
 
 # Rename or remove a team  
@@ -79,7 +79,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="add-team-team-services" /> 
 
@@ -96,23 +96,6 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-<a id="add-team-tfs-2015" />
-
-1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
-
-	![Open project administrator page, TFS.](../../media/settings/open-admin-page-tfs2015.png)  
-
-1. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path, TFS.](media/rename-remove-team/rename-team-prev-ui.png)
-
-
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
- 
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
@@ -288,7 +271,7 @@ You can delete any team except the default team. At least one team must be defin
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To delete a team, choose **Project Settings** > **Work** > **Overview** > **&hellip;** for the team you want to delete, and select the **Delete** option.   
 

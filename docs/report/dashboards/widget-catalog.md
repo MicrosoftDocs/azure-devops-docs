@@ -516,7 +516,7 @@ Add build and release pipeline widgets to track the health of your builds and re
       
       You can choose any cell to see a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
    :::column-end:::
-
+:::row-end:::
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::

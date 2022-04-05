@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/22/2020
+ms.date: 04/04/2022
 ---
 
 
@@ -158,11 +158,8 @@ There isn't any limit on the number of projects that you can create within a pro
 
 #### [Team Explorer](#tab/team-explorer)
 
-::: moniker range="> tfs-2018"
-
-You can't create a project from Team Explorer for TFS-2018 and later versions, including Azure DevOps Services.
-
-::: moniker-end
+> [!NOTE]
+> Creating a project from Visual Studio/Team Explorer is no longer supported. 
 
 
 <a id="te"> </a>
@@ -212,20 +209,7 @@ be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 
-
-
 * * *
-
-
-::: moniker range=">= tfs-2018 <= azure-devops-2019"
-
-> [!NOTE]
-> For TFS 2018 and later versions, use the web portal. Creating a project from Visual Studio/Team Explorer is not supported for TFS 2018 and later versions, including Azure DevOps Server 2019 and Azure DevOps Services.
->
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
-
-::: moniker-end
-
 
 
 ## List and connect to projects
@@ -376,18 +360,13 @@ ID                                    Name            Visibility    Process     
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
- 
 
 <a id="add-a-repository" />
 <a id="add-a-repository-to-your-project" />
 
-::: moniker range="<= azure-devops"
-
 ## Add a repository to your project
 
 From the admin context of the web portal, you can add additional repositories to a project. Add either Git (distributed) or TFVC (centralized) repositories. You can create many Git repositories, but only a single TFVC repository for a project.  Additional steps to address permissions may be required. For more information, see [Use Git and TFVC repos in the same project](../../repos/git/team-projects.md).
-
-::: moniker-end
 
 ## Next steps
 

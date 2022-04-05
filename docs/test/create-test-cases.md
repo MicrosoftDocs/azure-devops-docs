@@ -14,7 +14,7 @@ ms.date: 11/04/2021
 
 # Create manual test cases
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 <a name="test-cases"></a>
 

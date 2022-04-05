@@ -12,7 +12,7 @@ ms.date: 12/20/2021
 
 # Test different configurations
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Your users will probably install or run your app 
 on a wide variety of configurations, such as different 

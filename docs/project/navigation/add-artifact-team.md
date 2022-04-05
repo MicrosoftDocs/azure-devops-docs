@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/30/2020 
+ms.date: 04/04/2022
 ---
 
 # Add an artifact or team artifacts
@@ -32,7 +32,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From a **Work** page, you can add a work item from the menu of options as shown in the following image.
  
@@ -66,7 +66,7 @@ For details on adding a Git repository, see [Git repository](../../repos/git/cre
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From **Code**, open the context menu for the current repository and choose ![plus icon](../../media/icons/blue-add-icon.png) **New repository**. For details on adding a Git repository, see [Git repository](../../repos/git/creatingrepo.md)
 
@@ -98,7 +98,7 @@ Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the :::
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From **Build and Release**, choose **Builds**, **Releases**, or other page to add an artifact associated with that page.
  
@@ -131,7 +131,7 @@ To view the set of defined teams, open **Project settings**, and choose **Overvi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 To view the set of defined teams, open the admin context for the project, and choose **Overview**.  
 
@@ -150,13 +150,10 @@ Dashboards are associated with a team. Each team can create and configure a numb
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2018"
-
 ## Add a wiki 
 
 If you don't have a wiki yet, you can add one. Once added, you can add and update pages to that wiki. 
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 

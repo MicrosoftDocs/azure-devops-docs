@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/12/2020
+ms.date: 04/04/2022
 ---
 
 # Security and permission management tools for Azure DevOps
@@ -63,7 +63,7 @@ You manage server-level permissions and security groups through the [Team Founda
 
 You can use the tools listed in the following table to set permissions. Links in the table connect you to the article for setting permissions through the web portal.  
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 | Permission level  | Web portal security pages  | az devops CLI  | Tf CLI | 
 |------------------|:---------------------------:|:--------------:|:---------------------:|  
@@ -87,7 +87,7 @@ You can use the tools listed in the following table to set permissions. Links in
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2020"
+::: moniker range="azure-devops-2020"
 
 | Permission level  | Web portal security pages   | az devops CLI   |  TFSSecurity CLI | Tf CLI |
 |-------------------|:---------------------------:|:---------------:|:----------------:|:----------:| 
@@ -139,7 +139,7 @@ You can use the tools listed in the following table to set permissions. Links in
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 |  Permission level |  Web portal security pages |  TFSSecurity CLI | Tf CLI |   
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
@@ -164,30 +164,8 @@ You can use the tools listed in the following table to set permissions. Links in
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
- 
 
-| Permission level  |   Web portal security pages  |  TFSSecurity CLI | Tf CLI |   
-|---------------------------|:-------------------:|:-----------:|:-------------------:|  
-| [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
-| [Collection-level](change-organization-collection-level-permissions.md)    |   ✔️  |  ✔️ |     | 
-| [Project-level, test management, create tags](change-project-level-permissions.md) |   ✔️  |  ✔️ |     | 
-| [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
-| [Build resources](change-organization-collection-level-permissions.md)     |   ✔️  |  ✔️ |     | 
-| [Git repository](../../repos/git/set-git-repository-permissions.md)                                    |   ✔️  |  ✔️ |  ✔️ | 
-| [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️ | 
-| [Area path](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
-| [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |  ✔️ |     | 
-| [Work item query](set-permissions-access-work-tracking.md#work-item-queries)        |   ✔️  |  ✔️ |     | 
-| [Work item tags](set-permissions-access-work-tracking.md#tags)                      |   ✔️  |  ✔️ |     | 
-| [Notifications or alerts](permissions.md#alerts)                                    |       |  ✔️ |     | 
-| [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
-
-In addition, Lab Management permissions can be managed through the [TFSLabConfig command-line tool](/previous-versions/azure/devops/server/lab-management/tfslabconfig-cmd).
-   
-::: moniker-end
-
-::: moniker range="<= tfs-2018"  
+::: moniker range="<= azure-devops-2020"  
 
 ## Setting permissions for SQL Server reports 
 
@@ -195,16 +173,7 @@ For information about how to set permissions in Reporting Services,
 see [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 ::: moniker-end  
 
-::: moniker range="<= tfs-2017"  
 
-## Setting permissions for SharePoint integration     
-
-For information about how to set permissions for SharePoint Products integrated with TFS,
-see [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).
-
-For more information, see [Determine permission levels and groups in SharePoint 2013](/SharePoint/sites/determine-permission-levels-and-groups-in-sharepoint-server).
-
-::: moniker-end  
 
 ## Related articles
 

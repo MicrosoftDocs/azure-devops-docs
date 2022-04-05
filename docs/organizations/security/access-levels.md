@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 02/16/2022
+ms.date: 04/04/2022  
 ---
 
 
@@ -64,29 +64,11 @@ Assign users or groups of users to one of the following access levels:
 - **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 
-
 ::: moniker-end    
-
-::: moniker range="tfs-2017"
-
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
-- **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
-- **VS Enterprise** (TFS 2017.1 and later versions): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
-- **Advanced**: Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
-::: moniker-end
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
 <a id="access-level-settings" />
-
 
 ---
 ::: moniker range="azure-devops"
@@ -123,7 +105,7 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end  
-::: moniker range="tfs-2017 || tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="3":::
       **Feature**
@@ -136,23 +118,6 @@ The following table indicates those features available for each supported access
    :::column-end:::
    :::column span="1":::
       **Advanced** & <br/>**Visual Studio Enterprise**
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end  
-::: moniker range="<= tfs-2015"
-:::row:::
-   :::column span="3":::
-      **Feature**
-   :::column-end:::
-   :::column span="1":::
-      **Stakeholder**<br/>**(Limited)**
-   :::column-end:::
-   :::column span="1":::
-      **Basic**<br/>**(Standard)**
-   :::column-end:::
-   :::column span="1":::
-      **Advanced**<br/>**(Full)**
    :::column-end:::
 :::row-end:::
 ---
@@ -257,7 +222,6 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
@@ -273,25 +237,6 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end 
-::: moniker range="<= tfs-2015"
-:::row:::
-   :::column span="3":::
-      **Agile Portfolio Management**  
-      Includes limited access to [portfolio backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end 
-::: moniker range="> tfs-2018"
 :::row:::
    :::column span="3":::
       [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
@@ -308,25 +253,6 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range="tfs-2017 || tfs-2018"
-:::row:::
-   :::column span="3":::
-      [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
-      Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
 :::row:::
    :::column span="3":::
       **Author Release Pipelines and Manage Releases**  
@@ -420,10 +346,28 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2017"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
       [**Delivery Plans**](../../boards/plans/review-team-plans.md)  
+      Includes full access to add and view Delivery plans. 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="3":::
+      [**Delivery Plans**](../../boards/extensions/delivery-plans.md)  
       Includes full access to add and view Delivery plans. 
    :::column-end:::
    :::column span="1":::
@@ -470,24 +414,6 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="<= tfs-2017"
-:::row:::
-   :::column span="3":::
-      [**Team rooms**](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)   
-      Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.  
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 :::row:::
    :::column span="3":::
       **Test services in build and release**  
@@ -536,7 +462,6 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="3":::
       **Test summary access to Stakeholder license**  
@@ -553,7 +478,6 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="3":::
       **View My Work Items**  
@@ -570,7 +494,6 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="3":::
       **View Releases and Manage Approvals**  
@@ -587,7 +510,6 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 
 
 <a id="basic" />
@@ -602,7 +524,7 @@ The system automatically recognizes their subscription and enables any other fea
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## VS Enterprise access
 
@@ -612,11 +534,6 @@ With VS Enterprise access, users have access to any fee-based, Marketplace exten
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"  
-
-For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension for Azure Test Plans.) To learn more, see [Assign paid extension access to users](../../marketplace/install-extension.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension for Azure Test Plans](../../marketplace/install-extension.md).
-
-::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
@@ -626,64 +543,17 @@ Users assigned Advanced access can manage test cases when you have [purchased th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 Users assigned Advanced access have all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md). You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-users-monthly-access-to-azure-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription. 
  
 ::: moniker-end
 
 
-
-::: moniker range="tfs-2017"
-
-For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
-- Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN Platforms subscriptions.
-These include a TFS CAL plus the rights to access the full set of Test features.  
-- A paid Azure DevOps user (which includes a TFS CAL) plus the [Test Manager extension](../billing/buy-basic-access-add-users.md). 
-
-For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platforms or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/install-extension.md).
-	
-
-> [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 re-enables it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension for Azure Test Plans](../../marketplace/install-extension.md). To learn more, see [Buy access to TFS or TFS Test](../billing/buy-access-tfs-test-hub.md). 
-
-::: moniker-end
-
-<!--- This section will change based on RC2 or RTW 
-
-Removed sections per Harish Kumar Agarwal, "adds no value" 06/05/2019 chcomley
-
-<a id="test-manager"  >  </a>
-
-::: moniker range=">= azure-devops-2019"
-
-## Test Plans, load testing, and Marketplace extensions
-
-Full access to **Test Plans** and load testing features requires **VS Enterprise** or **Basic + Test Plans** access. Visual Studio Test Professional, plus the test features in the web portal, are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Plans from the Marketplace.  
-
-To learn more, see [Try Azure Test Plans](../billing/try-additional-features-vs.md). 
-
-::: moniker-end
-
-::: moniker range=">=tfs-2015 <= tfs-2018"
-
-## Test features and Marketplace extensions
-
-Full access to **Test** features requires **Advanced** (TFS 2017 or earlier versions) or **VS Enterprise** (TFS 2017.1 or later version) access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of the Test Manager extension for Azure Test Plans.  
-
-To learn how to grant access to an extension, see [Get extensions for TFS](../../marketplace/get-tfs-extensions.md).  
-
-::: moniker-end
-
--->
-
 <a id="mapping" /> 
 
-::: moniker range=">= tfs-2018" 
 
 ## Programmatic mapping of access levels
-
-::: moniker-end
 
 
 ::: moniker range="azure-devops"
@@ -757,7 +627,6 @@ Service accounts don't require a CAL or other purchase.
 - [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
-
 
 ::: moniker-end
 

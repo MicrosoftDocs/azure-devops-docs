@@ -1,27 +1,17 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 
 <a id="code-shortcuts"></a>
 
 ::: moniker range=">= azure-devops-2019"  
-
 You can use the following keyboard shortcuts when working from a page under **Repos**. To view the valid shortcuts, enter **?** to access  Global and service-specific shortcuts.  
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <=tfs-2018"  
-
+::: moniker range="tfs-2018"  
 You can use the following keyboard shortcuts when working from a page under **Code**. To view the valid shortcuts, enter **?** to access Global and service-specific shortcuts.  
-
-::: moniker-end
-
-::: moniker range="tfs-2015"  
-
-> [!NOTE]  
-> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 and later versions. 
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
@@ -79,8 +69,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
 ::: moniker-end
 
 
-
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 :::row:::
    :::column span="2":::

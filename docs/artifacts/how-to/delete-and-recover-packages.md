@@ -38,7 +38,7 @@ In this article, you'll learn how to:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build and Release**, and then select **Packages**.
 
@@ -74,7 +74,7 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build and Release**.
 
@@ -127,7 +127,7 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build and Release**.
 
@@ -149,7 +149,7 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
 
    ::: moniker-end
 
-   ::: moniker range=">=tfs-2017 < azure-devops-2019"
+   ::: moniker range="< azure-devops-2019"
 
     :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot that shows the button for connecting to a feed in Team Foundation Server.":::
 
@@ -225,7 +225,7 @@ To configure retention policies:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build and Release**.
 
@@ -277,7 +277,7 @@ Deleted packages will remain in the Recycle Bin for 30 days. After that, they'll
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build and Release**, and then select **Packages**. 
 
