@@ -25,12 +25,6 @@ You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to depl
 
 To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an Azure Web App Container](webapp-on-container-linux.md). 
 
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> This guidance applies to Team Foundation Server (TFS) version 2017.3 and later.
-
-::: moniker-end
 
 ## Prerequisites
 

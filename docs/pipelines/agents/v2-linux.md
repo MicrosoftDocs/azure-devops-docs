@@ -173,9 +173,9 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="= tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
@@ -195,21 +195,6 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-### TFS 2015
-
-1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
-
-1. Follow the instructions on that page to download the agent.
-
-1. Configure the agent.
-
-   ```
-   ./config.sh
-   ```
-
-::: moniker-end
 
 ### Server URL
 
@@ -225,17 +210,12 @@ Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
-TFS 2017 and newer: `https://{your_server}/tfs`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-TFS 2015: `http://{your_server}:8080/tfs`
+TFS 2018: `https://{your_server}/tfs`
 
 ::: moniker-end
+
 
 ### Authentication type
 

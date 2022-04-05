@@ -127,7 +127,7 @@ The following table summarizes the policies you can define to customize a branch
       Require approval from a specified number of reviewers on pull requests.
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="2":::
       [**Check for linked work items**](branch-policies.md#check-linked-wi)
@@ -139,8 +139,8 @@ The following table summarizes the policies you can define to customize a branch
       Encourage traceability by checking for linked work items on pull requests
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
+
+
 :::row:::
    :::column span="2":::
       [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
@@ -152,7 +152,7 @@ The following table summarizes the policies you can define to customize a branch
       Check to see that all comments have been resolved on pull requests.
    :::column-end:::
 :::row-end:::
-::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
