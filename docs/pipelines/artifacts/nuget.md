@@ -37,7 +37,7 @@ To create a NuGet package, add the following snippet to your pipeline YAML file.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -97,7 +97,7 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -162,7 +162,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
 ```
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -177,7 +177,7 @@ To publish NuGet packages with Azure Pipelines, add the **NuGet** task to your p
 - **Target feed location**: You can publish to your current organization or an external NuGet server.
 - **Target feed**: Select the feed that you want to publish to.
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]
 > If you are running TFS Update 2 or older, **Nuget** is not a service endpoint option. You must use the **Generic** service connection.

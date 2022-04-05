@@ -87,7 +87,7 @@ Also see: [Update Service Fabric Manifests task](../utility/service-fabric-versi
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 ## Arguments
 

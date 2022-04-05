@@ -279,7 +279,7 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range="tfs-2018"
 
 ### Interaction between build and release retention policies
 
@@ -390,21 +390,9 @@ You can specify build retention policy defaults and maximums for a project colle
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-* TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-* TFS 2015.3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
-
-* TFS 2015 RTM: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue#_a=settings`
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
+* TFS 2018: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
 
 The **maximum retention policy** sets the upper limit for how long runs can be retained for all build pipelines.
 Authors of build pipelines cannot configure settings for their definitions beyond the values specified here.

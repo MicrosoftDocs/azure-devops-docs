@@ -15,7 +15,7 @@ ms.date: 02/16/2022
 
 ::: moniker-end
 
-::: moniker range=" tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select the gear icon to navigate to your feed's settings.
 

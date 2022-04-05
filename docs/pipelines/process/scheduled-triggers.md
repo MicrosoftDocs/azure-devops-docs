@@ -135,9 +135,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -206,9 +206,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -318,9 +318,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -366,9 +366,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -444,9 +444,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 

@@ -37,7 +37,7 @@ Add the npm task to your yaml pipeline as follows to publish your package to you
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -92,7 +92,7 @@ To publish a package to an npm registry, add the following snippet to your yaml 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
