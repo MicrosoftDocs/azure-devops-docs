@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/03/2021
+ms.date: 04/04/2022
 ---
 
 # Rename a project in Azure DevOps
@@ -37,7 +37,7 @@ Post rename, there may be some [required team member actions](#required-user-act
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range="< azure-devops"  
 
 - You must be a member of the **Project  Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 

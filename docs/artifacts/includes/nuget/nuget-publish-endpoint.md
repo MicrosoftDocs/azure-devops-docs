@@ -29,7 +29,7 @@ ms.date: 02/18/2022
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build and Release** > **Packages**.
 

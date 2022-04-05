@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/26/2020
+ms.date: 04/04/2022
 ---
 
 # Project and team quick reference
@@ -215,7 +215,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 :::row:::
    :::column span="":::

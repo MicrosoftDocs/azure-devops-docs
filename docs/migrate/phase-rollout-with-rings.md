@@ -104,13 +104,12 @@ Monitoring and alerts can help you detect and mitigate issues. Determine what ty
 > [!TIP]
 > Start with high-level views of your data, visual dashboards that you can watch from afar and drill-down, as needed. Perform regular housekeeping of your views and remove all noise. A visual dashboard tells a better story than lots of notification emails, often filtered and forgotten by email rules.
 
-::: moniker range=">= tfs-2017"
+
 
 Use [Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) and other extensions to build an overview of your pipelines, lead and cycle times, and gather other information. In the sample dashboard, it's evident that there are 34 successful builds, 21 successful releases, 1 failed release, and 2 releases in progress.
 
 ![High-level dashboard on Azure DevOps](./media/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
-::: moniker-end
 ## Is there a dependency on feature flags?
 
 No. Sometimes you might need a certain functionality to be deployed as part of a release, but not initially exposed to users. Feature flags give you fine-grained control of features that are included in your change. For example, if you're not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. You can enable all features in the canaries ring, and fine-tune a subset for the early adopters and production users, as shown in the following image.

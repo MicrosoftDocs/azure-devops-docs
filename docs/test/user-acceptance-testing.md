@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Assign tests for user acceptance testing
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based

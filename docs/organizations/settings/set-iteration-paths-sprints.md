@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/03/2022
+ms.date: 04/04/2022
 ---
 
 # Define iteration paths (sprints) and configure team iterations 
@@ -63,19 +63,11 @@ As needed, you can do the following tasks at any time:
 
 Each team has access to many Agile tools, as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
-::: moniker range=">= tfs-2017" 
 
 Teams can set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
 
 All work items that you create from your team context are automatically assigned both the team's default area path and default iteration path.
 
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-For TFS 2015 and earlier versions, the default iteration is the same as the backlog iteration. The selected value filters items that appear on the team's backlogs and boards, and it's assigned to work items created from the team context.
-
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
@@ -91,7 +83,7 @@ You define both areas and iterations for a project from the **Project Settings >
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
 
@@ -127,7 +119,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 <a id="admin-intro-tfs-2015" />
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then, choose **Iterations**.  
 
@@ -247,7 +239,7 @@ From **Iterations**, you can add iterations that teams can then select for their
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="define-sprints-team-services" />
 
@@ -273,31 +265,6 @@ For Scrum-based projects, you see the following set of sprints.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-<a id="tfs-2015-iteration-paths" />
-
-1. Open the **Iterations** tab for the project context. 
-
-	For Scrum-based projects, you'll see the following set of sprints. 
-
-	![Example Iterations for a Team](../../boards/sprints/media/activate-team-sprints.png)
-
-	You can change the name and location within the tree hierarchy, or set dates for any sprint. Open it (double-click or press Enter key) and specify the information that you want.
-
-2. Schedule the start and end dates for those sprints you plan to use. 
-
-	![Define start and end dates for a sprint](../../boards/sprints/media/set-sprint-start-end-dates.png)  
-
-	After you set the start and end dates for one iteration, the calendar tool automatically attempts to set the next set of dates. The calendar bases the next set of dates on the same iteration length you specified for the first. For example, if you set Sprint 1 as three-weeks long, then when you select the start date for Sprint 2, the calendar tool automatically determines the start and end dates, based on the next three weeks. You can accept or change these dates.  
-
-3. To add another sprint, select **New child** and name it. Here, we call it Sprint 7.  
-
-	![Iterations, defaults defined for Agile](../../boards/sprints/media/create-new-child-under-sprint.png)  
-
-	Your next step is to [select the sprints each team uses](#activate-sprints-tfs).
- 
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -389,7 +356,7 @@ You define both areas and iterations from **Project settings > Boards > Team con
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::. For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -490,7 +457,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1.	Open **Work** > **Iterations** for a team.  
 
@@ -527,37 +494,6 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 <a id="activate-sprints-tfs">  </a>
 
-::: moniker range="<= tfs-2015" 
-
-1.	Open the Iterations page for the team context.  
-
-	Here we open the Iterations page for the Web team.  
-
-	![Opened team administration iterations page.](media/team-defaults/stdefaults-open-team-admin-iteration-tfs.png)  
-
-	If your team isn't listed in the navigation row, open the Overview tab, select your team, and then return to the Iterations tab.  
-
-1. **Default iteration**. Only work items assigned to an iteration equal to or under the default iteration appear in the team's backlogs and boards. The default iteration also defines the iteration that's used when you create a work item from the team dashboard and queries page. 
-	
-	Open the context menu for the iteration path you want.
-
-	Here we set the P1 1 path.  Only child iterations of the backlog iteration can be active for a team. 
-
-	![Set team default iteration path](media/team-defaults/stdefaults-set-default-iteration-tfs.png)  
-
-	This path determines which work items appear in your team backlogs and boards. The path also determines [the default assigned-to](#default_path) work items that get created from any area under your team's context.  
-
-2. **Active sprints**. Check each box under the default iteration that you want active for the team.  
-
-	Here, the Fabrikam Fiber Web team activates Sprints 1 through 7. 
-
-	![Select team active sprints](media/team-defaults/stdefaults-team-active-sprints-tfs.png)   
-
-	Check boxes only appear for sprints defined under the default iteration path.  
-
-4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -707,7 +643,6 @@ However, using the `az boards iteration` commands you can list the iterations de
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
 
 ## Archive iteration paths 
 
@@ -716,7 +651,6 @@ After a while, you may want to archive iteration paths that were used for sprint
 <!--- Implications for reporting --> 
 Before you archive the iterations, consider if you've captured all the reports that you may want. 
 
-::: moniker-end
 
 ## Chart progress by iteration
 

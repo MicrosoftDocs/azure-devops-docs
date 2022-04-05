@@ -12,7 +12,7 @@ ms.date: 01/11/2022
 
 # Run manual tests
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Run your manual tests and record the test results for each test step using Microsoft Test Runner.
 You can run tests for both web applications and desktop apps.

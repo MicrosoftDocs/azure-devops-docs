@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Install the Test &amp; Feedback extension
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The **Test &amp; Feedback extension** helps teams perform exploratory testing and provide feedback. 
 Everyone in the team, such as developers, product owners, managers, UX or UI engineers, 

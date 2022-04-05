@@ -51,7 +51,7 @@ gradle -v
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select your profile icon, and then select **Security**.
 

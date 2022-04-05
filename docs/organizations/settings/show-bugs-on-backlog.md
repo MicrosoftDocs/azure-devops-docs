@@ -7,7 +7,8 @@ ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 04/30/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Show bugs on backlogs and boards  
@@ -57,7 +58,7 @@ You can change the setting from a backlog or board view, or from **Project Setti
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -77,23 +78,6 @@ You can change the setting from a backlog or board view, or from **Project Setti
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-Requires TFS 2013.4 or later version. 
-
-1. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
-
-2. Choose ![gear icon](../../media/icons/gear-icon.png) to open the administration page.  
-
-	![Gear icon provides access to admin pages](../../boards/media/icons/ALM_OpenAdminContext.png)
-
-3. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
-
-	<img src="media/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" />  
-
-4. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
-
-::: moniker-end
 
 ## Nested items  
 
@@ -119,7 +103,7 @@ You can add other work item types&#8212;such as change requests, issues, or impe
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"    
+::: moniker range="tfs-2018"    
 
 You can add other work item types&#8212;such as change requests, issues, or impediments—by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 

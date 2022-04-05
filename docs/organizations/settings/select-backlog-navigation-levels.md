@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2020
+ms.date: 04/04/2022
 ---
 
 # Select backlog navigation levels for your team
@@ -25,14 +25,10 @@ If you need additional portfolio backlogs, see the following articles based on t
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 ::: moniker-end
 
-::: moniker range="tfs-2015 < azure-devops-2019" 
+::: moniker range="< azure-devops-2019" 
 If you need additional portfolio backlogs, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
 ::: moniker-end
 
-::: moniker range="tfs-2015" 
-> [!NOTE]    
-> The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
-::: moniker-end
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
 <a id="activate-backlogs"></a>
@@ -62,7 +58,7 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -81,23 +77,6 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 ::: moniker-end
 
-::: moniker range="tfs-2015" 
-
-Requires TFS 2015.1 or later version. 
-
-1. From your web portal, choose **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the administration page. 
-
-	![Gear icon provides access to admin pages](../../boards/media/icons/ALM_OpenAdminContext.png)  
-
-1. From **Overview**, choose the team whose settings you want to configure, and then choose **Settings**. 
-
-2. Check the boxes of those backlog levels you want your team to manage. 
-
-	![TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab](../../boards/backlogs/media/ALM_OB_BacklogSettings.png)  
-
-3. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
-
-::: moniker-end
 
 ## Related articles
 
