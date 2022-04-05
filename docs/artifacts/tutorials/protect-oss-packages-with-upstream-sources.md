@@ -34,7 +34,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build & Release**, and then select **Packages**.
 
@@ -50,7 +50,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 2. Select **New Feed** to create a new feed.
 
@@ -66,7 +66,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
@@ -97,7 +97,7 @@ Now that we created our feed, we need to update the config file to point to our 
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Select **Build & Release** > **Packages**, and then select **Connect to Feed**.
 

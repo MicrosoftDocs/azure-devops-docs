@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 02/14/2022  
+ms.date: 04/04/2022  
 ---
 
 # Get started with permissions, access, and security groups  
@@ -328,27 +328,12 @@ The preview user interface for the Project Permissions Settings Page isn't avail
 
 #### [Current page](#tab/current-page) 
 
-::: moniker range=">= tfs-2017"
-
 > [!div class="mx-imgBorder"]  
 > ![Permissions dialog, current page, Why link annotated.](media/about-permissions-why.png)
 
 A new window opens that shows the inheritance information for that permission.  
 
 ![Permissions trace dialog.](media/about-permissions-trace.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-![Permissions dialog, earlier versions, Why link annotated.](media/permissions/inherited-permissions.png)  
-
-Some object level Security dialog boxes provide an Inheritance on/off option.
-Use this option to disable inheritance for folders, shared queries, and other objects.
-
-![Permissions trace dialog, earlier versions.](media/permissions/turn-on-inheritance.png)
-
-::: moniker-end
 
 * * *
 

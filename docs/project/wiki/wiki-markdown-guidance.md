@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/15/2022 
+ms.date: 04/02/2022  
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -225,19 +225,12 @@ Use the batch API `pagesBatch` to see the daily quantity of visits to all pages 
 
 ## Link to work items from a Wiki page
 
-::: moniker range="> tfs-2018"
-
 Enter the pound sign (`#`), and then enter a work item ID.
 
-::: moniker-end
-
 ::: moniker range="tfs-2018"
-
 > [!NOTE]
 > This feature is available with TFS 2018.2 and later versions.
-
 ::: moniker-end
-
 
 <a name="html"></a>
 

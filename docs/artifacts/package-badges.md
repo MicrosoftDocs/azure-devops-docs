@@ -34,7 +34,7 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
    ::: moniker-end
 
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
 
    :::image type="content" source="media/edit-feed-full.png" alt-text="A screenshot showing how to navigate to the feed settings in TFS":::
 
@@ -52,7 +52,7 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
     ::: moniker-end
 
-    ::: moniker range="<= tfs-2018"
+    ::: moniker range="tfs-2018"
 
     This will enable the **Create badge** button for every package in that feed.
 

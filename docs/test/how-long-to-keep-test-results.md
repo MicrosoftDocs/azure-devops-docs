@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
-monikerRange: '> tfs-2018'
+monikerRange: '<= azure-devops'
+ms.date: 4/04/2022
 ---
 
 # Set test retention policies
 
-[!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,

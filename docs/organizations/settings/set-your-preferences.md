@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 09/02/2021
+ms.date: 04/04/2022
 ---
 
 # Set your preferences
@@ -112,7 +112,7 @@ Other tools for setting your Azure DevOps preferences include **[Notifications](
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 1. To change your user preferences, open your profile menu.
 

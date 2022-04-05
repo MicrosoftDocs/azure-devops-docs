@@ -12,7 +12,7 @@ ms.date: 09/14/2021
 
 # Repeat a test with different data
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 You add parameters to your [manual test](create-test-cases.md) to repeat the test with different test data.
 For example, you can test adding different quantities to a shopping cart from quantities of 1, 5, 10, or 200.

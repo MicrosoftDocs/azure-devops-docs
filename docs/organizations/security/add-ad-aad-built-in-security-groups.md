@@ -8,8 +8,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
----
+ms.date: 04/04/2022
+--- 
 
 # Add AD/Azure AD users or groups to a built-in security group
 
@@ -170,7 +170,7 @@ The method for adding a user or group to a built-in security group is the same, 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 

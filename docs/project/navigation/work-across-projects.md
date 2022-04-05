@@ -9,7 +9,7 @@ ms.topic: quickstart
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 04/04/2022
 --- 
 
 
@@ -35,18 +35,6 @@ For example, you can quickly access and navigate to the following artifacts defi
 - **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited  
 - **Work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated  
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in   
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-- **Projects**: Team projects and teams within the projects that you work in  
-- **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited  
-- **Work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated  
-- **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in   
-- **Rooms**: Team rooms you use to collaborate with other team members.  
-
-> [!NOTE]  
-> The features described in this article require TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).  
 
 ::: moniker-end
 
@@ -77,7 +65,7 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
 
@@ -86,7 +74,7 @@ Choose the :::image type="icon" source="../../media/icons/project-icon.png" bord
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 Choose **Work items** to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in.
 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, choose its title.
@@ -104,7 +92,7 @@ Choose **Following** to open the page that lists all the work items [you've mark
 > ![Screenshot of Inbox > Work items pane > Following.](media/projects-page/account-home-work-following.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 ![Screenshot of Projects > My work items > Following page. ](media/org-hub-tfs/account-home-work-followed.png) 
 ::: moniker-end
 
@@ -134,7 +122,7 @@ To view pull requests you created  or that are assigned to you across projects, 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Open the **Projects>Pull requests** page to access any pull request that's relevant to you across all projects you work in. Choose **Active** or **Completed** to pivot between the active or completed set of pull requests. To initiate a pull request, choose **New pull request**.
 
@@ -163,7 +151,7 @@ Choose the :::image type="icon" source="../../media/icons/inbox.png" border="fal
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 Open the **Favorites** page to quickly access any object or item that you've marked as a favorite.
 
 > [!div class="mx-imgBorder"]  
@@ -183,22 +171,6 @@ To remove an item from your favorites list, choose the favorited icon.
 
 To filter the list, type a keyword in the *Filter favorites* box. The list will filter based on keyword matches to the title or team project name associated with the favorited item.
 
-::: moniker-end
-
-
-
-::: moniker range="tfs-2017"
-## Open a team room
-
-To open a team room, choose **Projects>Rooms**. You'll see all the team rooms defined for collection of projects. Choose the name of a team room which you have access. You only have access to those team rooms of which you are a team member.  
-
-![Account home, Rooms, selected team room](media/projects-page/account-home-rooms.png)  
-
-To learn more about team rooms, see [Collaborate in a team room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room).
-
-> [!NOTE]  
-> Team Rooms are no longer supported for TFS 2018 and later versions as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). 
- 
 ::: moniker-end
 
 

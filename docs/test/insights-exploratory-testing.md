@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Get insights across your exploratory testing sessions
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
  
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 

@@ -74,18 +74,19 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker-end  
 
-::: moniker range="> tfs-2018 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your project (```https://dev.azure.com/{yourorganization}```).
 
 1. Open your **User settings**, and then select **Notification settings** from the resulting list.
 
    ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
+::: moniker-end  
 
 ::: moniker range=" < azure-devops"
 
 > [!div class="mx-imgBorder"]
->![Go to the personal notifications page.](media/nav-personal-notifications-hub.png)
+> ![Go to the personal notifications page.](media/nav-personal-notifications-hub.png)
 
 ::: moniker-end
 

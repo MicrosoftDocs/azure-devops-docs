@@ -28,7 +28,7 @@ Azure Artifacts comes pre-installed in Azure DevOps Services, Azure DevOps Serve
 > [!NOTE]
 > Azure Artifacts license is included with every basic license for TFS 2017, 2018, and Azure DevOps Server 2019 and 2020.
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Install Azure Artifacts in TFS
 

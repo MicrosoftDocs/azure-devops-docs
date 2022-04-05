@@ -7,8 +7,8 @@ ms.technology: devops-collab
 ms.topic: conceptual 
 ms.author: kaelli
 author: KathrynEE
-ms.date: 04/22/2020 
 monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 
@@ -43,13 +43,6 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 
 Type **?** to access the Global and page-specific shortcuts.   
 
-
-::: moniker range="tfs-2015"
-> [!NOTE]  
-> The following shortcuts are available for TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
-
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
 
@@ -61,7 +54,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <=tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Code  
 
@@ -99,7 +92,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Plans
 
@@ -111,22 +104,16 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/test-shortcuts.md)]
 
-::: moniker range=">= tfs-2018"  
+
 
 ## Wiki  
-
-::: moniker-end  
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
 > Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"  
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wiki-shortcuts.md)]
-
-::: moniker-end
 
 ## Team Explorer navigational shortcuts
 
@@ -185,7 +172,7 @@ You can use query results shortcuts whenever you have a list of work items, such
 - [Identify and customize keyboard shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
 - [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Web portal navigation](..//navigation/index.md) 
+- [Web portal navigation](../navigation/index.md) 
 
 ### Install Team Explorer  
 
