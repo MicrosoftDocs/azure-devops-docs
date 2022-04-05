@@ -118,13 +118,6 @@ Allow you to configure actions when multiple releases are queued for deployment.
   > [!div class="mx-imgBorder"]
   > ![deployment queue settings](media/deploy-queue.png)
 
-::: moniker range="tfs-2015"
-
-> [!NOTE]
-> **TFS 2015**: The following features are not available in TFS 2015 - continuous deployment triggers for multiple artifact sources, multiple scheduled triggers combining scheduled and continuous deployment triggers in the same pipeline, continuous deployment based on the branch or tag of a build.
-
-::: moniker-end
-
 > [!NOTE]
 > Release triggers set a number of variables based on your pipeline configuration. You can find information about your release pipelines and/or stages by accessing the values of your [release and artifacts variables](variables.md).
 
