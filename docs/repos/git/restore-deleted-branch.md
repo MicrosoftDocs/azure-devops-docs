@@ -6,7 +6,7 @@ ms.assetid:
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 10/10/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Restore a deleted Git branch from the web portal
@@ -49,7 +49,7 @@ From there, you can use a pull request, cherry-pick, or merge to get the commits
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![View all pushes for your restored branch](media/branches/restore_deleted_branch_pushes.png)
 

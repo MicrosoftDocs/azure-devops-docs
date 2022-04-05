@@ -58,7 +58,7 @@ Remove unused Git repos from your project when they are no longer needed. The st
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select the settings icon in the web to bring up the project administration page and choose **Version Control**.
 

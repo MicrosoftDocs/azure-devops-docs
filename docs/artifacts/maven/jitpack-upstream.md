@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # JitPack upstream source
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can consume packages from different public registries such as Maven Central and Google Maven Repository and JitPack. Once you enable upstream sources, Azure Artifacts will save a copy of any package you install from upstream.
 

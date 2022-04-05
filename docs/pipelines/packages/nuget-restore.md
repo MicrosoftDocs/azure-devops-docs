@@ -111,7 +111,7 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 
 The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
 
-::: moniker range="= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 ### How do I use the latest version of NuGet?
 
@@ -120,40 +120,6 @@ For new pipelines, the **NuGet Tool Installer** will be added automatically to a
 For existing pipelines, add the **NuGet Tool Installer** to your pipeline and select the NuGet version for all the subsequent tasks. Check out the [dist.nuget](https://dist.nuget.org/tools.json) to see all the available versions.
 
 :::image type="content" source="media/nuget-tool-installer.png" alt-text="Screenshot showing the NuGet tool installer task":::
-
-::: moniker-end 
-
-::: moniker range="<=tfs-2017" 
-
-### How do I use the latest version of NuGet?
-
-The NuGet Tool Installer is not available in only available in TFS 2018. We recommended the following workaround to use NuGet version 4.0.0 or higher in your pipeline.
-
-1. Add the **NuGet** task to your pipeline definition..
-1. Select version `0.*` for your NuGet/NuGet Installer tasks.
-1. Set the **NuGet Version** to "Custom" and the **Path to NuGet.exe** to `$(Build.BinariesDirectory)\nuget.exe` in the **Advanced** section. 
-1. Add a **PowerShell** task BEFORE your NuGet task, and then select **Inline Script** and paste the following script in the script text area. The script will check if the version is 4.0.0 or higher and update the task version if needed.
-
-    ```PowerShell
-    if (-not (Test-Path $(Build.BinariesDirectory)\nuget.exe))
-    {
-        $doDownload = $true
-    }
-    else
-    {
-        $nuGetVersion = Get-ChildItem $(Build.BinariesDirectory)\nuget.exe | %{$_.VersionInfo} | %{$_.ProductVersion}
-        if ([System.Version]$nuGetVersion -lt [System.Version]"4.0.0")
-        {
-            $doDownload = $true
-        }
-    }
-    if($doDownload)
-    {
-        Invoke-WebRequest https://dist.nuget.org/win-x86-commandline/v4.0.0/nuget.exe -OutFile $(Build.BinariesDirectory)\nuget.exe
-    }
-    ```
-
-We appreciate the contribution of our community for creating the original version of the [PowerShell script](https://github.com/Microsoft/azure-pipelines-tasks/issues/3756#issuecomment-288185011) mentioned above.
 
 ::: moniker-end 
 

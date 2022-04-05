@@ -78,7 +78,7 @@ The main page of your repo now shows the files in your new branch.
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. View your repo's branches by selecting **Branches** while viewing your repo on the web.
 

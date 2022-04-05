@@ -39,7 +39,7 @@ To view or set your personal notifications, see [Manage your personal notificati
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Select the settings button while you have your project open to bring up the project administration page.
 

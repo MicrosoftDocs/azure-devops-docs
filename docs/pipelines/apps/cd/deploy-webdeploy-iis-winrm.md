@@ -12,9 +12,9 @@ monikerRange: '<= azure-devops'
 
 # Deploy your Web Deploy package to IIS servers using WinRM
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -195,7 +195,7 @@ You're now ready to create a release, which means to run the release pipeline wi
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 

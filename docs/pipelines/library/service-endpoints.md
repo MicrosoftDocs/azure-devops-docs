@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -55,7 +55,7 @@ Complete the following steps to create a service connection for Azure Pipelines.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In Team Foundation Server (TFS), open the **Services** page from the "settings" icon in the top menu bar.
 1. Select **+ New service connection** and select the type of service connection you need.
@@ -95,7 +95,7 @@ Complete the following steps to edit a service connection.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 1. Select **Project settings** > **Service connections**.
@@ -130,7 +130,7 @@ Complete the following steps to manage security for a service connection.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 

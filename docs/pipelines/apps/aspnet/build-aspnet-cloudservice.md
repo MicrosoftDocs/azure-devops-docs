@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Build your Azure Cloud Service
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Here we'll show you how to define your continuous integration (CI) pipeline for your Azure Cloud Service project.
 

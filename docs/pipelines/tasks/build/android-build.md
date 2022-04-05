@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Android build task (deprecated; use Gradle)
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build an Android app using Gradle and optionally start the emulator for unit tests.
 

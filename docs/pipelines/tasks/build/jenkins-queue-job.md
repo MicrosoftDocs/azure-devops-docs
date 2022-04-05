@@ -12,11 +12,11 @@ monikerRange: '<= azure-devops'
 
 # Jenkins Queue Job task
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to queue a job on a Jenkins server.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

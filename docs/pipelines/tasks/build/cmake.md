@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # CMake task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build with the CMake cross-platform build system.
 

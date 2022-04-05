@@ -100,7 +100,7 @@ The following table summarizes the settings you can enable or configure for each
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="2":::
       [Gravatar images](#gravatar-images)
@@ -858,7 +858,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 1. On the **Settings** tab of the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 **Gravatar images** is an individual repository setting.
 ::: moniker-end
 
@@ -1037,7 +1037,7 @@ To set case enforcement policy:
 :::image type="content" source="media/repository-settings/case-enforcement.png" alt-text="Screenshot that shows the Case enforcement policy setting.":::
 
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]   
 > The **Case enforcement** policy requires TFS 2018.2 or later version.  
 ::: moniker-end
@@ -1184,7 +1184,7 @@ To configure **Maximum file size** policy:
 
 :::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text="Screenshot that shows the Maximum file size policy setting.":::
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]   
 > The **Maximum file size** policy requires TFS 2018.2 or later.
 ::: moniker-end 

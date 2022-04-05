@@ -5,13 +5,13 @@ ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 02/14/2022
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # NuGet.org upstream source
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Enabling upstream sources on your feed allow you to publish and consume packages from your feed and public registries. Adding the nuget.org upstream allows you to consume NuGet packages from the public registry.
 

@@ -12,9 +12,9 @@ monikerRange: '<= azure-devops'
 
 # CD of an Azure virtual machine using a Resource Manager template
 
-[!INCLUDE [version-gt-eq-2015](../../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 

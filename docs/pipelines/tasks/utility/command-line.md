@@ -10,11 +10,11 @@ monikerRange: '<= azure-devops'
 
 # Command Line task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run a program from the command prompt.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
