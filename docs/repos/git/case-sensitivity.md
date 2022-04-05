@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Git case sensitivity
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Windows and macOS file systems are case-insensitive (but case-preserving) by default.
 Most Linux filesystems are case-sensitive.
