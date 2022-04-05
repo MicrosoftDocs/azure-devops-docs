@@ -63,7 +63,7 @@ By default, users in an Azure DevOps organization can create new feeds in that o
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 2. Select **Permissions**.
 

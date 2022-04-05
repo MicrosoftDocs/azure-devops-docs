@@ -85,7 +85,7 @@ ms.date: 02/15/2022
 
 ::: moniker-end
 
-::: moniker range=" tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From **Packages**, select **Connect to feed**.
 

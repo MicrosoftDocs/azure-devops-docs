@@ -21,7 +21,7 @@ Developers can use Azure Artifacts to publish and consume NuGet packages both to
 - [Install NuGet client tools](/nuget/install-nuget-client-tools)
 - [Feed permissions](feeds/feed-permissions.md).
 
-::: moniker range=" tfs-2018"
+::: moniker range="tfs-2018"
 
 This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](start-using-azure-artifacts.md).
 
