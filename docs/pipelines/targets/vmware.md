@@ -32,7 +32,7 @@ You need to first configure how Azure DevOps Server connects to vCenter. You hav
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 You need to first configure how TFS connects to vCenter. You have to a setup a self-hosted agent that can communicate with the vCenter server.
 

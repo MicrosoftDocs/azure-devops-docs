@@ -141,9 +141,9 @@ If you're an experienced pipeline user and already have a YAML pipeline to build
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -250,9 +250,9 @@ For information on Azure service connections, see the [following section](#endpo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -286,9 +286,9 @@ You'll need an Azure service connection for the `AzureWebApp` task. The Azure se
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -327,9 +327,9 @@ By default, your deployment happens to the root application in the Azure Web App
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML pis not supported in TFS.
 
 ::: moniker-end
 
@@ -379,9 +379,9 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -389,11 +389,11 @@ YAML pipelines aren't available on TFS.
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
 ::: moniker range=">= azure-devops-2019"
-Use the option **Deploy to Slot or App Service Environment** in the **Azure Web App** task to specify the slot to deploy to. 
+Use the option **Deploy to Slot or App Service Environment** in the **Azure Web App** task to specify the slot to deploy to.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-Use the option **Deploy to Slot or App Service Environment** in the **Azure App Service Deploy** task to specify the slot to deploy to. 
+::: moniker range="tfs-2018"
+Use the option **Deploy to Slot or App Service Environment** in the **Azure App Service Deploy** task to specify the slot to deploy to.
 ::: moniker-end
 
 You can swap the slots by using the **Azure App Service Manage** task.
@@ -457,9 +457,9 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -521,9 +521,9 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML piis not supported in TFS.
 
 ::: moniker-end
 
@@ -562,9 +562,9 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
