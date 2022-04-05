@@ -8,12 +8,12 @@ ms.author: atulmal
 author: azooinmyluggage
 ms.date: 02/24/2022
 ms.custom: fasttrack-edit
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Docker task
 
-[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build and push Docker images to any container registry using Docker registry service connection.
 

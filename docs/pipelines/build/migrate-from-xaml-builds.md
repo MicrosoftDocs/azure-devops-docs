@@ -10,9 +10,9 @@ monikerRange: '<= azure-devops'
 
 # Migrate from XAML builds to new builds
 
-[!INCLUDE [version-gt-eq-2013](../../includes/version-gt-eq-2013.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

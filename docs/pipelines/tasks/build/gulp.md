@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Gulp task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > Gulp is not preinstalled on all hosted agents. See [installed software on virtual machine images](../../agents/hosted.md#software). 

@@ -49,7 +49,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Navigate to your project by browsing to `https://dev.azure.com/<your organization name>` and selecting the name of your project. You can select it from the **All projects** list, or from the **Recent** projects list at the top if you've accessed it recently.
 
@@ -104,7 +104,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 

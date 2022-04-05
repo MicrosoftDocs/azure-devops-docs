@@ -24,7 +24,7 @@ The user interface provides a visual representation of the current status of the
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Visualize release progress
 

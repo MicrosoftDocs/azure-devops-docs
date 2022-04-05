@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Xamarin License task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This task was used in a build or release pipeline to activate or deactivate Xamarin licenses.
 

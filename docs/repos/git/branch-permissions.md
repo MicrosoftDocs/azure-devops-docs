@@ -129,7 +129,7 @@ The following permissions are automatically assigned to branch creators: **Contr
    :::column-end:::
 :::row-end:::
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       **Exempt from policy enforcement**

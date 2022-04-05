@@ -12,14 +12,14 @@ monikerRange: '<= azure-devops'
 
 # Windows Machine File Copy task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy application files and other artifacts such as
 PowerShell scripts and PowerShell-DSC modules that are required to 
 install the application on Windows Machines. It uses RoboCopy, the 
 command-line utility built for fast copying of data.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -65,7 +65,7 @@ or an invalid path specification. For more details, see
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

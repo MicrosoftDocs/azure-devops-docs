@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Azure File Copy task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
@@ -20,7 +20,7 @@ Microsoft Azure storage blobs or virtual machines (VMs).
 > [!NOTE]
 > This task is written in PowerShell and thus works **only** when run on Windows agents. If your pipelines require Linux agents and need to copy files to an Azure Storage Account, consider running `az storage blob` commands in the [Azure CLI task](./azure-cli.md) as an alternative.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -156,7 +156,7 @@ The log and plan files are not deleted by the task. To explicitly clean up the f
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

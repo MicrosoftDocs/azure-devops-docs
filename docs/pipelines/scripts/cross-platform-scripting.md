@@ -5,12 +5,12 @@ description: Patterns for safe cross-platform scripting
 ms.topic: conceptual
 ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
 ms.date: 02/28/2022
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Run cross-platform scripts
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Pipelines, you can run your builds on macOS, Linux, and Windows machines. If you develop on cross-platform technologies such as .NET Core, Node.js and Python, these capabilities bring both benefits and challenges.
 
