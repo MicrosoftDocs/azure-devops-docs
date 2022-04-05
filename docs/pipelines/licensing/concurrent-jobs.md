@@ -111,11 +111,6 @@ When the free tier is no longer sufficient for your self-hosted private project,
 
 ::: moniker-end
 
-::: moniker range="= tfs-2015"
-
-> Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
-::: moniker-end
-
 
 ::: moniker range="azure-devops"
 

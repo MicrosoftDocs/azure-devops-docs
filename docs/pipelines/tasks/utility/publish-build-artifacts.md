@@ -14,12 +14,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
 
-::: moniker range="tfs-2015"
-
-This article applies to TFS 2015.3 and higher.
-
-::: moniker-end
-
 
 ::: moniker range="azure-devops"
 
@@ -35,7 +29,7 @@ Use this task in a build pipeline to publish build artifacts to Azure Pipelines,
 
 None
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<= azure-devops"
 
 ## YAML snippet
 
@@ -60,7 +54,7 @@ None
 > [!NOTE]
 > You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an Artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<= azure-devops"
 
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 

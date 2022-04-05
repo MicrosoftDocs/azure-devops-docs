@@ -43,28 +43,12 @@ For an example, see [Use a script to customize your build pipeline](../scripts/p
 
 ## Default agent pool
 
-::: moniker range="<= tfs-2017"
-
-> **TFS 2017.1 and older**
->
-> This section is available under <b>General<b> tab.
-
-::: moniker-end
-
 Select the [pool](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
 
 > [!TIP]
 > If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 
 ## Build job authorization scope
-
-::: moniker range="<= tfs-2017"
-
-> **TFS 2017.1 and older**
->
-> This section is available under <b>General<b> tab.
-
-::: moniker-end
 
 Specify the authorization scope for a build job. Select:
 

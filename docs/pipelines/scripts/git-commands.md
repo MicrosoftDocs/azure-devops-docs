@@ -107,23 +107,8 @@ When you're done granting the permissions, make sure to select **Save changes**.
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
-
-### Enable your pipeline to run command-line Git
-
-On the [variables tab](../build/variables.md) set this variable:
-
-| Name | Value |
-|---|---|
-| ```system.prefergit``` | ```true``` |
-
-::: moniker-end
-
-::: moniker range=">= tfs-2018"
 
 ### Allow scripts to access the system token
-
-::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -147,7 +132,7 @@ On the [options tab](../build/options.md), select **Allow scripts to access OAut
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
 On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
@@ -195,10 +180,6 @@ steps:
 
 ### List the files in your repo
 
-::: moniker range="< tfs-2018"
-Make sure to follow the above steps to [enable Git](#enable).
-::: moniker-end
-
 On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
@@ -208,10 +189,6 @@ On the [build tab](../tasks/index.md) add this task:
 ### Merge a feature branch to main
 
 You want a CI build to merge to main if the build succeeds.
-
-::: moniker range="< tfs-2018"
-Make sure to follow the above steps to [enable Git](#enable).
-::: moniker-end
 
 On the [Triggers tab](../build/triggers.md), select **Continuous integration (CI)** and include the branches you want to build.
 
@@ -288,14 +265,6 @@ You can also use any of the variations below. This is supported for commits to A
 - `[skip azpipelines]` or `[azpipelines skip]`
 - `[skip azp]` or `[azp skip]`
 - `***NO_CI***`
-
-::: moniker-end
-
-::: moniker range="< tfs-2018"
-
-### How does enabling scripts to run Git commands affect how the build pipeline pulls in build sources?
-
-When you set ```system.prefergit``` to ```true```, the build pipeline uses command-line Git instead of LibGit2Sharp to clone or fetch the source files.
 
 ::: moniker-end
 

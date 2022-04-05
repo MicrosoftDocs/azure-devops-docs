@@ -423,15 +423,12 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 ***
 
 
-::: moniker range=">= tfs-2017" 
 
 <a id="check-comment-resolution"></a>
 
 ## Check for comment resolution
 
 The **Check for comment resolution** policy checks whether all PR comments are resolved.
-
-::: moniker-end
 
 # [Browser](#tab/browser)
 
@@ -445,7 +442,7 @@ For more information on working with pull request comments, see [Review pull req
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
@@ -528,7 +525,6 @@ az repos policy comment-required update --id
 The following example updates comment resolution policy ID `6` in the `main` branch of the Fabrikam repository to be blocking. Comments must be resolved before pull requests can merge. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
-
 az repos policy comment-required update --id 6 --blocking true --output table
 
 ID    Name                  Is Blocking    Is Enabled    Repository Id                         Branch
@@ -536,8 +532,8 @@ ID    Name                  Is Blocking    Is Enabled    Repository Id          
 6     Comment requirements  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
 ```
 
-
 ::: moniker-end
+
 
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]

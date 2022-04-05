@@ -12,35 +12,14 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 From the **History** tab you can see a list of changes that includes who made the change and when the change occurred.
 
-::: moniker range="tfs-2017"
-
-## TFS 2017.3 and newer
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
 To work with a change, select it, click **...**, and then click **Compare Difference** or **Revert Pipeline**.
 
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-## TFS 2017 RTM
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-After you've viewed the history, if you want details about a change, select it and then choose **Diff**. If you want to roll back to an earlier version, select it, and then click **Rollback**.
-
-::: moniker-end
 
 ## FAQ 
 

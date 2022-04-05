@@ -428,10 +428,8 @@ Note the following:
 You can use the user interface to import a test suite from one test plan, within the same or different project, to another test plan in the current project. This action essentially copies or clones the test suite, creating a new test suite and duplicating any sub-test suites. The test cases referenced by the test suites are not duplicated, but referenced by the cloned test suites. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
 You can use [MTM](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases) or TCM to clone a test suite, specifying the target test plan, which can be within the same or another project. You can also specify a custom test suite work item type. 
  
-::: moniker-end
 
 
 
