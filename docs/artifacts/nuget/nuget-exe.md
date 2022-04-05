@@ -34,7 +34,7 @@ monikerRange: '>= tfs-2018'
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 2. Select **Connect to feed**.
 
@@ -86,7 +86,7 @@ nuget setapikey <Personal_Access_Token> -source <Feed_URL>
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Project setup (NuGet 2)
 

@@ -1,18 +1,14 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
- 
 
 To toggle between card titles only and card details, enter **t**. 
  
-
-::: moniker range="tfs-2017"
 > [!NOTE]
-> The following shortcuts are available from the web portal for TFS 2017.2 and later versions. Type **?** to access  Global and service-specific shortcuts.
-::: moniker-end
+> Type **?** to access  Global and service-specific shortcuts.
 
- 
 
 :::row:::
    :::column span="2":::

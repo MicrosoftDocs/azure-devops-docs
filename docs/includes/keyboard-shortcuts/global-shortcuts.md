@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 
@@ -35,7 +36,7 @@ You can use the following keyboard shortcuts from the web portal.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 You can use the following keyboard shortcuts from the web portal.
 

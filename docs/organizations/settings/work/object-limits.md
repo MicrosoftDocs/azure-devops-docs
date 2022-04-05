@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 03/29/2022
+ms.date: 04/04/2022
 ---
 
 # Work tracking, process, and project limits
@@ -191,7 +191,7 @@ The following table lists the maximum number of objects that you can define for 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 The following table lists the maximum number of objects that you can define for the ON-premises XML process model. While these represent hard limits, practical limits may apply. 
 
@@ -296,7 +296,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
@@ -313,15 +313,3 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 - [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
 
-<!---
-
-TBD
-
-- Naming restrictions 
-- persistence of work items - they don't delete 
-https://developercommunity.visualstudio.com/idea/849727/i-have-a-few-questions-about-usage-and-limits-for.html
-
-Usage limit warning -- can occur with a corrupt query 
-https://developercommunity.visualstudio.com/content/problem/778106/being-told-that-were-approaching-rate-limiting-thr.html
-
---> 

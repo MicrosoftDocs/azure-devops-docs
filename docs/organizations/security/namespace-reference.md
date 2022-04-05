@@ -8,8 +8,8 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/14/2021
---- 
+ms.date: 04/04/2022  
+---
 
 # Security namespace and permission reference for Azure DevOps 
 
@@ -154,7 +154,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
       DashboardsPrivileges  
@@ -174,7 +173,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="1":::
       Git Repositories <a id="git-repositories" />    
@@ -263,7 +261,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       Plan  
@@ -281,8 +278,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
       ReleaseManagement 
@@ -320,7 +315,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="1":::
       WorkItemQueryFolders 
@@ -457,9 +451,7 @@ The following table describes the namespaces that manage project-level permissio
 
 ::: moniker range="azure-devops"
 
-
 ## Organization-level namespaces and permissions 
-
 
 The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions.  To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 ::: moniker-end
@@ -611,6 +603,8 @@ The following table describes the namespaces that manage organization-level perm
 :::row-end:::
 ---
 
+::: moniker range="< azure-devops"
+
 ## Server-level namespaces and permissions  
 
 The following table describes those security namespaces and permissions defined for on-premises instances of Azure DevOps Server.  You can manage these permissions, which are granted to members of the Team Foundation Administrators group, through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). For descriptions of these permissions, see [Permissions and groups, Server-level permissions](permissions.md#server-permissions).  
@@ -676,6 +670,8 @@ The following table describes those security namespaces and permissions defined 
 :::row-end:::
 ---
  
+::: moniker-end
+
 
 ## Role-based namespaces and permissions
 
@@ -1146,7 +1142,6 @@ The following table describes the security namespaces and permissions that aren'
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
       ServiceHooks
@@ -1164,7 +1159,6 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -1266,62 +1260,3 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - [Security glossary](security-glossary.md)
 - [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
 
-
-<!---   
-
-Note access level restrictions. 
-Note non UI permissions
-
-
----
-:::row:::
-   :::column span="":::
-      Identity2
-   :::column-end:::
-   :::column span="":::
-      `Read`     
-      `Write`  
-      `Delete`  
-      `Impersonate`  
-   :::column-end:::
-   :::column span="2":::
-      TBD 
-      <br/>
-      **ID:** `bf7bfa03-b2b7-47db-8113-fa2e002cc5b1` 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-:::row:::
-   :::column span="":::
-      TeamLabSecurity
-   :::column-end:::
-   :::column span="":::
-      `Read`  
-      `Create `  
-      `Write`  
-      `Edit`  
-      `Delete`  
-      `Start`  
-      `Stop`  
-      `Pause`  
-      `ManageSnapshots`  
-      `ManageLocation`  
-      `DeleteLocation`  
-      `ManagePermissions`  
-      `ManageChildPermissions`  
-      `ManageTestMachines`  
-   :::column-end:::
-   :::column span="2":::
-      TBD
-      ::: moniker range="<= tfs-2015"
-      [Manages Lab Management permissions](./permissions.md#lab).
-      > [!NOTE]  
-      > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).  
-      ::: moniker-end   
-      <br/>  
-      **ID:** `9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1`   
-   :::column-end:::
-:::row-end:::
----
-
--->

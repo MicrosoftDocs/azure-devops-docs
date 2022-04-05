@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/03/2022
+ms.date: 04/04/2022
 ---
 
 # About area and iteration (sprint) paths 
@@ -26,7 +26,7 @@ You define area and iteration paths for a project. Teams can then choose which p
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 > [!NOTE] 
 > Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).
@@ -59,12 +59,8 @@ If you're new to managing projects and teams, the most straight forward sequence
 > [!NOTE]  
 > Organizations are limited to defining a maximum of 10,000 **Area Paths**, and assigning a maximum of 300 **Area Paths** to a single team. To learn more, see [Work tracking, process, and project limits](work/object-limits.md).
 
-::: moniker range=">= tfs-2017"
-
 > [!NOTE] 
 > While you can assign the same **Area Path** to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
-
-::: moniker-end
 
 As needed, you can do the following actions at any time: 
 
@@ -148,6 +144,17 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 [!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
 
 
+<a name="field-rules"></a>
+
+::: moniker range="tfs-2018"
+
+## Supported field rules  
+
+You can [specify only a small subset of rules](../../organizations/settings/work/rule-reference.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
+
+::: moniker-end
+
+
 ## Related articles 
 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from the following articles. 
@@ -159,18 +166,3 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 
 
 
-::: moniker range="<= tfs-2018"
-
-<a name="field-rules"></a>
-
-### Supported field rules  
-
-You can [specify only a small subset of rules](../../organizations/settings/work/rule-reference.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
-
-<a name="team-field"></a>
-
-### Team field versus team area path  
-
-If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. [Add a custom field to represent teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) in your organization. You can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
-
-::: moniker-end

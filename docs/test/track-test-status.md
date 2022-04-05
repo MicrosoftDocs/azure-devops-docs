@@ -12,7 +12,7 @@ ms.date: 12/08/2021
 
 # Track test status
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 View the status of planned tests or monitor testing progress by defining test case or test result charts. To learn more about test planning, see [Create test plans and test suites](create-a-test-plan.md). For information about test result terms, see [Test objects and terms](test-objects-overview.md#test-terms).
 

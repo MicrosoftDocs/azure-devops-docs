@@ -106,7 +106,7 @@ Choose the **Project Administrators** group from the **Project Settings > Permis
 ::: moniker-end  
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 

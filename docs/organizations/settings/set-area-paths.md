@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/03/2022
+ms.date: 04/04/2022
 ---
 
 # Define area paths and assign to a team
@@ -56,12 +56,9 @@ If you're new to managing projects and teams, the most straight forward sequence
 5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
-::: moniker range=">= tfs-2017"
-
 > [!NOTE]
 > While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).
 
-::: moniker-end
 
 As needed, you can do the following actions at any time:
 
@@ -87,7 +84,7 @@ Define both areas and iterations for a project from the **Project Settings** > *
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
 
@@ -107,7 +104,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 <a id="admin-intro-team-services" /> 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal for the project, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
@@ -122,16 +119,6 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 2. Choose **Work**.  
 
 ::: moniker-end   
-
-<a id="admin-intro-tfs-2015" />
-
-::: moniker range="<= tfs-2015"  
-
-- From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then choose **Areas**.
-
-    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
-
-::: moniker-end
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -199,41 +186,12 @@ Only one area is defined, by default. Add area paths under the root area path fo
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= tfs-2018"  
-
 - To add a child node, highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
     > [!div class="mx-imgBorder"]  
     > ![Add a new area path](media/areas/new-area-preview.png) 
- 
-::: moniker-end
-
-::: moniker range="tfs-2017"  
-
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can select **Settings** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
-
-    Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Add a new area path, 2017 and earlier versions](media/areas/m-areas-add-area-path.png) 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"  
-
-1. Open **Areas**.  
-
-    ![Open the areas page defined for project](media/areas/ALM_CW_OpenAreas.png)
-
-    From the areas page, you can set the default area path used to filter the backlog. The default area path is also used when new work items a user creates new work items. 
-
-2. Add a new child node to the area you've selected.</p>
-
-    ![Create a new area node](media/areas/ALM_CW_CreateArea.png) 
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -318,7 +276,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: . For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -395,18 +353,9 @@ You define both areas and iterations from **Project Settings > Team configuratio
 
 ## Set team area path(s)
 
-::: moniker range=">= tfs-2017"  
-
 All work items that are assigned to a team area path appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas.
 
-::: moniker-end  
 
-::: moniker range="<= tfs-2015"  
-
-All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas. 
-
-::: moniker-end
-  
 > [!NOTE]  
 > Teams can be assigned a maximum of 300 **Area Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
 
@@ -444,7 +393,7 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops-2020"  
+::: moniker range="< azure-devops-2020"  
 
 1. Open **Areas** for the team context.  
 
@@ -466,20 +415,6 @@ The default area path determines the default area path assigned to work items th
 
    > [!div class="mx-imgBorder"]  
    > ![Backlog view of default team, on-premises versions](media/add-team/product-backlog-default-team-horz.png)  
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2015"  
-
-1. Open the Areas admin page for the team context.  
-
-    Here, we navigate to the Fabrikam Fiber team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
-
-    ![Work, Area page for Fabrikam Fiber team](media/team-defaults/stdefaults-open-team-area-page-tfs.png)  
-
-2. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber area path.   
-
-   ![Product backlog for Fabrikam Fiber team](media/team-defaults/stdefaults-backlog-web-team-list.png)  
 
 ::: moniker-end  
 
@@ -558,7 +493,7 @@ The system automatically updates work items and queries that reference your upda
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
 
