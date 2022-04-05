@@ -52,7 +52,7 @@ If you plan on using your existing on-premises private build agents, there is on
 
 ## Release management
 
-If you used Release Management in Azure DevOps Server then your release pipelines and history data will be included with your import. However, like builds, you'll need to reonfigure your [agents](../pipelines/agents/agents.md) and pools against the new organization. 
+If you used Release Management in Azure DevOps Server then your release pipelines and history data will be included with your import. However, like builds, you'll need to reconfigure your [agents](../pipelines/agents/agents.md) and pools against the new organization. 
 
 ## Azure Artifacts
 
