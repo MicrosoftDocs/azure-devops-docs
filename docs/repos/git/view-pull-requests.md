@@ -79,7 +79,7 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="= tfs-2018"
 
 Manage PRs you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
 
@@ -87,17 +87,8 @@ Manage PRs you own or are assigned to with the **Pull Requests** tab in the **Co
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2017" 
 
-Select **Active** to show all active PRs for the current repo.
-
-Select **Completed** or **Abandoned** to bring up a history of closed PRs.
-
-![Viewing completed and abandoned PRs in Azure Repos.](media/view-pull-requests/pr-status-widget.png)
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2018"
+::: moniker range="= tfs-2018"
 
 You can view all of your PRs in your organization, across all projects, by choosing **My pull requests** from the **Projects** page.
 

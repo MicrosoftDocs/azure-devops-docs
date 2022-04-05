@@ -361,7 +361,7 @@ In all these cases, you can still rebase your branch locally and then push upstr
 In some cases, a PR has more than one true merge base, and this situation can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](about-pull-requests.md#multiple-merge-bases). 
 
 
-::: moniker range=">= tfs-2017" 
+
 
 ## Resolve merge conflicts
 
@@ -369,7 +369,7 @@ File changes in your branch can conflict with changes in another branch. When it
 
 ![Screenshot that shows merge conflicts on the Overview tab of a P R.](./media/complete-pull-requests/merge-conflict.png)
 
-::: moniker-end
+
 
 <a name="complete-automatically"></a>
 
@@ -377,7 +377,7 @@ File changes in your branch can conflict with changes in another branch. When it
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= tfs-2017"
+
 Select **Set auto-complete** from the **Complete** dropdown list to complete and merge the PR changes as soon as conditions satisfy all [branch policies](branch-policies.md). When the PR is completed, you receive an email notification. If a conflict or error prevents PR completion, email notifies you of the issue.
 
 >[!NOTE]
@@ -391,13 +391,11 @@ Starting with TFS 2018 Update 2, the PR **Overview** page displays the list of o
 
 Select **Cancel auto-complete** to turn off autocomplete. 
 
-::: moniker-end 
-
 ::: moniker range="azure-devops"
 ![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/autocomplete.png)
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
+::: moniker range="< azure-devops"
 ![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/pr-banner-autocomplete.png)
 ::: moniker-end 
 
@@ -457,7 +455,6 @@ To abandon a PR without merging the changes, use `az repos pr update --id <PR Id
 
 <a name="revert-a-completed-pr"></a>
 
-::: moniker range=">= tfs-2017"
 
 ## Revert a completed pull request
 
@@ -477,7 +474,7 @@ To undo the changes from a PR, follow these steps. For more information, see [Un
 
 > [!NOTE]
 > The branch created during this revert has a single commit that reverts all the file changes from the original PR. The branch doesn't contain a reverted commit for each of the commits in the original PR.
-::: moniker-end
+
 
 ## Next steps
 

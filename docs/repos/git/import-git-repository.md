@@ -238,7 +238,6 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 
 ## Frequently asked questions
 
-::: moniker range=">= tfs-2017"
 
 Although most of the time the import is successful, the following conditions can cause problems.
 
@@ -262,7 +261,7 @@ The import service uses the [multi_ack](https://git-scm.com/book/en/v2/Git-Inter
 If the source repository does not provide this capability, the import service can fail to import from the given source.
 This failure can happen when creating import request or while import is in progress.
 
-::: moniker-end
+
 
 
 ### Can I import from previous versions of Team Foundation Server?
@@ -271,7 +270,7 @@ If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then
 This happens because of a contract mismatch between the latest Azure DevOps Services/TFS and pre-2017 RTM versions of TFS.
  
 
-::: moniker range=">= tfs-2017"
+
 
 ### Can I use MSA-based credentials?
 
@@ -317,7 +316,7 @@ git fetch upstream --tags
 git push origin --all
 ```
 
-::: moniker-end
+
 
 ## Next steps
 

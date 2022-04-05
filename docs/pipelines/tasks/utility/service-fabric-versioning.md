@@ -14,13 +14,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
 
-::: moniker range="= tfs-2017"
-
-> [!NOTE]
-> In TFS 2017 this task is named **Update Service Fabric App Versions task**.
-
-::: moniker-end
-
 Use this task in a build pipeline to automatically update 
 the versions of a packaged Service Fabric app.
 This task appends a version suffix to all service and app versions, 

@@ -54,28 +54,12 @@ Also, machine-level caches and configuration persist from run to run, which can 
 
 :::moniker-end
 
-::: moniker range=">= tfs-2017"
-
 You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Docker container. For more information about installing a self-hosted agent, see:
 
 * [macOS agent](v2-osx.md)
 * [Linux agent](v2-linux.md) (x64, ARM, ARM64, RHEL6)
 * [Windows agent](v2-windows.md) (x64, x86)
 * [Docker agent](docker.md)
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-You can install the agent on Linux, macOS, or Windows machines. For more information about installing a self-hosted agent, see:
-
-* [macOS agent](v2-osx.md)
-* [Red Hat agent](v2-linux.md)
-* [Ubuntu 14.04 agent](v2-linux.md)
-* [Ubuntu 16.04 agent](v2-linux.md)
-* [Windows agent v1](/previous-versions/azure/devops/pipelines/v1-windows?&view=azure-devops&preserve-view=true)
-
-::: moniker-end
 
 > [!NOTE]
 > On macOS, you need to clear the special attribute on the download archive to prevent Gatekeeper protection from displaying for each assembly in the tar file when `./config.sh` is run. The following command clears the extended attribute on the file:
@@ -107,11 +91,7 @@ For more information, see [Azure virtual machine scale set agents](scale-set-age
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 || azure-devops"
-
 ## Parallel jobs
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -121,7 +101,7 @@ Microsoft provides a free tier of service by default in every organization that 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="< azure-devops"
 
 You might need more parallel jobs to use multiple agents at the same time:
 
@@ -309,27 +289,17 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
-
 ### Communication with TFS
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 The agent communicates with Azure Pipelines or Azure DevOps Server to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or Azure DevOps Server happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 ![Agent topologies in on-premises installations.](media/agent-topologies-tfs.png)
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 ![Agent topologies in Azure DevOps Services.](media/agent-topologies-devops.png)
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 Here is a common communication pattern between the agent and Azure Pipelines or Azure DevOps Server.
 
@@ -340,18 +310,6 @@ Here is a common communication pattern between the agent and Azure Pipelines or 
 3. After the job is completed, the agent discards the job-specific OAuth token and goes back to checking if there is a new job request using the listener OAuth token.
 
 The payload of the messages exchanged between the agent and Azure Pipelines/Azure DevOps Server are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in pipelines or variable groups are secured as they are exchanged with the agent.
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-Here is a common communication pattern between the agent and TFS.
-
-* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listen to the job queue.
-
-* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](/azure/devops/server/admin/websitesettings) between the agent and TFS.
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -386,23 +344,19 @@ Your agent can authenticate to Azure Pipelines using the following method:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="< azure-devops"
 
 Your agent can authenticate to Azure DevOps Server or TFS using one of the following methods:
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017"
-
 ### Personal Access Token (PAT): 
 [Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. The PAT must have **Agent Pools (read, manage)** scope (for a [deployment group](../release/deployment-groups/index.md) agent, the PAT must have **Deployment group (read, manage)** scope), and while a single PAT can be used for registering multiple agents, the PAT is used only at the time of registering the agent, and not for subsequent [communication](#communication). For more information, see the Authenticate with a personal access token (PAT) section in the [Windows](v2-windows.md#authenticate-with-a-personal-access-token-pat), [Linux](v2-linux.md#authenticate-with-a-personal-access-token-pat), or [macOS](v2-osx.md#authenticate-with-a-personal-access-token-pat) self-hosted agents articles.
 
 To use a PAT with Azure DevOps Server, your server must be configured with HTTPS. See [Web site settings and security](/azure/devops/server/admin/websitesettings).
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="< azure-devops"
 
 ### Integrated
 

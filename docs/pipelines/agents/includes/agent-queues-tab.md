@@ -31,14 +31,3 @@ ms.date: 08/07/2020
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab-tfs-2017.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab-tfs-2015.md)]
-
-::: moniker-end

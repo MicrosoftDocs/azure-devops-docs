@@ -12,13 +12,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2015"
-
-> [!IMPORTANT]
-> For TFS 2015, see [Self-hosted Windows agents - TFS 2015](/previous-versions/azure/devops/pipelines/v1-windows?&view=azure-devops&preserve-view=true).
-
-::: moniker-end
-
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
@@ -115,9 +108,9 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="= tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
@@ -153,7 +146,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`.
 ::: moniker-end
 
@@ -166,7 +159,7 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
@@ -283,17 +276,6 @@ The help provides information on authentication alternatives and unattended conf
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [include](includes/v2/qa-agent-version.md)]
-
-::: moniker range="tfs-2017"
-
-### What version of the agent runs with TFS 2017?
-
-| TFS version | Minimum agent version |
-|-|-|
-| 2017 RTM | 2.105.7 |
-| 2017.3 | 2.112.0 |
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 [!INCLUDE [include](includes/v2/qa-firewall.md)]
