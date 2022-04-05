@@ -238,7 +238,7 @@ To test an extension, it must be installed to an organization in Azure DevOps. I
 
 4. In the Marketplace, select your extension to open its overview page.
 
-:::moniker range="<= tfs-2018"
+:::moniker range="tfs-2018"
 
    <img src="media/details-page.png" alt="Overview page" /> 
 
@@ -267,7 +267,7 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 
 1. Select **Proceed to organization** at the end of the installation wizard to navigate to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
 
-:::moniker range="<= tfs-2018"
+:::moniker range="tfs-2018"
 
 2. Select any of the projects listed to navigate into it:
 

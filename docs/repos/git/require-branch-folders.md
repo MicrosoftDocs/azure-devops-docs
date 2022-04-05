@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Require branches to be created in folders
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders is an effective way to tame the chaos.

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Create a pull request status server with Node.js
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 

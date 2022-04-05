@@ -14,12 +14,6 @@ ms.date: 09/27/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
-> [!NOTE]
-> _Service endpoints_ are called _service connections_ in TFS 2018 and in older versions.
-> _Pipelines_ are called _definitions_ in TFS 2018 and older versions.
-::: moniker-end
-
 Service endpoints are a way for Azure DevOps to connect to external systems or services. They're a bundle of properties securely stored by Azure DevOps, which includes but isn't limited to the following properties:
 
 - Service name
@@ -27,6 +21,12 @@ Service endpoints are a way for Azure DevOps to connect to external systems or s
 - Server URL
 - Certificates or tokens
 - User names and passwords
+
+::: moniker range="tfs-2018"
+> [!NOTE]
+> _Service endpoints_ are called _service connections_ in TFS 2018 and earlier versions.
+> _Pipelines_ are called _build definitions_ in TFS 2018 and and earlier versions.
+::: moniker-end
   
 Extensions are then able to use the service endpoint to acquire the stored details to do the necessary operations on that service. 
 Follow this guide to create a new Service Point contribution and use it in your extension.
@@ -285,21 +285,13 @@ This field is second. It's a picklist.
 
 If you've added the Build Task successfully, you should now see the Build Task when you're adding tasks to a build pipeline.
 
-::: moniker range="tfs-2017"
-
 :::image type="content" source="media/service-endpoint-build-task-selector.png" alt-text="Service endpoint build task selector image.":::
-
-::: moniker-end
 
 Once you've added the Build Task to your pipeline, confirm that it can see the Fabrikam endpoint you created.
 The projects dropdown in this tutorial is blank since we aren't using a real service.
 Once you replace Fabrikam with your service, replace the Projects call with your own REST API call to use dynamic data inside your build task.
 
-::: moniker range="tfs-2017"
-
 :::image type="content" source="media/service-endpoint-build-task-setup.png" alt-text="Service endpoint build task setup image.":::
-
-::: moniker-end
 
 ## Authentication
 

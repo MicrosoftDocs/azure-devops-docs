@@ -1,5 +1,4 @@
 ---
-
 title: Extension Points
 titleSuffix: Azure DevOps
 description: Browse through the places where your extension can extend Azure DevOps.
@@ -7,13 +6,14 @@ ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.technology: devops-ecosystem
 ms.author: chcomley
 author: chcomley
+monikerRange: '<= azure-devops'
 ms.topic: overview
 ms.date: 02/24/2022
 ---
 
 # Extensibility points
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Extensions enhance the Azure DevOps user experience by contributing new capabilities. In this article, we highlight the most common extensibility points that your extension can target. To learn more about the Azure DevOps extensibility model, see the [Contribution model](../../develop/contributions-overview.md) for an overview.
 
