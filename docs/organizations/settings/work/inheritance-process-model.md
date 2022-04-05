@@ -77,6 +77,9 @@ Following the guidance provided in the above listed articles, you can also make 
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [Choose a process](../../../boards/work-items/guidance/choose-process.md).
 
+### Best practices when making changes
+
+Making changes to an inherited process is straight forward and safe. However, it is always a best practice to test those changes before applying them to an active project. [Following these steps](./manage-process.md#copy-a-process) will help you surface any negative affects your process changes may have.
 
 ::: moniker-end
 
