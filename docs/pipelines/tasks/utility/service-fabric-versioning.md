@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Update Service Fabric Manifests task
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task in a build pipeline to automatically update 
 the versions of a packaged Service Fabric app.

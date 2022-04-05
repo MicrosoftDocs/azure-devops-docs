@@ -6,7 +6,7 @@ ms.assetid: 11f567b2-e45f-434c-88eb-d5f43398b451
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.date: 08/11/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 

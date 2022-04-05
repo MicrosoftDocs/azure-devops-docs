@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Deploy to Azure Web App for Containers
 
-[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 

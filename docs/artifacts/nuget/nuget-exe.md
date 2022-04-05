@@ -5,12 +5,12 @@ ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 10/18/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Connect to Azure Artifacts feeds
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 

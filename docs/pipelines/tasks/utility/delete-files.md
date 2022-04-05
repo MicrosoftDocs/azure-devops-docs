@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Delete Files task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to delete files or folders from the agent working directory.
 

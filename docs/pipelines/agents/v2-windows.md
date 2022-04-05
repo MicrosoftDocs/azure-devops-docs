@@ -108,7 +108,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### TFS 2018
 

@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -66,7 +66,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be kept for each pipeline.
 
@@ -123,7 +123,7 @@ The setting for number of recent runs to keep for each pipeline requires a littl
 
 ### What parts of the run get deleted
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
 
@@ -170,7 +170,7 @@ A run is deleted if all of the following conditions are true:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Your retention policies run every day at 3:00 A.M. UTC. There is no option to change the time the policies run.
 
@@ -218,7 +218,7 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You can also learn how to customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies) later in this article.
 
 ::: moniker-end
@@ -380,7 +380,7 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can also customize these policies on a branch-by-branch basis if you are building from [Git repositories](#git-repositories).
 

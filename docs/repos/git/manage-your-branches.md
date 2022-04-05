@@ -24,7 +24,7 @@ View your repo's branches by selecting **Repos**, **Branches** while viewing you
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 View your repo's branches by selecting **Branches** while viewing your repo on the web.
 

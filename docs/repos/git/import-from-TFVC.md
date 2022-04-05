@@ -56,7 +56,7 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the repo drop-down, select **Import repository**.
 

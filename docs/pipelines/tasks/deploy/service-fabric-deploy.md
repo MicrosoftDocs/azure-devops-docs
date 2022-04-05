@@ -12,13 +12,13 @@ monikerRange: '<= azure-devops'
 
 # Service Fabric Application Deployment task
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to deploy a Service Fabric application to a cluster.
 This task deploys an Azure Service Fabric application to a cluster 
 according to the settings defined in the publish profile.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
