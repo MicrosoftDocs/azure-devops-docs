@@ -23,8 +23,8 @@ In addition, we impose limits on the total size of repositories and pushes.
 
 ## Repository size
 
-Repositories should generally be no larger than 10GB.
-You can run `git count-objects -vH` in a command prompt, and look for the entry called "size-pack" to determine how large your repository is:
+Repositories should be no larger than 250GB. 
+To retrieve the size of your repository, execute "git count-objects -vH" in a command prompt, and look for the entry called "size-pack":
 
 ```
 D:\my-repo>git count-objects -vH
@@ -39,10 +39,13 @@ garbage: 0
 size-garbage: 0 bytes
 ```
 
-In uncommon circumstances, repositories may be larger than 10GB.
-For instance, the Windows repository is at least 300GB.
-For that reason, we do not have a hard block in place.
-If your repository grows beyond 10GB, consider using [Git-LFS](manage-large-files.md), [Scalar](https://github.com/microsoft/Scalar), or [Azure Artifacts](../../artifacts/index.yml) to refactor your development artifacts.
+We recommend keeping your repository below 10GB for optimal operation. 
+If your repository exceeds this size consider using [Git-LFS](manage-large-files.md), [Scalar](https://github.com/microsoft/Scalar), or [Azure Artifacts](../../artifacts/index.yml) to refactor your development artifacts.
+
+Azure DevOps continuously reduces the overall size and increases the efficiency of the repository by consolidating similar files into packs. 
+For repositories nearing 250 GB, it is possible that the job responsible for optimizing the files cannot complete before the internal limit on number of files is reached. 
+Any user attempting to write to the database will see the following error message: “The Git pack file limit has been reached, write operations are temporarily unavailable while the repository is updated.“ 
+Write operations will be restored immediately after the job completes.
 
 ## Push size
 
