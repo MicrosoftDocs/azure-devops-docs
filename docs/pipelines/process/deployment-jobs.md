@@ -134,8 +134,8 @@ If you are using self-hosted agents, you can use the workspace clean options to 
   - deployment: deploy
     pool:
       vmImage: 'ubuntu-latest'
-      workspace:
-        clean: all
+    workspace:
+      clean: all
     environment: staging
 ```
 
