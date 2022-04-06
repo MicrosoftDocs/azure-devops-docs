@@ -94,7 +94,7 @@ On the Build tab of a build pipeline, add these tasks:
 <table>
    <tr>
       <td>
-:::image type="icon" source="media/command-line.png" border="false":::
+:::image type="content" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong>
       </td>
 <td>
@@ -107,7 +107,7 @@ On the Build tab of a build pipeline, add these tasks:
 </tr>
 <tr>
 <td>
-:::image type="icon" source="media/command-line.png" border="false":::
+:::image type="content" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the operating system version.</p>
@@ -118,7 +118,7 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
         <tr>
       <td>
-:::image type="icon" source="media/command-line.png" border="false":::
+:::image type="content" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the environment variables.</p>
@@ -129,7 +129,7 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
         <tr>
       <td>
-:::image type="icon" source="media/command-line.png" border="false":::
+:::image type="content" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
