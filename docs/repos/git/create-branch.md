@@ -168,7 +168,7 @@ git checkout <existing branch name>
 To create and switch to a branch in one command, use the `git checkout` command with the `-b` flag.
 
 ```Git CLI
-git checkout -b <existing branch name>
+git checkout -b <new branch name>
 ```
 
 > [!TIP]
