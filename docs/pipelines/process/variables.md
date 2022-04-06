@@ -619,6 +619,7 @@ stages:
     - task: MyTask@1  # this step generates the output variable
       name: ProduceVar  # because we're going to depend on it, we need to name the step
 - stage: Two
+  jobs:
   - job: B
     variables:
       # map the output variable from A into this job
