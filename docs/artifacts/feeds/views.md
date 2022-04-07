@@ -4,7 +4,7 @@ description: How to use feed views to share your packages
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/16/2022
+ms.date: 04/07/2022
 monikerRange: '<= azure-devops'
 ---
  
@@ -81,6 +81,9 @@ In addition to using the Azure Artifacts user interface, you can also promote pa
 
 You can create your own views or rename and delete existing ones from your feed's settings.
 
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
+
 1. Select **Artifacts**.
 
 1. Select your feed from the dropdown menu.
@@ -96,6 +99,9 @@ You can create your own views or rename and delete existing ones from your feed'
 1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
 
 1. Select **Save** when you are done.
+
+> [!IMPORTANT]
+> For public feeds, if you change the access permissions of a certain view to **Specific people** your view will not be available as an upstream source.
 
 ## Related articles
 
