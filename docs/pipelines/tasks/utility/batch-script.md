@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 # Batch Script task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run a Windows .bat or .cmd script.
 Optionally, allow it to permanently modify environment variables.
@@ -20,7 +20,7 @@ Optionally, allow it to permanently modify environment variables.
 > 
 > For information on supporting multiple platforms, see [cross platform scripting](../../scripts/cross-platform-scripting.md).
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

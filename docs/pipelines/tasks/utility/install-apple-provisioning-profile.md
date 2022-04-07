@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Install Apple Provisioning Profile task
 
-[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to install an Apple provisioning profile that is required to build on a macOS agent.
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and App Extensions.

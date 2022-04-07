@@ -5,12 +5,12 @@ ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 02/18/2022
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Get started with Maven feeds and Artifacts
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 This quickstart will guide you through setting up Maven to publish and consume Artifacts from your feed.
 

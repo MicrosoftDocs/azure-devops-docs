@@ -11,7 +11,7 @@ monikerRange: '< azure-devops'
 
 # Run the agent with a self-signed certificate
 
-[!INCLUDE [version-gt-eq-2018-lt-azure-devops](../../includes/version-gt-eq-2018-lt-azure-devops.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 

@@ -24,7 +24,7 @@ The user interface provides a visual representation of the current status of the
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Visualize release progress
 
@@ -57,16 +57,6 @@ The environments show live updates for in-progress deployments, including how ma
 You can also click into the logs to enter a focused view for each of the tasks.
 
 :::image type="content" source="media/release-focused-view.png" alt-text="View logs for a specific task":::
-
-::: moniker-end
-
-::: moniker range="= tfs-2015 || tfs-2017 "
-
-## View build results
-
-The build results view provides insights into the multiple components that make up your build. The user interface gives a snapshot view of the status of your current and previous builds. You can also view your logs, issues, commits, and all the work items related to your build.
-
-:::image type="content" source="media/build-status-view.png" alt-text="View your build results TFS 2015":::
 
 ::: moniker-end
 

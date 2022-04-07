@@ -22,7 +22,7 @@ The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeli
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Azure Pipelines supports continuous integration (CI) and continuous 
 delivery (CD) to continuously test, build, and deploy your code.  You accomplish this by defining a pipeline 
@@ -65,7 +65,7 @@ Your code is now updated, built, tested, and packaged. It can be deployed to any
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 YAML pipelines aren't available in TFS 2018 and earlier versions.
 
@@ -126,7 +126,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 TFS 2015 through TFS 2018 supports the Classic interface only. The following table indicates which pipeline features are available when defining build or release pipelines. 
 

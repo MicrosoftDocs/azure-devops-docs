@@ -27,7 +27,7 @@ The contents of the secure files are encrypted and can only be used when you con
 
 The size limit for each secure file is 10 MB.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

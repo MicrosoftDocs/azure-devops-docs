@@ -48,7 +48,7 @@ To learn more about how Azure DevOps permissions work overall, including how the
 ::: moniker-end 
 
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Build  
 

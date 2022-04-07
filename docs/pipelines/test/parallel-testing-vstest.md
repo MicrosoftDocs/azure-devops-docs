@@ -14,13 +14,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="< tfs-2018"
-
-> [!NOTE]
-> For TFS, this topic applies to only TFS 2017 Update 1 and later.
-
-::: moniker-end
-
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
 that is run with every build. However, as the codebase grows, the regression test suite tends to
@@ -34,7 +27,7 @@ This can be done easily by employing the additional capacity offered by the clou
 This article discusses how you can configure the
 [Visual Studio Test task](../tasks/test/vstest.md) to run tests in parallel by using multiple agents.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

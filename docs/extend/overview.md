@@ -53,7 +53,7 @@ You can develop an extension for your continuous delivery pipeline as described 
 ## Extension building checklist
 
 1. Familiarize yourself with this article and the extension types already available within the Marketplace
-    - [Extensions for Azure DevOps](https://marketplace.visualstudio.com/)
+    - [Extensions for Azure DevOps](https://marketplace.visualstudio.com/azuredevops)
 2. Learn to build your first extension or check out our full set samples
     - [Build your first extension](./get-started/node.md)
     - [Samples](./develop/samples-overview.md)

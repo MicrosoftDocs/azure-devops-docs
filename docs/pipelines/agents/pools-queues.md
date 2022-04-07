@@ -12,13 +12,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
 
@@ -28,7 +28,7 @@ To share an agent pool with multiple projects, in each of those projects, you cr
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![TFS 2017 and TFS 2018 build system architecture](media/build-system-architecture.png)
 
@@ -59,7 +59,7 @@ In Azure DevOps Server, agent pools are scoped to the entire server; so you can 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
@@ -69,7 +69,7 @@ If you are an organization administrator, you create and manage agent pools from
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
 ::: moniker-end
 
@@ -128,7 +128,7 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 #### [Browser](#tab/browser)
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
@@ -138,7 +138,7 @@ If you are an organization administrator, you create and manage agent pools from
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
 ::: moniker-end
 

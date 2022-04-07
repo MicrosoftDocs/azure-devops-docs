@@ -15,7 +15,7 @@ title: FAQs for acquiring Azure DevOps extensions
 
  
 summary: | 
-  [!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
   Find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions.  
 

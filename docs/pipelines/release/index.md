@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -88,23 +88,12 @@ See the following example of a release pipeline that can be modeled through a re
 
 In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev stage and then forked to two QA stages in parallel. If the deployment succeeds in both the QA stages, the release is deployed to Production ring 1 and then to Production ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the world.
 
-::: moniker range=">= tfs-2017"
-
 See the following example of how deployment automation can be modeled within a stage:
 
 > [!div class="mx-imgBorder"] 
 > ![deployment definition](media/definition-02.png)
 
 In this example, a [job](../process/phases.md) is used to deploy the app to websites across the world in parallel within production ring 1. After all those deployments are successful, a second job is used to switch traffic from the previous version to the newer version.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-> [!NOTE]
-> **TFS 2015**: Jobs and fork/join deployments are not available in TFS 2015.
-
-::: moniker-end
 
 **Next:**
 

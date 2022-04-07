@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -187,8 +187,8 @@ Although you can add steps for deployment tasks in a `job`, we recommend that yo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-YAML is not supported in this version of TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -283,8 +283,8 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -338,8 +338,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -437,8 +437,8 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-YAML builds are not yet available on TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -556,8 +556,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML builds are not yet available on TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 
@@ -602,8 +602,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -690,7 +690,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -757,8 +757,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -792,8 +792,8 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -867,8 +867,8 @@ In addition to workspace clean, you can also configure cleaning by configuring t
     :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -918,8 +918,8 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -963,8 +963,8 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< azure-devops-2019"
-YAML is not yet supported in TFS.
+::: moniker range="tfs-2018"
+YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)

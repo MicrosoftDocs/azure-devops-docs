@@ -106,7 +106,7 @@ Select **Create a pull request** to go to a page where you can [enter your PR de
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 After you push or update a feature branch, Azure Repos prompts you to create a PR in the **Code** view on the web. This prompt is displayed on **Pull Requests** and **Files**.
 
@@ -465,7 +465,7 @@ To add reviewers to your PR:
 
 -->
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To add reviewers to your PR:
 
@@ -577,7 +577,7 @@ Removing a link only removes the link between a work item to a PR. Links created
 
 :::moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To link work items to your PR:
 
@@ -659,7 +659,7 @@ To add a tag when creating a PR, type a tag name in the **Tags** section. After 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Add labels to a pull request
 
@@ -671,7 +671,7 @@ You can communicate extra information about a PR to the reviewers by using label
 > Using PR labels requires TFS 2018.2 or later version.  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Screenshot showing P Rs with labels.](media/pull-requests/pull-request-labels.png)
 
 To add a label when creating a PR, choose **Add label**. After you create a PR, you can manage its labels in the **Labels** section.
