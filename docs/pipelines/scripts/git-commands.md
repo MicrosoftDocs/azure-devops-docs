@@ -26,7 +26,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 ## Enable scripts to run Git commands
 
 > [!NOTE]
-> Before you begin, be sure your account's default identity is set with:
+> Before you begin, be sure your account's default identity is set with the following code.
 > This must be done as the very first step after checking out your code.
 > ```
 > git config --global user.email "you@example.com"
