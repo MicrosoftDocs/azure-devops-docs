@@ -132,9 +132,9 @@ steps:
 
 ## Endpoints
 
-Containers can be hosted on registries other than Docker Hub. To host
-an image on [Azure Container Registry](/azure/container-registry/) or
-another private container registry,
+Containers can be hosted on registries other than public Docker Hub registries. 
+To host an image on [Azure Container Registry](/azure/container-registry/) or
+another private container registry (including a private Docker Hub registry),
 add a [service connection](../library/service-endpoints.md) to the
 private registry. Then you can reference it in a container spec:
 
