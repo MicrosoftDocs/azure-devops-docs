@@ -4,7 +4,7 @@ description: Learn about feed views and why it's useful for package release
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/02/2022
+ms.date: 04/07/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -22,6 +22,9 @@ All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@releas
 The `@local` view contains all packages published directly to the feed and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources).
 
 Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources. See [package graphs](package-graph.md) to learn how available packages are constructed.
+
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
 
 ## Feed views and upstream sources
 
