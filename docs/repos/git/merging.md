@@ -29,7 +29,7 @@ This article provides procedures for the following tasks:
 
 ## Understand merge conflicts
 
-Git `merge` or Git `rebase` integrates commits from a source branch into your current local branch (the target branch). Git [merge](https://git-scm.com/docs/git-merge) performs either a [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) or a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge. The no-fast-forward merge is also known as a _three-way_ merge or _true_ merge. By default, Git automatically selects the merge type unless you explicitly specify the type. Git [rebase](https://git-scm.com/docs/git-rebase) is another type of merge. These merge types are shown in the following diagram.
+Git `merge` or Git `rebase` integrates commits from a source branch into your current local branch (the target branch). Git [merge](https://git-scm.com/docs/git-merge) performs either a [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) or a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge. The no-fast-forward merge is also known as a _three-way_ merge or _true_ merge. Git [rebase](https://git-scm.com/docs/git-rebase) is another type of merge. These merge types are shown in the following diagram.
 
 :::image type="content" source="media/pulling/merge-types.png" border="true" alt-text="Diagram showing the before and after commits when using Git merge and Git rebase.":::
 
