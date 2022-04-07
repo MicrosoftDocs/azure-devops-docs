@@ -13,14 +13,14 @@ monikerRange: '<= azure-devops'
 
 # App Center Distribute task
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to distribute app builds to testers and users through App Center.
 - [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 - For details about using this task, see the App Center documentation article [Deploy Azure DevOps Builds with App Center](/appcenter/distribution/vsts-deploy).
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

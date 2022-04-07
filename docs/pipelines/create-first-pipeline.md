@@ -260,7 +260,7 @@ We'll show you how to use the classic editor in Azure DevOps Server 2019 to crea
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 We'll show you how to use the classic editor in TFS to create a build and a release that prints "Hello world".
 
@@ -335,7 +335,7 @@ Create a PowerShell script that prints `Hello world`.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Go to the **Code** hub.
 
@@ -481,7 +481,7 @@ A typical build produces an artifact that can then be deployed to various stages
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. On the **Tasks** tab, select **Add Task**.
 
@@ -646,7 +646,7 @@ Now you can see the results of your changes. Go to **Azure Pipelines** and selec
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Now you can see the results of your changes. Go to the **Build and Release** page and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
@@ -667,7 +667,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
    ::: moniker-end
 
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
 
    > [!div class="mx-imgBorder"]
    > ![build summary powershell script log](media/get-started-designer/build-summary-powershell-script-log.png)
@@ -999,7 +999,7 @@ If your pipeline has a pattern that you want to replicate in other pipelines, cl
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot showing how to replicate a pipeline.](media/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
 
@@ -1032,7 +1032,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot that shows saving as draft.](media/get-started-designer/save-as-draft.png)
 
@@ -1066,7 +1066,7 @@ When you're ready, you can publish the draft to merge the changes into your buil
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![publish draft - TFS 2018](media/get-started-designer/publish-draft.png)
 

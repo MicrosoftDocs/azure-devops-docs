@@ -20,11 +20,6 @@ Variables groups are [protected resources](../security/resources.md). You can ad
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-::: moniker range="< tfs-2018"
-> [!NOTE]
-> Variable groups can be used in a build pipeline only Azure DevOps and TFS 2018.
-::: moniker-end
-
 ## Create a variable group
 
 #### [YAML](#tab/yaml/)
@@ -234,7 +229,7 @@ To authorize the group, use one of the following techniques:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 YAML builds aren't available on TFS.
 

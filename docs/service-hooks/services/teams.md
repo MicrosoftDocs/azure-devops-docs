@@ -5,7 +5,7 @@ title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Server
 description: Use Microsoft Teams with your Azure DevOps organization
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2020 
+ms.date: 04/04/2022
 ---
 
 # Create a service hook for Azure DevOps with Microsoft Teams 
@@ -38,7 +38,7 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="<= azure-devops"
 
 ## Configure a new connector for Azure DevOps Server
 
@@ -92,6 +92,8 @@ Activity from your project begins appearing in your Teams channel.
 2. Once you've authenticated, your Kanban board or dashboard appears.
    
 
+::: moniker-end
+
 ## Frequently asked questions (FAQs)
 
 <!-- BEGINSECTION class="m-qanda" -->
@@ -110,4 +112,4 @@ Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps 
 
 <!-- ENDSECTION -->
 
-::: moniker-end
+

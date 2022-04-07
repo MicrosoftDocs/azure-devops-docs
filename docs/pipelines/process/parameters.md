@@ -61,16 +61,11 @@ To link a process parameter:
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
-
-![Link additional arguments.](media/2017-user-experience/process-parameters-view-2.png)
-::: moniker-end
-
 ::: moniker range="> tfs-2018"
 Select **Unlink** if you need to disconnect an argument from a process parameter.
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You can also unlink arguments from process parameters.
 
 1. Select the link icon. 

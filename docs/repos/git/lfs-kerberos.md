@@ -10,7 +10,7 @@ monikerRange: '< azure-devops'
 
 # Kerberos authentication
 
-[!INCLUDE [version-gt-eq-2015-lt-azure-devops](../../includes/version-gt-eq-2015-lt-azure-devops.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 If you use Azure DevOps to manage your Git repository, Git may be using the Kerberos protocol to authenticate. 
 (This doesn't apply to Azure DevOps Services, which uses a different form of authentication.)

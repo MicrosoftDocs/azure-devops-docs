@@ -7,13 +7,13 @@ ms.manager: jenp
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.date: 11/14/2019
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
  
 
 # Set up the Maven client
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [](../includes/maven/pom-and-settings.md)]

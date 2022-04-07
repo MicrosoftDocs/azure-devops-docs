@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.assetid: 1b9de1a8-0749-40af-87e8-857fb86cf0ae
 ms.reviewer: dastahel
 ms.date: 06/09/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Sign your mobile app
 
-[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 When developing an app for Android or Apple operating systems, you will eventually need to manage signing certificates, and in the case of Apple apps, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article describes how to securely manage them for signing and provisioning your app.
 

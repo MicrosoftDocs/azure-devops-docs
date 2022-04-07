@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/01/2022
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -348,7 +348,7 @@ environments. You can create as many environments as you need with just a select
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 

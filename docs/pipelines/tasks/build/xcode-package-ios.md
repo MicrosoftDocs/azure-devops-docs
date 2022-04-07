@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Xcode Package iOS task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to generate an .ipa file from Xcode build output.
 

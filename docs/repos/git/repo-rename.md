@@ -51,7 +51,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. 1. From the web portal, open the project administration page for your project and select **Version Control**.
 
@@ -109,7 +109,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 - Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 

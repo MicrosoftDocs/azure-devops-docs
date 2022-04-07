@@ -37,7 +37,7 @@ Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

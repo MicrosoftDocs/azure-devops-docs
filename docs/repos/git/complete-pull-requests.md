@@ -217,7 +217,7 @@ When you complete the merge, any [linked work items](pull-requests.md#link-work-
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select **Complete** in the upper right of the PR view to complete your PR after the reviewers approve of the changes.
 

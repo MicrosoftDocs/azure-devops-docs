@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -96,7 +96,7 @@ client computer, do so now by running the following git command:
 git clone https://github.com/PowerShell/Demo_CI
 ```
 
-:::moniker range="< azure-devops-2019"
+:::moniker range="tfs-2018"
 
 1. On your client computer, navigate to your TFS server in a web browser.
 
