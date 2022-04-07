@@ -210,7 +210,7 @@ parameters:
  
 steps:
 - script: |
-    echo "${{ convertToJson(parameters.listOfValues) }}"
+    json=$(echo '${{ convertToJson(parameters.listOfValues) }}')
 ```
 
 ```json
