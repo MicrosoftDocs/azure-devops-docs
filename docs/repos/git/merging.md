@@ -77,23 +77,23 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
     1. In the **Branches** pane of the **Git Repository** window, checkout the target branch. Then right-click the source branch and choose **Merge \<source-branch\> into \<target-branch\>**.
 
-       :::image type="content" source="media/merging/visual-studio-2019/git-experience/branch-merge-git-repository-window.png" border="true" alt-text="Screenshot of the merge option in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/branch-merge-git-repository-window.png":::
+       :::image type="content" source="media/merging/visual-studio-2019/git-experience/branch-merge-git-repository-window.png" border="true" alt-text="Screenshot of the merge option in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/branch-merge-git-repository-window-lrg.png":::
 
     2. Visual Studio will notify you if Git halted the merge due to conflicts. In that event, you can either resolve the conflicts, or cancel the merge and return to the pre-merge state. The **Unmerged Changes section** of the **Git Changes** window lists the files with merge conflicts. For a file with merge conflicts in its content, double-click the file to open it in the merge editor.
 
-       :::image type="content" source="media/merging/visual-studio-2019/git-experience/unmerged-changes.png" border="true" alt-text="Screenshot of the merge editor in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/unmerged-changes.png":::
+       :::image type="content" source="media/merging/visual-studio-2019/git-experience/unmerged-changes.png" border="true" alt-text="Screenshot of the merge editor in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/unmerged-changes-lrg.png":::
 
     3. In the merge editor, the **Incoming** pane shows the source branch file version, the **Current** pane shows the target branch file version, and the **Result** pane shows the resultant merge file. To apply specific source or target branch changes, select the checkbox next to the conflicting line(s) that you want to keep. You can also directly edit the merge file in the **Result** pane. Choose **Accept Merge** after you've resolved all merge conflicts in the current file. Repeat this step for each file with content conflicts.
 
-       :::image type="content" source="media/merging/visual-studio-2019/git-experience/merge-editor-selections.png" border="true" alt-text="Screenshot of the merge conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/merge-editor-selections.png":::
+       :::image type="content" source="media/merging/visual-studio-2019/git-experience/merge-editor-selections.png" border="true" alt-text="Screenshot of the merge conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/merge-editor-selections-lrg.png":::
 
     4. For a file that was edited in one branch and deleted in the other, right-click the file and select which branch action you want.
 
-       :::image type="content" source="media/merging/visual-studio-2019/git-experience/merge-context-menu.png" border="true" alt-text="Screenshot of the context menu for a conflicting file in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/merge-context-menu.png":::
+       :::image type="content" source="media/merging/visual-studio-2019/git-experience/merge-context-menu.png" border="true" alt-text="Screenshot of the context menu for a conflicting file in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/merge-context-menu-lrg.png":::
 
     5. In the Git Changes window, enter a commit message and choose **Commit Staged** to complete the merge&mdash;after you've resolved all merge conflicts for all files.
 
-       :::image type="content" source="media/merging/visual-studio-2019/git-experience/merge-commit-staged.png" border="true" alt-text="Screenshot of the merge commit message in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/merge-commit-staged.png":::
+       :::image type="content" source="media/merging/visual-studio-2019/git-experience/merge-commit-staged.png" border="true" alt-text="Screenshot of the merge commit message in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/git-experience/merge-commit-staged-lrg.png":::
 
   :::column-end:::
   :::column span="":::
@@ -114,27 +114,27 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
     4. The **Resolve Conflicts** view lists the files with merge conflicts. Select a file from the list to view the resolution options for that file.
 
-       :::image type="content" source="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-view.png" border="true" alt-text="Screenshot of the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-view.png":::
+       :::image type="content" source="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-view.png" border="true" alt-text="Screenshot of the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-view-lrg.png":::
 
     5. For a file with merge conflicts in its content, select **Merge** to open it in the merge editor.
 
-       :::image type="content" source="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-options.png" border="true" alt-text="Screenshot of the merge button in the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-options.png":::
+       :::image type="content" source="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-options.png" border="true" alt-text="Screenshot of the merge button in the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/resolve-conflicts-options-lrg.png":::
 
     6. In the merge editor, the **Source** pane shows the source branch file version, the **Target** pane shows the target branch file version, and the **Result** pane shows the resultant merge file. To apply specific source or target branch changes, select the checkbox next to the conflicting line(s) that you want to keep. You can also directly edit the merge file in the **Result** pane. Choose **Accept Merge** after you've resolved all merge conflicts in the current file. Repeat this step for each file with content conflicts.
   
-      :::image type="content" source="media/merging/visual-studio-2019/team-explorer/merge-editor-selections.png" border="true" alt-text="Screenshot of the merge editor for Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/merge-editor-selections.png":::
+      :::image type="content" source="media/merging/visual-studio-2019/team-explorer/merge-editor-selections.png" border="true" alt-text="Screenshot of the merge editor for Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/merge-editor-selections-lrg.png":::
   
     7. For a file that was edited in one branch and deleted in the other, select which branch action you want.
     
-        :::image type="content" source="media/merging/visual-studio-2019/team-explorer/merge-options-delete-keep.png" border="true" alt-text="Screenshot of the merge options for a conflicting file in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/merge-options-delete-keep.png":::
+        :::image type="content" source="media/merging/visual-studio-2019/team-explorer/merge-options-delete-keep.png" border="true" alt-text="Screenshot of the merge options for a conflicting file in the Git Repository window of Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/merge-options-delete-keep-lrg.png":::
     
     8. In the **Resolve Conflicts** view, choose **Commit Merge** after you've resolved all merge conflicts for all files.
     
-        :::image type="content" source="media/merging/visual-studio-2019/team-explorer/commit-merge.png" border="true" alt-text="Screenshot of the Commit Merge button in the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/commit-merge.png":::
+        :::image type="content" source="media/merging/visual-studio-2019/team-explorer/commit-merge.png" border="true" alt-text="Screenshot of the Commit Merge button in the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/commit-merge-lrg.png":::
     
     9. In the **Changes** view of **Team Explorer**, enter a commit message and choose **Commit Staged** to complete the merge.
     
-        :::image type="content" source="media/merging/visual-studio-2019/team-explorer/merge-commit-staged.png" border="true" alt-text="Screenshot of the Commit Staged button in the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/merge-commit-staged.png":::
+        :::image type="content" source="media/merging/visual-studio-2019/team-explorer/merge-commit-staged.png" border="true" alt-text="Screenshot of the Commit Staged button in the Resolve Conflicts view of Team Explorer in Visual Studio 2019." lightbox="media/merging/visual-studio-2019/team-explorer/merge-commit-staged-lrg.png":::
   
   :::column-end:::
 :::row-end:::
