@@ -193,7 +193,7 @@ jobs:
 ---
 ## Set an output variable for use in future jobs
 
-When you use output variables across jobs, you'll reference them with `dependencies`. The syntax for access an output variable in a future job or stage varies based on the relationship between the setter and consumer of the variable. Learn about each case in [dependencies](expressions.md#dependencies).
+When you use output variables across jobs, you'll reference them with `dependencies`. The syntax for accessing an output variable in a future job or stage varies based on the relationship between the setter and consumer of the variable. Learn about each case in [dependencies](expressions.md#dependencies).
 
 # [Bash](#tab/bash)
 
