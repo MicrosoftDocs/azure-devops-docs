@@ -349,9 +349,6 @@ steps:
 - task: HelmDeploy@0
   displayName: helm package
   inputs:
-    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-    azureResourceGroup: $(azureResourceGroup)
-    kubernetesCluster: $(kubernetesCluster)
     command: package
     chartPath: Application/charts/sampleapp
     arguments: --sign --key "$(keyName)" --keyring $(privateKeyRing.secureFilePath)
