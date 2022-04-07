@@ -50,7 +50,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 >
 > [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/virtual-environments/issues/3287).
 >
-> [The Windows Server 2016 with Visual Studio 2017 image is being deprecated](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows).
+> The Windows Server 2016 with Visual Studio 2017 image will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
 >
 > In December 2021, we removed the following Azure Pipelines hosted image:
 >
