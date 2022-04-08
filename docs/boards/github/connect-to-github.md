@@ -53,7 +53,7 @@ The following authentication options are supported based on the GitHub platform 
 :::row-end:::
  
  > [!NOTE]
- >  If you choose to connect Github with PAT they should, make sure you configure SSO for thee PAT on their GitHub account. This is needed to be able to get a list of repositories of an organization with SAML SSO authentication configured.
+ >  If you choose to connect Github with PAT, make sure you configure single sign-on (SSO) for the PAT on your GitHub account. This is needed to be able to get a list of repositories of an organization with Security Assertion Markup Language (SAML) SSO authentication configured.
  
 ## Open Project Settings>GitHub Connections.
 
