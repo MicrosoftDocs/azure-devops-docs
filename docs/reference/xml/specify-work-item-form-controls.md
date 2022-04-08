@@ -229,7 +229,7 @@ In addition to the built-in controls provided, you may find additional controls 
 
 -  [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)    
 -  [WebLayout and Control elements](weblayout-xml-elements.md)     
--  [Change the work item form layout](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout.md?view=tfs-2015&preserve-view=true)   
+-  [Change the work item form layout](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)   
 -  [Edit a WIT definition to add web content to a work item form](/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form?view=tfs-2015&preserve-view=true)
 -  [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)   
 -  [Define link controls to restrict link relationships](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true)   
