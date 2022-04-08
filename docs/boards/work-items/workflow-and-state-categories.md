@@ -53,7 +53,6 @@ Here's how the default, inherited states map to the state categories for the fou
    **Test tracking WITs**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
@@ -126,7 +125,6 @@ Here's how the default, inherited states map to the state categories for the fou
    **Test tracking WITs** 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
@@ -197,7 +195,6 @@ Here's how the default, inherited states map to the state categories for the fou
    **Test tracking WITs**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
@@ -268,7 +265,6 @@ Here's how the default, inherited states map to the state categories for the fou
    **Test tracking WITs** 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
    **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
