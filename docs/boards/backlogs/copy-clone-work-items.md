@@ -71,9 +71,9 @@ Clone a work item when you want to create another instance of it. This action op
 
 	Optionally, check one or more of the boxes: 
  
-	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
+	- **Include existing links**: To include all **Related** and external links in the copied work item.  Note that a **Related** link is created automatically for the work item copied, and included in the **Discussion** section. There is no method for disabling this feature.  
 	- **Include existing attachments**: To include attachments in the copied work item
-	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
+	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included. This option appears even if there are no child items linked to the work item.  
 	
 	> [!NOTE]   
 	> - When you copy the work item to a different project, **Include child work items** is disabled. 
