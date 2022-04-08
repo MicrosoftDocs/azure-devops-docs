@@ -395,29 +395,6 @@ those WITs used to track work and code defects for the three default processes.
 They also show some of the regressions to former states and transitions to removed states. 
 Each image shows only the default reason associated with the transition. 
 
-
-#### [Basic process](#tab/basic-process) 
-
-:::row:::
-   :::column span="1":::
-   
-   #### Epic, Issue, Task hierarchy
-   ![Basic process work item hierarchy](../../get-started/media/track-issues/basic-process-epics-issues-tasks.png)
-   :::column-end:::
-   :::column span="1":::
-   
-   #### Epic, Issue, Task workflow 
-   ![Basic process workflow](../../get-started/media/track-issues/basic-process-workflow.png)
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-:::row-end:::
-
-
-> [!NOTE]  
-> The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
-
 #### [Agile process](#tab/agile-process) 
 
 :::row:::
@@ -447,6 +424,29 @@ Each image shows only the default reason associated with the transition.
    
    #### Task
    ![Task workflow states, Agile process](media/ALM_PT_Agile_WF_Task.png)
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+:::row-end:::
+
+
+#### [Basic process](#tab/basic-process) 
+
+> [!NOTE]  
+> The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
+
+
+:::row:::
+   :::column span="1":::
+   
+   #### Epic, Issue, Task hierarchy
+   ![Basic process work item hierarchy](../../get-started/media/track-issues/basic-process-epics-issues-tasks.png)
+   :::column-end:::
+   :::column span="1":::
+   
+   #### Epic, Issue, Task workflow 
+   ![Basic process workflow](../../get-started/media/track-issues/basic-process-workflow.png)
    :::column-end:::
    :::column span="1":::
       
