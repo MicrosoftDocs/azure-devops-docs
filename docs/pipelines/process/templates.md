@@ -16,7 +16,7 @@ Templates let you define reusable content, logic, and parameters. Templates func
 
 If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. 
 
-::: moniker-end
+::: moniker-end test
 
 ::: moniker range="azure-devops-2019"
 
