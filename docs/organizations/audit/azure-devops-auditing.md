@@ -16,7 +16,7 @@ ms.date: 03/30/2021
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!NOTE]
-> Auditing is still in private preview.
+> Auditing is still in public preview.
 
 On the Auditing page of your Organization Settings, you can access, export, and filter audit logs, which track the many changes that occur within your Azure DevOps organization(s). With these logs, you can use them to meet your organization's compliance and governance goals.
 
