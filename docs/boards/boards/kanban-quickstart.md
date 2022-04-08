@@ -120,6 +120,8 @@ To customize the set of fields displayed on the card, see [Customize cards](../.
 
 As work completes in one stage, update the status of an item by dragging it to a downstream stage. 
 
+[!INCLUDE [temp](../includes/note-closed-items.md)]
+
 ::: moniker range="<= azure-devops-2020"
 
 > [!NOTE]   

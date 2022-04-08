@@ -26,7 +26,7 @@ Each state belongs to a state category (previously referred to as a metastate). 
 
 Workflow states define how a work item progresses from its creation to closure. The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are New, Active, Resolved, and Closed. (The Removed state supports removing a work item from appearing on the backlog; to learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
 
-The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown.  
+The natural progressions and regressions for the work item types&mdash;user story (Agile), issue (Basic) product backlog item (SCrum), and requirement (CMMI) WITs&mdash;are as shown.  
  
 [!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
@@ -37,12 +37,10 @@ The natural progressions and regressions of the user story, product backlog item
 
 State categories determine how Agile planning tools and select dashboard widgets treat each workflow state. The state categories used by the backlogs, boards and widgets are Proposed, In Progress, and Complete.
 
-Here's how the default, inherited states map to the state categories for all three system processes plus test case management WITs. The workflow states for Test Case, Test Design, and Test Suite are the same across all four system processes. 
-
+Here's how the default, inherited states map to the state categories for the four system processes plus test case management WITs. The workflow states for Test Case, Test Design, and Test Suite are the same across all four system processes. 
 
 
 #### [Agile process](#tab/agile-process) 
-
 
 :::row:::
    :::column span="2":::
