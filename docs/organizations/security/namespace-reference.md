@@ -865,9 +865,9 @@ The following table describes the security namespaces and permissions that aren'
       `SecurityAdmin`   
    :::column-end:::
    :::column span="2":::
-      Sets permissions to read, create, and manage the security of the data store. These permissions are assigned to several Azure DevOps service principals.  
+      Sets permissions to read, delete, create, and manage the security of the data store. These permissions are assigned to several Azure DevOps service principals.  
       <br/>
-      **ID:** `11238e09-49f2-40c7-94d0-8f0307204ce4`
+      **ID:** `19F9F97D-7CB7-45F7-8160-DD308A6BD48E` 
    :::column-end:::
 :::row-end:::
 ---
