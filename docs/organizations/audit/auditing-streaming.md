@@ -16,7 +16,7 @@ ms.date: 12/20/2021
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!NOTE]
-> Auditing is still in private preview.
+> Auditing is still in public preview.
 
 Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Send auditing data to other Security Incident and Event Management (SIEM) tools and open new possibilities, such as the ability to trigger alerts for specific events, create views on auditing data, and perform anomaly detection. Setting up a stream also allows you to store more than 90-days worth of auditing data, which is the maximum amount of data that Azure DevOps keeps for your organizations.
 
