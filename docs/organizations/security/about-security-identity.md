@@ -221,11 +221,14 @@ To secure your organization and code, you can set a number of policies. Specific
 
 ### Application connection and security policies
 
-- **Third-party application access via OAuth**: When enabled, allows third-part applications to connect using OAuth. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
-- **SSH authentication access**: When enabled, allows applications to connect using SSH authentication. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
+- Use the Azure Active Directory (Azure AD) tenant policy to restrict creating new organizations to desired users only. This policy is turned off by default and only valid when the organization is backed by Azure Active Directory. Check [restrict organization creation](../accounts/azure-ad-tenant-policy-restrict-org-creation.md) for more details.
+
+These policies determine the access you want to give users and applications to your organizations:
+- [Third-party application access via OAuth](../accounts/change-application-access-policies.md#application-connection-policies)
+- [SSH authentication access](../accounts/change-application-access-policies.md#application-connection-policies)
 - **Allow public projects**: When enabled, users can create public projects which allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization). 
-- **Restrict organization creation via Azure AD tenant policy** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, restricts users from creating additional Azure DevOps organizations that would automatically be backed by the Azure AD. To learn how to enable, see [Restrict organization creation via Azure AD tenant policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
-- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, allows you to set additional conditions on accessing the organization. Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access. This policy is set to *off* by default and only applies to alternative credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
+- **Log Audit events** - Turn on the ability to track [Auditing events and streams](../audit/azure-devops-auditing.md) for your organization.
+- [Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation](../accounts/change-application-access-policies.md#conditional-access-policies)
 
 ### User policies 
 - **External guest access** (*Only valid when the organization is backed by Azure Active Directory.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant Azure Active Directory through the **Users** page. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
