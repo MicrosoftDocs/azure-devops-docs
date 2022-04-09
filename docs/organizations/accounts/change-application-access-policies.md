@@ -2,7 +2,7 @@
 title: Change application access, security policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Manage security policies for your organization, like conditional access, OAuth, SSH, and personal access tokens (PATs).
+description: Manage security policies for accessing organization resources, like conditional access, OAuth, SSH, and personal access tokens (PATs).
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
@@ -52,21 +52,7 @@ When you deny access to an authentication method, no application can access your
 
 To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
-## Tenant level policies
-
-### Restricting organization creation
-You can use the Azure Active Directory (Azure AD) tenant policy to restrict creating new organizations to desired users only. This policy is turned off by default. Check [restrict organization creation](azure-ad-tenant-policy-restrict-org-creation.md) for more details.
-
-## Security policies
-
-You can enable or disable the following security policies:
-
-- **Log Audit events** - Turn on the ability to track [Auditing events and streams](../audit/azure-devops-auditing.md) for your organization.
-- **Allow public projects** - Allow non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Anonymous access is used to access both private and public repositories. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization).
-- **Additional protections when using public package registries** - Limit access to externally sourced packages when internally sourced packages are already present. This provides a new layer of security, which prevents malicious packages from a public registry being inadvertently consumed. Learn more in [this Azure DevOps blog](https://devblogs.microsoft.com/devops/changes-to-azure-artifact-upstream-behavior/).
-- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** - Restrict access to Azure DevOps resources to certain users based on location-based conditions defined in your tenant's [Azure AD conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). This policy is set to *off* by default. More on this in the [following section on Conditional Access Policies](#conditional-access-policies).
-
-### Conditional access policies 
+## Conditional access policies 
 
 Azure Active Directory allows tenants to define which users are allowed to gain access to Microsoft resources through their [Conditional Access Policy (CAP) feature](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). Through these settings, the tenant admin can require members must adhere to any of the following conditions, for example, the user :	
 - Must be members of a specific security group	
