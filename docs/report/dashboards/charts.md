@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/27/2021
+ms.date: 04/04/2022
 ---
 
 # Track progress with status and trend query-based charts 
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views such as pie, column, pivot, or trend are supported. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work. Group work by State, Assigned To, or other system defined or custom field.    
 
@@ -54,7 +54,7 @@ For example, the following image illustrates two different charts created from t
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
   
@@ -78,7 +78,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
+::: moniker range="<= azure-devops-2020"
 
 * Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
@@ -86,23 +86,6 @@ By default, users with **Basic** access or higher can create charts. Users with 
 * You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
 
 ::: moniker-end 
-
-
-::: moniker range="tfs-2015"
-
-* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
-* You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-
-* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-
-::: moniker-end
 
 To learn more about default groups, see [Get started with permissions, permission inheritance, and security groups](../../organizations/security/about-permissions.md#inheritance).
 
@@ -179,7 +162,7 @@ Most charts allow you to choose how you want to sort the data. You can sort by *
 
 ### Limited display of series 
 
-::: moniker range="> tfs-2018"
+::: moniker range=">= azure-devops-2019" 
 When a chart contains more than eight or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled "other"? However, if you increase the chart size through the configurable widget on a dashboard you may increase the series limit.  
 
 ![Other category groups data beyond 12 set series](media/charts/other-12-series.png)  
@@ -187,7 +170,7 @@ When a chart contains more than eight or 12 items within the data series, values
 ::: moniker-end 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
 
@@ -206,7 +189,7 @@ When a chart contains more than seven items within the data series, values in th
    > ![Screenshot of New chart button.](media/charts/new-chart-new-qe.png)   
    ::: moniker-end  
 
-   ::: moniker range="<= tfs-2018"  
+   ::: moniker range="tfs-2018"  
    <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link." />  
    ::: moniker-end  
 
@@ -218,7 +201,7 @@ When a chart contains more than seven items within the data series, values in th
    > ![Screenshot of pie chart configure dialog.](media/charts/config-pie-chart-priority-qe.png)  
    ::: moniker-end  
 
-   ::: moniker range="<= tfs-2018"  
+   ::: moniker range="tfs-2018"  
    <img src="media/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" />  
    ::: moniker-end  
 
@@ -234,7 +217,7 @@ When a chart contains more than seven items within the data series, values in th
    > ![Charts, color series picker](media/charts/color-series-picker.png)  
    ::: moniker-end  
 
-   ::: moniker range="<= tfs-2018"  
+   ::: moniker range="tfs-2018"  
    To change a color, select a color on the chart and pick a new color from the color picker.  
    ::: moniker-end  
 
@@ -272,7 +255,7 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 > ![Configure chart dialog, Stacked bar chart n](media/charts/config-stacked-bar-chart-team-qe.png)   
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 <img src="media/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" />
 ::: moniker-end  
 
@@ -295,7 +278,7 @@ Trend charts let you view progress over time. You can select a rolling period ra
 > ![Configure chart dialog, Stacked bar chart](media/charts/config-2-week-trend-chart-bugs.png)   
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 <img src="media/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" />
 ::: moniker-end  
 
@@ -318,7 +301,7 @@ In addition to query-based burndown charts, you can [Configure a Burndown or Bur
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 <img src="media/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
 ::: moniker-end  
 
@@ -340,25 +323,18 @@ In the dialog that opens, select the team dashboard to add the chart to.
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 ![Chart context menu, add to a team dashboard](media/pin-chart-to-a-dashboard.png)
 ::: moniker-end  
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
- 
-::: moniker range="<= tfs-2015"
 
-> [!NOTE]  
-> For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
-::: moniker-end
 
 <a id="add-chart-widget"></a> 
-::: moniker range=">= tfs-2015"
 
 ## Add a chart widget to a dashboard   
  
 If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a dashboard using the *Chart for work items* widget.  
-::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -394,11 +370,8 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-The widget requires TFS 2015.2 or a later version. You add it to a team dashboard from the [widget catalog](widget-catalog.md). 
-::: moniker-end
 
-::: moniker range=">=tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
@@ -448,11 +421,11 @@ To learn more about using tags, see [Add tags to work items](../../boards/querie
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2020"
 
 ## Query-based charts versus Excel-generated PivotCharts  
 
-Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../admin/create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
+Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
 
 ::: moniker-end
 

@@ -16,7 +16,7 @@ ms.date: 01/11/2022
 
 # witAdmin: Customize and manage objects for tracking work 
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 You can change how you track your team's progress by creating and customizing objects that track work items. By using the **witadmin** command-line tool, you can create, delete, import, and export objects such as categories, global lists, global workflow, types of links, and types of work items. You can also delete, list, or change the attributes of work item fields.  
 
@@ -30,7 +30,7 @@ As the following illustration shows, you manage categories and types of and work
   
 [!INCLUDE [temp](../../includes/process-editor.md)]
 
-For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md). 
+For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
@@ -518,7 +518,7 @@ To customize the resolution types, bug work item type, and failure types used wh
 
 ## Related articles
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 - [Customize your work tracking experience](../customize-work.md)   
 - [**az boards** command-line tools](../../cli/quick-reference.md#azure-boards) 
@@ -529,9 +529,17 @@ To customize the resolution types, bug work item type, and failure types used wh
  
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+- [Customize your work tracking experience](../customize-work.md)    
+- [On-premises XML process model](../on-premises-xml-process-model.md)  
+- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md) 
+- [What is Azure Test Plans?](../../test/overview.md)
+ 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 - [Customize your work tracking experience](../customize-work.md)   
 - [On-premises XML process model](../on-premises-xml-process-model.md)  
 - [What is Azure Test Plans?](../../test/overview.md)
-
 ::: moniker-end

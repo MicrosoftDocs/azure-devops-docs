@@ -1,8 +1,8 @@
-- name: Developer resources 
+- name: Developer resources
   href: index.yml
 - name: Azure DevOps CLI
-  expanded: true
   href: ../cli/toc.yml
+  expanded: true
 - name: Git commands
   href: ../repos/git/command-prompt.md
 - name: TFVC repository commands
@@ -16,4 +16,4 @@
 - name: Azure DevOps REST APIs
   href: /rest/api/azure/devops/
 - name: Azure DevOps Demo Generator
-  href: ../demo-gen/toc.yml 
+  href: ../demo-gen/toc.yml

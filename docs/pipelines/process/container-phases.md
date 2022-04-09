@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Define container jobs (YAML)
 
-[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.

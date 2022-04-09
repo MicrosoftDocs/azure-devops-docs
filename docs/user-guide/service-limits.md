@@ -12,7 +12,7 @@ ms.date: 02/03/2022
 
 # Service and rate limits for Azure DevOps Services
 
-[!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked. 
 
@@ -37,7 +37,7 @@ This article specifies certain limits placed on the use and configuration of Azu
 
 | Configuration object |  Limit | 
 |--------|-------|
-| Projects | 300 per organization | 
+| Projects | 1000 per organization for Azure DevOps Services</br>No prescribed limit for on-premises</br>(See also [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md#projects) | 
 | Teams | 5,000 per organization | 
 | Work item tags | 150,000 tag definitions per organization | 
 | Area Paths | 10,000 per organization | 

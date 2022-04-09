@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.author: shashban
 author: shashban
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Run Functional Tests task
 
-[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -164,7 +164,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

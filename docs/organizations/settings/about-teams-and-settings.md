@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/03/2022
+ms.date: 04/04/2022
 ---
 
 # About teams and Agile tools
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="teams"></a>
 
@@ -74,14 +74,6 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
-![Agile tools, team assets](media/agile-tools/agile-tools-team-assets.png)
-::: moniker-end
-
-::: moniker range="tfs-2013"
-![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-2013.png)
-::: moniker-end
-
 These tools automatically filter the set of work items they display by referencing the following items:
 - default area path
 - iteration path
@@ -100,18 +92,21 @@ Many of these tools are built from system queries that reference the team area p
 
 What work items appear on team backlogs and boards? When you add work items to a backlog or board, how are team defaults used to assign field values? 
 
-Teams are associated with one or more area paths and a backlog iteration path. These paths determine what items appear on their backlogs and boards. 
+Teams are associated with one or more **Area Paths** and **Iteration Paths**. These paths determine what items appear on their backlogs and boards. 
 
 When you define a team, you define the team's: 
-- Selected area path(s) 
-- Default area path
-- Selected iteration path(s)
-- Backlog iteration path 
-- Default iteration path 
+- Selected Area Path(s) 
+- Default Area Path
+- Selected Iteration Path(s)
+- Backlog Iteration Path
+- Default Iteration Path 
 
-All Agile tools reference the area path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current State of a work item or its parent-child status.   
+All Agile tools reference the Area Path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current **State** of a work item or its parent-child status.   
 
-Several tools also reference the team's default and selected iteration paths or sprints. When you add a new work item, the system assigns the team's default area and iteration paths to it. Work items can be added from a backlog, board view, or team dashboard. 
+Several tools also reference the team's default and selected Iteration Path or sprints. When you add a new work item from a team's backlog or Kanban board, the system assigns the team's **Default Area Path** and **Default Iteration Path** to it.  
+
+> [!NOTE]   
+> New work items added through the **Work Items** page or the **New Work Items** widget on a team dashboard don't reference the **Default Iteration Path** assigned to the team. Instead, new work items are assigned the last **Iteration Path** selected by the user. New work items added through a team's **Sprints** backlog or taskboard are always assigned the **Iteration Path** associated with the selected sprint backlog or taskboard. 
 
 
 :::row::: 
@@ -128,7 +123,7 @@ Several tools also reference the team's default and selected iteration paths or 
    **State**
    :::column-end:::
 :::row-end:::
-
+---
 :::row::: 
    :::column span="1":::
    Portfolio or product backlogs
@@ -207,10 +202,10 @@ Several tools also reference the team's default and selected iteration paths or 
 
 > [!NOTE]  
 > 1. Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#team-area-paths).  
-> 2. Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.  
+> 2. Work items whose **State** equals *Closed*, *Done*, or *Removed* (corresponding to a *Completed* category state) don't appear on portfolio and product backlogs.  
 > 3. You can add custom workflow states and assign them to one of three state categories. The [state categories](../../boards/work-items/workflow-and-state-categories.md)"> determine which work items appear on backlog and board views.   
-> 4. Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).  
-> 5. Work items whose State equals Removed don't appear on boards.   
+> 4. Kanban boards, sprint backlogs, and taskboards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).  
+> 5. Work items whose **State** equals *Removed* don't appear on boards.   
 
 
 ## Structure hierarchical teams or scale agility within an enterprise 
@@ -229,11 +224,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ![Web portal, Queries page, Query that uses In Group operator and team group name](../../boards/plans/media/query-in-group-email-team-work-in-progress.png)
 
-::: moniker range=">= tfs-2017"
-
 You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
-
-::: moniker-end
 
 ## Work on more than one team
 

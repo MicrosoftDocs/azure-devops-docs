@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Azure Resource Group Deployment task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy, start, stop, and delete Azure Resource Groups.
 

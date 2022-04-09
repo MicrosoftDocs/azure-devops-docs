@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Select an effective branching strategy
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Creating branches for your Team Foundation Version Control (TFVC) repositories are useful to isolate risk. Consider some challenges team members typically face when they work on a software project that is staffed by more than five or ten people:
 

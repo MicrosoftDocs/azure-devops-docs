@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 06/07/2021  
 ---
 
 # Provisioned wikis vs. published code as a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 

@@ -5,11 +5,13 @@ ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 01/14/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Migrate your packages from file shares
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts provides hosted NuGet feeds as a service. If you're using NuGet packages as a part of your continuous delivery workflow, Azure Artifacts can help you manage your dependencies through public and private feeds. Azure Artifacts works with any continuous integration system that supports authenticated NuGet feeds.
 
@@ -76,7 +78,7 @@ Now that you took inventory of your existing package sources, it's time to set u
 
 #### Create your feeds
 
-For each SMB share, follow the instructions to [Create a feed](../concepts/feeds.md#create-a-feed). In the **Create new feed** dialog:
+For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-a-feed):
 
 - Use the name of the SMB share folder as the **Feed name**.
 - Choose your feed **Visibility**, **Upstream sources**, and **Scope**.

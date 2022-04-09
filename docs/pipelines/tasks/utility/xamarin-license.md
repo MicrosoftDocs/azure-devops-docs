@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Xamarin License task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This task was used in a build or release pipeline to activate or deactivate Xamarin licenses.
 

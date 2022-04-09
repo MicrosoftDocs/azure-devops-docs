@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 01/11/2022
+ms.date: 02/23/2022
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
 # Template types & usage
 
-[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -52,7 +52,7 @@ steps:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
   template: simple-param.yml
@@ -137,7 +137,7 @@ stages:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
   template: start.yml
@@ -288,7 +288,7 @@ jobs:
   steps:
   - bash: echo "Hello Ubuntu"
 
-- job: Windows
+- job:
   pool:
     vmImage: 'windows-latest'
   steps:
@@ -331,7 +331,7 @@ stages:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -597,7 +597,7 @@ The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
 > [!NOTE]
-> If no `ref` is specified, the pipeline will default to using `refs/heads/master`.
+> If no `ref` is specified, the pipeline will default to using `refs/heads/main`.
 
 You may also use `@self` to refer to the repository where the main pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.

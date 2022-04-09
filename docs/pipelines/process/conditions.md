@@ -5,19 +5,19 @@ description: Learn about how you can write custom conditions in Azure Pipelines 
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.date: 01/21/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Specify conditions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3** 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can specify the conditions under which each stage, job, or step runs.
 By default, a job or stage runs if it does not depend on any other job or stage, or if all of the jobs or stages that it depends on have completed and succeeded.
 By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
 You can customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails or by specifying a custom condition.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -86,12 +86,6 @@ you can specify the conditions under which the task or job will run.
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
-
-::: moniker range="= tfs-2017"
-
-> In TFS 2017.3, custom task conditions are available in the user interface only for Build pipelines. You can use the Release [REST APIs](../../integrate/index.md) to establish custom conditions for Release pipelines.
-
-::: moniker-end
 
 Conditions are written as expressions in YAML pipelines.
 The agent evaluates the expression beginning with the innermost function and works its way out.

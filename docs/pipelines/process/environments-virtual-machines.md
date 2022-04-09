@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Environment - virtual machine resource
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Use virtual machine (VM) resources to manage deployments across multiple machines with YAML pipelines. VM resources let you install agents on your own servers for rolling deployments.
 

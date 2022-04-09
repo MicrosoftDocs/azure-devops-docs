@@ -7,13 +7,13 @@ ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
 ms.author: vijayma
 author: vijayma
 ms.date: 09/21/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Maven task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build your Java code.
 

@@ -14,7 +14,7 @@ ms.date: 01/25/2021
 
 # Security key concepts
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides definitions for select terms used to manage authentication and permissions for Azure DevOps.
  

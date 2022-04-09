@@ -4,13 +4,13 @@ ms.custom: seodec18, contperf-fy22q1
 description: How to publish symbols to Azure Artifacts symbol server
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
 ms.date: 11/18/2021
-monikerRange: '> tfs-2015'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Publish symbols for debugging
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol server using the *Index sources and publish symbols* task. You can use the debugger to connect and automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. Using Azure Pipelines, you can also publish your symbols to files shares and portable PDBs.
 
@@ -31,13 +31,7 @@ To publish your symbols to Azure Artifacts symbols server, you can use the *Inde
 
     :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
 
-::: moniker range=">= tfs-2018"
 - **Task version**: **2.\\***.
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-- **Task version**: **1.\\***.
-::: moniker-end
 
 - **Display name**: task display name.
 
@@ -66,13 +60,7 @@ Aside from Azure Artifacts symbol server, you can also publish your symbols to a
 
     :::image type="content" source="media/publish-to-file-share.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to a file share":::
 
-::: moniker range=">= tfs-2018"
 - **Task version**: **2.\\***.
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-- **Task version**: **1.\\***.
-::: moniker-end
 
 - **Display name**: task display name.
 
@@ -151,13 +139,7 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 
     :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="Screenshot showing how to configure the publish task to publish symbols to Azure Artifacts symbol server":::
 
-::: moniker range=">= tfs-2018"
 - **Task version**: **2.\\***.
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-- **Task version**: **1.\\***.
-::: moniker-end
 
 - **Index sources**: Uncheck to disable indexing. Indexing is done during build. See the [previous step](#set-up-the-publish-task) for more details.
 

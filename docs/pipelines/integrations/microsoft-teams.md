@@ -1,6 +1,6 @@
 ---
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: freshness-fy22q2, 
 title: Integrate Azure Pipelines and Microsoft Teams
 description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelines in your channel and subscribe to notifications. 
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
  
 # Use Azure Pipelines with Microsoft Teams
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 The [Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018) lets you monitor events for your pipelines. You can set up and get notifications in your Teams channel for releases, pending approvals, completed builds, and so on. You can also approve releases from within your Teams channel.
 

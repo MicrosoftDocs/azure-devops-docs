@@ -1,10 +1,10 @@
 ---
-title: Guidance for authentication | Azure DevOps Services REST APIs
-description: Guidance for authentication with Azure DevOps Services.
+title: Guidance for authentication
+titleSuffix: Azure DevOps  
+description: Guidance for authentication with Azure DevOps  
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
-ms.technology: devops-ecosystem
-ms.topic: conceptual
-ms.custom:
+ms.technology: devops-security
+ms.topic: conceptual 
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -13,7 +13,7 @@ ms.date: 03/05/2021
 
 # Choose the right authentication mechanism
 
-[!INCLUDE [version-all](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 For applications that interface with Azure DevOps Services, you must authenticate to gain access to resources like REST APIs. We understand that Azure DevOps Services offers many different ways to authenticate your application. This article provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. See the following basic descriptions, examples, and code samples to get you started.
 

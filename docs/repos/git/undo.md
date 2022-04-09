@@ -10,8 +10,8 @@ monikerRange: '<= azure-devops'
 
 # Undo changes
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 When undoing changes in Git, first decide what type of changes you are looking to undo. These changes fall into three categories:
 

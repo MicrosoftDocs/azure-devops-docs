@@ -1,4 +1,4 @@
-﻿---
+---
 title: Buy access to Azure Test Plans
 titleSuffix: Azure DevOps Server
 ms.custom: seodec18, freshness-fy22
@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 01/24/2022
-monikerRange: '>= tfs-2015 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 # Buy access to Azure Test Plans
 
-[!INCLUDE [version-tfs-2015-rtm](../../pipelines/includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
  For [Azure DevOps Server](https://visualstudio.microsoft.com/tfs/), you pay per user for [Basic](https://visualstudio.microsoft.com/team-services/compare-features/) features. Users with [Visual Studio subscriptions](https://visualstudio.microsoft.com/vs/pricing/) are free to add because Basic features are included in their subscription as a benefit. It's also free to add users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md), which provides free access to a limited set of features.
 
@@ -62,7 +62,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Create an organization](../accounts/create-organization.md), if you don't have one already.
 

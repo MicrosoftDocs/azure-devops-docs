@@ -15,7 +15,7 @@ ms.date: 10/08/2021
 
 # Use product backlog controls in Azure Boards  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="backlog-controls">  </a>
 
@@ -63,7 +63,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       **Board**  
@@ -218,7 +218,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       ![Filter](../media/icons/filter-icon.png)    

@@ -8,12 +8,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/30/2019  
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Why did I get this email
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 If you receive a notification email that you didn't expect, it could be for one of the following reasons:

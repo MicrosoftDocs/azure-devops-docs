@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Clone a Git repository in a public project
 
-[!INCLUDE [temp](includes/version-public-projects.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can create a complete local copy of a Git repository from a public project by cloning it. 
 Cloning a repo downloads all commits and branches in the repo and sets up a named relationship with the existing repo you cloned. If you are signed in as a member of the project, you can use this relationship to interact with the existing repo, pushing and pulling changes to share code with the public project team.

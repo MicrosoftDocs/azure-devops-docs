@@ -4,14 +4,14 @@ description: Learn about feed views and why it's useful for package release
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/02/2022
-monikerRange: '>= tfs-2017'
+ms.date: 04/07/2022
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # What are feed views?
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Feed views enable developers to share a subset of package-versions with their consumers. A common use of feed views is to share package versions that have been tested and validated but hold back on packages that are still under development and/or didn't meet a certain quality bar.
 
@@ -22,6 +22,9 @@ All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@releas
 The `@local` view contains all packages published directly to the feed and all packages [saved from upstream sources](upstream-sources.md#save-packages-from-upstream-sources).
 
 Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources. See [package graphs](package-graph.md) to learn how available packages are constructed.
+
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
 
 ## Feed views and upstream sources
 

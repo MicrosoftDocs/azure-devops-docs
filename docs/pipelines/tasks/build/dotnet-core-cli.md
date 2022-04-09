@@ -7,12 +7,12 @@ ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/30/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # .NET Core CLI task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > The [NuGet Authenticate](../package/nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. The restore and push commands of this task no longer take new features and only critical bugs are addressed. 
@@ -23,7 +23,7 @@ Use this task to build, test, package, or publish a dotnet application, or to ru
 
 If your .NET Core or .NET Standard build depends on NuGet packages, make sure to add two copies of this step: one with the `restore` command and one with the `build` command.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

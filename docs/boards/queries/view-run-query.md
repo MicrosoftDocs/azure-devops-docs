@@ -8,14 +8,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 
 # View, run, or email a work item query  
 
-[!INCLUDE [temp](../includes/version-all.md)]
-[!INCLUDE [temp](../includes/version-visual-studio.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013.md](../../includes/version-vs-gt-2013.md)]
 
 To find work items assigned to you or your team, run a query. Many work item queries are predefined with your process. Members of your team may have created shared queries that you can view and run. Often, it's easier to define a new query by building on the query definition that's already available to you. 
 
@@ -69,11 +69,11 @@ You can also run a query by using the [Azure DevOps command line interface](#cli
 
 <a id="cli" />
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="azure-devops"  
 
 ## Run a query from the command line 
 
-You can run a query in the CLI with the [az boards query](/cli/azure/boards#az_boards_query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can run a query in the CLI with the [az boards query](/cli/azure/boards#az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards query [--id]
@@ -121,8 +121,6 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 2           Fabrikam Fiber  Bug               Secure Sign-in 
 ``` 
 ::: moniker-end
- 
-
 
 
 <a id="tips-queries-hub"> </a> 
@@ -203,7 +201,7 @@ You can do most tasks for viewing and running queries from each of the queries l
 > |Expand or collapse container folders or query folders |✔️ |✔️|✔️|  
 > |Filter the list of queries |✔️ |✔️ |  |
 > |Favorite a query (for web portal, choose ![Favorite](../media/icons/icon-favorite-star.png)) |  |✔️ | |  
-> |Unfavorite a query (for web portal, choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false":::) |✔️ |✔️ | ✔️ |   
+> |Unfavorite a query (for web portal, choose :::image type="icon" source="../../media/icons/icon-favorited.png" border="false":::) |✔️ |✔️ | ✔️ |   
 > |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | ✔️|  
 
 ::: moniker-end	
@@ -244,7 +242,7 @@ Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 	
 Choose **Copy query URL**. To email query items, see [Copy a list of work items](../backlogs/copy-clone-work-items.md#html).
 

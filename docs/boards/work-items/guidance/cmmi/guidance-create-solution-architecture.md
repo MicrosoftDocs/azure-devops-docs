@@ -13,7 +13,7 @@ ms.date: 10/27/2021
 
 # Investigate architectural strategies and create a solution architecture
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 
 Part of creating a good architecture is investigating alternative architectural strategies. Alternative strategies have different benefits that are based on platform selection, technologies that are used, and code reuse. Each strategy is designed and proofs of concept are built to further investigate the costs and benefits of each strategy. The strategies are assessed against product and quality requirements, and ultimately a strategy is chosen to implement the product. Finally, security and performance are architectural concerns for which work must be done over the entire product.  

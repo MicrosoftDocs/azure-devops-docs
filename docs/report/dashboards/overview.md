@@ -8,13 +8,13 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2015'
-ms.date: 01/27/2022
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # About dashboards, charts, reports, & widgets
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Gain visibility into your team's progress by adding one or more widgets or charts to your dashboard. Customizable, highly configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes.  Each team can tailor their dashboards to share information and monitor their progress.  
 
@@ -59,13 +59,13 @@ SQL Server Reporting is the legacy reporting solution available with Azure DevOp
 ::: moniker-end  
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
-- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](../admin/create-status-and-trend-excel-reports.md).
-- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
+- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
 ::: moniker-end  
  
 ::: moniker range="< azure-devops-2019"
-- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](../admin/create-status-and-trend-excel-reports.md).
-- **SQL Server reports**: Allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Excel status and trend reports** supports generating custom work tracking reports using Excel starting with a flat-list query. To learn more, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
+- **SQL Server reports**: Allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
 ::: moniker-end   
 
 ### Supported features and access level 
@@ -246,7 +246,7 @@ For details, see:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Active bugs](media/gs-monitor-charts-active-bugs.png)   
 
@@ -549,7 +549,7 @@ You can add data to support reporting requirements by [adding a custom field](..
 You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
 ::: moniker-end

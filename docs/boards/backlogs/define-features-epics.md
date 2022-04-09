@@ -1,5 +1,5 @@
 ---
-title: Define Azure Boards features and epics, organize backlog items
+title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define Azure Boards features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 
@@ -8,13 +8,14 @@ ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2015'
-ms.date: 10/11/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
-# Define features and epics in Azure Boards to organize your product and portfolio backlogs  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
+# Define features and epics, organize your product and portfolio backlogs in Azure Boards 
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
@@ -125,7 +126,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
@@ -174,7 +175,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 
@@ -285,7 +286,7 @@ Whenever you see the plus ![plus-icon](../../media/icons/blue-add-icon.png), you
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To add a work item, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: and choose from the options provided.
 
@@ -327,7 +328,6 @@ Portfolio backlogs are a great way to organize your project plan and provide vis
 ## Related articles  
 
 -  [Azure Boards FAQs](../faqs.yml) 
-- [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  

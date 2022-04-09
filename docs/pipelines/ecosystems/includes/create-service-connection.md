@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 08/17/2021
+ms.date: 02/11/2022
 ---
 
 ## Create the service connection

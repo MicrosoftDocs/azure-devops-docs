@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Add a user to manage billing
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to give another user access, so they can [set up billing](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your Azure DevOps organization. 
 

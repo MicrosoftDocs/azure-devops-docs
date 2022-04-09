@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2021
+ms.date: 04/01/2022
 ---
 
 # Query by numeric fields in Azure Boards and Azure DevOps   
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -117,7 +117,7 @@ Create an  active bugs query and modify the column options to show Assigned To a
 > ![Configure chart dialog, pivot by assigned to and state](media/numeric/config-pivot-items-developer.png)  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 <img src="media/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" />  
 ::: moniker-end
 
@@ -130,7 +130,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 > ![Configure chart dialog, pivot by state and area](media/numeric/config-pivot-state-area.png)  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Configure chart, count of bugs by area, state, pivot chart](media/query-effort-config-chart-count-bugs-area-state-pivot-chart.png)
 ::: moniker-end
 
@@ -166,13 +166,8 @@ Then, add a stacked bar chart that sums the Story Points.
 > ![Configure chart dialog, stacked bar, sum of story points](media/numeric/config-psum-story-points-stacked-bar.png)  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Configure chart, sum of story points per iteration, stacked bar chart.](media/query-effort-config-chart-sum-story-points-iteration.png)
-::: moniker-end
-
-::: moniker range="tfs-2013"
-> [!NOTE]    
-> The **Sum** feature is supported for TFS 2013.4 and later versions.
 ::: moniker-end
 
 For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
@@ -190,7 +185,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 > ![Configure chart dialog, trend, sum of story points](media/numeric/config-trend-sum-story-points.png)  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Configure chart, sum of story points per iteration, stacked bar chart](media/query-effort-config-chart-sum-story-points-burnup.png)
 ::: moniker-end
 
@@ -221,13 +216,8 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 > ![Configure chart dialog, pivot, sum of remaining work per developer](media/numeric/config-pivot-remaining-work-per-developer-area.png)  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Configure chart, sum of remaining work by developer, area, pivot chart](media/example-query-config-chart-sum-remaining-work-pivot-chart.png)
-::: moniker-end
-
-::: moniker range="tfs-2013"
-> [!NOTE]    
-> The **Sum** feature is supported for TFS 2013.4 and later versions.
 ::: moniker-end
 
 For information on system-defined sprint burndown charts, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md).

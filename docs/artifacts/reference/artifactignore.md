@@ -11,6 +11,8 @@ monikerRange: 'azure-devops'
 
 # Use .artifactignore
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 The *.artifactignore* is a text file that controls which files are uploaded when you publish a Universal Package or a Pipeline Artifact.
 
 *.artifactignore* is typically checked into your version control repository and the syntax is similar to that of *.gitignore*.
@@ -35,6 +37,10 @@ The *.artifactignore* follows the same syntax as the [.gitignore](https://git-sc
 
 > [!IMPORTANT]
 > The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
+
+## Ignored by default
+
+To reduce the chances of publishing the *.git* folder, we automatically ignore this path if you do not have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
 
 ## Related articles
 

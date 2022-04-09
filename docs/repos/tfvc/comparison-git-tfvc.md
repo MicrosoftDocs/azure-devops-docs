@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Choosing the right version control for your project
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. Azure Repos supports two types of version control: [Git](../../repos/git/gitquickstart.md)
 and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).

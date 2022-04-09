@@ -1,26 +1,30 @@
 ---
-title: Set permissions and access for work tracking
+title: Set permissions for work tracking
 titleSuffix: Azure DevOps
-description: How to grant or restrict access to work tracking tasks for Azure DevOps & Team Foundation Server
+description: How to grant or restrict access to work tracking tasks by setting object or project-level permissions for Azure DevOps
 ms.custom: "boards-permissions, linked-from-support"
-ms.technology: devops-agile
+ms.technology: devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/27/2022
+ms.date: 04/04/2022
 --- 
 
 
-# Set permissions and access for work tracking
+# Set work tracking permissions
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, you can specify custom rules for a process or project that apply to users or groups which may restrict or require users to perform a select action. In general, you'll want to add users to a project's Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
+
+::: moniker-end
 
 <a id="business-workflows" /> 
 
@@ -83,17 +87,11 @@ The following table summarizes the different permissions you can set at the obje
       **Object-level permissions**
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= tfs-2017"
       - [Modify work items under an area path](#set-permissions-area-path) 
       - [Create and edit nodes under an area path or iteration path](#set-permissions-area-path) 
       - [Define and edit queries or query folders](#work-item-queries) 
       - [Define and edit Delivery Plans](../../boards/plans/edit-delivery-plan-permissions.md)  
-      ::: moniker-end
-      ::: moniker range="< tfs-2017"
-      - [Modify work items under an area path](#set-permissions-area-path) 
-      - [Create and edit nodes under an area path or iteration path](#set-permissions-area-path) 
-      - [Define and edit queries or query folders](#work-item-queries)  
-      ::: moniker-end
+
    :::column-end:::
 :::row-end:::
 ---
@@ -108,14 +106,14 @@ The following table summarizes the different permissions you can set at the obje
       - [Permanently delete work items](#move-delete-permissions) 
       - [Edit shared work item queries](../../boards/queries/set-query-permissions.md)
       - [Add teams and team administrators](../settings/add-team-administrator.md))
-      - [Edit project-level permissions](set-project-collection-level-permissions.md#project-level)  
+      - [Edit project-level permissions](change-project-level-permissions.md)  
       ::: moniker-end
       ::: moniker range="< azure-devops-2020"
       - [Create work item tags](../../boards/queries/add-tags-to-work-items.md) 
       - [Permanently delete work items](#move-delete-permissions) 
       - [Edit shared work item queries](../../boards/queries/set-query-permissions.md)
       - [Add teams and team administrators](../settings/add-team-administrator.md))
-      - [Edit project-level permissions](set-project-collection-level-permissions.md#project-level)
+      - [Edit project-level permissions](change-project-level-permissions.md)
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -127,12 +125,12 @@ The following table summarizes the different permissions you can set at the obje
    :::column span="2":::
       ::: moniker range=">= azure-devops-2019"
       - [Create, delete, or edit a process (Inheritance process model)](#process-permissions)  
-      - [Delete field from account (Inheritance process model)](set-project-collection-level-permissions.md#collection-level) 
-      - [Manage process permissions (Inheritance process model)](set-project-collection-level-permissions.md#collection-level) 
-      - [Edit collection level permissions](set-project-collection-level-permissions.md#collection-level) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
+      - [Delete field from account (Inheritance process model)](change-organization-collection-level-permissions.md) 
+      - [Manage process permissions (Inheritance process model)](change-organization-collection-level-permissions.md) 
+      - [Edit collection level permissions](change-organization-collection-level-permissions.md) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
       ::: moniker-end
       ::: moniker range="< azure-devops-2019"
-      - [Edit collection level permissions](set-project-collection-level-permissions.md#collection-level) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
+      - [Edit collection level permissions](change-organization-collection-level-permissions.md) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -146,7 +144,7 @@ The following table summarizes the different permissions you can set at the obje
 Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
-> If you haven't defined the group yet whose permissions you want to set, then first create the group, usually at the project level. To learn how, see [Add a group](set-project-collection-level-permissions.md#add-group). 
+> If you haven't defined the group yet whose permissions you want to set, then first create the group, usually at the project level. To learn how, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md). 
  
  
 ::: moniker range="azure-devops" 
@@ -205,7 +203,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.  
 
@@ -225,26 +223,6 @@ You define both areas and iterations for a project from the **Project Settings>P
 
 ::: moniker-end   
 
-::: moniker range="<= tfs-2015"  
-
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
-
-    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
-
-1. Choose the context menu for the node you want to manage.  
-
-    ![Choose the context menu for the node you want to manage.](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
-
-2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
-
-    For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
-
-    ![Permissions for an area node](media/work-tracking/set-permissions-area-node-dialog.png)  
-
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
-
-::: moniker-end
-
 
 <a id="work-item-queries"></a>
 
@@ -262,19 +240,15 @@ For details, see [Set permissions on a shared query or query folder](../../organ
 
 <a id="tags" /> 
 
-::: moniker range=">= tfs-2017"  
 
 ## Set permissions on work item tags 
 
-By default, all users of the Contributors group can create and add tags to work items. To set permissions for a group or user to restrict this ability, you can set the **Create tag definition** to **Deny** at the project-level. To learn how, see [Change the permission level for a project-level group](set-project-collection-level-permissions.md#project-level). 
+By default, all users of the Contributors group can create and add tags to work items. To set permissions for a group or user to restrict this ability, you can set the **Create tag definition** to **Deny** at the project-level. To learn how, see [Change the permission level for a project-level group](change-project-level-permissions.md). 
 
-::: moniker-end
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
 
-
-::: moniker range=">= tfs-2017"  
 
 ## Edit or manage permissions for Delivery Plans 
 
@@ -287,8 +261,6 @@ Delivery Plans are an object within a project. You manage plan permissions for e
 
 To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md). To learn more about Delivery Plans, see [Review team plans](../../boards/plans/review-team-plans.md).
 
-::: moniker-end
-
 
 <a id="move-delete-permissions"></a>
 
@@ -298,7 +270,7 @@ To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the **Recycle Bin**. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
-For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
+For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. To learn how to access project-level **Security**, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 > [!NOTE]   
 > The **Move work items out of this project** permission requires the project uses the Inherited process model. 
@@ -314,7 +286,6 @@ In this example, we grant members assigned to the team administrator role, who b
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
 
-::: moniker range=">= tfs-2017"
 
 ## Manage test plans and test suites
 
@@ -329,8 +300,6 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 ![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
-
-::: moniker-end  
 
 
 <a id="process-permissions" />
@@ -348,7 +317,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Limit user visibility for projects** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 
@@ -368,7 +337,6 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 ::: moniker-end
-
 
 
 ::: moniker range="<= azure-devops-2019"  

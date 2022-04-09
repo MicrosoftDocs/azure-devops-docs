@@ -6,15 +6,14 @@ ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177   
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---
 
 # Data model for Analytics  
 
-
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Analytics data model for Azure DevOps consists of entity sets, whose members (entities) contain properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](https://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to other properties for selecting, filtering, and grouping.
 

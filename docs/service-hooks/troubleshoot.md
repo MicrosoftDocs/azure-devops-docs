@@ -6,13 +6,13 @@ description: Troubleshoot problems with the services you have integrated with yo
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---
 
 # Troubleshoot a service hooks issue
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ## View activity and debug problems
 
@@ -37,7 +37,7 @@ and event payload data, select a subscription in the table and select **History*
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. To view the activity and status of your subscriptions,
 go to the Service Hooks page. 

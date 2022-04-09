@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Use policies to manage personal access tokens for users
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps. These policies can be turned on or off. By default, they're set to *off*.
 

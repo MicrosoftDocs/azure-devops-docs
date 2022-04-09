@@ -9,13 +9,13 @@ toc: show
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2015'
-ms.date: 03/03/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Rename a project in Azure DevOps
 
-[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to rename a project. When you rename a project, it updates the project name in the following areas:
 - version control paths
@@ -33,27 +33,15 @@ Post rename, there may be some [required team member actions](#required-user-act
 
 ::: moniker range="azure-devops" 
 
-You must be a member of the Project Collection Administrators group. When you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range="< azure-devops"  
 
-You must be a member of the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You must be a member of the **Project  Administrators** group or have the project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
-
-::: moniker range="> tfs-2015 <= tfs-2017"
-
-You must be a member of the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-
-::: moniker-end
-
-::: moniker range=" tfs-2015"  
-
- You must have the **Edit project-level information** permission on a project to rename it.
-
-::: moniker-end
 
 ## Rename a project
 
@@ -73,7 +61,7 @@ You must be a member of the Project Collection Administrators group. If you aren
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Sign in to your organization.
 2. From the Projects page, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **actions** for the project that you want to rename, and then choose **Rename**.
@@ -86,26 +74,9 @@ You must be a member of the Project Collection Administrators group. If you aren
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](media/rename-project/rename-project-dialog.png)
 	
-	If the Rename Project dialog doesn't appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
+	If the **Rename Project** dialog doesn't appear, then you're not a member of the **Project Administrators** group for that particular project. 
 
 ::: moniker-end  
-
-::: moniker range="tfs-2015"
-
-1. Sign in to your organization.
-2. From the **Overview** tab, open :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: **menu** for the project that you want to rename, and then choose **Rename**.
-
-	![Choose Rename.](media/rename-project/collection-rename.png)
-
-3. Edit the name. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Enter a new project name](media/rename-project/rename-project-dialog.png)
-	
-	If the Rename Project dialog doesn't appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
-
-::: moniker-end
-
 
 <a id="more-work"></a>
 
@@ -173,7 +144,7 @@ We recommend you update your clients to the latest update or release, if possibl
 
 Local workspaces get managed locally and not on the server. Older clients without the updated rename logic can't update local workspaces to the new project name. 
  
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="tfs-onprem"></a>
 
@@ -183,7 +154,7 @@ Both SharePoint and Reporting Services integrations continue to work, but some r
 The old project name is still present until caches are updated with the new name. 
 The reporting and SharePoint server administrator can manually run these jobs to immediately populate the new name.
 
-- If your team uses reports, they reflect the new names after the next incremental analysis job runs for the data warehouse. By default the job runs every two hours. But, you can [manually run the warehouse jobs and incremental analysis job](../../report/admin/manually-process-data-warehouse-and-cube.md). Then, the new name gets synced to warehouse and reports start using the new name. Reports don't work as expected until the jobs have run.
+- If your team uses reports, they reflect the new names after the next incremental analysis job runs for the data warehouse. By default the job runs every two hours. But, you can [manually run the warehouse jobs and incremental analysis job](/previous-versions/azure/devops/report/admin/manually-process-data-warehouse-and-cube). Then, the new name gets synced to warehouse and reports start using the new name. Reports don't work as expected until the jobs have run.
 
 - If your team uses SharePoint Integration and has custom queries or web parts that directly reference the project name,
   update the name in each to the new project name. You don't need to update default queries and web parts, as they continue to work.
@@ -191,7 +162,7 @@ The reporting and SharePoint server administrator can manually run these jobs to
 
 - Excel reports and Excel web parts on MOSS don't show the right data until you execute the following.
 
-  1. Warehouse job - [Run the warehouse jobs](../../report/admin/manually-process-data-warehouse-and-cube.md)
+  1. Warehouse job - [Run the warehouse jobs](/previous-versions/azure/devops/report/admin/manually-process-data-warehouse-and-cube)
      so that Excel reports contain the correct data.
      If the new project name isn't synced to the warehouse,
      Excel reports don't show the correct data.

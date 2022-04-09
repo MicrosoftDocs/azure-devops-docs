@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Deployment jobs
 
-[!INCLUDE [version-2020-rtm](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 > [!IMPORTANT]
 > - Job and stage names cannot contain keywords (example: `deployment`).

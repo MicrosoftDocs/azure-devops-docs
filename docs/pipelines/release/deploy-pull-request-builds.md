@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Deploy pull request Artifacts with classic release pipelines
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Pull requests provide an effective way to review code changes before it is merged into the codebase. However, these changes can introduce issues that can be tricky to find without building and deploying your application to a specific environment. Pull request triggers enable you to set up a set of criteria that must be met before deploying your code. You can use pull request triggers with code hosted on Azure Repos or GitHub.
 

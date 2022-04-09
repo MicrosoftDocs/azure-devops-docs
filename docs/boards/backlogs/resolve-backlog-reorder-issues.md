@@ -16,7 +16,7 @@ ms.date: 10/26/2021
 
 <a id="display-hierarchy">  </a>
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
@@ -108,7 +108,7 @@ From the **View options** selector, you can choose to show or hide **In Progress
 :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
 ::: moniker-end
 
@@ -157,7 +157,7 @@ For TFS 2018 and earlier versions, the Kanban board only shows the last node wit
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Product backlog and Kanban boards
 

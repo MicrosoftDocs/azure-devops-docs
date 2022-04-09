@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 01/11/2022
 ---
 
 # Run manual tests
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Run your manual tests and record the test results for each test step using Microsoft Test Runner.
 You can run tests for both web applications and desktop apps.
@@ -732,7 +732,7 @@ For more information, see [Microsoft Privacy policy](https://privacy.microsoft.c
 
 ## Related articles
 
-- [FAQs for manual testing](reference-qa.md#runtests)
+- [FAQs for manual testing](reference-qa.yml#runtests)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)

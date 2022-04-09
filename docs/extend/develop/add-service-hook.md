@@ -5,7 +5,7 @@ description: Learn how to create a custom consumer service for service hooks in 
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.custom: freshness-fy22q2
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/27/2021
@@ -13,7 +13,7 @@ ms.date: 10/27/2021
 
 # Create a consumer service for service hooks
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With service hooks, you can do tasks on other services when events happen in your project. For example, create a card in Trello when a work item gets created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services, as a more efficient way to drive activities when events happen in your projects.
 

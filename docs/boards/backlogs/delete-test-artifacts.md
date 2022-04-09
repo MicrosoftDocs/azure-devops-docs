@@ -8,13 +8,13 @@ ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
-ms.date: 10/08/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # Delete test artifacts in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="delete-test"> </a> 
 
@@ -35,7 +35,7 @@ When you delete test artifacts, the following actions occur:
 
 ::: moniker range=">= azure-devops-2019"
 
-- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/set-project-collection-level-permissions.md#project-level) permission set to **Allow**. 
+- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow**. 
 - To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. 
 - To manage or delete test artifacts, you must also have your [access level](../../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. This level provides access to the full Test Plans feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
@@ -43,7 +43,7 @@ When you delete test artifacts, the following actions occur:
 
 ::: moniker range="< azure-devops-2019"
 
-- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/set-project-collection-level-permissions.md#project-level) permission set to **Allow**. 
+- To delete test runs, you must be a member of the Project Administrators group or have the project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow**. 
 - To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. 
 - You must also have your [access level set to Basic+Test Plans or Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
@@ -54,13 +54,6 @@ To delete test artifacts, the following restrictions and operations apply:
 - Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites.  
 - When you delete a test plan, test suite, test case, shared steps, or shared parameters, you not only permanently delete them, you also delete all associated test artifacts such as test results.  
 - You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
-
-::: moniker range="tfs-2017" 
-
-> [!NOTE]   
-> The permanently delete feature of test artifacts is available for TFS 2017.1 and later versions. 
-
-::: moniker-end
 
 <a id="test-experience"></a>
 

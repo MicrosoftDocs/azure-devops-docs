@@ -4,6 +4,12 @@
   items:
   - name: "2022"
     items:
+    - name: March 29
+      href: 2022/sprint-201-update.md
+    - name: February 28
+      href: 2022/sprint-200-update.md
+    - name: February 11
+      href: 2022/sprint-199-update.md
     - name: January 19
       href: 2022/sprint-198-update.md
     expanded: true
@@ -158,70 +164,24 @@
       href: /previous-versions/azure/devops/index
   expanded: true
 - name: Azure DevOps Server
-  href: /azure/devops/server/release-notes/azuredevops2020?view=azure-devops
+  href: /azure/devops/server/release-notes/azuredevops2020
 - name: Documentation updates
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: "2022"
-    items:
-    - name: January 2022
-      href: docswhatsnew/azure-devops-docs-whats-new.md
-  - name: "2021"
-    items:
-    - name: December 2021
-      href: docswhatsnew/azure-devops-docs-2021-12.md
-    - name: November 2021
-      href: docswhatsnew/azure-devops-docs-2021-11.md
-    - name: October 2021
-      href: docswhatsnew/azure-devops-docs-2021-10.md
-    - name: September 2021
-      href: docswhatsnew/azure-devops-docs-2021-09.md
-    - name: August 2021
-      href: docswhatsnew/azure-devops-docs-2021-08.md
-    - name: July 2021
-      href: docswhatsnew/azure-devops-docs-2021-07.md
-    - name: June 2021
-      href: docswhatsnew/azure-devops-docs-2021-06.md
-    - name: May 2021
-      href: docswhatsnew/azure-devops-docs-2021-05.md
-    - name: April 2021
-      href: docswhatsnew/azure-devops-docs-2021-04.md
-    - name: March 2021
-      href: docswhatsnew/azure-devops-docs-2021-03.md
-    - name: February 2021
-      href: docswhatsnew/azure-devops-docs-2021-02.md
-    - name: January 2021
-      href: docswhatsnew/azure-devops-docs-2021-01.md
-    expanded: true
-  - name: "2020"
-    items:
-    - name: December
-      href: docswhatsnew/azure-devops-docs-2020-12.md
-    - name: November
-      href: docswhatsnew/azure-devops-docs-2020-11.md
-    - name: October
-      href: docswhatsnew/azure-devops-docs-2020-10.md
-    - name: September
-      href: docswhatsnew/azure-devops-docs-2020-09.md
-    - name: August
-      href: docswhatsnew/azure-devops-docs-2020-08.md
-    - name: July
-      href: docswhatsnew/azure-devops-docs-2020-07.md
-    - name: June
-      href: docswhatsnew/azure-devops-docs-2020-06.md
-    - name: May
-      href: docswhatsnew/azure-devops-docs-2020-05.md
-    - name: April
-      href: docswhatsnew/azure-devops-docs-2020-04.md
-    - name: March
-      href: docswhatsnew/azure-devops-docs-2020-03.md
-    - name: February
-      href: docswhatsnew/azure-devops-docs-2020-02.md
-    - name: January
-      href: docswhatsnew/azure-devops-docs-2020-01.md
+  - name: March 2022
+    href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: February 2022
+    href: docswhatsnew/azure-devops-docs-2022-02.md
+  - name: January 2022
+    href: docswhatsnew/azure-devops-docs-2022-01.md
 - name: Azure Boards
   items:
+  - name: "2022"
+    items:
+    - name: March 29
+      href: 2022/boards/sprint-201-update.md
+    expanded: false
   - name: "2021"
     items:
     - name: September 28
@@ -356,6 +316,12 @@
   items:
   - name: "2022"
     items:
+    - name: March 29
+      href: 2022/pipelines/sprint-201-update.md
+    - name: February 28
+      href: 2022/pipelines/sprint-200-update.md
+    - name: February 11
+      href: 2022/pipelines/sprint-199-update.md
     - name: January 19
       href: 2022/pipelines/sprint-198-update.md
     expanded: false
@@ -488,6 +454,11 @@
   expanded: false
 - name: Azure Artifacts
   items:
+  - name: "2022"
+    items:
+    - name: February 28
+      href: 2022/artifacts/sprint-200-update.md
+    expanded: false
   - name: "2021"
     items:
     - name: May 5
@@ -536,6 +507,11 @@
   expanded: false
 - name: General
   items:
+  - name: "2022"
+    items:
+    - name: February 11
+      href: 2022/general/sprint-199-update.md
+    expanded: false
   - name: "2021"
     items:
     - name: November 16
@@ -635,28 +611,36 @@
   expanded: false
 - name: Wiki
   items:
-  - name: November 4
-    href: 2019/wiki/sprint-160-update.md
-  - name: October 14
-    href: 2019/wiki/sprint-159-update.md
-  - name: September 23
-    href: 2019/wiki/sprint-158-update.md
-  - name: August 12
-    href: 2019/wiki/sprint-156-update.md
-  - name: July 1
-    href: 2019/wiki/sprint-154-update.md
-  - name: June 10
-    href: 2019/wiki/sprint-153-update.md
-  - name: May 20
-    href: 2019/wiki/sprint-152-update.md
-  - name: April 8
-    href: 2019/wiki/sprint-150-update.md
-  - name: February 25
-    href: 2019/wiki/sprint-148-update.md
-  - name: February 4
-    href: 2019/wiki/sprint-147-update.md
-  - name: January 14
-    href: 2019/wiki/sprint-146-update.md
+  - name: "2022"
+    items:
+    - name: February 28
+      href: 2022/wiki/sprint-200-update.md
+    expanded: false
+  - name: "2019"
+    items:
+    - name: November 4
+      href: 2019/wiki/sprint-160-update.md
+    - name: October 14
+      href: 2019/wiki/sprint-159-update.md
+    - name: September 23
+      href: 2019/wiki/sprint-158-update.md
+    - name: August 12
+      href: 2019/wiki/sprint-156-update.md
+    - name: July 1
+      href: 2019/wiki/sprint-154-update.md
+    - name: June 10
+      href: 2019/wiki/sprint-153-update.md
+    - name: May 20
+      href: 2019/wiki/sprint-152-update.md
+    - name: April 8
+      href: 2019/wiki/sprint-150-update.md
+    - name: February 25
+      href: 2019/wiki/sprint-148-update.md
+    - name: February 4
+      href: 2019/wiki/sprint-147-update.md
+    - name: January 14
+      href: 2019/wiki/sprint-146-update.md
+    expanded: false
   expanded: false
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

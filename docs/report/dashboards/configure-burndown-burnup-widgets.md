@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Configure a Burndown or Burnup widget 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The Burndown and Burnup widgets provide the flexibility to create charts for:
 - Any type of scope

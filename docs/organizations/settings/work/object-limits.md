@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 02/03/2022
+ms.date: 04/04/2022
 ---
 
 # Work tracking, process, and project limits
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 
@@ -119,7 +119,10 @@ For the On-premises XML process model, you can modify the backlog and taskboard 
 
 ## Projects
 
-Azure DevOps Services limits each organization to 300 projects per organization. Above 300 projects certain experiences, such as connecting to the organization from Visual Studio, start to degrade. 
+Azure DevOps Services limits each organization to 1000 projects per organization, an increase over the previous limit of 300 projects.  
+
+> [!NOTE]   
+> Above 300 projects certain experiences, such as connecting to a project from Visual Studio, may start to degrade. 
 
 For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If you plan to migrate your on-premises collection to Azure DevOps Services, you'll need to observe the maximum limit of 300 projects. If your collection has more than 300 projects, you'll either need to split the collection or delete older projects.
 
@@ -188,7 +191,7 @@ The following table lists the maximum number of objects that you can define for 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 The following table lists the maximum number of objects that you can define for the ON-premises XML process model. While these represent hard limits, practical limits may apply. 
 
@@ -293,7 +296,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
@@ -310,15 +313,3 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 - [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
 
-<!---
-
-TBD
-
-- Naming restrictions 
-- persistence of work items - they don't delete 
-https://developercommunity.visualstudio.com/idea/849727/i-have-a-few-questions-about-usage-and-limits-for.html
-
-Usage limit warning -- can occur with a corrupt query 
-https://developercommunity.visualstudio.com/content/problem/778106/being-told-that-were-approaching-rate-limiting-thr.html
-
---> 

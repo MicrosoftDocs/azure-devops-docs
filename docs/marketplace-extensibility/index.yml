@@ -1,10 +1,11 @@
 ### YamlMime:Landing
 
-title: Marketplace & extensibility documentation
+title: Marketplace & Extensibility documentation 
 summary: Discover, manage, develop extensions and widgets for integration with Azure DevOps. 
 
 metadata:
   title: Marketplace & extensibility documentation
+  titleSuffix: Azure DevOps 
   description: Discover, manage, and develop extensions and widgets for integration with Azure DevOps. 
   ms.prod: devops 
   ms.technology: devops-marketplace
@@ -48,7 +49,7 @@ landingContent:
           - text: Extension samples
             url: ../extend/develop/samples-overview.md
           - text: Extensibility points
-            url: /previous-versions/azure/devops/extend/reference/targets/overview
+            url: ../extend/reference/targets/overview.md
       - linkListType: tutorial
         links:
           - text: Create a custom pipelines task

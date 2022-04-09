@@ -7,12 +7,12 @@ ms.custom: "continuous-test, seodec18"
 ms.author: vinojos
 author: vinodjo
 ms.date: 10/06/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Review test results
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
@@ -37,7 +37,7 @@ Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

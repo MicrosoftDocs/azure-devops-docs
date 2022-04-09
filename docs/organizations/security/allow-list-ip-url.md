@@ -8,13 +8,13 @@ ms.technology: devops-security
 ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 06/14/2021
 ---
 
 # Allowed IP addresses and domain URLs
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
 

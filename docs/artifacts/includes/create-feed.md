@@ -4,20 +4,20 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 03/10/2021
+ms.date: 02/14/2022
 ---
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From within your project, navigate to **Azure Artifacts**.
+1. Select **Artifacts**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+   > ![Navigate to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 1. Select **Create Feed**.
 
    > [!div class="mx-imgBorder"] 
-   > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
+   > ![Create a feed button](../media/new-feed-button-azure-devops-newnav.png)
 
 1. Give your feed a **Name** and choose its **visibility**, **upstream sources**, and **scope** settings.
 
@@ -28,7 +28,7 @@ ms.date: 03/10/2021
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade to TFS 2017 in order to use Azure Artifacts. If this is the first time using your feed, you might be asked to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses-in-tfs)
 

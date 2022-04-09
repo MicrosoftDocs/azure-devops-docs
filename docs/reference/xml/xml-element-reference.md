@@ -7,13 +7,14 @@ ms.custom: process
 ms.assetid: f65e3ae0-817a-413e-b5c3-0ebadc3ba944
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops' 
 ms.date: 04/04/2017
 ---
 
 # XML element reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can customize your project to support specific processes and practices that your team uses, and to design your workflow, work item forms, and data fields. Customization requires modifying one or more XML definition files. Each file corresponds to a work item tracking object. You can look up the syntax structure of each XML element from the topics provided in this section.  
 
@@ -32,7 +33,7 @@ By using the index of elements in this topic, you can look up the syntax structu
     > [!NOTE]  
     >Changes you make to the workflow can affect the operation of the Agile planning tools, the backlog and task board pages, and other tools. You might need to customize the process configuration. See [Process configuration](process-configuration-xml-element.md).  
 
--   **FORM**: You use this element and its child elements to specify the fields that appear on the work item form and the layout or design of the form. For more information, see [Design the work item form](design-work-item-form.md).  
+-   **FORM**: You use this element and its child elements to specify the fields that appear on the work item form and the layout or design of the form. For more information, see [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true).  
 
 
 
@@ -43,7 +44,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 
 > [!NOTE]    
 > The new form elements (**FORM-WebLayout**) and its corresponding features are available from the web portal for TFS 2017 and later versions. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
-> - For users of Azure DevOps Services working with [hosted XML customization](../../organizations/settings/work/import-process/import-process.md), an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
+> - For users of Azure DevOps Services working with [hosted XML customization](../../organizations/settings/work/import-process/import-process.md), an admin is required to [enable the new form](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true).<br/>
 > - For TFS 2017 users, the new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../process/new-work-item-experience.md).<br/>
 > - For TFS 2015 users, the new form isn't available. Use the (**FORM-Layout**) elements to customize your WIT definitions. You must [upgrade to TFS 2017 or later version](https://visualstudio.microsoft.com/downloads) to access the new form.  
 
@@ -113,27 +114,27 @@ By using the index of elements in this topic, you can look up the syntax structu
 
    - [Column](all-form-xml-elements-reference.md)  
    - [Content](webpagecontroloptions-xml-elements-reference.md)  
-   - [Control](control-xml-element-reference.md)  
-   - [ExternalLinkFilters](linkscontroloptions-elements.md)  
-   - [Filter](linkscontroloptions-elements.md)  
+   - [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)  
+   - [ExternalLinkFilters](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
+   - [Filter](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
    - [FORM](all-form-xml-elements-reference.md)  
    - [Group](all-form-xml-elements-reference.md)  
    - [LabelText](labeltext-and-text-xml-elements-reference.md)  
-   - [Layout](layout-xml-element-reference.md)  
+   - [Layout](/previous-versions/azure/devops/reference/xml/layout-xml-element-reference?view=tfs-2015&preserve-view=true)  
    - [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)  
    - [Link (Hyperlink)](link-param-xml-elements-reference.md)  
    - [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)  
-   - [LinkColumn](linkscontroloptions-elements.md)  
-   - [LinkColumns](linkscontroloptions-elements.md)  
-   - [LinksControlOptions](linkscontroloptions-elements.md)  
+   - [LinkColumn](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
+   - [LinkColumns](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
+   - [LinksControlOptions](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
    - [Param](link-param-xml-elements-reference.md)  
    - [Splitter](all-form-xml-elements-reference.md)  
-   - [Tab](tab-xml-element-reference.md)  
+   - [Tab](/previous-versions/azure/devops/reference/xml/tab-xml-element-reference?view=tfs-2015&preserve-view=true)  
    - [TabGroup](all-form-xml-elements-reference.md)  
    - [Text](labeltext-and-text-xml-elements-reference.md)  
    - [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)  
-   - [WorkItemLinkFilters](linkscontroloptions-elements.md)  
-   - [WorkItemTypeFilters](linkscontroloptions-elements.md)  
+   - [WorkItemLinkFilters](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
+   - [WorkItemTypeFilters](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
    :::column-end:::
    :::column span="1":::
    
@@ -147,21 +148,21 @@ By using the index of elements in this topic, you can look up the syntax structu
    - [ExternalLinkFilter](linkscontroloptions-xml-elements.md)  
    - [ExternalLinkFilters](../../organizations/settings/work/rule-reference.md)  
    - [Extension](weblayout-xml-elements.md)  - [Extensions](weblayout-xml-elements.md)  
-   - [Filter](linkscontroloptions-elements.md)  
+   - [Filter](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
    - [FORM](weblayout-xml-elements.md)  
    - [Group](weblayout-xml-elements.md)  
    - [GroupContribution](weblayout-xml-elements.md)  
    - [Input](weblayout-xml-elements.md)  
    - [Inputs](weblayout-xml-elements.md)  
    - [LabelText](labeltext-and-text-xml-elements-reference.md)  
-   - [Layout](layout-xml-element-reference.md)  
+   - [Layout](/previous-versions/azure/devops/reference/xml/layout-xml-element-reference?view=tfs-2015&preserve-view=true)  
    - [Link (Hyperlink)](link-param-xml-elements-reference.md)  
    - [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)  
    - [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)  
-   - [LinkColumn](linkscontroloptions-elements.md)  
-   - [LinkColumns](linkscontroloptions-elements.md)  
+   - [LinkColumn](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
+   - [LinkColumns](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
    - [LinkFilters](linkscontroloptions-xml-elements.md)  
-   - [LinksControlOptions](linkscontroloptions-elements.md)  
+   - [LinksControlOptions](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
    - [ListViewOptions](linkscontroloptions-xml-elements.md)  
    - [Page](weblayout-xml-elements.md)  
    - [PageContribution](weblayout-xml-elements.md)  
@@ -172,8 +173,8 @@ By using the index of elements in this topic, you can look up the syntax structu
    - [WebLayout](weblayout-xml-elements.md)  
    - [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)  
    - [WorkItemLinkFilter](linkscontroloptions-xml-elements.md)  
-   - [WorkItemLinkFilters](linkscontroloptions-elements.md)  
-   - [WorkItemTypeFilters](linkscontroloptions-elements.md)  
+   - [WorkItemLinkFilters](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
+   - [WorkItemTypeFilters](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true)  
    :::column-end:::
 :::row-end:::
 

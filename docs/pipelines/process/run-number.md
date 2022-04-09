@@ -5,12 +5,12 @@ description: Customize pipeline run number in Azure Pipelines, Azure DevOps Serv
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 11/04/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Configure run or build numbers
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -122,7 +122,7 @@ The time zone is UTC.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2018 < azure-devops"
 
 The time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 

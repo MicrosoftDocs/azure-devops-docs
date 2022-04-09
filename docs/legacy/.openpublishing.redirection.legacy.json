@@ -1653,7 +1653,7 @@
     },
     {
       "source_path_from_root": "/docs/setup-admin/add-administrator-tfs.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {
@@ -2998,7 +2998,7 @@
     },
     {
       "source_path_from_root": "/docs/tfs-server/tfs/admin/change-permission-levels.md",
-      "redirect_url": "/azure/devops/organizations/security/change-individual-permissions",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -4438,7 +4438,7 @@
     },
     {
       "source_path_from_root": "/docs/search/administration.md",
-      "redirect_url": "/azure/devops/project/search/administration",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
     {
@@ -4494,21 +4494,6 @@
     {
       "source_path_from_root": "/docs/search/workitem/search-results.md",
       "redirect_url": "/azure/devops/project/search/advanced-work-item-search-syntax",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/search/index.md",
-      "redirect_url": "/azure/devops/project/search/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/search/overview.md",
-      "redirect_url": "/azure/devops/project/search/overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/search/code/administration.md",
-      "redirect_url": "/azure/devops/project/search/administration",
       "redirect_document_id": false
     },
     {
@@ -5392,11 +5377,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/reference/add-the-attachments-control.md",
-      "redirect_url": "/azure/devops/reference/xml/add-the-attachments-control",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/reference/all-field-xml-elements-reference.md",
       "redirect_url": "/azure/devops/reference/xml/all-field-xml-elements-reference",
       "redirect_document_id": false
@@ -5452,11 +5432,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/reference/change-work-item-form-layout.md",
-      "redirect_url": "/azure/devops/reference/xml/change-work-item-form-layout",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/reference/change-workflow-wit.md",
       "redirect_url": "/azure/devops/reference/xml/change-workflow-wit",
       "redirect_document_id": false
@@ -5464,16 +5439,6 @@
     {
       "source_path_from_root": "/docs/work/reference/combine-list-types.md",
       "redirect_url": "/azure/devops/reference/xml/combine-list-types",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/configure-network-adapter-automatically-adjust-speed.md",
-      "redirect_url": "/azure/devops/reference/xml/configure-network-adapter-automatically-adjust-speed",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/control-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/control-xml-element-reference",
       "redirect_document_id": false
     },
     {
@@ -5498,7 +5463,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/define-link-controls.md",
-      "redirect_url": "/azure/devops/reference/xml/define-link-controls",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-link-controls",
       "redirect_document_id": false
     },
     {
@@ -5513,12 +5478,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/design-work-item-form.md",
-      "redirect_url": "/azure/devops/reference/xml/design-work-item-form",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/edit-wit-definition-add-web-content-form.md",
-      "redirect_url": "/azure/devops/reference/xml/edit-wit-definition-add-web-content-form",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/design-work-item-form",
       "redirect_document_id": false
     },
     {
@@ -5552,11 +5512,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/reference/layout-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/layout-xml-element-reference",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/reference/link-param-xml-elements-reference.md",
       "redirect_url": "/azure/devops/reference/xml/link-param-xml-elements-reference",
       "redirect_document_id": false
@@ -5564,11 +5519,6 @@
     {
       "source_path_from_root": "/docs/work/reference/link-type-element-reference.md",
       "redirect_url": "/azure/devops/reference/xml/link-type-element-reference",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/linkscontroloptions-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/linkscontroloptions-elements",
       "redirect_document_id": false
     },
     {
@@ -5627,11 +5577,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/reference/tab-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/tab-xml-element-reference",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/reference/transition-xml-element.md",
       "redirect_url": "/azure/devops/reference/xml/transition-xml-element",
       "redirect_document_id": false
@@ -5644,11 +5589,6 @@
     {
       "source_path_from_root": "/docs/work/reference/update-a-team-project-v4-dot-2-process-template.md",
       "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-v4-dot-2-process-template",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/update-the-workflow-for-agile-team-projects.md",
-      "redirect_url": "/azure/devops/reference/xml/update-the-workflow-for-agile-team-projects",
       "redirect_document_id": false
     },
     {
@@ -5669,11 +5609,6 @@
     {
       "source_path_from_root": "/docs/work/reference/webpagecontroloptions-xml-elements-reference.md",
       "redirect_url": "/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/work-item-save-is-slow-to-complete.md",
-      "redirect_url": "/azure/devops/reference/xml/work-item-save-is-slow-to-complete",
       "redirect_document_id": false
     },
     {
@@ -5699,11 +5634,6 @@
     {
       "source_path_from_root": "/docs/work/reference/witadmin/rebuild-client-cache.md",
       "redirect_url": "/azure/devops/reference/witadmin/rebuild-client-cache",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/witadmin/remove-work-items-permanently.md",
-      "redirect_url": "/azure/devops/reference/witadmin/remove-work-items-permanently",
       "redirect_document_id": false
     },
     {
@@ -5792,18 +5722,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/reference/process-templates/define-groups-teams-permissions-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/reference/process-templates/define-initial-configuration-build.md",
       "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-build",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/process-templates/define-initial-configuration-lab-management.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-lab-management",
       "redirect_document_id": false
     },
     {
@@ -5813,12 +5733,7 @@
     },
     {
       "source_path_from_root": "/docs/work/reference/process-templates/define-initial-configuration-version-control.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-version-control",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/reference/process-templates/define-objects-track-work-items-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-objects-track-work-items-plug-in",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control",
       "redirect_document_id": false
     },
     {
@@ -6343,12 +6258,12 @@
     },
     {
       "source_path_from_root": "/docs/accounts/add-administrator-project-collection.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/accounts/add-administrator-team-project.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {
@@ -6419,11 +6334,6 @@
     {
       "source_path_from_root": "/docs/report/overview.md",
       "redirect_url": "/azure/devops/report/dashboards/overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/report/team-dashboard.md",
-      "redirect_url": "/azure/devops/report/dashboards/team-dashboard",
       "redirect_document_id": false
     },
     {
@@ -6593,7 +6503,7 @@
     },
     {
       "source_path_from_root": "/docs/tfs-server/admin/change-permission-levels.md",
-      "redirect_url": "/azure/devops/organizations/security/change-individual-permissions",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -7294,11 +7204,6 @@
     {
       "source_path_from_root": "/docs/build-release/tasks/build/xamarin-ios.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/xamarin-ios",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/build-release/tasks/build/xcode-build.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/build/xcode-build",
       "redirect_document_id": false
     },
     {
@@ -8518,7 +8423,7 @@
     },
     {
       "source_path_from_root": "/docs/security/change-individual-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/change-individual-permissions",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -8563,7 +8468,7 @@
     },
     {
       "source_path_from_root": "/docs/security/lookup-account-owner-admin.md",
-      "redirect_url": "/azure/devops/organizations/security/lookup-organization-owner-admin",
+      "redirect_url": "/azure/devops/organizations/security/request-changes-permissions",
       "redirect_document_id": false
     },
     {
@@ -8613,7 +8518,7 @@
     },
     {
       "source_path_from_root": "/docs/security/set-project-collection-level-permissions.md",
-      "redirect_url": "/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
       "redirect_document_id": false
     },
     {
@@ -10467,18 +10372,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/customize/reference/process-templates/define-groups-teams-permissions-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-build.md",
       "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-build",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-lab-management.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-lab-management",
       "redirect_document_id": false
     },
     {
@@ -10489,11 +10384,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/process-templates/define-initial-configuration-version-control.md",
       "redirect_url": "/azure/devops/reference/process-templates/define-initial-configuration-version-control",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/process-templates/define-objects-track-work-items-plug-in.md",
-      "redirect_url": "/azure/devops/reference/process-templates/define-objects-track-work-items-plug-in",
       "redirect_document_id": false
     },
     {
@@ -10552,11 +10442,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/customize/reference/witadmin/remove-work-items-permanently.md",
-      "redirect_url": "/azure/devops/reference/witadmin/remove-work-items-permanently",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/customize/reference/witadmin/tcm-customize-manage-test-experience.md",
       "redirect_url": "/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
       "redirect_document_id": false
@@ -10594,11 +10479,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md",
       "redirect_url": "/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/add-the-attachments-control.md",
-      "redirect_url": "/azure/devops/reference/xml/add-the-attachments-control",
       "redirect_document_id": false
     },
     {
@@ -10657,11 +10537,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/customize/reference/change-work-item-form-layout.md",
-      "redirect_url": "/azure/devops/reference/xml/change-work-item-form-layout",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/customize/reference/change-workflow-wit.md",
       "redirect_url": "/azure/devops/reference/xml/change-workflow-wit",
       "redirect_document_id": false
@@ -10669,16 +10544,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/combine-list-types.md",
       "redirect_url": "/azure/devops/reference/xml/combine-list-types",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/configure-network-adapter-automatically-adjust-speed.md",
-      "redirect_url": "/azure/devops/reference/xml/configure-network-adapter-automatically-adjust-speed",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/control-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/control-xml-element-reference",
       "redirect_document_id": false
     },
     {
@@ -10703,7 +10568,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/define-link-controls.md",
-      "redirect_url": "/azure/devops/reference/xml/define-link-controls",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-link-controls",
       "redirect_document_id": false
     },
     {
@@ -10718,12 +10583,7 @@
     },
     {
       "source_path_from_root": "/docs/work/customize/reference/design-work-item-form.md",
-      "redirect_url": "/azure/devops/reference/xml/design-work-item-form",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/edit-wit-definition-add-web-content-form.md",
-      "redirect_url": "/azure/devops/reference/xml/edit-wit-definition-add-web-content-form",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/design-work-item-form",
       "redirect_document_id": false
     },
     {
@@ -10757,11 +10617,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/customize/reference/layout-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/layout-xml-element-reference",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/customize/reference/link-param-xml-elements-reference.md",
       "redirect_url": "/azure/devops/reference/xml/link-param-xml-elements-reference",
       "redirect_document_id": false
@@ -10769,11 +10624,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/link-type-element-reference.md",
       "redirect_url": "/azure/devops/reference/xml/link-type-element-reference",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/linkscontroloptions-elements.md",
-      "redirect_url": "/azure/devops/reference/xml/linkscontroloptions-elements",
       "redirect_document_id": false
     },
     {
@@ -10827,11 +10677,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/work/customize/reference/tab-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/xml/tab-xml-element-reference",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/work/customize/reference/transition-xml-element.md",
       "redirect_url": "/azure/devops/reference/xml/transition-xml-element",
       "redirect_document_id": false
@@ -10844,11 +10689,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/update-a-team-project-v4-dot-2-process-template.md",
       "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-v4-dot-2-process-template",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/update-the-workflow-for-agile-team-projects.md",
-      "redirect_url": "/azure/devops/reference/xml/update-the-workflow-for-agile-team-projects",
       "redirect_document_id": false
     },
     {
@@ -10869,11 +10709,6 @@
     {
       "source_path_from_root": "/docs/work/customize/reference/webpagecontroloptions-xml-elements-reference.md",
       "redirect_url": "/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/work/customize/reference/work-item-save-is-slow-to-complete.md",
-      "redirect_url": "/azure/devops/reference/xml/work-item-save-is-slow-to-complete",
       "redirect_document_id": false
     },
     {
@@ -12489,7 +12324,10 @@
     {
       "source_path_from_root": "/docs/artifacts/get-started/index.md",
       "redirect_url": "/azure/devops/artifacts/index",
-      "redirect_document_id": false
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2018", "azure-devops-2019", "azure-devops-2020", "azure-devops" 
+      ]
     },
     {
       "source_path_from_root": "/docs/organizations/billing/buy-basic-plus-test-plans.md",
@@ -12619,11 +12457,6 @@
     {
       "source_path_from_root": "/docs/organizations/security/faq-network-connections.md",
       "redirect_url": "/azure/devops/organizations/security/allow-list-ip-url",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/organizations/security/index.md",
-      "redirect_url": "/azure/devops/organizations/security/about-security-identity",
       "redirect_document_id": false
     },
     {
@@ -13058,7 +12891,7 @@
     },
     {
       "source_path_from_root": "/docs/report/sharepoint-dashboards/configure-or-redirect-process-guidance.md",
-      "redirect_url": "/azure/devops/project/configure-or-redirect-process-guidance",
+      "redirect_url": "/previous-versions/azure/devops/project/configure-or-redirect-process-guidance",
       "redirect_document_id": false
     },
     {
@@ -16977,11 +16810,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/extend/reference/targets/overview.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/targets/overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/extend/test/debug-in-browser.md",
       "redirect_url": "/previous-versions/azure/devops/docs/extend/test/debug-in-browser",
       "redirect_document_id": false
@@ -17029,6 +16857,11 @@
     {
       "source_path_from_root": "/docs/test/mtm/run-manual-tests-with-microsoft-test-manager.md",
       "redirect_url": "/previous-versions/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/test/reference-tcm.md",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/reference-tcm",
       "redirect_document_id": false
     },
     {
@@ -18151,11 +17984,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/project/search/overview.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/project/navigation/search-basics.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
@@ -18171,11 +17999,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/project/search/administration.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/project/search/advanced-package-syntax.md",
       "redirect_url": "/azure/devops/project/search/functional-code-search",
       "redirect_document_id": false
@@ -18187,16 +18010,11 @@
     },
     {
       "source_path_from_root": "/docs/project/search/code-search.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/project/search/package-search.md",
-      "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/project/search/work-item-search.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
@@ -18308,6 +18126,21 @@
     {
       "source_path_from_root": "/docs/repos/git/share-your-code-in-git-vs-2017.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/advanced-code-search-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/project/search/work-item-search.md",
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
       "redirect_document_id": false
     }
   ]

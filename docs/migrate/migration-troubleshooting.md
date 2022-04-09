@@ -13,7 +13,7 @@ ms.date: 01/31/2022
 
 # Troubleshoot import and migration errors
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The data migration tool flags errors that you need to correct prior to performing a migration to Azure DevOps Services. This article describes the most common warnings and errors that you may receive when preparing to migrate. After correcting each error, run the **migrator validate** command again to verify resolution of all errors.
 

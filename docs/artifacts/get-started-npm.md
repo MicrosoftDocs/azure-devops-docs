@@ -5,16 +5,18 @@ ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
-ms.date: 10/22/2021
-monikerRange: '>= tfs-2017'
+ms.date: 02/14/2022
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Get started with npm packages in Azure Artifacts
 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+
 With Azure Artifacts, you can publish and download npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your own feed, setting up your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## License the Azure Artifacts extension
 
@@ -46,10 +48,6 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 A feed is an organizational construct that allows users to store their packages and control who can access them. Azure Artifacts support storing several package types in a single feed such as NuGet, npm, Maven, Python, and Universal packages.
 
 [!INCLUDE [](includes/create-feed.md)]
-
-You can change these settings later by editing your feed's settings.
-
-[!INCLUDE [edit-feed](includes/edit-feed.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -135,7 +133,7 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select **Packages**, and then select **Connect to feed**.
 

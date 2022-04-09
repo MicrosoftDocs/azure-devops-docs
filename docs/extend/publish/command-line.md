@@ -4,7 +4,7 @@ title: Publishing and packaging an extension from the Command Line
 description: How to package and publish your Azure DevOps or Team Foundation Server (TFS) extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 11/15/2021
@@ -12,7 +12,7 @@ ms.date: 11/15/2021
 
 # Publish from the command line
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can use the Cross-platform CLI for Azure DevOps (tfx-cli) to publish your extension to the Visual Studio Marketplace.
 

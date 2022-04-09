@@ -6,25 +6,23 @@ ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
-monikerRange: '>= tfs-2015 < azure-devops'
+ms.date: 03/29/2022
+monikerRange: '< azure-devops'
 ---
 
 # Install extensions for on-premises servers
 
-[!INCLUDE [version-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
-To add new features and capabilities to your Azure DevOps Server,
-install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+To add new features and capabilities to your Azure DevOps Server, install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 > [!TIP]
-> To learn more about building your own extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
+> For more information about building your own extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
 
 ## Prerequisites
 
-- You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) 
-and have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection). 
-If you don't have permissions, you can [request extensions](request-extensions.md) instead.
+- To install an extension, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. For more information, see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).  
+- If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 > [!NOTE]
 > To use an existing Azure subscription for billing,
@@ -37,9 +35,9 @@ If you don't have permissions, you can [request extensions](request-extensions.m
 
 Your project collection reuses your Azure subscription 
 for future Marketplace purchases. 
-[Where can I find more info about Azure billing?](faq-extensions.yml)]
+[Where can I find more info about Azure billing?](faq-extensions.yml)
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a name="connected-tfs"></a>
 
@@ -47,27 +45,12 @@ for future Marketplace purchases.
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-- [Connect to Azure DevOps Server](#connected-tfs), so you can install extensions.
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-* Working with TFS 2015 Update 3, or disconnected from TFS 2017? 
-[Download extensions, then upload them to TFS](#disconnected-tfs) to 
-[install free and preview extensions](faq-extensions.yml). 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your Azure DevOps Server home page (```https://{server}:8080/tfs/```), 
    go to the project collection where you want to install the extension.
 
-2. From your project collection, 
-   go to the Marketplace.
+2. From your project collection, go to the Marketplace.
 
    <img alt="Browse Marketplace in new navigation" src="media/browse-marketplace2-new.png" />
 
@@ -87,8 +70,7 @@ for future Marketplace purchases.
 
 7. Assign the extension to users who need access. 
    Otherwise, you can go to your project collection to use your extension. 
-   Also, tell your team about this extension, 
-   so they can start using its capabilities too. 
+   Tell your team about this extension, so they can start using its capabilities too. 
 
    <img alt="Extension installed" src="./media/get-tfs-extensions/connected/assign-extension-to-users.png" />
 
@@ -98,20 +80,13 @@ for future Marketplace purchases.
 
 ## Install extensions when disconnected
 
-When you're disconnected from Azure DevOps Server, you can install free and preview extensions by downloading them, uploading them to your Azure DevOps Server, 
-and then installing them in a project collection. You can't install extensions when you're disconnected from Azure DevOps Server.
+When disconnected from Azure DevOps Server, you can install free and preview extensions by downloading them, uploading them to your Azure DevOps Server, and then installing them in a project collection. You can't install extensions when you're disconnected from Azure DevOps Server.
 
-### Who can upload extensions?
+### Who can upload extensions to a server?
 
 [Team Foundation Administrators](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group) 
 with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 can upload extensions.
-
-### Who can install extensions?
-
-[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
-can install extensions. If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 <a name="difference"></a>
 
@@ -129,41 +104,11 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    <img alt="Download and save your extension" src="./media/get-tfs-extensions/standalone/download-extension.png" />
 
-::: moniker-end
+### Upload extension
 
-::: moniker range="tfs-2015"
+1. Go to your home page (```https://{server}:8080/tfs/```). 
 
-### Upload extension to TFS
-
-1. Go to your TFS home page (```https://{server}:8080/tfs/```). 
-
-1. Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
-
-   **TFS 2015 Update 3**
-
-   <img alt="Browse TFS extensions" src="./media/get-tfs-extensions/standalone/browse-for-extensions.png" />
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-### Upload extension to TFS
-
-1. Go to your TFS home page (```https://{server}:8080/tfs/```). 
-
-1. Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
-
-   <img alt="Browse TFS extensions" src="./media/get-tfs-extensions/standalone/browse-tfs-extensions-new.png" />
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-### Upload extension to TFS
-
-1. Go to your TFS home page (```https://{server}:8080/tfs/```). 
-
-2. Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
+2. Browse for your downloaded extensions (```https://{server}:8080/tfs/_gallery```).
 
 3. Manage your extensions.
 
@@ -175,9 +120,12 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    [Why can't I upload extensions?](faq-extensions.yml)
 
+> [!TIP]
+> The maximum size for upload is 25MB. If you can't work around this requirement, **Report a problem** in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21).
+
 ### Install extension in your project collection
 
-1. Select and install the extension that you just uploaded. 
+1. Select and install the extension that you uploaded. 
 
    <img alt="Select extension, then select Install" src="./media/get-tfs-extensions/standalone/install-extension.png" />
 
@@ -213,7 +161,7 @@ In this case, you can manage extensions in disconnected TFS by completing the fo
 
    ![Choose your extension](./media/get-tfs-extensions/standalone/delivery-plans.png)
 
-4. You're redirected to a local extension page for Delivery Plans where you select **Install**. Installation works when you are both online and offline.
+4. You're redirected to a local extension page for Delivery Plans where you select **Install**. Installation works when you're both online and offline.
 
    ![Delivery plans extension gallery](./media/get-tfs-extensions/standalone/delivery-plans-gallery.png)
 
@@ -242,7 +190,7 @@ In this case, you can manage extensions in disconnected TFS by completing the fo
    ![Get the extension](media/get-devops-extensions/install-devops-extension-04.png)
 
    If you don't have permission to install the extension, you can request an administrator
-   install it for you. Your request is [stored in Azure DevOps Server](#review-ext)
+   to install it for you. Your request is [stored in Azure DevOps Server](#review-ext)
    ready for attention from an administrator.
 
 5. Select the project collection where you want to install this extension and choose **Install**.
@@ -318,6 +266,6 @@ Use the **Extensions** page to manage installed extensions.
 
 ## Related articles
 
-- [Uninstall or disable extensions](how-to/uninstall-disable-extensions-tfs.md)
+- [Uninstall or disable extensions](/azure/devops/marketplace/uninstall-disable-extensions)
 - [Request extensions](request-extensions.md)
 - [About permissions](../organizations/security/about-permissions.md)

@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Data locations for Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can choose the location for your data during initial sign-up and creation of your organization. Azure DevOps operates in the following geographical locations, or “geos”.
 

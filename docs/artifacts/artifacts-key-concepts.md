@@ -4,13 +4,13 @@ description: Important concepts for Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 01/12/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Key concepts for Azure Artifacts
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ## Immutability
 
