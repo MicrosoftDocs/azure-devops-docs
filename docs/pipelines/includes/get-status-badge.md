@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 02/24/2022
 ---
 
 <a name="get-the-status-badge"></a>
@@ -29,7 +29,7 @@ Now with the badge Markdown in your clipboard, take the following steps in GitHu
 
 2. Paste the status badge Markdown at the beginning of the file.
 
-3. Commit the change to the `master` branch.
+3. Commit the change to the `main` branch.
 
 4. Notice that the status badge appears in the description of your repository.
 

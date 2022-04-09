@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Add external users to your organization
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to invite external users to your organization. If you access Azure DevOps via Azure Active Directory (Azure AD), you must add the identities of those users to your Azure AD. Doing so also grants the users additional privileges. For more information, see [additional organization-level resources](../projects/resources-granted-to-project-members.md).
 
@@ -55,7 +55,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
     :::image type="content" source="../public/media/invite-users/add-new-users-dialog.png" alt-text="Add new users dialog":::
 
-5. Advise the external user to locate the email that they received from AzureDevOps@microsoft.com with the subject, "You have been invited to an Azure DevOps project" and select **Join now**. This final step adds the user to your organization. The invitation looks similar to the following image.
+5. Advise the external user to locate the email that they received from AzureDevOps@microsoft.com with the subject, **You have been invited to an Azure DevOps project** and select **Join now**. This final step adds the user to your organization. The invitation looks similar to the following image.
 
     :::image type="content" source="media/add-external-user/external-user-email-invitation.png" alt-text="External user's invitation email":::
 

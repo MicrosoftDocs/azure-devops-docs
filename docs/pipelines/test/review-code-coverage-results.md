@@ -7,12 +7,12 @@ ms.custom: "continuous-test, seodec18"
 ms.author: vinojos
 author: vinodjo
 ms.date: 06/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Review code coverage results
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a name="prerequisites"></a>  
 
@@ -25,7 +25,7 @@ Reviewing the code coverage result helps to identify code path(s) that are not
 covered by the tests. This information is important to improve the test collateral
 over time by reducing the test debt.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

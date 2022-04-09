@@ -13,7 +13,7 @@ ms.date: 02/07/2022
 
 # What is Azure DevOps?
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps provides developer services for allowing teams to plan work, collaborate on code development, and build and deploy applications. Azure DevOps supports a collaborative culture and set of processes that bring together developers, project managers, and contributors to develop software. It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
 
@@ -86,7 +86,7 @@ To learn more about managing Azure DevOps Server, see the [Administrative tasks 
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-- [Azure DevOps release notes](/azure/devops/release-notes/index)
+- [Azure DevOps release notes](/azure/devops/server/release-notes/)
 - [Azure DevOps blog](https://blogs.msdn.microsoft.com/devops/)
 
 

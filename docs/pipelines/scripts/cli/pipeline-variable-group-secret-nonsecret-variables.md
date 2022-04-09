@@ -7,10 +7,13 @@ manager: mijacobs
 ms.date: 05/20/2021
 ms.topic: sample
 ms.devlang: azurecli 
+monikerRange: '>=azure-devops-2020'
 ms.custom: devx-track-azurecli
 ---
 
 # Use a variable group's secret and nonsecret variables in an Azure Pipeline
+
+[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
 
 In this sample, use the Microsoft Azure DevOps CLI (azure-devops extension) to create an Azure Pipeline that accesses a variable group containing both secret and nonsecret variables.
 
@@ -203,19 +206,19 @@ az devops configure --defaults organization="" project=""
 
 ## Azure CLI references used in this article
 
-- [az devops configure](/cli/azure/devops#az_devops_configure)
-- [az devops project create](/cli/azure/devops/project#az_devops_project_create)
-- [az devops project delete](/cli/azure/devops/project#az_devops_project_delete)
-- [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github#az_devops_service_endpoint_github_create)
-- [az group create](/cli/azure/group#az_group_create)
-- [az group delete](/cli/azure/group#az_group_delete)
-- [az login](/cli/azure/reference-index#az_login)
-- [az pipelines create](/cli/azure/pipelines#az_pipelines_create)
-- [az pipelines delete](/cli/azure/pipelines#az_pipelines_delete)
-- [az pipelines run](/cli/azure/pipelines#az_pipelines_run)
-- [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_create)
-- [az pipelines variable-group delete](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_delete)
-- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create)
-- [az pipelines variable-group variable update](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_update)
-- [az storage account create](/cli/azure/storage/account#az_storage_account_create)
-- [az storage account delete](/cli/azure/storage/account#az_storage_account_delete)
+- [az devops configure](/cli/azure/devops#az-devops-configure)
+- [az devops project create](/cli/azure/devops/project#az-devops-project-create)
+- [az devops project delete](/cli/azure/devops/project#az-devops-project-delete)
+- [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github#az-devops-service-endpoint-github-create)
+- [az group create](/cli/azure/group#az-group-create)
+- [az group delete](/cli/azure/group#az-group-delete)
+- [az login](/cli/azure/reference-index#az-login)
+- [az pipelines create](/cli/azure/pipelines#az-pipelines-create)
+- [az pipelines delete](/cli/azure/pipelines#az-pipelines-delete)
+- [az pipelines run](/cli/azure/pipelines#az-pipelines-run)
+- [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az-pipelines-variable-group-create)
+- [az pipelines variable-group delete](/cli/azure/pipelines/variable-group#az-pipelines-variable-group-delete)
+- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az-pipelines-variable-group-variable-create)
+- [az pipelines variable-group variable update](/cli/azure/pipelines/variable-group/variable#az-pipelines-variable-group-variable-update)
+- [az storage account create](/cli/azure/storage/account#az-storage-account-create)
+- [az storage account delete](/cli/azure/storage/account#az-storage-account-delete)

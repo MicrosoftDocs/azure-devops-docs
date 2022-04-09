@@ -5,14 +5,14 @@ description: Learn how you can easily deploy a self-hosted agent on Linux for Az
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.date: 09/20/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Self-hosted Linux agents
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -43,6 +43,7 @@ We support the following subset of .NET Core supported distributions:
   - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
   - Ubuntu 20.04, 18.04, 16.04
+  - CBL-Mariner 1.0 (see note 3)
 - ARM32 (see note 2)
   - Debian 9
   - Ubuntu 18.04
@@ -56,6 +57,10 @@ We support the following subset of .NET Core supported distributions:
 > [!NOTE]
 > Note 2: ARM instruction set [ARMv7](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures) or above is required.
 > Run `uname -a` to see your Linux distro's instruction set.
+
+> [!NOTE]
+> Mariner OS distribution currently has partial support from the Azure DevOps Agent.
+> We are providing a mechanism for detection of this OS distribution in `installdependencies.sh` script, but due to lack of support from the [.Net Core](https://github.com/dotnet/core/issues/6379) side, we couldn't guarantee full operability of all agent functions when running on this OS distribution.
 
 Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
@@ -73,7 +78,7 @@ You can install those dependencies on supported Linux platforms by running `./bi
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 **TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
 We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
@@ -168,9 +173,9 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
@@ -190,21 +195,6 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-### TFS 2015
-
-1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
-
-1. Follow the instructions on that page to download the agent.
-
-1. Configure the agent.
-
-   ```
-   ./config.sh
-   ```
-
-::: moniker-end
 
 ### Server URL
 
@@ -220,17 +210,12 @@ Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
-TFS 2017 and newer: `https://{your_server}/tfs`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-TFS 2015: `http://{your_server}:8080/tfs`
+TFS 2018: `https://{your_server}/tfs`
 
 ::: moniker-end
+
 
 ### Authentication type
 

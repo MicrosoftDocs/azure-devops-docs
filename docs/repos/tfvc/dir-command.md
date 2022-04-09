@@ -13,8 +13,8 @@ monikerRange: '<= azure-devops'
 # Dir Command
 
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 The **dir** command displays all or some of the contents of the server for Team Foundation version control.
 

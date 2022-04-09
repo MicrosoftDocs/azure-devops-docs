@@ -14,10 +14,10 @@ ms.date: 01/11/2022
 
 # Global workflow XML element reference
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 > [!IMPORTANT]  
-> This topic applies to project customization for On-premises XML process models. The Inheritance and Hosted XML process models don't support global workflow. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
+> This article applies to project customization for On-premises XML process models. The Inheritance and Hosted XML process models don't support global workflow. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
 
 
 By using global workflow, you can minimize the work that is required to define and update work item fields and global lists that many types of work items and projects share. With global workflow, you can define and update fields and global lists that apply to all types of work items in a project or a project collection.  

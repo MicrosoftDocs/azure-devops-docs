@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 # Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can use a pipeline to automate the machine learning lifecycle. Some of the operations you can automate are:
 
@@ -146,6 +146,30 @@ For example, you have a model that is already deployed and has an accuracy of 90
 Depending on what "best" looks like for your scenario, you may need to create a [release pipeline](../release/index.md) where someone must inspect the metrics to determine if the model should be deployed.
 
 To log metrics during training, use the [Run](/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py&preserve-view=true) class.
+
+## ML REST API task
+
+The __ML REST API task___ is used to submit an Azure ML pipeline for training while also handing over the desired parameters.
+The following example shows a use case of the task to submit an already published pipeline to the AML workspace for training. 
+
+```yml
+- task: ms-air-aiagility.vss-services-azureml.azureml-restApi-task.MLPublishedPipelineRestAPITask@0
+  displayName: 'Submit AML pipeline'
+  inputs:
+    azureSubscription: '$(SERVICE_CONNECTION)'
+    PipelineId: '$(PIPELINE_ID)'
+    ExperimentName: '$(EXPERIMENT_NAME)'
+    PipelineParameters: '"ParameterAssignments": {"parameter-example": 1 }'
+```
+
+This is a AML Workspace REST API task to invoke ML pipelines, scripts and notebooks.
+
+A similar behavior to this task can be achieved by invoking the following [Azure ML CLI command](/cli/azure/ml(v1)/run?view=azure-cli-latest&preserve-view=true#az-ml-v1--run-submit-pipeline).
+
+The additional benefit of the az ml task, besides submitting the pipeline with all specified PipelineParameters, is that it represents for the AML pipeline run status in the Azure Pipeline and doesn't need an unspecified amount of wait time for the task to finish.
+
+> [!TIP]
+> To use the task, you need to install the [Azure Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml&ssr=false#overview) to your Azure DevOps project.
 
 ## Azure CLI Deploy task
 

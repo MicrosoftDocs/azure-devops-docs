@@ -8,7 +8,7 @@ monikerRange: 'azure-devops'
 
 # Upload tasks to project collection
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to upload tasks to organization for custom tasks or in-the-box tasks in Azure DevOps using the Node CLI for Azure DevOps (tfx-cli).
 

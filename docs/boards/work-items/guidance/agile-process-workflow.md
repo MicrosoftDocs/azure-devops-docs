@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
 
 # Agile process work item types for workflow management in Azure Boards  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Teams use the work item types (WITs) provided with the Agile process. Work item types help your team to plan and track progress of software projects. You define user stories to manage the backlog of work. Then, using the Kanban board, you track progress by updating the status of those stories.
 
@@ -250,7 +250,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
    :::column-end:::
 :::row-end:::  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 If you use [Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) to assign resources and track a schedule.
 ::: moniker-end
 
@@ -303,188 +303,4 @@ You can use the Priority field to differentiate the value of various stories. Or
 
 The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of user stories, however by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.
 
-::: moniker range="<= tfs-2015"
-
-### Links control, client work item form 
-
-Work item forms displayed in a client and the web portal for TFS 2015 and earlier versions display link tabs and link control restrictions as described in the following table. 
-
-:::row:::
-   :::column span="1":::
-   **Tab name**
-   :::column-end:::
-   :::column span="3":::
-   **Work item type**
-   :::column-end:::
-   :::column span="3":::
-   **Link restrictions**
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-   **All Links**
-
-   :::column-end:::
-   :::column span="3":::
-   User story
-
-   Bug
-
-   Feedback Request
-
-   Task
-
-   Test Case
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - No restrictions.
-
-   
-   
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Implementation**
-
-   :::column-end:::
-   :::column span="3":::
-   User story
-
-   Task
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Parent** and **Child** links between user stories and tasks.
-
-   - Excludes links to work items in other projects.
-
-   
-   
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Issue
-
-   Shared steps
-
-   
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - No restrictions.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Code Review Request
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Parent** and **Child** links to Code Review Response work items.
-
-   - Excludes links to work items in other projects.
-
-   
-   
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Stories**
-
-   :::column-end:::
-   :::column span="3":::
-   Feedback Response
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Related** links to user stories.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Storyboards**
-
-   :::column-end:::
-   :::column span="3":::
-   User Story
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Storyboard** links.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Test Cases**
-
-   :::column-end:::
-   :::column span="3":::
-   User story
-
-   Bug
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tested By** links.
-
-   - Allows links only to test cases.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Tested User Stories**
-
-   :::column-end:::
-   :::column span="3":::
-   Test case
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tests** links.
-
-   - Allows links only to user stories.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-
-
-::: moniker-end
+ 

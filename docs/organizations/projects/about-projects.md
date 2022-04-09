@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18  
 description: Understand how to structure your project to support collaboration on building software solutions.
 ms.technology: devops-new-user 
-ms.assetid:  
 ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
@@ -14,7 +13,7 @@ ms.date: 05/04/2021
 
 # About projects and scaling your organization
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 A project provides a repository for source code and a place for users to plan, track progress, and collaborate on building software solutions. A project represents a fundamental container where data is stored when added to Azure DevOps.
 
@@ -93,7 +92,7 @@ To create or list projects, see [Create a project](create-project.md)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
 
@@ -107,18 +106,6 @@ To create or list projects, see [Create a project](create-project.md)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-1. Choose the name of the server.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of open Projects, TFS 2013 - 2015](media/about-projects/open-projects-tfs-15.png)
-
-2. From there, you can choose a project from the set of projects listed.
-
-::: moniker-end
-
-
 <a id="project-scoped-user-group" /> 
 
 ::: moniker range="azure-devops"
@@ -127,7 +114,7 @@ To create or list projects, see [Create a project](create-project.md)
 
 By default, users added to an organization can view all organization and project information and settings.  
 
-The **Limit user visibility for projects** preview feature for the organization limits user access in two ways:
+The **Limit user visibility and collaboration to specific projects** preview feature for the organization limits user access in two ways:
 - Restricting views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
 - Limiting the set of people or groups that appear through people-picker search selections and the ability to @mention people. 
 
@@ -136,7 +123,7 @@ The **Limit user visibility for projects** preview feature for the organization 
 
 ### Limit access to Organization settings 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
@@ -156,10 +143,10 @@ As shown in the following image, you simply start typing into a people picker bo
 > ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
 
 > [!WARNING]   
-> When the **Limit user visibility for projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility for projects** preview feature for the organization.  
+> When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility and collaboration to specific projects** preview feature for the organization.  
 
 
-Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ### Historical data remains visible 
 
@@ -238,7 +225,7 @@ You can configure and customize most services and applications to support your b
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
@@ -281,7 +268,7 @@ In addition to connecting through a web browser, you can connect to a project fr
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
@@ -304,7 +291,7 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 
 **A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 Also, you can use the [**az devops project** commands](/cli/azure/devops/project).  
 ::: moniker-end
 
@@ -316,10 +303,4 @@ Also, you can use the [**az devops project** commands](/cli/azure/devops/project
 - [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Understand differences between Azure DevOps](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
-<!--- Various blog resources 
-
-- [](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx)  
-- [One project to rule them out](https://nkdagility.com/one-team-project/)  
-- [Working within a single Project with Team Foundation Server 2012](https://nkdagility.com/working-within-a-single-team-project-with-team-foundation-server-2012/)
-
--->
+ 

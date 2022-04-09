@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 04/01/2022
 ---
 
 # Set up your project's backlogs and boards in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In most cases, you can start using your product and portfolio backlogs once your project is created. A default team is created along with associated backlogs and boards. You can start adding work items to your product backlog using the [Backlog](create-your-backlog.md) or [Board](../boards/kanban-quickstart.md). 
 
@@ -40,7 +40,7 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - Work item type belongs to the Requirements category. The types differ depending on the process selected for your project: 
 	- [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=<strong>Stories</strong>  
@@ -59,7 +59,7 @@ You can determine the work item types that belong to your Requirements category.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 As shown in the following image, (1) choose the team, (2) **Work**, (3) **Backlogs**, and then the product backlog. 
 
 > [!div class="mx-imgBorder"]
@@ -112,7 +112,7 @@ For all processes except the Basic process, each team manages the way bugs are t
 
 [!INCLUDE [temp](../includes/basic-process-bug-note.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category. Those bugs show up on the Backlog and Kanban board or the Tasks category. They can show up on the Taskboard or the Bugs category where they don't appear on either backlogs or boards. 
 
@@ -135,13 +135,9 @@ If you see the following error when you open your Kanban board, you need to corr
 Choose **Correct this now** to open the Settings dialog. To map the workflow states, refer to [Add columns to your Kanban board, Update Kanban column-to-State mappings](../boards/add-columns.md#state-mappings). 
 
 
-::: moniker range=">= tfs-2017"
-
 ## Customize your Kanban board checklist items
 
 Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For details, see [Customize cards](../boards/customize-cards.md#annotations).
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -168,7 +164,7 @@ To learn more about checklists, see the following articles:
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 
 For example, here we've chosen to track bugs along with tasks, and  enable Task and Bug to appear within checklists. 
@@ -246,7 +242,7 @@ For details, see the following resources:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md)  
 - [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
@@ -343,7 +339,7 @@ The following settings can influence the type and number of work items that will
 	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress.png)  
 	::: moniker-end
 
-	::: moniker range="<= tfs-2018"  
+	::: moniker range="tfs-2018"  
 	> [!div class="mx-imgBorder"]  
 	> ![Backlogs, Hide In Progress](media/setup-backlog/hide-in-progress-prev.png)  
 	::: moniker-end

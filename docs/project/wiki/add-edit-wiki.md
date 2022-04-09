@@ -9,13 +9,13 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 02/05/2021
 ---
 
 # Add and edit wiki pages
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can add a title and content to a page, once the [wiki Git repository is provisioned](./wiki-create-repo.md) for your team project. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 

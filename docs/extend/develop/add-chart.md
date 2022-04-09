@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Add a chart
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Learn how you can add charts to your extensions. Charts can be added to any Azure DevOps Services extension. 
 

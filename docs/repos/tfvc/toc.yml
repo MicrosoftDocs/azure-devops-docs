@@ -12,7 +12,7 @@
     href: share-your-code-in-tfvc-xcode.md
   - name: Suspend work using My Work
     href: day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md
-  - name: Request a code review 
+  - name: Request a code review
     href: get-code-reviewed-vs.md
 - name: Develop in branches
   items:
@@ -24,7 +24,7 @@
     href: branch-folders-files.md
   - name: Additional branch strategies
     href: branch-strategically.md
-  - name: Manage feature isolation  
+  - name: Manage feature isolation
     href: effective-feature-isolation-on-tfvc.md
   - name: Merge folders and files
     href: merge-folders-files.md
@@ -38,7 +38,6 @@
   items:
   - name: Set up TFVC
     href: set-up-team-foundation-version-control-your-dev-machine.md
-    items:
   - name: Create and work with workspaces
     href: create-work-workspaces.md
   - name: Optimize your workspace
@@ -81,7 +80,7 @@
     href: resolve-team-foundation-version-control-conflicts.md
   - name: Lock files & folders
     items:
-    - name: Work with version control locks 
+    - name: Work with version control locks
       href: work-version-control-locks.md
     - name: Understand lock types
       href: understand-lock-types.md
@@ -103,11 +102,11 @@
     href: suspend-your-work-manage-your-shelvesets.md
 - name: Manage TFVC
   items:
-  - name: "Default TFVC permissions (Security)"
+  - name: Default TFVC permissions (Security)
     href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Set TFVC permissions (Security)
     href: set-tfvc-repository-permissions.md
-  - name: Control access to TFVC 
+  - name: Control access to TFVC
     href: control-access-team-foundation-version-control.md
   - name: Remove access to TFVC
     href: remove-access-version-control-files.md
@@ -124,12 +123,12 @@
   - name: Clean up files when users leave
     href: clean-up-files-when-users-leave.md
   - name: Destroy version controlled files
-    href: configure-check-out-settings.md 
+    href: configure-check-out-settings.md
   - name: Migrate from Visual SourceSafe
     href: /previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)
   - name: Download permissions report
-    href: ../../organizations/security/download-permissions-report.md
     displayName: json
+    href: ../../organizations/security/download-permissions-report.md
 - name: TFVC command reference
   items:
   - name: Use Team Foundation version control commands

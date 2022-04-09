@@ -14,7 +14,7 @@ ms.date: 10/20/2021
 
 # How SAFe&reg; concepts map to Azure Boards artifacts 
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you're interested in using Scaled Agile Framework (SAFe®), you can configure your Azure Boards project to track SAFe® deliverables. Just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on Epics that span releases. 
 
@@ -241,7 +241,7 @@ For details on supported Markdown features, see the following articles.
 
 <!---
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![SAFe® roles map to a hierarchy of teams](media/safe-roles-to-vso-roles.png)  
 
@@ -260,7 +260,7 @@ For details on supported Markdown features, see the following articles.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]  
 > The [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) is supported on TFS 2018 and later versions. 
@@ -268,7 +268,7 @@ For details on supported Markdown features, see the following articles.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]  
 > The Project Wiki is available with TFS 2018 and later versions. 
 ::: moniker-end

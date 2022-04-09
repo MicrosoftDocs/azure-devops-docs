@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Work items with direct links sample reports
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to list a given set of User Stories and their linked User Stories. An example is shown in the following image. 
 

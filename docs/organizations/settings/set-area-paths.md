@@ -2,18 +2,18 @@
 title: Define area paths and assign to a team
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
-ms.technology: devops-agile
+ms.technology: devops-settings 
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/03/2022
+ms.date: 04/04/2022
 ---
 
 # Define area paths and assign to a team
 
-[!INCLUDE [temp](../../boards/includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Add area paths to support teams and group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support sub-areas, up to 14 levels deep.
@@ -27,7 +27,7 @@ To understand how the system uses area paths, see [About area and iteration path
 <a name="permissions"></a>
 
 - If you don't have a project yet, [create one now](../projects/create-project.md).
-- Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Change project-level permissions](../security/change-project-level-permissions.md).
 - Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:   
     - **Create child nodes**
     - **Delete this node**
@@ -56,12 +56,9 @@ If you're new to managing projects and teams, the most straight forward sequence
 5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
-::: moniker range=">= tfs-2017"
-
 > [!NOTE]
 > While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).
 
-::: moniker-end
 
 As needed, you can do the following actions at any time:
 
@@ -87,7 +84,7 @@ Define both areas and iterations for a project from the **Project Settings** > *
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
 
@@ -107,7 +104,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 <a id="admin-intro-team-services" /> 
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal for the project, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
@@ -123,20 +120,10 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 ::: moniker-end   
 
-<a id="admin-intro-tfs-2015" />
-
-::: moniker range="<= tfs-2015"  
-
-- From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then choose **Areas**.
-
-    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
-
-::: moniker-end
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 [List project area paths](#list-areas) | [Add a project area path](#add-area) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-move-project-area-path) | [Remove area path from a team](#remove-area-path-from-team)
 
@@ -157,12 +144,6 @@ az boards area project list [--depth]
 - **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this path from an iteration path. For example, --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
 
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
-::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -205,47 +186,18 @@ Only one area is defined, by default. Add area paths under the root area path fo
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= tfs-2018"  
-
 - To add a child node, highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
     > [!div class="mx-imgBorder"]  
     > ![Add a new area path](media/areas/new-area-preview.png) 
- 
-::: moniker-end
-
-::: moniker range="tfs-2017"  
-
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can select **Settings** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
-
-    Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Add a new area path, 2017 and earlier versions](media/areas/m-areas-add-area-path.png) 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"  
-
-1. Open **Areas**.  
-
-    ![Open the areas page defined for project](media/areas/ALM_CW_OpenAreas.png)
-
-    From the areas page, you can set the default area path used to filter the backlog. The default area path is also used when new work items a user creates new work items. 
-
-2. Add a new child node to the area you've selected.</p>
-
-    ![Create a new area node](media/areas/ALM_CW_CreateArea.png) 
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="add-area" /> 
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="azure-devops"  
 
 You can add area paths to a project using [az boards area project create](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -261,12 +213,6 @@ az boards area project create --name
 - **name**: Required. Area path name. 
 - **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, adds an area at the root level.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-
-::: moniker range=">= azure-devops-2020"
 
 #### Example: JSON format
 
@@ -330,7 +276,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: . For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -345,7 +291,7 @@ You open team settings from the upper navigation bar. Select the team you want a
 
 <a id="list-team-area-paths" /> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can list the area paths defined for a team using [az boards area team list](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -407,18 +353,9 @@ You define both areas and iterations from **Project Settings > Team configuratio
 
 ## Set team area path(s)
 
-::: moniker range=">= tfs-2017"  
-
 All work items that are assigned to a team area path appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas.
 
-::: moniker-end  
 
-::: moniker range="<= tfs-2015"  
-
-All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas. 
-
-::: moniker-end
-  
 > [!NOTE]  
 > Teams can be assigned a maximum of 300 **Area Paths**. To learn more, see [Work tracking, process, and project limits](work/object-limits.md). 
 
@@ -456,7 +393,7 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops-2020"  
+::: moniker range="< azure-devops-2020"  
 
 1. Open **Areas** for the team context.  
 
@@ -481,26 +418,12 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2015"  
-
-1. Open the Areas admin page for the team context.  
-
-    Here, we navigate to the Fabrikam Fiber team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
-
-    ![Work, Area page for Fabrikam Fiber team](media/team-defaults/stdefaults-open-team-area-page-tfs.png)  
-
-2. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber area path.   
-
-   ![Product backlog for Fabrikam Fiber team](media/team-defaults/stdefaults-backlog-web-team-list.png)  
-
-::: moniker-end  
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="set-team-area-paths" /> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -520,10 +443,6 @@ az boards area team add --path  --team
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 - **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
 
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
-
 #### Example
 
 For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
@@ -537,7 +456,6 @@ Fabrikam Fiber\Service Delivery\Voice  False                False
 Fabrikam Fiber\Voice                   True                 True
 ```
 ::: moniker-end
-
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
@@ -575,7 +493,7 @@ The system automatically updates work items and queries that reference your upda
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
 
@@ -596,7 +514,7 @@ The system automatically updates work items and queries that reference your upda
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -618,10 +536,6 @@ az boards area project update --path
 - **child-id**: Optional. Moves an existing area path and adds it as a child node for the specified path name or ID.  
 - **name**: Optional. Specifies the new name of the area path.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".   
-
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -703,14 +617,14 @@ As you can see, area paths play a major role in supporting Agile tools, teams, a
 
 Area paths and iteration paths are also referred to as *Classification Nodes*. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 - [az boards area (Azure DevOps CLI)](/cli/azure/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)

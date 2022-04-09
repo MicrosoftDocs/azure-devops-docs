@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Rate limits
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance. This design leaves users vulnerable to performance issues and even outages when other users, of their shared resources, have spikes in their consumption.
 To combat these problems, Azure DevOps limits the resources individuals can consume and the amount of requests they can make to certain commands.

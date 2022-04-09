@@ -3,7 +3,7 @@ title: Manage personal access tokens using API
 titleSuffix: Azure DevOps
 description: Learn how to use the PAT lifecycle management API to get, create, update, and revoke their personal access tokens (PATs).
 ms.technology: devops-security
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: wonga
 ms.date: 12/30/2020
 monikerRange: 'azure-devops'
@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Manage personal access tokens (PATs) using REST API
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you're dealing with a large set of personal access tokens (PATs) you own, it may become complex to manage the maintenance of these tokens using UI alone.
 

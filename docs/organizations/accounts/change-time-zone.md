@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Change the time zone in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to change the time zone for your organization or your user profile.
 

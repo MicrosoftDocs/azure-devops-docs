@@ -7,14 +7,14 @@ ms.custom: cross-service
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 08/31/2021
 ---
  
 
 # Cross-service integration and collaboration overview 
 
-[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 One of the major strengths of Azure DevOps is the integration it supports across its core services. Azure DevOps supports multiple integration points across each of the major services&mdash;Azure Boards, Azure Repos, Azure Pipelines, and Azure Test Plans. 
 
@@ -707,7 +707,7 @@ To learn more, see [What is the Analytics service?](../report/powerbi/what-is-an
 
 Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals.  To learn more, see [About dashboards, charts, reports, & widgets](../report/dashboards/overview.md). 
 
-SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md). 
+SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports).
 
 ::: moniker-end 
 

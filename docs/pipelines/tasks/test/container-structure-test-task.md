@@ -11,6 +11,8 @@ monikerRange: 'azure-devops'
 
 # Container Structure Tests
 
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
 The Container Structure Tests provide a powerful framework to validate the structure of a container image. These tests can be used to check the output of commands in an image, as well as verify metadata and contents of the filesystem. Tests can be run either through a standalone binary, or through a Docker image. 
 
 Tests within this framework are specified through a YAML or JSON config file. Multiple config files may be specified in a single test run. The config file will be loaded in by the test runner, which will execute the tests in order. Within this config file, four types of tests can be written:

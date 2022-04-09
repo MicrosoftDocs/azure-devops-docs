@@ -7,25 +7,30 @@ ms.technology: devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+ms.date: 04/04/2022
+monikerRange: '<= azure-devops'
 ---
  
-# Uninstall or disable extensions
+# Uninstall or disable extensions for Azure DevOps
 
-[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to uninstall or disable an extension that you don't need.
 
+> [!NOTE]
+> Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](install-extension.md). 
+
 ## Prerequisites
 
-You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) to uninstall or disable extensions.
+- To uninstall or disable extensions, you must be a member of the **Project Collection Administrators** group or have **Edit collection-level information** permissions. To learn more see [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md). 
 
-::: moniker range="azure-devops"
 
-## Uninstall or disable extensions in Azure DevOps Services
+
+## Uninstall or disable extensions  
 
 #### [Browser](#tab/browser)
+
+::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
@@ -41,9 +46,36 @@ You must be a [Project Collection Administrator](../organizations/security/set-p
    ![Disable or uninstall extension](media/disable-or-uninstall-extension.png)
 
 ::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
+To uninstall extensions from the local gallery in Azure DevOps on-premises server, perform the following steps. 
+
+1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
+
+2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
+
+   ![Remove extension](media/remove-extension-TFS.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+To uninstall extensions in a collection, perform the following steps. 
+
+1. Go to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
+
+2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
+
+   ![Remove extension](media/remove-extension-TFS.png)
+
+::: moniker-end
+
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 [Uninstall extension](#uninstall-extension) | [Disable extension](#disable-extension) 
 
@@ -109,34 +141,11 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 [!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
-
-::: moniker range=">= tfs-2015 < azure-devops"
-
-## Uninstall extensions from the local gallery in TFS or Azure DevOps Server
-
-1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
-
-2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
-
-   ![Remove extension](media/remove-extension-TFS.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 < azure-devops"
-
-## Uninstall extensions in a collection
-
-1. Go to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
-
-2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
-
-   ![Remove extension](media/remove-extension-TFS.png)
-
-::: moniker-end
+ 
 
 ::: moniker range="azure-devops"
 
-## Enable an extension
+## Enable or list extensions through the command line
 
 You can enable an extension with the [az devops extension enable](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 

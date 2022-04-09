@@ -13,7 +13,7 @@ ms.date: 03/30/2021
 
 # Access, export, and filter audit logs
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
 > Auditing is still in public preview.
@@ -49,7 +49,7 @@ By default, Project Collection Administrators are the only group that have full 
 - Specific Audit permissions can be granted to any group via the Security Permissions page in Organization Settings. 
 
 > [!NOTE]  
-> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages.  To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages.  To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ## Enable and disable auditing
 

@@ -6,13 +6,13 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 11/19/2020
 ---
 
 # Integrate with service hooks
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Service hooks let you run tasks on other services when events happen in your Azure DevOps 
 projects. For example, create a card in Trello when a work item is created 
@@ -85,7 +85,7 @@ look at the information on the service that you're interested in.
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1.	Open the admin page for a project in web access.
 
@@ -173,8 +173,6 @@ A: Atlassian officially dropped support for HipChat. See more on that announceme
 
 
 <!-- ENDSECTION -->
-
-
 
 ## Related articles
 

@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 02/01/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -43,9 +43,9 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -173,7 +173,7 @@ steps:
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
 - task: CmdLine@1
@@ -193,9 +193,9 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -257,9 +257,9 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 

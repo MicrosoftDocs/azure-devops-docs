@@ -3,14 +3,14 @@ title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.date: 12/23/2021
+ms.date: 02/23/2022
 monikerRange: '>=azure-devops-2019'
 ms.custom: devx-track-python, freshness-fy22q2
 ---
 
 # Build Python apps
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a basic pipeline. 
 
@@ -321,7 +321,5 @@ You can also use Azure Pipelines to [build an image](containers/build-image.md) 
 
 ## Related extensions
 
-- [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
 - [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)  
 - [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  

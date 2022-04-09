@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # View your subscriptions, opt-out as needed
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md).  
 
@@ -45,7 +45,7 @@ Start by opening your personal notification settings from your home page. Select
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 1. From the web portal, select your initials or picture, and select **Notification settings** from the drop-down menu.
 

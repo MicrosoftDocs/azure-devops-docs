@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Try Azure Test Plans for free
 
-[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Basic users have full access to Azure Test Plans during the 30-day trial. After the trial expires, buy Basic + Test Plans and assign it to specific users, so they can keep using the service. For more information, see [What is Azure Test Plans](../../test/overview.md).
 
@@ -22,7 +22,7 @@ Basic users have full access to Azure Test Plans during the 30-day trial. After 
 
 ## Prerequisites
 
-To try Azure Test Plans, you must be an [Organization Owner](../security/lookup-organization-owner-admin.md) or a member of the [Project Collection Administrators](../security/lookup-organization-owner-admin.md) group. If you created the organization or collection, you're automatically a member of this group.
+To try Azure Test Plans, you must be the [**Organization owner**](../security/look-up-organization-owner.md) or a member of the [**Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) group. If you created the organization or collection, you're automatically a member of this group.
 
 ## Try Azure Test Plans
 

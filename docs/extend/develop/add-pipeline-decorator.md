@@ -12,7 +12,7 @@ monikerRange: '> azure-devops-2019'
 
 # Use a decorator to inject steps into a pipeline
 
-[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Pipeline decorators let you add steps to the beginning and end of every job.
 This process is different than adding steps to a single definition because it applies to all pipelines in an organization.

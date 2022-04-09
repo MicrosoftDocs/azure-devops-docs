@@ -14,7 +14,7 @@ ms.date: 01/25/2022
 
 # Change your organization's billing subscription
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to change the Azure subscription that your Azure DevOps organization uses for billing. You can remove your billing subscription at any time.   
 
@@ -24,7 +24,7 @@ Learn how to change the Azure subscription that your Azure DevOps organization u
 
 To change or remove your billing subscription, you need the following permissions:
 
-- [Organization Owner](../security/lookup-organization-owner-admin.md) permissions or be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md).  
+- [Organization Owner](../security/look-up-organization-owner.md) permissions or be a member of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md).  
 - [Owner or Contributor permission for an Azure subscription](add-backup-billing-managers.md), which you can use to purchase.
 
 <a id="change-subscription" />
@@ -51,7 +51,7 @@ To change or remove your billing subscription, you need the following permission
 
 > [!NOTE]
 > A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can follow either of the following two workarounds:
-> - [Create a new user account](../accounts/add-organization-users.md). Grant the user account [Owner or Contributor permission](add-backup-billing-managers.md) to the target subscription in the Azure portal. Add the user account to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) for the Azure DevOps organization. Use the new user account to link the organization to the target subscription.
+> - [Create a new user account](../accounts/add-organization-users.md). Grant the user account [Owner or Contributor permission](add-backup-billing-managers.md) to the target subscription in the Azure portal. Add the user account to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) for the Azure DevOps organization. Use the new user account to link the organization to the target subscription.
 > - Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Remove your subscription 

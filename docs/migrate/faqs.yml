@@ -6,7 +6,7 @@ metadata:
   ms.technology: devops-migrate
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
   "recommendations": "true"
   ms.date: 04/01/2021
@@ -15,7 +15,7 @@ metadata:
 title: Migration and process model FAQs  
  
 summary: | 
-  **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
   Find answers to frequently asked questions when using migrating to Azure DevOps Services from on-premises. 
 
@@ -64,4 +64,3 @@ additionalContent: |
   - [Troubleshooting process errors](migration-processtemplates.md#dealing-with-process-errors)
   - [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
   - [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
-

@@ -1,4 +1,4 @@
-- name: Marketplace & extensibility
+- name: Marketplace & Extensibility
   href: index.yml
 - name: What are extensions?
   href: ../extend/overview.md
@@ -6,7 +6,6 @@
   href: ../marketplace/overview.md
 - name: Get started
   href: ../marketplace/toc.yml
-  items:
 - name: Authenticate
   items:
   - name: Guide to authentication
@@ -20,43 +19,43 @@
   - name: Cross-platform CLI for Azure DevOps using PATs
     href: ../integrate/get-started/auth/tfs-basic-auth.md
   - name: IIS Basic Authentication and PATs
-    href: ../integrate/get-started/authentication/iis-basic-auth.md 
+    href: ../integrate/get-started/authentication/iis-basic-auth.md
 - name: Develop extensions
-  href: ../extend/toc.yml 
+  href: ../extend/toc.yml
 - name: Integrate with Service Hooks
   href: ../service-hooks/toc.yml
 - name: Integrate applications
-  href: ../integrate/toc.yml 
+  href: ../integrate/toc.yml
 - name: Microsoft Teams & Slack
   items:
   - name: Azure Boards with Slack
     href: ../boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Azure Boards with Microsoft Teams
     href: ../boards/integrations/boards-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-  - name: Azure Pipelines with Slack
-    href: ../pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-  - name: Azure Pipelines with Microsoft Teams
-    href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Azure Repos with Slack
     href: ../repos/integrations/repos-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - name: Azure Repos with Microsoft Teams
     href: ../repos/integrations/repos-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Azure Pipelines with Slack
+    href: ../pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Azure Pipelines with Microsoft Teams
+    href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Reference
   items:
-    - name: REST API reference overview
-      href: ../integrate/rest-api-overview.md
-    - name: Rate limits
-      href: ../integrate/concepts/rate-limits.md
-    - name: Deprecation of WIT & Test client OM
-      href: ../integrate/concepts/wit-client-om-deprecation.md
-    - name: Migrate code to REST-based .NET Client Libraries
-      href: ../integrate/concepts/migration-guide.md
-    - name: .NET client libraries reference
-      href: /dotnet/api/index?view=azure-devops-dotnet
-    - name: Azure DevOps Services REST API >>
-      href: /rest/api/azure/devops/
-    - name: REST APIs for TFS 2015, 2017, and 2018 >>
-      href: /previous-versions/azure/devops/integrate/previous-apis/overview
+  - name: REST API reference overview
+    href: ../integrate/rest-api-overview.md
+  - name: Rate limits
+    href: ../integrate/concepts/rate-limits.md
+  - name: Deprecation of WIT & Test client OM
+    href: ../integrate/concepts/wit-client-om-deprecation.md
+  - name: Migrate code to REST-based .NET Client Libraries
+    href: ../integrate/concepts/migration-guide.md
+  - name: .NET client libraries reference
+    href: /dotnet/api/index?view=azure-devops-dotnet&preserve-view=true
+  - name: Azure DevOps Services REST API >>
+    href: /rest/api/azure/devops/
+  - name: REST APIs for TFS 2015, 2017, and 2018 >>
+    href: /previous-versions/azure/devops/integrate/previous-apis/overview
 - name: Marketplace extensions
   items:
   - name: Extensions for Azure DevOps >>
@@ -71,7 +70,7 @@
   items:
   - name: How to buy Azure DevOps CALs
     href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
-  - name: Billing 
+  - name: Billing
     href: ../organizations/billing/overview.md
   - name: Build Visual Studio extensions
     href: /visualstudio/extensibility/shipping-visual-studio-extensions
@@ -79,4 +78,3 @@
     href: /windows/apps/
   - name: Mobile application development in Microsoft
     href: /azure/mobile-apps/
-

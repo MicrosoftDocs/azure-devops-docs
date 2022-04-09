@@ -9,6 +9,31 @@
       "source_path": "docs/devsecops/index.md",
       "redirect_url": "/devops/devsecops/enable-devsecops-azure-github",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/faqs.md",
+      "redirect_url": "/azure/devops/user-guide/user-guide-faqs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/how-to/uninstall-disable-extensions-tfs.md",
+      "redirect_url": "/azure/devops/marketplace/uninstall-disable-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/set-project-collection-level-permissions.md",
+      "redirect_url": "/azure/devops/organizations/security/change-project-level-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/lookup-organization-owner-admin.md",
+      "redirect_url": "/azure/devopsorganizations/security/request-changes-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/change-individual-permissions.md",
+      "redirect_url": "/azure/devopsorganizations/security/request-changes-permissions",
+      "redirect_document_id": false
     }
   ]
 }

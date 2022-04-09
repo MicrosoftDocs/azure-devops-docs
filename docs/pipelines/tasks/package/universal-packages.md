@@ -8,16 +8,16 @@ manager: angrobe
 ms.author: angrobe
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.date: 01/28/2022
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Universal Package task
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to download, or package and publish Universal Packages.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

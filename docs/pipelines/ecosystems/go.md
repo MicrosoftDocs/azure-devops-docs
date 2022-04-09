@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Build and test Go projects
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Use a pipeline to automatically build and test your Go projects.
 

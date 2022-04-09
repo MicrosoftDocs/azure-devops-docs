@@ -6,8 +6,8 @@ metadata:
   ms.technology: devops-marketplace
   ms.author: chcomley
   author: chcomley
-  ms.topic: troubleshooting
-  monikerRange: '>= tfs-2015'
+  ms.topic: faq
+  monikerRange: '<= azure-devops'
   ms.date: 03/15/2021
 
 
@@ -15,7 +15,7 @@ title: FAQs for acquiring Azure DevOps extensions
 
  
 summary: | 
-  [!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
   Find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions.  
 
@@ -29,9 +29,9 @@ sections:
           A member of the Project Collection Administrators group can install extensions. If you don't have permissions, but you're a project member, 
           you can [request extensions](request-extensions.md) instead.
  
-      - question: How do I find a member of the Project Administrators group?
+      - question: How do I find a member of the Project Collection Administrators group?
         answer: |
-          See [Increase permission levels, find an admin](../organizations/security/lookup-organization-owner-admin.md).  
+          See [Look up a project collection administrator](../organizations/security/look-up-project-collection-administrators.md).  
   
       - question: Why don't I see my organization from the Marketplace install page? 
         answer: |
@@ -51,7 +51,7 @@ sections:
       - question: Why can't I install an extension?
         answer: |
           You can't install extensions for one of the following reasons.  
-          - You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
+          - You must a member of the [**Project Collection Administrators** group](../organizations/security/look-up-project-collection-administrators.md) or are the [**Organization owner**](../organizations/security/look-up-organization-owner.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
           - If you get an "already installed or requested" error check with your Project Collection Administrator, and ask them to assign the extension to you.  
 
       - question: Why can't users access extension features?
@@ -83,8 +83,8 @@ sections:
       - question: Why can't I install extensions for Azure DevOps Server?  (on-premises)
         answer: |
           You can't install extensions for Azure DevOps Server for one of the following reasons:
-          - You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
-          - If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
+          - You must be a member of the **Project Collection Administrators** group or have the **Edit collection-level information** permission set to **Allow** in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
+          - If you get an error that your extension is already installed or requested, check with a member of the **Project Collection Administrators** group and ask them to assign the extension to you. To learn how, see [Request an increase in permission levels](../organizations/security/request-changes-permissions.md).   
  
       - question: Why don't I see the project collection I want? (on-premises)
         answer: |
@@ -141,4 +141,3 @@ additionalContent: |
   - [How to pay for Azure DevOps Server users](../organizations/billing/buy-access-tfs-test-hub.md)
   - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
   - [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)  
-

@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Configure check-in notes
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 

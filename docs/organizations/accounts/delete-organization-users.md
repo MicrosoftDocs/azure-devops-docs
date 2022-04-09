@@ -14,13 +14,13 @@ monikerRange: '>= azure-devops-2019'
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 If users no longer require access to a team, project, or your organization, you can remove their access. Work items that are assigned to the users aren't affected by removing user access.
 
 ## Prerequisites  
 
-- You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+- To remove users, you must be a member of the **Project Collection Administrators** group.  See [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ## Remove users from your organization
 
@@ -150,8 +150,8 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 ## Related articles
 
-- [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
-- [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+- [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md)  
+-[Request an increase in permission levels](../../organizations/security/request-changes-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.yml)
 - [Export a list of users and their access levels](../security/export-users-audit-log.md)

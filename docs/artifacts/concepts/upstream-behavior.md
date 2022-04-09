@@ -3,13 +3,15 @@ title: Configure upstream behavior
 description: Allow or block the consumption of package versions from public registries.
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 02/23/2022
 ms.author: rabououn
 author: ramiMSFT
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Configure upstream behavior
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Upstream sources enables developers to use a single feed to publish and consume packages from Artifact feeds and public registries such as NuGet.org or npmjs.com. To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
@@ -111,7 +113,7 @@ $env:PATVAR = "YOUR_PAT_GOES_HERE"
 The following commands will convert your personal access token to baser64 encoded string and construct the HTTP request header.
 
 ```PowerShell
-$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$PatVar")))
+$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
 $headers = @{
     Authorization = "Basic $token"
 }
