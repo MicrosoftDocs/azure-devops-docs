@@ -14,8 +14,6 @@ monikerRange: 'azure-devops'
 
 # Change application connection & security policies for your organization
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
-
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 Learn how to manage your organization's security policies that determine how applications can access services and resources in your organization. You can access most of these policies in **Organization Settings**.
@@ -54,7 +52,7 @@ To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-
 
 ## Conditional access policies 
 
-Azure Active Directory allows tenants to define which users are allowed to gain access to Microsoft resources through their [Conditional Access Policy (CAP) feature](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). Through these settings, the tenant admin can require members must adhere to any of the following conditions, for example, the user :	
+Azure Active Directory allows tenants to define which users are allowed to gain access to Microsoft resources through their [Conditional Access Policy (CAP) feature](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Through these settings, the tenant admin can require members must adhere to any of the following conditions, for example, the user :	
 - Must be members of a specific security group	
 - Must belong to a certain location and/or network	
 - Must be using a specific operating system	
