@@ -1,5 +1,5 @@
 ---
-title: Auditing Events available for Azure DevOps
+title: Auditing events available for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Learn what events are available through Azure DevOps Auditing.  
 ms.technology: devops-audit
