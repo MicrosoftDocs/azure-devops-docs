@@ -3913,7 +3913,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/2014/dec-02-team-services" data-raw-source="[12 Nov 2014](/previous-versions/azure/devops/2014/dec-02-team-services)">12 Nov 2014</a></td>
+            <td>12 Nov 2014</td>
             <td>Release Management Preview as VSTS service</td>
             <td></td><td>N/A</td>
         </tr>
