@@ -4,6 +4,9 @@
 - name: Create audit streaming
   href: auditing-streaming.md
   displayName: data, process, processing, alert, alerting, Splunk, Event Grid, Azure Monitor Log
+- name: List of audit events
+  href: auditing-events.md
+  displayName: audit, events, list
 - name: Export user list  
   href: ../security/export-users-audit-log.md 
   displayName: access level, account, member, log
