@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 ms.date: 02/07/2022
 ---
 
-# Auditing Events List
+# Auditing events list
 
 > [!NOTE]
 > Auditing is still in public preview.
@@ -317,7 +317,7 @@ The tables below describe the type of events (or actions) that are available for
 | Token.SshUpdateEvent	| Modify	| SSH Key "{DisplayName}" was updated. |
 
 
-## Related Articles
+## Related articles
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
 - [Export audit events](azure-devops-auditing.md#export-auditing-events)
 - [Set up an audit stream](auditing-streaming.md)
