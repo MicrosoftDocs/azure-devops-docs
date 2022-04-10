@@ -660,7 +660,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Create audit streaming](../audit/auditing-streaming.md)
    :::column-end:::
    :::column span="2":::
-      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
+      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [events](../audit/auditing-events.md).
    :::column-end:::
 :::row-end:::
 ---

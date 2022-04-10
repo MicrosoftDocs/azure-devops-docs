@@ -15,7 +15,10 @@ ms.date: 03/30/2021
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-On the Auditing page of your Organization settings, you can access, export, and filter audit logs, which track the many changes that occur within your Azure DevOps organization(s). With these logs, you can use them to meet your organization's compliance and governance goals.
+> [!NOTE]
+> Auditing is still in public preview.
+
+On the Auditing page of your Organization Settings, you can access, export, and filter audit logs, which track the many changes that occur within your Azure DevOps organization(s). With these logs, you can use them to meet your organization's compliance and governance goals.
 
 Audit changes occur whenever a user or service identity within the organization edits the state of an artifact. You may see events logged for any of the following occurrences:
 
@@ -23,31 +26,63 @@ Audit changes occur whenever a user or service identity within the organization 
 - deleted resources
 - branch policy changes
 - auditing log access and downloads
-- and much more...
-
-> [!NOTE]
-> Auditing is currently in a Public Preview for Azure DevOps Services. Auditing isn't available for on-premises deployments. To connect auditing to an on-premises or cloud-based Splunk, make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
-
-During the Public Preview, Auditing will be turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which also ensures that you never miss an actionable event. After Public Preview, Auditing can be toggled on and off by Project Collection Administrators.
+- and much much more...
 
 Events are stored for 90 days, after which they are deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
 
+Auditing events can be accessed through two methods on the Auditing page in your Organization Settings:
+- Through the Auditing logs available under the main Logs tab, and
+- via any Auditing streams set up through the [Streams](auditing-streaming.md) tab.
+
+> [!NOTE]
+> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an [Auditing stream](auditing-streaming.md) from an Azure DevOps Services instance to an on-premises or cloud-based instance of Splunk, but you must make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
+
+
 ## Prerequisites
 
-By default, Project Collection Administrators are the only group that have full access to the auditing feature.
+Auditing is turned off by default for all Azure DevOps Services organizations and can be [toggled on and off](#enable-and-disable-auditing) by Organization Owners and Project Collection Administrators in the *Organization Settings* page.
+By default, Project Collection Administrators are the only group that have full access to the Auditing feature.
 
 ### Audit permissions
 
-- Members of the **Project Collection Administrators** group have full access to all auditing features.
-- Members of the **Project Collection Valid Users** group can view the Auditing page and export audit logs.
+- By default, members of the **Organization Owners** and **Project Collection Administrators** groups have full access to all Auditing features.
+- Specific Audit permissions can be granted to any group via the Security Permissions page in Organization Settings. 
 
 > [!NOTE]  
 > If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages.  To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
-## Access auditing
+## Enable and disable auditing
 
-> [!NOTE]
-> To enable the new user interface for the Organization Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+#### [Preview page](#tab/preview-page)
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+3. Select **Policies** under the **Security** header.   
+4. Toggle the **Log Audit Events** button ON.
+
+   ![Screenshot of Auditing policy enabled.](media/azure-devops-auditing/enable-auditing-policy.png)  
+
+The organization will now have Auditing enabled. You may need to refresh the page to see **Auditing** appear in the sidebar. Audit events will start appearing on Auditing Logs and through any audit streams that have been configured.
+
+5. If you no longer want to receive Auditing events, toggle the **Enable Auditing** button to OFF. When the button is toggled off, the **Auditing** page will no longer appear in the sidebar and the Auditing Logs page will be unavailable. Any audit streams will stop receiving events.
+
+#### [Current page](#tab/current-page)
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+3. Select **Policies** under the **Security** header.   
+4. Toggle the **Log Audit Events** button ON.
+
+   ![Screenshot of Auditing policy enabled.](media/azure-devops-auditing/enable-auditing-policy.png)  
+
+The organization will now have Auditing enabled. You may need to refresh the page to see **Auditing** appear in the sidebar. Audit events will start appearing on Auditing Logs and through any audit streams that have been configured.
+
+5. If you no longer want to receive Auditing events, toggle the **Enable Auditing** button to OFF. When the button is toggled off, the **Auditing** page will no longer appear in the sidebar and the Auditing Logs page will be unavailable. Any audit streams will stop receiving events.
+
+* * *
+
+
+## Access auditing
 
 #### [Preview page](#tab/preview-page)
 
@@ -60,7 +95,7 @@ By default, Project Collection Administrators are the only group that have full 
 
    ![Auditing preview page](media/azure-devops-auditing/access-audit-log-red-box-preview.png)
    
-4. If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so that they can view the auditing pages. Select **Permissions**, and then find the group or users to provide auditing access to.
+4. If you don't see Auditing in Organization settings, then you don't have access to view audit events. Project Collection Administrators group can give permissions to other users and groups so that they can view the auditing pages. To do so, select **Permissions**, and then find the group or users to provide auditing access to.
 
    ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
@@ -81,7 +116,7 @@ The user or group members will now have access to view your organization's audit
 
    ![Screenshot of Auditing view current page](media/azure-devops-auditing/access-audit-log-red-box.png)
 
-4. If you do not see Auditing in Organization settings, then you do not have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing. Select **Security**, and then find the group or users to provide auditing access to.
+4. If you do not see Auditing in Organization settings, then you do not have access to view audit events. Project Collection Administrators group can give permissions to other users and groups so that they can view the auditing pages. Select **Security**, and then find the group or users to provide auditing access to.
 
    ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
@@ -126,44 +161,14 @@ Selecting the information icon displays additional information about what happen
 
 As you look through the audit events, you may find the *Category* and *Area* columns of interest. These columns allow you to sift through to find only the types of events that you are interested in. The following tables are a list of categories and areas, as well as their descriptions:
 
-### Categories
+### List of events
 
-|Category  |Description |
-|---------|---------|
-|Access     | Viewed or opened artifacts in an organization.        |
-|Create     | Newly created artifacts in an organization.        |
-|Delete     | Deleted or removed artifacts from an organization.        |
-|Execute    | Completed processes done within an organization. |
-|Modify     | Changed artifacts, such as a state or property change, made in an organization.        |
-|Rename     | Name changes done on artifacts in an organization.        |
+We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
-### Areas
+For a full list of all events that we currently can emit through the Auditing feature, see the [Auditing Events List](/auditing-events.md).
 
 > [!Note]
-> While auditing is in a public preview, we're working hard to get more areas audited. We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
-
-|Area            |Description |
-|----------------|------------|
-| Auditing       | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
-| Billing        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
-| Checks         | Create, modify, delete, and track usage of checks including approvals on protected resources in Azure Pipelines (YAML only). |
-| Extension      | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
-| Git            | Create, modify, enable, disable, fork, delete and undelete Git repositories in Azure Repos. Bypass PR policies. Change branch policies.   |
-| Group          | Create groups and modify group memberships.          |
-| Library        | Create, modify, delete, and track usage of service connections, variable groups, secure files, and agent pools in Azure Pipelines. |
-| Licensing      | Assign, modify, and remove licensing. Create, modify, and delete group licensing rules.           |
-| Organization   | Create and modify Azure DevOps organization. Link and unlink to Azure Active Directory organizations. |
-| OrganizationPolicy | Add, modify, or remove organization policies.           |
-| Permissions    | Modify or remove permissions and access control lists for users and groups throughout an Azure DevOps organization.           |
-| Pipelines      | Create, modify, and delete Pipelines in Azure Pipelines. Authorize and unauthorize resource for projects and pipelines. Modify pipeline retention settings. Retain and unretain pipeline runs. |
-| Policy         |  Create, modify, and delete policies for a Git repository in Azure Repos.       |
-| Process        | Create, modify, and delete attributes for processes (portfolio backlogs, controls, fields, groups, lists, pages, processes, rules, states, control settings, work items, etc.) in Azure Boards.           |
-| Project        | Create, modify, change visibility of, delete, and restore projects in Azure Boards. Create, modify, and delete Area paths. |
-| Release        | Create, modify, and delete releases and release pipelines in Azure Pipelines. Track deployments and deployment approvals.      |
-| Token          | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events are not currently logged. |
-
-> [!Note]
-> Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit. 
+> Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events (or actions) your organization could emit. 
 
 ## Filter audit log by date and time
 
@@ -193,7 +198,7 @@ The following limitations exist for what can be audited.
 * Azure Active Directory (Azure AD) group membership changes – Auditing Logs include updates to Azure DevOps groups and group membership (when an event Area is "Groups"). However, if you manage membership via Azure AD groups, such additions and removals of users from those Azure AD groups are not audited by Azure DevOps in these logs. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group. 
 * Sign in events – We don't track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD. 
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### Q: What is the DirectoryServiceAddMember group and why is it appearing on the audit log?
 A: The DirectoryServiceAddMember group is a system group used to help manage membership to your Azure DevOps organization. Membership to this system group can be affected by a number of system, user, and administrative actions. As this group is a system group used only for internal processes, customers can disregard audit log entries which capture membership changes to this group. 
