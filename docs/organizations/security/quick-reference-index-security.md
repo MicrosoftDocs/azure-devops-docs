@@ -88,7 +88,7 @@ For project collection and project administrators, learn more about security and
    :::column span="1":::
       - [Security best practices](security-best-practices.md)
       - [Security groups](about-permissions.md#security-group-membership)  
-      - [Security policies](../accounts/change-application-access-policies.md#security-policies)  
+      - [Security policies](about-security-identity.md#application-connection-and-security-policies)  
       - [Security roles](about-security-roles.md)  
       - [Service accounts](about-security-identity.md#accounts)    
       - [Service principal](about-security-identity.md#accounts)  
