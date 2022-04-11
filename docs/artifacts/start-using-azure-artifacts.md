@@ -35,7 +35,7 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 
     :::image type="content" source="media/users-hub-tfs.png" alt-text="Assign user licenses in TFS":::
 
-2. Select **Assign**, enter the user to assign licenses, and then select **Ok.**
+2. Select **Assign**, enter the user to assign licenses, and then select **Ok**
 
    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
    * Ensure that your Visual Studio Enterprise subscribers are assigned [VS Enterprise Access level](../organizations/security/change-access-levels.md).
@@ -46,7 +46,7 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 
 ## Get started with Azure Artifacts
 
-With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need. Select your package type to learn more: 
+With Azure Artifacts you can publish and consume different types of packages. Select your package type to get started: 
 
 - [NuGet](./get-started-nuget.md)
 - [npm](./get-started-npm.md)
@@ -56,16 +56,12 @@ With Azure Artifacts you can publish, consume, and share different types of pack
 
 ## Feature availability
 
-Check out the compatibility table to see if your package type is supported.
-
-| Feature                           | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
+| Package type                      | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
 |-----------------------------------|------------------------| --------------------------------------|  --------------------------------------------|
-| **NuGet**                         | Yes                    | Yes                                   | TFS 2017 and newer                           |
-| **npm**                           | Yes                    | Yes                                   | TFS 2017 Update 1 and newer                  |
-| **NuGet.org upstream source**     | Yes                    | Yes                                   | TFS 2018 Update 2 and newer                  |
-| **Maven**                         | Yes                    | Yes                                   | TFS 2018 and newer                           |
-| **Maven Central upstream source** | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020| Yes           |
-| **Python**                        | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020| Yes           |
+| **NuGet packages**                | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
+| **npm packages**                  | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
+| **Maven packages**                | Yes                    | Yes                                   | TFS 2018                                     |
+| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020| TFS 2018                                |
 | **Universal Packages**            | Yes                    | No                                    | No                                           |
 
 ## Artifacts free tier and upgrade
