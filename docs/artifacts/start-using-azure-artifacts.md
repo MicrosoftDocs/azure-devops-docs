@@ -16,8 +16,6 @@ monikerRange: '<= azure-devops'
 
 Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. Using Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
 
-Azure Artifacts gets billed on a consumption basis, and is free up until 2 GiB of storage. If your organization needs more storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).
-
 ## Prerequisites
 
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
@@ -68,46 +66,51 @@ With Azure Artifacts you can publish and consume different types of packages. Se
 
 Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and will need to either delete some of your existing artifacts, or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
 
-## Organization billing
+## Organization billing settings
 
-Follow the steps outlined below to view your billing settings for your organization 
- 
+Follow the steps outlined below to view your billing settings for your organization:
+
 1. Sign in to your Azure DevOps organization.
- 
-1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**. 
 
-    :::image type="content" source="../media/settings/open-admin-settings-vert.png" alt-text="Access organization settings":::
+1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
 
-1. Select **Billing**. 
+    :::image type="content" source="../media/settings/open-admin-settings-vert.png" alt-text="A screenshot showing how to access the organization settings":::
 
-    :::image type="content" source="../organizations/billing/media/shared/select-billing-organization-settings.png" alt-text="Organization settings - billing":::
- 
-1. View your Artifacts consumption and usage limit.
+1. Select **Billing**.
 
-    :::image type="content" source="media/billing-settings.png" alt-text="Artifacts billing settings":::
+    :::image type="content" source="../organizations/billing/media/shared/select-billing-organization-settings.png" alt-text="A screenshot showing how to access the billing settings":::
+
+1. View your Artifacts tier and usage limit.
+
+    :::image type="content" source="media/billing-settings.png" alt-text="A screenshot showing Artifacts tier and usage limit":::
+
+## View Artifacts storage consumption
+
+- [Organization-level storage](./artifact-storage.md#organization-level-storage)
+- [Project-level storage](./artifact-storage.md#project-level-storage)
 
 ## FAQs
 
 ### Q: Which artifacts count toward my total billed storage?
 
-A: Currently, you get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources.
+A: You get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources. However,
 
-You don't get billed for the storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching.
+you don't get billed for Pipeline Artifacts, and Pipeline Caching.
 
 > [!NOTE]
-> Packages that are placed in the recycle bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the recycle bin and delete them manually.
+> Packages in the recycle bin still count as part of your storage consumption. Those packages will be deleted permanently after 30 days but if you want to delete them sooner, you can navigate to your recycle bin and delete them manually.
 
 ### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
 
-A: 1 GiB is currently our lowest granularity, so you most likely haven't reached 1 GiB yet. 
+A: 1 GiB is currently our lowest granularity, so you most likely haven't reached 1 GiB yet.
 
 ### Q: How can I control how many days Artifacts are kept?
 
 A: You can set up the retention policies to delete packages automatically. See [how to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
 
-### Q: How can I delete my Artifacts? 
+### Q: How can I delete specific packages?
 
-A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details. 
+A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details.
 
 ### Q: How long does it take for deleted Artifacts to affect the amount of billed storage?
 
