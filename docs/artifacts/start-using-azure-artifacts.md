@@ -112,23 +112,23 @@ A: You can set up the retention policies to delete packages automatically. See [
 
 A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details.
 
-### Q: How long does it take for deleted Artifacts to affect the amount of billed storage?
+### Q: How long does it take for deleted Artifacts to reflect in the amount of billed storage?
 
 A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it may take up to 48 hours. If you're blocked from uploading Artifacts, as a workaround you can temporarily increase your usage level, then reduce the level back once the storage metrics are updated.
 
-The `used` column on the Billing page of your Organization gets updated once per day. When you delete an Artifact, it may not reflect immediately on your billing page. The Artifact Storage page however gets updated more frequently, so you may see a small discrepancy between the two.  
+The **used** column on the Billing page of your Organization gets updated once a day. When you delete an Artifact, it may not reflect immediately on your billing page. The Artifact Storage page however gets updated more frequently, so you may see a small discrepancy between the two pages.  
 
 :::image type="content" source="media/settings-vs-storage.png" alt-text="Artifacts billing settings vs Artifacts storage data":::
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier of storage (< 2 GiB). If you have above 2 GiB of used storage, you can only read packages. You can't publish new packages until you delete some of your older packages to lower your usage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
+A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you delete some of your older packages to lower your storage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
 ::: moniker-end
 
 ## Related articles
 
-- [Artifacts storage consumption](./artifact-storage.md)
+- [View storage usage](./artifact-storage.md)
 - [Feeds overview](./concepts/feeds.md)
 - [Manage permissions](./feeds/feed-permissions.md)
 - [Feed views](./concepts/views.md)
