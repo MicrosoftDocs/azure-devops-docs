@@ -1,12 +1,12 @@
 ---
 title: Azure Artifacts overview
-description: Learn about Azure Artifacts and how to set up billing and view your consumption
+description: Learn about Azure Artifacts offering
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: chcomley
-ms.date: 08/13/2021
+ms.date: 04/11/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,19 +14,14 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to share and consume packages from different feeds and public registries. Packages can be shared within the same team, the same organization, and even publicly. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
+Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. Using Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
 
 Azure Artifacts gets billed on a consumption basis, and is free up until 2 GiB of storage. If your organization needs more storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).
 
-Azure Artifacts comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019 and 2020, and TFS 2017 and 2018.
-
 ## Prerequisites
 
-- [Allow IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
-- If you plan to use more than the free 2 GiB storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
-
-> [!NOTE]
-> Azure Artifacts license is included with every basic license for TFS 2017, 2018, and Azure DevOps Server 2019 and 2020.
+- [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
+- [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) if you plan to use more than the free 2 GiB storage.
 
 ::: moniker range="tfs-2018"
 
