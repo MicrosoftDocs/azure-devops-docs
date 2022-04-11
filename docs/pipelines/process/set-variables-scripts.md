@@ -17,7 +17,7 @@ You'll use the `task.setvariable` logging command to set variables in [PowerShel
 
 ## About `task.setvariable`
 
-When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable will only be available to tasks in the same stage by default. If you add the parameter `isoutput`, the syntax to call your variable changes. See [Set an output variable in the same job](#set-an-output-variable-in-the-same-job).
+When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable will only be available to tasks in the same stage by default. If you add the parameter `isoutput`, the syntax to call your variable changes. See [Set an output variable for use in the same job](#set-an-output-variable-for-use-in-the-same-job).
 
 # [Bash](#tab/bash)
 
