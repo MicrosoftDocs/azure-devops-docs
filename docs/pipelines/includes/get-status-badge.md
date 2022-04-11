@@ -19,7 +19,7 @@ To copy the status badge to your clipboard:
 
 1. In Azure Pipelines, go to the **Pipelines** page to view the list of pipelines. Select the pipeline you created in the previous section.
 
-2. In the upper-right corner, select the three dots to expand the dropdown menu.
+2. Select :::image type="icon" source="../../media/icons/more-actions.png":::, and then select **Status badge**.
 
 3. Select **Status badge**.
 
