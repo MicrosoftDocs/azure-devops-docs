@@ -31,7 +31,7 @@ Most work item type customizations are made to the work item type XML definition
 - [Add or modify a field to an existing work item type](#modify-field)
 - [Add a custom work item type, modify a work item type](#add-wit)
 - [Change the workflow (states, reasons, transitions)](#modify-workflow)
-- [Modify the work item form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout.md?view=tfs-2015&preserve-view=true)
+- [Modify the work item form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
 
 #### ProcessConfiguration definition  
 
@@ -316,4 +316,3 @@ Other related topics or resources:
 - [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  
 - [Customize cards on boards](../boards/boards/customize-cards.md)  
-
