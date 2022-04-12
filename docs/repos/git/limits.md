@@ -44,7 +44,7 @@ If your repository exceeds this size consider using [Git-LFS](manage-large-files
 
 Azure DevOps continuously reduces the overall size and increases the efficiency of Git repositories by consolidating similar files into packs. 
 For repositories nearing 250 GB, the internal limit on pack files can be reached before the optimization process completes.
-Any user attempting to write to the database will see the following error message: “The Git pack file limit has been reached, write operations are temporarily unavailable while the repository is updated.“ 
+Any user attempting to write to the repository will see the following error message: “The Git pack file limit has been reached, write operations are temporarily unavailable while the repository is updated.“ 
 Write operations will be restored immediately after the job completes.
 
 ## Push size
