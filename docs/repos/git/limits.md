@@ -42,8 +42,8 @@ size-garbage: 0 bytes
 We recommend keeping your repository below 10GB for optimal operation. 
 If your repository exceeds this size consider using [Git-LFS](manage-large-files.md), [Scalar](https://github.com/microsoft/Scalar), or [Azure Artifacts](../../artifacts/index.yml) to refactor your development artifacts.
 
-Azure DevOps continuously reduces the overall size and increases the efficiency of the repository by consolidating similar files into packs. 
-For repositories nearing 250 GB, it is possible that the job responsible for optimizing the files cannot complete before the internal limit on number of files is reached. 
+Azure DevOps continuously reduces the overall size and increases the efficiency of Git repositories by consolidating similar files into packs. 
+For repositories nearing 250 GB, the internal limit on pack files can be reached before the optimization process completes.
 Any user attempting to write to the database will see the following error message: “The Git pack file limit has been reached, write operations are temporarily unavailable while the repository is updated.“ 
 Write operations will be restored immediately after the job completes.
 
