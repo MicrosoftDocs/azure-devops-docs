@@ -21,7 +21,7 @@ Learn how to manage your organization's security policies that determine how app
 ## Prerequisites
 
 To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+[How do I find the organization Owner?](/azure/devops/organizations/security/request-changes-permissions)
 
 [!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 
@@ -90,4 +90,4 @@ Another issue we've found is that users may be accessing the Azure AD login page
 - [Restrict users from creating new organizations with Azure AD policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
 - [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access)
-- [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps)
+- [Detailed instructions and requirements for Conditional Access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
