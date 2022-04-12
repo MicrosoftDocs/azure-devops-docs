@@ -92,7 +92,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="2":::
    - [Add or modify a work item type](add-modify-wit.md)  
    - [Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
-   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout.md?view=tfs-2015&preserve-view=true)  
+   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)  
    - [Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)  
    - [Specify the WIT icon](xml/process-configuration-xml-element.md)  
    - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)   
