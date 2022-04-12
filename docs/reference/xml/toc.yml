@@ -109,7 +109,7 @@
     - name: Add web content to a form
       href: /previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form?view=tfs-2015&preserve-view=true
     - name: Change the work item form layout
-      href: /previous-versions/azure/devops/reference/xml/change-work-item-form-layout.md?view=tfs-2015&preserve-view=true
+      href: /previous-versions/azure/devops/reference/xml/change-work-item-form-layout
     - name: Design the work item form
       href: /previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true
     - name: Add the Attachments control
