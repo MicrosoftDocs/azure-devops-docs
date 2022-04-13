@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/07/2022
+ms.date: 04/13/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -29,7 +29,7 @@ You can create and manage your PATs through one of the following ways:
 * the user interface in your user settings, which is described in detail in this article
 * through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md)
 
-To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
+To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time. For information about revoking leaked PATs, see [FAQ - What happens if I accidentally check my PAT into a public repository on GitHub?](#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github)
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
@@ -53,6 +53,8 @@ A: No. You can use basic auth with most Azure DevOps REST APIs, but [organizatio
 
 ### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
 
-A: Azure DevOps scans for PATs checked into public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event to your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage affected users to mitigate immediately by [rotating or revoking the leaked PAT](use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
+A: Azure DevOps scans for PATs checked into public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event to your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage affected users to mitigate immediately by [rotating or revoking the leaked PAT](use-personal-access-tokens-to-authenticate.md#revoke-a-pat). 
+
+For more information about managing the policy, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically).
 
 ::: moniker-end
