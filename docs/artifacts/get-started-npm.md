@@ -137,7 +137,11 @@ To authenticate with Azure Artifacts, we have to create a personal access token 
 
 ::: moniker-end
 
+* * * 
+
 ::: moniker range="tfs-2018"
+
+## Connect to feed
 
 1. Select **Packages**, and then select **Connect to feed**.
 
@@ -148,8 +152,6 @@ To authenticate with Azure Artifacts, we have to create a personal access token 
     :::image type="content" source="./media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how generate credentials":::
 
 ::: moniker-end
-
-* * * 
 
 ## Publish packages
 
