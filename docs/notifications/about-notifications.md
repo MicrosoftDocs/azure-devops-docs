@@ -130,7 +130,8 @@ The preferred email address for your organization profile gets notifications, by
 > [!NOTE]
 > Your preferred email address applies across all of your organizations and cannot be changed on a per-organization basis.
 
-::: moniker range="< azure-devops"
+::: moniker range=" < azure-devops"
+
 
 ## Integrating with other services
 

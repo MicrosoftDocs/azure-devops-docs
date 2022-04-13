@@ -78,6 +78,10 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. Sign in to your project (```https://dev.azure.com/{yourorganization}```).
 
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+=======
 1. Open your **User settings**, and then select **Notification settings** from the resulting list.
 
    ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
@@ -93,6 +97,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 
 ::: moniker range="tfs-2018"
+>>>>>>> 084938bf86cae25eab3c5c96908ccfe02ab5b427
 
 ## View and edit all notification subscriptions
 
@@ -124,10 +129,11 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker-end
 
-
+::: moniker range=">= tfs-2018"
 
 A notification subscription can be only for you. Or, if you're a team administrator you can ensure that it's shared by everyone on the team.
 
+::: moniker-end
 ## Add a custom notification subscription
 
 With custom personal notification subscriptions, you can define precise criteria for the events that you want to receive notifications. A custom notification subscription can notify you about any event. Default notification subscriptions differ, as they only notify users or groups directly associated with an event.
@@ -185,6 +191,7 @@ With custom personal notification subscriptions, you can define precise criteria
 ::: moniker-end  
 
 ***
+
 ::: moniker range="> tfs-2018 < azure-devops"
 
 1. From your **Notifications** page, select **New subscription**.
