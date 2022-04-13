@@ -165,7 +165,7 @@ As you look through the audit events, you may find the *Category* and *Area* col
 
 We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
-For a full list of all events that we currently can emit through the Auditing feature, see the [Auditing Events List](/auditing-events.md).
+For a full list of all events that we currently can emit through the Auditing feature, see the [Auditing Events List](/azure/devops/organizations/audit/auditing-events).
 
 > [!Note]
 > Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events (or actions) your organization could emit. 
