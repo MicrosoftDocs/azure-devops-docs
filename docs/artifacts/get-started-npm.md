@@ -5,7 +5,7 @@ ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
-ms.date: 02/14/2022
+ms.date: 04/13/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -49,7 +49,7 @@ A feed is an organizational construct that allows users to store their packages 
 
 [!INCLUDE [](includes/create-feed.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Set up your .npmrc files
 
@@ -67,7 +67,11 @@ We recommend having two .npmrc files. The first one should be placed in the same
 1. Follow the instructions in the **Project setup** to set up your project.
 
     :::image type="content" source="media/npm-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project":::
-        
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+       
 ### Set up authentication on your development machine
 
 > [!IMPORTANT]
@@ -83,9 +87,9 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 }
 ```
 
-#### [Linux/macOS](#tab/Linux/)
+#### [Other](#tab/Other/)
 
-`vsts-npm-auth` is not supported in Linux/macOS. In order to authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
+To authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
 
 1. Copy the following code snippet to your .npmrc file.
 
