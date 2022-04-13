@@ -29,7 +29,7 @@ You can create and manage your PATs through one of the following ways:
 * the user interface in your user settings, which is described in detail in this article
 * through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md)
 
-To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time. For information about revoking leaked PATs, see [FAQ - What happens if I accidentally check my PAT into a public repository on GitHub?](#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github)
+To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
