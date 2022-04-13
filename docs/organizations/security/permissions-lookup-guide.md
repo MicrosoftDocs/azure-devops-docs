@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azure-devops'
-ms.date: 03/09/2022
+ms.date: 04/04/2022  
 ---
 
 # Permissions lookup guide for Azure DevOps
@@ -87,7 +87,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Area path (Object)](set-permissions-access-work-tracking.md)
    - [Azure Artifacts](../../artifacts/feeds/feed-permissions.md)
    ::: moniker-end
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
    - [Administer build permissions (Object)](../../pipelines/policies/permissions.md)
    - [Administer release permissions (Object)](../../pipelines/policies/permissions.md)
    - [Administer task group permissions (Object)](../../pipelines/policies/permissions.md)
@@ -114,7 +114,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Bypass policies when pushing (Object)](../../repos/git/branch-permissions.md) 
    - [Bypass rules on work item updates (Project)](change-project-level-permissions.md)
    ::: moniker-end
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
    - [Branches, Git (Object)](../../repos/git/branch-permissions.md)
    - [Branches, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Build pipelines (Object)](../../pipelines/policies/set-permissions.md)
@@ -145,7 +145,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Contribute (Query, Object)](set-permissions-access-work-tracking.md#work-item-queries)
    - [Customize process](set-permissions-access-work-tracking.md#process-permissions)
    ::: moniker-end
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
    - [Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    - [Collection-level information](change-organization-collection-level-permissions.md)
    - [Configure Agile tools (Team)](../settings/manage-teams.md)
@@ -178,7 +178,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)
    - [Destroy builds (Object)](../../pipelines/policies/permissions.md)
    ::: moniker-end
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
    - [Dashboards, manage (Team)](../../report/dashboards/dashboard-permissions.md)
    - [Delete build pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Delete builds (Object)](../../pipelines/policies/permissions.md)
@@ -218,7 +218,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Events (Collection)](change-organization-collection-level-permissions.md)
    - [Extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)
    ::: moniker-end
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
    - [Edit build definition (Object)](../../pipelines/policies/permissions.md)
    - [Edit build quality (Object)](../../pipelines/policies/permissions.md)
    - [Edit collection-level information (Collection)](change-organization-collection-level-permissions.md)
@@ -245,7 +245,7 @@ Values in parenthesis indicate what level the permission is managed:
    - [Library (Object, Role)](about-security-roles.md#library-asset-security-roles-variable-groups-and-secure-files)
    - [Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    ::: moniker-end
-   ::: moniker range=">= tfs-2017 < azure-devops-2019"
+   ::: moniker range="< azure-devops-2019"
    - [Feeds](../../artifacts/feeds/feed-permissions.md) 
    - [Force push (rewrite history, delete branches and tags) (Git branch, Object)](../../repos/git/branch-permissions.md)
    - [Git branch (Object)](../../repos/git/branch-permissions.md)
@@ -256,18 +256,6 @@ Values in parenthesis indicate what level the permission is managed:
    - [Library (Object, Role)](about-security-roles.md#library-asset-security-roles-variable-groups-and-secure-files)
    - [Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
    ::: moniker-end
-   ::: moniker range="<= tfs-2015"
-   - [Feeds](../../artifacts/feeds/feed-permissions.md)
-   - [Field, delete (Collection)](change-organization-collection-level-permissions.md)
-   - [Git branch (Object)](../../repos/git/branch-permissions.md)
-   - [Inherited process (Object)](set-permissions-access-work-tracking.md)
-   - [Iteration paths (Object)](set-permissions-access-work-tracking.md)
-   - [Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)
-   - [Labels, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   - [Library (Object, Role)](../../pipelines/policies/set-permissions.md)
-   - [Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)
-   ::: moniker-end
-
    :::column-end:::
    :::column span="1":::
 

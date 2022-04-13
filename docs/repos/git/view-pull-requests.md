@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 11/02/2021
+ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -47,7 +47,7 @@ There are several ways to list, filter, view, and open PRs for a project.
 
 ::: moniker range=">= azure-devops-2020"
 
-- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+- In Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Manage PRs you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
 
@@ -87,17 +87,8 @@ Manage PRs you own or are assigned to with the **Pull Requests** tab in the **Co
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2017" 
 
-Select **Active** to show all active PRs for the current repo.
-
-Select **Completed** or **Abandoned** to bring up a history of closed PRs.
-
-![Viewing completed and abandoned PRs in Azure Repos.](media/view-pull-requests/pr-status-widget.png)
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can view all of your PRs in your organization, across all projects, by choosing **My pull requests** from the **Projects** page.
 
@@ -122,7 +113,7 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az-repos-pr-list).
 
@@ -187,13 +178,7 @@ ID    Created     Creator              Title                                    
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-
-::: moniker-end
-
-
 
 ***
 
@@ -253,7 +238,7 @@ From the Team Explorer **Pull Requests** view:
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can use several [az repos pr list](/cli/azure/repos/pr#az-repos-pr-list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
 
@@ -267,12 +252,7 @@ az repos pr list --creator "My Name" --status all --top 1
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-
-::: moniker-end
-
 
 
 ***
@@ -307,7 +287,7 @@ Starting with Visual Studio 2017 Update 6, you can check out a PR's source branc
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 To show the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az-repos-pr-show) with the required `--id` parameter. To open the PR in your browser, use `--open`.
 
@@ -371,13 +351,7 @@ az repos pr checkout --id 21
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-
-::: moniker-end
-
-
 
 ***
 

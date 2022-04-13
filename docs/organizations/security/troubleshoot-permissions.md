@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/29/2021
+ms.date: 04/04/2022
 --- 
 
 # Troubleshoot access and permission issues
@@ -137,7 +137,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1.	Go to the Security page for the project that the user is having access problems.
 2.	Enter their name into the box in the upper left-hand corner.

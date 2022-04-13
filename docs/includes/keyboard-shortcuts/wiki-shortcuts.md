@@ -1,20 +1,19 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 
 <a id="wiki-shortcuts"></a>
 
-::: moniker range=">= tfs-2018"
 
 You can use the following keyboard shortcuts when [managing or editing Wiki pages](../../project/wiki/add-edit-wiki.md). To view the valid shortcuts, enter **?** from a **Wiki** page. 
 
-::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
-> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2018.2 and later versions.  
+> The following shortcuts are available from the web portal for TFS 2018.2 and later versions.  
 
 ::: moniker-end
 
@@ -57,7 +56,7 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 
 :::row:::
@@ -90,7 +89,6 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
       **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close 
    :::column-end:::
 :::row-end:::
-
 
 
 ::: moniker-end

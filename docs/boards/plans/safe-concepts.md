@@ -241,7 +241,7 @@ For details on supported Markdown features, see the following articles.
 
 <!---
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![SAFe® roles map to a hierarchy of teams](media/safe-roles-to-vso-roles.png)  
 
@@ -260,7 +260,7 @@ For details on supported Markdown features, see the following articles.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]  
 > The [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) is supported on TFS 2018 and later versions. 
@@ -268,7 +268,7 @@ For details on supported Markdown features, see the following articles.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]  
 > The Project Wiki is available with TFS 2018 and later versions. 
 ::: moniker-end

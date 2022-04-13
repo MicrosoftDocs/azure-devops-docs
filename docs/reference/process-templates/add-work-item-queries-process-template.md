@@ -7,7 +7,7 @@ ms.assetid: 74f21c5c-76a0-4b0f-9cdf-d599f7a08eeb
 ms.author: kaelli
 ms.topic: reference
 monikerRange: '< azure-devops' 
-ms.date: 04/11/2019
+ms.date: 04/04/2022
 ---
 
 
@@ -27,7 +27,7 @@ Work item queries specify criteria for generating a list of work items, such as 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!IMPORTANT]  
 > The default process templates define several queries which differ based on the process&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md). Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
@@ -42,7 +42,9 @@ Work item queries specify criteria for generating a list of work items, such as 
  For information about how to assign query permissions to groups, see [Control access to functional areas](control-access-to-functional-areas.md). For information about how to create query folders, see [Define objects for tracking work items](define-objects-track-work-items-plug-in.md).  
   
 <a name="create"></a> 
-##  Create a work item query (.wiq) file 
+
+##  Create a work item query (.wiq) file
+ 
  Each query definition must be specified in its own file with an extension of .wiq, using the **WorkItemQuery** parent element, and conform to the schema that is defined in the wiq.xsd file.   
   
  The following example shows the high-level syntax structure that defines a work item query:  

@@ -7,8 +7,8 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 02/16/2021
---- 
+ms.date: 04/04/2022
+---
 
 # About settings for users, teams, projects, or organizations
 
@@ -107,27 +107,13 @@ Individual contributors can set their user preferences, enable features that are
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 :::row:::
    :::column span="1":::
       **Authentication**
    :::column-end:::
    :::column span="2":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
-      - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
-   :::column-end:::
-   :::column span="2":::
-      For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="tfs-2015"
-:::row:::
-   :::column span="1":::
-      **Authentication**
-   :::column-end:::
-   :::column span="2":::
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
    :::column span="2":::
@@ -148,7 +134,6 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
       **Notifications**
@@ -163,7 +148,6 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 
 <a id="team" />
 
@@ -198,7 +182,6 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
      **Boards, Team configuration**
@@ -216,26 +199,6 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range="tfs-2013"
-:::row:::
-   :::column span="1":::
-      **Boards, Team configuration**
-   :::column-end:::
-   :::column span="2":::
-      - [Show bugs on backlogs & boards](show-bugs-on-backlog.md)
-      - [Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-      - [Configure area paths](set-area-paths.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-      - [Select active iteration paths (sprints)](set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-      - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-   :::column-end:::
-   :::column span="2":::
-      For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md) and [WIP limits](../../boards/boards/wip-limits.md). 
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range=" >= tfs-2017"
 :::row:::
    :::column span="1":::
       **Dashboards**
@@ -249,21 +212,6 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=" tfs-2015"
-:::row:::
-   :::column span="1":::
-      **Dashboards**
-   :::column-end:::
-   :::column span="2":::
-      - [Create team dashboards](../../report/dashboards/dashboards.md)
-   :::column-end:::
-   :::column span="2":::
-      New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 :::row:::
    :::column span="1":::
       **Notifications**
@@ -276,8 +224,6 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column-end:::
 :::row-end:::
 ---
-
-
 
 
 <a id="project" />
@@ -302,7 +248,7 @@ From the administrative **Project settings** page, you can configure settings av
 ![Screenshot of Project settings page, Azure DevOps Server versions.](media/about/project-settings-server-2020.png)  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 **Project-level settings**  
 From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
@@ -381,7 +327,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
       **Security**
@@ -404,27 +349,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=" tfs-2013"
-:::row:::
-   :::column span="1":::
-      **Security**
-   :::column-end:::
-   :::column span="2":::
-      - [Add user to a project](../security/add-users-team-project.md)
-      - [Add a team administrator](add-team-administrator.md)
-      - [Request an increase in permission levels](../security/request-changes-permissions.md)
-      - [Look up a project administrator](../security/look-up-project-administrators.md)
-      - [Change project-level permissions](../security/change-project-level-permissions.md)
-      - [Grant or restrict permissions to select tasks](../security/restrict-access.md)
-      - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md)
-   :::column-end:::
-   :::column span="2":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 :::row:::
    :::column span="1":::
       **Notifications**
@@ -437,7 +361,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=" >= tfs-2017"
 :::row:::
    :::column span="1":::
       **Service hooks**
@@ -462,7 +385,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="1":::
       **Boards, Project configuration**
@@ -476,7 +398,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=" >= tfs-2015"
 :::row:::
    :::column span="1":::
       **Build and release (Agent Pools, Release)**
@@ -492,7 +413,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="1":::
       **Repos, Code version control**
@@ -509,7 +429,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=" >= tfs-2018"
 :::row:::
    :::column span="1":::
       **Test**
@@ -524,23 +443,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=" <= tfs-2017"
-:::row:::
-   :::column span="1":::
-      **Test**
-   :::column-end:::
-   :::column span="2":::
-      - [Manage test-related permissions at project level](../security/change-project-level-permissions.md)
-      - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
-   :::column-end:::
-   :::column span="2":::
-      Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range=" >= tfs-2018"
 :::row:::
    :::column span="1":::
       **Wiki**
@@ -555,22 +457,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=" tfs-2015 || tfs-2017"
-:::row:::
-   :::column span="1":::
-      **Wiki**
-   :::column-end:::
-   :::column span="2":::
-      - [Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
-   :::column-end:::
-   :::column span="2":::
-      To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. For more information, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range=" >= tfs-2015"
 :::row:::
    :::column span="1":::
       **Extensions**
@@ -583,7 +469,6 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="1":::
       **Team configuration**
@@ -654,7 +539,7 @@ From the administrative page for a collection, you can configure the settings sh
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 **Collection-level settings**  
 From the administrative page for a collection, you can configure the settings shown in the following image and listed in the following table. 
@@ -775,7 +660,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Create audit streaming](../audit/auditing-streaming.md)
    :::column-end:::
    :::column span="2":::
-      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
+      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [events](../audit/auditing-events.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -806,7 +691,6 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
       **Extensions**
@@ -822,7 +706,6 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -894,7 +777,6 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1":::
       **Pipelines**<br/>**Build and release**
@@ -910,23 +792,6 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=" tfs-2015 || tfs-2017"
-:::row:::
-   :::column span="1":::
-      **Build and release**
-   :::column-end:::
-   :::column span="2":::
-      - [Set retention policies](../../pipelines/policies/retention.md)
-      - [Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)
-      - [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
-   :::column-end:::
-   :::column span="2":::
-     You manage resources that support CI/CD operations for all projects through the **Agent pools** page.
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::

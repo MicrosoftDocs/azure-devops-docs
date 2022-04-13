@@ -5,12 +5,12 @@ ms.topic: reference
 ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1
 ms.custom: seodec18
 ms.date: 04/14/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Delete Files task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to delete files or folders from the agent working directory.
 

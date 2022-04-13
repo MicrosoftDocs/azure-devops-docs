@@ -240,7 +240,7 @@ To learn more about each page, see the following articles.
 :::row-end:::
  
 
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Reports 
 
@@ -252,22 +252,6 @@ The **Reports** page opens the [Reporting Services report site](/previous-versio
 If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-## Reports and Documents  
-
-> [!NOTE]  
-> Some pages, such as **Reports** and **Documents**, only appear when an on-premises TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
-
-The **Reports** page opens the [Reporting Services report site](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
-
-From the **Documents** page, you can [open project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) and [manage documents and document libraries](/previous-versions/azure/devops/report/sharepoint-dashboards/manage-documents-and-document-libraries). This page appears only if your project has been configured with a SharePoint Products portal.
-
-If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
-
-::: moniker-end
-
 
 ## Settings  
 

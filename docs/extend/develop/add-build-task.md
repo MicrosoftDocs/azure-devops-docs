@@ -5,7 +5,7 @@ ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.technology: devops-ecosystem
 ms.custom: freshness-fy22q3
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 date: 03/07/2022
@@ -13,7 +13,7 @@ date: 03/07/2022
 
 # Add a custom pipelines task extension
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps.
 

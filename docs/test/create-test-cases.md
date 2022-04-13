@@ -7,14 +7,14 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 11/04/2021
 ---
 
 
 # Create manual test cases
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 <a name="test-cases"></a>
 

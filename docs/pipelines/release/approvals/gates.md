@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
 ms.date: 08/24/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Release deployment control using gates
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Gates allow automatic collection of health signals from external services, and then
 promote the release when all the signals are successful at the same time or stop the

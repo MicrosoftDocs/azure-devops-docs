@@ -10,7 +10,7 @@ monikerRange: '= azure-devops'
 
 # Cache task
 
-**Azure DevOps Services**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
 > This task is only available in Azure DevOps Services.

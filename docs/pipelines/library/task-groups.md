@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 04/02/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Task groups for builds and releases (classic)
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -85,8 +85,6 @@ to change each one individually.
 
 6. Save your updated pipeline.
 
-::: moniker range="> tfs-2017"
-
 ## Manage task groups
 
 All the task groups you create in the current project are listed in
@@ -115,10 +113,6 @@ All the variable parameters of the task group will show up as mandatory paramete
 * In the **References** tab you can expand lists of all the build and release pipelines,
   and other task groups, that use (reference) this task group.
   This is useful to ensure changes do not have unexpected effects on other processes.
-
-::: moniker-end
-
-::: moniker range="> tfs-2018"
 
 ## Create previews and updated versions of task groups
 
@@ -183,8 +177,6 @@ However, if your task group update is not a breaking change but you would like t
 1.	Validate this new draft task group in your test pipeline and once you are confident, go back to your main task group and do the same changes and save it directly. This will be taken as minor version update.
 1.	The new changes will now show up in all the pipelines where this task group is used.
 1.	Now you can delete your draft task group.
-
-::: moniker-end
 
 ## Related topics
 

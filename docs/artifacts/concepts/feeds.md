@@ -4,13 +4,13 @@ description: Learn about Artifacts feeds and the difference between project-scop
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 03/03/2022
-monikerRange: '>= tfs-2017'
+ms.date: 04/07/2022
+monikerRange: '<= azure-devops'
 ---
 
 # What are feeds?
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Artifacts Feeds are organizational constructs that allow you to store, manage, and group your packages and control who to share it with. Feeds are not package-type dependent. You can store all the following package types in a single feed: npm, NuGet, Maven, Python, and Universal packages. 
 
@@ -35,6 +35,9 @@ There some important things to note regarding public feeds:
 * Public feeds aren't intended as a replacement for existing package management platforms (NuGet.org, npmjs.com, etc.).
 * Public feeds cannot have upstream sources.
 * Public users cannot currently download universal packages. All other package types are supported for public access.
+
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
 
 ## Create public feeds
 

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2022
+ms.date: 04/04/2022
 ---
 
 # Customize your work tracking experience 
@@ -259,7 +259,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
       Use [**az boards** command-line tools](../cli/quick-reference.md#azure-boards) to edit projects and teams and list information
@@ -366,10 +366,10 @@ The following table summarizes the differences between the three supported proce
 	- Work item queries  
 	- Security groups and permissions   
 	- Permissions and access to functional areas such as version control and build 
-	::: moniker range=">= tfs-2017 < azure-devops-2020"
+	::: moniker range="< azure-devops"
 	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update). 
 	::: moniker-end
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="azure-devops"
 	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
 	::: moniker-end
 4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 and later versions, including Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
@@ -404,9 +404,7 @@ To learn more about project collections, see [Manage project collections](/azure
 Several work item types support the test experience within the web portal **Test** pages and Test Manager client. For an Inherited process, you can customize Test Plan, Test Suite, and Test Case, work item types as you would any other work item type. For an On-premises XML process, you can customize all test-related work item types&mdash;Test Plan, Test Suite, Test Case, Shared Steps, and Shared Parameters&mdash;as you would any other work item type. 
 ::: moniker-end
 
-
-
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 Several work item types support the test experience within the web portal **Test** pages and Test Manager client. You can customize these work item types&mdash;Test Plan, Test Suite, Test Case, Shared Steps, and Shared Parameters&mdash;as you would any other work item type. 
 ::: moniker-end
 

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '< azure-devops' 
-ms.date: 01/20/2017
+ms.date: 04/04/2022
 ---
 
 # Provide help text, hyperlinks, or web content on a work item form
@@ -189,44 +189,9 @@ The following example shows how you can embed the content from a Web page by pro
       </WebpageControlOptions>
 </Control>  
 ```  
-
-<a name="ProcGuidance"></a> 
-
-::: moniker range="<= tfs-2017"
-
-##  Embed process guidance  
-
-To make process guidance available on the work item form, you may want to add a tab that contains information about the workflow and usage of the work item type. You can do this by using the `Type` attribute `WebpageControl` option. This option provides support for embedding rich formatted text and images into the form by using the `WebpageControlOptions` and `Content` child elements.  
-
-> [!NOTE]   
-> The `TabGroup` and `Tab` elements are deprecated in the new work item form. 
-
-```xml
-<FORM>  
-. . .  
-<TabGroup>  
-. . .   
-      <Tab Label="Process Guidance">  
-      <Group>  
-         <Column PercentWidth="100">  
-               <Control Type="WebpageControl">  
-                 <WebpageControlOptions>  
-                       <Content>  
-                       <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
-                  </Content>  
-                  </WebpageControlOptions>  
-               </Control>  
-         </Column>  
-      </Group>  
-      </Tab>  
-. . .  
-</TabGroup>  
-. . .  
-</FORM>  
-```  
-::: moniker-end
+ 
 
 ## Related articles
 
--  [Design the work item form](design-work-item-form.md)   
+-  [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)   
 -  [Customizing Project Tracking Data, Forms, Workflow, and Other Objects](../customize-work.md)

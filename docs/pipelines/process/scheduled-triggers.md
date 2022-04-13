@@ -6,14 +6,14 @@ ms.author: sdanie
 author: steved0x
 ms.date: 02/12/2021
 ms.custom: contperf-fy21q3
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Configure schedules for pipelines
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -135,9 +135,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -154,15 +154,9 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
 
 ::: moniker-end
 
@@ -212,9 +206,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -236,17 +230,12 @@ In this example, the classic editor scheduled trigger has two entries, which pro
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-
-![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
-
-::: moniker-end
 
 #### Example: Nightly build with different frequencies
 
@@ -266,21 +255,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-**TFS 2017.3 through TFS 2018**
 
 ![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-
-**TFS 2017.1 and older versions**
-
-![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
-
-::: moniker-end
 
 * * *
 
@@ -337,9 +318,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -385,9 +366,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -416,17 +397,12 @@ Classic scheduled pipelines don't have a **Scheduled runs** view, but you can vi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-
-![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
-
-::: moniker-end
 
 * * *
 
@@ -468,9 +444,9 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines are not available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 

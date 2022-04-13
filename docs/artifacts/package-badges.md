@@ -5,12 +5,12 @@ ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 02/14/2022
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Share your Artifacts with package badges
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts offers a way to share your packages anywhere you can share an image by using package badges. You can embed package badges directly into your project's home page or in any Markdown file so your customers can easily discover and consume your packages.
 
@@ -34,7 +34,7 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
    ::: moniker-end
 
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
 
    :::image type="content" source="media/edit-feed-full.png" alt-text="A screenshot showing how to navigate to the feed settings in TFS":::
 
@@ -52,7 +52,7 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
     ::: moniker-end
 
-    ::: moniker range="<= tfs-2018"
+    ::: moniker range="tfs-2018"
 
     This will enable the **Create badge** button for every package in that feed.
 

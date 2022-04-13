@@ -5,12 +5,12 @@ ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 03/16/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Set up your project and connect to Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can publish different types of packages to your feeds such as npm, NuGet, Python, Maven, and Universal packages. You can also install packages from feeds and public registries such as npmjs.com.
 
@@ -28,7 +28,7 @@ We recommend using two **.npmrc_** files, the first one we'll use to authenticat
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Packages**, and then select **Connect to feed**.
 
@@ -56,7 +56,7 @@ We recommend using two **.npmrc_** files, the first one we'll use to authenticat
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 4. Follow the instructions to set up your project.
 
@@ -180,7 +180,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build and Release**, and then select **Builds**.
 

@@ -29,17 +29,11 @@ If you have a project that's no longer valid, you can delete it from your organi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range=" < azure-devops"  
 
 - You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
-
-::: moniker range="<= tfs-2017"  
-
-- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**.  For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -70,7 +64,7 @@ Use your web browser to perform a soft-delete. After 28 days, projects will be  
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range=" tfs-2018"
 
 1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Collection Settings**.
 
@@ -127,7 +121,7 @@ Using the administration console, you can delete a project from a project collec
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can delete a team project with the [az devops project delete](/cli/azure/devops/project#az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -143,9 +137,6 @@ az devops project delete --id
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **yes**: Don't prompt for confirmation.
 
-::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
 
 #### Example 
 
@@ -163,7 +154,7 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 
  
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 ## Delete reports that remain after deleting a project
 
@@ -173,7 +164,7 @@ If your project used SQL Server reporting and you didn't delete external artifac
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Remove the project portal
 
@@ -193,7 +184,7 @@ A: Work items get deleted within 24 hours after your project is deleted.
 
 A: Wait 28 days before the project is permanently deleted.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Q: What if the delete action doesn't finish?
 

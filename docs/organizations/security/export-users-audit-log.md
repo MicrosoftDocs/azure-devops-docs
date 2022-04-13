@@ -9,7 +9,7 @@ ms.reviewer:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 04/04/2022  
 ---
 
 # Export a list of users and their access levels
@@ -26,7 +26,7 @@ You can get a list of users and groups that have access to your organization in 
 You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You can get a list of users and groups that have access to your Team Foundation Server (TFS) instance by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end
 
@@ -73,7 +73,7 @@ From the Azure DevOps CLI command, you can get a list of the users in your organ
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 [Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/add-organization-users.md#update-user) | [Show users](../accounts/add-organization-users.md#show-users)
 
@@ -139,7 +139,7 @@ You can get a list of users and groups that have accessed your Azure DevOps Serv
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
@@ -159,25 +159,6 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
-
-1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. The URL is similar to `http://myserver:8080/tfs`.
-
-	![TFS 2015, Web portal, open the Server settings admin context](media/ALM_CAL_OpenAdminPage.png)
-
-2. Choose **Access levels**, and then **Export audit log**. 
-
-	![Control panel, admin context, Export audit log](media/export-users-audit/tfs-2013-export.png)
-
-	> [!NOTE]
-	> If you're not a member of the Team Foundation Server Administrators group, the **Access levels** page won't appear.
-
-3. The user log file is saved as a .csv file to your Download folder.  
-	To determine the access level assigned to each user or group, open the file in Excel.
-
-::: moniker-end
 
 ## Related articles
 

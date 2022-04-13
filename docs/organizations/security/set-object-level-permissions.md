@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/01/2022
+ms.date: 04/04/2022
 --- 
 
 # Set object-level permissions
@@ -180,7 +180,6 @@ The following table provides information about setting permissions at the object
    no
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
    [Delivery Plans](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)
@@ -195,7 +194,6 @@ The following table provides information about setting permissions at the object
    no
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
    [Process](../../boards/get-started/permissions-access-boards.md)
@@ -257,8 +255,6 @@ The following table provides information about setting permissions at the object
 | [Variable groups](../../pipelines/library/index.md)  |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your variable group > **More** ... > **Manage security.**  |✔️ (from Library permission settings)  |
 | [Secure files](../../pipelines/policies/permissions.md) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your secure file > **More** ... > **Manage security.**  |✔️ (from Library permission settings)   |
 
-::: moniker range=">= tfs-2017"
-
 ## Set permissions for Artifacts objects
 
 The following table provides information about setting permissions at the object-level for artifacts and feeds.
@@ -267,8 +263,6 @@ The following table provides information about setting permissions at the object
 |--|--|--|--|
 | [Artifacts](../../artifacts/feeds/feed-permissions.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open **Artifacts** > Azure Artifacts settings icon. You don't see the icon if you don't have the right permissions. | no |
 | [Feeds](../../artifacts/feeds/feed-permissions.md) | Project Administrator or Feed Administrator | Open your feed > **gear icon** > **Permissions** > **+ Add users/groups**. | no |
-
-::: moniker-end
 
 ## Set permissions for Test plans objects
 

@@ -88,8 +88,6 @@ Some suggestions for successful pull requests:
 The code in your main branch should pass tests, build cleanly, and always be current.
 Your main branch needs these qualities so that feature branches created by your team start from a known good version of code.
 
-::: moniker range=">= tfs-2015" 
-
 Set up a [branch policy](branch-policies.md) for your main branch that:
 
 * Requires a pull request to merge code. This approach prevents direct pushes to the main branch and ensures discussion of proposed changes.
@@ -98,8 +96,6 @@ Set up a [branch policy](branch-policies.md) for your main branch that:
 
 >[!TIP]
 >The build pipeline for your pull requests should be quick to complete, so it doesn't interfere with the review process.
-
-::: moniker-end 
 
 ## Manage releases
 

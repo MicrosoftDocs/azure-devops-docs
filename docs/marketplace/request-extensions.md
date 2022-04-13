@@ -6,13 +6,13 @@ ms.technology: devops-marketplace
 ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+ms.date: 04/04/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Request and approve extensions
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. Learn how to do the following tasks:
 
@@ -75,7 +75,7 @@ Your requests appear on the **Extensions** page, **Requested** tab.
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select an extension from the [Visual Studio Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 
@@ -114,7 +114,7 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Go to your FS home page, then go to your project:
 

@@ -6,13 +6,13 @@ ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
 ms.technology: devops-code-git 
 ms.topic: quickstart
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 #  Share your code in Git using Xcode
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This guide shows you how to share your Xcode projects using Azure Repos. 
 

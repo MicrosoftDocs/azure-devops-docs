@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 02/14/2022
+ms.date: 04/01/2022
 ---
 
 # 6. Update and monitor your Taskboard
@@ -106,7 +106,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
 
@@ -174,7 +174,7 @@ An administrator can customize the **Taskboard** for all teams in the following 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Modify the workflow for the task WIT definition](../../reference/xml/change-workflow-wit.md).
@@ -223,12 +223,12 @@ With this view, you can quickly see which items are nearing completion and which
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 You can expand ![expand icon](../media/icons/expand_row_icon.png) and collapse ![collapse icon](../media/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Group by backlog items, show All team members](media/taskboard/group-items-all.png)
 
@@ -250,7 +250,7 @@ To filter on the tasks for a specific team member, choose the :::image type="ico
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
@@ -281,7 +281,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
@@ -316,7 +316,7 @@ Each team member can review the tasks they've worked on and estimate the work re
 > ![Update remaining work](media/taskboard/update-hours.png)
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![taskboard, update task remaining work](media/ALM_TB_UpdateRWork.png)
 ::: moniker-end
 
@@ -331,17 +331,13 @@ At the end of the sprint, you'll want to complete these final tasks:
 
 Drag an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all unfinished child tasks to correspond to the product-backlog iteration path or future sprint.
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 You can [drag-and-drop work items onto a sprint from any backlog or board](assign-work-sprint.md#drag-drop).
-::: moniker-end
-::: moniker range="tfs-2015"
-You can [drag-and-drop work items onto a sprint from any backlog or board](assign-work-sprint.md#drag-drop). Requires TFS 2015.1 or later version.
 ::: moniker-end
 
 ## Next step
 
 Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md) charts to monitor progress, manage scope creep, and mitigate risks.
-
 
 ## Related articles
 
@@ -384,31 +380,12 @@ If you exceed the number of items allowed on your taskboard, you'll receive a me
 
 You can reduce the number of items on the taskboard by moving them to the backlog or another sprint. When you move a parent PBI or user story, all active child tasks (State not equal to Done or Closed) automatically move with the parent item.
 
-::: moniker range=">= tfs-2017"
-
 - From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
 - From the sprint backlog, multi-select the items to move and then select the context menu for an item. Then, select the iteration to move them to.
 
 ![multi-select items from the sprint backlog](media/sprint-backlog-multi-select-non-sequential-items.png)
-::: moniker-end
 
-::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.
-- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
-- From the sprint backlog, multi-select the items to move. Then, select the context menu for an item and select the iteration to move them to.
 
-   <img src="media/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" />
-  ::: moniker-end
-
-::: moniker range="tfs-2013"
-- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint.
-
-- From the sprint backlog, drag an item back to the backlog or to another sprint.
-
-	<img src="media/IC797613.png" alt="Drag items back to product backlog" />
-
-- If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 Or, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).

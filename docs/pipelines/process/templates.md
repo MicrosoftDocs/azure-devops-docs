@@ -288,7 +288,7 @@ jobs:
   steps:
   - bash: echo "Hello Ubuntu"
 
-- job: Windows
+- job:
   pool:
     vmImage: 'windows-latest'
   steps:
@@ -475,6 +475,49 @@ variables:
 
 steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
+```
+### Variable templates with parameter
+
+You can pass parameters to variables with templates. In this example, you're passing the `DIRECTORY` parameter to a `RELEASE_COMMAND` variable. 
+
+```yaml
+# File: templates/package-release-with-params.yml
+
+parameters:
+- name: DIRECTORY 
+  type: string
+  default: "." # defaults for any parameters that specified with "." (current directory)
+
+variables:
+- name: RELEASE_COMMAND
+  value: grep version ${{ parameters.DIRECTORY }}/package.json | awk -F \" '{print $4}'  
+```
+
+When you consume the template in your pipeline, specify values for
+the template parameters.
+
+```yaml
+# File: azure-pipelines.yml
+
+variables: # Global variables
+  - template: package-release-with-params.yml # Template reference
+    parameters:
+      DIRECTORY: "azure/checker"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Release_Stage 
+  displayName: Release Version
+  variables: # Stage variables
+  - template: package-release-with-params.yml  # Template reference
+    parameters:
+      DIRECTORY: "azure/todo-list"
+  jobs: 
+  - job: A
+    steps: 
+    - bash: $(RELEASE_COMMAND) #output release command
 ```
 
 ## Reference template paths

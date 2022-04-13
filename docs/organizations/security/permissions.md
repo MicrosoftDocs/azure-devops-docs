@@ -1,15 +1,15 @@
 ---
-   title: Permissions, security groups, and service accounts reference
-   titleSuffix: Azure DevOps
-   description: Reference guide of security groups, service accounts, and permissions for Azure DevOps
-   ms.technology: devops-security
-   ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
-   toc: show
-   ms.topic: reference
-   ms.author: kaelli
-   author: KathrynEE
-   monikerRange: '<= azure-devops'
-   ms.date: 09/13/2021
+title: Permissions, security groups, and service accounts reference
+titleSuffix: Azure DevOps
+description: Reference guide of security groups, service accounts, and permissions for Azure DevOps
+ms.technology: devops-security
+ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
+toc: show
+ms.topic: conceptual
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 --- 
 
 # Security groups, service accounts, and permissions in Azure DevOps
@@ -57,17 +57,10 @@
    :::column-end:::
    :::column span="1":::
   **Work tracking**  
-  ::: moniker range=">= tfs-2017"
      - [Area and iteration paths](set-permissions-access-work-tracking.md)  
      - [Queries and folders](../../boards/queries/set-query-permissions.md)  
      - [Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)  
      - [Customize process](set-permissions-access-work-tracking.md#process-permissions)  
-  ::: moniker-end
-  ::: moniker range="< tfs-2017"
-     - [Area and iteration paths](set-permissions-access-work-tracking.md)  
-     - [Queries and folders](../../boards/queries/set-query-permissions.md)  
-     - [Customize process](set-permissions-access-work-tracking.md#process-permissions)  
-  ::: moniker-end
   ---
   **Reporting**
   ::: moniker range="azure-devops"
@@ -75,13 +68,13 @@
      - [Analytics](../../report/powerbi/analytics-security.md)  
      - [Analytics views](../../report/powerbi/analytics-security.md)  
   ::: moniker-end
-  ::: moniker range="> tfs-2018 < azure-devops"
+  ::: moniker range="azure-devops-2019 || azure-devops-2020"
      - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
      - [Analytics](../../report/powerbi/analytics-security.md)  
      - [Analytics views](../../report/powerbi/analytics-security.md) 
      - [SQL Server Reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) 
   ::: moniker-end
-  ::: moniker range="<= tfs-2018"
+  ::: moniker range="tfs-2018"
      - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
      - [SQL Server Reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports) 
   ::: moniker-end
@@ -579,7 +572,7 @@
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::image type="content" source="media/permissions/project-level-groups-permissions-tfs-2018.png" alt-text="Project-level groups and permissions, TFS-2018 and earlier versions.":::
 ::: moniker-end
 
@@ -661,7 +654,6 @@
    > We recommend that you don't change the default permissions for this group. 
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
    Release Administrators
@@ -672,10 +664,9 @@
    :::column span="2":::
    Assign to users who define and manage release pipelines.
    > [!NOTE]   
-   > The Release Administrator group is created at the same time the first release pipeline is defined. It isn't created by default when the project is created. Valid for TFS-2017 and later versions.
+   > The Release Administrator group is created at the same time the first release pipeline is defined. It isn't created by default when the project is created. 
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
    *TeamName* <a id="team-group" /> 
@@ -1218,7 +1209,7 @@
 :::row-end:::
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"]  
 > ![Collection level permissions and groups](media/permissions/collection-level-permissions-2018.png)   
@@ -1257,16 +1248,6 @@
   Can modify permissions for customizing work tracking by creating and customizing [inherited processes](../settings/work/inheritance-process-model.md). Requires the collection to be configured to support the Inherited process model. See also: 
   - [Customize a project](../settings/work/customize-process.md) 
   - [Add and manage processes](../settings/work/manage-process.md) 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range="<= tfs-2017"
-:::row:::
-   :::column span="":::
-  <a id="administer-Project-Server-integration-permission" />Administer Project Server integration
-   :::column-end:::
-   :::column span="3":::
-  Can [configure the integration of TFS and Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server) to enable data synchronization between the two server products. Applies to TFS 2017 and earlier versions only.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -1983,7 +1964,7 @@
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Project-level permissions dialog, TFS-2018 and earlier versions.](media/permissions/project-level-permissions.png)
@@ -2269,14 +2250,14 @@ The following permissions are defined for each shared Analytics view. All valid 
 
    <a name="dasboard-permissions"></a>
 
-::: moniker range=">= tfs-2017"
 
 ## Dashboards (object-level)  
 
+::: moniker range="azure-devops"
+Permissions for team and project dashboards can be set individually. The default permissions for a team can be set for a project. You manage the security of dashboards from the web portal.
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-   Permissions for team and project dashboards can be set individually. The default permissions for a team can be set for a project. You manage the security of dashboards from the web portal.
 
 ### Project dashboard permissions
 
@@ -2291,14 +2272,11 @@ The following permissions are defined for each shared Analytics view. All valid 
 |Edit dashboard |  Can add widgets to and change the layout of the project dashboard. |
 |Manage Permissions | Can manage permissions for the project dashboard. |
 
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
    Permissions for team dashboards can be set individually. The default permissions for a team can be set for a project. You manage the security of dashboards from the web portal.
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 ### Team dashboard default permissions
 
@@ -2315,17 +2293,6 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 ### Individual team dashboard permissions
 
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-> [!NOTE] 
-> Requires TFS 2017.1 or later version.  
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2017"
-
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of individual team dashboard permissions dialog.](../../report/dashboards/media/set-permissions/team-analytics-dashboard-permissions.png) 
 
@@ -2336,7 +2303,6 @@ The following permissions are defined for each shared Analytics view. All valid 
 |Delete dashboard | Can delete the specific team dashboard. |
 |Edit dashboard |  Can add widgets to and change the layout of the specific team dashboard. |
 
-::: moniker-end
 
    <a name="build"></a>
    <a name="build-object-level"></a>
@@ -2554,12 +2520,6 @@ The following permissions are defined for each shared Analytics view. All valid 
    You manage the security of each [Git repository](../../repos/git/set-git-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
 
-::: moniker range="<= tfs-2017" 
-> [!NOTE] 
-> These permissions have changed in TFS 2017 Update 1 and Azure DevOps.
-> If you are using an earlier version of TFS, see the [previous list of permissions](../../repos/git/set-git-repository-permissions.md).
-::: moniker-end
-
 ::: moniker range="azure-devops" 
 
 > [!div class="mx-imgBorder"]  
@@ -2567,7 +2527,7 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 ::: moniker-end 
 
-::: moniker range=">=tfs-2015 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 > [!div class="mx-imgBorder"]  
 > ![Git repository permissions dialog, TFS](media/permissions/git-repo-permissions-tfs.png) 
@@ -2755,8 +2715,6 @@ The following permissions are defined for each shared Analytics view. All valid 
 
    :::column-end:::
 :::row-end:::
-
-
 
 > [!NOTE]  
 > Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level Readers groups only have Read permissions.
@@ -3211,26 +3169,13 @@ The following permissions are defined for each shared Analytics view. All valid 
    :::column-end:::
 :::row-end:::
 
-
-
    <a id="plan-permissions">  </a>
-
-::: moniker range=">= tfs-2017"
 
 
 ## Delivery Plans (object-level)   
 
    You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through its Security dialog. Project Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
-::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-> [!NOTE]  
-> For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 :::row:::
    :::column span="1":::
@@ -3273,8 +3218,6 @@ The following permissions are defined for each shared Analytics view. All valid 
    :::column-end:::
 :::row-end:::
 
-
-::: moniker-end
 
    <a id="inherited-process">  </a>
 
@@ -3412,16 +3355,9 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    <a id="release_management">  </a>
    <a id="release-management">  </a>
 
-::: moniker range=">= tfs-2015"
 
 ## Release (object-level) 
 
-::: moniker-end
-
-
-
-::: moniker range=">= tfs-2017"
- 
    You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
 
@@ -3636,8 +3572,6 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
    are denied all permissions except **View release pipeline** and
 **View releases**.
 
-::: moniker-end
-
    <a id="task-group">  </a>
 
 ## Task group (Build and Release) permissions
@@ -3653,167 +3587,6 @@ You can manage tagging permissions using the [TFSSecurity command-line tool](/az
 > | **Administer task group permissions** | Can add and remove users or groups to task group security. |
 > | **Delete task group** | Can delete a task group. | 
 > | **Edit task group** | Can create, modify, or delete a task group. | 
-
-
-
-::: moniker range="<= tfs-2015"
-
-   <a id="lab">  </a>
-
-## Lab Management 
-
-   Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
-   You can set these permissions by using the [TFSLabConfig permissions command-line tool](/previous-versions/azure/devops/server/lab-management/tfslabconfig-cmd).
-
-   By default, the project Readers groups have only View lab resources (Read) permissions.
-
-> [!NOTE]  
-> Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
-
-:::row:::
-   :::column span="1":::
-   **Permission**
-   :::column-end:::
-   :::column span="2":::
-   **Description**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Delete Environment and Virtual Machines
-   :::column-end:::
-   :::column span="2":::
-   Can delete environments and templates. The permission is checked for the object that is being deleted.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Delete Environment and Virtual Machines
-   :::column-end:::
-   :::column span="2":::
-   Can delete environments and templates. The permission is checked for the object that is being deleted.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Delete Lab Locations
-   :::column-end:::
-   :::column span="2":::
-   Can delete the locations for Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To delete a location, you must have the **Delete Lab Location** permission for that location.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Edit Environment and Virtual Machines
-   :::column-end:::
-   :::column span="2":::
-   Can edit environments and templates. The permission is checked for the object that is being edited.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Environment Operations
-   :::column-end:::
-   :::column span="2":::
-   Can start, stop, pause, and manage snapshots, in addition to performing other operations on an environment.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Import Virtual Machine
-   :::column-end:::
-   :::column span="2":::
-   Can import a virtual machine from a VMM library share. This permission differs from Write because it only creates an object in Lab Management and does not write anything to the Virtual Machine Manager host group or library share. 
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Manage Child Permissions
-   :::column-end:::
-   :::column span="2":::
-   
-   Can change the permissions of all the child Lab Management objects. For example, if a user has **Manage Child Permission** for a project host group, the user can change permissions for all the environments under that project host group. 
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Manage Lab Locations
-   :::column-end:::
-   :::column span="2":::
-   
- Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the **Manage Lab Location** permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create project level locations (project host group and project library share).
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Manage Permissions
-   :::column-end:::
-   :::column span="2":::
-   Can modify the permissions for a Lab Management object. This permission is checked for the object whose permissions are being modified.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Manage Snapshots
-   :::column-end:::
-   :::column span="2":::
-   Can perform all snapshot management tasks for an environment, which include taking a snapshot, reverting to a snapshot, renaming a snapshot, deleting a snapshot, and reading a snapshot.
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Pause Environment
-   :::column-end:::
-   :::column span="2":::
-   Can pause an environment.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Start
-   :::column-end:::
-   :::column span="2":::
-   Can start an environment.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   Stop
-   :::column-end:::
-   :::column span="2":::
-   Can stop an environment.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   View Lab Resources
-   :::column-end:::
-   :::column span="2":::
-   Can view information for the various Lab Management resources, which include collection host groups, project host groups, and environment. To view information about a specific lab resource, you must have the **View Lab Resources** permission for that resource.
-   :::column-end:::
-   :::row-end:::
-:::row:::
-   :::column span="1":::
-   Write Environment and Virtual Machines
-   :::column-end:::
-   :::column span="2":::
-   Can create environments for a project host group. Users who have this permission for a project library share can store environments and templates.
-
-   :::column-end:::
-:::row-end:::
-
-
-::: moniker-end
 
 
    <a id="alerts">  </a>

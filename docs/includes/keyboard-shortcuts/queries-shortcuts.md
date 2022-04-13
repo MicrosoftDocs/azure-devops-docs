@@ -1,24 +1,12 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 
 <a id="queries-web-portal-shortcuts"></a>
 
-
-::: moniker range=">= tfs-2015"
-
-
 You can use the following keyboard shortcuts when [working with queries](../../boards/queries/using-queries.md) in the web portal. To view the valid shortcuts, enter **?** from **Boards>Queries** or **Work>Queries**. 
-
-::: moniker-end  
-
-::: moniker range="tfs-2015"  
-> [!NOTE]  
-> The following shortcuts are available from Azure DevOps Services or TFS 2015.2 or later versions.  
-
-::: moniker-end  
-
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -41,10 +29,7 @@ You can use the following keyboard shortcuts when [working with queries](../../b
  
 ::: moniker-end
 
-
-
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
-
+::: moniker range="<= azure-devops-2019"
 
 :::row:::
    :::column span="2":::

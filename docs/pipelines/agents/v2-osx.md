@@ -5,14 +5,14 @@ description: Learn how to deploy a macOS agent to build and deploy your iOS appl
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.date: 03/09/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Self-hosted macOS agents
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -35,18 +35,6 @@ Make sure your machine has these prerequisites:
 - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
 
 These prereqs are required for agent version 2.125.0 and higher.
-
-::: moniker-end
-
-::: moniker range="< tfs-2018"
-
-These prereqs are required for agent version 2.124.0 and below.
-**If you're able, we recommend upgrading to a newer macOS (10.12+) and upgrading to the newest agent.**
-
-Make sure your machine has these prerequisites:
-- OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
-- Git 2.9.0 or higher (latest version strongly recommended)
-- Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
 
 ::: moniker-end
 
@@ -130,15 +118,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
 1. In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
 1. Click **Download agent**.
 
@@ -154,22 +142,6 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-### TFS 2015
-
-1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
-
-1. Follow the instructions on that page to download the agent.
-
-1. Configure the agent.
-
-   ```
-   ./config.sh
-   ```
-
-::: moniker-end
-
 ### Server URL
 
 ::: moniker range="azure-devops"
@@ -178,15 +150,9 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range="< azure-devops"
 
-TFS 2017 and newer: `https://{your_server}/tfs`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-TFS 2015: `http://{your_server}:8080/tfs`
+TFS 2018 and newer: `https://{your_server}/tfs`
 
 ::: moniker-end
 

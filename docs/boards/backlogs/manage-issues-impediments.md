@@ -31,7 +31,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!IMPORTANT]  
 > Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
@@ -95,20 +95,12 @@ Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="fa
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
 <img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" />  
   
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-From the Queries page, choose Impediment from the **New** drop-down menu.
-
-<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" />  
-
 ::: moniker-end
 
 
@@ -131,7 +123,7 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 

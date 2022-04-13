@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -51,7 +51,7 @@ Define work item queries to list work items for a current sprint or the product 
 
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Or, use the shared queries that the Scrum process provides.
 
@@ -81,7 +81,7 @@ To get started, you can open a shared query and create a chart based on your tra
 
 
 <a id="reports"></a>
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2020"
 
 ## Scrum process and SQL Server reports
 
@@ -91,19 +91,8 @@ If you need to add reporting services or update reports to the latest versions, 
 
 ::: moniker-end
 
-
-
 <a id="dashboards"></a>
 
-::: moniker range="<= tfs-2017"
-
-## Access SharePoint portal dashboards 
-
-You can access the [Release](/previous-versions/azure/devops/report/sharepoint-dashboards/release-scrum) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to complete common tasks quickly. 
-
-To access this dashboard, your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
-
-::: moniker-end
 
 ## Related articles 
 
@@ -133,7 +122,7 @@ For a summary of updates made to process templates, see [Changes made to process
 <a id="predefined-queries" />
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Scrum process predefined queries
 

@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/14/2022
+ms.date: 04/04/2022
 ---
 
 # About teams and Agile tools
@@ -73,14 +73,6 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-![Agile tools, team assets](media/agile-tools/agile-tools-team-assets.png)
-::: moniker-end
-
-::: moniker range="tfs-2013"
-![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-2013.png)
-::: moniker-end
 
 These tools automatically filter the set of work items they display by referencing the following items:
 - default area path
@@ -232,11 +224,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ![Web portal, Queries page, Query that uses In Group operator and team group name](../../boards/plans/media/query-in-group-email-team-work-in-progress.png)
 
-::: moniker range=">= tfs-2017"
-
 You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
-
-::: moniker-end
 
 ## Work on more than one team
 

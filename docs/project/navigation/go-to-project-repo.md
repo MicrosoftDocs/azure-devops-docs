@@ -7,13 +7,13 @@ ms.technology: devops-collab
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2017'
-ms.date: 02/08/2019
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Switch project, repository, team 
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 
 Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.
@@ -30,8 +30,6 @@ Also, when you add a work item, the system references the default area and itera
 > If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
-
-
 
 <a id="projects">  </a>
 
@@ -65,7 +63,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 From the **Projects** page you can quickly navigate to a project or a team that you've accessed or worked in previously. Projects and teams are listed in the order you've last accessed, with the most recent five projects accessed appearing first. All projects you've accessed are listed within the **All** section. 
 
@@ -113,7 +111,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Choose **Code**.  
  
@@ -129,6 +127,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 <a id="switch-to-a-different-team">  </a>
 <a id="switch-team-context">  </a>
+
 ## Switch to a different team 
 
 ::: moniker range=">= azure-devops-2019"
@@ -148,24 +147,6 @@ You can switch your team focus to one that you've recently viewed from the proje
 
 ![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 ::: moniker-end
-
-::: moniker range="tfs-2017" 
-<a id="switch-context-tfs-2017-1" /> 
-### TFS 2017.1 
-To switch your team focus to a project or team you've recently viewed, hover over the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and choose from the drop-down menu of options. If you don't see the team or project you want, choose **Browse&hellip;** to [browse all projects and teams](work-across-projects.md). 
-
-![Choose another team from the project menu in TFS 2017.1.](../../media/work-web-portal-tfs-2017-1-switch-team-focus.png) 
-
-
-### TFS 2017
-<a id="tfs-2017-switch-context" /> 
-
-Open the project/team drop-down menu and select the project/team that you've recently visited. If you don't see the team or project you want, choose **Browse all** to browse all projects and teams. 
-
-![Choose another team from the project menu in TFS 2017.](../../media/switch-context-tfs-2017.png)   
-
-::: moniker-end
-
 
 ## Related articles
 - [Work across projects](work-across-projects.md)

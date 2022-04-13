@@ -7,13 +7,13 @@ metadata:
   ms.author: kaelli
   author: KathrynEE
   ms.topic: FAQ
-  monikerRange: '>= tfs-2015'
+  monikerRange: '<= azure-devops'
   ms.date: 02/16/2022
 
 title: Access and permissions FAQs 
 
 summary: | 
-  [!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
   Find answers to frequently asked questions when using Azure Test Plans. For how-to guides, see the following articles:  
   - [Create test plans and test suites](create-a-test-plan.md)

@@ -7,13 +7,13 @@ ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # CMake task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build with the CMake cross-platform build system.
 

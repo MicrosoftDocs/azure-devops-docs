@@ -6,12 +6,12 @@ ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 08/24/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Ignore file changes with Git
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Not every file created or updated in your code should be committed to Git.

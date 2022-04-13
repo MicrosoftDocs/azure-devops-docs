@@ -8,12 +8,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: reference
 ms.date: 12/17/2018  
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Default permissions and access set for collaboration tools
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Collaboration tools encompass READMEs, team project Wikis, notifications, feedback, and search.  
 

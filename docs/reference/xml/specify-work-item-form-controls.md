@@ -150,7 +150,7 @@ You use the `LabelText` and `Link` child and container elements to specify the t
 
 Use `WebpageControl`to display Web content in a work item form. This control is usually contained in its own tab group. You use the `WebpageControlOptions` and `Link` child elements to specify the controls that are required to load the Web page target in the work item form.
 
-For more information, see [Edit a WIT definition to add web content to a work item form](edit-wit-definition-add-web-content-form.md), [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md), and [Link and Param](link-param-xml-elements-reference.md).  
+For more information, see [Edit a WIT definition to add web content to a work item form](/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form?view=tfs-2015&preserve-view=true), [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md), and [Link and Param](link-param-xml-elements-reference.md).  
 
 
 ## Add a links control 
@@ -159,7 +159,7 @@ You use `LinksControl` to create and manage links between work items. This contr
 
 ![Example of links control added to a work item form](media/wit_ss_linkscontrol.png "WIT_SS_LinksControl")
 
-You can also use the `LinksControlOptions` to define the link filters and layout of column fields that are used to display the list of links. For more information, see [Define link controls to restrict link relationships](define-link-controls.md) and [LinksControlOptions](linkscontroloptions-xml-elements.md).
+You can also use the `LinksControlOptions` to define the link filters and layout of column fields that are used to display the list of links. For more information, see [Define link controls to restrict link relationships](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true) and [LinksControlOptions](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true).
 
 ## Add a Storyboards control 
 
@@ -219,7 +219,7 @@ Use the `AttachmentsControl` to attach files to a work item form. This control i
 
 ![Attach files to a work item](media/procguid_attachment.png "ProcGuid_Attachment")
 
-For more information, see [Add the Attachments control](add-the-attachments-control.md).
+For more information, see [Add the Attachments control](/previous-versions/azure/devops/reference/xml/add-the-attachments-control?view=tfs-2017&preserve-view=true).
 
 
 ## Related articles
@@ -227,20 +227,21 @@ For more information, see [Add the Attachments control](add-the-attachments-cont
 <a name="custom"></a> 
 In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&visibilityQuery=all&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](../../extend/develop/add-workitem-extension.md). 
 
--  [Control XML element reference](control-xml-element-reference.md)    
+-  [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)    
 -  [WebLayout and Control elements](weblayout-xml-elements.md)     
--  [Change the work item form layout](change-work-item-form-layout.md)   
--  [Edit a WIT definition to add web content to a work item form](edit-wit-definition-add-web-content-form.md)
+-  [Change the work item form layout](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)   
+-  [Edit a WIT definition to add web content to a work item form](/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form?view=tfs-2015&preserve-view=true)
 -  [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)   
--  [Define link controls to restrict link relationships](define-link-controls.md)   
--  [Add the Attachments control](add-the-attachments-control.md)  
+-  [Define link controls to restrict link relationships](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true)   
+-  [Add the Attachments control](/previous-versions/azure/devops/reference/xml/add-the-attachments-control?view=tfs-2017&preserve-view=true)  
 
 
 
 <a name="Labeling">  </a> 
 
-###  Label fields and add fields in two places on the form  
- For each form control, you can specify an optional label and the position of the label by using the `Label` and `LabelPosition` attributes. The label can specify a different name than the friendly name that is assigned by the `FIELD` element. If you do not specify a label, the friendly name is used. However, note that the friendly name is always used when a team member runs a query to search for work items. The maximum label size is 80 characters.  
+### Label fields and add fields in two places on the form  
+
+For each form control, you can specify an optional label and the position of the label by using the `Label` and `LabelPosition` attributes. The label can specify a different name than the friendly name that is assigned by the `FIELD` element. If you do not specify a label, the friendly name is used. However, note that the friendly name is always used when a team member runs a query to search for work items. The maximum label size is 80 characters.  
 
 > [!NOTE]  
 > You must define the same label position to all controls that are defined in the same group.  

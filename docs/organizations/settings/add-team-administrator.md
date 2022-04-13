@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/22/2021
+ms.date: 04/04/2022
 ---
 
 # Add or remove a team administrator 
@@ -99,7 +99,7 @@ To get added as a team administrator, ask another team administrator or a member
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal and team context, choose **Team Settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
@@ -119,24 +119,6 @@ To get added as a team administrator, ask another team administrator or a member
    
 ::: moniker-end     
 
-::: moniker range="<= tfs-2015"
-
-1. From the web portal, select your project, and then select **Administration settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the administration page.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal screenshot, TFS, Open Administration context, project level.](../../media/settings/open-admin-page-tfs2015.png)
-
-	If you choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::, then choose **Overview**, and select the team you want to add an administrator to.   
-
-2. Choose the **Add** link to open the dialog for adding user identities.    
-  
-	![Screenshot of Web portal, TFS 2015, Open team administration context.](media/add-team/add-account-as-team-admin.png)
-
-3. Enter the identities you want to add to the team administrator role.     
-
-	![Screenshot of Add team administrator dialog for TFS 2013 through 2015.](media/add-team/team-admin-dialog.png)    
-	
-::: moniker-end  
 
 * * *
 

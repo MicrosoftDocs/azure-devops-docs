@@ -5,10 +5,12 @@ ms.topic: reference
 ms.author: nicktrog
 author: ntrogh
 ms.date: 02/16/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure Load Testing task
+
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run an Apache JMeter script by using Azure Load Testing Preview. Azure Load Testing is a fully managed load testing service that enables you to generate high-scale load.
 

@@ -77,26 +77,13 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in integrates work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
 - [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
 - [PowerPoint Storyboarding](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint): Illustrate user stories and requirements by using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 < tfs-2017"
-
-- [Project Professional](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server): With Project Professional and the Team Foundation Server Extensions for Project Server, you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
-
-::: moniker-end
-
-::: moniker range="= tfs-2017"
-
-> [!IMPORTANT]
-> Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a Microsoft partner. See [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs) for details.
 
 ::: moniker-end
 
@@ -107,13 +94,6 @@ The following clients support specific tasks, such as managing testing efforts, 
 - [Azure Test Plans](../organizations/billing/try-additional-features-vs.md): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts.  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/perform-exploratory-tests.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps. This extension is free to Stakeholders. 
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](../project/feedback/give-permissions-feedback.md).  
-
-::: moniker range="= tfs-2017" 
-
-> [!IMPORTANT]
-> Test Manager is deprecated for TFS 2017.  
-
-::: moniker-end
 
 ## Browser-based web tools
 
@@ -148,16 +128,18 @@ Find more extensions in Azure DevOps **Organization settings** > **Extensions** 
 
 You can do many code development and administrative tasks by using the following command-line tools:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 - [az devops commands](../cli/quick-reference.md)
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
 - [TCM commands](../test/copy-clone-test-items.md)
+- [Manage permissions with command line tool (az devops security)](../organizations/security/manage-tokens-namespaces.md) 
+- [witadmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="< azure-devops"
 
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)

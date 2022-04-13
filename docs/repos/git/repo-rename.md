@@ -5,14 +5,14 @@ description: You can rename a Git repository in a few steps. Your team will have
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.technology: devops-code-git 
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 02/23/2022
 ---
 
 
 #  Rename a Git repository in your project
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
@@ -51,7 +51,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. 1. From the web portal, open the project administration page for your project and select **Version Control**.
 
@@ -72,36 +72,18 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-1. Open a project (on-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_project}``` or Azure DevOps Services ```https://dev.azure.com/{your_account}/{your_project}```) in your web browser.
-
-2. Go to the control panel.
-
-   ![Administer account](media/control-panel-launch-icon.png)
-
-
-1. Rename the repo from the Version Control tab.
-
-   ![Rename a repository](media/repo-rename/AdminVC.png)
-
-::: moniker-end
-
 
 <a name="repos-rename" />
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2020" 
+::: moniker range="azure-devops" 
 [!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
-
 
 ***
 
@@ -127,19 +109,11 @@ Each member of your team must update their local Git repos to continue connectin
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 - Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 
    ![Retrieve the clone URL](media/repo-mgmt/clone-git-repo.png)
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-- Copy the repository URL to your clipboard.
-
-	![Remote URL for the repository](media/share-your-code-in-git-xcode/newrepocopycloneurl.png)
 
 ::: moniker-end
 

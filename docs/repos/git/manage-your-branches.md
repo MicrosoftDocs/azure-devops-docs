@@ -5,13 +5,13 @@ description: Find your work and search for branches using the branches page in A
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.technology: devops-code-git 
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 02/23/2022
 ---
 
 # Manage branches
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
@@ -24,7 +24,7 @@ View your repo's branches by selecting **Repos**, **Branches** while viewing you
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 View your repo's branches by selecting **Branches** while viewing your repo on the web.
 

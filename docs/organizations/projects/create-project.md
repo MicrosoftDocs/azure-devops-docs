@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/22/2020
+ms.date: 04/04/2022
 ---
 
 
@@ -38,27 +38,12 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
 - You must be a member of the **Project Collection Administrators** group or have the collection-level **Create new projects** permission set to **Allow**. If you're the **Organization owner**, you're automatically added to the Project Collection Administrators group. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range=" < azure-devops"  
 
 - You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).
 - You must be a member of the **Project Collection Administrators** group or have the **Create new projects** permission set to **Allow**. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
 
 ::: moniker-end  
-
-
-::: moniker range="<= tfs-2017"  
-
-- You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=tfs-2017#create-a-project-collection&preserve-view=true ).
-- You must be a member of the **Project Collection Administrators** group or have the **Create new projects** permission set to **Allow**. For more information, see [Change project collection-level permissions](../security/change-organization-collection-level-permissions.md).
-- Ask your administrator about the following resources and get additional permissions as needed:
-
-    - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
-
-    - Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
-
-    - Have you configured a SharePoint Web application for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -76,7 +61,7 @@ You can create up to 1000 projects within an organization defined in Azure DevOp
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range=" < azure-devops"
 
 > [!IMPORTANT]  
 > When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. You can add reports later by following the instructions provided in [Add reports to a teams project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project). 
@@ -84,14 +69,6 @@ You can create up to 1000 projects within an organization defined in Azure DevOp
 There isn't any limit on the number of projects that you can create within a project collection, however for performance purposes, we recommend you limit the number to 300 or fewer. To learn more, see [Work tracking, process, and project limits](../settings/work/object-limits.md). 
 
 ::: moniker-end
-
-::: moniker range="tfs-2013"
-
-> [!IMPORTANT]
-> Creating a project from the web portal isn't supported for Team Foundation Server (TFS 2015) and earlier versions. Use [Team Explorer](#te) to create a project.  
-
-::: moniker-end
-
 
 #### [Browser](#tab/browser)
 
@@ -176,112 +153,16 @@ There isn't any limit on the number of projects that you can create within a pro
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
 
-Creating a project from the web portal is supported for TFS 2015.2 and later versions. For earlier versions, use [Team Explorer to create a project](#te). 
-
-> [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. You can still set up [Reporting](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project) and [SharePoint](/azure/devops/server/admin/add-sharepoint-to-tfs) manually after project creation.
->
-> If you want these features to be to be available, then create your project from Visual Studio/Team Explorer. For more information, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).
-
-1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then choose **New project**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Choose new project, horizontal navigation](media/create-project/projects-hub-horz-new-project.png)  
-
-	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: settings. Then, select **Server settings** and choose **New project**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![New Project TFS 2017](media/create-project/new-team-project-tfs-2017.png)
-
-   Select the collection administration page for the collection you want to create the project in from the left pane. Select **Create a new project**.
-
-2. Enter information into the form provided. Provide a name for your new project, a short description, and select its initial source control type and work item tracking process.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Create new project form, TFS](media/create-project/clickcreatetfs.png)
-
-::: moniker-end
 
 
 #### [Team Explorer](#tab/team-explorer)
 
-::: moniker range="> tfs-2017"
-
-You can't create a project from Team Explorer for TFS-2018 and later versions, including Azure DevOps Services.
-
-::: moniker-end
+> [!NOTE]
+> Creating a project from Visual Studio/Team Explorer is no longer supported. 
 
 
 <a id="te"> </a>
-
-::: moniker range="<= tfs-2017"
-
-You can create a project from Visual Studio/Team Explorer after you've connected to an on-premises Azure DevOps Server.
-
-1. Open the same version of Visual Studio as the version of TFS that you're connecting to. If you don't see the **Team Explorer** pane, select **View** > **Team Explorer** from the menu.
-
-    Download and install [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) to get a free copy of the latest version.
-
-2. Connect to the server and project collection where you want to create your project.
-
-    ![ALM\_CTP\_Connect](media/IC827208.png)
-
-    Connect from a client that is at the same version level as TFS. That is, you must connect to TFS 2015 from a version of Visual Studio 2015.
-
-    ![ALM\_EXL\_Connect](media/IC680074.png)
-
-    > [!TIP]
-    > If you run Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
-
-3. If it's your first time connecting to TFS, you need to add TFS to the list of recognized servers.
-
-    ![ALM\_EXL\_AddServer](media/IC658167.png)
-
-4. Open the **New Project Wizard**.
-
-    ![New link on Connect page (Team Explorer)](media/IC779380.png)
-
-5. Name the project. Don't specify more than 64 characters.
-
-    ![ALM\_CTP\_NameProject](media/IC671598.png)
-
-6. Choose a process template. For a comparison of the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md).
-
-    ![ALM\_CTP\_SelectTemplate](media/IC795955.png)
-
-7. Choose your version control, either Git distributed repositories or TFVC, one centralized repository.
-
-    ![ALM\_CTP\_SelectSource](media/IC671600.png)
-
-    Not sure which system to use? To learn more, see [Git and Azure Repos](../../repos/git/index.yml) and [Use Team Foundation Version Control](../../repos/tfvc/index.yml).
-
-    After you've created your project, you can add repositories. See [Add a repository to your project](#add-a-repository).
-
-8. Unless your project collection supports a SharePoint project portal, you're done.
-
-    ![ALM\_CTP\_Finish](media/IC795956.png)
-
-    If the **Next** button is active, you can configure your project portal.
-
-    If you have a problem, you receive an error message and a link to the project creation log. See [Troubleshoot creating a project](faq-create-project.yml) for specific errors and exceptions.
-
-    When you're finished, you can see your project in Team Explorer. You can also choose the **Web Access** link to connect to your project from the web portal.
-
-		
-:::row:::
-   :::column span="1":::
-   ![Team Explorer Home page w/ TFVC as source control](media/IC827209.png)
-   :::column-end:::
-   :::column span="1":::
-   ![Team Explorer Home page with Git as source control](media/IC827210.png)
-   :::column-end:::
-:::row-end:::
-
-
-::: moniker-end
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -328,20 +209,7 @@ be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 
-
-
 * * *
-
-
-::: moniker range=">= tfs-2018 <= azure-devops-2019"
-
-> [!NOTE]
-> For TFS 2018 and later versions, use the web portal. Creating a project from Visual Studio/Team Explorer is not supported for TFS 2018 and later versions, including Azure DevOps Server 2019 and Azure DevOps Services.
->
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
-
-::: moniker-end
-
 
 
 ## List and connect to projects
@@ -384,17 +252,6 @@ Connect to a project, collection, or server from your web browser.
 	> ![Select Admin settings and then choose Projects.](media/create-project/list-projects-admin-settings-2019.png)  
 
 	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2017"  
-
-Open the administration overview page by choosing ![Settings button (Web Portal)](../../media/icons/gear-icon.png) > **Collection settings**. 
-
-> [!div class="mx-imgBorder"]  
-> ![Overview tab, Project list, Collection settings](media/create-project/list-projects-2017.png)
-
-You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
 ::: moniker-end
 
@@ -503,40 +360,13 @@ ID                                    Name            Visibility    Process     
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
- 
 
 <a id="add-a-repository" />
 <a id="add-a-repository-to-your-project" />
 
-::: moniker range=">= tfs-2015"
-
 ## Add a repository to your project
 
 From the admin context of the web portal, you can add additional repositories to a project. Add either Git (distributed) or TFVC (centralized) repositories. You can create many Git repositories, but only a single TFVC repository for a project.  Additional steps to address permissions may be required. For more information, see [Use Git and TFVC repos in the same project](../../repos/git/team-projects.md).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-1. Select **New repository**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Create new repository](media/create-project/create-new-repository-2017.png)  
-
-2. Name the repository and select **Create**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Create new repository dialog](media/create-project/create-new-repository-dialog.png)  
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-![Add repositories to an existing project](media/create-team-project-add-repositories.png)
-
-> [!NOTE]
-> The ability to work from both Git and TFVC repositories from the same project is supported when you connect to TFS 2015.1 and later versions.
-
-::: moniker-end
 
 ## Next steps
 

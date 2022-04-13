@@ -6,13 +6,13 @@ ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 06/18/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Customize and extend pull request workflows with pull request status
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 

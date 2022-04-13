@@ -7,19 +7,19 @@ ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
 ms.author: vijayma
 author: vijayma
 ms.date: 04/21/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # npm task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to install and publish npm packages.
 
 > [!NOTE]
 > The [npm Authenticate](npm-authenticate.md) task is the recommended way to authenticate with Azure Artifacts. This task no longer takes new features and only critical bugs are addressed.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

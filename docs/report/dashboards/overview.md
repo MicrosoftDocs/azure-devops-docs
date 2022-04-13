@@ -8,13 +8,13 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2015'
-ms.date: 01/27/2022
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # About dashboards, charts, reports, & widgets
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Gain visibility into your team's progress by adding one or more widgets or charts to your dashboard. Customizable, highly configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes.  Each team can tailor their dashboards to share information and monitor their progress.  
 
@@ -246,7 +246,7 @@ For details, see:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Active bugs](media/gs-monitor-charts-active-bugs.png)   
 
@@ -549,7 +549,7 @@ You can add data to support reporting requirements by [adding a custom field](..
 You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
 ::: moniker-end
