@@ -90,7 +90,7 @@ To quickly get started, you can use the default sprints. Default sprints are als
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -161,7 +161,7 @@ For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets acce
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Selected sprints for a team](media/define-sprints/selected-team-iterations-vsts.png)
 

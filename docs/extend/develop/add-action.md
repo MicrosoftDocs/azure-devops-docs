@@ -4,7 +4,7 @@ title: Add an Action | Extensions for Azure DevOps
 description: Add an action for your extension that extends Azure DevOps.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/22/2016
@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Add a menu action
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this example, we add an action to the query context menu in the work item queries hub.
 

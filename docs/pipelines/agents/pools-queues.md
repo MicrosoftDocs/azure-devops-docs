@@ -5,20 +5,20 @@ ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.date: 12/01/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Create and manage agent pools
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 An agent pool is a collection of agents. Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
 
@@ -28,17 +28,9 @@ To share an agent pool with multiple projects, in each of those projects, you cr
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![TFS 2017 and TFS 2018 build system architecture](media/build-system-architecture.png)
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-Agent pools are scoped to project collections.
-
-![TFS 2015 build system architecture](media/build-system-architecture-tfs-2015.png)
 
 ::: moniker-end
 
@@ -67,7 +59,7 @@ In Azure DevOps Server, agent pools are scoped to the entire server; so you can 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
@@ -77,7 +69,7 @@ If you are an organization administrator, you create and manage agent pools from
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
 ::: moniker-end
 
@@ -136,7 +128,7 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 #### [Browser](#tab/browser)
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
@@ -146,7 +138,7 @@ If you are an organization administrator, you create and manage agent pools from
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
 ::: moniker-end
 
@@ -372,8 +364,6 @@ Here are some typical situations when you might want to create self-hosted agent
 
 Understanding how security works for agent pools helps you control sharing and use of agents.
 
-::: moniker range=">= tfs-2017"
-
 **Roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
 
 | Role on an agent pool in organization settings | Purpose |
@@ -392,8 +382,6 @@ Roles are also defined on each project agent pool, and memberships in these role
 | User | Members of this role can use the project agent pool when authoring pipelines. |
 | Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the project agent pool. The user that created the pool is automatically added to the Administrator role for that pool.
 
-::: moniker-end
-
 ::: moniker range="<= azure-devops-2019"
 
 The **All agent pools** node in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from those of the 'All agent pools' node. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
@@ -403,20 +391,6 @@ The **All agent pools** node in the Agent pools tab is used to control the secur
 ::: moniker range="azure-devops"
 
 The **Security** action in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from what you define here. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-<h3 id="security-tfs2015">TFS 2015</h3>
-
-In TFS 2015, special **groups** are defined on agent pools, and membership in these groups governs what operations you can perform.
-
-Members of **Agent Pool Administrators** can register new agents in the pool and add additional users as administrators or service accounts.
-
-Add people to the Agent Pool Administrators group to grant them permission manage all the agent pools. This enables people to create new pools and modify all existing pools. Members of Team Foundation Administrators group can also perform all these operations.
-
-Users in the **Agent Pool Service Accounts** group have permission to listen to the message queue for the specific pool to receive work.  In most cases you should not have to manage members of this group. The agent registration process takes care of it for you. The service account you specify for the agent (commonly Network Service) is automatically added when you register the agent.
 
 ::: moniker-end
 

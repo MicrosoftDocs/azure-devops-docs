@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 12/13/2021
 ---
 
 # What is Azure Test Plans?  
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Test Plans provides rich and powerful
 tools everyone in the team can use to drive quality and collaboration

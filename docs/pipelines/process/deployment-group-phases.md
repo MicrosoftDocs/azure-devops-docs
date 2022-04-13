@@ -5,14 +5,14 @@ description: Understand deployment group jobs in Azure Pipelines and Team Founda
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
 ms.topic: conceptual
 ms.date: 08/18/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Deployment group jobs
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

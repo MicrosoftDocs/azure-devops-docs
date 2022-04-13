@@ -104,7 +104,7 @@ To set permissions for a custom security group, you must have defined that group
 
 ::: moniker-end    
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the web portal, open the admin context by choosing the :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: **Settings** and choose **Version Control**.
 

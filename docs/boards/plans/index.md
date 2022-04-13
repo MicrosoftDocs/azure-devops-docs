@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 04/01/2022
 ---
 
 # Plan for Agile at scale 
@@ -34,18 +34,11 @@ Enterprise project managers often have a portfolio of projects that they manage.
 To learn more, see [Manage portfolios](portfolio-management.md).
 
 
-::: moniker range=">= tfs-2017" 
-
 ## Delivery plans 
 
 Delivery plans provide visibility into features under development by several teams across several sprints. With Delivery Plans, portfolio managers can review the schedule of stories or features their teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
 To learn more, see [Review delivery plans](review-team-plans.md).
-
-::: moniker-end
-
-
-::: moniker range=">= tfs-2015" 
 
 ## Team dashboards
 
@@ -53,7 +46,6 @@ Each team can construct several dashboards to track and monitor their progress. 
 
 To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json). 
 
-::: moniker-end
 
 
 ## Related articles

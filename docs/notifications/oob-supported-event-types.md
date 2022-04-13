@@ -8,12 +8,12 @@ toc: show
 ms.author: chcomley
 author: chcomley
 ms.date: 12/30/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Supported event types
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn the supported event types for notification subscriptions in Azure DevOps.
 

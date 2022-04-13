@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 11/17/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -56,20 +56,14 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 ![Kanban board, Agile template](media/kanban-basics-intro.png)     
 ::: moniker-end  
  
-::: moniker range="<= tfs-2015"    
-> [!div class="mx-imgBorder"]  
-> ![TFS 2015, Kanban board, Agile template](media/overview/kanban-basics-intro-tfs.png)       
-::: moniker-end   
-
 ## Configure and customize your Kanban board
 
 Your Kanban board is highly configurable to support your team's workflow. Each team can configure each board in the following areas:
 
-::: moniker range=">= tfs-2017"
 - Configure boards:
 	- [Add columns](add-columns.md)  
 	- [Set WIP limits](wip-limits.md)  
@@ -85,31 +79,6 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
 	- [Enable/disable annotations](customize-cards.md#annotations)
 	- [Define inline test behavior on cards](customize-cards.md#tests) 
 
-::: moniker-end
-
-::: moniker range="tfs-2015"
-- Configure boards:
-	- [Add columns](add-columns.md)
-	- [Set WIP limits](wip-limits.md)  
-	- [Set Definition of Done](definition-of-done.md)  
-	- [Add swimlanes](expedite-work.md)
-	- [Define card reordering](reorder-cards.md)
-	- [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md)
-	- [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
-- Configure card displays:
-	- [Add or remove fields from cards](customize-cards.md)
-	- [Define card styles](customize-cards.md#style-rule)
-	- [Apply tag colors](customize-cards.md#color-tags)
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-- [Add columns](add-columns.md)  
-- [Set WIP limits](wip-limits.md)  
-- [Set Definition of Done](definition-of-done.md)
-- [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
-::: moniker-end
-
 Along with these team configurations, you can [customize a project](#customize) by adding or modifying work item types, the workflow, and add customized portfolio backlogs and boards. 
 
 
@@ -123,17 +92,9 @@ Along with these team configurations, you can [customize a project](#customize) 
 
 ## Update work item status
 
-::: moniker range=">= tfs-2015"
-
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. 
-::: moniker-end
 
 ## Use the Cumulative Flow Diagram to monitor metrics
 
@@ -197,7 +158,7 @@ By design, the team with the longest area path wins the conflict and determines 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
  The primary work-around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states that all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
 ::: moniker-end
  

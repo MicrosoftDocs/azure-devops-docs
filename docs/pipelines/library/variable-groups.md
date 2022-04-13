@@ -7,23 +7,18 @@ ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
 ms.date: 09/03/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Add & use variable groups
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Variable groups store values and secrets that you might want to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group) or make available across multiple pipelines. You can share and use variables groups in multiple pipelines in the same project.
 
 Variables groups are [protected resources](../security/resources.md). You can add approvals and checks to these variables and set pipeline permissions.
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker range="< tfs-2018"
-> [!NOTE]
-> Variable groups can be used in a build pipeline only Azure DevOps and TFS 2018.
-::: moniker-end
 
 ## Create a variable group
 
@@ -234,7 +229,7 @@ To authorize the group, use one of the following techniques:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 YAML builds aren't available on TFS.
 

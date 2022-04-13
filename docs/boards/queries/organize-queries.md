@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -69,7 +69,7 @@ The following example shows how to find all closed bugs by modifying the
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
@@ -133,7 +133,7 @@ For shared queries, you can also choose to do one of these tasks:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
 
@@ -185,7 +185,7 @@ You add query folders from the **Boards>Queries>All** page.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You add query folders from the **Boards>Queries** page.
 
@@ -215,11 +215,8 @@ A **New Folder** is added under the area you selected. Select the folder to rena
 
 * * * 
 
-
-
 <a id="favorite-query">  </a>
 
-::: moniker range=">= tfs-2015"
 
 ## Add a query to the dashboard or share it with your team 
 
@@ -229,7 +226,7 @@ Share queries with your team by adding them to a folder under the **Shared Queri
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
-::: moniker-end
+
 
 
 ## Related articles

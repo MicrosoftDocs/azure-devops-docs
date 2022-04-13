@@ -387,7 +387,7 @@ The articles in this series were updated from a previous white paper developed i
 
 
 <!---
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 ![SAFe® architectural overview &copy; D. Leffingwell](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
 

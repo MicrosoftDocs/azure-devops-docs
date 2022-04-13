@@ -8,13 +8,13 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.reviewer: gopinach
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 07/23/2020 
 ---
 
 # Keyboard shortcuts for managing Wiki pages
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  

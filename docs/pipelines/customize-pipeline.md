@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 07/21/2021
+ms.date: 04/01/2022
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -25,8 +25,12 @@ Follow instructions in [Create your first pipeline](create-first-pipeline.md) to
 
 A pipeline is defined using a YAML file in your repo. Usually, this file is named `azure-pipelines.yml` and is located at the root of your repo.
 
-* Navigate to the **Pipelines** page in Azure Pipelines and select the pipeline you created.
-* Select **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. Examine the contents of the YAML file.
+Navigate to the **Pipelines** page in Azure Pipelines, select the pipeline you created, and choose **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. 
+
+> [!NOTE]
+> For instructions on how to view and manage your pipelines in the Azure DevOps portal, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
+
+Examine the contents of the YAML file.
 
    ```yaml
     trigger:
@@ -240,7 +244,7 @@ From the **Pipeline settings** pane you can configure the following settings.
 
   * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
 
-### Create work item on failure
+## Create work item on failure
 
 YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work-items/create) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command at the desired point in your pipeline. 
 
@@ -293,9 +297,12 @@ jobs:
 
 The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The second `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 
-The second job in the pipeline has a dependency on the first pipeline and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az-boards-work-item-create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
+The second job in the pipeline has a dependency on the first job and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
 
 This example uses two jobs, but this same approach could be used across [multiple stages](process/stages.md).
+
+> [!NOTE]
+> You can also use a marketplace extension like [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) which has support for YAML multi-stage pipelines.
 
 ## Next steps
 

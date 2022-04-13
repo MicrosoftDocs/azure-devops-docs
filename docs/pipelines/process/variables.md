@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.date: 07/27/2021
 
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Define variables
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -619,6 +619,7 @@ stages:
     - task: MyTask@1  # this step generates the output variable
       name: ProduceVar  # because we're going to depend on it, we need to name the step
 - stage: Two
+  jobs:
   - job: B
     variables:
       # map the output variable from A into this job

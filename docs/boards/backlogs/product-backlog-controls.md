@@ -63,7 +63,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       **Board**  
@@ -218,7 +218,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="":::
       ![Filter](../media/icons/filter-icon.png)    

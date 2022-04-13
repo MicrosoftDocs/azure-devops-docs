@@ -8,23 +8,18 @@ ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'  
-ms.date: 02/14/2022
+monikerRange: '<= azure-devops'  
+ms.date: 04/04/2022
 ---
 
 # Out Of Box widget catalog 
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-::: moniker range=">= tfs-2018"
+
 Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another. To learn how, see [Add a widget to a dashboard](add-widget-to-dashboard.md). 
 
 For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
-::: moniker-end
-
-::: moniker range="< tfs-2018"
-Widgets display information and charts on dashboards. Many widgets are configurable and scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard as described in [Add a widget to a dashboard](add-widget-to-dashboard.md). For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
-::: moniker-end
 
 ![Build history widget](media/widget-build-history-chart.png)   
 
@@ -44,15 +39,9 @@ Widgets listed in the following table are provided out-of-box. They're organized
 - **User**: Widget is scoped to the logged in user account
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 - **Build**: Widget derives data for a selected build pipeline  
 - **Release**: Widget derives data for a selected release pipeline  
-- **Team**: Widget is scoped to a single team  
-- **User**: Widget is scoped to the logged in user account
-::: moniker-end
-
-::: moniker range="tfs-2015"
-- **Build**: Widget derives data for a selected build pipeline  
 - **Team**: Widget is scoped to a single team  
 - **User**: Widget is scoped to the logged in user account
 ::: moniker-end
@@ -97,7 +86,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
       - [Velocity](#velocity-widget) (Analytics)  
       - [Work links](#work-links-widget)  
       ::: moniker-end
-      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      ::: moniker range="tfs-2018"
       **Work**
       - [Assigned to me](#assigned-to-me-widget) (User)
       - [Chart for work items](#chart-wit-widget)  
@@ -109,19 +98,8 @@ Widgets listed in the following table are provided out-of-box. They're organized
       - [Sprint overview](#sprint-overview-widget)  
       - [Work links](#work-links-widget)  
       ::: moniker-end
-      ::: moniker range="tfs-2015"
-      **Work**
-      - [Chart for work items](#chart-wit-widget)  
-      - [New Work item](#new-work-item-widget)  
-      - [Query results](#query-results-widget)  
-      - [Query tile](#query-tile-widget)  
-      - [Sprint burndown](#sprint-burndown-widget)  
-      - [Sprint capacity](#sprint-capacity-widget)  
-      - [Sprint overview](#sprint-overview-widget)  
-      - [Work links](#work-links-widget)  
-      ::: moniker-end
       ---
-      ::: moniker range="<= tfs-2018"
+      ::: moniker range="tfs-2018"
       **Repos** 
       - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
       - [Pull request](#pull-request-widget) (Team, User)
@@ -153,7 +131,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
       - [Visual Studio Shortcuts](#visual-studio-widget) 
       - [Welcome](#how-to-widget) 
       ::: moniker-end
-      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      ::: moniker range="tfs-2018"
       **Build & Release**
       - [Build history](#build-history-widget) (Build pipeline)
       - [Deployment status](#deployment-status-widget) (Build pipeline)
@@ -174,36 +152,9 @@ Widgets listed in the following table are provided out-of-box. They're organized
       - [Visual Studio Shortcuts](#visual-studio-widget) 
       - [Welcome](#how-to-widget) 
       ::: moniker-end
-      ::: moniker range="tfs-2017"
-      **Information and links**
-      - [Embedded Webpage](#embedded-webpage-widget)   
-      - [Markdown](#markdown-widget)  
-      - [Other links](#other-links-widget-2018)  
-      - [Team members](#team-members-widget) (Team) 
-      - [Team room](#team-room-widget) (Team) 
-      - [Visual Studio Shortcuts](#visual-studio-widget) 
-      - [Welcome](#how-to-widget) 
-      ::: moniker-end
-      ::: moniker range="tfs-2015"
-      **Build**
-      - [Build history](#build-history-widget) (Build pipeline)
-      ---
-      **Information and links**
-      - [Markdown](#markdown-widget)  
-      - [Other links](#other-links-widget-2018)  
-      - [Team members](#team-members-widget) (Team) 
-      - [Team room](#team-room-widget) (Team) 
-      - [Visual Studio Shortcuts](#visual-studio-widget) 
-      - [Welcome](#how-to-widget) 
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
 ---
- 
-::: moniker range="tfs-2015"
-> [!NOTE]   
-> Widgets and multiple dashboards are not supported features in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
-::: moniker-end
 
 ## Prerequisites
 
@@ -220,18 +171,11 @@ Widgets listed in the following table are provided out-of-box. They're organized
 - To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
 ::: moniker-end
 
-::: moniker range="tfs-2017 || tfs-2018"
+::: moniker range="tfs-2018"
 
 - To add widgets to a dashboard, you must be a member of a project. If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
 - To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
-::: moniker-end
-
-::: moniker range="tfs-2015"
-- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- To add widgets from the marketplace, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md). 
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).    
-
 ::: moniker-end
 
 > [!NOTE]
@@ -241,7 +185,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
 ## Azure Boards widgets 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ## Work widgets 
 ::: moniker-end
 
@@ -249,7 +193,7 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
 
 In addition to the widgets listed here, you can add a work item query chart to your dashboard. To learn more, see [Track progress with status and trend query-based charts](charts.md).
 
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="1":::
       ### Assigned to me  
@@ -261,7 +205,6 @@ In addition to the widgets listed here, you can add a work item query chart to y
       Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items and other work item types which are not aligned to any backlogs.
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
@@ -302,11 +245,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       <a id="chart-wit-widget" />   
       Adds a tile to display a progress or trend chart that builds off a shared work item query.   
         
-      From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).     
-      
-      ::: moniker range="tfs-2015"  
-      Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.  
-      ::: moniker-end  
+      From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).      
    :::column-end:::
 :::row-end:::  
 ::: moniker range=">= azure-devops-2019"
@@ -366,9 +305,6 @@ In addition to the widgets listed here, you can add a work item query chart to y
       Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default **Area Path**. The **Iteration Path** assigned matches the last **Iteration Path** assigned to a work item by the currently signed in user.  
       
       To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.1 or later version. 
-      ::: moniker-end
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -467,19 +403,9 @@ In addition to the widgets listed here, you can add a work item query chart to y
       <br/>
       <a id="sprint-overview-widget"></a>      
       
-      
-      ::: moniker range=">= tfs-2017"
       Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items.    
       
       Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
-      ::: moniker-end   
-      
-      
-      ::: moniker range=" tfs-2015"
-      Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started.    
-      
-      Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2019"
@@ -519,7 +445,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
 ## Azure Repos widgets 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 ## Code widgets
 ::: moniker-end
 
@@ -558,18 +484,11 @@ Add code tracking widgets to track changes made within a repository or get quick
 Add build and release pipeline widgets to track the health of your builds and releases.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 ## Build and Release widgets
 
 Add build and release pipeline widgets to track the health of your builds and releases.  
 ::: moniker-end
-
-
-::: moniker range="tfs-2015"
-## Build and Release widgets
-Add the Build History pipeline widget to track the health of your builds.  
-::: moniker-end
-
 
 :::row:::
    :::column span="1":::
@@ -584,7 +503,6 @@ Add the Build History pipeline widget to track the health of your builds.
       Hover over a bar to learn how long the build took to complete. Select the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       ### Deployment status 
@@ -597,10 +515,8 @@ Add the Build History pipeline widget to track the health of your builds.
       To view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate.   
       
       You can choose any cell to see a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
-      Requires TFS 2017.1 or later version. 
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
@@ -616,7 +532,6 @@ Add the Build History pipeline widget to track the health of your builds.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       ### Requirements quality 
@@ -630,21 +545,19 @@ Add the Build History pipeline widget to track the health of your builds.
       To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
    :::column-end:::
 :::row-end:::
-::: moniker-end
 
 
 ::: moniker range=">= azure-devops-2019"
 ## Azure Test Plans widgets 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 ## Test widgets  
 ::: moniker-end
 
 
 Add test tracking widgets to your dashboards to show status, progress, or trends of your testing efforts. In addition to the widgets listed here, you can add test tracking charts to your dashboard. To learn more, see [Track test status](../../test/track-test-status.md).
 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       ### Chart for test plans  
@@ -658,8 +571,6 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
       To learn more, see [Track your test results](../../test/track-test-status.md).
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       ### Test results trend 
@@ -675,7 +586,6 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
       To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md)
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
@@ -703,7 +613,6 @@ Add one or more of the following widgets to support adding:
 - Links to features
 - Functions your team accesses often
 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       ### Embedded web page 
@@ -717,7 +626,6 @@ Add one or more of the following widgets to support adding:
       Only webpages that allow [iframe embedding](https://go.microsoft.com/fwlink/?LinkId=808035) are supported.
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
       ### Markdown 
@@ -727,19 +635,9 @@ Add one or more of the following widgets to support adding:
       <br/>
       <a id="markdown-widget"></a>  <a id="markdown"></a>   
       
-      ::: moniker range=">= tfs-2017"
       Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team.    
       
-      To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
-      ::: moniker-end   
-      
-      
-      ::: moniker range="tfs-2015"
-      Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team.    
-      
       To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md).  
-      Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
-      ::: moniker-end
    :::column-end:::
 :::row-end::: 
 ::: moniker range=">= azure-devops-2019"
@@ -772,7 +670,7 @@ Add one or more of the following widgets to support adding:
       
       ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
       - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)  
-      - [View process guidance](../../project/configure-or-redirect-process-guidance.md)  
+      - [View process guidance](/previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true)  
       - [View reports](../sql-reports/reporting-services-reports.md)  
       
       To add or update reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
@@ -795,23 +693,6 @@ Add one or more of the following widgets to support adding:
       > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members).  
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2015 <= tfs-2017"
-:::row:::
-   :::column span="1":::
-      ### Team room  
-      ![Team room widget](media/widget-team-room.png) 
-   :::column-end:::
-   :::column span="1":::
-      <br/>
-      <a id="team-room-widget"></a> 
-      Provides status and access to [team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room). Available for TFS 2015.1 through TFS 2017.2 versions.  
-      Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create more team rooms.     
-      
-      > [!NOTE]  
-      > Team Rooms have been deprecated as described in [Deprecation of Team Rooms](https://devblogs.microsoft.com/devops/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
       ### Visual Studio Shortcuts 

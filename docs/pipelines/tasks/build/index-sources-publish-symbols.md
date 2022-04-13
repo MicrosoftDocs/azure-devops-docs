@@ -7,13 +7,13 @@ ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.author: shashban
 author: shashban
 ms.date: 12/08/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Index Sources & Publish Symbols task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 

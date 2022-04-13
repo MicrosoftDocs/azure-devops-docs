@@ -6,12 +6,12 @@ ms.technology: devops-code-git
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.topic: overview
 ms.date: 06/01/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # About branches and branch policies
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Branch policies are an important part of the Git workflow and enable you to:
 
@@ -48,7 +48,7 @@ The following table summarizes the policies you can define to customize a branch
       Require approval from a specified number of reviewers on pull requests.
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="2":::
       [**Check for linked work items**](branch-policies.md#check-linked-wi)
@@ -60,8 +60,7 @@ The following table summarizes the policies you can define to customize a branch
       Encourage traceability by checking for linked work items on pull requests
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="2":::
       [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
@@ -73,7 +72,7 @@ The following table summarizes the policies you can define to customize a branch
       Check to see that all comments have been resolved on pull requests.
    :::column-end:::
 :::row-end:::
-::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::

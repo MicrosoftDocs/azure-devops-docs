@@ -1,29 +1,23 @@
 ---
 title: Build your GCC C/C++ app
 ms.custom: seodec18
-description: Learn how you can use continuous integration in Azure Pipelines or Team Foundation Server (TFS) to automatically build your GCC C/C++ app.
+description: Learn how you can use continuous integration in Azure Pipelines to automatically build your GCC C/C++ app.
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
-ms.date: 03/17/2021
+ms.date: 04/04/2022
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build your GCC C/C++ app
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
-
-::: moniker range="tfs-2017"
-
-This article applies to TFS 2017.2 and higher.
-
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C/C++ application compiled with GCC/g++.
+Azure Pipelines provides a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C/C++ application compiled with GCC/g++.
 
 ## Prerequisites
 
@@ -39,9 +33,9 @@ Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable c
 https://github.com/adventworks/cpp-gpp-sample
 ```
 
-# [Azure Repos or TFS repo](#tab/vsts)
+# [Azure Repos](#tab/vsts)
 
-[!INCLUDE [include](../includes/get-sample-code-vsts-tfs-2017-update-2.md)]
+[!INCLUDE [include](../includes/get-sample-code-repos-update-2.md)]
 
 # [GitHub repo](#tab/github)
 
@@ -106,21 +100,6 @@ https://github.com/adventworks/cpp-gpp-sample
       Version | `3.*` or later
       Type    | `Inline`
       Script  | `make`
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-  ### TFS 2017.2
-
-  1. Search for the **Command Line** task and click **Add** to add it to your build.
-
-  1. Click the **Command Line** task and set its field values as follows:
-
-      Field        | Value
-      ------------ | -----
-      Display name | `Build C++ application`
-      Tool         | `make`
 
 ::: moniker-end
 

@@ -9,10 +9,10 @@ metadata:
   ms.author: chcomley
   author: chcomley
   ms.date: 12/30/2019
-  monikerRange: '>= tfs-2015'
+  monikerRange: '<= azure-devops'
 title: Notifications FAQS
 summary: |
-  [!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
   
 
 sections:

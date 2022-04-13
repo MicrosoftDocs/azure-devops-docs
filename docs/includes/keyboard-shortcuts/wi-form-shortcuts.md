@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 <a id="work-item-form-shortcuts"></a>
@@ -59,12 +60,8 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017"
   
 ## Rich text field shortcuts
-
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -84,7 +81,7 @@ You can use the following keyboard shortcuts when working in a web browser on on
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range="<= azure-devops-2019"  
 
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 

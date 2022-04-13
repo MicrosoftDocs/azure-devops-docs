@@ -6,13 +6,13 @@ ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Manage and store large files in Git
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Git is great at keeping the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed. 
 Large files that don't compress well and change entirely between versions (such as binaries) present problems when stored in your Git repos. 

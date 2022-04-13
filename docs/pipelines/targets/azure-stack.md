@@ -80,23 +80,25 @@ The following code snippets are written for a Windows machine using the PowerShe
 
     ```azurecli  
     az login --service-principal -u "<client-id>" -p "<secret>" --tenant "<tenant-ID>" --allow-no-subscriptions
-    az account show --sdk-auth
+    az account show
     ```
 
 6. Check the resulting JSON object. You’ll use the JSON object to create your service connection. The JSON object should have the following attributes:
 
     ```json
     {
-      "clientId": <Application ID for the SPN>,
-      "clientSecret": <Client secret for the SPN>,
-      "subscriptionId": <Subscription ID for the SPN>,
+      "environmentName": "<Environment name>",
+      "homeTenantId": <Tenant ID for the SPN>,
+      "id": <Application ID for the SPN>,
+      "isDefault": true,
+      "managedByTenants": [],
+      "name": "<Tenant name>",
+      "state": "Enabled",
       "tenantId": <Tenant ID for the SPN>,
-      "activeDirectoryEndpointUrl": "https://login.microsoftonline.com/",
-      "resourceManagerEndpointUrl": "https://management.<FQDN>",
-      "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-      "sqlManagementEndpointUrl": "https://notsupported",
-      "galleryEndpointUrl": "https://providers.<FQDN>:30016/",
-      "managementEndpointUrl": "https://management.<FQDN>"
+      "user": {
+        "name": "<User email address>",
+        "type": "user"
+      }
     }
     ```
 

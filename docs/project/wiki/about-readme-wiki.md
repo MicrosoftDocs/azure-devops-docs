@@ -10,28 +10,14 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: overview
 ms.date: 07/23/2020  
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
-
 
 # About Wikis, READMEs, and Markdown
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
-
-::: moniker range=">= tfs-2018"
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project Wiki, content you add to a dashboard, your team project README file, or other repository README file.  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
-
-::: moniker-end
-
-
-::: moniker range=">= tfs-2018"
 
 ## Wiki
 
@@ -42,8 +28,6 @@ Use your team project wiki to share information with other team members. When yo
 > [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
 
 <br/> 
-
-::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
@@ -120,16 +104,11 @@ There are significant differences between how you manage the content for a wiki 
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2015"
-
 ## Markdown
 
 Markdown makes it easy to format text and include images. You can also link to documents within your project pages, README files, dashboards, and pull request comments.
 
 You can provide guidance to your team in the following places using Markdown:
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
   
@@ -145,15 +124,6 @@ You can provide guidance to your team in the following places using Markdown:
 ::: moniker range="tfs-2018"
   
 - [Add and edit wiki pages](add-edit-wiki.md)
-- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
-- [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
 - [Repository README files](../../repos/git/create-a-readme.md)
@@ -183,5 +153,3 @@ Here are some great READMEs that use this format and speak to all audiences, for
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
-
-

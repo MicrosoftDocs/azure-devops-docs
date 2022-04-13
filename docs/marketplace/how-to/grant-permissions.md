@@ -7,12 +7,12 @@ ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage extension permissions
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -20,7 +20,7 @@ Learn how to grant permissions to users or groups for managing extensions. Exten
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 < azure-devops"
+::: moniker range="< azure-devops"
 
 Learn how to grant permissions for publishing or updating extensions for users or groups.
 
@@ -66,7 +66,7 @@ Learn how to grant permissions for publishing or updating extensions for users o
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#permissions) command-line tool.
 
@@ -98,9 +98,10 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
     ```
     tfssecurity /g+ "[TEAM FOUNDATION]\TFS Extension Publishers" n:User /server:ServerURL
     ```
+    ```
 
-You can add users later to "TFS Extension Publishers". This permission is a server-level permission, 
-so updating and deleting an extension affects all the project collections that use the extension.
+You can add users later to "TFS Extension Publishers". This permission is a server-level permission. 
+Updating and deleting an extension affects all the project collections that use the extension.
 
 ::: moniker-end
 

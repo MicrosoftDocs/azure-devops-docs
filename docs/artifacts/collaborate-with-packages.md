@@ -5,13 +5,13 @@ ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.technology: devops-artifacts
 ms.date: 01/13/2022
 ms.topic: reference
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Collaborate more and build faster with componentization
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Your product is successful, your organization is growing, and it's time to scale up your codebase to match this success. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 

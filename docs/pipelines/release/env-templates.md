@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/03/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Stage templates
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Pipelines provide a list of stage templates you can choose from when creating a new release pipeline or adding a stage to your existing one. The templates are predefined with the appropriate tasks and settings to help you save time and effort when creating your release pipeline.
 

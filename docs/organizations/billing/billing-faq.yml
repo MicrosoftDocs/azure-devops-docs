@@ -10,10 +10,10 @@ metadata:
   ms.author: chcomley
   author: chcomley
   ms.date: 03/07/2022
-  monikerRange: '>= tfs-2015'
+  monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
-  [!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
   In this article, find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   

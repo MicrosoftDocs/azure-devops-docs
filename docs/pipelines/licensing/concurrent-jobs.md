@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
 ms.date: 02/25/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Configure and pay for parallel jobs
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="< azure-devops-2019"
 
@@ -109,11 +109,6 @@ When the free tier is no longer sufficient for your self-hosted private project,
 
 ---
 
-::: moniker-end
-
-::: moniker range="= tfs-2015"
-
-> Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
 ::: moniker-end
 
 

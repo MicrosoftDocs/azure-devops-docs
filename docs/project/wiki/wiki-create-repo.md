@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 03/05/2021
 ---
 
 # Create a Wiki for your project
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to open a wiki and provision a Git repo for your wiki.
 
@@ -46,7 +46,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 <= azure-devops-2020"
+::: moniker range=" <= azure-devops-2020"
 
 * You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
 * You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
@@ -94,7 +94,7 @@ However, you can get to it from the following URL:
 `https://dev.azure.com/<OrgName>/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range=" < azure-devops"
 `https://<ServerName>/DefaultCollection/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 

@@ -3,8 +3,9 @@ title: Migrate your packages to Azure Artifacts
 description: Use a PowerShell to easily migrate your packages to an Azure Artifacts Feed
 ms.technology: devops-artifacts
 ms.reviewer: elbatk 
-ms.date: 12/02/2021
+ms.date: 01/20/2022
 monikerRange: 'azure-devops'
+"recommendations": "true"
 ---
 
 # Migrate NuGet packages to Azure Artifacts
@@ -16,8 +17,8 @@ Using the `AzureArtifactsPackageMigration` PowerShell module, you can easily mig
 In this article, you'll learn how to:
 
 > [!div class="checklist"]  
-> * Install PowerShell module.
-> * Connect to Azure Artifacts.
+> * Install the *AzureArtifactsPackageMigration* PowerShell module.
+> * Connect to Azure Artifacts feeds.
 > * Migrate NuGet packages.
 
 ## Prerequisites
@@ -36,20 +37,21 @@ In this article, you'll learn how to:
  
 1. Run the following commands to install the `AzureArtifactsPackageMigration` PowerShell module and import it into your current session.
 
-```PowerShell
-Install-Module -Name AzureArtifactsPackageMigration -Scope CurrentUser -Force
-Import-Module -Name AzureArtifactsPackageMigration
-```
+    ```PowerShell
+    Install-Module -Name AzureArtifactsPackageMigration -Scope CurrentUser -Force
+    Import-Module -Name AzureArtifactsPackageMigration
+    ```
+
 ### [Linux/macOS](#tab/Linux/)
 
 1. Open a terminal and run the `pwsh` command to start PowerShell. 
  
 1. Run the following commands to install the `AzureArtifactsPackageMigration` module and import it into your current session.
 
-```PowerShell
-Install-Module -Name AzureArtifactsPackageMigration -Scope CurrentUser -Force
-Import-Module -Name AzureArtifactsPackageMigration
-```
+    ```PowerShell
+    Install-Module -Name AzureArtifactsPackageMigration -Scope CurrentUser -Force
+    Import-Module -Name AzureArtifactsPackageMigration
+    ```
 
 * * *
 
@@ -98,19 +100,20 @@ If your myget feed is private, you will need to create a password to authenticat
 1. Run the following command to migrate your packages to Azure Artifacts;
 
     - **Migrate from a private source feed**:
-
-    ```PowerShell
-      Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -SourceUsername '<MYGET_USERNAME>' -SourcePassword $password -Verbose
-    ```
+    
+        ```PowerShell
+          Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -SourceUsername '<MYGET_USERNAME>' -SourcePassword $password -Verbose
+        ```
 
     - **Migrate from a public source feed**:
-
-    ```PowerShell
-      Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -Verbose
-    ```
+    
+        ```PowerShell
+          Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -Verbose
+        ```
 
 ## Related articles
 
 - [Publish NuGet packages (CLI)](../nuget/publish.md)
 - [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
 - [NuGet.org upstream source](../nuget/upstream-sources.md)
+- [Package migration repository](https://github.com/microsoft/azure-artifacts-migration)

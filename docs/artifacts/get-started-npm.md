@@ -6,17 +6,17 @@ ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
 ms.date: 02/14/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Get started with npm packages in Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can publish and download npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your own feed, setting up your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## License the Azure Artifacts extension
 
@@ -133,7 +133,7 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select **Packages**, and then select **Connect to feed**.
 

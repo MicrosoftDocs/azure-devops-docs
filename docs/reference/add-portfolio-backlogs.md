@@ -26,7 +26,7 @@ Your project comes equipped with two portfolio backlogs: Features and Epics. How
 Portfolio backlogs are useful for organizing your backlog under business initiatives. When you [organize your backlogs into portfolios](../boards/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented. 
 
 > [!NOTE]    
-> If you haven't yet enabled the Portfolio Backlogs feature for your on-premises Azure DevOps project, [do that first](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
+> If you haven't yet enabled the Portfolio Backlogs feature for your on-premises Azure DevOps project, [do that first](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true).  
 
 Here, we add a third portfolio backlog, Initiative. With it, the management team can set priorities and view progress of work belonging to initiatives.  
 

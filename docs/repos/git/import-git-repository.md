@@ -5,7 +5,7 @@ description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure Dev
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.technology: devops-code-git 
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 02/23/2022
 ---
 
@@ -15,7 +15,7 @@ ms.date: 02/23/2022
 
 This article shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps project.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 >[!IMPORTANT]
 >The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS 2017.1 to TFS 2018.1. For more information about this issue, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html)
@@ -37,7 +37,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 - An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 - To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 - To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
@@ -45,7 +45,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 - If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="< azure-devops"
 - An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 - To create or import a repository, you must be a member of the Project Administrators security group, or have the Git project-level **Create repository** permission set to **Allow**. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 - To use the Azure DevOps **Import repository** feature, you must have TFS 2017 Update 1 or higher. 
@@ -73,7 +73,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 From the repo drop-down, select **Import repository**.
 
@@ -98,7 +98,7 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 > The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Manually import a repo using az repos CLI
 
@@ -196,8 +196,6 @@ az repos import create --git-source-url https://github.com/fabrikamprime/fabrika
 }
 ```
 
-
-
 ::: moniker-end
 
 <a id="manual-import-git-cli" /> 
@@ -240,7 +238,6 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 
 ## Frequently asked questions
 
-::: moniker range=">= tfs-2017"
 
 Although most of the time the import is successful, the following conditions can cause problems.
 
@@ -264,7 +261,7 @@ The import service uses the [multi_ack](https://git-scm.com/book/en/v2/Git-Inter
 If the source repository does not provide this capability, the import service can fail to import from the given source.
 This failure can happen when creating import request or while import is in progress.
 
-::: moniker-end
+
 
 
 ### Can I import from previous versions of Team Foundation Server?
@@ -273,7 +270,7 @@ If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then
 This happens because of a contract mismatch between the latest Azure DevOps Services/TFS and pre-2017 RTM versions of TFS.
  
 
-::: moniker range=">= tfs-2017"
+
 
 ### Can I use MSA-based credentials?
 
@@ -319,7 +316,7 @@ git fetch upstream --tags
 git push origin --all
 ```
 
-::: moniker-end
+
 
 ## Next steps
 

@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: how-to
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
 ---
 
 # Share steps between test cases
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Many manual tests require performing an identical sequence of steps and test data. For example, logging in to a web app or saving form data are common steps performed in several test sequences. With the use of **Shared Steps** and **Shared Parameters** work items, you can minimize the creation of test steps and data that you need to enter and manage. **Shared Steps** define a sequence of steps that can be referenced by many different test cases. Similarly, **Shared Parameters** define a set of test data that can be referenced by many different test cases. These work item types are explicitly linked with the **Test Cases/Shared Steps** and **Reference By/References** link types as shown in the following image.
 

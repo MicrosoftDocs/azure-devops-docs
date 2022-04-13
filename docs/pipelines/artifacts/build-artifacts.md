@@ -5,12 +5,12 @@ ms.custom: seodec18
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.date: 02/19/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Artifacts in Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
@@ -42,7 +42,7 @@ Artifacts can be published at any stage of your pipeline. You can use YAML or th
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -85,7 +85,7 @@ The text file should be at the root of your repository.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -134,7 +134,7 @@ In a real world scenario, you probably won't need to publish two copies of the s
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -211,7 +211,7 @@ You can download an artifact directly from a pipeline for use in debugging.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -274,7 +274,7 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
@@ -287,7 +287,7 @@ From here, you can explore or download the artifacts.
 
 You can also use Azure Pipelines to deploy your app by using the artifacts that you've published. See [Artifacts in Azure Pipelines releases](../release/artifacts.md).
 
-::: moniker range=">=tfs-2015 < azure-devops-2019"
+::: moniker range="tfs-2018"
 <a name="unc-file-share" />
 
 ## Publish from TFS to a UNC file share

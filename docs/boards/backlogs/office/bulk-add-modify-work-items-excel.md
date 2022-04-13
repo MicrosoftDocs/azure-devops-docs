@@ -9,7 +9,7 @@ author: KathrynEE
 ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -62,7 +62,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 - Installed Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
@@ -72,17 +72,6 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 - To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
 - To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md). 
 - To use the [Select User](#select-user) feature, install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2015" 
-
-
-- Installed Microsoft 2007, Microsoft Excel 2010, or Microsoft Excel 2013 
-- Installed Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md).   
 
 ::: moniker-end  
 
@@ -684,7 +673,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
-- [View and add work items, az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) 
+- [View and add work items](../../work-items/view-add-work-items.md) 
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  

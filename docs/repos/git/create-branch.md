@@ -78,14 +78,7 @@ The main page of your repo now shows the files in your new branch.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-> [!IMPORTANT]
-> Users of TFS 2015 and previous won't have the **Branches** tab in the **Code** view. When using those versions, you can create a new branch in TFS from the **Code** view by selecting the dropdown list next to the branch name and then selecting **New branch**.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. View your repo's branches by selecting **Branches** while viewing your repo on the web.
 
@@ -175,7 +168,7 @@ git checkout <existing branch name>
 To create and switch to a branch in one command, use the `git checkout` command with the `-b` flag.
 
 ```Git CLI
-git checkout -b <existing branch name>
+git checkout -b <new branch name>
 ```
 
 > [!TIP]

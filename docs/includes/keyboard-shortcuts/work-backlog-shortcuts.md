@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 
@@ -50,7 +51,7 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 
 ::: moniker-end
 
-::: moniker range="<=tfs-2018"
+::: moniker range="tfs-2018"
 
 You can use the following keyboard shortcuts when working from a **Work**>**Backlogs** page. These shortcuts work when you are on a product backlog, portfolio backlog, or sprint backlog page.    
 <br/>
