@@ -1,12 +1,12 @@
 ---
 title: Manage personal access tokens using policies
 titleSuffix: Azure DevOps
-description: Learn how to turn on policies that restrict the scope and lifespan of newly created user PATs.
+description: Learn how to turn on policies that restrict the scope and lifespan of newly created user PATs and opt out of automatic revocation of leaked PATs.
 ms.technology: devops-accounts
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 08/18/2021
+ms.date: 04/13/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps. These policies can be turned on or off. By default, they're set to *off*.
+Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps. You can also opt out of automatic revocation of leaked PATs. These policies can be turned on or off. By default, they're set to *off*.
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction.
@@ -78,6 +78,20 @@ The Azure DevOps Administrator in Azure AD defines the maximum lifespan of a PAT
 > We recommend using groups with your tenant policy allow list(s). If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 Users or groups on the allowlist are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**. Each policy has its own allowlist. If a user is on the allowlist for one policy, any other activated policies still apply. In other words, if you want a user to be exempt from all policies, you should add them to each allowlist.
+
+## Revoke leaked PATs automatically
+
+The [Azure DevOps Administrator in Azure AD](azure-ad-tenant-policy-restrict-org-creation.md#prerequisites) can set the policy that automatically revokes leaked PATs. This policy applies to all PATs within all organizations linked to your Azure AD tenant. Enabling this policy means that Azure DevOps PATs checked into public GitHub repositories will be automatically revoked. Disabling this policy means that PATs checked into public GitHub repositories will remain and could compromise your Azure DevOps account and data, putting your applications and services at significant risk.
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. In the Azure Active Directory tab, find the "Automatically revoke leaked personal access tokens" policy and move the toggle to *on*.
+
+   :::image type="content" source="media/tenant-policy-automatically-revoke-leaked-pats.png" alt-text="Image of policy with toggled moved to ON position for automatically revoking leaked PATs.":::
 
 ## Next steps
 
