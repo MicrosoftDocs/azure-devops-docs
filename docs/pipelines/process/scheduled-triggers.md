@@ -462,7 +462,7 @@ YAML is not supported in TFS.
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> The [Skip scheduled builds if nothing has changed in the repo](/azure/devops/release-notes/2017/dec-11-vsts#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) support described in this section is supported in TFS 2018.2 and higher.
+> The [Skip scheduled builds if nothing has changed in the repo](/previous-versions/azure/devops/2017/dec-11-vsts#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) support described in this section is supported in TFS 2018.2 and higher.
 
 ::: moniker-end
 
