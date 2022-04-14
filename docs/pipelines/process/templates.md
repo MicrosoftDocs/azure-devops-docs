@@ -178,6 +178,9 @@ resources:
 steps:
  - script: echo "Testing resource template"
 ```
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Use templateContext to pass properties to templates
 
@@ -231,7 +234,9 @@ extends:
       steps:
       - script: echo "Run negative test" 
 ```
+::: moniker-end
 
+::: moniker range=">=azure-devops-2020"
 
 ## Insert a template
 
