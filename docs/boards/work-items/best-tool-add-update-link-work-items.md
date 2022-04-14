@@ -274,7 +274,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
    
    - [Track test status](../../test/track-test-status.md)
-   - [Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
+   - [Order manual tests within suites](/previous-versions/azure/devops/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
    - [Export test plans and test suites](../../test/reference-qa.yml#testcases)
    - [Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)
    
