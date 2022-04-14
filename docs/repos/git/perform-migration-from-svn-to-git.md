@@ -176,6 +176,16 @@ git for-each-ref --format='%(refname)' refs/remotes | % { $_.Replace('refs/remot
 >
 > This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you will have a Git checkout of your repository.
 
+### Migrate only specific revisions
+
+When not specified, git-svn clone will migrate all the revisions from first commit (r1) to HEAD. Should there any case arise, that one needs to migrate only specific set of revisions, the command for git-svn clone, should be appended with an option of -r.
+
+For example, if you need to migrate from rev 100 to HEAD, the command looks like this:
+
+```
+git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "authors-transform.txt" --stdlayout c:\mytempdir -r100:HEAD
+```
+
 ## Update your workflow
 
 Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](/devops/develop/git/centralized-to-git).
