@@ -184,11 +184,13 @@ steps:
 
 ## Use templateContext to pass properties to templates
 
-You can use `templateContext` to pass additional properties to stages, steps, and jobs in a template. Specifically, you can specify `templateContext` with the `jobList`, `deploymentList`, or `stageList` parameter data type. 
+You can use `templateContext` to pass additional properties to stages, steps, and jobs that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
   
-In this example, the parameter `testSet` in `testing-template.yml` has the data type `jobList`. The template references the `testJob.templateContext.expectedHTTPResponseCode`, which gets set in `azure-pipeline.yml` and passed to the template. When response code is 200, the template makes a REST request. When the response code is 500, the template outputs all of the environment variables for debugging. 
+In this example, the parameter `testSet` in `testing-template.yml` has the data type `jobList`. The template `testing-template.yml` creates a new variable `testJob` using the [each keyword](expressions.md#each-keyword). The template then references the `testJob.templateContext.expectedHTTPResponseCode`, which gets set in `azure-pipeline.yml` and passed to the template. 
 
-You can pass multiple `templateContext` properties. 
+When response code is 200, the template makes a REST request. When the response code is 500, the template outputs all of the environment variables for debugging. 
+
+`templateContext` can contain properties. 
 
 ```yaml
 #testing-template.yml
