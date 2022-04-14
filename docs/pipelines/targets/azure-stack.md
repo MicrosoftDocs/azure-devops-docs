@@ -126,24 +126,16 @@ You’ll need an DevOps instance associated with your Azure Stack Hub instance.
 
 Create a service connection. You’ll need the values from your SPN and the name of your Azure Stack Hub subscription.
 
-1. Sign in to [Azure DevOps](https://dev.azure.com/). 
-2. Select **Service connections** > **New service connection**.
-1. Select **Azure Resource Manager** and select **Next**.
-2. Select **Service principal (manual)**.
+1. Sign in to your [Azure DevOps organization](https://dev.azure.com/), and then navigate to your project.
+1. Select **Project settings**, and then select **Service connections**.
+1. Select **Service connections** > **New service connection**.
+1. Select **Azure Resource Manager**, and then select **Next**.
+1. Select **Service principal (manual)**.
+1. Select **Azure Stack** from **Environment**.
+1. Fill out the form, and then select **Verify and save**.
+1. Give your service connection a name. (You will need the service connection name to create your yaml pipeline).
 
-    ![Create a service connection for Azure Stack Hub](.\media\azure-stack\create-service-connection-for-azure-stack-hub.png)
-
-1. Select **Azure Stack** for **Environment**.
-1. Add the value for `managementEndpointUrl` for the **Server URL**.
-1. Select **Subscription** for **Scope Level**.
-1. Add `subscriptionId` and type the name.
-1. Add the name of your subscription for **Subscription Name**.
-1. Add `clientId` for **Service Principal Id**.
-1. Select **Service principal key**.
-1. Add `clientSecret` for the **Service principal key**.
-1. Add `tenantId` for **Tenant ID**.
-1. Select **Verify**.
-1. Add the name of the connection and make a note of it. You’ll add the name of the connection to the yaml document that defines your pipeline in your repository.
+    :::image type="content" source=".\media\azure-stack\create-service-connection-for-azure-stack-hub.png" alt-text="Create a service connection for Azure Stack Hub":::
 
 ## Create your repository and add pipeline
 
