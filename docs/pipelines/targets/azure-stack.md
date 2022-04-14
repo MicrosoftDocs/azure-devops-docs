@@ -88,13 +88,13 @@ The following code snippets are written for a Windows machine using the PowerShe
     ```json
     {
       "environmentName": "<Environment name>",
-      "homeTenantId": <Tenant ID for the SPN>,
-      "id": <Application ID for the SPN>,
+      "homeTenantId": "<Tenant ID for the SPN>",
+      "id": "<Application ID for the SPN>",
       "isDefault": true,
       "managedByTenants": [],
       "name": "<Tenant name>",
       "state": "Enabled",
-      "tenantId": <Tenant ID for the SPN>,
+      "tenantId": "<Tenant ID for the SPN>",
       "user": {
         "name": "<User email address>",
         "type": "user"
@@ -117,10 +117,6 @@ The following code snippets are written for a Windows machine using the PowerShe
 1. Review your web app. Select **Create**.
 1. Select **Go to resource**.
 1. Make note of your app name. You’ll add the name to the yml document that defines your pipeline in your repository.
-
-## Create an DevOps instance
-
-You’ll need an DevOps instance associated with your Azure Stack Hub instance.
 
 ## Create a service connection
 
