@@ -339,7 +339,7 @@ Azure Pipelines exposes a set of predefined variables that you can access and us
 * [TeamCity extension for Continuous Integration](https://www.youtube.com/watch?v=zDZRvc_6UiU)
 * [External TFS extension for Release Management](https://www.youtube.com/watch?v=cR8NzcEmstw)
 
-## Related topics
+## Related articles
 
 * [Release pipelines](index.md)
 * [Stages](../process/stages.md)
