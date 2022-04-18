@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 Git automatically maintains a [history](/devops/develop/git/understand-git-history) of development on a [branch](branch-policies-overview.md) by linking each new [commit](commits.md) to its predecessor. When you [merge](merging.md) one branch into another, the history can become less straightforward. For example, a [no-fast-forward merge](https://git-scm.com/docs/git-merge#_true_merge) combines divergent lines of development by creating a merge commit with multiple predecessors. Conversely, a Git [rebase](https://git-scm.com/docs/git-rebase) combines divergent lines of development without creating a merge commit, which results in a simpler commit history but loses information about the merge. Your choice of [merge type](pulling.md#update-branches-with-merge-or-rebase) is likely influenced by whether you want to preserve a record of the merge or simplify the commit history.
 
-This article discusses when to rebase versus merge, and provides procedures for the following tasks:
+This article discusses when to use a rebase instead of a no-fast-forward merge, and provides procedures for the following tasks:
 
 > [!div class="checklist"]
 > * Rebase your local branch
@@ -37,7 +37,7 @@ Git rebase resequences the commit history of the target branch so that it contai
 During a rebase, if a source branch change conflicts with a target branch change, Git will prompt you to [resolve the merge conflict](merging.md). You can resolve merge conflicts during a rebase in the same way that you resolve merge conflicts during a merge.
 
 
-### When to rebase vs. merge
+### Rebase vs. no-fast-forward merge
 
 Git rebase results in a simpler but less exact commit history than a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge, otherwise known as a _three-way_ or _true_ merge. When you want a record of a merge in the commit history, use a no-fast-forward merge.
 
