@@ -81,9 +81,12 @@ Users or groups on the allowlist are exempt from the restrictions and enforcemen
 
 ## Revoke leaked PATs automatically
 
-The [Azure DevOps Administrator in Azure AD](azure-ad-tenant-policy-restrict-org-creation.md#prerequisites) can manage the policy that automatically revokes leaked PATs. This policy applies to all PATs within all organizations linked to your Azure AD tenant. By default, this policy is set to *on. If Azure DevOps PATs get checked into public GitHub repositories, they're automatically revoked. 
+The [Azure DevOps Administrator in Azure AD](azure-ad-tenant-policy-restrict-org-creation.md#prerequisites) can manage the policy that automatically revokes leaked PATs. This policy applies to all PATs within all organizations linked to your Azure AD tenant. By default, this policy is set to *on*. If Azure DevOps PATs get checked into public GitHub repositories, they're automatically revoked. 
 
-If you disable this policy, any PATs that get checked into public GitHub repositories will remain and could compromise your Azure DevOps organization and data, putting your applications and services at significant risk. With the policy disabled and feature turned off, you still receive an email notification when we find your leaked PAT, but we don't revoke it.
+> [!WARNING]
+> If you disable this policy, any PATs that get checked into public GitHub repositories will remain and could compromise your Azure DevOps organization and data, putting your applications and services at significant risk. With the policy disabled and feature turned off, you still receive an email notification when we find your leaked PAT, but we don't revoke it.
+
+### Turn off automatic revocation of leaked PATs
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -91,9 +94,9 @@ If you disable this policy, any PATs that get checked into public GitHub reposit
 
    ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. In the Azure Active Directory tab, find the *Automatically revoke leaked personal access tokens* policy and move the toggle to *on*.
+3. In the Azure Active Directory tab, find the *Automatically revoke leaked personal access tokens* policy and move the toggle to *off*.
 
-   :::image type="content" source="media/tenant-policy-automatically-revoke-leaked-pats.png" alt-text="Image of policy with toggled moved to ON position for automatically revoking leaked PATs.":::
+The policy is disabled and any PATs that get checked into public GitHub repositories will remain.
 
 ## Next steps
 
