@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-cicd-tasks
 ---
 
-```yml
+```YAML
 # npm v1
 # Install and publish npm packages, or run an npm command. Supports npmjs.com and authenticated registries like Azure Artifacts.
 - task: Npm@1
