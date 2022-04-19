@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-When you [merge or rebase](pulling.md#update-branches-with-merge-or-rebase), you're telling Git to integrate changes made on one branch with changes made on another. Often, Git completes a merge or rebase automatically without your assistance. However, if Git discovers that a change made on one branch conflicts with a change made on another, it prompts you to resolve the conflict. A merge conflict can occur when the merged branches edit the same file line differently, or when one branch modifies a file and another branch deletes it. The process for resolving merge conflicts is applicable to both Git `merge` and a Git `rebase`.
+When you [merge or rebase](pulling.md#update-branches-with-merge-or-rebase), you're telling Git to integrate changes made on one branch with changes made on another. Often, Git completes a merge or rebase automatically without your assistance. However, if Git discovers that a change made on one branch conflicts with a change made on another, it prompts you to resolve the conflict. A merge conflict can occur when the merged branches edit the same file line differently, or when one branch modifies a file and another branch deletes it. The process for resolving merge conflicts is applicable to both Git merge and rebase.
 
 You can resolve merge conflicts in Visual Studio, or by using the command line and any text editor.
 
@@ -29,46 +29,46 @@ This article provides procedures for the following tasks:
 
 ## Understand merge conflicts
 
-Git `merge` or Git `rebase` integrates commits from a source branch into your current local branch (the target branch). Git [merge](https://git-scm.com/docs/git-merge) performs either a [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) or a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge. The no-fast-forward merge is also known as a _three-way_ merge or _true_ merge. Git [rebase](https://git-scm.com/docs/git-rebase) is another type of merge. These merge types are shown in the following diagram.
+Git merge or rebase integrates commits from a source branch into your current local branch (target branch). Git [merge](https://git-scm.com/docs/git-merge) performs either a [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) or a [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge. The no-fast-forward merge is also known as a _three-way_ merge or _true_ merge. Git [rebase](https://git-scm.com/docs/git-rebase) is another type of merge. These merge types are shown in the following diagram.
 
 :::image type="content" source="media/pulling/merge-types.png" border="true" alt-text="Diagram showing the before and after commits when using Git merge and Git rebase.":::
 
-For Git `merge`, if the tip of the target branch exists within the source branch, the default merge type will be a fast-forward merge. Otherwise, the default merge type will be a no-fast-forward merge.
+For Git merge, if the tip of the target branch exists within the source branch, the default merge type will be a fast-forward merge. Otherwise, the default merge type will be a no-fast-forward merge.
 
-A [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) Git `merge` can never have a merge conflict because Git won't apply a fast-forward merge if the tip of the target branch has diverged from the source branch. By default, Git uses a fast-forward merge whenever possible. For example, for a local branch that you don't work in and only update it from a remote branch, Git will apply a fast-forward merge.
+A [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) merge can never have a merge conflict because Git won't apply a fast-forward merge if the tip of the target branch has diverged from the source branch. By default, Git uses a fast-forward merge whenever possible. For example, Git will apply a fast-forward merge on a local branch that you only update by pulling from its remote counterpart branch.
 
-A [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) Git `merge` generates a new target branch "merge commit" that integrates source branch changes with target branch changes. The applicable changes are those made after the last commit that's common to both branches. In the preceding diagram, commit C is the last common commit in both branches. If any source branch change conflicts with any target branch change, then Git will prompt you to resolve the merge conflict. The merge commit (X) contains the integrated source branch and target branch changes. The source and target branch tips (M and E) are the parents of the merge commit. In your branch's [commit history](/azure/devops/repos/git/review-history), a merge commit is a useful marker for a merge operation, and clearly shows which branches were merged.
+A [no-fast-forward](https://git-scm.com/docs/git-merge#_true_merge) merge generates a new target branch "merge commit" that integrates source branch changes with target branch changes. The applicable changes are those made after the last commit that's common to both branches. In the preceding diagram, commit C is the last common commit in both branches. If any source branch change conflicts with any target branch change, then Git will prompt you to resolve the merge conflict. The merge commit (L) contains the integrated source branch and target branch changes. The source and target branch tips (K and E) are the parents of the merge commit. In your branch's [commit history](/azure/devops/repos/git/review-history), a merge commit is a useful marker for a merge operation, and clearly shows which branches were merged.
 
-The Git [rebase](https://git-scm.com/docs/git-rebase) command resequences the commit history of the target branch so that it contains all source branch commits, followed by the target branch commits that occur after the last common commit in both branches. In the preceding diagram, commit C is the last common commit in both branches. If any source branch change conflicts with any target branch change, then Git will prompt you to resolve the merge conflict. As with the fast-forward Git `merge`, Git `rebase` doesn't create a merge commit.
+Git [rebase](https://git-scm.com/docs/git-rebase) resequences the commit history of the target branch so that it contains all source branch commits, followed by all target branch commits since the last common commit. In the preceding diagram, commit C is the last common commit in both branches. Another way to view it is that a rebase replays the changes in your target branch on top of the source branch history. If any source branch change conflicts with any target branch change, then Git will prompt you to resolve the merge conflict. As with the fast-forward merge, a rebase doesn't create a merge commit. Notably, a rebase changes the sequence of the existing target branch commits, which isn't the case for the other merge strategies. In the preceding diagram, commit K' contains the same changes as K, but has a new commit ID because it links back to commit E instead of C.
 
-The Git `merge` and Git `rebase` commands only modify the target branch&mdash;the source branch remains unchanged. When you encounter one or more merge conflicts, you must resolve them to complete the merge or rebase. Or, you can cancel the merge/rebase operation and return the target branch to its prior state.
+Git merge and rebase only modify the target branch&mdash;the source branch remains unchanged. When you encounter one or more merge conflicts, you must resolve them to complete the merge or rebase. Or, you can cancel the merge/rebase operation and return the target branch to its prior state.
 
-For more information on Git `merge` options and strategies, see the [Git reference manual](https://git-scm.com/docs/git-merge#_options) and [Git merge strategies](https://git-scm.com/docs/merge-strategies).
+For more information on merge options and strategies, see the [Git reference manual](https://git-scm.com/docs/git-merge#_options) and [Git merge strategies](https://git-scm.com/docs/merge-strategies).
 
 
 ### When to resolve merge conflicts
 
 Git [merge](https://git-scm.com/docs/git-merge) and Git [rebase](https://git-scm.com/docs/git-rebase) are extensively used in the [Git workflow](gitworkflow.md). When working on a local feature or bugfix branch, it's common practice to:
 
-1. Keep your local `main` branch current with its remote counterpart by periodically [pulling](pulling.md#download-changes-and-update-branches-with-pull) to fetch remote commits then merge or rebase.
-1. Integrate local `main` branch updates into your local feature branch using a merge or rebase.
-1. Frequently back up your work on the local feature branch by [pushing](pushing.md) it to the corresponding remote branch.
+1. Keep your local `main` branch current with its remote counterpart by periodically [pulling](pulling.md#download-changes-and-update-branches-with-pull) to fetch and merge remote commits.
+1. Integrate local `main` branch updates into your local feature branch using a rebase or merge.
+1. Back up your work on the local feature branch by [pushing](pushing.md) it to the corresponding remote branch.
 1. On feature completion, create a [pull request](pull-requests.md) to merge your remote feature branch into the remote `main` branch.
 
-By frequently integrating remote changes into your local repo, you can stay aware of the recent work by others and promptly resolve any merge conflicts that arise.
+By frequently integrating remote changes into your local repo, you can stay aware of recent work by others and promptly resolve any merge conflicts that arise.
 
 
 ## Resolve merge conflicts
 
-The process for resolving merge conflicts is applicable to both Git `merge` and Git `rebase`. Although the following steps describe how to resolve merge conflicts during a Git `merge`, you can similarly resolve merge conflicts during a Git `rebase`.
+The process for resolving merge conflicts is applicable to both Git merge and Git rebase. Although the following steps describe how to resolve merge conflicts during a merge, you can similarly resolve merge conflicts during a rebase.
 
 > [!TIP]
-> If the source branch is a [remote-tracking](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) branch, ensure that branch is up-to-date by running a Git [fetch](pulling.md#download-changes-with-fetch) before a merge. Or, run the Git [pull](pulling.md#pull) command, which combines a Git `fetch` with a Git `merge`.
+> If the source branch is a [remote-tracking](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) branch, ensure that branch is up-to-date by running a Git [fetch](pulling.md#download-changes-with-fetch) before a merge. Or, run the Git [pull](pulling.md#pull) command, which combines a Git fetch with a Git merge.
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to resolve merge conflicts during a Git `merge`.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably. Below, we provide a side-by-side comparison of how to resolve merge conflicts during a Git merge.
 
 :::row:::
   :::column span="":::
@@ -162,7 +162,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
 #### [Git Command Line](#tab/git-command-line)
 
-Before merging a source branch into a target branch, checkout the target branch. Then use the Git `merge` command to merge the source branch into the current local branch, which is the target branch. To merge multiple source branches into a target branch, separate the source branch names with spaces.
+Before merging a source branch into a target branch, checkout the target branch. Then use the Git merge command to merge the source branch into the current local branch (target branch). To merge multiple source branches into a target branch, separate the source branch names with spaces.
 
   ```cmd
   git checkout <target branch>
@@ -172,7 +172,7 @@ Before merging a source branch into a target branch, checkout the target branch.
 > [!TIP]
 > You can also use `git switch <branch name>` to switch to a branch.
 
-Some scenarios will cause the Git `merge` command to fail with an error, or halt before completion.
+Some scenarios will cause the Git merge command to fail with an error, or halt before completion.
 
 | Git message | Description | Resolution |
 |-|-|-|
