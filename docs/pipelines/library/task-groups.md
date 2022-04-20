@@ -18,8 +18,12 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
+:::moniker range=">=azure-devops-2019"
+
 > [!NOTE]
 > Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](/azure/devops/pipelines/yaml-schema/steps-template).
+
+:::moniker-end
 
 A *task group* allows you to encapsulate a sequence of tasks, already defined
 in a build or a release pipeline, into a single reusable task that can be

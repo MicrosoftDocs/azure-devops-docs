@@ -169,7 +169,20 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 
 ## See also
 
+:::moniker range=">=azure-devops-2019"
+
 * [Artifacts](artifacts.md)
 * [Stages](../process/stages.md)
 * [Triggers](triggers.md)
 * [YAML schema reference](/azure/devops/pipelines/yaml-schema)
+
+:::moniker-end
+
+:::moniker range="<azure-devops-2019"
+
+* [Artifacts](artifacts.md)
+* [Triggers](triggers.md)
+
+:::moniker-end
+
+
