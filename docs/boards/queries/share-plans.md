@@ -227,7 +227,6 @@ Storyboarding your ideas and goals increases visual understanding. With [PowerPo
 
 > [!NOTE]  
 > Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the Storyboard link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature.
-::: moniker-end 
 
 
 ::: moniker range="tfs-2018"
