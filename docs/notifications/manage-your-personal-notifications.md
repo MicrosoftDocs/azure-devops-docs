@@ -97,7 +97,6 @@ To access the Preview features options, open your profile menu. The profile menu
 
 
 ::: moniker range="tfs-2018"
->>>>>>> 084938bf86cae25eab3c5c96908ccfe02ab5b427
 
 ## View and edit all notification subscriptions
 
