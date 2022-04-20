@@ -52,7 +52,7 @@ If you don't have a Git repository yet, you can follow this article to [Create a
 
 Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields.
 
-:::image type="icon" source="media/publish-task.png" border="false"::: 
+:::image type="icon" source="media/publish-task.png" border="false":::
 
 The text file should be at the root of your repository.
 
@@ -186,7 +186,7 @@ You can download artifacts produced by either a build pipeline (created in a cla
 
 ### Consume an artifact in the next job of your pipeline
 
-You can consume an artifact produced by one job in a subsequent job of the pipeline, even when that job is in a different stage (YAML pipelines). This can be useful to test your artifact. 
+You can consume an artifact produced by one job in a subsequent job of the pipeline, even when that job is in a different stage (YAML pipelines). This can be useful to test your artifact.
 
 ### Download to debug
 
@@ -288,7 +288,6 @@ From here, you can explore or download the artifacts.
 You can also use Azure Pipelines to deploy your app by using the artifacts that you've published. See [Artifacts in Azure Pipelines releases](../release/artifacts.md).
 
 ::: moniker range="tfs-2018"
-<a name="unc-file-share" />
 
 ## Publish from TFS to a UNC file share
 
@@ -304,12 +303,6 @@ Choose **file share** to copy the artifact to a file share. Common reasons to do
 * You need to run some custom scripts or other tools against the artifact.
 
 If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build by using [variables](../build/variables.md). For example: ```\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)```.
-
-<a name="tfs-2015" />
-
-## Publish artifacts from TFS 2015 RTM
-
-If you're using TFS 2015 RTM, the steps in the preceding examples are not available. Instead, you copy and publish your artifacts by using a single task: [Build: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md).
 
 ::: moniker-end
 
