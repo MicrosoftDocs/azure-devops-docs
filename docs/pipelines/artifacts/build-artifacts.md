@@ -15,13 +15,13 @@ monikerRange: '<= azure-devops'
 > [!NOTE]
 > We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
 
-Azure Artifacts is a service that enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and consume different types of artifacts as part of your CI/CD workflow.
+Azure Artifacts enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and download different types of artifacts as part of your CI/CD workflow.
 
-## How do I publish artifacts?
+## Publish artifacts
 
 Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your packages.
 
-### Publish a text file
+### Example
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -50,17 +50,9 @@ YAML is not supported in TFS.
 
 If you don't have a Git repository yet, you can follow this article to [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
 
-Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields.
+Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields. Make sure your file is at the root of your repository.
 
 :::image type="icon" source="media/publish-task.png" border="false":::
-
-The text file should be at the root of your repository.
-
-- Path to publish: $(Build.SourcesDirectory)/environment-variables.txt
-
-- Artifact name: drop
-
-- Artifact publish location: Azure Pipelines
 
 * * *
 ### Publish two sets of artifacts
