@@ -132,7 +132,6 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 [!INCLUDE [temp](includes/code-git.md)]
 
-::: moniker-end
 
 
 ### TFVC

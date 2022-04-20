@@ -58,7 +58,6 @@ Add the **Other links** widget to a web portal team dashboard. For details, see 
 > [!div class="mx-imgBorder"]  
 > ![Other links widget](media/get-feedback/add-other-links-widget.png)   
 
-::: moniker-end 
 
 ## Request feedback 
 

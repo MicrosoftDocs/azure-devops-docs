@@ -137,7 +137,6 @@ A notification subscription can be only for you. Or, if you're a team administra
 
 With custom personal notification subscriptions, you can define precise criteria for the events that you want to receive notifications. A custom notification subscription can notify you about any event. Default notification subscriptions differ, as they only notify users or groups directly associated with an event.
 
-::: moniker-end
 
 ::: moniker range="azure-devops"
 

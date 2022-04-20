@@ -140,7 +140,7 @@ The following features apply to all searches, including work items, code, and pa
    :::column-end:::
 :::row-end:::
 ---
-::: monikerRange="azure-devops"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
       **Proximity**
