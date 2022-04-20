@@ -4,9 +4,7 @@ description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: conceptual
 ms.custom: seodec18
-ms.author: atulmal
-author: azooinmyluggage
-ms.date: 02/01/2022
+ms.date: 04/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -162,6 +160,7 @@ Add the following to your azure-pipelines.yml file to run a SQL script.
 variables:
   AzureSubscription: '<Azure service connection>'
   ServerName: '<Database server name>'
+  ServerFqdn: '<SQL Database FQDN>'
   DatabaseName: '<Database name>'
   AdminUser: '<SQL user name>'
   AdminPassword: '<SQL user password>'
@@ -180,14 +179,14 @@ steps:
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
-    arguments: '-S $(ServerName) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
+  arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
 - task: AzurePowerShell@2
   displayName: Azure PowerShell script: FilePath
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '$(ServerName) -ResourceGroup $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 ```
 
