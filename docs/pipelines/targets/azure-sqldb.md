@@ -186,7 +186,7 @@ steps:
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '$(ServerName) -ResourceGroup $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 ```
 
