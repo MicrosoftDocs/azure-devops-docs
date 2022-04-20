@@ -101,6 +101,14 @@ By default, all contributors in a project are members of the **User** role on ho
 
 # [YAML](#tab/yaml)
 
+:::moniker range="<azure-devops-2019"
+
+YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
+
+:::moniker-end
+
+:::moniker range=">=azure-devops-2019"
+
 To choose a Microsoft-hosted agent from the Azure Pipelines pool in your Azure DevOps Services YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
 ```yaml
@@ -115,6 +123,8 @@ pool: MyPool
 ```
 
 For more information, see the [YAML schema](/azure/devops/pipelines/yaml-schema) for [pools](/azure/devops/pipelines/yaml-schema/pool).
+
+:::moniker-end
 
 # [Classic](#tab/classic)
 

@@ -58,6 +58,8 @@ This is the branch that you want to be the default when you manually queue this 
 
 #### [YAML](#tab/yaml/)
 
+:::moniker range=">=azure-devops-2019"
+
 ### Azure Pipelines, Azure DevOps Server 2019 and newer
 
 There are several different clean options available for YAML pipelines.
@@ -98,6 +100,13 @@ steps:
 
 By default, `clean` is set to `false` but can be overridden when manually running the pipeline by checking the **Checkout clean** checkbox that is added for the runtime parameter.
 
+:::moniker-end
+
+:::moniker range="<azure-devops-2019"
+
+YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
+
+:::moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -178,8 +187,12 @@ Select if you want to download files from [submodules](https://git-scm.com/book/
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
 
+:::moniker range=">=azure-devops-2019"
+
 > [!NOTE]
 > For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](/azure/devops/pipelines/yaml-schema/steps-checkout).
+
+:::moniker-end
 
 The build pipeline will check out your Git submodules as long as they are:
 

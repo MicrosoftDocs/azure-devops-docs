@@ -72,7 +72,7 @@ If your `pr` trigger isn't firing, and you are using Azure Repos, it is because 
 
 ### Branch filters misconfigured in CI and PR triggers
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them.
 
