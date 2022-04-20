@@ -170,7 +170,7 @@ All of the following actions can be completed by team members that belong to the
 >3. For on-premises Azure DevOps, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
 
 
-::: moniker-end
+
 
 
 <a id="multi-select"> </a>  

@@ -207,7 +207,6 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 ## Code highlighting
 
-::: moniker-end
 
 #### Supported in: Pull Requests | README files | Wikis
 

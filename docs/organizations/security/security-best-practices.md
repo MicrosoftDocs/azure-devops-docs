@@ -261,7 +261,7 @@ For more information, see [Application management best practices](/azure/active-
 
 - Enable the *Limit user visibility for projects* preview feature for the organization, which restricts access to only those projects that you add users to.
 - Add users to the *Project-scoped users* group, so they can only see and select users and groups in the project that they're connected to from a people picker.
-::: monikerrange="azure-devops"
+::: moniker range="azure-devops"
 - Disable "Allow public projects" in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
 ::: moniker-end
 - Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.
