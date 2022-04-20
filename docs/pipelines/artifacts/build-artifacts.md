@@ -48,14 +48,13 @@ YAML is not supported in TFS.
 
 #### [Classic](#tab/classic/)
 
-If you don't have a Git repository yet, you can follow this article to [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
-
 Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields. Make sure your file is at the root of your repository.
 
 :::image type="icon" source="media/publish-task.png" border="false":::
 
 * * *
-### Publish two sets of artifacts
+
+### Example: use multiple tasks
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -83,22 +82,13 @@ YAML is not supported in TFS.
 
 #### [Classic](#tab/classic/)
 
-You can add multiple **Publish Build Artifacts** tasks to your pipelines.
+You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make sure your file is at the root of your repository.
 
-:::image type="icon" source="media/multiple-publish-tasks.png" border="false"::: 
-
-Your package should be at the root of your repository.
-
-- Path to publish: $(Build.SourcesDirectory)/environment-variables.txt
-
-- Artifact name: drop
-
-- Artifact publish location: Azure Pipelines
-
-In a real world scenario, you probably won't need to publish two copies of the same files. This example was an illustration to show how a user can publish multiple artifacts that can be independently managed and consumed by the deployment pipeline.
+:::image type="icon" source="media/multiple-publish-tasks.png" border="false":::
 
 * * *
-## Example: Assemble C++ artifacts into one location and publish as an artifact
+
+### Example: copy and publish binaries
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
