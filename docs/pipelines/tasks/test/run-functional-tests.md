@@ -172,6 +172,5 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- ENDSECTION -->
 
-::: moniker-end
 
 [!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]
