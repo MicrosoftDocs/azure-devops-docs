@@ -40,7 +40,7 @@ In this article you'll learn:
 * You must be a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
 * To change the work item type, you must be granted **Stakeholder** access or higher. 
-* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
+* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users granted **Stakeholder** access don't have access to this feature. 
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -51,9 +51,10 @@ In this article you'll learn:
 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* To move work items to another project, the project must use an Inherited process model.  
-* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
 * To change the work item type, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+* To move work items to another project, the project must use an Inherited process model.  
+* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set. Users granted **Stakeholder** access don't have access to this feature. 
+
 
 	> [!IMPORTANT]  
 	> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/previous-versions/azure/devops/report/admin/disable-data-warehouse). 
@@ -127,6 +128,7 @@ Note the following:
 - You can only move work items whose type exists in the project you're moving it to. For example, you can't move User Stories to a project based on the Scrum process that doesn't contain User Story as a work item type. 
 - You can't move work items associated with test management. 
 - To move work items to another project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
+- Users granted **Stakeholder** access don't have access to this feature even if granted permission.  
 
 1. Open the work item and choose the ![Move work item icon](../media/icons/change-team-project-icon.png) **Move...** option from the work item form's ![Action icon](../media/icons/actions-icon.png) Actions menu.    
 
