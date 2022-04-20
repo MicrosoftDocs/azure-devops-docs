@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 3/29/2021
+ms.date: 4/20/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -115,6 +115,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+     <td rowspan="6"><a href="2022/sprint-202-update.md" data-raw-source="[20 April 2022](2022/sprint-202-update.md)"> 20 April 2022</a></td> 
+    <td>Auditing is now an opt-in feature for your organization</td><td>General</td><td>Future</td></tr>
+    <td>Fixed looping login issue due to incorrectly configured IP conditional access policies</td><td>General</td><td>Future</td></tr>
+    <td>Guest users will only see public user data</td><td>General</td><td>Future</td></tr>
+    <td>New Boards Hub now available in public preview</td><td>Boards</td><td>Future</td></tr>
+    <td>Extend YAML pipelines template to pass stage, job, and deployment context information</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updated retirement date for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
+</tr> 
+</tr>
      <td rowspan="4"><a href="2022/sprint-201-update.md" data-raw-source="[29 March 2022](2022/sprint-201-update.md)">29 March 2022</a></td> 
     <td>Remove the ability to download a deleted attachment from work item history</td><td>Boards</td><td>Future</td></tr>
     <td>New extension points for Pipelines details view</td><td>Pipelines</td><td>Future</td></tr>
