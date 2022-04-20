@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 03/09/2020
+ms.date: 04/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -31,7 +31,7 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 ::: moniker range=">= tfs-2018"
 
 Make sure your machine has these prerequisites:
-- macOS Sierra (10.12) or higher
+- macOS 10.15 "Catalina", macOS 11.0 "Big Sur", or macOS 12.0 "Monterey"
 - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
 
 These prereqs are required for agent version 2.125.0 and higher.
