@@ -4,7 +4,7 @@ ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 07/15/2021
+ms.date: 04/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -24,8 +24,8 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 ## Check prerequisites
 
 Make sure your machine has these prerequisites:
-- Windows 7, 8.1, or 10 (if using a client OS)
-- Windows 2008 R2 SP1 or higher (if using a server OS)
+- Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq), 8.1, 10, or 11 (if using a client OS)
+- Windows 2012 or higher (if using a server OS)
 - [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
 - [.NET Framework](/dotnet/framework/install/) 4.6.2 or higher
 
