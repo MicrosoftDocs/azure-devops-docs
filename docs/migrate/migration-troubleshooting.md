@@ -274,15 +274,22 @@ See the separate [Process Templates](migration-processtemplates.md) page for det
 
 ## Resolve field validation errors
 
+<a name= "VS403310" ></a>
+ 
+#### VS403310
+
+The following error message can occur when an inconsistency in collection files is detected. Contact customer support if you encounter this error. 
+
+`VS403310: An inconsistency was detected in some of the files in the collection.`
+
+
 <a name= "VS403442" ></a>
  
 #### VS403442
 
 Field name conflicts sometimes occur between your local collection and an Azure DevOps Services system field.
 
-```cmdline
-In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
-```
+`In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.`
 
 To resolve this error, change the name of your collection field. Use the **witadmin changefield** command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
 
@@ -297,9 +304,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 The following error indicates a field name conflict exists between your local collection and a specific Azure DevOps Services field. 
 
 
-```cmdline
-In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
-```
+`In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*`
 
 To resolve this error, use the **witadmin changefield** command. For details, see [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
 
@@ -315,9 +320,7 @@ The following error indicates a field type conflict exists between your local co
 
 Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md), you can change the data type only for HTML or PlainText fields. 
 
-```cmdline
-In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
-```
+`In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.`
 
 If your field type is HTML or PlainText, then you can change its type to the required type.
 
@@ -351,9 +354,7 @@ Verification failures occur when the import fails to start. The data migration t
 The region that you entered for your Azure DevOps Services import isn't supported. 
 
 
-```cmdline
-VS403254: Region {0} may not be used for the Import, it is not a supported region.
-```
+`VS403254: Region {0} may not be used for the Import, it is not a supported region.`
 
 Open your import specification file and update the region that you've provided with the correct short name for the [region](migration-import.md#supported-azure-regions-for-import). 
 
@@ -361,9 +362,7 @@ Open your import specification file and update the region that you've provided w
 
 The organization name your team has selected is already in use by an existing organization. All Azure DevOps Services imports go into a new organization that is created at import time. 
 
-```cmdline
-VS403249: The organization {0} already exists. Please select a different name and try the import again.
-```
+`VS403249: The organization {0} already exists. Please select a different name and try the import again.`
 
 Select a different organization name and update the import specification file before retrying the import. 
 
@@ -371,10 +370,9 @@ Select a different organization name and update the import specification file be
 
 The DACPAC isn't built off a detached collection. 
 
-```cmdline
-VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
-VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
-```
+`VS403250: The dacpac is not a detached Azure DevOps Server Collection database.`
+
+`VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.`
 
 [Detach](migration-import.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
@@ -382,9 +380,7 @@ VS403286: The dacpac is from a Azure DevOps Server Configuration database. You m
 
 Unable to make a connection to the database using the provided SQL Connection String. 
 
-```cmdline
-VS403243: Unable to connect to the database using the provided SQL Connection String {0}.
-```
+`VS403243: Unable to connect to the database using the provided SQL Connection String {0}.`
 
 Review the parameters that were provided to ensure they're correct and try again.
 
@@ -392,10 +388,9 @@ Review the parameters that were provided to ensure they're correct and try again
 
 The collection database isn't detached.
 
-```cmdline
-VS403260: The database is not detached.
-VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
-```
+`VS403260: The database is not detached.`
+
+`VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server. `
 
 [Detach](migration-import.md#step-1-detach-your-collection) your collection database and retry the import queue.  
 
@@ -403,9 +398,7 @@ VS403351: The DACPAC or source database is missing an expected table. It's possi
 
 The connection string must be encrypted otherwise the password is sent in the clear. 
 
-```cmdline
-VS403261: The SQL connection string must use encryption.
-```
+`VS403261: The SQL connection string must use encryption.`
     
 Add **Encrypt=true** to your SQL connection string.
 
@@ -413,9 +406,7 @@ Add **Encrypt=true** to your SQL connection string.
 
 The connection string must use SQL Authentication. 
 
-```cmdline
-VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication is not supported.
-```
+`VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication is not supported.`
 
 Add **Integrated Security=False** to your SQL connection string.
 
@@ -424,22 +415,18 @@ Add **Integrated Security=False** to your SQL connection string.
 Your SQL sign in user account doesn't have the required database role.
 
 
-```cmdline
-VS403263: The User ID {0} must be member of the database role {1}.
-```
+`VS403263: The User ID {0} must be member of the database role {1}.`
 
 Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-import.md#configure-your-collection-for-import) role. 
 
 > [!NOTE]   
-> There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Import large collections](migration-import-large-collections.md).
+> There is a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Import large collections](migration-import-large-collections.md).
 
 **VS403264**
 
 The connection string doesn't point to an Azure DevOps Server collection database. 
 
-```cmdline    
-VS403264: The database is not a Azure DevOps Server Collection database, it cannot be used for import.
-```
+`VS403264: The database is not a Azure DevOps Server Collection database, it cannot be used for import.`
 
 Verify or correct the connection string points to your collection database. 
 
@@ -448,9 +435,7 @@ Verify or correct the connection string points to your collection database.
 
 The Azure DevOps Server Update has queued the file migration job. Imports can't be performed until this job has completed. The completion time for this job is dependent on the size of the collection. 
 
-```cmdline
-VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later
-```
+`VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later`
 
 You can track job progress by running the following query on the collection database:
 
@@ -467,9 +452,7 @@ Once the number of files remaining to migrate is zero, you can run the data migr
 
 A new line character exists in the source location value. This character could have remained after copying the SAS key from your windows console.
 
-```cmdline
-VS403282: The source location parameter contains a new line character. Please ensure the SAS key is defined on a single line in the import specification file.
-```
+`VS403282: The source location parameter contains a new line character. Please ensure the SAS key is defined on a single line in the import specification file.`
 
 Remove the line break and try again.
 
@@ -477,9 +460,7 @@ Remove the line break and try again.
 
 Your import files and DACPAC aren't located in the **required** Azure region to complete the import to your target Azure DevOps Services region. 
 
-```cmdline
-VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import.
-``` 
+`VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import.` 
 
 [Create a new Windows Azure storage account](/azure/storage/common/storage-create-storage-account) in the required region and copy your files. The following example shows how to copy your data using **AzCopy**.
 
@@ -491,9 +472,7 @@ AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /Source
 
 Inconsistencies were detected in some Team Foundation version control (TFVC) files within your collection.
 
-```cmdline
-VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.
-```
+`VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.`
 
 Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImportSupport). Open a support ticket and they'll work with you to resolve the error. 
 
@@ -501,7 +480,7 @@ Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImp
 
 The data migration tool was unable to connect to the SQL Azure VM. 
 
-```cmdline
+```
 VS403366: A problem occurred while attempting to connect to your database. Please verify that your connection string is correct and that all required IP addresses for Azure DevOps Services have been provided exceptions for your machines firewall.
 
 List of Azure DevOps Services IPs:
@@ -521,9 +500,8 @@ From SQL Server Management Studio (SSMS), open the extended properties for the s
 
 Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import. For details, see [Delete a project](../organizations/projects/delete-project.md).
 
-```cmdline
-VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
-```
+`VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.`
+
 Verify the collection against which you are running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/restore-project.md). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
 
 ### Import failures

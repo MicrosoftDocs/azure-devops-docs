@@ -152,7 +152,10 @@ By default, the size of work item attachments is limited to 4 MB. You can use th
 
 ::: moniker-end 
  
-Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
+Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. The following file types support preview as attachments.  
+- **Image types**: "jpg", "jpeg", "png", "jif", "jfif", "jpx", "fpx", "pcd", "bmp", "img", "eps", "psd", "wmf", "gif"
+- **Video Types**: "mp4", "mov", "m4v", "webm
+- **Text Types**:  "txt", "log"
 
 
 <a id="attach-browser" />
