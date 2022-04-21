@@ -105,10 +105,10 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop
 ```
-* **sourceFolder**: the folder that contains the files you want to copy. If you leave this value empty, copying will be done from the root folder of your repo (`$(Build.SourcesDirectory)`).
-* **contents**: location(s) of the file(s) that will be copied to the destination folder.
-* **targetFolder**: destination folder. 
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
+* **sourceFolder**: the folder that contains the files you want to copy. If you leave this empty, copying will be done from **$(Build.SourcesDirectory)**.
+* **contents**: File paths to include as part of the copy.
+* **targetFolder**: destination folder.
+* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path. Wildcards are not supported.
 * **artifactName**: the name of the artifact that you want to create.
 
 > [!NOTE]
@@ -121,58 +121,24 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 :::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: **Utility: Copy Files**
 
-* Source folder:
+- Source folder: $(Build.SourcesDirectory)
 
-   ```
-   $(Build.SourcesDirectory)
-   ```
+- Contents: /$(BuildConfiguration)//?(*.exe|*.dll|*.pdb)
 
-* Contents:
-
-   ```
-   /$(BuildConfiguration)//?(*.exe|*.dll|*.pdb)
-   ```
-
-* Target folder:
-
-   ```
-   $(Build.ArtifactStagingDirectory)
-   ```
+- Target folder: $(Build.ArtifactStagingDirectory)
 
 :::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
-* Path to publish:
+- Path to publish: $(Build.ArtifactStagingDirectory)
 
-   ```
-   $(Build.ArtifactStagingDirectory)
-   ```
-
-* Artifact name:
-
-   ```
-   drop
-   ```
-
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact name: drop
 
 * * *
-## How do I consume artifacts?
 
-You can consume your artifacts in different ways: you can use it in your release pipeline, pass it between your pipeline jobs, download it directly from your pipeline and even download it from feeds and upstream sources.
-
-### Consume artifacts in release pipelines
-
-You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice.
-
-### Consume an artifact in the next job of your pipeline
-
-You can consume an artifact produced by one job in a subsequent job of the pipeline, even when that job is in a different stage (YAML pipelines). This can be useful to test your artifact.
-
-### Download to debug
-
-You can download an artifact directly from a pipeline for use in debugging.
+## Download artifacts
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -198,28 +164,21 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 :::image type="icon" source="../tasks/utility/media/downloadbuildartifacts.png" border="false"::: **Utility: Download Build Artifacts**
 
-* Download artifacts produced by: Current build
+- Download artifacts produced by: Current build
 
-* Download type: Specific artifact
+- Download type: Specific artifact
 
-* Artifact name:
+- Artifact name: drop
 
-   ```
-   drop
-   ```
-
-* Destination directory:
-
-   ```
-   $(System.ArtifactsDirectory)
-   ```
+- Destination directory: $(System.ArtifactsDirectory)
 
 * * *
 
 > [!NOTE]
-> In case you are using a `deployment` task, you can then reference your build artifacts by using `$(Agent.BuildDirectory)` variable. See [Agent variables](../build/variables.md#agent-variables) for more information on how to use predefined variables.
+> If you are using a deployment task, you can then reference your build artifacts using the **$(Agent.BuildDirectory)** variable. See [Agent variables](../build/variables.md#agent-variables) for more details.
 
 ## Tips
 
@@ -236,14 +195,6 @@ YAML is not supported in TFS.
 * Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.  
 
 * You can [get build artifacts](/rest/api/azure/devops/build/artifacts) using the Azure DevOps REST API.
-
-## Related tasks for publishing artifacts
-
-Use these tasks to publish artifacts:
-
-* :::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* :::image type="icon" source="../tasks/utility/media/delete-files.png" border="false"::: [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
-* :::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 
