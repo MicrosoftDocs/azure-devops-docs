@@ -1,10 +1,10 @@
 ---
-title: Publish and consume build artifacts
+title: Publish and download build artifacts
 description: How to use Artifacts in Azure Pipelines
 ms.custom: seodec18
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.date: 02/19/2021
+ms.date: 04/21/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
-> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
+> We recommend using [Download Pipeline Artifacts](pipeline-artifacts.md#download-artifacts) and [Publish Pipeline Artifacts](pipeline-artifacts.md#publish-artifacts) for faster performance.
 
 Azure Artifacts enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and download different types of artifacts as part of your CI/CD workflow.
 
