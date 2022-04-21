@@ -21,8 +21,6 @@ Azure Artifacts enables teams to use feeds and upstream sources to manage their 
 
 Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your packages.
 
-### Example
-
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 ```yaml
@@ -112,7 +110,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 * **artifactName**: the name of the artifact that you want to create.
 
 > [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
+> Make sure not to use reserved name for *artifactName* such as *Bin* or *App_Data*. See [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)#application-folders) for more details.
 
 ::: moniker-end
 
@@ -178,11 +176,11 @@ YAML is not supported in TFS.
 * * *
 
 > [!NOTE]
-> If you are using a deployment task, you can then reference your build artifacts using the **$(Agent.BuildDirectory)** variable. See [Agent variables](../build/variables.md#agent-variables) for more details.
+> If you are using a deployment task, you can reference your build artifacts using **$(Agent.BuildDirectory)**. See [Agent variables](../build/variables.md#agent-variables) for more details.
 
 ::: moniker range=">= azure-devops-2019"
 
-After your pipeline run has been completed, navigate to **Summary** to explore or download your artifact.
+When your pipeline run is completed, navigate to **Summary** to explore or download your artifact.
 
 > [!div class="mx-imgBorder"]
 > ![Published build artifact](media/published-build-artifact.png)
@@ -191,7 +189,7 @@ After your pipeline run has been completed, navigate to **Summary** to explore o
 
 ::: moniker range="tfs-2018"
 
-After your pipeline run has been completed, select **Artifacts** to download your artifact.
+When your pipeline run is completed, select **Artifacts** to download your artifact.
 
 > [!div class="mx-imgBorder"]
 > ![Published build artifact TFS](media/build-artifact-tab.png)
