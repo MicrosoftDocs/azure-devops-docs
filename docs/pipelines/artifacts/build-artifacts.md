@@ -180,27 +180,9 @@ YAML is not supported in TFS.
 > [!NOTE]
 > If you are using a deployment task, you can then reference your build artifacts using the **$(Agent.BuildDirectory)** variable. See [Agent variables](../build/variables.md#agent-variables) for more details.
 
-## Tips
-
-* `PublishBuildArtifacts`: using the *publishLocation* argument, you can store you artifact in Azure Pipelines (Container), or copy it to a file share (FilePath). The file share must be accessible from the agent running the pipeline.
-
-* Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
-
-* Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
-
-* On Azure Pipelines and some versions of TFS, two different [variables](../build/variables.md) point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
-
-* The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
-
-* Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.  
-
-* You can [get build artifacts](/rest/api/azure/devops/build/artifacts) using the Azure DevOps REST API.
-
-## Explore, download, and deploy your artifacts
-
 ::: moniker range=">= azure-devops-2019"
 
-When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
+After your pipeline run has been completed, navigate to **Summary** to explore or download your artifact.
 
 > [!div class="mx-imgBorder"]
 > ![Published build artifact](media/published-build-artifact.png)
@@ -209,16 +191,12 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 
 ::: moniker range="tfs-2018"
 
-When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
+After your pipeline run has been completed, select **Artifacts** to download your artifact.
 
 > [!div class="mx-imgBorder"]
 > ![Published build artifact TFS](media/build-artifact-tab.png)
 
 ::: moniker-end
-
-From here, you can explore or download the artifacts.
-
-You can also use Azure Pipelines to deploy your app by using the artifacts that you've published. See [Artifacts in Azure Pipelines releases](../release/artifacts.md).
 
 ::: moniker range="tfs-2018"
 
@@ -238,6 +216,20 @@ Choose **file share** to copy the artifact to a file share. Common reasons to do
 If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build by using [variables](../build/variables.md). For example: ```\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)```.
 
 ::: moniker-end
+
+## Tips
+
+- Use forward slashes in file path arguments. Backslashes does not work in macOS/Linux agents.
+
+- Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
+
+- `Build.ArtifactStagingDirectory` and `Build.StagingDirectory` are interchangeable.
+
+- `Build.ArtifactStagingDirectory` path is cleaned up after each build.
+
+- Deleting a build associated with packages published to a file share will result in the deletion of all Artifacts in that UNC path.  
+
+- If you are publishing your packages to a file share, make sure you provide access to the build agent.
 
 ## Related articles
 
