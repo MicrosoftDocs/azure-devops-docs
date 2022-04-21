@@ -251,7 +251,7 @@ Microsoft-hosted agents:
 Microsoft-hosted agents do not offer:
 
 * The ability to remotely connect.
-* The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
+* The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#publish-from-tfs-to-a-unc-file-share).
 * The ability to join machines directly to your corporate network.
 * The ability to get bigger or more powerful build machines.
 * The ability to pre-load custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
