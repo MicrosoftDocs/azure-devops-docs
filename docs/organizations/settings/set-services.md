@@ -4,19 +4,18 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Control which services are available for a project from the web portal for Azure DevOps.  
 ms.technology: devops-settings
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'  
-ms.date: 08/17/2020
+ms.date: 04/21/2022
 ---
 
 # Turn a service on or off
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You can control which services are available through the web portal, by turning a service on or off. Turning off a service removes the service from the user interface for all project users. However, service data's preserved and available if you decide to turn on the service.  
+Control which services are available through the web portal, by turning a service on or off. Turning off a service hides the service to all members of the project. However, if you choose to enable a service later, all your existing data is available.  
 
 ## Prerequisites
 
@@ -27,14 +26,14 @@ You can control which services are available through the web portal, by turning 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
-- You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
+- You must have an Azure DevOps project. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/change-project-level-permissions.md).
 - 
   ::: moniker-end
 
-## Change the visibility for a service  
+## Change the visibility for a service
 
-::: moniker range=">= azure-devops-2019"
+Enable and disable services within your project overview settings.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
 2. Choose **Project settings** in the sidebar.
@@ -47,27 +46,20 @@ You can control which services are available through the web portal, by turning 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings > Overview to services](media/services/set-service-visibility.png)  
 
-4. Confirm that you want to disable the service.
+4. Confirm your action. In our example, we remove the Test Plans service.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Disable a service confirmation dialog](media/services/remove-test-service.png)
 
 5. Refresh your web browser to view the updates.
 
-::: moniker-end
-
-## Disabled objects and features
-
-If you disable a service, dashboard widgets specific to that service are disabled. For example, if **Boards** is disabled, all work item tracking widgets and all Analytics widgets are disabled. They don't appear in the [widget catalog](../../report/dashboards/widget-catalog.md).
-
-If you disable **Boards**, you also disable [**Analytics views**](../../report/powerbi/what-are-analytics-views.md).
-
+The service we disabled is no longer present in the side bar of Azure DevOps.
 ## Related articles
 
 ::: moniker range="azure-devops"
 - [About projects and scaling the organization](../projects/about-projects.md)  
-- [Change the project visibility, public or private](../public/make-project-public.md)
 - [About user, team, project, and organization-level settings](about-settings.md)
+- [Change the project visibility, public or private](../public/make-project-public.md)
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
