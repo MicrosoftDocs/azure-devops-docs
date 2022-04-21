@@ -26,10 +26,10 @@ Control which services are available through the web portal, by turning a servic
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
+
 - You must have an Azure DevOps project. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/change-project-level-permissions.md).
-
-  ::: moniker-end
+::: moniker-end
 
 ## Change the visibility for a service
 
