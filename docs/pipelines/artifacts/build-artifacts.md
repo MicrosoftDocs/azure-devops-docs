@@ -52,7 +52,7 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 
 * * *
 
-### Example: use multiple tasks
+### Example: Use multiple tasks
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -86,7 +86,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 * * *
 
-### Example: copy and publish binaries
+### Example: Copy and publish binaries
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -217,7 +217,7 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 ## Tips
 
-- Use forward slashes in file path arguments. Backslashes does not work in macOS/Linux agents.
+- Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 
 - Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
 
