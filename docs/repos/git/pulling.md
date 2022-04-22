@@ -212,7 +212,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-confirmation-lrg.png":::
 
-       If the merge is halted due to merge conflicts, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+       If the merge is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-merge-conflict-lrg.png":::
     
@@ -241,7 +241,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation.png" border="true" alt-text="Screenshot of the merge confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-confirmation-lrg.png":::
 
-       If there are conflicts during the merge, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+       If there are conflicts during the merge, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict.png" border="true" alt-text="Screenshot of the merge conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-merge-conflict-lrg.png":::
 
@@ -285,7 +285,7 @@ To integrate commits from one or more source branches into your current local br
 git merge <source branch name>
 ```
 
-Git will notify you if there are conflicts during the merge. Then, you can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git merge --continue`, or run `git merge --abort` to undo the merge and return to the pre-merge state.
+Git will notify you if there are conflicts during the merge. You can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git merge --continue`, or run `git merge --abort` to undo the merge and return to the pre-merge state.
 
 
 * * *
@@ -328,7 +328,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
 
-       If the rebase is halted due to merge conflicts, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+       If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
 
@@ -357,7 +357,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation-lrg.png":::
 
-       If there are conflicts during the rebase, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+       If there are conflicts during the rebase, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict-lrg.png":::
 
@@ -407,7 +407,7 @@ If your current local branch is the target branch, you can simplify the Git reba
 git rebase <source branch name>
 ```
 
-Git will notify you if there are conflicts during the rebase. Then, you can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git rebase --continue`, or run `git rebase --abort` to undo the rebase and return to the pre-rebase state.
+Git will notify you if there are conflicts during the rebase. You can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git rebase --continue`, or run `git rebase --abort` to undo the rebase and return to the pre-rebase state.
 
 
 * * *
@@ -448,7 +448,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window.png" border="true" alt-text="Screenshot of the pull confirmation message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/pull-confirm-git-changes-window-lrg.png":::
 
-       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Git Changes window in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-pull-conflict-lrg.png":::
 
@@ -469,7 +469,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view.png" border="true" alt-text="Screenshot of the pull confirmation message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/pull-confirm-synchronization-view-lrg.png":::
 
-       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
+       If there are conflicts during the merge portion of the pull operation, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the merge and return to the pre-merge state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict.png" border="true" alt-text="Screenshot of the pull conflict message in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-pull-conflict-lrg.png":::
 

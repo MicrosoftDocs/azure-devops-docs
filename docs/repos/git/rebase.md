@@ -87,7 +87,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-confirmation-lrg.png":::
 
-       If the rebase is halted due to merge conflicts, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+       If the rebase is halted due to merge conflicts, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Git Repository window of Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/git-experience/branch-rebase-conflict-lrg.png":::
 
@@ -116,7 +116,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation.png" border="true" alt-text="Screenshot of the rebase confirmation message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-confirmation-lrg.png":::
 
-       If there are conflicts during the rebase, Visual Studio will notify you. Then, you can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
+       If there are conflicts during the rebase, Visual Studio will notify you. You can either [resolve the conflicts](merging.md?tabs=visual-studio), or cancel the rebase and return to the pre-rebase state.
 
        :::image type="content" source="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict.png" border="true" alt-text="Screenshot of the rebase conflict message in the Branches view of Team Explorer in Visual Studio 2019." lightbox="media/pulling/visual-studio-2019/team-explorer/branch-rebase-conflict-lrg.png":::
 
@@ -145,7 +145,7 @@ If your current local branch is the target branch, you can simplify the rebase c
 git rebase <source branch name>
 ```
 
-Git will notify you if there are conflicts during the rebase. Then, you can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git rebase --continue`, or run `git rebase --abort` to undo the rebase and return to the pre-rebase state.
+Git will notify you if there are conflicts during the rebase. You can either [resolve the conflicts](merging.md?tabs=command-line) and then run `git rebase --continue`, or run `git rebase --abort` to undo the rebase and return to the pre-rebase state.
 
 
 ---
@@ -282,7 +282,7 @@ Visual Studio 2017 doesn't support interactive rebasing. Use the Git command lin
     git rebase -i HEAD~5
     ```
 
-1. Git will open an editor that lists the last five commits, starting with the most recent. For example:
+    Git will open an editor that lists the last five commits, starting with the most recent. For example:
 
     ```
     pick 7068b09 Update README network switch section
@@ -311,7 +311,7 @@ Visual Studio 2017 doesn't support interactive rebasing. Use the Git command lin
     ```    
     Even though the commit `Fix fiber optic transmitter test` wasn't squashed, it has a new commit ID because it now links to a different predecessor commit.
 
-    For more information about interactive rebasing, see [Git rebase interactive mode](https://git-scm.com/docs/git-rebase#_interactive_mode).
+For more information about interactive rebasing, see [Git rebase interactive mode](https://git-scm.com/docs/git-rebase#_interactive_mode).
 
 
 ---
