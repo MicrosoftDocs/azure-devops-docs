@@ -20,7 +20,7 @@ You can cherry-pick to tackle these common tasks:
 
 - Deploy a specific feature from one branch to another.
 - Copy work that you committed on the wrong branch.
-- Apply a bugfix on multiple branches.
+- Apply a bug fix on multiple branches.
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
