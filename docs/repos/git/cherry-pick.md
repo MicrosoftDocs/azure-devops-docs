@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to cherry-pick to copy specific commits from one branch to another within a Git repository.
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.technology: devops-code-git
-ms.topic: tutorial
+ms.topic: how-to
 ms.date: 04/22/2022
 monikerRange: '<= azure-devops'
 ---
@@ -21,11 +21,6 @@ You can cherry-pick to tackle these common tasks:
 - Deploy a specific feature from one branch to another.
 - Copy work that you committed on the wrong branch.
 - Apply a bugfix on multiple branches.
-
-This article provides procedures for the following tasks:
-
-> [!div class="checklist"]
-> * Cherry-pick a commit
 
 For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.md).
 
