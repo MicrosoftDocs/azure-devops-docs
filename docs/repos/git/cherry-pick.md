@@ -1,7 +1,7 @@
 ---
 title: Copy changes to a branch with cherry-pick
 titleSuffix: Azure Repos
-description: Learn how to cherry-pick to copy specific commits from one branch to another within a Git repository.
+description: Learn how to cherry-pick to copy the changes from one or more source branch commits to a target branch within a Git repository.
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.technology: devops-code-git
 ms.topic: how-to
