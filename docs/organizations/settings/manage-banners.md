@@ -30,7 +30,7 @@ Banners are restricted to a length of thirty words.  Banners are prioritized by 
 
 ::: moniker range="azure-devops"
 - To add or manage banners, you must be a member of the **Project Collection Administrators** security group. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
-- To manage banners using the Banner Settings extension, you must first install it. See [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub). 
+- To manage banners using the Banner Settings extension, you must first install it. See [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub) and [Install extensions](../../marketplace/install-extension.md)
 - To manage banners using the command line, you must install the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
 	- Sign into Azure DevOps using `az login`.  
 	- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
@@ -40,7 +40,7 @@ Banners are restricted to a length of thirty words.  Banners are prioritized by 
 
 ::: moniker range="< azure-devops"
 - To add or manage banners, you must be a member of the **Project Collection Administrators** security group. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
-- You must install the free [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub) marketplace extension on the project collection where you want to manage banners. 
+- You must install the free [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub) marketplace extension on the project collection where you want to manage banners. See also [Install extensions for on-premises servers](../../marketplace/get-tfs-extensions.md).
 ::: moniker-end
 
 ## Manage banners using the Banner Settings extension 
