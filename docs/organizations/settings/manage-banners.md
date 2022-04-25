@@ -83,7 +83,7 @@ Organization settings configure resources for all projects or the entire organiz
 
 To add or delete a banner, open **Admin settings**, scroll down to the **Extensions** section, and choose **Banner**. 
 
-Admin settings configure resources for all projects in a project collection. For an overview of all collection settings, see [Project collection administrator role and managing collections of projects](../organizations/settings/about-settings.md#admin).
+Admin settings configure resources for all projects in a project collection. For an overview of all collection settings, see [Project collection administrator role and managing collections of projects](about-settings.md#admin).
 
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Collections**, and then choose **Admin settings**.
 
