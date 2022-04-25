@@ -15,7 +15,7 @@ ms.date: 04/25/2022
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-A quick and effective way to communicate with your organization or project collection is through information banners. Use banners to alert your Azure DevOps users to upcoming changes or events without sending out mass emails.  
+A quick and effective way to communicate with your Azure DevOps users is through information banners. Use banners to alert users to upcoming changes or events without sending out mass emails.  
 
 You can specify one of three types of banners: error, information, and warning. Only one banner, the last one added or updated, is displayed at a time. Banners remain in effect until their expiration date. 
 
@@ -23,7 +23,7 @@ The following image shows how an information message is displayed. Users can can
 
 :::image type="content" source="media/banners/show-banner-info.png" alt-text="Information banner"::: 
 
-Banners are restricted to a length of thirty words. Only one banner can be shown at a time. Banners are prioritized by level. For example, if you have posted a warning message and an info message, the info message will only be shown after a user closes the warning message, or you delete the warning message. 
+Banners are restricted to a length of thirty words.  Banners are prioritized by level. For example, if you have posted a warning message and an info message, the info message will only be shown after a user closes the warning message, or you delete the warning message. 
 
 
 ## Prerequisites 
@@ -58,26 +58,54 @@ The Banner Settings extension provides a settings pane under **Collection Settin
 - Include hyperlinks in banners using markdown syntax.
 
 ::: moniker range="azure-devops"
-To add or delete a banner, open **Organization settings**, scroll down to the **Extensions** section, and choose **Banner**. 
-::: moniker-end
-::: moniker range="< azure-devops"
-To add or delete a banner, open **Admin settings**, scroll down to the **Extensions** section, and choose **Banner**. 
-::: moniker-end
-[!INCLUDE [temp](../../includes/open-admin-organization-settings.md)] 
 
+### Open Organization settings
+
+To add or delete a banner, open **Organization settings**, scroll down to the **Extensions** section, and choose **Banner**. 
+
+Organization settings configure resources for all projects or the entire organization. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](../organizations/settings/about-settings.md#admin).
+
+1. Choose the :::image type="icon" source="../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose **Collection settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](../media/settings/open-admin-settings-vert.png)  
+
+2. Select a service from the sidebar. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards** and **Pipelines** to choose a page.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Projects](../media/settings/admin-organization-settings.png) 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+### Open Admin settings
+
+To add or delete a banner, open **Admin settings**, scroll down to the **Extensions** section, and choose **Banner**. 
+
+Admin settings configure resources for all projects in a project collection. For an overview of all collection settings, see [Project collection administrator role and managing collections of projects](../organizations/settings/about-settings.md#admin).
+
+1. Choose the :::image type="icon" source="../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Collections**, and then choose **Admin settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Admin settings](../media/settings/open-admin-settings-server.png)  
+
+::: moniker-end
+ 
 ### Add and manage banners 
 
 1. If no banners have been defined, choose **Create a new banner**. 
 
-::: moniker range="azure-devops"
-:::image type="content" source="media/banners/open-banner-extension-cloud.png" alt-text="Create first banner, on-premises"::: 
-::: moniker-end
-::: moniker range="< azure-devops"
-:::image type="content" source="media/banners/open-banner-extension-on-premises.png" alt-text="Create first banner, on-premises"::: 
-::: moniker-end
+	::: moniker range="azure-devops"
+	:::image type="content" source="media/banners/open-banner-extension-cloud.png" alt-text="Create first banner, on-premises"::: 
+	::: moniker-end
+	::: moniker range="< azure-devops"
+	:::image type="content" source="media/banners/open-banner-extension-on-premises.png" alt-text="Create first banner, on-premises"::: 
+	::: moniker-end
 
-1. Enter the banner text into the text box. Choose Edit more to change the message level and set the expiration date. 
-:::image type="content" source="media/banners/banner-extension-test-message.png" alt-text="Add test banner message"::: 
+1. Enter the banner text into the text box. Choose **Edit more** to change the message level and set the expiration date. 
+
+	:::image type="content" source="media/banners/banner-extension-test-message.png" alt-text="Add test banner message"::: 
 
 1. Choose :::image type="icon" source="media/banners/banner-save-icon.png" border="false"::: **Save** to save your changes.   
 
@@ -267,14 +295,13 @@ az devops admin banner update --id 7653f414-3c01-424f-8f84-e51aa99b797c --messag
 
 ## Related articles
 
+::: moniker range="azure-devops"
 - [Get started managing your organization or project collection](../../user-guide/manage-organization-collection.md)
+- [About projects and scaling your organization](../projects/about-projects.md) 
 - [Get started with Azure DevOps CLI](../../cli/index.md)  
-- [`az devops admin banner commands`](/cli/azure/devops/admin/banner)   
+- [az devops admin banner commands](/cli/azure/devops/admin/banner)    
+::: moniker-end
+::: moniker range="< azure-devops"
+- [Get started managing your organization or project collection](../../user-guide/manage-organization-collection.md)
 - [About projects and scaling your organization](../projects/about-projects.md)  
-
-
-<!--- QUESTIONS 
-Is there a limit to the message text string? 
-Is there any way to show multiple banners?  
-Could not update the expiration date to a null value 
---> 
+::: moniker-end
