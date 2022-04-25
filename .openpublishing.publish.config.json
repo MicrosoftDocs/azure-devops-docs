@@ -24,7 +24,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
+        "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {

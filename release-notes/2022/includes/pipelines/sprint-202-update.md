@@ -12,7 +12,7 @@ With this update, we are adding a new `templateContext` property for `job`, `dep
 
 Here is a scenario for using `templateContext`: 
 
-   * You use templates to reduce code duplication or to [improve the security of your pipelines](https://docs.microsoft.com/azure/devops/pipelines/security/templates)
+   * You use templates to reduce code duplication or to [improve the security of your pipelines](/azure/devops/pipelines/security/templates)
 
    * Your template takes as parameter a list of `stages`, `jobs`, or `deployments`
 

@@ -105,8 +105,7 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/extend-analytics/**": ">= azure-devops-2019",
-        "reference/witadmin/**": "<= azure-devops"
+        "report/extend-analytics/**": ">= azure-devops-2019"
       },
       "ms.author": {
         "artifacts/**": "rabououn",
@@ -457,7 +456,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2017 || tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
+        "moniker_range": "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
       }
     }
   }
