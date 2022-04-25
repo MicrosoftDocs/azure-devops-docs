@@ -9,14 +9,14 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/14/2021
+ms.date: 04/25/2022
 ---
 
 # Allowed IP addresses and domain URLs
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
+If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
 
 - [Domain URLs to allow](#domain-urls-to-allow)
 - [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
@@ -66,7 +66,7 @@ https://static2.sharepointonline.com
 https://visualstudio.com
 https://vsrm.dev.azure.com
 https://vstsagentpackage.azureedge.net
-https://windows.net
+https://*windows.net
 https://login.microsoftonline.com
 https://app.vssps.visualstudio.com 
 https://{organization_name}.visualstudio.com
@@ -109,7 +109,7 @@ https://*.blob.core.windows.net
 https://*.visualstudio.com
 ```
 
-Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly) : [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
+Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
 
 ### NuGet connections
 
