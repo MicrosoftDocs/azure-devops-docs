@@ -63,17 +63,17 @@ The Banner Settings extension provides a settings pane under **Collection Settin
 
 To add or delete a banner, open **Organization settings**, scroll down to the **Extensions** section, and choose **Banner**. 
 
-Organization settings configure resources for all projects or the entire organization. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](../organizations/settings/about-settings.md#admin).
+Organization settings configure resources for all projects or the entire organization. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](about-settings.md#admin).
 
-1. Choose the :::image type="icon" source="../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose **Collection settings**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../media/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 2. Select a service from the sidebar. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards** and **Pipelines** to choose a page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Projects](../media/settings/admin-organization-settings.png) 
+	> ![Organization settings, Projects](../../media/settings/admin-organization-settings.png) 
 
 ::: moniker-end
 
@@ -85,10 +85,10 @@ To add or delete a banner, open **Admin settings**, scroll down to the **Extensi
 
 Admin settings configure resources for all projects in a project collection. For an overview of all collection settings, see [Project collection administrator role and managing collections of projects](../organizations/settings/about-settings.md#admin).
 
-1. Choose the :::image type="icon" source="../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Collections**, and then choose **Admin settings**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Collections**, and then choose **Admin settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Admin settings](../media/settings/open-admin-settings-server.png)  
+	> ![Open Admin settings](../../media/settings/open-admin-settings-server.png)  
 
 ::: moniker-end
  
