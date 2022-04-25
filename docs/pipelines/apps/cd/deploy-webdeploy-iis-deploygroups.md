@@ -1,35 +1,26 @@
 ---
-title: Deploy to IIS on a Windows VM (Classic)
-description: Deploy an ASP.NET or Node.js web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
+title: Deploy apps to an IIS server on a Windows VM (Classic)
+description: Deploy an web apps to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/07/2021
+ms.date: 04/25/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Deploy to a Windows Virtual Machine
+# Deploy apps to a Windows Virtual Machine
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
-Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.
-
-After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
-
-## Define your CI build pipeline
-
-You'll need a continuous integration (CI) build pipeline that publishes your web deployment package. To set up a CI build pipeline, see:
-
-* [Build ASP.NET 4 apps](../aspnet/build-aspnet-4.md)
-
-* [Build ASP.NET Core apps](../../ecosystems/dotnet-core.md)
-
-* [Build JavaScript and Node.js apps](../../ecosystems/javascript.md)
+Learn how to use Azure Pipelines to build and deploy your ASP.NET, ASP.NET Core, or Node.js web app to an IIS web server running on a Windows Virtual Machine.
 
 ## Prerequisites
+
+- An Azure DevOps Organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
+- Build pipeline
+- Configure IIS web server
 
 ### IIS configuration
 
