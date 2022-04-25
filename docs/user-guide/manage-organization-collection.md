@@ -267,6 +267,15 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 ::: moniker-end
  
 
+
+::: moniker range=">= azure-devops-2019"
+
+## Alert users with information banners
+
+You can quickly communicate with your Azure DevOps users through information banners. Use banners to alert your Azure DevOps users to upcoming changes or events without sending mass emails. To learn how, see [Add and manage information banners](../organizations/settings/manage-banners.md). 
+::: moniker-end 
+
+
 ## Review and update notifications
 
 A number of notifications are predefined at the organization or collection level. You can disable or modify these subscriptions, or add new subscriptions as described in [Manage notifications for a team, project, or organization](../notifications/manage-team-group-global-organization-notifications.md).  

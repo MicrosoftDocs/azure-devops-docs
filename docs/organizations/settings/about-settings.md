@@ -824,6 +824,9 @@ For more information, see [Team Foundation Server Administration Documentation](
 
 ## Related articles
 
+- [Add and manage information banners](manage-banners.md)
 - [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
 - [Permissions and groups reference](../security/permissions.md) 
+- [Get started managing your project](../../user-guide/project-admin-tutorial.md)
+- [Get started managing your organization or project collection](../../user-guide/manage-organization-collection.md)
 - [Rate limits](../../integrate/concepts/rate-limits.md)
