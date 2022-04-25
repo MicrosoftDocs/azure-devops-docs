@@ -19,24 +19,47 @@ Learn how to use Azure Pipelines to build and deploy your ASP.NET, ASP.NET Core,
 ## Prerequisites
 
 - An Azure DevOps Organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
-- Build pipeline
-- Configure IIS web server
+- [Build pipeline](build-pipeline)
+- [Configure IIS web server](configure-iis-web-server)
 
-### IIS configuration
+### Build Pipeline
 
-The configuration varies depending on the type of app you are deploying.
+Set up a build pipeline if you don't have one already.
 
-#### ASP.NET app
+#### [.NET](#tab/net/)
+
+- [Build ASP.NET apps](../aspnet/build-aspnet-4.md)
+
+#### [.NET Core](#tab/netcore/)
+
+- [Build .NET Core apps](../../ecosystems/dotnet-core.md)
+
+#### [Node](#tab/node/)
+
+- [Build Node.js apps](../../ecosystems/javascript.md)
+
+---
+
+### Configure IIS web server
+
+Configure your IIS server if you haven't done so already
+
+#### [.NET](#tab/net/)
 
 [!INCLUDE [prepare-aspnet-windows-vm](../includes/prepare-aspnet-windows-vm.md)]
 
-#### ASP.NET Core app
+#### [.NET Core](#tab/netcore/)
 
-[!INCLUDE [prepare-aspnetcore-windows-vm](../includes/prepare-aspnetcore-windows-vm.md)]
+- [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis/).
 
-#### Node.js app
+#### [Node](#tab/node/)
 
-Follow the instructions in [this topic](https://github.com/Azure/iisnode) to install and configure IISnode on IIS servers.
+- [Hosting node.js applications in IIS on Windows](https://github.com/Azure/iisnode)
+
+---
+
+
+
 
 [!INCLUDE [create-deployment-group](../includes/create-deployment-group.md)]
 
