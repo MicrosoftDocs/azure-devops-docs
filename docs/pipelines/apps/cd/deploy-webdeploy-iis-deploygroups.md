@@ -83,33 +83,25 @@ Deployment groups make it easier to organize the servers that you want to use to
 
 1. Navigate to **Deployment groups**, and then select your deployment group. Select the **Targets** tab and make sure your VM is listed.
 
-## Define your CD release pipeline
+## Create a release pipeline
 
-Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your IIS servers.
+Using release pipelines, you can deploy your build artifacts to your IIS servers.
 
-1. If you haven't already done so, install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
-   extension from Marketplace. This extension contains the tasks required for this example.
 
-1. Do one of the following:
+1. Select **Pipelines**, and then select **Releases**. Select **New pipeline**.
 
-   * If you've just completed a CI build then, in the build's **Summary** tab choose **Release**.
-     This creates a new release pipeline that's automatically linked to the build pipeline.
+1. Select the **IIS Website Deployment** template, and then select **Apply**.
 
-   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
-     in the list of release pipelines, and choose **Create release pipeline**.
+1. Select **Add ab artifact** to add your build artifact.
 
-1. Select the **IIS Website Deployment** template and choose **Apply**.
+1. Select **Build**, and then select your **Project** and your **Source (build pipeline)**. Select **Add** when you are done.
 
-1. If you created your new release pipeline from a build summary, check that the build pipeline
-   and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
-   release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
+1. Select the **Continuous deployment trigger** icon in the **Artifacts** section. Enable the **Continuous deployment trigger**,
+   and add the **main** branch as a filter.
 
-1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **main** branch.
+1. Select **Tasks**, and then select **IIS Deployment**. Select the deployment group you created earlier from the dropdown menu.
 
-1. Open the **Tasks** tab and select the **IIS Deployment** job. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
-
-1. Save the release pipeline.
+1. Select **Save** when you are done.
 
 ## Create a release to deploy your app
 
