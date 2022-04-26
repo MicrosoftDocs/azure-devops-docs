@@ -1,6 +1,6 @@
 ---
 title: Deploy apps to an IIS server on a Windows VM (Classic)
-description: Deploy an web apps to an IIS web server on a Windows virtual machine using Deployment Groups
+description: Deploy web apps to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.custom: seodec18
@@ -87,7 +87,6 @@ Deployment groups make it easier to organize the servers that you want to use to
 
 Using release pipelines, you can deploy your build artifacts to your IIS servers.
 
-
 1. Select **Pipelines**, and then select **Releases**. Select **New pipeline**.
 
 1. Select the **IIS Website Deployment** template, and then select **Apply**.
@@ -103,15 +102,18 @@ Using release pipelines, you can deploy your build artifacts to your IIS servers
 
 1. Select **Save** when you are done.
 
-## Create a release to deploy your app
+## Deploy your app
 
-You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+1. Select **Pipelines** > **Releases**, and then select **Create release**.
 
-[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
+1. Check that the artifact version you want to use is selected and then select **Create**.
 
-## Next steps
+1. Select the release link in the information bar message. For example: "Release **Release-1** has been queued".
 
-* [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
-* [Apply stage-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
-* [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
-* [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)
+1. Navigate to your pipeline **Logs** to see the logs and agent output.
+
+## Related articles
+
+- [Deploy to Linux VMs](./deploy-linuxvm-deploygroups.md)
+- [Deploy from multiple branches](../..//release/deploy-multiple-branches.md)
+- [Deploy pull request Artifacts](../../release/deploy-pull-request-builds.md)
