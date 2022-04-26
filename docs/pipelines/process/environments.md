@@ -3,7 +3,7 @@ title: Create target environment
 description: Collection of deployment targets useful for traceability and recording deployment history.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 10/16/2021
+ms.date: 04/26/2022
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -120,10 +120,16 @@ The deployment history view within environments provides the following advantage
    > [!div class="mx-imgBorder"]
    > ![Deployment history](media/environments-deployment-history.png)
 
-- Drill down into the job details to see the list of commits and work items that were newly deployed to the environment.
+- Drill down into the job details to see the list of commits and work items that were deployed to the environment. The list of commits and work items are the new items between deployments. Your first listing will include all of the commits and the following listings will just include changes. If multiple commits are tied to the same pull request, you'll see multiple results on the work items and changes tabs.
 
    > [!div class="mx-imgBorder"]
-   > ![Commits under deployment history](media/environments-deployment-history-commits.png)
+   > ![Commits under deployment history.](media/environment-deployment-history-changes.png)
+
+- If multiple work items are tied to the same pull request, you'll see multiple results on the work items  tab.
+
+   > [!div class="mx-imgBorder"]
+   > ![Work items under deployment history](media/environment-deployment-history-workitems.png)
+
 
 ## Security
 
