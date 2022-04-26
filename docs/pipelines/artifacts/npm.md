@@ -1,5 +1,5 @@
 ---
-title: Publishing npm packages using Azure Pipeline 
+title: Publishing npm packages using Azure Pipelines
 ms.custom: seodec18, devx-track-js
 description: How to publish your npm packages with Azure Pipelines
 services: vsts
