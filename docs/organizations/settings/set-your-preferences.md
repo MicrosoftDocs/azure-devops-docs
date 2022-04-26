@@ -22,7 +22,7 @@ On your Azure DevOps user profile page, you can change your picture, display nam
 
 Other tools for setting your Azure DevOps preferences include:
 
-- **[Time and Locale](../accounts/change-time-zone.md#change-your-user-profile-time-zone)**: Change your preferred language, date and time patterns, and time zone. 
+- **[Time and Locale](../accounts/change-time-zone.md#change-user-profile-time-zone)**: Change your preferred language, date and time patterns, and time zone. 
 - **[Notifications](../../notifications/manage-your-personal-notifications.md)**: Add or review subscriptions to event changes. 
 - **Permissions**: Use to refresh your permissions to cause any recent changes to take effect.
 - **[Preview features](../../project/navigation/preview-features.md)**: Enable or disable a preview feature for your user account.
