@@ -309,7 +309,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Turn a service on or off](set-services.md)
    :::column-end:::
    :::column span="2":::
-      Services that aren't use by project members can be disabled so that they don't appear in the web portal. Turning off a service removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn on the service.
+      Services that aren't used by project members can be disabled so that they don't appear in the web portal. Turning off a service removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn on the service.
    :::column-end:::
 :::row-end:::
 ---
