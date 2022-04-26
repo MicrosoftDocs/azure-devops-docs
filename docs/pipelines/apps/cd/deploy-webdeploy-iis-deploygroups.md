@@ -19,8 +19,8 @@ Learn how to use Azure Pipelines to build and deploy your ASP.NET, ASP.NET Core,
 ## Prerequisites
 
 - An Azure DevOps Organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
-- [Build pipeline](build-pipeline)
-- [Configure IIS web server](configure-iis-web-server)
+- [Build pipeline](#build-pipeline)
+- [Configure IIS web server](#configure-iis-web-server)
 
 ### Build Pipeline
 
@@ -58,10 +58,30 @@ Configure your IIS server if you haven't done so already
 
 ---
 
+## Create a deployment group
 
+Deployment groups make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate the deployment of your app.
 
+1. Select **Pipelines**, and then select **Deployment groups**.
 
-[!INCLUDE [create-deployment-group](../includes/create-deployment-group.md)]
+1. Select **Add a deployment group** (or **New** if there are already deployment groups in place).
+
+1. Enter a name for your group, and then select **Create**.
+
+1. In the machine registration section, make sure that **Windows** is selected from the dropdown menu, and that the **Use a personal access token in the script for authentication** checkbox is also selected. Select **Copy script to clipboard** when you are done. The script that you've copied to your clipboard will download and configure an agent on the VM so that it can receive new web deployment packages and apply them to IIS.
+
+1. Log in to your VM, open an elevated PowerShell command prompt window and run the script.
+
+1. When you're prompted to configure tags for the agent, press Enter to skip. (tags are optional)
+
+1. When you're prompted for the user account, press **Enter** to accept the defaults.
+
+   > [!NOTE]
+   > The agent running the pipeline must have access to the *C:\Windows\system32\inetsrv\* directory. See [Security groups, service accounts, and permissions](../../../organizations/security/permissions-access.md) for more details.
+
+1. You should see the following message when the script is done *Service vstsagent.account.computername started successfully*.
+
+1. Navigate to **Deployment groups**, and then select your deployment group. Select the **Targets** tab and make sure your VM is listed.
 
 ## Define your CD release pipeline
 
