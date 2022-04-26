@@ -29,11 +29,11 @@
   - name: Create an organization or project collection
     href: ../organizations/accounts/create-organization.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: Manage your project
-    href: project-admin-tutorial.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+    href: project-admin-tutorial.md 
   - name: Manage your organization or collection
     href: manage-organization-collection.md
   - name: Add users to a project or team
-    href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+    href: ../organizations/security/add-users-team-project.md 
   - name: Manage teams and configure team tools
     href: ../organizations/settings/manage-teams.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: Change individual permissions
