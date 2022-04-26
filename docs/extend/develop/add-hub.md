@@ -33,8 +33,6 @@ In this article, we'll create a new hub that displays in Azure Boards after the 
 |--- vss-extension.json				// extension's manifest
 ```
 
-
-
 ## Get the client SDK: `VSS.SDK.js`
 
 The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host, Azure DevOps Services, frame. This script also initializes, notifies that the extension loaded, or gets context about the current page. Get the Client SDK `VSS.SDK.js` file and add it to your web app. 
@@ -47,7 +45,7 @@ npm install vss-web-extension-sdk
 ```
 
 > [!NOTE]
-> For more information about the SDK, see [Azure DevOps Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk).
+> For more information, see [Azure DevOps Web Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk).
 
 ## Your hub page: `hello-world.html`
 
@@ -132,7 +130,6 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 > [!NOTE]
 > Change the **publisher** to your publisher name. To create a publisher, see [Package, publish, and install](../publish/overview.md). 
 
-
 ### Icons
 
 The **icons** stanza specifies the path to your extension's icon in your manifest. 
@@ -181,6 +178,5 @@ NEXTSTEPACTION
 - [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 - [Extension manifest reference](../develop/manifest.md)
 - [Azure DevOps web extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk)
-- [Extension manifest reference](../develop/manifest.md)
 - [Azure DevOps Formula Design System](https://developer.microsoft.com/azure-devops/)
 
