@@ -309,7 +309,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Turn a service on or off](set-services.md)
    :::column-end:::
    :::column span="2":::
-      Services that aren't use by project members can be disabled so that they don't appear in the web portal. Turning off a service removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn on the service.
+      Services that aren't used by project members can be disabled so that they don't appear in the web portal. Turning off a service removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn on the service.
    :::column-end:::
 :::row-end:::
 ---
@@ -824,6 +824,9 @@ For more information, see [Team Foundation Server Administration Documentation](
 
 ## Related articles
 
+- [Add and manage information banners](manage-banners.md)
 - [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
 - [Permissions and groups reference](../security/permissions.md) 
+- [Get started managing your project](../../user-guide/project-admin-tutorial.md)
+- [Get started managing your organization or project collection](../../user-guide/manage-organization-collection.md)
 - [Rate limits](../../integrate/concepts/rate-limits.md)
