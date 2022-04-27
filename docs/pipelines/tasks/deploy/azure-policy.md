@@ -10,9 +10,16 @@ ms.date: 03/12/2019
 monikerRange: '> tfs-2018'
 ---
 
-# Security and Compliance Assessment task
+# Check Azure Policy compliance task
 
 [!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+
+:::moniker range="<=azure-devops-2019"
+
+> [!Note]
+> This task was renamed from **Security and Compliance Assessment** to **Check Azure Policy compliance** in Azure DevOps Server 2019.1. The YAML name for the task was unchanged from `AzurePolicyCheckGate@0`.
+
+:::moniker-end
 
 [Azure Policy](/azure/governance/policy/) allows you to assess and enforce resource compliance against defined IT policies.
 Use this task in a gate to identify, analyze and evaluate the security risks,
