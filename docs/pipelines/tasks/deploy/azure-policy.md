@@ -30,7 +30,8 @@ and determine the mitigation measures required to reduce the risks.
 Can be used only as a [gate](../../release/approvals/gates.md).
 This task is not supported in a build or release pipeline.
 
-![Using the task as a gate in a release pipeline](media/gates.png)
+
+:::image type="content" source="media/gates.png" alt-text="Using the task as a gate in a release pipeline":::
 
 ::: moniker range="> tfs-2018"
 
