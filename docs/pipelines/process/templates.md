@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 04/13/2022
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -178,6 +178,67 @@ resources:
 steps:
  - script: echo "Testing resource template"
 ```
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Use templateContext to pass properties to templates
+
+You can use `templateContext` to pass additional properties to stages, steps, and jobs that are used as parameters in a template. Specifically, you can specify `templateContext` within the `jobList`, `deploymentList`, or `stageList` parameter data type. 
+  
+In this example, the parameter `testSet` in `testing-template.yml` has the data type `jobList`. The template `testing-template.yml` creates a new variable `testJob` using the [each keyword](expressions.md#each-keyword). The template then references the `testJob.templateContext.expectedHTTPResponseCode`, which gets set in `azure-pipeline.yml` and passed to the template. 
+
+When response code is 200, the template makes a REST request. When the response code is 500, the template outputs all of the environment variables for debugging. 
+
+`templateContext` can contain properties. 
+
+```yaml
+#testing-template.yml
+
+parameters: 
+- name: testSet
+  type: jobList
+
+jobs:
+- ${{ each testJob in parameters.testSet }}:
+  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 200) }}:
+    - job:
+      steps: 
+      - powershell: 'Invoke-RestMethod -Uri https://blogs.msdn.microsoft.com/powershell/feed/ | Format-Table -Property Title, pubDate'
+      - ${{ testJob.steps }}    
+  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 500) }}:
+    - job:
+      steps:
+        - powershell: 'Get-ChildItem -Path Env:\'
+        - ${{ testJob.steps }}
+```
+
+```yaml
+#azure-pipeline.yml
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+extends:
+  template: testing-template.yml
+  parameters:
+    testSet:
+    - job: positive_test
+      templateContext:
+        expectedHTTPResponseCode: 200
+      steps:
+      - script: echo "Run positive test" 
+    - job: negative_test
+      templateContext:
+        expectedHTTPResponseCode: 500
+      steps:
+      - script: echo "Run negative test" 
+```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 ## Insert a template
 
