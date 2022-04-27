@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 03/12/2019
+ms.date: 04/27/2022
 monikerRange: '> tfs-2018'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: '> tfs-2018'
 :::moniker range="<=azure-devops-2019"
 
 > [!Note]
-> This task was renamed from **Security and Compliance Assessment** to **Check Azure Policy compliance** in Azure DevOps Server 2019.1. The YAML name for the task was unchanged from `AzurePolicyCheckGate@0`.
+> This task was renamed from **Security and Compliance Assessment** to **Check Azure Policy compliance** with the release of Azure DevOps Server 2019.1. The YAML name for the task was unchanged from `AzurePolicyCheckGate@0`.
 
 :::moniker-end
 
