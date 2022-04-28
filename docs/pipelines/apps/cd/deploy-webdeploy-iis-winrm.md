@@ -45,26 +45,20 @@ Set up a build pipeline if you don't have one already.
 
 Windows Remote Management (WinRM) requires target servers to be:
 
-* Domain-joined or workgroup-joined
-* Able to communicate using the HTTP or HTTPS protocol
-* Addressed by using a fully qualified domain name (FQDN) or an IP address
+- Domain-joined or workgroup-joined.
+- Able to communicate using the HTTP or HTTPS protocol.
+- Addressed by using a fully qualified domain name (FQDN) or an IP address.
 
-This table shows the supported scenarios for WinRM.
+This table shows the supported scenarios for WinRM. Make sure that your IIS servers are set up in one of the following configurations. For example, do not use WinRM over HTTP to communicate with a Workgroup machine. Similarly, do not use an IP address to access the target server(s) when you use HTTP protocol. Instead, use HTTPS for both scenarios.
 
-| Joined to a | Protocol | Addressing mode |
-| --------- | -------- | --------------- |
-| Workgroup | HTTPS | FQDN |
-| Workgroup | HTTPS | IP address |
-| Domain | HTTPS | IP address |
-| Domain | HTTPS | FQDN |
-| Domain | HTTP | FQDN |
+| Joined to a | Protocol |   Addressing mode  |
+| ---------   | -------- |   ---------------  |
+| Workgroup   |   HTTPS  | FQDN or IP address |
+| Domain      |   HTTPS  | FQDN or IP address |
+| Domain      |   HTTP   |       FQDN         |
 
-Ensure that your IIS servers are set up in one of these configurations.
-For example, do not use WinRM over HTTP to communicate with a Workgroup machine.
-Similarly, do not use an IP address to access the target server(s) when you use HTTP.
-Instead, in both scenarios, use HTTPS.
-
-> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](/windows/win32/winrm/installation-and-configuration-for-windows-remote-management).
+> [!NOTE]
+> If you need to deploy to a server that is not in the same workgroup or domain, add it to the trusted hosts in your [WinRM configuration](/windows/win32/winrm/installation-and-configuration-for-windows-remote-management).
 
 Follow these steps to configure each target server.
 
