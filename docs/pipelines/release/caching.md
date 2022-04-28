@@ -475,7 +475,7 @@ steps:
         restoreKeys: | 
           python | "$(Agent.OS)"
           python
-        path: $(Pipeline.Workspace)/miniconda/envs
+        path: $(CONDA)/envs
         cacheHitVar: CONDA_CACHE_RESTORED
     
     - script: conda env create --quiet --file environment.yml
