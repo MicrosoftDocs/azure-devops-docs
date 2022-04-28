@@ -168,7 +168,7 @@ The build agent must have the following capability:
 >When using the `-q` option in your MAVEN_OPTS, an effective pom won't be generated correctly and Azure Artifacts feeds may not be able to be authenticated. 
 
 > [!IMPORTANT]
-> If the JDK version you want to use is already installed on your agent, set `javaHomeOption` to `path` and set the `jdkDirectory` to the path of the JDK version. These options set the `JAVA_HOME_11_X64` environment variable which is required by the Maven task. This environment is set automatically if you are using the Java Tool installer task.
+> If the JDK version you want to use is already installed on your agent, set `javaHomeOption` to `path` and set the `jdkDirectory` to the path of the JDK version. These options set the `JAVA_HOME_11_X64` environment variable which is required by the Maven task. This environment variable is set automatically if you are using the Java Tool installer task.
 
 ## Example
 
