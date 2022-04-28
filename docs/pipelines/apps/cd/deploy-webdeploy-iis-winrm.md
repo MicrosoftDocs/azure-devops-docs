@@ -14,15 +14,34 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to use Azure Pipelines and WinRM to set up a continuous delivery pipeline to deploy your ASP.NET or Node.js web apps to one or more IIS servers.
+Learn how to use Azure Pipelines and WinRM to set up a continuous delivery pipeline to deploy your ASP.NET, ASP.NET Core, or Node.js web apps to one or more IIS servers.
 
 ## Prerequisites
 
 - An Azure DevOps Organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
 - [Build pipeline](#build-pipeline)
-- [Configure IIS web server](#configure-iis-web-server)
+- [Configure WinRM](#configure-winrm)
+- [Configure IIS servers](#configure-iis-servers)
 
-### WinRM configuration
+### Build Pipeline
+
+Set up a build pipeline if you don't have one already.
+
+#### [.NET](#tab/net/)
+
+- [Build ASP.NET apps](../aspnet/build-aspnet-4.md)
+
+#### [.NET Core](#tab/netcore/)
+
+- [Build .NET Core apps](../../ecosystems/dotnet-core.md)
+
+#### [Node](#tab/node/)
+
+- [Build Node.js apps](../../ecosystems/javascript.md)
+
+---
+
+### Configure WinRM
 
 Windows Remote Management (WinRM) requires target servers to be:
 
@@ -100,7 +119,7 @@ Follow these steps to configure each target server.
      which can result in a "Request size exceeded the
      configured MaxEnvelopeSize quota" error.
 
-### IIS configuration
+### Configure IIS servers
 
 If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5 or ASP.NET 4.6 installed on each of your IIS target servers. For more information, see [this topic](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
