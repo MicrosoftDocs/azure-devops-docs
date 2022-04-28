@@ -91,7 +91,7 @@ Using release pipelines, you can deploy your build artifacts to your IIS servers
 
 1. Select the **IIS Website Deployment** template, and then select **Apply**.
 
-1. Select **Add ab artifact** to add your build artifact.
+1. Select **Add an artifact** to add your build artifact.
 
 1. Select **Build**, and then select your **Project** and your **Source (build pipeline)**. Select **Add** when you are done.
 
