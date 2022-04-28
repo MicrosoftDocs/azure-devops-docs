@@ -1,40 +1,26 @@
 ---
-title: Deploy to IIS using WinRM
-description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines using Windows Remote Management (WinRM)
+title: Deploy to IIS servers using WinRM
+description: How to deploy web apps to IIS servers with Azure Pipelines and Windows Remote Management (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/07/2021
+ms.date: 28/04/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Deploy your Web Deploy package to IIS servers using WinRM
+# Deploy to IIS servers with Azure Pipelines and WinRM
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+Learn how to use Azure Pipelines and WinRM to set up a continuous delivery pipeline to deploy your ASP.NET or Node.js web apps to one or more IIS servers.
 
-> A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md) instead of WinRM. However, deployment groups are not available in version of TFS earlier than TFS 2018.
+## Prerequisites
 
-Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
-Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Azure Pipelines.
-A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run PowerShell scripts remotely in order to deploy the Web Deploy package.
-
-## Get set up
-
-### Begin with a CI build
-
-Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
-
-* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
-
-* [Build your ASP.NET Core app](../../ecosystems/dotnet-core.md)
-
-* [Build your Node.js app with gulp](../../ecosystems/javascript.md)
+- An Azure DevOps Organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
+- [Build pipeline](#build-pipeline)
+- [Configure IIS web server](#configure-iis-web-server)
 
 ### WinRM configuration
 
