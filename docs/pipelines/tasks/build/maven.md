@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
 ms.author: vijayma
 author: vijayma
-ms.date: 09/21/2021
+ms.date: 04/28/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -166,6 +166,9 @@ The build agent must have the following capability:
 
 >[!IMPORTANT]
 >When using the `-q` option in your MAVEN_OPTS, an effective pom won't be generated correctly and Azure Artifacts feeds may not be able to be authenticated. 
+
+> [!IMPORTANT]
+> If the JDK version you want to use is already installed on your agent, set `javaHomeOption` to `path` and set the `jdkDirectory` to the path of the JDK version. These options set the `JAVA_HOME_11_X64` environment variable which is required by the Maven task. This environment variable is set automatically if you are using the Java Tool installer task.
 
 ## Example
 
