@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/26/2022
+ms.date: 04/28/2022
 ---
 
 # Add a hub
@@ -16,7 +16,7 @@ ms.date: 04/26/2022
 
 In this article, we'll create a new hub that displays in Azure Boards after the *Sprints* and *Queries* hubs.
 
-:::image type="content" source="../reference/targets/media/work/azure-boards.png" alt-text="Screen shot showing location of new hub in Azure Boards.":::![](../media/hub-location.png)
+:::image type="content" source="../reference/targets/media/work/azure-boards.png" alt-text="Screen shot showing location of new hub in Azure Boards.":::
 
 ## Structure of an extension
 
@@ -169,7 +169,6 @@ Set `addressable` to `true` unless you include other files that don't need to be
 
 ## Next steps
 
-NEXTSTEPACTION
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)
 
