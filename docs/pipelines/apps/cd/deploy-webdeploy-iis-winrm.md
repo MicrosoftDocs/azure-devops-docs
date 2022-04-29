@@ -62,56 +62,47 @@ This table shows the supported scenarios for WinRM. Make sure that your IIS serv
 
 Follow these steps to configure each target server.
 
-1. Enable File and Printer Sharing. You can do this by executing the
-   following command in a Command window with Administrative permissions:
+1. Enable File and Printer Sharing. Run the following command in an elevated command prompt:
 
-   `netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=yes`
+    ```cmd
+    netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=yes
+    ```
 
-1. Check your PowerShell version. You need PowerShell version
-   4.0 or above installed on every target machine. To display the current
-   PowerShell version, execute the following command in the PowerShell console:
+1. Make sure you have PowerShell v4.0 or above installed on every target machine. To display the current
+   PowerShell version, run the following command in an elevated PowerShell command prompt:
 
-   `$PSVersionTable.PSVersion`
+    ```powershell
+    $PSVersionTable.PSVersion
+    ```
 
-1. Check your .NET Framework version. You need version 4.5
-   or higher installed on every target machine. See
-   [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
+1. Make sure you have the .NET Framework v4.5 or higher installed on every target machine. See [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed) for details.
 
-1. Download from GitHub [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
-   for Windows 10 and Windows Server 2016, or
-   [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https-With-Makecert/ConfigureWinRM.ps1)
-   for previous versions of Windows. Copy them to every target machine. You will use them to configure WinRM in the following steps.
-   
-1. Decide if you want to use HTTP or HTTPS to communicate
-   with the target machine(s).
+1. Download the configuration script and copy them to every target machine. You will use them to configure WinRM in the following steps.
 
-   * If you choose HTTP, execute the following in a Command
-     window with Administrative permissions:
+   - Windows 10 and Windows Server 2016: [ConfigureWinRM.ps1 win10-ser16](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
+   - Previous versions of Windows: [ConfigureWinRM.ps1](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https-With-Makecert/ConfigureWinRM.ps1)
 
-     `ConfigureWinRM.ps1 {FQDN} http`
+1. Decide if you want to use HTTP or HTTPS to communicate with the target machine(s).
 
-     > This command creates an HTTP WinRM listener and
-     opens port 5985 inbound for WinRM over HTTP.
+   - If you want to use the HTTP protocol, run the following command in an elevated command prompt to create an HTTP WinRM listener and open port 5985:
 
-   * If you choose HTTPS, you can use either a FQDN or an IP
-     address to access the target machine(s). To use a FQDN to access the target machine(s),
-     execute the following in the PowerShell console with Administrative permissions:  
+    ```command
+    ConfigureWinRM.ps1 {FQDN} http
+    ```
 
-     `ConfigureWinRM.ps1 {FQDN} https`
+   - If you want to use the HTTPS protocol, you can use either a FQDN or an IP address to access the target machine(s). To use a FQDN to access the target machine(s), run the following command in an elevated PowerShell command prompt:
 
-     To use an IP address to access the target machine(s),
-     execute the following in the PowerShell console with Administrative permissions:  
+    ```powershell
+    ConfigureWinRM.ps1 {FQDN} https
+    ```
 
-     `ConfigureWinRM.ps1 {ipaddress} https`
+     To use an IP address to access the target machine(s), run the following command in an elevated PowerShell command prompt:  
 
-     > These commands create a test certificate by using
-     **MakeCert.exe**, use the certificate to create
-     an HTTPS WinRM listener, and open port
-     5986 inbound for WinRM over HTTPS. The script also
-     increases the WinRM **MaxEnvelopeSizekb** setting.
-     By default on Windows Server this is 500 KB,
-     which can result in a "Request size exceeded the
-     configured MaxEnvelopeSize quota" error.
+    ```powershell
+    ConfigureWinRM.ps1 {ipaddress} https
+    ```
+
+     The script is using **MakeCert.exe** to create a test certificate and use it to create an HTTPS WinRM listener and open port 5986. The script will also increase the WinRM **MaxEnvelopeSizekb** setting to prevent certain errors such as "Request size exceeded the configured MaxEnvelopeSize quota". By default, this value is set to 500 KB in Windows Server machines.
 
 ### Configure IIS servers
 
