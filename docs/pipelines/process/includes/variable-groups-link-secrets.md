@@ -12,7 +12,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 1. In the **Variable groups** page, enable **Link secrets from an Azure key vault as variables**.
    You'll need an existing key vault containing your secrets. Create a key vault using the [Azure portal](https://portal.azure.com).
 
-   ![Screenshot of variable group with Azure key vault integration.](../library/media/link-azure-key-vault-variable-group.png)
+   ![Screenshot of variable group with Azure key vault integration.](../../library/media/link-azure-key-vault-variable-group.png)
 
 1. Specify your Azure subscription end point and the name of the vault containing your secrets.
 
