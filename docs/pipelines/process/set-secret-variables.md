@@ -46,6 +46,7 @@ Variable groups follow the [library security model](../library/index.md#library-
 
 ### Link secrets from an Azure key vault
 
+[!INCLUDE [set secret variable in UI](includes/variable-groups-link-secrets.md)]
 
 ## Use the Azure Key Vault task
 
