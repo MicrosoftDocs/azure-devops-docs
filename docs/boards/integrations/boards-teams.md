@@ -3,6 +3,7 @@ title: Use Azure Boards with Microsoft Teams
 titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from a Microsoft Teams channel.
 ms.technology: devops-agile
+ms.custom: cross-service
 ms.topic: how-to
 ms.reviewer: karrg
 ms.author: karrg
