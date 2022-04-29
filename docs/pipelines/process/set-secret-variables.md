@@ -6,6 +6,8 @@ ms.date: 04/29/2022
 monikerRange: '<= azure-devops'
 ---
 
+# Set secret variables
+
 Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use. 
 
 The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault. You can also set secret variables in script tasks but this is not recommended.
@@ -26,7 +28,7 @@ You can add secrets to a variable group or link secrets from an existing [Azure 
 
 1. Select **Pipelines** > **Library** > **+ Variable group**.
 
-   :::image type="content" source="media/add-variable-group.png" alt-text="Screenshot of Add variable group button highlighted with red box.":::
+   :::image type="content" source="../library/media/add-variable-group.png" alt-text="Screenshot of Add variable group button highlighted with red box.":::
 
 1. Enter a name and description for the group.
 
@@ -38,9 +40,9 @@ You can add secrets to a variable group or link secrets from an existing [Azure 
 
 1. When you're finished adding variables, select **Save**.
 
-   ![Saving a variable group](media/save-variable-group.png)
+   ![Screenshot of saving a variable group.](../library/media/save-variable-group.png)
 
-Variable groups follow the [library security model](index.md#library-security).
+Variable groups follow the [library security model](../library/index.md#library-security).
 
 ### Link secrets from an Azure key vault
 
