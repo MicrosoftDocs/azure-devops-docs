@@ -3370,7 +3370,7 @@
     },
     {
       "source_path": "docs/pipelines/targets/deploy-to-azure-vscode.md",
-      "redirect_url": "/previous-versions/azure/devops/pipelines/targets/deploy-to-azure-vscode",
+      "redirect_url": "https://github.com/microsoft/vscode-deploy-azure/issues/239",
       "redirect_document_id": false,
       "monikers": [
         "tfs-2017"
