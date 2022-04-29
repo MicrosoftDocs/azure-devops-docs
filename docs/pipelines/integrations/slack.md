@@ -4,8 +4,9 @@ ms.topic: how-to
 title: Azure Pipelines with Slack
 description: Connect and monitor your pipelines in Azure Pipelines to Slack by subscribing to notifications right from Slack 
 ms.manager: bijuv
-ms.author: divais
-author: divais
+ms.author: jukullam
+author: juliakm
+ms.custom: cross-service
 ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
