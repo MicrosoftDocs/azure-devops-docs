@@ -118,17 +118,17 @@ The deployment history view within environments provides the following advantage
 - View jobs from all pipelines that target a specific environment. For example, two micro-services, each having its own pipeline, are deploying to the same environment. The deployment history listing helps identify all pipelines that affect this environment and also helps visualize the sequence of deployments by each pipeline.
 
    > [!div class="mx-imgBorder"]
-   > ![Deployment history](media/environments-deployment-history.png)
+   > ![Screenshot of deployment history listing.](media/environments-deployment-history.png)
 
 - Drill down into the job details to see the list of commits and work items that were deployed to the environment. The list of commits and work items are the new items between deployments. Your first listing will include all of the commits and the following listings will just include changes. If multiple commits are tied to the same pull request, you'll see multiple results on the work items and changes tabs.
 
    > [!div class="mx-imgBorder"]
-   > ![Commits under deployment history.](media/environment-deployment-history-changes.png)
+   > ![Screenshot of commits under deployment history.](media/environment-deployment-history-changes.png)
 
 - If multiple work items are tied to the same pull request, you'll see multiple results on the work items  tab.
 
    > [!div class="mx-imgBorder"]
-   > ![Work items under deployment history](media/environment-deployment-history-workitems.png)
+   > ![Screenshot of work items under deployment history.](media/environment-deployment-history-workitems.png)
 
 
 ## Security
