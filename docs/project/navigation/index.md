@@ -2,7 +2,7 @@
 title: Navigating within the web portal  
 titleSuffix: Azure DevOps
 description: Navigate within the user interface/web portal of Azure DevOps
-ms.custom: "Navigation, seodec18"
+ms.custom: "navigation, cross-project, cross-service"
 ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE

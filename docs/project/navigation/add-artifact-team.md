@@ -2,7 +2,7 @@
 title: Add artifact or team
 titleSuffix: Azure DevOps
 description: How to add a new artifact, view, or team within the web portal in Azure DevOps
-ms.custom: Navigation
+ms.custom: navigation
 ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
