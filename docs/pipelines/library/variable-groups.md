@@ -522,7 +522,7 @@ Deleted variable 'requires-login' successfully.
 
 ## Link secrets from an Azure key vault
 
-[!INCLUDE [set secret variable in UI](includes/variable-groups-link-secrets.md)]
+[!INCLUDE [set secret variable in UI](../process/includes/variable-groups-link-secrets.md)]
 
 ## Expand variables in a group
 
