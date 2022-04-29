@@ -188,12 +188,8 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
 1. Navigate to your pipeline **Logs** to see the logs and agent output.
 
-<!-- BEGINSECTION class="md-qanda" -->
+## Related articles
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../includes/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
+- [Deploy apps to Windows VMs](./deploy-webdeploy-iis-deploygroups.md).
+- [Deploy apps to Linux VMs](./deploy-linuxvm-deploygroups.md).
+- [Deploy apps to VMware vCenter Server](../../targets/vmware.md).
