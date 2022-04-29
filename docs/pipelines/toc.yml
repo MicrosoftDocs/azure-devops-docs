@@ -386,8 +386,6 @@
         - name: Azure Web App for Containers
           href: apps/cd/deploy-docker-webapp.md
           displayName: containers, docker, azure web app
-        - name: Visual Studio Code Deploy to Azure extension
-          href: targets/deploy-to-azure-vscode.md
     - name: Azure Functions
       items:
         - name: Azure Functions
