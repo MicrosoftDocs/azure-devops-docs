@@ -48,6 +48,7 @@ Variable groups follow the [library security model](../library/index.md#library-
 
 [!INCLUDE [set secret variable in UI](includes/variable-groups-link-secrets.md)]
 
+
 ## Use the Azure Key Vault task
 
 You can use the Azure Key Vault task to include secrets in your pipeline. This task allows the pipeline to connect to your Azure Key Vault and retrieve secrets to use as pipeline variables.
