@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 28/04/2022
+ms.date: 04/28/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -106,18 +106,19 @@ Follow these steps to configure each target server.
 
 ### Configure IIS servers
 
-If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5 or ASP.NET 4.6 installed on each of your IIS target servers. For more information, see [this topic](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+#### [ASP.NET](#tab/net/)
 
-If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
+- [Install IIS](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)
 
-If you are deploying a Node.js application to IIS target servers, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
+#### [ASP.NET Core](#tab/netcore/)
 
-In this example, we will deploy to the Default Web Site on each of the servers. If you need to deploy to another website, make sure you configure this as well.
+- [Host ASP.NET Core on Windows with IIS](/aspnet/core/publishing/iis).
 
-### IIS WinRM extension
+#### [Node](#tab/node/)
 
-Install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
-extension from Visual Studio Marketplace in Azure Pipelines or TFS.
+- [Hosting node.js applications in IIS on Windows](https://github.com/Azure/iisnode)
+
+---
 
 ## Define and test your CD release pipeline
 
@@ -177,11 +178,15 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
 1. Edit the name of the release pipeline, click **Save**, and click **OK**. The default stage is named Stage1, which you can edit by clicking directly on the name.
 
-You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
+## Deploy your app
 
-[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
+1. Select **Pipelines** > **Releases**, and then select **Create release**.
 
-## FAQ
+1. Check that the artifact version you want to use is selected and then select **Create**.
+
+1. Select the release link in the information bar message. For example: "Release **Release-1** has been queued".
+
+1. Navigate to your pipeline **Logs** to see the logs and agent output.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
