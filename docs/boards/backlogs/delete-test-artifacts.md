@@ -79,7 +79,7 @@ However, these objects aren't connected to each other through link types. For de
 
 2. Confirm you want to actually delete the item.  
   
-	![Confirm delete of test artifacts dialog.](media/move-change-delete/perm-delete-test-artifacts-dialog.png)  
+	:::image type="content" source="media/move-change-delete/perm-delete-test-artifacts-dialog.png" alt-text="Confirm delete of test artifacts dialog.":::  
 
 ::: moniker range=">= azure-devops-2020"
 3. You can also delete a test plan directly from **Test Plans**. To delete a test plan, open **Test Plans** and choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More Actions** for the plan you want to delete, and choose **Delete**. 
