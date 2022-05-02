@@ -67,6 +67,8 @@ You access your backlogs and boards from a web portal. If you work from the Stor
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
+[!INCLUDE [temp](../includes/tip-configure-backlog-view.md)]
+
 ::: moniker-end
 
 

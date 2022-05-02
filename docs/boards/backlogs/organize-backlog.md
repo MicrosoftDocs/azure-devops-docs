@@ -20,14 +20,12 @@ ms.date: 04/01/2022
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, organize your backlog by mapping backlog items. You can quickly add and group items into a hierarchy. And also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
 
 In this article you'll learn how to:  
-
-
-
+ 
 > [!div class="checklist"]    
 > * Open your product backlog or portfolio backlog  
 > * View the tree hierarchy  
 > * Group backlog items using the Mapping pane  
-> * Reparent items using drag-and-drop or the **Change parent** option  
+> * Reparent items through dragging or the **Change parent** option  
 
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
@@ -38,14 +36,14 @@ In this article you'll learn how to:
 ::: moniker range="azure-devops"  
 
 > [!NOTE]   
-> **Stakeholder** access users for a private project can't use drag and drop to map or reparent work items or change their sprint. 
+> **Stakeholder** access users for a private project can't drag items to map or reparent them or to assign their sprint. 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"  
 
 > [!NOTE]   
-> **Stakeholder** access users can't use drag and drop to map or reparent work items or change their sprint. 
+> **Stakeholder** access users can't drag items to map or reparent them or to assign their sprint. 
 
 ::: moniker-end  
 
@@ -133,7 +131,7 @@ To choose another team, open the project/team selector and select a different te
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Parents ON](media/organize-backlog/show-parents-agile.png)
 
-	The hierarchical view displays. From this view, you can reparent items by drag and drop, moving a child item to a new parent. 
+	The hierarchical view displays. From this view, you can reparent items by dragging a child item to a new parent. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Hierarchical view](media/organize-backlog/hierarchical-view-agile.png)
@@ -149,7 +147,7 @@ To choose another team, open the project/team selector and select a different te
 
 ::: moniker range="tfs-2018"
 
-From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag and drop items to reparent items from this view.   
+From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag items to reparent items from this view.   
 
 ![Hierarchical view of backlogs](media/org-backlog-intro-show-parents-ts-new-nav.png) 
 
@@ -244,6 +242,7 @@ From the product backlog, you can multi-select several work items and choose **C
 ## Related articles  
 
 - [Define features and epics](define-features-epics.md)
+- [Configure your backlog view](configure-your-backlog-view.md)
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Product backlog controls](product-backlog-controls.md)
