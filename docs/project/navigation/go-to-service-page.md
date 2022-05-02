@@ -2,7 +2,7 @@
 title: Navigate to an application or functional area
 titleSuffix: Azure DevOps 
 description: Access the application area or change your view
-ms.custom: Navigation
+ms.custom: "navigation, cross-project, cross-service"
 ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE

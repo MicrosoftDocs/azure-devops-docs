@@ -4,6 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from within Slack.
 ms.technology: devops-agile
 ms.topic: how-to
+ms.custom: cross-service
 ms.reviewer: karrg
 ms.author: kaelli
 author: KathrynEE

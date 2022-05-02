@@ -3,7 +3,7 @@ title: Link types reference guide
 titleSuffix: Azure Boards
 description: Reference guide that describes all link types defined for Azure DevOps and Azure Boards. 
 ms.technology: devops-agile
-ms.custom: "boards-queries, cross-project, cross-org"
+ms.custom: "boards-queries, cross-project, cross-service"
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE

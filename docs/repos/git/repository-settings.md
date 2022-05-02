@@ -5,6 +5,7 @@ description: Learn how to configure a Git repository and its branches.
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
 ms.topic: how-to
+ms.custom: cross-service
 monikerRange: '<= azure-devops' 
 ms.date: 03/31/2022
 ---
