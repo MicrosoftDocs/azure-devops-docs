@@ -33,14 +33,14 @@ To effectively perform select tasks, it's good to know how to set your view opti
 ## Backlog configuration options
 
 You have the following tools to configure your backlog view: **Expand/Collapse one level**, **Column Options**, **Backlog level selector**, **View options**, and **Filter** toolbar. The options you set for each backlog level&mdash;stories, features, epics (Agile process) or product backlog items, features, epics (Scrum process)&mdash;are distinct. The options you set persist until you change them. 
- :::image type="content" source="media/configure-view-options/customization-tools.png" alt-text="Backlog configuration tool options.":::  
+ :::image type="content" source="media/configure-view-options/customization-tools.png" alt-text="Screenshot showing the four types of Backlog configuration tool options.":::  
 
 ### Expand and collapse the hierarchy  
 
 The default view when you select a backlog level is to show the collapsed view. Only those items associated with the backlog level selected are shown. You can expand and collapse the hierarchy by using the ![expand icon](../media/icons/expand_icon.png) and collapse ![collapse icon](../media/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. Your selection doesn't persist once you switch to a different page or view.   
 
 > [!div class="mx-imgBorder"]  
-> ![Hierarchical view, expand, and collapse icons.](media/configure-view-options/expand-collapse.png)  
+> ![Screenshot of Expand/Collapse icons that show/hide a hierarchical view.](media/configure-view-options/expand-collapse.png)  
  
 
 ### Backlog level selector 
@@ -54,25 +54,25 @@ From the **Backlogs** page, you can select the product backlog or a portfolio ba
 :::row:::
    :::column span="1":::
       **Agile process**  
-      :::image type="content" source="media/configure-view-options/agile-process-levels.png" alt-text="Backlog level selector, Agile process.":::  
+      :::image type="content" source="media/configure-view-options/agile-process-levels.png" alt-text="Screenshot of Backlog level selector for the Agile process.":::  
    :::column-end:::
    :::column span="1":::
       **Scrum process**  
-      :::image type="content" source="media/configure-view-options/scrum-process-levels.png" alt-text="Backlog level selector, Scrum process.":::  
+      :::image type="content" source="media/configure-view-options/scrum-process-levels.png" alt-text="Screenshot of Backlog level selector for the Scrum process.":::  
    :::column-end:::
    :::column span="1":::
       **Basic process**  
-      :::image type="content" source="media/configure-view-options/basic-process-levels.png" alt-text="Backlog level selector, Basic process."::: 
+      :::image type="content" source="media/configure-view-options/basic-process-levels.png" alt-text="Screenshot of Backlog level selector for the Basic process."::: 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
       **CMMI process**  
-      :::image type="content" source="media/configure-view-options/cmmi-process-levels.png" alt-text="Backlog level selector, CMMI process.":::  
+      :::image type="content" source="media/configure-view-options/cmmi-process-levels.png" alt-text="Screenshot of Backlog level selector for the CMMI process.":::  
    :::column-end:::
    :::column span="1":::
       **Customized process**  
-      :::image type="content" source="media/configure-view-options/customized-process-levels.png" alt-text="Backlog level selector, Customized process.":::   
+      :::image type="content" source="media/configure-view-options/customized-process-levels.png" alt-text="Screenshot of Backlog level selector for the Customized process.":::   
    :::column-end:::
    :::column span="1":::
        
@@ -88,7 +88,7 @@ The :::image type="icon" source="../../media/icons/view-options-icon.png" border
 
 :::row:::
    :::column span="1":::
-      :::image type="content" source="media/configure-view-options/view-options-menu.png" alt-text="View options menu."::: 
+      :::image type="content" source="media/configure-view-options/view-options-menu.png" alt-text="Screenshot of View options menu."::: 
    :::column-end:::
    :::column span="3":::
       - **Parents**: Show the hierarchical grouping of parent-child work items. Useful when adding child work items, reparenting a work item, or displaying rollup columns.  
@@ -190,7 +190,7 @@ You can drag items to quickly link one or several work items to a parent portfol
 1. Open :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** and choose **Mapping**. 
 	The Mapping pane opens. By default, the pane lists the next-level up portfolio items for the current team. 
 1. (Optional) To map items to parent items owned by a different team, choose it from the team selector in the **Mapping** pane as shown in the following image.   
-	:::image type="content" source="media/configure-view-options/mapping-pane-selector.png" alt-text="Team selector in Mapping pane."::: 
+	:::image type="content" source="media/configure-view-options/mapping-pane-selector.png" alt-text="Screenshot of Team selector in Mapping pane."::: 
 1. Drag work items from the backlog to the portfolio item listed in the **Mapping** pane. 
 	 The system creates a parent-child link in the background. The backlog item turns bold and then unbold as the system saves the changes. 
 
@@ -239,7 +239,7 @@ Similar to using the **Mapping** pane, you can use the **Planning** pane to assi
 	 The system creates a parent-child link in the background. The backlog item turns bold and then unbold as the system saves the changes. 
 
 	Note, you can select multiple backlog items and drag them to a portfolio item. To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the **Ctrl** key. Then, you can drag the selected items.  
-	:::image type="content" source="media/configure-view-options/assign-sprint-planning-pane.png" alt-text="Drag a backlog item to planning pane sprint."::: 
+	:::image type="content" source="media/configure-view-options/assign-sprint-planning-pane.png" alt-text="Screenshot showing drag of a backlog item to a Planning pane sprint."::: 
 
 
 ## Forecast a backlog 
@@ -252,7 +252,7 @@ The **Forecast** tool is only available for the product backlog. Use these steps
 3. Open **View options** and turn off **Parents** and **In Progress** items, and **Completed Child Items**.  Turn on **Forecast**. 
 4. Enter a velocity estimate in the **Forecasting based on velocity** of box.  
 5. Review the forecast lines that appear, similar to the ones shown in the following image. 
-	:::image type="content" source="../sprints/media/forecast-s125.png" alt-text="Forecast lines."::: 
+	:::image type="content" source="../sprints/media/forecast-s125.png" alt-text="Screenshot of backlog showing Forecast lines."::: 
     The forecast tool doesn't reference any iteration assignments made to the product backlog items. 
 
 > [!TIP]  
@@ -270,7 +270,7 @@ You can add a rollup progress bar, count of work items, or sum of any integer or
 1. Open **View options**, show **Completed Child Items**  
 1. Open **Column Options**, choose **Add a rollup column**, and select the progress bar or count to display. 
 
-	:::image type="content" source="media/configure-view-options/progress-feature.png" alt-text="Rollup column for Progress by Feature."::: 
+	:::image type="content" source="media/configure-view-options/progress-feature.png" alt-text="Screenshot of Scenario backlog showing Rollup column for Progress by Feature."::: 
 
     It can take several moments for the progress bar or count to appear. 
 
