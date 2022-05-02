@@ -76,6 +76,8 @@
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md
     displayname: default, correct, Kanban, custom
+  - name: Configure your backlog view
+    href: backlogs/configure-your-backlog-view.md
   - name: Change column options
     displayName: sort, persistence
     href: backlogs/set-column-options.md

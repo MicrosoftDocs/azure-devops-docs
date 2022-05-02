@@ -17,6 +17,13 @@
   displayname: velocity, sprints, iterations
 - name: Customize your backlogs
   items:
+  - name: Configure your backlog view
+    href: configure-your-backlog-view.md
+    displayname: backlog level, view options, rollup, parents, forecasting, mapping, completed, expand, collapse, filter
+  - name: Filter your backlog 
+    href: filter-backlogs-boards-plans.md
+  - name: Set up your backlogs & boards
+    href: set-up-your-backlog.md
   - name: Backlog controls
     href: product-backlog-controls.md
     displayname: selector, Analytics, view options, parents, forecasting, mapping, completed, full screen mode, expand, collapse, Configure team settings, filter
