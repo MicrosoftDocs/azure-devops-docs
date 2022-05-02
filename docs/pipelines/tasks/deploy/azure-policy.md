@@ -31,7 +31,7 @@ Can be used only as a [gate](../../release/approvals/gates.md).
 This task is not supported in a build or release pipeline.
 
 
-:::image type="content" source="media/gates.png" alt-text="Using the task as a gate in a release pipeline":::
+:::image type="content" source="media/gates.png" alt-text="Screenshot that shows using the task as a gate in a release pipeline.":::
 
 ::: moniker range="> tfs-2018"
 
