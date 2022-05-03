@@ -17,7 +17,10 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Based on your pipeline's type, select the appropriate trigger from the list below:
+Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Based on your pipeline's type, select the appropriate trigger from the lists below.
+
+> [!NOTE]
+> All trigger paths are case-sensitive.
 
 <a name="ci"></a>
 ## Classic build pipelines and YAML pipelines
