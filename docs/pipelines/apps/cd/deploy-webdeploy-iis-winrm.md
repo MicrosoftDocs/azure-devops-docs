@@ -120,33 +120,21 @@ Follow these steps to configure each target server.
 
 ---
 
-## Define and test your CD release pipeline
+## Create a release pipeline
 
-Continuous deployment (CD) means starting an automated release pipeline whenever a new successful build is available. Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your IIS servers.
+1. Select **Pipelines**, and then select **Releases**. Select **New pipeline**.
 
-1. Do one of the following:
+1. Select **Empty job**.
 
-   * If you've just completed a CI build (see above), then, in the build's
-     **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
-     This starts a new release pipeline that's automatically linked to the build pipeline.
+1. Select **+ Add** to add your build artifact, and then select your **Project** and **Source**. Select **Add** when you are done.
 
-   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop down
-     in the list of release pipelines, and choose **Create release pipeline**.
+    :::image type="content" source="../media/confirm-or-add-artifact.png" alt-text="Add build artifact":::
 
-1. Choose **Start with an empty pipeline**.
+1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section, and then enable the **Continuous deployment trigger** and add a build branch filter to include the **main** branch.
 
-1. If you created your new release pipeline from a build summary, check that the build pipeline
-   and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
-   release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
+    :::image type="content" source="../media/confirm-or-set-cd-trigger.png" alt-text="Add a continuous deployment trigger":::
 
-   ![Selecting the build artifact](../media/confirm-or-add-artifact.png)
-
-1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **main** branch.
-
-   ![Checking or setting the Continuous deployment trigger](../media/confirm-or-set-cd-trigger.png)
-
-1. On the **Variables** tab of the stage in release pipeline, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
+1. Select **Variables**, and create a variable **WebServers** with a list of IIS servers for its value; for example `machine1,machine2,machine3`.
 
 1. Configure the following tasks in the stage:
   
