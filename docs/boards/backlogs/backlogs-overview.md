@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 04/28/2022
 ---
 
 
@@ -35,7 +35,7 @@ In a nutshell, you use backlogs to:
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure you're working on the highest priority items first
 - [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
-- Quickly assign backlog items to team members and to sprints. You can use either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
+- Quickly assign backlog items to team members and to sprints. You can use either [bulk update](bulk-modify-work-items.md) or [drag to a sprint](../sprints/assign-work-sprint.md)
 - Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
 - Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
 - [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint
@@ -48,7 +48,7 @@ In a nutshell, you use backlogs to:
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure you're working on the highest priority items first
 - [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
-- Quickly assign backlog items to team members and to sprints\. You can use either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
+- Quickly assign backlog items to team members and to sprints\. You can use either [bulk update](bulk-modify-work-items.md) or [drag to a sprint](../sprints/assign-work-sprint.md)
 - Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
 - Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
 - [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint.
@@ -92,6 +92,11 @@ For details, see the following articles:
 - [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
 
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [temp](../includes/tip-configure-backlog-view.md)]
+::: moniker-end
+
+
 ### Common backlog configurations for multiple teams 
 
 **Question**: *Can you define a backlog configuration that multiple teams can subscribe to?*
@@ -120,7 +125,7 @@ You build your project plan by creating a backlog of work items. These items rep
 
 <a id="change-position"> </a> 
 
-The sequence of items on each backlog is determined according to where you've [added the items or moved the items on the page](create-your-backlog.md#move-items-priority-order). As you drag and drop items within the backlog list, a background process updates the [**Stack Rank** (Agile and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog Priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields are used by the system to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form. 
+The sequence of items on each backlog is determined according to where you've [added the items or moved the items on the page](create-your-backlog.md#move-items-priority-order). As you drag items within the backlog list, a background process updates the [**Stack Rank** (Agile and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog Priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields are used by the system to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form. 
 
 ![Reorder work items](media/create-backlog/cyb-order-backlog.png)  
 
@@ -259,9 +264,9 @@ To learn more about hierarchical team and backlog structures, see [Portfolio man
 
 ### Reordering and reparenting work items 
 
-All backlogs and boards support drag-and-drop to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
+All backlogs and boards support dragging to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
 
-You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it's owned by another team.  
+You can only use dragging to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it's owned by another team.  
  
 :::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
