@@ -10,15 +10,46 @@ monikerRange: '<= azure-devops'
 
 Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use. 
 
-The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault. You can also set secret variables in script tasks but this is not recommended.
+The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault. You can also set secret variables in script tasks but this is not recommended since anyone who can access your pipeline will be able to also see the secret.
 
-Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. Use variable groups to share secret variables across pipelines. 
+Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. You can use variable groups to share secret variables across pipelines. 
 
 ## Secret variable in the UI
 
+You can set secret variables in the pipeline editor when you are editing an individual pipeline. You'll encrypt and make a pipeline variable secret by selecting the lock ![Icon of secret variable.](../media/variables/secret-variable-icon.png) icon. 
+
 ### Set secret variables in the UI
 
+You set secret variables the same way for YAML and Classic. 
+
 [!INCLUDE [set secret variable in UI](includes/set-secrets.md)]
+
+## Use a secret variable in the UI
+
+#### [YAML](#tab/yaml/)
+
+You'll need to map secret variable as environment variables to reference them in YAML pipelines. In this example, there are two secret variables defined in the UI, `SecretOne` and `SecretTwo`. 
+
+```yml
+steps:
+- powershell: |
+    Write-Host "My first secret variable: $env:SECRET_ONE"
+  env:
+    SECRET_ONE: $(SecretOne) 
+
+- bash: |
+    echo "My second secret variable: $MY_MAPPED_ENV_VAR"
+  env:
+    SECRET_TWO: $(SecretTwo) 
+```
+
+For a more detailed example, see [Define variables](variables.md#secret-variables).
+
+
+#### [Classic](#tab/classic/)
+
+
+---
 
 ## Set a secret variable in a variable group
 
@@ -63,6 +94,8 @@ The **Make secrets available to whole job** option is not currently supported in
 
 To learn more about the Azure Key Vault task, see [Use Azure Key Vault secrets in Azure Pipelines](../release/azure-key-vault.md). 
  
+## Secret variable in the UI
+
 ## Secret variable in a script
 
 BASH/PWSH
