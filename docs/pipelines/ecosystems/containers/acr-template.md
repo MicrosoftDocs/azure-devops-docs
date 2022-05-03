@@ -43,7 +43,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
     az group create --name myapp-rg --location eastus
     
     # Create a container registry
-    az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
+    az acr create --resource-group myapp-rg --name mycontainerregistry --sku Basic
     ```
 
 You can also use the Azure portal web UI to create your Azure Container Registry. See the [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) for details.
