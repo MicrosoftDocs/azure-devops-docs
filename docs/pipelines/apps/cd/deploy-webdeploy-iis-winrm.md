@@ -134,37 +134,37 @@ Follow these steps to configure each target server.
 
     :::image type="content" source="../media/confirm-or-set-cd-trigger.png" alt-text="Add a continuous deployment trigger":::
 
-1. Select **Variables**, and create a variable **WebServers** with a list of IIS servers for its value; for example `machine1,machine2,machine3`.
+1. Select **Variables**, and create a variable **WebServers** with a list of IIS servers for its value; for example *machine1,machine2,machine3*.
 
-1. Configure the following tasks in the stage:
+1. Select your stage, and add the following tasks to your pipeline:
   
-   ![Windows Machine File Copy](../../tasks/deploy/media/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
-   
-   - **Source**: Select the Web deploy package (zip file) from the artifact source.
-   
-   - **Machines**: `$(WebServers)`
-   
-   - **Admin Login**: Enter the administrator credentials for the target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
-   
-   - **Password**: Enter the administrator password for the target servers.
-   
-   - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
-   
-   ![WinRM - IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy the package.
-   
-   - **Machines**: `$(WebServers)`
-   
-   - **Admin Login**: Enter the administrator credentials for target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
-   
-   - **Password**: Enter the administrator password for target servers.
-   
-   - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
-   
-   - **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task.
-   
-   - **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
+   ![Windows Machine File Copy](../../tasks/deploy/media/windows-machine-file-copy-icon.png) [Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
 
-1. Edit the name of the release pipeline, click **Save**, and click **OK**. The default stage is named Stage1, which you can edit by clicking directly on the name.
+   - **Source**: Select the Web deploy package path.
+
+   - **Machines**: *$(WebServers)*
+
+   - **Admin Login**: The administrator login on the target servers. For workgroup-joined computers, use the format *.\username*. For domain-joined computers, use the format *domain\username*.
+
+   - **Password**: The administrator password on the target servers.
+
+   - **Destination Folder**: The folder on the target machines to which the files will be copied.
+
+   ![IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy your package.
+
+   - **Machines**: $(WebServers)
+
+   - **Admin Login**: The administrator login on the target servers. For workgroup-joined computers, use the format *.\username*. For domain-joined computers, use the format *domain\username*.
+
+   - **Password**: The administrator password on the target servers.
+
+   - **Protocol**: Select *HTTP* or *HTTPS* (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose *HTTPS*. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
+
+   - **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task.
+
+   - **Website Name**: *Default Web Site* (or the name of the website if you configured a different one earlier).
+
+1. Select **Save** when you are done and then select **OK**.
 
 ## Deploy your app
 
