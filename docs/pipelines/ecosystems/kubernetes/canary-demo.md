@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 03/04/2022
+ms.date: 05/03/2022
 ms.custom: fasttrack-edit
 monikerRange: 'azure-devops'
 ---
@@ -127,7 +127,7 @@ You can deploy by using YAML, or by using the classic deployment model.
       imageName: azure-pipelines-canary-k8s
       dockerRegistryServiceConnection: dockerRegistryServiceConnectionName #replace with name of your Docker registry service connection
       imageRepository: 'azure-pipelines-canary-k8s'
-      containerRegistry: containerRegistry #replace with the name of your container registry, Should be in the format example.azurecr.io
+      containerRegistry: example.azurecr.io #replace with the name of your container registry, Should be in the format example.azurecr.io
       tag: '$(Build.BuildId)'
     
     stages:
