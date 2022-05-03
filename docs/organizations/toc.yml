@@ -20,6 +20,8 @@
   - name: Set user preferences
     displayName: profile, settings, picture, display name, email, directory, locale
     href: ./settings/set-your-preferences.md
+  - name: Configure your backlog view
+    href: ../boards/backlogs/configure-your-backlog-view.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage or enable features
     displayName: turn, on, off, organization
     href: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
