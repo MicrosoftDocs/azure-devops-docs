@@ -128,17 +128,17 @@ Follow these steps to configure each target server.
 
 1. Select **+ Add** to add your build artifact, and then select your **Project** and **Source**. Select **Add** when you are done.
 
-    :::image type="content" source="../media/confirm-or-add-artifact.png" alt-text="Add build artifact":::
+    :::image type="content" source="../media/confirm-or-add-artifact.png" alt-text="A screenshot showing how to add a build artifact.":::
 
 1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section, and then enable the **Continuous deployment trigger** and add a build branch filter to include the **main** branch.
 
-    :::image type="content" source="../media/confirm-or-set-cd-trigger.png" alt-text="Add a continuous deployment trigger":::
+    :::image type="content" source="../media/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to add a continuous deployment trigger.":::
 
 1. Select **Variables**, and create a variable **WebServers** with a list of IIS servers for its value; for example *machine1,machine2,machine3*.
 
 1. Select your stage, and add the following tasks to your pipeline:
   
-   ![Windows Machine File Copy](../../tasks/deploy/media/windows-machine-file-copy-icon.png) [Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
+   :::image type="icon" source="../../tasks/deploy/media/windows-machine-file-copy-icon.png" border="false"::: [Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
 
    - **Source**: Select the Web deploy package path.
 
@@ -150,7 +150,7 @@ Follow these steps to configure each target server.
 
    - **Destination Folder**: The folder on the target machines to which the files will be copied.
 
-   ![IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy your package.
+   :::image type="icon" source="../../tasks/deploy/media/iis-web-application-deployment-icon.png" border="false"::: [WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy your package.
 
    - **Machines**: $(WebServers)
 
