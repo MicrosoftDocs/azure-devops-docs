@@ -16,7 +16,7 @@ When you use PowerShell and Bash scripts in your pipelines, it's often useful to
 You'll use the `task.setvariable` logging command to set variables in [PowerShell](../scripts/powershell.md) and [Bash](../tasks/utility/bash.md) scripts. 
 
 > [!NOTE] 
-> Deployment jobs use a different syntax for output variables. To learn more about support for output variables in deployment jobs, see [Deployment jobs](deployment-jobs##support-for-output-variables).
+> Deployment jobs use a different syntax for output variables. To learn more about support for output variables in deployment jobs, see [Deployment jobs](./deployment-jobs.md#support-for-output-variables).
 
 ## About `task.setvariable`
 
