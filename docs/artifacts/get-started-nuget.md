@@ -29,9 +29,63 @@ You can create two types of feeds: project-scoped and organization-scoped feeds.
 
 ## Connect to feed
 
-[!INCLUDE [](includes/nuget/publish.md)]
+::: moniker range=">= azure-devops-2019"
 
-## Consume packages in Visual Studio
+1. From within your project, select **Artifacts**, and then select your feed. You can [create a new feed](../../get-started-nuget.md#create-a-feed) if you don't have one already. 
+
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
+
+1. Select **NuGet.exe**.
+
+    :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
+
+1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** and follow the instructions to install the prerequisites.
+
+    1. Download the [latest NuGet version](https://www.nuget.org/downloads).
+    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+1. Follow the instructions in the **Project setup** to add a nuget .config file.
+
+    :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Build and Release** > **Packages**.
+
+1. Select your feed from the dropdown menu or [create one](../../get-started-nuget.md#create-a-feed) if you haven't. 
+
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../../media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
+
+1. Select **NuGet** and follow the instruction to connect to your feed.
+
+    :::image type="content" source="../../media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
+
+::: moniker-end
+
+## Install and publish a sample NuGet package  
+
+If you don't have a NuGet package but want to try publishing NuGet packages to your feed, you can install the _HelloWorld_ sample package.
+
+1. Install the sample NuGet package:
+
+   ```Command
+   nuget install HelloWorld -ExcludeVersion
+   ```
+
+1. Set up your nuget.config file and publish your package to your feed:
+
+   ```Command
+   nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
+   nuget push -Source <SourceName> -ApiKey key <PackagePath> #example:(.\Get-Hello.1.0.0.nupkg)>
+   ```
+
+## Consume NuGet packages in Visual Studio
 
 [!INCLUDE [](includes/nuget/consume.md)]
 
