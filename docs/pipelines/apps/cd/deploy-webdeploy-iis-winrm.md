@@ -23,7 +23,7 @@ Learn how to use Azure Pipelines and WinRM to set up a continuous delivery pipel
 - [Configure WinRM](#configure-winrm)
 - [Configure IIS servers](#configure-iis-servers)
 
-### Build Pipeline
+### Build pipeline
 
 Set up a build pipeline if you don't have one already.
 
