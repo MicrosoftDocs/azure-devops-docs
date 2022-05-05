@@ -6,7 +6,7 @@
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
     items: 
-    - name: Develop extensions
-      tocHref: /azure/devops/extend/
-      topicHref: /azure/devops/extend/overview
+    - name: Service hooks
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/service-hooks/overview
 
