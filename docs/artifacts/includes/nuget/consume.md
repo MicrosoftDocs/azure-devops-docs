@@ -6,8 +6,6 @@ author: ramiMSFT
 ms.date: 02/19/2020
 ---
 
-To consume NuGet packages from your feed, you need to add the feed's NuGet endpoint as a package source in Visual Studio, as follows.
-
 <a name="get-nuget-pkg-url"></a>
 
 ### 1. Get the feed's source URL
@@ -48,20 +46,10 @@ To consume NuGet packages from your feed, you need to add the feed's NuGet endpo
 
 ---
 
-### 3. Consume packages
+### 3. Download packages
 
-You can now find and consume packages from your feed by using Visual Studio.
-
-1. In Visual Studio, right-click on your project in the Solution Explorer, and then select **Manage NuGet Packages**.
-1. Select **Browse**, and then select your feed from the **Package source** drop-down list
+1. In Visual Studio, right-click on your project, and then select **Manage NuGet Packages**.
+1. Select **Browse**, and then select your feed from the **Package source** drop-down menu.
     :::image type="content" source="../../media/select-pkg-src.png" alt-text="Select feed source":::
 1. Use the search bar to look for packages from your feed.
 
-> [!NOTE]
-> If you're using [upstream sources](../../nuget/upstream-sources.md), any packages from upstream sources that haven't been saved to your feed yet (by using them at least once) won't appear in the Package Manager search result. To install those packages:
-
-#### Consume package from NuGet.org
-
-1. Copy the **Install-Package** command from the public registry (NuGet.org).
-1. Select **Tools** then **NuGet Package Manager** to open the NuGet package manager.
-1. Paste the command into the Package Manager Console and select **run**.
