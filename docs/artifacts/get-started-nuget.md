@@ -85,7 +85,7 @@ If you don't have a NuGet package but want to try publishing NuGet packages to y
    nuget push -Source <SourceName> -ApiKey key <PackagePath> #example:(.\Get-Hello.1.0.0.nupkg)>
    ```
 
-## Consume NuGet packages in Visual Studio
+## Download NuGet packages with Visual Studio
 
 [!INCLUDE [](includes/nuget/consume.md)]
 
