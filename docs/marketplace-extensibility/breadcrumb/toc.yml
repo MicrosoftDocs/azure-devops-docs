@@ -109,7 +109,7 @@
     - name: witadmin command line
       tocHref: /azure/devops/reference/witadmin/ 
       topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
-  - name: Marketplace & extensibility
+  - name: Marketplace & Extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/
     items: 
