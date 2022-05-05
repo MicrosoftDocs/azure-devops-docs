@@ -4,8 +4,8 @@ description: Build and test Go projects with Azure Pipelines & Azure DevOps
 ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.reviewer: azooinmyluggage
-ms.custom: seodec18, freshness-fy22q2
-ms.date: 12/28/2021
+ms.custom: seodec18, freshness-fy22q2, devdivchpfy22
+ms.date: 05/05/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -21,7 +21,7 @@ New to Azure Pipelines? If so, then we recommend you try this section before mov
 
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
-```
+```html
 https://github.com/MicrosoftDocs/pipelines-go
 ```
 
@@ -35,27 +35,7 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **Go**. 
-
-7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
-
-8. Commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
-
-   If you want to watch your pipeline in action, select the build job.
-
-   Because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template, we automatically created your pipeline.
-
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
-
-9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
-
-See the sections below to learn some of the more common ways to customize your pipeline.
-
-> [!Tip]
-> To make changes to the YAML file as described in this article, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
+When the **Configure** tab appears, select **Go**. Your new pipeline appears, with `azure-pipelines.yml` YAML file ready to be configured. See the following sections to learn some of the more common ways to customize your pipeline.
 
 ## Build environment
 
@@ -72,15 +52,15 @@ Modern versions of Go are pre-installed on [Microsoft-hosted agents](../agents/h
 
 ## Set up Go
 
-#### [Go 1.11+](#tab/go-current)
+### [Go 1.11+](#tab/go-current)
 
-Starting with Go 1.11, you no longer need to define a `$GOPATH` environment, set up a workspace layout, or use the `dep` module. Dependency management is now built-in. 
+Starting with Go 1.11, you no longer need to define a `$GOPATH` environment, set up a workspace layout, or use the `dep` module. Dependency management is now built in.
 
-This YAML implements the `go get` command to download Go packages and their dependencies. It then uses `go build` to generate the content that is published with `PublishBuildArtifacts@1` task. 
+This YAML implements the `go get` command to download Go packages and their dependencies. It then uses `go build` to generate the content that is published with `PublishBuildArtifacts@1` task.
 
 ```yaml
 trigger: 
- - master
+ - main
 
 pool:
    vmImage: 'ubuntu-latest'
@@ -106,7 +86,7 @@ steps:
      artifactName: drop
 ```
 
-#### [Go < 1.11](#tab/go-older)
+### [Go < 1.11](#tab/go-older)
 
 As the Go documentation [describes](https://golang.org/doc/code.html#Workspaces), a Go workspace consists of a root directory to which the `$GOPATH` environment variable points. Within that directory, are the following standard subdirectories:
 
@@ -169,10 +149,10 @@ Use `go get` to download the source code for a Go project or to install a tool i
 
 #### Use dep ensure
 
-Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. 
+Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file.
 
 > [!NOTE]
-> The following script runs on Linux and macOS agents and can be used for older versions of Go that require a specific folder structure. The script is written for Unix shells, and as a result cannot work with Windows agents. 
+> The following script runs on Linux and macOS agents and can be used for older versions of Go that require a specific folder structure. The script is written for Unix shells, and as a result cannot work with Windows agents.
 
 ```yaml
 - script: |
@@ -184,7 +164,7 @@ Use `dep ensure` if your project uses dep to download dependencies imported in y
   displayName: 'Download dep and run `dep ensure`'
 ```
 
---- 
+---
 
 ## Build
 
@@ -208,6 +188,22 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
     arguments: '-v'
     workingDirectory: '$(modulePath)'
 ```
+
+When you're ready, Commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+
+   If you want to watch your pipeline in action, select the build job.
+
+   Because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template, we automatically created your pipeline.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+> [!Tip]
+> To make changes to the YAML file as described in this article, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
 
 ## Build an image and push to container registry
 
