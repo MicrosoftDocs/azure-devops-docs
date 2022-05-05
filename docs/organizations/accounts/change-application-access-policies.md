@@ -8,7 +8,7 @@ ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/19/2021
+ms.date: 05/05/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -37,13 +37,13 @@ To access your organization without asking for user credentials multiple times, 
 * [**PATs**](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
 
    * Accessing specific resources or activities, like builds or work items
-   * Clients, like Xcode and NuGet, that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features, like multi-factor authentication
+   * Clients, like Xcode and NuGet, that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory (Azure AD) features, like multi-factor authentication
    * Accessing [REST APIs for Azure DevOps](/rest/api/azure/devops/)
 
 By default, your organization allows access for all authentication methods. 
 
 You can limit access for OAuth and SSH keys by disabling access to these application connection policies:
-- **Third-party application via OAuth** - Enable third-party applications to access resources in your organization through OAuth.
+- **Third-party application via OAuth** - Enable third-party applications to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to third-party applications, enable this policy to make sure these apps can gain access to resources in your organization.
 - **SSH Authentication** - Enable applications to connect to your organization's Git repos through SSH.
 
 When you deny access to an authentication method, no application can access your organization through this method. Any application that previously had access will get authentication errors and no longer have access to your organization.
@@ -52,36 +52,38 @@ To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-
 
 ## Conditional access policies 
 
-Azure Active Directory allows tenants to define which users are allowed to gain access to Microsoft resources through their [Conditional Access Policy (CAP) feature](/azure/active-directory/conditional-access/overview). Through these settings, the tenant admin can require members must adhere to any of the following conditions, for example, the user :	
-- Must be members of a specific security group	
-- Must belong to a certain location and/or network	
-- Must be using a specific operating system	
-- Must be using an enabled device in a management system	
+Azure AD allows tenants to define which users are allowed to gain access to Microsoft resources through their [Conditional Access Policy (CAP) feature](/azure/active-directory/conditional-access/overview). Through these settings, the tenant admin can require members must adhere to any of the following conditions, for example, the user must:
+
+- be a member of a specific security group	
+- belong to a certain location and/or network	
+- be using a specific operating system	
+- be using an enabled device in a management system	
 
 Depending on which conditions the user satisfies, you can then require multi-factor authentication or further checks to gain access, or block access altogether.	
 
-If you are in an Azure Active Directory-backed organizations and you are signing in to the web portal, Azure Active Directory will always check that you can move forward by performing validation for any CAPs that have been set by tenant admins.
+If you sign in to the web portal of an Azure AD-backed organization, Azure AD checks that you can move forward by performing validation for any CAPs that were set by tenant administrators.
 
-Azure DevOps can also perform additional CAP validation once you are logged in and navigating through Azure DevOps. 
-* If the **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** policy is enabled, web flows are 100% honored for all conditional access policies. If the policy is disabled, Azure DevOps does not additional CAP validation, but remember, Azure AD will always check for CAPs on signin.
-* For third-party client flows, like using a PAT with git.exe, we support IP fencing policies only. 
+Azure DevOps can also perform more CAP validation once you're signed in and navigating through Azure DevOps.
 
-For these third-party client flows, we will not support any MFA policies set after CAP validation. See the following example:
+* If the **Enable Azure AD CAP validation** policy is enabled, web flows are 100% honored for all conditional access policies. If the policy is disabled, Azure DevOps doesn't perform more CAP validation, but Azure AD always checks for CAPs upon sign-in.
+* For third-party client flows, like using a PAT with git.exe, we support IP fencing policies only. Users may find that sign-in policy may be enforced for PATs as well. Using PATs to make Azure AD calls requires the user to adhere to any sign-in policies that are set. For example, if a sign-in policy requires that a user sign in every seven days, you must also sign in every seven days if you wish to continue using PATs to make requests to Azure AD.
+
+For these third-party client flows, we don't support any MFA policies set after CAP validation. See the following examples:
 
 - Policy 1 - Block all access from outside of IP range x, y, and z.
-    * Accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
-    * Accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+    * Access Azure DevOps via the web, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+    * Access Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
 - Policy 2 - Require MFA when outside of IP range x, y, and z.
-    * Accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. The user is prompted for MFA if outside of that list.
-    * Accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+    * Access Azure DevOps via the web, the user's allowed from IP x, y, and z. The user is prompted for MFA if outside of that list.
+    * Access Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
 
 #### IP-based conditions
 
 We support IP-fencing conditional access policies for both IPv4 and IPv6 addresses. 
 
-If you find that your IPv6 address is being blocked, we recommend checking with your tenant admin that they have configured CAPs to allow your IPv6 address. Additionally, it may help to include the IPv4-mapped address for your IPv6 address in all CAP conditions.
+If you find that your IPv6 address is being blocked, we recommend confirming that they configured CAPs to allow your IPv6 address. Also, it may help to include the IPv4-mapped address for your IPv6 address in all CAP conditions.
 
-Another issue we've found is that users may be accessing the Azure AD login page via a different IP address than the IP address they are using to access Azure DevOps resources. Check your VPN configuration or networking infrastructure to make sure that if this is the case for you, all IP addresses you are using are included within your tenant admin's CAPs.
+Another issue we've found is that users may be accessing the Azure AD sign-in page via a different IP address than the IP address they're using to access Azure DevOps resources. Check your VPN configuration or networking infrastructure to make sure all IP addresses you're using are included within your tenant admin's CAPs.
 
 
 ## Related articles
@@ -89,5 +91,5 @@ Another issue we've found is that users may be accessing the Azure AD login page
 - [Disable Request Access Policy](disable-request-access-policy.md)
 - [Restrict users from creating new organizations with Azure AD policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
-- [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access)
+- [What is Conditional Access in Azure AD?](/azure/active-directory/active-directory-conditional-access)
 - [Detailed instructions and requirements for Conditional Access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
