@@ -24,13 +24,19 @@ This quickstart will guide you through setting up your Maven project to connect 
 
 [!INCLUDE [](includes/maven/pom-and-settings.md)]
 
-## Publish an artifact
+> [!TIP]
+> If you are using [Maven task](../pipelines/tasks/build/maven.md), set the `mavenAuthenticateFeed` argument to true to automatically authenticate with your Maven feed.
+
+## Publish artifacts
 
 [!INCLUDE [](includes/maven/publish.md)]
 
-> [!IMPORTANT]
-> In order to automatically authenticate with your Maven feed, you must set the `mavenAuthenticateFeed` argument to true in the [Maven task](../pipelines/tasks/build/maven.md).
-
-## Install an artifact from your feed
+## Install artifacts
 
 [!INCLUDE [](includes/maven/install.md)]
+
+## Related articles
+
+- [Configure permissions](./feeds/feed-permissions.md)
+- [Use feed views to share packages](./feeds/views.md)
+-  [Set up upstream sources](./how-to/set-up-upstream-sources.md)
