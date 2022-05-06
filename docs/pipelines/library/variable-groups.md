@@ -269,8 +269,6 @@ use `$(customer)` in a task parameter or a script. But, you can't access secret 
 
 Changes that you make to a variable group are automatically available to all the definitions or stages to which the variable group gets linked.
 
-::: moniker range=">=azure-devops-2020"
-
 ## List variable groups
 
 Use the CLI to list the variable groups for pipeline runs with the [az pipelines variable-group list](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-list) command. If the Azure DevOps extension for CLI is new to you, see [Get started with Azure DevOps CLI](../../cli/index.md).
