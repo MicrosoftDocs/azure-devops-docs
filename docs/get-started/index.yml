@@ -26,15 +26,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure DevOps?
-            url: ../user-guide/what-is-azure-devops.md
+            url: ../user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json 
           - text: What is Azure Boards?
-            url: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../boards/get-started/what-is-azure-boards.md 
           - text: What is Azure Repos?
-            url: ../repos/get-started/what-is-repos.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../repos/get-started/what-is-repos.md 
           - text: What is Azure Pipelines?
-            url: ../pipelines/get-started/what-is-azure-pipelines.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../pipelines/get-started/what-is-azure-pipelines.md 
           - text: Get started as a Stakeholder
-            url: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../organizations/security/get-started-stakeholder.md 
   - title: Sign up for free
     linkLists:
       - linkListType: quickstart
