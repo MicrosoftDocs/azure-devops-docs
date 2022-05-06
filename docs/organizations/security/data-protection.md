@@ -51,7 +51,7 @@ Azure DevOps uses Azure Storage as the primary repository for service metadata a
 
 - **Azure Blob Storage** stores large chunks of unstructured data. All projects use the Azure Blob Storage service. Data includes potentially sensitive or private information, like the contents of source files and attachments for work items. For most projects, the majority of storage in use is this type of unstructured blob storage. For more information, see [Azure Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
-- **Azure SQL Database storage** stores the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project, and provides indexes into the blob storage to look up files and attachments. For more information, see [Azure SQL Database](/azure/sql-database/).
+- **Azure SQL Database storage** stores the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project, and provides indexes into the blob storage to look up files and attachments. For more information, see [Azure SQL Database](/azure/azure-sql/database).
 
 Administrators can manage access to resources by [granting or restricting permissions](../../reference/process-templates/configure-initial-groups-teams-members-permissions.md) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Azure Active Directory](../accounts/access-with-azure-ad.md) (Azure AD) and Microsoft accounts. 
 
@@ -169,7 +169,7 @@ We encrypt data via HTTPS and SSL to ensure it isn't intercepted or modified whi
 
 Also, data we store on your behalf in Azure DevOps gets encrypted as follows:
 
-* Data stored in Azure SQL databases gets encrypted using [Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017&preserve-view=true). TDE protects against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
+* Data stored in Azure SQL databases gets encrypted using [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption). TDE protects against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
 * Azure Blob Storage connections get encrypted to protect your data in transit. To protect data at rest stored in Azure Blob Storage, Azure DevOps uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
