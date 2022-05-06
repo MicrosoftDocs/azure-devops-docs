@@ -1,9 +1,9 @@
 ---
 
-title: Understand differences between Azure DevOps Services and Azure DevOps Server   
+title: Compare Azure DevOps Services with Azure DevOps Server  
 titleSuffix: Azure DevOps
 ms.custom: seodec18   
-description: Understand the fundamental differences between Azure DevOps Services and Azure DevOps Server.
+description: Understand the differences between Azure DevOps Services and Azure DevOps Server.
 ms.prod: devops  
 ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B

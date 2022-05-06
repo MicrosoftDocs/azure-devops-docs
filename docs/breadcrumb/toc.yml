@@ -49,9 +49,18 @@
     - name: Start using Azure DevOps
       tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/what-is-azure-devops
+    - name: Web portal navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
+    - name: Web portal navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
+    - name: Status & security 
+      tocHref: /azure/devops/user-guide/
+      topicHref: /azure/devops/user-guide/service-status-info
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
