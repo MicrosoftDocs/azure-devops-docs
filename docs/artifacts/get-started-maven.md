@@ -39,4 +39,4 @@ This quickstart will guide you through setting up your Maven project to connect 
 
 - [Configure permissions](./feeds/feed-permissions.md)
 - [Use feed views to share packages](./feeds/views.md)
--  [Set up upstream sources](./how-to/set-up-upstream-sources.md)
+- [Set up upstream sources](./how-to/set-up-upstream-sources.md)
