@@ -22,11 +22,11 @@ highlightedContent:
     # Card
     - title: What is Azure DevOps?
       itemType: overview
-      url: ./user-guide/what-is-azure-devops.md
+      url: ./user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
     # Card
     - title: Azure DevOps Services vs. Azure DevOps Server
       itemType: overview
-      url: ./user-guide/about-azure-devops-services-tfs.md
+      url: ./user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
     # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
@@ -38,7 +38,7 @@ highlightedContent:
     # Card
     - title: Get started for free
       itemType: get-started
-      url: ./user-guide/sign-up-invite-teammates.md
+      url: ./user-guide/sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
     # Card
     - title: Create your first pipeline
       itemType: get-started
