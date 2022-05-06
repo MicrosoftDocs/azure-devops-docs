@@ -15,7 +15,7 @@ If you need to switch your team project, choose :::image type="icon" source="../
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="> azure-devops-2020"
 
 You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
@@ -36,15 +36,7 @@ az devops wiki show --wiki
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-> [!NOTE]   
-> For Azure DevOps Server 2020, you can use the following command to set the default server instance, collection, and project.  
-> `az devops configure --defaults organization=https://ServerName/CollectionName project=ContosoWebApp`
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="> azure-devops-2020"
 
 ### Example
 
@@ -90,8 +82,8 @@ az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hell
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
-Azure DevOps CLI commands aren't supported for Azure DevOps Server 2019 and earlier versions.  
+::: moniker range="<= azure-devops-2020"
+Azure DevOps CLI commands aren't supported for Azure DevOps Server 2020 and earlier versions.  
 ::: moniker-end
 
 * * *
