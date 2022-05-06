@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
-monikerRange: '> azure-devops-2020'
+monikerRange: '<= azure-devops'
 ms.date: 02/05/2021
 ---
 
@@ -90,7 +90,7 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 
 To add a wiki page, enter the `az devops wiki page create` command. 
 
@@ -175,7 +175,7 @@ To delete a page, open the context menu from the tree or the one inside the page
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 
 ### Edit wiki page
 
@@ -205,7 +205,7 @@ az devops wiki page update --path
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 
 
 ### Examples
