@@ -12,7 +12,7 @@ ms.date: 05/06/2022
     mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="myFirstApp"
     ```
     
-    If you get the following error: *You must specify a valid lifecycle phase or a goal (..)*, follow the steps below to add a goal in your run configuration:
+    If you get the following error: *You must specify a valid lifecycle phase or a goal (..)*, follow the steps below to add a goal to your configuration:
     
     Right click on your project, select **Run as** > **Maven Build**. Enter **package** in the **Goals** text box, and then select **Run**.
 
@@ -23,7 +23,7 @@ ms.date: 05/06/2022
     mvn deploy
     ```
 
-If you get the following error: *Unknown lifecycle phase "build"(...)* when you run `mvn build`, you can use M2Eclipse to build your maven project as follows:
+If you get the following error: *Unknown lifecycle phase "build"(...)* when you run `mvn build`, you can use Eclipse IDE to build your maven project as follows:
 
 1. Right click on your project.
 
