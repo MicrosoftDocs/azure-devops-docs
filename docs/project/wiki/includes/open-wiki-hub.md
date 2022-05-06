@@ -15,7 +15,7 @@ If you need to switch your team project, choose :::image type="icon" source="../
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
@@ -36,7 +36,7 @@ az devops wiki show --wiki
 
 ::: moniker-end
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 
 ### Example
 
