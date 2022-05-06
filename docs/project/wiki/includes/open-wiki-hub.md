@@ -82,8 +82,6 @@ az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hell
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
-Azure DevOps CLI commands aren't supported for Azure DevOps Server 2020 and earlier versions.  
-::: moniker-end
+
 
 * * *
