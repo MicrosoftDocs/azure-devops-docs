@@ -269,7 +269,7 @@ To use a variable as an input to a task, wrap it in `$()`.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range=">=azure-devops"
 
 Using the Azure DevOps CLI, you can create and update variables for the pipeline runs in your project. You can also delete the variables if you no longer need them.
 
@@ -533,7 +533,7 @@ Each task that needs to use the secret as an environment variable does remapping
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 To set secret variables using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 
@@ -713,7 +713,7 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to usi
 
 * * *
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## List variables
 
@@ -1122,7 +1122,7 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 To choose which variables are allowed to be set at queue time using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 
