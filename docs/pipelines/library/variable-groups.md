@@ -48,7 +48,7 @@ Variable groups follow the [library security model](index.md#library-security).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="azure-devops"
 
 Using the Azure DevOps Command Line Interface (CLI), you can create and update variable groups for the pipeline runs in your project. You can also [update the variable groups](#update-a-variable-group) and [update the individual variables within a variable group](#update-variables-in-a-variable-group).
 
@@ -253,7 +253,7 @@ also see a drop-down list of stages in the pipeline. Link the variable group to 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 
 There's no [**az pipelines**](/cli/azure/pipelines) command that applies to using a variable group.
 
@@ -581,7 +581,7 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 
 There isn't an [**az pipelines**](/cli/azure/pipelines) command that applies to the expansion of variables in a group.
 
