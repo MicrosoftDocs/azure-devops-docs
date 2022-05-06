@@ -3,7 +3,7 @@ title: Query by Parent Id private preview.
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 5/4/2022
+ms.date: 5/6/2022
 description: Query by Parent Id is now available in private preview.  
 ---
 # Query by Parent Id private preview
@@ -16,9 +16,17 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-203-update-links](includes/boards/sprint-203-update-links.md)]
 
+### Azure Artifacts
+
+[!INCLUDE [sprint-203-update-links](includes/artifacts/sprint-203-update-links.md)]
+
 ## Azure Boards
 
 [!INCLUDE [sprint-203-update](includes/boards/sprint-203-update.md)]
+
+## Azure Artifacts
+
+[!INCLUDE [sprint-203-update](includes/artifacts/sprint-203-update.md)]
 
 ## Next steps
 
