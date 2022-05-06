@@ -106,7 +106,7 @@ The URL of the wiki Git repository is exposed. Copy and paste it into your web b
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="> azure-devops-2020"
 
 You can create a wiki with the [az devops wiki create](/cli/azure/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -135,7 +135,7 @@ az devops wiki create [--mapped-path]
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]
-::: moniker range=">= azure-devops-2020"
+::: moniker range="> azure-devops-2020"
 
 #### Example 
 
