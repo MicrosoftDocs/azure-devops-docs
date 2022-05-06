@@ -39,7 +39,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 > [!div class="mx-imgBorder"]  
 > ![Save page with a custom message](media/wiki/wiki-save-with-message.png)
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Wiki command-line tools
 
@@ -119,7 +119,7 @@ accepted values: ascii, utf-16be, utf-16le, utf-8
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 
 ### Examples
 
