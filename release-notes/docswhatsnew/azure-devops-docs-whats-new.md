@@ -67,6 +67,33 @@ Welcome to what's new in the Azure DevOps docs from April 1, 2022 through April 
 - [Create pull requests](/azure/devops/repos/git/pull-requests)
 - [Apply changes with rebase](/azure/devops/repos/git/rebase)
 
+## GitHub issue content updates
+
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-04-01..2022-04-30).
+
+- [Azure DevOps Administrato role - active #12245](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12245)
+- [How are the Changes and Workitems determined? #12216](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12216)
+- [Incorrect domain listed for IPV4 endpoint #12214](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12214)
+- [vsts-npm-auth on azure devops server #12204](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12204)
+- [Using variable created from a step in a future step's condition and script wasn't clear #12191](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12191)
+- [Incorrect maximum number of GitHub repositories to connect (250 vs 50) #12182](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12182)
+- [Description for verbose is incorrect or insufficient #12162](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12162)
+- [The option to Create work item on failure is only supported for Classic pipelines?  #12153](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12153)
+- [Python/Anaconda Windows example path does not work #12150](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12150)
+- [I could not find the 'Edit' option in the pipeline/build item context menu. I'm using Azure DevOps 19 update 1.1 #12132](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12132)
+- [Images on Clasic are not rendered #12103](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12103)
+- [Typo #12079](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12079)
+- [error in code sample #12077](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12077)
+- [Api version should not be as a query parameter... #12072](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12072)
+- [Confusing, weird, no example #12058](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12058)
+- [Missing Details for the Resource Group and Server Name FQDN #12054](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12054)
+- [Stage variable condition syntax in multi-stage builds with deployment jobs #12029](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12029)
+- [Improvement for this documentation #11929](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11929)
+- [Need to Disambiguate for Use on Azure DevOps vs Azure DevOps Server #11813](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11813)
+- [Out of Date #11729](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11729)
+- [Please review this sentence #11667](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11667)
+- [Service Hook is no longer an accepted category and should be updated in the  #11534](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11534)
+
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
