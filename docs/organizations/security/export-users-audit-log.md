@@ -62,12 +62,12 @@ From your web portal, you can get a list of the users in your organization and v
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+	> ![Screenshot of Open Organization settings.](../../media/settings/open-admin-settings-vert.png)  
 
 2. Choose **Users**, and then **Export users**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Export users](media/export-users-audit/export-new-nav.png) 
+	> ![Screenshot of Export users.](media/export-users-audit/export-new-nav.png) 
 
 ::: moniker-end
 
@@ -78,7 +78,7 @@ You can get a list of users and groups that have accessed your Azure DevOps Serv
 1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo, (1) the project collection, and (2) **Access levels**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Azure DevOps Server 2019, Web portal, open collection Access levels](media/export-users-audit/open-access-levels-2019.png) 
+	> ![Screenshot of Open Access levels.](media/export-users-audit/open-access-levels-2019.png) 
 
 	> [!NOTE]   
 	> If you're not a member of the Team Foundation Server Administrators group, the **Access levels** page won't appear. 
@@ -86,7 +86,7 @@ You can get a list of users and groups that have accessed your Azure DevOps Serv
 2. Choose **Export audit log**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Azure DevOps Server 2019, Web portal, export audit log](media/export-users-audit/export-audit-log-2019.png)  
+	> ![Screenshot of Export audit log, Azure DevOps Server 2019 and 2020, Web portal, ](media/export-users-audit/export-audit-log-2019.png)  
 
 3. The user log file is saved as a .csv file to your Download folder.  
 
@@ -100,11 +100,11 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
 
-	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" />  
+	<img src="media/access-levels-2017-open-admin-context.png" alt="Screenshot of Open Server settings admin context, TFS 2018." />  
 
 2. Choose **Access levels**, and then **Export audit log**. 
 
-	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Control panel, admin context, Export audit log" />  
+	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Screenshot of Export audit log, TFS 2018. " />  
 
 	> [!NOTE]
 	> If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear. 

@@ -72,9 +72,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Dashboards](../../report/dashboards/dashboard-permissions.md)                      |   ✔️  |   ✔️  |     |  
 | [Notifications or alerts](permissions.md#alerts)                                     |       |   ✔️   |    |   
 
-::: moniker-end
-
-::: moniker-end
+::: moniker-end 
 
 
 ::: moniker range="> tfs-2018 < azure-devops"
@@ -122,8 +120,6 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Work item tags](set-permissions-access-work-tracking.md#tags)                      |   ✔️  |  ✔️ |     | 
 | [Dashboards](../../report/dashboards/dashboard-permissions.md)                     |   ✔️  |  ✔️ |    |    
 | [Notifications or alerts](permissions.md#alerts)                                    |   ✔️  |  ✔️ |     | 
-
-
 
 ::: moniker-end
 
