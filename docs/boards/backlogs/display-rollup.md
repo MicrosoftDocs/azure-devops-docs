@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/08/2021
+ms.date: 05/09/2022
 ---
 
 # Display rollup progress or totals in Azure Boards
