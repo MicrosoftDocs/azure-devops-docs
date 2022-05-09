@@ -98,7 +98,7 @@ A: You get billed for all package types (npm, NuGet, Python, Maven, and Universa
 you don't get billed for Pipeline Artifacts, and Pipeline Caching.
 
 > [!NOTE]
-> Packages in the recycle bin still count as part of your storage consumption. Those packages will be deleted permanently after 30 days but if you want to delete them sooner, you can navigate to your recycle bin and delete them manually.
+> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, go to your recycle bin and delete them manually.
 
 ### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
 
