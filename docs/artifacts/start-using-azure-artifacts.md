@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: chcomley
-ms.date: 04/11/2022
+ms.date: 05/09/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,18 +14,18 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. Using Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
+Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. With Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
 
 ## Prerequisites
 
 - [Allow domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
-- [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) if you plan to use more than the free 2 GiB storage.
+- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) if you plan to use more than the free 2-GiB storage.
 
 ::: moniker range="tfs-2018"
 
 ## Install Azure Artifacts in TFS
 
-Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has been removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension is removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ## Assign licenses in TFS
 
@@ -44,7 +44,7 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 
 ## Get started with Azure Artifacts
 
-With Azure Artifacts you can publish and consume different types of packages. Select your package type to get started: 
+With Azure Artifacts, you can publish and consume different types of packages. Select your package type to get started: 
 
 - [NuGet](./get-started-nuget.md)
 - [npm](./get-started-npm.md)
@@ -64,7 +64,7 @@ With Azure Artifacts you can publish and consume different types of packages. Se
 
 ## Artifacts free tier and upgrade
 
-Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and will need to either delete some of your existing artifacts, or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
+Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and need to delete some of your existing artifacts or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
 
 ## Organization billing settings
 
@@ -98,7 +98,7 @@ A: You get billed for all package types (npm, NuGet, Python, Maven, and Universa
 you don't get billed for Pipeline Artifacts, and Pipeline Caching.
 
 > [!NOTE]
-> Packages in the recycle bin still count as part of your storage consumption. Those packages will be deleted permanently after 30 days but if you want to delete them sooner, you can navigate to your recycle bin and delete them manually.
+> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, go to your recycle bin and delete them manually.
 
 ### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
 
@@ -106,7 +106,7 @@ A: 1 GiB is currently our lowest granularity, so you most likely haven't reached
 
 ### Q: How can I control how many days Artifacts are kept?
 
-A: You can set up the retention policies to delete packages automatically. See [how to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
+A: You can set up the retention policies to delete packages automatically. For more information, see [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
 
 ### Q: How can I delete specific packages?
 
@@ -122,7 +122,7 @@ The **used** column on the Billing page of your Organization gets updated once a
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you delete some of your older packages to lower your storage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
+A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
 ::: moniker-end
 
