@@ -53,7 +53,7 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 |[Jenkins](./services/jenkins.md)     |  Build completed, code pushed, PR merge attempted, release deployment completed | Trigger generic or Git build |
 |[Microsoft Teams](./services/teams.md)    |   All  | Post a message to a channel |
 |[MyGet](https://docs.myget.org/docs/reference/webhooks)  | Build completed, code pushed | Publish NuGet package to MyGet, trigger a MyGet build |
-|[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)]  | All  | Post a message to a group |
+|[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group |
 |[Slack](./services/slack.md)   |  All       | Post a message to a channel |
 |[Trello](./services/trello.md)  | All | Create a card or list |
 |[UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)    |  Work item created or updated       | Send linked work item event |
