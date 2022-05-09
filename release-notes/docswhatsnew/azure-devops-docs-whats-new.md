@@ -14,6 +14,12 @@ Welcome to what's new in the Azure DevOps docs from April 1, 2022 through April 
 
 - [Azure Artifacts overview](/azure/devops/artifacts/start-using-azure-artifacts)
 
+## Boards
+
+### New articles
+
+- [Configure your backlog view](/azure/devops/boards/backlogs/configure-your-backlog-view)
+
 ## Developer resources
 
 ### Updated articles
