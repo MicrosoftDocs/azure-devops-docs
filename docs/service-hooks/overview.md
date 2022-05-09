@@ -83,14 +83,14 @@ look at the information on the service that you're interested in.
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and any filters":::  
+    :::image type="content" source="./media/trello-wizard-event.png" alt-text="Select the event to trigger on and any filters":::  
  
 5.	Select an action to run on the target service. 
 
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action for the target service":::  
+    :::image type="content" source="./media/trello-wizard-action.png" alt-text="Select an action for the target service":::  
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
