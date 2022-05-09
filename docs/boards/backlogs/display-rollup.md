@@ -23,7 +23,7 @@ For example, here we show **Progress by Work Items** which displays progress bar
 > [!IMPORTANT]
 > Rollup data supports progress bars, counts of work items, or sums of numeric fields within a project. Child items that link to a different project aren't counted within the parent rollup calculations. Also, links to test cases or test artifacts are also not included in rollup calculation. These items are linked using a test-specific link types.
 > [!div class="mx-imgBorder"]  
-> ![Progress bars showing rollup by work items](media/rollup/progress-by-work-items.png)
+> ![Screenshot of Progress bars showing rollup by work items.](media/rollup/progress-by-work-items.png)
 
 ::: moniker range="azure-devops"
 
@@ -50,25 +50,25 @@ The default set of backlog work items that supports a natural hierarchical group
 
 The following image shows the Agile process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as User Stories or Tasks—by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
 > [!div class="mx-tdCol2BreakAll"]
-> ![Agile process hierarchy, conceptual image](media/rollup/agile-process-hierarchy.png)
+> ![Conceputal image of Agile process hierarchy.](media/rollup/agile-process-hierarchy.png)
 
 ### [Basic process](#tab/basic-process)
 
 The following image shows the Basic process backlog work item hierarchy that includes epics, issues, and tasks.
 > [!div class="mx-imgBorder"]  
-> ![Basic process hierarchy, conceptual image](media/rollup/basic-process-hierarchy.png)
+> ![Conceputal image of Basic process hierarchy.](media/rollup/basic-process-hierarchy.png)
 
 ### [Scrum process](#tab/scrum-process)
 
 The following image shows the Scrum process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as Product Backlog Items or Tasks—by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
 > [!div class="mx-tdCol2BreakAll"]
-> ![Agile process hierarchy, conceptual image](media/rollup/scrum-process-hierarchy.png)
+> ![Conceputal image of Agile process hierarchy.](media/rollup/scrum-process-hierarchy.png)
 
 ### [CMMI process](#tab/cmmi-process)
 
 The following image shows the CMMI process backlog work item hierarchy. Each team can configure how they manage bugs&mdash;at the same level as Requirements or Tasks—by configuring the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
 > [!div class="mx-imgBorder"]  
-> ![CMMI process hierarchy, conceptual image](media/rollup/cmmi-process-hierarchy.png)
+> ![Conceputal image of CMMI process hierarchy.](media/rollup/cmmi-process-hierarchy.png)
 
 ***
 
@@ -80,13 +80,12 @@ Each user can set their own column options that persist for each backlog across 
 
    > [!TIP]
    > Consider opening a portfolio backlog and choose to view **In Progress Items** and **Completed Child Items**. That way, you can check the State value of items against the rollup value. 
-   > 	
-   > 	
+   >    
    > ![Open column options](media/rollup/view-in-progress-and-completed-items.png)
 
 1. Choose **Column options**, or choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**.
    > [!div class="mx-imgBorder"]  
-   > 	
+   >    
    > ![Choose Column options and then select Column options.](media/rollup/open-column-options.png)
 
    > [!TIP]
@@ -96,8 +95,8 @@ Each user can set their own column options that persist for each backlog across 
 
 1. In the Column options dialog, choose **Add a rollup column**, select **From quick list**, and then choose from one of the options listed.
    > [!div class="mx-imgBorder"]  
-   > 	
-   > ![Column options dialog](media/rollup/add-rollup-column-from-quick-list.png)
+   >    
+   > ![Screenshot of Column options dialog.](media/rollup/add-rollup-column-from-quick-list.png)
 
    > [!NOTE]
    > The menu options vary depending on the process chosen for your project, the backlog level you've selected, and whether or not you have the **Show parents** view option enabled.
@@ -106,19 +105,19 @@ Each user can set their own column options that persist for each backlog across 
 
    - **Progress bar** displays progress bars based on the percentage of associated descendant work items that have been completed or closed.
    - **Total number** displays the sum of descendant items or the associated fields of descendant items. Totals provide a measure of the size of a Feature or Epic based on the number of its child items. For example, **Count of Tasks** shows the sum of all tasks that are linked to parent items. The active or closed state is ignored.
-   > [!div class="mx-imgBorder"]  
-   > 	
-   > ![Rollup column menu](media/rollup/rollup-menu.png)
+   > [!div class="mx-imgBorder"]   
+   >    
+   > ![Screenshot of Rollup column menu.](media/rollup/rollup-menu.png)
 
    For example, the following image shows the Count of Tasks for the parent user stories is 2 and 4, respectively. The Count of Tasks is 6 for the parent Feature and Epic.
    > [!div class="mx-imgBorder"]  
-   > 	
-   > ![Count of tasks](media/rollup/count-of-tasks.png)
+   >    
+   > ![Screenshot showing Count of tasks rollup column.](media/rollup/count-of-tasks.png)
 
 1. **Remaining Work of Tasks** shows the sum of Remaining Work of tasks that are linked to the parent item.
-   > [!div class="mx-imgBorder"]  
-   > 	
-   > ![Sum of Remaining Work](media/rollup/sum-remaining-work.png)
+   > [!div class="mx-imgBorder"]   
+   >    
+   > ![Screenshot showing Sum of Remaining Work rollup column. ](media/rollup/sum-remaining-work.png)
 
    > [!TIP]
    > Reminder that when a task is closed, the Remaining Work field is set to zero.
@@ -129,7 +128,7 @@ Rollup data is calculated from the Analytics service. When there's a large amoun
 
 If an error occurs in retrieving rollup data, you'll see an  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services are still processing changes made which may affect rollup calculations. Once the Analytics data is up to date, the rollup columns will refresh with the latest data.
 > [!div class="mx-imgBorder"]  
-> ![Error getting data](media/rollup/error-getting-data.png)
+> ![Screenshot showing Error getting data.](media/rollup/error-getting-data.png)
 
 To learn more about the service, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
 
@@ -141,14 +140,14 @@ To change the order of the fields, drag-and-drop the field where you want it wit
 
 If you add a custom work item type or field to a backlog level, you can view rollup based on those options.  For example, the Customer Request type is added to the Requirements category, and a Count of Customer Requests is shown in the following image.
 > [!div class="mx-imgBorder"]  
-> ![Count of Customer Requests, custom work item type](media/rollup/count-of-customer-requests.png)
+> ![Screenshot of custom field, Count of Customer Requests rollup field.](media/rollup/count-of-customer-requests.png)
 
 1. From the Column options dialog, choose  **Add a rollup column**, select **Configure custom rollup** option.
 
 1. Choose the options you want from the Custom Rollup column dialog.
    > [!div class="mx-imgBorder"]  
-   > 	
-   > ![Custom Rollup column dialog](media/rollup/custom-rollup-column-dialog.png)
+   >    
+   > ![Screenshot of Custom Rollup column dialog.](media/rollup/custom-rollup-column-dialog.png)
 
 1. Choose **OK**. and then **OK** to complete your operations.
 
