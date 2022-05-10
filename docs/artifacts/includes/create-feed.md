@@ -9,12 +9,7 @@ ms.date: 02/14/2022
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Artifacts**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Navigate to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
-
-1. Select **Create Feed**.
+1. Select **Artifacts**, and then select **Create Feed**.
 
    > [!div class="mx-imgBorder"] 
    > ![Create a feed button](../media/new-feed-button-azure-devops-newnav.png)
