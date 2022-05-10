@@ -78,7 +78,7 @@ You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scop
 
 ## Publish NuGet packages  
 
-Run the following command in an elevated command prompt window to set up your nuget.config file and publish your NuGet package to your feed:
+Run the following command in an elevated command prompt window to set up your nuget.config file and publish your NuGet package to your feed. See [nuget sources](/nuget/reference/cli-reference/cli-ref-sources), and [nuget push](/nuget/reference/cli-reference/cli-ref-push) for more details:
 
     ```Command
     nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
