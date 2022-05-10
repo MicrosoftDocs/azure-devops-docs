@@ -3,20 +3,16 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/19/2020
+ms.date: 05/10/2022
 ---
 
-<a name="get-nuget-pkg-url"></a>
-
-### 1. Get the feed's source URL
+#### 1. Get the feed's source URL
 
 [!INCLUDE [get a NuGet URL](nuget-consume-endpoint.md)]
 
-### 2. Set up Visual Studio
+#### 2. Set up Visual Studio
 
 #### [Windows](#tab/windows/)
-
-### Set up package source
 
 1. In Visual Studio, select **Tools**, and then **Options**.
 1. Expand the **NuGet Package Manager** section, and then select **Package Sources**.
@@ -26,11 +22,7 @@ ms.date: 02/19/2020
 
     :::image type="content" source="../../media/vs-addsource.png" alt-text="Set up visual studio: Windows":::
 
-<a name="mac-os"></a>
-
 #### [macOS](#tab/macOS/)
-
-### Set up package source
 
 1. Create a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) PAT.
 1. In visual studio, select **Preferences** from the menu bar.
@@ -42,14 +34,11 @@ ms.date: 02/19/2020
 
     :::image type="content" source="../../media/vs-mac-settings.png" alt-text="Set up visual studio: macOS":::
 
-<a name="consume-packages"></a>
-
 ---
 
-### 3. Download packages
+#### 3. Download packages
 
 1. In Visual Studio, right-click on your project, and then select **Manage NuGet Packages**.
 1. Select **Browse**, and then select your feed from the **Package source** drop-down menu.
     :::image type="content" source="../../media/select-pkg-src.png" alt-text="Select feed source":::
 1. Use the search bar to look for packages from your feed.
-
