@@ -1,6 +1,6 @@
 ---
-title: Get started with NuGet packages
-description: Use Azure Artifacts to publish and consume NuGet packages
+title: Get started with NuGet packages and Azure Artifacts
+description: Use Azure Artifacts to publish and download NuGet packages to and from Artifacts feeds
 ms.technology: devops-artifacts
 ms.custom: contperf-fy21q3
 ms.topic: quickstart
@@ -16,6 +16,14 @@ monikerRange: '<= azure-devops'
 
 Azure Artifacts enables developers to publish, and download NuGet packages from different sources such as feeds and public registries. Artifact feeds can be private to share your packages with your team and specific users, or public to share them publicly with anyone on the internet.
 
+In this article, you'll learn:
+
+> [!div class="checklist"]    
+> * How to create a new feed  
+> * How to set up your project and connect to your feed  
+> * How to publish NuGet packages to your feed
+> * How to download NuGet packages from your feed  
+
 ## Prerequisites
 
 - An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
@@ -23,7 +31,7 @@ Azure Artifacts enables developers to publish, and download NuGet packages from 
 
 ## Create a feed
 
-You can create two types of feeds: project-scoped and organization-scoped feeds. All public feeds are scoped to their hosting project and they inherit its visibility settings.
+You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scoped-vs-organization-scoped-feeds): project-scoped and organization-scoped feeds. All public feeds are scoped to their hosting project and they inherit its visibility settings.
 
 [!INCLUDE [](includes/create-feed.md)]
 
