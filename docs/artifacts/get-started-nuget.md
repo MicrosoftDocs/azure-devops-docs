@@ -49,10 +49,10 @@ You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scop
 
     :::image type="content" source="./media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** and follow the instructions to install the prerequisites.
+1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** and follow the instructions to:
 
-    1. Download the [latest NuGet version](https://www.nuget.org/downloads).
-    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+    1. Install the [latest NuGet version](https://www.nuget.org/downloads).
+    1. Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
 1. Follow the instructions in the **Project setup** to add a nuget .config file.
 
@@ -76,24 +76,22 @@ You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scop
 
 ::: moniker-end
 
-## Install and publish a sample NuGet package  
+## Publish NuGet packages  
 
-If you don't have a NuGet package but want to try publishing NuGet packages to your feed, you can install the _HelloWorld_ sample package.
+Run the following command in an elevated command prompt window to set up your nuget.config file and publish your NuGet package to your feed:
 
-1. Install the sample NuGet package:
+    ```Command
+    nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
+    nuget push -Source <SourceName> -ApiKey key <PackagePath>
+    ```
 
-   ```Command
-   nuget install HelloWorld -ExcludeVersion
-   ```
+If you don't have a NuGet package but want to try publishing packages to your feed, you can install the _HelloWorld_ sample package as follows:
+   
+    ```Command
+    nuget install HelloWorld -ExcludeVersion
+    ```
 
-1. Set up your nuget.config file and publish your package to your feed:
-
-   ```Command
-   nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
-   nuget push -Source <SourceName> -ApiKey key <PackagePath> #example:(.\Get-Hello.1.0.0.nupkg)>
-   ```
-
-## Download NuGet packages with Visual Studio
+## Download NuGet packages
 
 [!INCLUDE [](includes/nuget/consume.md)]
 
