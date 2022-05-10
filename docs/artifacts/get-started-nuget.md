@@ -80,16 +80,16 @@ You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scop
 
 Run the following command in an elevated command prompt window to set up your nuget.config file and publish your NuGet package to your feed. See [nuget sources](/nuget/reference/cli-reference/cli-ref-sources), and [nuget push](/nuget/reference/cli-reference/cli-ref-push) for more details:
 
-    ```Command
-    nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
-    nuget push -Source <SourceName> -ApiKey key <PackagePath>
-    ```
+```Command
+nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
+nuget push -Source <SourceName> -ApiKey key <PackagePath>
+```
 
 If you don't have a NuGet package but want to try publishing packages to your feed, you can install the _HelloWorld_ sample package as follows:
    
-    ```Command
-    nuget install HelloWorld -ExcludeVersion
-    ```
+```Command
+nuget install HelloWorld -ExcludeVersion
+```
 
 ## Download NuGet packages
 
