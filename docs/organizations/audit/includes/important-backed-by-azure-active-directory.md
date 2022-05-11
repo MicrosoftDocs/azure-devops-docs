@@ -6,4 +6,4 @@ author: chcomley
 ---
 
 > [!IMPORTANT]
-> Auditing is only available for organizations backed by Azure Active Directory.
+> Auditing is only available for organizations backed by Azure Active Directory. For more information, see [Connect your organization to Azure Active Directory](../../accounts/connect-organization-to-azure-ad.md).
