@@ -9,7 +9,7 @@ ms.reviewer:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022  
+ms.date: 05/11/2022  
 ---
 
 # Export a list of users and their access levels
@@ -29,6 +29,8 @@ You can get a list of users and groups that have access to your Azure DevOps Ser
 ::: moniker range="tfs-2018"
 You can get a list of users and groups that have access to your Team Foundation Server (TFS) instance by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end
+
+[!INCLUDE [important-backed-by-azure-active-directory](../audit/includes/important-backed-by-azure-active-directory.md)]
 
 ## Prerequisites
 
