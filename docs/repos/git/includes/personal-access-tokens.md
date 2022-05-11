@@ -301,7 +301,7 @@ If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more info
 ::: moniker range="azure-devops"
 ## Modify a PAT
 
-You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes).
+You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes). After regeneration, the previous PAT is no longer authorized.
 
 1. From your home page, open your user settings :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
