@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/22/2020
+ms.date: 05/11/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -22,7 +22,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 ## Prerequisites
 
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help connecting to Azure AD. 
+- Have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help with connecting to Azure AD. 
 - You must be a [member of the **Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) or the [**Organization owner**](../security/look-up-organization-owner.md) to make the connection.
 - Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](./faq-azure-access.yml#how-can-i-convert-an-azure-ad-guest-into-a-member).
 - Inform users of the upcoming change.
@@ -112,7 +112,7 @@ When you inform your users of the completed change, include the following tasks 
     d. When the token's created, copy it, as it can't be viewed again.
 
 - [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
-- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
+- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
 
 ## Related articles
 
