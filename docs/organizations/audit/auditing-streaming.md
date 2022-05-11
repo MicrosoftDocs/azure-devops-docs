@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 12/20/2021
+ms.date: 05/11/2022
 ---
 
 # Create audit streaming
@@ -19,6 +19,8 @@ ms.date: 12/20/2021
 > Auditing is still in public preview.
 
 Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Send auditing data to other Security Incident and Event Management (SIEM) tools and open new possibilities, such as the ability to trigger alerts for specific events, create views on auditing data, and perform anomaly detection. Setting up a stream also allows you to store more than 90-days worth of auditing data, which is the maximum amount of data that Azure DevOps keeps for your organizations.
+
+[!INCLUDE [important-backed-by-azure-active-directory](includes/important-backed-by-azure-active-directory.md)]
 
 Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every half hour or less, new audit events are bundled and streamed to your targets. The following stream targets are available for configuration.
 
@@ -33,7 +35,7 @@ Private linked workspaces aren't supported today.
 
 ## Prerequisites
 
-By default, Project Collection Administrators (PCAs) are the only group that have access to the auditing feature. You must have the following permissions:
+By default, Project Collection Administrators (PCAs) are the only group that has access to the auditing feature. You must have the following permissions:
 
 - Manage audit streams
 - View audit log
@@ -94,7 +96,7 @@ Events begin to arrive on Splunk within half an hour or less.
 
 ### Set up an Event Grid stream
 
-1. Create an Event Grid Topic on Azure. 
+1. Create an Event Grid topic on Azure. 
 2. Make note of the “Topic Endpoint” and one of the two “Access Keys”. Use this information to create the Event Grid connection.
 
    :::image type="content" source="media/auditing-streaming/azure-event-grid.png" alt-text="Azure Event Grid information":::
@@ -127,7 +129,7 @@ The stream is enabled and new events begin to flow within half an hour or less. 
 
 ## Edit a stream
 
-Details about your stream target can change over time. To reflect these changes in your streams, you can edit them. To edit a stream, make sure you have the “Manage audit streams” permission.
+Details about your stream target can change over time. To reflect these changes in your streams, you can edit them. To edit a stream, make sure that you have the *Manage audit streams* permission.
 
 1. Next to the stream that you want to edit, select the vertical three dots on the far right, and then select **Edit stream**. 
 
@@ -153,7 +155,7 @@ You can re-enable a disabled stream. It catches up on any audit events that were
 
 ## Delete a stream
 
-To delete a stream, make sure you have the Delete Audit Streams permission.
+To delete a stream, make sure that you have the *Delete audit streams* permission.
 
 > [!IMPORTANT]
 > Once you delete a stream you can't get it back.
