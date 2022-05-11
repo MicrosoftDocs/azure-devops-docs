@@ -58,6 +58,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
    ![Select your Azure AD, and then Connect](media/shared/select-directory-connect.png)
+   
    If you can't find your directory, contact your Azure AD administrator and request that they add you as a member to the Azure AD.
 
 5. Select **Sign out**.
