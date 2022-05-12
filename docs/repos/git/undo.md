@@ -122,35 +122,30 @@ Git `reset` has a few options. The default option is to revert the branch to a p
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
 :::row:::
-  :::column span="1":::
+  :::column span="":::
 
     **Visual Studio Git** <br><br>
 
     1. From the menu bar, choose **Git > View Branch History** to open the **History** tab for the current branch.
 
-       :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
+         :::image type="content" source="media/undo/visual-studio-2019/git-experience/view-history.png" border="true" alt-text="Screenshot of the View Branch History option in the Git menu in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/git-experience/view-history-lrg.png":::
 
   :::column-end:::
-  :::column span="1":::
+  :::column span="":::
 
     **Visual Studio Team Explorer** <br><br>
 
     1. In the **Changes** view of **Team Explorer**, choose **Actions > View History** to open the **History** tab for the current branch.
 
-       :::image type="content" source="media/undo/visual-studio-2019/team-explorer/view-history.png" border="true" alt-text="Screenshot of the View History option in the Action menu in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/view-history-lrg.png":::
+         :::image type="content" source="media/undo/visual-studio-2019/team-explorer/view-history.png" border="true" alt-text="Screenshot of the View History option in the Action menu in the Changes view of Team Explorer in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/team-explorer/view-history-lrg.png":::
 
   :::column-end:::
 :::row-end:::
-
-:::row:::
-  :::column span="2":::
 
 2. In the **History** tab for the current branch, right-click the commit you want to reset, and then choose **Reset > Delete Changes (--hard)** to reset the branch to the selected commit and delete all changes to all branch files since that commit. Or, choose **Reset > Keep Changes (--mixed)** to reset the branch to the selected commit and retain all subsequent changes as unstaged changes.
 
-    :::image type="content" source="media/undo/visual-studio-2019/common/reset-hard.png" border="true" alt-text="Screenshot of the Reset option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/reset-hard-lrg.png":::
+     :::image type="content" source="media/undo/visual-studio-2019/common/reset-hard.png" border="true" alt-text="Screenshot of the Reset option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/reset-hard-lrg.png":::
 
-  :::column-end:::
-:::row-end:::
 
 #### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
 
@@ -220,7 +215,7 @@ You can undo the changes made by a commit by using Git [revert](https://git-scm.
 
 2. In the **History** tab for the current branch, right-click the commit you want to revert and choose **Revert** to create a new commit that undoes the changes made by the selected commit.
 
-      :::image type="content" source="media/undo/visual-studio-2019/common/revert.png" border="true" alt-text="Screenshot of the Revert option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/revert-lrg.png":::
+     :::image type="content" source="media/undo/visual-studio-2019/common/revert.png" border="true" alt-text="Screenshot of the Revert option in the context menu for a commit in the History window in Visual Studio 2019." lightbox="media/undo/visual-studio-2019/common/revert-lrg.png":::
 
 
 #### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
