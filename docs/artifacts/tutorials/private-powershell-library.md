@@ -34,7 +34,7 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 
 ## Create a PAT
 
-Using a personal access token (PAT) is the recommended approach to authenticate with Azure Artifacts. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for more details.
+Using a personal access token (PAT) is a great way to authenticate with Azure DevOps without using your primary credentials. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for more details.
 
 1. Head to your organization in Azure DevOps Services: `https://dev.azure.com/<org_name>`
 
