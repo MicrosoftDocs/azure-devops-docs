@@ -205,7 +205,7 @@ When you're ready to make changes to your pipeline, select it in the **Pipelines
 
 > [!Tip]
 > To make changes to the YAML file as described in this article, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
-:::image type="content" source="media/azure-pipe-edit.png" alt-text="Pipeline build in action when the Azure Pipelines Jobs option is selected.":::  
+:::image type="content" source="media/azure-pipe-edit.png" alt-text="Edit the Azure Pipeline from the dashboard with more option selected and Edit highlighted.":::  
 
 ## Build an image and push to container registry
 
