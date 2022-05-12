@@ -150,9 +150,9 @@ Git `reset` has a few options. The default option is to revert the branch to a p
 #### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
 
 1. Open up the **Changes** view in Team Explorer. 
-2. Select **Actions** and choose **View History** from the drop-down. 
-3. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
-4. Choose **Reset and delete changes...**.
+1. Select **Actions** and choose **View History** from the drop-down. 
+1. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
+1. Choose **Reset and delete changes...**.
 
     :::image type="content" source="media/vs_reset_branch.png" border="false" alt-text="Screenshot showing how to reset a branch in Visual Studio.":::
 
