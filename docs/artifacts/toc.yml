@@ -127,7 +127,7 @@
     - name: Quickstart
       href: quickstarts/universal-packages.md
       displayName: universal packages
-    - name: Universal Packages upstream source
+    - name: Universal Packages upstream sources
       href: universal-packages/universal-packages-upstream.md
       displayName: universal packages, upstream sources, upstreams
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
