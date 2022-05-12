@@ -21,7 +21,7 @@ New to Azure Pipelines? If so, then we recommend you try this section before mov
 
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
-```html
+```
 https://github.com/MicrosoftDocs/pipelines-go
 ```
 
@@ -35,7 +35,7 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **Go**. Your new pipeline appears, with `azure-pipelines.yml` YAML file ready to be configured. See the following sections to learn some of the more common ways to customize your pipeline.
+When the **Configure** tab appears, select **Go**. Your new pipeline appears, with the `azure-pipelines.yml` YAML file ready to be configured. See the following sections to learn some of the more common ways to customize your pipeline.
 
 ## Build environment
 
@@ -189,12 +189,13 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
     workingDirectory: '$(modulePath)'
 ```
 
-When you're ready, Commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run**.
+When you're ready, Commit a new _azure-pipelines.yml_ file to your repository and update the commit message. Select **Save and run**.
 
    > [!div class="mx-imgBorder"]
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-   If you want to watch your pipeline in action, select the build job.
+   If you want to watch your pipeline in action, select the build in the **Jobs** option on your Azure pipeline dashboard.
+    :::image type="content" source="media/azure-pipe-run.png" alt-text="Pipeline build in action when the Azure Pipelines Jobs option is selected.":::
 
    Because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template, we automatically created your pipeline.
 
@@ -204,6 +205,7 @@ When you're ready to make changes to your pipeline, select it in the **Pipelines
 
 > [!Tip]
 > To make changes to the YAML file as described in this article, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
+:::image type="content" source="media/azure-pipe-edit.png" alt-text="Pipeline build in action when the Azure Pipelines Jobs option is selected.":::  
 
 ## Build an image and push to container registry
 
