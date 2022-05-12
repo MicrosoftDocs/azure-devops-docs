@@ -13,11 +13,11 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-When you want to undo changes in a Git repo, first decide what type of changes are needed. For example, you might want to:
+When you want to undo changes in a Git repo, first decide what type of changes you want to undo. For example, you might want to:
 
 - Discard uncommitted changes to a file by reverting the file to its last committed version. You can also revert a file to any committed version.
 - Revert a branch to a prior state by resetting it to a previous commit.
-- Undo the changes made by a shared commit by creating a new commit that reverses the changes. Because this approach won't rewrite existing commit history, it's suitable for reversing changes made by commits that were pushed and in use by others.
+- Undo the changes made by a shared commit by creating a new commit that reverses the changes. Because this approach won't rewrite existing commit history, it's suitable for reversing changes made by commits that were pushed and are in use by others.
 - Amend your last commit to modify its content or message. For more information, see [How to update your last commit](commits.md#how-to-update-your-last-commit).
 - Fix a problem introduced in a prior commit by creating a new [commit](commits.md) that includes the fix. For more information, see [How to create a commit](commits.md#how-to-create-a-commit).
 
@@ -33,7 +33,7 @@ In this article you learn how to:
 
 If you've made changes to a file but haven't committed those changes, you can use Git [checkout](https://git-scm.com/docs/git-checkout) to quickly discard the changes and revert the file to its last committed version.
 
-Git `checkout` can also revert a file to any committed version, if you specify the commit ID.
+Git `checkout` can also revert a file to any committed version, when you specify the commit ID.
 
 > [!WARNING]
 > If there's a chance you might want to reapply the changes that Git `checkout` would discard, consider [stashing](howto.yml#i-ve-done-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) those changes instead.
@@ -111,12 +111,12 @@ For more information about finding a commit ID, see [Find a commit ID](#find-a-c
 
 ## Revert a branch to a prior state
 
-You can revert a branch to a prior state by using Git [reset](https://git-scm.com/docs/git-reset) to reset it to a previous commit. Git `reset` will affect all files in all branch folders.
+You can revert a branch to a prior state by using Git [reset](https://git-scm.com/docs/git-reset) to reset the branch to a previous commit. Git `reset` affects all files in all branch folders.
 
-Git `reset` has a few options. The default option is to revert the branch to a previous commit, but retain all the subsequent changes as uncommitted changes. Another option is to revert a branch to a previous commit by deleting all changes to all branch files since that commit.
+Git `reset` has a few options. The default option is to revert the branch to a previous commit, but retain all the subsequent changes as uncommitted changes. Another option is to revert a branch to a previous commit by discarding all changes to all branch files since that commit.
 
 > [!WARNING]
-> Don't reset a branch to a commit prior to the last commit if the last commit has been pushed and shared with others. Doing so will result in the local branch history no longer matching the remote branch history. For shared branches, see [Undo the changes made by a shared commit](#undo-the-changes-made-by-a-shared-commit).
+> Don't reset a branch to a commit prior to the last commit if the last commit has been pushed and shared with others. Doing so will result in your local branch history no longer matching the remote branch history. For shared branches, see [Undo the changes made by a shared commit](#undo-the-changes-made-by-a-shared-commit).
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
@@ -191,7 +191,7 @@ For more information about finding a commit ID, see [Find a commit ID](#find-a-c
 
 ## Undo the changes made by a shared commit
 
-You can undo the changes made by a commit by using Git [revert](https://git-scm.com/docs/git-revert) to create a new commit that reverses those changes. Git `revert` doesn't delete the original commit. This approach is suitable for undoing the changes made by a shared commit because Git `revert` won't alter previous commit history, and therefore local and remote branch histories continue to match.
+You can undo the changes made by a commit by using Git [revert](https://git-scm.com/docs/git-revert) to create a new commit that reverses those changes. Git `revert` doesn't delete the original commit. This approach is suitable for undoing the changes made by a shared commit because Git `revert` won't alter the previous commit history, and so local and remote branch histories continue to match.
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
