@@ -28,7 +28,7 @@ With Azure Artifacts, you can enable upstream sources to start consuming package
 
 1. Select your **Feed** from the dropdown menu, select a **View** and give your upstream source a name. Make sure you check the **UPack** package type.
 
-:::image type="content" source="./media/upack-upstream.png" alt-text="A screenshot showing how to set up a new Universal Packages upstream source.":::
+    :::image type="content" source="./media/upack-upstream.png" alt-text="A screenshot showing how to set up a new Universal Packages upstream source.":::
 
 1. Select **Save** when you are done.
 
@@ -55,3 +55,15 @@ With Azure Artifacts, you can enable upstream sources to start consuming package
 1. Select **Save** when you are done.
 
 1. Select **Save** at the top right corner to save your changes.
+
+## View saved packages from upstream
+
+To view the packages saved from your Universal Packages upstream source, select your UPack source from the dropdown menu.
+
+:::image type="content" source="./media/filter-packages.png" alt-text="A screenshot showing how to filter for packages from UPack upstream source.":::
+
+# Related articles
+
+- [Configure upstream sources](../how-to/set-up-upstream-sources.md)
+- [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
+- [Configure upstream behavior](../concepts/upstream-behavior.md)
