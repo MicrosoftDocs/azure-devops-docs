@@ -32,9 +32,9 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 - [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
 - An [Azure DevOps Services](https://azure.microsoft.com/services/devops/) account.
 
-## Create a PAT to get command-line access to Azure DevOps Services
+## Create a PAT
 
-The first step is to create a PAT through the Azure DevOps Services UI to authenticate your command-line with the service.
+Using a personal access token (PAT) is the recommended approach to authenticate with Azure Artifacts. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for more details.
 
 1. Head to your organization in Azure DevOps Services: `https://dev.azure.com/<org_name>`
 
@@ -56,9 +56,6 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 5.  Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes) that this token will be authorized to access. You will only need **Packaging: Read, write & manage** permissions for this tutorial but you can also add more privileges if you'd like to use this token for other tasks.
 
 6. When you're done, make sure to copy your token to a safe location, as you won't be able to view it afterwards.
-
-> [!NOTE]
-> To learn more about how to user personal access tokens, check out the [Authenticate with PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) article.
 
 ## Create the feed
 
