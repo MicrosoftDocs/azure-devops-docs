@@ -1,22 +1,20 @@
 ---
-title: Integrate with service hooks | Azure DevOps Services
-description: Perform tasks with other services when events happen in Azure DevOps Services projects
+title: Integrate with service hooks
+description: Perform tasks with other services when events happen in your project in Azure DevOps.
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/19/2020
+ms.date: 05/09/2022
 ---
 
 # Integrate with service hooks
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Service hooks let you run tasks on other services when events happen in your Azure DevOps 
-projects. For example, create a card in Trello when a work item is created 
-or send a push notification to your team's mobile devices when a build fails. You can also use service hooks in custom apps and services as a more efficient way to drive activities when events happen in your projects.
+Service hooks let you run tasks on other services when events happen in your project in Azure DevOps. For example, create a card in Trello when a work item is created or send a push notification to your team's mobile devices when a build fails. You can also use service hooks in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
 ## What is a service hook?
 
@@ -36,20 +34,37 @@ when an event occurs.
 These services are available as the target of service hooks. To learn about others apps and services that 
 integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#AzureDevOpsServices)
 
-Pipelines                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
--------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
-[AppVeyor](https://www.appveyor.com/docs/) | [Flowdock](https://www.flowdock.com/api/integration-getting-started) | [UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)  | [Trello](./services/trello.md) | [Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)
-[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|  |	[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)
-[Jenkins](./services/jenkins.md)   |	[Hubot](https://hubot.github.com/docs/)	|											|			|	[Grafana](./services/grafana.md) |
-[MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Web Hooks](./services/webhooks.md) |
-[Slack](./services/slack.md)	   |[Slack](./services/slack.md)	|	|	[Slack](./services/slack.md)	| [Zapier](https://zapier.com/apps/webhook/integrations) 
-| [Microsoft Teams](./services/teams.md) | [Microsoft Teams](./services/teams.md) |   |[Microsoft Teams](./services/teams.md) | [Datadog](./services/datadog.md)  
+
+|Service  |Supported events  | Supported actions |
+|---------|---------|-------|
+|[App Center](/appcenter/dashboard/bugtracker/)   |Work item updated | Send notification |
+|[AppVeyor](https://www.appveyor.com/docs/)     | Code pushed        |Trigger an AppVeyor build |
+|[Azuqua](https://go.microsoft.com/fwlink/?LinkID=521778)   | All        | Post event to FLO |
+|[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed        | Deploy web app   |
+|[Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)    | All        | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic  |
+|[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue |
+|[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)    | Build completed, Code pushed | Queue a build |
+|[Campfire](https://go.microsoft.com/fwlink/?LinkID=393613)   |  All | Post a message to a room |
+|[Datadog](./services/datadog.md)  |  All  | Post an event in Datadog |
+|[Flowdock](https://www.flowdock.com/api/integration-getting-started)   | All   |  Post a message to a team inbox or chat |
+|[Grafana](./services/grafana.md)  | Release deployment completed | Add annotation to Grafana database |
+|HipChat    | (No longer supported)        | |
+|[HockeyApp](https://aka.ms/vsts-hockeyapp-integration)   | Work item updated| Send notification |
+|[Jenkins](./services/jenkins.md)     |  Build completed, code pushed, PR merge attempted, release deployment completed | Trigger generic or Git build |
+|[Microsoft Teams](./services/teams.md)    |   All  | Post a message to a channel |
+|[MyGet](https://docs.myget.org/docs/reference/webhooks)  | Build completed, code pushed | Publish NuGet package to MyGet, trigger a MyGet build |
+|[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription) | All  | Post a message to a group |
+|[Slack](./services/slack.md)   |  All       | Post a message to a channel |
+|[Trello](./services/trello.md)  | All | Create a card or list |
+|[UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)    |  Work item created or updated       | Send linked work item event |
+|[Web Hooks](./services/webhooks.md) | All | Post via HTTP |
+|[Workplace Message Apps](https://aka.ms/WorkplaceMessagingApps-Integration) | All | Send notifications |
+|[Zapier](https://zapier.com/apps/webhook/integrations) | All | Send notification |
+| [Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) | Work item commented on | Create a private comment in a ticket |
 
 ## Create a subscription
 
-When you integrate one of these services with Azure DevOps Services, 
-you have to create a new subscription. In many cases, 
-you have to do some work in the other service, too. For specific details, 
+When you integrate one of these services with Azure DevOps Services, you have to create a new subscription. In many cases, you need to do some work in the other service, too. For specific details, 
 look at the information on the service that you're interested in.
 
 ::: moniker range=">= azure-devops-2019"
@@ -64,18 +79,18 @@ look at the information on the service that you're interested in.
  
 3.	Select the service you want to integrate with.
 
-    :::image type="content" source="./media/selectservice.png" alt-text="Select the service to integrate":::   
+    :::image type="content" source="./media/select-service.png" alt-text="Select the service to integrate":::   
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and any filters":::  
+    :::image type="content" source="./media/trello-wizard-event.png" alt-text="Select the event to trigger on and any filters":::  
  
 5.	Select an action to run on the target service. 
 
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action for the target service":::  
+    :::image type="content" source="./media/trello-wizard-action.png" alt-text="Select an action for the target service":::  
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
@@ -97,18 +112,18 @@ look at the information on the service that you're interested in.
  
 3.	Select the service you want to integrate with.
 
-    :::image type="content" source="./media/selectservice.png" alt-text="Select the service to integrate":::  
+    :::image type="content" source="./media/select-service.png" alt-text="Select the service to integrate":::  
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and select any desired filters":::  
+    :::image type="content" source="./media/trello-wizard-event.png" alt-text="Select the event to trigger on and select any desired filters":::  
  
 5.	Select an action to run on the target service. 
 
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action to perform on the target service":::  
+    :::image type="content" source="./media/trello-wizard-action.png" alt-text="Select an action to perform on the target service":::  
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
@@ -118,9 +133,7 @@ look at the information on the service that you're interested in.
  
 ::: moniker-end
 
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
+## FAQ
 
 <a id="subscription-permissions" /> 
 
@@ -137,11 +150,11 @@ create any type of service hook subscription in that project. If the user sets u
 subscription for a resource that they don't otherwise have permission to access, the 
 subscription won't get triggered. 
 
-For example: if I don't have access to work items in area path XYZ, and I set up a 
-subscription to the work item update events, I won't get notifications for updates 
-to work items in area path XYZ. However, if another user who does have access to the work 
-items in area path XYZ is receiving those "work item update" events, then I could see the 
-notification history of that other user's events, which includes work item data that I 
+**For example:** if you don't have access to work items in area path XYZ, and you set up a 
+subscription to the work item update events, you won't get notifications for updates 
+to work items in area path XYZ. But, if another user, who does have access to the work 
+items in area path XYZ, is receiving those "work item update" events, then you could see the 
+notification history of the other user's events, which includes work item data that you 
 don't otherwise have access to.
 
 #### Q: Can I create service hook subscriptions for a project programmatically?
@@ -167,12 +180,9 @@ A: Yes. You can revoke authorizations from your profile.
 
 	<img alt="Click Revoke to revoke authorizations" src="./media/authorizations.png" />
 	
-#### Q: Why can't we setup Service Hooks for HipChat anymore?
+#### Q: Why can't we set up Service Hooks for HipChat anymore?
 
 A: Atlassian officially dropped support for HipChat. See more on that announcement [here](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
-
-
-<!-- ENDSECTION -->
 
 ## Related articles
 

@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 5/4/2022
+ms.date: 5/6/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -122,10 +122,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="3"><a href="2022/sprint-203-update.md" data-raw-source="[4 May 2022](2022/sprint-203-update.md)"> 4 May 2022</a></td> 
+    <td rowspan="4"><a href="2022/sprint-203-update.md" data-raw-source="[4 May 2022](2022/sprint-203-update.md)"> 4 May 2022</a></td> 
     <td>Query by Parent Id (private preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Move to column position on Kanban Board</td><td>Boards</td><td>Future</td></tr>
     <td>Added "Will not Fix" value to Bug reason field</td><td>Boards</td><td>Future</td></tr>
+    <td>Upstream cross-organization packages</td><td>Artifacts</td><td>Future</td></tr>
 </tr>
     <td rowspan="6"><a href="2022/sprint-202-update.md" data-raw-source="[20 April 2022](2022/sprint-202-update.md)"> 20 April 2022</a></td> 
     <td>Auditing is now an opt-in feature for your organization</td><td>General</td><td>Future</td></tr>

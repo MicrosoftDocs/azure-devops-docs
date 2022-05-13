@@ -23,7 +23,7 @@ With Azure Artifacts, you can publish and restore Maven packages to/from your Az
 
 ## Connect to feed
 
-1. From within your project, select **Artifacts**, and then select your feed. You can [create a new feed](../get-started-maven.md#create-a-feed) if you don't have one already.
+1. From within your project, select **Artifacts**, and then select your feed.
 
 1. Select **Connect to feed**.
 

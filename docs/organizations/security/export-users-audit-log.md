@@ -9,7 +9,7 @@ ms.reviewer:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022  
+ms.date: 05/11/2022  
 ---
 
 # Export a list of users and their access levels
@@ -30,6 +30,8 @@ You can get a list of users and groups that have access to your Azure DevOps Ser
 You can get a list of users and groups that have access to your Team Foundation Server (TFS) instance by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end
 
+[!INCLUDE [important-backed-by-azure-active-directory](../audit/includes/important-backed-by-azure-active-directory.md)]
+
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -43,15 +45,15 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ## Export a list of users
 
-::: moniker range=" azure-devops"
+::: moniker range="azure-devops"
 
-From your web browser or the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
+From your web portal or the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
 
 ::: moniker-end
 
-::: moniker range=" azure-devops-2020"
+::: moniker range="< azure-devops"
 
-From the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
+From your web portal, you can get a list of the users in your organization and view their access level information.
 
 ::: moniker-end
 
@@ -62,12 +64,55 @@ From the Azure DevOps CLI command, you can get a list of the users in your organ
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+	> ![Screenshot of Open Organization settings.](../../media/settings/open-admin-settings-vert.png)  
 
 2. Choose **Users**, and then **Export users**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Export users](media/export-users-audit/export-new-nav.png) 
+	> ![Screenshot of Export users.](media/export-users-audit/export-new-nav.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops-2020"
+
+You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.  
+
+1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo, (1) the project collection, and (2) **Access levels**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Open Access levels.](media/export-users-audit/open-access-levels-2019.png) 
+
+	> [!NOTE]   
+	> If you're not a member of the Team Foundation Server Administrators group, the **Access levels** page won't appear. 
+	
+2. Choose **Export audit log**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Export audit log, Azure DevOps Server 2019 and 2020, Web portal, ](media/export-users-audit/export-audit-log-2019.png)  
+
+3. The user log file is saved as a .csv file to your Download folder.  
+
+	To determine the access level assigned to each user or group, open the file in Excel.
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
+
+1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
+
+	<img src="media/access-levels-2017-open-admin-context.png" alt="Screenshot of Open Server settings admin context, TFS 2018." />  
+
+2. Choose **Access levels**, and then **Export audit log**. 
+
+	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Screenshot of Export audit log, TFS 2018. " />  
+
+	> [!NOTE]
+	> If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear. 
+
+3. The user log file is saved as a .csv file to your Download folder.  
+	To determine the access level assigned to each user or group, open the file in Excel.
 
 ::: moniker-end
 
@@ -115,50 +160,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
-
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-
-You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.  
-
-1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo, (1) the project collection, and (2) **Access levels**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Azure DevOps Server 2019, Web portal, open collection Access levels](media/export-users-audit/open-access-levels-2019.png) 
-
-	> [!NOTE]   
-	> If you're not a member of the Team Foundation Server Administrators group, the **Access levels** page won't appear. 
-	
-2. Choose **Export audit log**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Azure DevOps Server 2019, Web portal, export audit log](media/export-users-audit/export-audit-log-2019.png)  
-
-3. The user log file is saved as a .csv file to your Download folder.  
-
-	To determine the access level assigned to each user or group, open the file in Excel.
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
-
-1. From the web portal home page for a project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
-
-	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" />  
-
-2. Choose **Access levels**, and then **Export audit log**. 
-
-	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Control panel, admin context, Export audit log" />  
-
-	> [!NOTE]
-	> If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear. 
-
-3. The user log file is saved as a .csv file to your Download folder.  
-	To determine the access level assigned to each user or group, open the file in Excel.
-
-::: moniker-end
-
+ 
 
 ## Related articles
 

@@ -106,7 +106,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=" azure-devops"
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
