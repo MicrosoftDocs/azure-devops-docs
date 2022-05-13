@@ -282,13 +282,13 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     - Project-scoped feed:
 
     ```powershell
-    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet
+    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
     ```
     
     - Org-scoped feed:
 
     ```powershell
-    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet 
+    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
     ```
 
 1. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
@@ -312,7 +312,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     If the *Install-Module* command is returning an error *Unable to resolve package source*, run the `Register-PackageSource` cmdlet again with the `Trusted` flag as follows:
         
     ```powershell
-    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted
+    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
     ```
 
     You can check for your module by running the following command:
