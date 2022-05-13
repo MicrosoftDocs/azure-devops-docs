@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 05/04/2021 
+ms.date: 05/13/2022 
 --- 
 
 # About projects and scaling your organization
@@ -88,7 +88,7 @@ You can view the projects defined for your organization by opening the **Project
     > [!div class="mx-imgBorder"]  
     > ![Open Projects](media/about-projects/projects-hub-vert.png)  
 
-2. From there, you can choose a project from the set of projects listed. 
+2. Choose a project from the list of projects. 
 
 To create or list projects, see [Create a project](create-project.md)  
 
@@ -112,20 +112,21 @@ To create or list projects, see [Create a project](create-project.md)
 
 ::: moniker range="azure-devops"
 
-## Limit user visibility for projects using the Project-Scoped Users group 
+## Limit user visibility for projects using the Project-scoped users group 
 
 By default, users added to an organization can view all organization and project information and settings.  
 
 The **Limit user visibility and collaboration to specific projects** preview feature for the organization limits user access in two ways:
-- Restricting views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
-- Limiting the set of people or groups that appear through people-picker search selections and the ability to @mention people. 
+- Restricting views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization settings**.
+- Limiting the set of users or groups that appear through people-picker search selections and the ability to @mention users. 
 
 > [!IMPORTANT]
-> The limited visibility features described in this section apply only to interactions through the web portal. With the REST APIs or **azure devops** CLI commands, project members can access the restricted data. 
+> - The limited visibility features described in this section apply only to interactions through the web portal. With the REST APIs or **azure devops** CLI commands, project members can access the restricted data.
+> - Guest users who are members in the limited group with default access in Azure AD, can't search for users with the people picker. When the preview feature's turned *off* or when guest users aren't members of the limited group, guest users can search all Azure AD users, as expected.
 
 ### Limit access to Organization settings 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-scoped users** group, are restricted from accessing the **Organization settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
@@ -139,7 +140,7 @@ Organizations that manage users and groups using Azure Active Directory (Azure A
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
 - Selection of a user or group using **@mention** from a wiki page 
 
-As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+As shown in the following image, you  start entering a user in the people picker box until you find a match to the user name or security group.
  
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
@@ -147,8 +148,7 @@ As shown in the following image, you simply start typing into a people picker bo
 > [!WARNING]   
 > When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility and collaboration to specific projects** preview feature for the organization.  
 
-
-Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
+Users and groups who are added to the **Project-scoped users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
 
 ### Historical data remains visible 
 
