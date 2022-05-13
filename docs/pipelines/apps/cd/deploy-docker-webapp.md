@@ -187,7 +187,7 @@ stages:
       inputs:
         azureSubscription: $(azureSubscription)
         appName: $(appName)
-        containers: $(containerRegistry)/$(imageRepository):$(tag)
+        imageName: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
 The **Azure Web App on Container** task will pull the appropriate Docker image corresponding to the BuildId from the repository specified, and then deploy the image to your Azure App Service on Linux.
@@ -242,7 +242,7 @@ The following YAML snippet shows how to deploy to a staging slot, and then swap 
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<Name of the web app>'
-    containers: $(containerRegistry)/$(imageRepository):$(tag)
+    imageName: $(containerRegistry)/$(imageRepository):$(tag)
     deployToSlotOrASE: true
     resourceGroupName: '<Name of the resource group>'
     slotName: staging
@@ -264,10 +264,9 @@ Use the option **Deploy to Slot** in the **Azure Web App Container** task to spe
 ---
 
 ## FAQ
-### How do I find my registry credentials for the web app?
 
-<a name="endpoint"></a>
+### Q: How can I find my Docker registry credentials?
 
-App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Configuration** for the web app and update your Docker information.
+A: Navigate to [Azure portal](https://portal.azure.com), and then select your Web App for Containers. Select **Configuration** > **Application settings** and then click to show the value.
 
-[ ![Screenshot showing Update image source and Registry in container settings.](azure/media/configure-app-service-security.png) ](azure/media/configure-app-service-security.png#lightbox)
+[ ![A screenshot showing how to find Docker registry credentials.](azure/media/configure-app-service-security.png) ](azure/media/configure-app-service-security.png#lightbox)

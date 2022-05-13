@@ -19,6 +19,8 @@ A project provides a repository for source code and a place for users to plan, t
 
 When you create your project, a team of the same name is automatically created. This is sufficient for small teams. However, for enterprise-level organizations, it may be necessary to scale up, to create more teams and projects. These additions can be created within the single account or collection.
 
+For more information, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+
 ---
 :::row:::
    :::column span="2":::
@@ -133,8 +135,8 @@ To enable this feature, see [Manage or enable features](../../project/navigation
  
 ### Limit visibility within people pickers
 
-For organizations that manage users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those users and groups added to your project. People pickers support the following Azure DevOps functions: 
-- Selection of a user identity from a work tracking identity field such as **Assigned to**  
+Organizations that manage users and groups using Azure Active Directory (Azure AD) can use people pickers, which support searching all users and groups added to Azure AD, not just those users and groups added to your project. People pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**  
 - Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
 - Selection of a user or group using **@mention** from a wiki page 
 
@@ -145,7 +147,6 @@ As shown in the following image, you  start entering a user in the people picker
 
 > [!WARNING]   
 > When the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility and collaboration to specific projects** preview feature for the organization.  
-
 
 Users and groups who are added to the **Project-scoped users** group can only see and select users and groups in the project they're connected to from a people picker. To scope people pickers for all project members, see [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection). 
 

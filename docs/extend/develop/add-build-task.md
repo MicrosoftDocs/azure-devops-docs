@@ -114,20 +114,20 @@ npm install azure-pipelines-task-lib --save
    npm install @types/mocha --save-dev
    ```
 
-#### Choose typescript version
+#### Choose TypeScript version
 
-Tasks can use typescript versions 2.3.4 or 4.0.2. 
+Tasks can use TypeScript versions 2.3.4 or 4.0.2. 
 
 >[!NOTE]
 >To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment.
 
-You can install the chosen typescript version using this command:
+You can install the chosen TypeScript version using this command:
 
 ```
 npm install typescript@4.0.2 -g --save-dev
 ```
 
-If you skip this step, typescript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
 
 
 #### Create tsconfig.json compiler options

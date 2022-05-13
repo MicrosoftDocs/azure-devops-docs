@@ -173,12 +173,12 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: March 2022
+  - name: April 2022
     href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: March 2022
+    href: docswhatsnew/azure-devops-docs-2022-03.md
   - name: February 2022
     href: docswhatsnew/azure-devops-docs-2022-02.md
-  - name: January 2022
-    href: docswhatsnew/azure-devops-docs-2022-01.md
 - name: Azure Boards
   items:
   - name: "2022"
@@ -466,6 +466,8 @@
   items:
   - name: "2022"
     items:
+    - name: May 4
+      href: 2022/artifacts/sprint-203-update.md
     - name: February 28
       href: 2022/artifacts/sprint-200-update.md
     expanded: false

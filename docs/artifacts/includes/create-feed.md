@@ -9,17 +9,12 @@ ms.date: 02/14/2022
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Artifacts**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Navigate to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
-
-1. Select **Create Feed**.
+1. Select **Artifacts**, and then select **Create Feed**.
 
    > [!div class="mx-imgBorder"] 
    > ![Create a feed button](../media/new-feed-button-azure-devops-newnav.png)
 
-1. Give your feed a **Name** and choose its **visibility**, **upstream sources**, and **scope** settings.
+1. Give your feed a **Name** and choose its **visibility** (who can view packages in this feed), **upstream sources**, and **scope** (project-scoped or organization-scoped) settings.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)

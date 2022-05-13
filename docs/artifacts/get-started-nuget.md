@@ -1,6 +1,6 @@
 ---
-title: Get started with NuGet packages
-description: Use Azure Artifacts to publish and consume NuGet packages
+title: Get started with NuGet packages and Azure Artifacts
+description: Use Azure Artifacts to publish and download NuGet packages to and from Artifacts feeds
 ms.technology: devops-artifacts
 ms.custom: contperf-fy21q3
 ms.topic: quickstart
@@ -16,6 +16,14 @@ monikerRange: '<= azure-devops'
 
 Azure Artifacts enables developers to publish, and download NuGet packages from different sources such as feeds and public registries. Artifact feeds can be private to share your packages with your team and specific users, or public to share them publicly with anyone on the internet.
 
+In this article, you'll learn:
+
+> [!div class="checklist"]    
+> * How to create a new feed  
+> * How to set up your project and connect to your feed  
+> * How to publish NuGet packages to your feed
+> * How to download NuGet packages from your feed  
+
 ## Prerequisites
 
 - An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
@@ -23,7 +31,7 @@ Azure Artifacts enables developers to publish, and download NuGet packages from 
 
 ## Create a feed
 
-You can create two types of feeds: project-scoped and organization-scoped feeds. All public feeds are scoped to their hosting project and they inherit its visibility settings.
+You can create [two types of feeds](./feeds/project-scoped-feeds.md#project-scoped-vs-organization-scoped-feeds): project-scoped and organization-scoped feeds. All public feeds are scoped to their hosting project and they inherit its visibility settings.
 
 [!INCLUDE [](includes/create-feed.md)]
 
@@ -41,10 +49,10 @@ You can create two types of feeds: project-scoped and organization-scoped feeds.
 
     :::image type="content" source="./media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** and follow the instructions to install the prerequisites.
+1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** and follow the instructions to:
 
-    1. Download the [latest NuGet version](https://www.nuget.org/downloads).
-    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+    1. Install the [latest NuGet version](https://www.nuget.org/downloads).
+    1. Install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
 1. Follow the instructions in the **Project setup** to add a nuget .config file.
 
@@ -68,24 +76,22 @@ You can create two types of feeds: project-scoped and organization-scoped feeds.
 
 ::: moniker-end
 
-## Install and publish a sample NuGet package  
+## Publish NuGet packages  
 
-If you don't have a NuGet package but want to try publishing NuGet packages to your feed, you can install the _HelloWorld_ sample package.
+Run the following command in an elevated command prompt window to set up your nuget.config file and publish your NuGet package to your feed. See [nuget sources](/nuget/reference/cli-reference/cli-ref-sources), and [nuget push](/nuget/reference/cli-reference/cli-ref-push) for more details:
 
-1. Install the sample NuGet package:
+```Command
+nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
+nuget push -Source <SourceName> -ApiKey key <PackagePath>
+```
 
-   ```Command
-   nuget install HelloWorld -ExcludeVersion
-   ```
+If you don't have a NuGet package but want to try publishing packages to your feed, you can install the _HelloWorld_ sample package as follows:
+   
+```Command
+nuget install HelloWorld -ExcludeVersion
+```
 
-1. Set up your nuget.config file and publish your package to your feed:
-
-   ```Command
-   nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>
-   nuget push -Source <SourceName> -ApiKey key <PackagePath> #example:(.\Get-Hello.1.0.0.nupkg)>
-   ```
-
-## Download NuGet packages with Visual Studio
+## Download NuGet packages
 
 [!INCLUDE [](includes/nuget/consume.md)]
 

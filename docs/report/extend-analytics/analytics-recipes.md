@@ -27,7 +27,7 @@ For prerequisites and other information for getting started, see [Query your wor
 ## Retrieve work item history
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemRevisions?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItemRevisions?
   $filter=WorkItemId eq {Id}
   &$select=WorkItemId, Title, State
 ```
@@ -38,7 +38,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 ## Retrieve all work items for a given Iteration Path 
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
   $filter=Iteration/IterationPath eq '{iteration path}'
   &$select=WorkItemId, Title, State
 ```
@@ -48,7 +48,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 ## Retrieve all work items under a given Area Path 
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
   $filter=Area/AreaPath eq '{area path}'
   &$select=WorkItemId, Title, State
 ```
@@ -57,7 +57,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ## Get the count of work items in each project 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
@@ -68,7 +68,7 @@ This query will fail when the user doesn't have access to all the projects. Read
 You can retrieve all work items for a given iteration that fall between the first day of the iteration and the last day of the iteration. Here, your query is constrained by data contained within the work tracking data.
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
   $filter=Iteration/IterationPath eq '{iteration path}' 
     and ChangedDate ge Iteration/StartDate 
     and ChangedDate le Iteration/EndDate
@@ -84,7 +84,7 @@ From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field 
 Following this format keeps it simple.
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
   $filter=Tags/any(d:d/TagName eq '{tag name}')
   &$select=WorkItemId, Title, State
 ```
@@ -94,7 +94,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 ## Retrieve all work items for a specific team 
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
   $filter=Teams/any(d:d/TeamName eq '{team name}')
   &$select=WorkItemId, Title, State
 ```
@@ -106,7 +106,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 This query is similar to a Work Item query that uses the **Was Ever** operator.  
 
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
   $filter=WorkItemType eq '{Type}'
      and Revisions/any(r:r/ResolvedBy/UserName eq '{User}')
 ```
