@@ -6,8 +6,8 @@ description: Requirements for consistency in labeling objects like organizations
 ms.technology: devops-settings
 ms.topic: conceptual
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 02/28/2022
 ---
