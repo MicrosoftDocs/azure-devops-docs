@@ -5,8 +5,8 @@ ms.custom: seodec18
 description: Change picture, set preferred email, or other user preferences from your Azure DevOps profile. 
 ms.technology: devops-settings
 ms.assetid: 
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/04/2022
