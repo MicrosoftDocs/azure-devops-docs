@@ -69,6 +69,8 @@ Enable one or more of the following settings. Enabling these settings are recomm
 - **Limit job authorization scope to current project for non-release pipelines** - This setting applies to YAML pipelines and classic build pipelines, and does not apply to [classic release pipelines](../release/index.md).
 - **Limit job authorization scope to current project for release pipelines** - This setting applies to [classic release pipelines](../release/index.md) only.
 
+
+
 :::moniker-end
 
 ::: moniker range=">=azure-devops-2020"
@@ -172,10 +174,16 @@ In addition to the job authorization scope settings described in the previous se
 
 Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
 
+
 For more information, see [Azure Repos Git repositories - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
 
 > [!IMPORTANT]
 > **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
+
+### Protect access to repositories in YAML pipelines
+In addition to the job authorization scope settings described in the previous section, For the YAML pipelines provides a **Protect access to repositories in YAML pipelines** setting.
+
+YAML Pipelines can access any Azure DevOps repositories in authorized projects unless **Protect access to repositories in YAML pipelines** is disabled. With this option enabled, you can reduce the scope of access for all yanml pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
 
 :::moniker-end
 
