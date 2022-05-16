@@ -2,7 +2,7 @@
 title: Use Azure Key Vault secrets in Azure Pipelines
 description: How to create Azure Key vaults, store secrets, and use those secrets in your Azure Pipelines
 ms.topic: tutorial
-ms.date: 10/14/2021
+ms.date: 05/16/2022
 ms.custom: contperf-fy21q3, devx-track-azurecli
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
@@ -12,32 +12,24 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-> [!NOTE]
-> This article will guide you through working with Azure key vault in your pipeline. if you want to set secret variables or reference variable groups, see [Define variables](../process/variables.md#secret-variables) for more details.
+Azure Key Vault enables developers to securely store and manage secrets such as API keys, credentials or certificates. Azure Key Vault service supports two types of containers: vaults and managed HSM (hardware security module) pools. Vaults support storing software and HSM-backed keys, secrets, and certificates, while managed HSM pools only support HSM-backed keys.
 
-Azure Key Vault allows users to securely store, manage, and access sensitive information. Secrets can be API keys, credentials, certificates, etc.
-
-Azure Key Vault service supports two types of containers: vaults and managed HSM (hardware security module) pools. Vaults support storing software and HSM-backed keys, secrets, and certificates, while managed HSM pools only support HSM-backed keys.
- 
 In this tutorial, you will learn how to:
 
 > [!div class="checklist"]
+>
 > * Create an Azure Key Vault using Azure CLI
-> * Add a secret and configure access to Azure key vault 
+> * Add a secret and configure access to Azure key vault
 > * Use secrets in your pipeline
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md). 
-
-<a name="creating-azure-key-vault"></a>
+* An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md).
+* An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
 
 ## Create an Azure Key Vault
 
-Azure key vaults can be created and managed through the Azure portal or Azure CLI. We will use Azure CLI in this tutorial to create our Azure Key vault.
-
 [!INCLUDE [include](../ecosystems/includes/sign-in-azure-cli.md)]
-
 
 1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
 
@@ -45,7 +37,7 @@ Azure key vaults can be created and managed through the Azure portal or Azure CL
     az account set --subscription <your_subscription_name_or_ID>
     ```
 
-1. Run the following command to set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
+1. Set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
 
     ```azurecli
     az config set defaults.location=<your_region>
@@ -57,13 +49,13 @@ Azure key vaults can be created and managed through the Azure portal or Azure CL
     az config set defaults.location=westus2
     ```
 
-1. Run the following command to create a new resource group. A resource group is a container that holds related resources for an Azure solution.
+1. Create a new resource group. A resource group is a container that holds related resources for an Azure solution.
 
     ```azurecli
     az group create --name <your-resource-group>
     ```
-   
-1. Run the following command to create a new key vault.
+
+1. Create a new key vault.
 
     ```azurecli
     az keyvault create \
@@ -71,7 +63,7 @@ Azure key vaults can be created and managed through the Azure portal or Azure CL
       --resource-group <your-resource-group>
     ```
 
-1. Run the following command to create a new secret in your key vault. Secrets are stored as a key value pair. In the example below, *Password* is the key and *mysecretpassword* is the value. 
+1. Create a new secret in your Azure key vault.
 
     ```azurecli
     az keyvault secret set \
