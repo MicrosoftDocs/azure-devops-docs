@@ -67,7 +67,7 @@ When there's no *.order* file the pages get sorted alphabetically. To revert to 
 
 ## Related articles
 
-- [Provision wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
+- [Set up wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
 - [Create a wiki for your team project](wiki-create-repo.md)
 - [Publish a Git repository to a wiki](publish-repo-to-wiki.md)
 - [Update wiki pages offline](wiki-update-offline.md)

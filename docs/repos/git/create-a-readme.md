@@ -22,7 +22,7 @@ Your readme should speak to the following audiences:
 - Developers that want to build and test your code. Developers are also users.
 - Contributors that want to submit changes to your code. Contributors are both developers and users.
 
-Write your readme in [Markdown](../../project/wiki/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
+Write your readme in [Markdown](../../project/wiki/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to more documentation from your readme.
 
 Here are some great readmes that use this format and speak to all three audiences, for reference and inspiration:
 
@@ -32,7 +32,7 @@ Here are some great readmes that use this format and speak to all three audience
 
 ## Create an intro
 
-Start your readme off with a short explanation describing your project. Add a screenshot or animated GIF in your intro if your project has a user interface. 
+Start off your readme with a short explanation describing your project. Add a screenshot or animated GIF in your intro if your project has a user interface. 
 If your code relies on another application or library, make sure to state those dependencies in the intro or right below it. 
 Apps and tools that run only on specific platforms should have the supported operating system versions noted in this section of the readme.
 
@@ -60,7 +60,7 @@ Good test cases also serve as samples developers can use to build their own test
 
 ## Help users contribute
 
-The last section of your readme helps users and developers get involved to report problems and suggest ideas to make your code better.
+The last section of your readme helps users and developers to get involved in reporting problems and suggest ideas to make your code better.
 Users should be linked to channels where they can open up bugs, request features, or get help using your code.   
 
 Developers need to know what rules they need to follow to contribute changes, such as coding/testing guidelines and pull request requirements.
