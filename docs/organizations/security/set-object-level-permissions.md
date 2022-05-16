@@ -269,19 +269,11 @@ The following table provides information about setting permissions at the object
 - Test plans, test suites, test cases, and other test objects are managed similarly to work items. This is because they represent test-specific work item types, as discussed in [Test objects and terms](/azure/devops/organizations/security/set-permissions-access-test).
 - You can manage test-level permissions through project-level settings or through Area Path object-level settings. For more information, see [Set permissions and access for testing](/azure/devops/organizations/security/set-permissions-access-test).
 
+::: moniker range="azure-devops" 
+
 ## Set object permissions through the command line
 
-::: moniker range=">= azure-devops-2020" 
-
 You can use the [az devops security command line tool](manage-tokens-namespaces.md) to view and manage permissions.
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019" 
-
-You can use the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd).
-
-::: moniker-end
 
 Some more granular permissions and permissions for select objects and features can only be managed through the command line. For example:
 
@@ -291,6 +283,8 @@ Some more granular permissions and permissions for select objects and features c
 - View delivery plans through the `Plans` namespace
 
 For more information about namespaces, see [Security namespace and permission reference](namespace-reference.md).
+
+::: moniker-end
 
 ## Set permissions for object notifications
 

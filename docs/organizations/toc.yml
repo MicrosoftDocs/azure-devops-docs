@@ -20,6 +20,8 @@
   - name: Set user preferences
     displayName: profile, settings, picture, display name, email, directory, locale
     href: ./settings/set-your-preferences.md
+  - name: Configure your backlog view
+    href: ../boards/backlogs/configure-your-backlog-view.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage or enable features
     displayName: turn, on, off, organization
     href: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -113,10 +115,10 @@
   items:
   - name: Install extensions
     displayName: Marketplace, organization, features, private
-    href: ../marketplace/install-extension.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../marketplace/install-extension.md 
   - name: Request and approve extensions
     displayName: contributor, administrator, permission, assign
-    href: ../marketplace/request-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../marketplace/request-extensions.md 
 - name: Reference
   items:
   - name: Naming restrictions

@@ -33,7 +33,7 @@
     displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cient
   - name: Area & iteration paths
     displayName: classification nodes, iteration paths, reserved names, special characters
-    href: ../organizations/settings/about-areas-iterations.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: Workflow states & categories
     displayName: auto complete, pull requests
     href: ./work-items/workflow-and-state-categories.md
@@ -42,7 +42,7 @@
     href: ./queries/link-work-items-support-traceability.md
   - name: Link types
     displayName: work, hyperlink, external, github, remote
-    href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json
+    href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: Work tracking limits
     displayName: customize, migrate, import
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
@@ -76,6 +76,8 @@
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md
     displayname: default, correct, Kanban, custom
+  - name: Configure your backlog view
+    href: backlogs/configure-your-backlog-view.md
   - name: Change column options
     displayName: sort, persistence
     href: backlogs/set-column-options.md

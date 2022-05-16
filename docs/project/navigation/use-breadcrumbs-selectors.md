@@ -2,7 +2,7 @@
 title: Use breadcrumbs and selectors 
 titleSuffix: Azure DevOps
 description: Navigate to pages and artifacts using breadcrumbs or selectors in the web portal for Azure DevOps
-ms.custom: Navigation
+ms.custom: "navigation, cross-project, cross-service"
 ms.technology: devops-collab
 ms.topic: how-to
 ms.author: kaelli

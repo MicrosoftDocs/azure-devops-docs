@@ -22,19 +22,15 @@ landingContent:
   # Card (optional)
   - title: Discover & manage Marketplace extensions
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: About Azure DevOps Marketplace
             url: ../marketplace/overview.md
       - linkListType: quickstart
         links:
-          - text: Discover extensions
-            url: ../marketplace/overview.md
           - text: Request extensions
             url: ../marketplace/request-extensions.md
           - text: Install extensions
-            url: ../marketplace/install-extension.md
-          - text: Assign paid extensions
             url: ../marketplace/install-extension.md
   - title: Develop extensions
     linkLists:

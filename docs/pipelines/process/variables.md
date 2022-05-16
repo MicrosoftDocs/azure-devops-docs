@@ -54,9 +54,11 @@ Environment variables are specific to the operating system you are using. They a
 
 System and user-defined variables also get injected as environment variables for your platform.  When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable name `any.variable` becomes the variable name `$ANY_VARIABLE`.
 
+ There there are [variable naming restrictions](#variable-naming-restrictions) for environment variables (example: you can't use `secret` at the start of a variable name). 
+
 ## Variable naming restrictions
 
-User-defined variables can consist of letters, numbers, `.`, and `_` characters. Don't use variable prefixes that are reserved by the system. These are: `endpoint`, `input`, `secret`, `path`, and `securefile`. Any variable that begins with one of these strings (regardless of capitalization) will not be available to your tasks and scripts. 
+User-defined and environment variables can consist of letters, numbers, `.`, and `_` characters. Don't use variable prefixes that are reserved by the system. These are: `endpoint`, `input`, `secret`, `path`, and `securefile`. Any variable that begins with one of these strings (regardless of capitalization) will not be available to your tasks and scripts. 
 
 ## Understand variable syntax
 
@@ -269,7 +271,7 @@ To use a variable as an input to a task, wrap it in `$()`.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range=">=azure-devops"
 
 Using the Azure DevOps CLI, you can create and update variables for the pipeline runs in your project. You can also delete the variables if you no longer need them.
 
@@ -533,7 +535,7 @@ Each task that needs to use the secret as an environment variable does remapping
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 To set secret variables using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 
@@ -713,7 +715,7 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to usi
 
 * * *
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## List variables
 
@@ -1122,7 +1124,7 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 To choose which variables are allowed to be set at queue time using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 

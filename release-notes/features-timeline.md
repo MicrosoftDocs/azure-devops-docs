@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 4/20/2022
+ms.date: 5/6/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,15 +35,19 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="4"><strong>2022 Q1</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
-</tr>
 <tr><td rowspan="2"><strong>2022 Q2</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Boards</td><td>Future</td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944358 data-raw-source="[Improvements to Show More Items behavior on Kanban board](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944358)">Improvements to "Show More Items" behavior on Kanban board</a></td><td>Boards</td><td>Future</td>
+    </tr>
+<tr><td rowspan="3"><strong>2022 Q3</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032 data-raw-source="[Adding Assigned To avatar to child items on cards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032)">Adding Assigned To avatar to child items on cards</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313 data-raw-source="[Filter to work item history](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313)">Filter to work item history</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
+</tr>
+<tr><td rowspan="3"><strong>2022 Q4</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
 <tr><td rowspan="16"><strong>Future</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>General</td><td>N/A</td>
@@ -59,7 +63,6 @@ Each feature is linked to the public roadmap project where you can learn more ab
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289 data-raw-source="[Elastic self-hosted pools (Kubernetes)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289)">Elastic self-hosted pools (Kubernetes)</a></td><td>Pipelines</td><td>TBD</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423" data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Repos</td><td>Future</td> </tr>
    </tr>
@@ -80,6 +83,10 @@ This list includes features that are currently in preview. The "Released" column
         </tr>
     </thead>
     <tbody>
+<tr><td rowspan="2"><strong>2022 Q2</strong></td>
+    <td><a href=https://docs.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview data-raw-source="[New Boards Hubs](https://docs.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)">New Boards Hubs</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1943980 data-raw-source="[Ability to query for work items by Parent Id ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1943980)">Ability to query for work items by Parent Id </a></td><td>Boards</td><td>Future</td></tr>
+</tr>
 <tr><td rowspan="1"><strong>2021 Q4</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
 </tr>
@@ -115,16 +122,21 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-     <td rowspan="6"><a href="2022/sprint-202-update.md" data-raw-source="[20 April 2022](2022/sprint-202-update.md)"> 20 April 2022</a></td> 
+    <td rowspan="4"><a href="2022/sprint-203-update.md" data-raw-source="[4 May 2022](2022/sprint-203-update.md)"> 4 May 2022</a></td> 
+    <td>Query by Parent Id (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Move to column position on Kanban Board</td><td>Boards</td><td>Future</td></tr>
+    <td>Added "Will not Fix" value to Bug reason field</td><td>Boards</td><td>Future</td></tr>
+    <td>Upstream cross-organization packages</td><td>Artifacts</td><td>Future</td></tr>
+</tr>
+    <td rowspan="6"><a href="2022/sprint-202-update.md" data-raw-source="[20 April 2022](2022/sprint-202-update.md)"> 20 April 2022</a></td> 
     <td>Auditing is now an opt-in feature for your organization</td><td>General</td><td>Future</td></tr>
     <td>Fixed looping login issue due to incorrectly configured IP conditional access policies</td><td>General</td><td>Future</td></tr>
     <td>Guest users will only see public user data</td><td>General</td><td>Future</td></tr>
     <td>New Boards Hub now available in public preview</td><td>Boards</td><td>Future</td></tr>
     <td>Extend YAML pipelines template to pass stage, job, and deployment context information</td><td>Pipelines</td><td>Future</td></tr>
     <td>Updated retirement date for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
-</tr> 
 </tr>
-     <td rowspan="4"><a href="2022/sprint-201-update.md" data-raw-source="[29 March 2022](2022/sprint-201-update.md)">29 March 2022</a></td> 
+    <td rowspan="4"><a href="2022/sprint-201-update.md" data-raw-source="[29 March 2022](2022/sprint-201-update.md)">29 March 2022</a></td> 
     <td>Remove the ability to download a deleted attachment from work item history</td><td>Boards</td><td>Future</td></tr>
     <td>New extension points for Pipelines details view</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improved migration to Azure DevOps Services</td><td>Pipelines</td><td>Future</td></tr>

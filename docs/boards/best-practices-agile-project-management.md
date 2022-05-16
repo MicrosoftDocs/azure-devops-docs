@@ -4,6 +4,7 @@ titleSuffix: Azure Boards
 description: Get started guide for project managers new to Azure Boards to plan and track their projects  
 ms.technology: devops-agile
 ms.topic: best-practice
+ms.custom: cross-project  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops' 
