@@ -55,7 +55,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 ```
 * * *
 
-## Build and publish a Docker image to an Azure Container Registry
+## Build and publish a Docker image to Azure Container Registry
 
 To complete this section successfully, you must have an [Azure Container Registry](#prerequisites). Refer to the prerequisites section for details. 
  
@@ -122,29 +122,28 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
 
-## Create your Web App for Containers
+## Create a Web App for Containers
 
-1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
+1. Navigate to [Azure portal](https://portal.azure.com).
 
-1. In the Azure portal, choose **Create a resource** > **Containers**, and then choose **Web App for Containers**. 
+1. Select **Create a resource** > **Containers**, and then choose **Web App for Containers**.
 
     :::image type="content" source="media/create-web-app-container.png" alt-text="Create a web app for containers resource":::
 
-1. Enter a name for your new web app, and select or create a new Resource Group. Select **Linux** for the **Operating System**.
+1. Enter a name for your new web app, and create a new Resource Group. Select **Linux** for the **Operating System**.
 
     :::image type="content" source="media/configure-web-app.png" alt-text="Configure the web app":::
 
-1. In the **SKU and Size** section, select **Change** to specify the pricing tier. Select the **Dev/Test** plan, and then choose the **F1 Free plan**. Select **Apply** when you are done.
+1. In the **SKU and Size** section, select **Change size** to specify the pricing tier. Select the **Dev/Test** plan, and then choose the **F1 Free plan**. Select **Apply** when you are done.
 
     :::image type="content" source="media/pricing-tier.png" alt-text="Change pricing tier to free":::
 
 1. Select **Review and create**. Review your configuration, and select **Create** when you are done.
 
-## Deploy with the Azure Web App for Container task
+## Deploy to Web App for Containers
 
 # [YAML](#tab/yaml/)
 
-Deploy to an Azure App custom container with the [Azure Web App for Container task](../../tasks/deploy/azure-rm-web-app-containers.md)
 ```yaml
 
 trigger:
@@ -193,9 +192,6 @@ stages:
         appName: $(appName)
         imageName: $(containerRegistry)/$(imageRepository):$(tag)
 ```
-
-The **Azure Web App on Container** task will pull the appropriate Docker image corresponding to the BuildId from the repository specified, and then deploy the image to your Azure App Service on Linux.
-
 
 # [Classic](#tab/classic/)
 
