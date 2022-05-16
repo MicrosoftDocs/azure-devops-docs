@@ -28,21 +28,34 @@ You set secret variables the same way for YAML and Classic.
 
 #### [YAML](#tab/yaml/)
 
-You'll need to map secret variable as environment variables to reference them in YAML pipelines. In this example, there are two secret variables defined in the UI, `SecretOne` and `SecretTwo`. 
+You'll need to map secret variable as environment variables to reference them in YAML pipelines. In this example, there are two secret variables defined in the UI, `SecretOne` and `SecretTwo`. The value of `SecretOne` is `foo` and the value of `SecretTwo` is `bar`. 
 
 ```yml
 steps:
 - powershell: |
-    Write-Host "My first secret variable: $env:SECRET_ONE"
+      Write-Host "My first secret variable is $env:FOO_ONE"
+      $env:FOO_ONE -eq "foo"
   env:
-    SECRET_ONE: $(SecretOne) 
-
+    FOO_ONE: $(SecretOne)
 - bash: |
-    echo "My second secret variable: $MY_MAPPED_ENV_VAR"
+    echo "My second secret variable: $FOO_TWO"
+    if [ "$FOO_TWO" = "bar" ]; then
+        echo "Strings are equal."
+    else
+        echo "Strings are not equal."
+    fi
   env:
-    SECRET_TWO: $(SecretTwo) 
+    FOO_TWO: $(SecretTwo) 
 ```
 
+The pipeline outputs:
+
+```
+My first secret variable is ***
+True
+My second secret variable: ***
+Strings are equal.
+```
 For a more detailed example, see [Define variables](variables.md#secret-variables).
 
 
