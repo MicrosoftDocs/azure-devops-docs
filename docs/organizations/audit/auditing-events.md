@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 02/07/2022
+ms.date: 05/11/2022
 ---
 
 # Auditing events list
@@ -16,13 +16,16 @@ ms.date: 02/07/2022
 > [!NOTE]
 > Auditing is still in public preview.
 
-The tables below describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature. 
-* Any given event will belong to a specific Product Area. The full list of Areas are given in the [Area table](#areas).
-* An event has a Category field that reflects the type of action performed during the event. The list of possible action types can be seen in the [Categories table](#categories).
-* The list of all possible actions are grouped in table by their Product Area can be found in the [Actions section](#actions).
+The following tables describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature.
+
+[!INCLUDE [important-backed-by-azure-active-directory](includes/important-backed-by-azure-active-directory.md)]
+
+* Any given event belongs to a specific *Product Area*. The full list of areas is in the [Area table](#areas).
+* An event has a *Category* field that reflects the type of action performed during the event. The list of possible action types is in the [Categories table](#categories).
+* The list of all possible actions is grouped by *Product Area* and can be found in the [Actions section](#actions).
 
 > [!Note]
-> We try our best to keep adding new actions regularly. If you would like to see an event that is not currently in the tables below, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
+> We try our best to keep adding new actions regularly. If you'd like to see an event that isn't currently in the following tables, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
 ## Areas
 
@@ -44,7 +47,7 @@ The tables below describe the type of events (or actions) that are available for
 | [Process](#process)        | Create, modify, and delete attributes for processes (portfolio backlogs, controls, fields, groups, lists, pages, processes, rules, states, control settings, work items, etc.) in Azure Boards.           |
 | [Project](#project)        | Create, modify, change visibility of, delete, and restore projects in Azure Boards. Create, modify, and delete Area paths. |
 | [Release](#release)        | Create, modify, and delete releases and release pipelines in Azure Pipelines. Track deployments and deployment approvals.      |
-| [Token](#token)            | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events are not currently logged. |
+| [Token](#token)            | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events aren't currently logged. |
 
 ## Categories
 
@@ -68,7 +71,7 @@ The tables below describe the type of events (or actions) that are available for
 |-----------|----------|----------|
 |AuditLog.AccessLog |	Access |	Accessed the audit log |
 |AuditLog.DownloadLog |	Access |	Downloaded a {Format} copy of the audit log |
-|AuditLog.StreamCreated |	Create |	Stream for {ConsumerType:consumerType} was setup to send auditing events to {displayName}. |
+|AuditLog.StreamCreated |	Create |	Stream for {ConsumerType:consumerType} was set up to send auditing events to {displayName}. |
 |AuditLog.StreamDeleted	| Remove |	Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was deleted. |
 |AuditLog.StreamDisabledBySystem	| Modify |	Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was disabled by the system. |
 |AuditLog.StreamDisabledByUser	| Modify	| Stream for {ConsumerType:consumerType} to send auditing data to {displayName} was disabled. |
@@ -202,8 +205,8 @@ The tables below describe the type of events (or actions) that are available for
 | Pipelines.PipelineRetentionSettingChanged |	Modify |	Pipelines retention "{SettingName}" changed from {OldValue} to {NewValue} in {ProjectName} project |
 | Pipelines.ResourceAuthorizedForPipeline	| Modify |	Successfully authorized {ResourceType} resource {ResourceId} for pipeline id {PipelineId} |
 | Pipelines.ResourceAuthorizedForProject	| Modify |	Successfully authorized {ResourceType} resource {ResourceId} for the project |
-| Pipelines.ResourceNotAuthorizedForPipeline |	Modify |	Did not authorize {ResourceType} resource {ResourceId} for pipeline id {PipelineId}. The resource doesn't exist or the user doesn't have permission |
-| Pipelines.ResourceNotAuthorizedForProject	| Modify |	Did not authorize {ResourceType} resource {ResourceId} for the project. The resource doesn't exist or the user doesn't have permission |
+| Pipelines.ResourceNotAuthorizedForPipeline |	Modify |	Didn't authorize {ResourceType} resource {ResourceId} for pipeline id {PipelineId}. The resource doesn't exist or the user doesn't have permission |
+| Pipelines.ResourceNotAuthorizedForProject	| Modify |	Didn't authorize {ResourceType} resource {ResourceId} for the project. The resource doesn't exist or the user doesn't have permission |
 | Pipelines.ResourceUnauthorizedForPipeline	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for pipeline id {PipelineId} |
 | Pipelines.ResourceUnauthorizedForProject	| Modify |	Successfully unauthorized {ResourceType} resource {ResourceId} for the project |
 | Pipelines.RunRetained	| Modify |	Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease id {RetentionLeaseId} to {RetentionOwnerId} |

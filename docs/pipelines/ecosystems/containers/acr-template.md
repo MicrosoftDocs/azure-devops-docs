@@ -36,15 +36,18 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 
     :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Azure Cloud Shell button":::
 
-1. Run the following commands to create a resource group and an Azure Container Registry using the Azure CLI
+1. Run the following commands to create a resource group and an Azure Container Registry using the Azure CLI.
 
     ```azurecli-interactive
     # Create a resource group
     az group create --name myapp-rg --location eastus
     
     # Create a container registry
-    az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
+    az acr create --resource-group myapp-rg --name mycontainerregistry --sku Basic
     ```
+
+> [!NOTE]
+> A Container Registry name must be lowercase.
 
 You can also use the Azure portal web UI to create your Azure Container Registry. See the [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) for details.
 

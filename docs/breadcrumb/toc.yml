@@ -49,9 +49,18 @@
     - name: Start using Azure DevOps
       tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/what-is-azure-devops
+    - name: Web portal navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
+    - name: Web portal navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
+    - name: Status & security 
+      tocHref: /azure/devops/user-guide/
+      topicHref: /azure/devops/user-guide/service-status-info
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
@@ -109,6 +118,22 @@
     - name: witadmin command line
       tocHref: /azure/devops/reference/witadmin/ 
       topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
+  - name: Marketplace & extensibility
+    tocHref: /azure/devops/marketplace-extensibility/
+    topicHref: /azure/devops/marketplace-extensibility/
+    items: 
+    - name: Install extensions
+      tocHref: /azure/devops/marketplace/
+      topicHref: /azure/devops/marketplace/overview
+    - name: Develop extensions
+      tocHref: /azure/devops/extend/
+      topicHref: /azure/devops/extend/overview
+    - name: Integrate applications
+      tocHref: /azure/devops/integrate/
+      topicHref: /azure/devops/integrate/index
+    - name: Service hooks
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/service-hooks/overview
   - name: Cross-service, Azure, & GitHub Integration
     tocHref: /azure/devops/cross-service/
     topicHref: /azure/devops/cross-service/index
@@ -132,22 +157,6 @@
     - name: Navigation
       tocHref: /azure/devops/project/navigation/
       topicHref: /azure/devops/project/navigation/index
-  - name: Marketplace & Extensibility
-    tocHref: /azure/devops/marketplace-extensibility/
-    topicHref: /azure/devops/marketplace-extensibility/index
-    items: 
-    - name: Discover & Manage Extensions
-      tocHref: /azure/devops/marketplace/
-      topicHref: /azure/devops/marketplace/overview
-    - name: Develop Extensions
-      tocHref: /azure/devops/extend/
-      topicHref: /azure/devops/extend/overview
-    - name: Integrate applications
-      tocHref: /azure/devops/integrate/
-      topicHref: /azure/devops/integrate/index
-    - name: Service hooks
-      tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/service-hooks/overview
   - name: Developer Resources
     tocHref: /azure/devops/dev-resources/
     topicHref: /azure/devops/dev-resources/index

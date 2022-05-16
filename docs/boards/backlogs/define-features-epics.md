@@ -270,8 +270,9 @@ And you can add features to epics and backlog items to features.
 > [!TIP]  
 > You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the Kanban board for Features. And, you can add child features from the Epic board. For details, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md). Also, you can quickly parent or reparent children from a backlog using the mapping pane as described in [Organize your backlog, map child work items to parents](organize-backlog.md).
 
-
 ::: moniker range=">= azure-devops-2019"
+
+Each team member has several tools to configure their backlog view: **Expand/Collapse one level**, **Column Options**, **Backlog level selector**, **View options**, and **Filter** toolbar. Options set for each backlog level are distinct and persist until changed. For tips on setting these option and how to prioritize child items of portfolio backlog items, see [Configure your backlog view](../backlogs/configure-your-backlog-view.md). 
 
 To add a work item, choose the ![plus-icon](../../media/icons/blue-add-icon.png) and choose from the options provided.
 
@@ -327,7 +328,8 @@ Portfolio backlogs are a great way to organize your project plan and provide vis
 
 ## Related articles  
 
--  [Azure Boards FAQs](../faqs.yml) 
+- [Configure your backlog view](configure-your-backlog-view.md)
+- [Azure Boards FAQs](../faqs.yml) 
 - [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  

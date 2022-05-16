@@ -1,51 +1,42 @@
 ---
 title: Get started with Maven packages
-description: Quickly start publishing and consuming Maven Artifacts to/from your feed
+description: learn how to publish and download Maven artifacts
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.date: 02/18/2022
+ms.date: 05/06/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Get started with Maven feeds and Artifacts
+# Get started with Maven packages and Azure Artifacts
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-This quickstart will guide you through setting up Maven to publish and consume Artifacts from your feed.
-
-::: moniker range="tfs-2018"
-
-This guide assumes you've already set up Azure Artifacts. See [Start using Azure Artifacts](start-using-azure-artifacts.md) to learn how to license the extension.
-
-> [!NOTE]
-> Azure Artifacts is an extension that comes pre-installed in TFS 2017 or newer (Maven is only available in 2018 or newer), if it was removed from your organization, you can install it from the [Visual studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
-
-::: moniker-end
+This quickstart will guide you through setting up your Maven project to connect to Azure Artifacts feeds and publish and download your Maven packages.
 
 ### Prerequisites
 
-1. Apache Maven installed. You can download it from the [Apache Maven project](https://maven.apache.org/download.cgi).
-
-2. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
-
-## Create a feed
-
-_Already have a feed?_ [Skip to the next step](#set-up-authentication).
-
-[!INCLUDE [](includes/create-feed.md)]
+- An Azure DevOps organization. [Create an organization](../organizations/accounts/create-organization.md), if you don't have one already.
+- [Install Maven Apache](https://maven.apache.org/download.cgi).
+- An Azure Artifacts feed. [Create a feed](./concepts/feeds.md#create-public-feeds.) if you don't have one already.
 
 ## Set up authentication
 
 [!INCLUDE [](includes/maven/pom-and-settings.md)]
 
-## Publish an artifact
+> [!TIP]
+> If you are using [Maven task](../pipelines/tasks/build/maven.md), set the `mavenAuthenticateFeed` argument to true to automatically authenticate with your Maven feed.
+
+## Publish artifacts
 
 [!INCLUDE [](includes/maven/publish.md)]
 
-> [!IMPORTANT]
-> In order to automatically authenticate with your Maven feed, you must set the `mavenAuthenticateFeed` argument to true in the [Maven task](../pipelines/tasks/build/maven.md).
-
-## Install an artifact from your feed
+## Install artifacts
 
 [!INCLUDE [](includes/maven/install.md)]
+
+## Related articles
+
+- [Configure permissions](./feeds/feed-permissions.md)
+- [Use feed views to share packages](./feeds/views.md)
+- [Set up upstream sources](./how-to/set-up-upstream-sources.md)

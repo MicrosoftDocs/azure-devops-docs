@@ -2,7 +2,7 @@
 title: Manage preview features
 titleSuffix: Azure DevOps Services
 description: Enable/disable or activate/deactivate features in preview at the user or organization level  
-ms.custom: Navigation
+ms.custom: "navigation, cross-project, cross-service"
 ms.technology: devops-collab
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: kaelli
