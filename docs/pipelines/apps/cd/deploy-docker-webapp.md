@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can build, test, and automatically deploy your web app to a Azure Web App for Containers. In this article, you will learn how to use YAML or Classic pipelines to:
+Using Azure Pipelines, you can build, test, and automatically deploy your web app to Azure Web App for Containers. In this article, you will learn how to use YAML or Classic pipelines to:
 
 > [!div class="checklist"]
 >
@@ -195,7 +195,7 @@ stages:
 
 # [Classic](#tab/classic/)
 
-1. From within your project, select **Pipelines** then **Release**.
+1. From within your project, select **Pipelines**, and then select **Release**.
 
 1. Select **New pipeline** to create a new release pipeline.
 
@@ -228,12 +228,11 @@ stages:
     :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
 ---
 
-## Deploy to a slot
+## Deploy to a deployment slot
 
 # [YAML](#tab/yaml/)
 
-
-You can configure the Azure Web App container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+You can configure the Azure Web App container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers. See [Create staging environments](/azure/app-service/deploy-staging-slots) for more details.
 
 The following YAML snippet shows how to deploy to a staging slot, and then swap to a production slot:
 
@@ -261,7 +260,7 @@ The following YAML snippet shows how to deploy to a staging slot, and then swap 
 You can configure the Azure Web App for container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 Use the option **Deploy to Slot** in the **Azure Web App Container** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
----
+***
 
 ## FAQ
 
@@ -270,3 +269,9 @@ Use the option **Deploy to Slot** in the **Azure Web App Container** task to spe
 A: Navigate to [Azure portal](https://portal.azure.com), and then select your Web App for Containers. Select **Configuration** > **Application settings** and then click to show the value.
 
 [ ![A screenshot showing how to find Docker registry credentials.](azure/media/configure-app-service-security.png) ](azure/media/configure-app-service-security.png#lightbox)
+
+## Related articles
+
+- [Deploy to Azure](../../overview-azure.md)
+- [Use ARM templates](./azure/deploy-arm-template.md)
+- [Define and target environments](../../process/environments.md)
