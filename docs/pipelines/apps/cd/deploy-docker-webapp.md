@@ -1,6 +1,6 @@
 ---
-title: Deploy containerized applications to App Service on Linux
-description: Deploy container base web apps to App Service on Linux
+title: Deploy a web app to Azure Web App for Containers
+description: How to deploy web apps to Azure Web App for Containers
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
@@ -13,17 +13,21 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
+Using Azure Pipelines, you can build, test, and automatically deploy your web app to a Azure Web App for Containers. In this article, you will learn how to use YAML or Classic pipelines to:
 
-YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](../../get-started/key-pipelines-concepts.md).
-
-With Azure Pipelines, you can implement a CI/CD workflow to automatically generate build artifacts and trigger deployment to specific environments. 
+> [!div class="checklist"]
+>
+> - Build and publish a Docker image to Azure Container Registry
+> - Create a Web App for Containers  
+> - Deploy to Azure Web App for Container
+> - Deploy to deployment slots
 
 ## Prerequisites
 
-* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
-* An [Azure Container Registry](/azure/container-registry/container-registry-intro). [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- A GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+- An Azure DevOps organization. [Create an organization](../../../organizations/accounts/create-organization.md), if you don't have one already.
+- An Azure Container Registry. [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
 
 ## Get the code
 
