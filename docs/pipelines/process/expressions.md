@@ -210,17 +210,20 @@ parameters:
  
 steps:
 - script: |
-    json=$(echo '${{ convertToJson(parameters.listOfValues) }}')
+    echo "${MY_JSON}"
+  env:
+    MY_JSON: ${{ convertToJson(parameters.listOfValues) }}
 ```
 
+Script output:
+
 ```json
-# Example output
 {
-  this_is: {
-    a_complex: object,
-    with: [
-      one,
-      two
+  "this_is": {
+    "a_complex": "object",
+    "with": [
+      "one",
+      "two"
     ]
   }
 }
