@@ -74,60 +74,60 @@ In this tutorial, you will learn how to:
 
 ## Create a project
 
-Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will then navigate to `https://dev.azure.com/your-organization-name` and displays your Azure DevOps dashboard.
+1. Sign in to your [Azure DevOps organization](https://dev.azure.com/).
 
-If you don't have any projects in your organization yet, select **Create a project to get started** to create a new project. Otherwise, select the **New project** button in the upper-right corner of the dashboard.
+1. If you don't have any projects in your organization yet, select **Create a project to get started**. Otherwise, select **New project** in the upper-right corner.
 
 ## Create a repo
 
-We will use YAML to create our pipeline but first we need to create a new repo. 
+We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. Go to **Repos**, and then select **Initialize** to initialize a new repo with a README.
+1. Select **Repos**, and then select **Initialize** to initialize a new repo with a README.
 
     :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="Creating the repo":::
 
 ## Create a new pipeline
 
-1. Go to **Pipelines**, and then select **New Pipeline**.
+1. Select **Pipelines**, and then select **New Pipeline**.
 
-1. Select **Azure Repos Git**.
+1. Select **Azure Repos Git** (YAML).
 
     :::image type="content" border="false" source="media/azure-key-vault/create-pipeline.png" alt-text="Creating the pipeline":::
 
-1. Select the repo you created earlier. It should have the same name as your Azure DevOps project.
+1. Select the repository you created in the previous step.
 
-1. Select **Starter pipeline**.
+1. Select the **Starter pipeline** template.
 
-1. The default pipeline will include a few scripts that run echo commands. Those are not needed so we can delete them. Your new YAML file will now look like this:
+1. The default pipeline will include a few scripts that run echo commands. Those are not needed so we can delete them. Your new YAML file should look like this:
 
-    ```
-	trigger:
-	- main
-	
-	pool:
-	  vmImage: 'ubuntu-latest'
-	
-	steps:
+    ```YAML
+    trigger:
+    - main
+    
+    pool:
+        vmImage: 'ubuntu-latest'
+    
+    steps:
     ```
 
 1. Select **Show assistant** to expand the assistant panel. This panel provides convenient and searchable list of pipeline tasks.  
 
     :::image type="content" border="false" source="media/azure-key-vault/show-assistant.png" alt-text="Showing the pipeline assistant":::
 
-1. Search for **vault** and select the [**Azure Key Vault**](../tasks/deploy/azure-key-vault.md) task.
+1. Search for **vault** and select the **Azure Key Vault** task.
 
     :::image type="content" border="false" source="media/azure-key-vault/azure-key-vault-task.png" alt-text="Selecting the Azure Key Vault task":::
 
-1. Select and authorize your Azure subscription then select the Azure key vault task and select **Add** to add it to your pipeline. This task allows the pipeline to connect to your Azure Key Vault and retrieve secrets to use as pipeline variables.
-
-    > [!NOTE]
-    > The **Make secrets available to whole job** feature is not currently supported in Azure DevOps Server 2019 and 2020.
+1. Select your **Azure subscription** and then select **Authorize**. Select your **Key vault** from the dropdown menu, and then select **Add** to add the task to your YAML pipeline.
 
     :::image type="content" border="false" source="media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="Configuring the Azure Key Vault task":::
 
-1. Your YAML file should look something like the following
+    > [!NOTE]
+    > The **Make secrets available to whole job** feature is not supported in Azure DevOps Server 2019 and 2020.
+
+1. Your YAML file should look like the following:
 
     ```YAML
     trigger:
@@ -166,7 +166,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 In order to access our Azure Key Vault, we must first set up a service principal to give access to Azure Pipelines. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
 
-1. Go to [Azure portal](https://azure.microsoft.com/).
+1. Navigate to [Azure portal](https://azure.microsoft.com/).
 
 1. Use the search bar to search for the key vault you created earlier.
 
@@ -180,18 +180,15 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. Select the option to select a service principal and search for the one you created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
     
-1. Select **Add** to create the access policy, then **Save**.
+1. Select **Add** to create the access policy, then select **Save** when you are done.
 
 ## Run and review the pipeline
 
 1. Return to the previous tab where we left off.
 
-1. Select **Save** then **Save** again to commit your changes and trigger the pipeline.
+1. Select **Save**, and then select **Save** again to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
 
-    > [!NOTE]
-    > You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once. 
-
-1. Select the **CmdLine** job to view the logs.
+1. Select the **CmdLine** task to view the logs.
 
     :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="Reviewing the command-line task":::
 
@@ -199,25 +196,14 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
     :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="The pipeline summary":::
 
-1. Under **Job** select the **secret.txt** file to open it.
+1. Select the **secret.txt** artifact to open it.
 
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="Viewing the secret in the artifact":::
 
-1. The text file should contain our secret: *mysecretpassword* from earlier.
+1. The text file should contain our secret: *mysecretpassword*.
 
 > [!WARNING]
 > This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
-
-If you encounter an error indicating that the user or group does not have secrets list permission on key vault, run the following commands to authorize your application to access the key or secret in the Azure Key Vault:
-
-```Command
-$ErrorActionPreference="Stop";
-$Credential = Get-Credential;
-Connect-AzAccount -SubscriptionId <YOUR_SUBSCRIPTION_ID> -Credential $Credential;
-$spn=(Get-AzureRmADServicePrincipal -SPN <YOUR_SERVICE_PRINCIPAL_ID>);
-$spnObjectId=$spn.Id;
-Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
-```
 
 ## Clean up resources
 
