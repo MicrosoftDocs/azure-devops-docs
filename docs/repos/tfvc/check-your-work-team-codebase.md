@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Use the **Pending Changes** page in Team Explorer to check in your code into a new changeset. Press **Ctrl**+**0**, **P** on you keyboard: 
+Use the **Pending Changes** page in Team Explorer to check in your code into a new changeset. Press **Ctrl**+**0**, **P** on your keyboard: 
 
 ![Screenshot shows Pending Changes pane with a comment and Check In button.](media/check-your-work-team-codebase/IC593474.png)
 
@@ -40,7 +40,7 @@ You can also check in as you work in other areas of Visual Studio:
 > [!IMPORTANT]
 > The **Check in** option is not displayed if there are no pending changes to the item selected.
 
-If you don't see pending changes for an item, make sure that it is not already listed as an excluded change.
+If you don't see pending changes for an item, make sure that it isn't already listed as an excluded change.
 Open Team Explorer's **Pending Changes** view and select the **Detected: ..** link under **Excluded Changes**.
 Check the changes to include from the list and select **Promote** to move the excluded changes into the **Included Changes** section.
 These changes can now be checked in.
@@ -76,11 +76,11 @@ One of the following outcomes occurs:
 
   All the included file changes from your workspace along with the comment, check-in notes, and links to related work items are stored on the server as a single [changeset](find-view-changesets.md) on your server.
 
-- Conflicts block your check in
+- Conflicts block your check-in
 
   The system presents you with conflicts between your changes the latest version of the files on the server. See [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
 
-- A check-in policy blocks your check in
+- A check-in policy blocks your check-in
 
   Administrators of your project can implement check-in policies to encourage your team to follow best practices. For example, a check-in policy can encourage team members to associate at least one work item with their changes. For more information, see [Set and Enforce Quality Gates](set-enforce-quality-gates.md).
 
