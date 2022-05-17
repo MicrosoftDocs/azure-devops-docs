@@ -21,7 +21,7 @@ When you check in files to a version control folder that is controlled by a [gat
 ## Prerequisites
 
 * You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
-* You must not have the [Limit job authorization scope to current project for non-release pipelines](../../pipelines/process/access-tokens#job-authorization-scope) setting enabled. If you receive an error such as `The shelveset _Build_95;Build\6bc8a077-3f27-4936-82e6-415fbd53ba07 could not be found for check-in`, check this setting and ensure it is not enabled.
+* You must not have the [Limit job authorization scope to current project for non-release pipelines](../../pipelines/process/access-tokens.md#job-authorization-scope) setting enabled. If you receive an error such as `The shelveset _Build_95;Build\6bc8a077-3f27-4936-82e6-415fbd53ba07 could not be found for check-in`, check this setting and ensure it is not enabled.
 
 <a name="begin_checkin"></a>
 
