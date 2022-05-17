@@ -31,7 +31,7 @@ To perform these procedures, you must have the following permissions set:
 
 - If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**.
 
-For more information about permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)
+For more information about permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Initiate a merge from the Source Control window
 
@@ -42,7 +42,7 @@ For more information about permissions, See [Default TFVC permissions](../../org
 >
 > While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see [Branch folders and files](branch-folders-files.md).
 
-Merge branches, files and folders from Source Control Explorer:
+Merge branches, files, and folders from Source Control Explorer:
 
 1. In **Source Control Explorer**, select the branch, folder, or file that you want to merge.
 
@@ -50,9 +50,9 @@ Merge branches, files and folders from Source Control Explorer:
 
   The **Source Control Merge Wizard** is displayed. For information about how to use this wizard to complete the merge, see [Use the Source Control Merge Wizard to Complete a Merge](merge-folders-files.md#sourcecontrolwizard).
 
-## Initiate a Mmrge from the Tracking Changeset window
+## Initiate a merge from the Tracking Changeset window
 
-You can use the **Tracking Changeset** window to view information such as, where a changeset was made, where it was merged, and when these events occurred. Branches where a changeset hasn't been merged are also highlighted. If you see a branch where the changeset is needed but is missing, use a drag and drop operation.
+You can use the Tracking Changeset window to view information such as, where a changeset was made, where it was merged, and when these events occurred. Branches where a changeset hasn't been merged are also highlighted. If you see a branch where the changeset is needed but is missing, use a drag and drop operation.
 
 > [!IMPORTANT]
 > This procedure can be performed only for changesets that affect a branch. For example, in the following illustration you can view how branches and folders are displayed with different icons.
@@ -63,7 +63,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 ### Drag and drop a changeset into the Tracking Changeset window
 
-1. In **Source Control Explorer**, select either a branch, a folder, or a file that is contained within a branch.
+1. In Source Control Explorer, select either a branch, a folder, or a file that is contained within a branch.
 
 2. Right-click the selected item and select **View History**.
 
@@ -75,7 +75,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 5. Select **Visualize**.
 
-   The **Tracking Changeset** window appears.
+   The Tracking Changeset window appears.
 
 6. Drag the branch that contains the changeset to the target branch.
 
@@ -85,23 +85,21 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 To illustrate how you might use the preceding procedure, consider the following example. Julie has asked Chris to implement a new method in some of the **FeatureTeamA** code that she uses in her **FeatureTeamB** code. Chris writes code for the new method and then he checks it into the **FeatureTeamA** branch. He meets Julie in the hallway as he's leaving for the day and mentions that he's checked in the new method.
 
-Julie gets back to her desk and finds the latest source, but she doesn't see the new method that Chris checked in. She navigates to **Source Control Explorer**, views the **History** window for the **FeatureTeamA** branch, and she can see that with changeset 50 Chris did indeed check in the new method. She right-clicks changeset 50 and selects **Track Changeset**, and the following window appears:
-
-Tracking Changeset Window: Merge to Parent Branch
+Julie gets back to her desk and finds the latest source, but she doesn't see the new method that Chris checked in. She opens Source Control Explorer, views the **History** window for the **FeatureTeamA** branch, and she can see that with changeset 50 Chris did indeed check in the new method. She right-clicks changeset 50 and selects **Track Changeset**, and the following window appears:
 
 ![Screenshot shows the Tracking Changeset window: merge to parent branch.](media/merge-folders-files/IC269735.png)
 
-From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie can't get the new code until changeset 51 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
+From the Tracking Changeset window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie can't get the new code until changeset 51 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
 
 <a name="sourcecontrolwizard"></a>
 
 ## Use the Source Control Merge Wizard to complete a merge
 
-After you complete one of the above procedures, the **Source Control Merge Wizard** appears. This wizard enables you to specify the source and target of the merge. You can merge one entire branch to another branch, or you can pick a specific changeset or group of changesets that you want to merge.
+After you complete one of the above procedures, the Source Control Merge Wizard appears. This wizard enables you to specify the source and target of the merge. You can merge one entire branch to another branch, or you can pick a specific changeset or group of changesets that you want to merge.
 
 Use the Source Control Merge Wizard to merge files, folders, or branches:
 
-1. In the **Source Control Merge Wizard**, in **Source branch**, either type the name of the project source branch, or select **Browse** to select one from the list.
+1. In the Source Control Merge Wizard, in **Source branch**, either type the name of the project source branch, or select **Browse** to select one from the list.
 
 2. In the **Target branch** dropdown list, select the target project branch to which you want to merge the source branch.
 

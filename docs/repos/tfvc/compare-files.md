@@ -26,21 +26,21 @@ You can compare server folders and local folders to each other, and view the dif
 
 You can compare any two files using the Compare dialog box. The files can both reside on the local system, both on your Team Foundation Server, or one on each.
 
-1. On the menu bar, choose **View**, **Other Windows**, **Source Control Explorer**.
+1. On the menu bar, choose **View** > **Other Windows** > **Source Control Explorer**.
 
-2. In **Source Control Explorer**, right-click a file and select **Compare**. 
+2. In **Source Control Explorer**, right-click a file and select **Compare**.
 
-   The **Compare** dialog box appears.
+   The Compare dialog box appears.
 
 3. Specify the two files you want to compare: one under **Source Path** and the other under **Target Path**:
 
-   - Type a path, or open the **Browse** menu, choose **Local Path** or **Server Path**, and then browse to choose the file. 
+   - Type a path, or open the **Browse** menu, choose **Local Path** or **Server Path**, and then browse to choose the file.
    - Choose an option to specify file the server file version when specifying a **Server Path** from the **Type** menu: **Changeset**, **Date**, **Label**, **Latest Version**, or **Workspace Version**.
 
-   > [!TIP]
-   > To compare any two local files, select **Local Path...** from both **Browse...** drop downs in the Compare dialog.
+     > [!TIP]
+     > To compare any two local files, select **Local Path...** from both **Browse...** drop downs in the Compare dialog box.
 
-4. Choose **OK**.
+4. Select **OK**.
 
 ## Compare files in your workspace with the most recent version
 
@@ -54,21 +54,21 @@ Compare your work with the latest version on your Team Foundation Server while c
 
    - Select **Compare with Workspace Version** to see what changes you have made to the version you checked out.
 
-   > [!TIP]
-   >  You can also press **Shift** and then double-click the file.
+     > [!TIP]
+     >  You can also press **Shift** and then double-click the file.
 
    - Select **Compare with Latest Version** to see how the changes you have made compare to the latest version of the file on your Team Foundation Server.
 
 4. The Diff window appears. You can continue to make changes to the file in this window.
 
    > [!TIP]
-   >  You can also use **Solution Explorer** and the **Source Control Explorer** windows to compare the file in your workspace with a version of the file on the server. Select a file, right-click to open its context menu, and then select **Compare**. When the **Compare** dialog box appears, choose **OK**.
+   >  You can also use **Solution Explorer** and the **Source Control Explorer** windows to compare the file in your workspace with a version of the file on the server. Select a file, right-click to open its context menu, and then select **Compare**. When the Compare dialog box appears, select **OK**.
 
 ## Compare two versions of a file in your TFVC history
 
 Compare two versions of a file already checked into Team Foundation Version Control:
 
-1. On the menu bar, select **View**, **Other Windows**, **Source Control Explorer**.
+1. On the menu bar, select **View** > **Other Windows** > **Source Control Explorer**.
 
 2. In **Source Control Explorer**, right-click a file and select **View History**.
 
@@ -101,13 +101,13 @@ Here are some tips for working with the **Diff** window:
 
 - To skip:
 
-  - To the next difference, choose **Next difference** :::image type="icon" source="media/compare-files/IC558315.gif"::: (Keyboard: F8).
+  - To the next difference, choose **Next difference** :::image type="icon" source="media/compare-files/IC558315.gif"::: (Keyboard: **F8**).
 
-  - To the previous difference, choose **Previous difference** :::image type="icon" source="media/compare-files/IC558316.gif"::: (Keyboard: Shift+F8).
+  - To the previous difference, choose **Previous difference** :::image type="icon" source="media/compare-files/IC558316.gif"::: (Keyboard: **Shift**+**F8**).
 
   - Back and forth in the file, choose a section of the ![Step 5](media/compare-files/IC646328.png) visual summary.
 
-- When you participate in a [code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md), you use the **Diff** window to see the code changes that are the subject of the review. For more information, see [Day in the life of a devops Developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
+- When you participate in a [code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md), you use the **Diff** window to see the code changes that are the subject of the review. For more information, see [Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
 
 ## Merge changes between versions
 
