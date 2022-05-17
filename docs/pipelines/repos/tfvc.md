@@ -3,7 +3,7 @@ title: Build TFVC repositories
 description: Using a TFVC repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.date: 04/14/2020
+ms.date: 05/17/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -103,6 +103,9 @@ When developers try to check-in, they are prompted to build their changes.
 ![Gated check-in prompt](media/tfvc-gated-check-in-prompt.png)
 
 The system then creates a shelveset and builds it.
+
+> [!NOTE]
+> If you receive an error such as `The shelveset _Build_95;Build\6bc8a077-3f27-4936-82e6-415fbd53ba07 could not be found for check-in`, check the [Limit job authorization scope to current project for non-release pipelines](../process/access-tokens#job-authorization-scope) setting and ensure it is not enabled.
 
 For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build pipeline](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
