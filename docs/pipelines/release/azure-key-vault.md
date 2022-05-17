@@ -90,6 +90,8 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 ## Create a new pipeline
 
+# [YAML](#tab/yaml)
+
 1. Select **Pipelines**, and then select **New Pipeline**.
 
 1. Select **Azure Repos Git** (YAML).
@@ -159,6 +161,21 @@ We will use YAML to create our pipeline but first we need to create a new repo.
         ArtifactName: 'drop'
         publishLocation: 'Container'
     ```
+
+# [Classic](#tab/classic)
+
+1. Select **Pipelines**, and then select **New Pipeline**.
+
+1. Select **Use the classic editor** to create a pipeline without YAML.
+
+1. Select **Azure Repos Git**, and then select your repository and default branch. Select **Continue** when you are done.
+
+1. Select the **.Net Desktop** pipeline template.
+
+1. For this example, we will only need the last two tasks. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
+
+    :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete pipeline tasks.":::
+
 
 1. Do not save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
 
