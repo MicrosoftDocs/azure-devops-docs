@@ -90,7 +90,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 ## Create a new pipeline
 
-# [YAML](#tab/yaml)
+#### [YAML](#tab/yaml)
 
 1. Select **Pipelines**, and then select **New Pipeline**.
 
@@ -162,7 +162,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
         publishLocation: 'Container'
     ```
 
-# [Classic](#tab/classic)
+#### [Classic](#tab/classic)
 
 1. Select **Pipelines**, and then select **New Pipeline**.
 
@@ -176,8 +176,21 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
     :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete pipeline tasks.":::
 
+1. Select **+** to add a new task. Add the **Command line** task and configure it as follows:
 
-1. Do not save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
+    :::image type="content" border="false" source="media/cmd-task.png" alt-text="A screenshot showing how to configure the command line task.":::
+
+1. Select the **Copy files** task and fill out the required parameters as follows:
+
+    :::image type="content" border="false" source="media/copy-task.png" alt-text="A screenshot showing how to set up the copy files task.":::
+
+1. Select the **Publish Artifacts** task and enter the required parameters.
+
+    :::image type="content" border="false" source="media/publish-artifacts.png" alt-text="A screenshot showing how to set up the publish artifacts task.":::
+
+***
+
+Don't save or queue your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
 
 ## Set up Azure Key Vault access policies
 
