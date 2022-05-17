@@ -179,7 +179,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 1. For **Secret permissions**, select **Get** and **List**.
 
 1. Select the option to select a service principal and search for the one you created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
-    
+
 1. Select **Add** to create the access policy, then select **Save** when you are done.
 
 ## Run and review the pipeline
@@ -217,9 +217,25 @@ Follow the steps below to delete the resources you created:
     az group delete --name PipelinesKeyVaultResourceGroup
     ```
 
+## FAQ
+
+#### Q: I'm getting the following error: "the user or group does not have secrets list permission" what should I do?
+
+A: If you encounter an error indicating that the user or group does not have secrets list permission on key vault, run the following commands to authorize your application to access the key or secret in the Azure Key Vault:
+
+```PowerShell
+$ErrorActionPreference="Stop";
+$Credential = Get-Credential;
+Connect-AzAccount -SubscriptionId <YOUR_SUBSCRIPTION_ID> -Credential $Credential;
+$spn=(Get-AzureRmADServicePrincipal -SPN <YOUR_SERVICE_PRINCIPAL_ID>);
+$spnObjectId=$spn.Id;
+Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
+```
+
 ## Next steps
 
 > [!div class="nextstepaction"]
+>
 > [Artifacts in Azure Pipelines](../artifacts/artifacts-overview.md)
 > [Publish and download artifacts in Azure Pipelines](../artifacts/pipeline-artifacts.md)
 > [Release artifacts and artifact sources](artifacts.md)
