@@ -208,7 +208,7 @@ You can use the **Label** window to perform the following tasks:
 
 ### Remove an item from the label
 
-1. In the **Label** window, locate the collection, project, branch, folder, or file that you want to remove from this label.
+1. In the Label window, locate the collection, project, branch, folder, or file that you want to remove from this label.
 
 2. Open the context menu for the item and select **Remove from Label**.
 
@@ -218,7 +218,7 @@ You can use the **Label** window to perform the following tasks:
 
 ### Change the version of a file
 
-1. In the **Label** window, locate the file that you want to modify.
+1. In the Label window, locate the file that you want to modify.
 
 2. Open the context menu for the file and select **Change Labeled Version**.
 

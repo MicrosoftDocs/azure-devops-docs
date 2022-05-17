@@ -44,15 +44,15 @@ For more information about permissions, See [Default TFVC permissions](../../org
 
 Merge branches, files, and folders from Source Control Explorer:
 
-1. In **Source Control Explorer**, select the branch, folder, or file that you want to merge.
+1. In Source Control Explorer, select the branch, folder, or file that you want to merge.
 
-2. Select the **File** menu, point to **Source Control**, point to **Branching and Merging**, and then select **Merge**.
+2. Select **File** > **Source Control** > **Branching and Merging**, and then select **Merge**.
 
   The **Source Control Merge Wizard** is displayed. For information about how to use this wizard to complete the merge, see [Use the Source Control Merge Wizard to Complete a Merge](merge-folders-files.md#sourcecontrolwizard).
 
 ## Initiate a merge from the Tracking Changeset window
 
-You can use the Tracking Changeset window to view information such as, where a changeset was made, where it was merged, and when these events occurred. Branches where a changeset hasn't been merged are also highlighted. If you see a branch where the changeset is needed but is missing, use a drag and drop operation.
+You can use the Tracking Changeset window to view information such as, where a changeset was made, where it was merged, and when these events occurred. Branches where a changeset hasn't been merged are also highlighted. If you see a branch where the changeset is needed but is missing, drag it in.
 
 > [!IMPORTANT]
 > This procedure can be performed only for changesets that affect a branch. For example, in the following illustration you can view how branches and folders are displayed with different icons.
@@ -164,7 +164,7 @@ Use the Source Control Merge Wizard to merge files, folders, or branches:
 
    1. Select the **View** menu, point to **Other Windows**, and then select **Pending Changes**.
 
-   2. Use the Pending Changes window to check in the changes. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
+   2. Use the **Pending Changes** window to check in the changes. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
 ## Next steps
 
