@@ -10,7 +10,6 @@ ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ---
 
-
 # Check in your work to the team's codebase
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -24,7 +23,7 @@ Use the **Pending Changes** page in Team Explorer to check in your code into a n
 
 ## Choose the files you want to check in
 
-You can specify which file changes you want to check in by dragging them between the **Included Changes** and **Excluded Changes** sections of the **Pending Changes** page in Team Explorer. 
+You can specify which file changes you want to check in by dragging them between the **Included Changes** and **Excluded Changes** sections of the **Pending Changes** page in Team Explorer.
 You can also check in as you work in other areas of Visual Studio:
 
 - In Solution Explorer, select one of the following items:
@@ -38,10 +37,10 @@ You can also check in as you work in other areas of Visual Studio:
 - In Source Control Explorer, select one or more items with pending changes or one or more folders that contain items with pending changes. The TFSC checked-out status icon :::image type="icon" source="media/check-your-work-team-codebase/IC51402.gif"::: indicates items with pending changes. Open the context menu for the selected items, and choose **Check In**.
 
 > [!IMPORTANT]
-> The **Check in** option is not displayed if there are no pending changes to the item selected.
+> The **Check In** option is not displayed if there are no pending changes to the item selected.
 
 If you don't see pending changes for an item, make sure that it isn't already listed as an excluded change.
-Open Team Explorer's **Pending Changes** view and select the **Detected: ..** link under **Excluded Changes**.
+Open Team Explorer's **Pending Changes** view and select the **Detected** link under **Excluded Changes**.
 Check the changes to include from the list and select **Promote** to move the excluded changes into the **Included Changes** section.
 These changes can now be checked in.
 
@@ -58,7 +57,7 @@ To associate work items with your changes:
 - Choose the **Add Work Item by ID** link in the **Related Work Items** section.
 - Drag a work item from a work item query window from Team Explorer's [**Work Item**](../../boards/queries/using-queries.md) page into the **Related Work Items** section.
 
-Next to each work item, select how it should be related to your check-in: **Associate** or **Resolve**. These options are available only if the work item isn't already in a state that precludes this relationship, such as **Resolved**, **Done**, or **Closed**.
+Next to each work item, select how it should be related to your changes: **Associate** or **Resolve**. These options are available only if the work item isn't already in a state that precludes this relationship, such as **Resolved**, **Done**, or **Closed**.
 
 ## Check in your changes
 
@@ -66,7 +65,7 @@ Next to each work item, select how it should be related to your check-in: **Asso
 
 2. On the **Pending Changes** page, enter a **Comment** so that teammates who later need to [review and understand the history of your files](view-manage-past-versions.md) can understand what you did. For example: **Implemented shopping cart controller**.
 
-3. Some teams prefer that their members to provide certain kinds of information about each check-in. In some cases, they even implement a check-in policy to require this practice. If an Administrator of your project has [enabled check-in notes](configure-check-notes.md), then you can type the information into each field in the **Notes** section.
+3. Some teams prefer that their members to provide certain kinds of information about each changeset. In some cases, they even implement a check-in policy to require this practice. If an Administrator of your project has [enabled check-in notes](configure-check-notes.md), then you can type the information into each field in the **Notes** section.
 
 4. Select **Check In**.
 
@@ -76,11 +75,11 @@ One of the following outcomes occurs:
 
   All the included file changes from your workspace along with the comment, check-in notes, and links to related work items are stored on the server as a single [changeset](find-view-changesets.md) on your server.
 
-- Conflicts block your check-in
+- Conflicts block your changes
 
   The system presents you with conflicts between your changes the latest version of the files on the server. See [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
 
-- A check-in policy blocks your check-in
+- A check-in policy blocks your changes
 
   Administrators of your project can implement check-in policies to encourage your team to follow best practices. For example, a check-in policy can encourage team members to associate at least one work item with their changes. For more information, see [Set and Enforce Quality Gates](set-enforce-quality-gates.md).
 
@@ -116,9 +115,9 @@ If you want to be notified when someone checks in code in your TFVC project, you
 
 - :::image type="icon" source="media/check-your-work-team-codebase/IC572374.png"::: If you need to set aside your changes, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
-- :::image type="icon" source="media/check-your-work-team-codebase/IC572374.png"::: A check-in is performed atomically. The operation either succeeds completely or fails completely, with one exception. If any one of the changes can't be submitted to Team Foundation Server, none of the changes are committed and a changeset isn't created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
+- :::image type="icon" source="media/check-your-work-team-codebase/IC572374.png"::: Changes are checked in atomically. The operation either succeeds completely or fails completely, with one exception. If any one of the changes can't be submitted to Team Foundation Server, none of the changes are committed and a changeset isn't created. For example, if you lose network connectivity in the middle of a check-in operation, the whole operation fails.
 
-  The exception is the association of work items with the changeset. If work item association fails but all other aspects of the check-in succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
+  The exception is the association of work items with the changeset. If work item association fails but all other aspects of the check-in operation succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
 
 ## Next steps
 

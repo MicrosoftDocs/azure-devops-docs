@@ -38,7 +38,7 @@ You can compare any two files using the Compare dialog box. The files can both r
    - Choose an option to specify file the server file version when specifying a **Server Path** from the **Type** menu: **Changeset**, **Date**, **Label**, **Latest Version**, or **Workspace Version**.
 
      > [!TIP]
-     > To compare any two local files, select **Local Path...** from both **Browse...** drop downs in the Compare dialog box.
+     > To compare any two local files, select **Local Path** from both **Browse** dropdown menus in the Compare dialog box.
 
 4. Select **OK**.
 
@@ -95,7 +95,7 @@ When you compare files using the instructions in the previous sections, Visual S
 
 ![Step 5](media/compare-files/IC646328.png) Visual summary of the differences between the files
 
-Here are some tips for working with the **Diff** window:
+Here are some tips for working with the Diff window:
 
 - Although **Side-by-side mode** is more effective in most cases, you can use whichever mode works best for you and the code you're examining.
 
@@ -112,7 +112,7 @@ Here are some tips for working with the **Diff** window:
 ## Merge changes between versions
 
 Copy and paste changes from the diff view into the version in your workspace to make quick updates to bring in updates from one version to another.
-Merge more complex changes between two versions when you [resolve merge conflicts in TFVC](resolve-team-foundation-version-control-conflicts.md) before making a check-in. 
+Merge more complex changes between two versions when you [resolve merge conflicts in TFVC](resolve-team-foundation-version-control-conflicts.md) before you check in changes.
 
 If you need to merge two files with significant differences outside of TFVC conflict resolution, use the [vsdiffmerge command line tool](https://roadtoalm.com/2013/10/22/use-visual-studio-as-your-diff-and-merging-tool-for-local-files).
 The `vsdiffmerge` tool allows you to merge changes side-by-side and pick which contents you want to keep for each difference between the files.
