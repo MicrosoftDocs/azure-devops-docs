@@ -33,7 +33,7 @@ Is your code in another place? [Learn how to migrate it here](#migrate).
 
    [I don't see the Configure Workspace link. What do I do next?](#workspace_exists)
 
-2. Confirm your workspace path, map your workspace, and get the source.
+2. Confirm your workspace path. Select **Map & Get** to map your workspace and get the source.
 
    ![Screenshot shows the Team Explorer Home page, with Map and get highlighted.](media/share-your-code-in-tfvc-vs/MapAndGet.png)
 
@@ -41,12 +41,14 @@ Is your code in another place? [Learn how to migrate it here](#migrate).
 
    ![Screenshot shows a success message that verifies that Visual Studio is now connected to your project.](media/share-your-code-in-tfvc-vs/MapWorkspaceSuccess.png)
 
-> [!NOTE]
-> TFVC is not supported when workspaces are placed on network drives or UNC paths.
+   > [!NOTE]
+   > TFVC is not supported when workspaces are placed on network drives or UNC paths.
 
 ## Create a new app
 
 If you already have an app that you want to add to version control, skip to [Add an existing app](#app_add).
+
+In Team Explorer, select **New**.
 
 ![Screenshot shows the Team Explorer Home page with New highlighted under Solutions.](media/share-your-code-in-tfvc-vs/team-explorer-new-solution.png)
 
@@ -73,7 +75,7 @@ Now that you've added your app, you can skip to [snapshot your code](#snapshot).
 
 ### Add the solution to Azure Repos
 
-1. Open the solution explorer (Keyboard: **Ctrl**+**Alt**+**L**).
+1. Press **Ctrl**+**Alt**+**L** to open Solution Explorer.
 
 2. Add your solution to version control.
 
@@ -116,7 +118,7 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
    ![Screenshot shows the Check in option in the Solution Explorer context menu.](media/share-your-code-in-tfvc-vs/IC682956.png)
 
-   You can also check in from the code window, or Team Explorer.
+   You can also check in from the code window or Team Explorer.
 
 4. If you're working on a task or fixing a bug that's tracked as a work item, add that work item to your pending changes. Source control resolves the bug or closes the task. It links the changeset to the work item.
 
@@ -126,7 +128,7 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
    ![Screenshot shows where you can add a comment and check in the files.](media/share-your-code-in-tfvc-vs/IC685249.png)
 
-6. Open the source control explorer.
+6. Select Source Control Explorer.
 
    ![Screenshot shows Source Control Explorer in the Team Explorer Home page.](media/share-your-code-in-tfvc-vs/IC682161.png)
 

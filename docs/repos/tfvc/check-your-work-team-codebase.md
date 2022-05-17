@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Use the **Pending Changes** page (Keyboard: **Ctrl**+**0**, **P**) in Team Explorer to check in your code into a new changeset.
+Use the **Pending Changes** page in Team Explorer to check in your code into a new changeset. Press **Ctrl**+**0**, **P** on you keyboard: 
 
 ![Screenshot shows Pending Changes pane with a comment and Check In button.](media/check-your-work-team-codebase/IC593474.png)
 
@@ -35,42 +35,40 @@ You can also check in as you work in other areas of Visual Studio:
 
   After you select the items, right-click and select **Check In**.
 
-- In Source Control Explorer, select one or more items with pending changes or one or more folders that contain items with pending changes. Items with pending changes are indicated by the TFSC checked-out status icon: :::image type="icon" source="media/check-your-work-team-codebase/IC51402.gif":::). Open the context menu for the selected items, and choose **Check In**.
-
+- In Source Control Explorer, select one or more items with pending changes or one or more folders that contain items with pending changes. The TFSC checked-out status icon :::image type="icon" source="media/check-your-work-team-codebase/IC51402.gif"::: indicates items with pending changes. Open the context menu for the selected items, and choose **Check In**.
 
 > [!IMPORTANT]
 > The **Check in** option is not displayed if there are no pending changes to the item selected.
 
-> [!TIP]
-> If you don't see pending changes for an item, make sure that it is not already listed as an excluded change.
-> Open Team Explorer's **Pending Changes** view and select the **Detected: ..** link under **Excluded Changes**.
-> Check the changes to include from the list and select **Promote** to move the excluded changes into the **Included Changes** section.
-> These changes can now be checked in.
+If you don't see pending changes for an item, make sure that it is not already listed as an excluded change.
+Open Team Explorer's **Pending Changes** view and select the **Detected: ..** link under **Excluded Changes**.
+Check the changes to include from the list and select **Promote** to move the excluded changes into the **Included Changes** section.
+These changes can now be checked in.
 
 ## Associate work items
 
-When you check in changes, you should associate such work items with the changes. This practice offers the following benefits:
+When you check in changes, you should associate work items with the changes. This practice offers the following benefits:
 
 - A team member who looks at the work item can [link directly to the changeset](../../boards/queries/link-work-items-support-traceability.md) to see the work that you did.
 - A team member who [reviews the history of a file](view-manage-past-versions.md) you changed can view the changeset and see the work items that were the justification for the change.
-- You might build your changes in your automated build system, for example with a [CI Build](../../pipelines/build/triggers.md, or a [Gated Check-in Build](../../pipelines/repos/index.md). Your team members can see in which completed build the task was completed or the bug was fixed.
+- You might build your changes in your automated build system, for example with a [CI Build](../../pipelines/build/triggers.md), or a [Gated Check-in Build](../../pipelines/repos/index.md). Your team members can see in which completed build the task was completed or the bug was fixed.
 
-To associate work items with your check-in:
+To associate work items with your changes:
 
 - Choose the **Add Work Item by ID** link in the **Related Work Items** section.
-- Drag a work item from a work item query window from [Team Explorer's **Work Item**](../../boards/queries/using-queries.md) page into the **Related Work Items** section.
+- Drag a work item from a work item query window from Team Explorer's [**Work Item**](../../boards/queries/using-queries.md) page into the **Related Work Items** section.
 
 Next to each work item, select how it should be related to your check-in: **Associate** or **Resolve**. These options are available only if the work item isn't already in a state that precludes this relationship, such as **Resolved**, **Done**, or **Closed**.
 
 ## Check in your changes
 
-1. In Team Explorer, choose :::image type="icon" source="media/check-your-work-team-codebase/IC547418.png"::: **Home**, and then select **Pending Changes** (Keyboard: **Ctrl**+**0**, **P**).
+1. In Team Explorer, choose :::image type="icon" source="media/check-your-work-team-codebase/IC547418.png"::: **Home**, and then select **Pending Changes** or press **Ctrl**+**0**, **P**.
 
-2. On the **Pending Changes** page, enter a **Comment** so that teammates who later need to [review and understand the history of your files](view-manage-past-versions.md) will understand what you did. For example: **Implemented shopping cart controller**.
+2. On the **Pending Changes** page, enter a **Comment** so that teammates who later need to [review and understand the history of your files](view-manage-past-versions.md) can understand what you did. For example: **Implemented shopping cart controller**.
 
 3. Some teams prefer that their members to provide certain kinds of information about each check-in. In some cases, they even implement a check-in policy to require this practice. If an Administrator of your project has [enabled check-in notes](configure-check-notes.md), then you can type the information into each field in the **Notes** section.
 
-4. Choose the **Check In** button.
+4. Select **Check In**.
 
 One of the following outcomes occurs:
 
@@ -104,7 +102,7 @@ If you want to be notified when someone checks in code in your TFVC project, you
 
 ## Work from the command prompt
 
-- [Checkin command](checkin-command.md) : View pending changes and check in files.
+- [Checkin command](checkin-command.md): View pending changes and check in files.
 
 ## Tips
 
@@ -112,7 +110,7 @@ If you want to be notified when someone checks in code in your TFVC project, you
 
 - :::image type="icon" source="media/check-your-work-team-codebase/IC572374.png"::: You can toggle between list and tree view from the **Actions** menu.
 
-- :::image type="icon" source="media/check-your-work-team-codebase/IC572374.png"::: Before checking in new code, you should consider conducting a code review. See [Day in the life of an devops Developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
+- :::image type="icon" source="media/check-your-work-team-codebase/IC572374.png"::: Before checking in new code, you should consider conducting a code review. See [Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
 
 - :::image type="icon" source="media/check-your-work-team-codebase/IC572374.png"::: You can manage and, if necessary, undo your pending changes. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
