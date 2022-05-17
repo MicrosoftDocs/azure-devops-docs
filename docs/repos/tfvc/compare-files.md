@@ -62,7 +62,7 @@ Compare your work with the latest version on your Team Foundation Server while c
 4. The Diff window appears. You can continue to make changes to the file in this window.
 
    > [!TIP]
-   >  You can also use **Solution Explorer** and the **Source Control Explorer** windows to compare the file in your workspace with a version of the file on the server. Select a file, right-click to open its context menu, and then select **Compare**. When the Compare dialog box appears, select **OK**.
+   >  You can also use Solution Explorer and Source Control Explorer to compare the file in your workspace with a version of the file on the server. Select a file, right-click to open its context menu, and then select **Compare**. When the Compare dialog box appears, select **OK**.
 
 ## Compare two versions of a file in your TFVC history
 
