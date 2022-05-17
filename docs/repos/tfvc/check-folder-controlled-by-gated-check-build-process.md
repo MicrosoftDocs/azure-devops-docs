@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/repos/tfvc#gated), there are some additional steps that you must take to complete the check-in.
+When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/repos/tfvc.md#gated), there are some additional steps that you must take to complete the check-in.
 
 ![Build process](media/check-folder-controlled-by-gated-check-build-process/IC572351.png)
 
