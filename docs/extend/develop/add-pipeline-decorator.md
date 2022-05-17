@@ -200,7 +200,7 @@ This feature is designed to work with [custom pipeline tasks](add-build-task.md#
 
 In order to get access to the target pipeline task inputs (inputs with the `target_` prefix), the injected pipeline task should use methods from the [azure-pipelines-tasks-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib), and not the pipeline variables, for example `const inputString = tl.getInput('target_targetInput')`). 
 
-TO do this, you can create your own custom pipeline [task](add-build-task.md#task-implementation) and use the target inputs there. If you need the functionality of one of the out-of-box tasks, like `CmdLine@2`, you can create a copy of the [CmdLine@2 task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/CmdLineV2) and publish it with your decorator extension.
+To do this, you can create your own custom pipeline [task](add-build-task.md#task-implementation) and use the target inputs there. If you need the functionality of one of the out-of-box tasks, like `CmdLine@2`, you can create a copy of the [CmdLine@2 task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/CmdLineV2) and publish it with your decorator extension.
 
 > [!NOTE]
 > This functionality is only available for tasks that are injected before or after the target task.
