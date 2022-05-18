@@ -57,7 +57,7 @@ From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add
    ![Screenshot of Open Project settings, and then Teams buttons on New Teams page.](media/shared/open-project-settings-teams-preview.png)
 
 1. Choose **New team**.   
-	:::image type="content" source="media/add-team/new-team-button-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
+	:::image type="content" source="media/add-team/new-team-button-new-teams-preview.png" alt-text="Screenshot of choose New Team button, New Teams preview feature enabled.":::
 
 1. Give the team a name, and optionally a description. Make sure to select **Create an area path with the name of the team**. Or, leave it unchecked and assign the default area path for the team after it's created. You can choose an existing area path or add a new one at that time. Team tools aren't available until the team's default area path is set. 
 	:::image type="content" source="media/add-team/create-new-team-dialog-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
@@ -278,20 +278,20 @@ You can toggle between direct or expanded membership views. The **Direct Members
    Here we open the Board for the Web team and from there the team profile.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
+   > ![Work Backlog or Board, choose team profile icon](media/team-defaults/open-team-profile-choose-team-settings.png)  
 
 2. If you need to switch the team context, use the team selector within the breadcrumbs.  
 
-	:::image type="content" source="media/add-users/change-team-context.png" alt-text="Screenshot of Project Settings>Teams>Team and Teams breadcrumb.":::
+	:::image type="content" source="../security/media/add-users/change-team-context.png" alt-text="Screenshot of Project Settings>Teams>Team and Teams breadcrumb.":::
 
 3. Choose **Add**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add, preview page](media/add-users/new-teams-page-add-member.png)   
+	> ![Team Profile, choose Add, preview page](../security/media/add-users/new-teams-page-add-member.png)   
 
 4. Enter the sign-in addresses or display name for each account you want to add. You can also add a project security group&mdash;such as another team group, custom group, or Azure Active Directory group when used by the organization. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	:::image type="content" source="media/add-users/change-team-context.png" alt-text="Invite members to team dialog, choose user account.  ":::
+	:::image type="content" source="../security/media/add-users/change-team-context.png" alt-text="Invite members to team dialog, choose user account.  ":::
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
@@ -301,7 +301,7 @@ You can toggle between direct or expanded membership views. The **Direct Members
 6. To add an account as a team administrator, choose the Settings page and then choose **Add** under the Administrators section. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 
 #### [Current UI](#tab/current-page)
-
+ 
 
 You can toggle between direct or expanded membership views. The **direct** view displays users and groups that have been added to the team. The **expanded** view replaces any Azure DevOps groups with the members that belong to those groups. Azure Active Directory or Active Directory groups aren't expanded.   
 
@@ -334,6 +334,11 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
 
 6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](add-team-administrator.md)
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+TBD. 
 
 *** 
 ::: moniker-end
@@ -379,7 +384,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
 
-	![Project Settings, Overview page, Choose team](media/add-users/overview-page-select-team.png) 
+	![Project Settings, Overview page, Choose team](../security/media/add-users/overview-page-select-team.png) 
 
 2. Choose the ![plus icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
 
