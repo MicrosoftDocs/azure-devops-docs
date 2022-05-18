@@ -83,6 +83,8 @@ When the free tier is no longer sufficient, you can pay for additional capacity 
 
 [Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
+New organizations have a maximum limit of 25 parallel jobs for Microsoft-hosted agents. [Contact support](https://azure.microsoft.com/support/devops/) to request a limit increase, subject to capacity in your organization's region.
+
 When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still one. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
  
 > [!TIP]
