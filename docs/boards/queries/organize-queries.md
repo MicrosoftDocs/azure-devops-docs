@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -21,7 +21,7 @@ ms.date: 10/24/2021
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
 > [!NOTE]  
-> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
+> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. Also, you can perform bulk drag-and-drop of queries into query folders from Visual Studio but not from the web portal. 
 
  
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
@@ -69,7 +69,7 @@ The following example shows how to find all closed bugs by modifying the
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
@@ -133,7 +133,7 @@ For shared queries, you can also choose to do one of these tasks:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
 
@@ -163,7 +163,7 @@ From the **Work Items** page, open the context menu for the query you want to ru
 
 ::: moniker range=">= azure-devops-2019"
 
-You add query folders from the **Boards>Queries>All** page.
+You add query folders from the **Boards>Queries>All** page. 
  
 1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
@@ -176,7 +176,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." />
 
-3. To move items into a folder, drag-and-drop a query onto the folder. 
+3. To move items into a folder, drag-and-drop a query onto the folder. From the web portal, you can only drag a single query from outside a folder into a folder. 
 
 	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
@@ -185,7 +185,7 @@ You add query folders from the **Boards>Queries>All** page.
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You add query folders from the **Boards>Queries** page.
 
@@ -195,7 +195,7 @@ You add query folders from the **Boards>Queries** page.
 
 	![New query folder link on queries context menu](media/set-query-perm-new-folder.png)   
 
-1. To move items into a folder, drag-and-drop a query onto the folder. 
+1. To move items into a folder, drag-and-drop a query onto the folder.  From the web portal, you can only drag a single query from outside a folder into a folder. 
 
 	Optionally, you can choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
 
@@ -206,20 +206,24 @@ You add query folders from the **Boards>Queries** page.
 
 #### [Visual Studio](#tab/visual-studio/)
 
+> [!NOTE]  
+> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
-From the **Work Items** page, open the context menu for **My Queries**, **Team Queries**, or an existing query folder, and choose **New Folder**.  
+All changes you make to your query folder structure in Visual Studio appear in the web portal by refreshing your browser. 
 
-:::image type="content" source="media/organize-queries/visual-studio-new-folder.png" alt-text="Screenshot, Visual Studio, open context menu and choose New Folder.":::
 
-A **New Folder** is added under the area you selected. Select the folder to rename it. 
+1. From the **Work Items** page, open the context menu for **My Queries**, **Team Queries**, or an existing query folder, and choose **New Folder**.  
+
+	:::image type="content" source="media/organize-queries/visual-studio-new-folder.png" alt-text="Screenshot, Visual Studio, open context menu and choose New Folder.":::
+
+	A **New Folder** is added under the area you selected. Select the folder to rename it. 
+
+1. To move queries into a folder, drag-and-drop a query onto the folder.  You can select multiple queries and drag them into a folder or from one folder into another folder.   
 
 * * * 
 
-
-
 <a id="favorite-query">  </a>
 
-::: moniker range=">= tfs-2015"
 
 ## Add a query to the dashboard or share it with your team 
 
@@ -229,8 +233,7 @@ Share queries with your team by adding them to a folder under the **Shared Queri
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 
-::: moniker-end
-
+ 
 
 ## Related articles
 

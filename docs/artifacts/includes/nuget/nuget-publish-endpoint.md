@@ -14,7 +14,7 @@ ms.date: 02/18/2022
 
     :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
 
-1. Select **NuGet.exe** under the **NuGet** header.
+1. Select **NuGet.exe**.
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
@@ -29,7 +29,7 @@ ms.date: 02/18/2022
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build and Release** > **Packages**.
 

@@ -5,13 +5,13 @@ ms.technology: devops-artifacts
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 11/16/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Publish Maven artifacts using Gradle
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This topic covers creating and publishing a Maven artifact to an Azure Artifacts feed with Gradle.
 
@@ -51,7 +51,7 @@ gradle -v
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select your profile icon, and then select **Security**.
 

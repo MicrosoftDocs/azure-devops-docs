@@ -2,14 +2,14 @@
 title: Add user stories & other work items to help manage your project
 titleSuffix: Azure Boards 
 description: Add work items so you can plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Azure DevOps.  
-ms.custom: seodec18, devx-track-azurecli
+ms.custom: devx-track-azurecli
 ms.technology: devops-agile
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.topic: tutorial
-ms.date: 03/01/2022
+ms.date: 04/01/2022
 ---
 
 # Add and update a work item
@@ -64,7 +64,7 @@ Create as many work items as you need of the type you need to track the work you
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
@@ -85,24 +85,6 @@ Create as many work items as you need of the type you need to track the work you
     You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
     Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-1. From a web browser, connect to the project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
-
-2. From a team home page, you can choose the type of work item you want to create.  
-
-    ![Home page -  create work items](media/work-items-tfs-team-home-page.png)  
-
-    Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/add-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
-
-3. Enter a title and then save the work item. Before you change the default State, you must save it.  
-
-    ![Product backlog item work item form](media/add-work/work-items-pbi-form-caption.png)  
-
-    You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
 ::: moniker-end
 
@@ -140,16 +122,8 @@ As work progresses, team members can update the state and reassign it as needed.
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  
 > ![Update the State of a User Story](media/add-work/update-state.png)   
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-The location of the **State** field may differ depending on the work item type you're updating. 
-> [!div class="mx-imgBorder"]  
-> ![Update the State of an Issue](media/add-work/update-state-old-form.png)   
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -157,7 +131,7 @@ The following image shows the workflow states for a user story. If you want to d
 
 ::: moniker-end
 
-::: moniker range="= tfs-2018"
+::: moniker range="tfs-2018"
 
 The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Remove or delete a work item](remove-delete-work-items.md).    
 
@@ -188,13 +162,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, changes are recorded in the History field, which you can view through the **History** tab.  
 
-::: moniker range=">= tfs-2017"
 ![View change history](media/add-work-item-history.png)  
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-![View change history](media/work-items-view-change-history.png)  
-::: moniker-end
 
 To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).  
 
@@ -207,7 +175,7 @@ There's no way to use Visual Studio 2019 to update a work item at this time.
 
 ### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 [Update work item](#update-work-item) | [Show work item details](#show-work-item) 
 
@@ -302,12 +270,9 @@ ID    Type    Title       Assigned To          State
 
 ::: moniker-end
 
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
-
-::: moniker range=">= tfs-2017"
 
 ## Follow a work item
 
@@ -322,9 +287,7 @@ Notifications are sent to your preferred email address, which [you can change fr
 
 To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 > [!IMPORTANT]
 > To support the follow feature, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.  

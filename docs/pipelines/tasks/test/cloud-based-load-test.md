@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: shashban
 author: shashban
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Cloud-based Load Test task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
@@ -21,7 +21,7 @@ The task uses the Cloud-based Load Test Service based in
 Microsoft Azure and can be used to test your app's 
 performance by generating load on it.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -86,7 +86,7 @@ a failure to be reported. For more details, see:
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

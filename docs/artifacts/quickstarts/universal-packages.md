@@ -4,13 +4,11 @@ description: How to publish and download universal packages to and from Artifact
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/03/2021
-monikerRange: '>= tfs-2017'
+ms.date: 02/15/2022
+monikerRange: 'azure-devops'
 ---
 
 # Publish and download universal packages with Azure CLI
-
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
 
 With universal packages, you can store different types of packages other than the widely used ones such as NuGet, npm, Maven, or Python packages. Using Azure CLI, you can publish and download universal packages from the command line. Uploaded packages can vary in size (up to 4 TB), but should always have a name and a version number. This article will walk you through the steps to publish and download your universal packages to Azure Artifacts feeds.
 
@@ -74,7 +72,7 @@ az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANI
 
 1. Select your feed from the drop-down menu. 
 
-    :::image type="content" source="media/universal-in-feed.png" alt-text="Screenshot showing the newly published package.":::
+    :::image type="content" source="media/universal-package-published.png" alt-text="A screenshot showing the newly published universal package.":::
 
 ## Download universal packages
 

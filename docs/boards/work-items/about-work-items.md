@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/01/2022
+ms.date: 04/01/2022
 ---
 
 # Track user stories, issues, bugs, and other work items in Azure Boards
@@ -36,8 +36,6 @@ Use work items to track anything you need to track. Each work item represents an
 
 #### Tasks you can do using work items
 
-::: moniker range=">= tfs-2018"
-
 - Use different [work item types (WITs)](#wit) to track different types of information. Specific tools include:  
 	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
 	- [Define Features and Epics](../backlogs/define-features-epics.md)
@@ -53,24 +51,6 @@ Use work items to track anything you need to track. Each work item represents an
 - [Capture and apply work item templates](#templates) to quickly fill in work item field
 - [Add and customize work item types](#customize)
 - [Modify work items](#permissions-access) 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-- Use different [work item types (WITs)](#wit) to track different types of information.  
-- Update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
-- [Specify how bugs should be tracked](#track), either as requirements or as tasks
-- Add and modify work items using the [web portal and other supported clients](#portal-clients)
-- [Assign a work item](#assign) to one and only one project member 
-- [Assign work items to a sprint](#assign-to-sprint) via the iteration path
-- [Link work items to other work items or Azure DevOps objects](#link) 
-- Run [impromptu search or queries to find or list work items](#queries)  
-- [Capture and apply work item templates](#templates) to quickly fill in work item field
-- [Add and customize work item types](#customize)
-- [Modify work items](#permissions-access) 
-
-::: moniker-end
 
 
 <a id="permissions-access" />
@@ -219,47 +199,11 @@ Ideally, work items are only created from the specific tool designed to support 
 
 ## Work item form 
 
-::: moniker range=">= tfs-2018" 
-
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. To learn more about each field, see [Work item field index](./guidance/work-item-field.md). 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017" 
-
-Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field. To learn more about each field, see [Work item field index](./guidance/work-item-field.md).
-
-::: moniker-end
 
 Each form contains multiple controls, as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
-::: moniker range=">= tfs-2018"
-
 ![Screenshot of Work item form to track features or user stories.](../backlogs/media/add-work-item-vsts-user-story-form.png)
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../../reference/manage-new-form-rollout.md).  
-
-**New web form**
-
-The new web form provides multiple experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
-
-![Screenshot of Work item form to track features or user stories, new web form.](../backlogs/media/add-work-item-vsts-user-story-form.png)
-
-**Old web form** 
-
-![Screenshot of Work item form to track features or user stories, old web form.](../backlogs/media/work-item-form-to-track-user-stories.png)
-
----
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-![Screenshot of Work item form to track features or user stories, Azure DevOps Server 2015 and earlier versions.](../backlogs/media/work-item-form-to-track-user-stories.png)
-::: moniker-end
 
 
 <a id="portal-clients"></a>  
@@ -357,12 +301,11 @@ Also, several tools support linking to other objects, such as builds, releases, 
 ::: moniker range=">= azure-devops-2019"
 ![Artifact-to-artifact link types](../queries/media/link-tracking-artifact-to-artifact-link-types.png)  
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  
 ::: moniker-end
 
 For a complete list of link types and supported features, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md) and [Link type reference](../queries/link-type-reference.md). 
-
 
 
 <a id="queries" />
@@ -402,7 +345,7 @@ You can add or modify the fields contained within a work item type or add a cust
 - For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 You can add or modify the fields contained within a work item type or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 

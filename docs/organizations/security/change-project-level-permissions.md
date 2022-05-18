@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 02/14/2022
+ms.date: 04/04/2022
 --- 
 
 
@@ -34,13 +34,16 @@ See the following articles for related information:
 
 [!INCLUDE [project-level-permissions](./includes/project-level-permissions.md)]
 
+> [!NOTE]
+> By default, Contributors are assigned the **Create tag definition** permission. Although the **Create tag definition** permission appears in the security settings at the project-level, tagging permissions are actually collection-level permissions that are scoped at the project level when they appear in the user interface. To scope tagging permissions to a single project when using a command-line tool, you must provide the GUID for the project as part of the command syntax. Otherwise, your change will apply to the entire collection. To learn more about work item tagging permissions, see [Security groups, service accounts, and permissions, Work item tags](permissions.md#work-item-tags). 
+
 ## Prerequisites
 
 - To manage permissions or groups at the project level, you must be a member of the **Project Administrators** security group. If you created the project, you are automatically added as a member of this group. To get added to this group, you need to request permissions from a member of the **Project Administrators** group. See [Look up a project administrator](look-up-project-administrators.md).
 - If want to add security groups defined in Azure Active Directory or Active Directory, make sure those are first defined. To learn more, see [Add AD/Azure AD users or groups to a built-in security group](add-ad-aad-built-in-security-groups.md).
 
 > [!NOTE]   
-> Users granted **Stakeholder** access, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+> Users granted **Stakeholder** access, aren't able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
  
 
 <a id="add-user-group" />
@@ -132,7 +135,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 

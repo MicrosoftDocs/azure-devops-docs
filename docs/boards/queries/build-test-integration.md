@@ -3,12 +3,13 @@ title: Build and test integration queries
 titleSuffix: Azure DevOps
 description: Learn how to track work by creating queries based on build and test integration fields in Azure Boards.
 ms.technology: devops-agile
+ms.custom: cross-service  
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021
+ms.date: 04/01/2022
 ---
 
 
@@ -39,7 +40,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
     **Rich-text (HTML)** 
@@ -527,17 +528,3 @@ For more information about Actions, see [Automate field assignments based on Sta
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
 - [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)  
 - [Link and attachment queries](linking-attachments.md)
-
-::: moniker range="tfs-2013"  
-
-### Availability of test work item types 
-
-Test Manager and the test work item types (WITs) use the following fields to track test plans, progress, and results. The availability of the WITs is based on the version of TFS installed on your application-tier. To learn more about using these WITs, see [Create a test plan](../../test/create-a-test-plan.md).
-
-|TFS 2013.0|TFS 2013.2|TFS 2013.3 and later versions|
-|---|---|---|
-|<ul><li>Bug</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li><li>Test Plan</li><li>Test Suite</li></ul>|
-
-To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
-
-::: moniker-end  

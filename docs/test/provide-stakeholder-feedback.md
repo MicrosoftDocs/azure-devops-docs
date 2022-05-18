@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Provide feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [version-gt-eq-2017](../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 <a name="provide"></a>
 Stakeholders and other users can respond to feedback requests using the 

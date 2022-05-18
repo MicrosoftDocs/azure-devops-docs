@@ -8,13 +8,13 @@ ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli  
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 04/30/2021
 ---
 
 # Configure Git repository policies using a configuration file
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 Branch policies help teams protect their important branches of development. Policies enforce your team's code quality and change management standards. For an overview of policy settings you can configure, see [Git repository settings and policies](../repos/git/repository-settings.md).
 

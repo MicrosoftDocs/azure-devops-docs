@@ -4,12 +4,12 @@ title: Set variables in scripts
 description: Learn how to define variables in Bash and PowerShell scripts and use them in your pipeline.
 ms.topic: conceptual
 ms.date: 09/14/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Set variables in scripts
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you use PowerShell and Bash scripts in your pipelines, it's often useful to be able to set variables that you can then use in future tasks. Scripts are great for when you want to do something that isn't supported by a task like calling a custom REST API and parsing the response. 
 
@@ -17,7 +17,7 @@ You'll use the `task.setvariable` logging command to set variables in [PowerShel
 
 ## About `task.setvariable`
 
-When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable will only be available to tasks in the same stage by default. If you add the parameter `isoutput`, the syntax to call your variable changes. See [Set an output variable in the same job](#set-an-output-variable-in-the-same-job).
+When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable will only be available to tasks in the same stage by default. If you add the parameter `isoutput`, the syntax to call your variable changes. See [Set an output variable for use in the same job](#set-an-output-variable-for-use-in-the-same-job).
 
 # [Bash](#tab/bash)
 
@@ -117,18 +117,18 @@ Output of PowerShell variable.
 
 There are four different types of output variables with distinct syntaxes:
 
-* [Output variables set in the same job without the `isoutput` parameter](#set-an-output-variable-in-the-same-job). To reference these variables, you'll use macro syntax. Example: `$(myVar)`.
-* [Output variables set in the same job with the `isoutput` parameter](#set-an-output-variable-in-the-same-job). To reference these variables, you'll include the task name. Example: `$(myTask.myVar)`.
-* [Output variables set in a future job](#set-an-output-variable-in-a-future-job). To reference these variables, you'll reference the variable in the `variables` section with `dependency` syntax.  
-* [Output variables set in future stages](#set-a-variable-for-future-stages). To reference these variables, you'll reference the variable in the `variables` section with `stageDependencies` syntax.  
+* [Output variables set in the same job without the `isoutput` parameter](#set-an-output-variable-for-use-in-the-same-job). To reference these variables, you'll use macro syntax. Example: `$(myVar)`.
+* [Output variables set in the same job with the `isoutput` parameter](#set-an-output-variable-for-use-in-the-same-job). To reference these variables, you'll include the task name. Example: `$(myTask.myVar)`.
+* [Output variables set in a future job](#set-an-output-variable-for-use-in-future-jobs). To reference these variables, you'll reference the variable in the `variables` section with `dependency` syntax.  
+* [Output variables set in future stages](#set-an-output-variable-for-use-in-future-stages). To reference these variables, you'll reference the variable in the `variables` section with `stageDependencies` syntax.  
 
-## Set an output variable in the same job
+## Set an output variable for use in the same job
 
 When you use an output variable in the same job, you do not have to use the `isoutput` property. By default, the variable will be available to downstream steps within the same job. However, if you do add the `isoutput` property, you'll need to reference the variable with the task name. 
 
 # [Bash](#tab/bash)
 
-Set the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput`. 
+The script below sets the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput=true`.
 
 ```yaml
 jobs:
@@ -141,7 +141,7 @@ jobs:
     name: setOutput
 ```
 
-Get the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isoutput` is added. 
+This script gets the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isoutput=true` is added. 
 
 ```yaml
 jobs:
@@ -160,7 +160,7 @@ jobs:
 
 # [PowerShell](#tab/powershell)
 
-Set the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput`. 
+This script sets the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput=true`. 
 
 ```yaml
 jobs:
@@ -173,7 +173,7 @@ jobs:
     name: setOutput
 ```
 
-Get the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isoutput` is added. 
+This script gets the same-job variables `myJobVar` and `myOutputJobVar`. Notice that the syntax changes for referencing an output variable once `isoutput=true` is added. 
 
 ```yaml
 jobs:
@@ -191,13 +191,13 @@ jobs:
 ```
 
 ---
-## Set an output variable in a future job
+## Set an output variable for use in future jobs
 
-When you use output variables across jobs, you'll reference them with `dependencies`. Learn more about [dependencies](expressions.md). 
+When you use output variables across jobs, you'll reference them with `dependencies`. The syntax for accessing an output variable in a future job or stage varies based on the relationship between the setter and consumer of the variable. Learn about each case in [dependencies](expressions.md#dependencies).
 
 # [Bash](#tab/bash)
 
-Set the output variable `myOutputVar`.
+First, set the output variable `myOutputVar`.
 
 ```yaml
 jobs:
@@ -209,7 +209,7 @@ jobs:
 
 ```
 
-Pass `myOutputVar` to a different job and output the variable as `myVarFromJobA`. To use `dependencies`, you need to set `dependsOn`. 
+Next, access `myOutputVar` in a future job and output the variable as `myVarFromJobA`. To use `dependencies`, you need to set the `dependsOn` property on the future job using the name of the past job in which the output variable was set.
 
 ```yaml
 jobs:
@@ -229,7 +229,7 @@ jobs:
 
 # [PowerShell](#tab/powershell)
 
-Set the output variable `myOutputVar`.
+First, set the output variable `myOutputVar`.
 
 ```yaml
 jobs:
@@ -240,7 +240,7 @@ jobs:
     name: passOutput
 ```
 
-Pass `myOutputVar` to a different job and output the variable as `myVarFromJobA`. To use `dependencies`, you need to set `dependsOn`. 
+Next, access `myOutputVar` in a future job and output the variable as `myVarFromJobA`. To use `dependencies`, you need to set the `dependsOn` property on the future job using the name of the past job in which the output variable was set.
 
 ```yaml
 jobs:
@@ -259,16 +259,16 @@ jobs:
 ```
 ---
 
-## Set a variable for future stages
+## Set an output variable for use in future stages
 
 Output variables can be used across stages in pipelines. This helps you pass useful information, such as the ID of a generated output, from one stage to the next. 
 
-When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md). 
+When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md#stage-depending-on-job-output). 
 
 
 # [Bash](#tab/bash)
 
-Set the output variable `myStageVal`.
+First, set the output variable `myStageVal`.
 
 ```yaml
 steps:
@@ -276,7 +276,7 @@ steps:
       name: MyOutputVar
 ```
 
-Pass `myStageVal` to a different stage and output the variable as `myStageAVar`. 
+Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
 
 ```yaml
 stages:
@@ -298,7 +298,7 @@ stages:
 
 # [PowerShell](#tab/powershell)
 
-Set the output variable `myStageVal`.
+First, set the output variable `myStageVal`.
 
 ```yaml
     steps:
@@ -306,7 +306,7 @@ Set the output variable `myStageVal`.
        name: MyOutputVar
 ```
 
-Pass `myStageVal` to a different stage and output the variable as `myStageAVar`. 
+Then, in a future stage, map the output variable `myStageVal` to a stage, job, or task-scoped variable as, for example, `myStageAVar`. Note the mapping syntax uses a runtime expression `$[]` and traces the path from `stageDependencies` to the output variable using both the stage name (`A`) and the job name (`A1`) to fully qualify the variable.
 
 ---
 

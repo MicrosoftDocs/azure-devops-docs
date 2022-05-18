@@ -8,7 +8,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2021
+ms.date: 04/01/2022
 ---
 
 # Start using your Kanban board
@@ -95,7 +95,7 @@ The system automatically saves the work item with the title you entered. You can
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To add a work item, select the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus sign, enter a title, and then press Enter. 
 
@@ -120,6 +120,8 @@ To customize the set of fields displayed on the card, see [Customize cards](../.
 
 As work completes in one stage, update the status of an item by dragging it to a downstream stage. 
 
+[!INCLUDE [temp](../includes/note-closed-items.md)]
+
 ::: moniker range="<= azure-devops-2020"
 
 > [!NOTE]   
@@ -130,46 +132,33 @@ As work completes in one stage, update the status of an item by dragging it to a
 ![Kanban board, Agile template, update status of work item](media/ALM_CC_MoveCard.png)  
 
 
-::: moniker range=">= tfs-2015"
-
 ## Update fields from the card 
 
 You can quickly update a field or reassign ownership directly from the board. If the field you want to update isn't showing, then [customize the card to show it](../../boards/boards/customize-cards.md). 
 
 ![Kanban, assign items](media/ALM_CC_UpdateFieldOnCard.png)
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 ### Filter your board using keywords, field values, or tags
 
 You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. To learn more about applying filters, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 ![Enable kanban field-based filtering, earlier versions](../backlogs/media/filter-boards/filter-kb-choose-filter.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
 For example, here we filter for all items assigned to Jamal and Raisa.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter on assignment field](../backlogs/media/filter-boards/filter-kb-filters-chosen-services.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="< azure-devops-2020"
 
 ![Kanban board, Filter on assignment field, earlier versions](../backlogs/media/filter-boards/filter-kb-filters-chosen.png)
 ::: moniker-end
-
-
 
 
 ## Invite others to work on your Kanban board 
@@ -190,7 +179,7 @@ All members of a project can view and contribute to your Kanban board. To invite
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Browser URL for the Kanban board](media/kanban-basics-url.png)
 

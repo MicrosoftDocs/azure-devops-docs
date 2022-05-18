@@ -9,25 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '< azure-devops'
-ms.date: 03/01/2022
+ms.date: 04/04/2022
 ---
 
 # Change the maximum attachment size for work items
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
- 
-::: moniker range="> tfs-2017"
-
 By default, Azure DevOps Server limits the size of work item attachments to 60 MB. You can use the web service to increase the size of files you attach to up to 2GB. 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-By default, Team Foundation Server limits the size of work item attachments to 4 MB. You can use the web service to increase the size of files you attach to up to 2GB. 
-
-::: moniker-end
   
 1.  If you're not a member of the **Team Foundation Administrators** group, [get added as one](/azure/devops/server/admin/add-administrator?view=azure-devops-2020&preserve-view=true).    
   

@@ -9,8 +9,9 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
+
 
 # CMMI process work item types and workflow in Azure Boards
 
@@ -44,7 +45,7 @@ Later, you can open each requirement to provide more details and estimate its si
 Instead, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md). 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 Instead, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
 ::: moniker-end
 
@@ -64,6 +65,7 @@ Use the following guidance and that provided for [fields used in common across w
    **Usage**
    :::column-end:::
   :::row-end:::
+   ---
   :::row:::
    :::column span="1":::
    
@@ -274,6 +276,7 @@ Use the following guidance and that provided for [fields used in common across w
 
    :::column-end:::
   :::row-end:::
+  ---
 
 [!INCLUDE [temp](../../includes/discussion-tip.md)] 
 
@@ -466,188 +469,4 @@ Work items you add from the widget are automatically scoped to your team's defau
 The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of requirements, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
 
 This field doesn't appear on the work item form. 
-
-::: moniker range="<= tfs-2015"
-
-### Links control, client work item form 
-
-Work item forms displayed in a client and the web portal for TFS 2015 and earlier versions display link tabs and link control restrictions as described in the following table. 
-
-:::row:::
-   :::column span="1":::
-   **Tab name**
-   :::column-end:::
-   :::column span="3":::
-   **Work item type**
-   :::column-end:::
-   :::column span="3":::
-   **Link restrictions**
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-   **All Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Requirement
-
-   Bug
-
-   Change Request
-
-   Feedback Request
-
-   Issue
-
-   Review
-
-   Risk
-
-   Shared Steps
-
-   Task
-
-   Test Case
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - No restrictions.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Implementation**
-
-   :::column-end:::
-   :::column span="3":::
-   Task
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Parent** and **Child** links between requirements and tasks.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Links**
-
-   :::column-end:::
-   :::column span="3":::
-   Code Review Request
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Parent** and **Child** links to Code Review Response work items.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Requirements**
-
-   :::column-end:::
-   :::column span="3":::
-   Change Request
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Affects** link type to link change requests to requirements.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Stories**
-
-   :::column-end:::
-   :::column span="3":::
-   Feedback Response
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Related** links to requirements.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Storyboards**
-
-   :::column-end:::
-   :::column span="3":::
-   Requirement
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Storyboard** links.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Test Cases**
-
-   :::column-end:::
-   :::column span="3":::
-   Requirement
-
-   Bug
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tested By** links.
-
-   - Allows links only to test cases.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   **Tested Requirements**
-
-   :::column-end:::
-   :::column span="3":::
-   Test case
-
-   :::column-end:::
-   :::column span="3":::
-   
-   - Allows only **Tests** links.
-
-   - Allows links only to requirements.
-
-   - Excludes links to work items in other projects.
-
-   
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
+ 

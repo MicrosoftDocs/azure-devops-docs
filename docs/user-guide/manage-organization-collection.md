@@ -6,13 +6,13 @@ ms.technology: devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>=tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 02/28/2022
 ---
 
 # Get started managing your organization or project collection
 
-[!INCLUDE [version-gt-eq-2018](../includes/version-gt-eq-2018.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
 After you create an organization or project collection, you'll want to add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks you'll want to review to ensure you're setting up your organization or collection to get maximal use of your services. 
 
@@ -40,7 +40,7 @@ For small and large enterprises, you can add users and security groups directly 
 ::: moniker range="< azure-devops" 
 For large enterprises, the recommended method to manage Azure DevOps users, is to connect Azure DevOps to Active Directory (AD) and manage user access through security groups defined in AD. That way, when you add and remove users or groups from AD, you automatically add and remove these same users and groups from Azure DevOps. Typically, you should install Active Directory before installing Azure DevOps. You limit the maintenance of managing permissions and user access.
 
-For small and large enterprises, you add users to a server instance through the web portal **Access levels** interface. All users added to the server instance can be added to to one or more projects defined within the project collection(s) defined in the server instance. 
+For small and large enterprises, you add users to a server instance through the web portal **Access levels** interface. All users added to the server instance can be added to one or more projects defined within the project collection(s) defined in the server instance. 
 ::: moniker-end 
 
 When you add users, you specify their *access level* which determines the features they can use through the web portal. To learn more, review these resources:  
@@ -266,6 +266,15 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 ::: moniker-end
  
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Alert users with information banners
+
+You can quickly communicate with your Azure DevOps users through information banners. Use banners to alert your Azure DevOps users to upcoming changes or events without sending mass emails. To learn how, see [Add and manage information banners](../organizations/settings/manage-banners.md). 
+::: moniker-end 
+
 
 ## Review and update notifications
 

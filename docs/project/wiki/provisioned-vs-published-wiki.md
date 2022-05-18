@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
-ms.date: 06/07/2021  
+monikerRange: '<= azure-devops'
+ms.date: 05/05/2022  
 ---
 
 # Provisioned wikis vs. published code as a wiki
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 
@@ -114,23 +114,20 @@ To learn more, see [Version, select, or unpublish a published wiki](wiki-select-
 
 ## Delete project wiki
 
-Deleting a project wiki isn't supported with wiki APIs, but you can delete the wiki repository by completing the following steps.
 
-1. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
+1. Get the wiki corresponding to the wiki ID or wiki name provided. For more information, see [Wikis - Get REST API](/rest/api/azure/devops/wiki/wikis/get?view=azure-devops-rest-6.0&preserve-view=true).
 
-   :::image type="content" source="media/wiki/clone-wiki.png" alt-text="Clone the wiki repository":::
+```HTTP
+GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0
+``` 
 
-2. Get the git repository ID that is backing this wiki. Use [this REST API](/rest/api/azure/devops/wiki/wikis/get) to get all the wikis in the project.
+   You can also get all wikis in a project or collection. For more information, see [Wikis - List REST API](/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-6.0&preserve-view=true)
    
-   For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
-   This returns all the wikis in the project, "sampleProject". Here you can get the repository ID of the wiki that you want to delete.
+2. Delete the wiki corresponding to the wiki ID or wiki name provided. For more information, see [Wikis - Delete REST API](/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-6.0&preserve-view=true).
 
-   :::image type="content" source="media/wiki/clone-repository.png" alt-text="Clone the wiki repository, copy the URL":::
-
-3. Use the following REST API to delete the git repository.
-	
-    For example: DELETE https://dev.azure.com/fabrikam/_apis/git/repositories/{repositoryId}?api-version=4.1
-	Use the repository ID of the project wiki found using the previous step. Ensure that the repository ID matches the project wiki that you want to remove.
+```HTTP
+DELETE https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0
+```
 
 ## Update a wiki by working offline
 

@@ -8,13 +8,13 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
-monikerRange: '>= tfs-2018'
-ms.date: 10/22/2021 
+monikerRange: '<= azure-devops'
+ms.date: 04/02/2022  
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -51,33 +51,105 @@ Consistency is maintained in the formatting in TOC.
 
 ## Add Mermaid diagrams to a Wiki page
 
-Wiki supports the following Mermaid diagram types:
+Mermaid lets you create diagrams and visualizations using text and code. Wiki supports the following Mermaid diagram types:
 
 - [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-- [Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
-- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
+- [Gantt charts](https://mermaid-js.github.io/mermaid/#/gantt)
+- [Flowcharts](http://mermaid-js.github.io/mermaid/#/flowchart)
 
-To add Mermaid diagrams to a wiki page, use the following syntax:
+> [!NOTE]
+> - Not all syntax in the previously linked content for diagram types works in Azure DevOps. For example, we don't support most HTML tags, Font Awesome, or LongArrow `---->`. 
+> - Mermaid isn't supported in the Internet Explorer browser.
+
+To add a Mermaid diagram to a wiki page, use the following syntax:
 
 ``` wiki-mermaid
 ::: mermaid
 <mermaid diagram syntax>
 :::
 ```
+### Sequence diagram example
 
-There's also a toolbar button to add a default Mermaid diagram to a wiki page.
+A sequence diagram is an interaction diagram that shows how processes operate with one another and in which order.
 
-![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
+```markdown
+::: mermaid
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-sequence-diagram.png" alt-text=".":::
+
+### Gantt chart example
+
+A Gantt chart records each scheduled task as one continuous bar that extends from the left to the right. The x axis represents time and the y records the different tasks and the order in which they're to be completed.
+
+When you exclude a date, day, or collection of dates specific to a task, the Gantt chart accommodates those changes by extending an equal number of days toward the right, not by creating a gap inside the task.
+
+```markdown
+::: mermaid
+gantt
+    title A Gantt chart
+    dateFormat YYYY-MM-DD
+    excludes 2022-03-16,2022-03-18,2022-03-19
+    section Section
+
+    A task          :a1, 2022-03-07, 7d
+    Another task    :after a1 , 5d
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-gantt-chart.png" alt-text="image showing the Mermaid Live Editor with code and preview for Gantt chart.":::
+
+### Flowchart example
+
+A flowchart is composed of nodes, geometric shapes and edges, and arrows or lines.
+The following example shows a flowchart using `graph` rather than `flowchart`. 
 
 > [!NOTE]
->
-> - Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax.
-> - Mermaid isn't supported in the Internet Explorer browser.
-> - The previous diagram-type links go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, for flowcharts we support the LongArrow `---->` in Mermaid live editor, but not in Azure DevOps.
+> We don't support `---->` or `flowchart` syntax, nor links to and from `subgraph`.
+
+```
+:::mermaid
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge) --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+:::
+```
+
+:::image type="content" source="media/wiki/wiki-mermaid-flowchart.png" alt-text="image showing the Mermaid Live Editor with code and preview for flowchart.":::
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
+## Add a collapsible section
+
+To add a collapsible section in a wiki page, use the following syntax:
+
+```html
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+```
+
+:::image type="content" source="media/wiki/add-collapsible-section-wiki.png" alt-text="Screenshot showing markdown on one side and how the collapsible section renders on the other.":::
+
+Make sure to add an empty line in the following areas:
+
+- after the closing `</summary>` tag, otherwise the markdown/code blocks don't show correctly
+- after the closing `</details>` tag if you have multiple collapsible sections
 
 ## Embed videos in a Wiki page
 
@@ -95,38 +167,6 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 (The ending ":::" is required to prevent a break in the page)
-
-## YAML tags
-
-Any file that contains a YAML block in a Wiki gets processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic data types, lists, and objects as values. The syntax is supported in wiki, code file preview.
-
-Basic example:
-
-```yaml
----
-tag: post
-title: Hello world
----
-```
-
-![YAML tag, basic example](media/wiki/yaml_basic_example.png)
-
-Tags with list:
-```yaml
----
-tags:
-- post
-- code
-- web
-title: Hello world
----
-```
-
-![YAML tags with list example](media/wiki/yaml_tags_with_list.png)
-
-
-
-
 
 ## Embed Azure Boards query results in Wiki
 
@@ -185,19 +225,12 @@ Use the batch API `pagesBatch` to see the daily quantity of visits to all pages 
 
 ## Link to work items from a Wiki page
 
-::: moniker range="> tfs-2018"
-
 Enter the pound sign (`#`), and then enter a work item ID.
 
-::: moniker-end
-
 ::: moniker range="tfs-2018"
-
 > [!NOTE]
 > This feature is available with TFS 2018.2 and later versions.
-
 ::: moniker-end
-
 
 <a name="html"></a>
 
@@ -216,11 +249,8 @@ In wiki pages, you can also create rich content using HTML tags.
 </p>
 ```
 
-::: moniker range=">= tfs-2018"
-
 > [!NOTE]
 > Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
-
 
 **Example - Embedded video**
 
@@ -271,8 +301,6 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
 <p><big>Bigger text</big></p>
 -->
-
-::: moniker-end
 
 ## Related articles
 

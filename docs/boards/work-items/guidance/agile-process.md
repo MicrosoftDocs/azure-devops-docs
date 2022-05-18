@@ -9,9 +9,8 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
-
 
 # Agile process work item types 
 
@@ -49,7 +48,7 @@ You can manage your workload more effectively by frequently reviewing the status
 
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Agile work item queries](media/IC667910.png)  
 
@@ -76,7 +75,7 @@ To get started, you can define a shared flat query and create a chart based on y
 
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 <a id="reports"></a>
 
 ## SQL Server reports
@@ -87,21 +86,10 @@ If you need to add reporting services or update reports to the latest versions, 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-<a id="dashboards"></a>
-
-## SharePoint portal dashboards
-
-You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to complete common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
-
-To use [SharePoint dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards), your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
-
-::: moniker-end
 
 ## Related articles
 
 [!INCLUDE [temp](../../includes/create-team-project-links.md)]  
-
 
 ### Agile process versions  
 
@@ -123,7 +111,7 @@ For a summary of updates made to process templates, see [Changes made to process
 
 <a id="predefined-queries" />
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Agile process predefined queries 
 
@@ -139,7 +127,7 @@ Product owners can use the shared queries that are defined in the following tabl
    Description
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Product Backlog
@@ -179,7 +167,7 @@ The project administrator for each project [defines area and iteration paths](..
    **Description**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Active Bugs
@@ -208,7 +196,7 @@ The project administrator for each project [defines area and iteration paths](..
    :::column span="3":::
    Lists all active bugs that aren't assigned to a team member.
 
-   The [Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) this query. 
+   The [Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) this query. 
 
    :::column-end:::
 :::row-end:::
@@ -240,7 +228,7 @@ The project administrator for each project [defines area and iteration paths](..
    :::column span="3":::
    Lists all issues under the specified iteration path that aren't closed and any tasks that are linked to the issues and then sorts the issues by rank and priority.
 
-   The [Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) references this query. 
+   The [Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) references this query. 
 
    :::column-end:::
 :::row-end:::
@@ -306,17 +294,4 @@ The project administrator for each project [defines area and iteration paths](..
 The **Work Items With Summary Values** shared query, which is located in the **Troubleshooting** folder, lists all tasks that have child tasks and that contain non-zero values in the Remaining Work or Completed Work fields. This query is designed to find tasks that report work effort that is already accounted for in their child tasks. For the hours to be counted only once, summary tasks shouldn't be assigned any hours. For more information, see [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md).
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-### Workbooks
-
-You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. 
-Each workbook references a shared query.  
-
--  The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Open Issues shared query
--  The [Triage workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Untriaged Work Items shared query  
-
-Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
-
-::: moniker-end
+ 

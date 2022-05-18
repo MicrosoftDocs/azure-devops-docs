@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/01/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to VMware vCenter Server
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -32,7 +32,7 @@ You need to first configure how Azure DevOps Server connects to vCenter. You hav
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
 You need to first configure how TFS connects to vCenter. You have to a setup a self-hosted agent that can communicate with the vCenter server.
 

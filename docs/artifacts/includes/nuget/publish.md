@@ -14,7 +14,7 @@ Here's how to connect to your feed and set up your project.
 
 ## Install and publish a sample NuGet package  
 
-If you don't have a NuGet package but want to try publishing your package to your feed, you can install the _HelloWorld_ sample package.
+If you don't have a NuGet package but want to practice the steps to publish NuGet packages to your feed, you can install the _HelloWorld_ sample package.
 
 1. Install the sample NuGet package:
 
@@ -22,7 +22,7 @@ If you don't have a NuGet package but want to try publishing your package to you
    nuget install HelloWorld -ExcludeVersion
    ```
 
-1. Set up your nuget.config file and publish your package to your feed
+1. Set up your nuget.config file and publish your package to your feed:
 
    ```Command
    nuget sources add -Name <SourceName> -Source <SourceURL> -username <UserName> -password <Pat>

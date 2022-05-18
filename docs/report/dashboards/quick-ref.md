@@ -8,13 +8,14 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2015'
-ms.date: 09/28/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
+
 
 # Dashboards, charts, and quick reference 
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
  
@@ -108,8 +109,8 @@ Use this index to quickly access information on tasks for configuring or accessi
       ::: moniker-end
       ::: moniker range="<= azure-devops-2019"
       **SQL Reports** 
-      - [SQL Server reports](../../report/sql-reports/reporting-services-reports.md)  
-      - [Excel work tracking reports](../../report/admin/create-status-and-trend-excel-reports.md)  
+      - [SQL Server reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
+      - [Excel work tracking reports](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)  
       ::: moniker-end
       **Widgets** 
       ::: moniker range=">= azure-devops-2019"
@@ -144,7 +145,7 @@ In context reports appear on the **Analytics** tab of these specific service pag
 In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 In-context reports appear on specific service pages, such as **Work>Backlog**, **Work>Backlogs** and **Build and Release>Builds**. 
 ::: moniker-end

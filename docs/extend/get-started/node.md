@@ -4,7 +4,7 @@ title: Develop a web extension for Azure DevOps
 description: Tutorial for creating your first web extension for Azure DevOps.
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/27/2021
@@ -12,7 +12,7 @@ ms.date: 09/27/2021
 
 # Develop a web extension
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use extensions to enhance Azure DevOps with new web experiences, dashboard widgets, build tasks, and more. You can develop extensions using standard technologies like HTML, JavaScript, and CSS. They're packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 
@@ -238,7 +238,7 @@ To test an extension, it must be installed to an organization in Azure DevOps. I
 
 4. In the Marketplace, select your extension to open its overview page.
 
-:::moniker range="<= tfs-2018"
+:::moniker range="tfs-2018"
 
    <img src="media/details-page.png" alt="Overview page" /> 
 
@@ -267,7 +267,7 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 
 1. Select **Proceed to organization** at the end of the installation wizard to navigate to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
 
-:::moniker range="<= tfs-2018"
+:::moniker range="tfs-2018"
 
 2. Select any of the projects listed to navigate into it:
 

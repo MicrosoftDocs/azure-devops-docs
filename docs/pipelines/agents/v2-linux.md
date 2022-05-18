@@ -5,14 +5,14 @@ description: Learn how you can easily deploy a self-hosted agent on Linux for Az
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.date: 09/20/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Self-hosted Linux agents
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -73,12 +73,12 @@ You can install those dependencies on supported Linux platforms by running `./bi
 >
 > Please also make sure that all required repositories are connected to the relevant package manager used in `installdependencies.sh` (like `apt` or `zypper`).
 > 
-> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for futher support.
+> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for further support.
 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 **TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
 We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
@@ -173,9 +173,9 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
@@ -195,21 +195,6 @@ If you're using a self-hosted agent and facing issues with TEE downloading, you 
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-### TFS 2015
-
-1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
-
-1. Follow the instructions on that page to download the agent.
-
-1. Configure the agent.
-
-   ```
-   ./config.sh
-   ```
-
-::: moniker-end
 
 ### Server URL
 
@@ -225,17 +210,12 @@ Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
-TFS 2017 and newer: `https://{your_server}/tfs`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-TFS 2015: `http://{your_server}:8080/tfs`
+TFS 2018: `https://{your_server}/tfs`
 
 ::: moniker-end
+
 
 ### Authentication type
 

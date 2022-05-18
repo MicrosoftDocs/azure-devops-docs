@@ -56,7 +56,7 @@ The following sections describe attributes, child elements, and parent elements.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[Control](control-xml-element-reference.md)|Required parent element. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
+|[Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)|Required parent element. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
 |[Text](labeltext-and-text-xml-elements-reference.md)|Optional `LabelText` element.<br /> Container element for the information or label to appear on the work item form.<br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
   
 ## Remarks
@@ -95,4 +95,4 @@ The following example shows how to load a work item form with HTML defined in a 
 
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)   
--  [Design the work item form](design-work-item-form.md)
+-  [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)

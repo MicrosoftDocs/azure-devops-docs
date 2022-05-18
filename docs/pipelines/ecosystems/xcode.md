@@ -6,12 +6,12 @@ ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
 ms.author: vijayma
 author: vijayma
 ms.date: 10/27/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build, test, and deploy Xcode apps
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to build and deploy Xcode projects with Azure Pipelines. 
 

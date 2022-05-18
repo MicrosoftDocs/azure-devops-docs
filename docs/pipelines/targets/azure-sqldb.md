@@ -4,15 +4,13 @@ description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: conceptual
 ms.custom: seodec18
-ms.author: atulmal
-author: azooinmyluggage
-ms.date: 02/01/2022
-monikerRange: '>= tfs-2017'
+ms.date: 04/20/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -43,9 +41,9 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -162,6 +160,7 @@ Add the following to your azure-pipelines.yml file to run a SQL script.
 variables:
   AzureSubscription: '<Azure service connection>'
   ServerName: '<Database server name>'
+  ServerFqdn: '<SQL Database FQDN>'
   DatabaseName: '<Database name>'
   AdminUser: '<SQL user name>'
   AdminPassword: '<SQL user password>'
@@ -173,29 +172,29 @@ steps:
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\SetAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
 - task: CmdLine@1
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
-    arguments: '-S $(ServerName) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
+  arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
 - task: AzurePowerShell@2
   displayName: Azure PowerShell script: FilePath
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName)'
+    ScriptArguments: '$(ServerName) -ResourceGroup $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 ```
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -257,9 +256,9 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 

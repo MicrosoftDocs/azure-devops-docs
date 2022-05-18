@@ -6,14 +6,14 @@ ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
 ms.technology: devops-code-git 
 ms.topic: reference
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ---
 
 
 #  Git command reference 
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 <a name="set_up"></a>

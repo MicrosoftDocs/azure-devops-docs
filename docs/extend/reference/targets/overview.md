@@ -1,5 +1,4 @@
 ---
-
 title: Extension Points
 titleSuffix: Azure DevOps
 description: Browse through the places where your extension can extend Azure DevOps.
@@ -7,13 +6,14 @@ ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.technology: devops-ecosystem
 ms.author: chcomley
 author: chcomley
+monikerRange: '<= azure-devops'
 ms.topic: overview
 ms.date: 02/24/2022
 ---
 
 # Extensibility points
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Extensions enhance the Azure DevOps user experience by contributing new capabilities. In this article, we highlight the most common extensibility points that your extension can target. To learn more about the Azure DevOps extensibility model, see the [Contribution model](../../develop/contributions-overview.md) for an overview.
 
@@ -194,7 +194,7 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 <a name="menus_build"></a>
 <a name="menu_release"></a>
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
 ### Azure Pipelines
 
@@ -209,9 +209,26 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`           | ![Release Summary Toolbar Menu](media/release/releaseSummaryToolbarMenu.png)| 
 | Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                   | ![Release Summary Tab](media/release/releaseSummaryTab.png)| 
 | Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`            | ![Release Summary Section](media/release/releaseSummarySection.png)| 
-
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+### Azure Pipelines
+
+| Name                      | Target ID                                   | Preview | 
+| --------------------------|---------------------------------------------|-------------------| 
+| Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![Completed Build Actions](media/build/completedBuildActions.png)| 
+| Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![Build Definition Actions](media/build/buildDefinitionActions.png)| 
+| Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![Test Results Toolbar Action](../../media/extension_test_custom_action.png)| 
+| Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![Test Result Details Tab](../../media/extension_test_custom_tab.png)| 
+| Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![Definition Explorer Context Menu](media/release/definitionExplorerContextMenu.png)| 
+| Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![Definition Explorer Toolbar Menu](media/release/definitionExplorerToolbarMenu.png)| 
+| Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`           | ![Release Summary Toolbar Menu](media/release/releaseSummaryToolbarMenu.png)| 
+| Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                   | ![Release Summary Tab](media/release/releaseSummaryTab.png)| 
+| Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`            | ![Release Summary Section](media/release/releaseSummarySection.png)| 
+| Pipeline details view, header button                  | `ms.vss-build-web.pipelines-header-menu`            | ![Pipeline details view, header menu](media/build/header-menu.png)| 
+| Pipeline details view, folder context menu                  | `ms.vss-build-web.pipelines-folder-menu`            | ![Pipeline details view, folder context menu](media/build/folder-menu.png)| 
+::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 

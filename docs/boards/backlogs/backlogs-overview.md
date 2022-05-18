@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 12/03/2021
+ms.date: 04/28/2022
 ---
 
 
@@ -18,14 +18,7 @@ ms.date: 12/03/2021
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
-::: moniker range=">= tfs-2017"
 With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. Once you have your plan in place, you can start driving code development efforts. 
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. 
-
-::: moniker-end
 
 If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md). Review the settings to learn more about defining area and iteration paths and customizing your work item types. Backlogs are automatically created when you create a project or add a team. Each team has access to their own product, portfolio, and sprint backlogs as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools). 
 
@@ -42,7 +35,7 @@ In a nutshell, you use backlogs to:
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure you're working on the highest priority items first
 - [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
-- Quickly assign backlog items to team members and to sprints. You can use either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
+- Quickly assign backlog items to team members and to sprints. You can use either [bulk update](bulk-modify-work-items.md) or [drag to a sprint](../sprints/assign-work-sprint.md)
 - Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
 - Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
 - [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint
@@ -55,7 +48,7 @@ In a nutshell, you use backlogs to:
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure you're working on the highest priority items first
 - [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
-- Quickly assign backlog items to team members and to sprints\. You can use either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
+- Quickly assign backlog items to team members and to sprints\. You can use either [bulk update](bulk-modify-work-items.md) or [drag to a sprint](../sprints/assign-work-sprint.md)
 - Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
 - Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
 - [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint.
@@ -74,15 +67,9 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 !["Web portal, choose Boards>Backlogs](../work-items/media/view-add/view-stories-backlogs-standard.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-![Boards>backlogs, TFS 2015, 2013 web portal](media/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 
@@ -104,6 +91,11 @@ For details, see the following articles:
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
+
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [temp](../includes/tip-configure-backlog-view.md)]
+::: moniker-end
+
 
 ### Common backlog configurations for multiple teams 
 
@@ -133,7 +125,7 @@ You build your project plan by creating a backlog of work items. These items rep
 
 <a id="change-position"> </a> 
 
-The sequence of items on each backlog is determined according to where you've [added the items or moved the items on the page](create-your-backlog.md#move-items-priority-order). As you drag and drop items within the backlog list, a background process updates the [**Stack Rank** (Agile and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog Priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields are used by the system to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form. 
+The sequence of items on each backlog is determined according to where you've [added the items or moved the items on the page](create-your-backlog.md#move-items-priority-order). As you drag items within the backlog list, a background process updates the [**Stack Rank** (Agile and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog Priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields are used by the system to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form. 
 
 ![Reorder work items](media/create-backlog/cyb-order-backlog.png)  
 
@@ -143,17 +135,7 @@ The preferred method for bulk edit is to use multi-select to move items to the t
 
 ## In Progress items and work listed on the backlog 
 
-::: moniker range=">= tfs-2018" 
-
 Backlogs are designed to display work that corresponds to a Proposed, In Progress, or Resolved category state. Once you've completed work and its state enters a *Done*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work, or view the [**Recently completed** pivot from the **Work Items** page](../work-items/view-add-work-items.md). 
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2017" 
-
-Backlogs are designed to display work that is in progress. Once you've completed work and its state enters a *Done*, *Completed*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work. 
-
-::: moniker-end 
 
 In general, you'll want to display all items that are in the **In Progress** category state, which corresponds to the *Active* and *Committed* states. To focus on work that is proposed but not in progress, you can toggle the backlog view to turn off [**In Progress**](create-your-backlog.md#convert-ideas). This toggle is useful when [forecasting your product backlog](../sprints/forecast.md). 
 
@@ -221,7 +203,7 @@ Items that are owned by other teams appear with an information icon :::image typ
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Items that are owned by other teams appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::. 
 
@@ -233,20 +215,6 @@ Items that are owned by other teams appear with an information icon :::image typ
 
 ::: moniker-end   
 
-::: moniker range="tfs-2017" 
-
-Backlog displays the work item icons supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items owned by other teams appear with hollow-filled bars.  
-
-<img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership, TFS 2017 version." /> 
-::: moniker-end
-
-::: moniker range="<= tfs-2015" 
-
-Items that are owned by other teams appear with hollow-filled bars.  
-
-![Team backlog is filtered based on area path ownership, TFS 2015 and earlier versions.](media/ALM_OB_CustServTeamBacklog.png)  
-
-::: moniker-end   
 
 For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
 
@@ -270,7 +238,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 Here's another example that shows the **Epics** backlog for the **Management** team. 
 Drilling down, you can see all the backlog items and features, even though they 
@@ -278,12 +246,6 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 > [!div class="mx-imgBorder"]  
 > ![Example that shows the Epics backlog for the Management team, TFS 2017 and TFS 2018 versions.](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2015" 
-
-<img src="media/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" />  
 
 ::: moniker-end 
 
@@ -300,12 +262,11 @@ For example, you can create a team structure similar to this one with two manage
 
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
-
 ### Reordering and reparenting work items 
 
-All backlogs and boards support drag-and-drop to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
+All backlogs and boards support dragging to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
 
-You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it's owned by another team.  
+You can only use dragging to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it's owned by another team.  
  
 :::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
@@ -316,8 +277,6 @@ You can only use drag-and-drop to reorder or reparent work items assigned to are
 For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
-
-
 
 ## Permissions and access
 

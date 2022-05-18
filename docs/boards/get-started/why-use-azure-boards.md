@@ -100,7 +100,7 @@ Project managers who want to use familiar tools can import and export work item 
 - [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
 
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel. To learn more, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 

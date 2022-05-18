@@ -6,7 +6,7 @@ ms.technology:
 ms.topic: best-practice
 ms.author: chcomley
 author: chcomley
-monikerRange: '>=tfs-2013' 
+monikerRange: '<= azure-devops' 
 ms.date: 02/15/2022  
 ---
 
@@ -57,7 +57,7 @@ The system manages permissions at different levels - individual, external, serve
 
 ### Individual permissions
 
-For more information, see [Set individual permissions](change-individual-permissions.md).
+For more information, see [Set individual permissions](/azure/devops/organizations/security/request-changes-permissions).
 
 ### External guest access 
 
@@ -217,7 +217,7 @@ For more information, see the following articles:
 
 Always authenticate with identity services rather than cryptographic keys when available. Managing keys securely with application code is difficult and regularly leads to mistakes like accidentally publishing sensitive access keys to code repositories like GitHub. But, if you're using PATs, see the following recommendations:
 
-- Administrators should audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list.md) and revoke any PATs that don’t meet the following criteria for PATs in use: 
+- Administrators should audit all PATs using the [REST APIs](/rest/api/azure/devops/tokenadmin/personal-access-tokens/list) and revoke any PATs that don’t meet the following criteria for PATs in use: 
 
   - Should always be scoped (roles). 
   - Shouldn’t be global (can access more than one organization). 
@@ -261,7 +261,7 @@ For more information, see [Application management best practices](/azure/active-
 
 - Enable the *Limit user visibility for projects* preview feature for the organization, which restricts access to only those projects that you add users to.
 - Add users to the *Project-scoped users* group, so they can only see and select users and groups in the project that they're connected to from a people picker.
-::: monikerrange="azure-devops"
+::: moniker range="azure-devops"
 - Disable "Allow public projects" in your organization's policy settings to prevent every organization user from creating a public project. Azure DevOps Services allows you to change the visibility of your projects from public to private, and vice-versa. If users haven't signed into your organization, they have read-only access to your public projects. If users have signed in, they can be granted access to private projects and make any permitted changes to them.
 ::: moniker-end
 - Don’t allow users to create new projects. Use EasyStart “Governed Projects,” which require approval once they're submitted.

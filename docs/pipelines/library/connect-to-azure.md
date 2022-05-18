@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 10/15/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Connect to Microsoft Azure
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

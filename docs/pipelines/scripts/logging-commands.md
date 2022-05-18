@@ -5,12 +5,12 @@ ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
 ms.date: 02/28/2022
 ms.custom: contperf-fy21q3
-monikerRange: '>=tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Logging commands
 
-[!INCLUDE [version-gt-eq-2013](../../includes/version-gt-eq-2013.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
 They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you're troubleshooting a pipeline. 
@@ -300,7 +300,9 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables aren't passed into tasks as environment variables and must instead be passed as inputs.
 
-See [set variables in scripts](../process/variables.md#set-variables-in-scripts) for more details.
+When `isoutput` is set to `true` the syntax to reference the set variable varies based on whether you are accessing that variable in the same job, a future job, or a future stage. Additionally, if `isoutput` is set to `false` the syntax for using that variable within the same job is distinct. See [levels of output variables](../process/set-variables-scripts.md#levels-of-output-variables) to determine the appropriate syntax for each use case.
+
+See [set variables in scripts](../process/set-variables-scripts.md) and [define variables](../process/variables.md#set-variables-in-scripts) for more details.
 
 #### Properties
 

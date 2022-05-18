@@ -6,13 +6,13 @@ ms.assetid:
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 11/13/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Azure DevOps Plugin for IntelliJ IDEA and Android Studio
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
 The [Azure DevOps Plugin for IntelliJ](https://plugins.jetbrains.com/plugin/7981-azure-devops) allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.

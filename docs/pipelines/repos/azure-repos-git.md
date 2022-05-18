@@ -5,14 +5,14 @@ ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
 ms.date: 07/14/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Build Azure Repos Git or TFS Git repositories
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -54,7 +54,7 @@ To clone additional repositories as part of your pipeline:
 
 * If the access token (explained below) does not have access to the repository:
 
-    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`
+    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `PAT:`
     2. Base64-encode this string to create a basic auth token.
     3. Add a script in your pipeline with the following command to clone that repo
        `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
@@ -87,17 +87,9 @@ YAML pipelines aren't available in TFS.
 # [Classic](#tab/classic/)
 [!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
 
-::: moniker range=">= tfs-2017"
-**Azure Pipelines, TFS 2017.3 and newer**
-
 ![Configure continuous integration trigger branch filters.](media/ci-trigger-git-branches-neweditor.png)
-::: moniker-end
 
-::: moniker range="<= tfs-2017"
-**TFS 2017.1 and older versions**
 
-![CI trigger git branches, TFS 2017.1 and older.](media/ci-trigger-git-branches.png)
-::: moniker-end
 
 ---
 

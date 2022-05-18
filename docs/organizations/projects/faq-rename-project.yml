@@ -10,11 +10,11 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 12/07/2018
-  monikerRange: '>= tfs-2015'
+  ms.date: 04/04/2022
+  monikerRange: '<= azure-devops'
 title: Rename project FAQs
 summary: |
-  [!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
 
 sections:
@@ -52,16 +52,8 @@ sections:
       - question: |
           Do other artifacts in the project get renamed when it is renamed?
         answer: |
-          ::: moniker range=">= tfs-2018"
           Yes, all artifacts which share the same name get renamed along with the project. The only exceptions to this are for the default team and repo. The rename of these artifacts is performed as a best effort. 
-          For example, if a project *Foo* was renamed to *Bar*, the default team *Foo* would not be renamed if a team named *Bar* already existed in the project. 
-          ::: moniker-end
-          ::: moniker range=">= tfs-2013 <= tfs-2017"
-          
-          Yes, all artifacts which share the same name get renamed along with the project. The only exceptions to this are for the default team room, team, and repo. The rename of these artifacts is performed as a best effort. 
-          For example, if a project *Foo* was renamed to *Bar*, the default team *Foo* would not be renamed if a team named *Bar* already existed in the project. 
-          
-          ::: moniker-end
+          For example, if a project *Foo* was renamed to *Bar*, the default team *Foo* would not be renamed if a team named *Bar* already existed in the project.
           
       - question: |
           Why can't I open queries saved to a disk after a rename?
@@ -71,10 +63,11 @@ sections:
       - question: |
           Why does the existing Lab Management BDT in Visual Studio fail with the error 'oldprojectName' cannot be found?
         answer: |
-          ::: moniker range=">= tfs-2015"
           This issue is encountered when Build Controller 2013 is used with TFS 2015. To fix the issue, open the existing build pipeline, select the process tab under it, select the ellipses next to the Lab Process settings to
           open the Lab Workflow Parameters wizard, and then select **Finish**. The issue is permanently resolved by using the TFS 2015 Build Controller that ships with TFS 2015.
           
           ![Process Tab](media/rename-project/lab-build-process.png)
-          
-          ::: moniker-end
+
+additionalContent: |
+  ## Related articles
+  - [Rename a project](rename-project.md)

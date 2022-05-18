@@ -5,26 +5,19 @@ description: Learn about how you can write custom conditions in Azure Pipelines 
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.date: 01/21/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Specify conditions
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
-
-::: moniker range="tfs-2017"
-
-This article applies to TFS 2017.3 and higher.
-
-::: moniker-end
-
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can specify the conditions under which each stage, job, or step runs.
 By default, a job or stage runs if it does not depend on any other job or stage, or if all of the jobs or stages that it depends on have completed and succeeded.
 By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
 You can customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails or by specifying a custom condition.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -93,12 +86,6 @@ you can specify the conditions under which the task or job will run.
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
-
-::: moniker range="= tfs-2017"
-
-> In TFS 2017.3, custom task conditions are available in the user interface only for Build pipelines. You can use the Release [REST APIs](../../integrate/index.md) to establish custom conditions for Release pipelines.
-
-::: moniker-end
 
 Conditions are written as expressions in YAML pipelines.
 The agent evaluates the expression beginning with the innermost function and works its way out.
@@ -236,6 +223,34 @@ jobs:
   condition: eq(dependencies.Foo.outputs['DetermineResult.doThing'], 'Yes') #map doThing and check the value
   steps:
   - script: echo "Job Foo ran and doThing is Yes."
+```
+
+### Use the pipeline variable created from a step in a condition in a subsequent step
+
+You can make a variable available to future steps and specify it in a condition. By default, variables created from a step are available to future steps and do not need to be marked as [multi-job output variables](./variables.md#set-a-multi-job-output-variable) using `isOutput=true`.
+
+There are some important things to note regarding the above approach and [scoping](./variables.md#set-a-job-scoped-variable-from-a-script):
+
+- Variables created in a step in a job will be scoped to the steps in the same job.
+- Variables created in a step will only be available in subsequent steps as environment variables.
+- Variables created in a step cannot be used in the step that defines them.
+
+Below is an example of creating a pipeline variable in a step and using the variable in a subsequent step's condition and script.
+
+```yaml
+steps:
+
+# This step creates a new pipeline variable: doThing. This variable will be available to subsquent steps.
+- bash: |
+    echo "##vso[task.setvariable variable=doThing]Yes"
+  displayName: Step 1
+
+# This step is able to use doThing, so it uses it in its condition
+- script: |
+    # You can access the variable from Step 1 as an environment variable.
+    echo "Value of doThing (as DOTHING env var): $DOTHING."
+  displayName: Step 2
+  condition: and(succeeded(), eq(variables['doThing'], 'Yes')) # or and(succeeded(), eq(variables.doThing, 'Yes'))
 ```
 
 ## FAQ

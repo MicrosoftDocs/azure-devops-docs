@@ -3,7 +3,7 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 02/28/2022
+ms.date: 04/04/2022
 ---
 
 
@@ -26,7 +26,7 @@ To learn more, see these articles:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 - [On-premises XML process customization](../../reference/on-premises-xml-process-model.md)  
 - [Add or modify a field to track work](../../reference/add-modify-field.md)  

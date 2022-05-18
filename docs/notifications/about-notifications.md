@@ -7,7 +7,7 @@ ms.custom: quarterly-update
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 04/04/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -48,7 +48,7 @@ There are four types of notifications that you can manage in Azure DevOps. See t
 You can manage your personal notifications in the following manner.
 
 - View your notifications
-- Set alerts just for yourself
+- Set alerts only for yourself
 - View and edit all subscriptions
 - Add a custom subscription
 - Unsubscribe or opt out of a team or project subscription
@@ -130,7 +130,8 @@ The preferred email address for your organization profile gets notifications, by
 > [!NOTE]
 > Your preferred email address applies across all of your organizations and cannot be changed on a per-organization basis.
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=" < azure-devops"
+
 
 ## Integrating with other services
 

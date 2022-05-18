@@ -5,6 +5,7 @@ description: Learn how to add or edit a Delivery Plan in Azure Boards.
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
+ms.custom: cross-project  
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 01/19/2022

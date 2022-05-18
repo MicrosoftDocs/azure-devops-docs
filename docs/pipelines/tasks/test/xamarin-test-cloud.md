@@ -7,13 +7,13 @@ ms.custom: seodec18
 ms.author: shashban
 author: shashban
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Xamarin Test Cloud task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This task was used in a build or release pipeline to test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 

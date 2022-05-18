@@ -44,7 +44,7 @@ You access Azure DevOps Services through the left pane, as shown in the followin
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You access Azure DevOps Services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
 
@@ -79,7 +79,7 @@ From **Dashboards**, you gain access to user-configurable dashboards.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 <img src="../report/dashboards/media/dashboard-view-with-widgets.png" alt="Dashboard, Overview" />
 
@@ -106,7 +106,7 @@ Developers commit each set of changes and do version control operations like his
 > [!NOTE]
 > Git in Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
 
-With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server
+With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -116,7 +116,7 @@ From **Repos**, you gain access to your source control Git-based or Team Foundat
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
@@ -156,7 +156,7 @@ From **Boards**, you gain access to Agile tools to support planning and tracking
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 From **Work**, you gain access to Agile tools to support planning and tracking work.
 
@@ -193,7 +193,7 @@ The rapid and reliable release of software comes from automating as many process
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
@@ -220,7 +220,7 @@ Test features support manual and exploratory testing, and continuous testing.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 **Test** supports creating and managing manual tests.
 
@@ -269,42 +269,6 @@ The following services work across the previously mentioned services to support:
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-- Dashboards
-- Discussion within work item forms
-- Linking of work items, commits, pull requests and other artifacts to support traceability
-- Alerts and change notifications managed per user, team, project, or project collection  
-- Ability to request and manage feedback
-- Team (chat) rooms
-- SQL Server Reporting
-
-> [!NOTE]  
-> Team rooms are deprecated for TFS 2017.2. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-- Dashboards
-- Linking of work items, commits, pull requests, and other artifacts to support traceability
-- Alerts and change notifications managed per user or for teams  
-- Ability to request and manage feedback
-- Team (chat) rooms
-- SQL Server Reporting
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-
-- Team home page  
-- Linking of work items, commits, pull requests, and other artifacts to support traceability
-- Alerts and change notifications managed per user or for teams  
-- Ability to request and manage feedback
-- Team (chat) rooms
-- SQL Server Reporting
-
-::: moniker-end
-
 ## Service hooks
 
 Service hooks enable you to complete tasks on other services when events happen within your project hosted on Azure DevOps. For example, you can send a push notification to your team's mobile devices when a build fails. You can also use service hooks in custom apps and services as a more efficient way to drive activities in your projects.
@@ -340,7 +304,7 @@ There are features and tasks associated with administering a collaborative softw
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 <img src="media/tour-admin-project-level.png" alt="Product backlog" />
 

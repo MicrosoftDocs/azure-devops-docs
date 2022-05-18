@@ -39,7 +39,7 @@ To change your repo's default branch for merging new pull requests, you need at 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select the settings button in your project to open the project administration page.
 

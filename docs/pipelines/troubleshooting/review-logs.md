@@ -6,13 +6,13 @@ ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
 ms.date: 06/09/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 author: steved0x
 ---
 
 # Review logs to diagnose pipeline issues
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Pipeline logs provide a powerful tool for determining the cause of pipeline failures.
 

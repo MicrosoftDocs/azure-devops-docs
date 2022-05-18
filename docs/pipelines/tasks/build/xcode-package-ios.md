@@ -6,13 +6,13 @@ ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298
 ms.author: vijayma
 author: vijayma
 ms.date: 11/13/2017
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Xcode Package iOS task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to generate an .ipa file from Xcode build output.
 

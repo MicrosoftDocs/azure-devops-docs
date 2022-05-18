@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 2/11/2021
+ms.date: 5/6/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,15 +35,19 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="4"><strong>2022 Q1</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
-</tr>
 <tr><td rowspan="2"><strong>2022 Q2</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Boards</td><td>Future</td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944358 data-raw-source="[Improvements to Show More Items behavior on Kanban board](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944358)">Improvements to "Show More Items" behavior on Kanban board</a></td><td>Boards</td><td>Future</td>
+    </tr>
+<tr><td rowspan="3"><strong>2022 Q3</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032 data-raw-source="[Adding Assigned To avatar to child items on cards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032)">Adding Assigned To avatar to child items on cards</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313 data-raw-source="[Filter to work item history](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313)">Filter to work item history</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
+</tr>
+<tr><td rowspan="3"><strong>2022 Q4</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
 <tr><td rowspan="16"><strong>Future</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>General</td><td>N/A</td>
@@ -59,7 +63,6 @@ Each feature is linked to the public roadmap project where you can learn more ab
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289 data-raw-source="[Elastic self-hosted pools (Kubernetes)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289)">Elastic self-hosted pools (Kubernetes)</a></td><td>Pipelines</td><td>TBD</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423" data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Repos</td><td>Future</td> </tr>
    </tr>
@@ -80,6 +83,10 @@ This list includes features that are currently in preview. The "Released" column
         </tr>
     </thead>
     <tbody>
+<tr><td rowspan="2"><strong>2022 Q2</strong></td>
+    <td><a href=https://docs.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview data-raw-source="[New Boards Hubs](https://docs.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)">New Boards Hubs</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1943980 data-raw-source="[Ability to query for work items by Parent Id ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1943980)">Ability to query for work items by Parent Id </a></td><td>Boards</td><td>Future</td></tr>
+</tr>
 <tr><td rowspan="1"><strong>2021 Q4</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
 </tr>
@@ -115,13 +122,34 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="4"><a href="2022/sprint-203-update.md" data-raw-source="[4 May 2022](2022/sprint-203-update.md)"> 4 May 2022</a></td> 
+    <td>Query by Parent Id (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Move to column position on Kanban Board</td><td>Boards</td><td>Future</td></tr>
+    <td>Added "Will not Fix" value to Bug reason field</td><td>Boards</td><td>Future</td></tr>
+    <td>Upstream cross-organization packages</td><td>Artifacts</td><td>Future</td></tr>
+</tr>
+    <td rowspan="6"><a href="2022/sprint-202-update.md" data-raw-source="[20 April 2022](2022/sprint-202-update.md)"> 20 April 2022</a></td> 
+    <td>Auditing is now an opt-in feature for your organization</td><td>General</td><td>Future</td></tr>
+    <td>Fixed looping login issue due to incorrectly configured IP conditional access policies</td><td>General</td><td>Future</td></tr>
+    <td>Guest users will only see public user data</td><td>General</td><td>Future</td></tr>
+    <td>New Boards Hub now available in public preview</td><td>Boards</td><td>Future</td></tr>
+    <td>Extend YAML pipelines template to pass stage, job, and deployment context information</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updated retirement date for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
+</tr>
+    <td rowspan="4"><a href="2022/sprint-201-update.md" data-raw-source="[29 March 2022](2022/sprint-201-update.md)">29 March 2022</a></td> 
+    <td>Remove the ability to download a deleted attachment from work item history</td><td>Boards</td><td>Future</td></tr>
+    <td>New extension points for Pipelines details view</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved migration to Azure DevOps Services</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improvement to Pipelines Runs REST API</td><td>Pipelines</td><td>Future</td></tr>
+</tr> 
     <td rowspan="3"><a href="2022/sprint-200-update.md" data-raw-source="[28 February 2022](2022/sprint-200-update.md)">28 February 2022</a></td> 
     <td>Updates to Azure File Copy task</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvement to user interface</td><td>Artifacts</td><td>Future</td></tr>
     <td>Support for additional diagram types in wiki pages</td><td>Wiki</td><td>Future</td></tr>
 </tr> 
-    <td rowspan="2"><a href="2022/sprint-199-update.md" data-raw-source="[11 February 2022](2022/sprint-199-update.md)">11 February 2022</a></td> 
+    <td rowspan="3"><a href="2022/sprint-199-update.md" data-raw-source="[11 February 2022](2022/sprint-199-update.md)">11 February 2022</a></td> 
     <td>Improvements to strengthen security in Azure DevOps</td><td>General</td><td>Future</td></tr>
+    <td>Changes to third-party applications access</td><td>General</td><td>Future</td></tr>
     <td>Pipelines Agent runtime upgrade planning</td><td>Pipelines</td><td>N/A</td></tr>
 </tr> 
     <td rowspan="2"><a href="2022/sprint-198-update.md" data-raw-source="[19 January 2022](2022/sprint-198-update.md)">19 January 2022</a></td> 
@@ -1084,7 +1112,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 
 * TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
         <tr>
-            <td rowspan="22"><a href="/previous-versions/azure/devops/release-notes/2017/dec-11-vsts" data-raw-source="[11 Dec 2017](/previous-versions/azure/devops/release-notes/2017/dec-11-vsts)">11 Dec 2017</a></td>
+            <td rowspan="22"><a href="/previous-versions/azure/devops/2017/dec-11-vsts" data-raw-source="[11 Dec 2017](/previous-versions/azure/devops/2017/dec-11-vsts)">11 Dec 2017</a></td>
             <td>Track code pushes to a Git repo to builds and releases</td><td></td>
             <td><em>2018.2</em></td>
         </tr>
@@ -1110,7 +1138,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>TFX CLI changes for extension publish</td><td></td><td>N/A</td></tr>
         <tr><td>Cloud Solution Provider purchasing now generally available</td><td></td><td>N/A</td></tr>
         <tr>
-            <td rowspan="44"><a href="/previous-versions/azure/devops/release-notes/2017/nov-28-vsts" data-raw-source="[28 Nov 2017](/previous-versions/azure/devops/release-notes/2017/nov-28-vsts)">28 Nov 2017</a></td>
+            <td rowspan="44"><a href="/previous-versions/azure/devops/2017/nov-28-vsts" data-raw-source="[28 Nov 2017](/previous-versions/azure/devops/2017/nov-28-vsts)">28 Nov 2017</a></td>
             <td>Azure DevOps Project</td><td></td>
             <td>N/A</td>
         </tr>
@@ -1158,7 +1186,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Deprecating the PowerBI.com Content Pack</td><td></td><td>N/A</td></tr>
         <tr><td>Inviting directory guests to Azure AD-backed VSTS accounts</td><td></td><td>N/A</td></tr>
         <tr>
-            <td rowspan="12"><a href="/previous-versions/azure/devops/release-notes/2017/oct-30-vsts" data-raw-source="[30 Oct 2017](/previous-versions/azure/devops/release-notes/2017/oct-30-vsts)">30 Oct 2017</a></td>
+            <td rowspan="12"><a href="/previous-versions/azure/devops/2017/oct-30-vsts" data-raw-source="[30 Oct 2017](/previous-versions/azure/devops/2017/oct-30-vsts)">30 Oct 2017</a></td>
             <td>Modernized column options</td>
             <td></td><td><em>2018.2</em></td>
         </tr>
@@ -1207,7 +1235,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><em>2018.2</em></td>
         </tr>
         <tr>
-            <td rowspan="13"><a href="/previous-versions/azure/devops/release-notes/2017/oct-06-vsts" data-raw-source="[06 Oct 2017](/previous-versions/azure/devops/release-notes/2017/oct-06-vsts)">06 Oct 2017</a></td>
+            <td rowspan="13"><a href="/previous-versions/azure/devops/2017/oct-06-vsts" data-raw-source="[06 Oct 2017](/previous-versions/azure/devops/2017/oct-06-vsts)">06 Oct 2017</a></td>
             <td>New experience for code and work items searches</td>
             <td></td><td><em>2018.2</em></td>
         </tr>
@@ -1260,7 +1288,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><em>2018.2</em></td>
         </tr>
         <tr>
-            <td rowspan="25"><a href="/previous-versions/azure/devops/release-notes/2017/sep-15-team-services" data-raw-source="[15 Sep 2017](/previous-versions/azure/devops/release-notes/2017/sep-15-team-services)">15 Sep 2017</a></td>
+            <td rowspan="25"><a href="/previous-versions/azure/devops/2017/sep-15-team-services" data-raw-source="[15 Sep 2017](/previous-versions/azure/devops/2017/sep-15-team-services)">15 Sep 2017</a></td>
             <td>New Queries experience</td>
             <td></td><td><em>2019</em></td>
         </tr>
@@ -1361,7 +1389,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="29"><a href="/previous-versions/azure/devops/release-notes/2017/aug-28-team-services" data-raw-source="[28 Aug 2017](/previous-versions/azure/devops/release-notes/2017/aug-28-team-services)">28 Aug 2017</a></td>
+            <td rowspan="29"><a href="/previous-versions/azure/devops/2017/aug-28-team-services" data-raw-source="[28 Aug 2017](/previous-versions/azure/devops/2017/aug-28-team-services)">28 Aug 2017</a></td>
             <td>Work Items hub</td>
             <td></td><td><em>2019</em></td>
         </tr>
@@ -1478,7 +1506,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><em>2018.2</em></td>
         </tr>
         <tr>
-            <td rowspan="30"><a href="/previous-versions/azure/devops/release-notes/2017/aug-04-team-services" data-raw-source="[4 Aug 2017](/previous-versions/azure/devops/release-notes/2017/aug-04-team-services)">4 Aug 2017</a></td>
+            <td rowspan="30"><a href="/previous-versions/azure/devops/2017/aug-04-team-services" data-raw-source="[4 Aug 2017](/previous-versions/azure/devops/2017/aug-04-team-services)">4 Aug 2017</a></td>
             <td>Copy work item processes</td>
             <td></td><td>Future</td>
         </tr>
@@ -1598,7 +1626,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="20"><a href="/previous-versions/azure/devops/release-notes/2017/jul-14-team-services" data-raw-source="[14 Jul 2017](/previous-versions/azure/devops/release-notes/2017/jul-14-team-services)">14 Jul 2017</a></td>
+            <td rowspan="20"><a href="/previous-versions/azure/devops/2017/jul-14-team-services" data-raw-source="[14 Jul 2017](/previous-versions/azure/devops/2017/jul-14-team-services)">14 Jul 2017</a></td>
             <td>Migrate team projects between two inherited processes with the same parent</td>
             <td></td><td>Future</td>
         </tr>
@@ -1679,7 +1707,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="24"><a href="/previous-versions/azure/devops/release-notes/2017/jun-22-team-services" data-raw-source="[22 Jun 2017](/previous-versions/azure/devops/release-notes/2017/jun-22-team-services)">22 Jun 2017</a></td>
+            <td rowspan="24"><a href="/previous-versions/azure/devops/2017/jun-22-team-services" data-raw-source="[22 Jun 2017](/previous-versions/azure/devops/2017/jun-22-team-services)">22 Jun 2017</a></td>
             <td>Fields can be shared across processes</td>
             <td></td><td><em>2019</em></td>
         </tr>
@@ -1776,7 +1804,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="19"><a href="/previous-versions/azure/devops/release-notes/2017/jun-01-team-services" data-raw-source="[1 Jun 2017](/previous-versions/azure/devops/release-notes/2017/jun-01-team-services)">1 Jun 2017</a></td>
+            <td rowspan="19"><a href="/previous-versions/azure/devops/2017/jun-01-team-services" data-raw-source="[1 Jun 2017](/previous-versions/azure/devops/2017/jun-01-team-services)">1 Jun 2017</a></td>
             <td>Mobile work item form general availability</td>
             <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
@@ -1853,7 +1881,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="25"><a href="/previous-versions/azure/devops/release-notes/2017/may-11-team-services" data-raw-source="[11 May 2017](/previous-versions/azure/devops/release-notes/2017/may-11-team-services)">11 May 2017</a></td>
+            <td rowspan="25"><a href="/previous-versions/azure/devops/2017/may-11-team-services" data-raw-source="[11 May 2017](/previous-versions/azure/devops/2017/may-11-team-services)">11 May 2017</a></td>
             <td>VM deployment (Public Preview)</td>
             <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
@@ -1954,7 +1982,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="19"><a href="/previous-versions/azure/devops/release-notes/2017/apr-19-team-services" data-raw-source="[19 Apr 2017](/previous-versions/azure/devops/release-notes/2017/apr-19-team-services)">19 Apr 2017</a></td>
+            <td rowspan="19"><a href="/previous-versions/azure/devops/2017/apr-19-team-services" data-raw-source="[19 Apr 2017](/previous-versions/azure/devops/2017/apr-19-team-services)">19 Apr 2017</a></td>
             <td>Delivery timeline markers</td>
             <td></td><td>2017.2</td>
         </tr>
@@ -2031,7 +2059,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="17"><a href="/previous-versions/azure/devops/release-notes/2017/mar-29-team-services" data-raw-source="[29 Mar 2017](/previous-versions/azure/devops/release-notes/2017/mar-29-team-services)">29 Mar 2017</a></td>
+            <td rowspan="17"><a href="/previous-versions/azure/devops/2017/mar-29-team-services" data-raw-source="[29 Mar 2017](/previous-versions/azure/devops/2017/mar-29-team-services)">29 Mar 2017</a></td>
             <td>Work item search for discussions</td>
             <td></td><td>2017.2</td>
         </tr>
@@ -2100,7 +2128,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="14"><a href="/previous-versions/azure/devops/release-notes/2017/mar-08-team-services" data-raw-source="[8 Mar 2017](/previous-versions/azure/devops/release-notes/2017/mar-08-team-services)">8 Mar 2017</a></td>
+            <td rowspan="14"><a href="/previous-versions/azure/devops/2017/mar-08-team-services" data-raw-source="[8 Mar 2017](/previous-versions/azure/devops/2017/mar-08-team-services)">8 Mar 2017</a></td>
             <td>Delivery Plans field criteria</td>
             <td></td><td>2017.2</td>
         </tr>
@@ -2157,7 +2185,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td rowspan="13"><a href="/previous-versions/azure/devops/release-notes/2017/feb-15-team-services" data-raw-source="[15 Feb 2017](/previous-versions/azure/devops/release-notes/2017/feb-15-team-services)">15 Feb 2017</a></td>
+            <td rowspan="13"><a href="/previous-versions/azure/devops/2017/feb-15-team-services" data-raw-source="[15 Feb 2017](/previous-versions/azure/devops/2017/feb-15-team-services)">15 Feb 2017</a></td>
             <td>Improved support for team PR notifications</td>
             <td></td><td>2017.2</td>
         </tr>
@@ -2210,7 +2238,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td rowspan="17"><a href="/previous-versions/azure/devops/release-notes/2017/jan-25-team-services" data-raw-source="[25 Jan 2017](/previous-versions/azure/devops/release-notes/2017/jan-25-team-services)">25 Jan 2017</a></td>
+            <td rowspan="17"><a href="/previous-versions/azure/devops/2017/jan-25-team-services" data-raw-source="[25 Jan 2017](/previous-versions/azure/devops/2017/jan-25-team-services)">25 Jan 2017</a></td>
             <td>Delivery Plans</td>
             <td></td><td>2017.2</td>
         </tr>
@@ -2279,7 +2307,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td rowspan="21"><a href="/previous-versions/azure/devops/release-notes/2017/jan-05-team-services" data-raw-source="[5 Jan 2017](/previous-versions/azure/devops/release-notes/2017/jan-05-team-services)">5 Jan 2017</a></td>
+            <td rowspan="21"><a href="/previous-versions/azure/devops/2017/jan-05-team-services" data-raw-source="[5 Jan 2017](/previous-versions/azure/devops/2017/jan-05-team-services)">5 Jan 2017</a></td>
             <td>New account and project home pages</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
@@ -2364,7 +2392,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td rowspan="14"><a href="/previous-versions/azure/devops/release-notes/2016/nov-23-team-services" data-raw-source="[23 Nov 2016](/previous-versions/azure/devops/release-notes/2016/nov-23-team-services)">23 Nov 2016</a></td>
+            <td rowspan="14"><a href="/previous-versions/azure/devops/2016/nov-23-team-services" data-raw-source="[23 Nov 2016](/previous-versions/azure/devops/2016/nov-23-team-services)">23 Nov 2016</a></td>
             <td>Search for commits in branches</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
@@ -2421,7 +2449,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2016/nov-16-team-services" data-raw-source="[16 Nov 2016](/previous-versions/azure/devops/release-notes/2016/nov-16-team-services)">16 Nov 2016</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2016/nov-16-team-services" data-raw-source="[16 Nov 2016](/previous-versions/azure/devops/2016/nov-16-team-services)">16 Nov 2016</a></td>
             <td>Package Management General Availability</td>
             <td></td><td>N/A</td>
         </tr>
@@ -2438,7 +2466,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="13"><a href="/previous-versions/azure/devops/release-notes/2016/nov-02-team-services" data-raw-source="[2 Nov 2016](/previous-versions/azure/devops/release-notes/2016/nov-02-team-services)">2 Nov 2016</a></td>
+            <td rowspan="13"><a href="/previous-versions/azure/devops/2016/nov-02-team-services" data-raw-source="[2 Nov 2016](/previous-versions/azure/devops/2016/nov-02-team-services)">2 Nov 2016</a></td>
             <td>Package Management in India and Brazil</td>
             <td></td><td>N/A</td>
         </tr>
@@ -2491,7 +2519,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td rowspan="15"><a href="/previous-versions/azure/devops/release-notes/2016/oct-12-team-services" data-raw-source="[12 Oct 2016](/previous-versions/azure/devops/release-notes/2016/oct-12-team-services)">12 Oct 2016</a></td>
+            <td rowspan="15"><a href="/previous-versions/azure/devops/2016/oct-12-team-services" data-raw-source="[12 Oct 2016](/previous-versions/azure/devops/2016/oct-12-team-services)">12 Oct 2016</a></td>
             <td>New navigation on by default</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
@@ -2552,7 +2580,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="13"><a href="/previous-versions/azure/devops/release-notes/2016/sep-21-team-services" data-raw-source="[21 Sep 2016](/previous-versions/azure/devops/release-notes/2016/sep-21-team-services)">21 Sep 2016</a></td>
+            <td rowspan="13"><a href="/previous-versions/azure/devops/2016/sep-21-team-services" data-raw-source="[21 Sep 2016](/previous-versions/azure/devops/2016/sep-21-team-services)">21 Sep 2016</a></td>
             <td>Attachments live preview</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
@@ -2605,7 +2633,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td rowspan="14"><a href="/previous-versions/azure/devops/release-notes/2016/sep-02-team-services" data-raw-source="[2 Sep 2016](/previous-versions/azure/devops/release-notes/2016/sep-02-team-services)">2 Sep 2016</a></td>
+            <td rowspan="14"><a href="/previous-versions/azure/devops/2016/sep-02-team-services" data-raw-source="[2 Sep 2016](/previous-versions/azure/devops/2016/sep-02-team-services)">2 Sep 2016</a></td>
             <td>Custom work item types</td>
             <td></td><td>Future</td>
         </tr>
@@ -2662,7 +2690,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="22"><a href="/previous-versions/azure/devops/release-notes/2016/aug-17-team-services" data-raw-source="[17 Aug 2016](/previous-versions/azure/devops/release-notes/2016/aug-17-team-services)">17 Aug 2016</a></td>
+            <td rowspan="22"><a href="/previous-versions/azure/devops/2016/aug-17-team-services" data-raw-source="[17 Aug 2016](/previous-versions/azure/devops/2016/aug-17-team-services)">17 Aug 2016</a></td>
             <td>Pull Request improvements: <br />
                 Redesigned UI <br />
                 Overview <br />
@@ -2757,7 +2785,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="9"><a href="/previous-versions/azure/devops/release-notes/2016/jul-29-team-services" data-raw-source="[29 Jul 2016](/previous-versions/azure/devops/release-notes/2016/jul-29-team-services)">29 Jul 2016</a> </td>
+            <td rowspan="9"><a href="/previous-versions/azure/devops/2016/jul-29-team-services" data-raw-source="[29 Jul 2016](/previous-versions/azure/devops/2016/jul-29-team-services)">29 Jul 2016</a> </td>
             <td>Git and TFVC – History view and diff view updates</td>
             <td></td><td><a href="/visualstudio/releasenotes/tfs2015-update1-vs" data-raw-source="[2017](/visualstudio/releasenotes/tfs2015-update1-vs)">2017</a></td>
         </tr>
@@ -2800,7 +2828,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="18"><a href="/previous-versions/azure/devops/release-notes/2016/jul-07-team-services" data-raw-source="[7 Jul 2016](/previous-versions/azure/devops/release-notes/2016/jul-07-team-services)">7 Jul 2016</a>  </td>
+            <td rowspan="18"><a href="/previous-versions/azure/devops/2016/jul-07-team-services" data-raw-source="[7 Jul 2016](/previous-versions/azure/devops/2016/jul-07-team-services)">7 Jul 2016</a>  </td>
             <td>Resizable WIT charts on dashboards</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
@@ -2873,7 +2901,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="22"><a href="/previous-versions/azure/devops/release-notes/2016/jun-17-team-services" data-raw-source="[17 Jun 2016](/previous-versions/azure/devops/release-notes/2016/jun-17-team-services)">17 Jun 2016</a></td>
+            <td rowspan="22"><a href="/previous-versions/azure/devops/2016/jun-17-team-services" data-raw-source="[17 Jun 2016](/previous-versions/azure/devops/2016/jun-17-team-services)">17 Jun 2016</a></td>
             <td>Git &amp; TFVC – Browsing branches</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
@@ -2967,7 +2995,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="15"><a href="/previous-versions/azure/devops/release-notes/2016/jun-01-team-services" data-raw-source="[1 Jun 2016](/previous-versions/azure/devops/release-notes/2016/jun-01-team-services)">1 Jun 2016</a></td>
+            <td rowspan="15"><a href="/previous-versions/azure/devops/2016/jun-01-team-services" data-raw-source="[1 Jun 2016](/previous-versions/azure/devops/2016/jun-01-team-services)">1 Jun 2016</a></td>
             <td>Filtering in Kanban board</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
@@ -3028,7 +3056,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="19"><a href="/previous-versions/azure/devops/release-notes/2016/may-06-team-services" data-raw-source="[6 May 2016](/previous-versions/azure/devops/release-notes/2016/may-06-team-services)">6 May 2016</a></td>
+            <td rowspan="19"><a href="/previous-versions/azure/devops/2016/may-06-team-services" data-raw-source="[6 May 2016](/previous-versions/azure/devops/2016/may-06-team-services)">6 May 2016</a></td>
             <td>Email improvements</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
@@ -3105,7 +3133,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="17"><a href="/previous-versions/azure/devops/release-notes/2016/apr-13-team-services" data-raw-source="[13 Apr 2016](/previous-versions/azure/devops/release-notes/2016/apr-13-team-services)">13 Apr 2016</a></td>
+            <td rowspan="17"><a href="/previous-versions/azure/devops/2016/apr-13-team-services" data-raw-source="[13 Apr 2016](/previous-versions/azure/devops/2016/apr-13-team-services)">13 Apr 2016</a></td>
             <td>Follow a work item</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
@@ -3174,7 +3202,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="11"><a href="/previous-versions/azure/devops/release-notes/2016/mar-24-team-services" data-raw-source="[24 Mar 2016](/previous-versions/azure/devops/release-notes/2016/mar-24-team-services)">24 Mar 2016</a></td>
+            <td rowspan="11"><a href="/previous-versions/azure/devops/2016/mar-24-team-services" data-raw-source="[24 Mar 2016](/previous-versions/azure/devops/2016/mar-24-team-services)">24 Mar 2016</a></td>
             <td>Commit traceability</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
@@ -3219,7 +3247,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="13"><a href="/previous-versions/azure/devops/release-notes/2016/mar-03-team-services" data-raw-source="[3 Mar 2016](/previous-versions/azure/devops/release-notes/2016/mar-03-team-services)">3 Mar 2016</a></td>
+            <td rowspan="13"><a href="/previous-versions/azure/devops/2016/mar-03-team-services" data-raw-source="[3 Mar 2016](/previous-versions/azure/devops/2016/mar-03-team-services)">3 Mar 2016</a></td>
             <td>View test results for each release environment</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
@@ -3272,7 +3300,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="13"><a href="/previous-versions/azure/devops/release-notes/2016/feb-16-team-services" data-raw-source="[16 Feb 2016](/previous-versions/azure/devops/release-notes/2016/feb-16-team-services)">16 Feb 2016</a></td>
+            <td rowspan="13"><a href="/previous-versions/azure/devops/2016/feb-16-team-services" data-raw-source="[16 Feb 2016](/previous-versions/azure/devops/2016/feb-16-team-services)">16 Feb 2016</a></td>
             <td>Package management is now available in Europe and Australia</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3325,7 +3353,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
-            <td rowspan="17"><a href="/previous-versions/azure/devops/release-notes/2016/jan-25-team-services" data-raw-source="[25 Jan 2016](/previous-versions/azure/devops/release-notes/2016/jan-25-team-services)">25 Jan 2016</a></td>
+            <td rowspan="17"><a href="/previous-versions/azure/devops/2016/jan-25-team-services" data-raw-source="[25 Jan 2016](/previous-versions/azure/devops/2016/jan-25-team-services)">25 Jan 2016</a></td>
             <td>Public preview of the dashboard widget SDK</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3394,7 +3422,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="8"><a href="/previous-versions/azure/devops/release-notes/2015/dec-10-team-services" data-raw-source="[10 Dec 2015](/previous-versions/azure/devops/release-notes/2015/dec-10-team-services)">10 Dec 2015</a></td>
+            <td rowspan="8"><a href="/previous-versions/azure/devops/2015/dec-10-team-services" data-raw-source="[10 Dec 2015](/previous-versions/azure/devops/2015/dec-10-team-services)">10 Dec 2015</a></td>
             <td>Custom work item fields</td>
             <td></td><td>Future</td>
         </tr>
@@ -3427,7 +3455,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
-            <td rowspan="7"><a href="/previous-versions/azure/devops/release-notes/2015/nov-24-team-services" data-raw-source="[24 Nov 2015](/previous-versions/azure/devops/release-notes/2015/nov-24-team-services)">24 Nov 2015</a></td>
+            <td rowspan="7"><a href="/previous-versions/azure/devops/2015/nov-24-team-services" data-raw-source="[24 Nov 2015](/previous-versions/azure/devops/2015/nov-24-team-services)">24 Nov 2015</a></td>
             <td>Git and TFVC in the same team project</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
@@ -3456,7 +3484,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
-            <td rowspan="7"><a href="/previous-versions/azure/devops/release-notes/2015/nov-18-team-services" data-raw-source="[18 Nov 2015](/previous-versions/azure/devops/release-notes/2015/nov-18-team-services)">18 Nov 2015</a></td>
+            <td rowspan="7"><a href="/previous-versions/azure/devops/2015/nov-18-team-services" data-raw-source="[18 Nov 2015](/previous-versions/azure/devops/2015/nov-18-team-services)">18 Nov 2015</a></td>
             <td>Extensions and Marketplace</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3485,7 +3513,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="6"><a href="/previous-versions/azure/devops/release-notes/2015/oct-30-team-services" data-raw-source="[30 Oct 2015](/previous-versions/azure/devops/release-notes/2015/oct-30-team-services)">30 Oct 2015</a></td>
+            <td rowspan="6"><a href="/previous-versions/azure/devops/2015/oct-30-team-services" data-raw-source="[30 Oct 2015](/previous-versions/azure/devops/2015/oct-30-team-services)">30 Oct 2015</a></td>
             <td>Dashboards</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
@@ -3510,7 +3538,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="5"><a href="/previous-versions/azure/devops/release-notes/2015/oct-08-team-services" data-raw-source="[8 Oct 2015](/previous-versions/azure/devops/release-notes/2015/oct-08-team-services)">8 Oct 2015</a></td>
+            <td rowspan="5"><a href="/previous-versions/azure/devops/2015/oct-08-team-services" data-raw-source="[8 Oct 2015](/previous-versions/azure/devops/2015/oct-08-team-services)">8 Oct 2015</a></td>
             <td>Azure Active Directory Group support</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3531,7 +3559,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="7"><a href="/previous-versions/azure/devops/release-notes/2015/sep-18-team-services" data-raw-source="[18 Sep 2015](/previous-versions/azure/devops/release-notes/2015/sep-18-team-services)">18 Sep 2015</a></td>
+            <td rowspan="7"><a href="/previous-versions/azure/devops/2015/sep-18-team-services" data-raw-source="[18 Sep 2015](/previous-versions/azure/devops/2015/sep-18-team-services)">18 Sep 2015</a></td>
             <td>Inline tasks on the Kanban board</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
@@ -3560,7 +3588,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2015/aug-26-team-services" data-raw-source="[26 Aug 2015](/previous-versions/azure/devops/release-notes/2015/aug-26-team-services)">26 Aug 2015</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2015/aug-26-team-services" data-raw-source="[26 Aug 2015](/previous-versions/azure/devops/2015/aug-26-team-services)">26 Aug 2015</a></td>
             <td>Rename columns in place</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
@@ -3577,7 +3605,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2015/aug-07-team-services" data-raw-source="[7 Aug 2015](/previous-versions/azure/devops/release-notes/2015/aug-07-team-services)">7 Aug 2015</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2015/aug-07-team-services" data-raw-source="[7 Aug 2015](/previous-versions/azure/devops/2015/aug-07-team-services)">7 Aug 2015</a></td>
             <td>Multi-select items on the product backlog</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
@@ -3599,7 +3627,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>Future</td>
         </tr>
         <tr>
-            <td rowspan="7"><a href="/previous-versions/azure/devops/release-notes/2015/jul-17-team-services" data-raw-source="[17 Jul 2015](/previous-versions/azure/devops/release-notes/2015/jul-17-team-services)">17 Jul 2015</a></td>
+            <td rowspan="7"><a href="/previous-versions/azure/devops/2015/jul-17-team-services" data-raw-source="[17 Jul 2015](/previous-versions/azure/devops/2015/jul-17-team-services)">17 Jul 2015</a></td>
             <td>Multiple activities per team member</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
@@ -3628,7 +3656,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2015/jul-07-team-services" data-raw-source="[7 Jul 2015](/previous-versions/azure/devops/release-notes/2015/jul-07-team-services)">7 Jul 2015</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2015/jul-07-team-services" data-raw-source="[7 Jul 2015](/previous-versions/azure/devops/2015/jul-07-team-services)">7 Jul 2015</a></td>
             <td>Card coloring on Kanban board</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
@@ -3641,7 +3669,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2015/jun-03-team-services" data-raw-source="[3 Jun 2015](/previous-versions/azure/devops/release-notes/2015/jun-03-team-services)">3 Jun 2015</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2015/jun-03-team-services" data-raw-source="[3 Jun 2015](/previous-versions/azure/devops/2015/jun-03-team-services)">3 Jun 2015</a></td>
             <td>Kanban swim lanes</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3658,7 +3686,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td rowspan="7"><a href="/previous-versions/azure/devops/release-notes/2015/may-15-team-services" data-raw-source="[15 May 2015](/previous-versions/azure/devops/release-notes/2015/may-15-team-services)">15 May 2015</a></td>
+            <td rowspan="7"><a href="/previous-versions/azure/devops/2015/may-15-team-services" data-raw-source="[15 May 2015](/previous-versions/azure/devops/2015/may-15-team-services)">15 May 2015</a></td>
             <td>Build vNext</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3687,7 +3715,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2015/may-11-team-services" data-raw-source="[11 May 2015](/previous-versions/azure/devops/release-notes/2015/may-11-team-services)">11 May 2015</a></td>
+            <td><a href="/previous-versions/azure/devops/2015/may-11-team-services" data-raw-source="[11 May 2015](/previous-versions/azure/devops/2015/may-11-team-services)">11 May 2015</a></td>
             <td>Application Insights: <br />
                 iOS and Android support <br />
                 Performance counters for Java applications <br />
@@ -3696,7 +3724,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/release-notes/2015/05/10/vs-online-hosted-in-australia.aspx" data-raw-source="[8 May 2015](https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/release-notes/2015/05/10/vs-online-hosted-in-australia.aspx)">8 May 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/2015/05/10/vs-online-hosted-in-australia.aspx" data-raw-source="[8 May 2015](https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/2015/05/10/vs-online-hosted-in-australia.aspx)">8 May 2015</a></td>
             <td>Australia region for Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3711,7 +3739,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>2015.2</td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2015/apr-27-team-services" data-raw-source="[27 Apr 2015](/previous-versions/azure/devops/release-notes/2015/apr-27-team-services)">27 Apr 2015</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2015/apr-27-team-services" data-raw-source="[27 Apr 2015](/previous-versions/azure/devops/2015/apr-27-team-services)">27 Apr 2015</a></td>
             <td>Adding fields to cards</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3728,12 +3756,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2015/apr-24-team-services" data-raw-source="[24 Apr 2015](/previous-versions/azure/devops/release-notes/2015/apr-24-team-services)">24 Apr 2015</a></td>
+            <td><a href="/previous-versions/azure/devops/2015/apr-24-team-services" data-raw-source="[24 Apr 2015](/previous-versions/azure/devops/2015/apr-24-team-services)">24 Apr 2015</a></td>
             <td>Team Project Rename</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2015/apr-22-team-services" data-raw-source="[22 Apr 2015](/previous-versions/azure/devops/release-notes/2015/apr-22-team-services)">22 Apr 2015</a></td>
+            <td><a href="/previous-versions/azure/devops/2015/apr-22-team-services" data-raw-source="[22 Apr 2015](/previous-versions/azure/devops/2015/apr-22-team-services)">22 Apr 2015</a></td>
             <td>Application Insights: <br />
                 Synthetic data filtering <br />
                 New usage experience for ASP.NET, Java, and other applications <br />
@@ -3746,7 +3774,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2015/apr-10-team-services" data-raw-source="[10 Apr 2015](/previous-versions/azure/devops/release-notes/2015/apr-10-team-services)">10 Apr 2015</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2015/apr-10-team-services" data-raw-source="[10 Apr 2015](/previous-versions/azure/devops/2015/apr-10-team-services)">10 Apr 2015</a></td>
             <td>Configure cards</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3763,12 +3791,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2015/mar-27-team-services" data-raw-source="[27 Mar 2015](/previous-versions/azure/devops/release-notes/2015/mar-27-team-services)">27 Mar 2015</a></td>
+            <td><a href="/previous-versions/azure/devops/2015/mar-27-team-services" data-raw-source="[27 Mar 2015](/previous-versions/azure/devops/2015/mar-27-team-services)">27 Mar 2015</a></td>
             <td>Application Insights: Save search page, pause export, and export on alert fail</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="7"><a href="/previous-versions/azure/devops/release-notes/2015/mar-10-team-services" data-raw-source="[10 Mar 2015](/previous-versions/azure/devops/release-notes/2015/mar-10-team-services)">10 Mar 2015</a></td>
+            <td rowspan="7"><a href="/previous-versions/azure/devops/2015/mar-10-team-services" data-raw-source="[10 Mar 2015](/previous-versions/azure/devops/2015/mar-10-team-services)">10 Mar 2015</a></td>
             <td>Current iteration query token</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3802,7 +3830,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2015/feb-18-team-services" data-raw-source="[18 Feb 2015](/previous-versions/azure/devops/release-notes/2015/feb-18-team-services)">18 Feb 2015</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2015/feb-18-team-services" data-raw-source="[18 Feb 2015](/previous-versions/azure/devops/2015/feb-18-team-services)">18 Feb 2015</a></td>
             <td>Adding and editing directly from the board</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3829,7 +3857,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2015/jan-27-team-services" data-raw-source="[27 Jan 2015](/previous-versions/azure/devops/release-notes/2015/jan-27-team-services)">27 Jan 2015</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2015/jan-27-team-services" data-raw-source="[27 Jan 2015](/previous-versions/azure/devops/2015/jan-27-team-services)">27 Jan 2015</a></td>
             <td>Basic license upgraded</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3846,12 +3874,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td><a href="https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/release-notes/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/release-notes/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](https://blogs.msdn.com/b/bharry/archive//previous-versions/azure/devops/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
             <td>VS Online ISO 27001 Certification</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="6"><a href="/previous-versions/azure/devops/release-notes/2014/dec-17-team-services" data-raw-source="[17 Dec 2014](/previous-versions/azure/devops/release-notes/2014/dec-17-team-services)">17 Dec 2014</a></td>
+            <td rowspan="6"><a href="/previous-versions/azure/devops/2014/dec-17-team-services" data-raw-source="[17 Dec 2014](/previous-versions/azure/devops/2014/dec-17-team-services)">17 Dec 2014</a></td>
             <td>Quick code editing</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3885,7 +3913,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="5"><a href="/previous-versions/azure/devops/release-notes/2014/dec-02-team-services" data-raw-source="[2 Dec 2014](/previous-versions/azure/devops/release-notes/2014/dec-02-team-services)">2 Dec 2014</a></td>
+            <td rowspan="5"><a href="/previous-versions/azure/devops/2014/dec-02-team-services" data-raw-source="[2 Dec 2014](/previous-versions/azure/devops/2014/dec-02-team-services)">2 Dec 2014</a></td>
             <td>Identity control and avatars</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -3906,12 +3934,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2014/dec-02-team-services" data-raw-source="[12 Nov 2014](/previous-versions/azure/devops/release-notes/2014/dec-02-team-services)">12 Nov 2014</a></td>
+            <td>12 Nov 2014</td>
             <td>Release Management Preview as VSTS service</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="7"><a href="/previous-versions/azure/devops/release-notes/2014/nov-04-team-services" data-raw-source="[4 Nov 2014](/previous-versions/azure/devops/release-notes/2014/nov-04-team-services)">4 Nov 2014</a></td>
+            <td rowspan="7"><a href="/previous-versions/azure/devops/2014/nov-04-team-services" data-raw-source="[4 Nov 2014](/previous-versions/azure/devops/2014/nov-04-team-services)">4 Nov 2014</a></td>
             <td>Bugs on the backlog</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
@@ -3940,7 +3968,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2014/oct-28-team-services" data-raw-source="[28 Oct 2014](/previous-versions/azure/devops/release-notes/2014/oct-28-team-services)">28 Oct 2014</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2014/oct-28-team-services" data-raw-source="[28 Oct 2014](/previous-versions/azure/devops/2014/oct-28-team-services)">28 Oct 2014</a></td>
             <td>European Datacenter</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3953,7 +3981,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2014/oct-14-team-services" data-raw-source="[14 Oct 2014](/previous-versions/azure/devops/release-notes/2014/oct-14-team-services)">14 Oct 2014</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2014/oct-14-team-services" data-raw-source="[14 Oct 2014](/previous-versions/azure/devops/2014/oct-14-team-services)">14 Oct 2014</a></td>
             <td>Test artifacts as work items</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
@@ -3962,7 +3990,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2014/sep-23-team-services" data-raw-source="[23 Sep 2014](/previous-versions/azure/devops/release-notes/2014/sep-23-team-services)">23 Sep 2014</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2014/sep-23-team-services" data-raw-source="[23 Sep 2014](/previous-versions/azure/devops/2014/sep-23-team-services)">23 Sep 2014</a></td>
             <td>Maximizing text area fields</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
@@ -3975,7 +4003,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
-            <td rowspan="6"><a href="/previous-versions/azure/devops/release-notes/2014/sep-04-team-services" data-raw-source="[4 Sep 2014](/previous-versions/azure/devops/release-notes/2014/sep-04-team-services)">4 Sep 2014</a></td>
+            <td rowspan="6"><a href="/previous-versions/azure/devops/2014/sep-04-team-services" data-raw-source="[4 Sep 2014](/previous-versions/azure/devops/2014/sep-04-team-services)">4 Sep 2014</a></td>
             <td>Work Item query improvements</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
@@ -4000,12 +4028,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2014/aug-27-team-services" data-raw-source="[27 Aug 2014](/previous-versions/azure/devops/release-notes/2014/aug-27-team-services)">27 Aug 2014</a></td>
+            <td><a href="/previous-versions/azure/devops/2014/aug-27-team-services" data-raw-source="[27 Aug 2014](/previous-versions/azure/devops/2014/aug-27-team-services)">27 Aug 2014</a></td>
             <td>A license for Stakeholders</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2014/aug-18-team-services" data-raw-source="[18 Aug 2014](/previous-versions/azure/devops/release-notes/2014/aug-18-team-services)">18 Aug 2014</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2014/aug-18-team-services" data-raw-source="[18 Aug 2014](/previous-versions/azure/devops/2014/aug-18-team-services)">18 Aug 2014</a></td>
             <td>Project Welcome pages</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
@@ -4014,7 +4042,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
-            <td rowspan="5"><a href="/previous-versions/azure/devops/release-notes/2014/jul-21-team-services" data-raw-source="[21 Jul 2014](/previous-versions/azure/devops/release-notes/2014/jul-21-team-services)">21 Jul 2014</a></td>
+            <td rowspan="5"><a href="/previous-versions/azure/devops/2014/jul-21-team-services" data-raw-source="[21 Jul 2014](/previous-versions/azure/devops/2014/jul-21-team-services)">21 Jul 2014</a></td>
             <td>Using corporate identities with existing accounts</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4035,7 +4063,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2014/jul-01-team-services" data-raw-source="[1 Jul 2014](/previous-versions/azure/devops/release-notes/2014/jul-01-team-services)">1 Jul 2014</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2014/jul-01-team-services" data-raw-source="[1 Jul 2014](/previous-versions/azure/devops/2014/jul-01-team-services)">1 Jul 2014</a></td>
             <td>Hiding work in progress on the backlog</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
@@ -4048,12 +4076,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2014/jun-10-team-services" data-raw-source="[10 Jun 2014](/previous-versions/azure/devops/release-notes/2014/jun-10-team-services)">10 Jun 2014</a></td>
+            <td><a href="/previous-versions/azure/devops/2014/jun-10-team-services" data-raw-source="[10 Jun 2014](/previous-versions/azure/devops/2014/jun-10-team-services)">10 Jun 2014</a></td>
             <td>Pull Requests</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2014/may-20-team-services" data-raw-source="[20 May 2014](/previous-versions/azure/devops/release-notes/2014/may-20-team-services)">20 May 2014</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2014/may-20-team-services" data-raw-source="[20 May 2014](/previous-versions/azure/devops/2014/may-20-team-services)">20 May 2014</a></td>
             <td>Using corporate identities</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4066,7 +4094,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2014/may-12-team-services" data-raw-source="[12 May 2014](/previous-versions/azure/devops/release-notes/2014/may-12-team-services)">12 May 2014</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2014/may-12-team-services" data-raw-source="[12 May 2014](/previous-versions/azure/devops/2014/may-12-team-services)">12 May 2014</a></td>
             <td>Integrate with Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4075,7 +4103,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2014/apr-03-team-services" data-raw-source="[3 Apr 2014](/previous-versions/azure/devops/release-notes/2014/apr-03-team-services)">3 Apr 2014</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2014/apr-03-team-services" data-raw-source="[3 Apr 2014](/previous-versions/azure/devops/2014/apr-03-team-services)">3 Apr 2014</a></td>
             <td>General Availability of Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4088,7 +4116,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2014/mar-18-team-services" data-raw-source="[18 Mar 2014](/previous-versions/azure/devops/release-notes/2014/mar-18-team-services)">18 Mar 2014</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2014/mar-18-team-services" data-raw-source="[18 Mar 2014](/previous-versions/azure/devops/2014/mar-18-team-services)">18 Mar 2014</a></td>
             <td>Getting started with Application Insights</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4097,7 +4125,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2014/feb-28-team-services" data-raw-source="[28 Feb 2014](/previous-versions/azure/devops/release-notes/2014/feb-28-team-services)">28 Feb 2014</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2014/feb-28-team-services" data-raw-source="[28 Feb 2014](/previous-versions/azure/devops/2014/feb-28-team-services)">28 Feb 2014</a></td>
             <td>Build support for Java code managed in Git</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
@@ -4110,7 +4138,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2014/feb-10-team-services" data-raw-source="[10 Feb 2014](/previous-versions/azure/devops/release-notes/2014/feb-10-team-services)">10 Feb 2014</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2014/feb-10-team-services" data-raw-source="[10 Feb 2014](/previous-versions/azure/devops/2014/feb-10-team-services)">10 Feb 2014</a></td>
             <td>Exporting test artifacts</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
@@ -4119,7 +4147,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2014/jan-22-team-services" data-raw-source="[22 Jan 2014](/previous-versions/azure/devops/release-notes/2014/jan-22-team-services)">22 Jan 2014</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2014/jan-22-team-services" data-raw-source="[22 Jan 2014](/previous-versions/azure/devops/2014/jan-22-team-services)">22 Jan 2014</a></td>
             <td>Querying tags</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
@@ -4132,7 +4160,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/dec-11-team-services" data-raw-source="[11 Dec 2013](/previous-versions/azure/devops/release-notes/2013/dec-11-team-services)">11 Dec 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/dec-11-team-services" data-raw-source="[11 Dec 2013](/previous-versions/azure/devops/2013/dec-11-team-services)">11 Dec 2013</a></td>
             <td>Application Insights – Response Stacked Distribution</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4145,7 +4173,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/nov-13-team-services" data-raw-source="[13 Nov 2013](/previous-versions/azure/devops/release-notes/2013/nov-13-team-services)">13 Nov 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/nov-13-team-services" data-raw-source="[13 Nov 2013](/previous-versions/azure/devops/2013/nov-13-team-services)">13 Nov 2013</a></td>
             <td>Commercial preview</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4158,22 +4186,22 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2013/nov-08-team-services" data-raw-source="[8 Nov 2013](/previous-versions/azure/devops/release-notes/2013/nov-08-team-services)">8 Nov 2013</a></td>
+            <td><a href="/previous-versions/azure/devops/2013/nov-08-team-services" data-raw-source="[8 Nov 2013](/previous-versions/azure/devops/2013/nov-08-team-services)">8 Nov 2013</a></td>
             <td>Work item chart pinning</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2013/oct-21-team-services" data-raw-source="[21 Oct 2013](/previous-versions/azure/devops/release-notes/2013/oct-21-team-services)">21 Oct 2013</a></td>
+            <td><a href="/previous-versions/azure/devops/2013/oct-21-team-services" data-raw-source="[21 Oct 2013](/previous-versions/azure/devops/2013/oct-21-team-services)">21 Oct 2013</a></td>
             <td>New account and project pages</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2013/oct-17-team-services" data-raw-source="[17 Oct 2013](/previous-versions/azure/devops/release-notes/2013/oct-17-team-services)">17 Oct 2013</a></td>
+            <td><a href="/previous-versions/azure/devops/2013/oct-17-team-services" data-raw-source="[17 Oct 2013](/previous-versions/azure/devops/2013/oct-17-team-services)">17 Oct 2013</a></td>
             <td>Build images updated to VS 2013</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/sep-30-team-services" data-raw-source="[30 Sep 2013](/previous-versions/azure/devops/release-notes/2013/sep-30-team-services)">30 Sep 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/sep-30-team-services" data-raw-source="[30 Sep 2013](/previous-versions/azure/devops/2013/sep-30-team-services)">30 Sep 2013</a></td>
             <td>New languages supported for code syntax highlighting</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
@@ -4186,7 +4214,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2013/sep-09-team-services" data-raw-source="[9 Sep 2013](/previous-versions/azure/devops/release-notes/2013/sep-09-team-services)">9 Sep 2013</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2013/sep-09-team-services" data-raw-source="[9 Sep 2013](/previous-versions/azure/devops/2013/sep-09-team-services)">9 Sep 2013</a></td>
             <td>Work item charts</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4203,12 +4231,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2013/aug-19-team-services" data-raw-source="[19 Aug 2013](/previous-versions/azure/devops/release-notes/2013/aug-19-team-services)">19 Aug 2013</a></td>
+            <td><a href="/previous-versions/azure/devops/2013/aug-19-team-services" data-raw-source="[19 Aug 2013](/previous-versions/azure/devops/2013/aug-19-team-services)">19 Aug 2013</a></td>
             <td>Improved code commenting</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/jul-29-team-services" data-raw-source="[29 Jul 2013](/previous-versions/azure/devops/release-notes/2013/jul-29-team-services)">29 Jul 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/jul-29-team-services" data-raw-source="[29 Jul 2013](/previous-versions/azure/devops/2013/jul-29-team-services)">29 Jul 2013</a></td>
             <td>Improved permission management for Git repos</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4221,7 +4249,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2013/jul-10-team-services" data-raw-source="[10 Jul 2013](/previous-versions/azure/devops/release-notes/2013/jul-10-team-services)">10 Jul 2013</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2013/jul-10-team-services" data-raw-source="[10 Jul 2013](/previous-versions/azure/devops/2013/jul-10-team-services)">10 Jul 2013</a></td>
             <td>Backlog mapping</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4230,7 +4258,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/jun-26-team-services" data-raw-source="[26 Jun 2013](/previous-versions/azure/devops/release-notes/2013/jun-26-team-services)">26 Jun 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/jun-26-team-services" data-raw-source="[26 Jun 2013](/previous-versions/azure/devops/2013/jun-26-team-services)">26 Jun 2013</a></td>
             <td>Windows 8.1 support in hosted build</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4243,7 +4271,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/jun-19-team-services" data-raw-source="[19 Jun 2013](/previous-versions/azure/devops/release-notes/2013/jun-19-team-services)">19 Jun 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/jun-19-team-services" data-raw-source="[19 Jun 2013](/previous-versions/azure/devops/2013/jun-19-team-services)">19 Jun 2013</a></td>
             <td>Agile Portfolio Management updates – view filter and quick decompose</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4256,7 +4284,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="5"><a href="/previous-versions/azure/devops/release-notes/2013/jun-03-team-services" data-raw-source="[3 Jun 2013](/previous-versions/azure/devops/release-notes/2013/jun-03-team-services)">3 Jun 2013</a></td>
+            <td rowspan="5"><a href="/previous-versions/azure/devops/2013/jun-03-team-services" data-raw-source="[3 Jun 2013](/previous-versions/azure/devops/2013/jun-03-team-services)">3 Jun 2013</a></td>
             <td>Agile Portfolio Management</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4277,7 +4305,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/may-28-team-services" data-raw-source="[28 May 2013](/previous-versions/azure/devops/release-notes/2013/may-28-team-services)">28 May 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/may-28-team-services" data-raw-source="[28 May 2013](/previous-versions/azure/devops/2013/may-28-team-services)">28 May 2013</a></td>
             <td>Build IaaS</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4290,7 +4318,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2013/may-13-team-services" data-raw-source="[13 May 2013](/previous-versions/azure/devops/release-notes/2013/may-13-team-services)">13 May 2013</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2013/may-13-team-services" data-raw-source="[13 May 2013](/previous-versions/azure/devops/2013/may-13-team-services)">13 May 2013</a></td>
             <td>Work item colors based on process template settings</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4307,7 +4335,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2013/mar-22-team-services" data-raw-source="[22 Mar 2013](/previous-versions/azure/devops/release-notes/2013/mar-22-team-services)">22 Mar 2013</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2013/mar-22-team-services" data-raw-source="[22 Mar 2013](/previous-versions/azure/devops/2013/mar-22-team-services)">22 Mar 2013</a></td>
             <td>Branches view for Git</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4316,7 +4344,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2013/mar-04-team-services" data-raw-source="[4 Mar 2013](/previous-versions/azure/devops/release-notes/2013/mar-04-team-services)">4 Mar 2013</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2013/mar-04-team-services" data-raw-source="[4 Mar 2013](/previous-versions/azure/devops/2013/mar-04-team-services)">4 Mar 2013</a></td>
             <td>Customizable Kanban columns</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
@@ -4333,7 +4361,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2013/feb-11-team-services" data-raw-source="[11 Feb 2013](/previous-versions/azure/devops/release-notes/2013/feb-11-team-services)">11 Feb 2013</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2013/feb-11-team-services" data-raw-source="[11 Feb 2013](/previous-versions/azure/devops/2013/feb-11-team-services)">11 Feb 2013</a></td>
             <td>Continuous Integration for Git</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
@@ -4350,7 +4378,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2013/jan-30-team-services" data-raw-source="[30 Jan 2013](/previous-versions/azure/devops/release-notes/2013/jan-30-team-services)">30 Jan 2013</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2013/jan-30-team-services" data-raw-source="[30 Jan 2013](/previous-versions/azure/devops/2013/jan-30-team-services)">30 Jan 2013</a></td>
             <td>Work item tagging</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
@@ -4363,17 +4391,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2013/jan-21-team-services" data-raw-source="[21 Jan 2013](/previous-versions/azure/devops/release-notes/2013/jan-21-team-services)">21 Jan 2013</a></td>
+            <td><a href="/previous-versions/azure/devops/2013/jan-21-team-services" data-raw-source="[21 Jan 2013](/previous-versions/azure/devops/2013/jan-21-team-services)">21 Jan 2013</a></td>
             <td>Changeset context menu in Web UI</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2013/jan-09-team-services" data-raw-source="[9 Jan 2013](/previous-versions/azure/devops/release-notes/2013/jan-09-team-services)">9 Jan 2013</a></td>
+            <td><a href="/previous-versions/azure/devops/2013/jan-09-team-services" data-raw-source="[9 Jan 2013](/previous-versions/azure/devops/2013/jan-09-team-services)">9 Jan 2013</a></td>
             <td>Account rename of Team Foundation Service account</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="5"><a href="/previous-versions/azure/devops/release-notes/2013/jan-07-team-services" data-raw-source="[7 Jan 2013](/previous-versions/azure/devops/release-notes/2013/jan-07-team-services)">7 Jan 2013</a></td>
+            <td rowspan="5"><a href="/previous-versions/azure/devops/2013/jan-07-team-services" data-raw-source="[7 Jan 2013](/previous-versions/azure/devops/2013/jan-07-team-services)">7 Jan 2013</a></td>
             <td>Email work items from backlog</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
@@ -4394,7 +4422,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2012/dec-10-team-services" data-raw-source="[10 Dec 2012](/previous-versions/azure/devops/release-notes/2012/dec-10-team-services)">10 Dec 2012</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2012/dec-10-team-services" data-raw-source="[10 Dec 2012](/previous-versions/azure/devops/2012/dec-10-team-services)">10 Dec 2012</a></td>
             <td>Renamed Source to Code in Web UI hub</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
@@ -4407,7 +4435,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2012/nov-19-team-services" data-raw-source="[19 Nov 2012](/previous-versions/azure/devops/release-notes/2012/nov-19-team-services)">19 Nov 2012</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2012/nov-19-team-services" data-raw-source="[19 Nov 2012](/previous-versions/azure/devops/2012/nov-19-team-services)">19 Nov 2012</a></td>
             <td>Send work items in email from TFS web access</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
@@ -4416,22 +4444,22 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2012/oct-31-team-services" data-raw-source="[31 Oct 2012](/previous-versions/azure/devops/release-notes/2012/oct-31-team-services)">31 Oct 2012</a></td>
+            <td><a href="/previous-versions/azure/devops/2012/oct-31-team-services" data-raw-source="[31 Oct 2012](/previous-versions/azure/devops/2012/oct-31-team-services)">31 Oct 2012</a></td>
             <td>General availability of Team Foundation Service</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2012/oct-29-team-services" data-raw-source="[29 Oct 2012](/previous-versions/azure/devops/release-notes/2012/oct-29-team-services)">29 Oct 2012</a></td>
+            <td><a href="/previous-versions/azure/devops/2012/oct-29-team-services" data-raw-source="[29 Oct 2012](/previous-versions/azure/devops/2012/oct-29-team-services)">29 Oct 2012</a></td>
             <td>Build drops</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="/previous-versions/azure/devops/release-notes/2012/oct-08-team-services" data-raw-source="[8 Oct 2012](/previous-versions/azure/devops/release-notes/2012/oct-08-team-services)">8 Oct 2012</a></td>
+            <td><a href="/previous-versions/azure/devops/2012/oct-08-team-services" data-raw-source="[8 Oct 2012](/previous-versions/azure/devops/2012/oct-08-team-services)">8 Oct 2012</a></td>
             <td>400 character server paths for version control</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2012/sep-17-team-services" data-raw-source="[17 Sep 2012](/previous-versions/azure/devops/release-notes/2012/sep-17-team-services)">17 Sep 2012</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2012/sep-17-team-services" data-raw-source="[17 Sep 2012](/previous-versions/azure/devops/2012/sep-17-team-services)">17 Sep 2012</a></td>
             <td>Drag/drop in sprint planning to assign to person or activity</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
@@ -4444,7 +4472,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
-            <td rowspan="4"><a href="/previous-versions/azure/devops/release-notes/2012/aug-27-team-services" data-raw-source="[27 Aug 2012](/previous-versions/azure/devops/release-notes/2012/aug-27-team-services)">27 Aug 2012</a></td>
+            <td rowspan="4"><a href="/previous-versions/azure/devops/2012/aug-27-team-services" data-raw-source="[27 Aug 2012](/previous-versions/azure/devops/2012/aug-27-team-services)">27 Aug 2012</a></td>
             <td>Improved source browsing, viewing, and searching</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
@@ -4461,7 +4489,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="3"><a href="/previous-versions/azure/devops/release-notes/2012/aug-13-team-services" data-raw-source="[13 Aug 2012](/previous-versions/azure/devops/release-notes/2012/aug-13-team-services)">13 Aug 2012</a></td>
+            <td rowspan="3"><a href="/previous-versions/azure/devops/2012/aug-13-team-services" data-raw-source="[13 Aug 2012](/previous-versions/azure/devops/2012/aug-13-team-services)">13 Aug 2012</a></td>
             <td>Kanban board</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
@@ -4474,7 +4502,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
-            <td rowspan="2"><a href="/previous-versions/azure/devops/release-notes/2012/aug-06-team-services" data-raw-source="[6 Aug 2012](/previous-versions/azure/devops/release-notes/2012/aug-06-team-services)">6 Aug 2012</a></td>
+            <td rowspan="2"><a href="/previous-versions/azure/devops/2012/aug-06-team-services" data-raw-source="[6 Aug 2012](/previous-versions/azure/devops/2012/aug-06-team-services)">6 Aug 2012</a></td>
             <td>Drag/drop in task board to move tasks between people and stories</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>

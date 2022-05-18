@@ -5,21 +5,14 @@ description: Learn about how you can use expressions in Azure Pipelines or Team 
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.date: 02/25/2022
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Expressions
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="tfs-2017"
-
-This article applies to TFS 2017.3 and higher.
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -217,17 +210,20 @@ parameters:
  
 steps:
 - script: |
-    echo "${{ convertToJson(parameters.listOfValues) }}"
+    echo "${MY_JSON}"
+  env:
+    MY_JSON: ${{ convertToJson(parameters.listOfValues) }}
 ```
 
+Script output:
+
 ```json
-# Example output
 {
-  this_is: {
-    a_complex: object,
-    with: [
-      one,
-      two
+  "this_is": {
+    "a_complex": "object",
+    "with": [
+      "one",
+      "two"
     ]
   }
 }
@@ -761,6 +757,40 @@ stages:
 
 ```
 
+If a job depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the job `run_tests` runs if the `build_job` deployment job set `runTests` to `true`. Notice that the key used for the `outputs` dictionary is `build_job.setRunTests.runTests`.
+
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: Production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  jobs:  
+    - job: run_tests
+      condition: eq(stageDependencies.build.build_job.outputs['build_job.setRunTests.runTests'], 'true')
+      steps:
+        ...
+```
+
+
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
@@ -788,6 +818,36 @@ stages:
   - job: part_b
     steps:
     - bash: echo "BA"
+```
+
+If a stage depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the stage `test` depends on the deployment `build_job` setting `shouldTest` to `true`. Notice that in the `condition` of the `test` stage, `build_job` appears twice.
+```yml
+stages:
+- stage: build
+  jobs:
+  - deployment: build_job
+    environment:
+      name: Production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            name: setRunTests
+            inputs:
+              targetType: inline
+              pwsh: true
+              script: |
+                $runTests = "true"
+                echo "setting runTests: $runTests"
+                echo "##vso[task.setvariable variable=runTests;isOutput=true]$runTests"
+
+- stage: test
+  dependsOn:
+  - 'build'
+  condition: eq(dependencies.build.outputs['build_job.build_job.setRunTests.runTests'], 'true')
+  jobs:
+    ...
 ```
 
 ::: moniker-end

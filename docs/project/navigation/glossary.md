@@ -7,14 +7,14 @@ ms.technology: devops-collab
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 02/08/2019
 ---
 
 
 # Project management and navigation glossary   
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 This glossary describes terms used when navigating in the web portal for  Azure DevOps.  See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 

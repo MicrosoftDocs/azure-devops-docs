@@ -28,7 +28,7 @@ The experience is similar to configuring approvals for environments. When an app
 > [!div class="mx-imgBorder"]
 > ![Enhancements to approvals in YAML pipelines.](../../media/158_06.png)
 
-### Container structure testing support in Azure Pipeline
+### Container structure testing support in Azure Pipelines
 ​
 Usage of containers in applications is increasing and thus the need for robust testing and validation. Azure Pipelines now brings supports for **Container Structure Tests**. This framework provides a convenient and powerful way to verify the contents and structure of your containers. 
 

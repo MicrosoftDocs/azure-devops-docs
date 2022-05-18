@@ -8,8 +8,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/18/2021
----
+ms.date: 04/04/2022
+--- 
 
 
 # Add users or groups to a team or project
@@ -95,7 +95,6 @@ Team and project administrators can add existing users to their team or project.
       Add existing users or groups to a team, or remove a member. 
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       Project Administrators
@@ -107,7 +106,6 @@ Team and project administrators can add existing users to their team or project.
       Add new or existing users. Send new users an invite. Optionally add users to one or more teams.   
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
       Project Administrators
@@ -280,7 +278,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
  
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 > [!NOTE]   
 > To enable the preview feature, **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -364,7 +362,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
 
@@ -428,7 +426,7 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
  
 1. To remove members, return to this page, highlight the user name, and then choose **Remove**.
 
@@ -444,12 +442,12 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 <a name="summary-page"></a>
 
-::: moniker range=">= tfs-2017"
+
 
 ## Invite users from the Summary page 
 
 As a member of the Project Administrators group, you can add members to a project from the **Summary** page and optionally add them to one or more teams. To learn more about the **Summary** page, see [Share your project vision, view project activity](../../organizations/projects/project-vision-status.md).
-::: moniker-end
+
 ::: moniker range="< azure-devops"
 > [!NOTE]
 > For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
@@ -459,11 +457,11 @@ As a member of the Project Administrators group, you can add members to a projec
 
 	:::image type="content" source="media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 ::: moniker-end
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 1. Open the **Project>Summary** page, and choose the **Add** button.  
 	:::image type="content" source="../projects/media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
 ::: moniker-end
-::: moniker range=">= tfs-2017"
+
 1. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 
 	:::row:::
@@ -538,8 +536,6 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::row-end:::
  
 1. New users receive an email inviting them to sign in to the project. Existing users don't receive any formal notification. 
-
-::: moniker-end
 
 <a name="add-users-team-project"></a>
 <a name="add-users-to-a-project"></a>
@@ -663,7 +659,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -725,12 +721,10 @@ To learn more, see [Add account users for Azure DevOps](../accounts/add-organiza
 
 :::image type="content" source="media/add-users/users-page-manage-options.png" alt-text="Screenshot of Organization Settings>Users page, Manage user options. ":::
 
-
-
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## List team members or team details  
 
@@ -811,8 +805,6 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 ::: moniker-end 
  
- 
-
 
 ::: moniker range="< azure-devops"
 
@@ -822,24 +814,14 @@ For on-premises deployments, you may need to set the access level for a user or 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range="<= azure-devops-2020"
 
 ## Add users or groups to SQL Server Reports
 
-If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](../../report/admin/grant-permissions-to-reports.md).
+If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
-
-## Add users or groups to SharePoint or SQL Server Reports 
-
-If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites.
-
-* [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
-* [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
-
-::: moniker-end
 
 ## Next steps
 
@@ -854,6 +836,7 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md)
 * [Manage your organization, Limit  identity search and selection](../../user-guide/manage-organization-collection.md#limit-identity-selection)
 * [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group)
+* [Manage permissions with command line tool](manage-tokens-namespaces.md)
 * [Grant or restrict access using permissions](restrict-access.md).
 ::: moniker-end
  
