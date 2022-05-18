@@ -1,9 +1,9 @@
 ---
-ms.technology: devops-ecosystem
-ms.topic: conceptual
+ms.topic: how-to
 title: Authorization using OAuth 2.0 | Azure DevOps Services REST APIs
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
+ms.technology: devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -12,7 +12,7 @@ ms.date: 10/22/2021
 
 # Authorize access to REST APIs with OAuth 2.0
 
-[!INCLUDE [version-azure-devops](../../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
 > The following guidance is intended for Azure DevOps Services users since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.

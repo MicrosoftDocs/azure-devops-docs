@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Azure Network Load Balancer task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool.
 

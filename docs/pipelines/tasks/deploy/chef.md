@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Chef task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy to Chef environments by editing environment attributes.
 

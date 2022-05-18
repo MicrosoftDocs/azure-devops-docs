@@ -3,13 +3,15 @@ title: Deploy to Azure MySQL
 description: Deploy to an Azure MySQL database from Azure Pipelines
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: quickstart
-ms.date: 09/03/2021
+ms.date: 02/01/2022
 ms.author: jukullam
 author: JuliaKM
 monikerRange: '=azure-devops'
 ---
 
 # Quickstart: Deploy to an Azure MySQL database
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Get started with [Azure Database for MySQL](/azure/mysql/) by deploying a database update with Azure Pipelines. Azure Database for MySQL is a relational database service in the Microsoft cloud. This quickstart walks through updating a single-server database. 
 
@@ -20,7 +22,7 @@ You'll use the [Azure Database for MySQL Deployment task](../tasks/deploy/azure-
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
-- A GitHub repository that you can use for your pipeline. If you do not have an existing repository, see [Create your first pipeline](../create-first-pipeline.md). 
+- A GitHub repository that you can use for your pipeline. If you don’t have an existing repository, see [Create your first pipeline](../create-first-pipeline.md). 
 
 This quickstart uses the resources created in either of these guides as a starting point:
 - [Create an Azure Database for MySQL server using Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal)
@@ -74,7 +76,7 @@ To access your MySQL database with Azure Pipelines, you need to set your databas
 In this example, we'll create a new databases named `quickstartdb` and add an inventory table. The inline SQL script will:
 
 - Delete `quickstartdb` if it exists and create a new `quickstartdb` database.
-- Delete the table `inventory` if it exists and create a new `inventory` table.
+- Delete the table `inventory` if it exists and creates a new `inventory` table.
 - Insert three rows into `inventory`.
 - Show all the rows.
 - Update the value of the first row in `inventory`.
@@ -143,7 +145,7 @@ Open the task and verify that the last two entries show two rows in `inventory`.
 
 ## Clean up resources
 
-When you are done working with your pipeline, delete `quickstartdb` in your Azure Database for MySQL. You can also delete the deployment pipeline you created. 
+When you’re done working with your pipeline, delete `quickstartdb` in your Azure Database for MySQL. You can also delete the deployment pipeline you created. 
 
 ## Next steps
 

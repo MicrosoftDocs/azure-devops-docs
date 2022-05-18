@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/04/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Provision agents for deployment groups
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 

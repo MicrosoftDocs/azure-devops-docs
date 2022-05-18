@@ -27,9 +27,9 @@ instead.
     will be suspended, including Azure DevOps purchases,
     Visual Studio Marketplace purchases, and Azure resources.
 
-    <img alt="Spending limit" src="/azure/devops/media/spending-limit.png" />
+    <img alt="Spending limit" src="../media/spending-limit.png" />
 
-    <img alt="Remove spending limit indefinitely" src="/azure/devops/media/azure-remove-spending-limit.png" />
+    <img alt="Remove spending limit indefinitely" src="../media/azure-remove-spending-limit.png" />
 
 	If you have Administrator permissions for your subscription, 
 	remove the spending limit by visiting the 

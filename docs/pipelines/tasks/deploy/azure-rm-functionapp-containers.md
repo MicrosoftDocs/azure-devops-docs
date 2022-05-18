@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Azure Function App for Container task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy an Azure Function on Linux using a [custom image](/azure/azure-functions/functions-create-function-linux-custom-image).
 

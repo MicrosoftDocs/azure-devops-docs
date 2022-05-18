@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Deployment jobs
 
-[!INCLUDE [version-2020-rtm](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 > [!IMPORTANT]
 > - Job and stage names cannot contain keywords (example: `deployment`).
@@ -85,7 +85,7 @@ Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
-`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](../yaml-schema.md#download).
+`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
 
 `routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
@@ -134,8 +134,8 @@ If you are using self-hosted agents, you can use the workspace clean options to 
   - deployment: deploy
     pool:
       vmImage: 'ubuntu-latest'
-      workspace:
-        clean: all
+    workspace:
+      clean: all
     environment: staging
 ```
 

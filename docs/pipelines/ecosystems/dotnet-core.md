@@ -6,12 +6,12 @@ ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
 ms.date: 12/27/2021
 ms.custom: contperf-fy20q4, freshness-fy22q2
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build, test, and deploy .NET Core apps
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use a pipeline to automatically build and test your .NET Core projects. Learn how to do the following tasks:
 
@@ -27,13 +27,6 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> 
-> The following guidance applies to TFS version 2017.3 and newer.
-
-::: moniker-end
 
 ## Create your first pipeline
 
@@ -148,7 +141,7 @@ pool:
   vmImage: 'ubuntu-18.04' # examples of other options: 'macOS-10.15', 'windows-2019'
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](../yaml-schema.md#pool) for further examples.
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema/pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the [UseDotNet@2](../tasks/tool/dotnet-core-tool-installer.md) task to your YAML file.
@@ -181,7 +174,7 @@ steps:
 ```
 
 > [!TIP]
-> To save the cost of running the tool installer, you can set up a [self-hosted agent](../agents/agents.md#install). See [Linux](../agents/v2-linux.md), [MacOS](../agents/v2-osx.md), or [Windows](../agents/v2-windows.md). 
+> To save the cost of running the tool installer, you can set up a [self-hosted agent](../agents/agents.md#install). See [Linux](../agents/v2-linux.md), [macOS](../agents/v2-osx.md), or [Windows](../agents/v2-windows.md). 
 > You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the preview or private SDKs that aren't officially supported by Azure DevOps or you have available on your corporate or on-premises environments only. 
 
 ::: moniker-end
@@ -229,7 +222,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 
 You can download NuGet packages from NuGet.org.
 
@@ -238,7 +231,7 @@ You can download NuGet packages from NuGet.org.
 `dotnet restore` internally uses a version of `NuGet.exe` that's packaged with the .NET Core SDK. `dotnet restore` can only restore packages specified in the .NET Core project `.csproj` files. 
 If you also have a Microsoft .NET Framework project in your solution or use `package.json` to specify your dependencies, use the **NuGet** task to restore those dependencies.
 
-::: moniker range="< tfs-2018"
+::: moniker range="tfs-2018"
 
 In .NET Core SDK version 2.0 and newer, packages get restored automatically when running other commands such as `dotnet build`.
 
@@ -648,7 +641,7 @@ Repeat the same commands in the same order on your development machine to locate
   you should also use the **NuGet** task to restore packages specified in `packages.config` files.
 Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
-* Your builds might fail intermittently while restoring packages. Dither NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You may want to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
+* Your builds might fail intermittently while restoring packages: either NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You may want to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
 
 * Occasionally, when we roll out a new version of the .NET Core SDK or Visual Studio, your build might break. For example, if a newer version or feature of the NuGet tool gets shipped with the SDK. To isolate this issue, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK that's used in your build.
 

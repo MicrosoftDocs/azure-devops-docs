@@ -5,12 +5,12 @@ ms.topic: reference
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
 ms.custom: seodec18
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Extract Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to extract files from archives to a target folder using match patterns.
 A range of standard archive formats is supported, including .zip, .jar, .war, .ear, .tar, .7z, and more.
@@ -49,6 +49,7 @@ None
 <li><code>**/bin/*.7z</code> extracts all &#39;&#39;.7z&#39;&#39; files in any sub-folder named bin.</li>
 </ul>
 <p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as <code>**/bin/**</code> instead of <code>**/bin</code>.</p>
+<p>Default value: <code>**/*.zip</code></p>
 </td>
 </tr>
 <tr>
@@ -57,15 +58,21 @@ None
 </tr>
 <tr>
 <td>Clean destination folder before extracting</td>
-<td>Select this check box to delete all existing files in the destination folder before beginning to extract archives.</td>
+<td>
+<p>Select this check box to delete all existing files in the destination folder before beginning to extract archives.</p>
+<p>Default value: true</p>
+</td>
 </tr>
 <tr>
 <td>Overwrite files in the destination directory</td>
-<td>Select this option to overwrite files in the output directory if they already exist. If the option is <code>false</code>, the script prompts on existing files, asking whether you want to overwrite them.</td>
+<td>
+<p>Select this option to overwrite files in the output directory if they already exist. If the option is <code>false</code>, the script prompts on existing files, asking whether you want to overwrite them.</p>
+<p>Default value: false</p>
+</td>
 </tr>
 <tr>
 <td>Path to 7z utility</td>
-<td>You can specify custom path to 7z utility using this option. If it's not specified on Windows - default 7zip version supplied with a task will be used.</td>
+<td>(Optional) You can specify custom path to 7z utility using this option. If it's not specified on Windows - default 7zip version supplied with a task will be used.</td>
 </tr>
 <tr>
 </tr>

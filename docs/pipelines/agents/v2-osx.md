@@ -4,15 +4,15 @@ ms.custom: seodec18
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 03/09/2020
-monikerRange: '>= tfs-2015'
+ms.date: 04/20/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Self-hosted macOS agents
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -31,27 +31,32 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 ::: moniker range=">= tfs-2018"
 
 Make sure your machine has these prerequisites:
-- macOS Sierra (10.12) or higher
+- macOS 10.15 "Catalina", macOS 11.0 "Big Sur", or macOS 12.0 "Monterey"
 - Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
 
 These prereqs are required for agent version 2.125.0 and higher.
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
+### TFVC
 
-These prereqs are required for agent version 2.124.0 and below.
-**If you're able, we recommend upgrading to a newer macOS (10.12+) and upgrading to the newest agent.**
+If you'll be using TFVC, you'll also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK aren't sufficient for this purpose.)
 
-Make sure your machine has these prerequisites:
-- OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
-- Git 2.9.0 or higher (latest version strongly recommended)
-- Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
+[TEE plugin](https://github.com/microsoft/team-explorer-everywhere) is used for TFVC functionality.
+It has an EULA, which you'll need to accept during configuration if you plan to work with TFVC.
 
-::: moniker-end
+Since the TEE plugin is no longer maintained and contains some out-of-date Java dependencies, starting from Agent 2.198.0 it's no longer included in the agent distribution. However, the TEE plugin will be downloaded during checkout task execution if you're checking out a TFVC repo. The TEE plugin will be removed after the job execution.
 
-If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
-(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
+> [!NOTE]
+> Note: You may notice your checkout task taking a long time to start working because of this download mechanism.
+
+If the agent is running behind a proxy or a firewall, you'll need to ensure access to the following site: `https://vstsagenttools.blob.core.windows.net/`. The TEE plugin will be downloaded from this address.
+
+If you're using a self-hosted agent and facing issues with TEE downloading, you may install TEE manually:
+1. Set `DISABLE_TEE_PLUGIN_REMOVAL` environment or pipeline variable to `true`. This variable prevents the agent from removing the TEE plugin after TFVC repository checkout.
+2. Download TEE-CLC version 14.135.0 manually from [Team Explorer Everywhere GitHub releases](https://github.com/microsoft/team-explorer-everywhere/releases).
+3. Extract the contents of `TEE-CLC-14.135.0` folder to `<agent_directory>/externals/tee`.
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -113,15 +118,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
 1. In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
 1. Click **Download agent**.
 
@@ -137,22 +142,6 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-### TFS 2015
-
-1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
-
-1. Follow the instructions on that page to download the agent.
-
-1. Configure the agent.
-
-   ```
-   ./config.sh
-   ```
-
-::: moniker-end
-
 ### Server URL
 
 ::: moniker range="azure-devops"
@@ -161,15 +150,9 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range="< azure-devops"
 
-TFS 2017 and newer: `https://{your_server}/tfs`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-TFS 2015: `http://{your_server}:8080/tfs`
+TFS 2018 and newer: `https://{your_server}/tfs`
 
 ::: moniker-end
 
@@ -379,7 +362,7 @@ For example:
 
 We provide the `./svc.sh` script as a convenient way for you to run and manage your agent as a launchd LaunchAgent service. But you can use whatever kind of service mechanism you prefer.
 
-You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
+You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/macOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 
 [!INCLUDE [include](includes/v2/replace-agent.md)]
 
@@ -397,7 +380,7 @@ You can use the template described above as to facilitate generating other kinds
 
 ### Where can I learn more about how the launchd service works?
 
-[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
+[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/macOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 ::: moniker range="azure-devops"
 

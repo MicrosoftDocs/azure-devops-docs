@@ -6,12 +6,14 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 04/13/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Specify events that trigger pipelines
 
-::: moniker range="<= tfs-2018"
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

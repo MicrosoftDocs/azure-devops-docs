@@ -14,7 +14,7 @@ ms.date: 10/26/2021
 
 # Query by titles, IDs, and rich-text fields in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -185,8 +185,6 @@ Each team can determine if the Bug work item type appears in either the Requirem
 
 <a id="following" />
 
-::: moniker range=">= tfs-2017"
-
 ## Query for work items that you're following
 
 You can use the **@Follows** macro to filter a list based on work items you're following along with other query filters. 
@@ -196,11 +194,9 @@ For example, the following query shows how to query across all projects for acti
 
 :::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
-::: moniker-end 
 
 <a id="recent-macros" />
 
-::: moniker range=">= tfs-2018"
 
 ## Query for recent work item activity
 
@@ -216,7 +212,6 @@ For example, the following query shows how to query for work items that you've r
 
 :::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
 
-::: moniker-end 
 
 <a id="fields" />
 

@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Bug trends sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to display, for a given set of open Bugs, the number of Bugs in each State, trended over a period of time. The following image shows an example of such a trend. 
 

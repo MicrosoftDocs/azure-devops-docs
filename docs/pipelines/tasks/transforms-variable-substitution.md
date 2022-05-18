@@ -7,14 +7,14 @@ ms.topic: reference
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/18/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # File transforms and variable substitution reference
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

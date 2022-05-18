@@ -1,11 +1,10 @@
 ---
-title: Manage notifications for a team, group, global organization
-titleSuffix: Azure DevOps
-description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps.  
+title: Manage notifications for a team, project, organization or collection
+titleSuffix: Azure DevOps 
+description: Learn how to configure team, project, and organization/collection notifications for when changes occur to source code, git, work items, and builds in Azure DevOps.  
 ms.technology: devops-collab
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
 ms.custom: contperf-fy21q2, cross-project
-ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -13,47 +12,46 @@ ms.date: 10/09/2020
 monikerRange: '<= azure-devops'
 ---
 
-# Manage notifications for a team, group, or organization
+# Manage notifications for a team, project, or organization
 
-[!INCLUDE [version-all](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Your team or group can receive email notifications as changes occur to the following items in Azure DevOps:
+Your team, project, or organization can receive email notifications as changes occur to the following items in Azure DevOps:
 - work items 
 - code reviews
 - pull requests
 - source control files
 - builds
 
-For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team.
-
-[!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
+For example, when a high priority work item is assigned to your team's area path, a notification email gets sent to the team. For more information, see [Notification types](about-notifications.md#notification-types).
 
 ## Prerequisites
 
-You must be a Team-, Project-, or Project Collection Administrator to create group and team notifications. If you're not an administrator, [get added as one](../organizations/settings/add-team-administrator.md). For more information, see [Notification types](about-notifications.md#notification-types).
+- To manage notifications, you must be an administrator at the level you want to manage them:
+	- Team administrator to modify subscription for a team
+	- A member of the **Project Administrators** group to create or modify subscriptions for a project.  
+	- A member of the **Project Collection Administrators** group to create or modify subscriptions for an organization orcollection.  
+
+	If you're not an administrator, get added as one. See [Add a team administrator](../organizations/settings/add-team-administrator.md), [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md), or [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
-
-::: moniker range=">= tfs-2017"
 
 ## Create an email subscription
 
 A subscription lets you control what your team is notified of and how the team receives those notifications. For more information, see [notification types](about-notifications.md#notification-types).
 
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-1. Select **Project settings** > **Notifications**.
+2. Select **Project settings** > **Notifications**.
 
     :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted":::
 
-2. Select **New subscription**. 
+3. Select **New subscription**. 
 
     ![Screenshot of New subscription highlighted.](media/new-subscription-newnav.png) 
 
-3. Select the type of activity you want your team to be notified of.
+4. Select the type of activity you want your team to be notified of.
 
 	![Screenshot of select event category and template page.](media/new-sub-page-preview.png)
 
@@ -146,26 +144,26 @@ A subscription lets you control what your team is notified of and how the team r
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 1. Open the **Notifications** page in **Team settings**: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
     > [!div class="mx-imgBorder"] 
     >![Go to team notifications page](media/nav-team-notifications-hub.png) 
 
-1. Select **New subscription**. 
+2. Select **New subscription**. 
 
    ![New subscription](media/new-subscription.png)
 
-1. Select the type of activity you want your team to be notified of.
+3. Select the type of activity you want your team to be notified of.
 
     ![Select event category and template](media/new-sub-page1.png)
 
-1. Provide a description to help you identify the subscription later.
+4. Provide a description to help you identify the subscription later.
 
     ![Provide a description.](media/new-sub-description.png)
 
-1. Choose which team members should receive a notification:
+5. Choose which team members should receive a notification:
 
     ![Select role](media/new-sub-team-delivery-by-role.png)
 
@@ -179,30 +177,22 @@ A subscription lets you control what your team is notified of and how the team r
    |**Members of Azure DevOps**   |  Send an individual email to each member of the team.       |
    |**SOAP**    | Send to an email address.      |
 
-   See the following roles and their descriptions:
-
-   |Roles |Description  |
-   |---------|---------|
-   |
-
 
     For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 
-2. Choose whether you want to receive notifications about activity in all projects or only a specific project.
+6. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
     ![Select scope](media/new-sub-scope.png)
 
-3. Optionally, configure additional filter criteria.
+7. Optionally, configure additional filter criteria.
 
     ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
-4. Select **Finish** to save the new subscription.
+8. Select **Finish** to save the new subscription.
 
 ::: moniker-end  
 
 <a name="manage" />
-
-::: moniker range=">= tfs-2017"
 
 > [!TIP]
 > If you don't want to receive a notification for an event that you initiated, you can turn on the option, *Skip initiator*. For more information, see [Exclude yourself from notification emails for events that you initiate](exclude-self-from-email.md).
@@ -211,8 +201,6 @@ A subscription lets you control what your team is notified of and how the team r
 
 Global notifications apply to all **projects** defined for an organization or collection. 
 Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. It's a default setting which applies only if the team or group hasn't explicitly set the option. For more information, see [Global notifications](about-notifications.md#global-notifications).
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -234,7 +222,7 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"  
+::: moniker range="tfs-2018"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
@@ -250,10 +238,6 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
    ![Delivery settings options for group.](media/group-delivery-settings.png)
 
 Your group delivery settings are updated for notifications.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"  
 
 ## Manage team and project delivery settings
 
@@ -271,67 +255,6 @@ Your group delivery settings are updated for notifications.
     ![Delivery settings options for team and project.](media/delivery-settings-options.png)
 
 Your team delivery settings are updated for notifications.
-
-::: moniker-end
-
-<a id="team-alerts"></a>
-
-::: moniker range="<= tfs-2015"
-
-## Set alerts for your team
-
-1. Open team alerts from **Manage TFS Alerts**.
-
-   ![Open team alerts](media/team/ALM_AN_ManageTeamAlerts.png)
-
-1. Expand the team and open Select New Alert Template. 
-
-	![Work Item Alerts link on the Alerts admin page](media/team/ALM_AN_TeamNewAlerts.png)
-
-1. Choose an alert type. 
-
-	![Choose an alert type for the team](media/team/ALM_AN_TeamAlertTypes.png)
-
-1. Notice how the subscriber is set to the team context. Alerts are sent to each team member based on their preferred email address, which they set through their profile.
-	
-	![Subscriber set to team context](media/team/ALM_AN_TeamSelector.png)
-
-   > [!TIP]
-   > For the team context, the alert query interprets the <strong>@Me</strong>  variable as anyone who is a member of the team.
-
-You can set filters for as many as 20 different alert types, specify the email addresses for yourself and other team members, and select the delivery format. Also, you can set team alerts to keep all team members notified of important changes. 
-
-## Set alerts for a project
-
-To set alerts for a project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
-
-As an administrator, you can view, create, edit, and delete alerts for team members and teams. 
-
-### View alerts set for a project 
-
-* From the web admin page for a project, open the Alerts tab and expand All alerts. 
-
-	![Expand All Alerts](media/administer/ALM_AN_Administer.png)
-
-### Find alerts set for a team member or team
-
-* Choose the name of the team member from the drop-down list, or type the name in the search box. 
-
-	![Choose the team member whose alerts you want to edit](media/administer/ALM_AN_TeamMember.png)
-
-	![Alerts listed for selected team member](media/administer/ALM_AN_Result.png)
-
-### Create, edit, or delete an alert
-
-1. To create an alert for a team member, first find the alerts defined for that subscriber as described in the previous step. Then, create an alert in the same way that a team member creates alerts. 
-
-	![Create an alert for a team member](media/administer/ALM_AN_AlertsForMember.png)
-
-	To create an alert for a team, first find the alerts assigned to that team, and then create an alert in the same way. The team should appear in the Subscriber field. 
-
-1. To edit or delete an alert, open it from the short cut menu.
-
-	![Open or delete an alert for a team member](media/administer/ALM_AN_Shortcut.png)
 
 ::: moniker-end
 

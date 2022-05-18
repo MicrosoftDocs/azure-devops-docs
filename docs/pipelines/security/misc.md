@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # Other security considerations
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 There are a handful of other things you should consider when securing pipelines.
 
 ## Relying on PATH

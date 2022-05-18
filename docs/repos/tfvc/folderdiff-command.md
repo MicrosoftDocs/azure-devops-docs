@@ -13,8 +13,8 @@ monikerRange: '<= azure-devops'
 # Folderdiff command (Team Foundation Version Control)
 
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Use the **folderdiff** command to display and compare a visual representation of the differences between files in two server folders, in a server folder and a local folder, or in two local folders.
 

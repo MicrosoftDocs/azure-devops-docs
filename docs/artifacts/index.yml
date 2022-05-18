@@ -96,7 +96,7 @@ landingContent:
             url: ./nuget/consume.md
           - text: Use packages from nuget.org
             url: ./nuget/upstream-sources.md
-  - title: Npm packages
+  - title: npm packages
     linkLists:
       - linkListType: quickstart
         links:
