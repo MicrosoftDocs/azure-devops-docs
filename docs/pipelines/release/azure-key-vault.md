@@ -86,7 +86,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. Select **Repos**, and then select **Initialize** to initialize a new repo with a README.
 
-    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="Creating the repo":::
+    :::image type="content" border="false" source="media/azure-key-vault/initialize-repo.png" alt-text="A screenshot showing how to initialize a repository.":::
 
 ## Create a new pipeline
 
@@ -96,7 +96,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. Select **Azure Repos Git** (YAML).
 
-    :::image type="content" border="false" source="media/azure-key-vault/create-pipeline.png" alt-text="Creating the pipeline":::
+    :::image type="content" border="false" source="media/azure-key-vault/create-pipeline.png" alt-text="A screenshot showing how to select Azure Repos source control.":::
 
 1. Select the repository you created in the previous step.
 
@@ -116,15 +116,15 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. Select **Show assistant** to expand the assistant panel. This panel provides convenient and searchable list of pipeline tasks.  
 
-    :::image type="content" border="false" source="media/azure-key-vault/show-assistant.png" alt-text="Showing the pipeline assistant":::
+    :::image type="content" border="false" source="media/azure-key-vault/show-assistant.png" alt-text="A screenshot showing how to access the task assistant panel.":::
 
 1. Search for **vault** and select the **Azure Key Vault** task.
 
-    :::image type="content" border="false" source="media/azure-key-vault/azure-key-vault-task.png" alt-text="Selecting the Azure Key Vault task":::
+    :::image type="content" border="false" source="media/azure-key-vault/azure-key-vault-task.png" alt-text="A screenshot showing how to search for the Azure Key Vault task.":::
 
 1. Select your **Azure subscription** and then select **Authorize**. Select your **Key vault** from the dropdown menu, and then select **Add** to add the task to your YAML pipeline.
 
-    :::image type="content" border="false" source="media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="Configuring the Azure Key Vault task":::
+    :::image type="content" border="false" source="media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="A screenshot showing how to configure the Azure Key Vault task.":::
 
     > [!NOTE]
     > The **Make secrets available to whole job** feature is not supported in Azure DevOps Server 2019 and 2020.
@@ -200,7 +200,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. Use the search bar to search for the key vault you created earlier.
 
-    :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="Searching for Azure Key Vault":::
+    :::image type="content" border="false" source="media/azure-key-vault/search-azure-key-vault.png" alt-text="A screenshot showing how to search for your Azure Key Vault.":::
 
 1. Under **Settings** Select **Access policies**.
 
@@ -220,15 +220,15 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. Select the **CmdLine** task to view the logs.
 
-    :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="Reviewing the command-line task":::
+    :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="A screenshot showing the command-line task logs.":::
 
 1. Return to pipeline summary and select the published artifact.
 
-    :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="The pipeline summary":::
+    :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="A screenshot showing the pipeline summary and the published artifact.":::
 
 1. Select the **secret.txt** artifact to open it.
 
-    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="Viewing the secret in the artifact":::
+    :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to open the published artifact.":::
 
 1. The text file should contain our secret: *mysecretpassword*.
 
