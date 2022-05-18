@@ -279,13 +279,10 @@ As a team administrator, you can add new or existing members from the **Team Mem
 Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
  
 ::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the preview feature, **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-
+[!INCLUDE [note-new-teams-page](../../includes/note-new-teams-page.md)]
 ::: moniker-end
 
-#### [Preview page](#tab/preview-page)
+#### [Preview UI](#tab/preview-page)
 
 ::: moniker range="azure-devops"
 
@@ -324,7 +321,7 @@ You can toggle between direct or expanded membership views. The **Direct Members
 Choose the **Current page** tab for information on adding a user to a team. The **New Teams Page** preview feature is only available for Azure DevOps Services at this time. 
 ::: moniker-end
 
-#### [Current page](#tab/current-page)
+#### [Current UI](#tab/current-page)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -390,7 +387,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 From the team's **Members** page, you can remove members. 
  
-#### [Preview page](#tab/preview-page)
+#### [Preview UI](#tab/preview-page)
 
 ::: moniker range="azure-devops"
 
@@ -412,7 +409,7 @@ From the team's **Members** page, you can remove members.
 Choose the **Current page** tab for information on adding a user to a team. The **New Teams Page** preview feature is only available for Azure DevOps Services at this time. 
 ::: moniker-end
 
-#### [Current page](#tab/current-page)
+#### [Current UI](#tab/current-page)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -552,7 +549,7 @@ As a member of the **Project Administrators** group, you can add users or groups
 
 <a id="project-permissions" />
 
-#### [Preview page](#tab/preview-page)
+#### [Preview UI](#tab/preview-page)
 
 
 ::: moniker range="azure-devops"
@@ -610,7 +607,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker-end
 
-#### [Current page](#tab/current-page) 
+#### [Current UI](#tab/current-page) 
 
 ::: moniker range=">= azure-devops-2019"
 
