@@ -64,6 +64,7 @@ To view the packages saved from your Universal Packages upstream source, select 
 
 ## Related articles
 
+- [DevBlogs - Universal Packages upstream sources](https://devblogs.microsoft.com/devops/azure-artifacts-introduces-new-upstreaming-capabilities/)
 - [Configure upstream sources](../how-to/set-up-upstream-sources.md)
 - [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
 - [Configure upstream behavior](../concepts/upstream-behavior.md)
