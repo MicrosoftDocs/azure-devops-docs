@@ -162,7 +162,7 @@ steps:
 - script: dir $(Build.SourcesDirectory)
 ```
 
-If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepository  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
+If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories (as specified by the `name` property in the repository resource) are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
 
 ## Inline syntax checkout
