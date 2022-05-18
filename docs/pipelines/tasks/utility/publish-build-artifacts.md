@@ -7,24 +7,18 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 09/21/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish Build Artifacts task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
-
-::: moniker range="tfs-2015"
-
-This article applies to TFS 2015.3 and higher.
-
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
+> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead. The [current version](/azure/devops/release-notes/2021/sprint-190-update#changes-to-publishbuildartifacts-and-downloadbuildartifacts-tasks) of the Pipeline Artifacts task scales better, allows parallel uploads, and is faster.
 
 ::: moniker-end
 
@@ -35,7 +29,7 @@ Use this task in a build pipeline to publish build artifacts to Azure Pipelines,
 
 None
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<= azure-devops"
 
 ## YAML snippet
 
@@ -60,7 +54,7 @@ None
 > [!NOTE]
 > You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an Artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
 
-::: moniker range=">= tfs-2018"
+::: moniker range="<= azure-devops"
 
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 

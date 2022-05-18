@@ -4,40 +4,36 @@ titleSuffix: Azure DevOps
 description: Add and manage security groups in an organization using the Azure DevOps CLI.  
 ms.technology: devops-security
 ms.assetid: 
-ms.topic: reference
-ms.reviewer: geverghe 
+ms.topic: reference 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
-ms.date: 08/18/2020
+monikerRange: 'azure-devops'
+ms.date: 05/06/2022
 ---
 
 # Add and manage security groups
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Security groups are used to manage permissions and access as described in [Get started with permissions, access, and security groups](about-permissions.md). For example, members of the Contributors group or Project Administrators group are assigned the permissions that are allowed for those groups.  
 
-Azure DevOps is pre-configured with default security groups. You can add and manage security groups for your organization, a collection, or project with the [az devops security group](/cli/azure/devops/security/group) commands. Use this command to:
+Azure DevOps is pre-configured with default security groups. You can add and manage security groups for your organization or project with the [az devops security group](/cli/azure/devops/security/group) commands. Use this command to perform the following tasks.
 
 - Create a new security group
 - View security groups and security group details
 - Update or delete a security group
 - Manage security group memberships for groups and users
 
-::: moniker range="< azure-devops"
 > [!NOTE]
-> For Azure DevOps Server, you can manage security groups using the `az devops security group` command documented in this article, or using the **TFSSecurity** command.  To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
-::: moniker-end
+> This article applies to Azure DevOps Services only. For Azure DevOps Server, you can manage security groups using the [**TFSSecurity** command](/azure/devops/server/command-line/tfssecurity-cmd).
+
 
 ## Prerequisites 
 
 - To add and manage security groups, you must be a member of the Project Collection Administrators security group.  
 - You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
 - Sign into Azure DevOps using `az login`.   
-- For the examples in this article, set the default organization as follows: 
-    - For **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.  
-    - For **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName` 
+- For the examples in this article, set the default organization as follows: `az devops configure --defaults organization=YourOrganizationURL`.  
 
 ## Security group commands
 

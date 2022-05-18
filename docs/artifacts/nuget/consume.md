@@ -5,12 +5,12 @@ ms.assetid: BF919E28-65C2-40E3-8A49-5BF0DA3DE598
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 09/07/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Install NuGet packages with Visual Studio
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Using Azure Artifacts and Visual Studio, you can set up your development machine to access and install packages from your feeds and public registries such as NuGet.org. 
 

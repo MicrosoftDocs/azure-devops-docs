@@ -7,14 +7,14 @@ ms.custom: cross-project
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 11/11/2021
 ---
 
 
 # Copy or clone test plans, test suites, and test cases 
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Several tools support copy, clone, or import operations of test items&mdash;such as, test plans, test suites, and test cases. Test cases describe the steps to take to run a test and validate a feature implementation or bug fix. Test suites group test cases, and optionally other test suites, into a particular order. Test plans define a collection of test suites to run for a particular iteration or release.  
  
@@ -427,13 +427,6 @@ Note the following:
 
 You can use the user interface to import a test suite from one test plan, within the same or different project, to another test plan in the current project. This action essentially copies or clones the test suite, creating a new test suite and duplicating any sub-test suites. The test cases referenced by the test suites are not duplicated, but referenced by the cloned test suites. 
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
-You can use [MTM](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases) or TCM to clone a test suite, specifying the target test plan, which can be within the same or another project. You can also specify a custom test suite work item type. 
- 
-::: moniker-end
-
-
 
 You can use [`tcm suites /list`](#list-test-suites) to list all test suites defined for a project. 
   

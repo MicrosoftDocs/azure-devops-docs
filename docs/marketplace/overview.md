@@ -7,12 +7,12 @@ ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Marketplace extensions for Azure DevOps
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Extensions are simple add-ons that can be used to customize and extend your experience with Azure DevOps. The [Marketplace](https://marketplace.visualstudio.com/azuredevops) is home to hundreds of extensions that can be installed to help with the following tasks:
 
@@ -48,7 +48,7 @@ To upload, install, or assign extensions you need [Project Collection Administra
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 Add an extension to your organization by first searching for and then installing the extension from the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 

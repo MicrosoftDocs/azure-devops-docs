@@ -308,7 +308,7 @@ When the value of the **State** field for a work item is set to Active and the w
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)  
 - [Customize your work tracking experience](../customize-work.md)  
 - [Query by assignment, workflow or Kanban board changes](../../boards/queries/query-by-workflow-changes.md)  
-- [Design the work item form](design-work-item-form.md)    
+- [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)    
 - [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
 
 

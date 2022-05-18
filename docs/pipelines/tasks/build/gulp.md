@@ -7,13 +7,13 @@ ms.assetid: EC168F1F-4B27-4688-87CE-E4D12E885CC5
 ms.author: vijayma
 author: vijayma
 ms.date: 02/24/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Gulp task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > Gulp is not preinstalled on all hosted agents. See [installed software on virtual machine images](../../agents/hosted.md#software). 

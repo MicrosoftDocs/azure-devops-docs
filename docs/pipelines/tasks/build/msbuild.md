@@ -7,14 +7,14 @@ ms.assetid: A104BE40-2BFD-4E80-828B-F50944C12107
 ms.author: vijayma
 author: vijayma
 ms.date: 02/24/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # MSBuild task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -113,7 +113,7 @@ msbuild
    </tr>
    <tr>
       <td><code>restoreNugetPackages</code><br/>Restore NuGet Packages</td>
-      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="../package/prev-versions/nuget-installer-0.md" data-raw-source="[NuGet Installer](../package/prev-versions/nuget-installer-0.md)">NuGet Installer</a> build task. <br/>Default value: false</td>
+      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="/previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true" data-raw-source="[NuGet Installer](/previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true)">NuGet Installer</a> build task. <br/>Default value: false</td>
    </tr>
 </table>
 

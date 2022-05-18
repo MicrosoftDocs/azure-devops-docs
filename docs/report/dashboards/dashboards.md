@@ -8,13 +8,13 @@ ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2015'
-ms.date: 09/28/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 # Add, rename, and delete dashboards in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2020"
 Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
@@ -27,12 +27,6 @@ Share progress and status with your team using configurable team dashboards. Das
  
 When a project is first created, a default team and default team dashboard is created labeled *Overview*. You can customize this dashboard by adding widgets. Each widget provides access to one or more features or functions. To learn more about each widget, see [Widget catalog](widget-catalog.md). 
 
-::: moniker range="tfs-2015"
-
-> [!NOTE]   
-> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2020"
 
 ## Project and team dashboards
@@ -42,11 +36,6 @@ When you add a dashboard, you can choose to make it a project dashboard or one s
 > [!NOTE]  
 > Project dashboards are owned by the person that created the dashboard. The owner can set permissions as to who can edit the dashboard. Team dashboards are owned by team administrators and can be edited by any member of the team. All dashboards can be viewed by members of the project. All widgets available to team dashboards are available for project dashboards. For team-specific widgets, if you aren't able to select a team through the widget, then the team defaults to the default project team.
 
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-> [!NOTE]   
-> For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
@@ -87,7 +76,7 @@ If you need to switch to a different project, select the :::image type="icon" so
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Open a web browser, connect to your project, and select **Dashboards**. 
 
 ![Dashboards directory, previous navigation](media/dashboards-go-to.png) 
@@ -119,7 +108,7 @@ If you need to switch to a different project, select the :::image type="icon" so
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team](../../project/navigation/go-to-project-repo.md#switch-team-context).
 
@@ -186,7 +175,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 From **Dashboards**, select :::image type="icon" source="../../boards/media/icons/green_plus_icon.png" border="false"::: **New Dashboard** and enter a dashboard name. 
 
@@ -208,11 +197,6 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 > To delete a project dashboard, you must be a member of the[**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md).  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"  
-> [!NOTE]  
-> You can configure the auto-refresh setting for each dashboard for TFS 2015.2 and later versions. For TFS 2017.1 and later versions, you can [set dashboard permissions](dashboard-permissions.md). 
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -226,7 +210,7 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 - To set permissions for a dashboard, select the **Security** option. For details, see [Set dashboard permissions](dashboard-permissions.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 1. To manage dashboards, select the ![configure icon](media/icons/configure-icon.png) wrench icon.
 
 	![Open Manage dashboards dialog](media/dashboards-configure-ts.png) 
@@ -242,22 +226,6 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 5. Select **Save** to save your changes. 
 
 You can also [manage dashboard permissions](dashboard-permissions.md).   
-::: moniker-end
-
-::: moniker range="tfs-2015"
-1. To manage dashboards, select the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon.
- 
-	![Open Manage dashboards dialog](media/dashboards-open-manage-dashboards-tfs.png) 
-
-2. Drag and drop the dashboards into the sequence you want them to appear.  
-
-	![Manage dashboards dialog](media/manage-dashboards.png)   
-
-3. (Optional) Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. The Auto-refresh feature requires TFS 2015.2 or later version.   
-
-4. To delete a dashboard, select the :::image type="icon" source="media/icons/delete_icon.png" border="false"::: delete icon.
-
-5. Select **Save** to save your changes. 
 ::: moniker-end
 
 
@@ -281,7 +249,7 @@ To remove a widget, select ![actions icon](../../media/icons/actions-icon.png) *
 When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
 ::: moniker-end
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Select ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
 You can now add widgets or drag tiles to reorder their sequence on the dashboard. 

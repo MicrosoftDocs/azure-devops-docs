@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '< azure-devops'
-ms.date: 10/27/2017
+ms.date: 04/04/2022
 ---
 
 
@@ -101,8 +101,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > <TRANSITION from="Resolved" to="Complete" for="[project]\AllTesters" not="[project]\NewTesters">  
 > </TRANSITION>  
 > ```  
-  
-::: moniker range=">= tfs-2018" 
+
 
 ## Auto completion of work items with pull requests  
 
@@ -112,8 +111,6 @@ When you link a work item to a pull request (PR), you have the option to automat
 > **Feature availability**: The **Complete linked work items after merging** option is available in TFS 2018 and later versions. 
 
 To learn more, see [Workflow states & state categories](../../boards/work-items/workflow-and-state-categories.md).
-
-::: moniker-end  
 
 
 ## Related articles 

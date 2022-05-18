@@ -6,12 +6,12 @@ ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 11/05/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Merge strategies and squash merge
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you complete a [pull request](pull-requests.md), you merge the topic branch into your default branch, usually `main`. This merge adds the commits of the topic branch to your main branch and creates a merge commit to reconcile any conflicts between the default and topic branch. The comments and discussion in the pull request give additional context for the changes made in the topic branch.
 
@@ -48,7 +48,7 @@ Choose **Squash commit** under **Merge type** in the **Complete pull request** d
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 ### Complete pull requests with squash merge
 
 You can choose to squash merge when completing a pull request in Azure Repos.

@@ -5,12 +5,12 @@ ms.assetid: cd71e039-6e11-44f9-80fd-66c3bc146b46
 ms.topic: article
 ms.technology: devops-code-git
 ms.date: 10/07/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Change the default branch
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The default branch is the first branch that Git will check out on a fresh clone.
 Also, [pull requests](pull-requests.md) target this branch by default.
@@ -79,7 +79,7 @@ We'll use [Azure Pipelines](../../pipelines/get-started/what-is-azure-pipelines.
 
 > [!WARNING]
 > If the old and new default branches are both updated before this pipeline runs, then the pipeline won't be able to mirror the changes.
-> Someone will have to manually [merge](pulling.md#update-branches-with-merge) the old default branch into the new default branch to get it running automatically again.
+> Someone will have to manually [merge](pulling.md#update-branches-with-merge-or-rebase) the old default branch into the new default branch to get it running automatically again.
 
 1. For all existing CI builds, update them to [trigger](../../pipelines/build/triggers.md) against your new default branch instead of the old one.
  

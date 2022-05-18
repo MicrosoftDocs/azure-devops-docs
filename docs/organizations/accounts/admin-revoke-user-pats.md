@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 07/28/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Revoke personal access tokens for organization users
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If your personal access token (PAT) is compromised, take immediate action. Learn how an administrator can revoke a user's PAT, as a precaution to protect your organization. You can also disable a user, which revokes their PAT. There's latency (up to an hour) before the PAT stops working however, once the disable or delete function completes in Azure Active Directory (Azure AD). 
 

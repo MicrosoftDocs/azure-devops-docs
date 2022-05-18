@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 10/26/2021  
 ---
 
 # Publish a Git repository to a wiki
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 In this quickstart, learn how to do the following tasks:
 
@@ -118,7 +118,7 @@ For the Wiki that's provisioned with the Markdown files you've added, you can no
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
@@ -147,7 +147,7 @@ az devops wiki create [--mapped-path]
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 #### Example 
 

@@ -8,13 +8,13 @@ ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ms.date: 08/17/2020
 ---
 
 # Azure DevOps CLI service endpoint
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
 You can use the `az devops service-endpoint` command to create different types of service endpoints. 
 

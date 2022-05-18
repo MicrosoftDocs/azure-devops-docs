@@ -7,12 +7,12 @@ ms.manager: jenp
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.date: 12/13/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Install Maven Artifacts
 
-[!INCLUDE [version-gt-eq-2018](../../includes/version-gt-eq-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can publish and restore Maven packages to/from your Azure Artifacts feed. In this article, we will be covering how to restore your packages from an Azure Artifacts feed.
 
@@ -23,7 +23,7 @@ With Azure Artifacts, you can publish and restore Maven packages to/from your Az
 
 ## Connect to feed
 
-1. From within your project, select **Artifacts**, and then select your feed. You can [create a new feed](../get-started-maven.md#create-a-feed) if you don't have one already.
+1. From within your project, select **Artifacts**, and then select your feed.
 
 1. Select **Connect to feed**.
 

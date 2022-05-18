@@ -4,12 +4,12 @@ ms.custom: seodec18
 description: How to publish Artifacts with Jenkins and Azure Pipelines
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
 ms.date: 12/08/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish NuGet packages with Jenkins 
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can leverage a variety of build and deployment automation tools such as Maven, Gradle, and Jenkins. This article will walk you through creating and publishing NuGet packages using Jenkins.
 

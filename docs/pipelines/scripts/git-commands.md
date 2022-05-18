@@ -5,14 +5,14 @@ description: Learn how you can run a Git command in a build script for your work
 ms.topic: conceptual
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
 ms.date: 02/28/2022
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Run Git commands in a script
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -26,7 +26,8 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 ## Enable scripts to run Git commands
 
 > [!NOTE]
-> Before you begin, be sure your account's default identity is set with:
+> Before you begin, be sure your account's default identity is set with the following code.
+> This must be done as the very first step after checking out your code.
 > ```
 > git config --global user.email "you@example.com"
 > git config --global user.name "Your Name"
@@ -107,23 +108,8 @@ When you're done granting the permissions, make sure to select **Save changes**.
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
-
-### Enable your pipeline to run command-line Git
-
-On the [variables tab](../build/variables.md) set this variable:
-
-| Name | Value |
-|---|---|
-| ```system.prefergit``` | ```true``` |
-
-::: moniker-end
-
-::: moniker range=">= tfs-2018"
 
 ### Allow scripts to access the system token
-
-::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -147,7 +133,7 @@ On the [options tab](../build/options.md), select **Allow scripts to access OAut
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
 On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
@@ -195,10 +181,6 @@ steps:
 
 ### List the files in your repo
 
-::: moniker range="< tfs-2018"
-Make sure to follow the above steps to [enable Git](#enable).
-::: moniker-end
-
 On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
@@ -208,10 +190,6 @@ On the [build tab](../tasks/index.md) add this task:
 ### Merge a feature branch to main
 
 You want a CI build to merge to main if the build succeeds.
-
-::: moniker range="< tfs-2018"
-Make sure to follow the above steps to [enable Git](#enable).
-::: moniker-end
 
 On the [Triggers tab](../build/triggers.md), select **Continuous integration (CI)** and include the branches you want to build.
 
@@ -288,14 +266,6 @@ You can also use any of the variations below. This is supported for commits to A
 - `[skip azpipelines]` or `[azpipelines skip]`
 - `[skip azp]` or `[azp skip]`
 - `***NO_CI***`
-
-::: moniker-end
-
-::: moniker range="< tfs-2018"
-
-### How does enabling scripts to run Git commands affect how the build pipeline pulls in build sources?
-
-When you set ```system.prefergit``` to ```true```, the build pipeline uses command-line Git instead of LibGit2Sharp to clone or fetch the source files.
 
 ::: moniker-end
 

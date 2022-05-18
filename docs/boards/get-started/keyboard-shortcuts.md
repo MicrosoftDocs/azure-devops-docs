@@ -7,14 +7,15 @@ ms.technology: devops-agile
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/15/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
+
 
 
 # Keyboard shortcuts for Azure Boards and Team Explorer
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]    
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]    
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. Along with these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 
 For specific guidance on navigating within the web portal, see [Web portal navigation](../../project/navigation/index.md).
@@ -52,7 +53,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= azure-devops-2019"
 
-
 ## Work items 
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
@@ -79,8 +79,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
-::: moniker range=">= tfs-2017"
-
 <a id="plan-shortcuts"></a>
 
 ## Plans
@@ -89,8 +87,6 @@ You can use the following keyboard shortcuts when [interacting with a delivery p
  
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
-
-::: moniker-end
 
 ## Team Explorer navigational shortcuts
 
@@ -110,7 +106,7 @@ Use these shortcuts when working in Team Explorer.
    **Ctrl+0,h**&nbsp;&nbsp;&nbsp;Open Home  
    **Ctrl+0,m**&nbsp;&nbsp;&nbsp;Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)  
    **Ctrl+0,p**&nbsp;&nbsp;&nbsp;Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  
-   **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](../../report/sql-reports/reporting-services-reports.md)  
+   **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports)  
    **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings  
    **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items  
    **Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../../repos/git/gitquickstart.md)  

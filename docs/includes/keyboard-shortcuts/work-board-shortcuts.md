@@ -1,22 +1,13 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 
 <a id="kanban-board-shortcuts"></a>
 
-::: moniker range=">= tfs-2015"
 
 You can use the following keyboard shortcuts from any Kanban board, that is, when working from **Boards>Boards** or **Work>Board** page.  
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-> [!NOTE]  
-> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 and later versions. 
-
-::: moniker-end
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -24,7 +15,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt="Kanban board shortcuts"/></td>
+<td><img src="../../media/keyboard-shortcuts/kanban-board-shortcuts-cloud-original.png" alt="Kanban board shortcuts"/></td>
 <td>
 <br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
@@ -58,13 +49,13 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 
 <table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts.png" alt="Kanban board shortcuts"/></td>
+<td><img src="../../media/keyboard-shortcuts/kanban-board-shortcuts.png" alt="Kanban board shortcuts"/></td>
 <td>
 <br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 12/06/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Assign tests for user acceptance testing
 
-[!INCLUDE [version-gt-eq-2015](../includes/version-gt-eq-2015.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based

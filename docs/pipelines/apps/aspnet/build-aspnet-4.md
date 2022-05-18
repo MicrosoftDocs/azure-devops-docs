@@ -5,14 +5,14 @@ ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
 ms.date: 02/09/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build ASP.NET apps with .NET Framework
 
-[!INCLUDE [version-gt-eq-2017](../../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -21,16 +21,6 @@ monikerRange: '>= tfs-2017'
 > [!NOTE]
 >
 > This article focuses on building .NET Framework projects with Azure Pipelines. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
-
-
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> 
-> This guidance applies to TFS version 2017.3 and newer.
-
-::: moniker-end
-
 ## Create your first pipeline
 
 ::: moniker range=">=azure-devops-2020"

@@ -5,14 +5,14 @@ description: Understand how to add and consume secure files for Azure Pipelines.
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.author: vijayma
 author: vijayma
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 07/14/2021
 
 ---
 
 # Use secure files
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Secure files give you a way to store files that you can share across pipelines. Use the secure files library to store files such as:
 
@@ -27,7 +27,7 @@ The contents of the secure files are encrypted and can only be used when you con
 
 The size limit for each secure file is 10 MB.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

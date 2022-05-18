@@ -5,13 +5,14 @@ description: Branch policies and settings provide teams with the means to protec
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 11/22/2021
-monikerRange: '>= tfs-2015'
+ms.custom: cross-service
+ms.date: 03/31/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Branch policies and settings
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Branch policies help teams protect their important [branches](./create-branch.md) of development. Policies enforce your team's code quality and change management standards. This article describes how to set and manage branch policies. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md).
 
@@ -19,14 +20,14 @@ A branch that has required policies configured can't be deleted, and requires pu
 
 ## Prerequisites 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 - To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 
 - If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="< azure-devops"
 - To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 ::: moniker-end
 
@@ -80,7 +81,7 @@ Configure your policies in the **Policies** page. See the following sections for
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 You can use Azure DevOps CLI to list or show policies for a branch or repository.
 
@@ -153,9 +154,7 @@ az repos policy show --id
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 
 ***
@@ -203,7 +202,7 @@ If all other policies pass, the creator can complete the PR when the required nu
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 You can manage pull request required approver counts with [az repos policy approver-count](/cli/azure/repos/policy/approver-count).
 
@@ -302,9 +301,7 @@ az repos policy approver-count update --id
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 
 ***
@@ -335,9 +332,9 @@ To set the policy, under **Branch Policies**, set **Check for linked work items*
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
-You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking#az_repos_policy_work_item_linking) to create and update work item linking policies for a branch or repository.
+You can use Azure CLI [az repos policy work-item-linking](/cli/azure/repos/policy/work-item-linking#az-repos-policy-work-item-linking) to create and update work item linking policies for a branch or repository.
 
 <a id="create-wi-policy" /> 
 
@@ -421,23 +418,18 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 
 ***
 
 
-::: moniker range=">= tfs-2017" 
 
 <a id="check-comment-resolution"></a>
 
 ## Check for comment resolution
 
 The **Check for comment resolution** policy checks whether all PR comments are resolved.
-
-::: moniker-end
 
 # [Browser](#tab/browser)
 
@@ -451,7 +443,7 @@ For more information on working with pull request comments, see [Review pull req
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
@@ -463,7 +455,7 @@ For more information on working with pull request comments, see [Review pull req
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 You can use Azure DevOps CLI [az repos policy comment-required](/cli/azure/repos/policy/comment-required) to set and update comment resolution policy.
 
@@ -534,7 +526,6 @@ az repos policy comment-required update --id
 The following example updates comment resolution policy ID `6` in the `main` branch of the Fabrikam repository to be blocking. Comments must be resolved before pull requests can merge. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
-
 az repos policy comment-required update --id 6 --blocking true --output table
 
 ID    Name                  Is Blocking    Is Enabled    Repository Id                         Branch
@@ -542,12 +533,11 @@ ID    Name                  Is Blocking    Is Enabled    Repository Id          
 6     Comment requirements  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
 ```
 
-
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+
+
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 
 ***
@@ -561,7 +551,11 @@ ID    Name                  Is Blocking    Is Enabled    Repository Id          
 
 Azure Repos has several merge strategies, and by default, all of them are allowed. You can maintain a consistent branch history by enforcing a merge strategy for PR completion.
 
+::: moniker-end
+
 # [Browser](#tab/browser)
+
+::: moniker range=">= azure-devops-2020"
 
 Set **Limit merge types** to **On** to limit which merge types to allow in your repo.
 
@@ -572,7 +566,16 @@ Set **Limit merge types** to **On** to limit which merge types to allow in your 
 - **Rebase and fast-forward** creates a linear history by replaying source commits onto the target branch with no merge commit.
 - **Rebase with merge commit** replays the source commits onto the target and also creates a merge commit.
 
+::: moniker-end
+::: moniker range="< azure-devops-2020"
+> [!NOTE]   
+> This feature is available for Azure DevOps Server 2020 and later versions. 
+::: moniker-end
+
 # [Azure DevOps CLI](#tab/azure-devops-cli)
+
+
+::: moniker range="azure-devops"
 
 You can use Azure DevOps CLI [az repos policy merge-strategy](/cli/azure/repos/policy/merge-strategy) to set and update merge strategy policy.
 
@@ -670,13 +673,14 @@ az repos policy merge-strategy update --id
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`use-squash-merge`|Whether to squash merge always. This option doesn't work for other merge types. Accepted values: `false`, `true`.|
 
+::: moniker-end 
 
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
+ 
 
-
-
-::: moniker-end 
  
 ::: moniker range="< azure-devops-2020"
 
@@ -697,9 +701,9 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 <a name="require-the-pull-request-to-build"></a>
 <a id="build-validation"></a>
 
-## Build validation
-
 ::: moniker range=">= azure-devops-2020" 
+
+## Build validation
 
 You can set a policy requiring PR changes to build successfully before the PR can complete.
 Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
@@ -709,7 +713,11 @@ A build validation policy queues a new build when a new PR is created or changes
 > [!IMPORTANT]
 > Before specifying a build validation policy, you must have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
 
+::: moniker-end 
+
 # [Browser](#tab/browser)
+
+::: moniker range=">= azure-devops-2020" 
 
 To add a build validation policy
 
@@ -747,7 +755,16 @@ When the PR owner pushes changes that build successfully, the policy status upda
 
 If you have an **Immediately when \<branch name> is updated** or **After \<n> hours if \<branch name> has been updated** build policy, the policy status updates when the protected branch updates, if the previous build is no longer valid.
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+> [!NOTE]   
+> This feature is available for Azure DevOps Server 2020 and later versions. 
+::: moniker-end
+
 # [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
 
 You can use Azure DevOps CLI [az repos policy build](/cli/azure/repos/policy/build) to set and update build validation policy.
 
@@ -850,13 +867,12 @@ az repos policy build update --id
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`valid-duration`|Policy validity duration, in minutes.|
 
+::: moniker-end 
 
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
-
-
-
-::: moniker-end
 
 ::: moniker range="< azure-devops-2020" 
 
@@ -920,13 +936,18 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 <a id="include-code-reviewers"></a>
 
-## Automatically include code reviewers
 
 ::: moniker range=">=azure-devops-2020"
 
+## Automatically include code reviewers
+
+
 You can automatically add reviewers to pull requests that change files in specific directories and files, or to all pull requests in a repo.
 
+::: moniker-end 
+
 # [Browser](#tab/browser)
+::: moniker range=">=azure-devops-2020"
 
 1. Select the **+** button next to **Automatically included reviewers**.
 
@@ -952,8 +973,16 @@ You can automatically add reviewers to pull requests that change files in specif
    - You can specify an **Activity feed message** that appears in the pull request.
 
 1. Select **Save**.
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+> [!NOTE]   
+> This feature is available for Azure DevOps Server 2020 and later versions. 
+::: moniker-end
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
 
 You can use Azure DevOps CLI [az repos policy required-reviewer](/cli/azure/repos/policy/required-reviewer) to set and update required reviewer policy.
 
@@ -1044,15 +1073,16 @@ az repos policy required-reviewer update --id
 |`required-reviewer-ids`|Reviewer email addresses separated by `;`. For example: `john@contoso.com;alice@contoso.com`.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
+::: moniker-end 
 
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
 
+ 
 
-
-::: moniker-end
-
-::: moniker range="<=azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 Select reviewers for specific directories and files in your repo.
 

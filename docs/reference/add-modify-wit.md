@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '< azure-devops' 
-ms.date: 11/17/2021
+ms.date: 04/04/2022
 ---
 
 # Add or modify a work item type 
@@ -31,7 +31,7 @@ Most work item type customizations are made to the work item type XML definition
 - [Add or modify a field to an existing work item type](#modify-field)
 - [Add a custom work item type, modify a work item type](#add-wit)
 - [Change the workflow (states, reasons, transitions)](#modify-workflow)
-- [Modify the work item form](xml/change-work-item-form-layout.md)
+- [Modify the work item form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
 
 #### ProcessConfiguration definition  
 
@@ -191,7 +191,7 @@ For more information about applying workflow field rules, see [FIELD (Workflow) 
 
 ## Customize the work item form  
 
-The following illustrations highlight the most common elements on work item forms. You can customize all of them except the title area and form controls. The elements you use to customize the form depend on [whether or not the new form has been enabled by your admin](manage-new-form-rollout.md).  
+The following illustrations highlight the most common elements on work item forms. You can customize all of them except the title area and form controls. The elements you use to customize the form depend on [whether or not the new form has been enabled by your admin](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true).  
 
 **Web form with the new form enabled (VSTS, TFS 2017)**  
 
@@ -207,7 +207,7 @@ You can customize the form to accomplish the following objectives:
 > [!div class="mx-tdBreakAll"]  
 > | New form enabled  |Old form in use  |
 > |-------------|----------|  
-> |- [Add or modify a field](xml/weblayout-xml-elements.md)<br/>- [Change a field label](xml/weblayout-xml-elements.md)<br/>- [Rearrange fields](xml/weblayout-xml-elements.md)<br/>- [Add a group or page](xml/weblayout-xml-elements.md)<br/>- [Add a group](xml/weblayout-xml-elements.md)<br/>- [Add a custom control, group, or page](xml/weblayout-xml-elements.md)<br/>- [Add informational text or hyperlinks](xml/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control page](xml/linkscontroloptions-xml-elements.md) |- [Add or modify a field](xml/specify-work-item-form-controls.md)<br/>- [Change a field label](xml/specify-work-item-form-controls.md)<br/>- [Rearrange fields](xml/specify-work-item-form-controls.md)<br/>- [Add tabs, columns, or groups](xml/design-work-item-form.md)<br/>- [Add informational text or hyperlinks](xml/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control tab](xml/define-link-controls.md)<br/>- [Add an attachment control](xml/add-the-attachments-control.md) |
+> |- [Add or modify a field](xml/weblayout-xml-elements.md)<br/>- [Change a field label](xml/weblayout-xml-elements.md)<br/>- [Rearrange fields](xml/weblayout-xml-elements.md)<br/>- [Add a group or page](xml/weblayout-xml-elements.md)<br/>- [Add a group](xml/weblayout-xml-elements.md)<br/>- [Add a custom control, group, or page](xml/weblayout-xml-elements.md)<br/>- [Add informational text or hyperlinks](xml/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control page](xml/linkscontroloptions-xml-elements.md) |- [Add or modify a field](xml/specify-work-item-form-controls.md)<br/>- [Change a field label](xml/specify-work-item-form-controls.md)<br/>- [Rearrange fields](xml/specify-work-item-form-controls.md)<br/>- [Add tabs, columns, or groups](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)<br/>- [Add informational text or hyperlinks](xml/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](xml/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control tab](/previous-versions/azure/devops/reference/xml/define-link-controls?view=tfs-2017&preserve-view=true)<br/>- [Add an attachment control](/previous-versions/azure/devops/reference/xml/add-the-attachments-control?view=tfs-2017&preserve-view=true) |
 
 
 <a id="change-wit-backlog-board">  </a>
@@ -227,7 +227,6 @@ To learn how to add or remove work item types from the backlog or task board, se
 
 
 <a id="change-wit-color">  </a>
-::: moniker range=">= tfs-2015"
 
 ## Change the color, icon, or workflow state color of a work item type
 
@@ -238,7 +237,6 @@ In the web portal, work items appear in query results and on the backlog and boa
  
 <img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing work item type color, icon, and state color" />  
 
-::: moniker-end
 
 ## Change the type of an existing work item  
 
@@ -288,13 +286,13 @@ When you rename a work item type that belongs to a category, you have to update 
 For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).  
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Enable features after upgrade 
 
 What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-You can add custom work item types and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.
+You can add custom work item types and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.
 
 Changing the workflow or renaming a work item type might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
 
@@ -318,4 +316,3 @@ Other related topics or resources:
 - [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  
 - [Customize cards on boards](../boards/boards/customize-cards.md)  
-

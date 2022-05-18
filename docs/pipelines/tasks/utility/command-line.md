@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
 ms.custom: seodec18
 ms.date: 02/13/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Command Line task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run a program from the command prompt.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -94,8 +94,7 @@ On the Build tab of a build pipeline, add these tasks:
 <table>
    <tr>
       <td>
-:::image type="icon" source="media/command-line.png" border="false":::
-<br/><strong>Utility: Command Line</strong>
+<strong>Utility: Command Line</strong>
       </td>
 <td>
 <p>Get the date.</p>
@@ -107,8 +106,7 @@ On the Build tab of a build pipeline, add these tasks:
 </tr>
 <tr>
 <td>
-:::image type="icon" source="media/command-line.png" border="false":::
-<br/><strong>Utility: Command Line</strong></td>
+<strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the operating system version.</p>
 <ul>
@@ -118,8 +116,7 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
         <tr>
       <td>
-:::image type="icon" source="media/command-line.png" border="false":::
-<br/><strong>Utility: Command Line</strong></td>
+<strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the environment variables.</p>
 <ul>
@@ -129,8 +126,7 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
         <tr>
       <td>
-:::image type="icon" source="media/command-line.png" border="false":::
-<br/><strong>Utility: Command Line</strong></td>
+<strong>Utility: Command Line</strong></td>
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
 <ul>

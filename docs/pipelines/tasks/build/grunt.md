@@ -7,12 +7,12 @@ ms.assetid: FB181C61-BAC3-4568-B340-48ACE15C2519
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Grunt task
  
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run Grunt tasks using the JavaScript Task Runner.
 

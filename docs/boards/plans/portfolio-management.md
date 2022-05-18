@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 04/01/2022
 ---
 
 # Use Azure Boards to manage your product and portfolio backlogs 
@@ -51,7 +51,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 In this example, we show the **Epics** portfolio backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.   
 
@@ -60,20 +60,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-The Fabrikam Account Management portfolio owner has several campaigns to start and deliver in the coming year. The owner creates an epic for each campaign and then breaks down each epic into various features that contribute to each campaign. 
-
-With the hierarchical structure implemented, portfolio owners working in Account Management can view the epic, feature, and product backlogs for their area. 
-
-<img src="media/pm-account-management-backlog-view.png" alt="Epic backlog of account management team" /> 
-
-All work items under the Fabrikam/Account Management area path appear in their backlog view. You can expand a single item or use the expand ![expand icon](../media/icons/expand_icon.png) and collapse ![collapse icon](../media/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
-
-::: moniker-end
-
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!TIP]    
 > Program managers can also gain insight into progress across teams using [Delivery plans](review-team-plans.md). See also [Visibility across teams](visibility-across-teams.md).  
@@ -102,7 +89,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
 
@@ -110,23 +97,6 @@ Items that are owned by other teams appear with an information icon,  :::image t
 > ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
 
 ::: moniker-end
-
-::: moniker range="tfs-2017"
-
-Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
-
-<img src="../backlogs/media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" /> 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-The Customer Profile feature team's view of the backlog only includes those work items assigned to their area path, **Fabrikam/Account Management/Customer Profile**. Here we show parents that provide a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team.   
-
-<img src="media/pm-customer-profile-backlog-view.png" alt="Backlog view of Customer profile feature team" /> 
-
-::: moniker-end
-
  
 ## Assign work from a common backlog
 
@@ -152,7 +122,7 @@ Here, all backlog items have been assigned to feature teams while all features a
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
 
@@ -170,21 +140,7 @@ Here, all backlog items have been assigned to feature teams while all features a
 > ![All backlog items have been assigned to feature teams.](media/portfolio/account-management-backlog-assigned.png) 
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
-
-<img src="media/pm-assign-items-from-common-backlog.png" alt="Backlog view-Assign items from a common backlog" /> 
-
-During the planning meeting, you can open each item, make notes, and assign the item to the team to work on it. 
-
-Here, all backlog items have been assigned to feature teams while all features and epics remain owned by Account Management. 
-
-<img src="media/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" />
-
-::: moniker-end
-
+ 
 
 ## Add portfolio backlogs 
 
@@ -194,31 +150,23 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 
 ::: moniker-end
  
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 ::: moniker-end
 
+
+
 ## Track dependencies across teams 
 
 The simplest way to track dependencies across teams is to link work items using the **Related** link type. If they're dependent in time, then you can use the **Predecessor/Successor** link types.  You can then create queries that find work items containing these relationships. See [Manage dependencies, link work items to support traceability](../queries/link-work-items-support-traceability.md) to learn more. 
-  
+ 
 ::: moniker range="azure-devops"
 Using Delivery Plans, you can track dependencies across projects within an organization. To learn more, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
-
-To track dependencies across organizations, see [Plan and track dependencies using the Dependency Tracker](../extensions/dependency-tracker.md). 
 ::: moniker-end
-
-::: moniker range="< azure-devops"
-To track dependencies across organizations, see [Plan and track dependencies using the Dependency Tracker](../extensions/dependency-tracker.md). 
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 ## Portfolio feature progress
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -226,7 +174,7 @@ To view feature progress based on linked requirements, you can add a rollup colu
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 To view feature progress based on linked requirements, you can view the Feature Timeline. To learn more, see [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
 

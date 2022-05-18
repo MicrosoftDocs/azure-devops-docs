@@ -155,18 +155,19 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 
 ### Evaluation of artifact version
 
-The pipeline version, CI build run, that gets picked in your pipeline run, gets controlled by how your pipeline run is triggered.
+The version of the resource pipeline's artifacts depends on how your pipeline is triggered.
 
-In case you create your pipeline run is created manually or by a scheduled trigger, the default version, branch, and tags get used to evaluate the CI pipeline version.
+If your pipeline runs because you manually triggered it or due to a scheduled run, the version of artifacts's version is defined by the values of the `version`, `branch`, and `tags` properties.
 
-|Provided information|Outcome |
+|Specified properties | Artifact version |
 |---------|---------|
-|Build version #     | That version runs.        |
-|Branch     |The latest version from the given branch runs.         |
-|Tags list    | The latest run that has all the matching tags runs.        |
-|Branch and tags list   |The latest run from the branch provided and that has the matching tags runs.        |
-|Nothing    | The latest version across all the branches runs.        |
+| `version`     | The artifacts from the build having the specified run number |
+| `branch`      | The artifacts from the latest build performed on the specified branch |
+| `tags` list   | The artifacts from the latest build that has all the specified tags    |
+| `branch` and `tags` list   | The artifacts from the latest build performed on the specified branch _and_ that has all the specified tags |
+| None    | The artifacts from the latest build across all the branches |
 
+Let's look at an example. Say your pipeline contains the following resource definition.
 ```yml
 resources:
   pipelines:
@@ -178,17 +179,20 @@ resources:
     - Production        ### Tags are AND'ed
     - PreProduction
 ```
+When you manually trigger your pipeline to run, the version of the artifacts of the `MyCIAlias` pipeline is the one of the latest build done on the `main` branch and that has the `Production` and `PrepProduction` tags.
 
-If your pipeline gets triggered automatically, the CI pipeline version gets picked, based on the trigger event. The default version information provided is irrelevant.
+When your pipeline gets triggered because one of its resource pipelines completes, the version of the artifacts is the one of the triggering pipeline. The values of the `version`, `branch`, and `tags` properties are ignored.
 
-|Provided information  |Outcome  |
+|Specified triggers  | Outcome  |
 |---------|---------|
-|Branches     | A new pipeline gets triggered whenever a CI run successfully completes that matches to the branches that are included.        |
-|Tags     | A new pipeline gets triggered whenever a CI run successfully completes that matches all the tags mentioned.        |
-|Stages     | A new pipeline gets triggered whenever a CI run has all the stages mentioned are completed successfully.        |
-|Branches, tags, and stages    | A new pipeline run gets triggered whenever a CI run matches all the conditions.        |
-|Only `trigger: true`    | A new pipeline run gets triggered whenever a CI run successfully completes.        |
-|Nothing    | No pipeline run gets triggered. Triggers are disabled by default unless you specifically enable them.        |
+|`branches` | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run on the `include` branches |
+|`tags`     | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run that is tagged with _all_ the specified tags |
+| `stages`     | A new run of the current pipeline is triggered whenever the resource pipeline successfully executed the specified `stages` |
+| `branches`, `tags`, and `stages`    | A new run of the current pipeline is triggered whenever the resource pipeline run satisfies _all_ branch, tags, and stages conditions |
+| `trigger: true`    | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run |
+|Nothing    | No new run of the current pipeline is triggered when the resource pipeline successfully completes a run|
+
+Let's look at an example. Say your pipeline contains the following resource definition.
 
 ```yaml
 resources:
@@ -211,6 +215,8 @@ resources:
       - PreProduction
       
 ```
+
+Your pipeline will run whenever the `SmartHotel` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
 
 ### `download` for pipelines
 

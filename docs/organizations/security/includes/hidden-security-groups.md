@@ -3,8 +3,8 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 02/15/2022
---- 
+ms.date: 04/04/2022
+---
 
 ::: moniker range="azure-devops"
 
@@ -20,7 +20,7 @@ ms.date: 02/15/2022
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 > [!NOTE]  
 > All security groups are collection-level entities, even those groups that only have permissions to a specific project. From the web portal, visibility of some security groups may be limited based on user permissions. However, you can discover the names of all groups in an organization using the REST APIs. To learn more, see [Add and manage security groups](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true).

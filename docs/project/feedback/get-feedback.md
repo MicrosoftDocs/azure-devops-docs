@@ -8,7 +8,7 @@ ms.assetid: b8fc1618-6501-41dd-86a6-78290bb84dcd
 ms.author: kaelli
 author: KathrynEE 
 monikerRange: '<= azure-devops'
-ms.date: 01/15/2019
+ms.date: 04/04/2022
 ---
 
 # Get feedback
@@ -19,12 +19,9 @@ Once you have working software, you're ready to get feedback from your stakehold
 
 Before requesting feedback, make sure that you [provide stakeholders who'll you request feedback from the necessary permissions](give-permissions-feedback.md).
 
-::: moniker range=">= tfs-2017"
-
 > [!NOTE]
 > You can also [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
 
-::: moniker-end
 
 ## Prerequisites
 
@@ -42,7 +39,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
@@ -53,30 +50,6 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ::: moniker-end 
 
-::: moniker range="tfs-2015"
-
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To request feedback, you must be granted **Basic** access or higher for TFS 2015.1 and later versions. For TFS 2015, you must be granted **Advanced** access. For details, see [About access levels](../../organizations/security/access-levels.md).
-* To provide or review feedback, you must be granted **Stakeholder** access or higher. 
-* To view or modify feedback responses, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
-* To send feedback requests, the server administrator must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
-
-::: moniker-end 
-
-
-::: moniker range="tfs-2013"
-
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To request feedback, you must be granted **Advanced** access. For details, see [About access levels](../../organizations/security/access-levels.md).
-* To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
-* To send feedback requests, the server administrator must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2015"  
 
 ## Add the Other links widget to your dashboard
 
@@ -85,7 +58,6 @@ Add the **Other links** widget to a web portal team dashboard. For details, see 
 > [!div class="mx-imgBorder"]  
 > ![Other links widget](media/get-feedback/add-other-links-widget.png)   
 
-::: moniker-end 
 
 ## Request feedback 
 
@@ -115,8 +87,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 ::: moniker-end 
 
-
-::: moniker range=">= tfs-2015 <= azure-devops-2019" 
+::: moniker range="<= azure-devops-2019" 
 
 1. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
@@ -139,38 +110,6 @@ To request feedback, you fill out a form that generates an email request to your
 	![Feedback focus textbox on Request Feedback form](media/ALM_GF_FocusFeedback.png)  
 
 4. Send the request. 
-
-	![Send Button on Request Feedback form](media/ALM_GF_SendRequest.png)  
-
-::: moniker-end 
-
-
-::: moniker range="<= tfs-2013"  
-
-1. From the web portal team home page, choose **Request feedback** to start a feedback request. 
-
-	![Request feedback link in Homepage](media/request-feedback-link.png)  
-
-	> [!NOTE]  
-	> If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
-
-	If the following message appears, you need to [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
-
-	![Error message about email notifications not configured](media/ALM_GF_SMTPServer.png)  
-
-2. Add the feedback reviewers. If you don't see the names you want in the browse list, [grant them permissions to provide feedback](give-permissions-feedback.md).
-
-	![Select stakeholders on Request Feedback form](media/ALM_GF_FeedbackReviewers.png)  
-
-3. Tell your reviewers how to run the app they'll be reviewing.
-
-	![Launch application instructions rich-text area on Request Feedback form](media/ALM_GF_TellStakeholders.png)  
-
-4. For each area of interest, decide what type of feedback you want. Set the context for the reviewers by providing enough background information. Add up to four more areas of interest with the **add feedback item** link. 
-
-	![Feedback focus textbox on Request Feedback form](media/ALM_GF_FocusFeedback.png)  
-
-5. Send the request. 
 
 	![Send Button on Request Feedback form](media/ALM_GF_SendRequest.png)  
 

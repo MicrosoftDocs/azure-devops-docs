@@ -4,7 +4,7 @@ title: Modal Dialog | Extensions for Azure DevOps
 description: Use the modal dialog provided by the host for Azure DevOps.
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/19/2019
@@ -12,7 +12,7 @@ ms.date: 09/19/2019
 
 # Modal dialog
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The HostDialogService enables you to present a modal dialog to the user and prevent interaction with all parts of web access until the dialog is dismissed. 
 

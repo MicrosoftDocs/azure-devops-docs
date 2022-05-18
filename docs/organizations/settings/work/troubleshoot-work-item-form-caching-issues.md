@@ -6,13 +6,13 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-monikerRange: ">= tfs-2018"
-ms.date: 04/12/2021
+monikerRange: "<= azure-devops"
+ms.date: 04/04/2022
 ---
 
 # Troubleshoot work item form caching issues
 
-[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
  
 To quickly render work items in your client or browser, several data elements are cached by the IndexDB process. A known issue exists in the cache rules that can cause a delay in server-side rule re-evaluations.  
 

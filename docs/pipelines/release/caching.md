@@ -29,26 +29,25 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 > [!NOTE]
 > Caching is currently free, and caches are stored in Azure blob storage.
 
-## Use Cache task
+## Cache task
 
 Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
 
-### Configure Cache task
+### Configure the Cache task
 
-The `Cache` task has two required inputs: `key` and `path`. 
+The [Cache task](../tasks/utility/cache.md) has two required arguments: *key* and *path*:
 
-#### Path input
+- **path**: the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
 
-`path` the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`. You can use predefined variables however wildcards are not supported.
+> [!NOTE]
+> You can use [predefined variables](../build/variables.md) to store the path to the folder you want to cache, however wildcards are not supported.
 
-#### Key input
-
-`key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
+- **key**: should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
 * **Strings**: <br>
 Fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
@@ -192,7 +191,7 @@ steps:
 
 ## Bundler
 
-For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v0.9/bundle_install.html) will look for Gems in.
+For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v2.3/man/bundle-config.1.html) will look for Gems in.
 
 **Example**:
 
@@ -475,7 +474,7 @@ steps:
         restoreKeys: | 
           python | "$(Agent.OS)"
           python
-        path: $(Pipeline.Workspace)/miniconda/envs
+        path: $(CONDA)/envs
         cacheHitVar: CONDA_CACHE_RESTORED
     
     - script: conda env create --quiet --file environment.yml

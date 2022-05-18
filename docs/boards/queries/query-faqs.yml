@@ -9,7 +9,7 @@ metadata:
   author: KathrynEE
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 10/25/2021
+  ms.date: 04/01/2022
 
 title: FAQs about queries in Azure Boards and Azure DevOps
 
@@ -36,10 +36,10 @@ sections:
 
       - question: What are all the query filter functions? 
         answer: |
-          From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs-boards-plans).  
+          From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. In addition to the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).  
           ::: moniker range=">= azure-devops-2019"
           > [!NOTE] 
-          > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
+          > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](../../project/search/advanced-work-item-search-syntax.md).
           ::: moniker-end
 
           ---
@@ -59,7 +59,7 @@ sections:
                 - [Key words](./titles-ids-descriptions.md)  
                 - [Linked work items](./linking-attachments.md)  
                 - [Logical groupings](./using-queries.md#logical-groupings)  
-                - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+                - [Query macros](about-managed-queries.md#macros)  
                 - [Tags](./add-tags-to-work-items.md#query)  
                 - [Was Ever](./query-by-workflow-changes.md)  
                 - [Wildcard](./titles-ids-descriptions.md)  
@@ -69,34 +69,10 @@ sections:
                 - [Key words](./titles-ids-descriptions.md)  
                 - [Linked work items](./linking-attachments.md)  
                 - [Logical groupings](./using-queries.md#logical-groupings)  
-                - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+                - [Query macros](about-managed-queries.md#macros)  
                 - [Tags](./add-tags-to-work-items.md#query)  
                 - [Was Ever](./query-by-workflow-changes.md)  
                 - [Wildcard](./titles-ids-descriptions.md)  
-                ::: moniker-end
-                ::: moniker range="tfs-2017"
-                - [Compare fields](./query-field-value.md) 
-                - [Key words](./titles-ids-descriptions.md)  
-                - [Linked work items](./linking-attachments.md)  
-                - [Logical groupings](./using-queries.md#logical-groupings)   
-                - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
-                - [Tags](./add-tags-to-work-items.md#query)  
-                - [Was Ever](./query-by-workflow-changes.md)  
-                - [Wildcard](./titles-ids-descriptions.md)  
-                ::: moniker-end
-                ::: moniker range="tfs-2015"
-                - [Compare fields](./query-field-value.md)
-                - [Key words](./titles-ids-descriptions.md)   
-                - [Linked work items](./linking-attachments.md)  
-                - [Logical groupings](./using-queries.md#logical-groupings)  
-                - [Query macros or variables](./about-managed-queries.md#macros) 
-                ::: moniker-end
-                ::: moniker range="tfs-2013"
-                - [Compare fields](./query-field-value.md)
-                - [Key words](./titles-ids-descriptions.md)   
-                - [Linked work items](./linking-attachments.md)  
-                - [Logical groupings](./using-queries.md#logical-groupings)  
-                - [Query macros or variables](./about-managed-queries.md#macros) 
                 ::: moniker-end
              :::column-end::: 
              :::column span="1":::
@@ -114,22 +90,6 @@ sections:
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md#across-projects)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
-                ::: moniker-end
-                ::: moniker range="tfs-2017"
-                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
-                - [History and Discussion](./history-and-auditing.md) 
-                - [Search across projects](./using-queries.md#across-projects)
-                ::: moniker-end
-                ::: moniker range="tfs-2015"
-                - [Search across projects](./using-queries.md#across-projects)
-                - [Tags](./add-tags-to-work-items.md#query)
-                - [Was Ever](./query-by-workflow-changes.md) 
-                - [Wildcard](./titles-ids-descriptions.md)
-                ::: moniker-end
-                ::: moniker range="tfs-2013"
-                - [Tags](./add-tags-to-work-items.md#query)
-                - [Was Ever](./query-by-workflow-changes.md) 
-                - [Wildcard](./titles-ids-descriptions.md)
                 ::: moniker-end
              :::column-end:::
              :::column span="2":::
@@ -150,19 +110,6 @@ sections:
                 - [@CurrentIteration](query-by-date-or-current-iteration.md)   
                 - [@Follows](titles-ids-descriptions.md#following)
                 - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
-                ::: moniker-end
-                ::: moniker range="tfs-2017"
-                - [[Any]](titles-ids-descriptions.md)
-                - [@Me](query-by-workflow-changes.md)
-                - [@Today](query-by-date-or-current-iteration.md) 
-                - [@CurrentIteration](query-by-date-or-current-iteration.md)   
-                - [@Follows](titles-ids-descriptions.md#following)
-                ::: moniker-end
-                ::: moniker range="tfs-2013 || tfs-2015"
-                - [[Any]](titles-ids-descriptions.md)
-                - [@Me](query-by-workflow-changes.md)
-                - [@Today](query-by-date-or-current-iteration.md) 
-                - [@CurrentIteration](query-by-date-or-current-iteration.md)   
                 ::: moniker-end
              :::column-end:::
           :::row-end:::
@@ -244,7 +191,7 @@ sections:
           ::: moniker range=">= azure-devops-2019"
           **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. To learn more, see [Bulk import or update work items using CSV files](import-work-items-from-csv.md). 
           ::: moniker-end
-          ::: moniker range="<= tfs-2018"
+          ::: moniker range="tfs-2018"
           **No**. Cross-project queries won't open in Excel.   
           ::: moniker-end
 
@@ -256,12 +203,7 @@ sections:
     questions:
       - question: Can I change the owner of a query or folder? 
         answer: |
-          ::: moniker range=">= tfs-2017"
           **No**. You can only enable permissions for users and groups from the permissions window for the query or folder.
-          ::: moniker-end
-          ::: moniker range="<= tfs-2015"
-          **Yes**. This feature is supported from the [query Security dialog](set-query-permissions.md). 
-          ::: moniker-end
  
       - question: Can I move a query or a folder?
         answer: |

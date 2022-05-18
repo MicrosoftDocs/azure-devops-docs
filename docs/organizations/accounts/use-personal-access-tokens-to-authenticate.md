@@ -8,13 +8,13 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/07/2022
-monikerRange: '>= tfs-2017'
+ms.date: 05/11/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Use personal access tokens
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can use a personal access token (PAT) as an alternate password to authenticate into Azure DevOps. In this article, we show you how to create, use, modify, and revoke PATs for Azure DevOps.
 
@@ -53,6 +53,8 @@ A: No. You can use basic auth with most Azure DevOps REST APIs, but [organizatio
 
 ### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
 
-A: Azure DevOps scans for PATs checked into public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event to your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage affected users to mitigate immediately by [rotating or revoking the leaked PAT](use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
+A: Azure DevOps scans for PATs checked into public repositories on GitHub. When we find a leaked token, we immediately send a detailed email notification to the token owner and log an event to your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage affected users to mitigate immediately by [rotating or revoking the leaked PAT](use-personal-access-tokens-to-authenticate.md#revoke-a-pat). 
+
+There's a policy for managing leaked PATs! For more information, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically).
 
 ::: moniker-end

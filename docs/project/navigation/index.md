@@ -2,13 +2,13 @@
 title: Navigating within the web portal  
 titleSuffix: Azure DevOps
 description: Navigate within the user interface/web portal of Azure DevOps
-ms.custom: "Navigation, seodec18"
+ms.custom: "navigation, cross-project, cross-service"
 ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 11/11/2020
+ms.date: 04/04/2022
 ---
 
 # Web portal navigation in Azure DevOps  
@@ -34,9 +34,9 @@ Each service provides you with one or more pages which support a number of featu
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-The web portal for Team Foundation Server (TFS) is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
+The web portal for Team Foundation Server is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
 ::: moniker-end
 
 Here's what you need to know to get up and running using the web portal.  
@@ -54,7 +54,7 @@ Here's what you need to know to get up and running using the web portal.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams 
@@ -81,7 +81,7 @@ You select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 You select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
 
 ![Horizontal navigation](media/gif-images/horizontal-nav.gif)
@@ -107,7 +107,7 @@ Limited access is available to an unlimited number of stakeholders for free. For
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 You connect to the web portal through a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/security/add-users-team-project.md) can connect. This is typically done by a member of the Project Administrators group.
 
@@ -116,6 +116,7 @@ Limited access is available to an unlimited number of stakeholders for free. For
 ::: moniker-end
 
 <a id="refresh-web-portal">  </a>
+
 ## Refresh the web portal
 
 If data doesn't appear as expected, the first thing to try is to refresh your web browser. Refreshing your client updates the local cache with changes that were made in another client or the server. To refresh the page or object you're currently viewing, refresh the page or choose the ![Refresh icon](../../media/icons/refresh.png) **Refresh** icon if available.  
@@ -162,8 +163,3 @@ Although you can access source code, work items, and builds from both clients, s
 - [Manage projects](../../organizations/projects/about-projects.md) 
 - [Project & Organizational Settings](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects) 
 
-
-<!---
-**Help**: use to quickly access the most relevant topics for the page you're on. 
-
--->

@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: best-practice
 ms.author: kaelli
 monikerRange: '<= azure-devops'
-ms.date: 10/17/2019
+ms.date: 04/01/2022
 ---
 
 
@@ -89,7 +89,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - [Monitoring lead time and cycle time control charts](../..//report/dashboards/cycle-time-and-lead-time.md)  
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 - [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md)  
 - [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
 ::: moniker-end  
@@ -125,7 +125,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
 	- [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
  	- [Delete work items](../backlogs/remove-delete-work-items.md#delete)  
@@ -134,23 +134,6 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items) 
 - [Monitoring team velocity](../../report/dashboards/team-velocity.md) 
 ::: moniker-end  
-
-::: moniker range="tfs-2015"  
-- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
-- [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
-- [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-- [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items) 
-- [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
-::: moniker-end  
-
-
-::: moniker range="tfs-2013"
-- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
-- [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)  
-- [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-- [Monitoring team velocity](../../report/dashboards/team-velocity.md) 
-::: moniker-end
-
 
 ## Sprint tools
 
@@ -291,7 +274,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
    
    - [Track test status](../../test/track-test-status.md)
-   - [Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
+   - [Order manual tests within suites](/previous-versions/azure/devops/2016/jun-01-team-services#ordering-of-tests-in-test-hub)
    - [Export test plans and test suites](../../test/reference-qa.yml#testcases)
    - [Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)
    

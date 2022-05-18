@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/09/2022
+ms.date: 04/04/2022
 --- 
 
 
@@ -87,17 +87,11 @@ The following table summarizes the different permissions you can set at the obje
       **Object-level permissions**
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= tfs-2017"
       - [Modify work items under an area path](#set-permissions-area-path) 
       - [Create and edit nodes under an area path or iteration path](#set-permissions-area-path) 
       - [Define and edit queries or query folders](#work-item-queries) 
       - [Define and edit Delivery Plans](../../boards/plans/edit-delivery-plan-permissions.md)  
-      ::: moniker-end
-      ::: moniker range="< tfs-2017"
-      - [Modify work items under an area path](#set-permissions-area-path) 
-      - [Create and edit nodes under an area path or iteration path](#set-permissions-area-path) 
-      - [Define and edit queries or query folders](#work-item-queries)  
-      ::: moniker-end
+
    :::column-end:::
 :::row-end:::
 ---
@@ -209,7 +203,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.  
 
@@ -229,26 +223,6 @@ You define both areas and iterations for a project from the **Project Settings>P
 
 ::: moniker-end   
 
-::: moniker range="<= tfs-2015"  
-
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
-
-    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
-
-1. Choose the context menu for the node you want to manage.  
-
-    ![Choose the context menu for the node you want to manage.](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
-
-2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
-
-    For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
-
-    ![Permissions for an area node](media/work-tracking/set-permissions-area-node-dialog.png)  
-
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
-
-::: moniker-end
-
 
 <a id="work-item-queries"></a>
 
@@ -266,19 +240,15 @@ For details, see [Set permissions on a shared query or query folder](../../organ
 
 <a id="tags" /> 
 
-::: moniker range=">= tfs-2017"  
 
 ## Set permissions on work item tags 
 
 By default, all users of the Contributors group can create and add tags to work items. To set permissions for a group or user to restrict this ability, you can set the **Create tag definition** to **Deny** at the project-level. To learn how, see [Change the permission level for a project-level group](change-project-level-permissions.md). 
 
-::: moniker-end
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
 
-
-::: moniker range=">= tfs-2017"  
 
 ## Edit or manage permissions for Delivery Plans 
 
@@ -290,8 +260,6 @@ Delivery Plans are an object within a project. You manage plan permissions for e
 > ![Permissions dialog for a delivery plan](../../boards/plans/media/permissions/permissions-plans-dialog.png)
 
 To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md). To learn more about Delivery Plans, see [Review team plans](../../boards/plans/review-team-plans.md).
-
-::: moniker-end
 
 
 <a id="move-delete-permissions"></a>
@@ -318,7 +286,6 @@ In this example, we grant members assigned to the team administrator role, who b
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
 
-::: moniker range=">= tfs-2017"
 
 ## Manage test plans and test suites
 
@@ -333,8 +300,6 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 ![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
-
-::: moniker-end  
 
 
 <a id="process-permissions" />
@@ -372,7 +337,6 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 ::: moniker-end
-
 
 
 ::: moniker range="<= azure-devops-2019"  

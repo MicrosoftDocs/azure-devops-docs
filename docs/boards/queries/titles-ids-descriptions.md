@@ -185,8 +185,6 @@ Each team can determine if the Bug work item type appears in either the Requirem
 
 <a id="following" />
 
-::: moniker range=">= tfs-2017"
-
 ## Query for work items that you're following
 
 You can use the **@Follows** macro to filter a list based on work items you're following along with other query filters. 
@@ -196,11 +194,9 @@ For example, the following query shows how to query across all projects for acti
 
 :::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
-::: moniker-end 
 
 <a id="recent-macros" />
 
-::: moniker range=">= tfs-2018"
 
 ## Query for recent work item activity
 
@@ -216,7 +212,6 @@ For example, the following query shows how to query for work items that you've r
 
 :::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
 
-::: moniker-end 
 
 <a id="fields" />
 

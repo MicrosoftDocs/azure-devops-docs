@@ -166,6 +166,12 @@ To keep your token more secure, use credential managers so you don't have to ent
 
 ***
 
+```powershell
+$MyPat = 'yourPAT'
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyPat"))
+git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+```
+
 **Existing repos**
 
 For existing repositories, if you already added the origin using the username, run the following command first.
@@ -295,7 +301,7 @@ If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more info
 ::: moniker range="azure-devops"
 ## Modify a PAT
 
-You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes).
+You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes). After regeneration, the previous PAT is no longer authorized.
 
 1. From your home page, open your user settings :::image type="icon" source="../../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 

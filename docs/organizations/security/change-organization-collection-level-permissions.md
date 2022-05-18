@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2022
+ms.date: 04/04/2022
 --- 
 
 
@@ -148,7 +148,7 @@ Here we show how to add a user to the built-in **Project Collection Administrato
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -308,25 +308,17 @@ For on-premises deployments, see these additional articles:
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018 < azure-devops"
+::: moniker range="<= azure-devops-2020"
 
-If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2017"
-If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
-
-* [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions)
-* [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)
+If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end 
+
+
 
 ::: moniker range="< azure-devops"
 
 ## FAQs
-
-
 
 #### Q: When do I need to add someone to the Project Collection Administrator role?
 

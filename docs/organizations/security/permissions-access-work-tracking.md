@@ -8,8 +8,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 11/20/2019
----
+ms.date: 04/04/2022
+--- 
 
 # Permissions and access for work tracking
 
@@ -21,7 +21,7 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 As a member of an Azure DevOps project, you can use most of the features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all features under the **Work** hub. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
@@ -67,8 +67,6 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [!INCLUDE [temp](includes/boards-queries.md)]
 
-::: moniker range=">= tfs-2017"  
-
 ## Delivery plans
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access.  
@@ -77,7 +75,6 @@ You can manage permissions for individual plans. To learn more, see [Edit or man
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 
-::: moniker-end
 
 ## Test management
 
@@ -372,17 +369,12 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-::: moniker range="tfs-2018 < azure-devops"
+::: moniker range="<= azure-devops-2020"
 
-If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2017"  
-
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md) and [Set SharePoint site permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions).
+If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 
 ::: moniker-end  
+
 
 ## Related notes 
 

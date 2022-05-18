@@ -29,22 +29,8 @@ sections:
           If you receive an error message that states you don't have permission to create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).  
           ::: moniker-end
           
-          ::: moniker range=">= tfs-2018 < azure-devops"
-          If you receive an error message that states you don't have permission to create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md). If you have SQL Reporting Services installed in the collection, you also need permissions for reports to the [Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md).  
-          ::: moniker-end
-          
-          ::: moniker range="<= tfs-2017"
-          If you receive an error message that states you don't have permissionto create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md). If you have SQL Reporting Services installed in the collection, you also need permissions for reports to the [Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md). Also, if you have SharePoint integrated with TFS, you'll need to gain [Full Control permissions](/previous-versions/azure/devops/report/sharepoint-dashboards/set-sharepoint-permissions) on the server that hosts SharePoint Products.   
-          ::: moniker-end
-          
-          ::: moniker range="<= tfs-2017"
-          
-          #### To resolve Error TF30169
-
-          **Error TF30169: The New Team Project Wizard was unable to download the process template {0}**  indicates that SharePoint site process templates aren't available on the server that hosts SharePoint products.
-          
-          Contact the system administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Add SharePoint products to your Team Foundation Service deployment](/previous-versions/azure/devops/server/sharepoint/add-sharepoint-to-tfs).
-          
+          ::: moniker range=" < azure-devops"
+          If you receive an error message that states you don't have permission to create a project, you need to request collection-level permissions. See [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md). If you have SQL Reporting Services installed in the collection, you also need permissions for reports to the [Team Foundation Content Managers group](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).  
           ::: moniker-end
           
       - question: |
@@ -54,14 +40,14 @@ sections:
           
           Even when you've deleted a project, you may get the same name error. If a project create or delete operation doesn't successfully finish, some components could be created or deleted even though others aren't. In this event, you can't reuse the name associated with the project.
           
-          ::: moniker range="<= tfs-2018"
+          ::: moniker range="tfs-2018"
           To verify project deletion or remove remaining components associated with a partially deleted project, use the [Delete project command line tool(TFSDeleteProject)](/azure/devops/server/command-line/tfsdeleteproject-cmd). Then try again to create the project with the same name.
           
           Even with troubleshooting, you might not be able to use the same name. Some components of the deleted project could be scheduled for deletion but not yet deleted.
           
           ::: moniker-end
 
-          ::: moniker range="<= tfs-2018"          
+          ::: moniker range="tfs-2018"          
 
           #### To resolve an error message related to a plug-in 
 
@@ -70,7 +56,7 @@ sections:
           Review the project creation log to determine the plug-in that caused the error. After you discover the problem, you can either contact the developer or vendor that provided the plug-in, or attempt to fix the problem yourself. For more information, see [Customize a process template](../../reference/process-templates/customize-process.md).
           ::: moniker-end                    
 
-          ::: moniker range="<= tfs-2018"          
+          ::: moniker range=" tfs-2018"          
 
           #### To resolve a problem connecting to a server
 
@@ -114,17 +100,7 @@ sections:
 
           #### How do I add SQL Server Reporting services?
 
-          See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
-          ::: moniker-end
-          ::: moniker range="<= tfs-2017" 
-          #### How do I add SharePoint portal resources?
-
-          See one of the following articles:
-          
-          -   To add a SharePoint web application: [Add SharePoint products to your deployment](/previous-versions/azure/devops/server/sharepoint/add-sharepoint-to-tfs).
-          
-          -   To configure a project portal to use an existing website or SharePoint site: [Configure a project portal](../../project/configure-or-add-a-project-portal.md).
-          
+          See [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
           ::: moniker-end
           
       - question: |

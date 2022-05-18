@@ -7,12 +7,12 @@ ms.assetid: D690542B-9A13-4836-8C1E-D715AE6CB7D6
 ms.author: vijayma
 author: vijayma
 ms.date: 04/21/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # CocoaPods task
 
-[!INCLUDE [version-gt-eq-2015](../../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
 

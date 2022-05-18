@@ -4,14 +4,14 @@ description: Build source repositories using Azure Pipelines
 ms.topic: reference
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.date: 07/07/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Supported source repositories
 
-[!INCLUDE [version-gt-eq-2015](../../includes/version-gt-eq-2015.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

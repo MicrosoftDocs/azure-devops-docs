@@ -532,7 +532,107 @@
     },
     {
       "source_path_from_root": "/release-notes/index.md",
-      "redirect_url": "/azure/devops/release-notes/features-timeline",
+      "redirect_url": "/azure/devops/release-notes/features-timeline"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2022-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-12.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-11.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-10.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-08.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-07.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-06.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-05.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-04.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-03.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-02.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2021-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-12.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-11.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-10.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-08.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-07.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-06.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-05.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-04.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-03.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-02.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path_from_root": "/release-notes/docswhatsnew/azure-devops-docs-2020-01.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
     }
   ]
 }

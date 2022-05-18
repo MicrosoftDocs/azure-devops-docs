@@ -5,15 +5,15 @@ ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.technology: devops-ecosystem
 ms.custom: freshness-fy22q3
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-date: 01/27/2022
+date: 03/07/2022
 ---
 
 # Add a custom pipelines task extension
 
-[!INCLUDE [version-gt-eq-2017](../../includes/version-gt-eq-2017.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps.
 
@@ -114,20 +114,20 @@ npm install azure-pipelines-task-lib --save
    npm install @types/mocha --save-dev
    ```
 
-#### Choose typescript version
+#### Choose TypeScript version
 
-Tasks can use typescript versions 2.3.4 or 4.0.2. 
+Tasks can use TypeScript versions 2.3.4 or 4.0.2. 
 
 >[!NOTE]
 >To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment.
 
-You can install the chosen typescript version using this command:
+You can install the chosen TypeScript version using this command:
 
 ```
 npm install typescript@4.0.2 -g --save-dev
 ```
 
-If you skip this step, typescript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+If you skip this step, TypeScript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
 
 
 #### Create tsconfig.json compiler options
@@ -199,7 +199,7 @@ Following are descriptions of some of the components of the `task.json` file:
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task about [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks. For more information, see [How can I restrict vso commands usage for task?](#how-can-i-restrict-vso-commands-usage-for-task)|
+| `restrictions`       | Restrictions being applied to the task about [Visual Studio Codespaces commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks. For more information, see [How can I restrict Visual Studio Codespaces commands usage for task?](#how-can-i-restrict-visual-studio-codespaces-commands-usage-for-task)|
 |
 
 >[!NOTE]
@@ -524,6 +524,8 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 
 - A project in your organization. For more information, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
+  1. Go to [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList)
+  2. Choose **Get it free** and install the extension into your organization.
 
 Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How to use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
 
@@ -539,6 +541,8 @@ Create a new Visual Studio Marketplace service connection and grant access permi
 ![Screenshot that shows the new service connection pane.](media/new-service-connection.png)
 
 ![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)
+
+:::moniker range=">=azure-devops-2019"
 
 Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](/azure/devops/pipelines/yaml-schema/).
 
@@ -654,6 +658,8 @@ stages:
               extensionPricing: 'free'
 ```
 
+:::moniker-end
+
 For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
 > [!NOTE]
@@ -762,9 +768,9 @@ To package and publish Azure DevOps Extensions to the Visual Studio Marketplace,
 
 ## FAQ
 
-## How can I restrict vso commands usage for task?
+## How can I restrict Visual Studio Codespaces commands usage for task?
 
-You can restrict vso commands usage and variables, which can be set by task.
+You can restrict Visual Studio Codespaces commands usage and variables, which can be set by task.
 This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
 To apply - you may need to add the following statement to your task.json file:
 

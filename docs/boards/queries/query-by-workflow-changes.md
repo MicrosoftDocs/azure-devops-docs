@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2021
+ms.date: 04/01/2022
 ---
 
 # Query by assignment or workflow changes in Azure Boards
@@ -363,19 +363,11 @@ To list work items that have changed state within a specific date range, you can
 <a id="kanban-query-fields" />
 <a id="kanban_query_fields" />
 
-::: moniker range=">= tfs-2015"
+
 
 ## Query changes to a Kanban board 
 
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
-::: moniker-end
-
-::: moniker range="tfs-2015"
-> [!NOTE]   
-> Kanban query fields are available with TFS 2015.1 or later versions. 
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 You can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
@@ -383,10 +375,6 @@ You can list items based on the team area path, and if they are in a specific cu
 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
  
 :::row:::
    :::column span="2":::
@@ -426,7 +414,6 @@ You can list items based on the team area path, and if they are in a specific cu
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
@@ -448,24 +435,11 @@ You can list items based on the team area path, and if they are in a specific cu
 <a id="workflow-fields">  </a>
 <a id="fields" />
 
-::: moniker range=">= tfs-2015"
-
 ## Workflow and Kanban board fields
 
 The following fields are useful to filter queries. Some of these fields get updated as a work item progresses from one state to another. Or they're updated as you  move a work item in the [Kanban board](../boards/kanban-basics.md) to a different column or swimlane. Several of these fields don't appear on the work item form, but they're tracked for those work item types listed in the following table.
 
 For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
-
-::: moniker-end 
- 
-
-::: moniker range="tfs-2013"
-
-## Workflow fields
-
-You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields don't appear on the work item form, but they're tracked for those WITs listed in the following table. For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
-
-::: moniker-end
 
 :::row:::
    :::column span="1":::
@@ -577,8 +551,7 @@ You can use the following fields to filter your queries or build reports. Some o
       Board Lane
    :::column-end:::
    :::column span="2":::
-      The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.  
-      
+      The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment. 
       Reference name=`System.BoardLane`  
       Data type=String  
    :::column-end:::
@@ -813,7 +786,7 @@ You can use the following fields to filter your queries or build reports. Some o
 ::: moniker-end
 
 
-::: moniker range="> tfs-2013 < azure-devops"
+::: moniker range="< azure-devops"
 
 1. See [Date and Identity fields](#date-identity).
 
@@ -829,18 +802,6 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ::: moniker-end
 
-::: moniker range="tfs-2013"
-
-1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these components are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad).
-
-    You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).
-
-2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises server, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
-
-3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises server, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
-
-::: moniker-end
- 
 
 ### People picker 
 
@@ -858,15 +819,12 @@ To limit the scope of identities available for selection to just those users add
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 
 <a id="date-identity" />
 
 ### Date and identity fields 
 
-Several date and identity fields are set based on workflow states or transitions. Some fields, such as **Created By** and **Created Date**, are set by the system when a work item is added. Other fields, such as **Closed Date** and **Closed By**, are set through the workflow definition of the work item type. Additionally, customized work item types may have other rules defined that influence the date and identity field assignments.   
-
-::: moniker-end
+Several date and identity fields are set based on workflow states or transitions. Some fields, such as **Created By** and **Created Date**, are set by the system when a work item is added. Other fields, such as **Closed Date** and **Closed By**, are set through the workflow definition of the work item type. Additionally, customized work item types may have other rules defined that influence the date and identity field assignments.  
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -952,8 +910,6 @@ When the following transitions occur for a Bug work item, then the following ass
 <TRANSITION from="Resolved" to="Active">
 <TRANSITION from="Closed" to="Active">
 ```
-
-
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

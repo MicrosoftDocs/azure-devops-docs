@@ -96,12 +96,12 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: settings icon and choose **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
+	> ![Open Organization Settings](../../media/settings/open-account-settings.png)  
 
 2. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 
