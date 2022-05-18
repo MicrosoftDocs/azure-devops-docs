@@ -1,7 +1,8 @@
 ---
 title: Understand SSH passphrases
 titleSuffix: Azure Repos
-description: Understand what an SSH passphrase is.
+description: Learn the benefits and downside of using SSH passphrases.
+ms.custom: kr2b-contr-experiment
 ms.assetid: 266f5d0e-78b9-4911-9bdf-ab509f17ff23
 ms.technology: devops-code-git 
 ms.topic: conceptual
@@ -14,9 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-SSH uses private/public key pairs to protect your communication with the server. 
-SSH passphrases protect your private key from being used by someone who doesn't know the passphrase. 
-Without a passphrase, anyone who gains access to your computer has the potential to copy your private key. For example, family members, coworkers, system administrators, and hostile actors could gain access. 
+SSH uses private/public key pairs to protect communication between your computer and the server. SSH passphrases protect your private key from being used by someone who doesn't know the passphrase. Without a passphrase, anyone who gains access to your computer has the potential to copy your private key. For example, family members, coworkers, system administrators, and hostile actors could gain access. 
 
 A secure passphrase helps keep your private key from being copied and used even if your computer is compromised.
 

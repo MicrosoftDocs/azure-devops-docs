@@ -1,12 +1,12 @@
 ---
 title: Build and test Ruby apps
-description: Automatically build and test Ruby apps with Azure Pipelines, Azure DevOps
+description: Learn how to use Azure pipelines and scripts to build and test your Ruby projects.
 ms.topic: quickstart
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.author: vijayma
 author: vijayma
 ms.reviewer: dastahel
-ms.custom: seodec18, freshness-fy22q2
+ms.custom: seodec18, freshness-fy22q2, kr2b-contr-experiment
 ms.date: 01/20/2022
 monikerRange: azure-devops
 ---
@@ -17,7 +17,7 @@ monikerRange: azure-devops
 
 This article explains how to automatically build Ruby projects.
 
-## Get started
+## Set up the Azure pipeline
 
 Do the following steps to set up a pipeline for a Ruby app.
 
@@ -29,13 +29,13 @@ Do the following steps to set up a pipeline for a Ruby app.
 
    You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-2. Select your Ruby sample repository.
+1. Select your Ruby sample repository.
 
-3. Select the `Ruby` template for your pipeline.
+1. Select the `Ruby` template for your pipeline.
 
-4. A YAML file gets generated. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
+1. A YAML file gets generated. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
 
-5. Wait for the run to finish.
+1. Wait for the run to finish.
 
 You have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
 
