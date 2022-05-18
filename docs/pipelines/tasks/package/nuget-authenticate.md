@@ -210,7 +210,7 @@ If the pipeline is running in a different project than the project hosting the f
 
 ### Will this work for pipeline runs that are triggered from an external fork?
 
-No, pipeline runs triggered from an external fork do not have access to the proper secrets for internal feed authentication. Thus, it will appear like the authenticate task is successful, but subsequent tasks which require authentication (such as Nuget push) will fail with an error along the lines of: `##[error]The nuget command failed with exit code(1) and error(Response status code does not indicate success: 500 (Internal Server Error - VS800075: The project with id 'vstfs:///Classification/TeamProject/341ec244-e856-40ad-845c-af31c33c2152' does not exist, or you do not have permission to access it. (DevOps Activity ID: C12C19DC-642C-469A-8F58-C89F2D81FEA7)).`
-Once the Pull Request is merged into the origin, then a pipeline that is triggered from that event will authenticate properly.
+No. Pipeline runs that are triggered from an external fork don't have access to the proper secrets for internal feed authentication. Thus, it will appear like the authenticate task is successful, but subsequent tasks that require authentication (such as Nuget push) will fail with an error along the lines of: `##[error]The nuget command failed with exit code(1) and error(Response status code does not indicate success: 500 (Internal Server Error - VS800075: The project with id 'vstfs:///Classification/TeamProject/341ec244-e856-40ad-845c-af31c33c2152' does not exist, or you do not have permission to access it. (DevOps Activity ID: C12C19DC-642C-469A-8F58-C89F2D81FEA7)).`
+After the Pull Request is merged into the origin, then a pipeline that is triggered from that event will authenticate properly.
 
 <!-- ENDSECTION -->
