@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Difference Command
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Compares, and if it is possible, displays differences between two files, files in two folders, or a shelveset and a local or a server file.
 
@@ -311,7 +311,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 - **SS**
 
-  **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<https://go.microsoft.com/fwlink/?LinkId=99139>).
+  **SS** is default difference output format for Visual SourceSafe. For more information, see [Diff (Command Line)](/previous-versions/9a7z21t6(v=vs.80)).
 
 - **SS\_SideBySide**
 

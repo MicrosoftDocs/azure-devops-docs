@@ -13,6 +13,8 @@ monikerRange: azure-devops
 
 # Download Pipeline Artifacts task
 
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
 Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
 > [!NOTE]
@@ -25,7 +27,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 [!INCLUDE [temp](../includes/yaml/DownloadPipelineArtifactV2.md)]
 
 > [!NOTE]
-> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the YAML schema.
+> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](/azure/devops/pipelines/yaml-schema/steps-publish) and [Download](/azure/devops/pipelines/yaml-schema/steps-download) in the YAML schema.
 
 ::: moniker-end
 
@@ -50,7 +52,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 | `retryDownloadCount`<br/>Retry count | (Optional) Number of times to retry downloading a build artifact if the download fails. <br/>Default value: `4` |
 
 > [!NOTE]
-> If you want to consume artifacts as part of CI/CD flow, refer to the download shortcut [here](../../yaml-schema.md#download).
+> If you want to consume artifacts as part of CI/CD flow, refer to the download shortcut [here](/azure/devops/pipelines/yaml-schema/steps-download).
 
 ## Examples
 

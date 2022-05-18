@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 08/18/2021
+ms.date: 04/04/2022
 ---
 
 
@@ -68,7 +68,7 @@ ms.date: 08/18/2021
    :::column-end:::
 :::row-end:::
 ::: moniker-end  
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range="< azure-devops"
 :::row:::
    :::column span="2":::
       Add work items to a board; update status, reorder, or reparent child items through drag-and-drop; update a field on a card
@@ -83,24 +83,7 @@ ms.date: 08/18/2021
      ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end  
-::: moniker range="tfs-2013"
-:::row:::
-   :::column span="2":::
-      Add work items to a board; update status through drag-and-drop
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end  
-::: moniker range=">= tfs-2015"
+::: moniker-end   
 :::row:::
    :::column span="2":::
       Add child items to a checklist
@@ -114,9 +97,6 @@ ms.date: 08/18/2021
    :::column span="1":::
       ✔️
    :::column-end:::
-:::row-end:::
-::: moniker-end  
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
       Assign to a sprint (from card field)
@@ -131,23 +111,6 @@ ms.date: 08/18/2021
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end 
-::: moniker range="tfs-2013"
-:::row:::
-   :::column span="2":::
-      Assign to a sprint
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end  
 :::row:::
    :::column span="2":::
       Configure board settings  

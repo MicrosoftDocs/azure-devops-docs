@@ -5,12 +5,12 @@ description: You can link all important fields for tasks used across the build d
 ms.topic: conceptual
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.date: 01/04/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Process parameters
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > This guidances does not apply to YAML pipelines. For parameters in YAML pipelines, see [runtime parameters](runtime-parameters.md).
@@ -61,16 +61,11 @@ To link a process parameter:
 
 ::: moniker-end
 
-::: moniker range="< tfs-2018"
-
-![Link additional arguments.](media/2017-user-experience/process-parameters-view-2.png)
-::: moniker-end
-
 ::: moniker range="> tfs-2018"
 Select **Unlink** if you need to disconnect an argument from a process parameter.
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You can also unlink arguments from process parameters.
 
 1. Select the link icon. 

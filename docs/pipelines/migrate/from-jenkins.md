@@ -9,6 +9,8 @@ monikerRange: azure-devops
 
 # Migrate from Jenkins to Azure Pipelines
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 [Jenkins](https://www.jenkins.io/), an open-source automation server, has traditionally been installed by enterprises in their own data
 centers and managed on-premises. Many providers
 also offer managed Jenkins hosting.
@@ -37,7 +39,7 @@ an Azure Pipelines YAML configuration. The two are conceptually similar,
 supporting "configuration as code" and allowing you to check your configuration
 into your version control system. Unlike Jenkins, however, Azure Pipelines
 uses the industry-standard [YAML to configure the build
-pipeline](../yaml-schema.md).
+pipeline](/azure/devops/pipelines/yaml-schema).
 
 The concepts between Jenkins and
 Azure Pipelines and the way they're configured are similar. A Jenkinsfile

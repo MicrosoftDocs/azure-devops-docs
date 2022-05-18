@@ -2,7 +2,7 @@
 title: Build and deploy to a PHP web app on Linux
 description: Continuous integration and deployment (CI/CD) to a PHP web app on Linux.
 ms.topic: tutorial
-ms.custom: freshness-fy22q2
+ms.custom: freshness-fy22q2, devx-track-azurecli
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
 ms.date: 12/22/2021
 monikerRange: 'azure-devops'
@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Build & deploy to PHP web app
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 A web app is a lightweight way to host a web application. In this step-by-step guide, learn how to create a pipeline that continuously builds and deploys your PHP app. Your team can then automatically build each commit at GitHub and deploy the change to an Azure App Service.
 

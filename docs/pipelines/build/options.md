@@ -5,12 +5,14 @@ description: Learn about building your code or deploying your software using bui
 ms.topic: reference
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 06/19/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Build options
 
-::: moniker range="<= tfs-2018"
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -41,28 +43,12 @@ For an example, see [Use a script to customize your build pipeline](../scripts/p
 
 ## Default agent pool
 
-::: moniker range="<= tfs-2017"
-
-> **TFS 2017.1 and older**
->
-> This section is available under <b>General<b> tab.
-
-::: moniker-end
-
 Select the [pool](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
 
 > [!TIP]
 > If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 
 ## Build job authorization scope
-
-::: moniker range="<= tfs-2017"
-
-> **TFS 2017.1 and older**
->
-> This section is available under <b>General<b> tab.
-
-::: moniker-end
 
 Specify the authorization scope for a build job. Select:
 

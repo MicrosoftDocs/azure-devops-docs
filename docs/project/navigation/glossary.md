@@ -3,19 +3,18 @@ title: Key concepts, objects, and terms
 titleSuffix: Azure DevOps
 description: Understand the key concepts that support navigation and managing projects available with Azure DevOps
 ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
+ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 02/08/2019
 ---
 
 
 # Project management and navigation glossary   
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 This glossary describes terms used when navigating in the web portal for  Azure DevOps.  See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 

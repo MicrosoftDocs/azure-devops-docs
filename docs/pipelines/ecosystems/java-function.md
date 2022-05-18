@@ -2,7 +2,7 @@
 title: Build and deploy a Java web app to Azure Functions
 description: Learn about continuous integration and deployment (CI/CD) to a Java web app on Linux.
 ms.topic: tutorial
-ms.custom: freshness-fy22q2
+ms.custom: freshness-fy22q2, devx-track-azurecli
 ms.assetid: 3156B628-1DEA-4F92-84E5-6C3E18B4DAC1
 ms.date: 12/22/2021
 monikerRange: 'azure-devops'
@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Build and deploy Java to Azure Functions
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 You can use Azure Functions to run small pieces of code in the cloud without the overhead of running a server. Learn how to create a pipeline that continuously builds and deploys your Java function app. Your team can then automatically build each commit at GitHub, and if you want, automatically deploy the change to Azure Functions.
 

@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Define the tasks to process a plug-in
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 <a name="top"></a> 
 
@@ -168,11 +168,11 @@ You use the **tasks** element and its child elements to define the artifacts to 
 -   Build: [Define the initial configuration of Team Foundation Build](define-initial-configuration-build.md)   
 -   Classifications: [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md)   
 -   Groups and Permissions: [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)    
--   Lab: [Define the initial configuration of Lab Management](define-initial-configuration-lab-management.md)    
+-   Lab: [Define the initial configuration of Lab Management](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-lab-management?view=tfs-2017&preserve-view=true)    
 -   Portal: [Define the project portal](define-project-portal-plug-in.md)   
 -   Reports: [Add reports](add-reports-to-the-process-template.md)    
 -   Test Management: [Define the initial configuration of Test Manager](define-initial-configuration-test-manager.md)    
--   Version Control: [Define the initial configuration of Team Foundation version control](define-initial-configuration-version-control.md)    
+-   Version Control: [Define the initial configuration of Team Foundation version control](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true)    
 -   Work Item Tracking: [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)  
  
   

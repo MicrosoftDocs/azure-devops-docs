@@ -3,7 +3,7 @@ title: Give feedback using Microsoft Feedback Client
 titleSuffix: Azure DevOps Services & TFS  
 description: Respond to a request for feedback using the Microsoft Feedback Client in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 9C3231E4-FD2F-4F22-BEA0-C1AA0DE294C6  
 ms.author: kaelli
 author: KathrynEE 
@@ -13,7 +13,7 @@ ms.date: 08/31/2017
 
 # Give feedback using Microsoft Feedback Client
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 You can respond to a request for feedback using the Microsoft Feedback Client. This tool allows you to launch an application, capture your interaction with it as video and capture your verbal or type-written comments as well. To support traceability, your feedback is stored in the data store for Azure DevOps Services or an on-premises Team Foundation Server (TFS).  

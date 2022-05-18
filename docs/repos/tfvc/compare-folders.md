@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Compare folders
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You can compare the differences between two server folders, two local folders, or a server folder and a local folder.
 

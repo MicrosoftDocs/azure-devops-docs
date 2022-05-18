@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Visual Studio Test task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run unit and functional tests (Selenium, Appium, Coded UI test, and more)
 using the Visual Studio Test Runner. Along with MSTest-based tests, test frameworks that have a
@@ -117,6 +117,12 @@ Data-driven tests that use xUnit and NUnit test frameworks have some known limit
 
 1. Distributing tests on multiple agents and batching options.
 
-1. Test Impact Analysis 
+1. Test Impact Analysis. 
 
 The above limitations are because of how the adapters for these test frameworks discover and report data-driven tests.
+
+### Does the VsTest task support running tests that target multiple target frameworks at a time?
+
+The VsTest task doesn't support running tests that target multiple target frameworks at a time as this is a limitation from the [vstest platform](https://github.com/microsoft/vstest/issues/2310) side.
+If you want to run tests that belong to multiple target frameworks, you'll need multiple instances of the vstest task, one per set of dlls that target a particular framework.
+

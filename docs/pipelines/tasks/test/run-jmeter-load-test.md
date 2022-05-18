@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Cloud-based Apache JMeter Load Test task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 

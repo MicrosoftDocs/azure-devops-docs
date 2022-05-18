@@ -9,13 +9,14 @@ monikerRange: '> azure-devops-2019'
 
 # Protect a repository resource
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 You can add protection to your [repository resource](resources.md#define-a-repositories-resource) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
 
 ## Prerequisites
 
-You must be a member of the [Project Administrators Group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories.
+You must be a member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories.
+
 ## Add a repository resource check
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and choose your project.

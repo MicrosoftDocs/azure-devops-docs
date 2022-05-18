@@ -5,14 +5,14 @@ ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
 ms.date: 07/14/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Build Azure Repos Git or TFS Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -36,7 +36,7 @@ You can later configure your pipeline to check out a different repository or mul
 
 ::: moniker range="< azure-devops-2019"
 
-YAML pipelines are not available in TFS.
+YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ To clone additional repositories as part of your pipeline:
 
 * If the access token (explained below) does not have access to the repository:
 
-    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`
+    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `PAT:`
     2. Base64-encode this string to create a basic auth token.
     3. Add a script in your pipeline with the following command to clone that repo
        `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
@@ -81,37 +81,29 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-YAML pipelines are not available in TFS.
+YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 # [Classic](#tab/classic/)
 [!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
 
-::: moniker range=">= tfs-2017"
-**Azure Pipelines, TFS 2017.3 and newer**
-
 ![Configure continuous integration trigger branch filters.](media/ci-trigger-git-branches-neweditor.png)
-::: moniker-end
 
-::: moniker range="<= tfs-2017"
-**TFS 2017.1 and older versions**
 
-![CI trigger git branches, TFS 2017.1 and older.](media/ci-trigger-git-branches.png)
-::: moniker-end
 
 ---
 
-### Skipping CI for individual commits
+### Skipping CI for individual pushes
 
 ::: moniker range="<= azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `***NO_CI***` in the message of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push.
 
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `[skip ci]` in the message or description of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push. You can also use any of the following variations.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
@@ -126,7 +118,13 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 
 ## PR triggers
 
-Pull request (PR) triggers cause a pipeline to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+Pull request (PR) triggers cause a pipeline to run whenever you open a pull request, or when you push changes to it. In Azure Repos Git, this functionality is implemented using branch policies. To enable PR validation, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+
+If you have an open PR and you push changes to its source branch, multiple pipelines may run:
+- The pipeline specified by the target branch's policy will run on the commit corresponding to the merged PR, regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
+- The pipelines triggered by changes to the PR's source branch won't run if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). 
+
+Finally, when you merge the PR, the pipelines triggered by changes to the target branch's policy will run, even though some of the merged commits' messages or descriptions contain `[skip ci]` (or any of its variants).
 
 >[!NOTE]
 >To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
@@ -197,7 +195,7 @@ To configure this setting, navigate to **Pipelines**, **Settings** at either **O
 > [!IMPORTANT]
 > **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
 
-When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](../yaml-schema.md#checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](/azure/devops/pipelines/yaml-schema/steps-checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
 
 There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled.
 

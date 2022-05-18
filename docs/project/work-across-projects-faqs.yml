@@ -7,9 +7,9 @@ metadata:
   ms.custom: cross-project
   ms.author: kaelli
   author: KathrynEE
-  ms.topic: troubleshooting
+  ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 10/13/2021
+  ms.date: 04/04/2022
 
 title: Work across projects FAQs 
 
@@ -42,7 +42,7 @@ sections:
 
       - question: How do I turn off cross-project collaboration? 
         answer: | 
-          If you want to limit users to view or modify select work items, you can by [setting permissions on Area Paths](../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).  However, there's no method for limiting users to linking work items that reside in different projects.  
+          If you want to limit users to view or modify select work items, you can by [setting permissions on Area Paths](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).  However, there's no method for limiting users to linking work items that reside in different projects.  
 
   - name: Dashboards and reports
     questions:
@@ -51,11 +51,8 @@ sections:
           ::: moniker range=">= azure-devops-2020"
           There is limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference projects](../boards/queries/using-queries.md#query-across-projects) other than the project where the query is defined. You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart from for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
-          ::: moniker range=">= tfs-2017 < azure-devops-2020"
+          ::: moniker range="< azure-devops-2020"
           The only way to view data from different projects is to use [Query-based widgets](../report/dashboards/widget-catalog.md#work-widgets) or [Embedded Webpage widgets](../report/dashboards/widget-catalog.md#embedded-webpage-widget). Query-based widgets reference queries that you define, which can [reference projects](../boards/queries/using-queries.md#query-across-projects) other than the project where the query is defined. Embedded Webpage widgets display data from a URL, such as a backlog, board, or chart for a team in different projects. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
-          ::: moniker-end
-          ::: moniker range="<= tfs-2015"
-          **No**. This isn't a supported feature for TFS-2015 and earlier versions.  
           ::: moniker-end
           > [!NOTE]  
           > There is a [suggested feature, Single Dashboard for Multiple Projects](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) that you can review and up vote.  
@@ -89,7 +86,7 @@ sections:
           ::: moniker range=">= azure-devops-2019"
           **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. To learn more, see [Bulk import or update work items using CSV files](../boards/queries/import-work-items-from-csv.md). 
           ::: moniker-end
-          ::: moniker range="<= tfs-2018"
+          ::: moniker range="tfs-2018"
           **No**. Cross-project queries won't open in Excel.   
           ::: moniker-end
 

@@ -1,17 +1,18 @@
 ### YamlMime:Landing
 
-title: Azure DevOps Reporting documentation
+title: Analytics & Reporting documentation
 summary: Reporting in Azure DevOps enables software development teams to make data driven decisions and deliver value to their customers faster. 
 
 metadata:
-  title: Azure DevOps Reporting documentation
+  title: Analytics & Reporting
+  titleSuffix: Azure DevOps 
   description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
   ms.prod: devops 
   ms.technology: devops-analytics
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/13/2021
+  ms.date: 02/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -132,15 +133,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: Reporting Services reports
-            url: ./sql-reports/reporting-services-reports.md
+            url: /previous-versions/azure/devops/report/sql-reports/reporting-services-reports
       - linkListType: how-to-guide
         links:
           - text: Create Excel reports from a work item query
-            url: create-status-and-trend-excel-reports.md
+            url: /previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports
           - text: Create a Detailed Report using Report Designer
-            url: ./sql-reports/create-a-detailed-report-using-report-designer.md
+            url: /previous-versions/azure/devops/report/sql-reports/create-a-detailed-report-using-report-designer
           - text: Add reports to a team project
-            url: ./admin/add-reports-to-a-team-project.md
+            url: /previous-versions/azure/devops/report/admin/add-reports-to-a-team-project
   - title: Develop widgets and dashboard extensions
     linkLists:
       - linkListType: how-to-guide

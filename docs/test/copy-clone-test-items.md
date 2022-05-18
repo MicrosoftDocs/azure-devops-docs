@@ -7,14 +7,14 @@ ms.custom: cross-project
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 11/11/2021
 ---
 
 
 # Copy or clone test plans, test suites, and test cases 
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Several tools support copy, clone, or import operations of test items&mdash;such as, test plans, test suites, and test cases. Test cases describe the steps to take to run a test and validate a feature implementation or bug fix. Test suites group test cases, and optionally other test suites, into a particular order. Test plans define a collection of test suites to run for a particular iteration or release.  
  
@@ -118,13 +118,13 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
       (deprecated) 
    :::column-end:::
    :::column span="1":::
-      ✔️ (Clone plan)
+      ✔️ ([Clone plan](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases))
    :::column-end:::
    :::column span="1":::
-      ✔️ (Copy a test suite)
+      ✔️ ([Copy a test suite](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases))
    :::column-end:::
    :::column span="1":::
-      ✔️ (Create copy)
+      ✔️ ([Create copy](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases))
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -281,6 +281,10 @@ Id        Name
 
 *** 
 
+<a id="clone-test-plan" /> 
+<a id="copy-test-plans-portal" />
+
+
 ## Copy or clone test plans  
 
 We recommend creating a new test plan per sprint or release. When doing so, generally you can clone the test plan for the prior cycle and, with few changes, the copied test plan is ready for the new cycle. 
@@ -289,11 +293,7 @@ Cloning is useful when you want to branch your application into two versions. Af
 
 :::image type="content" source="media/copy-clone/clone-test-plan-conceptual.png" alt-text="Conceptual image, clone test plan.":::
 
-
 # [Browser](#tab/browser)
-
-<a id="copy-test-plans-portal" />
-
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -343,8 +343,6 @@ You can use the TCM command-line tool to clone a test plan to the same or differ
 
 [List test plans](#list-test-plans) | [Clone a test plan](#clone-test-plan) | [Track test plan clone status](#track-test-plan-clone-status) 
 
-
-<a id="clone-test-plan" /> 
 
 ### Clone a test plan 
 
@@ -409,9 +407,10 @@ tcm plans /clone
 
 *** 
 
-## Import or clone test suites 
-
 <a id="import-test-suites-portal" />
+<a id="clone-test-suite" /> 
+
+## Import or clone test suites 
 
 When you're creating the test plan for a new sprint, you often want to repeat some of the tests from the previous sprints, to make sure that the functionality you already implemented still works.
 
@@ -428,13 +427,6 @@ Note the following:
 
 You can use the user interface to import a test suite from one test plan, within the same or different project, to another test plan in the current project. This action essentially copies or clones the test suite, creating a new test suite and duplicating any sub-test suites. The test cases referenced by the test suites are not duplicated, but referenced by the cloned test suites. 
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
-You can use [MTM](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases) or TCM to clone a test suite, specifying the target test plan, which can be within the same or another project. You can also specify a custom test suite work item type. 
- 
-::: moniker-end
-
-
 
 You can use [`tcm suites /list`](#list-test-suites) to list all test suites defined for a project. 
   
@@ -480,8 +472,6 @@ You can use the TCM command-line tool to clone a test plan to the same or differ
 
 [List test suites](#list-test-suites) | [Clone a test suite](#clone-test-suite) | [Track test suite clone status](#track-test-suite-clone-status) 
 
-
-<a id="clone-test-suite" /> 
 
 ### Clone a test suite 
 
@@ -603,7 +593,7 @@ Completed on:         10-Nov-21 5:00:30 PM
 
 ::: moniker range=">= azure-devops-2020"
 
-
+<a id="copy-test-case" /> 
 
 ## Copy test case(s)
 
@@ -611,8 +601,6 @@ From the web portal, you can copy test cases from within a project or another pr
 
 > [!TIP] 
 > Don't copy test cases when what you really want to do is test with [different configurations](test-different-configurations.md) or [different data](repeat-test-with-different-data.md). 
-
-<a id="copy-test-case" /> 
 
 You can copy test cases from within a project or another project in the organization or collection to a designated test plan and test suite. At the same time, you can optionally copy all links and attachments. 
 
@@ -699,10 +687,9 @@ From the web portal, you can perform a bulk import or export of test cases from/
 
 ::: moniker-end
  
+<a id="import-test-cases" />
 
 ## Import automated test cases (TCM) 
-  
-<a id="import-test-cases" />
 
 To import automated test cases to a test suite, use `tcm testcase /import`. You must specify a .dll file for the test assembly that contains your tests. 
 

@@ -14,7 +14,7 @@ ms.date: 10/20/2021
 
 # View SAFe® progress, roadmaps, and metrics
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With team's configured and working backlogs and boards, you're ready to start viewing and monitoring progress. 
 

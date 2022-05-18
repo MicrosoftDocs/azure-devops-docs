@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # View environments and releases in pipelines
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn how to view the status of environment and release pipelines for public projects. If you're a contributor, you can also [define environment pipelines](../../pipelines/repos/index.md?bc=%252fazure%252fdevops%252forganizations%252fpublic%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fpublic%252ftoc.json).  
 

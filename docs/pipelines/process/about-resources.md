@@ -9,7 +9,7 @@ monikerRange: azure-devops
 
 # About resources for Azure Pipelines
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 A [resource](resources.md) is anything used by a pipeline that lives outside the pipeline.
 

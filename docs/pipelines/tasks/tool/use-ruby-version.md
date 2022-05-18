@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Use Ruby Version task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to select a version of Ruby to run on an agent, and optionally add it to PATH.
 

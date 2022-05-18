@@ -39,4 +39,4 @@ A: No. You can't use the monthly Azure credits from [Visual Studio subscriptions
 
 ### Q: Where can I check my bill or correct any billing information on my Azure subscription?
 
-A: If you're the Azure account administrator, [visit the Azure Account portal](https://account.windowsazure.com).
+A: If you're the Azure Account Administrator, [visit the Azure Account portal](https://account.windowsazure.com).
