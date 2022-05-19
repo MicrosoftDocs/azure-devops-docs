@@ -127,6 +127,9 @@
     - name: Quickstart
       href: quickstarts/universal-packages.md
       displayName: universal packages
+    - name: Universal Packages upstream sources
+      href: universal-packages/universal-packages-upstream.md
+      displayName: universal packages, upstream sources, upstreams
     - name: Universal Packages in Azure Pipelines (YAML/Classic)
       href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
       displayName: universal packages yaml, universal packages classic 
