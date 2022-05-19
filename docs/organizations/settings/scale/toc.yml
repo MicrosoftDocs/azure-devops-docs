@@ -1,6 +1,6 @@
 - name: About teams & Agile tools
   href: ../about-teams-and-settings.md
-- name: Create a team
+- name: Create or add a team
   href: ../add-teams.md
 - name: Move work items from one team to another
   href: ../../../boards/work-items/move-work-items.md
