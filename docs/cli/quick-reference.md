@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 02/23/2022
+ms.date: 05/20/2022
 ---
 
 # Index to Azure DevOps CLI examples 
@@ -48,29 +48,21 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Rename or move a project area path](../organizations/settings/set-area-paths.md#rename-move-project-area-path) 
       - [Set team area paths](../organizations/settings/set-area-paths.md#set-team-area-paths) 
       - [Set team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#set-team-iteration-paths) 
+   :::column-end:::
+   :::column span="1":::
       #### Queries 
       - [Run work item query](../boards/queries/view-run-query.md#run-a-query-in-azure-boards)
       - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
-   :::column-end:::
-   :::column span="1":::
-      #### Teams
-      - [Add a team](../organizations/settings/add-teams.md#add-team)
-      - [Delete a team](../organizations/settings/rename-remove-team.md#delete-team)
-      - [List team members](../organizations/security/add-users-team-project.md#list-members)
-      - [List teams](../organizations/settings/add-teams.md#list-teams) 
-      - [Show team details](../organizations/security/add-users-team-project.md#show-details)
-      - [Update a team](../organizations/settings/rename-remove-team.md#update-team) 
       #### Work items
       - [Add work items](../boards/work-items/view-add-work-items.md) 
       - [Delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
       - [List supported link types](../boards/queries/link-type-reference.md#list-link-types)
-      - [Move work items](../organizations/settings/add-teams.md#move-work-items) 
+      - [Move work items](../boards/work-items/move-work-items.md#move-work-items) 
       - [Show work item details](../boards/backlogs/add-work-items.md#show-work-item) 
       - [Update work items](../boards/backlogs/add-work-items.md#update-work-item) 
    :::column-end:::
 :::row-end:::
- 
- 
+
 
 ## Organizations, projects, and collections 
 
@@ -95,14 +87,6 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [List projects](../organizations/projects/create-project.md#list-projects) 
       - [Show project information](../organizations/projects/create-project.md#show-project) 
       - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
-   :::column-end:::
-   :::column span="1":::
-      #### User accounts
-      - [Add a user](../organizations/accounts/add-organization-users.md#add-user)
-      - [List users](../organizations/security/export-users-audit-log.md#list-users)
-      - [Remove a user](../organizations/accounts/delete-organization-users.md#remove-user)
-      - [Update a user](../organizations/accounts/add-organization-users.md#update-user)
-      - [Show users](../organizations/accounts/add-organization-users.md#show-users)
       #### Manage wikis
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
       - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
@@ -110,6 +94,21 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [List wikis](../project/wiki/manage-wikis.md#list-wikis)
       - [Publish a repo as a wiki](../project/wiki/publish-repo-to-wiki.md)
       - [View wiki details](../project/wiki/manage-wikis.md#show-wiki)
+   :::column-end:::
+   :::column span="1":::
+      #### Teams
+      - [Add a team](../organizations/settings/add-teams.md#add-team)
+      - [Delete a team](../organizations/settings/rename-remove-team.md#delete-team)
+      - [List team members](../organizations/security/add-users-team-project.md#list-members)
+      - [List teams](../organizations/settings/add-teams.md#list-teams) 
+      - [Show team details](../organizations/security/add-users-team-project.md#show-details)
+      - [Update a team](../organizations/settings/rename-remove-team.md#update-team) 
+      #### User accounts
+      - [Add a user](../organizations/accounts/add-organization-users.md#add-user)
+      - [List users](../organizations/security/export-users-audit-log.md#list-users)
+      - [Remove a user](../organizations/accounts/delete-organization-users.md#remove-user)
+      - [Update a user](../organizations/accounts/add-organization-users.md#update-user)
+      - [Show users](../organizations/accounts/add-organization-users.md#show-users)
       #### Wiki pages
       - [Add a wiki page](../project/wiki/add-edit-wiki.md#add-a-wiki-page)
       - [Delete a wiki page](../project/wiki/add-edit-wiki.md#delete-wiki-page)

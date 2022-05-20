@@ -1,13 +1,13 @@
 ---
 title: Move work items from one team to another team
-titleSuffix: Azure DevOps 
+titleSuffix: Azure Boards 
 description: Learn how to move work items assigned to one team to another team.  
 ms.technology: devops-settings 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 05/20/2022
 ---
 
 # Move work items from one team to another team
@@ -16,17 +16,26 @@ ms.date: 04/04/2022
 
 When you add a team or your teams undergo reorganization, you may need to move work items assigned to one team to new **Area Paths** owned by another team. All work items are assigned to an **Area Path**, even if it is at the top of the hierarchy for the project.  
 
+Work items that belong to the Requirements category appear on a team's backlog based on their assignment to the **Area Path(s)** owned by a team. Assigning other work items to a team's **Area Path(s)** support queries based on team ownership. 
+
 To learn how to add a team, see [Create or add a team](../../organizations/settings/add-teams.md). 
  
 
 ## Prerequisites 
-
+::: moniker range="azure-devops"
 - To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).  
+- To use Azure CLI commands, you must first install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
+::: moniker-end
+::: moniker range="< azure-devops"
+- To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).  
+::: moniker-end 
+
+
 
 ## Move work items under teams 
 
-#### [Web portal](#tab/browser)
-
+From the web portal, you can perform bulk updates of the **Area Path**.  
+ 
 ::: moniker range=">= azure-devops-2019"
 
 1. [Create a query](../queries/using-queries.md) of all work items you want to reassign. 
@@ -51,13 +60,13 @@ To learn how to add a team, see [Create or add a team](../../organizations/setti
 
 ::: moniker-end  
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
-
 <a id="move-work-items" /> 
+ 
+::: moniker range="azure-devops"  
 
-::: moniker range="azure-devops"
+## Move a work item using Azure CLI
 
-You can move a work item to a different area path using [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
+You can use the [az boards work-item update](/cli/azure/boards/work-item#az-boards-work-item-update) to move a single work item by updating it's Area Path.   
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -177,10 +186,6 @@ url: https://fabrikamprime.visualstudio.com/854a3f67-9962-43d1-a968-2e5f2eb66c99
 ```
 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-
-* * *
  
 
 ## Verify your team backlog 
