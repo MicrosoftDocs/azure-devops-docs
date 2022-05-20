@@ -153,7 +153,7 @@ The following table summarizes the different permissions you can set at the obje
 Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
-> Project members granted permissions to create or edit **Area Paths** or **Iteration Paths** is separate from the permissions that control configuring team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../organizations/settings/add-team-administrator.md), or be a member of the [**Project Administrators** group](../organizations/security/change-project-level-permissions.md).
+> Project members granted permissions to create or edit **Area Paths** or **Iteration Paths** is separate from the permissions that control configuring team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../settings/add-team-administrator.md), or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
 * 
 ::: moniker range="azure-devops" 
 
