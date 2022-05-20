@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 Enabling upstream sources on your feed enables developers to consume packages from public registries such as nuget.org and npmjs.com. In this article, you will learn how to add the NuGet Gallery upstream source to consume NuGet packages from the nuget.org public registry.
 
-## Add a new upstream source
+## Add NuGet Gallery upstream source
 
 1. Select **Artifacts**, and then select your feed.
 
@@ -33,11 +33,18 @@ Enabling upstream sources on your feed enables developers to consume packages fr
 
     :::image type="content" source="../media/add-new-upstream.png" alt-text="Screenshot showing how to add a new upstream source.":::
 
-1. Select **Add** when you are done.
+1. Select **NuGet Gallery** from the dropdown menu. Select **Save** when you are done.
+
+    :::image type="content" source="./media/nuget-gallery-source.png" alt-text="Screenshot showing how to add the nuget.org upstream source.":::
+
+    > [!NOTE]
+    > The service index location for nuget.org is `https://api.nuget.org/v3/index.json`.
+
+1. Select **Save** at the top right corner to save your changes.
 
 ## Update nuget.config
 
-1. Select **Artifacts**, and then select your feed. 
+1. Select **Artifacts**, and then select your feed.
 
 1. Select **Connect to feed**, and then choose **NuGet.exe**.
 
@@ -51,11 +58,11 @@ Enabling upstream sources on your feed enables developers to consume packages fr
 
 ## View saved packages
 
-You can view the packages you saved from upstreams by selecting your **Source** from the dropdown menu.
+You can view the packages you saved from the NuGet Gallery by selecting your **Source** from the dropdown menu.
 
 ::: moniker range=">= azure-devops-2019"
 
-:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="A screenshot showing how to filter packages by source.":::
+:::image type="content" source="./media/view-saved-packages-nuget.png" alt-text="A screenshot showing how to filter packages by source.":::
 
 ::: moniker-end
 
