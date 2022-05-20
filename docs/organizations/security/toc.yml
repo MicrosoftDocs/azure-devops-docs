@@ -181,6 +181,10 @@
   - name: Set work tracking & plan permissions 
     href: set-permissions-access-work-tracking.md
     displayName: area paths, iteration paths, test, process
+  - name: Set query permissions 
+    href: ../../boards/queries/set-query-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+  - name: Add members to a team administrator role
+    href: ../settings/add-team-administrator.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
 - name: Secure Azure Repos
   items:
   - name: Default Git repository and branch permissions
