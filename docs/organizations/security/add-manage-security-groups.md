@@ -56,7 +56,7 @@ The following parameters are optional for all commands, and not listed in the ex
 
 ## Create a security group
 
-You can create a security group with the [az devops security group create](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-create) command.
+You can create a security group with the [az devops security group create](/cli/azure/devops/security/group#az-devops-security-group-create) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -94,7 +94,7 @@ Name                                 Description
 
 ## Delete a security group
 
-You can delete a security group with the [az devops security group delete](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-delete) command.
+You can delete a security group with the [az devops security group delete](/cli/azure/devops/security/group#az-devops-security-group-delete) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -118,7 +118,7 @@ az devops security group delete --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1L
 
 ## List security groups
 
-You can list all the security groups in a project or organization with the [az devops security group list](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
+You can list all the security groups in a project or organization with the [az devops security group list](/cli/azure/devops/security/group#az-devops-security-group-list) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -157,7 +157,7 @@ Name                                     Descriptor
 
 ## Show security group details
 
-You can show the details of a security group with the [az devops security group show](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-show) command.
+You can show the details of a security group with the [az devops security group show](/cli/azure/devops/security/group#az-devops-security-group-show) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -183,7 +183,7 @@ Name                                  Description
 
 ## Update a security group
 
-You can update the name and description of a security group with the [az devops security group update](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-update) command.
+You can update the name and description of a security group with the [az devops security group update](/cli/azure/devops/security/group#az-devops-security-group-update) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -231,7 +231,7 @@ url: https://vssps.dev.azure.com/fabrikam/_apis/Graph/Groups/vssgp.Uy0xLTktMTU1M
 
 ## Add a member to a group
 
-You can add a member to a security group with the [az devops security group membership add](/cli/azure/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-add) command.
+You can add a member to a security group with the [az devops security group membership add](/cli/azure/devops/security/group/membership#az-devops-security-group-membership-add) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -260,7 +260,7 @@ contoso@contoso.com                  user    contoso@contoso.com
 
 ## List memberships for a group or user
 
-You can list memberships for a group or user with the [az devops security group membership list](/cli/azure/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-list) command.
+You can list memberships for a group or user with the [az devops security group membership list](/cli/azure/devops/security/group/membership#az-devops-security-group-membership-list) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -299,7 +299,7 @@ Raisa Pokrovskaya  user    fabrikamfiber5@hotmail.com  msa.ZmUwYjk5NmYtZTAyNS03N
 
 ## Remove a member from a group
 
-You can remove a member from a security group with the [az devops security group membership remove](/cli/azure/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-remove) command.
+You can remove a member from a security group with the [az devops security group membership remove](/cli/azure/devops/security/group/membership#az-devops-security-group-membership-remove) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
