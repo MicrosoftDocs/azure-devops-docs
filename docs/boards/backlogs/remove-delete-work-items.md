@@ -220,7 +220,7 @@ You restore deleted work items from the web portal **Recycle Bin**.
  
 ## Delete or destroy work items from the command line
 
-You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/boards/work-item#az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!NOTE] 
 > You can restore work items you **delete**, but you can't restore work items you choose to **destroy**.

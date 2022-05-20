@@ -31,7 +31,7 @@ Use this article to learn how to perform the following tasks:
 > [!div class="checklist"]   
 > * Create a team and add team administrators and team members       
 > * Set the default team for a project  
-> * List teams or team members using Azure CLI
+> * List teams using Azure CLI
 > * Grant additional permissions to teams 
 ::: moniker-end
 ::: moniker range="< azure-devops"
@@ -54,6 +54,7 @@ To move work items assigned to one team to another team, see [Move work items fr
 - To create a team or set the default team, you must be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
 - To add members to a team or change its configuration, you must be a team administrator or member of the Project Administrators group. To get added as a team administrator, see [Add or remove a team administrator](add-team-administrator.md).
 ::: moniker-end 
+
 <a id="add-team"> </a>  
 
 ## Create a team and add team members
@@ -267,12 +268,13 @@ url: https://fabrikamprime.visualstudio.com/_apis/projects/854a3f67-9962-43d1-a9
 * * *
 
 Upon creation of a team, the following items are automatically configured:  
-- Security group with the team name containing the members assigned to the team, for example, [Fabrikam Fiber]\Production Plan
-- Default notifications assigned to the team 
-- Default dashboard named **Overview** assigned to the team
+- Security group with the team name containing the members assigned to the team, for example, **[Fabrikam Fiber]\Production Planning**. You can use this name to filter queries or to **@mention** all members of the team. 
+- Default notifications assigned to the team. To learn more, see [Manage notifications for a team, project, or organization](../../notifications/manage-team-group-global-organization-notifications.md).
+- Default dashboard named **Overview** assigned to the team. To configure the dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
 
 > [!IMPORTANT]   
 > Configuring the **Area Paths** and **Iteration Paths** used by the team is essential for many of the Azure Board tools to work, such as Backlogs, Boards, Sprints, and Delivery Plans. Team tools aren't available until the team's default area path is set. **Area Paths** and **Iteration Paths** are first configured for the project and then assigned or selected by the team.  
+>
 > If you are moving from one team to two or more teams, you may want to review and revise the **Area Paths** assigned to the default project team. 
 
 
@@ -280,7 +282,9 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="include-area-paths"> </a>  
 
-## Set the default project team  
+## Set the default project team
+
+Each project has a default team assigned. You can change which project is assigned as the default with the following procedures.   
 
 #### [New Teams UI](#tab/preview-page) 
 ::: moniker range="azure-devops"
@@ -325,7 +329,7 @@ There isn't an Azure CLI command to set the default team project.
 
 ## List teams with Azure CLI
 
-You can list teams using [Azure DevOps team list](/cli/azure/devops/team#az-devops-team-list). 
+You can list teams using [Azure DevOps team list](/cli/azure/devops/team#az-devops-team-list). To learn how to list team members, see [Add users to a team or project, List team members](../security/add-users-team-project.md#list-members).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -374,64 +378,13 @@ cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused o
 ```
 
 
-
-## List team members with Azure CLI
-
-You can list team members using [Azure DevOps team list member](/cli/azure/devops/team#az-devops-team-list-member). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az devops team list-member --team
-                           [--org]
-                           [--project]
-                           [--skip]
-                           [--top]
-```
-
-> [!TIP]
-> If you don't specify a **top** number, 100 team members are returned. To list all team members, specify a number for **top** which is greater than the current number of team members defined.  
-
-#### Parameters
-
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config. 
-- **skip**: Optional. Number of teams to skip.  
-- **top**: Optional. Maximum number of teams to return. 
-
-#### Example
-
-For example, the following command returns the team members defined in the *Fabrikam Fiber* project for *Production Planning* team. For addition output formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli). 
-
-Each team is assigned a unique ID. 
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-az devops team list-member --project "Fabrikam Fiber" --team "Fabrikam Fiber Team" --output table
-```
-
-The table output listed below provides information on each of the attributes defined for the team. 
-
-> [!div class="tabbedCodeSnippets"]
-```azurecli
-ID                                    Name                 Email
-------------------------------------  -------------------  ------------------------------- 
-3972a406-da16-6a20-ba16-975337a84747  Christie Church      fabrikamfiber1@hotmail.com
-ac5d247e-d49a-65c0-8a2f-c3a51375332e  Chuck Reinhart       fabrikamfiber3@hotmail.com
-60c88080-4eb6-4c5e-8395-7533cb4aef4c  Jamal Hartnett       fabrikamfiber4@hotmail.com
-6292132e-a52f-7533-b5e0-4038fc8daa29  Jia-Hao Tseng        fabrikamfiber9@hotmail.com
-3ba87533-64a1-66ba-85ea-c0ebf9bb82bd  Raisa Pokrovskaya    fabrikamfiber5@hotmail.com 
-
-```
-
-::: moniker-end
-
 <a id="grant-add-permissions"></a>  
 
 ## Grant team members additional permissions  
 
 For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:  
 
-- [Create and edit child nodes under their default area path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path)
-- [Create and edit child nodes under an existing iteration node](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path)
+- [Create and edit child nodes under their default area path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path) 
 - [Create shared queries and folders under the **Shared Queries** folder](../queries/set-query-permissions.md)
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
