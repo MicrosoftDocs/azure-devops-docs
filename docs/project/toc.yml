@@ -2,6 +2,7 @@
   href: index.yml
 - name: Get started
   items:
+  expanded: true
   - name: Set your preferences
     href: ../organizations/settings/set-your-preferences.md
   - name: Set personal or team favorites
@@ -16,13 +17,14 @@
     href: ./search/get-started-search.md
   - name: Create a wiki for your project
     href: ./wiki/wiki-create-repo.md
-  expanded: true
-- name: Search
-  href: search/toc.yml
 - name: Wiki
   href: wiki/toc.yml
+- name: Search
+  href: search/toc.yml
 - name: Navigation
   href: navigation/toc.yml
+- name: Feedback
+  href: feedback/toc.yml
 - name: REST API Reference
   items:
   - name: Search
