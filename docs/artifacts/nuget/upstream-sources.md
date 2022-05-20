@@ -46,15 +46,15 @@ Enabling upstream sources on your feed enables developers to consume packages fr
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Select **Connect to feed**, and then choose **NuGet.exe**.
+1. Select **Connect to feed**, and then select **NuGet.exe**.
 
-    :::image type="content" source="../media/nuget-connect-to-feed.png" alt-text="Screenshot showing how to connect to NuGet feeds.":::
+    :::image type="content" source="./media/nuget-config.png" alt-text="A screenshot showing how to connect to NuGet feeds.":::
 
 1. Copy the XML snippet in the **Project Setup** section.
 
-1. Create a new file named *nuget.config* in the root of your project.
+1. Create a new *nuget.config* file in the root of your project.
 
-1. Paste the XML snippet in your config file.
+1. Paste the XML snippet in your nuget.config file.
 
 ## View saved packages
 
