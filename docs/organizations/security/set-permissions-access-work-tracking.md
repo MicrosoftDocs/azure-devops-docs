@@ -40,7 +40,7 @@ You grant or restrict access to various work tracking features by granting users
 Custom rules don't set permissions, but do impact the effective permissions of a user at run-time to modify a work item or set the value of a work item field. Azure Boards supports the following work tracking customizations that support business workflows. 
 
 - Apply select rules upon work item creation, state change, specified state.
-- Apply select rules when a field value is empty,set to a specific value, or was changed or not changed to a value.  
+- Apply select rules when a field value is empty, set to a specific value, or was changed or not changed to a value.  
 - Restrict the transition to a specific state when moving from a specified state.  
 - Apply select rules based on user or group membership of the user modifying a work item.
 
