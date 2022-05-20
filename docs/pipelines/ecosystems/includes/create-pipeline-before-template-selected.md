@@ -16,6 +16,6 @@ ms.custom: devdivchpfy22
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When you see the list of repositories, select your-repository.
+1. When you see the list of repositories, select your repository.
 
 1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
