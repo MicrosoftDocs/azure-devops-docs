@@ -24,7 +24,7 @@ For a good understanding on how to remain Agile as you add teams, review [Scale 
 
 
 > [!NOTE]    
-> This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams or the integration of Microsoft Teams with Azure Boards, see [Welcome to Microsoft Teams](/microsoftteams/teams-overview) or [Use the Azure Boards app in Microsoft Teams](../integrations/boards-teams.md). 
+> This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams or the integration of Microsoft Teams with Azure Boards, see [Welcome to Microsoft Teams](/microsoftteams/teams-overview) or [Use the Azure Boards app in Microsoft Teams](../../boards/integrations/boards-teams.md). 
 
 Use this article to learn how to perform the following tasks:  
 ::: moniker range="azure-devops"
@@ -377,6 +377,7 @@ b70aa504-33b4-4d17-a85d-0fbf4829a154  Phone               Feature team deliverin
 cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused on voice communications
 ```
 
+::: moniker-end 
 
 <a id="grant-add-permissions"></a>  
 
@@ -384,8 +385,8 @@ cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused o
 
 For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:  
 
-- [Create and edit child nodes under their default area path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path) 
-- [Create shared queries and folders under the **Shared Queries** folder](../queries/set-query-permissions.md)
+- [Create and edit child nodes under their default area path](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path) 
+- [Create shared queries and folders under the **Shared Queries** folder](../../boards/queries/set-query-permissions.md)
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
