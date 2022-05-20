@@ -14,12 +14,14 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you add a team to your growing organization, you may need to move work items assigned to one team to new Area Paths owned by the new team.  
+When you add a team or your teams undergo reorganization, you may need to move work items assigned to one team to new **Area Paths** owned by another team. All work items are assigned to an **Area Path**, even if it is at the top of the hierarchy for the project.  
+
+To learn how to add a team, see [Create or add a team](../../organizations/settings/add-teams.md). 
  
 
 ## Prerequisites 
 
-- To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the Area Path nodes.   
+- To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).  
 
 ## Move work items under teams 
 
@@ -27,11 +29,13 @@ When you add a team to your growing organization, you may need to move work item
 
 ::: moniker range=">= azure-devops-2019"
 
-1. [Create a query](../queries/using-queries.md) of all work items you want to reassign. Multi-select those items, which belong to each team, and [bulk edit the area path](../backlogs/bulk-modify-work-items.md).
+1. [Create a query](../queries/using-queries.md) of all work items you want to reassign. 
+
+1. Multi-select those items, which belong to each team, and [bulk edit the area path](../backlogs/bulk-modify-work-items.md).
 
    <img src="media/move-work-items/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items." />
 
-2. After you bulk modify, do a bulk save.  
+1. After you bulk modify, do a bulk save.  
   
    <img src="media/move-work-items/query-bulk-save.png" alt="Screenshot of Bulk save edited work items." />  
  
@@ -53,7 +57,7 @@ When you add a team to your growing organization, you may need to move work item
 
 ::: moniker range="azure-devops"
 
-You can move work items to a new area paths using [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
+You can move a work item to a different area path using [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -86,7 +90,7 @@ az boards work-item update --id
 
 #### Example
 
-You can only move one work item at a time using Azure DevOps CLI. In this example, we move work item ID=487 under the Fabrikam Fiber/Service Delivery/Email area path.
+You can only move one work item at a time using Azure DevOps CLI. In this example, we move work item *ID=148* under the *Fabrikam Fiber\Production Planning* area path.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -178,6 +182,12 @@ url: https://fabrikamprime.visualstudio.com/854a3f67-9962-43d1-a968-2e5f2eb66c99
 
 * * *
  
+
+## Verify your team backlog 
+
+After you move work items from one team to another team, check your team backlog to ensure the items appear. See [Create your backlog](../backlogs/create-your-backlog.md).  
+
+If you encounter any problems, review [Set up your project's backlogs and boards](../backlogs/set-up-your-backlog).
 
 ## Related articles
 
