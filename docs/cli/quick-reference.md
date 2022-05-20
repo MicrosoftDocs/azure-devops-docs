@@ -81,12 +81,6 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
       - [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
       - [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
-      #### Projects
-      - [Create a project](../organizations/projects/create-project.md) 
-      - [Delete a project](../organizations/projects/delete-project.md) 
-      - [List projects](../organizations/projects/create-project.md#list-projects) 
-      - [Show project information](../organizations/projects/create-project.md#show-project) 
-      - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
       #### Manage wikis
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)
       - [Create a wiki from a repo](../project/wiki/wiki-create-repo.md)
@@ -94,6 +88,12 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [List wikis](../project/wiki/manage-wikis.md#list-wikis)
       - [Publish a repo as a wiki](../project/wiki/publish-repo-to-wiki.md)
       - [View wiki details](../project/wiki/manage-wikis.md#show-wiki)
+      #### Projects
+      - [Create a project](../organizations/projects/create-project.md) 
+      - [Delete a project](../organizations/projects/delete-project.md) 
+      - [List projects](../organizations/projects/create-project.md#list-projects) 
+      - [Show project information](../organizations/projects/create-project.md#show-project) 
+      - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
    :::column-end:::
    :::column span="1":::
       #### Teams
