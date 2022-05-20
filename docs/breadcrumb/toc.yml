@@ -21,9 +21,6 @@
     - name: Boards 
       tocHref: /azure/devops/boards/boards
       topicHref: /azure/devops/boards/boards/kanban-overview
-    - name: Feedback
-      tocHref: /azure/devops/project/feedback/
-      topicHref: /azure/devops/project/feedback/index
     - name: Backlogs
       tocHref: /azure/devops/boards/backlogs
       topicHref: /azure/devops/boards/backlogs/backlogs-overview
@@ -49,15 +46,9 @@
     - name: Start using Azure DevOps
       tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/what-is-azure-devops
-    - name: Web portal navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
-    - name: Web portal navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
     - name: Status & security 
       tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/service-status-info
@@ -144,6 +135,9 @@
     - name: Public projects
       tocHref: /azure/devops/organizations/public/
       topicHref: /azure/devops/organizations/public/about-public-projects
+    - name: Work across projects
+      tocHref: /azure/devops/project/
+      topicHref: /azure/devops/project/work-across-projects-faqs.yml
   - name: Wikis, Search, & Navigation
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
@@ -157,6 +151,9 @@
     - name: Navigation
       tocHref: /azure/devops/project/navigation/
       topicHref: /azure/devops/project/navigation/index
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index
   - name: Developer Resources
     tocHref: /azure/devops/dev-resources/
     topicHref: /azure/devops/dev-resources/index
