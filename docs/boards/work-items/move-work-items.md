@@ -192,7 +192,7 @@ url: https://fabrikamprime.visualstudio.com/854a3f67-9962-43d1-a968-2e5f2eb66c99
 
 After you move work items from one team to another team, check your team backlog to ensure the items appear. See [Create your backlog](../backlogs/create-your-backlog.md).  
 
-If you encounter any problems, review [Set up your project's backlogs and boards](../backlogs/set-up-your-backlog).
+If you encounter any problems, review [Set up your project's backlogs and boards](../backlogs/set-up-your-backlog.md).
 
 ## Related articles
 
