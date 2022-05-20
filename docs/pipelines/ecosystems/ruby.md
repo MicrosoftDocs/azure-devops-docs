@@ -17,7 +17,7 @@ monikerRange: azure-devops
 
 This article explains how to automatically build Ruby projects.
 
-## Set up the Azure pipeline
+## Create the Azure pipeline
 
 Do the following steps to set up a pipeline for a Ruby app.
 
