@@ -13,23 +13,23 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Enabling upstream sources on your feed allow you to publish and consume packages from your feed and public registries. Adding the nuget.org upstream allows you to consume NuGet packages from the public registry.
+Enabling upstream sources on your feed enables developers to consume packages from public registries such as nuget.org and npmjs.com. In this article, you will learn how to add the NuGet Gallery upstream source to consume NuGet packages from the nuget.org public registry.
 
 ## Add a new upstream source
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Navigate to **Feed settings** by selecting the gear icon ![gear icon](../../media/icons/gear-icon.png) button.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) button to navigate to **Feed settings**.
 
 1. Select **Upstream Sources**.
 
-    :::image type="content" source="../media/upstream-sources.png" alt-text="A screenshot showing how to access upstream sources from feed settings.":::
+    :::image type="content" source="./media/upstreams.png" alt-text="A screenshot showing how to access upstream sources from feed settings.":::
 
 1. Select **Add Upstream**.
 
-    :::image type="content" source="../media/add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
+    :::image type="content" source="./media/add-nuget-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
-1. Select **Public source**, and then fill out the required fields.
+1. Select **Public source**.
 
     :::image type="content" source="../media/add-new-upstream.png" alt-text="Screenshot showing how to add a new upstream source.":::
 
