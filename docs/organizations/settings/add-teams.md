@@ -83,7 +83,7 @@ From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add
 
 	:::image type="content" source="media/add-team/new-team-button-new-teams-preview.png" alt-text="Screenshot of choose New Team button, New Teams preview feature enabled.":::
 
-1. Enter a team name and the the names of project members who you want to assign to the team. Optionally, enter a description. You must add at least one name as a team **Administrator**. Select **Create an area path with the name of the team**, or leave it unchecked and assign the **Area Path** for the team after it's created. You can choose an existing area path or add a new one at that time. 
+1. Enter a team name and the names of project members who you want to assign to the team. Optionally, enter a description. You must add at least one name as a team **Administrator**. Select **Create an area path with the name of the team**, or leave it unchecked and assign the **Area Path** for the team after it's created. You can choose an existing area path or add a new one at that time. 
 
 	:::image type="content" source="media/add-team/create-new-team-dialog-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
 
@@ -189,7 +189,7 @@ az devops team create --name [--description] [--project]
 
 #### Example
 
-The following command adds a team named **Production Planning** to the fabrikamprime organizaiton, Fabrikam Fiber project, and returns a number of properties assigned to the team in YAML output format.  
+The following command adds a team named **Production Planning** to the *fabrikamprime* organization, *Fabrikam Fiber* project, and returns a number of properties assigned to the team in YAML output format.  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli

@@ -23,8 +23,8 @@ To learn how to add a team, see [Create or add a team](../../organizations/setti
 
 ## Prerequisites 
 ::: moniker range="azure-devops"
-- To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).  
-- To use Azure CLI commands, you must first install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
+- To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).    
+- To use Azure CLI commands, you must first install Azure CLI as described in [Get started with Azure DevOps CLI](../../cli/index.md).   
 ::: moniker-end
 ::: moniker range="< azure-devops"
 - To change the **Area Paths** of work items, you must be a project member and have permissions to view and edit work items under the **Area Path** nodes. To learn about these permissions, see [Set work tracking permissions, Create child nodes, modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).  
@@ -56,12 +56,12 @@ From the web portal, you can perform bulk updates of the **Area Path**.
 
 2. After you bulk modify, do a bulk save.  
 
-   ![Screenshot of the Web portal, Queries page, Bulk save selected work items](media/move-work-items/scale-agile-bulk-save-area-path-co.png)  
+   ![Screenshot of the Web portal, Queries page, Bulk save selected work items.](media/move-work-items/scale-agile-bulk-save-area-path-co.png)  
 
 ::: moniker-end  
 
 <a id="move-work-items" /> 
- 
+  
 ::: moniker range="azure-devops"  
 
 ## Move a work item using Azure CLI
