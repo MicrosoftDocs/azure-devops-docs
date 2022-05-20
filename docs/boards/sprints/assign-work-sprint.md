@@ -29,13 +29,13 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint planning, vertical nav](media/assign-items-sprint/assign-intro.png)
+> ![Screenshot of Sprint planning.](media/assign-items-sprint/assign-intro.png)
 ::: moniker-end
 
 
 ::: moniker range="tfs-2018"
 
-![Sprint planning, horizontal nav](media/sp-intro.png) 
+![Screenshot of Sprint planning, TFS 2018.](media/sp-intro.png) 
 
 ::: moniker-end
 	
@@ -75,12 +75,12 @@ From your web browser, open your product backlog.
 1. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+	> ![Screenshot for Open Work, Backlogs, for a team.](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
 
     To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
+	> ![Screenshot , Choose another team navigation.](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
 	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
@@ -88,12 +88,12 @@ From your web browser, open your product backlog.
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
+	> ![Screenshot for choose product backlog level, Backlog items, Stories, or Requirements.](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
 2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
+	> ![Screenshot, Open Column Options.](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
 ::: moniker-end  
 
@@ -106,7 +106,7 @@ From your web browser, open your product backlog.
 	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](media/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![Screenshot for Choose another team, Azure DevOps 2019.](media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
 	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
@@ -114,12 +114,12 @@ From your web browser, open your product backlog.
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Screenshot, Choose product backlog level, Backlog items, Stories, or Requirements, Azure DevOps 2019.](media/assign-items-sprint/select-product-backlog-agile.png) 
 
 2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
+	> ![Screenshot for Open Column Options, Azure DevOps 2019.](media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 ::: moniker-end  
 
@@ -128,7 +128,7 @@ From your web browser, open your product backlog.
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the Boards>Backlogs page](media/assign-items-sprint/open-work-backlogs-standard.png)  
+	> ![Screenshot, Open the Boards>Backlogs page, TFS 2018.](media/assign-items-sprint/open-work-backlogs-standard.png)  
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
 
@@ -164,7 +164,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 1. You can drag and drop items from the **Backlog** onto a sprint.  
 
 	> [!NOTE]   
-	> The Planning pane will only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. 
+	> The **Planning** pane only shows the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. Only a team administrator or member of the **Project Administrators** group can [select iterations for a team](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Drag-drop items onto sprint](media/define-sprints/drag-drop-backlog-items-to-sprint.png)
@@ -185,6 +185,9 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 Select one or more items and drag them to one of the listed sprints.  
 
+> [!NOTE]   
+> The **Iteration Paths** listed only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. Only a team administrator or member of the **Project Administrators** group can [select iterations for a team](../../organizations/settings/set-iteration-paths-sprints.md). 
+	
 > [!div class="mx-imgBorder"]
 > ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](media/sp-assign-to-sprints.png)    
 
