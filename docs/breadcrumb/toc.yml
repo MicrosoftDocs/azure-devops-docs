@@ -137,7 +137,7 @@
       topicHref: /azure/devops/organizations/public/about-public-projects
     - name: Work across projects
       tocHref: /azure/devops/project/
-      topicHref: /azure/devops/project/work-across-projects-faqs.yml
+      topicHref: /azure/devops/project/work-across-projects-faqs 
   - name: Wikis, Search, & Navigation
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
