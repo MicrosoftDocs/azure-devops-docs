@@ -67,8 +67,10 @@ From the web portal, you can perform bulk updates of the **Area Path**.
 ::: moniker-end  
 
 <a id="move-work-items" /> 
-  
-::: moniker range="azure-devops"  
+
+
+
+::: moniker range="azure-devops"   
 
 ## Move a work item using Azure CLI
 
@@ -191,7 +193,7 @@ url: https://fabrikamprime.visualstudio.com/854a3f67-9962-43d1-a968-2e5f2eb66c99
 
 ```
 
-::: moniker-end  
+::: moniker-end 
  
 
 ## Verify your team backlog 
