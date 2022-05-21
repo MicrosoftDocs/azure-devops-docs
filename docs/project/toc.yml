@@ -1,16 +1,16 @@
 - name: Wikis, Search, & Navigation
   href: index.yml
 - name: Get started
-  items:
   expanded: true
+  items:
   - name: Set your preferences
-    href: ../organizations/settings/set-your-preferences.md
+    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Set personal or team favorites
-    href: ../organizations/settings/set-your-preferences.md
+    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Understand your default permissions
-    href: ../organizations/security/permissions-access.md
+    href: ../organizations/security/permissions-access.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Connect to a project
-    href: ../organizations/projects/connect-to-projects.md
+    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Navigate the web portal
     href: ./navigation/index.md
   - name: Get started with Search
