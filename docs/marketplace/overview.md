@@ -58,7 +58,7 @@ Add an extension to your organization by first searching for and then installing
 
 ### Search for an extension
 
-You can search for extensions from the marketplace with the [az devops extension search](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-search) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can search for extensions from the marketplace with the [az devops extension search](/cli/azure/devops/extension#az-devops-extension-search) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli
 az devops extension search --search-query

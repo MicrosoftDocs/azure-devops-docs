@@ -103,7 +103,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker range="azure-devops"
 
-You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -289,7 +289,7 @@ You can delete any team except the default team. At least one team must be defin
 
 ::: moniker range="azure-devops"
 
-You can delete a team using [az devops team delete](/cli/azure/devops/team#ext-azure-devops-az-devops-team-delete).  
+You can delete a team using [az devops team delete](/cli/azure/devops/team#az-devops-team-delete).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
