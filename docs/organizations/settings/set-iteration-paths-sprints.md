@@ -135,7 +135,7 @@ From the web portal, choose **Project settings** :::image type="icon" source="..
 
 <a id="iteration-project-list" />
 
-List the iterations defined for a project using [az boards iteration project list](/cli/azure/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+List the iterations defined for a project using [az boards iteration project list](/cli/azure/boards/iteration/project#az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -272,7 +272,7 @@ For Scrum-based projects, you see the following set of sprints.
 
 ::: moniker range="azure-devops"
 
-You can add iteration paths to a project using [az boards iteration project create](/cli/azure/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can add iteration paths to a project using [az boards iteration project create](/cli/azure/boards/iteration/project#az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -371,7 +371,7 @@ You open team settings from the upper navigation bar. Select the team you want a
 
 ::: moniker range="azure-devops"
 
-You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/boards/area/team#az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
