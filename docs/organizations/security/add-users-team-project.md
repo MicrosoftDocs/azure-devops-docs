@@ -279,13 +279,10 @@ As a team administrator, you can add new or existing members from the **Team Mem
 Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md).   
  
 ::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the preview feature, **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-
+[!INCLUDE [note-new-teams-page](../../includes/note-new-teams-page.md)]
 ::: moniker-end
 
-#### [Preview page](#tab/preview-page)
+#### [Preview UI](#tab/preview-page)
 
 ::: moniker range="azure-devops"
 
@@ -324,7 +321,7 @@ You can toggle between direct or expanded membership views. The **Direct Members
 Choose the **Current page** tab for information on adding a user to a team. The **New Teams Page** preview feature is only available for Azure DevOps Services at this time. 
 ::: moniker-end
 
-#### [Current page](#tab/current-page)
+#### [Current UI](#tab/current-page)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -390,7 +387,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 From the team's **Members** page, you can remove members. 
  
-#### [Preview page](#tab/preview-page)
+#### [Preview UI](#tab/preview-page)
 
 ::: moniker range="azure-devops"
 
@@ -412,7 +409,7 @@ From the team's **Members** page, you can remove members.
 Choose the **Current page** tab for information on adding a user to a team. The **New Teams Page** preview feature is only available for Azure DevOps Services at this time. 
 ::: moniker-end
 
-#### [Current page](#tab/current-page)
+#### [Current UI](#tab/current-page)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -552,7 +549,7 @@ As a member of the **Project Administrators** group, you can add users or groups
 
 <a id="project-permissions" />
 
-#### [Preview page](#tab/preview-page)
+#### [Preview UI](#tab/preview-page)
 
 
 ::: moniker range="azure-devops"
@@ -610,7 +607,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker-end
 
-#### [Current page](#tab/current-page) 
+#### [Current UI](#tab/current-page) 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -728,7 +725,7 @@ To learn more, see [Add account users for Azure DevOps](../accounts/add-organiza
 
 ## List team members or team details  
 
-From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list) command.
+From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/devops/team#az-devops-team-list) command.
 
 [List team members](#list-members) &#124; [Show team details](#show-details)
 
@@ -739,7 +736,7 @@ From the Azure DevOps CLI command, you can see details about a team or list the 
 
 ### List team members
 
-You can list the individual members of a team in your organization with the [az devops team list-member](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list-member) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list the individual members of a team in your organization with the [az devops team list-member](/cli/azure/devops/team#az-devops-team-list-member) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az devops team list-member --team
@@ -777,7 +774,7 @@ bd30c189-db0f-4dd6-9418-5d8b41dc1754  Raisa Pokrovskaya  fabrikamfiber5@hotmail.
 
 ### Show team details
 
-You can view details about a team in your organization with the [az devops team show](/cli/azure/devops/team#ext-azure-devops-az-devops-team-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can view details about a team in your organization with the [az devops team show](/cli/azure/devops/team#az-devops-team-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops team show --team
