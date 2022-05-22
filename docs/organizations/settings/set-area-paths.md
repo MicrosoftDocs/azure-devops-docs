@@ -129,7 +129,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 <a id="list-areas" /> 
 
-You can list the area paths defined for a project using [az boards area project list](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list the area paths defined for a project using [az boards area project list](/cli/azure/boards/area/project#az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -199,7 +199,7 @@ Only one area is defined, by default. Add area paths under the root area path fo
 
 ::: moniker range="azure-devops"  
 
-You can add area paths to a project using [az boards area project create](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can add area paths to a project using [az boards area project create](/cli/azure/boards/area/project#az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -293,7 +293,7 @@ You open team settings from the upper navigation bar. Select the team you want a
 
 ::: moniker range="azure-devops"
 
-You can list the area paths defined for a team using [az boards area team list](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list the area paths defined for a team using [az boards area team list](/cli/azure/boards/area/team#az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -425,7 +425,7 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker range="azure-devops"
 
-You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/boards/area/team#az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -516,7 +516,7 @@ The system automatically updates work items and queries that reference your upda
 
 ::: moniker range="azure-devops" 
 
-You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/boards/area/project#az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 <a id="rename-move-project-area-path" /> 
 
@@ -553,7 +553,7 @@ ID     Identifier                            Name           Path                
 
 ### Remove an area path from a team 
 
-To remove an area path from a team, use [az boards area team remove](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-remove).
+To remove an area path from a team, use [az boards area team remove](/cli/azure/boards/area/team#az-boards-area-team-remove).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
