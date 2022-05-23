@@ -21,8 +21,8 @@ ms.technology: devops-cicd-tasks
     #allowBrokenSymlink: false # Optional. Has effect only when publishJUnitResults == True
     #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo. Enabling code coverage inserts the `clean` goal into the Maven goals list when Maven runs.
     #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
-    #codeCoverageClassFilesDirectories: # Optional
-    #codeCoverageSourceDirectories: # Optional
+    #codeCoverageClassFilesDirectories: # Required for a multi-module project
+    #codeCoverageSourceDirectories: # Required for a multi-module project
     #codeCoverageFailIfEmpty: false # Optional
     #javaHomeOption: 'JDKVersion' # Options: jDKVersion, path
     #jdkVersionOption: 'default' # Optional. Options: default, 1.14, 1.13, 1.12, 1.11, 1.10, 1.9, 1.8, 1.7, 1.6
