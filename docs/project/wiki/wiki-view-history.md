@@ -87,16 +87,16 @@ Select **Revert** on the revision details page to revert a change on a wiki page
 
 ## Revert a commit to a *publish as code wiki* page
 
-If you need to revert to an earlier revision for a page that you have published as code, do one of the following actions:
+If you need to revert to an earlier revision for a page that you've published as code, do one of the following actions:
 
-- If the commit is the most recent revision to a page, you can revert from the web portal
-- If the commit is an earlier revision, with additional commits having occurred in between, create a separate branch and revert the changes in that branch
+- If the commit is the most recent revision to a page, you can revert from the web portal.
+- If the commit is an earlier revision, with additional commits having occurred in between, create a separate branch and revert the changes in that branch.
 
 ### Revert from a recent revision from the web portal
 
-1. Preview any version by choosing the commit id from the **Revisions** page for the selected file.
+1. Preview any version by choosing the commit ID from the **Revisions** page for the selected file.
 
-2. Copy the full ID of the commit by selecting :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: **Copy-clone**.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
+2. Copy the full ID of the commit by selecting :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: **Copy-clone**.  Here we copy the commit ID, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-copy-commit-id.png)
@@ -139,7 +139,7 @@ Return to the wiki, refresh the browser, and you should see the reverted content
 
 ### Revert from earlier revisions using a different branch
 
-To revert to an earlier committed version, one that is not the immediate last revision, of a publish as code wiki page, you must update a branch other than the main branch for the wiki, and then create a pull request to the main branch.
+To revert to an earlier committed version, one that isn't the immediate last revision, of a publish as code wiki page, you must update a branch other than the main branch for the wiki, and then create a pull request to the main branch.
 
 1. Create a local branch of the main wiki branch.
 1. View the commit history and locate the commit that contains the changes you want to undo.

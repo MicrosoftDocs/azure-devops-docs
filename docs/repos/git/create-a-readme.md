@@ -48,15 +48,19 @@ If your project is a library or an interface to an API, put a code snippet showi
 
 ## Provide build steps for developers
 
-Use the next section of your readme to show developers how to build your code from a fresh clone of the repo and run any included tests.  
-Give details about the tools needed to build the code and document the steps to configure them to get a clean build.  
-Break out dense or complex build instructions into a separate page in your documentation and link to it if needed.  
-Run through the instructions as you write them in order to verify the instructions would work for a new contributor.  
+Use the next section of your readme to show developers how to build your code from a fresh clone of the repo and run any included tests. 
+
+- Give details about the tools needed to build the code and document the steps to configure them to get a clean build.  
+
+- Break out dense or complex build instructions into a separate page in your documentation and link to it if needed.  
+
+- Run through the instructions as you write them in order to verify the instructions would work for a new contributor.  
+
 Remember, the developer relying on these instructions could be yourself after not working on a project for some time.   
 
 Provide the commands to run any test cases provided with the source code after the build is successful. 
 Developers lean on these test cases to ensure that they don't break your code as they make changes. 
-Good test cases also serve as samples developers can use to build their own test cases when adding new functionality.
+Good test cases also serve as samples that developers can use to build their own test cases when adding new functionality.
 
 ## Help users contribute
 
