@@ -4,7 +4,7 @@ description: Guidelines for responding to and requesting to void reviews for a p
 ms.technology: devops-ecosystem
 ms.assetid: f814d685-c0e0-48dc-adb6-ad8571a9fb73
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2017
@@ -12,7 +12,7 @@ ms.date: 10/24/2017
 
 # Respond to Marketplace extension reviews
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can respond to reviews that customers leave for your extensions in the Visual Studio Marketplace. Find and select **Reply** next to a review if you have one of the following permissions.
 

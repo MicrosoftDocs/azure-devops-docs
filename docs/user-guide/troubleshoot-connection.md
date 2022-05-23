@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Troubleshoot connecting to a project
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -87,7 +87,7 @@ When you get redirected back to the original sign-in page, we recommend that you
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Troubleshoot Azure DevOps Server connectivity
 
@@ -125,7 +125,7 @@ Another solution is to delete your browser cookies. For more information, see th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < azure-devops"
+::: moniker range="< azure-devops"
 
 ## Connect to Azure DevOps Server with Secure Sockets Layer
 

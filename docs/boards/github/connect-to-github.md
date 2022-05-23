@@ -12,8 +12,8 @@ ms.date: 11/19/2021
 
 # Connect Azure Boards to GitHub (Cloud) 
 
-**Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](./connect-on-premises-to-github.md?preserve-view=true&view=azure-devops-2020)
-
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
+ 
 To support linking of GitHub commits and pull requests to Azure Boards work items, you connect your Azure Boards project to GitHub.com repositories. Then, use GitHub for software development while using Azure Boards to plan and track your work. For an overview of the Azure Boards app for GitHub, see [Azure Boards-GitHub integration](index.md).  
 
 When you make the connection from Azure Boards, the list of GitHub repositories corresponds to ones that you allow Azure Boards to access. You can limit which repositories Azure Boards accesses overall, and limit what a particular project accesses or split the management of work across different Azure Boards projects.
@@ -25,9 +25,8 @@ When you make the connection from Azure Boards, the list of GitHub repositories 
 ## Prerequisites 
 
 * Connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, you have permissions. 
-* You must be an administrator or owner of the GitHub repository you'll connect to. You can connect to multiple GitHub repositories so long as you're an administrator for those repositories. 
-
+* You must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, you have permissions. 
+* You must be an administrator or owner of the GitHub repository you'll connect to. You can connect to multiple GitHub repositories so long as you're an administrator for those repositories.   
 
 ## Authentication options
 
@@ -53,7 +52,8 @@ The following authentication options are supported based on the GitHub platform 
    :::column-end:::
 :::row-end:::
  
-
+ > [!NOTE]
+ >  If you choose to connect Github with PAT, make sure you configure single sign-on (SSO) for the PAT on your GitHub account. This is needed to be able to get a list of repositories of an organization with Security Assertion Markup Language (SAML) SSO authentication configured.
  
 ## Open Project Settings>GitHub Connections.
 

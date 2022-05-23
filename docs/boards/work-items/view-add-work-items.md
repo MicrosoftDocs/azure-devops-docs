@@ -2,7 +2,7 @@
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
 description: Learn how to view and filter work items like user stories, issues, and bugs from the Work Items hub and seven personalized pivot views. 
-ms.custom: boards-work-items, seodec18, devx-track-azurecli, contperf-fy20q4
+ms.custom: boards-work-items, devx-track-azurecli, contperf-fy20q4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -12,13 +12,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/07/2021
+ms.date: 02/14/2022
 ---
 
 # View and add work items using the Work Items page  
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019** 
-
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, and interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
@@ -77,7 +77,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There's no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
+There's no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services only.
 
 ***
 
@@ -147,7 +147,7 @@ To view a work item, double-click the title or open the context menu for the wor
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="azure-devops"  
 
 You can view a new work item with the [az boards work-item show](/cli/azure/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -188,6 +188,8 @@ ID    Type    Title      Assigned To          State
 
 Adding a work item is just one click away. Choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
+> [!NOTE]   
+> New work items are assigned the last **Area Path** and **Iteration Path** selected by the user. 
 
 # [Web portal](#tab/browser)
 
@@ -256,7 +258,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There's no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
+There's no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services.
 
 ***
 

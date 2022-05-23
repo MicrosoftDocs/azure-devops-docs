@@ -8,12 +8,12 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Copy Files Over SSH task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy files from a source folder to a target folder on a remote machine over SSH.
 
@@ -21,7 +21,7 @@ This task allows you to connect to a remote machine using SSH and copy files mat
 source folder to target folder on the remote machine. Supported protocols for file transfer are SFTP and SCP via SFTP.
 In addition to Linux, macOS is partially supported (see [FAQ](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -108,7 +108,7 @@ This task is intended for target machines running Linux.
 - For copying files to a macOS machine, this task may be used, but authenticating with a password is not supported.
 - For copying files to a Windows machine, consider using [Windows Machine File Copy](windows-machine-file-copy.md).
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

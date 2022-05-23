@@ -1,17 +1,17 @@
 ---
-title: Parallel jobs in Team Foundation Server
+title: Parallel jobs in Azure DevOps Server
 ms.custom: seodec18
-description: Learn about the parallel jobs pricing and availability in Team Foundation Server (TFS)
+description: Learn about the parallel jobs pricing and availability in Azure DevOps Server
 ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.author: jukullam
 ms.date: 09/23/2020
-monikerRange: '>= tfs-2015 < azure-devops'
+monikerRange: '< azure-devops'
 ---
 
-# Parallel release jobs in Team Foundation Server
+# Parallel release jobs in Azure DevOps Server
 
-[!INCLUDE [version-tfs-only-2017](../includes/version-tfs-only-2017.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL). For information on licensing in Azure Pipelines, see [Run parallel jobs](concurrent-jobs.md).
 
@@ -29,12 +29,6 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 > [!IMPORTANT]
 > Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
-
-::: moniker-end
-
-::: moniker range="= tfs-2015"
-
-> Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
 
 ::: moniker-end
 

@@ -15,7 +15,7 @@ ms.date: 10/20/2021
 
 # Customize Azure Boards to support SAFe&reg; practices
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article, you'll learn about select process customizations you can make and why you might want to make them support your Scaled Agile Framework (SAFe®) practices. Most of these customizations are optional. 
 
@@ -286,17 +286,3 @@ See also:
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)
 - [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)
 
-
-<!--- 
-
-
-<a id="project-scale" />
-
-## When to add another project 
- 
-
-## Required customization
-
-If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](https://gordonbeeming.xyz/blogs/dev/2014/9/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
-
---> 

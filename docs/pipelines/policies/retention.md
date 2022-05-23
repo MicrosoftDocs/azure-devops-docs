@@ -6,13 +6,15 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
 ms.date: 11/02/2021
-ms.custom: contperf-fy21q1, contperf-fy21q2
-monikerRange: '>= tfs-2015'
+ms.custom: contperf-fy21q1, contperf-fy21q2, cross-service
+monikerRange: '<= azure-devops'
 ---
 
 # Set retention policies for builds, releases, and tests
 
-::: moniker range="<= tfs-2018"
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -64,7 +66,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be kept for each pipeline.
 
@@ -121,7 +123,7 @@ The setting for number of recent runs to keep for each pipeline requires a littl
 
 ### What parts of the run get deleted
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
 
@@ -168,7 +170,7 @@ A run is deleted if all of the following conditions are true:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Your retention policies run every day at 3:00 A.M. UTC. There is no option to change the time the policies run.
 
@@ -216,7 +218,7 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You can also learn how to customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies) later in this article.
 
 ::: moniker-end
@@ -277,7 +279,7 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range="tfs-2018"
 
 ### Interaction between build and release retention policies
 
@@ -378,7 +380,7 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 You can also customize these policies on a branch-by-branch basis if you are building from [Git repositories](#git-repositories).
 
@@ -388,21 +390,9 @@ You can specify build retention policy defaults and maximums for a project colle
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-* TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-* TFS 2015.3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
-
-* TFS 2015 RTM: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue#_a=settings`
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
+* TFS 2018: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
 
 The **maximum retention policy** sets the upper limit for how long runs can be retained for all build pipelines.
 Authors of build pipelines cannot configure settings for their definitions beyond the values specified here.

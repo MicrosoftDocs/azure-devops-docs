@@ -7,13 +7,13 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---
 
 # Azure DevOps Services service hooks events
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ## Available event types
 
@@ -47,12 +47,6 @@ ms.date: 07/27/2020
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
-
-::: moniker range="<= tfs-2017"
-**Deprecated event types**:
-
-* [Team room message posted](#message.posted)
-::: moniker-end
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
@@ -2494,73 +2488,6 @@ Filter events to include only work items commented on.
   "createdDate": "2016-09-19T13:03:28.9695265Z"
 }
 ```
-
-::: moniker range="<= tfs-2017"
-
-## Deprecated event types
-
-<a name="message.posted"></a>
-### Team room message posted
-
-Triggers when a message is posted to a team room
-
-* Publisher ID: `tfs`
-* Event ID: `message.posted`
-* Resource Name: `messageposted`
-
-#### Settings
- * `messagePattern`: The string that must be found in the message
- * `roomId`: Filter events to include only messages sent to the specified Team room
-   * Data type: `number`
-   * Required
-
-#### Sample payload
-```json
-{
-  "id": "daae438c-296b-4512-b08e-571910874e9b",
-  "eventType": "message.posted",
-  "publisherId": "tfs",
-  "scope": "all",
-  "message": {
-    "text": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "html": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "markdown": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
-  },
-  "detailedMessage": {
-    "text": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "html": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room<p>Hello</p>",
-    "markdown": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
-  },
-  "resource": {
-    "id": 0,
-    "content": "Hello",
-    "messageType": "normal",
-    "postedTime": "2014-05-02T19:17:13.3309587Z",
-    "postedRoomId": 1,
-    "postedBy": {
-      "id": "00067FFED5C7AF52@Live.com",
-      "displayName": "Jamal Hartnett",
-      "uniqueName": "Windows Live ID\\fabrikamfiber4@hotmail.com"
-    }
-  },
-  "resourceVersion": "1.0",
-  "resourceContainers": {
-    "collection": {
-      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
-    },
-    "account": {
-      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
-    },
-    "project": {
-      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
-    }
-  },
-  "createdDate": "2016-09-19T13:03:29.2506967Z"
-}
-```
-
-::: moniker-end
-
 ## Resource containers
 
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. This URL can be used to create a connection to the container in order to make REST API calls.

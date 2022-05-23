@@ -12,7 +12,7 @@ monikerRange: azure-devops
 
 # Java Tool Installer task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to acquire a specific version of Java from a user supplied Azure blob,
 from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment variable.

@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Deploy pull request Artifacts with classic release pipelines
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Pull requests provide an effective way to review code changes before it is merged into the codebase. However, these changes can introduce issues that can be tricky to find without building and deploying your application to a specific environment. Pull request triggers enable you to set up a set of criteria that must be met before deploying your code. You can use pull request triggers with code hosted on Azure Repos or GitHub.
 
@@ -24,7 +24,7 @@ With pull request triggers, anytime you raise a new pull request for the designa
 
 ## Prerequisites
 
-- A GitHub/Azure repos repository to create the pipeline. If you don't have one, use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app.
+- A GitHub/Azure Repos repository to create the pipeline. If you don't have one, use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app.
 - A working build for your repository.
 - A classic release pipeline. [Set up a release pipeline](./deploy-multiple-branches.md#set-up-a-release-pipeline) for your project if you don't already have one.
 
@@ -63,7 +63,7 @@ You can use branch policies to implement a list of criteria that must be met for
 
 1. From within your project, select **Repos** > **Branches** to access the list of branches for your repository.
 
-    :::image type="content" source="../../repos/git/media/branches/branches_nav-new-nav.png" alt-text="Branches in Azure repos":::
+    :::image type="content" source="../../repos/git/media/branches/branches_nav-new-nav.png" alt-text="Branches in Azure Repos":::
 
 2. Select the the context menu for your appropriate branch `...`, then select **Branch policies**.
 

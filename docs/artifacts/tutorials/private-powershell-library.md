@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Use Azure Artifacts as a private PowerShell repository
 
-**Azure DevOps Services**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
 
@@ -32,9 +32,9 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 - [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
 - An [Azure DevOps Services](https://azure.microsoft.com/services/devops/) account.
 
-## Create a PAT to get command-line access to Azure DevOps Services
+## Create a PAT
 
-The first step is to create a PAT through the Azure DevOps Services UI to authenticate your command-line with the service.
+Using a personal access token (PAT) is a great way to authenticate with Azure DevOps without using your primary credentials. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for more details.
 
 1. Head to your organization in Azure DevOps Services: `https://dev.azure.com/<org_name>`
 
@@ -56,9 +56,6 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 5.  Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes) that this token will be authorized to access. You will only need **Packaging: Read, write & manage** permissions for this tutorial but you can also add more privileges if you'd like to use this token for other tasks.
 
 6. When you're done, make sure to copy your token to a safe location, as you won't be able to view it afterwards.
-
-> [!NOTE]
-> To learn more about how to user personal access tokens, check out the [Authenticate with PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) article.
 
 ## Create the feed
 
@@ -285,13 +282,13 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     - Project-scoped feed:
 
     ```powershell
-    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet
+    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices
     ```
     
     - Org-scoped feed:
 
     ```powershell
-    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet 
+    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted -SkipValidate -Credential $credsAzureDevopsServices 
     ```
 
 1. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
@@ -315,7 +312,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     If the *Install-Module* command is returning an error *Unable to resolve package source*, run the `Register-PackageSource` cmdlet again with the `Trusted` flag as follows:
         
     ```powershell
-    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted
+    Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
     ```
 
     You can check for your module by running the following command:
@@ -325,6 +322,41 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     ```
 
 We now have our private PowerShell repository to publish and download our packages to and from our feed and best of all, available to everyone on our team.
+
+## Use the private PowerShell repository in Azure Pipelines
+
+The following example shows how to install a PowerShell Module from the private PowerShell repository.
+
+```yaml
+variables:
+  PackageFeedEndpoint: https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2 # Org-scoped feed.
+  # Project-scoped feed:https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2 
+  
+  # Construct a JSON object that contains the package feed endpoint URL and the personal access token (PAT) to pass them to the Azure Artifacts credential provider. 
+  # See https://github.com/microsoft/artifacts-credprovider#environment-variables for more details.
+  PackageFeedEndpointCredential: '{"endpointCredentials": [{"endpoint":"$(PackageFeedEndpoint)", "username":"OPTIONAL", "password":"ACCESS TOKEN"}]}'
+  
+steps:
+  # NOTE: To prevent possible 'Unable to resolve package source' errors when trying to install modules from your
+  # Azure Artifacts feed, call Register-PSRepository in a separate PowerShell task to the Install-Module call.
+  - powershell: |
+      Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "$(PackageFeedEndpoint)" -PublishLocation "$(PackageFeedEndpoint)" -InstallationPolicy Trusted
+    displayName: Register Azure Artifacts Feed as PSRepository
+    env:
+      # This environment variable passes the credentials to the credential provider.
+      VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
+      
+  - powershell: |
+      Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
+    displayName: Install Get-Hello PowerShell module
+    env:
+      # The credentials must be set on every task that interacts with your private PowerShell repository.
+      VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
+      
+  - powershell: |
+        Get-Hello
+    displayName: Execute Get-Hello
+```
 
 ## Credit
 

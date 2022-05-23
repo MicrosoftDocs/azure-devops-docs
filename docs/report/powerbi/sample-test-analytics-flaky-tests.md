@@ -16,7 +16,7 @@ ms.date: 10/13/2021
 
 # Flaky tests sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows the list of flaky tests for a pipeline. An example is shown in the following image.
 

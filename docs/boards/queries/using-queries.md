@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 04/01/2022
 ---
 
 # Define a work item query in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
-[!INCLUDE [temp](../includes/version-visual-studio.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013.md](../../includes/version-vs-gt-2013.md)]
 
 Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
 ::: moniker range=">= azure-devops-2020"
@@ -95,30 +95,6 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [Was Ever](./query-by-workflow-changes.md)  
       - [Wildcard](./titles-ids-descriptions.md)  
       ::: moniker-end
-      ::: moniker range="tfs-2017"
-      - [Compare fields](./query-field-value.md) 
-      - [Key words](./titles-ids-descriptions.md)  
-      - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#logical-groupings)  
-      - [Query macros](./about-managed-queries.md#macros)  
-      - [Tags](./add-tags-to-work-items.md#query)  
-      - [Was Ever](./query-by-workflow-changes.md)  
-      - [Wildcard](./titles-ids-descriptions.md)  
-      ::: moniker-end
-      ::: moniker range="tfs-2015"
-      - [Compare fields](./query-field-value.md)
-      - [Key words](./titles-ids-descriptions.md)   
-      - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#logical-groupings)  
-      - [Query macros or variables](./about-managed-queries.md#macros) 
-      ::: moniker-end
-      ::: moniker range="tfs-2013"
-      - [Compare fields](./query-field-value.md)
-      - [Key words](./titles-ids-descriptions.md)   
-      - [Linked work items](./linking-attachments.md)  
-      - [Logical groupings](#logical-groupings)  
-      - [Query macros or variables](./about-managed-queries.md#macros) 
-      ::: moniker-end
    :::column-end::: 
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019"
@@ -135,22 +111,6 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [In and Not In Group searches](./planning-ranking-priorities.md) 
       - [Search across projects](#across-projects)
       - [In and Not In Group searches](./planning-ranking-priorities.md) 
-      ::: moniker-end
-      ::: moniker range="tfs-2017"
-      - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
-      - [History and Discussion](./history-and-auditing.md) 
-      - [Search across projects](#across-projects)
-      ::: moniker-end
-      ::: moniker range="tfs-2015"
-      - [Search across projects](#across-projects)
-      - [Tags](./add-tags-to-work-items.md#query)
-      - [Was Ever](./query-by-workflow-changes.md) 
-      - [Wildcard](./titles-ids-descriptions.md)
-      ::: moniker-end
-      ::: moniker range="tfs-2013"
-      - [Tags](./add-tags-to-work-items.md#query)
-      - [Was Ever](./query-by-workflow-changes.md) 
-      - [Wildcard](./titles-ids-descriptions.md)
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
@@ -171,19 +131,6 @@ Along with the query filters, you can [interactively apply filters to query resu
       - [@CurrentIteration](query-by-date-or-current-iteration.md)   
       - [@Follows](titles-ids-descriptions.md#following)
       - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
-      ::: moniker-end
-      ::: moniker range="tfs-2017"
-      - [[Any]](titles-ids-descriptions.md)
-      - [@Me](query-by-workflow-changes.md)
-      - [@Today](query-by-date-or-current-iteration.md) 
-      - [@CurrentIteration](query-by-date-or-current-iteration.md)   
-      - [@Follows](titles-ids-descriptions.md#following)
-      ::: moniker-end
-      ::: moniker range="tfs-2013 || tfs-2015"
-      - [[Any]](titles-ids-descriptions.md)
-      - [@Me](query-by-workflow-changes.md)
-      - [@Today](query-by-date-or-current-iteration.md) 
-      - [@CurrentIteration](query-by-date-or-current-iteration.md)   
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -219,7 +166,7 @@ The Query Editor displays with the following default settings: **Flat list of wo
 You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 ![Queries page, Choose New query from the drop down menu](media/using-queries-new-query-ts.png)  
 
@@ -256,22 +203,9 @@ New queries scope to the current project by default. However, you can create que
 
 #### [Browser](#tab/browser/) 
 
-::: moniker range=">= tfs-2015"  
-
 To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
  
 <img src="media/using-queries/portal-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" /> 
-
-::: moniker-end
-
-::: moniker range="tfs-2015"  
-
-> [!NOTE]  
-> The **Query across projects** feature is supported from TFS 2015.1 and later versions.  
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"  
 
 With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
 
@@ -282,20 +216,6 @@ With the **Query across projects** checked, you can add the **Team Project** fie
 
 The **Team Project** field is available only after you check  **Query across projects**.  Further, when **Query across projects** is unchecked, only those fields from those work item types, as defined in the current project, appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
 
-::: moniker-end  
-
-::: moniker range="tfs-2013"   
-
-To find all features created in all projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
-
-<img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" />
-
-All fields from all work item types defined in all projects in the collection always appear in the **Field** drop-down menu.  
-
-Use **Team Project=@Project** to scope the query to find only those work items defined for the current project. 
-
-
-::: moniker-end  
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -400,31 +320,18 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 > [!div class="mx-imgBorder"]  
 > ![Results List Showing a Tree Query](media/view-run-queries/tree-query-view-tfs.png)  
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-![Results List Showing a Tree Query](media/12.png)  
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2017"  
 
 > [!div class="mx-imgBorder"]  
 > ![Tree Query, editor](media/view-run-queries/tree-query-editor-s136.png)  
 
-::: moniker-end  
-
-::: moniker range="<= tfs-2015"  
-
-![Tree Query, editor](media/15.png)  
-
-::: moniker-end  
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -446,18 +353,8 @@ Use the direct links query to track dependencies across teams. The query also he
 
 ![Direct Links Query Results](media/17.png)
 
-::: moniker range=">= tfs-2017"  
-
 > [!div class="mx-imgBorder"]  
 > ![Direct Links Query, editor](media/view-run-queries/direct-query-editor-s136.png)  
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2013 <= tfs-2015"  
-
-![Direct Links Query Editor](media/18.png)  
-
-::: moniker-end  
 
 Filter your first-tier list of work items by choosing one of these options:
 

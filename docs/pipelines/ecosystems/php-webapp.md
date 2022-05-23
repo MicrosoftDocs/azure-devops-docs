@@ -1,17 +1,18 @@
 ---
 title: Build and deploy to a PHP web app on Linux
-description: Continuous integration and deployment (CI/CD) to a PHP web app on Linux
+description: Continuous integration and deployment (CI/CD) to a PHP web app on Linux.
 ms.topic: tutorial
+ms.custom: freshness-fy22q2, devx-track-azurecli
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
-ms.date: 11/05/2020
+ms.date: 12/22/2021
 monikerRange: 'azure-devops'
 ---
 
-# Build and deploy to a PHP web app
+# Build & deploy to PHP web app
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-A web app is a lightweight way to host a web application. In this step-by-step guide, you'll learn how to create a pipeline that continuously builds and deploys your PHP app. Your team can then automatically build each commit in GitHub, and if you want, automatically deploy the change to an Azure App Service. You can select different PHP versions.
+A web app is a lightweight way to host a web application. In this step-by-step guide, learn how to create a pipeline that continuously builds and deploys your PHP app. Your team can then automatically build each commit at GitHub and deploy the change to an Azure App Service.
 
 ## Prerequisites
 
@@ -20,9 +21,7 @@ A web app is a lightweight way to host a web application. In this step-by-step g
 
 ## Get the code
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+If you already have an app at GitHub that you want to deploy, you can create a pipeline for that code. But, if you're a new user, you might get a better start by using our sample code. In that case, fork the following repo at GitHub:
 
 ```
 https://github.com/Azure-Samples/basic-php-composer
@@ -45,27 +44,19 @@ az appservice plan create -g myapp-rg -n myapp-service-plan --is-linux
 az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "PHP|7.0"
 ```
 
-## Sign in to Azure Pipelines and connect to Azure
-
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
-
-[!INCLUDE [include](includes/create-project.md)]
-
 [!INCLUDE [include](includes/create-service-connection.md)]
 
 ## Create the pipeline
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **PHP**. Your new pipeline appears.
+7. When you see the **Configure** tab, select **PHP**. Your new pipeline appears.
 
-1. Take a look at the pipeline to see what it does.
+8. Check out your pipeline, and then select **Save and run** to see the pipeline in action.
 
-1. After you've looked at what the pipeline does, select **Save and run** to see the pipeline in action.
+9. Select **Save and run**, after which you're prompted for a commit message because the *azure-pipelines.yml* file gets added to your repository. After editing the message, select **Save and run** again.
 
-1. Select **Save and run**, after which you're prompted for a commit message because Azure Pipelines added the *azure-pipelines.yml* file to your repository. After editing the message, select **Save and run** again.
-
-> You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [PHP Azure Pipelines template](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/php.yml).
+We automatically created this pipeline because your code appeared to be a good match for the [PHP Azure Pipelines template](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/php.yml).
 
 ## Edit the pipeline
 

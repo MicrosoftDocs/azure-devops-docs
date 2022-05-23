@@ -1,21 +1,20 @@
-﻿---
+---
 title: Wiki files, structure, and conventions
 titleSuffix: Azure DevOps 
 description: Understand the file conventions of the Git repository and project wikis in Azure DevOps.
 ms.technology: devops-collab
 ms.custom: wiki, contperf-fy21q4
-ms.topic: conceptual
-ms.assetid:
+ms.topic: conceptual 
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 05/20/2022  
+ms.date: 05/23/2022  
 ---
 
 # Wiki files and file structure
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn about the files and file structure for project wikis and code wikis. The following guidance might specify code wikis, however it applies to both types of wiki.
 

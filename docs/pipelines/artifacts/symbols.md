@@ -3,19 +3,21 @@ title: Publish symbols with Azure Pipelines
 ms.custom: seodec18, contperf-fy22q1
 description: How to publish symbols to Azure Artifacts symbol server
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
-ms.date: 11/18/2021
-monikerRange: '> tfs-2015'
+ms.date: 04/08/2022
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Publish symbols for debugging
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol server using the *Index sources and publish symbols* task. You can use the debugger to connect and automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. Using Azure Pipelines, you can also publish your symbols to files shares and portable PDBs.
 
 > [!NOTE]
 > The **Index sources and publish symbols** task is not supported in release pipelines.
+
+::: moniker range="azure-devops"
 
 ## Publish symbols to Azure Artifacts symbol server
 
@@ -31,13 +33,7 @@ To publish your symbols to Azure Artifacts symbols server, you can use the *Inde
 
     :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
 
-::: moniker range=">= tfs-2018"
 - **Task version**: **2.\\***.
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-- **Task version**: **1.\\***.
-::: moniker-end
 
 - **Display name**: task display name.
 
@@ -51,6 +47,8 @@ To publish your symbols to Azure Artifacts symbols server, you can use the *Inde
     - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
 
 - **Verbose logging**: check to include more information in your logs.
+
+::: moniker-end
 
 ## Publish symbols to a file share
 
@@ -66,13 +64,7 @@ Aside from Azure Artifacts symbol server, you can also publish your symbols to a
 
     :::image type="content" source="media/publish-to-file-share.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to a file share":::
 
-::: moniker range=">= tfs-2018"
 - **Task version**: **2.\\***.
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-- **Task version**: **1.\\***.
-::: moniker-end
 
 - **Display name**: task display name.
 
@@ -87,6 +79,8 @@ Aside from Azure Artifacts symbol server, you can also publish your symbols to a
     - **Path to publish symbols**: the file share that will host your symbols.
 
 - **Verbose logging**: check to include more information in your logs.
+
+::: moniker range="azure-devops"
 
 ## Publish portable PDBs to Azure Artifacts symbol server
 
@@ -136,7 +130,6 @@ The next step is to modify the build task in your pipeline to invoke Source Link
 
     :::image type="content" source="../../artifacts/symbols/media/build-solution-task-classic.png" alt-text="MSBuild arguments in the build solution task":::
 
-
 ### Set up the publish task
 
 The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. Because we are using the **Visual Studio build** task to index our source, we will disable indexing in the publish task.
@@ -151,18 +144,14 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 
     :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="Screenshot showing how to configure the publish task to publish symbols to Azure Artifacts symbol server":::
 
-::: moniker range=">= tfs-2018"
 - **Task version**: **2.\\***.
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-- **Task version**: **1.\\***.
-::: moniker-end
 
 - **Index sources**: Uncheck to disable indexing. Indexing is done during build. See the [previous step](#set-up-the-publish-task) for more details.
 
 - **Publish symbols**: indicates whether to publish the symbol files. 
     - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
+
+::: moniker-end
 
 ## Set up Visual Studio
 
@@ -188,7 +177,6 @@ Before starting to consume our symbols from Azure Artifacts symbol server, let's
 > [!IMPORTANT]
 > To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
 
-
 ## FAQs
 
 ### Q: How long symbols are retained for?
@@ -206,46 +194,3 @@ A: This is not possible at the moment. Source indexing is not currently supporte
 - [Debug with WinDbg](../../artifacts/symbols/debug-with-symbols-windbg.md).
 - [Index Sources & Publish Symbols task](../tasks/build/index-sources-publish-symbols.md).
 - [Configure retention policies](../policies/retention.md).
-
-<!-- 
-
-### Advanced usage: overriding at debug time
-
-The mapping information injected into the .pdb files contains variables that can be overridden at debugging time. Overriding the variables might be required if the collection URL has changed. When you're overriding the mapping information, the goals are to construct:
-
-* A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
-
-* A location (SRCSRVTRG) where the debugger can find the retrieved source file.
-
-  The mapping information might look something like the following:
-
-```
-SRCSRV: variables ------------------------------------------
-TFS_EXTRACT_TARGET=%targ%\%var5%\%fnvar%(%var6%)%fnbksl%(%var7%)
-TFS_EXTRACT_CMD=tf.exe git view /collection:%fnvar%(%var2%) /teamproject:"%fnvar%(%var3%)" /repository:"%fnvar%(%var4%)" /commitId:%fnvar%(%var5%) /path:"%var7%" /output:%SRCSRVTRG% %fnvar%(%var8%)
-TFS_COLLECTION=http://SERVER:8080/tfs/DefaultCollection
-TFS_TEAM_PROJECT=93fc2e4d-0f0f-4e40-9825-01326191395d
-TFS_REPO=647ed0e6-43d2-4e3d-b8bf-2885476e9c44
-TFS_COMMIT=3a9910862e22f442cd56ff280b43dd544d1ee8c9
-TFS_SHORT_COMMIT=3a991086
-TFS_APPLY_FILTERS=/applyfilters
-SRCSRVVERCTRL=git
-SRCSRVERRDESC=access
-SRCSRVERRVAR=var2
-SRCSRVTRG=%TFS_EXTRACT_TARGET%
-SRCSRVCMD=%TFS_EXTRACT_CMD%
-SRCSRV: source files ---------------------------------------
-C:\BuildAgent\_work\1\src\MyApp\Program.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/Program.cs*TFS_APPLY_FILTERS
-C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/SomeHelper.cs*TFS_APPLY_FILTERS
-```
-
- The preceding example contains two sections: the variables section and the source files section. The information in the variables section can be overridden. The variables can use other variables, and can use information from the source files section.
-
- To override one or more of the variables while debugging with Visual Studio, create an .ini file ```%LOCALAPPDATA%\SourceServer\srcsrv.ini```. Set the content of the .ini file to override the variables. For example:
-
-```ini
-[variables]
-TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
-``` 
-
--->

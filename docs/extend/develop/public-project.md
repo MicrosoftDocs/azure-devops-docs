@@ -6,14 +6,14 @@ ms.technology: devops-ecosystem
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.author: apawast
-author: apawast
+ms.author: chcomley
+author: chcomley
 ms.date: 06/02/2020
 ---
 
 # Public project support by Azure DevOps Services extensions
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Before public project support, all Azure DevOps Services projects were private. Private projects only authenticated users with access to the project, so the public couldn't see or interact with it. A public project allows non-member users to view the contents of that project in a read-only state. 
 
