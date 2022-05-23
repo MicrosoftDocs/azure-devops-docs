@@ -8,7 +8,7 @@ ms.technology: devops-new-user
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/07/2022
+ms.date: 05/23/2022
 ---
 
 # What is Azure DevOps?
@@ -35,7 +35,11 @@ You can also use the following collaboration tools:
 
 Azure DevOps supports adding extensions and integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
-Azure DevOps Services supports integration with GitHub.com and GitHub Enterprise Server repositories. Azure DevOps Server supports integration with GitHub Enterprise Server repositories. For more information, see the [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md).
+Azure DevOps *Services* supports integration with GitHub.com and GitHub Enterprise Server repositories. 
+
+Azure DevOps *Server* supports integration with GitHub Enterprise Server repositories. 
+
+For more information, see the [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md).
 
 ## Choose Azure DevOps Services
 
