@@ -45,7 +45,7 @@ See the following articles for setting more user preferences:
 
 ::: moniker-end
 
-[!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled.md)]
+[!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled-new-account.md)]
 
 ::: moniker range="azure-devops"
 
@@ -64,7 +64,7 @@ See the following articles for setting more user preferences:
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-[!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled.md)]
+[!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled-new-account.md)]
 
 1. To change the user preferences, open the user profile menu, and then select **My profile**.
 
