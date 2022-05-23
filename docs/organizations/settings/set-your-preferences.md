@@ -33,7 +33,7 @@ See the following articles for setting other user preferences:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 On the Azure DevOps user profile page, you can change the user picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
 
@@ -60,11 +60,7 @@ See the following articles for setting more user preferences:
 
 ::: moniker-end
 
-
-
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
-
-[!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled-new-account.md)]
 
 1. To change the user preferences, open the user profile menu, and then select **My profile**.
 
@@ -88,7 +84,11 @@ See the following articles for setting more user preferences:
 
 ::: moniker-end
 
-::: moniker range="tfs-2018" 
+::: moniker range="tfs-2018"
+
+On your user profile page, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences.
+
+Other tools for setting your Azure DevOps preferences include [Notifications](../../notifications/manage-your-personal-notifications.md) to add or review subscriptions to event changes.
 
 1. To change the user preferences, open the user profile menu.
 
