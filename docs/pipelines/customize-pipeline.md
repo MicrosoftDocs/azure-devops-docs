@@ -45,7 +45,7 @@ Examine the contents of the YAML file.
         mavenPomFile: 'pom.xml'
         mavenOptions: '-Xmx3072m'
         javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.8'
+        jdkVersionOption: '1.11'
         jdkArchitectureOption: 'x64'
         publishJUnitResults: false
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
