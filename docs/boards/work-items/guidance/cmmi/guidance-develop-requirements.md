@@ -13,7 +13,7 @@ ms.date: 10/28/2021
 
 # Develop requirements in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 Requirements describe what the stakeholders expect from the product. Express your requirements in terms that allow them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain. Requirements shouldn't discuss or depend on the implementation. Requirements include not only the behavioral and quality of service expectations of the users but also statutory constraints and commercial standards.  
   

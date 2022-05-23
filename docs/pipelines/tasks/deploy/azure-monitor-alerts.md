@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Azure Monitor Alerts task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to configure alerts on available metrics for an Azure resource.
 

@@ -14,14 +14,14 @@ monikerRange: 'azure-devops'
 
 # Recover your deleted organization in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 After you delete your organization, it's disabled but available for 28 days. If you change your mind during this time, you can recover your organization. After 28 days, your organization and data are permanently deleted.
 
 ## Prerequisites
 
 * An organization deleted within the last 28 days.
-* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/look-up-organization-owner.md)
 
 ## Recover organization
 

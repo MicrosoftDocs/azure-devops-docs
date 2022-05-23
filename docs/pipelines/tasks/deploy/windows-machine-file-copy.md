@@ -7,19 +7,19 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Windows Machine File Copy task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy application files and other artifacts such as
 PowerShell scripts and PowerShell-DSC modules that are required to 
 install the application on Windows Machines. It uses RoboCopy, the 
 command-line utility built for fast copying of data.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -37,7 +37,7 @@ command-line utility built for fast copying of data.
 
 |               Argument                |                                                                                                                                                                                                                                                                                     Description                                                                                                                                                                                                                                                                                      |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|              **Source**               |                                                                                                 The path to the files to copy. Can be a local physical path such as `c:\files` or a UNC path such as `\\myserver\fileshare\files`. You can use pre-defined system variables such as `$(Build.Repository.LocalPath)` (the working folder on the agent computer), which makes it easy to specify the location of the build artifacts on the computer that hosts the automation agent.                                                                                                  |
+|              **Source**               |                                                                                                 The path to the files to copy. Can be a local physical path such as `c:\files` or a UNC path such as `\\myserver\fileshare\files`. You can use predefined system variables such as `$(Build.Repository.LocalPath)` (the working folder on the agent computer), which makes it easy to specify the location of the build artifacts on the computer that hosts the automation agent.                                                                                                  |
 |             **Machines**              |                                                                            A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. Can be:<br />- The name of an <a href="/azure/azure-resource-manager/management/overview">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com, dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task.                                                                             |
 |            **Admin Login**            |                                                                                                                   The username of either a domain or a local administrative account on the target host(s).<br />- Formats such as **domain\username**, **username**, and **machine-name\username** are supported.<br />- UPN formats such as <strong>username@domain.com</strong> and built-in system accounts such as **NT Authority\System** are not supported.                                                                                                                    |
 |             **Password**              |                                                                                                                                                                                              The password for the administrative account specified above. Consider using a secret variable global to the build or release pipeline to hide the password. Example: `$(passwordVariable)`                                                                                                                                                                                              |
@@ -65,7 +65,7 @@ or an invalid path specification. For more details, see
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

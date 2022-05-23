@@ -10,6 +10,8 @@ monikerRange: ">=azure-devops-2019"
 
 # Trigger one pipeline after another (classic)
 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+
 > [!div class="op_single_selector"]
 > - [YAML pipelines](pipeline-triggers.md)
 > - [Classic pipelines](pipeline-triggers-classic.md)

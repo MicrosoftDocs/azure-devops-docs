@@ -3,15 +3,13 @@ title: Azure Spring Cloud task
 description: Learn how to use the Azure Spring Cloud task to deploy applications to Azure Spring Cloud.
 ms.topic: reference
 ms.assetid: 0C07E3BA-5197-48F7-83C9-D0D7178B6D19
-ms.author: yebronsh
-author: yevster
 ms.date: 05/05/2021
 monikerRange: 'azure-devops'
 ---
 
 # Azure Spring Cloud task
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud/) and to manage Azure Spring Cloud [deployments](/azure/spring-cloud/concept-understand-app-and-deployment).
 

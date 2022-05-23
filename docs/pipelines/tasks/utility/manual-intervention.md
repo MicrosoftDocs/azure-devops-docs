@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Manual Intervention task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task in a release pipeline to pause an active deployment within a stage,
 typically to perform some manual steps or actions, and then continue the automated deployment tasks.

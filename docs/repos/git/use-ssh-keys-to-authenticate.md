@@ -6,14 +6,14 @@ ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 12/03/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Use SSH key authentication
 
-[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the use of [Git Credential Manager](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 > [!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:

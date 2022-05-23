@@ -1,22 +1,27 @@
-﻿---
+---
 title: Use the Get command to download TFVC files/folders
 titleSuffix: Azure Repos
 description: Get files or folders under TFVC version control using the Get command
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Get command
+# Get command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Gets (downloads) either the latest version or a specified version of one or more files or folders from Team Foundation Server to the workspace. Although the **Get** command provides a different user interface than Visual Studio (see [Download (get) files from the Server](download-get-files-from-server.md)), the process is fundamentally the same.
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]

@@ -12,14 +12,15 @@ f1_keywords:
 - vs.tfc.sourcecontrol.DialogPromoteCandidates
 - vs.tfc.sourcecontrol.DialogUndoPendingChanges
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Develop code and manage pending changes
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you've changed.
 

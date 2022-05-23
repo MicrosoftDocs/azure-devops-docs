@@ -4,22 +4,21 @@ titleSuffix: Azure Boards
 description: Learn about extra features, like cross-service operations, that are supported by work tracking queries in Azure Boards and Azure DevOps. 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.topic: overview
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
-ms.date: 10/26/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 
 
 # Cross-service and enhanced query operations  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Managed queries are primarily focused on listing and working with work items. However, the query capabilities also support several cross-service operations, some of which require installation of a Marketplace extension. 
 
-::: moniker range=">= tfs-2015"
 
 ## Query-based dashboard widgets 
 
@@ -33,7 +32,6 @@ Along with defining flat-list query charts that you can add to a dashboard, you 
 
 Other query-based widgets are available from the Azure DevOps Marketplace.  
 
-::: moniker-end
 
 ## Query filters used in notifications
 

@@ -8,14 +8,15 @@ ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2015'
-ms.date: 10/15/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 
 # Reorder cards on your Kanban board  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
+
 <a id="reorder-cards"></a>
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
@@ -56,12 +57,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 ::: moniker-end 
 
 
-::: moniker range="tfs-2015"
-> [!NOTE]  
-> Reordering cards is supported on TFS 2015.1 and later versions.  
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 

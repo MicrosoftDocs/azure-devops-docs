@@ -9,12 +9,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+ms.date: 01/11/2022
 ---
 
 # Rebuild the client cache
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 After certain maintenance operations, client computers require a cache refresh. After you move, restore, rename, or fail over a data-tier or application-tier server, you must refresh the cache for tracking work items and users must refresh the version control cache on client computers.  
 
@@ -31,7 +31,7 @@ You can force a rebuild of the cache on each client computer the next time it co
 
 ## Prerequisites 
   
-- To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection that you want to manage. See [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+- To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** group or the **Project Administrators** group for the project collection that you want to manage. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]  
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
@@ -56,7 +56,7 @@ The **witadmin rebuildcache** command invalidates cached data on all clients for
   
 ## Example   
 
-The following command invalidates the metadata cache for all clients that connect to DefaultCollection that is defined on the server that is named AdventureWorksServer. The client caches are updated the next time they connect to the project collection.  
+The following command invalidates the metadata cache for all clients that connect to *DefaultCollection* that is defined on the server that is named *AdventureWorksServer*. The client caches are updated the next time they connect to the project collection.  
   
 ```  
 witadmin rebuildcache /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
@@ -65,3 +65,4 @@ witadmin rebuildcache /collection:http://AdventureWorksServer:8080/tfs/DefaultCo
 ## Related articles
 
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Troubleshoot work item form caching issues](../../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md)

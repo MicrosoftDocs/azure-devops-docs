@@ -7,22 +7,22 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/03/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Stage templates
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines provide a list of stage templates you can choose from when creating a new release pipeline or adding a stage to your existing one. The templates are pre-defined with the appropriate tasks and settings to help you save time and effort when creating your release pipeline.
+Azure Pipelines provide a list of stage templates you can choose from when creating a new release pipeline or adding a stage to your existing one. The templates are predefined with the appropriate tasks and settings to help you save time and effort when creating your release pipeline.
 
-Aside from the pre-defined templates, you can also create your own custom stage templates based on your specific needs.
+Aside from the predefined templates, you can also create your own custom stage templates based on your specific needs.
 
 When a stage is created from a template, the tasks in the template are copied over to the stage. Any further updates to the template have no impact on existing stages. If you are trying to add multiple stages to your release pipeline and update them all in one operation, you should use [task groups](../library/task-groups.md) instead.
 
 > [!NOTE]
-> Templates cannot be restrict to specific users or groups. All templates, pre-defined or custom, are available to all users who have the permission to create release pipelines.
+> Templates cannot be restrict to specific users or groups. All templates, predefined or custom, are available to all users who have the permission to create release pipelines.
 
 ## Save a stage template
 

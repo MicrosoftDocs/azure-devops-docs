@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.date: 04/07/2021
 ms.author: rabououn
 author: ramiMSFT
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Artifacts storage consumption
 
-[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts free-tier plan, you get two Gibibytes (GiB) of free storage to store different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
 
