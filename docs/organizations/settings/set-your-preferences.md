@@ -23,6 +23,7 @@ You can set user preferences on the user profile page in Azure DevOps. Changes c
 > [!TIP]
 > - To change the settings for your work or school account, see [Change work or school account settings in the My Account portal](https://support.microsoft.com/account-billing/change-work-or-school-account-settings-in-the-my-account-portal-e50bfccb-58e9-4d42-939c-a60cb6d56ced).
 > - You can't change the UI theme if you're using Internet Explorer. For more information about the browsers we support, see [Azure DevOps client compatibility](/azure/devops/server/compatibility?view=azure-devops&preserve-view=true).
+> - Lanuage settings apply only to your profile page.
 
 See the following articles for setting other user preferences:
 
