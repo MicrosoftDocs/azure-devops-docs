@@ -178,7 +178,7 @@ git for-each-ref --format='%(refname)' refs/remotes | % { $_.Replace('refs/remot
 
 ### Migrate only specific revisions
 
-When not specified, git-svn clone will migrate all the revisions from first commit (r1) to HEAD. Should there any case arise, that one needs to migrate only specific set of revisions, the command for git-svn clone, should be appended with an option of -r.
+When not specified, `git-svn clone` will migrate all of the revisions from the first commit (r1) to HEAD. If you need to migrate only a specific set of revisions, the command for `git-svn clone` should be appended with an option of `-r`.
 
 For example, if you need to migrate from rev 100 to HEAD, the command looks like this:
 
