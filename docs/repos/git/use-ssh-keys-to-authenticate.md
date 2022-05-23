@@ -140,6 +140,11 @@ Associate the public key generated in the previous step with your user ID.
    
 3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
 
+   >[!NOTE]
+   > You can use the command `$ cat ~/.ssh/id_rsa.pub` to print the contents of the id_rsa.pub file in the terminal, then copy this to your clipboard.
+   > If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+   > Alternatively, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.
+   
    >[!IMPORTANT]
    >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
 
