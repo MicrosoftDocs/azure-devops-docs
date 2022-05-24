@@ -14,9 +14,9 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Variable groups store values and secrets that you might want to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group) or make available across multiple pipelines. You can share and use variables groups in multiple pipelines in the same project.
+Variable groups store values and secrets that you might want to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group) or make available across multiple pipelines. You can share and use variable groups in multiple pipelines in the same project.
 
-Variables groups are [protected resources](../security/resources.md). You can add approvals and checks to these variables and set pipeline permissions.
+Variable groups are [protected resources](../security/resources.md). You can add approvals and checks to these variables and set pipeline permissions.
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
