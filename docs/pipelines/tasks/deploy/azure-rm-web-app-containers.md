@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Azure Web App for Container task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy Web Apps, Azure Functions, and WebJobs to Azure App Services
 using a [custom Docker image](/azure/app-service/containers/tutorial-custom-docker-image).
@@ -28,7 +28,7 @@ using a [custom Docker image](/azure/app-service/containers/tutorial-custom-dock
 <tr><td><code>imageName</code><br/>Image name</td><td>(Required) Image to be used for deployment. <br/>Example: <b>myregistry.azurecr.io/nginx:latest</b></td>
 <tr><td><code>containerCommand</code><br/>Startup command</td><td>(Optional) Startup command to be executed after deployment.</td>
 <tr><td><code>appSettings</code><br/>App settings</td><td>(Optional) Application settings to be entered using the syntax &#39;-key value&#39;. Values containing spaces must be enclosed in double quotes. <br/>Example: <b>-Port 5000 -RequestTimeout 5000 -WEBSITE_TIME_ZONE &quot;Eastern Standard Time&quot;</b></td>
-<tr><td><code>configurationStrings</code><br/>Configuration settings</td><td>(Optional) Configuration strings to be entered using the syntax &#39;-key value&#39;. Values containing spaces must be enclosed in double quotes.<br/>Example: <b>-phpVersion 5.6 -linuxFxVersion: node|6.11</b></td>
+<tr><td><code>configurationStrings</code><br/>Configuration settings</td><td>(Optional) Configuration strings to be entered using the syntax &#39;-key value&#39;. Values containing spaces must be enclosed in double quotes.<br/>Example: <b>-phpVersion 5.6 -linuxFxVersion node|6.11</b></td>
 </table>
 
 ## Example

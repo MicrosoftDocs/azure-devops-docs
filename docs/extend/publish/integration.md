@@ -4,7 +4,7 @@ title: Package and Publish an Integration
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/29/2016
@@ -12,7 +12,7 @@ ms.date: 08/29/2016
 
 # Package and publish an integration to the Marketplace
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Do you have a tool, service, or product that integrates with Azure DevOps or Team Foundation Server (TFS)?
 If so, help users find it by publishing it on the Visual Studio Marketplace.

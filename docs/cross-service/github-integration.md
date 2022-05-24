@@ -14,7 +14,7 @@ ms.date: 08/31/2021
 
 # Azure DevOps and GitHub integration overview
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
 
 Azure Boards and Azure Pipelines provide several integration points with GitHub and GitHub Enterprise. 
  

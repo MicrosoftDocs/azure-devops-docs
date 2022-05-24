@@ -13,6 +13,8 @@ monikerRange: azure-devops
 
 # Download Pipeline Artifacts task
 
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
 Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
 > [!NOTE]

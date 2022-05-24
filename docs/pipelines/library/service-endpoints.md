@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 11/05/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage service connections
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -55,7 +55,7 @@ Complete the following steps to create a service connection for Azure Pipelines.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In Team Foundation Server (TFS), open the **Services** page from the "settings" icon in the top menu bar.
 1. Select **+ New service connection** and select the type of service connection you need.
@@ -95,7 +95,7 @@ Complete the following steps to edit a service connection.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 1. Select **Project settings** > **Service connections**.
@@ -130,7 +130,7 @@ Complete the following steps to manage security for a service connection.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
@@ -436,7 +436,7 @@ There's a specific service connection for [GitHub](#github-service-connection) a
 | User name | Required. The username to connect to the Git repository server. |
 | Password/Token key | Required. The password or access token for the specified username. |
 
-For more information, see [Artifact sources](../release/artifacts.md#sources).
+For more information, see [Artifact sources](../release/artifacts.md#artifact-sources).
 
 ### Generic service connection
 
@@ -463,7 +463,7 @@ Use the following parameters to define a connection to a GitHub repository.
 |   Connection name    | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 
 > [!NOTE]
-> If you select **Grant authorization** for the **Choose authorization** option, the dialog shows an **Authorize** button that opens the GitHub signin page. If you select **Personal access token**, paste it into the **Token** textbox. The dialog shows the recommended scopes for the token: **repo, user, admin:repo_hook**. For more information, see
+> If you select **Grant authorization** for the **Choose authorization** option, the dialog shows an **Authorize** button that opens the GitHub signing page. If you select **Personal access token**, paste it into the **Token** textbox. The dialog shows the recommended scopes for the token: **repo, user, admin:repo_hook**. For more information, see
 [Create an access token for command line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 Then, complete the following steps to register your GitHub account in your profile.
 
@@ -472,7 +472,7 @@ Then, complete the following steps to register your GitHub account in your profi
 3. Select **Personal access tokens**.
 4. Select **Add** and enter the information required to create the token.
 
-For more information, see [Artifact sources](../release/artifacts.md#tfvcsource).
+For more information, see [Artifact sources - version control](../release/artifacts.md#artifact-sources---version-control).
 
 ### GitHub Enterprise Server service connection
 
@@ -515,7 +515,7 @@ Use the following parameters to define a connection to the Jenkins service.
 |             User name             |                                                                                                               Required. The username to connect to the service.                                                                                                                |
 |             Password              |                                                                                                               Required. The password for the specified username.                                                                                                               |
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources](../release/artifacts.md#jenkinssource).
+For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#artifact-sources---jenkins).
 
 ### Kubernetes service connection
 
@@ -703,10 +703,10 @@ Use the following parameters when you define and secure a connection to Visual S
 Other service connection types and tasks can be installed as extensions. See the following examples of service connections available through extensions:
 
 * [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
-  Deploy on-premises TFS builds with Azure Pipelines through a TFS service connection and the **Team Build (external)** artifact, even when the TFS machine isn't reachable directly from Azure Pipelines. For more information, see [External TFS](../release/artifacts.md#onpremtfssource) and [this blog post](https://devblogs.microsoft.com/devops/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
+  Deploy on-premises TFS builds with Azure Pipelines through a TFS service connection and the **Team Build (external)** artifact, even when the TFS machine isn't reachable directly from Azure Pipelines. For more information, see [External TFS](../release/artifacts.md#artifact-sources---tfs-server) and [this blog post](https://devblogs.microsoft.com/devops/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
 * [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
-  This extension provides integration with TeamCity through a TeamCity service connection, enabling artifacts produced in TeamCity to be deployed by using Azure Pipelines. For more information, see [TeamCity](../release/artifacts.md#teamcitysource).
+  This extension provides integration with TeamCity through a TeamCity service connection, enabling artifacts produced in TeamCity to be deployed by using Azure Pipelines. For more information, see [TeamCity](../release/artifacts.md#artifact-sources---teamcity).
 
 * [System Center Virtual Machine Manager (SCVMM) Integration](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp).
   Connect to an SCVMM server to provision virtual machines and do actions on them such as managing checkpoints, starting and stopping virtual machines (VMs), and running PowerShell scripts.

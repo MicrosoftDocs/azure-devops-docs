@@ -1,7 +1,7 @@
 ---
 title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contperf-fy21q1, freshness-fy22
+ms.custom: seodec18, contperf-fy21q1, freshness-fy22, contperf-fy22q3
 description: Unlink the Azure subscription that your organization uses for billing and go back to free limits immediately.
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 01/25/2022
+ms.date: 05/03/2022
 ---
 
 # Change your organization's billing subscription
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to change the Azure subscription that your Azure DevOps organization uses for billing. You can remove your billing subscription at any time.   
 
@@ -24,7 +24,7 @@ Learn how to change the Azure subscription that your Azure DevOps organization u
 
 To change or remove your billing subscription, you need the following permissions:
 
-- [Organization Owner](../security/lookup-organization-owner-admin.md) permissions or be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md).  
+- [Organization Owner](../security/look-up-organization-owner.md) permissions or be a member of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md).  
 - [Owner or Contributor permission for an Azure subscription](add-backup-billing-managers.md), which you can use to purchase.
 
 <a id="change-subscription" />
@@ -51,7 +51,7 @@ To change or remove your billing subscription, you need the following permission
 
 > [!NOTE]
 > A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can follow either of the following two workarounds:
-> - [Create a new user account](../accounts/add-organization-users.md). Grant the user account [Owner or Contributor permission](add-backup-billing-managers.md) to the target subscription in the Azure portal. Add the user account to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) for the Azure DevOps organization. Use the new user account to link the organization to the target subscription.
+> - [Create a new user account](../accounts/add-organization-users.md). Grant the user account [Owner or Contributor permission](add-backup-billing-managers.md) to the target subscription in the Azure portal. Add the user account to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) for the Azure DevOps organization. Use the new user account to link the organization to the target subscription.
 > - Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Remove your subscription 
@@ -63,7 +63,8 @@ To change or remove your billing subscription, you need the following permission
 Your subscription gets removed from billing for your organization.
 
 > [!NOTE]
-> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD go back to the free organization limits immediately.
+> - When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD go back to the [free tier](billing-faq.yml) of service immediately. 
+> - If you delete your organization resource in the Azure Portal, do so *after* you change the billing subscription in Azure DevOps and not before, to avoid your organization reverting to the free tier of service.
 
 ## Next steps
 

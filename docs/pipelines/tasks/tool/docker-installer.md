@@ -11,7 +11,7 @@ monikerRange: '> tfs-2018'
 
 # Docker Installer task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to install a specific version of
 the Docker CLI on the agent machine.

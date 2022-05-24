@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Package: Python Twine Upload Authenticate version 0.*
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the scope of the build. This enables you to publish Python packages to feeds with `twine` from your build. 
 

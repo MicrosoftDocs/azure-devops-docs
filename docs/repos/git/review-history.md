@@ -5,14 +5,14 @@ description: Git history tools with Visual Studio and git command line tools to 
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
+ms.date: 09/28/2021
 ---
 
 # Review history
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.
@@ -32,7 +32,7 @@ In this tutorial you learn how to:
 
 Compare the changes between two versions of a file in your Git repo.
 
-#### [Browser](#tab/browser)
+#### [Browser](#tab/browser) 
 
 1. In your project, click **Repos**, and then click **Files**. 
 
@@ -61,6 +61,7 @@ Compare the changes between two versions of a file in your Git repo.
     ![View diff changes in Visual Studio](media/history/vs-diff-changes.png)
 
 #### [Command Line](#tab/command-line/)
+
 Use the `git log` command to view the commits that changed a file in your repo for your current branch.
 
 > [!div class="tabbedCodeSnippets"]
@@ -97,9 +98,11 @@ View changes between two commits using `git diff`:
 
 -   <link rel="stylesheet" href="app.cs"/>   
 +   <link rel="stylesheet" href="fabrikam.cs"/>
-</pre>
+```
 
 * * *
+
+
 ## Retrieve files
 
 Retrieve a specific version of a file from your history, even if the file was deleted or renamed in the latest version of your code.
@@ -155,6 +158,7 @@ To retrieve a previous version of a file that was deleted in a previous commit:
 an existing one, you'll need to commit your changes to add the previous version to your local branch.
 
 #### [Command Line](#tab/command-line/)
+
 Use `git log` to find the version to restore and `git checkout` or `git show` to restore the file from your history.
 
 Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](review-history.md?tabs=command-line#compare-files) above.
@@ -220,7 +224,7 @@ The output shows the deletions and additions between the two versions of the cod
 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
-> git diff users/frank/feature origin/master
+> git diff users/frank/feature origin/main
 ```
 
 > [!div class="tabbedCodeSnippets"]
@@ -253,7 +257,7 @@ You can narrow down specific file changes by specifying a file after the branch 
 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
-> git diff users/frank/feature origin/master index.html
+> git diff users/frank/feature origin/main index.html
 ```
 
----
+***

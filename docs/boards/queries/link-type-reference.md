@@ -3,19 +3,19 @@ title: Link types reference guide
 titleSuffix: Azure Boards
 description: Reference guide that describes all link types defined for Azure DevOps and Azure Boards. 
 ms.technology: devops-agile
-ms.custom: "boards-queries, cross-project, cross-org"
+ms.custom: "boards-queries, cross-project, cross-service"
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021
+ms.date: 04/01/2022
 ---
 
 
 # Reference guide for link types used in Azure DevOps and Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="link-type-guidance"></a>
 
@@ -49,7 +49,7 @@ A specific field maintains a count of links for the first three link types, such
 ::: moniker-end 
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 - [**Work link types**](#work-link-types): links work items including select test case management work items
 - [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
@@ -74,17 +74,12 @@ Each work link type defines the link labels, topology type, and restrictions tha
 
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
-::: moniker range=">= tfs-2017 < azure-devops"  
+::: moniker range="< azure-devops"  
 
 The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2015"  
-
-The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
-
-::: moniker-end  
 
 :::row:::
    :::column span="1":::
@@ -255,7 +250,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    
-   Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See [Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress).
+   Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See [Review team activities to support useful reports](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports#monitor-progress).
 
    :::column-end:::
 :::row-end:::
@@ -338,13 +333,10 @@ External link types are system-defined link types that support linking work item
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops"  
+::: moniker range="< azure-devops"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2015"  
-The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
-::: moniker-end   
 
 :::row:::
    :::column span="":::
@@ -459,22 +451,6 @@ The following table describes the external link types you can choose when adding
       Used to link a release to a work item. The system creates a link of this type when a user enables the **Report deployment status to Work** option for a release definition. To learn how to set this option, see [Release pipelines, How do I integrate and report release status?](../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status) 
    :::column-end:::
 :::row-end:::
-::: moniker range="tfs-2013"
-:::row:::
-   :::column span="":::
-      Model Link
-   :::column-end:::
-   :::column span="":::
-      Architecture Tools
-   :::column-end:::
-   :::column span="":::
-      ModelLink
-   :::column-end:::
-   :::column span="":::
-      (Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from Visual Studio Ultimate. Visual Studio Ultimate was last released in 2013. 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 :::row:::
    :::column span="":::
       Pull Request
@@ -747,11 +723,11 @@ You can create custom link types; export and import definitions of link types; a
 
 To get a list of link types, you can use one of the supported command-line tools. 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item relation list-type [--org]
@@ -833,8 +809,6 @@ The default json format provides additional information about the attributes def
 
 ::: moniker-end
 
-::: moniker range="< azure-devops" 
-
 ### `witadmin listlinktypes` 
 
 You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command-line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
@@ -881,8 +855,6 @@ Is Active: True
 
 ```
 
-::: moniker-end
-
 ### Link type attributes
 
 The following table provides descriptions for each of the link type attributes returned by **Azure Boards** CLI or the REST API.  
@@ -896,6 +868,7 @@ The following table provides descriptions for each of the link type attributes r
       **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
       Names, `name`

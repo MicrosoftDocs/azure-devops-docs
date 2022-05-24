@@ -13,7 +13,7 @@ ms.date: 10/07/2021
 
 # Validation and import processes
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 This article walks you through the preparation that's required to get an import to Azure DevOps Services ready to run. If you encounter errors during the process, see [Troubleshoot import and migration errors](migration-troubleshooting.md).
 
@@ -69,11 +69,15 @@ You run the validation by using the data migration tool. To start, [download the
 	> [!Important]
     > The data migration tool *does not* edit any data or structures in the collection. It reads the collection only to identify issues. 
 
-5.	After the validation is complete, you can view the log files and results. 
+1.	After the validation is complete, you can view the log files and results. 
 
 	![Screenshot of the validation results and logs in the Command Prompt window.](media/migration-import/tfsmigratorConsole.png)
 
+    During validation, you'll receive a warning if some of your pipelines contain per-pipeline retention rules. Azure DevOps Services uses a [project-based retention model](../pipelines/policies/retention.md?view=azure-devops&preserve-view=true) and _doesn't_ support per-pipeline retention policies. If you proceed with the migration, the policies won't be carried over to the hosted version. Instead, the default project-level retention policies will apply. Retain builds important to you, to avoid their loss.
+
 After all the validations pass, you can move to the next step of the import process. If the data migration tool flags any errors, you need to correct them before you proceed. For guidance on correcting validation errors, see [Troubleshoot import and migration errors](migration-troubleshooting.md). 
+
+
 
 ### Import log files  
 
@@ -563,6 +567,9 @@ Your team is now ready to begin the process of running an import. We recommend t
 
 > [!NOTE]
 > Azure administrators can prevent users from creating new Azure DevOps organizations. If the Azure AD tenant policy is turned on, your import will fail to finish. Before you begin, verify that the policy isn't set or that there is an exception for the user that is performing the migration. For more information, see [Restrict organization creation via Azure AD tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+
+> [!NOTE]
+> Azure DevOps Services does not support per-pipeline retention policies, and they will not be carried over to the hosted version.
 
 ### Considerations for rollback plans
 

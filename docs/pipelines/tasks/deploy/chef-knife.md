@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Chef Knife task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run scripts with Knife commands on your Chef workstation.
 

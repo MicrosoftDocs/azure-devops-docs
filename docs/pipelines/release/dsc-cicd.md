@@ -4,14 +4,14 @@ ms.custom: seodec18
 description: How to build a Continuous Integration and Continuous Deployment pipeline with DSC
 ms.topic: conceptual
 ms.date: 07/10/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Building a Continuous Integration and Continuous Deployment pipeline with DSC
 
-[!INCLUDE [version-tfs-2017](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -96,7 +96,7 @@ client computer, do so now by running the following git command:
 git clone https://github.com/PowerShell/Demo_CI
 ```
 
-:::moniker range="< azure-devops-2019"
+:::moniker range="tfs-2018"
 
 1. On your client computer, navigate to your TFS server in a web browser.
 

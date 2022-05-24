@@ -1,17 +1,18 @@
 ---
-title: Git repository settings
+title: Set Git repository settings
 titleSuffix: Azure Repos
-description: Learn about settings you can set for a Git repository  
+description: Learn how to configure a Git repository and its branches.   
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
-ms.topic: conceptual
-ms.date: 12/13/2021
-monikerRange: '>= tfs-2017' 
+ms.topic: how-to
+ms.custom: cross-service
+monikerRange: '<= azure-devops' 
+ms.date: 03/31/2022
 ---
 
-# Git repository settings and policies
+# Set Git repository settings and policies
 
-[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 
@@ -33,10 +34,11 @@ There are several ways to customize your Azure Repos Git repositories by using b
 
 ## Summary of all repository and branch settings and policies
 
-You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. With Azure CLI, you use [az repos policy](/cli/azure/repos/policy).
+You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. 
 
-::: moniker range="< azure-devops-2020"
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker range="azure-devops"
+> [!NOTE]   
+> You can set several branch settings and policies with the Azure CLI using [az repos policy](/cli/azure/repos/policy).
 ::: moniker-end
 
 The following tables summarize the settings and policies you can enable and configure for Git repositories and branches.
@@ -82,7 +84,7 @@ The following table summarizes the settings you can enable and configure for all
 :::row-end:::
 ::: moniker-end
 
-### Repository Settings
+### Repository settings
 
 The following table summarizes the settings you can enable or configure for each individual Git repository. 
 
@@ -99,7 +101,7 @@ The following table summarizes the settings you can enable or configure for each
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="2":::
       [Gravatar images](#gravatar-images)
@@ -215,6 +217,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ### Repository policies or options
 
 The following table summarizes the policies or options you can set for either all or individual repositories. Policies set for **All Repositories** set the default for individual repositories added at a later date.
@@ -409,14 +412,19 @@ The following table summarizes the policies you can define to customize a branch
 
 ## Prerequisites 
 
-- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 
 ::: moniker range=">= azure-devops-2020"
-
-- If you want to use [az repos](/cli/azure/repos?view=azure-cli-latest&preserve-view=true) Azure DevOps CLI commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
+- If you want to use **az repos** commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+::: moniker-end
+ 
+::: moniker range="< azure-devops-2020"
+- To configure policies, you must be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. To learn more, see [Set Git repository permissions](set-git-repository-permissions.md).
 ::: moniker-end
 
+
 <a name="view-and-edit-repository-settings"></a>
+
 ## View and edit settings and policies
 
 You can configure *settings* for all repositories across an organization or project, or for individual repositories. You can configure *policies* for all repositories, for individual repositories, or for specified branches across repositories. For information about setting branch policies, see [Branch policies](branch-policies.md).
@@ -478,29 +486,139 @@ To configure repository settings and policies through the web portal, open **Pro
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-1. From your web browser, open the project and choose the gear icon, **Version Control**, and select your repository.
-
-   ![Screenshot that shows the 'Version Control' options for your repository.](media/repository-settings/project-repository-settings-prev-nav.png)
-
-2. Select **Options** to view and configure your repository settings.
-
-   ![Screenshot that shows the options UI.](media/repository-settings/repository-settings.png)
-
-::: moniker-end
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2020" 
+::: moniker range="azure-devops" 
+
+You can use Azure DevOps CLI to list respositories or show or update a repository. Also, you can list, show or update policy details for a branch or repository.
+
+[List repositories](#repos-list) &#124; [List repository details](#repos-show) &#124; [Update or rename a repository](#repos-update)  
+[List repository policies](#repos-policy-list) &#124; [List policy details](#show-policy) &#124; [Update respository policy](#update-policy)
+
 
 You can use Azure CLI to list, show, and update policies for a branch or repository, or for all repositories in a project.
 
+<a name="repos-list" />
+
+### List repositories
+
+Use [az repos list](/cli/azure/repos#az-repos-list) to list all repositories for a project. 
+
+```azurecli
+az repos list [--detect {false, true}]
+              [--org]
+              [--project]
+              [--subscription]
+```
+
+**Parameters**
+
+|Parameter|Description|
+|---------|-----------|
+|`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+
+**Example**
+
+The following command returns all Git repositories for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+
+```azurecli
+az repos list --output table
+ID                                    Name            Default Branch    Project
+------------------------------------  --------------  ----------------  --------------
+50a9df8e-5024-49d7-bf63-d3989139627e  Fabrikam Fiber  main              Fabrikam Fiber
+ac228555-ea89-4881-9ace-dfa065baf7d3  Test 1-2-3      main              Fabrikam Fiber
+0d58f562-4a10-495d-94d7-7ac61a22d7cc  Testing 1 2 3   main              Fabrikam Fiber
+30954ce5-417b-4930-b8d2-8b6cac934a34  contosoREPO     main              Fabrikam Fiber
+```
+
+
+<a name="repos-show" />
+
+### List repository details
+
+Use [az repos show](/cli/azure/repos#az-repos-show) to list information about a repository or open it in a web browser. 
+
+```azurecli
+az repos show --repository
+              [--detect {false, true}]
+              [--open]
+              [--org]
+              [--project]
+              [--subscription]
+```
+
+**Parameters**
+
+|Parameter|Description|
+|---------|-----------|
+|`repository`|Name or ID of a repository.  |
+|`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`open`|Open the repository page in your web browser.|
+|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+
+**Example**
+
+The following command lists the details of the *contosoREPO* for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+```azurecli
+az repos show --repository contosoREPO --output table
+ID                                    Name         Default Branch    Project
+------------------------------------  -----------  ----------------  --------------
+30954ce5-417b-4930-b8d2-8b6cac934a34  contosoREPO  main              Fabrikam Fiber
+```
+For more details, enter the following command: 
+
+```azurecli
+az repos show --repository contosoREPO
+{
+  "defaultBranch": "refs/heads/main",
+  "id": "30954ce5-417b-4930-b8d2-8b6cac934a34",
+  "isDisabled": false,
+  "isFork": null,
+  "name": "contosoREPO",
+  "parentRepository": null,
+  "project": {
+    "abbreviation": null,
+    "defaultTeamImageUrl": null,
+    "description": "Guidance and source control to foster a vibrant ecosystem for Fabrikam Fiber applications and extensions.",
+    "id": "56af920d-393b-4236-9a07-24439ccaa85c",
+    "lastUpdateTime": "2021-05-24T21:52:14.95Z",
+    "name": "Fabrikam Fiber",
+    "revision": 438023732,
+    "state": "wellFormed",
+    "url": "https://dev.azure.com/fabrikamprime/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c",
+    "visibility": "private"
+  },
+  "remoteUrl": "https://fabrikamprime@dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_git/contosoREPO",
+  "size": 1627,
+  "sshUrl": "git@ssh.dev.azure.com:v3/fabrikamprime/Fabrikam%20Fiber/contosoREPO",
+  "url": "https://dev.azure.com/fabrikamprime/56af920d-393b-4236-9a07-24439ccaa85c/_apis/git/repositories/30954ce5-417b-4930-b8d2-8b6cac934a34",
+  "validRemoteUrls": null,
+  "webUrl": "https://dev.azure.com/fabrikamprime/Fabrikam%20Fiber/_git/contosoREPO"
+}
+```
+
+<a name="repos-update" />
+
+### Update a repository  
+
+[!INCLUDE [az-repos-update](./includes/azure-repos-update.md)]
+
 <a name="repos-policy-list"></a>
+
 ### List policies
 
-Use [az repos policy list](/cli/azure/repos/policy#az_repos_policy_list) to list all policies for all project repositories and branches. Use the `repository-id` and `branch` parameters to list policies for specific repositories and branches.
+Use [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list) to list all policies for all project repositories and branches. Use the `repository-id` and `branch` parameters to list policies for specific repositories and branches.
 
 ```azurecli
 az repos policy list [--branch]
@@ -547,9 +665,10 @@ ID    Name                         Is Blocking    Is Enabled    Repository Id   
 ```
 
 <a name="show-policy"></a>
+
 ### Show policy details
 
-To show the details of any policy, use [az repos policy show](/cli/azure/repos/policy#az_repos_policy_show). You can get the policy ID by running `az repos policy list`.
+To show the details of any policy, use [az repos policy show](/cli/azure/repos/policy#az-repos-policy-show). You can get the policy ID by running `az repos policy list`.
 
 ```azurecli
 az repos policy show --id
@@ -588,7 +707,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ### Update policies
 
-You can use Azure CLI [az repos policy update](/cli/azure/repos/policy#az_repos_policy_update) with a policy configuration file to update policies. A policy configuration file can apply a policy across more than one scope at a time. For more information, see [Configure Git repository policies by using a configuration file](../../cli/policy-configuration-file.md). For examples of policy configuration files, see [Configurations - Create](/rest/api/azure/devops/policy/configurations/create#examples).
+You can use Azure CLI [az repos policy update](/cli/azure/repos/policy#az-repos-policy-update) with a policy configuration file to update policies. A policy configuration file can apply a policy across more than one scope at a time. For more information, see [Configure Git repository policies by using a configuration file](../../cli/policy-configuration-file.md). For examples of policy configuration files, see [Configurations - Create](/rest/api/azure/devops/policy/configurations/create#examples).
 
 ```azurecli
 az repos policy update --config
@@ -635,7 +754,7 @@ The following *policy.json* file sets the minimum reviewers policy to require th
 }
 ``` 
 
-The `az repos policy update` command line updates the minimum reviewers policy per the *policy.json* file. You can find the policy ID by using [az repos policy list](/cli/azure/repos/policy#az_repos_policy_list). The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
+The `az repos policy update` command line updates the minimum reviewers policy per the *policy.json* file. You can find the policy ID by using [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list). The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
 
 ```azurecli
 az repos policy update --config C:\policies\policy.json --id 7 --output table
@@ -648,15 +767,15 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 
 ***
 
 
 ::: moniker range=">= azure-devops-2020"
+
 <a id="default-branch-name"></a>
 
 ## Default branch name
@@ -740,7 +859,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 1. On the **Settings** tab of the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 **Gravatar images** is an individual repository setting.
 ::: moniker-end
 
@@ -919,20 +1038,20 @@ To set case enforcement policy:
 :::image type="content" source="media/repository-settings/case-enforcement.png" alt-text="Screenshot that shows the Case enforcement policy setting.":::
 
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]   
 > The **Case enforcement** policy requires TFS 2018.2 or later version.  
 ::: moniker-end
  
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="> azure-devops-2019" 
+::: moniker range="azure-devops" 
  
-You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to configure or update case enforcement policy.
+You can use Azure CLI [az repos policy case-enforcement create](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-create) and [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az-repos-policy-case-enforcement-update) to configure or update case enforcement policy.
 
 ### Create case enforcement policy
 
-Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_create) to create a case enforcement policy.
+Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-create) to create a case enforcement policy.
 
 ```azurecli
 az repos policy case-enforcement create --blocking {false, true}
@@ -956,7 +1075,7 @@ az repos policy case-enforcement create --blocking {false, true}
 
 **Example**
 
-The following example implements a required case enforcement policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az_repos_list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following example implements a required case enforcement policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az-repos-list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos policy case-enforcement create --blocking true --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
@@ -968,7 +1087,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ### Update case enforcement policy
 
-Use [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest&preserve-view=true#az_repos_policy_case_enforcement_update) to manage [Case enforcement](#case-enforcement) policy.
+Use [az repos policy case-enforcement update](/cli/azure/repos/policy/case-enforcement#az-repos-policy-case-enforcement-update) to manage [Case enforcement](#case-enforcement) policy.
 
 ```azurecli
 az repos policy case-enforcement update --id
@@ -1007,9 +1126,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 ***
 
@@ -1048,6 +1165,7 @@ To set the maximum path length policy:
 
 
 <a id="maximum-file-size"></a>
+
 ## Maximum file size policy
 
 Large files checked into Git remain in the repository indefinitely, increasing clone times and disk usage. For guidance on managing large files, see [Manage and store large files in Git](manage-large-files.md).
@@ -1067,15 +1185,15 @@ To configure **Maximum file size** policy:
 
 :::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text="Screenshot that shows the Maximum file size policy setting.":::
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]   
 > The **Maximum file size** policy requires TFS 2018.2 or later.
 ::: moniker-end 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range=">= azure-devops-2020"
-Use [az repos policy file-size create](/cli/azure/repos/policy/file-size?view=azure-cli-latest&preserve-view=true#az_repos_policy_file_size_create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
+::: moniker range="azure-devops"
+Use [az repos policy file-size create](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-update) to manage maximum file size policy.
 
 ### Create file size policy
 
@@ -1107,7 +1225,7 @@ az repos policy file-size create --blocking {false, true}
 
 **Example**
 
-The following example creates a 1 GB blocking maximum file size policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az_repos_list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following example creates a 1 GB blocking maximum file size policy in the `Fabrikam` repository. You can get the repository ID by using [az repos list](/cli/azure/repos#az-repos-list). This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos policy file-size create --blocking true --enabled true --maximum-git-blob-size 10485760 --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --use-uncompressed-size true --output table
@@ -1119,7 +1237,7 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 
 ### Update file size policy
 
-Use [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
+Use [az repos policy file-size update](/cli/azure/repos/policy/file-size#az-repos-policy-file-size-update) to manage maximum file size policy.
 
 ```azurecli
 az repos policy file-size update --id
@@ -1164,9 +1282,7 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
 
 ***
 

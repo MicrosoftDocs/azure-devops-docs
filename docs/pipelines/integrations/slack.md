@@ -1,18 +1,19 @@
 ---
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 title: Azure Pipelines with Slack
 description: Connect and monitor your pipelines in Azure Pipelines to Slack by subscribing to notifications right from Slack 
 ms.manager: bijuv
-ms.author: divais
-author: divais
+ms.author: jukullam
+author: juliakm
+ms.custom: cross-service
 ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
  
 # Azure Pipelines with Slack
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 If you use [Slack](https://slack.com), you can use the [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines) to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, 
 pending approvals and more from the app and get notifications for these events in your Slack channels.

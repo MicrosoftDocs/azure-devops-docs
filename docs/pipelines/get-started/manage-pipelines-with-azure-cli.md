@@ -7,13 +7,13 @@ ms.prod: devops
 ms.technology: devops-reference
 ms.author: sandrica
 author: silviuandrica
-monikerRange: '>= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.date: 11/12/2021
 ---
 
 # Manage your pipeline with Azure CLI
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 You can manage the pipelines in your organization using these `az pipelines` commands:
 
@@ -169,7 +169,7 @@ You can [customize your pipeline](../customize-pipeline.md) or learn more about 
 [REST API Reference: Create a build pipeline](../../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/).
 
 <!-- ENDSECTION -->
 

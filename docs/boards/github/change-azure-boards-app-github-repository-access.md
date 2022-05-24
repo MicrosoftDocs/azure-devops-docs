@@ -12,7 +12,7 @@ ms.date: 07/06/2021
 
 # Manage GitHub repository access with the Azure Boards app  
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 Once you [install the Azure Boards app for GitHub](install-github-app.md), you can change the configuration and suspend operations. You can also uninstall the app. To learn more about Azure Boards and GitHub, see [GitHub integration overview](index.md). 
 

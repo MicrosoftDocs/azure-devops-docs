@@ -3,12 +3,12 @@ title: Clone or import a pipeline
 description: Create a pipeline by cloning or importing an existing pipeline
 ms.topic: conceptual
 ms.date: 12/23/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Clone or import a pipeline
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 One approach to creating a pipeline is to copy an existing pipeline and use it as a starting point. For YAML pipelines, the process is as easy as copying the YAML from one pipeline to another. For pipelines created in the classic editor, the procedure depends on whether the pipeline to copy is in the same project as the new pipeline. If the pipeline to copy is in the same project, you can clone it, and if it is in a different project you can export it from that project and import it into your project.
 
@@ -209,12 +209,6 @@ To import a build definition, choose **+Import** from the **Build Definitions** 
 
 > [!NOTE]
 > The **Export** item is only present on the context menu if your pipeline was created in the classic editor.
-
-:::moniker-end
-
-:::moniker range="tfs-2017"
-
-This version of TFS doesn't support import/export for build definitions. For release definitions, you can import/export using the [Clone release definition (for TFS 2015 U2 and above)](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-import-export) extension.
 
 :::moniker-end
 

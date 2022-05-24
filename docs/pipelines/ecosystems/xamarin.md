@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Build and deploy Xamarin apps with a pipeline
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Get started with [Xamarin](https://dotnet.microsoft.com/apps/xamarin) and Azure Pipelines by using a pipeline to deploy a Xamarin app. You can deploy Android and iOS apps in the same or separate pipelines.  
 

@@ -3,13 +3,13 @@ title: Create target environment
 description: Collection of deployment targets useful for traceability and recording deployment history.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 10/16/2021
+ms.date: 04/26/2022
 monikerRange: '>= azure-devops-2020'
 ---
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 An environment is a collection of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
@@ -118,12 +118,18 @@ The deployment history view within environments provides the following advantage
 - View jobs from all pipelines that target a specific environment. For example, two micro-services, each having its own pipeline, are deploying to the same environment. The deployment history listing helps identify all pipelines that affect this environment and also helps visualize the sequence of deployments by each pipeline.
 
    > [!div class="mx-imgBorder"]
-   > ![Deployment history](media/environments-deployment-history.png)
+   > ![Screenshot of deployment history listing.](media/environments-deployment-history.png)
 
-- Drill down into the job details to see the list of commits and work items that were newly deployed to the environment.
+- Drill down into the job details to see the list of commits and work items that were deployed to the environment. The list of commits and work items are the new items between deployments. Your first listing will include all of the commits and the following listings will just include changes. If multiple commits are tied to the same pull request, you'll see multiple results on the work items and changes tabs.
 
    > [!div class="mx-imgBorder"]
-   > ![Commits under deployment history](media/environments-deployment-history-commits.png)
+   > ![Screenshot of commits under deployment history.](media/environment-deployment-history-changes.png)
+
+- If multiple work items are tied to the same pull request, you'll see multiple results on the work items  tab.
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of work items under deployment history.](media/environment-deployment-history-workitems.png)
+
 
 ## Security
 

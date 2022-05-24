@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 
@@ -12,7 +13,7 @@ You can use the following keyboard shortcuts from the web portal.
 
 :::row:::
    :::column span="2":::
-      ![Global shortcuts](/azure/devops/media/keyboard-shortcuts/global-shortcuts-cloud.png)  
+      ![Global shortcuts](../../media/keyboard-shortcuts/global-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/>
@@ -35,13 +36,13 @@ You can use the following keyboard shortcuts from the web portal.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 You can use the following keyboard shortcuts from the web portal.
 
 :::row:::
    :::column span="2":::
-      ![Global shortcuts](/azure/devops/media/keyboard-shortcuts/global-shortcuts.png)  
+      ![Global shortcuts](../../media/keyboard-shortcuts/global-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
       <br/><br/>

@@ -4,12 +4,11 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/14/2020
+ms.date: 04/25/2022
 ---
 
-On your VM, open an **Administrator: Windows PowerShell** console. Install IIS:
+In an elevated PowerShell command prompt window, run the following command to install IIS:
 
 ```PowerShell
-# Install IIS
 Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
 ```

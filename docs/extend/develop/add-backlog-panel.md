@@ -12,14 +12,14 @@ ms.date: 08/22/2016
 
 # Add panels on backlog pages
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Here, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 <!---
-![panel extension on the Azure DevOps Services Portfolio backlog page](../media-procedures/backlog-pane/portfolio-backlog-pane.png)
+![panel extension on the Azure DevOps Services Portfolio backlog page](../media/backlog-pane/portfolio-backlog-pane.png)
 -->
 
 ![Open panel extension on the Azure DevOps Services Stories backlog page](media/add-panel-intro-show-mapping-hello-world.png)
@@ -32,7 +32,7 @@ The custom panel opens in the same space that the mapping panel opens if it were
 There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representative of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
 
 <!---
-![backlog panel contribution point breakdown](../media-procedures/backlog-pane/backlogPaneContributionPointBreakdown.png)
+![backlog panel contribution point breakdown](../media/backlog-pane/backlogPaneContributionPointBreakdown.png)
 -->
 
 ![backlog panel contribution point breakdown](media/add-panel-show-three-types.png)
@@ -84,7 +84,7 @@ For each contribution in your extension, the manifest defines
 | registeredObjectId | Id of the object registered for the panel                                             |    
 
 
-Learn about all of the places where you can add an extension in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
+Learn about all of the places where you can add an extension in [Extensibility points](../reference/targets/overview.md).
 
 ### Scopes
 Include the [scopes](manifest.md#scopes) that your extension requires.

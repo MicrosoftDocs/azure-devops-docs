@@ -8,12 +8,13 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 01/27/2022
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # Define, capture, triage, and manage software bugs in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed quickly to support high-quality software deployments? And, how do you do make good progress on new features and address your technical debt? 
 
@@ -47,19 +48,8 @@ The following image shows the Bug work item type for the Scrum process. The Bug 
 > ![Bug work item type, form for Scrum process, Azure DevOps Server 2020 and cloud service. ](media/manage-bugs/bug-work-item-type.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 ![Bug work item type, form for Scrum process, Azure DevOps Server 2019 and earlier versions to TFS 2017.](media/manage-bugs-scrum-bug-from-ts.png)
-::: moniker-end
-
-::: moniker range="< tfs-2017"
-![Bug work item type, form for Scrum process, TFS 2013 and TFS 2015 versions.](media/scrum-bug-wi-form.png) 
-::: moniker-end
-
-
-
-::: moniker range=">= tfs-2017"
-> [!TIP]
-> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments added to the work item form.  
 ::: moniker-end
 
 
@@ -152,7 +142,6 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       [Development](#development-control) 
@@ -162,7 +151,7 @@ The Bug work item type uses some bug-specific fields. To capture both the initia
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
+
 
 
 ### Notes: 
@@ -205,7 +194,7 @@ To customize your particular process, see [Customize an inheritance process](../
 To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 To customize your particular process, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
  
@@ -320,9 +309,7 @@ You close a bug once it's verified as fixed. However, you might also close a bug
 > [!TIP]   
 > Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug. 
 
-::: moniker range=">= tfs-2017"
 It's always a good idea to describe any more details for closing a bug in the **Discussion** field to avoid future confusion as to why the bug was closed. 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -476,21 +463,6 @@ Pipelines are often defined to automatically run when a new commit occurs to a G
 ### Create or edit a work item upon a build failure
 
 If you use classic pipelines (not YAML), you can create work items on a build failure. For details, see [Build options, Create a work item on failure](../../pipelines/build/options.md). 
-<!---There is a Developer community post about it and a stack overflow workaround though
-
-### Create or edit a work item upon a test failure
-
-You can also create/edit a work item on a test failure as well.
-
-Review test results - Azure Pipelines | Microsoft Docs
-
-You can create work items on a build failure in classic Pipelines, but not in YAML :( There is a Developer community post about it and a stack overflow workaround though…
-Build options - Azure Pipelines | Microsoft Docs
-
---> 
- 
-
- 
 
 ## Monitor bug status, assignments, and trends
 
@@ -504,7 +476,6 @@ You can track the bug status, assignments, and trends using queries that you can
 -->
 
 To learn more about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).   
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -531,11 +502,11 @@ You can use Power BI to create more complex reports than what you can get from a
 
 The following reports are supported for Agile and CMMI processes.  
 
-- [Bug Status](../../report/sql-reports/bug-status-report.md)  
-- [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
-- [Reactivations](../../report/sql-reports/reactivations-report.md)  
+- [Bug Status](/previous-versions/azure/devops/report/sql-reports/bug-status-report)  
+- [Bug Trends](/previous-versions/azure/devops/report/sql-reports/bug-trends-report)  
+- [Reactivations](/previous-versions/azure/devops/report/sql-reports/reactivations-report)  
 
-These reports require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
+These reports require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
 ::: moniker-end  
 
@@ -591,6 +562,6 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 
 ### Industry resources  
 
-- [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg  
+- [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg 
 - [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff  
 

@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Browse code, download code  
 
-[!INCLUDE [temp](includes/version-public-projects.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you're viewing a public project, you're able to browse and download the code stored within the repositories, and view code-related objects such as commits, branches, and pull requests.
 

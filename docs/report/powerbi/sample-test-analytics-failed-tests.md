@@ -15,7 +15,7 @@ ms.date: 10/13/2021
 
 # Failed tests sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows the list of failed tests for a pipeline.
 

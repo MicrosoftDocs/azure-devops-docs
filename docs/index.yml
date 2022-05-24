@@ -12,7 +12,7 @@ metadata:
   ms.technology: devops-collab
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 01/25/2022
+  ms.date: 02/18/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -22,15 +22,15 @@ highlightedContent:
     # Card
     - title: What is Azure DevOps?
       itemType: overview
-      url: ./user-guide/what-is-azure-devops.md
+      url: ./user-guide/what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
     # Card
     - title: Azure DevOps Services vs. Azure DevOps Server
       itemType: overview
-      url: ./user-guide/about-azure-devops-services-tfs.md
+      url: ./user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
     # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
-      url: /azure/devops/release-notes/index
+      url: https://aka.ms/azuredevops/releasenotes
     # Card
     - title: What's new in Azure DevOps documentation? 
       itemType: whats-new 
@@ -38,7 +38,7 @@ highlightedContent:
     # Card
     - title: Get started for free
       itemType: get-started
-      url: ./user-guide/sign-up-invite-teammates.md
+      url: ./user-guide/sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
     # Card
     - title: Create your first pipeline
       itemType: get-started
@@ -194,99 +194,73 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Additional services
-      items:
-        # Card
-        - title: Navigation & search 
-          links:
-            - url: ./user-guide/services.md
-              text: Features & services
-            - url: ./project/navigation/index.md
-              text: Web portal navigation
-            - url: ./project/search/get-started-search.md
-              text: Search
-            - url: ./notifications/manage-your-personal-notifications.md
-              text: Manage personal notifications 
-            - url: ./user-guide/work-team-explorer.md
-              text: Team Explorer navigation
-            - url: ./user-guide/tools.md
-              text: Tools & clients
-            - url: ./organizations/security/get-started-stakeholder.md
-              text: Get started as a Stakeholder 
-            - url: ./get-started/index.yml
-              text: "See more >"
-        # Card
-        - title: Reporting
-          links:
-            - text: Dashboards, charts, reports, & widgets
-              url: ./report/dashboards/overview.md
-            - text: Widget catalog
-              url: ./report/dashboards/widget-catalog.md
-            - text: Work tracking query-based charts
-              url: ./report/dashboards/charts.md
-            - text: Connect to Power BI data connector
-              url: ./report/powerbi/data-connector-connect.md
-            - text: What are Analytic views?
-              url: ./report/powerbi/what-are-analytics-views.md
-            - url: ./report/index.yml
-              text: "See more >"
-        # Card
-        - title: Cross-service, Wikis, Public Projects
-          links:
-            - text: Cross-service integration and collaboration overview 
-              url: ./cross-service/cross-service-overview.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json   
-            - text: End-to-end traceability
-              url: ./cross-service/end-to-end-traceability.md
-            - text: Work across projects
-              url: ./project/navigation/work-across-projects.md  
-            - text: Create a wiki for your project
-              url: ./project/wiki/wiki-create-repo.md
-            - text: Syntax guidance for Markdown usage in Wiki
-              url: ./project/wiki/wiki-markdown-guidance.md
-            - text: "See more >"
-              url: ./project/index.yml
-        # Card
-        - title: GitHub integration
-          links:
-            - url: ./cross-service/github-integration.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
-              text: GitHub integration 
-            - url: ./boards/github/connect-to-github.md
-              text: Azure Boards & GitHub
-            - url: ./pipelines/create-first-pipeline.md
-              text: Azure Pipelines & GitHub
-            - url: /azure/devops-project/azure-devops-project-github
-              text: Azure DevOps Projects & GitHub
-            - url: /visualstudio/version-control/git-with-visual-studio
-              text: Git experience in Visual Studio
     - title: Configure & customize resources
       items:    
         # Card
-        - title: Settings, Security, & Usage
+        - title: Settings & Usage
           links:
-            - text: Get started with permissions, access, and security groups
-              url: ./organizations/security/about-permissions.md
-            - text: Security quick reference index
-              url: ./organizations/security/quick-reference-index-security.md
-            - text: Access levels
-              url: ./organizations/security/access-levels.md
-            - text: Billing  
-              url: ./organizations/billing/overview.md
+            - text: About settings
+              url: ./organizations/settings/about-settings.md
+            - text: Manage your project
+              url: ./user-guide/project-admin-tutorial.md
             - text: User preferences
               url: ./organizations/settings/set-your-preferences.md
-            - text: Organizations
-              url: ./organizations/accounts/organization-management.md
-            - text: Projects
-              url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Teams 
               url: ./organizations/settings/about-teams-and-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
-            - text: Repos, pipelines, & test
+            - text: Projects
+              url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
+            - text: Public projects
+              url: ./organizations/public/about-public-projects.md
+            - text: Organizations
+              url: ./organizations/accounts/organization-management.md
+            - text: Pipeline agent pools & queues 
               url: ./pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
-            - text: Notifications
-              url: ./notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Auditing
               url: ./organizations/audit/azure-devops-auditing.md
+            - text: See more >
+              url: ./organizations/index.yml 
+        # Card
+        - title: Security, Permissions, & Access 
+          links:
+            - text: About permissions, access, and security groups
+              url: ./organizations/security/about-permissions.md
+            - text: About access levels
+              url: ./organizations/security/access-levels.md
+            - text: Use personal access tokens
+              url: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md
+            - text: Security quick reference index
+              url: ./organizations/security/quick-reference-index-security.md
+            - text: Billing overview
+              url: ./organizations/billing/overview.md
+            - text: Add or remove users or groups 
+              url: ./organizations/security/add-remove-manage-user-group-security-group.md
+            - text: Change project-level permissions
+              url: ./organizations/accounts/organization-management.md
+            - text: Change project collection-level permissions
+              url: ./organizations/accounts/organization-management.md
+            - text: See more >
+              url: ./organizations/security/index.yml 
+        # Card
+        - title: Cross-service, Azure, & GitHub Integration 
+          links:
+            - text: Cross-service integration overview 
+              url: ./cross-service/cross-service-overview.md 
+            - text: End-to-end traceability
+              url: ./cross-service/end-to-end-traceability.md 
+            - text: Azure DevOps and GitHub integration  
+              url: ./cross-service/github-integration.md   
+            - text: Deploy to Azure
+              url: ./pipelines/overview-azure.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json 
+            - text: Work across projects
+              url: ./project/navigation/work-across-projects.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json 
+            - text: Create a public project
+              url: ./organizations/public/create-public-project.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json    
+            - text: Azure Boards & GitHub
+              url: ./boards/github/connect-to-github.md?toc=/azure/devops/cross-service/toc.json&bc=/azure/devops/cross-service/breadcrumb/toc.json
+            - text: See more >
+              url: ./cross-service/index.yml
           # Card
-        - title: Azure Boards customization
+        - title: Azure Boards Customization
           links:
             - text: Configure & customize Azure Boards
               url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
@@ -302,8 +276,40 @@ additionalContent:
               url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
             - text: Process templates
               url: ./reference/process-templates/overview-process-template-files.md 
+            - text: See more >
+              url: ./reference/index.yml 
+    - title: Additional services
+      items:
         # Card
-        - title: Marketplace & extensibility
+        - title: Analytics & Reporting
+          links:
+            - text: Dashboards, charts, reports, & widgets
+              url: ./report/dashboards/overview.md
+            - text: Widget catalog
+              url: ./report/dashboards/widget-catalog.md
+            - text: Work tracking query-based charts
+              url: ./report/dashboards/charts.md
+            - text: Azure DevOps and Power BI  
+              url: ./report/powerbi/overview.md
+            - text: What are Analytic views?
+              url: ./report/powerbi/what-are-analytics-views.md
+            - text: See more >
+              url: ./report/index.yml
+        # Card
+        - title: Wikis, Search, & Navigation
+          links:
+            - text: Create a wiki for your project
+              url: ./project/wiki/wiki-create-repo.md
+            - text: Syntax guidance for Markdown usage in Wiki
+              url: ./project/wiki/wiki-markdown-guidance.md
+            - text: Search
+              url: ./project/search/get-started-search.md
+            - text: Web portal navigation
+              url: ./project/navigation/index.md
+            - text: See more >
+              url: ./project/index.yml
+        # Card
+        - title: Marketplace & Extensibility
           links:
             - text: Discover extensions
               url: ./marketplace/overview.md
@@ -313,18 +319,32 @@ additionalContent:
               url: ./integrate/index.md
             - text: Service hooks
               url: ./service-hooks/overview.md
+            - text: See more >
+              url: ./marketplace-extensibility/index.yml
         # Card
         - title: Developer resources
           links:
-            - text: Command line interface
+            - text: Azure DevOps CLI 
               url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
             - text: Azure DevOps CLI quick reference
               url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            - text: Git command reference
+              url: ./repos/git/command-prompt.md 
+            - text: Team Foundation version control commands
+              url: ./repos/tfvc/use-team-foundation-version-control-commands.md 
+            - text: Test case management (TCM) commands
+              url: ./test/test-case-managment-reference.md 
             - text: Azure DevOps Services Demo Generator
               url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
             - text: REST APIs
               url: /rest/api/vsts/
             - text: DevOps resource center
-              url: /azure/devops/learn/
+              url: /devops
+            - text: See more >
+              url: ./dev-resources/index.yml
+
+
   # footer (optional)
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [Twitter](https://twitter.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"
+
+ 

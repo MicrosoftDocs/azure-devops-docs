@@ -12,6 +12,6 @@ monikerRange: '<= azure-devops'
 
 # Use Visual Studio with Git
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 See [the Git overview](../../repos/git/index.yml).

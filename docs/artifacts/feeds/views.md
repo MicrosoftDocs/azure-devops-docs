@@ -4,13 +4,13 @@ description: How to use feed views to share your packages
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/07/2021
-monikerRange: '>= tfs-2017'
+ms.date: 04/07/2022
+monikerRange: '<= azure-devops'
 ---
  
 # Use feed views to share packages
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Feed views are a way to enable users to share some packages while keeping other packages private. Views filter the feed to a subset of packages that meet a set of criteria defined by that view.
 
@@ -28,7 +28,7 @@ With Azure Artifacts, you can promote packages to a specific to only share a sub
 
 1. Select **Promote**.
 
-    :::image type="content" source="media/release-views-promote.png" alt-text="Screenshot showing how to promote a package to a view.":::
+    :::image type="content" source="media/promote-package.png" alt-text="A screenshot showing how to promote a package to a view.":::
 
 1. Select a view from the dropdown menu, and then select **Promote**.
 
@@ -55,7 +55,7 @@ In addition to using the Azure Artifacts user interface, you can also promote pa
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation#jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
 - **Python**:
    
@@ -81,21 +81,27 @@ In addition to using the Azure Artifacts user interface, you can also promote pa
 
 You can create your own views or rename and delete existing ones from your feed's settings.
 
+> [!NOTE]
+> All feed views in a public project are accessible to everyone on the internet.
+
 1. Select **Artifacts**.
 
 1. Select your feed from the dropdown menu.
 
 1. Select the gear icon :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to access your feed's settings.
 
-    :::image type="content" source="../media/editfeed-azure-devops-newnav.png" alt-text="Screenshot showing how to access the feed's settings.":::
+    :::image type="content" source="../media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings.":::
 
 1. Select **Views**.
 
-    :::image type="content" source="./media/feed-settings-views.png" alt-text="Screenshot showing views settings.":::
+    :::image type="content" source="./media/views-settings.png" alt-text="A screenshot showing how to navigate to views.":::
 
 1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
 
 1. Select **Save** when you are done.
+
+> [!IMPORTANT]
+> For public feeds, if you change the access permissions of a certain view to **Specific people** your view will not be available as an upstream source.
 
 ## Related articles
 

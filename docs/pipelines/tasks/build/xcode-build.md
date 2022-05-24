@@ -6,12 +6,12 @@ ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016
-monikerRange: '>= tfs-2015 <= tfs-2018'
+monikerRange: 'tfs-2018'
 ---
 
 # Xcode Build task
 
-**[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-eq-2018](../../../includes/version-eq-2018.md)]
 
 Use this task to build an Xcode workspace on macOS.
 
@@ -258,11 +258,5 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]
-
-::: moniker range="< azure-devops"
-
-[!INCLUDE [temp](../../includes/qa-versions.md)]
-
-::: moniker-end
 
 <!-- ENDSECTION -->

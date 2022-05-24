@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)] 
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 A powerful one-click way to switch your working context from one thread of work to another is available in Visual Studio Premium and Visual Studio Ultimate with Team Foundation Server. Also, team members can easily exchange messages about proposed changes to the code. This topic illustrates these features, continuing a tutorial that follows members of a fictitious agile team for a day.
 

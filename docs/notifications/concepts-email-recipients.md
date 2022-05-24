@@ -7,12 +7,12 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 01/06/2022
-monikerRange: '>= tfs-2017'
+ms.date: 04/13/2022
+monikerRange: '<= azure-devops'
 ---
 # Determine recipients of notification emails
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Many factors determine the recipients of an email notification when an event matches a subscription. If you're unaware, these factors can result in your inbox receiving too many or too few emails. Learn about how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 
@@ -50,7 +50,7 @@ You can manage subscriptions and delivery settings at the team-level or organiza
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In Organization settings, select your **Team** > **Subscribers** > **Delivery settings**.
 
@@ -91,7 +91,7 @@ The following delivery options are available for a group or team subscription:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot showing email team delivery options.](media/email-team-delivery-options.png)
 
@@ -151,7 +151,7 @@ The delivery option for a default subscription is usually one or more roles. You
 
 When a team or group receives a notification, and either the subscription or delivery preference is for all members, the team must be "expanded" to determine the actual set of email recipients. This is a potentially recursive process that starts by looking at the team's direct members.
 
-Only members who have **not** opted out of the subscription get considered for the final recipient list. Any member who's an individual user or mail-enabled group gets added to the recipient list. 
+Only members who have **not** opted out of the subscription get considered for the final recipient list. Any member who's an individual user gets added to the recipient list. 
 
 Only Azure DevOps Services groups remain. For each group, the group's delivery preferences get examined:
 

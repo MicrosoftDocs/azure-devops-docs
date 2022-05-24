@@ -5,6 +5,7 @@ summary: Implement continuous integration and continuous delivery (CI/CD) for th
 
 metadata:
   title: Azure Pipelines documentation
+  titleSuffix: Azure DevOps 
   description: Configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
   ms.prod: devops 
   ms.technology: devops-cicd
@@ -136,8 +137,6 @@ landingContent:
             url: ./library/connect-to-azure.md
           - text: Deploy to Azure SQL Database
             url: ./targets/azure-sqldb.md
-          - text: Deploy to Azure using VS Code
-            url: ./targets/deploy-to-azure-vscode.md
           - text: Deploy to Azure Kubernetes Service
             url: ./ecosystems/kubernetes/aks-template.md
           - text: Use secrets from Azure Key Vault

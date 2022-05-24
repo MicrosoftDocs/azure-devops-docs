@@ -8,6 +8,8 @@ monikerRange: 'azure-devops'
 
 # Share packages publicly
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet.
 
 ## Prerequisites

@@ -5,14 +5,14 @@ ms.topic: reference
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.custom: seodec18
 ms.date: 12/15/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Pipeline options for Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -30,38 +30,18 @@ While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps project, 
 |Don't sync sources|Yes|Yes|No|No|No|
 |Shallow fetch|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
 
-::: moniker range=">= tfs-2017"
 
 > [!NOTE]
-> **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
+> Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 ## Branch
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-**TFS 2017 RTM and TFS 2015**: This field is called **Default branch**.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
 This is the branch that you want to be the default when you manually queue this build. If you set a scheduled trigger for the build, this is the branch from which your build will get the latest sources. The default branch has no bearing when the build is triggered through continuous integration (CI). Usually you'll set this to be the same as the default branch of the repository (for example, "master").
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 ## Clean the local repo on the agent
 
 [!INCLUDE [include](includes/build-clean-intro.md)]
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 > [!NOTE]
@@ -69,16 +49,16 @@ This is the branch that you want to be the default when you manually queue this 
 > When using self-hosted agents, depending on how your agents pools are configured, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=" < azure-devops"
 
 > [!NOTE]
 > When using self-hosted agents, depending on how your agents pools are configured, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can use [Build artifacts](../artifacts/build-artifacts.md) to share outputs of a pipeline run, stage, or job with subsequent runs, stages, or jobs.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
 #### [YAML](#tab/yaml/)
+
+:::moniker range=">=azure-devops-2019"
 
 ### Azure Pipelines, Azure DevOps Server 2019 and newer
 
@@ -120,6 +100,13 @@ steps:
 
 By default, `clean` is set to `false` but can be overridden when manually running the pipeline by checking the **Checkout clean** checkbox that is added for the runtime parameter.
 
+:::moniker-end
+
+:::moniker range="<azure-devops-2019"
+
+YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
+
+:::moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -143,40 +130,6 @@ Select one of the following options:
 
 * * *
 
-
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-### TFS 2017 RTM
-
-If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
-
-[!INCLUDE [temp](includes/build-clean-variable.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-### TFS 2015.4
-
-If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
-
-[!INCLUDE [temp](includes/build-clean-variable.md)]
-
-### TFS 2015 RTM
-
-[//]: # (TODO: clarify folder)
-
-Select **true** to delete the repository folder.
-
-[!INCLUDE [temp](includes/build-clean-variable.md)]
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
 ## Label sources
 
 [!INCLUDE [include](includes/label-sources.md)]
@@ -187,13 +140,10 @@ Some build variables might yield a value that is not a valid label. For example,
 
 After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built. The tag is considered a build artifact since it is produced by the build. When the build is deleted either manually or through a retention policy, the tag is also deleted.
 
-::: moniker-end
-
 [//]: # (TODO: confirm I got this next section right; e.g. GitHub not in TFS 2018 Update 1)
 
-::: moniker range=">= tfs-2017"
 
-## Report build status (Azure Pipelines, TFS 2017 and newer)
+## Report build status (Azure Pipelines, TFS 2018 and newer)
 
 You've got the option to give your team a view of the build status from your remote source repository.
 
@@ -204,8 +154,6 @@ If your sources are in an Azure Repos Git repository in your project, then this 
 
 If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge on the **Code** page indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
 
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 ### GitHub
@@ -214,13 +162,9 @@ If your sources are in GitHub, then this option publishes the status of your bui
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
 ### Other types of Git remote repositories
 
 If your source is in any other type of remote repository, then you cannot use Azure Pipelines or TFS to automatically publish the build status to that repository. However, you can use a [build badge](../build/options.md) as a way to integrate and show build status within your version control experiences.
-
-::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
@@ -237,16 +181,18 @@ Please note that the checkout path value cannot be set to go up any directory le
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
-
 ## Checkout submodules
 
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
 
+:::moniker range=">=azure-devops-2019"
+
 > [!NOTE]
 > For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](/azure/devops/pipelines/yaml-schema/steps-checkout).
+
+:::moniker-end
 
 The build pipeline will check out your Git submodules as long as they are:
 
@@ -258,16 +204,6 @@ The build pipeline will check out your Git submodules as long as they are:
 
   - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-> [!NOTE]
-> If you're running **TFS 2017.1, TFS 2017 RTM, or TFS 2015**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build pipeline. In effect, the build pipeline runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 ### Authenticated submodules
 
@@ -308,17 +244,9 @@ Use that variable to populate the secret in the above Git command.
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
 ## Checkout files from LFS
 
 Select if you want to download files from [large file storage (LFS)](../../repos/git/manage-large-files.md).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 In the classic editor, select the check box to enable this option.
 
@@ -330,16 +258,6 @@ steps:
   lfs: true
 ```
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-* **TFS 2017 RTM and TFS 2015 (macOS and Linux only):** On the **Variables** tab, set `Agent.Source.Git.Lfs` to `true`.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
 If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work. If your hosted agents use Windows, consider using the `System.PreferGitFromPath` variable to ensure that pipelines use the versions of git and git-lfs you installed on the machine.
 
 ### Using Git LFS with submodules
@@ -347,8 +265,6 @@ If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent
 If a submodule contains LFS files, Git LFS must be configured prior to checking out submodules.
 The Microsoft-hosted macOS and Linux agents come preconfigured this way.
 Windows agents and self-hosted macOS / Linux agents may not.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -370,8 +286,6 @@ steps:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
-
 ## Clone a second repo
 
 By default, your pipeline is associated with one repo from Azure Repos or an external provider.
@@ -387,8 +301,6 @@ git clone https://github.com/Microsoft/TypeScript.git
 If the repo is not public, you will need to pass authentication to the Git command.
 
 ### Azure Repos
-
-::: moniker-end
 
 :::moniker range="<= azure-devops-2019"
 
@@ -424,10 +336,7 @@ AUTH=$(echo -n ":$REPO_PAT" | openssl base64 | tr -d '\n')
 git -c http.<repo URL>.extraheader="AUTHORIZATION: basic $AUTH" clone <repo URL> --no-checkout --branch master
 ```
 
-::: moniker range=">= tfs-2017"
-
-## Don't sync sources (TFS 2017 and newer only)
-
+## Don't sync sources
 Non-deployment jobs automatically fetch sources.
 Use this option if you want to skip that behavior.
 This option can be useful in cases when you want to:
@@ -438,16 +347,11 @@ This option can be useful in cases when you want to:
 
 If you want to disable downloading sources:
 
-* **Azure Pipelines, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
+* **Azure Pipelines, TFS 2018, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
 
-* **TFS 2017 RTM:** Define `Build.SyncSources` on the **Variables** and set its value to false.
 
 > [!NOTE]
 > When you use this option, the agent also skips running Git commands that clean the repo.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 ## Shallow fetch
 
@@ -462,28 +366,11 @@ In these cases this option can help you conserve network and storage resources. 
 > and you set a very small value for shallow fetch, the commit may not exist when the agent attempts
 > to check it out. If that happens, increase the shallow fetch depth setting.
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-### Azure Pipelines, TFS 2018, TFS 2017.2
 
 After you select the check box to enable this option, in the **Depth** box specify the number of commits.
 
 > [!TIP]
 > The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-### TFS 2017 RTM, TFS 2015 (macOS and Linux only)
-
-On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set its value to the number of commits in history you want to download. Specify 0 to set no limit.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 ## Prefer Git from path
 
@@ -500,8 +387,6 @@ When using an Other/external Git repository, CI builds require that the reposito
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](includes/git-protocols.md)]
-
-::: moniker-end
 
 ::: moniker range="< azure-devops"
 [!INCLUDE [temp](../includes/qa-versions.md)]

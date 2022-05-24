@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Clean up files when users leave
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When a member leaves a team, version control administrators must correctly dispose of that member's files.
 

@@ -12,7 +12,7 @@ monikerRange: azure-devops
 
 # GitHub Release task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task in your pipeline to create, edit, or discard a [GitHub release](https://help.github.com/categories/releases/).
 
