@@ -60,7 +60,7 @@ You use the `CATEGORIES` element to group work item types. [Use categories to gr
   
   Category friendly names are not localized and cannot be made into a token, whereas the names for work item types are localized and can be made into a token.  
   
-## Azure Board tools, category requirements, and restrictions  
+## Azure Boards tools, category requirements, and restrictions  
 
  When assigning work item types to categories, consider the following operational notes:  
   
