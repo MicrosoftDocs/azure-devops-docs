@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Launch Visual Studio via Azure DevOps Services
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When you first open [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
 you can sign in and connect to [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).

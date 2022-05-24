@@ -13,7 +13,7 @@ ms.date: 09/15/2021
 
 # Customize your Kanban boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article shows how to customize a Kanban board. You have one Kanban board for each active product or portfolio backlog. 
 

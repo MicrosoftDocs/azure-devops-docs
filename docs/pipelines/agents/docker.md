@@ -9,6 +9,8 @@ monikerRange: '>= azure-devops-2019'
 
 # Run a self-hosted agent in Docker
 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+
 This article provides instructions for running your Azure Pipelines agent in Docker. You can set up a self-hosted agent in Azure Pipelines to run inside a Windows Server Core (for Windows hosts), or Ubuntu container (for Linux hosts) with Docker. This is useful when you want to run agents with outer orchestration, such as [Azure Container Instances](/azure/container-instances/). In this article, you'll walk through a complete container example, including handling agent self-update.
 
 Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`. 
@@ -127,7 +129,7 @@ Next, create the Dockerfile.
       Write-Host "3. Configuring Azure Pipelines agent..." -ForegroundColor Cyan
       
       .\config.cmd --unattended `
-        --agent "$(if (Test-Path Env:AZP_AGENT_NAME) { ${Env:AZP_AGENT_NAME} } else { ${Env:computername} })" `
+        --agent "$(if (Test-Path Env:AZP_AGENT_NAME) { ${Env:AZP_AGENT_NAME} } else { hostname })" `
         --url "$(${Env:AZP_URL})" `
         --auth PAT `
         --token "$(Get-Content ${Env:AZP_TOKEN_FILE})" `
@@ -377,7 +379,7 @@ Optionally, you can control the pool and agent work directory by using additiona
 | Environment variable | Description                                                 |
 |----------------------|-------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance. |
-| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`.    |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools), at `AZP_URL`.    |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname).          |
 | AZP_POOL             | Agent pool name (default value: `Default`).                  |
 | AZP_WORK             | Work directory (default value: `_work`).                     |
@@ -433,7 +435,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 3. Configure Container Registry integration for existing AKS clusters.
 
-   ```shell
+   ```azurecli
    az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
    ```
 

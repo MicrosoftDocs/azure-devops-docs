@@ -10,6 +10,8 @@ monikerRange: '>= azure-devops-2020'
 
 # Publish Pipeline Artifacts
 
+[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+
 Azure Artifacts enable developers to store and manage their packages and control who they want to share it with. Pipeline Artifacts are generally generated after you build your application. The output can then deployed or consumed by another job in your pipeline.
 
 ## Publish Artifacts
@@ -53,14 +55,17 @@ steps:
 
 ---
 
+::: moniker range=" azure-devops"
+
 ## Publish Artifacts from the command line
 
 If you want to manually publish your Artifact, run the following command in an elevated command prompt:
 
-
-```Command
+```azurecli
 az pipelines runs artifact upload --artifact-name your_artifact_name --path your_path_to_publish --run-id '<artifact_run_id>'
 ```
+
+::: moniker-end
 
 ## View published Artifacts
 

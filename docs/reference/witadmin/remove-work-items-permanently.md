@@ -8,13 +8,13 @@ ms.assetid: 345641a1-0c8d-4af8-84ce-37a449627a52
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops-2019'
+monikerRange: 'tfs-2018'
 ms.date: 01/11/2022
 ---
 
 # Remove work items permanently
 
-[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-eq-2018](../../includes/version-eq-2018.md)]
 
 You can permanently remove work items from the on-premises Team Foundation Server work tracking data store by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Use this command to permanently delete work items, after which you can't restore or reactivate them.  
 
@@ -31,41 +31,17 @@ To run the **witadmin** command-line tool, open a Command Prompt window where Vi
 > [!NOTE]   
 > You must use the same or later version of Visual Studio or Team Explorer as Azure DevOps Server or TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017.  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
 *Visual Studio 2017 or Team Explorer 2017 client:*
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
 or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.  
 
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-*Visual Studio 2015 client:*
-
-`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
-
-::: moniker-end
-
-::: moniker range="tfs-2013"
-
-*Visual Studio 2013 client:*
-
-`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE`
-
-*Team Explorer 2013 client:* 
-
-`cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
-
-::: moniker-end
-
 On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**. You can [install Visual Studio Community (which provides access to Team Explorer) or Visual Studio Team Explorer 2017](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) for free. 
 
 ## Prerequisites
   
--  You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
+-  You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
@@ -75,7 +51,6 @@ On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programf
 ```  
 witadmin destroywi /collection:CollectionURL /id:id [/noprompt]  
 ```  
-
 
 #### Parameters  
   

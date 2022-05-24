@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # Recommendations to secure shared infrastructure in Azure Pipelines
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 Protected resources in Azure Pipelines are an abstraction of real infrastructure.
 Follow these recommendations to protect the underlying infrastructure.
 

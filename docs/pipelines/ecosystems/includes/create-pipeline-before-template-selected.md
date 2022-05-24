@@ -4,10 +4,11 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 05/05/2022
+ms.custom: devdivchpfy22
 ---
 
-1. Sign in to your Azure DevOps organization and go to your project.
+1. Sign-in to your Azure DevOps organization and go to your project.
 
 1. Go to **Pipelines**, and then select **New pipeline**.
 

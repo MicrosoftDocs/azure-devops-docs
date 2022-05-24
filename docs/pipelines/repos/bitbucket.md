@@ -10,7 +10,7 @@ monikerRange: azure-devops
 
 # Build Bitbucket Cloud repositories
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Pipelines can automatically build and validate every pull request and commit to your Bitbucket Cloud repository. This article describes how to configure the integration between Bitbucket Cloud and Azure Pipelines.
 

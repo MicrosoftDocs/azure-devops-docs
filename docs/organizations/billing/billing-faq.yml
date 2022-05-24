@@ -1,4 +1,4 @@
-﻿### YamlMime:FAQ
+### YamlMime:FAQ
 metadata:
   title: Frequent questions about billing management
   titleSuffix: Azure DevOps
@@ -6,15 +6,14 @@ metadata:
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.technology: devops-billing
   ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 01/26/2022
-  monikerRange: '>= tfs-2015'
-    
+  ms.date: 03/07/2022
+  monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
-  [!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
   In this article, find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   
@@ -289,7 +288,7 @@ sections:
       - question: |
           Q: Why is the location of my organization resource incorrect? 
         answer: |
-          A: If you've [changed your organizations location](../accounts/change-organization-location.md) after you set up billing, the region listed in the Azure portal is the original location and not the new location. To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). To change the location listed in the Azure portal to match the actual new location of your organization, first [remove billing](change-azure-subscription.md#remove-your-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again.  
+          A: This can happen for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-region). To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). This is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, you can update the portal by [removing billing](change-azure-subscription.md#remove-your-subscription) from your organization and then [setting it up](set-up-billing-for-your-organization-vs.md) again.
           
       - question: |
           Q: Why is the name of my organization resource incorrect? 

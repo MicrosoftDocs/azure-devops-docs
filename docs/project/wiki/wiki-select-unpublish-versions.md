@@ -4,8 +4,7 @@ titleSuffix: Azure DevOps
 description: Publish or unpublish files in a Git code repository to a wiki in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.topic: conceptual
-ms.assetid:
+ms.topic: how-to
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
@@ -15,7 +14,7 @@ ms.date: 10/11/2019
 
 # Publish, unpublish, and select version of a wiki
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 When you publish a Git repository to a wiki, you can publish new branch of the repo as versions, select a version to view, or unpublish the repo.
 

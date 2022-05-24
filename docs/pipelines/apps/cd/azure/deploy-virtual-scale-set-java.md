@@ -10,6 +10,8 @@ monikerRange: 'azure-devops'
 
 # Tutorial: Deploy a Java app to a virtual machine scale set
 
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
+
 A [virtual machine scale set](/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, autoscaling virtual machines. 
 
 VMs are created as needed in a scale set. You define rules to control how and when VMs are added or removed from the scale set. These rules can be triggered based on metrics such as CPU load, memory usage, or network traffic.
@@ -90,7 +92,7 @@ Before you begin, you need:
 
 You'll need a resource group, storage account, and shared image gallery for your custom image. 
 
-1. Create a resource group with [az group create](/cli/azure/group#az_group_create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
+1. Create a resource group with [az group create](/cli/azure/group#az-group-create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
     ```azurecli-interactive
     az group create --name myVMSSResourceGroup --location eastus2

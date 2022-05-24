@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 02/24/2022
 ---
 
 <a name="get-the-status-badge"></a>
@@ -19,9 +19,11 @@ To copy the status badge to your clipboard:
 
 1. In Azure Pipelines, go to the **Pipelines** page to view the list of pipelines. Select the pipeline you created in the previous section.
 
-2. On the upper right, select **Edit** to edit the pipeline build, and then select **Options**.
+2. Select :::image type="icon" source="../../media/icons/more-actions.png":::, and then select **Status badge**.
 
-3. Copy the sample Markdown from the status badge section.
+3. Select **Status badge**.
+
+3. Copy the sample Markdown from the Sample markdown section.
 
 Now with the badge Markdown in your clipboard, take the following steps in GitHub:
 
@@ -29,7 +31,7 @@ Now with the badge Markdown in your clipboard, take the following steps in GitHu
 
 2. Paste the status badge Markdown at the beginning of the file.
 
-3. Commit the change to the `master` branch.
+3. Commit the change to the `main` branch.
 
 4. Notice that the status badge appears in the description of your repository.
 

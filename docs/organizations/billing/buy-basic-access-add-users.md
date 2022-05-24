@@ -5,16 +5,16 @@ ms.custom: seodec18, freshness-fy22
 description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/24/2022
+ms.date: 03/10/2022
 monikerRange: '<= azure-devops'
 ---
 
 # Manage paid access for users
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 We simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You get billed according to those assignments. This article helps you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
 
@@ -31,7 +31,7 @@ Visual Studio subscribers get access included with their subscription, and their
 Ensure you have the following items in place:
 
 * [Licensing is set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)
-* You have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
+* You have permissions allocated as [an organization owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md)
 
 ## Pay via Azure
 
@@ -52,7 +52,7 @@ You're entitled to the same number of user licenses to be used in the server.
 Ensure you have the following items in place:
 
 * [Billing is set up](set-up-billing-for-your-organization-vs.md) for your organization
-* You have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
+* You have permissions allocated as [an organization owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md)
 
 <a name="buy-access-vs-marketplace"></a>
 
@@ -90,6 +90,9 @@ To change the access level for new users added to projects, do the following ste
 ## Automate access with group rules
 
 Group rules provide a great way to automate access level assignment for your organization. This way, you don't have to manually assign access each time a user gets added or removed. For more information, see [Group rules](../accounts/assign-access-levels-by-group-membership.md).
+
+> [!NOTE]
+> A group rule supersedes the default access level. For instance, if a user's part of a group that's assigned Basic access level, they get Basic, even if the default access level's set to Stakeholder. The default access level applies to users who aren't part of any group rules.
 
 ## Reduce charges for users with no access
 

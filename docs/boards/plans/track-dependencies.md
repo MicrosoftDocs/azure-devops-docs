@@ -3,6 +3,7 @@ title: Track dependencies by using Delivery Plans in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to track dependencies within teams, across teams, and across projects by using Delivery Plans in Azure Boards.
 ms.technology: devops-agile
+ms.custom: cross-project  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
@@ -14,7 +15,7 @@ ms.date: 01/19/2022
 
 # Track dependencies by using Delivery Plans 
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 With Delivery Plans, you can track dependencies that have been added to work items. Dependency tracking supports the Predecessor/Successor link type between work items. The following image shows several work items that have dependencies. Those cards with a :::image type="icon" source="media/dependencies/dependency-green-icon.png" border="false"::: green icon indicate there are no dependency issues. Those cards with a :::image type="icon" source="media/dependencies/dependency-red-icon.png" border="false"::: red icon indicate there are issues with one or more dependencies. Dependency issues arise when a predecessor work item is scheduled to finish after a successor work item. 
 

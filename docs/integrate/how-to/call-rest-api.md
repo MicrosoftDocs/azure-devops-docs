@@ -13,7 +13,7 @@ ms.date: 09/13/2021
 
 # Get started with the REST APIs
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Integrate your app with Azure DevOps using these REST APIs.
 

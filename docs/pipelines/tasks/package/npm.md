@@ -6,20 +6,20 @@ ms.topic: reference
 ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
 ms.author: vijayma
 author: vijayma
-ms.date: 04/21/2020
-monikerRange: '>= tfs-2015'
+ms.date: 04/19/2022
+monikerRange: '<= azure-devops'
 ---
 
 # npm task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to install and publish npm packages.
 
 > [!NOTE]
 > The [npm Authenticate](npm-authenticate.md) task is the recommended way to authenticate with Azure Artifacts. This task no longer takes new features and only critical bugs are addressed.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -42,9 +42,9 @@ Use this task to install and publish npm packages.
 
 |Argument|Description|
 |--- |--- |
-|`command`<br/>Command| (Required) npm command to run. Select `install` here|
+|`command`<br/>Command| (Required) npm command to run. Default: install. Options: install, publish, custom, ci. |
 |`workingDir`<br/>Working folder that contains `package.json` | Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. "/packages/mypackage".|
-|`advanced` <br/>Verbose logging| Select to print more information to the console on run|
+|`verbose` <br/>Verbose logging| Boolean. Select to print more information to the console on run|
 |`customRegistries`<br/>Registries to use|You can either commit a `.npmrc` file to your source code repository and set its path or select a registry from Azure Artifacts.<br/>**useNpmrc**<br/><li>Select this option to use feeds specified in a .npmrc file you've checked into source control. If no `.npmrc` file is present, the task will default to using packages directly from npmjs. <br/><li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an npm service connection into your .npmrc as the build runs.<br/>**useFeed**<br/><li>Select this option to use one Azure Artifacts feed in the same organization/collection as the build.|
 
 ## Publish npm packages
@@ -59,7 +59,7 @@ Use this task to install and publish npm packages.
 |--- |--- |
 |`command`<br/>Command| (Required) npm command to run. Select publish here.|
 |`workingDir`<br/>Working folder that contains `package.json`| Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. "/packages/mypackage".|
-|`advanced` <br/>Verbose logging| Select to print more information to the console on run|
+|`verbose` <br/>Verbose logging| Boolean. Select to print more information to the console on run.|
 |`customRegistries`<br/>Registries to use|You can either commit a `.npmrc` file to your source code repository and set its path or select a registry from Azure Artifacts.<br/>**useNpmrc**<br/><li>Select this option to use feeds specified in a .npmrc file you've checked into source control. If no `.npmrc` file is present, the task will default to using packages directly from npmjs. <br/><li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an npm service connection into your .npmrc as the build runs.<br/>**useFeed**<br/><li>Select this option to use one Azure Artifacts feed in the same organization/collection as the build.|
 
 ## Custom npm command

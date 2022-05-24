@@ -7,14 +7,14 @@ ms.reviewer: vijayma
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
 ms.custom: "mvc, seodec18"
 ms.date: 01/15/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Continuously deploy from a Jenkins build
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -169,7 +169,20 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 
 ## See also
 
+:::moniker range=">=azure-devops-2019"
+
 * [Artifacts](artifacts.md)
 * [Stages](../process/stages.md)
 * [Triggers](triggers.md)
 * [YAML schema reference](/azure/devops/pipelines/yaml-schema)
+
+:::moniker-end
+
+:::moniker range="<azure-devops-2019"
+
+* [Artifacts](artifacts.md)
+* [Triggers](triggers.md)
+
+:::moniker-end
+
+

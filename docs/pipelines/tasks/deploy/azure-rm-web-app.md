@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Azure Web App task
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy web applications to Azure App Service.
 

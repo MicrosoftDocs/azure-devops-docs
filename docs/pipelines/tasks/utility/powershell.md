@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.custom: seodec18
 ms.date: 08/25/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # PowerShell task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run a PowerShell script.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

@@ -2,12 +2,12 @@
 title: Manage preview features
 titleSuffix: Azure DevOps Services
 description: Enable/disable or activate/deactivate features in preview at the user or organization level  
-ms.custom: Navigation
+ms.custom: "navigation, cross-project, cross-service"
 ms.technology: devops-collab
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= azure-devops-2020'
 ms.date: 01/19/2022
 ---
@@ -15,7 +15,7 @@ ms.date: 01/19/2022
 
 # Manage or enable features 
 
-[!INCLUDE [temp](../../includes/version-cloud-plus-2020.md)] 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 ::: moniker range="azure-devops"
 
@@ -24,7 +24,7 @@ As new features are introduced, you can turn them on or off. That way, you can t
 Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
 
 > [!NOTE]   
-> It may take up to three weeks after a release to Azure DevOps Services for the preview feature to appear in your organization. The [latest release notes](/azure/devops/release-notes/) usually provide information on new preview features. You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
+> It may take up to three weeks after a release to Azure DevOps Services for the preview feature to appear in your organization. The [latest release notes](/azure/devops/release-notes/features-timeline) usually provide information on new preview features. You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
 ::: moniker-end
 
@@ -81,7 +81,7 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md)  
-      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
+      [Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)  
       [New account manager](#account-manager)  
       New Artifacts (Feeds) Experience (accessbility updates)  
       [New Boards Hubs](https://devblogs.microsoft.com/devops/azure-boards-ux-modernization-public-preview/) 
@@ -129,8 +129,8 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       New Wiki experience  
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
-      [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      [Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)  
+      [Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)  
       [Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)   
       [YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)
    :::column-end:::
@@ -240,15 +240,12 @@ For information on other user settings and preferences, see [Set user preference
 When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings are not changed. Users can enable or disable the feature on their own. 
 
 > [!TIP]  
-> If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
+> If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Preview features options for the organization, part 1.](media/preview-features/org-features-s187-1.png)
 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Preview features options for the organization, part 2.](media/preview-features/org-features-s187-2.png)
-> 
+ 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
@@ -262,7 +259,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 1. Select the level from the menu provided. 
 
 	> [!TIP]  
-	> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
+	> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
 
 1. To enable or disable a feature, choose the slider. 
 
@@ -354,7 +351,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 - [Wiki](../wiki/add-edit-wiki.md)  
 - [Combine email recipients](../../notifications/manage-team-group-global-organization-notifications.md) 
-- [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
+- [New experience in Code, Work Item, & Wiki search](/previous-versions/azure/devops/2017/oct-06-vsts#code)  
 - [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
 - [Team expansion for notifications](../../notifications/manage-team-group-global-organization-notifications.md)
 

@@ -5,13 +5,15 @@ toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.technology: devops-collab
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---
 
 # Create a service hooks subscription programmatically
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 
 Using the [Subscriptions](/rest/api/azure/devops/hooks/) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.

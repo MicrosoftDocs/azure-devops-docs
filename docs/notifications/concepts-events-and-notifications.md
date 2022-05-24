@@ -8,12 +8,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 01/14/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Events, subscriptions, and notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 This article describes the different actions or operations that generate email notifications. 
 

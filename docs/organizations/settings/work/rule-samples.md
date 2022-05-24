@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops"
-ms.topic: example-scenario
+ms.topic: sample
 ms.date: 06/30/2021
 
 
@@ -15,7 +15,7 @@ ms.date: 06/30/2021
 
 # Sample custom rule scenarios  
 
-[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides examples of custom rule definitions. All custom rules are defined for a work item type. Examples are provided for both the Inherited and On-premises XML process models. 
 

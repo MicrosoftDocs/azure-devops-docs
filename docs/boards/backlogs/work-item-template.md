@@ -9,12 +9,13 @@ author: KathrynEE
 ms.topic: how-to
 ms.custom: "work-items, contperf-fy21q3"  
 monikerRange: '<= azure-devops'
-ms.date: 10/29/2021
+ms.date: 04/01/2022
 ---
 
 # Use templates to add and update work items in Azure Boards and Visual Studio
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio 2015** 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)] 
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
@@ -117,7 +118,6 @@ As shown in the following table, a ✔️ indicates the task is available from t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
       [Add or remove tags from templates](#tags)
@@ -130,7 +130,6 @@ As shown in the following table, a ✔️ indicates the task is available from t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="2":::
       [Define a template using a hyperlink](#adhoc-template) 
@@ -159,7 +158,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 - To add, capture, edit, or delete work item templates through the web portal, you must be a team administrator.   
 
 - To apply a team template, you must be a Contributor of the project and a member of the team under which the work item template is defined.   
@@ -203,7 +202,7 @@ Templates captured through the web portal are assigned a GUID.
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 Templates captured through the web portal are assigned a GUID. 
 
@@ -229,40 +228,6 @@ Templates captured through the web portal are assigned a GUID.
 
 <a id="tfs-portal-capture" /> 
 
-::: moniker range="<= tfs-2015"  
-
-If you connect to an on-premises TFS and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Choose the hyperlink, and it opens the template in the web portal. 
-
-1. From the web portal Queries page, open a new work item. 
-
-    ![Open a new work item from the web portal Work page ](media/wit-template-task.png)    
-
-2. Fill in the default values you want the template to specify. You can leave required fields empty, or place some text in them
-
-    Here, we fill in several values, including tags, but leave the Title blank. When you're done, copy the URL for the template. 
-
-    ![Define fields and choose Copy the URL](media/wit-template-task-form-tfs-copy-url.png)    
-
-3. The URL defines each predefined field, for example (line breaks added for clarity): 
-
-    ```
-    http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber/_workItems/create/Task?%5B
-   System.AssignedTo%5D=Jamal+Hartnett&%5B
-   System.Description%5D=%3Cp%3EAlways+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.%3C%2Fp%3E&%5B
-   System.Tags%5D=Web%3B+Phone%3B+Service&%5B
-   Microsoft.VSTS.Common.Activity%5D=Development&%5B
-   System.IterationPath%5D=Fabrikam+Fiber%5CIteration+1
-    ``` 
-
-    > [!TIP]  
-    > The URL won't contain defaults defined for the work item type. To specify a default field value, see [Add or modify a field](../../reference/add-modify-field.md). Also, there is a 2000 character limit imposed by some browser clients with no work around.   
-
-4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. 
-
-    You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
-
-::: moniker-end
-
 ### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-capture" />
@@ -284,8 +249,6 @@ If you primarily work in Visual Studio or Team Explorer, and want to create work
 4. Save the template and it will appear in the root of the Team Explorer pane under the Templates section.  
 
 * * *
-
-
 
 <a id="manage"> </a> 
 
@@ -316,10 +279,9 @@ You must be a member of the team to add or edit team templates.
 
 ::: moniker-end
 
-
 <a id="team-services-manage" /> 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 You manage templates from  team settings. All templates are defined for a team. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.   
 
@@ -340,7 +302,6 @@ You manage templates from  team settings. All templates are defined for a team. 
 ::: moniker-end
 
 
-
 ### Manage templates for a work item type   
 
 ::: moniker range=">= azure-devops-2019"
@@ -354,7 +315,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 - Choose the work item type to view the templates defined for each type. 
 	For example, choose User Story to view templates defined to capture user stories.
@@ -364,8 +325,6 @@ You manage templates from  team settings. All templates are defined for a team. 
 ::: moniker-end
 
 <a id="define-template" />
-
-::: moniker range=">= tfs-2017"
 
 ### Create a work item template 
 
@@ -412,13 +371,6 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 	As indicated in the confirmation dialog, you can't recover a template once it's deleted. 
 
-::: moniker-end
-
-::: moniker range="<= tfs-2015"  
-
-Managing work item templates from the web portal is only supported from TFS 2017 and later versions. 
-
-::: moniker-end  
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
@@ -461,7 +413,6 @@ With Visual Studio with power tools installed, you can view the list of template
 
 * * *
 
-
 <a id="add-wi"> </a>
 
 ## Add a work item using a template  
@@ -498,7 +449,7 @@ Use the URL whenever you want to add a work item of the type you've defined with
 
 ::: moniker-end  
 
-::: moniker range=">=tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
 
@@ -513,12 +464,6 @@ Use the URL whenever you want to add a work item of the type you've defined with
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2015"  
-
-Managing work item templates from the web portal is only supported from TFS 2017 and later versions. 
-
-::: moniker-end  
-
 ### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-copy-link" />
@@ -530,8 +475,6 @@ Managing work item templates from the web portal is only supported from TFS 2017
 2. Paste the copied link into a web browser to check that it works as expected.    
 
 * * *
- 
-
 
 <a id="apply"> </a>
 
@@ -561,7 +504,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 ### Apply a template within a work item 
 
@@ -575,7 +518,6 @@ You can apply a template to a single work item or do a bulk update of several wo
 2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
 
 ::: moniker-end
-
 
 
 <a id="apply-multiple"> </a>
@@ -595,7 +537,7 @@ You can apply a template to a single work item or do a bulk update of several wo
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
 
@@ -606,13 +548,6 @@ You can apply a template to a single work item or do a bulk update of several wo
 3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
 ::: moniker-end 
-
-::: moniker range="<= tfs-2015"
-
-The feature to apply a template to existing work items from the web portal isn't supported for TFS 2015 and earlier versions. 
-
-::: moniker-end 
-
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
@@ -635,8 +570,6 @@ The feature to apply a template to existing work items from the web portal isn't
 * * *
 
 
-::: moniker range=">= tfs-2017"
-
 <a id="tags"> </a>
 
 ## Add or remove tags from templates 
@@ -647,8 +580,6 @@ You can add tags to a template and they'll be applied to the work item when you 
 > ![Edit bug template, add or remove tags](media/templates/edit-template-add-tags.png)
 
 If you don't specify tags to remove, then all tags present in a work item will remain defined. They'll remain defined even when you apply a work item template to an existing work item. 
-
-::: moniker-end
 
 
 <a id="adhoc-template"> </a>
@@ -720,31 +651,17 @@ For example, the following syntax specifies a work item task with title *TaskTit
 You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
 
 <a id="markdown-widget"> </a>
-::: moniker range=">= tfs-2015"
 
 ## Add a template link to a team dashboard   
 
 You can add links to a Markdown widget that appear on your team dashboard in the web portal. These links open a work item with the template defined fields predefined.
 
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-> [!NOTE]   
-> Multiple team dashboards and the Markdown widget are available for Azure Boards and TFS 2015.2 and later versions. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
 
 For example, the following widget contains links to three templates.  
 
 ![Markdown widget with links to templates](media/wi-templates-markdown-widget-with-template-links.png) 
 
-To learn more about the Markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md).  
-
-::: moniker-end
-
+To learn more about the Markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md). 
 ## Related articles
 
 - [Azure Boards FAQs](../faqs.yml) 

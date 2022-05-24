@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Categories XML element reference
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You use the `CATEGORIES` element to group work item types. [Use categories to group work item types](use-categories-to-group-work-item-types.md) provides a description of each of the default categories.  
   

@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Share your code in TFVC using Xcode
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 
 Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repository to TFVC.

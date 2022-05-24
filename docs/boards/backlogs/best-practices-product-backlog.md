@@ -14,7 +14,7 @@ ms.date: 10/08/2021
 
 # Backlog management in Azure Boards  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize, and estimate them, and finally, 

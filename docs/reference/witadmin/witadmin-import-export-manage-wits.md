@@ -14,7 +14,7 @@ ms.date: 01/11/2022
 
 # Import, export, and manage work item types
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 You can manage work item types for a project by using the following **witadmin** commands:  
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
@@ -38,7 +38,7 @@ For the project where the work item types are defined, you must have the followi
 -   To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.    
 -   To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
   
-For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
@@ -137,7 +137,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after an upgrade?  
 
-**A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
+**A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) will update your projects and you'll get access to the latest features.  
   
 Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   

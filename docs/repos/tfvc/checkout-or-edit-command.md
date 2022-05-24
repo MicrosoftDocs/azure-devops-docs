@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Checkout (or Edit) command
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Checks out a file and changes its pending change status to Edit. You can call this command using either **Checkout** or **Edit**.
 

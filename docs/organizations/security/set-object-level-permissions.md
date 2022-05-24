@@ -1,19 +1,19 @@
 ---
-title: Assign object-level permissions
+title: Set object-level permissions
 titleSuffix: Azure DevOps
 description: How to grant permission and access at the object-level - repos, pipelines, work items, area paths, queries, wikis, dashboards, and more.
-ms.technology: devops-agile
+ms.technology: devops-security
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/01/2022
+ms.date: 04/04/2022
 --- 
 
 # Set object-level permissions
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As you manage security for your organization, you can set permissions at the organization/collection-level, project-level, and object-level. This article helps you go to the security dialogs for setting permissions at the object-level, as the user interface varies somewhat across Azure Devops. For more information, see [Get started with permissions, access, and security groups](about-permissions.md#permissions).
 
@@ -180,7 +180,6 @@ The following table provides information about setting permissions at the object
    no
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
    [Delivery Plans](set-permissions-access-work-tracking.md#edit-or-manage-permissions-for-delivery-plans)
@@ -195,7 +194,6 @@ The following table provides information about setting permissions at the object
    no
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="1":::
    [Process](../../boards/get-started/permissions-access-boards.md)
@@ -227,9 +225,9 @@ The following table provides information about setting permissions at the object
 | Object | Default group membership | How to access security | Inherited? |
 |--|--|--|--|
 | [Repos](../../repos/git/set-git-repository-permissions.md#open-security-for-a-repository) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) | Open **Project settings**, **Repositories** > highlight your repo > **Security**. | ✔️  |
-| [Git repository](../../repos/git/set-git-repository-permissions.md) |[Project Administrator](../../organizations/security/set-project-collection-level-permissions.md)  | Open **Project settings** > **Repositories** and the Git repository.  | ✔️ (from project settings for Git repository) |
-| [Git branch](../../repos/git/branch-permissions.md) |[Project Administrator](../../organizations/security/set-project-collection-level-permissions.md) | Open **Repos** > **Branches** > your branch > **More** ... > **Branch security**. | ✔️ |
-| [TFVC repository](../../repos/tfvc/set-tfvc-repository-permissions.md) |[Project Administrator](../../organizations/security/set-project-collection-level-permissions.md) | Open **Project settings** > **Repositories** and the TFVC repository.  | ✔️ |
+| [Git repository](../../repos/git/set-git-repository-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md)  | Open **Project settings** > **Repositories** and the Git repository.  | ✔️ (from project settings for Git repository) |
+| [Git branch](../../repos/git/branch-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md) | Open **Repos** > **Branches** > your branch > **More** ... > **Branch security**. | ✔️ |
+| [TFVC repository](../../repos/tfvc/set-tfvc-repository-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md) | Open **Project settings** > **Repositories** and the TFVC repository.  | ✔️ |
 
 ### Tips
 
@@ -257,8 +255,6 @@ The following table provides information about setting permissions at the object
 | [Variable groups](../../pipelines/library/index.md)  |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your variable group > **More** ... > **Manage security.**  |✔️ (from Library permission settings)  |
 | [Secure files](../../pipelines/policies/permissions.md) |[Project Administrator](../../organizations/security/permissions.md#project-level-groups)|Open your secure file > **More** ... > **Manage security.**  |✔️ (from Library permission settings)   |
 
-::: moniker range=">= tfs-2017"
-
 ## Set permissions for Artifacts objects
 
 The following table provides information about setting permissions at the object-level for artifacts and feeds.
@@ -268,26 +264,16 @@ The following table provides information about setting permissions at the object
 | [Artifacts](../../artifacts/feeds/feed-permissions.md) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)| Open **Artifacts** > Azure Artifacts settings icon. You don't see the icon if you don't have the right permissions. | no |
 | [Feeds](../../artifacts/feeds/feed-permissions.md) | Project Administrator or Feed Administrator | Open your feed > **gear icon** > **Permissions** > **+ Add users/groups**. | no |
 
-::: moniker-end
-
 ## Set permissions for Test plans objects
 
-- Test plans, test suites, test cases, and other test objects are managed similarly to work items. This is because they represent test-specific work item types, as discussed in [Test objects and terms](https://github.com/MicrosoftDocs/test/test-objects-overviewd.md).
-- You can manage test-level permissions through project-level settings or through Area Path object-level settings. For more information, see [Set permissions and access for testing](https://github.com/MicrosoftDocs/test/test-objects-overviewd.md).
+- Test plans, test suites, test cases, and other test objects are managed similarly to work items. This is because they represent test-specific work item types, as discussed in [Test objects and terms](/azure/devops/organizations/security/set-permissions-access-test).
+- You can manage test-level permissions through project-level settings or through Area Path object-level settings. For more information, see [Set permissions and access for testing](/azure/devops/organizations/security/set-permissions-access-test).
+
+::: moniker range="azure-devops" 
 
 ## Set object permissions through the command line
 
-::: moniker range=">= azure-devops-2020" 
-
 You can use the [az devops security command line tool](manage-tokens-namespaces.md) to view and manage permissions.
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019" 
-
-You can use the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd.md).
-
-::: moniker-end
 
 Some more granular permissions and permissions for select objects and features can only be managed through the command line. For example:
 
@@ -297,6 +283,8 @@ Some more granular permissions and permissions for select objects and features c
 - View delivery plans through the `Plans` namespace
 
 For more information about namespaces, see [Security namespace and permission reference](namespace-reference.md).
+
+::: moniker-end
 
 ## Set permissions for object notifications
 
@@ -309,7 +297,8 @@ Here are some additional tips for managing notifications.
 
 ## Related articles
 
-- [Set project-level permissions](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)
 - [Download permissions report for a repository](download-permissions-report.md)
 - [Manage permissions with command line tool](manage-tokens-namespaces.md)
 - [Get started with permissions, access, and security groups](about-permissions.md)

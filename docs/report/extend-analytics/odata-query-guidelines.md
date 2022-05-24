@@ -14,7 +14,7 @@ ms.date: 09/30/2020
 
 # Query guidelines for Analytics with OData
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Extension developers can benefit by following the guidelines provided in this article for designing efficient OData queries against Analytics for Azure DevOps. Following these guidelines will help ensure the queries have good performance for execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 

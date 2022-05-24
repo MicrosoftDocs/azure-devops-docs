@@ -4,14 +4,14 @@ description: Build multiple branches using Azure Pipelines or TFS
 ms.topic: conceptual
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 04/02/2019
-monikerRange: '>=tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build multiple branches
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

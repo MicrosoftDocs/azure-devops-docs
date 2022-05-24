@@ -240,7 +240,7 @@ Earlier, only users having **Create Repository** permission on a git repository 
 
 ### PATs enforce CAP
 
-In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/previous-versions/azure/devops/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
+In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/previous-versions/azure/devops/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
 
 ## Next steps
 

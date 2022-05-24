@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Rollback command (Team Foundation Version Control)
 
-[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You can use this command to roll back the effects of one or more changesets to one or more version-controlled items. This command does not remove the changesets from an item's version history. Instead, this command creates in your workspace a set of pending changes that negate the effects of the changesets that you specify.
 
@@ -145,7 +145,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    **/lock**
    :::column-end:::
    :::column span="3":::
-   Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](./understand-lock-types.md?viewFallbackFrom=vsts).
+   Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](./understand-lock-types.md).
 
    Lock Options
    - **None**

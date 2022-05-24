@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Environment - virtual machine resource
 
-[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Use virtual machine (VM) resources to manage deployments across multiple machines with YAML pipelines. VM resources let you install agents on your own servers for rolling deployments.
 
@@ -25,6 +25,8 @@ You must have at least a Basic license and access to the following areas:
 - the VM you want to connect to the environment
 
 For more information about security for Azure Pipelines, see [Pipeline security resources](../security/resources.md).
+
+To add a VM to an environment, you must have the [Administrator role](../agents/pools-queues.md#security) for the corresponding deployment pool.
 
 ## Create a VM resource
 

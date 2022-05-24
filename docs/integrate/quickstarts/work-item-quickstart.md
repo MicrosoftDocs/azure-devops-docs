@@ -12,7 +12,7 @@ ms.date: 06/27/2017
 
 # Fetch work items with queries programmatically 
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 A common scenario in Azure DevOps Services is to fetch work items using queries. This article details how to implement that scenario programmatically using our REST APIs or .NET client libraries.
 

@@ -13,7 +13,7 @@ ms.date: 01/14/2021
 
 # Search packages across your feeds
 
-[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Package Search is available to all users of Azure DevOps. For information on main search functions, see [Get started with search](get-started-search.md).
 
