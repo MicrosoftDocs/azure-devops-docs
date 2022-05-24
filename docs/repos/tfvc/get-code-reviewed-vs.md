@@ -79,6 +79,8 @@ Johnnie will see the code review request in the Team Explorer, look at the chang
 
    ![Comment added and sent using the send comments button in the code review page in Team Explorer](media/get-code-reviewed-vs/IC682764.png)
 
+8. Johnnie completes the review by selecting "Send & Finish".
+
 ## Update the code based on the review feedback
 
 1. When Jamal gets a response from Johnnie, he resumes the work on Hello World.
@@ -88,6 +90,8 @@ Johnnie will see the code review request in the Team Explorer, look at the chang
 2. His changes are unshelved and the windows he had opened are restored, so he can incorporate the review feedback.
 
    ![Work environment restored after resuming work](media/get-code-reviewed-vs/IC683039.png)
+
+3. Jamal closes the review by selecting "Close Review".
 
 ## Next steps
 
