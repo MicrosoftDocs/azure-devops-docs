@@ -7,7 +7,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 04/13/2022
+ms.date: 05/24/2022
 monikerRange: '<= azure-devops'
 ---
 # Determine recipients of notification emails
@@ -84,7 +84,8 @@ The following delivery options are available for a group or team subscription:
 * **Members of team by role:** recipients are members of the team or group that have one of the selected roles (for example, work item assignee)
 * **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_) 
 * **Custom email address:** recipient is the specified email address
-* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. 
+* **Members of team:** recipients are all members of the team or group, except members who have opted out of the subscription. 
+* **SOAP:** similar to API Management, recipients are specified by adding their email addresses (subscribing) to the SOAP service.
 
 > [!NOTE]
 > The default delivery setting of each member is honored, including groups that are members of the team or group.
