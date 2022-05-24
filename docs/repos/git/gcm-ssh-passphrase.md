@@ -1,7 +1,8 @@
 ---
 title: Understand SSH passphrases
 titleSuffix: Azure Repos
-description: Understand what an SSH passphrase is.
+description: Learn the benefits and downside of using SSH passphrases.
+ms.custom: kr2b-contr-experiment
 ms.assetid: 266f5d0e-78b9-4911-9bdf-ab509f17ff23
 ms.technology: devops-code-git 
 ms.topic: conceptual
