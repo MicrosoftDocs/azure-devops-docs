@@ -79,10 +79,10 @@
     - name: Use packages from npmjs.com
       href: npm/upstream-sources.md
       displayName: npmjs, npm packages, npm feed 
-    - name: Use npm scopes
+    - name: Npm scopes
       href: npm/scopes.md
       displayName: npm scope, npm artifacts, npm packages 
-    - name: Use npm audit
+    - name: Npm audit
       href: npm/npm-audit.md
       displayName: npm audit, npm artifacts 
   - name: Maven
