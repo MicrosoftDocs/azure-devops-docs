@@ -22,7 +22,7 @@ ms.date: 05/25/2022
     always-auth=true
     ```
 
-#### Credentials setup
+### Set up credentials
 
 1. Copy the following snippet into your .npmrc file.
 
