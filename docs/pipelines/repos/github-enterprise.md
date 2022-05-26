@@ -8,6 +8,8 @@ monikerRange: 'azure-devops'
 
 # Build GitHub Enterprise Server repositories
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 You can integrate your on-premises GitHub Enterprise Server with Azure Pipelines. Your on-premises server may be exposed to the Internet or it may not be.
 
 If your GitHub Enterprise Server is reachable from the servers that run Azure Pipelines service, then:

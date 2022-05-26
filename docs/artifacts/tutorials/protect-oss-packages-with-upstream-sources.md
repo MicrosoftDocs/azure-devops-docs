@@ -4,11 +4,13 @@ description: Use upstream sources in Azure Artifacts to consume packages from pu
 ms.technology: devops-artifacts
 ms.reviewer: amullans
 ms.date: 08/24/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Tutorial: How to use upstream sources
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Using upstream sources in your feed enables you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 
@@ -32,7 +34,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build & Release**, and then select **Packages**.
 
@@ -48,7 +50,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 2. Select **New Feed** to create a new feed.
 
@@ -64,7 +66,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
@@ -95,7 +97,7 @@ Now that we created our feed, we need to update the config file to point to our 
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build & Release** > **Packages**, and then select **Connect to Feed**.
 

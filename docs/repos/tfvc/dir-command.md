@@ -1,25 +1,28 @@
-﻿---
+---
 title: Use the Dir Command to display contents of TFVC
 titleSuffix: Azure Repos
 description: Displays all or some of the contents of the server for Team Foundation version control using the Dir command
 ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Dir Command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 The **dir** command displays all or some of the contents of the server for Team Foundation version control.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **dir** command, you must have **Read** permission set to **Allow**. For more 
-information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **dir** command, you must have **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf dir itemspec [/version:versionspec] [/recursive] 
@@ -44,7 +47,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    *itemspec*
    :::column-end:::
    :::column span="1":::
-   Identifies the file or folder to return information about. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+   Identifies the file or folder to return information about. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
 
    > [!Note]  
    > You can specify more than one Itemspec argument.
@@ -55,7 +58,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    *versionspec*
    :::column-end:::
    :::column span="1":::
-   The user-provided value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   The user-provided value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -123,7 +126,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    **/login**
    :::column-end:::
    :::column span="1":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -138,9 +141,9 @@ tf dir itemspec [/version:versionspec] [/recursive]
 ## Remarks
 The **dir** command operates on the Team Foundation version control server copies of files, not the local copies. The command uses the local mapped folder to locate the appropriate Team Foundation version control server path. You use this command to explore the Team Foundation version control server and identify files you may have to obtain.
 
-For links to other Team Foundation commands that provide additional information about items in your Team Foundation version control server and the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 ## Examples
 The following example displays a list of files, folders, subfolders, and the files therein in the Team Foundation version control server folder to which c:\\projects maps. The number of items is also listed. For more information about how to view and edit working folder mappings, see [Workspace Command](workspace-command.md) and [Workfold Command](workfold-command.md).
 
@@ -178,22 +181,7 @@ The following example lists all items and deleted items in the current folder to
 c:\projects>tf dir /deleted
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Add and Remove a Working Folder in a Workspace](/previous-versions/ms181386(v=vs.110))
-
-#### Reference
-
-[Workspace Command](workspace-command.md)
-
-[Workfold Command](workfold-command.md)
-
-#### Concepts
-
-[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Workspace Command](workspace-command.md)
+- [Workfold Command](workfold-command.md)

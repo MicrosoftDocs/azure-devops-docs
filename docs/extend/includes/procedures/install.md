@@ -1,10 +1,10 @@
 1. From your organization control panel (```https://dev.azure.com/{organization}/_admin/_ext```), go to the project collection administration page. 
 
-	![Control panel, view the collection administration page link](../../media-procedures/install/collection-page.png)
+	![Control panel, view the collection administration page link](../../media/install/collection-page.png)
 
 2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group and install it.
 
-	![Control panel, Extensions tab, Install button](../../media-procedures/install/install.png)
+	![Control panel, Extensions tab, Install button](../../media/install/install.png)
 
 
    

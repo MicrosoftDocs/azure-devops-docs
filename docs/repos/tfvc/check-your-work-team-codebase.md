@@ -5,14 +5,15 @@ description: Check in your work to the team's codebase
 ms.assetid: 325ef815-f163-4b3c-8fcb-2b7faf09c83d
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Check in your work to the team's codebase
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Use the **Pending Changes** page (Keyboard: Ctrl + 0, P) in Team Explorer to check in your code into a new changeset.
 

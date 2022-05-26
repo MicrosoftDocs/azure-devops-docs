@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual 
+ms.topic: overview 
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/17/2020
 ---
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 <a id="inherited" /> 
 
@@ -77,6 +77,9 @@ Following the guidance provided in the above listed articles, you can also make 
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [Choose a process](../../../boards/work-items/guidance/choose-process.md).
 
+### Best practices when making changes
+
+Making changes to an inherited process is straight forward and safe. However, it is always a best practice to test those changes before applying them to an active project. [Following these steps](./manage-process.md#copy-a-process) will help you surface any negative affects your process changes may have.
 
 ::: moniker-end
 
@@ -207,7 +210,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 > [!NOTE]    
-> With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
+> With the inherited process, you can't modify the picklists of predefined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
 
 ::: moniker-end
 
@@ -282,7 +285,7 @@ For example, you can make the Title or the State field Read-only for select user
 
 ### Restrict modification of work items based on Area Path 
 
-You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
+You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 ## Work item type (WIT) customizations 
 

@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 09/07/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy a web app to an nginx web server on a Linux Virtual Machine
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > If you want to deploy your application to a Linux virtual machine using YAML, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
@@ -20,8 +20,6 @@ monikerRange: '>= tfs-2018'
 Learn how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines. You can use the steps in this
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
-
-![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will
 automatically show up on your site.

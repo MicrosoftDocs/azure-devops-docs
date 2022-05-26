@@ -5,13 +5,13 @@ ms.technology: devops-artifacts
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 11/18/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Publish Maven artifacts with Azure Pipelines
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and build and publish our Maven artifacts.
 
@@ -50,7 +50,7 @@ gradle -v
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Select your profile icon, and then select **Security**.
 

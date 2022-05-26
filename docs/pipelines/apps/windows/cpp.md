@@ -11,9 +11,9 @@ monikerRange: '>= tfs-2017'
 
 # Build C++ Windows apps
 
-[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 

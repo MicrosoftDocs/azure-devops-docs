@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Service Fabric Compose Deploy task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to deploy a Docker-compose application to a Service Fabric cluster.
 This task deploys an Azure Service Fabric application to a cluster according to the settings defined in the compose file.

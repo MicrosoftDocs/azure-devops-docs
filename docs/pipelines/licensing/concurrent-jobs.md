@@ -6,13 +6,13 @@ description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 05/05/2021
-monikerRange: '>= tfs-2015'
+ms.date: 02/25/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Configure and pay for parallel jobs
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="< azure-devops-2019"
 
@@ -83,6 +83,8 @@ When the free tier is no longer sufficient, you can pay for additional capacity 
 
 [Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
+New organizations have a maximum limit of 25 parallel jobs for Microsoft-hosted agents. [Contact support](https://azure.microsoft.com/support/devops/) to request a limit increase, subject to capacity in your organization's region.
+
 When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still one. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
  
 > [!TIP]
@@ -105,15 +107,10 @@ For public projects that are self-hosted, you can have unlimited parallel jobs r
 
 When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
-[Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
+[Buy self-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
 ---
 
-::: moniker-end
-
-::: moniker range="= tfs-2015"
-
-> Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
 ::: moniker-end
 
 
@@ -162,7 +159,7 @@ In the following scenarios, you might need multiple parallel jobs:
 To buy more parallel jobs:
 
 * [Billing must be set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md)
-* You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/lookup-organization-owner-admin.md)
+* You need to be a member of the [**Project Collection Administrators** group](../../organizations/security/look-up-project-collection-administrators.md).
 
 ### Buy parallel jobs
 

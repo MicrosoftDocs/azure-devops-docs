@@ -5,19 +5,20 @@ description: Configure Check-In Notes
 ms.assetid: c7829273-4d53-412c-99d6-4944780ebc74
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Configure Check-In Notes
+# Configure check-in notes
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
+Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
-**Required Permissions**  
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites  
+
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To add check-in notes
 
@@ -45,7 +46,7 @@ To complete this procedure, you must have the **Edit project-level information**
 2.  In the **Source** **Control** **Settings** dialog box, select the **Check-in** **Notes** tab.  
 3.  Select the check-in note for which you want to change the order.  
 4.  Use the up and down arrow buttons to move the note to the desired order.  
-5.  Repeat process until all the check-in notes are in the order you desire. This ordering is reflected during the check-in process. For more information, see [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md) and [Associate Check-in Notes with Changesets](/previous-versions/visualstudio/visual-studio-2010/ms245464(v=vs.100)).
+5.  Repeat process until all the check-in notes are in the order you desire. This ordering is reflected during the check-in process. For more information, see [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md) and [Develop and share your code in TFVC using Visual Studio](share-your-code-in-tfvc-vs.md).
 
 ### To remove check-in notes
 
@@ -53,12 +54,8 @@ To complete this procedure, you must have the **Edit project-level information**
 2.  In the **Source** **Control** **Settings** dialog box, click the **Check-in** **Notes** tab.  
 3.  Select the check-in note title that you want to remove, and click **Remove**.
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Add Check-In Policies](add-check-policies.md)  
-[Associate Check-in Notes with Changesets](/previous-versions/visualstudio/visual-studio-2010/ms245464(v=vs.100))
-#### Other Resources
-
-[Administering Team Foundation Version Control](./configure-check-out-settings.md)
+- [Add Check-In Policies](add-check-policies.md)  
+- [Develop and share your code in TFVC using Visual Studio](share-your-code-in-tfvc-vs.md)
+- [Configure check-out settings](configure-check-out-settings.md)

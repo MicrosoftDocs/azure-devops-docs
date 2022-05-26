@@ -12,7 +12,7 @@ ms.date: 10/07/2021
 
 # Import large collections 
 
-[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 <a id="import-large-collections"></a>
 

@@ -7,12 +7,12 @@ ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Xamarin.Android task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build an Android app with Xamarin.
 

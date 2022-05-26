@@ -7,7 +7,7 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 > [!NOTE]  
 > In Microsoft Team Foundation Server (TFS) 2018 and previous versions,
 build and release _pipelines_ are called _definitions_,

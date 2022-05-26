@@ -7,18 +7,18 @@ ms.assetid: 21C3DC47-7D67-4427-8386-ACE3A6279995
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Android build task (deprecated; use Gradle)
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build an Android app using Gradle and optionally start the emulator for unit tests.
 
 ## Deprecated
 
-**The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**
+**The AndroidBuild@1 task has been deprecated. Use the [Gradle](gradle.md) task instead.**
 
 ## Demands
 

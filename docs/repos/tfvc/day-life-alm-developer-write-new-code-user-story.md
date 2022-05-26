@@ -5,27 +5,28 @@ description: A day in the life of an devops developer. Write new code for a user
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Day in the life of a devops developer: write new code for a user story
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
 Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. You'll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
 **The story so far**  
-The team recently began [adopting Visual Studio and Team Foundation Server for devops](/previous-versions/visualstudio/visual-studio-2013/hh561426(v=vs.120)). They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
+The team recently adopted Visual Studio and Azure DevOps to manage their code. They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
 
 **Overview of this chapter**  
 Peter briefly reviews his backlog and selects the task he will work on today. He writes unit tests for the code he plans to develop. Typically, he runs the tests several times in an hour, gradually writing more detailed tests and then writing the code that makes them pass. He often discusses the interface of his code with colleagues who will use the method he is writing.
 
 > [!NOTE]
-> The My Work and Code Coverage features that are discussed in this topic are available only in Visual Studio Premium and Visual Studio Ultimate.
+> The My Work and Code Coverage features that are discussed in this article are available only in premium versions of Visual Studio, such as Visual Studio Premium, Visual Studio Ultimate, Visual Studio Enterprise. 
 
 ## Review personal backlog and prepare tasks to begin work
 
