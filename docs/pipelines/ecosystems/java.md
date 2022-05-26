@@ -3,9 +3,9 @@ title: Build Java apps
 description: Automatically building Java apps with Azure Pipelines.
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.reviewer: dastahel
-ms.custom: freshness-fy22q2
+ms.custom: freshness-fy22q2, devdivchpfy22
 ms.topic: quickstart
-ms.date: 12/22/2021
+ms.date: 05/26/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,7 +15,6 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="tfs-2018"
 > [!NOTE]
-> 
 > The following guidance uses YAML-based pipelines available in Azure Pipelines. Use tasks that correspond to those used in the following YAML.
 ::: moniker-end
 
@@ -24,8 +23,10 @@ You can use a pipeline to automatically build and test your Java projects. Once 
 ## Prerequisites
 
 You must have the following items in Azure DevOps:
+
 - A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
 - A pipeline. If you don't have one, [create a pipeline](#create-a-pipeline) now.
+
 ### Create a pipeline
 
 ::: moniker range="> azure-devops-2019"
@@ -80,11 +81,12 @@ You must have the following items in Azure DevOps:
 
   This template automatically adds the tasks you need to build the code in the sample repo.
 
-2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize any time!
+1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize anytime!
 
 ::: moniker-end
 
 Read further to learn some of the more common ways to customize your pipeline.
+
 ## Build environment
 
 ::: moniker range=">=azure-devops-2020"
@@ -132,7 +134,7 @@ steps:
     goals: 'package'
 ```
 
-For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`. 
+For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`.
 
 #### Customize the build path
 
@@ -226,8 +228,7 @@ steps:
 
 ## Next steps
 
-After you've built and tested your app, you can upload the build output to Azure Pipelines, create and publish a Maven package, 
-or package the build output into a .war/jar file to be deployed to a web application.
+After you've built and tested your app, you can upload the build output to Azure Pipelines, create and publish a Maven package, or package the build output into a .war/jar file to be deployed to a web application.
 
 ::: moniker-end
 
@@ -235,9 +236,9 @@ or package the build output into a .war/jar file to be deployed to a web applica
 
 We recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
 
-* [Build and deploy to a Java web app](java-webapp.md)
-* [Build and deploy Java to Azure Functions](java-function.md)
-* [Build and deploy Java to Azure Kubernetes service](kubernetes/aks-template.md)
+- [Build and deploy to a Java web app](java-webapp.md)
+- [Build and deploy Java to Azure Functions](java-function.md)
+- [Build and deploy Java to Azure Kubernetes service](kubernetes/aks-template.md)
 
 ::: moniker-end
 
