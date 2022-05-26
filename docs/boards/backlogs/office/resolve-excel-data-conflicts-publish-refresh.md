@@ -12,7 +12,7 @@ ms.date: 10/08/2021
 
 # Resolve data conflicts when you publish or refresh Excel data
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 A data conflict occurs when you try to publish a work item from [Excel](bulk-add-modify-work-items-excel.md) and the version of that work item differs from the version in the work item database. The following example shows how two team members can create such a conflict.  
   
@@ -51,4 +51,4 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
 
 ### Required permissions  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md). 
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md). 

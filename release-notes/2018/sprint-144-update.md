@@ -207,7 +207,7 @@ For more details, see the [announcement blog post](https://blogs.msdn.microsoft.
 
 ### Markdown templates for formulas and videos
 
-There is no longer a need to remember markdown syntax for adding [formulas](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true#mathematical-notation-and-characters), [videos](/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops&preserve-view=true#embed-videos-in-a-wiki-page) and [YAML tags](./aug-03-vsts.md#wiki) when editing a Wiki. You can now click on the context menu in the toolbar and select the option of your choice.
+There is no longer a need to remember Markdown syntax for adding [formulas](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true#mathematical-notation-and-characters), [videos](/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops&preserve-view=true#embed-videos-in-a-wiki-page) and [YAML tags](./aug-03-vsts.md#wiki) when editing a Wiki. You can now click on the context menu in the toolbar and select the option of your choice.
 
 > [!div class="mx-imgBorder"]
 > ![Markdown templates for formulas and videos.](media/144_04.png)

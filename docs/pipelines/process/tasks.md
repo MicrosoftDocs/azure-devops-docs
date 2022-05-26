@@ -5,12 +5,12 @@ description: Understand Build and Release tasks in Azure Pipelines and Team Foun
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.date: 11/29/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Task types & usage
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -29,7 +29,7 @@ To run the same set of tasks in parallel on multiple agents, or to run some task
 By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
 You may optionally use [step targets](#step-target) to control context for an individual task.
 
-Learn more about how to specify properties for a task with the [YAML schema](../yaml-schema.md#task). 
+Learn more about how to specify properties for a task with the [built-in tasks](../tasks/index.md). 
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ to add tasks to Azure Pipelines or TFS.
 ::: moniker range=">= azure-devops-2019"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task will take precedence. You can use the task GUID or a fully-qualified
+and a custom task, the in-box task will take precedence. You can use the task GUID or a fully qualified
 name for the custom task to avoid this risk:
 
 ```yaml
@@ -63,7 +63,7 @@ steps:
 - task: qetza.replacetokens.replacetokens-task.replacetokens@3 #working example
 ```
 
-To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully-qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
+To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
 
 ::: moniker-end
 
@@ -193,9 +193,6 @@ steps:
   condition: succeededOrFailed()
 ```
 
-> [!NOTE]
-> For the full schema, see [YAML schema for `task`](../yaml-schema.md#task).
-
 
 ### Conditions
 
@@ -243,6 +240,7 @@ Use `retryCountOnTaskFailure` to specify the number of retries if the task fails
 ```
 
 > [!NOTE]
+> * Requires agent version 2.194.0 or later. Not supported for [agentless tasks](./phases.md#agentless-tasks).
 > * The failing task is retried immediately.
 > * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
 > * There is no information about the retry count made available to the task.

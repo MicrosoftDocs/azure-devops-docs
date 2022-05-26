@@ -6,13 +6,14 @@ ms.assetid: 437854e0-3f64-4d68-8e18-748ea7f889aa
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 05/12/2017
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Branch folders and files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You can use branches to accomplish the following goals:  
 -   Manage concurrent work by multiple teams on the same codebase  
@@ -35,8 +36,16 @@ You can perform a branching operation by using either **Source Control Explorer*
 > Branching is an important and powerful technique for creating a parallel set of versions of your files. However, using branches can add complexity and cost to your project. For example, when you merge two branches, you may have to resolve conflicts.  
 >
 > Before you create a branch, you should consider whether you can better meet your needs by applying a label. By applying a label, you can quickly and easily take a snapshot of the state of your files so that you can then later retrieve or build the files in that state. For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+ 
+## Prerequisites  
 
-## Convert a Folder to a Branch
+- To convert a folder to a branch, your **Manage branch** permission must be set to **Allow**.  
+- To branch a branch, your **Manage branch** permission must be set to **Allow** for the paths to the source and target branches. Your **Merge** permission for the path of target branch must set to **Allow**.  
+- To branch a folder or file, your **Check out** permission and your **Merge** permission for the target path must be set to **Allow**. 
+
+For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Convert a folder to a branch
 
 The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. The following illustration shows the top-level of the DinnerNow folder structure:
 
@@ -46,14 +55,9 @@ DinnerNow folder structure in Source Control Explorer
 
 As the illustration shows, you can still use folders to organize branches within a project's version control hierarchy. However, folders and branches have a different appearance and different capabilities. When you right-click a folder or branch and click **Properties**, you display different information and different functionality.
 
-When you perform branch operations, branches have important advantages over folders. Branches support version control features that provide extra visibility into your branch structure and into where your changesets have merged. (For more information, see the links in the [See Also](#see-also) section later in this topic.)
+When you perform branch operations, branches have important advantages over folders. Branches support version control features that provide extra visibility into your branch structure and into where your changesets have merged. (For more information, see the links in the [See Also](#related-articles) section later in this topic.)
 
 Although you can still branch and merge among folders, the best practice for your team is to branch and merge only among branches. The following procedure explains how to convert a folder to a branch.
-
-**Required Permissions**  
-To perform the following procedure, your **Manage branch** permission must be set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
-
-### To convert a folder to a branch
 
 1.  In **Source Control Explorer**, make sure that the folder that you want to convert exists on the server.
 
@@ -79,16 +83,15 @@ To perform the following procedure, your **Manage branch** permission must be se
 
 6.  Click **Convert**.
 
->[!IMPORTANT]  
->You cannot nest branches; therefore, you cannot convert any folder to a branch if it either contains a branch or is contained by a branch. For example, the following illustration shows how neither the parent nor the child of the **FeatureTeamA** branch can be converted to a branch.  
+> [!IMPORTANT]  
+> You cannot nest branches; therefore, you cannot convert any folder to a branch if it either contains a branch or is contained by a branch. For example, the following illustration shows how neither the parent nor the child of the **FeatureTeamA** branch can be converted to a branch.  
 >
 >![Nested branches are not allowed](media/branch-folders-files/IC272396.png)
->
->  
+
 
 After you have converted a folder to a branch, you can convert it back to a folder if your team decides to change your branch structure.
 
-### To convert a branch to a folder
+## Convert a branch to a folder
 
 1.  In **Source Control Explorer**, click the branch that you want to convert.  
 2.  On the **File** menu, point to **Source Control**, point to **Branching and Merging**, and then click **Convert to Folder**.  
@@ -97,12 +100,7 @@ After you have converted a folder to a branch, you can convert it back to a fold
 ## Branch a branch
 
 After you have converted a folder to a branch, you can then create other branches from that branch. The following procedure shows how you can use the graphical user interface of Visual Studio to branch a branch. (For information about how to perform this task at the command prompt, see [Branch Command](branch-command.md).)
-
-**Required Permissions**  
-To perform this procedure, your **Manage branch** permission must be set to **Allow** for the paths to the source and target branches. Your **Merge** permission for the path of target branch must set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
-
-### To branch a branch
-
+ 
 1.  In **Source Control Explorer**, right-click the branch that you want to branch, point to **Branching and Merging**, and then click **Branch**.
 
     The **Branch from** dialog box appears.
@@ -123,21 +121,14 @@ To perform this procedure, your **Manage branch** permission must be set to **Al
 
     The branch is created and appears in **Source Control Explorer**.
 
-    >[!NOTE]
-    >Unlike most version control operations, this operation does not generate a pending change. Rather, the operation is completed immediately and you cannot undo it.
-    >
-    >
+    > [!NOTE]
+    > Unlike most version control operations, this operation does not generate a pending change. Rather, the operation is completed immediately and you cannot undo it.
 
 ## Branch a folder or file
 
 Although you can branch a folder or file directly, we recommend that you avoid it. Otherwise, you will not be able to [view your branch hierarchy](view-branch-hierarchy-team-project.md) or [track your changesets](view-where-when-changesets-have-been-merged.md). The best practice is to branch and merge only among branches, as described earlier in this topic.
 
 But if you have a special need to branch a folder or file, you can use the following procedure to perform this task. (For information about how to perform this task at the command prompt, see [Branch Command](branch-command.md).)
-
-**Required Permissions**  
-To perform this procedure, your **Check out** permission and your **Merge** permission for the target path must be set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
-
-### To branch a folder or file
 
 1.  In **Source Control Explorer**, right-click the folder or file that you want to branch, point to **Branching and Merging**, and then click **Branch**.
 
@@ -169,19 +160,15 @@ To perform this procedure, your **Check out** permission and your **Merge** perm
 
     The branch is created and appears in **Source Control Explorer**.
 
-    >[!NOTE]  
+    > [!NOTE]  
     >A **Browse For Folder** window appears if you selected the **Create local working copies for the new branch** check box and the local folder that you specified is not mapped in the current workspace. Browse for a folder or click **Make New Folder**, specify a folder to synchronize to the version-controlled items, and then click **OK**.
-    >
-    >
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)  
- [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md)  
- [View the branch hierarchy of a project](view-branch-hierarchy-team-project.md)  
- [Branch Command](branch-command.md)  
- [Branches Command](branches-command.md)  
- [Branch strategically](branch-strategically.md)  
-[Visual Studio TFS Branching Guide](branching-strategies-with-tfvc.md)
+- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)  
+- [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md)  
+- [View the branch hierarchy of a project](view-branch-hierarchy-team-project.md)  
+- [Branch Command](branch-command.md)  
+- [Branches Command](branches-command.md)  
+- [Branch strategically](branch-strategically.md)  
+- [Visual Studio TFS Branching Guide](branching-strategies-with-tfvc.md)

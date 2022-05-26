@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Service Fabric PowerShell task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.

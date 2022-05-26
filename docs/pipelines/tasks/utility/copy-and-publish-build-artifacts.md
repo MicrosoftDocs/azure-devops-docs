@@ -7,24 +7,18 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Copy and Publish Build Artifacts task
 
-**TFS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to copy build artifacts to a staging folder and then publish them to the server or a file share.
 Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and then published.
 
-::: moniker range="> tfs-2015"
-
 > [!IMPORTANT]
-> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
+> This task is deprecated. We recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
 
 > [!IMPORTANT]
 > This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
@@ -93,7 +87,5 @@ You can avoid these issues by instead using the [Copy Files task](copy-files.md)
 [!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
 [!INCLUDE [temp](../../includes/qa-versions.md)]
-
-::: moniker-end
 
 <!-- ENDSECTION -->

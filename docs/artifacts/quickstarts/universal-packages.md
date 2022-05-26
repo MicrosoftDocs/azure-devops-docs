@@ -4,8 +4,8 @@ description: How to publish and download universal packages to and from Artifact
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/03/2021
-monikerRange: '>= tfs-2017'
+ms.date: 02/15/2022
+monikerRange: 'azure-devops'
 ---
 
 # Publish and download universal packages with Azure CLI
@@ -23,25 +23,25 @@ With universal packages, you can store different types of packages other than th
 
 1. To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
 
-   ```Command
+   ```azurecli
    az --version
    ```
 
 2. Install the Azure DevOps extension.
 
-   ```Command
+   ```azurecli
    az extension add --name azure-devops
    ```
 
 3. If you already have the Azure DevOps extension but you want to update to the latest version, run the following command:
 
-   ```Command
+   ```azurecli
    az extension update --name azure-devops
    ```
 
 4. Log in to Azure.
 
-    ```Command
+    ```azurecli
     az login
     ```
 
@@ -50,17 +50,17 @@ With universal packages, you can store different types of packages other than th
 
 5. Set your project and organization as the CLI's default.
 
-    ```Command
+    ```azurecli
     az devops configure --defaults project=<YOUR_PROJECT_NAME> organization=https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
     ```
 
 ## Publish universal packages
 
-To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase and can only use letters, numbers, and dashes. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
+To publish a universal package, run the following command in an elevated command prompt. Package names must be lowercase, start and end with letters or numbers, and contain only letters, numbers, and non-consecutive dashes, underscores, and periods. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
 
 The following command will publish a universal package to an organization-scoped feed:
 
-```Command
+```azurecli
 az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --description <PACKAGE_DESCRIPTION> --path <PACKAGE_DIRECTORY>
 ```
 
@@ -72,13 +72,13 @@ az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANI
 
 1. Select your feed from the drop-down menu. 
 
-    :::image type="content" source="media/universal-in-feed.png" alt-text="Screenshot showing the newly published package.":::
+    :::image type="content" source="media/universal-package-published.png" alt-text="A screenshot showing the newly published universal package.":::
 
 ## Download universal packages
 
 To download a universal package using Azure CLI, run the following command in an elevated command prompt.
 
-```Command
+```azurecli
 az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME>  --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
 ```
 
@@ -88,7 +88,7 @@ If you only want to download specific files, you can use the `--file-filter` par
 
 Example: `--file-filter *logs/*.log` would match any file ending with *logs* and with the extension *.log* (Example: build123_logs.log). See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
 
-```Command
+```azurecli
 az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION>  --path <DOWNLOAD_PATH>  --file-filter <MATCH_PATTERN>
 ```
 
@@ -98,11 +98,11 @@ You can use wildcards to download the latest version of your Universal Packages.
 
 **Examples**:
 
-- `--version *`: the latest version.
+- `--version '*'`: the latest version.
 
-- `--version 1.*`: the latest version with major 1. 
+- `--version '1.*'`: the latest version with major 1. 
 
-- `--version 1.2.*`: the latest patch release with major 1 and minor 2.  
+- `--version '1.2.*'`: the latest patch release with major 1 and minor 2.  
   
 > [!NOTE]
 > Wildcards are not supported in pre-release pipelines.

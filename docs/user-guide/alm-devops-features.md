@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # What are the features in Azure DevOps?
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
@@ -70,7 +70,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git](../repos/git/set-git-repository-permissions.md)">Git</a><br/>- <a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
+- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git](../repos/git/set-git-repository-permissions.md)">Git</a><br/>- <a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[Test](../organizations/security/change-project-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
 
 </td>
 </tr>
@@ -196,7 +196,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Estimates and time tracking</b></p>
-<p>Track <a href="/azure/devops/boards/queries/query-numeric?viewFallbackFrom=vsts" data-raw-source="[estimated, completed, and remaining work](../boards/queries/query-numeric.md?viewFallbackFrom=vsts)">estimated, completed, and remaining work</a> for tasks and other work items. Several reports and dashboards provide charts that display data based on team capacity and remaining work.</p>
+<p>Track <a href="/azure/devops/boards/queries/query-numeric?viewFallbackFrom=vsts" data-raw-source="[estimated, completed, and remaining work](../boards/queries/query-numeric.md)">estimated, completed, and remaining work</a> for tasks and other work items. Several reports and dashboards provide charts that display data based on team capacity and remaining work.</p>
 
 
 
@@ -257,7 +257,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Restrict access</b></p>
-<p><a href="/azure/devops/organizations/security/restrict-access?viewFallbackFrom=vsts" data-raw-source="[Limit who can create or modify work items or a work item field](../organizations/security/restrict-access.md?viewFallbackFrom=vsts)">Limit who can create or modify work items or a work item field</a> based on area path, work item type, or based on your specific conditions. </p>
+<p><a href="/azure/devops/organizations/security/restrict-access?viewFallbackFrom=vsts" data-raw-source="[Limit who can create or modify work items or a work item field](../organizations/security/restrict-access.md)">Limit who can create or modify work items or a work item field</a> based on area path, work item type, or based on your specific conditions. </p>
 
 
 <p><b>Field index </b></p>
@@ -367,7 +367,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 <a id="customize-tfs"></a>
 
@@ -403,21 +403,21 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Custom pick lists </b></p>
-<p><a href="/azure/devops/reference/xml/define-pick-lists?viewFallbackFrom=vsts" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md?viewFallbackFrom=vsts)">Define or modify pick list values</a> by editing the work item type definition.</p>
+<p><a href="/azure/devops/reference/xml/define-pick-lists" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md)">Define or modify pick list values</a> by editing the work item type definition.</p>
 </td>
 <td width="33%">
 
 
 
 <p><b>Modify the workflow </b></p>
-<p><a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
+<p><a href="/azure/devops/reference/xml/change-workflow-wit" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
 
 
 <p><b>Change the work item form </b></p>
-<p><a href="/azure/devops/reference/xml/design-work-item-form?viewFallbackFrom=vsts" data-raw-source="[Change the layout of your work item form](../reference/xml/design-work-item-form.md?viewFallbackFrom=vsts)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
+<p><a href="/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true" data-raw-source="[Change the layout of your work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
 
 <p><b>Add a custom work item type </b></p>
-<p><a href="/azure/devops/reference/customize-work?viewFallbackFrom=vsts" data-raw-source="[Add a custom work item type](../reference/customize-work.md?viewFallbackFrom=vsts)">Add a custom work item type</a> to track different data requirements.</p>
+<p><a href="/azure/devops/reference/customize-work" data-raw-source="[Add a custom work item type](../reference/customize-work.md)">Add a custom work item type</a> to track different data requirements.</p>
 
 
 </td>
@@ -658,16 +658,16 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For Azure DevOps Server: <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
+<p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For Azure DevOps Server: <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
-<p>States allow you to <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[track the status of work](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">track the status of work</a>. For  example, a bug moves from <strong>Active</strong>, <strong>Resolved</strong>, and <strong>Closed</strong> to correspond to when it&#39;s defined, fixed, and verified as fixed.</p>
+<p>States allow you to <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[track the status of work](../reference/xml/change-workflow-wit.md)">track the status of work</a>. For  example, a bug moves from <strong>Active</strong>, <strong>Resolved</strong>, and <strong>Closed</strong> to correspond to when it&#39;s defined, fixed, and verified as fixed.</p>
 
 <p><b>Transitions</b></p>
-<p>Transitions specify the <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[valid progressions and regressions from state to state](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">valid progressions and regressions from state to state</a> for a work item type.</p>
+<p>Transitions specify the <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[valid progressions and regressions from state to state](../reference/xml/change-workflow-wit.md)">valid progressions and regressions from state to state</a> for a work item type.</p>
 
 <p><b>Reasons</b></p>
-<p>Each transition <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[specifies a default reason as well as optional reasons](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">specifies a default reason as well as optional reasons</a> for tracking the change in state.  </p>
+<p>Each transition <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[specifies a default reason as well as optional reasons](../reference/xml/change-workflow-wit.md)">specifies a default reason as well as optional reasons</a> for tracking the change in state.  </p>
 
 
 
@@ -675,7 +675,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Update fields during workflow changes (Azure DevOps Server)  </b></p>
-<p>You can <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[define rules that change a field value](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
+<p>You can <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[define rules that change a field value](../reference/xml/change-workflow-wit.md)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
 
 <p><b>Apply workflow conditional field rules (Azure DevOps Server)  </b></p>
 <p>You can define rules that <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[change a field value based on the contents of other fields](../organizations/settings/work/rule-reference.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
@@ -686,7 +686,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Event-generated workflow changes or field assignments (Azure DevOps Server)</b></p>
-<p><a href="/azure/devops/reference/xml/automate-field-assignments-state-transition-reason?viewFallbackFrom=vsts" data-raw-source="[Add an action](../reference/xml/automate-field-assignments-state-transition-reason.md?viewFallbackFrom=vsts)">Add an action</a> to a custom workflow definition to automatically transition work items or specify a field value based on an internal Azure DevOps Server event or external event. </p>
+<p><a href="/azure/devops/reference/xml/automate-field-assignments-state-transition-reason?viewFallbackFrom=vsts" data-raw-source="[Add an action](../reference/xml/automate-field-assignments-state-transition-reason.md)">Add an action</a> to a custom workflow definition to automatically transition work items or specify a field value based on an internal Azure DevOps Server event or external event. </p>
 
 <p><b>Visual workflow design tool (Azure DevOps Server)</b></p>
 <p>You can change the workflow or view the workflow state diagram  by using the <a href="https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1" data-raw-source="[Process Editor](https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1)">Process Editor</a>, a power tool for Visual Studio. </p>
@@ -871,11 +871,11 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/features-tfvc-ui-vs.png" alt="Visual Studio TFVC UI pages"/><br/><br/>
 
 <p><b>Set up local or server workspaces</b></p>
-<p><a href="/azure/devops/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine?viewFallbackFrom=vsts" data-raw-source="[Create a local workspace](../repos/tfvc/set-up-team-foundation-version-control-your-dev-machine.md?viewFallbackFrom=vsts)">Create a local workspace</a> that maps to the code base of interest. </p>
+<p><a href="/azure/devops/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine?viewFallbackFrom=vsts" data-raw-source="[Create a local workspace](../repos/tfvc/set-up-team-foundation-version-control-your-dev-machine.md)">Create a local workspace</a> that maps to the code base of interest. </p>
 
 
 <p><b>Resolve conflicts</b></p>
-<p><a href="/azure/devops/repos/tfvc/resolve-team-foundation-version-control-conflicts?viewFallbackFrom=vsts" data-raw-source="[Support for Resolve conflicts that arise](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md?viewFallbackFrom=vsts)">Support for Resolve conflicts that arise</a> when several people work concurrently on a file.</p>
+<p><a href="/azure/devops/repos/tfvc/resolve-team-foundation-version-control-conflicts?viewFallbackFrom=vsts" data-raw-source="[Support for Resolve conflicts that arise](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)">Support for Resolve conflicts that arise</a> when several people work concurrently on a file.</p>
 
 <p><b>Compare files and folders</b></p>
 <p><a href="/previous-versions/bb385981(v=vs.140)" data-raw-source="[Compare server folders and local folders](/previous-versions/bb385981(v=vs.140))">Compare server folders and local folders</a> to each other, and view the differences between the contents of each folder.</p>
@@ -885,22 +885,22 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Track changesets</b></p>
-<p>Find information about which <a href="/azure/devops/repos/tfvc/view-where-when-changesets-have-been-merged?viewFallbackFrom=vsts" data-raw-source="[branches have received a particular set of changes and when those changes were merged](../repos/tfvc/view-where-when-changesets-have-been-merged.md?viewFallbackFrom=vsts)">branches have received a particular set of changes and when those changes were merged</a>.</p>
+<p>Find information about which <a href="/azure/devops/repos/tfvc/view-where-when-changesets-have-been-merged?viewFallbackFrom=vsts" data-raw-source="[branches have received a particular set of changes and when those changes were merged](../repos/tfvc/view-where-when-changesets-have-been-merged.md)">branches have received a particular set of changes and when those changes were merged</a>.</p>
 
 <p><b>Request code review</b></p>
 <p>Increase overall code quality and reduce the risk of creating bugs by <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?viewFallbackFrom=vsts#code_review_request" data-raw-source="[requesting a code review when you check-in code](../repos/tfvc/share-your-code-in-tfvc-vs.md?viewFallbackFrom=vsts#code_review_request)">requesting a code review when you check-in code</a>.</p>
 
 <p><b>Review history of a file</b></p>
-<p><a href="/azure/devops/repos/tfvc/get-history-item?viewFallbackFrom=vsts" data-raw-source="[Get detailed information about what changes have been made to your files](../repos/tfvc/get-history-item.md?viewFallbackFrom=vsts)">Get detailed information about what changes have been made to your files</a>.</p>
+<p><a href="/azure/devops/repos/tfvc/get-history-item?viewFallbackFrom=vsts" data-raw-source="[Get detailed information about what changes have been made to your files](../repos/tfvc/get-history-item.md)">Get detailed information about what changes have been made to your files</a>.</p>
 
 <p><b>Suspend work</b></p>
-<p><a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets?viewFallbackFrom=vsts" data-raw-source="[Use shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md?viewFallbackFrom=vsts)">Use shelvesets</a> when you need to set aside some or all of your work in progress. </p>
+<p><a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets?viewFallbackFrom=vsts" data-raw-source="[Use shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Use shelvesets</a> when you need to set aside some or all of your work in progress. </p>
 
 <p><b>Manage branches, isolate risk</b></p>
-<p>Use branches and locks to <a href="/azure/devops/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control?viewFallbackFrom=vsts" data-raw-source="[isolate risk introduced by work done by different teams](../repos/tfvc/branching-strategies-with-tfvc.md?viewFallbackFrom=vsts)">isolate risk introduced by work done by different teams</a>.</p>
+<p>Use branches and locks to <a href="/azure/devops/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control?viewFallbackFrom=vsts" data-raw-source="[isolate risk introduced by work done by different teams](../repos/tfvc/branching-strategies-with-tfvc.md)">isolate risk introduced by work done by different teams</a>.</p>
 
 <p><b>Merge branches</b></p>
-<p><a href="/azure/devops/repos/tfvc/merge-folders-files?viewFallbackFrom=vsts" data-raw-source="[Integrate work completed in different branches](../repos/tfvc/merge-folders-files.md?viewFallbackFrom=vsts)">Integrate work completed in different branches</a> during certain phases of your project.</p>
+<p><a href="/azure/devops/repos/tfvc/merge-folders-files?viewFallbackFrom=vsts" data-raw-source="[Integrate work completed in different branches](../repos/tfvc/merge-folders-files.md)">Integrate work completed in different branches</a> during certain phases of your project.</p>
 
 
 
@@ -926,7 +926,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Download files from the server</b></p>
-<p><a href="/azure/devops/repos/tfvc/download-get-files-from-server?viewFallbackFrom=vsts" data-raw-source="[Get the latest files from the server](../repos/tfvc/download-get-files-from-server.md?viewFallbackFrom=vsts)">Get the latest files from the server</a> on a regular basis so that the code you develop is compatible with the code developed by others on your team.</p>
+<p><a href="/azure/devops/repos/tfvc/download-get-files-from-server?viewFallbackFrom=vsts" data-raw-source="[Get the latest files from the server](../repos/tfvc/download-get-files-from-server.md)">Get the latest files from the server</a> on a regular basis so that the code you develop is compatible with the code developed by others on your team.</p>
 
 
 <p><b>TFVC permissions</b></p>
@@ -1253,7 +1253,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><a href="../test/test-different-configurations.md" data-raw-source="[Specify a combination of hardware and software](../test/test-different-configurations.md)">Specify a combination of hardware and software</a> that represents a user or machine environment in which your app runs.</p>
 
 <p><b>Test permissions</b></p>
-<p>Set permissions on who can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage test configurations, test environments, and publish and delete test results](../organizations/security/set-project-collection-level-permissions.md)">manage test configurations, test environments, and publish and delete test results</a>.</p>
+<p>Set permissions on who can <a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[manage test configurations, test environments, and publish and delete test results](../organizations/security/change-project-level-permissions.md)">manage test configurations, test environments, and publish and delete test results</a>.</p>
 
 
 
@@ -1354,11 +1354,11 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 <a id="power-bi">  </a>
 
-### Power BI dashboards and reports (Azure DevOps Services)
+### Power BI dashboards and reports
 
 <table>
 <tbody>
@@ -1394,69 +1394,69 @@ Use features supported by these familiar clients to manage your project and illu
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range="<= azure-devops-2020"
 
 <a id="sql-server-reports">  </a>
 
 ### SQL Server Reports (Azure DevOps Server)
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="33%">
+---
+:::row:::
+   :::column span="1":::
+      **Reporting Services reports**  
+      You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process [Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md) that you choose.  
 
-<p><b>Reporting Services reports</b></p>
-<p>You can <a href="/azure/devops/report/sql-reports/reporting-services-reports" data-raw-source="[analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](../report/sql-reports/reporting-services-reports.md)">analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services</a>. These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process - <a href="../boards/work-items/guidance/choose-process.md" data-raw-source="[Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md)">Agile, Scrum, or CMMI</a> - that you choose.   </p>
+      **Add Reporting Services reports**  
+      If you need to add reporting services to a project or on-premises Azure DevOps Server after you've created your team projects, you can by [adding a report server and uploading reports](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 
-<p><b>Add Reporting Services reports</b></p>
-<p>If you need to add reporting services to a project or on-premises Azure DevOps Server after you&#39;ve created your team projects, you can by <a href="../report/admin/add-reports-to-a-team-project.md" data-raw-source="[adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md)">adding a report server and uploading reports</a>.</p>
+      **Manage the data warehouse**  
+      The reporting warehouse is a traditional data warehouse that consists of a [relational database and an Analysis Services database](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube). You manage it through the following activities:  
+      - [Manually process the data warehouse](/previous-versions/azure/devops/report/admin/manually-process-data-warehouse-and-cube)
+      - [Rebuild the data warehouse](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube)
+      - [Resolve schema conflicts](/previous-versions/azure/devops/report/admin/resolve-schema-conflicts)
+      - [Change a process control setting](/previous-versions/azure/devops/report/admin/change-a-process-control-setting) 
+   :::column-end:::
+   :::column span="1":::
+      **Build reports**  
+      Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code.  
+      - [Build Quality Indicators](/previous-versions/azure/devops/report/sql-reports/build-quality-indicators-report) 
+      - [Build Success Over Time](/previous-versions/azure/devops/report/sql-reports/build-success-over-time-report)
+      - [Build Summary](/previous-versions/azure/devops/report/sql-reports/build-summary-report)
+       
+      **Test and bug reports**  
+      Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.  
+      - [Test Case Readiness](/previous-versions/azure/devops/report/sql-reports/test-case-readiness-report) 
+      - [Test Plan Progress](/previous-versions/azure/devops/report/sql-reports/test-plan-progress-report)"
+      - [Bug Status](/previous-versions/azure/devops/report/sql-reports/bug-status-report)
+      - [Bug Trends](/previous-versions/azure/devops/report/sql-reports/bug-trends-report)
+      - [Reactivations](/previous-versions/azure/devops/report/sql-reports/reactivations-report) 
 
-<p><b>Manage the data warehouse</b></p>
-<p>The reporting warehouse is a traditional data warehouse that consists of a <a href="../report/admin/manage-reports-data-warehouse-cube.md" data-raw-source="[relational database and an Analysis Services database](../report/admin/manage-reports-data-warehouse-cube.md)">relational database and an Analysis Services database</a>. You manage it through the following activities:</p>
+      **Required team activities to generate useful reports**
+      To gain useful, actionable information from your reports, [team members must perform certain activities](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports).
+   :::column-end:::
+   :::column span="1":::
+      **Project management**
+      Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities.  
+      *Scrum reports*  
+      - [Backlog Overview](/previous-versions/azure/devops/report/sql-reports/backlog-overview-scrum)
+      - [Release Burndown](/previous-versions/azure/devops/report/sql-reports/release-burndown)
+      - [Sprint Burndown](/previous-versions/azure/devops/report/sql-reports/sprint-burndown-scrum)
+      - [Velocity](/previous-versions/azure/devops/report/sql-reports/velocity)
+      *Agile and CMMI*  
+      - [Burndown and Burn Rate](/previous-versions/azure/devops/report/sql-reports/burndown-and-burn-rate-report)
+      - [Remaining Work](/previous-versions/azure/devops/report/sql-reports/remaining-work-report)
+      - [Requirements Overview (CMMI)](/previous-versions/azure/devops/report/sql-reports/requirements-overview-report-cmmi) 
+      - [Status of All Iterations](/previous-versions/azure/devops/report/sql-reports/status-on-all-iterations-report)
+      - [Stories Overview (Agile)](/previous-versions/azure/devops/report/sql-reports/stories-overview-report-agile)
+      - [Stories Progress (Agile)](/previous-versions/azure/devops/report/sql-reports/stories-progress-report-agile)
+      - [Unplanned Work](/previous-versions/azure/devops/report/sql-reports/unplanned-work)
 
-- <a href="../report/admin/manually-process-data-warehouse-and-cube.md" data-raw-source="[Manually process the data warehouse](../report/admin/manually-process-data-warehouse-and-cube.md)">Manually process the data warehouse</a><br/>- <a href="../report/admin/rebuild-data-warehouse-and-cube.md" data-raw-source="[Rebuild the data warehouse](../report/admin/rebuild-data-warehouse-and-cube.md)">Rebuild the data warehouse</a><br/>- <a href="../report/admin/resolve-schema-conflicts.md" data-raw-source="[Resolve schema conflicts](../report/admin/resolve-schema-conflicts.md)">Resolve schema conflicts</a><br/>- <a href="../report/admin/change-a-process-control-setting.md" data-raw-source="[Change a process control setting](../report/admin/change-a-process-control-setting.md)">Change a process control setting</a><br/><br/>
-</td>
-<td width="33%">
+     **Set permissions to view or create reports**  
+     Enable members of your team to [view or manage Reporting Services reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). To create or modify reports, you need to grant them access to read databases.  
+   :::column-end:::
+:::row-end:::
+---
 
-<p><b>Build reports</b></p>
-<p>Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code.</p>
-
-- <a href="/azure/devops/report/sql-reports/build-quality-indicators-report" data-raw-source="[Build Quality Indicators](../report/sql-reports/build-quality-indicators-report.md)">Build Quality Indicators</a> (Agile &amp; CMMI)<br/>- <a href="/azure/devops/report/sql-reports/build-success-over-time-report" data-raw-source="[Build Success Over Time](../report/sql-reports/build-success-over-time-report.md)">Build Success Over Time</a><br/>- <a href="/azure/devops/report/sql-reports/build-summary-report" data-raw-source="[Build Summary](../report/sql-reports/build-summary-report.md)">Build Summary</a><br/>
-<br/>
-
-<p><b>Test and bug reports</b></p>
-<p>Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team&#39;s capacity to find and resolve bugs.</p>
-
-- <a href="/azure/devops/report/sql-reports/test-case-readiness-report" data-raw-source="[Test Case Readiness](../report/sql-reports/test-case-readiness-report.md)">Test Case Readiness</a><br/>- <a href="/azure/devops/report/sql-reports/test-plan-progress-report" data-raw-source="[Test Plan Progress](../report/sql-reports/test-plan-progress-report.md)">Test Plan Progress</a><br/>- <a href="/azure/devops/report/sql-reports/bug-status-report" data-raw-source="[Bug Status](../report/sql-reports/bug-status-report.md)">Bug Status</a> (Agile &amp; CMMI)<br/>- <a href="/azure/devops/report/sql-reports/bug-trends-report" data-raw-source="[Bug Trends](../report/sql-reports/bug-trends-report.md)">Bug Trends</a> (Agile &amp; CMMI)<br/>- <a href="/azure/devops/report/sql-reports/reactivations-report" data-raw-source="[Reactivations](../report/sql-reports/reactivations-report.md)">Reactivations</a> (Agile &amp; CMMI)<br/>
-<br/>
-
-<p><b>Required team activities to generate useful reports</b></p>
-<p>To gain useful, actionable information from your reports, <a href="../report/admin/review-team-activities-for-useful-reports.md" data-raw-source="[team members must perform certain activities](../report/admin/review-team-activities-for-useful-reports.md)">team members must perform certain activities</a>. </p>
-
-
-</td>
-<td width="33%">
-
-<p><b>Project management </b></p>
-<p>Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities. </p>
-
-<p><em>Scrum reports</em></p>
-- <a href="/azure/devops/report/sql-reports/backlog-overview-scrum">Backlog Overview</a><br/>- <a href="/azure/devops/report/sql-reports/release-burndown">Release Burndown</a><br/>- <a href="/azure/devops/report/sql-reports/sprint-burndown-scrum">Sprint Burndown</a><br/>- <a href="/azure/devops/report/sql-reports/velocity">Velocity</a><br/><br/>
-<p><em>Agile and CMMI</em></p>
-
-- <a href="/azure/devops/report/sql-reports/burndown-and-burn-rate-report">Burndown and Burn Rate</a><br/>- <a href="/azure/devops/report/sql-reports/remaining-work-report">Remaining Work</a><br/>- <a href="/azure/devops/report/sql-reports/requirements-overview-report-cmmi">Requirements Overview</a> (CMMI)<br/>- <a href="/azure/devops/report/sql-reports/requirements-progress-report-cmmi">Requirements Progress</a> (CMMI)<br/>- <a href="/azure/devops/report/sql-reports/status-on-all-iterations-report">Status of All Iterations</a> (similar to Velocity)<br/>- <a href="/azure/devops/?viewFallbackFrom=vsts">Stories Overview</a>   (Agile)<br/>- <a href="/azure/devops/?viewFallbackFrom=vsts">Stories Progress</a> (Agile)<br/>- <a href="/azure/devops/report/sql-reports/unplanned-work">Unplanned Work</a><br/>
-<br/>
-
-<p><b>Set permissions to view or create reports</b></p>
-<p>Enable members of your team to <a href="../report/admin/grant-permissions-to-reports.md" data-raw-source="[view or manage Reporting Services reports](../report/admin/grant-permissions-to-reports.md)">view or manage Reporting Services reports</a>. To create or modify reports, you need to grant them access to read databases. </p>
-
-
-
-
-</td>
-</tr>
-</tbody>
-</table>
 
 ::: moniker-end
 
@@ -1476,19 +1476,18 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Drag-and-drop widgets</b></p>
 <p>Drag widgets, tiles, or charts anywhere on a dashboard to <a href="../report/dashboards/dashboards.md" data-raw-source="[configure the layout you want](../report/dashboards/dashboards.md)">configure the layout you want</a>. </p>
 
-<h4><i>Informational content and other links</i></h4>
+<h4>Informational content and other links</h4>
 
 
 <p><b>Markdown widget</b></p>
-<p>Adds a configurable tile to your dashboard to <a href="../report/dashboards/widget-catalog.md#markdown-widget" data-raw-source="[display any type of information, guidance, or links](../report/dashboards/widget-catalog.md#markdown-widget)">display any type of information, guidance, or links</a> that you want using markdown syntax.   </p>
+<p>Adds a configurable tile to your dashboard to <a href="../report/dashboards/widget-catalog.md#markdown-widget" data-raw-source="[display any type of information, guidance, or links](../report/dashboards/widget-catalog.md#markdown-widget)">display any type of information, guidance, or links</a> that you want using Markdown syntax.   </p>
 <img src="media/features/alm-feature-markdown-widget.png" alt="Markdown widget"/><br/><br/>
 
 
 <p><b>Team member </b></p>
 <p>Opens the team&#39;s quick dialog to <a href="../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[add or remove team members](../report/dashboards/widget-catalog.md#team-members-widget)">add or remove team members</a>.</p>
 <img src="media/features/alm-feature-manage-members-widget.png" alt="Team member widget"/><br/>
-<p><b>Team rooms </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+
 
 <p><b>Visual Studio widget</b></p>
 <p><a href="../report/dashboards/widget-catalog.md#visual-studio-widget" data-raw-source="[Provides links to open or download Visual Studio](../report/dashboards/widget-catalog.md#visual-studio-widget)">Provides links to open or download Visual Studio</a>. The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren&#39;t available through the web portal). </p>
@@ -1498,7 +1497,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Provides quick access to <a href="../report/dashboards/widget-catalog.md#how-to-widget" data-raw-source="[getting started info on how to track work, code, build, and test](../report/dashboards/widget-catalog.md#how-to-widget)">getting started info on how to track work, code, build, and test</a>. </p>
 <img src="../report/dashboards/media/widget-how-to.png" alt="How to links widget"/><br/><br/>
 
-<h4><i>Code widgets</i></h4>
+<h4>Code widgets</h4>
 
 <p><b>Code tile </b></p>
 <p>Configurable tile to display <a href="../report/dashboards/widget-catalog.md#code-tile-widget" data-raw-source="[status and links to a Git or TFVC code repository, branch, or folder](../report/dashboards/widget-catalog.md#code-tile-widget)">status and links to a Git or TFVC code repository, branch, or folder</a>.
@@ -1513,7 +1512,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 
-<h4><i>Plan and track work</i></h4>
+<h4>Plan and track work</h4>
 
 
 <p><b>Assigned to me widget  </b></p>
@@ -1570,7 +1569,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Provides quick access links from a team dashboard to open the <a href="../report/dashboards/widget-catalog.md#work-links-widget" data-raw-source="[team backlog, Kanban board, task board, and queries](../report/dashboards/widget-catalog.md#work-links-widget)">team backlog, Kanban board, task board, and queries</a>.   </p>
 
 
-<h4><i>Build and test widgets</i></h4>
+<h4>Build and test widgets</h4>
 
 <p><b>Chart for build history </b></p>
 <p>Configurable tile to display the <a href="../report/dashboards/widget-catalog.md#build-history-widget" data-raw-source="[histogram for a specific build definition](../report/dashboards/widget-catalog.md#build-history-widget)">histogram for a specific build definition</a>.
@@ -1589,7 +1588,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 
-<h4><i>Extensibility</i></h4>
+<h4>Extensibility</h4>
 
 <p><b>Marketplace widgets</b></p>
 <p>You can find additional widgets by browsing the <a href="https://marketplace.visualstudio.com/search?term=webpage%20widget&amp;target=vsts&amp;sortby=relevance." data-raw-source="[Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&amp;target=vsts&amp;sortby=relevance.)">Marketplace</a></p>
@@ -2044,12 +2043,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project admin context</b></p>
-<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)"> manage permissions</a>. From any project hub, choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context.</p>
+<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-project-level-permissions.md)"> manage permissions</a>. From any project hub, choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context.</p>
 <img src="media/features/alm-feature-admin-context.png" alt="Admin context"/><br/><br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context, and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can <a href="../organizations/security/change-organization-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context, and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2069,7 +2068,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Quick work item search</b></p>
-<p>Find work items based on <a href="/azure/devops/boards/queries/example-queries?viewFallbackFrom=vsts" data-raw-source="[ID, assignment, changed date, or keyword](../boards/queries/about-managed-queries.md?viewFallbackFrom=vsts)">ID, assignment, changed date, or keyword</a>. </p>
+<p>Find work items based on <a href="/azure/devops/boards/queries/example-queries?viewFallbackFrom=vsts" data-raw-source="[ID, assignment, changed date, or keyword](../boards/queries/about-managed-queries.md)">ID, assignment, changed date, or keyword</a>. </p>
 <img src="media/features/alm-index-search-work-items-vsts.png" alt="Search work item box"/><br/><br/>
 
 
@@ -2104,7 +2103,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. Bulk update work items to add or remove tags: <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags)">Azure DevOps Services</a> | <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Azure DevOps Server](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Azure DevOps Server</a>. </p>
 <img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
 
-&lt;p
 </td>
 <td width="33%">
 
@@ -2181,7 +2179,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li><a href="../repos/git/branch-permissions.md" data-raw-source="[Git branches](../repos/git/branch-permissions.md)">Git branches</a></li>
 <li><a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC source code and folders](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC source code and folders</a></li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build](../pipelines/policies/set-permissions.md)">Build</a></li>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a>)</li>
+<li><a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[Test](../organizations/security/change-project-level-permissions.md)">Test</a>)</li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Release](../pipelines/policies/set-permissions.md)">Release</a></li>
 </ul>
 <br/>
@@ -2207,8 +2205,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Manage administrative permissions </b></p>
 <p>Add users to one of the following built-in groups to provide them permissions assigned to that group: </p>
 <ul>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
-<li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>
+<li><a href="../organizations/security/change-project-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/change-project-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
+<li><a href="../organizations/security/change-organization-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/change-organization-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>
 <li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator)">Azure DevOps Server Administrators</a>, who manage on-premises application servers </li>
 </ul>
 <br/>
@@ -2239,10 +2237,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../organizations/security/permissions.md" data-raw-source="[Provide or restrict access](../organizations/security/permissions.md)">Provide or restrict access</a> for practically any feature, function, or object at the collection or project level. </p>
 
 <p><b>SharePoint permissions (Azure DevOps Server)</b></p>
-<p>Grant permissions to <a href="/azure/devops/organizations/security/add-users-team-project?viewFallbackFrom=vsts" data-raw-source="[view and contribute to SharePoint project portals](../organizations/security/add-users-team-project.md?viewFallbackFrom=vsts)">view and contribute to SharePoint project portals</a>.</p>
+<p>Grant permissions to <a href="/azure/devops/organizations/security/add-users-team-project?viewFallbackFrom=vsts" data-raw-source="[view and contribute to SharePoint project portals](../organizations/security/add-users-team-project.md)">view and contribute to SharePoint project portals</a>.</p>
 
 <p><b>SQL Server reporting permissions (Azure DevOps Server)</b></p>
-<p>Grant permissions to <a href="../report/admin/grant-permissions-to-reports.md" data-raw-source="[view and author Excel and SQL Server reports](../report/admin/grant-permissions-to-reports.md)">view and author Excel and SQL Server reports</a>.</p>
+<p>Grant permissions to <a href="/previous-versions/azure/devops/report/admin/grant-permissions-to-reports" data-raw-source="[view and author Excel and SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports)">view and author Excel and SQL Server reports</a>.</p>
 
 
 
@@ -2396,7 +2394,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="process-templates"></a>
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Process templates (Azure DevOps Server)
 
@@ -2407,7 +2405,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process template?</b></p>
-<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your project. Process templates support full <a href="/azure/devops/reference/process-templates/customize-process?viewFallbackFrom=vsts" data-raw-source="[customization of all its objects](../reference/process-templates/customize-process.md?viewFallbackFrom=vsts)">customization of all its objects</a>. </p>
+<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your project. Process templates support full <a href="/azure/devops/reference/process-templates/customize-process?viewFallbackFrom=vsts" data-raw-source="[customization of all its objects](../reference/process-templates/customize-process.md)">customization of all its objects</a>. </p>
 
 <p><b>Manage process templates </b></p>
 <p><a href="../boards/work-items/guidance/manage-process-templates.md" data-raw-source="[Download and upload process templates](../boards/work-items/guidance/manage-process-templates.md)">Download and upload process templates</a> to support customization and upgrade of your work tracking experience and team projects. </p>
@@ -2419,7 +2417,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Process template files</b></p>
-<p>You customize the initial configuration of team projects by <a href="/azure/devops/reference/process-templates/overview-process-template-files?viewFallbackFrom=vsts" data-raw-source="[customizing one or more process template files](../reference/process-templates/overview-process-template-files.md?viewFallbackFrom=vsts)">customizing one or more process template files</a>. By customizing these files, you can define the initial configuration of all team projects that are created from the process template. </p>
+<p>You customize the initial configuration of team projects by <a href="/azure/devops/reference/process-templates/overview-process-template-files?viewFallbackFrom=vsts" data-raw-source="[customizing one or more process template files](../reference/process-templates/overview-process-template-files.md)">customizing one or more process template files</a>. By customizing these files, you can define the initial configuration of all team projects that are created from the process template. </p>
 
 
 <p><b>Configure Features Wizard</b></p>
@@ -2434,7 +2432,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Customize the Microsoft Project field mapping file </b></p>
-<p>You can <a href="/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
+<p>You can <a href="/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
 
 
 </td>
@@ -2494,7 +2492,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Upload reports (Azure DevOps Server) </b></p>
-<p><a href="../report/admin/upload-reports.md" data-raw-source="[Upload the latest reports provided for your process](../report/admin/upload-reports.md)">Upload the latest reports provided for your process</a> or add reports after you&#39;ve already created a project by adding SQL Server Reporting Services.  </p>
+<p><a href="/previous-versions/azure/devops/report/admin/upload-reports" data-raw-source="[Upload the latest reports provided for your process](/previous-versions/azure/devops/report/admin/upload-reports)">Upload the latest reports provided for your process</a> or add reports after you&#39;ve already created a project by adding SQL Server Reporting Services.  </p>
 </td>
 </tr>
 </tbody>
@@ -2566,10 +2564,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
 
 
-<p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a <a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
-
-
 <p><b>Team groups</b></p>
 <p>A <a href="../organizations/settings/about-teams-and-settings.md#team-group" data-raw-source="[team group is created](../organizations/settings/about-teams-and-settings.md#team-group)">team group is created</a> when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
@@ -2619,7 +2613,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the <a href="../boards/backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md)">Git Development section</a>. Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
 <img src="media/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
 <p><b>TFVC code changes </b></p>
-<p><a href="/azure/devops/repos/tfvc/get-history-item?viewFallbackFrom=vsts" data-raw-source="[Get detailed information about what changes have been made to your files](../repos/tfvc/get-history-item.md?viewFallbackFrom=vsts)">Get detailed information about what changes have been made to your files</a>, compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
+<p><a href="/azure/devops/repos/tfvc/get-history-item?viewFallbackFrom=vsts" data-raw-source="[Get detailed information about what changes have been made to your files](../repos/tfvc/get-history-item.md)">Get detailed information about what changes have been made to your files</a>, compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
 
 <p><b>Build changes</b></p>
 <p>Determine who <a href="../pipelines/build/history.md" data-raw-source="[changed what in the build definition and when they did it](../pipelines/build/history.md)">changed what in the build definition and when they did it</a>.</p>

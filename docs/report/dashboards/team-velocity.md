@@ -9,13 +9,13 @@ ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops' 
-ms.date: 09/28/2021
+ms.date: 04/04/2022
 ---
 
 
 # View or configure team velocity
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -36,7 +36,7 @@ Teams track their velocity to help them determine how much work they can do spri
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. Each team is associated with one and only one velocity chart.  
 
@@ -78,14 +78,13 @@ Use this article to learn:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 > [!div class="checklist"] 
 > * How to view the Velocity in-context report (work tracking data store) 
 > * Required and recommended team activities to support velocity tracking   
 
 ::: moniker-end
-
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -136,7 +135,7 @@ Use this article to learn:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
@@ -150,13 +149,6 @@ To select another team, open the project and team selector. Select a different t
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-On your web browser, open your team's product backlog. Select **Boards** > **Backlogs**. 
-
-![Boards > backlogs, TFS 2015, 2013 web portal](/azure/devops/boards/backlogs/media/backlogs-boards-plans/open-backlog-tfs-2015.png)
-
-::: moniker-end
 
 <a id="velocity-chart">   </a>
 
@@ -246,7 +238,7 @@ Velocity reports are available for each backlog level, both product and portfoli
    > Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
    ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1.	From the web portal, open the product backlog and then select the velocity chart.  
 

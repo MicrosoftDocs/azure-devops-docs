@@ -7,17 +7,17 @@ author: arob98
 manager: angrobe
 ms.author: angrobe
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.date: 04/16/2020
-monikerRange: '>= tfs-2018'
+ms.date: 01/28/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Universal Package task
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to download, or package and publish Universal Packages.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -127,7 +127,7 @@ steps:
   inputs:
     command: publish
     publishDirectory: Application
-    vstsFeedPublish: '00000000-0000-0000-0000-000000000000/00000000-0000-0000-0000-000000000002'
+    vstsFeedPublish: '00000000-0000-0000-0000-000000000000/00000000-0000-0000-0000-000000000002' # You can also use '<projectName>/<feedName>' instead of the GUIDs
     vstsFeedPackagePublish: mygatsbysite
     packagePublishDescription: 'A test package'
 ```
@@ -135,7 +135,7 @@ steps:
 This example demonstrated how to use the Pipelines task builder to quickly generate the YAML for the Universal Package task, which can then be placed into your `azure-pipelines.yml` file. The Universal Package task builder supports all of the advanced configurations that can be created with **Universal Package** task's arguments.
 
 > [!NOTE]
-> All feeds created through the classic user interface are project-scoped feeds. For the `vstsFeedPublish` parameter, you can also use the project and feed's names instead of their GUIDs like the following: `'<projectName>/<feedName>'`. See [Publish your Universal packages](../../artifacts/universal-packages.md) for more details.
+> Publishing a package directly to a view is not supported in Azure Artifacts. You must publish the package to your feed first, then promote it to a view.
 
 ## Open-source on GitHub
 

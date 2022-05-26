@@ -7,11 +7,13 @@ ms.technology: devops-agile
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 10/01/2021
 ---
 
 # Overview of extensions for Azure Boards
+
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links. For information on developing your own extension, see [Develop a web extension](../../extend/get-started/node.md).
  
@@ -27,12 +29,8 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ## Product planning 
 
-::: moniker range=">= tfs-2017 <= azure-devops"
-
 > [!NOTE]   
 > Several extensions, such as the Feature Timeline and Epic Roadmap extension and the Dependency Tracker extension, are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -95,16 +93,9 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-- [Delivery Plans](../plans/review-team-plans.md)
-- [Feature Timeline](feature-timeline.md)
-- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-::: moniker-end
-
-
 ## Customize work item types
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
 - [Multivalue control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)
@@ -117,7 +108,6 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work)
- 
 
 ::: moniker-end
 
@@ -134,7 +124,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 ## Dashboards
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 - [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
 ::: moniker-end
 
@@ -146,6 +136,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker-end
 
 ## DevOps integration
+
 - [Creates a new work item from a build or release](https://marketplace.visualstudio.com/items?itemName=mspremier.CreateWorkItem#adding-the-task-to-a-yaml-definition)
  
 ## Command-line interface

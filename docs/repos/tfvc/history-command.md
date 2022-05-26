@@ -5,19 +5,23 @@ description: History command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# History command
+# History command  (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Displays the revision history of one or more files or folders. The data is displayed in either the History window, or if **/noprompt** option is specified, at the command prompt.
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
 
+See  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 ```
 tf hist[ory] itemspec [/version:versionspec] 
 [/stopafter:number] [/recursive] [/user:username] 

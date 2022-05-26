@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 02/12/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # cURL Upload Files task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to use [cURL](https://curl.haxx.se/) to upload files with supported protocols
 such as FTP, FTPS, SFTP, HTTP, and more.

@@ -14,7 +14,7 @@ ms.date: 02/14/2017
 
 # All WITD XML elements reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a project, such as a bug, requirement, or risk. You [create a project](../../organizations/projects/create-project.md) either in Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
 
@@ -158,7 +158,7 @@ The structural elements used in the previous example are described in the follow
    **FORM**
    :::column-end:::
    :::column span="3":::
-   Specifies the  [design of the work item form](design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.
+   Specifies the  [design of the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true) by defining the fields and controls that appear on the form and in what order.
 
    **For TFS 2015 and earlier versions**, the **FORM** element contains **Layout**, **Control**, **Group**, **TAB**, **TabGroup**, **Splitter**, and other elements. 
 
