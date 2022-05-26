@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
-> The [NuGet Authenticate](../package/nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. The restore and push commands of this task no longer take new features and only critical bugs are addressed. 
+> The [NuGet Authenticate](../package/nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. The restore and push commands of this .NET Core CLI task no longer take new features and only critical bugs are addressed. 
 
 **Azure Pipelines**
 
