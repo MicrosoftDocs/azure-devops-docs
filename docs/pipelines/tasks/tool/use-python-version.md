@@ -11,7 +11,7 @@ monikerRange: azure-devops
 
 # Use Python Version task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to select a version of Python to run on an agent, and optionally add it to PATH.
 

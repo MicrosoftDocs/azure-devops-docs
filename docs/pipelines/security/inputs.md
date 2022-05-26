@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # How to securely use variables and parameters in your pipeline
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 This article discusses how to securely use variables and parameters to gather input from pipeline users. If you'd like to learn more about using variables and parameters, see:
 
 * [Define variables](../process/variables.md)

@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.date: 04/04/2022
 ---
 
 ::: moniker range=">= azure-devops-2020"
@@ -24,7 +25,7 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 Feeds have three permission roles: Readers, Contributors, and Owners. Owners can add user accounts or security groups -to any role.
 

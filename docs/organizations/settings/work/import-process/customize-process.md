@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration
 ms.technology: devops-agile
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -12,7 +13,7 @@ ms.date: 09/25/2020
 
 # Customize a Hosted XML process
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 Azure DevOps Services supports adding and updating processes through an administrative experience that is a web-based [import process](import-process.md). After you add a process, you can create one or more projects from it. You can update the process at any time by importing it again. The changes made to the process template are then applied to all projects that use the process.
 

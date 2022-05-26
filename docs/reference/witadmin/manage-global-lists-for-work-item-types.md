@@ -1,25 +1,26 @@
 ---
 title: Import and export global lists using witadmin
-titleSuffix: Azure DevOps Server 
-description: Customize or update a global list by export/import using witadmin for Team Foundation Server 
+titleSuffix: Azure DevOps  
+description: Customize or update a global list by export/import using witadmin for Azure DevOps
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/26/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Manage global lists for work item types
 
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 Global lists are pick lists that you can include in one or more fields and types of work items. Use them to minimize the work that is required to update a list that is shared by multiple types of work items. Because global lists are defined for a project collection, they can be included in work item types for all projects within the collection.  
   
 > [!NOTE]    
->**Feature availability:**&#160;Hosted XML customization supports adding and updating global lists. To learn more, see [Process template customizations differences](../../organizations/settings/work/import-process/differences.md).   
+> The Hosted XML process model supports adding and updating global lists. To learn more, see [Process template customizations differences](../../organizations/settings/work/import-process/differences.md).   
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:    
 - **destroygloballist**:  Destroys a global list.    

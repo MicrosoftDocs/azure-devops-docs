@@ -13,7 +13,8 @@ ms.date: 11/07/2021
 
 # Set the Work Items experience
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019**  
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]   
 
 Visual Studio 2019 supports switching between the default view of the Work Items page and the legacy view. The default view is designed to match the Work Items page available in the web portal. The legacy view supports the Work Items page available with the previous versions of Visual Studio. 
 
@@ -42,7 +43,7 @@ Each view supports the following tasks:
    - [Organize query folders and set query permissions](../queries/set-query-permissions.md)
    - [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
    - [Email query results list using Outlook](../queries/share-plans.md)
-   - [Create reports from query in Excel](../../report/create-status-and-trend-excel-reports.md) (on-premises Azure DevOps Server only)
+   - [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) (on-premises Azure DevOps Server only)
    
    :::column-end:::
 :::row-end:::

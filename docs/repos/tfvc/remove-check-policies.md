@@ -5,22 +5,25 @@ description: Remove Check-In Policies
 ms.assetid: fb4b62ef-e413-4f03-81fe-ae560c9f60ff
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Remove Check-In Policies
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control. For example, a user can be required to associate a work item with a changeset. For more information, see [Add Check-In Policies](add-check-policies.md). The following procedure demonstrates how to remove a check-in policy from your project.
 
-**Required Permissions**
+## Prerequisites
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
-## Procedure
-### To remove a check-in policy
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+
+## Remove a check-in policy
 
 1.  From the **Team** menu, choose **Project Settings**, and then select **Source Control**.
 
@@ -30,14 +33,8 @@ To complete this procedure, you must have the **Edit project-level information**
 
 4.  Click **OK**.
 
-## See Also
+## Related articles
 
-#### Concepts
-
-[Set and Enforce Quality Gates](set-enforce-quality-gates.md)
-
-[Working with Changesets](find-view-changesets.md)
-
-#### Other Resources
-
-[Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))
+- [Set and Enforce Quality Gates](set-enforce-quality-gates.md)
+- [Working with Changesets](find-view-changesets.md)
+- [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))

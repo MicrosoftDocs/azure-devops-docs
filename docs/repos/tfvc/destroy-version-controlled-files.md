@@ -5,14 +5,15 @@ description: Destroy Version Controlled Files
 ms.assetid: 9be4d796-b448-4084-a102-a0e95e7b0053
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Destroy Version Controlled Files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Over time, a version control server acquires a growing number of files and folders. This can cause problems as you try to manage disk space requirements. You might be forced to remove all the projects and their hierarchies from version control. For example, a project might be created for learning purposes only, or perhaps some files are contaminated with a virus. Therefore, as a Team Foundation administrator, occasionally you may have to destroy files and folders that are under version control.
 
@@ -21,9 +22,9 @@ The following procedure shows you how to destroy files and folders by using the 
 > [!NOTE]
 > This operation is available only from the command-line.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **destroy** command, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **destroy** command, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 ## Prerequisites for Running tf destroy
 Before you run **tf destroy** without the **/keephistory** option, we recommend that you first delete the files you want to destroy. For more information, see [Delete Files and Folders from Version Control](delete-restore-files-folders.md). After you delete a file, its file name now includes a deletion ID. For example, if a file name is aFile.cs, after deletion the file name is aFile.cs;x123, where x123 is the deletion ID.
 
@@ -59,9 +60,9 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
         > [!NOTE]
         > **/preview** cannot be specified with **/keephistory**.
 
-        This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [View Historical Data](/previous-versions/visualstudio/visual-studio-2010/ms181415(v=vs.100)).
+        This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [Get the history of an item](get-history-item.md).
 
-    -   Use the **/stopat** option to retain the historical information up to and including a *versionSpec* value. The *versionSpec* value can be the latest version, a specific changeset, or a date. For more information about *versionspec* values, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+    -   Use the **/stopat** option to retain the historical information up to and including a *versionSpec* value. The *versionSpec* value can be the latest version, a specific changeset, or a date. For more information about *versionspec* values, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
         To destroy all the files in the project MyTeamProject and, at the same time, retain the history for the files up to and including 10/23/2005, type:
 
@@ -77,20 +78,9 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
         >tf destroy /startcleanup $/MyTeamProject/aFolder
         ```
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Move, Rename, and Delete Version-Controlled Files and Folders](rename-move-files-folders.md)
-
-#### Reference
-
-[Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)
-
-#### Concepts
-
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
-
-#### Other Resources
-
-[Team Foundation Version Control Command-Line Reference](use-team-foundation-version-control-commands.md)
+- [Move, Rename, and Delete Version-Controlled Files and Folders](rename-move-files-folders.md)
+- [Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)
+- [What is TFVC?, Operations available only from the tf command-line](what-is-tfvc.md#command-line-only)
+- [Team Foundation Version Control Command-Line Reference](use-team-foundation-version-control-commands.md)

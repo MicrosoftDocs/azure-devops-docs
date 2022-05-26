@@ -8,6 +8,8 @@ monikerRange: 'azure-devops'
 
 # Share packages publicly
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet.
 
 ## Prerequisites
@@ -46,17 +48,20 @@ If you want to publish NuGet packages using the dotnet or nuget CLI, make sure y
 
 ### Publish packages using the command line
 
-- [Publish and consume NuGet packages](../get-started-nuget.md)
-- [Publish and consume npm packages](../get-started-npm.md)
-- [Publish and consume Maven artifacts](../get-started-maven.md)
-- [Publish and consume Python packages](../quickstarts/python-packages.md)
+- [NuGet](../get-started-nuget.md)
+- [Npm](../get-started-npm.md)
+- [Maven](../get-started-maven.md)
+- [Publish Maven packages with Gradle](../maven/publish-package-gradle.md)
+- [Python](../quickstarts/python-packages.md)
+- [Universal Packages](../quickstarts/universal-packages.md)
 
 ### Publish packages using Azure Pipelines
 
-- [Publish NuGet packages from Azure Pipelines](../../pipelines/artifacts/nuget.md)
-- [Publish npm packages from Azure Pipelines](../../pipelines/artifacts/npm.md)
-- [Publish Python packages from Azure Pipelines](../../pipelines/artifacts/pypi.md)
-- [Publish Maven artifacts using Gradle](../../pipelines/artifacts/publish-package-gradle.md)
+- [NuGet](../../pipelines/artifacts/nuget.md)
+- [Npm](../../pipelines/artifacts/npm.md)
+- [Python](../../pipelines/artifacts/pypi.md)
+- [Maven](../../pipelines/artifacts/pull-package-gradle.md)
+- [Universal Packages](../../pipelines/artifacts/universal-packages.md)
 
 ## Share packages
 

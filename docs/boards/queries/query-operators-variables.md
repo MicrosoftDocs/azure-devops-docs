@@ -15,7 +15,7 @@ ms.date: 10/25/2021
 
 # Query fields, operators, and macros in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
@@ -514,7 +514,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    
    > [!NOTE]
-   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (AAD) when your Azure Boards account is backed by AAD, or Active Directory (AD) when your on-premises server instance is backed by Active Directory.  
+   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (Azure AD) when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.  
 
    For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&amp;bc=/azure/devops/reference/breadcrumb/toc.json).
 
@@ -533,7 +533,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
     **String**  that matches the name of a user group in Team Foundation Server or a category group defined for a project.
 
    > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD.     
+   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure AD when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.     
 
    :::column-end:::
 :::row-end:::

@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '< azure-devops'
-ms.date: 05/06/2019
+ms.date: 04/04/2022
 ---
 
 
 # On-premises XML process customization
 
-[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
@@ -28,7 +28,7 @@ For Azure DevOps Server 2019 and later versions, you have a choice of process mo
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Team Foundation Server uses the On-premises XML process model to support customizations. This model relies on updating and importing XML files using the **witadmin** command line tool. 
 ::: moniker-end  
@@ -77,7 +77,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    - [Area paths](../organizations/settings/set-area-paths.md) 
    - [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
    - [Add a custom pick list](add-modify-field.md#picklist)  
-   - [Modify a pre-defined pick list](add-modify-field.md#picklist)  
+   - [Modify a predefined pick list](add-modify-field.md#picklist)  
    - [State or Reason fields (customize workflow)](xml/change-workflow-wit.md)  
    - [Person-name field (add users)](../organizations/security/add-users-team-project.md)   
    - [Resolution State & Failure Type](customize-work.md#test-experience)  
@@ -92,7 +92,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="2":::
    - [Add or modify a work item type](add-modify-wit.md)  
    - [Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
-   - [Customize the form](xml/change-work-item-form-layout.md)  
+   - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)  
    - [Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)  
    - [Specify the WIT icon](xml/process-configuration-xml-element.md)  
    - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)   
@@ -171,7 +171,7 @@ With the following customizations, you can use the Configure Features Wizard to 
 - Agile tools: Customize the columns on the Kanban board, customize the quick add panel   
 - Office integration: Add or change how Project fields map to TFS fields    
 
-To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
+To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true).
 
 
 ### Compatible, but may require manual updates

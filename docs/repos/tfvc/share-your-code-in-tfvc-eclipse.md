@@ -5,14 +5,15 @@ description: Share code in TFVC using Eclipse
 ms.assetid: 181CB50F-44D3-4BA4-8E89-ADB9CB87DEB6
 ms.technology: devops-code-tfvc
 ms.topic: quickstart
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Share your code in TFVC using Eclipse
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+
 
 Share your code with your team with Azure DevOps Services and Eclipse.
 
@@ -46,4 +47,4 @@ Your code is in TFVC, so now your teammates can contribute.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Build your Eclipse projects](../../pipelines/ecosystems/java.md)
+> [Build your Eclipse projects](../../pipelines/ecosystems/java.md) 

@@ -13,7 +13,7 @@ monikerRange: azure-devops
 
 # Conda Environment task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to create and activate a Conda environment.
 

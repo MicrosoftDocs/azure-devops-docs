@@ -8,13 +8,13 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2021
+ms.date: 04/21/2022
 monikerRange: 'azure-devops'
 ---
 
 # Change your organization connection to a different Azure AD
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 If you need to switch your organization connection from one Azure Active Directory (Azure AD) to another, complete the following steps.
 
@@ -69,18 +69,7 @@ Do the following task:
 
 ## Inform users of the completed change
 
-When you inform your users of the completed change, include the following tasks for each user in the organization to complete:
-
-- [Change your organization connection to a different Azure AD](#change-your-organization-connection-to-a-different-azure-ad)
-  - [Prerequisites](#prerequisites)
-  - [Change the Azure AD connection](#change-the-azure-ad-connection)
-  - [Inform users of the completed change](#inform-users-of-the-completed-change)
-    - [Clear cache for Git Credential Manager](#clear-cache-for-git-credential-manager)
-    - [Regenerate new PATs](#regenerate-new-pats)
-    - [Recreate SSH keys](#recreate-ssh-keys)
-    - [Rename your MSA](#rename-your-msa)
-    - [Adjust your VS subscription](#adjust-your-vs-subscription)
-  - [Related articles](#related-articles)
+When you inform your users of the completed change, include the following tasks for each user in the organization to complete.
 
 ### Clear cache for Git Credential Manager
 
@@ -88,21 +77,7 @@ If you use Visual Studio or the Git command-line too, clear the cache for the [G
 
 ### Regenerate new PATs
 
-Complete the following steps to [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md).
-
-1. In Azure DevOps, open your **profile**, and then select **Security** from the resulting dropdown menu.
-
-   ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
-
-2. Select **Personal access tokens**, and then select **New Token**.
-
-   ![Select New Token to create](media/shared/select-personal-access-tokens-new-token.png)
-
-3. Complete the form, and then select **Create**.
-
-   ![Create new token](media/shared/create-new-personal-access-token.png)
-
-4. Copy your token and put it in a safe place, as it can't be viewed again.
+Complete the steps in [Use personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
 ### Recreate SSH keys
 
@@ -132,8 +107,8 @@ If the UPN used inside your organization changed, adjust your Visual Studio subs
 
 ## Related articles
 
+- [Rename a project](../projects/rename-project.md)
+- [Rename an organization](rename-organization.md)
 - [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
-- [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
-- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](./faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)

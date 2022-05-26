@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # Plan how to secure your YAML pipelines
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 We recommend that you use an incremental approach to secure your pipelines.
 Ideally, you would implement all of the guidance that we offer.
 But don't be daunted by the number of recommendations.

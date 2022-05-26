@@ -1,26 +1,27 @@
 ---
 title: Configure Check-Out Settings
 titleSuffix: Azure Repos
-description: Configure Check-Out Settings
+description: Learn how to configure check-out settings for a TFVC repository.
 ms.assetid: 9f4eb366-7e99-49f9-899d-cf3209c0ff72
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Configure Check-Out Settings
+# Configure check-out settings
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Administrators of Team Foundation version control can configure source control check-out settings. Check-out settings in Team Foundation version control enable files to be edited by more than one person at the same time. The following procedure shows you how to configure check-out settings.
+Administrators of Team Foundation version control (TFVC) can configure source control check-out settings. TFVC check-out settings enable files to be edited by more than one person at the same time. 
 
-**Required Permissions**
+## Prerequisites
 
-To configure check-out settings, you must have the **Edit project-level information** set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
-## Procedure
-### To configure checkout settings
+To configure check-out settings, you must have the **Edit project-level information** set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+### Configure checkout settings
 
 1.  In **Team Explorer**, select the project for which you want to configure check-out settings.
 
@@ -34,8 +35,6 @@ To configure check-out settings, you must have the **Edit project-level informat
 
 6.  Click **OK**.
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Enable Team Foundation Version Control to Get the Latest Files on Check-Out](/previous-versions/visualstudio/visual-studio-2010/bb385989(v=vs.100))
+- [Configure check-out settings](configure-check-out-settings.md)

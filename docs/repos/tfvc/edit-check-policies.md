@@ -6,15 +6,16 @@ ms.assetid: 3bc445f1-d354-4991-9381-f10739b5d0fe
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 08/18/2016
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
-# Edit Check-In Policies
+# Edit check-in policies
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Administrators of Team Foundation version control can add and edit check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to version control; for example a user can be required to associate a work item with a changeset. For more information on check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)). Before editing a check-in policy, you must first create one. For more information, see [Add Check-In Policies](add-check-policies.md). The default available check-in policy types include:
+Administrators of Team Foundation version control can add and edit check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to version control; for example a user can be required to associate a work item with a changeset. For more information on check-ins, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md). Before editing a check-in policy, you must first create one. For more information, see [Add Check-In Policies](add-check-policies.md). The default available check-in policy types include:
 
 -   **Builds**   Requires that the last build was successful before a check-in.  
 -   **Code Analysis**   Requires that code analysis is run before check-in.  
@@ -23,10 +24,11 @@ Administrators of Team Foundation version control can add and edit check-in poli
 > [!NOTE]
 > You can temporarily disable one or more policy types in **Source Control Settings**, on the **Check-in Policy** tab, by highlighting the policies and clicking **Disable**. To enable a disabled policy, highlight the disabled policy, and click **Enable**.
 
-**Required Permissions**  
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites  
 
-### To edit a check-in policy
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Edit a check-in policy
 
 1.  On the **Team** menu, click **Team** **Project** **Settings**, and then click **Source Control**.
 
@@ -48,12 +50,8 @@ To complete this procedure, you must have the **Edit project-level information**
 
 5.  Click **OK**.
 
-## See Also
+## Related articles
 
-#### Concepts
-
-[Set and Enforce Quality Gates](set-enforce-quality-gates.md)  
-[Working with Changesets](find-view-changesets.md)  
-#### Other Resources
-
-[Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))
+- [Set and Enforce Quality Gates](set-enforce-quality-gates.md)  
+- [Working with Changesets](find-view-changesets.md)  
+- [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))

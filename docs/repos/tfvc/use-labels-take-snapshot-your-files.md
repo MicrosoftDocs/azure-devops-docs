@@ -5,18 +5,19 @@ description: Use labels to take a snapshot of your files
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Use labels to take a snapshot of your files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Labels let you take a snapshot of your files so that at a later date you can refer back to that snapshot. By using your label, you can view, build, or even roll back a large set of files to the state they were in when you applied the label.
 
-**Required permissions**
+## Prerequisites
 
 To apply a label, you must have the **Label** permission set to **Allow**. To find, list, or view labels, you must have the **Read** permission set to **Allow**. To modify or delete a label, you must own the label or have the **Administer Labels** permission set to **Allow**.
 
@@ -271,16 +272,10 @@ When you open the shortcut menu for an item in the Label window, you can also ch
 
 - [Labels Command](labels-command.md)  List labels.
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Find and view changesets](find-view-changesets.md) 
-
- [Create and work with workspaces](create-work-workspaces.md) 
-
- [Permissions and groups reference](../../organizations/security/permissions.md) 
-
- [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)
+-  [Find and view changesets](find-view-changesets.md) 
+-  [Create and work with workspaces](create-work-workspaces.md) 
+-  [Permissions and groups reference](../../organizations/security/permissions.md) 
+-  [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)

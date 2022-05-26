@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Node.js Tool Installer task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 **Build**
 

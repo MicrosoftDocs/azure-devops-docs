@@ -13,7 +13,7 @@ ms.date: 10/20/2021
 
 # Implement Agile practices that scale
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Enterprise organizations adopt Agile practices for many reasons. Prime among these reasons include:  
 
@@ -67,7 +67,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 - **Embedded leadership**: Empower teams and leaders within the organization to self-organize and self-manage as much as possible. Team autonomy increases organizational agility team effectiveness. Ensure teams have the corporate sponsorship needed to succeed.  
 - **Daily stand-ups**: Or, [Scrum meetings](../sprints/best-practices-scrum.md#daily-scrum-meetings) help keeps teams focused on what they need to do daily to maximize their ability to meet their sprint commitments. As organizations grow, they should consider staggering these meetings so that cross-team participation can occur as needed.  
 - **[Scrum of scrums](https://www.agilealliance.org/glossary/scrum-of-scrums)**: Daily stand ups of members from different Agile teams meet daily to report work completed, next steps, and issues or blocks occurring within their representative teams. 
-- **Team communications**: Provide and encourage teams to share their practices and guidance, which they and other teams can access through the corporate network. Common tools used for this purpose include team wikis, OneNotes, or markdown sites.  
+- **Team communications**: Provide and encourage teams to share their practices and guidance, which they and other teams can access through the corporate network. Common tools used for this purpose include team wikis, OneNotes, or Markdown sites.  
 - **Collaboration**: Encourage informal team-to-team communications and collaboration within the team. Institutionalizing practices such as code reviews, design reviews, spec reviews not only increase team collaboration but help develop individual and overall corporate competence.  
 
 ## Improve organizational culture

@@ -4,15 +4,15 @@ ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
-ms.date: 09/21/2021
-monikerRange: '>= tfs-2015'
+ms.date: 12/22/2021
+monikerRange: '<= azure-devops'
 ---
 
 # Add stages, dependencies, & conditions  
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -309,7 +309,7 @@ stages:
 - stage: A
 
 - stage: B
-  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
 ```
 
 ::: moniker-end

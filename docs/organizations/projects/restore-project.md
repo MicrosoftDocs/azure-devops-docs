@@ -14,7 +14,7 @@ ms.date: 06/07/2021
 
 # Restore a project
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Sometimes we might delete a project in Azure DevOps by mistake. You can restore a deleted project up to 28 days after it was deleted. This article shows you how.
 

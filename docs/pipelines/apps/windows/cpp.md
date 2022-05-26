@@ -4,14 +4,14 @@ ms.custom: seodec18, devdivchpfy22
 description: Automatically build your C++ Windows app with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Build C++ Windows apps
 
-[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
