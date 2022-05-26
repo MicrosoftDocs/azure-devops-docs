@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Upstream sources enables developers to use a single feed to publish and consume packages from Artifact feeds and public registries such as NuGet.org or npmjs.com. To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
+With upstream sources, developers can use a single feed to publish and consume packages from Artifact feeds and public registries such as NuGet.org or npmjs.com. To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
 :::image type="content" source="media/include-upstream-sources.png" alt-text="Include packages from common public sources checkbox":::
 
@@ -21,7 +21,7 @@ Previously, Artifact feeds combined a list of available package versions from th
 
 :::image type="content" source="media/previous-behavior.svg" alt-text="Previous upstream sources behavior":::
 
-Upstream behavior is a feature that enables developers to choose if they want to consume externally-sourced package versions. Upstream behavior dictates which packages will be made available from the public registries for individual packages.
+Upstream behavior is a feature that enables developers to choose if they want to consume externally sourced package versions. Upstream behavior dictates which packages will be made available from the public registries for individual packages.
 
 When the upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
@@ -38,7 +38,7 @@ The next section shows a few common scenarios where the upstream behavior is tri
 
 ## Public versions will be blocked
 
-- **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages). 
+- **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages).
 
     :::image type="content" source="media\internal-to-public.svg" alt-text="Internal package version made public":::
 
@@ -71,7 +71,7 @@ The next section shows a few common scenarios where the upstream behavior is tri
 
     :::image type="content" source="media\external-versions.png" alt-text="A screenshot showing how to set up external versions.":::
 
-1. Select the toggle button to allow external versions. Select **Close** when you are done.
+1. Select the toggle button to allow external versions. Select **Close** when you're done.
 
     :::image type="content" source="media\allow-external-versions.png" alt-text="A screenshot showing how to allow external versions.":::
 
@@ -136,8 +136,6 @@ $url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packag
 ```PowerShell
 $url = "https://pkgs.dev.azure.com/{OrganizationName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
 ```
-
-Now that we have both the header and the endpoint URL set up, we can start sending HTTP requests to get, set, and clear upstreaming for any specific package.
 
 ### Get upstreaming behavior
 
