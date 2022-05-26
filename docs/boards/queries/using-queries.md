@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 05/24/2022
 ---
 
 # Define a work item query in Azure Boards
@@ -100,17 +100,17 @@ Along with the query filters, you can [interactively apply filters to query resu
       ::: moniker range=">= azure-devops-2019"
       - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
       - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
+      - [Identity searches](./query-by-workflow-changes.md#me) 
       - [History and Discussion](./history-and-auditing.md) 
       - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
-      - [In and Not In Group searches](./planning-ranking-priorities.md) 
+      - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
       - [Search across projects](#across-projects)
       ::: moniker-end
       ::: moniker range="tfs-2018"
       - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [History and Discussion](./history-and-auditing.md) 
-      - [In and Not In Group searches](./planning-ranking-priorities.md) 
-      - [Search across projects](#across-projects)
-      - [In and Not In Group searches](./planning-ranking-priorities.md) 
+      - [In and Not In Group searches](./planning-ranking-priorities.md#picklist-query-examples) 
+      - [Search across projects](#across-projects) 
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
@@ -157,7 +157,7 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
-> ![Add new query, new experience](media/view-run-queries/new-query-new-exp.png)  
+> ![Screenshot to Add new query, new experience.](media/view-run-queries/new-query-new-exp.png)  
 
 The Query Editor displays with the following default settings: **Flat list of work items**, **Work Item Type=[Any]**, and **State=[Any]**. 
 
@@ -168,7 +168,7 @@ You can modify the **Values** and [add or remove clauses](#define-clause). Or, c
 
 ::: moniker range="tfs-2018"  
 
-![Queries page, Choose New query from the drop down menu](media/using-queries-new-query-ts.png)  
+![Screenshot to Queries page, Choose New query from the drop down menu.](media/using-queries-new-query-ts.png)  
 
 The Query Editor displays with the following default settings: **Flat list of work items**, **Team Project=@Project** (the current project), **Work Item Type=[Any]**, and **State=[Any]**. 
 
@@ -205,23 +205,23 @@ New queries scope to the current project by default. However, you can create que
 
 To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
  
-<img src="media/using-queries/portal-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" /> 
+![Screenshot of Query Editor with Query across projects checked.](media/using-queries/portal-query-across-projects.png) 
 
 With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
 
-<img src="media/using-queries/portal-query-across-two-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" />
+![Screenshot of Query Editor with Team Project and other fields added to filter.](media/using-queries/portal-query-across-two-projects.png) 
 
 > [!NOTE]
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The **Team Project** field is available only after you check  **Query across projects**.  Further, when **Query across projects** is unchecked, only those fields from those work item types, as defined in the current project, appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
+The **Team Project** field is available only after you check  **Query across projects**. Further, when **Query across projects** is unchecked, only those fields from those work item types, as defined in the current project, appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
 
 
 #### [Visual Studio](#tab/visual-studio/)
 
 To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in. For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
 
-:::image type="content" source="media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause":::  
+:::image type="content" source="media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause.":::  
 
 To query across all projects, delete the clause with the **Team Project** field. 
 
@@ -250,7 +250,7 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 Choose **Add new clause** to add another clause at the end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 > [!div class="mx-imgBorder"]  
-> ![Define a clause.](media/using-queries/define-clause.png)  
+> ![Screenshot of Query Editor showing how to add a clause.](media/using-queries/define-clause.png)  
 
 For example, search for all work items assigned to you by specifying the **Assigned To** field, the equals (**=**) operator, and the **@Me** macro, which represents your user identity.
 
@@ -296,44 +296,49 @@ When finished, choose :::image type="icon" source="../media/icons/run_query.png"
 
 5. To add a clause, choose **Add new clause**.
 
-	You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](media/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](media/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](media/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](media/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
+	You can add a clause to the end of the query, or perform the following tasks with the corresponding icons: 
+	- :::image type="icon" source="../media/icons/add-green-icon.png" border="false"::: **Insert new filter line**
+	- :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: **Remove this filter line**
+	- :::image type="icon" source="media/query-fields-operators-values-variables/IC588313.png" border="false"::: **Group selected clauses**
+	- :::image type="icon" source="media/query-fields-operators-values-variables/IC588314.png" border="false"::: **Ungroup clauses**
 
 
 <a id="tree-query" />
 
 ## Use a work item tree to view hierarchies  
 
-
-Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of Work Items** query to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](media/13.png)) or collapse (![Collapse node, web portal](media/14.png)) nodes to focus on different parts of the tree.  
-
+Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of Work Items** query to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks. To focus on different parts of the tree, choose :::image type="icon" source="media/13.png" border="false"::: **Expand all** or :::image type="icon" source="media/14.png" border="false"::: **Collapse all**.  
+	 
 > [!NOTE]    
-> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. However, you can create a direct links query that lists test-related work items. Also, you can, [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
+> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. However, you can create a direct links query that lists test-related work items. Also, you can, [view the hierarchy through the Test Plans page](../../test/create-a-test-plan.md). 
 
-Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
+
 
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
-> ![Results List Showing a Tree Query, new experience](media/view-run-queries/tree-query-new-exp.png)  
+> ![Screenshot of Query Results List showing a Tree Query.](media/view-run-queries/tree-query-new-exp.png)  
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
 
 > [!div class="mx-imgBorder"]  
-> ![Results List Showing a Tree Query](media/view-run-queries/tree-query-view-tfs.png)  
+> ![Screenshot of Query Results List showing a Tree Query, TFS 2018 view.](media/view-run-queries/tree-query-view-tfs.png)  
 
 ::: moniker-end  
 
-
+Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
 > [!div class="mx-imgBorder"]  
-> ![Tree Query, editor](media/view-run-queries/tree-query-editor-s136.png)  
+> ![Screenshot of Query Editor view of Tree of work items.](media/view-run-queries/tree-query-editor-s136.png)  
 
 
 #### [Visual Studio](#tab/visual-studio/)
+
+Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
 :::image type="content" source="media/using-queries/tree-backlog-te.png" alt-text="Screenshot, Query Editor, Tree Query, Team Explorer. ":::
 
@@ -351,10 +356,10 @@ Use the direct links query to track dependencies across teams. The query also he
 
 #### [Browser](#tab/browser/)
 
-![Direct Links Query Results](media/17.png)
+![Screenshot of Direct Links Query Results.](media/17.png)
 
 > [!div class="mx-imgBorder"]  
-> ![Direct Links Query, editor](media/view-run-queries/direct-query-editor-s136.png)  
+> ![Screenshot of Query Editor, Direct Links Query.](media/view-run-queries/direct-query-editor-s136.png)  
 
 Filter your first-tier list of work items by choosing one of these options:
 
@@ -414,20 +419,20 @@ As the following examples show, the grouped clauses are translated to the corres
 > |**3**| ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
 
 These queries return work items that are type Bug and meet the following logical expressions:  
-- **Query 1**: AND State=Active OR Assigned to @Me  
-- **Query 2**: AND (State=Active OR Assigned to @Me)  
-- **Query 3**: OR (State=Active AND Assigned to @Me)  
+- **Query 1**: `AND State=Active OR Assigned to @Me`  
+- **Query 2**: `AND (State=Active OR Assigned to @Me)`  
+- **Query 3**: `OR (State=Active AND Assigned to @Me)`  
 
 
 To group one or more clauses, select them and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
-> ![Web portal, Group Selected Query Clauses](media/view-run-queries/group-clauses.png)  
+> ![Screenshot of Web portal, Query Editor, Group Selected Query Clauses.](media/view-run-queries/group-clauses.png)  
 
 You can also group several grouped clauses. Check the boxes of each clause that's already been grouped. Then, choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
-> ![Group multiple query clauses](media/using-queries/multiple-clauses.png)
+> ![Screenshot of Web portal, Query Editor, Group multiple query clauses.](media/using-queries/multiple-clauses.png)
 
 
 If your query results don't return expected results, follow these steps: 

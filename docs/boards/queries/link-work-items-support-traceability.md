@@ -96,7 +96,7 @@ You can create links between work items by using one of the links control tabs w
 
 From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
 
-Open a work item and choose the :::image type="icon" source="../media/icons/Action_Add.png" border="false"::: plus icon to add a link. 
+Open a work item and choose the :::image type="icon" source="../media/icons/add-green-icon.png" border="false"::: plus icon to add a link. 
 
 
 ::: moniker range=">= azure-devops-2020"

@@ -83,7 +83,7 @@ This list includes features that are currently in preview. The "Released" column
     </thead>
     <tbody>
 <tr><td rowspan="2"><strong>2022 Q2</strong></td>
-    <td><a href=https://docs.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview data-raw-source="[New Boards Hubs](https://docs.microsoft.com/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)">New Boards Hubs</a></td><td>Boards</td><td>Future</td>
+    <td><a href=/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview data-raw-source="[New Boards Hubs](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)">New Boards Hubs</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1943980 data-raw-source="[Ability to query for work items by Parent Id ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1943980)">Ability to query for work items by Parent Id </a></td><td>Boards</td><td>Future</td></tr>
 </tr>
 <tr><td rowspan="1"><strong>2021 Q4</strong></td>
