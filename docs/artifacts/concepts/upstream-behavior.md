@@ -63,11 +63,17 @@ The next section shows a few common scenarios where the upstream behavior is tri
 ## Allow external versions
 
 > [!NOTE]
-> Only feed owners are allowed to configure the upstream behavior. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+> You must be a feed **Owner** or a feed **Administrator** to allow externally sourced versions. See [Feed permissions](../feeds/feed-permissions.md) for more details.
 
-To configure the new upstream behavior, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
+1. Select **Artifacts**, and then select your feed.
 
-:::image type="content" source="media\allow-external-sourced-versions.png" alt-text="Allow external sourced versions toggle button":::
+1. Select your package, and then select the ellipsis button for more options. Select **Allow externally-sourced versions**.
+
+    :::image type="content" source="media\external-versions.png" alt-text="A screenshot showing how to set up external versions.":::
+
+1. Select the toggle button to allow external versions. Select **Close** when you are done.
+
+    :::image type="content" source="media\allow-external-versions.png" alt-text="A screenshot showing how to allow external versions.":::
 
 ## Allow external versions using the REST API
 
