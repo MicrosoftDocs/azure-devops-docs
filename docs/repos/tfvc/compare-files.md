@@ -35,7 +35,7 @@ You can compare any two files using the Compare dialog box. The files can both r
 3. Specify the two files you want to compare: one under **Source Path** and the other under **Target Path**:
 
    - Type a path, or open the **Browse** menu, choose **Local Path** or **Server Path**, and then browse to choose the file.
-   - Choose an option to specify file the server file version when specifying a **Server Path** from the **Type** menu: **Changeset**, **Date**, **Label**, **Latest Version**, or **Workspace Version**.
+   - Choose an option from the **Type** menu: **Changeset**, **Date**, **Label**, **Latest Version**, or **Workspace Version**.
 
      > [!TIP]
      > To compare any two local files, select **Local Path** from both **Browse** dropdown menus in the Compare dialog box.
