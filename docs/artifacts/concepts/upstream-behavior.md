@@ -1,9 +1,9 @@
 ---
 title: Configure upstream behavior
-description: Allow or block the consumption of package versions from public registries.
+description: How to allow external package versions.
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 05/26/2022
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: '<= azure-devops'
@@ -49,7 +49,7 @@ The next section shows a few common scenarios where the upstream behavior is tri
 ## Public versions will not be blocked
 
 - **All packages are private**: if all existing packages are private and the team won't be consuming any public packages, the new upstream behavior will have no effect on the team's workflow in this scenario.
-    
+
     :::image type="content" source="media\only-private-packages.svg" alt-text="private packages only":::
 
 - **All packages are public**: if all the packages consumed are public, whether it's from the public registry or any other open-source repositories, the new upstream behavior will have no effect on the team's workflow in this scenario.
@@ -83,7 +83,7 @@ Aside from using the feed's user interface, you can also configure the upstream 
 
 - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior)
 - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set-upstreaming-behavior)
- 
+
 #### [npm](#tab/npm/)
 
 - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)
@@ -101,12 +101,11 @@ Aside from using the feed's user interface, you can also configure the upstream 
 - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get-upstreaming-behavior)
 - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set-upstreaming-behavior)
 
-* * * 
+* * *
 
 ## Allow external versions with PowerShell
 
-To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
-
+To successfully execute the next steps in this section, you will need to [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
 
 :::image type="content" source="media\packaging-permissions.png" alt-text="select packaging permissions":::
 
@@ -122,7 +121,6 @@ The following commands will convert your personal access token to baser64 encode
 $token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
 $headers = @{
     Authorization = "Basic $token"
-}
 ```
 
 Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to construct the `$Url` variable. (Project-scoped feed example: /pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
@@ -159,6 +157,9 @@ $body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
 
+> [!NOTE]
+> In some cases, setting up the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
+
 ### Clear upstreaming behavior
 
 To clear the upstream behavior for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
@@ -168,9 +169,6 @@ $body = '{"versionsFromExternalUpstreams": "Auto"}'
 
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
-
-> [!NOTE]
-> In some cases, configuring the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
 
 ## Related articles
 
