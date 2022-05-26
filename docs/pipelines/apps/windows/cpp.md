@@ -3,8 +3,9 @@ title: Build C++ Windows apps
 ms.custom: seodec18
 description: Automatically build your C++ Windows app with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
-ms.date: 5/12/2021
+ms.date: 5/26/2022
 ms.topic: quickstart
+ms.custom: devdivchpfy22
 monikerRange: '>= tfs-2017'
 ---
 
@@ -21,7 +22,6 @@ This guidance explains how to automatically build C++ projects for Windows.
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> 
 > This guidance applies to TFS version 2017.3 and newer.
 
 ::: moniker-end
@@ -30,7 +30,7 @@ This guidance explains how to automatically build C++ projects for Windows.
 
 This example shows how to build a C++ project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
-```
+```text
 https://github.com/adventworks/cpp-sample
 ```
 
@@ -45,9 +45,9 @@ https://github.com/adventworks/cpp-sample
 
 ## Build multiple configurations
 
-It is often required to build your app in multiple configurations. The following steps extend the example above to build the app on four configurations: [Debug, x86], [Debug, x64], [Release, x86], [Release, x64].
+It's often required to build your app in multiple configurations. The following steps extend the example above to build the app on four configurations: [Debug, x86], [Debug, x64], [Release, x86], [Release, x64].
 
-1. Click the **Variables** tab and modify these variables:
+1. Select the **Variables** tab and modify these variables:
 
    * `BuildConfiguration` = `debug, release`
 
@@ -65,7 +65,6 @@ It is often required to build your app in multiple configurations. The following
 
 To copy the results of the build to Azure Pipelines, perform these steps:
 
-1. Click the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
+1. Select the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
 
    * **Contents:** `**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)`
-
