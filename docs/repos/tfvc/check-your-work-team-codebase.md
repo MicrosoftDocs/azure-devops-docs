@@ -34,7 +34,7 @@ You can also check in as you work in other areas of Visual Studio:
 
   After you select the items, right-click and select **Check In**.
 
-- In Source Control Explorer, select one or more items with pending changes or one or more folders that contain items with pending changes. The TFSC checked-out status icon :::image type="icon" source="media/check-your-work-team-codebase/IC51402.gif"::: indicates items with pending changes. Open the context menu for the selected items, and choose **Check In**.
+- In Source Control Explorer, select one or more items with pending changes or one or more folders that contain items with pending changes. The TFVC checked-out status icon :::image type="icon" source="media/check-your-work-team-codebase/IC51402.gif"::: indicates items with pending changes. Open the context menu for the selected items, and choose **Check In**.
 
 > [!IMPORTANT]
 > The **Check In** option is not displayed if there are no pending changes to the item selected.

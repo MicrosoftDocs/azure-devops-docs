@@ -192,15 +192,15 @@ You can use the **Label** window to perform the following tasks:
 
 3. (Optional) If you need the label to target a specific version, from the **Version** list, select a version:
 
-   - **Latest Version**. The label will be applied to the latest version that is in version control.
+   - **Latest Version**: The label will be applied to the latest version that is in version control.
 
-   - **Changeset**. Specify the number of the changeset in the **Changeset** box. Alternatively, choose the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
+   - **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, choose the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
 
-   - **Date**. Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
+   - **Date**: Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
 
-   - **Label**. Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or choose the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
+   - **Label**: Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or choose the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
 
-   - **Workspace Version**. The label is created for the version in your workspace.
+   - **Workspace Version**: The label is created for the version in your workspace.
 
 4. Select **OK**.
 
