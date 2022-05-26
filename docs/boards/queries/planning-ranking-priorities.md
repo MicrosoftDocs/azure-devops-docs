@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2021
+ms.date: 05/24/2022
 ---
 
 # Query by rank and picklist value in Azure DevOps and Azure Boards
@@ -28,9 +28,14 @@ Query clauses that specify a string or integer field can use the operators liste
 - In, Not In  
 - Was Ever  
 
+<a id= "picklist-query-examples" />
+
+
 ## Picklist query examples 
 
-Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).    
+Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).   
+
+To use the **In** and **Not In** operators, enter the names or labels of items that correspond to the selected field separated by a comma. For example, to filter for **Work Item Types** that are either user stories or bugs, add the clause: `Work Item Types In User Story,Bug`.  
 
 :::row:::
    :::column span="1":::
@@ -40,42 +45,37 @@ Most of the planning fields described in the next section are either an integer 
    **Include these query clauses**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
-   List blocked tasks (Scrum)  
-(Blocked field is type String) 
+      List blocked tasks (Scrum)  
+      (Blocked field is type String) 
    :::column-end:::
    :::column span="1":::
-   
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Task`  
-`And Blocked = Yes`  
+      `Work Item Type In Task`   
+      `And Blocked = Yes`  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Priority 1 bugs
-     
-(Priority field is type Integer) 
+      Priority 1 bugs (**Priority** field is type Integer) 
    :::column-end:::
    :::column span="1":::
-   
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Bug`  
-`And Priority = 1`  
+      `Work Item Type In Bug`   
+      `And Priority = 1`   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
-   Features and stories that address Architectural areas  
-(Value Area field is type String) 
+      Features and stories that address Architectural areas  
+      (**Value Area** field is type String) 
    :::column-end:::
    :::column span="1":::
-   
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Feature,User Story`  
-`And Value Area = _ Architectural`  
+      `Work Item Type In Feature,User Story`  
+      `And Value Area = _ Architectural`  
    :::column-end:::
 :::row-end:::  
-
+---
 
 <a id="fields-table" />
 <a id="fields" />

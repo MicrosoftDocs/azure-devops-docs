@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 05/24/2022
 ---
 
 # Query by assignment or workflow changes in Azure Boards
@@ -18,7 +18,7 @@ ms.date: 04/01/2022
 
 The states in the workflow support tracking work status as it moves from a new state to a closed or done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
-Each workflow consists of a set of states, valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your project. 
+Each workflow consists of a set of states, valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types and default processes used to create your project. 
 
 Most work items move from a New, Active, or Proposed state to a Done or Closed state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it's reassigned to the tester who created it.  
 
@@ -26,12 +26,12 @@ Most work items move from a New, Active, or Proposed state to a Done or Closed s
 
 For example, you can find all work items that were closed but then reactivated. By specifying the Changed Date field, you can focus on reactivations that occurred today, yesterday, or in the last week.
 
-![Query Editor filter for reactivated items](media/query-reactivated-items.png)  
+![Query Editor filter for reactivated items.](media/query-reactivated-items.png)  
 
 You can also use the Activated By and Activated Date fields, or other workflow fields.
 
 > [!TIP]  
-> Not all fields are valid for all WITs. Jump to [Workflow and Kanban query fields](#workflow-fields) for the set of fields you can include in queries and which WITs they apply to.  
+> Not all fields are valid for all work item types. Jump to [Workflow and Kanban query fields](#workflow-fields) for the set of fields you can include in queries and which work item types they apply to.  
 
 If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md).  
 
@@ -106,102 +106,60 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
 
 :::row:::
      :::column span="1":::
-   
    **Filter for**
-
-  
    :::column-end:::
      :::column span="1":::
-   
    **Include these query clauses**
-
-  
    :::column-end:::
 :::row-end:::
+---
 :::row:::
      :::column span="1":::
-   
    Active items assigned to me
-
-  
    :::column-end:::
      :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To @Me`
-   
-`And State = Active`
-
+     `Assigned To @Me`   
+     `And State = Active`  
    :::column-end:::
 :::row-end:::
 :::row:::
-:::row:::
-     :::column span="1":::
-   
+   :::column span="1":::
    Closed items that at some point was assigned to me
-
-  
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To Was Ever @Me`
-
-`And State = Closed`
-
-  
+   :::column span="1":::
+   `Assigned To Was Ever @Me`  
+   `And State = Closed`
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   
-   Active user stories assigned to my (Web) team
-
-  
+   :::column span="1":::
+   Active user stories assigned to the Web team
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`
-
-`And State = Active`
-
-`And Assigned To In Group [FabrikamFiber]\Web`
-
-  
+   :::column span="1":::
+   `Work Item Type = User Story`   
+   `And State = Active`   
+   `And Assigned To In Group [FabrikamFiber]\Web`
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   
-   Items I&#39;ve modified in the last 30 days
-
-  
+   :::column span="1":::
+   Items I've modified in the last 30 days
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Changed By = @Me`
-
-`And Changed Date >= @Today-30`
-
-  
+   :::column span="1":::
+   `Changed By = @Me`
+   `And Changed Date >= @Today-30`
    :::column-end:::
 :::row-end:::
-
 :::row:::
-     :::column span="1":::
-   
-   Unassigned items (leave the Value blank)
-
-  
+   :::column span="1":::
+   Unassigned items (leave the **Value** blank)
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To = _`
-  
+   :::column span="1":::
+   `Assigned To = _`
    :::column-end:::
 :::row-end:::
-
-<!---
-![Was Ever operator to query for past assignment](media/example-work-item-queries/IC697729.png)
--->
+---
+ 
 
 <a id="group" /> 
 
@@ -209,7 +167,7 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
 
 To filter on items assigned to someone who belongs to a team or security group, use the **In Group** operator.
 
-![Filter based on assignment to a TFS security group](media/example-work-item-queries/IC675038.png)  
+![Screenshot of Query Editor, Filter based on assignment to a security group.](media/example-work-item-queries/IC675038.png)  
 
 You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that aren't members of a group. Examples of groups you can specify include the following items: 
 - Teams
@@ -231,80 +189,52 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    **Include these query clauses**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
-     :::column span="1":::
-   
-   Resolved stories
-   
+   :::column span="1":::
+      Resolved stories
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type  = User Story`  
-   `And State = Resolved`
-
-  
+   :::column span="1":::
+      `Work Item Type  = User Story`   
+      `And State = Resolved`
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   
-   Stories, bugs, and tasks that are new or active
-   
+   :::column span="1":::
+      Stories, bugs, and tasks that are new or active
    :::column-end:::
      :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In User Story,Bug,Task`  
-   `And State In New,Active`
-
-  
+      `Work Item Type In User Story,Bug,Task`   
+      `And State In New,Active`
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   
-   Items removed as they&#39;re duplicate  
-
-  
+   :::column span="1":::
+      Items removed as they&#39;re duplicate  
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State= Removed`  
-   `And Reason = Duplicate`
-
-  
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-     :::column span="1":::
-   
-   Items failing acceptance tests  
-
-  
-   :::column-end:::
-     :::column span="1":::
-   
-   `Resolved Reason = Acceptance tests fail`
-   
-  
+   :::column span="1":::
+      `State= Removed`   
+      `And Reason = Duplicate`
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   
-   Items closed within the last 15 days
-
-  
+   :::column span="1":::
+      Items failing acceptance tests  
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State = Closed`  
-   `And Closed Date  > @Today-15`
-
-  
+   :::column span="1":::
+      `Resolved Reason = Acceptance tests fail`
    :::column-end:::
 :::row-end:::
-
+:::row:::
+   :::column span="1":::
+      Items closed within the last 15 days  
+   :::column-end:::
+   :::column span="1":::
+      `State = Closed`  
+      `And Closed Date  > @Today-15`
+   :::column-end:::
+:::row-end:::
+---
 
 <a id="workflow-change-who"/> 
 
@@ -320,50 +250,38 @@ You can quickly find items that you changed, resolved, or closed. You can also f
    **Include these query clauses**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
      :::column span="1":::
-   
    User Stories that I closed 
-
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`  
-   `And Closed By = @Me`
-
-  
+   :::column span="1":::
+      `Work Item Type = User Story`   
+      `And Closed By = @Me`
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
-   
-   Items I resolved in the last week
-
-  
+   :::column span="1":::
+      Items I resolved in the last week
    :::column-end:::
-     :::column span="1":::
-   
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Resolved By = @Me`  
-   `And Resolved Date >= Today-7`
-
-  
+   :::column span="1":::
+      `Resolved By = @Me`   
+      `And Resolved Date >= Today-7`  
    :::column-end:::
 :::row-end:::
-
+---
 
 ## Query changes in work item state 
 
 To list work items that have changed state within a specific date range, you can use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. An example is shown in the following image.  
  
 > [!div class="mx-imgBorder"] 
-> ![Screenshot of Query Editor to query on State Change Date and State fields](media/workflow/query-state-change-date.png)
+> ![Screenshot of Query Editor, filter State Change Date and State fields.](media/workflow/query-state-change-date.png)
 
 
 <a id="query-changes-to-a-kanban-board" />
 <a id="kanban-query-fields" />
 <a id="kanban_query_fields" />
-
-
 
 ## Query changes to a Kanban board 
 
@@ -371,7 +289,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 
 You can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
-![Query filter on Kanban board fields](media/query-kanban-fields.png)  
+![Screenshot of Query Editor, filter on Kanban Board Column and Board Lane fields.](media/query-kanban-fields.png)  
 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
@@ -395,7 +313,6 @@ You can list items based on the team area path, and if they are in a specific cu
       `And` `Board Column Done  = False`  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Items in the **Expedite** swimlane 
@@ -404,7 +321,6 @@ You can list items based on the team area path, and if they are in a specific cu
       `Board Lane = Expedite`  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Items in any swimlane whose label contains "Test"  
@@ -413,7 +329,6 @@ You can list items based on the team area path, and if they are in a specific cu
       `Board Lane Contains Test`  
    :::column-end:::
 :::row-end:::
----
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
@@ -424,7 +339,7 @@ You can list items based on the team area path, and if they are in a specific cu
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-
+---
 
 
 <a id="kanban-query-results">  </a>
@@ -808,7 +723,7 @@ For more information about field attributes, see [Work item fields and attribute
 The **Assigned To** field is supported by the people picker feature. For example, when you choose the **Assigned To** field from within a work item form, the people picker is activated. As shown in the following image, you simply start typing the name of the user you want to select, and search until you find a match. Users that you've previously selected appear in the list automatically. To select users that you haven't selected previously, enter their entire name or search against the full directory.  
  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
+> ![Screenshot of the @mention tool in Discussion showing people picker.](../../notifications/media/at-mention/identity-selector.png)  
 
 For organizations that manage their users and groups using Azure Active Directory (Azure AD) or Active Directory, people pickers provide support for searching all users and groups added to the AD, not just those users and groups added to the project. 
 
