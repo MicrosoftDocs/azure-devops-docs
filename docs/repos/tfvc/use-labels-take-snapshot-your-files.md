@@ -49,13 +49,13 @@ Sometimes after you apply a label, you decide that you need to change it. Team F
 
 4. In the **Version** list, **Latest Version** is selected by default. This option is the one most typically used, but if you need the label to target a specific version, select one of the following options:
 
-   - **Changeset**. Specify the number of the changeset in the **Changeset** box. Alternatively, select the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
+   - **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, select the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
 
-   - **Date**. Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
+   - **Date**: Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
 
-   - **Label**. Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
+   - **Label**: Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
 
-   - **Workspace Version**. The label is created for the version in your workspace.
+   - **Workspace Version**: The label is created for the version in your workspace.
 
 5. When you're satisfied with your settings, perform one of the following steps:
 
@@ -226,15 +226,15 @@ You can use the **Label** window to perform the following tasks:
 
 4. Select one of the following values:
 
-   - **Latest Version**. Apply the label to the latest version that is in version control.
+   - **Latest Version**: Apply the label to the latest version that is in version control.
 
-   - **Changeset**. Specify the number of the changeset in the **Changeset** box. Alternatively, choose the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
+   - **Changeset**: Specify the number of the changeset in the **Changeset** box. Alternatively, choose the ellipses (**...**) to open the **Find Changesets** dialog box. For more information, see [Find and view changesets](find-view-changesets.md).
 
-   - **Date**. Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
+   - **Date**: Specify a date in the **Date** box or select a date from the calendar on the dropdown menu.
 
-   - **Label**. Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
+   - **Label**: Specify an existing label upon which to base the new label. Either type the label name in the **Label** box, or select the ellipses (**...**) to open the **Find Label** dialog box. For more information, see [Find, Edit, and Remove Labels](use-labels-take-snapshot-your-files.md#find_label).
 
-   - **Workspace Version**. The label is created for the version in your workspace.
+   - **Workspace Version**: The label is created for the version in your workspace.
 
 5. Choose **File** > **Save**.
 
