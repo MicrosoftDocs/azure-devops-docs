@@ -204,28 +204,22 @@ Next, create the Dockerfile.
 4. Save the following content to `~/dockeragent/Dockerfile`:
 
     ```docker
-    FROM ubuntu:18.04
+    FROM ubuntu:20.04
 
-    # To make it easier for build and release pipelines to run apt-get,
-    # configure apt to not require confirmation (assume the -y argument by default)
-    ENV DEBIAN_FRONTEND=noninteractive
-    RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
+    RUN DEBIAN_FRONTEND=noninteractive apt-get update
+    RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
-    RUN apt-get update && apt-get install -y --no-install-recommends \
+    RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+        apt-transport-https \
+        apt-utils \
         ca-certificates \
         curl \
-        jq \
-        git \
         iputils-ping \
-        libcurl4 \
-        libicu60 \
-        libunwind8 \
-        netcat \
-        libssl1.0 \
-      && rm -rf /var/lib/apt/lists/*
+        jq \
+        lsb-release \
+        software-properties-common
 
-    RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash \
-      && rm -rf /var/lib/apt/lists/*
+    RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
     # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
     ENV TARGETARCH=linux-x64
@@ -235,13 +229,18 @@ Next, create the Dockerfile.
     COPY ./start.sh .
     RUN chmod +x start.sh
 
-    ENTRYPOINT ["./start.sh"]
+    ENTRYPOINT [ "./start.sh" ]
     ```
 
    > [!NOTE]
    > Tasks might depend on executables that your container is expected to provide.
    > For instance, you must add the `zip` and `unzip` packages
    > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
+   > Also, as this is a Linux Ubuntu image for the agent to use, you can customize the image as you need.
+   > E.g.: if you need to build .NET applications you can follow the document 
+   > [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu)
+   > and add that to your image. 
+
 
 5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
 
