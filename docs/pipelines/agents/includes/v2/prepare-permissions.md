@@ -29,13 +29,13 @@ must complete these steps. The agent will not use this person's
 credentials in everyday operation, but they're required to complete registration.
 Learn more about [how agents communicate](../../agents.md#communication).
 
-::: moniker range=">= tfs-2017"
+::: moniker range="<= azure-devops"
 
 #### Authenticate with a personal access token (PAT)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. Sign in with the user account you plan to use in your Team Foundation Server web portal (`https://{your-server}:8080/tfs/`).
 
@@ -53,7 +53,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 2. From your home page, open your profile. Go to your security details.
 
@@ -77,7 +77,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops"
+::: moniker range="<= azure-devops"
 
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
    If it's a [deployment group](../../../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
@@ -85,18 +85,6 @@ Learn more about [how agents communicate](../../agents.md#communication).
    Select **Show all scopes** at the bottom of the **Create a new personal access token window** window to see the complete list of scopes.
 
 5. Copy the token. You'll use this token when you configure the agent.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-#### Authenticate as a Windows user (TFS 2015 and TFS 2017)
-
-As an alternative, on TFS 2017, you can use either a domain user or a
-local Windows user on each of your TFS application tiers.
-
-On TFS 2015, for macOS and Linux only, 
-we recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
 
 ::: moniker-end
 

@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # WinRM SQL Server DB Deployment task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy to SQL Server Database using a DACPAC or SQL script.
 

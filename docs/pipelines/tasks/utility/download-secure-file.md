@@ -12,7 +12,7 @@ monikerRange: azure-devops
 
 # Download Secure File task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task in a pipeline to download a [secure file](../../library/secure-files.md) to the agent machine. When specifying the name of the file (using the `secureFile` input) use the name you specified when uploading it rather than the actual filename.
 

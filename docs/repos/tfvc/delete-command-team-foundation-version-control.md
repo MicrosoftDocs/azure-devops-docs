@@ -1,28 +1,31 @@
-﻿---
+---
 title: Delete Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Delete Command (Team Foundation Version Control)
 ms.assetid: c4cf7a59-26c8-490c-a065-279888019c36
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Delete Command (Team Foundation Version Control)
+# Delete command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Removes files and folders from the Team Foundation version control server and deletes them from the disk.
 
 > [!NOTE]
-> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
-**Required Permissions**
+## Prerequisites
 
-To use the **delete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than *none*, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **delete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than *none*, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
+## Syntax
 ```
 tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[password]] itemspec
 ```
@@ -44,7 +47,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    *itemspec*
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder to delete from the Team Foundation version control server. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+   Identifies the file or folder to delete from the Team Foundation version control server. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
 
    > [!Note]  
    > You can specify more than one *Itemspec* argument.
@@ -112,7 +115,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    **/login**
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 
@@ -127,7 +130,7 @@ When you check in a pending deletion, Team Foundation marks the file as deleted 
 
 When your *itemspec* specifies a folder, Team Foundation deletes all its files and subfolders and the files they contain, by default.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -137,20 +140,9 @@ The following example deletes 314.cs on disk in the specified local workspace fo
 c:\projects>tf delete 314.cs
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Move, Rename, and Delete Version-Controlled Files and Folders](rename-move-files-folders.md)
-
-#### Reference
-
-[Undelete Command](undelete-command.md)
-
-[Undo Command](undo-command.md)
-
-[Dir Command](dir-command.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Move, Rename, and Delete Version-Controlled Files and Folders](rename-move-files-folders.md)
+- [Undelete Command](undelete-command.md)
+- [Undo Command](undo-command.md)
+- [Dir Command](dir-command.md)

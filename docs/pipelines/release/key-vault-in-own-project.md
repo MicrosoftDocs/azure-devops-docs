@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use Azure Key Vault secrets in your Pipeline
 
-**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Azure Key Vault, you can securely store and manage your sensitive information such as passwords, API keys, certificates, etc. using Azure Key Vault, you can easily create and manage encryption keys to encrypt your data. Azure Key Vault can also be used to manage certificates for all your resources.
 
@@ -53,25 +53,25 @@ With Azure Key Vault, you can securely store and manage your sensitive informati
 
     - Set default subscription:
     
-    ```Command
+    ```azurecli
     az account set --subscription <your_subscription_name_or_subscription_ID>
     ```
 
     - Set default region:
     
-    ```Command
+    ```azurecli
     az config set defaults.location=<your_region>
     ```
 
 1. Create a new resource group to host your Azure Key Vault. A resource group is a container that holds related resources for an Azure solution.
 
-    ```Command
+    ```azurecli
     az group create --name <your-resource-group>
     ```
    
 1. Create a new Azure Key Vault.
 
-    ```Command
+    ```azurecli
     az keyvault create \
       --name <your-key-vault-name> \
       --resource-group <your-resource-group>

@@ -1,25 +1,32 @@
-﻿---
-title: Add files to version control using TFVC Add command
+---
+title:  Add TFVC command 
 titleSuffix: Azure Repos
-description: Use the TFVC Add command to add files to version control in TFS
+description: Use the  Add command to add files to a TFVC repository.
 ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Add command
+# Add command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Adds files and folders to version control.
+
+The **add** command adds files and folders to a TFVC repository.
 
 > [!TIP]
 > Before you add files to version control, you should first set up the workspace on your dev machine. See [Workspace Command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).  
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+
+## Syntax
 
 ```
 tf add itemspec [/lock:(none|checkin|checkout)] [/encoding:filetype] 
@@ -50,7 +57,7 @@ New files in a [local workspace](decide-between-using-local-server-workspace.md)
 c:\code\SiteApp\Main\SolutionA\Project1>tf add
 ```
 
-Adds the latest versions of all items (except those that are [ignored](add-files-server.md#tfignore)) in a local workspace.
+Adds the latest versions of all items, except those items that are [ignored](add-files-server.md#tfignore), in a local workspace.
 
 ```
 c:\code\SiteApp\Main\SolutionA\Project1>tf add /noignore
@@ -80,5 +87,10 @@ Adds all C\# code files (.cs) in the current directory and any subdirectories.
 
 ## Tips
 
--   The results of this command are queued as pending changes (see [Status command](status-command.md)) and do not take effect on the server until you check in (see [Checkin command](checkin-command.md)).  
--   If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md).
+-   The results of the **add** command are queued as pending changes and don't take effect on the server until you check in. See [Checkin command](checkin-command.md).  
+-   If you need to set aside changes or want to clean your workspace for another task, use the [Shelve command](shelve-command.md).
+
+## Related articles
+
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Status command](status-command.md)

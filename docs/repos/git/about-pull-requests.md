@@ -13,8 +13,8 @@ monikerRange: '<= azure-devops'
 
 # About pull requests
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 Pull requests (PRs) are a way to change, review, and merge code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
@@ -127,7 +127,7 @@ The following table summarizes the policies you can define to customize a branch
       Require approval from a specified number of reviewers on pull requests.
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2017"
+
 :::row:::
    :::column span="2":::
       [**Check for linked work items**](branch-policies.md#check-linked-wi)
@@ -139,8 +139,8 @@ The following table summarizes the policies you can define to customize a branch
       Encourage traceability by checking for linked work items on pull requests
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
+
+
 :::row:::
    :::column span="2":::
       [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
@@ -152,7 +152,7 @@ The following table summarizes the policies you can define to customize a branch
       Check to see that all comments have been resolved on pull requests.
    :::column-end:::
 :::row-end:::
-::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::

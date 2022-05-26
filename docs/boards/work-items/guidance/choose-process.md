@@ -1,5 +1,5 @@
 ---
-title: Choose a process from your Azure DevOps project
+title: Choose a process for your Azure DevOps project
 titleSuffix: Azure Boards
 description: Learn how to choose a process or process template based on the process model you use in Azure Boards and Azure DevOps. 
 ms.custom: work-items 
@@ -9,12 +9,13 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
 
-# Choose an Azure DevOps Server process flow or process template to work in Azure Boards or Azure DevOps 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+# Choose a process flow or process template to work in Azure Boards 
+
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
 
@@ -49,13 +50,6 @@ Scrum is the next most lightweight. Agile supports many Agile method terms, and 
 
 Choose the process that provides the best fit for your team.  
 
-::: moniker range="<= tfs-2015"
-
-> [!NOTE]    
-> Epics are supported on Azure Boards and Azure DevOps. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
-
-::: moniker-end
-
 :::row:::
    :::column span="2":::
    
@@ -71,6 +65,7 @@ Choose the process that provides the best fit for your team.
    ![Basic work item types](../../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    
@@ -91,6 +86,7 @@ Choose the process that provides the best fit for your team.
    ![Agile work item types](media/ALM_PT_Agile_WIT_Artifacts.png)
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
    
@@ -110,6 +106,7 @@ Choose the process that provides the best fit for your team.
    ![Scrum work item types](media/ALM_PT_Scrum_WIT_Artifacts.png)
    :::column-end:::
 :::row-end:::
+---
 :::row::: 
    :::column span="2":::
    
@@ -120,7 +117,7 @@ Choose the process that provides the best fit for your team.
    you can track requirements, change requests, risks, and reviews.
    
    
-   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts).
+   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md).
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::
@@ -129,6 +126,7 @@ Choose the process that provides the best fit for your team.
    ![CMMI work item types](media/ALM_PT_CMMI_WIT_Artifacts.png)
    :::column-end:::
   :::row-end:::
+---
 
 If you need more than two or three backlog levels, you can add more based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)  
@@ -167,6 +165,7 @@ The following table summarizes the main distinctions between the WITs and states
    **CMMI**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    
@@ -371,6 +370,7 @@ The following table summarizes the main distinctions between the WITs and states
    
    :::column-end:::
 :::row-end:::
+---
 
 > [!NOTE]  
 > 1. You can add these WITs from the [product backlog](../../backlogs/create-your-backlog.md) or [Kanban board](../../boards/kanban-basics.md). The product backlog shows a single view of the current backlog of work that can be dynamically re-ordered and grouped. Product owners can quickly prioritize work and outline dependencies and relationships.  
@@ -394,29 +394,6 @@ The following diagrams show the typical forward progression of
 those WITs used to track work and code defects for the three default processes. 
 They also show some of the regressions to former states and transitions to removed states. 
 Each image shows only the default reason associated with the transition. 
-
-
-#### [Basic process](#tab/basic-process) 
-
-:::row:::
-   :::column span="1":::
-   
-   #### Epic, Issue, Task hierarchy
-   ![Basic process work item hierarchy](../../get-started/media/track-issues/basic-process-epics-issues-tasks.png)
-   :::column-end:::
-   :::column span="1":::
-   
-   #### Epic, Issue, Task workflow 
-   ![Basic process workflow](../../get-started/media/track-issues/basic-process-workflow.png)
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-:::row-end:::
-
-
-> [!NOTE]  
-> The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
 
 #### [Agile process](#tab/agile-process) 
 
@@ -447,6 +424,29 @@ Each image shows only the default reason associated with the transition.
    
    #### Task
    ![Task workflow states, Agile process](media/ALM_PT_Agile_WF_Task.png)
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+:::row-end:::
+
+
+#### [Basic process](#tab/basic-process) 
+
+> [!NOTE]  
+> The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
+
+
+:::row:::
+   :::column span="1":::
+   
+   #### Epic, Issue, Task hierarchy
+   ![Basic process work item hierarchy](../../get-started/media/track-issues/basic-process-epics-issues-tasks.png)
+   :::column-end:::
+   :::column span="1":::
+   
+   #### Epic, Issue, Task workflow 
+   ![Basic process workflow](../../get-started/media/track-issues/basic-process-workflow.png)
    :::column-end:::
    :::column span="1":::
       
@@ -569,17 +569,6 @@ Teams create and work with these types using the corresponding tool:
 
 Work items from these type definitions aren't meant to be created manually and are then added to the Hidden Types category. 
 Work item types added to the Hidden Types category don't appear in the menus that create new work items.   
-
-::: moniker range="tfs-2013"
-
-> [!NOTE]    
-> If you upgraded your project from Azure DevOps 2013 or an earlier version to a later version, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
->
-> The following WITs were added with the indicated software version:   
-> - Shared Parameters added with Azure Dev Ops 2013.2   
-> - Test Plan and Test Suite added with Azure DevOps 2013.3  
-
-::: moniker-end
 
 <a id="test-experience"></a>
 

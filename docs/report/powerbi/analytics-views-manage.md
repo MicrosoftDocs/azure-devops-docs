@@ -13,7 +13,7 @@ ms.date: 10/01/2021
 
 # Manage Analytics views 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. 
 
@@ -80,11 +80,11 @@ To favorite a view, hover over the view and choose the ![star icon](../../media/
 > ![Favorite a view](media/editable-views/directory-favorite.png)
 
 <a id="manage-permissions" />
-<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](includes/manage-shared-view-permissions.md)]: Couldn&#39;t find file includes/manage-shared-view-permissions.md. -->
+ 
 
 [!INCLUDE [temp](includes/manage-shared-view-permissions.md)]
 
-<!--END ERROR INCLUDE -->
+ 
 
 ## Delete a view
 

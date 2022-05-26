@@ -4,7 +4,7 @@ title: Package, publish, unpublish extensions | Azure DevOps
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps or Team Foundation Server (TFS).
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 06/24/2020
@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 
 # Package and publish extensions
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Once you've written your extension, the next step is to package it. Then, you publish or upload it to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). Users can install the extension from the Marketplace if it's shared with them. The Marketplace is a global repository for private and public extensions, integrations, and other offers from Microsoft.
 

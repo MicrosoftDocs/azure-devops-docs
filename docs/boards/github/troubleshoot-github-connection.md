@@ -12,8 +12,7 @@ ms.date: 10/20/2021
 
 # Troubleshoot an Azure Boards-GitHub integration 
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)]
-
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The Azure Boards-GitHub integration relies on various authentication protocols to support the connection. Changes to a user's permission scope or authentication credentials can cause revocation of the GitHub repositories connected to Azure Boards. 
  

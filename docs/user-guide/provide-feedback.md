@@ -5,7 +5,6 @@ ms.custom: seodec18
 description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps.
 ms.technology: devops-new-user
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
-ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
@@ -15,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 # Get support and provide feedback
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process! 
 
@@ -28,6 +27,8 @@ Do you need to do any of the following?
 * **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).
 
 * **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks.
+
+* **Chat with our virtual support agent** Get help with common issues, troubleshooting steps, or create a request to change the region your Azure DevOps instance is hosted in using our [virtual support agent](https://go.microsoft.com/fwlink/?linkid=2160944).
 
 <!---
 Removed section per work item 1791710, as all Support links should go to Developer Community.

@@ -5,7 +5,7 @@ description: Learn how Analytics for Azure DevOps manages changes to the OData A
 ms.technology: devops-analytics 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---
@@ -13,7 +13,7 @@ ms.date: 09/30/2020
 # OData API versioning
 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 As Analytics grows, we're dedicated to providing consistency and reliability to our users. As such, Analytics for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with more functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 

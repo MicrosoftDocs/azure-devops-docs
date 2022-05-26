@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Kubectl task
 
-[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy, configure, or update a Kubernetes cluster by running kubectl commands.
 

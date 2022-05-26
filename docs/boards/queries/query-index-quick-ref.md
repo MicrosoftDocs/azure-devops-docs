@@ -13,7 +13,7 @@ ms.date: 01/25/2021
 
 # Use an index to query quick reference data in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -111,7 +111,7 @@ You can list work items based on the following criteria...
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
       - [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n)  
       ::: moniker-end
-      ::: moniker range="<= tfs-2018"
+      ::: moniker range="tfs-2018"
       - [Assigned to a member of a team](query-by-workflow-changes.md#group)
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
       ::: moniker-end

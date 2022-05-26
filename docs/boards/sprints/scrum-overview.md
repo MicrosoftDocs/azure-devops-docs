@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 04/01/2022
 ---
 
 # Implement Scrum practices for your team in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Your Sprints tools include a filtered backlog based on an Iteration Path and a similarly filtered taskboard. These tools are useful for implementing Scrum practices. With Scrum, you can schedule and plan sprints, update your taskboard, and monitor your sprint burndown. 
 
@@ -64,15 +64,12 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ["Web portal, choose Boards>Backlogs, Sprint](../work-items/media/view-add/view-sprint-backlog.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-![Boards>backlogs, TFS 2015, 2013 web portal](media/IC795962.png)
-::: moniker-end
 
 ## How selected sprints show up on the backlog
  
@@ -99,24 +96,13 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
 ![Azure Boards and TFS 2017, Selected iterations generate sprint backlogs](media/define-sprints/selected-team-iterations-vsts.png)
 
 ::: moniker-end  
-
-::: moniker range="<= tfs-2015"  
-
-<a id="tfs2015-sprints" />
-
-For example, by selecting Sprints 1 through 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
-
-![TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs](media/selected-iterations-generate-sprint-backlogs.png)
-
-::: moniker-end  
-
 
 ## Track team capacity
 
@@ -126,8 +112,6 @@ At the start of each sprint, you'll want to plan the work that your team can com
 
 :::row::: 
    :::column span="1":::
-   
-   
    **Team capacity planning tool**
    
    By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity and days off. And, conveniently, you can set holidays or shared days off taken by the entire team. 

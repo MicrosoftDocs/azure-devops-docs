@@ -8,15 +8,15 @@ ms.technology: devops-security
 ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2015'
-ms.date: 06/14/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/25/2022
 ---
 
 # Allowed IP addresses and domain URLs
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
+If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these IPs and URLs to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
 
 - [Domain URLs to allow](#domain-urls-to-allow)
 - [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
@@ -66,7 +66,7 @@ https://static2.sharepointonline.com
 https://visualstudio.com
 https://vsrm.dev.azure.com
 https://vstsagentpackage.azureedge.net
-https://windows.net
+https://*windows.net
 https://login.microsoftonline.com
 https://app.vssps.visualstudio.com 
 https://{organization_name}.visualstudio.com
@@ -109,7 +109,7 @@ https://*.blob.core.windows.net
 https://*.visualstudio.com
 ```
 
-Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly) : [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
+Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
 
 ### NuGet connections
 
@@ -191,7 +191,7 @@ _Inbound connections_ originate from Azure DevOps and target resources within yo
 
 - Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)  
 - Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)  
-- Azure Pipelines connecting to on-premises source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
+- Azure Pipelines connecting to on-premises source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [Bitbucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
 - Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-premises or cloud-based Splunk
 
 Ensure the following IP addresses are allowed for inbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.

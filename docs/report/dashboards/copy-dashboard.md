@@ -8,20 +8,19 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 09/28/2021
+ms.date: 01/20/2022
 ---
 
 # Copy a dashboard 
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)] 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. This feature minimizes the work required to build similar dashboards from scratch.  
+Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. The copy operation copies the widgets defined on one dashboard to a new dashboard, and reconfigures them based on a selected team. This feature minimizes the work required to build similar dashboards from scratch.  
  
 > [!NOTE]  
-> The **Copy Dashboard** feature is currently in preview. To access the feature, you must enable the **Copy Dashboard Experience**. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md). 
-> This feature copies the widgets to a new dashboard, but doesn't reconfigure them based on a selected team. Support for that function is planned for a later release. 
+> The **Copy Dashboard** feature is currently in preview and enabled by default. To access the feature, the **Copy Dashboard Experience** must be enabled. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md). 
 
-To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
+To create a dashboard for a team or project, see [Add, rename, and delete dashboards](dashboards.md). To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
 
 <a id="permissions">  </a>
 
@@ -71,16 +70,22 @@ All dashboards are associated with either a team or a project. From the **Overvi
 
 1. Enter a **Name** and **Description** for the new dashboard. To copy the dashboard as a team dashboard, select **Team Dashboard** and then select the **Project** and the **Team**. To copy the dashboard as a project dashboard, select **Project Dashboard** and then the **Project**. 
 
-	Here we choose to copy a team dashboard to another team dashboard. 
+	Here we choose to copy the Fabrikam Fiber project - Fabrikam Team Bug Activity dashboard to the Design Agile project, Design Agile team dashboard. 
+
 	> [!div class="mx-imgBorder"]  
 	> ![New dashboard dialog, copy dashboard for a different team.](media/copy-dashboard/new-dashboard-dialog.png)  
 
 1. Select **Create**. 
 
-	The page updates to reflect the new dashboard. Only the widgets have been copied. 
+	The page updates to reflect the new dashboard. The widgets and layout appear the same as the dashboard selected for copy.  
 
-1. Open each widget as needed to configure it to the specific project or team. 
+	In the background, a folder with the name of the new dashboard is created in Shared Queries. All the queries for the new dashboard are copied to that folder. Query names remain the same. Widgets with a team configuration are updated with the new team. Widgets with a team configuration that are copied from a team dashboard to a project dashboard retain the original configuration.
+
+	:::image type="content" source="media/copy-dashboard/shared-query-folder-created.png" alt-text="Screenshot of Shared Queries folder created with copy dashboard experience.":::
+
+1. Open each widget as needed to verify or modify the configuration.  
  
+
 
 ## Next steps
 

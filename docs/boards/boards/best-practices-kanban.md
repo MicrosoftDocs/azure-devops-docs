@@ -13,7 +13,7 @@ ms.date: 10/15/2021
 
 # Use best practices when implementing Kanban in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Having worked through the four configuration steps that were provided in [Kanban basics](../boards/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.

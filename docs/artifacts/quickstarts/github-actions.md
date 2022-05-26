@@ -11,6 +11,8 @@ ms.topic: quickstart
 
 # Quickstart: Use GitHub Actions to push to Azure Artifacts
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure Artifacts together. GitHub Actions help you automate your software development workflows from within GitHub. You can use GitHub Actions to deploy to an Azure Artifacts feed. 
 ## Prerequisites
 

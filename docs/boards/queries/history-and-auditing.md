@@ -8,12 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021
+ms.date: 04/01/2022
 ---
+
 
 # Query work item history and discussion fields in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The history of a work item tells you who opened the item, what changed, and why. This information helps you track how an item changes over time. When you enter information in the history field, provide as much information as possible to help the next work item owner understand what has happened and what they have to do.  
 
@@ -35,21 +36,14 @@ You can use either the web portal or Team Explorer to view the history of a work
 #### [Browser](#tab/browser/)
 <a id="team-services" /> 
 
-::: moniker range=">= tfs-2017"
-![Screenshot of Query Editor to Search for items based on words contained in the History field.](media/hist-audit-query-ts-bt.png)
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-![Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions.](media/ALM_HA_HistoryQuery.png) 
-::: moniker-end
-
+:::image type="content" source="media/hist-audit-query-ts-bt.png" alt-text="Screenshot of Query Editor to Search for items based on words contained in the History field.":::
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 <a id="tee-query-history" />
 <a id="team-explorer" />
 
 
-The **Query Editor** isn't available when you're connected to a GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
+The **Query Editor** isn't available when you're connected to GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
 * If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
 * If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
@@ -59,15 +53,11 @@ The **Query Editor** isn't available when you're connected to a GitHub or third-
 ![Screenshot of Query Editor to Search for items based on words contained in the History field in Team Explorer.](media/hist-audit-query-team-explorer.png) 
 
 * * *
+
+
 ## List items based on the contents of the History field  
 
-::: moniker range=">= tfs-2017"
 You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **Discussion** area are queryable. Change history entries, such as which fields were changed, aren't queryable. To quickly find items based on words entered into the Discussion area, or **Description** or other rich-text fields, consider using [work item search](../../project/search/functional-work-item-search.md).
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **History** field are queryable. Change history entries, such as which fields were changed, aren't queryable.
-::: moniker-end
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. 
 
@@ -79,12 +69,12 @@ You can filter for work items by the date on which they were changed or for a sp
    **Include these query clauses**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Items whose History field contains the word &quot;reproducible&quot;  
    :::column-end:::
    :::column span="1":::
-   
    `History Contains Words reproducible`  
    :::column-end:::
 :::row-end:::
@@ -92,32 +82,26 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column span="1":::
    Items whose History field doesn&#39;t contain the word &quot;beta&quot;
    :::column-end:::
-   :::column span="1":::
-   
    `History Does Not Contain Words beta`
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Items that contain the phrase &quot;stack traces&quot; and were closed but reactivated
    :::column-end:::
    :::column span="1":::
-   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words stack traces`  `And State Was Ever Closed`  
-`And State <>  Closed`  
+   `History Contains Words stack traces`  `And State Was Ever Closed`  
+   `And State <>  Closed`  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Items closed within a specified time period
    :::column-end:::
    :::column span="1":::
-   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`State = Done`  
-`And Closed Date > 7/1/2015`  
-`And Closed Date <= 7/21/2015`  
+   `State = Done`  
+   `And Closed Date > 7/1/2015`  
+   `And Closed Date <= 7/21/2015`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -126,12 +110,11 @@ You can filter for work items by the date on which they were changed or for a sp
    Items I&#39;ve been associated with 
    :::column-end:::
    :::column span="1":::
-   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words MyName`  
-`Or Assigned To Was Ever _ @Me`  
+   `History Contains Words MyName`  
+   `Or Assigned To Was Ever _ @Me`  
    :::column-end:::
 :::row-end:::
-  
+---
 
 ### Tips for using the query editor
 
@@ -156,34 +139,15 @@ The history details shown depend on the platform, version, and client.
 <a id="team-services-tab" /> 
 <a id="team-services-view" /> 
 
-::: moniker range=">= tfs-2017"
-
-![Screenshot of Work item form, Web portal, Choose History tab.](media/hist-audit-wi-form-vsts-tab.png)  
+:::image type="content" source="media/hist-audit-wi-form-vsts-tab.png" alt-text="Screenshot of Work item form, Web portal, Choose History tab.":::
 
 The state change history diagram appears first. To see the entire history of state changes, choose **Show all**.
 
-![Screenshot of Work item form, Web portal, State change history diagram (web portal only).](media/state-change-history-diagram.png)
+:::image type="content" source="media/state-change-history-diagram.png" alt-text="Screenshot of Work item form, Web portal, State change history diagram (web portal only).":::
 
 Choose an entry in the left pane to view the details of changes made.
 
-![Screenshot of Work item form, History tab, Web portal, Details.](media/hist-audit-wi-form.png)  
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-> [!NOTE]  
-> With TFS 2017 and later versions, the **History** field is no longer a rich-text field. To annotate the work item history, add to the **Description** or **Discussion** fields. 
-::: moniker-end
-
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-To view only the comments that were added to the log, choose the **Discussion Only** tab. To view all changes made to the item, choose the **All Changes** tab, and then choose the **show all changes** link for a specific date and time.  
-
-![Screenshot of Work item form, History tab, Web portal, earlier versions](media/hist-audit-choose-history-tab-tfs.png) 
-
-::: moniker-end
-
+:::image type="content" source="media/hist-audit-wi-form.png" alt-text="Screenshot of Work item form, History tab, Web portal, Details.":::
 
 #### [Visual Studio](#tab/visual-studio/)
 

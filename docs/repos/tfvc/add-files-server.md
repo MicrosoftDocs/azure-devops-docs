@@ -6,17 +6,18 @@ ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 03/20/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Add files to the server
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Adding a file to version control is often automatic when you use Solution Explorer and your project is under version control. However, in some cases, you have to take some extra steps to add the project to version control.
 
->[!TIP]  
+> [!TIP]  
 > Before you add files to version control, you should first [set up the workspace on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)
 
 ## Create a new code project and solution under version control
@@ -184,7 +185,7 @@ By default certain types of files (for example, .dll files) are ignored by versi
 
 -   When you try to add ignored files using the Add to Source Control dialog box (for example by dragging them into Source Control Explorer), they automatically appear in the **Excluded items** tab.
 
-You can configure which kinds of files are ignored by placing text file called **.tfignore** in the folder where you want rules to apply. The effects of the .tfignore file are recursive. However, you can create .tfignore files in sub-folders to override the effects of a .tfignore file in a parent folder.
+You can configure which kinds of files are ignored by placing the **.tfignore** text file in the folder where you want rules to apply. The effects of the .tfignore file are recursive. However, you can create .tfignore files in sub-folders to override the effects of a .tfignore file in a parent folder.
 
 ### .tfignore file rules
 
@@ -222,7 +223,7 @@ ProjA\*.cpp
 
 While you can manually create a .tfignore text file using the above rules, you can also automatically generate one when the **Pending Changes** page has detected a change.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > This only applies when using a [local workspace](decide-between-using-local-server-workspace.md). Files changed when working in a server workspace will check in without showing as a pending
 > change in Team Explorer.
 
@@ -242,10 +243,8 @@ The .tfignore file is automatically added as an included pending change so that 
 
 ## Work from the command prompt
 
--    [Add command](add-command.md)  Upload files from the workspace on your dev machine to your server.
+-  [Add command](add-command.md)  Upload files from the workspace on your dev machine to your server.
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Decide between using a local or a server workspace](decide-between-using-local-server-workspace.md)
+- [Decide between using a local or a server workspace](decide-between-using-local-server-workspace.md)

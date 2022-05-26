@@ -25,7 +25,7 @@ ms.date: 08/10/2020
 	> [!div class="mx-imgBorder"]  
 	> ![Connect dialog](/azure/devops/report/powerbi/media/powerbi-successful-organizational-signin.png) 
  
-1. Choose **Get Data**, **Online Services**, **Azure DevOps Server**, and then choose **Connect**. 
+1. Choose (1) **Get Data**, (2) **Online Services**, and (3) **Azure DevOps (Boards only)** for cloud services or **Azure DevOps Server (Boards only)** for on-premises. Then, choose **Connect**.  Analytics views only support queries against work items and test cases.  
 
     > [!div class="mx-imgBorder"]  
     > ![Connect to data](/azure/devops/report/powerbi/media/data-connector/get-data-azure-devops.png)  

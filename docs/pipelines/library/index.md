@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/14/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Library of assets
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 A *library* is a collection of build and release assets for an Azure DevOps project.
 Assets defined in a library can be used in multiple build and release pipelines of the project.
@@ -24,7 +24,7 @@ The library contains two types of assets: [variable groups](variable-groups.md) 
 
 Variable groups are only available to release pipelines in TFS 2017 and earlier. They're available to build and release pipelines in TFS 2018 and in Azure Pipelines. Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and in Azure Pipelines.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
