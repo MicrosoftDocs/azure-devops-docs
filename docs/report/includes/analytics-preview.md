@@ -3,13 +3,13 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 09/21/2021
+ms.date: 05/25/2022
 ---
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> The Analytics service is automatically enabled for all Azure DevOps Services. It is supported for use in production. [Power BI integration](../powerbi/overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of the Analytics Service are in Preview. We encourage you to use it and provide us feedback.  . 
+> The Analytics service is automatically enabled for all Azure DevOps Services. It is supported for use in production. [Power BI integration](../powerbi/overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of the Analytics Service are in Preview. We encourage you to use it and provide us feedback.    
 
 ::: moniker-end
 
