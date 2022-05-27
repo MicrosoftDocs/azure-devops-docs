@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\..\\azure-docs-pr\\articles\\azure-functions\\temp folder"
+		},
+		{
+			"name": "functionsdemo",
+			"path": "..\\..\\..\\..\\..\\..\\azure-docs-pr\\articles\\azure-functions\\functionsdemo"
+		},
+		{
+			"name": "newfolder",
+			"path": "..\\..\\..\\..\\..\\..\\azure-docs-pr\\articles\\azure-functions\\newfolder"
+		}
+	],
+	"settings": {
+		"debug.internalConsoleOptions": "neverOpen"
+	}
+}
