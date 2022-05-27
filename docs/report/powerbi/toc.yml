@@ -148,6 +148,8 @@
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Explore Analytics metadata
     href: ../extend-analytics/analytics-metadata.md
+  - name: Analytics work item fields  
+    href: ../powerbi/analytics-fields-reference.md
   - name: Analytics views dataset design
     href: data-connector-dataset.md
   - name: Filters applied to historical data

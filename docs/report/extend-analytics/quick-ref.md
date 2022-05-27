@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---
 
-# Extend Analytics with OData (Preview) quick reference
+# Extend Analytics with OData quick reference
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
