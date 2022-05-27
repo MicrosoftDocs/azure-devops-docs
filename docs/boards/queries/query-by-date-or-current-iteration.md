@@ -512,7 +512,11 @@ You can use date fields to filter your queries. Some of these fields are populat
     :::column-end:::
     :::column span="2":::
       The date and time when the schedule indicates that the task will start.
-   Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime
+      ::: moniker range="azure-devops"
+      > [!NOTE]   
+      > [Delivery Plans](../plans/review-team-plans.md) uses the **Start Date** and **Target Date** to show the span of Features, Epics, and other portfolio backlog items. 
+      ::: moniker-end
+      Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
       Epic, Feature, Requirement, Task, Test Plan, User Story
@@ -535,15 +539,15 @@ You can use date fields to filter your queries. Some of these fields are populat
       Target Date
     :::column-end:::
     :::column span="2":::
-      The date by which a feature or work item is to be completed.  
+      The date by which a feature, work item, or issue is to be completed or resolved.  
       ::: moniker range="azure-devops"
       > [!NOTE]   
-      > [Delivery Plans](../plans/review-team-plans.md) uses the Start Date and Target Date to show the span of Features, Epics, and other portfolio backlog items. 
+      > [Delivery Plans](../plans/review-team-plans.md) uses the **Start Date** and **Target Date** to show the span of Features, Epics, and other portfolio backlog items. 
       ::: moniker-end
       Reference name=Microsoft.VSTS.Scheduling.TargetDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
-      Epic, Feature
+      Epic, Feature 
    :::column-end:::
 :::row-end:::
 
