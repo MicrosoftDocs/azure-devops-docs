@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 11/19/2018  
+ms.date: 05/26/2022  
 ---
 
 # Filter the contents of a wiki or print a page
@@ -23,7 +23,7 @@ To print a wiki page, you can select a page and then print it.
 
 ## Filter wiki pages
 
-Enter a title, keyword, or character string into the **Filter pages** box to quickly find pages whose title contains the keyword.
+Enter a title, keyword, or character string into the **Filter pages b.y title** box to quickly find pages whose title contains the keyword.
 
 > [!div class="mx-imgBorder"]  
 > ![Filter page by title](media/wiki/filter-box.png)
