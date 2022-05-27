@@ -115,11 +115,11 @@ The following table describes the fields that you can use to plan and prioritize
    **Blocked**
    :::column-end:::
    :::column span="2":::
-   Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.
+      Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.
+      - For the Scrum process, task work items: You can specify **Yes** or clear the field. 
+      - For the CMMI process work items: You can specify **Yes** or **No**.
 
-   You can specify **Yes** or **No**.
-
-   Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String
+     Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String
    :::column-end:::     
    :::column span="1":::
    Bug, Change Request, Requirement, Risk, Task (CMMI, Scrum)

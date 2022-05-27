@@ -2,14 +2,12 @@
 title: Analytics Views - Dataset design
 titleSuffix: Azure DevOps
 description: Learn about the dataset that is created in Power BI for an Analytics View.
-ms.technology: devops-analytics
-ms.assetid: 8E92B372-B312-4BAD-960A-B3CB0202E2A1  
-ms.reviewer: angurusw
+ms.technology: devops-analytics  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
-ms date: 10/04/2021
+ms.date: 05/12/2022
 ---
 
 # Analytics views dataset design
@@ -50,7 +48,7 @@ You can select all work tracking fields in an Analytics view, except for the fol
 > [!IMPORTANT]  
 > Identity or person-name fields, such as Created By, Assigned To, etc., are selectable fields, however you can't select these fields at this time as field criteria for the purposes of filtering work items. 
 
-For a description of each work item tracking fields, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).
+For a description of each work item tracking fields, see [Analytics work item fields reference](analytics-fields-reference.md).
 
 
 ### Analytics data store fields 
