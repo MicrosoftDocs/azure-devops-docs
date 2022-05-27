@@ -25,7 +25,9 @@ You can use a pipeline to automatically build and test your Java projects. Once 
 You must have the following items in Azure DevOps:
 
 - A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
-- A pipeline. If you don't have one, [create a pipeline](#create-a-pipeline) now.
+- A pipeline. If you don't have one, [Create a pipeline](#Build-your-code) now.
+
+### Create a project
 
 ### Create a pipeline
 
@@ -45,7 +47,7 @@ You must have the following items in Azure DevOps:
 
 1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
-1. When you see the **Configure** tab, select **Maven**.
+1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [Build your code](#build-your-code).
 
 1. When you're ready, select **Save and run**.
 
@@ -118,7 +120,7 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 ### Maven
 
-To build with Maven, add the following snippet to your `azure-pipelines.yml` file. Change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](../tasks/build/maven.md) task for more about these options.
+With Maven build, the following snippet gets added to your `azure-pipelines.yml` file. Change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](../tasks/build/maven.md) task for more about these options.
 
 ```yaml
 steps:
@@ -127,9 +129,9 @@ steps:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
+    jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
+    publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 ```
@@ -148,7 +150,7 @@ For details about common Java phases and goals, see [Apache's Maven documentatio
 
 ### Gradle
 
-To build with Gradle, add the following snippet to your `azure-pipelines.yml` file. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+With the Gradle build, the following snippet is added to your `azure-pipelines.yml` file. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 steps:
@@ -158,9 +160,9 @@ steps:
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
+    jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
+    publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
 ```
@@ -184,7 +186,7 @@ For details about common Java Plugin tasks for Gradle, see [Gradle's documentati
 
 ### Ant
 
-To build with Ant, add the following snippet to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file, to match your project configuration. See the [Ant](../tasks/build/ant.md) task for more about these options.
+With Ant build, the following snippet is added to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file, to match your project configuration. See the [Ant](../tasks/build/ant.md) task for more about these options.
 
 ```yaml
 steps:
@@ -193,7 +195,7 @@ steps:
     workingDirectory: ''
     buildFile: 'build.xml'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
+    jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
