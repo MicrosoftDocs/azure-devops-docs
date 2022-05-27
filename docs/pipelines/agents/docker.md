@@ -238,7 +238,7 @@ Next, create the Dockerfile.
    > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
    > Also, as this is a Linux Ubuntu image for the agent to use, you can customize the image as you need.
    > E.g.: if you need to build .NET applications you can follow the document 
-   > [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/dotnet/core/install/linux-ubuntu)
+   > [Install the .NET SDK or the .NET Runtime on Ubuntu](/dotnet/core/install/linux-ubuntu)
    > and add that to your image. 
 
 
