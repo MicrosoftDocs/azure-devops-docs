@@ -315,7 +315,7 @@ Wildcard        | `*`              | Matches all values for this field
 Single value    | `5`              | Specifies a single value for this field
 Comma delimited | `3,5,6`          | Specifies multiple values for this field. Multiple formats can be combined, like `1,3-6`
 Ranges          | `1-3`            | The inclusive range of values for this field
-Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as every 4th value or the range 1-5 with a step interval of 2
+Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as every fourth value or the range 1-5 with a step interval of 2
 
 Example | Cron expression
 --------|----------------
@@ -391,7 +391,7 @@ YAML pipelines are not available on TFS.
 
 #### [Classic](#tab/classic/)
 
-Classic scheduled pipelines don't have a **Scheduled runs** view, but you can can view the schedule for a pipeline in the classic schedule editor for your pipeline.
+Classic scheduled pipelines don't have a **Scheduled runs** view, but you can view the schedule for a pipeline in the classic schedule editor for your pipeline.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -619,7 +619,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 * Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to you YAML file, and push the update to your repository. This should re-sync the schedules.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to your YAML file, and push the update to your repository. This should re-sync the schedules.
 
 * If you use GitHub for storing your code, it is possible that Azure Pipelines may have been throttled by GitHub when it tried to start a new run. Check if you can start a new run manually.
 

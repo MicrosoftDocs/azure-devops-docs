@@ -9,7 +9,7 @@ An informational run tells you Azure DevOps failed to retrieve a YAML pipeline's
 
 An informational run looks like in the following screenshot. 
 
-:::image type="content" source="../process/media/pipeline-information-run.png" alt-text="Information pipeline run.":::
+:::image type="content" source="../process/media/pipeline-information-run.png" alt-text="Example of an informational pipeline run.":::
 
 You can recognize an informational run by the following attributes:
 - Status is `Canceled`
