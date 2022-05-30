@@ -44,7 +44,7 @@ If the Bitbucket server cannot be reached from Azure Pipelines, you have two opt
 
 ### Reachable from Microsoft-hosted agents
 
-Another decision you possibly have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a simple pipeline to use Microsoft-hosted agents and make sure to add a step to checkout source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
+Another decision you possibly have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a pipeline to use Microsoft-hosted agents and make sure to add a step to check out source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
 
 ### Not reachable from Microsoft-hosted agents
 
@@ -65,7 +65,7 @@ When you use **Other Git** connection to set up a classic pipeline, disable comm
 
 If you want to enhance this experience, it is important that you enable communication from Azure Pipelines to Bitbucket Server. 
 
-To allow traffic from Azure DevOps to reach your Bitbucket Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allow-list. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allow-list.
+To allow traffic from Azure DevOps to reach your Bitbucket Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allowlist. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allowlist.
 
 Allow Azure Pipelines to attempt accessing the Git server in the **Other Git** service connection.
 
