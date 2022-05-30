@@ -9,12 +9,13 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
+
 
 # Upload or download a process template
 
-[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system and other subsystems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
@@ -34,7 +35,7 @@ Support for uploading and downloading Inherited processes isn't supported throug
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects.
 ::: moniker-end 
 
@@ -44,9 +45,9 @@ You can upload, download, and delete process templates for a project collection.
 
 ## Prerequisites
 
-- Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises Azure DevOps Server that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).
+- Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises Azure DevOps Server that you connect to. For example, if you connect to an instance of Azure DevOps Server 2019, you must connect from Visual Studio 2019 or Visual Studio Community 2019. You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).
 
-- If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
+- To manage process templates, you must be a member of the **Project Collection Administrators** group, To get added to this group, see [Change project collection-level permissions](../../../organizations/security/change-organization-collection-level-permissions.md). 
 
 ## Manage a process template  
 
@@ -241,7 +242,7 @@ To determine the type of process template that was used to create your project, 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 :::row:::
    :::column span="1":::
@@ -272,7 +273,6 @@ To determine the type of process template that was used to create your project, 
 ::: moniker-end
 
 
-
 <a id="restrictions"> </a>
 
 ::: moniker range="< azure-devops"
@@ -290,7 +290,7 @@ Uploading a process template requires that it pass the following validation chec
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
 Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
@@ -308,24 +308,6 @@ For more restrictions, see [Naming restrictions](../../../organizations/settings
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-- Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
-Also, names can't contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
-For more restrictions, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md). 
-- Process template folders can't contain any .exe files. If they do, the process template may upload successfully, however project creation will fail.
-- Process template total size should be 2 GB or less, or project creation will fail.
-- The upload process runs a partial verification check to make sure that the XML of each process template XML file is valid. If you receive any errors when you try to upload the process template, review the XML to determine the cause of the error. Duplicate tags in an XML file can cause errors. If there's no error in the XML, check to make sure all the appropriate files are included in your process template in the correct folder locations.
-
-> [!IMPORTANT]  
->The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. 
->
->See [Process template plug-ins: Index to XML element definitions](../../../reference/process-templates/process-template-plug-ins-xml-elements-index.md).
-
-
-::: moniker-end
-
-
 ## Related articles  
 
 Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
@@ -336,20 +318,4 @@ Periodically, updates are made to the process templates to support new features.
 - [Import and update a process (Hosted XML)](../../../organizations/settings/work/import-process/import-process.md)     
 - [Customize your work tracking experience](../../../reference/customize-work.md)  
 
-
-
-::: moniker range="<= tfs-2017"
-
-### Update a process template to enable new features 
-
-When you upgrade your on-premises Azure DevOps to a later version, new features may become available. [To gain access to these new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade), you may need to [update a customized process template](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options). 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-### Add another project 
-
-You can add a project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a project from the web portal. For details, see [Process template and plug-in files, Client support for project creation](../../../reference/process-templates/overview-process-template-files.md#client-support). 
-
-::: moniker-end
+ 

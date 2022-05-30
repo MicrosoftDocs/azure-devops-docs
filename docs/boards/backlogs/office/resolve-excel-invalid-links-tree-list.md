@@ -12,7 +12,7 @@ ms.date: 10/08/2021
 
 # Resolve invalid links in an Excel tree list in Azure Boards
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items. It occurs if the title of a work item title is missing or occurs in the wrong title column.  
   
@@ -20,7 +20,7 @@ You can resolve most errors using the procedures provided in this article.
 
 ## Prerequisites  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md).
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Change project-level permissions](../../../organizations/security/change-project-level-permissions.md).
 
 <a name="tf208000"></a>
 
@@ -79,7 +79,7 @@ If the first work item in the list has no value in the **Title 1** column, the e
   
     2.  If the first work item should be lower in the list, move the correct work item to the top of the list.  
   
-         For more information about how to move work items, see [Bulk add work items with Excel](./bulk-add-modify-work-items-excel.md?viewFallbackFrom=vsts).  
+         For more information about how to move work items, see [Bulk add work items with Excel](./bulk-add-modify-work-items-excel.md).  
   
 3.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
   

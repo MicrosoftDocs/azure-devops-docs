@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2021
+ms.date: 04/01/2022
 ---
 
 
 # Query work items by link or attachment count  
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following fields:
 
@@ -29,7 +29,7 @@ You can [link work items to track related work and dependencies](link-work-items
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops" 
 - Attachment File Count
 - (Discussion) Comment Count 
 - External Link count
@@ -38,14 +38,6 @@ You can [link work items to track related work and dependencies](link-work-items
 - Related Link Count
 ::: moniker-end 
 
-
-::: moniker range="<= tfs-2015" 
-- Attachment File Count
-- External Link count
-- Hyperlink Count
-- Link Comment
-- Related Link Count
-::: moniker-end 
 
 For descriptions of each of these fields, see the [table provided later in this article](#table-field). 
 
@@ -360,7 +352,8 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. 
    > [!NOTE]
-   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause. 
+   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
+     
    Reference Name=System.Parent, Data type=Integer
    :::column-end:::
    :::column span="1":::
@@ -406,14 +399,14 @@ The following table describes fields associated with links and attachments. Most
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
 
-::: moniker range=">= tfs-2015 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 ### Add custom link types or customize the links controls 
 

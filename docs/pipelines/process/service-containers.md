@@ -10,7 +10,7 @@ monikerRange: azure-devops
 
 # Service containers
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 If your pipeline requires the support of one or more services, in many cases you'll want to create, connect to, and clean up each
 service on a per-job basis. For instance, a pipeline may run integration tests that require access to

@@ -5,12 +5,12 @@ ms.topic: reference
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.custom: seodec18
 ms.date: 02/18/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Batch Script task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run a Windows .bat or .cmd script.
 Optionally, allow it to permanently modify environment variables.
@@ -20,7 +20,7 @@ Optionally, allow it to permanently modify environment variables.
 > 
 > For information on supporting multiple platforms, see [cross platform scripting](../../scripts/cross-platform-scripting.md).
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 

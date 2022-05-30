@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
 ms.date: 08/24/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Release deployment control using gates
 
-**Azure Pipelines**
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Gates allow automatic collection of health signals from external services, and then
 promote the release when all the signals are successful at the same time or stop the
@@ -116,7 +116,7 @@ this case, after the timeout period expires, the deployment is rejected.
 
 ## Additional resources
 
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)  
+* [Video: Deploy quicker and safer with gates in Azure Pipelines](/Events/Connect/2017/T181)  
 * [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)

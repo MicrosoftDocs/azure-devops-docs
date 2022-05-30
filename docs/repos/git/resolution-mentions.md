@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Resolve work items on commit
 
-[!INCLUDE [version-azure-devops-2020](../includes/version-azure-devops-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 Close work items by mentioning keywords in commit messages. When you mention a work item in a commit that makes it to the default branch via one of the supported workflows, we will attempt to resolve that work item. 
 

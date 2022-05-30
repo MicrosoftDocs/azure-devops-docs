@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops"
 ms.topic: conceptual
-ms.date: 06/07/2021
+ms.date: 04/04/2022
 
 
 #Customer intent: As a process designer, I need to understand how rules work and the limits to defining rules for a work item type or process, so I can add the right rules to support my business processes.
@@ -17,7 +17,7 @@ ms.date: 06/07/2021
 # Rules and rule evaluation    
 
 
-[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Rules are used to set or restrict value assignments to a work item field. There are two main types of rules, auto-generated rules and custom rules defined for a process or project. Auto-generated rules minimize the need to add custom rules for areas that should work in a standard way. 
 
@@ -192,8 +192,7 @@ The On-premises XML process defines rules using XML elements. All of these rule 
 ![Work item tracking XML element field rules](media/rules/IC757527.png) 
 
 > [!NOTE]   
-> For TFS 2017 and later versions, the `VALIDUSER` element isn't supported. 
-
+> The `VALIDUSER` element isn't supported for TFS 2018 and later versions. 
 
 ### Where to apply a field rule   
 
@@ -280,7 +279,7 @@ If you don't see a field listed in the drop-down menu of the rule user interface
 
 Default and copy rules modify the values of work item fields. They define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
-::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
+::: moniker range="tfs-2018 || azure-devops-2020 || azure-devops"
 You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
@@ -412,7 +411,7 @@ These rules support setting defaults, copying values from one field to another, 
 
 Constraint rules restrict changing the value of a field. They define the valid states for a work item. Each constraint operates on a single field. Constraints are evaluated on the server on work item save, and if any constraint is violated the save operation is rejected.  
  
-::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
+::: moniker range="tfs-2018 || azure-devops-2020 || azure-devops"
 You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  
@@ -586,22 +585,6 @@ Most of these rule actions can be applied with the selection of any condition.
       > ```  
    :::column-end:::
 :::row-end:::  
-::: moniker range="<= tfs-2015"
-:::row:::
-   :::column span="1":::
-      `VALIDUSER`
-   :::column-end:::
-   :::column span="3":::
-      The value of the field must be a user or group within the specified group, or within the full list of valid users if no group is specified.
-      > [!div class="tabbedCodeSnippets"]  
-      > ```XML  
-      > <FIELD refname="MyCorp.ChangedBy" name="Custom Changed By" type="String">  
-      >     <VALIDUSER group="[Project]\Contributor Leads"/>  
-      > </FIELD> 
-      > ```  
-   :::column-end:::
-:::row-end:::  
-::: moniker-end
 ---  
 
 
@@ -968,7 +951,8 @@ Examples of tokens include the following:
 - [*CollectionName*], such as [fabrikam], [myorganization] 
 
 
-To learn about the scopes available for your project or organization, go to the **Project Settings>Permissions>Groups** or **Organization Settings>Permissions>Groups** page, you can filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md). 
+To learn about the scopes available for your project or organization, go to the **Project Settings>Permissions>Groups** or **Organization Settings>Permissions>Groups** page, you can filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Change project-level permissions](../../security/change-project-level-permissions.md) or 
+[Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md). 
 
 :::image type="content" source="media/rules/permissions-group-scope.png" alt-text="Screenshot of filtered Permissions groups list.":::
 
@@ -1001,8 +985,8 @@ Examples of tokens include the following:
 > [!NOTE]    
 > [Project], [GLOBAL], and [Team Foundation] are used as is. You don't replace them with the name of the project, collection, or server name. 
 
-To learn about the scopes available for your project or collection, go to the **Project Settings>Permissions>Groups** or **Collection Settings>Permissions>Groups** page. Filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md). 
- 
+To learn about the scopes available for your project or collection, go to the **Project Settings>Permissions>Groups** or **Collection Settings>Permissions>Groups** page. Filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Change project-level permissions](../../security/change-project-level-permissions.md) or 
+[Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md). 
 
 :::image type="content" source="media/rules/permissions-group-scope.png" alt-text="Screenshot of filtered Permissions groups list.":::
   
@@ -1030,7 +1014,7 @@ Rules that specify a condition based on the user or group membership of the user
 > [!NOTE] 
 > Visual Studio 2019 Team Explorer for projects using GIT has been re-written to use REST APIs.
 
-To avoid problems with users updating work items from various clients, specify Azure DevOps security groups instead of Active Directory groups. You can easily create an Azure DevOps security group to correspond to an Active Directory group. To learn how, see [Add a user or group to a security group](../../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group). 
+To avoid problems with users updating work items from various clients, specify Azure DevOps security groups instead of Active Directory groups. You can easily create an Azure DevOps security group to correspond to an Active Directory group. To learn how, see [Add or remove users or groups, manage security groups](../../security/add-remove-manage-user-group-security-group.md). 
 
  
 <!-- add a tip to custom-rules.md --> 
@@ -1140,7 +1124,8 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 - [Sample rule scenarios](rule-samples.md)  
 - [Work item field index](../../../boards/work-items/guidance/work-item-field.md)
 - [Work item fields and attributes](../../../boards/work-items/work-item-fields.md)
-- [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md)
+- [Change project-level permissions](../../security/change-project-level-permissions.md)
+- [Change project collection-level permissions](../../security/change-organization-collection-level-permissions.md)
 - [Permissions and groups](../../security/permissions.md)
 - **Inherited process**  
 	- [Add a custom rule to a work item type](custom-rules.md)

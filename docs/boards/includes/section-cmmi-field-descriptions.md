@@ -58,7 +58,7 @@ ms.date: 09/21/2020
 ---
 :::row:::
    :::column span="":::
-      [Triage](../queries/planning-ranking-priorities.md) (Required) </p>
+      [Triage](../queries/planning-ranking-priorities.md) (Required)
    :::column-end:::
    :::column span="3":::
       Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the *Proposed* state and specify one of the following values: **Pending** (default), **More Info**, **Info Received**, or **Triaged**.  

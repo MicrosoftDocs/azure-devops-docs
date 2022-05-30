@@ -8,22 +8,15 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE 
 monikerRange: '<= azure-devops'
-ms.date: 12/13/2021
+ms.date: 04/04/2022
 ---
 
 # About requesting and providing feedback 
  
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can request feedback using one of two tools, through the Test & Feedback extension or through the Request feedback link you access from a dashboard. 
 
-::: moniker range=">= tfs-2013 <= tfs-2017"  
-> [!NOTE]  
-> The Test & Feedback extension is available for TFS 2017 and later versions. 
-
-::: moniker-end  
-
- 
 > [!NOTE]  
 > This article is about using Azure DevOps feedback tools. To provide feedback about Azure DevOps, see [Provide product and content feedback](../../user-guide/provide-feedback.md?bc=%252fazure%252fdevops%252fproject%252ffeedback%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json). 
 

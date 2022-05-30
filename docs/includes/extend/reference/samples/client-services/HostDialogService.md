@@ -6,7 +6,7 @@ ms.assetid: 6efd62af-d344-4af2-aecf-663e23aca5d3
 ms.author: chcomley
 author: chcomley
 ms.topic: article
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 08/25/2016
 ---
 

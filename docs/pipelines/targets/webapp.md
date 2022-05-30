@@ -4,33 +4,27 @@ description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.topic: conceptual
 ms.assetid:
-ms.custom: seodec18, contperf-fy22q1
+ms.custom: seodec18, contperf-fy22q1, devx-track-azurecli
 ms.author: jukullam
 author: juliakm
-ms.date: 12/10/2021
-monikerRange: '>= tfs-2017'
+ms.date: 03/03/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy an Azure Web App
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. 
+Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. Azure Pipelines lets you build, test, and deploy with continuous integration (CI) and continuous delivery (CD) using [Azure DevOps](/azure/devops/). 
 
-Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
+YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](/azure/devops/pipelines/get-started/key-pipelines-concepts).
 
 You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. For more complicated scenarios such as needing to use XML parameters in your deploy, you can use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md).  
 
 To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an Azure Web App Container](webapp-on-container-linux.md). 
 
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> This guidance applies to Team Foundation Server (TFS) version 2017.3 and later.
-
-::: moniker-end
 
 ## Prerequisites
 
@@ -147,9 +141,9 @@ If you're an experienced pipeline user and already have a YAML pipeline to build
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -256,9 +250,9 @@ For information on Azure service connections, see the [following section](#endpo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -292,9 +286,9 @@ You'll need an Azure service connection for the `AzureWebApp` task. The Azure se
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -333,9 +327,9 @@ By default, your deployment happens to the root application in the Azure Web App
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML pis not supported in TFS.
 
 ::: moniker-end
 
@@ -385,9 +379,9 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -395,11 +389,11 @@ YAML pipelines aren't available on TFS.
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
 ::: moniker range=">= azure-devops-2019"
-Use the option **Deploy to Slot or App Service Environment** in the **Azure Web App** task to specify the slot to deploy to. 
+Use the option **Deploy to Slot or App Service Environment** in the **Azure Web App** task to specify the slot to deploy to.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-Use the option **Deploy to Slot or App Service Environment** in the **Azure App Service Deploy** task to specify the slot to deploy to. 
+::: moniker range="tfs-2018"
+Use the option **Deploy to Slot or App Service Environment** in the **Azure App Service Deploy** task to specify the slot to deploy to.
 ::: moniker-end
 
 You can swap the slots by using the **Azure App Service Manage** task.
@@ -463,9 +457,9 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -527,9 +521,9 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML piis not supported in TFS.
 
 ::: moniker-end
 
@@ -568,9 +562,9 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="tfs-2018"
 
-YAML pipelines aren't available on TFS.
+YAML is not supported in TFS.
 
 ::: moniker-end
 
@@ -585,4 +579,67 @@ In your release pipeline, you can implement various checks and conditions to con
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
+
+## (Classic) Deploy with a release pipeline
+
+You can use a release pipeline to pick up the artifacts published by your build and then deploy them to your Azure web site.
+
+1. Do one of the following to start creating a release pipeline:
+
+   * If you've just completed a CI build, choose the link (for example, _Build 20170815.1_)
+     to open the build summary. Then choose **Release** to start a new release pipeline that's automatically linked to the build pipeline.
+
+   * Open the **Releases** tab in **Azure Pipelines**, open the **+** drop-down
+     in the list of release pipelines, and choose **Create release pipeline**.
+
+1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node.js app, select the **Deploy Node.js App to Azure App Service** template.
+   Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
+
+   > [!NOTE]
+   > The only difference between these templates is that Node.js template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
+
+1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
+   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
+   the **Releases** tab, choose the **+ Add** link and select your build artifact.
+
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
+   continuous deployment trigger is enabled, and add a filter to include the **main** branch.
+
+   > [!NOTE]
+   > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
+
+1. Open the **Tasks** tab and, with **Stage 1** selected, configure the task property variables as follows:
+
+   * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
+     If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../library/connect-to-azure.md) to manually set up the connection.
+
+   * **App Service Name**: Select the name of the web app from your subscription.
+
+    > [!NOTE]
+    > Some settings for the tasks may have been automatically defined as
+    > [stage variables](../release/variables.md#custom-variables)
+    > when you created a release pipeline from a template.
+    > These settings cannot be modified in the task settings; instead you must
+    > select the parent stage item in order to edit these settings.
+    
+
+1. Save the release pipeline.
+
+### Create a release to deploy your app
+
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+
+1. Choose **+ Release** and select **Create a release**.
+
+1. In the **Create a new release** panel, check that the artifact version you want to use is selected and choose **Create**.
+
+1. Choose the release link in the information bar message. For example: "Release **Release-1** has been created".
+
+1. In the pipeline view, choose the status link in the stages of the pipeline to see the logs and agent output.
+
+1. After the release is complete, navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
+
+
 [!INCLUDE [include](includes/webapp/deploy-options.md)]
+

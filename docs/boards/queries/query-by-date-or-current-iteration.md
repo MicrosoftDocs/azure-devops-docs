@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 11/19/2021
+ms.date: 02/01/2022
 ---
 
 # Query by date or current iteration in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The **\@Today** and **\@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **\@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **\@CurrentIteration**. 
 
@@ -23,7 +23,7 @@ For example, you can find work items that were modified in the last three days w
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/example-work-item-queries/query-changed-date-last-3-days.png" alt-text="Screenshot of Query Editor, Changed Date >= 3.":::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Editor query filter based on recent changes.](media/query-by-date-example.png)  
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
@@ -68,7 +68,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 :::row:::
    :::column span="1":::
       **DateTime**   
@@ -292,7 +292,7 @@ To change the team parameter the system automatically sets, you choose it by typ
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Before creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
@@ -416,7 +416,7 @@ You can use date fields to filter your queries. Some of these fields are populat
    :::column-end:::
    :::column span="2":::
       The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state.   
-      Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime</p>
+      Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
       Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  
@@ -443,7 +443,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
-      All</p>
+      All
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -511,8 +511,12 @@ You can use date fields to filter your queries. Some of these fields are populat
       Start Date (Note 3)
     :::column-end:::
     :::column span="2":::
-      The date and time when the schedule indicates that the task will start.  </p>
-<p>Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime
+      The date and time when the schedule indicates that the task will start.
+      ::: moniker range="azure-devops"
+      > [!NOTE]   
+      > [Delivery Plans](../plans/review-team-plans.md) uses the **Start Date** and **Target Date** to show the span of Features, Epics, and other portfolio backlog items. 
+      ::: moniker-end
+      Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
       Epic, Feature, Requirement, Task, Test Plan, User Story
@@ -535,15 +539,15 @@ You can use date fields to filter your queries. Some of these fields are populat
       Target Date
     :::column-end:::
     :::column span="2":::
-      The date by which a feature or work item is to be completed.  
+      The date by which a feature, work item, or issue is to be completed or resolved.  
       ::: moniker range="azure-devops"
       > [!NOTE]   
-      > [Delivery Plans](../plans/review-team-plans.md) uses the Start Date and Target Date to show the span of Features, Epics, and other portfolio backlog items. 
+      > [Delivery Plans](../plans/review-team-plans.md) uses the **Start Date** and **Target Date** to show the span of Features, Epics, and other portfolio backlog items. 
       ::: moniker-end
       Reference name=Microsoft.VSTS.Scheduling.TargetDate, Data type=DateTime
    :::column-end:::
    :::column span="1":::
-      Epic, Feature
+      Epic, Feature 
    :::column-end:::
 :::row-end:::
 

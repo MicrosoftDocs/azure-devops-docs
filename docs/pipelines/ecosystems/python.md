@@ -3,18 +3,18 @@ title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.date: 06/01/2021
+ms.date: 02/23/2022
 monikerRange: '>=azure-devops-2019'
-ms.custom: devx-track-python
+ms.custom: devx-track-python, freshness-fy22q2
 ---
 
 # Build Python apps
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a simple pipeline. 
+You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a basic pipeline. 
 
-If you want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
+If you want an end-to-end tutorial, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
 To create and activate an Anaconda environment and install Anaconda packages with `conda`, see [Run pipelines with Anaconda environments](./anaconda.md).
 
@@ -22,7 +22,7 @@ To create and activate an Anaconda environment and install Anaconda packages wit
 
 ::: moniker range=">=azure-devops-2020"
 
-> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+New to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
 
 ::: moniker-end
 
@@ -60,24 +60,24 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-> When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
+When the **Configure** tab appears, select **Python package** to create a Python package to test on multiple Python versions.
 
-7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+   You just ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-See the sections below to learn some of the more common ways to customize your pipeline.
+Read further to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ steps:
 
 5. When you're ready to make changes to your pipeline, **Edit** it.
 
-6. See the sections below to learn some of the more common ways to customize your pipeline.
+Read further to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -213,9 +213,10 @@ After you update `pip` and friends, a typical next step is to install dependenci
 ```
 
 <a name="test"></a>
+
 ## Run tests
 
-You can use scripts to install and run various tests in your pipeline.
+Use scripts to install and run various tests in your pipeline.
 
 ### Run lint tests with flake8
 
@@ -287,7 +288,7 @@ Add the [Publish Test Results task](../tasks/test/publish-test-results.md) to pu
 
 ### Publish code coverage results
 
-Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results to the server. You can see coverage metrics in the build summary, and download HTML reports for further analysis.
+Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results to the server. You can see coverage metrics in the build summary and download HTML reports for further analysis.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -307,7 +308,7 @@ To authenticate with `twine`, use the [Twine Authenticate task](../tasks/package
     pythonUploadServiceConnection: '<twine service connection from external organization>'
 ```
 
-Then, add a custom [script](../yaml-schema.md#script) that uses `twine` to publish your packages.
+Then, add a custom [script](/azure/devops/pipelines/yaml-schema/steps-script) that uses `twine` to publish your packages.
 
 ```yaml
 - script: |
@@ -320,7 +321,5 @@ You can also use Azure Pipelines to [build an image](containers/build-image.md) 
 
 ## Related extensions
 
-- [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
 - [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)  
 - [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  

@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Publish To Azure Service Bus task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to send a message to an Azure Service Bus using a service connection and without using an agent.
 

@@ -9,15 +9,16 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 04/01/2022
 ---
+
 
 # Understand CMMI process template artifacts
 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They're based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts) process.
+The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They're based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md) process.
 
 <img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" />  
 
@@ -50,7 +51,7 @@ You can use work item queries to list work items based on their type, such as ch
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Or, use one of the shared queries that the CMMI process provides.
 
@@ -75,8 +76,10 @@ To get started, you can open a shared query and create a chart based on your tra
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2020"
+
 <a id="reports"></a>
+
 ## SQL Server reports  
 
 
@@ -84,18 +87,7 @@ If your project collection and the project are configured with SQL Server Analys
 
 If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
 ::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2017"
-<a id="dashboards"></a>
-
-## Access SharePoint portal dashboards
-
-You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to complete common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
-
-To use [SharePoint dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards), your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
-
-::: moniker-end
-
+ 
 
 ## Related notes  
 
@@ -137,7 +129,7 @@ Using the CMMI template and guidance can help you achieve the aims of CMMI if yo
 
 <a id="predefined-queries" />
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### CMMI process predefined queries  
 
@@ -205,20 +197,8 @@ Product owners can use the shared queries that are described in the following ta
 > | Blocked Work Items | Lists all work items where the **Blocked** field is set to **Yes**.<br /><br />Only requirements, tasks, bugs, issues, and change requests can be blocked. |
 > | Corrective Action Status | Lists all tasks whose **Task Type** is set to **Corrective Action**. |
 > | Mitigation Actions | Lists all tasks whose **Task Type** is set to **Mitigation Action**. |
-> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) references this query. |
+> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) references this query. |
 > | Risks | Lists all risks, sorted by ID. |
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-### Workbooks
-
-You can use Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. Each workbook references a shared query.  
-
--  The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Open Issues shared query
--  The [Triage workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Untriaged Work Items shared query  
-
-Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
  
-::: moniker-end

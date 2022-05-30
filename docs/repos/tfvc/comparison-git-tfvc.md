@@ -6,22 +6,23 @@ ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 10/18/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 
 # Choosing the right version control for your project
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. Azure Repos supports two types of version control: [Git](../../repos/git/gitquickstart.md)
 and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).
  
 <a name="tfvc_or_git_summary"></a>
+
 ## Which version control system should I use?
  
-Git is the default version control provider for new projects. You should use Git for version control in your projects and begin to move your existing TFVC projects to Git. TFVC is considered feature complete. Azure DevOps will maintain compatability with TFVC, but Git will receive all future investment.
+Git is the default version control provider for new projects. You should use Git for version control in your projects and begin to move your existing TFVC projects to Git. TFVC is considered feature complete. Azure DevOps will maintain compatibility with TFVC, but Git will receive all future investment.
 
 You can use TFVC repos with Git in the same project, so it's easy to add TFVC later if you need centralized version control. To set up a new repo type for an existing project [use these instructions](../../repos/git/team-projects.md).
 
@@ -59,16 +60,16 @@ Need more help to make a choice? These charts might help.
 
 :::row:::
    :::column span="1":::
-   Capability
+   **Capability**
    :::column-end:::
    :::column span="1":::
-   TFVC
+   **TFVC**
    :::column-end:::
    :::column span="1":::
-   Git
+   **Git**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Changes
@@ -76,15 +77,12 @@ Need more help to make a choice? These charts might help.
    :::column span="2":::
    Team members can concurrently change files on their dev machines. You [upload (check-in)](check-your-work-team-codebase.md) changesets to the server when you create them. You can upload your changes at any time. However, you might be interrupted by [conflicts](resolve-team-foundation-version-control-conflicts.md).
 
-
    You can change the comment of a [changeset](find-view-changesets.md) after you check it in. You can link changesets to work items and associate them with completed builds.
    :::column-end:::
    :::column span="2":::
    Team members can concurrently change files on their dev machines. You create commits on your dev machine independently of contributing them to the team. When you&#39;re ready you must pull the latest commits before you upload (push) yours to the server. When you pull, you might be interrupted by conflicts.
 
-
    You can amend the latest local commit. You cannot change older commits. You can link commits to work items and associate them with completed builds.
-
 
    You can modify and combine local commits from the command prompt.
    :::column-end:::
@@ -94,7 +92,6 @@ Need more help to make a choice? These charts might help.
    Branching
    :::column-end:::
    :::column span="2":::
-   
    Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up an additional workspace for each branch they work on.
 
    Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merge.
@@ -104,14 +101,9 @@ Need more help to make a choice? These charts might help.
    See [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
    :::column-end:::
    :::column span="2":::
-   Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you&#39;re ready. 
-
-
+   Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you&#39;re ready.  
    You must commit, branch, stash, or undo changes before switching branches. Merging is simple and independent of the commit that the branch is based on.
-
-
-   You can compare branches to see which commits exist on which branches.
-
+   You can compare branches to see which commits exist on which branches.  
 
    See [Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md).
    :::column-end:::
@@ -183,8 +175,6 @@ Need more help to make a choice? These charts might help.
    :::column-end:::
 :::row-end:::
 
-
-
 ### Server 
 
 :::row:::
@@ -198,6 +188,7 @@ Need more help to make a choice? These charts might help.
    **Git**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Server
@@ -228,7 +219,7 @@ Need more help to make a choice? These charts might help.
    Because your team checks in all their work into a centralized system, you can identify which user checked in a [changeset](find-view-changesets.md) and use [compare](compare-files.md) to see what they changed. Looking at a file, you can [annotate](view-file-changes-using-annotate.md) it to identify who changed a block of code, and when they did it.
    :::column-end:::
    :::column span="2":::
-   You can identify which user pushed a commit. (Anyone can claim any identity as the author or committer.) You can identify when changes were made and what was changed using history, compare, and annotate.
+   You can identify which user pushed a commit. (Anyone can claim any identity as the author or person who made the commit.) You can identify when changes were made and what was changed using history, compare, and annotate.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -301,13 +292,13 @@ Need more help to make a choice? These charts might help.
    **Git**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Client software
    :::column-end:::
    :::column span="2":::
-   Visual Studio, Eclipse (with [Team Explorer Everywhere](/previous-versions/visualstudio/visual-studio-2013/gg413285(v=vs.120)))
+   Visual Studio, Eclipse (with [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
    :::column-end:::
    :::column span="2":::
    Visual Studio, Visual Studio Code, Eclipse, and other third-party tools
@@ -385,6 +376,7 @@ Need more help to make a choice? These charts might help.
    **Git**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Migration path
