@@ -1,27 +1,26 @@
-﻿---
+---
 title: Use Source Control Explorer to manage files
 titleSuffix: Azure Repos
 description: Use Source Control Explorer to manage files under version control
 ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/05/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Use Source Control Explorer to manage files in TFVC 
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Use Source Control Explorer to browse file versions and work with your codebase under Team Foundation version control (TFVC). 
 
 > [!NOTE]
-> If you're using Git for version control, manage your Visual Studio project files in [Team Explorer](../../user-guide/work-team-explorer.md) and [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer). Learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
+> If you're using Git for version control, manage your Visual Studio project files in [Get started with Git in Azure Repos](../git/gitquickstart.md). Learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
 
-> [!TIP]
-> If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer).
-> Source Code Explorer is for managing changes made in your project when using TFVC.
+If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer). Source Code Explorer is for managing changes made in your project when using TFVC.
 
 ## Open Source Control Explorer
 

@@ -5,23 +5,23 @@ description: Check out and edit files
 ms.assetid: eb404d63-c448-4994-9416-3e6d50ec554a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Check out and edit files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 When you want to edit a file you can open it from Solution Explorer or from Source Control Explorer. When you begin editing a file, it is automatically checked out to you. In rare situations (for example, you want to check out and lock the file to make sure your changes are checked in before changes from other team members), you might need to manually check out (and optionally lock) an item.
 
-**Required permissions**  
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+## Prerequisites  
 
-## Manually check out items
+You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-### To manually check out items
+## Check out items manually
 
 1. In [Solution Explorer](develop-code-manage-pending-changes.md) or in [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select the files that you want to edit, open their shortcut menu, and choose **Check Out for Edit**.
 

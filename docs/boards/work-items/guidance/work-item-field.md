@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2020
+ms.date: 04/01/2022
 ---
 
 # Field descriptions for default and work item fields used in process templates
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
@@ -30,7 +30,7 @@ To support other tracking needs, you can [define your own custom work item field
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 To support other tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
 

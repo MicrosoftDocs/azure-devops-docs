@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Azure virtual machine scale set Deployment task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy a virtual machine scale set image.
 

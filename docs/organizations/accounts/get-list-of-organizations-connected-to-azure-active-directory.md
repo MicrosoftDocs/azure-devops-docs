@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Get list of organizations backed by Azure AD
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to download a complete list of organizations backed by an Azure Active Directory (Azure AD) tenant. 
 On this list, you can find the following information:

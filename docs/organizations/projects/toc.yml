@@ -26,24 +26,26 @@
   href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayname: features, services, dashboards, plan, track
 - name: Add users or groups to a project
-  href: ../security/add-users-team-project.md
   displayName: create, new, account, default, custom, access, permission
+  href: ../security/add-users-team-project.md
+- name: Work across projects FAQs 
+  href: ../../project/work-across-projects-faqs.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
 - name: Project configuration
   items:
-  - name: "Area & iteration paths"
+  - name: Area & iteration paths
     href: ../settings/about-areas-iterations.md
     displayname: sprint, team, product, feature, group, define, Agile
   - name: Set area paths
     href: ../settings/set-area-paths.md?
     displayname: project, Agile, administrator, settings, team
-  - name: Set iteration paths (sprints) 
+  - name: Set iteration paths (sprints)
     href: ../settings/set-iteration-paths-sprints.md
     displayname: scrum, Agile, administrator, define, backlog, team, settings
 - name: Manage projects
   items:
   - name: Manage your project
     href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayname: policies, extensions 
+    displayname: policies, extensions
   - name: Rename a project
     href: rename-project.md
     displayname: update, change, work item, query, version control paths
@@ -74,7 +76,3 @@
 - name: Public projects
   href: ../public/about-public-projects.md
   displayname: share, code, continuous, integration, deployment, services, migrate
-
-
-
- 

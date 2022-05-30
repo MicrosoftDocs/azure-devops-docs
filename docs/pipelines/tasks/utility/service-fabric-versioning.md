@@ -7,19 +7,12 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/20/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Update Service Fabric Manifests task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
-
-::: moniker range="= tfs-2017"
-
-> [!NOTE]
-> In TFS 2017 this task is named **Update Service Fabric App Versions task**.
-
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task in a build pipeline to automatically update 
 the versions of a packaged Service Fabric app.

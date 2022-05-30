@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 11/30/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Track stakeholder feedback
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 All feedback is captured in a *Feedback Response* work item.
 You can track feedback, whether captured by the [Test & Feedback extension](provide-stakeholder-feedback.md) or the [Microsoft Feedback client](../project/feedback/give-feedback.md), through a work item query.

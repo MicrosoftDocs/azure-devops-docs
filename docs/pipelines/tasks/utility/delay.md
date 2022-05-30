@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Delay task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to pause execution of the pipeline for a fixed delay time.
 

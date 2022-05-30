@@ -6,19 +6,20 @@ ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 12/05/2016
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Delete or restore files and folders in Team Foundation Version Control (TFVC)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You can delete files and folders from TFVC and also restore them, from both in the workspace on your dev machine or on the server.
 
-**Requirements**
+## Prerequisites
 
-See [Permissions and groups reference](../../organizations/security/permissions.md).
+See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)
 
 ## Delete an item
 
@@ -109,12 +110,8 @@ When you accidentally delete an item outside Visual Studio and you are using a s
 
 ## Work from the command prompt
 
--    [Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md)  Delete a file from the server.
-
--    [Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md)  Permanently destroy an item.
-
--    [Undelete Command](undelete-command.md)  Restore a file deleted from the server.
-
--    [Undo command](undo-command.md)  Undo pending changes.
-
--    [Get command](get-command.md)  Get files from the server.
+-  [Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md): Delete a file from the server.
+-  [Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md): Permanently destroy an item.
+-  [Undelete Command](undelete-command.md): Restore a file deleted from the server.
+-  [Undo command](undo-command.md):   Undo pending changes.
+-  [Get command](get-command.md): Get files from the server.

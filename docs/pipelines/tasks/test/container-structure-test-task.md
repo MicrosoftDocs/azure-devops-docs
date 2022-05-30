@@ -4,13 +4,14 @@ description: Test container structure by container task and integrate test repor
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.topic: reference
 ms.custom: seodec18
-ms.author: admahesh
 author: Additi
 ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
 # Container Structure Tests
+
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 The Container Structure Tests provide a powerful framework to validate the structure of a container image. These tests can be used to check the output of commands in an image, as well as verify metadata and contents of the filesystem. Tests can be run either through a standalone binary, or through a Docker image. 
 

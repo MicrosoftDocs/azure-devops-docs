@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 
 # Understand Git history
 
-[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Git stores history as a graph of snapshots &mdash; called commits &mdash; of the entire repository.
 Each commit also contains a pointer to one or more previous commits.

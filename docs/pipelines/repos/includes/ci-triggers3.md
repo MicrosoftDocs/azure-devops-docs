@@ -21,4 +21,3 @@ trigger: none
 >[!IMPORTANT]
 >When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI run should be started.
 
-For more information, see [Triggers](../../yaml-schema.md#triggers) in the [YAML schema](../../yaml-schema.md).

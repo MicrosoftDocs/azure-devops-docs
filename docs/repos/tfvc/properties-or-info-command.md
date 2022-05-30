@@ -5,20 +5,24 @@ description: Properties Command
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Properties Command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Displays information about items under version control.
+The **properties** command displays information about items under version control.
 
-**Required Permissions**
 
-To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders.  For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
@@ -37,6 +41,7 @@ itemspec [/version:versionspec] [/workspace]
    **Description**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    *TeamProjectCollectionUrl*
@@ -52,7 +57,7 @@ itemspec [/version:versionspec] [/workspace]
    :::column span="3":::
    Identifies the files and folders that are specified for property retrieval.
    
-   For more information about how Visual Studio Team Foundation Server parses *itemspecs* to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+   For more information about how Visual Studio Team Foundation Server parses *itemspecs* to determine which items are within scope, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
 
    > [!Note]  
    > You can specify more than one *Itemspec* argument.
@@ -63,7 +68,7 @@ itemspec [/version:versionspec] [/workspace]
    *Versionspec*
    :::column-end:::
    :::column span="3":::
-   Provides a value such as C3 for the **/version** option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Provides a value such as C3 for the **/version** option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -206,10 +211,12 @@ The properties command displays several pieces of information about a version-co
    :::column-end:::
 :::row-end:::
 
-For links to other Team Foundation commands that describe the items on the server and the workspaces that map to the server, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
 ## Examples
+
 The following example displays properties information about the file 314.cs.
 
 ```
@@ -222,30 +229,12 @@ The following example displays the properties of the working folder c:\\projects
 c:\projects>tf properties objects
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[View Version Control File and Folder Properties](/previous-versions/visualstudio/visual-studio-2012/ms245468(v=vs.110))
-
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Permission Command](permission-command.md)
-
-[Status Command](status-command.md)
-
-[History Command](history-command.md)
-
-[Changeset Command](changeset-command.md)
-
-[Shelvesets Command](shelvesets-command.md)
-
-#### Concepts
-
-[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Use Source Control Explorer to manage files in TFVC](use-source-control-explorer-manage-files-under-version-control.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Permission command](permission-command.md)
+- [Status command](status-command.md)
+- [History command](history-command.md)
+- [Changeset command](changeset-command.md)
+- [Shelvesets command](shelvesets-command.md)

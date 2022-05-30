@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Burndown guidance
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 
@@ -138,7 +138,6 @@ You can use your team [velocity](team-velocity.md) as input into the [forecast](
 ## Industry resources
  
 - [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  
-- [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
 <!---
 For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  

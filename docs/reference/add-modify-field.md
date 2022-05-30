@@ -7,14 +7,14 @@ ms.custom: process
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: "< azure-devops"  
-ms.date: 07/20/2020
+ms.date: 04/04/2022
 ---
 
 # Add or modify a field to track work 
 
-[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]
 
 Your project contains 100 or more data fields, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
@@ -38,7 +38,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 - (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
+To get added as an administrator, [Change project collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md).
 
 
 ## Methods by which work item fields get added 
@@ -52,10 +52,6 @@ Work item fields are maintained for a project collection. You add fields when yo
 -   **Import a WIT definition**. All new fields that are defined within the definition for a type of work item are added to the collection. For more information, see [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md).
 
 -   **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](xml/global-workflow-xml-element-reference.md).
-
-::: moniker range="< tfs-2017"
--   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](/previous-versions/azure/devops/reference/tfs-ps-sync/project-server-fields-added-to-tfs).
-::: moniker-end 
 
 All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises server and reporting. 
 
@@ -81,19 +77,10 @@ Any field that you want to use to track data must be added to the WIT definition
 
 <a id="boolean-field">  </a>
 
-::: moniker range=">= tfs-2017"
 
 ## Add a checkbox or Boolean field 
-::: moniker-end
 
-::: moniker range=">= tfs-2018"
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
-::: moniker-end
-::: moniker range="tfs-2017"
-Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. Requires TFS 2017.2 or later version. 
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 ```XML
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
@@ -109,7 +96,7 @@ And then add the following syntax within the **FORM** section to have the field 
 ```
  
 The field will appear as a checkbox on the form. 
-::: moniker-end
+
 
 
 <a id="picklist">  </a>
@@ -226,7 +213,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
    ```
    
    > [!TIP]
-   > The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](xml/control-xml-element-reference.md).   
+   > The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true).   
 
 4. Import the WIT definition file according to the process model you use.
 
@@ -270,8 +257,6 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 Using the [object model for tracking work items](/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
-::: moniker range=">= tfs-2017"
-
 Using [REST APIs for tracking work items](/rest/api/azure/devops/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance). For example:
@@ -281,8 +266,6 @@ Or, you can add a custom control which is available through the [Visual Studio M
 -   [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions) that provides a group extension with a customizable set of rules which support one-click action.    
 
 To add a custom control to the new web form, see [WebLayout and Control elements](xml/weblayout-xml-elements.md). 
-
-::: moniker-end 
 
 <a id="change-attribute">  </a>
 
@@ -341,7 +324,7 @@ When you remove a field from a specific type of work item, that field is not rem
     witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
     ```
 
-4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
+4.  If the deleted field was reportable and your project uses SQL Server Reporting Services, [rebuild the data warehouse to purge the old field and its values](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube).
 
 For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).  
 

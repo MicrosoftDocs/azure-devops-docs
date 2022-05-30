@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # Recommendations to securely structure projects in your pipeline
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 Beyond the scale of individual resources, you should also consider groups of resources.
 In Azure DevOps, resources are grouped by team projects.
 It's important to understand what resources your pipeline can access based on project settings and containment.

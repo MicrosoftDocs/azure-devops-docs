@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Build Machine Image task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to build a machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
 

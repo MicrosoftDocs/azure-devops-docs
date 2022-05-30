@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Azure CLI task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to run a shell or batch script containing Azure CLI commands against an Azure subscription. This task is used to run Azure CLI commands on cross-platform agents running on Linux, macOS, or Windows operating systems.
 

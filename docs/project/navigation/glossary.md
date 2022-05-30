@@ -3,19 +3,18 @@ title: Key concepts, objects, and terms
 titleSuffix: Azure DevOps
 description: Understand the key concepts that support navigation and managing projects available with Azure DevOps
 ms.custom: Navigation
-ms.technology: devops-collab
-ms.assetid: 
+ms.technology: devops-collab 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 02/08/2019
 ---
 
 
 # Project management and navigation glossary   
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 This glossary describes terms used when navigating in the web portal for  Azure DevOps.  See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 
@@ -76,7 +75,7 @@ Pipelines are artifacts that you define to run concurrent builds or deploy concu
 
 ## Repositories
 
-A source control folder or container you configure to help you track file changes in. You can have any number of repository on your computer, each stored in their own folder. Each repository is independent, so changes saved in one repository don't affect the contents of another. Learn more: [Create a new Git repo](../../repos/git/creatingrepo.md).    
+A source control folder or container you configure to help you track file changes in. You can have any number of repositories on your computer, each stored in their own folder. Each repository is independent, so changes saved in one repository don't affect the contents of another. Learn more: [Create a new Git repo](../../repos/git/creatingrepo.md).    
 
 [!INCLUDE [temp](../../includes/glossary-terms/sprints.md)] 
 

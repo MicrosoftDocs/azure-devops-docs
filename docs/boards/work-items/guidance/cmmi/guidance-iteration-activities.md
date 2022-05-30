@@ -13,7 +13,7 @@ ms.date: 11/06/2021
 
 # Manage iteration activities in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 In MSF for CMMI Process Improvement, you plan a project as a series of iterations. Each iteration is typically four to six weeks long, during which the development team implements a specified set of requirements.  
   
