@@ -4,11 +4,13 @@ titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: conceptual
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
-ms.date: 08/26/2021
+ms.date: 01/14/2022
 monikerRange: azure-devops
 ---
 
 # Migrate from Travis to Azure Pipelines
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Pipelines is more than just a Continuous Integration tool, it's a
 flexible build and release orchestration platform.  It's designed for
@@ -113,7 +115,7 @@ dependency installation step or execution inside a docker container:
 | `nix`         | `docker run -v $(pwd):/src -w /src nixos/nix nix-build`
 | `perl6`       | `sudo apt-get install rakudo`<br>`PERL6LIB=lib prove -v -r --exec=perl6 t/`
 | `rust`        | `curl -sSf https://sh.rustup.rs | sh -s -- -y`<br>`cargo build --verbose`<br>`cargo test --verbose` |
-| `scala`       | <code>echo "deb `https://dl.bintray.com/sbt/debian` /" &#124; sudo tee -a /etc/apt/sources.list.d/sbt.list</code><br>`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`<br>`sudo apt-get update`<br>`sudo apt-get install sbt`<br>`sbt ++2.11.6 test` |
+| `scala`       | <code>echo "deb `https://repo.scala-sbt.org/scalasbt/debian` /" &#124; /etc/apt/sources.list.d/sbt.list</code><br>`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`<br>`sudo apt-get update`<br>`sudo apt-get install sbt`<br>`sbt ++2.11.6 test` |
 | `smalltalk`   | `docker run -v $(pwd):/src -w /src hpiswa/smalltalkci smalltalkci` |
 
 ### Multiple language selection

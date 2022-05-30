@@ -13,7 +13,7 @@ ms.date: 11/04/2021
 
 # Process templates overview  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../../includes/choose-process-introduction.md)]
 

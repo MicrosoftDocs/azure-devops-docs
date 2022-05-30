@@ -8,14 +8,14 @@ ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2015'
-ms.date: 10/15/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 
 # Add tasks or child items as checklist items
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
 Many teams find Kanban boards ideal for tracking work. Kanban boards are ideal because they support visualization the flow of work that is in progress. It also allows team members to quickly add new items and update work item status in a Kanban board. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
@@ -24,7 +24,7 @@ With checklists or to do lists, you continue to enjoy lightweight tracking. You 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/checklists/board-checklists.png" alt-text="Screenshot of product-level Kanban board with three work items showing child lists":::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 <img src="media/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" />  
 ::: moniker-end
 
@@ -35,11 +35,6 @@ In this article, you'll learn:
 > * How to mark a checklist item as done 
 > * How to expand or collapse a checklist  
 > * How to reorder and reparent checklist items or reassign them to a sprint 
-
-::: moniker range="tfs-2015"
-> [!NOTE]  
-> Kanban board checklists are supported from TFS 2015.1 and later versions. 
-::: moniker-end
 
 ## Overview of checklist features 
 
@@ -74,33 +69,20 @@ In this example, tasks are added to the product Kanban board using the checklist
     ::: moniker range=">=azure-devops-2019"  
     :::image type="content" source="media/checklists/add-task-menu.png" alt-text="Screenshot of open the context menu of work item to add a task.":::
     ::: moniker-end
-    ::: moniker range=">= tfs-2017 <= tfs-2018"  
+    ::: moniker range="tfs-2018"  
     <img src="media/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" />  
-    ::: moniker-end
-    ::: moniker range="tfs-2015"
-    <img src="media/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" />  
     ::: moniker-end
 
 2. If you have many tasks to add, keep typing their titles and choose Enter after each title.  
     ::: moniker range=">= azure-devops-2019"  
     :::image type="content" source="media/checklists/four-tasks-added.png" alt-text="Screenshot of added tasks.":::
     ::: moniker-end
-    ::: moniker range="<= tfs-2018"
+    ::: moniker range="tfs-2018"
     <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" />  
     ::: moniker-end
-::: moniker range=">= tfs-2017"
+
 3. If you have details you want to add about a task, open the item by choosing the title. 
     :::image type="content" source="media/checklists/open-task.png" alt-text="Screenshot of opening a task.":::
-::: moniker-end
-::: moniker range="tfs-2015"
-4. If you have details you want to add about a task, open the parent work item and then choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: links icon/tab. 
-
-	<img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" />  
-
-	Double-click the task, or select and press the Enter key, to open it.   
-
-	<img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" />  
-::: moniker-end
 
 > [!NOTE]  
 > Tasks that you create from the Kanban board will show up on your sprint Taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
@@ -113,7 +95,7 @@ When you complete a task or other checklist item, choose the checkbox to change 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/checklists/board-checklists.png" alt-text="Screenshot of product-level Kanban board showing several done child items":::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 <img src="media/kanban-check-done-tasks.png" alt="Check tasks that are complete" />
 ::: moniker-end
 
@@ -129,7 +111,7 @@ Upon first opening the Kanban board, you'll see an unexpanded view of checklists
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/checklists/unexpanded-checklists.png" alt-text="Screenshot of unexpanded checklist":::
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 <img src="media/kanban-board-first-open-collapsed-checklists.png" alt="Expand task checklist for a work item" /> 
 ::: moniker-end
 
@@ -141,7 +123,7 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 ::: moniker range=">= azure-devops-2019"
 ![Drag tasks to reorder them.](../get-started/media/plan-track-work/reorder-task.png)
 ::: moniker-end
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 ![Drag tasks to reorder them within the list](media/task-checklist-reorder-tasks.png) 
 ::: moniker-end
 

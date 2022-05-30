@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2021
+ms.date: 05/24/2022
 ---
 
 # Query by rank and picklist value in Azure DevOps and Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -28,9 +28,14 @@ Query clauses that specify a string or integer field can use the operators liste
 - In, Not In  
 - Was Ever  
 
+<a id= "picklist-query-examples" />
+
+
 ## Picklist query examples 
 
-Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).    
+Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).   
+
+To use the **In** and **Not In** operators, enter the names or labels of items that correspond to the selected field separated by a comma. For example, to filter for **Work Item Types** that are either user stories or bugs, add the clause: `Work Item Types In User Story,Bug`.  
 
 :::row:::
    :::column span="1":::
@@ -40,42 +45,37 @@ Most of the planning fields described in the next section are either an integer 
    **Include these query clauses**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
-   List blocked tasks (Scrum)  
-(Blocked field is type String) 
+      List blocked tasks (Scrum)  
+      (Blocked field is type String) 
    :::column-end:::
    :::column span="1":::
-   
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Task`  
-`And Blocked = Yes`  
+      `Work Item Type In Task`   
+      `And Blocked = Yes`  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Priority 1 bugs
-     
-(Priority field is type Integer) 
+      Priority 1 bugs (**Priority** field is type Integer) 
    :::column-end:::
    :::column span="1":::
-   
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Bug`  
-`And Priority = 1`  
+      `Work Item Type In Bug`   
+      `And Priority = 1`   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
-   Features and stories that address Architectural areas  
-(Value Area field is type String) 
+      Features and stories that address Architectural areas  
+      (**Value Area** field is type String) 
    :::column-end:::
    :::column span="1":::
-   
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Feature,User Story`  
-`And Value Area = _ Architectural`  
+      `Work Item Type In Feature,User Story`  
+      `And Value Area = _ Architectural`  
    :::column-end:::
 :::row-end:::  
-
+---
 
 <a id="fields-table" />
 <a id="fields" />
@@ -115,11 +115,11 @@ The following table describes the fields that you can use to plan and prioritize
    **Blocked**
    :::column-end:::
    :::column span="2":::
-   Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.
+      Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.
+      - For the Scrum process, task work items: You can specify **Yes** or clear the field. 
+      - For the CMMI process work items: You can specify **Yes** or **No**.
 
-   You can specify **Yes** or **No**.
-
-   Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String
+     Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String
    :::column-end:::     
    :::column span="1":::
    Bug, Change Request, Requirement, Risk, Task (CMMI, Scrum)
@@ -252,8 +252,8 @@ The following table describes the fields that you can use to plan and prioritize
    :::column-end:::
    :::column span="2":::
    The area of customer value addressed by the epic, feature, or backlog item. Values include:
-   - **Architectural—technical services to implement business features that deliver solution
-   - **Business—services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
+   - **Architectural**: technical services to implement business features that deliver solution
+   - **Business**: services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
 
    Reference name=Microsoft.VSTS.Common.ValueArea, Data type=String
    :::column-end:::
@@ -261,11 +261,11 @@ The following table describes the fields that you can use to plan and prioritize
    Bug, Epic, Feature, Product Backlog Item (Scrum) Requirement (CMMI), User Story (Agile)
    :::column-end:::
 :::row-end:::
+---
 
-
-> [!NOTE]  
-> 1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
-> 2. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
+**Notes:**  
+1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
+2. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
 ## More about Backlog Priority or Stack Rank fields

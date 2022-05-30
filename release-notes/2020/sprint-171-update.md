@@ -45,7 +45,7 @@ With this update, we are bringing a long-awaited feature that customers has aske
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"] 
-> [go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## How to provide feedback
 

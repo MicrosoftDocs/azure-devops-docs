@@ -5,14 +5,16 @@ description: View where and when changesets have been merged
 ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # View where and when changesets have been merged
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 Branching your code base can be a useful way to isolate concurrent development efforts and to take snapshots. However, when your team members are working in a branched code base, they may have trouble finding information about which branches have received a particular set of changes and when those changes were merged.
 
@@ -24,16 +26,19 @@ Tracking Changeset window shows branches to which a changeset has merged
 
 ![Tracking Changeset window](media/view-where-when-changesets-have-been-merged/IC451984.png)
 
-**Required Permissions**
+## Prerequisites
 
-To perform these procedures, your **Read** permission must be set to **Allow** for the branches with which you are working. For more information about permissions, see [Permissions and groups reference](../../organizations/security/permissions.md).
+- To view changesets , your **Read** permission must be set to **Allow** for the branches with which you are working. 
+To display the timeline view of a changeset,  your **Manage branch object** permission must be set to **Allow**. 
+
+For more information about permissions, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## View the Tracking Changeset Window
 
->**Important:**  
->These procedures can be performed only on a branch, not on a folder.  
->![View the Tracking Changeset Window](media/view-where-when-changesets-have-been-merged/IC268252.png)  
->For more information about how to branch, see [Branch folders and files](branch-folders-files.md).
+> [!IMPORTANT]   
+> These procedures can be performed only on a branch, not on a folder.  
+> ![View the Tracking Changeset Window](media/view-where-when-changesets-have-been-merged/IC268252.png)  
+> For more information about how to branch, see [Branch folders and files](branch-folders-files.md).
 
 ### To view the Tracking Changeset Window from the History window of a branch or file
 
@@ -96,9 +101,6 @@ The previous example illustrates how you can use the **Tracking Changeset** wind
 
 You can get information about when a changeset was merged to one or more branches by switching to the Timeline View. This view shows not only the sources and targets of each merge but also when the merge occurred.
 
-**Required Permissions**
-
-To perform these procedures, your **Manage branch object** permission must be set to **Allow**. For more information about permissions, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ### To display the Timeline View of a changeset
 
@@ -116,6 +118,6 @@ The branches that have received the changeset appear at the top of the view. In 
 
 The branches to which the changeset has not been merged (for example, **FeatureB** and **Main** in the previous illustration) appear in white at the bottom of the view.
 
-## Use the Drag and Drop Operation to Merge Branches
+## Use the drag and drop operation to merge branches
 
 You can use the drag and drop feature to merge a changeset or a branch to another branch. For more information, see [Merge folders and files](merge-folders-files.md).

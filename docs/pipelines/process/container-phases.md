@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Define container jobs (YAML)
 
-[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
@@ -132,9 +132,9 @@ steps:
 
 ## Endpoints
 
-Containers can be hosted on registries other than Docker Hub. To host
-an image on [Azure Container Registry](/azure/container-registry/) or
-another private container registry,
+Containers can be hosted on registries other than public Docker Hub registries. 
+To host an image on [Azure Container Registry](/azure/container-registry/) or
+another private container registry (including a private Docker Hub registry),
 add a [service connection](../library/service-endpoints.md) to the
 private registry. Then you can reference it in a container spec:
 

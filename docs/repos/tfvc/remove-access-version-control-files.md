@@ -5,14 +5,16 @@ description: Remove Access to Version Control Files
 ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Remove Access to Version Control Files
+# Remove access to version control files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 As a Team Foundation administrator, you may have to remove access to a file that is under version control. For example, someone may check in a file infected with a virus. You can also permanently destroy version controlled files. For more information, see [Destroy Version Controlled Files](destroy-version-controlled-files.md).
 
@@ -23,14 +25,14 @@ The following procedure provides the details for removing the file by using the 
 
 &nbsp;
 
->**Caution:**  
->If you remove the **Read** permission for the **Service Accounts** security group on a file or folder that is under version control, the VersionControl.Adapter might not be able to read the file or folder. If the adapter cannot read the version control information in the data warehouse, the adapter will write a message in the application-tier event log similar to **The service account might not have permissions to retrieve this changeset**. Without the version control information from the file or folder, the data warehouse, and subsequent version control reports might not be completely accurate.
+> [!WARNING] 
+> If you remove the **Read** permission for the **Service Accounts** security group on a file or folder that is under version control, the VersionControl.Adapter might not be able to read the file or folder. If the adapter cannot read the version control information in the data warehouse, the adapter will write a message in the application-tier event log similar to **The service account might not have permissions to retrieve this changeset**. Without the version control information from the file or folder, the data warehouse, and subsequent version control reports might not be completely accurate.
 
-**Required Permissions**
+## Prerequisites
 
-To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-### To remove access to a file under version control
+## Remove access to a file under version control
 
 1.  On the Visual Studio **View** menu, click **Other Windows**, and then click **Source Control Explorer**.
 
@@ -40,7 +42,7 @@ To remove access to Team Foundation version control files, you must belong to th
 
 4.  Create a new file and save the file in the same location and with the same name and extension as the latest version of the file that you want to overwrite.
 
-5.  Check in the file. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
+5.  Check in the file. For more information, see [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
 
     > [!NOTE]
     > You might want to make sure that any client user who has a local copy of the file on their computer, removes any reference to the file in Solution Explorer and manually removes any copy of the file on their client computer.
@@ -51,7 +53,7 @@ To remove access to Team Foundation version control files, you must belong to th
 
 8.  Click **OK** and the file is removed for other users from Source Control Explorer.
 
-### To remove access to the file from the command line
+## Remove access to the file from the command line
 
 1.  Open the command line and use the **CheckOut** command of the **tf** utility to obtain a write-enable version of the file that you want to remove. For example:
 
@@ -73,8 +75,6 @@ To remove access to Team Foundation version control files, you must belong to th
 
     **tf permission /deny:read myfile.cs /group:ADATAUM\\Group1 ADATAUM\\Group2 myfile.cs**
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Control Access to Team Foundation Version Control](control-access-team-foundation-version-control.md)
+- [Control access to Team Foundation Version Control](control-access-team-foundation-version-control.md)

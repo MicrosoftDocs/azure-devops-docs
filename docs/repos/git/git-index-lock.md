@@ -12,8 +12,8 @@ monikerRange: '<= azure-devops'
 
 #  Git index.lock file
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 ## What is a Git index.lock file?
 

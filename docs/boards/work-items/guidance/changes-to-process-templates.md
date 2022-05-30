@@ -13,12 +13,12 @@ ms.date: 11/07/2021
 
 # Changes made to process templates  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 To support the addition of new features, changes are introduced periodically to the core system processes or process template&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md). A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 > [!NOTE]    
-> This article describes changes made to the core system processes with updates made to Azure DevOps Services and on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version. 
+> This article describes changes made to the core system processes with updates made to Azure DevOps Services and on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/features-timeline). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version. 
 >  
 > The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.        
 If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](/previous-versions/azure/devops/reference/upgrade/new-features-added) for a description of each feature added with the updates. 
@@ -219,7 +219,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Removed the **Backlog Priority** field from the work item form for the Product Backlog type definition. This field is used in the background to track the relative priority of items displayed on the backlog pages.  
       - The *Removed* state was added to the workflow state for the Bug, Product Backlog Item, and Task type definitions, which supports removing cut items from the backlog.
       - Added the **Storyboards** tab to the Product Backlog Item type definition.  
-      - Added the [Backlog Overview report](../../../report/sql-reports/backlog-overview-scrum.md) to the set of SQL Server Reporting Services reports, similar to the Agile[Stories Overview report](../../../index.yml?viewFallbackFrom=vsts). 
+      - Added the [Backlog Overview report](../../../report/sql-reports/backlog-overview-scrum.md) to the set of SQL Server Reporting Services reports, similar to the Agile[Stories Overview report](../../../index.yml). 
 
       #### The following changes were made to the Agile process:  
       - The *New* state was added as the initial state for User Stories and Tasks. This change was introduced to support transitioning User Stories and Tasks from a *New* state to an *Active* state. Without the *New* state, User Stories assigned to an iteration remain on the product backlog until they are resolved, which is not a desired or expected behavior. To learn more, see [Update the Workflow for Agile Team Projects](/previous-versions/visualstudio/visual-studio-2012/hh500412(v=vs.110).

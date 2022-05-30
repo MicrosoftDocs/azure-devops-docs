@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # Rollup child work item values to parent sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 This article shows you how to generate the rollup count of User Stories and total Story Points for a given set of Features. An example is shown in the following image. 
 

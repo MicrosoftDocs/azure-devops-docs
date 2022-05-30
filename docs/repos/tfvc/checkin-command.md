@@ -6,19 +6,25 @@ ms.assetid: 90b18c7c-b0ae-4f46-829f-3a4471614086
 ms.technology: devops-code-tfvc
 ms.topic: reference
 ms.date: 10/31/2017
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Checkin command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 Checks in your pending changes to files or folders to the server.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a [pending change](develop-code-manage-pending-changes.md) until you check it in. When you check in your changes, they are stored as a [changeset](find-view-changesets.md) on the server. Although the **Checkin** command provides a different user interface than the one you can use in Visual Studio (see [Check in your work to the team's codebase](check-your-work-team-codebase.md)), the process is fundamentally the same.
+ 
+## Prerequisites
 
-**Requirements**: See [Permissions and groups reference](../../organizations/security/permissions.md).
+See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf checkin [/author:author name] [/comment:("comment"|@comment file)] 
@@ -40,7 +46,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    **Description**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    **/author**:*author name*
@@ -75,13 +81,8 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column-end:::
    :::column span="3":::
    Associates a comment with the changeset using one of the following arguments:
-
-   
    - *Comment*: A user-provided comment about the check-in.
-
    - *<xref href="comment" data-throw-if-not-resolved="False" data-raw-source="@comment"></xref> file*: The path to a file on disk that contains the comment for the check-in.
-
-   
    :::column-end:::
 :::row-end:::
 :::row:::

@@ -11,7 +11,7 @@ monikerRange: azure-devops
 
 # Package: PyPI Publisher task (deprecated)
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 

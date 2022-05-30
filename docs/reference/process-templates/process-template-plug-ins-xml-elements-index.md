@@ -14,7 +14,7 @@ ms.date: 02/24/2017
 
 # Process template plug-ins: Index to XML element definitions
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema definition for process templates.  
 
@@ -30,7 +30,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 -   [activateFeatures](define-project-portal-plug-in.md)  
 -   [CATEGORIES](../xml/use-categories-to-group-work-item-types.md)  
 -   [CATEGORY](../xml/use-categories-to-group-work-item-types.md)  
--   [checkin_note](define-initial-configuration-version-control.md)  
+-   [checkin_note](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true)  
 -   [Children](define-classification-plug-in.md)  
 -   [Datasources](add-reports-to-the-process-template.md)  
 -   [DEFAULTWORKITEMTYPE](../xml/categories-xml-element-reference.md) (category)  
@@ -41,7 +41,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 -   [description](process-template-xml-elements-reference.md)  
 -   [documentLibraries](define-project-portal-plug-in.md)  
 -   [documentLibrary](define-project-portal-plug-in.md)  
--   [exclusive_checkout](define-initial-configuration-version-control.md)  
+-   [exclusive_checkout](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true)  
 -   [feature](define-project-portal-plug-in.md)  
 -   [FIELD](add-work-item-instance-process-template.md) (work item instance)  
 -   [FIELD](../xml/all-field-xml-elements-reference.md)  
@@ -55,7 +55,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 -   [folder](add-reports-to-the-process-template.md) (reporting)  
 -   [folders](define-project-portal-plug-in.md) (portal)  
 -   [folders](add-reports-to-the-process-template.md) (reporting)  
--   [get_latest_on_checkout](define-initial-configuration-version-control.md)  
+-   [get_latest_on_checkout](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true)  
 -   [Group](define-groups-teams-permissions-plug-in.md)  
 -   [group](process-template-xml-elements-reference.md) (ProcessTemplate)  
 -   [Groups](define-groups-teams-permissions-plug-in.md) (groups)  
@@ -134,11 +134,11 @@ By using the index of elements in this topic, you can look up the syntax structu
 |Build|[Define the initial configuration of Team Foundation Build](define-initial-configuration-build.md)|**Permission, ProcessTemplate**|  
 |Classification|[Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md)|**Children, Node, Nodes, properties, property**|  
 |Groups and Permissions|[Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)|**group, groups, member, members, permission, permissions**|  
-|Lab|[Define the initial configuration of Lab Management](define-initial-configuration-lab-management.md)|**Permission, ProcessTemplate**|  
+|Lab|[Define the initial configuration of Lab Management](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-lab-management?view=tfs-2017&preserve-view=true)|**Permission, ProcessTemplate**|  
 |Portal|[Define the project portal](define-project-portal-plug-in.md)|**activateFeatures, documentLibraries, documentLibrary, feature, file, files, folder, folders, Portal, site**|  
 |Reports|[Add reports](add-reports-to-the-process-template.md)|**datasources, folder, folders, parameter, parameters, properties, property, reference, report, reports, ReportingServices, site**|  
 |Test Management|[Define the initial configuration of Test Manager](define-initial-configuration-test-manager.md)|**dependencies, dependency, TestConfigurations, TestResolutionState, TestSettings, TestVariables**|  
-|Version Control|[Define the initial configuration of Team Foundation version control](define-initial-configuration-version-control.md)|**checkin_note, exclusive_checkout, get_latest_on_checkout, permission**|  
+|Version Control|[Define the initial configuration of Team Foundation version control](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true)|**checkin_note, exclusive_checkout, get_latest_on_checkout, permission**|  
 |Work Item Tracking|[Define objects for tracking work items](define-objects-track-work-items-plug-in.md)|**CATEGORIES, FIELD, GLOBALLISTS, HYPERLINK, LINKTYPE, LINKTYPES, Permission, Query, QueryFolder, QUERIES, WI, WORKITEMS, WORKITEMTYPE, WORKITEMTYPES**|  
 
 ##  <a name="typedefinitions"></a> Type definition elements that define objects for tracking work  

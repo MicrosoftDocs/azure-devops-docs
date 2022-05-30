@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/28/2021
+ms.date: 04/01/2022
 ---
 
-# Create your Azure Boards product backlog 
+# Create your product backlog in Azure Boards 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. As shown in the following image, your backlog consists of a flat list of work items. 
 
@@ -139,8 +139,11 @@ From your web browser, open your product backlog.
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [temp](../includes/tip-configure-backlog-view.md)]
+::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
@@ -153,13 +156,7 @@ To select another team, open the project and team selector. Select a different t
 > ![Select another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 
 ::: moniker-end
-::: moniker range="<= tfs-2015"
 
-On your web browser, open your team's product backlog. Select **Boards** > **Backlogs**. 
-
-![Boards > backlogs, TFS 2015, 2013 web portal](media/backlogs-boards-plans/open-backlog-tfs-2015.png)
-
-::: moniker-end
 
 
 ## Track bugs on your backlog 
@@ -172,41 +169,40 @@ Before deciding, review [Configure and customize, Treat bugs as requirements or 
 
 ## Convert ideas into backlog items 
 
-Your backlog shows work that you plan to do or have started to work on. As soon as the state of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
+Your backlog shows work that you plan to do or have started to work on. As soon as the **State** of a work item is set to *Done* or *Completed*, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
 
 > [!TIP]  
-> If you already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
+> If you already have defined a long list of items, you don't have to reenter them one at a time. Instead, use [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md) or [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 
-Users with **Stakeholder** access can only add work items to the end of the backlog. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Before you add work items, select the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
+1. Before you add work items, select :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **View options** and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/create-backlog/view-options-parents-off.png) 
 
-1. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**. 
+1. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**.  Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. To learn more, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
     > [!div class="mx-imgBorder"]
     > ![Add the work item.](media/create-backlog/add-new-items-agile.png) 
 
 	> [!NOTE]  
-	> If you have Stakeholder access, you can only add work items to the bottom of the backlog. 
+	> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 2. Repeat this step to capture all your ideas as work items.  
 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
-To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**.
+To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**. Work items are automatically assigned the default **Area Path** and **Iteration Path** selected for the team. To learn more, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
 ![Add work items to the backlog](media/create-backlog/add-new-items-standard.png) 
 
 > [!NOTE]  
-> If you have Stakeholder access, you can only add work items to the bottom of the backlog. 
+> If you have **Stakeholder** access , you can only add work items to the bottom of the backlog. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 Repeat this step until you capture all your main ideas. 
 
@@ -246,7 +242,7 @@ Backlogs that participate in portfolio management or that contain nested same-ty
 
 Building and prioritizing your backlog provides a high-level roadmap. Before your team can start work on any item, however, they need more details. Capture the details within the work item form.
 
-To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the :::image type="icon" source="../media/icons/icon-attachments-tab-wi.png" border="false"::: **Attachments** tab and drag-and-drop a file to share the file with others.  
+To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the :::image type="icon" source="../media/icons/icon-attachments-tab-wi.png" border="false"::: **Attachments** tab and drag a file onto it to share the file with others.  
 
 Enter as much detail as the team needs to:  
 - Understand the scope. 
@@ -311,6 +307,7 @@ Choose **Save & Close** when done.
       **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
       [Effort](../queries/query-numeric.md), [Story Points](../queries/query-numeric.md), [Size](../queries/query-numeric.md)
@@ -374,7 +371,7 @@ From the **View options** selector, you can choose to show or hide **In Progress
 :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="View options selector, In progress control":::
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
 ::: moniker-end
 

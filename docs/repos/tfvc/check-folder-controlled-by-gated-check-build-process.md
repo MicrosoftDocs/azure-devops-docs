@@ -1,25 +1,27 @@
-﻿---
+---
 title: Check in to a folder controlled by gated build process
 titleSuffix: Azure Repos
 description: Check in to a folder that is controlled by a gated check-in build process
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 05/17/2022
+monikerRange: '<= azure-devops'
 ---
 
 
 # Check in to a folder that is controlled by a gated check-in build process
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
+When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/repos/tfvc.md#gated), there are some additional steps that you must take to complete the check-in.
 
 ![Build process](media/check-folder-controlled-by-gated-check-build-process/IC572351.png)
-**Required permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+## Prerequisites
+
+* You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+* You must not have the [Limit job authorization scope to current project for non-release pipelines](../../pipelines/process/access-tokens.md#job-authorization-scope) setting enabled. If you receive an error such as `The shelveset _Build_95;Build\6bc8a077-3f27-4936-82e6-415fbd53ba07 could not be found for check-in`, check this setting and ensure it is not enabled.
 
 <a name="begin_checkin"></a>
 
@@ -99,12 +101,8 @@ If you want to proceed with the gated check-in operation and you do not plan to 
 
         4.  In your files, correct the problems that caused the build to fail.
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Use a gated check-in build process to validate changes](../../pipelines/build/triggers.md) 
-
- [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)) 
-
- [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md)
+- [Use a gated check-in build process to validate changes](../../pipelines/build/triggers.md)
+- [Develop code and manage pending changes](develop-code-manage-pending-changes.md) 
+- [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md)

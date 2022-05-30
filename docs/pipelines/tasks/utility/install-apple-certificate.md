@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Install Apple Certificate task
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to install an Apple certificate that is required to build on a macOS agent.
 You can use this task to install an Apple certificate that is stored as a [secure file](../../library/secure-files.md) on the server.
