@@ -8,6 +8,8 @@ monikerRange: 'azure-devops'
 
 # Build on-premises Bitbucket repositories
 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
 > [!NOTE]
 > To integrate Bitbucket Cloud with Azure Pipelines, see [Bitbucket Cloud](bitbucket.md).
 

@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ---
 
 # Add findings to existing bugs with exploratory testing
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
  
 To help avoid duplication, the Test &amp; Feedback extension automatically 
 searches for and displays existing bugs, based on the keywords in the title,
@@ -59,7 +59,7 @@ your findings to an existing bug.
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans.
 
 * See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 

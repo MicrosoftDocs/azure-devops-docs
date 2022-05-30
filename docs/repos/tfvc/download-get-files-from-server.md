@@ -5,20 +5,21 @@ description: Download (get) files from the Server
 ms.assetid: 33798544-9e9e-4200-b7d8-127fb088c735
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Download (get) files from the Server
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 In general, you should get the latest files from the server on a regular basis so that the code you develop is compatible with the code developed by others on your team and to minimize the risk of creating bugs when you check in your code. You can download the latest version or a previous version of one or more files from your Team Foundation Server to your workspace on your dev machine.
 
-**Required permissions**
+## Prerequisites
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Get the latest version of some files
 

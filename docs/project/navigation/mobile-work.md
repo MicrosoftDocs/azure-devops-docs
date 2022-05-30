@@ -4,17 +4,17 @@ titleSuffix: Azure DevOps
 description: View and update work items from your mobile client when using Azure DevOps
 ms.custom: Navigation
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2018'
-ms.date: 08/02/2019
+monikerRange: '<= azure-devops'
+ms.date: 04/04/2022
 ---
 
 #  View and update work items via the mobile browser   
 
-[!INCLUDE [temp](../../boards/includes/version-azure-boards-plus-2018-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
  
@@ -27,7 +27,7 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018 < azure-devops"
+::: moniker range="< azure-devops"
 
 > [!NOTE]  
 > The mobile browser is available for TFS 2018 and Azure DevOps Server 2019 and later versions. For downloads, see [Downloads](https://visualstudio.microsoft.com/downloads/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
@@ -126,6 +126,6 @@ Additional experiences are in the works to improve and expand on the mobile expe
 
 Help us improve the mobile experience. 
 
-To provide feedback,  click the list control from the work item form and then click **Send Feedback**. To complete the feedback, select either the smile or frown and optionally enter a comment. 
+To provide feedback,  choose the list control from the work item form and then click **Send Feedback**. To complete the feedback, select either the smile or frown and optionally enter a comment. 
 
 <img src="media/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" />

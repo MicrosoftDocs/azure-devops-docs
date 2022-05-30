@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 02/11/2022
 ---
 
 If you already have an app in GitHub that you want to deploy, you can create a pipeline for that code.

@@ -5,18 +5,24 @@ description: Reconcile Command
 ms.assetid: ef4aa5f8-b62e-4dd2-9fb8-1e28b7e0123f
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/25/2020
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Reconcile Command
+# Reconcile command (Team Foundation Version Control)
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Compares the current state of the workspace on disk with the server's view, either to clean the workspace or to promote unpended local changes.
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+The **reconcile** command compares the current state of the workspace on disk with the server's view, either to clean the workspace or to promote unpended local changes.
+
+## Prerequisites
+
+See  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf reconcile [itemspec]
@@ -46,7 +52,7 @@ tf reconcile [itemspec]
    *itemspec*
    :::column-end:::
    :::column span="3":::
-   Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    > [!Note]  
    > You can specify more than one *Itemspec* argument.
@@ -196,7 +202,7 @@ You can use the **reconcile** command to synchronize your local workspace state 
 Use **/clean** to update the local workspace according to the server's state.
 Use **/promote** to promote locally added and deleted items to pending changes in version control.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -252,26 +258,12 @@ The following example adds all locally deleted items to version control pending 
 tf reconcile /promote /deletes /noprompt
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Add Command](add-command.md)
-
-[Get Command](get-command.md)
-
-[Checkin Command](checkin-command.md)
-
-[Difference Command](difference-command.md)
-
-#### Concepts
-
-[Managing File Types](/azure/devops/server/admin/manage-file-types)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Comparing Folders and Files](./compare-files.md)
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Add Command](add-command.md)
+- [Get Command](get-command.md)
+- [Checkin Command](checkin-command.md)
+- [Difference Command](difference-command.md)
+- [Managing File Types](/azure/devops/server/admin/manage-file-types)
+- [Comparing Folders and Files](./compare-files.md)

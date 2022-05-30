@@ -8,13 +8,13 @@ ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
-ms.date: 11/07/2021
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # Tutorial: Track a user story, bug, issue, or other work item or pull request  
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="follow"></a>  
 
@@ -35,7 +35,7 @@ This article shows you how to:
 > * Follow a pull request 
 > * Manage work items that you're following
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
@@ -79,17 +79,10 @@ By default, you're **Subscribed** to receive a notification when any change is m
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-> [!NOTE]   
-> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises Azure DevOps, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
 
 ::: moniker-end
 
@@ -140,7 +133,7 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 Open **Work>Queries** and choose **Followed work items**.  
 
@@ -158,7 +151,6 @@ You can also view and manage work that you're following from your Project pages.
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017"
 
 ## Query work items that you're following
 
@@ -169,7 +161,6 @@ For example, the following query shows how to query across all projects for acti
 
 :::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
-::: moniker-end 
 
 ## Try this next
 
@@ -185,4 +176,4 @@ For example, the following query shows how to query across all projects for acti
 
 ### Q: Can I add someone else to follow a work item or PR?
 
-**A:** You can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md).	
+**A:** No, you can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md).	

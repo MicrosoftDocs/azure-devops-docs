@@ -3,17 +3,19 @@ title: LabelText and Text XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Adds a standalone label or informational text to a work item form by using the LabelText element
 ms.technology: devops-agile
-ms.custom: process
+ms.custom: archive-candidate
 ms.assetid: 6ff20e50-cef6-4278-96c4-9fd69f7e2d3a
 ms.author: kaelli
 author: KathrynEE
+ms.topic: reference
 monikerRange: '< azure-devops'
-ms.date: 02/14/2017
+ms.date: 03/01/2022
 ---
 
 # LabelText and Text XML elements reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
+
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You can add a standalone label or informational text to a work item form by using the `LabelText` element. The label is not associated with any work item field. Optionally, you can add a hyperlink to some or all of the text.  
   
@@ -51,7 +53,7 @@ The `LabelText` element is a child element of the `Control` element.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[Control](control-xml-element-reference.md)|Required. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
+|[Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)|Required. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
   
 ## Remarks  
 You can combine plain and hyperlinked text by adding multiple `Text`elements in a `LabelText` element.  

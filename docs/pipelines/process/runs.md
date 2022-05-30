@@ -9,6 +9,8 @@ monikerRange: '>= azure-devops-2019'
 
 # Pipeline run sequence
 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+
 Runs represent one execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. A pipeline run includes [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md). Runs power both continuous integration (CI) and continuous delivery (CD) pipelines.
 
 ![Pipeline overview](media/run-overview.svg)
@@ -191,7 +193,7 @@ Using the Azure DevOps CLI, you can list the pipeline runs in your project and v
 
 ### List pipeline runs
 
-List the pipeline runs in your project with the [az pipelines runs list](/cli/azure/pipelines/runs#ext-azure-devops-az-pipelines-runs-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+List the pipeline runs in your project with the [az pipelines runs list](/cli/azure/pipelines/runs#az-pipelines-runs-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs list [--branch]
@@ -238,7 +240,7 @@ Run ID    Number      Status     Result     Pipeline ID    Pipeline Name        
 
 ### Show pipeline run details
 
-Show the details for a pipeline run in your project with the [az pipelines runs show](/cli/azure/pipelines/runs#ext-azure-devops-az-pipelines-runs-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+Show the details for a pipeline run in your project with the [az pipelines runs show](/cli/azure/pipelines/runs#az-pipelines-runs-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs show --id
@@ -268,7 +270,7 @@ Run ID    Number      Status     Result     Pipeline ID    Pipeline Name        
 
 ### Add tag to pipeline run
 
-Add a tag to a pipeline run in your project with the [az pipelines runs tag add](/cli/azure/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-add) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+Add a tag to a pipeline run in your project with the [az pipelines runs tag add](/cli/azure/pipelines/runs/tag#az-pipelines-runs-tag-add) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs tag add --run-id
@@ -298,7 +300,7 @@ az pipelines runs tag add --run-id 123 --tags YAML --output json
 
 ### List pipeline run tags
 
-List the tags for a pipeline run in your project with the [az pipelines runs tag list](/cli/azure/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+List the tags for a pipeline run in your project with the [az pipelines runs tag list](/cli/azure/pipelines/runs/tag#az-pipelines-runs-tag-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs tag list --run-id
@@ -326,7 +328,7 @@ YAML
 
 ### Delete tag from pipeline run
 
-Delete a tag from a pipeline run in your project with the [az pipelines runs tag delete](/cli/azure/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+Delete a tag from a pipeline run in your project with the [az pipelines runs tag delete](/cli/azure/pipelines/runs/tag#az-pipelines-runs-tag-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs tag delete --run-id

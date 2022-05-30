@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Manage project activities in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 To make the most effective use of MSF for [CMMI Process Improvement](guidance-background-to-cmmi.md), you should organize your project into a series of iterations, typically between four and eight weeks long. This organization helps you reduce the risks to your project that stem from shifting requirements and implementation costs. Iterative project structure is an important contribution to meeting the risk management requirements of CMMI.  
   

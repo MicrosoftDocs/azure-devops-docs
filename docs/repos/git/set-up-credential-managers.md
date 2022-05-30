@@ -6,15 +6,15 @@ ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 11/13/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
-# Use Git Credential Manager Core to authenticate to Azure Repos
+# Use Git Credential Manager to authenticate to Azure Repos
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
-[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-Git Credential Manager Core simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+Git Credential Manager simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
 
 Azure Repos provides IDE support for Microsoft account and Azure AD authentication through the following clients:
 
@@ -24,21 +24,21 @@ Azure Repos provides IDE support for Microsoft account and Azure AD authenticati
 
 If your environment doesn't have an integration available, configure your IDE with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
 
-## Install Git Credential Manager Core
+## Install Git Credential Manager
 
 ### Windows
 
-Download and run the latest [Git for Windows installer](https://git-scm.com/download/win), which includes Git Credential Manager Core. Make sure to enable the Git Credential Manager installation option.
+Download and run the latest [Git for Windows installer](https://git-scm.com/download/win), which includes Git Credential Manager. Make sure to enable the Git Credential Manager installation option.
 
    ![Select Enable Git Credential Manager during Git for Windows install](media/install-git-with-git-credential-manager.png) 
 
 ### macOS and Linux
 
-You may [use SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, or you may use [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core).
+You may [use SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, or you may use [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
 
-Installation instructions are included in the GitHub repository for GCM Core.
-On Mac, we recommend using [Homebrew](https://github.com/microsoft/Git-Credential-Manager-Core#macos-homebrew).
-On Linux, you can install from a [.deb](https://github.com/microsoft/Git-Credential-Manager-Core#linux-debian-package-deb) or a [tarball](https://github.com/microsoft/Git-Credential-Manager-Core#linux-tarball-targz).
+Installation instructions are included in the GitHub repository for GCM.
+On Mac, we recommend using [Homebrew](https://github.com/GitCredentialManager/git-credential-manager#macos-homebrew).
+On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/git-credential-manager#ubuntudebian-distributions) or a [tarball](https://github.com/GitCredentialManager/git-credential-manager#other-distributions).
 
 ## Using the Git Credential Manager
 
@@ -50,4 +50,4 @@ Once authenticated, the credential manager creates and caches a [personal access
 
 ### Getting help
 
-You can open and report issues with Git Credential Manager Core on the [project GitHub](https://github.com/microsoft/Git-Credential-Manager-Core/issues).
+You can open and report issues with Git Credential Manager on the [project GitHub](https://github.com/GitCredentialManager/Git-Credential-Manager/issues).

@@ -6,15 +6,14 @@ metadata:
   description: Learn the answers to frequently asked questions (FAQs) about creating, deleting, restoring, and configuring your organization in Azure DevOps.
   ms.technology: devops-accounts
   ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 03/11/2020
   monikerRange: '<= azure-devops'
-    
 title: Create and configure organization FAQs
 summary: |
-  [!INCLUDE [temp](../../includes/version-all.md)]
+  [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
   Learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
   
@@ -81,17 +80,17 @@ sections:
         answer: |
           A: Change these when you sign up for your organization. 
           
-          ![Change organization details](/azure/devops/media/change-details-standard1.png)
+          ![Change organization details](../../media/change-details-standard1.png)
           
           Azure DevOps uses Agile as the default [process](../../boards/work-items/guidance/choose-process.md) to organize your work. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available. For a better experience, select a location that's closest to most users in your organization. 
           
           If a new region or location opens later, you can [change your organization location or region](./change-organization-location.md). You can also select another process, like Scrum, if that works best for you.
           
-          ![Rename project, change organization location, or select another process](/azure/devops/media/change-details-standard2.png)
+          ![Rename project, change organization location, or select another process](../../media/change-details-standard2.png)
           
           If you connected your organization to Azure Active Directory but you belong to multiple directories and want to select a different directory, change your directory here:
           
-          ![Change your directory](/azure/devops/media/change-details-standard2-with-directory.png)
+          ![Change your directory](../../media/change-details-standard2-with-directory.png)
           
           <a name="create-organization-faqs"></a>
           

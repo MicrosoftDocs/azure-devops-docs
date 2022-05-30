@@ -5,14 +5,15 @@ description: Get the history of an item
 ms.assetid: 5a29031c-7fb6-42ac-885c-276b59a4b951
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Get the history of an item
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation version control maintains historical data related to every version of every file that has ever been checked in.
 
@@ -30,9 +31,9 @@ Often when you look over the history of a file, folder, or branch, you are tryin
 
 Use the **History** window to get detailed historical data about a project, branch, folder, or file.
 
-**Required permissions**
+## Prerequisites
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 To display the History window:
 
@@ -225,12 +226,8 @@ All labels that have been applied to the item are listed in a table that include
 |      **View other branches to which the labeled changeset has merged: \*\*Right-click the label and click \*\*Track Changeset**. (This command is available only if the item is a file.)      | [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md) |
 | **View which users made specific changes within the labeled version of a file:** Right-click a changeset and then click **Annotate**. (This command is available only if the item is a file.) |              [View file changes using annotate](view-file-changes-using-annotate.md)              |
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Find and view changesets](find-view-changesets.md) 
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
-
- [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md)
+-  [Find and view changesets](find-view-changesets.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+-  [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md)

@@ -27,13 +27,13 @@
   - name: Control access to functional areas
     href: control-access-to-functional-areas.md
   - name: Define the Version Control plug-in
-    href: define-initial-configuration-version-control.md
+    href: /previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true
   - name: Define the Test Management plug-in
     href: define-initial-configuration-test-manager.md
   - name: Define the Build plug-in
     href: define-initial-configuration-build.md
   - name: Define the Lab Management plug-in
-    href: define-initial-configuration-lab-management.md
+    href: /previous-versions/azure/devops/reference/process-templates/define-initial-configuration-lab-management?view=tfs-2017&preserve-view=true
 - name: XML element reference
   items:
   - name: XML element index
@@ -54,7 +54,7 @@
     href: define-project-portal-plug-in.md
   - name: Define the Reporting plug-in
     href: add-reports-to-the-process-template.md
-  - name: "Configure initial groups, teams, members, & permissions"
+  - name: Configure initial groups, teams, members, & permissions
     href: configure-initial-groups-teams-members-permissions.md
   - name: Define the Groups and Permissions plug-in
     href: define-groups-teams-permissions-plug-in.md

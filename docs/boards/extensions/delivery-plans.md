@@ -7,13 +7,14 @@ ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 10/01/2021
 ---
 
 # Delivery Plans 1.0 Marketplace extension
 
-**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**  
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
+
 
 Use the visualization options that Delivery Plans provide to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
@@ -57,12 +58,6 @@ In this article you'll learn:
   - Be granted explicit permission through the plan's Security dialog. 
  
   For details, see [Edit or manage Delivery Plan permissions](../plans/edit-delivery-plan-permissions.md).  
-
-::: moniker range="tfs-2017" 
-> [!NOTE]
-> Installation of Delivery Plans requires TFS 2017.2 or later version.
-::: moniker-end
- 
 
 ## Review a plan with your teams
 
@@ -117,7 +112,7 @@ Note the following criteria:
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 1. Open **Boards>Plans**. 
 

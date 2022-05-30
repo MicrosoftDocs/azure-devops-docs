@@ -13,7 +13,7 @@ monikerRange: '> tfs-2018'
 
 # Azure App Service Deploy task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac 
@@ -71,7 +71,7 @@ The following prerequisites must be set up in the target machine(s) for the task
 <tr><td><code>InlineScript</code><br/>(Inline Script)</td><td>(Required if ScriptType == Inline Script) The script to execute. You can provide your deployment commands here, one command per line.  See <a href="#sample-dep-script" data-raw-source="[this example](#sample-dep-script)">this example</a>.</td></tr>
 <tr><td><code>ScriptPath</code><br/>(Deployment script path)</td><td>(Required if ScriptType == File Path) The path and name of the script to execute.</td></tr>
 <tr><td><code>Web<br/>ConfigParameters</code><br/>(Generate web.config parameters for Python, Node.js, Go and Java apps)</td><td>(Optional) A standard web.config will be generated and deployed to Azure App Service if the application does not have one. The values in web.config can be edited and will vary based on the application framework. For example for Node.js applications, web.config will have startup file and iis_node module values. This edit feature is only for the generated web.config file. <a href="https://go.microsoft.com/fwlink/?linkid=843469" data-raw-source="[Learn more](https://go.microsoft.com/fwlink/?linkid=843469)">Learn more</a>.</td>
-<tr><td><code>AppSettings</code><br/>(App settings)</td><td>(Optional) Edit web app <b>Application</b> settings using the syntax <b>-key value</b>. Values containing spaces must be enclosed in double quotes. Examples: <b>-Port 5000 -RequestTimeout 5000</b> and <b>-WEBSITE_TIME_ZONE &quot;Eastern Standard Time&quot;</b>.</td></tr>
+<tr><td><code>AppSettings</code><br/>(App settings)</td><td>(Optional) Edit web app <b>Application</b> settings using the syntax <b>-key value</b>. Values containing spaces must be enclosed in double quotes. Examples: <b>-Port 5000 -RequestTimeout 5000</b> and <b>-WEBSITE_TIME_ZONE &quot;Eastern Standard Time&quot;</b>. To provide two or more key values, the key values must be separated by a space. Example: <b>-key1 &quot;Value1&quot; -Key2 &quot;Value2&quot;</b></td></tr>
 <tr><td><code>ConfigurationSettings</code><br/>(Configuration settings)</td><td>(Optional) Edit web app configuration settings using the syntax <b>-key value</b>. Values containing spaces must be enclosed in double quotes. Example: <b>-phpVersion 5.6 -linuxFxVersion: node|6.11</b></td></tr>
 <tr><td><code>UseWebDeploy</code><br/>(Select deployment method)</td><td>(Optional) If unchecked, the task auto-detects the best deployment method based on the app type, package format, and other parameters. Select the option to view the supported deployment methods, and choose one for deploying your app. <br/>Argument aliases: <code>enableCustomDeployment</code></td></tr>
 <tr><td><code>DeploymentType</code><br/>(Deployment method)</td><td>(Required if UseWebDeploy == true) Choose the deployment method for the app.<br/>Default value: webDeploy</td></tr>

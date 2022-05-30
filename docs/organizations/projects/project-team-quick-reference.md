@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/26/2020
+ms.date: 04/04/2022
 ---
 
 # Project and team quick reference
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts and tasks related to managing projects and teams.  
 
@@ -91,7 +91,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range=" tfs-2018"
 
 :::row:::
    :::column span="":::
@@ -133,7 +133,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 :::row:::
    :::column span="":::
 - [Add Git repository](../../repos/git/create-new-repo.md)  
-- [Add project administrators](../security/set-project-collection-level-permissions.md)  
+- [Add project administrators](../security/change-project-level-permissions.md)
 - [Add project dashboard](../../report/dashboards/dashboards.md#add-a-dashboard)  
 - [Add project members](../security/add-users-team-project.md)  
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
@@ -164,7 +164,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
-- [Set project permissions](../security/set-project-collection-level-permissions.md)  
+- [Set project-level permissions](../security/change-project-level-permissions.md) 
 - [Set project visibility](../public/make-project-public.md)  
 - [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
@@ -179,7 +179,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 :::row:::
    :::column span="":::
 - [Add Git repository](../../repos/git/create-new-repo.md)  
-- [Add project administrators](../security/set-project-collection-level-permissions.md)  
+- [Add project administrators](../security/change-project-level-permissions.md)
 - [Add project members](../security/add-users-team-project.md)  
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
 - [Add team members](../security/add-users-team-project.md)  
@@ -207,7 +207,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
-- [Set project permissions](../security/set-project-collection-level-permissions.md)  
+- [Set project-level permissions](../security/change-project-level-permissions.md)
 - [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::
@@ -215,12 +215,12 @@ Several of the following tasks require permissions granted to a member of the Pr
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 :::row:::
    :::column span="":::
 - [Add Git repository](../../repos/git/create-new-repo.md)  
-- [Add project administrators](../security/set-project-collection-level-permissions.md)  
+- [Add project administrators](../security/change-project-level-permissions.md) 
 - [Add project members](../security/add-users-team-project.md)  
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
 - [Add team administrators](../settings/add-team-administrator.md)  
@@ -246,7 +246,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
-- [Set project permissions](../security/set-project-collection-level-permissions.md)  
+- [Set project-level permissions](../security/change-project-level-permissions.md) 
 - [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::

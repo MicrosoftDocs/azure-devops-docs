@@ -4,7 +4,7 @@ title: Samples overview | Extensions for Azure DevOps
 description: Overview of the available extension samples for Azure DevOps, including a description, the link to the repo and the contributions they touch.
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Extension samples
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Get started developing your extension by working from a sample. 
 

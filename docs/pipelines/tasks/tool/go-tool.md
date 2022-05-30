@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Go Tool Installer task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to find or download a specific version of the Go tool into the
 tools cache and add it to the PATH. Use the task to change the version of Go Lang used in subsequent tasks.

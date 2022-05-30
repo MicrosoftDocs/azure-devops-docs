@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
-monikerRange: '>= tfs-2018'
+ms.date: 02/01/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -28,7 +28,7 @@ to create isolated networks of virtual machines.
 
 * You can create an isolated network of virtual machines that span across different hosts in a host-cluster or a private cloud.
 * You can have VMs from different networks residing in the same host machine and still be isolated from each other.
-* You can define IP address from the any IP pool of your choice for a VM Network.
+* You can define IP address from any IP pool of your choice for a VM Network.
 
 See also: [Hyper-V Network Virtualization Overview](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server).
 
@@ -38,7 +38,7 @@ See also: [Hyper-V Network Virtualization Overview](/windows-server/networking/s
 
 * Ensure you meet the prerequisite conditions described in [this section](#prereqs).
 
-* Set up Network Virtualization using SCVMM. This is a one-time setup task you do not need to repeat.
+* Set up Network Virtualization using SCVMM. This is a one-time setup task you don’t need to repeat.
   Follow [these steps](#setup-net-virt).
 
 * Decide on the network topology you want to use. You'll specify this when you create the
@@ -90,7 +90,7 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
    ![Create a new Logical Network](media/virtual-networks/4.png)
 
 1. In the popup, enter an appropriate name and select **One Connected Network** ->
-   **Allow new networks created on this logical network to use network virtualization**, then click **Next**.
+   **Allow new networks created on this logical network to use network virtualization**, then select **Next**.
 
    ![Name the network and select One connected Network](media/virtual-networks/5.png)
 
@@ -100,14 +100,14 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
 
    ![Add a new Network Site](media/virtual-networks/6.png)
 
-1. Click **Next** and **Save**.
+1. Select **Next** and **Save**.
 
-1. Create an IP pool for the new logical networks, enter a name, and click **Next**.
+1. Create an IP pool for the new logical networks, enter a name, and select **Next**.
 
    ![Create an IP pool](media/virtual-networks/7.png)
 
-1. Select **Use and existing network site** and click **Next**. Enter the routable IP address range your network administrator
-   configured for your VLAN and click **Next**. If you have multiple routable IP subnets associated with your VLAN, create an
+1. Select **Use and existing network site** and select **Next**. Enter the routable IP address range your network administrator
+   configured for your VLAN and select **Next**. If you have multiple routable IP subnets associated with your VLAN, create an
    IP pool for each one.
 
    ![Provide the routable IP address range](media/virtual-networks/8.png)
@@ -116,11 +116,11 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
 
    ![Provide the gateway address](media/virtual-networks/9.png)
 
-1. Click **Next** and leave the existing DNS and WINS settings. Complete the creation of the network site.
+1. Select **Next** and leave the existing DNS and WINS settings. Complete the creation of the network site.
 
 1. Now create another **Logical Network** for external Internet access, but this time select
    **One Connected network** -> **Create a VM network with same name to allow virtual machines to access this logical network directly**
-   and then click **Next**.
+   and then select **Next**.
 
    ![Create a Logical network for external internet access](media/virtual-networks/10.png)
 
@@ -129,7 +129,7 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
    
    ![Add a network site and select the same host group](media/virtual-networks/11.png)
 
-1. Click **Next** and **Save**.
+1. Select **Next** and **Save**.
 
 1. The result should look like the following in your administrator console after creating the logical networks.
 
@@ -141,7 +141,7 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
 
    ![Creating a Hyper-V port profile](media/virtual-networks/12.png)
 
-1. Select **Uplink port profile** and select **Hyper-V Port** as the load balancing algorithm, then click **Next**.
+1. Select **Uplink port profile** and select **Hyper-V Port** as the load-balancing algorithm, then select **Next**.
 
    ![Setting the load balancing algorithm](media/virtual-networks/13.png)
 
@@ -151,7 +151,7 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
    ![Enabling Hyper-V Network Virtualization](media/virtual-networks/14.png)
 
 1. Now create another Hyper-V port profile for external logical network. Select **Uplink** mode and **Host default** as the
-   load balancing algorithm, then click **Next**.
+   load-balancing algorithm, then select **Next**.
 
    ![Creating another Hyper-V port profile for external logical network](media/virtual-networks/15.png)
 
@@ -168,16 +168,16 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
 
    ![Creating a Logical Switch](media/virtual-networks/17.png)
 
-1. In the getting started wizard, click **Next** and enter a name for the switch, then click **Next**.
+1. In the getting started wizard, select **Next** and enter a name for the switch, then select **Next**.
 
    ![Entering a name for the switch](media/virtual-networks/18.png)
 
-1. Click **Next** to open to **Uplink** tab. Click **Add uplink port profile** and add the network virtualization
+1. Select **Next** to open to **Uplink** tab. Select **Add uplink port profile** and add the network virtualization
    port profile you just created.
 
    ![Adding an uplink port profile](media/virtual-networks/19.png)
 
-1. Click **Next** and save the logical switch.
+1. Select **Next** and save the logical switch.
 
 1. Now create another logical switch for the external network for Internet communication. This time add the other
    uplink port profile you created for the external network.
@@ -188,11 +188,11 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
 
 1. Go to **VM and Services** -> [Your host group] -> [each of the host machines in turn].
 
-1. Right click and open the **Properties** -> **Virtual Switches** tab.
+1. Right select and open the **Properties** -> **Virtual Switches** tab.
 
    ![Opening the Virtual Switches tab](media/virtual-networks/21.png)
 
-1. Click **New Virtual Switch** -> **New logical switch for network virtualization**.
+1. Select **New Virtual Switch** -> **New logical switch for network virtualization**.
    Assign the physical adapter you configured in trunk mode and select the network virtualization port profile.
 
    ![Assigning the physical adapter](media/virtual-networks/22.png)
@@ -283,7 +283,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 
    ![Deciding if the network requires an Active Directory VM](media/virtual-networks/32.png)
 
-1. Enter the settings for the **VM Network** and subnet you want to create, and the backing logical network
+1. Enter the settings for the **VM Network** and subnet you want to create, and the backing-logical network
    you created in the [previous section](#setup-net-virt) (Logical Networks). Ensure the VM network name
    is unique. If possible, append the release name for easier tracking later.
 
@@ -335,7 +335,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 Now you can create release from this release pipeline. Each release will dynamically provision your
 isolated virtual network and run your deploy and test tasks in the environment. You can find the test
 results in the release summary. After your tests are completed, you can automatically decommission your
-environments. You can create as many environments as you need with just a click from **Azure Pipelines**.
+environments. You can create as many environments as you need with just a select from **Azure Pipelines**.
 
 [Back to list of tasks](#task-list)
 
@@ -348,7 +348,7 @@ environments. You can create as many environments as you need with just a click 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 

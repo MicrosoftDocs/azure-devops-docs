@@ -15,7 +15,7 @@ ms.date: 04/02/2019
 
 # Follow a wiki page, get notifications
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Follow a Wiki page and get notified by email whenever the page is edited, deleted, or renamed.
 
