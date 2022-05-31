@@ -45,12 +45,12 @@ Applying these filters to the set of work item revisions yields the following ma
 
 |Match?|Rev #|Revision Date|ID|Title|State|Area Path|Tags|
 |---|---|---|---|---|---|---|---|
-|![Not matched](./media/icons/table-no.png)|1|Jan-01|1001|A bug|New|||
-|![Not matched](./media/icons/table-no.png)|2|Jan-02|1001|A bug|New|/Admirals||
-|![Not matched](./media/icons/table-no.png)|3|Jan-10|1001|A bug|Active|/Admirals||
-|![Matched](./media/icons/table-yes.png)|4|Jan-12|1001|A bug|Active|/Admirals|Customer|
-|![Matched](./media/icons/table-yes.png)|5|Jan-20|1001|A bug|Resolved|/Admirals|Customer|
-|![Matched](./media/icons/table-yes.png)|6 (Current)|Jan-28|1001|A bug|Closed|/Admirals|Customer|
+|![Not matched icon.](./media/icons/table-no.png)|1|Jan-01|1001|A bug|New|||
+|![Not matched icon.](./media/icons/table-no.png)|2|Jan-02|1001|A bug|New|/Admirals||
+|![Not matched icon.](./media/icons/table-no.png)|3|Jan-10|1001|A bug|Active|/Admirals||
+|![Matched icon.](./media/icons/table-yes.png)|4|Jan-12|1001|A bug|Active|/Admirals|Customer|
+|![Matched icon.](./media/icons/table-yes.png)|5|Jan-20|1001|A bug|Resolved|/Admirals|Customer|
+|![Matched icon.](./media/icons/table-yes.png)|6 (Current)|Jan-28|1001|A bug|Closed|/Admirals|Customer|
 
 Revisions 1, 2 and 3 don't match, because those revisions didn't match the filters. The above work item wouldn't appear in your data set or your trend chart until revision 4, or Jan-12. 
 
@@ -58,12 +58,12 @@ Let's say you wanted to report on your trend of Active bugs, you'd create a filt
 
 |Match?|Rev #|Changed Date|ID|Title|State|Area Path|Tags|
 |---|---|---|---|---|---|---|---|
-|![Not matched](./media/icons/table-no.png)|1|Jan-01|1001|A bug|New|||
-|![Not matched](./media/icons/table-no.png)|2|Jan-02|1001|A bug|New|/Admirals||
-|![Matched](./media/icons/table-yes.png)|3|Jan-10|1001|A bug|Active|/Admirals||
-|![Matched](./media/icons/table-yes.png)|4|Jan-12|1001|A bug|Active|/Admirals|Customer|
-|![Not matched](./media/icons/table-no.png)|5|Jan-20|1001|A bug|Resolved|/Admirals|Customer|
-|![Not matched](./media/icons/table-no.png)|6 (Current)|Jan-28|1001|A bug|Closed|/Admirals|Customer|
+|![Not matched icon.](./media/icons/table-no.png)|1|Jan-01|1001|A bug|New|||
+|![Not matched icon.](./media/icons/table-no.png)|2|Jan-02|1001|A bug|New|/Admirals||
+|![Matched icon.](./media/icons/table-yes.png)|3|Jan-10|1001|A bug|Active|/Admirals||
+|![Matched icon.](./media/icons/table-yes.png)|4|Jan-12|1001|A bug|Active|/Admirals|Customer|
+|![Not matched icon.](./media/icons/table-no.png)|5|Jan-20|1001|A bug|Resolved|/Admirals|Customer|
+|![Not matched icon.](./media/icons/table-no.png)|6 (Current)|Jan-28|1001|A bug|Closed|/Admirals|Customer|
 
 The filters would only match revision 3 and 4 of the work item, and would only include the Jan-10 and Jan-12 revisions in your trend chart.
 

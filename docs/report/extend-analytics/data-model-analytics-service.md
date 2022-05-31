@@ -141,7 +141,7 @@ To generate more complex query results, you can combine entities using relations
 
 Some navigation properties result in a single entity, while others result in a collection of entities. The following diagram shows select entities and their navigation properties. For clarity, some composite entities and relationships have been omitted.
 
-![Analytics Data Model](media/datamodel.png)
+![Relationship diagram for Analytics data model.](media/datamodel.png)
 
 ## Relationship keys
 
