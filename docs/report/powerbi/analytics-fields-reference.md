@@ -51,18 +51,6 @@ To learn more, see [Odata query guidelines, Do use weekly or monthly snapshots f
 
 You use the `WorkItemRevisions` entity set to load all the revisions for a given work item. The query returns all historic work item revisions, including the current revision, for the work items you filter on. It doesn't include deleted work items. 
 
-<!--- 
-### About navigation properties
-
-There are a number of 
-
-### General query guidelines
-
-- Limit your query to the project(s) you have access to.
-- Specify columns you need to build your report in a `$select` clause. If you omit the `$select` clause, your query will return all fields, including custom fields. 
-- Include **DateSK** or **DateValue** column in `groupby` clause when you aggregate over snapshot tables.
- 
---> 
 
 ## Work item fields 
 
@@ -110,6 +98,8 @@ The fields you can select in an **Analytics view** correspond to regular work tr
 |**InProgress Date** <br/>`InProgressDate`<br/>`InProgressDateSK`   | DateTimeOffset | Analytics stored date that captures the date-time when a work item was moved into a **State** that belongs to the *In Progress* state category.  |  
 |**Integration Build**<br/>`IntegrationBuild` | String | The product build number that incorporates the code or fixes a bug.<br/>`Microsoft.VSTS.Build.IntegrationBuild`    | 
 |**Is Current**<br/>`IsCurrent` | Boolean | Supports filtering the data to view the most recent snapshot of the filtered set of work items by setting the value to `True`.<br/>Valid for these entity types: `WorkItemRevision`, `WorkItemBoardSnapshot`, and `BoardLocation`.  |  
+|**Is Last Revision of Day**<br/>`IsLastRevisionOfDay` | Boolean | Indicates that the snapshot represents the last revision of the day when set to `True`.|  
+|**Is Last Revision of Period**<br/>`IsLastRevisionOfPeriod` | Boolean | Indicates that the snapshot represents the last revision of the period when set to `True`. |  
 |**Issue**<br/>`Issue` | String | Indicates that the shared step is associated with an expected result. Allowed values are **Yes** and **No**. **Note:**  This field is not included in the work item form and is not populated with any data.<br/>`Microsoft.VSTS.Common.Issue`   |  
 |**Iteration End Date**   | String | An Analytics stored value that captures the end date of an **Iteration Path**. You can select this field to query on multiple **Iteration Paths** based on their calendar end date.  | 
 | **Iteration Path**<br/>`IterationPath` | String | A value used to group work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. <br/>`System.IterationPath`    | 
@@ -125,6 +115,8 @@ The fields you can select in an **Analytics view** correspond to regular work tr
 |**Resolved By** <br/>`ResolvedBy`<br/>`ResolvedByUserSK` | UserSK | The name of the team member who resolved the bug or user story.<br/>`Microsoft.VSTS.Common.ResolvedBy` | 
 |**Resolved Date** <br/>`ResolvedDate`<br/>`ResolvedDateSK` | DateTimeOffset | The date and time when the bug or user story was resolved. <br/>`Microsoft.VSTS.Common.ResolvedDate` | 
 |**Resolved Reason**<br/> `ResolvedReason` | String | The reason that the bug was resolved (for example, it was fixed).<br/>`Microsoft.VSTS.Common.ResolvedReason`   |  
+|**Revision**<br/> `Revision` | Int32 | A number that is assigned to the historical revision of a work item.<br/>`System.Rev`   |  
+|**Revised Date**<br/> `RevisedDate`<br/> `RevisedDateSK` | DateTimeOffset | Date and time when a work item was modified or updated.  |  
 |**Risk** <br/>`Risk` | Double | A subjective rating of the relative uncertainty about the successful completion of the user story. Valid values include: **1 - High**, **2 - Medium**, and **3 - Low**. <br/>`Microsoft.VSTS.Common.Risk` | 
 |**Severity**<br/>`Severity`  |  Double | A subjective rating of the effect of a bug, issue, or risk on the project. Valid values include: **1 - Critical**, **2 - High**, **3 - Medium**, and **4 - Low**. <br/> `Microsoft.VSTS.Common.Severity` | 
 |**Size** <br/>`Size`   | Double | An estimate for the amount of work that a requirement (CMMI process) requires to implement. <br/>`Microsoft.VSTS.Scheduling.Size`  | 
@@ -215,24 +207,6 @@ The following surrogate keys (SK) properties can be used to filter or construct 
 | WorkItemRevision |WorkItemRevisionSK   | Int32 | 
  
 
-<!--- 
-## About data types and data models 
-
-
-
-
-## Customizing a process
-
-You can add fields, work item types, and change the menu selection of a pick list. The Analytics service automatically picks up changes made and updates the metadata for the data model. 
-
-To perform any of the following tasks, see the relevant article. 
-
-- To change the menu selection, see [Add and manage fields  (Inherited process)]() or [Add or modify a field, customize a picklist] (On-premises XML process).
-
-
-- Note about how some fields are defined in one process, but can be added to other work item types in other processes. 
-
---> 
 
 
 ## Related articles
@@ -240,6 +214,8 @@ To perform any of the following tasks, see the relevant article.
 - [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
 - [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md)
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
+
 
 <!---
 
@@ -343,5 +319,33 @@ Work tracking fields fall into one of the following categories:
 - Custom fields
 - SK fields
  
+### About navigation properties
 
+There are a number of 
+
+### General query guidelines
+
+- Limit your query to the project(s) you have access to.
+- Specify columns you need to build your report in a `$select` clause. If you omit the `$select` clause, your query will return all fields, including custom fields. 
+- Include **DateSK** or **DateValue** column in `groupby` clause when you aggregate over snapshot tables.
+ 
 -->
+
+<!--- 
+## About data types and data models 
+
+
+
+
+## Customizing a process
+
+You can add fields, work item types, and change the menu selection of a pick list. The Analytics service automatically picks up changes made and updates the metadata for the data model. 
+
+To perform any of the following tasks, see the relevant article. 
+
+- To change the menu selection, see [Add and manage fields  (Inherited process)]() or [Add or modify a field, customize a picklist] (On-premises XML process).
+
+
+- Note about how some fields are defined in one process, but can be added to other work item types in other processes. 
+
+--> 

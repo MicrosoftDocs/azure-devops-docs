@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 05/31/2022
 ---
 
 
@@ -261,9 +261,10 @@ You can use the following fields to filter queries and create reports. Several o
    Rev
    :::column-end:::
    :::column span="2":::
-   A number that is assigned to the historical revision of a work item. 
-
-   Reference name=System.Rev, Data type=Integer
+      A number that is assigned to the historical revision of a work item.   
+      > [!NOTE]   
+      > A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restrict updates from the REST API, however, updates from the web portal are not affected.   
+      Reference name=System.Rev, Data type=Integer
    :::column-end:::
    :::column span="1":::
    All

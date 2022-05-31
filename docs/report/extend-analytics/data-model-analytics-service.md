@@ -177,3 +177,4 @@ The following table provides _*a partial list*_ of the **WorkItemRevision** enti
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
 - [Exploring Analytics OData metadata](analytics-metadata.md)
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md)  
