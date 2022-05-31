@@ -16,9 +16,7 @@ Secret variables set in the pipeline settings UI for a pipeline are scoped to th
 
 ## Secret variable in the UI
 
-You can set secret variables in the pipeline editor when you are editing an individual pipeline. You'll encrypt and make a pipeline variable secret by selecting the lock ![Icon of secret variable.](../media/variables/secret-variable-icon.png) icon. 
-
-### Set secret variables in the UI
+You can set secret variables in the pipeline editor when you are editing an individual pipeline. You'll encrypt and make a pipeline variable secret by selecting the lock :::image type="icon" source="media/variables/secret-variable-icon.png" border="false"::: icon. 
 
 You set secret variables the same way for YAML and Classic. 
 
