@@ -2,7 +2,7 @@
 title: Set secret variables
 description: Learn how to set secret variables.
 ms.topic: conceptual
-ms.date: 04/29/2022
+ms.date: 05/31/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -62,6 +62,18 @@ For a more detailed example, see [Define variables](variables.md#secret-variable
 #### [Classic](#tab/classic/)
 
 
+Unlike a normal variable, secret are not automatically decrypted into environment variables for scripts. You need to explicitly map secret variables.
+
+In this example, the variable `mySecret` is set on the Variables tab. The value of `mySecret` is `foo`.
+
+:::image type="content" source="media/variables/set-secret-var-classic.png" alt-text="Screenshot of setting a secret variable in Classic. ":::
+
+Each task that needs to use the secret as an environment variable does remapping. If you want to use the secret variable called `mySecret` from a script, use the `Environment` section of the scripting task's input variables. Set the environment variable name to `FOO_ONE`, and set the value to `$(mySecret)`. 
+
+:::image type="content" source="media/variables/secret-passed-variable-classic.png" alt-text="Screenshot of mapped secret environment variable in Classic.":::
+
+The script outputs `True`.
+
 ---
 
 ## Set a secret variable in a variable group
@@ -107,15 +119,13 @@ The **Make secrets available to whole job** option is not currently supported in
 
 To learn more about the Azure Key Vault task, see [Use Azure Key Vault secrets in Azure Pipelines](../release/azure-key-vault.md). 
  
-## Secret variable in the UI
 
 ## Secret variable in a script
 
-BASH/PWSH
+You can use the `task.setvariable` logging command to set variables in PowerShell and Bash scripts. This is the least secure way to work with secret variables. The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault.
 
-### set
+To set a variable as a script with a logging command, you'll need to pass the `issecret` flag. 
 
-### use
+[!INCLUDE [set secret variable in UI](includes/secret-variables-logging.md)]
 
-### Troubleshoot variable issues
-
+Learn more about [setting and using variables in scripts](set-variables-scripts.md). 
