@@ -25,7 +25,7 @@ You can use a pipeline to automatically build and test your Java projects. Once 
 You must have the following items in Azure DevOps:
 
 - A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
-- A pipeline. If you don't have one, [Create a pipeline](#Build-your-code) now.
+- A pipeline. If you don't have one, [Create a pipeline](#build-your-code) now.
 
 ### Create a pipeline
 
@@ -45,7 +45,7 @@ You must have the following items in Azure DevOps:
 
 1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
-1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [build your code](#Build-your-code).
+1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [build your code](#build-your-code).
 
 1. When you're ready, select **Save and run**.
 
