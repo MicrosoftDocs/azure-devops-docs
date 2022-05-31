@@ -27,8 +27,6 @@ You must have the following items in Azure DevOps:
 - A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
 - A pipeline. If you don't have one, [Create a pipeline](#Build-your-code) now.
 
-### Create a project
-
 ### Create a pipeline
 
 ::: moniker range="> azure-devops-2019"
@@ -47,7 +45,7 @@ You must have the following items in Azure DevOps:
 
 1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
-1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [Build your code](#build-your-code).
+1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [build your code](#build-your-code).
 
 1. When you're ready, select **Save and run**.
 
@@ -110,7 +108,7 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 
 ::: moniker range="< azure-devops"
 
-Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Java installed on the agent.
+Your builds run on a [self-hosted agent](../agents/agents.md#install). Ensure that you have Java installed on the agent.
 
 ::: moniker-end
 
@@ -136,7 +134,7 @@ steps:
     goals: 'package'
 ```
 
-For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`.
+For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Ensure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`.
 
 #### Customize the build path
 
@@ -150,7 +148,7 @@ For details about common Java phases and goals, see [Apache's Maven documentatio
 
 ### Gradle
 
-With the Gradle build, the following snippet is added to your `azure-pipelines.yml` file. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+With the Gradle build, the following snippet is added to your `azure-pipelines.yml` file. For more information about these options, see the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 steps:
@@ -182,11 +180,11 @@ Adjust the `gradleWrapperFile` value if your `gradlew` file isn't in the root of
 
 Adjust the **tasks** value for the tasks that Gradle should execute, such as `build` or `check`.
 
-For details about common Java Plugin tasks for Gradle, see [Gradle's documentation](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java_tasks).
+For more information about common Java Plugin tasks for Gradle, see [Gradle's documentation](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java_tasks).
 
 ### Ant
 
-With Ant build, the following snippet is added to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file, to match your project configuration. See the [Ant](../tasks/build/ant.md) task for more about these options.
+With Ant build, the following snippet is added to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file, to match your project configuration. For more information about these options, see the [Ant](../tasks/build/ant.md) task.
 
 ```yaml
 steps:
