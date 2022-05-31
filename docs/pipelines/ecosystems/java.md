@@ -45,7 +45,7 @@ You must have the following items in Azure DevOps:
 
 1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
-1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [build your code](#build-your-code).
+1. When you see the **Configure** tab, select **Maven** or **Gradle** or **Ant** depending on how you want to [build your code](#Build-your-code).
 
 1. When you're ready, select **Save and run**.
 
