@@ -2,7 +2,7 @@
 title: Build code from on-premises Bitbucket server
 description: Using on-premises Bitbucket with Azure Pipelines
 ms.topic: reference
-ms.date: 07/05/2020
+ms.date: 05/31/2022
 monikerRange: 'azure-devops'
 ---
 
