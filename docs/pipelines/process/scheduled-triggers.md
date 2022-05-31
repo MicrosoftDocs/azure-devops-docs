@@ -298,7 +298,7 @@ Wildcard        | `*`              | Matches all values for this field
 Single value    | `5`              | Specifies a single value for this field
 Comma delimited | `3,5,6`          | Specifies multiple values for this field. Multiple formats can be combined, like `1,3-6`
 Ranges          | `1-3`            | The inclusive range of values for this field
-Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as every 4th value or the range 1-5 with a step interval of 2
+Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as every fourth value or the range 1-5 with a step interval of 2
 
 Example | Cron expression
 --------|----------------
@@ -624,7 +624,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 * You might have updated the service connection used to connect to the repository. This will cause a new run to be scheduled even if you have not updated your source code.
 
-* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will either start a scheduled run anyway or it will create a failed run to indicate that it is unable to reach the repository. If you notice that a run was created and that failed immediately, this is likely the reason. It is a dummy build to let you know that Azure Pipelines is unable to reach your repository.
+* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will create an [informational run](./information-run.md). It is a dummy build to let you know that Azure Pipelines is unable to reach your repository.
 
 ### I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?
 

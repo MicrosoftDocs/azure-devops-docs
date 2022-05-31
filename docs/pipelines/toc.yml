@@ -160,6 +160,9 @@
         - name: Job access tokens
           href: process/access-tokens.md
           displayName: job access token, identity, build service account, project build service account, collection build service account, access token, build service
+        - name: Information pipeline runs
+          href: process/information-run.md
+          displayName: information run  
     - name: Pipeline reports
       items:
         - name: View pipeline reports
