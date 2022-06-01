@@ -39,7 +39,7 @@ Many revisions on a single work item create bloat and cause performance problems
 * Keep the number of revisions to a minimum to avoid revision limits.
 
 > [!NOTE]   
-> A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restrict updates from the REST API, however, updates from the web portal are not affected.  
+> A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.  
 
 
 ## Optimize queries
