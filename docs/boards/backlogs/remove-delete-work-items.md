@@ -19,12 +19,13 @@ ms.date: 04/01/2022
 Work items can live forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions: 
 
 
-- **Change state**: Remove work items from appearing on backlogs and boards by changing the work item **State** to *Remove* or *Cut*.  
-- **Delete**: Remove work items from backlogs, boards, and queries. Deleted work items are moved to a Recycle Bin. From the **Recycle Bin**, you can restore or permanently delete them. 
-- **Destroy**: Permanently delete work items, deleting all data from the work tracking data store. 
-- **Restore**: Recover deleted work items, restoring them from the Recycle Bin.  
-
-The ability to archive work items or projects isn't a supported feature at this time. 
+- **Change state**: Remove work items from appearing on backlogs and boards by changing the work item **State** to *Remove* or *Cut*. The state available to you is based on the workflow assigned to the work item type.  
+- **Delete**: Remove work items from backlogs, boards, and queries. Deleted work items are moved to a **Recycle Bin**.   
+- **Restore**: Recover deleted work items by restoring them from the **Recycle Bin**.  
+- **Destroy**: Permanently delete work items, which deletes all data from the work tracking data store. 
+ 
+> [!NOTE]  
+> The ability to archive work items or projects isn't a supported feature at this time. 
 
 ::: moniker range=">= azure-devops-2019"
 To move a work item from one project to another, or to change the work item type, see [Move work items, change work item type](move-change-type.md). 
@@ -34,6 +35,72 @@ To move a work item from one project to another, or to change the work item type
 > For information about the Azure Artifacts Recycle Bin, see [Delete and recover packages](../../artifacts/how-to/delete-and-recover-packages.md).
 
 ## Prerequisites 
+
+In general, members of the **Contributors** group can remove, delete, and restore work items. To permanently delete work items, you must be a member of the **Project Administrators** group, or be granted the required permission. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin regardless of the permissions they're granted.   
+
+:::row:::
+   :::column span="1":::
+      **Task** 
+   :::column-end:::
+   :::column span="2":::
+       **Required permission(s)** 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      [Change state to **Remove** or **Cut**](#remove) 
+   :::column-end:::
+   :::column span="2":::
+       Have the **Area Path** permission set to **Allow**: **Edit work items in this node** 
+       By default, members of the **Contributors** group have this permission.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      [Delete work items](#delete) and  
+      [Restore work items](#restore)  
+   :::column-end:::
+   :::column span="2":::
+       - Have the project-level permission set to **Allow**: **Delete and restore work items**
+       - Have **Basic** access or higher.
+       - By default, members of the **Contributors** group have this permission.
+   :::column-end:::
+:::row-end:::
+::: moniker range="tfs-2018"
+:::row:::
+   :::column span="1":::
+      [Permanently delete or destroy work items from the command line](#witadmin-cli)  
+   :::column-end:::
+   :::column span="2":::
+       Be a member of the **Project Administrators** group.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      [Permanently delete or destroy work items](#restore-or-destroy-work-items)  
+   :::column-end:::
+   :::column span="2":::
+       - Have the project-level permission set to **Allow**: **Permanently delete work items**
+       - By default, members of the **Project Administrators** group have this permission.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops"
+:::row:::
+   :::column span="1":::
+      [Delete or destroy work items from the command line](#az-boards-cli)
+   :::column-end:::
+   :::column span="2":::
+       - Have the project-level permission set to **Allow**: **Permanently delete work items**
+       - By default, members of the **Project Administrators** group have this permission.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+
+
+<!---
 
 - To remove, modify, or delete work items, you must be a member of the **Contributors** group or have the following permissions set to **Allow**. 
 	- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.   
@@ -50,18 +117,15 @@ To move a work item from one project to another, or to change the work item type
 ::: moniker range="< azure-devops-2019"
 - To [Restore or destroy work items](#restore) or [Destroy work items (witadmin CLI)](#witadmin-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker-end
-
+-->
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).  
 
 ::: moniker range="azure-devops" 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
-
+ 
 ## Remove or delete multiple work items 
 
 You can act on individual work items or bulk modify several work items. 
