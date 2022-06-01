@@ -29,7 +29,7 @@ Get the secret variable `mySecretVal`.
 
 Secret variable output in bash.
 
-:::image type="content" source="media/task-var-bash.png" alt-text="Output of bash variable.":::
+:::image type="content" source="../media/task-var-bash.png" alt-text="Output of bash variable.":::
 
 # [PowerShell](#tab/powershell)
 
@@ -49,6 +49,6 @@ Get the secret variable `mySecretVal`.
 
 Output of PowerShell variable. 
 
-:::image type="content" source="media/task-var-powershell.png" alt-text="Output of secret PowerShell variable.":::
+:::image type="content" source="../media/task-var-powershell.png" alt-text="Output of secret PowerShell variable.":::
 
 ---
