@@ -17,7 +17,7 @@ ms.date: 06/01/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [version-all](../../includes/version-selector-minimize.md)]
+[!INCLUDE [version-all](../../../includes/version-selector-minimize.md)]
 
 When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system and other subsystems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
