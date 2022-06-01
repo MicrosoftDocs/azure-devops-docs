@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 06/01/2022
 ---
 
 # Remove, delete, or restore work items in Azure Boards
@@ -100,24 +100,6 @@ In general, members of the **Contributors** group can remove, delete, and restor
 ::: moniker-end
 ---
 
-<!---
-
-- To remove, modify, or delete work items, you must be a member of the **Contributors** group or have the following permissions set to **Allow**. 
-	- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.   
-	- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to delete or restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
-
-::: moniker range="azure-devops"
-- To [Restore or destroy work items](#restore) or [Delete or destroy work items (az boards CLI)](#az-boards-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-- To [Restore or destroy work items](#restore), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-- To [Restore or destroy work items](#restore) or [Destroy work items (witadmin CLI)](#witadmin-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
-::: moniker-end
--->
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../get-started/permissions-access-boards.md).  
 
@@ -159,18 +141,18 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ### Delete work items   
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a **Recycle Bin** from which you can recover them if needed. To delete a test case, test plan, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
-There are several ways to delete a work item: 
+::: moniker range=">= azure-devops-2019"
 
+You can delete work items in one of the following ways: 
 - From within the work item form
-- From the Work Items page :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More Actions** menu
+- From the **Work Items** page :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More Actions** menu
 - From the Kanban board card :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: context menu
 - From a backlog or query results page.  
 
-::: moniker range=">= azure-devops-2019"
 
 1.  To initiate a delete operation: 
 
-	To delete a single work item, open the work item, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
+	From the work item form, open the work item, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of work item form, Actions menu, choose Delete.](media/move-change-delete/delete-work-item.png) 
@@ -325,7 +307,7 @@ az boards work-item delete --id 864 --destroy --yes
  
 ### Destroy work items from the command line  
 
-Use the `witadmin destroywi` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated.  
+Use the `witadmin destroywi` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and can't be restored nor reactivated.  
 
 > [!NOTE]   
 > Deleting work items from the `witadmin` command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.  
