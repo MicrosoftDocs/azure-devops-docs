@@ -118,7 +118,7 @@ The **Make secrets available to whole job** option is not currently supported in
 To learn more about the Azure Key Vault task, see [Use Azure Key Vault secrets in Azure Pipelines](../release/azure-key-vault.md). 
  
 
-## Secret variable in a script
+## Set secret variable in a script with logging commands
 
 You can use the `task.setvariable` logging command to set variables in PowerShell and Bash scripts. This is the least secure way to work with secret variables. The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault.
 

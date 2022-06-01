@@ -27,7 +27,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 1. On the **Variable groups** page, select **+ Add** to select specific secrets from your vault for mapping to this variable group.
 
-### Manage secrets
+### Manage key vault secrets
 
 See the following list of helpful tips for managing secrets.
 
