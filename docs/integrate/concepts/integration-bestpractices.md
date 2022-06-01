@@ -8,7 +8,7 @@ ms.custom: content-health, FY22Q3, freshness
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/15/2022
+ms.date: 05/31/2022
 ---
 
 <!--- Supports FWLINK:  https://go.microsoft.com/fwlink/?LinkId=692096   --> 
@@ -37,6 +37,10 @@ Many revisions on a single work item create bloat and cause performance problems
 * Reduce your updates by batching your field changes. Don't update just one field at a time.
 * If you have changes to multiple work items, batch those changes into a single action.
 * Keep the number of revisions to a minimum to avoid revision limits.
+
+> [!NOTE]   
+> A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.  
+
 
 ## Optimize queries
 

@@ -926,4 +926,5 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 - [Query trend data](querying-for-trend-data.md)
 - [Query work item links](work-item-links.md)
 - [Explore the Analytics OData metadata](analytics-metadata.md)
-- [Supported functions & clauses](odata-supported-features.md)
+- [Supported functions & clauses](odata-supported-features.md)  
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
