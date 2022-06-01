@@ -294,7 +294,7 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 
 ## Work in sprints   
 
-Sprints allow the development team to focus on completing a pre-selected set of work. Work assign to a sprint appears on the team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
+Sprints allow the development team to focus on completing a pre-selected set of work. Work assigned to a sprint appears on the team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
 
 
 #### Sprint burndown chart 
