@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 
 Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use. 
 
-The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault. You can also set secret variables in script tasks but this is not recommended since anyone who can access your pipeline will be able to also see the secret.
+The recommended ways to [set secret variables are in the UI](#secret-variable-in-the-ui), [in a variable group](#set-a-secret-variable-in-a-variable-group), and [in a variable group from Azure Key Vault](#link-secrets-from-an-azure-key-vault). You can also [set secret variables with a logging command](#secret-variable-in-a-script) but this is not recommended since anyone who can access your pipeline will be able to also see the secret.
 
 Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. You can use variable groups to share secret variables across pipelines. 
 
@@ -66,7 +66,7 @@ In this example, the variable `mySecret` is set on the Variables tab. The value 
 
 :::image type="content" source="media/variables/set-secret-var-classic.png" alt-text="Screenshot of setting a secret variable in Classic. ":::
 
-Each task that needs to use the secret as an environment variable does remapping. If you want to use the secret variable called `mySecret` from a script, use the `Environment` section of the scripting task's input variables. Set the environment variable name to `FOO_ONE`, and set the value to `$(mySecret)`. 
+Each task that needs to use the secret as an environment variable does remapping. If you want to use the secret variable `mySecret` in a script, use the **Environment Variables** section of the task. Set the environment variable name to `FOO_ONE`, and set the value to `$(mySecret)`. 
 
 :::image type="content" source="media/variables/secret-passed-variable-classic.png" alt-text="Screenshot of mapped secret environment variable in Classic.":::
 
