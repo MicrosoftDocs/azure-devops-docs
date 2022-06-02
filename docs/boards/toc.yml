@@ -103,7 +103,7 @@
     href: work-items/set-work-item-experience-vs.md
   - name: Manage process templates
     displayName: templates
-    href: work-items/guidance/manage-process-templates.md
+    href: /azure/devops/boards/work-items/guidance/manage-process-templates?view=azure-devops-2020&preserve-view=true
   - name: Work across projects FAQs 
     href: ../project/work-across-projects-faqs.yml
 - name: Azure Boards & GitHub
