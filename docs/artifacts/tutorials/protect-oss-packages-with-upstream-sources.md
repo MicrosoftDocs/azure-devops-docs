@@ -166,7 +166,7 @@ Your feed now should contain any packages you saved from the upstream source.
 
 ## Related articles
 
-- [upstream sources overview](../concepts/upstream-sources.md)
-- [Upstream behavior](../concepts/upstream-behavior.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
 - [Feed permissions](../feeds/feed-permissions.md)
 - [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
