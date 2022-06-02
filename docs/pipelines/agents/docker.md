@@ -202,35 +202,35 @@ Next, create the Dockerfile.
     ```
 
 4. Save the following content to `~/dockeragent/Dockerfile`:
-  * For Ubuntu 20.04:
-    ```docker
-    FROM ubuntu:20.04
-     RUN DEBIAN_FRONTEND=noninteractive apt-get update
-    RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
+    * For Ubuntu 20.04:
+      ```docker
+      FROM ubuntu:20.04
+       RUN DEBIAN_FRONTEND=noninteractive apt-get update
+      RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
-    RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
-        apt-transport-https \
-        apt-utils \
-        ca-certificates \
-        curl \
-        iputils-ping \
-        jq \
-        lsb-release \
-        software-properties-common
+      RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+          apt-transport-https \
+          apt-utils \
+          ca-certificates \
+          curl \
+          iputils-ping \
+          jq \
+          lsb-release \
+          software-properties-common
 
-    RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+      RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
-    # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
-    ENV TARGETARCH=linux-x64
+      # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
+      ENV TARGETARCH=linux-x64
 
-    WORKDIR /azp
+      WORKDIR /azp
 
-    COPY ./start.sh .
-    RUN chmod +x start.sh
+      COPY ./start.sh .
+      RUN chmod +x start.sh
 
-    ENTRYPOINT [ "./start.sh" ]
-    ```
-  * For Ubuntu 18.04:
+      ENTRYPOINT [ "./start.sh" ]
+      ```
+    * For Ubuntu 18.04:
       ```docker
       FROM ubuntu:18.04
 
@@ -265,14 +265,14 @@ Next, create the Dockerfile.
 
       ENTRYPOINT ["./start.sh"]
       ```
-   > [!NOTE]
-   > Tasks might depend on executables that your container is expected to provide.
-   > For instance, you must add the `zip` and `unzip` packages
-   > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
-   > Also, as this is a Linux Ubuntu image for the agent to use, you can customize the image as you need.
-   > E.g.: if you need to build .NET applications you can follow the document 
-   > [Install the .NET SDK or the .NET Runtime on Ubuntu](/dotnet/core/install/linux-ubuntu)
-   > and add that to your image. 
+    > [!NOTE]
+    > Tasks might depend on executables that your container is expected to provide.
+    > For instance, you must add the `zip` and `unzip` packages
+    > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks. 
+    > Also, as this is a Linux Ubuntu image for the agent to use, you can customize the image as you need.
+    > E.g.: if you need to build .NET applications you can follow the document 
+    > [Install the .NET SDK or the .NET Runtime on Ubuntu](/dotnet/core/install/linux-ubuntu)
+    > and add that to your image. 
 
 
 5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
