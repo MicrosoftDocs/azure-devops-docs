@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 01/19/2022
+ms.date: 06/02/2022
 ---
 
 
@@ -49,7 +49,7 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 1. Open the Delivery Plan from **Boards>Delivery Plans**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
+	> ![Screenshot to Open Boards, Delivery Plans.](media/plans/open-plans.png) 
 
 1. To view dependency lines for a work item, select the top or bottom of its card. To dismiss the lines, select the top or bottom of the card again, or anywhere else within the plan. 
 

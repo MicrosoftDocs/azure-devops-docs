@@ -42,7 +42,7 @@ In this article, we make the following suggestions and guidance:
 
 ## Configure your teams   
 
-Azure Boards provides each team a set of Agile tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, we recommend that you define a team in Azure DevOps for each feature team. This way, each team can work autonomously while collaborating with each other. 
+Azure Boards provides each team a set of Agile tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have several development or feature teams, we recommend that you define a team in Azure DevOps for each feature team. This way, each team can work autonomously while collaborating with each other. 
 
 #### Best practice tips: 
 
@@ -244,7 +244,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 
 ### Add link dialog
 
-Azure Boards supports a number of link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. The quickest way to add a number of these links is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links from the triage mode of the query results. 
+Azure Boards supports many link types to track related work. Choose the **Predecessor/Successor** link types to track work with dependencies. A quick way to link work items is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links from the [triage mode of the query results](queries/triage-work-items.md). 
 
 The following Add link dialog illustrates how two work items are linked using the Successor link type. 
 
