@@ -149,7 +149,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 - [Review team delivery plans](../plans/review-team-plans.md)
 - [View portfolio progress with the Feature Timeline](feature-timeline.md) 
-- [Plan and track dependencies using the Dependency Tracker](dependency-tracker.md)
+- [Track dependencies by using Delivery Plans](../plans/track-dependencies.md)
 
 
 ## Related Marketplace extensions

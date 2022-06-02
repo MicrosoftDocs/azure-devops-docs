@@ -25,7 +25,7 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
  
 
 > [!TIP]  
-> You can create dependencies between work items in different projects and different teams within the same organization, but not in projects in different organizations. You can open a work item and add a dependency through the links tab. To track dependencies across organizations, you can try the [Dependency Tracker Marketplace extension](../extensions/dependency-tracker.md).
+> You can create dependencies between work items in different projects and different teams within the same organization, but not in projects in different organizations. You can open a work item and add a dependency through the links tab. 
 
 ## Prerequisites
 

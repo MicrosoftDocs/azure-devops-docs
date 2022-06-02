@@ -8,7 +8,7 @@ ms.custom: cross-project
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops' 
-ms.date: 07/09/2021  
+ms.date: 06/02/2022 
 ---
 
 
@@ -152,6 +152,7 @@ Periodically review each backlog to perform these tasks:
 - Make sure features and requirements are sized appropriately
 - Define the acceptance criteria and the definition of done for features and work 
 - Map unmapped work to Features 
+- Set your view options to support the backlog tasks you want to accomplish
 - Forecast your backlog  
 
 #### To learn how: 
@@ -159,6 +160,7 @@ Periodically review each backlog to perform these tasks:
 - [Refine your backlog](backlogs/best-practices-product-backlog.md) 
 - [Define features and epics](backlogs/define-features-epics.md)  
 - [Create your backlog](backlogs/create-your-backlog.md)  
+- [Configure your backlog view](backlogs/configure-your-backlog-view.md)  
 - [Forecast your product backlog](sprints/forecast.md)  
 
 
@@ -279,8 +281,8 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 - Add a `dependency` tag to work items participating in dependency management
 - Use **Predecessor/Successor** link types to track dependencies of work owned by other teams or within other projects
 - Create queries to track, add, and triage dependencies 
-- Use the [Dependency Tracker](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker) Marketplace extension to view work that you have dependencies on from other teams 
-- Use the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension to visualize dependencies 
+- Use [Delivery Plans](plans/track-dependencies.md) to view work that you have dependencies on from other teams 
+- Use the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension to visualize dependencies for a specific work item within the work item form.
 
 > [!NOTE]   
 > Marketplace extensions are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
@@ -289,7 +291,7 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 
 - [Link user stories, issues, bugs, and other work items](backlogs/add-link.md) 
 - [Triage work items](queries/triage-work-items.md) 
-- [Plan and track dependencies using the Dependency Tracker](extensions/dependency-tracker.md)
+- [Track dependencies by using Delivery Plans](plans/track-dependencies.md)
  
 
 ## Work in sprints   
