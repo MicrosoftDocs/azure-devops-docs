@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 Using upstream sources in your feed enables you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 
-This tutorial will walk you though how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
+This tutorial will walk you through how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
 
 In this tutorial, you will:
 
@@ -166,7 +166,7 @@ Your feed now should contain any packages you saved from the upstream source.
 
 ## Related articles
 
-- [upstream sources overview](../concepts/upstream-sources.md)
-- [Upstream behavior](../concepts/upstream-behavior.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
 - [Feed permissions](../feeds/feed-permissions.md)
 - [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)

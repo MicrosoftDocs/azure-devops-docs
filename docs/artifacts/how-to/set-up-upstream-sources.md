@@ -114,6 +114,7 @@ npm install --save <package>
 ## Related articles
 
 - [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
 - [Configure upstream behavior](../concepts/upstream-behavior.md)
 - [Use feed views to share packages](../feeds/views.md)
 - [Configure permissions](../feeds/feed-permissions.md)
