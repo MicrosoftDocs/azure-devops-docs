@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2021
+ms.date: 06/02/2022
 ---
 
 
@@ -160,7 +160,7 @@ The following images show the supported conditions and actions you can select fr
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions-cloud.png)
+> |![Screenshot showing list of conditions.](../../organizations/settings/work/media/rules/when-condition-2.png) | ![Screenshot showing list of actions.](../../organizations/settings/work/media/rules/rule-actions-cloud.png)
 
 
 ::: moniker-end
@@ -172,7 +172,7 @@ The following images show the supported conditions and actions you can select fr
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions, 2020](../../organizations/settings/work/media/rules/when-condition-2020.png) | ![list of actions, 2020](../../organizations/settings/work/media/rules/rule-actions-2020.png)
+> |![Screenshot showing list of conditions, 2020](../../organizations/settings/work/media/rules/when-condition-2020.png) | ![Screenshot showing list of actions, 2020](../../organizations/settings/work/media/rules/rule-actions-2020.png)
 
 ::: moniker-end
 
@@ -181,7 +181,7 @@ The following images show the supported conditions and actions you can select fr
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions, 2019](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions, 2019](../../organizations/settings/work/media/rules/rule-actions-2019.png)
+> |![Screenshot showing list of conditions, 2019](../../organizations/settings/work/media/rules/when-condition-1.png) | ![Screenshot showing list of actions, 2019](../../organizations/settings/work/media/rules/rule-actions-2019.png)
 
 ::: moniker-end
 
@@ -201,7 +201,7 @@ The default workflow for the Agile process includes *New*, *Active*, *Resolved*,
 For example, you can add and rename workflow States to match the Kanban columns shown in the following image&mdash;*Backlog*, *Analyze*, *Develop*, *Test*, and *Done*.  
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board columns to visualize flow and limit WIP](../boards/media/alm_kb_board2.png)  
+> ![Conceptual image of Kanban board columns to visualize flow and limit WIP.](../boards/media/alm_kb_board2.png)  
 
 Review with your team's what workflow states will most support their Agile practices. For more details, review the following articles:  
 - [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md)  
@@ -252,7 +252,7 @@ However, you can add other work item types, existing or custom, to these backlog
 You can also add up to three more portfolio backlogs as shown in the following illustration. Portfolio backlogs are designed to be hierarchical. For SAFe, you may want to add a Solution Backlog that appears as a parent to the Epic backlog. 
 
 > [!div class="mx-imgBorder"]  
-> ![Additional portfolio backlogs](../../organizations/settings/work/media/process/portfolio-backlogs-modified.png)  
+> ![Screenshot of backlog picklist showing five levels of portfolio backlogs.](../../organizations/settings/work/media/process/portfolio-backlogs-modified.png)  
 
 
 For details on customizing backlogs, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
