@@ -213,6 +213,7 @@ Next, create the Dockerfile.
           apt-utils \
           ca-certificates \
           curl \
+          git \
           iputils-ping \
           jq \
           lsb-release \
