@@ -319,7 +319,7 @@ A default team and default area path are defined for each project. For small tea
 Here is an example of area paths and their assignment to teams, which support portfolio management views for the Account Management and Service Delivery teams. 
 
 > [!div class="mx-imgBorder"] 
-> ![Area paths and team assignments](media/config-custom/area-path-team-assignments.png)  
+> ![Screenshot of Area paths and team assignments.](media/config-custom/area-path-team-assignments.png)  
 
 - You create hierarchical area paths to support sub categories of features and product areas 
 - To provide portfolio views, you assign two or more area paths and include sub-areas to a portfolio management team 
@@ -384,14 +384,14 @@ Rollup columns allow you to view progress bars or totals of numeric fields or de
 Here we show **Progress by all Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. 
 
 > [!div class="mx-imgBorder"]  
-> ![Progress bars showing rollup by work items](media/config-custom/progress-by-work-items.png)  
+> ![Screenshot of backlog, Progress bars showing rollup by work items.](media/config-custom/progress-by-work-items.png)  
 
 ::: moniker range="azure-devops"
 
 In addition, the new [Delivery Plans](plans/review-team-plans.md) supports rollup views of epics, features, and other custom portfolio backlogs. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot showing Delivery Plans Progress rollup view of four scenarios. ](plans/media/plans/rollup-view.png)  
+> ![Screenshot showing Delivery Plans Progress rollup view of four scenarios.](plans/media/plans/rollup-view.png)  
 
 ::: moniker-end
 
@@ -409,7 +409,7 @@ Iteration paths support Scrum and Scrumban processes where work is assigned to a
 Iteration paths can be a simple flat list, or grouped under release milestones as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Iteration paths, grouped](media/config-custom/iteration-paths-flat-or-grouped.png)  
+> ![Screenshot of Iteration paths, grouped.](media/config-custom/iteration-paths-flat-or-grouped.png)  
 
 > [!NOTE]   
 > While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
@@ -476,7 +476,7 @@ Sometimes, teams want to track the status of their work that go beyond these def
 Both workflow states and Kanban columns appear in the Cumulative Flow diagram for a team. Individuals can choose which columns appear in the chart. 
 
 > [!div class="mx-imgBorder"]  
-> ![Cumulative flow diagram](media/config-custom/cumulative-flow-diagram.png)  
+> ![Screenshot of Cumulative flow diagram.](media/config-custom/cumulative-flow-diagram.png)  
 
 To learn more, see [Cumulative flow diagram](../report/dashboards/cumulative-flow.md). 
 
