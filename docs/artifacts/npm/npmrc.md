@@ -16,9 +16,7 @@ With Azure Artifacts, you can publish different types of packages to your feeds 
 
 ## Project setup
 
-We recommend using two **.npmrc_** files, the first one you should use to authenticate to Azure Artifacts, and the second one should be kept locally to store your credentials. This enables you to share your project's **.npmrc** while keeping your credentials secure.
-
-On your development machine, place the second *.npmrc* file in your home directory. This second file should contain all your registries' credentials. The following steps will help set up your other *.npmrc* file:
+We recommend using two config files, the first one you should use to authenticate to Azure Artifacts, and the second one should be kept locally to store your credentials. On your development machine, place the second *.npmrc* file in your home directory. This second file should contain all your registries' credentials. The following steps will help set up your other config file:
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -149,7 +147,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 ## Authentication setup
 
-Azure Artifacts recommend using the `npmAuthenticate` task to set up authentication for your pipeline tasks. When using a task runner such as gulp or Grunt, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the *.npmrc*.
+Azure Artifacts recommend using the `npmAuthenticate` task to set up authentication for your pipeline tasks. When using a task runner such as gulp or Grunt, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the config file.
 
 ### [Classic](#tab/classic)
 
