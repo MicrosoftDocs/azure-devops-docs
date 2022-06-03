@@ -170,7 +170,7 @@ Now that you enabled upstream sources and set up your configuration file, we can
 
 We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream. 
 
-# [npm](#tab/npm)
+# [npm](#tab/npmrestore)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
 
@@ -183,7 +183,7 @@ npm install --force
 
 Your feed now should contain any packages you saved from the upstream source.
 
-# [NuGet](#tab/nuget)
+# [NuGet](#tab/nugetrestore)
 
 - **Clear your local cache**:
 
@@ -199,7 +199,7 @@ Your feed now should contain any packages you saved from the upstream source.
 
 Your feed now should contain any packages you saved from the upstream source.
 
-* * *
+- - -
 
 ## Related articles
 
