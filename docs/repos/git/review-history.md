@@ -92,7 +92,7 @@ The [git diff](https://git-scm.com/docs/git-diff) command can compare different 
     git log <file>  
     ```
     
-    By default, the command output starts with the most recent commit in the current branch, and then iterates backward through ancestor commits by following the parent links in each commit's metadata.
+    By default, the command output starts with the most recent commit in the current branch, and then iterates backward through ancestor commits (regardless of branch) by following the parent links in each commit's metadata. 
 
     Here's an example of output for the command `git log index.html`:
 
