@@ -16,7 +16,7 @@ ms.date: 06/03/2022
 
 Git uses [commit metadata](commits.md#whats-in-a-commit) like parent links, author details, and timestamps to track the history of changes in a repo. You can review the Git history to find out when files changed, who changed them, and what changes were made.
 
-When people create and merge feature [branches](./create-branch.md) into a target branch using [pull requests](pull-requests.md), the development history of the target branch might not be a straight chronological line. So, when you review the history of changes to a file on the target branch, keep in mind that the order of commits are influenced by [merge strategy](pulling.md#update-branches-with-merge-or-rebase) and merge date, not just the original date of the changes. For example, the most recent commit on the `main` branch may contain a change that was made weeks ago in a feature branch that was only just merged into the `main` branch using a three-way merge.
+When people create and merge feature [branches](./create-branch.md) into a target branch using [pull requests](pull-requests.md), the development history of the target branch might not be a straight chronological line. So, when you review the history of changes to a file on the target branch, keep in mind that the order of commits is influenced by [merge strategy](pulling.md#update-branches-with-merge-or-rebase) and merge date, not just the original date of the changes. For example, the most recent commit on the `main` branch may contain a change that was made weeks ago in a feature branch that was only just merged into the `main` branch using a three-way merge.
 
 In this article you learn how to:
 
