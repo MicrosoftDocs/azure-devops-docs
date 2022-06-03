@@ -124,7 +124,24 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 1. Create a new file named *nuget.config* in the root of your project.
 
 1. Paste the XML snippet in your config file.
- 
+
+#### [Pip](#tab/pip/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **pip** under the Python section.
+
+    :::image type="content" source="../media/project-setup-pip.png" alt-text="A screenshot showing how to connect to a feed for pip projects.":::
+
+1. Create a [virtual environment](https://go.microsoft.com/fwlink/?linkid=2103878) if you haven't done so already.
+
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv and paste the following snippet:
+
+    ```command
+    [global]
+    index-url=https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/simple/
+    ```
+
 * * *
 
 ## Restore packages
