@@ -2,8 +2,7 @@
 title: How to use upstream sources in your Azure Artifacts feed
 description: Use upstream sources in Azure Artifacts to consume packages from public registries
 ms.technology: devops-artifacts
-ms.reviewer: amullans
-ms.date: 08/24/2021
+ms.date: 06/03/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -124,8 +123,46 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 1. Create a new file named *nuget.config* in the root of your project.
 
 1. Paste the XML snippet in your config file.
- 
-* * *
+
+#### [Pip](#tab/pip/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **pip** under the Python section.
+
+    :::image type="content" source="../media/project-setup-pip.png" alt-text="A screenshot showing how to connect to a feed with pip projects.":::
+
+1. Create a [virtual environment](https://go.microsoft.com/fwlink/?linkid=2103878) if you haven't done so already.
+
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv and paste the following snippet:
+
+    ```command
+    [global]
+    index-url=https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/simple/
+    ```
+
+#### [Twine](#tab/twine/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **twine** under the Python section.
+
+    :::image type="content" source="../media/project-setup-twine.png" alt-text="A screenshot showing how to connect to a feed with twine projects.":::
+
+1. Add a .pypirc file to your home directory and paste the following snippet:
+
+    ```command
+    [distutils]
+    Index-servers = FEED-NAME
+    
+    [FEED-NAME]
+    Repository = https://pkgs.dev.azure.com/ORGANIZATION-NAME/_packaging/FEED-NAME/pypi/upload/
+    ```
+
+> [!TIP]
+> If you already have a .pypirc file, remove the [pypi] section if your file contains credentials.
+
+- - -
 
 ## Restore packages
 
@@ -133,7 +170,7 @@ Now that you enabled upstream sources and set up your configuration file, we can
 
 We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream. 
 
-# [npm](#tab/npm)
+# [npm](#tab/npmrestore)
 
 Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
 
@@ -146,7 +183,7 @@ npm install --force
 
 Your feed now should contain any packages you saved from the upstream source.
 
-# [NuGet](#tab/nuget)
+# [NuGet](#tab/nugetrestore)
 
 - **Clear your local cache**:
 
@@ -162,7 +199,7 @@ Your feed now should contain any packages you saved from the upstream source.
 
 Your feed now should contain any packages you saved from the upstream source.
 
-* * *
+- - -
 
 ## Related articles
 
