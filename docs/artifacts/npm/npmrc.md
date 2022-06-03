@@ -50,7 +50,7 @@ On your development machine, place the second *.npmrc* file in your home directo
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2019 || = azure-devops-2020"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 4. Follow the instructions in **Project setup** to set up your *.npmrc* file.
 
