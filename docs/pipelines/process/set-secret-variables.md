@@ -2,11 +2,13 @@
 title: Set secret variables
 description: Learn how to set secret variables.
 ms.topic: conceptual
-ms.date: 05/31/2022
-monikerRange: '<= azure-devops'
+ms.date: 06/03/2022
+monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
 # Set secret variables
+
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use. 
 
@@ -120,10 +122,17 @@ To learn more about the Azure Key Vault task, see [Use Azure Key Vault secrets i
 
 ## Set secret variable in a script with logging commands
 
-You can use the `task.setvariable` logging command to set variables in PowerShell and Bash scripts. This is the least secure way to work with secret variables. The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault.
+You can use the `task.setvariable` logging command to set variables in PowerShell and Bash scripts. This is the least secure way to work with secret variables but can be useful for debugging. The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault.
 
 To set a variable as a script with a logging command, you'll need to pass the `issecret` flag. 
 
 [!INCLUDE [set secret variable in UI](includes/secret-variables-logging.md)]
 
 Learn more about [setting and using variables in scripts](set-variables-scripts.md). 
+
+## Related articles
+
+- [Define variables](variables.md)
+- [Use variables in a variable group](../scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md)
+- [Use predefined variables](../build/variables.md)
+- [Set variables in scripts](set-variables-scripts.md)
