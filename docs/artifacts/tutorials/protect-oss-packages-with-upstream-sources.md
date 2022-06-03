@@ -2,8 +2,7 @@
 title: How to use upstream sources in your Azure Artifacts feed
 description: Use upstream sources in Azure Artifacts to consume packages from public registries
 ms.technology: devops-artifacts
-ms.reviewer: amullans
-ms.date: 08/24/2021
+ms.date: 06/03/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
