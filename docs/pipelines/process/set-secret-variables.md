@@ -3,12 +3,12 @@ title: Set secret variables
 description: Learn how to set secret variables.
 ms.topic: conceptual
 ms.date: 06/03/2022
-monikerRange: 'azure-devops || >= azure-devops-2020'
+monikerRange: 'azure-devops || >= azure-devops-2019'
 ---
 
 # Set secret variables
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2019.md)]
 
 Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use. 
 
