@@ -50,7 +50,7 @@ steps:
     inputs:
       app_location: '/src'
       api_location: 'api'
-      output_location: '/src'
+      output_location: '/build'
       azure_static_web_apps_api_token: $(deployment_token)
 ```
 
