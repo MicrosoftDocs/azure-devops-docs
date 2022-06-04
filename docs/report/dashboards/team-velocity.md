@@ -185,7 +185,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 	- **Completed Late**: calculated based on the amount of work assigned to the sprint that is completed after the sprint end date. If you assign work items to a sprint, even one in the past, they will show up in this calculation once the workflow **State** corresponds to a *Completed* category state.  
 	- **Incomplete**: Amount of work not completed, calculated based on the amount of work assigned to the sprint, and the workflow **State** corresponds to the *In Progress* category state.  
 		> [!NOTE]   
-		> Items assigned to a *Proposed* or *Resolved* workflow state category aren't included in any of the calculations.  To learn more about workflow category states, see [How workflow states categories are used in Azure Boards backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
+		> Items assigned to a *Proposed* or *Resolved* workflow state category aren't included in any of the calculations for **Completed**, **Completed Late**, or **Incomplete**.  To learn more about category states, see [How workflow category states are used in Azure Boards backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
 1. To add the report to a dashboard, select the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
