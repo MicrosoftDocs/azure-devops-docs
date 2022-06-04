@@ -25,6 +25,8 @@ In this article you learn how to:
 >* Restore files
 >* Compare branches
 
+To learn how to use Visual Studio 2022 with Git, see [How Visual Studio makes version control easy with Git](/visualstudio/version-control/git-with-visual-studio).
+
 ## Compare file versions
 
 When you want to figure out how and when a particular file change occurred, you might need to compare different versions of the same file from different commits, possibly in different branches.
@@ -255,7 +257,9 @@ You can use the [git checkout](https://git-scm.com/docs/git-checkout) or [git sh
 
 ## Compare branches
 
-You can compare two branches to review the changes that will result from a [merge](merging.md) or [rebase](rebase.md). The comparison lets you check for merge conflicts and see how changes by others might affect your work.
+You can compare any local or remote branches to review the changes that will result from a [merge](merging.md) or [rebase](rebase.md). Branch comparison lets you check for merge conflicts and see how changes by others might affect your work.
+
+Visual Studio 2019 and earlier versions don't support branch comparison, so if you're using one of those versions you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub. Visual Studio 2022 supports branch comparison, as described in [Compare branches](/visualstudio/version-control/git-browse-repository?view=vs-2022&preserve-view=true#compare-branches).
 
 
 #### [Browser](#tab/browser)
@@ -274,22 +278,22 @@ You can compare two branches to review the changes that will result from a [merg
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
-Visual Studio 2019 doesn't supports branch comparison. Visual Studio 2022 [supports](/visualstudio/version-control/git-browse-repository?view=vs-2022&preserve-view=true#compare-branches) branch comparison.
+Visual Studio 2019 doesn't support branch comparison. However, you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub.
+
+>[!TIP]
+>You can access the web portal from the Team Explorer **Home** view by choosing **Web Portal**.
+>
+>:::image type="content" source="media/review-history/visual-studio-2019/team-explorer/web-portal-link.png" border="true" alt-text="Screenshot showing the Web Portal link in the Home view of Team Explorer in Visual Studio 2019."::: 
 
 
 #### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
 
-Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**.
+Visual Studio 2017 and earlier versions don't support branch comparison. However, you can compare branches on the [Git command line](review-history.md?tabs=git-command-line#compare-branches) or using your [web browser](review-history.md?tabs=browser#compare-branches)&mdash;if your repo is hosted in Azure Repos or GitHub.
 
-:::image type="content" source="media/history/vs-browse-web-portal.png" border="false" alt-text="Web portal."::: 
-
-Select **Branches** from the menu under **Code**. Locate your branch and select the **...** icon to view the branch options. Select **Compare branches**.
-
-:::image type="content" source="media/history/compare-branches.png" border="false" alt-text="Compare branches.":::
-
-Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
-
-:::image type="content" source="media/history/comparing-branches.png" border="false" alt-text="Comparing branches.":::
+>[!TIP]
+>You can access the web portal from the Team Explorer **Home** view by choosing **Web Portal**.
+>
+>:::image type="content" source="media/review-history/visual-studio-2017/team-explorer/web-portal-link.png" border="true" alt-text="Screenshot showing the Web Portal link in the Home view of Team Explorer in Visual Studio 2017."::: 
 
 
 #### [Git Command Line](#tab/git-command-line)
