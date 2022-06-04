@@ -1,7 +1,7 @@
 ---
-title: Backlogs, boards, workflow states, and state categories in Azure Boards
+title: How workflow states categories are used in Azure Boards backlogs and boards
 titleSuffix: Azure Boards   
-description: Understand how Azure DevOps workflow states map to state categories and are used in Azure Boards backlogs and boards in Azure Boards
+description: Understand how workflow states map to workflow category states and are used in Azure Boards backlogs, boards, and Analytics in Azure Boards.
 ms.custom: seodec18   
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 04/01/2022
 ---
 
-# How to use workflow states and state categories in Azure Boards backlogs and boards
+# How workflow states categories are used in Azure Boards backlogs and boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

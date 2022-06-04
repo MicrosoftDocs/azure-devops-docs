@@ -1,6 +1,6 @@
 ---
 title: View and configure team velocity
-titleSuffix: Azure DevOps Services 
+titleSuffix: Azure DevOps 
 description: Learn how to calculate and track team velocity across sprints using the in-context Analytics report or velocity widget chart in Azure DevOps Services.
 ms.custom: dashboards   
 ms.technology: devops-analytics  
@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops' 
-ms.date: 04/04/2022
+ms.date: 06/03/2022
 ---
 
 
@@ -176,14 +176,15 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> [!div class="mx-imgBorder"]  
 	> ![Open Velocity Analytics](media/velocity/analytics-velocity-azure-devops.png)
 
-	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.  
-	- **Planned** - calculated based on the amount of work assigned to the sprint before the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
+	<a id="velocity-legend" />With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.  
+	- **Planned**: calculated based on the amount of work assigned to the sprint before the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
 		> [!TIP]   
 		> To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
-	- **Completed** - calculated based on the amount of work  assigned to the sprint before the start of the sprint and completed before the sprint end date.
-	- **Completed Late**  - calculated based on the amount of work assigned to the sprint before the start of the sprint but was completed after the end of the sprint.  
-	- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint before the start of the sprint and hasn't been set to completed. 
-
+	- **Completed**: calculated based on the amount of work assigned to the sprint and whose workflow **State** corresponds to the **Completed** category state, and completed on or before the sprint end date.  
+	- **Completed Late**: calculated based on the amount of work assigned to the sprint that is completed after the sprint end date. If you assign work items to a sprint, even one in the past, they will show up in this calculation once the workflow **State** corresponds to a *Completed* workflow category state.  
+	- **Incomplete**: Amount of work not completed, calculated based on the amount of work assigned to the sprint, and the workflow **State** corresponds to an *In Progress* workflow category state.  
+		> [!NOTE]   
+		> Items assigned to a *Proposed* or *Resolved* workflow state category aren't included in any of the calculations.  To learn more about workflow category states, see [How workflow states categories are used in Azure Boards backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
 1. To add the report to a dashboard, select the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
@@ -331,6 +332,7 @@ You configure your velocity widget for a single team. If you want to view the ve
    
 	![Example Velocity widget, 8 iterations](media/commerce-team-velocity-eight-iterations.png) 
 
+	For information on **Planned**, **Completed**, **Completed Late**, and **Incomplete**, see the [velocity legend earlier in the article](#velocity-legend). 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/velocity-activities.md)] 
