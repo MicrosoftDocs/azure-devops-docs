@@ -16,7 +16,7 @@ ms.date: 06/03/2022
 
 Git uses [commit metadata](commits.md#whats-in-a-commit) like parent links, author details, and timestamps to track the history of changes in a repo. You can review the Git history to find out when files changed, who changed them, and what changes were made.
 
-When people create and merge feature [branches](./create-branch.md) into a target branch using [pull requests](pull-requests.md), the development history of the target branch might not be a straight chronological line. So, when you review the history of changes to a file on the target branch, keep in mind that the order of commits is influenced by [merge strategy](pulling.md#update-branches-with-merge-or-rebase) and merge date, not just the original date of the changes. For example, the most recent commit on the `main` branch may contain a change that was made weeks ago in a feature branch that was only just merged into the `main` branch using a three-way merge.
+When people create and merge feature [branches](./create-branch.md) into a target branch using [pull requests](pull-requests.md), the development history of the target branch might not be a straight chronological line. So, when you review the history of changes to a file on the target branch, keep in mind that the order of commits is influenced by [merge strategy](pulling.md#update-branches-with-merge-or-rebase) and merge date, not just the original date of the changes. For example, the most recent commit on the `main` branch may introduce a change that was made weeks ago in a feature branch that was only just merged into the `main` branch using a three-way merge.
 
 In this article you learn how to:
 
@@ -66,14 +66,14 @@ Visual Studio lets you compare two versions of the same file in the same branch,
 
     The **Diff** tab shows new, deleted, or modified file lines.
 
-    :::image type="content" source="media/review-history/visual-studio-2019/common/commits-diff.png" border="true" alt-text="Screenshot of the commit diff view in Visual Studio 2019.":::
+    :::image type="content" source="media/review-history/visual-studio-2019/common/commits-diff.png" border="true" alt-text="Screenshot of the file diff view in Visual Studio 2019.":::
 
 
 #### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
 
 1. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear, showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
-    :::image type="content" source="media/history/vs-history-view.png" border="false" alt-text="View history in your repo for a file.":::     
+    :::image type="content" source="media/history/vs-history-view.png" border="false" alt-text="Screenshot of the commit history view in Visual Studio 2017.":::     
 
 1. Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
 
@@ -81,7 +81,7 @@ Visual Studio lets you compare two versions of the same file in the same branch,
 
 1. The diff view shows lines removed from the older commit and added in the new one.
 
-    :::image type="content" source="media/history/vs-diff-changes.png" border="false" alt-text="View diff changes in Visual Studio.":::
+    :::image type="content" source="media/history/vs-diff-changes.png" border="false" alt-text="Screenshot of the file diff view in Visual Studio 2017.":::
 
 
 #### [Git Command Line](#tab/git-command-line)
@@ -177,7 +177,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
 1. In the **Git History** tab, select a commit and choose **View Commit Details** from the commit's context menu to open the **Commit Details** view.
 
-    :::image type="content" source="media/review-history/visual-studio-2019/common/view-commit-details-option.png" border="true" alt-text="Screenshot of the View Commit History option in the commit context menu in the commit History view in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/common/view-commit-details-option-lrg.png":::
+    :::image type="content" source="media/review-history/visual-studio-2019/common/view-commit-details-option.png" border="true" alt-text="Screenshot of the View Commit Details option in the commit context menu in the commit History view in Visual Studio 2019." lightbox="media/review-history/visual-studio-2019/common/view-commit-details-option-lrg.png":::
 
 1. In the **Commit Details** view, select the file and choose **Open** from the file's context menu to open the previous version of the file in a new tab.
 
@@ -207,17 +207,17 @@ To retrieve a previous version of a file that exists in your Visual Studio proje
 Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
    You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
 
-   :::image type="content" source="media/history/vs-history-view.png" border="false" alt-text="View file versions in Visual Studio.":::   
+   :::image type="content" source="media/history/vs-history-view.png" border="false" alt-text="Screenshot of the commit history view in Visual Studio 2017.":::   
 
 To retrieve a previous version of a file that was deleted in a previous commit:
 
 1. Open the **Changes** view in Team Explorer and select **View History** from the **Actions** drop-down. 
 
-   :::image type="content" source="media/history/team-explorer-changes.png" border="false" alt-text="View changes."::: 
+   :::image type="content" source="media/history/team-explorer-changes.png" border="false" alt-text="Screenshot of the View History option in the file context menu in Solution Explorer in Visual Studio 2017.."::: 
 
 1. Right-click the commit containing the version of the file you want to restore and select **View Commit Details**. 
 
-   :::image type="content" source="media/history/vs-view-commit-details.png" border="false" alt-text="View commit details."::: 
+   :::image type="content" source="media/history/vs-view-commit-details.png" border="false" alt-text="Screenshot of the View Commit Details option in the commit context menu in the commit history view in Visual Studio 2017."::: 
 
 1. Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
 
