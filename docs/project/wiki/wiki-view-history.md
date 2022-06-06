@@ -41,7 +41,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
    ::: moniker-end
 
-3. Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. Choose **Preview** to see the content of the page of the specific revision.
+3. Similar to any git file revision, the revision details page provides a **Show diff side-by-side** view or the **Show diff inline** view. Choose **Preview** to see the content of the page of the specific revision.
 
    ![Two revisions of an article are compared side-by-side. The article is in Markdown, and is titled Welcome to the Fabrikam Fiber wiki.](media/wiki/wiki-revision-details-2.png)  
 
@@ -90,12 +90,12 @@ If you need to revert to an earlier revision for a page that you've published as
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-copy-commit-id.png)
 
-3. Open the **Code > Commits** page and paste the ID that you copied into the Commit ID box and choose :::image type="icon" source="../../media/icons/search-icon.png" border="false"::: Search.
+3. Open the **Repos > Commits** page and paste the ID that you copied into the Commit ID box and choose :::image type="icon" source="../../media/icons/search-icon.png" border="false"::: Search.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Paste the commit id for an earlier commit.](media/wiki/revert-publish-as-code-paste-commit-id.png)
 	
-4. From the commit page, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions**, and then choose **Revert**.  
+4. From the commit page, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions**, and then choose **Revert**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose revert menu option of an earlier commit](media/wiki/revert-publish-as-code-option.png)
