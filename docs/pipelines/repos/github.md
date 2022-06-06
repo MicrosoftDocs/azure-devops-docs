@@ -551,7 +551,7 @@ Statuses for PAT or OAuth GitHub connections are only sent at the run level. In 
 
 ### GitHub Checks
 
-For pipelines set up using the Azure Pipelines [GitHub app](#github-app-authentication)), the status is posted back in the form of GitHub Checks. GitHub Checks allow for sending detailed information about the pipeline status and test, code coverage, and errors. The GitHub Checks API can be found [here](https://developer.github.com/v3/checks/).
+For pipelines set up using the Azure Pipelines [GitHub app](#github-app-authentication), the status is posted back in the form of GitHub Checks. GitHub Checks allow for sending detailed information about the pipeline status and test, code coverage, and errors. The GitHub Checks API can be found [here](https://developer.github.com/v3/checks/).
 
 For every pipeline using the GitHub App, Checks are posted back for the overall run and each job in that run.
 
