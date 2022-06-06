@@ -56,7 +56,7 @@ To learn more, see [What is Analytics](what-is-analytics.md). It currently conta
 
 ## Azure DevOps Server, TFS, and SQL Server Reporting
 
-Since [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) was released in 2005, we've offered a reporting solution [based on a data warehouse and OLAP cube](/previous-versions/azure/devops/sql-reports/reporting-services-reports), coupled with [a SQL Server Reposrting Services server](/previous-versions/azure/devops/sql-reports/create-and-manage-reporting-services-reports) to host reports.
+Since [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) was released in 2005, we've offered a reporting solution [based on a data warehouse and OLAP cube](/previous-versions/azure/devops/report/sql-reports/reporting-services-reports), coupled with [a SQL Server Reposrting Services server](/previous-versions/azure/devops/report/sql-reports/create-and-manage-reporting-services-reports) to host reports.
 
 ![TFS Data warehouse architecture conceptual diagram](../sql-reports/media/datawarehouse-architecture.png)
 
