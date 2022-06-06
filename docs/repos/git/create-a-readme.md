@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 Your Git repo should have a readme file so that viewers know what your code does and how they can get started using it. 
 Your readme should speak to the following audiences:
 
-- Users that just want to run your code
+- Users that just want to run your code.
 - Developers that want to build and test your code. Developers are also users.
 - Contributors that want to submit changes to your code. Contributors are both developers and users.
 
