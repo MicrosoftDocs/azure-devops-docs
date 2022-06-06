@@ -68,50 +68,8 @@ When you set a variable as read only it can't be overwritten by downstream tasks
 
 ## Set a variable as secret
 
-When `issecret` is set to true, the value of the variable will be saved as secret and masked out from log.
+[!INCLUDE [set secret variable in UI](includes/secret-variables-logging.md)]
 
-# [Bash](#tab/bash)
-
-Set the secret variable `mySecretVal`.
-
-```yaml
-- bash: |
-    echo "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
-```
-
-Get the secret variable `mySecretVal`.
-
-```yaml
-- bash: |
-    echo "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
-- bash: |
-    echo $(mySecretVal)
-```
-
-Secret variable output in bash.
-
-:::image type="content" source="media/task-var-bash.png" alt-text="Output of bash variable.":::
-# [PowerShell](#tab/powershell)
-
-Set the secret variable `mySecretVal`.
-```yaml
-- powershell: |
-    Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
-```
-
-Get the secret variable `mySecretVal`.
-```yaml
-- powershell: |
-    Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
-- powershell: |
-    Write-Host $(mySecretVal)
-```
-
-Output of PowerShell variable. 
-
-:::image type="content" source="media/task-var-powershell.png" alt-text="Output of secret PowerShell variable.":::
-
----
 
 ## Levels of output variables
 
