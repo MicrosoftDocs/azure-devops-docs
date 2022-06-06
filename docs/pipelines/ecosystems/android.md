@@ -207,7 +207,7 @@ task to release a new Android app version to the Google Play store.
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayRelease@2
+- task: GooglePlayRelease@4
   inputs:
     apkFile: '**/*.apk'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
@@ -224,7 +224,7 @@ task to promote a previously released Android application update from one track 
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayPromote@2
+- task: GooglePlayPromote@3
   inputs:
     packageName: 'com.yourCompany.appPackageName'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
@@ -242,13 +242,28 @@ task to increase the rollout percentage of an application that was previously re
 ::: moniker range="> tfs-2018"
 
 ```yaml
-- task: GooglePlayIncreaseRollout@1
+- task: GooglePlayIncreaseRollout@2
   inputs:
     packageName: 'com.yourCompany.appPackageName'
     serviceEndpoint: 'yourGooglePlayServiceConnectionName'
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
+#### Status update
+
+Add the [Google Play Status Update](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---status-update)
+task to update the rollout status for the application that was previously released to the `rollout` track.
+
+::: moniker range="> tfs-2018"
+
+```yaml
+  - task: GooglePlayStatusUpdate@2
+    inputs:
+      authType: ServiceEndpoint
+      packageName: 'com.yourCompany.appPackageName'
+      serviceEndpoint: 'yourGooglePlayServiceConnectionName'
+      status: 'inProgress' # draft | inProgress | halted | completed
+```
 
 ## Related extensions
 
