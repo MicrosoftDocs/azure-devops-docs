@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 04/02/2022  
+ms.date: 06/06/2022  
 ---
 
 # View wiki page history and revert changes
