@@ -170,7 +170,7 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
     :::image type="content" source="../media/project-setup-maven.png" alt-text="A screenshot showing how to connect to a feed with Maven projects.":::
 
-1. Add the following snippet to the *<repositories>* and *<distributionManagement>* sections in your pom.xml:
+1. Add the following snippet to the `<repositories>` and `<distributionManagement>` sections in your pom.xml:
 
     ```command
     <repository>
@@ -185,7 +185,7 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </repository>
     ```
 
-1. Add a *<server>* to your settings.xml as follows:
+1. Add a `<server>` to your settings.xml as follows:
 
     ```command
     <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -202,7 +202,7 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </settings>
     ```
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste it into the <password> tag of your settings.xml file.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste it into the `<password>` tag of your settings.xml file.
 
 - - -
 
