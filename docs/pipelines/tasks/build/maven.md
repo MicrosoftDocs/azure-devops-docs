@@ -182,7 +182,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### I have a multimodule project, but my build is failing. What I should check?
-Please check, that you have specify `#codeCoverageClassFilesDirectories` and `#codeCoverageSourceDirectories` as a task input. These two parameters are optional only for a single module project.
+Please check, that you have specify `#codeCoverageClassFilesDirectories` and `#codeCoverageSourceDirectories` as a task input. These two parameters are optional only for a single module project but are required for multi-module projects.
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]
 
