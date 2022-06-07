@@ -438,3 +438,17 @@ Host ssh.dev.azure.com
 ```
 
 Replace `ssh.dev.azure.com` with the correct host name if you use Azure DevOps Server.
+   
+### Q: What do I do if I'm getting an `Unable to negotiate with x.x.x.x port 22: no matching host key type found. Their offer: ssh-rsa`?
+
+**A:** Some Linux distributions, such as Fedora Linux, have crypto policies that require stronger SSH signature algorithms than Azure DevOps supports (as of January 2021). There's an open [feature request](https://developercommunity.visualstudio.com/idea/365980/support-non-rsa-keys-for-ssh-authentication.html) to add this support.
+
+You can work around the issue by adding the following code to your SSH configuration (`~/.ssh/config`):
+
+```sshconfig
+Host ssh.dev.azure.com
+  HostkeyAlgorithms +ssh-rsa
+  PubkeyAcceptedAlgorithms +ssh-rsa
+```
+
+Replace `ssh.dev.azure.com` with the correct host name if you use Azure DevOps Server.
