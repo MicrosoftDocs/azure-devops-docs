@@ -202,7 +202,46 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
     </settings>
     ```
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste your personal access token into the `<password>` tag of your settings.xml file.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste your personal access token into the `<password>` tag in your settings.xml file.
+
+#### [Gradle](#tab/gradle/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **Gradle**.
+
+    :::image type="content" source="../media/project-setup-gradle.png" alt-text="A screenshot showing how to connect to a feed with Gradle projects.":::
+
+1. Add the following snippet to the *repositories* and *publishing* sections in your build.gradle file:
+
+    ```command
+    maven {
+        url 'https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1'
+        name '[FEED-NAME]'
+        authentication {
+            basic(BasicAuthentication)
+        }
+    }
+    ```
+
+1. Add a `<server>` to your settings.xml file:
+
+    ```command
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <servers>
+        <server>
+          <id>[FEED-NAME]</id>
+          <username>[ORGANIZATION-NAME]</username>
+          <password>[PERSONAL_ACCESS_TOKEN]</password>
+        </server>
+      </servers>
+    </settings>
+    ```
+
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes. Paste your personal access token into the `<password>` tag in your settings.xml file.
 
 - - -
 
