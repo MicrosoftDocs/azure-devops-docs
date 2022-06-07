@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 03/04/2022
 ---
 
-# Syntax guidance for basic Markdown usage.
+# Syntax guidance for basic Markdown usage
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 

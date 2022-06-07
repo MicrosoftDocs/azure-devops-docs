@@ -3,7 +3,7 @@ title: Follow wiki page, get notifications
 titleSuffix: Azure DevOps 
 description: Learn how to follow wiki pages and get notifications in Azure DevOps 
 ms.technology: devops-collab
-ms.custom: devdivchpfy22
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:
 ms.author: chcomley

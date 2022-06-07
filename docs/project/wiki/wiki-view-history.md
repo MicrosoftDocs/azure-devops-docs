@@ -3,7 +3,7 @@ title: Revert changes and find wiki page history
 titleSuffix: Azure DevOps
 description: Add and update pages offline for your  built-in team project wiki 
 ms.technology: devops-collab
-ms.custom: devdivchpfy22
+ms.custom: wiki, devdivchpfy22
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
