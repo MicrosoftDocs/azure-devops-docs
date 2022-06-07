@@ -162,13 +162,55 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 > [!TIP]
 > If you already have a .pypirc file, remove the [pypi] section if your file contains credentials.
 
+#### [Maven](#tab/maven/)
+
+1. Select **Artifacts**, and then select your feed from the dropdown list.
+
+1. Select **Connect to feed**, and then select **Maven**.
+
+    :::image type="content" source="../media/project-setup-maven.png" alt-text="A screenshot showing how to connect to a feed with Maven projects.":::
+
+1. Add the following snippet to the *<repositories>* and *<distributionManagement>* sections in your pom.xml:
+
+    ```command
+    <repository>
+      <id>[FEED-NAME]</id>
+      <url>https://pkgs.dev.azure.com/[ORGANIZATION-NAME]/_packaging/[FEED-NAME]/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    ```
+
+1. Add a *<server>* to your settings.xml as follows:
+
+    ```command
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <servers>
+        <server>
+          <id>[FEED-NAME]</id>
+          <username>[ORGANIZATION-NAME]</username>
+          <password>[PERSONAL_ACCESS_TOKEN]</password>
+        </server>
+      </servers>
+    </settings>
+    ```
+
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scopes and paste it into the <password> tag of your settings.xml file.
+
 - - -
 
 ## Restore packages
 
 Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
 
-We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream. 
+We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream.
 
 # [npm](#tab/npmrestore)
 
