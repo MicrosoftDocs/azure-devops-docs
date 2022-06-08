@@ -6,26 +6,22 @@ ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/12/2020
-monikerRange: 'azure-devops'
+ms.date: 06/02/2022
+monikerRange: '> tfs-2018'
 ---
 
 # Download Build Artifacts task
 
-[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2018](../../../includes/version-gt-eq-2018.md)]
 
 > [!NOTE]
-> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](../../artifacts/pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
+> We recommend upgrading from **build artifacts** to **[Pipeline Artifacts](../../artifacts/pipeline-artifacts.md)** for faster performance.
 
 Use this task to download build artifacts.
-
-::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/DownloadBuildArtifactsV0.md)]
-
-::: moniker-end
 
 ## Arguments
 

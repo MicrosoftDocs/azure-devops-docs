@@ -125,6 +125,9 @@
         - name: Set variables in scripts
           href: process/set-variables-scripts.md
           displayName: variables, task, setname, scripts
+        - name: Set secret variables
+          href: process/set-secret-variables.md
+          displayName: secret variables
         - name: Use runtime parameters
           href: process/runtime-parameters.md
           displayName: parameters in pipelines, conditionals, loop, data types
@@ -160,6 +163,9 @@
         - name: Job access tokens
           href: process/access-tokens.md
           displayName: job access token, identity, build service account, project build service account, collection build service account, access token, build service
+        - name: Information pipeline runs
+          href: process/information-run.md
+          displayName: information run  
     - name: Pipeline reports
       items:
         - name: View pipeline reports

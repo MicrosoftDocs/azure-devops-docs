@@ -1,3 +1,7 @@
+- name: Migrate to Analytics from SQL Reporting Services
+  href: migration-guide.md  
+- name: Get Analytics insights comparable to SQL Reporting Services
+  href: analytics-insights-comparable-sql-reports.md
 - name: Reporting Services Reports
   href: /previous-versions/azure/devops/report/sql-reports/reporting-services-reports
 - name: Create status and trend reports from a work item query
@@ -96,55 +100,59 @@
     href: /previous-versions/azure/devops/report/sql-reports/address-inaccuracies-published-for-summary-values
   - name: Resolve schema conflicts in the data warehouse
     href: /previous-versions/azure/devops/report/admin/resolve-schema-conflicts
-- name: Reference, Reportable fields
+- name: Reference
   items:
-  - name: Add or modify work item fields 
-    href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting 
-  - name: Reportable fields reference 
-    href: /previous-versions/azure/devops/reference/xml/reportable-fields-reference 
-- name: Reference, Data warehouse tables
-  items:
+  - name: Reportable fields
+    items:
+    - name: Add or modify work item fields 
+      href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting 
+    - name: Reportable fields reference 
+      href: /previous-versions/azure/devops/reference/xml/reportable-fields-reference  
+    - name: Change reporting attributes
+      href: /previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting  
   - name: Data warehouse tables
-    href: /previous-versions/azure/devops/report/sql-reports/table-reference-relational-warehouse-database
-  - name: Build Changeset tables
-    href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-changeset
-  - name: Build Coverage tables
-    href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-coverage
-  - name: Build Details tables
-    href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-details
-  - name: Build Project tables
-    href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-project
-  - name: Code Churn tables
-    href: /previous-versions/azure/devops/report/sql-reports/table-reference-code-churn
-  - name: Current Work Item tables
-    href: /previous-versions/azure/devops/report/sql-reports/table-reference-current-work-items
-  - name: Run Coverage tables
-    href: /previous-versions/azure/devops/report/sql-reports/run-coverage-tables
-  - name: Test Result tables
-    href: /previous-versions/azure/devops/report/sql-reports/test-result-tables
-  - name: Work Item Category tables
-    href: /previous-versions/azure/devops/report/sql-reports/work-item-category-tables
-  - name: Work Item Changeset tables
-    href: /previous-versions/azure/devops/report/sql-reports/work-item-changeset-tables
-  - name: Work Item History tables
-    href: /previous-versions/azure/devops/report/sql-reports/work-item-history-tables
-  - name: Work Item Link History tables
-    href: /previous-versions/azure/devops/report/sql-reports/work-item-link-history-tables
-  - name: Work Item Test Result tables
-    href: /previous-versions/azure/devops/report/sql-reports/work-item-test-result-tables
-- name: Reference, Cube perspectives and measure groups
-  items:
+    items:
+    - name: Data warehouse tables
+      href: /previous-versions/azure/devops/report/sql-reports/table-reference-relational-warehouse-database
+    - name: Build Changeset tables
+      href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-changeset
+    - name: Build Coverage tables
+      href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-coverage
+    - name: Build Details tables
+      href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-details
+    - name: Build Project tables
+      href: /previous-versions/azure/devops/report/sql-reports/table-reference-build-project
+    - name: Code Churn tables
+      href: /previous-versions/azure/devops/report/sql-reports/table-reference-code-churn
+    - name: Current Work Item tables
+      href: /previous-versions/azure/devops/report/sql-reports/table-reference-current-work-items
+    - name: Run Coverage tables
+      href: /previous-versions/azure/devops/report/sql-reports/run-coverage-tables
+    - name: Test Result tables
+      href: /previous-versions/azure/devops/report/sql-reports/test-result-tables
+    - name: Work Item Category tables
+      href: /previous-versions/azure/devops/report/sql-reports/work-item-category-tables
+    - name: Work Item Changeset tables
+      href: /previous-versions/azure/devops/report/sql-reports/work-item-changeset-tables
+    - name: Work Item History tables
+      href: /previous-versions/azure/devops/report/sql-reports/work-item-history-tables
+    - name: Work Item Link History tables
+      href: /previous-versions/azure/devops/report/sql-reports/work-item-link-history-tables
+    - name: Work Item Test Result tables
+      href: /previous-versions/azure/devops/report/sql-reports/work-item-test-result-tables
   - name: Cube perspectives and measure groups
-    href: /previous-versions/azure/devops/report/sql-reports/perspective-measure-groups-cube
-  - name: Shared dimensions
-    href: /previous-versions/azure/devops/report/sql-reports/shared-dimensions-in-the-analysis-services-cube
-  - name: Build details and coverage
-    href: /previous-versions/azure/devops/report/sql-reports/perspective-build-analyze-report-build-details-coverage
-  - name: Code churn and code coverage
-    href: /previous-versions/azure/devops/report/sql-reports/perspective-code-analyze-report-code-churn-coverage
-  - name: Test results
-    href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-test-results
-  - name: Work items and test case data
-    href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-work
+    items:
+    - name: Cube perspectives and measure groups
+      href: /previous-versions/azure/devops/report/sql-reports/perspective-measure-groups-cube
+    - name: Shared dimensions
+      href: /previous-versions/azure/devops/report/sql-reports/shared-dimensions-in-the-analysis-services-cube
+    - name: Build details and coverage
+      href: /previous-versions/azure/devops/report/sql-reports/perspective-build-analyze-report-build-details-coverage
+    - name: Code churn and code coverage
+      href: /previous-versions/azure/devops/report/sql-reports/perspective-code-analyze-report-code-churn-coverage
+    - name: Test results
+      href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-test-results
+    - name: Work items and test case data
+      href: /previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-work
 
 
