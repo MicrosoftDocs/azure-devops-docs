@@ -94,7 +94,7 @@ git checkout <file>
 
 For example, `git checkout README.md` discards uncommitted changes to the `README.md` file.
 
-Git `checkout` also supports reverting a file to any committed version, when you specify a commit ID or a partial commit ID that uniquely identifies the commit:
+Git `checkout` also supports reverting a file to a previously committed version when you specify a partial or full commit ID that uniquely identifies a commit:
 
 ```cmd
 git checkout <commit ID> <file>
@@ -246,9 +246,9 @@ You can use the Git `log` command to get the ID of a commit. The `--oneline` fla
 git log --oneline <branch>
 ```
 
-The `log` command lists most recent commits first. Each commit ID is a partial SHA-1 hash that uniquely identifies the commit. For example, `git log --oneline main` might output:
+The Git `log` command lists the most recent commits first, starting with the commit at the tip of the specified branch (the current branch if unspecified) and then iterates backward through ancestor commits. Each commit ID in the abbreviated output is a partial SHA-1 checksum that uniquely identifies the commit. For example, `git log --oneline main` might output:
 
-```
+```output
 e745d06 (HEAD -> main) Add a test initialization class
 31da50b Add network switch test
 0c14391 Add readme file

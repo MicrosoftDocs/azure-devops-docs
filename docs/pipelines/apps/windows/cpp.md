@@ -28,11 +28,13 @@ This guidance explains how to automatically build C++ projects for Windows.
 
 This example shows how to build a C++ project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
-```text
-https://github.com/adventworks/cpp-sample
+```
+https://github.com/MicrosoftDocs/pipelines-cpp
+
 ```
 
 ::: moniker range="< azure-devops"
+
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 
@@ -52,13 +54,13 @@ It's often required to build your app in multiple configurations. The following 
 
    * `BuildPlatform` = `x86, x64`
 
-2. Select **Tasks** and click on the **agent job**. From the **Execution plan** section, select **Multi-configuration** to change the options for the job:
+1. Select **Tasks** and click on the **agent job**. From the **Execution plan** section, select **Multi-configuration** to change the options for the job:
 
    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
    * Specify **Maximum number of agents**
 
-3. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
+1. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
 
 ## Copy output
 

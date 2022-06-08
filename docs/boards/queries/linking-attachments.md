@@ -352,7 +352,8 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. 
    > [!NOTE]
-   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause. 
+   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
+     
    Reference Name=System.Parent, Data type=Integer
    :::column-end:::
    :::column span="1":::

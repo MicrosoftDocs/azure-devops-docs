@@ -9,7 +9,7 @@ ms.technology: devops-cicd-tasks
 
 ```YAML
 # Authenticate nuget.exe, dotnet, and MSBuild with Azure Artifacts and optionally other repositories
-- task: NuGetAuthenticate@0
+- task: NuGetAuthenticate@1
   #inputs:
     #nuGetServiceConnections: MyOtherOrganizationFeed, MyExternalPackageRepository # Optional
     #forceReinstallCredentialProvider: false # Optional

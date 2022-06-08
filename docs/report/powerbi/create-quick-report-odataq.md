@@ -3,7 +3,6 @@ title: Create a Power BI report with an OData Query
 titleSuffix: Azure DevOps
 description: Learn how to create a trend report using an OData Query.
 ms.technology: devops-analytics
-ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

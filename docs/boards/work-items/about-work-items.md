@@ -68,7 +68,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 ## Work item types (WITs)
 
-To track different types of work, different WITs are defined. The work item types available are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images. The items in your backlog might be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four types are similar: they describe the customer value of the work and the work to do.    
+To track different types of work, different WITs are defined. The work item types available are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images. The items in your backlog might be called user stories (agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four types are similar: they describe the customer value of the work and the work to do.    
 
 [!INCLUDE [temp](../includes/work-item-types.md)]
 
