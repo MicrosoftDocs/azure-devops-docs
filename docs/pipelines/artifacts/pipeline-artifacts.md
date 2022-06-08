@@ -278,7 +278,7 @@ Not available.
 
 ## Artifacts in release and deployment jobs
 
-Artifacts are only downloaded automatically in deployment jobs. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
+Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `System.ArtifactsDirectory`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
 In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
 
 ```yaml
@@ -288,36 +288,11 @@ steps:
 
 ## Use Artifacts across stages
 
-If you want to be able to access your artifact across different stages in your pipeline, you can use output variables to pass it to the next stage in your YAML. See [Dependency expressions](../process/expressions.md#dependencies) for more details.
+If you want to be able to access your artifact across different stages in your pipeline, you can now publish your artifact in one stage and then download it in the next stage leveraging dependencies. See [Stage to stage dependencies](../process/expressions.md#dependencies) for more details.
 
-```YAML
-trigger: none
-pool:
-  vmImage: 'ubuntu-latest'
-stages:
-- stage: A
-  jobs:
-  - job: A1
-    steps:
-     - script: echo ##vso[task.setvariable variable=shouldrun;isOutput=true]true
-       name: printvar
-- stage: B
-  dependsOn: A
-  jobs:
-  - job: B1
-    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
-    steps:
-    - script: echo hello from Job B1
-  - job: B2
-    condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
-    steps:
-     - script: echo hello from Job B2
-```
 ### Example
 
 In the following example, we will copy and publish a script folder from our repo to the `$(Build.ArtifactStagingDirectory)`. In the second stage, we will download and run our script.
-
-:::image type="content" source="media/artifacts-across-stages.png " alt-text="Screenshot showing the PowerShell task output":::
 
 ```YAML
 trigger:
@@ -360,17 +335,17 @@ stages:
         filePath: '$(Pipeline.Workspace)\drop\test.ps1'
 ```
 
+:::image type="content" source="media/artifacts-across-stages.png " alt-text="Screenshot showing the PowerShell task output":::
+
 ## Migrate from build artifacts
 
 Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) can still be downloaded using [Download Build Artifacts](../tasks/utility/download-build-artifacts.md), but we recommend using the latest [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task instead.
 
 When migrating from build artifacts to pipeline artifacts:
 
-1. For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, you can just publish directly from the path containing the files.
+1. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
-2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
-
-3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
+2. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
 
 ## FAQ
 
