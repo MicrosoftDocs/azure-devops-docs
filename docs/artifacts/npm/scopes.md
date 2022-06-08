@@ -4,7 +4,7 @@ description: How to use npm scopes in Azure Artifacts
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 05/25/2022
+ms.date: 06/08/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -25,6 +25,17 @@ With Azure Artifacts, you can publish and download both scoped and non-scoped pa
 
 In your .npmrc file, replace `registry=<YOUR_SOURCE_URL>` with `@SCOPE_NAME:registry=<YOUR_SOURCE_URL>`. Make sure you add the scope and package names to your *package.json* file: `{ "name": "@SCOPE_NAME/PACKAGE_NAME" }`.
 
+```npmrc
+@[SCOPE_NAME]:registry=https://pkgs.dev.azure.com/[ORGANIZATION_NAME]/_packaging/[FEED_NAME]/npm/registry/
+    
+always-auth=true
+```
+
+```package.json
+{
+"name": "[@SCOPE_NAME]/[PACKAGE_NAME]" 
+}
+```
 ## Upstream sources vs scopes
 
 Upstream sources give you the most flexibility to use a combination of scoped and non-scoped packages in your feed, as well as scoped and non-scoped packages from public registries such as npmjs.com.
