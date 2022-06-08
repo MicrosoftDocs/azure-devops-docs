@@ -1,6 +1,7 @@
 ---
 title: Build C++ Windows apps
 ms.custom: seodec18, devdivchpfy22
+ms.date: 06/08/2022
 description: Automatically build your C++ Windows app with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.topic: quickstart
@@ -15,12 +16,12 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-This guidance explains how to automatically build C++ projects for Windows.
+This article explains how to build C++ projects on Windows automatically.
 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> This guidance applies to TFS version 2017.3 and newer.
+> This article applies to TFS version 2017.3 and newer.
 
 ::: moniker-end
 
@@ -30,7 +31,6 @@ This example shows how to build a C++ project. To start, import (into Azure Repo
 
 ```
 https://github.com/MicrosoftDocs/pipelines-cpp
-
 ```
 
 ::: moniker range="< azure-devops"
@@ -64,8 +64,8 @@ It's often required to build your app in multiple configurations. The following 
 
 ## Copy output
 
-To copy the results of the build to Azure Pipelines, perform these steps:
+To copy the results of the build to Azure Pipelines select the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
 
-1. Select the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
-
-   * **Contents:** `**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)`
+```
+   contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)' 
+```
