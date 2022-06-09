@@ -1,15 +1,15 @@
 ---
 title: Manage permissions for READMEs and wiki pages
 titleSuffix: Azure DevOps
-description: Learn how to set permissions to grant or secure access to README files and you team project built-in wiki.
+description: Learn how to set permissions to grant or secure access to README files and your team project built-in wiki.
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.date: 06/08/2021
+ms.date: 06/08/2022
 monikerRange: '>= tfs-2017'
 ---
 
