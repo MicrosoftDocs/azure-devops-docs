@@ -143,10 +143,6 @@ Control who can create, view, use, and manage the environments with user permiss
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 
-> [!NOTE]
->
-> - If you create an environment through the UI, only the creator is granted the **Administrator** role. You should use the UI to create protected environments like for a production environment.
-
 ### Pipeline permissions
 
 Use pipeline permissions to authorize all or selected pipelines for deployment to the environment.
