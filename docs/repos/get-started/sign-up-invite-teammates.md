@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Sign up for free and invite others to collaborate on your project
 
-[!INCLUDE [acquisition-intro-devops](../../includes/acquisition-intro-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 <a name="MicrosoftAccount"></a>
 

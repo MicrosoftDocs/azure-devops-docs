@@ -5,28 +5,28 @@ ms.topic: quickstart
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/28/2019
+ms.date: 03/03/2022
 monikerRange: 'azure-devops'
 ---
 # Deploy to Kubernetes
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Azure Pipelines can be used to deploy to Kubernetes clusters offered by multiple cloud providers. This document contains the concepts associated with setting up deployments for any Kubernetes cluster.
 
-While it is possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the KubernetesManifest task and Kubernetes service connection can be used to do this in a simpler and more secure way. 
+While it's possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the [KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) and [Kubernetes service connection](../../library/service-endpoints.md) are the recommended approach. 
 
 ## KubernetesManifest task
 
-[KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) has the added benefits of being able to check for object stability before marking a task as success/failure, perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or kustomization.yaml or Docker compose files, and aid in deployment strategy rollouts.
+The [KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) has the added benefits of being able to check for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or kustomization.yaml or Docker compose files, and aid in deployment strategy roll outs.
 
 ## Kubernetes resource in environments
 
-[Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) provides a secure way of specifying the credential required to connect to a Kubernetes cluster for performing deployments. 
+The [Kubernetes resource](../../process/environments-kubernetes.md) in [environments](../../process/environments.md) provides a secure way of specifying the credential required to connect to a Kubernetes cluster for performing deployments. 
 
 ### Resource creation
 
-In the **Azure Kubernetes Service** provider option, once the subscription, cluster and namespace inputs are provided, in addition to fetching and securely storing the required credentials, for an RBAC enabled cluster [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects are created such that the ServiceAccount is able to perform actions only on the chosen namespace.
+In the **Azure Kubernetes Service** provider option, once the subscription, cluster and namespace inputs are provided, in addition to fetching and securely storing the required credentials, for an RBAC-enabled cluster [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects are created such that the ServiceAccount is able to perform actions only on the chosen namespace.
 
 The **Generic provider** (reusing existing ServiceAccount) option can be used to configure a connection to any cloud provider's cluster (AKS/EKS/GKE/OpenShift/etc.).
 
@@ -76,7 +76,7 @@ jobs:
               bar-acr-secret
 ```
 
-Note that to allow image pull from private registries, prior to the `deploy` action, the `createSecret` action is used along with instances of [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to create imagePullSecrets that are subsequently referenced in the step corresponding to `deploy` action.
+To allow image pull from private registries, before the `deploy` action, the `createSecret` action is used along with instances of [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to create imagePullSecrets that are later referenced in the step corresponding to `deploy` action.
 
 > [!TIP]
 > - If setting up an end-to-end CI-CD pipeline from scratch for a repository containing a Dockerfile, checkout the [Deploy to Azure Kubernetes template](aks-template.md), which constructs an end-to-end YAML pipeline along with creation of an [environment](../../process/environments.md) and [Kubernetes resource](../../process/environments-kubernetes.md) to help visualize these deployments.

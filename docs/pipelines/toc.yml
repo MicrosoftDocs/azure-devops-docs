@@ -84,6 +84,8 @@
           displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
         - name: Add a custom task extension
           href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+        - name: Upload tasks to project collection
+          href: ../extend/develop/upload-tasks.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Jobs & stages
       items:
         - name: Specify jobs in your pipeline
@@ -123,6 +125,9 @@
         - name: Set variables in scripts
           href: process/set-variables-scripts.md
           displayName: variables, task, setname, scripts
+        - name: Set secret variables
+          href: process/set-secret-variables.md
+          displayName: secret variables
         - name: Use runtime parameters
           href: process/runtime-parameters.md
           displayName: parameters in pipelines, conditionals, loop, data types
@@ -158,6 +163,9 @@
         - name: Job access tokens
           href: process/access-tokens.md
           displayName: job access token, identity, build service account, project build service account, collection build service account, access token, build service
+        - name: Information pipeline runs
+          href: process/information-run.md
+          displayName: information run  
     - name: Pipeline reports
       items:
         - name: View pipeline reports
@@ -165,7 +173,7 @@
         - name: Add widgets to a dashboard
           href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
         - name: Test Results Trend (Advanced)
-          href: ../report/dashboards/analytics-widgets.md?toc=%2Fazure%2Fdevops%2Fpipelines%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fpipelines%2Fbreadcrumb%2Ftoc.json&view=azure-devops#test-results-trend-advanced
+          href: ../report/dashboards/analytics-widgets.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json#test-results-trend-advanced
     - name: Manage pipelines with Azure CLI
       href: get-started/manage-pipelines-with-azure-cli.md
     - name: Clone or import a pipeline
@@ -381,16 +389,13 @@
       items:
         - name: App Service
           href: targets/webapp.md
-        - name: Custom containers with Azure App Service
-          href: targets/webapp-on-container-linux.md
-        - name: Visual Studio Code Deploy to Azure extension
-          href: targets/deploy-to-azure-vscode.md
-        - name: Azure Web App (Classic)
-          href: apps/cd/deploy-webdeploy-webapps.md
-          displayName: web app, webdeploy
-        - name: Azure Web App for Containers (Classic)
+        - name: Azure Web App for Containers
           href: apps/cd/deploy-docker-webapp.md
           displayName: containers, docker, azure web app
+    - name: Azure Functions
+      items:
+        - name: Azure Functions
+          href: /azure/azure-functions/functions-how-to-azure-devops
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
@@ -431,15 +436,12 @@
     - name: Azure Kubernetes Service
       items:
       - name: Build and deploy to Azure Kubernetes Service
-        href: ecosystems/kubernetes/aks-template.md
-      - name: Deploy a Docker container app
-        href: apps/cd/deploy-aks.md
-        displayName: kubernetes, classic release
+        href: /azure/aks/devops-pipeline
       - name: Deploy to AKS with Jenkins
         href: release/integrate-jenkins-pipelines-aks.md
         displayName: cluster, Jenkins, Maven, Docker
     - name: Azure Policy Compliance (Classic)
-      href: policies/azure-policy.md
+      href: /azure/governance/policy/tutorials/policy-devops-pipelines
       displayName: policy, compliance
 - name: Deploy apps using containers
   items:
@@ -471,48 +473,45 @@
           href: ecosystems/kubernetes/canary-demo.md
 - name: Consume & publish artifacts
   items:
-    - name: About artifacts
+    - name: Artifacts in Azure Pipelines
       href: artifacts/artifacts-overview.md
       displayName: artifacts, artifacts overview
-    - name: Publish & download artifacts
+    - name: Publish & download pipeline artifacts
       href: artifacts/pipeline-artifacts.md
       displayName: download artifacts, publish artifacts, packages
     - name: Build artifacts
       href: artifacts/build-artifacts.md
       displayName: build, artifacts
-    - name: Releases in Azure Pipelines
+    - name: Release pipelines
       href: release/releases.md
       displayName: release artifacts, deployment artifacts
     - name: Release artifacts and artifact sources
       href: release/artifacts.md
       displayName: artifacts, source, release artifacts
-    - name: Install Maven Artifacts
-      href: artifacts/pull-package-gradle.md
-      displayName: Install maven, maven, package
-    - name: Publish Maven Artifacts
-      href: artifacts/publish-package-gradle.md
-      displayName: gradle, maven artifacts, maven feed
-    - name: npm
-      href: artifacts/npm.md
-      displayName: npm, package
     - name: NuGet
       href: artifacts/nuget.md
       displayName: nuget, package
+    - name: npm
+      href: artifacts/npm.md
+      displayName: npm, package
+    - name: Maven
+      href: artifacts/pull-package-gradle.md
+      displayName: maven, package
     - name: Python
       href: artifacts/pypi.md
       displayName: python, package
-    - name: Symbols
-      href: artifacts/symbols.md
-      displayName: symbols, debugging, debugger
     - name: Universal Packages
       href: artifacts/universal-packages.md
       displayName: package, universal
+    - name: Symbols
+      href: artifacts/symbols.md
+      displayName: symbols, debugging, debugger
     - name: Restore NuGet packages
       href: packages/nuget-restore.md
       displayName: nuget, package, restore
-    - name: Restore & publish NuGet packages (Jenkins)
+    - name: Publish NuGet packages with Jenkins
       href: packages/jenkins.md
-      displayName: nuget, package, restore, publish, jenkins
+      displayName: nuget, package, publish, jenkins
 - name: Create & use resources
   items:
     - name: About resources
@@ -546,7 +545,7 @@
     - name: About agents & agent pools
       href: agents/agents.md
       displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
-    - name: Add & manage agent pools
+    - name: Create & manage agent pools
       href: agents/pools-queues.md
       displayName: queue, default, hosted, maintenance
     - name: Historical graph for agent pools
@@ -559,8 +558,6 @@
       href: agents/v2-osx.md
     - name: Self-hosted Windows agents
       href: agents/v2-windows.md
-    - name: Windows agents (TFS 2015)
-      href: agents/v1-windows.md
     - name: Scale set agents
       href: agents/scale-set-agents.md
       displayName: byos, elastic agents, VMSS, autoscale
@@ -630,6 +627,8 @@
         - name: Other security considerations
           href: security/misc.md
           displayName: PATH, containers, control tasks, auditing
+    - name: Download release permissions report
+      href: ../organizations/security/download-permissions-report-release.md
 - name: Integrate with 3rd party software
   items:
   - name: Microsoft Teams
@@ -712,6 +711,8 @@
           href: tasks/utility/archive-files.md
         - name: Azure Network Load Balancer
           href: tasks/utility/azure-nlb-management.md
+        - name: Azure Static Web App
+          href: tasks/utility/azure-static-web-app.md
         - name: Bash
           href: tasks/utility/bash.md
         - name: Batch script
@@ -794,6 +795,8 @@
       items:
         - name: App Center Test
           href: tasks/test/app-center-test.md
+        - name: Azure Load Testing
+          href: tasks/test/azure-load-testing.md
         - name: Cloud-based Apache JMeter Load Test
           href: tasks/test/run-jmeter-load-test.md
         - name: Cloud-based Load Test
@@ -843,13 +846,13 @@
         - name: Previous versions
           items:
             - name: NuGet Installer 0.*
-              href: tasks/package/prev-versions/nuget-installer-0.md
+              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
             - name: NuGet Restore 1.*
               href: tasks/package/nuget.md
             - name: NuGet Packager 0.*
-              href: tasks/package/prev-versions/nuget-packager-0.md
+              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0?view=tfs-2017&preserve-view=true
             - name: NuGet Publisher 0.*
-              href: tasks/package/prev-versions/nuget-publisher-0.md
+              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-publisher-0?view=tfs-2017&preserve-view=true
             - name: NuGet Command 0.*
               href: tasks/package/nuget.md
             - name: Pip Authenticate 0.*
@@ -973,7 +976,7 @@
 - name: Reference
   items:
     - name: YAML schema
-      href: yaml-schema.md
+      href: /azure/devops/pipelines/yaml-schema/
       displayName: pipeline structure, pipeline, stage, job, steps, variables, templates, resources, triggers, ci trigger, push trigger, pr trigger, comment trigger, pool, server, script, bash, pwsh, powershell, checkout, task
     - name: Expressions
       href: process/expressions.md

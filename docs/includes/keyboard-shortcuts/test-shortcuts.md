@@ -13,7 +13,7 @@ You can use the following keyboard shortcuts when working in **Test Plans** or *
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/test-shortcuts.png" alt="Test shortcuts"/></td>
+<td><img src="../../media/keyboard-shortcuts/test-shortcuts.png" alt="Test shortcuts"/></td>
 <td>
 <strong>Test</strong><br/><br/>
 &nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open test plans<br/>
@@ -21,7 +21,7 @@ You can use the following keyboard shortcuts when working in **Test Plans** or *
 &nbsp;&nbsp;<strong>r</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open runs<br/><br/>&nbsp;&nbsp;<strong>h</strong>&nbsp;&nbsp;Open machines<br/>
 <!---&nbsp;&nbsp;**l**&nbsp;&nbsp;&nbsp;&nbsp;Open load test    --> 
 </td>
-<tr><br/><td><img src="/azure/devops/media/keyboard-shortcuts/test-plan-shortcuts.png" alt="Test Plan shortcuts"/></td>
+<tr><br/><td><img src="../../media/keyboard-shortcuts/test-plan-shortcuts.png" alt="Test Plan shortcuts"/></td>
 <td>
 
 **Test plan**<br/><br/>
@@ -41,7 +41,7 @@ You can use the following keyboard shortcuts when working in **Test Plans** or *
 <br/>
 </td> 
 </tr>
-<tr><br/><td><img src="/azure/devops/media/keyboard-shortcuts/test-parameters-shortcuts.png" alt="Test parameter shortcuts"/></td>
+<tr><br/><td><img src="../../media/keyboard-shortcuts/test-parameters-shortcuts.png" alt="Test parameter shortcuts"/></td>
 <td>
 <strong>Parameters</strong><br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1</strong>&nbsp;&nbsp;&nbsp;&nbsp;View parameter set grid<br/>
@@ -52,7 +52,7 @@ You can use the following keyboard shortcuts when working in **Test Plans** or *
 &nbsp;&nbsp;&nbsp;<strong>v,t</strong>&nbsp;&nbsp;&nbsp;&nbsp;Toggle test cases pane<br/>
 </td> 
 </tr> 
-<tr><br/><td><img src="/azure/devops/media/keyboard-shortcuts/test-run-shortcuts.png" alt="Test run shortcuts"/></td>
+<tr><br/><td><img src="../../media/keyboard-shortcuts/test-run-shortcuts.png" alt="Test run shortcuts"/></td>
 <td>
 <strong>Test runs</strong><br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1</strong>&nbsp;&nbsp;&nbsp;&nbsp;Test runs<br/>

@@ -8,13 +8,13 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/26/2021
+ms.date: 02/16/2022
 ---
 
 
 # Azure Boards-GitHub integration 
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Use this guide to connect Azure Boards with one or more GitHub repositories. This connection uses the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. 
 
@@ -43,7 +43,11 @@ Along with accessing developer services such as Azure DevOps and Azure, you can 
 
 ## Supported integration scenarios 
 
-Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories.  
+Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories. 
+
+> [!NOTE]   
+> By installing the Azure DevOps Server 2020.1.1 Patch 2, you can create connections from your Azure DevOps Server to GitHub.com repositories in addition to GitHub Enterprise Server repositories.
+
 
 Azure Boards-GitHub integration supports the following connections:  
 

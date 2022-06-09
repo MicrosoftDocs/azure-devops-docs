@@ -14,7 +14,7 @@ ms.date: 10/12/2021
 
 # Pipeline task duration sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the time taken to execute different tasks of a pipeline. 
 

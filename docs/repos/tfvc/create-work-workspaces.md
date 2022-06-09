@@ -1,18 +1,19 @@
 ---
 title: Create and work with workspaces
 titleSuffix: Azure Repos
-description: Create and work with workspaces
+description: Create and work with workspaces in TFVC
 ms.assetid: 1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 05/12/2017
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Create and work with workspaces
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
 

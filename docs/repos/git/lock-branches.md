@@ -6,13 +6,13 @@ ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 10/11/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Lock a branch
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Prevent updates to a Git [branch](./create-branch.md) by locking the branch. 
 Locking a branch prevents other users from changing the existing commit history. 

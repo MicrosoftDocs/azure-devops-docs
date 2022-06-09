@@ -14,7 +14,7 @@ robots: NOINDEX, NOFOLLOW
 
 # REST API reference
 
-[!INCLUDE [version-all](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods). These methods provide *create*, *retrieve*, *update*, or *delete* access to the service's resources. Learn the basic components of a REST API request and response pair, and see overviews of how to create and send a REST request, and handle the response.
 

@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # View project homepage or a dashboard
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
 Learn how to view the project homepage, which typically provides information about the project, and dashboards, which provide charts, links, or focused information for a team or project.
 

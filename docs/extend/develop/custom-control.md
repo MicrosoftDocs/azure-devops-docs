@@ -4,7 +4,7 @@ description: Learn how to extend the work item form by adding a custom control i
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/10/2017
@@ -12,7 +12,7 @@ ms.date: 10/10/2017
 
 # Add a custom control to the work item form
 
-[!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Custom controls allow you to change how users view and interact with a field on the work item form. The following article walks you through how this sample custom control was built.  Learn how to build your own custom control.
 

@@ -16,7 +16,7 @@ ms.date: 10/13/2021
 
 # Pass rate trend of a test sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows day wise trend of number of times a test passed and failed, along with its pass rate of any given test of a pipeline.
 

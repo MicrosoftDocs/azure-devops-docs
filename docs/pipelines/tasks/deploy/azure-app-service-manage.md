@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Azure App Service Manage task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to start, stop, restart, slot swap, Swap with Preview, install site extensions, or enable continuous monitoring for an Azure App Service.
 

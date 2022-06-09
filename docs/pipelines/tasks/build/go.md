@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Go task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to get, build, or test a go application, or run a custom go command.
 

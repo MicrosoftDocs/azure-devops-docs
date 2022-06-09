@@ -11,29 +11,25 @@ author: chcomley
 ms.reviewer: gopinach
 ms.date: 06/09/2022
 monikerRange: '>= tfs-2017'
+
 ---
 
 # Manage Wiki permissions
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn about managing permissions for your wiki. By default, all members of the Contributors group can edit Wiki pages.
-
-::: moniker range=">= tfs-2018"
 
 <a id="manage-wiki-permissions"></a>
 
 ## Manage wiki permissions
 
 By default, all project contributors have read and edit access of the wiki repository. You can grant or restrict access to who can read and edit wiki pages by managing the wiki repository permissions. For more information about permissions in Azure DevOps, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
-::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
 > **Feature availability**: The built-in wiki is available with TFS 2018 and later versions.
 ::: moniker-end
-
-::: moniker range=">= tfs-2018"
 
 To open the Security dialog, choose **More > Wiki Security**.
 
@@ -52,9 +48,9 @@ If you don't have access to create a wiki page, you need to contact an administr
 
 ### Private projects
 
-Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read project wiki pages and view revisions, however they can't do any edit operations. For example, Stakeholders can't create, edit, reorder, or revert changes to wiki pages. These permissions can't be changed.
+Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read **project** wiki pages and view revisions, however they can't do any edit operations. For example, Stakeholders can't create, edit, reorder, or revert changes to project wiki pages. These permissions can't be changed.
 
-Stakeholders have zero access to read or edit code wiki pages in private projects.
+Stakeholders have zero access to read or edit **code** wiki pages in private projects. For more information, see the [Stakeholder access quick reference for project and code wikis](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
 
 ### Public projects
 
@@ -67,8 +63,6 @@ For more information about Stakeholder access, see [About access levels, Stakeho
 ### Q: Is it possible to grant permissions on a per-page basis?
 
 **A:** No, permissions to access the wiki are made for all pages and not individual pages.
-
-::: moniker-end
 
 ## Related articles
 

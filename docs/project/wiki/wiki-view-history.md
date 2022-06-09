@@ -1,21 +1,20 @@
-﻿---
+---
 title: Revert changes and find wiki page history
 titleSuffix: Azure DevOps
 description: Add and update pages offline for your  built-in team project wiki 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.topic: conceptual
-ms.assetid: 
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-monikerRange: '>= tfs-2018'
-ms.date: 12/17/2018  
+monikerRange: '<= azure-devops'
+ms.date: 04/02/2022  
 ---
 
 # View wiki page history and revert changes
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 You can see details of the changes made to a wiki page and revert to an earlier version, if needed.
 
@@ -57,8 +56,6 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 4. [Use the breadcrumbs](../navigation/use-breadcrumbs-selectors.md) to return to the page or revisions of the page.
 
-::: moniker range=">= tfs-2018"
-
 
 <a id="revert-provision"></a>
 
@@ -66,20 +63,12 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 Select **Revert** on the revision details page to revert a change on a wiki page.
 
-::: moniker-end
-
 ::: moniker range="tfs-2018"
-
 > [!NOTE]
 > The **Revert** option is available with TFS 2018.2 and later versions.
-
 ::: moniker-end
-
-::: moniker range=">= tfs-2018"
 
 ![Dialog box Revert revision 701b5a9f has the Revert and Cancel options. Revert is selected.](media/wiki/wiki-revert.png) 
-
-::: moniker-end
 
 <a id="revert-publish"></a>
 

@@ -6,14 +6,14 @@ ms.technology: devops-analytics
 ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 09/30/2020
 ---
 
-# Extend Analytics with OData (Preview) quick reference
+# Extend Analytics with OData quick reference
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
