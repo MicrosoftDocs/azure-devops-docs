@@ -3,14 +3,14 @@ title: Clone and update wiki content offline
 titleSuffix: Azure DevOps 
 description: Add and update pages offline for your built-in team project wiki in Azure DevOps 
 ms.technology: devops-collab
-ms.custom: wiki, devdivchpfy22
+ms.custom: wiki
 ms.topic: conceptual
 ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 06/09/2022  
+ms.date: 03/05/2021  
 ---
 
 # Clone and update wiki content offline
@@ -30,7 +30,7 @@ The basic steps to update wiki content offline are as follows:
 
 1. Clone your wiki Git repo to your local IDE or workspace.
 2. Add files or folders to your local git branch.
-3. Update the .order files to reflect the pages and subpages that you've added.
+3. Update the .order files to reflect the pages and sub-pages that you've added.
 4. Commit and push the updates you made to your local git branch.
 
 ## Prerequisites
@@ -115,9 +115,9 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 
    :::image type="content" source="media/wiki/add-sub-pages.png" alt-text="Subpages under the How to contribute page in the wiki.":::
 
-2. Add a **.order** file in the folder with the order of the subpages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
+2. Add a **.order** file in the folder with the order of the sub-pages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
 	 
-	For example, the file has the following subpages:
+	For example, the file has the following sub-pages:
 
     ```
 	Request-extensions  
@@ -136,7 +136,7 @@ The added pages and subpages appear immediately in your wiki.
 
 If there are any errors in the process, the pages appear in your wiki with a warning sign.
 
-:::image type="content" source="media/wiki/wiki-offline-order-warning.png" alt-text="Warning when .order file isn't updated properly.":::
+:::image type="content" source="media/wiki/wiki-offline-order-warning.png" alt-text="Warning when .order file is not updated properly.":::
 
 ## Related articles
 
