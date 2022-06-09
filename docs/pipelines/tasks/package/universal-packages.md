@@ -116,8 +116,8 @@ The last step in this sample pipeline uses the Universal Package task to upload 
 
 ![Configure the Universal Package task to publish](./media/universal-package-publish.png)
 
-5. After completing the required fields, click **View YAML**. 
-6. Copy the resulting YAML into you your `azure-pipelines.yml` file as before. The YAML for this sample project displays below.
+5. After completing the required fields, click **View YAML**.
+6. Copy the resulting YAML into your `azure-pipelines.yml` file as before. The YAML for this sample project displays below.
 
 ```YAML
 # Publish Universal Package
