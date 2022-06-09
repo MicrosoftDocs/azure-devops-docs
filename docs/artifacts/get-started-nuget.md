@@ -95,6 +95,9 @@ nuget install HelloWorld -ExcludeVersion
 
 [!INCLUDE [](includes/nuget/consume.md)]
 
+> [!NOTE]
+> Searching for packages in upstreams with NuGet Package Explorer is not supported.
+
 ## Related articles
 
 - [Publish NuGet packages with Azure Pipelines](../pipelines/artifacts/nuget.md)

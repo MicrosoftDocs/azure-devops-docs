@@ -104,6 +104,9 @@ Upstream sources prevent this non-deterministic behavior by searching the feed a
 
 To take full advantage of the fast lookup feature, we recommend that you only include one feed in your config file.
 
+> [!NOTE]
+> Searching for packages in upstreams with NuGet Package Explorer is not supported.
+
 ## Save packages from upstream sources
 
 When you enable upstream sources for your feed, packages installed from upstream sources will be automatically saved to your feed. These packages could be installed directly from the upstream as follows `npm install express` or they could be installed as part of a dependency resolution (installing `express` would also save dependencies like `accepts`).
