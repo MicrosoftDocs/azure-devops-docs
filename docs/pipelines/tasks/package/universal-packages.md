@@ -44,7 +44,7 @@ Use this task to download, or package and publish Universal Packages.
 | `vstsPackageVersion`<br/>Package version | Select the package version or use a variable containing the version to download. This entry can also be a wildcard expression such as `*` to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
 | `feedDownloadExternal`<br/>Feed | Specifies the name of an external feed from which to download. |
 | `packageDownloadExternal`<br/>Package name | Specifies the package name to download. |
-| `versionDownloadExternal`<br/>Package version | Select the package version or use a variable containing the version to download. This entry can also be a wildcard expression, such as `*`, to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
+| `versionDownloadExternal`<br/>Package version | Select the package version or use a variable containing the version to download. This entry can also be a wildcard expression, such as `*`, to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. Wildcard patterns are not supported with pre-release packages. |
 | `publishDirectory`<br/>Path to files to publish | Specifies the path to list of files to be published. |
 | `feedsToUsePublish`<br/>Feed location | You can select a feed from either this collection or any other collection in Azure Artifacts.<br/>Options: `internal`, `external` |
 | `publishFeedCredentials`<br/>organization/collection connection | Credentials to use for external feeds. |
@@ -116,8 +116,8 @@ The last step in this sample pipeline uses the Universal Package task to upload 
 
 ![Configure the Universal Package task to publish](./media/universal-package-publish.png)
 
-5. After completing the required fields, click **View YAML**. 
-6. Copy the resulting YAML into you your `azure-pipelines.yml` file as before. The YAML for this sample project displays below.
+5. After completing the required fields, click **View YAML**.
+6. Copy the resulting YAML into your `azure-pipelines.yml` file as before. The YAML for this sample project displays below.
 
 ```YAML
 # Publish Universal Package
