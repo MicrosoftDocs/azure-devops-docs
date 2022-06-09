@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 > The following guidance uses YAML-based pipelines available in Azure Pipelines. Use tasks that correspond to those used in the following YAML.
 ::: moniker-end
 
-You can use a pipeline to automatically build and test your Java projects. After you build and test your app, you can deploy app to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md). If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
+You can use a pipeline to automatically build and test your Java projects. After you build and test your app, you can deploy your app to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md). If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ You must have the following items in Azure DevOps:
 
 ::: moniker range="> azure-devops-2019"
 
-1. Fork the following repo to GitHub:
+1. Fork the following repo at GitHub:
 
    ```
    https://github.com/MicrosoftDocs/pipelines-java
@@ -94,7 +94,7 @@ Read further to learn some of the more common ways to customize your pipeline.
 
 You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or macOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
-Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image:
+Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
 
 ```yaml
 pool:
@@ -109,7 +109,7 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 
 ::: moniker range="< azure-devops"
 
-Your builds run on a [self-hosted agent](../agents/agents.md#install). Ensure that you have Java installed on the agent.
+Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Java installed on the agent.
 
 ::: moniker-end
 
@@ -119,7 +119,7 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Ensure th
 
 ### Maven
 
-With Maven build, the following snippet gets added to your ```azure-pipelines.yml``` file. Change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](../tasks/build/maven.md) task for more about these options.
+With your Maven build, the following snippet gets added to your `azure-pipelines.yml` file. You can change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](../tasks/build/maven.md) task for more information about these options.
 
 ```yaml
 steps:
@@ -135,7 +135,7 @@ steps:
     goals: 'package'
 ```
 
-For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Ensure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`.
+For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`.
 
 #### Customize the build path
 
@@ -149,7 +149,7 @@ For details about common Java phases and goals, see [Apache's Maven documentatio
 
 ### Gradle
 
-With the Gradle build, the following snippet is added to your `azure-pipelines.yml` file. For more information about these options, see the [Gradle](../tasks/build/gradle.md) task.
+With the Gradle build, the following snippet gets added to your `azure-pipelines.yml` file. For more information about these options, see the [Gradle](../tasks/build/gradle.md) task.
 
 ```yaml
 steps:
@@ -235,7 +235,7 @@ After you've built and tested your app, you can upload the build output to Azure
 
 ::: moniker range=">=azure-devops-2020"
 
-We recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
+Learn more about creating a CI/CD pipeline for your deployment target:
 
 - [Build and deploy to a Java web app](java-webapp.md)
 - [Build and deploy Java to Azure Functions](java-function.md)
