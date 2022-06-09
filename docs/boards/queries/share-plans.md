@@ -207,7 +207,7 @@ You can edit, open, save, or delete an attachment by choosing an attachment and 
 
 #### [Visual Studio](#tab/visual-studio/)
 
-Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
+Choose the ![plus icon](../media/icons/add-green-icon.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
 <img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" />
 

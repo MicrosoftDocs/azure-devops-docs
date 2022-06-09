@@ -114,7 +114,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Remove a user 
 
-You can remove a user from an organization by using the [az devops user remove](/cli/azure/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can remove a user from an organization by using the [az devops user remove](/cli/azure/devops/user#az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user remove --user

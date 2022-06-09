@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 05/20/2022
 --- 
 
 
@@ -26,6 +26,13 @@ You grant or restrict access to various work tracking features by granting users
 
 ::: moniker-end
 
+
+## Prerequisites  
+
+- To set work tracking permissions, you must be a member of the [**Project Administrators** group](change-project-level-permissions.md), or have explicit permissions to manage the work tracking area as described in this article. 
+- To set process permissions, you must be a member of the [**Project Collection Administrators** group](change-organization-collection-level-permissions.md), or have explicit permissions to edit a collection process.  
+
+
 <a id="business-workflows" /> 
 
 ## Support business workflows through custom rules  
@@ -33,7 +40,7 @@ You grant or restrict access to various work tracking features by granting users
 Custom rules don't set permissions, but do impact the effective permissions of a user at run-time to modify a work item or set the value of a work item field. Azure Boards supports the following work tracking customizations that support business workflows. 
 
 - Apply select rules upon work item creation, state change, specified state.
-- Apply select rules when a field value is empty,set to a specific value, or was changed or not changed to a value.  
+- Apply select rules when a field value is empty, set to a specific value, or was changed or not changed to a value.  
 - Restrict the transition to a specific state when moving from a specified state.  
 - Apply select rules based on user or group membership of the user modifying a work item.
 
@@ -136,7 +143,9 @@ The following table summarizes the different permissions you can set at the obje
 :::row-end:::
 ---
   
-
+> [!NOTE]
+> If you haven't defined the group yet whose permissions you want to set, then first create the group, usually at the project level. To learn how, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md). 
+ 
 <a name="set-permissions-area-path" /> 
 
 ## Create child nodes, modify work items under an area or iteration path   
@@ -144,9 +153,8 @@ The following table summarizes the different permissions you can set at the obje
 Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
 > [!NOTE]
-> If you haven't defined the group yet whose permissions you want to set, then first create the group, usually at the project level. To learn how, see [Add or remove users or groups, manage security groups](add-remove-manage-user-group-security-group.md). 
- 
- 
+> Project members granted permissions to create or edit **Area Paths** or **Iteration Paths** is separate from the permissions that control configuring team **Area Paths** and **Iteration Paths**. To configure team settings, you must be added to the [team administrator role](../settings/add-team-administrator.md), or be a member of the [**Project Administrators** group](change-project-level-permissions.md).
+* 
 ::: moniker range="azure-devops" 
 
 You define both areas and iterations for a project from the **Project Settings>Project configuration**. 
@@ -154,7 +162,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 1. Choose (1) **Project Settings**, then choose (2) **Project configuration** under **Boards**, and then choose (3) **Areas** or **Iterations** to modify Area Paths or Iteration Paths. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Work>Project Configuration](../settings/media/areas/open-project-work-areas-settings-vert.png)   
+    > ![Screenshot showing opening Project Settings>Work>Project Configuration.](../settings/media/areas/open-project-work-areas-settings-vert.png)   
 
 1. Choose the **...** context menu for the node you want to manage and select **Security**.  
 
@@ -182,7 +190,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 1. Choose (1) **Project Settings**, then choose (2) **Project configuration** under **Boards**, and then choose (3) **Areas**.   
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Work>Project Configuration](../settings/media/areas/open-project-work-areas-settings-vert.png)   
+    > ![Screenshot showing opening Project Settings>Work>Project Configuration for on-premises server.](../settings/media/areas/open-project-work-areas-settings-vert.png)   
 
 1. Choose the **...** context menu for the node you want to manage and select **Security**.  
 
@@ -208,18 +216,18 @@ You define both areas and iterations for a project from the **Project Settings>P
 1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Web portal, Open Admin context, project level](../settings/media/areas/modify-areas-its-open-admin-context-ts.png)
+    > ![Screenshot showing opening Web portal, Open Admin context, project level for TFS 2018.](../settings/media/areas/modify-areas-its-open-admin-context-ts.png)
 
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horz nav](../../media/settings/open-project-settings-horz.png)  
+    > ![Open Project Settings  for TFS 2018.](../../media/settings/open-project-settings-horz.png)  
 
 2. Choose **Work** and then **Areas**.  
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![In the context menu, select Security.](media/work-tracking/set-permissions-area-node-open.png)
+    ![In the context menu, select Security for TFS 2018.](media/work-tracking/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
@@ -234,7 +242,7 @@ To manage permissions for a query or query folder, you must be the creator of th
 **Query folder Permissions dialog**
 
 > [!div class="mx-imgBorder"]  
-> ![Permissions dialog for a query folder](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
+> ![Permissions dialog for a query folder.](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
 
 For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
 
@@ -257,7 +265,7 @@ Delivery Plans are an object within a project. You manage plan permissions for e
 **Delivery Plan Permissions dialog**
 
 > [!div class="mx-imgBorder"]  
-> ![Permissions dialog for a delivery plan](../../boards/plans/media/permissions/permissions-plans-dialog.png)
+> ![Permissions dialog for a delivery plan.](../../boards/plans/media/permissions/permissions-plans-dialog.png)
 
 To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md). To learn more about Delivery Plans, see [Review team plans](../../boards/plans/review-team-plans.md).
 
@@ -278,7 +286,7 @@ For example, as a project admin you can grant a user, team group, or other group
 In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another project and to permanently delete work items.   
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level permissions for a custom group, Team Admin](media/set-permissions-project-level-dialog.png)  
+> ![Screenshot showing setting project-level permissions for a custom security group.](media/set-permissions-project-level-dialog.png)  
 
 ::: moniker-end    
 
@@ -293,11 +301,11 @@ In addition to the project-level permissions set in the previous section, team m
 
 [Open the **Security** page for area paths](#set-permissions-area-path) and choose the user or group you want to grant permissions. 
 
-![Open Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-open-area-permissions.png)  
+![Screenshot showing open Area path permissions for the project.](../../boards/backlogs/media/delete-test-artifacts-open-area-permissions.png)  
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
+![Screenshot set Area path permissions for the project.](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
 
@@ -325,13 +333,13 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 1. Open the &hellip; context menu for the inherited process and choose **Security**.  To open this page, see [Customize a project using an inherited process](../settings/work/customize-process.md).   
 
-    ![Process, Open security dialog](media/process/mprocess-open-security-dialog-inherited.png)  
+    ![Screenshot showing open Process, Open security dialog.](media/process/mprocess-open-security-dialog-inherited.png)  
 
 2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then choose **Save changes**. 
 
     Here we add Christie Church and allow her to edit the process.  
 
-    ![Permissions for a process dialogue](media/process/mprocess-security-dialog-inherited.png)    
+    ![Permissions for a process dialogue.](media/process/mprocess-security-dialog-inherited.png)    
 
 > [!NOTE]     
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.

@@ -56,7 +56,7 @@ Your extension is now installed! You can now go to your organization to use your
 
 ::: moniker range="azure-devops"
 
-You can install an extension with the [az devops extension install](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can install an extension with the [az devops extension install](/cli/azure/devops/extension#az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
 

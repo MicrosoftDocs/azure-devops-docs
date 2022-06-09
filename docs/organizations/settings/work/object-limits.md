@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 04/04/2022
+ms.date: 05/31/2022
 ---
 
 # Work tracking, process, and project limits
@@ -26,15 +26,20 @@ When defining work items or running queries, the following operational limits ap
 
 | Object | Limit |
 |--------|-------|
-| Long text field | 1 M characters |
-| Work item tags assigned to a work item | 100 |
-| Work item links assigned to a work item | 1,000 |
 | Attachments added to a work item | 100 |
 | Attachment size | 60 MB |
+| Long text field | 1 M characters |
 | Query execution time  |  30 seconds |
 | Query results | 20,000 items |
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
+| Work item links assigned to a work item | 1,000 |
+| Work item tags assigned to a work item | 100 |
+| Work item revisions (REST API) | 10,000 | 
+
+A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restrict updates from the REST API, however, updates from the web portal are not affected.  
+
+
 
 ::: moniker-end
 

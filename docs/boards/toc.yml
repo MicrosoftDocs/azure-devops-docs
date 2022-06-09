@@ -103,13 +103,9 @@
     href: work-items/set-work-item-experience-vs.md
   - name: Manage process templates
     displayName: templates
-    href: work-items/guidance/manage-process-templates.md
-  - name: Project portal & process guidance
-    items:
-    - name: Configure or add a project portal
-      href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Configure or redirect process guidance
-      href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
+    href: /azure/devops/boards/work-items/guidance/manage-process-templates?view=azure-devops-2020&preserve-view=true
+  - name: Work across projects FAQs 
+    href: ../project/work-across-projects-faqs.yml
 - name: Azure Boards & GitHub
   href: github/toc.yml
 - name: Work items
@@ -184,6 +180,12 @@
     - name: Resolve invalid links in an Excel tree list
       displayName: duplicate titles, disconnected, sorted tree, locked
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
+  - name: Project portal & process guidance (Deprecated)
+    items:
+    - name: Configure or add a project portal
+      href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Configure or redirect process guidance
+      href: /previous-versions/azure/devops/project/configure-or-redirect-process-guidance?view=tfs-2017&preserve-view=true
 - name: Integrations & extensions
   href: extensions/toc.yml
 - name: Troubleshooting

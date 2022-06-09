@@ -2,13 +2,12 @@
 title: Default Analytics views
 titleSuffix: Azure DevOps
 description: Learned about a filtered set of data based on Analytics for Azure DevOps that supports creating Power BI reports.  
-ms.technology: devops-analytics
-ms.reviewer: angurusw
+ms.technology: devops-analytics 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/01/2021
+ms.date: 05/12/2022
 ---
 
 # Default Analytics views
@@ -62,9 +61,10 @@ Each default Analytics view provides a combination of options for work item type
 > | All history by month | Loads all work item history, on a monthly interval |
 
 ## Common reportable fields  
+
 Default views automatically include the most common fields for the included work item types used for reporting. All custom fields are included. 
 
-For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
+For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Analytics work item fields reference](analytics-fields-reference.md) or [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
 > ![Analytics views common fields](media/editable-views/common-fields.png)

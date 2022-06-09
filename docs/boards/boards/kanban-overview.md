@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 05/20/2022
 ---
 
 
@@ -39,7 +39,7 @@ Boards present work items as cards and support quick status updates through drag
 
 To get started, you'll want to follow the steps outlined below. 
 
-[![Configure Kanban board](../backlogs/media/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/media/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/media/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
+[![Configure Kanban board.](../backlogs/media/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board.](../backlogs/media/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress.](../backlogs/media/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 > [!NOTE]  
 > A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
@@ -52,12 +52,12 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 ::: moniker range=">= azure-devops-2019"
 
-![Kanban board, Agile template](../work-items/media/about-agile/view-boards-agile.png)   
+![Screenshot of Kanban board, Agile template.](../work-items/media/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-![Kanban board, Agile template](media/kanban-basics-intro.png)     
+![Screenshot of Kanban board, Kanban board, Agile template, TFS 2018.](media/kanban-basics-intro.png)     
 ::: moniker-end  
  
 ## Configure and customize your Kanban board
@@ -94,7 +94,7 @@ Along with these team configurations, you can [customize a project](#customize) 
 
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
-![Reorder cards while changing columns](media/8_7_02.gif)
+![Git showing how to reorder cards while changing columns.](media/8_7_02.gif)
 
 ## Use the Cumulative Flow Diagram to monitor metrics
 
@@ -103,7 +103,7 @@ The Cumulative Flow Diagram (CFD) is an in-context report available for both pro
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Open CFD Analytics](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
+> ![Screenshot of Analytics report, Cumulative Flow Diagram.](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
 The Average work in progress value excludes completed work items. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. 
 
@@ -111,7 +111,7 @@ The Average work in progress value excludes completed work items. Use the intera
 
 ::: moniker range="<= azure-devops-2019"
 
-<img src="media/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" />   
+<img src="media/ALM_KB_CumulativeFlow.png" alt="Screenshot of Kanban board, cumulative flow diagram." />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
@@ -192,6 +192,13 @@ You can also add or modify the fields defined for a work item type (WIT), add a 
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+
+## Can I view a Kanban board of work items defined by a query?  
+
+The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) Marketplace extension supports viewing a flat-list query of work items as a Kanban board. The query can contain different work item types and work items defined in different projects.  
+::: moniker-end
+
 
 ## Try this next  
 
@@ -207,6 +214,7 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
+- [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
 - [What is Agile?](/devops/plan/what-is-agile)   
 - [What is Agile development?](/devops/plan/what-is-agile-development)  
  

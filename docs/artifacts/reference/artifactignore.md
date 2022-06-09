@@ -29,21 +29,18 @@ In the following example, we will be ignoring all files except the ones in the *
 ```
 
 > [!IMPORTANT]
-> The *.artifactignore* file must be in the same directory as the path defined by the `targetPath` of your [Publish Pipeline Artifacts](../../pipelines/tasks/utility/publish-pipeline-artifact.md) task.
+> The *.artifactignore* file must be in the directory provided to the `targetPath` argument in your [Publish Pipeline Artifacts](../../pipelines/tasks/utility/publish-pipeline-artifact.md) task.
 
 ## Syntax
 
-The *.artifactignore* follows the same syntax as the [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations.
+The *.artifactignore* follows the same syntax as the [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
 
-> [!IMPORTANT]
-> The plus sign character `+` is not supported in URL paths and some of the semantic versioning metadata for some package types like Maven.
-
-## Ignored by default
-
-To reduce the chances of publishing the *.git* folder, we automatically ignore this path if you do not have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
+> [!Note]
+> *.git* file is ignored by default if you don't have an *.artifactignore* file. You can re-include it by creating an empty *.artifactignore* file.
 
 ## Related articles
 
 - [Package graphs](../concepts/package-graph.md)
 - [Package componentization](../collaborate-with-packages.md)
+- [Key concepts](../artifacts-key-concepts.md)
 - [Limits on package sizes and counts](limits.md)

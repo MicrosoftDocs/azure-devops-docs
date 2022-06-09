@@ -18,7 +18,7 @@ Upstream sources enable you to use a single feed to store packages from differen
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Custom upstream sources are currently only supported for npm.
+> Custom upstream sources are only supported for npm packages.
 
 ::: moniker-end
 
@@ -50,8 +50,8 @@ Example:
     </packageSources>
     ```
 
-> [!NOTE]
-> The `<clear />` tag is required because NuGet composes [several configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the full set of options to use. `<clear />` tells NuGet to ignore all other `<packageSources>` defined in higher-level configuration files.
+    > [!NOTE]
+    > NuGet composes several [config files](/nuget/consume-packages/configuring-nuget-behavior) to determine the full set of options to use. Using `<clear />` allow us to ignore all other package sources defined in higher-level configuration files.
 
 - **.npmrc**:
 
@@ -117,18 +117,18 @@ When you enable upstream sources, you must be aware that publishing a package ve
 If you must publish a package version that already exists on one of your upstream sources, you must disable that upstream source, publish your package, and then re-enable the upstream source.
 
 > [!Note]
-> You can only publish a package version that wasn't previously saved from upstream. Saved packages remain in the feed even if the upstream source is disabled or removed.
+> Package versions are immutable. Saved packages remain in the feed even if the upstream source is disabled or removed.
 
 ## Health status
 
-If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream source's health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, and then select **Upstream sources**. 
+If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream source's health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, and then select **Upstream sources**.
 
 If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing upstream will provide more details such as the reason of failure and instructions on how to solve it.
 
 :::image type="content" source="media/upstreams-health-status.png" alt-text="Screenshot showing the upstream source's health status":::
 
 > [!NOTE]
-> For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download by your feed. This delay depends on job timing and data propagation. The is no latency when the upstream source is an Azure Artifacts feed.
+> For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download. This delay depends on job timing and data propagation. There is no latency when the upstream source is an Azure Artifacts feed.
 
 ## Offline upstream sources
 
@@ -163,3 +163,4 @@ A: A warning message gets added to the package's metadata and displayed whenever
 - [Manage dependencies](../tutorials/protect-oss-packages-with-upstream-sources.md)
 - [Configure upstream behavior](./upstream-behavior.md)
 - [Feed permissions](../feeds/feed-permissions.md)
+- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)

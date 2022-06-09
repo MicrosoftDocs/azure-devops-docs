@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run unit and functional tests (Selenium, Appium, Coded UI test, and more)
-using the Visual Studio Test Runner. Other than MSTest-based tests, test frameworks that have a
+using the Visual Studio Test Runner. Along with MSTest-based tests, test frameworks that have a
 Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be executed.  
 
 Tests that target the .NET core framework can be executed by specifying the appropriate target framework value in the [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
@@ -125,3 +125,4 @@ The above limitations are because of how the adapters for these test frameworks 
 
 The VsTest task doesn't support running tests that target multiple target frameworks at a time as this is a limitation from the [vstest platform](https://github.com/microsoft/vstest/issues/2310) side.
 If you want to run tests that belong to multiple target frameworks, you'll need multiple instances of the vstest task, one per set of dlls that target a particular framework.
+

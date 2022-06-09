@@ -21,6 +21,7 @@ ms.technology: devops-cicd-tasks
     #compressSymbols: false # Required when symbolServerType == FileShare
     #detailedLog: true # Optional
     #treatNotIndexedAsWarning: false # Optional
+    #useNetCoreClientTool: false # Optional
     #symbolsMaximumWaitTime: # Optional
     #symbolsProduct: # Optional
     #symbolsVersion: # Optional
