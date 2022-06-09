@@ -1,9 +1,9 @@
 ---
 title: Build C++ Windows apps
-ms.custom: seodec18
+ms.custom: seodec18, devdivchpfy22
+ms.date: 06/08/2022
 description: Automatically build your C++ Windows app with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
-ms.date: 5/12/2021
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ---
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-This guidance explains how to automatically build C++ projects for Windows.
+This article explains how to build C++ projects on Windows automatically.
 
 ## Example
 
@@ -29,7 +29,7 @@ https://github.com/MicrosoftDocs/pipelines-cpp
 ::: moniker range="< azure-devops"
 
 > [!NOTE]
-> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
+> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. You'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 
 ::: moniker-end
 
@@ -39,9 +39,9 @@ https://github.com/MicrosoftDocs/pipelines-cpp
 
 ## Build multiple configurations
 
-It is often required to build your app in multiple configurations. The following steps extend the example above to build the app on four configurations: [Debug, x86], [Debug, x64], [Release, x86], [Release, x64].
+It's often required to build your app in multiple configurations. The following steps extend the example above to build the app on four configurations: [Debug, x86], [Debug, x64], [Release, x86], [Release, x64].
 
-1. Click the **Variables** tab and modify these variables:
+1. Select the **Variables** tab and modify these variables:
 
    * `BuildConfiguration` = `debug, release`
 
@@ -57,8 +57,8 @@ It is often required to build your app in multiple configurations. The following
 
 ## Copy output
 
-To copy the results of the build to Azure Pipelines, perform these steps:
+To copy the results of the build to Azure Pipelines select the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
 
-1. Click the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
-
-   * **Contents:** `**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)`
+```
+   contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)' 
+```
