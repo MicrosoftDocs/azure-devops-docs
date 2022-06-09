@@ -49,7 +49,7 @@ agent and should not be shared between multiple agents.
 - `--runAsAutoLogon` - configure auto-logon and run the agent on startup (requires administrator permission)
 - `--windowsLogonAccount <account>` - used with `--runAsService` or `--runAsAutoLogon` to specify the Windows user
 name in the format `domain\userName` or `userName@domain.com`
-- `--windowsLogonPassword <password>` - used with `--runAsService` or `--runAsAutoLogon` to specify Windows logon password
+- `--windowsLogonPassword <password>` - used with `--runAsService` or `--runAsAutoLogon` to specify Windows logon password (not required for [Group Managed Service Accounts](https://aka.ms/gmsa) and Windows built in accounts such as 'NT AUTHORITY\NETWORK SERVICE')
 - `--overwriteAutoLogon` - used with `--runAsAutoLogon` to overwrite the existing auto logon on the machine
 - `--noRestart` - used with `--runAsAutoLogon` to stop the host from restarting after agent configuration completes
 
