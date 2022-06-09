@@ -3,7 +3,6 @@ title: Create an Analytics view
 titleSuffix: Azure DevOps
 description: Learn how to add a custom Analytics view for easy generation of Power BI reports for Azure DevOps.
 ms.technology: devops-analytics
-ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -75,7 +74,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 ### Specify Work items filters
 
-Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
+Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data. For a description of each available field, see [Analytics work item fields reference](analytics-fields-reference.md).
 > [!div class="mx-imgBorder"]
 > ![Specify Work items filters.](media/editable-views/work-items-default.png)
 

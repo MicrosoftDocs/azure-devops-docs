@@ -54,10 +54,10 @@ To clone additional repositories as part of your pipeline:
 
 * If the access token (explained below) does not have access to the repository:
 
-    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `PAT:`
-    2. Base64-encode this string to create a basic auth token.
-    3. Add a script in your pipeline with the following command to clone that repo
-       `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
+  1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `PAT:`
+  1. Base64-encode this string to create a basic auth token.
+  1. Add a script in your pipeline with the following command to clone that repo
+     `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
 
 ---
 
@@ -68,6 +68,7 @@ Azure Pipelines must be granted access to your repositories to trigger their bui
 Continuous integration (CI) triggers cause a pipeline to run whenever you push an update to the specified branches or you push  specified tags.
 
 # [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 [!INCLUDE [ci-triggers](includes/ci-triggers1.md)]
 ::: moniker-end
@@ -85,11 +86,10 @@ YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 # [Classic](#tab/classic/)
+
 [!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
 
 ![Configure continuous integration trigger branch filters.](media/ci-trigger-git-branches-neweditor.png)
-
-
 
 ---
 
@@ -121,16 +121,16 @@ You can also tell Azure Pipelines to skip running a pipeline that a push would n
 Pull request (PR) triggers cause a pipeline to run whenever you open a pull request, or when you push changes to it. In Azure Repos Git, this functionality is implemented using branch policies. To enable PR validation, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
 If you have an open PR and you push changes to its source branch, multiple pipelines may run:
-- The pipeline specified by the target branch's policy will run on the commit corresponding to the merged PR, regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
-- The pipelines triggered by changes to the PR's source branch won't run if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). 
+ - The pipelines specified by the target branch's build validation policy will run on the _merge commit_ (the merged code between the source and target branches of the pull request), regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
+ - The pipelines triggered by changes to the PR's source branch, if there is **no** pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). If at least one pushed commit contains `[skip ci]`, the pipelines will not run.
 
-Finally, when you merge the PR, the pipelines triggered by changes to the target branch's policy will run, even though some of the merged commits' messages or descriptions contain `[skip ci]` (or any of its variants).
+ Finally, after you merge the PR, Azure Pipelines will run the CI pipelines triggered by pushes to the target branch, even if some of the merged commits' messages or descriptions contain `[skip ci]` (or any of its variants).
 
->[!NOTE]
->To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
+> [!NOTE]
+> To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
 
->[!NOTE]
->[Draft pull requests](../../repos/git/pull-requests.md#draft-pull-requests) do not trigger a pipeline even if you configure a branch policy.
+> [!NOTE]
+> [Draft pull requests](../../repos/git/pull-requests.md#draft-pull-requests) do not trigger a pipeline even if you configure a branch policy.
 
 ::: moniker range=">tfs-2018"
 
@@ -232,7 +232,6 @@ steps:
 
 ::: moniker-end
 
-<a name="q-a"></a>
 ## FAQ
 
 Problems related to Azure Repos integration fall into three categories:
@@ -274,28 +273,34 @@ Follow each of these steps to troubleshoot your failing triggers:
 * Are you accessing the repository using a script? If so, check the [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories) setting. When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, you won't be able to check out Azure Repos Git repositories using a script unless they are explicitly referenced first in the pipeline.
 
 * What is the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline?
+
   * If the scope is **collection**: 
+
     * This may be an intermittent error. Re-run the pipeline.
     * Someone may have removed the access to **Project Collection Build Service account**.
-      * Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
+      * Go to **Project settings** for the project in which the repository exists. Select **Repos > Repositories > specific repository**, and then **Security**.
       * Check if **Project Collection Build Service (your-collection-name)** exists in the list of users.
       * Check if that account has **Create tag** and **Read** access.
 
   * If the scope is **project**: 
+
     * Is the repo in the same project as the pipeline?
       * Yes: 
         * This may be an intermittent error. Re-run the pipeline.
         * Someone may have removed the access to **Project Build Service account**.
-          * Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
+          * Go to to **Project settings** for the project in which the repository exists. Select **Repos > Repositories > specific repository**, and then **Security**.
           * Check if **your-project-name Build Service (your-collection-name)** exists in the list of users.
           * Check if that account has **Create tag** and **Read** access.
       * No:
         * Is your pipeline in a public project?
           * Yes: You cannot access resources outside of your public project. Make the project private.
-          * No: You need to take additional steps to grant access. Let us say that your pipeline exists in project **A** and that your repository exists in project **B**.
-            * Go to the project settings of the project in which the repository exists (B). Select Repos -> Repositories -> specific repository.
-            * Add **your-project-name Build Service (your-collection-name)** to the list of users, where your-project-name is the name of the project in which your pipeline exists (A).
-            * Give **Create tag** and **Read** access to the account.
+          * No: You need to take the following additional steps to grant access. Let us say that your pipeline exists in project **A** and that your repository exists in project **B**.
+            * Go to **Project Settings** for the project in which the repository exists (B). 
+            * Select **Permissions > Groups> Readers** group, and then select **Members**.
+            * Add **your-project-name Build Service (your-collection-name)** to the group members, where *your-project-name* is the name of the project in which your pipeline exists (A).
+            * Next, from the same **Project Settings** for repository (B), select **Repos > Repositories > specific repository**, and then **Security**.
+            * Add **your-project-name Build Service (your-collection-name)** to the list of users, where *your-project-name* is the name of the project in which your pipeline exists (A).
+            * Set the **Create tag** and **Read** permissions to **Allow** for the account.
 
 ### Wrong version
 

@@ -41,7 +41,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 Connect your favorite development environment to Azure Repos to access your repos and manage your work. Share your code using:
 
 - [Command-line](../git/share-your-code-in-git-cmdline.md)
-- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
+- [Visual Studio Code](https://marketplace.visualstudio.com/vscode)
 - [Visual Studio](../git/share-your-code-in-git-vs.md)
 - [Xcode](../git/share-your-code-in-git-xcode.md)
 - [Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in)

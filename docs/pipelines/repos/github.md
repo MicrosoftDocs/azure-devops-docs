@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 02/01/2022
+ms.date: 05/31/2022
 monikerRange: azure-devops
 ---
 
@@ -131,7 +131,7 @@ There are three authentication types for granting Azure Pipelines access to your
 
 ### GitHub app authentication
 
-The Azure Pipelines GitHub App is the **recommended** authentication type for continuous integration pipelines. When you install the GitHub App in your GitHub account or organization, your pipeline can run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The app works with [GitHub Checks](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
+The Azure Pipelines GitHub App is the **recommended** authentication type for continuous integration pipelines. After you install the GitHub App in your GitHub account or organization, your pipeline will run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The app works with [GitHub Checks](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
 
 To use the GitHub App, install it in your GitHub organization or user account for some or all repositories. The GitHub App can be installed and uninstalled from the app's [homepage](https://github.com/apps/azure-pipelines).
 
@@ -143,7 +143,7 @@ If you install the GitHub App for all repositories in a GitHub organization, you
 
 Installation of Azure Pipelines GitHub app requires you to be a GitHub organization owner or repository admin. In addition, to create a pipeline for a GitHub repository with continuous integration and pull request triggers, you must have the required GitHub permissions configured. Otherwise, **the repository will not appear** in the repository list while creating a pipeline. Depending on the authentication type and ownership of the repository, ensure that the appropriate access is configured.
 
-- If the repo is in your personal GitHub account, install the Azure Pipelines GitHub App in your personal GitHub account. You’ll be able to list this repository when create the pipeline in Azure Pipelines.
+- If the repo is in your personal GitHub account, install the Azure Pipelines GitHub App in your personal GitHub account, and you’ll be able to list this repository when creating the pipeline in Azure Pipelines.
 
 - If the repo is in someone else's personal GitHub account, the other person must install the Azure Pipelines GitHub App in their personal GitHub account. You must be added as a collaborator in the repository's settings under "Collaborators". Accept the invitation to be a collaborator using the link that is emailed to you. Once you’ve done so, you can create a pipeline for that repository.
 
@@ -155,12 +155,12 @@ Installation of Azure Pipelines GitHub app requires you to be a GitHub organizat
 
 The GitHub App requests the following permissions during installation:
 
-| Permission | What pipelines does with it |
+| Permission | How Azure Pipelines uses the permission |
 |------------|-----------------------------------|
 | Write access to code | Only upon your deliberate action, Azure Pipelines will simplify creating a pipeline by committing a YAML file to a selected branch of your GitHub repository. |
 | Read access to metadata | Azure Pipelines will retrieve GitHub metadata for displaying the repository, branches, and issues associated with a build in the build's summary. |
 | Read and write access to checks | Azure Pipelines will read and write its own build, test, and code coverage results to be displayed in GitHub. |
-| Read and write access to pull requests | Only upon your deliberate action, Azure Pipelines will simplify creating a pipeline by creating a pull request for a YAML file that was committed to a selected branch of your GitHub repository. Pipelines will retrieve pull request metadata to display in build summaries associated with pull requests. |
+| Read and write access to pull requests | Only upon your deliberate action, Azure Pipelines will simplify creating a pipeline by creating a pull request for a YAML file that was committed to a selected branch of your GitHub repository. Pipelines retrieves request metadata to display in build summaries associated with pull requests. |
 
 <!--
 Detailed permissions not displayed to the user during installation:
@@ -293,7 +293,7 @@ You can specify the full name of the branch (for example, `main`) or a wildcard 
 > [!NOTE]
 > If you use [templates](../process/templates.md) to author YAML files, then you can only specify triggers in the main YAML file for the pipeline. You cannot specify triggers in the template files.
 
-GitHub creates a new _ref_ when a pull request is created. The ref points to a _merge commit_, which is the merged code between the source and target branches of the pull request. The PR validation pipeline builds the commit this ref points to. This means that the YAML file that is used to run the pipeline is also a merge between the source and the target branch. As a result, the changes you make to the YAML file in source branch of the pull request can override the behavior defined by the YAML file in target branch.
+GitHub creates a new _ref_ when a pull request is created. The ref points to a _merge commit_, which is the merged code between the source and target branches of the pull request. The PR validation pipeline builds the commit that this _ref_ points to. This means that the YAML file that is used to run the pipeline is also a merge between the source and the target branch. As a result, the changes you make to the YAML file in source branch of the pull request can override the behavior defined by the YAML file in target branch.
 
 If no `pr` triggers appear in your YAML file, pull request validations are automatically enabled for all 
 branches, as if you wrote the following `pr` trigger. This configuration triggers a build when any 
@@ -407,6 +407,12 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
+If you have an open PR and you push changes to its source branch, multiple pipelines may run:
+ - The pipelines that have a PR trigger on the PR's target branch will run on the _merge commit_ (the merged code between the source and target branches of the pull request), regardless if there exist pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants).
+ - The pipelines triggered by changes to the PR's source branch, if there are **no** pushed commits whose messages or descriptions contain `[skip ci]` (or any of its variants). If at least one pushed commit contains `[skip ci]`, the pipelines will not run.
+
+ Finally, after you merge the PR, Azure Pipelines will run the CI pipelines triggered by pushes to the target branch, if the merge commit's message or description doesn't contain `[skip ci]` (or any of its variants). 
+
 ### Protected branches
 
 You can run a validation build with each commit or pull request that targets a branch, and even prevent pull requests from merging until a validation build succeeds.
@@ -482,7 +488,7 @@ A GitHub user can fork your repository, change it, and create a pull request to 
 Repository collaborators can comment on a pull request to manually run a pipeline. Here are a few common reasons for why you might want to do this:
 
 - You may not want to automatically build pull requests from unknown users until their changes can be reviewed. You want one of your team members to first review their code and then run the pipeline. This is commonly used as a security measure when building contributed code from forked repositories.
-- You may want to run an optional test suite or an more validation build. 
+- You may want to run an optional test suite or one more validation build. 
 
 To enable comment triggers, you must follow the following two steps:
 
@@ -510,7 +516,13 @@ The following commands can be issued to Azure Pipelines in comments:
 
 ### Troubleshoot pull request comment triggers
 
-If you have the necessary repository permissions, but pipelines aren't getting triggered by your comments, make sure that your membership is **public** in the repository's organization, or directly add yourself as a repository collaborator. Pipelines can’t see private organization members unless they’re direct collaborators or belong to a team that is a direct collaborator. You can change your GitHub organization membership from private to public here (replace `Your-Organization` with your organization name): `https://github.com/orgs/Your-Organization/people`.
+If you have the necessary repository permissions, but pipelines aren't getting triggered by your comments, make sure that your membership is **public** in the repository's organization, or directly add yourself as a repository collaborator. Pipelines can’t see private organization members unless they are direct collaborators or belong to a team that is a direct collaborator. You can change your GitHub organization membership from private to public here (replace `Your-Organization` with your organization name): `https://github.com/orgs/Your-Organization/people`.
+
+## Informational runs
+[!INCLUDE [informational-runs](../includes/information-run-include.md)]
+
+Learn more about [informational runs](../process/information-run.md).
+
 
 [!INCLUDE [ci-triggers](includes/source-options.md)]
 
@@ -539,7 +551,7 @@ Statuses for PAT or OAuth GitHub connections are only sent at the run level. In 
 
 ### GitHub Checks
 
-For pipelines set up using the Azure Pipelines [GitHub app](#github-app-authentication)), the status is posted back in the form of GitHub Checks. GitHub Checks allow for sending detailed information about the pipeline status and test, code coverage, and errors. The GitHub Checks API can be found [here](https://developer.github.com/v3/checks/).
+For pipelines set up using the Azure Pipelines [GitHub app](#github-app-authentication), the status is posted back in the form of GitHub Checks. GitHub Checks allow for sending detailed information about the pipeline status and test, code coverage, and errors. The GitHub Checks API can be found [here](https://developer.github.com/v3/checks/).
 
 For every pipeline using the GitHub App, Checks are posted back for the overall run and each job in that run.
 

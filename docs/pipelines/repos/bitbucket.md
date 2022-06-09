@@ -4,7 +4,7 @@ description: Using a Bitbucket Cloud repository with Azure Pipelines
 ms.topic: reference
 ms.author: vijayma
 author: vijayma
-ms.date: 03/26/2021
+ms.date: 05/31/2022
 monikerRange: azure-devops
 ---
 
@@ -210,6 +210,11 @@ Select a branch name from the drop-down menu and select **Include** or **Exclude
 For included branches, a build will be triggered on each push to a pull request targeting that branch.
 
 ---
+
+## Informational runs
+[!INCLUDE [informational-runs](../includes/information-run-include.md)]
+
+Learn more about [informational runs](../process/information-run.md).
 
 ## FAQ
 

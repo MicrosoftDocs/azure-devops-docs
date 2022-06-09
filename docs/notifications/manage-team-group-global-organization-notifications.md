@@ -8,7 +8,7 @@ ms.custom: contperf-fy21q2, cross-project
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 05/24/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -30,7 +30,7 @@ For example, when a high priority work item is assigned to your team's area path
 - To manage notifications, you must be an administrator at the level you want to manage them:
 	- Team administrator to modify subscription for a team
 	- A member of the **Project Administrators** group to create or modify subscriptions for a project.  
-	- A member of the **Project Collection Administrators** group to create or modify subscriptions for an organization orcollection.  
+	- A member of the **Project Collection Administrators** group to create or modify subscriptions for an organization or collection.  
 
 	If you're not an administrator, get added as one. See [Add a team administrator](../organizations/settings/add-team-administrator.md), [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md), or [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
 
@@ -70,7 +70,8 @@ A subscription lets you control what your team is notified of and how the team r
      | **Team members by role** | Only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification. |  
      | **Team preference**      | Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).   |  
      | **Custom email address** | Send an email to a specified email address.    |  
-     | **All team members**     | Send an individual email to each member of the team.        |   
+     | **All team members**     | Send an individual email to each member of the team.        | 
+     | **SOAP**  | Send email notifications to subscribers of SOAP service.     |
 
    For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 
@@ -85,7 +86,7 @@ A subscription lets you control what your team is notified of and how the team r
 
     ![Screenshot of selected scope.](media/new-sub-scope.png)
 
-3. Optionally, configure additional filter criteria.
+3. Optionally, configure more filter criteria.
 
     ![Screenshot of configuring additional filter criteria.](media/new-sub-filter-conditions.png)
 
@@ -136,7 +137,7 @@ A subscription lets you control what your team is notified of and how the team r
 
     ![Select scope](media/new-sub-scope.png)
 
-1. Optionally, configure additional filter criteria.
+1. Optionally, configure more filter criteria.
 
     ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
@@ -184,7 +185,7 @@ A subscription lets you control what your team is notified of and how the team r
 
     ![Select scope](media/new-sub-scope.png)
 
-7. Optionally, configure additional filter criteria.
+7. Optionally, configure more filter criteria.
 
     ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
@@ -200,7 +201,7 @@ A subscription lets you control what your team is notified of and how the team r
 ## Manage global delivery settings
 
 Global notifications apply to all **projects** defined for an organization or collection. 
-Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. It's a default setting which applies only if the team or group hasn't explicitly set the option. For more information, see [Global notifications](about-notifications.md#global-notifications).
+Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. It's a default setting, which applies only if the team or group hasn't explicitly set the option. For more information, see [Global notifications](about-notifications.md#global-notifications).
 
 ::: moniker range="azure-devops"
 

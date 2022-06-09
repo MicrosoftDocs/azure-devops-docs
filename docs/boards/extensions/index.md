@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/01/2021
+ms.date: 06/02/2022 
 ---
 
 # Overview of extensions for Azure Boards
@@ -30,7 +30,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ## Product planning 
 
 > [!NOTE]   
-> Several extensions, such as the Feature Timeline and Epic Roadmap extension and the Dependency Tracker extension, are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
+> Several extensions, such as the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)  and [Delivery Plan](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans) extensions, are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
 
 ::: moniker range="azure-devops"
 
@@ -49,10 +49,9 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker-end
 
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="azure-devops"
 - [Feature Timeline](feature-timeline.md)
-- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-- [Dependency Tracker](dependency-tracker.md)
+- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
@@ -61,12 +60,11 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 - [Delivery Plans](delivery-plans.md)
 - [Feature Timeline](feature-timeline.md)
-- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-- [Dependency Tracker](dependency-tracker.md)
+- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
@@ -76,7 +74,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 ::: moniker range="azure-devops-2019"
 
-- [Delivery Plans](../plans/review-team-plans.md)
+- [Delivery Plans](delivery-plans.md)
 - [Feature Timeline](feature-timeline.md)
 - [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
@@ -86,7 +84,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-- [Delivery Plans](../plans/review-team-plans.md)
+- [Delivery Plans](delivery-plans.md)
 - [Feature Timeline](feature-timeline.md)
 - [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
@@ -95,12 +93,6 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 ## Customize work item types
 
-::: moniker range="tfs-2018"  
-
-- [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
-- [Multivalue control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -108,6 +100,14 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work)
+
+::: moniker-end
+
+
+::: moniker range="tfs-2018"  
+
+- [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
+- [Multivalue control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)
 
 ::: moniker-end
 
@@ -141,7 +141,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
  
 ## Command-line interface
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 - [Azure DevOps CLI](../../cli/index.md)
 - [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
@@ -149,8 +149,13 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 - [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
 
 ::: moniker-end
+
+
+## Related articles
+
+- [Cross-service integration overview](../../cross-service/cross-service-overview.md)

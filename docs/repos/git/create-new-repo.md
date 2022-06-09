@@ -5,7 +5,7 @@ description: Create a new Git repo in an Azure DevOps Services or Team Foundatio
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
 ms.technology: devops-code-git 
 ms.topic: quickstart
-ms.date: 11/13/2020
+ms.date: 05/24/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -28,17 +28,19 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Navigate to the **Repos** page in your project by browsing to `https://<your account name>.visualstudio.com`, hovering your mouse over the name of your project, and selecting the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you've accessed it recently.
+1. Open the **Repos** page in your project by browsing to `https://dev.azure.com/OrganizationName`, hover your mouse over the name of your project, and select the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you've accessed it recently.
 
-   ![Select project](media/repo-mgmt/select-project-repos.png)
+   ![Screenshot of organization or collection page that lists projects.](media/repo-mgmt/select-project-repos.png)
 
 2. From the repo drop-down, select **New repository**.
 
-   ![Manage repositories](media/repo-mgmt/new-repository.png)
+   ![Screenshot of repository menu, select New repository.](media/repo-mgmt/new-repository.png)
 
-3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo. The [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
+3. In the **Create a new repository** dialog, verify that Git is the repository type and enter a name for your new repository. For naming restrictions, see [Naming restrictions, Azure Repos (git)](../../organizations/settings/naming-restrictions.md#repos-git). 
 
-   ![Set options for your new repo in the Create a Git repo dialog](media/repo-mgmt/create-a-new-repository.png)
+   ![Screenshot of Create a new repository dialog.](media/repo-mgmt/create-a-new-repository.png)
+
+	You can also add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo. The [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
 
 4. When you're happy with the repo name and choices, select **Create**.
 
@@ -53,15 +55,17 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 1. Navigate to your project by browsing to `https://dev.azure.com/<your organization name>` and selecting the name of your project. You can select it from the **All projects** list, or from the **Recent** projects list at the top if you've accessed it recently.
 
-   ![Select project](media/repo-mgmt/select-vsts-project.png) 
+   ![Screenshot of collection page that lists projects, TFS 2018 version.](media/repo-mgmt/select-vsts-project.png) 
 
 2. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 
-   ![Choose new repository from the web portal](media/repo-mgmt/create-vsts-repo.png)
+   ![Screenshot of Code page, Repository menu selection, Choose new repository, TFS 2018 version.](media/repo-mgmt/create-vsts-repo.png)
 
-3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo. The [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
+3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. For naming restrictions, see [Naming restrictions, Azure Repos (git)](../../organizations/settings/naming-restrictions.md#repos-git). 
 
-   ![Set options for your new repo in the Create a Git repo dialog](media/repo-mgmt/create-a-new-repository.png)
+   ![Screenshot of  Create a new repoistory dialog, TFS 2018 version.](media/repo-mgmt/create-a-new-repository.png)
+
+	You can also add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo. The [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
 
 4. When you're happy with the repo name and choices, select **Create**.
 
@@ -80,11 +84,11 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. From your web browser, open the team project for your organization in Azure DevOps and select **Repos** > **Files**. If you don't have a team project, [create one now](../get-started/sign-up-invite-teammates.md). 
 
-   ![Repos files](./media/clone-repo/repos-files.png)
+   ![Screenshot of Repos>Files.](./media/clone-repo/repos-files.png)
 
 2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
 
-   ![Retrieve the clone URL](./media/clone-repo/clone-repo.png)
+   ![Clone respository dialog.](./media/clone-repo/clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Then, browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
@@ -108,7 +112,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 
-   ![Retrieve the clone URL](media/repo-mgmt/clone-git-repo.png)
+   ![Screenshot of Clone repo dialog, TFS 2018 version.](media/repo-mgmt/clone-git-repo.png)
 
 2. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
 
@@ -152,11 +156,11 @@ In this step, we'll make a change to the files on your computer, commit the chan
 
 6. Switch back to the web portal and select **History** from the **Code** view to view your new commit. The new repo has two commits. The first is the commit where the README and .gitignore were added when the repo was created. The second is the commit you just made.
 
-   ![View commit history](media/repo-mgmt/commit-push.png)
+   ![Screenshot of View commit history.](media/repo-mgmt/commit-push.png)
 
 7. Switch to the **Files** tab and select the README file to view your changes.
 
-   ![View changed file](media/repo-mgmt/readme-changed-file.png)  
+   ![Screenshot of Files page, View changed file.](media/repo-mgmt/readme-changed-file.png)  
 
 ## Next steps
 

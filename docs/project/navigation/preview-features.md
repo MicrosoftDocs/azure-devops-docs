@@ -58,7 +58,7 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column span="3":::
       [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
       [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
-      [Dependency Tracker](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) Preview Features  
+      Dependency Tracker Preview Features (ignore this setting for now)  
       [Experimental themes](#experimental-themes)  
       [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
    :::column-end:::
@@ -213,7 +213,7 @@ To access the Preview features options, open your profile menu. The profile menu
 Choose :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then choose **Preview features**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open User settings](media/preview-features/open-profile-menu-s170.png)   
+> ![Screenshot of Open User settings with New Account Manager enabled.](media/preview-features/open-profile-menu-s170.png)   
 
 
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
@@ -221,14 +221,14 @@ Choose :::image type="icon" source="../../media/icons/user-settings-gear.png" bo
 Choose **Account manager for your account** and then choose **Preview features**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Preview Features](media/preview-features/open-preview-features-old-account-manager.png)
+> ![Screenshot of Open Preview Features, New Account Manager not enabled.](media/preview-features/open-preview-features-old-account-manager.png)
 
 ---
 
 To enable or disable a feature, choose the slider. 
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for yourself](media/preview-features/preview-features-user.png) 
+> ![Screenshot of Preview features options for yourself.](media/preview-features/preview-features-user.png) 
 
 For information on other user settings and preferences, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
 
@@ -254,7 +254,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 1. Open your profile menu by choosing your image icon and select **Manage features**.  
 
-	:::image type="content" source="media/manage-features/open-profile-2020.png" alt-text="Open profile menu":::
+	:::image type="content" source="media/manage-features/open-profile-2020.png" alt-text="Screenshot of Open profile menu, Azure DevOps SErver 2020.":::
 
 1. Select the level from the menu provided. 
 
@@ -264,13 +264,13 @@ When you enable a feature at the organization level, you essentially turn it on 
 1. To enable or disable a feature, choose the slider. 
 
 	**User-level**  
-	:::image type="content" source="media/manage-features/manage-features-user-2020.png" alt-text="Manage features for the user":::
+	:::image type="content" source="media/manage-features/manage-features-user-2020.png" alt-text="Screenshot of Manage features for the user.":::
 
 	**Project-level**  
-	:::image type="content" source="media/manage-features/manage-features-project-2020.png" alt-text="Manage features for the project":::
+	:::image type="content" source="media/manage-features/manage-features-project-2020.png" alt-text="Screenshot of Manage features for the project.":::
 
 	**Collection-level**  
-	:::image type="content" source="media/manage-features/manage-features-collection-2020.png" alt-text="Manage features for the collection":::
+	:::image type="content" source="media/manage-features/manage-features-collection-2020.png" alt-text="Screenshot of Manage features for the collection.":::
 
 When you enable a feature at the project or collection-level, you essentially turn it on for all users. If you disable a feature at the project or collection-level, user settings are not changed. Users can enable or disable the feature on their own. 
 
@@ -286,12 +286,12 @@ When you enable a feature at the project or collection-level, you essentially tu
 When you select **Theme** from the Profile menu you can select between **Dark** and **Light** themes for the display of Azure DevOps web portal. 
 
 > [!div class="mx-imgBorder"]  
-> ![Profile menu, Theme selected](media/preview-features/menu-theme.png)
+> ![Screenshot of Profile menu, Theme selected.](media/preview-features/menu-theme.png)
 
 With **Experimental themes** enabled, you can select among a number of additional themes. 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose your theme dialog](media/preview-features/choose-your-theme.png)
+> ![Screenshot of Choose your theme dialog. ](media/preview-features/choose-your-theme.png)
 
 
 ## Features now enabled for all Azure DevOps Services 
@@ -301,6 +301,36 @@ With **Experimental themes** enabled, you can select among a number of additiona
 - [New user hub](../../organizations/accounts/add-organization-users.md)  
 - [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)  
 - [New Navigation](https://devblogs.microsoft.com/devops/new-navigation/)
+- [Wiki](../wiki/add-edit-wiki.md)  
+- [Combine email recipients](../../notifications/manage-team-group-global-organization-notifications.md) 
+- [New experience in Code, Work Item, & Wiki search](/previous-versions/azure/devops/2017/oct-06-vsts#code)  
+- [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
+- [Team expansion for notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+- [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
+
+### Azure Artifacts 
+
+- [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
+- [Updated package experience](../../artifacts/index.yml) 
+
+### Azure Boards, Dashboards, and Analytics 
+
+- [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
+- [Enable group by tags for work item chart widget on dashboard](../../boards/queries/add-tags-to-work-items.md#group-by-tags)  
+- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)
+- [New Queries Experience](../../boards/queries/view-run-query.md)   
+- [New Work Items](../../boards/work-items/view-add-work-items.md)   
+- [New Dashboards Experience](../../report/dashboards/dashboards.md)    
+- 
+### Azure Repos
+
+- New TFVC pages
+- [Git Forks](../../repos/git/forks.md) 
+- [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos)  
+- [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
+- [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
+- [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
+
 
 ### Azure Pipelines
  
@@ -315,48 +345,11 @@ With **Experimental themes** enabled, you can select among a number of additiona
 - [Symbol server](../../pipelines/artifacts/symbols.md)  
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers)  
 
-### Azure Boards 
-
-- [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
-- [Enable group by tags for work item chart widget on dashboard](../../boards/queries/add-tags-to-work-items.md#group-by-tags)  
-- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)- [New Queries Experience](../../boards/queries/view-run-query.md)   
-- [New Work Items](../../boards/work-items/view-add-work-items.md)   
-
-### Azure Repos
-
-- New TFVC pages
-- [Git Forks](../../repos/git/forks.md) 
-- [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos)  
-- [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
-- [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
-- [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
-
-
-### Azure Artifacts 
-
-- [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
-- [Updated package experience](../../artifacts/index.yml) 
 
 ### Azure Test Plans
 
 - [New Test Plans Page](../../test/navigate-test-plans.md)  
 - [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  
-
-### Dashboards and Analytics 
-
-- [Analytics Views](../../report/powerbi/what-are-analytics-views.md)
-- [New Dashboards Experience](../../report/dashboards/dashboards.md)  
-
-### Social tools 
-
-- [Wiki](../wiki/add-edit-wiki.md)  
-- [Combine email recipients](../../notifications/manage-team-group-global-organization-notifications.md) 
-- [New experience in Code, Work Item, & Wiki search](/previous-versions/azure/devops/2017/oct-06-vsts#code)  
-- [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
-- [Team expansion for notifications](../../notifications/manage-team-group-global-organization-notifications.md)
-
-### Organization, project, and billing management
-- [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
 
 ::: moniker-end
 

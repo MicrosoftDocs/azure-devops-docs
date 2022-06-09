@@ -565,7 +565,6 @@ You can learn more about defining, planning, and executing your sprints from the
 
 And, from these industry resources:  
 - [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  
-- [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
 ::: moniker range="< azure-devops"
 

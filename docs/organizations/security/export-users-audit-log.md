@@ -126,7 +126,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ### List users
 
-You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user list [--org] [--skip] [--top]
