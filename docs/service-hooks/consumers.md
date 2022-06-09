@@ -5,13 +5,15 @@ toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.technology: devops-collab
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+ms.author: chcomley
+author: chcomley
+monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---
 
 # Service hook consumers for Azure DevOps Services
 
-[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use service hook consumers to [programmatically create a subscription](./create-subscription.md). The subscription specifies the event, the consumer and the action. 
 Select the consumer that you want to use in your subscription from the following consumers:

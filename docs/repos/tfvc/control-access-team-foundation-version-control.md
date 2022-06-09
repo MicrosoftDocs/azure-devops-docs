@@ -1,26 +1,28 @@
-﻿---
+---
 title: Control Access to Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Control Access to Team Foundation Version Control
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Control Access to Team Foundation Version Control
+# Control access to Team Foundation Version Control
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 Team Foundation version control supports granting access control permissions to Windows Groups, Windows Users, and Team Foundation Groups. Permissions can be inherited from the containing folder, or you can declare permissions explicitly.
 
 Permission settings are in the form of either **Grant** or **Deny**. **Deny** always overrides **Grant**, even if **Deny** is inherited and **Grant** is explicitly defined.
 
-**Required Permissions**
+## Prerequisites
 
-To complete this task, you must have the **Manipulate security settings** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To complete this task, you must have the **Manipulate security settings** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ### To set permissions for users or groups
 
@@ -50,8 +52,6 @@ To complete this task, you must have the **Manipulate security settings** permis
 
 8.  Click **OK** to close the **Properties** dialog box.
 
-## See Also
+## Related articles
 
-#### Other Resources
-
-[Administering Team Foundation Version Control](./configure-check-out-settings.md)
+- [Configure check-out settings](configure-check-out-settings.md)

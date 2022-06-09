@@ -5,14 +5,15 @@ description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.technology: devops-code-tfvc
 ms.topic: overview
-ms.date: 06/02/2020
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# What is Team Foundation Version Control
+# What is Team Foundation Version Control?
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
@@ -100,25 +101,28 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   When you need to prevent a file or folder from being checked out and altered, you can lock it.
 
-## Related sections
+<a id="command-line-only" />
 
-- [Build and test the app in your automated build system](../../pipelines/get-started/what-is-azure-pipelines.md)    
+## Operations available only from the tf ommand-Line  
 
-  Install a bit of software to create a build server, and then fill in a few fields to create a Continuous integration (CI) or nightly build process that enables you to leverage the power, convenience, scalability, and reliability of an automated build system to build your app.
+The following table lists tasks for Team Foundation version control that you can perform only at a command prompt using the **tf** command line tool.
 
-- [Naming restrictions in Team Foundation](../../organizations/settings/naming-restrictions.md)     
-
-  Provides information about naming syntax, conventions, and limitations.
-
-- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)     
-
-- [Learn about TFVC permissions](../../organizations/security/permissions.md#tfvc)    
-
-We are not currently republishing the following sections. However, you can read the Visual Studio 2010 version of this guidance.
-
-- [Administering Team Foundation Version Control](./configure-check-out-settings.md) 
+| Task| Command  | 
+|-------------------------------|-------------------|
+| Delete another user's workspace.| Workspace Command with the /delete option. | 
+| Undo another user's check-out.|  Undo command| 
+| Remove another user's lock.| Lock  command|  
+| Define label scope.| Label  command| 
+| Perform a baseless merge.| Merge  command| 
+| Permanently destroy content.| Destroy  command| 
+| Roll back the effect of one or more changesets.| Rollback  command| 
 
 ## Related articles 
 
 - [What is version control?](/devops/develop/git/what-is-version-control)  
+- [Configure check-out settings](configure-check-out-settings.md) 
 - [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
+- [Build and test the app in your automated build system](../../pipelines/get-started/what-is-azure-pipelines.md)  
+- [Naming restrictions in Team Foundation](../../organizations/settings/naming-restrictions.md) 
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)     
+- [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)     

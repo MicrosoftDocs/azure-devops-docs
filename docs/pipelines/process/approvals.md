@@ -12,7 +12,7 @@ monikerRange: azure-devops
 
 # Define approvals and checks
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining [conditions](conditions.md) on the stage. Another way to control if and when a stage should run is through **approvals and checks**. 
 
@@ -86,10 +86,8 @@ Given the high flexibility, Azure functions provide a great way to author your o
 The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](../tasks/deploy/azure-function-app.md) for more details.
 
 > [!NOTE]
-> User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
-> [!NOTE]
-> Please prefer the predefined "$(system.AccessToken)" over custom access tokens if you plan to send requests to ADO from your Azure Function. The token belongs to Build Service Identity.
 
 ## Invoke REST API
 
@@ -98,7 +96,7 @@ Invoke REST API check enables you to integrate with any of your existing service
 The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](../tasks/utility/http-rest-api.md) for more details.
 
 > [!NOTE]
-> User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
+> User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.
 
 ## Query Azure Monitor Alerts
 Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resource. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
@@ -208,10 +206,10 @@ This scenario can be enabled
 3.	You can configure both the checks on a resource. The stage would wait on approvals and business hours. It would start in the next scheduled window after approvals are complete. 
 
 ### Can I wait for completion of security scanning on the artifact being deployed?
-In order to wait for completion of security scanning on the artifact being deployed, you would need to use an external scanning service like AquaScan. The artifact being deployed would need to be uploaded at a location accessible to the scanning service before the start of checks, and can be identified using [pre-defined variables](../build/variables.md?tabs=yaml#build-variables).
+In order to wait for completion of security scanning on the artifact being deployed, you would need to use an external scanning service like AquaScan. The artifact being deployed would need to be uploaded at a location accessible to the scanning service before the start of checks, and can be identified using [predefined variables](../build/variables.md?tabs=yaml#build-variables).
 Using the Invoke REST API check, you can add a check to wait on the API in the security service and pass the artifact identifier as an input.
 
 ### How can I use output variables from previous stages in a check?
-By default, only pre-defined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
+By default, only predefined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
 
 

@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Azure Key Vault task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 ### Overview
 

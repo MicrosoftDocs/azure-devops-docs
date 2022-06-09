@@ -7,17 +7,17 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # SSH Deployment task
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run shell commands or a script on a remote machine using SSH.
 This task enables you to connect to a remote machine using SSH and run commands or a script.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -99,7 +99,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

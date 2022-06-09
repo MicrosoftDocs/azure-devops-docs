@@ -14,7 +14,7 @@ ms.date: 01/26/2021
 
 # End-to-end traceability 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 One of the chief advantages of adopting a platform such as Azure DevOps is the support it provides to trace work from requirements to deployment. You gain insight at each step of decisions made and the software deployed. The scenarios illustrated in this article are supported when you use Azure Repos git repositories. 
 

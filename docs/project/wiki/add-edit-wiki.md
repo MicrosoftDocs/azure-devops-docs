@@ -9,13 +9,13 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 02/05/2021
 ---
 
 # Add and edit wiki pages
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can add a title and content to a page, once the [wiki Git repository is provisioned](./wiki-create-repo.md) for your team project. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
@@ -39,7 +39,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 > [!div class="mx-imgBorder"]  
 > ![Save page with a custom message](media/wiki/wiki-save-with-message.png)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Wiki command-line tools
 
@@ -90,7 +90,7 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 To add a wiki page, enter the `az devops wiki page create` command. 
 
@@ -119,7 +119,7 @@ accepted values: ascii, utf-16be, utf-16le, utf-8
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ### Examples
 
@@ -156,7 +156,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 
 To edit an existing wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly go to the edit of the current page. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="> azure-devops-2020"
 
 For code wikis, you can edit a page in the side-by-side editor, using the markdown toolbar to create your content. This experience is identical to the process in a project wiki. You can edit wiki pages in the Repos hub also by using the option, **Edit in Repos**.  
 
@@ -175,7 +175,7 @@ To delete a page, open the context menu from the tree or the one inside the page
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ### Edit wiki page
 
@@ -205,7 +205,7 @@ az devops wiki page update --path
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 
 ### Examples

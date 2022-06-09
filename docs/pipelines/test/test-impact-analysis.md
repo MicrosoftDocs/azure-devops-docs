@@ -3,18 +3,18 @@ title: Use Test Impact Analysis
 description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.topic: conceptual
-ms.custom: continuous-test, seodec18
+ms.custom: continuous-test, seodec18, cross-service
 ms.author: shashban
 author: shashban
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE] 
 > Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
@@ -47,7 +47,7 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 * **Running tests in parallel**. In this case, tests will run serially.
 * **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 

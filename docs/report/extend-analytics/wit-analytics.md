@@ -3,7 +3,7 @@ title: Query work tracking data using OData
 titleSuffix: Azure DevOps
 description: Learn how to generate work item tracking reports for Azure DevOps using OData Analytics.
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +13,7 @@ ms.date: 09/30/2020
 
 # Query your work tracking data using OData Analytics
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 
 Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
@@ -55,7 +55,7 @@ All other URL parts are specified as an extra part of the query string.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.  
+- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.  
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).

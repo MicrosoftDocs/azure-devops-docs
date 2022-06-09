@@ -1,6 +1,6 @@
 ---
 title: View and configure team velocity
-titleSuffix: Azure DevOps Services 
+titleSuffix: Azure DevOps 
 description: Learn how to calculate and track team velocity across sprints using the in-context Analytics report or velocity widget chart in Azure DevOps Services.
 ms.custom: dashboards   
 ms.technology: devops-analytics  
@@ -9,13 +9,13 @@ ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops' 
-ms.date: 09/28/2021
+ms.date: 06/03/2022
 ---
 
 
 # View or configure team velocity
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -29,14 +29,14 @@ Teams track their velocity to help them determine how much work they can do spri
  There are two velocity charts: the in-context report you can view from a team backlog or Kanban board and the Velocity widget you can add to a dashboard. 
 
 **Example: Velocity widget showing six sprints of velocity**  
-![6 sprint velocity widget](media/team-velocity-six-iterations.png) 
+![Screenshot of velocity widget showing 6 sprints worth of data.](media/team-velocity-six-iterations.png) 
 
 > [!NOTE]
 > The Velocity widget is based on Analytics data. Analytics is generally available for Azure DevOps Services and in preview as an extension for Azure DevOps Server 2019. For TFS 2018 and earlier versions, you have access to the [velocity chart provided by the work tracking data store](#velocity-chart).
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. Each team is associated with one and only one velocity chart.  
 
@@ -47,14 +47,15 @@ Velocity provides a useful metric for gaining insight into how much work your te
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
 
 **Example Velocity chart from the work tracking data store**  
-![3 sprint velocity chart](media/ALM_DS_Velocity_Chrt_S.png) 
+![Screenshot of sprint velocity chart with 3 sprints worth of data.](media/ALM_DS_Velocity_Chrt_S.png) 
 
 ::: moniker-end  
 
 Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. If your team hasn't completed a sprint or if you're working on items before a sprint start date, Velocity would have no data to analyze and forecast. You might see this message: *Set iteration dates to use this widget*. To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
 
 **Example: Velocity showing Set iteration dates to use this widget**  
-![Set iteration dates](media/team-velocity-set-iteration-dates.png)
+
+![Screenshot showing the need to set iteration dates.](media/team-velocity-set-iteration-dates.png)
 
 [!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
 
@@ -78,14 +79,13 @@ Use this article to learn:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 > [!div class="checklist"] 
 > * How to view the Velocity in-context report (work tracking data store) 
 > * Required and recommended team activities to support velocity tracking   
 
 ::: moniker-end
-
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -104,17 +104,17 @@ Use this article to learn:
 1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+    > ![Screenshot that shows Open Boards, Backlogs, and select a team.](/azure/devops/boards/sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
 
     To select another backlog, open the selector and then select a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
-    > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
+    > ![Screenshot that shows how to select another team.](/azure/devops/boards/sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. Or
 
     > [!div class="mx-imgBorder"]  
-    > ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile-s155.png) 
+    > ![Screenshot that shows how to select product backlog level, Backlog items, Stories, or Requirements.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile-s155.png) 
 
 ::: moniker-end
 
@@ -122,7 +122,7 @@ Use this article to learn:
 
 1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
-	![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
+	![Screenshot that shows how to Open Boards, Backlogs, for a team for Azure DevOps Server 2019.](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
     To select another backlog, open the selector and then select a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
@@ -132,31 +132,24 @@ Use this article to learn:
 1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Screenshot of the Backlog items drop-down optio.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+    > ![Screenshot of the Backlog items drop-down option.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
+From your web portal, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Boards > Backlogs page](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Screenshot of Open Backlogs page, TFS 2018.](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-standard.png) 
 
 To select another team, open the project and team selector. Select a different team, or select the **Browse** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
+> ![Screenshot of select another team, TFS 2018.](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
-
-On your web browser, open your team's product backlog. Select **Boards** > **Backlogs**. 
-
-![Boards > backlogs, TFS 2015, 2013 web portal](/azure/devops/boards/backlogs/media/backlogs-boards-plans/open-backlog-tfs-2015.png)
-
-::: moniker-end
 
 <a id="velocity-chart">   </a>
 
@@ -170,7 +163,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 1. You open the Velocity report for your product or portfolio backlog by choosing **Analytics**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Analytics](media/cfd/analytics-summary-cfd-velocity.png)
+	> ![Screenshot of Backlogs, Open Analytics.](media/cfd/analytics-summary-cfd-velocity.png)
 
 1. To change to a different backlog, choose from the backlog selector.  
 1. Next, select **View full report** for Velocity.  
@@ -182,22 +175,23 @@ Velocity reports are available for each backlog level, both product and portfoli
 	For example, for the 07_2019 sprint, 131 items are planned.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Velocity Analytics](media/velocity/analytics-velocity-azure-devops.png)
+	> ![Screenshot of Velocity Analytics report.](media/velocity/analytics-velocity-azure-devops.png)
 
-	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.  
-	- **Planned** - calculated based on the amount of work assigned to the sprint before the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
+	<a id="velocity-legend" />With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.  
+	- **Planned**: calculated based on the amount of work assigned to the sprint before the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
 		> [!TIP]   
 		> To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
-	- **Completed** - calculated based on the amount of work  assigned to the sprint before the start of the sprint and completed before the sprint end date.
-	- **Completed Late**  - calculated based on the amount of work assigned to the sprint before the start of the sprint but was completed after the end of the sprint.  
-	- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint before the start of the sprint and hasn't been set to completed. 
-
+	- **Completed**: calculated based on the amount of work assigned to the sprint and whose workflow **State** corresponds to the *Completed* category state, and completed on or before the sprint end date.  
+	- **Completed Late**: calculated based on the amount of work assigned to the sprint that is completed after the sprint end date. If you assign work items to a sprint, even one in the past, they will show up in this calculation once the workflow **State** corresponds to a *Completed* category state.  
+	- **Incomplete**: Amount of work not completed, calculated based on the amount of work assigned to the sprint, and the workflow **State** corresponds to the *In Progress* category state.  
+		> [!NOTE]   
+		> Items assigned to a *Proposed* or *Resolved* workflow state category aren't included in any of the calculations for **Completed**, **Completed Late**, or **Incomplete**.  To learn more about category states, see [How workflow category states are used in Azure Boards backlogs and boards](../../boards/work-items/workflow-and-state-categories.md).
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
 1. To add the report to a dashboard, select the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png) 
+	> ![Screenshot of Analytics in-context report, Copy to dashboard option.](media/add-charts/add-analytics-chart-abbreviated.png) 
 	
 	Select the dashboard and select **OK**.  
 
@@ -211,12 +205,12 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 1. (1) Check that you've selected the right project, (2) select **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-	![Open Boards, Backlogs, for a team](../../boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
+	![Screenshot to Open Boards, Backlogs, for a team, Azure DevOps Server 2019. ](../../boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
 	To select another team, open the selector and select a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
-	> ![Select another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![Screenshot to Select another team, Azure DevOps Server 2019.](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
 	> Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
@@ -224,12 +218,12 @@ Velocity reports are available for each backlog level, both product and portfoli
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select product backlog level, Backlog items, Stories, or Requirements in Azure DevOps Server 2019](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Screenshot to select product backlog level, Backlog items, Stories, or Requirements in Azure DevOps Server 2019.](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 2. Open the velocity chart.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select product backlog level, Backlog items, Stories, or Requirements](media/velocity/velocity-forecast-open-chart-vert.png) 
+	> ![Screenshot to select product backlog level, Backlog items, Stories, or Requirements, Azure DevOps Server 2019.](media/velocity/velocity-forecast-open-chart-vert.png) 
 
 	For charts to appear, your team must carry out these activities: 
 	- Select sprints for your team.
@@ -246,11 +240,11 @@ Velocity reports are available for each backlog level, both product and portfoli
    > Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
    ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1.	From the web portal, open the product backlog and then select the velocity chart.  
 
-	![Select the velocity chart in the upper right area of the page](media/velocity/velocity-forecast-open-chart.png)  
+	![Screenshot to select the velocity chart in the upper right area of the page.](media/velocity/velocity-forecast-open-chart.png)  
 
 	For charts to appear, your team must carry out these activities: 
 	- Select sprints for your team.
@@ -261,7 +255,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	As this chart shows, velocity will fluctuate from sprint-to-sprint for different kinds of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
 
-	![Web portal, Velocity chart showing seven sprints of in progress and completed work](media/team-velocity-chart-web-7-iterations.png)  
+	![Screenshot of velocity chart showing seven sprints of in progress and completed work.](media/team-velocity-chart-web-7-iterations.png)  
 
 	> [!NOTE]  
 	> Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
@@ -303,7 +297,7 @@ You configure your velocity widget for a single team. If you want to view the ve
 	
 	Modify the title, select the team, and then select either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
-	<img src="media/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget" />    
+	<img src="media/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget." />    
 
 1. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 
@@ -337,8 +331,9 @@ You configure your velocity widget for a single team. If you want to view the ve
 
 3. Select **Save** when done. The following image shows Velocity based on Story Points and eight sprints of data. 
    
-	![Example Velocity widget, 8 iterations](media/commerce-team-velocity-eight-iterations.png) 
+	![Screenshot of example Velocity widget, 8 iterations.](media/commerce-team-velocity-eight-iterations.png) 
 
+	For information on **Planned**, **Completed**, **Completed Late**, and **Incomplete**, see the [velocity legend earlier in the article](#velocity-legend). 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/velocity-activities.md)] 

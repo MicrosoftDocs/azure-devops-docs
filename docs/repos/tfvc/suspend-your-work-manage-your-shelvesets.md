@@ -5,42 +5,39 @@ description: Suspend your work and manage your shelvesets
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Suspend your work and manage your shelvesets
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 For a variety of reasons, sometimes you need to set aside some or all of your work in progress. Shelvesets are useful when you want to stop work for:
 
 -   **Interruption:** You have pending changes that are not ready for check in, but you need to work on a different task.
-
 -   **Collaboration:** You have pending changes that are not ready for check in but you need to share them with another team member.
-
 -   **Code Review:** You want another team member to perform a code review of your pending changes.
 
 	> [!TIP]
 	> If you are using Visual Studio Premium or a more powerful edition, you can use the [Code Review](day-life-alm-developer-write-new-code-user-story.md) feature.
 
 -   **Private Build:** Before you check in your changes, you can use your automated build system to build and test your code.
-
 -   **Backup:** You have work in progress that you cannot finish now so you want a backup copy that is stored on your server and available to other team members who might need to access it.
-
 -   **Handoff:** You have work in progress that you want to hand off to another team member.
 
 You can move your [pending changes](develop-code-manage-pending-changes.md) to a shelveset on the server and then clean your [workspace](create-work-workspaces.md). The shelveset saves and stores not only your file revisions, but also the Comment, the list of Related Work Items, and check-in notes (if you evaluate policies before shelving).
 
-**Required permissions**
+## Prerequisites
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
+You must be one of the **Contributors** for your project. To learn more, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 ## Suspend and resume your work from the My Work page
 
 > [!NOTE]
-> The My Work feature is available only in Visual Studio Premium and Visual Studio Ultimate.
+> The **My Work** feature is available only in Visual Studio Premium and Visual Studio Ultimate.
 
 
 From the **My Work** page you can save and then restore not only your file changes and related work items, but also the position of your open windows, breakpoints, and other important cues.
@@ -130,11 +127,8 @@ The **Shelveset Details** page appears.
 ## Work from the command prompt
 
 -    [Shelve Command](shelve-command.md) : Create or delete a shelveset.
-
 -    [Shelvesets Command](shelvesets-command.md) : List shelvesets.
-
 -    [Unshelve Command](unshelve-command.md) : Unshelve a shelveset.
-
 -    [Difference Command](difference-command.md) : Compare the changes to a file in a shelveset with another version.
 
 ## Tips

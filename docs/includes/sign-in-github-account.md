@@ -9,25 +9,25 @@ ms.topic: include
 
 1. Select the sign-up link for [Azure DevOps](https://azure.microsoft.com/services/devops/), **Start free with GitHub**. If you're already part of an Azure DevOps organization, select **Sign in to Azure DevOps**.
 
-   ![Sign up for Azure DevOps](/azure/devops/media/azure-devops-start-free.png)
+   ![Sign up for Azure DevOps](../media/azure-devops-start-free.png)
 
 2. Select **Sign in with GitHub**.
 
-   ![Select Sign in with GitHub](/azure/devops/media/sign-in-github.png)  
+   ![Select Sign in with GitHub](../media/sign-in-github.png)  
 
    If you have an account in session already, select **Use another account**. You're taken to GitHub sign-in where you can enter your GitHub user name or email address.
 
 3. Enter your GitHub account credentials, and then select **Sign in**.
 
-   ![Enter GitHub credentials](/azure/devops/media/enter-github-credentials.png)
+   ![Enter GitHub credentials](../media/enter-github-credentials.png)
 
 4. Select **Authorize Microsoft corporation**.
 
-   ![Authorize Microsoft](/azure/devops/media/authorize-Microsoft-corp.png)
+   ![Authorize Microsoft](../media/authorize-Microsoft-corp.png)
 
 5. To get started with Azure DevOps, select **Continue**.
 
-   ![Choose Continue to sign up for Azure DevOps](/azure/devops/media/sign-up-azure-devops.png)
+   ![Choose Continue to sign up for Azure DevOps](../media/sign-up-azure-devops.png)
 
 An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
 
@@ -39,6 +39,6 @@ Creating a new Azure DevOps organization with your GitHub username turns on the 
 
 Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. You're now recognized as a GitHub user and the GitHub invitation experience is available to you.
 
-![Invite GitHub users policy ](/azure/devops/media/invite-github-users-policy.png)
+![Invite GitHub users policy ](../media/invite-github-users-policy.png)
 
 For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.yml).
