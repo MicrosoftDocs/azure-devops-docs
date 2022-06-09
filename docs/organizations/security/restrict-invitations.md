@@ -3,7 +3,7 @@ title: Restrict Team and Project Administrators from inviting new users
 titleSuffix: Azure DevOps Services
 description: Learn how to manage the policy that allows Team and Project Administrators to invite new users to Azure DevOps Services.
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
@@ -13,7 +13,7 @@ ms.date: 02/12/2021
 
 # Restrict new user invitations from Project and Team Administrators 
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 By default, all administrators can invite new users to their Azure DevOps organization. Disabling this policy blocks Team and Project Administrators from inviting new users. Project Collection Administrators (PCAs) can add new users to the organization, regardless of the policy status. If a user is already a member of the organization, Project and Team Administrators can add that user to a project.
 
@@ -30,7 +30,7 @@ can add users who are already in the organization to their team       |
 
 ## Prerequisites
 
-You must be a Project Collection Administrator to manage this policy.
+- You must be a member of the **Project Collection Administrator** group to manage this policy. To get added, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 ## Turn off policy
 
@@ -54,4 +54,5 @@ Now, only Project Collection Administrators can invite new users to Azure DevOps
 - [Permission lookup guide](permissions-lookup-guide.md) 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Change project-level permissions](change-project-level-permissions.md)
+- [Change project collection-level permissions](change-organization-collection-level-permissions.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Suspend work, fix a bug, and conduct a code review
 titleSuffix: Azure Repos
 description: Day in the life of a devops developer. Suspend work, fix a bug, and conduct a code review.
@@ -6,13 +6,14 @@ ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
 ms.technology: devops-code-tfvc
 ms.topic: tutorial
 ms.date: 08/25/2016
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 A powerful one-click way to switch your working context from one thread of work to another is available in Visual Studio Premium and Visual Studio Ultimate with Team Foundation Server. Also, team members can easily exchange messages about proposed changes to the code. This topic illustrates these features, continuing a tutorial that follows members of a fictitious agile team for a day.
 

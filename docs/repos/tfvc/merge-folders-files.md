@@ -5,20 +5,21 @@ description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Merge folders and files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that is forked into various branches. If you use branches, eventually your team must integrate the work that has been completed on different branches during certain phases of your project. For example, when you are ready to test a full version of your software, you will need the changes made on different feature team branches to be merged together.
 
 The procedures in this topic advise how you can use the graphical user interface of Visual Studio to merge together changes made in different branches. For information about how to perform merges at the command prompt, see [Merge Command](merge-command.md).
 
-**Required Permissions**
+## Prerequisites
 
 To perform these procedures, you must have the following permissions set:
 
@@ -28,7 +29,7 @@ To perform these procedures, you must have the following permissions set:
 
 -   If the item in the target tree is being renamed, you must have the **Check out** permission for both the source tree and the target tree set to **Allow**.
 
--   If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, see [Permissions and groups reference](../../organizations/security/permissions.md).
+-   If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, See [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md)
 
 ## Initiate a Merge from the Source Control Window
 

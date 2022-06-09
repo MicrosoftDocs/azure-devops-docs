@@ -1,22 +1,28 @@
 ---
-title: Undo command
+title: Undo TFVC command
 titleSuffix: Azure Repos
-description: Undo command
+description: Use the undo command to discard one or more pending changes to files or folders.
 ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Undo command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+# Undo command (Team Foundation Version Control)
 
-Discards one or more pending changes to files or folders.
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-**Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
+The **undo** command discards one or more pending changes to files or folders.
+ 
+## Prerequisites
+
+To use the **branch** command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf undo [/workspace:workspacename[;workspaceowner]]
@@ -124,13 +130,15 @@ c:\>tf undo /collection:http://fabrikam-3:8080/tfs/DefaultCollection
 
 Removes all pending changes to program.cs in the specified collection and workspace.
 
-## Work in Visual Studio
-
--    [Develop code and manage pending changes](develop-code-manage-pending-changes.md)  Use Visual Studio to undo pending changes.
-
 ## Tips
 
 -   To view a list of pending changes in the current or in a remote workspace, use the [Status command](status-command.md).  
 -   You can use the **/workspace** option (and as needed, the **/collection** option) to undo changes on a remote dev machine. This capability is especially useful in cases when, for example, a file has been checked out and possibly locked on a dev machine that you cannot access. See the above explanation of the **/workspace** for information about how this works.  
 -   If you need to clean your workspace (for example, because your work is interrupted by a more urgent task) and want to preserve the pending changes instead of undoing them, you can suspend them. See [Shelve Command](shelve-command.md). You can also preserve the position of your open windows, breakpoints, and other important cues. See [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).  
 -   You can also discard changes that have already been checked in. See [Undelete Command](undelete-command.md) and [Rollback Command (Team Foundation Version Control)](rollback-command-team-foundation-version-control.md).
+
+
+## Related articles
+
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Develop code and manage pending changes](develop-code-manage-pending-changes.md) 

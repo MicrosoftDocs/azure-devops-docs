@@ -5,20 +5,23 @@ description: Proxy Command
 ms.assetid: c36b124d-f1cf-4e6f-a053-3b7d501a234c
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
+# Proxy command  (Team Foundation Version Control)
 
-# Proxy Command
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+The **proxy** command configures your client computer to use a proxy server. Adds, deletes, and lists proxy records about the location and availability of one or more proxy servers within your deployment, including any remote sites.
 
-Configures your client computer to use a proxy server. Adds, deletes, and lists proxy records about the location and availability of one or more proxy servers within your deployment, including any remote sites.
+## Prerequisites
 
-**Required Permissions**
+To use the **proxy** command to configure a client computer, you must be a member of the **User** security group on the local computer. To use the **proxy** command to work with proxy records, you must have the AdminConfiguration permission. 
+For more information, see  [Security namespace and permission reference](../../organizations/security/namespace-reference.md).
 
-To use the **proxy** command to configure a client computer, you must be a member of the **User** security group on the local computer. To use the **proxy** command to work with proxy records, you must have the AdminConfiguration permission. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Syntax
 
 ```
 tf proxy ([/configure [Url]) [/collection:TeamProjectCollectionUrl]
@@ -209,7 +212,7 @@ As a developer, you can use the proxy command to configure your client to use a 
 
 As a network administrator, you can use the proxy command to add and manage records about the location of various proxy servers within your deployment of Team Foundation Server. You can use these records to help developers configure their workstations to use a proxy. If you define a global proxy, Team Foundation Server can automatically redirect developers to use it. If you have a complex network topology with multiple Active Directory domains in various geographic locations, you can set up multiple records and associate each record with a particular domain. These records can then help you automatically direct developers from each geographical location to the appropriate proxy for their location.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 ## Examples
 The following example automatically detects and configures a client computer to use a proxy, if a proxy record has been established:
 
@@ -235,12 +238,9 @@ The following example adds a site record to Team Foundation Server for developer
 c:\projects>tf proxy /add http://server:8081 /default:site /site:corp /collection:http://tfsserver:8080/
 ```
 
-## See Also
+## Related articles
 
-#### Reference
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
 
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
-#### Other Resources
 
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Import a Hosted XML process to support Azure Boards customization in Azure DevOps Services 
 ms.technology: devops-agile
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -12,7 +13,7 @@ ms.date: 03/06/2020
 
 # Import and export a Hosted XML process  
 
-**Azure DevOps Services (Hosted XML)**
+[!INCLUDE [version-eq-azure-devops](../../../../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]  
 > Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Database Import Service](../../../../migrate/migration-overview.md).  
@@ -71,7 +72,7 @@ Migration to Azure DevOps Services is a great time to think about process alignm
 Prior to importing a process, you'll want to [customize it to support your work tracking needs](customize-process.md). 
 Name your process something other than Scrum, Agile, or CMMI. These system processes are locked and you're prevented from overwriting them.   
 
-1. Only administrators can import a process so if you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../../../security/set-project-collection-level-permissions.md).  
+1. Only members of the **Project Collection Administrators** group can import a process. To learn more, see [Change project collection-level permissions](../../../security/change-organization-collection-level-permissions.md).  
 
 2.  From the **Processes** tab, choose import and then drag-and-drop or browse to the zip file of the process you've customized.  
   

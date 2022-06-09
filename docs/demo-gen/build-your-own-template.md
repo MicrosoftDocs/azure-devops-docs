@@ -12,6 +12,8 @@ ms.date: 05/09/2018
 
 # Building your own template
 
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+
 Azure DevOps Generator provides a number of templates, out of the box, that supports a wide variety of scenarios, from different project types to different programming languages, deployment platforms, etc., In addition to this, the generator also allows users to make their own templates. Users can convert their existing projects into templates and then provision new projects using that template. The ability to have custom templates can be useful in many scenarios, such as building custom training materials, provision only certain artifacts, etc., 
 
 This document walks you through the steps on how you can use the extractor.

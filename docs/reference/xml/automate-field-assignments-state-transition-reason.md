@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 # Automate field assignments based on State, Transition, or Reason
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 You may want to automatically transition work items from one state to another state based on an event that occurs within or external to your Azure DevOps project. For example, you may want to automate the transition of a bug from one state to another based on what occurs in a call tracking tool. The work item type model and the Work Item Tracking API are extended to support automatic transitioning of work items by other systems.  
   
@@ -189,6 +189,6 @@ To integrate a tool with Work Item Tracking, the tool must perform the following
 ## Related articles
 
 - [Customize your work tracking experience](../customize-work.md)
-- [Control](control-xml-element-reference.md)    
+- [Control](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)    
 - [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)  
 - [Change the workflow](change-workflow-wit.md)

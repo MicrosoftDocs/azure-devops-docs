@@ -6,13 +6,13 @@ ms.technology: devops-agile
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.date: 08/02/2021
 ---
  
 # Configure repositories and branches to integrate with work tracking  
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To support traceability of your Git code with work tracking, you can exercise one or more features and configure several options.  
  

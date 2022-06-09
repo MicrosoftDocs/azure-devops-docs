@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
-monikerRange: '>= tfs-2017'
-ms.date: 10/08/2021
+ms.topic: tutorial
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2022
 ---
 
 # Drive Git development from a work item in Azure Boards   
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -47,11 +47,6 @@ The **Development** control records all Git development processes that support c
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"  
 <img src="media/drive-git-development-dev-section.png" alt="Work item form, Development section" />  
-::: moniker-end
-
-::: moniker range="tfs-2017"
-> [!NOTE]   
-> The **Development** control within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later Azure DevOps Server version](https://visualstudio.microsoft.com/downloads/). 
 ::: moniker-end
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can start a pull request for a branch you've created or linked to from the work item.  
@@ -219,14 +214,14 @@ The link types you can add within the development section are Branch, Build, Cha
 <img src="../queries/media/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" /> 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
 
 <img src="media/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" /> 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
  
 ::: moniker-end

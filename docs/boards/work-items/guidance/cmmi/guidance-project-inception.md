@@ -13,7 +13,7 @@ ms.date: 11/07/2021
 
 # Project initiation
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 You arrange the basic resources of the project in an initial stage that is named Project Inception.  
   

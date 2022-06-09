@@ -6,22 +6,24 @@ ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.technology: devops-code-tfvc
 ms.topic: reference
 ms.date:  01/07/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
-
 
 # Git permission command
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Modifies the user access control list (ACL) and displays authorization settings for a Git repository or branch within a Git repository.        
 
-**Requirements:** 
+## Prerequisites
+
 * To view permissions, you must be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository (and branch if you are viewing branch permissions).
-* To manage permissions, you must have **Manage permissions** for the desired artifact.
+* To manage permissions, you must have **Manage permissions** for the desired artifact.  
 
-    For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+For more information, see  [Default Git permissions](../../organizations/security/default-git-permissions.md).
 
+## Syntax
 
 ```
 tf git permission [/allow:(* |perm1[,perm2,...]] 

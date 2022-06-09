@@ -6,13 +6,13 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-monikerRange: '>= tfs-2015'
-ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Run manual tests
 
-[!INCLUDE [version-header](includes/version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Run your manual tests and record the test results for each test step using Microsoft Test Runner.
 You can run tests for both web applications and desktop apps.
@@ -65,6 +65,8 @@ Testers can use it for manual testing needs. For more information, see [Guidance
 To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
 
 <a name="run-web"></a>
 
@@ -386,6 +388,247 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
+## Run tests with TCM
+
+You can run tests that are part of a test plan using the TCM command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
+
+[List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) | [Export test runs](#export-test-runs) | [Publish test runs](#publish-test-runs) 
+
+<a id="list-test-runs" /> 
+
+### List test runs  
+
+Use `tcm run /list` to list the runs available in a test plan and to show their **ID**.  The **ID** corresponds to the work item ID defined when the run was created.
+
+
+```tcm 
+tcm run /list /collection:teamprojectcollectionurl /teamproject:project 
+           [/planid:id  |  /querytext:query] [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/planid**:`id`| Optional. Indicates that only those test runs associated with the specified test plan are returned in the list.    |
+|**/querytext**:`query`| Optional. Specifies the query to use to list a subset of test runs.    |
+
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
+
+
+
+**Example**
+
+The following command lists the test runs defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The **ID** and **Title** correspond to the work item ID and title defined for the test run. For example, test run *1000052* is titled *Test Plan for Cycle 1 (Manual)*.  
+
+```tcm 
+tcm run /list /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Id        Title                              Owner               Date Completed
+--------- ---------------------------------- ------------------- -----------
+1000006   Sprint 2 (Manual)                  Thomas Margand      11/5/2021
+1000032   33 : Change initial view (Manual)  Danielle Brasseur   11/11/2021
+1000040   Sprint 2 (Manual)                  Thomas Margand      11/16/2021
+1000042   Sprint 3 (Manual)                  Thomas Margand      11/16/2021
+1000046   Special testing (Manual)           Nicoletta Guibord   11/18/2021
+1000052   Test Plan for Cycle 1 (Manual)     Bukhosi Bhengu      12/1/2021
+1000060   Game Shopping (Manual)             Bukhosi Bhengu      12/6/2021
+```
+
+<a id="create-test-runs" /> 
+
+### Create test runs  
+
+Use `tcm run /create` to create a test run associated with the specified test plan. In addition to the test plan, you also define the test suite and configuration you want to use by their corresponding **ID**. You can gather these **IDs** using the `tcm plans /list`, `tcm suites /list`, and `tcm configs /list` commands.
+
+```tcm 
+tcm run /create /title:title /planid:id /collection:CollectionURL /teamproject:project 
+            (suiteid:id /configid:configid | /querytext:query) 
+            [/settingsname:name] [/owner:owner] [/builddir:directory]  
+            [/testenvironment:name] [/login:username,[password]] [/include]
+
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/title**:`title`| Specifies the title that you want to use for the test run that you create.    |
+|**/planid**:`id`| Specifies the test plan that where you want to create the test run.    |
+|**/suiteid**:`id`| Specifies the test suites that you want to use for your test run.    |
+|**/configid**:`id`| Specifies the test configuration you want to run for your test suites.    |
+|**/querytext**:`query`| Optional if you specify `suiteid` and `configid`. Specifies the query to use to select the tests that you want to run. <br><br>**Tip:** You can use the `/querytest` parameter to run more than one test suite. For example: `querytext:“SELECT * FROM TestPoint WHERE (ConfigurationId=20 OR ConfigurationId=21) AND (Suiteid=1185 OR Suiteid=1186)”`.    |
+|**/settingsname**:`name`| Optional. Specifies the test settings that you want to use for this test run. If you don't select test settings, the default test settings in the test plan are used.    |
+|**/owner**:`owner`| Optional. Specifies the owner of the test run.    |
+|**/builddir**:`directory`| Optional. Specifies the build directory to use to locate the test assemblies for the test. If this isn't specified, the build location is used based on the build that is currently assigned to the test plan.    |
+|**/testenvironment**:`name`| Optional. Specifies the test environment that you want to use for this test run. If you don't select a test environment, the default test environment in the test plan is used.    |
+|**/include**| Optional. Specifies that all tests that are selected for the test run are included, even if the tests are not currently set to the Active state.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command creates a test run called **MyTestRun** in the test plan with **ID** *77*. The run uses the test suite with **ID** *161* and the test configuration with **ID** *9*. The run is defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization.
+
+In this example, a test run is created with an **ID** of *1000082*.  
+
+```tcm 
+tcm run /create /title:MyTestRun /planid:77 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber" /suiteid:161 /configid:9
+
+Run created with ID: 1000082.
+
+```
+
+<a id="execute-test-runs" /> 
+
+### Execute test runs  
+
+Use `tcm run /execute` to kick off one of the runs in your test plan. The **ID** you specify corresponds to the work item ID defined when the run was created. You can see a list of all test run IDs with the [tcm run /list](#list-test-runs) command.
+
+```tcm
+tcm run /execute /id:id /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/id**:`id`| Specifies the **ID** for the test run that you want to run.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command starts a test run for the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results are returned in your CLI window.
+
+```tcm 
+tcm run /execute /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Executing run: MyTestRun
+
+Results
+------------------------
+Total:                   2
+Passed:                  1
+Failed:                  1
+Inconclusive:            0
+```
+
+<a id="abort-test-runs" /> 
+
+### Abort test runs  
+
+Use `tcm run /abort` to cancel a test run that is in progress. The **ID** you specify corresponds to the work item ID defined when the run was created.
+
+```tcm 
+tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/id**:`id`| Specifies the **ID** for the test run that you want to cancel.    |
+
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
+
+**Example**
+
+The following command stops the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results confirm the **ID** and **Title** of the cancelled run.
+
+```tcm 
+tcm run /abort /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Run with ID [1000082] and title [MyTestRun] has been aborted.
+```
+
+<a id="delete-test-runs" /> 
+
+### Delete test runs  
+
+Use `tcm run /delete` to delete a test run from your test plan. The **ID** you specify corresponds to the work item ID defined when the test run was created.
+
+```tcm 
+tcm run /delete /id:id [/noprompt] /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/id**:`id`| Specifies the **ID** for the test run that you want to delete.    |
+|**/noprompt**| Optional. Specifies that the user isn't prompted to confirm deletion of a test run.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command deletes the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The user is prompted to confirm that they want to delete the specified test run and the result is provided.
+
+```tcm
+tcm run /delete /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+
+Are you sure you want to delete run [MyTestRun]? (Yes/No) y
+
+Run [MyTestRun] has been deleted.
+```
+
+<a id="export-test-runs" /> 
+
+### Export test runs  
+
+Use `tcm run /export` to export a test run to a specified location. The **ID** you specify corresponds to the work item ID defined when the run was created.
+
+```tcm
+tcm run /export /id:id /resultsfile:path /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/id**:`id`| Specifies the test run **ID** that you want to export.    |
+|**/resultsfile**:`path`| Specifies a location and filename for the test run you want to export.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command specifies that the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization is exported to *c:\temp\ResultsForDeveloper.trx*.
+
+```tcm
+tcm run /export /id:1000082 /resultsfile:"c:\temp\ResultsForDeveloper.trx" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+```
+
+<a id="publish-test-runs" /> 
+
+### Publish test runs  
+
+Use `tcm run /publish` to publish the results from a Visual Studio test run results file for a specified test plan.
+
+```tcm 
+tcm run /publish /suiteid:id /configid:id /resultowner:owner /resultsfile:path 
+            /collection:teamprojectcollectionurl /teamproject:project [/title:runtitle] 
+            [/runowner:owner] [/build:buildnumber /builddefinition:builddefinition] 
+            [/flavor:flavor] [/platform:platform] [/assignfailurestouser:user] 
+            [/login:username,[password]] [/buildverification]
+```
+
+| Parameter | Description |  
+|----------|------------| 
+|**/suiteid**:`id`| Specifies the test suite to use when you publish a test run.   |
+|**/configid**:`id`| Specifies which test configuration you want to use when you publish a test run.    |
+|**/resultowner**:`owner`| Specifies the owner for the test results.    |
+|**/resultsfile**:`path`| Specifies the location of the test run you want to publish. For example, "c:\temp\ResultsForDeveloper.trx".    |
+|**/title**:`runtitle`| Optional. Specifies a title that you want to use for the test run that you publish.    |
+|**/runowner**:`owner`| Optional. Specifies the owner of the test run.    |
+|**/build**:`buildnumber`| Optional. Specifies the build number to use to publish a test run. This parameter must be used with `/builddefinition`.    |
+|**/builddefinition**:`builddefinition`| Optional. Specifies the build definition to use to publish a test run. This parameter must be used with `/build`.    |
+|**/flavor**:`flavor`| Optional. Specifies the build flavor, such as **Release**. This parameter can only be used if the `/build` parameter is used.    |
+|**/platform**:`platform`| Optional. Specifies the build platform, such as **x86**. This parameter can only be used if the `/build` parameter is used.    |
+|**/assignfailurestouser**:`user`| Optional. Specifies the user to whom any failed tests in the test run are assigned.    |
+|**/buildverification**| Optional. Specifies that this test run contains build verification tests that check the basic functionality of your build.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
+
+**Example**
+
+The following command publishes a test run for the test suite with **ID** *161* and test configuration with **ID** *9* and reassigns the owner. This updates the existing test points for the test cases in the test suite that is paired with this configuration and publishes the results in the specified *.trx* file. And any failed tests in the test run are assigned to the specified user.
+
+```tcm 
+tcm run /publish /suiteid:167 /configid:9 /resultowner:"Thomas Margand" /resultsfile:"c:\temp\ResultsForDeveloper.trx" /assignfailurestouser:"Bukhosi Bhengu" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+```
+
 ## Frequently asked questions
 
 Here are some common questions.
@@ -489,7 +732,7 @@ For more information, see [Microsoft Privacy policy](https://privacy.microsoft.c
 
 ## Related articles
 
-- [FAQs for manual testing](reference-qa.md#runtests)
+- [FAQs for manual testing](reference-qa.yml#runtests)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)

@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 07/15/2021
+ms.date: 02/18/2022
 ---
 
 ::: moniker range=">= azure-devops-2019"
@@ -14,7 +14,7 @@ ms.date: 07/15/2021
 
     :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
 
-1. Select **NuGet.exe** under the **NuGet** header.
+1. Select **NuGet.exe**.
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
@@ -23,27 +23,13 @@ ms.date: 07/15/2021
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
     1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-1. Follow the instructions in the **Project setup** to connect to your feed. 
+1. Follow the instructions in the **Project setup** to add a config file. 
 
     :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
 
-## Publish a NuGet package by using the command line
-
-If you don't have a NuGet package but you want to try publishing your package to your feed, you can install the *HelloWorld* sample package.
-
-```Command
-nuget install HelloWorld -ExcludeVersion
-```
-
-Run the following command to publish your package to your feed:
-
-```Command
-nuget.exe push -Source "<YOUR_FEED_NAME>" -ApiKey <ANY_STRING> <PACKAGE_PATH>
-```
-
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops-2019"
+::: moniker range="tfs-2018"
 
 1. Select **Build and Release** > **Packages**.
 

@@ -10,12 +10,12 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 ms.date: 06/07/2021
-monikerRange: '>= azure-devops-2020'
+monikerRange: 'azure-devops'
 ---
 
 # Manage wikis with the CLI
 
-[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn the following CLI commands for managing wikis.
 

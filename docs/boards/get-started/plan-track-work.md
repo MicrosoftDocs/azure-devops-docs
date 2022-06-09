@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 12/02/2021
+ms.date: 04/01/2022
 ---
 
 
 # Plan and track work in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board. You can learn the Basic process or the Agile process for creating these items. 
 
@@ -117,7 +117,7 @@ Here we show how to add user stories and child tasks from the web portal and add
 For details, see [Default permissions and access for Azure Boards](permissions-access-boards.md)
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]   
 > The images shown in this article correspond to the latest version of Azure Boards. While they may differ from those shown in earlier, on-premises versions of Azure DevOps, they are similar in the functions described unless otherwise noted. 
@@ -186,9 +186,9 @@ To open the Features board from the Requirements board, choose **Features** from
 
 ## Add work items to your board
 
+Work items you add to your board are automatically assigned the default **Area Path** and **Iteration Path** assigned to the team. To learn more, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
 #### [Agile process](#tab/agile-process) 
-
 
 1. From the Stories board, choose **New item** and start adding those stories you want to track. 
 
@@ -253,13 +253,6 @@ To open the Features board from the Requirements board, choose **Features** from
 ## Add details to a board item
 
 Choose the issue or user story title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../media/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
-
-::: moniker range="<= tfs-2017"
-
-> [!NOTE]   
-> The **Discussion** section is available with TFS 2017.2 and later versions. 
-
-::: moniker-end
 
 #### [Agile process](#tab/agile-process) 
 
@@ -363,18 +356,9 @@ As work starts, drag the requirement card from the **Backlog** column to the **A
 Task checklists provide a quick and easy way to track elements of work that are important to support completing a backlog item. Also, you can assign individual tasks to different team members. 
 
 > [!TIP]   
-> Tasks that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
+> Tasks that you create from the Kanban board are automatically assigned the **Area Path** and **Iteration Path** of their parent work item. 
 
 Tasks that you create from the Kanban board show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) show up within tasks checklists on the Kanban board.  
-
-
-::: moniker range="<= tfs-2015"
-
-> [!NOTE]   
-> The Task checklists are available from with TFS 2015.1 and later versions. 
-
-::: moniker-end
-
 
 #### [Agile process](#tab/agile-process) 
 
@@ -528,6 +512,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
       **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
       [Activity](../queries/query-numeric.md) 

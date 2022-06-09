@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Burndown guidance
 
-[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 

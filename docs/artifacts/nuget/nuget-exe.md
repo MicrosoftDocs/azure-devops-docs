@@ -5,12 +5,12 @@ ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 10/18/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Connect to Azure Artifacts feeds
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 
@@ -34,7 +34,7 @@ monikerRange: '>= tfs-2018'
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 2. Select **Connect to feed**.
 
@@ -86,7 +86,7 @@ nuget setapikey <Personal_Access_Token> -source <Feed_URL>
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 ## Project setup (NuGet 2)
 

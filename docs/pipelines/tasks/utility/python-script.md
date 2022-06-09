@@ -10,7 +10,7 @@ monikerRange: azure-devops
 
 # Python Script task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run a Python script.
 

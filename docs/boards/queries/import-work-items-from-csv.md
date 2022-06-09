@@ -13,7 +13,7 @@ ms.date: 10/21/2021
 
 # Import or update work items in bulk by using CSV files in Azure Boards
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 ::: moniker range="> azure-devops-2019"
 
