@@ -16,6 +16,5 @@ ms.technology: devops-cicd-tasks
     #script: '# echo Hello world' # Required when targetType == inline
     #workingDirectory: # Optional
     #failOnStderr: false # Optional
-    #noProfile: true # Optional
-    #noRc: true # Optional
+    #bashEnvValue: # Optional
 ```

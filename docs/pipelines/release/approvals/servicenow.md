@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: shashban
 author: shashban
 ms.date: 01/10/2019
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Integrate with ServiceNow change management
 
-[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Pipelines and ServiceNow bring an integration of Azure Pipelines with
 ServiceNow Change Management to enhance collaboration between development and IT teams.
@@ -217,7 +217,6 @@ and [Update change request states](https://docs.servicenow.com/bundle/quebec-it-
 
 ## See also
 
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)

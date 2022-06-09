@@ -4,6 +4,7 @@ titleSuffix: Azure Boards
 description: Get started guide for project managers new to Azure Boards to plan and track their projects  
 ms.technology: devops-agile
 ms.topic: best-practice
+ms.custom: cross-project  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops' 
@@ -14,7 +15,7 @@ ms.date: 07/09/2021
 
 # Best practices for "light-weight" Agile project management 
 
-[!INCLUDE [temp](includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Boards provides a choice of Agile planning tools, many of which work in combination with each other. This article provides a get-started guide for project managers new to Azure Boards. If you and your teams want to take a minimal tracking approach to plan and manage your projects, start with this guide. Also, if you are moving from waterfall project management to Agile methods, start with this guide.
 
@@ -35,6 +36,8 @@ In this article, we make the following suggestions and guidance:
 > - Review progress and deliverables using the Features backlog, rollup, and delivery plans 
 > - Engage with process improvement during sprint planning and retrospectives 
 
+> [!NOTE]   
+> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portfolio planning tools, are only available for the cloud at this time. 
 
 
 ## Configure your teams   

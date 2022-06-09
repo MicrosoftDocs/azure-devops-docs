@@ -6,13 +6,15 @@ ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 05/12/2017
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Compare files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015 | VS 2019 - VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [comparing files with Git and Visual Studio](../../repos/git/review-history.md).  
 
@@ -129,10 +131,7 @@ vsdiffmerge.exe "File1" "File2" "Base file" "Result file" /m
 `File1` and `File2` are the full path to the files you want to merge. 
 The `Base file` is the full path to the file both files are based off of, and `Result file` is the full path to where you want to write the merged results.
 
-## Use the command prompt
-
--   [Difference command](difference-command.md) Compare two files from the command prompt.
-
 ## Related articles
    
 - [Compare folders](compare-folders.md)
+- [Difference command](difference-command.md) 

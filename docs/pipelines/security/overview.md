@@ -9,6 +9,8 @@ monikerRange: '> azure-devops-2019'
 
 # Securing Azure Pipelines
 
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+
 Azure Pipelines poses unique security challenges.
 You can use a pipeline to run scripts or deploy code to production environments.
 But you want to ensure your CI/CD pipelines don't become avenues to run malicious code.

@@ -9,12 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.topic: how-to
-ms.date: 11/07/2021 
+ms.date: 04/01/2022
 ---
+
 
 # Work item fields and attributes in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models. 
@@ -145,7 +146,7 @@ If the On-premises XML process model is used, you can look up the data type thro
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
+::: moniker range="tfs-2018" 
 
 You can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes.  For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
@@ -159,10 +160,10 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 To review the list of fields defined for an organization or collection, open **Organization settings>Process>Fields**.   
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Organization settings.](/azure/devops/media/settings/open-admin-settings-vert.png)  
+	> ![Choose Organization settings.](../../media/settings/open-admin-settings-vert.png)  
 
 1. Then, choose **Process**. 
    
@@ -618,21 +619,24 @@ Attributes assigned to a field depend on the platform and version you use. For e
 > 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is supported for Azure DevOps Server 2019 and later versions. To learn more, see [Inherited process model](../../organizations/settings/work/inheritance-process-model.md).
 > 3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services.   
 
-::: moniker range="< azure-devops"
 
 <a id="reportable-attributes"> </a>
 
+::: moniker range="< azure-devops"
 
 ## Reportable attributes
 
-All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
+All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).
 
 For a description of each reportable attribute, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md). 
 
 For a list of fields that have reportable attributes defined by default, see [Reportable fields reference](../../reference/xml/reportable-fields-reference.md).
 
+::: moniker-end
 
 <a id="index-fields" />
+
+::: moniker range="< azure-devops"
 
 ## Indexed fields
 
@@ -710,7 +714,7 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range="< azure-devops"  
 
 You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get/?view=vsts-rest-tfs-4.1&preserve-view=true). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1&preserve-view=true)
 
@@ -802,7 +806,7 @@ The **Use** parameter indicates the name of each project and the work item type 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 ## Project integration and project field mapping  
 
@@ -859,7 +863,7 @@ You can change the field name, the index, and the report attributes for any fiel
 ::: moniker-end  
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="tfs-2018"  
 
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 

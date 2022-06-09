@@ -13,17 +13,17 @@ ms.date: 10/08/2021
 
 # Resolve Azure DevOps Office integration issues
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
+
+All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). These software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in  For a list of prerequisites, see [Azure Boards and Office integration](track-work.md). 
 
 If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image below, you may want to resolve the issue with the procedures provided in this article. 
 
 > [!div class="mx-imgBorder"]
-> ![Excel TFS-Office integration Team ribbon](media/tfs-office-issues-excel-team-ribbon.png)
+> ![Excel TFS-Office integration Team ribbon.](media/excel-team-ribbon.png)
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
-
-> [!IMPORTANT]  
-> All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). These software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in  For a list of prerequisites, see [Azure Boards and Office integration](track-work.md). 
+ 
 
 ## Enable the Azure DevOps add-in 
 
@@ -31,12 +31,12 @@ If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image b
 2.	Choose Add-ins and from the **Manage** picklist, choose **COM Add-ins**, and then choose **Go**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Excel Options, Add-ins, Choose Com Add-ins](media/tfs-office-issues-excel-open-com-add-ins.png)
+	> ![Excel Options, Add-ins, Choose Com Add-ins.](media/excel-com-add-ins.png)
 
 3.	Make sure that a check is placed in the **Team Foundation Add-in** checkbox. 
 
 	> [!div class="mx-imgBorder"]
-	> ![COM Add-ins dialog, Team Foundation Add-in checked](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
+	> ![COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
 
 4.	Restart Excel. You should now see the Team ribbon. 
 
@@ -47,7 +47,7 @@ If the Team ribbon doesn't appear at next launch, the load behavior of the add-i
 1.	Launch the Registry Editor from your Windows Start Menu by typing regedit in the Search or Run box.
 
 	> [!div class="mx-imgBorder"]
-	> ![Run regedit command](media/tfs-office-issues-run-regedit.png) 
+	> ![Run regedit command.](media/tfs-office-issues-run-regedit.png) 
 
 2.	Navigate to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 	
@@ -59,7 +59,7 @@ If the Team ribbon doesn't appear at next launch, the load behavior of the add-i
 	- HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins
 
 	> [!div class="mx-imgBorder"]
-	> ![LoadBehavior entry](media/tfs-office-issues-regedit-loadbehavior-key.png) 
+	> ![LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
 
 3.	Double-click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the Team ribbon won't load).
  
@@ -72,7 +72,7 @@ If the Team ribbon doesn't appear at next launch, the load behavior of the add-i
 To connect to Azure Boards or TFS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
  
 > [!div class="mx-imgBorder"]
-> ![TF86001 error message, Team Foundation was unable to load the Office Add-in](media/tfs-office-issues-tf86001.png) 
+> ![TF86001 error message, Team Foundation was unable to load the Office Add-in.](media/tfs-office-issues-tf86001.png) 
 
 This error is typically caused when you install Visual Studio before you install Office Excel or Project. In this instance, the Visual Studio Tools for Office Run Time aren't correctly configured. To correct this error, you must repair Visual Studio.
 

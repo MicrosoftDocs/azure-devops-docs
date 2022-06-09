@@ -14,7 +14,7 @@ ms.date: 10/24/2021
 
 # Query by rank and picklist value in Azure DevOps and Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -252,8 +252,8 @@ The following table describes the fields that you can use to plan and prioritize
    :::column-end:::
    :::column span="2":::
    The area of customer value addressed by the epic, feature, or backlog item. Values include:
-   - **Architectural—technical services to implement business features that deliver solution
-   - **Business—services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
+   - **Architectural**: technical services to implement business features that deliver solution
+   - **Business**: services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
 
    Reference name=Microsoft.VSTS.Common.ValueArea, Data type=String
    :::column-end:::
@@ -261,11 +261,11 @@ The following table describes the fields that you can use to plan and prioritize
    Bug, Epic, Feature, Product Backlog Item (Scrum) Requirement (CMMI), User Story (Agile)
    :::column-end:::
 :::row-end:::
+---
 
-
-> [!NOTE]  
-> 1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
-> 2. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
+**Notes:**  
+1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
+2. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
 ## More about Backlog Priority or Stack Rank fields

@@ -7,14 +7,14 @@ toc: show
 ms.technology: devops-code-git 
 ms.topic: reference
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Commit history
 
 
-[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ## Commit history view
 

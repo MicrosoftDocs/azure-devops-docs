@@ -4,7 +4,7 @@ title: Data and Setting Storage | Extensions for Azure DevOps
 description: DevOps extensions can store user preferences and complex data structures just like other project data. Use REST APIs or a Microsoft client service to do this. 
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Data storage
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other organization and project data. It also means for simple data storage needs, you (as the extension provider) are not required to setup or manage (or pay for) third-party data storage services.
 

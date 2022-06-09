@@ -9,6 +9,8 @@ monikerRange: '>= azure-devops-2019'
 
 # Run a self-hosted agent in Docker
 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+
 This article provides instructions for running your Azure Pipelines agent in Docker. You can set up a self-hosted agent in Azure Pipelines to run inside a Windows Server Core (for Windows hosts), or Ubuntu container (for Linux hosts) with Docker. This is useful when you want to run agents with outer orchestration, such as [Azure Container Instances](/azure/container-instances/). In this article, you'll walk through a complete container example, including handling agent self-update.
 
 Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`. 
@@ -225,21 +227,15 @@ Next, create the Dockerfile.
     RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash \
       && rm -rf /var/lib/apt/lists/*
 
-    ARG TARGETARCH=amd64
-    ARG AGENT_VERSION=2.194.0
+    # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
+    ENV TARGETARCH=linux-x64
 
     WORKDIR /azp
-    RUN if [ "$TARGETARCH" = "amd64" ]; then \
-          AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz; \
-        else \
-          AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-${TARGETARCH}-${AGENT_VERSION}.tar.gz; \
-        fi; \
-        curl -LsS "$AZP_AGENTPACKAGE_URL" | tar -xz
 
     COPY ./start.sh .
     RUN chmod +x start.sh
 
-    ENTRYPOINT [ "./start.sh" ]
+    ENTRYPOINT ["./start.sh"]
     ```
 
    > [!NOTE]
@@ -300,9 +296,28 @@ Next, create the Dockerfile.
     # Let the agent ignore the token env variables
     export VSO_AGENT_IGNORE=AZP_TOKEN,AZP_TOKEN_FILE
 
+    print_header "1. Determining matching Azure Pipelines agent..."
+
+    AZP_AGENT_PACKAGES=$(curl -LsS \
+        -u user:$(cat "$AZP_TOKEN_FILE") \
+        -H 'Accept:application/json;' \
+        "$AZP_URL/_apis/distributedtask/packages/agent?platform=$TARGETARCH&top=1")
+
+    AZP_AGENT_PACKAGE_LATEST_URL=$(echo "$AZP_AGENT_PACKAGES" | jq -r '.value[0].downloadUrl')
+
+    if [ -z "$AZP_AGENT_PACKAGE_LATEST_URL" -o "$AZP_AGENT_PACKAGE_LATEST_URL" == "null" ]; then
+      echo 1>&2 "error: could not determine a matching Azure Pipelines agent"
+      echo 1>&2 "check that account '$AZP_URL' is correct and the token is valid for that account"
+      exit 1
+    fi
+
+    print_header "2. Downloading and extracting Azure Pipelines agent..."
+
+    curl -LsS $AZP_AGENT_PACKAGE_LATEST_URL | tar -xz & wait $!
+
     source ./env.sh
 
-    print_header "1. Configuring Azure Pipelines agent..."
+    print_header "3. Configuring Azure Pipelines agent..."
 
     ./config.sh --unattended \
       --agent "${AZP_AGENT_NAME:-$(hostname)}" \
@@ -314,17 +329,17 @@ Next, create the Dockerfile.
       --replace \
       --acceptTeeEula & wait $!
 
-    print_header "2. Running Azure Pipelines agent..."
+    print_header "4. Running Azure Pipelines agent..."
 
     trap 'cleanup; exit 0' EXIT
     trap 'cleanup; exit 130' INT
     trap 'cleanup; exit 143' TERM
 
+    chmod +x ./run-docker.sh
+
     # To be aware of TERM and INT signals call run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
-    ./run.sh "$@" &
-
-    wait $!
+    ./run-docker.sh "$@" & wait $!
     ```
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
@@ -355,7 +370,7 @@ Now that you have created an image, you can run a container.
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
     ```
-    
+
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
 
@@ -364,7 +379,7 @@ Optionally, you can control the pool and agent work directory by using additiona
 | Environment variable | Description                                                 |
 |----------------------|-------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance. |
-| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`.    |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#create-agent-pools), at `AZP_URL`.    |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname).          |
 | AZP_POOL             | Agent pool name (default value: `Default`).                  |
 | AZP_WORK             | Work directory (default value: `_work`).                     |
@@ -420,7 +435,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 3. Configure Container Registry integration for existing AKS clusters.
 
-   ```shell
+   ```azurecli
    az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
    ```
 

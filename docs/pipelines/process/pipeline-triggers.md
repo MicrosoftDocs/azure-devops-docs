@@ -4,12 +4,14 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 05/07/2021
+ms.date: 04/04/2022
 ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2020"
 ---
 
 # Trigger one pipeline after another
+
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 > [!div class="op_single_selector"]
 > - [YAML pipelines](pipeline-triggers.md)
@@ -25,36 +27,54 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 ## Configure pipeline resource triggers
 
-To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#define-a-pipelines-resource).
+To trigger a pipeline upon the completion of another pipeline, configure a [pipeline resource](resources.md#define-a-pipelines-resource) trigger.
 
-The following example has two pipelines - `app-ci` (the pipeline defined by the YAML snippet), and `security-lib-ci` (the triggering pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of `security-lib-ci` is built.
+The following example configures a pipeline resource trigger so that a pipeline named `app-ci` runs after any run of the `security-lib-ci` pipeline completes.
 
+This example has the following two pipelines.
 
-```yaml
-# this is being defined in app-ci pipeline
-resources:
-  pipelines:
-  - pipeline: securitylib   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
-                            # e.g. to reference published artifacts
-    source: security-lib-ci # Azure Pipelines name of the source pipeline referenced
-    project: FabrikamProject # Required only if the source pipeline is in another project
-    trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
-```
+- `security-lib-ci` - This pipeline runs first.
 
-* `pipeline: securitylib` specifies the name of the pipeline resource, and is used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables.
+    ```yml
+    # security-lib-ci YAML pipeline
+    steps:
+    - bash: echo "The security-lib-ci pipeline runs first"
+    ```
+
+- `app-ci` - This pipeline has a pipeline resource trigger that configures the `app-ci` pipeline to run automatically every time a run of the `security-lib-ci` pipeline completes.
+
+    ```yaml
+    # app-ci YAML pipeline
+    # We are setting up a pipeline resource that references the security-lib-ci
+    # pipeline and setting up a pipeline completion trigger so that our app-ci
+    # pipeline runs when a run of the security-lib-ci pipeline completes
+    resources:
+      pipelines:
+      - pipeline: securitylib # Name of the pipeline resource.
+        source: security-lib-ci # The name of the pipeline referenced by this pipeline resource.
+        project: FabrikamProject # Required only if the source pipeline is in another project
+        trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+
+    steps:
+    - bash: echo "app-ci runs after security-lib-ci completes"
+    ```
+
+* `- pipeline: securitylib` specifies the name of the pipeline resource. Use the label defined here when referring to the pipeline resource from other parts of the pipeline, such as when using pipeline resource variables or downloading artifacts.
 * `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). By default, pipelines are named after the repository that contains the pipeline. To update a pipeline's name, see [Pipeline settings](../get-started/multi-stage-pipelines-experience.md#pipeline-settings).
-
-* `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project.
+* `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project. If you specify this value and your pipeline doesn't trigger, see the note at the end of this section.
 * `trigger: true` - Use this syntax to trigger the pipeline when any version of the source pipeline completes. See the following sections in this article to learn how to filter which versions of the source pipeline completing will trigger a run. When filters are specified, the source pipeline run must match all of the filters to trigger a run.
 
-If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the `Default branch for manual and scheduled builds` setting, as described in the following [Branch considerations for pipeline completion triggers](#branch-considerations) section.
+If the triggering pipeline and the triggered pipeline use the same repository, both pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code and the second pipeline tests it. However, if the two pipelines use different repositories, the triggered pipeline will use the version of the code in the branch specified by the `Default branch for manual and scheduled builds` setting, as described in [Branch considerations for pipeline completion triggers](#branch-considerations).
+
+> [!NOTE]
+> In some scenarios, the default branch for manual builds and scheduled builds doesn't include a `refs/heads` prefix. For example, the default branch might be set to `main` instead of to `refs/heads/main`. In this scenario, *a trigger from a different project doesn't work*. If you encounter issues when you set `project` to a value other than the target pipeline's, you can update the default branch to include `refs/heads` by changing its value to a different branch, and then by changing it back to the default branch you want to use.
 
 ## Branch filters
 
 You can optionally specify the branches to include or exclude when configuring the trigger. If you specify branch filters, a new pipeline is triggered whenever a source pipeline run is successfully completed that matches the branch filters. In the following example, the `app-ci` pipeline runs if the `security-lib-ci` completes on any `releases/*` branch, except for `releases/old*`.
 
 ```yaml
-# this is being defined in app-ci pipeline
+# app-ci YAML pipeline
 resources:
   pipelines:
   - pipeline: securitylib

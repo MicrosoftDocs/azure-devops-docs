@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 
 # Engineering processing areas in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
 The Engineering section of the MSF for CMMI Process Improvement guidance covers the value-added activities. These activities are for discovering the information that is required to design and build software products. The Engineering grouping of process areas in the CMMI includes:
 

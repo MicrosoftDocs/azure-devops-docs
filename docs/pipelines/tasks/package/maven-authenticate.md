@@ -9,6 +9,8 @@ monikerRange: 'azure-devops'
 
 # Package: Maven Authenticate
 
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
 Provides credentials for Azure Artifacts feeds and external Maven repositories in the current user's settings.xml file.
 
 ## YAML snippet

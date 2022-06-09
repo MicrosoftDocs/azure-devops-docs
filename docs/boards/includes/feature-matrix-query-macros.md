@@ -12,7 +12,7 @@ ms.date: 01/14/2021
 The following table summarizes the query macros or variables supported by the Azure DevOps versions. You can use some of these macros to filter notifications. 
 
 > [!NOTE]  
-> You can use certain macros from the web portal only. Tfese include the **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, and **@TeamAreas** macros. These macros aren't supported when exporting a query to Excel, notification filters, or exercised from Team Explorer, or REST APIs. 
+> You can use certain macros from the web portal only. These include the **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, and **@TeamAreas** macros. These macros aren't supported when exporting a query to Excel, notification filters, or exercised from Team Explorer, or REST APIs. 
 
 For more detailed descriptions and links to examples, see [Query fields, operators, and macros](../queries/query-operators-variables.md). 
 

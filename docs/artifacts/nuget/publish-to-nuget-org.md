@@ -5,11 +5,13 @@ ms.technology: devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 4/01/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Publish packages to NuGet.org
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 NuGet.org is a package manager that enables developers to share reusable code. A NuGet package is a compressed file with `.nupkg` extension that contains compiled code that can be consumed in other projects. Packages hosted in NuGet.org are available to all developers around the world.
 

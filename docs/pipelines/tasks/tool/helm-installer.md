@@ -13,6 +13,8 @@ monikerRange: 'azure-devops'
 
 # Helm installer task
 
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
+
 This task can be used for installing a specific version of helm binary on agents.
 
 ::: moniker range="> tfs-2018"

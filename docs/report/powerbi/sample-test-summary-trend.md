@@ -16,7 +16,7 @@ ms.date: 10/13/2021
 
 # Test summary trend sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows day wise trend of number of total failed tests and test pass rate for a pipeline.
 

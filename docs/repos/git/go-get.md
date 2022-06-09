@@ -1,7 +1,7 @@
 ---
 title: Go get support
 titleSuffix: Azure Repos
-description: Learn how to use Go get command  with Azure Repos Git
+description: Learn how to use Go get command with Azure Repos Git
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 10/15/2021
@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Go get command support in Azure Repos Git
 
-[!INCLUDE [version-azure-devops-2019](../includes/version-azure-devops-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Go is an open-source programming language, also referred to as Golang. 
 In Go, you can use the `get` command to download and install packages and dependencies. 
@@ -77,7 +77,7 @@ After you create the PAT, add this entry to your .gitconfig file:
 
 ```
 [url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
-    insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
+    insteadOf = https://dev.azure.com/<organization>/<project>/<repo>
 ```
 
 The `<user>` part can be any non-empty string; we suggest the word `pat`.

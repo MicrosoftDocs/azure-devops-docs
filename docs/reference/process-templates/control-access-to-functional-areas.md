@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Control access to functional areas
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
 You can configure the initial security settings for the following functional areas for a project: 
 - Work item queries
@@ -105,7 +105,7 @@ You can control access to activities in Lab Management by changing the Lab plug-
   
 ## Related articles
 - [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
-- [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
+- [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md)
 - [Configure Lab Management with TFSLabConfig, Permissions](/previous-versions/azure/devops/server/lab-management/tfslabconfig-cmd)
 
  

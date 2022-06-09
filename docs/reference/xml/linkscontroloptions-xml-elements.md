@@ -1,24 +1,25 @@
 ---
 title: LinksControlOptions XML elements reference 
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps 
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017 < azure-devops'
-ms.date: 06/25/2019
+ms.topic: reference
+monikerRange: '< azure-devops'
+ms.date: 03/01/2022
 ---
 
 # LinksControlOptions XML elements (Web form) 
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
 By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.   
 
 > [!IMPORTANT]  
-> This article applies to project customization for On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](linkscontroloptions-elements.md). <br/><br/>
+> This article applies to project customization for On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements?view=tfs-2017&preserve-view=true). <br/><br/>
 > Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 The **LinksControlOptions** element is a child element of the **Control** element. With a scoped links control, you can specify filters that restrict the types of links that users can add and the types of work items to which users can create links. Specifically, you use the following child elements to scope the control:
@@ -34,7 +35,7 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 
 ## Summary of what's changed
 
-The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](./control-xml-element-reference.md?viewFallbackFrom=vsts). Overall, it's a much simpler syntax structure than its predecessor. 
+The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true). Overall, it's a much simpler syntax structure than its predecessor. 
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -71,7 +72,6 @@ The following table summarizes the differences between the **LinksControlOptions
    Specify to include or exclude external link types using **ExternalLinkFilters**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Restrict link relationships to other work items 
@@ -84,7 +84,6 @@ The following table summarizes the differences between the **LinksControlOptions
    Specify to include or exclude work link types using **WorkItemLinkFilters**, specify a link type reference category 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Restrict links allowed based on work item type 
@@ -108,7 +107,6 @@ The following table summarizes the differences between the **LinksControlOptions
    All links grouped by type and listed alphabetically or ordered by column field 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Composite display of link information
@@ -123,7 +121,6 @@ The following table summarizes the differences between the **LinksControlOptions
    Not supported
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Field and attribute display 
@@ -373,7 +370,7 @@ The following table describes the **LinksControlOptions** element and its child 
    
    The following lists the default work item types available based on the default system processes:
 
-   Agile
+   **Agile**
    
    - Bug
    - Epic
@@ -382,8 +379,16 @@ The following table describes the **LinksControlOptions** element and its child 
    - Task
    - Test Case
    - User Story
+
+   **Basic**
    
-   Scrum
+   - Epic
+   - Feature
+   - Issue
+   - Task
+   - Test Case
+
+   **Scrum**
    
    - Bug
    - Epic
@@ -393,7 +398,7 @@ The following table describes the **LinksControlOptions** element and its child 
    - Task
    - Test Case
    
-   CMMI
+   **CMMI**
    
    - Bug
    - Change Request
@@ -519,6 +524,6 @@ The following table describes the **LinksControlOptions** element and its child 
 You use scoped links controls to support your team and business needs. You [link work items to support traceability and manage dependencies](../../boards/queries/link-work-items-support-traceability.md). To learn more about customizing the web form, see these topics: 
 
 - [WebLayout and Control elements](weblayout-xml-elements.md)  
-- [Manage new form rollout](../manage-new-form-rollout.md)
+- [Manage new form rollout](/previous-versions/azure/devops/reference/manage-new-form-rollout?view=tfs-2015&preserve-view=true)
 - [New work item experience](../process/new-work-item-experience.md)
 - [Customize the new form](../customize-wit-form.md)

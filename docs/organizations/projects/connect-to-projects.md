@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 # Connect to a project in Azure DevOps
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
@@ -53,7 +53,7 @@ A project defines a process and data storage in which you manage your software p
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
    ::: moniker-end
-   ::: moniker range=">= tfs-2013 < azure-devops-2019" 
+   ::: moniker range="< azure-devops-2019"  
    <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
@@ -77,20 +77,12 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker-end
  
-    ::: moniker range=">= tfs-2017 <=tfs-2018"
+    ::: moniker range="tfs-2018"
 
     From the project summary page, hover over a service and then choose the page you want. To choose another project, choose the ![Azure DevOps logo](../../media/icons/project-icon.png) Azure DevOps logo.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](media/connect-projects/project-summary-page-choose-app-horz.png)  
-
-    ::: moniker-end
-
-    ::: moniker range=">= tfs-2013 <= tfs-2015"
-
-    Choose your project or team from the set of available links, or choose **Browse** to access all projects and teams.
-
-	![Web portal, TFS, Overview](media/connect-tp-tfs-web-portal.png) 
 
     ::: moniker-end
 
@@ -100,28 +92,12 @@ To learn more about each page and the tasks you can do, see [Web portal navigati
 
 ### Sign in with different credentials
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-1. Open Windows Security from the context menu associated with your name.
-
-    ![Sign in As link in user profile menu](media/connect-tp-open-profile.png)
-
-1. Enter your credentials.
-
-    ![Enter user name and password to access TFS](media/connect-projects-tfs/IC657077.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
 1. Open your profile menu and choose **Sign out**.
 
     > [!div class="mx-imgBorder"]  
 	> ![Sign out](media/sign-out.png)
 
 1. Choose **Sign in** and enter your credentials.
-
-::: moniker-end
 
 ### Open the web portal from Team Explorer
 
@@ -268,13 +244,13 @@ Select Shift and right-click *devenv.exe*, then select **Run as different user**
 
 ### User accounts and licensing for Visual Studio
 
-To connect to a project, you need your user account added to the project. The [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [Project Administrator](../security/set-project-collection-level-permissions.md) usually does adds user accounts.
+To connect to a project, you need your user account added to the project. The **Organization owner** for Azure DevOps Services or a member of the **Project Administrators** group usually adds user accounts. To learn more, see [Add organization users and manage access](../accounts/add-organization-users.md) or [Add or remove users or groups, manage security groups](../security/add-remove-manage-user-group-security-group.md). 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Azure DevOps Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 

@@ -6,15 +6,15 @@ ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 09/11/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
-# Undo Changes in Another User's Workspace
+# Undo changes in another user's workspace
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
-
-Updated: October 2011
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)] 
+ 
 
 If a team member is blocked from checking in a file that is locked by someone else, you can use the **tf undo** command to delete Team Foundation version control pending changes in another user's workspace.
 
@@ -22,24 +22,24 @@ If you must also remove an exclusive lock on a file, but not the pending changes
 
 If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](/previous-versions/ms245474(v=vs.110)).
 
-**Required Permissions**
+## Prerequisites
 
-To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-### To Undo the Changes in Another User's Workspace
+## Undo the changes in another user's workspace
 
-1.  Click **Start**, click **All Programs**, click **Microsoft Visual Studio 2010**, point to **Visual Studio Tools**, and then click **Visual Studio 10.0 Command Prompt**.
+1.  Open the **Developer Command Prompt** for your version.
 
 2.  Type the following command at the command prompt and replace the arguments with the appropriate parameter information for your needs:
 
     `tf undo /workspace:OtherUserWorkspace;OtherUser $/TeamProject/MyFile.cs /collection:http://YourTFSServer:8080/tfs/YourCollection`
 
-For more information, see [Undo Command](undo-command.md).
+For more information, see [Undo command](undo-command.md).
 
 ## Related articles
 
-- [Create a Workspace to Work with your Project](create-work-workspaces.md)
+- [Create and work with workspaces](create-work-workspaces.md)
 - [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md)
-- [Working with Version Control Locks](work-version-control-locks.md)
+- [Work with version control locks](work-version-control-locks.md)
 
  

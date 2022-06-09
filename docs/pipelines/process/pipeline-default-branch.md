@@ -4,10 +4,13 @@ description: Configure a pipeline's default branch
 ms.topic: conceptual
 ms.author: sandrica
 author: silviuandrica
-ms.date: 12/13/2021
+ms.date: 02/01/2022
+monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
 # The pipeline default branch
+
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 A pipeline's default branch defines the pipeline version used for manual builds, [scheduled builds](scheduled-triggers.md),  [retention policies](../policies/retention.md), and in [pipeline resource triggers](pipeline-triggers.md).
 

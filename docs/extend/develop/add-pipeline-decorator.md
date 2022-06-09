@@ -4,15 +4,15 @@ description: Inject steps before and after every pipeline job
 ms.topic: reference
 ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
+ms.author: chcomley
+author: chcomley
 ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
 # Use a decorator to inject steps into a pipeline
 
-[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Pipeline decorators let you add steps to the beginning and end of every job.
 This process is different than adding steps to a single definition because it applies to all pipelines in an organization.
@@ -20,6 +20,8 @@ This process is different than adding steps to a single definition because it ap
 Suppose our organization requires running a virus scanner on all build outputs that could be released.
 Pipeline authors don't need to remember to add that step. We create a decorator that automatically injects the step.
 Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Author a pipeline decorator
 
@@ -189,6 +191,40 @@ To specify target task you can modify vss-extension.json manifest file like belo
 
 By setting up of 'targettask' property you can specify id of a target task.
 Tasks will be injected before/after all instances of specified target task. 
+
+
+### Specifying target task's inputs injection
+You can specify a list of inputs of the target task that you want to inject as inputs to the injected task.
+> Note: This functionality is only available for tasks that are injected before or after the target task.
+
+To specify this list of inputs you can modify vss-extension.json manifest file like below:
+
+#### vss-extension.json (injected task inputs version)
+```json
+{
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-pipelines-agent-job.pre-task-tasks",
+                "ms.azure-pipelines-agent-job.post-task-tasks"
+            ],
+            "properties": {
+                "template": "my-decorator.yml",
+                "targettask": "target-task-id",
+                "targettaskinputs": ["target-task-input", "target-task-second-input"]
+            }
+        }
+    ],
+    ...
+}
+```
+
+By setting up of 'targettaskinputs' property you can specify the list of inputs that are expected to be injected.
+These inputs will be injected into the task with the prefix "`target_`" and will be available in the injected task like `target_target-task-input`.
+> Note: Target task inputs that get secret values with variables or get them from other tasks won't be injected.
+
 
 <!--## Limitations
 
