@@ -41,7 +41,7 @@ The wiki repository has the following files and folders:
 
 ## File naming conventions
 
-Each file requires using dashes instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name gets added to the URL, ensuring that links you share remain intact as the wiki changes over time.
+Each file requires using hyphens instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name gets added to the URL, ensuring that links you share remain intact as the wiki changes over time.
 
 [!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
@@ -51,7 +51,7 @@ The *.order* file defines the sequence of pages within the wiki. The following v
 
 | **Wiki TOC**     | ***.order* file**                                                                  |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| :::image type="content" source="media/wiki/wiki-toc-example.png" alt-text="Wiki TOC example screenshot."::: | :::image type="content" source="media/wiki/wiki-repo-order-file-example.png" alt-text="Wiki example .order file screenshot."::: |
+| :::image type="content" source="media/wiki/wiki-toc-example.png" alt-text="Screenshot of wiki TOC example."::: | :::image type="content" source="media/wiki/wiki-repo-order-file-example.png" alt-text="Screenshot of Wiki example .order file."::: |
 
 The default hierarchy is in alphabetical sequence, however you can change this hierarchy in the *.order* file. For more information about how to reorder wiki pages, see [Add and edit wiki pages, Reorder a wiki page](add-edit-wiki.md#reorder-a-wiki-page).
 
