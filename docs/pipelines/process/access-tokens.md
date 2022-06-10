@@ -183,7 +183,7 @@ For more information, see [Azure Repos Git repositories - Limit job authorizatio
 ### Protect access to repositories in YAML pipelines
 In addition to the job authorization scope settings described in the previous section, For the YAML pipelines provides a **Protect access to repositories in YAML pipelines** setting.
 
-YAML Pipelines can access any Azure DevOps repositories in authorized projects unless **Protect access to repositories in YAML pipelines** is disabled. With this option enabled, you can reduce the scope of access for all yanml pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
+YAML Pipelines can access any Azure DevOps repositories in authorized projects unless **Protect access to repositories in YAML pipelines** is disabled. With this option enabled, you can reduce the scope of access for all yaml pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
 
 :::moniker-end
 
