@@ -30,22 +30,17 @@ Learn how to use classic Azure Pipelines to build and deploy your web app to a N
 #### [Java](#tab/java)
 
 - Use Ubuntu 16.04 or higher.
-- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
-- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
-- For deploying Java EE-based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
+- For Java Spring Boot and Spring Cloud apps, create a Linux VM in Azure using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004), which provides a fully supported OpenJDK-based runtime.
+- For Java servlets on Tomcat server, create a Linux VM using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and then [set up Tomcat](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file) 9.x as a service.
+- For Java EE apps, use one of the following templates to create a [Linux VM, Java and WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90), a [Linux VM, Java and WebLogic](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin), or a [Linux VM and Java 13.x](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and WildFly/JBoss 14.
 
 #### [JavaScript](#tab/javascript)
 
-To install a JavaScript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
-If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
-[this example](/azure/virtual-machines/linux/quick-create-cli).
+- If you don't have a Linux VM with an Nginx web server, follow the steps in this [Quickstart](/azure/virtual-machines/linux/quick-create-cli) to create one in Azure.
 
-* * * 
+- - -
 
-## Define your CI build pipeline
-
-You'll need a continuous integration (CI) build pipeline that publishes your web application, and
-a deployment script that can be run locally on the Ubuntu server. Set up a CI build pipeline based on the runtime you want to use. 
+## Get the code
 
 #### [Java](#tab/java)
 
@@ -54,18 +49,16 @@ a deployment script that can be run locally on the Ubuntu server. Set up a CI bu
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
-Follow more steps mentioned in [Build your Java app with Maven](../../ecosystems/java.md) for creating a build to deploy to Linux.
 
 #### [JavaScript](#tab/javascript)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
-Follow more steps mentioned in [Build your Node.js app with gulp](../../ecosystems/javascript.md) for creating a build to deploy to Linux.
 
-* * * 
+- - -
 
 [!INCLUDE [create-linux-deployment-group](../includes/create-linux-deployment-group.md)]
 
