@@ -27,6 +27,10 @@ Learn how to use classic Azure Pipelines to build and deploy your web app to a N
 
 ## Linux VM Prerequisites
 
+#### [JavaScript](#tab/javascript)
+
+- If you don't have a Linux VM with an Nginx web server, follow the steps in this [Quickstart](/azure/virtual-machines/linux/quick-create-cli) to create one in Azure.
+
 #### [Java](#tab/java)
 
 - Use Ubuntu 16.04 or higher.
@@ -34,21 +38,11 @@ Learn how to use classic Azure Pipelines to build and deploy your web app to a N
 - For Java servlets on Tomcat server, create a Linux VM using this [template](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and then [set up Tomcat](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file) 9.x as a service.
 - For Java EE apps, use one of the following templates to create a [Linux VM, Java and WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90), a [Linux VM, Java and WebLogic](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin), or a [Linux VM and Java 13.x](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) and WildFly/JBoss 14.
 
-#### [JavaScript](#tab/javascript)
-
-- If you don't have a Linux VM with an Nginx web server, follow the steps in this [Quickstart](/azure/virtual-machines/linux/quick-create-cli) to create one in Azure.
-
 - - -
 
 ## Get the code
 
 If you don't have a repository, use the following sample project follow along with this tutorial:
-
-#### [Java](#tab/java)
-
-```
-https://github.com/MicrosoftDocs/pipelines-java
-```
 
 #### [JavaScript](#tab/javascript)
 
@@ -56,21 +50,61 @@ https://github.com/MicrosoftDocs/pipelines-java
 https://github.com/MicrosoftDocs/pipelines-javascript
 ```
 
+#### [Java](#tab/java)
+
+```
+https://github.com/MicrosoftDocs/pipelines-java
+```
+
 - - -
 
 ## Build your app
-
-#### [Java](#tab/java)
-
-- [Build Java apps](../../ecosystems/java.md)
 
 #### [JavaScript](#tab/javascript)
 
 - [Build JavaScript apps](../../ecosystems/javascript.md)
 
+#### [Java](#tab/java)
+
+- [Build Java apps](../../ecosystems/java.md)
+
 - - -
 
-[!INCLUDE [create-linux-deployment-group](../includes/create-linux-deployment-group.md)]
+## Set up a deployment group
+
+Deployment groups make it easier to organize the servers you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate deployment of your app.
+
+1. Open a SSH session to your Linux VM. You can do this using the Cloud Shell button in the upper-right of the [Azure portal](https://portal.azure.com/).
+
+    :::image type="content" source="../media/cloud-shell-menu-image.png" alt-text="A screenshot showing the azure cloud shell button":::
+
+1. Run the following command to initiate the session. Replace the placeholder with the IP address of your VM:
+
+    ```command
+    ssh <publicIpAddress>
+    ```
+
+1. Run the following command to install the required dependencies to set up the build and release agent on a Linux virtual machine. See [Self-hosted Linux agents](../../agents/v2-linux.md) for more details.
+
+    ```command
+    sudo apt-get install -y libunwind8 libcurl3
+    ```
+
+1. in Azure DevOps web portal, select **Pipelines**, and then select **Deployment groups**.
+
+1. Select **Add a deployment group** (or **New** if you have existing deployment groups).
+
+1. Enter a name for the group such as **myNginx** and then select **Create**.
+
+1. Select **Linux** for the **Type of target to register** and make sure that **Use a personal access token in the script for authentication** is checked. Select **Copy script to the clipboard**. This script will install and configure an agent on your VM.
+
+1. Back in the SSH session in Azure portal, paste and run the script.
+
+1. When you're prompted to configure tags for the agent, press _Enter_ to skip.
+
+1. Wait for the script to finish and display the message *Started Azure Pipelines Agent*. Type *"q"* to exit the file editor and return to the shell prompt.
+
+1. Back in Azure DevOps portal, on the **Deployment groups** page, open the **myNginx** deployment group. Select the **Targets** tab, and verify that your VM is listed.
 
 ## Define your CD release pipeline
 
