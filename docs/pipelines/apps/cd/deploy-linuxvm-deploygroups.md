@@ -1,6 +1,6 @@
 ---
-title: Deploy nginx to a Linux VM (Classic)
-description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups in Azure Pipelines
+title: Deploy web apps to an NGINX web server on a Linux VM (Classic)
+description: How to use classic pipelines to deploy a web application to an NGINX web server on a Linux virtual machine
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: seodec18
@@ -10,19 +10,37 @@ ms.date: 09/07/2021
 monikerRange: '<= azure-devops'
 ---
 
-# Deploy a web app to an nginx web server on a Linux Virtual Machine
+# Deploy a web app to an NGINX web server running on a Linux Virtual Machine (CLassic)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
-> If you want to deploy your application to a Linux virtual machine using YAML, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
+> If you want to deploy your application to a Linux virtual machine using YAML pipelines, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
 
-Learn how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
-Azure Pipelines. You can use the steps in this
-quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
+Learn how to use classic Azure Pipelines to build and deploy your web app to a NGINX web server running on a Linux virtual machine.
 
-After you commit and push a code change, it is automatically built and then deployed. The results will
-automatically show up on your site.
+## Prerequisites
+
+- An Azure DevOps Organization. [Create one for free](../../../organizations/accounts/create-organization.md).
+- An Azure account with an active subscription. [Create an Azure account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) for free if you don't have one already.
+- A GitHub account. [Create one for free](https://github.com).
+
+## Linux VM Prerequisites
+
+#### [Java](#tab/java)
+
+- Use Ubuntu 16.04 or higher.
+- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
+- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
+- For deploying Java EE-based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
+
+#### [JavaScript](#tab/javascript)
+
+To install a JavaScript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
+If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
+[this example](/azure/virtual-machines/linux/quick-create-cli).
+
+* * * 
 
 ## Define your CI build pipeline
 
@@ -46,25 +64,6 @@ Follow more steps mentioned in [Build your Java app with Maven](../../ecosystems
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
 Follow more steps mentioned in [Build your Node.js app with gulp](../../ecosystems/javascript.md) for creating a build to deploy to Linux.
-
-* * * 
-
-## Prerequisites for the Linux VM
-
-The deployment scripts used in the above sample repositories have been tested on Ubuntu 16.04, and we recommend you use the same version of Linux VM for this quickstart.
-Follow the extra steps described below based on the runtime stack used for the app.
-
-#### [Java](#tab/java)
-
-- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
-- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
-- For deploying Java EE-based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
-
-#### [JavaScript](#tab/javascript)
-
-To install a JavaScript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
-If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
-[this example](/azure/virtual-machines/linux/quick-create-cli).
 
 * * * 
 
