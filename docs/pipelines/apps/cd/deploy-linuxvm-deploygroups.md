@@ -42,21 +42,31 @@ Learn how to use classic Azure Pipelines to build and deploy your web app to a N
 
 ## Get the code
 
+If you don't have a repository, use the following sample project follow along with this tutorial:
+
 #### [Java](#tab/java)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
-
 ```
-https://github.com/spring-guides/gs-spring-boot-docker.git
+https://github.com/MicrosoftDocs/pipelines-java
 ```
 
 #### [JavaScript](#tab/javascript)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
+```
+https://github.com/MicrosoftDocs/pipelines-javascript
+```
 
-```
-https://github.com/MicrosoftDocs/pipelines-javascript-docker
-```
+- - -
+
+## Build your app
+
+#### [Java](#tab/java)
+
+- [Build Java apps](../../ecosystems/java.md)
+
+#### [JavaScript](#tab/javascript)
+
+- [Build JavaScript apps](../../ecosystems/javascript.md)
 
 - - -
 
