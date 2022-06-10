@@ -1,7 +1,7 @@
 ---
 title: Revert changes and find wiki page history
 titleSuffix: Azure DevOps
-description: Add and update pages offline for your  built-in team project wiki 
+description: Add and update pages offline for your built-in team project wiki 
 ms.technology: devops-collab
 ms.custom: wiki, devdivchpfy22
 ms.topic: how-to
@@ -24,7 +24,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 1. To view the revision history of a page, select the **Revisions** link provided on each page. You can also select **View revisions** in the context menu of a page.
 
-   :::image type="content" source="media/wiki/click-revision.png" alt-text="The context menu shows Print, Link work items, View revisions, and Delete options. View revisions is highlighted.":::
+   :::image type="content" source="media/wiki/click-revision.png" alt-text="Screenshot of the context menu showing Print, Link work items, View revisions, and Delete options. View revisions is highlighted.":::
 
 2. Revision pages show who made the change along with the revision message, date, and version or commit ID. To view details of a revision, select the message or version link.
 
@@ -128,7 +128,7 @@ Return to the wiki, refresh the browser, and you should see the reverted content
 
 ### Revert from earlier revisions using a different branch
 
-To revert to an earlier committed version, one that isn't the immediate last revision, of a publish as code wiki page, you must update a branch other than the main branch for the wiki, and then create a pull request to the main branch.
+To revert to an earlier committed version of a publish as code wiki page (one that isn't the immediate last revision), you must update a branch other than the main branch for the wiki, and then create a pull request to the main branch.
 
 1. Create a local branch of the main wiki branch.
 1. View the commit history and locate the commit that contains the changes you want to undo.
