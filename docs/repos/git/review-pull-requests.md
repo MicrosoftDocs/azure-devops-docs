@@ -531,6 +531,8 @@ To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio:
 
 1. In **Team Explorer**, select the **Home** button and choose **Pull Requests**.
 
+1. Choose **View > Team Explorer** to open Team Explorer.
+
 1. In the **Pull Requests** view, choose from the list of pull requests to open the selected pull request in your web browser.
 
 ::: moniker-end
@@ -544,6 +546,8 @@ To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio:
 Visual Studio doesn't support PR voting, but you can vote in your [browser](review-pull-requests.md?tabs=browser#vote-on-changes) or by using the [Azure DevOps CLI](review-pull-requests.md?tabs=azure-devops-cli#vote-on-changes).
 
 To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio:
+
+1. [Connect to your project in Visual Studio](/azure/devops/organizations/projects/connect-to-projects?tabs=visual-studio-2017#connect-from-visual-studio-or-team-explorer).
 
 1. In **Team Explorer**, select the **Home** button and choose **Pull Requests**.
 
@@ -576,8 +580,8 @@ az repos pr set-vote --id
 | `--id`           | Yes | Pull request ID |
 | `--vote`         | Yes | New vote value for the pull request (accepted values: `approve`, `approve-with-suggestions`, `reject`, `reset`, or `wait-for-author`) |
 | `--detect`       | No  | Automatically detect organization (accepted values: `false`, `true`) |
-| `--organization` | Yes, if a default org isn't set and git config doesn't specify the org | Azure DevOps organization URL (set using: `az devops configure -d organization=<ORG_URL>`) |
-| `--subscription` | Yes | Name or ID of the Azure subscription (set using: `az account set -s <NAME_OR_ID>`) |
+| `--organization` | Yes, if a default org isn't set and the git config file doesn't specify the org | Azure DevOps organization URL, or set a default org using: [`az devops configure -d organization=<organization URL>`](/cli/azure/devops#az-devops-configure) |
+| `--subscription` | No | Name or ID of an Azure subscription, or set a default subscription using: [`az account set -s <name or ID>`](/cli/azure/account#az-account-set) |
 
 ##### Examples
 
