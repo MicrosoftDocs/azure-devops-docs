@@ -131,7 +131,7 @@ If you are using self-hosted agents, you can use the workspace clean options to 
 
 ```yaml
   jobs:
-  - deployment: deploy
+  - deployment: MyDeploy
     pool:
       vmImage: 'ubuntu-latest'
     workspace:
