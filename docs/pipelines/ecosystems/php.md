@@ -15,6 +15,9 @@ monikerRange: azure-devops
 
 Use Azure Pipelines continuous integration and continuous delivery (CI/CD) to build, deploy, and test your PHP projects. 
 
+Learn how to create a PHP pipeline, deploy a pipeline with a sample project to Azure App Service, and how to configure your environment. 
+
+To learn more about Azure App Service, see [Create a PHP web app in Azure App Service](/azure/app-service/quickstart-php). 
 ## Prerequisites
 
 [!INCLUDE [include](../includes/prerequisites.md)]
@@ -43,19 +46,19 @@ https://github.com/Azure-Samples/basic-php-composer
 
    If you want to watch your pipeline in action, select the build job.
 
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+   You now have a working YAML pipeline (_azure-pipelines.yml_) in your repository that's ready for you to customize!
 
-When you want to make changes to your pipeline, select your pipeline on the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+When you want to make changes to your pipeline, select your pipeline on the **Pipelines** page, and then **Edit** the _azure-pipelines.yml_ file.
 
 Read further to learn some of the more common ways to customize your pipeline.
 
 ## Deploy to App Service
 
-Use a pipeline to build a PHP web app and deploy to Azure App Service. 
+Use a pipeline to build a PHP web app and deploy to Azure App Service. Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends.
 
 You can use tasks to archive your files, publish a build artifact, and then use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service. 
 
-
+This pipelines has two stages: Build and Deploy. In the Build stage, PHP 7.3 gets installed with composer. The app files are archived and uploaded into a package named `drop`. During the Deploy phase, the `drop` package gets deployed to Azure App Service as a web app.  
 
 ```yaml
 
@@ -125,14 +128,14 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : php-composer-two'
+            displayName: 'Deploy Azure Web App
             inputs:
               azureSubscription: $(azureSubscription)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 ```
 
-## Build environment
+## Configure build environment
 
 Use Azure Pipelines to build your PHP projects without setting up infrastructure.
 
