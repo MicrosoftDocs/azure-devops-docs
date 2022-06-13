@@ -106,68 +106,41 @@ Deployment groups make it easier to organize the servers you want to use to host
 
 1. Back in Azure DevOps portal, on the **Deployment groups** page, open the **myNginx** deployment group. Select the **Targets** tab, and verify that your VM is listed.
 
-## Define your CD release pipeline
+## Create a release pipeline
 
-Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your nginx servers.
+1. Select **Pipelines** > **Releases**, and then select **New pipeline**.
 
-1. Do one of the following to start creating a release pipeline:
+1. Select **Empty job**.
 
-   * If you've completed a CI build, in the build's **Summary** tab under **Deployments**,
-     choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
+1. Select **Add an artifact** to link your build artifact. Select **Build**, and then select your **Project** and **Source** from the dropdown menu. Select **Add** when you are done.
 
-     ![Creating a new release pipeline from the build summary](../media/release-from-build-summary.png)
+1. Select the **Continuous deployment** icon, and the click the toggle button to enable the continuous deployment trigger. Add the *main* branch as a **Build branch filter**.
 
-   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop down
-     in the list of release pipelines, and choose **Create release pipeline**.
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png" alt-text="A screenshot showing how to set up the continuous deployment trigger":::
 
-     ![Creating a new release pipeline in the Releases page](../media/release-from-release-page.png)
+1. Select **Tasks**, and then select the **Agent job** and remove it.
 
-1. Choose **Start with an Empty job**.
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/remove-agent-phase-image.png" alt-text="A screenshot showing how to remove the agent job":::
 
-1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
-   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
-   the **Releases** tab, choose the **+ Add** link and select your build artifact.
+1. Select the ellipsis icon, and then select **Add a deployment group job**. The tasks you will add to this job will run on each server in your deployment group.
 
-   ![Checking or selecting the build pipeline and artifact](media/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/add-deployment-group-phase.png" alt-text="A screenshot showing how to add a deployment group job":::
 
-1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-   continuous deployment trigger is enabled, and add a filter that includes the **main** branch.
+1. Select the deployment group you created earlier from the **Deployment group** dropdown menu.
 
-   ![Checking or setting the Continuous deployment trigger](media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/select-deployment-group.png" alt-text="A screenshot showing how to select your deployment group.":::
 
-   > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
+1. Select **+** to add a new task. Search for **Bash** and then select **Add** to add it to your pipeline.
 
-1. Open the **Tasks** tab, select the **Agent job**, and choose **Remove** to remove this job.
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/add-shellscript-task.png" alt-text="A screenshot showing how to add the bash task.":::
 
-   ![Removing the Agent job from the pipeline](media/deploy-linuxvm-deploygroups/remove-agent-phase-image.png)
+1. Select the browse button to add the path of your *deploy.sh* script file. See a sample nodeJS deployment script [here](https://github.com/azure-devops/fabrikam-node/blob/master/deployscript.sh).
 
-1. Choose **...** next to the **Stage 1** deployment pipeline and select **Add deployment group job**.
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/configure-shellscript-task.png" alt-text="A screenshot showing how to add the script path.":::
 
-   ![Adding a Deployment group stage to the pipeline](media/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
+1. Select **Save** when you are done.
 
-1. For the **Deployment Group**, select the deployment group you created earlier such as **myNginx**.
-
-   ![Selecting the deployment group](media/deploy-linuxvm-deploygroups/select-deployment-group.png)
-
-    The tasks you add to this job will run on each of the machines in the deployment group you specified.
-
-1. Choose **+** next to the **Deployment group job** and, in the task catalog, search for and add a
-   **Bash** task.
-
-   ![Adding a Shell Script task to the pipeline](media/deploy-linuxvm-deploygroups/add-shellscript-task.png)
-
-1. In the properties of the **Bash** task, use the **Browse** button for the **Script Path** to select
-   the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
-   repository to build your app, the location of the script is  
-   `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`.
-   
-   ![Configuring the Shell Script task](media/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
-   
-   See a [sample deploy.sh file](https://github.com/azure-devops/fabrikam-node/blob/master/deployscript.sh) for a Node.js web app.   
-
-1. Save the release pipeline.
-
-   ![Saving the newly created release pipeline](media/deploy-linuxvm-deploygroups/save-definition-image.png)
+    :::image type="content" source="media/deploy-linuxvm-deploygroups/save-definition-image.png" alt-text="A screenshot showing how to save a release pipeline.":::
 
 ## Create a release to deploy your app
 
