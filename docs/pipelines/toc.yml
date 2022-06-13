@@ -230,9 +230,6 @@
     - name: PHP
       href: ecosystems/php.md
       displayName: php, phpunit
-    - name: PHP to web app
-      href: ecosystems/php-webapp.md
-      displayName: php, app service
     - name: Ruby
       href: ecosystems/ruby.md
       displayName: rails, bundler, rake, simplecov, cobertura
