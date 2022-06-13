@@ -27,14 +27,14 @@ Create and embed work items in your wiki page content. This feature gives you an
 
 2. Select your **wiki**.
 3. Highlight the text, and then select the type of work item you want to create from the **New work item** dropdown menu. The work item form opens with the selected text added as the title and description of the work item. 
-4. Add information to the work item, such as entering an assignee in the Assign To box, and then select **Save**.
+4. Add information to the work item, such as entering an assignee in the Assign To box, and then select **Save & Close**.
   
     ![Create and embed work items from Wiki content](media/wiki/create-embed-wit-from-wiki.gif)
 
 The selected content in the wiki page is replaced with the embedded work item.
 
 > [!NOTE]
-> Only Markdown plain text (including bold and italics) are replaced in the wiki page. For the rest of the content, like images, code blocks, and videos, the work item is created, but the embed must be done manually. This is to prevent the page from breaking due to the replaced work item. For more information, see [how to link to work items from a Wiki page](wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
+> Only Markdown plain text (including bold and italics) are replaced in the wiki page. For the rest of the content like images, code blocks, and videos, the work item is created, but the embed must be done manually. This is to prevent the page from breaking due to the replaced work item. For more information, see [how to link to work items from a Wiki page](wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
 
 ## Show work item status
 
