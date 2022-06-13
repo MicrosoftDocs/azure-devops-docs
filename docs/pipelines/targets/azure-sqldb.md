@@ -16,8 +16,6 @@ monikerRange: '<= azure-devops'
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 
-
-
 ## DACPAC
 
 The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes and data. You can create a DACPAC using the **SQL database project** in Visual Studio.
@@ -117,7 +115,7 @@ else
 }
 ```
 
-The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
+The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
@@ -167,7 +165,7 @@ variables:
   SQLFile: '<Location of SQL file in $(Build.SourcesDirectory)>'
 
 steps:
-- task: AzurePowerShell@2
+- task: AzurePowerShell@5
   displayName: Azure PowerShell script: FilePath
   inputs:
     azureSubscription: '$(AzureSubscription)'
@@ -175,18 +173,18 @@ steps:
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
-- task: CmdLine@1
+- task: CmdLine@2
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
   arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
-- task: AzurePowerShell@2
+- task: AzurePowerShell@5
   displayName: Azure PowerShell script: FilePath
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName) -ResourceGroup $(ResourceGroupName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 ```
 
