@@ -6,18 +6,18 @@ ms.topic: quickstart
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/07/2021
+ms.date: 06/13/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Deploy a web app to an NGINX web server running on a Linux Virtual Machine (CLassic)
+# Deploy a web app to an NGINX web server running on a Linux Virtual Machine (Classic)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 > [!NOTE]
 > If you want to deploy your application to a Linux virtual machine using YAML pipelines, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
 
-Learn how to use classic Azure Pipelines to build and deploy your web app to a NGINX web server running on a Linux virtual machine.
+Learn how to use Classic Azure Pipelines to build and deploy your web app to an NGINX web server running on a Linux virtual machine.
 
 ## Prerequisites
 
@@ -74,7 +74,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 Deployment groups make it easier to organize the servers you want to use to host your app. A deployment group is a collection of machines with an Azure Pipelines agent on each of them. Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 
-1. Open a SSH session to your Linux VM. You can do this using the Cloud Shell button in the upper-right of the [Azure portal](https://portal.azure.com/).
+1. Open an SSH session to your Linux VM. You can do this using the Cloud Shell button in the upper-right of the [Azure portal](https://portal.azure.com/).
 
     :::image type="content" source="../media/cloud-shell-menu-image.png" alt-text="A screenshot showing the azure cloud shell button":::
 
@@ -142,16 +142,21 @@ Deployment groups make it easier to organize the servers you want to use to host
 
     :::image type="content" source="media/deploy-linuxvm-deploygroups/save-definition-image.png" alt-text="A screenshot showing how to save a release pipeline.":::
 
-## Create a release to deploy your app
+## Deploy your app
 
-You're now ready to create a release, which means to start the process of running the release pipeline
-with the artifacts produced by a specific build. This will result in deploying the build.
+1. Select **Releases**, and then select **Create a release**.
 
-[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
+1. Make sure that the artifact version you want to use is selected and then select **Create**.
 
-## Next steps
+1. Select the release link in the information bar message. For example: "Release **Release-1** has been queued".
 
-* [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
-* [Apply stage-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
-* [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
-* [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)
+1. Select the status link in **Stages** to see the deployment logs.
+
+1. After the release is complete, navigate to your app and verify its contents.
+
+## Related articles
+
+- [Extend your deployments to IIS Deployment Groups](howto-webdeploy-iis-deploygroups.md)
+- [Deploy to IIS servers with Azure Pipelines and WinRM](deploy-webdeploy-iis-winrm.md)
+- [Deploy to a Windows Virtual Machine](deploy-webdeploy-iis-deploygroups.md)
+- [Create and remove deployment groups dynamically](howto-webdeploy-iis-deploygroups.md#depgroup)
