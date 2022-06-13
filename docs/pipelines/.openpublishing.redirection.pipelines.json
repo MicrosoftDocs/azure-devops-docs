@@ -46,6 +46,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root":"/docs/pipelines/ecosystems/php-webapp.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/php",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root":"/docs/pipelines/ecosystems/kubernetes/aks-template.md",
       "redirect_url":"/azure/aks/devops-pipeline",
       "redirect_document_id": false
