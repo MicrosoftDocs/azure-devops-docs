@@ -14,11 +14,12 @@ monikerRange: '<= azure-devops'
 # Review pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 When you create a [pull request](pull-requests.md) (PR) and specify required/optional reviewers, Azure Repos will notify the reviewers that your PR is ready for review. All required reviewers must approve the changes in your PR before the changes can merge into the target branch. For PRs that change critical branches like the `main` branch, your team might have created [branch policies](branch-policies.md) that specify the reviewers or require a minimum number of reviewers. If branch policies add optional reviewers to your PR, you can keep them, require them, or remove them. If branch policies add required reviewers to your PR, you can't make them optional or remove them. For information about assigning reviewers through branch policies, see [Automatically include code reviewers](branch-policies.md#include-code-reviewers).
 
 If you're reviewing a PR, try to give constructive feedback that's precise and easy to understand. For more information on review feedback, see [Pull request feedback](about-pull-requests.md#quality-feedback-for-pull-requests). This article describes how to review pull requests in Azure DevOps.
+
+You can only review Azure DevOps PRs in the web portal by using your browser.
 
 ::: moniker range="azure-devops"
 
@@ -88,8 +89,6 @@ You can manage PRs in Azure DevOps Services by using the [Azure DevOps command l
 
 ## Review changes
 
-<!-- start new review -->
-
 ::: moniker range="azure-devops"
 
 Pull requests let designated reviewers examine, discuss, and vote on proposed changes before those changes are applied to a target branch of a repo. The following steps describe how reviewers of PRs in Azure Repos can navigate PR tabs and view options to understand the proposed changes.
@@ -98,18 +97,18 @@ Pull requests let designated reviewers examine, discuss, and vote on proposed ch
 
 1. The **Overview** tab of a PR shows the title, description, reviewers, linked worked items, history, status, and comments. Read the PR description to see the proposed changes. View the comments to understand the issues raised by other reviewers.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/overview-tab.png" border="true" alt-text="Screenshot of the Azure Repos PR overview tab.":::
+    :::image type="content" source="media/review-pull-requests/2022/overview-tab.png" border="true" alt-text="Screenshot of the Azure Repos PR overview tab.":::
 
 1. Select the **Files** tab to review all content changes in the PR's source branch. The initial view shows a summary view of all file changes. Choose the **View** button next to a file to view only that file's changes. If the file was modified, the **View** button opens a diff view. If the file was added or deleted, the **View** button opens a content pane.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab.png" border="true" alt-text="Screenshot of a change summary view in the Files tab of a P R." lightbox="media/review-pull-requests/browser/2022/files-tab-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab.png" border="true" alt-text="Screenshot of a change summary view in the Files tab of a P R." lightbox="media/review-pull-requests/2022/files-tab-lrg.png":::
 
     >[!NOTE]
     >For performance reasons, the summary view won't show changes for a file that's larger than 0.5 MB.
 
 1. In a diff view for a file, you can select either a **Side-by-side** or **Inline** diff layout.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-diff-view.png" border="true" alt-text="Screenshot of a side-by-side diff view in the Files tab of a P R." lightbox="media/review-pull-requests/browser/2022/files-tab-diff-view-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-diff-view.png" border="true" alt-text="Screenshot of a side-by-side diff view in the Files tab of a P R." lightbox="media/review-pull-requests/2022/files-tab-diff-view-lrg.png":::
 
     >[!TIP]
     >For any *single* file that's larger than 5 MB, the diff view shows truncated file content. For a diff view of the full content, download and review such files using a local diff tool.
@@ -118,24 +117,20 @@ Pull requests let designated reviewers examine, discuss, and vote on proposed ch
 
 1. To review the changeset introduced by specific [pushes](pushing.md) to the source branch, select one or more changesets from the changes dropdown list. When you select one or more changesets, the diff view updates to show only the changes from the selected changesets. This feature is useful when changes have been pushed to the PR since your last review and you just want to see the new changes. The changes dropdown list names each changeset with the commit message from the final commit in each push operation.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-changes-dropdown.png" border="true" alt-text="Screenshot of the changeset section dropdown in the Files tab of a P R." lightbox="media/review-pull-requests/browser/2022/files-tab-changes-dropdown-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-changes-dropdown.png" border="true" alt-text="Screenshot of the changeset section dropdown in the Files tab of a P R." lightbox="media/review-pull-requests/2022/files-tab-changes-dropdown-lrg.png":::
 
     >[!TIP]
     >Hold the **Shift** key when selecting multiple changesets from the changes dropdown list.
 
 1. Choose the **Updates** tab to view all pushed changesets to ensure you haven't missed any source branch changes. The changesets are numbered and the most recent changeset appears at the top of the list. Each changeset shows the commits that were pushed in that push operation. A force-pushed changeset won't overwrite the changeset history and will show up in the changeset list same as any other changeset.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/updates-tab.png" border="true" alt-text="Screenshot of a changeset list in the Updates tab of a P R." lightbox="media/review-pull-requests/browser/2022/updates-tab-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/updates-tab.png" border="true" alt-text="Screenshot of a changeset list in the Updates tab of a P R." lightbox="media/review-pull-requests/2022/updates-tab-lrg.png":::
 
 1. Choose the **Commits** tab to view the commit history of the source branch after it diverged from the target branch. The commit history in the **Commits** tab will be overwritten if the PR author force-pushes a different commit history, so the commits shown in the **Commits** tab might differ from the commits shown in the **Updates** tab.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/commits-tab.png" border="true" alt-text="Screenshot of a commit list in the Commits tab of a P R." lightbox="media/review-pull-requests/browser/2022/commits-tab-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/commits-tab.png" border="true" alt-text="Screenshot of a commit list in the Commits tab of a P R." lightbox="media/review-pull-requests/2022/commits-tab-lrg.png":::
 
 ::: moniker-end
-
-<!-- end new review -->
-
-<!-- start old review -->
 
 ::: moniker range="< azure-devops"
 
@@ -143,7 +138,7 @@ To give a quick picture of PR status, the PR **Overview** tab summarizes checks,
 
 On the PR **Overview** tab, you can review the PR description and comments to understand proposed changes and see issues other reviewers raised.
 
-:::image type="content" source="media/review-pull-requests/browser/2020/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
+:::image type="content" source="media/review-pull-requests/2020/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
 
 ### Review files
 
@@ -153,7 +148,7 @@ On the PR **Overview** tab, you can review the PR description and comments to un
 
 Select the PR **Files** tab to view the actual changes made to the source branch next to the target branch of the pull request.
 
-:::image type="content" source="media/review-pull-requests/browser/2020/pull-request-files.png" alt-text="Screenshot of a file diff view in the Files tab of an Azure repos PR.":::
+:::image type="content" source="media/review-pull-requests/2020/pull-request-files.png" alt-text="Screenshot of a file diff view in the Files tab of an Azure Repos PR.":::
 
 >[!NOTE]
 >When viewing the difference for a *single selected file*, there's a file size limit of 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a *collection of files*, the size limit for each file is 0.5 MB, for performance reasons.
@@ -170,7 +165,7 @@ Select the PR **Files** tab to view the actual changes made to the source branch
 
 Review previous versions of the code from the **All updates** drop-down list.
 
-:::image type="content" source="media/review-pull-requests/browser/2020/pull-request-file-updates.png" alt-text="Screenshot showing PR updates in the Files tab of an Azure repos PR.":::
+:::image type="content" source="media/review-pull-requests/2020/pull-request-file-updates.png" alt-text="Screenshot showing PR updates in the Files tab of an Azure Repos PR.":::
 
 Every update to the branch adds a new version to the list and on the **Updates** tab of the PR. As you select different updates, the diff view updates to show the differences between the files in each version of the PR.
 
@@ -182,20 +177,16 @@ You can catch up with PR updates after being away from the PR by stepping throug
 
 Browse a list of changes from the author on the **Updates** tab.
 
-:::image type="content" source="media/review-pull-requests/browser/2020/pull-request-updates.png" alt-text="Browse a list of changes from the author.":::
+:::image type="content" source="media/review-pull-requests/2020/pull-request-updates.png" alt-text="Browse a list of changes from the author.":::
 
 View and select changes made in commits to the branch on the **Commits** tab.
 
-:::image type="content" source="media/review-pull-requests/browser/2020/pull-request-commits.png" alt-text="Screenshot showing a list of commits in the Commits tab of an Azure repos PR.":::
+:::image type="content" source="media/review-pull-requests/2020/pull-request-commits.png" alt-text="Screenshot showing a list of commits in the Commits tab of an Azure Repos PR.":::
 
 ::: moniker-end
 
-<!-- end old review -->
-
 
 ## Use comments
-
-<!-- start new comments -->
 
 ::: moniker range="azure-devops"
 
@@ -205,21 +196,21 @@ PR authors and reviewers can communicate with each other by adding and respondin
 
 If your feedback applies to a specific line or range of lines in a file, add a comment at that location within the file:
 
-1. In the **Files** tab of a PR, hover over the line you want to comment on and select the comment button :::image type="icon" source="media/review-pull-requests/browser/2022/new-comment-icon.png"::: to open an inline comment box. You can also select multiple lines and then select the comment button that appears when you hover over those lines.
+1. In the **Files** tab of a PR, hover over the line you want to comment on and select the comment button :::image type="icon" source="media/review-pull-requests/2022/new-comment-icon.png"::: to open an inline comment box. You can also select multiple lines and then select the comment button that appears when you hover over those lines.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-comment-icon.png" border="true" alt-text="Screenshot of the comment icon in Azure Repos P Rs." lightbox="media/review-pull-requests/browser/2022/files-tab-comment-icon-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-comment-icon.png" border="true" alt-text="Screenshot of the comment icon in Azure Repos P Rs." lightbox="media/review-pull-requests/2022/files-tab-comment-icon-lrg.png":::
 
 1. Enter your comment in the comment box and choose **Comment**.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-comment-box.png" border="true" alt-text="Screenshot of the comment box in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/browser/2022/files-tab-comment-box-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-comment-box.png" border="true" alt-text="Screenshot of the comment box in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/2022/files-tab-comment-box-lrg.png":::
 
 If your feedback applies to the entire file, add a file-level comment by selecting **Add comment** from the file options menu:
 
-:::image type="content" source="media/review-pull-requests/browser/2022/files-tab-file-comment.png" border="true" alt-text="Screenshot of the file tree context menu in the Files tab of an Azure Repos P R.":::
+:::image type="content" source="media/review-pull-requests/2022/files-tab-file-comment.png" border="true" alt-text="Screenshot of the file tree context menu in the Files tab of an Azure Repos P R.":::
 
 To provide general feedback unrelated to a specific file, add a comment in the **Overview** tab:
 
-:::image type="content" source="media/review-pull-requests/browser/2022/overview-tab-comment-box.png" border="true" alt-text="Screenshot of a comment box in the Overview tab of an Azure Repos P R." lightbox="media/review-pull-requests/browser/2022/overview-tab-comment-box-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/overview-tab-comment-box.png" border="true" alt-text="Screenshot of a comment box in the Overview tab of an Azure Repos P R." lightbox="media/review-pull-requests/2022/overview-tab-comment-box-lrg.png":::
 
 PR reviewers can also use comments to [suggest changes](#suggest-changes-in-comments) to specific file lines, as described in the next section.
 
@@ -227,39 +218,39 @@ PR reviewers can also use comments to [suggest changes](#suggest-changes-in-comm
 
 You can use comments to suggest replacement text for one or more lines in a file:
 
-1. In the **Files** tab of a PR, hover over the line you want to comment on and select the comment button :::image type="icon" source="media/review-pull-requests/browser/2022/new-comment-icon.png"::: to open an inline comment box. You can also select multiple lines and then select the comment button that appears when you hover over those lines. If accepted, your suggested content will replace the line or lines that your comment was added to.
+1. In the **Files** tab of a PR, hover over the line you want to comment on and select the comment button :::image type="icon" source="media/review-pull-requests/2022/new-comment-icon.png"::: to open an inline comment box. You can also select multiple lines and then select the comment button that appears when you hover over those lines. If accepted, your suggested content will replace the line or lines that your comment was added to.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-comment-icon.png" border="true" alt-text="Screenshot of the comment icon in Azure Repos P Rs." lightbox="media/review-pull-requests/browser/2022/files-tab-comment-icon-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-comment-icon.png" border="true" alt-text="Screenshot of the comment icon in Azure Repos P Rs." lightbox="media/review-pull-requests/2022/files-tab-comment-icon-lrg.png":::
 
 1. Select the light bulb icon under the comment box to make your suggested changes in the comment box within a fenced code block, and then choose **Comment**. You won't see a light bulb icon if you add a comment to the original code (left-hand side) of a side-by-side diff view.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-comment-box-suggestion.png" border="true" alt-text="Screenshot showing how to make a suggested change in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/browser/2022/files-tab-comment-box-suggestion-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-comment-box-suggestion.png" border="true" alt-text="Screenshot showing how to make a suggested change in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/2022/files-tab-comment-box-suggestion-lrg.png":::
 
 PR authors can accept your suggestion by:
 
 1. Choosing **Apply changes** to stage the change in readiness for a commit.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-comment-box-apply-changes.png" border="true" alt-text="Screenshot showing how to accept a suggested change in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/browser/2022/files-tab-comment-box-apply-changes-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-comment-box-apply-changes.png" border="true" alt-text="Screenshot showing how to accept a suggested change in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/2022/files-tab-comment-box-apply-changes-lrg.png":::
 
 1. Choosing **Commit all changes** to commit all staged changes. PR authors can unstage a suggestion by choosing **Undo change**.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/files-tab-comment-box-commit-changes.png" border="true" alt-text="Screenshot showing how to commit all changes in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/browser/2022/files-tab-comment-box-commit-changes-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/files-tab-comment-box-commit-changes.png" border="true" alt-text="Screenshot showing how to commit all changes in the Files tab of an Azure Repos P R." lightbox="media/review-pull-requests/2022/files-tab-comment-box-commit-changes-lrg.png":::
 
 ### Edit or delete comments
 
 You can edit or delete your comment by hovering over the comment and choosing the *edit* or *delete* icon:
 
-:::image type="content" source="media/review-pull-requests/browser/2022/files-tab-edit-delete-comment.png" border="true" alt-text="Screenshot showing the edit and delete buttons in a P R comment." lightbox="media/review-pull-requests/browser/2022/files-tab-edit-delete-comment-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/files-tab-edit-delete-comment.png" border="true" alt-text="Screenshot showing the edit and delete buttons in a P R comment." lightbox="media/review-pull-requests/2022/files-tab-edit-delete-comment-lrg.png":::
 
 ### Like comments
 
 PR authors and reviewers can *like* their own or someone else's comment by hovering over the comment and choosing the thumbs-up icon:
 
-:::image type="content" source="media/review-pull-requests/browser/2022/files-tab-like-comment.png" border="true" alt-text="Screenshot showing the like button in a P R comment." lightbox="media/review-pull-requests/browser/2022/files-tab-like-comment-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/files-tab-like-comment.png" border="true" alt-text="Screenshot showing the like button in a P R comment." lightbox="media/review-pull-requests/2022/files-tab-like-comment-lrg.png":::
 
 Comments with likes show a filled in thumbs-up icon and the number of likes. Hover over the thumbs-up icon to see the list of people who liked the comment.
 
-:::image type="content" source="media/review-pull-requests/browser/2022/files-tab-comment-like-count.png" border="true" alt-text="Screenshot showing the count of comment likes in a P R comment." lightbox="media/review-pull-requests/browser/2022/files-tab-comment-like-count-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/files-tab-comment-like-count.png" border="true" alt-text="Screenshot showing the count of comment likes in a P R comment." lightbox="media/review-pull-requests/2022/files-tab-comment-like-count-lrg.png":::
 
 ### Reply to comments
 
@@ -267,11 +258,11 @@ PR authors should reply to comments to let the reviewers know how they're addres
 
 1. To reply to a comment, type your response in the **Write a reply** field. Address recipients directly by using their `@username`. Reference work items by using `#workitemID` and other PRs by using `!pullrequestID`.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/comment-reply.png" border="true" alt-text="Screenshot showing where to reply to a P R comment.":::
+    :::image type="content" source="media/review-pull-requests/2022/comment-reply.png" border="true" alt-text="Screenshot showing where to reply to a P R comment.":::
 
 1. After entering your response, select **Reply & resolve** if your response is final. Otherwise, select **Reply**.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/comment-reply-resolve.png"alt-text="Screenshot showing how to reply and/or resolve a P R comment.":::
+    :::image type="content" source="media/review-pull-requests/2022/comment-reply-resolve.png"alt-text="Screenshot showing how to reply and/or resolve a P R comment.":::
 
     If you select **Reply & resolve**, the comment status will change to **Resolved**. PR authors can also directly change a comment's status, as described in the next section.
 
@@ -279,7 +270,7 @@ PR authors should reply to comments to let the reviewers know how they're addres
 
 New comments initially have an **Active** status, which PR authors update during PR the review process to indicate how they addressed reviewer feedback and suggestions. PR authors can select a comment status from the status dropdown list:
 
-:::image type="content" source="media/review-pull-requests/browser/2022/comment-status-dropdown.png" border="true" alt-text="Screenshot of the comment status options in a P R comment.":::
+:::image type="content" source="media/review-pull-requests/2022/comment-status-dropdown.png" border="true" alt-text="Screenshot of the comment status options in a P R comment.":::
 
 - **Active**: the default status for new comments.
 
@@ -297,13 +288,9 @@ PR authors and reviewers can track PR progress by [filtering](#filter-comments) 
 
 You can select which comments or updates show on the **Overview** tab by selecting a filter option from the comment filter dropdown list. For example, select the **What's new** filter option to see new comments and updates since you last opened the PR. Each filter option shows the number of items for its category.
 
-:::image type="content" source="media/review-pull-requests/browser/2022/overview-tab-filter-comments.png" border="true" alt-text="Screenshot showing the comment filter options in the Overview tab of a P R." lightbox="media/review-pull-requests/browser/2022/overview-tab-filter-comments-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/overview-tab-filter-comments.png" border="true" alt-text="Screenshot showing the comment filter options in the Overview tab of a P R." lightbox="media/review-pull-requests/2022/overview-tab-filter-comments-lrg.png":::
 
 ::: moniker-end
-
-<!-- end new comments -->
-
-<!-- start old comments-->
 
 ::: moniker range="< azure-devops"
 
@@ -313,9 +300,9 @@ Add comments to a PR to make suggestions, reply to previous comments, and point 
 
 ::: moniker range="<= azure-devops-2020"
 
-- Comment inline in the **Files** tab of a PR by hovering over the line you want to comment on and selecting the comment button :::image type="content" source="media/review-pull-requests/browser/2020/pr-comment-icon.png" alt-text="Screenshot showing the Comment button in an Azure Repos PR.":::.
+- Comment inline in the **Files** tab of a PR by hovering over the line you want to comment on and selecting the comment button :::image type="content" source="media/review-pull-requests/2020/pr-comment-icon.png" alt-text="Screenshot showing the Comment button in an Azure Repos PR.":::.
 
-  :::image type="content" source="media/review-pull-requests/browser/2020/pr-comments-summary.png" alt-text="Screenshot of comments in Azure Repos P Rs.":::
+  :::image type="content" source="media/review-pull-requests/2020/pr-comments-summary.png" alt-text="Screenshot of comments in Azure Repos P Rs.":::
 
 ::: moniker-end
 
@@ -335,7 +322,7 @@ To edit or delete your comment, hover over the comment and select the pencil ico
 
 To like your own or someone else's comment, hover over the comment and select the thumbs-up icon. Comments with likes show a filled in icon and the number of likes in the comment list. Hover over the icon to see the list of people who liked the comment.
 
-:::image type="content" source="media/review-pull-requests/browser/2020/edit-comment.png" alt-text="Screenshot showing the edit, delete, and like buttons in a P R comment.":::
+:::image type="content" source="media/review-pull-requests/2020/edit-comment.png" alt-text="Screenshot showing the edit, delete, and like buttons in a P R comment.":::
 
 ::: moniker-end
 
@@ -355,7 +342,7 @@ You can select which comments and updates show on the **Overview** tab. Hiding s
 
 To filter comments and updates, select the **Show everything (n)** button above the comment list, and select one of the filtering options. The view changes to show only the selected comments and updates. The button label changes to show the filtering criteria and the number of items shown.
 
-:::image type="content" source="media/review-pull-requests/browser/2020/filter-comments.png" alt-text="Screenshot showing the options to filter the comment list in a P R.":::
+:::image type="content" source="media/review-pull-requests/2020/filter-comments.png" alt-text="Screenshot showing the options to filter the comment list in a P R.":::
 
 ::: moniker-end
 
@@ -402,11 +389,6 @@ To keep track of files that have already been reviewed, select **More options** 
 
 ::: moniker-end
 
-<!-- end old comments-->
-
-
-<!-- start new content -->
-
 ::: moniker range="azure-devops"
 
 ## Edit files
@@ -415,22 +397,17 @@ For convenience, PR authors can edit files directly in Azure Repos. For example,
 
 1. Choose **Repos > Files**, select the PR source branch, select a file, and then choose **Edit**.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/file-edit.png" border="true" alt-text="Screenshot of the Edit button to update a file in Azure Repos." lightbox="media/review-pull-requests/browser/2022/file-edit-lrg.png":::
+    :::image type="content" source="media/review-pull-requests/2022/file-edit.png" border="true" alt-text="Screenshot of the Edit button to update a file in Azure Repos." lightbox="media/review-pull-requests/2022/file-edit-lrg.png":::
 
 1. Make your changes in the editor, and then choose **Commit** to open the **Commit** dialog.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/file-commit.png" border="true" alt-text="Screenshot of the Commit button in Azure Repos.":::
+    :::image type="content" source="media/review-pull-requests/2022/file-commit.png" border="true" alt-text="Screenshot of the Commit button in Azure Repos.":::
 
 1. In the **Commit** dialog, edit the commit message if necessary, and then choose **Commit** to [commit](commits.md) and [push](pushing.md) the changes to your PR.
 
-    :::image type="content" source="media/review-pull-requests/browser/2022/file-commit-2.png" border="true" alt-text="Screenshot of the Commit dialog in Azure Repos.":::
+    :::image type="content" source="media/review-pull-requests/2022/file-commit-2.png" border="true" alt-text="Screenshot of the Commit dialog in Azure Repos.":::
 
 ::: moniker-end
-
-<!-- end new content -->
-
-
-<!-- start new content -->
 
 ::: moniker range="azure-devops"
 
@@ -438,11 +415,9 @@ For convenience, PR authors can edit files directly in Azure Repos. For example,
 
 PR reviewers can keep track of reviewed files by choosing **Mark as reviewed** from the file options menu, or by selecting the checkbox next to a file or folder:
 
-:::image type="content" source="media/review-pull-requests/browser/2022/files-tab-mark-reviewed.png" border="true" alt-text="Screenshot of the mark-as-reviewed option in the file options menu in the Files tab of a P R." lightbox="media/review-pull-requests/browser/2022/files-tab-mark-reviewed-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/files-tab-mark-reviewed.png" border="true" alt-text="Screenshot of the mark-as-reviewed option in the file options menu in the Files tab of a P R." lightbox="media/review-pull-requests/2022/files-tab-mark-reviewed-lrg.png":::
 
 ::: moniker-end
-
-<!-- end new content -->
 
 
 <a id="set-vote"></a>
@@ -451,13 +426,11 @@ PR reviewers can keep track of reviewed files by choosing **Mark as reviewed** f
 
 #### [Browser](#tab/browser)
 
-<!-- start new content -->
-
 ::: moniker range="azure-devops"
 
 PR reviewers can vote on a PR by selecting a vote option from the vote dropdown list. The reviewer icon on the PR page will show an indication of their vote.
 
-:::image type="content" source="media/review-pull-requests/browser/2022/pr-vote-options.png" border="true" alt-text="Screenshot of the vote options in an Azure Repos P R." lightbox="media/review-pull-requests/browser/2022/pr-vote-options-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/pr-vote-options.png" border="true" alt-text="Screenshot of the vote options in an Azure Repos P R." lightbox="media/review-pull-requests/2022/pr-vote-options-lrg.png":::
 
 The voting options are:
 
@@ -473,15 +446,11 @@ The voting options are:
 
 ::: moniker-end
 
-<!-- end new content -->
-
-<!-- start old content-->
-
 ::: moniker range="< azure-devops"
 
 Use the button at upper right in the PR to vote on the PR changes. The default option is **Approve**, but you can select other options from the dropdown list:
 
-:::image type="content" source="media/review-pull-requests/browser/2020/pr-voting-options.png" alt-text="Screenshot that shows P R voting options.":::
+:::image type="content" source="media/review-pull-requests/2020/pr-voting-options.png" alt-text="Screenshot that shows P R voting options.":::
 
 - **Approve**: Approve the proposed changes in the PR.
 - **Approve with suggestions**: Approve the PR, but provide optional suggestions for improvement.
@@ -491,77 +460,7 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 
 ::: moniker-end
 
-<!-- end old content-->
-
-#### [Visual Studio 2019](#tab/visual-studio-2019)
-
-<!-- start new content -->
-
-::: moniker range="azure-devops"
-
-Visual Studio doesn't support PR voting, but you can vote in your [browser](review-pull-requests.md?tabs=browser#vote-on-pr-changes) or by using the [Azure DevOps CLI](review-pull-requests.md?tabs=azure-devops-cli#vote-on-pr-changes):
-
-- To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio 2019:
-
-    1. [Connect to your project in Visual Studio](/azure/devops/organizations/projects/connect-to-projects?tabs=visual-studio-2019#connect-from-visual-studio-or-team-explorer).
-
-    1. Choose **View > Team Explorer** to open Team Explorer.
-
-    1. In **Team Explorer**, select the **Home** button and choose **Pull Requests**.
-
-        :::image type="content" source="media/review-pull-requests/visual-studio-2019/team-explorer/pull-requests-view.png" border="true" alt-text="Screenshot showing the Pull Requests button in Team Explorer in Visual Studio 2019." lightbox="media/review-pull-requests/visual-studio-2019/team-explorer/pull-requests-view-lrg.png"::: 
-
-    1. In the **Pull Requests** view, choose from the list of pull requests to open a pull request in your web browser.
-
-        :::image type="content" source="media/review-pull-requests/visual-studio-2019/team-explorer/pull-request-list.png" border="true" alt-text="Screenshot showing the pull request list in the Pull Request view in Team Explorer in Visual Studio 2019." lightbox="media/review-pull-requests/visual-studio-2019/team-explorer/pull-request-list-lrg.png":::
-
-- To open a pull request using the Azure DevOps CLI, run the command:
-
-    ```azurecli
-    az repos pr show --id <pull request ID> --open
-    ```
-
-::: moniker-end
-
-<!-- end new content -->
-
-<!-- start old content-->
-
-::: moniker range="< azure-devops"
-
-Visual Studio doesn't support PR voting, but you can vote in your [browser](review-pull-requests.md?tabs=browser#vote-on-pr-changes).
-
-To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio:
-
-1. In **Team Explorer**, select the **Home** button and choose **Pull Requests**.
-
-1. Choose **View > Team Explorer** to open Team Explorer.
-
-1. In the **Pull Requests** view, choose from the list of pull requests to open a pull request in your web browser.
-
-::: moniker-end
-
-<!-- end old content-->
-
-#### [Visual Studio 2017 & earlier](#tab/visual-studio-2017-earlier)
-
-<!-- start old content -->
-
-Visual Studio doesn't support PR voting, but you can vote in your [browser](review-pull-requests.md?tabs=browser#vote-on-pr-changes).
-
-To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio:
-
-1. In **Team Explorer**, select the **Home** button and choose **Pull Requests**.
-
-1. Choose **View > Team Explorer** to open Team Explorer.
-
-1. In the **Pull Requests** view, choose from the list of pull requests to open a pull request in your web browser.
-
-<!-- end old content-->
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<!-- start new content -->
 
 ::: moniker range="azure-devops"
 
@@ -613,23 +512,15 @@ Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000       
 
 ::: moniker-end
 
-<!-- end new content -->
-
-<!-- start old content-->
-
 ::: moniker range="< azure-devops"
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ::: moniker-end
 
-<!-- end old content-->
-
 
 ***
 
-
-<!-- start new content -->
 
 ::: moniker range="azure-devops"
 
@@ -637,7 +528,7 @@ Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000       
 
 PR authors can select a PR resolution option:
 
-:::image type="content" source="media/review-pull-requests/browser/2022/pr-resolution-options.png" border="true" alt-text="Screenshot of the P R resolution options in an Azure Repos P R." lightbox="media/review-pull-requests/browser/2022/pr-resolution-options-lrg.png":::
+:::image type="content" source="media/review-pull-requests/2022/pr-resolution-options.png" border="true" alt-text="Screenshot of the P R resolution options in an Azure Repos P R." lightbox="media/review-pull-requests/2022/pr-resolution-options-lrg.png":::
 
 - **Complete**: complete the PR now if all required reviewers have approved it and all required branch policies are met.
 
@@ -650,8 +541,6 @@ PR authors can select a PR resolution option:
 For more information on completing a PR, see [Complete the pull request](complete-pull-requests.md).
 
 ::: moniker-end
-
-<!-- end new content -->
 
 
 ## Next steps
