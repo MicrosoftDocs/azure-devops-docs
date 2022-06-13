@@ -388,11 +388,11 @@ More options are available in the comment resolution dropdown list:
 
 :::image type="content" source="./media/complete-pull-requests/pr-comment-resolution.png" alt-text="Screenshot of more options in the comment resolution dropdown list.":::
 
-- **Active**: the comment is still under review.
-- **Pending**: the issue in this comment will be addressed, but isn't fixed yet.
-- **Resolved**: the issue brought up in this comment is fixed.
-- **Won't fix**: the suggestion in the comment is noted, but this PR won't address it.
-- **Closed**: discussion for this comment is closed.
+- **Active**: The comment is still under review.
+- **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
+- **Resolved**: The issue brought up in this comment is fixed.
+- **Won't fix**: The suggestion in the comment is noted, but this PR won't address it.
+- **Closed**: Discussion for this comment is closed.
 
 ::: moniker-end
 
@@ -483,11 +483,11 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 
 :::image type="content" source="./media/review-pull-requests/pr-voting-options.png" alt-text="Screenshot that shows P R voting options.":::
 
-- **Approve**: vote to approve the proposed changes in the PR.
-- **Approve with suggestions**: vote to approve the PR, but provide optional suggestions for improvement.
-- **Wait for author**: vote to hold-off on approval pending further work by the author. The author should let you know to review the code again after they've completed the work.
-- **Reject**: vote to reject the proposed changes in the PR. Leave a comment in the PR to explain why.
-- **Reset feedback**: removes your vote.
+- **Approve**: Approve the proposed changes in the PR.
+- **Approve with suggestions**: Approve the PR, but provide optional suggestions for improvement.
+- **Wait for author**: Don't approve the changes, and ask the author to review your comments. The author should let you know to review the code again after they address your concerns.
+- **Reject**: The changes aren't acceptable. Leave a comment in the PR to explain why.
+- **Reset feedback**: Remove your vote.
 
 ::: moniker-end
 
@@ -511,7 +511,7 @@ Visual Studio doesn't support PR voting, but you can vote in your [browser](revi
 
         :::image type="content" source="./media/review-pull-requests/visual-studio-2019/team-explorer/pull-requests-view.png" border="true" alt-text="Screenshot showing the Pull Requests button in Team Explorer in Visual Studio 2019."::: 
 
-    1. In the **Pull Requests** view, choose from the list of pull requests to open the selected pull request in your web browser.
+    1. In the **Pull Requests** view, choose from the list of pull requests to open a pull request in your web browser.
 
         :::image type="content" source="./media/review-pull-requests/visual-studio-2019/team-explorer/pull-request-list.png" border="true" alt-text="Screenshot showing the pull request list in the Pull Request view in Team Explorer in Visual Studio 2019.":::
 
@@ -537,7 +537,7 @@ To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio:
 
 1. Choose **View > Team Explorer** to open Team Explorer.
 
-1. In the **Pull Requests** view, choose from the list of pull requests to open the selected pull request in your web browser.
+1. In the **Pull Requests** view, choose from the list of pull requests to open a pull request in your web browser.
 
 ::: moniker-end
 
@@ -555,7 +555,7 @@ To open an Azure Repos PR or GitHub PR from Team Explorer in Visual Studio:
 
 1. Choose **View > Team Explorer** to open Team Explorer.
 
-1. In the **Pull Requests** view, choose from the list of pull requests to open the selected pull request in your web browser.
+1. In the **Pull Requests** view, choose from the list of pull requests to open a pull request in your web browser.
 
 <!-- end old content-->
 
