@@ -4,7 +4,7 @@ description: How to deploy web apps to Azure Web App for Containers
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
-ms.date: 03/03/2022
+ms.date: 06/14/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -31,7 +31,7 @@ Using Azure Pipelines, you can build, test, and automatically deploy your web ap
 
 ## Get the code
 
-[Fork](../../../repos/git/forks.md) or [clone](../../../repos/git/clone.md) the sample app to follow along with this tutorial.
+[Fork](../../../repos/git/forks.md) or [clone](../../../repos/git/clone.md) the sample app in GitHub to follow along with this tutorial.
 
 #### [Java](#tab/java)
 
