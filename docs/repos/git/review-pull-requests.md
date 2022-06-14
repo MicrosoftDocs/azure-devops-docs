@@ -91,7 +91,7 @@ You can manage PRs in Azure DevOps Services by using the [Azure DevOps command l
 
 ::: moniker range="azure-devops"
 
-Pull requests let designated reviewers examine, discuss, and vote on proposed changes before those changes are applied to a target branch of a repo. The following steps describe how reviewers of PRs in Azure Repos can navigate PR tabs and view options to understand the proposed changes.
+Pull requests let designated reviewers examine, discuss, and vote on proposed changes before those changes are applied to a target branch of a repo. The following steps describe how reviewers of PRs in Azure Repos can navigate through a PR to understand the proposed changes.
 
 1. From your web browser, open the team project for your Azure DevOps organization. Choose **Repo > Pull requests** to list the PRs. A newly opened PR defaults to the **Overview** tab.
 
