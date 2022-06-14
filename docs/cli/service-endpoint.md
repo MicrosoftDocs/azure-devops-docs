@@ -101,7 +101,7 @@ az devops service-endpoint create --service-endpoint-configuration
 
 ### Parameters
 
-- **--service-endpoint-configuration**: Required. Name of the `json` configuration file with service endpoint configuration.  
+- **service-endpoint-configuration**: Required. Name of the `json` configuration file with service endpoint configuration.  
 - **encoding**: Optional. Encoding of the input file. Default is `utf-8`. Accepted values: `ascii`, `utf-16be`, `utf-16le`, `utf-8`.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default.
@@ -244,7 +244,7 @@ You can achieve it using the following steps:
 
 1. Create endpoint of same type from the user interface and capture its network trace (using tool of your preference like Fiddler, Chrome Developer tool). 
 
-	![Docker Create UI](media/DockerServiceEndpointCreateUI.png)
+	![Screenshot of Create Service Connection for Docker dialog.](media/DockerServiceEndpointCreateUI.png)
 
 	Captured request is a POST call to uri ending 
 `apis/serviceendpoint/endpoints`
