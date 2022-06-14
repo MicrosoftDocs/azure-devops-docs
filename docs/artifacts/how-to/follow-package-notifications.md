@@ -3,7 +3,7 @@ title: Receive package notifications
 description: How to follow a package and get notified every time a new version is published
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 06/14/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -42,6 +42,18 @@ Aside from getting notifications when a new package version is published, you ca
 ## Follow a package with personal notifications
 
  In addition to following a package from the _Feeds_ page, you can also [manage your personal notifications](../../notifications/manage-your-personal-notifications.md) and set up alerts to be notified about a specific package or set of packages from the _Notification Settings_ page.
+
+1. Navigate to your Azure DevOps organization: `https://dev.azure.com/<YOUR_ORGANIZATION>`.
+
+1. Select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications**.
+
+1. Select **New subscription**, and then select **Artifacts** > **A package is change**. Select **Next** when you are done.
+
+    :::image type="content" source="../../media/personal-notifications-artifacts.png" alt-text="A screenshot showing how to add a new notification subscription.":::
+
+1. Add a **Description** and then select an email address for the notifications to be delivered to. By default, your preferred email address is used. You can also add filters to only receive notifications when a set of criteria are met.
+
+1. Select **Finish** when you are done.
 
 ## Related articles
 
