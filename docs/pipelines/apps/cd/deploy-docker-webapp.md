@@ -31,7 +31,7 @@ Using Azure Pipelines, you can build, test, and automatically deploy your web ap
 
 ## Get the code
 
-[Fork](../../../repos/git/forks.md) or [clone](../../../repos/git/clone.md) the sample app in GitHub to follow along with this tutorial.
+[Fork](../../../repos/git/forks.md) or [clone](../../../repos/git/clone.md) the sample app in GitHub or Azure Repos to follow along with this tutorial.
 
 #### [Java](#tab/java)
 
