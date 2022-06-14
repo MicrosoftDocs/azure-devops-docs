@@ -17,9 +17,7 @@ Notifications are a great tool to stay informed about specific changes within yo
 
 1. Select **Artifacts**, and then select your feed.
 
-1. Select the package you want to follow.
-
-1. Select **Follow** to start getting notified whenever a new version is published.
+1. Select the package you want to follow, and then select **Follow** to start getting notified whenever a new version is published.
 
     :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot showing how to follow a package.":::
 
@@ -33,9 +31,7 @@ Aside from getting notifications when a new package version is published, you ca
 
     :::image type="content" source="../media/notifications-filter-view.png" alt-text="A screenshot showing how to filter packages by a specific view.":::
 
-1. Select the package you want to follow.
-
-1. Select **Follow**.
+1. Select the package you want to follow, and then select **Follow**.
 
     :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot showing how to follow a package from a specific view.":::
 
@@ -56,6 +52,9 @@ Aside from getting notifications when a new package version is published, you ca
     :::image type="content" source="../media/filter-notifications.png" alt-text="A screenshot showing how to set up a new notification subscription and add filters.":::
 
 1. Select **Finish** when you are done.
+
+> [!Note]
+> You must be a member of the *Project Administrators group* or the *Project Collection Administrators group* if you want to create project notifications.
 
 ## Related articles
 
