@@ -49,9 +49,11 @@ Aside from getting notifications when a new package version is published, you ca
 
 1. Select **New subscription**, and then select **Artifacts** > **A package is change**. Select **Next** when you are done.
 
-    :::image type="content" source="../../media/personal-notifications-artifacts.png" alt-text="A screenshot showing how to add a new notification subscription.":::
+    :::image type="content" source="../media/personal-notifications-artifacts.png" alt-text="A screenshot showing how to add a new notification subscription.":::
 
 1. Add a **Description** and then select an email address for the notifications to be delivered to. By default, your preferred email address is used. You can also add filters to only receive notifications when a set of criteria are met.
+
+    :::image type="content" source="../media/filter-notifications.png" alt-text="A screenshot showing how to set up a new notification subscription and add filters.":::
 
 1. Select **Finish** when you are done.
 
@@ -60,3 +62,5 @@ Aside from getting notifications when a new package version is published, you ca
 - [Share your Artifacts with package badges](../package-badges.md)
 - [Limits on package sizes and counts](../reference/limits.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
+- [Get started with notifications in Azure DevOps](../../notifications/about-notifications.md)
+- [Manage team, group, and global notifications](../../notifications/manage-team-group-global-organization-notifications.md)
