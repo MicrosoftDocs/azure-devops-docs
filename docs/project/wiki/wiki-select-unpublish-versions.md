@@ -36,9 +36,9 @@ If your published wiki corresponds to a product version, you can publish new bra
 1. Complete the form, choosing the branch that you previously created.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Publish new version dialog box](media/wiki/publish-new-version.png)
+	> ![Publish new version dialog box](media/wiki/publish-new-version-of-wiki.png)
 
-1. Select **Update**.
+1. Select **Publish**.
 
 
 ## Select a wiki version
