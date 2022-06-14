@@ -30,9 +30,9 @@ Open the report of interest. If you are working to get the OData query behind a 
 :::row:::
    :::column span="2":::
       **Boards** 
-      - [Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd) 
-      - [Sprint burndown](configure-sprint-burndown.md)  
-      - [Velocity chart](team-velocity.md) 
+      - [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd) 
+      - [Sprint burndown](../dashboards/configure-sprint-burndown.md)  
+      - [Velocity chart](../dashboards/team-velocity.md) 
    :::column-end:::
    :::column span="2"::: 
       **Pipelines & Test** 
