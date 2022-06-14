@@ -65,6 +65,7 @@ Use this quick reference to access information and sample queries using OData an
       - [Return specific columns or fields](wit-analytics.md#select-columns)  
       - [Set permissions](../powerbi/analytics-security.md)  
       - [Sort results](wit-analytics.md#sort-results)  
+      - [View OData query behind a report or widget](view-odata-query-analytics-report.md)
    :::column-end:::
 :::row-end:::
 
