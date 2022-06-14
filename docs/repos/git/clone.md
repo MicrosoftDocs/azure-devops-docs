@@ -268,7 +268,7 @@ git clone https://fiber-teams@dev.azure.com/fiber-teams/FiberTests/_git/FiberTes
 The Git clone command also let's you clone just a single branch. This option is useful when only one branch of a large repo is of interest to you.
 
 ```cmd
-git clone <clone URL> --single-branch <branch name>
+git clone <clone URL> --branch <branch name> --single-branch
 ```
 
 >[!NOTE]
