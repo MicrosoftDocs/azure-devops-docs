@@ -166,7 +166,7 @@ Upon successful creation, an `Id` is assigned to the service endpoint and a resp
 
 ## Create a GitHub service endpoint
 
-To create a GitHub service endpoint, use the use the [`az devops service-endpoint github create`](/cli/azure/devops/service-endpoint/github)  command:
+To create a GitHub service endpoint, use the [`az devops service-endpoint github create`](/cli/azure/devops/service-endpoint/github)  command:
 
 > [!div class="tabbedCodeSnippets"]
 ```Azure CLI
