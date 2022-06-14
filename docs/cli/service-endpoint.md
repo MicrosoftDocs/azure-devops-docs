@@ -176,7 +176,7 @@ az devops service-endpoint github create --github-url
                                          [--project]
 ```
 
-In interactive mode, the `az devops service-endpoint github create` command asks for a [GitHub PAT token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) using a prompt message, for automation purpose set the GitHub PAT token using the `AZURE_DEVOPS_EXT_GITHUB_PAT` environment variable. For more information , see [Sign in with a personal access token (PAT)](log-in-via-pat.md).
+In interactive mode, the `az devops service-endpoint github create` command asks for a [GitHub PAT token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) using a prompt message, for automation purpose set the GitHub PAT token using the `AZURE_DEVOPS_EXT_GITHUB_PAT` environment variable. For more information, see [Sign in with a personal access token (PAT)](log-in-via-pat.md).
 
 
 
