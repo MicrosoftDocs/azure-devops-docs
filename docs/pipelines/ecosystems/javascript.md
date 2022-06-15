@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2
-ms.date: 12/22/2021
+ms.date: 06/15/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -52,8 +52,11 @@ steps:
 
 - script: |
     npm install
+  displayName: 'npm install'
+
+- script: |
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm build'
 
 - script: |
     npm pack
@@ -124,8 +127,11 @@ pool: Default
 
 - script: |
     npm install
+  displayName: 'npm install'
+
+- script: |
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm build'
 ```
 3. [Create a pipeline](../create-first-pipeline.md) and select the **YAML** template.
 
@@ -576,8 +582,11 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 ```yaml
 - script: |
     npm install
+  displayName: 'npm install'
+
+- script: |
     npm run build
- displayName: 'npm install and build'
+  displayName: 'npm build'
 ```
 
 ::: moniker-end
@@ -596,13 +605,16 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '12.x'
   displayName: 'Install Node.js'
 
 - script: |
     npm install
+  displayName: 'npm install'
+
+- script: |
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm build'
 
 - task: CopyFiles@2
   inputs:
