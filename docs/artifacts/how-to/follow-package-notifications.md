@@ -43,7 +43,7 @@ Aside from getting notifications when a new package version is published, you ca
 
 1. Select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications**.
 
-1. Select **New subscription**, and then select **Artifacts** > **A package is change**. Select **Next** when you are done.
+1. Select **New subscription**, and then select **Artifacts** > **A package is changed**. Select **Next** when you are done.
 
     :::image type="content" source="../media/personal-notifications-artifacts.png" alt-text="A screenshot showing how to add a new notification subscription.":::
 
