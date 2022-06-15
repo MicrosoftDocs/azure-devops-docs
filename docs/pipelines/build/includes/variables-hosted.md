@@ -638,7 +638,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 [!INCLUDE [include](../includes/variables-build-sources-directory.md)]
 
 </td>
-<td>No</td>
+<td>Yes</td>
 </tr>
 
 <tr>
