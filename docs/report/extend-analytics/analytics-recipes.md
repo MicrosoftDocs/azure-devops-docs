@@ -62,7 +62,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
   &$select=WorkItemId, Title, State, Iteration Path
 ```
 
-**Example entry:** 
+**Example query:**
 
 For example, the following syntax queries revisions for ID=1145.
 
@@ -71,7 +71,7 @@ https://analytics.dev.azure.com/kelliott/_odata/v1.0/WorkItems?$select=WorkItemI
 https://analytics.dev.azure.com//fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItemRevisions?$filter=WorkItemId eq 1145&$select=WorkItemId, Title, State&$expand=Iteration($select=IterationPath)
 
 
-**Example response: **
+**Example response:**
 
 And the response returns data for the four revisions:
 
@@ -130,7 +130,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
   &$select=WorkItemId, Title, State
 ```
 
-**Example entry:** 
+**Example query:**
 
 For example, the following syntax queries work items for the **Fabrikam Fiber** project under the **Iteration Path=Fabrikam Fiber\Release 1\Sprint 6**.
 
@@ -139,7 +139,7 @@ For example, the following syntax queries work items for the **Fabrikam Fiber** 
 https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/WorkItems?$select=WorkItemId, WorkItemType, Title, State&$expand=Iteration($select=IterationPath)&$filter=(Project/ProjectName eq 'Fabrikam Fiber' AND WorkItemType ne '' AND Iteration/IterationPath eq 'Fabrikam Fiber\Release 1\Sprint 6')
 ```
  
-**Example response: **
+**Example response:**
 
 And the response returns data for the following four work items. 
 
@@ -217,7 +217,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 > [!NOTE] 
 > Cross-project queries will fail when the user running the query doesn't have access to all the projects. Read more about [project and organization-scoped queries](account-scoped-queries.md).
 
-**Example entry:** 
+**Example query:**
 
 For example, the following syntax queries the work item count for each project defined for the **fabrikam** organization.  
 
@@ -226,7 +226,7 @@ For example, the following syntax queries the work item count for each project d
 https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/WorkItems? $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
  
-**Example response: **
+**Example response:**
 
 And the response returns data for the following five projects.
  
@@ -332,6 +332,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
   $filter=WorkItemType eq '{Type}'
      and Revisions/any(r:r/ResolvedBy/UserName eq '{User}') 
 ```
+
 **Example query:**
 
 The following syntax queries the **Design Agile** project for any work item type in any state that were ever assigned to Jamal Hartnett whose email is 'fabrikamfiber4@hotmail.com'.
@@ -346,7 +347,7 @@ https://analytics.dev.azure.com/fabrikam/Design%20Agile/_odata/v4.0-preview/Work
   &$orderby=WorkItemType asc
 ```
 
-**Example response: **
+**Example response:**
 
 The response returns two work items. 
 
@@ -385,4 +386,5 @@ The response returns two work items.
 ## Related articles 
 
 - [WIT analytics](wit-analytics.md)  
-- [Aggregate data](aggregated-data-analytics.md)
+- [Aggregate data](aggregated-data-analytics.md) 
+- [Query guidelines for Analytics with OData](odata-query-guidelines.md)
