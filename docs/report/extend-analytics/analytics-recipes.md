@@ -311,6 +311,8 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ## Retrieve all work items for a specific team 
 
+Use the following query to list work items for a specific team. 
+
 > [!div class="tabbedCodeSnippets"]
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?
@@ -322,7 +324,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ## Retrieve all work items that at one time had a field set to a specific value
 
-This query is similar to a work item query that uses the **Was Ever** operator.  
+The following query is similar to a work item query that uses the **Was Ever** operator.  
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -330,6 +332,55 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
   $filter=WorkItemType eq '{Type}'
      and Revisions/any(r:r/ResolvedBy/UserName eq '{User}') 
 ```
+**Example query:**
+
+The following syntax queries the **Design Agile** project for any work item type in any state that were ever assigned to Jamal Hartnett whose email is 'fabrikamfiber4@hotmail.com'.
+ 
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://analytics.dev.azure.com/fabrikam/Design%20Agile/_odata/v4.0-preview/WorkItems?
+  $select=WorkItemType, Title, State, 
+  &$expand=AssignedTo($select=UserEmail), Area($select=AreaPath)
+  &$filter=(WorkItemType ne '' AND State ne '' AND Revisions/any(r:r/AssignedTo/UserEmail eq 'fabrikamfiber4@hotmail.com'))
+  &$orderby=WorkItemType asc
+```
+
+**Example response: **
+
+The response returns two work items. 
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+{
+   "@odata.context":"https://analytics.dev.azure.com/fabrikam/Design%20Agile/_odata/v4.0-preview/$metadata#WorkItems(Priority,WorkItemType,Title,State,TagNames,AssignedTo(UserEmail),Area(AreaPath))",
+   "value":[
+      {
+         "Title":"New home page design",
+         "WorkItemType":"Feature",
+         "State":"Closed",
+         "AssignedTo":{
+            "UserEmail":"fabrikamfiber4@hotmail.com"
+         },
+         "Area":{
+            "AreaPath":"Design Agile"
+         }
+      },
+      {
+         "Title":"Check performance",
+         "WorkItemType":"User Story",
+         "State":"New",
+         "AssignedTo":{
+            "UserEmail":"fabrikamfiber4@hotmail.com"
+         },
+         "Area":{
+            "AreaPath":"Design Agile"
+         }
+      }
+   ]
+}
+```
+
 
 ## Related articles 
 

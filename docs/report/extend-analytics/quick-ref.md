@@ -56,7 +56,7 @@ Use this quick reference to access information and sample queries using OData an
       - [Query for non-hierarchical links](work-item-links.md)  
       - [Query metadata](analytics-metadata.md#query-metadata)  
       - [Query trend data](querying-for-trend-data.md#trend-data)  
-      - [Query work item history](analytics-recipes.md#history)  
+      - [Query work item history](analytics-recipes.md#retrieve-work-item-history)  
       <br/>
       - [Organization-scoped queries](account-scoped-queries.md#org-scope)  
       - [Project-scoped queries](account-scoped-queries.md#project-scope)  
