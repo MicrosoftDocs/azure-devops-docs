@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: anian
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 06/13/2022
+ms.date: 06/16/2022
 ---
 
 # Create and embed a work item from wiki

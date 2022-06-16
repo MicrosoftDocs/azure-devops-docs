@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 06/09/2022  
+ms.date: 06/16/2022  
 ---
 
 # Clone and update wiki content offline
@@ -60,7 +60,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`), select your project, and then select your wiki.
 
-2. Open the **More** context menu and select **Clone wiki**.
+2. Open the **More actions** context menu and select **Clone wiki**.
 
 	:::image type="content" source="media/wiki/more-clone-wiki.png" alt-text="Clone wiki Git repository":::
 
