@@ -81,7 +81,7 @@ The following list shows the key benefits of this task:
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line. You can use [kubectl kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) to merge multiple YAML files into one. This can be useful when using this task in classic release pipelines.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line. You can use <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/" data-raw-source="[kubectl kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)"> to merge multiple YAML files into one. This can be useful when using this task in classic release pipelines.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
