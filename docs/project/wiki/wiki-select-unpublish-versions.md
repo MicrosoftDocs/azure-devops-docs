@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/09/2022  
+ms.date: 06/16/2022  
 ---
 
 # Publish, unpublish, and select version of a wiki
