@@ -139,10 +139,6 @@ Save and run your pipeline. After your pipeline runs, verify that the job ran su
 
 ::: zone pivot="pipelines-classic"
 
-::: moniker range="< azure-devops" 
-
-#### Classic
-
 1. Fork the following repo at GitHub.
 
     ```
@@ -175,7 +171,6 @@ Save and run your pipeline. After your pipeline runs, verify that the job ran su
 
 5. Save the pipeline and queue a build to see it in action.
 
-::: moniker-end
 
 ::: zone-end
 
