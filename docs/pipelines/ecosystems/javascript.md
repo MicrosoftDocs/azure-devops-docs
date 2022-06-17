@@ -7,6 +7,7 @@ ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q1
 ms.date: 06/16/2022
 monikerRange: '<= azure-devops'
+zone_pivot_groups: pipelines-version
 ---
 
 # Quickstart - Use Azure Pipelines to build and publish a Node.js package
@@ -15,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 You can use an Azure DevOps pipeline to build, deploy, and test JavaScript apps. 
 
-This quickstart walks through how to use a pipeline to create a Node.js package with Node Package Manager (npm) and producing an artifact. 
+This quickstart walks through how to use a pipeline to create a Node.js package with Node Package Manager (npm) and publish a pipeline artifact. 
 
 ## Prerequisites
 
@@ -35,9 +36,10 @@ Fork the following repo at GitHub.
 https://github.com/Azure-Samples/js-e2e-express-server
 ```
 
+::: zone pivot="pipelines-yaml"
+
 ## 2 - Create your pipeline
  
-
 1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
 
 1. Go to your project and select **Pipelines** > **Create a new pipeline**.
@@ -155,6 +157,10 @@ pool: Default
 
 ::: moniker-end
 
+::: zone-end
+
+::: zone pivot="pipelines-classic"
+
 ::: moniker range="< azure-devops" 
 
 #### Classic
@@ -192,6 +198,8 @@ pool: Default
 5. Save the pipeline and queue a build to see it in action.
 
 ::: moniker-end
+
+::: zone-end
 
 ## Next steps
 
