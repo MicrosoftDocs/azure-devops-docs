@@ -193,6 +193,10 @@ pool: Default
 
 ::: moniker-end
 
-Read further to learn about some more common ways to customize your JavaScript build process.
+## Next steps
 
+Congratulations, you've successfully completed this quickstart!
+
+> [!div class="nextstepaction"]
+> [Configure JavaScript](configure-javascript.md)
 
