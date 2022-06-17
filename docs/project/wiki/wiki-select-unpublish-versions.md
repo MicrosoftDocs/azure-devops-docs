@@ -25,7 +25,7 @@ If your published wiki corresponds to a product version, you can publish new bra
 
 1. To create a new branch from the web portal, select **Repos** > **Branches**, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **Actions** for the branch you previously published, and then select **New branch**.
 
-:::image type="content" source="<media/wiki/add-new-branch.png>" alt-text="<Screenshot to create a new branch.>" link="<https://link.com>":::
+:::image type="content" source="../wiki/media/wiki/add-new-branch.png" alt-text="<Screenshot to create a new branch.>":::
 
 1. To publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the branch picker, and then choose **Publish new branch**.
 
@@ -34,7 +34,7 @@ If your published wiki corresponds to a product version, you can publish new bra
 
 1. Complete the form, choosing the branch that you previously created.  
 
-:::image type="content" source="<media/wiki/publish-new-version-of-wiki.png>" alt-text="<Screenshot to publish new version dialog box.>" link="<https://link.com>":::
+:::image type="content" source="../wiki/media/wiki/publish-new-version-of-wiki.png" alt-text="<Screenshot to publish new version dialog box.>":::
 
 1. Select **Publish**.
 
