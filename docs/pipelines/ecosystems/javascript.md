@@ -6,7 +6,7 @@ ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q1
 ms.date: 06/16/2022
-monikerRange: '<= azure-devops-2022'
+monikerRange: '<= azure-devops'
 ---
 
 # Quickstart - Use Azure Pipelines to build and publish a Node.js package
