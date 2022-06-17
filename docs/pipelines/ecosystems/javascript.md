@@ -4,9 +4,9 @@ description:  Build, deploy, and test JavaScript and Node.js apps with Azure Pip
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
-ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2
+ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q1
 ms.date: 06/16/2022
-monikerRange: '<= azure-devops'
+monikerRange: '<= azure-devops-2022'
 ---
 
 # Quickstart - Use Azure Pipelines to build and publish a Node.js package
@@ -27,19 +27,18 @@ You must have the following items in Azure DevOps:
 
 ::: moniker range=">=azure-devops-2020"
 
-## 1 - Create a pipeline
+## 1 - Fork the sample code
 
 Fork the following repo at GitHub.
 
 ```
 https://github.com/Azure-Samples/js-e2e-express-server
-
 ```
 
 ## 2 - Create your pipeline
  
 
-1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser goes to `https://dev.azure.com/my-organization-name` and displays your Azure DevOps dashboard.
+1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
 
 1. Go to your project and select **Pipelines** > **Create a new pipeline**.
 
@@ -59,7 +58,7 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
 
 ## 3 - Build your package and publish an artifact
 
-1. Select the pipeline and then **Edit** the *azure-pipelines.yml* file.
+1. **Edit** your *azure-pipelines.yml* file.
 
 1. Update the [Node.js Tool Installer task](../tasks/tool/node-js.md) to use Node.js version 16 LTS.
 
@@ -85,7 +84,7 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
       displayName: 'npm build'
     ``` 
 
-1. Update your pipeline to copy your npm package, package.json, and to publish your artifact.   
+1. Add new tasks to your pipeline to copy your npm package, package.json, and to publish your artifact. The [Copy Files task](../tasks/utility/copy-files.md) copies files from local path on the agent where your source code files are downloaded and saves files to a local path on the agent where any artifacts are copied to before being pushed to their destination. Those files are saved into a *npm* folder. The pipeline-artifacts[Publish Pipeline Artifact task](../artifacts/pipeline-artifacts.md), downloads the files from the earlier Copy Files tasks and makes them available as pipeline artifacts that will be published with your pipeline build.  
 
     ```yaml
     - task: CopyFiles@2
@@ -100,11 +99,11 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
         sourceFolder: '$(Build.SourcesDirectory)'
         contents: 'package.json' 
         targetFolder: $(Build.ArtifactStagingDirectory)/npm
-      displayName: 'Copy package.json'
-    
-    - task: PublishBuildArtifacts@1
+      displayName: 'Copy package.json'   
+
+    - task: PublishPipelineArtifact@1
       inputs:
-        pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+        targetPath: '$(Build.ArtifactStagingDirectory)/npm'
         artifactName: npm
       displayName: 'Publish npm artifact'
     ```
