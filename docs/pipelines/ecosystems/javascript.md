@@ -27,6 +27,8 @@ You must have the following items in Azure DevOps:
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
 
+::: zone pivot="pipelines-yaml"
+
 ## 1 - Fork the sample code
 
 Fork the following repo at GitHub.
@@ -34,8 +36,6 @@ Fork the following repo at GitHub.
 ```
 https://github.com/Azure-Samples/js-e2e-express-server
 ```
-
-::: zone pivot="pipelines-yaml"
 
 ## 2 - Create your pipeline
  
