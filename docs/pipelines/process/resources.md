@@ -43,7 +43,7 @@ These values are empty if a resource doesn't trigger a pipeline run. The variabl
 
 If you have a pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on a pipeline resource for your CD workflows.
 
-In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact.
+In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. Use the label defined by `pipeline` to reference the pipeline resource from other parts of the pipeline, such as when using pipeline resource variables or downloading artifacts.
 
 For an alternative way to download pipelines, see the tasks in [Pipeline Artifacts](../artifacts/pipeline-artifacts.md).
 
