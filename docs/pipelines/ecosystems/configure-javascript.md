@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 ---
 
 
-## Configure JavaScript for Azure Pipelines
+# Configure JavaScript for Azure Pipelines
 
 You can use Azure Pipelines to build your JavaScript apps without having to set up any infrastructure of your own. You can use either Windows or Linux agents to run your builds.
 
