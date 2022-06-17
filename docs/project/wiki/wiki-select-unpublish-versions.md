@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/16/2022  
+ms.date: 06/17/2022  
 ---
 
 # Publish, unpublish, and select version of a wiki
@@ -23,10 +23,10 @@ When you publish a Git repository to a wiki, you can publish new branch of the r
 
 If your published wiki corresponds to a product version, you can publish new branches as you release new versions of your product. To create a new version, create a new branch of your repo, and then make updates to that new branch.
 
-1. To create a new branch from the web portal, select **Repos** > **Branches**, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions** for the branch you previously published, and then select **New branch**.
+1. To create a new branch from the web portal, select **Repos** > **Branches**, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **Actions** for the branch you previously published, and then select **New branch**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a new branch](media/wiki/publish-wiki-create-branch-vert.png)
+	> ![Create a new branch](media/wiki/add-new-branch.png)
 
 1. To publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the branch picker, and then choose **Publish new branch**.
 
