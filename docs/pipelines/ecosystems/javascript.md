@@ -26,7 +26,6 @@ You must have the following items in Azure DevOps:
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
-::: moniker range=">=azure-devops-2020"
 
 ## 1 - Fork the sample code
 
@@ -40,6 +39,8 @@ https://github.com/Azure-Samples/js-e2e-express-server
 
 ## 2 - Create your pipeline
  
+::: moniker range=">=azure-devops-2020"
+
 1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
 
 1. Go to your project and select **Pipelines** > **Create a new pipeline**.
@@ -57,6 +58,20 @@ https://github.com/Azure-Samples/js-e2e-express-server
 1. A new run starts. Wait for the run to finish.
 
 When you're done, you have a working YAML file *azure-pipelines.yml* in your repository that's ready for you to customize.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019" 
+
+1. [Create a pipeline](../create-first-pipeline.md) and select the **YAML** template.
+
+1. Set the **Agent pool** and **YAML file path** for your pipeline. 
+
+1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 ## 3 - Build your package and publish an artifact
 
@@ -118,46 +133,9 @@ Save and run your pipeline. After your pipeline runs, verify that the job ran su
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019" 
-
-### Create a pipeline
-
-#### YAML
-
-1. Fork the following repo at GitHub.
-
-    ```
-   https://github.com/Azure-Samples/js-e2e-express-server
-   ```
-
-2. Add an *azure-pipelines.yml* file in your repository. This YAML assumes that you have Node.js with npm installed on your server. 
-
-```yaml
-trigger:
-- main
-
-pool: Default
-
-- script: |
-    npm install
-  displayName: 'npm install'
-
-- script: |
-    npm run build
-  displayName: 'npm build'
-```
-3. [Create a pipeline](../create-first-pipeline.md) and select the **YAML** template.
-
-4. Set the **Agent pool** and **YAML file path** for your pipeline. 
-
-5. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
-
-6. You can **Edit** your pipeline any time.
-
-::: moniker-end
-
 ::: zone-end
+
+
 
 ::: zone pivot="pipelines-classic"
 
