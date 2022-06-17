@@ -29,6 +29,14 @@ You must have the following items in Azure DevOps:
 
 ::: zone pivot="pipelines-yaml"
 
+::: moniker range="tfs-2018"
+
+YAML is not available for TFS 2018.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+
 ## 1 - Fork the sample code
 
 Fork the following repo at GitHub.
@@ -39,7 +47,6 @@ https://github.com/Azure-Samples/js-e2e-express-server
 
 ## 2 - Create your pipeline
  
-::: moniker range=">=azure-devops-2020"
 
 1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will go to `https://dev.azure.com/my-organization-name` and display your Azure DevOps dashboard.
 
