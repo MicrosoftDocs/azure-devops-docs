@@ -18,6 +18,8 @@ You can use an Azure DevOps pipeline to build, deploy, and test JavaScript apps.
 
 This quickstart walks through how to use a pipeline to create a Node.js package with Node Package Manager (npm) and publish a pipeline artifact. 
 
+::: moniker range=">=azure-devops-2020"
+
 ## Prerequisites
 
 You must have the following items in Azure DevOps:
@@ -26,6 +28,7 @@ You must have the following items in Azure DevOps:
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
+::: moniker-end
 
 ::: zone pivot="pipelines-yaml"
 
