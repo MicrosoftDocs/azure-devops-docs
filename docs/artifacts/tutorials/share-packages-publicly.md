@@ -63,9 +63,9 @@ If you want to publish NuGet packages, make sure you have the latest [Azure Arti
 
 To share your packages publicly, you can simply share your feed URL E.g. `https://dev.azure.com/<ORGANIZATION_NAME>/<PROJECT-NAME>/_artifacts/feed/<FEED_NAME>` or share individual packages with [package badges](../package-badges.md).
 
-As long as your project is kept public, anyone can view and download packages from your public feed. Anonymous users will not be able to create new feeds or access the recycle bin.
+As long as your project is kept public, anyone can view and download packages from your public feed. Anonymous users won't be able to create new feeds or access the recycle bin.
 
-:::image type="content" source="../media/anonymous-public-feeds.png" alt-text="Screenshot showing packages in the public feed.":::
+:::image type="content" source="../media/public-feeds-access.png" alt-text="A screenshot showing packages in a public feed.":::
 
 > [!IMPORTANT]
 > Upstream sources are not supported in public feeds.
