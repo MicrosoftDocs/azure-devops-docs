@@ -3,13 +3,13 @@ title: Share info with a project, repo, README, or Wiki
 titleSuffix: Azure DevOps
 description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devdivchpfy22
 ms.assetid:  
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: overview
-ms.date: 07/23/2020  
+ms.date: 06/20/2022  
 monikerRange: '<= azure-devops'
 ---
 

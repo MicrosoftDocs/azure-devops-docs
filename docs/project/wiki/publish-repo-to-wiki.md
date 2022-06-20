@@ -3,14 +3,14 @@ title: Publish Markdown files from Git repository to wiki
 titleSuffix: Azure DevOps  
 description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps
 ms.technology: devops-collab
-ms.custom: wiki, devx-track-azurecli
+ms.custom: wiki, devx-track-azurecli, devdivchpfy22
 ms.topic: quickstart
 ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021  
+ms.date: 06/20/2022 
 ---
 
 # Publish a Git repository to a wiki
@@ -310,7 +310,7 @@ Misc content
 
 For a folder to be a page as well, there should be a Markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
 
-Displayed in the following example, Test has both a folder and an md file, which creates a hierarchy within the Wiki tree.
+As displayed in the following example, Test has both a folder and an md file, which creates a hierarchy within the Wiki tree.
 
 ![Promote a folder to a page](media/promote-folder.png)
 
