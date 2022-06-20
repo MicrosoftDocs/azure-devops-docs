@@ -1,8 +1,8 @@
 ---
-title: Share Packages Publicly
-description: Use Azure Artifacts to share NuGet, npm, Maven, or Python packages with public feeds
+title: Share Packages publicly with public feeds
+description: Use Azure Artifacts public feeds to share NuGet, npm, Maven, and Python packages publicly
 ms.technology: devops-artifacts
-ms.date: 12/13/2021
+ms.date: 06/20/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -10,34 +10,33 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet.
+Azure Artifacts provides an easy way to share packages to users outside your organization and even external customers using public feeds. Packages that are stored in public feeds can be restored and installed by anyone on the Internet.
 
 ## Prerequisites
 
-- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
-- [Azure Artifacts feed](../get-started-nuget.md).
-- A public project. You can [create a public project](../../organizations/public/create-public-project.md) if you don't have one already.
+- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- A public project. [Create a public project](../../organizations/public/create-public-project.md) if you don't have one already.
 
-## Create public feeds
+## Create a public feed
 
-Public feeds are project-scoped feeds in a public project. Public feeds inherit the hosting project's visibility settings.
+Public feeds are project-scoped feeds in a public project. Public feeds inherit the visibility settings of the hosting project.
 
-> [!NOTE]
-> Organization-scoped feeds cannot be converted into project-scoped feeds.
+1. Navigate to your project, and then select **Artifacts**.
 
-1. Navigate to your public project, and then select **Artifacts**.
-
-    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing Artifacts in the Azure DevOps dashboard.":::
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="A screenshot showing how to access Artifacts from the Azure DevOps dashboard.":::
 
 1. Select **Create Feed**.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create feed button.":::
 
-1. Give your feed a **Name** and select **Project: PublicProject (Recommended)** for scope.
+1. Give your feed a **Name**, and then select **Project: PublicProject (Recommended)** for its scope.
 
-    :::image type="content" source="../media/create-public-feed.png" alt-text="Screenshot showing how to create a new public feed.":::
+    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot showing how to create a new public feed.":::
 
 1. Select **Create** when you are done.
+
+> [!NOTE]
+> Organization-scoped feeds cannot be converted into project-scoped feeds.
 
 ## Publish packages
 
