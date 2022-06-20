@@ -3,14 +3,14 @@ title: Differences between provisioned and published wiki
 titleSuffix: Azure DevOps
 description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps 
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/05/2022  
+ms.date: 06/20/2022  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -33,7 +33,7 @@ While both options maintain the wiki content in Git repositories, the way you ad
 
 With a *provisioned wiki*, you add and edit pages directly within the **Wiki**. All content updates to a *provisioned wiki* occur within the **Wiki**.
 
-With a publish code as wiki, you add, edit, and update content from **Repos** or **Code**.
+With a *publish code as wiki*, you add, edit, and update content from **Repos** or **Code**.
 
 The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the **publish as code wiki** pages.
 

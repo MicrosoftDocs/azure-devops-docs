@@ -3,14 +3,14 @@ title: Create a project wiki to share information
 titleSuffix: Azure DevOps
 description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps
 ms.technology: devops-collab
-ms.custom: wiki, devx-track-azurecli
+ms.custom: wiki, devx-track-azurecli, devdivchpfy22
 ms.topic: quickstart
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 03/05/2021
+ms.date: 06/20/2022
 ---
 
 # Create a Wiki for your project
