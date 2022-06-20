@@ -40,27 +40,24 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 ## Publish packages
 
+If you want to publish NuGet packages, make sure you have the latest [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+### Publish packages (CLI)
+
+- [NuGet](../get-started-nuget.md#publish-nuget-packages)
+- [Npm](../get-started-npm.md#publish-packages)
+- [Maven](../get-started-maven.md#publish-artifacts)
+- [Python](../quickstarts/python-cli.md#publish-python-packages)
+
+### Publish packages with Azure Pipelines
+
+- [NuGet](../../pipelines/artifacts/nuget.md#publish-a-package)
+- [Npm](../../pipelines/artifacts/npm.md#publish-to-azure-artifacts-feeds)
+- [Python](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
+- [Maven](../../pipelines/artifacts/pull-package-gradle.md)
+
 > [!IMPORTANT]
 > Universal Packages are not supported in public feeds.
-
-If you want to publish NuGet packages using the dotnet or nuget CLI, make sure you have the latest [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
-
-### Publish packages using the command line
-
-- [NuGet](../get-started-nuget.md)
-- [Npm](../get-started-npm.md)
-- [Maven](../get-started-maven.md)
-- [Publish Maven packages with Gradle](../maven/publish-package-gradle.md)
-- [Python](../quickstarts/python-packages.md)
-- [Universal Packages](../quickstarts/universal-packages.md)
-
-### Publish packages using Azure Pipelines
-
-- [NuGet](../../pipelines/artifacts/nuget.md)
-- [Npm](../../pipelines/artifacts/npm.md)
-- [Python](../../pipelines/artifacts/pypi.md)
-- [Maven](../../pipelines/artifacts/pull-package-gradle.md)
-- [Universal Packages](../../pipelines/artifacts/universal-packages.md)
 
 ## Share packages
 
