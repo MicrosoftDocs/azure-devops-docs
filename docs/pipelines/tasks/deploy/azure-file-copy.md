@@ -116,7 +116,9 @@ to obtain this.
 The task uses Windows Remote Management (WinRM) HTTPS protocol to
 copy the files from the storage blob container to the Azure VMs.
 This requires the WinRM HTTPS service to be configured on the VMs,
-and a suitable certificate installed. [Configure WinRM after virtual machine creation](/azure/marketplace/cloud-partner-portal/virtual-machine/cpp-configure-winrm-after-vm-creation)
+and a suitable certificate installed. 
+
+#### Configure WinRM after virtual machine creation
 
 If the VMs have been created without opening the 
 WinRM HTTPS ports, follow these steps:
