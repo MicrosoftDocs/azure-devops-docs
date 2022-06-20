@@ -61,19 +61,14 @@ If you want to publish NuGet packages, make sure you have the latest [Azure Arti
 
 ## Share packages
 
-> [!IMPORTANT]
-> Upstream sources are not supported in public feeds.
-
-To share your packages publicly, you can simply post/share your feed URL (example: `https://dev.azure.com/<org_name>/<project_name>/_packaging?_a=feed&feed=<feed_name>`), or share individual packages with [package badges](../package-badges.md).
-
-:::image type="content" source="../media/package-badge.png" alt-text="Screenshot showing a NuGet package badge.":::
+To share your packages publicly, you can simply share your feed URL E.g. `https://dev.azure.com/<ORGANIZATION_NAME>/<PROJECT-NAME>/_artifacts/feed/<FEED_NAME>` or share individual packages with [package badges](../package-badges.md).
 
 As long as your project is kept public, anyone can view and download packages from your public feed. Anonymous users will not be able to create new feeds or access the recycle bin.
 
 :::image type="content" source="../media/anonymous-public-feeds.png" alt-text="Screenshot showing packages in the public feed.":::
 
-> [!NOTE]
-> Package badges are only available for released versions. The criteria for what is considered a released version depends on the protocol type. Pre-released version numbers will not be displayed in badges, instead the badge will show the latest released version.
+> [!IMPORTANT]
+> Upstream sources are not supported in public feeds.
 
 ## Related articles
 
