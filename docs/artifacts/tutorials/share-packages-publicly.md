@@ -27,7 +27,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 1. Select **Create Feed**.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create feed button.":::
+    :::image type="content" source="../media/new-feed-devops.png" alt-text="A screenshot showing how to create a new feed.":::
 
 1. Give your feed a **Name**, and then select **Project: PublicProject (Recommended)** for its scope.
 
