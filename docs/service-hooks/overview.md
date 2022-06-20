@@ -165,9 +165,9 @@ A: Yes. For more information, see [Create a service hooks subscription](create-s
 
 A: Yes. You can revoke authorizations from your profile.
 
-1. 	Go to your profile page from https://visualstudio.com. 
+1. 	Go to your profile page from https://visualstudio.microsoft.com/. 
 
-	Make sure you start from the Visual Studio site (https://visualstudio.com) 
+	Make sure you start from the Visual Studio site (https://visualstudio.microsoft.com/) 
 	instead of your organization (```https://dev.azure.com/{orgName}```) because, right now, 
 	your profile accessed from your organization takes you to the wrong implementation 
 	of the authorizations management feature.
