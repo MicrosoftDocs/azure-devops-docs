@@ -65,9 +65,9 @@
   - name: Visual Studio for Mac
     href: /visualstudio/mac
   - name: Eclipse
-    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
+    href: /previous-versions/azure/devops/all/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
-    href: /previous-versions/azure/devops/java/download-intellij-plug-in
+    href: /previous-versions/azure/devops/all/java/download-intellij-plug-in
 - name: DevOps Resource Center
   items:
   - name: Selecting a development environment
