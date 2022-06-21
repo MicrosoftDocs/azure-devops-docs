@@ -43,4 +43,30 @@ ms.date: 02/18/2022
 
     :::image type="content" source="../../media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
 
+1. When using a local development environment, you must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
+
+1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task (see examples section).
+
+## Examples
+
+- In the example below, pushing "MyPackage" version "5.0.2" to an Azure Artifacts feed from a local development environment, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to be installed to properly authenticate.
+
+```dotnetcli
+nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json AZ
+```
+
+- In the example below, pushing "MyPackage" version "1.1.5" to an Azure Artifacts feed from an Azure hosted build, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires your pipeline to use the [NuGet Authenticate task](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops).
+
+  ```cli
+    - task: NuGetAuthenticate@1
+      inputs:
+        nuGetServiceConnections: MyServiceConnection_ExternalServer
+        
+    - script: |
+        dotnet build mypackage/mypackage.csproj -c Release
+        dotnet pack mypackage/mypackage.csproj /property:PackageVersion=1.1.5 -o nupkgs -c Release
+        nuget push nupkgs/foo.1.1.5.nupkg -src https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json AZ
+      displayName: "Pack and push"          
+  ```
+
 ::: moniker-end
