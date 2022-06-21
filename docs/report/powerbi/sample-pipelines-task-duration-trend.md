@@ -1,7 +1,7 @@
 ---
 title: Pipeline task duration trend sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to generate a pipeline task duration trend Power BI report  
+description: Learn how to generate a pipeline task duration trend Power BI report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 09/21/2021
+ms.date: 10/12/2021
 ---
 
 # Pipeline task duration trend sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the daily trend report of the time taken to execute a pipeline task. 
 
@@ -31,7 +31,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -55,7 +55,7 @@ in
     Source
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -139,7 +139,7 @@ The following table describes each part of the query.
    `and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)`
    :::column-end:::
    :::column span="1":::
-   Omit the pipeline runs that were canceled, skipper or abandoned
+   Omit the pipeline runs that were canceled, skipped, or abandoned
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -260,13 +260,13 @@ For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**.
 
-1. Add the field "PipelineRunCompletedOn.Date" to **Axis**.
+1. Add the field **PipelineRunCompletedOn.Date** to **Axis**.
 
-    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click **PipelineRunCompletedOn.Date** and select **PipelineRunCompletedOn.Date**, rather than Date Hierarchy.
 	
-1. Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
+1. Add the field **TaskDuration80thPercentileInSeconds** to **Values**.
 
-    - Right-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    - Right-click **TaskDuration80thPercentileInSeconds** field and ensure **Sum** is selected.
 
 Your report should look like this. 
 
@@ -274,15 +274,15 @@ Your report should look like this.
 > ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following extra queries to create different but similar reports using the same steps defined previously in this article.
 
 
-### Use Pipeline Id, rather than Pipeline Name
+### Use Pipeline ID, rather than Pipeline Name
 
 You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use the pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
-https:\//dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
+https:\//dev.azure.com/{organization}/{project}/_build?definitionId= `{pipelineid}`
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -384,7 +384,7 @@ percentile_cont(ActivityDurationSeconds, 0.95, PipelineRunCompletedDateSK) as Ta
 
 ### Filter by branch
 
-You may want to view the duration trend of a task for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the duration trend of a task for a particular **branch** only. To create the report, follow the extra steps below along with what is defined previously in this article.
 
 - Expand Branch into Branch.BranchName
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
@@ -438,7 +438,7 @@ $apply=filter(
 
 ### Task duration trend for all pipeline tasks
 
-You may want to view the task duration trend for all the pipeline tasks in a single report. To create the report, perform the following additional steps along with those steps defined previously in this article.
+You may want to view the task duration trend for all the pipeline tasks in a single report. To create the report, carry out the following extra steps along with those steps defined previously in this article.
 
 - Select Power BI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**  
 

@@ -12,7 +12,7 @@ ms.date: 06/08/2021
 
 # Download permission report for a repository 
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
  
 To determine the effective permissions of users and groups for a repository, you can download the permissions report. Requesting the report generates an email with a link to download the report. The report lists the effective permissions for the repository you select, for each user and group specified at the time the report is generated. Inherited permissions come from a parent group which you can view from the web portal. The report is a json-formatted report that you can open using Power BI or other json reader.  

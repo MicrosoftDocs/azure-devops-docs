@@ -1,12 +1,13 @@
 ---
-title: Resolve errors received configuring TFS features
-titleSuffix: TFS 
+title: Resolve errors received configuring features
+titleSuffix: Azure DevOps
 description: Occurs when definitions in the project conflict with definitions in the process templates uploaded to your project collection.
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.author: kaelli
 author: KathrynEE
+ms.topic: troubleshooting
 monikerRange: '< azure-devops'
 ms.date: 12/19/2017
 ---
@@ -14,12 +15,12 @@ ms.date: 12/19/2017
 
 # Resolve errors received when configuring features
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)] 
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
-You may be able to resolve errors and warnings that the [Configure Features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) wizard displays. These problems occur because definitions in the project conflict with definitions in the process templates uploaded to your project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your project and then rerun the wizard.    
+You may be able to resolve errors and warnings that the [Configure Features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) wizard displays. These problems occur because definitions in the project conflict with definitions in the process templates uploaded to your project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your project and then rerun the wizard.    
 
 > [!IMPORTANT]  
-> This article applies only to projects defined on an on-premises Team Foundation Server (TFS). 
+> This article applies only to projects defined on an on-premises Azure DevOps Server. 
 
   
 ## Required permissions 
@@ -28,11 +29,7 @@ You may be able to resolve errors and warnings that the [Configure Features](/pr
   
 - To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.  
   
-  For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
-
-> [!NOTE]  
->  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](../../index.yml) and [Process Templates](../../index.yml).  
- 
+  For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
  You can resolve an error by modifying the process template used to configure the new features, or by modifying your project. After you've corrected the error, rerun the wizard.  
@@ -88,7 +85,7 @@ You may be able to resolve errors and warnings that the [Configure Features](/pr
 ### Resolve warnings about adding an ACTION statement to a work item type  
  To support the My Work feature, the Configure Features wizard inserts two `ACTION` statements into the workflow transition section of the definition for task WITs. If either the states or the transitions for moving from a new to an active state, or from an active to a new state are missing, you will receive a warning.  
   
- To resolve the warnings, review the workflow for the indicated WIT. As needed, modify the workflow to match the workflow states and transitions that are defined for the latest version of the process template installed on the upgraded TFS that matches the one used to create your project. Then, rerun the wizard. For projects based on the Agile process template, see [Update the workflow for agile projects](update-the-workflow-for-agile-team-projects.md).  
+ To resolve the warnings, review the workflow for the indicated WIT. As needed, modify the workflow to match the workflow states and transitions that are defined for the latest version of the process template installed on the upgraded TFS that matches the one used to create your project. Then, rerun the wizard. For projects based on the Agile process template, see [Update the workflow for agile projects]( /previous-versions/azure/devops/reference/xml/update-the-workflow-for-agile-team-projects?view=tfs-2015&preserve-view=true).  
   
  To learn more, see the following topics:  
   

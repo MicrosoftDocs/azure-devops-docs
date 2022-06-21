@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 10/05/2021
-monikerRange: '>= tfs-2015'
+ms.date: 11/29/2021
+monikerRange: '<= azure-devops'
 ---
 
 # Task types & usage
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -29,7 +29,7 @@ To run the same set of tasks in parallel on multiple agents, or to run some task
 By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
 You may optionally use [step targets](#step-target) to control context for an individual task.
 
-Learn more about how to specify properties for a task with the [YAML schema](../yaml-schema.md#task). 
+Learn more about how to specify properties for a task with the [built-in tasks](../tasks/index.md). 
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ to add tasks to Azure Pipelines or TFS.
 ::: moniker range=">= azure-devops-2019"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task will take precedence. You can use the task GUID or a fully-qualified
+and a custom task, the in-box task will take precedence. You can use the task GUID or a fully qualified
 name for the custom task to avoid this risk:
 
 ```yaml
@@ -63,7 +63,7 @@ steps:
 - task: qetza.replacetokens.replacetokens-task.replacetokens@3 #working example
 ```
 
-To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully-qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
+To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
 
 ::: moniker-end
 
@@ -124,7 +124,21 @@ Each task offers you some **Control Options**.
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2019"
+
+Control options are available as keys on the `task` section.
+
+```yaml
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  condition: expression     # see below
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean          # whether or not to run this step; defaults to 'true'
+  timeoutInMinutes: number  # how long to wait before timing out the task
+```
+
+::: moniker-end
+
+::: moniker range=">azure-devops-2019 <azure-devops"
 
 Control options are available as keys on the `task` section.
 
@@ -136,6 +150,26 @@ Control options are available as keys on the `task` section.
   timeoutInMinutes: number  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+Control options are available as keys on the `task` section.
+
+```yaml
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  condition: expression     # see below
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean          # whether or not to run this step; defaults to 'true'
+  retryCountOnTaskFailure: number # Max number of retries; default is zero
+  timeoutInMinutes: number  # how long to wait before timing out the task
+  target: string            # 'host' or the name of a container resource to target
+```
+
+::: moniker-end
+
+:::moniker range=">= azure-devops-2019"
 
 > [!NOTE]
 > A given task or job can't unilaterally decide whether the job/stage continues. What it can do is offer a status of **succeeded** or **failed**, and downstream tasks/jobs each have a condition computation that lets them decide whether to run or not. The default condition which is effectively "run if we're in a successful state".
@@ -159,14 +193,15 @@ steps:
   condition: succeededOrFailed()
 ```
 
-> [!NOTE]
-> For the full schema, see [YAML schema for `task`](../yaml-schema.md#task).
-
 
 ### Conditions
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+
+::: moniker-end
+
+:::moniker range="> azure-devops-2019"
 
 ### Step target
 
@@ -189,6 +224,28 @@ steps:
 ```
 
 Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### Number of retries if task failed
+
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. 
+
+```yml
+- task: <name of task>
+   retryCountOnTaskFailure: <max number of retries>
+   ...
+```
+
+> [!NOTE]
+> * Requires agent version 2.194.0 or later. Not supported for [agentless tasks](./phases.md#agentless-tasks).
+> * The failing task is retried immediately.
+> * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
+> * There is no information about the retry count made available to the task.
+> * A warning is added to the task logs indicating that it has failed before it is retried.
+> * All of the attempts to retry a task are shown in the UI as part of the same task node.
 
 ::: moniker-end
 
@@ -220,6 +277,17 @@ time the task is queued or is waiting for an agent.
 #### Continue on error (partially successful)
 
 Select this option if you want subsequent tasks in the same job to possibly run even if this task fails. The build or deployment will be no better than partially successful. Whether subsequent tasks run depends on the **Run this task** setting.
+
+#### Number of retries if task failed
+
+Specify the number of retries if this task fails. The default is zero. 
+
+> [!NOTE]
+> * The failing task is retried immediately.
+> * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
+> * There is no information about the retry count made available to the task.
+> * A warning is added to the task logs indicating that it has failed before it is retried.
+> * All of the attempts to retry a task are shown in the UI as part of the same task node.
 
 #### Run this task
 

@@ -75,6 +75,6 @@ In this case, we open the Hello hub.
 
 The action has been added to the context menu for queries and folders in the queries hub (work hub group).
 
-![action in the context menu of a query](../../media-procedures/create-action/action.png)
+![action in the context menu of a query](../../media/create-action/action.png)
 
 Follow it and you'll go to the Hello hub.

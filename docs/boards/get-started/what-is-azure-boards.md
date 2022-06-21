@@ -1,377 +1,210 @@
 ---
-title: Understand what you get with Azure Boards  
+title: What is Azure Boards? Tools to manage software development projects.  
 titleSuffix: Azure Boards
-description: Learn about the main features and functions supported by Azure Boards that are available from Azure DevOps Services. 
-ms.custom: boards-get-started
+description: Learn about the Agile tools Azure Boards provides. 
+ms.custom: boards-get-started, contperf-fy22q2
 ms.technology: devops-new-user
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/15/2021
+ms.date: 12/01/2021
 ---
 
 # What is Azure Boards?
 
-[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting. These tools can scale as your business grows. 
+Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. It provides a rich set of capabilities including native support for Agile, Scrum, and Kanban processes, calendar views, configurable dashboards, and integrated reporting. These tools scale as your business grows. 
   
-You can quickly and easily start tracking user stories, backlog items, task, features, and bugs associated with your project. You track work by adding work items based on the process and work item types available to your project. 
+Quickly and easily track work, issues, and code defects associated with your project. The Kanban board, shown in the following image, is just one of several tools that allows you to add, update, and filter user stories, bugs, features, and epics.
+ 
+:::image type="content" source="media/about-boards/intro-boards.png" alt-text="Screenshot of Azure Boards Hub Pages, Kanban Board":::
 
-### Video: Plan your work with Azure Boards
-
-> [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A105/player]
-
+If you're ready to start using Azure Boards, see [Sign up for free and invite others to collaborate in Azure Boards](sign-up-invite-teammates.md). Need more information? See [Reasons to use Azure Boards to plan and track your work](why-use-azure-boards.md). 
 
 > [!NOTE]  
-> This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the guidance is valid for earlier on-premises versions. However, images show only examples for the latest versions. Also, the Basic process is only available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. 
-
-
-## Work item types 
+> This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version.  
  
-Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. If you want a project that uses the Scrum or CMMI process, you can [add another project](../../organizations/projects/create-project.md) and specify the process. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md). 
+## Track user stories, bugs, features, and epics  
 
-[!INCLUDE [temp](../includes/four-process-work-item-types-workflow.md)] 
+Track various types of work using the default work item types&mdash;such as user stories, bugs, features, and epics. Or, customize these types or create your own. Each work item form provides a standard set of system fields and controls, including **Discussion** for adding and tracking comments, **History**, **Links**, and **Attachments**. The **Deployment**, **Development**, and **Related Work** controls support tracking when code is released or changed, and relationships between work items. 
 
-Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier (ID) within your projects.
-
-## Track work on interactive backlogs and boards
-
-Quickly add and update the status of work using the Kanban board. You can also assign work to team members and tag with labels to support queries and filtering. Share information through descriptions, attachments, or links to network shared content. Prioritize work through drag-and-drop.  
+:::image type="content" source="media/about-boards/work-item-form.png" alt-text="Screenshot of Azure Boards Work Item Form, User Story":::
 
 
-#### [Agile process](#tab/agile-process) 
+## Use interactive backlogs, boards, lists, and calendar views  
 
-**Update the status of user stories**
+Azure Boards provides several hubs, each providing a set of interactive tools. Each tool provides a filtered set of work items. Most tools support adding and updating work items. To learn more about effective use of these tools, see [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   
 
-Add and update the status of work from **New**, **Active**, **Resolved**, and **Closed** using the Kanban board. Add tasks as child items to user stories. To learn more, see [Track user stories, features, and tasks](plan-track-work.md).  
+### Open Work Items for personalized filtered lists
 
-> [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](media/plan-track-work/update-status.png)  
+Use the [**Work items**](../work-items/view-add-work-items.md) hub to quickly find work items that are assigned to you. Access various lists based on select criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
 
-**Prioritize your backlog of user stories**
+:::image type="content" source="../work-items/media/view-add/work-items-hub-new.png" alt-text="Screenshot of Azure Boards, Work Items"::: 
 
-Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
+### Use Boards to add, update, and track status 
 
-> [!div class="mx-imgBorder"]  
-> ![Reorder work items](media/about-boards/reorder-agile-backlog.png)  
+Use the [**Boards**](../boards/kanban-quickstart.md) hub to view work items as cards and perform quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
 
+:::image type="content" source="media/about-boards/kanban-board.png" alt-text="Screenshot of Azure Boards, Kanban Board"::: 
 
-#### [Basic process](#tab/basic-process) 
+### Use Backlogs to add, prioritize, organize, and assign work 
 
-**Update the status of issues**
+Use the [**Backlogs**](../backlogs/create-your-backlog.md) hub to view, plan, order, and organize work items.  A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group work under features and epics.  
 
-Add and update the status  from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues. To learn more, see [Track issues and tasks](plan-track-work.md).   
+:::image type="content" source="media/about-boards/product-backlog.png" alt-text="Screenshot of Azure Boards, Product Backlog":::   
 
-> [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](media/track-issues/update-status.png)  
+### Use Sprints for Scrum processes  
 
-**Prioritize your backlog of issues**
+Open the [**Sprints**](../sprints/assign-work-sprint.md) hub to access a team's filtered view of work items based on a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. Implement Scrum practices by interacting with a backlog list or card-based taskboard.
 
-Organize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
+:::image type="content" source="media/about-boards/taskboard.png" alt-text="Screenshot of Azure Boards, Task Board":::   
 
-> [!div class="mx-imgBorder"]  
-> ![Reorder work items](media/about-boards/reorder-backlog.png)  
+### Create work item lists and charts with Queries 
 
-#### [Scrum process](#tab/scrum-process) 
+Access the [**Queries**](../queries/view-run-query.md) hub to generate custom lists of work items. Queries support the following tasks:
+- Find groups of work items with something in common.  
+- Triage work to assign to a team member or sprint and set priorities.  
+- Perform bulk updates.
+- View dependencies or relationships between work items.
+- Create status and trend charts that you can optionally add to dashboards.  
 
-**Update the status of product backlog items**
+#### Backlog hierarchy 
 
-Add and update the status of work items by drag-and-drop to a new column. Add tasks as child items to product backlog items. To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md). 
-
-> [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](media/plan-track-work/update-status.png) 
-
-**Prioritize your backlog of product backlog items**
-
-Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
-
-> [!div class="mx-imgBorder"]  
-> ![Reorder work items](media/about-boards/reorder-agile-backlog.png)  
-
-
-#### [CMMI process](#tab/cmmi-process) 
-
-**Update the status of requirements**
-
-Add and update the status from **Proposed**, **Active**, and **Resolved**. Add tasks as child items to requirements. To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md).   
-
-> [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](media/about-boards/cmmi-update-status.png)  
-
-
-**Prioritize your backlog of requirements**
-
-Organize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
-
-> [!div class="mx-imgBorder"]  
-> ![Reorder work items](media/about-boards/cmmi-reprioritize.png)  
-
-
-* * * 
-
-
-## Collaborate with your team
-
-Collaborate with others through the **Discussion** section of the work item form. Use <strong>@mention</strong>s and **#ID** controls to quickly include others in the conversation or link to other work items. Choose to follow specific issues to get alerted when they're updated. 
-
-Create dashboards that track status and trends of work being accomplished.  Set notifications to get alerted when an issue is created or changed. 
-
-#### [Agile process](#tab/agile-process) 
-
-**Get updated when a work item is updated**
-
-> [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/about-boards/user-story-form-follow.png)  
-
-#### [Basic process](#tab/basic-process) 
-
-**Get updated when a work item is updated**
-
-> [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/about-boards/issue-form-follow.png)  
-
-#### [Scrum process](#tab/scrum-process) 
-
-**Get updated when a work item is updated**
-
-> [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/about-boards/scrum-work-item-follow.png)  
-
-
-#### [CMMI process](#tab/cmmi-process) 
-
-**Get updated when a work item is updated**
-
-> [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/about-boards/cmmi-work-item-follow.png)  
-
-
-* * * 
-
-To learn more, see one of the following articles:  
-- [Discussion section](plan-track-work.md#discussion)  
-- [Follow a work item](../work-items/follow-work-items.md)  
-- [Add and manage dashboards](../../report/dashboards/dashboards.md)  
-- [Set personal notifications](../../notifications/manage-your-personal-notifications.md).  
-
-## Plan effectively by working in sprints
-
-Plan sprints by assigning work to current or future sprints. Forecast work that can get completed based on effort estimates. Determine how much work can be done within a sprint. Assign tasks and issues to team members and sprints in bulk. 
-
-
+:::image type="content" source="media/about-boards/queries.png" alt-text="Screenshot of Azure Boards, Queries":::   
  
-#### [Agile process](#tab/agile-process) 
+#### Query charts
 
-**Assign backlog items to a sprint**
+:::image type="content" source="../../report/dashboards/media/charts/config-pie-chart-priority-qe.png" alt-text="Screenshot of Configure Chart, Flat list query":::    
+ 
+### Use Delivery plans for calendar views and dependencies
 
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint.png)  
-::: moniker-end
+With the [**Delivery Plans**](../plans/review-team-plans.md) hub, management teams can view deliverables and track dependencies across several teams in a calendar view. Delivery plans are fully interactive, supporting the following tasks: 
+- View up to 15 team backlogs, including a mix of backlogs and teams from different projects
+- View custom portfolio backlogs and epics
+- View work that spans several iterations
+- Add backlog items from a plan
+- View rollup progress of features, epics, and other portfolio items
+- View dependencies that exist between work items.
 
-
-
-#### [Basic process](#tab/basic-process) 
-
-**Assign backlog items to a sprint**
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
-::: moniker-end
-
-
-#### [Scrum process](#tab/scrum-process) 
-
-**Assign backlog items to a sprint**
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/scrum-assign-sprint.png)  
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
-::: moniker-end
-
-
-#### [CMMI process](#tab/cmmi-process) 
-
-**Assign backlog items to a sprint**
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint.png)  
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint-on-prem.png)  
-::: moniker-end
-
-
-* * * 
-
-To learn more, see one of the following articles:  
-- [Assign work to sprints](../sprints/assign-work-sprint.md)  
-- [Forecast work](../sprints/forecast.md)  
-- [Set team capacity](../sprints/set-capacity.md)  
-- [Bulk modify work items](../backlogs/bulk-modify-work-items.md).  
-
-
-## Work effectively
-
-You'll find you can work more effectively through these actions: 
-
-- Organize work into a hierarchy by grouping issues under epics, and tasks under issues.
-- Create queries and quickly triage issues and tasks. 
-- Create work item templates to help contributors quickly add meaningful issues and tasks.  
-- Quickly find work items that are assigned to you. Pivot or filter your work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.  
-
-
-#### [Agile process](#tab/agile-process) 
-
-**Group items to create a hierarchy**
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/agile-hierarchy-cloud.png)
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]  
-> ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)  
-::: moniker-end
-
-#### [Basic process](#tab/basic-process) 
-
-**Group items to create a hierarchy**
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/hierarchy-cloud.png) 
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
-::: moniker-end
-
-#### [Scrum process](#tab/scrum-process) 
-
-**Group items to create a hierarchy**
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/scrum-hierarchy.png) 
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]  
-> ![Backlogs, show parents](media/about-boards/scrum-hierarchy-on-prem.png)  
-::: moniker-end
-
-#### [CMMI process](#tab/cmmi-process) 
-
-**Group items to create a hierarchy**
-
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/cmmi-hierarchy.png) 
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-> [!div class="mx-imgBorder"]  
-> ![Backlogs, show parents](media/about-boards/cmmi-hierarchy-on-prem.png)  
-::: moniker-end
-
-
-* * * 
-
-To learn more, see one of the following articles:  
-- [Organize your backlog](../backlogs/organize-backlog.md)  
-- [View and run queries](../queries/view-run-query.md)  
-- [Triage work](../queries/triage-work-items.md)  
-- [Use work item templates](../backlogs/work-item-template.md)  
-- [View and add work items](../work-items/view-add-work-items.md).  
+:::image type="content" source="../plans/media/plans/intro-image.png" alt-text="Screenshot of Azure Boards, Delivery Plans":::   
 
 
 
-::: moniker range=">= azure-devops-2019"
+## Use GitHub, track work in Azure Boards 
 
-## Connect Azure Boards to GitHub
+By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.
 
-If you use Azure Boards connected with GitHub, you can also do the following tasks:
+From your Kanban board, you can see and quickly open linked GitHub commits, pull requests, or issues for more detail. To learn more, see [GitHub & Azure Boards](../github/index.md).   
 
-- From GitHub, use #AB to link GitHub commits and pull requests to your issues and tasks.
-- From Azure Boards issues and tasks, link to GitHub commits and pull requests.
-
-To learn more, see [GitHub & Azure Boards](../github/index.md).  
-
-::: moniker-end
-
-## Best tool for the job
-
-Azure Boards provides the following interactive lists and signboards. Each tool provides a filtered set of work items. All tools support viewing and defining work items. To learn more about effective use of these tools, see [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   
-
-::: moniker range=">= azure-devops-2019"
-
-- [**Work items**](../work-items/view-add-work-items.md): Use to quickly find work items that are assigned to you. Pivot or filter work items based on other criteria. Other criteria includes work items that you follow, that you're mentioned in, or that you viewed or updated.
-- [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
-- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan and organize work.  
-- [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate *sprint backlog*. Use to implement Scrum practices.
-- [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks:
-	- Find groups of work items with something in common.
-	- List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to organize or assign.
-	- Create status and trend charts that you then can add to dashboards.  
-
-::: moniker-end
+:::image type="content" source="../github/media/link/board-view-github-links.png" alt-text="Screenshot of Azure Boards, Kanban board with GitHub annotations":::   
+  
 
 
 
-::: moniker range="<= tfs-2018"
 
-- [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
-- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan and organize work.  
-- [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate *sprint backlog*. Use to implement Scrum practices.
-- [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks:
-	- Find groups of work items with something in common.
-	- List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to organize or assign.
-	- Create status and trend charts that you then can add to dashboards.  
+## Implement Agile, Scrum, and Kanban processes  
 
-::: moniker-end
+Azure Boards is designed to support software development processes through the default process models selected for a project. Each process provides a set of work item types with a natural hierarchy as shown in the following images.   
+ 
+
+:::row:::
+   :::column span="2":::
+   [**Basic**](../get-started/plan-track-work.md) provides the simplest model that tracks work through Issues, Tasks, and Epics. 
+   :::column-end:::
+   :::column span="2":::
+   :::image type="content" source="../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png" alt-text="Conceptual image of Basic work item types":::  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   [**Agile**](../work-items/guidance/agile-process.md) supports Agile planning methods (learn more about Agile methodologies at the
+   [Agile Alliance](https://www.agilealliance.org/)), including Scrum,
+   and tracks development and test activities separately. This process works great if you want to track user stories and
+   (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.  
+   :::column-end:::
+   :::column span="2":::
+   :::image type="content" source="../work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png" alt-text="Agile work item types":::  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   [**Scrum**](../work-items/guidance/scrum-process.md) tracks work using product backlog items (PBIs) and
+   bugs on the Kanban board or viewed on a sprint taskboard.
+   
+   This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/)
+   :::column-end:::
+   :::column span="2":::
+   :::image type="content" source="../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png" alt-text="Scrum work item types":::  
+   :::column-end:::
+:::row-end:::
+:::row::: 
+   :::column span="2":::
+   [**Capability Maturity Model Integration** (CMMI)](../work-items/guidance/cmmi-process.md) supports a framework for process improvement and an auditable record of decisions. With this process, you can track requirements, change requests, risks, and reviews.
+   This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md). 
+   :::column-end:::
+   :::column span="2":::
+   :::image type="content" source="../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png" alt-text="CMMI work item types":::  
+   :::column-end:::
+  :::row-end:::
+ 
+
+## Configurable dashboards and Power BI reports 
+
+With dashboards, teams can create customized views to gain visibility into their status, view progress, and analyze trends. Dashboards provide flexibility to share information and improve workflow processes. Each team can tailor their dashboards to share information and monitor their progress. 
+
+:::image type="content" source="media/about-boards/dashboard.png" alt-text="Screenshot of Azure Boards, Dashboards":::   
+
+Also, you can use Power BI to create custom, complex reports based on custom queries of the Analytics service. The Analytics service is the reporting platform for Azure DevOps. It is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
+
+To learn more, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md) and [What is the Analytics service?](../../report/powerbi/what-is-analytics.md).
 
 
+## Gain visibility through end-to-end traceability
+
+With Azure Boards, you gain the advantage of full integration with the Azure DevOps platform. Azure DevOps is designed to provide end-to-end traceability, tracking work from requirements to deployment. You gain insight at each step of decisions made and software deployed. Some of the traceability tasks supported include: 
+ 
+- Create a branch from a requirement
+- Create a pull request of updated branch
+- Validate the pull request using a build pipeline
+- Create and run inline tests on requirements
+- Merge the pull request into the main, default branch
+- Deploy changes into production with deployment status to Azure Boards
+- Monitor and report on requirements traceability
+
+To learn more about these features, see [End-to-end traceability](../../cross-service/end-to-end-traceability.md) and [Cross-service integration and collaboration overview](../../cross-service/cross-service-overview.md).
 
 <a id="scale" />
 
 ## Support independent, autonomous teams 
 
-A team refers to a group of project members who work in a particular product area. Those areas are represented as *area paths*. Area paths are hierarchical paths that denote the possible areas of ownership in an organization. A team is defined by a name, its members, and its area paths.
+A team refers to a group of project members who work in a particular product area. Those areas are represented as **Area Paths**. Area paths are hierarchical paths that denote the possible areas of ownership in an organization. A team is defined by a name, its members, and its area paths.
 
-Boards, Backlogs, Sprints rely on team configurations. For example, if you want to add a Kanban board or product backlog, you define a team. For more information on teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
+Boards, Backlogs, Sprints, and Delivery Plans rely on team configurations. For example, if you want to add a Kanban board or product backlog, you define a team. For more information on teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
-## Manage work across projects
-
-Most work is tracked within a project. However, many enterprises create several projects to support their business needs as described in [Plan your organizational structure](../..//user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). 
+:::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets.png" alt-text="Conceptual image of team tools":::   
 
 
-To track work across several projects, you can: 
-- [Create work item queries that list work items across projects](../queries/using-queries.md#across-projects)
-- [Gain visibility across teams](../plans/visibility-across-teams.md)
-
-## Get access to more tools 
+Azure Boards works with your favorite tools. Integrate with [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) to enable efficient ChatOps.
 
 Extensions provide support for other tools. An extension is an installable software unit that adds new capabilities to your projects. Find extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). Extensions can support planning and tracking of work items, sprints, scrums, and more and collaboration among team members.  
+ 
+## Video: Plan your work with Azure Boards
+
+> [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A105/player]
+
 
 ## Related articles
 
+- [Reasons to use Azure Boards to plan and track your work](why-use-azure-boards.md)
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
+- [Configure and customize Azure Boards](../configure-customize.md)
+- [The DevOps journey at Microsoft](https://azure.microsoft.com/solutions/devops/devops-at-microsoft/)
 - [Agile culture](../plans/agile-culture.md)  
 - [Practices that scale](../plans/practices-that-scale.md)  
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
+
+
+

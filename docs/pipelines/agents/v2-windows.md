@@ -4,26 +4,19 @@ ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 07/15/2021
-monikerRange: '>= tfs-2015'
+ms.date: 04/20/2022
+monikerRange: '<= azure-devops'
 ---
 
 # Self-hosted Windows agents
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120))**
-
-::: moniker range="tfs-2015"
-
-> [!IMPORTANT]
-> For TFS 2015, see [Self-hosted Windows agents - TFS 2015](v1-windows.md).
-
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
 > * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
-> * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
+> * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](/previous-versions/azure/devops/pipelines/agents/v1-windows).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
 [!INCLUDE [include](includes/concepts.md)]
@@ -31,8 +24,8 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 ## Check prerequisites
 
 Make sure your machine has these prerequisites:
-- Windows 7, 8.1, or 10 (if using a client OS)
-- Windows 2008 R2 SP1 or higher (if using a server OS)
+- Windows 7 SP1 [ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq), 8.1, 10, or 11 (if using a client OS)
+- Windows 2012 or higher (if using a server OS)
 - [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
 - [.NET Framework](/dotnet/framework/install/) 4.6.2 or higher
 
@@ -115,9 +108,9 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
-### TFS 2017 and TFS 2018
+### TFS 2018
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
@@ -137,9 +130,15 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-> [!Note]
+> [!IMPORTANT]
 > We strongly recommend you configure the agent from an elevated PowerShell window.
 > If you want to configure as a service, this is **required**.
+
+> [!IMPORTANT]
+> For security reasons we strongly recommend making sure the agents folder (`C:\agents`) is only editable by admins.
+
+> [!Note]
+> Please avoid using mintty based shells, such as git-bash, for agent configuration. Mintty is not fully compatible with native Input/Output Windows API ([here](https://github.com/mintty/mintty/wiki/Tips#inputoutput-interaction-with-alien-programs) is some info about it) and we couldn't guarantee correct work of setup script in this case.
 
 ### Server URL and authentication
 
@@ -147,7 +146,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`.
 ::: moniker-end
 
@@ -160,7 +159,7 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops"
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
@@ -277,17 +276,6 @@ The help provides information on authentication alternatives and unattended conf
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [include](includes/v2/qa-agent-version.md)]
-
-::: moniker range="tfs-2017"
-
-### What version of the agent runs with TFS 2017?
-
-| TFS version | Minimum agent version |
-|-|-|
-| 2017 RTM | 2.105.7 |
-| 2017.3 | 2.112.0 |
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 [!INCLUDE [include](includes/v2/qa-firewall.md)]

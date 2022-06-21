@@ -11,4 +11,4 @@ ms.date: 02/11/2021
 
 To learn more about defining build variables in a script, see [Define and modify your build variables in a script](../process/variables.md#set-a-multi-job-output-variable). 
 
-To learn more about defining release variables in a script, see [Define and modify your release variables in a script](../release/variables.md#using-custom-variables).
+To learn more about defining release variables in a script, see [Define and modify your release variables in a script](../release/variables.md#use-custom-variables)

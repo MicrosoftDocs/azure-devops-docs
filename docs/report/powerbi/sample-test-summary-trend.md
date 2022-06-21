@@ -1,7 +1,7 @@
 ---
 title: Pipeline test summary trend sample Power BI reports 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a test summary trend Power BI report for a given pipeline in the project  
+description: Learn how to generate a test summary trend Power BI report for a given pipeline in the project.
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
@@ -11,12 +11,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 08/14/2020
+ms.date: 10/13/2021
 ---
 
 # Test summary trend sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows day wise trend of number of total failed tests and test pass rate for a pipeline.
 
@@ -100,12 +100,12 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ### Substitution strings
 
-Each query contains the following strings that you must substitute with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
+Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
  
-- {organization} - Your organization name
-- {project} - Your team project name
-- {pipelinename} - Your pipeline name. Example: **Fabrikam hourly build pipeline**.
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2021-09-01Z** represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{organization}` - Your organization name
+- `{project}` - Your team project name
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
@@ -188,7 +188,7 @@ The following table describes each part of the query.
    `ResultCount with sum as ResultCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of test runs as ResultCount
+   Count the total number of test runs as ResultCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -196,7 +196,7 @@ The following table describes each part of the query.
    `ResultPassCount with sum as ResultPassCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of passed test runs as ResultPassCount
+   Count the total number of passed test runs as ResultPassCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -204,7 +204,7 @@ The following table describes each part of the query.
    `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of not executed test runs as ResultNotExecutedCount
+   Count the total number of not executed test runs as ResultNotExecutedCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -212,7 +212,7 @@ The following table describes each part of the query.
    `ResultNotImpactedCount with sum as ResultNotImpactedCount`
    :::column-end:::
    :::column span="1":::
-   Count the total number of not impacted test runs as ResultNotImpactedCount
+   Count the total number of not affected test runs as ResultNotImpactedCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -220,7 +220,7 @@ The following table describes each part of the query.
    `ResultFailCount with sum as ResultFailCount`
    :::column-end:::
    :::column span="1":::
-   Count the total number of failed test runs as ResultFailCount
+   Count the total number of failed test runs as ResultFailCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -244,7 +244,7 @@ The following table describes each part of the query.
    `iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpactedCount) div cast(ResultCount sub ResultNotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate`
    :::column-end:::
    :::column span="1":::
-   For all the days, calculate Pass rate
+   For all the days, calculate Pass rate.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -260,7 +260,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example such an entity is CompletedOn.
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such an entity is CompletedOn.
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **CompletedOn**.
 
@@ -336,7 +336,7 @@ Your report should look like this.
 > ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
 
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
 
 ## Test summary trend for Release workflow
 
@@ -390,7 +390,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ## Filter by branch
 
-You may want to view the test summary trend of a pipeline for a particular branch only. To create the report, perform the following additional steps along with what is defined previously in this article.
+You may want to view the test summary trend of a pipeline for a particular branch only. To create the report, carry out the following extra steps along with what is defined previously in this article.
 
 - Expand Branch into Branch.BranchName
 - Select Power BI Visualization Slicer and add the field Branch.BranchName to the slicer's Field
@@ -446,7 +446,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ## Filter by test file
 
-You may want to view the test summary trend of a pipeline for a particular test file only. To create the report, perform the following additional steps along with what is defined previously in this article.
+You may want to view the test summary trend of a pipeline for a particular test file only. To create the report, carry out the following extra steps along with what is defined previously in this article.
 
 - Expand Branch into Test.ContainerName
 - Select Power BI Visualization Slicer and add the field Test.ContainerName to the slicer's Field
@@ -502,7 +502,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ## Filter by test owner
 
-You may want to view the test summary trend of a pipeline for tests owned by a particular test owner only. To create the report, perform the following additional steps along with what is defined previously in this article.
+You may want to view the test summary trend of a pipeline for tests owned by a particular test owner only. To create the report, carry out the following extra steps along with what is defined previously in this article.
 
 - Expand Branch into Test.TestOwner
 - Select Power BI Visualization Slicer and add the field Test.TestOwner to the slicer's Field

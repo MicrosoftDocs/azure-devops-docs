@@ -1,7 +1,7 @@
 ---
 title: Manual test Configuration by Outcome history report sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate a Configuration by Outcome matrix report
+description: Learn about sample Power BI queries that generate a Configuration by Outcome matrix report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 09/21/2021
+ms.date: 10/13/2021
 ---
 
 # Configuration by outcome matrix sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 When you have multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
 
@@ -30,7 +30,7 @@ An example of the configuration by outcome matrix report is shown in the followi
 
 [!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
-For the report to generate useful data, the team must perform the following activities to manage test plans:
+For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
 - Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create manual test cases](../../test/create-test-cases.md). 
 - Define test configurations and assign then to  test cases. For details, see [Test different configurations](../../test/test-different-configurations.md).

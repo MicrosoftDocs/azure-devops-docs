@@ -1,7 +1,7 @@
 ---
 title: Learn key concepts & terms to support Agile tools
 titleSuffix: Azure Boards
-description: Understand the objects and items used to track work in Azure Boards & TFS
+description: Learn about the key terms and concepts to understand the objects and items used to track work in Azure Boards.
 ms.technology: devops-agile
 ms.custom: seodec18
 ms.assetid:  
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/19/2018
+ms.date: 11/07/2021
 ---
 
-# Agile glossary 
+# Terms and concepts used when tracking work items in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Azure Boards. Additional terms are defined in the following articles: 
+The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Azure Boards. More terms are defined in the following articles: 
 - [Kanban key concepts](../boards/kanban-key-concepts.md)  
 - [Sprints and Scrum key concepts](../sprints/scrum-key-concepts.md)  
 - [Work item field index](guidance/work-item-field.md)  
@@ -31,7 +31,7 @@ Your work tracking experience is managed and customized primarily through the ob
 
 ## Agile methods
 
-A family of engineering best processes with a goal of enabling rapid delivery of high-quality software and a business approach that aligns development with customer needs and company goals. In this paradigm, frequent inspection and adaptation is necessary, with team work, self-organization, and accountability all critical to project success.
+A family of engineering best processes with a goal of enabling rapid delivery of high-quality software and a business approach that aligns development with customer needs and company goals. In this paradigm, frequent inspection and adaptation are necessary, with team work, self-organization, and accountability all critical to project success.
 
 [!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)] 
 
@@ -53,7 +53,7 @@ Groups one or more work item types to support flexible reporting, queries, and o
 
 ## Fields 
 
-Fields support tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   
+Fields support tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store that you can query and generate charts to view status and trends. Your project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   
 
 [!INCLUDE [temp](../../includes/glossary-terms/follow.md)] 
 
@@ -90,9 +90,9 @@ The Inheritance process model provides support for customizing work tracking obj
 
 ## Issue 
 
-**Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It is defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md). 
+**Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It's defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md). 
 
-**Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It is defined for the Basic process and appears on the product backlog and [Issues Kanban board](../get-started/plan-track-work.md). 
+**Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It's defined for the Basic process and appears on the product backlog and [Issues Kanban board](../get-started/plan-track-work.md). 
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 [!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 

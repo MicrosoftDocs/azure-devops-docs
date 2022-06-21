@@ -1,95 +1,77 @@
 ---
-title: Share Packages Publicly
-description: Use Azure Artifacts to share NuGet, npm, Maven, or Python packages with anonymous users in with public feeds
+title: Share Packages publicly with public feeds
+description: Use Azure Artifacts public feeds to share NuGet, npm, Maven, and Python packages publicly
 ms.technology: devops-artifacts
-ms.reviewer: amullans
-ms.date: 04/28/2020
+ms.date: 06/20/2022
 monikerRange: 'azure-devops'
 ---
 
-# Share your packages publicly
+# Share packages publicly
 
-Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet. 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-> [!NOTE]
-> Public feeds are project-scoped feeds that live inside a public project. You cannot convert an existing organization-scoped feed into a project-scoped feed or a public feed.
-
-To learn more about feeds and their scopes, check out our [feeds documentation](../concepts/feeds.md).
+Azure Artifacts provides an easy way to share packages to users outside your organization and even external customers using public feeds. Packages that are stored in public feeds can be restored and installed by anyone on the Internet.
 
 ## Prerequisites
 
-* A public project. If you don't have one, [create one now](../../organizations/public/create-public-project.md)
+- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- A public project. [Create a public project](../../organizations/public/create-public-project.md) if you don't have one already.
 
-## Create a feed
+## Create a public feed
 
-1. Go to **Azure Artifacts** in a public project:
+Public feeds are project-scoped feeds in a public project. Public feeds inherit the visibility settings of the hosting project.
 
-   > [!div class="mx-imgBorder"] 
-   >![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
-   > 
+1. Navigate to your project, and then select **Artifacts**.
 
-1. Select **+ New public feed**:
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="A screenshot showing how to access Artifacts from the Azure DevOps dashboard.":::
 
-   > [!div class="mx-imgBorder"] 
-   >![New feed button](../media/new-public-feed-button-azure-devops-newnav.png)
-   > 
+1. Select **Create Feed**.
 
-1. In the dialog box:
-   - Give the feed a name.
-   - Select **Create feed**.
+    :::image type="content" source="../media/new-feed-devops.png" alt-text="A screenshot showing how to create a new feed.":::
 
-   > [!div class="mx-imgBorder"] 
-   >![New feed dialog box](../media/new-public-feed-dialog-azure-devops-newnav.png)
-   >
+1. Give your feed a **Name**, and then select **Project: PublicProject (Recommended)** for its scope.
 
-## Publish your packages
+    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot showing how to create a new public feed.":::
 
-Now that you have a public feed, it's time to populate it with packages! 
-
-> [!IMPORTANT]
-> Public feeds cannot store Universal Packages.
-
-If you're publishing using NuGet or Dotnet _and_ you're using a credential provider to authenticate, public feeds require you to use the new credential provider instead of the older `CredentialProvider.VSS.exe`. You can learn more about the new credential provider, including install and setup instructions in the [artifacts-credprovider GitHub repo](https://github.com/Microsoft/artifacts-credprovider).
-
-### From the command line
-
-The following articles are quick guides that show you how to set up authentication and publish packages to your public feed from the command line. You can skip the "Create a feed" step in the following guides.
-
-* [Quickstart - Push and consume NuGet packages](../get-started-nuget.md)
-* [Quickstart - Push and consume npm packages](../get-started-npm.md)
-* [Quickstart - Push and consume Maven packages](../get-started-maven.md)
-* [Quickstart - Push and consume Python packages](../quickstarts/python-packages.md)
-
-### From Azure Pipelines
-
-The following articles cover publishing packages to feeds from builds within Azure Pipelines:
-
-* [Publish NuGet packages from Azure Pipelines](../../pipelines/artifacts/nuget.md)
-* [Publish npm packages from Azure Pipelines](../../pipelines/artifacts/npm.md)
-* [Publish Python packages from Azure Pipelines](../../pipelines/artifacts/pypi.md)
-
-
-## Share your packages
+1. Select **Create** when you are done.
 
 > [!NOTE]
-> Public feeds aren't intended to be a replacement for registries of record like NuGet.org or npmjs.com, and public feeds **cannot** have upstream sources.
+> Organization-scoped feeds cannot be converted into project-scoped feeds.
 
-To start sharing your packages, simply post or send your feed URL wherever you wish:
+## Publish packages
 
-Sample feed URL: `https://dev.azure.com/<org_name>/<project_name>/_packaging?_a=feed&feed=<feed_name>`
- 
-As long as your project is public, anonymous and guest users will be greeted by the feed UX where they can see the available packages and learn how to consume them. Anonymous users will not have access to all features. E.g. Creating new feeds or accessing the recycle bin.
+If you want to publish NuGet packages, make sure you have the latest [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-> [!div class="mx-imgBorder"] 
->![Feed UX from an anonymous or guest user with certain commands greyed out, except Connect to Feed](../media/anonymous-public-feeds.png)
->
+### Publish packages (CLI)
 
-You can also [share individual packages with badges](../package-badges.md) which look like the example below. 
+- [NuGet](../get-started-nuget.md#publish-nuget-packages)
+- [Npm](../get-started-npm.md#publish-packages)
+- [Maven](../get-started-maven.md#publish-artifacts)
+- [Python](../quickstarts/python-cli.md#publish-python-packages)
 
-![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](../media/package-badge.png)
+### Publish packages with Azure Pipelines
+
+- [NuGet](../../pipelines/artifacts/nuget.md#publish-a-package)
+- [Npm](../../pipelines/artifacts/npm.md#publish-to-azure-artifacts-feeds)
+- [Python](../../pipelines/artifacts/pypi.md#publish-python-packages-to-azure-artifacts-feeds)
+- [Maven](../../pipelines/artifacts/pull-package-gradle.md)
 
 > [!IMPORTANT]
-> Package badges can only be created and shared for released versions of packages; the criteria for what is considered a released version depends on the protocol type. Pre-released versions will not be displayed in badges, instead the badge will show the latest release version.
+> Universal Packages are not supported in public feeds.
 
+## Share packages
 
+To share your packages publicly, you can simply share your feed URL E.g. `https://dev.azure.com/<ORGANIZATION_NAME>/<PROJECT-NAME>/_artifacts/feed/<FEED_NAME>` or share individual packages with [package badges](../package-badges.md).
 
+As long as your project is kept public, anyone can view and download packages from your public feed. Anonymous users won't be able to create new feeds or access the recycle bin.
+
+:::image type="content" source="../media/public-feeds-access.png" alt-text="A screenshot showing packages in a public feed.":::
+
+> [!IMPORTANT]
+> Upstream sources are not supported in public feeds.
+
+## Related articles
+
+- [Limits on package sizes and counts](../reference/limits.md)
+- [Package notifications](../how-to/follow-package-notifications.md)
+- [Package badges](../package-badges.md)

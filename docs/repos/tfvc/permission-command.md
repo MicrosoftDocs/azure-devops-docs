@@ -5,20 +5,23 @@ description: Permission Command
 ms.assetid: 7a0b5521-ee07-44eb-9b8f-f145d918ebeb
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
+# Permission command  (Team Foundation Version Control)
 
-# Permission Command
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+The **permission** command modifies the user access control list (ACL) and displays authorization settings for an item under version control.
 
-Modifies the user access control list (ACL) and displays authorization settings for an item under version control.
+## Prerequisites
 
-**Required Permissions**
+To use the **permission** command, you must have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Team Foundation Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). 
+For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
-To use the **permission** command, you must have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Team Foundation Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Syntax
 
 ```
 tf permission [/allow:(* |perm1[,perm2,...]] 
@@ -78,7 +81,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    *Itemspec*
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses *itemspecs* to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses *itemspecs* to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    > [!Note]  
    > You can specify more than one *Itemspec* argument.
@@ -202,7 +205,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    **/login**
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 
@@ -212,7 +215,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 
 You can use the **permission** command (or alternatively its shortcut, **perm**) to manage authorization settings for Team Foundation version control server objects. However, this command does not let you manage authentication settings such as creating or modifying Team Foundation security groups.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -260,5 +263,4 @@ c:\projects>tf permission /deny:PendChange /user:somealias $/testproject/1256.cs
 
 ## Related articles 
 
-- [Command-Line Syntax (version control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-- [Tf Command-Line utility commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)

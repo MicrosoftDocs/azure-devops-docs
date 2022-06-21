@@ -2,11 +2,13 @@
 title: Build code from on-premises Bitbucket server
 description: Using on-premises Bitbucket with Azure Pipelines
 ms.topic: reference
-ms.date: 07/05/2020
+ms.date: 05/31/2022
 monikerRange: 'azure-devops'
 ---
 
 # Build on-premises Bitbucket repositories
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
 > To integrate Bitbucket Cloud with Azure Pipelines, see [Bitbucket Cloud](bitbucket.md).
@@ -44,7 +46,7 @@ If the Bitbucket server cannot be reached from Azure Pipelines, you have two opt
 
 ### Reachable from Microsoft-hosted agents
 
-Another decision you possibly have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a simple pipeline to use Microsoft-hosted agents and make sure to add a step to checkout source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
+Another decision you possibly have to make is whether to use Microsoft-hosted agents or self-hosted agents to run your pipelines. This often comes down to whether Microsoft-hosted agents can reach your server. To check whether they can, create a pipeline to use Microsoft-hosted agents and make sure to add a step to check out source code from your server. If this passes, then you can continue using Microsoft-hosted agents.
 
 ### Not reachable from Microsoft-hosted agents
 
@@ -65,9 +67,14 @@ When you use **Other Git** connection to set up a classic pipeline, disable comm
 
 If you want to enhance this experience, it is important that you enable communication from Azure Pipelines to Bitbucket Server. 
 
-To allow traffic from Azure DevOps to reach your Bitbucket Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allow-list. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allow-list.
+To allow traffic from Azure DevOps to reach your Bitbucket Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allowlist. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allowlist.
 
 Allow Azure Pipelines to attempt accessing the Git server in the **Other Git** service connection.
+
+## Informational runs
+[!INCLUDE [informational-runs](../includes/information-run-include.md)]
+
+Learn more about [informational runs](../process/information-run.md).
 
 ## FAQ
 
@@ -90,7 +97,7 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 #### I did not push any updates to my code, however the pipeline is still being triggered.
 
-* The continuous integration trigger for Bitbucket works through polling. After each polling interval, Azure Pipelines attempts to contact the Bitbucket server to check if there have been any updates to the code. If Azure Pipelines is unable to reach the Bitbucket server (possibly due to a network issue), then we start a new run anyway assuming that there might have been code changes. In a few cases, Azure Pipelines may also create a dummy failed build with an error message to indicate that it was unable to reach the server.
+* The continuous integration trigger for Bitbucket works through polling. After each polling interval, Azure Pipelines attempts to contact the Bitbucket server to check if there have been any updates to the code. If Azure Pipelines is unable to reach the Bitbucket server (possibly due to a network issue), then we start a new run anyway assuming that there might have been code changes. When Azure Pipelines cannot retrieve a YAML pipeline's code, it will create an [informational run](../process/information-run.md).
 
 ### Failing checkout
 

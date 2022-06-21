@@ -5,25 +5,27 @@ description: Reconcile differences between two folders
 ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Reconcile differences between two folders
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
+
 
 After you compare a server folder and a local folder, you can reconcile the differences between the folder contents and between files that have conflicting pending changes in your local folder. For more information, see [Compare folders](compare-folders.md).
 
-**Required Permissions**
+## Prerequisites
 
-To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
 
 > [!NOTE]
 > To reconcile two local folders or files, you do not need Team Foundation Server permissions.
 
-### To reconcile differences
+## Reconcile differences
 
 1.  In Source Control Explorer, right-click a folder, and then click **Compare**.
 
@@ -64,12 +66,8 @@ To perform these procedures, you must have the **Read** and **Check out** permis
 
     If you have pending changes in your local workspace that conflict with the server version of a file and you chose to **Get** the latest version of the file, the **Resolve Conflicts** window appears. For more information, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Compare folders](compare-folders.md) 
-
- [Compare files](compare-files.md) 
-
- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
+- [Compare folders](compare-folders.md) 
+- [Compare files](compare-files.md) 
+- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 

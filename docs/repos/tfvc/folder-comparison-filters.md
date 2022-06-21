@@ -6,13 +6,14 @@ ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
 ms.date: 03/26/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Folder comparison filters
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 The folder comparison filter is an ordered list of name filters that is used to match the names of files or folders that you are comparing. You can use **Compare** to evaluate the file or folder names against the name filters. Once **Compare** finds a match or exclusion, the comparison stops.
 
@@ -71,10 +72,7 @@ The following table lists filter examples.
 |!\*.resx;!\*.ini;!resources\\;!\*junk\*\\ | Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
 
 
-## See Also
+## Related articles
 
-#### Other Resources
-
- [Compare folders](compare-folders.md) 
-
- [Reconcile differences between two folders](reconcile-differences-between-two-folders.md) 
+-  [Compare folders](compare-folders.md) 
+-  [Reconcile differences between two folders](reconcile-differences-between-two-folders.md) 

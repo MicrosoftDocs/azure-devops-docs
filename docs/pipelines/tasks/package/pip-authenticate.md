@@ -9,9 +9,9 @@ monikerRange: 'azure-devops'
 
 # Package: Python Pip Authenticate
 
-**Version 1.\* | [Other versions](#versions)**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-**Azure Pipelines**
+**Version 1.\* | [Other versions](#versions)**
 
 Provides authentication for the `pip` client that can be used to install Python distributions.
 

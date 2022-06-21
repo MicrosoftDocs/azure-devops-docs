@@ -2,18 +2,17 @@
 title: Manage teams, configure team tools 
 titleSuffix: Azure DevOps
 description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, Kanban boards, and more in Azure DevOps. 
-ms.technology: devops-agile
-ms.assetid:  
+ms.technology: devops-settings 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 04/04/2022
 ---
 
 # Manage and configure team tools
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 As a team administrator, you can customize your backlogs and board to best meet how your team works. If you need to have a team created, request a member of your Project Administrators group do so. It only takes a minute to add a new team.    Team settings are managed by the team administrator role. Users assigned as team administrator can configure and manage all team tools.  
 
@@ -29,8 +28,8 @@ Also, consider the following optional tasks:
 
 ## Prerequisites
 
-- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
-- To add a team, you must be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md). For more information, see [Add teams](add-teams.md).
+- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the **Project Administrators** group. See [Change project-level permissions](../security/change-project-level-permissions.md).  
+- To add a team, you must be a member of the **Project Administrators** group. For more information, see [Add teams](add-teams.md).
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 
@@ -140,7 +139,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose **Azure DevOps** :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
@@ -165,30 +164,6 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2015"
-
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose **Settings** :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
-
-	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
-
-2. Open **Work** > **Backlogs** > **Board**. 
-
-	> [!div class="mx-imgBorder"]
-	>![Open Kanban board, version TFS 2015.](../../boards/boards/media/kanban-basics-intro.png)  
-
-3. Choose the board you want to configure and then choose **Team settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to configure the board and set general team settings.  
-
-	For example, from the Kanban board ...  
-
-	![Kanban board, open common configuration settings, version TFS 2015.](media/configure-team/open-settings-tfs-2015-horz.png)
-
-
-4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
-
-	![Common configuration dialog team settings](media/configure-team/common-configuration-dialog.png)
-
-::: moniker-end  
-
 Team administrators can fully customize the team's Kanban boards associated with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
 For more information on each configuration option, see the following articles: 
 
@@ -202,18 +177,11 @@ For more information on each configuration option, see the following articles:
             
             
       **Cards**
-      ::: moniker range=">= tfs-2017"
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
+      - [Add tag colors](../../boards/boards/customize-cards.md#assign-a-color-to-a-tag)
       - [Enable annotations](../../boards/boards/customize-cards.md#enable-annotations)
       - [Configure inline tests](../../boards/boards/customize-cards.md#configure-inline-tests)
-      ::: moniker-end
-      ::: moniker range="< tfs-2017"
-      - [Add fields](../../boards/boards/customize-cards.md)
-      - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
-      ::: moniker-end
    :::column-end:::
    :::column span="1":::
       **Boards**
@@ -226,7 +194,7 @@ For more information on each configuration option, see the following articles:
       - [Card reordering](../../boards/boards/reorder-cards.md)
       - [Configure status badges](../../boards/github/configure-status-badges.md)
       ::: moniker-end
-      ::: moniker range=">= tfs-2015 <= tfs-2018"
+      ::: moniker range="tfs-2018"
       - [Add columns](../../boards/boards/add-columns.md)
       - [Split columns](../../boards/boards/split-columns.md)    
       - [WIP limits](../../boards/boards/wip-limits.md)    
@@ -234,13 +202,6 @@ For more information on each configuration option, see the following articles:
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Card reordering](../../boards/boards/reorder-cards.md)
       ::: moniker-end
-      ::: moniker range="tfs-2013"
-      - [Add columns](../../boards/boards/add-columns.md)
-      - [WIP limits](../../boards/boards/wip-limits.md)    
-      - [Definition of Done](../../boards/boards/definition-of-done.md)   
-      ::: moniker-end
-            
-            
       **Chart**
       - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)
    :::column-end:::
@@ -251,11 +212,8 @@ For more information on each configuration option, see the following articles:
 
 :::image type="content" source="../../boards/boards/media/quickstart/intro-view.png" alt-text="Screenshot of Kanban.":::
 
-::: moniker range=">= tfs-2015" 
-
 ## Configure sprint Taskboards 
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020" 
 
@@ -263,7 +221,7 @@ Similar to Kanban boards, each sprint Taskboard can be customized to support inf
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops-2020" 
+::: moniker range="< azure-devops-2020" 
 
 Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
 
@@ -271,19 +229,19 @@ Similar to Kanban boards, each sprint Taskboard can be customized to support inf
 
 :::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of Taskboard selection.":::
 
-::: moniker range=">= tfs-2017" 
+
+<a id="add-and-manage-team-dashboards" /> 
 
 ## Add and manage team dashboards   
 
-::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2019"
 By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range="tfs-2018"  
 Team administrators can add, configure, and manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
-
 ::: moniker-end
 
 :::image type="content" source="media/edit-team-dashboard.png" alt-text="Screenshot of team dashboard.":::
@@ -300,7 +258,7 @@ Team settings also include the team name, description, and team profile image. T
 
 ::: moniker-end
 
-::: moniker range=" azure-devops-2020"
+::: moniker range="azure-devops-2020"
 
 Team settings also include the team name, description, and team profile image. To add a team picture, select the image icon. The maximum file size is 2.5 MB.
 
@@ -319,19 +277,6 @@ Team settings also include the team name, description, and team profile image. T
 Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. Many alerts are defined for each team. For details, see [Manage team alerts](../../notifications/manage-team-group-global-organization-notifications.md).
 
 :::image type="content" source="media/manage-notifications.png" alt-text="Screenshot of highlighted Notifications button.":::
-
-<a id="team-rooms" />
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-## Manage team rooms 
-
-Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room).  
-
-> [!NOTE]  
-> Team rooms are deprecated for TFS 2018 and later versions as described in [Deprecation of team rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md).   
-
-::: moniker-end
 
 ## Related articles
 

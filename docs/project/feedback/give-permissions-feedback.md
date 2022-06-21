@@ -1,21 +1,22 @@
 ---
 title: Give reviewers permission to provide feedback
-titleSuffix: Azure DevOps Services & TFS  
-description: Grant users access to provide feedback initiated from a team project in Azure DevOps Services & Team Foundation Server 
+titleSuffix: Azure DevOps 
+description: Grant users access to provide feedback initiated from a team project in Azure DevOps. 
 ms.technology: devops-collab
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: db5148e8-0dd2-4ddd-b563-d9b924356263  
 ms.author: kaelli
+author: KathrynEE 
 monikerRange: '<= azure-devops'
-ms.date: 08/15/2017
+ms.date: 02/16/2022
 ---
 
 # Give reviewers permissions to provide feedback
 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You provide feedback to users that you plan to [request feedback](get-feedback.md) from. Reviewers who aren't members of your team require special permissions to provide feedback using the Microsoft Feedback Client. 
+You must grant permissions to provide feedback to users that you plan to [request feedback](get-feedback.md) from. Reviewers who aren't members of your team require special permissions to provide feedback using the Microsoft Feedback Client. 
 
 ## Add reviewers to your team project
 
@@ -23,13 +24,14 @@ You provide feedback to users that you plan to [request feedback](get-feedback.m
 
 	![Open the administration page](media/ALM_CAL_OpenAdminPage.png)  
 
-	If you aren't a member of the **Project Administrators** or **Team Foundation Administrators** group, get added. See [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md). You'll need to be a member in order to add users and groups to a team project, change permissions, and grant them access to the web portal.
+	If you aren't a member of the **Project Administrators** group, get added. See [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). You need to be a member in order to add users and groups to a team project, change permissions, and grant them access to the web portal.
 
 2. Create a group for your reviewers.
 
 	![Create a VSO or TFS Group link on Security admin page ](media/ALM_GP_CreateTFSGroup.png)
 
-	><b>Tip: </b> If you have a lot of reviewers, creating a Windows, VSO, or TFS group helps you manage permissions more efficiently.
+	> [!TIP]    
+	> If you have a lot of reviewers, create an Azure Devops security  group to help you manage permissions more efficiently. To learn how, see [Add or remove users or groups, manage security groups](../../organizations/security/add-remove-manage-user-group-security-group.md).
  	
 3. Name your group.  
 
@@ -68,11 +70,11 @@ Since feedback is captured in a feedback response work item, reviewers need to b
 Sometimes additional ideas occur after reviewers submit their feedback. By providing access to the web portal, reviewers can revisit and further annotate their feedback submissions. 
 
 - **Azure DevOps Services:**  [Assign the **Stakeholder** license to accounts](../../organizations/accounts/add-organization-users.md) that you add to your Reviewer group   
-- **On-premises TFS:**  [Add your Reviewer group to the **Stakeholder** group on the **access levels** page](../../organizations/security/change-access-levels.md). If you don't see this tab, get administrative permissions. 
+- **On-premises Azure DevOps Server:**  [Add your Reviewer group to the **Stakeholder** group on the **access levels** page](../../organizations/security/change-access-levels.md). If you don't see this tab, get administrative permissions. 
 
 ![Add reviewers to the Limited group](media/ALM_GP_ModifyFeedback.png)
  
-Your reviewers will be able to view and modify only those work items that they create, which includes feedback responses. The [Stakeholder group provides limited access](../../organizations/security/get-started-stakeholder.md) to features and data for those members of your organization who do not have a TFS client access license (CAL). 
+Your reviewers will be able to view and modify only those work items that they create, which includes feedback responses. The [Stakeholder group provides limited access](../../organizations/security/get-started-stakeholder.md) to features and data for those members of your organization who do not have an Azure DevOps client access license (CAL). 
 
 
 ## Related articles

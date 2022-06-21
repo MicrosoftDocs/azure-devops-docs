@@ -7,16 +7,16 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Jenkins Download Artifacts task
 
-[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to download artifacts produced by a Jenkins job.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -49,13 +49,9 @@ Use this task to download artifacts produced by a Jenkins job.
 <tr><td>Storage Account Name</td><td>(Required) Azure Classic and Resource Manager storage accounts are listed. Select the Storage account name in which the artifacts are propagated.</td></tr>
 <tr><td>Container Name</td><td>(Required) Name of the container in the storage account to which artifacts are uploaded.</td></tr>
 <tr><td>Common Virtual Path</td><td>(Optional) Path to the artifacts inside the Azure storage container.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

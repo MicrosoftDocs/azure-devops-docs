@@ -10,8 +10,8 @@ ms.technology: devops-cicd-tasks
 # Download Azure Key Vault secrets
 - task: AzureKeyVault@2
   inputs:
-    ConnectedServiceName: # Azure subscription
+    connectedServiceName: # Azure subscription
     keyVaultName: # Name of existing key vault
     secretsFilter: '*' # Downloads all secrets for the key vault
-    RunAsPreJob: true # Runs before the job starts
+    runAsPreJob: true # Runs before the job starts
 ```

@@ -12,7 +12,8 @@ monikerRange: '<= azure-devops'
 ---
 # Pull request update notifications
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
 You can subscribe to email alerts to be notified of changes in pull requests (PRs). By default, you're subscribed to several common PR notifications. For a complete list of default subscription notifications, see [Out-of-the-box (OOB) or default subscriptions](../../notifications/oob-built-in-notifications.md#out-of-the-box-oob-or-default-subscriptions).
 
@@ -38,7 +39,7 @@ To view or set your personal notifications, see [Manage your personal notificati
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Select the settings button while you have your project open to bring up the project administration page.
 

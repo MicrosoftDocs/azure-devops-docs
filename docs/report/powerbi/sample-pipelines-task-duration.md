@@ -1,7 +1,7 @@
 ---
 title: Pipeline task duration sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to generate a pipeline task duration Power BI report  
+description: Learn how to generate a pipeline task duration Power BI report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'      
-ms.date: 09/21/2021
+ms.date: 10/12/2021
 ---
 
 # Pipeline task duration sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the time taken to execute different tasks of a pipeline. 
 
@@ -32,7 +32,7 @@ An example is shown in the following image.
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -57,7 +57,7 @@ in
     Source
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -249,13 +249,13 @@ For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**.
 
-1. Add the field "BuildCompletedOn.Date" to **Axis**.
+1. Add the field **BuildCompletedOn.Date** to **Axis**.
 
-    - Right-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click **BuildCompletedOn.Date** and select **BuildCompletedOn.Date**, rather than Date Hierarchy.
 	
-1. Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
+1. Add the field **TaskDuration80thPercentileInSeconds** to **Values**.
 
-    - Right-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    - Right-click **TaskDuration80thPercentileInSeconds** field and ensure **Sum** is selected.
 
 Your report should look similar to the following image. 
 

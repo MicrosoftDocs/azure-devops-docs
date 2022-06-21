@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn about the different integration options you can use to connect to Power BI to access Analytics for Azure DevOps.
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.technology: devops-analytics
-ms.topic: conceptual
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>=azure-devops-2019'
@@ -13,7 +13,7 @@ ms.date: 10/05/2021
 
 # About Power BI integration
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 With Azure DevOps, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). Azure DevOps also provides several reports in the product itself. Both dashboards and in-line reports offer easy access to Azure DevOps Analytics to enable data-driven decisions. However, we concede that customers often need more than what is provided in the product. 
 
@@ -39,7 +39,7 @@ Before you get started using Power BI to work with Analytics, make sure you've c
 
 
 1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. [Verify that Analytics](../dashboards/analytics-extension.md) is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.   
+1. [Verify that Analytics](../dashboards/analytics-extension.md) is installed, and if not, then enable it. You must be an account owner or a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) to add extensions or enable the service.   
 1. Configure the [permissions required to access Analytics](analytics-security.md).  
 1. Review the [knowledge base of Power BI articles](/power-bi).  
 1. If you aren't familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
@@ -82,7 +82,7 @@ You can pull data from Analytics into Power BI in one of three ways. It's import
    [Connect using the Azure DevOps Data Connector](data-connector-connect.md)
    :::column-end:::
    :::column span="1":::
-   The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md)</a>. To access **Analytics views**, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features)</a>
+   The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md)</a>. To access **Analytics views**, you must enable the feature as described in [Enable preview features](../../project/navigation/preview-features.md)</a>
    :::column-end:::
    :::column span="2":::
    **This connector only works with Boards data (work items)** and doesn't support other data types, such as Pipelines. It provides a flat-list of work items, and doesn't support work item hierarchies. At this point, we have no plans to update the connector to support other types of data. We recommend using OData queries unless you have a simpler report on Boards data.
@@ -130,4 +130,4 @@ For specific examples, see one of the following articles:
 - [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
 - [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop) 
 - [Power BI documentation](/power-bi)
-- [OData documentation](/odata/) 
+- [OData documentation](/odata/)

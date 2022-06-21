@@ -7,12 +7,14 @@ ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.author: sdanie
 author: steved0x
 ms.date: 07/14/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Specify demands
 
-::: moniker range="<= tfs-2018"
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -34,11 +36,14 @@ Some tasks won't run unless one or more demands are met by the agent. For exampl
 You might need to use self-hosted agents with special capabilities. For example, your pipeline may require **SpecialSoftware** on agents in the `Default` pool. Or, if you have multiple agents with different operating systems in the same pool, you may have a pipeline that requires a Linux agent.
 
 # [YAML](#tab/yaml)
+
+:::moniker range=">=azure-devops-2019"
+
 To add a single demand to your YAML build pipeline, add the `demands:` line to the `pool` section.
 ```yaml
 pool:
   name: Default
-  demands: SpecialSoftware # Check if SpecialSoftware capability exists
+  demands: SpecialSoftware # exists check for SpecialSoftware
 ```
 
 Or if you need to add multiple demands, add one per line.
@@ -47,14 +52,22 @@ Or if you need to add multiple demands, add one per line.
 pool:
   name: MyPool
   demands:
-  - myCustomCapability   # check for existence of capability
-  - agent.os -equals Darwin  # check for specific string in capability
+  - myCustomCapability   # exists check for myCustomCapability
+  - Agent.Version -equals 2.144.0 # equals check for Agent.Version 2.144.0
 ```
 
 > [!NOTE]
 > Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the only two supported operations for demands.
 
-For more information and examples, see [YAML schema - Demands](../yaml-schema.md#demands).
+For more information and examples, see [YAML schema - Demands](/azure/devops/pipelines/yaml-schema/pool).
+
+:::moniker-end
+
+:::moniker range="<azure-devops-2019"
+
+YAML Pipelines are supported in Azure DevOps Server 2019 and higher.
+
+:::moniker-end
 
 # [Classic](#tab/classic)
 

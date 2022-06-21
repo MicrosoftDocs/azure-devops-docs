@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: shashban
 author: shashban
 ms.date: 04/20/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Publish Code Coverage Results task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task in a build pipeline to publish code coverage results produced when
 running tests to Azure Pipelines or TFS in order to obtain coverage reporting.
@@ -40,6 +40,8 @@ To generate the HTML code coverage report you need dotnet 2.0.0 or later on the 
 The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
 
 To publish code coverage results for JavaScript with Istanbul using YAML, see [JavaScript](../../ecosystems/javascript.md) in the Ecosystems section of these topics, which also includes examples for other languages. 
+
+To see an example of publishing code coverage using Cobertura, see this [section](../../ecosystems/javascript.md#publish-code-coverage-results) on code coverage.
 
 ::: moniker-end
 

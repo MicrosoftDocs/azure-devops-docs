@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 10/15/2020
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Connect to Microsoft Azure
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -77,7 +77,7 @@ or a [VM with a managed service identity](#use-msi).
 
 ## Create an Azure Resource Manager service connection with an existing service principal
 
-1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
+1. If you want to use a predefined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
    * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   

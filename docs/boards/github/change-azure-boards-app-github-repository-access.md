@@ -1,7 +1,7 @@
 ---
-title: Change Azure Boards app for GitHub repository access 
+title: Change Azure Boards app to allow GitHub repository access 
 titleSuffix: Azure Boards
-description: Change the Azure Boards app GitHub repository access from all access or select repository access. 
+description: Learn how to configure the Azure Boards app to allow or suspend GitHub repository access.
 ms.technology: devops-agile
 ms.topic: how-to
 ms.author: kaelli
@@ -10,11 +10,11 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 07/06/2021
 ---
 
-# Change GitHub repository access, or suspend or uninstall the integration  
+# Manage GitHub repository access with the Azure Boards app  
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-Once you [install the Azure Boards app for GitHub](install-github-app.md), you can change the configuration, suspend operations, or uninstall the app. To learn more about Azure Boards and GitHub, see [GitHub integration overview](index.md). 
+Once you [install the Azure Boards app for GitHub](install-github-app.md), you can change the configuration and suspend operations. You can also uninstall the app. To learn more about Azure Boards and GitHub, see [GitHub integration overview](index.md). 
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
@@ -23,7 +23,7 @@ Once you [install the Azure Boards app for GitHub](install-github-app.md), you c
 
 The procedures provided in this article only apply when you've installed the Azure Boards app for GitHub. For details, see [Install and configure the Azure Boards app for GitHub](install-github-app.md).
 
-* To manage the Azure Boards integration, you must be the owner or administrator of the GitHub organization. You can connect to multiple GitHub repositories so long as you are an administrator for those repositories.  
+* To manage the Azure Boards integration, you must be the owner or administrator of the GitHub organization. You can connect to multiple GitHub repositories so long as you're an administrator for those repositories.  
 
 
 ## Change repository access
@@ -63,7 +63,7 @@ The procedures provided in this article only apply when you've installed the Azu
 
 	:::image type="content" source="media/change-repo-access/uninstall-confirmation-popup.png" alt-text="Screenshot of uninstall confirmation.":::
 
-## Update Azure Boards GitHub connections
+## Update Azure Boards' GitHub connections
  
 If you change the repositories that the Azure Boards app for GitHub supports, you may be redirected to Azure Boards GitHub connections. A good practice is to remove the repositories in Azure Boards that can no longer connect to GitHub. For details, see [Add or remove GitHub repositories](add-remove-repositories.md).
 

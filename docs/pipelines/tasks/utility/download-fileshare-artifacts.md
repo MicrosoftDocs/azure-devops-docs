@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Download Fileshare Artifacts task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to download fileshare artifacts.
 
@@ -31,13 +31,10 @@ Use this task to download fileshare artifacts.
 <tr><td>Matching pattern</td><td>(Optional) Specify files to be downloaded as multiline minimatch patterns. <a href="/azure/devops/pipelines/tasks/file-matching-patterns" data-raw-source="[More Information](../file-matching-patterns.md)">More Information</a>.<p>The default pattern (<code>**</code>) will download all files within the artifact.</p></td></tr>
 <tr><td>Download path</td><td>(Required) Path on the agent machine where the artifacts will be downloaded.</td></tr>
 <tr><td>Parallelization limit</td><td>(Optional) Number of files to download simultaneously.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
 </tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

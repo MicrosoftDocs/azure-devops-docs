@@ -5,27 +5,47 @@ ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
 ms.author: vijayma
 author: vijayma
-ms.date: 02/14/2019
-monikerRange: '>= tfs-2017'
+ms.date: 10/27/2021
+monikerRange: '<= azure-devops'
 ---
 
 # Build, test, and deploy Xcode apps
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This guidance explains how to automatically build Xcode projects.
+Learn how to build and deploy Xcode projects with Azure Pipelines. 
 
-## Example
+## Prerequisites
 
-For a working example of how to build an app with Xcode, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+* An Xcode 9+ project in a GitHub repository. If you do not have a project, see [Creating an Xcode Project for an App](https://developer.apple.com/documentation/xcode/creating-an-xcode-project-for-an-app)
 
-```
-https://github.com/MicrosoftDocs/pipelines-xcode
-```
+## Create the pipeline
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample app.
+> When the **Configure** tab appears, select **Xcode**. 
+
+7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+
+8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Xcode](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/xcode.yml) template.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+See the sections below to learn some of the more common ways to customize your pipeline.
+
+
+> [!Tip]
+> To make changes to the YAML file as described in this topic, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
+
 
 ## Build environment
 
@@ -46,41 +66,10 @@ pool:
 To build an app with Xcode, add the following snippet to your `azure-pipelines.yml` file. This is a minimal snippet for building an iOS project using its default scheme, for the Simulator, and without packaging. Change values to match your project configuration. See the [Xcode](../tasks/build/xcode.md) task for more about these options.
 
 ```yaml
-variables:
-  scheme: ''
-  sdk: 'iphoneos'
-  configuration: 'Release'
+pool:
+  vmImage: 'macos-latest'
 
 steps:
-- task: Xcode@5
-  inputs:
-    sdk: '$(sdk)'
-    scheme: '$(scheme)'
-    configuration: '$(configuration)'
-    xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
-    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-    packageApp: false
-```
-
-### Signing and provisioning
-
-An Xcode app must be signed and provisioned to run on a device or be published to the App Store. The signing and provisioning process needs access to your P12 signing certificate and one or more provisioning profiles. The [Install Apple Certificate](../tasks/utility/install-apple-certificate.md) and [Install Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) tasks make these available to Xcode during a build.
-
-The following snippet installs an Apple P12 certificate and provisioning profile in the build agent's Keychain. Then, it builds, signs, and provisions the app with Xcode. Finally, the certificate and provisioning profile are automatically removed from the Keychain at the end of the build, regardless of whether the build succeeded or failed. For more details, see [Sign your mobile app during CI](../apps/mobile/app-signing.md).
-
-```yaml
-# The `certSecureFile` and `provProfileSecureFile` files are uploaded to the Azure Pipelines secure files library where they are encrypted.
-# The `P12Password` variable is set in the Azure Pipelines pipeline editor and marked 'secret' to be encrypted.
-steps:
-- task: InstallAppleCertificate@2
-  inputs:
-    certSecureFile: 'chrisid_iOSDev_Nov2018.p12'
-    certPwd: $(P12Password)
-
-- task: InstallAppleProvisioningProfile@1
-  inputs:
-    provProfileSecureFile: '6ffac825-ed27-47d0-8134-95fcf37a666c.mobileprovision'
-
 - task: Xcode@5
   inputs:
     actions: 'build'
@@ -88,28 +77,14 @@ steps:
     sdk: 'iphoneos'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
-    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
-    signingOption: 'default' # Options: nosign, default, manual, auto
-    useXcpretty: 'false' # Makes it easier to diagnose build failures
+    xcodeVersion: 'default' # Options: 8, 9, 10, 11, 12, default, specifyPath
 ```
 
-### CocoaPods
+### Signing and provisioning
 
-If your project uses CocoaPods, you can run CocoaPods commands in your pipeline using a script, or with the [CocoaPods](../tasks/package/cocoapods.md) task. The task optionally runs `pod repo update`, then runs `pod install`, and allows you to set a custom project directory. Following are common examples of using both.
+An Xcode app must be signed and provisioned to run on a device or be published to the App Store. The signing and provisioning process needs access to your P12 signing certificate and one or more provisioning profiles. The [Install Apple Certificate](../tasks/utility/install-apple-certificate.md) and [Install Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) tasks make these available to Xcode during a build. 
 
-```yaml
-- script: /usr/local/bin/pod install
-  displayName: 'pod install using a script'
-
-- task: CocoaPods@0
-  displayName: 'pod install using the CocoaPods task with defaults'
-
-- task: CocoaPods@0
-  inputs:
-    forceRepoUpdate: true
-    projectDirectory: '$(system.defaultWorkingDirectory)'
-  displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
-```
+See [Sign your mobile app](../apps/mobile/app-signing.md) to learn more. 
 
 ### Carthage
 
@@ -149,6 +124,10 @@ to store your IPA with the build record or test and deploy it in subsequent pipe
     contents: '**/*.ipa'
     targetFolder: '$(build.artifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 ```
 
 ## Deploy
@@ -173,7 +152,7 @@ task to automate the release of updates to existing iOS TestFlight beta apps or 
 
 See [limitations](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store)
 of using this task with Apple two-factor authentication,
-since Apple authentication is region specific and
+since Apple authentication is region-specific and
 fastlane session tokens expire quickly and must be recreated and reconfigured.
 
 ```yaml

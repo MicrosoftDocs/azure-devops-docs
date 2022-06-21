@@ -12,7 +12,7 @@ ms.custom: quickstart
 ---
 # Create a bug in Azure DevOps Services using .NET client libraries
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 

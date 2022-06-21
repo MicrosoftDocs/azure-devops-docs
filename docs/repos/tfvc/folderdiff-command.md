@@ -6,19 +6,23 @@ ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.technology: devops-code-tfvc
 ms.topic: reference
 ms.date: 03/26/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
-# Folderdiff Command
+# Folderdiff command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 Use the **folderdiff** command to display and compare a visual representation of the differences between files in two server folders, in a server folder and a local folder, or in two local folders.
 
-**Required Permissions**
+## Prerequisites
 
-To use the **folderdiff** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **folderdiff** command, you must have the **Read** permission set to **Allow**. For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:TeamProjectCollectionUrl] [/filter:filter] [/filterLocalPathsOnly] [/login:username,[password]] [/view:same,different,sourceOnly,targetOnly]
@@ -152,7 +156,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    **/login**
    :::column-end:::
    :::column span="3":::
-   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   Specifies the user name and password to authenticate the user with Azure DevOps.
    :::column-end:::
 :::row-end:::
 
@@ -206,7 +210,7 @@ The following table lists filter examples.
 |\*.cs;!objd\\;!obj\\;!bin\\ | Matches all C# files except those in objd, obj, or bin folders.|
 |!\*.resx;!\*.ini;!resources\\;!\*junk\*\\ | Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 The following example compares the files in the server folder and a local folder. It organizes the files in the localFolder recursively and displays the output in the Command Prompt window.
@@ -215,22 +219,11 @@ The following example compares the files in the server folder and a local folder
 C:>tf folderdiff $/serverFolder F:\localFolder /recursive /noprompt
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
+- [Compare Two Folders](compare-folders.md)
+- [View File Changes Using Annotate](view-file-changes-using-annotate.md)
+- [Reconcile Differences Between Two Folders](reconcile-differences-between-two-folders.md)
+- [Folder Comparison Filters](folder-comparison-filters.md)
+- [Comparing Folders and Files](./compare-files.md)
 
-[Compare Two Folders](compare-folders.md)
-
-[View File Changes Using Annotate](view-file-changes-using-annotate.md)
-
-[Reconcile Differences Between Two Folders](reconcile-differences-between-two-folders.md)
-
-#### Concepts
-
-[Folder Comparison Filters](folder-comparison-filters.md)
-
-#### Other Resources
-
-[Comparing Folders and Files](./compare-files.md)
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

@@ -1,19 +1,19 @@
 ---
-title: Kanban quickstart 
+title: Get started with a Kanban board 
 titleSuffix: Azure Boards
-description: Use the Kanban board to plan and track work in Azure Boards and Team Foundation Server 
+description: Learn how to use the Kanban board to plan and track work in Azure Boards. 
 ms.custom: boards-kanban 
 ms.topic: quickstart
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 04/01/2022
 ---
 
 # Start using your Kanban board
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Your Kanban board turns your backlog into an interactive signboard, which provides a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage. Each card represents a backlog item, user story, or bug at that stage of work. 
 
@@ -26,9 +26,9 @@ User stories and bugs correspond to types of work items. You use [work items](..
 
 ## Add a Kanban board
 
-If you have a project, you have a Kanban board. Each project defines a default team and set of boards for that team. You only need to add a Kanban board when you want to support a new team. When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
+If you have a project, you have a Kanban board. Each project defines a default team and set of boards for that team. You only need to add a Kanban board when you want to support a new team. When you add a team, you add many team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
 
-Each team's Kanban boards are associated with one or more work item types depending on the process selected when the project was created, team configurations, and process customizations. The boards defined for each process are:
+Each team's Kanban boards are associated with one or more work item types. The association depends on the process selected when the project was created, team configurations, and process customizations. The boards defined for each process are:
 
 ::: moniker range=">= azure-devops-2019" 
 - [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
@@ -95,7 +95,7 @@ The system automatically saves the work item with the title you entered. You can
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 To add a work item, select the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus sign, enter a title, and then press Enter. 
 
@@ -116,9 +116,11 @@ To customize the set of fields displayed on the card, see [Customize cards](../.
 
 <a id="update-status">  </a>
 
-## Update status 
+## Update the status of a work item 
 
 As work completes in one stage, update the status of an item by dragging it to a downstream stage. 
+
+[!INCLUDE [temp](../includes/note-closed-items.md)]
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -130,46 +132,33 @@ As work completes in one stage, update the status of an item by dragging it to a
 ![Kanban board, Agile template, update status of work item](media/ALM_CC_MoveCard.png)  
 
 
-::: moniker range=">= tfs-2015"
-
 ## Update fields from the card 
 
 You can quickly update a field or reassign ownership directly from the board. If the field you want to update isn't showing, then [customize the card to show it](../../boards/boards/customize-cards.md). 
 
 ![Kanban, assign items](media/ALM_CC_UpdateFieldOnCard.png)
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 ### Filter your board using keywords, field values, or tags
 
-You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. . To learn more about applying filters, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
+You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. To learn more about applying filters, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 ![Enable kanban field-based filtering, earlier versions](../backlogs/media/filter-boards/filter-kb-choose-filter.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
 For example, here we filter for all items assigned to Jamal and Raisa.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter on assignment field](../backlogs/media/filter-boards/filter-kb-filters-chosen-services.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range="< azure-devops-2020"
 
 ![Kanban board, Filter on assignment field, earlier versions](../backlogs/media/filter-boards/filter-kb-filters-chosen.png)
 ::: moniker-end
-
-
 
 
 ## Invite others to work on your Kanban board 
@@ -190,7 +179,7 @@ All members of a project can view and contribute to your Kanban board. To invite
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Browser URL for the Kanban board](media/kanban-basics-url.png)
 

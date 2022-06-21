@@ -6,12 +6,12 @@ ms.topic: overview
 ms.author: sdanie
 author: steved0x
 ms.date: 09/02/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Use Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -22,7 +22,7 @@ The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeli
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Azure Pipelines supports continuous integration (CI) and continuous 
 delivery (CD) to continuously test, build, and deploy your code.  You accomplish this by defining a pipeline 
@@ -40,7 +40,7 @@ Continuous delivery automatically deploys and tests code in multiple stages to h
 
 | Continuous integration (CI)                         |  Continuous delivery (CD)                       |
 | ----------------------------------------------------|-------------------------------------------------|
-|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually. |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process.|
+|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process|
 
 
 ## Define pipelines using YAML syntax
@@ -52,7 +52,7 @@ You define your pipeline in a YAML file called `azure-pipelines.yml` with the re
 ![Pipelines YAML intro image](../media/pipelines-image-yaml.png)
 
 * The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
+* Every branch you use can modify the pipeline by modifying the `azure-pipelines.yml` file. Learn more about [branch consideration for YAML pipelines](../build/triggers.md#branch-considerations).
 * A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
 
 Follow these basic steps:
@@ -65,7 +65,7 @@ Your code is now updated, built, tested, and packaged. It can be deployed to any
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 YAML pipelines aren't available in TFS 2018 and earlier versions.
 
@@ -126,7 +126,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 TFS 2015 through TFS 2018 supports the Classic interface only. The following table indicates which pipeline features are available when defining build or release pipelines. 
 
@@ -153,7 +153,7 @@ TFS 2015 through TFS 2018 supports the Classic interface only. The following tab
 
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create your first pipeline](../create-first-pipeline.md)

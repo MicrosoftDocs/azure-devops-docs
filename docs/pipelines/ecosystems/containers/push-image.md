@@ -5,19 +5,19 @@ ms.topic: quickstart
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 08/28/2019
+ms.date: 02/11/2022
 monikerRange: 'azure-devops'
 ---
 
 # Push an image
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Azure Pipelines can be used to push images to container registries such as Azure Container Registry (ACR), Docker Hub, Google Container Registries, and others.
 
 ## Push step in pipeline
 
-The following YAML snippet showcases the usage of [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) along with a Docker task to login and push to a container registry. Instances of Docker registry service connection serve as secure options for storing credentials needed to login to the container registry before pushing the image. These service connections can be directly referenced in Docker task to login to the registry without the need to add a script task for docker login and setting up of secret variables for username and password.
+The following YAML snippet showcases the usage of [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) along with a Docker task to log in and push to a container registry. Instances of Docker registry service connection serve as secure options for storing credentials needed to log in to the container registry before pushing the image. These service connections can be directly referenced in Docker tasks to log in to the registry without needing to add a script task for docker log in. 
 
 ```YAML
 - task: Docker@2
@@ -34,9 +34,9 @@ The following YAML snippet showcases the usage of [Docker registry service conne
 
 ## Azure Container Registry
 
-Under Azure Container Registry option of [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection), the subscription (associated with the AAD identity of the user signed into Azure DevOps) and container registry within the subscription can be chosen to create the service connection. These service connections can be subsequently referenced from a pipeline task as shown in the YAML snippet above.
+With the Azure Container Registry option for [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection), the subscription (associated with the Azure Active Directory identity of the user signed into Azure DevOps) and container registry within the subscription can be chosen to create the service connection. These service connections can be later referenced from a pipeline task as shown in the YAML snippet above.
 
-For creating a new pipeline for a repository containing Dockerfile, the [Build and Push to Azure Container Registry document](acr-template.md) describes the Docker template automatically recommended by Azure Pipelines upon detecting of Dockerfile in the repository. The Azure subscription and Azure Container Registry inputs provided for template configuration are used by Azure Pipelines to automatically create the Docker registry service connection and even construct a functioning build and push pipeline by referencing the created service connection.
+When creating a new pipeline for a repository containing Dockerfile, the [Build and Push to Azure Container Registry document](acr-template.md) describes the Docker template automatically recommended by Azure Pipelines upon detecting of Dockerfile in the repository. The Azure subscription and Azure Container Registry inputs provided for template configuration are used by Azure Pipelines to automatically create the Docker registry service connection and even construct a functioning build and push pipeline by referencing the created service connection.
 
 ## Docker Hub
 
@@ -106,7 +106,7 @@ The following steps walk through the creation of Docker registry service connect
 
 9. In your Azure DevOps organization, select **Project settings** and then select **Pipelines -> Service connections**.
 
-10. Click **New service connection** and choose **Docker Registry**
+10. Select **New service connection** and choose **Docker Registry**
 
 11. In the dialog, enter values for the following fields:
 
@@ -115,5 +115,5 @@ The following steps walk through the creation of Docker registry service connect
    - **Docker Password:** Paste the contents of `azure-pipelines-publisher-oneline.json`
    - **Service connection name:** `gcrServiceConnection`
 
-12. Click **Save** to create the service connection
+12. Select **Save** to create the service connection
 

@@ -1,7 +1,7 @@
 ---
-title: Query fields, operators, and macros/variables 
+title: Query fields, operators, macros, and variables
 titleSuffix: Azure Boards
-description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn about field data types, operators, and macros/variables used by the Query Editor in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2021
+ms.date: 10/25/2021
 ---
 
 
-# Query fields, operators, and macros
+# Query fields, operators, and macros in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
@@ -28,7 +28,7 @@ For a quick reference of query tasks and operators and macros supported for each
 The value you specify for a field must conform to the data type for that field. The following table lists the supported data types:
 
 > [!NOTE]   
-> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](../../reference/xml/field-definition-element-reference.md). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
+> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../work-items/work-item-fields.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](../../reference/xml/field-definition-element-reference.md). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
 
 :::row:::
    :::column span="1":::
@@ -178,7 +178,7 @@ The value you specify for a field must conform to the data type for that field. 
 
    :::column-end:::
    :::column span="3":::
-   A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team.
+   A branching tree structure, such as an Area Path or Iteration path. Choose an item from a list of valid values. Find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team.
  
    For more information on constructing queries, see [Query by area or iteration path](query-by-area-iteration-path.md) or [Query by date or current iteration](query-by-area-iteration-path.md).
 
@@ -232,7 +232,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Does not match the value in the clause.
+   Doesn't match the value in the clause.
 
    :::column-end:::
    :::column span="3":::
@@ -316,7 +316,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Does not match the value that is contained in the specified field.
+   Doesn't match the value that is contained in the specified field.
 
    :::column-end:::
    :::column span="3":::
@@ -400,7 +400,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Does not contain an exact or partial match of the text string within the field you selected for filtering.
+   Doesn't contain an exact or partial match of the text string within the field you selected for filtering.
 
    :::column-end:::
    :::column span="3":::
@@ -428,7 +428,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. 
+   Doesn't contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. 
 
    Use this operator in combination with a clause with the **Contains Words** operator to include and exclude specific keywords.
 
@@ -485,7 +485,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field. Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
+   Doesn't match any value in a delimited set. You can exclude work items whose states are not Resolved, Completed, or Closed from query results if you specify those values for the State field. Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 
    
    > The **Not In** operator is available from Azure Boards and TFS 2018.2 and later versions.
@@ -514,7 +514,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    
    > [!NOTE]
-   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (AAD) when your Azure Boards account is backed by AAD, or Active Directory (AD) when your on-premises server instance is backed by Active Directory.  
+   > You can use the **In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure Active Directory (Azure AD) when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.  
 
    For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&amp;bc=/azure/devops/reference/breadcrumb/toc.json).
 
@@ -526,14 +526,14 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Does not match a value that is a member of the group in the clause.
+   Doesn't match a value that is a member of the group in the clause.
 
    :::column-end:::
    :::column span="3":::
     **String**  that matches the name of a user group in Team Foundation Server or a category group defined for a project.
 
    > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD.     
+   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in Azure AD when your Azure Boards account is backed by Azure AD, or Active Directory when your on-premises server instance is backed by Active Directory.     
 
    :::column-end:::
 :::row-end:::
@@ -543,7 +543,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Does not match the value in the clause and is not contained under the node in the clause.
+   Doesn't match the value in the clause and isn't contained under the node in the clause.
 
    :::column-end:::
    :::column span="3":::
@@ -608,7 +608,7 @@ You can use the macros described in the following table to filter your queries b
       **[Any]** 
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the **Work Item Type** or **State** fields to search across all work item types or across all states. For example, <code>Work Item Type=[Any]</code> won't place any filters based on the work item type.
+      Use with the **Work Item Type** or **State** fields to search across all work item types or across all states. For example, <code>Work Item Type=[Any]</code> won't place any filters based on the work item type.
    :::column-end:::
 :::row-end:::
 ---
@@ -617,7 +617,7 @@ You can use the macros described in the following table to filter your queries b
       **@CurrentIteration**  
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
+      Use with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
       The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
    :::column-end:::
 :::row-end:::
@@ -627,7 +627,7 @@ You can use the macros described in the following table to filter your queries b
       **@CurrentIteration +/- n**   
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- *n* sprints based on the [current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/toc.json&amp;bc=/azure/devops/boards/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
+      Use with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- *n* sprints based on the [current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/toc.json&amp;bc=/azure/devops/boards/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
       The **@CurrentIteration +/- n** macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions, and only when run from the web portal.
    :::column-end:::
 :::row-end:::
@@ -637,7 +637,7 @@ You can use the macros described in the following table to filter your queries b
       **@Follows**  
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
+      Use with the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
       The **@Follows** macro is supported for Azure Boards and TFS 2017 and later versions, and only when run from the web portal.
    :::column-end:::
 :::row-end:::
@@ -647,7 +647,7 @@ You can use the macros described in the following table to filter your queries b
       **@Me** 
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause <code>Created By=@Me</code>. For additional examples, see [Query by assignment, workflow or Kanban board changes](query-by-workflow-changes.md).
+      Use with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause <code>Created By=@Me</code>. For more examples, see [Query by assignment, workflow, or Kanban board changes](query-by-workflow-changes.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -656,7 +656,7 @@ You can use the macros described in the following table to filter your queries b
       **@MyRecentActivity** <sup>1</sup>  
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the the **ID** field and **In** operator to list work items that you have viewed or updated in the project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
+      Use with the **ID** field and **In** operator to list work items that you have viewed or updated in the project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -665,7 +665,7 @@ You can use the macros described in the following table to filter your queries b
       **@Project** 
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>.  
+      Use with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>.  
       The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
    :::column-end:::
 :::row-end:::
@@ -675,7 +675,7 @@ You can use the macros described in the following table to filter your queries b
       **@RecentMentions** <sup>1</sup> 
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the **ID** field and **In** operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md).
+      Use with the **ID** field and **In** operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -684,7 +684,7 @@ You can use the macros described in the following table to filter your queries b
       **@RecentProjectActivity**  
    :::column-end:::
    :::column span="3":::
-      Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md).  
+      Use with the **ID** field and **In** operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md).  
       The **@RecentProjectActivity** macro is supported for Azure Boards (cloud service) only at this time.
    :::column-end:::
 :::row-end:::
@@ -694,7 +694,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfDay** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause <code>Closed Date&gt;=@StartOfDay-7</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause <code>Closed Date&gt;=@StartOfDay-7</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -703,7 +703,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfMonth** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last 3 months with the clause <code>Created Date&gt;=@StartOfMonth-3</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last three months with the clause <code>Created Date&gt;=@StartOfMonth-3</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -712,7 +712,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfWeek** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause <code>Changed Date&gt;=@StartOfWeek-2</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause <code>Changed Date&gt;=@StartOfWeek-2</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -721,7 +721,7 @@ You can use the macros described in the following table to filter your queries b
       **@StartOfYear** <sup>2</sup> 
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause <code>Target Date&gt;=@StartOfYear</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause <code>Target Date&gt;=@StartOfYear</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -730,7 +730,7 @@ You can use the macros described in the following table to filter your queries b
       **@TeamAreas**  
    :::column-end:::
    :::column span="3":::
-      Only use with the **Area Path** field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause <code>Area Path=@TeamAreas [Fabrikam Fiber]\Web</code>. For additional examples, see [Query by area or iteration path](query-by-area-iteration-path.md).  
+      Only use with the **Area Path** field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause <code>Area Path=@TeamAreas [Fabrikam Fiber]\Web</code>. For more examples, see [Query by area or iteration path](query-by-area-iteration-path.md).  
       The **@TeamAreas** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal.
    :::column-end:::
 :::row-end:::
@@ -740,7 +740,7 @@ You can use the macros described in the following table to filter your queries b
       **@Today**
    :::column-end:::
    :::column span="3":::
-      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=Today-7</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=Today-7</code>. For more examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -768,7 +768,7 @@ For examples, see [Example work item queries](query-index-quick-ref.md) and [Que
 ::: moniker range="< azure-devops"
 Azure DevOps Server and Team Foundation Server automatically index all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
 
-Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
+Full-text searches require a SQL collation that corresponds to a language that has a word breaker registered with SQL Server. If the collation settings for the project collection database used for your Team Foundation Server instance don't correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 
 For more information, see [Full-Text Search Queries and Collation Settings](/azure/devops/server/install/sql-server/collation-requirements).
 

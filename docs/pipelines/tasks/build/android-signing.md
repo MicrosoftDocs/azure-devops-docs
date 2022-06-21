@@ -7,13 +7,13 @@ ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Android signing task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task in a pipeline to sign and align Android APK files.
 
@@ -31,7 +31,7 @@ The build agent must have the following capabilities:
 
 ::: moniker-end
 
- ## Arguments
+## Arguments
 
 <table>
    <thead>
@@ -52,9 +52,17 @@ The build agent must have the following capabilities:
          Argument aliases: <code>apkFiles</code>
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Signing Options</th>
-   </tr>
+</table>
+
+### Signing options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>apksign</code><br/>Sign the APK</td>
       <td>
@@ -100,9 +108,17 @@ The build agent must have the following capabilities:
          <p>(Optional) Optionally specify the location of the apksigner executable used during signing. This defaults to the apksigner found in the Android SDK version folder that your application builds against.</p><br/>Argument aliases: <code>apksignerFile</code>
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Zipalign Options</th>
-   </tr>
+   </table>
+
+### Zipalign options
+
+   <table>
+      <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>zipalign</code><br/>Zipalign</td>
       <td>
@@ -115,11 +131,10 @@ The build agent must have the following capabilities:
          <p>(Optional) Optionally specify the location of the zipalign executable used during signing. This defaults to the zipalign found in the Android SDK version folder that your application builds against.</p><br/>Argument aliases: <code>zipalignFile</code>
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-   </tr>
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Related tasks
 
-[Android Build](android-build.md)
+[Android build](android-build.md)

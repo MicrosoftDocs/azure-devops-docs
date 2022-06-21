@@ -1,24 +1,27 @@
-﻿---
+---
 title: Rollback Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Rollback Command (Team Foundation Version Control)
 ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Rollback Command (Team Foundation Version Control)
+# Rollback command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
 You can use this command to roll back the effects of one or more changesets to one or more version-controlled items. This command does not remove the changesets from an item's version history. Instead, this command creates in your workspace a set of pending changes that negate the effects of the changesets that you specify.
 
-**Required Permissions**
+## Prerequisites
 
-To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see  [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf rollback /toversion:VersionSpec ItemSpec [/recursive] [/lock:none|checkin|checkout] [/version:versionspec] [/keepmergehistory] [/login:username,[password]] [/noprompt]
@@ -73,7 +76,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="3":::
    Use this argument to specify one or more items that you want to roll back. If you are using the **/toversion** option, you must specify this argument.
 
-   For more information about how Team Foundation parses item specifications, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   For more information about how Team Foundation parses item specifications, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    
    > [!Note]  
    > You can specify more than one *Itemspec* argument.
@@ -106,7 +109,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
      
      Example: **/toversion:WResolveRIConflicts;AKerry**
 
-   For more information about how Team Foundation parses versionspecs, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   For more information about how Team Foundation parses versionspecs, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
 
@@ -142,7 +145,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    **/lock**
    :::column-end:::
    :::column span="3":::
-   Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](/azure/devops/repos/tfvc/understand-lock-types?viewFallbackFrom=vsts).
+   Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](./understand-lock-types.md).
 
    Lock Options
    - **None**
@@ -161,7 +164,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    **/login**
    :::column-end:::
    :::column span="3":::
-   For information about this option, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+   For information about this option, see [Use Team Foundation version control commands, Use options to modify how a command functions](use-team-foundation-version-control-commands.md#use-options).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -300,16 +303,7 @@ For example, you can use this command in the following situation:
 
     -   If you included the **/keepmergehistory** option, the merge operation will apply to **$/BranchB/Util.cs** all changesets that were applied to **$/BranchA/Util.cs** since changeset 292, excluding changesets 297, 301, and 305. In other words, a future merge will not undo the rollback change. Therefore, the content on **BranchA** might not match the content on **BranchB**.
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Merge Command](merge-command.md)
-
-#### Concepts
-
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Merge Command](merge-command.md)

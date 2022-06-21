@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
 ms.date: 09/07/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # CD of an Azure virtual machine using a Resource Manager template
 
-[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 

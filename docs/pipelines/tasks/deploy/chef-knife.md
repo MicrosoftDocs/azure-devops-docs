@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Chef Knife task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to run scripts with Knife commands on your Chef workstation.
 
@@ -30,13 +30,9 @@ Use this task to run scripts with Knife commands on your Chef workstation.
 <tr><td>Chef Subscription</td><td>(Required) Chef subscription to configure before running knife commands</td></tr>
 <tr><td>Script Path</td><td>(Required) Path of the script. Should be fully qualified path or relative to the default working directory.</td></tr>
 <tr><td>Script Arguments</td><td>(Optional) Additional parameters to pass to Script.  Can be either ordinal or named parameters.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

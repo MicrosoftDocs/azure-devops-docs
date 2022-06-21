@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.custom: seodec18
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Shell Script task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run a shell script using bash.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -60,9 +60,17 @@ Relative path from the repo root to the shell script file that you want to run.
 Arguments that you want to pass to the script.
 </td>
 </tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">Advanced</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Working Directory</td>
 <td>
@@ -75,13 +83,9 @@ Working directory in which you want to run the script.  If you leave it empty it
 Select if you want this task to fail if any errors are written to the StandardError stream.
 </td>
 </tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Example
 

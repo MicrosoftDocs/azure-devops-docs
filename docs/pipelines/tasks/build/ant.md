@@ -7,12 +7,12 @@ ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Ant task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build with Apache Ant.
 
@@ -60,9 +60,17 @@ The build agent must have the following capability:
       <p>See <a href="http://ant.apache.org/manual/targets.html#targets" data-raw-source="[Using Apache Ant Targets](https://ant.apache.org/manual/targets.html#targets)">Using Apache Ant Targets</a>.</p>
    </td>
 </tr>
-<tr>
-   <th style="text-align: center" colspan="2">JUnit Test Results</th>
-</tr>
+</table>
+
+### JUnit test results options
+
+<table>
+<thead>
+   <tr>
+      <th>Argument</th>
+      <th>Description</th>
+   </tr>
+</thead>
 <tr>
    <td><code>publishJUnitResults</code><br/>Publish to Azure Pipelines</td>
    <td>(Required) Select this option to publish JUnit test results produced by the Ant build to Azure Pipelines or your on-premises Team Foundation Server. Each test result file that matches Test Results Files is published as a test run.<br/>Default value: true</td>
@@ -75,9 +83,17 @@ The build agent must have the following capability:
    <td><code>testRunTitle</code><br/>Test Run Title</td>
    <td>(Optional) Assign a title for the JUnit test case results for this build.</td>
 </tr>
-<tr>
-   <th style="text-align: center" colspan="2">Code Coverage</th>
-</tr>
+</table>
+
+### Code coverage options
+
+<table>
+<thead>
+   <tr>
+      <th>Argument</th>
+      <th>Description</th>
+   </tr>
+</thead>
 <tr>
    <td><code>codeCoverageTool</code><br/>Code Coverage Tool</td>
    <td>
@@ -121,9 +137,17 @@ The build agent must have the following capability:
       <br/>Argument aliases: <code>codeCoverageFailIfEmpty</code>
    </td>
 </tr>
-<tr>
-   <th style="text-align: center" colspan="2">Advanced</th>
-</tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
+   <tr>
+      <th>Argument</th>
+      <th>Description</th>
+   </tr>
+</thead>
 <tr>
    <td><code>antHomeUserInputPath</code><br/>Set ANT_HOME Path</td>
    <td>(Optional) If set, overrides any existing ANT_HOME environment variable with the given path.
@@ -151,11 +175,9 @@ The build agent must have the following capability:
    <br/>Default value: x64<br/>Argument aliases:
    <code>jdkArchitectureOption</code></td>
 </tr>
-<tr>
-   <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 

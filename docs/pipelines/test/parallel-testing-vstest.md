@@ -1,5 +1,5 @@
 ---
-title: Run any tests in parallel
+title: Run VSTest tests in parallel
 description: Continuous testing. Speed up testing by running tests in parallel using Visual Studio Test task. 
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.topic: conceptual 
@@ -7,19 +7,12 @@ ms.custom: "continuous-test, seodec18"
 ms.author: shashban
 author: shashban
 ms.date: 11/13/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Run tests in parallel using the Visual Studio Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
-
-::: moniker range="< tfs-2018"
-
-> [!NOTE]
-> For TFS, this topic applies to only TFS 2017 Update 1 and later.
-
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
@@ -34,7 +27,7 @@ This can be done easily by employing the additional capacity offered by the clou
 This article discusses how you can configure the
 [Visual Studio Test task](../tasks/test/vstest.md) to run tests in parallel by using multiple agents.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -146,7 +139,7 @@ jobs:
     parallel: 2
 ```
 
-For more information, see [YAML schema - Job](../yaml-schema.md#job).
+For more information, see [YAML schema - Job](/azure/devops/pipelines/yaml-schema/jobs-job).
 
 ::: moniker-end
 

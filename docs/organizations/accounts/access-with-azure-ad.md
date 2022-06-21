@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # About accessing your organization via Azure AD
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
@@ -28,7 +28,7 @@ Enforce policies for accessing your team's critical resources and key assets.
 
 ## How Azure AD controls access to Azure DevOps
 
-Your organization authenticates users through your organization's directory. Only users who are members or guests in that directory get access to your organization.
+Your organization authenticates users through its directory. Only users who are members or guests in that directory get access to your organization.
 Disabled or removed users from your directory have no access to your organization by any mechanism. For example, mechanisms such as personal access tokens (PATs) or SSH.
 Only specific [Azure AD administrators](/azure/active-directory/roles/permissions-reference) manage users in your directory, so they control who gets access to your organization.
 

@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 08/28/2021
+ms.date: 01/21/2022
 monikerRange: azure-devops
 ---
 
 # Define resources in YAML
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
@@ -43,7 +43,7 @@ These values are empty if a resource doesn't trigger a pipeline run. The variabl
 
 If you have a pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on a pipeline resource for your CD workflows.
 
-In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact.
+In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. Use the label defined by `pipeline` to reference the pipeline resource from other parts of the pipeline, such as when using pipeline resource variables or downloading artifacts.
 
 For an alternative way to download pipelines, see the tasks in [Pipeline Artifacts](../artifacts/pipeline-artifacts.md).
 
@@ -155,18 +155,19 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 
 ### Evaluation of artifact version
 
-The pipeline version, CI build run, that gets picked in your pipeline run, gets controlled by how your pipeline run is triggered.
+The version of the resource pipeline's artifacts depends on how your pipeline is triggered.
 
-In case you create your pipeline run is created manually or by a scheduled trigger, the default version, branch, and tags get used to evaluate the CI pipeline version.
+If your pipeline runs because you manually triggered it or due to a scheduled run, the version of artifacts's version is defined by the values of the `version`, `branch`, and `tags` properties.
 
-|Provided information|Outcome |
+|Specified properties | Artifact version |
 |---------|---------|
-|Build version #     | That version runs.        |
-|Branch     |The latest version from the given branch runs.         |
-|Tags list    | The latest run that has all the matching tags runs.        |
-|Branch and tags list   |The latest run from the branch provided and that has the matching tags runs.        |
-|Nothing    | The latest version across all the branches runs.        |
+| `version`     | The artifacts from the build having the specified run number |
+| `branch`      | The artifacts from the latest build performed on the specified branch |
+| `tags` list   | The artifacts from the latest build that has all the specified tags    |
+| `branch` and `tags` list   | The artifacts from the latest build performed on the specified branch _and_ that has all the specified tags |
+| None    | The artifacts from the latest build across all the branches |
 
+Let's look at an example. Say your pipeline contains the following resource definition.
 ```yml
 resources:
   pipelines:
@@ -178,17 +179,20 @@ resources:
     - Production        ### Tags are AND'ed
     - PreProduction
 ```
+When you manually trigger your pipeline to run, the version of the artifacts of the `MyCIAlias` pipeline is the one of the latest build done on the `main` branch and that has the `Production` and `PrepProduction` tags.
 
-If your pipeline gets triggered automatically, the CI pipeline version gets picked, based on the trigger event. The default version information provided is irrelevant.
+When your pipeline gets triggered because one of its resource pipelines completes, the version of the artifacts is the one of the triggering pipeline. The values of the `version`, `branch`, and `tags` properties are ignored.
 
-|Provided information  |Outcome  |
+|Specified triggers  | Outcome  |
 |---------|---------|
-|Branches     | A new pipeline gets triggered whenever a CI run successfully completes that matches to the branches that are included.        |
-|Tags     | A new pipeline gets triggered whenever a CI run successfully completes that matches all the tags mentioned.        |
-|Stages     | A new pipeline gets triggered whenever a CI run has all the stages mentioned are completed successfully.        |
-|Branches, tags, and stages    | A new pipeline run gets triggered whenever a CI run matches all the conditions.        |
-|Only `trigger: true`    | A new pipeline run gets triggered whenever a CI run successfully completes.        |
-|Nothing    | No pipeline run gets triggered. Triggers are disabled by default unless you specifically enable them.        |
+|`branches` | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run on the `include` branches |
+|`tags`     | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run that is tagged with _all_ the specified tags |
+| `stages`     | A new run of the current pipeline is triggered whenever the resource pipeline successfully executed the specified `stages` |
+| `branches`, `tags`, and `stages`    | A new run of the current pipeline is triggered whenever the resource pipeline run satisfies _all_ branch, tags, and stages conditions |
+| `trigger: true`    | A new run of the current pipeline is triggered whenever the resource pipeline successfully completes a run |
+|Nothing    | No new run of the current pipeline is triggered when the resource pipeline successfully completes a run|
+
+Let's look at an example. Say your pipeline contains the following resource definition.
 
 ```yaml
 resources:
@@ -211,6 +215,8 @@ resources:
       - PreProduction
       
 ```
+
+Your pipeline will run whenever the `SmartHotel` pipelines runs on one of the `releases` branches or on the `main` branch, is tagged with both `Verified` and `Signed`, and it completed both the `Production` and `PreProduction` stages.
 
 ### `download` for pipelines
 
@@ -578,9 +584,9 @@ resources:
   packages:
     - package: myPackageAlias # alias for the package resource
       type: Npm # type of the package NuGet/npm
-      connection: GitHubConnectionName # Github service connection with the PAT type
+      connection: GitHubConnectionName # GitHub service connection with the PAT type
       name: nugetTest/nodeapp # <Repository>/<Name of the package>
-      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      version: 1.0.1 # Version of the package to consume; Optional; Defaults to latest
       trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
 ```
 
@@ -761,9 +767,24 @@ You can choose to download the artifacts in build jobs or to override the downlo
 
 When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss traceability and triggers. Sometimes it makes sense to use the Download Pipeline Artifacts task directly. For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template wants to add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
 
+### How can I trigger a pipeline run when my Docker Hub image gets updated? 
+
+You'll need to set up a [classic release pipeline](../release/index.md) because the containers resource trigger is not available for Docker Hub for YAML pipelines.  
+
+1. Create a new Docker Hub [service connection](../library/service-endpoints.md). 
+1. Create a classic release pipeline and add a Docker Hub artifact. Set your service connection. Select the namespace, repository, version, and source alias. 
+    
+    :::image type="content" source="media/docker-artifact-release-pipeline.png" alt-text="Add a Docker Hub artifact. ":::
+
+1. Select the trigger and toggle the continuous deployment trigger to **Enable**. You'll create a release every time a Docker push occurs to the selected repository.
+1. Create a new stage and job. Add two tasks, Docker login and Bash:
+ * The Docker task has the `login` action and logs you into  Docker Hub.  
+ *  The Bash task runs `docker pull <hub-user>/<repo-name>[:<tag>]`. Replace `hub-user`, `repo-name`, and `tag` with your values. 
+
+    :::image type="content" source="media/docker-hub-tasks-classic-pipeline.png" alt-text="Add Docker login and Bash tasks. ":::
 ## Related articles
 
 * [Define variables](variables.md)
 * [Create and target an environment](environments.md)
 * [Use YAML pipeline editor](../get-started/yaml-pipeline-editor.md)
-* [YAML schema reference](../yaml-schema.md)
+* [YAML schema reference](/azure/devops/pipelines/yaml-schema)

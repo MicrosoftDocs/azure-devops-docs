@@ -9,15 +9,15 @@ ms.topic: include
 
 2. Select **New organization**.
 
-   ![Select New organization](/azure/devops/media/select-new-organization.png)
+   ![Select New organization](../media/select-new-organization.png)
 
 3. Confirm information, and then select **Continue**.
 
-   ![Create your organization in Azure DevOps](/azure/devops/media/name-your-organization.png)
+   ![Create your organization in Azure DevOps](../media/name-your-organization.png)
 
-   ![Taking you to your organization notification](/azure/devops/media/taking-you-to-your-azure-devops-organization.png)
+   ![Taking you to your organization notification](../media/taking-you-to-your-azure-devops-organization.png)
 
-   Congratulations, you're now an organization owner!
+   Congratulations, you're an organization owner!
 
    Sign in to your organization at any time, `https://dev.azure.com/{yourorganization}`.
 

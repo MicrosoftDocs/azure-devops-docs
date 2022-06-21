@@ -7,14 +7,14 @@ ms.custom: continuous-test, seodec18
 ms.author: shashban
 author: shashban
 ms.date: 03/15/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # UI test with Selenium
 
-[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -191,16 +191,6 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
 
 <a name="include-test"></a>
 ## Include the test in a release
-
-::: moniker range="<= tfs-2017"
-
-**NOTE:** This example uses the **Visual Studio Test Platform Installer** task and the latest
-version of the **Visual Studio Test** task. These tasks are not available in TFS 2015 or TFS 2017.
-To run Selenium tests in these versions of TFS, you must use the 
-[Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md)
-and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
-
-::: moniker-end
 
 1. If you don't have an existing release pipeline that deploys your web app:
 

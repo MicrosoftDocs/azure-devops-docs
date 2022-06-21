@@ -10,7 +10,7 @@ Editing wiki pages is now easier with synchronous scroll between the edit and th
 > ![Synchronous scroll for editing wiki pages.](../../media/160_06.png)
 
 > [!NOTE]
-> The state of the synchronous scroll toggle is saved per user and account.
+> The state of the synchronous scroll toggle is saved per user and organization.
 
 ### Page visits for wiki pages
 

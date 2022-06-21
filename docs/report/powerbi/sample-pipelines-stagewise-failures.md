@@ -1,7 +1,7 @@
 ---
 title: Pipeline stage wise failures sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to generate a pipeline stage wise failure Power BI report  
+description: Learn how to generate a pipeline stage wise failure Power BI report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 09/21/2021
+ms.date: 10/12/2021
 ---
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
@@ -31,7 +31,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -57,7 +57,7 @@ in
 
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -158,7 +158,7 @@ The following table describes each part of the query.
    `(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),`
    :::column-end:::
    :::column span="1":::
-   Group by date of completion of pipeline run, Build Id and stage name.
+   Group by date of completion of pipeline run, Build ID and stage name.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -166,7 +166,7 @@ The following table describes each part of the query.
    `aggregate (FailedCount with sum as FailedCount))`
    :::column-end:::
    :::column span="1":::
-   For each day, build Id and Stage, count the total number of failures. This will be the total number of task failures & not stage failures
+   For each day, build ID and Stage, count the total number of failures. It will be the total number of task failures & not stage failures
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -273,14 +273,14 @@ For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Stacked column chart**. 
 
-1. Add the field "PipelineRunCompletedOn.Date" to **Axis**.
-    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
+1. Add the field **PipelineRunCompletedOn.Date** to **Axis**.
+    - Right-click **PipelineRunCompletedOn.Date** and select **PipelineRunCompletedOn.Date**, rather than Date Hierarchy.
 	
-1. Add the field "FailedStageCount" to **Values**.
-	  - Right-click "FailedStageCount" field and ensure **Sum** is selected.
+1. Add the field **FailedStageCount** to **Values**.
+	  - Right-click **FailedStageCount** field and ensure **Sum** is selected.
 
-1. Add the field "PipelineJob.StageName" to **Legend**.
-	  - Right-click "PipelineJob.StageName" field and ensure **Sum** is selected.
+1. Add the field **PipelineJob.StageName** to **Legend**.
+	  - Right-click **PipelineJob.StageName** field and ensure **Sum** is selected.
   
 
 Your report should look similar to the following image. 
@@ -289,9 +289,9 @@ Your report should look similar to the following image.
 > ![Sample - Pipelines Stage wise failures - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
 
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following extra queries to create different but similar reports using the same steps defined previously in this article.
 
 
 ### Task wise failure trend, rather than Stage wise failure trend

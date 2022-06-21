@@ -1,20 +1,20 @@
 ---
 title: Plan and track work in Azure Boards with Basic or Agile processes
 titleSuffix: Azure Boards 
-description: Learn how to plan and track work in your new team project in Azure Boards.
+description: Learn how to plan and track work in your new Kanban team project in Azure Boards.
 ms.custom: boards-get-started
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 09/15/2021
+ms.date: 04/01/2022
 ---
 
 
 # Plan and track work in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board. You can learn the Basic process or the Agile process for creating these items. 
 
@@ -25,7 +25,7 @@ Choose one of the following four system processes&mdash;**Agile**, **Basic**, **
 
 #### [Agile process](#tab/agile-process) 
 
-The Agile process provides several work item types&mdash;for example, user stories, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding user stories. If you need to group them into a hierarchy, you can define features. If you want to track additional details of work, you can add tasks to a user story.  
+The Agile process provides several work item types&mdash;for example, user stories, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding user stories. If you need to group them into a hierarchy, you can define features. To track other details of work, you can add tasks to a user story.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
@@ -34,11 +34,11 @@ The Agile process provides several work item types&mdash;for example, user stori
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
-Here we show how to add user stories and child tasks from the web portal and add details to those work items . 
+Here we show how to add user stories and child tasks from the web portal and add details to those work items. 
 
 #### [Basic process](#tab/basic-process) 
 
-The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. To track other work details, you can add tasks to an issue. 
+The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. To track more work details, you can add tasks to an issue. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
@@ -52,7 +52,7 @@ Here we show how to add issues and child tasks from the web portal and add detai
 
 #### [Scrum process](#tab/scrum-process) 
 
-The Scrum process provides several work item types&mdash;for example, product backlog items, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding product backlog items. If you need to group them into a hierarchy, you can define features. If you want to track additional details of work, you can add tasks child items to a product backlog item.  
+The Scrum process provides several work item types&mdash;for example, product backlog items, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding product backlog items. If you need to group them into a hierarchy, you can define features. To track more details of work, you can add tasks child items to a product backlog item.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
@@ -66,7 +66,7 @@ Here we show how to add product backlog items and child tasks from the web porta
 
 #### [CMMI process](#tab/cmmi-process) 
 
-The CMMI process provides several work item types&mdash;for example, requirements, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding requirements. If you need to group them into a hierarchy, you can define features and epics. If you want to track additional details of work, you can add tasks child items to a requirement.  
+The CMMI process provides several work item types&mdash;for example, requirements, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding requirements. If you need to group them into a hierarchy, you can define features and epics. To track more details of work, you can add tasks child items to a requirement.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
@@ -117,7 +117,7 @@ Here we show how to add user stories and child tasks from the web portal and add
 For details, see [Default permissions and access for Azure Boards](permissions-access-boards.md)
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]   
 > The images shown in this article correspond to the latest version of Azure Boards. While they may differ from those shown in earlier, on-premises versions of Azure DevOps, they are similar in the functions described unless otherwise noted. 
@@ -186,9 +186,9 @@ To open the Features board from the Requirements board, choose **Features** from
 
 ## Add work items to your board
 
+Work items you add to your board are automatically assigned the default **Area Path** and **Iteration Path** assigned to the team. To learn more, see [Configure team settings](../../organizations/settings/manage-teams.md). 
 
 #### [Agile process](#tab/agile-process) 
-
 
 1. From the Stories board, choose **New item** and start adding those stories you want to track. 
 
@@ -254,13 +254,6 @@ To open the Features board from the Requirements board, choose **Features** from
 
 Choose the issue or user story title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../media/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
 
-::: moniker range="<= tfs-2017"
-
-> [!NOTE]   
-> The **Discussion** section is available with TFS 2017.2 and later versions. 
-
-::: moniker-end
-
 #### [Agile process](#tab/agile-process) 
 
 For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
@@ -319,7 +312,7 @@ The State field tracks the status of a work item. With the Kanban board, you can
 
 #### [Agile process](#tab/agile-process) 
 
-As work starts, drag the user story card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it is reviewed and accepted, move to the **Closed** column. 
+As work starts, drag the user story card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it's reviewed and accepted, move to the **Closed** column. 
 
 > [!div class="mx-imgBorder"]  
 > ![Update status on Kanban board, Agile process.](media/plan-track-work/update-status.png) 
@@ -346,7 +339,7 @@ Once a backlog item is approved to start work, drag the backlog item card from t
 #### [CMMI process](#tab/cmmi-process) 
 
 
-As work starts, drag the requirement card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it is reviewed and accepted, move to the **Closed** column. 
+As work starts, drag the requirement card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it's reviewed and accepted, move to the **Closed** column. 
 
 > [!div class="mx-imgBorder"]  
 > ![Update status on Kanban board, CMMI process.](media/plan-track-work/update-status-cmmi.png) 
@@ -360,21 +353,12 @@ As work starts, drag the requirement card from the **Backlog** column to the **A
 
 ## Add tasks 
 
-Task checklists provide a quick and easy way to track elements of work which are important to support completing a backlog item. In addition, you can assign individual tasks to different team members. 
+Task checklists provide a quick and easy way to track elements of work that are important to support completing a backlog item. Also, you can assign individual tasks to different team members. 
 
 > [!TIP]   
-> Tasks that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
+> Tasks that you create from the Kanban board are automatically assigned the **Area Path** and **Iteration Path** of their parent work item. 
 
 Tasks that you create from the Kanban board show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) show up within tasks checklists on the Kanban board.  
-
-
-::: moniker range="<= tfs-2015"
-
-> [!NOTE]   
-> The Task checklists are available from with TFS 2015.1 and later versions. 
-
-::: moniker-end
-
 
 #### [Agile process](#tab/agile-process) 
 
@@ -413,7 +397,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, Basic process.](media/track-issues/enter-first-task.png) 
 
-1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
+1. If you have various tasks to add, keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, Basic process.](media/track-issues/add-several-tasks.png)  
@@ -437,7 +421,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, Scrum process.](media/plan-track-work/prep-images-task.png) 
 
-1. If you have many tasks to add, keep typing your task titles and type Enter.   
+1. If you have many tasks to add, just keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, Scrum process.](media/plan-track-work/add-several-tasks.png)  
@@ -462,7 +446,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, CMMI process.](media/plan-track-work/prep-images-task.png) 
 
-1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
+1. If you have various tasks to add, just keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, CMMI process.](media/plan-track-work/add-several-tasks.png)  
@@ -528,12 +512,13 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
       **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
       [Activity](../queries/query-numeric.md) 
    :::column-end:::
    :::column span="3":::
-      The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:  
+      The type of activity that's required to do a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:  
       - **Deployment**
       - **Design**
       - **Development**
@@ -547,7 +532,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
       [Discipline](../queries/query-numeric.md) (CMMI process)
    :::column-end:::
    :::column span="3":::
-      The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:  
+      The type of activity that's required to do a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:  
       - **Analysis**
       - **Development**
       - **Test**

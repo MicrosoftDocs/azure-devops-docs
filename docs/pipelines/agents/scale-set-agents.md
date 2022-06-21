@@ -5,13 +5,13 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 07/09/2021
+ms.date: 12/22/2021
 monikerRange: azure-devops
 ---
 
 # Azure virtual machine scale set agents
 
-[!INCLUDE [include](../includes/version-team-services.md)] 
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 Azure virtual machine scale set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be autoscaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
 
@@ -97,7 +97,7 @@ In the following example, a new resource group and virtual machine scale set are
 
     * `--disable-overprovision` - required
     * `--upgrade-policy-mode manual` - required
-    * `--load-balancer ""` - Azure Pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss?view=azure-cli-latest&preserve-view=true#az_vmss_create).
+    * `--load-balancer ""` - Azure Pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss#az-vmss-create).
     * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
     > [!IMPORTANT]
@@ -203,7 +203,7 @@ To put all of this into an example, consider a scale set agent pool that is conf
 
 - At this time, the number of idle agents is 1, and that is less than the standby count of 2. So, Azure Pipelines scales out and adds 2 more VMs (the increment size used in this example). At this time, the pool has 3 idle agents and 1 busy agent.
 
-- Let us say that the job on the first agent completes. Azure Pipeline takes that agent offline to re-image that machine. After a few minutes, it comes back with a fresh image. At this time, we'll have 4 idle agents.
+- Let us say that the job on the first agent completes. Azure Pipelines takes that agent offline to re-image that machine. After a few minutes, it comes back with a fresh image. At this time, we'll have 4 idle agents.
 
 - If no other jobs arrive for 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**), Azure Pipelines determines that there are more idle agents than are necessary. So, it scales in the pool to two agents.
 
@@ -218,7 +218,7 @@ Due to the sampling size of 5 minutes, it is possible that all agents can be run
 
 ## Customizing Pipeline Agent Configuration
 
-You can customize the configuration of the Azure Pipeline Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./v2-windows.md#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure Pipelines Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./v2-windows.md#unattended-config) documentation. Some examples include:
 
 - `VSTS_AGENT_INPUT_WORK`
 - `VSTS_AGENT_INPUT_PROXYURL`
@@ -301,7 +301,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 
 1. Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to `<myDiskSizeGb>`.
 
-    - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
+    - If starting with an available Azure Image, for example \<myBaseImage\> = (Win2019DataCenter, UbuntuLTS):
     
         ```azurecli  
         az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb <myDiskSize>  --admin-username myUserName --admin-password myPassword
@@ -447,6 +447,7 @@ To delete the saved agent when you are done with your investigation, navigate to
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
 * [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
+* [How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
@@ -464,3 +465,11 @@ Click the 'Enabled' toggle button to disable the agent. The disabled agent will 
 ### Can I configure the scale set agent pool to have zero agents on standby?
 
 Yes, if you set **Number of agents to keep on standby** to zero, for example to conserve cost for a low volume of jobs, Azure Pipelines starts a VM only when it has a job.
+
+### How much do scale set agents cost?
+
+Pricing for scale set agents is similar to other self-hosted agents. You provide the infrastructure on which to run the agent software and the jobs, and you pay for the desired number of jobs that can run concurrently by purchasing parallel jobs.
+
+For scale set agents, the infrastructure to run the agent software and jobs is Azure Virtual Machine Scale Sets, and the pricing is described in [Virtual Machine Scale Sets pricing](https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/).
+
+For information on purchasing parallel jobs, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).

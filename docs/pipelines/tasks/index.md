@@ -5,14 +5,14 @@ description: Catalog of the built-in tasks on Azure Pipelines and Team Foundatio
 ms.topic: reference
 ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
 ms.date: 05/03/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Build and release tasks
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/ms400688(v=vs.120))**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 

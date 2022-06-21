@@ -1,5 +1,5 @@
 ---
-title: Resolve display and reordering issues for items in Azure Boards 
+title: Resolve Azure Boards nest, display, and reorder issues for work items 
 titleSuffix: Azure Boards
 description: Learn how to resolve error messages caused by nesting and reordering issues that occur in Azure Boards.  
 ms.custom: "boards-backlogs, seodec18"  
@@ -9,14 +9,14 @@ ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 10/26/2021
 ---
 
-# Fix issues related to displaying, reordering, and nesting work items in Azure Boards 
+# Fix issues in Azure Boards with displaying, reordering, and nesting work items 
 
 <a id="display-hierarchy">  </a>
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
@@ -108,7 +108,7 @@ From the **View options** selector, you can choose to show or hide **In Progress
 :::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="Screenshot of View options selector, In progress control, version 2019.":::
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
 ::: moniker-end
 
@@ -157,7 +157,7 @@ For TFS 2018 and earlier versions, the Kanban board only shows the last node wit
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Product backlog and Kanban boards
 
@@ -180,7 +180,7 @@ As shown in the following images, the third user story, *Interim save on long fo
 ### Sprint backlogs and taskboards
 
 When bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them correctly on the sprint backlog and taskboard.  
-However, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task will appear on the sprint backlog and taskboard, but not the bug. 
+But, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task appears on the sprint backlog and taskboard, but not the bug. 
 
 **Hierarchy of items assigned to a sprint backlog**  
 

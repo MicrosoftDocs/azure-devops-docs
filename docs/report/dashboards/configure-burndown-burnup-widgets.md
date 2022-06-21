@@ -1,7 +1,7 @@
 ---
 title: Configure Burndown & Burnup widgets
 titleSuffix: Azure DevOps   
-description: Learn how to configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Azure DevOps.
+description: Learn how to configure a Burndown or Burnup widget to create charts that you add to a dashboard to track progress across one or more teams in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.topic: tutorial
@@ -13,7 +13,7 @@ ms.date: 09/27/2021
 
 # Configure a Burndown or Burnup widget 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The Burndown and Burnup widgets provide the flexibility to create charts for:
 - Any type of scope
@@ -139,14 +139,18 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../powerbi/analytics-historical-filtering.md) for more information.
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
-	You can filter by any field available in your project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
+	You can filter by any field available in your project, even a specific tag. Boolean fields aren't available for selection. For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
 	![Burndown Widget - Configuration - Select field criteria](./media/burndown-widget/burndownup-config-select-field-criteria.png)  
 	You may add multiple field criteria, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
-	![Burndown Widget - Configuration - Select multiple field criteria](./media/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
+	![Burndown Widget - Configuration - Select multiple field criteria](media/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
    
 	> [!NOTE]  
 	> All field criteria are AND-ed together. That is, work items must match all the field criteria to be included in the burndown or burnup chart.
+	::: moniker range="azure-devops"
+	You can even filter on a null value for the **Field Criteria**. This behavior is consistent with a query using the same field criteria. Here we select to filter on work items whose **Activity** value isn't defined. 
 
+	:::image type="content" source="media/burndown/field-criteria-null-value.png" alt-text="Screenshot of Field Criteria that equals a null value for Activity.":::
+	::: moniker-end
 
 ## Decide how you want to calculate burndown or burnup 
 
