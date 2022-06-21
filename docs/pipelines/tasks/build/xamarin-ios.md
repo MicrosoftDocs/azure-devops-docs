@@ -7,12 +7,12 @@ ms.assetid: 00000000-0000-0000-0000-000000000000
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Xamarin.iOS task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task in a pipeline to build an iOS app with Xamarin on macOS. For more information, see the [Xamarin guidance](../../ecosystems/xamarin.md) and [Sign your app during CI](../../apps/mobile/app-signing.md).
 
@@ -81,10 +81,9 @@ Xamarin.iOS
       <td><code>provProfileUuid</code><br/>Provisioning profile UUID</td>
       <td>(Optional) Optional UUID of an installed provisioning profile to be used for this build. <br/>Argument aliases: <code>signingProvisioningProfileID</code></td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-   </tr>
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Example
 

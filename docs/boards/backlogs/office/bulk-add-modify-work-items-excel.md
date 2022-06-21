@@ -1,7 +1,7 @@
 ---
-title: Modify work items in bulk with Microsoft Excel
+title: Modify Azure Boards work items in bulk with Microsoft Excel
 titleSuffix: Azure Boards  
-description: Use Excel to bulk add or modify work items-such as backlog items, tasks, bugs, or issues-in Azure Boards. 
+description: Use the Excel plugin in Azure DevOps to bulk add or modify Azure Boards work items, such as tasks, bugs, backlog items, or issues. 
 ms.technology: devops-agile
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: kaelli
@@ -9,13 +9,13 @@ author: KathrynEE
 ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 04/01/2022
 ---
 
 
-# Add or modify work items in bulk with Microsoft Excel 
+# Add or modify Azure Boards work items in bulk with Microsoft Excel 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 When you need to add or modify many work items, using Microsoft Excel can save you time. Excel supports adding work items, updating existing work items, adding links and attachments to multiple work items, and more. You can also use native Excel features to support other actions, such as summing a column, copy-and-paste rows, fill down data into cells, and more. 
 
@@ -62,31 +62,20 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 - Installed Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 	> [!NOTE]   
-	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+	> The only way to get the plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Standalone Office Integration installer. The Azure DevOps Office Integration 2019 plug-in supports connection to Azure Boards and Azure DevOps from Excel, Project, and the PowerPoint-based storyboarding tool.
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
 - To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
 - To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md). 
-- To use the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
+- To use the [Select User](#select-user) feature, install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
-
-
-- Installed Microsoft 2007, Microsoft Excel 2010, or Microsoft Excel 2013 
-- Installed Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md).   
-
-::: moniker-end  
-
-To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
+To learn more about compatibility requirements, see [Compatibility with Azure DevOps Server](/azure/devops/server/compatibility). 
 
 ## Choose list and query type  
 
@@ -107,7 +96,7 @@ Azure Boards supports three query types. The icon next to each query indicates t
 > [!div class="mx-imgBorder"]  
 > ![Query type icon list](media/excel/query-types.png)
 
-Only the **Tree of work items** queries import as a tree list. Direct links queries are imported as a flat list into Excel as modifying multiple types of links isn't a supported feature in Excel. 
+Only the **Tree of work items** queries import as a tree list. Direct links queries are imported as a flat list into Excel as modifying multiple types of links aren't a supported feature in Excel. 
 
 <a id="tree-list"></a>
 
@@ -150,7 +139,7 @@ Here's some more guidance:
 - Use an input list, tree list: To complete top down planning and publish parent-child linked work items  
 - Use a query list, flat list: To create an Excel report based on the query of work items  
 	> [!NOTE]
-	To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md).
+	> To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
 - Use a query list, tree list: To view and modify the hierarchy and parent-child link relationships of many existing work items. 
 
  
@@ -245,7 +234,7 @@ You can't do the following tasks from an Excel worksheet:
 1. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md#excel).
 
 	> [!NOTE]   
-	> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as their is only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, you choose the **Team Project Collection** prior to choosing the project.  
+	> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as there is only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, you choose the **Team Project Collection** prior to choosing the project.  
 
 1.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
 1. Choose **New List** from the Team ribbon. 
@@ -364,9 +353,9 @@ You can add a hierarchy of work items linked using parent-child links or other t
 
 ### Remove a tree level
 
-1. First, publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You'll lose any data you haven't published. 
+1. First, publish changes that you've made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You'll lose any data you haven't published. 
 
-2. Next, remove any content entered under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;. This should be the highest numbered column in the tree. 
+2. Next, delete any content under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;. This column should be the highest numbered column in the tree. 
 
 3. **Refresh** your worksheet. The column containing empty values for the Title is removed. 
 
@@ -486,7 +475,7 @@ If you're working with an input list, complete these steps.
 
     If the work items are defined in another project, then first select the Project. Then, make your selections: 
 
-    -   **Query**. Use this method when you've defined a query that you know contains the set or superset of the work items that you want.   
+    -   **Query**. Use this method when you've defined a query that contains the set or superset of work items you want.   
     -   **IDs**. Use this method when you know the IDs of the work items that you want to link to. 
           In the **IDs** box, type the IDs of the work items that you want to find, separated by commas or spaces. 
     -   **Title contains**. Use this method to find work items that have a common word or phrase in the title field. In the **and type** list, select the type of work item that you want to retrieve.   
@@ -585,7 +574,7 @@ You can't use the Links and Attachments dialog to bulk update work item links. Y
 
 ### Find work items to link to   
 
-From the Add link dialog, you can open a secondary dialog to help you choose one or more work items to link to. If you are going to find and list work items to link to by using a saved query, first [define the query](../../queries/using-queries.md) that you want to use. 
+From the Add link dialog, you can open a secondary dialog to choose one or more work items to link to. If you're going to find and list work items to link to by using a saved query, first [define the query](../../queries/using-queries.md) to use. 
 
 From the Add link dialog, choose the **Browse** button (Visual Studio) to open the following dialog. 
 
@@ -657,7 +646,7 @@ You can create a report using the **New Report** feature based on a flat list of
 > [!div class="mx-imgBorder"]  
 > ![Create a report using the New Report feature.](media/excel/team-ribbon-new-report.png)
 
-To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
+To learn more, see [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports). 
 
 
 ## Resolve publishing errors  
@@ -671,10 +660,10 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
     A data validation error occurs if a field value violates the rules for that field and work item type.  
   
 - [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
-    An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
+    An invalid link occurs if a team member view work items in Excel as a hierarchy or tree list, and then moves a work item or sorts the list such that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
 
 - [Address Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104):  
-    If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy aren't published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. 
+    If you receive error TF208104, the changes you made to the fields are published. But your changes to the link hierarchy aren't published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. 
 
 ## Related articles
 
@@ -684,7 +673,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
-- [View and add work items, az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) 
+- [View and add work items](../../work-items/view-add-work-items.md) 
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  
@@ -694,7 +683,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
-- [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md)
+- [Create Excel reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports)
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  

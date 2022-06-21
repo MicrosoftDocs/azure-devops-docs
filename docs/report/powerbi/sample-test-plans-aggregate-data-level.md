@@ -1,7 +1,7 @@
 ---
 title: Aggregated view for test suites sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate aggregated view for test suites
+description: Learn about sample Power BI queries that generate aggregated view for test suites.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -9,19 +9,19 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 09/21/2021
+ms.date: 10/13/2021
 ---
 
 # Manual test suites aggregated view sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 Some scenarios have a hierarchical organization of test suites as per organization departments or modules as shown below. 
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Test Plan structure for aggregated view](media/odatapowerbi-aggregatedatlevel-plan.png)
 
-As shown in the above image, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. In this example it is explained how to do this for all level 3 test suites in a test plan.
+As shown in the above image, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. This article explains how to do it for all level 3 test suites in a test plan.
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -34,7 +34,7 @@ For a sample test suite hierarchy in a test plan like below, you can configure t
 
 [!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
-For the report to generate useful data, the team must perform the following activities to manage test plans:
+For the report to generate useful data, the team must carry out the following activities to manage test plans:
 
 - Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md). 
 - Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
@@ -133,7 +133,7 @@ The following table describes each part of the query.
    `/groupby((TestSuite/TitleLevel3),`
    :::column-end:::
    :::column span="1":::
-   The test suites to group by. If you are interested in getting report for all distinct test suites lying at level 3 of test suite hierarchy, you can specify this. You can change the level number from 1-14. If you wish to separate test suites with same name, you can use  `/groupby((TestSuite/TitleLevel3, TestSuite/IdLevel3),` to sure that even if you have two test suites with same name, they will be shown as two different entries as they would have two different IDs.
+   The test suites to group by. If you're interested in getting report for all distinct test suites lying at level 3 of test suite hierarchy, you can specify this query part. You can change the level number from 1-14. If you wish to separate test suites with same name, you can use  `/groupby((TestSuite/TitleLevel3, TestSuite/IdLevel3),` to sure that even if you have two test suites with same name, they'll be shown as two different entries as they would have two different IDs.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -157,7 +157,7 @@ The following table describes each part of the query.
    `/compute(Executed mul 100 div TotalCount as ExecPct`
    :::column-end:::
    :::column span="1":::
-   Provide a computed metric ExecPct which is equal to (Executed test points / Total count * 100).
+   Provide a computed metric ExecPct that is equal to (Executed test points / Total count * 100).
    :::column-end:::
 :::row-end:::
 

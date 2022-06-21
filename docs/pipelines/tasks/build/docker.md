@@ -6,12 +6,14 @@ ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 08/26/2020
+ms.date: 02/24/2022
 ms.custom: fasttrack-edit
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # Docker task
+
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build and push Docker images to any container registry using Docker registry service connection.
 
@@ -41,13 +43,14 @@ Following are the key benefits of using Docker task as compared to directly usin
 |------------|-------------|
 | `command`<br/>Command | (Required) Possible values: `buildAndPush`, `build`, `push`, `login`, `logout`<br/>Added in version 2.173.0: `start`, `stop`<br/>Default value: `buildAndPush` |
 | `containerRegistry`<br/>Container registry | (Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) |
-| `repository`<br/>Repository | (Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for `containerRegistry` |
+| `repository`<br/>Repository | (Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for `containerRegistry`. Prefix with `username/` for DockerHub. |
 | `container`<br/>Container | (Required for commands `start` and `stop`) The container resource to start or stop |
 | `tags`<br/>Tags | (Optional) Multiline input where each line contains a tag to be used in `build`, `push` or `buildAndPush` commands<br/>Default value: `$(Build.BuildId)` |
 | `Dockerfile`<br/>Dockerfile | (Optional) Path to the Dockerfile. The task will use the **first** dockerfile it finds to build the image.<br/>Default value: `**/Dockerfile` |
 | `buildContext`<br/>Build context | (Optional) Path to the build context<br/>Default value: `**` |
 | `arguments`<br/>Arguments | (Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value `buildAndPush` for the `command` parameter, then the `arguments` property will be ignored.
-| `addPipelineData` <br/>Add Pipeline Data | (Optional) Adds the above mentioned metadata as labels to the image <br/>Possible values: `true`, `false`<br/>Default value: `true` |
+| `addPipelineData` <br/>Add Pipeline metadata to image. | (Optional) By default pipeline data like source branch name, build id are added which helps with traceability. For example you can inspect an image to find out which pipeline built the image. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
+| `addBaseImageData` <br/>Add base image metadata to image(s) | (Optional) By default base image data like base image name and digest are added which helps with traceability. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
 
 ## Login
 Following YAML snippet showcases container registry login using a Docker registry service connection - 
@@ -79,7 +82,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: contosoRepository
+    repository: contosoRepository # username/contosoRepository for DockerHub
     tags: |
       tag1
       tag2
@@ -148,7 +151,7 @@ steps:
   displayName: Build
   inputs:
     command: build
-    repository: contosoRepository
+    repository: contosoRepository # username/contosoRepository for DockerHub
     tags: tag1
     arguments: --secret id=mysecret,src=mysecret.txt
 ```

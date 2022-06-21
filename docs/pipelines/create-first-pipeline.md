@@ -7,12 +7,12 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
 ms.date: 09/02/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ---
 
 # Create your first pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](includes/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -36,25 +36,27 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ### Create your first Java pipeline
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+[!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+7. Azure Pipelines will analyze your repository and recommend the **Maven** pipeline template.
 
-3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+8. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+9. You're prompted to commit a new `azure-pipelines.yml` file to your repository. After you're happy with the message, select **Save and run** again.
 
-5. When the list of repositories appears, select your desired sample app repository.
+   If you want to watch your pipeline in action, select the build job.
 
-6. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
+   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
 
-7. A new run is started. Wait for the run to finish.
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+10. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 Learn more about [working with Java](ecosystems/java.md) in your pipeline.  
 
 #### [.NET](#tab/net)
 
-### Get the .NET Core sample code
+### Get the .NET sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -66,19 +68,19 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 [!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-> When the **Configure** tab appears, select **ASP.NET Core**.
+7. Azure Pipelines will analyze your repository and recommend the **ASP.NET Core** pipeline template.
 
-1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+8. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+9. You're prompted to commit a new `azure-pipelines.yml` file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
+   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+10. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 Learn more about [working with .NET Core](ecosystems/dotnet-core.md) in your pipeline.
 
@@ -96,19 +98,19 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 [!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-> When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
+7. Azure Pipelines will analyze your repository and recommend the **Python package** pipeline template.
 
-7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+8. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+9. You're prompted to commit a new `azure-pipelines.yml` file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+10. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 Learn more about [working with Python](ecosystems/python.md) in your pipeline.
 
@@ -119,28 +121,26 @@ Learn more about [working with Python](ecosystems/python.md) in your pipeline.
 To get started, fork the following repository into your GitHub account.
 
 ```
-https://github.com/MicrosoftDocs/pipelines-javascript
+https://github.com/Azure-Samples/js-e2e-express-server
 ```
 
 ### Create your first JavaScript pipeline
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+[!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+7. Azure Pipelines will analyze your repository and recommend the **Node.js** pipeline template.
 
-3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+8. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+9. You're prompted to commit a new `azure-pipelines.yml` file to your repository. After you're happy with the message, select **Save and run** again.
 
-5. When the list of repositories appears, select your Node.js sample repository.
+   If you want to watch your pipeline in action, select the build job.
 
-6. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
+   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Node.js](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/node.js.yml) template.
 
-7. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-8. A new run is started. Wait for the run to finish.
-
-When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+10. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
@@ -231,7 +231,7 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
     Please enter a choice [Default choice(1)]:2
     ```
     
-1. Select *1* to commit the the YAML file to the main branch.
+1. Select *1* to commit the YAML file to the main branch.
 
     ```azurecli-interactive
     How do you want to commit the files to the repository?
@@ -248,158 +248,9 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-
-## Manage your pipeline with Azure CLI
-
-You can manage the pipelines in your organization using these `az pipelines` commands:
-
-- [az pipelines run](#run-a-pipeline): Run an existing pipeline
-- [az pipelines update](#update-a-pipeline): Update an existing pipeline
-- [az pipelines show](#show-pipeline): Show the details of an existing pipeline
-
-These commands require either the name or ID of the pipeline you want to manage. You can get the ID of a pipeline using the [az pipelines list](/cli/azure/pipelines#ext-azure-devops-az-pipelines-list) command.
-
-### Run a pipeline
-
-You can queue (run) an existing pipeline with the [az pipelines run](/cli/azure/pipelines#ext-azure-devops-az-pipelines-run) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
-
-```azurecli 
-az pipelines run [--branch]
-                 [--commit-id]
-                 [--folder-path]
-                 [--id]
-                 [--name]
-                 [--open]
-                 [--org]
-                 [--project]
-                 [--variables]
-``` 
-
-#### Parameters
-
-- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/main*.
-- **commit-id**: Commit-id on which the pipeline run is to be queued.
-- **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** is not supplied. ID of the pipeline to queue.
-- **name**: Required if **ID** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to queue.
-- **open**: Open the pipeline results page in your web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **variables**: Space separated "name=value" pairs for the variables you would like to set.
-
-#### Example
-
-The following command runs the pipeline named **myGithubname.pipelines-java** in the branch **pipeline** and shows the result in table format.  
-
-```azurecli 
-az pipelines run --name myGithubname.pipelines-java --branch pipeline --output table
-
-Run ID    Number      Status      Result    Pipeline ID    Pipeline Name                Source Branch    Queued Time               Reason
---------  ----------  ----------  --------  -------------  ---------------------------  ---------------  --------------------------  --------
-123       20200123.2  notStarted            12             myGithubname.pipelines-java  pipeline           2020-01-23 11:55:56.633450  manual
-```
-
-### Update a pipeline
-
-You can update an existing pipeline with the [az pipelines update](/cli/azure/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
-
-```azurecli 
-az pipelines update [--branch]
-                    [--description]
-                    [--id]
-                    [--name]
-                    [--new-folder-path]
-                    [--new-name]
-                    [--org]
-                    [--project]
-                    [--queue-id]
-                    [--yaml-path]
-``` 
-
-#### Parameters
-
-- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/main*.
-- **description**: New description for the pipeline.
-- **id**: Required if **name** is not supplied. ID of the pipeline to update.
-- **name**: Required if **ID** is not supplied. Name of the pipeline to update.
-- **new-folder-path**: New full path of the folder to which the pipeline is moved, for example, *user1/production_pipelines*.
-- **new-name**: New updated name of the pipeline.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
-- **yaml-path**: Path of the pipeline's yaml file in the repo.
-
- Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output` and `verbose`.
-
-> [!TIP]
-> There are also global parameters you can use such as `--output`.
-> The `--output` parameter is available for all commands. The **table** value presents output in a friendly format. For more information, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
-
-#### Example 
-
-The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
-
-```azurecli 
-az pipelines update --id 12 --description "rename pipeline" --new-name updatedname.pipelines-java --output table
-
-ID    Name                        Status    Default Queue
-----  --------------------------  --------  ------------------
-12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
-```
-
-### Show pipeline
-
-You can view the details of an existing pipeline with the [az pipelines show](/cli/azure/pipelines#ext-azure-devops-az-pipelines-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
-
-```azurecli 
-az pipelines show [--folder-path]
-                  [--id]
-                  [--name]
-                  [--open]
-                  [--org]
-                  [--project]
-                  [--query-examples]
-                  [--subscription]
-``` 
-
-#### Parameters
-
-- **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** is not supplied. ID of the pipeline to show details.
-- **name**: Required if **name** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to show details.
-- **open**: Open the pipeline summary page in your web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **query examples**: Recommend a JMESPath string for you.
-- **subscription**: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-
-#### Example 
-
-The following command shows the details of the pipeline with the **ID** of 12 and returns the result in table format.  
-
-```azurecli 
-az pipelines show --id 12 --output table
-
-ID    Name                        Status    Default Queue
-----  --------------------------  --------  ------------------
-12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
-```
-
-::: moniker-end
-
-
 ::: moniker range="<= azure-devops-2020"
 
 [!INCLUDE [temp](includes/concept-rename-note.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-> [!NOTE]
-> 
-> This guidance applies to TFS version 2017.3 and newer.
 
 ::: moniker-end
 
@@ -409,7 +260,7 @@ We'll show you how to use the classic editor in Azure DevOps Server 2019 to crea
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 We'll show you how to use the classic editor in TFS to create a build and a release that prints "Hello world".
 
@@ -484,7 +335,7 @@ Create a PowerShell script that prints `Hello world`.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. Go to the **Code** hub.
 
@@ -501,12 +352,6 @@ Create a PowerShell script that prints `Hello world`.
    ![Select the 'New -> File' option](media/get-started-designer/add-a-file-tfs-2018.png) 
 
    * * * 
-
-   ::: moniker-end
-
-   ::: moniker range="tfs-2017"
-
-   ![On the Files tab, from the repo node, select the 'Add file' option](media/get-started-designer/add-a-file.png)
 
    ::: moniker-end
 
@@ -608,35 +453,6 @@ Create a build pipeline that prints "Hello world."
 
     ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-1. Select **Azure Pipelines**, and then the **Builds** tab.
-
-   ![Go to the tab for builds](media/get-started-designer/navigate-to-builds-tab.png)
-
-2. Create a new pipeline.
-
-   ![Screenshot showing the Builds tab and the New button.](media/get-started-designer/builds-tab-mine-new-button.png)
-
-3. Start with an **empty pipeline**.
-
-4. Select **Pipeline** and specify whatever **Name** you want to use.
-
-5. On the **Options** tab, select **Default** for the **Agent pool**, or select whichever pool you want to use that has Windows build agents.
-
-6. On the **Tasks** tab, make sure that **Get sources** is set with the **Repository** and **Branch** in which you created the script.
-
-7. On the left side select **Add Task**, and then on the right side select the **Utility** category, select the **PowerShell** task, and then select **Add**.
-
-8. On the left side, select your new **PowerShell** script task.
-
-9. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
-
-   ![Browse to find the script](media/get-started-designer/powershell-task-1.png)
-
-10. Select **Save & queue**, and then select **Save**.
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
@@ -665,7 +481,7 @@ A typical build produces an artifact that can then be deployed to various stages
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. On the **Tasks** tab, select **Add Task**.
 
@@ -760,28 +576,6 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-1. Select **Save & queue**, and then select **Save & queue**.
-
-1. On the dialog box, select the **Queue** button.
-
-   This queues a new build on the agent. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
-
-   ![Open the build console to see hello world](media/get-started-designer/build-console.png)
-
-1. Go to the build summary.
-
-   ![See the build  console link to build summary](media/get-started-designer/build-console-link-to-build-summary.png)
-
-1. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
-
-   ![artifacts explorer](media/get-started-designer/artifacts-explorer.png)
-
-> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Build and Release**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
-
-::: moniker-end
-
 ::: moniker range="<= azure-devops-2020"
 
 ## Add some variables and commit a change to your script
@@ -812,12 +606,6 @@ We'll pass some build variables to the script to make our pipeline a bit more in
    ![PowerShell task - 2018 RTM](media/get-started-designer/powershell-task-2.png)
 
    * * *
-
-   ::: moniker-end
-
-   ::: moniker range="tfs-2017"
-
-   ![PowerShell task - TFS 2017](media/get-started-designer/powershell-task-2.png)
 
    ::: moniker-end
 
@@ -858,7 +646,7 @@ Now you can see the results of your changes. Go to **Azure Pipelines** and selec
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Now you can see the results of your changes. Go to the **Build and Release** page and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
@@ -879,7 +667,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
    ::: moniker-end
 
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range="tfs-2018"
 
    > [!div class="mx-imgBorder"]
    > ![build summary powershell script log](media/get-started-designer/build-summary-powershell-script-log.png)
@@ -1010,48 +798,6 @@ Define the process for running the script in two stages.
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-1. Go to **Azure Pipelines**, and then to the **Releases** tab.
-
-2. Select the action to create a **New pipeline**.
-
-3. On the dialog box, select the **Empty** template and select **Next**.
-
-4. Make sure that your **Hello world** build pipeline that you created above is selected. Select **Continuous deployment**, and then select **Create**.
-
-5. Select **Add tasks** in the stage.
-
-6. On the **Task catalog** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button. Select the **Close** button.
-
-7. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
-
-8. Add these **Arguments**:
-
-   ```
-   -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
-   ```
-
-9. Rename the stage **QA**.
-
-   ![Rename release environment for QA](media/get-started-designer/rename-release-environment.png)
-
-10. **Clone** the **QA** stage.
-
-    ![Select Clone in the QA stage.](media/get-started-designer/clone-release-environment.png)
-
-    Leave **Automatically approve** and **Deploy automatically...** selected, and select **Create**.
-
-11. Rename the new stage **Production**.
-
-12. Rename the release pipeline **Hello world**.
-
-    ![Rename the release pipeline to hello world](media/get-started-designer/rename-release-definition.png)
-
-13. Save the release pipeline.
-
-::: moniker-end
-
 ::: moniker range="<= azure-devops-2020"
 
 > A release pipeline is a collection of stages to which the application build artifacts are deployed. It also defines the actual deployment pipeline for each stage, as well as how the artifacts are promoted from one stage to another.
@@ -1105,22 +851,6 @@ Run the script in each stage.
 
    ::: moniker-end
 
-   ::: moniker range="tfs-2017"
-
-7. Create a new release.
-
-   ![create release - TFS 2017](media/get-started-designer/create-release.png)
-
-8. Open the release that you created.
-
-   ![release created - TFS 2017](media/get-started-designer/release-created.png)
-
-9. View the logs to get real-time data about the release.
-
-   ![release logs - TFS 2017](media/get-started-designer/release-logs.png)
-
-   ::: moniker-end
-
 ::: moniker range="<= azure-devops-2020"
 
 > You can track the progress of each release to see if it has been deployed to all the stages. You can track the commits that are part of each release, the associated work items, and the results of any test runs that you've added to the release pipeline.
@@ -1167,12 +897,6 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
    
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-![release script step final log - TFS 2017](media/get-started-designer/release-script-step-final-log.png)
-
-::: moniker-end
-
 ::: moniker range="<= azure-devops-2020"
 
 > In many cases, you probably would want to edit the release pipeline so that the production deployment happens
@@ -1190,7 +914,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 :::moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
+::: moniker range=">= tfs-2018 <= azure-devops-2020"
 
 You've learned the basics of creating and running a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
@@ -1207,8 +931,6 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [Xcode](ecosystems/xcode.md) | Xcode |
 
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 ## FAQ
 
@@ -1227,8 +949,6 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 ### What version control system can I use?
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -1279,7 +999,7 @@ If your pipeline has a pattern that you want to replicate in other pipelines, cl
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot showing how to replicate a pipeline.](media/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
 
@@ -1312,7 +1032,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![Screenshot that shows saving as draft.](media/get-started-designer/save-as-draft.png)
 
@@ -1332,15 +1052,9 @@ You can edit and test your draft as needed.
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-
-![edit draft - TFS 2017](media/get-started-designer/edit-draft.png)
-
-::: moniker-end
-
 ::: moniker range="<= azure-devops-2020"
 
-When you're ready you can publish the draft to merge the changes into your build pipeline.
+When you're ready, you can publish the draft to merge the changes into your build pipeline.
 
 ::: moniker-end
 
@@ -1352,7 +1066,7 @@ When you're ready you can publish the draft to merge the changes into your build
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ![publish draft - TFS 2018](media/get-started-designer/publish-draft.png)
 
@@ -1363,14 +1077,9 @@ When you're ready you can publish the draft to merge the changes into your build
 Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
 
 ::: moniker-end
-
-::: moniker range=">=tfs-2013"
-
 ### How can I delete a pipeline?
 
 To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
-
-::: moniker-end
 
 ::: moniker range="<= azure-devops"
 
@@ -1426,13 +1135,9 @@ When you manually queue a build, you can, for a single run of the build:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2013"
+### Where can I learn more about pipeline settings?
 
-### Where can I learn more about build pipeline settings?
-
-::: moniker-end
-
-::: moniker range=">=tfs-2013 <= tfs-2018"
+::: moniker range="tfs-2018"
 
 To learn more about build pipeline settings, see:
 
@@ -1448,7 +1153,7 @@ To learn more about build pipeline settings, see:
 
 ::: moniker range="azure-devops"
 
-To learn more about build pipeline settings, see:
+To learn more about pipeline settings, see:
 
 * [Getting sources](repos/index.md)
 * [Tasks](tasks/index.md)
@@ -1466,16 +1171,8 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/).
 
 <!-- ENDSECTION -->
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-### Can I run multiple pipelines in Azure DevOps Services using a single command?
-
-Currently, the Azure CLI and Azure APIs doesn't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
 
 ::: moniker-end

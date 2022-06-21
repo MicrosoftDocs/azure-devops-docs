@@ -1,10 +1,19 @@
-- name: Developer resources 
+- name: Developer resources
   href: index.yml
 - name: Azure DevOps CLI
   href: ../cli/toc.yml
+  expanded: true
+- name: Git commands
+  href: ../repos/git/command-prompt.md
+- name: TFVC repository commands
+  href: ../repos/tfvc/use-team-foundation-version-control-commands.md
+- name: Test case management commands
+  href: ../test/test-case-managment-reference.md
+- name: Work tracking administration commands
+  href: ../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md
 - name: Cross-platform CLI for Azure DevOps
   href: ../extend/publish/command-line.md
 - name: Azure DevOps REST APIs
   href: /rest/api/azure/devops/
 - name: Azure DevOps Demo Generator
-  href: ../demo-gen/toc.yml 
+  href: ../demo-gen/toc.yml

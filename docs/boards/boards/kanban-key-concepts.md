@@ -1,7 +1,7 @@
 ---
-title: Kanban terms
+title: Kanban terms and concepts
 titleSuffix: Azure Boards
-description: Key concepts and glossary of terms for Kanban in Azure Boards and Team Foundation Server (TFS) 
+description: Learn about key concepts, the glossary of terms, and available tools used in tracking work using Kanban boards and methods.
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: 
@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 04/01/2022
 ---
 
-# Kanban key concepts
+# Key Kanban concepts and terms in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides a short dictionary of terms and available tools used in tracking work using Kanban boards and Kanban methods. See also: 
 - [Agile glossary](../work-items/agile-glossary.md) 
@@ -29,8 +29,6 @@ An issue that prevents work from progressing. You can highlight work that is blo
 ## Bottleneck
 
 A constraint in the system that limits the flow of work. Identifying bottlenecks makes it easier to reduce their impact and provides a mechanism for controlling work flowing through the process. Learn more: [Split columns, Identify bottlenecks](split-columns.md#id-bottlenecks).
-
-::: moniker range=">= tfs-2015" 
  
 ## Card reordering 
 
@@ -38,11 +36,9 @@ Card reordering is a configurable setting for a team's Kanban board that either 
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
 
-::: moniker-end  
-
 ## Cumulative flow diagram (CFD) 
 
-The in-context CFD report shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Learn more: [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow.md). 
+The in-context CFD report shows the count of items in each Kanban column for the past 30 weeks or less. From this chart, you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Learn more: [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow.md). 
 
 ## Cycle time
 
@@ -59,7 +55,7 @@ You can gain valuable metrics and visualize the cycle time for a team and a conf
 
 ## Definition of Done  
 
-Criteria that a team specifies for each stage of work to share and standardize on what constitutes work being done at that stage. Learn more: [Kanban best practices, working software and the Definition of Done](best-practices-kanban.md#dod). 
+Criteria that a team specifies for each stage of work to share and standardize on what makes up work being done at that stage. Learn more: [Kanban best practices, working software and the Definition of Done](best-practices-kanban.md#dod). 
 
 [!INCLUDE [temp](../../includes/glossary-terms/kanban-board.md)] 
 
@@ -67,7 +63,7 @@ Criteria that a team specifies for each stage of work to share and standardize o
 
 ## Kanban columns 
 
-A Kanban column maps to a stage of work. The default columns map to the workflow states of the work item types which appear on the Kanban board. You configure the columns to map [workflow states](#workflow-states) of your team. Learn more: [Kanban basics, Map the flow of work](kanban-basics.md#map-flow).
+A Kanban column maps to a stage of work. The default columns map to the workflow states of the work item types that appear on the Kanban board. You configure the columns to map [workflow states](#workflow-states) of your team. Learn more: [Kanban basics, Map the flow of work](kanban-basics.md#map-flow).
 
 ## Lead time
 
@@ -79,13 +75,11 @@ You can gain valuable metrics and visualize the lead time for a team and a confi
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2017"  
 
 ## Live updates 
 
-Live updates is a Kanban board view option which when enabled automatically refreshes the Kanban board as other team members move or reorder cards. Learn more: [Enable live updates](live-updates.md).   
-
-::: moniker-end   
+Live updates is a Kanban board view option that when enabled automatically refreshes the Kanban board as other team members move or reorder cards. Learn more: [Enable live updates](live-updates.md).   
+ 
 
 [!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
@@ -98,34 +92,23 @@ Live updates is a Kanban board view option which when enabled automatically refr
 -->
 
 
-::: moniker range=">= tfs-2015"  
 
 ## Swimlanes
 
-A swimlane is a configurable row on a Kanban board, usually used to support different service class levels of work. Learn more: [Expedite work with swimlanes](expedite-work.md). 
+A swimlane is a configurable row on a Kanban board, used to support different service class levels of work. Learn more: [Speed up work with swimlanes](expedite-work.md). 
 
 > [!div class="mx-imgBorder"]
 > ![Kanban board, Drag items into a swimlane](media/expedite/swimlanes-move-item.png)  
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"  
-
 ## Split columns
 
-Split columns lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item. With split columns, your team knows exactly how many items sit idle, waiting for work to begin. Learn more: [Split columns](split-columns.md). 
+The Split columns feature lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item. With split columns, your team knows exactly how many items sit idle, waiting for work to begin. Learn more: [Split columns](split-columns.md). 
 
 ![Kanban board, Split columns](media/kanban-board-split-columns-example-chart.png)
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"  
-
 ## Task checklists
 
-A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board which appear as a checklist of work to be done. As you complete a task, you can update it's status by checking the checkbox for the task.  Learn more: [Add tasks or child items as checklists](add-task-checklists.md). 
-
-::: moniker-end  
+A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board that appear as a checklist of work to be done. As you complete a task, you can update its status by checking the checkbox for the task.  Learn more: [Add tasks or child items as checklists](add-task-checklists.md). 
 
 ## Task switching
 
@@ -169,7 +152,7 @@ You can customize your workflow states, adding states, renaming states, and chan
 
 ## Workflow state categories 
 
-State categories determine how the Kanban board treat each workflow state. The state categories used by the backlogs are <em>Proposed</em>, <em>In Progress</em>, <em>Resolved</em>, and <em>Completed</em>. Learn more: <a href="../work-items/workflow-and-state-categories.md" data-raw-source="[Workflow states and state categories](../work-items/workflow-and-state-categories.md)">Workflow states and state categories</a>. 
+State categories determine how the Kanban board treats each workflow state. The state categories used by the backlogs are *Proposed*, *In Progress*,  *Resolved*, and *Completed*. To learn more, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
 ## Related articles 
 

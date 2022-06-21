@@ -4,11 +4,13 @@ ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 12/15/2020
-monikerRange: '>= tfs-2015'
+ms.date: 11/04/2021
+monikerRange: '<= azure-devops'
 ---
 
 # Configure run or build numbers
+
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -120,7 +122,7 @@ The time zone is UTC.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2018 < azure-devops"
 
 The time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 
@@ -143,6 +145,32 @@ steps:
 - script: echo $(Build.BuildNumber) #display Run Number
 ```
 
+### How can I set the build number dynamically with conditions?
+
+You can use variables as part of your run number. In this example, the variable `why` changes depending on the `Build.Reason` and is used as part of the run number. 
+
+```yaml
+variables:
+  ${{ if eq(variables['Build.Reason'], 'PullRequest') }}:
+    why: pr
+  ${{ elseif eq(variables['Build.Reason'], 'Manual' ) }}:
+    why: manual
+  ${{ elseif eq(variables['Build.Reason'], 'IndividualCI' ) }}:
+    why: indivci 
+  ${{ else }}:
+    why: other
+
+name: $(TeamProject)_$(SourceBranchName)_$(why)_$(Date:yyyyMMdd)$(Rev:.r)
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo '$(Build.BuildNumber)' ## output run number
+```
+
 ::: moniker-end
 
 <!-- ENDSECTION -->
+
+

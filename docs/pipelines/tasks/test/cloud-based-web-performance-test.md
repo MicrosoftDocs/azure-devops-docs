@@ -7,12 +7,12 @@ ms.custom: seodec18
 ms.author: shashban
 author: shashban
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Cloud-based Web Performance Test task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
@@ -20,7 +20,7 @@ Use this task to run the Quick Web Performance Test to easily verify your web ap
 The task generates load against an application URL
 using the Azure Pipelines Cloud-based Load Test Service based in Microsoft Azure.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -65,7 +65,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 

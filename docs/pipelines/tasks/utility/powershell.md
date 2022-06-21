@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.custom: seodec18
 ms.date: 08/25/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # PowerShell task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to run a PowerShell script.
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -38,6 +38,10 @@ The PowerShell task also has two shortcuts in YAML:
   displayName:  #
   failOnStderr:  #
   errorActionPreference:  #
+  warningPreference:  #
+  informationPreference:  #
+  verbosePreference:  #
+  debugPreference:  #
   ignoreLASTEXITCODE:  #
   env:  # mapping of environment variables to add
 ```
@@ -48,11 +52,15 @@ The PowerShell task also has two shortcuts in YAML:
   displayName:  #
   failOnStderr:  #
   errorActionPreference:  #
+  warningPreference:  #
+  informationPreference:  #
+  verbosePreference:  #
+  debugPreference:  #
   ignoreLASTEXITCODE:  #
   env:  # mapping of environment variables to add
 ```
 
-Both of these resolve to the `PowerShell@2` task.
+Both of these shortcuts resolve to the `PowerShell@2` task.
 `powershell` runs Windows PowerShell and will only work on a Windows agent.
 `pwsh` runs PowerShell Core, which must be installed on the agent or container.
 
@@ -64,18 +72,22 @@ Both of these resolve to the `PowerShell@2` task.
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td><code>targetType</code><br/>Type</td><td>(Optional) Sets whether this is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code><br/>Default value: filePath</td></tr>
+<tr><td><code>targetType</code><br/>Type</td><td>(Optional) Sets whether this value is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code><br/>Default value: filePath</td></tr>
 <tr><td><code>filePath</code><br/>Script Path</td><td>(Required) Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code></td></tr>
-<tr><td><code>arguments</code><br/>Arguments</td><td>(Optional) Arguments passed to the Powershell script.<br>
+<tr><td><code>arguments</code><br/>Arguments</td><td>(Optional) Arguments passed to the PowerShell script.<br>
   For example, <code>-Name someName -Path -Value "Some long string value"</code><br/><br/>
   Note: unused when Type is <code>inline</code>.</td></tr>
-<tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>. <br/>The maximum supported inline script length is 32766 characters. If you need more than that, use the script from file. <br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
-<tr><td><code>errorActionPreference</code><br/>ErrorActionPreference</td><td>(Optional) Prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your script<br/>Default value: stop</td></tr>
-<tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>
-<tr><td><code>ignoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td><td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This will cause the last exit code from an external command to be propagated as the exit code of powershell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td></tr>
-<tr><td><code>pwsh</code><br/>Use PowerShell Core</td><td>(Optional) If this is true, then on Windows the task will use pwsh.exe from your PATH instead of powershell.exe<br/>Default value: false</td></tr>
+<tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>. <br/>The maximum supported inline script length is 32766 characters. If you need more than that limit allows, use the script from file. <br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
+<tr><td><code>errorActionPreference</code><br/>ErrorActionPreference</td><td>(Optional) When not "default", prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your script<br/>Default value: stop</td></tr>
+<tr><td><code>warningPreference</code><br/>WarningPreference</td><td>(Optional) When not "default", prepends the line <code>$WarningPreference = 'VALUE'</code> at the top of your script<br/>Default value: default</td></tr>
+<tr><td><code>informationPreference</code><br/>InformationPreference</td><td>(Optional) When not "default", prepends the line <code>$InformationPreference = 'VALUE'</code> at the top of your script<br/>Default value: default</td></tr>
+<tr><td><code>verbosePreference</code><br/>VerbosePreference</td><td>(Optional) When not "default", prepends the line <code>$VerbosePreference = 'VALUE'</code> at the top of your script<br/>Default value: default</td></tr>
+<tr><td><code>debugPreference</code><br/>DebugPreference</td><td>(Optional) When not "default", prepends the line <code>$DebugPreference = 'VALUE'</code> at the top of your script<br/>Default value: default</td></tr>
+<tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this value is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>
+<tr><td><code>ignoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td><td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This change will cause the last exit code from an external command to be propagated as the exit code of PowerShell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td></tr>
+<tr><td><code>pwsh</code><br/>Use PowerShell Core</td><td>(Optional) If this value is true, then on Windows the task will use pwsh.exe from your PATH instead of powershell.exe<br/>Default value: false</td></tr>
 <tr><td><code>workingDirectory</code><br/>Working directory</td><td>(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code><a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a></code></td></tr>
-<tr><td>Environment variables</td><td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+<tr><td>Environment variables</td><td>A list of other items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 <pre>
 <code class="lang-yaml">
 - powershell: echo $env:MYSECRET
@@ -193,5 +205,21 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
+
+### I'm using PowerShell task and passing secret in script, but secret is not masked in pipeline logs
+
+Be aware that PowerShell cuts off error message, so if you use some secrets in the script - they could be trimmed as well, and won't be masked in this case.
+For example, for the inline script below: 
+```powershell
+./script.ps1 --arg1 value1 --arg2 <some_secret_which_will_be_masked_here>
+```
+There could be an exception like:
+At <path_to_temp_script_file>:4 char:3
+```powershell
++   ./script.ps1 --arg1 value1 --arg2 <unmasked_part_of_original_secret> ...
++   ~~~~~~~~~~
+    + <Additional exception details>
+```
+To avoid this issue you can handle such exceptions on a script level, or avoid cases when secrets could appear in the source code line in the error message.
 
 <!-- ENDSECTION -->

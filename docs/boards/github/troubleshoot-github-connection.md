@@ -1,19 +1,18 @@
 ---
-title: Troubleshoot GitHub repo connection to a project
+title: Troubleshoot a GitHub repo connection to an Azure Boards project
 titleSuffix: Azure Boards
-description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project  
+description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project.  
 ms.technology: devops-agile
 ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/06/2021
+ms.date: 10/20/2021
 ---
 
-# Troubleshoot Azure Boards-GitHub integration 
+# Troubleshoot an Azure Boards-GitHub integration 
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)]
-
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 The Azure Boards-GitHub integration relies on various authentication protocols to support the connection. Changes to a user's permission scope or authentication credentials can cause revocation of the GitHub repositories connected to Azure Boards. 
  
@@ -92,15 +91,15 @@ When the Azure Boards connection to GitHub no longer has access, it shows an ale
 When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X that has a tooltip such as, *Unable to connect to GitHub*.
 ::: moniker-end
 
-To resolve the problem, consider the following:  
+To resolve the problem, consider the following items:  
 
 - **If the connection is using OAuth**:
-  - The Azure Boards application had it's access denied for one of the repositories.
-  - GitHub might be unavailable/unreachable. This could be due to an outage in either service or an infrastructure/network issue on-prem. You can check service status from the following links:
+  - The Azure Boards application had its access denied for one of the repositories.
+  - GitHub might be unavailable/unreachable. This unavailability could be because of an outage in either service or an infrastructure/network issue on-prem. You can check service status from the following links:
       - [GitHub](https://status.github.com)  
       - [Azure DevOps](https://status.dev.azure.com/)
 
-	To resolve the first issue, delete and recreate the connection to the GitHub repository. This will cause GitHub to prompt to reauthorize Azure Boards.   
+	To resolve the first issue, delete and recreate the connection to the GitHub repository. This recreated connection will cause GitHub to prompt to reauthorize Azure Boards.   
 
 - **If the connection is using a PAT:**
   - The PAT may have been revoked or the required permission scopes changed and are insufficient.
@@ -112,9 +111,9 @@ To resolve the problem, consider the following:
 
 ## Resolve broken GitHub Enterprise Server connection  
 
-If you have migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection will not work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
+If you've migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection won't work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
 
-To resolve the problem, consider the following:
+To resolve the problem, consider the following solutions:
 
 - **Remove and re-create the connection**:
   Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](connect-to-github.md#github-ent-oauth-services) documentation.
@@ -129,14 +128,14 @@ To resolve the problem, consider the following:
 
 ## Connecting to multiple Azure DevOps organizations 
 
-If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you may get unexpected results when using **AB#** mentions to link to work items. This problem occurs because work item IDs are not unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. So, when a work item is mentioned in a commit message or pull request, both organizations will attempt to create a link to a work item with a matching ID (if one exists). 
+If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you may get unexpected results when using **AB#** mentions to link to work items. This problem occurs because work item IDs aren't unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. So, when a work item is mentioned in a commit message or pull request, both organizations attempt to create a link to a work item with a matching ID (if one exists). 
 
 In general, a user intends an **AB#** mention to link to a single work item in one of the projects. However, if a work item of the same ID exists in both accounts, then links are created for both work items, likely causing confusion.
 
-Currently, there is no way to work around this issue, so we recommend that you connect a single GitHub repository only to a single Azure DevOps organization. 
+Currently, there's no way to work around this issue, so we recommend that you connect a single GitHub repository only to a single Azure DevOps organization. 
 
 > [!NOTE]  
-> When making the connection using the Azure Boards app for GitHub, the app prevents you from connecting to two different organizations. If a GitHub repository is incorrectly connected to the wrong Azure DevOps organization, you'll need to contact the owner of that organization to remove the connection before you'll be able to add the repository to the correct Azure DevOps organization.  
+> When making the connection by using the Azure Boards app for GitHub, the app prevents you from connecting to two different organizations. If a GitHub repository is incorrectly connected to the wrong Azure DevOps organization, you'll need to contact the owner of that organization to remove the connection before you'll be able to add the repository to the correct Azure DevOps organization.  
 
 ::: moniker-end
 

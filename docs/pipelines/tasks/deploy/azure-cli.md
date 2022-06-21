@@ -6,13 +6,13 @@ ms.topic: reference
 ms.custom: seodec18, devx-track-azurecli
 ms.author: ushan
 author: N-Usha
-ms.date: 10/12/2021
+ms.date: 11/08/2021
 monikerRange: '> tfs-2018'
 ---
 
 # Azure CLI task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 Use this task to run a shell or batch script containing Azure CLI commands against an Azure subscription. This task is used to run Azure CLI commands on cross-platform agents running on Linux, macOS, or Windows operating systems.
 
@@ -81,7 +81,7 @@ Use this task to run a shell or batch script containing Azure CLI commands again
 </tr>
 <tr>
     <td><code>addSpnToEnvironment</code><br/>Access service principal details in script</td>
-    <td>(Optional) Adds service principal id and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: <b>$env:servicePrincipalId, $env:servicePrincipalKey and $env:tenantId</b> in your script. This is honored only when the Azure endpoint has Service Principal authentication scheme<br/>Default value: false</td>
+    <td>(Optional) Adds service principal ID and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: <b>$env:servicePrincipalId, $env:servicePrincipalKey and $env:tenantId</b> in your script. This is honored only when the Azure endpoint has Service Principal authentication scheme<br/>Default value: false</td>
 </tr>
 <tr>
     <td><code>useGlobalConfig</code><br/>Use global Azure CLI configuration</td>
@@ -121,20 +121,29 @@ Following is an example of a YAML snippet that lists the version of Azure CLI an
 
 The following example illustrates how to pass arguments to your script.
 
-```yaml
-- task: AzureCLI@2
-  displayName: Azure CLI
-  inputs:
-    azureSubscription: <Name of the Azure Resource Manager service connection>
-    scriptType: ps
-    scriptLocation: inlineScript
-    arguments:
-      -Arg1 val1 `
-      -Arg2 val2 `
-      -Arg3 val3
-    inlineScript: |
-      az login --allow-no-subscription
-```
+- Passing arguments to inline scripts: 
+
+    ```yaml
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: <Azure_Resource_Manager_Service_Connection>
+        scriptType: 'ps'
+        scriptLocation: 'inlineScript'
+        arguments: '$(AZURE_STORAGE_ACCOUNT) $(AZURE_STORAGE_KEY)'
+        inlineScript: './scripts/publish.ps1 $1 $2'
+    ```
+
+- Passing arguments with script path:
+
+    ```yaml
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: <Azure_Resource_Manager_Service_Connection>
+        scriptType: 'ps'
+        scriptLocation: 'scriptPath'
+        arguments: '$(AZURE_STORAGE_ACCOUNT) $(AZURE_STORAGE_KEY)'
+        scriptPath: './scripts/publish.ps1'
+    ```
 
 ::: moniker-end
 

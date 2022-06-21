@@ -1,21 +1,21 @@
-﻿---
-title: Azure Repos Plugin for IntelliJ, IDEA, Android Studio
+---
+title: Azure DevOps Plugin for IntelliJ, IDEA, Android Studio
 titleSuffix: Azure Repos
-description: Intro to the IntelliJ plugin available for Azure Repos.
+description: Intro to the IntelliJ plugin available for Azure DevOps.
 ms.assetid:
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 11/13/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
-# Azure Repos Plugin for IntelliJ IDEA and Android Studio
+# Azure DevOps Plugin for IntelliJ IDEA and Android Studio
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
-The Azure Repos Plugin for IntelliJ allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.
+The [Azure DevOps Plugin for IntelliJ](https://plugins.jetbrains.com/plugin/7981-azure-devops) allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.
 You can also use this plugin to import projects into Azure Repos or create pull requests in your Azure DevOps Services/TFS Git repository.
 
 In this guide, we show you how to create a Git repo using the Azure DevOps Services web portal, add some sample code, and then clone the repo and create pull requests all from within IntelliJ IDEA.
@@ -25,7 +25,7 @@ To complete the steps in this guide you need:
 
 * An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
-* The Azure Repos plugin for IntelliJ. See [IntelliJ Plugin download page](/previous-versions/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
+* The Azure DevOps plugin for IntelliJ. See [IntelliJ Plugin download page](https://plugins.jetbrains.com/plugin/7981-azure-devops) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
   * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager](set-up-credential-managers.md).
   * To install Git for macOS and Linux, see [git-scm.com](https://git-scm.com/downloads).
@@ -157,10 +157,11 @@ You can give the pull request a title and a description.
 
 After you click **Create Pull Request**, you should receive a notification that the pull request was created.
 It also contains a link to the pull request in case you want to add specific reviewers or comments.
-Once the code reviews are done, you can merge the pull request into master.
+Once the code reviews are done, you can merge the pull request into your main branch.
 
 ## Check build status
-After you have merged your changes into master, you can check if your CI build has succeeded from within IntelliJ. In the bottom right corner,
+
+After you have merged your changes into your main branch, you can check if your CI build has succeeded from within IntelliJ. In the bottom right corner,
 there is an icon that displays your build status to you. If you see a green checkmark, that means your build has succeeded. If you see a red X,
 then your build failed. If you see a gray question mark, your build was not found or your credentials may have expired.
 

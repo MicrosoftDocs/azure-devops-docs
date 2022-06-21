@@ -6,15 +6,15 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: shashban
 author: shashban
-ms.date: 09/30/2020
-monikerRange: '>= tfs-2015'
+ms.date: 11/05/2021
+monikerRange: '<= azure-devops'
 ---
 
 # Publish Test Results task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -278,14 +278,7 @@ The final image will be published to Docker or Azure Container Registry
 
 #### Get the code
 
-1. Import into Azure DevOps or fork into GitHub the following repository.
-   This sample code includes a `Dockerfile` file at the root of the repository along with `.vsts-ci.docker.yml` file.
-
-   ```URL
-   https://github.com/MicrosoftDocs/pipelines-dotnet-core
-   ```
-
-1. Create a `Dockerfile.build` file at the root of the directory with the following:
+1. Create a `Dockerfile.build` file at the root of your project directory with the following:
 
    ```Dockerfile
    # Build and run tests inside the docker container
@@ -311,7 +304,7 @@ The final image will be published to Docker or Azure Container Registry
    # This Dockerfile creates the final image to be published to Docker or
    # Azure Container Registry
    # Create a container with the compiled asp.net core app
-   FROM dotnet/core/aspnet:2.1
+   FROM mcr.microsoft.com/dotnet/aspnet:2.1
    # Create app directory
    WORKDIR /app
    # Copy only the deployment artifacts

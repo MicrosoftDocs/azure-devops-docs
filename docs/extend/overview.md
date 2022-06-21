@@ -4,7 +4,7 @@ title: Developing extensions for Azure DevOps
 description: Overview of creating extensions for Azure DevOps.
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2019
@@ -12,7 +12,7 @@ ms.date: 10/24/2019
 
 # What are extensions?
 
-[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps.
 They're written with standard technologies - HTML, JavaScript, CSS - and are developed using your preferred development tools.
@@ -29,7 +29,7 @@ They can be kept privately for you and your team or shared with the millions of 
 > ![Screenshot of components of an extension.](./media/extension-components.png)
 
 - A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
-- Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the Marketplace. 
+- Discovery assets - the Markdown and images that make up your extension's overview and aesthetics in the Marketplace. 
 - Static files that contain the logic of your extension, including HTML, JS, and CSS files. Static files are only applicable to contribution-based extensions.
 
 These files and assets get bundled up to make a Team Extensions Service Package (.vsix file) that's published to the Marketplace. From the Marketplace,
@@ -37,7 +37,7 @@ extensions can be installed directly by users.
 
 ## What can you do with extensions?
 
-There are dozens of places where you can add to the user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
+There are dozens of places where you can add to the user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [Extensibility points](reference/targets/overview.md).
 
 - [Provide new Azure Pipelines tasks](./develop/add-build-task.md) that teams can use in their builds.
 - Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Azure DevOps. 
@@ -53,7 +53,7 @@ You can develop an extension for your continuous delivery pipeline as described 
 ## Extension building checklist
 
 1. Familiarize yourself with this article and the extension types already available within the Marketplace
-    - [Extensions for Azure DevOps](https://marketplace.visualstudio.com/)
+    - [Extensions for Azure DevOps](https://marketplace.visualstudio.com/azuredevops)
 2. Learn to build your first extension or check out our full set samples
     - [Build your first extension](./get-started/node.md)
     - [Samples](./develop/samples-overview.md)

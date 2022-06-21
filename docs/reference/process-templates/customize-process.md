@@ -14,7 +14,7 @@ ms.date: 09/08/2017
 
 # Customize a process template
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
  
 Process templates define the objects and processes available to you when you create a project. By customizing a process template, you customize one of more objects. Common types of customizations you can make include:  
   
@@ -75,7 +75,7 @@ The primary use of process templates is to create a project. For the Hosted XML 
   
      If you want to [add or modify types of work items](../add-modify-wit.md), you can achieve this without changing the whole process template. You can make and test changes by using an existing project. For the On-premises XML process model, you can use the **witadmin exportwitd** and **importwitd** command-line tools to download and upload the XML definition files for work item types.  
   
--   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
+-   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true).  
   
      Upgrading TFS to a later version uploads the latest versions of the default TFS process templates. To use the available updated templates and to access customizations that you made previously, you may need to add customizations provided with the new templates.  
   
@@ -121,17 +121,15 @@ To customize a process template, you customize one or more files associated with
 
 
 #### Version control, build, lab and test management 
-<ul>
-<li><a href="control-access-to-functional-areas.md" data-raw-source="[Group permissions](control-access-to-functional-areas.md)">Group permissions</a></li>
-<li><a href="define-initial-configuration-version-control.md" data-raw-source="[Check-in policies](define-initial-configuration-version-control.md)">Check-in policies</a></li>
-<li><a href="define-initial-configuration-test-manager.md" data-raw-source="[Test environments, configurations, resolution states, and settings](define-initial-configuration-test-manager.md)">Test environments, configurations, resolution states, and settings</a></li>
-</ul>
+
+- [Group permissions](control-access-to-functional-areas.md) 
+- [Check-in policies](/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control?view=tfs-2017&preserve-view=true)
+[Test environments, configurations, resolution states, and settings](define-initial-configuration-test-manager.md)
 
 #### Reports and project portal 
-<ul>
-<li><a href="add-reports-to-the-process-template.md" data-raw-source="[Upload reports](add-reports-to-the-process-template.md)">Upload reports</a></li>
-<li><a href="define-project-portal-plug-in.md" data-raw-source="[Upload documents to the project portal](define-project-portal-plug-in.md)">Upload documents to the project portal</a></li> 
-</ul>
+
+- [Upload reports](add-reports-to-the-process-template.md) 
+- [Upload documents to the project portal](define-project-portal-plug-in.md) 
 
 
 Because the process template touches on many components of a team's process, you may want to plan, coordinate, and track the changes that you will make. In particular, you may want to check with project leads, test leads, development leads, and release managers before you change the default configuration of any one area.  
@@ -185,7 +183,7 @@ When you add objects to a process template, you will want to make sure that you 
 ## Related articles 
 
 - [Process template and plug-in files](overview-process-template-files.md)
-- [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
+- [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true)  
 - [Process template plug-ins: Index to XML elements](process-template-plug-ins-xml-elements-index.md)
 - [XML element reference](../xml/xml-element-reference.md)  
 - [Forum: Team Foundation Server &mdash;Process Templates](https://go.microsoft.com/fwlink/?LinkId=216461)    
@@ -195,7 +193,7 @@ Sometimes third parties make available process templates that they've created. Y
  
 ### Required permissions 
 
-To download or upload process templates, you must either be a member of the **Project Collection Administrators** group, or your **Manage process template** permission must be set to **Allow**. See [Add accounts to administer project collections](../../organizations/security/set-project-collection-level-permissions.md).  
+To download or upload process templates, you must either be a member of the **Project Collection Administrators** group, or your **Manage process template** permission must be set to **Allow**. See [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 ### Tools that support customizing a process template 
 

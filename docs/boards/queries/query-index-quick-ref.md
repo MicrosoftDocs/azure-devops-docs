@@ -1,7 +1,7 @@
 ---
-title: Index to query examples, tasks, operators, and macros
+title: Use an index to query examples, tasks, operators, and macros
 titleSuffix: Azure Boards
-description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps
+description: Learn how to use an index to query operators, macros, and sample queries that are used to list work items for Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.topic: overview 
@@ -11,9 +11,9 @@ monikerRange: '<= azure-devops'
 ms.date: 01/25/2021
 ---
 
-# Query quick reference 
+# Use an index to query quick reference data in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -111,7 +111,7 @@ You can list work items based on the following criteria...
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
       - [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n)  
       ::: moniker-end
-      ::: moniker range="<= tfs-2018"
+      ::: moniker range="tfs-2018"
       - [Assigned to a member of a team](query-by-workflow-changes.md#group)
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
       ::: moniker-end
@@ -384,7 +384,7 @@ The following table indicates the operators and macros available for the differe
 
 <a id="samples" />
 
-## Query samples for select fields 
+## Sample queries for select fields 
 
 The following table lists common query fields and their data type for which sample queries are provided. To determine the data type of a field, see [Work item fields and attributes, List field attributes](../work-items/work-item-fields.md).  
 

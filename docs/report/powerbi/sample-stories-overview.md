@@ -1,7 +1,7 @@
 ---
 title: Requirements tracking, Stories overview report 
 titleSuffix: Azure DevOps
-description: Power BI query to generate a report that tracks work progress and status of tests and bugs
+description: Learn about Power BI queries to generate a report that tracks work progress and status of tests and bugs.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -14,7 +14,7 @@ ms.date: 09/17/2021
 
 # Requirements tracking sample report
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
 

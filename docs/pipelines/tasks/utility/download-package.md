@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Download Package task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to download a package from a package management feed in Azure Artifacts or TFS.
 Requires the Package Management extension.

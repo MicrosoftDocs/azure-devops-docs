@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Azure Key Vault task
 
-**Azure Pipelines**
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 ### Overview
 
@@ -72,10 +72,10 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-|`ConnectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
-|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
-|`RunAsPreJob`<br/>Make secrets available to whole job| (Required) Run the task before job execution begins. Exposes secrets to all tasks in the job, not just tasks that follow this one. <br/>Default value: `false`|
+|`connectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`keyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`secretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
+|`runAsPreJob`<br/>Make secrets available to whole job| (Required) Run the task before job execution begins. Exposes secrets to all tasks in the job, not just tasks that follow this one. <br/>Default value: `false`|
 
 :::moniker-end
 
@@ -83,9 +83,9 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-|`ConnectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
-|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
+|`connectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`keyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`secretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
 
 :::moniker-end
 

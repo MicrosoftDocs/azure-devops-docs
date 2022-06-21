@@ -8,13 +8,13 @@ ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/22/2019
 ---
 
 # Add and manage work item types      
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
 You can add custom work item types (WITs) or modify existing WITs to add fields, remove or hide fields, add custom rules, and more. For example, you may want to capture customer issues in a custom Ticket WIT.   
 

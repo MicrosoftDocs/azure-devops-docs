@@ -1,7 +1,7 @@
 ---
-title: Query by title, ID, or rich-text fields 
+title: Query by title, ID, or rich-text fields in Azure Boards and Azure DevOps 
 titleSuffix: Azure Boards
-description: Example work queries based on titles, IDs, rich-text fields in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn about work queries based on titles, IDs, and rich-text fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 04/13/2021
+ms.date: 10/26/2021
 ---
 
-# Query by titles, IDs, and rich-text fields
+# Query by titles, IDs, and rich-text fields in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -94,9 +94,9 @@ Query clauses that specify a text or rich-text field can use the operators and m
 
 ## Use `Contains words` for string matches
  
-When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. Text string is limited to 100 characters. 
+When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator runs a full-text search on the specified field, which is faster in most cases. Text string is limited to 100 characters. 
 
-While the `Contains` operator performs a table scan, which is not only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
+While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
 
 <a id="keyword"/>
@@ -124,7 +124,7 @@ For example, specify **Contains Words** and **inform&#42;** to filter on a text 
 
 Use **Contains Words** and **Does Not Contain Words** operators to list items that exactly match the words or phrase that you enter, and exclude other words or phrases. You can use these operators in combination and with the wildcard character (*).
 
-In the following example, these operators filter work items for those that contain the work *Phase* but not the word *Phasor*. 
+In the following example, these operators filter work items for those items that contain the work *Phase* but not the word *Phasor*. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Query Editor to include and exclude exact words.](media/text-queries/contains-words-exact-query.png)
@@ -138,10 +138,10 @@ You can find work items that have an undefined field value by using the equals o
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
+<a id="empty"/>
+<a id="empty-or-not-empty-html-field-queries"/>
 
 ::: moniker range=">= azure-devops-2019"
-
-<a id="empty"/>
 
 ## Empty or not empty HTML field queries
 
@@ -162,7 +162,7 @@ For example, the following query filters will list all work items where some ent
 
 <a id="category"/>
 
-## Category based queries
+## Category-based queries
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
@@ -181,29 +181,22 @@ The default assignments of work item types to each category are listed below for
 | Scrum | Product Backlog Item, Bug | Task |
 | CMMI | Requirement | Task |
 
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
-
-
-::: moniker range=">= tfs-2017"
-
+Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
 <a id="following" />
 
 ## Query for work items that you're following
 
-You can use the **@Follows** macro to filter a list based on work items you're following in addition to other query filters. 
+You can use the **@Follows** macro to filter a list based on work items you're following along with other query filters. 
 
 For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **@Follows** macro.  
 
 
 :::image type="content" source="../work-items/media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
-::: moniker-end 
-
-
-::: moniker range=">= tfs-2018"
 
 <a id="recent-macros" />
+
 
 ## Query for recent work item activity
 
@@ -219,8 +212,8 @@ For example, the following query shows how to query for work items that you've r
 
 :::image type="content" source="media/titles-ids/my-recent-activity-macro-query.png" alt-text="Query Editor, with ID In @MyRecentActivity query clause":::
 
-::: moniker-end 
 
+<a id="fields" />
 
 ## Common fields for most work item types 
 
@@ -240,10 +233,10 @@ The following table describes common fields used to filter queries. The **ID** f
    **Work item type**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Acceptance Criteria  <sup>1</sup>
-
    :::column-end:::
    :::column span="2":::
    A description of the criteria to be met before the bug or product backlog item can be closed.
@@ -251,7 +244,6 @@ The following table describes common fields used to filter queries. The **ID** f
    Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
  
    Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
-  
    :::column-end:::     
    :::column span="1":::
    Bug, Epic, Feature, Product backlog item (Scrum)
@@ -260,17 +252,13 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Description <sup>1, 2</sup>
-  
    :::column-end:::
      :::column span="2":::
    
    Use this field to provide in-depth information about a work item.
 
    Reference name=System.Description, Data type=HTML
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -278,7 +266,6 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    ID
    :::column-end:::
    :::column span="2":::
@@ -286,7 +273,6 @@ The following table describes common fields used to filter queries. The **ID** f
    The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  
 
    Reference name=System.Id, Data type=Integer
-
    :::column-end:::
    :::column span="1":::
    All
@@ -294,17 +280,11 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Repro Steps (or Steps to reproduce) <sup>1</sup> 
-  
    :::column-end:::
      :::column span="2":::
-   
-   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior. 
-    
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.   
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
-
-  
    :::column-end:::
    :::column span="1":::
    Bug
@@ -313,32 +293,24 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row:::
    :::column span="1":::
    Resolution
-
    :::column-end:::
    :::column span="2":::
    Describes how an impediment was resolved.
 
    Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML
-  
    :::column-end:::     
    :::column span="1":::
    Impediment (Scrum)
-
    :::column-end:::
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    System Info<sup>1</sup> 
-  
    :::column-end:::
      :::column span="2":::
-   
    Information about the software and system configuration that is relevant to the bug, code review, or feedback. 
 
    Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
-
-  
    :::column-end:::
      :::column span="1":::
    Bug, Code Review Request, Feedback Request    
@@ -346,18 +318,15 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Team Project
    :::column-end:::
    :::column span="2":::
-   
    The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. 
 
    > [!NOTE]
    > &#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). 
 
    Reference name=System.TeamProject, Data type=String
-
    :::column-end:::
    :::column span="1":::
    All
@@ -365,17 +334,12 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Title
-  
    :::column-end:::
      :::column span="2":::
-   
    A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.
 
    Reference name=System.Title, Data type=String
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -383,19 +347,14 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Work Item Type
-  
    :::column-end:::
      :::column span="2":::
-   
    The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
 
    To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.  
 
    Reference name=System.WorkItemType, Data type=String
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -405,6 +364,7 @@ The following table describes common fields used to filter queries. The **ID** f
 > [!NOTE]  
 > 1. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
 > 2. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
+
 
 ## Related articles
 

@@ -4,20 +4,20 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/19/2020
+ms.date: 02/16/2022
 ---
 
 ::: moniker range=">= azure-devops-2019"
 
-1. With your feed selected, select the gear icon :::image type="icon" source="../../media/icons/gear-icon.png"::: on the right side of the page.
+1. Select the gear icon to navigate to your feed's settings.
 
-    :::image type="content" source="../media/editfeed-azure-devops-newnav.png" alt-text="Screenshot of the Edit feed button.":::
+    :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to navigate to the feed's settings.":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
-1. With your feed selected, select the gear icon :::image type="icon" source="../../media/icons/gear-icon.png"::: on the right side of the page.
+1. Select the gear icon to navigate to your feed's settings.
 
     :::image type="content" source="../media/editfeed.png" alt-text="Screenshot of the Edit feed button TFS.":::
 

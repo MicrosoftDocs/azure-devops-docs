@@ -1,22 +1,22 @@
 ---
 title: Add or remove GitHub repositories 
 titleSuffix: Azure Boards
-description: Add or remove GitHub repositories or remove GitHub connection 
+description: Learn how to or remove GitHub repositories or remove GitHub connection in Azure Boards. 
 ms.technology: devops-agile
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/06/2021
+ms.date: 10/20/2021
 ---
 
 # Add or remove GitHub repositories 
 
-[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
 Once you make a connection to a GitHub repository from Azure Boards, you can add or remove repositories under the same GitHub account or organization. Or, you can completely remove the connection to all repositories. 
 
-To manage which GitHub repositories can participate in Azure Boards integration, see [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md). 
+You can manage which GitHub repositories can participate in Azure Boards integration. For more information, see [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md). 
  
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
@@ -25,8 +25,8 @@ To manage which GitHub repositories can participate in Azure Boards integration,
 ## Prerequisites 
  
 * To add repositories to a connection, you must be the person who created the connection.  
-* To remove repositories or remove a connection, you must be the person who created the connection or belong to the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md).  
-* To add repositories, you must be an administrator or owner of the GitHub repository you'll connect to. You can connect to multiple GitHub repositories so long as you are an administrator for those repositories.  
+* To remove repositories or remove a connection, you must be the person who created the connection or belong to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md).  
+* To add repositories, you must be an administrator or owner of the GitHub repository you'll connect to. You can connect to multiple GitHub repositories so long as you're an administrator for those repositories.  
 
 ## Open Project Settings>GitHub Connections
 

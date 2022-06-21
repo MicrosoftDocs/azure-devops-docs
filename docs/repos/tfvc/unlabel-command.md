@@ -1,24 +1,28 @@
 ---
-title: Unlabel Command
+title: Unlabel TFVC command
 titleSuffix: Azure Repos
-description: Unlabel Command
+description: Learn how to use the unlabel command to remove an item from an existing label.
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
-# Unlabel Command
+# Unlabel command (Team Foundation Version Control)
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Removes an item from an existing label in the server for Team Foundation version control.
 
-**Required Permissions**
+The **unlabel** command removes an item from an existing label in the server for Team Foundation version control.
 
-To use the **unlabel** command, you must either own the label, or have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+## Prerequisites
+
+To use the **unlabel** command, you must either own the label, or have the **Administer labels** permission set to **Allow**.  For more information, see [Default TFVC permissions](../../organizations/security/default-tfvc-permissions.md).
+
+## Syntax
 
 ```
 tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username, [password]] labelname itemspec
@@ -58,7 +62,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
    *itemspec*
    :::column-end:::
    :::column span="3":::
-   Identifies the file or folder from which to remove the specified label. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   Identifies the file or folder from which to remove the specified label. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
    > [!Note]  
    > You can specify more than one *itemspec* argument.
@@ -79,7 +83,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
 |---|---|
 | **/recursive** | Unlabels all items in the particular directory and all the subdirectories that match the *itemspec*. |
 | **/collection** | Specifies the project collection. |
-| **/login** | Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server. |
+| **/login** | Specifies the user name and password to authenticate the user with Azure DevOps. |
 
 ## Remarks
 
@@ -87,7 +91,7 @@ The **unlabel** command of the **tf** command-line utility removes an item from 
 
 If you remove all items from a label in the Team Foundation version control server, that label is deleted. You can also delete a label using the command `tf label /delete`. To learn more about the existing labels in the system, see [Labels Command](labels-command.md).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
 
 ## Examples
 
@@ -103,20 +107,9 @@ The following example removes the "Beta1" label from all files and folders in th
 c:\projects>tf unlabel Beta1 $/ /collection:http://myserver:8080/tfs/DefaultCollection /recursive
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)
-
-[Labels Command](labels-command.md)
-
-#### Concepts
-
-[Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)
+- [Label command](label-command-team-foundation-version-control.md)
+- [Labels command](labels-command.md)
+- [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md)

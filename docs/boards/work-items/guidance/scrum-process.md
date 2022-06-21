@@ -1,35 +1,35 @@
 ---
-title: Scrum process template artifacts
+title: Manage Scrum process template artifacts
 titleSuffix: Azure Boards
 ms.custom: work-items
-description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to use Scrum process objects to plan and track work, monitor progress, and trends when connecting to Azure Boards and Azure DevOps.
 ms.technology: devops-agile
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 04/01/2022
 ---
 
 
-# Scrum process   
+# Manage your Scrum process template artifacts  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
+The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They're based on [Scrum principles and values](https://www.scrum.org/). 
 
 ![Scrum process work item types, conceptual image](media/scrum-process-work-tracking-wits.png)  
 
-In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
+Along with the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
 [!INCLUDE [temp](../../includes/process-customize.md)] 
 
 <a id="start-using-scrum" />
 
-## Plan and track work with Scrum  
+## Plan and track work with Scrum processes
 
-You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. You track bugs, tasks, and blocking issues using the bug, task, and impediment WITs. To support portfolio management, teams create features and epics to view a roll up of their product backlog items within or across teams. For details about using Scrum WITs, see [Scrum process work item types and workflow](scrum-process-workflow.md).  
+You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to do. You track bugs, tasks, and blocking issues using the bug, task, and impediment WITs. To support portfolio management, teams create features and epics to view a roll up of their product backlog items within or across teams. For details about using Scrum WITs, see [Scrum process work item types and workflow](scrum-process-workflow.md).  
 
 The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
 
@@ -51,7 +51,7 @@ Define work item queries to list work items for a current sprint or the product 
 
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 Or, use the shared queries that the Scrum process provides.
 
@@ -66,9 +66,9 @@ Or, use the shared queries that the Scrum process provides.
 
 [!INCLUDE [temp](../../includes/quick-tips-shared-query.md)] 
 
-## Monitor progress  
+## Monitor work progress  
 
-All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and trend charts and dashboards](../../../report/dashboards/overview.md). In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal. 
+All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and trend charts and dashboards](../../../report/dashboards/overview.md). Also, several charts are automatically built based on the Agile tools you use. These charts display within the web portal. 
 
 ## Scrum process and light-weight charts  
 
@@ -81,29 +81,18 @@ To get started, you can open a shared query and create a chart based on your tra
 
 
 <a id="reports"></a>
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2020"
 
 ## Scrum process and SQL Server reports
 
-If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Scrum reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
+If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to many Scrum reports. For these reports to be useful, [teams must complete certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
 
 If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
 
 ::: moniker-end
 
-
-
 <a id="dashboards"></a>
 
-::: moniker range="<= tfs-2017"
-
-## SharePoint portal dashboards 
-
-You can access the [Release](/previous-versions/azure/devops/report/sharepoint-dashboards/release-scrum) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to perform common tasks quickly. 
-
-To access this dashboard, your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
-
-::: moniker-end
 
 ## Related articles 
 
@@ -113,7 +102,7 @@ To access this dashboard, your project must have a [project portal configured an
 ### Scrum process versions  
 
 
-As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name. 
+As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Before this change, the version was specified within the process template name. 
 
 
 > [!div class="mx-tdCol2BreakAll"]
@@ -133,11 +122,11 @@ For a summary of updates made to process templates, see [Changes made to process
 <a id="predefined-queries" />
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 ### Scrum process predefined queries
 
-Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan additional sprints, you can modify these queries to specify the latest sprint and save them to additional folders that you create, such as **Sprint 2** or **Sprint 3**.
+Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan more sprints, you can modify these queries to specify the latest sprint and save them to other folders that you create, such as **Sprint 2** or **Sprint 3**.
 
 The project administrator for each project [defines area paths](../../../organizations/settings/set-area-paths.md) and [iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
 

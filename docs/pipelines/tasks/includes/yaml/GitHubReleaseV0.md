@@ -2,7 +2,7 @@
 ms.topic: include
 author: ashokirla
 ms.author: ashkir
-ms.date: 02/03/2020
+ms.date: 10/27/2021
 ms.prod: devops
 ms.technology: devops-cicd-tasks
 ---
@@ -20,8 +20,9 @@ ms.technology: devops-cicd-tasks
     #tagPattern: # Optional
     #tag: # Required when action == Edit || Action == Delete || TagSource == Manual
     #title: # Optional
-    #releaseNotesSource: 'file' # Optional. Options: file, input
-    #releaseNotesFile: # Optional
+    #releaseNotesSource: 'file' # Optional. Options: file, inline
+    #releaseNotesInline: Use this option to manually enter release notes. Use with releaseNotesSource = inline
+    #releaseNotesFilePath: # Optional. Use the contents of a file as release notes. 
     #releaseNotes: # Optional
     #assets: '$(Build.ArtifactStagingDirectory)/*' # Optional
     #assetUploadMode: 'delete' # Optional. Options: delete, replace

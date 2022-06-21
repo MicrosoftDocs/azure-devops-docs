@@ -8,12 +8,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
---- 
+ms.date: 04/04/2022  
+---
 
 # Security namespace and permission reference for Azure DevOps 
 
-[!INCLUDE [version-all](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces determines the level of access the following entities have to perform a specific action on a specific resource.
 - Azure DevOps user 
@@ -25,7 +25,7 @@ Security namespaces are used to store access control lists (ACLs) on tokens. Dat
 Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions.  Namespaces are subject to change over time.To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
 
 
 ## Permission management tools 
@@ -154,7 +154,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
       DashboardsPrivileges  
@@ -174,7 +173,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="1":::
       Git Repositories <a id="git-repositories" />    
@@ -263,7 +261,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       Plan  
@@ -281,8 +278,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
       ReleaseManagement 
@@ -320,7 +315,6 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 :::row:::
    :::column span="1":::
       WorkItemQueryFolders 
@@ -344,7 +338,7 @@ The following table describes the namespaces that manage object-level permission
 
 ## Project-level namespaces and permissions
 
-The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#project-level). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+The following table describes the namespaces that manage project-level permissions. Most of the listed permissions are managed through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 ---
 :::row:::
@@ -398,7 +392,7 @@ The following table describes the namespaces that manage project-level permissio
       Token to secure permissions for each project in your organization.  
       `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
       Assume you have a project named `Test Project 1`.  
-      You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md#show-project).  
+      You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md).  
       `az devops project show --project "Test Project 1"`  
       The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
@@ -419,7 +413,7 @@ The following table describes the namespaces that manage project-level permissio
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](set-project-collection-level-permissions.md#change-the-permission-level-for-a-project-level-group).  
+      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](change-project-level-permissions.md).  
       <br/>
       **Token format for project-level permissions**: `/PROJECT_ID`  
       **Example**: `/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
@@ -455,21 +449,23 @@ The following table describes the namespaces that manage project-level permissio
 :::row-end:::
 ---
 
-
 ::: moniker range="azure-devops"
+
 ## Organization-level namespaces and permissions 
 
-
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#collection-level). The organization owner and members of the Project Collection Administrators group are granted most of these permissions.  
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Organization settings** context. The **Organization owner** and members of the **Project Collection Administrators** group are granted most of these permissions.  To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
 ## Collection-level namespaces and permissions 
 
 
-The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#collection-level). Members of the Project Collection Administrators group are granted most of these permissions.  
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the web portal **Collection settings** context. Members of the **Project Collection Administrators** group are granted most of these permissions.   To learn more, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
 
 ::: moniker-end
+
+<a id="process" />
 
 ---
 :::row:::
@@ -548,7 +544,7 @@ The following table describes the namespaces that manage organization-level perm
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      Process <a id="process" />
+      Process 
    :::column-end:::
    :::column span="1":::
       `Edit`                           
@@ -606,6 +602,8 @@ The following table describes the namespaces that manage organization-level perm
    :::column-end:::
 :::row-end:::
 ---
+
+::: moniker range="< azure-devops"
 
 ## Server-level namespaces and permissions  
 
@@ -665,13 +663,15 @@ The following table describes those security namespaces and permissions defined 
       `Administer`                  
    :::column-end:::
    :::column span="2":::
-      Grants permission to process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](../../report/admin/manage-reports-data-warehouse-cube.md).   
+      Grants permission to process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube).   
       <br/>
       **ID:** `b8fbab8b-69c8-4cd9-98b5-873656788efb`
    :::column-end:::
 :::row-end:::
 ---
  
+::: moniker-end
+
 
 ## Role-based namespaces and permissions
 
@@ -865,9 +865,9 @@ The following table describes the security namespaces and permissions that aren'
       `SecurityAdmin`   
    :::column-end:::
    :::column span="2":::
-      Sets permissions to read, create, and manage the security of the data store. These permissions are assigned to several Azure DevOps service principals.  
+      Sets permissions to read, delete, create, and manage the security of the data store. These permissions are assigned to several Azure DevOps service principals.  
       <br/>
-      **ID:** `11238e09-49f2-40c7-94d0-8f0307204ce4`
+      **ID:** `19F9F97D-7CB7-45F7-8160-DD308A6BD48E` 
    :::column-end:::
 :::row-end:::
 ---
@@ -948,11 +948,26 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages permissions to view, manage, moderate, and contribute to [code review discussions setup for Azure Pipelines](../../pipelines/process/environments-kubernetes.md#set-up-review-app).  
       <br/>
-      **ID:** `0d140cae-8ac1-4f48-b6d1-c93ce0301a128`
+      **ID:** `0d140cae-8ac1-4f48-b6d1-c93ce0301a12`
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end
+:::row:::
+   :::column span="":::
+      EventPublish
+   :::column-end:::
+   :::column span="":::
+      `Read`  
+      `Write`  
+   :::column-end:::
+   :::column span="2":::
+      Grants read and write access for notification handler.  
+      <br/>
+      **ID:** `7cd317f2-adc6-4b6c-8d99-6074faeaf173`
+   :::column-end:::
+:::row-end:::
+---
 :::row:::
    :::column span="":::
       EventSubscriber
@@ -962,9 +977,9 @@ The following table describes the security namespaces and permissions that aren'
       `GENERIC_WRITE`  
    :::column-end:::
    :::column span="2":::
-      Grants read and write access for notification handler.  
+      Grants read and write access for notification subscribers.  
       <br/>
-      ID: `2bf24a2b-70ba-43d3-ad97-3d9e1f75622f`
+      **ID:** `2bf24a2b-70ba-43d3-ad97-3d9e1f75622f`
    :::column-end:::
 :::row-end:::
 ---
@@ -1053,7 +1068,7 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
+      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). <br/> 
       **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::
@@ -1127,7 +1142,6 @@ The following table describes the security namespaces and permissions that aren'
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
       ServiceHooks
@@ -1145,7 +1159,6 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -1247,62 +1260,3 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - [Security glossary](security-glossary.md)
 - [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
 
-
-<!---   
-
-Note access level restrictions. 
-Note non UI permissions
-
-
----
-:::row:::
-   :::column span="":::
-      Identity2
-   :::column-end:::
-   :::column span="":::
-      `Read`     
-      `Write`  
-      `Delete`  
-      `Impersonate`  
-   :::column-end:::
-   :::column span="2":::
-      TBD 
-      <br/>
-      **ID:** `bf7bfa03-b2b7-47db-8113-fa2e002cc5b1` 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-:::row:::
-   :::column span="":::
-      TeamLabSecurity
-   :::column-end:::
-   :::column span="":::
-      `Read`  
-      `Create `  
-      `Write`  
-      `Edit`  
-      `Delete`  
-      `Start`  
-      `Stop`  
-      `Pause`  
-      `ManageSnapshots`  
-      `ManageLocation`  
-      `DeleteLocation`  
-      `ManagePermissions`  
-      `ManageChildPermissions`  
-      `ManageTestMachines`  
-   :::column-end:::
-   :::column span="2":::
-      TBD
-      ::: moniker range="<= tfs-2015"
-      [Manages Lab Management permissions](./permissions.md#lab).
-      > [!NOTE]  
-      > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).  
-      ::: moniker-end   
-      <br/>  
-      **ID:** `9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1`   
-   :::column-end:::
-:::row-end:::
----
-
--->

@@ -2,7 +2,7 @@
 ms.topic: include
 author: shashban
 ms.author: shashban
-ms.date: 12/17/2019
+ms.date: 06/17/2022
 ms.prod: devops
 ms.technology: devops-cicd-tasks
 ---
@@ -16,11 +16,14 @@ ms.technology: devops-cicd-tasks
     #searchPattern: '**/bin/**/*.pdb' 
     #indexSources: true # Optional
     #publishSymbols: true # Optional
-    #symbolServerType: ' ' # Required when publishSymbols == True# Options:  , teamServices, fileShare
-    #symbolsPath: # Optional
+    #symbolServerType: ' ' # Required when publishSymbols == True # Options:  , teamServices, fileShare
+    #symbolsPath: The file share that hosts your symbols. # Optional
     #compressSymbols: false # Required when symbolServerType == FileShare
+    #SymbolExpirationInDays: The number of days that symbols should be retained. # Required when PublishSymbols = true && SymbolServerType = TeamServices. Default: 36530
+    #IndexableFileFormats: Which debug formats to publish to the symbol server. # Options: Default, Pdb, SourceMap, All. # Required when PublishSymbols = true && SymbolServerType = TeamServices. Default: Default
     #detailedLog: true # Optional
     #treatNotIndexedAsWarning: false # Optional
+    #useNetCoreClientTool: false # Optional
     #symbolsMaximumWaitTime: # Optional
     #symbolsProduct: # Optional
     #symbolsVersion: # Optional

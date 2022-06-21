@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Azure SQL Database Deployment task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to deploy to Azure SQL DB using a DACPAC or run scripts using SQLCMD.
 

@@ -1,7 +1,7 @@
 ---
 title: Pipeline outcome summary sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to generate a pipeline outcome summary Power BI report  
+description: Learn how to generate a pipeline outcome summary Power BI report.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,12 +9,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 09/21/2021
+ms.date: 10/12/2021
 ---
 
 # Pipeline outcome summary sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
 This article shows you how to get the number of runs for different pipeline outcomes (Succeeded / Failed / Canceled / Partially Succeeded). 
 
@@ -244,9 +244,9 @@ Your report should look like this.
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
 
 ### Use Pipeline ID, rather than Pipeline Name
 
@@ -300,7 +300,7 @@ $apply=filter(
 
 ### Filter by branch
 
-You may want to view the outcome summary of a pipeline for a particular **branch**. To create the report, perform the following additional steps along with what is defined previously in this article.
+You may want to view the outcome summary of a pipeline for a particular **branch**. To create the report, carry out the following extra steps along with what is defined previously in this article.
 
 - Expand Branch into Branch.BranchName
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
@@ -357,7 +357,7 @@ aggregate(
 
 ### Filter by Build Reason
 
-You may want to view the outcome summary of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the outcome summary of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request, and so on) only. To create the report, follow the extra steps below along with what is defined previously in this article.
 
 - Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary
@@ -413,7 +413,7 @@ aggregate(
 
 ### Outcome summary for all project pipelines 
 
-You may want to view the pipeline outcome summary for all project pipelines in a single report. To create the report, perform the following additional steps along with those provided previously in this article.
+You may want to view the pipeline outcome summary for all project pipelines in a single report. To create the report, carry out the following extra steps along with the ones provided previously in this article.
 
 - Expand Pipeline into Pipeline.PipelineName
 - Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**

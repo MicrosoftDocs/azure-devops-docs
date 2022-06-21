@@ -6,13 +6,13 @@ ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
 ms.technology: devops-code-git 
 ms.topic: quickstart
 ms.date: 05/13/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Share your code in Git using Eclipse
 
-[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Share your Eclipse project with your team in an Azure DevOps Services/TFS Git repo.
 

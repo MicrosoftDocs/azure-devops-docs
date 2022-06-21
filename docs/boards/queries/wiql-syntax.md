@@ -1,26 +1,25 @@
 ---
-title: WIQL reference syntax  
+title: Work Item Query Language (WIQL) reference syntax   
 titleSuffix: Azure Boards   
-description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards, Azure DevOps 
+description: Learn about the reference syntax for the Work Item Query Language used by Azure Boards. 
 ms.custom: boards-queries  
 ms.technology: devops-agile  
-ms.prod: devops  
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.author: kaelli  
 author: KathrynEE  
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 11/17/2021
 ---
 
 
-# Syntax for the Work Item Query Language (WIQL) 
+# Work Item Query Language (WIQL) syntax reference 
 
-[!INCLUDE [temp](../includes/version-all.md)]   
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]   
 
 You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md) or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
-A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
+A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query was evaluated previously.
 
 > [!IMPORTANT] 
 > The WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query%20by%20wiql). Currently, there is no way to call the API to return the detailed work item information from a WIQL query directly. No matter which fields you include in the SELECT statement, the API only returns the work item IDs. To get the full information, you need to perform  two steps: (1) get the ID of the work items from a WIQL, and (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work-items/list). 
@@ -30,7 +29,7 @@ A query defined using the Work Item Query Language (WIQL) consists of a `SELECT`
 A query returns only those work items for which you have the **View work items** or **View work items in this node** permission. Typically, these permissions are granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md).  
 
 
-## Query language
+## Query language overview
 
 The work item query language has five parts shown in the following syntax snippet and described in the following table. 
 
@@ -43,7 +42,7 @@ ORDER BY [State] Asc, [Changed Date] Desc
 ASOF '6/15/2010'
 ```
 
-The WIQL syntax is not case-sensitive.
+The WIQL syntax isn't case-sensitive.
 
 
 > [!NOTE] 
@@ -66,7 +65,7 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
    `SELECT`
    :::column-end:::
    :::column span="3":::
-   Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods.
+   Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. Use square brackets ([]) if the name contains blanks or periods.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -103,7 +102,7 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
    `ASOF`
    :::column-end:::
    :::column span="3":::
-   Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.  
+   Specifies a historical query by indicating a date or when the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.  
    `ASOF '6/15/2019'`
    :::column-end:::
 :::row-end:::
@@ -119,7 +118,7 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
 
 <a id="where-clause" />
 
-## Filter conditions (WHERE)
+## `WHERE` filter conditions
 
 The `WHERE` clause specifies the filter criteria. The query returns only work items that satisfy the specified criteria. For example, the following example `WHERE` clause returns user stories that are active and that are assigned to you.
 
@@ -153,7 +152,7 @@ Each filter condition is composed of three parts, each of which must conform to 
 	- 
 - **Field value**: You can specify one of the following three values depending on the field specified.  
 	- A *literal value* must match the data type of the field value. 
-	- A *variable or macro* which indicates a certain value. For example, @Me indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article.
+	- A *variable or macro that indicates a certain value. For example, @Me indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article.
 	- The name of another *field*. For example, you can use `[Assigned to] = [Changed by]` to find work items that are assigned to the person who changed the work item most recently.
 
 For a description and reference names of all system-defined fields, see [Work item field index](../work-items/guidance/work-item-field.md).
@@ -173,7 +172,7 @@ WHERE [System.AssignedTo] = 'joselugo'
 WHERE [Adatum.CustomMethodology.Severity] >= 2
 ```
 
-The table below summarizes all the supported operators for different field types. For additional information on each field type, see [Work item fields and attributes](../work-items/work-item-fields.md).  
+The table below summarizes all the supported operators for different field types. For more information on each field type, see [Work item fields and attributes](../work-items/work-item-fields.md).  
 
 The `=, <>, >, <, >=, and <=` operators work as expected. For instance, `System.ID > 100` queries for all work items with an **ID** greater than 100. `System.ChangedDate > '1/1/19 12:00:00'` queries for all work items changed after noon of January 1, 2019.
 
@@ -272,7 +271,7 @@ WHERE [System.State] =  'Active'
     AND [System.State] EVER 'Closed'
 ```
 
-You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The examples below query for all work items that are not classified within the sub-tree of 'MyProject\Feature1'.
+You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The examples below query for all work items that aren't classified within the subtree of 'MyProject\Feature1'.
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
@@ -318,26 +317,23 @@ The following table lists the macros or variables you can use within a WIQL quer
 
 |  Macro       |       Usage        |
 |---------|-----|
-|  <strong>@Me</strong>   | Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.   |
-|                                                 <strong>@CurrentIteration</strong>                                                  |                                                                                                                    Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context.                                                                                                                    |
-|                                                      <strong>@Project</strong>                                                      |                                                  Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to <strong>@Project</strong>.                                                   |
-| <strong>@StartOfDay</strong><br/><strong>@StartOfWeek</strong><br/><strong>@StartOfMonth</strong><br/><strong>@StartOfYear</strong> |                    Use these macros to filter DateTime fields based on the start of the current day, week, month, year or an offset to one of these. For example, you can find all items created in the last 3 months if you set the **Field** column to **Created Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@StartOfMonth - 3**.                     |
-|                                                       <strong>@Today</strong>                                                       | Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the <strong>@Today</strong> variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
-|                                                              **[Any]**                                                              |                                                                                                                                       Use this variable to search for work items that relate to any value that is defined for a particular field.                                                                                                                                       |
+|**@Me** | Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.   |
+|**@CurrentIteration** | Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context. |
+|**@Project** | Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to **@Project**.  |
+|**@StartOfDay**<br/>**@StartOfWeek**<br/>**@StartOfMonth**<br/>**@StartOfYear** | Use these macros to filter DateTime fields based on the start of the current day, week, month, year, or an offset to one of these values. For example, you can find all items created in the last 3 months if you set the **Field** column to **Created Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@StartOfMonth - 3**. |
+|**@Today**| Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the **@Today** variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
+| **[Any]** |  Use this variable to search for work items that relate to any value that is defined for a particular field.|
 
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops-2019"
-
-
 |      Macro     |                 Usage   |
 |-----------------|----------------|
-|        <strong>@Me</strong>        |                                       Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.                                       |
-| <strong>@CurrentIteration</strong> |                                                                                                                    Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context.                                                                                                                    |
-|     <strong>@Project</strong>      |                                                  Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to <strong>@Project</strong>.                                                   |
-|      <strong>@Today</strong>       | Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the <strong>@Today</strong> variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
-|             **[Any]**              |                                                                                                                                       Use this variable to search for work items that relate to any value that is defined for a particular field.                                                                                                                                       |
+| **@Me**|  Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to **@Me**.  |
+|**@CurrentIteration** | Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context. |
+| **@Project**|Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to **@Project**.  |
+|**@Today**| Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the <strong>@Today</strong> variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
+|**[Any]** |Use this variable to search for work items that relate to any value that is defined for a particular field. |
 
 ::: moniker-end
 
@@ -348,7 +344,7 @@ The following table lists the macros or variables you can use within a WIQL quer
 
 ### @me macro
 
-The `@me` macro substitutes the Windows Integrated account name of the user who runs the query. The example below shows how to use the macro and the equivalent static statement. Although the macro is intended for fields such as `Assigned To`, you can use it for any String field, although the result may not be meaningful.
+The `@me` macro replaces the Windows Integrated account name of the user who runs the query. The example below shows how to use the macro and the equivalent static statement. Although the macro is intended for fields such as `Assigned To`, you can use it for any String field, although the result may not be meaningful.
 
 ```WIQL
 [System.AssignedTo] = @Me
@@ -357,7 +353,7 @@ The `@me` macro substitutes the Windows Integrated account name of the user who 
 
 ### @today macro 
 
-You can use the `@today` macro with any <strong>DateTime</strong> field. This macro substitutes midnight of the current date on the local computer that runs the query. You can also specify `@today+x` or `@today-y` using integer offsets for x days after `@today` and y days before `@today`, respectively. Note that a query that uses the `@today` macro can return different result sets depending on the time zone in which it is run. 
+You can use the `@today` macro with any <strong>DateTime</strong> field. This macro replaces midnight of the current date on the local computer that runs the query. You can also specify `@today+x` or `@today-y` using integer offsets for x days after `@today` and y days before `@today`, respectively. A query that uses the `@today` macro can return different result sets depending on the time zone in which it's run. 
 
 The examples below assumes that today is 1/3/19.
 
@@ -365,19 +361,19 @@ The examples below assumes that today is 1/3/19.
 [System.CreatedDate] = @today
 ```
 
-is the equivalent of:
+Is the equivalent of:
 
 ```WIQL
 [System.CreatedDate] = '1/3/19'
 ```
 
-and
+And
 
 ```WIQL
 [System.CreatedDate] > @today-2
 ```
 
-is the equivalent of:
+Is the equivalent of:
 
 ```WIQL
 [System.CreatedDate] > '1/1/19'
@@ -391,7 +387,7 @@ is the equivalent of:
 
 ### @StartOfDay, @StartOfWeek, @StartOfMonth, @StartOfYear macros 
 
-You can use the `@StartOf...` macros with any <strong>DateTime</strong> field. This macro substitutes midnight of the current day, start of week, start of month, or start of year on the local computer that runs the query. 
+You can use the `@StartOf...` macros with any <strong>DateTime</strong> field. This macro replaces midnight of the current day, start of week, start of month, or start of year on the local computer that runs the query. 
 
 ::: moniker-end
 
@@ -404,9 +400,9 @@ You can use the `@StartOf...` macros with any <strong>DateTime</strong> field. T
 
 ::: moniker range=">= azure-devops-2019"
 
-These macros accept a modifier string that has a format of `(+/-)nn(y|M|w|d|h|m)`. Similar to the `@Today` macro, you can specify plus or minus integer offsets. If the time unit qualifier is omitted, it defaults to the natural period of the function, e.g. `@StartOfWeek("+1")` is the same as `@StartOfWeek("+1w")`. If the plus/minus (+/-) sign is omitted, plus is assumed.
+These macros accept a modifier string that has a format of `(+/-)nn(y|M|w|d|h|m)`. Similar to the `@Today` macro, you can specify plus or minus integer offsets. If the time unit qualifier is omitted, it defaults to the natural period of the function. For example, `@StartOfWeek("+1")` is the same as `@StartOfWeek("+1w")`. If the plus/minus (+/-) sign is omitted, plus is assumed.
 
-This syntax allows you to nest modifiers and offset your query twice. For example, the following clause filters work items that have been closed last year and three months into the start of the current year.  
+This syntax allows you to nest modifiers and offset your query twice. For example, the clause `Closed Date >= @StartOfYear - 1`, filters work items that have been closed since last year. By modifying it to `Closed Date >= @StartOfYear('+3M') - 1`, it excludes work items closed within the first three months of the last year. The WIQL syntax is as shown in the following example. 
 
 ```WIQL
 [Microsoft.VSTS.Common.ClosedDate] >=@StartOfYear('+3M') - 1
@@ -419,19 +415,19 @@ The following examples assume that today is 4/5/19.
 [Microsoft.VSTS.Common.CreatedDate] >= @StartOfMonth-3
 ```
 
-is the equivalent of:
+Is the equivalent of:
 
 ```WIQL
 [Microsoft.VSTS.Common.CreatedDate] >= '1/1/19'
 ```
 
-and
+And
 
 ```WIQL
 [Microsoft.VSTS.Scheduling.TargetDate] > @StartOfYear
 ```
 
-is the equivalent of:
+Is the equivalent of:
 
 ```WIQL
 [Microsoft.VSTS.Scheduling.TargetDate]  > '1/1/19'
@@ -443,25 +439,25 @@ is the equivalent of:
 
 ### Custom macros 
 
-WIQL also supports arbitrary custom macros. Any string prefixed by an '@' is treated as a custom macro and will be substituted. The substitute value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
+WIQL also supports arbitrary custom macros. Any string prefixed by an '@' is treated as a custom macro and will be substituted. The replacement value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
 
 ```csharp
 public WorkItemCollection Query(string wiql, IDictionary context)
 ```
 
-The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then '@project' will be replaced by 'MyProject' in the WIQL. This is how the work item query builder handles the @project macro in Visual Studio.
+The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then '@project' will be replaced by 'MyProject' in the WIQL. This replacement is how the work item query builder handles the @project macro in Visual Studio.
 
 
 
 
-## Historical queries (ASOF) 
+## `ASOF` historical queries 
 
 You can use an `ASOF` clause in a query to filter for work items that satisfy the specified filter conditions as they were defined on a specific date and time.
 
 > [!NOTE] 
 > You can’t create `ASOF` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an `ASOF` clause, and then load that in Visual Studio, the `ASOF` clause is ignored.
 
-For example, suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
+Suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
 
 ```WIQL
 SELECT [System.Title] 
@@ -474,7 +470,7 @@ SELECT [System.Title]
 > If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
 
 
-## Sort results (ORDER BY) 
+## `ORDER BY` clause to sort results
 
 You can use the `ORDER BY` clause to sort the results of a query by one or more fields in ascending or descending order. 
 
@@ -590,7 +586,7 @@ You can specify one of the system link type names, listed below, or [a custom li
 - `System.LinkTypes.Dependency-Successor`
 - `Microsoft.VSTS.Common.Affects-Forward` (CMMI process)
 
-For additional information, see [Link type reference](link-type-reference.md). 
+For more information, see [Link type reference](link-type-reference.md). 
 
 ### Tree type query example
 
@@ -668,7 +664,7 @@ MODE (MustContain)
 ```
 
 
-## Additional example queries 
+## More query examples
 
 The following typical WIQL query example uses reference names for the fields. The query selects work items (no work item type specified) with a **Priority=1**. The query returns the **ID** and **Title** of the return set as columns. The results are sorted by **ID** in ascending order.
 
@@ -683,8 +679,8 @@ ORDER BY System.ID asc
 ### Date-time pattern
 
 You specify the date-time pattern according to one of two patterns: 
-- The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
-- The pattern specified by UTC which follows this pattern (with Z appended to the date-time):  
+- The Date Pattern and Time Pattern format comes from your browser's language/region selection.
+- The pattern specified by UTC, which follows this pattern (with Z appended to the date-time):  
 
 `AND System.ChangedDate >= '1/1/2019 00:00:00Z'`
 
@@ -808,7 +804,7 @@ The following example statements show specific qualifying clauses.
 
 ### DateTime
 
-You must quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
+Quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
 
 ```WIQL
 WHERE [Adatum.Lite.ResolvedDate] >= '1/8/19 GMT' and [Resolved Date/Time] < '1/9/19 GMT'
@@ -818,7 +814,7 @@ When the time is omitted in a DateTime literal and the dayPrecision parameter eq
 
 ### String and PlainText
 
-You must quote string literals (single or double quotes are supported) in a comparison with a string or plain text field. String literals support all Unicode characters.
+Quote string literals (single or double quotes are supported) in a comparison with a string or plain text field. String literals support all Unicode characters.
 
 ```WIQL
 WHERE [Adatum.Lite.Blocking] = 'Not Blocking'
@@ -833,7 +829,7 @@ WHERE [System.Description] contains 'WIQL'
 
 ### Area and Iteration (TreePath) 
 
-You can use the `UNDER` operator for the Area and Iteration Path fields. The `UNDER` operator evaluates whether a value is within the sub-tree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the sub-tree.
+You can use the `UNDER` operator for the Area and Iteration Path fields. The `UNDER` operator evaluates whether a value is within the subtree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the subtree.
 
 ```WIQL
 WHERE [System.AreaPath] UNDER 'MyProject\Server\Administration'

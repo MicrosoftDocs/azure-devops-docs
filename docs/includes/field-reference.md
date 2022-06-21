@@ -23,7 +23,7 @@ A work item field name uniquely identifies each work item field. Make sure your 
 - Field names must contain at least one alphabetic character  
 - Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
 
-Because custom fields are defined for the account collection, you can't add a custom field to a process with the same field name that you add to another inherited process.  
+Because custom fields are defined for an organization or collection, you can't add a custom field to a process with the same field name that you add to another process.  
 
 
 <!-- 

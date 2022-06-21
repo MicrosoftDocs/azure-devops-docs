@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Publish and download pipeline Artifacts
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
 
@@ -60,7 +60,7 @@ steps:
 
 - Run the following command to publish your Artifact:
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 
@@ -68,7 +68,7 @@ steps:
 
 Although the artifact's name is optional, it is a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
 
-The path of the file/folder to you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
+The path of the file/folder that you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
 Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
 
@@ -92,17 +92,20 @@ Packages in Azure Artifacts are immutable. Once you publish a package, its versi
 
 ### Use .artifactignore
 
-`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
+`.artifactignore` uses a similar syntax to `.gitignore` (with few limitations) to specify which files should be ignored when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
 
-Example: ignore all files except **.exe** files:
+> [!NOTE]
+> The plus sign character `+` is not supported in URL paths and some builds metadata for package types such as Maven.
+
+**Example**: ignore all files except **.exe** files:
 
 ```
 **/*
 !*.exe
 ```
 
-> [!NOTE]
-> `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
+> [!IMPORTANT]
+> Azure Artifacts automatically ignore the *.git* folder path when you don't have a *.artifactignore* file. You can bypass this by creating an empty *.artifactignore* file.
 
 ## Download artifacts
 
@@ -117,6 +120,9 @@ steps:
 ```
 
 - **current**: download artifacts produced by the current pipeline run. Options: current, specific.
+
+> [!NOTE]
+> List of published artifacts will be available only in following dependant jobs. Therefore, use `current` option only in separate jobs, that has dependency on jobs with publish artifacts tasks. 
 
 > [!TIP]
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
@@ -150,7 +156,7 @@ steps:
 
 - Run the following command to download your Artifact
 
-  ```Command
+  ```azurecli
     az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
   ```
 
@@ -272,7 +278,7 @@ Not available.
 
 ## Artifacts in release and deployment jobs
 
-Artifacts are only downloaded automatically in deployment jobs. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
+Artifacts are only downloaded automatically in deployment jobs. By default, artifacts are downloaded to `System.ArtifactsDirectory`. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
 In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
 
 ```yaml
@@ -280,36 +286,56 @@ steps:
 - download: none
 ```
 
-> [!NOTE]
-> Deleting or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
-
 ## Use Artifacts across stages
 
-If you want to be able to access your artifact across different stages in your pipeline, you can use output variables to pass it to the next stage in your YAML. See [Dependency expressions](../process/expressions.md#dependencies) for more details.
+If you want to be able to access your artifact across different stages in your pipeline, you can now publish your artifact in one stage and then download it in the next stage leveraging dependencies. See [Stage to stage dependencies](../process/expressions.md#dependencies) for more details.
+
+### Example
+
+In the following example, we will copy and publish a script folder from our repo to the `$(Build.ArtifactStagingDirectory)`. In the second stage, we will download and run our script.
 
 ```YAML
-trigger: none
-pool:
-  vmImage: 'ubuntu-latest'
+trigger:
+- main
 stages:
-- stage: A
+- stage: build
   jobs:
-  - job: A1
+  - job: run_build
+    pool:
+      vmImage: 'windows-latest'
     steps:
-     - script: echo ##vso[task.setvariable variable=shouldrun;isOutput=true]true
-       name: printvar
-- stage: B
-  dependsOn: A
+    - task: VSBuild@1
+      inputs:
+        solution: '**/*.sln'
+        msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
+        platform: 'Any CPU'
+        configuration: 'Release'
+
+    - task: CopyFiles@2
+      displayName: 'Copy scripts'
+      inputs:
+        contents: 'scripts/**'
+        targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+    - publish: '$(Build.ArtifactStagingDirectory)/scripts'
+      displayName: 'Publish script'
+      artifact: drop
+
+- stage: test
+  dependsOn: build
   jobs:
-  - job: B1
-    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+  - job: run_test
+    pool:
+      vmImage: 'windows-latest'
     steps:
-    - script: echo hello from Job B1
-  - job: B2
-    condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
-    steps:
-     - script: echo hello from Job B2
+    - download: current
+      artifact: drop
+    - task: PowerShell@2
+      inputs:
+        filePath: '$(Pipeline.Workspace)\drop\test.ps1'
 ```
+
+:::image type="content" source="media/artifacts-across-stages.png " alt-text="Screenshot showing the PowerShell task output":::
 
 ## Migrate from build artifacts
 
@@ -317,11 +343,9 @@ Pipeline artifacts are the next generation of build artifacts and are the recomm
 
 When migrating from build artifacts to pipeline artifacts:
 
-1. For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, you can just publish directly from the path containing the files.
+1. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
-2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
-
-3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
+2. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
 
 ## FAQ
 
@@ -329,9 +353,13 @@ When migrating from build artifacts to pipeline artifacts:
 
 A: Build artifacts are the files generated by your build. See [Build Artifacts](build-artifacts.md) to learn more about how to publish and consume your build artifacts.
 
-#### Q: Can this task publish artifacts to a shared folder?
+#### Q: Do you support publishing artifacts to a shared folder?
 
 A: Not currently, but this feature is planned.
+
+#### Q: Can I delete pipeline artifacts when re-running failed jobs?
+
+A: Pipeline artifacts are not deletable or overwritable. If you want to regenerate artifacts when you re-run a failed job, you can include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
 
 ## Related articles
 

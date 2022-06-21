@@ -6,13 +6,13 @@ ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235
 ms.author: jukullam
 author: juliakm
 ms.date: 08/17/2021
-ms.type: reference
-monikerRange: '>= tfs-2015'
+ms.topic: overview
+monikerRange: '<= azure-devops'
 ---
 
 # Deploy to Azure
 
-[!INCLUDE [version-tfs-2015-rtm](includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
  Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you do not have to use Azure services with Pipelines, Pipelines can help you take advantage of Azure. You can use Pipelines to integrate your CI/CD process with most Azure services. 
 
@@ -145,7 +145,7 @@ Follow the links provided in the following table to learn more about the Azure s
       - [Azure SQL Database Deployment task](tasks/deploy/sql-azure-dacpac-deployment.md)
       - [Azure Database for MySQL Deployment task](tasks/deploy/azure-mysql-deployment.md)
       - [Quickstart: Deploy to Azure MySQL](targets/azure-mysql.md)
-      - [How-To: CI/CD with App Service and Azure Cosmos DB](targets/cosmos-db.md)
+      - [Set up a CI/CD pipeline with the Azure Cosmos DB Emulator build task in Azure DevOps](/azure/cosmos-db/tutorial-setup-ci-cd)
    :::column-end:::
 :::row-end:::
 --- 
@@ -178,7 +178,7 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column-end::: 
    :::column span="3":::
       Provides a fully managed Platform as a service (PaaS) to implement serverless architecture. To learn more, see:
-      - [Deploy an Azure Function](targets/azure-functions.md)
+      - [Deploy an Azure Function](/azure/azure-functions/functions-how-to-azure-devops)
       - [Azure Function App task](tasks/deploy/azure-function-app.md)
       - [Azure Function App for Containers task](tasks/deploy/azure-rm-functionapp-containers.md) 
    :::column-end:::
@@ -305,8 +305,7 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column span="3":::
       Use publish profile to deploy Azure WebApps for Windows from the Deployment Center. To learn more, see the following articles:   
      - [Deploy an Azure Web App](./targets/webapp.md)
-     - [Deploy an Azure Web App Container](targets/webapp-on-container-linux.md)
-     - [Deploy to Azure App Service using Visual Studio Code](targets/deploy-to-azure-vscode.md)
+     - [Deploy an Azure Web App Container](apps/cd/deploy-docker-webapp.md)
      - [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md)
      - [Azure App Service Manage task](tasks/deploy/azure-app-service-manage.md)
      - [Azure App Service Settings task](tasks/deploy/azure-app-service-settings.md) 
@@ -321,7 +320,7 @@ Follow the links provided in the following table to learn more about the Azure s
 
 | Service                                             | Description                                                                                                                                           | Resources                                                    |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Azure Web App Service / App Service for Containers  | A managed service for hosting web apps, mobile app back ends, RESTful APIs, or automated business processes                                           | [Deploy an Azure Web App](./targets/webapp.md), [Deploy an Azure Web App Container](targets/webapp-on-container-linux.md), [Deploy to Azure App Service using Visual Studio Code](targets/deploy-to-azure-vscode.md), [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md), [Azure App Service Manage task](tasks/deploy/azure-app-service-manage.md), [Azure App Service Settings task](tasks/deploy/azure-app-service-settings.md) |
+| Azure Web App Service / App Service for Containers  | A managed service for hosting web apps, mobile app back ends, RESTful APIs, or automated business processes                                           | [Deploy an Azure Web App](./targets/webapp.md), [Deploy an Azure Web App Container](targets/webapp-on-container-linux.md), [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md), [Azure App Service Manage task](tasks/deploy/azure-app-service-manage.md), [Azure App Service Settings task](tasks/deploy/azure-app-service-settings.md) |
 | Azure Static Web Apps                               | Automatically builds and deploys full stack web apps to Azure from a code repository                                                                  | [Tutorial: Publish Azure Static Web Apps with Azure DevOps](/azure/static-web-apps/publish-devops)                                                           |
 | Azure Functions                                     | Serverless solution for hosting applications                                                                                                          |  [Deploy an Azure Function](targets/azure-functions.md), [Azure Function App task](tasks/deploy/azure-function-app.md), [Azure Function App for Containers task](tasks/deploy/azure-rm-functionapp-containers.md) |
 | Azure Databases (SQL, MySQL)              | Managed database solutions | [Deploy to Azure SQL Database](targets/azure-sqldb.md), [Azure SQL Database Deployment task](tasks/deploy/sql-azure-dacpac-deployment.md), [Azure Database for MySQL Deployment task](tasks/deploy/azure-mysql-deployment.md), [Quickstart: Deploy to Azure MySQL](targets/azure-mysql.md)

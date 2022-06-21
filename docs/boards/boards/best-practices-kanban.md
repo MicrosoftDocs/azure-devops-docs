@@ -1,29 +1,29 @@
 ---
-title: Kanban best practices
+title: Best Practices for implementing Kanban in Azure Boards
 titleSuffix: Azure Boards
-description: Best practices when implementing Kanban in Azure Boards and Team Foundation Server (TFS)  
+description: Learn about best practices when implementing Kanban in Azure Boards.  
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
 ms.author: kaelli
 author: KathrynEE
 ms.topic: best-practice
-ms.date: 11/19/2018
+ms.date: 10/15/2021
 ---
 
-# Kanban best practices
+# Use best practices when implementing Kanban in Azure Boards
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 
-Having worked through the four configuration steps provided in [Kanban basics](../boards/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.
+Having worked through the four configuration steps that were provided in [Kanban basics](../boards/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.
 
 1. **Visualize your workflow**. Teams track their work using a Kanban board that maps to how they work. Teams discuss how to best focus their resources to deliver the most important work.
-2. **Limit work in progress**. Teams set and adhere to WIP limits they set for each stage of work. They use WIP limits to maintain focus on completing what they started and to identify bottlenecks occurring in their processes.
+2. **Limit work in progress**. Teams set and adhere to work in progress (WIP) limits they set for each stage of work. They use WIP limits to maintain focus on completing what they started and to identify bottlenecks occurring in their processes.
 3. **Manage flow**. Teams monitor the overall work in progress and lead time, which gives them an idea of the speed of their delivery.
 4. **Make policies explicit**. Teams spell out the standards and processes they agree to follow and make them readily accessible. For example, by making the team's Definition of Done for each work stage explicit, they can avoid wasted time and effort.
 5. **Create opportunities for feedback**. Teams meet periodically to reflect on what's working and what needs improvement.
-6. **Improve collaboratively, evolve experimentally**. Teams determine how to improve the continuous flow of delivery over time based of key metrics. They involve the entire team to gather insights and ideas. And, when persistent bottlenecks arise, they determine the changes that will alleviate them.
+6. **Improve collaboratively, evolve experimentally**. Teams determine how to improve the continuous flow of delivery over time based of key metrics. They involve the entire team to gather insights and ideas. And, when persistent bottlenecks arise, they determine the changes that will help resolve them.
 
 Over time, Kanban can provide your team insight as to how well their current processes work end-to-end and how to improve them. Incremental adoption of Kanban practices tends to yield greater success and builds on the sixth practice, to evolve experimentally. These practices arose from principles of Lean Manufacturing and Systems Thinking.
 
@@ -32,27 +32,27 @@ Over time, Kanban can provide your team insight as to how well their current pro
 
 ## WIP limits, challenges, and solutions
 
-Teams occasionally exceed WIP limits by 1 or 2 items. However, if your team frequently exceeds the limits, and exceeds them by 3 or more items, they should review processes or adjust the limits.
+Teams occasionally exceed WIP limits by one or two items. However, if your team frequently exceeds the limits by three or more items, they should review processes or adjust the limits.
 
-After a team has worked with WIP limits for several weeks, discuss the challenges team members have, solutions they'd like to try, and adjust the limits as needed. The following list, although not exhaustive, indicates some of the common challenges encountered and proven solutions used by teams who've implemented Kanban successfully. 
+After a team has worked with WIP limits for several weeks, discuss the challenges team members have. Then, decide which solutions they'd like to use and adjust the limits as needed. The following list, although not exhaustive, indicates some of the common challenges teams come across and proven solutions to overcome them. 
 
-### Challenges
+### WIP challenges
 
-* **Social dynamics.** When it comes to following rules, team members can feel challenged. Some naturally want to rebel, others don't see that the rule applies to them, or don't see what they do as breaking the rules. Some team members may take on extra work that's outside the scope of what's been agreed to. And, still others don't want to give up multitasking as they believe it's the key to their productivity and individual achievement. 
+* **Social dynamics.** When it comes to following rules, team members can feel challenged. Some naturally want to rebel. Others don't see that the rule applies to them or don't see what they do as breaking the rules. Some team members may take on extra work that's outside the scope of what's been agreed to. And, still others don't want to give up multitasking as they believe it's the key to their productivity and individual achievement. 
 
-* **Variability of work in progress.** Wide variability in the size of work items&mdash;users stories and bugs&mdash; can negatively impact the overall workflow. For example, items with estimates that vary in size from 4 hours to 14 days, or 2 to 55 story points, can't be counted the same when it comes to constraining work in progress.
+* **Variability of work in progress.** Wide variability in the size of work items&mdash;users stories and bugs—can negatively influence the overall workflow. For example, items with estimates that vary in size from 4 hours to 14 days, or 2 to 55 story points, can't be counted the same when it comes to constraining work in progress.
 
 * **Ignoring systemic problems.** Instead of addressing workflow problems when bottlenecks occur, teams soldier on, putting in more time to overcome the bottleneck. 
 
 * **Culture change.** Adopting WIP limits introduces changes to the system, culture, and team. 
 
-### Solutions
+### Solutions for managing WIP
 
 * **Build a culture of team productivity.** Address the natural tension that exists between individual productivity versus team productivity. Identify ways in which team members can enhance the overall productivity of the team and workflow process. 
 
 * **Size work to minimize variability.** Before work starts on any item, the team should discuss the overall size of work required and determine if it can be broken down into smaller tasks. 
 
-* **Focus on the flow of high priority items.** When idle, team members ask how they can help move an upstream item forward. When blocked or challenged to deliver an item on time, team members ask for help to complete an item.
+* **Focus on the flow of high priority items.** When idle, team members ask how they can help move an upstream item forward. When blocked or challenged to deliver an item on time, team members ask for help with completing an item.
 
 * **Resource team capacity for each work stage.** Bottlenecks can occur when there aren't enough specialists who work in a particular stage. Determine ways to either increase team skills within each work stage, or add resources as needed to meet an understaffed work stage.
 
@@ -64,7 +64,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 <a id="dod" />
 
-## Your team, working software and the Definition of Done  
+## Help your agile team deliver working software  
 
 One of the [12 principles of Agile software development](https://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."
 
@@ -159,12 +159,12 @@ Acceptance criteria defines when a feature is shippable. Capture the criteria fo
 
 ![Acceptance criteria field on work item form](media/vso-product-backlog-work-item-form-acceptance-criteria.png)  
 
-The Definition of Done, on the other hand, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work. 
+The Definition of Done, though, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work. 
 
 > *Agility requires delivering done, ready-to-use increments of working software each Sprint. Yet most Scrum and agile teams generate partially done, incomplete Increments. When a Scrum Team is asked why Product Backlog requirements were not completely done in a Sprint, team members often reply, "We didn't have time."* &mdash; Ken Schwaber and David Starr
 
 
-## Additional resources
+## Other resources
 
 - [DoD Goes Agile](https://www.scruminc.com/dod-goes-agile/) 
 - [Walking Through a Definition of Done](https://www.scrum.org/resources/blog/walking-through-definition-done)

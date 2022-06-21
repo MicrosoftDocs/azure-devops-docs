@@ -4,11 +4,13 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 09/16/2021
+ms.date: 01/19/2022
 monikerRange: azure-devops
 ---
 
 # Pipeline caching
+
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Pipeline caching can help reduce build time by allowing the outputs or downloaded dependencies from one run to be reused in later runs, thereby reducing or avoiding the cost to recreate or redownload the same files again. Caching is especially useful in scenarios where the same dependencies are downloaded over and over at the start of each run. This is often a time consuming process involving hundreds or thousands of network calls.
 
@@ -27,37 +29,36 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 > [!NOTE]
 > Caching is currently free, and caches are stored in Azure blob storage.
 
-## Use Cache task
+## Cache task
 
 Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
 
-### Configure Cache task
+### Configure the Cache task
 
-The `Cache` task has two required inputs: `key` and `path`. 
+The [Cache task](../tasks/utility/cache.md) has two required arguments: *key* and *path*:
 
-#### Path input
+- **path**: the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
 
-`path` the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`. You can use predefined variables however wildcards are not supported.
+> [!NOTE]
+> You can use [predefined variables](../build/variables.md) to store the path to the folder you want to cache, however wildcards are not supported.
 
-#### Key input
-
-`key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
+- **key**: should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
 * **Strings**: <br>
-fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
+Fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
 * **File paths**: <br>
-path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
+Path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
 * **File patterns**: <br>
-comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
+Comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
   * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
 
@@ -79,6 +80,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -118,6 +120,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -188,7 +191,7 @@ steps:
 
 ## Bundler
 
-For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v0.9/bundle_install.html) will look for Gems in.
+For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v2.3/man/bundle-config.1.html) will look for Gems in.
 
 **Example**:
 
@@ -242,7 +245,7 @@ Caching Docker images dramatically reduces the time it takes to run your pipelin
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'Ubuntu-18.04'
 steps:
   - task: Cache@2
     displayName: Cache task
@@ -360,7 +363,7 @@ If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass
 
 ## .NET/NuGet
 
-If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory.
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to lock dependencies.
 
 **Example**:
 
@@ -371,17 +374,13 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'nuget | "$(Agent.OS)" | $(Build.SourcesDirectory)/packages.lock.json'
+    key: 'nuget | "$(Agent.OS)" | $(Build.SourcesDirectory)/**/packages.lock.json'
     restoreKeys: |
        nuget | "$(Agent.OS)"
+       nuget
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
-
-> [!TIP]
-> Environment variables always override any settings in the NuGet.Config file. If your pipeline failed with the error: `Information, There is a cache miss.`, you must create a pipeline variable for `NUGET_PACKAGES` to point to the new local path on the agent (exp d:\a\1\). Your pipeline should pick up the changes then and continue the task successfully.
-
-In the above example, the `$(Build.SourcesDirectory)` points to your project's generated lock file. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
 
 ## Node.js/npm
 
@@ -428,67 +427,22 @@ steps:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
 ```
 
-## Python/pip
-
-For Python projects that use pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you use Poetry, in the `key` field, replace `requirements.txt` with `poetry.lock`.
-
-### Example
-
-```yaml
-variables:
-  PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'python | "$(Agent.OS)" | requirements.txt'
-    restoreKeys: | 
-      python | "$(Agent.OS)"
-      python
-    path: $(PIP_CACHE_DIR)
-  displayName: Cache pip packages
-
-- script: pip install -r requirements.txt
-```
-
-## Python/Pipenv
-
-For Python projects that use Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
-
-### Example
-
-```yaml
-variables:
-  PIPENV_CACHE_DIR: $(Pipeline.Workspace)/.pipenv
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'python | "$(Agent.OS)" | Pipfile.lock'
-    restoreKeys: | 
-      python | "$(Agent.OS)"
-      python
-    path: $(PIPENV_CACHE_DIR)
-  displayName: Cache pipenv packages
-
-- script: pipenv install
-```
-
 ## Python/Anaconda
 
-Set up your pipeline caching with Anaconda environments 
+Set up your pipeline caching with Anaconda environments:
 
 ### Example
 
 ```yaml
 variables:
-  CONDA_CACHE_DIR: $(Pipeline.Workspace)/.condarc
+  CONDA_CACHE_DIR: /usr/share/miniconda/envs
 
 # Add conda to system path
 steps:
@@ -509,6 +463,24 @@ steps:
   displayName: Create Anaconda environment
   condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
 ```
+
+- **Windows**
+
+    ```yaml
+    - task: Cache@2
+      displayName: Cache Anaconda
+      inputs:
+        key: 'conda | "$(Agent.OS)" | environment.yml'
+        restoreKeys: | 
+          python | "$(Agent.OS)"
+          python
+        path: $(CONDA)/envs
+        cacheHitVar: CONDA_CACHE_RESTORED
+    
+    - script: conda env create --quiet --file environment.yml
+      displayName: Create environment
+      condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
+    ```
 
 ## PHP/Composer
 
@@ -560,4 +532,3 @@ A: Caches expire after seven days of no activity.
 ### Q: Is there a limit on the size of a cache?
 
 A: There is no enforced limit on the size of individual caches or the total size of all caches in an organization.
-

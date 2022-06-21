@@ -1,19 +1,19 @@
 ---
 title: Troubleshoot an Analytics view
 titleSuffix: Azure DevOps
-description: Resolve errors that occur with an Analytics view and Power BI for Azure DevOps 
+description: Learn how to resolve errors that occur with an Analytics view and Power BI for Azure DevOps.
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/04/2018
+ms.date: 10/13/2021
 ---
 
 
 # Resolve errors associated with an Analytics view
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them with the [Power BI Connector](data-connector-connect.md). 
 
@@ -23,11 +23,11 @@ An Analytics view provides a simplified way to specify the filter criteria for a
 
 ### Warning: This view may contain too much data
 
-This warning appears when Power BI determines that it may not be able to load all the data contained within the view. It typically occurs when you haven't specified sufficient filters within the view or you've specified to load all history with a daily granularity. 
+This warning appears when Power BI determines that it can't load all the data contained within the view. It typically occurs when you haven't specified sufficient filters within the view or you've specified to load all history with a daily granularity. 
 
-To resolve this warning, specify additional [work items filters](analytics-views-create.md#specify-wi-filters) or modify the [History or Granularity](analytics-views-create.md#select-trend-data) to scope the view's results. 
+To resolve this warning, specify other [work items filters](analytics-views-create.md#specify-wi-filters) or modify the [History or Granularity](analytics-views-create.md#select-trend-data) to scope the view's results. 
 
-Views that pull a large amount of data, might take a long time to refresh and load in Power BI. For organizations with a large amount of data, it might even fail to load. To make sure your view will successfully load in Power BI, [Verify](analytics-views-create.md#verify-and-save) your view before saving it. 
+Views that pull a large amount of data might take a long time to refresh and load in Power BI. For organizations with a large amount of data, it might even fail to load. To make sure your view will successfully load in Power BI, [Verify](analytics-views-create.md#verify-and-save) your view before saving it. 
 
 ## Resolve verification errors
 
@@ -37,7 +37,7 @@ This error indicates that one of your project's [custom fields](../../organizati
 
 To resolve this error, rename your custom field.
 
-### Error: Field doesn't exists anymore
+### Error: Field doesn't exist anymore
 
 This error means that one of your [work items filters](analytics-views-create.md#specify-wi-filters) or [view fields](analytics-views-create.md#select-fields) references a field that was removed from your [project process](../../organizations/settings/work/customize-process-field.md). 
 
@@ -45,7 +45,7 @@ To resolve this error, [edit your view](analytics-views-manage.md#edit-an-existi
 
 ## Resolve errors in Power BI
 
-### Analytics view ... Does not exist or you do not have permission to view it
+### Analytics view ... Doesn't exist or you don't have permission to view it
 
 This error occurs when you try to refresh a view in Power BI that is no longer available in Azure DevOps. One or more of the following actions may have occurred: 
 - The view was renamed

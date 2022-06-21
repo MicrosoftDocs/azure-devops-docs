@@ -4,20 +4,19 @@ description: Target Kubernetes clusters with the Kubernetes resource. Use Kubern
 ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.manager: atulmal
-ms.date: 10/11/2021
+ms.date: 03/23/2022
 monikerRange: azure-devops
 ---
 
 # Environment - Kubernetes resource
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 The Kubernetes resource view provides a glimpse into the status of objects within the namespace that's mapped to the resource. This view also overlays pipeline traceability so you can trace back from a Kubernetes object to the pipeline, and then back to the commit.
 
-Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider.
+Use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider. 
 
-To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
+You can use Kubernetes resources with public or private clusters. To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
 
 ## Overview
 
@@ -100,32 +99,60 @@ In the following example, the first deployment job is run for non-PR branches an
 Define variables to use in the pipeline. If you use the [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md), these variables get defined for you.
 
 ```YAML
-trigger: main
+# Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
+trigger:
+- main
 
 resources:
 - repo: self
 
 variables:
+
+  # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '12345' # Docker service connection identifier
-  vmImageName: 'myVM' # name of your VM
   envName: 'myEnv' # name of your environment
-  resourceName: 'myResource' # name of the resource you are referencing
-  dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)' # tag added for your build
-  k8sNamespaceForPR: 'my-namespace' # namespace used in your PR
-  imagePullSecret: 'my-app-secret' # image pull secret
   imageRepository: 'name-of-image-repository' # name of image repository
   containerRegistry: 'mycontainer.azurecr.io' # path to container registry
+  dockerfilePath: '**/Dockerfile'
+  tag: '$(Build.BuildId)'
+  imagePullSecret: 'my-app-secret' # image pull secret
 
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
 
-- stage: Deploy
+  # Name of the new namespace being created to deploy the PR changes.
+  k8sNamespaceForPR: 'review-app-$(System.PullRequest.PullRequestId)'
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+
+    - upload: manifests
+      artifact: manifests
+
+- stage: Production
   displayName: Deploy stage
   dependsOn: Build
 
   jobs:
-  - deployment: Deploy
+  - deployment: Production
     condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
-    displayName: Deploy
+    displayName: Production
     pool:
       vmImage: $(vmImageName)
     environment: $(envName).$(resourceName)
@@ -139,7 +166,7 @@ variables:
               action: createSecret
               secretName: $(imagePullSecret)
               dockerRegistryEndpoint: $(dockerRegistryServiceConnection)
-              
+
           - task: KubernetesManifest@0
             displayName: Deploy to Kubernetes cluster
             inputs:
@@ -157,13 +184,13 @@ variables:
     condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/pull/'))
     pool:
       vmImage: $(vmImageName)
-      
-    environment: '$(envName).$(k8sNamespaceForPR)'
+
+    environment: $(envName).$(resourceName)
     strategy:
       runOnce:
         deploy:
           steps:
-          - reviewApp: $(resourceName)
+          - reviewApp: default
 
           - task: Kubernetes@1
             displayName: 'Create a new namespace for the pull request'
@@ -179,7 +206,7 @@ variables:
               secretName: $(imagePullSecret)
               namespace: $(k8sNamespaceForPR)
               dockerRegistryEndpoint: $(dockerRegistryServiceConnection)
-          
+
           - task: KubernetesManifest@0
             displayName: Deploy to the new namespace in the Kubernetes cluster
             inputs:
@@ -192,6 +219,26 @@ variables:
                 $(imagePullSecret)
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
+
+          - task: Kubernetes@1
+            name: get
+            displayName: 'Get services in the new namespace'
+            continueOnError: true
+            inputs:
+              command: get
+              namespace: $(k8sNamespaceForPR)
+              arguments: svc
+              outputFormat: jsonpath='http://{.items[0].status.loadBalancer.ingress[0].ip}:{.items[0].spec.ports[0].port}'
+
+          # Getting the IP of the deployed service and writing it to a variable for posing comment
+          - script: |
+              url="$(get.KubectlOutput)"
+              message="Your review app has been deployed"
+              if [ ! -z "$url" -a "$url" != "http://:" ]
+              then
+                message="${message} and is available at $url.<br><br>[Learn More](https://aka.ms/testwithreviewapps) about how to test and provide feedback for the app."
+              fi
+              echo "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
 ```
 
 To use this job in an **existing** pipeline, the service connection backing the regular Kubernetes environment resource must be modified to "Use cluster admin credentials". Otherwise, role bindings must be created for the underlying service account to the Review App namespace.

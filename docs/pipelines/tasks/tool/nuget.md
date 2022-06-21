@@ -9,7 +9,7 @@ monikerRange: 'azure-devops'
 
 # NuGet Tool Installer task
 
-**Azure Pipelines**
+[!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 **Build**
 

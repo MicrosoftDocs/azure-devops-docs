@@ -7,14 +7,14 @@ ms.assetid: A104BE40-2BFD-4E80-828B-F50944C12107
 ms.author: vijayma
 author: vijayma
 ms.date: 02/24/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # MSBuild task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
@@ -113,11 +113,19 @@ msbuild
    </tr>
    <tr>
       <td><code>restoreNugetPackages</code><br/>Restore NuGet Packages</td>
-      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="../package/prev-versions/nuget-installer-0.md" data-raw-source="[NuGet Installer](../package/prev-versions/nuget-installer-0.md)">NuGet Installer</a> build task. <br/>Default value: false</td>
+      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="/previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true" data-raw-source="[NuGet Installer](/previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true)">NuGet Installer</a> build task. <br/>Default value: false</td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Advanced</th>
-   </tr>
+</table>
+
+### Advanced options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>logProjectEvents</code><br/>Record Project Details</td>
       <td>
@@ -136,10 +144,9 @@ msbuild
          <p>Optional log file verbosity</p> <br/>Default value: normal
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-   </tr>
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Open source
 
@@ -290,7 +297,7 @@ To setup your own self-hosted agent and run the build jobs:
 
 * [Self-hosted Windows agents](../../agents/v2-windows.md#self-hosted-windows-agents)
 * [Self-hosted Linux agents](../../agents/v2-linux.md#self-hosted-linux-agents)
-* [Self-hosted MacOS agents](../../agents/v2-osx.md#self-hosted-macos-agents)
+* [Self-hosted macOS agents](../../agents/v2-osx.md#self-hosted-macos-agents)
 
 ##### What else can I do?
 

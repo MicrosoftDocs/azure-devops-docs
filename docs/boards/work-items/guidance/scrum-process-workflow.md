@@ -1,7 +1,7 @@
 ---
-title: Scrum process work items types & workflow
+title: Understand Scrum process work items types & workflow
 titleSuffix: Azure Boards
-description: How to guide for using the Scrum process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to use the Scrum process work item types and workflow to track work in Azure Boards and Azure DevOps.
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/19/2018
+ms.date: 04/01/2022
 ---
 
-# Scrum process work item types and workflow  
+# Manage your Scrum process work item types and workflow  
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
+To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners, and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks that automatically link to PBIs and bugs.
 
 ![Scrum process, WITs used to plan and track](media/scrum-process-plan-wits.png) 
 
@@ -62,7 +62,7 @@ Use the following guidance and that provided for [fields used in common across w
    :::column span="3":::
    Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required.  
 
-   Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+   Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
 
    :::column-end:::
 :::row-end:::
@@ -122,7 +122,7 @@ By updating the State, teams know which items are new, in progress, or completed
 PBIs and bugs follow this typical workflow progression:
 
 -   The product owner creates a PBI or a tester creates a bug in the **New** state with the default reason, **New backlog item**  
--   The product owner moves the item to **Approved** after it is sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state  
+-   The product owner moves the item to **Approved** after it's sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state  
 -   The team updates the status to **Committed** when they decide to commit to working on it during the sprint  
 -   The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
@@ -133,7 +133,7 @@ Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the st
 
 ![Track progress on the Kanban board](../../boards/media/ALM_CC_MoveCard.png)
 
-You can customize the Kanban board to support additional [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
+You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For other customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
 
 ## Map PBIs to features
@@ -152,7 +152,7 @@ Name the task and estimate the work it will take.
 
 <img src="media/scrum-task-form.png" alt="Scrum process, Task work item form" />  
 
-Using Scrum, teams forecast work and define tasks at the start of each sprint, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement PBIs, and a tester can define tasks to write and run test cases.
+Using Scrum, teams forecast work and define tasks at the start of each sprint, and each team member completes a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement PBIs, and a tester can define tasks to write and run test cases.
 
 When teams estimate work using hours or days, they define tasks and the **Remaining Work** and **Activity** (optional) fields.
 
@@ -196,7 +196,7 @@ From the web portal or Test Manager, you can [create test cases that automatical
 <img src="media/IC793453.png" alt="Web portal, Select the test suite and add a test case" /> 
 
 
-The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
+The test case contains many fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
 ![Scrum Test case work item form](media/scrum-test-case-form.png)  
 
@@ -230,7 +230,7 @@ Work items you add from the widget are automatically scoped to your team's defau
 
 ### Backlog list order
 
-The [Backlog Priority](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of PBIs, bugs, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
+The [Backlog Priority](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of PBIs, bugs, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
 
 
 

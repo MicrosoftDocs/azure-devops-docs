@@ -1,73 +1,61 @@
 ---
-title: Install Maven Artifacts from your feed using the Maven client
+title: Install Maven Artifacts 
 description: How to install Maven Artifacts
 ms.technology: devops-artifacts
 ms.assetid: 0f66e727-e76a-4a72-be12-3fa1775b9e2c
 ms.manager: jenp
-ms.author: rabououn
-author: ramiMSFT
 ms.topic: conceptual
 ms.reviewer: dastahel
-ms.date: 01/31/2018
-monikerRange: '>= tfs-2018'
+ms.date: 12/13/2021
+monikerRange: '<= azure-devops'
 ---
-
- 
 
 # Install Maven Artifacts
 
-**Azure DevOps Services** | **TFS 2018**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [](../includes/maven/install.md)]
+With Azure Artifacts, you can publish and restore Maven packages to/from your Azure Artifacts feed. In this article, we will be covering how to restore your packages from an Azure Artifacts feed.
 
-	
-**Sample `pom.xml`:**
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-   <modelVersion>4.0.0</modelVersion>
-   <groupId>MyGroup</groupId>
-   <artifactId>myFirstApp</artifactId>
-   <packaging>jar</packaging>
-   <version>1.0-SNAPSHOT</version>
-   <name>myFirstApp</name>
-   <url>http://maven.apache.org</url>
-   <dependencies>
-      <dependency>
-         <groupId>junit</groupId>
-         <artifactId>junit</artifactId>
-         <version>3.8.1</version>
-         <scope>test</scope>
-      </dependency>
-   </dependencies>
-   <repositories>
-    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
-      <repository>
-         <id>dev.azure.com-mseng-zcalvinmaven</id>
-         <url>https://dev.azure.com/mseng/_packaging/zCalvinMaven2/maven/v1</url>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </repository>
-   </repositories>
-   <distributionManagement>
-    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
-      <repository>
-         <id>dev.azure.com-mseng-zcalvinmaven</id>
-         <url>https://dev.azure.com/mseng/_packaging/zCalvinMaven2/maven/v1</url>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </repository>
-   </distributionManagement>
-</project>
+## Prerequisites
+
+- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
+- [Azure Artifacts feed](../../artifacts/get-started-nuget.md).
+
+## Connect to feed
+
+1. From within your project, select **Artifacts**, and then select your feed.
+
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to your feed":::
+
+1. Select **Maven**.
+
+    :::image type="content" source="../media/maven-connect-feed.png" alt-text="Screenshot showing how to connect to Maven feeds.":::
+
+1. If this is the first time using Azure Artifacts with Maven, select **Get the tools** button and follow the instructions to download and install the prerequisites.
+
+    1. [Download Maven](https://maven.apache.org/download.cgi).
+    1. [Install Maven](https://maven.apache.org/install.html).
+
+1. Follow the instructions in the **Project setup** section to set up your config files and generate a new personal access token.
+
+    :::image type="content" source="../media/maven-project-setup.png" alt-text="Screenshot showing how to set up Maven projects.":::
+
+> [!NOTE]
+> The `<id>` tags in your *settings.xml* and *pom.xml* files must be the same.
+
+## Restore Maven packages
+
+Run the following command in an elevated command prompt to download your Maven packages. Maven automatically downloads all your dependency to your local repository when the build command is executed.
+
+```Command
+mvn build
 ```
 
-> [!IMPORTANT]
-> The `<id>` tags in the _settings.xml_ and the _pom.xml_ **must** match.
+## Related articles
+
+- [Use packages from Maven Central](./upstream-sources.md)
+- [Use public feeds to share your packages publicly](../tutorials/share-packages-publicly.md)
+- [Configure permissions](../feeds/feed-permissions.md)
+- [Use feed views to share packages](../feeds/views.md)

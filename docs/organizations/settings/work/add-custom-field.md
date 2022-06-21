@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/16/2021
+ms.date: 01/11/2022
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
 
-You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
+You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md). For a description of each field defined with a system process, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md). 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
@@ -147,6 +147,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [View work item fields and attributes](../../../boards/work-items/work-item-fields.md)
 - [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field) 
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)

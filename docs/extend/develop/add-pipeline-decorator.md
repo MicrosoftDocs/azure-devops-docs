@@ -4,15 +4,15 @@ description: Inject steps before and after every pipeline job
 ms.topic: reference
 ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
+ms.author: chcomley
+author: chcomley
 ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
 # Use a decorator to inject steps into a pipeline
 
-[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
-
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
 Pipeline decorators let you add steps to the beginning and end of every job.
 This process is different than adding steps to a single definition because it applies to all pipelines in an organization.
@@ -20,6 +20,8 @@ This process is different than adding steps to a single definition because it ap
 Suppose our organization requires running a virus scanner on all build outputs that could be released.
 Pipeline authors don't need to remember to add that step. We create a decorator that automatically injects the step.
 Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Author a pipeline decorator
 
@@ -63,8 +65,10 @@ Let's take a look at the properties and what they're used for:
 | ------------- |:-------------|
 | `id` | Contribution identifier. Must be unique among contributions in this extension. |
 | `type` | Specifies that this contribution is a pipeline decorator. Must be the string `ms.azure-pipelines.pipeline-decorator`. |
-| `targets` | Decorators can run before your job, after, or both. See the table below for available options. |
-| `properties` | The only property required is a `template`. The template is a YAML file included in your extension, which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+| `targets` | Decorators can run before your job/specified task, after, or both. See the table below for available options. |
+| `properties.template` | (Required) The template is a YAML file included in your extension, which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+| `properties.targettask` | The target task id used for `ms.azure-pipelines-agent-job.pre-task-tasks` or `ms.azure-pipelines-agent-job.post-task-tasks` targets. Must be GUID string like `89b8ac58-8cb7-4479-a362-1baaacc6c7ad` |
+
 
 ### Targets
 
@@ -73,6 +77,10 @@ Let's take a look at the properties and what they're used for:
 | `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target runs before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
 | `ms.azure-pipelines-agent-job.post-checkout-tasks` | Run after the last `checkout` task in a classic build or YAML pipeline. |
 | `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
+| `ms.azure-pipelines-agent-job.pre-task-tasks` | Run before specified task in a classic build or YAML pipeline. |
+| `ms.azure-pipelines-agent-job.post-task-tasks` | Run after specified task in a classic build or YAML pipeline. |
+| `ms.azure-release-pipelines-agent-job.pre-task-tasks` | Run before specified task in a in a classic RM pipeline. |
+| `ms.azure-release-pipelines-agent-job.post-task-tasks` | Run after specified task in a in a classic RM pipeline. |
 | `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
 | `ms.azure-release-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic RM pipeline. |
 
@@ -155,6 +163,76 @@ steps:
   - script: dir
     displayName: 'Run my script (injected from decorator)'
 ```
+
+## Specifying a target task
+You can specify target [task id](add-build-task.md#taskjson), and inject tasks before or after this target task.
+To specify target task you can modify vss-extension.json manifest file like below:
+
+#### vss-extension.json
+```json
+{
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-pipelines-agent-job.pre-task-tasks",
+                "ms.azure-pipelines-agent-job.post-task-tasks"
+            ],
+            "properties": {
+                "template": "my-decorator.yml",
+                "targettask": "target-task-id"
+            }
+        }
+    ],
+    ...
+}
+```
+
+By setting up of 'targettask' property you can specify id of a target task.
+Tasks will be injected before/after all instances of specified target task. 
+
+
+### Specifying target task's inputs injection
+You can specify a list of inputs of the target task that you want to inject as inputs to the injected task.
+
+This feature is designed to work with [custom pipeline tasks](add-build-task.md#step-1-create-a-custom-task). It is not intended to provide access to target pipeline task inputs via pipeline variables.
+
+In order to get access to the target pipeline task inputs (inputs with the `target_` prefix), the injected pipeline task should use methods from the [azure-pipelines-tasks-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib), and not the pipeline variables, for example `const inputString = tl.getInput('target_targetInput')`). 
+
+To do this, you can create your own custom pipeline [task](add-build-task.md#task-implementation) and use the target inputs there. If you need the functionality of one of the out-of-box tasks, like `CmdLine@2`, you can create a copy of the [CmdLine@2 task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/CmdLineV2) and publish it with your decorator extension.
+
+> [!NOTE]
+> This functionality is only available for tasks that are injected before or after the target task.
+
+To specify this list of inputs you can modify vss-extension.json manifest file like below:
+
+#### vss-extension.json (injected task inputs version)
+```json
+{
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-pipelines-agent-job.pre-task-tasks",
+                "ms.azure-pipelines-agent-job.post-task-tasks"
+            ],
+            "properties": {
+                "template": "my-decorator.yml",
+                "targettask": "target-task-id",
+                "targettaskinputs": ["target-task-input", "target-task-second-input"]
+            }
+        }
+    ],
+    ...
+}
+```
+
+By setting up of 'targettaskinputs' property you can specify the list of inputs that are expected to be injected.
+These inputs will be injected into the task with the prefix "`target_`" and will be available in the injected task like `target_target-task-input`.
+> Note: Target task inputs that get secret values with variables or get them from other tasks won't be injected.
+
 
 <!--## Limitations
 

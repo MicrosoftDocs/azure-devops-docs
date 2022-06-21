@@ -6,13 +6,13 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 10/11/2021
 ---
 
 # About pipeline security roles
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="security-roles" />
 

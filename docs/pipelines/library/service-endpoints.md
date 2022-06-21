@@ -6,15 +6,15 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/29/2021
-monikerRange: '>= tfs-2015'
+ms.date: 11/05/2021
+monikerRange: '<= azure-devops'
 ---
 
 # Manage service connections
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -55,7 +55,7 @@ Complete the following steps to create a service connection for Azure Pipelines.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In Team Foundation Server (TFS), open the **Services** page from the "settings" icon in the top menu bar.
 1. Select **+ New service connection** and select the type of service connection you need.
@@ -95,7 +95,7 @@ Complete the following steps to edit a service connection.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 1. Select **Project settings** > **Service connections**.
@@ -130,7 +130,7 @@ Complete the following steps to manage security for a service connection.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 1. In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
@@ -265,7 +265,7 @@ You can also create your own [custom service connections](../../extend/develop/s
 
 Azure Pipelines supports the following service connection types by default:
 
-[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [BitBucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [External Git](#external-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
+[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [Bitbucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [External Git](#external-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
 
 ### Azure Classic service connection
 
@@ -277,14 +277,14 @@ Use the following parameters to define and secure a connection to a Microsoft Az
 | --------- | ----------- |
 | \[authentication type\] | Required. Select **Credentials** or **Certificate based**. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Environment | Required. Select **Azure Cloud**, **Azure Stack**, or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
+| Environment | Required. Select **Azure Cloud**, **Azure Stack**, or one of the predefined [Azure Government Clouds](/azure/azure-government/connect-with-azure-pipelines) where your subscription is defined. |
 | Subscription ID | Required. The GUID-like identifier for your Azure subscription (not the subscription name). You can copy the subscription ID from the Azure portal. |
 | Subscription name | Required. The name of your Microsoft Azure subscription. |
 | User name | Required for Credentials authentication. User name of a work or school account (for example @fabrikam.com). Microsoft accounts (for example @live or @hotmail) are't supported. |
 | Password | Required for Credentials authentication. Password for the user specified above. |
 | Management certificate | Required for Certificate-based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
 
-If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service connection.
+If your subscription is defined in an [Azure Government Cloud](/azure/azure-government/connect-with-azure-pipelines), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
 ### Azure Repos
 
@@ -436,7 +436,7 @@ There's a specific service connection for [GitHub](#github-service-connection) a
 | User name | Required. The username to connect to the Git repository server. |
 | Password/Token key | Required. The password or access token for the specified username. |
 
-For more information, see [Artifact sources](../release/artifacts.md#sources).
+For more information, see [Artifact sources](../release/artifacts.md#artifact-sources).
 
 ### Generic service connection
 
@@ -463,7 +463,7 @@ Use the following parameters to define a connection to a GitHub repository.
 |   Connection name    | Required. The name you use to refer to the service connection in task properties. It's not the name of your Azure account or subscription. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 
 > [!NOTE]
-> If you select **Grant authorization** for the **Choose authorization** option, the dialog shows an **Authorize** button that opens the GitHub signin page. If you select **Personal access token**, paste it into the **Token** textbox. The dialog shows the recommended scopes for the token: **repo, user, admin:repo_hook**. For more information, see
+> If you select **Grant authorization** for the **Choose authorization** option, the dialog shows an **Authorize** button that opens the GitHub signing page. If you select **Personal access token**, paste it into the **Token** textbox. The dialog shows the recommended scopes for the token: **repo, user, admin:repo_hook**. For more information, see
 [Create an access token for command line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 Then, complete the following steps to register your GitHub account in your profile.
 
@@ -472,7 +472,7 @@ Then, complete the following steps to register your GitHub account in your profi
 3. Select **Personal access tokens**.
 4. Select **Add** and enter the information required to create the token.
 
-For more information, see [Artifact sources](../release/artifacts.md#tfvcsource).
+For more information, see [Artifact sources - version control](../release/artifacts.md#artifact-sources---version-control).
 
 ### GitHub Enterprise Server service connection
 
@@ -515,7 +515,7 @@ Use the following parameters to define a connection to the Jenkins service.
 |             User name             |                                                                                                               Required. The username to connect to the service.                                                                                                                |
 |             Password              |                                                                                                               Required. The password for the specified username.                                                                                                               |
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://devblogs.microsoft.com/devops/vsts-visual-studio-team-services-integration-with-jenkins/) and [Artifact sources](../release/artifacts.md#jenkinssource).
+For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#artifact-sources---jenkins).
 
 ### Kubernetes service connection
 
@@ -593,7 +593,7 @@ Use the following parameters when you define and secure a connection to a Maven 
 |       Password        |                                                                                           Required when connection type is **Username and Password**. The password for the username.                                                                                           |
 | Personal Access Token |                                  Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                                   |
 
-### Npm service connection
+### npm service connection
 
 Use the following parameters when you define and secure a connection to an npm server.
 
@@ -703,10 +703,10 @@ Use the following parameters when you define and secure a connection to Visual S
 Other service connection types and tasks can be installed as extensions. See the following examples of service connections available through extensions:
 
 * [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
-  Deploy on-premises TFS builds with Azure Pipelines through a TFS service connection and the **Team Build (external)** artifact, even when the TFS machine isn't reachable directly from Azure Pipelines. For more information, see [External TFS](../release/artifacts.md#onpremtfssource) and [this blog post](https://devblogs.microsoft.com/devops/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
+  Deploy on-premises TFS builds with Azure Pipelines through a TFS service connection and the **Team Build (external)** artifact, even when the TFS machine isn't reachable directly from Azure Pipelines. For more information, see [External TFS](../release/artifacts.md#artifact-sources---tfs-server) and [this blog post](https://devblogs.microsoft.com/devops/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
 * [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
-  This extension provides integration with TeamCity through a TeamCity service connection, enabling artifacts produced in TeamCity to be deployed by using Azure Pipelines. For more information, see [TeamCity](../release/artifacts.md#teamcitysource).
+  This extension provides integration with TeamCity through a TeamCity service connection, enabling artifacts produced in TeamCity to be deployed by using Azure Pipelines. For more information, see [TeamCity](../release/artifacts.md#artifact-sources---teamcity).
 
 * [System Center Virtual Machine Manager (SCVMM) Integration](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp).
   Connect to an SCVMM server to provision virtual machines and do actions on them such as managing checkpoints, starting and stopping virtual machines (VMs), and running PowerShell scripts.

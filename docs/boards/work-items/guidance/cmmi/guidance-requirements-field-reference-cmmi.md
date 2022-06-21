@@ -1,23 +1,27 @@
 ---
-title: CMMI Requirements field reference 
+title: Capability Maturity Model Integration (CMMI) requirements reference 
 titleSuffix: Azure Boards
-description: Definition of fields used to track requirements in the CMMI process for Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Learn about the fields used to track requirements in the CMMI process for Azure DevOps.  
 ms.technology: devops-agile
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/24/2017
+ms.date: 11/07/2021
 ---
 
-# Requirements field reference (CMMI)
+# Requirements field reference for the CMMI process in Azure Boards
 
-[!INCLUDE [temp](../../../includes/version-all.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../../includes/version-lt-eq-azure-devops.md)]
+
+<a id="fields" /> 
 
 When you create a project using the [CMMI process](../cmmi-process.md), you can define fields to track requirements to be developed and their importance to the overall product.  
-  
-None of these fields are indexed. For more information about data types and field attributes, see [Work item fields and attributes](../../work-item-fields.md).  
+ 
+ 
+None of these fields are indexed. For more information about data types and field attributes, 
+see [Work item fields and attributes](../../work-item-fields.md). 
   
 > [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Data type**|**Reportable type**|  
@@ -32,4 +36,5 @@ None of these fields are indexed. For more information about data types and fiel
 1.  To change the menu selection, see [Customize a picklist](../../../../reference/add-modify-field.md).  
   
 ## Related articles
- [Index of work item fields](../work-item-field.md)
+
+- [Index of work item fields](../work-item-field.md)

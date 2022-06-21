@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-monikerRange: '>= tfs-2018'
+monikerRange: '<= azure-devops'
 ms.date: 11/19/2018  
 ---
 
 # Filter the contents of a wiki or print a page
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 To focus on a single page or several pages, use the *Filter pages* feature in the table of contents (TOC). Or, to find pages containing a phrase or keyword, you can use the [search function](../search/get-started-search.md).
 

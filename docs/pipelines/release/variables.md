@@ -7,14 +7,14 @@ ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
 ms.custom: seodec18, contperf-fy20q4
 ms.date: 10/18/2021
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Classic release and artifacts variables
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
@@ -54,7 +54,7 @@ With the exception of **System.Debug**, these variables are read-only and their 
 Some of the most significant variables are described in the following tables.
 To view the full list, see [View the current values of all variables](#view-vars).
 
-## Default variables - System
+## System
 
 | Variable name | Description |
 |---------------|-------------|
@@ -69,7 +69,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder.<br/><br />Example: `C:\agent\_work`  |
 | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to [run the release in debug mode](#debug-mode) to assist in fault-finding.<br/><br />Example: `true` |
 
-## Default variables - Release
+## Release
 
 | Variable name | Description |
 |---------------|-------------|
@@ -99,13 +99,13 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.SkipArtifactsDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent.<br/><br />Example: `FALSE` |
 | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually.<br/><br />Example: `fabrikam\_app` |
 
-## Default variables - Release stage
+## Release-stage
 
 | Variable name | Description |
 |---------------|-------------|
 | Release.Environments.{stage name}.Status | The status of deployment of this release within a specified stage. Not available in TFS 2015.<br/><br />Example: `NotStarted` |
 
-## Default variables - Agent
+## Agent
 
 | Variable name | Description |
 | ------------- | ----------- |
@@ -120,7 +120,8 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group jobs. Not available in TFS 2018 Update 1.<br/><br />Example: `1` |
 
 <a id="artifact-variables"></a>
-## Default variables - General Artifact
+
+## General Artifact
 
 For each artifact that is referenced in a release, you can use the following artifact variables.
 Not all variables are meaningful for each artifact type. The table below lists the default artifact
@@ -148,7 +149,7 @@ Replace the `{alias}` placeholder with the value you specified for the [artifact
 
 See also [Artifact source alias](artifacts.md#source-alias)
 
-## Default variables - Primary Artifact
+## Primary Artifact
 
 You designate one of the artifacts as a primary artifact in a release pipeline. For the designated primary artifact, Azure Pipelines populates the following variables.
 
@@ -169,7 +170,7 @@ You designate one of the artifacts as a primary artifact in a release pipeline. 
 | Build.PullRequest.TargetBranch | Release.Artifacts.{Primary artifact alias}.PullRequest.TargetBranch |
 | Build.PullRequest.TargetBranchName | Release.Artifacts.{Primary artifact alias}.PullRequest.TargetBranchName |
 
-## Using default variables
+## Use default variables
 
 You can use the default variables in two ways - as parameters to tasks in a release pipeline or in your scripts.
 
@@ -268,7 +269,7 @@ Using custom variables at project, release pipeline, and stage scope helps you t
 > [!NOTE]
 > Creating custom variables can overwrite standard variables. For example, the PowerShell **Path** environment variable. If you create a custom `Path` variable on a Windows agent, it will overwrite the `$env:Path` variable and PowerShell won't be able to run.
 
-## Using custom variables
+## Use custom variables
 
 To use custom variables in your build and release tasks, simply enclose the 
 variable name in parentheses and precede it with a **$** character. For example,

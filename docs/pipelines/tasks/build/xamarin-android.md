@@ -7,12 +7,12 @@ ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Xamarin.Android task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build an Android app with Xamarin.
 
@@ -76,9 +76,17 @@ AndroidSDK, MSBuild, Xamarin.Android
          (Optional) Passes the clean target (/t:clean) during build <br/>Default value: false
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">MSBuild Options</th>
-   </tr>
+</table>
+
+### MSBuild options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>msbuildLocationMethod</code><br/>MSBuild</td>
       <td>
@@ -113,9 +121,17 @@ AndroidSDK, MSBuild, Xamarin.Android
          (Optional) Additional arguments passed to MSBuild (on Windows) or xbuild (on macOS).
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">JDK Options</th>
-   </tr>
+</table>
+
+### JDK options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>jdkSelection</code><br/>Select JDK to use for the build</td>
       <td>
@@ -152,10 +168,9 @@ AndroidSDK, MSBuild, Xamarin.Android
          <br/>Argument aliases: <code>jdkArchitectureOption</code>
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-   </tr>
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Example
 

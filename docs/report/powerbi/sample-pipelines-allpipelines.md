@@ -1,7 +1,7 @@
 ---
 title: Pipeline outcome summary for all pipelines sample report 
 titleSuffix: Azure DevOps
-description: How to generate a pipeline outcome summary Power BI report for all pipelines in the project  
+description: Learn how to generate a pipeline outcome summary Power BI report for all pipelines in the project.  
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,14 +9,14 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 09/21/2021
+ms.date: 10/12/2021
 ---
 
 # Pipeline outcome summary for all pipelines sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-You may want to see pipeline metrics such as pass rate, number of failures, duration etc. for all the pipelines together, in a single report. This article shows you how to get pipeline outcome summary, for all the pipelines in a project. A similar approach can be taken to get other metrics like pipeline duration and number of failures for all pipelines of the project in a single report.
+You may want to see pipeline metrics such as pass rate, number of failures, duration, and so on. for all the pipelines together, in a single report. This article shows you how to get pipeline outcome summary, for all the pipelines in a project. You can take a similar approach to get other metrics like pipeline duration and number of failures for all pipelines of the project in a single report.
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -25,7 +25,7 @@ An example is shown in the following image.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report1.png)
 
-As shown in the above image, you can select any pipeline from the "Pipeline Name" drop down at top right and the report will show the outcome summary for the selected pipeline only
+As shown in the above image, you can select any pipeline from the "Pipeline Name" drop-down at top right and the report will show the outcome summary for the selected pipeline only
 
 > [!div class="mx-imgBorder"] 
 > ![Report shows the outcome summary for the selected pipeline only.](media/odatapowerbi-pipelines/allpipelines-report2.png)
@@ -36,7 +36,7 @@ As shown in the above image, you can select any pipeline from the "Pipeline Name
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -60,7 +60,7 @@ in
     Source
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -85,7 +85,7 @@ aggregate(
 
 ### Substitution strings
 
-Each query contains the following strings that you must substitute with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
+Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
  
 - {organization} - Your organization name
 - {project} - Your team project name

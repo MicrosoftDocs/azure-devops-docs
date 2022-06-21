@@ -1,7 +1,7 @@
 ---
-title: Pipeline pass rate trend of a test sample Power BI reports 
+title: Pipeline pass rate trend of a test sample Power BI report
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pass rate trend Power BI report for a given test of a pipeline in the project  
+description: Learn how to generate a pass rate trend Power BI report for a given test of a pipeline in the project.
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
@@ -11,12 +11,12 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 08/14/2020
+ms.date: 10/13/2021
 ---
 
 # Pass rate trend of a test sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
 This article shows you how to create a report that shows day wise trend of number of times a test passed and failed, along with its pass rate of any given test of a pipeline.
 
@@ -94,13 +94,13 @@ $apply=filter(
 
 ### Substitution strings
 
-Each query contains the following strings that you must substitute with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
+Each query contains the following strings that you must replace with your values. Don't include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace `{organization}` with **Fabrikam**, not `{Fabrikam}`.
  
-- {organization} - Your organization name
-- {project} - Your team project name
-- {pipelinename} - Your pipeline name. Example: **Fabrikam hourly build pipeline**.
-- {testName} - Your test name
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2021-09-01Z** represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{organization}` - Your organization name
+- `{project}` - Your team project name
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{testName}` - Your test name
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
@@ -191,7 +191,7 @@ The following table describes each part of the query.
    `ResultCount with sum as TotalCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of test runs as TotalCount
+   Count the total number of test runs as TotalCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -199,7 +199,7 @@ The following table describes each part of the query.
    `ResultPassCount with sum as ResultPassCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of passed test runs as ResultPassCount
+   Count the total number of passed test runs as ResultPassCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -207,7 +207,7 @@ The following table describes each part of the query.
    `ResultFailCount with sum as ResultFailCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of failed test runs as ResultFailCount
+   Count the total number of failed test runs as ResultFailCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -215,7 +215,7 @@ The following table describes each part of the query.
    `ResultAbortedCount with sum as ResultAbortedCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of aborted test runs as ResultAbortedCount
+   Count the total number of aborted test runs as ResultAbortedCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -223,7 +223,7 @@ The following table describes each part of the query.
    `ResultErrorCount with sum as ResultErrorCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of errored test runs as ResultErrorCount
+   Count the total number of errored test runs as ResultErrorCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -231,7 +231,7 @@ The following table describes each part of the query.
    `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
    :::column-end:::
    :::column span="1":::
-   Count the total number of not executed test runs as ResultNotExecutedCount
+   Count the total number of not executed test runs as ResultNotExecutedCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -239,7 +239,7 @@ The following table describes each part of the query.
    `ResultNotImpactedCount with sum as ResultNotImpactedCount`
    :::column-end:::
    :::column span="1":::
-   Count the total number of not impacted test runs as ResultNotImpactedCount
+   Count the total number of not affected test runs as ResultNotImpactedCount.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -263,7 +263,7 @@ The following table describes each part of the query.
    `iif(TotalCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpactedCount) div cast(TotalCount sub ResultNotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate)`
    :::column-end:::
    :::column span="1":::
-   For all the days, calculate Pass rate
+   For all the days, calculate Pass rate.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -277,7 +277,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example such an entity is Date.
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such an entity is Date.
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **Date**.
 

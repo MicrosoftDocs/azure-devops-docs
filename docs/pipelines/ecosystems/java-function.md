@@ -2,16 +2,17 @@
 title: Build and deploy a Java web app to Azure Functions
 description: Learn about continuous integration and deployment (CI/CD) to a Java web app on Linux.
 ms.topic: tutorial
+ms.custom: freshness-fy22q2, devx-track-azurecli
 ms.assetid: 3156B628-1DEA-4F92-84E5-6C3E18B4DAC1
-ms.date: 04/27/2021
+ms.date: 12/22/2021
 monikerRange: 'azure-devops'
 ---
 
 # Build and deploy Java to Azure Functions
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-You can use Azure Functions to run small pieces of code in the cloud without the overhead of running a server. In this step-by-step guide you'll learn how to create a pipeline that continuously builds and deploys a your Java function app. Your team can then automatically build each commit in GitHub, and if you want, automatically deploy the change to Azure Functions.
+You can use Azure Functions to run small pieces of code in the cloud without the overhead of running a server. Learn how to create a pipeline that continuously builds and deploys your Java function app. Your team can then automatically build each commit at GitHub, and if you want, automatically deploy the change to Azure Functions.
 
 ## Prerequisites
 
@@ -55,17 +56,13 @@ Update `pom.xml` to reflect your application. Edit the `pom.xml` file in your fo
         <functionResourceGroup>RESOURCE_GROUP</functionResourceGroup>
 ```
 
-## Sign in to Azure Pipelines and connect to Azure
-
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
-
-[!INCLUDE [include](includes/create-project.md)]
-
 [!INCLUDE [include](includes/create-service-connection.md)]
 
 ## Create the pipeline
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+
+### Use Maven template
 
 When the **Configure** tab appears, select **Maven**. Your new pipeline appears.
 
@@ -110,12 +107,10 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
 
 [!INCLUDE [include](includes/run-pipeline.md)]
 
-After the pipeline has run, test the function app running on Azure. For example, in bash or from a command prompt enter:
+After the pipeline has run, test your function app running on Azure. For example, in bash or from a command prompt enter:
 
 `curl -w '\n' https://my-app-name-00000000000000000.azurewebsites.net/api/HttpTrigger-Java -d fromYourPipeline`
 
-Your function then returns:
-
-`Hello PipelineCreator`
+Your function then returns `Hello PipelineCreator`.
 
 [!INCLUDE [include](includes/clean-up-resources.md)]

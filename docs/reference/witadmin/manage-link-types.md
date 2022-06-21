@@ -1,6 +1,6 @@
 ---
 title: Manage link types
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps   
 description: Customize the link types to track related work, dependencies, and changes made over time  
 ms.technology: devops-agile
 ms.custom: witadmin
@@ -8,13 +8,13 @@ ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+monikerRange: '<= azure-devops'
+ms.date: 01/11/2022
 ---
 
 # Manage link types
 
-[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
 Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your project collection, review the link types available for your use. See [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).  
   
@@ -35,7 +35,7 @@ You manage the link types defined for a project collection by using the followin
 -   To list or export link types, you must have your **View project-level information** permission for a project in the collection set to **Allow**.    
 -   To delete, import, or reactive link types, you must be a member of the **Project Collection Administrators** security group or have your **Manage work item link types** permission set to **Allow**.  
   
-For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
+For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
@@ -55,7 +55,7 @@ witadmin reactivatelinktype /collection:CollectionURL /n:LinkName
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*. |  
+|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br />**http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*. |  
 |**/n:** `LinkName`|The name or the reference name of the link type to deactivate or delete.|  
 |**/f:** `FileName`|The XML file of link types. Required for import, optional for export. If you omit this parameter, the command output appears on the display.|  
 |**/e:** `encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  

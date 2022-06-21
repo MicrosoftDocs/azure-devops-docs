@@ -1,24 +1,23 @@
 ---
 title: Code review and feedback field reference
 titleSuffix: Azure Boards
-description: Definition of fields used to track code review and feedback requests and responses for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to use the code review and feedback fields to track code review and feedback requests and responses for Azure Boards and Azure DevOps.
 ms.technology: devops-agile
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/28/2021
+ms.date: 11/07/2021
 ---
 
-# Code review and feedback field reference
+# Code review and feedback field reference in Azure Boards and Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-all.md)]
-
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 You can use the code review and feedback fields to create queries and reports that track the status of these processes. The fields appear in the following work item types, which are included with the default processes for Azure Boards and TFS: Code Review Request, Code Review Response, Feedback Request, and Feedback Response.  
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2018"
 
 > [!NOTE]  
 >  If your Azure DevOps or TFS server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).   
@@ -26,6 +25,7 @@ You can use the code review and feedback fields to create queries and reports th
 ::: moniker-end
 
 <a name="codereviews"></a> 
+<a id="fields" />
 
 ## Fields used to track code reviews  
 
@@ -53,7 +53,8 @@ You can use the code review and feedback fields to create queries and reports th
 
 <a name="feedback"></a> 
 
-## Fields used to track feedback  
+## Fields used to track feedback 
+ 
  The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is provided. See [Get feedback](../../../project/feedback/get-feedback.md).  
   
 |**Field name**|**Description**|**Data type**|  

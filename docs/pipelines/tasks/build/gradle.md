@@ -7,12 +7,12 @@ ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4
 ms.author: vijayma
 author: vijayma
 ms.date: 03/03/2020
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Gradle task
 
-[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Use this task to build using a Gradle wrapper script.
 
@@ -54,12 +54,20 @@ Use this task to build using a Gradle wrapper script.
          <p>See <a href="https://docs.gradle.org/current/userguide/tutorial_using_tasks.html" data-raw-source="[Gradle Build Script Basics](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)">Gradle Build Script Basics</a>.</p><br/>Default value: build
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">JUnit Test Results</th>
-   </tr>
+</table>
+
+### JUnit test results options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>publishJUnitResults</code><br/>Publish to Azure Pipelines</td>
-      <td>(Required) Select this option to publish JUnit Test results produced by the Gradle build to Azure Pipelines/TFS.</td><br/>Default value: true
+      <td>(Required) Select this option to publish JUnit Test results produced by the Gradle build to Azure Pipelines/TFS.<br/>Default value: true</td>
    </tr>
    <tr>
       <td><code>testResultsFiles</code><br/>Test results files</td>
@@ -69,9 +77,17 @@ Use this task to build using a Gradle wrapper script.
       <td><code>testRunTitle</code><br/>Test run title</td>
       <td>(Optional) Assign a title for the JUnit test case results for this build.</td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Code Coverage</th>
-   </tr>
+</table>
+
+### Code coverage options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>codeCoverageTool</code><br/>Code coverage tool</td>
       <td>(Optional) Choose a code coverage tool to determine the code that is covered by the test cases for the build.<br/>Default value: None<br/>Argument aliases: <code>codeCoverageToolOption</code></td>
@@ -88,9 +104,17 @@ Use this task to build using a Gradle wrapper script.
       <td><code>failIfCoverageEmpty</code><br/>Fail when code coverage results are missing</td>
       <td>(Optional) Fail the build if code coverage did not produce any results to publish<br/>Default value: false<br/>Argument aliases: <code>codeCoverageFailIfEmpty</code></td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Advanced</th>
-   </tr>
+</table>
+
+### Advanced options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>cwd</code><br/>Working directory</td>
       <td>(Optional) Working directory in which to run the Gradle build. If not specified, the repository root directory is used</td>
@@ -115,8 +139,17 @@ Use this task to build using a Gradle wrapper script.
       <td><code>gradleOpts</code><br/>Set GRADLE_OPTS</td>
       <td>(Optional) Sets the GRADLE_OPTS environment variable, which is used to send command-line arguments to start the JVM. The xmx flag specifies the maximum memory available to the JVM.<br/>Default value: -Xmx1024m <br/>Argument aliases: <code>gradleOptions</code></td>
    </tr>
-   <th style="text-align: center" colspan="2">Code Analysis</th>
-   </tr>
+</table>
+
+### Code analysis options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>sqAnalysisEnabled</code><br/>Run SonarQube or SonarCloud Analysis</td>
       <td>(Required) This option has changed from version 1 of the <b>Gradle</b> task to use the <a href= "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube">SonarQube</a> and <a href= "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud">SonarCloud</a> marketplace extensions. Enable this option to run <a href= "http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html">SonarQube or SonarCloud analysis</a> after executing tasks in the <b>Tasks</b> field. You must also add a <b>Prepare Analysis Configuration</b> task from one of the extensions to the build pipeline before this Gradle task<br/>Default value: false <br/>Argument aliases: <code>sonarQubeRunAnalysis</code>
@@ -142,7 +175,7 @@ Use this task to build using a Gradle wrapper script.
       <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts. In Gradle 6.0 this plugin was removed. Use spotbugs plugin instead. <a href="https://docs.gradle.org/current/userguide/upgrading_version_5.html#the_findbugs_plugin_has_been_removed">More info<a/>. <br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code>
       </td>
    </tr>
-      <tr>
+   <tr>
       <td><code>pmdAnalysisEnabled</code><br/>Run PMD</td>
       <td>(Optional) Use the PMD Java static analysis tool to look for bugs in the code. Results are uploaded as build artifacts <br/>Default value: false <br/>Argument aliases: <code>pmdRunAnalysis</code>
       </td>
@@ -162,10 +195,9 @@ Use this task to build using a Gradle wrapper script.
       <td>(Required) <a href="https://plugins.gradle.org/plugin/com.github.spotbugs">Refer</a> for all available versions.<br/>Default value: 4.7.0 <br/>Argument aliases:         <code>spotbugsGradlePluginVersion</code>
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-   </tr>
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Example
 

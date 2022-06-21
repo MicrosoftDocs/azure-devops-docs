@@ -6,13 +6,13 @@ ms.technology: devops-artifacts
 ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.date: 07/20/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Debug with Visual Studio
 
-**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. These files contain useful information for the debugger and generally have the *PDB* extension. You can use Visual Studio to consume your symbols from Azure Artifacts symbol server or other external sources to step into your code and debug your application.
 

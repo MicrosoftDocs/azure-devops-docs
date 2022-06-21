@@ -1,19 +1,19 @@
 ---
 title: What are Analytics views?
 titleSuffix: Azure DevOps
-description: Describes how Analytics views work with Azure DevOps and Power BI integration 
+description: Learn how Analytics views work with Azure DevOps and Power BI integration. 
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/08/2021
+ms.date: 10/13/2021
 ---
 
 
 # What are Analytics views?
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=865481  --> 
 
@@ -25,7 +25,7 @@ You can use a [default Analytics view](analytics-default-views.md) or [create a 
 
 ## Default Analytics views
 
-As set of default Analytics views are provided. The default views and are immediately accessible from Power BI. The view you select determines the set of records, fields, and history that are pulled into Power BI.  
+As set of default Analytics views are provided. The default views and are immediately accessible from Power BI. The view you select determines the set of records, fields, and history that is pulled into Power BI.  
 
 ::: moniker range="azure-devops"
 
@@ -41,7 +41,7 @@ Here we show the default views created for a project based on the Agile process.
 
 [!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
-When you use the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history that are loaded into Power BI.
+When you use the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history that is loaded into Power BI.
 
 ::: moniker range="azure-devops"
 
@@ -61,14 +61,14 @@ Default Analytics views work well for customers with small datasets. To learn mo
 
 ## Custom Analytics views
 
-If the default Analytics views do not meet your needs, you can create custom views to fine-tune the records, fields, and history returned to Power BI.
+If the default Analytics views don't meet your needs, you can create custom views to fine-tune the records, fields, and history returned to Power BI.
 
 A custom view supports defining the following options:
 - Sharing options
 - Work item filters 
 - Team and area path filters
 - Backlog and work item type filters
-- Field specific filters 
+- Field-specific filters 
 - Fields to display 
 - View history and trend options 
 
@@ -80,7 +80,7 @@ For more information on how the dataset is modeled when using the Power BI Data 
 
 <a id="q-a"> </a>
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Data available from Analytics](data-available-in-analytics.md)

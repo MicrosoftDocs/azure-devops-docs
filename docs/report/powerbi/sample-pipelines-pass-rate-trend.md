@@ -9,14 +9,14 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'      
-ms.date: 09/21/2021
+ms.date: 10/12/2021
 ---
 
 # Pipeline pass rate trend sample report 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
 
-This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. This is similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
+This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. It's similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -31,7 +31,7 @@ The following image shows an example of such a trend.
 
 ## Sample queries
 
-#### [Power BI query](#tab/powerbi/)
+### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -60,7 +60,7 @@ in
     Source
 ```
 
-#### [OData query](#tab/odata/)
+### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -270,7 +270,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. This section lists the columns whose type needs to be changed for creating reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. This section lists the columns whose type you have to change for creating reports.
 
 1. Change the type of columns **PassRate, FailRate** and **PartiallySuccessfulRate** to **Decimal Number**.
 
@@ -315,10 +315,10 @@ Power BI shows you the fields you can report on.
 For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**. 
-1. Add the field "CompletedOn.Date" to **Axis**.
-    - Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
-1. Add the field "PassRate" to **Values**.
-	  - Right-click "PassRate" field and ensure **Sum** is selected.
+1. Add the field **CompletedOn.Date** to **Axis**.
+    - Right-click **CompletedOn.Date** and select **CompletedOn.Date**, rather than Date Hierarchy.
+1. Add the field **PassRate** to **Values**.
+	  - Right-click **PassRate** field and ensure **Sum** is selected.
   
 
 Your report should look like this. 
@@ -327,14 +327,14 @@ Your report should look like this.
 > ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
 
 
-## Additional queries
+## More queries
 
-You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
+You can use the following other queries to create different but similar reports using the same steps defined previously in this article.
 
 
-### Use Pipeline Id, rather than Pipeline Name
+### Use Pipeline ID, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline Id from the URL of the pipelines runs page.
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID from the URL of the pipelines runs page.
 
 `https://dev.azure.com/{organization}/{project}/_build?definitionId=**{pipelineid}**`
 
@@ -395,7 +395,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Filter by branch
 
-You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow the extra steps below along with what is defined previously in this article.
 - Expand Branch into Branch.BranchName
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary
@@ -457,7 +457,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Filter by Build Reason
 
-You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow these additional steps along with what is defined previously in this article.
+You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request, and so on) only. To create the report, follow these extra steps along with what is defined previously in this article.
 - Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary.
 
@@ -518,12 +518,12 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Pass rate trend for all project pipelines
 
-You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.  
+You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the extra steps below along with what is defined previously in this article.  
 - Expand Pipeline into  Pipeline.PipelineName  
 - Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**  
 - Select the Build pipeline from the slicer for which you need to see the outcome summary
 
-Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report that has detailed similar steps as required here.
 
 #### [Power BI query](#tab/powerbi/)
 

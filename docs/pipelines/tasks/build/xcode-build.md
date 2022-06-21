@@ -6,12 +6,12 @@ ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016
-monikerRange: '>= tfs-2015 <= tfs-2018'
+monikerRange: 'tfs-2018'
 ---
 
 # Xcode Build task
 
-**[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-eq-2018](../../../includes/version-eq-2018.md)]
 
 Use this task to build an Xcode workspace on macOS.
 
@@ -64,9 +64,17 @@ The default value is <code>$(SDK)</code>. Make sure to specify a value (for exam
 Select if you want to create an .IPA app package file.
 </td>
 </tr>
+</table>
+
+### (Optional) Signing and provisioning options
+
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">(Optional) Signing &amp; Provisioning</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Xcode 8 Automatic Signing</td>
 <td>
@@ -114,9 +122,17 @@ Select if you want the contents of the provisioning profile file to be removed f
 <blockquote><strong>Important: </strong> Select only if you are running one agent per user.</blockquote>
 </td>
 </tr>
+</table>
+
+### Package options
+
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">Package Options</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Archive Path</td>
 <td>
@@ -154,9 +170,17 @@ The 10 digit Team ID from the Apple Developer Portal to use for this export.
 Path to a plist file that configures archive exporting.
 </td>
 </tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">Advanced</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Arguments</td>
 <td>
@@ -194,9 +218,17 @@ Use <a href="https://github.com/supermarin/xcpretty/blob/master/README.md" data-
 If you have selected Use xcpretty (described above), select this option if you want to publish JUnit Test results to Azure Pipelines/TFS.
 </td>
 </tr>
+</table>
+
+### xctool (deprecated) options
+
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">xctool (deprecated)</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Use xctool</td>
 <td>
@@ -210,13 +242,9 @@ Select if you want to run <a href="https://github.com/facebook/xctool/blob/maste
 You can specify this argument if you have selected Use xctool and included <code>test</code> in Actions (arguments described above). Specify <code>junit:output-file-path-here.xml</code> to generate a file that you can publish using the <a href="https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishTestResultsV1" data-raw-source="[Publish Test Results](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishTestResultsV1)">Publish Test Results</a> task. When specified, <code>plain</code> is automatically added as well.
 </td>
 </tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Example
 
@@ -230,11 +258,5 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]
-
-::: moniker range="< azure-devops"
-
-[!INCLUDE [temp](../../includes/qa-versions.md)]
-
-::: moniker-end
 
 <!-- ENDSECTION -->

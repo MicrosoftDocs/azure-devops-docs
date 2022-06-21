@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Change the organization owner
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 As roles and responsibilities change, you can change the owner for your organization.
 
@@ -23,7 +23,7 @@ As roles and responsibilities change, you can change the owner for your organiza
 
 ## Prerequisites
 
-You must be a [**Project Collection Administrator** or an **organization Owner**](../security/lookup-organization-owner-admin.md). If no one in the organization has these permissions, contact [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html). Make sure the owner has completed the following tasks:
+You must be a [member of the **Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) or the [**Organization owner**](../security/look-up-organization-owner.md). If no one in the organization has these permissions, contact [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html). Make sure the owner has completed the following tasks:
 
 - Sign in to your organization, create a profile, and agree to the Terms of Service
 - Access the organization at least once after creating your initial profile
