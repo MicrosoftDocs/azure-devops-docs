@@ -198,4 +198,4 @@ future traceability purposes.
 > [Check out the entire DeepSpace IntelliJ tutorial](/azure/devops/java/labs/e2eintellij)
 
 > [!div class="nextstepaction"]
-> [View the IntelliJ plugin FAQ](/previous-versions/azure/devops/java/intellij-faq)
+> [View the IntelliJ plugin FAQ](/previous-versions/azure/devops/all/java/intellij-faq)
