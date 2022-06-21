@@ -4,7 +4,7 @@ description: How to share your packages with package badges
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 06/21/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -45,11 +45,13 @@ With Azure Artifacts, you can share your packages anywhere you can share an imag
 
 ::: moniker-end
 
-## Create badge
+## Create a package badge
 
-You can create a badge for any package in your feed with package-sharing enabled. You can only create a badge for the latest version of each package.
+With package-sharing enabled, you can create a badge for any package in your feed. But you can only create a badge for the latest version of each package.
 
-1. From within your feed, select your package and then select **Create badge**. 
+::: moniker range=">= azure-devops-2019"
+
+1. From within your feed, select your package and then select **Create badge**.
 
     :::image type="content" source="media/create-badge-new-ui.png" alt-text="A screenshot showing how to create a new package badge.":::
 
@@ -59,8 +61,22 @@ You can create a badge for any package in your feed with package-sharing enabled
 
 1. You can now share your package by using the Markdown snippet or the direct image link.
 
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. From within your feed, select your package and then select **Create badge**.
+
+    :::image type="content" source="media/pm-create-badge.png" alt-text="A screenshot showing how to create a badge in TFS 2018.":::
+
+1. Select a **Feed view** for your package badge.
+
+1. Share the Markdown snippet or image link with your customers.
+
+::: moniker-end
+
 ## Related articles
 
 - [Limits of package sizes and counts](./reference/limits.md)
-- [Package alerts](./how-to/follow-package-notifications.md)
+- [Package notifications](./how-to/follow-package-notifications.md)
 - [Use public feeds to share your packages](./tutorials/share-packages-publicly.md)
