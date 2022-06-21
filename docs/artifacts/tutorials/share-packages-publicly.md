@@ -72,6 +72,6 @@ As long as your project is kept public, anyone can view and download packages fr
 
 ## Related articles
 
-- [Limits on package sizes and counts](../reference/limits.md)
+- [Package sizes and count limits](../reference/limits.md)
 - [Package notifications](../how-to/follow-package-notifications.md)
 - [Package badges](../package-badges.md)
