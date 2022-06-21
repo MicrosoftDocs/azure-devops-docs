@@ -55,9 +55,9 @@ With package-sharing enabled, you can create a badge for any package in your fee
 
     :::image type="content" source="media/create-badge-new-ui.png" alt-text="A screenshot showing how to create a new package badge.":::
 
-1. Select a **Feed view** for your package badge. If you're using release views, select the view that contains the packages you want to share; otherwise, just use *No view*.
+1. Select a **Feed view** for your package badge. If you're using release views, select the view that contains the packages you want to share.
 
-    :::image type="content" source="media/package-badge-setup.png" alt-text="package badge configuration":::
+    :::image type="content" source="media/package-badge-setup.png" alt-text="A screenshot showing the create a package badge panel.":::
 
 1. You can now share your package by using the Markdown snippet or the direct image link.
 
