@@ -71,7 +71,7 @@ With package-sharing enabled, you can create a badge for any package in your fee
 
 1. Select a **Feed view** for your package badge.
 
-1. Share the Markdown snippet or image link with your customers.
+1. Share the Markdown snippet or the image link with your customers.
 
 ::: moniker-end
 
@@ -79,4 +79,4 @@ With package-sharing enabled, you can create a badge for any package in your fee
 
 - [Limits of package sizes and counts](./reference/limits.md)
 - [Package notifications](./how-to/follow-package-notifications.md)
-- [Use public feeds to share your packages](./tutorials/share-packages-publicly.md)
+- [Delete and recover packages](./how-to/delete-and-recover-packages.md)
