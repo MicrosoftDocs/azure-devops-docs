@@ -2,7 +2,7 @@
 title: Configure JavaScript for Azure Pipelines
 description:  Customize how you use JavaScript with Azure Pipelines
 ms.topic: conceptual
-ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2
+ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q2
 ms.date: 06/20/2022
 monikerRange: '<= azure-devops'
 ---
