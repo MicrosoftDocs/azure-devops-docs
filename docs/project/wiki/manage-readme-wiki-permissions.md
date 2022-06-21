@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.date: 06/17/2022
+ms.date: 06/21/2022
 monikerRange: '>= tfs-2018'
 ---
 
@@ -30,7 +30,7 @@ By default, all project contributors have read and edit access of the wiki repos
 > **Feature availability**: The built-in wiki is available with TFS 2018 and later versions.
 ::: moniker-end
 
-To open the Security dialog, choose **More actions > Wiki Security**.
+To open the Security dialog, choose **More actions** > **Wiki security**.
 
 > [!div class="mx-imgBorder"]  
 > ![Wiki, Choose More, select security](media/wiki/wiki-open-security.png)
