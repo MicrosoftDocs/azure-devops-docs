@@ -57,10 +57,10 @@ pool:
   vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    node_12_x:
-      node_version: 12.x
+    node_16_x:
+      node_version: 16.x
     node_13_x:
-      node_version: 13.x
+      node_version: 18.x
 
 steps:
 - task: NodeTool@0 
@@ -418,7 +418,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '12.x'
+    versionSpec: '16.x'
   displayName: 'Install Node.js'
 
 - script: |
@@ -677,7 +677,7 @@ If you can build your project on your development machine but are having trouble
   ```yaml
   steps:
   - bash: |
-      NODE_VERSION=12  # or whatever your preferred version is
+      NODE_VERSION=16  # or whatever your preferred version is
       npm config delete prefix  # avoid a warning
       . ${NVM_DIR}/nvm.sh
       nvm use ${NODE_VERSION}
@@ -735,7 +735,7 @@ steps: # Checking out connected repo
     
 - task: NodeTool@0
   inputs:
-    versionSpec: '12.x'
+    versionSpec: '16.x'
   displayName: 'Install Node.js'
 
 - script: |
