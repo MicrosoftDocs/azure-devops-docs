@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 06/16/2022  
+ms.date: 06/21/2022  
 ---
 
 # Clone and update wiki content offline
@@ -30,7 +30,7 @@ The basic steps to update wiki content offline are as follows:
 
 1. Clone your wiki Git repo to your local IDE or workspace.
 2. Add files or folders to your local git branch.
-3. Update the .order files to reflect the pages and sub-pages that you've added.
+3. Update the *.order* files to reflect the pages and sub-pages that you've added.
 4. Commit and push the updates you made to your local git branch.
 
 ## Prerequisites
@@ -113,7 +113,7 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 
    For example, we added the following files to the How-to-contribute folder. These subpages appear under the How to contribute page in the wiki.
 
-   :::image type="content" source="media/wiki/add-sub-pages.png" alt-text="Subpages under the How to contribute page in the wiki.":::
+   :::image type="content" source="media/wiki/add-sub-pages.png" alt-text="Screenshot of the subpages.":::
 
 2. Add a **.order** file in the folder with the order of the sub-pages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
 	 
