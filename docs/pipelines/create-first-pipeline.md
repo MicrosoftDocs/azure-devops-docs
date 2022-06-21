@@ -958,7 +958,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
   * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
   * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+  * [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
   * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
 * Services
@@ -977,7 +977,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * [Visual Studio with TFVC](../repos/tfvc/share-your-code-in-tfvc-vs.md)
   * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
   * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+  * [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
   * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
 * Services
