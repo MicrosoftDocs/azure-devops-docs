@@ -196,9 +196,12 @@
     - name: .NET Framework
       href: apps/aspnet/build-aspnet-4.md
       displayName: ASP, ASPNET, web
-    - name: JavaScript and Node.js apps
+    - name: JavaScript quickstart
       href: ecosystems/javascript.md
       displayName: node, node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+    - name: Configure JavaScript
+      href: ecosystems/configure-javascript.md
+      displayName: configure javasript, node, configure node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
     - name: Python
       href: ecosystems/python.md
       displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
