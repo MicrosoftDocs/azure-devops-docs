@@ -25,7 +25,7 @@ This quickstart walks through how to use a pipeline to create a Node.js package 
 You must have the following items in Azure DevOps:
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
-* An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
+* An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). 
 * An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier. 
 
 ::: moniker-end
@@ -42,7 +42,7 @@ YAML is not available for TFS 2018.
 
 ## 1 - Fork the sample code
 
-Fork the following repo at GitHub.
+Fork the following sample Express.js server app at GitHub.
 
 ```
 https://github.com/Azure-Samples/js-e2e-express-server
