@@ -19,23 +19,31 @@ With Azure Artifacts, you can share your packages anywhere you can share an imag
 > [!NOTE]
 > You must be a feed administrator to enable package sharing.
 
+::: moniker range=">= azure-devops-2019"
+
 1. Select **Artifacts**, and then select your feed from the dropdown menu. Select the gear icon ![gear icon](../media/icons/gear-icon.png) to access the **Feed settings**.
 
-   ::: moniker range=">= azure-devops-2019"
-
    :::image type="content" source="media/feed-settings.png" alt-text="A screenshot showing how to navigate to the feed settings":::
-
-   ::: moniker-end
-
-   ::: moniker range="tfs-2018"
-
-   :::image type="content" source="media/edit-feed-full.png" alt-text="A screenshot showing how to navigate to the feed settings in TFS":::
-
-   ::: moniker-end
 
 1. Find the **Package sharing** section and select the checkbox to **Enable package badges**.
 
    :::image type="content" source="media\enable-package-badges.png" alt-text="A screenshot showing how to enable package badges":::
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Build and Release**, and then select **Packages**.
+
+1. Select the gear icon ![gear icon](../media/icons/gear-icon.png) to access the **Feed settings**.
+
+   :::image type="content" source="media/edit-feed-full.png" alt-text="A screenshot showing how to navigate to the feed settings in TFS":::
+
+1. Select **Enable package badges**. This will enable the **Create badge** button for every package in that feed.
+
+    :::image type="content" source="media/pm-create-badge.png" alt-text="A screenshot showing how to create a package badge in TFS.":::
+
+::: moniker-end
 
 ## Create badge
 
