@@ -34,7 +34,7 @@ If your published wiki corresponds to a product version, you can publish new bra
 
 1. Complete the form, choosing the branch that you previously created.  
 
-    :::image type="content" source="../wiki/media/wiki/publish-new-version-of-wiki.png" alt-text="Screenshot showing the publish new version wiki dialog.":::
+    :::image type="content" source="../wiki/media/wiki/publish-new-version-of-wiki.png" alt-text="Screenshot showing the publish new version dialog.":::
 
 1. Select **Publish**.
 
@@ -43,8 +43,8 @@ If your published wiki corresponds to a product version, you can publish new bra
 
 To select a wiki version, choose the version from the branch options from the **Wiki** page.
 
->     [!div class="mx-imgBorder"]
->     ![Select wiki version](media/wiki/publish-wiki-select-version.png)
+> [!div class="mx-imgBorder"]
+> ![Select wiki version](media/wiki/publish-wiki-select-version.png)
 
 ## Unpublish a published wiki
 
@@ -55,13 +55,13 @@ If you no longer want a repository to be published as a wiki, you can choose to 
 
 1. Select the wiki you want to unpublish, open the context menu, and select **Unpublish wiki**.
 
-    [!div class="mx-imgBorder"]  
-    ![Unpublish a wiki confirm dialog](media/wiki/unpublish-wiki-code-option.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Unpublish a wiki confirm dialog](media/wiki/unpublish-wiki-code-option.png)
 
 1. Confirm that you want to unpublish the wiki by choosing **Unpublish**.  
 
-    [!div class="mx-imgBorder"]  
-    ![Select your wiki version](media/wiki/unpublish-wiki.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Select your wiki version](media/wiki/unpublish-wiki.png)
 
 ## Related articles
 
