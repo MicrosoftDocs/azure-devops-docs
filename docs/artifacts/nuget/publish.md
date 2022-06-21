@@ -8,7 +8,7 @@ ms.date: 07/15/2021
 monikerRange: '<= azure-devops'
 ---
 
-# Publish a NuGet package using the command line
+# Publish a NuGet package using the nuget.exe push command (NuGet CLI)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
