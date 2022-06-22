@@ -18,17 +18,16 @@ ms.date: 02/18/2022
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. When using a local development environment, if this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites.
+1. When using a local development environment, if this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites. You must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
 
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
-    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider), it provides authentication when pushing or downloading packages (see examples section).
 
     1. Follow the instructions in the **Project setup** to add a config file. 
 
         :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
 
 
-1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task (see examples section).
+1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task for the authentication(see examples section).
 
 ## Examples
 
