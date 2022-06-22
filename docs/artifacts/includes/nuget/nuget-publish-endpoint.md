@@ -18,7 +18,7 @@ ms.date: 02/18/2022
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. When using a local development environment, you must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
+1. When using a local development environment, it is recommended to have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
 
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
 
