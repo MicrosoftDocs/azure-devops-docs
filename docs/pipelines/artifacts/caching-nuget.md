@@ -44,9 +44,6 @@ variables:
   inputs:
     key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**,!**/obj/**'
     path: '$(NUGET_PACKAGES)'
-    restoreKeys: |
-      nuget | "$(Agent.OS)"
-      nuget
     cacheHitVar: 'CACHE_RESTORED'
 ```
 
@@ -99,6 +96,7 @@ steps:
     restoreSolution: '$(solution)'
 
 - task: VSBuild@1
+  displayName: 'Visual Studio Build'
   inputs:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
