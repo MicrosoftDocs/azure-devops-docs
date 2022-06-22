@@ -18,32 +18,15 @@ ms.date: 02/18/2022
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites.
+1. When using a local development environment, if this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites.
 
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
-    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider), it provides authentication when pushing or downloading packages (see examples section).
 
-1. Follow the instructions in the **Project setup** to add a config file. 
+    1. Follow the instructions in the **Project setup** to add a config file. 
 
-    :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
+        :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
 
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. Select **Build and Release** > **Packages**.
-
-1. Select your feed from the dropdown menu or [create one](../../get-started-nuget.md#create-a-feed) if you haven't. 
-
-1. Select **Connect to feed**.
-
-    :::image type="content" source="../../media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
-
-1. Select **NuGet** and follow the instruction to connect to your feed.
-
-    :::image type="content" source="../../media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
-
-1. When using a local development environment, you must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
 
 1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task (see examples section).
 
@@ -68,5 +51,21 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/{organization}/
         nuget push nupkgs/foo.1.1.5.nupkg -src https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json AZ
       displayName: "Pack and push"          
   ```
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Build and Release** > **Packages**.
+
+1. Select your feed from the dropdown menu or [create one](../../get-started-nuget.md#create-a-feed) if you haven't. 
+
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../../media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
+
+1. Select **NuGet** and follow the instruction to connect to your feed.
+
+    :::image type="content" source="../../media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
 
 ::: moniker-end
