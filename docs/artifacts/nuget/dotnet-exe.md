@@ -52,13 +52,17 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
       </packageSources>
     </configuration>
     ```
+    
+1. When using a local development environment, if this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites. You must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
+
+1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task for the authentication(see examples section).
 
 ## Publish NuGet packages
 
 To publish a package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the relevant information:
 
 ```Command
-dotnet nuget push --source <FEED_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
+dotnet nuget push --source <FEED_NAME> --api-key AZ <PACKAGE_PATH>
 ``` 
 
 ## Restore NuGet packages
@@ -69,6 +73,28 @@ To restore your packages, run the following command in an elevated command promp
 dotnet restore --interactive
 ```
 
+## Examples
+
+- In the example below, pushing "MyPackage" version "5.0.2" to an Azure Artifacts feed from a local development environment, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to be installed to properly authenticate.
+
+```dotnetcli
+dotnet nuget push MyPackage.5.0.2.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
+```
+
+- In the example below, pushing "MyPackage" version "1.1.5" to an Azure Artifacts feed from an Azure hosted build, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires your pipeline to use the [NuGet Authenticate task](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops).
+
+  ```script
+    - task: NuGetAuthenticate@1
+      inputs:
+        nuGetServiceConnections: MyServiceConnection_ExternalServer
+        
+    - script: |
+        dotnet build mypackage/mypackage.csproj -c Release
+        dotnet pack mypackage/mypackage.csproj /property:PackageVersion=1.1.5 -o nupkgs -c Release
+        dotnet nuget push nupkgs/mypackage.1.1.5.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
+      displayName: "Pack and push"          
+  ```
+  
 > [!TIP]
 > If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect  to Azure Artifacts and other NuGet repositories. 
 >
