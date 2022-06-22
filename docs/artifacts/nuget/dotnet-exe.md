@@ -53,7 +53,7 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
         </configuration>
         ```
     
-1. When using a local development environment, you must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
+1. When using a local development environment, it is recommended to have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
 
 1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task for the authentication(see examples section).
 
