@@ -18,6 +18,8 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 
+- An Azure Artifacts feed. [Create a new feed](../../get-started-nuget.md#create-a-feed) if you don't have one already.
+
 - [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
 - The latest [NuGet version](https://www.nuget.org/downloads).
