@@ -41,9 +41,9 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 
 - **Example**:
 
-```Command
-nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
-```
+    ```Command
+    nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
+    ```
 
 ## Publish packages to private repositories
 
@@ -63,10 +63,10 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject
 
 - **Example**:
 
-```Command
-nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
-nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
-```
+    ```Command
+    nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
+    nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
+    ```
 
 ## Related articles
 
