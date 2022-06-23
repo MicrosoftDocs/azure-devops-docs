@@ -33,7 +33,7 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 To publish a NuGet package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the appropriate information:
 
 ```Command
-nuget push <packagePath> -src https://pkgs.dev.azure.com/<ORGANIZATION_Name>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
+nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
 ```
 
 > [!NOTE]
@@ -43,6 +43,29 @@ nuget push <packagePath> -src https://pkgs.dev.azure.com/<ORGANIZATION_Name>/<PR
 
 ```Command
 nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
+```
+
+## Publish packages to private repositories
+
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scopes.
+
+1. Add your package source and PAT to your nuget.config file:
+
+    ```Command
+    nuget sources Add -Name <PACKAGE_SOURCE> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
+    ```
+
+1. Publish your package:
+
+    ```Command
+    nuget push <PACKAGE_PATH> -src <PACKAGE_SOURCE> -ApiKey <ANY_STRING>
+    ```
+
+#### Example
+
+```Command
+nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
+nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
 ```
 
 ## Related articles
