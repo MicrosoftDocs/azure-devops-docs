@@ -44,7 +44,7 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/{organization}/
 
 ### Pushing from Azure hosted build
 
-When pushing from Azure hosted build to Azure Artifacts, your pipeline should use the [NuGet Authenticate task](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) for the authentication. Please note here the API key "AZ" is only used as a placeholder.
+Please note here the API key "AZ" is only used as a placeholder.
 
   ```Command
     - task: NuGetAuthenticate@1
@@ -58,17 +58,9 @@ When pushing from Azure hosted build to Azure Artifacts, your pipeline should us
 
 ### Pushing from GitHub Actions
 
-When pushing from GitHub actions to Azure Artifacts, your pipeline can use the [Github setup dotnet action](https://github.com/actions/setup-dotnet) for the authentication. Please note here the API key "AZ" is only used as a placeholder.
+Please note here the API key "AZ" is only used as a placeholder.
 
 ```Command
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-
     - uses: actions/setup-dotnet@v2
       with:
         source-url: https://pkgs.dev.azure.com/<your-organization>/_packaging/<your-feed-name>/nuget/v3/index.json
