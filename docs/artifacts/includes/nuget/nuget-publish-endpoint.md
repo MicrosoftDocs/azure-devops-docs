@@ -18,7 +18,7 @@ ms.date: 02/18/2022
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. When using a local development environment, it is recommended to have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section).
+1. When using a local development environment, it is recommended to have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages [see examples](#examples).
 
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
 
@@ -26,21 +26,25 @@ ms.date: 02/18/2022
 
         :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
 
-1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task for the authentication(see examples section).
+1. For Azure hosted builds that interact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task for the authentication[see examples](#examples).
 
-1. For Github actions builds that interact with Azure Artifacts feeds, you may use [Github setup dotnet action](https://github.com/actions/setup-dotnet) for the authentication(see examples section).
+1. For Github actions builds that interact with Azure Artifacts feeds, you may use [Github setup dotnet action](https://github.com/actions/setup-dotnet) for the authentication[see examples](#examples).
 
-1. For other hosted builds that interact with Azure Artifacts feeds, you may use [Azure PAT]([url](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)) saved in `nuget.config` file for the authentication(see examples section), but please exercise caution because it may leak your PAT as part of build environement log collection or source control checkout, artifact upload accidentally.
+1. For other hosted builds that interact with Azure Artifacts feeds, you may use [Azure PAT]([url](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)) saved in `nuget.config` file for the authentication[see examples](#examples), but please exercise caution because it may leak your PAT as part of build environement log collection or source control checkout, artifact upload accidentally.
 
 ## Examples
 
-- In the example below, pushing "MyPackage" version "5.0.2" to an Azure Artifacts feed from a local development environment, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to be installed to properly authenticate.
+### Pushing from a local development environment
 
-```dotnetcli
+When pushing from local development environment to Azure Artifacts, it is recommended to have [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed for the authentication. Please note here the API key "AZ" is only used as a placeholder(it can any value).
+
+```cli
 nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json AZ
 ```
 
-- In the example below, pushing "MyPackage" version "1.1.5" to an Azure Artifacts feed from an Azure hosted build, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires your pipeline to use the [NuGet Authenticate task](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops).
+### Pushing from Azure hosted build
+
+When pushing from Azure hosted build to Azure Artifacts, your pipeline should use the [NuGet Authenticate task](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) for the authentication. Please note here the API key "AZ" is only used as a placeholder(it can any value).
 
   ```cli
     - task: NuGetAuthenticate@1
@@ -48,15 +52,16 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/{organization}/
         nuGetServiceConnections: MyServiceConnection_ExternalServer
         
     - script: |
-        dotnet build mypackage/mypackage.csproj -c Release
         dotnet pack mypackage/mypackage.csproj /property:PackageVersion=1.1.5 -o nupkgs -c Release
         nuget push nupkgs/foo.1.1.5.nupkg -src https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json AZ
       displayName: "Pack and push"          
   ```
- 
-- In the example below, pushing "MyPackage" version "1.1.3" to an Azure Artifacts feed from an Github action build, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires your pipeline to use the [Github setup dotnet action](https://github.com/actions/setup-dotnet) for the authentication.
 
-```cli         
+### Pushing from GitHub Actions
+
+When pushing from GitHub actions to Azure Artifacts, your pipeline can use the [Github setup dotnet action](https://github.com/actions/setup-dotnet) for the authentication. Please note here the API key "AZ" is only used as a placeholder(it can any value).
+
+```cli
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -74,15 +79,15 @@ jobs:
     
     - name: Pack and push
       run: |
-          dotnet build mypackage/mypackage.csproj -c Release
           dotnet pack mypackage/mypackage.csproj /property:PackageVersion=1.1.3 -o nupkgs -c Release
           nuget push nupkgs/mypackage.1.1.3.nupkg -src https://pkgs.dev.azure.com/<your-organization>/_packaging/<your-feed-name>/nuget/v3/index.json AZ
 ```
 
-- In the example below, pushing "MyPackage" version "1.1.8" to an Azure Artifacts using [Azure PAT]([url](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)) saved in `nuget.config` file for the authentication(see examples section) if you're pushing from non-local or non-Azure, non-github build environment, the API key and UserName "AZ" are only used as a placeholder. Use this with caution, it may leak your PAT as part of build environement log collection or source control checkout, artifact upload accidentally.
+### Pushing from other hosted builds
+
+When pushing from any other hosted builds (than local host, Azure hosted build, Github actions) to Azure Artifacts, your pipeline can use the [Azure PAT]([url](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)) saved in `nuget.config` file for the authentication[see examples](#examples), the API key and UserName "AZ" are only used as a placeholder(it can any value). Use this with caution, it may leak your PAT as part of build environement log collection or source control checkout, artifact upload accidentally.
 
 ```cli         
-dotnet build mypackage/mypackage.csproj -c Release
 dotnet pack mypackage/mypackage.csproj /property:PackageVersion=1.1.8 -o nupkgs -c Release
 # If your solution doesn't have nuget.config then you may need to uncomment below line for creating one for you.
 # dotnet new nugetconfig
