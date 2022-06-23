@@ -18,7 +18,7 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 
-- An Azure Artifacts feed. [Create a new feed](../../get-started-nuget.md#create-a-feed) if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
@@ -47,7 +47,7 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject
 
 ## Publish packages to private repositories
 
-1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scopes.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
 1. Add your package source and PAT to your nuget.config file:
 
@@ -70,6 +70,6 @@ nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
 
 ## Related articles
 
-- [Publish packages to NuGet.org](./publish-to-nuget-org)
+- [Publish packages to NuGet.org](publish-to-nuget-org)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md).
 - [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md).
