@@ -37,9 +37,9 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 ```
 
 > [!NOTE]
-> The `ApiKey` argument is only used as a placeholder.
+> The `ApiKey` is only used as a placeholder.
 
-#### Example
+- **Example**:
 
 ```Command
 nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
@@ -61,7 +61,7 @@ nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject
     nuget push <PACKAGE_PATH> -src <PACKAGE_SOURCE> -ApiKey <ANY_STRING>
     ```
 
-#### Example
+- **Example**:
 
 ```Command
 nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
