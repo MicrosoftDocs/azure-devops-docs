@@ -28,6 +28,23 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 
 [!INCLUDE [](../includes/nuget/nuget-publish-endpoint.md)]
 
+## Publish packages
+
+To publish a NuGet package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the appropriate information:
+
+```Command
+nuget push <packagePath> -src https://pkgs.dev.azure.com/<ORGANIZATION_Name>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
+```
+
+> [!NOTE]
+> The `ApiKey` argument is only used as a placeholder.
+
+#### Example
+
+```Command
+nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
+```
+
 ## Related articles
 
 - [Publish packages to NuGet.org](./publish-to-nuget-org)
