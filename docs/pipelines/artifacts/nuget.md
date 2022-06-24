@@ -152,7 +152,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
 ```yaml
 - task: NuGetAuthenticate@0
   inputs:
-    nuGetServiceConnections: '<NAME_OF_YOUR_NUGET_SERVICE_CONNECTION>'
+    nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
 - task: NuGetCommand@2
   inputs:
     command: push
@@ -160,6 +160,22 @@ To publish a package to an external NuGet feed, add the following snippet to you
     versioningScheme: byEnvVar
     versionEnvVar: <VERSION_ENVIRONMENT_VARIABLE>
 ```
+
+**Example using the** [Command line task](../tasks/utility/command-line.md):
+
+```yaml
+  - task: NuGetAuthenticate@1
+    inputs:
+      nuGetServiceConnections: <NAME_OF_YOUR_SERVICE_CONNECTION>
+      
+  - script: |
+      nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -ApiKey <ANY_STRING>
+    displayName: "Push"          
+```
+
+> [!NOTE]
+> The `ApiKey` is only used as a placeholder.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
