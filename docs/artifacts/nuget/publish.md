@@ -1,5 +1,5 @@
 ---
-title: Connect to a feed and publish NuGet packages CLI
+title: Connect to a feed and publish NuGet packages - NuGet.exe
 description: How to connect to your feed and publish NuGet packages using the command line
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.technology: devops-artifacts
@@ -8,7 +8,7 @@ ms.date: 06/23/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Publish NuGet packages (CLI)
+# Publish NuGet packages (NuGet.exe)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -45,11 +45,11 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
     nuget push MyPackage.5.0.2.nupkg -src https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -ApiKey AZ
     ```
 
-## Publish packages to private repositories
+## Publish packages from external sources
 
 1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
 
-1. Add your package source and PAT to your nuget.config file:
+1. Add your package source to your nuget.config file. This will add your unencrypted PAT to your nuget.config file. Make sure to store this file in a safe place, and do not check this file into source control.
 
     ```Command
     nuget sources Add -Name <PACKAGE_SOURCE> -Source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json -UserName <USER_NAME> -Password <PERSONAL_ACCESS_TOKEN> -config <PATH_TO_NUGET_CONFIG_FILE>
@@ -70,6 +70,6 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
 
 ## Related articles
 
-- [Publish packages to NuGet.org](publish-to-nuget-org)
+- [Publish packages to NuGet.org](publish-to-nuget-org.md)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md).
 - [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md).
