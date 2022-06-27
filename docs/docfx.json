@@ -134,7 +134,7 @@
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
-        "repos/tfvc/**": "v-maksim",
+        "repos/tfvc/**": "vijayma",
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma"
       },
