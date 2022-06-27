@@ -67,7 +67,6 @@ https://visualstudio.com
 https://vsrm.dev.azure.com
 https://vstsagentpackage.azureedge.net
 https://*windows.net
-https://login.microsoftonline.com
 https://app.vssps.visualstudio.com 
 https://{organization_name}.visualstudio.com
 https://{organization_name}.vsrm.visualstudio.com

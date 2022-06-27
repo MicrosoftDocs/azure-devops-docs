@@ -57,4 +57,8 @@ A: Azure DevOps scans for PATs checked into public repositories on GitHub. When 
 
 There's a policy for managing leaked PATs! For more information, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically).
 
+### Q: Can I use PAT for pushing nupkg packages with dotnet/nuget.exe as ApiKey in command line?
+
+A: No. Azure Artifacts feeds do not accept a personal access token (PAT) specified in command-line argument. When using a local development environment, it is recommended to install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see [Azure Artifacts' examples](https://docs.microsoft.com/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops#examples)). For Azure hosted builds that interfact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task for the authentication.  
+
 ::: moniker-end
