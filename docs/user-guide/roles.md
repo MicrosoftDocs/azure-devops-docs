@@ -43,7 +43,7 @@ To get started with using Git, see one of the following resources:
 - [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
 - [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 - [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
-- [Share your code in Git by using IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+- [Share your code in Git by using IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
 - [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
   
 To get started with using TFVC, see one of the following resources:
