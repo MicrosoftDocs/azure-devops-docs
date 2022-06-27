@@ -44,8 +44,8 @@ Connect your favorite development environment to Azure Repos to access your repo
 - [Visual Studio Code](https://marketplace.visualstudio.com/vscode)
 - [Visual Studio](../git/share-your-code-in-git-vs.md)
 - [Xcode](../git/share-your-code-in-git-xcode.md)
-- [Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in)
-- [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+- [Eclipse](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
+- [IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
 
 ### Review code with pull requests
 
