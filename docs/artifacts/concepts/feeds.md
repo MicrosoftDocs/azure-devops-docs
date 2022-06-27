@@ -53,7 +53,7 @@ Public feeds are project-scoped feeds in a public project.
 
 1. Give your feed a **Name**, and then select **Project** for your feed's scope.
 
-    :::image type="content" source="../media/create-public-feed.png" alt-text="Screenshot showing how to create a new public feed.":::
+    :::image type="content" source="../media/new-public-feed.png" alt-text="Screenshot showing how to create a new public feed.":::
 
 1. Select **Create** when you are done.
 
