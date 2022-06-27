@@ -121,7 +121,7 @@ And the response returns data for the four revisions:
 
 <a id="iteration" />
 
-## Retrieve items for a given Iteration Path.
+## Retrieve items for a given Iteration Path
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
