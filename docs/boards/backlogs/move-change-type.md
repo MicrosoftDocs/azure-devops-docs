@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/19/2021
+ms.date: 06/27/2022
 ---
 
 # Bulk move work items and change the work item type in Azure Boards
@@ -102,20 +102,20 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> ![Backlog, multi-select, open actions menu, choose Change type option](media/move-change-delete/change-type-new-nav.png)  
 
 	> [!IMPORTANT]   
-	> From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
+	> From the **Query Results page**, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
 
 1. Select the type and optionally enter a comment.  
 
 	![Change work item type dialog](media/move-change-delete/change-work-item-type-dialog.png)    
 
-	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion). 
+	Comments are automatically added to the [**Discussion** control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the **History** control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
 2. Save the work item(s) to complete the change.  
  
 	> [!NOTE]     
-	> The system automatically resets the State and Reason fields to the default initial values of the specified type. However, in some cases you may need to open the work item to change the State or Reason field to a value supported by the changed-to work item type.
+	> The system automatically resets the **State** and **Reason** fields to the default initial values of the specified type. However, in some cases you may need to open the work item to change the **State** or **Reason** field to a value supported by the changed-to work item type.
 
-	From the Query results page, save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
+	From the **Query Results** page, save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
 
 <a id="move"> </a>  
 
@@ -147,7 +147,10 @@ Note the following:
 	![Move work item type dialog, on-premises.](media/move-change-delete/move-work-item-dialog.png)
 	::: moniker-end
 
-	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
+	> [!NOTE]
+	> Child work items are not moved. They remain in the origin project, but the Parent-Child links remain in place.
+
+	Comments are automatically added to the [**Discussion** control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the **History** control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
 
 ## Related articles   
