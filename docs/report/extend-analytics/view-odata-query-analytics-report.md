@@ -47,18 +47,6 @@ Enter <kbd>F12</kbd> to open the Developer Tools for your browser. Open the **Ne
 
 
 
-<!--- QUESTIONS
-
-Sometimes there are two or more entries that appear the same. 
-Use Fetch to see the filter, others to see the returned data. 
-I don't see how the ODATA query for the Sprint burndown or Velocity chart is filtering on the team. 
-SOmetimes, it appears that the OData query is the full set of data, for example for the CFD chart, Cycle Time widget 
-
-
-https://analytics.dev.azure.com/mseng/677da0fb-b067-4f77-b89b-f32c12bb8617/_odata/v4.0-preview/WorkItems?%24apply=filter(CompletedDateSK+ge+20220510+and+Teams%2Fany(t%3A(t%2FTeamSK+eq+cdf5e823-1179-4503-9fb1-a45e2c1bc6d4+and+(WorkItemType+eq+%27Bug%27+or+WorkItemType+eq+%27DTS+Task%27+or+WorkItemType+eq+%27User+Story%27))))%2Fgroupby((CompletedDateSK%2C+WorkItemType)%2Caggregate(%24count+as+CompletedCount%2CCycleTimeDays+with+sum+as+Sum%2CCycleTimeDays+mul+CycleTimeDays+with+sum+as+SumOfSquares))
- 
--->
-
 ## Sample OData query, Velocity chart 
 
 The following syntax represents the OData query for a velocity chart set to show six iterations. 
