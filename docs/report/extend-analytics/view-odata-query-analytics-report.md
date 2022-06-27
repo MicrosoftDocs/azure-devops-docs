@@ -28,8 +28,7 @@ Open the report of interest. For details, choose one of the links provided below
 
 |**Boards**| **Pipelines & Test** |
 |---------------|-----------------------|
-|<ul><li>[Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)</li><li>[Sprint burndown](../dashboards/configure-sprint-burndown.md)</li><li>[Velocity chart](../dashboards/team-velocity.md)</li></ul>|
-<ul><li>[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md) </li><li>[Code coverage](../../pipelines/test/review-code-coverage-results.md) </li><li>[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)</li><li>[Trace test requirements](../../pipelines/test/requirements-traceability.md)</li><li>[Test analytics](../../pipelines/test/test-analytics.md)</li><li>[Test failures](../../pipelines/test/test-analytics.md) </li><li>[Test impact analysis](../../pipelines/test/test-impact-analysis.md)</li></ul> |
+|<ul><li>[Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)</li><li>[Sprint burndown](../dashboards/configure-sprint-burndown.md)</li><li>[Velocity chart](../dashboards/team-velocity.md)</li></ul>|<ul><li>[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md) </li><li>[Code coverage](../../pipelines/test/review-code-coverage-results.md) </li><li>[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)</li><li>[Trace test requirements](../../pipelines/test/requirements-traceability.md)</li><li>[Test analytics](../../pipelines/test/test-analytics.md)</li><li>[Test failures](../../pipelines/test/test-analytics.md) </li><li>[Test impact analysis](../../pipelines/test/test-impact-analysis.md)</li></ul> |
  
 
 
@@ -125,3 +124,6 @@ The following syntax represents the OData query for a velocity chart set to show
 ## Related articles
 
 - [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyze groups of related data.
+- [Data model for Analytics](data-model-analytics-service.md)
+- [About dashboards, charts, reports, & widgets](../dashboards/overview.md) and [Widgets based on Analytics data](../dashboards/analytics-widgets.md)
+- [OData API versioning](odata-api-version.md) 
