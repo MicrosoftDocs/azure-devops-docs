@@ -17920,7 +17920,7 @@
     },
     {
       "source_path_from_root": "/docs/marketplace/extension-statistics-powerbi-contentpack.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops",
+      "redirect_url": "/azure/devops/",
       "redirect_document_id": false
     },
     {
@@ -18145,4 +18145,13 @@
     }
   ]
 }
+
+
+
+
+
+
+
+
+
 
