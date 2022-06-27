@@ -263,7 +263,7 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
@@ -275,7 +275,7 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
@@ -304,5 +304,3 @@ Also, you can use the [**az devops project** commands](/cli/azure/devops/project
 - [Web portal navigation](../../project/navigation/index.md)
 - [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Understand differences between Azure DevOps](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-
- 
