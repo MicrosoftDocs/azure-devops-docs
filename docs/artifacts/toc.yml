@@ -32,19 +32,19 @@
     items:
     - name: NuGet quickstart
       href: get-started-nuget.md
-      displayName: nuget, quickstart 
-    - name: Publish to a NuGet feed (YAML/Classic)
-      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-      displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
-    - name: Publish NuGet packages (CLI)
+      displayName: nuget, quickstart
+    - name: Publish NuGet packages (NuGet.exe)
       href: nuget/publish.md
-      displayName: publish package, nuget feed, cli
+      displayName: publish package, nuget.exe, cli
+    - name: Publish NuGet packages (dotnet)
+      href: nuget/dotnet-exe.md
+      displayName: dotnet, artifacts, publish packages
     - name: Publish to NuGet.org
       href: nuget/publish-to-nuget-org.md
       displayName: publish package, nuget package, nuget.org
-    - name: Publish and restore packages (dotnet)
-      href: nuget/dotnet-exe.md
-      displayName: dotnet, artifacts, publish packages, download packages
+    - name: Publish to a NuGet feed (YAML/Classic)
+      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+      displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
     - name: Project setup (NuGet.exe)
       href: nuget/nuget-exe.md
       displayName: nuget package, artifacts feeds, publish packages, download packages 

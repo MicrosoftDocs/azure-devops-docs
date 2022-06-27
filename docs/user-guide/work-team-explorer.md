@@ -22,10 +22,10 @@ You use Team Explorer to coordinate your code efforts with other team members to
 > You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
 > 
 > Additional options for connecting to Azure DevOps Services or TFS include:  
-> - [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
-> - [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)  
-> - [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
-> - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)  
+> - [Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)
+> - [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
+> - [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
+> - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)  
 > 
 > For information about compatibility among client and server versions, see [Requirements and compatibility](/azure/devops/server/requirements).
 
@@ -182,7 +182,7 @@ To learn more about each page, see the following articles.
 
 ## Team Explorer plug-in for Eclipse
 
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
+If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/previous-versions/azure/devops/all/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
 
 
 > [!div class="mx-tdBreakAll"]  

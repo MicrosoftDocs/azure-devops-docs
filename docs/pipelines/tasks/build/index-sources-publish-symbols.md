@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.author: shashban
 author: shashban
-ms.date: 12/08/2021
+ms.date: 06/17/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -93,10 +93,16 @@ None
             </p>
         </td>
     </tr>
-        <tr>
+    <tr>
         <td><code>CompressSymbols</code><br/>Compress symbols</td>
         <td>
             <p>(Required) Only available when <strong>File share</strong> is selected as the <strong>Symbol server type</strong>. Compresses your <code>pdbs</code> to save space. <br/>Default value: false
+        </td>
+    </tr>
+    <tr>
+        <td><code>SymbolExpirationInDays</code><br/>Symbol Expiration (in days)</td>
+        <td>
+            The number of days that symbols should be retained. Required when PublishSymbols = true && SymbolServerType = TeamServices. <br/>Default value: 36530
         </td>
     </tr>
 </table>
@@ -110,6 +116,12 @@ None
             <th>Description</th>
         </tr>
     </thead>
+    <tr>
+        <td><code>IndexableFileFormats</code><br/>Symbol file formats to publish</td>
+        <td>
+            Which debug formats to publish to the symbol server. Required when PublishSymbols = true && SymbolServerType = TeamServices. Options: Default, Pdb, SourceMap, All. <br/>Default value: Default
+        </td>
+    </tr>
     <tr>
         <td><code>DetailedLog</code><br/>Verbose logging</td>
         <td>
