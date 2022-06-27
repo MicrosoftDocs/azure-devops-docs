@@ -27,9 +27,9 @@ For prerequisites and other information for getting started, see [Query your wor
 > You can use the [WIQL to OData Azure DevOps Extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) Marketplace extension to quickly generate an OData query based on a work item query from the **Queries** page. This extension supports conversion of **Flat list of work items** and **Work items and direct links**. Extensions are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page.
 
 ::: moniker-end
+<a id="changed-date" /> 
 
-
-## Retrieve select work items changed within the last 180 days   
+## Retrieve items changed within the last 180 days   
 
 You query the `WorkItem` entity set to list work items that meet your field criteria. 
 
@@ -121,7 +121,7 @@ And the response returns data for the four revisions:
 
 <a id="iteration" />
 
-## Retrieve all work items for a given Iteration Path.
+## Retrieve items for a given Iteration Path.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -191,7 +191,7 @@ And the response returns data for the following four work items.
 
 <a id="area" />
 
-## Retrieve all work items under a given Area Path 
+## Retrieve items under a given Area Path 
 
 You can modify the following query to list all work items under a specific Area Path. 
 
@@ -279,7 +279,7 @@ And the response returns data for the following five projects.
 }
 ```
 
-## Retrieve all work items for a given iteration
+## Retrieve items for an iteration
 
 You can retrieve all work items for a given iteration that fall between the first day of the iteration and the last day of the iteration. Here, your query is constrained by data contained within the work tracking data.
 
@@ -294,7 +294,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 <a id="tag" />
 
-## Retrieve all work items with a specific tag 
+## Retrieve items with a specific tag 
 
 The **any** operator is used here because there are a collection of tags that can be associated with a work item.
 From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by curly brackets ({}) is a literal. There are some variations. For example, you don't have to use "d" as used in the expression above.
@@ -309,7 +309,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 <a id="team" />
 
-## Retrieve all work items for a specific team 
+## Retrieve items for a specific team 
 
 Use the following query to list work items for a specific team. 
 
@@ -322,7 +322,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 <a id="was-ever" />
 
-## Retrieve all work items that at one time had a field set to a specific value
+## Retrieve items that at one time had a field set to a specific value
 
 The following query is similar to a work item query that uses the **Was Ever** operator.  
 
