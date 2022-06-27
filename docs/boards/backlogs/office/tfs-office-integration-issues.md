@@ -7,7 +7,7 @@ ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-ms.date: 10/08/2021
+ms.date: 06/27/2022
 ---
 
 
@@ -38,13 +38,13 @@ If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image b
 	> [!div class="mx-imgBorder"]
 	> ![COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
 
-4.	Restart Excel. You should now see the Team ribbon. 
+4.	Restart Excel. You should now see the **Team** ribbon. 
 
-If the Team ribbon doesn't appear at next launch, the load behavior of the add-in may have changed and you'll need to complete the following steps: 
+If the **Team** ribbon doesn't appear at next launch, the load behavior of the add-in may have changed and you'll need to complete the following steps: 
 
 ### Update the registry 
 
-1.	Launch the Registry Editor from your Windows Start Menu by typing regedit in the Search or Run box.
+1.	Launch the Registry Editor from your Windows Start Menu by typing `regedit` in the Search or Run box.
 
 	> [!div class="mx-imgBorder"]
 	> ![Run regedit command.](media/tfs-office-issues-run-regedit.png) 
@@ -54,14 +54,14 @@ If the Team ribbon doesn't appear at next launch, the load behavior of the add-i
 	> [!NOTE]  
 	>If there are multiple folders with the same name, select the one with the highest version number. 
 
-	- HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins (if this key doesn't exist, try one of the options below)
-	- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins
-	- HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins
+	- `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins` (if this key doesn't exist, try one of the options below)
+	- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins`
+	- `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins`
 
 	> [!div class="mx-imgBorder"]
 	> ![LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
 
-3.	Double-click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the Team ribbon won't load).
+3.	Double-click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the **Team** ribbon won't load).
  
 4.	Press **OK** and restart Excel. 
 
@@ -69,7 +69,7 @@ If the Team ribbon doesn't appear at next launch, the load behavior of the add-i
 
 ## Office add-in doesn't load or open in Excel when Visual Studio fails
 
-To connect to Azure Boards or TFS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
+To connect to Azure Boards, go to the **Team** ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, then you may need to repair Visual Studio. 
  
 > [!div class="mx-imgBorder"]
 > ![TF86001 error message, Team Foundation was unable to load the Office Add-in.](media/tfs-office-issues-tf86001.png) 
@@ -90,7 +90,18 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
 	> [!div class="mx-imgBorder"]
 	> ![Developer Command Prompt for VS2015 start menu with 'Run as administrator](media/tfs-office-issues-run-developer-cmd-prompt.png) 
 
-2. **For Office 2016 and Office 2013**, run the following commands:   
+
+4. **For Microsoft 365**, run the following commands:   
+
+   ```
+   GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.14.0.Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Policy.14.0.Microsoft.Office.Interop.Excel.dll
+   ```  
+
+   ```
+   GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.14.0.office\15.0.0.0__71e9bce111e9429c\Policy.14.0.Office.dll
+   ```
+
+   **For Office 2016 and Office 2013**, run the following commands:   
 
    ```
    GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Policy.12.0.Microsoft.Office.Interop.Excel.dll
@@ -110,7 +121,7 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
    GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.office\14.0.0.0__71e9bce111e9429c\Policy.12.0.Office.dll
    ```  
 
-3. Once you've successfully run the `GACUTIL` commands, restart Excel and look for the Team Foundation Add-in. 
+3. Once you've successfully run the `GACUTIL` commands, restart Excel and look for the Azure DevOps Integration Tool for Office add-in. 
 
 If the above steps are unsuccessful, try the following steps:  
 
