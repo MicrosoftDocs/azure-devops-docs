@@ -24,28 +24,13 @@ For a list of built-in Analytics reports and widgets, see [About dashboards, cha
 
 ## Open the Analytics report  
 
-Open the report of interest. If you are working to get the OData query behind a widget, we recommend that you create a dashboard with just the widget displayed.  
+Open the report of interest. For details, choose one of the links provided below. If you are working to get the OData query behind a widget, we recommend that you create a dashboard with just the widget displayed.  
 
----
-:::row:::
-   :::column span="2":::
-      **Boards** 
-      - [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd) 
-      - [Sprint burndown](../dashboards/configure-sprint-burndown.md)  
-      - [Velocity chart](../dashboards/team-velocity.md) 
-   :::column-end:::
-   :::column span="2"::: 
-      **Pipelines & Test** 
-      - [Build test results](../../pipelines/test/review-continuous-test-results-after-build.md) 
-      - [Code coverage](../../pipelines/test/review-code-coverage-results.md) 
-      - [Release test results](../../pipelines/test/review-continuous-test-results-after-build.md) 
-      - [Trace test requirements](../../pipelines/test/requirements-traceability.md) 
-      - [Test analytics](../../pipelines/test/test-analytics.md) 
-      - [Test failures](../../pipelines/test/test-analytics.md)  
-      - [Test impact analysis](../../pipelines/test/test-impact-analysis.md) 
-   :::column-end:::
-:::row-end:::
----
+|**Boards**| **Pipelines & Test** |
+|---------------|-----------------------|
+|<ul><li>[Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)</li><li>[Sprint burndown](../dashboards/configure-sprint-burndown.md)</li><li>[Velocity chart](../dashboards/team-velocity.md)</li></ul>|
+<ul><li>[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md) </li><li>[Code coverage](../../pipelines/test/review-code-coverage-results.md) </li><li>[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)</li><li>[Trace test requirements](../../pipelines/test/requirements-traceability.md)</li><li>[Test analytics](../../pipelines/test/test-analytics.md)</li><li>[Test failures](../../pipelines/test/test-analytics.md) </li><li>[Test impact analysis](../../pipelines/test/test-impact-analysis.md)</li></ul> |
+ 
 
 
 ## Open Developer Tools for your browser 
