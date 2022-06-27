@@ -51,10 +51,10 @@ sections:
           Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
           
           - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-          - [Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)  
-          - [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)
-          - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
-          - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
+          - [Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in)  
+          - [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)
+          - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in)
+          - [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)
           
       - question: How much does Azure DevOps cost?
         answer: |
