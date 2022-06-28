@@ -3,7 +3,7 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 08/10/2020
+ms.date: 06/28/2022
 ---
 
 <a id="open-analytics">  </a>
@@ -31,7 +31,7 @@ After you install the [Analytics Marketplace extension](../dashboards/analytics-
 From your web portal, expand **Overview** and choose **Analytics views**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Expand Overview and choose Analytics views.](/azure/devops/report/powerbi/media/open_analytics.png)   
+> ![Screenshot of expand overview and choose Analytics views.](/azure/devops/report/powerbi/media/open_analytics.png)   
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ From your web portal, expand **Overview** and choose **Analytics views**.
 From your web portal, expand **Boards** and choose **Analytics views**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Expand Boards and choose Analytics views.](/azure/devops/report/powerbi/media/analytics-views/open-analytics-2020.png)  
+> ![Screenshot of expand Boards and choose Analytics views.](/azure/devops/report/powerbi/media/analytics-views/open-analytics-2020.png)  
 
 ::: moniker-end 
 
