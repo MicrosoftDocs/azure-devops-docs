@@ -8,7 +8,7 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: kaelli
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/07/2021
+ms.date: 06/27/2022
 ---
 
 # Set the Work Items experience
@@ -16,38 +16,16 @@ ms.date: 11/07/2021
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]   
 
-Visual Studio 2019 supports switching between the default view of the Work Items page and the legacy view. The default view is designed to match the Work Items page available in the web portal. The legacy view supports the Work Items page available with the previous versions of Visual Studio. 
+Visual Studio 2019 supports switching between the default view of the Team Explorer **Work Items** page and the legacy view. The default view is designed to match the web portal **Boards>Work Items** page. The legacy view supports the Work Items page available with the previous versions of Visual Studio as described in the linked articles listed below. . 
 
 Each view supports the following tasks: 
 
-:::row:::
-   :::column span="1":::
-   **Default experience**
-   :::column-end:::
-   :::column span="1":::
-   **Legacy experience**
-   :::column-end:::
-:::row-end:::
-
-:::row:::
-   :::column span="1":::
-    
-   
-   - [View and add work items](./view-add-work-items.md)
-   
-   :::column-end:::
-   :::column span="1":::
-   
-   - [Add work items](../backlogs/add-work-items.md)
-   - [Use the query editor to list and manage queries](../queries/using-queries.md)
-   - [Organize query folders and set query permissions](../queries/set-query-permissions.md)
-   - [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-   - [Email query results list using Outlook](../queries/share-plans.md)
-   - [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) (on-premises Azure DevOps Server only)
-   
-   :::column-end:::
-:::row-end:::
-
+| **Default experience**|**Legacy experience**|
+|-----------------------|---------------------| 
+|<ul><li>[View and add work items](./view-add-work-items.md)</li></ul>|<ul><li>[Add work items](../backlogs/add-work-items.md)</li><li>[Use the query editor to list and manage queries](../queries/using-queries.md)</li><li>[Organize query folders and set query permissions](../queries/set-query-permissions.md)</li><li>[Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)</li><li>[Email query results list using Outlook](../queries/share-plans.md)</li><li> [Create reports from query in Excel](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports) (on-premises Azure DevOps Server only)</li></ul>|
+ 
+> [!NOTE]
+> If you want to quickly access a list of work items based on their assignment to you, following, mentioned, or recent updates; then use the new default experience. However, if you rely on accessing queries from Team Explorer, then we recommend that you set your Landing page to the legacy option. 
 
 
 ## Change your Work Items view
