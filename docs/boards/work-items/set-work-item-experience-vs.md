@@ -16,7 +16,7 @@ ms.date: 06/27/2022
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]   
 
-Visual Studio 2019 supports switching between the default view of the Team Explorer **Work Items** page and the legacy view. The default view is designed to match the web portal **Boards>Work Items** page. The legacy view supports the Work Items page available with the previous versions of Visual Studio as described in the linked articles listed below. . 
+Visual Studio 2019 supports switching between the default view of the Team Explorer **Work Items** page and the legacy view. The default view is designed to match the web portal **Boards>Work Items** page. The legacy view supports the Work Items page available with the previous versions of Visual Studio as described in the linked articles listed below.
 
 Each view supports the following tasks: 
 
