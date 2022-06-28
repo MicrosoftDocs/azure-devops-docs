@@ -118,18 +118,13 @@ dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATI
     dotnet nuget push nupkgs/mypackage.1.1.0.nupkg --source MySource --api-key AZ
     ```
 
-## Restore NuGet packages
+## Restore packages
 
 To restore your packages, run the following command in an elevated command prompt. The `--interactive` flag is used to prompt the user for credentials.
 
 ```Command
 dotnet restore --interactive
 ```
-
-> [!TIP]
-> If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect  to Azure Artifacts and other NuGet repositories.
->
-> Another way to authenticate programmatically is to use the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) and pass in your credentials using the `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` [environment variable](https://github.com/Microsoft/artifacts-credprovider/blob/master/README.md#environment-variables).
 
 ## Related articles
 
