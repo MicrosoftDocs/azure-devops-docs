@@ -25,19 +25,19 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
 
 - The latest [NuGet version](https://www.nuget.org/downloads).
 
-## Project setup
+## Connect to feed
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu. [Create a feed](../get-started-nuget.md#create-a-feed), if you don't have one already. 
+::: moniker range=">= azure-devops-2019"
+
+1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
 1. Select **Connect to feed**.
 
-    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing the connect to feed button":::
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
 
-1. Select **dotnet** from the **NuGet** section.
+1. Select **dotnet** from the *NuGet* section.
 
-1. If this is your first time using Azure Artifacts with dotnet, select **Get the tools** to download and install the latest .NET Core SDK and credential provider.
-
-1. Add a *nuget.config* file to your project, in the same folder as your .csproj or .sln file. Paste the following XML snippet into your new file. Your *nuget.config* file should look similar to the following:
+1. Create a *nuget.config* file in the same folder as your .csproj or .sln file. Copy the following XML snippet and paste it into your new file:
 
 - Organization-scoped feed:
 
@@ -62,6 +62,21 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
       </packageSources>
     </configuration>
     ```
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Build and Release** > **Packages**.
+
+1. Select your feed from the dropdown menu or [create one](../get-started-nuget.md#create-a-feed) if you haven't.
+
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
+
+1. Select **NuGet** and follow the instruction to connect to your feed.
+
+::: moniker-end
 
 ## Publish NuGet packages
 
