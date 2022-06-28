@@ -5,13 +5,13 @@ ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 06/28/2022
-monikerRange: '>= azure-devops-2019'
+monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
 # Publish and restore NuGet packages (dotnet)
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can publish and restore your NuGet packages to/from your feed and share them with others based on your feed's visibility settings. This article will guide you through setting up your project to publish and restore your packages using the dotnet command-line interface.
 
@@ -104,7 +104,7 @@ dotnet restore --interactive
 ```
 
 > [!TIP]
-> If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect  to Azure Artifacts and other NuGet repositories. 
+> If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect  to Azure Artifacts and other NuGet repositories.
 >
 > Another way to authenticate programmatically is to use the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) and pass in your credentials using the `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` [environment variable](https://github.com/Microsoft/artifacts-credprovider/blob/master/README.md#environment-variables).
 
