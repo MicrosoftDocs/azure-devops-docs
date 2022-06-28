@@ -78,7 +78,7 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
 
 ::: moniker-end
 
-## Publish NuGet packages
+## Publish packages
 
 To publish a package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the appropriate information:
 
@@ -93,6 +93,29 @@ dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATI
 
     ```Command
     dotnet nuget push MyPackage.5.0.2.nupkg --source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --api-key AZ
+    ```
+
+## Publish packages from external sources
+
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) with **packaging read and write** scope.
+
+1. Add your package source to your nuget.config file. This will add your PAT to your nuget.config file. Make sure to store this file in a safe place, and do not check this file into source control.
+
+    ```Command
+    dotnet nuget add source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --name <SOURCE_NAME> --username <USER_NAME> --password <PERSONAL_ACCESS_TOKEN> --configfile <PATH_TO_NUGET_CONFIG_FILE>
+    ```
+
+1. Publish your package:
+
+    ```Command
+    dotnet nuget push <PACKAGE_PATH> --source <SOURCE_NAME> --api-key <ANY_STRING>
+    ```
+
+- **Example**:
+
+    ```Command
+    dotnet nuget add source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --name MySource --username MyUserName --password MyPersonalAccessToken --configfile ./nuget.config
+    dotnet nuget push nupkgs/mypackage.1.1.0.nupkg --source MySource --api-key AZ
     ```
 
 ## Restore NuGet packages
