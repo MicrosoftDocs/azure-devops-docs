@@ -4,16 +4,26 @@ description: How to connect to a feed and use the dotnet CLI to publish and rest
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/09/2021
+ms.date: 06/28/2022
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Publish and restore NuGet packages using dotnet CLI
+# Publish and restore NuGet packages (dotnet)
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-With Azure Artifacts, you can publish and restore your NuGet packages to/from your feed and control who can access them. This article will guide you through setting up your project to publish and restore your packages using the dotnet command-line interface.
+With Azure Artifacts, you can publish and restore your NuGet packages to/from your feed and share them with others based on your feed's visibility settings. This article will guide you through setting up your project to publish and restore your packages using the dotnet command-line interface.
+
+## Prerequisites
+
+- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
+
+- [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
+
+- The latest [NuGet version](https://www.nuget.org/downloads).
 
 ## Project setup
 
