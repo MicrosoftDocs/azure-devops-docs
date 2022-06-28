@@ -30,32 +30,9 @@ In this article you'll learn how to:
 
 For detailed descriptions for all OData elements, see [OData model](/odata/concepts/data-model).
 
-<!---
-https://analytics.dev.azure.com/kelliott//Fabrikam%20Fiber/_odata/v4.0-preview/$metadata
-
-
-How to query the service for metadata
-Interpret the metadata response
-EntityTypes
-Containers (OData capabilities)
-
-EntityTypes - doced 
-- Keys
-- Properties
-- Navigational Properties
-Containers
-- EntitySets
-Annotation
-Referenced Property 
-Use of work item field names == PropertyRef Name and Property Name, Referenced Property 
-WorkItemId 
-
---?
-
-
 <a id="query-metadata" />
 
-## How to query the service for metadata
+## Query the Analytics service for metadata
 
 Analytics exposes the [entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [project or an entire  organization in Azure DevOps](account-scoped-queries.md).
 
