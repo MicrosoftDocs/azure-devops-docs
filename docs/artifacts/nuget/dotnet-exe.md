@@ -80,11 +80,20 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
 
 ## Publish NuGet packages
 
-To publish a package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the relevant information:
+To publish a package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the appropriate information:
 
 ```Command
-dotnet nuget push --source <FEED_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
-``` 
+dotnet nuget push <PACKAGE_PATH> --source https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json --api-key <ANY_STRING>
+```
+
+> [!NOTE]
+> The `api-key` is only used as a placeholder.
+
+- **Example**:
+
+    ```Command
+    dotnet nuget push MyPackage.5.0.2.nupkg --source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json --api-key AZ
+    ```
 
 ## Restore NuGet packages
 
