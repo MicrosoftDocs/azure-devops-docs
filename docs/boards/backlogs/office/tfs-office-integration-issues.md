@@ -20,7 +20,7 @@ All Office integration tasks require that you have installed a version of Visual
 If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image below, you may want to resolve the issue with the procedures provided in this article. 
 
 > [!div class="mx-imgBorder"]
-> ![Excel TFS-Office integration Team ribbon.](media/excel-team-ribbon.png)
+> ![Screenshot of Excel TFS-Office integration Team ribbon.](media/excel-team-ribbon.png)
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
  
@@ -31,12 +31,12 @@ If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image b
 2.	Choose Add-ins and from the **Manage** picklist, choose **COM Add-ins**, and then choose **Go**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Excel Options, Add-ins, Choose Com Add-ins.](media/excel-com-add-ins.png)
+	> ![Screenshot of Excel Options, Add-ins, Choose Com Add-ins.](media/excel-com-add-ins.png)
 
 3.	Make sure that a check is placed in the **Team Foundation Add-in** checkbox. 
 
 	> [!div class="mx-imgBorder"]
-	> ![COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
+	> ![Screenshot of COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png) 
 
 4.	Restart Excel. You should now see the **Team** ribbon. 
 
@@ -47,19 +47,19 @@ If the **Team** ribbon doesn't appear at next launch, the load behavior of the a
 1.	Launch the Registry Editor from your Windows Start Menu by typing `regedit` in the Search or Run box.
 
 	> [!div class="mx-imgBorder"]
-	> ![Run regedit command.](media/tfs-office-issues-run-regedit.png) 
+	> ![Screenshot of Run regedit command.](media/tfs-office-issues-run-regedit.png) 
 
 2.	Navigate to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 	
 	> [!NOTE]  
-	>If there are multiple folders with the same name, select the one with the highest version number. 
+	> If there are multiple folders with the same name, select the one with the highest version number. 
 
 	- `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins` (if this key doesn't exist, try one of the options below)
 	- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins`
 	- `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins`
 
 	> [!div class="mx-imgBorder"]
-	> ![LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
+	> ![Screenshot of LoadBehavior entry.](media/tfs-office-issues-regedit-loadbehavior-key.png) 
 
 3.	Double-click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the **Team** ribbon won't load).
  
@@ -88,7 +88,7 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
 1. Open the Visual Studio Command Prompt and choose to run it as an administrator. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Developer Command Prompt for VS2015 start menu with 'Run as administrator](media/tfs-office-issues-run-developer-cmd-prompt.png) 
+	> ![Screenshot of Developer Command Prompt for VS2015 start menu with 'Run as administrator](media/tfs-office-issues-run-developer-cmd-prompt.png) 
 
 
 4. **For Microsoft 365**, run the following commands:   
