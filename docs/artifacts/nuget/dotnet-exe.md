@@ -23,7 +23,7 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
 
 - [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
-- The latest [NuGet version](https://www.nuget.org/downloads).
+- Download and install [.NET SDK](https://dotnet.microsoft.com/en-us/download).
 
 ## Connect to feed
 
