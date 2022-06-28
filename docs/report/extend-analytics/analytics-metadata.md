@@ -176,7 +176,7 @@ A `NavigationaProperty` with a collection type represents a many-to-many relatio
 
 ### EntitySets
 
-Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `WorkItems` and `WorkItemRevisions` are `EntitySets` within the `EntityContainer` named `Container`. An entity can be a member of at most one entity set. Entity sets provide the primary entry points into the data model, and represents a collection of entities and associated Navigational property bindings and annotations.
+Entities are the core identity types in a data model. Entity sets are named collections of entities. For example, `WorkItems` and `WorkItemRevisions` are `EntitySets` within the `EntityContainer` named `Container`. An entity can be a member of at most one entity set. Entity sets provide the primary entry points into the data model, and represent a collection of entities and associated Navigational property bindings and annotations.
 
 The following XML syntax indicates the `Projects` entity set data model. For a description of each entity set, see [Data model for Analytics](data-model-analytics-service.md).
 
