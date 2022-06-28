@@ -36,28 +36,29 @@ Use this quick reference to access information and sample queries using OData an
       - [Filter by Changed Date](wit-analytics.md#date-range-queries)  
       - [Filter by Iteration Path](wit-analytics.md#filter-related-entities)  
       - [Filter data with query filter clause](wit-analytics.md#filter-data)  
-   :::column-end:::
-   :::column span="":::
+      <br/>
       - [Generate multiple aggregations](aggregated-data-analytics.md#multiple-aggregate)  
       - [Generate calculated properties](aggregated-data-analytics.md#calculated-properties)  
       - [Generate a Cumulative Flow Diagram](aggregated-data-analytics.md#cfd)  
       - [Group results using `groupby`](aggregated-data-analytics.md#groupby)  
-      <br/>
+   :::column-end:::
+   :::column span="":::
       - [Query a single entity set](wit-analytics.md#single-entity)  
       - [Query based on Iteration Path](analytics-recipes.md#iteration)  
       - [Query based on Area Path](analytics-recipes.md#area)  
+      - [Query based on Changed Date](analytics-recipes.md#changed-date)  
       - [Query based on Tags](analytics-recipes.md#tag)  
       - [Query based on Team](analytics-recipes.md#team)  
       - [Query based on Was Ever](analytics-recipes.md#was-ever)  
-   :::column-end:::
-   :::column span="":::
+      <br/>
       - [Query work item count](analytics-recipes.md#project-count)  
       - [Query for linked work items](work-item-links.md)  
       - [Query for non-hierarchical links](work-item-links.md)  
       - [Query metadata](analytics-metadata.md#query-metadata)  
       - [Query trend data](querying-for-trend-data.md#trend-data)  
-      - [Query work item history](analytics-recipes.md#history)  
-      <br/>
+      - [Query work item history](analytics-recipes.md#retrieve-work-item-history)  
+   :::column-end:::
+   :::column span="":::
       - [Organization-scoped queries](account-scoped-queries.md#org-scope)  
       - [Project-scoped queries](account-scoped-queries.md#project-scope)  
       - [Return data from related entities](wit-analytics.md#return-related)  
@@ -65,6 +66,7 @@ Use this quick reference to access information and sample queries using OData an
       - [Return specific columns or fields](wit-analytics.md#select-columns)  
       - [Set permissions](../powerbi/analytics-security.md)  
       - [Sort results](wit-analytics.md#sort-results)  
+      - [View OData query behind a report or widget](view-odata-query-analytics-report.md)
    :::column-end:::
 :::row-end:::
 
