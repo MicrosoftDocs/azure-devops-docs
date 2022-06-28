@@ -64,12 +64,14 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 **Example query:**
 
-For example, the following syntax queries revisions for ID=1145.
+For example, the following syntax queries revisions for **ID=1145**.
 
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://analytics.dev.azure.com/kelliott/_odata/v1.0/WorkItems?$select=WorkItemId, Title, State&$expand=Iteration($select=IterationPath)&$filter=(Project/ProjectName eq 'Fabrikam Fiber' AND WorkItemId eq 1145 AND State ne '' AND Revision gt 1)
 
 https://analytics.dev.azure.com//fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItemRevisions?$filter=WorkItemId eq 1145&$select=WorkItemId, Title, State&$expand=Iteration($select=IterationPath)
-
+```
 
 **Example response:**
 

@@ -28,13 +28,13 @@ Open the report of interest. For details, choose one of the links provided below
 
 |**Boards**| **Pipelines & Test** |
 |---------------|-----------------------|
-|<ul><li>[Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)</li><li>[Sprint burndown](../dashboards/configure-sprint-burndown.md)</li><li>[Velocity chart](../dashboards/team-velocity.md)</li></ul>|<ul><li>[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md) </li><li>[Code coverage](../../pipelines/test/review-code-coverage-results.md) </li><li>[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)</li><li>[Trace test requirements](../../pipelines/test/requirements-traceability.md)</li><li>[Test analytics](../../pipelines/test/test-analytics.md)</li><li>[Test failures](../../pipelines/test/test-analytics.md) </li><li>[Test impact analysis](../../pipelines/test/test-impact-analysis.md)</li></ul> |
+|- [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)<br/>- [Sprint burndown](../dashboards/configure-sprint-burndown.md)<br/>- [Velocity chart](../dashboards/team-velocity.md)<br/>- |- [Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Code coverage](../../pipelines/test/review-code-coverage-results.md)<br/>- [Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Trace test requirements](../../pipelines/test/requirements-traceability.md)<br/>- [Test analytics](../../pipelines/test/test-analytics.md)<br/>- [Test failures](../../pipelines/test/test-analytics.md)<br/>- [Test impact analysis](../../pipelines/test/test-impact-analysis.md)|
  
 
 
 ## Open Developer Tools for your browser 
 
-Enter <kbd>F12</kbd> to open the Developer Tools for your browser. Open the **Network** tab and scroll down to find the entry with the OData query. The following table lists the  beginning text of entries for select reports. Double-click the entry to open the OData query. 
+Press the **F12** key to open the Developer Tools for your browser. Open the **Network** tab and scroll down to find the entry with the OData query. The following table lists the  beginning text of entries for select reports. Double-click the entry to open the OData query. 
 
  
 
