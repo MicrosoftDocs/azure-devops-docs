@@ -28,7 +28,7 @@ Open the report of interest. For details, choose one of the links provided below
 
 |**Boards**| **Pipelines & Test** |
 |---------------|-----------------------|
-|- [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)<br/>- [Sprint burndown](../dashboards/configure-sprint-burndown.md)<br/>- [Velocity chart](../dashboards/team-velocity.md)<br/>- |- [Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Code coverage](../../pipelines/test/review-code-coverage-results.md)<br/>- [Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Trace test requirements](../../pipelines/test/requirements-traceability.md)<br/>- [Test analytics](../../pipelines/test/test-analytics.md)<br/>- [Test failures](../../pipelines/test/test-analytics.md)<br/>- [Test impact analysis](../../pipelines/test/test-impact-analysis.md)|
+|- [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md#configure-built-in-cfd)<br/>- [Sprint burndown](../dashboards/configure-sprint-burndown.md)<br/>- [Velocity chart](../dashboards/team-velocity.md) |- [Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Code coverage](../../pipelines/test/review-code-coverage-results.md)<br/>- [Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)<br/>- [Trace test requirements](../../pipelines/test/requirements-traceability.md)<br/>- [Test analytics](../../pipelines/test/test-analytics.md)<br/>- [Test failures](../../pipelines/test/test-analytics.md)<br/>- [Test impact analysis](../../pipelines/test/test-impact-analysis.md)|
  
 
 
