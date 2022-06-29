@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: anian
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 06/21/2022
+ms.date: 06/29/2022
 ---
 
 # Create and embed a work item from wiki
@@ -23,13 +23,13 @@ Create and embed work items in your wiki page content. This feature gives you an
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`), and then select your **project**.
 
-    ![Screenshot of sign-in to Azure DevOps, and then select Project](media/wiki/sign-in-to-azure-devops-select-project.png)
+    ![Screenshot of sign-in to Azure DevOps, and then select Project.](media/wiki/sign-in-to-azure-devops-select-project.png)
 
 2. Select your **wiki**.
 3. Highlight the text, and then select the type of work item you want to create from the **New work item** dropdown menu. The work item form opens with the selected text added as the title and description of the work item. 
 4. Add information to the work item, such as entering an assignee in the Assign To box, and then select **Save & Close**.
   
-    ![Screenshot of create and embed work items from Wiki content](media/wiki/create-embed-wit-from-wiki.gif)
+    ![Screenshot of create and embed work items from Wiki content.](media/wiki/create-embed-wit-from-wiki.gif)
 
 The selected content in the wiki page is replaced with the embedded work item.
 
