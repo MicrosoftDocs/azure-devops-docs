@@ -72,7 +72,7 @@ With Azure Artifacts, you can publish and restore your NuGet packages to/from yo
 
 1. Select **Connect to feed**.
 
-    :::image type="content" source="../media/connect-to-feed.png" alt-text="A screenshot showing how to conned to a feed in TFS.":::
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed in TFS.":::
 
 1. Select **NuGet** and follow the instruction to connect to your feed.
 
