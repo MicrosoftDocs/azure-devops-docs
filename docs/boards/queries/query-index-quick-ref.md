@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/25/2021
+ms.date: 06/29/2022
 ---
 
 # Use an index to query quick reference data in Azure Boards and Azure DevOps
@@ -186,36 +186,28 @@ The following table indicates the operators and macros available for the differe
 :::row:::
    :::column span="1":::
    **Data type**
-
    :::column-end:::
    :::column span="3":::
    **Description**
-
    :::column-end:::
    :::column span="3":::
    **Supported operators and macros**
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Boolean <sup>1</sup>** 
-
    :::column-end:::
    :::column span="3":::
    Supports a True/False value. Query samples: [Query by assignment or workflow changes](query-by-workflow-changes.md). 
-
    :::column-end:::
    :::column span="3":::
    = , <> , =[Field] , <>[Field]
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **DateTime** 
-
    :::column-end:::
    :::column span="3":::
    A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)  
@@ -227,7 +219,6 @@ The following table indicates the operators and macros available for the differe
 
    **Additional macros supported on Azure DevOps 2019 Update 1 and later versions:**:  
    **<xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref>**, **<xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref>**, **<xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref>**, and **<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref>**, valid with any **DateTime** field
-
    :::column-end::: 
 :::row-end:::
 :::row:::
@@ -258,7 +249,6 @@ The following table indicates the operators and macros available for the differe
 :::row:::
    :::column span="1":::
    **History** 
-
    :::column-end:::
    :::column span="3":::
    Custom formatted field used to track historical information and only assigned to the **History** field.  
@@ -273,7 +263,6 @@ The following table indicates the operators and macros available for the differe
 :::row:::
    :::column span="1":::
     **HTML** 
-
    :::column-end:::
    :::column span="3":::
    Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
@@ -288,12 +277,10 @@ The following table indicates the operators and macros available for the differe
    :::column-end:::
    :::column span="3":::
    A String field that is used to hold a user identity.Query samples: [Query by assignment or workflow changes](query-by-workflow-changes.md).
-
    :::column-end:::
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
    **Macros**: **@me** valid for all Identity fields
-
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -304,7 +291,6 @@ The following table indicates the operators and macros available for the differe
    Also includes **picklistInteger**<sup>2</sup>. A 32-bit integer that is signed, such as 0, 1, 2, 34.  
 
    Query samples: [Query by numeric fields](query-numeric.md)
-
    :::column-end:::
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  
@@ -349,7 +335,6 @@ The following table indicates the operators and macros available for the differe
 :::row:::
    :::column span="1":::
     **TreePath** 
-
    :::column-end:::
    :::column span="3":::
    Field type that supports the **Area Path** and **Iteration Path** fields. You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
