@@ -29,7 +29,7 @@ Feed views are read-only, which means that users connected to a view can only us
 ## Feed views and upstream sources
 
 Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages.
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed, and all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed. In addition, all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
 
 ## Release packages with feed views
 
@@ -43,7 +43,7 @@ The nature and the risk of the change both pertain to the _change itself_, that 
 
 ### Quality of the change
 
-The **quality** of the change isn't generally known until the validation process is complete. This comes after your change is built and packaged. Because of this detail, it's not feasible to communicate the quality in the version number, which is specified during packaging and before validation. There are workarounds to pre-validate (e.g. consume the build's DLLs directly before they're packaged and publish the packages to a "debug" or "CI" environment then validate and republish those packages to a "release" environment) but none that we've seen can truly guarantee that the built package will meet the correct quality standard.
+The **quality** of the change isn't generally known until the validation process is complete. This comes after your change is built and packaged. Because of this detail, it's not feasible to communicate the quality of the change in the numerical segment of the version number (e.g 1.2.3). There are workarounds to pre-validate (e.g. consume the build's DLLs directly before they're packaged and publish the packages to a "debug" or "CI" environment then validate and republish those packages to a "release" environment) but none that we've seen can truly guarantee that the built package will meet the correct quality standard.
 
 :::image type="content" source="media/release-views-flow.png" alt-text="publishing packages workflow":::
 
