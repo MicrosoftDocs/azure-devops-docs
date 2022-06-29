@@ -9,12 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 02/01/2022
+ms.date: 06/29/2022
 ---
 
 # Query by date or current iteration in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+ 
 
 The **\@Today** and **\@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **\@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **\@CurrentIteration**. 
 
@@ -53,7 +55,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
    :::column-end::: 
    :::column span="3":::
       = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  
-      **Macros**:  **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, **@StartOfYear**, and **@Today**; each of these macros can be specified with a <strong> +/- n</strong> integer.
+      **Macros**:  **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, **@StartOfYear**, and **@Today**; each of these macros can be specified with a **+/- n** integer.
    :::column-end:::
 :::row-end:::
  ---
@@ -100,15 +102,18 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 > [!TIP]    
-> The **WasEver** operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see TBC.
+> The **WasEver** operator can be used with the **Iteration Path** field but only when defined through the WIQL syntax. For an example, see [Work Item Query Language (WIQL) syntax reference](wiql-syntax.md#asof-historical-queries).
  
+
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
+
 
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
 
 ## Client restrictions on the use of the `@CurrentIteration` macros 
 
-You can use the <strong>@CurrentIteration</strong> in a query from the following clients:
+You can use the **@CurrentIteration** in a query from the following clients:
 
 - Web portal that connects to Azure Boards 
 - Web portal that connects to an on-premises Azure DevOps 2015 or later version 
@@ -118,7 +123,7 @@ You can use the <strong>@CurrentIteration</strong> in a query from the following
 You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
-An error occurs if you open a query that contains the <strong>@CurrentIteration</strong> macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
 
 ## Date-based queries  
@@ -126,6 +131,11 @@ An error occurs if you open a query that contains the <strong>@CurrentIteration<
 You can filter for work items by the date on which they were changed or for a specific time period. Limiting the scope of your query can help with performance by only returning results that fit the date range that you include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
 Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. 
+
+> [!NOTE] 
+> See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) 
+
+
 
 
 ---
@@ -204,13 +214,12 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
-[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Create start of day, week, month, or year date-based queries
 
-The following examples show how to use the <strong>StartOf...</strong> macros to filter for work items with various offsets. For more examples of using these macros, see [WIQL syntax](wiql-syntax.md#start-of). 
+The following examples show how to use the **StartOf...** macros to filter for work items with various offsets. For more examples of using these macros, see [WIQL syntax](wiql-syntax.md#start-of). 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -258,7 +267,7 @@ The following examples show how to use the <strong>StartOf...</strong> macros to
 ---
 
 
-Not all fields are valid for all work item types. Jump to [date fields](#date_fields) for the set of fields you can include in queries and which work item types they apply to. Enter dates in the **Date Pattern** you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)   
+Not all fields are valid for all work item types. Jump to [date fields](#date_fields) for the set of fields you can include in queries and which work item types they apply to. Enter dates in the **Date Pattern** you set for your personal profile.   
 
 ::: moniker-end
 
@@ -277,7 +286,7 @@ Any item assigned to a sprint that corresponds to the current iteration path for
 
 ::: moniker range=">= azure-devops-2019"
 
-Azure Boards adds a team parameter when you select the <strong>@CurrentIteration</strong> or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
+Azure Boards adds a team parameter when you select the **@CurrentIteration** or **@CurrentIteration +/- _n_** macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  

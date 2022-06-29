@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2021
+ms.date: 06/29/2022
 ---
 
 
@@ -33,18 +33,14 @@ The value you specify for a field must conform to the data type for that field. 
 :::row:::
    :::column span="1":::
    **Data type**
-
    :::column-end:::
    :::column span="3":::
    **Description**
-
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    **Boolean**<sup>1</sup> 
-
    :::column-end:::
    :::column span="3":::
    Specifies a field that takes on a True/False value. 
@@ -54,7 +50,6 @@ The value you specify for a field must conform to the data type for that field. 
 :::row:::
    :::column span="1":::
    **DateTime** or  **Date/Time**
-
    :::column-end:::
    :::column span="3":::
    A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md).  
@@ -65,117 +60,94 @@ The value you specify for a field must conform to the data type for that field. 
 :::row:::
    :::column span="1":::
    **Double** or **Decimal**
-
    :::column-end:::
    :::column span="3":::
    A real number, such as 0.2 or 3.5. For query examples, see [Query by numeric fields](query-numeric.md). 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **GUID** 
-
    :::column-end:::
    :::column span="3":::
    A character string that represents a unique ID.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    **History** 
-
    :::column-end:::
    :::column span="3":::
    Custom formatted field used to track historical information. This data type is only used to support the **History** field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article.  For query examples, see [History and auditing](history-and-auditing.md). 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **HTML** 
-
    :::column-end:::
    :::column span="3":::
    Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **Identity** 
-
    :::column-end:::
    :::column span="3":::
    Short text string that identifies a user identity. 
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **Integer** 
-
    :::column-end:::
    :::column span="3":::
    A 32-bit integer that is signed, such as 0, 1, 2, 34.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **PlainText** or  **Text field (multi-line)**
-
    :::column-end:::
    :::column span="3":::
    Text strings that support long descriptions, such as the **Application Start Information** field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **picklistDouble**<sup>2</sup>
-
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of Decimal values.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **picklistInteger**<sup>2</sup>
-
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of Integer values.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **picklistString**<sup>2</sup>
-
    :::column-end:::
    :::column span="3":::
    Custom field defined to contain a pick list of short text string (255 characters or less) values.
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **String** or  **Text field (single line)**
-
    :::column-end:::
    :::column span="3":::
    Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     **TreePath** 
-
    :::column-end:::
    :::column span="3":::
    A branching tree structure, such as an Area Path or Iteration path. Choose an item from a list of valid values. Find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team.

@@ -9,7 +9,7 @@ ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A
 ms.author: kaelli  
 author: KathrynEE  
 monikerRange: '<= azure-devops'
-ms.date: 11/17/2021
+ms.date: 06/29/2022
 ---
 
 
@@ -241,7 +241,6 @@ Beyond these basic operators, there are some behaviors and operators specific to
    String
    :::column-end:::
    :::column span="3":::
-   
    `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
    :::column-end:::
 :::row-end:::
@@ -250,11 +249,11 @@ Beyond these basic operators, there are some behaviors and operators specific to
    TreePath
    :::column-end:::
    :::column span="3":::
-   
    `=, <>, In, Not In, Under, Not Under`
    :::column-end:::
 :::row-end:::
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 ### Logical groupings 
 
