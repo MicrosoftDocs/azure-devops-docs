@@ -8,7 +8,7 @@ ms.date: 06/23/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Publish NuGet packages (NuGet.exe)
+# Publish and restore NuGet packages from the command line (NuGet.exe)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -67,6 +67,14 @@ nuget push <PACKAGE_PATH> -src https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<P
     nuget sources Add -Name "MySource" -Source https://pkgs.dev.azure.com/MyOrg/MyProject/_packaging/MyFeed/nuget/v3/index.json -UserName MyUserName -Password YourPersonalAccessToken -config ./nuget.config
     nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
     ```
+
+## Restore packages
+
+To restore your packages, run the following command in an elevated command prompt:
+
+```Command
+nuget.exe restore
+```
 
 ## Related articles
 

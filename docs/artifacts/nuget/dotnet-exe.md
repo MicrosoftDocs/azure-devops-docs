@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
 
-# Publish and restore NuGet packages (dotnet)
+# Publish and restore NuGet packages from the command line (dotnet)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
