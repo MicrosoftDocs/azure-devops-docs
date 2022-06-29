@@ -25,7 +25,7 @@ You can use a [default Analytics view](analytics-default-views.md) or [create a 
 
 ## Default Analytics views
 
-As set of default Analytics views are provided. The default views and are immediately accessible from Power BI. The view you select determines the set of records, fields, and history that is pulled into Power BI.  
+A set of default Analytics views are provided. The default views and are immediately accessible from Power BI. The view you select determines the set of records, fields, and history that is pulled into Power BI.  
 
 ::: moniker range="azure-devops"
 
