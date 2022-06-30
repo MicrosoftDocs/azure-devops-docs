@@ -57,8 +57,9 @@ A: Azure DevOps scans for PATs checked into public repositories on GitHub. When 
 
 There's a policy for managing leaked PATs! For more information, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically).
 
-### Q: Can I use PAT for pushing nupkg packages with dotnet/nuget.exe as ApiKey in command line?
+### Q: Can I use a personal access token as an ApiKey to publish NuGet packages to an Azure Artifacts feed using the dotnet/nuget.exe command line?
 
-A: No. Azure Artifacts feeds do not accept a personal access token (PAT) specified in command-line argument. When using a local development environment, it is recommended to install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see [Azure Artifacts' examples](https://docs.microsoft.com/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops#examples)). For Azure hosted builds that interfact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task for the authentication.  
+A: No. Azure Artifacts does not support passing a personal access token as an ApiKey. When using a local development environment, it is recommended to install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. See the following examples for more details: [dotnet](../../artifacts/nuget/dotnet-exe.md), [NuGet.exe](../../artifacts/nuget/publish.md).
+If you want to publish your packages using Azure Pipelines, use the [NuGet Authenticate](../../pipelines/tasks/package/nuget-authenticate.md) task to authenticate with your feed [example](../../pipelines/artifacts/nuget.md#publish-a-package).
 
 ::: moniker-end
