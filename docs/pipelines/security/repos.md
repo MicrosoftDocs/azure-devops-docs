@@ -3,7 +3,7 @@ title: Secure repositories
 description: Securing repos and forks
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
 ms.reviewer: vijayma
-ms.date: 05/18/2021
+ms.date: 06/30/2022
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -32,8 +32,7 @@ To protect your products from contributed code, consider the following recommend
 
 ### Don't provide secrets to fork builds
 
-By default, your pipelines do not build forks.
-If you decide to build forks, secrets and protected resources are not made available to the jobs in those pipelines by default.
+By default, your pipelines are configured to build forks, but secrets and protected resources are not made available to the jobs in those pipelines by default.
 Don't turn off this latter protection.
 
 ![Screenshot of fork build protection UI](media/fork-build-protection.png)
