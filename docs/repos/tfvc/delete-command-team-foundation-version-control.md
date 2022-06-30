@@ -5,7 +5,7 @@ description: Delete Command (Team Foundation Version Control)
 ms.assetid: c4cf7a59-26c8-490c-a065-279888019c36
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

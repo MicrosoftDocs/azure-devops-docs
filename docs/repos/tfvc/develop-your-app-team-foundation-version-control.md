@@ -5,7 +5,7 @@ description: Develop your app in Team Foundation version control
 ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

@@ -5,7 +5,7 @@ description: Checkout (or Edit) command
 ms.assetid: 377fec8a-bdc5-4e3c-ac8c-79ee85eef4ce
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

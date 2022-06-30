@@ -5,7 +5,7 @@ description: Control Access to Team Foundation Version Control
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

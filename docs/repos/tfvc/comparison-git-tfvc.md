@@ -5,7 +5,7 @@ description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

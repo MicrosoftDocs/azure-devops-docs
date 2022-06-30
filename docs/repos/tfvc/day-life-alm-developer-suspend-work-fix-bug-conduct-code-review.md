@@ -5,7 +5,7 @@ description: Day in the life of a devops developer. Suspend work, fix a bug, and
 ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
 ms.technology: devops-code-tfvc
 ms.topic: tutorial
-ms.date: 08/25/2016
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 
