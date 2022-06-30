@@ -43,7 +43,7 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 |[Azure App Service](https://go.microsoft.com/fwlink/?LinkId=613645)  | Code pushed        | Deploy web app   |
 |[Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)    | All        | Send a message to a Notification Hub, Service Bus Queue, or Service Bus Topic  |
 |[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)   |  All | Insert a message in a Storage Queue |
-|[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)    | Build completed, Code pushed | Queue a build |
+|[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build |
 |[Campfire](https://go.microsoft.com/fwlink/?LinkID=393613)   |  All | Post a message to a room |
 |[Datadog](./services/datadog.md)  |  All  | Post an event in Datadog |
 |[Flowdock](https://www.flowdock.com/api/integration-getting-started)   | All   |  Post a message to a team inbox or chat |
