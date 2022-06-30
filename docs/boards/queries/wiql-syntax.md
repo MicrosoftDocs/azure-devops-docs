@@ -672,7 +672,7 @@ For more information, see [Link type reference](link-type-reference.md).
 The following query returns all work item types define in the current project. The query as shown in the Query Editor appears as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Query Editor, Query Editor, tree query, all work items and states.](media/wiql/tree-query-all-work-items.png)   
+> ![Screenshot of Query Editor, tree query, all work items and states.](media/wiql/tree-query-all-work-items.png)   
 
 The equivalent WIQL syntax is shown below. 
 
