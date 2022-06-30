@@ -5,16 +5,12 @@ ms.topic: tutorial
 ms.reviewer: nicolela
 ms.custom: "mvc, seodec18"
 ms.date: 04/17/2018
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ---
 
-# Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
+# Tutorial: Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Azure Pipelines provides integration with Jenkins so that you can:
 
