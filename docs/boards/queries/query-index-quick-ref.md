@@ -124,6 +124,7 @@ You can list work items based on the following criteria...
       
       **Other**  
       - [List deleted work items (Recycle bin)](../backlogs/remove-delete-work-items.md#restore-or-destroy-work-items)
+      - [Query by field value comparisons](query-field-value.md) 
    :::column-end:::
 :::row-end:::
 ---
@@ -181,7 +182,7 @@ You can list work items based on the following criteria...
 
 ## Operators and macros supported for each data type
 
-The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the [Work item field index](../work-items/guidance/work-item-field.md). Operators available for defining a query clause depends on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see  Query fields, operators, and macros](query-operators-variables.md).
+The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the [Work item field index](../work-items/guidance/work-item-field.md). Operators available for defining a query clause depend on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see [Query fields, operators, and macros](query-operators-variables.md).
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
@@ -232,7 +233,7 @@ The following table indicates the operators and macros available for the differe
    :::column span="3":::
    Also referred to as **Decimal** and includes **picklistDouble**<sup>2</sup>. A real number, such as 0.2 or 3.5.  
    
-   Query samples: [Query by numeric fields](query-numeric.md). 
+   Query examples: [Query by numeric fields](query-numeric.md). 
 
    :::column-end:::
    :::column span="3":::
@@ -257,7 +258,7 @@ The following table indicates the operators and macros available for the differe
    :::column span="3":::
    Custom formatted field used to track historical information and only assigned to the **History** field.  
 
-   Query samples: [History and auditing](history-and-auditing.md). 
+   Query examples: [History and auditing](history-and-auditing.md). 
 
    :::column-end:::
    :::column span="3":::
@@ -312,7 +313,7 @@ The following table indicates the operators and macros available for the differe
    :::column-end:::
    :::column span="3":::
    Multi-line text strings that support long descriptions and are automatically indexed for full-text search, when full-text search is available.  
-   Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
+   Query examples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
 
    :::column-end:::
    :::column span="3":::
@@ -326,7 +327,7 @@ The following table indicates the operators and macros available for the differe
    :::column span="3":::
    Also includes **picklistString**<sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the **Title** field, picklists (drop-down menus), user accounts, **Tags**, and other fields.  
    
-   Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md) and [Query by picklist value](planning-ranking-priorities.md).
+   Query examples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md) and [Query by picklist value](planning-ranking-priorities.md).
 
    :::column-end:::
    :::column span="3":::
@@ -343,7 +344,7 @@ The following table indicates the operators and macros available for the differe
    :::column span="3":::
    Field type that supports the **Area Path** and **Iteration Path** fields. You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
  
-   Query samples: [Query by area or iteration path](query-by-area-iteration-path.md) and [Query by date or current iteration](query-by-area-iteration-path.md).
+   Query examples: [Query by area or iteration path](query-by-area-iteration-path.md) and [Query by date or current iteration](query-by-area-iteration-path.md).
 
    :::column-end:::
    :::column span="3":::
@@ -373,14 +374,13 @@ The following table indicates the operators and macros available for the differe
 
 <a id="samples" />
 
-## Sample queries for select fields 
+## Example queries for select fields 
 
 The following table lists common query fields and their data type for which sample queries are provided. To determine the data type of a field, see [Work item fields and attributes, List field attributes](../work-items/work-item-fields.md).  
 
 :::row:::
    :::column span="1":::
-   ### A
-   
+   ### A  
    - [Acceptance Criteria](titles-ids-descriptions.md) (HTML)
    - [Activated By](query-by-workflow-changes.md) (Identity)
    - [Activated Date](query-by-workflow-changes.md) (DateTime)
@@ -391,16 +391,14 @@ The following table lists common query fields and their data type for which samp
    - [Automated Test Name](build-test-integration.md) (String) 
    - [Automated Test Type](build-test-integration.md) (String) 
    
-   ### B
-   
+   ### B  
    - [Blocked](planning-ranking-priorities.md) (String)
    - [Board Column](query-by-workflow-changes.md) (String)
    - [Board Column Done](query-by-workflow-changes.md) (Boolean)
    - [Board Lane](query-by-workflow-changes.md) (String)
    - [Business Value](query-numeric.md) (String) 
    
-   ### C
-   
+   ### C  
    - [Changed By](history-and-auditing.md) (Identity)
    - [Changed Date](history-and-auditing.md) (DateTime)
    - [Closed By](query-by-workflow-changes.md) (Identity)
@@ -414,8 +412,7 @@ The following table lists common query fields and their data type for which samp
    :::column-end:::
    :::column span="1":::
    
-   ### D-E-F
-   
+   ### D-E-F  
    - [Discipline](query-numeric.md) (String)
    - [Description](titles-ids-descriptions.md) (HTML)
    - [Due Date](query-by-date-or-current-iteration.md) (DateTime)
@@ -424,8 +421,7 @@ The following table lists common query fields and their data type for which samp
    - [Finish Date](query-by-date-or-current-iteration.md) (DateTime)
    - [Found In Build](build-test-integration.md) (String)
    
-   ### H-P
-   
+   ### H-P  
    - [History](history-and-auditing.md) (History)
    - [Hyperlink Count](linking-attachments.md#hyper-link-count) (Integer)
    - [ID](titles-ids-descriptions.md) (Integer)
@@ -436,9 +432,7 @@ The following table lists common query fields and their data type for which samp
    - [Original Estimate](query-numeric.md) (Decimal)
    - [Parameters](build-test-integration.md) (HTML)
    - [Priority](planning-ranking-priorities.md) (Integer) 
-   
-   ### R
-   
+   ### R  
    - [Reason](query-by-workflow-changes.md) (String)
    - [Related Link Count](linking-attachments.md) (Integer)
    - [Remaining Work](query-numeric.md) (Decimal)
@@ -447,13 +441,10 @@ The following table lists common query fields and their data type for which samp
    - [Resolved Date](query-by-workflow-changes.md) (DateTime)
    - [Resolved Reason](query-by-workflow-changes.md) (String)
    - [Rev](history-and-auditing.md) (Integer)
-   - [Revised Date](history-and-auditing.md) (DateTime)
-   
+   - [Revised Date](history-and-auditing.md) (DateTime) 
    :::column-end:::
    :::column span="1":::
-   
-   ### S
-   
+   ### S  
    - [Severity](planning-ranking-priorities.md) (String)
    - [Size](query-numeric.md) (Decimal)
    - [Stack Rank](planning-ranking-priorities.md) (Decimal)
@@ -463,10 +454,8 @@ The following table lists common query fields and their data type for which samp
    - [Steps](build-test-integration.md) (HTML)
    - [Steps to Reproduce](titles-ids-descriptions.md) (HTML)
    - [Story Points](query-numeric.md) (Decimal)
-   - [System Info](titles-ids-descriptions.md) (HTML)
-   
-   ### T
-   
+   - [System Info](titles-ids-descriptions.md) (HTML)  
+   ### T  
    - [Tags](add-tags-to-work-items.md) (String)
    - [Target Date](query-by-date-or-current-iteration.md) (DateTime)
    - [Task Type](query-numeric.md) (String)
@@ -474,12 +463,9 @@ The following table lists common query fields and their data type for which samp
    - [Test Suite Type](build-test-integration.md) (String)
    - [Title](titles-ids-descriptions.md) (System)
    - [Triage](planning-ranking-priorities.md) (String)
-   
-   ### V-W
-   
+   ### V-W  
    - [Value Area](planning-ranking-priorities.md) (String)
    - [Work Item Type](titles-ids-descriptions.md) (String)  
-   
    :::column-end:::
 :::row-end:::
 
