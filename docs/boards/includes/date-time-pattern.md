@@ -14,7 +14,7 @@ The date and time pattern you enter for **DateTime** fields should match that wh
 ::: moniker range="azure-devops"  
 
 > [!div class="mx-imgBorder"]
-> ![Time and Locale page, Date pattern options](../../organizations/settings/media/user-preferences/date-patterns.png)   ![Time and Locale page, Time pattern options](../../organizations/settings/media/user-preferences/time-pattern.png)  
+> ![Time and Locale page, Date pattern options](../../organizations/settings/media/user-preferences/date-patterns.png) ![Time and Locale page, Time pattern options](../../organizations/settings/media/user-preferences/time-pattern.png)  
 
 ::: moniker-end 
 

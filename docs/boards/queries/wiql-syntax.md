@@ -108,13 +108,35 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
 :::row-end:::
 
 
-<!---
 
-> [!WARNING]  
-> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
+### Custom fields
+ 
+::: moniker range=">= azure-devops-2019"  
 
--->
+You can add a custom field to a query clause. With WIQL, you must specify the reference name for the custom field. For projects that use an Inherited process model, custom fields are typically labeled with **_Custom._** prepended to their name, and spaces removed. For example: 
 
+| Friendly name | Reference name|  
+|---------------|---------------|
+| Approver | Custom.Approver |
+| Request Type | Custom.RequestType | 
+| Scope Estimate | Custom.CustomEstimate | 
+
+For projects that use the On-premises XML process model, the reference name is as defined by the XML work item type definitions. 
+
+To learn more, see [Work item fields and attributes](../work-items/work-item-fields.md).
+
+::: moniker-end 
+
+ 
+
+::: moniker range="tfs-2018"  
+
+You can add a custom field to a query clause. With WIQL, you must specify the reference name for the custom field. 
+
+
+To learn more, see [Add or modify a field to track work](../../reference/add-modify-field.md).
+
+::: moniker-end 
 
 <a id="where-clause" />
 
@@ -257,14 +279,14 @@ Beyond these basic operators, there are some behaviors and operators specific to
 
 ### Logical groupings 
 
-You can use the terms `AND` and `OR` in the typical Boolean sense to evaluate two clauses. You can use the terms `AND EVER` and `OR EVER` when specifying a WAS EVER operator. You can group logical expressions and further conjoin them, as needed. Examples are shown below.  
+You can use the terms `AND` and `OR` in the typical Boolean sense to evaluate two clauses. You can use the terms `AND EVER` and `OR EVER` when specifying a `WAS EVER` operator. You can group logical expressions and further conjoin them, as needed. Examples are shown below.  
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
 WHERE [System.State] =  'Active' 
     AND [System.AssignedTo] = 'joselugo' 
 	AND ([System.CreatedBy] = 'linaabola' 
-    OR [Adatum.CustomMethodology.ResolvedBy] = 'jeffhay') 
+    OR [System.ResolvedBy] = 'jeffhay') 
     AND [System.State] = 'Closed'
     WHERE [System.State] = 'Active'
     AND [System.State] EVER 'Closed'
@@ -283,7 +305,7 @@ WHERE [System.AssignedTo] ever 'joselugo'
 The WIQL syntax is shown next for the following query constructed through the Query Editor. This example finds all work items that were ever assigned to *Jamal Hartnett*. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, flat list query, was ever assigned](media/wiql/flat-list-was-ever-query.png)   
+> ![Screenshot of Query Editor, flat list query, was ever assigned.](media/wiql/flat-list-was-ever-query.png)   
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
@@ -592,7 +614,7 @@ For more information, see [Link type reference](link-type-reference.md).
 The following query returns all work item types define in the current project. The query as shown in the Query Editor appears as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, tree query, all work items and states](media/wiql/tree-query-all-work-items.png)   
+> ![Screenshot of Query Editor, Query Editor, tree query, all work items and states.](media/wiql/tree-query-all-work-items.png)   
 
 The equivalent WIQL syntax is shown below. 
 
@@ -627,7 +649,7 @@ MODE (Recursive)
 The following query returns all work item types define in the current project. The query as shown in the Query Editor appears as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, direct-link query, all work items and states](media/wiql/direct-link-query.png)   
+> ![Screenshot of Query Editor, direct-link query, all work items and states.](media/wiql/direct-link-query.png)   
 
 
 The equivalent WIQL syntax is as shown. 
@@ -865,4 +887,12 @@ WHERE [Assigned To] EVER 'joselugo'
 
 <!---
 https://msdn.microsoft.com/library/bb130306.aspx
+-->
+
+
+<!---
+
+> [!WARNING]  
+> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
+
 -->
