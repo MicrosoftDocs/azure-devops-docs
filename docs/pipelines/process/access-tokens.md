@@ -164,7 +164,7 @@ Job authorization scope can be set for each pipeline. To set this scope:
 >[!NOTE]
 > If your pipeline is in a **public project**, then the job authorization scope is automatically restricted to **project** no matter what you configure in any setting. Jobs in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
 
-:::moniker range="azure-devops"
+:::moniker range="azure-devops-2020"
 
 ### Limit job authorization scope to referenced Azure DevOps repositories
 
@@ -174,8 +174,20 @@ Pipelines can access any Azure DevOps repositories in authorized projects unless
 
 For more information, see [Azure Repos Git repositories - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
 
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+### Protect access to repositories in YAML pipelines
+
+In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Protect access to repositories in YAML pipelines** setting.
+
+Pipelines can access any Azure DevOps repositories in authorized projects unless **Protect access to repositories in YAML pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
+
+For more information, see [Azure Repos Git repositories - Protect access to repositories in YAML pipelines](../repos/azure-repos-git.md#protect-access-to-repositories-in-yaml-pipelines).
+
 > [!IMPORTANT]
-> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
+> **Protect access to repositories in YAML pipelines** is enabled by default for new organizations and projects created after May 2020.
 
 :::moniker-end
 
