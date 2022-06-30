@@ -181,7 +181,11 @@ You can list work items based on the following criteria...
 
 ## Operators and macros supported for each data type
 
-The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the <a href="../work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../work-items/guidance/work-item-field.md)">Work item field index</a>. Operators available for defining a query clause depends on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see <a href="query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](query-operators-variables.md)">Query fields, operators, and macros</a>.
+The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the [Work item field index](../work-items/guidance/work-item-field.md). Operators available for defining a query clause depends on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see  Query fields, operators, and macros](query-operators-variables.md).
+
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
+
+
 
 :::row:::
    :::column span="1":::
@@ -363,7 +367,7 @@ The following table indicates the operators and macros available for the differe
 > 9. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
 
 
-[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
+
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 

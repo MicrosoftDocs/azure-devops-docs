@@ -13,7 +13,7 @@ ms.date: 06/29/2022
 ---
 
 
-# Query fields, operators, and macros in Azure Boards and Azure DevOps
+# Query fields, operators, and macros in Azure Boards 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
