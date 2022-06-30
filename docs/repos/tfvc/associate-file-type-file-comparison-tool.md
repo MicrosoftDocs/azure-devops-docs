@@ -23,7 +23,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 ### To associate a file type with a third-party compare tool
 
 1.  Perform either of the following sets of steps.  
-    1.  In older versions of Visual Studio, on the menu bar, choose **Tools**, **Options**.  
+    1.  In Visual Studio, on the menu bar, choose **Tools**, **Options**.  
     2.  In the **Options** dialog box, expand **Source Control**, choose **Visual Studio Team Foundation Server**, and then choose **Configure User Tools**.  
     --or--  
     1.  In Windows, choose **Start**, **All Programs**, **Visual Studio <version>**, **Developer Command Prompt**.  
