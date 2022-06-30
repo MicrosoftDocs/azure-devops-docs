@@ -20,9 +20,9 @@ Learn how to connect to a project to share code, build apps, track work, and col
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
 - [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
-- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)  
-- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in) 
-- [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)  
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
+- [Visual Studio Code](/previous-versions/azure/devops/all/java/vscode-extension)
 
 A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. One or more projects may be defined within a collection. There must be at least one project. For more information, see [About projects and scaling your organization](about-projects.md).
 
@@ -284,7 +284,7 @@ Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Pro
 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in) 
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/all/java/download-eclipse-plug-in) 
 - [Azure Test Plans](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 
