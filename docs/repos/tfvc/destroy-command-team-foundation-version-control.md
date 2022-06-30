@@ -5,7 +5,7 @@ description: Destroy Command (Team Foundation Version Control)
 ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

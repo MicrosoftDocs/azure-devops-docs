@@ -12,7 +12,7 @@ f1_keywords:
 - vs.tfc.sourcecontrol.DialogPromoteCandidates
 - vs.tfc.sourcecontrol.DialogUndoPendingChanges
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

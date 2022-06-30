@@ -5,7 +5,7 @@ description: Destroy Version Controlled Files
 ms.assetid: 9be4d796-b448-4084-a102-a0e95e7b0053
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

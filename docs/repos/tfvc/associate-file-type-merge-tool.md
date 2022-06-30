@@ -5,7 +5,7 @@ description: Associate a file type with a merge tool
 ms.assetid: be153b5c-b26d-4bfe-aec2-fd23156ead68
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -25,6 +25,25 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
 ### To associate a file type with a third-party merge tool
 
+#### Visual Studio 2019 and 2022
+
+1.  In Windows, choose **Start**, **All Programs**, **Visual Studio <version>**, **Developer Command Prompt**.  
+2. Type **tf diff /configure**.  
+3.  In the **Configure User Tools** dialog box, choose **Add**.
+
+    The **Configure Tool** dialog box appears.
+
+4. Choose **Merge** from the **Operation** drop-down.
+5.  In the **Command** text box, either type the path and name of the tool tool, or use the ellipses to browse to it.
+
+6.  In the **Arguments** text box, type any arguments that your tool requires.
+
+    The arrow button shows a list of available variables that the diff/resolve command will fill in before passing them to the configured tool as specified in the arguments box. Any other text in the argument box will be passed to the tool directly.
+
+7.  Click **OK**.
+8. Repeat these steps to add more file extensions.
+
+#### Previous versions of Visual Studio
 1.  From the **Tools** menu, click **Options**.
 
 2.  In the **Options** dialog box, open **Source Control**, expand it, and then click **Visual Studio Team Foundation Server**.
