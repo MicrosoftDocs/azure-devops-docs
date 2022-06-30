@@ -46,7 +46,7 @@ The WIQL syntax isn't case-sensitive.
 
 
 > [!NOTE] 
-> You can only construct queries using the WIQL syntax in the Query Editor by installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
+> You can construct queries using the WIQL syntax in the Query Editor by installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
 
 ### Limits on WIQL length  
 
@@ -77,7 +77,6 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
    
    - Use `FROM WorkItems` to return work items.  
    - Use `FROM workItemLinks` to return links between work items. For more information, see [Queries for links between work items](#linked-work-items) later in this article.  
-   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -147,18 +146,23 @@ The `WHERE` clause specifies the filter criteria. The query returns only work it
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
 WHERE [Work Item Type] = 'User Story'
-AND [State] = 'Active'
-AND [Assigned to] = @Me
+   AND [State] = 'Active'
+   AND [Assigned to] = @Me
 ```
 
 You can control the order in which logical operators are evaluated by enclosing them within parentheses to group the filter criteria. For example, to return work items that are either assigned to you or that you closed, change the query filter to match the following example.
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
-WHERE [Work Item Type] = 'User Story'
-AND [State] = 'Active'
-AND ( [Assigned to] = @Me
-OR [Closed by] = @Me )
+WHERE
+    [System.TeamProject] = @project
+    AND (
+        [System.WorkItemType] = 'Product Backlog Item'
+        AND (
+            [System.AssignedTo] = @me
+            OR [Microsoft.VSTS.Common.ClosedBy] = @me
+        )
+    )
 ```
 
 
@@ -190,8 +194,11 @@ Some simple query operations are listed below.
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
-WHERE [System.AssignedTo] = 'joselugo'  
-WHERE [Adatum.CustomMethodology.Severity] >= 2
+WHERE
+    [System.TeamProject] = @project
+    AND [System.WorkItemType] <> ''
+    AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+    AND [Microsoft.VSTS.Common.Severity] <> '1 - Critical'
 ```
 
 The table below summarizes all the supported operators for different field types. For more information on each field type, see [Work item fields and attributes](../work-items/work-item-fields.md).  
@@ -283,47 +290,51 @@ You can use the terms `AND` and `OR` in the typical Boolean sense to evaluate tw
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
-WHERE [System.State] =  'Active' 
-    AND [System.AssignedTo] = 'joselugo' 
-	AND ([System.CreatedBy] = 'linaabola' 
-    OR [System.ResolvedBy] = 'jeffhay') 
-    AND [System.State] = 'Closed'
-    WHERE [System.State] = 'Active'
-    AND [System.State] EVER 'Closed'
+WHERE
+    [System.TeamProject] = @project
+    AND (
+        [System.WorkItemType] <> ''
+        AND [System.State] IN ('Active', 'Approved', 'Committed', 'In Progress')
+        AND (
+            [System.CreatedBy] = ''
+            OR [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+        )
+    )
 ```
 
-You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The examples below query for all work items that aren't classified within the subtree of 'MyProject\Feature1'.
+You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The example below queries for all work items that aren't assigned under the subtree of `Fabrikam Fiber\Account Management`.
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
-WHERE [System.AreaPath] not under 'MyProject\Feature1'
-WHERE [System.AssignedTo] ever 'joselugo'
+WHERE
+    [System.TeamProject] = @project
+    AND [System.WorkItemType] <> ''
+    AND NOT [System.AreaPath] UNDER 'Fabrikam Fiber\Account Management'
+
 ```
 
 #### Example query, Was Ever Assigned To
 
-The WIQL syntax is shown next for the following query constructed through the Query Editor. This example finds all work items that were ever assigned to *Jamal Hartnett*. 
+The following Query Editor example finds all work items that were ever assigned to *Jamal Hartnett*. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Query Editor, flat list query, was ever assigned.](media/wiql/flat-list-was-ever-query.png)   
+> ![Screenshot of Query Editor, flat list query, was ever assigned.](media/wiql/flat-list-was-ever-query.png)  
+> 
+
+And, here is the corresponding WIQL syntax.  
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
 SELECT
     [System.Id],
-    [System.WorkItemType],
     [System.Title],
-    [System.AssignedTo],
     [System.State],
-    [System.Tags]
+    [System.IterationPath]
 FROM workitems
 WHERE
-    [System.WorkItemType] <> ''
-    AND (
-        [System.State] <> ''
-        OR EVER [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
-    )
-ORDER BY [System.Id]
+    [System.TeamProject] = @project
+    AND [System.WorkItemType] <> ''
+    AND EVER [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
 ```
 
 
@@ -368,8 +379,8 @@ The following table lists the macros or variables you can use within a WIQL quer
 The `@me` macro replaces the Windows Integrated account name of the user who runs the query. The example below shows how to use the macro and the equivalent static statement. Although the macro is intended for fields such as `Assigned To`, you can use it for any String field, although the result may not be meaningful.
 
 ```WIQL
-[System.AssignedTo] = @Me
-[System.AssignedTo] = 'joselugo'
+WHERE  
+   [System.AssignedTo] = @Me 
 ```
 
 ### @today macro 
@@ -379,25 +390,29 @@ You can use the `@today` macro with any <strong>DateTime</strong> field. This ma
 The examples below assumes that today is 1/3/19.
 
 ```WIQL
-[System.CreatedDate] = @today
+WHERE  
+   [System.CreatedDate] = @today
 ```
 
 Is the equivalent of:
 
 ```WIQL
-[System.CreatedDate] = '1/3/19'
+WHERE  
+   [System.CreatedDate] = '1/3/19'
 ```
 
 And
 
 ```WIQL
-[System.CreatedDate] > @today-2
+WHERE  
+   [System.CreatedDate] > @today-2
 ```
 
 Is the equivalent of:
 
 ```WIQL
-[System.CreatedDate] > '1/1/19'
+WHERE  
+   [System.CreatedDate] > '1/1/19'
 ```
 
 
@@ -426,32 +441,38 @@ These macros accept a modifier string that has a format of `(+/-)nn(y|M|w|d|h|m)
 This syntax allows you to nest modifiers and offset your query twice. For example, the clause `Closed Date >= @StartOfYear - 1`, filters work items that have been closed since last year. By modifying it to `Closed Date >= @StartOfYear('+3M') - 1`, it excludes work items closed within the first three months of the last year. The WIQL syntax is as shown in the following example. 
 
 ```WIQL
-[Microsoft.VSTS.Common.ClosedDate] >=@StartOfYear('+3M') - 1
+WHERE 
+   [Microsoft.VSTS.Common.ClosedDate] >=@StartOfYear('+3M') - 1
 ```
 
 
 The following examples assume that today is 4/5/19. 
 
 ```WIQL
-[Microsoft.VSTS.Common.CreatedDate] >= @StartOfMonth-3
+WHERE  
+   [Microsoft.VSTS.Common.CreatedDate] >= @StartOfMonth-3
 ```
 
 Is the equivalent of:
 
-```WIQL
-[Microsoft.VSTS.Common.CreatedDate] >= '1/1/19'
+```WIQL 
+
+WHERE 
+   [Microsoft.VSTS.Common.CreatedDate] >= '1/1/19'
 ```
 
 And
 
 ```WIQL
-[Microsoft.VSTS.Scheduling.TargetDate] > @StartOfYear
+WHERE 
+   [Microsoft.VSTS.Scheduling.TargetDate] > @StartOfYear
 ```
 
 Is the equivalent of:
 
 ```WIQL
-[Microsoft.VSTS.Scheduling.TargetDate]  > '1/1/19'
+WHERE 
+   [Microsoft.VSTS.Scheduling.TargetDate]  > '1/1/19'
 ```
 
 ::: moniker-end
@@ -468,9 +489,6 @@ public WorkItemCollection Query(string wiql, IDictionary context)
 
 The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then '@project' will be replaced by 'MyProject' in the WIQL. This replacement is how the work item query builder handles the @project macro in Visual Studio.
 
-
-
-
 ## `ASOF` historical queries 
 
 You can use an `ASOF` clause in a query to filter for work items that satisfy the specified filter conditions as they were defined on a specific date and time.
@@ -478,13 +496,21 @@ You can use an `ASOF` clause in a query to filter for work items that satisfy th
 > [!NOTE] 
 > You can’t create `ASOF` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an `ASOF` clause, and then load that in Visual Studio, the `ASOF` clause is ignored.
 
-Suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
+Suppose a work item was classified under an **Iteration Path** of `Fabrikam Fiber\Release 1` and assigned to 'Jamal Hartnett' prior to 5/05/2022. However, the work item was recently assigned to 'Raisa Pokrovskaya' and moved to a new iteration path of Release 2. The following example query will return this work items assigned to Jamal Hartnett because the query is based on the state of work items as of a past date and time. 
 
 ```WIQL
-SELECT [System.Title] 
-    FROM workitems 
-    WHERE ([System.IterationPath] = 'MyProject\ProjArea' and [System.AssignedTo] = 'Mark Hanson') 
-    ASOF '3/16/16 12:30'
+SELECT
+    [System.Id],
+    [System.Title],
+    [System.State],
+    [System.IterationPath]
+FROM workitems
+WHERE
+    [System.TeamProject] = @project
+    AND [System.WorkItemType] <> ''
+    AND ([System.IterationPath] UNDER 'Fabrikam Fiber\Release 1'
+    AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>') 
+    ASOF  '2022-05-01T00:00:00.0000000'
 ```
 
 > [!NOTE]  
@@ -498,13 +524,24 @@ You can use the `ORDER BY` clause to sort the results of a query by one or more 
 >[!NOTE]  
 >The sorting preferences of the SQL server on the data tier determine the default sort order. However, you can use the `asc` or `desc` parameters to choose an explicit sort order. 
 
-The following example sorts work items first by **Priority** in ascending order, and then by **Created Date** in descending order.
+The following example sorts work items first by **Priority** in ascending order (default), and then by **Created Date** in descending order (`DESC`).
 
 ```WIQL
-SELECT [System.Title] 
-    FROM workitems 
-    WHERE [System.State] =  'Active' and [System.AssignedTo] =  'joselugo' 
-    ORDER BY [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc
+SELECT
+    [System.Id],
+    [System.Title],
+    [System.State],
+    [System.IterationPath]
+FROM workitems
+WHERE
+    [System.TeamProject] = @project
+    AND [System.WorkItemType] <> ''
+    AND [System.State] =  'Active'
+    AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+ORDER BY [Microsoft.VSTS.Common.Priority],
+    [System.CreatedDate] DESC
+
+
 ```
 
 
@@ -513,17 +550,34 @@ SELECT [System.Title]
 
 ## Query for links between work items
 
-To return links between work items, you specify `FROM WorkItemLinks`. Filter conditions in the `WHERE` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between user stories and their active child nodes.
+To return links between work items, you specify `FROM WorkItemLinks`. Filter conditions in the `WHERE` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between Product Backlog Items and their active child items.
 
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
-SELECT [System.Id]
-FROM WorkItemLinks
-WHERE ([Source].[System.WorkItemType] = 'User Story')
-  AND ([System.Links.LinkType] = 'Child')
-  AND ([Target].[System.State] = 'Active')
-MODE (MustContain)
+SELECT
+    [System.Id],
+    [System.Title],
+    [System.State],
+    [System.IterationPath]
+FROM workitemLinks
+WHERE
+    (
+        [Source].[System.TeamProject] = @project
+        AND [Source].[System.WorkItemType] = 'Product Backlog Item'
+    )
+    AND (
+        [System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'
+    )
+    AND (
+        [Target].[System.TeamProject] = @project
+        AND [Target].[System.WorkItemType] <> ''
+        AND [Target].[System.State] <> 'Closed'
+    )
+ORDER BY [Microsoft.VSTS.Common.Priority],
+    [System.CreatedDate] DESC
+MODE (Recursive)
+
 ```
 
 The following table summarizes the differences between work item queries and queries for links between work items. 
@@ -622,11 +676,9 @@ The equivalent WIQL syntax is shown below.
 ```WIQL
 SELECT
     [System.Id],
-    [System.WorkItemType],
     [System.Title],
-    [System.AssignedTo],
     [System.State],
-    [System.Tags]
+    [System.IterationPath]
 FROM workitemLinks
 WHERE
     (
@@ -642,6 +694,8 @@ WHERE
         AND [Target].[System.WorkItemType] <> ''
     )
 MODE (Recursive)
+
+
 ```
 
 ### Direct-link query example
@@ -661,8 +715,7 @@ SELECT
     [System.WorkItemType],
     [System.Title],
     [System.AssignedTo],
-    [System.State],
-    [System.Tags]
+    [System.State]
 FROM workitemLinks
 WHERE
     (
@@ -691,19 +744,25 @@ The following typical WIQL query example uses reference names for the fields. Th
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
-SELECT System.ID, System.Title 
-FROM workitems 
-WHERE Priority=1 
-ORDER BY System.ID asc
+SELECT
+    [System.Id],
+    [System.Title],
+    [System.State],
+    [System.IterationPath]
+FROM workitems
+WHERE
+    [System.TeamProject] = @project
+    AND [Microsoft.VSTS.Common.Priority] <> ''
+ORDER BY [System.Id]
 ```
 
 ### Date-time pattern
 
 You specify the date-time pattern according to one of two patterns: 
-- The Date Pattern and Time Pattern format comes from your browser's language/region selection.
-- The pattern specified by UTC, which follows this pattern (with Z appended to the date-time):  
+- The Date Pattern and Time Pattern format comes from your [user preferences, Time and Locale](../../organizations/settings/set-your-preferences.md) 
+- The pattern specified by UTC, which follows this pattern (with Z appended to the date-time).  
 
-`AND System.ChangedDate >= '1/1/2019 00:00:00Z'`
+`AND [System.ChangedDate] >= '1/1/2019 00:00:00Z'`
 
 
 ### Example clauses
@@ -728,7 +787,7 @@ The following example statements show specific qualifying clauses.
    SELECT [System.Id], [System.Title]
    FROM WorkItems
    WHERE [System.TeamProject] = @project
-   AND [System.AssignedTo] = 'Judy Lew'
+   AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
    ```
    :::column-end:::
 :::row-end:::
@@ -742,8 +801,8 @@ The following example statements show specific qualifying clauses.
    SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
-   AND ( [System.AssignedTo] = 'Mark Steele'
-   OR [System.AssignedTo] = 'Merav Sror' )
+   AND ( [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+   OR [System.AssignedTo] = ''Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>' )
    ```
    :::column-end:::
 :::row-end:::
@@ -757,8 +816,8 @@ The following example statements show specific qualifying clauses.
    SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
-   AND [System.AssignedTo] EVER 'Anne Wallace'
-   AND [System.AssignedTo] NOT CONTAINS 'Danny Levin'
+   AND [System.AssignedTo] EVER 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+   AND [System.AssignedTo] NOT CONTAINS 'Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>'
    ```
    :::column-end:::
 :::row-end:::
@@ -772,7 +831,7 @@ The following example statements show specific qualifying clauses.
    SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
-   AND [System.AssignedTo] EVER 'Anne Wallace'
+   AND [System.AssignedTo] EVER 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
    ```
    :::column-end:::
 :::row-end:::
@@ -786,7 +845,7 @@ The following example statements show specific qualifying clauses.
    SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
-   AND [System.AssignedTo] EVER 'David Galvin'
+   AND [System.AssignedTo] EVER 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
    AND [System.AreaPath] UNDER 'Agile1\Area 0'
    ```
    :::column-end:::
@@ -801,7 +860,7 @@ The following example statements show specific qualifying clauses.
    SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
-   AND [System.AssignedTo] = 'Jon Ganio'
+   AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
    ORDER BY [System.Id] [asc | desc]
    ```
    :::column-end:::
@@ -816,7 +875,7 @@ The following example statements show specific qualifying clauses.
    SELECT [System.Title] 
    FROM workitems 
    WHERE [System.IterationPath] = 'MyProject\Beta' 
-   AND [System.AssignedTo] = 'Jim Daly' 
+   AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>' 
    ASOF '3/16/19 12:30'
    ```
    :::column-end:::
@@ -828,7 +887,7 @@ The following example statements show specific qualifying clauses.
 Quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
 
 ```WIQL
-WHERE [Adatum.Lite.ResolvedDate] >= '1/8/19 GMT' and [Resolved Date/Time] < '1/9/19 GMT'
+WHERE [System.ResolvedDate] >= '1/8/19 GMT' and [Resolved Date/Time] < '1/9/19 GMT'
 WHERE [Resolved Date] >= '1/8/19 14:30:01'
 ```
 When the time is omitted in a DateTime literal and the dayPrecision parameter equals false, the time is assumed to be zero (midnight). The default setting for the dayPrecision parameter is false.
@@ -838,8 +897,8 @@ When the time is omitted in a DateTime literal and the dayPrecision parameter eq
 Quote string literals (single or double quotes are supported) in a comparison with a string or plain text field. String literals support all Unicode characters.
 
 ```WIQL
-WHERE [Adatum.Lite.Blocking] = 'Not Blocking'
-WHERE [Adatum.Lite.Blocking] <> 'Blocked'
+WHERE [Custom.Blocking] = 'Not Blocking'
+WHERE [Custom.Blocking] <> 'Blocked'
 ```
 
 You can use the contains operator to search for a substring anywhere in the field value. 
@@ -863,15 +922,31 @@ You can use some modifiers and special operators in a query expression.
 Use the `IN` operator to evaluate whether a field value is equal to any of a set of values. This operator is supported for the String, Integer, Double, and DateTime field types. See the following example along with its semantic equivalent.
 
 ```WIQL
-WHERE [System.CreatedBy] IN ('joselugo', 'jeffhay', 'linaabola')
-WHERE [System.CreatedBy] = 'joselugo' OR [System.CreatedBy] = 'jeffhay' OR [System.CreatedBy] = 'linaabola'
+WHERE
+    [System.TeamProject] = @project
+    AND [System.CreatedBy] IN ('Jamal Hartnett <fabrikamfiber4@hotmail.com>', 'Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>', 'Christie Church <fabrikamfiber1@hotmail.com>')
+
+or
+
+WHERE
+    [System.TeamProject] = @project
+    AND (
+        [System.CreatedBy] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+        OR [System.CreatedBy] = 'Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>'
+        OR [System.CreatedBy] = 'Christie Church <fabrikamfiber1@hotmail.com>'
+    )
 ```
 
-The `EVER` operator is used to evaluate whether a field value equals or has ever equaled a particular value throughout all past revisions of work items. The String, Integer, Double, and DateTime field types support this operator. There are alternate syntaxes for the `EVER` operator. For example, the snippets below query whether all work items were ever assigned to 'joselugo'.
+The `EVER` operator is used to evaluate whether a field value equals or has ever equaled a particular value throughout all past revisions of work items. The String, Integer, Double, and DateTime field types support this operator. There are alternate syntaxes for the `EVER` operator. For example, the snippets below query whether all work items were ever assigned to Jamal, Raise, or Christie.
 
 ```WIQL
-WHERE EVER ([Assigned To] =  'joselugo')
-WHERE [Assigned To] EVER 'joselugo'
+WHERE
+    [System.TeamProject] = @project
+    AND (
+        EVER [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+        OR EVER [System.AssignedTo] = 'Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>'
+        OR EVER [System.AssignedTo] = 'Christie Church <fabrikamfiber1@hotmail.com>'
+    )
 ```
 
 
