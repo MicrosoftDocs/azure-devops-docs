@@ -23,3 +23,4 @@ The date and time pattern you enter for **DateTime** fields should match that wh
 :::image type="content" source="../../organizations/settings/media/user-preferences/jamalh-locale-settings-server.png" alt-text="Time and Locale page, Date pattern options":::
 
 ::: moniker-end 
+
