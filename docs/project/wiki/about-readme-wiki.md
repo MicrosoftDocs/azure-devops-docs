@@ -1,5 +1,5 @@
 ---
-title: Share info with a project, repo, README, or Wiki
+title: Share information with a project, repo, README, or Wiki
 titleSuffix: Azure DevOps
 description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
 ms.technology: devops-collab
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: overview
-ms.date: 06/20/2022  
+ms.date: 06/30/2022  
 monikerRange: '<= azure-devops'
 ---
 
@@ -96,9 +96,9 @@ Many teams document their code using Markdown and check in these files along wit
 - Readers must often sift through many files and folders to find the content of interest.
 - Content lacks organization and structure. There's no inherent page hierarchy to support readers.
 - Content versioning isn't supported.
-- Searching through content relies on searching the code, rather than a search experience optimized for searching content.
+- Searching through content relies on searching the codes rather than a search experience optimized for searching content.
 
-With the publish code as wiki feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature provides a way to maintain your content alongside your code base, but selectively publish and update your content to a wiki.  
+With the publish code as a wiki feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature provides a way to maintain your content alongside your code base, band lets you selectively publish and update your content to a wiki.  
 
 There are significant differences between how you manage the content for a wiki that you provision for a team project versus wiki pages that you publish from a Git repository. For details, see [Publish a Git repo to a wiki](publish-repo-to-wiki.md).
 
@@ -137,7 +137,7 @@ For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, a
 
 You can define a README file or multiple files for each repo or team project. Write your README in Markdown instead of plain text.
 
-Use README pages to orient contributors to working within your project. Consider adding the following guidance:
+Use README pages to orient contributors to work within your project. Consider adding the following guidance:
 
 - Project focus
 - Prerequisites
@@ -148,7 +148,7 @@ Use README pages to orient contributors to working within your project. Consider
 - Workflow guidance about committing or uploading changes and adding branches
 - Project sponsors or contacts  
 
-Here are some great READMEs that use this format and speak to all audiences, for reference and inspiration:
+Here are some great READMEs that use this format and speak to all audiences for reference and inspiration:
 
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
