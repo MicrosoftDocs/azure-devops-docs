@@ -1,6 +1,6 @@
 ---
 title: Build and test Ruby apps
-description: Learn how to use Azure pipelines and scripts to build and test your Ruby projects.
+description: Learn how to use Azure Pipelines and scripts to build and test your Ruby projects.
 ms.topic: quickstart
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.author: vijayma
@@ -17,7 +17,7 @@ monikerRange: azure-devops
 
 This article explains how to automatically build Ruby projects.
 
-## Create the Azure pipeline
+## Create the Azure Pipelines
 
 Do the following steps to set up a pipeline for a Ruby app.
 
