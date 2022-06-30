@@ -3,7 +3,7 @@
 Configuring the agent with the `runAsAutoLogon` option runs the agent each time after restarting the machine.
 Perform next steps if the agent is not run after restarting the machine.
 
-#### If the agent was already configured on the machine.
+* #### If the agent was already configured on the machine.
 
 Before reconfiguring the agent, it is necessary to remove the old agent configuration, so try to run this command from the agent folder:
 ```
@@ -26,16 +26,23 @@ Specify the agent name (any specific unique name) and check if this agent appear
 
 It will be much better to unpack an agent archive (which can be downloaded [here](https://github.com/microsoft/azure-pipelines-agent/releases/latest)) and run this command from the new unpacked agent folder.
 
-#### Check if the Windows registry key is recorded and saved correctly.
+* #### Check if the Windows registry key is recorded and saved correctly.
 
 Open `Registry Editor` and follow the path:
 ```
-Computer\HKEY_USERS\<key>\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Computer\HKEY_USERS\<sid>\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 ```
+
+To get the `<sid>`, open Command Prompt (administrator rights are not required) and run this command:
+```
+wmic useraccount where name="<user>" get sid
+```
+
+Note that this is a slow command, please wait at least a minute. Here the `<user>` is your Windows username.
 
 Check if there is the `VSTSAgent` key. Delete this key if it exists, then close `Registry Editor` and configure the agent by running the `.\config.cmd` command (without args) from the agent folder. Before answering the question `Enter Restart the machine at a later time?`, open `Registry Editor` again and check if the `VSTSAgent` key has appeared. Press `Enter` to answer the question, and check if the `VSTSAgent` key remains in its place after restarting the machine.
 
-#### Check if Windows registry keys work fine on your machine.
+* #### Check if Windows registry keys work fine on your machine.
 
 Create a `autorun.cmd` file that contains the following line: `echo "Hello from AutoRun!"`.
 Open `Registry Editor` and create in the path above a new key-value pair with the key `AutoRun` and the value
