@@ -25,7 +25,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
 ### To associate a file type with a third-party merge tool
 
-#### Visual Studio 2019 and 2022
+#### Developer command prompt
 
 1.  In Windows, choose **Start**, **All Programs**, **Visual Studio <version>**, **Developer Command Prompt**.  
 2. Type **tf diff /configure**.  
@@ -43,7 +43,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 7.  Click **OK**.
 8. Repeat these steps to add more file extensions.
 
-#### Previous versions of Visual Studio
+#### Visual Studio
 1.  From the **Tools** menu, click **Options**.
 
 2.  In the **Options** dialog box, open **Source Control**, expand it, and then click **Visual Studio Team Foundation Server**.
