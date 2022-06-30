@@ -11,7 +11,7 @@ author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 06/29/2022
 ---
-
+ 
 
 # Work Item Query Language (WIQL) syntax reference 
 
@@ -19,7 +19,7 @@ ms.date: 06/29/2022
 
 You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md) or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
-A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query was evaluated previously.
+The WIQL syntax supports all functions available through the web portal Query Editor plus a few more. You can specify the fields to return and specify logical grouping of query clauses. In addition, you can use an `ASOF` clause to filter based on assignments based on a previous date.  
 
 > [!IMPORTANT] 
 > The WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query%20by%20wiql). Currently, there is no way to call the API to return the detailed work item information from a WIQL query directly. No matter which fields you include in the SELECT statement, the API only returns the work item IDs. To get the full information, you need to perform  two steps: (1) get the ID of the work items from a WIQL, and (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work-items/list). 
@@ -31,26 +31,28 @@ A query returns only those work items for which you have the **View work items**
 
 ## Query language overview
 
-The work item query language has five parts shown in the following syntax snippet and described in the following table. 
+The work item query language has five parts shown in the following syntax snippet and described in the following table. WIQL syntax isn't case-sensitive.
 
 > [!div class="tabbedCodeSnippets"]
 ```WIQL
-SELECT [State], [Title] 
-FROM WorkItems
-WHERE [Work Item Type] = 'User Story'
-ORDER BY [State] Asc, [Changed Date] Desc
-ASOF '6/15/2010'
+SELECT
+    [System.Id],
+    [System.AssignedTo],
+    [System.State],
+    [System.Title],
+    [System.Tags]
+FROM workitems
+WHERE
+    [System.TeamProject] = 'Design Agile'
+    AND [System.WorkItemType] = 'User Story'
+    AND [System.State] = 'Active'
+ORDER BY [System.ChangedDate] DESC
+ASOF '02-11-2020'
 ```
 
-The WIQL syntax isn't case-sensitive.
 
-
-> [!NOTE] 
-> You can construct queries using the WIQL syntax in the Query Editor by installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
-
-### Limits on WIQL length  
-
-The WIQL length of queries made against Azure Boards must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+> [!TIP] 
+> By installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor), you can constructure queries using the Query Editor and then view the WIQL syntax. You can then copy and modify the WIQL syntax and run the query using the **Wiql Playground** hub added to **Boards**.
 
 :::row:::
    :::column span="1":::
@@ -84,7 +86,7 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
    `WHERE`
    :::column-end:::
    :::column span="3":::
-   Specifies the filter criteria for the query. For more information, see [Filter conditions (WHERE)](#where-clause) in the next section. 
+   Specifies the filter criteria for the query. For more information, see [Filter conditions (WHERE)](#where-clause) later in this article. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -101,10 +103,24 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
    `ASOF`
    :::column-end:::
    :::column span="3":::
-   Specifies a historical query by indicating a date or when the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.  
-   `ASOF '6/15/2019'`
+   Specifies a historical query by indicating a date for when the filter is to be applied. For example, this query returns all user stories that were defined as *Active* on February 11, 2020. Specify the date according to the guidance provided in [Date and time pattern](#date-and-time-pattern).
+   `ASOF '02-11-2020'`
    :::column-end:::
 :::row-end:::
+
+> [!NOTE] 
+> The WIQL length of queries made against Azure Boards must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+
+
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
+ 
+Quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
+
+```WIQL
+WHERE [System.ResolvedDate] >= '01-18-2019 GMT' and [Resolved Date/Time] < '01-09-2019 GMT'
+WHERE [Resolved Date] >= '01-18-2019 14:30:01'
+```
+When the time is omitted in a DateTime literal and the dayPrecision parameter equals false, the time is assumed to be zero (midnight). The default setting for the dayPrecision parameter is false.
 
 
 
@@ -126,12 +142,9 @@ To learn more, see [Work item fields and attributes](../work-items/work-item-fie
 
 ::: moniker-end 
 
- 
-
 ::: moniker range="tfs-2018"  
 
 You can add a custom field to a query clause. With WIQL, you must specify the reference name for the custom field. 
-
 
 To learn more, see [Add or modify a field to track work](../../reference/add-modify-field.md).
 
@@ -139,7 +152,7 @@ To learn more, see [Add or modify a field to track work](../../reference/add-mod
 
 <a id="where-clause" />
 
-## `WHERE` filter conditions
+## Specify filter clauses (`WHERE`)
 
 The `WHERE` clause specifies the filter criteria. The query returns only work items that satisfy the specified criteria. For example, the following example `WHERE` clause returns user stories that are active and that are assigned to you.
 
@@ -171,14 +184,13 @@ WHERE
 Each filter condition is composed of three parts, each of which must conform to the following rules: 
 
 - **Field**: You can specify either the  reference name or friendly name. The following examples are valid WIQL syntax:
-	-  Reference name with spaces: `SELECT [System.AssignedTo]  ...`
+	-  Reference name: `SELECT [System.AssignedTo]  ...`
 	-  Friendly name with spaces: `SELECT [Assigned To]  ...`
 	-  Names without spaces don't require square brackets: `SELECT ID, Title  ...`
-- **Comparison operator**: Valid values are specified in the [Operators](#operators) section later in this article.
-	- 
+- **Operator**: Valid values are specified in the [Operators](#operators) section later in this article. 
 - **Field value**: You can specify one of the following three values depending on the field specified.  
 	- A *literal value* must match the data type of the field value. 
-	- A *variable or macro that indicates a certain value. For example, @Me indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article.
+	- A *variable or macro that indicates a certain value. For example, **@Me** indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article.
 	- The name of another *field*. For example, you can use `[Assigned to] = [Changed by]` to find work items that are assigned to the person who changed the work item most recently.
 
 For a description and reference names of all system-defined fields, see [Work item field index](../work-items/guidance/work-item-field.md).
@@ -203,7 +215,7 @@ WHERE
 
 The table below summarizes all the supported operators for different field types. For more information on each field type, see [Work item fields and attributes](../work-items/work-item-fields.md).  
 
-The `=, <>, >, <, >=, and <=` operators work as expected. For instance, `System.ID > 100` queries for all work items with an **ID** greater than 100. `System.ChangedDate > '1/1/19 12:00:00'` queries for all work items changed after noon of January 1, 2019.
+The `=, <>, >, <, >=, and <=` operators work as expected. For instance, `System.ID > 100` queries for all work items with an **ID** greater than 100. `System.ChangedDate > '01-01-19 12:00:00'` queries for all work items changed after noon of January 1, 2019.
 
 Beyond these basic operators, there are some behaviors and operators specific to certain field types.
 
@@ -282,7 +294,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
    :::column-end:::
 :::row-end:::
 
-[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
+
 
 ### Logical groupings 
 
@@ -313,7 +325,7 @@ WHERE
 
 ```
 
-#### Example query, Was Ever Assigned To
+### Example query, Was Ever Assigned To
 
 The following Query Editor example finds all work items that were ever assigned to *Jamal Hartnett*. 
 
@@ -369,14 +381,10 @@ The following table lists the macros or variables you can use within a WIQL quer
 
 ::: moniker-end
 
-
-> [!NOTE]  
-> Both the `@me` and `@today` macros have default values.
-
-
+ 
 ### @me macro
 
-The `@me` macro replaces the Windows Integrated account name of the user who runs the query. The example below shows how to use the macro and the equivalent static statement. Although the macro is intended for fields such as `Assigned To`, you can use it for any String field, although the result may not be meaningful.
+The `@me` macro replaces the Windows Integrated account name of the user who runs the query. The example below shows how to use the macro and the equivalent static statement. The macro is intended for use with identity fields such as `Assigned To`.
 
 ```WIQL
 WHERE  
@@ -398,7 +406,7 @@ Is the equivalent of:
 
 ```WIQL
 WHERE  
-   [System.CreatedDate] = '1/3/19'
+   [System.CreatedDate] = '01-03-2019'
 ```
 
 And
@@ -412,7 +420,7 @@ Is the equivalent of:
 
 ```WIQL
 WHERE  
-   [System.CreatedDate] > '1/1/19'
+   [System.CreatedDate] > '01-01-2019'
 ```
 
 
@@ -458,7 +466,7 @@ Is the equivalent of:
 ```WIQL 
 
 WHERE 
-   [Microsoft.VSTS.Common.CreatedDate] >= '1/1/19'
+   [Microsoft.VSTS.Common.CreatedDate] >= '01-01-2019'
 ```
 
 And
@@ -472,24 +480,22 @@ Is the equivalent of:
 
 ```WIQL
 WHERE 
-   [Microsoft.VSTS.Scheduling.TargetDate]  > '1/1/19'
+   [Microsoft.VSTS.Scheduling.TargetDate]  > '01-01-2019'
 ```
 
 ::: moniker-end
-
-[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
-
+ 
 ### Custom macros 
 
-WIQL also supports arbitrary custom macros. Any string prefixed by an '@' is treated as a custom macro and will be substituted. The replacement value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
+WIQL also supports arbitrary custom macros. Any string prefixed by an `@` is treated as a custom macro and will be substituted. The replacement value for the custom macro is retrieved from the context parameter of the query method in the object model. The following method is the API used for macros: 
 
 ```csharp
 public WorkItemCollection Query(string wiql, IDictionary context)
 ```
 
-The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then '@project' will be replaced by 'MyProject' in the WIQL. This replacement is how the work item query builder handles the @project macro in Visual Studio.
+The context parameter contains key-value pairs for macros. For example, if the context contains a key-value pair of (project, MyProject), then **@project** will be replaced by `MyProject` in the WIQL. This replacement is how the work item query builder handles the **@project** macro in Visual Studio.
 
-## `ASOF` historical queries 
+## Specify historical queries (`ASOF`)
 
 You can use an `ASOF` clause in a query to filter for work items that satisfy the specified filter conditions as they were defined on a specific date and time.
 
@@ -510,14 +516,14 @@ WHERE
     AND [System.WorkItemType] <> ''
     AND ([System.IterationPath] UNDER 'Fabrikam Fiber\Release 1'
     AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>') 
-    ASOF  '2022-05-01T00:00:00.0000000'
+    ASOF  '01-05-2022T00:00:00.0000000'
 ```
 
 > [!NOTE]  
 > If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
 
 
-## `ORDER BY` clause to sort results
+## Set the sort order (`ORDER BY`) 
 
 You can use the `ORDER BY` clause to sort the results of a query by one or more fields in ascending or descending order. 
 
@@ -540,8 +546,6 @@ WHERE
     AND [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
 ORDER BY [Microsoft.VSTS.Common.Priority],
     [System.CreatedDate] DESC
-
-
 ```
 
 
@@ -881,16 +885,6 @@ The following example statements show specific qualifying clauses.
    :::column-end:::
 :::row-end:::
 
-
-### DateTime
-
-Quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
-
-```WIQL
-WHERE [System.ResolvedDate] >= '1/8/19 GMT' and [Resolved Date/Time] < '1/9/19 GMT'
-WHERE [Resolved Date] >= '1/8/19 14:30:01'
-```
-When the time is omitted in a DateTime literal and the dayPrecision parameter equals false, the time is assumed to be zero (midnight). The default setting for the dayPrecision parameter is false.
 
 ### String and PlainText
 
