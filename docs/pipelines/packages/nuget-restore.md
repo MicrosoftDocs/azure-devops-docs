@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With NuGet package, restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both the YAML and the classic Azure Pipelines.
+With NuGet Package Restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both the YAML and the classic Azure Pipelines.
 
 ### Prerequisites
 
@@ -38,7 +38,7 @@ With NuGet package, restore you can install all your project's dependency withou
 
 1. Select **Save & queue** when you are done.
 
-    :::image type="content" source="media/nuget-restore-classic.png" alt-text="A screenshot showing how to configure the NuGet restore task.":::
+    :::image type="content" source="media/nuget-restore-classic.png" alt-text="Screenshot that shows how to configure the NuGet restore task.":::
 
 > [!NOTE]
 > Classic NuGet restore uses the [NuGetCommand@2](../tasks/package/nuget.md) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](../tasks/tool/nuget.md) if you want to use a different NuGet version.
