@@ -59,6 +59,11 @@
       "source_path_from_root":"/docs/pipelines/policies/azure-policy.md",
       "redirect_url":"/azure/governance/policy/tutorials/policy-devops-pipelines",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/configure-javascript.md",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/customize-javascript",
+      "redirect_document_id": false
     }
   ]
 }
