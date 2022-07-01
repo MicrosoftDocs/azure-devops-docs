@@ -189,5 +189,5 @@ Save and run your pipeline. After your pipeline runs, verify that the job ran su
 Congratulations, you've successfully completed this quickstart!
 
 > [!div class="nextstepaction"]
-> [Configure JavaScript](configure-javascript.md)
+> [Configure JavaScript](customize-javascript.md)
 
