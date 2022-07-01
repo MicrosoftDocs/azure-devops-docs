@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With NuGet package, restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both the YAML and the classic Azure Pipelines. 
+With NuGet package, restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both the YAML and the classic Azure Pipelines.
 
 ### Prerequisites
 
@@ -26,15 +26,22 @@ With NuGet package, restore you can install all your project's dependency withou
 
 ## Restore packages with NuGet restore
 
-1. Navigate to your pipeline definition, and then select **Edit**.
+1. Navigate to your classic pipeline definition, and then select **Edit**.
+
 1. Select **+** to add a new task. Search for **NuGet**, and then select **Add** to add the task to your pipeline.
-1. Fill out the required fields.
 
-    :::image type="content" source="media/restore-pkgs-on-build.png" alt-text="Screenshot showing how to configure the NuGet restore task.":::
+1. Name your task and select **Restore** from the **Command**.
 
-1. Select **Feeds in my NuGet.config** if you want to use your own config file otherwise select **Feed(s) I select here**, and select your feed from the dropdown menu.
-1. Check the **Use packages from NuGet.org** checkbox if you want to include packages from NuGet.org.
+1. select **Feed(s) I select here**, and select your feed from the dropdown menu. If you want to use your own config file, select **Feeds in my NuGet.config** and enter the path to your NuGet.config file and the service connection if you want to authenticate with feeds outside your organization.
+
+1. If you want to include packages from NuGet.org, check the **Use packages from NuGet.org** checkbox.
+
 1. Select **Save & queue** when you are done.
+
+    :::image type="content" source="media/nuget-restore-classic.png" alt-text="A screenshot showing how to configure the NuGet restore task.":::
+
+> [!NOTE]
+> Classic NuGet restore uses the [NuGetCommand@2](../tasks/package/nuget) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](../tasks/tool/nuget) if you want to use a different NuGet version.
 
 ## Restore packages with NuGet CLI
 
