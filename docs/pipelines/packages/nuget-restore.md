@@ -32,7 +32,7 @@ With NuGet Package Restore you can install all your project's dependency without
 
 1. Name your task and select **Restore** from the **Command**.
 
-1. select **Feed(s) I select here**, and select your feed from the dropdown menu. If you want to use your own config file, select **Feeds in my NuGet.config** and enter the path to your NuGet.config file and the service connection if you want to authenticate with feeds outside your organization.
+1. Select **Feed(s) I select here**, and select your feed from the dropdown menu. If you want to use your own config file, select **Feeds in my NuGet.config** and enter the path to your NuGet.config file and the service connection if you want to authenticate with feeds outside your organization.
 
 1. If you want to include packages from NuGet.org, check the **Use packages from NuGet.org** checkbox.
 
