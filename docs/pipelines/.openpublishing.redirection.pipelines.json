@@ -62,7 +62,7 @@
     },
     {
       "source_path_from_root":"/docs/pipelines/ecosystems/configure-javascript.md",
-      "redirect_url":"/azure/governance/policy/ecosystems/customize-javascript",
+      "redirect_url":"/azure/devops/pipelines/ecosystems/customize-javascript",
       "redirect_document_id": false
     }
   ]
