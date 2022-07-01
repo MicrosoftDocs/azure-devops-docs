@@ -1,5 +1,5 @@
 ---
-title: Configure JavaScript for Azure Pipelines
+title: Customize JavaScript for Azure Pipelines
 description:  Customize how you use JavaScript with Azure Pipelines
 ms.topic: conceptual
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2, contperf-fy22q2
@@ -8,12 +8,13 @@ monikerRange: '<= azure-devops'
 ---
 
 
-# Configure JavaScript for Azure Pipelines
+# Customize JavaScript for Azure Pipelines
 
-You can use Azure Pipelines to build your JavaScript apps without having to set up any infrastructure of your own. Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - get pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. 
+You can use Azure Pipelines to build your JavaScript apps without having to set up any infrastructure of your own. Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - get pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. 
 
-You can also use a [self-hosted](../agents/agents.md) agent.
+For the version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. You can also use a [self-hosted](../agents/agents.md) agent.
 
+To create your first pipeline with JavaScript, see the [JavaScript quickstart](javascript.md).
 
 ### Use a specific version of Node.js
 
