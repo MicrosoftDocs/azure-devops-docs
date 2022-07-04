@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 06/30/2022
+ms.date: 07/06/2022
 ---
 
 # Add and edit wiki pages
