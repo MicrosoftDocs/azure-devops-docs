@@ -1,35 +1,35 @@
 ---
-title: Migrate wiki extension pages in Azure DevOps
+title: Migrate Wiki extension pages in Azure DevOps
 titleSuffix: Azure DevOps  
-description: Migrate wiki pages created using the Marketplace extension to the Azure DevOps wiki.
+description: Migrate wiki pages created using the Marketplace extension to the Azure DevOps Wiki.
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devdivchpfy22
 ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 12/17/2018  
+ms.date: 07/05/2022 
 ---
 
 # Migrate pages from Wiki extension to a team project wiki
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article helps you migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to your team project Wiki. With the release of the built-in wiki, any wiki pages created using the Wiki Marketplace extension have been saved to a Git repo in your team project. 
+This article helps you migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to your team project wiki. With the release of the built-in wiki, any wiki pages created using the Wiki Marketplace extension have been saved to a Git repo in your team project. 
 
 The **Wiki** feature is available for TFS 2018 and later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md).  
 
 ## Prerequisites
 
-You must be a member of the Contributors group of your team project to migrate wiki pages to your team project Wiki.  
+You must be a member of the Contributors group of your team project to migrate wiki pages to your team project wiki.  
 
 ## Migrate pages and other artifacts
 
-1. Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool
-2. Create, and then clone your Azure DevOps wiki
-3. Move and commit all Markdown pages to your Azure DevOps wiki
+1. Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool.
+2. Create, and then clone your Azure DevOps wiki.
+3. Move and commit all Markdown pages to your Azure DevOps wiki.
 4. Run the wiki migration tool, **MigrateToVSTSWiki.exe**
 5. When the wiki migration tool is complete, push the changes to the default main branch, *wikiMain*, of the Azure DevOps wiki repository.
 
@@ -45,11 +45,11 @@ You must be a member of the Contributors group of your team project to migrate w
 
    Name this clone location "LocationA" for this procedure.
 
-5. Clone your Wiki repo using your IDE or **git clone** command.
+5. Clone your wiki repo using your IDE or the **git clone** command.
 
 	<img src="media/wiki/migrate-wiki-manage-wikis.png" alt="Manage wikis menu option" />
 
-6. Clone the Wiki extension repo. The Wiki is mapped to a folder given to you during the wiki creation. You can confirm by going to the "manage wiki" option in the existing wiki, as shown below.
+6. Clone the wiki extension repo. The wiki is mapped to a folder given to you during the wiki creation. You can confirm by going to the "manage wiki" option in the existing wiki, as shown below.
 
    Your existing wiki pages are saved under the folder labeled "Root".
 
@@ -72,9 +72,9 @@ You must be a member of the Contributors group of your team project to migrate w
 	- "E:\wiki\sampleWiki\_extensionWiki" is the folder in which the existing wiki files are present
 	- "E:\Temp\Wiki\New" is the empty folder into which the migrated files are to be copied.
 
-9. Remove all files from "LocationA" (if any) apart from the git related files, such as .gitignore, and so on.
+9. Remove all the files from "LocationA" (if any) apart from the git related files, such as .gitignore, and so on.
 
-10. Copy all files from "LocationC" and paste them into "LocationA".
+10. Copy all the files from "LocationC" and paste them into "LocationA".
 
 11. Run ```**git add .**``` to stage all the newly added files in  "LocationA" for the commit.
   
@@ -83,7 +83,7 @@ You must be a member of the Contributors group of your team project to migrate w
 13. Run **git push origin wikiMain -f** . to push the changes to the default branch of the Azure DevOps Wiki.
 
 > [!NOTE]  
-> Once you've migrated your Wiki extension files to the Azure DevOps Wiki, you're ready to uninstall the Wiki extension.
+> Once you've migrated your wiki extension files to the Azure DevOps Wiki, you're ready to uninstall the Wiki extension.
 
 ## Related articles
   
