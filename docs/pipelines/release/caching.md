@@ -93,7 +93,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 
 #### Restore keys
 
-`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fallback to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
+`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fall back to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
 
 #### Required software on self-hosted agent
 
@@ -108,7 +108,7 @@ Please note that the hosted agents come with the software included, this is only
 
 **Example**:
 
-Here is an example on how to use restore keys by Yarn:
+Here is an example of how to use restore keys by Yarn:
 
 ```yaml
 variables:
@@ -244,8 +244,13 @@ See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_confi
 Caching Docker images dramatically reduces the time it takes to run your pipeline.
 
 ```yaml
+variables:
+  repository: 'myDockerImage'
+  dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
+  tag: '$(Build.BuildId)'
+
 pool:
-  vmImage: 'Ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 steps:
   - task: Cache@2
     displayName: Cache task
@@ -259,9 +264,18 @@ steps:
     displayName: Docker restore
     condition: and(not(canceled()), eq(variables.CACHE_RESTORED, 'true'))
 
+  - task: Docker@2
+    displayName: 'Build Docker'
+    inputs:
+      command: 'build'
+      repository: '$(repository)'
+      dockerfile: '$(dockerfilePath)'
+      tags: |
+        '$(tag)'
+
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache $(repository):$(tag)
     displayName: Docker save
     condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
 ```
