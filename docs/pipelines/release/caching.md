@@ -244,8 +244,13 @@ See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_confi
 Caching Docker images dramatically reduces the time it takes to run your pipeline.
 
 ```yaml
+variables:
+  repository: 'myDockerImage'
+  dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
+  tag: '$(Build.BuildId)'
+
 pool:
-  vmImage: 'Ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 steps:
   - task: Cache@2
     displayName: Cache task
@@ -259,9 +264,18 @@ steps:
     displayName: Docker restore
     condition: and(not(canceled()), eq(variables.CACHE_RESTORED, 'true'))
 
+  - task: Docker@2
+    displayName: 'Build Docker'
+    inputs:
+      command: 'build'
+      repository: '$(imageRepository)'
+      dockerfile: '$(dockerfilePath)'
+      tags: |
+        '$(tag)'
+
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache $(repository):$(tag)
     displayName: Docker save
     condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
 ```
