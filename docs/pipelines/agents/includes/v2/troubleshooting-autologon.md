@@ -28,17 +28,10 @@ It will be much better to unpack an agent archive (which can be downloaded [here
 
 * #### Check if the Windows registry key is recorded and saved correctly.
 
-Open `Registry Editor` and follow the path:
+Run the `whoami /user` command to get the `<sid>`. Open `Registry Editor` and follow the path:
 ```
 Computer\HKEY_USERS\<sid>\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 ```
-
-To get the `<sid>`, open Command Prompt (administrator rights are not required) and run this command:
-```
-wmic useraccount where name="<user>" get sid
-```
-
-Note that this is a slow command, please wait at least a minute. Here the `<user>` is your Windows username.
 
 Check if there is the `VSTSAgent` key. Delete this key if it exists, then close `Registry Editor` and configure the agent by running the `.\config.cmd` command (without args) from the agent folder. Before answering the question `Enter Restart the machine at a later time?`, open `Registry Editor` again and check if the `VSTSAgent` key has appeared. Press `Enter` to answer the question, and check if the `VSTSAgent` key remains in its place after restarting the machine.
 
