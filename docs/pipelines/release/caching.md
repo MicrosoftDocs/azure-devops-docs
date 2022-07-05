@@ -268,7 +268,7 @@ steps:
     displayName: 'Build Docker'
     inputs:
       command: 'build'
-      repository: '$(imageRepository)'
+      repository: '$(repository)'
       dockerfile: '$(dockerfilePath)'
       tags: |
         '$(tag)'
