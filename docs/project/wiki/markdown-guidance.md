@@ -3,13 +3,14 @@ title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
 ms.technology: devops-collab
+ms.custom: wiki, devdivchpfy22
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/04/2022
+ms.date: 07/05/2022
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -22,14 +23,14 @@ Here you can find some basic Markdown syntax guidance and specific guidance for 
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
-For more syntax that's supported for Wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
+For more syntax that's supported for wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
 
 You can provide guidance in the following areas using Markdown:
 
 ::: moniker range=">= azure-devops-2019"
 
-- [Project wiki](add-edit-wiki.md)
-- [Publish code as wiki](publish-repo-to-wiki.md)
+- [Project Wiki](add-edit-wiki.md)
+- [Publish code as Wiki](publish-repo-to-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
@@ -40,7 +41,7 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker range="tfs-2018"
 
-- [Project wiki](add-edit-wiki.md)
+- [Project Wiki](add-edit-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
@@ -53,7 +54,7 @@ You can provide guidance in the following areas using Markdown:
 ::: moniker-end
 
 > [!IMPORTANT]  
-> Not all Markdown syntax is supported across all features. Each section in this article identifies the features the syntax is supported with the **Supported in** line.
+> Not all Markdown syntax is supported across all features. Each section in this article identifies the features, and the syntax supported with the **Supported in** line.
 
 ## Headers
 
@@ -296,8 +297,8 @@ a clear name to description mapping. You can format tables in pull requests, wik
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right)
 - To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
-- Make sure to end each row with a CR or LF.
-- A blank space is required before and after work item or pull request (PR) mentions inside a table cell.
+- Make sure to end each row with a CR or LF
+- A blank space is required before and after work item or pull request (PR) mentions inside a table cell
 
 **Example:**
 
@@ -461,7 +462,7 @@ Within Markdown files, anchor IDs are assigned to all headings when rendered as 
 
 - Punctuation marks and leading white spaces within a file name are ignored
 - Upper case letters are  converted to lower
-- Spaces between letters are converted to dashes (-).
+- Spaces between letters are converted to dashes (-)
 
 **Example:**
 
@@ -653,16 +654,16 @@ To escape emojis, enclose them using the \` character.
 
 #### Supported in: Pull Requests | README files | Wikis
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in your wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field, or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or from the format pane in your wiki page.
 
 <img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" />        
 
-If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it renders directly into your comment or wiki page.
+If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page, and it renders directly into your comment or wiki page.
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
-Attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and select links to download attached files.
+Attached image files render directly into your comment or wiki pages. After you save or update a comment, or wiki page with an attachment, you can see the attached image and select links to download attached files.
 
-Attachments support the following file formats.
+Attachments support the following file formats:
 
 > [!div class="mx-tdCol2BreakAll"]
 > |          Type          | File formats |
