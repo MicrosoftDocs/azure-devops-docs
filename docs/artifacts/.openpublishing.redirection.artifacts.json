@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path_from_root": "/docs/artifacts/nuget/tfs.md",
+            "redirect_url": "/azure/devops/artifacts/nuget/dotnet-exe",
+            "redirect_document_id": false
+        }
+    ]
+  }
