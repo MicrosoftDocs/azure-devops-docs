@@ -7,6 +7,8 @@ author: vijayma
 ms.date: 03/29/2020
 ---
 
+::: moniker range=">= azure-devops-2019"
+
 YAML pipelines are configured by default with a CI trigger on all branches.
 
 ### Branches
@@ -114,3 +116,5 @@ When you specify paths, you must explicitly specify branches to trigger on. You 
 >  * The order of path filters doesn't matter.
 >  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
 >  * You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+
+::: moniker-end
