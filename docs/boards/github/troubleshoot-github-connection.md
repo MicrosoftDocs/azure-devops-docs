@@ -87,14 +87,11 @@ If the integration between Azure Boards and GitHub isn't working as expected, ve
 1. Next, choose **Applications** under **Integrations**.  
 
 1. Choose the **Authorized OAuth Apps** tab, and then choose **Azure Boards**.  
-	:::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose **Azure Boards**.":::
+	:::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose Azure Boards.":::
 
-1. Under Organization access, resolve any issues that may appear. Choose **Grant** to grant access to any organizations that show as having an **Access request pending**. 
-
-1. When done, your organization access list should appear similar to the one shown in the following image. 
-	:::image type="content" source="media/troubleshoot/organization-access.png" alt-text="Screenshot of Organization access, all organizations have access**.":::
-
-
+1. Under **Organization access**, resolve any issues that may appear. Choose **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+	:::image type="content" source="media/troubleshoot/organization-access-issues.png" alt-text="Screenshot of Organization access with organizations without access.":::
+ 
 
 ## Resolve connection issues
 
