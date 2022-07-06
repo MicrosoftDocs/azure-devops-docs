@@ -27,10 +27,10 @@ You can set user preferences on the user profile page in Azure DevOps. Changes c
 
 See the following articles for setting other user preferences:
 
-- [Change time and locale](../accounts/change-time-zone.md#change-user-profile-time-zone): Change the preferred language, date and time patterns, and time zone. 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md): Add or review subscriptions to event changes. 
-- [Manage permissions](../security/about-permissions.md): Use to refresh permissions and make any recent changes take effect.
-- [Manage preview features](../../project/navigation/preview-features.md): Enable or disable a preview feature for your user account.
+- [Change time and locale](../accounts/change-time-zone.md#change-user-profile-time-zone): Change the preferred language, date and time patterns, and time zone.  
+- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md): Add or review subscriptions to event changes.  
+- [Refresh or re-evaluate your permissions](../security/troubleshoot-permissions.md#refresh-permissions): Use to refresh permissions and make any recent changes take effect.  
+- [Manage preview features](../../project/navigation/preview-features.md): Enable or disable a preview feature for your user account.  
 
 [!INCLUDE [preview-features-enabled](../../includes/preview-features-enabled-new-account.md)]
 
