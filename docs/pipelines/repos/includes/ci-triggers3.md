@@ -7,6 +7,8 @@ author: vijayma
 ms.date: 03/29/2020
 ---
 
+::: moniker range=">= azure-devops-2019"
+
 ### Opting out of CI
 
 #### Disabling the CI trigger
@@ -20,4 +22,6 @@ trigger: none
 
 >[!IMPORTANT]
 >When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI run should be started.
+
+::: moniker-end
 
