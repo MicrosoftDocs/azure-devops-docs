@@ -77,6 +77,24 @@ The following authentication options are supported based on the GitHub platform 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
 
+## Grant Azure Boards organization access 
+
+If the integration between Azure Boards and GitHub isn't working as expected, verify you've granted organization access. 
+
+1. From GitHub web portal, open **Settings** from your profile menu.  
+	:::image type="content" source="media/troubleshoot/choose-settings.png" alt-text="Screenshot of open profile, choose Settings.":::
+
+1. Next, choose **Applications** under **Integrations**.  
+
+1. Choose the **Authorized OAuth Apps** tab, and then choose **Azure Boards**.  
+	:::image type="content" source="media/troubleshoot/open-azure-boards.png" alt-text="Screenshot of Authorized OAuth Apps tab, choose **Azure Boards**.":::
+
+1. Under Organization access, resolve any issues that may appear. Choose **Grant** to grant access to any organizations that show as having an **Access request pending**. 
+
+1. When done, your organization access list should appear similar to the one shown in the following image. 
+	:::image type="content" source="media/troubleshoot/organization-access.png" alt-text="Screenshot of Organization access, all organizations have access**.":::
+
+
 
 ## Resolve connection issues
 
@@ -106,6 +124,9 @@ To resolve the problem, consider the following items:
   - The user may have lost admin permissions on the GitHub repo.  
 
 	To resolve, recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. 
+
+
+
 
 <a id="ghe-dataimport" />
 
