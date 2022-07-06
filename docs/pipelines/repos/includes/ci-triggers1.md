@@ -109,6 +109,18 @@ trigger:
 
 When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
 
+::: moniker range="> azure-devops-2020"
+
+Wilds cards are supported for path filters. For instance, you can include all paths that match `src/app/**/myapp*`. You can use wild card characters (`**`, `*`, or `?)` when specifying path filters.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
+Wild cards are not supported for path filters.
+
+::: moniker-end
+
 > **Tips:**
 >  * Paths are always specified relative to the root of the repository.
 >  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
