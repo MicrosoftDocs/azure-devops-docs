@@ -71,11 +71,8 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 [!INCLUDE [ci-triggers](includes/ci-triggers1.md)]
 
-::: moniker range="azure-devops"
 [!INCLUDE [ci-triggers](includes/ci-triggers2.md)]
-::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
 [!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
 ::: moniker-end
 
