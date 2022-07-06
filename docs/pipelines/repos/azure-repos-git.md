@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 06/30/2022
+ms.date: 07/06/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -69,9 +69,7 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 # [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops-2019"
 [!INCLUDE [ci-triggers](includes/ci-triggers1.md)]
-::: moniker-end
 
 ::: moniker range="azure-devops"
 [!INCLUDE [ci-triggers](includes/ci-triggers2.md)]
