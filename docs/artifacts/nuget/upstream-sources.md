@@ -52,6 +52,16 @@ Enabling upstream sources on your feed enables developers to consume packages fr
 
 1. Copy the XML snippet in the **Project Setup** section.
 
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <packageSources>
+        <clear />
+        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+      </packageSources>
+    </configuration>
+    ```
+
 1. Create a new *nuget.config* file in the root of your project.
 
 1. Paste the XML snippet in your nuget.config file.
