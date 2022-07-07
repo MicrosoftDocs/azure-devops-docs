@@ -103,27 +103,28 @@ Aside from using the feed's user interface, you can also configure the upstream 
 
 * * *
 
-## Allow external versions with PowerShell
+## Allow external versions using PowerShell
 
-To successfully execute the next steps in this section, you will need to [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
+1. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
 
-:::image type="content" source="media\packaging-permissions.png" alt-text="select packaging permissions":::
+    :::image type="content" source="media\packaging-permissions.png" alt-text="select packaging permissions":::
 
-In an elevated PowerShell command prompt window, run the following command to create an environment variable for your personal access token.
+1. Create an environment variable for your personal access token.
 
-```PowerShell
-$env:PATVAR = "YOUR_PAT_GOES_HERE"
-```
+    ```PowerShell
+    $env:PATVAR = "YOUR_PERSONAL_ACCESS_TOKEN"
+    ```
 
-The following commands will convert your personal access token to baser64 encoded string and construct the HTTP request header.
+1. Convert your personal access token to baser64 encoded string and construct the HTTP request header.
 
-```PowerShell
-$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
-$headers = @{
-    Authorization = "Basic $token"
-```
+    ```PowerShell
+    $token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
+    $headers = @{
+        Authorization = "Basic $token"
+    }
+    ```
 
-Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to construct the `$Url` variable. (Project-scoped feed example: /pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
+Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to construct the `$Url` variable.
 
 - **Project-scoped feed**:
 
