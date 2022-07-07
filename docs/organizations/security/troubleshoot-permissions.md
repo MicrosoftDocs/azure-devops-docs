@@ -148,7 +148,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 3.	Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
-    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Screenshot ofSelect Why to trace the permissions, TFS 2018.":::
+    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Screenshot of Select Why to trace the permissions, TFS 2018.":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those permissions provided to the groups they're in.
 
