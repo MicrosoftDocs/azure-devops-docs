@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 07/07/2022
 ---
 
 # Add, rename, and delete dashboards in Azure DevOps
