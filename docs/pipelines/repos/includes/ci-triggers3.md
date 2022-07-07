@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 07/07/2022
 ---
 
 ::: moniker range=">= azure-devops-2019"
