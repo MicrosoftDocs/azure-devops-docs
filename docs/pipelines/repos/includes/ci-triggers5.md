@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 07/07/2022
 ---
 
 ### Using the trigger type in conditions
@@ -24,8 +24,19 @@ Here is the behavior when you push a new branch (that matches the branch filters
 
 ### Wildcards
 
+::: moniker range="> azure-devops-2019"
+
+When specifying a branch, tag, or path, you may use an exact name or a wildcard.
+Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 When specifying a branch or tag, you may use an exact name or a wildcard.
 Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
+
+::: moniker-end
 
 * If you start your pattern with `*` in a YAML pipeline, you must wrap the pattern in quotes, like `"*-releases"`.
 * For branches, tags, and paths, a wildcard may appear anywhere in the pattern.
