@@ -24,7 +24,7 @@ Here is the behavior when you push a new branch (that matches the branch filters
 
 ### Wildcards
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="> azure-devops-2020"
 
 When specifying a branch, tag, or path, you may use an exact name or a wildcard.
 Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
@@ -48,7 +48,7 @@ trigger:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 When specifying a branch or tag, you may use an exact name or a wildcard.
 Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
