@@ -83,11 +83,11 @@ Other tools for setting your Azure DevOps preferences include [Notifications](..
    - Preferred email 
    - Whether borders appear for fields on work item forms.
 
-	:::image type="content" source="media/user-preferences/user-profile-dialog-general-tab.png" alt-text="User Profile dialog, General tab.":::
+	:::image type="content" source="media/user-preferences/user-profile-dialog-general-tab.png" alt-text="Screenshot of User Profile dialog, General tab.":::
 
 3. From the **Locale** tab, you can change the preferred language, date and time pattern, and time zone. 
 
-	:::image type="content" source="media/user-preferences/user-profile-dialog-locale-tab.png" alt-text="User Profile dialog, Locale tab.":::
+	:::image type="content" source="media/user-preferences/user-profile-dialog-locale-tab.png" alt-text="Screenshot of User Profile dialog, Locale tab.":::
 
 4. To change the UI theme, go back to the profile menu and select **Theme**. Choose between **Dark** and **Light**.
 5. Select **Save**.
