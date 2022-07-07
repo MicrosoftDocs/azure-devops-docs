@@ -137,7 +137,7 @@ $url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packag
 $url = "https://pkgs.dev.azure.com/{OrganizationName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
 ```
 
-### Get upstreaming behavior
+#### [Get upstreaming behavior](#tab/get/)
 
 Run the following command to retrieve the upstream behavior state of your package. `$url` and `$headers` are the same variables we used in the previous section.
 
@@ -145,7 +145,7 @@ Run the following command to retrieve the upstream behavior state of your packag
  Invoke-RestMethod -Uri $url -Headers $headers
  ```
 
-### Set upstreaming behavior
+#### [Set upstreaming behavior](#tab/set/)
 
 Run the following commands to allow externally sourced versions for your package. This will set `versionsFromExternalUpstreams` to `AllowExternalVersions`, and will use the `$url` and `$headers` variables to query the REST API.
 
@@ -158,7 +158,7 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 > [!NOTE]
 > In some cases, setting up the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
 
-### Clear upstreaming behavior
+#### [Clear upstreaming behavior](#tab/clear/)
 
 To clear the upstream behavior for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
 
@@ -167,6 +167,8 @@ $body = '{"versionsFromExternalUpstreams": "Auto"}'
 
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
+
+* * *
 
 ## Related articles
 
