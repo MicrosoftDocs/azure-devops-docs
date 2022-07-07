@@ -124,19 +124,19 @@ Aside from using the feed's user interface, you can also configure the upstream 
     }
     ```
 
-1. Construct your endpoint url. Example: https://pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/pkg1.0.0.nupkg/upstreaming?api-version=6.1-preview.1
+1. Construct your endpoint url. Example: //pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/pkg1.0.0.nupkg/upstreaming?api-version=6.1-preview.1
 
     - **Project-scoped feed**:
 
-    ```PowerShell
-    $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
-    ```
+        ```PowerShell
+        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
+        ```
 
     - **Organization-scoped feed**:
 
-    ```PowerShell
-    $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
-    ```
+        ```PowerShell
+        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
+        ```
 
 #### [Get upstreaming behavior](#tab/get/)
 
