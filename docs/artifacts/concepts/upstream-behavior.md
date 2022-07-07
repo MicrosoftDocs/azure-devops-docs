@@ -107,7 +107,7 @@ Aside from using the feed's user interface, you can also configure the upstream 
 
 1. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
 
-    :::image type="content" source="media\packaging-permissions.png" alt-text="select packaging permissions":::
+    :::image type="content" source="media\packaging-permissions.png" alt-text="Screenshot showing how to select packaging permissions.":::
 
 1. Create an environment variable for your personal access token.
 
