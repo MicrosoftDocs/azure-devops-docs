@@ -6,7 +6,7 @@ ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
 ms.technology: devops-code-tfvc
 ms.topic: tutorial
-ms.date: 07/077/2022
+ms.date: 07/07/2022
 monikerRange: '<= azure-devops'
 ---
 

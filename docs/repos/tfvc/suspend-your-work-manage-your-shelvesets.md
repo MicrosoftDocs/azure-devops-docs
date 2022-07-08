@@ -5,7 +5,7 @@ description: Suspend your work and manage your shelvesets
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 07/077/2022
+ms.date: 07/07/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,16 +15,16 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-For a variety of reasons, sometimes you need to set aside some or all of your work in progress. Shelvesets are useful when you want to stop work for:
+For various reasons, sometimes you need to set aside some or all of your work in progress. Shelvesets are useful when you want to stop work for:
 
--   **Interruption:** You have pending changes that are not ready for check in, but you need to work on a different task.  
--   **Collaboration:** You have pending changes that are not ready for check in but you need to share them with another team member.  
+-   **Interruption:** You have pending changes that aren't ready for check-in, but you need to work on a different task.  
+-   **Collaboration:** You have pending changes that aren't ready for check-in but you need to share them with another team member.  
 -   **Code Review:** You want another team member to perform a code review of your pending changes. To learn more about using code review, see [Day in the life of a devops developer: write new code for a user story](day-life-alm-developer-write-new-code-user-story.md).
 -   **Private Build:** Before you check in your changes, you can use your automated build system to build and test your code.  
--   **Backup:** You have work in progress that you cannot finish now so you want a backup copy that is stored on your server and available to other team members who might need to access it.  
+-   **Backup:** You have work in progress that you can't finish but want to make a backup copy. The backup copy is stored on your server and is available to other team members who might need to access it.  
 -   **Handoff:** You have work in progress that you want to hand off to another team member.
 
-You can move your [pending changes](develop-code-manage-pending-changes.md) to a shelveset on the server and then clean your [workspace](create-work-workspaces.md). The shelveset saves and stores not only your file revisions, but also the Comment, the list of Related Work Items, and check-in notes (if you evaluate policies before shelving).
+You can move your [pending changes](develop-code-manage-pending-changes.md) to a shelveset on the server and then clean your [workspace](create-work-workspaces.md). The shelveset saves your file revisions, comment, list of related work items, and check-in notes when you evaluate policies before shelving.
 
 ## Prerequisites
 
@@ -35,20 +35,20 @@ You must be one of the **Contributors** for your project. To learn more, see [De
  
 ## Suspend and resume your work from the My Work page
 
-From the **My Work** page you can save and then restore not only your file changes and related work items, but also the position of your open windows, breakpoints, and other important cues.
+From **My Work**, you can save and restore your file changes and related work items. You can also restore the position of your open windows, breakpoints, and other important cues.
 
 In Team Explorer, choose ![Home, my work](media/suspend-your-work-manage-your-shelvesets/IC547418.png) **Home**, and then choose **My Work**. On the **My Work** page, choose **Suspend & Shelve**, and then type a description of the suspended work.
 
 ![Screenshot of Suspend and shelve.](media/suspend-your-work-manage-your-shelvesets/IC592393.png)
 
-When you are ready to resume the work, go the **Suspended & Shelved Work** section of the **My Work** page, select a set of suspended work, and choose **Resume**.
+When you're ready to resume the work, go the **Suspended & Shelved Work** section of the **My Work** page, select a set of suspended work, and choose **Resume**.
 
 ![Screenshot of Resume.](media/suspend-your-work-manage-your-shelvesets/IC591026.png)
 
 ## Shelve your changes
 
 > [!TIP]
-> In either Solution Explorer or Source Control Explorer, you can shelve a specific subset of the files that you are working with: select them, open their context menu, and then choose **Shelve Pending Changes**. The **Pending Changes** page appears, ready to shelve only the files you selected.
+> In either Solution Explorer or Source Control Explorer, you can shelve a specific subset of the files that you're working with: select them, open their context menu, and then choose **Shelve Pending Changes**. The **Pending Changes** page appears, ready to shelve only the files you selected.
 
 ### To shelve your changes
 
@@ -66,7 +66,7 @@ When you are ready to resume the work, go the **Suspended & Shelved Work** secti
 
     -   **Preserve pending change locally**
 
-        By default, this check box is selected. When this check box is selected, your pending changes (including the comment and the Related Work Items list) are not removed from your workspace. If you want to clean your workspace to work on another task, you should clear this check box.
+        By default, this check box is selected. When this check box is selected, your pending changes (including the comment and the Related Work Items list) aren't removed from your workspace. If you want to clean your workspace to work on another task, you should clear this check box.
 
     -   **Evaluate Policies and check-in notes before shelving**
 
@@ -104,11 +104,11 @@ The **Shelveset Details** page appears.
 
 -   Choose **Unshelve Changes** if you want to retrieve the changes in the shelveset into your workspace:
 
-    1.  For any file changes that you do not want to unshelve, open the context menu of the file, and then choose **Exclude**.
+    1.  For any file changes that you don't want to unshelve, open the context menu of the file, and then choose **Exclude**.
 
     2.  If you want to delete the shelveset, clear the **Preserve shelveset on server** check box.
 
-    3.  If you do not want to restore the work item list and check-in notes that are stored in the shelveset clear the **Restore work items and check-in notes** check box.
+    3.  If you don't want to restore the work item list and check-in notes that are stored in the shelveset clear the **Restore work items and check-in notes** check box.
 
     4.  Choose the **Unshelve** button.
 
@@ -117,7 +117,7 @@ The **Shelveset Details** page appears.
 -   Choose **Delete Shelveset** if you want to delete the shelveset.
 
     > [!WARNING]
-    > Be sure you do not need any of the work stored in a shelveset before you delete it. There is no way to recover a deleted shelveset.
+    > Be sure you don't need any of the work stored in a shelveset before you delete it. There is no way to recover a deleted shelveset.
 
 ## Work from the command prompt
 
