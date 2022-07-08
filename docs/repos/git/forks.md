@@ -20,12 +20,14 @@ As an independent copy, changes you make to your fork, such as adding commits or
 
 The forking process doesn't transfer any permissions, policies, or build pipelines from the original repo to your fork.
 
+This article addresses working with forks in Azure Repos Git repositories, and provides links to GitHub content that discusses how to manage Forks in GitHub repos.
+
 In this article you learn how to:
 
 >[!div class="checklist"]
 >* Share code between forks
 >* Choose between branches and forks
->* Enable repo forking
+>* Enable repo forks
 >* Create a fork
 >* Clone your fork locally
 >* Push local changes to your fork
@@ -50,11 +52,11 @@ For a small team of 2-5 developers, a [forking workflow](#the-forking-workflow) 
 If your repo has a large number of casual or infrequent committers, such as an open source project might, we recommend the forking workflow. Typically, only core contributors to your project should have direct commit rights to your original repo. Other collaborators should use a forking workflow to isolate their proposed changes until the core contributors have a chance to review their work.
 
 
-## Enable repo forking
+## Enable repo forks
 
-To enable forking of Azure Repos Git repos at the organization level, go to **Project Settings** > **Repositories**, select the repository, choose **Options** next to the **Security** tab, and enable forks. For some versions, you might have to enable forking as a Preview Feature. In **User settings** > **Preview Features**, select `For this organization` from the drop-down, and enable `Git Forks`.
+To enable forks for an Azure Repos Git repo, see [enable Forks](repository-settings.md#enable-forks).
 
-To enable forking for a GitHub repo, see [Managing the forking policy for your organization](https://docs.github.com/organizations/managing-organization-settings/managing-the-forking-policy-for-your-organization).
+To enable forks for a GitHub repo, see [Managing the forking policy for your organization](https://docs.github.com/organizations/managing-organization-settings/managing-the-forking-policy-for-your-organization).
 
 ## The forking workflow
 
@@ -104,7 +106,7 @@ To add an `upstream` alias in Visual Studio, follow these steps:
 
 1. In the **Add Remote** dialog, add a new remote called `upstream` and enter the Git [clone URL](clone.md#get-the-clone-url-of-an-azure-repos-git-repo) of the repo you forked. Then, choose **Save**.
 
-    :::image type="content" source="media/forks/visual-studio-2019/git-add-remote-dialog.png" border="true" alt-text="Screenshot of the Add Remote dialog box in Visual Studio 2019.":::
+    :::image type="content" source="media/forks/visual-studio-2019/git-add-remote-dialog.png" border="true" alt-text="Screenshot of the Add Remote dialog box in Visual Studio 2019." lightbox="media/forks/visual-studio-2019/git-add-remote-dialog-lrg.png":::
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
