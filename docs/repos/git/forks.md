@@ -198,3 +198,17 @@ After a PR merges the changes from your fork into the target branch of the upstr
 - Update your fork by [pushing](pushing.md) from your updated local branch to `origin`. 
 
 Typically, the target branch of the upstream repo is `main`. If you aren't directly editing your local `main` branch (you work in feature branches), then [pulling](pulling.md) from the upstream branch `upstream/main` will update your local `main` branch without merge conflicts.
+
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Share code with push](pushing.md)
+> [Review pull requests](review-pull-requests.md)
+
+
+## Related articles
+
+- [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
+- [Update code with fetch, merge, and pull](pulling.md)
+- [Save your work with commits](commits.md)
