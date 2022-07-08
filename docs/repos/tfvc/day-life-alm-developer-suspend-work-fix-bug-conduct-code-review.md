@@ -5,7 +5,7 @@ description: Day in the life of a devops developer. Suspend work, fix a bug, and
 ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
 ms.technology: devops-code-tfvc
 ms.topic: tutorial
-ms.date: 08/25/2016
+ms.date: 07/077/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,12 +15,13 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-A powerful one-click way to switch your working context from one thread of work to another is available in Visual Studio Premium and Visual Studio Ultimate with Team Foundation Server. Also, team members can easily exchange messages about proposed changes to the code. This topic illustrates these features, continuing a tutorial that follows members of a fictitious agile team for a day.
+**My Work** and **Code Review** features support context switching from one thread of work to another. Also, team members can easily exchange messages about proposed changes to the code. This article illustrates these features, continuing a tutorial that follows members of a fictitious agile team for a day.
+
+[!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
 
 [Peter has been busy writing some code to fulfill a backlog item task.](day-life-alm-developer-write-new-code-user-story.md) However, [his colleagues have found a bug](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) that is blocking them, and he wants to fix it immediately. He suspends the work that he's doing and fixes the bug. He asks Julia to review the fix and, after the review, checks in the fix and resumes work on his original task.
 
-> [!NOTE]
-> The My Work and Code Review features that Peter uses are available only in Visual Studio Premium and Visual Studio Ultimate.
+ 
 
 ## Suspend current work
 
@@ -39,7 +40,7 @@ Now that his workspace is clean, Peter drags the new task from **Available Work 
 
 ### To suspend current work and begin work on a different task
 
- ![Suspending some work](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591024.png)
+ ![Screenshot of Suspending some work.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591024.png)
 1.  **Connect:** If you are not already connected to the project that you want to work in, then [connect to the project](../../organizations/projects/connect-to-projects.md):
 
     1.  In **Team Explorer**, choose ![Home icon](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC547418.png) **Home**, and then choose ![My Work icon](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC588354.png) **My Work**.
@@ -110,7 +111,7 @@ private void TestEqual(double value, double error, bool result)
 
 He runs the test and it fails as expected.
 
-![Unit Test Explorer showing failed test for equal](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675827.png)
+![Screenshot of Unit Test Explorer showing failed test for equal.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675827.png)
 
 ## Make the tests pass
 Peter fixes the code:
@@ -128,7 +129,7 @@ public static bool EqualTo(double a, double b)
 
 The test now passes:
 
-![Unit Test Explorer showing passed test for equal](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675828.png)
+![Screenshot of Unit Test Explorer showing passed test for equal.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675828.png)
 
 ## Request a code review
 
@@ -141,13 +142,13 @@ Peter is satisfied with his fix for the bug, but he does not check in his work y
 
     The **New Code Review** page appears.
 
-2.  ![Reviewer](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532202.gif) Specify one or more reviewers.
+2.  ![Reviewer icon.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532202.gif) Specify one or more reviewers.
 
-3.  ![Code Review](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532203.gif) Specify the name of the review.
+3.  ![Code Review icon.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532203.gif) Specify the name of the review.
 
-4.  ![Area path](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532204.gif) Specify the area path.
+4.  ![Area path icon.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532204.gif) Specify the area path.
 
-5.  ![Comment](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532205.gif) Specify a comment to your reviewers.
+5.  ![Comment icon.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC532205.gif) Specify a comment to your reviewers.
 
 6.  Choose **Submit Request**.
 
@@ -173,7 +174,9 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 > [!TIP]
 > Notice that the team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
 
-## To perform a code review![My Work page - code review item. Code Review page - Decline link, Comment, Decline button.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591278.png)![Diff window. Code Review page - Accept link, Overall comment, code block comment](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592880.png)
+## To perform a code review  
+![Screenshot of My Work page - code review item. Code Review page - Decline link, Comment, Decline button.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591278.png)  
+![Screenshot of Diff window. Code Review page - Accept link, Overall comment, code block comment.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592880.png)
 1.  In **Team Explorer**, on the **My Work** page, go to the **My Code Reviews & Requests** section and open the request.
 
 2.  On the **Code Review** page, you can:
@@ -206,7 +209,7 @@ Peter receives and responds to the code review from Julia.
 
 The reviewers and author of the code can exchange comments as often as they like. The review ends when the author closes it. With each contribution to the discussion, the other participants will be notified by email.
 
-![My Work page - code review item. Code Review page - Overall comment, file comment, Close Review link.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592517.png)
+![Screenshot of My Work page - code review item. Code Review page - Overall comment, file comment, Close Review link.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592517.png)
 1.  In **Team Explorer**, on the **My Work** page, go to the **Code Reviews & Request** section and double-click the request.
 
     You can also open the shortcut menu for the request and choose **Open**.
@@ -244,7 +247,7 @@ public static bool EqualTo(double a, double b)
 
 The test passes once again:
 
-![Unit Test Explorer showing passed test for equal](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675828.png)
+![Screenshot of Unit Test Explorer showing passed test for equal.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675828.png)
 
 > [!TIP]
 > To fix a bug, follow the same practice as in code development. Write a test that fails and then make the test pass. Check in the code and the tests only when the tests pass.
@@ -257,7 +260,7 @@ Peter checks in the fixed code and the unit tests. The state of the bug is autom
 
 ### To check in the fix
 
- ![Checking in an update to fix a bug](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC593474.png)
+ ![Screenshot of Checking in an update to fix a bug.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC593474.png)
 1.  In **Team Explorer**, on the **My Work** page, choose **Check In**.
 
 2.  Review the contents of the **Pending Changes** page to make sure that:
@@ -276,7 +279,7 @@ Peter resumes work on his task. He is able to get back to work quickly because a
 
 ### To resume work on a task
 
- ![Resuming and completing a task](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591026.png)
+ ![Screenshot of Resuming and completing a task.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591026.png)
 -   In **Team Explorer**, on the **My Work** page, find the **Suspended & Shelved Work** list. Open the shortcut menu for the item. You have two choices:
 
     -   If you want to resume the suspended work and automatically suspend any pending changes in your workspace, choose **Resume**.
@@ -285,17 +288,12 @@ Peter resumes work on his task. He is able to get back to work quickly because a
 
 ### When you resume your work
 
- ![Panes affected by suspending a work item.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592393.png)
+ ![Screenshot of Panes affected by suspending a work item.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592393.png)  
+
 When you resume your work, Visual Studio restores:
-
 -   Your open solution
-
 -   Your code changes
-
 -   The state and position of open windows
-
 -   Breakpoints
-
 -   Watch window variables and expressions
-
--   Bookmarks
+-   Bookmarks.

@@ -38,9 +38,12 @@ If you're working in a solution that contains a lot of files, you'll probably fi
 
 ## Use the My Work page to manage your work
 
-If you're using Visual Studio Premium or Visual Studio Ultimate, you can use the My Work (Keyboard: Ctrl + 0, M) page in the team explorer to manage your work.
+You can use the **My Work** (Keyboard: Ctrl + 0, M)  in Team Explorer to manage your work.
 
-![To Do List on My Work Page in Team Navigator](media/develop-code-manage-pending-changes/IC591023.png)  
+[!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
+ 
+
+![Screenshot of To Do List on My Work Page in Team Navigator.](media/develop-code-manage-pending-changes/IC591023.png)  
 You can use My Work to:  
 -   Track your work against [work items](../../boards/queries/link-work-items-support-traceability.md)    
 -   Suspend and later resume your work (including file changes, associated work items, and Visual Studio state such as window positions and breakpoints)  
@@ -58,7 +61,7 @@ For a step-by-step example, see [Day in the life of an devops Developer: Write n
 
 You can use the Pending Changes page (Keyboard: Ctrl + 0, P) in the team explorer to manage your work.
 
-![Checking in the pending changes](media/develop-code-manage-pending-changes/IC591276.png)
+![Screenshot of Checking in the pending changes.](media/develop-code-manage-pending-changes/IC591276.png)
 
 > [!TIP]
 > -  You can :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: undock the Pending Changes page from the team explorer and open it in a new window.

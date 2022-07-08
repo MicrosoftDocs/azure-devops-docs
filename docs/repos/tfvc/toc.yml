@@ -10,6 +10,8 @@
     href: share-your-code-in-tfvc-eclipse.md
   - name: Xcode
     href: share-your-code-in-tfvc-xcode.md
+  - name: Write new code 
+    href: day-life-alm-developer-write-new-code-user-story.md
   - name: Suspend work using My Work
     href: day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md
   - name: Request a code review
