@@ -1,7 +1,7 @@
 ---
 title: Fork your repository
 titleSuffix: Azure Repos
-description: Learn how to isolate experimental or risky code using a forking workflow in Azure DevOps Services.
+description: Learn how to isolate experimental or risky code using a forking workflow with Azure Repos Git repos.
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.technology: devops-code-git 
 ms.topic: how-to
@@ -52,10 +52,9 @@ If your repo has a large number of casual or infrequent committers, such as an o
 
 ## Enable repo forking
 
-To enable forking at the organization level, go to **Project Settings** > **Repositories**, select the repository, choose **Options** next to the **Security** tab, and enable forks.
+To enable forking of Azure Repos Git repos at the organization level, go to **Project Settings** > **Repositories**, select the repository, choose **Options** next to the **Security** tab, and enable forks. For some versions, you might have to enable forking as a Preview Feature. In **User settings** > **Preview Features**, select `For this organization` from the drop-down, and enable `Git Forks`.
 
-For some versions, you might have to enable forking as a Preview Feature. In **User settings** > **Preview Features**, select `For this organization` from the drop-down, and enable `Git Forks`.
-
+To enable forking for a GitHub repo, see [Managing the forking policy for your organization](https://docs.github.com/organizations/managing-organization-settings/managing-the-forking-policy-for-your-organization).
 
 ## The forking workflow
 
@@ -70,18 +69,20 @@ The forking workflow consists of five steps that are described in the following 
 
 ## Create a fork
 
-The following steps describe how to fork an Azure Repos repo. 
+The following steps describe how to fork an Azure Repos Git repo. 
 
 >[!NOTE]
 >To fork a repo in a Azure DevOps project, you must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission for that project. Repo owners should consider creating a dedicated project for forks and assigning the Create Repository permission to all contributors. For more information about setting permissions, see [Set Git repository permissions](set-git-repository-permissions.md).
 
-1. From your web browser, navigate to the Azure Repos repo that you want to fork. Select **Repo > Files** and then choose **Fork** from the ellipsis menu to open the **Fork** dialog.
+1. From your web browser, navigate to the Azure Repos Git repo that you want to fork. Select **Repo > Files** and then choose **Fork** from the ellipsis menu to open the **Fork** dialog.
 
     :::image type="content" source="media/forks/2022/fork-option.png" border="true" alt-text="Screenshot of the Fork menu item in the More actions menu on the Repo Files page in Azure Repos." lightbox="media/forks/2022/fork-option-lrg.png":::
 
 1. In the **Fork** dialog, name the forked repo, choose the project where you want the fork to be created, select the branches to include in the fork, and then choose **Fork**. You can specify whether the fork will contain all branches or just the default branch. If the repo contains several topic branches, then consider only including the default branch in your fork.
 
     :::image type="content" source="media/forks/2022/fork-dialog.png" border="true" alt-text="Screenshot of the Fork dialog on the Repo Files page in Azure Repos." lightbox="media/forks/2022/fork-dialog-lrg.png":::
+
+For information about how to fork a GitHub repo, see [Fork a repo](https://docs.github.com/get-started/quickstart/fork-a-repo).
 
 
 ## Clone your fork locally
@@ -170,7 +171,7 @@ For information on how to push your changes, see [Share code with push](pushing.
 
 ## Create and complete a PR
 
-To merge into the original repo the changes that you pushed to your fork, you can:
+In Azure Repos, to merge into the original repo the changes that you pushed to your fork, you can:
 
 1. [Create a PR](pull-requests.md) to request [review](review-pull-requests.md) and approval of your changes. When you open a PR, set the PR source branch to the feature or bugfix branch in your fork. The PR target branch is typically the `main` branch of the repo you forked. That repo is referred to as the upstream repo and has the alias `upstream`.
 
@@ -184,6 +185,8 @@ To merge into the original repo the changes that you pushed to your fork, you ca
    >Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission on the upstream repo can open a PR to it. If the upstream repo has a PR build [pipeline](../../pipelines/repos/azure-repos-git.md) that's configured to run on PR creation, a build will run on the changes introduced by your PR.
 
 1. For your PR to complete, all required reviewers must approve the PR changes and all target branch policies must be met. On PR approval and [completion](complete-pull-requests.md#complete-a-pull-request), the changes in the PR source branch will merge into the PR target branch.
+
+For information about how to create and complete a GitHub PR, see [Creating a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and [Merging a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request).
 
 
 ## Sync your fork
