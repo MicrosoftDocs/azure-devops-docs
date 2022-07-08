@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 03/21/2022
+ms.date: 07/07/2022
 ---
 
 # Download permission report for a release 
@@ -46,8 +46,10 @@ You can download the report for a specific release from the release's Security d
 
 1. Once you receive the email from Azure DevOps Notifications, open it and choose **Download Report**. 
 
-	A report labeled **PermissionsReport_**<em>GUID</em>.json appears in your Downloads folder. 
- 
+	A report labeled **PermissionsReport_**<em>GUID</em>.json appears in your **Downloads** folder. 
+
+	> [!IMPORTANT]
+	> Reports are automatically deleted after 28 days of the request. 
 
 ## Related articles  
 
