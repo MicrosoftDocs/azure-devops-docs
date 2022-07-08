@@ -37,7 +37,7 @@ When defining work items or running queries, the following operational limits ap
 | Work item tags assigned to a work item | 100 |
 | Work item revisions (REST API) | 10,000 | 
 
-A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restrict updates from the REST API, however, updates from the web portal are not affected.  
+A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.  
 
 
 
@@ -103,6 +103,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 |--------|-------|
 | Backlogs | 999 work items |
 | Boards | 400 cards  |
+| Dashboards per project | 500 |
 | Taskboard | 800 work items |
 | Teams | 5,000 per project |
 | Work item tags | 150,000 tag definitions per project |
@@ -236,6 +237,8 @@ We recommend that you consider the following guidance in order to minimize perfo
 
 > [!NOTE]
 > **Work Item Rules Validation Exceeds SQL Limits**: A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an IF statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error. 
+
+
 ::: moniker range="azure-devops"
 
 ## Rate limits

@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 06/02/2022
+ms.date: 07/08/2022
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 06/02/2022
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-With Delivery Plans, you can track dependencies that have been added to work items. Dependency tracking supports the Predecessor/Successor link type between work items. The following image shows several work items that have dependencies. Those cards with a :::image type="icon" source="media/dependencies/dependency-green-icon.png" border="false"::: green icon indicate there are no dependency issues. Those cards with a :::image type="icon" source="media/dependencies/dependency-red-icon.png" border="false"::: red icon indicate there are issues with one or more dependencies. Dependency issues arise when a predecessor work item is scheduled to finish after a successor work item. 
+With Delivery Plans, you can track dependencies that have been added to work items. Dependency tracking supports the **Predecessor/Successor** link type between work items. The following image shows several work items that have dependencies. Those cards with a :::image type="icon" source="media/dependencies/dependency-green-icon.png" border="false"::: green icon indicate there are no dependency issues. Those cards with a :::image type="icon" source="media/dependencies/dependency-red-icon.png" border="false"::: red icon indicate there are issues with one or more dependencies. Dependency issues arise when a predecessor work item is scheduled to finish after a successor work item. 
 
 :::image type="content" source="media/dependencies/dependencies-with-without-issues.png" alt-text="Screenshot of delivery plan showing work items with dependencies and dependencies with issues.":::
 
@@ -60,7 +60,7 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 	> [!TIP]    
 	> To view dependency lines across team backlogs, make sure to expand both teams.  
 
-	Dependency lines that have issues, show up with red lines. The issues indicate that the successor work item is scheduled to end later than the predecessor work item.  
+	Dependency lines that have issues, show up with red lines. The issues indicate that the successor work item is scheduled to end before the predecessor work item is completed.  
 
 	:::image type="content" source="media/dependencies/dependency-lines.png" alt-text="Screenshot of dependency lines that show issues between several work items.":::
 
