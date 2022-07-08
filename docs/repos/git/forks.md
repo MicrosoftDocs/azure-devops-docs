@@ -114,23 +114,23 @@ To add your upstream repository in Visual Studio, follow these steps:
 
 1. Open the **Settings** page.
 
-   :::image type="content" source="media/forks/visual-studio-2017/team-explorer/home-settings.png" border="false" alt-text="Screenshot of the Team Explorer Home view.":::
+   :::image type="content" source="media/forks/visual-studio-2017/team-explorer/home-settings.png" border="false" alt-text="Screenshot of the Team Explorer Home view in Visual Studio 2017.":::
 
 1. Choose **Repository Settings**.
 
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/settings.png" border="false" alt-text="Screenshot of Team Explorer settings.":::
+    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/settings.png" border="false" alt-text="Screenshot of the Team Explorer settings in Visual Studio 2017.":::
 
 1. Under **Remotes**, choose **Add**.
 
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/reposettings.png" border="false" alt-text="Screenshot of Repository settings.":::
+    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/reposettings.png" border="false" alt-text="Screenshot of the Repository settings in Visual Studio 2017.":::
 
 1. Add a new remote called `upstream`, using the Git clone URL of the repo you forked.
 
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/new-remote.png" border="false" alt-text="Screenshot of Dialog: add new remote.":::
+    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/new-remote.png" border="false" alt-text="Screenshot of the Add New Remote dialog in Visual Studio 2017.":::
 
 1. Select **Save** and the new remote is added and displayed in the repository settings.
 
-    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/upstream-added.png" border="false" alt-text="Screenshot of New remote added.":::
+    :::image type="content" source="media/forks/visual-studio-2017/team-explorer/upstream-added.png" border="false" alt-text="Screenshot of the Remotes list in Visual Studio 2017.":::
 
 #### [Command Line](#tab/command-line)
 
