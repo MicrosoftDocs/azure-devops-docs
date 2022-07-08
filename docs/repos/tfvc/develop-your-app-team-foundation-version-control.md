@@ -5,7 +5,7 @@ description: Develop your app in Team Foundation version control
 ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/077/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -23,7 +23,7 @@ Having access to the history of a project has additional benefits, such as being
 
 Are you a new user of Visual Studio and Azure DevOps? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
-If so, we suggest you take a few minutes to walk step-by-step through a day in the life of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. Their team recently adopted Visual Studio and Azure DevOps to manage their code. You'll see examples of how you can use Visual Studio Premium and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
+If so, we suggest you take a few minutes to walk step-by-step through a day in the life of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. Their team recently adopted Visual Studio and Azure DevOps to manage their code. You'll see examples of how you can check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
 -    [Day in the life of a developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md) 
 
