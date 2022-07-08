@@ -14,9 +14,11 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-Git repo forks are useful when people want to make experimental, risky, or confidential changes to a codebase, but those changes need to be isolated from the original repo for the codebase. If you fork a repo, the fork is an independent and complete copy unless you specify a single branch. As an independent copy, any changes you make to your fork, such as adding commits or branches, aren't shared with the original repo. If you want to merge your codebase changes into the original repo, you must create a [pull request](pull-requests.md) (PR) for review and approval of the changes.
+Git repo forks are useful when people want to make experimental, risky, or confidential changes to a codebase, but those changes need to be isolated from the original repo. A new fork is essentially a clone of the original repo pushed to a new remote repo. The fork is independent of the original repo, and is a complete copy unless you specify a single branch.
 
-The forking process doesn't transfer any permissions, policies, or build pipelines from the original repo to your fork. Basically, the new fork acts as if you cloned the original repo, then pushed the local clone to a new remote repo.
+As an independent copy, changes you make to your fork, such as adding commits or branches, aren't shared with the original repo. If you want to merge your codebase changes into the original repo, you must create a [pull request](pull-requests.md) (PR) to request review and approval of those changes.
+
+The forking process doesn't transfer any permissions, policies, or build pipelines from the original repo to your fork.
 
 In this article you learn how to:
 
