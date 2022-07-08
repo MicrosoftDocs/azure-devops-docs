@@ -33,6 +33,11 @@ In this article you learn how to:
 >* Sync your fork
 
 
+## Prerequisites for access to Azure Repos
+
+[!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
+
 ## Share code between forks
 
 The original repo is often referred to as the *upstream* repo. You can create PRs to merge changes in either direction: from fork to upstream, or upstream to fork. The most common direction is from fork to upstream. The destination repo's permissions, policies, builds, and work items will apply to the PR.
