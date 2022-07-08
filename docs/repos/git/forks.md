@@ -42,7 +42,7 @@ The original repo is often referred to as the *upstream* repo. You can create PR
 
 For a small team of 2-5 developers, a [forking workflow](#the-forking-workflow) might not be necessary because everyone can work in [feature branches](git-branching-guidance.md#use-feature-branches-for-your-work) and [branch policies](branch-policies-overview.md) can protect the default branch. However, if your team expands and outgrows this arrangement they can switch to a forking workflow.
 
-If your repo has a large number of casual or infrequent committers, such as an open source project might, we recommend the forking workflow. Typically, only core contributors to your project should have direct commit rights to your original repo. Other collaborators should use a forking workflow to isolate their proposed changes until the core contributors have a chance to review the work.
+If your repo has a large number of casual or infrequent committers, such as an open source project might, we recommend the forking workflow. Typically, only core contributors to your project should have direct commit rights to your original repo. Other collaborators should use a forking workflow to isolate their proposed changes until the core contributors have a chance to review their work.
 
 
 ## Enable repo forking
@@ -68,7 +68,7 @@ The forking workflow consists of five steps that are described in the following 
 The following steps describe how to fork an Azure Repos repo. 
 
 >[!NOTE]
->To fork a repo in a Azure DevOps project, you must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission for that project. Repo owners should consider creating a dedicated project for forks and assign the Create Repository permission to all contributors. For more information about setting permissions, see [Set Git repository permissions](set-git-repository-permissions.md).
+>To fork a repo in a Azure DevOps project, you must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission for that project. Repo owners should consider creating a dedicated project for forks and assigning the Create Repository permission to all contributors. For more information about setting permissions, see [Set Git repository permissions](set-git-repository-permissions.md).
 
 1. From your web browser, navigate to the Azure Repos repo that you want to fork. Select **Repo > Files** and then choose **Fork** from the ellipsis menu to open the **Fork** dialog.
 
@@ -150,7 +150,7 @@ When you fork, you create a personal and independent copy of the remote repo. So
 
 - You can maintain multiple, independent workstreams simultaneously.
 
-- You make it easier for others to understand the work you share because that work is organized into distinct workstreams organized by branch.
+- You make it easier for others to understand the work you share because that work is organized into distinct workstreams by branch.
 
 A typical Git [workflow](gitworkflow.md#git-workflow) includes these steps:
 
@@ -158,7 +158,7 @@ A typical Git [workflow](gitworkflow.md#git-workflow) includes these steps:
 
 1. Make changes in the new branch and [commit](commits.md) your work. Typically, people make multiple commits when working on a feature or bug fix.
 
-1. [Push](pushing.md) your feature or bug fix branch to your fork. Your fork has the alias `origin`.
+1. [Push](pushing.md) the feature or bug fix branch to your fork. Your fork has the alias `origin`.
 
 For information on how to push your changes, see [Share code with push](pushing.md).
 
@@ -173,7 +173,7 @@ To merge into the original repo the changes that you pushed to your fork, you ca
 
    :::image type="content" source="media/forks/2022/pr-cross-repo-fork.png" border="true" alt-text="Screenshot of the PR source and target branch options in Azure Repos." lightbox="media/forks/2022/pr-cross-repo-fork-lrg.png":::
 
-   For more information about how to create a PR using either your browser, Visual Studio, or the Azure DevOps CLI, see [Create a PR](pull-requests.md#create-a-pull-request).
+   For more information about how to create a PR using your browser, Visual Studio, or the Azure DevOps CLI, see [Create a PR](pull-requests.md#create-a-pull-request).
 
    >[!IMPORTANT]
    >Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission on the upstream repo can open a PR to it. If the upstream repo has a PR build [pipeline](../../pipelines/repos/azure-repos-git.md) that's configured to run on PR creation, a build will run on the changes introduced by your PR.
@@ -183,7 +183,7 @@ To merge into the original repo the changes that you pushed to your fork, you ca
 
 ## Sync your fork
 
-After you've merged the changes from your fork into the target branch of the upstream repo, you can [pull](pulling.md) from the target branch of the upstream repo to update your corresponding local branch with both your changes and any changes made by other contributors. Then you're ready to:
+After a PR merges the changes from your fork into the target branch of the upstream repo, you can [pull](pulling.md) from the target branch of the upstream repo to update your corresponding local branch with both your changes and any changes made by other contributors. Then you're ready to:
 
 - Create a new feature or bug fix branch from the updated local branch. 
 
