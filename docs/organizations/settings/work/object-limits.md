@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
-ms.date: 05/31/2022
+ms.date: 07/07/2022
 ---
 
 # Work tracking, process, and project limits
@@ -62,7 +62,7 @@ The default maximum attachment size is 4 MB. You can [change the maximum size up
 
 To improve query performance, see [ Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md).
 
-## Backlogs, boards, and teams
+## Backlogs, boards, dashboards, and teams
 
 ::: moniker range="azure-devops"
 
@@ -73,14 +73,16 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Backlogs | 10,000 work items |
 | Boards | 1,000 cards (excluding those cards in the *[Proposed](../../../boards/work-items/workflow-and-state-categories.md)*[ and ](../../../boards/work-items/workflow-and-state-categories.md)*[Completed](../../../boards/work-items/workflow-and-state-categories.md)*[ workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) |
 | Taskboard | 1,000 tasks  |
-| Teams | 5,000 per organization |
-| Work item tags | 150,000 tag definitions per organization or collection |
 | Area Paths | 10,000 per organization |
 | Area Path Depth | 14 |
 | Area Paths per team | 300 |
 | Iteration Paths | 10,000 per organization |
 | Iteration Path Depth | 14 |
 | Iteration Paths per team | 300 |
+| Dashboards per project | 500 |
+| Teams | 5,000 per organization |
+| Work item tags | 150,000 tag definitions per organization or collection |
+
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
