@@ -79,7 +79,7 @@ Once you've defined the inherited process, you can perform these actions:
 
 You can change the process a project uses from a system process or inherited process to another inherited process. There are two mechanisms to change a projects process. The first is to switch to a process where the project is derived from the same system process. Meaning, you can move a project between processes that use the same base process like Agile or Scrum.
 
-The second method is to migrate your project between two completely different process types. For example, moving from Agile to Scrum, or Basic to Agile.
+The second method is to migrate your project from one process model to another process model. For example, change the process model used by the project from Agile to Scrum, or Basic to Agile.
 
 For the second method, we have provided detailed steps for three common scenarios of changing the process used by a project.
 
@@ -140,7 +140,7 @@ Follow the steps in the wizard
 
 ## Copy a process
 
-It's a good practice to test the customizations you make before rolling out the changes to your organization.  To do this, you create a copy of a process, make your updates, verify the updates appear as desired, and then move projects to the new process.  
+It's a good practice to test the customizations you make before rolling out the changes to your organization.  To test your customization, you create a copy of a process, make your updates, verify the updates appear as desired, and then move projects to the new process.  
  
 > [!TIP]    
 > If you make a change to a process that is used by one or more projects, each project that uses the process updates immediately to the incremental process change. To bundle your process changes before you roll them out to all projects, following the  steps outlined next.
@@ -159,7 +159,7 @@ It's a good practice to test the customizations you make before rolling out the 
 
 1. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <em>ProcessName</em>**](#migrate) option from the context menu. 
 
-1. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <em>ProcessName</em>**](#migrate) option from the context menu.  
+1. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To roll out your changes, change the process of the projects that need the new changes. Select the [**Change project to use <em>ProcessName</em>**](#migrate) option from the context menu.  
 
 1.  Disable or delete the original process. 
  
@@ -179,13 +179,14 @@ All system processes and newly created inherited processes are enabled by defaul
 
 ## Set the default process
 
-Set an inherited process as the default to have it pre-selected for any additional projects you plan to create. 
+Set an inherited process as the default to have it pre-selected for other projects you plan to create. 
 
-To set a process as the default, open the &hellip; context menu for the inherited process and choose **Set as default process**. Note that this option is not available with any of the three system processes. 
+To set a process as the default, open the &hellip; context menu for the inherited process and choose **Set as default process**. This option isn't available with any of the system processes. 
 
 Project Collection Administrators can [add projects](../../projects/create-project.md) from the **Projects** page. 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Add and manage fields for an inherited process](customize-process-field.md) 
 > Or
