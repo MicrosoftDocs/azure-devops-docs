@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview 
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/17/2020
+ms.date: 07/08/2022
 ---
 
 # About process customization and inherited processes  
@@ -40,7 +40,7 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 You'll see two types of processes:
 
 - ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes. 
+- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes and their child inherited processes. Updates to processes are documented in [Changes made to process templates](../../../boards/work-items-guidance/changes-to-process-templates.md).
 
 ::: moniker range="azure-devops-2019"
 > [!NOTE]   
@@ -53,7 +53,7 @@ Once you've created an inherited process, you can customize it, create projects 
 For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process (which inherits from the *Scrum* system process). Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project, on the other hand, until you change it to a process which inherits from *Agile*.
 
 > [!div class="mx-imgBorder"]  
-> ![Admin context, Organization settings, Project list and the process they use](media/process/projects-list.png)
+> ![Screenshot of Admin context, Organization settings, Project list and the process they use.](media/process/projects-list.png)
 
 <a id="process-naming"></a>
 
@@ -90,22 +90,22 @@ Each inherited process you create inherits the WITs defined in the system proces
 
 #### [Agile process](#tab/agile-process) 
 
-![Agile work item types](../../../boards/work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
+![Conceptual image of Agile process work item hierarchy.](../../../boards/work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
 
 #### [Basic process](#tab/basic-process) 
 
-![Basic process work item hierarchy](../../../boards/get-started/media/track-issues/basic-process-epics-issues-tasks.png)
+![Conceptual image of Basic process work item hierarchy.](../../../boards/get-started/media/track-issues/basic-process-epics-issues-tasks.png)
 
 > [!NOTE]  
 > The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
 
 #### [Scrum process](#tab/scrum-process) 
 
-![Scrum work item types](../../../boards/work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
+![Conceptual image of Scrum process work item hierarchy.](../../../boards/work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
 
 #### [CMMI process](#tab/cmmi-process) 
 
-![CMMI work item types](../../../boards/work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
+![Conceptual image of CMMI process work item hierarchy.](../../../boards/work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
 
 * * * 
 
@@ -409,7 +409,7 @@ You can make the following customizations to a WIT form.
 
 The web form layout is organized into three columns as shown in the image below. 
 
-![3-column page layout](media/process/cpform-3-column-layout.png)
+![Illustration of 3-column page layout for work item form.](media/process/cpform-3-column-layout.png)
 
 If you only add groups and fields to the first two columns, then the layout reflects a two-column layout. Likewise, if you only add groups and fields to the first column, then the layout reflects a one-column layout. 
 
@@ -433,7 +433,7 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 
-![Product backlog, Quick Add Panel, Displays Default WIT for a backlog level](media/process/process-backlog-boards-quick-add-panel.png)  
+![Screenshot of Product backlog, Quick Add Panel, Displays Default WIT for a backlog level](media/process/process-backlog-boards-quick-add-panel.png)  
 
  
 
