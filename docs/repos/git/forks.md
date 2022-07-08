@@ -14,9 +14,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2015](../../includes/version-vs-gt-2015.md)]
 
-Forks are useful when people want to make experimental, risky, or confidential changes to a codebase, but those changes need to be isolated from the original repo containing the codebase. If you create a fork of an original repo, the fork is an independent and typically complete copy&mdash;although you can fork a single branch. As an independent copy of an original repo, any changes you make to your fork, such as adding commits or branches, aren't shared with the original repo. If you want to share your codebase changes with the original repo, you must create a [pull request](pull-requests.md) (PR) to request review and approval of the changes.
+Git repo forks are useful when people want to make experimental, risky, or confidential changes to a codebase, but those changes need to be isolated from the original repo for the codebase. If you fork a repo, the fork is an independent and complete copy unless you specify a single branch. As an independent copy, any changes you make to your fork, such as adding commits or branches, aren't shared with the original repo. If you want to merge your codebase changes into the original repo, you must create a [pull request](pull-requests.md) (PR) for review and approval of the changes.
 
-When you fork an Azure Repos repo, you can specify whether your fork will contain all branches or just the default branch. The forking process doesn't transfer any permissions, policies, or build pipelines to your fork. Basically, the new fork acts as if you cloned the original repo, then pushed the local clone to a new remote repo.
+The forking process doesn't transfer any permissions, policies, or build pipelines from the original repo to your fork. Basically, the new fork acts as if you cloned the original repo, then pushed the local clone to a new remote repo.
 
 In this article you learn how to:
 
@@ -63,7 +63,7 @@ The forking workflow consists of five steps that are described in the following 
 
 ## Create a fork
 
-The following steps describe how to fork an Azure Repos repo.
+The following steps describe how to fork an Azure Repos repo. 
 
 >[!NOTE]
 >To create a fork in a project, you must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission for that project. Repo owners can create a dedicated project for forks and assign the Create Repository permission to all contributors. For more information about setting permissions, see [Set Git repository permissions](set-git-repository-permissions.md).
@@ -72,7 +72,7 @@ The following steps describe how to fork an Azure Repos repo.
 
     :::image type="content" source="media/forks/2022/fork-option.png" border="true" alt-text="Screenshot of the Fork menu item in the More actions menu on the Repo Files page in Azure Repos.":::
 
-1. In the **Fork** dialog, name the forked repo, choose the project where you want the fork to be created, select the branches to include in the fork, and then choose **Fork**. If the repo contains several topic branches, then consider only including the default branch in your fork.
+1. In the **Fork** dialog, name the forked repo, choose the project where you want the fork to be created, select the branches to include in the fork, and then choose **Fork**. When you fork an Azure Repos repo, you can specify whether the fork will contain all branches or just the default branch. If the repo contains several topic branches, then consider only including the default branch in your fork.
 
     :::image type="content" source="media/forks/2022/fork-dialog.png" border="true" alt-text="Screenshot of the Fork dialog on the Repo Files page in Azure Repos.":::
 
@@ -88,7 +88,7 @@ When you clone a remote repo, Git assigns the alias `origin` as shorthand for th
 
 #### [Visual Studio 2019](#tab/visual-studio-2019/)
 
-To add the `upstream` alias in Visual Studio, follow these steps:
+To add an `upstream` alias in Visual Studio, follow these steps:
 
 1. Choose **Tools > Options** from the menu bar to open the **Options** window, select **Source Control > Git Repository Settings > Remotes**, and then choose **Add** to open the **Add Remote** dialog.
 
