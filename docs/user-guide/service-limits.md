@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 02/03/2022
+ms.date: 07/07/2022
 ---
 
 # Service and rate limits for Azure DevOps Services
@@ -58,6 +58,10 @@ This article specifies certain limits placed on the use and configuration of Azu
 
 When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md).
  
+## Dashboards
+
+A limit is placed on 500 dashboards per project. 
+
 ## Wiki
 
 Wikis defined for a project are limited to 1 GB per git repository. 
