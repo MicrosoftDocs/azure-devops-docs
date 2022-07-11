@@ -49,7 +49,7 @@ Following are the key benefits of using Docker task as compared to directly usin
 | `Dockerfile`<br/>Dockerfile | (Optional) Path to the Dockerfile. The task will use the **first** dockerfile it finds to build the image.<br/>Default value: `**/Dockerfile` |
 | `buildContext`<br/>Build context | (Optional) Path to the build context<br/>Default value: `**` |
 | `arguments`<br/>Arguments | (Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value `buildAndPush` for the `command` parameter, then the `arguments` property will be ignored.
-| `addPipelineData` <br/>Add Pipeline metadata to image. | (Optional) By default pipeline data like source branch name, build id are added which helps with traceability. For example you can inspect an image to find out which pipeline built the image. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
+| `addPipelineData` <br/>Add Pipeline metadata to image. | (Optional) By default pipeline data like source branch name, build ID are added which helps with traceability. For example you can inspect an image to find out which pipeline built the image. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
 | `addBaseImageData` <br/>Add base image metadata to image(s) | (Optional) By default base image data like base image name and digest are added which helps with traceability. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
 
 ## Login
@@ -125,7 +125,7 @@ The command buildAndPush lets you build and push images to container registry in
 
 :::image type="content" source="media/docker-classic-build-push.png" alt-text="Screenshot of build and push Docker classic task.":::
 
-You can also build and push without authentication.  In the this buildAndPush tasks, the images for tag1 and tag2 are built and pushed to the container registries corresponding to service connections set up in the previous two login tasks. 
+You can also build and push without authentication.  In the buildAndPush tasks, the images for tag1 and tag2 are built and pushed to the container registries corresponding to service connections set up in the previous two login tasks. 
 
 :::image type="content" source="media/docker-classic-build-push-two-containers.png" alt-text="Screenshot of Classic pipeline with build and push to two Docker container registries.":::
 
