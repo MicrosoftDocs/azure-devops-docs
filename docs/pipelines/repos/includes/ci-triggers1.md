@@ -117,12 +117,6 @@ Wilds cards are supported for path filters. For instance, you can include all pa
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
-
-Wild cards are not supported for path filters.
-
-::: moniker-end
-
 > **Tips:**
 >  * Paths are always specified relative to the root of the repository.
 >  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
