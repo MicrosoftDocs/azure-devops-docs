@@ -12,8 +12,6 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
-
 ## Project setup
 
 ::: moniker range=">= azure-devops-2019"
@@ -44,49 +42,52 @@ monikerRange: '<= azure-devops'
 
     :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing the connect to feed button in TFS":::
 
-1. Follow the highlighted steps to get the tools, add the feed to your local NuGet configuration, and push your package.
+1. Select **NuGet** from the left panel.
+
+1. If this is your first time using Azure Artifacts with NuGet, select the link under **Get the tools** to download and install NuGet and the Credential Provider.
+
+1. Run the command highlighted in step number two to add your feed URL to your nuget.config file.
 
     :::image type="content" source="../media/nugeturl.png" alt-text="Screenshot showing how to push your package using NuGet.exe in TFS":::
-   
+
+1. Run the command highlighted in step number three if you want to publish your NuGet package.
+
 ::: moniker-end
 
 > [!NOTE]
-> Azure Artifacts Credential Provider is supported in NuGet version 4.8.2 or later. See [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider) for more information.
-
+> Azure Artifacts Credential Provider is supported with NuGet 4.8.2 or later. See [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider) for more information.
 
 ::: moniker range="azure-devops"
 
-## Project setup (NuGet 2)
+## Legacy project setup (NuGet v2)
 
-With NuGet version 2, you must use a Personal Access Tokens to authenticate to your feed. To do so, we must first get the package source URL:
-
-1. Select **Artifacts** and then select your feed. 
+1. Select **Artifacts** and then select your feed.
 
 1. Select **Connect to feed**.
 
     :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing the connect to feed button":::
 
 1. Select **NuGet.exe** from the left panel.
-   
+
 1. Copy your package source URL, and then replace `/v3/index.json` with `/v2`.
 
     :::image type="content" source="../media/nuget-consume-url-azure-devops-newnav.png" alt-text="Screenshot showing the source URL":::
 
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat). Scope your PAT to the organization(s) you want to access and to one of the following scopes: Packaging (read), Packaging (read and write), or Packaging (read, write, and manage).
 
-Run the following command in an elevated command prompt window to add your package source:
+1. Run the following command in an elevated command prompt window to add your package source:
 
-```Command
-nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
-```
+    ```Command
+    nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
+    ```
 
-If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials, and then add your personal access token using the *setapikey* command:
+1. If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials, and then add your personal access token using the *setapikey* command:
 
-```Command
-nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
-
-nuget setapikey <Personal_Access_Token> -source <Feed_URL> 
-```
+    ```Command
+    nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
+    
+    nuget setapikey <Personal_Access_Token> -source <Feed_URL> 
+    ```
 
 ::: moniker-end
 
