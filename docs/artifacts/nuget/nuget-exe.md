@@ -14,21 +14,21 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 
-## Project setup (NuGet 4.8.2 or later)
-
-1. Select **Artifacts** and then select your feed.
+## Project setup
 
 ::: moniker range=">= azure-devops-2019"
 
-2. Select **Connect to feed**.
+1. Select **Artifacts** and then select your feed.
+
+1. Select **Connect to feed**.
 
     :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing the connect to feed button":::
 
-3. Select **NuGet.exe** from the left panel.
+1. Select **NuGet.exe** from the left panel.
 
-4. If this is your first time using Azure Artifacts with NuGet.exe, select **Get the tools** in the top-right corner and follow the instructions to set up the credential provider and NuGet. 
+1. If this is your first time using Azure Artifacts with NuGet.exe, select **Get the tools** in the top-right corner and follow the instructions to download and install NuGet and Azure Artifacts Credential Provider.
 
-5. Follow the instructions in the **Project setup** to set up your config file.
+1. Follow the instructions in the **Project setup** to set up your nuget.config file.
 
    :::image type="content" source="../media/nuget-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project's config file":::
 
@@ -36,11 +36,15 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="tfs-2018"
 
-2. Select **Connect to feed**.
+1. Select **Build and Release** > **Packages**.
+
+1. Select your feed from the dropdown menu.
+
+1. Select **Connect to feed**.
 
     :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing the connect to feed button in TFS":::
 
-3. Follow the highlighted steps to get the tools, add the feed to your local NuGet configuration, and push your package.
+1. Follow the highlighted steps to get the tools, add the feed to your local NuGet configuration, and push your package.
 
     :::image type="content" source="../media/nugeturl.png" alt-text="Screenshot showing how to push your package using NuGet.exe in TFS":::
    
