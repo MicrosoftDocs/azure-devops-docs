@@ -4,11 +4,11 @@ description: How to connect to an Azure Artifacts feed
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 07/11/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Connect to Azure Artifacts feeds
+# Connect to Azure Artifacts feeds (NuGet.exe)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -69,7 +69,7 @@ monikerRange: '<= azure-devops'
 
 1. Select **NuGet.exe** from the left panel.
 
-1. Copy your package source URL, and then replace `/v3/index.json` with `/v2`.
+1. Copy your source URL, and then replace `/v3/index.json` with `/v2`.
 
     :::image type="content" source="../media/nuget-consume-url-azure-devops-newnav.png" alt-text="Screenshot showing the source URL":::
 
@@ -81,7 +81,7 @@ monikerRange: '<= azure-devops'
     nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
     ```
 
-1. If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials, and then add your personal access token using the *setapikey* command:
+1. If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
 
     ```Command
     nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
@@ -93,38 +93,41 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="tfs-2018"
 
-## Project setup (NuGet 2)
+## Legacy project setup (NuGet v2)
 
-With NuGet version 2, you must use a Personal Access Tokens to authenticate to your feed. To do so, we must first get the feed URL:
+1. Select **Build and Release** > **Packages**.
 
-1. Navigate to your feed, and then select **Connect to feed**.
+1. Select your feed from the dropdown menu.
+
+1. Select **Connect to feed**.
 
     :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot of the connect to feed button in TFS":::
 
-1. Select **NuGet** and then copy your NuGet package source URL. Replace `/v3/index.json` with `/v2`. 
+1. Select **NuGet** and then copy your source URL. Replace `/v3/index.json` with `/v2`.
 
-    :::image type="content" source="../media/nuget-consume-url.png" alt-text="Screenshot showing how to get the package source URL":::
+    :::image type="content" source="../media/nuget-consume-url.png" alt-text="Screenshot showing how to get the source URL":::
 
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat). Scope your PAT to the organization(s) you want to access and to one of the following scopes: Packaging (read), Packaging (read and write), or Packaging (read, write, and manage).
 
-Run the following command in an elevated command prompt window to add your package source:
+1. Run the following command in an elevated command prompt window to add your package source:
 
-```Command
-nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
-```
+    ```Command
+    nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
+    ```
 
-If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials, and then add your personal access token using the *setapikey* command:
+1. If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials and then add your personal access token using the *setapikey* command:
 
-```Command
-nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
-
-nuget setapikey <Personal_Access_Token> -source <Feed_URL> 
-```
+    ```Command
+    nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
+    
+    nuget setapikey <Personal_Access_Token> -source <Feed_URL> 
+    ```
 
 ::: moniker-end
 
 ## Related articles
 
 - [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
-- [Publish a NuGet package using the command line](./publish.md)
+- [Publish NuGet packages from the command line (NuGet.exe)](./publish.md)
+- [Publish NuGet packages from the command line (dotnet)](./dotnet-exe.md)
 - [NuGet.org upstream source](./upstream-sources.md)
