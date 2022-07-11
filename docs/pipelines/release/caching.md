@@ -27,7 +27,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 * **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
 
 > [!NOTE]
-> Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage) for more details.
+> Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
 ## Cache task
 
