@@ -318,7 +318,7 @@ Follow each of these steps to troubleshoot your failing triggers:
       * Yes: 
         * This may be an intermittent error. Re-run the pipeline.
         * Someone may have removed the access to **Project Build Service account**.
-          * Go to to **Project settings** for the project in which the repository exists. Select **Repos > Repositories > specific repository**, and then **Security**.
+          * Go to **Project settings** for the project in which the repository exists. Select **Repos > Repositories > specific repository**, and then **Security**.
           * Check if **your-project-name Build Service (your-collection-name)** exists in the list of users.
           * Check if that account has **Create tag** and **Read** access.
       * No:
