@@ -124,5 +124,4 @@ Wilds cards are supported for path filters. For instance, you can include all pa
 >  * The order of path filters doesn't matter.
 >  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
 >  * You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
-
-::: moniker-end
+S
