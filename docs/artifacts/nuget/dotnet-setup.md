@@ -1,10 +1,11 @@
 ---
 title: Connect to Azure Artifacts feeds - dotnet
-description: How to connect to an Azure Artifacts feed
+description: How to connect to an Azure Artifacts feed - dotnet
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 07/12/2022
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ---
 
 # Connect to Azure Artifacts feeds (dotnet)
@@ -29,7 +30,7 @@ monikerRange: '<= azure-devops'
     1. Download and install the .NET Core SDK.
     1. Download and install Azure Artifacts Credential Provider.
 
-1. Create a *nuget.config* file in the same folder as your .csproj or .sln file. Copy and paste the following snippet into your new file:
+1. Create a *nuget.config* file in the same folder as your *csproj* or *sln* file. Copy and paste the following snippet into your new file:
 
     - Project-scoped feed:
 
@@ -81,3 +82,9 @@ monikerRange: '<= azure-devops'
     ```
 
 ::: moniker-end
+
+## Related articles
+
+- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [NuGet.org upstream source](./upstream-sources.md)
