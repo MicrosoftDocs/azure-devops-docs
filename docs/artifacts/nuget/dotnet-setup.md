@@ -27,8 +27,8 @@ monikerRange: '<= azure-devops'
     :::image type="content" source="../media/dotnet-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed - dotnet.":::
 
 1. If this is your first time using Azure Artifacts with dotnet, select **Get the tools** in the top-right corner and then:
-    1. Download and install the .NET Core SDK.
-    1. Download and install Azure Artifacts Credential Provider.
+    1. Download and install the [.NET Core SDK](https://dotnet.microsoft.com/en-us/download).
+    1. Download and install [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
 1. Create a *nuget.config* file in the same folder as your *csproj* or *sln* file. Copy and paste the following snippet into your new file:
 
