@@ -1,135 +1,124 @@
 ---
-title: "Azure DevOps docs: What's new for May 1, 2022 - May 31, 2022"
-description: "What's new in the Azure DevOps docs for May 1, 2022 - May 31, 2022."
-ms.date: 06/13/2022
+title: "Azure DevOps docs: What's new for June 1, 2022 - June 30, 2022"
+description: "What's new in the Azure DevOps docs for June 1, 2022 - June 30, 2022."
+ms.date: 07/12/2022
 ---
 
-# Azure DevOps docs: What's new for May 1, 2022 - May 31, 2022
+# Azure DevOps docs: What's new for June 1, 2022 - June 30, 2022
 
-Welcome to what's new in the Azure DevOps docs from May 1, 2022 through May 31, 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from June 1, 2022 through June 30, 2022. This article lists some of the major changes to docs during this period.
 
 ## Artifacts
 
-### New articles
-
-- [Universal Packages upstream sources](/azure/devops/artifacts/universal-packages/universal-packages-upstream)
-
 ### Updated articles
 
-- [Get started with NuGet packages in Azure Artifacts](/azure/devops/artifacts/get-started-nuget)
-- [Azure Artifacts documentation](/azure/devops/artifacts/index)
+- [Publish and restore NuGet packages from the command line (dotnet)](/azure/devops/artifacts/nuget/dotnet-exe)
+- [Publish NuGet packages (NuGet.exe)](/azure/devops/artifacts/nuget/publish)
+- [Share your Artifacts with package badges](/azure/devops/artifacts/package-badges)
+- [Tutorial: How to use upstream sources](/azure/devops/artifacts/tutorials/protect-oss-packages-with-upstream-sources)
+- [Share packages publicly](/azure/devops/artifacts/tutorials/share-packages-publicly)
 
 ## Boards
 
-### New articles
+### Updated articles
 
-- [Configure your backlog view in Azure Boards](/azure/devops/boards/backlogs/configure-your-backlog-view)
-- [Move work items from one team to another team](/azure/devops/boards/work-items/move-work-items)
+- [Resolve Azure DevOps Office integration issues](/azure/devops/boards/backlogs/office/tfs-office-integration-issues)
+- [Remove, delete, or restore work items in Azure Boards](/azure/devops/boards/backlogs/remove-delete-work-items)
+- [Plan and track dependencies using the Dependency Tracker](/azure/devops/boards/extensions/dependency-tracker)
+- [Query by date or current iteration in Azure Boards](/azure/devops/boards/queries/query-by-date-or-current-iteration)
+- [Use an index to query quick reference data in Azure Boards and Azure DevOps](/azure/devops/boards/queries/query-index-quick-ref)
+- [Work Item Query Language (WIQL) syntax reference](/azure/devops/boards/queries/wiql-syntax)
+- [Upload or download a process template](/azure/devops/boards/work-items/guidance/manage-process-templates)
+
+## Developer resources
 
 ### Updated articles
 
-- [Define features and epics, organize your product and portfolio backlogs in Azure Boards](/azure/devops/boards/backlogs/define-features-epics)
-- [Display rollup progress or totals in Azure Boards](/azure/devops/boards/backlogs/display-rollup)
-- [Connect Azure Boards to an Office client](/azure/devops/boards/backlogs/office/track-work)
-- [Query by assignment or workflow changes in Azure Boards](/azure/devops/boards/queries/query-by-workflow-changes)
-- [Define a work item query in Azure Boards](/azure/devops/boards/queries/using-queries)
-
-## Organizations
-
-### Updated articles
-
-- [Export a list of users and their access levels](/azure/devops/organizations/security/export-users-audit-log)
-- [Set work tracking permissions](/azure/devops/organizations/security/set-permissions-access-work-tracking)
-- [Create or add a team](/azure/devops/organizations/settings/add-teams)
-- [Naming restrictions and conventions](/azure/devops/organizations/settings/naming-restrictions)
-- [Set user preferences](/azure/devops/organizations/settings/set-your-preferences)
+- [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint)
 
 ## Pipelines
 
 ### New articles
 
-- [Informational runs](/azure/devops/pipelines/process/information-run)
+- [Configure JavaScript for Azure Pipelines](/azure/devops/pipelines/ecosystems/configure-javascript)
+- [Set secret variables](/azure/devops/pipelines/process/set-secret-variables)
 
 ### Updated articles
 
-- [Deploy to Azure Web App for Containers](/azure/devops/pipelines/apps/cd/deploy-docker-webapp)
-- [Deploy to IIS servers with Azure Pipelines and WinRM](/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-winrm)
-- [Build and test Go projects](/azure/devops/pipelines/ecosystems/go)
-- [Use Azure Key Vault secrets in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault)
-- [Package: NuGet Authenticate](/azure/devops/pipelines/tasks/package/nuget-authenticate)
+- [Run a self-hosted agent in Docker](/azure/devops/pipelines/agents/docker)
+- [Deploy a web app to an NGINX web server running on a Linux Virtual Machine (Classic)](/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups)
+- [Build Java apps](/azure/devops/pipelines/ecosystems/java)
+- [Quickstart - Use Azure Pipelines to build and publish a Node.js package](/azure/devops/pipelines/ecosystems/javascript)
+- [Build and test PHP apps](/azure/devops/pipelines/ecosystems/php)
+- [Build Azure Repos Git or TFS Git repositories](/azure/devops/pipelines/repos/azure-repos-git)
+
+## Project
+
+### Updated articles
+
+- [Manage or enable features](/azure/devops/project/navigation/preview-features)
 
 ## Report
 
 ### New articles
 
+- [View the OData query behind an Analytics report or widget](/azure/devops/report/extend-analytics/view-odata-query-analytics-report)
+
+### Updated articles
+
+- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
+- [Explore the Analytics OData metadata](/azure/devops/report/extend-analytics/analytics-metadata)
+- [Query work tracking data using Analytics](/azure/devops/report/extend-analytics/analytics-recipes)
+- [OData API versioning](/azure/devops/report/extend-analytics/odata-api-version)
 - [Analytics work item fields reference](/azure/devops/report/powerbi/analytics-fields-reference)
-- [Get Analytics insights comparable to those provided by SQL Reporting Services reports](/azure/devops/report/sql-reports/analytics-insights-comparable-sql-reports)
-- [Migrate to Analytics from SQL Reporting Services for Azure DevOps](/azure/devops/report/sql-reports/migration-guide)
 
 ## Repos
 
 ### Updated articles
 
-- [Ignore file changes with Git](/azure/devops/repos/git/ignore-files)
-- [Undo changes](/azure/devops/repos/git/undo)
-- [Check in your work to the team's codebase](/azure/devops/repos/tfvc/check-your-work-team-codebase)
-- [Compare files using Team Foundation Version Control](/azure/devops/repos/tfvc/compare-files)
-- [Merge folders and files in Azure Repos](/azure/devops/repos/tfvc/merge-folders-files)
-- [Develop and share your code in Team Foundation Version Control using Visual Studio](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
-- [Use labels to take a snapshot of your files in Azure Repos](/azure/devops/repos/tfvc/use-labels-take-snapshot-your-files)
-
-## Service-hooks
-
-### Updated articles
-
-- [Integrate with service hooks](/azure/devops/service-hooks/overview)
+- [Review history](/azure/devops/repos/git/review-history)
+- [Review pull requests](/azure/devops/repos/git/review-pull-requests)
 
 ## GitHub issue content updates
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31).
 
-- [Note section verbiage #12338](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12338)
-- [Repetition #12333](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12333)
-- [It's very hard to find nuget.org url #12324](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12324)
-- [Wildcards for caching folders #12300](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12300)
-- [Wiki Stakeholder Access #12273](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12273)
-- [error in example #12267](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12267)
-- [SOAP is shown but not covered #12251](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12251)
-- [I cannot locate documentation for "regenerate token" function. #12123](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12123)
-- [Explain what happens with empty path in NUGET_PACKAGES variable #12037](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12037)
-- [Output of `convertToJson` funtion is not using valid JSON syntax #11983](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11983)
-- [Steps are only for YAML (no steps for Classic?) #11964](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11964)
-- [I cannot call the DELETE REST API as documented here to remove a Wiki #11938](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11938)
-- [Limit visibility within people pickers: Warning statement #11892](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11892)
-- [Improve Mermaid Syntax Documentation #11787](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11787)
-- [Multiple mistakes in the article #11781](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11781)
-- [Artifacts not listed on the correct Access Levels pages in Azure DevOps Server 2020 #11688](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11688)
-- [External guest access did not exist #11681](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11681)
-- [Language settings not clear #11659](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11659)
-- [Feedback - Incorrect information for Azure DevOps Server 2020 #11620](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11620)
-- [Handling of the Azure DevOps organization resource left visible in the Azure Portal after changing billing subscription #11608](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11608)
-- [Using parametereless VssClientCredentialStorage constructor in code example is not valid #11574](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11574)
-- [Surprising error when running Install-Module with password instead of PAT #10813](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10813)
-- [Only registering the repository does not work! #8145](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8145)
-
+- [Link to https://visualstudio.com/ is not valid anymore #12408](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12408)
+- [Incorrect or outdated Link #12385](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12385)
+- [Basically dead in the water #12374](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12374)
+- [Typo #12366](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12366)
+- [Compatible ServiceNow version list update  #12359](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12359)
+- [Mistakes in scripts for Azure SQL database deployment #12353](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12353)
+- [Grammar (extra word) #12343](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12343)
+- [Asterisk does not work for packages in Release view #12339](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12339)
+- [Download packages asterisk for latest version do not work in @local release #12337](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12337)
+- [Page Is Incorrect - System.DefaultWorkingDirectory CAN be used in templates #12330](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12330)
+- [Some parts are confusing #12322](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12322)
+- [Page not available for on-prem? #12272](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12272)
+- [Problem with React and Vue build sample #12223](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12223)
+- [Pls update this documentation page and provide information on how to debug packer Azure Devops pipeline task #12125](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12125)
+- [Missing a piece in the 'Set an output variable in a future job' section. #12119](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12119)
+- [Arguments in the Arguments section won't match the YAML snippet #12049](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12049)
+- [Following docs results in indefinitely growing cache #12044](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12044)
+- [Free Microsoft-hosted parallel jobs can only run for up 60 minutes #12004](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12004)
+- [documentation mentions 2 npmrc files in the "project setup section", but only refers to one npmrc file in the "credentials setup section". Don't know which npmrc file to modify in the "credentials setup" section #11935](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11935)
+- [Expound upon the concepts of Nature, Risk and Quality of change #11902](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11902)
+- [PublishSymbols@2 task documentation is missing `--indexableFileFormats` parameter #11843](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11843)
+- [Searching Upsteam Nuget.org Repository #10196](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10196)
+- [Needs clarification: Set up credentials for scoped registry #8892](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8892)
+- [How can we force the feeds to refresh? #8382](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8382)
+- [Pipeline and resource identifiers need additional clarity #7276](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7276)
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (4)
-- [bilalgonen](https://github.com/bilalgonen) - Bilal Gonen (1)
-- [bjompen](https://github.com/bjompen) - Björn Sundling (1)
-- [BobBuildingCode](https://github.com/BobBuildingCode) (1)
-- [flcdrg](https://github.com/flcdrg) - David Gardiner (1)
-- [icnocop](https://github.com/icnocop) - Rami (1)
-- [itsayushaarav](https://github.com/itsayushaarav) - Ayush Aarav (1)
-- [malpaniHMC](https://github.com/malpaniHMC) (1)
-- [marahimipostat](https://github.com/marahimipostat) (1)
-- [MAYousuf](https://github.com/MAYousuf) - Mohamed Yousuf (1)
-- [mburleigh](https://github.com/mburleigh) - Matthew Burleigh (1)
-- [NenoLoje](https://github.com/NenoLoje) - Neno Loje (1)
-- [proudmonkey](https://github.com/proudmonkey) - Vincent Maverick Durano (1)
-- [SimonAlling](https://github.com/SimonAlling) - Simon Alling (1)
-- [techch01](https://github.com/techch01) - Tariq ECHCHAITAMI (1)
-- [vslee](https://github.com/vslee) - Victor Lee (1)
-- [wangyoutian](https://github.com/wangyoutian) - wyt@nilnul (1)
+- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (2)
+- [sguitardude](https://github.com/sguitardude) (2)
+- [badsyntax](https://github.com/badsyntax) - Richard Willis (1)
+- [davemanton](https://github.com/davemanton) - Dave Manton (1)
+- [kaito-ms](https://github.com/kaito-ms) (1)
+- [kerimeredith](https://github.com/kerimeredith) - Keri Meredith (1)
+- [lorrinferdinand](https://github.com/lorrinferdinand) (1)
+- [Oxymoron290](https://github.com/Oxymoron290) - Timothy Sturm (1)
+- [patest-dev](https://github.com/patest-dev) (1)
+- [SamGrantham](https://github.com/SamGrantham) - Sam Grantham (1)
