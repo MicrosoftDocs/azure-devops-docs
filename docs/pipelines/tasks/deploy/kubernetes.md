@@ -255,7 +255,7 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>versionOrLocation</code><br/>Version</td><td>(Optional) Explicitly choose a version of kubectl to be used, or specify the path (location) of the kubectl binary.<br/>Default value: version</td></tr>
-<tr><td><code>versionSpec</code><br/>Version spec</td><td>(Required if versionOrLocation == version) The version of the kubectl to be used. Examples: <strong>1.7.0</strong>, <strong>1.x.0</strong>, <strong>4.x.0</strong>, <strong>6.10.0</strong>, <strong>&gt;=6.10.0</strong><br/>Default value: 1.7.0</td></tr>
+<tr><td><code>versionSpec</code><br/>Version spec</td><td>(Required if versionOrLocation == version) The version of the kubectl to be used. Examples: <strong>1.7.0</strong>, <strong>1.x.0</strong>, <strong>4.x.0</strong>, <strong>6.10.0</strong>, <strong>&gt;=6.10.0</strong><br/>Default value: 1.13.2</td></tr>
 <tr><td><code>checkLatest</code><br/>Check for latest version</td><td>(Optional) If true, a check for the latest version of kubectl is performed.<br/>Default value: false</td></tr>
 <tr><td><code>specifyLocation</code><br/>Specify location</td><td>(Required) Full path to the kubectl.exe file.</td></tr>
 <tr><td><code>cwd</code><br/>Working directory</td><td>(Optional) Working directory for the Kubectl command.<br/>Default value: $(System.DefaultWorkingDirectory)</td></tr>
