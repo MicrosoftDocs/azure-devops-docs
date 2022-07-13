@@ -1,5 +1,5 @@
 ---
-title: Track updates to a user story, bug, or other work item
+title: Follow changes to work
 titleSuffix: Azure Boards & Azure Repos
 description: Learn how to track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos.
 ms.custom: work-items, seodec18, cross-project 
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/13/2022
 ---
 
-# Tutorial: Track a user story, bug, issue, or other work item or pull request  
+# Tutorial: Follow changes made to a user story, bug, or other work item or pull request  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -154,9 +154,9 @@ You can also view and manage work that you're following from your Project pages.
 
 ## Query work items that you're following
 
-You can use the **\@Follows** macro in a query to filter a list based on work items you're following along with other query filters. 
+You can use the **\@Follows** macro in a work item query to filter a list based on work items you're following along with other query filters. 
 
-For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **\@Follows** macro.  
+For example, the following query shows how to query across all projects for active work items that you're following. You use the **ID** field and the **In** operator with the **\@Follows** macro.  
 
 
 :::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
