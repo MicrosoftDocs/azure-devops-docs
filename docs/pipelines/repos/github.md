@@ -471,16 +471,12 @@ By default with GitHub pipelines, secrets associated with your build pipeline ar
 
 To bypass this precaution on GitHub pipelines, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
 
-:::moniker range="> azure-devops-2020"
-
 > [!NOTE]
 > When you enable fork builds to access secrets, Azure Pipelines by default restricts the access token used for fork builds.
 > It has more limited access to open resources than a normal access token.
 > To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
 
 For more information, see [Repository protection - Forks](../security/repos.md#forks).
-
-:::moniker-end
 
 #### Important security considerations
 
