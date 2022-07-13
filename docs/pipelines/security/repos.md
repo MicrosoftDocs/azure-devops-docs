@@ -37,7 +37,7 @@ Don't turn off this latter protection.
 
 :::moniker range="> azure-devops-2020"
 
-:::image type="content" source="media/fork-build-protection.png" alt-text="Fork build protection UI.":::
+:::image type="content" source="media/fork-build-protection.png" alt-text="Screenshot of fork build protection UI.":::
 
 > [!NOTE]
 > When you enable fork builds to access secrets, Azure Pipelines by default restricts the access token used for fork builds.
@@ -48,7 +48,7 @@ Don't turn off this latter protection.
 
 :::moniker range="<= azure-devops-2020"
 
-:::image type="content" source="media/fork-build-protection-2020.png" alt-text="Fork build protection UI in Azure DevOps Server 2020 and lower.":::
+:::image type="content" source="media/fork-build-protection-2020.png" alt-text="Screenshot of fork build protection UI in Azure DevOps Server 2020 and lower.":::
 
 > [!NOTE]
 > Even if you enable fork builds to access secrets, Azure Pipelines restricts the access token used for fork builds.
