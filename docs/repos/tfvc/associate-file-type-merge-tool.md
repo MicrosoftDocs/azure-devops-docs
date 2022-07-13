@@ -27,9 +27,10 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
 #### Developer command prompt
 
-1.  In Windows, choose **Start**, **All Programs**, **Visual Studio <version>**, **Developer Command Prompt**.  
-2. Type **tf diff /configure**.  
-3.  In the **Configure User Tools** dialog box, choose **Add**.
+1.  In Windows, choose **Start**, **All Programs**, **Visual Studio 
+2. (version)**, **Developer Command Prompt**.  
+3. Type **tf diff /configure**.  
+4.  In the **Configure User Tools** dialog box, choose **Add**.
 
     The **Configure Tool** dialog box appears.
 
