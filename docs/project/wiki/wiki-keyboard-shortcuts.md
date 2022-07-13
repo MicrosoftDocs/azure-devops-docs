@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: conceptual
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 07/05/2022 
+ms.date: 07/13/2022 
 ---
 
 # Keyboard shortcuts for managing Wiki pages
