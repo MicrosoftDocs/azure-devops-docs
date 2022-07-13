@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 07/07/2022
 ---
 
 # Add, rename, and delete dashboards in Azure DevOps
@@ -125,6 +125,10 @@ If you need to switch to a different project, select the :::image type="icon" so
 ## Add a dashboard 
 
 Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
+
+
+> [!NOTE]
+> There is a limit of 500 dashboards per project. You'll receive an error message if you try to create a dashboard beyond that limit. Delete unused dashboards to resolve the error. 
 
 ::: moniker range=">= azure-devops-2020"
 

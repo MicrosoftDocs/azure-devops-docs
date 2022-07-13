@@ -772,11 +772,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/package/nuget/tfs.md",
-      "redirect_url": "/azure/devops/artifacts/nuget/tfs",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/package/nuget/unlist-delete.md",
       "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/07/2022
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -42,6 +42,9 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 Tags should be 400 characters or less and not contain separators such as a `,` (comma), `;` (semicolon), or other formatting character. 
 
+> [!TIP]
+> We recommend that you don't use the `@` character in a tag. Tags that start with the `@` character can't be used in a work item query. The `@` character signifies a macro within a query and therefore the tag isn't recognized as a tag.  
+
 
 From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
 
@@ -73,7 +76,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 > ![Edit work items dialog, Bulk add to several work items.](media/add-tags/bulk-add-tags.png) 
 
 > [!NOTE]   
-> Bulk modify of tags from the Visual Studio client isn't supported. 
+> Bulk modify of tags from the Visual Studio or other supported clients isn't supported. 
 
 
 <a id="query"></a>
@@ -83,7 +86,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
 
 > [!TIP]    
-> You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
+> You can use the **Contains** or **Does Not Contain** operators. Tags that start with the `@` character can't be used in a work item query as the query editor interprets the `@` character as a macro.  To learn more about queries, see [Create managed queries](using-queries.md). 
 
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
@@ -165,6 +168,10 @@ To group a **Chart for Work Items** widget by tags, complete the same steps prov
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
+### Marketplace extension
+
+- [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2)
+
 ### Limits on the number of tags
 
 While no hard limit exists, creating more than 100,000 tags for a project collection can negatively impact performance. Also, the autocomplete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
@@ -184,6 +191,6 @@ Limit queries to fewer than 25 tags. More than that amount and the query will li
 
 ### Add tags to the default column view on the product backlog 
 
-To add the Tags field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+To add the **Tags** field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end

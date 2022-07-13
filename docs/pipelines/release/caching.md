@@ -20,20 +20,20 @@ Caching is currently supported in CI and deployment jobs, but not classic releas
 
 ### When to use artifacts versus caching
 
-Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) perform similar functions but are designed for different scenarios and should not be used interchangeably. In general:
+Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) perform similar functions but are designed for different scenarios and shouldn't be used interchangeably.
 
 * **Use pipeline artifacts** when you need to take specific files produced in one job and share them with other jobs (and these other jobs will likely fail without them).
 
-* **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
+* **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files won't impact the job's ability to run).
 
 > [!NOTE]
-> Caching is currently free, and caches are stored in Azure blob storage.
+> Pipeline caching and pipeline artifacts are free for all tiers (free and paid). see [Artifacts storage consumption](../../artifacts/artifact-storage.md) for more details.
 
 ## Cache task
 
-Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
+Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job.
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that wasn't skipped. This step is responsible for saving the cache.
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
@@ -53,7 +53,7 @@ The [Cache task](../tasks/utility/cache.md) has two required arguments: *key* an
 Fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
 * **File paths**: <br>
-Path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
+Path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" doesn't exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
@@ -89,11 +89,11 @@ steps:
 
 In this example, the cache key contains three parts: a static string ("yarn"), the OS the job is running on since this cache is unique per operating system, and the hash of the `yarn.lock` file that uniquely identifies the set of dependencies in the cache.
 
-On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key does not exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
+On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key doesn't exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
 
 #### Restore keys
 
-`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fallback to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
+`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fall back to another key in the case that a `key` doesn't yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
 
 #### Required software on self-hosted agent
 
@@ -103,12 +103,11 @@ On the first run after the task is added, the cache step will report a "cache mi
 |BSD Tar | No | No | Required |
 |7-Zip    | Recommended | No | No |
 
-The above executables need to be in a folder listed in the PATH environment variable.
-Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
+The above executables need to be in a folder listed in the PATH environment variable. Keep in mind that the hosted agents come with the software included, this is only applicable for self-hosted agents.
 
 **Example**:
 
-Here is an example on how to use restore keys by Yarn:
+Here is an example of how to use restore keys by Yarn:
 
 ```yaml
 variables:
@@ -127,7 +126,7 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
-In this example, the cache task will attempt to find if the key exists in the cache. If the key does not exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
+In this example, the cache task will attempt to find if the key exists in the cache. If the key doesn't exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
 This will attempt to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
 For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
 If there is a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
@@ -244,8 +243,13 @@ See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_confi
 Caching Docker images dramatically reduces the time it takes to run your pipeline.
 
 ```yaml
+variables:
+  repository: 'myDockerImage'
+  dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
+  tag: '$(Build.BuildId)'
+
 pool:
-  vmImage: 'Ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 steps:
   - task: Cache@2
     displayName: Cache task
@@ -259,9 +263,18 @@ steps:
     displayName: Docker restore
     condition: and(not(canceled()), eq(variables.CACHE_RESTORED, 'true'))
 
+  - task: Docker@2
+    displayName: 'Build Docker'
+    inputs:
+      command: 'build'
+      repository: '$(repository)'
+      dockerfile: '$(dockerfilePath)'
+      tags: |
+        '$(tag)'
+
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache $(repository):$(tag)
     displayName: Docker save
     condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
 ```

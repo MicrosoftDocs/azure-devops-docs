@@ -103,41 +103,42 @@ Aside from using the feed's user interface, you can also configure the upstream 
 
 * * *
 
-## Allow external versions with PowerShell
+## Allow external versions using PowerShell
 
-To successfully execute the next steps in this section, you will need to [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
+1. [Create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read, write, & manage** permissions.
 
-:::image type="content" source="media\packaging-permissions.png" alt-text="select packaging permissions":::
+    :::image type="content" source="media\packaging-permissions.png" alt-text="Screenshot showing how to select packaging permissions.":::
 
-In an elevated PowerShell command prompt window, run the following command to create an environment variable for your personal access token.
+1. Create an environment variable for your personal access token.
 
-```PowerShell
-$env:PATVAR = "YOUR_PAT_GOES_HERE"
-```
+    ```PowerShell
+    $env:PATVAR = "YOUR_PERSONAL_ACCESS_TOKEN"
+    ```
 
-The following commands will convert your personal access token to baser64 encoded string and construct the HTTP request header.
+1. Convert your personal access token to baser64 encoded string and construct the HTTP request header.
 
-```PowerShell
-$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
-$headers = @{
-    Authorization = "Basic $token"
-```
+    ```PowerShell
+    $token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$env:PatVar")))
+    $headers = @{
+        Authorization = "Basic $token"
+    }
+    ```
 
-Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to construct the `$Url` variable. (Project-scoped feed example: /pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
+1. Construct your endpoint url. Example: //pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/pkg1.0.0.nupkg/upstreaming?api-version=6.1-preview.1
 
-- **Project-scoped feed**:
+    - **Project-scoped feed**:
 
-```PowerShell
-$url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
-```
+        ```PowerShell
+        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
+        ```
 
-- **Organization-scoped feed**:
+    - **Organization-scoped feed**:
 
-```PowerShell
-$url = "https://pkgs.dev.azure.com/{OrganizationName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
-```
+        ```PowerShell
+        $url = "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_apis/packaging/feeds/<FEED_NAME>/<PROTOCOL>/packages/<PACKAGE_NAME>/upstreaming?api-version=6.1-preview.1"
+        ```
 
-### Get upstreaming behavior
+#### [Get upstreaming behavior](#tab/get/)
 
 Run the following command to retrieve the upstream behavior state of your package. `$url` and `$headers` are the same variables we used in the previous section.
 
@@ -145,7 +146,7 @@ Run the following command to retrieve the upstream behavior state of your packag
  Invoke-RestMethod -Uri $url -Headers $headers
  ```
 
-### Set upstreaming behavior
+#### [Set upstreaming behavior](#tab/set/)
 
 Run the following commands to allow externally sourced versions for your package. This will set `versionsFromExternalUpstreams` to `AllowExternalVersions`, and will use the `$url` and `$headers` variables to query the REST API.
 
@@ -158,7 +159,7 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 > [!NOTE]
 > In some cases, setting up the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
 
-### Clear upstreaming behavior
+#### [Clear upstreaming behavior](#tab/clear/)
 
 To clear the upstream behavior for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
 
@@ -167,6 +168,8 @@ $body = '{"versionsFromExternalUpstreams": "Auto"}'
 
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
+
+* * *
 
 ## Related articles
 
