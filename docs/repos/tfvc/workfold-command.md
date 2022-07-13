@@ -5,7 +5,7 @@ description: Workfold command creates, modifies, or displays information about t
 ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

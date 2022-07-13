@@ -5,7 +5,7 @@ description: Learn how to check in your work to the team's codebase in Azure Rep
 ms.assetid: 325ef815-f163-4b3c-8fcb-2b7faf09c83d
 ms.technology: devops-code-tfvc
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 06/30/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ---

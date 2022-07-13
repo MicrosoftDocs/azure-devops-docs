@@ -5,7 +5,7 @@ description: Undo Changes in Another User's Workspace
 ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

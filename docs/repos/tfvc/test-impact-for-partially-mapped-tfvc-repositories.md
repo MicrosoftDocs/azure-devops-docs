@@ -4,7 +4,7 @@ description: Test Impact for partially mapped TFVC repositories in TFS/Azure Dev
 ms.assetid: 31825137-1d76-4bf5-a30b-35502c59e44c
 ms.topic: article
 ms.technology: devops-code-tfvc
-ms.date: 03/08/2018
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

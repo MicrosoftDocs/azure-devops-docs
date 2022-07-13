@@ -5,7 +5,7 @@ description: Branch folders and files
 ms.assetid: 437854e0-3f64-4d68-8e18-748ea7f889aa
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 05/12/2017
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

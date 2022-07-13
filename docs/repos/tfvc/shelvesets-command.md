@@ -5,7 +5,7 @@ description: Shelvesets Command
 ms.assetid: 731a4339-1ba7-45ab-a551-51c3f4ae158c
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
