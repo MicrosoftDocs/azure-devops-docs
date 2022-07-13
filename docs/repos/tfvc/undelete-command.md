@@ -5,7 +5,7 @@ description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

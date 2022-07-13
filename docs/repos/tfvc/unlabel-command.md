@@ -5,7 +5,7 @@ description: Learn how to use the unlabel command to remove an item from an exis
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

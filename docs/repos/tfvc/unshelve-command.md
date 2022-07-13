@@ -5,7 +5,7 @@ description: Use the unshelve command to restore shelved file revisions, check-i
 ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

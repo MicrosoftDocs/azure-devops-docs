@@ -5,7 +5,7 @@ description: Roll back changesets
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
