@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/24/2022
+ms.date: 07/13/2022
 ---
 
 # View and add work items using the Work Items page  
@@ -285,7 +285,7 @@ Queries provide other features that you can use, including:
 * Apply work item templates
 * And more
 
-For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
+For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
 
 
 <a id="page-controls">  </a>
