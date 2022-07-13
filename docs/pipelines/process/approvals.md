@@ -247,7 +247,7 @@ Using the business hours check, you can control the time for start of stage exec
 ### How can I take advance approvals for a stage scheduled to run in future?
 This scenario can be enabled 
 1.	The business hours check enables all stages deploying to a resource to be scheduled for execution between the time window
-2.	When approvals configured on the same resource, then the stage would wait for approvals before starting.
+2.	When approvals are configured on the same resource, the stage would wait for approvals before starting.
 3.	You can configure both the checks on a resource. The stage would wait on approvals and business hours. It would start in the next scheduled window after approvals are complete. 
 
 ### Can I wait for completion of security scanning on the artifact being deployed?
