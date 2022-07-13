@@ -17904,6 +17904,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/organizations/security/setup-ad-aad.md",
       "redirect_url": "/azure/devops/organizations/security/about-permissions#aad",
       "redirect_document_id": false
