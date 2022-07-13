@@ -26,7 +26,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
     1.  In Visual Studio, on the menu bar, choose **Tools**, **Options**.  
     2.  In the **Options** dialog box, expand **Source Control**, choose **Visual Studio Team Foundation Server**, and then choose **Configure User Tools**.  
     --or--  
-    1.  In Windows, choose **Start**, **All Programs**, **Visual Studio <version>**, **Developer Command Prompt**.  
+    1.  In Windows, choose **Start**, **All Programs**, **Visual Studio (version)**, **Developer Command Prompt**.  
     2.  Type **tf diff /configure**.  
 2.  In the **Configure User Tools** dialog box, choose **Add**.
 
