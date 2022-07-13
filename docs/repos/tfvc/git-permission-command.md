@@ -5,7 +5,7 @@ description: Git permission command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date:  01/07/2019
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

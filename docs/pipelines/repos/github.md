@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 07/12/2022
+ms.date: 07/13/2022
 monikerRange: azure-devops
 ---
 
@@ -470,6 +470,13 @@ By default with GitHub pipelines, secrets associated with your build pipeline ar
   * Build [variables](../process/variables.md#secret-variables) marked **secret**
 
 To bypass this precaution on GitHub pipelines, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
+
+> [!NOTE]
+> When you enable fork builds to access secrets, Azure Pipelines by default restricts the access token used for fork builds.
+> It has more limited access to open resources than a normal access token.
+> To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
+
+For more information, see [Repository protection - Forks](../security/repos.md#forks).
 
 #### Important security considerations
 
