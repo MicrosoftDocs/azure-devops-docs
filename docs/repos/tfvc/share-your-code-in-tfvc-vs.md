@@ -6,7 +6,7 @@ ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
 ms.technology: devops-code-tfvc
 ms.topic: quickstart
-ms.date: 05/17/2022
+ms.date: 07/13/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ---
