@@ -5,7 +5,7 @@ description: View file changes using annotate
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

@@ -5,7 +5,7 @@ description: Learn how to set and enforce quality gates for TFVC
 ms.assetid: bdc5666e-6cf0-45b2-a0a1-133c3f61e852
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

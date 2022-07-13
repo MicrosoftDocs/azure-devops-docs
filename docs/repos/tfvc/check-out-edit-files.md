@@ -5,7 +5,7 @@ description: Check out and edit files
 ms.assetid: eb404d63-c448-4994-9416-3e6d50ec554a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

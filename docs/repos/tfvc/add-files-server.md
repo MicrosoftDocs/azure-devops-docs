@@ -5,7 +5,7 @@ description: Add files to the server
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

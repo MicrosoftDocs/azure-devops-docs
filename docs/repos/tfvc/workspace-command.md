@@ -5,7 +5,7 @@ description: Workspace command
 ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
