@@ -6,7 +6,7 @@ ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
 ms.technology: devops-code-tfvc
 ms.topic: tutorial
-ms.date: 07/07/2022
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Before you check in your code, you can use Visual Studio to ask someone else from your team to review it. Your request will show up in his Team Explorer, in the **My Work** page.
+Before you check in your code, you can use Visual Studio to ask someone else from your team to review it. Your request will show up in their Team Explorer, in the **My Work** page.
 
 To ask for a code review, make sure you have [shared your code in TFVC](share-your-code-in-tfvc-vs.md).
 

@@ -5,7 +5,7 @@ description: Delete or restore files and folders using Team Foundation Version c
 ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/05/2016
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

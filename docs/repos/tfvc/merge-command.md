@@ -5,7 +5,7 @@ description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 10/18/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

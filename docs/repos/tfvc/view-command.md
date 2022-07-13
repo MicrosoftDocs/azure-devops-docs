@@ -5,7 +5,7 @@ description: Retrieve a file using the TFVC View Command for Azure DevOps Servic
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
