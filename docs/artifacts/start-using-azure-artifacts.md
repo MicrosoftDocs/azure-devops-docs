@@ -23,9 +23,9 @@ Azure Artifacts enables developers to share their code efficiently and manage al
 
 ::: moniker range="tfs-2018"
 
-## Install Azure Artifacts in TFS
+## Install Azure Artifacts
 
-Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension is removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts comes pre-installed in TFS 2018. If the extension is removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ## Assign licenses in TFS
 
