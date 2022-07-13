@@ -3,7 +3,7 @@ title: Secure repositories
 description: Securing repos and forks
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
 ms.reviewer: vijayma
-ms.date: 06/30/2022
+ms.date: 07/13/2022
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -35,12 +35,29 @@ To protect your products from contributed code, consider the following recommend
 By default, your pipelines are configured to build forks, but secrets and protected resources are not made available to the jobs in those pipelines by default.
 Don't turn off this latter protection.
 
-![Screenshot of fork build protection UI](media/fork-build-protection.png)
+:::moniker range="> azure-devops-2020"
+
+:::image type="content" source="media/fork-build-protection.png" alt-text="Screenshot of fork build protection UI.":::
+
+> [!NOTE]
+> When you enable fork builds to access secrets, Azure Pipelines by default restricts the access token used for fork builds.
+> It has more limited access to open resources than a normal access token.
+> To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
+
+:::moniker-end
+
+:::moniker range="<= azure-devops-2020"
+
+:::image type="content" source="media/fork-build-protection-2020.png" alt-text="Screenshot of fork build protection UI in Azure DevOps Server 2020 and lower.":::
 
 > [!NOTE]
 > Even if you enable fork builds to access secrets, Azure Pipelines restricts the access token used for fork builds.
 > It has more limited access to open resources than a normal access token.
 > You cannot disable this protection.
+
+:::moniker-end
+
+
 
 ### Consider manually triggering fork builds
 
