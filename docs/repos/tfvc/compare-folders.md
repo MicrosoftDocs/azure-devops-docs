@@ -5,7 +5,7 @@ description: Compare folders
 ms.assetid: 9c894c51-c34c-4c03-a840-5e485dbbc55d
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

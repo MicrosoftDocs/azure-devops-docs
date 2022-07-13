@@ -5,7 +5,7 @@ description: Displays all or some of the contents of the server for Team Foundat
 ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

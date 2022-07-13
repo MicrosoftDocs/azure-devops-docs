@@ -5,7 +5,7 @@ description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

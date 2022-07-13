@@ -5,7 +5,7 @@ description: Use Source Control Explorer to manage files under version control
 ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -24,7 +24,7 @@ If you need to work with your Visual Studio solution files outside of version co
 
 ## Open Source Control Explorer
 
-Source Control Explorer is available in both Visual Studio 2013 and 2015, but isn't opened by default when working with a project managed in TFVC. You can open the Source Control Explorer window:
+Source Control Explorer is available in Visual Studio, but isn't opened by default when working with a project managed in TFVC. You can open the Source Control Explorer window:
 
 -   From the Team Explorer home page (Keyboard: Ctrl + 0, H), choose **Source Control Explorer**.
 

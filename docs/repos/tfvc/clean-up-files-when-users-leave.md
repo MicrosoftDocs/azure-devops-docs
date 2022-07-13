@@ -5,7 +5,7 @@ description: Learn how to clean up TFVC files when users leave.
 ms.assetid: 7e8249cc-2933-4caa-8bee-ea93a3aff01a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 
