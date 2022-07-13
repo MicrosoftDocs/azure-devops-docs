@@ -189,7 +189,7 @@ The behavior of any other stages that attempt to take a lock is configured by th
 To use exclusive lock check with `sequential` deployments or `runLatest`, follow these steps:
 
  1. Enable the exclusive lock check on the environment (or another protected resource).
- 2. In the YAML file for the pipeline, specify a property called `lockBehavior`. This can be specified for the whole pipeline or for a given stage:
+ 2. In the YAML file for the pipeline, specify a property called `lockBehavior`. This can be specified for the whole [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) or for a given [stage](/azure/devops/pipelines/yaml-schema/stages-stage):
 
 Set on a stage:
 
@@ -214,7 +214,7 @@ stages:
     - script: Hey!
 ```
 
-If you do not specify a `lockBehavior`, the default value of `runLatest` is used.
+If you do not specify a `lockBehavior`, the default value of `runLatest` is used. 
 
 :::moniker-end
 
