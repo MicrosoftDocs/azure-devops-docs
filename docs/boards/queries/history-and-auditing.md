@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 05/31/2022
+ms.date: 07/13/2022
 ---
 
 
@@ -136,6 +136,7 @@ An entry is made to the **History** field each time a work item is saved. To vie
 The history details shown depend on the platform, version, and client. 
 
 #### [Browser](#tab/browser/)
+
 <a id="team-services-tab" /> 
 <a id="team-services-view" /> 
 
@@ -156,6 +157,30 @@ To view only the comments that were added to the log, choose the **Discussion On
 ![Screenshot of Work item form, Team Explorer, History tab.](media/ALM_HA_AllChanges.png) 
 
 * * *
+
+<a id="filter-history" /> 
+
+
+::: moniker range="azure-devops"
+
+## Filter the history view 
+
+The **History** tab is designed to track all changes made to a work item to support full traceability. The long revision history that results can make it difficult to understand when changes happen to specific fields. To quickly find revisions made to a specific field or by specific people, filter the history view. 
+
+You enable the filter feature by choosing :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Toggle filter**.
+
+:::image type="content" source="media/history-audit/history-filter.png" alt-text="Screenshot of Work item form, History tab, Web portal, history filter enabled.":::
+
+To review updates by specific people, select their names from the **Updated by** menu. 
+
+:::image type="content" source="media/history-audit/filter-history-people.png" alt-text="Screenshot of Work item form, History tab, Updated by select fields.":::
+
+To review updates made to one or more fields, select the fields from the **Fields** menu. 
+
+:::image type="content" source="media/history-audit/filter-history-field-assigned-to.png" alt-text="Screenshot of Work item form, History tab, Updated by select fields.":::
+
+::: moniker-end
+
 
 <a id="fields" />
 
@@ -319,7 +344,6 @@ You can use the following fields to filter queries and create reports. Several o
 >     ```
 
 ## Related articles
-
 
 - [Query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   

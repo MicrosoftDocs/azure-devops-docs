@@ -31,170 +31,49 @@ Some preview features provide access to entire new functionality. Others, such a
 ::: moniker range="azure-devops-2020"
 
 There are a few features you or an administrator can enable or disable. Some  features provide access to entire new functionality, while others provide a change to the user interface.  
-
 ::: moniker-end
-
-
 
 ::: moniker range="azure-devops"
 
 The follow table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
 
 
----
-:::row:::
-   :::column span="3":::
-      **Preview features**
-   :::column-end:::
-   :::column span=".5"::: 
-      **Per user**
-   :::column-end:::
-   :::column span=".5"::: 
-      **Per organization**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
-      [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
-      [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
-      Dependency Tracker Preview Features (ignore this setting for now)  
-      [Experimental themes](#experimental-themes)  
-      [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-      &nbsp;  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
-      [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md)  
-      [Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)  
-      [New account manager](#account-manager)  
-      New Artifacts (Feeds) Experience (accessbility updates)  
-      [New Boards Hubs](https://devblogs.microsoft.com/devops/azure-boards-ux-modernization-public-preview/) 
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-      &nbsp;  
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
-      [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
-      [New service connections experience](../../pipelines/library/service-endpoints.md)  
-      [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
-      [New Teams page](../../organizations/settings/add-teams.md)  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
-      New Wiki experience  
-      [Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)  
-      [Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)  
-      [Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)   
-      [YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)
-   :::column-end:::
-   :::column span=".5":::
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️  
-   :::column-end:::
-:::row-end:::
----
-
+|**Preview features**|**Per user**|**Per organization**|
+|--------------------|--------------|-----------------|
+|[Analytics Views](../../report/powerbi/what-are-analytics-views.md)| ✔️ | ✔️ |  
+|[Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md) | ✔️ | ✔️ |   
+|Dependency Tracker Preview Features (ignore this setting) | ✔️ | ✔️ |   
+|[Experimental themes](#experimental-themes) | ✔️ | ✔️ |   
+|[Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  |   | ✔️ |  
+|[Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) | ✔️ | ✔️ |   
+|[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group) |   | ✔️ |   
+|[New account manager](#account-manager) | ✔️ | ✔️ |   
+|New Artifacts (Feeds) Experience (accessbility updates) | ✔️ | ✔️ |   
+|[New Boards Hubs](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview//) | ✔️ | ✔️ |  
+|[New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)| ✔️ | ✔️ |    
+|[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
+|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |    
+|[New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)| ✔️ | ✔️ |    
+|[New Teams page](../../organizations/settings/add-teams.md)| ✔️ | ✔️ |    
+|New Wiki experience| ✔️ | ✔️ |     
+|[Organization Permissions Settings Page v2](../../organizations/security/change-organization-collection-level-permissions.md)| ✔️ | ✔️ |     
+|[Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)| ✔️ | ✔️ |     
+|[Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ |      
+|[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
 
 ::: moniker-end
 
 
 ::: moniker range="azure-devops-2020"
-The follow table indicates those features that you can enable as a user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
+The following table indicates those features that you can enable as a user, project administrator, or project collection administrator. These preview features are only available to manage for Azure DevOps Server 2020 RTW. 
 
----
-:::row:::
-   :::column span="2":::
-      **Feature**
-   :::column-end:::
-   :::column span="1":::
-      **User**
-   :::column-end:::
-   :::column span="1":::
-      **Project**
-   :::column-end:::
-   :::column span="1":::
-      **Collection**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      [New service connections experience](../../pipelines/library/service-endpoints.md)    
-      [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)  
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-      &nbsp;   
-   :::column-end:::
-   :::column span="1":::
-      &nbsp;     
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
+|**Feature**|**User**|**Project** | **Collection**|
+|--------------------|--------------|-----------------||-----------------|
+|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ |   |  ✔️ |     
+|[Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)|   | ✔️ |  ✔️ |   
 
 ::: moniker-end
+ 
 
 ::: moniker range="azure-devops"
 
