@@ -476,7 +476,7 @@ To bypass this precaution on GitHub pipelines, enable the **Make secrets availab
 > [!NOTE]
 > When you enable fork builds to access secrets, Azure Pipelines by default restricts the access token used for fork builds.
 > It has more limited access to open resources than a normal access token.
-> To give fork builds have the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
+> To give fork builds the same permissions as regular builds, enable the **Make fork builds have the same permissions as regular builds** setting.
 
 For more information, see [Repository protection - Forks](../security/repos.md#forks).
 
