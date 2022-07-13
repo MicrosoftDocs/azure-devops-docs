@@ -845,14 +845,8 @@
           href: /xamarin/cross-platform/troubleshooting/component-nuget
         - name: Previous versions
           items:
-            - name: NuGet Installer 0.*
-              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
             - name: NuGet Restore 1.*
               href: tasks/package/nuget.md
-            - name: NuGet Packager 0.*
-              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0?view=tfs-2017&preserve-view=true
-            - name: NuGet Publisher 0.*
-              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-publisher-0?view=tfs-2017&preserve-view=true
             - name: NuGet Command 0.*
               href: tasks/package/nuget.md
             - name: Pip Authenticate 0.*
@@ -997,6 +991,16 @@
     - name: Use feature flags
       href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fpipelines%2ftoc.json
       displayName: feature-flags
+    - name: Legacy content
+      items:
+        - name: NuGet Packager 0.*
+          href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0?view=tfs-2017&preserve-view=true
+        - name: NuGet Publisher 0.*
+          href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-publisher-0?view=tfs-2017&preserve-view=true
+        - name: NuGet Installer 0.*
+          href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
+        - name: Deploy to AKS with Jenkins
+          href: /release/integrate-jenkins-pipelines-aks.md
 - name: Developer resources
   items:
     - name: REST API reference
