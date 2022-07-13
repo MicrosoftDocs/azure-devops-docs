@@ -5,7 +5,7 @@ description: Create and work with workspaces in TFVC
 ms.assetid: 1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 05/12/2017
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 

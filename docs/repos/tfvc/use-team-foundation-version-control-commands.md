@@ -5,7 +5,7 @@ description: Use Team Foundation version control commands
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

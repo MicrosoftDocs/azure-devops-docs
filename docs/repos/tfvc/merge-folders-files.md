@@ -5,7 +5,7 @@ description: Learn how to use the graphical user interface of Visual Studio to m
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.technology: devops-code-tfvc
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 07/13/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ---

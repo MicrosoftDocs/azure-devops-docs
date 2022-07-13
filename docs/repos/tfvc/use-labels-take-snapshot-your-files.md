@@ -5,7 +5,7 @@ description: Learn how labels let you take a snapshot of your files so that, at 
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
 ms.technology: devops-code-tfvc
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 07/13/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ---

@@ -5,7 +5,7 @@ description: Use the  Add command to add files to a TFVC repository.
 ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 
