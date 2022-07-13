@@ -29,8 +29,8 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker range=">= azure-devops-2019"
 
-- [Project Wiki](add-edit-wiki.md)
-- [Publish code as Wiki](publish-repo-to-wiki.md)
+- [Project wiki](add-edit-wiki.md)
+- [Publish code as wiki](publish-repo-to-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
@@ -54,7 +54,7 @@ You can provide guidance in the following areas using Markdown:
 ::: moniker-end
 
 > [!IMPORTANT]  
-> Not all Markdown syntax is supported across all features. Each section in this article identifies the features, and the syntax supported with the **Supported in** line.
+> Not all Markdown syntax is supported across all features. Each section in this article identifies the features and the syntax supported with the **Supported in** line.
 
 ## Headers
 
@@ -292,13 +292,13 @@ Console.WriteLine("Hello, World!");
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data with a
 clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
 
-- Place each table row on its own line
-- Separate table cells using the pipe character `|`
-- The first two lines of a table set the column headers and the alignment of elements in the table
-- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right)
-- To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere)  
-- Make sure to end each row with a CR or LF
-- A blank space is required before and after work item or pull request (PR) mentions inside a table cell
+- Place each table row on its own line.
+- Separate table cells using the pipe character `|`.
+- The first two lines of a table set the column headers and the alignment of elements in the table.
+- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right).
+- To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere).  
+- Make sure to end each row with a CR or LF.
+- A blank space is required before and after work item or pull request (PR) mentioned inside a table cell.
 
 **Example:**
 
@@ -654,14 +654,14 @@ To escape emojis, enclose them using the \` character.
 
 #### Supported in: Pull Requests | README files | Wikis
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field, or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or from the format pane in your wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or from the format pane in your wiki page.
 
 <img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" />        
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page, and it renders directly into your comment or wiki page.
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
-Attached image files render directly into your comment or wiki pages. After you save or update a comment, or wiki page with an attachment, you can see the attached image and select links to download attached files.
+The attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and select links to download the attached files.
 
 Attachments support the following file formats:
 
