@@ -3,7 +3,7 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.date: 10/11/2021
+ms.date: 07/13/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -75,6 +75,7 @@ A stage contains one or more [jobs](../process/phases.md). Each job runs on an a
 
 A pipeline defines the continuous integration and deployment process for your app. It's made up of one or more stages. It can be thought of as a workflow that defines how your test, build, and deployment steps are run. 
 
+For Classic pipelines, a pipeline can also be referred to as a definition.
 
 ## Release
 
@@ -86,6 +87,8 @@ For YAML pipelines, the build and release stages are in one, [multi-stage pipeli
 ## Run
 
 A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
+
+For Classic pipelines, a build represents one execution of a pipeline.
 
 ## Script
 
