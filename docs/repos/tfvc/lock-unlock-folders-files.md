@@ -5,7 +5,7 @@ description: Lock and unlock folders or files using Team Foundation Version Cont
 ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -43,7 +43,7 @@ See [Default TFVC permissions](../../organizations/security/default-tfvc-permiss
 
     You can also double-click **Source Control** in Team Explorer.
 
-2.  In Source Control Explorer, right-click on the file you want to apply a lock, and select **Advanced..**, then **Lock..** (Visual Studio 2015) or **Lock..** (Visual Studio 2013)
+2.  In Source Control Explorer, right-click on the file you want to apply a lock, and select **Advanced..**, then **Lock..** (Visual Studio 2015 or later) or **Lock..** (Visual Studio 2013)
 
 3.  In the **Lock** dialog box select the file or folder you want.
 

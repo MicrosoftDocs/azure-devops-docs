@@ -5,7 +5,7 @@ description: Folderdiff Command
 ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 03/26/2018
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

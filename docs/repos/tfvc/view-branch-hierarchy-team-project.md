@@ -5,7 +5,7 @@ description: View the branch hierarchy of a project
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

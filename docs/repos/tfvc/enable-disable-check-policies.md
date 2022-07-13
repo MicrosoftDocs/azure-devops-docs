@@ -5,7 +5,7 @@ description: Enable and Disable Check-In Policies
 ms.assetid: 629bf67c-22c5-4047-92b8-aa8f7c201cc9
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

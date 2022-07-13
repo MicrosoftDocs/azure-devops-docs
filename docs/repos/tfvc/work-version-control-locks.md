@@ -5,7 +5,7 @@ description: Work with version control locks
 ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
