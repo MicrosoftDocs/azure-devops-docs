@@ -1,14 +1,14 @@
 ﻿---
 title: Default Wiki and social tool permissions
 titleSuffix: Azure DevOps 
-description: Default permission and access assignments made to social tools such as alerts, Wiki, and feedback for Azure DevOps 
+description: Default permission and access assignments made to social tools such as alerts, Wiki, and feedback for Azure DevOps. 
 ms.technology: devops-collab
 ms.custom: wiki, devdivchpfy22
 ms.assetid:  
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 07/05/2022  
+ms.date: 07/13/2022  
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Collaboration tools encompass READMEs, team project Wikis, notifications, feedback, and search.  
+Collaboration tools encompass READMEs, team project wikis, notifications, feedback, and search.  
 
 Most of these tools are available to you if you're added as a team member or a member of the Contributors group for a team project. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
 

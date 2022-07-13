@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: conceptual
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 07/05/2022 
+ms.date: 07/13/2022 
 ---
 
 # Migrate pages from Wiki extension to a team project wiki
@@ -35,15 +35,15 @@ You must be a member of the Contributors group of your team project to migrate w
 
 ## Detailed steps
 
-1. Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool
+1. Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool.
 
-2. Compile the project under the path **Tools/MigrateToVSTSWiki** to generate the migration tool EXE.
+2. Compile the project under the path *Tools/MigrateToVSTSWiki* to generate the migration tool EXE.
   
 3. From a web browser, open your Azure DevOps team project and [create your first wiki page](wiki-create-repo.md).
 
 4. Get the URL to clone your wiki. See [Clone your wiki and edit wiki pages offline](wiki-update-offline.md).  
 
-   Name this clone location "LocationA" for this procedure.
+   Name this clone location as "LocationA" for this procedure.
 
 5. Clone your wiki repo using your IDE or the **git clone** command.
 
@@ -51,26 +51,26 @@ You must be a member of the Contributors group of your team project to migrate w
 
 6. Clone the wiki extension repo. The wiki is mapped to a folder given to you during the wiki creation. You can confirm by going to the "manage wiki" option in the existing wiki, as shown below.
 
-   Your existing wiki pages are saved under the folder labeled "Root".
+   Your existing wiki pages are saved under the folder labeled *Root*.
 
-   For example, you cloned the previously mentioned "sampleWiki" in the location "C:\wiki\sampleWiki". The wiki pages are saved in the path "C:\wiki\sampleWiki\ _extensionWiki"
+   For example, you cloned the previously mentioned "sampleWiki" in the location *C:\wiki\sampleWiki*. The wiki pages are saved in the path *C:\wiki\sampleWiki\ _extensionWiki*
 
-   Name this location "LocationB" for this procedure.
+   Name this location as "LocationB" for this procedure.
 
-7. Create an empty folder in any path on your local machine, and name it "LocationC" for this procedure.  
+7. Create an empty folder in any path on your local machine, and name this as "LocationC" for this procedure.  
 
-   **In summary, the following locations are represented as follows:**
+   In summary, the following locations are represented as follows:
    - Location A = Azure DevOps Wiki repo
    - Location B = Wiki extension repo
    - Location C = Empty folder to run migration tool in
 
-8. Open a command prompt as an administrator and run **MigrateToVSTSWiki.exe**.  This tool copies the files from your existing wiki to the destination directory you provide. During copying, the tool converts the pages to be compliant with the Azure DevOps wiki.
+8. Open a command prompt as an administrator and run *MigrateToVSTSWiki.exe*.  This tool copies the files from your existing wiki to the destination directory you provide. During copying, the tool converts the pages to be compliant with the Azure DevOps wiki.
 
 	`MigrateToVSTSWiki.exe /source:LocationB /destination:LocationC`
 
 	For example:
-	- "E:\wiki\sampleWiki\_extensionWiki" is the folder in which the existing wiki files are present
-	- "E:\Temp\Wiki\New" is the empty folder into which the migrated files are to be copied.
+	- *E:\wiki\sampleWiki\_extensionWiki* is the folder in which the existing wiki files are present
+	-*E:\Temp\Wiki\New* is the empty folder into which the migrated files are to be copied.
 
 9. Remove all the files from "LocationA" (if any) apart from the git related files, such as .gitignore, and so on.
 

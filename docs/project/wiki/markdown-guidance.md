@@ -1,7 +1,7 @@
 ---
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
-description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
+description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis.  
 ms.technology: devops-collab
 ms.custom: wiki, devdivchpfy22
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 07/05/2022
+ms.date: 07/13/2022
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -62,7 +62,7 @@ You can provide guidance in the following areas using Markdown:
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
-Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example `####`. Up to six levels of headings are supported.
+Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example, `####`. Up to six levels of headings are supported.
 
 **Example:**
 ```markdown
@@ -75,17 +75,17 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**
 
-<img src="media/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" />        
+<img src="media/markdown-guidance/mrkdown-headers.png" alt="Screenshot of Web portal, Headers 1 through 5" />        
 
 ## Paragraphs and line breaks
 
 #### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
-Make your text easier to read by breaking it into paragraphs or with line breaks.  
+Make your text easier to read by breaking it into paragraphs or line breaks.  
 
 ### Pull requests
 
-In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
+In pull request comments, select **Enter** to insert a line break and begin text on a new line.
 
 **Example - pull request comment:**
 
@@ -174,7 +174,7 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 - To apply bold: surround the text with double asterisks `**`.
 - To apply strikethrough: surround the text with double tilde characters `~~`.
 
-Combine these elements to apply emphasis to text.
+Combine these elements to apply emphasis to the text.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -289,14 +289,14 @@ Console.WriteLine("Hello, World!");
 
 #### Supported in: Markdown widget | Pull Requests | README files | Wikis 
 
-Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that have
-a clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
+Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data with a
+clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
 
 - Place each table row on its own line
 - Separate table cells using the pipe character `|`
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right)
-- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
+- To start a new line, use the HTML break tag (`<br/>`) (works within a Wiki but not elsewhere)  
 - Make sure to end each row with a CR or LF
 - A blank space is required before and after work item or pull request (PR) mentions inside a table cell
 
@@ -322,9 +322,9 @@ a clear name to description mapping. You can format tables in pull requests, wik
 #### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
 
-Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
+Organize related items with lists. You can add ordered lists with numbers or unordered lists with just bullets.
 
-Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph or enter two line breaks consecutively to begin a new paragraph.
 
 ### Ordered or numbered lists
 
@@ -394,7 +394,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 #### Supported in: Definition of Done | Markdown widget | Pull Requests | README files | Wikis  
 
-In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID, and then choosing the work item from the list.
+In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID and then choosing the work item from the list.
 
 Avoid auto suggestions for work items by prefixing *#* with a backslash (`\`). This action can be useful if you want to use *#* for color hex codes.
 
@@ -502,7 +502,7 @@ In wiki, you can also reference heading in another page:
 
 #### Supported in: Markdown widget | Pull Requests | README files | Wikis 
 
-To highlight issues or make things more interesting, you can add images and animated GIFs to the following aspects in your pull requests:
+To highlight issues or make things more interesting, you can add images and animated GIFs to the following aspects of your pull requests:
 
 - Comments
 - Markdown files
@@ -544,7 +544,7 @@ The path to the image file can be a relative path or the absolute path in Git or
 
 #### Supported in: Pull Requests | Wikis
 
-Lightweight task lists are great ways to track progress on your to-dos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
+Lightweight task lists are great ways to track progress on your to-dos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to the selected text.
 
 You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
@@ -694,7 +694,7 @@ Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html
 - Fractions and binomials
 - Other KaTeX supported elements
 
-To include mathematical notation, surround the mathematical notation with a `$` sign, for inline, and `$$` for block,  as shown in the following examples:
+To include mathematical notation surround the mathematical notation with a `$` sign for inline and `$$` for block,  as shown in the following examples:
 
 ::: moniker range="tfs-2018"
 
