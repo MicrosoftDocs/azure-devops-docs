@@ -130,7 +130,7 @@ sections:
       - question: |
           Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
         answer: |
-          You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. By default, Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. Learn how to [convert an Azure AD guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
+          You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. For example, Azure AD guests cannot use the Azure DevOps web portal to search for or select users who have not already been added to the Azure DevOps organization. Learn how to [convert an Azure AD guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
           
           <a name="how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
           
@@ -410,7 +410,7 @@ sections:
           * Try again.
           * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD convert you to a member.
           
-            ![Screenshot showing an error when when resolving disconnected users.](media/shared/guest-azure-ad-cannot-invite.png)
+            ![Screenshot showing an error when resolving disconnected users.](media/shared/guest-azure-ad-cannot-invite.png)
           
           * If the error message includes a user in your domain, but you don't see them active in your directory, the user likely left your company. Go to the organization user settings to remove the user from your organization.
           

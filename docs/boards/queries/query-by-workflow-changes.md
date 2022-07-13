@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 05/24/2022
+ms.date: 06/29/2022
 ---
 
 # Query by assignment or workflow changes in Azure Boards
@@ -20,15 +20,15 @@ The states in the workflow support tracking work status as it moves from a new s
 
 Each workflow consists of a set of states, valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types and default processes used to create your project. 
 
-Most work items move from a New, Active, or Proposed state to a Done or Closed state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it's reassigned to the tester who created it.  
+Most work items move from a *New*, *Active*, or *Proposed* state to a *Done* or *Closed* state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it's reassigned to the tester who created it.  
 
 <a id="reactivated"/> 
 
-For example, you can find all work items that were closed but then reactivated. By specifying the Changed Date field, you can focus on reactivations that occurred today, yesterday, or in the last week.
+For example, you can find all work items that were closed but then reactivated. By specifying the **Changed Date** field, you can focus on reactivations that occurred today, yesterday, or in the last week.
 
 ![Query Editor filter for reactivated items.](media/query-reactivated-items.png)  
 
-You can also use the Activated By and Activated Date fields, or other workflow fields.
+You can also use the **Activated By** and **Activated Date** fields, or other workflow fields.
 
 > [!TIP]  
 > Not all fields are valid for all work item types. Jump to [Workflow and Kanban query fields](#workflow-fields) for the set of fields you can include in queries and which work item types they apply to.  
@@ -37,7 +37,7 @@ If you're new to creating queries, see [Use the query editor to list and manage 
 
 ## Supported operators and macros 
 
-Query clauses that specify an Identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and Kanban board fields](#workflow-fields) provided later in this article. 
+Query clauses that specify an identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and Kanban board fields](#workflow-fields) provided later in this article. 
 
 ---
 :::row:::
@@ -95,6 +95,11 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 
 
 Use the **In** and **Not In** operators to filter for or exclude two or more picklist entries or a delimited set of items. Use the **In Group** or **Not In Group** operators to filter for items that belong or don't belong within a category group or  security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
+
+
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
+
+
 
 <a id="me"/>
 

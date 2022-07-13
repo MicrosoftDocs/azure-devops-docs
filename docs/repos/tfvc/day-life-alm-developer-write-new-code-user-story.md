@@ -5,7 +5,7 @@ description: A day in the life of an devops developer. Write new code for a user
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 07/07/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-2013](../../includes/version-vs-gt-2013.md)]
 
-Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
+Are you a new user of Visual Studio and Azure DevOps? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
 Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. You'll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
@@ -25,8 +25,7 @@ The team recently adopted Visual Studio and Azure DevOps to manage their code. T
 **Overview of this chapter**  
 Peter briefly reviews his backlog and selects the task he will work on today. He writes unit tests for the code he plans to develop. Typically, he runs the tests several times in an hour, gradually writing more detailed tests and then writing the code that makes them pass. He often discusses the interface of his code with colleagues who will use the method he is writing.
 
-> [!NOTE]
-> The My Work and Code Coverage features that are discussed in this article are available only in premium versions of Visual Studio, such as Visual Studio Premium, Visual Studio Ultimate, Visual Studio Enterprise. 
+[!INCLUDE [temp](includes/note-my-work-code-review-support.md)]
 
 ## Review personal backlog and prepare tasks to begin work
 
@@ -34,7 +33,7 @@ In **Team Explorer**, Peter opens the **My Work** page. The team has agreed that
 
 ### To review personal backlog and prepare tasks to begin work
   
- ![To Do List on My Work Page in Team Navigator](media/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
+ ![Screenshot of To Do List on My Work Page in Team Navigator.](media/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
 
 1.  In **Team Explorer**:  
     1.  If you are not already connected to the project that you want to work in, then [connect to the project](../../organizations/projects/connect-to-projects.md).  
@@ -66,7 +65,7 @@ Peter begins by creating a unit test. He begins with the unit test because he wa
 
 This is the first unit test for the class library that he is testing, so he creates a new unit test project. He opens the **New Project** dialog box and chooses **Visual C\#**, **Test**, and then **Unit Test Project**.
 
-![Unit Test selected in New Project dialog](media/day-life-alm-developer-write-new-code-user-story/IC591729.png)  
+![Screenshot of Unit Test selected in New Project dialog.](media/day-life-alm-developer-write-new-code-user-story/IC591729.png)  
 
 The unit test project provides a C\# file into which he can write his example. At this stage, he just wants to illustrate how one of his new methods will be invoked:
 
@@ -158,7 +157,7 @@ For more information about how to write unit tests in C++, see [Writing Unit tes
 
 Next, Peter creates a class library project for his new code. There is now a project for the code under development and a project for the unit tests. He adds a project Reference from the test project to the code under development.
 
-![Solution Explorer with Test and Class projects](media/day-life-alm-developer-write-new-code-user-story/IC612257.png)  
+![Screenshot of Solution Explorer with Test and Class projects.](media/day-life-alm-developer-write-new-code-user-story/IC612257.png)  
 
 In the new project, he adds the new class and a minimal version of the method that will at least allow the test to build successfully. The quickest way to do that is to generate a class and method stub from the invocation in the test.
 
@@ -186,7 +185,7 @@ First, create the project where you want to add the new class, unless it already
 
 Peter builds and runs the test by pressing CTRL+R, T. The test result shows a red Failed indicator and the test appears under the list of **Failed Tests**.
 
-![Unit Test Explorer showing one failed test](media/day-life-alm-developer-write-new-code-user-story/IC675817.png)  
+![Screenshot of Unit Test Explorer showing one failed test.](media/day-life-alm-developer-write-new-code-user-story/IC675817.png)  
 
 He makes a simple change to the code:
 
@@ -199,12 +198,12 @@ public double SquareRoot(double p)
 
 He runs the test again and it passes:
 
-![Unit Test Explorer with one passed test](media/day-life-alm-developer-write-new-code-user-story/IC675818.png)  
+![Screenshot of Unit Test Explorer with one passed test.](media/day-life-alm-developer-write-new-code-user-story/IC675818.png)  
 
 ### To run unit tests
 
 
-![Test Explorer showing Run All button](media/day-life-alm-developer-write-new-code-user-story/IC675819.png)  
+![Screenshot of Test Explorer showing Run All button.](media/day-life-alm-developer-write-new-code-user-story/IC675819.png)  
 
 -   On the **Test** menu, choose **Run**, **All Tests**.  
     - - or -  
@@ -271,7 +270,7 @@ Peter presses CTRL+R, T to run the new test that he created with Julia. After he
 
 Another useful practice is to set **Run Tests after Build**. This option runs the tests in the background every time you build the solution, so that you have a continual report of the test status of your code. Peter was at first suspicious that it might make Visual Studio slow to respond, but he finds that this rarely happens.
 
-![Unit Test Explorer with one failed test](media/day-life-alm-developer-write-new-code-user-story/IC675829.png)
+![Screenshot of Unit Test Explorer with one failed test.](media/day-life-alm-developer-write-new-code-user-story/IC675829.png)
 
 ### Green
   
@@ -296,7 +295,7 @@ public class LocalMath
 
 Peter runs the tests again and all the tests pass:
 
-![Unit Test Explorer with two passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
+![Screenshot of Unit Test Explorer with two passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
 
 ### Refactor
   
@@ -321,7 +320,7 @@ public class LocalMath
 
 He verifies that the tests still pass:
 
-![Unit Test Explorer with two passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
+![Screenshot of Unit Test Explorer with two passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
 
 > [!TIP]
 > Every change you make while you are developing the code should be either a refactoring or an extension:
@@ -363,7 +362,7 @@ private void VerifyOneRootValue(LocalMath math, double expectedResult)
 
 This test passes the first time it runs:
 
-![Unit Test Explorer with three passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675831.png)  
+![Screenshot of Unit Test Explorer with three passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675831.png)  
 
 Just to make sure this result is not a mistake, he temporarily introduces a small error into his test to make it fail. After seeing the failure, he fixes it again.
 
@@ -423,7 +422,7 @@ public double SquareRoot(double x)
   
 The new test passes, but there is a regression. A test that used to pass now fails:
 
-![Unit Test failed which previously passed](media/day-life-alm-developer-write-new-code-user-story/IC675832.png)  
+![Screenshot of Unit Test failed which previously passed.](media/day-life-alm-developer-write-new-code-user-story/IC675832.png)  
 
 Peter finds and fixes the mistake:
 
@@ -438,7 +437,7 @@ public double SquareRoot(double x)
 
 After it is fixed, all the tests pass:
 
-![Unit Test Explorer with four passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675833.png)
+![Screenshot of Unit Test Explorer with four passed tests.](media/day-life-alm-developer-write-new-code-user-story/IC675833.png)
 
 > [!TIP]
 > Make sure every tests passes after every change that you make to the code.
@@ -455,7 +454,7 @@ Good coverage is not a guarantee that the full functionality of the component ha
 
 To get a code coverage report, on the **Tests** menu, choose **Run**, **Analyze Code Coverage for All Tests**. Then run all the tests again.
 
-![Code Coverage result and Show Color button](media/day-life-alm-developer-write-new-code-user-story/IC592882.png)  
+![Screenshot of Code Coverage result and Show Color button.](media/day-life-alm-developer-write-new-code-user-story/IC592882.png)  
 
 Peter gets a total coverage of 86%. When he expands the total in the report, it shows that the code he is developing has coverage of 100%. This is very satisfactory, because the important score is for the code under test. The uncovered sections are actually in the tests themselves. By toggling the **Show Code Coverage Coloring** button, Peter can see which parts of the test code have not been exercised. However, he decides that these sections are unimportant for coverage because they are in the test code and would only be used if an error is detected.
 
@@ -486,13 +485,13 @@ Peter applies the following principles while developing code:
 
 Before checking in his changes, Peter again uses Lync to share his screen with his colleague Julia so she can informally and interactively review with him what he has created. The tests continue to be the focus of their discussion because Julia is primarily interested in what the code does, not how it works. Julia agrees that what Peter has written meets her needs.
 
-Peter checks in all changes he has made, including the both the tests and the code, and associates them with the task he has completed. The check-in queues the team's automated team build system to validate his changes using the team's **CI Build** build process. This build process helps the team minimize errors in their codebase by building and testing-in a clean environment separate from their development computers-every change the team makes.
+Peter checks in all changes he has made, including both the tests and the code, and associates them with the task he has completed. The check-in queues the team's automated team build system to validate his changes using the team's **CI Build** build process. This build process helps the team minimize errors in their codebase by building and testing-in a clean environment separate from their development computers-every change the team makes.
 
 Peter is notified when the build is completed. In the build results window, he sees that the build succeeded and all the tests passed.
 
 ### To check in the changes
   
- ![Checking in the pending changes](media/day-life-alm-developer-write-new-code-user-story/IC591276.png)  
+ ![Screenshot of Checking in the pending changes.](media/day-life-alm-developer-write-new-code-user-story/IC591276.png)  
 
 1.  On the menu bar, choose **View**, **Team Explorer**.
 
@@ -514,9 +513,9 @@ Peter is notified when the build is completed. In the build results window, he s
 
 For more information about how to define a continuous integration build process, see [Set up a CI build](../../pipelines/build/triggers.md). After you have set up this build process, you can choose to be notified about the results of team builds.
 
-![Peter is notified that CI Build succeeded](media/day-life-alm-developer-write-new-code-user-story/IC558300.png)
+![Screenshot of Peter is notified that CI Build succeeded.](media/day-life-alm-developer-write-new-code-user-story/IC558300.png)
 
-![CI Build results](media/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
+![Screenshot of CI Build results.](media/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
 
 For more information, see [Run, monitor, and manage builds](../../pipelines/get-started/what-is-azure-pipelines.md).
  
