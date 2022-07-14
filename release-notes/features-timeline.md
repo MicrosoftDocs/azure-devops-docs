@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/12/2022
+ms.date: 7/14/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -119,6 +119,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2022/sprint-206-update.md" data-raw-source="[14 July 2022](2022/sprint-206-update.md)"> 14 July 2022</a></td>
+    <td>Filter on work item history</td><td>Boards</td><td>Future</td></tr> 
+    <td>Last Accessed column on Delivery Plans page</td><td>Board</td><td>Future</td></tr>
+    <td>Visualize all dependencies on Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>New work item revision limits</td><td>Boards</td><td>Future</td></tr>
+    <td>Current project set as default scope for build access token in classic pipelines</td><td>Pipelines</td><td>Future</td></tr>
+</tr>
     <td rowspan="7"><a href="2022/sprint-205-update.md" data-raw-source="[27 June 2022](2022/sprint-205-update.md)"> 27 June 2022</a></td>
     <td>Project Collection Administrators can opt-in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>Future</td></tr> 
     <td>Enforcing security validation for all Azure DevOps requests</td><td>General</td><td>Future</td></tr>
