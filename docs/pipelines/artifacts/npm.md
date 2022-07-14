@@ -5,7 +5,7 @@ description: How to publish your npm packages with Azure Pipelines
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.topic: conceptual
-ms.date: 07/22/2021
+ms.date: 07/14/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds or to public registries such as *npmjs.com*. Using the npm task, you can install or publish npm packages as well as run any npm commands.
+Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds or to public registries such as *npmjs.com*. In this article, you will learn how to publish your npm packages using YAML and Classic pipelines.
 
 ## Publish to Azure Artifacts feeds
 
@@ -59,10 +59,6 @@ YAML is not supported in TFS.
 
 ## Publish to a public registry
 
-#### [YAML](#tab/yaml/)
-
-::: moniker range=">= azure-devops-2019"
-
 To publish your packages to a public npm registry such as *npmjs.com*, you must first create a service connection to connect to the desired external service.
 
 1. Select **Project settings**, and then select **Service connections**.
@@ -73,7 +69,9 @@ To publish your packages to a public npm registry such as *npmjs.com*, you must 
 
 1. Select **npm** and then select **Next**. Fill out the required fields, and then select **Save** when you are done.
 
-To publish a package to an npm registry, add the following snippet to your yaml file.
+#### [YAML](#tab/yaml/)
+
+::: moniker range=">= azure-devops-2019"
 
 ```yaml
 - task: Npm@1
@@ -94,20 +92,16 @@ YAML is not supported in TFS.
 
 #### [Classic](#tab/classic/)
 
-Follow the steps below to publish your npm packages to a public npm registry using the classic pipeline.
-
 1. From within your pipeline, select the `+` sign to add a task to your pipeline, then search for the *npm* task. Select **Add** to add it to your pipeline.
 
-    :::image type="content" source="./media/add-npm-task.png" alt-text="Screenshot showing how to find and add the npm task"::: 
+    :::image type="content" source="./media/add-npm-task.png" alt-text="Screenshot showing how to find and add the npm task":::
 
-1. Fill out the required fields and make sure you select **External npm registry** to point to the public registry. Enter the name of your service connection in the **External Registry** field or create a new service connection if you haven't done so already.
+1. Name your task, and then select **Publish** from the dropdown menu. Select your *package.json* path, your **Registry location** and your **External registry**.
 
-    :::image type="content" source="./media/npm-publish-registry.png" alt-text="Screenshot showing how to configure the npm publish task to publish to public registries":::
+    :::image type="content" source="./media/npm-publish-registry.png" alt-text="A screenshot showing how to configure the npm publish task to publish packages to public registries.":::
 
-- **Display name**: name of your task.
-- **Command**: `publish`
 - **Working folder that contains package.json**: path to the folder containing the target package.json and .npmrc files. Leave this blank if those files are at the root of your repo.
-- **Registry location**: select **External npm registry** to publish to public registries such as npmjs.com. Enter the name of your service connection.
+- **Registry location**: select **External npm registry** to publish to public registries such as npmjs.com. Enter the name of the service connection you created earlier.
 
 * * *
 
