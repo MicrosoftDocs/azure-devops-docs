@@ -19,9 +19,9 @@ Use this task to build and push Docker images to any container registry by using
 
 ## Overview
 
-Here are the key benefits of using a Docker task as compared to directly using Docker client binary in script: 
+Here are the key benefits of using a Docker task as compared to directly using a Docker client binary in script: 
 
-- **Integration with Docker registry service connection**. The task makes it easy to use a Docker registry service connection for connecting to any container registry. After login, you can author follow-up tasks to run any tasks or scripts by using the login that the Docker task has already done. For example, you can use the Docker task to sign in to any container registry and then use a subsequent task or script to build and push an image to this registry. 
+- **Integration with a Docker registry service connection**. The task makes it easy to use a Docker registry service connection for connecting to any container registry. After login, you can author follow-up tasks to run any tasks or scripts by using the login that the Docker task has already done. For example, you can use the Docker task to log in to any container registry and then use a subsequent task or script to build and push an image to this registry. 
 
 - **Metadata added as labels**. The task adds traceability-related metadata to the image in the form of the following labels: 
 
@@ -40,18 +40,18 @@ Here are the key benefits of using a Docker task as compared to directly using D
 
 ## Task inputs
 
-| Parameters | Description |
-|------------|-------------|
-| `command`<br/>Command | (Required) Possible values: `buildAndPush`, `build`, `push`, `login`, `logout`<br/>Added in version 2.173.0: `start`, `stop`<br/>Default value: `buildAndPush` |
-| `containerRegistry`<br/>Container registry | (Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) |
-| `repository`<br/>Repository | (Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for `containerRegistry`. Prefix with `username/` for Docker Hub. |
-| `container`<br/>Container | (Required for commands `start` and `stop`) The container resource to start or stop |
-| `tags`<br/>Tags | (Optional) Multiline input where each line contains a tag to be used in `build`, `push` or `buildAndPush` commands<br/>Default value: `$(Build.BuildId)` |
-| `Dockerfile`<br/>Dockerfile | (Optional) Path to the Dockerfile. The task will use the **first** dockerfile it finds to build the image.<br/>Default value: `**/Dockerfile` |
-| `buildContext`<br/>Build context | (Optional) Path to the build context<br/>Default value: `**` |
-| `arguments`<br/>Arguments | (Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value `buildAndPush` for the `command` parameter, then the `arguments` property will be ignored.
-| `addPipelineData` <br/>Add pipeline metadata to an image | (Optional) By default pipeline data like source branch name, build ID are added which helps with traceability. For example you can inspect an image to find out which pipeline built the image. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
-| `addBaseImageData` <br/>Add base image metadata to an image | (Optional) By default base image data like base image name and digest are added which helps with traceability. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
+| Parameter | Required or optional | Description |
+|------------|-------------|-------------|
+| `command`<br/>Command | Required | Possible values: `buildAndPush`, `build`, `push`, `login`, `logout`<br/>Added in version 2.173.0: `start`, `stop`<br/>Default value: `buildAndPush` |
+| `containerRegistry`<br/>Container registry | Optional | Name of the [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection). |
+| `repository`<br/>Repository | Optional | Name of repository within the container registry that corresponds to the Docker registry service connection specified as input for `containerRegistry`. Prefix with `username/` for Docker Hub. |
+| `container`<br/>Container | Required for commands `start` and `stop` | Container resource to start or stop. |
+| `tags`<br/>Tags | Optional | Multiline input where each line contains a tag to be used in `build`, `push`, or `buildAndPush` commands.<br/>Default value: `$(Build.BuildId)` |
+| `Dockerfile`<br/>Dockerfile | Optional | Path to the Dockerfile. The task will use the *first* Dockerfile that it finds to build the image.<br/>Default value: `**/Dockerfile` |
+| `buildContext`<br/>Build context | Optional | Path to the build context.<br/>Default value: `**` |
+| `arguments`<br/>Arguments | Optional | Additional arguments to be passed onto the Docker client.<br />Be aware that if you use the value `buildAndPush` for the `command` parameter, the `arguments` property will be ignored.
+| `addPipelineData` <br/>Add pipeline metadata to an image | Optional | Pipeline data like source branch name and build ID is added by default, which helps with traceability. For example, you can inspect an image to find out which pipeline built the image. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
+| `addBaseImageData` <br/>Add base image metadata to an image | Optional | Base image data like base image name and digest is added by default, which helps with traceability. You can opt out of this default behavior. <br/>Possible values: `true`, `false`<br/>Default value: `true` |
 
 ## Login
 
@@ -71,12 +71,12 @@ The following YAML snippet showcases a container registry login that uses a Dock
 
 Use a Docker registry connection with the Docker login command. Set **Container Repository** to your Docker registry service connection.
 
-:::image type="content" source="media/docker-classic-container-login.png" alt-text="Screenshot of Docker container registry task login. ":::
+:::image type="content" source="media/docker-classic-container-login.png" alt-text="Screenshot of setting a registry service connection for the Docker login command. ":::
 
 ---
 
 ## Build and push
-A convenience command called `buildAndPush` allows for build and push of images to container registry in a single command. The following YAML snippet is an example of building and pushing multiple tags of an image to multiple registries. 
+A convenience command called `buildAndPush` allows for build and push of images to a container registry in a single command. The following YAML snippet is an example of building and pushing multiple tags of an image to multiple registries. 
 
 # [YAML](#tab/yaml)
 
@@ -121,13 +121,13 @@ steps:
 
 # [Classic](#tab/classic)
 
-The command `buildAndPush` lets you build and push images to a container registry in a single command. Here is an example of building and pushing multiple tags of an image with authentication to Docker Hub.  
+The command `buildAndPush` lets you build and push images to a container registry in a single command. Here's an example of building and pushing multiple tags of an image with authentication to Docker Hub.  
 
-:::image type="content" source="media/docker-classic-build-push.png" alt-text="Screenshot of build and push Docker classic task.":::
+:::image type="content" source="media/docker-classic-build-push.png" alt-text="Screenshot of using build and push in a Docker classic task.":::
 
 You can also build and push without authentication. In the `buildAndPush` tasks, the images for `tag1` and `tag2` are built and pushed to the container registries that correspond to service connections set up in the previous two login tasks. 
 
-:::image type="content" source="media/docker-classic-build-push-two-containers.png" alt-text="Screenshot of Classic pipeline with build and push to two Docker container registries.":::
+:::image type="content" source="media/docker-classic-build-push-two-containers.png" alt-text="Screenshot of a classic pipeline with build and push to two Docker container registries.":::
 
 ---
 
@@ -135,7 +135,7 @@ You can also build and push without authentication. In the `buildAndPush` tasks,
 
 # [YAML](#tab/yaml)
 
-The following YAML snippet showcases container registry logout using a Docker registry service connection. 
+The following YAML snippet showcases a container registry logout that uses a Docker registry service connection. 
 
 ```YAML
 - task: Docker@2
@@ -148,13 +148,13 @@ The following YAML snippet showcases container registry logout using a Docker re
 
 You can also log out from your Docker registry service connection with the Docker task. 
 
-:::image type="content" source="media/docker-classic-logout.png" alt-text="Screenshot of docker task logout.":::
+:::image type="content" source="media/docker-classic-logout.png" alt-text="Screenshot of Docker task logout.":::
 
 ---
 
 ## Start/stop
-This task can also be used to control job and service containers.
-This usage is uncommon but is occasionally used for unique circumstances.
+You can use a start/stop task to control job and service containers.
+This usage is uncommon but works for unique circumstances.
 
 ```yaml
 resources:
@@ -169,12 +169,12 @@ steps:
   inputs:
     command: stop
     container: builder
-# any task beyond this point would not be able to target the builder container
-# because it's been stopped
+# Any task beyond this point would not be able to target the builder container
+# because it has been stopped
 ```
 
 ## Other commands and arguments
-You can use the command and argument inputs to pass additional arguments for build or push commands by using Docker client binary: 
+You can use the command and argument inputs to pass additional arguments for build or push commands by using a Docker client binary: 
 
 ```YAML
 steps:
@@ -199,9 +199,9 @@ steps:
 
 ### Why does my Docker task ignore arguments passed to the buildAndPush command?
 
-A Docker task configured with the `buildAndPush` command ignores the arguments passed, because they become ambiguous to the build and push commands that are run internally. You can split your command into separate build and push steps and pass the suitable arguments. For an example, see [this Stack Overflow post](https://stackoverflow.com/questions/60287354/i-am-using-azure-devops-to-build-and-push-my-docker-image-how-can-i-pass-argume).
+A Docker task that's configured with the `buildAndPush` command ignores the arguments passed, because they become ambiguous to the build and push commands that are run internally. You can split your command into separate build and push steps and pass the suitable arguments. For an example, see [this Stack Overflow post](https://stackoverflow.com/questions/60287354/i-am-using-azure-devops-to-build-and-push-my-docker-image-how-can-i-pass-argume).
 
-### Docker V2 supports Docker registry service connections but not ARM service connections. How can I use an existing Azure service principal name for authentication in a Docker task?
+### Docker V2 supports Docker registry service connections but not Azure Resource Manager service connections. How can I use an existing Azure service principal name for authentication in a Docker task?
 
 You can create a Docker registry service connection by using your Azure service principal name (SPN) credentials. Choose the **Others from Registry** type and provide the details as follows:
 
