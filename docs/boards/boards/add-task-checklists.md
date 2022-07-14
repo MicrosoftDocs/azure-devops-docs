@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/13/2022
 ---
 
 
@@ -39,8 +39,6 @@ In this article, you'll learn:
 ## Overview of checklist features 
 
 Checklists are a feature of all Kanban boards, both product and portfolio backlog levels. 
-
-
 
 - All Kanban board levels support checklists. For a view of default backlog hierarchies, see [Plan and track work](../get-started/plan-track-work.md).  
 - Adding a checklist item automatically adds a parent-child link between the parent work item and the checklist item. 
@@ -133,7 +131,22 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 
 Tasks or other child items you add as checklists are automatically assigned to the **Iteration Path** of their parent work item. To reassign a checklist item to a different sprint, you must open the item and change its **Iteration Path**. Or, open the sprint backlogs where it's currently defined and  drag it to the new sprint using the Planning pane. For details, see [Assign backlog items to a sprint](../sprints/assign-work-sprint.md).  
 
- 
+<a id="checklist-actions" /> 
+
+::: moniker range="azure-devops"
+
+## Reassign a checklist item 
+
+Checklist items show the avatars of those assigned to the item. You can view the avatar assignment of checklist items, or reassign a checklist item by choosing the item's &hellip;**Work items action menu** and selecting **Assigned to**.  
+
+> [!NOTE]   
+> Avatar images and the **Assign to** menu option requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+
+:::image type="content" source="media/checklists/checklist-actions-menu.png" alt-text="Screenshot of Boards, list of tasks showing avatars, and checklist of work items action menu.":::
+
+::: moniker-end
+
+
 ## Configure the Kanban board 
 
 To configure or change the layout of the Kanban board, see [Customize your boards](../get-started/customize-boards.md). 

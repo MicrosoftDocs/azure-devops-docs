@@ -997,6 +997,24 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 ::: moniker-end
 
 To learn more about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
+  
+
+
+::: moniker range="azure-devops"
+
+
+## Filter the history view within a work item form 
+
+In addition to all the filter features described earlier in this article, you can also filter the history view within a work item form. 
+
+To quickly find revisions made that contain a keyword, or made by specific people or to a specific field, enable the filter feature by choosing :::image type="icon" source="../queries/media/history-audit/filter-icon.png" border="false"::: **Toggle filter**.  
+
+:::image type="content" source="../queries/media/history-audit/history-filter.png" alt-text="Screenshot of Work item form, History tab, Web portal, history filter enabled.":::
+
+To learn more, see [Query work item history and discussion fields](../queries/history-and-auditing.md#filter-history).
+
+::: moniker-end
+
 
 ## Related articles  
 
