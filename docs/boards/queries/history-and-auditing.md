@@ -82,6 +82,7 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column span="1":::
    Items whose History field doesn&#39;t contain the word &quot;beta&quot;
    :::column-end:::
+   :::column span="1":::
    `History Does Not Contain Words beta`
    :::column-end:::
 :::row-end:::
@@ -167,7 +168,10 @@ To view only the comments that were added to the log, choose the **Discussion On
 
 The **History** tab is designed to track all changes made to a work item to support full traceability. The long revision history that results can make it difficult to understand when changes happen to specific fields. To quickly find revisions made to a specific field or by specific people, filter the history view. 
 
-You enable the filter feature by choosing :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Toggle filter**.
+> [!NOTE]   
+> The **Toggle filter** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+
+You enable the filter feature by choosing :::image type="icon" source="media/history-audit/filter-icon.png" border="false"::: **Toggle filter**.
 
 :::image type="content" source="media/history-audit/history-filter.png" alt-text="Screenshot of Work item form, History tab, Web portal, history filter enabled.":::
 
@@ -257,11 +261,14 @@ You can use the following fields to filter queries and create reports. Several o
    History
    :::column-end:::
    :::column span="2":::
-   The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed. 
+   The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed.  
+
    > [!NOTE]
    > History field queries return work items whose **Discussion** comments or **Description** fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields.  
+
    You can't add formatted text to the history field. Once you've saved the work item, you can't alter the history.  
    The `History` field, along with the `Description`, `Steps to Repro` and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md).  
+
    Reference name=System.History, Data type=History
    :::column-end:::
    :::column span="1":::
@@ -289,6 +296,7 @@ You can use the following fields to filter queries and create reports. Several o
       A number that is assigned to the historical revision of a work item.   
       > [!NOTE]   
       > A work item revision limit of 10,000 is in effect for updates made through the REST API for Azure DevOps Services. This limit restricts updates from the REST API, however, updates from the web portal are not affected.   
+
       Reference name=System.Rev, Data type=Integer
    :::column-end:::
    :::column span="1":::
