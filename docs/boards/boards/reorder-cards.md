@@ -46,7 +46,7 @@ You can re-order the work items within a Kanban board column by choosing &hellip
 > [!NOTE]   
 > The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
  
-Specify a value within the range listed which corresponds to the number of items currently in the column. 
+Specify a value within the range listed, which corresponds to the number of items currently in the column. 
 
 :::image type="content" source="media/reorder/move-to-position.png" alt-text="Screenshot of Boards, Move to column position dialog.":::
 
