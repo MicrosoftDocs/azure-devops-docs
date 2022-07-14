@@ -47,7 +47,7 @@ variables:
 ```
 
 ### Queue-time variables
-When defining a variable in the Pipelines UI editor (be it a YAML or a Classic Build pipeline), you can choose to let users override its value when running the pipeline. We call such a variable a queue-time variable.
+When defining a variable in the Pipelines UI editor (be it a YAML or a classic build pipeline), you can choose to let users override its value when running the pipeline. We call such a variable a queue-time variable.
 
 :::image type="content" source="media/define-vars-yaml-pipeline.png" alt-text="Screenshot of defining a queue-time variable.":::
 
@@ -67,7 +67,7 @@ Unfortunately, this functionality introduced a security vulnerability, because i
 The setting is designed to work at organization level and at project level.
 1. Organization level. When the setting is on, it enforces that, for all pipelines in all projects in the organization, only those variables that are explicitly marked as "Settable at queue time" can be set. When the setting is off, each project can choose whether to restrict variables set at queue time or not. The setting is a toggle under Organization Settings -> Pipelines -> Settings. Only Project Collection Administrators can enable or disable it.
   :::image type="content" source="media/org-level-settings.png" alt-text="Screenshot of limiting variables that can be set at queue time at organization level.":::
-1. Project level. When the setting is on, it enforces that, for all pipelines in the project, only those variables that are explicitly marked as "Settable at queue time" can be set. If the setting is on at the organization level, it is on for all projects and can't be turned off. The setting is a toggle under Project Settings -> Pipelines -> Settings. Only Project Administrators can enable or disable it.
+1. Project level. When the setting is on, it enforces that, for all pipelines in the project, only those variables that are explicitly marked as "Settable at queue time" can be set. If the setting is on at the organization level, then it is on for all projects and can't be turned off. The setting is a toggle under Project Settings -> Pipelines -> Settings. Only Project Administrators can enable or disable it.
   :::image type="content" source="media/project-level-settings.png" alt-text="Screenshot of limiting variables that can be set at queue time at project level.":::
 
 Currently, the _Limit variables that can be set at queue time_ setting covers only variables explicitly defined in classic build pipelines. Lets look at an example. Say the setting is on and your classic pipeline defines a variable named `my_variable` that isn't settable at queue time.
@@ -83,16 +83,16 @@ When they try to run the pipeline, they'll get an error.
 > [!NOTE]
 
 > We're extending the scope of the _Limit variables that can be set at queue time_ setting to cover both YAML and classic build pipelines. We're gradually rolling out this extended coverage.
-
+>
 > Once the rollout is complete and the setting is on:
-
+>
 > * No one is able to define any new variable at queue time. Only those variables that are explicitly marked as settable at queue time can be set.
-
+>
 > * The _Add variable_ button will be removed from the _Run pipeline_ panel.
 :::image type="content" source="media/add-vars-at-queue-time-rollout-complete.png" alt-text="Screenshot of variables tab after rollout is complete.":::
-
+>
 > * The [Builds - Queue](https://docs.microsoft.com/rest/api/azure/devops/build/builds/queue) and the [Runs - Run Pipeline](https://docs.microsoft.com/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API calls will fail with an error similar to
-
+>
 > ```json
 > {
 >     "$id": "1",
