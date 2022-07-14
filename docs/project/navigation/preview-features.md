@@ -47,7 +47,7 @@ The follow table indicates which preview features can be enabled per user or tea
 |[Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  |   | ✔️ |  
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group) |   | ✔️ |   
 |[New account manager](#account-manager) | ✔️ | ✔️ |   
-|New Artifacts (Feeds) Experience (accessbility updates) | ✔️ | ✔️ |   
+|New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
 |[New Boards Hubs](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) | ✔️ | ✔️ |  
 |[New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)| ✔️ | ✔️ |    
 |[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
