@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= azure-devops-2020'
-ms.date: 01/19/2022
+ms.date: 07/13/2022
 ---
 
 
@@ -45,11 +45,10 @@ The follow table indicates which preview features can be enabled per user or tea
 |Dependency Tracker Preview Features (ignore this setting) | ✔️ | ✔️ |   
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ |   
 |[Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  |   | ✔️ |  
-|[Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) | ✔️ | ✔️ |   
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group) |   | ✔️ |   
 |[New account manager](#account-manager) | ✔️ | ✔️ |   
 |New Artifacts (Feeds) Experience (accessbility updates) | ✔️ | ✔️ |   
-|[New Boards Hubs](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview//) | ✔️ | ✔️ |  
+|[New Boards Hubs](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview) | ✔️ | ✔️ |  
 |[New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)| ✔️ | ✔️ |    
 |[New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)| ✔️ | ✔️ |    
 |[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |    
@@ -213,6 +212,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 ### Azure Pipelines
  
+- [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) 
 - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
 - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)

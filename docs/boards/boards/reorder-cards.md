@@ -23,11 +23,34 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 ![Reorder cards while changing columns](media/8_7_02.gif)
 
+::: moniker range="azure-devops"
+
+In addition to the dynamic card reordering, you can also move a card to a specific column position.  
+::: moniker-end
+
 <a id="card-reorder-note"></a>
 
-The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they're reordered based on the Card reordering setting selected.  
+> [!NOTE]   
+> The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they're reordered based on the Card reordering setting selected.  
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
+
+<a id="move-to-column-position"></a>
+
+::: moniker range="azure-devops"
+
+## Move a card to a specific column position
+
+You can re-order the work items within a Kanban board column by choosing &hellip;**Work items action menu**, selecting **Move to position**, and then specifying a value in the dialog.  
+
+> [!NOTE]   
+> The **Move to column position** feature requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
+ 
+Specify a value within the range listed which corresponds to the number of items currently in the column. 
+
+:::image type="content" source="media/reorder/move-to-position.png" alt-text="Screenshot of Boards, Move to column position dialog.":::
+
+::: moniker-end
 
 
 <a id="card-reorder-setting"></a>
