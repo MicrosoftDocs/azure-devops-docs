@@ -997,7 +997,7 @@
         - name: NuGet Installer 0.*
           href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
         - name: Deploy to AKS with Jenkins
-          href: /previous-versions/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks?view=tfs-2017
+          href: /previous-versions/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks?view=tfs-2017&preserve-view=true
 - name: Developer resources
   items:
     - name: REST API reference
