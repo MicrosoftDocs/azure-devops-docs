@@ -437,9 +437,6 @@
       items:
       - name: Build and deploy to Azure Kubernetes Service
         href: /azure/aks/devops-pipeline
-      - name: Deploy to AKS with Jenkins
-        href: release/integrate-jenkins-pipelines-aks.md
-        displayName: cluster, Jenkins, Maven, Docker
     - name: Azure Policy Compliance (Classic)
       href: /azure/governance/policy/tutorials/policy-devops-pipelines
       displayName: policy, compliance
@@ -1000,7 +997,7 @@
         - name: NuGet Installer 0.*
           href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
         - name: Deploy to AKS with Jenkins
-          href: /release/integrate-jenkins-pipelines-aks.md
+          href: /previous-versions/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks?view=tfs-2017
 - name: Developer resources
   items:
     - name: REST API reference
