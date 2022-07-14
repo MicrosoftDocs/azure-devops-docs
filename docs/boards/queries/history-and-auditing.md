@@ -177,11 +177,11 @@ You enable the filter feature by choosing :::image type="icon" source="media/his
 
 To review updates by specific people, select their names from the **Updated by** menu. 
 
-:::image type="content" source="media/history-audit/filter-history-people.png" alt-text="Screenshot of Work item form, History tab, Updated by select fields.":::
+:::image type="content" source="media/history-audit/filter-history-people.png" alt-text="Screenshot of Work item form, History tab, Filter by who made updates.":::
 
 To review updates made to one or more fields, select the fields from the **Fields** menu. 
 
-:::image type="content" source="media/history-audit/filter-history-field-assigned-to.png" alt-text="Screenshot of Work item form, History tab, Updated by select fields.":::
+:::image type="content" source="media/history-audit/filter-history-field-assigned-to.png" alt-text="Screenshot of Work item form, History tab, Filter on changes made to Assigned To field.":::
 
 ::: moniker-end
 

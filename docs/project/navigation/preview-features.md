@@ -199,7 +199,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 - [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Work Items](../../boards/work-items/view-add-work-items.md)   
 - [New Dashboards Experience](../../report/dashboards/dashboards.md)    
-- 
+
 ### Azure Repos
 
 - New TFVC pages
