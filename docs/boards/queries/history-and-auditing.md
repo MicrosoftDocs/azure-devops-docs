@@ -321,7 +321,7 @@ You can use the following fields to filter queries and create reports. Several o
    <a id="test-suite-audit"/>Test Suite Audit
    :::column-end:::
    :::column span="2":::
-   Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
+   Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.  
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
    :::column-end:::
    :::column span="1":::
@@ -333,7 +333,7 @@ You can use the following fields to filter queries and create reports. Several o
    <a id="watermark"/>Watermark
    :::column-end:::
    :::column span="2":::
-   A system-managed field (not editable) that increments with changes made to a work item.
+   A system-managed field (not editable) that increments with changes made to a work item.  
    Reference name=System.Watermark, Data type=Integer
    :::column-end:::
    :::column span="1":::
