@@ -142,7 +142,7 @@ Checklist items show the avatars of those assigned to the item. You can view the
 > [!NOTE]   
 > Avatar images and the **Assign to** menu option requires you to enable the **New Boards Hub** preview feature. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
 
-:::image type="content" source="media/reorder/checklist-actions-menu.png" alt-text="Screenshot of Boards, list of tasks showing avatars, and checklist of work items action menu.":::
+:::image type="content" source="media/checklists/checklist-actions-menu.png" alt-text="Screenshot of Boards, list of tasks showing avatars, and checklist of work items action menu.":::
 
 ::: moniker-end
 
