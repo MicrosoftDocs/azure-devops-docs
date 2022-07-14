@@ -55,9 +55,9 @@ Here are the key benefits of using a Docker task as compared to directly using a
 
 ## Login
 
-The following YAML snippet showcases a container registry login that uses a Docker registry service connection. 
-
 # [YAML](#tab/yaml)
+
+The following YAML snippet showcases a container registry login that uses a Docker registry service connection: 
 
 ```YAML
 - task: Docker@2
@@ -76,9 +76,10 @@ Use a Docker registry connection with the Docker login command. Set **Container 
 ---
 
 ## Build and push
-A convenience command called `buildAndPush` allows for build and push of images to a container registry in a single command. The following YAML snippet is an example of building and pushing multiple tags of an image to multiple registries. 
 
 # [YAML](#tab/yaml)
+
+A convenience command called `buildAndPush` allows for build and push of images to a container registry in a single command. The following YAML snippet is an example of building and pushing multiple tags of an image to multiple registries: 
 
 ```YAML
 steps:
@@ -135,7 +136,7 @@ You can also build and push without authentication. In the `buildAndPush` tasks,
 
 # [YAML](#tab/yaml)
 
-The following YAML snippet showcases a container registry logout that uses a Docker registry service connection. 
+The following YAML snippet showcases a container registry logout that uses a Docker registry service connection: 
 
 ```YAML
 - task: Docker@2
