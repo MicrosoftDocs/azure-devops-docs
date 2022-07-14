@@ -6,8 +6,8 @@ ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
 author: shashban
-ms.date: 09/30/2020
-monikerRange: azure-devops
+ms.date: 07/13/2022
+monikerRange: ">= azure-devops-2020"
 ---
 
 # Define approvals and checks
@@ -177,11 +177,56 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 ## Exclusive lock
 
+:::moniker range="> azure-devops-2020"
+
+The **exclusive lock** check allows only a single run from the pipeline to proceed. All stages in all runs of that pipeline that use the resource are paused. When the stage using the lock completes, then another stage can proceed to use the resource. Also, only one stage will be allowed to continue.
+
+The behavior of any other stages that attempt to take a lock is configured by the `lockBehavior` value that is configured in the YAML file for the pipeline.
+
+* `runLatest` - Only the latest run acquires the lock to the resource. `runLatest` is the default if no `lockBehavior` is specified.
+* `sequential` - All runs acquire the lock sequentially to the protected resource.
+
+To use exclusive lock check with `sequential` deployments or `runLatest`, follow these steps:
+
+ 1. Enable the exclusive lock check on the environment (or another protected resource).
+ 2. In the YAML file for the pipeline, specify a property called `lockBehavior`. This can be specified for the whole [pipeline](/azure/devops/pipelines/yaml-schema/pipeline) or for a given [stage](/azure/devops/pipelines/yaml-schema/stages-stage):
+
+Set on a stage:
+
+```yaml
+stages:
+- stage: A
+  lockBehavior: sequential
+  jobs:
+  - job: Job
+    steps:
+    - script: Hey!
+```
+Set on the pipeline:
+
+```yaml
+lockBehavior: runLatest
+stages:
+- stage: A
+  jobs:
+  - job: Job
+    steps:
+    - script: Hey!
+```
+
+If you do not specify a `lockBehavior`, the default value of `runLatest` is used. 
+
+:::moniker-end
+
+:::moniker range="=azure-devops-2020"
+
 The **exclusive lock** check allows only a single run from the pipeline to proceed.
 All stages in all runs of that pipeline that use the resource are paused.
 When the stage using the lock completes, then another stage can proceed to use the resource.
 Also, only one stage will be allowed to continue.
 Any other stages that tried to take the lock will be canceled.
+
+:::moniker-end
 
 ## ServiceNow Change Management
 
@@ -202,7 +247,7 @@ Using the business hours check, you can control the time for start of stage exec
 ### How can I take advance approvals for a stage scheduled to run in future?
 This scenario can be enabled 
 1.	The business hours check enables all stages deploying to a resource to be scheduled for execution between the time window
-2.	When approvals configured on the same resource, then the stage would wait for approvals before starting.
+2.	When approvals are configured on the same resource, the stage would wait for approvals before starting.
 3.	You can configure both the checks on a resource. The stage would wait on approvals and business hours. It would start in the next scheduled window after approvals are complete. 
 
 ### Can I wait for completion of security scanning on the artifact being deployed?
