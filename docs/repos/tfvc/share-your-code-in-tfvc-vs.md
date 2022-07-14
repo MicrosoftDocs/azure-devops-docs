@@ -6,7 +6,7 @@ ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
 ms.technology: devops-code-tfvc
 ms.topic: quickstart
-ms.date: 07/13/2022
+ms.date: 07/14/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ---
@@ -24,6 +24,9 @@ Is your code in another place? [Learn how to migrate it here](#migrate).
 
 [!INCLUDE [open-team-project-in-vs](includes/open-team-project-in-vs.md)]
 
+> [!NOTE]
+> Some menu options for TFVC may not be displayed in Visual Studio until you [connect Visual Studio to TFVC](../../organizations/projects/connect-to-projects.md#connect-from-visual-studio-or-team-explorer) as described in the previous section.
+
 <a name="workspace"></a>
 ## Configure your workspace
 
@@ -35,7 +38,7 @@ Is your code in another place? [Learn how to migrate it here](#migrate).
 
 2. Confirm your workspace path. Select **Map & Get** to map your workspace and get the source.
 
-   ![Screenshot shows the Team Explorer Home page, with Map and get highlighted.](media/share-your-code-in-tfvc-vs/MapAndGet.png)
+   :::image type="content" source="media/share-your-code-in-tfvc-vs/MapAndGet.png" alt-text="Screenshot shows the Team Explorer Home page, with Map and get highlighted.":::
 
 3. Now you can check in source, queue builds, and manage work.
 
