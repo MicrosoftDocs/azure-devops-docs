@@ -700,7 +700,7 @@ The **Default repository location** setting is only available at the global scop
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in Visual Studio.
 
 * * *
 
@@ -730,11 +730,11 @@ Valid values are:
 
 #### [Visual Studio 2017](#tab/visual-studio-2017/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#close-open-solutions-not-under-git-when-opening-a-repository) or later.
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#close-open-solutions-not-under-git-when-opening-a-repository) or later.
 
 * * *
 
@@ -787,7 +787,7 @@ The **Enable download of author images from third-party sources** setting is onl
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in Visual Studio.
 
 * * *
 
@@ -842,7 +842,7 @@ The **Commit changes after merge by default** setting is only available at the g
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in Visual Studio.
 
 * * *
 
@@ -900,7 +900,7 @@ The **Enable push --force** option corresponds to the `push --force` command. Th
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in Visual Studio.
 
 * * *
 
@@ -921,11 +921,11 @@ When disabled and you open a Git repo in Visual Studio, Visual Studio won't open
 
 #### [Visual Studio 2017](#tab/visual-studio-2017/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#open-folder-in-solution-explorer-when-opening-a-git-repository) or later.
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#open-folder-in-solution-explorer-when-opening-a-git-repository) or later.
 
 * * *
 
@@ -944,11 +944,11 @@ The **Automatically load the solution when opening a Git repository** setting is
 
 #### [Visual Studio 2017](#tab/visual-studio-2017/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#automatically-load-the-solution-when-opening-a-git-repository) or later.
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#automatically-load-the-solution-when-opening-a-git-repository) or later.
 
 * * *
 
@@ -967,11 +967,11 @@ The Git Repository window has a list of branches displayed in a tree structure. 
 
 #### [Visual Studio 2017](#tab/visual-studio-2017/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#automatically-check-out-branches-with-double-click-or-the-enter-key) or later.
 
 #### [Git Command Line](#tab/git-command-line/)
 
-You can only view and modify this setting in [Visual Studio](git-config.md?tabs=visual-studio-2019).
+You can only view and modify this setting in [Visual Studio 2019](git-config.md?tabs=visual-studio-2019#automatically-check-out-branches-with-double-click-or-the-enter-key) or later.
 
 * * *
 
