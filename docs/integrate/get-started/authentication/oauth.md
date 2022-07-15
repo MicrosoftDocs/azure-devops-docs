@@ -39,11 +39,11 @@ For a C# example of the overall flow, see [vsts-auth-samples](https://github.com
 
    The application settings page displays.
 
-   :::image type="content" source="media/app-settings.png" alt-text="Applications settings shown for your app.":::
+   :::image type="content" source="media/app-settings.png" alt-text="Screenshot showing Applications settings for your app.":::
 
    - When Azure DevOps Services presents the authorization approval page to your user, it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
-     :::image type="content" source="media/grant-access.png" alt-text="Visual Studio Codespaces authorization page with your company and app information.":::
+     :::image type="content" source="media/grant-access.png" alt-text="Screenshot showing Visual Studio Codespaces authorization page with your company and app information.":::
 
    - When Azure DevOps Services asks for a user's authorization, and the user grants it, the user's browser gets redirected to your authorization callback URL with the authorization code.
    The callback URL must be a secure connection (https) to transfer the code back to the app and exactly match the URL registered in your app. If it doesn't, a 400 error page is displayed instead of a page asking the user to grant authorization to your app.
