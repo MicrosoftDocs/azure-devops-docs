@@ -698,21 +698,9 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
-<td>System.StageAttempt</td>
-<td>Set to 1 the first time this stage is attempted, and increments every time the job is retried.</td>
+<td>System.PlanId</td>
+<td>A string-based identifier for a single pipeline run.</td>
 <td>No</td>
-</tr>
-
-<tr>
-<td>System.StageDisplayName</td>
-<td>The human-readable name given to a stage.</td>
-<td>No</td>
-</tr>
-
-<tr>
-<td>System.StageName</td>
-<td>A string-based identifier for a stage, typically used for expressing dependencies and accessing output variables.</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -753,6 +741,26 @@ Otherwise, it is set to <code>False</code>.</td>
 </tr>
 
 <tr>
+<td>System.StageAttempt</td>
+<td>Set to 1 the first time this stage is attempted, and increments every time the job is retried.</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>System.StageDisplayName</td>
+<td>The human-readable name given to a stage.</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>System.StageName</td>
+<td>A string-based identifier for a stage, typically used for expressing dependencies and accessing output variables.</td>
+<td>Yes</td>
+</tr>
+
+
+
+<tr>
 <td>System.TeamFoundationCollectionUri</td>
 <td>The URI of the TFS collection or Azure DevOps organization. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.
 <br/><br/>
@@ -770,6 +778,12 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>System.TeamProjectId</td>
 <td>The ID of the project that this build belongs to.</td>
 <td>Yes</td>
+</tr>
+
+<tr>
+<td>System.TimelineId</td>
+<td>A string-based identifier for the execution details and logs of a single pipeline run.</td>
+<td>No</td>
 </tr>
 
 <tr>
