@@ -858,7 +858,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br><br>
+    **Visual Studio Git**
 
     The **Enable push --force-with-lease** option corresponds to the `push --force-with-lease` command. This setting is only available at the global scope. By default, **Enable push --force-with-lease** is disabled.
 
@@ -989,7 +989,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br><br>
+    **Visual Studio Git**
 
     1. From the Git menu, choose **Git > Settings** and choose the **Git Repository Settings > General** view. That view contains options to edit `gitignore` or `gitattributes` files.
 
