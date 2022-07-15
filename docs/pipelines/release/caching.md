@@ -91,6 +91,9 @@ In this example, the cache key contains three parts: a static string ("yarn"), t
 
 On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key doesn't exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
 
+> [!NOTE]
+> `Pipeline.Workspace` is the local path on the agent running your pipeline where all directories are created. This variable has the same value as `Agent.BuildDirectory`.
+
 #### Restore keys
 
 `restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fall back to another key in the case that a `key` doesn't yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
