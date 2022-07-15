@@ -347,6 +347,20 @@ When migrating from build artifacts to pipeline artifacts:
 
 2. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
 
+### Example
+
+```yaml
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish'
+  inputs:
+    targetPath: $(Build.ArtifactStagingDirectory)/**
+    ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+        artifactName: 'prod'
+    ${{ else }}:
+        artifactName: 'dev'
+    artifactType: 'pipeline'
+```
+
 ## FAQ
 
 #### Q: What are build artifacts?
