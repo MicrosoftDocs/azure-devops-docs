@@ -1,62 +1,61 @@
 ---
 ms.topic: how-to
-title: Authorization using OAuth 2.0 | Azure DevOps Services REST APIs
+title: Authorize access to REST APIs with OAuth 2.0
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.technology: devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2021
+ms.date: 07/15/2022
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
+In this article, learn how to authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
+
 > [!NOTE]
 > The following guidance is intended for Azure DevOps Services users since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
 
-Authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
 Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token. Use this token when you call the REST APIs from your application.
 
-When you call Azure DevOps Services APIs for that user, use that user's access token.
-Access tokens expire, so refresh the access token if it's expired.
+When you call Azure DevOps Services APIs for that user, use that user's access token. Access tokens expire, so refresh the access token if it's expired.
 
 :::image type="content" source="media/oauth-overview.png" alt-text="Process to get authorization.":::
 
-For a C# example of the overall flow, see [vsts-auth-samples](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
+For a C# example of the overall flow, see [vsts-auth-samples](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample). 
 
-## Register your app
+> [!NOTE]
+> You can register an application within your instance of Azure Active Directory (Azure AD). For more information, see [OAuth 2.0 authentication with Azure AD](/azure/active-directory/fundamentals/auth-oauth2) and [OpenID Connect protocol](/azure/active-directory/develop/v2-protocols-oidc).
 
-Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
+## 1. Register your app
 
-Make sure you select the [scopes](#scopes) that your application needs,
-and then use the same scopes when you [authorize your app](#authorize-your-app).
-If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
+1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
-When Azure DevOps Services presents the authorization approval page to your user,
-it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
+2. Select the [scopes](#scopes) that your application needs, and then use the same scopes when you [authorize your app](#authorize-your-app). If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
+3. Select **Create application**.
 
-:::image type="content" source="media/grant-access.png" alt-text="Visual Studio Codespaces authorization page with your company and app information.":::
+   The application settings page displays.
 
-When Azure DevOps Services asks for a user's authorization, and the user grants it,
-the user's browser gets redirected to your authorization callback URL with the authorization code.
-The callback URL must be a secure connection (https) to transfer the code back to the app. It must exactly match the URL registered in your app.
-If it doesn't, a 400 error page is displayed instead of a page asking the user to grant authorization to your app.
+   :::image type="content" source="media/app-settings.png" alt-text="Applications settings shown for your app.":::
 
-When you register your app, the application settings page displays.
+   - When Azure DevOps Services presents the authorization approval page to your user, it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
-:::image type="content" source="media/app-settings.png" alt-text="Applications settings shown for your app.":::
+     :::image type="content" source="media/grant-access.png" alt-text="Visual Studio Codespaces authorization page with your company and app information.":::
 
-Call the authorization URL and pass your app ID and authorized scopes when you want to have a user authorize your app to access their organization.
+   - When Azure DevOps Services asks for a user's authorization, and the user grants it, the user's browser gets redirected to your authorization callback URL with the authorization code.
+   The callback URL must be a secure connection (https) to transfer the code back to the app and exactly match the URL registered in your app. If it doesn't, a 400 error page is displayed instead of a page asking the user to grant authorization to your app.
+
+4. Call the authorization URL and pass your app ID and authorized scopes when you want to have a user authorize your app to access their organization.
 Call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
 The settings for each app that you register are available from your profile `https://app.vssps.visualstudio.com/profile/view`.
 
-## Authorize your app
+## 2. Authorize your app
 
-If your user hasn't yet authorized your app to access their organization, call the authorization URL.
+1. If your user hasn't yet authorized your app to access their organization, call the authorization URL. It calls you back with an authorization code, if the user approves the authorization.
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -75,10 +74,7 @@ state         | string | Can be any value. Typically a generated string value th
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
 redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL registered with the app**.
 
-Azure DevOps Services asks your user to authorize your app.
-It handles authentication, and then calls you back with an authorization code, if the user approves the authorization.
-
-Add a link or button to your site that takes the user to the Azure DevOps Services authorization endpoint:
+2. Add a link or button to your site that takes the user to the Azure DevOps Services authorization endpoint:
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -99,9 +95,9 @@ https://fabrikam.azurewebsites.net/myapp/oauth-callback
         &state=User1
 ```
 
-## Get an access and refresh token for the user
+## 3. Get an access and refresh token for the user
 
-Now you use the authorization code to request an access token (and refresh token) for the user. Your service must make a service-to-service HTTP request to Azure DevOps Services.
+Use the authorization code to request an access token (and refresh token) for the user. Your service must make a service-to-service HTTP request to Azure DevOps Services.
 
 ### URL - authorize app
 
@@ -158,9 +154,9 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 ```
 
 > [!IMPORTANT]
-> Securely persist the **refresh_token** so your app doesn't need to prompt the user to authorize again. Access tokens expire relatively quickly and shouldn't be persisted.
+> Securely persist the **refresh_token** so your app doesn't need to prompt the user to authorize again. Access tokens expire quickly and shouldn't be persisted.
 
-## Use the access token
+## 4. Use the access token
 
 To use an access token, include it as a bearer token in the Authorization header of your HTTP request:
 
@@ -271,7 +267,7 @@ A: Check that you set the content type to application/x-www-form-urlencoded in y
 
 A: Verify that **Third-party application access via OAuth** hasn't been disabled by your organization's admin at `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`.
 
-In this scenario, the entire flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
+In this scenario, the flow to authorize an app and generate an access token works, but all REST APIs return only an error, such as `TF400813: The user "<GUID>" is not authorized to access this resource.`
 
 ### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
 
