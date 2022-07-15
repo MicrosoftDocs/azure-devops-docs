@@ -51,7 +51,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br><br>
+    **Visual Studio Git**
 
     1. To configure Git settings in Visual Studio, choose **Git > Settings** from the menu bar to open the **Options** view.
 
@@ -68,7 +68,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
   :::column-end:::
   :::column span="":::
 
-    **Visual Studio Team Explorer** <br><br>
+    **Visual Studio Team Explorer**
 
     1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer to open the **Settings** view.
 
@@ -490,7 +490,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br><br>
+    **Visual Studio Git**
 
     1. From the Git menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the diff and merge tool settings.
 
@@ -668,7 +668,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br><br>
+    **Visual Studio Git**
 
     1. From the Git menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Default repository location** setting.
 
@@ -755,7 +755,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br><br>
+    **Visual Studio Git**
 
     1. From the Git menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Enable download of author images from third-party sources** setting.
 
@@ -810,7 +810,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 :::row:::
   :::column span="":::
 
-    **Visual Studio Git** <br><br>
+    **Visual Studio Git**
 
     1. From the Git menu, choose **Git > Settings** and then select the **Git Global Settings** view. That view contains the **Commit changes after merge by default** setting.
 
