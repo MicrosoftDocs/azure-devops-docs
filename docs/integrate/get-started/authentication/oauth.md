@@ -34,7 +34,7 @@ For a C# example of the overall flow, see [vsts-auth-samples](https://github.com
 
 1. Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
-2. Select the [scopes](#scopes) that your application needs, and then use the same scopes when you [authorize your app](#authorize-your-app). If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
+2. Select the [scopes](#scopes) that your application needs, and then use the same scopes when you [authorize your app](#2-authorize-your-app). If you registered your app using the preview APIs, re-register because the scopes that you used are now deprecated.
 3. Select **Create application**.
 
    The application settings page displays.
@@ -229,9 +229,9 @@ Replace the placeholder values in the previous sample request body:
 
 [!INCLUDE [scopes table](../../includes/scopes.md)]
 
-[Register your app](#register-your-app) and use scopes to indicate which permissions in Azure DevOps Services that your app requires.
+[Register your app](#1-register-your-app) and use scopes to indicate which permissions in Azure DevOps Services that your app requires.
 When your users authorize your app to access their organization, they authorize it for those scopes.
-[Requesting the authorization](#authorize-your-app) passes the same scopes that you registered.
+[Requesting the authorization](#2-authorize-your-app) passes the same scopes that you registered.
 
 For more information, see [Create work item tracking/attachments](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0&preserve-view=true).
 
