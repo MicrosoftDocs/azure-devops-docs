@@ -1,5 +1,5 @@
 ---
-title: Gitconfig files
+title: Git preferences and settings
 titleSuffix: Azure Repos
 description: Learn how to view and configure many Git-related settings and preferences, and how to work with Git configuration files in Visual Studio.
 ms.assetid:
