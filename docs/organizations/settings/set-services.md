@@ -1,7 +1,7 @@
 ---
 title: Turn a service on or off
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: contperf-fy22q4
 description: Control which services are available for a project from the web portal for Azure DevOps.  
 ms.technology: devops-settings
 ms.author: kaelli
