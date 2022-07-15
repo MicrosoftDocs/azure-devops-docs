@@ -85,15 +85,15 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
 1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/menu-settings.png" border="false" alt-text="Go to Team Explorer Settings.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/menu-settings.png" border="false" alt-text="Screenshot of the Team Explorer Settings view in Visual Studio 2017.":::
 
 1. Choose **Global Settings** or **Repository Settings** to view and configure global-level or repository-level settings.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/git-global-local-settings.png" border="false" alt-text="Git settings.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/git-global-local-settings.png" border="false" alt-text="Screenshot of the global and repository options for Git settings in Visual Studio 2017.":::
 
 1. Visual Studio allows you to configure several common Git settings, as described in the following sections of this article. After configuring your desired settings, select **Update** to save the updated settings.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/update-git-settings.png" border="false" alt-text="Update settings.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/update-git-settings.png" border="false" alt-text="Screenshot of the repository settings options in Team Explorer in Visual Studio 2017.":::
 
 #### [Git Command Line](#tab/git-command-line/)
 
@@ -182,11 +182,11 @@ Name and email settings are available at the global or repo scope.
 
 1. Provide your user name and email, then choose **Update** to save. 
 
-    :::image type="content" source="media/git-config/visual-studio-2017/global-settings-username-email.png" border="false" alt-text="Global settings name and email.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/global-settings-username-email.png" border="false" alt-text="Screenshot of the global settings including name and email settings in Team Explorer in Visual Studio 2017.":::
 
     Note that for **Repository Settings**, you'll first need to check **Override global user name and email settings**.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/repository-settings-username-email.png" border="false" alt-text="Repository settings name and email.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/repository-settings-username-email.png" border="false" alt-text="Screenshot of the repository settings including name and email settings in Team Explorer in Visual Studio 2017.":::
 
 #### [Git Command Line](#tab/git-command-line/)
 
@@ -627,7 +627,7 @@ To view all other Git configuration settings, open and view the Git configuratio
 
 The **Other** section allows you to view the Git configuration settings for this repository, except for settings that are displayed and managed in the Visual Studio Git settings pane.
 
-:::image type="content" source="media/git-config/visual-studio-2017/other.png" border="false" alt-text="Screenshot showing the Other section.":::
+:::image type="content" source="media/git-config/visual-studio-2017/other.png" border="false" alt-text="Screenshot of the Other section in the Setting view of Team Explorer in Visual Studio 2017.":::
 
 To view all of your Git configuration settings, you can open and view the Git configuration files themselves, or you can run `git config --list` to display the settings.
 
@@ -696,7 +696,7 @@ The **Default repository location** setting is only available at the global scop
 
 1. Set the default repository location for the current user, and select **Update** to save.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/default-repository-location.png" border="false" alt-text="Default repository location.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/default-repository-location.png" border="false" alt-text="Screenshot of the default repository location in the Settings view in Team Explorer in Visual Studio 2017.":::
 
 #### [Git Command Line](#tab/git-command-line/)
 
@@ -761,7 +761,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
     2. Choose whether to enable download of author images from third-party sources, and select **OK** to save.
      
-        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/download-image-setting.png" alt-text="Screenshot showing checkbox to enable download of author images from third-party source in the Options dialog box in Visual Studio 2019. " lightbox="media/git-config/visual-studio-2019/git-experience/download-image-setting-lrg.png":::
+        :::image type="content" source="media/git-config/visual-studio-2019/git-experience/download-image-setting.png" alt-text="Screenshot showing the checkbox to enable download of author images from third-party source in the Options dialog box in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/git-experience/download-image-setting-lrg.png":::
 
   :::column-end:::
   :::column span="":::
@@ -770,7 +770,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
     In Team Explorer, choose **Settings** to open the **Settings** view. Then choose **Global Settings** to choose whether to enable download of author images from third-party sources.
 
-    :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/download-image-setting.png" alt-text="Screenshot showing checkbox to enable download of author images from third-party source in Team Explorer in Visual Studio 2019. " lightbox="media/git-config/visual-studio-2019/team-explorer/download-image-setting-lrg.png":::
+    :::image type="content" source="media/git-config/visual-studio-2019/team-explorer/download-image-setting.png" alt-text="Screenshot showing the checkbox to enable download of author images from third-party source in Team Explorer in Visual Studio 2019." lightbox="media/git-config/visual-studio-2019/team-explorer/download-image-setting-lrg.png":::
 
   :::column-end:::
 :::row-end:::
@@ -838,7 +838,7 @@ The **Commit changes after merge by default** setting is only available at the g
 
 1. Choose whether to commit changes after merge by default, and select **Update** to save.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/commit-changes-after-merge-by-default.png" border="false" alt-text="Commit changes after merge by default.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/commit-changes-after-merge-by-default.png" border="false" alt-text="Screenshot of commit changes after merge by default.":::
 
 #### [Git Command Line](#tab/git-command-line/)
 
@@ -896,7 +896,7 @@ The **Enable push --force** option corresponds to the `push --force` command. Th
 
 1. Choose whether to enable `push --force-with-lease`, and select **Update** to save.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/enable-push-force.png" border="false" alt-text="Enable push --force.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/enable-push-force.png" border="false" alt-text="Screenshot of the the Enable force push option in Visual Studio 2017.":::
 
 #### [Git Command Line](#tab/git-command-line/)
 
@@ -1015,7 +1015,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
 
 1. Choose to open and edit the `.gitignore` and `.gitattributes` files, and select **Update** to save.
 
-    :::image type="content" source="media/git-config/visual-studio-2017/ignore-and-attributes-files.png" border="false" alt-text="Ignore and attributes files.":::
+    :::image type="content" source="media/git-config/visual-studio-2017/ignore-and-attributes-files.png" border="false" alt-text="Screenshot of the option to edit gitignore and gitattributes files in Visual Studio 2017.":::
 
 #### [Git Command Line](#tab/git-command-line/)
 
