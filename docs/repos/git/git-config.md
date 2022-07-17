@@ -129,7 +129,7 @@ git config --list --local
 
 ## Modify Git configuration file settings
 
-You can view and edit Git configuration settings in Visual Studio or by directly editing the applicable Git configuration file. For more information about Git configuration file settings, see [Customizing Git](https://git-scm.com/book/v2/Customizing-Git-Git-Configuration) and [git-config documentation](https://git-scm.com/docs/git-config). In the following sections, we discuss how you can edit each of the listed Git configuration file settings:
+You can view and edit Git configuration settings in Visual Studio or by directly editing the applicable Git configuration file. For more information about Git configuration file settings, see [Customizing Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) and [git-config documentation](https://git-scm.com/docs/git-config). In the following sections, we discuss how you can edit each of the listed Git configuration file settings:
 
 - [Name and email](#name-and-email)
 - [Prune remote branches during fetch](#prune-remote-branches-during-fetch)
@@ -963,7 +963,7 @@ The Git Repository window has a list of branches displayed in a tree structure. 
 
 1. Choose whether to enable **Automatically check out branches with double-click or the Enter key**, and select **OK** to save.
   
-    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/checkout-branch-setting.png" alt-text="Screenshot showing the checkbox to check out branches with double-click or Enter key in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/checkout-branch-setting-lrg.png":::
+    :::image type="content" source="media/git-config/visual-studio-2019/git-experience/check-out-branch-setting.png" alt-text="Screenshot showing the checkbox to check out branches with double-click or Enter key in the Options dialog box." lightbox="media/git-config/visual-studio-2019/git-experience/check-out-branch-setting-lrg.png":::
 
 #### [Visual Studio 2017](#tab/visual-studio-2017/)
 
