@@ -250,7 +250,7 @@ Valid values are:
 
 #### [Visual Studio 2017](#tab/visual-studio-2017/)
 
->NOTE
+> [!NOTE]
 >Requires Visual Studio 2017 Update 5 and later.
 
 The **Prune remote branches during fetch** setting corresponds to the `git config fetch.prune` command. You can specify this setting at the global or repo scope. To keep remote tracking branch lists clean and up to date for all your repos, we recommend that you enable this option at the global level.
@@ -325,7 +325,7 @@ Valid values are:
 
 #### [Visual Studio 2017](#tab/visual-studio-2017/)
 
->NOTE
+> [!NOTE]
 >Requires Visual Studio 2017 Update 5 and later.
 
 The **Rebase local branch when pulling** setting corresponds to the `git config pull.rebase` command. You can specify this setting at the global or repo scope.
