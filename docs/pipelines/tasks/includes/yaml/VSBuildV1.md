@@ -8,7 +8,7 @@ ms.technology: devops-cicd-tasks
 ---
 
 ```YAML
-# Visual Studio build
+# Visual Studio Build
 # Build with MSBuild and set the Visual Studio version property
 - task: VSBuild@1
   inputs:
