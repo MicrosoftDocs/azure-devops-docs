@@ -51,17 +51,15 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 
     :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot showing how to set up a new personal access token.":::
 
-## Create, package, and publish a PowerShell module
+## Create a module
 
-Create a new folder *Get-Hello*. Navigate inside your folder and create a new file *Get-Hello.psm1*.
+1. Create a new folder *Get-Hello*. Navigate inside your folder and create a new file *Get-Hello.psm1*.
 
-```
-|--- Get-Hello               // Parent folder     
-    |--- Get-Hello.psm1     // This will become our PowerShell Module
-    |--- Get-Hello.psd1    // This will become our module manifest
-```
-
-### Create a PowerShell module
+    ```
+    |--- Get-Hello               // Parent folder     
+        |--- Get-Hello.psm1     // This will become our PowerShell Module
+        |--- Get-Hello.psd1    // This will become our module manifest
+    ```
 
 1. Paste the following script into your *Get-Hello.psm1* file:
 
@@ -97,7 +95,7 @@ Create a new folder *Get-Hello*. Navigate inside your folder and create a new fi
                  'PSGet.Resource.psd1')
     ```
 
-### Package and publish the module
+## Pack and publish module
 
 1. Create a *.nuspec* file for your module. This command will create a *Get-Hello.nuspec* file that contains metadata needed to pack the module.
 
@@ -214,32 +212,29 @@ If the *Install-Module* command is returning the following error: *Unable to res
 Register-PackageSource -Name "PowershellAzureDevopsServices" -Location "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2" -ProviderName NuGet -Trusted -Trusted -SkipValidate -Credential $credsAzureDevopsServices
 ```
 
-## Use the private PowerShell repository in Azure Pipelines
+## Connect to feed with Azure Pipelines
 
-The following example shows how to install a PowerShell Module from the private PowerShell repository.
+The following example shows how to authenticate and install a PowerShell Module with YAML pipeline.
 
 ```yaml
 variables:
-  PackageFeedEndpoint: https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2 # Org-scoped feed.
-  # Project-scoped feed:https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2 
+  PackageFeedEndpoint: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v2 # For Project-scoped feed use this endpoint url: https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v2 
   
-  # Construct a JSON object that contains the package feed endpoint URL and the personal access token (PAT) to pass them to the Azure Artifacts credential provider. 
-  # See https://github.com/microsoft/artifacts-credprovider#environment-variables for more details.
+  # Construct a JSON object that contains the endpoint URL and the personal access token to pass them to Azure Artifacts credential provider. 
   PackageFeedEndpointCredential: '{"endpointCredentials": [{"endpoint":"$(PackageFeedEndpoint)", "username":"OPTIONAL", "password":"ACCESS TOKEN"}]}'
   
 steps:
-  # NOTE: To prevent possible 'Unable to resolve package source' errors when trying to install modules from your
-  # Azure Artifacts feed, call Register-PSRepository in a separate PowerShell task to the Install-Module call.
+  # To prevent possible 'Unable to resolve package source' errors when installing modules from your feed, call Install-Module in a separate PowerShell task.
   - powershell: |
       Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "$(PackageFeedEndpoint)" -PublishLocation "$(PackageFeedEndpoint)" -InstallationPolicy Trusted
-    displayName: Register Azure Artifacts Feed as PSRepository
+    displayName: 'Register Azure Artifacts Feed as PSRepository'
     env:
       # This environment variable passes the credentials to the credential provider.
       VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
       
   - powershell: |
       Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
-    displayName: Install Get-Hello PowerShell module
+    displayName: 'Install Get-Hello PowerShell module'
     env:
       # The credentials must be set on every task that interacts with your private PowerShell repository.
       VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: $(PackageFeedEndpointCredential)
@@ -249,12 +244,8 @@ steps:
     displayName: Execute Get-Hello
 ```
 
-## Credit
-
-Credit to this [article on Medium](https://medium.com/@jsrice7391/using-vsts-for-your-companys-private-powershell-library-e333b15d58c8) that was used as a source for this tutorial.
-
 ## Related articles
 
-- [Project-scoped vs org-coped feeds](../feeds/project-scoped-feeds.md)
-- [Feed permissions](../feeds/feed-permissions.md)
+- [Upstream sources](../how-to/set-up-upstream-sources.md)
+- [Configure permissions](../feeds/feed-permissions.md)
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
