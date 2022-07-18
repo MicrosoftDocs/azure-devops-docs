@@ -31,30 +31,25 @@ This article will guide you through setting up your Azure Artifacts feed as a pr
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
 - A private project. [create a project](../../organizations/projects/create-project.md), if you don't have one already.
 
-## Create a PAT
+## Create a personal access token
 
 Using a personal access token (PAT) is a great way to authenticate with Azure DevOps without using your primary credentials. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for more details.
 
-1. Head to your organization in Azure DevOps Services: `https://dev.azure.com/<org_name>`
+1. Navigate to you Azure DevOps organization `https://dev.azure.com/<ORGANIZATION_NAME>/`
 
-2. From your home page, open your profile. Go to your security details:
+1. Select the user settings icon, and then select **Personal access tokens**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Profile security](../../repos/git/media/my-profile-team-services.png)  
+    :::image type="content" source="../media/user-settings-pat.png" alt-text="A screenshot showing how to create a personal access token.":::
 
-3. Create a personal access token.
+1. Select **New Token**
 
-    > [!div class="mx-imgBorder"]
-    > ![Personal access token](../../repos/git/media/add-personal-access-token.png)
+1. Enter a name for your PAT and then choose an **Expiration** date.
 
-4.  Provide a name and an expiration date for your token and select your organization.
+1. Select **Custom defined**, and then select **Packaging** > **Read, write & manage**.
 
-    > [!div class="mx-imgBorder"]
-    > ![PAT setup](../../repos/git/media/setup-personal-access-token.png)
+1. Select **Create** when you are done. Copy and store your PAT in a safe location.
 
-5.  Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes) that this token will be authorized to access. You will only need **Packaging: Read, write & manage** permissions for this tutorial but you can also add more privileges if you'd like to use this token for other tasks.
-
-6. When you're done, make sure to copy your token to a safe location, as you won't be able to view it afterwards.
+    :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot showing how to set up a new personal access token.":::
 
 ## Create the feed
 
