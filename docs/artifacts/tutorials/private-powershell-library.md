@@ -78,7 +78,7 @@ Create a new folder *Get-Hello*. Navigate inside your folder and create a new fi
     ```
 
 1. Open your *Get-Hello.psd1* file and find the `RootModule` variable. Replace the empty string with the path to your *Get-Hello.psm1* file as follows:
-    
+
     ```powershell
     RootModule = 'Get-Hello.psm1'
     ```
@@ -88,82 +88,45 @@ Create a new folder *Get-Hello*. Navigate inside your folder and create a new fi
     ```powershell
     FunctionsToExport = @('Get-Hello')
     ```
-    
+
 1. Find the `FileList` section, and add the following list of files that should be packaged with your module.
 
     ```powershell
     FileList = @('PSModule.psm1',
                  'PSGet.Format.ps1xml',
                  'PSGet.Resource.psd1')
-    ```       
+    ```
 
 ### Package and publish the module
 
-1. Create a *.nuspec* file for your module. This command will create a *Get-Hello.nuspec* file that contains metadata needed to package the module.
+1. Create a *.nuspec* file for your module. This command will create a *Get-Hello.nuspec* file that contains metadata needed to pack the module.
 
     ```powershell
     nuget spec Get-Hello
     ```
 
-     Few things to keep in mind here:
+1. Run the following command to pack your module.
 
-   * The version number on the Module Manifest and the .nuspec file must match.
-   * By default, if we leave the sample dependencies, NuGet will install jQuery.
-
-    Here is the `Get-Hello.nuspec` file:
-
-     ```xml
-     <?xml version="1.0"?>
-     <package >
-     <metadata>
-       <id>Get-Hello</id>
-       <version>1.0.0</version>
-       <authors>frantot</authors>
-       <owners>frantot</owners>
-       <requireLicenseAcceptance>false</requireLicenseAcceptance>
-       <description>The module says hello to the user</description>
-       <releaseNotes>This is the newest I know of.</releaseNotes>
-       <copyright>Copyright 2019</copyright>
-       <tags>PSModule</tags>
-       <dependencies>
-       </dependencies>
-     </metadata>
-     </package>
-     ```
-
-2. Now that we have both the PowerShell module and the NuGet spec file, we are ready to to pack it and publish it.
-
-    - Package the module:
-    
     ```powershell
     nuget pack Get-Hello.nuspec
     ```
 
-    - Add the new package source to your NuGet configuration file:
-    
-    ```powershell
-    nuget sources Add -Name "PowershellModules" -Source "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v3/index.json" -username "<user_name>" -password "<personal_access_token(PAT)>"
-    ```
-    
-    If you're still using the older `visualstudio.com` URLs, use the following command instead:
+1. Run the following command to add your feed source URL.
 
     ```powershell
-    nuget sources Add -Name "PowershellModules" -Source "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v3/index.json" -username "<user_name>" -password "<personal_access_token_you_created>"
+    nuget sources Add -Name "<FEED_NAME>" -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" -username "<USER_NAME>" -password "<PERSONAL_ACCESS_TOKEN>"
     ```
 
-    - Publish the NuGet package to your feed:
-    
+1. Publish the package to your feed.
+
     ```powershell
-    nuget push -Source "PowershellModules" -ApiKey AzureDevOpsServices "your .nupkg path. eg: .\Get-Hello.1.0.0.nupkg"
+    nuget push -Source "<FEED_NAME>" -ApiKey "<ANY_STRING>" "<PACKAGE_PATH>"
     ```
 
-Our PowerShell module is now available in our feed.
-
-> [!div class="mx-imgBorder"]
-> ![uploaded package](../../repos/git/media/artifact-package-powershell.png)
+    :::image type="content" source="../../repos/git/media/artifact-package-powershell.png" alt-text="A screenshot showing the published package.":::
 
 > [!NOTE]
-> Your `NuGet.config` file is located at `%appdata%\NuGet\NuGet.Config` for Windows, and at `~/.config/NuGet/NuGet.Config` or `~/.nuget/NuGet/NuGet.Config` for Mac/Linux (depending on the OS distribution).
+> The version number in the Module Manifest (.psd1) and the .nuspec file must match.
 
 ## Connecting to the feed as a PowerShell repo
 
