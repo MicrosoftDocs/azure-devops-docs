@@ -29,7 +29,7 @@ This article will guide you through setting up your Azure Artifacts feed as a pr
 
 - [NuGet.exe](https://www.nuget.org/downloads)
 - An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-- A private project. [create a project](../../organizations/projects/create-project.md), if you don't have one already.
+- An Azure Artifacts feed. [Create a new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
 ## Create a personal access token
 
@@ -50,29 +50,6 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 1. Select **Create** when you are done. Copy and store your PAT in a safe location.
 
     :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot showing how to set up a new personal access token.":::
-
-## Create the feed
-
-A feed is a central repository that can store multiple packages of different types. To store our packages, the PowerShell Modules in this scenario, we will need to create a new feed.
-
-1. Navigate to **Azure Artifacts** from your organization.
-
-    > [!div class="mx-imgBorder"]
-    > ![Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
-
-2. Select **Create Feed**
-
-    > [!div class="mx-imgBorder"]
-    > ![Create feed](../media/new-feed-button-azure-devops-newnav.png)
-
-3. In the dialog, provide a feed name and chose your visibility, scope and upstream sources.
- 
-    > [!div class="mx-imgBorder"]
-    > ![new feed dialog box](../media/new-feed-with-scope-dialog.png)
-    
-4. Select **Create**. 
-
-Now that you've created a feed that will act as your PowerShell repository, let's create and package a PowerShell module.
 
 ## Creating, packaging, and sending a module
 
