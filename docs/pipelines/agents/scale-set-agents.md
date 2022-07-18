@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/22/2021
+ms.date: 07/18/2022
 monikerRange: azure-devops
 ---
 
@@ -85,6 +85,7 @@ In the following example, a new resource group and virtual machine scale set are
     --vm-sku Standard_D2_v3 \
     --storage-sku StandardSSD_LRS \
     --authentication-type SSH \
+    --generate-ssh-keys \
     --instance-count 2 \
     --disable-overprovision \
     --upgrade-policy-mode manual \
