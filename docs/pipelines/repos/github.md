@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 07/13/2022
+ms.date: 07/18/2022
 monikerRange: azure-devops
 ---
 
@@ -340,6 +340,7 @@ pr:
     - docs/README.md
 ```
 > **Tips:**
+>  * Azure Pipelines posts a neutral status back to GitHub when it decides not to run a validation build because of a path exclusion rule. This provides a clear direction to GitHub indicating that Azure Pipelines has completed its processing. For more information, see [Post neutral status to GitHub when a build is skipped](/azure/devops/release-notes/2021/sprint-194-update#post-neutral-status-to-github-when-a-build-is-skipped).
 >  * [Wild cards are now supported with path filters](/azure/devops/release-notes/2021/sprint-192-update#support-for-wild-cards-in-path-filters).
 >  * Paths are always specified relative to the root of the repository.
 >  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
