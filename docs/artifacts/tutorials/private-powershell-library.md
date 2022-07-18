@@ -1,36 +1,35 @@
 ---
-title: Use Azure Artifacts as a private PowerShell repository
-description: Use Azure Artifacts within Azure DevOps Services to create your own private PowerShell repository
+title: Use Azure Artifacts feeds as a private PowerShell repository
+description: How to use Azure Artifacts feeds as a private PowerShell repository
 ms.technology: devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.reviewer: amullans
-ms.date: 12/16/2021
+ms.date: 07/18/2022
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Use Azure Artifacts as a private PowerShell repository
+# Use an Azure Artifacts feed as a private PowerShell repository
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
+Azure Artifacts provides an easy way to share PowerShell scripts across teams to promote collaboration and maximize effectiveness. By storing PowerShell modules in a private repository, you can give members of your team the ability to download or update those scripts quickly using the command line.
 
-> [!NOTE]
-> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../start-using-azure-artifacts.md).
+This article will guide you through setting up your Azure Artifacts feed as a private PowerShell repository to store and share your PowerShell modules. You'll learn how to:
 
-In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShell repository that your team can download and upload PowerShell modules to. You'll complete the following steps:
-
->[!div class="checklist"]      
-> * Create a Personal Access Token (PAT) to authenticate other services with Azure DevOps Services
-> * Create a feed within Azure Artifacts that will be used to store your PowerShell modules
-> * Create, package, and send a PowerShell module to your Azure Artifacts Feed
-> * Connect to the feed from PowerShell to see and download your modules  
+>[!div class="checklist"]
+> * Create a Personal Access Token
+> * Create a new feed to store PowerShell modules
+> * Create, package, and publish PowerShell modules
+> * Connect to a feed with PowerShell
+> * Use the private PowerShell repository with Azure Pipelines
 
 ## Prerequisites
 
-- [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
-- An [Azure DevOps Services](https://azure.microsoft.com/services/devops/) account.
+- [NuGet.exe](https://www.nuget.org/downloads)
+- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
+- A private project. [create a project](../../organizations/projects/create-project.md), if you don't have one already.
 
 ## Create a PAT
 
