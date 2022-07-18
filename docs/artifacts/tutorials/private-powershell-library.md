@@ -51,23 +51,19 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
 
     :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot showing how to set up a new personal access token.":::
 
-## Creating, packaging, and sending a module
+## Create, package, and publish a PowerShell module
 
-These next steps will be using a simple `Get-Hello` script that simply writes "Hello from my Azure DevOps Services Package."
+Create a new folder *Get-Hello*. Navigate inside your folder and create a new file *Get-Hello.psm1*.
 
-### Create the file structure
-
-Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` file:
-
-``` 
-|--- Get-Hello                     
+```
+|--- Get-Hello               // Parent folder     
     |--- Get-Hello.psm1     // This will become our PowerShell Module
-    |--- Get-Hello.psd1     // This will become our module manifest
+    |--- Get-Hello.psd1    // This will become our module manifest
 ```
 
-### Create and populate the PowerShell module and module manifest
+### Create a PowerShell module
 
-1. Paste the following script into your newly created `Get-Hello.psm1` file:
+1. Paste the following script into your *Get-Hello.psm1* file:
 
     ```powershell
     Function Get-Hello{
@@ -75,52 +71,25 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
     }
     ```
 
-2. Create the module manifest by running the following command in your `Get-Hello` directory path. This will write the module manifest to your `Get-Hello.psd1` file.
+1. Create the module manifest by running the following command in your *Get-Hello* directory path.
 
     ```powershell
     New-ModuleManifest -Path .\Get-Hello.psd1
     ```
 
-3. Find the **Nested Modules** field in your `Get-Hello.psd1` file and paste in the path to your `Get-Hello.psm1` file. You may also need to define your `RootModule` when creating your own Module Manifests. To do so, paste the following snippet in your `Get-Hello.psd1`
+1. Open your *Get-Hello.psd1* file and find the `RootModule` variable. Replace the empty string with the path to your *Get-Hello.psm1* file as follows:
     
     ```powershell
     RootModule = 'Get-Hello.psm1'
     ```
 
-4. The `FunctionsToExport = @()` section is meant to define the module's exported functions. This is simply a list of all exported functions. The following is an example from `PowerShellGet.psd1`:
+1. The `FunctionsToExport` section is meant to define the list of functions that will be exported from this module. Add your *Get-Hello* function as follows:
 
     ```powershell
-    FunctionsToExport = @('Install-Module',
-                          'Find-Module',
-                          'Save-Module',
-                          'Update-Module',
-                          'Publish-Module', 
-                          'Get-InstalledModule',
-                          'Uninstall-Module',
-                          'Find-Command', 
-                          'Find-DscResource', 
-                          'Find-RoleCapability',
-                          'Install-Script',
-                          'Find-Script',
-                          'Save-Script',
-                          'Update-Script',
-                          'Publish-Script', 
-                          'Get-InstalledScript',
-                          'Uninstall-Script',
-                          'Test-ScriptFileInfo',
-                          'New-ScriptFileInfo',
-                          'Update-ScriptFileInfo',
-                          'Get-PSRepository',
-                          'Set-PSRepository',                      
-                          'Register-PSRepository',
-                          'Unregister-PSRepository',
-                          'Update-ModuleManifest')
+    FunctionsToExport = @('Get-Hello')
     ```
     
-    > [!TIP]
-    > Your module manifest should export the `Get-Hello` function you created in Step 1.
-    
-5. It is also possible to define a list of files as part of your module. Just add this list under `FileList=@()`.
+1. Find the `FileList` section, and add the following list of files that should be packaged with your module.
 
     ```powershell
     FileList = @('PSModule.psm1',
@@ -130,15 +99,13 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
 
 ### Package and publish the module
 
-We now have the module and the module manifest. We are ready to package it and publish it to our Azure Artifacts feed.
-
-1. In an elevated PowerShell prompt, run the following snippet:
+1. Create a *.nuspec* file for your module. This command will create a *Get-Hello.nuspec* file that contains metadata needed to package the module.
 
     ```powershell
     nuget spec Get-Hello
     ```
 
-    The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs to package our module. Few things to keep in mind here:
+     Few things to keep in mind here:
 
    * The version number on the Module Manifest and the .nuspec file must match.
    * By default, if we leave the sample dependencies, NuGet will install jQuery.
