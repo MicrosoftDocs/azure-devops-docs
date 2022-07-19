@@ -36,11 +36,11 @@ We recommend using two config files, the first one you should use to authenticat
 
 2. Select **npm** from the list of package types.
 
-3. If this is the first time using Azure Artifacts with npm, select **Get the tools** button and follow the instructions to install the prerequisites. 
+3. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
 
 ::: moniker range="azure-devops"   
 
-4. Follow the instructions in **Project setup** to set up your *.npmrc* file.
+4. Follow the instructions in **Project setup** to set up your config file.
 
     :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
 
@@ -48,7 +48,7 @@ We recommend using two config files, the first one you should use to authenticat
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-4. Follow the instructions in **Project setup** to set up your *.npmrc* file.
+4. Follow the instructions in **Project setup** to set up your config file.
 
    :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
 
@@ -92,7 +92,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 `vsts-npm-auth` is not supported in Linux/Mac. Follow the steps below to set up your credentials:
 
-1. Copy the following snippet into your .npmrc file.
+1. Copy the following snippet into your npmrc file.
 
     - **Organization-scoped feed**:
 
@@ -214,7 +214,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 - script: npm ci
 ```
 
-- **workingFile**: Path to the .npmrc file
+- **workingFile**: Path to the npmrc file
 - **customEndpoint**: Comma-separated list of npm service connection names for registries from external organizations. For registries in your org, leave this blank
 
 * * *
@@ -267,7 +267,7 @@ Follow the steps below to modify/reset your vsts-npm-auth credentials:
 
 - Delete your .npmrc file.
 
-- Re-install vsts-npm-auth.
+- Reinstall vsts-npm-auth.
 
     ```command
     npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
