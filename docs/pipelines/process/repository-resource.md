@@ -3,7 +3,7 @@ title: Add protection to a repository resource
 description: Add checks and pipeline protection to a repository
 ms.custom: pipelinesresourcesrefresh
 ms.reviewer: vijayma
-ms.date: 12/22/2021
+ms.date: 07/19/2022
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -42,7 +42,7 @@ You must be a member of the [**Project Administrators** group](../../organizatio
 Your repository has a resource check.
 ## Add pipeline permissions to a repository resource
 
-You can also set a repository to only be used on specific YAML pipelines. Restricting a repository to specific pipelines prevents an unauthorized YAML pipeline in your project from using your repository. This setting only applies to YAML pipelines; all classic pipelines have access.
+You can also set a repository to only be used on specific YAML pipelines. Restricting a repository to specific pipelines prevents an unauthorized YAML pipeline in your project from using your repository. This setting only applies to YAML pipelines.
 
 > [!IMPORTANT]
 > Access to all pipelines is turned *off* for [protected resources](../security/resources.md#protected-resources) by default. To grant access to all pipelines, enter a check in the security box next to "Grant access permission to all pipelines" for the resource. You can do so when you're creating or editing a resource.

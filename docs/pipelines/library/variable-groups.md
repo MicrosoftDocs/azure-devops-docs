@@ -6,7 +6,7 @@ ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/03/2021
+ms.date: 07/19/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 Variable groups store values and secrets that you might want to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group) or make available across multiple pipelines. You can share and use variable groups in multiple pipelines in the same project.
 
-Secret variables in Variables groups are [protected resources](../security/resources.md). You can add combinations of approvals, checks, and pipeline permissions to limit access to the secret variables in a Variable group.  Access to non-secret variables is not limited by approvals, checks, and pipeline permissions.
+Secret variables in Variables groups are [protected resources](../security/resources.md). You can add combinations of approvals, checks, and pipeline permissions to limit access to secret variables in a variable group.  Access to non-secret variables is not limited by approvals, checks, and pipeline permissions.
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
