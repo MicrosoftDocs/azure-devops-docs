@@ -35,7 +35,7 @@ This article will guide you through setting up your Azure Artifacts feed as a pr
 
 Using a personal access token (PAT) is a great way to authenticate with Azure DevOps without using your primary credentials. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for more details.
 
-1. Navigate to you Azure DevOps organization `https://dev.azure.com/<ORGANIZATION_NAME>/`
+1. Navigate to your Azure DevOps organization `https://dev.azure.com/<ORGANIZATION_NAME>/`
 
 1. Select the user settings icon, and then select **Personal access tokens**.
 
@@ -200,7 +200,7 @@ Using a personal access token (PAT) is a great way to authenticate with Azure De
     Find-Module -Repository PowershellAzureDevopsServices
     ```
 
-1. Run the following command if you want To install the *Get-Hello* module.
+1. Run the following command if you want to install the *Get-Hello* module.
 
     ```powershell
     Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
