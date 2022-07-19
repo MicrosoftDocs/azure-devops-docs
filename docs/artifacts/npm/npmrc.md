@@ -249,6 +249,30 @@ If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`
 vsts-npm-auth -config .npmrc -F
 ```
 
+- **Reset vsts-npm-auth**:
+
+Follow the steps below to modify/reset your vsts-npm-auth credentials:
+
+- Uninstall vsts-npm-auth.
+
+    ```command
+    npm uninstall -g vsts-npm-auth
+    ```
+
+- Clear your npm cache.
+
+    ```command
+    npm cache clean --force
+    ```
+
+- Delete your .npmrc file.
+
+- Re-install vsts-npm-auth.
+
+    ```command
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    ```
+
 ## Related articles
 
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
