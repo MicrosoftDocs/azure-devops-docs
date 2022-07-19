@@ -227,7 +227,7 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 
 ## Troubleshoot
 
-- **Command is not recognized**:
+#### vsts-npm-auth is not recognized
 
 If you're running into the following error:
 
@@ -241,7 +241,7 @@ Then it's likely that the npm modules folder is not in your path. To fix this is
 
 Alternatively, you can edit the PATH variable `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell) to add it to your path.
 
-- **Unable to authenticate**:
+#### Unable to authenticate
 
 If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
 
@@ -249,7 +249,7 @@ If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`
 vsts-npm-auth -config .npmrc -F
 ```
 
-- **Reset vsts-npm-auth**:
+#### Reset vsts-npm-auth
 
 Follow the steps below to modify/reset your vsts-npm-auth credentials:
 
