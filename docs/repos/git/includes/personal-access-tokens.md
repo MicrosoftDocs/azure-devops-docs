@@ -296,6 +296,7 @@ If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more info
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 ## Modify a PAT
 
 You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes). After regeneration, the previous PAT is no longer authorized.
