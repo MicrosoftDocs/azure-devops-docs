@@ -50,7 +50,30 @@ https://github.com/azure/azureml-examples
 
 [!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
-## Create the pipeline
+## Create an Azure Resource Manager connection
+
+You'll need an Azure Resource Manager connection to authenticate with Azure portal. 
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+
+2. Choose **+ New service connection** and select **Azure Resource Manager**.
+
+3. Select the default authentication method, **Service principal (automatic)**.
+
+4. Create your service connection. Set your subscription, resource group, and connection name. 
+    :::image type="content" source="media/machine-learning/machine-learning-arm-connection.png" alt-text="Screenshot of ARM service connection.":::
 
 
+## Create variables
 
+secure way to create variables for subscriptionID, resource group, and machine learning
+
+## Set up Python
+
+
+## Run code
+
+
+## Verify run
+
+## Delete resources
