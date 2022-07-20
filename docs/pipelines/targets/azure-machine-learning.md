@@ -26,8 +26,7 @@ You can use a DevOps pipeline to automate the machine learning lifecycle. Some o
 
 This article will teach you how to create an Azure Pipeline that builds and deploys a machine learning model to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning). You'll train a scikit-learn linear regression model on the Diabetes dataset.
 
-This tutorial uses [Azure Machine Learning Python SDK v2](python/api/overview/azure/ml/installv2), which is in public preview, and 
-SDK v2 and [Azure CLI ML extension v2](/cli/azure/ml). 
+This tutorial uses [Azure Machine Learning Python SDK v2](/python/api/overview/azure/ml/installv2), which is in public preview, and SDK v2 and [Azure CLI ML extension v2](/cli/azure/ml). 
 
 ## Prerequisites
 
@@ -36,44 +35,156 @@ Complete the [Quickstart: Get started with Azure Machine Learning](/azure/machin
 * Create a cloud-based compute instance to use for your development environment
 * Create a cloud-based compute cluster to use for training your model
 
-## Get the code
+## Step 1: Get the code
 
-[!INCLUDE [include](../ecosystems/includes/get-code-before-sample-repo.md)]
+Fork the following repo at GitHub:
 
 ```
 https://github.com/azure/azureml-examples
 ```
 
-## Sign in to Azure Pipelines
+## Step 2: Sign in to Azure Pipelines
 
 [!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
 
 [!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
-## Create an Azure Resource Manager connection
+## Step 3: Create an Azure Resource Manager connection
 
 You'll need an Azure Resource Manager connection to authenticate with Azure portal. 
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-2. Choose **+ New service connection** and select **Azure Resource Manager**.
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-3. Select the default authentication method, **Service principal (automatic)**.
+1. Select the default authentication method, **Service principal (automatic)**.
 
-4. Create your service connection. Set your subscription, resource group, and connection name. 
+1. Create your service connection. Set your subscription, resource group, and connection name. 
     :::image type="content" source="media/machine-learning/machine-learning-arm-connection.png" alt-text="Screenshot of ARM service connection.":::
 
 
-## Create variables
+## Step 4: Create a pipeline
 
-secure way to create variables for subscriptionID, resource group, and machine learning
+1. Go to **Pipelines**, and then select **New pipeline**.
 
-## Set up Python
+1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When you see the list of repositories, select your repository.
+
+1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+
+1. Select the **Starter pipeline**. You'll update the starter pipeline template.
+
+## Step 5: Create variables
+
+You should already have a resource group in Azure with [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning). To deploy your DevOps pipeline to AzureML, you'll need to create variables for your subscription ID, resource group, and machine learning workspace. 
+
+1. Select the Variables tab on your pipeline edit page.  
+    :::image type="content" source="media/machine-learning/machine-learning-select-variables.png" alt-text="Screenshot of variables option in pipeline edit. ":::    
+1. Create a new variable, `Subscription_ID`, and select the checkbox **Keep this value secret**. Set the value to your [Azure portal subscription ID](azure/azure-portal/get-subscription-tenant-id).
+1. Create a new variable for `Resource_Group` with the name of the resource group for Azure Machine Learning (example: `machinelearning`). 
+1. Create a new variable for `AzureML_Workspace_Name` with the name of your Azure ML workspace (example: `docs-ws`).
+1. Select **Save** to save your variables. 
+
+## Step 6: Set up Python
+
+Install Python 3.8 and install the SDK requirements. 
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.8'
+- script: pip install -r sdk/dev-requirements.txt
+  displayName: 'pip install notebook reqs'
+```
+
+## Step 7: Set up the SDK and CLI
+
+Run the setup bash scripts for both the SDK and CLI. 
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.8'
+- script: pip install -r sdk/dev-requirements.txt
+  displayName: 'pip install notebook reqs'
+- task: Bash@3
+  inputs:
+    filePath: 'sdk/setup.sh'
+  displayName: 'set up sdk'
+
+- task: Bash@3
+  inputs:
+    filePath: 'cli/setup.sh'
+  displayName: 'set up CLI'
+```
+
+## Step 8: Run your Jupyter notebook
+
+In the last task, you'll pass the values of your three variables and use papermill to run your Jupyter notebook and push output to AzureML. Configure your Azure subscription when you set up the Azure CLI task. 
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.8'
+- script: pip install -r sdk/dev-requirements.txt
+  displayName: 'pip install notebook reqs'
+- task: Bash@3
+  inputs:
+    filePath: 'sdk/setup.sh'
+  displayName: 'set up sdk'
+
+- task: Bash@3
+  inputs:
+    filePath: 'cli/setup.sh'
+  displayName: 'set up CLI'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'your-azure-subscription'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+           sed -i -e "s/<SUBSCRIPTION_ID>/$(SUBSCRIPTION_ID)/g" sklearn-diabetes.ipynb
+           sed -i -e "s/<RESOURCE_GROUP>/$(RESOURCE_GROUP)/g" sklearn-diabetes.ipynb
+           sed -i -e "s/<AML_WORKSPACE_NAME>/$(AZUREML_WORKSPACE_NAME)/g" sklearn-diabetes.ipynb
+           sed -i -e "s/DefaultAzureCredential/AzureCliCredential/g" sklearn-diabetes.ipynb
+           papermill -k python sklearn-diabetes.ipynb sklearn-diabetes.output.ipynb
+    workingDirectory: 'sdk/jobs/single-step/scikit-learn/diabetes'
+```
 
 
-## Run code
+## Step 9: Verify run
 
+1. Open your completed pipeline run and view the AzureCLI task. If your pipeline ran successfully, you'll see a green check next to each task and see that the output finished executing. 
+    :::image type="content" source="media/machine-learning/machine-learning-azurecli-output.png" alt-text="Screenshot of machine learning output to AzureML.":::
 
-## Verify run
+1. Open your Azure Machine Learning workspace and navigate to the completed `sklearn-diabetes-example` job. On the **Metrics** tab, you should see the training results. 
+    :::image type="content" source="media/machine-learning/machine-learning-training-results.png" alt-text="Screenshot of training results.":::
 
-## Delete resources
+## Clean up resource
+
+If you're not going to continue to use your pipeline, delete your Azure DevOps project. In Azure portal, delete your resource group and Azure Machine Learning instance. 
