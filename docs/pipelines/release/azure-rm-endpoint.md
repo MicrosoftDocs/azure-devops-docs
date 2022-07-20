@@ -181,7 +181,7 @@ This issue can be fixed by changing the **supported account types** settings and
 
 1. Select you application from the list of registered applications.
 
-1. Under **Essentials**, select **Supported account types**.
+1. Under **Authentication**, select **Supported account types**.
 
 1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
