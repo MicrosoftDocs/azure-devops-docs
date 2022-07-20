@@ -1,16 +1,16 @@
 ---
 title: Differences between provisioned and published wiki
 titleSuffix: Azure DevOps
-description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps 
+description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps. 
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/05/2022  
+ms.date: 07/06/2022  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -33,17 +33,17 @@ While both options maintain the wiki content in Git repositories, the way you ad
 
 With a *provisioned wiki*, you add and edit pages directly within the **Wiki**. All content updates to a *provisioned wiki* occur within the **Wiki**.
 
-With a publish code as wiki, you add, edit, and update content from **Repos** or **Code**.
+With a *publish code as wiki*, you add, edit, and update content from **Repos** or **Code**.
 
 The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the **publish as code wiki** pages.
 
 **Provisioned wiki**
 
-:::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Provisioned wiki page menu options"::: 
+:::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Provisioned wiki page menu options.":::
 
 **Publish code as wiki**
 
-:::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Publish code page menu options":::
+:::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Publish code page menu options.":::
 
 For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki get automatically published to the wiki.
 
@@ -87,11 +87,11 @@ For a *provisioned wiki* or *publish code as wiki*, select **New page** or **Add
 
 The *provisioned wiki* manages the page sequence and page list automatically as you add or move pages within the navigation pane.
 
-To structure the list of pages in the navigation pane for a *publish code as wiki*, define the **.order** file at the root, and for each subfolder or parent page that contains subpages.
+To structure the list of pages in the navigation pane for a *publish code as wiki*, define the *.order* file at the root, and for each subfolder or parent page that contains subpages.
 
 Both types of wikis follow the same file structure, it's just that the publish code as wiki requires you to maintain the page sequence manually.
 
-To learn more about working with **.order** files, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
+To learn more about working with *.order* files, see [Wiki Git repository files and file structure](wiki-file-structure.md#order-file).
 
 <a id="revisions"></a>
 
@@ -117,9 +117,9 @@ To learn more, see [Version, select, or unpublish a published wiki](wiki-select-
 
 1. Get the wiki corresponding to the wiki ID or wiki name provided. For more information, see [Wikis - Get REST API](/rest/api/azure/devops/wiki/wikis/get?view=azure-devops-rest-6.0&preserve-view=true).
 
-```HTTP
-GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0
-``` 
+
+GET https://dev.azure.com/{organization}/{projec``t}/_apis/wiki/wikis/{wikiIdentifier}?api-version=6.0
+
 
    You can also get all wikis in a project or collection. For more information, see [Wikis - List REST API](/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-6.0&preserve-view=true)
    
