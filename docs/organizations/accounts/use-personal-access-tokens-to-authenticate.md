@@ -1,14 +1,14 @@
 ---
 title: Use personal access tokens
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contperf-fy20q4, contperf-fy22q3
-description: Use personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
+ms.custom: contperf-fy20q4, contperf-fy22q3
+description: Learn how to create and manage personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
 ms.technology: devops-security
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2022
+ms.date: 07/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -42,6 +42,10 @@ To set up PATs for non-Microsoft tools, use [Git credential managers](../../repo
 ::: moniker range="azure-devops"
 
 ## FAQs
+
+### Q: What happens to a PAT if a user account is disabled?
+
+A: Once a user's removed from Azure DevOps, the PAT is invalidated within 1 hour. If your organization is connected to Azure Active Directory (Azure AD), the PAT is also invalidated in Azure AD, as it belongs to the user. We recommend that the user rotate their PAT to another user or service account to keep services running.
 
 ### Q: Is there a way to renew a PAT via REST API?
 
