@@ -26,7 +26,7 @@ You can use a DevOps pipeline to automate the machine learning lifecycle. Some o
 
 This article will teach you how to create an Azure Pipeline that builds and deploys a machine learning model to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning). You'll train a scikit-learn linear regression model on the Diabetes dataset.
 
-This tutorial uses [Azure Machine Learning Python SDK v2](/python/api/overview/azure/ml/installv2), which is in public preview, and SDK v2 and [Azure CLI ML extension v2](/cli/azure/ml). 
+This tutorial uses [Azure Machine Learning Python SDK v2](/python/api/overview/azure/ml/installv2), which is in public preview, and [Azure CLI ML extension v2](/cli/azure/ml). 
 
 ## Prerequisites
 
