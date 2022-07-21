@@ -60,6 +60,7 @@ You'll need an Azure Resource Manager connection to authenticate with Azure port
 1. Select the default authentication method, **Service principal (automatic)**.
 
 1. Create your service connection. Set your subscription, resource group, and connection name. 
+
     :::image type="content" source="media/machine-learning/machine-learning-arm-connection.png" alt-text="Screenshot of ARM service connection.":::
 
 
@@ -82,62 +83,21 @@ You'll need an Azure Resource Manager connection to authenticate with Azure port
 You should already have a resource group in Azure with [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning). To deploy your DevOps pipeline to AzureML, you'll need to create variables for your subscription ID, resource group, and machine learning workspace. 
 
 1. Select the Variables tab on your pipeline edit page.  
-    :::image type="content" source="media/machine-learning/machine-learning-select-variables.png" alt-text="Screenshot of variables option in pipeline edit. ":::    
+
+    :::image type="content" source="media/machine-learning/machine-learning-select-variables.png" alt-text="Screenshot of variables option in pipeline edit. ":::   
+ 
 1. Create a new variable, `Subscription_ID`, and select the checkbox **Keep this value secret**. Set the value to your [Azure portal subscription ID](/azure/azure-portal/get-subscription-tenant-id).
 1. Create a new variable for `Resource_Group` with the name of the resource group for Azure Machine Learning (example: `machinelearning`). 
 1. Create a new variable for `AzureML_Workspace_Name` with the name of your Azure ML workspace (example: `docs-ws`).
 1. Select **Save** to save your variables. 
 
-## Step 6: Set up Python
+## Step 6: Build your YAML pipeline
 
-Install Python 3.8 and install the SDK requirements. 
+Delete the starter pipeline and replace it with the following YAML code. In this pipeline, you'll:
 
-```yaml
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.8'
-- script: pip install -r sdk/dev-requirements.txt
-  displayName: 'pip install notebook reqs'
-```
-
-## Step 7: Set up the SDK and CLI
-
-Run the setup bash scripts for both the SDK and CLI. 
-
-```yaml
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.8'
-- script: pip install -r sdk/dev-requirements.txt
-  displayName: 'pip install notebook reqs'
-- task: Bash@3
-  inputs:
-    filePath: 'sdk/setup.sh'
-  displayName: 'set up sdk'
-
-- task: Bash@3
-  inputs:
-    filePath: 'cli/setup.sh'
-  displayName: 'set up CLI'
-```
-
-## Step 8: Run your Jupyter notebook
-
-In the last task, you'll pass the values of your three variables and use papermill to run your Jupyter notebook and push output to AzureML. Configure your Azure subscription when you set up the Azure CLI task. 
+* Use the Python version task to set up Python 3.8 and install the SDK requirements.
+* Use the Bash task to run bash scripts for the Azure Machine Learning SDK and CLI.
+* Use the Azure CLI task to pass the values of your three variables and use papermill to run your Jupyter notebook and push output to AzureML. 
 
 ```yaml
 trigger:
@@ -177,14 +137,16 @@ steps:
 ```
 
 
-## Step 9: Verify run
+## Step 7: Verify run
 
 1. Open your completed pipeline run and view the AzureCLI task. If your pipeline ran successfully, you'll see a green check next to each task and see that the output finished executing. 
-    :::image type="content" source="media/machine-learning/machine-learning-azurecli-output.png" alt-text="Screenshot of machine learning output to AzureML.":::
+ 
+   :::image type="content" source="media/machine-learning/machine-learning-azurecli-output.png" alt-text="Screenshot of machine learning output to AzureML.":::
 
 1. Open your Azure Machine Learning workspace and navigate to the completed `sklearn-diabetes-example` job. On the **Metrics** tab, you should see the training results. 
+
     :::image type="content" source="media/machine-learning/machine-learning-training-results.png" alt-text="Screenshot of training results.":::
 
-## Clean up resource
+## Clean up resources
 
-If you're not going to continue to use your pipeline, delete your Azure DevOps project. In Azure portal, delete your resource group and Azure Machine Learning instance. 
+If you're not going to continue to use your pipeline, delete your Azure DevOps project. In Azure portal, delete your resource group and Azure Machine Learning instance.
