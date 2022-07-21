@@ -143,7 +143,7 @@ steps:
  
    :::image type="content" source="media/machine-learning/machine-learning-azurecli-output.png" alt-text="Screenshot of machine learning output to AzureML.":::
 
-1. Open your Azure Machine Learning workspace and navigate to the completed `sklearn-diabetes-example` job. On the **Metrics** tab, you should see the training results. 
+1. Open Azure Machine Learning studio and navigate to the completed `sklearn-diabetes-example` job. On the **Metrics** tab, you should see the training results. 
 
     :::image type="content" source="media/machine-learning/machine-learning-training-results.png" alt-text="Screenshot of training results.":::
 
