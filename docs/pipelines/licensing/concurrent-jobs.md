@@ -176,6 +176,8 @@ Buy more parallel jobs within your organization settings:
 
 4. Enter your desired amount, and then **Save**.
 
+5. It may take up to 30 minutes for your additional parallel jobs to become available to use.
+
 For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## How do I change the quantity of parallel jobs for my organization?
@@ -195,6 +197,8 @@ For pricing cost per parallel job, see the [Azure DevOps pricing page](https://a
   > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)),
   > set up an [on-premises build server](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120))
   > and switch to an [on-premises build controller](/previous-versions/visualstudio/visual-studio-2013/ee330987(v=vs.120)). For more information about the hosted XAML model, see [Get started with XAML](../create-first-pipeline.md).
+
+5. It may take up to 30 minutes for the new amount of parallel jobs to become active.
 
 ::: moniker-end
 
