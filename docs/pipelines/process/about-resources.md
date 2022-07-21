@@ -18,7 +18,7 @@ Resources offer the following benefits:
 * Ways to [share](#share-resources-across-pipelines) something such as a secure file or password across pipelines.
   * Examples of using resources for sharing are variable groups, secure files, and service connections. In all cases, you're using a resource as a way for a pipeline to access and consume something.
 * A tool for enhancing [security](#use-resources-to-enhance-security) through access checks and other restrictions.
-  * For example, you can limit a service connection to only run on one pipeline. You could also make sure that a repository can only be accessed from a pipeline after a manual approach check.
+  * For example, you can limit a service connection to only run on one pipeline. You could also make sure that a repository can only be accessed from a pipeline after a manual approval check.
 * Ways to improve [traceability](#use-resources-for-traceability) for your pipeline and make it easier to troubleshoot [environments](environments.md).
   * For example, you can see the number of the last run that was deployed to an [environment](environments.md).
 
