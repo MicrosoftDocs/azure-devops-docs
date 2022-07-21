@@ -75,9 +75,9 @@ A sequence diagram is an interaction diagram that shows how processes operate wi
 ```markdown
 ::: mermaid
 sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
+    Christie->>Josh: Hello Josh, how are you?
+    Josh-->>Christie: Great!
+    Christie->>Josh: See you later!
 :::
 ```
 
