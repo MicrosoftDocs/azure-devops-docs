@@ -96,21 +96,21 @@ param
 
 $ErrorActionPreference = 'Stop'
 
-Function New-AzureSQLServerFirewallRule {
+function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
   New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 
-Function Update-AzureSQLServerFirewallRule{
+function Update-AzureSQLServerFirewallRule{
   $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
   Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
 {
   New-AzureSQLServerFirewallRule
 }
-Else
+else
 {
   Update-AzureSQLServerFirewallRule
 }
@@ -144,7 +144,7 @@ param
 
 $ErrorActionPreference = 'Stop'
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
 {
   Remove-AzureSqlDatabaseServerFirewallRule -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
