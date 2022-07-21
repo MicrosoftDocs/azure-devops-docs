@@ -137,9 +137,9 @@ steps:
 ```
 
 
-## Step 7: Verify run
+## Step 7: Verify your pipeline run
 
-1. Open your completed pipeline run and view the AzureCLI task. If your pipeline ran successfully, you'll see a green check next to each task and see that the output finished executing. 
+1. Open your completed pipeline run and view the AzureCLI task. Check the task view to verify that the output task finished running. 
  
    :::image type="content" source="media/machine-learning/machine-learning-azurecli-output.png" alt-text="Screenshot of machine learning output to AzureML.":::
 
