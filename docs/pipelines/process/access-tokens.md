@@ -256,7 +256,9 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
     ![Configure user permissions.](media/access-tokens/grant-view-project-permissions.png)
 
-### Example - Configure permissions to access another repo in the same project project collection
+<a id="configure-repo-access"></a>
+
+### Example - Configure permissions to access another repo in the same project collection
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
 
