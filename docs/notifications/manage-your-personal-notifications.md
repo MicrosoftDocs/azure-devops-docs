@@ -8,7 +8,7 @@ ms.custom: contperf-fy22q1, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/04/2022
+ms.date: 07/25/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -29,8 +29,6 @@ Personal notifications get sent to you in the form of an email as changes occur 
 For information about team and project-level notifications, see [Team and project-level notifications](about-notifications.md#team-and-project-level-notifications) and [Manage team or group notifications](manage-team-group-global-organization-notifications.md).
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
-
-
 
 ## Prerequisites
 
@@ -70,8 +68,6 @@ To access the Preview features options, open your profile menu. The profile menu
 
    ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
 
-***
-
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
@@ -81,7 +77,7 @@ To access the Preview features options, open your profile menu. The profile menu
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
-=======
+
 1. Open your **User settings**, and then select **Notification settings** from the resulting list.
 
    ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
@@ -94,7 +90,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker-end
 
-
+***
 
 ::: moniker range="tfs-2018"
 
@@ -118,8 +114,6 @@ To access the Preview features options, open your profile menu. The profile menu
 > [!div class="mx-imgBorder"]  
 > ![Personal notification subscriptions, current page.](media/unsubscribe-personal-notifications-newnav.png)
 
-***
-
 ::: moniker-end  
 
 ::: moniker range=" < azure-devops"
@@ -127,7 +121,7 @@ To access the Preview features options, open your profile menu. The profile menu
 :::image type="content" source="media/unsubscribe-personal-notifications.png" alt-text="Screenshot of unsubscribe from notification subscriptions.":::
 
 ::: moniker-end
-
+***
 ::: moniker range=">= tfs-2018"
 
 A notification subscription can be only for you. Or, if you're a team administrator you can ensure that it's shared by everyone on the team.
@@ -189,8 +183,6 @@ With custom personal notification subscriptions, you can define precise criteria
 
 ::: moniker-end  
 
-***
-
 ::: moniker range="> tfs-2018 < azure-devops"
 
 1. From your **Notifications** page, select **New subscription**.
@@ -238,6 +230,8 @@ With custom personal notification subscriptions, you can define precise criteria
    :::image type="content" source="media/manage-personal-notifications-subscription-added.png" alt-text="New subscription added.":::
 
 ::: moniker-end
+
+***
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 
