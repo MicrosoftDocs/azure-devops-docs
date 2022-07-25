@@ -294,13 +294,7 @@ Follow each of these steps to troubleshoot your failing triggers:
       * No:
         * Is your pipeline in a public project?
           * Yes: You cannot access resources outside of your public project. Make the project private.
-          * No: You need to take the following additional steps to grant access. Let us say that your pipeline exists in project **A** and that your repository exists in project **B**.
-            * Go to **Project Settings** for the project in which the repository exists (B). 
-            * Select **Permissions > Groups> Readers** group, and then select **Members**.
-            * Add **your-project-name Build Service (your-collection-name)** to the group members, where *your-project-name* is the name of the project in which your pipeline exists (A).
-            * Next, from the same **Project Settings** for repository (B), select **Repos > Repositories > specific repository**, and then **Security**.
-            * Add **your-project-name Build Service (your-collection-name)** to the list of users, where *your-project-name* is the name of the project in which your pipeline exists (A).
-            * Set the **Create tag** and **Read** permissions to **Allow** for the account.
+          * No: You need to [configure permissions to access another repo in the same project collection](../process/access-tokens.md#configure-repo-access).
 
 ### Wrong version
 
