@@ -268,13 +268,25 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
     ![Configure repository access.](media/access-tokens/allow-repo-access.png)
 
+:::moniker-end
+
+:::moniker range=">=azure-devops-2019 <= azure-devops-2020"
 3.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
     ![Add user for repository access.](media/access-tokens/add-build-service-user.png)
+:::moniker-end
 
-4. Configure the desired permissions for that user.
+:::moniker range=">azure-devops-2020"
+3.  Start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
-    ![Configure repository permissions.](media/access-tokens/set-repo-permissions.png)
+    ![Add user for repository access.](media/access-tokens/search-for-user.png)
+:::moniker-end
+
+:::moniker range=">=azure-devops-2019"
+
+4. Grant *Read* permissions for that user.
+
+    ![Configure repository permissions.](media/access-tokens/grant-read-permission-on-repo.png)
 
 ### Example - Configure permissions to access other resources in the same project collection
 
