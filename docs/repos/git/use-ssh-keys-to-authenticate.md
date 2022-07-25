@@ -214,7 +214,7 @@ fatal: Could not read from remote repository.
 ```
 
 **A:** Manually record the SSH key by running:
-`ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts`
+`ssh-keyscan -t rsa ssh.dev.azure.com >> ~/.ssh/known_hosts`
 
 ### Q: How can I have Git remember the passphrase for my key on Windows?
 
