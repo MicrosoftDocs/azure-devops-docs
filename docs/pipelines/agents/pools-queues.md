@@ -451,7 +451,7 @@ The maintenance is done per agent pool, not per machine; so if you have multiple
 
 Typically, a maintenance job gets "stuck" when it's waiting to run on an agent that is no longer in the agent pool. This happens when, for example, the agent has been purposefully taken offline or when there are issues communicating with it.
 
-Maintenance jobs that have been queued to run will wait seven days to run. Afterward, they'll be automatically canceled if not run. The limit is hardcoded in the system and cannot be changed. 
+Maintenance jobs that have been queued to run will wait seven days to run. Afterward, they'll be automatically set to failed state if not run. This time limit cannot be changed.
 
 The seven-day limit is different from the _maintenance job timeout_ setting. The latter controls the maximum number of minutes an agent can spend doing maintenance. The timer starts when the job starts, not when the job is queued on an agent.
 
