@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/21/2020
+ms.date: 07/25/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -33,7 +33,7 @@ To change a policy, you need at least Basic access and organization Owner or Pro
 
    ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. In the Policies tab, find the Request Access policy and move the toggle to *off*.
+3. Select **Policies** to find the *Request Access policy* and move the toggle to *off*.
 
    ![Disable the Request Access policy in Organization settings](media/request-access-policy-settings.png)
 

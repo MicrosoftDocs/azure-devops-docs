@@ -52,7 +52,7 @@ The following table shows notification event examples. For more information, see
 
 ::: moniker range="azure-devops"
 
-To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New Account Manager** feature is enabled.
+To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New account manager** feature is enabled.
 
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
@@ -106,7 +106,7 @@ This view shows all notification subscriptions that you've created or that were 
 
 ::: moniker range="azure-devops"
 
-To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New Account Manager** feature is enabled.
+To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New account manager** feature is enabled.
 
 #### [New Account Manager enabled](#tab/new-account-enabled) 
 
