@@ -254,7 +254,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 4. Grant the *View project-level information* permission for that user.
 
-    ![Configure user permissions.](media/access-tokens/grant-view-project-permissions.png)
+    ![Grant the View project-level information permission for a user.](media/access-tokens/grant-view-project-permissions.png)
 
 <a id="configure-repo-access"></a>
 
