@@ -132,8 +132,8 @@ The chart dots represent completed work items where their position on the horizo
 
 ### Summary elements 
 
-- Days on average (average lead time or cycle time) for the main work item types configured for the chart. This number may not be equal to the average cycle/lead time of all workitems.It depends on configurations used for widgets.Average number calculated based on each day team takes time for workitem. 
-- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other  
+- Days on average (average lead time or cycle time) for the main work item types configured for the chart. This number may not be equal to the average cycle/lead time of all work items. It depends on configurations used for widgets. The average number is calculated based on each day the team takes time for work item. 
+- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for **Other**  
 - The black trend line indicates the moving average 
 - The band around the trend line shows the standard deviation.
 
