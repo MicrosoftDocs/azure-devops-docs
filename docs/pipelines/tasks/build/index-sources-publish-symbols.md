@@ -1,7 +1,7 @@
 ---
 title: Index Sources & Publish Symbols
 ms.custom: seodec18
-description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
+description: Use the index Sources & Publish Symbols task in Azure Pipelines
 ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.author: shashban
@@ -15,11 +15,11 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+Use this task to index your source code and publish your symbols to a file share or Azure Artifacts symbol server.
 
-Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
+Indexing your source code allows you to use your symbol files to debug your application on a machine other than the one you used to build your application. For example, you can debug an application built by a build agent from a dev machine that does not have the source code.
 
-Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../../../artifacts/concepts/symbols.md); to publish symbols, use this task and see [the walkthrough](../../artifacts/symbols.md).
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names.
 
 ## Demands
 
@@ -160,11 +160,8 @@ None
     </tr>
 </table>
 
-For more information about the different types of tasks and their uses, see [Task control options](../../process/tasks.md#controloptions).
-
 > [!IMPORTANT]
 > To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../../policies/retention.md#delete-a-run).
-
 
 ## Open source
 
