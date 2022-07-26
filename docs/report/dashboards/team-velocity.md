@@ -32,7 +32,7 @@ Teams track their velocity to help them determine how much work they can do spri
 ![Screenshot of velocity widget showing 6 sprints worth of data.](media/team-velocity-six-iterations.png) 
 
 > [!NOTE]
-> The Velocity widget is based on Analytics data. Analytics is generally available for Azure DevOps Services and in preview as an extension for Azure DevOps Server 2019. For TFS 2018 and earlier versions, you have access to the [velocity chart provided by the work tracking data store](#velocity-chart).
+> The Velocity widget is based on Analytics data. Analytics is generally available for Azure DevOps Services and Azure DevOps Server 2020 and later versions. Analytics is in preview as an extension for Azure DevOps Server 2019. For TFS 2018 and earlier versions, you have access to the [velocity chart provided by the work tracking data store](#velocity-chart).
 
 ::: moniker-end  
 

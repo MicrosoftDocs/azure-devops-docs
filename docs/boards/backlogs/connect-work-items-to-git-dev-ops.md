@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/26/2022
 ---
 
 # Drive Git development from a work item in Azure Boards   
@@ -42,12 +42,19 @@ This article addresses creating new branches, adding links to commits, and addin
 
 The **Development** control records all Git development processes that support completion of the work item. This control can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.   
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range=">= azure-devops-2020"  
 :::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
 ::: moniker-end
-::: moniker range="< azure-devops-2019"  
-<img src="media/drive-git-development-dev-section.png" alt="Work item form, Development section" />  
+
+::: moniker range="azure-devops-2019"  
+:::image type="content" source="media/git/development-control-2019.png" alt-text="Screenshot of work item form, Development control, Azure DevOps Server 2019.":::
 ::: moniker-end
+
+::: moniker range="tfs-2018"  
+![Screenshot of work item form, Development control, TFS 2018.](media/drive-git-development-dev-section.png)  
+::: moniker-end
+
+
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can start a pull request for a branch you've created or linked to from the work item.  
 
