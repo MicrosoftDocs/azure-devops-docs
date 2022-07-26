@@ -84,9 +84,9 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker range=" tfs-2018"
 
-1. Open **User settings**, and then select **Notification settings** from the resulting list.
+Open **User settings**, and then select **Notification settings** from the resulting list.
 
-   ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
+![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
 
 ::: moniker-end
 
