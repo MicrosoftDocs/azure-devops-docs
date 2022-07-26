@@ -241,12 +241,16 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - And, with the **Development** control, you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range=">= azure-devops-2020"  
 :::image type="content" source="../backlogs/media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"  
-![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
+::: moniker range="azure-devops-2019"  
+:::image type="content" source="../backlogs/media/git/development-control-2019.png" alt-text="Screenshot of work item form, Development control, Azure DevOps Server 2019.":::
+::: moniker-end
+
+::: moniker range="tfs-2018"  
+![Screenshot of work item form, Development control, TFS 2018.](../backlogs/media/drive-git-development-dev-section.png)  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
