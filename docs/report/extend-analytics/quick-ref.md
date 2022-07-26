@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 07/26/2022
 ---
 
 # Extend Analytics with OData quick reference
@@ -135,4 +135,7 @@ Use this quick reference to access information and sample queries using OData an
 - [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  
 - [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
+### Marketplace extensions
 
+- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)  
+- 
