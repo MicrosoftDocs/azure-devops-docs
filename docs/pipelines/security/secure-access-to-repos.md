@@ -20,7 +20,7 @@ To illustrate the steps you can take to improve the security of your pipelines, 
 
 Assume you are working on the `SpaceGameWeb` pipeline hosted in the `fabrikam-tailspin/SpaceGameWeb` project, in the `SpaceGameWeb` repository. Furthemore, let's say your `SpaceGameWeb` pipeline checks out the `SpaceGameWebReact` repository in the same project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project. 
 
-Finally, assume the `FabrikamFiber` repository uses the `FabrikamFiberLib` repository as a submodule, hosted in the same project. Read more about [how to check out submodules](../repos/pipeline-options-for-git#checkout-submodules).
+Finally, assume the `FabrikamFiber` repository uses the `FabrikamFiberLib` repository as a submodule, hosted in the same project. Read more about [how to check out submodules](../repos/pipeline-options-for-git.md#checkout-submodules).
 
 The `SpaceGameWeb` pipeline's YAML source code may look similar to the following code.
 ```yml
@@ -177,7 +177,7 @@ To solve the issue, check out the `OtherRepo` repository using the `checkout` co
 
 ### A repository is using another repository as submodule
 
-Say one of the repositories your pipeline checks out uses another repository (in the same project) as submodule, as is the case in our example for the `FabrikamFiber` and `FabrikamFiberLib` repositories. Read more about [how to check out submodules](../repos/pipeline-options-for-git#checkout-submodules).
+Say one of the repositories your pipeline checks out uses another repository (in the same project) as submodule, as is the case in our example for the `FabrikamFiber` and `FabrikamFiberLib` repositories. Read more about [how to check out submodules](../repos/pipeline-options-for-git.md#checkout-submodules).
 
 Furthermore, assume you gave the `SpaceGame` build identity _Read_ access to this repo, but the checkout of the `FabrikamFiber` repository still fails when checking out the `FabrikamFiberLib` submodule.
 
