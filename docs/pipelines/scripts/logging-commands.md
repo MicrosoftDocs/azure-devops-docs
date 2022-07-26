@@ -64,7 +64,7 @@ File paths should be given as absolute paths: rooted to a drive on Windows, or b
 ## Formatting commands
 
 > [!NOTE]
-> Use UTF-8 formatting for logging commands. 
+> Use UTF-8 encoding for logging commands. 
 
 These commands are messages to the log formatter in Azure Pipelines.
 They mark specific log lines as errors, warnings, collapsible sections, and so on.
