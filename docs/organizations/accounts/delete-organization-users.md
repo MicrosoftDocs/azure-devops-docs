@@ -24,14 +24,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 ## Remove users from your organization
 
-::: moniker range=">= azure-devops-2020"
-
-> [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [Preview page](#tab/preview-page) 
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -66,11 +59,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 ::: moniker-end
 
-Choose the **Current page** tab for instructions. 
-
-#### [Current page](#tab/current-page)
-
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range="azure-devops-2019"
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
@@ -102,7 +91,7 @@ Choose the **Current page** tab for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
+The **Users** page isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
