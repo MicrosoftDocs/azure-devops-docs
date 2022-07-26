@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 07/15/2022
+  ms.date: 07/25/2022
   monikerRange: '<= azure-devops'
 title: Notifications FAQS
 summary: |
@@ -42,6 +42,11 @@ sections:
           Is it possible to post @mentions via an API call?
         answer: |
           Yes. For more information, see [Use @ mentions in work items and pull requests](at-mentions.md).
+
+      - question: |
+          How do subscriptions at one level impact what notifications are sent based on subscriptions on another level? 
+        answer: |
+          Subscriptions made at one level are fully and completely independent of each other. There is no interaction. If you turn something off at the project level but not at the user level, then you get the notification. 
 
 additionalContent: |
 
