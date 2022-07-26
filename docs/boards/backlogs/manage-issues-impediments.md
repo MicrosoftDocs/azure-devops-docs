@@ -8,7 +8,7 @@ ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 10/08/2021
+ms.date: 07/26/2022
 ---
 
 # Manage issues or impediments in Azure Boards
@@ -128,17 +128,24 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 
 ::: moniker-end
-
-<a id="add-to-backlog" /> 
-
-
-::: moniker range="azure-devops"
-
+ 
 <a id="add-to-backlog" /> 
 
 ## Add issues or impediments to your product backlog  
 
+::: moniker range="azure-devops"
 If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+
+::: moniker-end
+
+::: moniker range=">= Azure-devops-2019 < azure-devops"
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by customizing your project's process. For details, see the following: 
+- **For the Inherited process**: [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+- **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
+::: moniker-end
+
+::: moniker range="tfs-2018"
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your On-premise XML process. For details, see [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 
 ::: moniker-end
 

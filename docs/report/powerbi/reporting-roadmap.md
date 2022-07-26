@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 05/12/2022
+ms.date: 07/26/2022
 ---
 
 # Reporting roadmap for Azure DevOps 
@@ -29,15 +29,9 @@ For additional information, see the following articles:
 
 ## The Analytics service
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
-The Analytics service is available for all organizations using Azure DevOps Services. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of Analytics remain in Preview. 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-Analytics is generally available for Azure DevOps Server 2020. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of Analytics remain in Preview. 
+Analytics is generally available for Azure DevOps Services and Azure DevOps Server 2020 and later versions. It provides several [advanced widgets](../dashboards/analytics-widgets.md) and supports [Power BI integration](overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md). 
 
 ::: moniker-end
 
@@ -45,8 +39,6 @@ Analytics is generally available for Azure DevOps Server 2020. It provides sever
 ::: moniker range="<= azure-devops-2019"
 
 Analytics is in Public Preview for Azure DevOps Server 2019 and later versions. You gain access to it by [enabling or installing Analytics](../dashboards/analytics-extension.md). Analytics provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](overview.md), and access to the [OData feed](../extend-analytics/quick-ref.md).
-
-Analytics will become generally available in the next major release of Azure DevOps Server. While in Public Preview, Analytics is free.
 
 Team Foundation Server (TFS) 2018 and earlier versions don't support Analytics. 
 
