@@ -83,7 +83,7 @@ https://{organization_name}.vssps.visualstudio.com
  <li>https://*vstmrblob.vsassets.io: hosts Azure DevOps TCM log data</li>
  <li>https://cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content</li>
  <li>https://static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on</li>
- <li>https://vsrm.dev.azure.com: hosts package feeds</li>
+ <li>https://vsrm.dev.azure.com: hosts releases</li>
 </ul>
 </details>
 
