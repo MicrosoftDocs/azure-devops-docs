@@ -608,6 +608,8 @@
           displayName: template permissions, repositories
         - name: Secure repositories
           href: security/repos.md
+        - name: Secure access to repositories
+          href: security/secure-access-to-repos.md
           displayName: forks, branches, access token
         - name: Pipeline resources
           href: security/resources.md
