@@ -130,7 +130,7 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 
 - **Task version**: **2.\\***.
 
-- **Index sources**: Uncheck to disable indexing. Source indexing is unnecessary when using Source Link.
+- **Index sources**: Uncheck to disable indexing. Source indexing in the publish task is not needed when using Source Link.
 
 - **Publish symbols**: indicates whether to publish the symbol files. 
     - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
