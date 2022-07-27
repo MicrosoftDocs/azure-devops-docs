@@ -249,6 +249,8 @@ task to increase the rollout percentage of an application that was previously re
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
+::: moniker-end
+
 #### Status update
 
 Add the [Google Play Status Update](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---status-update)
@@ -264,6 +266,8 @@ task to update the rollout status for the application that was previously releas
       serviceEndpoint: 'yourGooglePlayServiceConnectionName'
       status: 'inProgress' # draft | inProgress | halted | completed
 ```
+
+::: moniker-end
 
 ## Related extensions
 
@@ -282,6 +286,8 @@ A: You can build and sign your app bundle with an inline script and a secure fil
 Next, use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](../tasks/utility/bash.md) tasks to download your keystore and build and sign your app bundle.
 
 In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](../tasks/utility/copy-files.md) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](../tasks/utility/publish-build-artifacts.md) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: DownloadSecureFile@1
