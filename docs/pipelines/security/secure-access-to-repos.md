@@ -187,11 +187,11 @@ To solve this issue, explicitly check out the `FabrikamFiberLib`, for example, a
 
 ## Classic build pipelines
 
-The process for securing access to repositories for release pipelines is similar to the one for [YAML pipelines](#yaml-pipelines). 
+The process for securing access to repositories for release pipelines is similar to the one for [YAML pipelines](#yaml-pipelines).
 
-In classic build pipelines, you cannot explictly declare other repositories as resources. The way you check out multiple repositories is by adding command-line tasks with commands like `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone https://dev.azure.com/fabrikam-tailspin/FabrikamFiber/_git/FabrikamLib`.
+In classic build pipelines, you can't explicitly declare other repositories as resources. The way you check out multiple repositories is by adding command-line tasks with commands like `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone https://dev.azure.com/fabrikam-tailspin/FabrikamFiber/_git/FabrikamLib`.
 
-To illustrate the steps you need to take, we'll use a running example. In our example, there's a classic pipeline named `SpaceGameClassic` in the `fabrikam-tailspin/SpaceGameClassic` project. Assume the pipeline checks out the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project. Additionally, imagine the `FabrikamFiber` repository uses the `FabrikamFiberLib` repository (in the same project) as a submodule. Our example pipelines contains the following command to check out the `FabrikamFiber` repository: `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone --recurse-submodules https://dev.azure.com/silviuandrica/FabrikamFiber/_git/FabrikamFiber`
+To illustrate the steps you need to take, we'll use a running example. In our example, there's a classic pipeline named `SpaceGameClassic` in the `fabrikam-tailspin/SpaceGameClassic` project. Assume the pipeline checks out the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project. Additionally, imagine the `FabrikamFiber` repository uses the `FabrikamFiberLib` repository (in the same project) as a submodule. Our example pipeline contains the following command to check out the `FabrikamFiber` repository: `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone --recurse-submodules https://dev.azure.com/silviuandrica/FabrikamFiber/_git/FabrikamFiber`
 
 ### Use a Project-based build identity for classic build pipelines
 
@@ -217,15 +217,15 @@ If you now run our example pipeline, it will succeed.
 
 ### Limitations
 
-#### Do not turn on the _Protect access to repositories in YAML pipelines_ setting
+#### Don't turn on the _Protect access to repositories in YAML pipelines_ setting
 
-When using classic build pipelines, do not turn on the _Protect access to repositories in YAML pipelines_ setting. If you do, your classic build pipelines will not be able to access any repository in an external project. In our example pipeline, you'll get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
+When using classic build pipelines, don't turn on the _Protect access to repositories in YAML pipelines_ setting. If you do, your classic build pipelines won't be able to access any repository in an external project. In our example pipeline, you'll get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
 If your project has both YAML and classic build pipelines, then you may want to create two projects, one for the YAML pipelines and one for the classic build pipelines. Then, in the YAML pipelines project, you can turn on the setting.
 
 #### The _Build job authorization scope_ setting
 
-The _Limit job authorization scope to current project for non-release pipelines_ setting overrides the _Build job authorization scope_ setting. That is, if you turn the former on, your pipeline will run with project-based identity, even if your _Build job authorization scope_ specifies _Project collection_.
+The _Limit job authorization scope to current project for non-release pipelines_ setting overrides the _Build job authorization scope_ setting. If you turn the former on, your pipeline will run with project-based identity, even if your _Build job authorization scope_ specifies _Project collection_.
 
 :::image type="content" source="media/build-job-authorization-scope.png" alt-text="Screenshot of the successful run of the Build job authorization scope setting.":::
 
