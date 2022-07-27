@@ -14,11 +14,11 @@ The setup for pipelines to securely access repositories is one in which the togg
 
 This article shows you how to grant pipelines access to your repositories in a secure fashion that limits the risks of your source code getting into the wrong hands.
 
-## Example setup
+## YAML pipelines
 
-To illustrate the steps you can take to improve the security of your pipelines, we'll use a running example.
+To illustrate the steps you can take to improve the security of your YAML pipelines, we'll use a running example.
 
-Assume you're working on the `SpaceGameWeb` YAML pipeline hosted in the `fabrikam-tailspin/SpaceGameWeb` project, in the `SpaceGameWeb` repository. Furthermore, let's say your `SpaceGameWeb` pipeline checks out the `SpaceGameWebReact` repository in the same project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project. 
+Assume you're working on the `SpaceGameWeb` YAML pipeline hosted in the `fabrikam-tailspin/SpaceGameWeb` project, in the `SpaceGameWeb` repository. Furthermore, let's say your `SpaceGameWeb` pipeline checks out the `SpaceGameWebReact` repository in the same project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project.
 
 Finally, assume the `FabrikamFiber` repository uses the `FabrikamFiberLib` repository as a submodule, hosted in the same project. Read more about [how to check out submodules](../repos/pipeline-options-for-git.md#checkout-submodules).
 
@@ -67,13 +67,13 @@ The `FabrikamFiber` project's repository structures look like in the following s
 
 Image your project isn't set up to use a project-based build identity or to protect access to repositories in YAML pipelines. Also, assume you've already successfully ran your pipeline.
 
-## Use a Project-based Build Identity
+### Use a Project-based Build Identity
 
-When a pipeline executes, it uses an identity to access various resources, such as repositories, service connections, variable groups. There are two types of identities a pipeline can use: a project-level one and a collection-level one. The former provides better security, the latter provides ease of use.  Read more about [scoped build identities](../process/access-tokens.md#scoped-build-identities).
+When a pipeline executes, it uses an identity to access various resources, such as repositories, service connections, variable groups. There are two types of identities a pipeline can use: a project-level one and a collection-level one. The former provides better security, the latter provides ease of use.  Read more about [scoped build identities](../process/access-tokens.md#scoped-build-identities) and [job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
 We recommend you use project-level identities for running your pipelines. By default, project-level identities can only access resources in the project of which they're a member. Using this identity improves security, because it reduces the access gained by a malicious person when hijacking your pipeline.
 
-To make your pipeline use a project-level identity, turn on the two _Limit job authorization scope to current project_ toggles in your project's Pipelines Settings. The _Limit job authorization scope to current project for non-release pipelines_ setting acts on YAML and classic build pipelines. The _Limit job authorization scope to current project for release pipelines_ setting acts on Release pipelines. Read more about [job authorization scope](../process/access-tokens.md#job-authorization-scope).
+To make your pipeline use a project-level identity, turn on the _Limit job authorization scope to current project for non-release pipelines_ setting.
 
 In our running example, when this toggle is off, the `SpaceGameWeb` pipeline can access all repositories in all projects. When the toggle is on, `SpaceGameWeb` can only access resources in the `fabrikam-tailspin/SpaceGameWeb` project, so only the `SpaceGameWeb` and `SpaceGameWebReact` repositories.
 
@@ -89,7 +89,7 @@ To fix this issue, you need to:
 
 If you now run our example pipeline, it will succeed.
 
-## Protect access to repositories in YAML pipelines
+### Protect access to repositories in YAML pipelines
 
 Azure DevOps provides an even finer-grained access control mechanism for repositories, in the form of the _Protect access to repositories in YAML pipelines_ setting. This setting makes a pipeline explicitly ask for permission to access _all_ repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines)
 
@@ -140,7 +140,7 @@ steps:
   - script: cat $(Build.Repository.LocalPath)/FabrikamFiber/FabrikamFiberLib/README.md
 ```
 
-## Migrate to a secure access to repositories setup
+### Migrate to a secure access to repositories setup
 
 Here's a summary of the steps you need to take to secure your pipeline's access to repositories:
 
@@ -163,20 +163,48 @@ Here's a summary of the steps you need to take to secure your pipeline's access 
 8. Permit your pipeline's access to the repositories. The pipeline should successfully run to completion.
    :::image type="content" source="media/successful-pipeline-run.png" alt-text="Screenshot of the successful run of the SpaceGameWeb pipeline.":::
 
-## Troubleshooting
+### Troubleshooting
 
 Here are a couple of problematic situations and how to handle them.
 
-### You use git in command line to check out repositories in the same organization
+#### You use git in command line to check out repositories in the same organization
 
 For example, you're using `- script: git clone https://$(System.AccessToken)@dev.azure.com/fabrikam-tailspin/FabrikamFiber/_git/OtherRepo/`. The command will fail when the _Protect access to repositories in YAML pipelines_ toggle is on.
 
 To solve the issue, check out the `OtherRepo` repository using the `checkout` command, for example, `- checkout: git://FabrikamFiber/OtherRepo`.
 
-### A repository is using another repository as submodule
+#### A repository is using another repository as submodule
 
 Say one of the repositories your pipeline checks out uses another repository (in the same project) as submodule, as is the case in our example for the `FabrikamFiber` and `FabrikamFiberLib` repositories. Read more about [how to check out submodules](../repos/pipeline-options-for-git.md#checkout-submodules).
 
 Furthermore, assume you gave the `SpaceGame` build identity _Read_ access to this repo, but the checkout of the `FabrikamFiber` repository still fails when checking out the `FabrikamFiberLib` submodule.
 
 To solve this issue, explicitly check out the `FabrikamFiberLib`, for example, add a `- checkout: git://FabrikamFiber/FabrikamFiberLib` step before the `-checkout: FabrikamFiber` one.
+
+## Release pipelines
+
+The process for securing access to repos for release pipelines is similar to the one for [YAML pipelines](#yaml-pipelines).
+
+To illustrate the steps you need to take, we'll use a running example. In our example, there's a release pipeline named `FabrikamFiberDocRelease` in the `fabrikam-tailspin/FabrikamFiberDocRelease` project. Assume the pipeline checks out the `FabrikamFiber` repository, runs a command to generate public documentation, and then publishes it to a website. Further assume the `FabrikamFiber` repository uses the `FabrikamFiberLib` repository (in the same project) as a submodule.
+
+### Use a Project-based Build Identity
+
+When a pipeline executes, it uses an identity to access various resources, such as repositories, service connections, variable groups. There are two types of identities a pipeline can use: a project-level one and a collection-level one. The former provides better security, the latter provides ease of use.  Read more about [scoped build identities](../process/access-tokens.md#scoped-build-identities) and [job authorization scope](../process/access-tokens.md#job-authorization-scope).
+
+We recommend you use project-level identities for running your pipelines. By default, project-level identities can only access resources in the project of which they're a member. Using this identity improves security, because it reduces the access gained by a malicious person when hijacking your pipeline.
+
+To make your pipeline use a project-level identity, turn on the _Limit job authorization scope to current project for release pipelines_ setting.
+
+In our running example, when this toggle is off, the `FabrikamFiberDocRelease` release pipeline can access all repositories in all projects, including the `FabrikamFiber` repository. When the toggle is on, `FabrikamFiberDocRelease` can only access resources in the `fabrikam-tailspin/FabrikamFiberDocRelease` project, so the `FabrikamFiber` repository becomes inaccessible.
+
+If you run our example pipeline, when you turn on the toggle, the pipeline will fail, and the logs will tell you `remote: TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
+
+To fix this issue, you need to:
+
+1. For each project that contains a repository you wish your pipeline is able to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
+
+2. For each repository in a different project you wish to grant access to, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
+
+3. For each repository that is used as a submodule by a repository your pipeline checks out and is in the same project, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection). In our example, it means the `FabrikamFiberLib` repository.
+
+If you now run our example pipeline, it will succeed.
