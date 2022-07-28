@@ -19,7 +19,7 @@ ms.date: 02/14/2022
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
 
-1. Select **Create** when you are done.
+1. Select **Create** when you're done.
 
 ::: moniker-end
 
@@ -42,6 +42,6 @@ Azure Artifacts comes pre-installed in TFS 2018. If this is the first time using
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
 
-1. Select **Create** when you are done.
+1. Select **Create** when you're done.
 
 ::: moniker-end
