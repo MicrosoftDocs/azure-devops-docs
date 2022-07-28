@@ -54,13 +54,13 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 ## Feature availability
 
-| Package type                      | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
-|-----------------------------------|------------------------| --------------------------------------|  --------------------------------------------|
-| **NuGet packages**                | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
-| **npm packages**                  | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
-| **Maven packages**                | Yes                    | Yes                                   | TFS 2018                                     |
-| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020| TFS 2018                                |
-| **Universal Packages**            | Yes                    | No                                    | No                                           |
+| Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
+|-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
+| **NuGet packages**                | Yes                    | Yes                                          | Yes                                          |
+| **npm packages**                  | Yes                    | Yes                                          | Yes                                          |
+| **Maven packages**                | Yes                    | Yes                                          | Yes                                          |
+| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020  | Yes                                          |
+| **Universal Packages**            | Yes                    | No                                           | No                                           |
 
 ## Artifacts free tier and upgrade
 
