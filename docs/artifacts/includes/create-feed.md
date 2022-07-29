@@ -21,6 +21,9 @@ ms.date: 02/14/2022
 
 1. Select **Create** when you're done.
 
+> [!NOTE]
+> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are set to **Collaborator** when you create a new feed.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
