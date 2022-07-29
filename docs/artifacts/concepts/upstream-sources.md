@@ -126,9 +126,11 @@ If you must publish a package version that already exists on one of your upstrea
 
 If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream source's health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, and then select **Upstream sources**.
 
-If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing upstream will provide more details such as the reason of failure and instructions on how to solve it.
+:::image type="content" source="media/upstreams-last-sync.png" alt-text="A screenshot showing the upstream source failure status.":::
 
-:::image type="content" source="media/upstreams-health-status.png" alt-text="Screenshot showing the upstream source's health status":::
+If there are any failures, a warning message will be displayed. Selecting the failed status will provide more details such as the reason of failure and instructions on how to solve it.
+
+:::image type="content" source="media/upstream-last-sync-details.png" alt-text="A screenshot showing details about the sync up failure.":::
 
 > [!NOTE]
 > For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download. This delay depends on job timing and data propagation. There is no latency when the upstream source is an Azure Artifacts feed.
