@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/14/2022
+ms.date: 7/29/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,9 +35,6 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="1"><strong>2022 Q2</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
-    </tr>
 <tr><td rowspan="7"><strong>2022 Q3</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954" data-raw-source="[Associate all public APIs with PAT scopes](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954)">Associate all public APIs with PAT scopes</a></td><td>General</td><td>TBD</td>    
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032 data-raw-source="[Adding Assigned To avatar to child items on cards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032)">Adding Assigned To avatar to child items on cards</a></td><td>Boards</td><td>Future</td>
@@ -119,6 +116,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="9"><a href="2022/sprint-207-update.md" data-raw-source="[28 July 2022](2022/sprint-207-update.md)"> 28 July 2022</a></td>
+    <td>Pipelines REST API Security Improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use proxy URLs for GitHub Enterprise integration</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Scheduled builds improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updates to "Run stage state changed" service hook event</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Change in the default scope of access tokens in classic build pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Azure Pipelines support for San Diego release of ServiceNow</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Announcing retirement of Windows 2016 image</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Announcing deprecation of macOS 10.15 Catalina images</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Updated default feed permissions</td><td>Artifacts</td><td>Future</td></tr>
+</tr>
     <td rowspan="5"><a href="2022/sprint-206-update.md" data-raw-source="[14 July 2022](2022/sprint-206-update.md)"> 14 July 2022</a></td>
     <td>Filter on work item history</td><td>Boards</td><td>Future</td></tr> 
     <td>Last Accessed column on Delivery Plans page</td><td>Board</td><td>Future</td></tr>
