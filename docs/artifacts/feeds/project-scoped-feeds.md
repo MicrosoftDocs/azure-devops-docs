@@ -3,7 +3,7 @@ title: Project scoped feeds
 description: Understand the difference between project-scoped and organization-scoped feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/22/2022
+ms.date: 08/01/2022
 monikerRange: '<= azure-devops'
 "recommendations": "true"
 ---
@@ -46,7 +46,7 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 
 ::: moniker range=">= azure-devops-2019"
 
-Follow the instructions below to create a project-scoped or organization-scoped feed, and select the appropriate scope for your need.
+Follow the instructions below and select the appropriate scope for your need to create a project-scoped or an organization-scoped feed.
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
@@ -59,6 +59,24 @@ Follow the instructions below to create a project-scoped or organization-scoped 
 1. Select **Create** when you're done.
 
 :::image type="content" source="../media/proj-org-scoped-feed.png" alt-text="A screenshot showing how to create project and organization scoped feeds.":::
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Navigate to **Build & Release**, and then select **Packages**.
+
+    :::image type="content" source="../media/goto-feed-hub.png" alt-text="A screenshot showing how to navigate to feeds in TFS.":::
+
+1. Select the dropdown menu, and then select **New feed**.
+
+    :::image type="content" source="../media/new-feed-button.png" alt-text="A screenshot showing how to create a new feed in TFS.":::
+
+1. Give your feed a **Name**, a **Description**, and then select who can read and contribute to your feed. Select **Include external packages** if you want to use packages from public registries.
+
+1. Select **Create** when you're done.
+
+:::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to set up a new feed in TFS.":::
 
 ::: moniker-end
 
