@@ -32,53 +32,34 @@ Most of the health parameters vary over time, regularly changing their status fr
 
 ## Define a gate for a stage
 
-You can enable gates at the start of a stage (in the **Pre-deployment conditions**)
-or at the end of a stage (**Post-deployment conditions**), or both.
-For details of how to enable gates, see [Configure a gate](../deploy-using-approvals.md#configure-gate).
+You can enable gates at the start of a stage (Pre-deployment conditions) or at the end of a stage (Post-deployment conditions) or for both. See [Set up gates](../deploy-using-approvals.md#configure-gate) for more details.
 
-The **Delay before evaluation** is a time delay at the beginning of the gate evaluation 
-process that allows the gates to initialize, stabilize, and begin providing accurate results
-for the current deployment (see [Gate evaluation flows](#gate-evaluation-flow-examples)). For example:
+The **Delay before evaluation** is a time delay at the beginning of the gate evaluation process that allows the gates to initialize, stabilize, and begin providing accurate results for the current deployment. see [Gate evaluation flows](#gate-evaluation-flow-examples) for more details.
 
-* For **pre-deployment gates**, the delay would be the time required for all bugs to be logged
-  against the artifacts being deployed.  
-* For **post-deployment gates**, the delay would be the maximum of the time taken for the deployed app
-  to reach a steady operational state, the time taken for execution of all the required tests on
-  the deployed stage, and the time it takes for incidents to be logged after the deployment.<p />
+:::image type="content" source="../media/deploy-using-approvals/gates-02.png" alt-text="A screenshot showing the delay before evaluation feature in gates.":::
+
+- For **pre-deployment gates**, the delay would be the time required for all bugs to be logged against the artifacts being deployed.  
+- For **post-deployment gates**, the delay would be the maximum of the time taken for the deployed app to reach a steady operational state, the time taken for execution of all the required tests on the deployed stage, and the time it takes for incidents to be logged after the deployment.
 
 The following gates are available by default:
 
-* **Invoke Azure function**: Trigger execution of an Azure function and ensure a successful completion.
-  For more details, see [Azure function task](../../tasks/utility/azure-function.md).
-* **Query Azure monitor alerts**: Observe the configured Azure monitor alert rules for active alerts.
-  For more details, see [Azure monitor task](../../tasks/utility/azure-monitor.md).
-* **Invoke REST API**: Make a call to a REST API and continue if it returns a successful response.
-  For more details, see [HTTP REST API task](../../tasks/utility/http-rest-api.md).
-* **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold.
-  For more details, see [Work item query task](../../tasks/utility/work-item-query.md).
-* **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a
-  given subscription and resource group, and optionally at a specific resource level. For more details, see
-  [Security Compliance and Assessment task](../../tasks/deploy/azure-policy.md).
+- **Invoke Azure function**: Trigger execution of an Azure function and ensure a successful completion. See [Azure function task](../../tasks/utility/azure-function.md) for more details.
+- **Query Azure monitor alerts**: Observe the configured Azure monitor alert rules for active alerts. See [Azure monitor task](../../tasks/utility/azure-monitor.md) for more details.
+- **Invoke REST API**: Make a call to a REST API and continue if it returns a successful response. See [Invoke REST API task](../../tasks/utility/http-rest-api.md) for more details.
+- **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold. See [Query Work Items task](../../tasks/utility/work-item-query.md) for more details.
+- **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a given subscription and resource group, and optionally at a specific resource level. See [Check Azure Policy compliance task](../../tasks/deploy/azure-policy.md) for more details.
 
-You can [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
-   
-The evaluation options that apply to all the gates you've added are:
+:::image type="content" source="../media/default-gates.png" alt-text="A screenshot showing the default gates.":::
 
-* **Time between re-evaluation of gates**. The time interval between successive evaluations of 
-  the gates. At each sampling interval, new requests are sent concurrently to each gate
-  and the new results are evaluated. It is recommended that the sampling interval is greater than the longest
-  typical response time of the configured gates to allow time for all responses to be received for evaluation.     
-* **Timeout after which gates fail**. The maximum evaluation period for all gates.
-  The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval.
-* **Gates and approvals**. Select the required order of execution for gates and approvals if you have configured both.
-  For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
-  This saves the system from evaluating the gate functions if the release is rejected by the user.
-  For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
- This ensures the approvers have all the information required to approve.
-   
-For information about viewing gate results and logs, see
-[View the logs for approvals](../deploy-using-approvals.md#set-up-manual-validation) and
-[Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
+You can also [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
+
+The evaluation options that apply to all the gates are:
+
+- **Time between re-evaluation of gates**. The time interval between successive evaluations of the gates. At each sampling interval, new requests are sent concurrently to each gate and the new results are evaluated. It is recommended that the sampling interval is greater than the longest typical response time of the configured gates to allow time for all responses to be received for evaluation.
+- **Timeout after which gates fail**. The maximum evaluation period for all gates. The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval.
+- **Gates and approvals**. Select the required order of execution for gates and approvals if you have configured both. For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards. This saves the system from evaluating the gate functions if the release is rejected by the user. For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful. This ensures the approvers have all the information required to approve.
+
+See [View approvals logs](../deploy-using-approvals.md#set-up-manual-validation) and [Monitor and track deployments](../define-multistage-release-process.md#monitor-track) for more information on gates analytics.
 
 ### Gate evaluation flow examples
 
