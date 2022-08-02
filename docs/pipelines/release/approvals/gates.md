@@ -1,7 +1,7 @@
 ---
-title: Control releases with pre-deployment gates
+title: Control releases with deployment gates
 ms.custom: seodec18
-description: Understand pre-deployment gates in Azure Pipelines
+description: Understand deployment gates in Azure Pipelines
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: conceptual
 ms.author: shashban
@@ -10,7 +10,7 @@ ms.date: 08/01/2022
 monikerRange: '<= azure-devops'
 ---
 
-# Pre-deployment gates
+# Deployment gates
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
@@ -18,19 +18,17 @@ Gates allow automatic collection of health signals from external services and th
 
 ## Use cases
 
-Some common use cases for pre-deployment gates are:
+Some common use cases for deployment gates are:
 
 - **Incident management**: Ensure certain criteria are met before proceeding with deployment. For example, ensure deployment occurs only if no priority zero bugs exist.
-- **Set up approvals**: Notify external users such as legal departments, auditors, or IT managers about a deployment by integrating with other services such as Microsoft Teams or Slack and wait for their approvals.
-- **Quality validation**. Query metrics from tests on the build artifacts such as pass rate or code coverage and deploy only if they are within required -hresholds.
-- **Security scan on artifacts**. Ensure security scans such as anti-virus checking, code signing, and policy checking for build artifacts have completed. A -ate might initiate the scan and wait for it to complete, or just check for completion.
-- **User experience relative to baseline**. Using product telemetry, ensure the user experience hasn't regressed from the baseline state. The experience -evel before the deployment could be considered a baseline.
+- **Seek approvals**: Notify external users such as legal departments, auditors, or IT managers about a deployment by integrating with other services such as Microsoft Teams or Slack and wait for their approvals.
+- **Quality validation**: Query pipeline metrics such as pass rate or code coverage and deploy only if they are within a predefined threshold.
+- **Security scan**: Perform security checks such as artifacts scanning, code signing, and policy checking. A deployment gate might initiate the scan and wait for it to complete, or just check for completion.
+- **User experience relative to baseline**: Using product telemetry, ensure the user experience hasn't regressed from the baseline state. The user experience metrics before the deployment could be used as baseline.
 - **Change management**: Wait for change management procedures in a system such as ServiceNow to complete before proceeding with deployment.
-- **Infrastructure health**. Execute monitoring and validate the infrastructure against compliance rules after deployment, or wait for healthy resource utilization and a positive security report.
+- **Infrastructure health**: Execute monitoring and validate the infrastructure against compliance rules after deployment, or wait for healthy resource utilization and a positive security report.
 
-Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy.
-To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time.
-The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
+Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy. To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time. The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
 
 ## Define a gate for a stage
 
