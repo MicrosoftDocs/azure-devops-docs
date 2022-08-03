@@ -243,18 +243,18 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
 
-    ![Configure project settings.](media/access-tokens/project-permissions.png)
+    ![Screenshot of how to configure project settings.](media/access-tokens/project-permissions.png)
 
 2. Create a new Group named *External Projects* and add the **SpaceGameWeb Build Service** account.
 :::image type="content" source="media/access-tokens/create-new-security-group.png" alt-text="Screenshot of creating a new security group.":::
 
 3.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
 
-    ![Select SpaceGameWeb project-scoped build identity user.](media/access-tokens/add-build-service-user-project-permissions.png)
+    ![Screenshot of selecting SpaceGameWeb project-scoped build identity user.](media/access-tokens/add-build-service-user-project-permissions.png)
 
 4. Grant the *View project-level information* permission for that user.
 
-    ![Grant the View project-level information permission for a user.](media/access-tokens/grant-view-project-permissions.png)
+    ![Screenshot of how to grant the View project-level information permission for a user.](media/access-tokens/grant-view-project-permissions.png)
 
 <a id="configure-repo-access"></a>
 
@@ -279,14 +279,14 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 :::moniker range=">azure-devops-2020"
 3.  Start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
-    ![Add user for repository access.](media/access-tokens/search-for-user.png)
+    ![Screenshot of how to add a user for repository access.](media/access-tokens/search-for-user.png)
 :::moniker-end
 
 :::moniker range=">=azure-devops-2019"
 
 4. Grant *Read* permissions for that user.
 
-    ![Configure repository permissions.](media/access-tokens/grant-read-permission-on-repo.png)
+    ![Screenshot of how to configure repository permissions.](media/access-tokens/grant-read-permission-on-repo.png)
 
 ### Example - Configure permissions to access other resources in the same project collection
 
