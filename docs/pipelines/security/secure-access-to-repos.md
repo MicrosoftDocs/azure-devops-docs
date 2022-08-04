@@ -155,7 +155,9 @@ steps:
 
 Here's a summary of the steps you need to take to secure your pipeline's access to Azure Repos repositories:
 
-1. Determine the list of Azure Repos repositories your pipeline needs access to that are part of the same organization, but are in different projects.
+1. Determine the list of Azure Repos repositories your pipeline needs access to that are part of the same organization, but are in different projects. 
+
+   You can do this by inspecting your pipeline. Or, you can turn on the _Limit job authorization scope to current project for non-release pipelines_  toggle and note which repositories your pipeline fails to check out. Note that submodule repositories may not show up in the first failed run.
 
 2. For each Azure DevOps project that contains a repository your pipeline needs to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
 
@@ -198,7 +200,7 @@ In classic build pipelines, you can't explicitly declare other repositories as r
 
 ### The _Protect access to repositories in YAML pipelines_ setting
 
-The _Protect access to repositories in YAML pipelines_ setting makes a YAML pipeline explicitly ask for permission to access _all_ Azure Repos repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines)
+The _Protect access to repositories in YAML pipelines_ setting makes a YAML pipeline explicitly ask for permission to access _all_ Azure Repos repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines).
 
 Be careful when turning on the _Protect access to repositories in YAML pipelines_ setting. If you do, your classic build pipelines won't be able to access any other Azure DevOps repository, except for the one specified in its Settings. In our example pipeline, you'll get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
