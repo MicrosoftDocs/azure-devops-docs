@@ -608,7 +608,7 @@
           displayName: template permissions, repositories
         - name: Secure repositories
           href: security/repos.md
-        - name: Secure access to repositories
+        - name: Secure access to Azure repositories from pipelines
           href: security/secure-access-to-repos.md
           displayName: forks, branches, access token
         - name: Pipeline resources

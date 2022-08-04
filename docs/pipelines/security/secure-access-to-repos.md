@@ -1,6 +1,6 @@
 ---
 title: Secure access to Azure repositories from pipelines
-description: Secure access to Azure epositories from pipelines
+description: Secure access to Azure repositories from pipelines
 ms.author: sandrica
 ms.date: 07/25/2022
 monikerRange: '>= azure-devops-2020'
@@ -14,14 +14,14 @@ This article shows you how to improve the security of your pipelines accessing A
 
 The setup for pipelines to securely access Azure repositories is one in which the toggles _Limit job authorization scope to current project for non-release pipelines_, _Limit job authorization scope to current project for release pipelines_, and _Protect access to repositories in YAML pipelines_, are enabled.
 
-We will cover both build pipelines and classic release pipelines:
+We'll cover both build pipelines and classic release pipelines:
 
 - [Build pipelines](#build-pipelines)
 - [Classic release pipelines](#classic-release-pipelines)
 
 ## Build pipelines
 
-To illustrate the steps you can take to improve the security of your build pipelines when they access Azure Repos, we'll use a running example.
+To illustrate the steps to take to improve the security of your pipelines when they access Azure Repos, we'll use a running example.
 
 Assume you're working on the `SpaceGameWeb` pipeline hosted in the `fabrikam-tailspin/SpaceGameWeb` project, in the `SpaceGameWeb` Azure Repos repository. Furthermore, let's say your `SpaceGameWeb` pipeline checks out the `SpaceGameWebReact` repository in the same project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project.
 
@@ -61,7 +61,7 @@ If you now run our example pipeline, it will succeed.
 
 ## [YAML pipelines](#tab/yaml)
 
-Asssume the `SpaceGameWeb` pipeline is a YAML pipeline, and its YAML source code looks similar to the following code.
+Assume the `SpaceGameWeb` pipeline is a YAML pipeline, and its YAML source code looks similar to the following code.
 ```yml
 trigger:
 - main
@@ -190,11 +190,11 @@ To solve this issue, explicitly check out the `FabrikamFiberLib`, for example, a
 
 ## [Classic build pipelines](#tab/classic)
 
-In classic build pipelines, you can't explicitly declare other repositories as resources. The way you check out additional repositories is by adding command-line tasks with `git clone` commands, similar to the following command to check out the `FabrikamFiber` repository: `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone --recurse-submodules https://dev.azure.com/silviuandrica/FabrikamFiber/_git/FabrikamFiber`.
+In classic build pipelines, you can't explicitly declare other repositories as resources. The way you check out more repositories is by adding command-line tasks with `git clone` commands, similar to the following command to check out the `FabrikamFiber` repository: `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone --recurse-submodules https://dev.azure.com/silviuandrica/FabrikamFiber/_git/FabrikamFiber`.
 
 ### The _Protect access to repositories in YAML pipelines_ setting
 
-The _Protect access to repositories in YAML pipelines_ setting setting makes a YAML pipeline explicitly ask for permission to access _all_ repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines)
+The _Protect access to repositories in YAML pipelines_ setting makes a YAML pipeline explicitly ask for permission to access _all_ repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines)
 
 When using classic build pipelines, don't turn on the _Protect access to repositories in YAML pipelines_ setting. If you do, your classic build pipelines won't be able to access any other Azure DevOps repository, except for the one specified in its Settings. In our example pipeline, you'll get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
@@ -210,7 +210,7 @@ The _Limit job authorization scope to current project for non-release pipelines_
 
 ## Classic release pipelines
 
-The process for securing access to repositories for release pipelines is similar to the one for [YAML pipelines](#yaml-pipelines).
+The process for securing access to repositories for release pipelines is similar to the one for [build pipelines](#build-pipelines).
 
 To illustrate the steps you need to take, we'll use a running example. In our example, there's a release pipeline named `FabrikamFiberDocRelease` in the `fabrikam-tailspin/FabrikamFiberDocRelease` project. Assume the pipeline checks out the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project, runs a command to generate public documentation, and then publishes it to a website. Additionally, imagine the `FabrikamFiber` repository uses the `FabrikamFiberLib` repository (in the same project) as a submodule
 
