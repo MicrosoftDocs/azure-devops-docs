@@ -19,6 +19,22 @@ We'll cover both build pipelines and classic release pipelines:
 - [Build pipelines](#build-pipelines)
 - [Classic release pipelines](#classic-release-pipelines)
 
+## Basic process
+
+The steps are similar across all pipelines:
+
+1. Determine the list of Azure Repos repositories your pipeline needs access to that are part of the same organization, but are in different projects. 
+
+   You can compile the list of repositories by inspecting your pipeline. Or, you can turn on the _Limit job authorization scope to current project for (non-)release pipelines_ toggle and note which repositories your pipeline fails to check out. Submodule repositories may not show up in the first failed run.
+
+2. For each Azure DevOps project that contains a repository your pipeline needs to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
+
+3. For each Azure Repos repository your pipeline checks out, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
+
+4. For each repository that is used as a submodule by a repository your pipeline checks out and is in the same project, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
+
+5. Turn on the _Limit job authorization scope to current project for non-release pipelines_, _Limit job authorization scope to current project for release pipelines_, and _Protect access to repositories in YAML pipelines_ toggles.
+
 ## Build pipelines
 
 To illustrate the steps to take to improve the security of your pipelines when they access Azure Repos, we'll use a running example.
@@ -49,13 +65,9 @@ In our running example, when this toggle is off, the `SpaceGameWeb` pipeline can
 
 If you run our example pipeline, when you turn on the toggle, the pipeline will fail, and the error logs will tell you `remote: TF401019: The Git repository with name or identifier FabrikamChat does not exist or you do not have permissions for the operation you are attempting.` and `remote: TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
-To fix this issue, you need to:
+To fix the checkout issues, follow the stesp described in [Basic process](#basic-process).
 
-1. For each project that contains a repository you wish your pipeline is able to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
-
-2. For each repository in a different project you wish to grant access to, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
-
-3. For each repository that is used as a submodule by a repository your pipeline checks out and is in the same project, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection). In our example, it means the `FabrikamFiberLib` repository.
+Additionally, you need to explicitly check out the submodule repositories, _before_ the repositories that use them. In our example, it means the `FabrikamFiberLib` repository.
 
 If you now run our example pipeline, it will succeed.
 
@@ -116,7 +128,7 @@ Once you do, your pipeline will run, but it will fail because it will not be abl
 
 If you now run the example pipeline, it will succeed.
 
-Our final YAML pipeline source code looks like the following code snipper.
+Our final YAML pipeline source code looks like the following code snippet.
 ```yml
 trigger:
 - main
@@ -150,34 +162,6 @@ steps:
       git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" submodule update --recursive --remote
   - script: cat $(Build.Repository.LocalPath)/FabrikamFiber/FabrikamFiberLib/README.md
 ```
-
-### Migrate to a secure access to repositories setup
-
-Here's a summary of the steps you need to take to secure your pipeline's access to Azure Repos repositories:
-
-1. Determine the list of Azure Repos repositories your pipeline needs access to that are part of the same organization, but are in different projects. 
-
-   You can find the repositories by inspecting your pipeline. Or, you can turn on the _Limit job authorization scope to current project for non-release pipelines_  toggle and note which repositories your pipeline fails to check out. Submodule repositories may not show up in the first failed run.
-
-2. For each Azure DevOps project that contains a repository your pipeline needs to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
-
-3. For each Azure Repos repository you wish to grant access to, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
-
-4. For each repository that is used as a submodule by a repository your pipeline checks out and is in the same project, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection). Explicitly check out the submodule repositories, _before_ the repositories that use them.
-
-5. In Project Settings, Permissions, turn on the _Limit job authorization scope to current project for non-release pipelines_ and the _Protect access to repositories in YAML pipelines_ toggles.
-
-6. Run the pipeline. You'll see a build similar to the following screenshot.
-
-    :::image type="content" source="media/running-the-pipeline-first-time-4-repositories.png" alt-text="Screenshot of running the SpaceGameWeb pipeline the first time after turning on the Protect access to repositories in YAML pipelines toggle and using 4 repositories":::
-
-7. You'll be asked to grant permission to the repositories your pipeline is checking out or has defined as resources.
-
-    :::image type="content" source="media/asked-to-grant-permission-4-repositories.png" alt-text="Screenshot of being asked to grant permission to the SpaceGameWeb pipeline to access four repositories.":::
-
-8. Permit your pipeline's access to the repositories. The pipeline should successfully run to completion.
-
-   :::image type="content" source="media/successful-pipeline-run.png" alt-text="Screenshot of the successful run of the SpaceGameWeb pipeline.":::
 
 ### Troubleshooting
 
@@ -237,13 +221,7 @@ In our running example, when this toggle is off, the `FabrikamFiberDocRelease` r
 
 If you run our example pipeline, when you turn on the toggle, the pipeline will fail, and the logs will tell you `remote: TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
-To fix this issue, you need to:
-
-1. For each project that contains a repository you wish your pipeline is able to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
-
-2. For each repository in a different project you wish to grant access to, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
-
-3. For each repository that is used as a submodule by a repository your pipeline checks out and is in the same project, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection). In our example, it means the `FabrikamFiberLib` repository.
+To fix thie issues, follow the steps in [Basic process](#basic-process).
 
 If you now run our example pipeline, it will succeed.
 
