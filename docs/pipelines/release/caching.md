@@ -277,7 +277,7 @@ steps:
 
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache $(repository):$(tag)
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar $(repository):$(tag)
     displayName: Docker save
     condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
 ```
