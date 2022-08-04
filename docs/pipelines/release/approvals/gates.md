@@ -28,7 +28,7 @@ Some common use cases for deployment gates are:
 - **Change management**: Wait for change management procedures in a system such as ServiceNow to complete before proceeding with deployment.
 - **Infrastructure health**: Execute monitoring and validate the infrastructure against compliance rules after deployment, or wait for healthy resource utilization and a positive security report.
 
-Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy. To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time. The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
+Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy. To account for such variations, all the gates are periodically reevaluated until all of them are successful at the same time. The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
 
 ## Define a gate for a stage
 
@@ -63,41 +63,23 @@ See [View approvals logs](../deploy-using-approvals.md#set-up-manual-validation)
 
 ### Gate evaluation flow examples
 
-The following diagram illustrates the flow of gate evaluation where, after the
-initial stabilization delay period and three sampling intervals, the deployment is approved.
+The following diagram illustrates the flow of gate evaluation where, after the initial stabilization delay period and three sampling intervals, the deployment is approved.
 
-![Successful gates](media/gate-results-pass.png)
+:::image type="content" source="media/gate-results-pass.png" alt-text="A screenshot showing the gates evaluation flow diagram.":::
 
-The following diagram illustrates the flow of gate evaluation where, after the
-initial stabilization delay period, not all gates have succeeded at each sampling interval. In
-this case, after the timeout period expires, the deployment is rejected.
+The following diagram illustrates the flow of gate evaluation where, after the initial stabilization delay period, not all gates have succeeded at each sampling interval. In this case, after the timeout period expires, the deployment is rejected.
 
-![Failed gates](media/gate-results-fail.png)
+:::image type="content" source="media/gate-results-fail.png" alt-text="A screenshot showing examples of gates approvals and failures.":::
 
+## Resources
 
-## Video 
-
-> [!VIDEO https://www.youtube.com/embed/7WLcqwhTZ_4?start=0]
+- [Create custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md)
+- [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
+- [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 
 ## Related articles
 
-* [Approvals and gates overview](index.md)
-* [Manual intervention](../deploy-using-approvals.md#configure-maninter)
-* [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Security Compliance and Assessment task](../../tasks/deploy/azure-policy.md)
-* [Stages](../../process/stages.md)
-* [Triggers](../triggers.md)
-
-
-## Additional resources
-
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](/Events/Connect/2017/T181)  
-* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
-* [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
-* [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
-* [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
-* [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
-
-
-[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
-
+- [Release gates and approvals overview](index.md)
+- [Use gates and approvals to control your deployment](../deploy-using-approvals.md)
+- [Add stages, dependencies, & conditions](../../process/stages.md)
+- [Release triggers](../triggers.md)
