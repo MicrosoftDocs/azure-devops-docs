@@ -102,7 +102,7 @@ steps:
 
 ### Protect access to repositories in YAML pipelines
 
-Azure DevOps provides a fine-grained permissions mechanism for Azure repositories, in the form of the _Protect access to repositories in YAML pipelines_ setting. This setting makes a YAML pipeline explicitly ask for permission to access _all_ repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines)
+Azure DevOps provides a fine-grained permissions mechanism for Azure Repos repositories, in the form of the _Protect access to repositories in YAML pipelines_ setting. This setting makes a YAML pipeline explicitly ask for permission to access _all_ Azure Repos repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines). Checking out other types of repositories, for example, GitHub-hosted ones, is not affected by this setting.
 
 In our running example, when this toggle is on, the `SpaceGameWeb` pipeline will ask permission to access the `SpaceGameWebReact` repository in the `fabrikam-tailspin/SpaceGameWeb` project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project.
 
@@ -157,9 +157,9 @@ Here's a summary of the steps you need to take to secure your pipeline's access 
 
 1. Determine the list of Azure Repos repositories your pipeline needs access to that are part of the same organization, but are in different projects.
 
-2. For each project that contains a repository you wish your pipeline is able to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
+2. For each Azure DevOps project that contains a repository your pipeline needs to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
 
-3. For each repository you wish to grant access to, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
+3. For each Azure Repos repository you wish to grant access to, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection).
 
 4. For each repository that is used as a submodule by a repository your pipeline checks out and is in the same project, follow the steps to [grant the pipeline's build identity _Read_ access to that repository](../process/access-tokens.md#example---configure-permissions-to-access-another-repo-in-the-same-project-collection). Explicitly check out the submodule repositories, _before_ the repositories that use them.
 
@@ -194,15 +194,17 @@ To solve this issue, explicitly check out the `FabrikamFiberLib`, for example, a
 
 ## [Classic build pipelines](#tab/classic)
 
-In classic build pipelines, you can't explicitly declare other repositories as resources. The way you check out more repositories is by adding command-line tasks with `git clone` commands, similar to the following command to check out the `FabrikamFiber` repository: `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone --recurse-submodules https://dev.azure.com/silviuandrica/FabrikamFiber/_git/FabrikamFiber`.
+In classic build pipelines, you can't explicitly declare other repositories as resources. The way you check out more Azure Repos repositories is by adding command-line tasks with `git clone` commands, similar to the following command to check out the `FabrikamFiber` repository: `git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" clone --recurse-submodules https://dev.azure.com/silviuandrica/FabrikamFiber/_git/FabrikamFiber`.
 
 ### The _Protect access to repositories in YAML pipelines_ setting
 
-The _Protect access to repositories in YAML pipelines_ setting makes a YAML pipeline explicitly ask for permission to access _all_ repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines)
+The _Protect access to repositories in YAML pipelines_ setting makes a YAML pipeline explicitly ask for permission to access _all_ Azure Repos repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines)
 
-When using classic build pipelines, don't turn on the _Protect access to repositories in YAML pipelines_ setting. If you do, your classic build pipelines won't be able to access any other Azure DevOps repository, except for the one specified in its Settings. In our example pipeline, you'll get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
+Be careful when turning on the _Protect access to repositories in YAML pipelines_ setting. If you do, your classic build pipelines won't be able to access any other Azure DevOps repository, except for the one specified in its Settings. In our example pipeline, you'll get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
-If your project has both YAML and classic build pipelines _and_ your classic build pipelines check out other repositories in addition to the ones specified in their settings, then you want to create two projects, one for the YAML pipelines and one for the classic build pipelines. Then, in the YAML pipelines project, you can turn on the setting.
+If your project has both YAML and classic build pipelines _and_ your classic build pipelines check out other Azure DevOps repositories in addition to the ones specified in their settings, then you want to create two projects, one for the YAML pipelines and one for the classic build pipelines. Then, in the YAML pipelines project, you can turn on the setting.
+
+The _Protect access to repositories in YAML pipelines_ setting does not apply to repositories hosted on other services, such as GitHub.
 
 #### The _Build job authorization scope_ setting
 
