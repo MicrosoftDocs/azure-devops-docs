@@ -168,12 +168,15 @@ Here's a summary of the steps you need to take to secure your pipeline's access 
 5. In Project Settings, Permissions, turn on the _Limit job authorization scope to current project for non-release pipelines_ and the _Protect access to repositories in YAML pipelines_ toggles.
 
 6. Run the pipeline. You'll see a build similar to the following screenshot.
+
     :::image type="content" source="media/running-the-pipeline-first-time-4-repositories.png" alt-text="Screenshot of running the SpaceGameWeb pipeline the first time after turning on the Protect access to repositories in YAML pipelines toggle and using 4 repositories":::
 
 7. You'll be asked to grant permission to the repositories your pipeline is checking out or has defined as resources.
+
     :::image type="content" source="media/asked-to-grant-permission-4-repositories.png" alt-text="Screenshot of being asked to grant permission to the SpaceGameWeb pipeline to access four repositories.":::
 
 8. Permit your pipeline's access to the repositories. The pipeline should successfully run to completion.
+
    :::image type="content" source="media/successful-pipeline-run.png" alt-text="Screenshot of the successful run of the SpaceGameWeb pipeline.":::
 
 ### Troubleshooting
