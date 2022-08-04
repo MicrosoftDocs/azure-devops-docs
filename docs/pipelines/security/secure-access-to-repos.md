@@ -65,7 +65,7 @@ In our running example, when this toggle is off, the `SpaceGameWeb` pipeline can
 
 If you run our example pipeline, when you turn on the toggle, the pipeline will fail, and the error logs will tell you `remote: TF401019: The Git repository with name or identifier FabrikamChat does not exist or you do not have permissions for the operation you are attempting.` and `remote: TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
-To fix the checkout issues, follow the stesp described in [Basic process](#basic-process).
+To fix the checkout issues, follow the steps described in [Basic process](#basic-process).
 
 Additionally, you need to explicitly check out the submodule repositories, _before_ the repositories that use them. In our example, it means the `FabrikamFiberLib` repository.
 
@@ -121,7 +121,7 @@ In our running example, when this toggle is on, the `SpaceGameWeb` pipeline will
 When you run the example pipeline, you'll see a build similar to the following screenshot.
 :::image type="content" source="media/running-the-pipeline-first-time.png" alt-text="Screenshot of running the SpaceGameWeb pipeline the first time after turning on the Protect access to repositories in YAML pipelines toggle.":::
 
-You'll be asked to grant permission to the repositories your pipeline is checking out or has defined as resources.
+You'll be asked to grant permission to the repositories your pipeline checks out or has defined as resources.
     :::image type="content" source="media/asked-to-grant-permission.png" alt-text="Screenshot of being asked to grant permission to the SpaceGameWeb pipeline to access three repositories.":::
 
 Once you do, your pipeline will run, but it will fail because it will not be able to check out the `FabrikamFiberLib` repository as a submodule of `FabrikamFiber`. To solve this issue, explicitly check out the `FabrikamFiberLib`, for example, add a `- checkout: git://FabrikamFiber/FabrikamFiberLib` step, before the `-checkout: FabrikamFiber` step.
@@ -221,11 +221,11 @@ In our running example, when this toggle is off, the `FabrikamFiberDocRelease` r
 
 If you run our example pipeline, when you turn on the toggle, the pipeline will fail, and the logs will tell you `remote: TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
-To fix thie issues, follow the steps in [Basic process](#basic-process).
+To fix these issues, follow the steps in [Basic process](#basic-process).
 
 If you now run our example pipeline, it will succeed.
 
-## Learn more
+## See also
 
 - [Scoped build identities](../process/access-tokens.md#scoped-build-identities)
 - [Job authorization scope](../process/access-tokens.md#job-authorization-scope)
