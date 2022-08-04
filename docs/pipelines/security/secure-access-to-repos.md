@@ -37,7 +37,7 @@ The `FabrikamFiber` project's repository structures look like in the following s
 
 Image your project isn't set up to use a project-based build identity or to protect access to repositories in YAML pipelines. Also, assume you've already successfully ran your pipeline.
 
-### Use a Project-based build identity for YAML pipelines
+### Use a Project-based build identity for build pipelines
 
 When a pipeline executes, it uses an identity to access various resources, such as repositories, service connections, variable groups. There are two types of identities a pipeline can use: a project-level one and a collection-level one. The former provides better security, the latter provides ease of use.  Read more about [scoped build identities](../process/access-tokens.md#scoped-build-identities) and [job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
