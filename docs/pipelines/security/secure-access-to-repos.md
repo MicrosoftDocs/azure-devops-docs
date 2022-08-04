@@ -102,7 +102,7 @@ steps:
 
 ### Protect access to repositories in YAML pipelines
 
-Azure DevOps provides a fine-grained permissions mechanism for Azure Repos repositories, in the form of the _Protect access to repositories in YAML pipelines_ setting. This setting makes a YAML pipeline explicitly ask for permission to access _all_ Azure Repos repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines). Checking out other types of repositories, for example, GitHub-hosted ones, is not affected by this setting.
+Azure DevOps provides a fine-grained permissions mechanism for Azure Repos repositories, in the form of the _Protect access to repositories in YAML pipelines_ setting. This setting makes a YAML pipeline explicitly ask for permission to access _all_ Azure Repos repositories, regardless of which project they belong to. Read more about [this setting](../process/access-tokens.md#protect-access-to-repositories-in-yaml-pipelines). Checking out other types of repositories, for example, GitHub-hosted ones, isn't affected by this setting.
 
 In our running example, when this toggle is on, the `SpaceGameWeb` pipeline will ask permission to access the `SpaceGameWebReact` repository in the `fabrikam-tailspin/SpaceGameWeb` project, and the `FabrikamFiber` and `FabrikamChat` repositories in the `fabrikam-tailspin/FabrikamFiber` project.
 
@@ -157,7 +157,7 @@ Here's a summary of the steps you need to take to secure your pipeline's access 
 
 1. Determine the list of Azure Repos repositories your pipeline needs access to that are part of the same organization, but are in different projects. 
 
-   You can do this by inspecting your pipeline. Or, you can turn on the _Limit job authorization scope to current project for non-release pipelines_  toggle and note which repositories your pipeline fails to check out. Note that submodule repositories may not show up in the first failed run.
+   You can find the repositories by inspecting your pipeline. Or, you can turn on the _Limit job authorization scope to current project for non-release pipelines_  toggle and note which repositories your pipeline fails to check out. Submodule repositories may not show up in the first failed run.
 
 2. For each Azure DevOps project that contains a repository your pipeline needs to access, follow the steps to [grant the pipeline's build identity access to that project](../process/access-tokens.md#configure-permissions-for-a-project-to-access-another-project-in-the-same-project-collection).
 
@@ -206,7 +206,7 @@ Be careful when turning on the _Protect access to repositories in YAML pipelines
 
 If your project has both YAML and classic build pipelines _and_ your classic build pipelines check out other Azure DevOps repositories in addition to the ones specified in their settings, then you want to create two projects, one for the YAML pipelines and one for the classic build pipelines. Then, in the YAML pipelines project, you can turn on the setting.
 
-The _Protect access to repositories in YAML pipelines_ setting does not apply to repositories hosted on other services, such as GitHub.
+The _Protect access to repositories in YAML pipelines_ setting doesn't apply to repositories hosted on other services, such as GitHub.
 
 #### The _Build job authorization scope_ setting
 
