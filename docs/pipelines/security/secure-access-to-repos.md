@@ -202,7 +202,7 @@ The _Protect access to repositories in YAML pipelines_ setting makes a YAML pipe
 
 When using classic build pipelines, don't turn on the _Protect access to repositories in YAML pipelines_ setting. If you do, your classic build pipelines won't be able to access any other Azure DevOps repository, except for the one specified in its Settings. In our example pipeline, you'll get an error and the log message `TF401019: The Git repository with name or identifier FabrikamFiber does not exist or you do not have permissions for the operation you are attempting.`
 
-If your project has both YAML and classic build pipelines _and_ your classic build pipeline needs to check out other repositories in addition to the one specified in its settings, then you want to create two projects, one for the YAML pipelines and one for the classic build pipelines. Then, in the YAML pipelines project, you can turn on the setting.
+If your project has both YAML and classic build pipelines _and_ your classic build pipelines check out other repositories in addition to the ones specified in their settings, then you want to create two projects, one for the YAML pipelines and one for the classic build pipelines. Then, in the YAML pipelines project, you can turn on the setting.
 
 #### The _Build job authorization scope_ setting
 
