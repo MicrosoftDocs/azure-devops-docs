@@ -59,6 +59,10 @@ To fix this issue, you need to:
 
 If you now run our example pipeline, it will succeed.
 
+### Further configuration
+
+To further improve security when accessing Azure Repos, consider turning on the _Protect access to repositories in YAML pipelines_ setting.
+
 ## [YAML pipelines](#tab/yaml)
 
 Assume the `SpaceGameWeb` pipeline is a YAML pipeline, and its YAML source code looks similar to the following code.
