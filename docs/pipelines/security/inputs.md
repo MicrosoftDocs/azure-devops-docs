@@ -96,7 +96,7 @@ When they try to run the pipeline, they'll get an error.
 > * The _Add variable_ button will be removed from the _Run pipeline_ panel.
 :::image type="content" source="media/add-variables-at-queue-time-rollout-complete.png" alt-text="Screenshot of variables tab after rollout is complete.":::
 >
-> * The [Builds - Queue](https://docs.microsoft.com/rest/api/azure/devops/build/builds/queue) and the [Runs - Run Pipeline](https://docs.microsoft.com/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API calls will fail with an error similar to
+> * The [Builds - Queue](/rest/api/azure/devops/build/builds/queue) and the [Runs - Run Pipeline](/rest/api/azure/devops/pipelines/runs/run-pipeline) REST API calls will fail with an error similar to
 > 
 > ```json
 > {
