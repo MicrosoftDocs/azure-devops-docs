@@ -88,14 +88,16 @@ nuget.exe restore
 
 ## Restore packages from feeds in a different organization
 
-To restore NuGet packages from feeds in a different Azure DevOps organization, you must set up authentication to those feeds manually.
- 
-1. Select an account (either a service account (recommended) or a user account) that has access to the remote feed.
-1. In your browser, open a Private mode, Incognito mode, or a similar mode window and navigate to the Azure DevOps organization hosting the remote feed. Sign in, and then select **User settings** -> **Personal Access Tokens**.
+To restore NuGet packages from feeds in a different Azure DevOps organization, you must use a personal access token to authenticate.
 
-    :::image type="content" source="media/pat.png" alt-text="Screenshot showing how to create a personal access token":::
+1. Navigate to your Azure DevOps organization, and then select **User settings** > **Personal Access Tokens**.
 
-1. Create a personal access token with **Packaging (read)** scope and copy your pat to the clipboard.
+    :::image type="content" source="media/pat.png" alt-text="A screenshot showing how to create a personal access token":::
+
+1. Create a personal access token with **Packaging (read)** scope and copy your PAT to the clipboard.
+
+### [Classic](#tab/classic/)
+
 1. Navigate to your pipeline definition and select the **NuGet restore** task. Make sure you're using version 2 or greater.
 
     :::image type="content" source="media/nuget-v-2.png" alt-text="Screenshot showing the NuGet restore task version":::
@@ -111,6 +113,19 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
     :::image type="content" source="media/service-connection.png" alt-text="Screenshot showing how to add a NuGet service connection":::
 
 1. Select **Save & queue** when you are done.
+
+### [YAML](#tab/yaml/)
+
+```yml
+task: NuGetCommand@2
+      inputs:
+        restoreSolution: '**/*.sln'                     ## Path to your project's solution, packages.config, or project.json.
+        feedsToUse: 'config'
+        nugetConfigPath: 'Deployment/NuGet.config'      ## Path to your nuget.config file.
+        externalFeedCredentials: 'MyServiceConnection'  ## The name of your service connection.
+```
+
+* * *
 
 ## FAQ
 
