@@ -86,7 +86,7 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 
 1. Navigate to your Azure DevOps organization, and then select **User settings** > **Personal Access Tokens**.
 
-    :::image type="content" source="media/pat.png" alt-text="A screenshot showing how to create a personal access token":::
+    :::image type="content" source="media/pat.png" alt-text="Screenshot showing how to create a personal access token.":::
 
 1. Create a personal access token with **Packaging (read)** scope and copy your PAT to the clipboard.
 
@@ -94,17 +94,17 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 
 1. Navigate to your pipeline definition and select the **NuGet restore** task. Make sure you're using version 2 or greater.
 
-    :::image type="content" source="media/nuget-v-2.png" alt-text="Screenshot showing the NuGet restore task version":::
+    :::image type="content" source="media/nuget-v-2.png" alt-text="Screenshot showing the NuGet restore task version.":::
 
 1. Select the **Feeds and authentication** section, and then select **Feeds in my NuGet.config** option.
 1. Enter the path to your NuGet.config file.
 1. Select **New** to add **Credentials for feeds outside this organization/collection**.
 
-    :::image type="content" source="media/feeds-and-authentication.png" alt-text="A screenshot showing how to configure the NuGet restore task":::
+    :::image type="content" source="media/feeds-and-authentication.png" alt-text="Screenshot showing how to configure the NuGet restore task.":::
 
 1. Select **External Azure DevOps Server**, and then enter your feed URL (make sure it matches what's in your NuGet.config), a service connection name, and the personal access token you created earlier. Select **Save** when you are done.
 
-    :::image type="content" source="media/external-server-service-connection.png" alt-text="A screenshot showing how to add a NuGet service connection":::
+    :::image type="content" source="media/external-server-service-connection.png" alt-text="Screenshot showing how to add a NuGet service connection.":::
 
 1. Select **Save & queue** when you are done.
 
@@ -135,7 +135,7 @@ For new pipelines, the **NuGet Tool Installer** will be added automatically to a
 
 For existing pipelines, add the **NuGet Tool Installer** to your pipeline and select the NuGet version for all the subsequent tasks. Check out the [dist.nuget](https://dist.nuget.org/tools.json) to see all the available versions.
 
-:::image type="content" source="media/nuget-tool-installer.png" alt-text="Screenshot showing the NuGet tool installer task":::
+:::image type="content" source="media/nuget-tool-installer.png" alt-text="Screenshot showing the NuGet tool installer task.":::
 
 ::: moniker-end 
 
