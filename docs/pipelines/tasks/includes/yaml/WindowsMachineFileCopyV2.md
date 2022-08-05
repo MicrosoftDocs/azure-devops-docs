@@ -13,7 +13,7 @@ ms.technology: devops-cicd-tasks
 - task: WindowsMachineFileCopy@2
   inputs:
     sourcePath: 
-    #machineNames: # Optional
+    #machineNames: # Required
     #adminUserName: # Optional
     #adminPassword: # Optional
     targetPath: 
