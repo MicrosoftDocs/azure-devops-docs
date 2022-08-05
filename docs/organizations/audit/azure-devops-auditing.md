@@ -91,7 +91,7 @@ The organization will now have Auditing enabled. You may need to refresh the pag
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Auditing**.
 
@@ -112,7 +112,7 @@ The user or group members will now have access to view your organization's audit
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
    
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
    
 3. Select **Auditing**.
 

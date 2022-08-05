@@ -28,7 +28,7 @@ You must be [an organization owner](../security/look-up-organization-owner.md) o
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. In the **Overview** tab, add your privacy policy URL, and then select **Save**.
 

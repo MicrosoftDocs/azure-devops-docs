@@ -46,7 +46,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Permissions**, and then select the group you want to add a member to.
 
@@ -70,7 +70,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
 
