@@ -106,11 +106,11 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 1. Enter the path to your NuGet.config file.
 1. Select **New** to add **Credentials for feeds outside this organization/collection**.
 
-    :::image type="content" source="media/feeds-and-authentication.png" alt-text="Screenshot showing how to configure the NuGet restore task":::
+    :::image type="content" source="media/feeds-and-authentication.png" alt-text="A screenshot showing how to configure the NuGet restore task":::
 
-1. Select **External Azure DevOps Server**, and then enter a connection name, the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
+1. Select **External Azure DevOps Server**, and then enter your feed URL (make sure it matches what's in your NuGet.config), a service connection name, and the personal access token you created earlier. Select **Save** when you are done.
 
-    :::image type="content" source="media/service-connection.png" alt-text="Screenshot showing how to add a NuGet service connection":::
+    :::image type="content" source="media/external-server-service-connection.png" alt-text="A screenshot showing how to add a NuGet service connection":::
 
 1. Select **Save & queue** when you are done.
 
