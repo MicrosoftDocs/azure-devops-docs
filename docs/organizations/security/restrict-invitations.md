@@ -38,7 +38,7 @@ can add users who are already in the organization to their team       |
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
    
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Under Security, select **Policies**, and then move the toggle to **off**.   
 
