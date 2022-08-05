@@ -2,14 +2,14 @@
 metadata:
   title: Frequent questions about billing management
   titleSuffix: Azure DevOps
-  ms.custom: seodec18, freshness-fy22
+  ms.custom: seodec18, freshness-fy22q1
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.technology: devops-billing
   ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 03/07/2022
+  ms.date: 08/05/2022
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -213,7 +213,7 @@ sections:
 
           1. Go to [Azure portal > Subscriptions](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade), and then select **Cost analysis**.
 
-             ![In Azure portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
+             ![Screenshot of Azure portal, Subscriptions button selection.](media/billing-faq/cost-management-cost-analysis.png) 
 
       - question: |
           Q: How do I see only my Azure DevOps charges?
@@ -223,7 +223,7 @@ sections:
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           2. Filter on **Service name** = **Azure DevOps**.
           
-             ![Filter by service name](media/billing-faq/filter-by-service-name.png)
+             ![Screenshot showing filter by service name.](media/billing-faq/filter-by-service-name.png)
           
       - question: |
           Q: How much am I currently spending on Azure DevOps?
@@ -233,7 +233,7 @@ sections:
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           2. View by **Daily costs**.
           
-             ![View by Daily costs](media/billing-faq/view-daily-costs.png)
+             ![Screenshot of view by Daily costs.](media/billing-faq/view-daily-costs.png)
           
       - question: |
           Q: What services do I pay for in Azure DevOps?
@@ -243,7 +243,7 @@ sections:
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           2. Group by **Meter subcategory**.
           
-             ![Group by Meter subcategory](media/billing-faq/group-by-meter-subcategory.png)
+             ![Screenshot of group by Meter subcategory.](media/billing-faq/group-by-meter-subcategory.png)
           
       - question: |
           Q: How can I split Azure DevOps charges by organization?
@@ -254,15 +254,15 @@ sections:
           
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           
-             ![In Azure portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
+             ![Screenshot of Azure portal, selected Subscriptions button, and then Cost analysis.](media/billing-faq/cost-management-cost-analysis.png) 
           
             - Filter based on tag, and see only charges for a given organization or
           
-               ![Filter based on tag](media/billing-faq/filter-based-on-tag.png)
+               ![Screenshot of filtering based on tag.](media/billing-faq/filter-based-on-tag.png)
           
             - Group by tag, and see charges stacked by organization
           
-               ![Group by tag, see stacked charges](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
+               ![Screenshot of grouping by tag showing stacked charges.](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
           
           ## Azure portal integration
 
