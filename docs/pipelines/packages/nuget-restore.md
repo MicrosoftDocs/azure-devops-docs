@@ -73,18 +73,12 @@ nuget.exe restore
 - task: DotNetCoreCLI@2
   displayName: dotnet restore
   inputs:
-    command: restore
-    projects: '**/*.csproj'
-    feedsToUse: 'select'
-    vstsFeed: '<projectName>/<feedName>'
-    includeNuGetOrg: true
+    command: restore                      ## The dotnet command to run. Options: build, push, pack, restore, run, test, and custom.
+    projects: '**/*.csproj'               ## Path to your csproj file
+    feedsToUse: 'select'                  ## Options: select, config
+    vstsFeed: '<projectName>/<feedName>'  ## Required when feedsToUse == Select
+    includeNuGetOrg: true                 ## Use packages from NuGet.org
 ```
-
-- `command`: The dotnet command to run. Options: `build`, `push`, `pack`, `restore`, `run`, `test`, and `custom`.
-- `projects`: The path to the csproj file(s) to use. You can use wildcards (example: **/*.csproj for all .csproj files in all subfolders).
-- `feedsToUse`: You can either choose to select a feed or commit a NuGet.config file to your source code repository and set its path using `nugetConfigPath`. Options: `select`, `config`.
-- `vstsFeed`: This argument is required when `feedsToUse` == `Select`. Value format: `<projectName>/<feedName>`.
-- `includeNuGetOrg`: Use packages from NuGet.org.
 
 ## Restore packages from feeds in a different organization
 
