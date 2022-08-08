@@ -74,7 +74,6 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 [!INCLUDE [ci-triggers](includes/ci-triggers2.md)]
 
 [!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
-::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 YAML pipelines aren't available in TFS.
