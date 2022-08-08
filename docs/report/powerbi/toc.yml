@@ -1,15 +1,29 @@
-- name: About Power BI integration
-  href: overview.md
-- name: What is the Analytics service?
+name: Analytics and Power BI 
+items:
+- name: What is Analytics?
   href: what-is-analytics.md
-- name: Extend Analytics with OData 
-  href: ../extend-analytics/quick-ref.md
-- name: Enable or install Analytics
-  href: ../dashboards/analytics-extension.md
-- name: Set Analytics permissions (Security)
-  href: analytics-security.md
+- name: Analytics features overview
+  href: ../analytics/analytics-features.md
 - name: Reporting roadmap
   href: reporting-roadmap.md
+- name: Get started
+  items:
+  - name: Data available and versioning
+    href: data-available-in-analytics.md
+  - name: Query parts
+    href: ../analytics/analytics-query-parts.md
+  - name: Query tools
+    href: ../analytics/analytics-query-tools.md
+  - name: Best practices
+    href: ../analytics/analytics-best-practices.md
+  - name: Permissions and prerequisites
+    href: ../analytics/analytics-permissions-prerequisites.md
+  - name: Set Analytics permissions (Security)
+    href: analytics-security.md
+  - name: Enable or install Analytics
+    href: ../dashboards/analytics-extension.md
+  - name: Quick reference index
+    href: ../extend-analytics/quick-ref.md
 - name: Analytics views
   items:
   - name: What are Analytics views?
@@ -24,8 +38,10 @@
     href: data-connector-dataset.md
   - name: Resolve errors with an Analytics view
     href: troubleshooting-views.md
-- name: Power BI reports
+- name: Power BI integration
   items:
+  - name: About Power BI integration 
+    href: overview.md
   - name: Create a report using an Analytics view
     href: create-quick-report.md
   - name: Create a report using an OData query
@@ -146,8 +162,6 @@
     href: sample-test-plans-configuration-by-outcome.md
 - name: Data model reference
   items:
-  - name: Data available from Analytics
-    href: data-available-in-analytics.md
   - name: Data model for Analytics
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Explore Analytics metadata
