@@ -203,15 +203,13 @@ variables:
 
 steps:
 - task: Cache@2
+  displayName: Bundler caching
   inputs:
-    key: 'gems | "$(Agent.OS)" | my.gemspec'
+    key: 'gems | "$(Agent.OS)" | Gemfile.lock'
     restoreKeys: | 
       gems | "$(Agent.OS)"
       gems
     path: $(BUNDLE_PATH)
-  displayName: Cache gems
-
-- script: bundle install
 ```
 
 ## Ccache (C/C++)
