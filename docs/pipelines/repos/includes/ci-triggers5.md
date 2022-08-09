@@ -31,7 +31,7 @@ Wildcards patterns allow `*` to match zero or more characters and `?` to match a
 * For branches and tags:
   * A wildcard may appear anywhere in the pattern.
 * For paths:
-  * In Azure DevOps Services, a wildcard may appear anywhere within a path pattern and you may use `*` or `?`.
+  * In Azure DevOps Server 2022 and higher, including Azure DevOps Services, a wildcard may appear anywhere within a path pattern and you may use `*` or `?`.
   * In Azure DevOps Server 2020 and lower, you may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself. You may **not** include `*` in the middle of a path filter, and you may not use `?`.
 
 ```yaml

@@ -37,7 +37,7 @@ By default all members of an organization or project collection can view Deliver
 ## Edit permissions for a Delivery Plan
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 1. Open **Boards>Delivery Plans**. 
 
@@ -61,7 +61,7 @@ By default all members of an organization or project collection can view Deliver
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 
 1. Open **Boards>Plans**. For details, see [Review team delivery plans](../extensions/delivery-plans.md).  
 

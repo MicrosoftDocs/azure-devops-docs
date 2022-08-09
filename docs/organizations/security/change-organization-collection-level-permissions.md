@@ -124,7 +124,7 @@ Here we show how to add a user to the built-in **Project Collection Administrato
 ::: moniker-end 
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -308,7 +308,7 @@ For on-premises deployments, see these additional articles:
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 

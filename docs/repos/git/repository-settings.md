@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: how-to
 ms.custom: cross-service
 monikerRange: '<= azure-devops' 
-ms.date: 03/31/2022
+ms.date: 08/08/2022
 ---
 
 # Set Git repository settings and policies
@@ -70,7 +70,7 @@ The following table summarizes the settings you can enable and configure for all
       Initialize new repositories with the default branch name you specify. You can change the default branch for a particular repository anytime. If you don't enable this feature, repositories initialize with a default branch named `main`.
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 :::row:::
    :::column span="2":::
       [Allow users to manage permissions for their created branches](#allow-users-to-manage-permissions-for-their-branches)
@@ -164,7 +164,7 @@ The following table summarizes the settings you can enable or configure for each
       Remember user preferences for completing work items with pull requests.
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 :::row:::
    :::column span="2":::
       [Permissions management](#branch-permission-management)
@@ -177,7 +177,7 @@ The following table summarizes the settings you can enable or configure for each
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 :::row:::
    :::column span="2":::
       [Strict Vote Mode](#strict-vote-mode-setting)
@@ -190,7 +190,7 @@ The following table summarizes the settings you can enable or configure for each
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 :::row:::
    :::column span="2":::
       [Disable Repository](#disable-repository-setting)
@@ -809,7 +809,7 @@ To set a default branch name at the project level:
 > The **Default branch name for new repositories** setting requires Azure DevOps Server 2020.1 or later version. 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range=">= azure-devops-2022"
 <a name="allow-users-to-manage-permissions-for-their-branches"></a>
 
 ## Branch permission management
@@ -845,7 +845,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 :::image type="content" source="media/repository-settings/organization-settings-gravatar.png" alt-text="Screenshot that shows the organization-level setting for Gravatar images.":::
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 **Gravatar images** is a project-level setting for **All Repositories**.
 
 1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
@@ -913,7 +913,7 @@ Enable this setting to automatically complete those work items when you successf
 
 By default, the option to complete linked work items during pull request completion remembers each user's last choice. Teams that want to discourage users from completing work items with their pull requests can disable this setting. Users must then opt in to completing work items each time they complete a pull request.
 
-::: moniker range="=azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ## Strict Vote Mode setting
 
@@ -925,7 +925,7 @@ In certain situations, users who aren't contributors to a repository can submit 
 :::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ## Disable repository setting
 
@@ -937,7 +937,7 @@ Enabling this setting disables access to the repository, including builds and pu
 :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops-2020"
 
 ## Searchable branches setting
 
@@ -953,9 +953,6 @@ To add branches for code search:
 1. Select a branch to include in search, and then select **Add branch**.
 
 :::image type="content" source="media/repository-settings/searchable-branches.png" alt-text="Screenshot that shows the Searchable Branches repository setting.":::
-
->[!NOTE]
->The **Searchable branches** setting requires Azure DevOps Server 2020.1 or later version.
 
 ::: moniker-end
 <!--- REPOSITORY POLICIES --> 
