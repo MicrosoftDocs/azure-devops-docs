@@ -2,7 +2,7 @@
 title: YAML pipeline editor guide
 description: Learn how to author and edit pipelines with the YAML pipeline editor.
 ms.topic: reference
-ms.date: 02/17/2022
+ms.date: 07/06/2022
 author: steved0x
 ms.author: sdanie
 monikerRange: '>=azure-devops-2019'
@@ -173,7 +173,7 @@ To manage pipelines variables in the UI, do the following steps.
 
 For more information on working with pipeline variables, see [Define variables](../process/variables.md).
 
-:::moniker range="= azure-devops"
+:::moniker range=">= azure-devops-2022"
 
 ## View and edit templates
 

@@ -7,13 +7,13 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'azure-devops'
-ms.date: 01/20/2022
+monikerRange: '>= azure-devops-2022'
+ms.date: 07/26/2022
 ---
 
 # Copy a dashboard 
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. The copy operation copies the widgets defined on one dashboard to a new dashboard, and reconfigures them based on a selected team. This feature minimizes the work required to build similar dashboards from scratch.  
  

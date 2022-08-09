@@ -108,7 +108,7 @@ Here we show how to add a user to the built-in **Project Administrators** group.
 ::: moniker-end 
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 

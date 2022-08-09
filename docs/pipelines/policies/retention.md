@@ -61,6 +61,13 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
 ::: moniker-end
 
+::: moniker range="azure-devops-2022"
+
+> [!IMPORTANT]
+> Azure Pipelines no longer supports per-pipeline retention policies. We recommend using project-level retention rules.
+
+::: moniker-end
+
 ## Set run retention policies
 
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
@@ -176,6 +183,8 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
 ### Automatically set retention lease on pipeline runs
 
 Retention leases are used to manage the lifetime of pipeline runs beyond the configured retention periods. Retention leases can be added or deleted on a pipeline run by calling the [Lease API](/rest/api/azure/devops/build/leases). This API can be invoked within the pipeline using a script and using [predefined variables](../build/variables.md) for runId and definitionId.
@@ -187,6 +196,8 @@ A retention lease can be added on a pipeline run for a specific period. For exam
 You can manually set a pipeline run to be retained using the [More actions menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
 ![manually retain a run](media/manually-retain-a-run.png)
+
+::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -523,6 +534,22 @@ No. Manual test results are not deleted.
 > However, any version control labels or tags that are automatically created from the Sources task during a build are considered part of the build artifacts and will be deleted when the build is deleted. 
 
 If version control labels or tags need to be preserved, even when the build is deleted, they will need to be either applied as part of a task in the pipeline, manually labeled outside of the pipeline, or the build will need to be retained indefinitely.
+
+::: moniker-end
+
+::: moniker range="= azure-devops"
+
+### What happens to pipelines that are consumed in other pipelines?
+
+Classic releases retain pipelines that they consume automatically.
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2022"
+
+### What happens to pipelines that are consumed in other pipelines?
+
+Classic releases retain pipelines that they consume automatically. If you are using YAML, you can also create a multi-stage YAML pipeline to represent your release and consume another YAML pipeline in it as a [resource](../process/resources.md#define-a-pipelines-resource). The resource pipeline will be retained automatically as long as the release pipeline is retained.
 
 ::: moniker-end
 

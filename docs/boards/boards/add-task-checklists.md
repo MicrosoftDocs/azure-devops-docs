@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/13/2022
+ms.date: 07/26/2022
 ---
 
 
@@ -133,7 +133,7 @@ Tasks or other child items you add as checklists are automatically assigned to t
 
 <a id="checklist-actions" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 ## Reassign a checklist item 
 

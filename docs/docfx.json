@@ -456,7 +456,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
+        "moniker_range": "azure-devops || tfs-2018 || >= azure-devops-2019 <= azure-devops-2022"
       }
     }
   }

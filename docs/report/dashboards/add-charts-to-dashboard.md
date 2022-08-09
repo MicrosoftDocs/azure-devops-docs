@@ -43,7 +43,7 @@ You can add the charts described in this article to a dashboard from their corre
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - You must have [created the team dashboard](dashboards.md) to which you want to add a chart.  

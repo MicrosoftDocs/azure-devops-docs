@@ -15,6 +15,7 @@ Azure Pipelines offers security mechanisms beyond just protecting the YAML file 
 When pipelines run, access to resources goes through a system called [checks](../process/approvals.md).
 Checks can suspend or even fail a pipeline run in order to keep resources safe.
 A pipeline can access two types of resources, protected and open. 
+
 ## Protected resources
 
 Your pipelines often have access to secrets.
