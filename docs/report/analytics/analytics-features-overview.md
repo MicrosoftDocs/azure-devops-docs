@@ -18,6 +18,14 @@ ms.date: 08/12/2022
 
 <!---Use a table format
 Provide guidance on when to choose which 
+
+
+Data available in Analytics
+Dashboard widgets
+In-context reports and roll-up columns
+Custom Power BI reports
+Custom reports based on OData queries
+
  --> 
 
 ## Analytics widgets
@@ -25,6 +33,7 @@ Provide guidance on when to choose which
 
 
 ## Built-in reports
+
 
 ## Analytic views
 

@@ -50,7 +50,7 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 
 ## Data available in Analytics
 
-Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020. It is in preview for Azure DevOps Server 2019. The service provides a concise data model over Azure DevOps. 
+Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020 and later versions. It is in preview for Azure DevOps Server 2019. The service provides a concise data model over Azure DevOps. 
 
 Data available via the Analytics service depends on your version and platform.   For specifics, read [Data available in Analytics](./data-available-in-analytics.md) and [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
@@ -118,33 +118,50 @@ Also, you can add rollup columns to product and portfolio backlogs that provide 
 
 ::: moniker-end
 
+## Analytic views
 
-## Custom Power BI reports
+Analytics views is a web portal feature that supports filtering work tracking data for status and trend reports. With Analytics views, you can use default or custom views to generate reports in Power BI. Power BI provides a data connector for Analytics views.  quick generation of , you can create and manage Analytics views. 
 
-[Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do impromptu analysis, produce beautiful reports, and publish for enterprise consumption.
+To learn more, see [What are Analytics views?](what-are-analytics-views.md).
+ 
+
+## Metadata & OData queries
+
+Analytics is fully accessible via OData. From a web browser, you can query the Analytics metadata or data using an OData query. 
+ 
+If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/quick-ref.md).
+
+## Data connectors and Power BI 
+
+[Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. The following data connectors have been implemented to support importing data into Power BI. 
+- Analytics views 
+- Odata query
+- OData feed
+ 
+With Power BI, you can perform impromptu analysis, produce beautiful reports, and publish dashboards for enterprise consumption.
 
 To get started with Power BI and Azure DevOps Analytics:
 
-1. Read the [Power BI integration overview](overview.md)
-1. Check out the [Power BI Sample Reports](sample-odata-overview.md). They'll get you started quickly on the most popular reports.
+- Read the [Power BI integration overview](overview.md)
+- Check out the [Power BI Sample Reports](sample-odata-overview.md). They'll get you started quickly on the most popular reports.
  
-## Custom reports based on OData queries
+ 
+## Support for custom fields and custom work item types
 
-Analytics is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/quick-ref.md).
+Custom fields and custom work item types are automatically added to the Analytics data model. Through OData queries, you can view the properties and enumerated lists added to the Analytics service based on process customization. 
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Analytics widgets](../dashboards/analytics-widgets.md) 
+> [Data available in Analytics](./data-available-in-analytics.md) 
 
 
 ## Related articles 
 
 ::: moniker range="azure-devops"
-- [What are Analytics views?](what-are-analytics-views.md)  
-- [Data available in Analytics](./data-available-in-analytics.md) 
+- [What are Analytics views?](what-are-analytics-views.md)   
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
-- [Create an Analytics widget for Azure DevOps](../extend-analytics/example-analytics-widget.md) 
+ 
 
 ::: moniker-end
 
@@ -153,6 +170,5 @@ Analytics is fully accessible via OData. If you would like to prepare custom que
 - [What are Analytics views?](what-are-analytics-views.md)  
 - [Data available in Analytics](./data-available-in-analytics.md) 
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
-- [Create an Analytics widget for Azure DevOps](../extend-analytics/example-analytics-widget.md) 
-
+ 
 ::: moniker-end
