@@ -61,10 +61,7 @@ You can rename the default team and reassign a new team as the default.
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-post-2018.png)
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2020"
 

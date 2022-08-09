@@ -68,7 +68,7 @@ ms.date: 04/04/2022
      - [Analytics](../../report/powerbi/analytics-security.md)  
      - [Analytics views](../../report/powerbi/analytics-security.md)  
   ::: moniker-end
-  ::: moniker range="azure-devops-2019 || azure-devops-2020"
+  ::: moniker range=">= azure-devops-2019 < azure-devops"
      - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
      - [Analytics](../../report/powerbi/analytics-security.md)  
      - [Analytics views](../../report/powerbi/analytics-security.md) 
@@ -137,7 +137,7 @@ ms.date: 04/04/2022
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Azure DevOps Security group dialog.](media/permissions/server-level-groups-azdo-2019-update1.png) 
