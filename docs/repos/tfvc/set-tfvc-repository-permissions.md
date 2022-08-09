@@ -86,7 +86,7 @@ To set permissions for a custom security group, you must have defined that group
 ::: moniker-end    
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 

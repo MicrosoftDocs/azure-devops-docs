@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/01/2021
+ms.date: 07/26/2022
 ---
 
 # Create an active bugs report in Power BI based on a custom Analytics view

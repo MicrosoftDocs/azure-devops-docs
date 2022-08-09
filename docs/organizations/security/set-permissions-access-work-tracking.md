@@ -183,7 +183,7 @@ You define both areas and iterations for a project from the **Project Settings>P
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020" 
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 You define both areas and iterations for a project from the **Project Settings>Project configuration**. 
 
