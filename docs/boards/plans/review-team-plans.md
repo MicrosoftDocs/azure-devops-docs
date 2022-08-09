@@ -8,14 +8,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 ms.custom: cross-project  
-monikerRange: 'azure-devops'
-ms.date: 01/19/2022
+monikerRange: '>= azure-devops-2022'
+ms.date: 08/03/2022
 ---
 
 
 # Review team delivery plans in Azure Boards
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Use the visualization options provided by the Delivery Plans feature of Azure Boards to review the schedule of stories or features that your teams plan to deliver. A delivery plan shows the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 

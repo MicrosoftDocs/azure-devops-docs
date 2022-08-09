@@ -317,7 +317,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### On-premises XML process model
 

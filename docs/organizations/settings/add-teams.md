@@ -390,7 +390,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
-::: moniker range="<= azure-devops-2020" 
+::: moniker range="< azure-devops-2022" 
 
 If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
 

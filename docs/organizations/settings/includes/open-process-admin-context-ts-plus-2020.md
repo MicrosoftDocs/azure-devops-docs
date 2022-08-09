@@ -2,7 +2,7 @@
 ms.topic: include
 ms.author: kaelli
 author: KathrynEE
-ms.date: 07/17/2020
+ms.date: 08/03/2022
 ---
 
 <a id="open-process-wit"></a>
@@ -32,7 +32,7 @@ You create, manage, and make customizations to processes from **Organization set
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 You create, manage, and make customizations to processes from **Collection Settings>Process**. 
 
