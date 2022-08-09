@@ -30,7 +30,7 @@ After you add or modify your workflow states for a work item type, you may want 
 - Automate closure of parent work items
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 - Support an approval process 
 - Prevent unauthorized users from setting an invalid state 
@@ -61,7 +61,7 @@ Review this article to understand how to define rules that apply when you change
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 >[!div class="checklist"]      
 > - Understand the types of workflow rules 
@@ -94,7 +94,7 @@ The second and third groups support restricting state transitions. These two gro
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 
 The following table indicates the two groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
@@ -136,7 +136,7 @@ Workflow conditions and actions you can set are illustrated in the following ima
    :::column-end:::
 :::row-end:::
 ---  
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 :::row:::  
    :::column span="4":::
       **Restrict a transition based on State**
@@ -153,7 +153,7 @@ Workflow conditions and actions you can set are illustrated in the following ima
 :::row-end:::
 ---  
 ::: moniker-end
-::: moniker range="azure-devops-2020"
+::: moniker range=">= azure-devops-2020 < azure-devops"
 :::row:::  
    :::column span="4":::
       **Hide field or make field read-only or required based on State and user or group membership**

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/28/2022
+ms.date: 08/04/2022
 ---
 
 
@@ -63,13 +63,13 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 ::: moniker range=">= azure-devops-2019"
 
-![Boards>Backlogs](../work-items/media/about-agile/view-backlogs.png)  
+![Screenshot of Boards Backlogs.](../work-items/media/about-agile/view-backlogs.png)  
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-!["Web portal, choose Boards>Backlogs](../work-items/media/view-add/view-stories-backlogs-standard.png)
+![Screenshot of Web portal, choose Boards and then Backlogs, TFS 2018.](../work-items/media/view-add/view-stories-backlogs-standard.png)
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Because each user can configure their own **Column Options** and **View Options*
 You build your project plan by creating a backlog of work items. These items represent the features, requirements, user stories, or other work to complete. Portfolio backlogs provide support for organizing work in a hierarchical fashion. They help track major product initiatives or scenarios that rely on many stories or requirements.  Different types of work items help you track different types of work, such as user stories, tasks, bugs, issues, and more.  
 
 
-[![Define stories](media/overview/gs-planning-define-stories.png)](create-your-backlog.md)[![Organize backlog](media/overview/gs-planning-organize-backlog.png)](organize-backlog.md)[![Manage bugs](media/overview/gs-planning-manage-bugs.png)](manage-bugs.md)[![Manage issues](media/overview/gs-planning-manage-issues.png)](manage-issues-impediments.md)
+[![Define stories conceptual image of tasks.](media/overview/gs-planning-define-stories.png)](create-your-backlog.md)[![Organize backlog conceptual image of tasks.](media/overview/gs-planning-organize-backlog.png)](organize-backlog.md)[![Manage bugs conceptual image of tasks.](media/overview/gs-planning-manage-bugs.png)](manage-bugs.md)[![Manage issues conceptual image of tasks.](media/overview/gs-planning-manage-issues.png)](manage-issues-impediments.md)
 
 
 <a id="stack-rank" />
@@ -127,7 +127,7 @@ You build your project plan by creating a backlog of work items. These items rep
 
 The sequence of items on each backlog is determined according to where you've [added the items or moved the items on the page](create-your-backlog.md#move-items-priority-order). As you drag items within the backlog list, a background process updates the [**Stack Rank** (Agile and CMMI processes)](../queries/planning-ranking-priorities.md) or [**Backlog Priority** (Scrum process)](../queries/planning-ranking-priorities.md) fields. These fields are used by the system to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form. 
 
-![Reorder work items](media/create-backlog/cyb-order-backlog.png)  
+![Screenshot showing how to reorder work items.](media/create-backlog/cyb-order-backlog.png)  
 
 Refrain from using the bulk modify function to change the value of the backlog priority field. While you can assign a value to these fields, you'll be assigning the same value to all items you've selected for bulk edit.  
 
@@ -208,7 +208,7 @@ Items that are owned by other teams appear with an information icon :::image typ
 Items that are owned by other teams appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::. 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, TFS 2018 and TFS 2017 versions.](media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
+> ![Screenshot of backlog that shows parents and multi-team ownership, TFS 2018.](media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -227,14 +227,14 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 ::: moniker range=">= azure-devops-2020"  
 
 > [!div class="mx-imgBorder"]  
-> ![View Epics and child items owned by other teams.](media/multi-ownership/management-team-backlog-epics-s155.png)   
+> ![Screenshot of view Epics and child items owned by other teams.](media/multi-ownership/management-team-backlog-epics-s155.png)   
 
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![View Epics and child items owned by other teams, Azure DevOps Server 2019 version.](media/multi-ownership/management-team-backlog-epics.png)   
+> ![Screenshot of view iew Epics and child items owned by other teams, Azure DevOps Server 2019 version.](media/multi-ownership/management-team-backlog-epics.png)   
 
 ::: moniker-end 
 
@@ -245,7 +245,7 @@ Drilling down, you can see all the backlog items and features, even though they
 belong to one of three different teams: Customer Service, Phone, and Web.  
 
 > [!div class="mx-imgBorder"]  
-> ![Example that shows the Epics backlog for the Management team, TFS 2017 and TFS 2018 versions.](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Screenshot of view Epics backlog for the Management team, TFS 2018.](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
 
 ::: moniker-end 
 
@@ -258,7 +258,7 @@ to focus on just the backlog items they're responsible to deliver.
 To make this work for you, you'll need to [add teams and set their area paths](../../organizations/settings/add-teams.md). 
 For example, you can create a team structure similar to this one with two management and three development teams.
 
-![Conceptual image of backlogs and multi-team ownership](media/ALM_OB_MultiTeam_C.png)
+![Conceptual image of backlogs and multi-team ownership.](media/ALM_OB_MultiTeam_C.png)
 
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 

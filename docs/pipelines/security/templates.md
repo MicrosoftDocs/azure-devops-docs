@@ -80,6 +80,8 @@ steps:
   target: builder
 ```
 
+::: moniker range=">=azure-devops-2022"
+
 ### Agent logging command restrictions
 
 Restrict what services the Azure Pipelines agent will provide to user steps.
@@ -111,7 +113,6 @@ One of the commands still allowed in restricted mode is the `setvariable` comman
       Write-Host "##vso[task.setvariable variable=BadVar]myValue"
 ```
 
-::: moniker range=">=azure-devops"
 ### Conditional insertion of stages or jobs
 
 Restrict stages and jobs to run under specific conditions.
