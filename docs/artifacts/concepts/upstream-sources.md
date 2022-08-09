@@ -88,7 +88,7 @@ If you want to use views to release new package versions, you can promote your p
 
 #### Construct a package graph
 
-When a feed query its upstream source for a package, Azure Artifacts return the packages in the view that was configured for that specific upstream source. To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package.
+To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source.
 
 ## Search order
 
