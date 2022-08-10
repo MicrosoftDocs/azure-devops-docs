@@ -127,7 +127,23 @@ Count
 Return data from related entities
 Enforce server-side paging
 
+## Query options 
 
+A query option is a set of query string parameters applied to a resource that can help control the amount of data being returned for the resource in the URL. 
+
+Query options should be specified in the order listed in the following table. 
+
+| Query option	|Notes|
+|------------------|-------------------|  
+|$apply|Set of transformations: filter, groupby, aggregate, compute, expand, concat|
+|$compute| A supported OData function, use to define computed properties that can be used in a $select or within a $filter or $orderby expression. |  	
+|$filter| Use to filter the list of resources that are returned. The expression specified with $filter is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Resources for which the expression evaluates to false or to null, or which reference properties that are unavailable due to permissions, are omitted from the response.  |  		
+|$orderby| Use to specify the sequence in which records should be returned.  |  		
+|$top/$skip| Use to limit the number of records returned.   |  		
+|$select/$expand|Use $select to specify the columns you need to build your report. Use $expand to nest other query options. Each expandItem is evaluated relative to the entity containing the navigation or stream property being expanded.<br/><br/>emicolon-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are $filter, $select, $orderby, $skip, $top, $count, $search, and $expand.|
+|$skiptoken| Use to skip a specified number of records.  |	
+|$count or $count=true	 |  First returns num of records, second returns data and total number of rows|  
+ 
 
 
 ## Related articles
