@@ -30,9 +30,9 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 
 | Argument | Description |
 | -------- | ----------- |
-| targetPath | (Required) Path to the folder or file you want to publish. Wildcards are not supported. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
-| artifactName | (Optional) Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` |
-| artifactType | (Required) Artifacts publish location. Choose whether to publish your file as a pipeline artifact, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline |
+| targetPath | (Required) Path to the folder or file you want to publish. Wildcards are not supported. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). <br/>Argument aliases: `path` |
+| artifactName | (Optional) Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` <br/>Argument aliases: `artifact` |
+| artifactType | (Required) Artifacts publish location. Choose whether to publish your file as a pipeline artifact, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline <br/>Argument aliases: `publishLocation` |
 | fileSharePath | (Optional) The file share path that the artifact will be published to. This can include variables. Required when `artifactType` = `filepath`. E.g: `\server\folderName` |
 | parallel | (Optional) Select whether to copy files in parallel using multiple threads. If this setting is not enabled, one thread will be used. Default value: false| 
 | parallelCount | (Optional) Enter the degree of parallelism, or number of threads used to publish a package. The value must be at least 1 and not greater than 128. | 
