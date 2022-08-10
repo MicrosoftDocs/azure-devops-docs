@@ -1,5 +1,5 @@
 ---
-title: Explore the OData metadata for Analytics 
+title: OData metadata for Analytics 
 titleSuffix: Azure DevOps  
 description: Learn about the entity model OData metadata defined for Analytics in Azure DevOps.
 ms.technology: devops-analytics 
@@ -7,10 +7,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/28/2022
+ms.date: 08/12/2022
 ---
 
-# Explore the Analytics OData metadata
+# Analytics OData metadata
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
@@ -29,60 +29,6 @@ In this article you'll learn how to:
 > * Identify the capabilities of the Analytics OData endpoint
 
 For detailed descriptions for all OData elements, see [OData model](/odata/concepts/data-model).
-
-<a id="query-metadata" />
-
-## Query the Analytics service for metadata
-
-Analytics exposes the [entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [project or an entire  organization in Azure DevOps](account-scoped-queries.md).
-
-### Query for metadata on a specific project
-
-You construct the service root URL for a project as shown:
-
-::: moniker range="azure-devops"
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-> ``` 
-
-::: moniker-end
-
-[!INCLUDE [temp](../includes/api-versioning.md)]
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-> [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-> ```
-> 
-> [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
-
-::: moniker-end
-
-<a id="metadata-response" />
-
-## Interpret the metadata response
-
-The core components of the metadata response are EntityType and EntityContainer.
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <?xml version="1.0" encoding="UTF-8"?>
-> <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
->     <edmx:DataServices>
->         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="Microsoft.VisualStudio.Services.Analytics.Model">
->            <EntityType Name="Entity Name"/>
->         </Schema>
->         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="Default">
->            <EntityContainer Name="Container"/>
->         </Schema>
->     </edmx:DataServices>
-> </edmx:Edmx>
-> ```
 
 ## EntityTypes
 

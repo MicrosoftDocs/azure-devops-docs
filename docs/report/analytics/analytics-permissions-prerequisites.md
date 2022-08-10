@@ -60,7 +60,7 @@ To verify that all services are enabled, see [Turn a service on or off](../../or
 
 To access **Analytics views**, you must have it enabled. The organization owner or member of the Project Collection Administrators group can enable it for everyone in the organization. Or, each project member can enable it for themselves. 
 
-To learn how, see [Manage or enable features](https://docs.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops&tabs=new-account-enabled).
+To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 
 ## Permissions
