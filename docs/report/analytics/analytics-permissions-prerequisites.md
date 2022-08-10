@@ -65,9 +65,18 @@ To learn how, see [Manage or enable features](https://docs.microsoft.com/en-us/a
 
 ## Permissions
 
-You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared **Analytics views** at the object level.
+You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared **Analytics views** at the object level. 
 
-[!INCLUDE [temp](../../organizations/security/includes/analytics.md)]
+The following table summarizes the permissions available to be set and the default assignments made to the project security groups. 
+
+
+|Permission|  Readers |  Contributors    |Project Administrators| 
+|----------|----------|------------------|-------------------|  
+|**View Analytics** |✔️|✔️|✔️|  
+|**View a shared Analytics view** | |✔️|✔️|  
+|**Add a private or shared Analytics view**  | |✔️|✔️|  
+|**Edit and delete shared Analytics views**  | | |✔️|  
+ 
 
 ## Additional prerequisites 
 
