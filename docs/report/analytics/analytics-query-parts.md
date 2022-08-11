@@ -31,7 +31,11 @@ Mention WIQL to Odata extension
 Query work item data  --> 
 
 
-## Query the metadata  
+<a id="query-metadata" />
+
+## Query the Analytics service for metadata
+
+Analytics exposes the [entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a project or an entire organization in Azure DevOps.
 
 You can look up any of the following data elements by querying the metadata. 
 - Entity types and entity sets
@@ -43,44 +47,67 @@ You can look up any of the following data elements by querying the metadata.
 - Filter functions (`Org.OData.Capabilities.V1.FilterFunctions`)
 - Supported aggregations (`Org.OData.Aggregation.V1.ApplySupported`)
 - Batch support (`Org.OData.Capabilities.V1.BatchSupportType`)
+ 
 
+### Query the metadata for a cloud-hosted project  
 
-<a id="query-metadata" />
-
-## Query the Analytics service for metadata
-
-Analytics exposes the [entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [project or an entire  organization in Azure DevOps](account-scoped-queries.md).
-
-### Query for metadata on a specific project
-
-You construct the service root URL for a project as shown:
-
-::: moniker range="azure-devops"
+ 
+To query the metadata for an organization or project hosted in the cloud, enter the URL syntax as shown below in a web browser. Substitute your organization and project name as needed. To return all metadata for the organization, you can discard the inclusion of the project name. 
 
 > [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-> ``` 
+```OData
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/version/$metadata 
+\______________________________/\______________________________/\______________/\_________/
+               |                                 |                       |           |
+    Analytics service root URL         Organization/Project        OData version  return metadata
+```
 
-::: moniker-end
+> [!NOTE] 
+> The latest Analytics OData version is **v4.0-preview**.  
+
+Here is an example for the fabrikam organization hosted on Azure DevOps Services. 
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata  
+```
+
+
+ 
+
+### Query the metadata for an on-premises project  
+ 
+
+### Azure DevOps Server (on-premises) 
+
+
+To query the metadata for an on-premises server, enter the URL syntax as shown below in a web browser. Substitute your server, collection, and project names as needed. To return all metadata for the collection, you can discard the inclusion of the project name. 
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://ServerName/{CollectionName}/{ProjectName}/_odata/version/$metadata 
+\_______________________________________________/\______________/\________/
+                            |                            |            | 
+     On-premises server, collection, project       OData version  return metadata
+```
 
 [!INCLUDE [temp](../includes/api-versioning.md)]
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+Here is an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
 
 > [!div class="tabbedCodeSnippets"]
-> ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-> ```
-> 
+```OData
+https://fabrikam-devops/DefaultCollection/_odata/v4.0-preview/$metadata  
+```
+ 
 > [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+> The remaining examples shown in this article are based on an Azure DevOps Services URL. Make the substitutions needed to support your on-premises queries.  
 
 ::: moniker-end
 
 <a id="metadata-response" />
 
-## Interpret the metadata response
+### Interpret the metadata response
 
 The core components of the metadata response are `EntityType` and `EntityContainer`.
 
@@ -99,70 +126,46 @@ The core components of the metadata response are `EntityType` and `EntityContain
 > </edmx:Edmx>
 > ```
 
-### Azure DevOps Services 
-
-To query the metadata for an organization hosted in the cloud, enter the URL syntax as shown below in a web browser. 
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/OrganizationName/_odata/version/$metadata 
-\______________________________/\______________/ \____________/\_________/
-               |                        |                |         |
-    Analytics service root URL     Organization   OData version  return metadata
-```
-
-Here is an example for the fabrikam organization hosted on Azure DevOps Services. 
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata  
-```
-
-
-### Azure DevOps Server (on-premises) 
-
-
-To query the metadata for an on-premises server, enter the URL syntax as shown below in a web browser. 
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://ServerName/CollectionName/_odata/version/$metadata 
-\______________________________/\_______________/\_________/
-               |                        |             | 
-    Analytics service root URL   OData version  return metadata
-```
-
-Here is an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://fabrikam-devops/DefaultCollection/_odata/v4.0-preview/$metadata  
-```
-  
 
 ## Query options and querying an Entity 
 
-The following URL is used to query a specific EntityType, such as `WorkItems`, `WorkItemSnapshot`, and `PipelineRuns`.  For a list of all supported EntityTypes, see [Analytics OData metadata](../extend-analytics/analytics-metadata).
+The following URL is used to query a specific EntityType, such as `WorkItems`, `WorkItemSnapshot`, and `PipelineRuns`.  For a list of all supported EntityTypes, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
    
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://analytics.dev.azure.com/OrganizationName/ProjectName/_odata/version/EntitySet?{Query}
-\______________________________/\__________________________/ \____________/\_________/\_____/
-               |                             |                    |               |      |
-    Analytics service root URL     Organization/Project      OData version    Entity   Query   
+https://analytics.dev.azure.com/OrganizationName/ProjectName/_odata/version/EntityType?{Query-options}
+\______________________________/\__________________________/ \____________/\_________/\_____________/
+               |                             |                    |               |          |
+    Analytics service root URL     Organization/Project      OData version    Entity   Query parts  
 ```
 
-Here is an example for the fabrikam organization designed to 
+Here is an example for the fabrikam organization which returns the count of work items defined for the Fabrikam Fiber project.  
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata  
+https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?%20$apply=aggregate($count%20as%20Count)
+```
+The example return 1399 work items. 
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+{
+"@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(Count)",
+"value": [
+{
+"@odata.id": null,
+"Count": 1399
+}
+]
+}
 ```
 
-https://analytics.dev.azure.com/kelliott/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata  
 
+> [!TIP]    
+> Something about browsers with built-in support to format JSON/OData content. 
 
+## Query options
 
 A query option is a set of query string parameters applied to a resource that can help control the amount of data being returned for the resource in the URL. 
 
@@ -194,6 +197,8 @@ https://analytics.dev.azure.com/OrganizationName/ProjectName/_odata/version/Enti
 \_____________________________/\___________________________/ \__________________/
                   |                          |                       |
           service root URL               resource path           query options
+```
+
 
 Record count query 
 
