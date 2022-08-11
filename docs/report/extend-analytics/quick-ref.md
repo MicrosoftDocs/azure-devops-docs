@@ -60,7 +60,7 @@ Use this quick reference to access information and sample queries using OData an
       - [Long queries guidance](odata-query-guidelines.md#perf-tags)  
       - [Maximum size of returned data](odata-query-guidelines.md#perf-max-size)  
       - [Metadata annotations](odata-query-guidelines.md#style-metadata)  
-      - [Metadata response](analytics-metadata.md#metadata-response)  
+      - [Metadata response](../analytics/analytics-query-parts.md#metadata-response)  
       - [Navigational properties](analytics-metadata.md)  
       <br/>
       - [OData evaluation order](odata-query-guidelines.md#style-match-order)   
