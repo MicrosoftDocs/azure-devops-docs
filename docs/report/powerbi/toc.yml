@@ -8,7 +8,7 @@ items:
   items:
   - name: Data available and versioning  
     href: data-available-in-analytics.md  
-  - name: Query parts  
+  - name: Query Analytics 
     href: ../analytics/analytics-query-parts.md  
   - name: Query tools  
     href: ../analytics/analytics-query-tools.md  
