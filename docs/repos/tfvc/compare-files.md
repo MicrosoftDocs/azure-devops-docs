@@ -5,7 +5,7 @@ description: Learn how to compare files using Team Foundation Version Control. Y
 ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
 ms.technology: devops-code-tfvc
 ms.topic: how-to
-ms.date: 05/17/2022
+ms.date: 06/30/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
 ---

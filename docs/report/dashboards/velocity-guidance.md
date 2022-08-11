@@ -37,6 +37,8 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 - **Completed Late**  - calculated based on the amount of work assigned to the sprint before the start of the sprint but was completed after the end of the sprint.  
 - **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint before the start of the sprint and hasn't been set to completed. 
 
+To open the Velocity chart or add the Velocity widget to a dashboard, see [View or configure team velocity](team-velocity.md).
+
 #### [In-context Velocity chart](#tab/in-context)
 
 ![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](media/velocity/analytics-velocity-azure-devops.png)
@@ -45,7 +47,7 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 
 ![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
 
----
+***
 
 
 You can configure each chart in the following ways: 

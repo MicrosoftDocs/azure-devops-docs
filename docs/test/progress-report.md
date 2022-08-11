@@ -27,7 +27,8 @@ To track the progress of more than one test plan or test suite, use the Progress
 > - The report, always shows you the data for the test plan you last accessed. Filter selections aren't stored.  
 > - Report data corresponds to the the current test suite hierarchy in the selected test plans. Hierarchy history isn't stored.
 > - Report data is updated approximately every 15 minutes. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in the report. 
-> - Data for test plans migrated from an on-premises Azure DevOps server won't show up in this report.  
+> - Data for test plans migrated from an on-premises Azure DevOps server won't show up in this report.
+> - Percentage Data will not display the decimal values in this report.  
 
 
 ## Prerequisites

@@ -40,6 +40,7 @@ You must be a member of the [**Project Administrators** group](../../organizatio
    :::image type="content" source="media/create-check-repository.png" alt-text="Screenshot of configured check and Create button.":::
 
 Your repository has a resource check.
+
 ## Add pipeline permissions to a repository resource
 
 You can also set a repository to only be used on specific pipelines. Restricting a repository to specific pipelines prevents an unauthorized pipeline in your project from using your repository.

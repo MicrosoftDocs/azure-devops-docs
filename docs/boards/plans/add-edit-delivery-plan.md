@@ -7,15 +7,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.custom: cross-project  
 ms.topic: how-to
-monikerRange: 'azure-devops'
-ms.date: 01/19/2022
+monikerRange: '>= azure-devops-2022'
+ms.date: 08/09/2022
 ---
 
  
 
 # Add or edit a Delivery Plan 
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Delivery Plans provide a highly interactive calendar view of multiple team backlogs. For the use cases, benefits, and interactions you can do, see [Review team Delivery Plans](review-team-plans.md). 
 
@@ -27,7 +27,7 @@ Use this article to learn how to complete these tasks:
 
 
 > [!NOTE]   
-> This article describes how to add or edit Delivery Plans 2.0 which is available for Azure DevOps Services. The next update of Azure DevOps Server, update 2, will support Delivery Plans 2.0.  For information on the Delivery Plans Marketplace extension which supports TFS 2017 and later Azure DevOps Server versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md). 
+> This article describes how to add or edit Delivery Plans 2.0 which is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. For information on the Delivery Plans Marketplace extension which supports Azure DevOps Server 2020 and earlier versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md).  
 
 ## Prerequisites
 

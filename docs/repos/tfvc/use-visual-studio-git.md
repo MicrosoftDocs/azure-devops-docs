@@ -5,7 +5,7 @@ description: Use Visual Studio with Git
 ms.assetid: 32f46ecd-1b03-4ef0-a9c4-8a120da2b03f
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

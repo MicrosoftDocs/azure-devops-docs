@@ -4,8 +4,10 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 07/12/2022
 ---
+
+::: moniker range=">= azure-devops-2019"
 
 YAML pipelines are configured by default with a CI trigger on all branches.
 
@@ -107,10 +109,18 @@ trigger:
 
 When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
 
-> **Tips:**
->  * Paths are always specified relative to the root of the repository.
->  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
->  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
->  * The order of path filters doesn't matter.
->  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
->  * You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+::: moniker-end
+
+::: moniker range="> azure-devops-2020"
+
+Wilds cards are supported for path filters. For instance, you can include all paths that match `src/app/**/myapp*`. You can use wild card characters (`**`, `*`, or `?)` when specifying path filters.
+
+::: moniker-end
+
+
+* Paths are always specified relative to the root of the repository.
+* If you don't set path filters, then the root folder of the repo is implicitly included by default.
+* If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+* The order of path filters doesn't matter.
+* Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
+* You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).

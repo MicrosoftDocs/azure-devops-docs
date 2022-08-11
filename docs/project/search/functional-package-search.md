@@ -39,6 +39,9 @@ Using the **Type** filter, you can select the type of package you want to search
 
 You can use the Azure DevOps REST API to search for packages in a specific organization. See [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results) for more details.
 
+> [!NOTE]
+> Searching for packages in upstreams with NuGet Package Explorer is not supported. See [Download NuGet packages](../../artifacts/get-started-nuget.md#download-nuget-packages) for more details.
+
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -5,7 +5,7 @@ description: Use Source Control Explorer to manage files under version control
 ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,13 +18,13 @@ monikerRange: '<= azure-devops'
 Use Source Control Explorer to browse file versions and work with your codebase under Team Foundation version control (TFVC). 
 
 > [!NOTE]
-> If you're using Git for version control, manage your Visual Studio project files in [Get started with Git in Azure Repos](../git/gitquickstart.md). Learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
+> If you're using Git for version control, manage your Visual Studio project files using Git Changes, and Source Control Explorer. For more details see [Get started with Git in Azure Repos](../git/gitquickstart.md). You can also learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
 
 If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer). Source Code Explorer is for managing changes made in your project when using TFVC.
 
 ## Open Source Control Explorer
 
-Source Control Explorer is available in both Visual Studio 2013 and 2015, but isn't opened by default when working with a project managed in TFVC. You can open the Source Control Explorer window:
+Source Control Explorer is available in Visual Studio, but isn't opened by default when working with a project managed in TFVC. You can open the Source Control Explorer window:
 
 -   From the Team Explorer home page (Keyboard: Ctrl + 0, H), choose **Source Control Explorer**.
 

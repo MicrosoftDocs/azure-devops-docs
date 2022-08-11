@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 12/30/2019
+  ms.date: 07/25/2022
   monikerRange: '<= azure-devops'
 title: Notifications FAQS
 summary: |
@@ -37,7 +37,17 @@ sections:
           A default or team or group subscription can have multiple recipients, depending on how it's configured. When all users have permission to the resource related to the event, they get combined in one email.
           
           Previously, each recipient received an individually addressed email, which could result in the same user getting multiple emails because of their membership in multiple groups.
-          
+
+      - question: |
+          Is it possible to post @mentions via an API call?
+        answer: |
+          Yes. For more information, see [Use @ mentions in work items and pull requests](at-mentions.md).
+
+      - question: |
+          How do subscriptions at one level impact what notifications are sent based on subscriptions on another level? 
+        answer: |
+          Subscriptions made at one level are fully and completely independent of each other. There is no interaction. If you turn something off at the project level but not at the user level, then you get the notification. 
+
 additionalContent: |
 
   ## Related articles

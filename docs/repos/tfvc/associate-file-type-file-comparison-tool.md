@@ -5,7 +5,7 @@ description: Associate a file type with a file-comparison tool
 ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -26,7 +26,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
     1.  In Visual Studio, on the menu bar, choose **Tools**, **Options**.  
     2.  In the **Options** dialog box, expand **Source Control**, choose **Visual Studio Team Foundation Server**, and then choose **Configure User Tools**.  
     --or--  
-    1.  In Windows, choose **Start**, **All Programs**, **Microsoft Visual Studio 2012**, **Visual Studio Tools**, **Developer Command Prompt**.  
+    1.  In Windows, choose **Start**, **All Programs**, **Visual Studio (version)**, **Developer Command Prompt**.  
     2.  Type **tf diff /configure**.  
 2.  In the **Configure User Tools** dialog box, choose **Add**.
 

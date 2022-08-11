@@ -5,208 +5,148 @@ description: Use Azure Pipelines for flexible MLOps automation
 services: machine-learning
 ms.topic: tutorial
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
-ms.author: atulmal
+ms.author: jukullam
 ms.reviewer: laobri
-author: azooinmyluggage
-ms.date: 02/01/2022
+ms.custom: devops-pipelines-deploy
+author: juliakm
+ms.date: 07/18/2022
 monikerRange: azure-devops
 ---
 
-# Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines
+# Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines and Azure Machine Learning
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-You can use a pipeline to automate the machine learning lifecycle. Some of the operations you can automate are:
+You can use a DevOps pipeline to automate the machine learning lifecycle. Some of the operations you can automate are:
 
 * Data preparation (extract, transform, load operations)
 * Training machine learning models with on-demand scale-out and scale-up
 * Deployment of machine learning models as public or private web services
 * Monitoring deployed machine learning models (such as for performance or data-drift analysis)
 
-This article will teach you how to create an Azure Pipeline that builds and deploys a machine learning model as a web service.
+This article will teach you how to create an Azure Pipeline that builds and deploys a machine learning model to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning). You'll train a scikit-learn linear regression model on the Diabetes dataset.
+
+This tutorial uses [Azure Machine Learning Python SDK v2](/python/api/overview/azure/ml/installv2), which is in public preview, and [Azure CLI ML extension v2](/cli/azure/ml). 
 
 ## Prerequisites
 
-Before you read this article, you should understand [how the Azure Machine Learning service works](/azure/machine-learning/service/concept-azure-machine-learning-architecture).
+Complete the [Quickstart: Get started with Azure Machine Learning](/azure/machine-learning/quickstart-create-resources) to:
+* Create a workspace
+* Create a cloud-based compute instance to use for your development environment
+* Create a cloud-based compute cluster to use for training your model
 
-Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-learning/service/setup-create-workspace) to create a workspace.
+## Step 1: Get the code
 
-## Get the code
-
-[!INCLUDE [include](../ecosystems/includes/get-code-before-sample-repo.md)]
+Fork the following repo at GitHub:
 
 ```
-https://github.com/MicrosoftDocs/pipelines-azureml
+https://github.com/azure/azureml-examples
 ```
 
-This sample includes a file _diabetes-train-and-deploy.yml_ in the directory _pipelines/_.
-
-## Sign in to Azure Pipelines
+## Step 2: Sign in to Azure Pipelines
 
 [!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
 
 [!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
-## Create the pipeline
+## Step 3: Create an Azure Resource Manager connection
 
-You can use 1 of the following approach to create a new pipeline.
+You'll need an Azure Resource Manager connection to authenticate with Azure portal. 
 
-#### [YAML](#tab/yaml/)
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
 
-[!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-When your new pipeline appears:
+1. Select the default authentication method, **Service principal (automatic)**.
 
-1. Replace `myresourcegroup` with the name of the Azure resource group that contains your Azure Machine Learning service workspace.
+1. Create your service connection. Set your subscription, resource group, and connection name. 
 
-2. Replace `myworkspace` with the name of your Azure Machine Learning service workspace.
-
-3. When you're ready, select **Save and run**.
-
-4. You're prompted to commit your changes to the _diabetes-train-and-deploy.yml_ file in your repository. After you're happy with the message, select **Save and run** again.
-
-   If you want to watch your pipeline in action, select the build job.
-
-You now have a YAML pipeline in your repository that's ready to train your model!
-
-#### [Classic](#tab/classic/)
-To create a pipeline in the classic editor, use our template so that you automatically get all the tasks and variables you need.
-
-1. Go to **Pipelines**, and then select **New Pipeline**.
-
-1. Select **Use the classic editor** to create a pipeline without YAML.
-
-   ![Screenshot showing Use the classic editor.](../media/classic-editor.png)
-
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
-
-1. Select the **Machine Learning Model** template and then select **Apply**.
-
-1. On the **Tasks** tab, under **Parameters**, select your Azure subscription.
-
-1. Select the **Variables** tab, and then set the following variables:
-
-   |Variables  |Description  |
-   |---------|---------|
-   |resourceGroupName     | Name of an existing resource group|
-   |workspaceName     | Name of the workspace (will be created if it doesn't already exist) |
-   |runConfig     | Name of the runconfig file (the text before *.runconfig if you're looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/examples/runconfigs/sklearn.runconfig)|
-   |modelAssetPath     | The cloud path where the experiment run stores the model file. This path is the directory from which the score.py file loads the model. This path may either be the root folder of all model files or the full path of the model file itself, depending on how score.py loads it|
-   |modelName     | Name of model to register. This name must be the same one used in score.py to load models|
-   |serviceName     | Name of the service to be deployed (will be overwritten if already present)|
-   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/models/diabetes/config/inference-config.yml)|
-   |deploymentConfigFile     |  Path to a JSON or YAML file containing deployment metadata. Sample [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsdata.visualstudio.com%2FVienna%2F_git%2FAzureMlCli%3Fpath%3D%252Fsrc%252Fazure-cli-ml%252Ftests%252Fo16n_unit_tests%252Fdata%252FAksDeployConfig.yml%26version%3DGBmaster&data=01%7C01%7Cv-srmar%40microsoft.com%7C73ff3ab12e664f0c9e8a08d6cf9d4ecc%7C72f988bf86f141af91ab2d7cd011db47%7C1&sdata=AQS2lpDU97igwSw7zRO%2FAqJLalVhvHvHxBogByRsgoE%3D&reserved=0)|
-   |aksComputeName     | Name of the existing AKS|
-
-1. Select **Save & queue**. If you want to watch your pipeline in action, select the build job.
-
-You now have a pipeline that's ready to train your model!
-
-* * *
-## Azure Machine Learning service automation
-
-There are two primary ways to use automation with the Azure Machine Learning service:
-
-* The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
-* The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py&preserve-view=true) is Python package that provides programmatic access to the Azure Machine Learning service.
-   * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to help automating the time consuming, iterative tasks of machine learning model development. 
-
-The example with this document uses the Machine Learning CLI.
-
-## Planning
-
-Before you use Azure Pipelines to automate model training and deployment, you must understand the files needed by the model and what indicates a "good" trained model.
-
-### Machine learning files
-
-In most cases, your data science team will provide the files and resources needed to train the machine learning model. In the example project, data scientists would provide these files:
-
-* __Training script__ (`train.py`): The training script contains logic specific to the model that you're training.
-* __Scoring file__ (`score.py`): When the model is deployed as a web service, the scoring file receives data from clients and scores it against the model. The output is then returned to the client.
-* __RunConfig settings__ (`sklearn.runconfig`): Defines how the training script is run on the compute target that is used for training.
-* __Training environment__ (`myenv.yml`): Defines the packages needed to run the training script.
-* __Deployment environment__ (`deploymentConfig.yml`): Defines the resources and compute needed for the deployment environment.
-* __Deployment environment__ (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
+    :::image type="content" source="media/machine-learning/machine-learning-arm-connection.png" alt-text="Screenshot of ARM service connection.":::
 
 
-Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](/python/api/azureml-core/azureml.core.runconfiguration?preserve-view=true&view=azure-ml-py#save-path-none--name-none--separate-environment-yaml-false-). Or, default run configuration files can be created for all compute targets already in the workspace by running the following command:
+## Step 4: Create a pipeline
 
-```azurecli
-az ml folder attach --experiment-name myexp -w myws -g mygroup
-```
+1. Go to **Pipelines**, and then select **New pipeline**.
 
-The files created by this command are stored in the `.azureml` directory.
+1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-### Determine the best model
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-The example pipeline deploys the trained model without doing any performance checks. In a production scenario, you may want to log metrics so that you can determine the "best" model.
+1. When you see the list of repositories, select your repository.
 
-For example, you have a model that is already deployed and has an accuracy of 90. You train a new model based on new checkins to the repo, and the accuracy is only 80, so you don't want to deploy it. You can use a metric such as this to build automation logic, as you can directly rank different models. In other cases, you may have several metrics that are used to indicate the "best" model. In this case, choosing the best model requires human judgment. 
+1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
-Depending on what "best" looks like for your scenario, you may need to create a [release pipeline](../release/index.md) where someone must inspect the metrics to determine if the model should be deployed.
+1. Select the **Starter pipeline**. You'll update the starter pipeline template.
 
-To log metrics during training, use the [Run](/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py&preserve-view=true) class.
+## Step 5: Create variables
 
-## ML REST API task
+You should already have a resource group in Azure with [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning). To deploy your DevOps pipeline to AzureML, you'll need to create variables for your subscription ID, resource group, and machine learning workspace. 
 
-The __ML REST API task___ is used to submit an Azure ML pipeline for training while also handing over the desired parameters.
-The following example shows a use case of the task to submit an already published pipeline to the AML workspace for training. 
+1. Select the Variables tab on your pipeline edit page.  
 
-```yml
-- task: ms-air-aiagility.vss-services-azureml.azureml-restApi-task.MLPublishedPipelineRestAPITask@0
-  displayName: 'Submit AML pipeline'
+    :::image type="content" source="media/machine-learning/machine-learning-select-variables.png" alt-text="Screenshot of variables option in pipeline edit. ":::   
+ 
+1. Create a new variable, `Subscription_ID`, and select the checkbox **Keep this value secret**. Set the value to your [Azure portal subscription ID](/azure/azure-portal/get-subscription-tenant-id).
+1. Create a new variable for `Resource_Group` with the name of the resource group for Azure Machine Learning (example: `machinelearning`). 
+1. Create a new variable for `AzureML_Workspace_Name` with the name of your Azure ML workspace (example: `docs-ws`).
+1. Select **Save** to save your variables. 
+
+## Step 6: Build your YAML pipeline
+
+Delete the starter pipeline and replace it with the following YAML code. In this pipeline, you'll:
+
+* Use the Python version task to set up Python 3.8 and install the SDK requirements.
+* Use the Bash task to run bash scripts for the Azure Machine Learning SDK and CLI.
+* Use the Azure CLI task to pass the values of your three variables and use papermill to run your Jupyter notebook and push output to AzureML. 
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UsePythonVersion@0
   inputs:
-    azureSubscription: '$(SERVICE_CONNECTION)'
-    PipelineId: '$(PIPELINE_ID)'
-    ExperimentName: '$(EXPERIMENT_NAME)'
-    PipelineParameters: '"ParameterAssignments": {"parameter-example": 1 }'
+    versionSpec: '3.8'
+- script: pip install -r sdk/dev-requirements.txt
+  displayName: 'pip install notebook reqs'
+- task: Bash@3
+  inputs:
+    filePath: 'sdk/setup.sh'
+  displayName: 'set up sdk'
+
+- task: Bash@3
+  inputs:
+    filePath: 'cli/setup.sh'
+  displayName: 'set up CLI'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'your-azure-subscription'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+           sed -i -e "s/<SUBSCRIPTION_ID>/$(SUBSCRIPTION_ID)/g" sklearn-diabetes.ipynb
+           sed -i -e "s/<RESOURCE_GROUP>/$(RESOURCE_GROUP)/g" sklearn-diabetes.ipynb
+           sed -i -e "s/<AML_WORKSPACE_NAME>/$(AZUREML_WORKSPACE_NAME)/g" sklearn-diabetes.ipynb
+           sed -i -e "s/DefaultAzureCredential/AzureCliCredential/g" sklearn-diabetes.ipynb
+           papermill -k python sklearn-diabetes.ipynb sklearn-diabetes.output.ipynb
+    workingDirectory: 'sdk/jobs/single-step/scikit-learn/diabetes'
 ```
 
-This is a AML Workspace REST API task to invoke ML pipelines, scripts and notebooks.
 
-A similar behavior to this task can be achieved by invoking the following [Azure ML CLI command](/cli/azure/ml(v1)/run?view=azure-cli-latest&preserve-view=true#az-ml-v1--run-submit-pipeline).
+## Step 7: Verify your pipeline run
 
-The additional benefit of the az ml task, besides submitting the pipeline with all specified PipelineParameters, is that it represents for the AML pipeline run status in the Azure Pipeline and doesn't need an unspecified amount of wait time for the task to finish.
+1. Open your completed pipeline run and view the AzureCLI task. Check the task view to verify that the output task finished running. 
+ 
+   :::image type="content" source="media/machine-learning/machine-learning-azurecli-output.png" alt-text="Screenshot of machine learning output to AzureML.":::
 
-> [!TIP]
-> To use the task, you need to install the [Azure Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml&ssr=false#overview) to your Azure DevOps project.
+1. Open Azure Machine Learning studio and navigate to the completed `sklearn-diabetes-example` job. On the **Metrics** tab, you should see the training results. 
 
-## Azure CLI Deploy task
+    :::image type="content" source="media/machine-learning/machine-learning-training-results.png" alt-text="Screenshot of training results.":::
 
-The __Azure CLI Deploy task__ is used to run Azure CLI commands. In the example, it installs the Azure Machine Learning CLI extension and then uses individual CLI commands to train and deploy the model.
+## Clean up resources
 
-## Azure Service Connection
-
-The __Azure CLI Deploy task__ requires an Azure service connection. The Azure service connection stores the credentials needed to connect from Azure Pipelines to Azure. 
-
-The name of the connection used by the example is `azmldemows`
-
-To create a service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
-
-## Machine Learning CLI
-
-The following Azure Machine Learning service CLI commands are used in the example for this document:
-
-| Command | Purpose |
-| ----- | -----| 
-| :::no-loc text="az ml folder attach"::: | Associates the files in the project with your Azure Machine Learning service workspace. |
-| :::no-loc text="az ml computetarget create"::: | Creates a compute target that is used to train the model. |
-| :::no-loc text="az ml experiment list"::: | Lists experiments for your workspace. |
-| :::no-loc text="az ml run submit-script"::: | Submits the model for training. |
-| :::no-loc text="az ml model register"::: | Registers a trained model with your workspace. |
-| :::no-loc text="az ml model deploy"::: | Deploys the model as a web service. |
-| :::no-loc text="az ml service list ":::| Lists deployed services. |
-| :::no-loc text="az ml service delete"::: | Deletes a deployed service. |
-| :::no-loc text="az ml pipeline list"::: | Lists Azure Machine Learning pipelines. |
-| :::no-loc text="az ml computetarget delete"::: | Deletes a compute target. |
-
-For more information on these commands, see the [CLI extension reference](/cli/azure/ml?preserve-view=true&view=azure-cli-latest).
-
-## Next steps
-
-Learn how you can further integrate machine learning into your pipelines with the [Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml).
-
-For more examples of using Azure Pipelines with Azure Machine Learning service, see the following repos:
-
-* [MLOps (CLI focused)](https://github.com/Microsoft/MLOps)
-* [MLOps (Python focused)](https://github.com/Microsoft/MLOpsPython)
+If you're not going to continue to use your pipeline, delete your Azure DevOps project. In Azure portal, delete your resource group and Azure Machine Learning instance.

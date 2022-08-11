@@ -9,7 +9,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/25/2022
+ms.date: 07/25/2022
 ---
 
 # Add organization users and manage access
@@ -48,10 +48,7 @@ and add users to groups - all in one view.
 You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
 link to the organization page.
 
-> [!NOTE]
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page)
+#### [Browser](#tab/browser)
 
 To give other users access to your organization, add their email addresses.
 
@@ -59,7 +56,7 @@ To give other users access to your organization, add their email addresses.
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
 
@@ -78,29 +75,6 @@ To give other users access to your organization, add their email addresses.
    > [!NOTE]  
    > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
-
-#### [Current page](#tab/current-page)
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Users**, and then select **Add new users**.
-
-4. Enter the following information.
-
-   * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.yml).
-   * **Access level:** Leave the access level as **Basic** for users who contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).  
-   * **Add to projects:** Select the project you want to add them to.  
-   * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. For more information, see [Default permissions and access assignments](../security/permissions-access.md).  
-
-   > [!NOTE]  
-   > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
-
-5. Select **Add** to complete your invitation.
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
@@ -178,16 +152,13 @@ The Users view shows key information per user in a table. In this view, you can 
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This information can help you choose users to remove access from or lower access to stay within your license limits. For more information, see Manage access with Azure AD.
 
-> [!NOTE]
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page)
+#### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
@@ -204,30 +175,6 @@ The Users view shows key information per user in a table. In this view, you can 
    * **Remove from organization** (deletes user)
 
      ![Select Users, select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
-
-5. **Save** your changes.
-
-#### [Current page](#tab/current-page)
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Users**.
-
-4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
-
-    In the context menu, select one of the following options:
-
-   * **Change access level**
-   * **Manage user**
-   * **Resend invite**
-   * **Remove direct assignments**
-   * **Remove from organization** (deletes user)
-
-     ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-vert.png)
 
 5. **Save** your changes.
 
@@ -318,7 +265,7 @@ Complete the following steps to add users to the new **Project-Scoped Users** gr
 
 4. Open **Organizations Settings**, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 5. Open **Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to.
 

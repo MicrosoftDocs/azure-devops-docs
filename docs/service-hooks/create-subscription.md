@@ -167,9 +167,6 @@ namespace Microsoft.Samples.VisualStudioOnline
 
             var result = fields.Single(s => s.Field.RefName == key);
 
-            if (result == null)
-                return String.Empty;
-
             return result.Value;
         }
 

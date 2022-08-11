@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/24/2022
+ms.date: 07/26/2022
 ---
 
 # View and add work items using the Work Items page  
@@ -20,7 +20,7 @@ ms.date: 05/24/2022
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
-View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, and interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
+View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown in the following image, and interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -102,8 +102,15 @@ Using the drop-down menu, you can focus on relevant items inside a project using
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2020" 
-      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. Doesn't include items moved to the Removed state. To open or update a work item, simply click its title.  
+      ::: moniker range=">= azure-devops-2022" 
+      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. Doesn't include items moved to the **Removed** category state. To open or update a work item, simply click its title.  
+      - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
+      - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
+      - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
+      - **My team(s)**: lists work items that your team members have recently viewed or updated.  
+      ::: moniker-end
+      ::: moniker range="azure-devops-2020" 
+      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
       - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
       - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
@@ -285,7 +292,7 @@ Queries provide other features that you can use, including:
 * Apply work item templates
 * And more
 
-For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
+For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md) and [Query fields, operators, and macros](../queries/query-operators-variables.md).
 
 
 <a id="page-controls">  </a>

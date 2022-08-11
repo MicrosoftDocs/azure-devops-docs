@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/13/2021
+ms.date: 06/28/2022
 ---
 
 
@@ -25,7 +25,7 @@ You can use a [default Analytics view](analytics-default-views.md) or [create a 
 
 ## Default Analytics views
 
-As set of default Analytics views are provided. The default views and are immediately accessible from Power BI. The view you select determines the set of records, fields, and history that is pulled into Power BI.  
+A set of default Analytics views are provided. The default views and are immediately accessible from Power BI. The view you select determines the set of records, fields, and history that is pulled into Power BI.  
 
 ::: moniker range="azure-devops"
 
@@ -37,7 +37,7 @@ As set of default Analytics views are provided. The default views and are immedi
 Here we show the default views created for a project based on the Agile process. To learn how to open this view in your web portal, see [Manage Analytics views](analytics-views-manage.md).
 
 > [!div class="mx-imgBorder"] 
-> ![Default Analytics views](./media/default-views/default-views.png)
+> ![Screenshot of default Analytics views](./media/default-views/default-views.png)
 
 [!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
@@ -45,13 +45,13 @@ When you use the Power BI Data Connector, these same default views appear in the
 
 ::: moniker range="azure-devops"
 
-![Power BI Azure DevOps Connector (Beta)](media/pbi-getstarted-123.png)
+![Screenshot of Power BI Azure DevOps Connector.](media/pbi-getstarted-123.png)
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-![Power BI Azure DevOps Server Connector (Beta)](media/pbi-getstarted-123-onprem.png)
+![Screenshot of Power BI Azure DevOps Server Connector.](media/pbi-getstarted-123-onprem.png)
 
 ::: moniker-end
 
@@ -61,13 +61,11 @@ Default Analytics views work well for customers with small datasets. To learn mo
 
 ## Custom Analytics views
 
-If the default Analytics views don't meet your needs, you can create custom views to fine-tune the records, fields, and history returned to Power BI.
-
-A custom view supports defining the following options:
+If the default Analytics views don't meet your needs, you can create custom views to fine-tune the records, fields, and history returned to Power BI. With a custom view, you can  define the following options:
 - Sharing options
 - Work item filters 
 - Team and area path filters
-- Backlog and work item type filters
+- Backlog and work item type filters 
 - Field-specific filters 
 - Fields to display 
 - View history and trend options 
@@ -76,12 +74,26 @@ To learn more, see [Create an Analytics view](./analytics-views-create.md).
 
 ## How the data is modeled in Power BI
 
-For more information on how the dataset is modeled when using the Power BI Data Connector, see [dataset design for the Power BI Data Connector](data-connector-dataset.md).
+For more information on how the dataset is modeled when using the Power BI Data Connector, see [Analytics views dataset design](data-connector-dataset.md).
 
 <a id="q-a"> </a>
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Data available from Analytics](data-available-in-analytics.md)
+> [Create a Power BI report with a default Analytics view](create-quick-report.md) 
 
+
+## Related articles 
+
+- [Create a Power BI report with a default Analytics view](create-quick-report.md) 
+- [Connect to Analytics with Power BI Data Connector](data-connector-connect.md)
+- [What is Power BI Desktop?](/power-bi/fundamentals/desktop-what-is-desktop) 
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md)
+- [Analytics work item fields reference](analytics-fields-reference.md) 
+
+
+## Related resources 
+
+- [Wiql to OData Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)

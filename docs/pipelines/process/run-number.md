@@ -5,7 +5,7 @@ description: Customize pipeline run number in Azure Pipelines, Azure DevOps Serv
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 11/04/2021
-monikerRange: '<= azure-devops'
+monikerRange: '>= tfs-2018'
 ---
 
 # Configure run or build numbers

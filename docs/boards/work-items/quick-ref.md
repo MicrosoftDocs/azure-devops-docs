@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/07/2021
+ms.date: 07/13/2022
 ---
 
 # Key concepts and work item tasks in Azure Boards and Azure DevOps
@@ -51,6 +51,7 @@ Use this index to quickly access concepts related to work items and information 
       - [Link types](../queries/link-type-reference.md)  
       - [Linking and traceability](../queries/link-work-items-support-traceability.md)  
       - [Mobile browser ](../..//project/navigation/mobile-work.md)  
+      - [New Boards Hub](/azure/devops/release-notes/2022/sprint-202-update#new-boards-hubs-now-available-in-public-preview)  
       - [New work item widget ](../../report/dashboards/widget-catalog.md#new-work-item)  
       - [On-premises XML process model](../../reference/on-premises-xml-process-model.md)  
       - [Permissions and access](../../organizations/security/permissions-access-work-tracking.md)  
@@ -87,6 +88,7 @@ Use this index to quickly access concepts related to work items and information 
    :::column span="1":::
       - [Tags](../queries/add-tags-to-work-items.md)  
       - [Track bugs as requirements or tasks](about-work-items.md#track)  
+      - [Track dependencies](../plans/track-dependencies.md)  
       <br/> 
       - [Visual Studio work item experience](set-work-item-experience-vs.md)  
       <br/> 
@@ -149,6 +151,8 @@ Tasks listed below are available to users with Contributor permissions and Basic
    :::column span="1":::
       - [Email work item list](email-work-items.md)  
       - [Export a work item list](email-work-items.md#export)  
+      - [Filter a backlog, board, or plan](../backlogs/filter-backlogs-boards-plans.md)  
+      - [Filter the History tab](../queries/history-and-auditing.md#filter-history)  
       - [Follow a work item](follow-work-items.md)  
       - [Forecast work items](../sprints/forecast.md)  
       - [Get notified of work item changes](../../notifications/manage-your-personal-notifications.md)  
@@ -182,6 +186,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
       - [Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)  
       <br/>
       - [Start storyboarding ](../queries/share-plans.md#storyboard)  
+      - [Track dependencies](../plans/track-dependencies.md)  
       - [Triage work items](../queries/triage-work-items.md)  
       <br/>
       - [Update status of tasks (Taskboard)](../sprints/task-board.md)  
@@ -312,7 +317,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### On-premises XML process model
 

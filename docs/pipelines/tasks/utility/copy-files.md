@@ -48,7 +48,7 @@ None
 ## Notes
 
 If no files are matched, the task will still report success.
-If a matched file already exists in the target, the task will report failure unless Overwrite is set to true.
+If a matched file already exists in the target folder, the task will report a warning and continue execution unless Overwrite parameter is set to true.
 
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 

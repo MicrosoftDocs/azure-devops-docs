@@ -5,7 +5,7 @@ description: Decide between using a local or a server workspace
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -21,7 +21,7 @@ When you [create or edit a workspace](create-work-workspaces.md), you can specif
 
 ## When should I use a local workspace?
 
-Use a local workspace if there is not a reliable connection between your computer and the Azure DevOps instance you are connected to, and there will be less than 100,000 items in the workspace. It may be also be preferable to you if you do not need to work as part of a team and strongly prefer working with the filesystem in a manner similar to Git.
+Use a local workspace if there is not a reliable connection between your computer and the Azure DevOps instance you are connected to, and there will be less than 100,000 items in the workspace. It may also be preferable to you if you do not need to work as part of a team and strongly prefer working with the filesystem in a manner similar to Git.
 
 > [!IMPORTANT]
 > Using a local workspace can have performance degrade as the number of items approaches or exceeds 100,000. This is because local workspaces keep multiple copies of the same file to enable some version control actions locally due to the DevOps Server connection not being reliably available. This also means there is more room taken up on disk. 

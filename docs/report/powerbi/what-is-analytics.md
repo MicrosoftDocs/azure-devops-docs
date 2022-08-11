@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/13/2021
+ms.date: 07/26/2022
 ---
 
 # What is the Analytics service?
@@ -74,14 +74,6 @@ Analytics is enabled for all projects on new project collections and automatical
 Once you've [enabled or installed Analytics](../dashboards/analytics-extension.md), the service populates itself with all available Azure DevOps data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
 
 ::: moniker-end
-
-::: moniker range="< azure-devops"
-
-> [!NOTE]   
-> TFS 2018 and earlier versions do not support Analytics. For TFS 2018 and earlier, you may use [Dashboards](../dashboards/dashboards.md) with a [variety of widgets](../dashboards/widget-catalog.md) that don't require Analytics. You may also use [SQL Server Reporting](../sql-reports/reporting-services-reports.md). 
-
-::: moniker-end
-
 
 ## Dashboard widgets
 

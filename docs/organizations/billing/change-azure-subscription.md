@@ -1,7 +1,7 @@
 ---
 title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contperf-fy21q1, freshness-fy22, contperf-fy22q3
+ms.custom: seodec18, contperf-fy21q1, freshness-fy22q1, contperf-fy22q3
 description: Unlink the Azure subscription that your organization uses for billing and go back to free limits immediately.
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/03/2022
+ms.date: 08/05/2022
 ---
 
 # Change your organization's billing subscription
@@ -35,19 +35,19 @@ To change or remove your billing subscription, you need the following permission
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing in Organization settings](media/shared/select-billing-organization-settings.png)
+   ![Screenshot showing Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
 
 4. Select **Change billing**. If you don't see the **Change billing** button, you don't have the [right permissions for access](#prerequisites).
 
-   ![Select Change billing](media/shared/select-change-billing.png)
+   ![Screenshot showing highlighted Change billing button.](media/shared/select-change-billing.png)
 
 5. Choose your Azure subscription, and then select **Save**.
 
-   ![Select your Azure subscription](media/shared/select-azure-subscription.png)
+   ![Screenshot showing Azure subscription selection.](media/shared/select-azure-subscription.png)
 
 > [!NOTE]
 > A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can follow either of the following two workarounds:

@@ -16,8 +16,6 @@ monikerRange: '<= azure-devops'
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 
-
-
 ## DACPAC
 
 The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes and data. You can create a DACPAC using the **SQL database project** in Visual Studio.
@@ -78,11 +76,11 @@ The following PowerShell script creates firewall rules. You can check in this sc
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
-  [String] [Parameter(Mandatory = $true)] $ResourceGroup,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $agentIP
+New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroupName -ServerName $ServerName -FirewallRuleName $FirewallRuleName -StartIPAddress $agentIp -EndIPAddress $agentIP
 ```
 
 ### Classic
@@ -93,21 +91,22 @@ param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
   [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 
 $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
-}
-function Update-AzureSQLServerFirewallRule{
-  $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
-  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
+function Update-AzureSQLServerFirewallRule{
+  $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+}
+
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
 {
   New-AzureSQLServerFirewallRule
 }
@@ -117,7 +116,7 @@ else
 }
 ```
 
-The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
+The following PowerShell script removes firewall rules. You can check-in this script as `RemoveAzureFirewallRule.ps1` into your repository.
 
 ### ARM
 
@@ -126,10 +125,10 @@ The following PowerShell script removes firewall rules. You can check-in this sc
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
-  [String] [Parameter(Mandatory = $true)] $ResourceGroup,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
-Remove-AzSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
+Remove-AzSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName
 ```
 
 ### Classic
@@ -140,14 +139,14 @@ param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
   [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
-  [String] $AzureFirewallName = "AzureWebAppFirewall"
+  [String] $FirewallRuleName = "AzureWebAppFirewall"
 )
 
 $ErrorActionPreference = 'Stop'
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
+if ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $FirewallRuleName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
 {
-  Remove-AzureSqlDatabaseServerFirewallRule -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
+  Remove-AzureSqlDatabaseServerFirewallRule -FirewallRuleName $FirewallRuleName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 ```
 
@@ -167,7 +166,7 @@ variables:
   SQLFile: '<Location of SQL file in $(Build.SourcesDirectory)>'
 
 steps:
-- task: AzurePowerShell@2
+- task: AzurePowerShell@5
   displayName: Azure PowerShell script: FilePath
   inputs:
     azureSubscription: '$(AzureSubscription)'
@@ -175,18 +174,18 @@ steps:
     ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 
-- task: CmdLine@1
+- task: CmdLine@2
   displayName: Run Sqlcmd
   inputs:
     filename: Sqlcmd
   arguments: '-S $(ServerFqdn) -U $(AdminUser) -P $(AdminPassword) -d $(DatabaseName) -i $(SQLFile)'
 
-- task: AzurePowerShell@2
+- task: AzurePowerShell@5
   displayName: Azure PowerShell script: FilePath
   inputs:
     azureSubscription: '$(AzureSubscription)'
     ScriptPath: '$(Build.SourcesDirectory)\scripts\RemoveAzureFirewallRule.ps1'
-    ScriptArguments: '$(ServerName) -ResourceGroup $(ResourceGroupName)'
+    ScriptArguments: '-ServerName $(ServerName) -ResourceGroupName $(ResourceGroupName)'
     azurePowerShellVersion: LatestVersion
 ```
 

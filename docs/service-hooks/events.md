@@ -93,7 +93,7 @@ A build completes
     "uri": "vstfs:///Build/Build/2",
     "id": 2,
     "buildNumber": "ConsumerAddressModule_20150407.1",
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Builds/2",
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Builds/2",
     "startTime": "2015-04-07T18:04:06.83Z",
     "finishTime": "2015-04-07T18:06:10.69Z",
     "reason": "manual",
@@ -126,18 +126,18 @@ A build completes
       "definitionType": "xaml",
       "id": 2,
       "name": "ConsumerAddressModule",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Definitions/2"
+      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Definitions/2"
     },
     "queue": {
       "queueType": "buildController",
       "id": 4,
       "name": "Hosted Build Controller",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/build-release/Queues/4"
+      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/build/Queues/4"
     },
     "requests": [
       {
         "id": 1,
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Requests/1",
+        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Requests/1",
         "requestedFor": {
           "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
           "displayName": "Normal Paulk",

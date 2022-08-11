@@ -22,7 +22,7 @@ Azure Pipelines provides several types of triggers to configure how your pipelin
 * Scheduled triggers start your pipeline based on a schedule, such as a nightly build. This article provides guidance on using scheduled triggers to run your pipelines based on a schedule.
 * Event-based triggers start your pipeline in response to events, such as creating a pull request or pushing to a branch. For information on using event-based triggers, see [Triggers in Azure Pipelines](../build/triggers.md).
 
-You can combine scheduled and event-based triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to event-based triggers, ensure that your pipeline does not have any other triggers enabled. For example, YAML pipelines in a GitHub repository have CI triggers and PR triggers enabled by default. For information on disabling default triggers, see [Triggers in Azure Pipelines](../build/triggers.md) and navigate to the section that covers your repository type.
+You can combine scheduled and event-based triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to event-based triggers, ensure that your pipeline doesn't have any other triggers enabled. For example, YAML pipelines in a GitHub repository have CI triggers and PR triggers enabled by default. For information on disabling default triggers, see [Triggers in Azure Pipelines](../build/triggers.md) and navigate to the section that covers your repository type.
 
 ## Scheduled triggers
 
@@ -57,8 +57,8 @@ schedules:
 Scheduled pipelines in YAML have the following constraints.
 
 - The time zone for cron schedules is UTC.
-- If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
-- You cannot use pipeline variables when specifying schedules.
+- If you specify an `exclude` clause without an `include` clause for `branches`, it's equivalent to specifying `*` in the `include` clause.
+- You can't use pipeline variables when specifying schedules.
 - If you use [templates in your YAML file](templates.md), then the schedules must be specified in the main YAML file and not in the template files.
 
 ### Branch considerations for scheduled triggers
@@ -88,7 +88,7 @@ schedules:
     - main
 ```
 
-Next, a new branch is created based off of `main`, named `new-feature`. The scheduled triggers from the YAML file in the new branch are read, and since there is no match for the `new-feature` branch, no changes are made to the scheduled builds, and the `new-feature` branch is not built using a scheduled trigger.
+Next, a new branch is created based off of `main`, named `new-feature`. The scheduled triggers from the YAML file in the new branch are read, and since there's no match for the `new-feature` branch, no changes are made to the scheduled builds, and the `new-feature` branch isn't built using a scheduled trigger.
 
 If `new-feature` is added to the `branches` list and this change is pushed to the `new-feature` branch, the YAML file is read, and since `new-feature` is now in the branches list, a scheduled build is added for the `new-feature` branch.
 
@@ -130,14 +130,14 @@ Because `release` was added to the branch filters in the `main` branch, but **no
 
 ::: moniker range="azure-devops-2019"
 
-Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
+Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 
 ::: moniker-end
 
@@ -201,14 +201,14 @@ For more examples, see [Migrating from the classic editor](#migrating-from-the-c
 
 ::: moniker range="azure-devops-2019"
 
-Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
+Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 
 ::: moniker-end
 
@@ -313,14 +313,14 @@ For more information on supported formats, see [Crontab Expression](https://gith
 
 ::: moniker range="azure-devops-2019"
 
-Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
+Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 
 ::: moniker-end
 
@@ -361,14 +361,14 @@ The **Scheduled runs** windows displays the times converted to the local time zo
 
 ::: moniker range="azure-devops-2019"
 
-Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
+Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 
 ::: moniker-end
 
@@ -418,7 +418,7 @@ Classic scheduled pipelines don't have a **Scheduled runs** view, but you can vi
 
 ::: moniker range=">=tfs-2018"
 
-By default, your pipeline does not run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. 
+By default, your pipeline doesn't run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you've scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you don't make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline doesn't run as scheduled during the weekend. 
 
 ::: moniker-end
 
@@ -439,14 +439,14 @@ schedules:
 
 ::: moniker range="azure-devops-2019"
 
-Scheduled builds are not supported in YAML syntax in this version of Azure DevOps Server.
+Scheduled builds aren't supported in YAML syntax in this version of Azure DevOps Server.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-YAML is not supported in TFS.
+YAML isn't supported in TFS.
 
 ::: moniker-end
 
@@ -569,7 +569,7 @@ In the first schedule, **M-F 3:00 AM (UTC) daily build**, the cron syntax is `0 
 
 * Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
-* Days of the week - `Mon-Fri` - because there is no timezone conversion, the days of the week map directly from the classic editor schedule. We could also specify the days of the week as `1,2,3,4,5`.
+* Days of the week - `Mon-Fri` - because there's no timezone conversion, the days of the week map directly from the classic editor schedule. We could also specify the days of the week as `1,2,3,4,5`.
 
 In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, the cron syntax is `0 3 * * Sun`.
 
@@ -587,46 +587,48 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 * [I defined a schedule in the YAML file. But it didn't run. What happened?](#i-defined-a-schedule-in-the-yaml-file-but-it-didnt-run-what-happened)
 * [My YAML schedules were working fine. But, they stopped working now. How do I debug this?](#my-yaml-schedules-were-working-fine-but-they-stopped-working-now-how-do-i-debug-this)
 * [My code hasn't changed, yet a scheduled build is triggered. Why?](#my-code-hasnt-changed-yet-a-scheduled-build-is-triggered-why)
-* [I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?](#i-see-the-planned-run-in-the-scheduled-runs-panel-however-it-does-not-run-at-that-time-why)
+* [I see the planned run in the Scheduled runs panel. However, it doesn't run at that time. Why?](#i-see-the-planned-run-in-the-scheduled-runs-panel-however-it-doesnt-run-at-that-time-why)
 * [Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?](#schedules-defined-in-yaml-pipeline-work-for-one-branch-but-not-the-other-how-do-i-fix-this)
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. The list is filtered down to only show you the upcoming few runs over the next few days. If this doesn't meet your expectation, it's probably the case that you've mistyped your cron schedule, or you don't have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
 
 * Make a small trivial change to your YAML file and push that update into your repository. If there was any problem in reading the schedules from the YAML file earlier, it should be fixed now.
 
-* If you have any schedules defined in the UI, then your YAML schedules are not honored. Ensure that you do not have any UI schedules by navigating to the editor for your pipeline and then selecting **Triggers**.
+* If you have any schedules defined in the UI, then your YAML schedules aren't honored. Ensure that you don't have any UI schedules by navigating to the editor for your pipeline and then selecting **Triggers**.
 
-* There is a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
+* There's a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
 
 * If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
 
 ### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
 
-* If you did not specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
+* If you didn't specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
 
-* There is a [limit](#limits) on how many times you can schedule your pipeline. Check if you have exceeded those limits.
+* There's a [limit](#limits) on how many times you can schedule your pipeline. Check if you've exceeded those limits.
 
 * Check if someone enabled more schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
 
 * Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to your YAML file, and push the update to your repository. This should re-sync the schedules.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these runs by selecting the **Scheduled runs** action in your pipeline. If you don't see the schedules that you expected, make a small trivial change to your YAML file, and push the update to your repository. This should resync the schedules.
 
-* If you use GitHub for storing your code, it is possible that Azure Pipelines may have been throttled by GitHub when it tried to start a new run. Check if you can start a new run manually.
+* If you use GitHub for storing your code, it's possible that Azure Pipelines may have been throttled by GitHub when it tried to start a new run. Check if you can start a new run manually.
 
 ### My code hasn't changed, yet a scheduled build is triggered. Why?
 
 * You might have enabled an option to **always** run a scheduled build even if there are no code changes. If you use a YAML file, verify the syntax for the schedule in the YAML file. If you use classic pipelines, verify if you checked this option in the scheduled triggers.
 
-* You might have updated the build pipeline or some property of the pipeline. This will cause a new run to be scheduled even if you have not updated your source code. Verify the **History** of changes in the pipeline using the classic editor.
+* You might have updated the build pipeline or some property of the pipeline. This will cause a new run to be scheduled even if you haven't updated your source code. Verify the **History** of changes in the pipeline using the classic editor.
 
-* You might have updated the service connection used to connect to the repository. This will cause a new run to be scheduled even if you have not updated your source code.
+* You might have updated the service connection used to connect to the repository. This will cause a new run to be scheduled even if you haven't updated your source code.
 
-* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will create an [informational run](./information-run.md). It is a dummy build to let you know that Azure Pipelines is unable to reach your repository.
+* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will create an [informational run](./information-run.md). It's a dummy build to let you know that Azure Pipelines is unable to reach your repository.
 
-### I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?
+* Your pipeline may not have a completely successful build. In order to determine whether to schedule a new build or not, Azure DevOps looks up the last completely successful scheduled build. If it doesn't find one, it triggers a new scheduled build. Partially successful scheduled builds aren't considered successful, so if your pipeline only has partially successful builds, Azure DevOps will trigger scheduled builds, even if your code hasn't changed.
+
+### I see the planned run in the Scheduled runs panel. However, it doesn't run at that time. Why?
 
 * The **Scheduled runs** panel shows all potential schedules. However, it may not actually run unless you have made real updates to the code. To force a schedule to always run, ensure that you have set the **always** property in the YAML pipeline, or checked the option to always run in a classic pipeline.
 

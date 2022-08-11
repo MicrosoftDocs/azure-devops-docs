@@ -64,7 +64,7 @@ File paths should be given as absolute paths: rooted to a drive on Windows, or b
 ## Formatting commands
 
 > [!NOTE]
-> Use UTF-8 formatting for logging commands. 
+> Use UTF-8 encoding for logging commands. 
 
 These commands are messages to the log formatter in Azure Pipelines.
 They mark specific log lines as errors, warnings, collapsible sections, and so on.
@@ -87,27 +87,27 @@ You can use the formatting commands in a bash or PowerShell task.
 
 ```yaml
 steps:
-  - bash: |
-      echo "##[group]Beginning of a group"
-      echo "##[warning]Warning message"
-      echo "##[error]Error message"
-      echo "##[section]Start of a section"
-      echo "##[debug]Debug text"
-      echo "##[command]Command-line being run"
-      echo "##[endgroup]"
+- bash: |
+    echo "##[group]Beginning of a group"
+    echo "##[warning]Warning message"
+    echo "##[error]Error message"
+    echo "##[section]Start of a section"
+    echo "##[debug]Debug text"
+    echo "##[command]Command-line being run"
+    echo "##[endgroup]"
 ```
 # [PowerShell](#tab/powershell)
 
 ```yaml
 steps:
-  - powershell: |
-      Write-Host "##[group]Beginning of a group"
-      Write-Host "##[warning]Warning message"
-      Write-Host "##[error]Error message"
-      Write-Host "##[section]Start of a section"
-      Write-Host "##[debug]Debug text"
-      Write-Host "##[command]Command-line being run"
-      Write-Host "##[endgroup]"
+- powershell: |
+    Write-Host "##[group]Beginning of a group"
+    Write-Host "##[warning]Warning message"
+    Write-Host "##[error]Error message"
+    Write-Host "##[section]Start of a section"
+    Write-Host "##[debug]Debug text"
+    Write-Host "##[command]Command-line being run"
+    Write-Host "##[endgroup]"
 ```
 ---
 

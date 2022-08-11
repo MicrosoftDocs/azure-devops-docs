@@ -7,7 +7,7 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/07/2021
+ms.date: 07/25/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -32,13 +32,13 @@ When users leave the group, the licenses get freed and returned to your pool. Yo
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. Go to the **Permissions** tab, and then verify that you're a member of the **Project Collection Administrators** group.
+3. Select **Permissions**, and then verify that you're a member of the **Project Collection Administrators** group.
 
    ![Project collection administrators group members](media/assign-access-levels/project-collection-administrators-group-members-new.png)
 
-4. Go to the **Users** tab, and then select **Group rules**. This view shows you all of your created group rules. Select **Add a group rule**.
+4. Select **Users**, and then select **Group rules**. This view shows you all of your created group rules. Select **Add a group rule**.
 
    ![Select Add a group rule](media/manage-group-licensing/add-group-rule.png)
 
@@ -74,7 +74,7 @@ When you assign the same access level to a user, the user consumes only one acce
 
 ## Verify group rule
 
-Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
+Verify that the resources are applied to each group and individual user. Select **All users**, highlight a user, and then select **Summary**.
 
 :::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Verify user summary for group rule":::
 
@@ -82,16 +82,11 @@ Verify that the resources are applied to each group and individual user. On the 
 
 To manage a user's resources only by the groups that they're in, remove their direct assignments. Resources assigned to a user via individual assignment stay assigned to the user. This assignment stays whether the resources are assigned or taken away from the user's groups.
 
-> [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select the **Users** tab.
 
@@ -107,38 +102,11 @@ To manage a user's resources only by the groups that they're in, remove their di
 
 Direct assignments are removed from the users.
 
-> [!Note]
+> [!NOTE]
 > If a user isn't a member of any groups, then the user isn't affected.
-
-#### [Current page](#tab/current-page)
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
-
-3. Select the **Users** tab.
-
-   ![Select the Users tab](media/remove-direct-assignments/users-tab-vert.png)
-
-4. Select all users with resources that should be managed only by groups.
-
-   ![Select group rules for migration](media/remove-direct-assignments/choose-remove-direct-assignments-vert.png)
-
-5. To confirm that you want to remove the direct assignments, select **Remove**.
-
-Direct assignments are removed from the users.
-
-> [!Note]
-> If a user isn't a member of any groups, then the user isn't affected.
-
-* * *
 
 ## Related articles
 
 * [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
 * [About accessing your organization with Azure AD](access-with-azure-ad.md)
 * [Manage Azure Active Directory groups](manage-azure-active-directory-groups.md)
-
-

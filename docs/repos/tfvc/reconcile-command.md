@@ -5,7 +5,7 @@ description: Reconcile Command
 ms.assetid: ef4aa5f8-b62e-4dd2-9fb8-1e28b7e0123f
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
