@@ -183,7 +183,7 @@ The project-level Administrator can do the following tasks:
 
 ![Azure Resource Manager project security](../release/_img/azure-rm-endpoint/azure-rm-project-level-security.png)
 
-The user who created the service connection is automatically added to the project-level Administrator role for that service connection. Users and groups assigned the Administrator role at the hub-level are inherited if the inheritance is turned on.
+The user who created the service connection is automatically added to the Administrator role for that service connection. Users and groups assigned the Administrator role at the hub-level are inherited if the inheritance is turned on.
 
 #### Organization-level permissions
 

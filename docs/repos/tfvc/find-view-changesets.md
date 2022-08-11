@@ -5,7 +5,7 @@ description: Find and view changesets
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -57,7 +57,7 @@ You must be one of the **Contributors** for your project. To learn more, see [De
    
    - You can ![Undock](media/find-view-changesets/IC667296.png) undock the **Pending Changes** page from Team Explorer and open it in a new window.
 
-   - You can toggle between tree and list view from the **Actions** menu (Visual Studio 2013) or **View Options** menu (Visual Studio 2015).  
+   - You can toggle between tree and list view from the **Actions** menu (Visual Studio 2013) or **View Options** menu (Visual Studio 2015 and later).  
    :::column-end:::
 :::row-end:::
 

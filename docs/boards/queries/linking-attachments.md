@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/26/2022
 ---
 
 
@@ -265,7 +265,7 @@ The following table describes fields associated with links and attachments. Most
 ---
 :::row:::
    :::column span="1":::
-   Attachment File Count
+   **Attachment File Count**
    :::column-end:::
    :::column span="3":::
    The number of files attached to the work item and stored in the work item tracking database.  
@@ -279,7 +279,7 @@ The following table describes fields associated with links and attachments. Most
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Comment Count
+   **Comment Count**
    :::column-end:::
    :::column span="3":::
    The number of comments added to the **Discussion** section of the work item.  
@@ -294,7 +294,7 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="external-link-count"/>
-   External Link Count
+   **External Link Count**
    :::column-end:::
    :::column span="3":::
    The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.  
@@ -307,7 +307,7 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="hyper-link-count"/>
-   Hyperlink Count
+   **Hyperlink Count**
    :::column-end:::
    :::column span="3":::
    The number of hyperlinks that are defined for the work item.
@@ -320,7 +320,7 @@ The following table describes fields associated with links and attachments. Most
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Link Comment
+   **Link Comment**
    :::column-end:::
    :::column span="3":::
    Contains comments from the team member who created the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.)  
@@ -333,7 +333,7 @@ The following table describes fields associated with links and attachments. Most
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Link Description
+   **Link Description**
    :::column-end:::
    :::column span="3":::
    Contains the work item type, ID, and title of the work item that is the target of the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.) 
@@ -344,26 +344,44 @@ The following table describes fields associated with links and attachments. Most
    All
    :::column-end:::
 :::row-end:::
+::: moniker range=">= azure-devops-2022" 
 :::row:::
    :::column span="1":::
    <a id="parent"/>
-   Parent
+   **Parent**
    :::column-end:::
    :::column span="3":::
-   When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. 
+   When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the **ID** of the work item within an Integer field. 
    > [!NOTE]
-   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
-     
+   > You can add the **Parent** field as a column or specify it within a query clause by specifying the parent work item ID.   
    Reference Name=System.Parent, Data type=Integer
    :::column-end:::
    :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
+::: moniker-end 
+::: moniker range="azure-devops-2020" 
+:::row:::
+   :::column span="1":::
+   <a id="parent"/>
+   **Parent**
+   :::column-end:::
+   :::column span="3":::
+   When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the **ID** of the work item within an Integer field. 
+   > [!NOTE]
+   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
+   Reference Name=System.Parent, Data type=Integer
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+::: moniker-end 
 :::row:::
    :::column span="1":::
    <a id="related-link-count"/>
-   Related Link Count
+   **Related Link Count**
    :::column-end:::
    :::column span="3":::
    The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types).  
@@ -376,7 +394,7 @@ The following table describes fields associated with links and attachments. Most
 :::row:::
    :::column span="1":::
    <a id="remote-link-count"/>
-   Remote Link Count
+   **Remote Link Count**
    :::column-end:::
    :::column span="3":::
    Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  

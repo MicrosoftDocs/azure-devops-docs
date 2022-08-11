@@ -845,7 +845,7 @@ When you specify one of the `clean` options, they are interpreted as follows:
 
 ```yaml
   jobs:
-  - deployment: deploy
+  - deployment: MyDeploy
     pool:
       vmImage: 'ubuntu-latest'
     workspace:

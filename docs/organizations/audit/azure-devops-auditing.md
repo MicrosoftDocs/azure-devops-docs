@@ -7,13 +7,13 @@ ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: 'azure-devops'
-ms.date: 05/11/2022
+monikerRange: '>= azure-devops-2022'
+ms.date: 08/03/2022
 ---
 
 # Access, export, and filter audit logs
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 > [!NOTE]
 > Auditing is still in public preview.
@@ -91,7 +91,7 @@ The organization will now have Auditing enabled. You may need to refresh the pag
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Auditing**.
 
@@ -112,7 +112,7 @@ The user or group members will now have access to view your organization's audit
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
    
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
    
 3. Select **Auditing**.
 
@@ -169,7 +169,7 @@ We try our best to add new auditing events monthly. If you would like to see an 
 
 For a full list of all events that we currently can emit through the Auditing feature, see the [Auditing Events List](/azure/devops/organizations/audit/auditing-events).
 
-> [!Note]
+> [!NOTE]
 > Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events (or actions) your organization could emit. 
 
 ## Filter audit log by date and time

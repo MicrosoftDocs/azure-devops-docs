@@ -5,7 +5,7 @@ description: Share code in TFVC using Eclipse
 ms.assetid: 181CB50F-44D3-4BA4-8E89-ADB9CB87DEB6
 ms.technology: devops-code-tfvc
 ms.topic: quickstart
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

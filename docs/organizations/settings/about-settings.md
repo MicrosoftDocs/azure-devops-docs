@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 07/27/2022
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -241,7 +241,14 @@ From the administrative **Project settings** page, you can configure settings av
 > ![Screenshot of Project settings, new navigation.](media/about/project-settings-new-nav.png) 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range="azure-devops-2022"
+**Project-level settings**  
+From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
+
+![Screenshot of Project settings page, Azure DevOps Server 2022.](media/about/project-settings-server-2022.png)  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 **Project-level settings**  
 From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
@@ -531,11 +538,20 @@ From the administrative **Organization settings** page, you can configure settin
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-**Project collection-level settings**  
+::: moniker range="azure-devops-2022"
+**Collection-level settings**  
 From the administrative page for a collection, you can configure the settings shown in the following image. 
 
-![Screenshot of Collection settings options, server versions.](media/about/collection-settings-options-server-versions.png) 
+:::image type="content" source="media/about/collection-settings-2022.png" alt-text="Screenshot of Collection settings options, Azure DevOps Server 2022.":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
+**Collection-level settings**  
+
+From the administrative page for a collection, you can configure the settings shown in the following image. 
+
+![Screenshot of Collection settings options, Azure DevOps Server 2019-2020 versions.](media/about/collection-settings-options-server-versions.png) 
 
 ::: moniker-end
 

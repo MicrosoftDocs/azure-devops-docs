@@ -32,28 +32,28 @@
     items:
     - name: NuGet quickstart
       href: get-started-nuget.md
-      displayName: nuget, quickstart 
-    - name: Publish to a NuGet feed (YAML/Classic)
-      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-      displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
-    - name: Publish NuGet packages (CLI)
+      displayName: nuget, quickstart
+    - name: Project setup (NuGet.exe)
+      href: nuget/nuget-exe.md
+      displayName: nuget package, artifacts feeds, publish packages, download packages
+    - name: Project setup (dotnet)
+      href: nuget/dotnet-setup.md
+      displayName: dotnet package, authenticate 
+    - name: Publish NuGet packages (NuGet.exe)
       href: nuget/publish.md
-      displayName: publish package, nuget feed, cli
+      displayName: publish package, nuget.exe, cli
+    - name: Publish NuGet packages (dotnet)
+      href: nuget/dotnet-exe.md
+      displayName: dotnet, artifacts, publish packages
     - name: Publish to NuGet.org
       href: nuget/publish-to-nuget-org.md
       displayName: publish package, nuget package, nuget.org
-    - name: Publish and restore packages (dotnet)
-      href: nuget/dotnet-exe.md
-      displayName: dotnet, artifacts, publish packages, download packages
-    - name: Project setup (NuGet.exe)
-      href: nuget/nuget-exe.md
-      displayName: nuget package, artifacts feeds, publish packages, download packages 
+    - name: Publish to a NuGet feed (YAML/Classic)
+      href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+      displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
     - name: Install NuGet packages with Visual Studio
       href: nuget/consume.md
       displayName: install package, nuget, visual studio
-    - name: Use NuGet or dotnet with TFS
-      href: nuget/tfs.md
-      displayName: nuget, dotnet, tfs, publish, download 
     - name: NuGet.org upstream source
       href: nuget/upstream-sources.md
       displayName: upstream sources, upstreams, artifact feeds 

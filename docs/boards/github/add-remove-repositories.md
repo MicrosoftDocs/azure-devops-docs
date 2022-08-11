@@ -36,7 +36,7 @@ You can manage which GitHub repositories can participate in Azure Boards integra
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/connect-cloud/open-project-settings-github-connections.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::
 	::: moniker-end
-	::: moniker range="azure-devops-2019 || azure-devops-2020"
+	::: moniker range=">= azure-devops-2019 < azure-devops"
 	:::image type="content" source="media/github-ent/open-project-settings-github-connections-2020-1.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::  
 	::: moniker-end
 

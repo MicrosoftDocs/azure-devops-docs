@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/22/2021
+ms.date: 07/18/2022
 monikerRange: azure-devops
 ---
 
@@ -85,6 +85,7 @@ In the following example, a new resource group and virtual machine scale set are
     --vm-sku Standard_D2_v3 \
     --storage-sku StandardSSD_LRS \
     --authentication-type SSH \
+    --generate-ssh-keys \
     --instance-count 2 \
     --disable-overprovision \
     --upgrade-policy-mode manual \
@@ -218,7 +219,7 @@ Due to the sampling size of 5 minutes, it is possible that all agents can be run
 
 ## Customizing Pipeline Agent Configuration
 
-You can customize the configuration of the Azure Pipeline Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./v2-windows.md#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure Pipelines Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./v2-windows.md#unattended-config) documentation. Some examples include:
 
 - `VSTS_AGENT_INPUT_WORK`
 - `VSTS_AGENT_INPUT_PROXYURL`

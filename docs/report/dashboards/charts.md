@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 07/26/2022
 ---
 
 # Track progress with status and trend query-based charts 
@@ -20,7 +20,7 @@ You can quickly view the status of work in progress by charting the results of a
 
 In this article you'll learn how to carry out the following tasks:  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 > [!div class="checklist"]    
 > * Construct a flat-list query to support your chart
 > * Create and share your query-based chart 
@@ -78,7 +78,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 * Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
@@ -105,7 +105,7 @@ When creating a query to support your chart, follow these guidelines.
 - To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
 - If you plan to add your query to a dashboard, [save your query as a **Shared query**](../../boards/queries/organize-queries.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 -  You can't group charts by the following field data types:
 	-  ID
@@ -119,7 +119,7 @@ When creating a query to support your chart, follow these guidelines.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2022"
 
 -  You can't group charts by the following field data types:
 	-  ID
@@ -404,14 +404,14 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 
 <a id="group-by-tags"></a> 
 
 ## Group by Tags chart 
 
 > [!NOTE]   
-> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
 
 To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, select **Tags** for the **Group by** selection. To filter the chart to show only some tags, select the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
@@ -421,7 +421,7 @@ To learn more about using tags, see [Add tags to work items](../../boards/querie
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops-2022"
 
 ## Query-based charts versus Excel-generated PivotCharts  
 

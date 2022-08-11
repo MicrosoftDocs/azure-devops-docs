@@ -40,7 +40,7 @@ Learn about how to [Manage Azure administrators](/azure/active-directory/users-g
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Azure Active Directory**, and then select **Disconnect directory**.
 

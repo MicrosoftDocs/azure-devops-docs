@@ -104,8 +104,8 @@ The template defines several resources:
     - **Resource group**: Set to`ARMPipelinesLAMP-rg` to name your new resource group. If this is an existing resource group, it will be updated.
     - **Location(location)**: Location for deploying the resource group. Set to your closest location (for example, West US). If the resource group already exists in your subscription, this value will be ignored.
     - **Template location (templateLocation)**: Set to `Linked artifact`. This is location of your template and the parameters files.
-    - **Template (cmsFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.json`. This is the path to the ARM template. 
-    - **Template parameters (cmsParametersFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`. This is the path to the parameters file for your ARM template.
+    - **Template (csmFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.json`. This is the path to the ARM template. 
+    - **Template parameters (csmParametersFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`. This is the path to the parameters file for your ARM template.
     - **Override template parameters (overrideParameters)**:  Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier. These values will replace the parameters set in your template parameters file.
     - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`.  `Validate` mode lets you find problems with the template before deploying. 
    

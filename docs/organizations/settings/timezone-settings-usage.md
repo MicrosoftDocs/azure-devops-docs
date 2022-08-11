@@ -17,7 +17,7 @@ ms.date: 11/17/2021
 There are three time zone settings that can be referenced by Azure DevOps: 
 
 - Your browser's settings for the time and date formats 
-- Your organization or sever's time and date formats
+- Your organization or server's time and date formats
 - Your personal profile **Time and Locale** setting. 
 
 Most times displayed in the web portal are based on your browser settings for the time and date formats as well as non-pipleine timezones. 

@@ -5,7 +5,7 @@ description: Get files or folders under TFVC version control using the Get comma
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 12/17/2021
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

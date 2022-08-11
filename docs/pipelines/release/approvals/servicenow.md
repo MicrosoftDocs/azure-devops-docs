@@ -1,7 +1,7 @@
 ---
 title: Control deployments by using ServiceNow
 ms.custom: seodec18
-description: Understand ServiceNow gated releases in Azure Pipelines and Team Foundation Server (TFS)
+description: Understand ServiceNow gated releases in Azure Pipelines
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: conceptual
 ms.author: shashban
@@ -183,7 +183,17 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 ### Q: What versions of ServiceNow are supported?
 
-**A**: The integration is compatible with Kingston, London, and New York versions of ServiceNow.
+::: moniker range="azure-devops"
+
+**A**: We support the following versions: Kingston, London, New York, Paris, Quebec, Rome, and San Diego.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2022"
+
+**A**: We support the following versions: Kingston, London, New York, Paris, and Quebec.
+
+::: moniker-end
 
 ### Q: What types of change request can be managed with the integration?
 

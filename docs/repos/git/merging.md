@@ -148,7 +148,7 @@ Visual Studio 2019 version 16.8 and later versions provides a Git version contro
    ![Prompt when there is a merge conflict when you pull a change](media/merge_prompt_vs.png)   
 
 1. This will bring up a list of files with conflicts. Selecting a file lets you accept the changes in the source branch you're merging from with the **Take Source** button or accept the changes in the branch you're merging into using **Keep Target**. 
-   You can manually merge changes by selecting **Merge**, then entering the changes directly into the merge tool specified in your [Git settings](git-config.md#diff--merge-tools).
+   You can manually merge changes by selecting **Merge**, then entering the changes directly into the merge tool specified in your [Git settings](git-config.md#diff-and-merge-tools).
 1. Use the checkboxes next to the lines modified to select between remote and local changes entirely, or edit the results directly in the **Result** editor under the **Source** and **Target** editor in the diff view.   
 1. When done making changes, select **Accept Merge**. Repeat this for all conflicting files.
 1. Open the **Changes** view in Team Explorer and commit the changes to create the merge commit and resolve the conflict.

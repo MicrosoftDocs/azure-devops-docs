@@ -369,7 +369,7 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
 

@@ -36,11 +36,11 @@ We recommend using two config files, the first one you should use to authenticat
 
 2. Select **npm** from the list of package types.
 
-3. If this is the first time using Azure Artifacts with npm, select **Get the tools** button and follow the instructions to install the prerequisites. 
+3. If this is the first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites.
 
 ::: moniker range="azure-devops"   
 
-4. Follow the instructions in **Project setup** to set up your *.npmrc* file.
+4. Follow the instructions in **Project setup** to set up your config file.
 
     :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
 
@@ -48,7 +48,7 @@ We recommend using two config files, the first one you should use to authenticat
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-4. Follow the instructions in **Project setup** to set up your *.npmrc* file.
+4. Follow the instructions in **Project setup** to set up your config file.
 
    :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
 
@@ -92,7 +92,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 `vsts-npm-auth` is not supported in Linux/Mac. Follow the steps below to set up your credentials:
 
-1. Copy the following snippet into your .npmrc file.
+1. Copy the following snippet into your npmrc file.
 
     - **Organization-scoped feed**:
 
@@ -145,9 +145,9 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-## Authentication setup
+## Pipeline authentication
 
-Azure Artifacts recommend using the `npmAuthenticate` task to set up authentication for your pipeline tasks. When using a task runner such as gulp or Grunt, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the config file.
+Azure Artifacts recommend using the [npm authenticate task](../../pipelines/tasks/package/npm-authenticate.md) to authenticate with your pipeline. When using a task runner such as gulp or Grunt, you'll need to add the npm authenticate task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the config file.
 
 ### [Classic](#tab/classic)
 
@@ -209,25 +209,20 @@ Azure Artifacts recommend using the `npmAuthenticate` task to set up authenticat
 ```yaml
 - task: npmAuthenticate@0
   inputs:
-    workingFile: .npmrc
-    customEndpoint: #Optional
-- script: npm ci
+    workingFile: .npmrc                ## Path to the npmrc file
+    customEndpoint: #Optional          ## Comma-separated list of npm service connection names for registries from external organizations. For registries in your org, leave this blank
 ```
-
-- **workingFile**: Path to the .npmrc file
-- **customEndpoint**: Comma-separated list of npm service connection names for registries from external organizations. For registries in your org, leave this blank
 
 * * *
 
-> [!TIP]
-> To allow your pipeline access to your feed, make sure you give the build service a **Contributor** role in your feed's settings. Select **Azure Artifacts** -> [YOUR_FEED] -> **Settings** -> **Permissions** -> set the build service role to **Contributor**.
+> [!NOTE]
+> To grant permissions to your pipeline, make sure you set the build service role to **Contributor** in your feed settings.
 
-> [!div class="mx-imgBorder"]
-> ![tip screenshot](../media/project-collection-contributor.png)
+:::image type="content" source="../media/project-collection-contributor.png" alt-text="A screenshot showing the build service roles in feed settings.":::
 
 ## Troubleshoot
 
-- **Command is not recognized**:
+#### vsts-npm-auth is not recognized
 
 If you're running into the following error:
 
@@ -241,13 +236,37 @@ Then it's likely that the npm modules folder is not in your path. To fix this is
 
 Alternatively, you can edit the PATH variable `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell) to add it to your path.
 
-- **Unable to authenticate**:
+#### Unable to authenticate
 
 If you're running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with **-F** flag to reauthenticate.
 
 ```Command
 vsts-npm-auth -config .npmrc -F
 ```
+
+#### Reset vsts-npm-auth
+
+Follow the steps below to modify/reset your vsts-npm-auth credentials:
+
+- Uninstall vsts-npm-auth.
+
+    ```command
+    npm uninstall -g vsts-npm-auth
+    ```
+
+- Clear your npm cache.
+
+    ```command
+    npm cache clean --force
+    ```
+
+- Delete your .npmrc file.
+
+- Reinstall vsts-npm-auth.
+
+    ```command
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    ```
 
 ## Related articles
 

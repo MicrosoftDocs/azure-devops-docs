@@ -7,17 +7,17 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms date: 10/04/2021
+ms date: 07/26/2022
 ---
 
 # Data available from Analytics
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020. It is in preview for Azure DevOps Server 2019. 
+Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Services and Azure DevOps Server 2020 and later versions. It is in preview for Azure DevOps Server 2019. 
 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 
 > [!NOTE]   
 > For Azure DevOps Server, you can use Analytics in place of SQL Server Reporting Services or along side it. However, if you plan to use the Inheritance process model to customize work tracking, you can only use Analytics for reporting, the project collection must not be configured to support reporting. To learn more about the Inheritance process model, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md). 
@@ -35,6 +35,7 @@ Currently, you can access the following data from Analytics. This information wa
    :::column span="":::
       **Azure DevOps Services**  
       **Azure DevOps Server 2020**  
+      **Azure DevOps Server 2022**  
    :::column-end:::
    :::column span="":::
       **Azure DevOps Server 2019**  
@@ -71,7 +72,7 @@ Currently, you can access the following data from Analytics. This information wa
    :::column span="":::
       - [Test Analytics](../../pipelines/test/test-analytics.md)
       - [Pipeline Analytics](../../pipelines/reports/pipelinereport.md)
-      - [OData Preview](../extend-analytics/quick-ref.md)
+      - [OData](../extend-analytics/quick-ref.md)
    :::column-end:::
    :::column span="":::
       - [Test Analytics](../../pipelines/test/test-analytics.md)

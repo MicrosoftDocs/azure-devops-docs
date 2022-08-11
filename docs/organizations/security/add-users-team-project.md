@@ -811,7 +811,7 @@ For on-premises deployments, you may need to set the access level for a user or 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 ## Add users or groups to SQL Server Reports
 

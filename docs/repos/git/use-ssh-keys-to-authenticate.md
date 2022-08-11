@@ -214,7 +214,7 @@ fatal: Could not read from remote repository.
 ```
 
 **A:** Manually record the SSH key by running:
-`ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts`
+`ssh-keyscan -t rsa ssh.dev.azure.com >> ~/.ssh/known_hosts`
 
 ### Q: How can I have Git remember the passphrase for my key on Windows?
 
@@ -331,6 +331,14 @@ Host ssh.dev.azure.com
 Host vs-ssh.visualstudio.com
   IdentityFile ~/.ssh/your_private_key
   IdentitiesOnly yes
+
+# OpenSSL 8.7 has DEPRECATED RSA. IF using OpenSSL version > 8.6 you will need to 
+# add the 'HostkeyAlgorithms' and 'PubkeyAcceptedAlgorithms' entries below. You can 
+# check the version of OpenSSL/OpenSSH you're using by running the command 'ssh -v localhost'    
+Host ssh.dev.azure.com
+  IdentityFile ~/.ssh/id_rsa
+  HostkeyAlgorithms +ssh-rsa
+  PubkeyAcceptedAlgorithms +ssh-rsa   
 
 # Less common scenario: if you need different keys for different organizations,
 # you'll need to use host aliases to create separate Host sections.

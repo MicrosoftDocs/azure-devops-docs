@@ -88,7 +88,7 @@ If you want to use views to release new package versions, you can promote your p
 
 #### Construct a package graph
 
-When a feed query its upstream source for a package, Azure Artifacts return the packages in the view that was configured for that specific upstream source. To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package.
+To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source.
 
 ## Search order
 
@@ -103,6 +103,9 @@ Upstream sources prevent this non-deterministic behavior by searching the feed a
 1. Packages available from upstream sources: each upstream is searched in the order it is listed in the feed's configuration
 
 To take full advantage of the fast lookup feature, we recommend that you only include one feed in your config file.
+
+> [!NOTE]
+> Searching for packages in upstreams with NuGet Package Explorer is not supported.
 
 ## Save packages from upstream sources
 
@@ -123,9 +126,11 @@ If you must publish a package version that already exists on one of your upstrea
 
 If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream source's health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, and then select **Upstream sources**.
 
-If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing upstream will provide more details such as the reason of failure and instructions on how to solve it.
+:::image type="content" source="media/upstreams-last-sync.png" alt-text="A screenshot showing the upstream source failure status.":::
 
-:::image type="content" source="media/upstreams-health-status.png" alt-text="Screenshot showing the upstream source's health status":::
+If there are any failures, a warning message will be displayed. Selecting the failed status will provide more details such as the reason of failure and instructions on how to solve it.
+
+:::image type="content" source="media/upstream-last-sync-details.png" alt-text="A screenshot showing details about the sync up failure.":::
 
 > [!NOTE]
 > For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download. This delay depends on job timing and data propagation. There is no latency when the upstream source is an Azure Artifacts feed.

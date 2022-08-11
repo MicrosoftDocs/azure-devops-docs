@@ -128,7 +128,7 @@ If you receive an unexpected PAT notification, an administrator or tool might ha
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
 > [!WARNING]
-> If you believe that a PAT exists in error, we suggest that you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
+> If you believe that a PAT exists in error, we suggest you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 
@@ -137,17 +137,20 @@ Your PAT is your identity and represents you when you use it, just like a passwo
 **Git**
 
 Git interactions require a username, which can be anything except the empty string.
-The PAT is used as the password. Also, you have to Base64-encode the username and PAT to use with HTTP basic authentication.
+To use a PAT with HTTP basic authentication, use `Base64-encode` for and `$MyPat`, which is included in the following code block.
 
 #### [Windows](#tab/Windows/)
 
 In PowerShell, enter the following code.
 
 ```powershell
-$MyPat = ':PatStringFromWebUI'
-$UserName = ':UserNameToUseWithToken'
-$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$UserName:$MyPat"))
+$MyPat = 'yourPAT'
+
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("`:$MyPat"))
+
 git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+
+
 ```
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager). [Git for Windows](https://www.git-scm.com/download/win) is required.
@@ -165,12 +168,6 @@ git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azur
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
 
 ***
-
-```powershell
-$MyPat = 'yourPAT'
-$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyPat"))
-git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
-```
 
 **Existing repos**
 
@@ -299,6 +296,7 @@ If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more info
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 ## Modify a PAT
 
 You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes). After regeneration, the previous PAT is no longer authorized.

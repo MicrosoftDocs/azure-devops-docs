@@ -5,7 +5,7 @@ description: Edit Check-In Policies
 ms.assetid: 3bc445f1-d354-4991-9381-f10739b5d0fe
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 08/18/2016
+ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
 ---
 

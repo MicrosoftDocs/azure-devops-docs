@@ -24,6 +24,8 @@ Environments provide the following benefits.
 
 While an environment is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
 
+When you author a YAML pipeline and refer to an environment that does not exist, Azure Pipelines automatically creates the environment when the user performing the operation is known and permissions can be assigned. When Azure Pipelines does not have information about the user creating the environment (example: a YAML update from an external code editor), your pipeline will fail if the environment does not already exist. 
+
 <a name="creation"></a>
 
 ## Create an environment
@@ -142,10 +144,6 @@ Control who can create, view, use, and manage the environments with user permiss
 1. Select **User permissions** > **+Add** > **User or group**, and then select a suitable role.
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
-
-> [!NOTE]
->
-> - If you create an environment through the UI, only the creator is granted the **Administrator** role. You should use the UI to create protected environments like for a production environment.
 
 ### Pipeline permissions
 

@@ -196,9 +196,12 @@
     - name: .NET Framework
       href: apps/aspnet/build-aspnet-4.md
       displayName: ASP, ASPNET, web
-    - name: JavaScript and Node.js apps
+    - name: JavaScript quickstart
       href: ecosystems/javascript.md
       displayName: node, node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+    - name: Customize JavaScript
+      href: ecosystems/customize-javascript.md
+      displayName: configure javasript, node, configure node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
     - name: Python
       href: ecosystems/python.md
       displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
@@ -230,9 +233,6 @@
     - name: PHP
       href: ecosystems/php.md
       displayName: php, phpunit
-    - name: PHP to web app
-      href: ecosystems/php-webapp.md
-      displayName: php, app service
     - name: Ruby
       href: ecosystems/ruby.md
       displayName: rails, bundler, rake, simplecov, cobertura
@@ -437,9 +437,6 @@
       items:
       - name: Build and deploy to Azure Kubernetes Service
         href: /azure/aks/devops-pipeline
-      - name: Deploy to AKS with Jenkins
-        href: release/integrate-jenkins-pipelines-aks.md
-        displayName: cluster, Jenkins, Maven, Docker
     - name: Azure Policy Compliance (Classic)
       href: /azure/governance/policy/tutorials/policy-devops-pipelines
       displayName: policy, compliance
@@ -608,6 +605,8 @@
           displayName: template permissions, repositories
         - name: Secure repositories
           href: security/repos.md
+        - name: Secure access to Azure repositories from pipelines
+          href: security/secure-access-to-repos.md
           displayName: forks, branches, access token
         - name: Pipeline resources
           href: security/resources.md
@@ -845,14 +844,8 @@
           href: /xamarin/cross-platform/troubleshooting/component-nuget
         - name: Previous versions
           items:
-            - name: NuGet Installer 0.*
-              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
             - name: NuGet Restore 1.*
               href: tasks/package/nuget.md
-            - name: NuGet Packager 0.*
-              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0?view=tfs-2017&preserve-view=true
-            - name: NuGet Publisher 0.*
-              href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-publisher-0?view=tfs-2017&preserve-view=true
             - name: NuGet Command 0.*
               href: tasks/package/nuget.md
             - name: Pip Authenticate 0.*
@@ -997,6 +990,16 @@
     - name: Use feature flags
       href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fpipelines%2ftoc.json
       displayName: feature-flags
+    - name: Legacy content
+      items:
+        - name: NuGet Packager 0.*
+          href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0?view=tfs-2017&preserve-view=true
+        - name: NuGet Publisher 0.*
+          href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-publisher-0?view=tfs-2017&preserve-view=true
+        - name: NuGet Installer 0.*
+          href: /previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0?view=tfs-2017&preserve-view=true
+        - name: Deploy to AKS with Jenkins
+          href: /previous-versions/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks?view=tfs-2017&preserve-view=true
 - name: Developer resources
   items:
     - name: REST API reference
