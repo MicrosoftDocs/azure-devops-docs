@@ -1,7 +1,7 @@
 ---
-title: Analytics query parts
+title: Query the Analytics service 
 titleSuffix: Azure DevOps  
-description: Learn about the query parts of an Analytics query.
+description: Learn how to query the Analytics service to return metadata or filter data for an EntityType.  
 ms.custom: "analytics" 
 ms.technology: devops-analytics
 ms.author: kaelli
@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 08/12/2022
 ---
 
-# Analytics query parts in Azure DevOps
+# Query the Analytics service in Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
@@ -120,7 +120,7 @@ The core components of the metadata response are `EntityType` and `EntityContain
 > </edmx:Edmx>
 > ```
 
-## Query options and querying an Entity 
+## Query the Analytics service for Entity data 
 
 The following URL is used to query a specific EntityType, such as `WorkItems`, `WorkItemSnapshot`, and `PipelineRuns`.  For a list of all supported EntityTypes, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
    
@@ -133,11 +133,11 @@ https://analytics.dev.azure.com/OrganizationName/ProjectName/_odata/version/Enti
     Analytics service root URL     Organization/Project      OData version    Entity   Query parts  
 ```
 
-Here is an example for the fabrikam organization which returns the count of work items defined for the Fabrikam Fiber project.  
+Here is an example for the *fabrikam* organization which returns the count of work items defined for the Fabrikam Fiber project.  
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://analytics.dev.azure.com/fabrikam/Fabrikam Fiber/_odata/v4.0-preview/WorkItems?%20$apply=aggregate($count%20as%20Count)
+https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?%20$apply=aggregate($count%20as%20Count)
 ```
 The example return 1399 work items. 
 
@@ -154,6 +154,9 @@ The example return 1399 work items.
 }
 ```
 
+> [!NOTE] 
+> If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10000 work items, [server-side paging is enforced](#server-force-paging).  
+> To avoid running into usage limits, always include a `$select` or `$apply` clause.
 
 ## Query options
 
@@ -172,22 +175,20 @@ Query options should be specified in the order listed in the following table.
 |`$skiptoken`| Use to skip a specified number of records.  |	
 |`$count` or `$count=true`	 |  Enter `$count` to only return the number of records. Enter `$count=true`to return both a count of the record and the queried data. |  
  
-
+> [!TIP]    
+> Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you have two options: (1) use a `$filter` clause or (2) use a `$apply=filter()` combination clause. Each one of these options works great on its own, but combining them together might lead to some unexpected results.
 
 ## Query a single entity set
 
 To query a single entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity: `/WorkItems`, `/Areas`, or `/Projects`. For a full list of entity sets, see [Data model for Analytics](data-model-analytics-service.md).
 
-For example, you can get a list of projects defined for your organization by querying `/Projects` and selecting to return the `ProjectName` property. The URL is:
+For example, you can get a list of projects defined for your organization by querying `/Projects` and selecting to return the `ProjectName` property. For the fabrikam organization, the URL is as shown below.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > 	https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/Projects?$select=ProjectName
 > ```
 
-> [!NOTE] 
-> If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10000 work items, [server-side paging will be enforced](#server-force-paging).  
-> To avoid running into usage limits, always include a `$select` or `$apply` clause.
 
 Analytics returns the project names of those projects defined for the *fabrikam* organization.
 
@@ -217,9 +218,11 @@ Analytics returns the project names of those projects defined for the *fabrikam*
 > ```
 
 
+
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
+- [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md)
 - [Permissions and prerequisites to access Analytics in Azure DevOps](analytics-permissions-prerequisites.md)
 
 <!--- nice to have but not necessary
