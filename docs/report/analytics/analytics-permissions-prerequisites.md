@@ -82,7 +82,8 @@ The following table summarizes the permissions available to be set and the defau
 
 To capture meaningful data requires performing meaningful actions on the part of software teams. 
 
-<!--- Say more --> 
+<!--- Say more 
+Make some info about rate limiting and best practices--> 
 
 ## Related articles
 
