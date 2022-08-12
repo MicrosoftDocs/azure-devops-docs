@@ -155,7 +155,7 @@ The example return 1399 work items.
 ```
 
 > [!NOTE] 
-> If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10000 work items, [server-side paging is enforced](#server-force-paging).  
+> If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10000 work items, [server-side paging is enforced](../extend-analytics/odata-query-guidelines.md#server-force-paging).  
 > To avoid running into usage limits, always include a `$select` or `$apply` clause.
 
 ## Query options
@@ -180,7 +180,7 @@ Query options should be specified in the order listed in the following table.
 
 ## Query a single entity set
 
-To query a single entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity: `/WorkItems`, `/Areas`, or `/Projects`. For a full list of entity sets, see [Data model for Analytics](data-model-analytics-service.md).
+To query a single entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity: `/WorkItems`, `/Areas`, or `/Projects`. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
 For example, you can get a list of projects defined for your organization by querying `/Projects` and selecting to return the `ProjectName` property. For the fabrikam organization, the URL is as shown below.
 
