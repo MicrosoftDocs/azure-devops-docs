@@ -15,7 +15,7 @@ ms.date: 08/12/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-There are several reasons to follow best practices when querying Analytics. Reasons include the following: 
+There are several reasons to follow best practices when querying Analytics, such as those listed below.
 
 ::: moniker range="azure-devops" 
 
@@ -36,34 +36,7 @@ There are several reasons to follow best practices when querying Analytics. Reas
 
 Follow the guidance provided below as you get started. If you are an extension developer, you'll also want to review [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md).
 
-::: moniker range="azure-devops" 
-
-<!--- note can review Usage info Organization Settings>Usage,  --> 
-
- Queries made to Analytics for an Azure DevOps Services organization are subject to service and rate limits. Depending on how you structure your query, you can return a large amount of data , you are subject to , Review this article to understand the top XX practices to follow when querying Analytics.  
-
-::: moniker-end
-
-Get familiar with the Analytics metadata
-
-Structure your query to return the data you need
-
-- Create preview queries
-- Choose the EntityType that supports the report your want to create
-- Specify query parts in the order they're executed
-- Limit the columns you request in your query 
-- Limit the columns you request in your query
  
-
-Limit queries to projects you have access to
-
-Review warning and error messages
-
-Know when to use surrogate key properties
-
-Understand how to formulate date queries
-
-
 
 ## Get familiar with the Analytics metadata 
 
@@ -190,14 +163,15 @@ Analytics reviews each query it receives for violations to its rules. It returns
 
 ## Rate limits and throttling 
 
-Queries made to Analytics for Azure DevOps Services are subject to rate limits. If too  many queries are sent that request the return of large amounts of data, the service may be subject to rate limits.  Rate limits are discussed in [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md).
+Queries made to Analytics for Azure DevOps Services are subject to rate limits. If too  many queries are sent that request the return of large amounts of data within a short time frame, the service may be subject to throttling. Rate limits are discussed in [Service and rate limits for Azure DevOps Services](../../user-guide/service-limits.md).
 
 You can review usage for the service and for individuals by going to **Organization Settings>Usage** and exercising the filters. For example, the following image shows the usage by *Jamal Hartnett* to the Analytics service. 
- 
 
 :::image type="content" source="media/best-practices/usage-analytics.png" alt-text="Screenshot of Usage page for a single user and Analytics.":::
 
 ::: moniker-end
+ 
+
 
 ## Related articles
 
