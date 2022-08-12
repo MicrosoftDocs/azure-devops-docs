@@ -1,5 +1,5 @@
 ---
-title: What is the Analytics service
+title: What is Analytics? 
 titleSuffix: Azure DevOps
 description: Learn how you can use Analytics data to answer quantitative questions about your projects in Azure DevOps.
 ms.technology: devops-analytics
@@ -10,11 +10,11 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 07/26/2022
 ---
 
-# What is the Analytics service?
+# What is Analytics?
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
+Analytics is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
 
 > [!NOTE]  
 > If you are looking for information about Azure Analysis Services, see 
@@ -53,8 +53,6 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020 and later versions. It is in preview for Azure DevOps Server 2019. The service provides a concise data model over Azure DevOps. 
 
 Data available via the Analytics service depends on your version and platform.   For specifics, read [Data available in Analytics](./data-available-in-analytics.md) and [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
-
-
 
 
 ::: moniker range="azure-devops"
@@ -119,9 +117,9 @@ To learn more, see [What are Analytics views?](what-are-analytics-views.md).
 
 ## Metadata & OData queries
 
-Analytics is fully accessible via OData. From a web browser, you can query the Analytics metadata or data using an OData query. 
+Analytics is fully accessible via OData. From a web browser, you can query the Analytics metadata or data using an OData query. To learn how, see [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md).
  
-If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/quick-ref.md).
+If you would like to prepare custom queries and tooling with our OData API, review [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
 
 ## Data connectors and Power BI 
 

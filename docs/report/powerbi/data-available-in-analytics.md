@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms date: 07/26/2022
+ms.date: 08/12/2022
 ---
 
 # Data available from Analytics
@@ -27,106 +27,13 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 Currently, you can access the following data from Analytics. This information was last updated on July 20, 2020.  
 
 
----
-:::row:::
-   :::column span="":::
-      **Service**
-   :::column-end:::
-   :::column span="":::
-      **Azure DevOps Services**  
-      **Azure DevOps Server 2020**  
-      **Azure DevOps Server 2022**  
-   :::column-end:::
-   :::column span="":::
-      **Azure DevOps Server 2019**  
-   :::column-end:::
-   :::column span="":::
-      **Future availability**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      [Boards](https://azure.microsoft.com/services/devops/boards/)
-   :::column-end:::
-   :::column span="":::
-      - [In-context reports](../dashboards/overview.md#in-context-reports-work-tracking)
-      - [Widgets](../dashboards/analytics-widgets.md)
-      - [OData](../extend-analytics/quick-ref.md)
-      - [Power BI](overview.md)
-   :::column-end:::
-   :::column span="":::
-      - [Widgets](../dashboards/analytics-widgets.md)
-      - [OData](../extend-analytics/quick-ref.md)
-      - [Power BI](overview.md)
-   :::column-end:::
-   :::column span="":::
-         
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      [Pipelines](https://azure.microsoft.com/services/devops/pipelines/)
-   :::column-end:::
-   :::column span="":::
-      - [Test Analytics](../../pipelines/test/test-analytics.md)
-      - [Pipeline Analytics](../../pipelines/reports/pipelinereport.md)
-      - [OData](../extend-analytics/quick-ref.md)
-   :::column-end:::
-   :::column span="":::
-      - [Test Analytics](../../pipelines/test/test-analytics.md)
-   :::column-end:::
-   :::column span="":::
-         
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      [Test Plans](https://azure.microsoft.com/services/devops/test-plans/)
-   :::column-end:::
-   :::column span="":::
-      - [Progress Report](../../test/progress-report.md)
-   :::column-end:::
-   :::column span="":::
-      None
-   :::column-end:::
-   :::column span="":::
-         
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      [Repos](https://azure.microsoft.com/services/devops/repos/)
-   :::column-end:::
-   :::column span="":::
-      None
-   :::column-end:::
-   :::column span="":::
-      None
-   :::column-end:::
-   :::column span="":::
-      Under investigation
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      [Artifacts](https://azure.microsoft.com/services/devops/artifacts/)
-   :::column-end:::
-   :::column span="":::
-      None
-   :::column-end:::
-   :::column span="":::
-      None
-   :::column-end:::
-   :::column span="":::
-      Under investigation
-   :::column-end:::
-:::row-end:::
----
+|**Service**|**Azure DevOps Services**<br/>**Azure DevOps Server 2020**<br/>**Azure DevOps Server 2022**  |**Azure DevOps Server 2019**| |**Future availability**|
+|------------------|----------------|---------------------------|----------------|  
+|[Boards](https://azure.microsoft.com/services/devops/boards/) | [In-context reports](../dashboards/overview.md#in-context-reports-work-tracking)<br/>[Widgets](../dashboards/analytics-widgets.md)<br/>[OData](../extend-analytics/quick-ref.md)<br/>[Power BI](overview.md) | [Widgets](../dashboards/analytics-widgets.md)<br/>[OData](../extend-analytics/quick-ref.md)<br/>[Power BI](overview.md) |  | 
+|[Pipelines](https://azure.microsoft.com/services/devops/pipelines/) | [Test Analytics](../../pipelines/test/test-analytics.md)<br/>[Pipeline Analytics](../../pipelines/reports/pipelinereport.md)<br/>[OData](../extend-analytics/quick-ref.md) | [Test Analytics](../../pipelines/test/test-analytics.md) |  | 
+|[Test Plans](https://azure.microsoft.com/services/devops/test-plans/) | [Progress Report](../../test/progress-report.md) | None |  |  
+|[Repos](https://azure.microsoft.com/services/devops/repos/) | None | None |  Under investigation |  
+|[Artifacts](https://azure.microsoft.com/services/devops/artifacts/) | None | None | Under investigation |  
  
 
 > [!NOTE]   
