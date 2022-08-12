@@ -273,7 +273,7 @@ sections:
           * Rename the organization URL
           * Change the organization Owner
           
-          Project collection administrators can manage user access and change the organization Owner, but they can't rename the organization URL.
+          Project collection administrators have the same permission and can perform all actions done by organization owners.
           
       - question: |
           Q: Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?

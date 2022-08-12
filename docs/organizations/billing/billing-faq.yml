@@ -198,7 +198,7 @@ sections:
       - question: |
           Q: How can I get a list of all the users I'm paying for under multi-organization billing?
         answer: |
-          A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on email address. 
+          A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on sign-in address (e.g. contoso@contoso.com). You can find the sign-in address under the Username column in the exported file.
           
       - question: |
           Q: Why are additional free user grants removed when multi-organization billing is enabled?
