@@ -6,7 +6,7 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 01/26/2022
+ms.date: 08/12/2022
 monikerRange: azure-devops
 ---
 
@@ -24,7 +24,7 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 [!INCLUDE [temp](../includes/yaml/PublishPipelineArtifactV1.md)]
 
 > [!NOTE]
-> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](/azure/devops/pipelines/yaml-schema/steps-publish) and [Download](/azure/devops/pipelines/yaml-schema/steps-download) in the YAML schema.
+> The `publish` and `download` keywords are shortcuts for the PublishPipelineArtifact@1 and DownloadPipelineArtifact@2 tasks. See [steps.publish](/azure/devops/pipelines/yaml-schema/steps-publish) and [steps.download](/azure/devops/pipelines/yaml-schema/steps-download) for more details.
 
 ## Arguments
 
