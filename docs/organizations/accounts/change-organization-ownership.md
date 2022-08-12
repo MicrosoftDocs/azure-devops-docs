@@ -23,7 +23,11 @@ As roles and responsibilities change, you can change the owner for your organiza
 
 ## Prerequisites
 
+<<<<<<< HEAD
 You must be a [member of the **Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) or the [**organization owner**](../security/look-up-organization-owner.md). If no one in the organization has these permissions, contact [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html). Make sure the owner has completed the following tasks:
+=======
+You must be a [member of the **Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) or the [**organization Owner**](../security/look-up-organization-owner.md). If no one in the organization has these permissions, contact [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html). Make sure the owner has completed the following tasks:
+>>>>>>> bd9aecfa7c5c1930cd4d9264b393d212ddd84e2c
 
 - Sign in to your organization, create a profile, and agree to the Terms of Service
 - Access the organization at least once after creating your initial profile

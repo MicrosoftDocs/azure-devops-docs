@@ -25,7 +25,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 :::row:::
    :::column span="2":::
       **Dashboards** 
-      ::: moniker range="azure-devops"
+      ::: moniker range=">= azure-devops-2022"
       - [Add a dashboard](dashboards.md)  
       - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
       - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
@@ -49,7 +49,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Set dashboard permissions](dashboard-permissions.md)  
       - [View a dashboard](dashboards.md)  
       ::: moniker-end
-      ::: moniker range=">= azure-devops-2019 < azure-devops"
+      ::: moniker range=">= azure-devops-2019 < azure-devops-2022"
       - [Add a dashboard](dashboards.md)  
       - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
       - [Add a widget to a dashboard](add-widget-to-dashboard.md)  

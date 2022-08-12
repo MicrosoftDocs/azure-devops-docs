@@ -30,14 +30,14 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) |
-| Ubuntu 22.04 Preview | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2204-Readme.md)
-| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-Readme.md)
-| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-Readme.md) |
-| macOS 12 Monterey | *macOS-12* | `macOS-12` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-12-Readme.md) |
-| macOS 11 Big Sur | *macOS-11* | `macOS-latest` OR `macOS-11` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
-| macOS X Catalina 10.15 | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md) |
+| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md) |
+| Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2019-Readme.md) |
+| Ubuntu 22.04 Preview | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
+| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
+| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md) |
+| macOS 12 Monterey | *macOS-12* | `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
+| macOS 11 Big Sur | *macOS-11* | `macOS-latest` OR `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
+| macOS X Catalina 10.15 | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 

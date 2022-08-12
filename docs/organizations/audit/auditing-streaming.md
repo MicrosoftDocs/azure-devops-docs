@@ -7,13 +7,13 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: 'azure-devops'
-ms.date: 05/11/2022
+monikerRange: '>= azure-devops-2022'
+ms.date: 08/03/2022
 ---
 
 # Create audit streaming
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)]
 
 > [!NOTE]
 > Auditing is still in public preview.
@@ -30,7 +30,7 @@ Audit streams represent a pipeline that flows audit events from your Azure DevOp
 
 Private linked workspaces aren't supported today.
 
-> [!Note]
+> [!NOTE]
 > Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an audit stream to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ## Prerequisites

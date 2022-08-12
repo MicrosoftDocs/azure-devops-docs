@@ -1,29 +1,30 @@
 ---
 title: Buy Azure DevOps for Cloud Solution Providers
 titleSuffix: Azure DevOps Services
-description: Cloud Solution Provider (CSP) partners can purchase Azure DevOps for customers
+description: Cloud Solution Provider (CSP) partners can enable their customers to pay for Azure DevOps with CSP-based Azure subscription.
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
+ms.custom: freshness-fy22q1
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 05/10/2019
+ms.date: 08/05/2022
 monikerRange: 'azure-devops'
 ---
 # Cloud Solution Providers: Buy Azure DevOps
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Partners in the Cloud Solution Provider (CSP) program can enable their customers to [pay for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) by using a CSP-based Azure subscription.
+If you're a partner in the Cloud Solution Provider (CSP) program, you can enable your customers to [pay for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) by using a CSP-based Azure subscription.
 
 ## Prerequisites
 
-To enable your customer to purchase Azure DevOps by using a CSP-based Azure subscription, confirm the following statements are true:
+Before you enable your customer to purchase Azure DevOps by using a CSP-based Azure subscription, confirm the following statements are true:
 
-- The customer is a member of the [**Project Collection Administrators** group](../../security/look-up-project-collection-administrators.md) or the [**Organization owner**](../../security/look-up-organization-owner.md)  
-- The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription
+- The customer is a member of the [**Project Collection Administrators** group](../../security/look-up-project-collection-administrators.md) or the [**organization Owner**](../../security/look-up-organization-owner.md).  
+- The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription.
 
-When your customer gains access to the CSP-based Azure subscription, they can [set up billing](../set-up-billing-for-your-organization-vs.md) or [change billing](../change-azure-subscription.md) for their Azure DevOps organization and further charges are billed to the CSP subscription.
+When your customer gains access to the CSP-based Azure subscription, they can [set up billing,](../set-up-billing-for-your-organization-vs.md) or [change billing](../change-azure-subscription.md) for their Azure DevOps organization. Further charges get billed to the CSP subscription.
 
 ## Change billing to CSP Azure subscription
 
@@ -37,15 +38,15 @@ When your customer gains access to the CSP-based Azure subscription, they can [s
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot of highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing from Organization settings](../media/shared/select-billing-organization-settings.png)
+   ![Screenshot showing highlighted Billing selection in Organization settings.(../media/shared/select-billing-organization-settings.png)
 4. Select **Change billing**.
 
-   ![Change billing button](../media/shared/select-change-billing.png)
+   ![Screenshot of highlighted Change billing button.](../media/shared/select-change-billing.png)
 
 5. Select your CSP Azure subscription that you want to be billed with, and then select **Save**.
 
-
+Now, you're paying for Azure DevOps with your CSP-based Azure subscription.

@@ -38,7 +38,7 @@ Learn how to enable public users to contribute to your project.
 
 3. Select **Users**, and then select **Add users**.
 
-   [:::image type="content" source="../../media/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::]
+   :::image type="content" source="../../media/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::
 
 4. Complete the form based on the following guidance, and then select **Add**.
 
