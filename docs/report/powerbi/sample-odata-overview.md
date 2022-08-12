@@ -18,7 +18,6 @@ ms.date: 10/12/2021
 In this article, we provide samples for the most popular reports:
 
 ::: moniker range=">= azure-devops-2020"
-
 ---
 :::row:::
    :::column span="2":::

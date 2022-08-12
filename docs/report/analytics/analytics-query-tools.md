@@ -15,22 +15,17 @@ ms.date: 08/12/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
-To help you get started, use the guidance provided in this article to determine which tool you should use to query the Analytics service. 
+You can query Analytics from a web browser or other supported tools. To create reports, we recommend you use [Power BI](https://powerbi.microsoft.com/). Power BI is free and provides a suite of business analytics tools that you can use to perform impromptu analysis, produce reports, and publish reports for enterprise consumption.
 
-
-Which tool should I use? can I use? 
-What do I want to query? Report on?
-
+To help you get started, use the guidance provided in the following table to determine which tool you should use based on the task you want to accomplish. 
 
 | Task | Tool    |               Notes       |  
 |------|---------|---------------------------|   
-| Query the metadata | [Any supported web browser](/azure/devops/server/compatibility#supported-browsers) | To get started, see [Query the Analytics service](analytics-query-parts.md). |
-| Create a status or trend report for work tracking data | Analytics views<br/>Power BI | Use a default view or create a custom view to filter work tracking data. To learn more, see [Create a Power BI report with a default Analytics view](../powerbi/create-quick-report.md). | 
+| Query the metadata | [Any supported web browser](/azure/devops/server/compatibility#supported-browsers) | Review the Analytics data model consisting of EntityTypes, properties, enumerated member names, supported functions, and more. To get started, see [Query the Analytics service](analytics-query-parts.md). |
+| Create a status or trend report for work tracking data | [Analytics views](../powerbi/what-are-analytics-views.md)<br/>Power BI | Use a default view or create a custom view to filter work tracking data. To learn more, see [Create a Power BI report with a default Analytics view](../powerbi/create-quick-report.md). | 
 | Create a report from a work item query | [WIQL to OData extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)<br/>Power BI  | Install the extension to get an OData query based on the fitered set of work items. Then use [Create a Power BI report with an OData Query](../powerbi/create-quick-report-odataq.md). |  
-|Create reports or dashboards based on Analytics data | Power BI | [Power BI](https://powerbi.microsoft.com/) is a suite of business analytics tools you can use to perform impromptu analysis, produce reports, and publish reports for enterprise consumption. You can specify a Power BI query or OData query within Power BI to filter the data. To learn more, see [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md). |  
+|Create reports or dashboards based on Analytics data | Power BI | You can specify a Power BI query or OData query within Power BI to filter the data. To learn more, see [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md). |  
 | Write and test OData  | [Visual Studio Code](https://code.visualstudio.com/download)<br/>[OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) | Visual Studio Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions that are useful for writing and testing queries. |  
-
- 
 
 ## Related articles
 
@@ -43,6 +38,6 @@ What do I want to query? Report on?
 ### Related resources 
 
 - [Ecosystem &middot; OData - the Best Way to REST](https://www.odata.org/ecosystem/)
-- 
+
 
 

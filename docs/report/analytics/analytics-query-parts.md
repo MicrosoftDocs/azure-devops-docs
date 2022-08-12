@@ -1,5 +1,5 @@
 ---
-title: Query the Analytics service 
+title: Query Analytics  
 titleSuffix: Azure DevOps  
 description: Learn how to query the Analytics service to return metadata or filter data for an EntityType.  
 ms.custom: "analytics" 
@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 08/12/2022
 ---
 
-# Query the Analytics service in Azure DevOps
+# Query Analytics in Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
@@ -155,7 +155,7 @@ The example return 1399 work items.
 ```
 
 > [!NOTE] 
-> If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10000 work items, [server-side paging is enforced](../extend-analytics/odata-query-guidelines.md#server-force-paging).  
+> If you don't include a `$select` or `$apply` clause, you may receive a warning, such as `"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."` It's equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of records, it may take several seconds. If you've more than 10,000 work items, [server-driven paging is enforced](../extend-analytics/odata-query-guidelines.md#perf-paging).  
 > To avoid running into usage limits, always include a `$select` or `$apply` clause.
 
 ## Query options

@@ -27,6 +27,92 @@ Use this quick reference to access information and sample queries using OData an
 
 <!--- include built-in reports and widgets --> 
 
+::: moniker range=">= azure-devops-2020"
+---
+:::row:::
+   :::column span="2":::
+      **Azure Boards**
+   :::column-end:::
+   :::column span="2":::
+      **Azure Test Plans**  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      - [Bug trend](../powerbi/sample-boards-bugtrend.md) (Power BI)   
+      - [Burndown/Burnup](../dashboards/configure-burndown-burnup-widgets.md) (widget)
+      - [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md) (Built-in report, widget)
+      - [Cumulative Flow Diagram (CFD)](../powerbi/sample-boards-cfd.md) (Power BI)
+      - [Feature progress](../powerbi/sample-boards-featureprogress.md) (Power BI)     
+      - [Lead/Cycle Time](../dashboards/cycle-time-and-lead-time.md) (widget)
+      - [Lead/Cycle Time](../powerbi/sample-boards-leadcycletime.md) (Power BI)  
+          
+      - [Open bugs](../powerbi/sample-boards-openbugs.md) (Power BI)   
+      - [Rollup](../powerbi/sample-boards-rollup.md) (Power BI)     
+      - [Work items and direct links](../powerbi/sample-boards-directlinks.md) (Power BI)   
+      - [Release burndown](../powerbi/sample-boards-releaseburndown.md) (Power BI)
+      - [Sprint burndown](../dashboards/configure-sprint-burndown.md) (Built-in report, widget)       
+      - [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) (Power BI)    
+      - [Velocity](../dashboards/team-velocity.md) (Built-in report, widget) 
+   :::column-end:::
+   :::column span="2":::
+      - [Chart for Test Plans](../../test/track-test-status.md) (widget)
+      - [Configuration by outcome matrix](../powerbi/sample-test-plans-configuration-by-outcome.md) (Power BI)     
+      - [Execution Trend](../powerbi/sample-test-plans-execution-trend.md) (Power BI)      
+      - [Progress status](../powerbi/sample-test-plans-progress-status.md) (Power BI)     
+      - [Requirements traceability](../../pipelines/test/requirements-traceability.md) (Built-in report)    
+      - [Requirements tracking](../powerbi/sample-stories-overview.md) (Power BI)     
+      - [Requirements tracking - Rollup](../powerbi/sample-stories-overview-rollup.md) (Power BI)  
+      - [Test Progress](../../test/progress-report.md) (Built-in report)  
+      - [Test Results Trend](../dashboards/configure-test-results-trend.md) (widget)   
+      - [Test suites aggregated view](../powerbi/sample-test-plans-aggregate-data-level.md) (Power BI)      
+      - [Tester by outcome matrix](../powerbi/sample-test-plans-tester-by-outcome.md) (Power BI)  
+   :::column-end:::
+:::row-end:::
+---
+
+
+:::row:::
+   :::column span="2":::
+      **Pipeline**
+   :::column-end:::
+   :::column span="2":::
+      **Pipeline and test** 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      - [Outcome summary](../powerbi/sample-pipelines-outcome-summary.md) (Power BI)  
+      - [Outcome summary for all pipelines](../powerbi/sample-pipelines-allpipelines.md) (Power BI)  
+      - [Pass rate trend](../powerbi/sample-pipelines-pass-rate-trend.md)  (Power BI)   
+      - [Stage wise failures](../sample-pipelines-stagewise-failures.md) (Power BI)    
+      - [Duration](../powerbi/sample-pipelines-duration.md) (Power BI)    
+      - [Duration trend](../powerbi/sample-pipelines-duration-trend.md)  (Power BI)   
+      - [Task duration](../powerbi/sample-pipelines-task-duration.md)  (Power BI)   
+      - [Task duration trend](../powerbi/sample-pipelines-task-duration-trend.md)  (Power BI)   
+   :::column-end:::
+   :::column span="2":::
+      - [Test failures report](../../pipelines/reports/pipelinereport.md) (Built-in report)
+      - [Test summary](../powerbi/sample-test-analytics-test-summary.md)  (Power BI)  
+      - [Test summary trend](../powerbi/sample-test-summary-trend.md) (Power BI)   
+      - [Failed tests](../powerbi/sample-test-analytics-failed-tests.md) (Power BI)   
+      - [Flaky tests](../powerbi/sample-test-analytics-flaky-tests.md) (Power BI)   
+      - [Test duration](../powerbi/sample-test-analytics-test-duration.md) (Power BI)   
+      - [Test duration trend](../powerbi/sample-test-analyics-test-duration-trend.md) (Power BI)   
+      - [Pass rate trend of a test](../powerbi/sample-test-analytics-pass-rate-trend-test.md) (Power BI)   
+   :::column-end:::
+:::row-end:::
+---
+--- 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+[!INCLUDE [temp](../powerbi/includes/sample-fulllist.md)] 
+
+::: moniker-end
 
 ## Key concepts 
 
@@ -124,7 +210,7 @@ Use this quick reference to access information and sample queries using OData an
       - [Query work item count](analytics-recipes.md#project-count)  
       - [Query for linked work items](work-item-links.md)  
       - [Query for non-hierarchical links](work-item-links.md)  
-      - [Query metadata](analytics-metadata.md#query-metadata)  
+      - [Query metadata](../analytics/analytics-query-parts.md#query-metadata)  
       - [Query trend data](querying-for-trend-data.md#trend-data)  
       - [Query work item history](analytics-recipes.md#retrieve-work-item-history)  
    :::column-end:::
@@ -155,5 +241,5 @@ Use this quick reference to access information and sample queries using OData an
 
 ### Marketplace extensions
 
-- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)  
-- 
+- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
+- [OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata)  

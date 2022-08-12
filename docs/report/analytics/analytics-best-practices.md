@@ -36,7 +36,8 @@ There are several reasons to follow best practices when querying Analytics, such
 
 Follow the guidance provided below as you get started. If you are an extension developer, you'll also want to review [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md).
 
- 
+
+[!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 ## Get familiar with the Analytics metadata 
 
