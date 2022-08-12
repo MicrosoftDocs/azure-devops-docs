@@ -30,12 +30,13 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 
 | Argument | Description |
 | -------- | ----------- |
-| targetPath | (Required) Path to the folder or file you want to publish. Wildcards are not supported. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
-| artifactName | (Optional) Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` |
-| artifactType | (Required) Artifacts publish location. Choose whether to publish your file as a pipeline artifact, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline |
-| fileSharePath | (Optional) The file share path that the artifact will be published to. This can include variables. Required when `artifactType` = `filepath`. E.g: `\server\folderName` |
-| parallel | (Optional) Select whether to copy files in parallel using multiple threads. If this setting is not enabled, one thread will be used. Default value: false| 
-| parallelCount | (Optional) Enter the degree of parallelism, or number of threads used to publish a package. The value must be at least 1 and not greater than 128. | 
+| `path`<br/>File or directory path | (Required) Path to the folder or file you want to publish. Wildcards are not supported. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
+| `artifactName`<br/>Artifact name | (Optional) Specify the name of the artifact that you want to create. It can be whatever you want. For example: *drop* |
+| `artifactType`<br/>Artifact publish location | (Required) Artifacts publish location. Choose whether to publish your file as a pipeline artifact, or to copy it to a file share that must be accessible from the pipeline agent. Options: pipeline, filepath. Default value: pipeline |
+| `fileSharePath`<br/>File share path | (Optional) The file share path that the artifact will be published to. This can include variables. Required when `artifactType` = `filepath`. E.g: `\server\folderName` |
+| `parallel`<br/>Parallel copy | (Optional) Select whether to copy files in parallel using multiple threads. If this setting is not enabled, one thread will be used. Default value: false|
+| `parallelCount`<br/>Parallel count | (Optional) Enter the degree of parallelism, or number of threads used to publish a package. The value must be at least 1 and not greater than 128. |
+| `properties`<br/>Custom properties | (Optional) Enter custom properties to associate with the artifact. Valid JSON string expected with all keys having the prefix 'user-'. |
 
 > [!TIP]
 > You can use the [.artifactignore](../../../artifacts/reference/artifactignore.md) file to to control which files will be published.
