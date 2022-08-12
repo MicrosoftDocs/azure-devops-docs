@@ -181,12 +181,12 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: June 2022
+  - name: July 2022
     href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: June 2022
+    href: docswhatsnew/azure-devops-docs-2022-06.md
   - name: May 2022
     href: docswhatsnew/azure-devops-docs-2022-05.md
-  - name: April 2022
-    href: docswhatsnew/azure-devops-docs-2022-04.md
 - name: Azure Boards
   items:
   - name: "2022"
