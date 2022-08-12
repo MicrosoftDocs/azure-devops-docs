@@ -42,12 +42,12 @@ Auditing events can be accessed through two methods on the Auditing page in your
 
 ## Prerequisites
 
-Auditing is turned off by default for all Azure DevOps Services organizations and can be [toggled on and off](#enable-and-disable-auditing) by Organization Owners and Project Collection Administrators in the *Organization Settings* page.
+Auditing is turned off by default for all Azure DevOps Services organizations and can be [toggled on and off](#enable-and-disable-auditing) by Organization owners and Project Collection Administrators in the *Organization Settings* page.
 By default, Project Collection Administrators are the only group that has full access to the Auditing feature.
 
 ### Audit permissions
 
-- By default, members of the **Organization Owners** and **Project Collection Administrators** groups have full access to all Auditing features.
+- By default, members of the **Organization owners** and **Project Collection Administrators** groups have full access to all Auditing features.
 - Specific Audit permissions can be granted to any group via the Security Permissions page in Organization Settings. 
 
 > [!NOTE]  
@@ -91,7 +91,7 @@ The organization will now have Auditing enabled. You may need to refresh the pag
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Auditing**.
 
@@ -112,7 +112,7 @@ The user or group members will now have access to view your organization's audit
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
    
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
    
 3. Select **Auditing**.
 

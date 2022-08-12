@@ -31,7 +31,7 @@
   - name: Change organization region
     displayName: update, reassign, region, geography, location, Virtual Support Agent
     href: change-organization-location.md
-  - name: Change organization Owner
+  - name: Change organization owner
     displayName: update, reassign, Project Collection Administrator, owner
     href: change-organization-ownership.md
 - name: Rename or delete an organization

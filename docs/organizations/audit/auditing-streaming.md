@@ -49,14 +49,14 @@ These permissions can be given to any users or groups you wish to have manage yo
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
  
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Auditing**.
 
    ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
 
 > [!NOTE]
-> If you don't see *Auditing* in Organization Settings, then auditing is not currently enabled for your organization. Someone in the Organization Owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-and-disable-auditing) in Organization Policies. You will then be able to see events on the Auditing page if you have the appropriate permissions.
+> If you don't see *Auditing* in Organization Settings, then auditing is not currently enabled for your organization. Someone in the Organization owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-and-disable-auditing) in Organization Policies. You will then be able to see events on the Auditing page if you have the appropriate permissions.
 
 4. Go to the **Streams** tab, and then select **New stream**. 
 

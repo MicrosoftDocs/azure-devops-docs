@@ -137,7 +137,7 @@ A best practice is to manage users through security groups. You can use the defa
    
    #### Manage organization settings
    
-   - [Change organization Owner](change-organization-ownership.md)
+   - [Change organization owner](change-organization-ownership.md)
    - [Rename organization](rename-organization.md)
    - [Delete an organization](delete-your-organization.md)
    - [Recover a deleted organization](recover-your-organization.md)

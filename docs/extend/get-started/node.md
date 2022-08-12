@@ -33,7 +33,7 @@ This tutorial guides you through creating your first web extension, which includ
 
 You must have the following permission and installations.
 
-* You're an organization Owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
+* You're an organization owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
 * Install [Node.js](https://nodejs.org).
 * Install the extension packaging tool (TFX) by running `npm install -g tfx-cli` from a command prompt.
 
