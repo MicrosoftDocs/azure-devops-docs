@@ -79,7 +79,7 @@ You can configure and customize Azure Boards to support a number of business req
 - Area paths to group work items by team, product, or feature area
 - Iteration paths to group work into sprints, milestones, or other event-specific or time-related periods 
 
-If you're new to Azure Boards and want an in depth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md).
+If you're new to Azure Boards and want an in-depth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md).
 
 [!INCLUDE [define-area-iteration-paths](../includes/get-started/define-area-iteration-paths.md)] 
  
