@@ -7,16 +7,16 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019 < azure-devops'
-ms.date: 09/27/2021
+ms.date: 07/26/2022
 ---
 
 # Install or enable the Analytics service
 
 [!INCLUDE [version-gt-eq-2019-lt-azure-devops](../../includes/version-gt-eq-2019-lt-azure-devops.md)]
 
-::: moniker range="azure-devops-2020" 
+::: moniker range=">= azure-devops-2020" 
 
-For Azure DevOps Server 2020, the Analytics service is generally available. It's automatically enabled for all new project collections added to your server. For project collections upgraded from a previous version, you may need to [manually enable it](#enable-analytics). You enable Analytics for each project collection for which you want to generate Analytics reports. 
+For Azure DevOps Server 2020 and later versions, the Analytics service is generally available. It's automatically enabled for all new project collections added to your server. For project collections upgraded from a previous version, you may need to [manually enable it](#enable-analytics). You enable Analytics for each project collection for which you want to generate Analytics reports. 
 
 ::: moniker-end
 
@@ -135,9 +135,6 @@ With Analytics disabled or removed, the following actions occur:
 > [!NOTE] 
 > Disabling Analytics in Azure DevOps Server 2019.1 is the same as uninstalling the Analytics extension for Azure DevOps Server 2019.
 ::: moniker-end
-
-
-<!--- QUESTION: when would an admin want to pause the service? when they are performing maintenance or moving a server? --> 
 
 To learn more about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
 
@@ -259,3 +256,5 @@ To resolve this issue, you can install the extension from a machine that hosts t
 - [The Reporting Roadmap](../powerbi/reporting-roadmap.md) 
 - [Extension FAQs](../../marketplace/faq-extensions.yml) 
 
+
+<!--- QUESTION: when would an admin want to pause the service? when they are performing maintenance or moving a server? --> 

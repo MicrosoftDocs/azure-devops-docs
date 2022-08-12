@@ -4,17 +4,13 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 02/25/2022
-monikerRange: '<= azure-devops'
+ms.date: 07/27/2022
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Expressions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-gt-eq-2019.md)]
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
@@ -480,7 +476,13 @@ You can use the following status check functions as expressions in conditions, b
 
 ## Conditional insertion
 
+::: moniker range=">=azure-devops-2022"
 You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+::: moniker-end
+
+::: moniker range="< azure-devops-2022"
+You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+::: moniker-end
 
 Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
 
@@ -498,6 +500,8 @@ pool:
 steps:
 - script: echo ${{variables.stageName}}
 ```
+
+::: moniker range=">=azure-devops-2022"
 
 ### Conditionally set a task input
 ```yml
@@ -536,6 +540,7 @@ steps:
 - ${{ else }}:
   - script: echo "the value is not adaptum or contoso"
 ```
+::moniker-end
 
 ## Each keyword
 
@@ -697,7 +702,7 @@ jobs:
   - script: echo hello from B
 ```
 
-
+::: moniker-end
 ::: moniker range=">=azure-devops-2020"
 
 ### Job to job dependencies across stages
@@ -756,6 +761,9 @@ stages:
      - script: echo hello from Job B2
 
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 If a job depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the job `run_tests` runs if the `build_job` deployment job set `runTests` to `true`. Notice that the key used for the `outputs` dictionary is `build_job.setRunTests.runTests`.
 
@@ -789,7 +797,6 @@ stages:
       steps:
         ...
 ```
-
 
 ::: moniker-end
 

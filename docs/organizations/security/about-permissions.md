@@ -172,7 +172,7 @@ When you add accounts of users directly to a security group, they are automatica
 - Project Collection Valid Users: All members added to an organization-level group.
 - Project Valid Users: All members added to a project-level group.
 ::: moniker-end
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 - *Server*\\Azure DevOps Valid Users: All members added to server-level groups.
 - *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
 - *ProjectName*\\Project Valid Users: All members added to project-level groups.
@@ -234,7 +234,7 @@ As shown in the following image, security groups defined at the project and coll
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 As shown in the following image, security groups defined at the project and collection-level can be assigned to permissions assigned at the object, project, and collection level. You can only define server-level security groups to server-level permissions. 
 ::: moniker-end

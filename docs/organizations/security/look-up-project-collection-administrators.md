@@ -81,7 +81,7 @@ To find out who is a member of the **Project Collection Administrators** group, 
 
 ::: moniker-end   
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 To find out who is a member, check the **Security** settings at the collection level. 
 

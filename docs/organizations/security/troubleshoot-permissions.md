@@ -119,7 +119,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Select **Project settings** > **Security**, and then enter the user name into the filter box.
 

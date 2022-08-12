@@ -194,7 +194,7 @@ When you're ready, Commit a new _azure-pipelines.yml_ file to your repository an
    > [!div class="mx-imgBorder"]
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-   If you want to watch your pipeline in action, select the build in the **Jobs** option on your Azure pipeline dashboard.
+   If you want to watch your pipeline in action, select the build in the **Jobs** option on your Azure Pipelines dashboard.
     :::image type="content" source="media/azure-pipe-run.png" alt-text="Pipeline build in action when the Azure Pipelines Jobs option is selected.":::
 
    Because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template, we automatically created your pipeline.

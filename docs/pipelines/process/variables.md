@@ -54,7 +54,7 @@ Environment variables are specific to the operating system you are using. They a
 
 System and user-defined variables also get injected as environment variables for your platform.  When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable name `any.variable` becomes the variable name `$ANY_VARIABLE`.
 
- There there are [variable naming restrictions](#variable-naming-restrictions) for environment variables (example: you can't use `secret` at the start of a variable name). 
+ There are [variable naming restrictions](#variable-naming-restrictions) for environment variables (example: you can't use `secret` at the start of a variable name). 
 
 ## Variable naming restrictions
 

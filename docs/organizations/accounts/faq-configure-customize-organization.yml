@@ -274,7 +274,11 @@ sections:
           * Change the organization owner
           * [Recover a deleted organization](./recover-your-organization.md)
           
+<<<<<<< HEAD
           Project collection administrators can manage user access and change the organization owner, but they can't rename the organization URL.
+=======
+          Project collection administrators have the same permission and can perform all actions done by organization owners.
+>>>>>>> bd9aecfa7c5c1930cd4d9264b393d212ddd84e2c
           
       - question: |
           Q: Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
