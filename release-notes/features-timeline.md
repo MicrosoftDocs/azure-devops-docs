@@ -116,6 +116,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="3"><a href="2022/sprint-208-update.md" data-raw-source="[12 August 2022](2022/sprint-208-update.md)"> 12 August 2022</a></td>
+    <td>Improved error message when failing to load pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>General availability of Ubuntu 22.04 for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Announcing deprecation of Ubuntu 18.04 images</td><td>Pipelines</td><td>N/A</td></tr>
+</tr>
     <td rowspan="9"><a href="2022/sprint-207-update.md" data-raw-source="[28 July 2022](2022/sprint-207-update.md)"> 28 July 2022</a></td>
     <td>Pipelines REST API Security Improvements</td><td>Pipelines</td><td>Future</td></tr>
     <td>Use proxy URLs for GitHub Enterprise integration</td><td>Pipelines</td><td>Future</td></tr>
