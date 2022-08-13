@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/26/2022
+ms.date: 08/12/2022
 ---
 
 # Sample reports and quick reference index 
