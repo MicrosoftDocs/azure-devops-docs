@@ -42,7 +42,7 @@ None
 | Argument | Description |
 | -------- | ----------- |
 | `pathToPublish`<br/>Path to publish<br/>*required* | The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. See [Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md).<br/>Default value: `$(Build.ArtifactStagingDirectory)` |
-| `ArtifactName`<br/>Artifact name<br/>*required* | Specify the name of the artifact that you want to create. It can be whatever you want.<br/>Default value: `drop` |
+| `ArtifactName`<br/>Artifact name<br/>*required* | Specify the name of the artifact that you want to create. It can be almost anything, but it can't contain the special character `+`.<br/>Default value: `drop` |
 | `publishLocation`<br/>Artifact publish location<br/>*required* | Choose whether to store the artifact in Azure Pipelines (`Container`), or to copy it to a file share (`FilePath`) that must be accessible from the build agent. To learn more, see [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).<br/>Default value: `Container` |
 | `TargetPath`<br/>File share path<br/>*required*, if `publishLocation=FilePath` | Specify the path to the file share where you want to copy the files. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. Publishing artifacts from a Linux or macOS agent to a file share is not supported. |
 | `Parallel`<br/>Parallel copy (**Azure Pipelines**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
