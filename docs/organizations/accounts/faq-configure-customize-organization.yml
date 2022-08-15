@@ -267,7 +267,7 @@ sections:
           A: The organization owner can do the following tasks, which other users don't have permissions to do: 
           
           - Manage billing in the [Azure portal](https://ms.portal.azure.com/#home)
-          - [Pay for users to access the organization](../billing/buy-basic-add-users.md)
+          - [Pay for users to access the organization](../billing/buy-basic-access-add-users.md)
           - [Pay for additional organization services](../billing/try-additional-features-vs.md)
           - [Rename the organization URL](./rename-organization.md)
           - [Change the organization owner](./change-organization-ownership.md)
