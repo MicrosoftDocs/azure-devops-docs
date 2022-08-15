@@ -27,7 +27,7 @@ We recommend that you use the [Step-by-step migration guide](https://aka.ms/Azur
 
 ## Prerequisites 
 
-- You must set up an Azure Active Directory tenant as described [Azure AD Connect sync: Make a change to the default configuration](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration#enable-synchronization-of-preferreddatalocation). 
+- You must set up an Azure Active Directory tenant as described [Azure AD Connect sync: Make a change to the default configuration](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). 
   The data migration tool sets up a link to your Azure Active Directory tenant when your Azure DevOps Services organization is created as part of the beginning of the import process. 
 
 	By synchronizing your on-premises Active Directory with Azure Active Directory, your team
@@ -65,7 +65,7 @@ You run the validation by using the data migration tool. To start, [download the
 	Migrator validate /collection:{collection URL} /tenantDomainName:{name}
 	```
 
-	Where {name} provides the name of your Azure Active Directory tenant. For example, to run against the default collection the command would look like:
+	Where `{name}` provides the name of your Azure Active Directory tenant. For example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like:
 
 	```cmdline
 	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com
@@ -194,12 +194,14 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 | --- | --- | --- |
 | United States | Central United States | CUS |
 | Europe | Western Europe | WEU |
-| United Kingdom | United Kingdom South | UKS |
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
 | Asia Pacific | South India | MA |
 | Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
+
+<!--- removing | United Kingdom | United Kingdom South | UKS | per https://dev.azure.com/mseng/TechnicalContent/_workitems/edit/1978987/ --> 
+
 
 <br> 
 
