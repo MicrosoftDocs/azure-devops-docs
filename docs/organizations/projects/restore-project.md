@@ -22,7 +22,7 @@ Sometimes we might delete a project in Azure DevOps by mistake. You can restore 
 
 ::: moniker range="azure-devops"
 
-To restore a project, you must have Project Collection Administrator or organization Owner permissions in Azure DevOps.
+To restore a project, you must have Project Collection Administrator or organization owner permissions in Azure DevOps.
 
 You must also have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 

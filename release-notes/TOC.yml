@@ -4,6 +4,8 @@
   items:
   - name: "2022"
     items:
+    - name: August 12
+      href: 2022/sprint-208-update.md
     - name: July 29
       href: 2022/sprint-207-update.md
     - name: July 14
@@ -338,6 +340,8 @@
   items:
   - name: "2022"
     items:
+    - name: August 12
+      href: 2022/pipelines/sprint-208-update.md
     - name: July 29
       href: 2022/pipelines/sprint-207-update.md
     - name: July 14

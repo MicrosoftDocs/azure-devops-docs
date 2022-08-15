@@ -80,7 +80,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
    A notification of the ownership transfer with your provided justification is sent to all Azure DevOps Administrators in your Azure AD.
 
-   You're redirected to the organization overview page. If you want to transfer ownership to another user, see [Change organization Owner](change-organization-ownership.md).
+   You're redirected to the organization overview page. If you want to transfer ownership to another user, see [Change organization owner](change-organization-ownership.md).
 
 ## Related articles
 

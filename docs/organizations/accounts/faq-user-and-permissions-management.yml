@@ -43,7 +43,7 @@ sections:
           <a name="find-owner"></a>
           
       - question: |
-          Q: How do I find the organization Owner?
+          Q: How do I find the organization owner?
         answer: |
           A: If you have at least Basic access, you can find the current owner in your organization settings.
           
