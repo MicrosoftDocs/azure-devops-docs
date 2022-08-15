@@ -2,13 +2,13 @@
 title: Restore organization after it's removed, deleted
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to recover your organization and data up to 90 days after being deleted, done with organization Owner permissions.
+description: Learn how to recover your organization and data up to 90 days after being deleted, done with organization owner permissions.
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/16/2020
+ms.date: 08/05/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -21,7 +21,7 @@ After you delete your organization, it's disabled but available for 28 days. If 
 ## Prerequisites
 
 * An organization deleted within the last 28 days.
-* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/look-up-organization-owner.md)
+* Organization owner permissions to restore your organization. [How do I find the organization owner?](../security/look-up-organization-owner.md)
 
 ## Recover organization
 
@@ -31,13 +31,13 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 2. On your profile page, go to the lower *Organizations Pending Deletion* section, and then select **Restore**.
 
-   ![Restore your deleted organization](media/shared/visual-studio-profile-page.png)
+   ![Screenshot showing organizations pending deletion with highlighted Restore button.](media/shared/visual-studio-profile-page.png)
 
 3. In the resulting popup, select **Restore** to confirm.
 
    * If your organization URL is still available, you can restore it.
 
-      ![Confirm restoration of your organization](media/recover-your-organization/confirm-restore-organization.png)
+      ![Screenshot showing highlighted Restore button.](media/recover-your-organization/confirm-restore-organization.png)
 
    * If your organization URL isn't available, provide a new URL, and then select **Restore**.
 
@@ -52,3 +52,4 @@ After you delete your organization, it's disabled but available for 28 days. If 
 * [Create a new organization](create-organization.md)
 * [Change organization owner](change-organization-ownership.md)
 * [Change organization data region](change-organization-location.md)
+* [FAQs for configuring and customizing your organization](faq-configure-customize-organization.yml)

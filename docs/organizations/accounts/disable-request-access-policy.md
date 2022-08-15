@@ -22,8 +22,8 @@ When this policy is on, users can request access to a resource. A request result
 
 ## Prerequisites
 
-To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](../security/look-up-organization-owner.md)
+To change a policy, you need at least Basic access and organization owner or Project Collection Administrator permissions.
+[How do I find the organization owner?](../security/look-up-organization-owner.md)
 
 ## Disable Request Access policy
 
