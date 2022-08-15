@@ -17,7 +17,7 @@ ms.date: 02/28/2022
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults. 
 
-If you've created a project or been added to the **Project Administrators** group, you'll want to be familiar with the administrative tasks your charged with. there are a few tasks you might want to do to ensure a smooth operational experience. 
+If you've created a project or been added to the **Project Administrators** group, you'll want to be familiar with the administrative tasks you're charged with. There are a few tasks you might want to do to ensure a smooth operational experience. 
 
 > [!NOTE]   
 > This article provides an overview of tasks a member of the **Project Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Collection Administrators** group, see [Manage your organization or project collection](manage-organization-collection.md).
@@ -77,9 +77,9 @@ Set policies to support collaboration across your teams and automatically remove
 You can configure and customize Azure Boards to support a number of business requirements for planning and tracking work. At a minimum, you'll want to configure the following elements:
 
 - Area paths to group work items by team, product, or feature area
-- Iteration paths to group work into sprints, milestones, or other event-specific or time-related periods. 
+- Iteration paths to group work into sprints, milestones, or other event-specific or time-related periods 
 
-If you're new to Azure Boards and want an indepth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md).
+If you're new to Azure Boards and want an in-depth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md).
 
 [!INCLUDE [define-area-iteration-paths](../includes/get-started/define-area-iteration-paths.md)] 
  
@@ -138,7 +138,7 @@ Azure DevOps supports integration with Azure, GitHub, and many other services. A
 
 <!--- 
 What to tell their users?
-- advantage for setting up teams for repos and pipelines 
+- advantage of setting up teams for repos and pipelines 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  

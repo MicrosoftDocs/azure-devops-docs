@@ -132,7 +132,7 @@ Responsible for configuring project-level resources, including:
 
 ::: moniker range="azure-devops"
 
-### Organization Owners and Project Collection Administrators
+### Organization owners and Project Collection Administrators
 
 Responsible for configuring organization-level resources, including the following tasks:
 
