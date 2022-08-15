@@ -67,7 +67,7 @@ sections:
           A: As part of the change to user assignment-based billing, we've also switched from monthly to daily billing. When you give a user paid access for a few weeks, or even a few days, you pay only for the time they got assigned to the paid access, rather than for a full month. As we switch your organization from monthly to daily billing, your next Azure bill is likely lower than it was previously. The next month is back to normal once a full month of daily charges has accumulated.
 
       - question: |
-          Q: Does daily pro-rated charges apply to other purchases also?
+          Q: Do daily pro-rated charges apply to other purchases also?
         answer: |
           A: Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased 5 MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case you will be charged approximately one-third of the monthly cost of 5 hosted pipelines.
 
@@ -344,9 +344,9 @@ sections:
         answer: |
           A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions that are linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, subscriptions can be named "Pay-As-You-Go" or "Enterprise Agreement".
           
-          Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization Owner role. Only organization Owners can set up new Azure billing in an Enterprise Agreement. 
+          Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
           
-          Ask your Enterprise Administrator to add you as an organization Owner within the Azure Enterprise portal. If you can't find this person, [submit a support ticket](https://aka.ms/AzureEntSupport) and request the contact information. You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
+          Ask your Enterprise Administrator to add you as an organization owner within the Azure Enterprise portal. If you can't find this person, [submit a support ticket](https://aka.ms/AzureEntSupport) and request the contact information. You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
           
       - question: |
           Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy Azure DevOps?

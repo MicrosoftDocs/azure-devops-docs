@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/28/2020
+ms.date: 08/12/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -20,7 +20,8 @@ If your personal access token (PAT) is compromised, take immediate action. Learn
 
 ## Prerequisites
 
-Only the **organization Owner** or a member of the **Project Collection Administrators** group can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/change-organization-collection-level-permissions.md). To learn how to find your **organization Owner**, see [Look up the organization Owner](../security/look-up-organization-owner.md).
+
+Only the **Organization owner** or a member of the **Project Collection Administrators** group can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/change-organization-collection-level-permissions.md). To learn how to find your **Organization owner**, see [Look up the organization owner](../security/look-up-organization-owner.md).
 
 For users, if you want to create or revoke your own PATs, see [Create or revoke personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
