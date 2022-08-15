@@ -9,7 +9,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 08/12/2022
+  ms.date: 08/15/2022
   monikerRange: '<= azure-devops'
 title: Create and configure organization FAQs
 summary: |
@@ -264,17 +264,16 @@ sections:
       - question: |
           Q: What makes the organization owner different from other organization users?
         answer: |
-          A: The organization owner manages payments and access for organization users. The organization owner also manages billing for the organization through the [Azure portal](https://portal.azure.com). 
+          A: The organization owner can do the following tasks, which other users don't have permissions to do: 
           
-          Organization owners also have permissions to do the following tasks:
+          - Manage billing in the [Azure portal](https://ms.portal.azure.com/#home)
+          - [Pay for users to access the organization](../billing/buy-basic-add-users.md)
+          - [Pay for additional organization services](../billing/try-additional-features-vs.md)
+          - [Rename the organization URL](./rename-organization.md)
+          - [Change the organization owner](./change-organization-ownership.md)
+          - [Recover a deleted organization](./recover-your-organization.md)
           
-          * Pay for users to access the organization
-          * Pay for additional organization services
-          * Rename the organization URL
-          * Change the organization owner
-          * [Recover a deleted organization](./recover-your-organization.md)
-          
-          Project collection administrators have the same permission and can perform all actions done by organization owners.
+          Project collection administrators (PCAs) can perform all actions done by organization owners, except for recovering a deleted organization. This is a current limitation we're working to resolve.
           
       - question: |
           Q: Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
