@@ -27,7 +27,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 Currently, you can access the following data from Analytics. This information was last updated on July 20, 2020.  
 
 
-|**Service**|**Azure DevOps Services**<br/>**Azure DevOps Server 2020**<br/>**Azure DevOps Server 2022**  |**Azure DevOps Server 2019**| |**Future availability**|
+|**Service**|**Azure DevOps Services**<br/>**Azure DevOps Server 2020**<br/>**Azure DevOps Server 2022**  |**Azure DevOps Server 2019**|**Future availability**|
 |------------------|----------------|---------------------------|----------------|  
 |[Boards](https://azure.microsoft.com/services/devops/boards/) | [In-context reports](../dashboards/overview.md#in-context-reports-work-tracking)<br/>[Widgets](../dashboards/analytics-widgets.md)<br/>[OData](../extend-analytics/quick-ref.md)<br/>[Power BI](overview.md) | [Widgets](../dashboards/analytics-widgets.md)<br/>[OData](../extend-analytics/quick-ref.md)<br/>[Power BI](overview.md) |  | 
 |[Pipelines](https://azure.microsoft.com/services/devops/pipelines/) | [Test Analytics](../../pipelines/test/test-analytics.md)<br/>[Pipeline Analytics](../../pipelines/reports/pipelinereport.md)<br/>[OData](../extend-analytics/quick-ref.md) | [Test Analytics](../../pipelines/test/test-analytics.md) |  | 

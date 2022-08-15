@@ -15,16 +15,23 @@ ms.date: 08/12/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
+Use this quick reference to access information and sample queries using OData and Analytics.  
 Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
-Use this quick reference to access information and sample queries using OData and Analytics. You can find more OData query examples in the [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md) articles.
 
-## Get started
+
+## Get started 
+
+- [Query Analytics data or metadata](../analytics/analytics-query-parts.md)
+- [Supported tools to use with Analytics](../analytics/analytics-query-tools.md)
+- [Summary of best practices to use when querying Analytics](../analytics/analytics-best-practices.md)  
+- [Permissions and prerequisites for working with Analytics](../analytics/analytics-permissions-prerequisites.md) 
+
+
 
 
 ## Sample reports 
-
-
+ 
 <!--- include built-in reports and widgets --> 
 
 ::: moniker range=">= azure-devops-2020"
@@ -47,7 +54,6 @@ Use this quick reference to access information and sample queries using OData an
       - [Feature progress](../powerbi/sample-boards-featureprogress.md) (Power BI)     
       - [Lead/Cycle Time](../dashboards/cycle-time-and-lead-time.md) (widget)
       - [Lead/Cycle Time](../powerbi/sample-boards-leadcycletime.md) (Power BI)  
-          
       - [Open bugs](../powerbi/sample-boards-openbugs.md) (Power BI)   
       - [Rollup](../powerbi/sample-boards-rollup.md) (Power BI)     
       - [Work items and direct links](../powerbi/sample-boards-directlinks.md) (Power BI)   
