@@ -68,7 +68,7 @@ Relative file paths or file patterns are resolved against `$(System.DefaultWorki
 
 **Example**:
 
-Here is an example showing how to cache dependencies installed by Yarn:
+Here's an example showing how to cache dependencies installed by Yarn:
 
 ```yaml
 variables:
@@ -110,7 +110,7 @@ The above executables need to be in a folder listed in the PATH environment vari
 
 **Example**:
 
-Here is an example of how to use restore keys by Yarn:
+Here's an example of how to use restore keys by Yarn:
 
 ```yaml
 variables:
@@ -132,7 +132,7 @@ steps:
 In this example, the cache task will attempt to find if the key exists in the cache. If the key doesn't exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
 This will attempt to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
 For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
-If there is a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
+If there's a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
 
 > [!NOTE]
 > A pipeline can have one or more caching task(s). There is no limit on the caching storage capacity, and jobs and tasks from the same pipeline can access and share the same cache.
@@ -172,7 +172,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 
 ## Conditioning on cache restoration
 
-In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable will cause the variable to be set to `true` when there is a cache hit, `inexact` on a restore key cache hit, otherwise it will be set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
+In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable will cause the variable to be set to `true` when there's a cache hit, `inexact` on a restore key cache hit, otherwise it will be set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
 
 In the following example, the `install-deps.sh` step is skipped when the cache is restored:
 
@@ -366,7 +366,7 @@ steps:
 - script: mvn install -B -e
 ```
 
-If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
+If you're using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
 
 ```yaml
 - task: Maven@3
@@ -421,7 +421,7 @@ steps:
 - script: npm ci
 ```
 
-If your project does not have a `package-lock.json` file, reference the `package.json` file in the cache key input instead.
+If your project doesn't have a `package-lock.json` file, reference the `package.json` file in the cache key input instead.
 
 > [!TIP]
 > Because `npm ci` deletes the `node_modules` folder to ensure that a consistent, repeatable set of modules is used, you should avoid caching `node_modules` when calling `npm ci`.
@@ -546,4 +546,4 @@ A: Caches expire after seven days of no activity.
 
 ### Q: Is there a limit on the size of a cache?
 
-A: There is no enforced limit on the size of individual caches or the total size of all caches in an organization.
+A: There's no enforced limit on the size of individual caches or the total size of all caches in an organization.
