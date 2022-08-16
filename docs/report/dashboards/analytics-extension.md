@@ -69,15 +69,10 @@ If you've upgraded to Azure DevOps Server 2019.1, you can enable Analytics for a
    > ![Open Collection>Admin settings>Analytics](media/enable-analytics/open-collection-admin-extensions.png) 
 1. Select **Enable Analytics**.  
 
-    <!--- Update image --> 
-
    > [!div class="mx-imgBorder"]  
    > ![Enable Analytics](media/enable-analytics/enable-analytics.png) 
 
     Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. To learn more about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
-
-
-
 
 ## Pause or disable Analytics
 
@@ -104,7 +99,7 @@ You can only pause or disable Analytics that has been previously enabled.
 For Azure DevOps Server 2019.1, you can resume Analytics after you've paused it for a project collection. Resuming the service will re-enable staging jobs, which will update the data tables and make them current, updating since the time it was paused.
 ::: moniker-end
 
-1. From the **Analytics** settings page, select <strong>Resume Analytics</strong>. 
+1. From the **Analytics** settings page, select **Resume Analytics**. 
 
    > [!div class="mx-imgBorder"]  
    > ![Enable Analytics](media/enable-analytics/enable-analytics.png) 
@@ -153,10 +148,10 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
 > [!TIP]
 > The Analytics extension appears in the local gallery for Azure DevOps Server so that there isn't any need to download it from the Azure DevOps Marketplace.
 
-1. From a web browser, select (1) the project collection, (2) <strong>Admin settings</strong>, and then (3) <strong>Extensions</strong>. 
+1. From a web browser, select (1) the project collection, (2) **Admin settings**, and then (3) **Extensions**. 
 
     ![Open Collection>Admin settings>Extensions](media/install-analytics/open-collection-admin-extensions.png) 
-1. Select <strong>Browse local extensions</strong>.  
+1. Select **Browse local extensions**.  
 
    > [!div class="mx-imgBorder"]  
    > ![Browse local marketplace](media/install-analytics/browse-marketplace.png)   
@@ -167,24 +162,25 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
 
    > [!div class="mx-imgBorder"]  
    > ![Analytics extension card](media/install-analytics/local-marketplace.png)   
-1. Select <strong>Get it free</strong>. 
+
+1. Select **Get it free**. 
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Analytics Marketplace extension, Select Get it free.](media/install-analytics/choose-get-it-free.png)   
+
 1. Select the project collection and then select **Install**.  
 
    > [!div class="mx-imgBorder"]  
    > ![Select the project collection](media/install-analytics/select-collection.png) 
-1. Upon completion of install, you'll see an image similar to the following. Select <strong>Proceed to collection</strong> to return to the web portal for your collection.  
+
+1. Upon completion of install, you'll see an image similar to the following. Select **Proceed to collection** to return to the web portal for your collection.  
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Analytics Marketplace extension installed, Proceed to collection.](media/install-analytics/success-install.png)   
 
     Optionally, if you want to install the Analytics extension on other project collections, select the browser back button. 
 
-
-<a id="disable-analytics-extension" />
-
+<a />
 
 ## Disable or uninstall the Analytics extension
 
@@ -207,6 +203,7 @@ If you remove the Analytics extension from your deployment, you can install the 
 
    > [!div class="mx-imgBorder"]  
    > ![Manage extensions](media/install-analytics/manage-extensions.png)   
+
 1. Select **Upload extension** and then select **click to upload**. Browse to the folder containing the Microsoft.TeamFoundation.Extension.Analytics.vsix file.  
 
    > [!div class="mx-imgBorder"]  
