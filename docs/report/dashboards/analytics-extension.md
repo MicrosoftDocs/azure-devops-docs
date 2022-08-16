@@ -76,6 +76,9 @@ If you've upgraded to Azure DevOps Server 2019.1, you can enable Analytics for a
 
     Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. To learn more about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
 
+
+
+
 ## Pause or disable Analytics
 
 ::: moniker range="azure-devops-2019"
@@ -123,7 +126,7 @@ Pausing Analytics or disabling the Analytics extension (2019), disables the foll
 
 Pausing Analytics preserves your data but stops staging jobs from updating your data. You can resume the service later and your data will then be updated. 
 
-Disabling Analytics  or removing the Analytics extension (2019), turns off all Analytics staging jobs and deletes the Analytics data stored in the Analytics tables. All Analytics data that captures historical trends is lost. It doesn't delete any other data stored in your collection. You can't undo this action. Once historical data and trending data is deleted, you can't restore it. Re-enabling Analytics won't restore the historical data. 
+Disabling Analytics or removing the Analytics extension (2019), turns off all Analytics staging jobs and deletes the Analytics data stored in the Analytics tables. All Analytics data that captures historical trends is lost. It doesn't delete any other data stored in your collection. You can't undo this action. Once historical data and trending data is deleted, you can't restore it. Re-enabling Analytics won't restore the historical data. 
 
 With Analytics disabled or removed, the following actions occur: 
 
@@ -179,7 +182,9 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
 
     Optionally, if you want to install the Analytics extension on other project collections, select the browser back button. 
 
-<a />
+
+<a id="disable-analytics-extension" />
+
 
 ## Disable or uninstall the Analytics extension
 
