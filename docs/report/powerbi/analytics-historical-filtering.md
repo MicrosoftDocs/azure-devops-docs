@@ -84,5 +84,5 @@ To restate, when reporting on historical data, all filters are applied to the wo
 
 ## Related articles
 
-- [Work item properties reference](analytics-fields-reference.md)
+- [Work tracking properties reference](analytics-fields-reference.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
