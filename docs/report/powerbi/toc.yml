@@ -34,8 +34,6 @@ items:
     href: analytics-views-manage.md  
   - name: Analytics views dataset design  
     href: data-connector-dataset.md  
-  - name: Resolve errors with an Analytics view  
-    href: troubleshooting-views.md  
 - name: Power BI integration
   items:
   - name: About Power BI integration 
@@ -53,7 +51,7 @@ items:
     href: access-analytics-power-bi.md
   - name: Connect using Advanced Functions
     href: data-connector-functions.md
-- name: Sample queries>Work tracking
+- name: Sample queries, Work tracking
   items:
   - name: Query work item data
     href: ../extend-analytics/wit-analytics.md
@@ -85,7 +83,7 @@ items:
     href: sample-odata-overview.md
   - name: View the OData query of a built-in report
     href: ../extend-analytics/view-odata-query-analytics-report.md
-- name: Sample reports>Boards
+- name: Sample reports, Boards
   items:
   - name: Open bugs
     href: sample-boards-openbugs.md
@@ -108,7 +106,7 @@ items:
     href: sample-boards-leadcycletime.md
   - name: Add a team slicer
     href: sample-boards-teamslicer.md
-- name: Sample reports>Pipelines
+- name: Sample reports, Pipelines
   items:
   - name: Outcome summary
     href: sample-pipelines-outcome-summary.md
@@ -126,7 +124,7 @@ items:
     href: sample-pipelines-task-duration.md
   - name: Task duration trend
     href: sample-pipelines-task-duration-trend.md
-- name: Sample reports>Pipelines test
+- name: Sample reports, Pipelines test
   items:
   - name: Test summary
     href: sample-test-analytics-test-summary.md
@@ -142,7 +140,7 @@ items:
     href: sample-test-analyics-test-duration-trend.md
   - name: Pass rate trend of test
     href: sample-test-analytics-pass-rate-trend-test.md
-- name: Sample reports>Test Plans
+- name: Sample reports, Test Plans
   items:
   - name: Progress status
     href: sample-test-plans-progress-status.md
@@ -164,7 +162,7 @@ items:
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Explore Analytics metadata
     href: ../extend-analytics/analytics-metadata.md
-  - name: Work item properties reference   
+  - name: Work tracking properties reference   
     href: ../powerbi/analytics-fields-reference.md
   - name: Analytics views dataset design
     href: data-connector-dataset.md
@@ -176,6 +174,8 @@ items:
     href: ../extend-analytics/odata-api-version.md
 - name: Troubleshooting
   items:
+  - name: Resolve errors with an Analytics view  
+    href: troubleshooting-views.md  
   - name: Odata Analytics query guidelines
     href: ../extend-analytics/odata-query-guidelines.md
   - name: Performance & latency
