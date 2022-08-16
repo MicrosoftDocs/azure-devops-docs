@@ -7,11 +7,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/26/2022
+ms.date: 08/12/2022
 ---
 
 
-# Work item properties reference 
+# Work tracking properties reference 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
