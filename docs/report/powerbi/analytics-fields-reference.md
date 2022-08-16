@@ -11,7 +11,7 @@ ms.date: 05/26/2022
 ---
 
 
-# Analytics work item fields reference 
+# Work item properties reference 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  

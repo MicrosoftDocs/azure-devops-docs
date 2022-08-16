@@ -14,8 +14,7 @@ ms.date: 08/12/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
-Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Services and Azure DevOps Server 2020 and later versions. It is in preview for Azure DevOps Server 2019. 
-
+The data available to you from Analytics depends on the Azure DevOps platform and version you're using and the Analytics version you query.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops-2022"
 
@@ -24,7 +23,12 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 
 ::: moniker-end
 
-Currently, you can access the following data from Analytics. This information was last updated on July 20, 2020.  
+## Data available by platform version
+ 
+Refer to the following table to determine the data you have access to. To determine the platform  and version you're using, see [Get support and provide feedback, What platform am I using?](../../user-guide/provide-feedback.md#what-platformversion-am-i-using) 
+
+> [!NOTE]   
+> The following table was last updated on August 2022.  
 
 
 |**Service**|**Azure DevOps Services**<br/>**Azure DevOps Server 2020**<br/>**Azure DevOps Server 2022**  |**Azure DevOps Server 2019**|**Future availability**|
@@ -36,13 +40,22 @@ Currently, you can access the following data from Analytics. This information wa
 |[Artifacts](https://azure.microsoft.com/services/devops/artifacts/) | None | None | Under investigation |  
  
 
-> [!NOTE]   
-> Analytics doesn't support reporting on plain text and HTML fields.  
+## Analytics version 
 
+When you query Analytics, you always specify an Analytics version. The latest versions provides access to all supported EntityTypes and EntitySets. For details on the supported EntityTypes and EntitySets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
+
+| Analytics version | Supported Azure DevOps services | 
+|------------------|----------------|
+| **v4.0-preview** | v3.0-preview plus snapshots related to pipeline jobs, task agent pool size, and task agent requests | 
+| **v3.0-preview**	| Azure Boards, Test Plans, and Azure Pipelines | 
+| **v2.0**      | Azure Boards only including Process data | 
+| **v1.0**      | Azure Boards only excluding Process data | 
+
+ 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)
+> [Query Analytics in Azure DevOps](../analytics/analytics-query-parts.md)
 
 ## Related articles
 

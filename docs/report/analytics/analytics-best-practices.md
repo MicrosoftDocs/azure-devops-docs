@@ -45,7 +45,7 @@ Query the Analytics metadata to gain familiarity with the entity types, entity s
 
 In addition, you can review select information from these resources: 
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md)
-- [Analytics work item fields reference](../powerbi/analytics-fields-reference.md)
+- [Work item properties reference](../powerbi/analytics-fields-reference.md)
 
 
 ## Structure your query to return the data you need 
@@ -106,7 +106,7 @@ You specify columns of data to return using the `$select` clause. With customiza
 
 For example, to return the ID, Work Item Type, Title, and State fields for a filtered set of work items, specify the following `$select` clause: `$select=WorkItemId, WorkItemType, Title, State`.  
 
-To lookup the list of properties and their corresponding field names, see [Analytics work item fields reference](../powerbi/analytics-fields-reference.md). 
+To lookup the list of properties and their corresponding field names, see [Work item properties reference](../powerbi/analytics-fields-reference.md). 
 
 <!--- General info 
 Analytics is built on top of a Columnstore Index technology. That means that data is both storage and query processing is column-based. So, the more properties that a query references, the more expensive it's to process. 

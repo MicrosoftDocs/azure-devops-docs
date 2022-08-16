@@ -48,7 +48,7 @@ You can select all work tracking fields in an Analytics view, except for the fol
 > [!IMPORTANT]  
 > Identity or person-name fields, such as Created By, Assigned To, etc., are selectable fields, however you can't select these fields at this time as field criteria for the purposes of filtering work items. 
 
-For a description of each work item tracking fields, see [Analytics work item fields reference](analytics-fields-reference.md).
+For a description of each work item tracking fields, see [Work item properties reference](analytics-fields-reference.md).
 
 
 ### Analytics data store fields 
