@@ -176,7 +176,7 @@ items:
     href: ../extend-analytics/odata-api-version.md
 - name: Troubleshooting
   items:
-  - name: Query guidelines
+  - name: Odata Analytics query guidelines
     href: ../extend-analytics/odata-query-guidelines.md
   - name: Performance & latency
     href: performance-latency.md

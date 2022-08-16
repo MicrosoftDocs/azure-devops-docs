@@ -64,7 +64,7 @@ Each default Analytics view provides a combination of options for work item type
 
 Default views automatically include the most common fields for the included work item types used for reporting. All custom fields are included. 
 
-For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item properties reference](analytics-fields-reference.md) or [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
+For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work tracking properties reference](analytics-fields-reference.md) or [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
 > ![Analytics views common fields](media/editable-views/common-fields.png)
@@ -84,7 +84,7 @@ In these cases, you can [create a custom Analytics view](analytics-views-create.
 - [Data available from Analytics](data-available-in-analytics.md)
 - [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)
 - [Grant permissions to access Analytics](./analytics-security.md)
-- [Work item properties reference](analytics-fields-reference.md) 
+- [Work tracking properties reference](analytics-fields-reference.md) 
 
 
 ## Related resources 

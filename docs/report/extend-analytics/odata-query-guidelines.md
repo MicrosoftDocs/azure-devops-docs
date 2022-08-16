@@ -1,5 +1,5 @@
 ---
-title: Query guidelines for Analytics with OData
+title: OData Analytics query guidelines 
 titleSuffix: Azure DevOps
 description: Learn how to write good OData queries that access Analytics for Azure DevOps.
 ms.technology: devops-analytics 
@@ -7,10 +7,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/30/2020
+ms.date: 08/12/2022
 ---
 
-# Query guidelines for Analytics with OData
+# OData Analytics query guidelines for Azure DevOps
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 

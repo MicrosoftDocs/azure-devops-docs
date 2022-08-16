@@ -104,7 +104,7 @@ To delete a view, select the :::image type="icon" source="../media/icons/actions
 - [Grant permissions to access Analytics](./analytics-security.md)
 - [Power BI integration overview](overview.md)
 - [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md)
-- [Work item properties reference](analytics-fields-reference.md) 
+- [Work tracking properties reference](analytics-fields-reference.md) 
 
 
 ## Related resources 

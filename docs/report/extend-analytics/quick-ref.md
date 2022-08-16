@@ -16,22 +16,27 @@ ms.date: 08/12/2022
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Use this quick reference to access information and sample queries using OData and Analytics.  
-Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations generate queries that span multiple projects or the entire organization in Azure DevOps.   
-
-
+Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations can generate queries that span multiple projects or an entire organization or project collection.   
 
 ## Get started 
 
+If you're new to Analytics, we recommend that you review the following articles.  
+
+- [Data available and versioning](../powerbi/data-available-in-analytics.md)
 - [Query Analytics data or metadata](../analytics/analytics-query-parts.md)
 - [Supported tools to use with Analytics](../analytics/analytics-query-tools.md)
 - [Summary of best practices to use when querying Analytics](../analytics/analytics-best-practices.md)  
 - [Permissions and prerequisites for working with Analytics](../analytics/analytics-permissions-prerequisites.md) 
 
-
-
-
-## Sample reports 
  
+## Sample widgets and reports 
+
+Analytics supports several widgets and built-in reports. In addition, we've created several sample reports to showcase how to query the data and build the reports of interest using Power BI. 
+
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+
+
 <!--- include built-in reports and widgets --> 
 
 ::: moniker range=">= azure-devops-2020"
@@ -111,12 +116,27 @@ Using OData, you can directly query Analytics for Azure DevOps from a supported 
    :::column-end:::
 :::row-end:::
 ---
---- 
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-[!INCLUDE [temp](../powerbi/includes/sample-fulllist.md)] 
+For Azure DevOps Server 2019, only Azure Boards work tracking data is available from Analytics. 
+
+- [Bug trend](../powerbi/sample-boards-bugtrend.md) (Power BI)   
+- [Burndown/Burnup](../dashboards/configure-burndown-burnup-widgets.md) (widget)
+- [Cumulative Flow Diagram (CFD)](../dashboards/cumulative-flow.md) (Built-in report, widget)
+- [Cumulative Flow Diagram (CFD)](../powerbi/sample-boards-cfd.md) (Power BI)
+- [Feature progress](../powerbi/sample-boards-featureprogress.md) (Power BI)     
+- [Lead/Cycle Time](../dashboards/cycle-time-and-lead-time.md) (widget)
+- [Lead/Cycle Time](../powerbi/sample-boards-leadcycletime.md) (Power BI)  
+- [Open bugs](../powerbi/sample-boards-openbugs.md) (Power BI)   
+- [Rollup](../powerbi/sample-boards-rollup.md) (Power BI)     
+- [Work items and direct links](../powerbi/sample-boards-directlinks.md) (Power BI)   
+- [Release burndown](../powerbi/sample-boards-releaseburndown.md) (Power BI)
+- [Sprint burndown](../dashboards/configure-sprint-burndown.md) (Built-in report, widget)       
+- [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) (Power BI)    
+- [Velocity](../dashboards/team-velocity.md) (Built-in report, widget) 
 
 ::: moniker-end
 
@@ -235,8 +255,22 @@ Using OData, you can directly query Analytics for Azure DevOps from a supported 
 
 ## Reference
 
+- [Work tracking properties reference](../powerbi/analytics-fields-reference.md)  
+- [Analytics views dataset design](../powerbi/data-connector-dataset.md)  
+- [Supported OData functions and clauses](odata-supported-features.md)  
+- [OData API versioning](odata-api-version.md) 
+- [Performance & latency](../powerbi/performance-latency.md)
+
 
 ## Troubleshooting
+
+- [OData Analytics query guidelines for Azure DevOps](odata-query-guidelines.md) 
+- [Resolve errors associated with an Analytics view](../powerbi/troubleshooting-views.md)
+
+## Marketplace extensions
+
+- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
+- [OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata)  
 
 
 ## Related articles
@@ -245,7 +279,4 @@ Using OData, you can directly query Analytics for Azure DevOps from a supported 
 - [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  
 - [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
-### Marketplace extensions
 
-- [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
-- [OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata)  

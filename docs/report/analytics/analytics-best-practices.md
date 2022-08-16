@@ -34,7 +34,7 @@ There are several reasons to follow best practices when querying Analytics, such
 - Minimize consumption of resources  
 ::: moniker-end
 
-Follow the guidance provided below as you get started. If you are an extension developer, you'll also want to review [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md).
+Follow the guidance provided below as you get started. If you are an extension developer, you'll also want to review [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
 
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
@@ -45,7 +45,7 @@ Query the Analytics metadata to gain familiarity with the entity types, entity s
 
 In addition, you can review select information from these resources: 
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md)
-- [Work item properties reference](../powerbi/analytics-fields-reference.md)
+- [Work tracking properties reference](../powerbi/analytics-fields-reference.md)
 
 
 ## Structure your query to return the data you need 
@@ -106,7 +106,7 @@ You specify columns of data to return using the `$select` clause. With customiza
 
 For example, to return the ID, Work Item Type, Title, and State fields for a filtered set of work items, specify the following `$select` clause: `$select=WorkItemId, WorkItemType, Title, State`.  
 
-To lookup the list of properties and their corresponding field names, see [Work item properties reference](../powerbi/analytics-fields-reference.md). 
+To lookup the list of properties and their corresponding field names, see [Work tracking properties reference](../powerbi/analytics-fields-reference.md). 
 
 <!--- General info 
 Analytics is built on top of a Columnstore Index technology. That means that data is both storage and query processing is column-based. So, the more properties that a query references, the more expensive it's to process. 
@@ -179,7 +179,7 @@ You can review usage for the service and for individuals by going to **Organizat
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
 - [Query the Analytics service in Azure DevOps](analytics-query-parts.md)
 - [Analytics OData metadata](../extend-analytics/analytics-metadata.md) 
-- [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md)
+- [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 
 
 

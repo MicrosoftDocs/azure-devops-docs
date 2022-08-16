@@ -222,7 +222,7 @@ Analytics returns the project names of those projects defined for the *fabrikam*
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
-- [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md)
+- [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Permissions and prerequisites to access Analytics in Azure DevOps](analytics-permissions-prerequisites.md)
 
 <!--- nice to have but not necessary

@@ -214,7 +214,7 @@ The following surrogate keys (SK) properties can be used to filter or construct 
 
 - [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
-- [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md)
+- [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
 
 

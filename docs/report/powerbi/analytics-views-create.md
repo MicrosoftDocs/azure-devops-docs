@@ -74,7 +74,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 ### Specify Work items filters
 
-Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data. For a description of each available field, see [Work item properties reference](analytics-fields-reference.md).
+Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data. For a description of each available field, see [Work tracking properties reference](analytics-fields-reference.md).
 > [!div class="mx-imgBorder"]
 > ![Specify Work items filters.](media/editable-views/work-items-default.png)
 
