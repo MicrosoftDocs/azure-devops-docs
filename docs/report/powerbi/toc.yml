@@ -164,7 +164,7 @@ items:
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Explore Analytics metadata
     href: ../extend-analytics/analytics-metadata.md
-  - name: Analytics work item fields  
+  - name: Work item properties reference   
     href: ../powerbi/analytics-fields-reference.md
   - name: Analytics views dataset design
     href: data-connector-dataset.md

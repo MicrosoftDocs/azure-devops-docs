@@ -300,7 +300,7 @@ The following table summarizes Analytics reports, widgets, and other tools that 
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Analytics work item fields reference](../powerbi/analytics-fields-reference.md)
+> [Work item properties reference](../powerbi/analytics-fields-reference.md)
 
 
 ## Related articles 

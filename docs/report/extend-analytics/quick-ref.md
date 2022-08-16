@@ -92,11 +92,11 @@ Using OData, you can directly query Analytics for Azure DevOps from a supported 
    :::column span="2":::
       - [Outcome summary](../powerbi/sample-pipelines-outcome-summary.md) (Power BI)  
       - [Outcome summary for all pipelines](../powerbi/sample-pipelines-allpipelines.md) (Power BI)  
-      - [Pass rate trend](../powerbi/sample-pipelines-pass-rate-trend.md)  (Power BI)   
-      - [Stage wise failures](../sample-pipelines-stagewise-failures.md) (Power BI)    
+      - [Pass rate trend](../powerbi/sample-pipelines-pass-rate-trend.md) (Power BI)   
+      - [Stage wise failures](../powerbi/sample-pipelines-stagewise-failures.md) (Power BI)    
       - [Duration](../powerbi/sample-pipelines-duration.md) (Power BI)    
-      - [Duration trend](../powerbi/sample-pipelines-duration-trend.md)  (Power BI)   
-      - [Task duration](../powerbi/sample-pipelines-task-duration.md)  (Power BI)   
+      - [Duration trend](../powerbi/sample-pipelines-duration-trend.md) (Power BI)   
+      - [Task duration](../powerbi/sample-pipelines-task-duration.md) (Power BI)   
       - [Task duration trend](../powerbi/sample-pipelines-task-duration-trend.md)  (Power BI)   
    :::column-end:::
    :::column span="2":::

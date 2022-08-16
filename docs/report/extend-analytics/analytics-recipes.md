@@ -20,7 +20,7 @@ Analytics. You can adapt most of these queries to meet your needs.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-For prerequisites and other information for getting started, see [Query your work tracking data using OData Analytics](wit-analytics.md) and [Analytics work item fields reference](../powerbi/analytics-fields-reference.md). All examples are scoped to a project on Azure DevOps. For examples of organization-level scoping or Azure DevOps Server, see [Project and organization-scoped queries](account-scoped-queries.md). 
+For prerequisites and other information for getting started, see [Query your work tracking data using OData Analytics](wit-analytics.md) and [Work item properties reference](../powerbi/analytics-fields-reference.md). All examples are scoped to a project on Azure DevOps. For examples of organization-level scoping or Azure DevOps Server, see [Project and organization-scoped queries](account-scoped-queries.md). 
 
 ::: moniker range="azure-devops"
 > [!TIP] 
