@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/26/2022
+ms.date: 08/17/2022
 ---
 
 # Track progress with status and trend query-based charts 
@@ -75,9 +75,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker-end 
 
-To learn more about default groups, see [Get started with permissions, permission inheritance, and security groups](../../organizations/security/about-permissions.md#inheritance).
-
-[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
+To learn more about default groups, see [Get started with permissions, permission inheritance, and security groups](../../organizations/security/about-permissions.md#inheritance). 
 
 ## Create a flat-list query  
 
@@ -259,7 +257,7 @@ The following image shows an example of active bugs assigned to developers and t
 
 ## Add a Trend chart  
 
-Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year (earlier versions of TFS may have limited selections).  
+Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
@@ -329,6 +327,7 @@ Query-based charts generate data from the work item tracking data store and ther
 
 ## Related articles
 
+- [Configure a chart for work items widget](configure-chart-work-items-widget.md)
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Cumulative flow diagram](cumulative-flow.md)  
 - [Team velocity](team-velocity.md)  
