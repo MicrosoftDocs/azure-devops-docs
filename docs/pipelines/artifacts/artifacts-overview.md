@@ -60,6 +60,9 @@ Azure Artifacts enable developers to consume and publish different types of pack
 
 * * *
 
+> [!TIP]
+> If your organization is using a firewall or a proxy server, make sure your allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Next steps
 
 > [!div class="nextstepaction"]
