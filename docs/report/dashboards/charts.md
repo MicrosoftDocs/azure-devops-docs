@@ -52,32 +52,41 @@ For example, the following image illustrates four different charts created from 
 
 ## Prerequisites
 
-By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+Prerequisites to meet include having **Basic** access or higher and to have created a flat-list query. Only flat-list queries support charts. 
+
+If you want to add the chart to a dashboard, then you need to save the query under the **Shared Queries** folder, and create the dashboard where you want to add the chart. 
+
+::: moniker range=">= azure-devops-2020"
+
+- To create a query chart, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
+- To add a chart to a dashboard, you must save the query to a **Shared Queries** folder. To do that, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
+- To add a query chart to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group.
+- To add a query chart to a project dashboard, you must have created the dashboard or be granted permissions to edit the dashboard, or be a member of the **Project Administrators** security group.
+- To view a query chart added to a dashboard, you must have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
+::: moniker-end
 
 ::: moniker range="azure-devops"
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
-* Connect to a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
-* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
+::: moniker-end
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
-* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
-* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
-
-::: moniker-end 
-
-To learn more about default groups, see [Get started with permissions, permission inheritance, and security groups](../../organizations/security/about-permissions.md#inheritance). 
-
-## Create a flat-list query  
+- To create a query chart, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+- To add a chart to a dashboard, you must save the query to a **Shared Queries** folder. To do that, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
+- To add a query chart to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group.
+- To view a query chart added to a dashboard, you must have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
+::: moniker-end
+ 
+To learn more about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 
+ 
+### Create a flat-list query  
 
 When creating a query to support your chart, follow these guidelines. 
 
@@ -101,7 +110,7 @@ When creating a query to support your chart, follow these guidelines.
 	-  Tags (You can filter a query using tags, however you can't use tags to configure your chart).
 
 > [!NOTE]   
-> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in []().  
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in [Configure a chart for work items widget](configure-chart-work-items-widget.md).  
 
 ::: moniker-end
 
@@ -115,15 +124,7 @@ When creating a query to support your chart, follow these guidelines.
 	-  Tags (You can filter a query using tags, however you can't use tags to configure your chart).
 ::: moniker-end
 
-### Chart availability
-
-- Charts saved under **Shared Queries** are viewable by all team members, except members with Stakeholder access, and can be added to dashboards.   
-- Charts that you create for queries under your **My Queries** folder are visible only to you.   
-- You can copy and email the URL of any chart page to share it with a project member. 
-- To create similar charts for tests, see [Track test status](../../test/track-test-status.md).   
-
-
-### Display of areas and iterations
+#### Display of areas and iterations
 
 When you select **Area Path** or **Iteration Path**, only the leaf node appears in the chart. The leaf node is the last node of the full path. For example, ```Phone``` is the leaf node of ```FabrikamFiber/Fabrikam Website/Phone```. If your query contains a mixed level of leaf nodes, your chart might not reflect expected results.  
 
@@ -139,14 +140,14 @@ Charts display in browsers that support Scalable Vector Graphics (SVG). Supporte
 ::: moniker-end
 
 
-### Sort by Value or Label 
+#### Sort by Value or Label 
 
 Most charts allow you to choose how you want to sort the data. You can sort by **Value** or **Label** and select **Ascending** or **Descending**. 
 
 - **Value**: Sorts data by the numeric value 
 - **Label**: Sorts by the label selected for grouping the data.
 
-### Limited display of series 
+#### Limited display of series 
 
 ::: moniker range=">= azure-devops-2019" 
 When a chart contains more than eight or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled "other"? However, if you increase the chart size through the configurable widget on a dashboard you may increase the series limit.  
@@ -164,7 +165,12 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker-end 
 
+## Chart availability
 
+- Charts saved under **Shared Queries** are viewable by all team members, except members with Stakeholder access, and can be added to dashboards.   
+- Charts that you create for queries under your **My Queries** folder are visible only to you.   
+- You can copy and email the URL of any chart page to share it with a project member. 
+- To create similar charts for tests, see [Track test status](../../test/track-test-status.md).
 
 ## Create a query-based chart  
 
