@@ -20,29 +20,17 @@ You can quickly view the status of work in progress by charting the results of a
 
 In this article you'll learn how to carry out the following tasks:  
 
-::: moniker range=">= azure-devops-2022"
 > [!div class="checklist"]    
 > * Construct a flat-list query to support your chart
 > * Create and share your query-based chart 
 > * Create a status pie, column, bar, or pivot chart
 > * Create a trend chart 
-> * Add a query chart to a dashboard
-> * Configure a query widget    
-> * Group a **Chart for Work Items** widget by tags  
-::: moniker-end
-
-::: moniker range="< azure-devops"
-> [!div class="checklist"]    
-> * Construct a flat-list query to support your chart
-> * Create and share your query-based chart 
-> * Create a status pie, column, bar, or pivot chart
-> * Create a trend chart 
-> * Add a chart to a dashboard
-> * Configure a query widget    
-::: moniker-end
+> * Add a chart to a dashboard 
 
 > [!NOTE] 
-> This article describes how to configure work tracking query charts and the **Chart for Work Items** widget. To add existing query charts to dashboards, see [Add charts to a dashboard](add-charts-to-dashboard.md). For an overview of all work tracking charts and in-context reports, see [About dashboards, charts, reports, & widgets](overview.md).
+> This article describes how to configure work tracking query charts. To add existing query charts to dashboards, see [Add charts to a dashboard](add-charts-to-dashboard.md). For information on configuring a **Chart for Work Items** widget, see [Configure a chart for work items widget](configure-chart-work-items-widget.md).
+>   
+>  For an overview of all work tracking charts and in-context reports, see [About dashboards, charts, reports, & widgets](overview.md).
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -330,96 +318,6 @@ In the dialog that opens, select the team dashboard to add the chart to.
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
 
 
-<a id="add-chart-widget"></a> 
-
-## Add a chart widget to a dashboard   
- 
-If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a dashboard using the *Chart for work items* widget.  
-
-::: moniker range=">= azure-devops-2019"
-
-1. From the web portal, open the [dashboard](dashboards.md) you want to add the chart to.  
-
-2. To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
-
-	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or get permissions to edit dashboards. 
-
-3. Select the **Chart for work items** widget and then select **Add**.  
-
-	![Web portal, Dashboards page, Widget catalog, Chart for work items widget](media/widget-chart-work-query.png) 
-
-4. Select the widget's :::image type="icon" source="../../media/icons/dashboard-configure.png" border="false"::: gear icon to open the Configuration dialog. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Configuration dialog for chart work items widget](media/charts/configure-chart-widget.png)   
-
-5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
-
-	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
-
-	> [!NOTE]  
-	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
-
-6. After you save your changes, you'll see the new chart has been added to the dashboard. 
-
-	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
-
-7. Drag the tile anywhere on the dashboard to put it where you want it. 
-
-8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
-
-2. To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
-
-	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or a member of the Project Administrators group. 
-
-3. Select the **Chart for work items** widget and then select **Add**. 
-
-	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" /> 
-
-4. Select the widget's :::image type="icon" source="media/icons/gear-icon.png" border="false"::: gear icon to open the configuration dialog. 
-
-	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" /> 
-
-5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
-
-	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
-
-	> [!NOTE]  
-	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
-
-6. After you save your changes, you'll see the new chart has been added to the dashboard. 
-
-	![Chart of work items widget, configure dialog](media/charts-chart-wit-widget-configured.png)  
-
-7. Drag the tile anywhere on the dashboard to put it where you want it. 
-
-8. When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2022"
-
-<a id="group-by-tags"></a> 
-
-## Group by Tags chart 
-
-> [!NOTE]   
-> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
-
-To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, select **Tags** for the **Group by** selection. To filter the chart to show only some tags, select the **Selected tags** radio button and then choose the tags you want the chart to display.  
-
-:::image type="content" source="media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
-
-To learn more about using tags, see [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). 
-
-::: moniker-end
 
 ::: moniker range="< azure-devops-2022"
 

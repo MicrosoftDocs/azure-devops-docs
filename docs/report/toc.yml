@@ -22,7 +22,7 @@
   expanded: true
 - name: Dashboards
   items:
-  - name: Add charts to a dashboard
+  - name: Add charts and built-in reports to a dashboard
     href: dashboards/add-charts-to-dashboard.md
   - name: Add Markdown to a dashboard
     href: dashboards/add-markdown-to-dashboard.md
@@ -36,7 +36,10 @@
   items:
   - name: Create work tracking charts
     href: dashboards/charts.md
-    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line, flat, query
+  - name: Configure charts for work items 
+    href: dashboards/configure-chart-work-items-widget.md
+    displayname: tags, flat, query
   - name: View/configure CFD
     href: dashboards/cumulative-flow.md
     displayname: cumulative flow diagram, in-context report, team, analytics
