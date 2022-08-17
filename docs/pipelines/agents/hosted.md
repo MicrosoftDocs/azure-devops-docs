@@ -44,35 +44,26 @@ The default agent image for classic build pipelines is *windows-2019*, and the d
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
-> [!NOTE]
->
-> [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
->
-> [The Ubuntu 18.04 Actions runner image will begin deprecation on 8/8/22 and will be fully unsupported by 12/1/22](https://github.com/actions/runner-images/issues/6002).
->
-> [The macOS 10.15 Actions runner image will begin deprecation on 5/31/22 and will be fully unsupported by 8/30/22 in GitHub and by 9/30/22 in Azure DevOps](https://github.com/actions/runner-images/issues/5583).
->
-> [`windows-latest` workflows will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
->
-> [`macOS-latest` workflows will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
->
-> [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
->
-> The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
->
-> In December 2021, we removed the following Azure Pipelines hosted image:
->
-> - macOS X Mojave 10.14 (`macOS-10.14`)
->
-> In March 2020, we removed the following Azure Pipelines hosted images:
->
-> - Windows Server 2012R2 with Visual Studio 2015 (`vs2015-win2012r2`)
-> - macOS X High Sierra 10.13 (`macOS-10.13`)
-> - Windows Server Core 1803 (`win1803`)
->
-> Customers are encouraged to migrate to newer versions or a [self-hosted agent](v2-windows.md).
->
-> For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
+
+### Recent updates
+
+* [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
+* [The Ubuntu 18.04 Actions runner image will begin deprecation on 8/8/22 and will be fully unsupported by 12/1/22](https://github.com/actions/runner-images/issues/6002).
+* [The macOS 10.15 Actions runner image will begin deprecation on 5/31/22 and will be fully unsupported by 8/30/22 in GitHub and by 9/30/22 in Azure DevOps](https://github.com/actions/runner-images/issues/5583).
+* [`windows-latest` workflows will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
+* [`macOS-latest` workflows will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
+* [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
+* The Windows Server 2016 with Visual Studio 2017 image has been deprecated and will be retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
+* In December 2021, we removed the following Azure Pipelines hosted image:
+  * macOS X Mojave 10.14 (`macOS-10.14`)
+* In March 2020, we removed the following Azure Pipelines hosted images:
+  * Windows Server 2012R2 with Visual Studio 2015 (`vs2015-win2012r2`)
+  * macOS X High Sierra 10.13 (`macOS-10.13`)
+  * Windows Server Core 1803 (`win1803`)
+
+Customers are encouraged to migrate to newer versions or a [self-hosted agent](v2-windows.md).
+
+For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
