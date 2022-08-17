@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 03/30/2022
+ms.date: 08/17/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -32,12 +32,12 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | --- | --- | --- | --- |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md) |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://github.com/actions/runner-images/blob/main/images/win/Windows2019-Readme.md) |
-| Ubuntu 22.04 Preview | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
+| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
-| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md) |
+| Ubuntu 18.04 (deprecated starting 8/8/2022 and unsupported by 12/2/2022) | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md) |
 | macOS 12 Monterey | *macOS-12* | `macOS-12` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md) |
 | macOS 11 Big Sur | *macOS-11* | `macOS-latest` OR `macOS-11` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md) |
-| macOS X Catalina 10.15 | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
+| macOS X Catalina 10.15 (deprecated starting 5/31/2022 and unsupported by 9/30/2022) | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md) |
 
 The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
@@ -45,6 +45,12 @@ The default agent image for classic build pipelines is *windows-2019*, and the d
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
 > [!NOTE]
+>
+> [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
+>
+> [The Ubuntu 18.04 Actions runner image will begin deprecation on 8/8/22 and will be fully unsupported by 12/1/22](https://github.com/actions/runner-images/issues/6002).
+>
+> [The macOS 10.15 Actions runner image will begin deprecation on 5/31/22 and will be fully unsupported by 8/30/22 in GitHub and by 9/30/22 in Azure DevOps](https://github.com/actions/runner-images/issues/5583).
 >
 > [`windows-latest` workflows will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
 >
