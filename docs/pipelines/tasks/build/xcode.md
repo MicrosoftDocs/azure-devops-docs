@@ -69,13 +69,13 @@ xcode
    <tr>
       <td><code>xcodeVersion</code><br/>Xcode version</td>
       <td>
-         (Optional) Specify the target version of Xcode. Select <code>Default</code> to use the default version of Xcode on the agent machine. Selecting a version number (e.g. <code>Xcode 10</code>) relies on environment variables being set on the agent machine for the version&#39;s location (e.g. <code>XCODE_10_DEVELOPER_DIR=/Applications/Xcode_10.0.0.app/Contents/Developer</code>). Select <code>Specify path</code> to provide a specific path to the Xcode developer directory. <br/>Default value: default
+         (Optional) Specify the target version of Xcode. Select <code>Default</code> to use the default version of Xcode on the agent machine. Selecting a version number (<code>Xcode 10</code>) relies on environment variables being set on the agent machine for the version&#39;s location (<code>XCODE_10_DEVELOPER_DIR=/Applications/Xcode_10.0.0.app/Contents/Developer</code>). Select <code>Specify path</code> to provide a specific path to the Xcode developer directory. <br/>Default value: default
       </td>
    </tr>
    <tr>
       <td><code>xcodeDeveloperDir</code><br/>Xcode developer path</td>
       <td>
-         (Optional) Enter a path to a specific Xcode developer directory (e.g. <code>/Applications/Xcode_10.0.0.app/Contents/Developer</code>). This is useful when multiple versions of Xcode are installed on the agent machine.
+         (Optional) Enter a path to a specific Xcode developer directory (<code>/Applications/Xcode_10.0.0.app/Contents/Developer</code>). Specifying a path to a specific Xcode developer directory is useful when multiple versions of Xcode are installed on the agent machine.
       </td>
    </tr>
 </table>
@@ -234,7 +234,7 @@ xcode
    <tr>
       <td><code>args</code><br/>Arguments</td>
       <td>
-         (Optional) Enter additional command line arguments with which to build. This is useful for specifying <code>-target</code> or <code>-project</code> arguments instead of specifying a workspace/project and scheme. See <a href="https://developer.apple.com/library/archive/technotes/tn2339/_index.html" data-raw-source="[Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html)">Apple: Building from the command line with Xcode FAQ</a>.
+         (Optional) Enter additional command line arguments with which to build. Additional command line arguments useful for specifying <code>-target</code> or <code>-project</code> arguments instead of specifying a workspace/project and scheme. See <a href="https://developer.apple.com/library/archive/technotes/tn2339/_index.html" data-raw-source="[Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html)">Apple: Building from the command line with Xcode FAQ</a>.
       </td>
    </tr>
    <tr>
