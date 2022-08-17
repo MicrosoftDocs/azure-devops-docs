@@ -194,6 +194,7 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 | --- | --- | --- |
 | United States | Central United States | CUS |
 | Europe | Western Europe | WEU |
+| United Kingdom | United Kingdom South | UKS| 
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
 | Asia Pacific | South India | MA |
