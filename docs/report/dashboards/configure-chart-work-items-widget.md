@@ -30,7 +30,7 @@ The only task you can accomplish from the **Chart for Work Items** widget that y
  
 ## Prerequisites 
 
-Prerequisites to meet include having the necessary permissions and defining and saving a flat-list query under the **Shared Queries** folder. 
+Prerequisites to meet include having the necessary permissions, defining and saving a flat-list query under the **Shared Queries** folder, and creating the dashboard where you want to add the widget.  
  
 ### Permissions  
 
@@ -41,6 +41,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 - To save a query to a **Shared Queries** folder, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
 - To add a widget to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group.
 - To add a widget to a project dashboard, you must have created the dashboard or be granted permissions to edit the dashboard, or be a member of the **Project Administrators** security group.
+- To view a query-based widget added to a dashboard, you must have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -53,6 +54,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 - To save a query to a **Shared Queries** folder, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).  
 - To add a widget to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group. 
+- To view a query-based widget added to a dashboard, you must have **Read** permissions to the underlying query. If that permission has been denied, then the widget will display with a *Widget failed to load* message.
 ::: moniker-end
  
 To learn more about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md). 
@@ -76,6 +78,8 @@ To learn more about dashboard permissions, see [Set dashboard permissions](dashb
 	-  Date-time, such as Created Date, Changed Date 
 	-  Plain text, such as Title 
 	-  Rich-text, such as Description, Repro Steps 
+
+For additional guidelines, see [Create a flat-list query](charts.md#create-a-flat-list-query). 
 
 > [!TIP]   
 > If you start to configure a **Chart for Work Items** widget and then add the query you want to select, you must refresh your dashboard browser page in order to select the newly added query. 
@@ -109,11 +113,9 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
 ::: moniker-end
-
 	::: moniker range="> azure-devops-2019"
 	:::image type="content" source="media/chart-work-items/configure-chart-widget-2020.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2020 and later versions.":::
 	::: moniker-end
-
 	::: moniker range="azure-devops-2019"
 	:::image type="content" source="media/chart-work-items/configure-chart-widget.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2019.":::
 	::: moniker-end
@@ -124,15 +126,17 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
-
+	::: moniker range="> azure-devops-2019"
+	:::image type="content" source="media/chart-work-items/pivot-chart-type-state.png" alt-text="Chart for work items widget, Pivot on type and state example. ":::
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
-
+	::: moniker-end
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
 8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
 
 ::: moniker-end
-
 
 ::: moniker range="tfs-2018"
 
