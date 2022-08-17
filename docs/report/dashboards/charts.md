@@ -103,7 +103,7 @@ When creating a query to support your chart, follow these guidelines.
 	-  Tags (You can filter a query using tags, however you can't use tags to configure your chart).
 
 > [!NOTE]   
-> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.  
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard as described in []().  
 
 ::: moniker-end
 
