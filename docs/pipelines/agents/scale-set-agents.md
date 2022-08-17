@@ -117,7 +117,7 @@ In the following example, a new resource group and virtual machine scale set are
     Select any VM SKU and storage SKU.
 
     > [!NOTE]
-    > Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/main/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
+    > Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/runner-images/tree/main/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
 
 5. After creating your scale set, navigate to your scale set in the Azure portal and verify the following settings:
 
@@ -452,7 +452,7 @@ To delete the saved agent when you are done with your investigation, navigate to
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
-Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/main/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
+Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/runner-images/tree/main/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
 
 ### How do I configure scale set agents to run UI tests?
 
