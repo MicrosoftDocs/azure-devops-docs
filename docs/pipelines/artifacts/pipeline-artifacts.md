@@ -377,7 +377,7 @@ A: Pipeline artifacts are not deletable or overwritable. If you want to regenera
 
 #### Q: How can I access Artifacts feeds behind a firewall?
 
-A: If your organization is using a firewall or a proxy server, make sure your allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
+A: If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
 
 ## Related articles
 
