@@ -29,38 +29,58 @@ The only task you can accomplish from the **Chart for Work Items** widget that y
   
  
 ## Prerequisites
-
-By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-
-::: moniker range=">= azure-devops-2020"
-
-- To save a query to a **Shared Queries** folder, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
-- To add a widget to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group.
-- To add a widget to a project dashboard, you must have created the dashboard or be granted permissions to edit the dashboard, or be a member of the **Project Administrators** security group.
-::: moniker-end
-::: moniker range="azure-devops"
-> [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-
-- To save a query to a **Shared Queries** folder, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).  
-- To add a widget to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group. 
-
-::: moniker-end
  
-To learn more about dashbord permissions, see [Set dashboard permissions](dashboard-permissions.md) 
+- **Permissions** 
+	By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
-[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
+	::: moniker range=">= azure-devops-2020"
+
+	- To save a query to a **Shared Queries** folder, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
+	- To add a widget to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group.
+	- To add a widget to a project dashboard, you must have created the dashboard or be granted permissions to edit the dashboard, or be a member of the **Project Administrators** security group.
+	::: moniker-end
+
+	::: moniker range="azure-devops"
+	> [!NOTE]  
+	> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+
+	::: moniker-end
+
+	::: moniker range="< azure-devops-2020"
+
+	- To save a query to a **Shared Queries** folder, you must be granted permissions to save queries under a folder. To get permissions granted, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).  
+	- To add a widget to a team dashboard, you must be a member of the team or be a member of the **Project Administrators** security group. 
+
+	::: moniker-end
  
+	To learn more about dashboard permissions, see [Set dashboard permissions](dashboard-permissions.md) 
 
-<a id="add-chart-widget"></a> 
+- **Define and save a flat-list query**
+	Define a query that contains the work items you want to chart. 
+	When creating a query to support your chart, follow these guidelines. 
 
-## Add a chart widget to a dashboard   
- 
-If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a dashboard using the **Chart for work items** widget.  
+	- Always select the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a query, Define a flat-list query](../../boards/queries/using-queries.md#flat-list). 
+	- Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
+		- To group by Status, include the **State** field 
+		- To group by work assignments, include the **Assigned To** field
+		- To group by sprints or iterations, include the **Iteration Path**    
+		- To group by team, include the **Node Name** field that displays the leaf node of the Area Path 
+		- To group by a custom field, include it.  
+	- To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
+	- [Save your query as a **Shared query**](../../boards/queries/organize-queries.md).
+
+	- You can't group charts by the following field data types:
+		-  ID
+		-  Date-time, such as Created Date, Changed Date 
+		-  Plain text, such as Title 
+		-  Rich-text, such as Description, Repro Steps 
+
+> [!TIP]   
+> If you start to configure a Chart for Work Items widget and then add the query you want to select, you must refresh your dashboard browser page in order to select the newly added query. 
+
+<a name="add-chart-widget"></a> 
+
+## Add the Chart for Work Items widget to a dashboard   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -113,7 +133,7 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" /> 
 
-5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
+5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type. For guidance on choosing the chart type, see [Track progress with status and trend query-based charts ](charts.md).   
 
 	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
 
@@ -132,12 +152,12 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 ::: moniker range=">= azure-devops-2022"
 
-<a id="group-by-tags"></a> 
+<a name="group-by-tags"></a> 
 
 ## Group by Tags chart 
 
 > [!NOTE]   
-> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.  
 
 To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, select **Tags** for the **Group by** selection. To filter the chart to show only some tags, select the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
