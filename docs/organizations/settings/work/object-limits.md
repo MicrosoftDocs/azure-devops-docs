@@ -144,7 +144,7 @@ The following table lists the maximum number of objects that you can define for 
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |
 | Fields defined for a work item type                 |        1024 |       1024 |
-| Picklists defined for an organization or collection |        1024 |          - |
+| Picklists defined for an organization or collection |        2048 |          - |
 | Picklist items defined for a list                   |        2048 |       2048 |
 | Picklist item character length                      |         256 |          - |
 | Workflow states defined for a work item type        |          32 |         16 |
