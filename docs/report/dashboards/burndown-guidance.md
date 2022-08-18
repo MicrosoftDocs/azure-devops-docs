@@ -15,6 +15,18 @@ ms.date: 09/27/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+::: moniker range=">= azure-devops-2019"
+There are several burndown charts supported for Azure Devops. These include the following configurable charts and widgets. 
+
+- Burndown/burnup widget (Analytics)
+- Sprint burndown built-in report (Analytics)
+- Sprint burndown widget (Analytics)
+- Sprint burndown widget (Legacy) (Work item store) 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 
 > [!div class="checklist"]   
@@ -22,8 +34,30 @@ Review your sprint burndown chart throughout your sprint cycle to check for thes
 > * Is remaining work increasing instead of decreasing? Increases can indicate work that wasn't estimated or planned. Both signal a need for the team to discuss how they'll complete the sprint tasks on time.  
 > * Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?    
 
+You can view sprint burndown  from your team's sprint backlog built-in report or by adding the Sprint burndown widget to a team dashboard.
+
 
 To configure or view sprint burndown charts, see [Sprint burndown](configure-sprint-burndown.md).
+ 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+## Supported configuration options
+
+The following table summarizes the configuration options supported by the various burndown chart options. 
+
+| Configuration | Sprint burndown report | Sprint burndown widget |Burndown/Burnup widget |  
+|---------------|-----------------|------------------------|  
+|Team(s)        | Single team | Single team |  One or more teams |  
+|Backlog        | Product backlog<br/>Task backlog | Product backlog<br/>Portfolio backlog<br/>work item type | Product backlog<br/>Portfolio backlog<br/>work item type |  
+| Work item field filters  | None | None | Supported  |  
+|Burdown focus  | Count or Sum | Count or Sum | Count or Sum |  
+|Time period    | Single sprint | Single sprint | Configurable |   
+
+::: moniker-end
+
+
 
 
 <a id="scope-management">  </a>
@@ -67,12 +101,6 @@ As the team makes progress, divergences from the ideal trend line help the team 
    - Poor estimates made to tasks
    - Discovery of new work not accounted for in sprint planning
    - Scope creep, other work not agreed to by the team.
-   
-   Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.
-
-
-   Solutions may include reassigning tasks or recruiting more resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.
-
    :::column-end:::
    :::column span="3":::
    
@@ -81,7 +109,9 @@ As the team makes progress, divergences from the ideal trend line help the team 
    :::column-end:::
 :::row-end:::
 
+Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.
 
+Solutions may include reassigning tasks or recruiting more resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.
 
 ::: moniker-end
 
