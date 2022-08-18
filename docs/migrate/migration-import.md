@@ -467,6 +467,7 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 | --- | --- |
 | Central United States | Central United States |
 | Western Europe | Western Europe |
+| United Kingdom | United Kingdom South | 
 | Australia East | Australia East |
 | Brazil South | Brazil South |
 | India South | India South |
