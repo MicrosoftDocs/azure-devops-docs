@@ -49,7 +49,7 @@ Azure Pipelines has an existing integration with ServiceNow. The integration rel
 
 Recently, we [announced](/azure/devops/release-notes/2021/sprint-187-update#change-in-net-sdk-preinstallation-policy-on-microsoft-hosted-ubuntu-agents) a change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents. We are now making the same change for Microsoft-hosted Windows and macOS agents.
 
-Currently, we install all available and supported versions of the .NET SDK (2.1.x, 3.1.x, 5.0.x) on Microsoft-hosted Windows and macOS agents. This approach will be changed in favor of installing the latest patch version for every feature version. This change is being made to provide you with more free space and for new tool requests. For more information, see our [software and image guidelines](https://github.com/actions/virtual-environments/blob/main/docs/software-and-images-guidelines.md).
+Currently, we install all available and supported versions of the .NET SDK (2.1.x, 3.1.x, 5.0.x) on Microsoft-hosted Windows and macOS agents. This approach will be changed in favor of installing the latest patch version for every feature version. This change is being made to provide you with more free space and for new tool requests.
 
 #### What does it mean?
 
