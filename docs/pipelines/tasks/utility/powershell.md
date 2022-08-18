@@ -42,6 +42,7 @@ The PowerShell task also has two shortcuts in YAML:
   informationPreference:  #
   verbosePreference:  #
   debugPreference:  #
+  progressPreference: #
   ignoreLASTEXITCODE:  #
   env:  # mapping of environment variables to add
 ```
@@ -56,6 +57,7 @@ The PowerShell task also has two shortcuts in YAML:
   informationPreference:  #
   verbosePreference:  #
   debugPreference:  #
+  progressPreference: #
   ignoreLASTEXITCODE:  #
   env:  # mapping of environment variables to add
 ```
@@ -83,6 +85,7 @@ Both of these shortcuts resolve to the `PowerShell@2` task.
 <tr><td><code>informationPreference</code><br/>InformationPreference</td><td>(Optional) When not "default", prepends the line <code>$InformationPreference = 'VALUE'</code> at the top of your script<br/>Default value: default</td></tr>
 <tr><td><code>verbosePreference</code><br/>VerbosePreference</td><td>(Optional) When not "default", prepends the line <code>$VerbosePreference = 'VALUE'</code> at the top of your script<br/>Default value: default</td></tr>
 <tr><td><code>debugPreference</code><br/>DebugPreference</td><td>(Optional) When not "default", prepends the line <code>$DebugPreference = 'VALUE'</code> at the top of your script<br/>Default value: default</td></tr>
+<tr><td><code>progressPreference</code><br/>ProgressPreference</td><td>(Optional) When not "default", prepends the line <code>$ProgressPreference = 'VALUE'</code> at the top of your script<br/>Default value: silentlyContinue</td></tr>
 <tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this value is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>
 <tr><td><code>ignoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td><td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This change will cause the last exit code from an external command to be propagated as the exit code of PowerShell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td></tr>
 <tr><td><code>pwsh</code><br/>Use PowerShell Core</td><td>(Optional) If this value is true, then on Windows the task will use pwsh.exe from your PATH instead of powershell.exe<br/>Default value: false</td></tr>

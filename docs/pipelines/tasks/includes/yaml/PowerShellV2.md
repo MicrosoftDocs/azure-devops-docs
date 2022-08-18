@@ -19,6 +19,7 @@ ms.technology: devops-cicd-tasks
     #informationPreference: 'default' # Optional. Options: default, stop, continue, silentlyContinue
     #verbosePreference: 'default' # Optional. Options: default, stop, continue, silentlyContinue
     #debugPreference: 'default' # Optional. Options: default, stop, continue, silentlyContinue
+    #progressPreference: 'silentlyContinue' # Optional. Options: default, stop, continue, silentlyContinue
     #failOnStderr: false # Optional
     #ignoreLASTEXITCODE: false # Optional
     #pwsh: false # Optional
