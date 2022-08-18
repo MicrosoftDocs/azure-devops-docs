@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents
 
-We are changing the .NET SDK versions that are pre-installed on Microsoft-hosted Ubuntu agents. Currently, we install all available and supported versions of .NET SDK (2.1.x, 3.1.x, 5.0.x). This approach will be changed in favor of installing the latest patch version for every feature version. This change is being made to provide you with more free space and for new tool requests. For more information, see our [software and image guidelines](https://github.com/actions/virtual-environments/blob/main/docs/software-and-images-guidelines.md).
+We are changing the .NET SDK versions that are pre-installed on Microsoft-hosted Ubuntu agents. Currently, we install all available and supported versions of .NET SDK (2.1.x, 3.1.x, 5.0.x). This approach will be changed in favor of installing the latest patch version for every feature version. This change is being made to provide you with more free space and for new tool requests.
 
 #### What does it mean?
 
