@@ -76,7 +76,7 @@ If you're not going to continue to use this application, delete your pipeline an
 
 ### What pre-cached images are available on hosted agents?
 
-Some commonly used images are pre-cached on Microsoft-hosted agents to avoid long time intervals spent in pulling these images from the container registry for every job. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/virtual-environments/releases) repository.
+Some commonly used images are pre-cached on Microsoft-hosted agents to avoid long time intervals spent in pulling these images from the container registry for every job. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/runner-images/releases) repository.
 
 ### How do I set the BuildKit variable for my docker builds?
 
