@@ -71,11 +71,6 @@ If you want to add the chart to a dashboard, then you need to save the query und
 
 ::: moniker-end
 
-> [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-
-::: moniker-end
-
 ::: moniker range="< azure-devops-2020"
 
 - To create a query chart, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -167,7 +162,7 @@ When a chart contains more than seven items within the data series, values in th
 
 ## Chart availability
 
-- Charts saved under **Shared Queries** are viewable by all team members, except members with Stakeholder access, and can be added to dashboards.   
+- Charts saved under **Shared Queries** are viewable by all team members, except members with **Stakeholder** access, and can be added to dashboards.   
 - Charts that you create for queries under your **My Queries** folder are visible only to you.   
 - You can copy and email the URL of any chart page to share it with a project member. 
 - To create similar charts for tests, see [Track test status](../../test/track-test-status.md).
@@ -185,7 +180,7 @@ When a chart contains more than seven items within the data series, values in th
    <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link." />  
    ::: moniker-end  
 
-	If you have Stakeholder access, the **Charts** and **New Chart** links won't appear. 
+	If you have **Stakeholder** access, the **Charts** and **New Chart** links won't appear. 
 
 2. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
    ::: moniker range=">= azure-devops-2019"  
@@ -300,19 +295,23 @@ In addition to query-based burndown charts, you can [Configure a Burndown or Bur
 
 ## Add chart to a dashboard 
 
-To add a chart to a dashboard, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
+A chart added to a dashboard is added through the addition of a **Chart for Work Items** widget. You can add the chart to a dashboard as shown in the following procedure, or by adding the **Chart for Work Items** widget directly. To learn more, see [Configure a chart for work items widget](configure-chart-work-items-widget.md). 
 
-Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.  
+> [!TIP]    
+> All query charts are limited in size. However, charts added to a dashboard can be re-sized and re-configured by opening the **Chart for Work Items** widget used to display them.  
+
+- Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Chart context menu, Add to dashboard option](media/charts/add-chart-to-dashboard-qe.png)   
 
-In the dialog that opens, select the team dashboard to add the chart to. 
+The **Add to dashboard** menu option is only available for queries that have been saved to a **Shared Queries** folder. 
+
+In the dialog that opens, select the dashboard to add the chart to. 
 
 > [!div class="mx-imgBorder"]  
 > ![Select a dashboard dialog](media/charts/select-dashboard-dialog.png)  
-
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
@@ -320,8 +319,6 @@ In the dialog that opens, select the team dashboard to add the chart to.
 ::: moniker-end  
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
-
-
 
 ::: moniker range="< azure-devops-2022"
 
