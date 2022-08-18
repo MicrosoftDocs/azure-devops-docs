@@ -491,9 +491,9 @@
     - name: npm
       href: artifacts/npm.md
       displayName: npm, package
-    - name: Maven
+    - name: Gradle
       href: artifacts/pull-package-gradle.md
-      displayName: maven, package
+      displayName: Gradle, package
     - name: Python
       href: artifacts/pypi.md
       displayName: python, package
