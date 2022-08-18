@@ -113,12 +113,12 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
 ::: moniker-end
-	::: moniker range="> azure-devops-2019"
+::: moniker range="> azure-devops-2019"
 	:::image type="content" source="media/chart-work-items/configure-chart-widget-2020.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2020 and later versions.":::
-	::: moniker-end
-	::: moniker range="azure-devops-2019"
+::: moniker-end
+::: moniker range="azure-devops-2019"
 	:::image type="content" source="media/chart-work-items/configure-chart-widget.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2019.":::
-	::: moniker-end
+::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
 
@@ -126,16 +126,17 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
-	::: moniker range="> azure-devops-2019"
+::: moniker-end
+::: moniker range="> azure-devops-2019"
 	:::image type="content" source="media/chart-work-items/pivot-chart-type-state.png" alt-text="Chart for work items widget, Pivot on type and state example. ":::
-	::: moniker-end
-	::: moniker range="azure-devops-2019"
+::: moniker-end
+::: moniker range="azure-devops-2019"
 	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
-	::: moniker-end
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
 8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
-
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
