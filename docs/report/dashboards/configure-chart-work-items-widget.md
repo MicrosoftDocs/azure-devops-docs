@@ -17,12 +17,7 @@ ms.date: 08/17/2022
 
 The **Chart for Work Items** widget lets you select any flat-list query and configure it to support any of the supported chart types. The steps you take to configure this widget are very similar to those you take to configure a query-based chart.  
 
-To view a chart on a dashboard, you can start from **Queries>Charts** page and choose to add the chart to the dashboard. Charts added to the dashboard show up as a **Chart for Work Items** widget that you can relabel, resize, and reconfigure. Or, you can add a **Chart for Work Items** widget, select the query, and configure the chart as normal.  
-
-No matter where you start, you must : 
-- Define a [flat-list query](../../boards/queries/using-queries.md)   
-- Save the query under a Shared Queries folder 
- 
+To view a chart on a dashboard, you can start from **Queries>Charts** page and choose to add the chart to the dashboard. Charts added to the dashboard show up as a **Chart for Work Items** widget that you can relabel, resize, and reconfigure. Or, you can add a **Chart for Work Items** widget, select the query, and configure the chart as normal. 
 ::: moniker range=">= azure-devops-2022"
 The only task you can accomplish from the **Chart for Work Items** widget that you can't from the **Queries>Charts** page is grouping work items by Tags. This feature is supported for Azure DevOps server 2022 and later versions. 
 ::: moniker-end
@@ -73,12 +68,6 @@ To learn more about dashboard permissions, see [Set dashboard permissions](dashb
 - To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
 - [Save your query as a **Shared query**](../../boards/queries/organize-queries.md).
 
-- You can't group charts by the following field data types:
-	-  ID
-	-  Date-time, such as Created Date, Changed Date 
-	-  Plain text, such as Title 
-	-  Rich-text, such as Description, Repro Steps 
-
 For additional guidelines, see [Create a flat-list query](charts.md#create-a-flat-list-query). 
 
 > [!TIP]   
@@ -92,7 +81,7 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 ## Add the Chart for Work Items widget to a dashboard   
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="> azure-devops-2019"
 
 1. From the web portal, open the dashboard you want to add the chart to.  
 
@@ -112,32 +101,61 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 	The Configuration dialog opens. 
 
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
-::: moniker-end
-::: moniker range="> azure-devops-2019"
+
 	:::image type="content" source="media/chart-work-items/configure-chart-widget-2020.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2020 and later versions.":::
-::: moniker-end
-::: moniker range="azure-devops-2019"
-	:::image type="content" source="media/chart-work-items/configure-chart-widget.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2019.":::
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
+
 	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
 
 	> [!NOTE]  
 	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
-::: moniker-end
-::: moniker range="> azure-devops-2019"
+
 	:::image type="content" source="media/chart-work-items/pivot-chart-type-state.png" alt-text="Chart for work items widget, Pivot on type and state example. ":::
-::: moniker-end
-::: moniker range="azure-devops-2019"
-	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
+
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
 8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
 ::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. From the web portal, open the dashboard you want to add the chart to.  
+
+2. To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to open the widget catalog.  
+
+	> [!NOTE]   
+	> If you don't see the :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** option, then you need to [get permissions to edit the dashboard](dashboard-permissions.md). 
+
+3. Select the **Chart for Work Items** widget and then select **Add** or drag it onto the dashboard.    
+
+	![Web portal, Dashboards page, Widget catalog, Chart for work items widget](media/widget-chart-work-query.png) 
+
+4. To configure the widget, select the widget's :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** and choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: **Configure** option.  
+
+	:::image type="content" source="media/chart-work-items/widget-more-actions-menu.png" alt-text="Screenshot of dashboard widget More actions menu options.":::
+
+	The Configuration dialog opens. 
+
+5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
+
+	:::image type="content" source="media/chart-work-items/configure-chart-widget.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2019.":::
+
+	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
+
+	> [!NOTE]  
+	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
+
+6. After you save your changes, you'll see the new chart has been added to the dashboard. 
+
+	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
+
+7. Drag the tile anywhere on the dashboard to put it where you want it. 
+
+8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
+::: moniker-end
+
+
 
 ::: moniker range="tfs-2018"
 
@@ -171,6 +189,9 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 8. When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
 
 ::: moniker-end
+
+> [!TIP]  
+> If the chart doesn't display all the rows or columns you want, try changing the chart **Height** and **Width**. Pivot tables and other chart types will display more data based on the area provided on the dashboard.  
 
 ::: moniker range=">= azure-devops-2022"
 
