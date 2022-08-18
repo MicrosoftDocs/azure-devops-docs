@@ -56,20 +56,7 @@ To learn more about dashboard permissions, see [Set dashboard permissions](dashb
 
 ### Define and save a flat-list query 
 
- From the **Chart for Work Items** widget, you select the query that contains the work items you want to chart. When creating a query to support your chart, follow these guidelines. 
-
-- Always select the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a query, Define a flat-list query](../../boards/queries/using-queries.md#flat-list). 
-- Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
-	- To group by Status, include the **State** field 
-	- To group by work assignments, include the **Assigned To** field
-	- To group by sprints or iterations, include the **Iteration Path**    
-	- To group by team, include the **Node Name** field that displays the leaf node of the Area Path 
-	- To group by a custom field, include it.  
-- To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
-- [Save your query as a **Shared query**](../../boards/queries/organize-queries.md).
-
-For additional guidelines, see [Create a flat-list query](charts.md#create-a-flat-list-query). 
-
+From the **Chart for Work Items** widget, you select the query that contains the work items you want to chart. When creating a query to support your chart, follow the guidelines provided in [Create a flat-list query](charts.md#create-a-flat-list-query).  
 > [!TIP]   
 > If you start to configure a **Chart for Work Items** widget and then add the query you want to select, you must refresh your dashboard browser page in order to select the newly added query. 
 
@@ -100,19 +87,20 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 	The Configuration dialog opens. 
 
+5. Enter a **Title**, select the **Width** and **Height**, and then select the flat-list **Query** on which the chart is based. Next, choose the **Chart type**.   
+
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
 
 	:::image type="content" source="media/chart-work-items/configure-chart-widget-2020.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2020 and later versions.":::
 
-	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
-
-	> [!NOTE]  
-	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
+	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown. For additional guidance on choosing and configuring specific chart types, see [Track progress with status and trend query-based charts](charts.md).
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
 
 	:::image type="content" source="media/chart-work-items/pivot-chart-type-state.png" alt-text="Chart for work items widget, Pivot on type and state example. ":::
 
+	> [!TIP]  
+	> If the chart doesn't display all the rows or columns you want, try changing the chart **Width** and **Height**. Pivot tables and other chart types will display more data based on the area provided on the dashboard.  
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
 8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
@@ -137,18 +125,18 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 	The Configuration dialog opens. 
 
-5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
+5. Enter a **Title**, select the **Size**, and then select the flat-list **Query** on which the chart is based. Next, choose the **Chart type**.   
 
 	:::image type="content" source="media/chart-work-items/configure-chart-widget.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2019.":::
 
-	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown.   
-
-	> [!NOTE]  
-	> All rules for configuring charts described previously in this article apply to configuring the chart for work items widget. 
+	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown. For additional guidance on choosing and configuring specific chart types, see [Track progress with status and trend query-based charts](charts.md).
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
 
 	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
+
+	> [!TIP]  
+	> If the chart doesn't display all the rows or columns you want, try changing the chart **Size**. Pivot tables and other chart types will display more data based on the area provided on the dashboard.  
 
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
@@ -184,14 +172,16 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 	![Chart of work items widget, configure dialog](media/charts-chart-wit-widget-configured.png)  
 
+	> [!TIP]  
+	> If the chart doesn't display all the rows or columns you want, try changing the chart **Size**. Pivot tables and other chart types will display more data based on the area provided on the dashboard.  
+
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
 8. When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
 
 ::: moniker-end
 
-> [!TIP]  
-> If the chart doesn't display all the rows or columns you want, try changing the chart **Height** and **Width**. Pivot tables and other chart types will display more data based on the area provided on the dashboard.  
+
 
 ::: moniker range=">= azure-devops-2022"
 
