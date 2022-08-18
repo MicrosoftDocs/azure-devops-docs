@@ -58,6 +58,28 @@ The following table summarizes the configuration options supported by the variou
 ::: moniker-end
 
 
+::: moniker range=">= azure-devops-2019"
+
+## General guidance 
+
+Depending on the work items and time perioud you want to monitor, consider the following guidance.    
+
+| Monitor | Chart option |  
+|---------|---------------|  
+| Sprint scope for a team | Sprint burndown chart |  
+| Monitor sprint burndown for a specific work item type or a porfolio backlog | Sprint burndown widget |  
+| Sprint scope for several teams | Burndown widget | 
+| Release burndown for one or more teams | Burndown widget | 
+| Burnup or burndown on any work item type | Burndown/Burnup widget | 
+
+> [!TIP]    
+> Analytics-based charts are built based on the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a Burndown/Burnup widget based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the widget until the date on which they are applied.  
+
+Things to look for: 
+- Work added after the start of a sprint or planning period
+- 
+
+::: moniker-end
 
 
 <a id="scope-management">  </a>
