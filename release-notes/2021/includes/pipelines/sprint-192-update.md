@@ -75,8 +75,6 @@ When you reference windows-latest pool in your YAML pipelines, it will still mea
 
 The Windows Server 2022 pipeline image has different tools and tool versions when compared to Windows Server 2019. You can see the details in the software [announcement issue](https://github.com/actions/virtual-environments/issues/3949) and in the documentation [virtual-environments repository](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md).
 
-If you find any issues with your pipelines when using Windows Server 2022, please let us know by creating an issue in the [virtual-environments repository](https://github.com/actions/virtual-environments/blob/main/docs/software-and-images-guidelines.md).
-
 ### General availability of macOS 11 on Microsoft-hosted agents
 
 macOS 11 is now generally available on Microsoft-hosted agents. You can use it by referencing `macos-11` as image in your pipeline.
@@ -87,8 +85,6 @@ pool:
 ```
 
 The macOS 11 pipeline image has different tools and tool, to learn more about this version you can see the full documentation [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md).
-
-If you find any issues with your pipelines when using macOS 11, please let us know by creating an issue in the [virtual-environments repository](https://github.com/actions/virtual-environments/blob/main/docs/software-and-images-guidelines.md).
 
 ### Removal of Ubuntu 16.04 image on Microsoft-hosted agents
 
