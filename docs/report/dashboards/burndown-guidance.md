@@ -16,7 +16,14 @@ ms.date: 09/27/2021
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range=">= azure-devops-2019"
-There are several burndown charts supported for Azure Devops. These include the following configurable charts and widgets. 
+
+Burndown and burnup charts support project management to visually track work completed over time. The main differences between the two chart types are: 
+- Burndown charts begin with the total amount of planned work and then as work is completed graphs the remaining work. With the progression of time, the amount of to-do work decreases. 
+- Burnup charts track work as it is completed over time. 
+
+In general, burndown charts should show a downward trend. However, if teams add work through a sprint or planning period, then the chart will show an upward trend. 
+
+In general, burndown charts help teams monitor what they planned to do versus what they actually do. Burnup charts There are several burndown charts supported for Azure Devops. These include the following configurable charts and widgets. 
 
 - Burndown/burnup widget (Analytics)
 - Sprint burndown built-in report (Analytics)
@@ -55,6 +62,17 @@ The following table summarizes the configuration options supported by the variou
 |Burdown focus  | Count or Sum | Count or Sum | Count or Sum |  
 |Time period    | Single sprint | Single sprint | Configurable |   
 
+When choosing work item fields to filter a Burndown/Burnup widget note the following: 
+- All filter clauses are subject to AND logic 
+- No Date, HTML fields are available for filtering 
+- Something  about the category state of Closed 
+- The chart considers the field assignment as it was defined for the work item on the date  
+
+> [!TIP]    
+> Analytics-based charts are built based on the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a Burndown/Burnup widget based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the widget until the date on which they are applied.  
+
+
+
 ::: moniker-end
 
 
@@ -66,19 +84,26 @@ Depending on the work items and time perioud you want to monitor, consider the f
 
 | Monitor | Chart option |  
 |---------|---------------|  
-| Sprint scope for a team | Sprint burndown chart |  
-| Monitor sprint burndown for a specific work item type or a porfolio backlog | Sprint burndown widget |  
-| Sprint scope for several teams | Burndown widget | 
+| Sprint burndown for a team | Sprint burndown chart |  
+| Sprint burndown for a specific work item type or a porfolio backlog | Sprint burndown widget |  
+| Sprint burndown for several teams | Burndown widget | 
 | Release burndown for one or more teams | Burndown widget | 
-| Burnup or burndown on any work item type | Burndown/Burnup widget | 
-
-> [!TIP]    
-> Analytics-based charts are built based on the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a Burndown/Burnup widget based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the widget until the date on which they are applied.  
+| Burnup or burndown for any type of work item and time period | Burndown/Burnup widget | 
+| Project and target completion date | Burndown/Burnup widget | 
 
 Things to look for: 
-- Work added after the start of a sprint or planning period
-- 
+- Scope creep: work added after the start of a sprint or planning period
+- Above the trend line: 
+- Below the trend line:  
+- Total scope line  ... 
+- Stalled or flat areas 
 
+
+
+- Sprint charts can help teams review how efficient they are in planning and executing sprint over sprint. 
+- Some note on Total Scope (not always helpful) 
+- 
+- 
 ::: moniker-end
 
 
