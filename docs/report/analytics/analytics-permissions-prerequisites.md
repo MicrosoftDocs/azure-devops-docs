@@ -78,17 +78,75 @@ The following table summarizes the permissions available to be set and the defau
 |**Edit and delete shared Analytics views**  | | |✔️|  
  
 
-## Additional prerequisites 
+## Data tracking prerequisites 
 
-To capture meaningful data requires performing meaningful actions on the part of software teams. 
+To capture meaningful data requires software teams to perform meaningful actions. The following sections provide general recommendations based on the type of data you want to report on. 
 
-<!--- Say more 
-Make some info about rate limiting and best practices--> 
+::: moniker range=">= azure-devops-2020" 
+> [!NOTE]   
+> Branch, Pipeline, and Test EntityTypes and EntitySets are supported with Analytics **v3.0-preview** and later versions. Snapshot EntityTypes to support pipeline jobs, task agent requests, and task agent pool size were added with Analytics **v4.0-preview** version. Make sure you specify the Analytics version that supports the EntityType of interest. 
+
+To understand what properties and enumerated list values you can filter or group data by, [explore the Analytics metadata](query-parts.md) for the corresponding EntityType.  
+
+::: moniker-end
+
+### Azure Boards and work tracking
+
+For a review of available EntityTypes to query, see [Data model-Work tracking EntityTypes and EntitySets](../extend-analytics/data-model-analytics-service.md#work-tracking-entitytypes-and-entitysets). 
+
+To report on work tracking, teams need to perform several tasks to ensure meaningful data is available. The following items are a summary of tasks to review. 
+- To report on active bugs or bug trends, define bugs and update the bug **State**  as it is fixed, verified, and then closed. 
+- To report on backlog work or other work item types, make sure you define those work items and update their **State** as it moves from new to closed. Consider whatever fields or tags you'll use to filter or group data in a report and make sure that is well defined and consistent. 
+- To support rollup reports, ensure parent-child links exist between product backlog items and tasks/bugs or parent-child links exist between features or portfolio backlog work items and their child items. To learn more, see [Organize your backlog and map child work items to parents](../../boards/backlogs/organize-backlog.md). 
+- To create burndown or burnup reports, such as [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) or [Release burndown](../powerbi/sample-boards-releaseburndown.md), ensure you have thought through how you want to filter and group data in your report. Burndown/burnup reports reference the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a burndown/burnup report based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the report until the date on which they are applied.
+- To support [Requirements tracking](../powerbi/sample-stories-overview.md), define test cases, and create a **Tested By** link from each test case to a user story, product backlog item, or requirement. 
+Define test cases and link test cases to their parent PBIs using the Tested By link. See Create your tests.
+- (Recommended) Assign **Area Path** and **Iteration Path** to all work items. For information about how to define iteration and area paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) or [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) .  
+
+> [!NOTE]   
+> All custom fields added to a work item type are available for use in reports. Custom fields are labeled with *Custom_DisplayNameOfField*, where all spaces have been removed from the display name. 
+
+::: moniker range=">= azure-devops-2020" 
+
+### Test Plans 
+
+To review test plan progress and test case readiness, teams need to perform the following activities. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md] and [Create test cases](../../test/create-test-cases.md).
+- Define test cases, test plans, and test suites, and specify their current state.
+- Update the **State** of test objects as they progress from *Design* to *Ready* to *Closed*.
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
+	> [!TIP]    
+	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.
+- For automated tests, each test is automatically marked as passed or failed.
+- (Recommended) Assign **Area Path** and **Iteration Path** to test cases, test suites and test plans.
+ 
+
+### Pipelines 
+
+To report on pipelines, teams need to perform several activities. To learn more, see [Key concepts for new Azure Pipelines users](../../pipelines/get-started/key-pipelines-concepts.md).
+
+- Define pipelines using YAML and run pipelines regularly.  
+- Consider which pipelines you want to report on and the date range of your report. You'll want to filter your data so as to meet [query best practices](analytics-best-practices.md) and minimize any performance issues.
+- Consider what data you want to report on and choose the correct EntityType. For a review of available EntityTypes to query, see [Data model-Branch, Pipelines, and Test EntityTypes and EntitySets](../extend-analytics/data-model-analytics-service.md#branch-pipelines-and-test-entitytypes-and-entitysets). 
+
+ 
+
+### Pipelines and Test 
+
+To report on pipelines and tests results, make sure you add test tasks to the pipeline definition. To learn more, see [Build and release tasks-Test](../../pipelines/tasks.md#test). 
+
+If you're just getting started, consider reviewing this learn module, 
+[Run quality tests in your build pipeline by using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline).
+
+::: moniker-end
+
 
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
 - [Default permissions quick reference for Azure DevOps](../../organizations/security/permissions-access.md)
+- [Best practices to use when querying the Analytics service](analytics-best-practices.md) 
+
+
 
  
 

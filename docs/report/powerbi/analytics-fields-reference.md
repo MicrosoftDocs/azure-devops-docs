@@ -1,5 +1,5 @@
 ---
-title: Analytics work item fields reference
+title: Work tracking properties reference for Analytics 
 titleSuffix: Azure DevOps
 description: Work item fields available from the Analytics service
 ms.technology: devops-analytics
