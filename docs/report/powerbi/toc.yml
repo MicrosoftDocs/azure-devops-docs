@@ -160,7 +160,7 @@ items:
   items:
   - name: Data model for Analytics
     href: ../extend-analytics/data-model-analytics-service.md
-  - name: Explore Analytics metadata
+  - name: Analytics OData metadata
     href: ../extend-analytics/analytics-metadata.md
   - name: Work tracking properties reference   
     href: ../powerbi/analytics-fields-reference.md
