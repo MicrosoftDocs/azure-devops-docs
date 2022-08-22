@@ -8,11 +8,11 @@ ms.topic: include
 
 ### Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents
 
-We are changing the .NET SDK versions that are pre-installed on Microsoft-hosted Ubuntu agents. Currently, we install all available and supported versions of .NET SDK (2.1.x, 3.1.x, 5.0.x). This approach will be changed in favor of installing the latest patch version for every feature version. This change is being made to provide you with more free space and for new tool requests.
+We're changing the .NET SDK versions that are pre-installed on Microsoft-hosted Ubuntu agents. Currently, we install all available and supported versions of .NET SDK (2.1.x, 3.1.x, 5.0.x). This approach will be changed in favor of installing the latest patch version for every feature version. This change is being made to provide you with more free space and for new tool requests.
 
 #### What does it mean?
 
-The SDK version is composed of the following parts: `x.y.znn`. `z` is the feature version and `nn` is the patch version. For example, for 2.1.302, the feature version is 3, and 02 is the patch version. According to the new approach, we will only install the latest patch version for every feature version, i.e. only 2.1.302 will be installed for 2.1.3x, only 2.1.403 for 2.1.4x and so on. All versions of the .NET SDK that are not the latest patch versions will be removed from Ubuntu images on June 14. This change impacts all the versions of Ubuntu on Microsoft-hosted agents.
+The SDK version is composed of the following parts: `x.y.znn`. `z` is the feature version and `nn` is the patch version. For example, for 2.1.302, the feature version is 3, and 02 is the patch version. According to the new approach, we'll only install the latest patch version for every feature version, i.e. only 2.1.302 will be installed for 2.1.3x, only 2.1.403 for 2.1.4x and so on. All versions of the .NET SDK that aren't the latest patch versions will be removed from Ubuntu images on June 14. This change impacts all the versions of Ubuntu on Microsoft-hosted agents.
 
 #### Target date
 
@@ -22,7 +22,7 @@ Deployment of updated images will start June 14 and will take 3-4 days.
 
 If you use a [global.json file](/dotnet/core/tools/global-json), your build will be affected in the following cases:
 
-Your build will fail, if the global.json file contains the `rollForward: disable` property and SDK version that is not the latest patch version. For example:
+Your build will fail, if the global.json file contains the `rollForward: disable` property and SDK version that isn't the latest patch version. For example:
 ```
 {
   "sdk": {
@@ -44,7 +44,7 @@ Your build will fail, if the global.json file contains the `rollForward: disable
 
 If the `rollForward` field is not specified in your global.json file, there will be no change for you. The latest installed patch level is used.
 
-If you need to use the exact .NET SDK version that is not the latest patch, please use [`UseDotNet` task](/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer) to install it as part of the build:
+If you need to use the exact .NET SDK version that isn't the latest patch, please use [`UseDotNet` task](/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer) to install it as part of the build:
 
 ``` YAML
 steps:
