@@ -29,7 +29,7 @@ To track the progress of more than one test plan or test suite, use the Progress
 > - Report data is updated approximately every 15 minutes. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in the report. 
 > - Data for test plans migrated from an on-premises Azure DevOps server won't show up in this report.
 > - Percentage Data will not display the decimal values in this report.
-> - Some Outcomes are not identified on the Details section even though they contribute to the "Run%" column. Test Cases with Outcome "Blocked","Not Applicable" and in the paused state are not reflected on the "Passed%" or "Failed%". If you have Test Cases with these Outcomes there will be a difference between the "Run%" and the "Passed%" + "Failed%" sum. The "Not Run" column only counts Test Cases that are showing as "Active" in the current Outcome. You can use the report filters to fine tune the results."   
+> - Some Outcomes are not identified on the Details section even though they contribute to the "Run%" column. Test Cases with Outcome "Blocked", "Not Applicable", and in the paused state are not reflected on the "Passed%" or "Failed%". If you have Test Cases with these Outcomes there will be a difference between the "Run%" and the "Passed%" + "Failed%" sum. The "Not Run" column only counts Test Cases that are showing as "Active" in the current Outcome. You can use the report filters to fine tune the results.   
 
 
 ## Prerequisites
