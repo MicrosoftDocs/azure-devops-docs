@@ -103,7 +103,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 <a id="command-line-only" />
 
-## Operations available only from the tf ommand-Line  
+## Operations available only from the tf Command-Line  
 
 The following table lists tasks for Team Foundation version control that you can perform only at a command prompt using the **tf** command line tool.
 
