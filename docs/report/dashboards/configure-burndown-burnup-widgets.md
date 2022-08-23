@@ -139,13 +139,18 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../powerbi/analytics-historical-filtering.md) for more information.
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
-	You can filter by any field available in your project, even a specific tag. Boolean fields aren't available for selection. For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
+	- You can filter by any field available in your project, even a specific tag. For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.   
+	- Boolean fields aren't available for selection. 
+	- No Date, HTML fields are available for filtering
+	- Filtering is based on values assigned to fields as defined for each work item on the date within the tracking period.  
+	- All field criteria are AND-ed together. That is, work items must match all the field criteria to be included in the burndown or burnup chart.   
 	![Burndown Widget - Configuration - Select field criteria](./media/burndown-widget/burndownup-config-select-field-criteria.png)  
 	You may add multiple field criteria, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
 	![Burndown Widget - Configuration - Select multiple field criteria](media/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
    
 	> [!NOTE]  
-	> All field criteria are AND-ed together. That is, work items must match all the field criteria to be included in the burndown or burnup chart.
+	>   Analytics-based charts are built based on the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a Burndown/Burnup widget based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the widget until the date on which they are applied.  
+ 
 	::: moniker range=">= azure-devops-2022"
 	You can even filter on a null value for the **Field Criteria**. This behavior is consistent with a query using the same field criteria. Here we select to filter on work items whose **Activity** value isn't defined. 
 
