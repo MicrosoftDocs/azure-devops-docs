@@ -48,6 +48,9 @@ Releases can be created in several ways:
 
 1. By using the [REST API](/rest/api/azure/devops/release) to create a release definition.
 
+> [!NOTE]
+> If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts). 
+
 ## Q&A
 
 Q: Why my deployment did not get triggered?

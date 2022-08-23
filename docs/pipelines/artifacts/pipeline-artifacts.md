@@ -375,6 +375,10 @@ A: Not currently, but this feature is planned.
 
 A: Pipeline artifacts are not deletable or overwritable. If you want to regenerate artifacts when you re-run a failed job, you can include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
 
+#### Q: How can I access Artifacts feeds behind a firewall?
+
+A: If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts).
+
 ## Related articles
 
 - [Build artifacts](build-artifacts.md)
