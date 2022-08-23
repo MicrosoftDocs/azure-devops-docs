@@ -1,7 +1,7 @@
 ---
 title: Analytics best practices
 titleSuffix: Azure DevOps  
-description: Learn about the best practices to use when querying the Analytics service.
+description: Learn about the best practices to use when querying Analytics for Azure DevOps.
 ms.custom: analytics 
 ms.technology: devops-analytics
 ms.author: kaelli
@@ -11,18 +11,18 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 08/12/2022
 ---
 
-# Best practices to use when querying the Analytics service  
+# Best practices to use when querying Analytics  
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
 
-There are several reasons to follow best practices when querying Analytics, such as those listed below.
+There are several reasons to follow best practices when querying Analytics, such as those practices listed below.
 
 ::: moniker range="azure-devops" 
 
 - Ensure high performance queries
 - Return just the data you need 
 - Minimize receipt of warning or error messages
-- Minimize consumption of resources which could lead to throttling 
+- Minimize consumption of resources that could lead to throttling 
 
 ::: moniker-end
 
@@ -31,10 +31,9 @@ There are several reasons to follow best practices when querying Analytics, such
 - Ensure high performance queries
 - Return just the data you need 
 - Minimize receipt of warning or error messages
-- Minimize consumption of resources  
 ::: moniker-end
 
-Follow the guidance provided below as you get started. If you are an extension developer, you'll also want to review [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
+Follow the guidance provided below as you get started. If you're an extension developer, you'll also want to review [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
 
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
@@ -70,7 +69,7 @@ While there are several EntityTypes supported in the Analytics data model, only 
 - **Snapshot**: Composite entities that combine historical and date-related data. Snapshot entities are intended to be used to support aggregation reports.  
 - **Revision**: Contains historical information. For example, `WorkItemRevision` maintains data about the history of work items. 
 
-Here is a quick reference for the EntityTypes to specify to support reports. For a description of each of these EntityTypes, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
+Here's a quick reference for the EntityTypes to specify to support reports. For a description of each of these EntityTypes, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
 |Azure DevOps data | Current        | Snapshot                  | Revision       | 
 |------------------|----------------|---------------------------|----------------|   
@@ -85,7 +84,7 @@ Here is a quick reference for the EntityTypes to specify to support reports. For
 
 ### Specify query parts in the order they're executed 
 
-The recommended order for the various query parts is to specify them in the following order, which is the order in which they are evaluated. For a description of each query part, see [Query the Analytics service, Query options](analytics-query-parts.md#query-options).
+The recommended order for the various query parts is to specify them in the following order, which is the order in which they're evaluated. For a description of each query part, see [Query the Analytics service, Query options](analytics-query-parts.md#query-options).
  
 1. `$apply`
 1. `$filter`
@@ -102,11 +101,11 @@ All queries must contain an `$apply` or `$select` clause, otherwise you may rece
 
 ### Limit the columns you request in your query 
 
-You specify columns of data to return using the `$select` clause. With customization, work items can have numerous fields associated with them. The more properties or fields that a query references, the more expensive it is to process. Consider the report you want to generate and make sure you are only requesting the fields you need.  
+You specify columns of data to return using the `$select` clause. With customization, work items can have numerous fields associated with them. The more properties or fields that a query references, the more expensive it's to process. Consider the report you want to generate and make sure you're only requesting the fields you need.  
 
 For example, to return the ID, Work Item Type, Title, and State fields for a filtered set of work items, specify the following `$select` clause: `$select=WorkItemId, WorkItemType, Title, State`.  
 
-To lookup the list of properties and their corresponding field names, see [Work tracking properties reference](../powerbi/analytics-fields-reference.md). 
+To look up the list of properties and their corresponding field names, see [Work tracking properties reference](../powerbi/analytics-fields-reference.md). 
 
 <!--- General info 
 Analytics is built on top of a Columnstore Index technology. That means that data is both storage and query processing is column-based. So, the more properties that a query references, the more expensive it's to process. 
@@ -117,7 +116,7 @@ Analytics is built on top of a Columnstore Index technology. That means that dat
 
 ### Create preview queries
 
-By creating a preview query that returns a single record or small subset of records, you can refine your query to ensure that you are requesting the data that you need. By starting with a minimal query, you can build up your query to ensure that you're specifying the records you want and the column data you need. 
+Preview queries are queries that return a single record or small subset of records. By creating a preview query, you can refine your query to ensure that you're requesting the data that you need. By starting with a minimal query, you can build up your query to ensure that you're specifying the records you want and the column data you need. 
 
 By using the `apply=aggregate($count as Count)`, you can identify the number of records you're requesting. For example, the following syntax queries the number of work items for the *Fabrikam Fiber* project. 
 
@@ -151,7 +150,7 @@ Project-scope queries return information about a single project, whereas organiz
 
 If you have access to one or more projects, but not all projects, and you submit an organization-scoped query, you'll receive an error message.
 
-`"VS403496: The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities. More information can be found here: https://go.microsoft.com/fwlink/?LinkId=786441."`
+`"VS403496: The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you're using $expand or navigation properties, project filter is required for those entities. More information can be found here: https://go.microsoft.com/fwlink/?LinkId=786441."`
 
 To learn more, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).
 

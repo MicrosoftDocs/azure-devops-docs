@@ -15,9 +15,9 @@ ms.date: 08/12/2022
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
-If you are new to Analytics and OData, you can get familiar with the data model and query process by exercising simple queries from your web browser. This article provides the URL to use when exercising an OData query against a cloud organization or project, or an on-premises collection or project.
+If you're new to Analytics and OData, you can get familiar with the data model and query process by exercising simple queries from your web browser. This article provides the URL to use when exercising an OData query against a cloud organization or project, or an on-premises collection or project.
 
-You can quickly query the metadata or a filtered set of data. Query options are summaried as well as the recommended sequence in which to specify them. 
+You can quickly query the metadata or a filtered set of data. Query options are summarized as well as the recommended sequence in which to specify them. 
 
 You can query Analytics from any [supported web browser](/azure/devops/server/compatibility#supported-browsers).
 
@@ -61,7 +61,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/version/
 > [!NOTE] 
 > The latest Analytics OData version is **v4.0-preview**. You can use this version for all queries against the hosted service. For more information on Analytics versions and available data, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
-Here is an example for the *fabrikam* organization hosted on Azure DevOps Services. 
+Here's an example for the *fabrikam* organization that is hosted on Azure DevOps Services. 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -83,7 +83,7 @@ https://{ServerName}/{CollectionName}/{ProjectName}/_odata/version/$metadata
 
 [!INCLUDE [temp](../includes/api-versioning.md)]
 
-Here is an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
+Here's an example for the server named `fabrikam-devops` and the `DefaultCollection` hosted on Azure DevOps Server 2022:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -133,7 +133,7 @@ https://analytics.dev.azure.com/OrganizationName/ProjectName/_odata/version/Enti
     Analytics service root URL     Organization/Project      OData version    Entity   Query parts  
 ```
 
-Here is an example for the *fabrikam* organization which returns the count of work items defined for the Fabrikam Fiber project.  
+Here's an example for the *fabrikam* organization that returns the count of work items defined for the Fabrikam Fiber project.  
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -166,12 +166,12 @@ Query options should be specified in the order listed in the following table.
 
 | Query option	|Notes|
 |------------------|-------------------|  
-|`$apply`|Set of transformations: filter, groupby, aggregate, compute, expand, concat|
-|`$compute`| A supported OData function, use to define computed properties that can be used in a $select or within a $filter or $orderby expression. |  	
-|`$filter`| Use to filter the list of resources that are returned. The expression specified with $filter is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Resources for which the expression evaluates to false or to null, or which reference properties that are unavailable due to permissions, are omitted from the response.  |  		
+|`$apply`|Set of transformations that you can apply to a query, such as: `filter`, `groupby`, `aggregate`, `compute`, `expand,` `concat`|
+|`$compute`| A supported OData function that you can specify to define computed properties that can be used in a `$select`,`$filter`, or `$orderby` expression. |  	
+|`$filter`| Use to filter the list of resources that are returned. The expression specified with `$filter` is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Resources for which the expression evaluates to false or to null, or which reference properties that are unavailable due to permissions, are omitted from the response.  |  		
 |`$orderby`| Use to specify the sequence in which records should be returned.  |  		
 |`$top`/`$skip`| Use to limit the number of records returned.   |  		
-|`$select`/`$expand`|Use $select to specify the columns you need to build your report. Use $expand to nest other query options. Each expandItem is evaluated relative to the entity containing the navigation or stream property being expanded.<br/><br/>emicolon-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are $filter, $select, $orderby, $skip, $top, $count, $search, and $expand.|
+|`$select`/`$expand`|Use `$select` to specify the columns you need to build your report. Use `$expand` to nest other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded.<br/><br/>Semicolon-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`.|
 |`$skiptoken`| Use to skip a specified number of records.  |	
 |`$count` or `$count=true`	 |  Enter `$count` to only return the number of records. Enter `$count=true`to return both a count of the record and the queried data. |  
  
