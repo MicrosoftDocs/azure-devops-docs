@@ -8,7 +8,7 @@ ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/07/2021
+ms.date: 08/18/2022
 ---
 
 # Validation and import processes
@@ -25,7 +25,18 @@ This article walks you through the preparation that's required to get an import 
 
 We recommend that you use the [Step-by-step migration guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to technical documentation, tools, and best practices.
 
+## Prerequisites 
+
+- You must set up an Azure Active Directory tenant as described [Azure AD Connect sync: Make a change to the default configuration](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration). 
+  The data migration tool sets up a link to your Azure Active Directory tenant when your Azure DevOps Services organization is created as part of the beginning of the import process. 
+
+	By synchronizing your on-premises Active Directory with Azure Active Directory, your team
+	members will be able to use the same credentials to authenticate and your Azure DevOps
+	Services administrators will be able to leverage your Active Directory groups for setting
+	permissions within your Azure DevOps Services organization. To setup the synchronization, you will want to use the Azure AD Connect technology.  
+
 <a id="validate-collection"></a>
+
 ## Validate a collection 
 
 After you've confirmed that you're running the latest version of Azure DevOps Server, your next step is to validate each collection that you want to migrate to Azure DevOps Services. 
@@ -51,13 +62,13 @@ You run the validation by using the data migration tool. To start, [download the
 1. Because this is your first time validating a collection, let's keep it simple. Your command should have the following structure:
 
 	```cmdline
-	Migrator validate /collection:{collection URL}
+	Migrator validate /collection:{collection URL} /tenantDomainName:{name}
 	```
 
-	For example, to run against the default collection the command would look like:
+	Where `{name}` provides the name of your Azure Active Directory tenant. For example, to run against the *DefaultCollection* and the *fabrikam* tenant, the command would look like:
 
 	```cmdline
-	Migrator validate /collection:http://localhost:8080/DefaultCollection
+	Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com
 	```
 
 1. To run the tool from a machine other than the Azure DevOps Server, you need the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validate command is being run by the Fabrikam corporation, the command would look like:
@@ -108,7 +119,7 @@ Unlike the `validate` command, `prepare` *does* require an internet connection, 
 Migrator prepare /help
 ```
 
-Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
+Included in the help documentation are instructions and examples for running the `Migrator` command from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
 
 
 ```cmdline
@@ -183,12 +194,15 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 | --- | --- | --- |
 | United States | Central United States | CUS |
 | Europe | Western Europe | WEU |
-| United Kingdom | United Kingdom South | UKS |
+| United Kingdom | United Kingdom South | UKS| 
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
 | Asia Pacific | South India | MA |
 | Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
+
+<!--- removing | United Kingdom | United Kingdom South | UKS | per https://dev.azure.com/mseng/TechnicalContent/_workitems/edit/1978987/ --> 
+
 
 <br> 
 
@@ -453,6 +467,7 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 | --- | --- |
 | Central United States | Central United States |
 | Western Europe | Western Europe |
+| United Kingdom | United Kingdom South | 
 | Australia East | Australia East |
 | Brazil South | Brazil South |
 | India South | India South |
