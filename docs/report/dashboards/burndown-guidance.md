@@ -20,11 +20,12 @@ ms.date: 09/27/2021
 Burndown and burnup charts support project management to visually track work completed over time. The main differences between the two chart types are: 
 - Burndown charts begin with the total amount of planned work and then as work is completed graphs the remaining work. With the progression of time, the amount of to-do work decreases. 
 - Burnup charts track work as it is completed over time. 
+- Sprint burndown charts track planned work for a team and a selected sprint. 
 
-In general, burndown charts should show a downward trend. However, if teams add work through a sprint or planning period, then the chart will show an upward trend. 
+In general, burndown charts should show a downward trend. However, if teams add work through a sprint or release period, then the chart will show upward trends. These charts help teams monitor what they planned to do versus what they actually do.  
 
-In general, burndown charts help teams monitor what they planned to do versus what they actually do. Burnup charts There are several burndown charts supported for Azure Devops. These include the following configurable charts and widgets. 
-
+Burnup charts, on the other hand, should always show an upward trend as work is completed over time. 
+The following configurable charts and widgets are available for tracking burndown or burnup. 
 - Burndown/burnup widget (Analytics)
 - Sprint burndown built-in report (Analytics)
 - Sprint burndown widget (Analytics)
@@ -59,18 +60,8 @@ The following table summarizes the configuration options supported by the variou
 |Team(s)        | Single team | Single team |  One or more teams |  
 |Backlog        | Product backlog<br/>Task backlog | Product backlog<br/>Portfolio backlog<br/>work item type | Product backlog<br/>Portfolio backlog<br/>work item type |  
 | Work item field filters  | None | None | Supported  |  
-|Burdown focus  | Count or Sum | Count or Sum | Count or Sum |  
+|Burndown focus  | Count or Sum | Count or Sum | Count or Sum |  
 |Time period    | Single sprint | Single sprint | Configurable |   
-
-When choosing work item fields to filter a Burndown/Burnup widget note the following: 
-- All filter clauses are subject to AND logic 
-- No Date, HTML fields are available for filtering 
-- Something  about the category state of Closed 
-- The chart considers the field assignment as it was defined for the work item on the date  
-
-> [!TIP]    
-> Analytics-based charts are built based on the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that if you want to filter a Burndown/Burnup widget based on field or tag assignments, you must assign those prior to the period you want to monitor. Otherwise, they aren't registered by the widget until the date on which they are applied.  
-
 
 
 ::: moniker-end
@@ -80,7 +71,7 @@ When choosing work item fields to filter a Burndown/Burnup widget note the follo
 
 ## General guidance 
 
-Depending on the work items and time perioud you want to monitor, consider the following guidance.    
+Depending on the work items and time period you want to monitor, consider the following guidance.    
 
 | Monitor | Chart option |  
 |---------|---------------|  
@@ -99,8 +90,7 @@ Things to look for:
 - Stalled or flat areas 
 
 
-
-- Sprint charts can help teams review how efficient they are in planning and executing sprint over sprint. 
+ Sprint charts can help teams review how efficient they are in planning and executing sprint over sprint. 
 - Some note on Total Scope (not always helpful) 
 - 
 - 
@@ -167,7 +157,6 @@ Solutions may include reassigning tasks or recruiting more resources. The team s
 
 ## Mitigate risk through daily inspection
 
-
 ::: moniker range=">= azure-devops-2020"
 
 Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
@@ -179,8 +168,6 @@ For example, when the actual remaining work (blue area) goes flat for a while, o
 
 
 Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.
-
-
   
 ::: moniker-end
 
@@ -206,11 +193,17 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 ::: moniker-end
 
 ## Next steps
+> [!div class="nextstepaction"]
+> [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a Burndown or Burnup widget](configure-burndown-burnup-widget.md)
 
-In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
+ 
+## Related articles
 
-You can use your team [velocity](team-velocity.md) as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
-
+- [Velocity metrics and usage guidance](velocity-guidance.md)
+- [Implement Scrum practices for your team in Azure Boards](../../boards/sprints/scrum-overview.md)
+- [Query by date or current iteration, List work items moved out of a sprint](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-of-a-sprint)
+- [Query by date or current iteration, List work items added to a sprint after the start date](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-added-to-a-sprint-after-the-start-date)
+- [Manage priorities and gain visibility across teams](../../boards/plans/visibility-across-teams.md)
 
 ## Industry resources
  
