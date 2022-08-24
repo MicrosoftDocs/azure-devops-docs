@@ -36,7 +36,7 @@ Once you build an image, you'll push the image to Azure Container Registry, Dock
    > You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
    > You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 
-4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you're building a Linux app, use `ubuntu-1604` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
+4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you're building a Linux app, use `ubuntu-latest` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
  
    ```yaml
            trigger:
