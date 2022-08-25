@@ -1,17 +1,17 @@
 ---
-title: Burndown guidance
+title: Burndown and burnup guidance
 titleSuffix: Azure DevOps  
-description: Learn about reviewing scrum progress during and at the end of a sprint when working in Azure DevOps.
+description: Learn how to choose and use burndown/burnup charts to review sprints and releases in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 09/27/2021
+ms.date: 08/25/2022
 ---
 
-# Burndown guidance
+# Burndown and burnup guidance
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -19,8 +19,8 @@ ms.date: 09/27/2021
 
 Burndown and burnup charts support project management to visually track work completed over time. The main differences between the two chart types are: 
 - Burndown charts begin with the total amount of planned work and then as work is completed graphs the remaining work. With the progression of time, the amount of to-do work decreases. 
-- Burnup charts track work as it is completed over time. 
-- Sprint burndown charts track planned work for a team and a selected sprint. 
+- Burnup charts track work as it is completed over time. They are useful to show the rate at which work is getting completed. 
+- Sprint burndown charts track planned work for a team and a selected sprint. Sprint charts can help teams review how efficient they are in planning and executing sprint over sprint. 
 
 In general, burndown charts should show a downward trend. However, if teams add work through a sprint or release period, then the chart will show upward trends. These charts help teams monitor what they planned to do versus what they actually do.  
 
@@ -53,12 +53,12 @@ To configure or view sprint burndown charts, see [Sprint burndown](configure-spr
 
 ## Supported configuration options
 
-The following table summarizes the configuration options supported by the various burndown chart options. 
+The following table summarizes the configuration options supported by the various burndown chart options. Sprint burndown charts are always focused on a single team, whereas a Burndown/Burnup widget can track work for several teams. All charts support tracking by work item count or a sum of Story Points, Effort, Remaining Work or other custom (integer or decimal) field. 
 
 | Configuration | Sprint burndown report | Sprint burndown widget |Burndown/Burnup widget |  
 |---------------|-----------------|------------------------|  
 |Team(s)        | Single team | Single team |  One or more teams |  
-|Backlog        | Product backlog<br/>Task backlog | Product backlog<br/>Portfolio backlog<br/>work item type | Product backlog<br/>Portfolio backlog<br/>work item type |  
+|Backlog        | Product backlog,<br/>Task backlog | Product backlog,<br/>Portfolio backlog,<br/>Any work item type | Product backlog<br/>Portfolio backlog<br/>work item type |  
 | Work item field filters  | None | None | Supported  |  
 |Burndown focus  | Count or Sum | Count or Sum | Count or Sum |  
 |Time period    | Single sprint | Single sprint | Configurable |   
@@ -72,7 +72,6 @@ The following table summarizes the configuration options supported by the variou
 ## General guidance 
 
 Depending on the work items and time period you want to monitor, consider the following guidance.    
-
 | Monitor | Chart option |  
 |---------|---------------|  
 | Sprint burndown for a team | Sprint burndown chart |  
@@ -89,11 +88,7 @@ Things to look for:
 - Total scope line  ... 
 - Stalled or flat areas 
 
-
- Sprint charts can help teams review how efficient they are in planning and executing sprint over sprint. 
-- Some note on Total Scope (not always helpful) 
-- 
-- 
+ 
 ::: moniker-end
 
 
@@ -194,7 +189,7 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a Burndown or Burnup widget](configure-burndown-burnup-widget.md)
+> [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md)
 
  
 ## Related articles
