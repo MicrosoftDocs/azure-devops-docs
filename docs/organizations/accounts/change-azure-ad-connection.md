@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/21/2022
+ms.date: 08/25/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -26,7 +26,7 @@ Before you switch your organization directory, make sure the following statement
 
 - You're in the Project Collection Administrator group for the organization.
 - You're a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help with changing your Azure AD.
+- You have 100 or fewer users in your organization. If your organization has more than 100 users, you can change the Azure AD tenant that's connected to your organization, but [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users and map them to their Azure AD identities in the new tenant.
 
 Do the following task:
 
