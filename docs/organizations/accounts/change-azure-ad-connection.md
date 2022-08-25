@@ -26,7 +26,7 @@ Before you switch your organization directory, make sure the following statement
 
 - You're in the Project Collection Administrator group for the organization.
 - You're a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help with changing your Azure AD.
+- You have 100 or fewer users in your organization. If your organization has more than 100 users, you will be able to change the Azure AD connected to your organization, but you will need to [contact Support](https://azure.microsoft.com/support/devops/) to resolve any disconnected users and map them to their Azure AD identities in the new tenant.
 
 Do the following task:
 
