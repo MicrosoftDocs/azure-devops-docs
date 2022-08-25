@@ -135,9 +135,15 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 - **Publish symbols**: indicates whether to publish the symbol files. 
     - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
 
+> [!IMPORTANT]
+> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
+
 ::: moniker-end
 
 ## Set up Visual Studio
+
+> [!NOTE]
+> Visual Studio for Mac does not support provide support debugging using symbol servers. 
 
 Before starting to consume our symbols from Azure Artifacts symbol server, let's make sure that Visual Studio is set up properly:
 
@@ -157,9 +163,6 @@ Before starting to consume our symbols from Azure Artifacts symbol server, let's
 
 > [!NOTE]
 > Checking the **Enable source server support** option enables you to use [Source Server](/visualstudio/debugger/general-debugging-options-dialog-box) when there is no source code on the local machine or the symbol file does not match the source code. If you want to enable third-party source code debugging, uncheck the **Enable Just My Code** checkbox.
-
-> [!IMPORTANT]
-> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
 
 ## FAQs
 
