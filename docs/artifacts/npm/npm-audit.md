@@ -26,7 +26,7 @@ Select the YAML or the classic tab to learn how to run npm audit from you Pipeli
 
 # [YAML](#tab/yaml)
 
-Add the following task to your yaml pipeline to scan for security vulnerabilities.
+Add the following task to your yaml pipeline to only scan for security vulnerabilities.
 
 ```yaml
 steps:
@@ -35,6 +35,19 @@ steps:
   inputs:
     command: custom
     customCommand: 'audit --registry=https://registry.npmjs.org/'
+```
+- **command**: the npm command to run.
+- **customCommand**: Required when command == custom.
+
+Instead of only scanning, to scan and also attempt to upgrade to non-vulnerable package versions:
+
+```yaml
+steps:
+- task: Npm@1
+  displayName: 'npm audit fix'
+  inputs:
+    command: custom
+    customCommand: 'npm audit fix --registry=https://registry.npmjs.org/ --package-lock-only'
 ```
 
 - **command**: the npm command to run.
@@ -52,14 +65,25 @@ steps:
 
     :::image type="content" source="media/npm-audit-task.png" alt-text="Screenshot showing the npm custom task to run npm audit":::
 
+    a. To only scan for security vulnerabilities use this command:
+```audit --registry=https://registry.npmjs.org/```
+
+    b. To also attempt to upgrade to non-vulnerable package versions:
+```audit fix --registry=https://registry.npmjs.org/ --package-lock-only```
 ---
 
 ## Run npm audit on your development machine
 
-To run npm audit locally, run the following command in an elevated command prompt window:
+To run npm audit locally, run the following command in an command prompt window:
 
 ```Command
 npm audit --registry=https://registry.npmjs.org/
+```
+
+To also attempt to upgrade to non-vulnerable package versions:
+
+```Command
+audit fix --registry=https://registry.npmjs.org/ --package-lock-only
 ```
 
 ## Related articles
