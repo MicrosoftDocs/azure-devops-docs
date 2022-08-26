@@ -33,6 +33,8 @@ Use this article to learn how to:
 > * Work with a burndown chart    
 > * Configure a sprint burndown     
 
+For an overview of all burndown/burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
+
 Use the burndown chart to track completion of a predefined scope of work over a predefined period of time. For example, a sprint burndown tracks the sprint backlog completion by end of the sprint. A release burndown tracks the release backlog completion by the end of the release. You can define a bug burndown chart to track completion of a set of bugs by a certain date. 
 
 **Burndown widget configured to display a Release Burndown**
@@ -108,9 +110,8 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 ## Choose the teams and work items to chart  
 
 1. Modify the **Title** of the widget and select your preferred **Size**. The Burndown widget can scale up to 10x10.    
-1. Select the **Teams** you want to track.   
-	Select at least one **Project** and one **Team**.   
-	![Configuration dialog, Burndown/Burnup Widget, Select team(s) section.](./media/burndown-widget/burndownup-config-select-team.png)    
+1. Select the **Teams** you want to track. Select at least one **Project** and one **Team**.   
+
 	If you want to track progress across teams, add more teams using the team selector. You may also select teams from other projects.  
 	![Configuration dialog, Burndown/Burnup Widget, Select multiple teams.](./media/burndown-widget/burndownup-config-select-multiple-teams.png)  
 	The Burndown chart will display the burndown of remaining work for all selected teams.   
@@ -205,9 +206,6 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 	The burndown chart uses the end date of each iteration to plot the remaining work for that iteration.
 
-	> [!NOTE]   
-	> The Average Burndown assumes that every iteration is the same length. It does not consider iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best results, enter a **Start Date** that is the same as the first iteration's start date. 
-
 	If you select to plot based on an iteration schedule, you can't select **End Date**. The burndown assumes the **End Date** is the last iteration's end date.
 
 	### Plot based on a daily, weekly, or monthly interval
@@ -223,7 +221,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	If you select **Months**, then burndown/burnup is calculated based on the last day of each month.  
 
 	> [!NOTE]    
-	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first month's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first month's start date. **This is also true when plotting by weekly intervals.**
+	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first month's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2021, would plot the first month as 10/31/2021, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first month's start date. **This is also true when plotting by weekly intervals.**
 
 ## Other options 
 Check the boxes of the following options that you want to add to your chart.    
@@ -259,8 +257,11 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 	:::image type="content" source="media/burndown-widget/sprint-burndownup-config-dates.png" alt-text="Configuration sprint burndown example, set Dates.":::
 
-8. Save your configuration. This widget now shows a daily burndown of the Fabrikam Fiber - Website team for sprint **08_2022**. The burndown shows a count of work items completed per day. To change the sprint this widget is monitoring, for example to sprint **09_2022**, you'll need to manually change the widget configuration field criteria and dates.
+8. Save your configuration. This widget now shows a daily burndown of the Fabrikam Fiber - Website team for sprint **08_2022**. The burndown shows a count of work items completed per day as well as remaining stories and bugs. 
 
+	:::image type="content" source="media/burndown-widget/sprint-burndown.png" alt-text="Configuration sprint burndown example, set Dates.":::
+
+	To change the sprint this widget is monitoring, for example to sprint **09_2022**, you need to manually change the widget configuration field criteria and dates.
 
 ## Configure a Sprint Burnup widget
 
