@@ -551,7 +551,7 @@ Teams may find it useful to review these reports periodically during their sprin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Burndown guidance](burndown-guidance.md) 
+> [Burndown and burnup guidance](burndown-guidance.md) 
 
 In addition to the sprint burndown chart, teams can review the [velocity](team-velocity.md) at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint. You can use your team velocity as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 
