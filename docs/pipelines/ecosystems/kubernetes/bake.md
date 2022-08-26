@@ -3,8 +3,6 @@ title: Bake manifests
 description: Bake manifests to be used in deployments to Kubernetes clusters
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
-ms.author: juliakm
-author: azooinmyluggage
 ms.date: 08/26/2022
 monikerRange: 'azure-devops'
 ---
