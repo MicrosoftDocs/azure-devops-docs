@@ -232,7 +232,7 @@ Check the boxes of the following options that you want to add to your chart.
 
 ## Configure a Sprint Burndown widget
 
-One of the most common burndowns is the sprint burndown. A Sprint burndown is useful to determine if your team is on track to complete their sprint plan. You can use the following example on how to configure your Burndown widget to represent a sprint burndown. For this example, we show burndown for the Fabrikam Fiber - Website team for Sprint 120. The sprint starts on 10/30/2017 and ends on 11/19/2017.
+One of the most common burndowns is the sprint burndown. A Sprint burndown is useful to determine if your team is on track to complete their sprint plan. You can use the following example on how to configure your Burndown widget to represent a sprint burndown. For this example, we show burndown for the Fabrikam Fiber - Website team for sprint **08_2022**. The sprint starts on 08/01/2022 and ends on 08/31/2022.
 
 
 1. Select a single team to monitor their sprint burndown.  
@@ -257,9 +257,9 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 	:::image type="content" source="media/burndown-widget/sprint-burndownup-config-dates.png" alt-text="Configuration sprint burndown example, set Dates.":::
 
-8. Save your configuration. This widget now shows a daily burndown of the Fabrikam Fiber - Website team for sprint **08_2022**. The burndown shows a count of work items completed per day as well as remaining stories and bugs. 
+8. Save your configuration. This widget now shows a daily burndown of the Fabrikam Fiber - Website team for sprint **08_2022**. The burndown shows a count of work items completed per day as well as remaining stories and bugs. As the team added 28 items after the sprint began, that number is reflected in the **Total Scope Increase**.
 
-	:::image type="content" source="media/burndown-widget/sprint-burndown.png" alt-text="Configuration sprint burndown example, set Dates.":::
+	:::image type="content" source="media/burndown-widget/sprint-burndown.png" alt-text="Screenshot of sprint burndown example.":::
 
 	To change the sprint this widget is monitoring, for example to sprint **09_2022**, you need to manually change the widget configuration field criteria and dates.
 
@@ -274,7 +274,7 @@ Configuring the Burnup widget is exactly like configuring the Burndown widget, e
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Burndown guidance](burndown-guidance.md) 
+> [Burndown and burnup guidance](burndown-guidance.md) 
 
 ## Related articles 
 

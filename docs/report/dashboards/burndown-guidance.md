@@ -53,7 +53,7 @@ To configure or view sprint burndown charts, see [Sprint burndown](configure-spr
 
 ## Supported configuration options
 
-The following table summarizes the configuration options supported by the various burndown chart options. Sprint burndown charts are always focused on a single team, whereas a Burndown/Burnup widget can track work for several teams. All charts support tracking by work item count or a sum of Story Points, Effort, Remaining Work or other custom (integer or decimal) field. 
+The following table summarizes the configuration options supported by the various burndown chart options. Sprint burndown charts are always focused on a single team, whereas a Burndown/Burnup widget can track work for several teams. All charts support tracking by work item count or a sum of **Story Points**, **Effort**, **Remaining Work** or other custom (integer or decimal) field. 
 
 | Configuration | Sprint burndown report | Sprint burndown widget |Burndown/Burnup widget |  
 |---------------|-----------------|------------------------|  
@@ -72,7 +72,7 @@ For details on viewing and configuring charts, see [Configure and monitor sprint
 
 ## General guidance 
 
-Depending on the work items and time period you want to monitor, consider the following guidance.    
+Depending on the teams, work item types, and time period you want to monitor, choose the chart option according to the following guidance.    
 
 | Monitor | Chart option |  
 |---------|---------------|  
