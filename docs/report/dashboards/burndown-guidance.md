@@ -63,6 +63,7 @@ The following table summarizes the configuration options supported by the variou
 |Burndown focus  | Count or Sum | Count or Sum | Count or Sum |  
 |Time period    | Single sprint | Single sprint | Configurable |   
 
+For details on viewing and configuring charts, see [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
 
 ::: moniker-end
 
@@ -72,21 +73,15 @@ The following table summarizes the configuration options supported by the variou
 ## General guidance 
 
 Depending on the work items and time period you want to monitor, consider the following guidance.    
+
 | Monitor | Chart option |  
 |---------|---------------|  
 | Sprint burndown for a team | Sprint burndown chart |  
 | Sprint burndown for a specific work item type or a porfolio backlog | Sprint burndown widget |  
-| Sprint burndown for several teams | Burndown widget | 
-| Release burndown/burnup  for one or more teams or teams in different projects | Burndown/Burnup widget | 
-| Burnup or burndown for any type of work item and time period | Burndown/Burnup widget | 
-| Project and target completion date | Burndown/Burnup widget | 
-
-Things to look for: 
-- Scope creep: work added after the start of a sprint or planning period
-- Above the trend line: 
-- Below the trend line:  
-- Total scope line  ... 
-- Stalled or flat areas 
+| Sprint burndown for several teams | Burndown widget |  
+| Release burndown/burnup  for one or more teams or teams in different projects | Burndown/Burnup widget |  
+| Burnup or burndown for any type of work item and time period | Burndown/Burnup widget |  
+| Project and target completion date | Burndown/Burnup widget |  
 
  
 ::: moniker-end
@@ -206,4 +201,13 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 
 <!---
 For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
+
+
+Things to look for: 
+- Scope creep: work added after the start of a sprint or planning period
+- Above the trend line: 
+- Below the trend line:  
+- Total scope line  ... 
+- Stalled or flat areas 
+
 --> 

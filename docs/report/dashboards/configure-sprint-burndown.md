@@ -65,6 +65,8 @@ Use this article to learn about:
 > * How to configure the Sprint Burndown widgets  
 > * How to view current and past sprint burndowns 
 
+For an overview of all burndown/burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -81,6 +83,7 @@ Use this article to learn about:
 
 > [!NOTE]  
 > Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
+
 
 
 ## The in-context Burndown Trend report
