@@ -3,7 +3,7 @@ title: Use npm audit with Azure Artifacts
 description: Use npm audit to scan for security vulnerabilities
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/02/2021
+ms.date: 08/29/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -36,8 +36,6 @@ steps:
     command: custom
     customCommand: 'audit --registry=https://registry.npmjs.org/'
 ```
-- **command**: the npm command to run.
-- **customCommand**: Required when command == custom.
 
 Instead of only scanning, to scan and also attempt to upgrade to non-vulnerable package versions:
 
@@ -63,18 +61,25 @@ steps:
 
 1. Fill out the required fields as follows:
 
-    :::image type="content" source="media/npm-audit-task.png" alt-text="Screenshot showing the npm custom task to run npm audit":::
+    1. To only scan for security vulnerabilities use this command:
+    
+    ```Command
+    audit --registry=https://registry.npmjs.org/
+    ```
 
-    a. To only scan for security vulnerabilities use this command:
-```audit --registry=https://registry.npmjs.org/```
+    1. To also attempt to upgrade to non-vulnerable package versions:
+    
+    ```Command
+    audit fix --registry=https://registry.npmjs.org/ --package-lock-only
+    ```
 
-    b. To also attempt to upgrade to non-vulnerable package versions:
-```audit fix --registry=https://registry.npmjs.org/ --package-lock-only```
+:::image type="content" source="media/npm-audit-task.png" alt-text="Screenshot showing the npm custom task to run npm audit":::
+
 ---
 
 ## Run npm audit on your development machine
 
-To run npm audit locally, run the following command in an command prompt window:
+To run npm audit locally, run the following command in a command prompt window:
 
 ```Command
 npm audit --registry=https://registry.npmjs.org/
