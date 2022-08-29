@@ -100,7 +100,7 @@ will contain the contents of the PFX in string format. You can use the following
 to retrieve the PFX file from the task variable:
  
 ```powershell
-$kvSecretBytes = [System.Convert]::FromBase64String($(PfxSecret))
+$kvSecretBytes = [System.Convert]::FromBase64String("$(PfxSecret)")
 $certCollection = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
 $certCollection.Import($kvSecretBytes,$null,[System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable)
 ```
