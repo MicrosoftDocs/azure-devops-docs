@@ -988,7 +988,7 @@
     - name: Use deployment rings
       href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Use feature flags
-      href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fpipelines%2ftoc.json
+      href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb/toc.json&toc=/azure%2fdevops%2fpipelines/toc.json
       displayName: feature-flags
     - name: Legacy content
       items:
