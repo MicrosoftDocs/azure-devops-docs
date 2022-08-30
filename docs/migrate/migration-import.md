@@ -18,7 +18,7 @@ ms.date: 08/18/2022
 This article walks you through the preparation that's required to get an import to Azure DevOps Services ready to run. If you encounter errors during the process, see [Troubleshoot import and migration errors](migration-troubleshooting.md).
 
 
-> [!Note]
+> [!NOTE]
 > * Visual Studio Team Services (VSTS) is now [Azure DevOps Services.](../user-guide/about-azure-devops-services-tfs.md#visual-studio-team-services-is-now-azure-devops-services)
 > * With the release of Azure DevOps Server 2019, the TFS Database Import Service has been rebranded as the data migration tool for Azure DevOps. This change includes TfsMigrator (Migrator) becoming the data migration tool. This service works exactly the same as the former import service. If you're running an older version of on-premises Azure DevOps Server with the TFS branding, you can still use this feature to migrate to Azure DevOps as long as you've upgraded to one of the supported server versions.
 > * Before you begin the import tasks, check to ensure that you're running a [supported version of Azure DevOps Server](migration-overview.md#supported-azure-devops-server-versions-for-import). 
