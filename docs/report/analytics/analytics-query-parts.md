@@ -37,7 +37,7 @@ You can look up any of the following data elements by querying the metadata.
 - Entity types and entity sets
 - Properties and navigation properties
 - Surrogate keys
-- Enumumerated lists  
+- Enumerated lists  
 - EntitySet
 - Containers 
 - Filter functions (`Org.OData.Capabilities.V1.FilterFunctions`)

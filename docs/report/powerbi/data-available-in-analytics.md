@@ -42,7 +42,7 @@ Refer to the following table to determine the data you have access to. To determ
 
 ## Analytics version 
 
-When you query Analytics, you always specify an Analytics version. The latest versions provides access to all supported EntityTypes and EntitySets. For details on the supported EntityTypes and EntitySets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
+When you query Analytics, you always specify an Analytics version. The latest versions provide access to all supported EntityTypes and EntitySets. For details on the supported EntityTypes and EntitySets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
 | Analytics version | Supported Azure DevOps services | 
 |------------------|----------------|
