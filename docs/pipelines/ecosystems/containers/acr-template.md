@@ -6,7 +6,6 @@ ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 03/01/2022
-ms.topic: how-to
 monikerRange: 'azure-devops'
 ---
 # Build and push Docker images to Azure Container Registry
