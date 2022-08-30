@@ -1,5 +1,5 @@
 ---
-title: Analytics work item fields reference
+title: Work tracking properties reference for Analytics 
 titleSuffix: Azure DevOps
 description: Work item fields available from the Analytics service
 ms.technology: devops-analytics
@@ -7,11 +7,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/26/2022
+ms.date: 08/12/2022
 ---
 
 
-# Analytics work item fields reference 
+# Work tracking properties reference 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
@@ -214,7 +214,7 @@ The following surrogate keys (SK) properties can be used to filter or construct 
 
 - [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
-- [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md)
+- [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
 
 
