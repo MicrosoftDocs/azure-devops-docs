@@ -5,7 +5,7 @@ ms.author: jukullam
 author: JuliaKM
 ms.technology: devops-cicd-apps
 ms.date: 10/28/2021
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '=azure-devops'
 ---
 

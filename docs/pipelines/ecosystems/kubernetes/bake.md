@@ -3,20 +3,21 @@ title: Bake manifests
 description: Bake manifests to be used in deployments to Kubernetes clusters
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
-ms.author: atulmal
-author: azooinmyluggage
-ms.date: 01/31/2022
+ms.date: 08/26/2022
 monikerRange: 'azure-devops'
 ---
 
 # Bake manifests
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Bake action of the [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) is useful for turning templates into manifests with the help of a template engine. The bake action of Kubernetes manifest task is intended to provide visibility into the transformation between the input templates and the end manifest files that are used in the deployments. [Helm 2](https://helm.sh), [kustomize](https://github.com/kubernetes-sigs/kustomize), and [kompose](https://github.com/kubernetes/kompose) are supported as templating options under the bake action.
+You can use the bake action in the [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) to bake templates into Kubernetes manifest files. The action lets you use tools such as [Helm](https://helm.sh), [kustomize](https://github.com/kubernetes-sigs/kustomize), and [kompose](https://github.com/kubernetes/kompose). With baking, these Kubernetes manifest files are usable for deployments to the cluster.
 
-The baked manifest files are intended to be consumed downstream (subsequent task) where these manifest files are used as inputs for the deploy action of the Kubernetes manifest task.
+The bake action of the Kubernetes manifest task provides visibility into the transformation between input templates and the end manifest files that are used in deployments. 
 
-## Helm 2 example
+You can consume baked manifest files downstream (in tasks) as inputs for the deploy action of the Kubernetes manifest task. 
+
+
+## Helm example
 
 ```YAML
 - deployment:
@@ -48,7 +49,7 @@ The baked manifest files are intended to be consumed downstream (subsequent task
 ```
 
 > [!NOTE]
-> Instead of transforming the Helm charts into manifest files in the template as shown above, if one intends to use Helm for directly managing releases and rollbacks, checkout the [Package and Deploy Helm Charts task](../../tasks/deploy/helm-deploy.md).
+> To use Helm directly for managing releases and rollbacks, see the [Package and Deploy > Helm Charts task](../../tasks/deploy/helm-deploy.md).
 
 ## Kustomize example
 
