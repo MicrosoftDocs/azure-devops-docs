@@ -1092,7 +1092,7 @@ Use features supported by these familiar clients to manage your project and illu
   
         **Build retention policies**  
   
-        [Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md) to minimize clutter.  
+        [Define policies to automatically delete old completed builds](../pipelines/policies/retention.md) to minimize clutter.
   
         **Build permissions**  
   
@@ -1866,7 +1866,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Usage analysis</b></p>
-<p>Gain a clear view of <a href="/azure/azure-monitor/app/usage-overview" data-raw-source="[where your users are coming from and how they use your app ](/azure/azure-monitor/app/usage-overview)">where your users are coming from and how they use your app </a>. Add custom instrumentation to determine usage patterns and next version investment areas.  </p>
+<p>Gain a clear view of <a href="/azure/azure-monitor/app/usage-overview" data-raw-source="[where your users are coming from and how they use your app](/azure/azure-monitor/app/usage-overview)">where your users are coming from and how they use your app </a>. Add custom instrumentation to determine usage patterns and next version investment areas.  </p>
 
 <p><b>Diagnose dependency issues</b></p>
 <p>See how long your application <a href="/azure/azure-monitor/app/asp-net-dependencies" data-raw-source="[waits for dependencies and how often a dependency call fails](/azure/azure-monitor/app/asp-net-dependencies)">waits for dependencies and how often a dependency call fails</a>. Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
