@@ -20,7 +20,7 @@ To learn about building your own Azure DevOps extensions, see [developing](../ex
 
 ## Prerequisites
 
-* Only [Project Collection Administrators or organization owners](faq-extensions.yml) can install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
+* Only [Project Collection Administrators](faq-extensions.yml) can install extensions. Organization owners are automatically members of this group. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 * Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 <a id="install-extension" /> 
