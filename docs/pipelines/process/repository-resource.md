@@ -4,6 +4,7 @@ description: Add checks and pipeline protection to a repository
 ms.custom: pipelinesresourcesrefresh
 ms.reviewer: vijayma
 ms.date: 12/22/2021
+ms.topic: how-to
 monikerRange: '> azure-devops-2019'
 ---
 
