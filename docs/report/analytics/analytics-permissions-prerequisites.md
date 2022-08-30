@@ -1,7 +1,7 @@
 ---
 title: Permissions and prerequisites to access Analytics
 titleSuffix: Azure DevOps  
-description: Understand the permissions and prerequisites to meet to access and generate reports with Analytics .
+description: Understand the permissions and prerequisites to meet to access and generate reports with Analytics.
 ms.custom: "analytics" 
 ms.technology: devops-analytics
 ms.author: kaelli
@@ -101,14 +101,14 @@ To report on work tracking, teams need to perform several tasks to ensure meanin
 - To create burndown or burnup reports, such as [Sprint burndown](../powerbi/sample-boards-sprintburndown.md) or [Release burndown](../powerbi/sample-boards-releaseburndown.md), ensure you have thought through how you want to filter and group data in your report. Burndown/burnup reports reference the `WorkItemsSnapshot` EntityType. Snapshot entity types are modeled as daily snapshots. Data is aggregated based on assignments made as of the date they are assigned. What this means is that to filter a burndown/burnup report based on field or tag assignments, you must assign the fields or tags prior to the period you want to report on. Otherwise, the fields/tags aren't registered by the report until the date on which they are applied.
 - To support [Requirements tracking](../powerbi/sample-stories-overview.md), define test cases, and create a **Tested By** link from each test case to a user story, product backlog item, or requirement. 
 Define test cases and link test cases to their parent PBIs using the Tested By link. See Create your tests.
-- (Recommended)  To support filtering and grouping within a report, assign  **Area Path** and **Iteration Path** to all work items. For information about how to define iteration and area paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) or [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) .  
+- (Recommended)  To support filtering and grouping within a report, assign  **Area Path** and **Iteration Path** to all work items. For information about how to define iteration and area paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) or [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).  
 
 > [!NOTE]   
 > All custom fields added to a work item type are available for use in reports. Custom fields are labeled with *Custom_DisplayNameOfField*, where all spaces have been removed from the display name. 
 
 ::: moniker range=">= azure-devops-2020" 
 
-### Test Plans 
+### Test plans 
 
 To review test plan progress and test case readiness, teams need to perform the following activities. 
 - Define test cases, test plans, and test suites, and specify their current state. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create test cases](../../test/create-test-cases.md).
@@ -128,7 +128,7 @@ In addition, consider the following actions:
 - Consider what data you want to report on and choose the correct EntityType. For a review of available EntityTypes to query, see [Data model-Branch, Pipelines, and Test EntityTypes and EntitySets](../extend-analytics/data-model-analytics-service.md#branch-pipelines-and-test-entitytypes-and-entitysets). 
 - Consider which pipelines you want to report on and the date range of your report. You'll want to filter your data so as to meet [query best practices](analytics-best-practices.md) and minimize any performance issues.
 
-### Pipelines and Test 
+### Pipelines and test 
 
 To report on pipelines and tests results, make sure you add test tasks to the pipeline definition. To learn more, see [Build and release tasks-Test](../../pipelines/tasks/index.md#test). 
 
