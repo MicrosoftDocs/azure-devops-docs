@@ -1029,31 +1029,31 @@ Use features supported by these familiar clients to manage your project and illu
         pipelines\tasks\build\media  
   
         :::image type="icon" source="../pipelines/tasks/build/media/android-build.png":::
-        &#160;&#160;[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)  
+        &#160;&#160;[Build an Android app using Gradle](/azure/devops/pipelines/tasks/reference/gradle-v3)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/android-signing.png":::
-        &#160;&#160;[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)  
+        &#160;&#160;[Sign and align Android APK files](/azure/devops/pipelines/tasks/reference/android-signing-v3)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/ant.png":::
-        &#160;&#160;[Build with Apache Ant](../pipelines/tasks/build/ant.md)  
+        &#160;&#160;[Build with Apache Ant](/azure/devops/pipelines/tasks/reference/ant-v1)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/gradle.png":::
-        &#160;&#160;[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)  
+        &#160;&#160;[Build using a Gradle wrapper script](/azure/devops/pipelines/tasks/reference/gradle-v3)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/grunt.png":::
-        &#160;&#160;[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)  
+        &#160;&#160;[Grunt: The JavaScript Task Runner](/azure/devops/pipelines/tasks/reference/grunt-v0)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/gulp.png":::
-        &#160;&#160;[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)  
+        &#160;&#160;[Gulp: Node.js task-based build system](/azure/devops/pipelines/tasks/reference/gulp-v1)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/publish-build-artifacts.png":::
-        &#160;&#160;[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)  
+        &#160;&#160;[Index source code and publish symbols](/azure/devops/pipelines/tasks/reference/publish-symbols-v2)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/maven.png":::
-        &#160;&#160;[Build with Apache Maven](../pipelines/tasks/build/maven.md)  
+        &#160;&#160;[Build with Apache Maven](/azure/devops/pipelines/tasks/reference/maven-v3)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/msbuild.png":::
-        &#160;&#160;[Build with MSbuild](../pipelines/tasks/build/msbuild.md)  
+        &#160;&#160;[Build with MSbuild](/azure/devops/pipelines/tasks/reference/msbuild-v1)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/sonarqube.png":::
         &#160;&#160;[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)  
@@ -1062,10 +1062,10 @@ Use features supported by these familiar clients to manage your project and illu
         &#160;&#160;[Visual Studio and MSbuild](/azure/devops/pipelines/tasks/reference/vsbuild-v1)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/xamarin-android.png":::
-        &#160;&#160;[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)  
+        &#160;&#160;[Build an Android app with Xamarin](/azure/devops/pipelines/tasks/reference/xamarin-android-v1)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/xamarin-ios.png":::
-        &#160;&#160;[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)  
+        &#160;&#160;[Build an iOS app with Xamarin on macOS](/azure/devops/pipelines/tasks/reference/xamarin-ios-v2)  
   
         **Build variables**  
   

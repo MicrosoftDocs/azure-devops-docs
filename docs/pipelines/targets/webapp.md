@@ -21,7 +21,7 @@ Use [Azure Pipelines](/azure/devops/pipelines/) to automatically deploy your web
 
 YAML pipelines are defined using a YAML file in your repository. A step is the smallest building block of a pipeline and can be a script or task (pre-packaged script). [Learn about the key concepts and components that make up a pipeline](/azure/devops/pipelines/get-started/key-pipelines-concepts).
 
-You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. For more complicated scenarios such as needing to use XML parameters in your deploy, you can use the [Azure App Service Deploy task](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4).  
+You'll use the [Azure Web App task](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) to deploy to Azure App Service in your pipeline. For more complicated scenarios such as needing to use XML parameters in your deploy, you can use the [Azure App Service Deploy task](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4).  
 
 To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an Azure Web App Container](webapp-on-container-linux.md). 
 
@@ -100,7 +100,7 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet-win 
 
 ###  Add the Azure Web App task
 
-1. Use the Task assistant to add the [Azure Web App](../tasks/deploy/azure-rm-web-app.md) task. 
+1. Use the Task assistant to add the [Azure Web App](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task. 
    
    :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app task.":::
 
@@ -485,7 +485,7 @@ a Web.config transformation or by substituting variables in your Web.config file
 ::: moniker range="> tfs-2018"
 
 > [!NOTE]  
-> File transforms and variable substitution are also supported by the separate [File Transform task](../tasks/utility/file-transform.md) for use in Azure Pipelines.
+> File transforms and variable substitution are also supported by the separate [File Transform task](/azure/devops/pipelines/tasks/reference/file-transform-v2) for use in Azure Pipelines.
 You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
 
 ::: moniker-end

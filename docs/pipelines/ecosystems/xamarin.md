@@ -78,7 +78,7 @@ pool:
 
 ## Build a Xamarin.Android app
 
-To build a Xamarin.Android app, add the following snippet to your `azure-pipelines.yml` file. Change values to match your project configuration. For more information about options, see the [Xamarin.Android](../tasks/build/xamarin-android.md) task.
+To build a Xamarin.Android app, add the following snippet to your `azure-pipelines.yml` file. Change values to match your project configuration. For more information about options, see the [Xamarin.Android](/azure/devops/pipelines/tasks/reference/xamarin-android-v1) task.
 
 ```yaml
 variables:
@@ -107,7 +107,7 @@ For information about signing your app, see [Sign your mobile Android app during
 
 ## Build a Xamarin.iOS app
 
-To build a Xamarin.iOS app, add the following snippet to your `azure-pipelines.yml` file. Change values to match your project configuration. For more information about options, see the [Xamarin.iOS](../tasks/build/xamarin-ios.md) task.
+To build a Xamarin.iOS app, add the following snippet to your `azure-pipelines.yml` file. Change values to match your project configuration. For more information about options, see the [Xamarin.iOS](/azure/devops/pipelines/tasks/reference/xamarin-ios-v2) task.
 
 ```yaml
 variables:
@@ -126,7 +126,7 @@ steps:
 
 To generate a signed and provisioned Xamarin.iOS app .ipa package, set `packageApp` to `true`. Make sure you already installed the right Apple Provisioning Profile and Apple Certificates that match your App Bundle ID into the agent running the job.
 
-To fulfill these mandatory requisites, use the Microsoft Provided tasks for [installing an Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) and [installing Apple Certificates](../tasks/utility/install-apple-certificate.md).
+To fulfill these mandatory requisites, use the Microsoft Provided tasks for [installing an Apple Provisioning Profile](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) and [installing Apple Certificates](/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2).
 
 ```yaml
 - task: XamariniOS@2

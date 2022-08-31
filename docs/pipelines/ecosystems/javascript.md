@@ -87,7 +87,7 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
 
 1. **Edit** your *azure-pipelines.yml* file.
 
-1. Update the [Node.js Tool Installer task](../tasks/tool/node-js.md) to use Node.js version 16 LTS.
+1. Update the [Node.js Tool Installer task](/azure/devops/pipelines/tasks/reference/node-tool-v0) to use Node.js version 16 LTS.
 
     ```yaml
     trigger:

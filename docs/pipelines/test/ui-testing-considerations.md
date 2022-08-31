@@ -138,7 +138,7 @@ the **tscon** command as described above.
 
 > [!NOTE]
 > The screen resolution utility task runs on the unified build/release/test agent, and cannot be used with
-> the deprecated [Run Functional Tests task](../tasks/test/run-functional-tests.md).
+> the deprecated [Run Functional Tests task](/azure/devops/pipelines/tasks/reference/run-visual-studio-testsusing-test-agent-v1).
 
 ## Troubleshooting failures in UI tests
 
@@ -180,7 +180,7 @@ format.
 Result attachments cannot be published if you use JUnit or xUnit test results. This is because these test result formats do not have a formal definition for attachments in the results schema. You can use one of the below approaches to publish test attachments instead.
 
 * If you are running tests in the build (CI) pipeline, you can use the
-  [Copy and Publish Build Artifacts](../tasks/utility/copy-and-publish-build-artifacts.md) task to publish any additional files created in your tests.
+  [Copy and Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/copy-publish-build-artifacts-v1) task to publish any additional files created in your tests.
   These will appear in the **Artifacts** page of your build summary. 
 
 * Use the REST APIs to publish the necessary attachments. Code samples can be found

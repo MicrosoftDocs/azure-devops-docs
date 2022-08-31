@@ -64,9 +64,9 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
   - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)
 
 * **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2)
-  that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
-  [Maven](../tasks/build/maven.md), [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and
-  [Xcode](../tasks/build/xcode.md) that provide this capability as an option within the task.  
+  that automatically publish test results to the pipeline, or others such as [Ant](/azure/devops/pipelines/tasks/reference/ant-v1),
+  [Maven](/azure/devops/pipelines/tasks/reference/maven-v3), [Gulp](/azure/devops/pipelines/tasks/reference/gulp-v1), [Grunt](/azure/devops/pipelines/tasks/reference/grunt-v0), and
+  [Xcode](/azure/devops/pipelines/tasks/reference/xcode-v5) that provide this capability as an option within the task.  
 
 * **Publish Test Results task**. Task that publishes test results to Azure Pipelines or TFS when tests are executed using
   your choice of runner, and results are available in any of the [supported test result formats](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 

@@ -94,13 +94,13 @@ Depending on the scenario, sometimes you may need to add manual intervention to 
     :::image type="content" source="media/deploy-using-approvals/manual-intervention-task.png" alt-text="Configure the Manual Intervention task":::
 
    You can specify a list of users to be notified when the deployment is pending manual approval. You can also specify a timeout and the action (approve or reject)
-   that occur if no intervention within the timeout period. See the [Manual Intervention](../tasks/utility/manual-intervention.md) task for more details.
+   that occur if no intervention within the timeout period. See the [Manual Intervention](/azure/devops/pipelines/tasks/reference/manual-intervention-v8) task for more details.
 
 1. Select **Save** when you are done.
 
 ## Set up manual validation 
 
-You can use the [manual validation](../tasks/utility/manual-validation.md) task in your YAML to pause the pipeline run and wait for manual approval. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build packages before starting a computation-intensive job.
+You can use the [manual validation](/azure/devops/pipelines/tasks/reference/manual-validation-v0) task in your YAML to pause the pipeline run and wait for manual approval. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build packages before starting a computation-intensive job.
 
 The `waitForValidation` job pauses the run and triggers a prompt within the Pipeline UI to review and validate the task. The email addresses listed in `notifyUsers` receive a notification to approve or deny the pipeline run. 
 

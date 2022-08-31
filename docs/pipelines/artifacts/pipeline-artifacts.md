@@ -31,7 +31,7 @@ steps:
 ```
 
 > [!NOTE]
-> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](../tasks/utility/publish-pipeline-artifact.md) .
+> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) .
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -339,7 +339,7 @@ stages:
 
 ## Migrate from build artifacts
 
-Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) can still be downloaded using [Download Build Artifacts](../tasks/utility/download-build-artifacts.md), but we recommend using the latest [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task instead.
+Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) can still be downloaded using [Download Build Artifacts](/azure/devops/pipelines/tasks/reference/download-build-artifacts-v1), but we recommend using the latest [Download Pipeline Artifact](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) task instead.
 
 When migrating from build artifacts to pipeline artifacts:
 
