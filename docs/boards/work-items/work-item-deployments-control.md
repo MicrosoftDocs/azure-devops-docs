@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 11/07/2021
+ms.date: 08/26/2022
 --- 
 
 # Link work items to builds and deployments in Azure Boards
