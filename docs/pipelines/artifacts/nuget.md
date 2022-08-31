@@ -110,7 +110,7 @@ From the **NuGet task** in your pipeline definition, select **Pack options**, an
 - - -
 
 > [!NOTE]
-> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) for more details.
+> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) for more details.
 
 
 ```yaml

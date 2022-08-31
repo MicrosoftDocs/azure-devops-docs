@@ -16,9 +16,9 @@ monikerRange: '<= azure-devops'
 Use a pipeline to automatically build and test your .NET Core projects. Learn how to do the following tasks:
 
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
-* Restore dependencies, build your project, and test with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) or a [script](../scripts/cross-platform-scripting.md).
+* Restore dependencies, build your project, and test with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
 * Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Package and deliver your code with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) and the [publish build artifacts task](../tasks/utility/publish-build-artifacts.md).
+* Package and deliver your code with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) and the [publish build artifacts task](../tasks/utility/publish-build-artifacts.md).
 * Publish to a [NuGet feed](../artifacts/nuget.md).
 * Deploy your [web app to Azure](../targets/webapp.md).
 
@@ -188,13 +188,13 @@ Make sure that you have the necessary version of the .NET Core SDK and runtime i
 
 ## Restore dependencies
 
-NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the [.NET Core](../tasks/build/dotnet-core-cli.md) task or directly in a script in your pipeline.
+NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running the `dotnet restore` command either through the [.NET Core](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task or directly in a script in your pipeline.
 
 ::: moniker range=">= tfs-2018"
 
 You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds.
 
-This pipeline uses an artifact feed for `dotnet restore` in the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md). 
+This pipeline uses an artifact feed for `dotnet restore` in the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2). 
 
 ```yaml
 trigger:

@@ -112,7 +112,7 @@ The operating system processor architecture of the agent host. Valid values are:
 <tr>
 <td>Agent.TempDirectory</td>
 <td>
-<p>A temporary folder that is cleaned after each pipeline job. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/build/dotnet-core-cli">.NET Core CLI task</a> to hold temporary items like test results before they are published.</p>
+<p>A temporary folder that is cleaned after each pipeline job. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2">.NET Core CLI task</a> to hold temporary items like test results before they are published.</p>
 <p>For example: <code>/home/vsts/work/_temp</code> for Ubuntu</p>
 </td>
 </tr>
