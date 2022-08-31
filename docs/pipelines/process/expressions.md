@@ -421,6 +421,22 @@ steps:
 * Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
 ::: moniker-end
 
+::: moniker range=">= azure-devops"
+
+### split
+* Splits a string into substrings based on the specified delimiting characters 
+* Min parameters: 2. Max parameters: 2
+* Example: 
+  ```yml
+  variables:
+  - name: environments
+    value: prod1,prod2 
+  steps:  
+    - ${{ each env in split(parameters.environments, ',')}}:
+        - script: ./deploy.sh --environment ${{ env }}
+  ```
+
+::: moniker-end
 
 ### startsWith
 * Evaluates `True` if left parameter string starts with right parameter
