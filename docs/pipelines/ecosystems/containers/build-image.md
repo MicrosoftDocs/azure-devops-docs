@@ -65,7 +65,7 @@ Once you build an image, you'll push the image to Azure Container Registry, Dock
    > [!TIP]
    > Learn more about how to push the image to [Azure Container Registry](acr-template.md) or [push it other container registries](./push-image.md) such as Google Container Registry or Docker Hub.
    > Learn more about the [Docker task](../../tasks/build/docker.md) used in the above sample.
-   > Instead of using the recommended Docker task, it is also possible to invoke docker commands directly using a [command line task](../../tasks/utility/command-line.md)(script)
+   > Instead of using the recommended Docker task, it is also possible to invoke docker commands directly using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2)(script)
 
 ## Clean up resources
 

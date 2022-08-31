@@ -306,7 +306,7 @@ A major feature of the new build system is its emphasis on using scripts to cust
 
 * [PowerShell scripts](/azure/devops/pipelines/tasks/reference/powershell-v2) (Windows)
 * [Batch scripts](../tasks/utility/batch-script.md) (Windows)
-* [Command prompt](../tasks/utility/command-line.md)
+* [Command prompt](/azure/devops/pipelines/tasks/reference/cmd-line-v2)
 * [Shell scripts](../tasks/utility/shell-script.md) (macOS and Linux)
 
 > [!TIP]
