@@ -18,20 +18,20 @@ ms.date: 08/16/2021
 
 If you have a project that's no longer valid, you can delete it from your organization or collection in Azure DevOps. Or, if you are migrating from an on-premises Azure DevOps Server to Azure DevOps Services, you'll need to delete project(s). Deleting projects also helps to simplify navigating to only those projects that are in use. 
 
-> [!Caution]
+> [!CAUTION]
 > Deleting projects from the web portal generate a soft-delete where projects get permanently deleted if not restored within 28 days. Projects deleted from the on-premises Azure DevOps Administration Console undergo a hard delete and cannot be restored. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
 
 ## Prerequisites
 
 ::: moniker range="azure-devops" 
 
-- You must be a member of the **Project Administrators** group or have the project-level **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the project-level **Delete team project** permission set to **Allow**. Organization owners are automatically members of this group. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"  
 
-- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see  [Change project-level permissions](../security/change-project-level-permissions.md).
+- You must be a member of the **Project Administrators** group or have the **Delete team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).
 
 ::: moniker-end  
 
