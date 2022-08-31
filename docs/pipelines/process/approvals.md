@@ -83,7 +83,7 @@ Given the high flexibility, Azure functions provide a great way to author your o
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
-The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](../tasks/deploy/azure-function-app.md) for more details.
+The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](/azure/devops/pipelines/tasks/reference/azure-function-app-v1) for more details.
 
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the predefined variables and variables from the linked variable group in the request body.

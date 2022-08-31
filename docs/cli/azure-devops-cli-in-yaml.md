@@ -173,7 +173,7 @@ Installing Azure CLI and Azure DevOps CLI extension on your self-hosted agent wh
 The following example of configuring Azure CLI and Azure DevOps CLI extension on a self-hosted agent using a pipeline has the following prerequisites.
 
 * Install Azure CLI using Python
-  * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+  * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
   ```yml
   # Specify python version if you have side-by-side versions
   - task: UsePythonVersion@0
