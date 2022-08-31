@@ -276,7 +276,7 @@ Azure Pipelines can run parallel Tox test jobs to split up the work. On a develo
 
 ### Publish test results
 
-Add the [Publish Test Results task](../tasks/test/publish-test-results.md) to publish JUnit or xUnit test results to the server:
+Add the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) to publish JUnit or xUnit test results to the server:
 
 ```yaml
 - task: PublishTestResults@2

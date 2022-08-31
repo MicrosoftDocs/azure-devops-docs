@@ -69,7 +69,7 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
   [Xcode](../tasks/build/xcode.md) that provide this capability as an option within the task.  
 
 * **Publish Test Results task**. Task that publishes test results to Azure Pipelines or TFS when tests are executed using
-  your choice of runner, and results are available in any of the [supported test result formats](../tasks/test/publish-test-results.md). 
+  your choice of runner, and results are available in any of the [supported test result formats](/azure/devops/pipelines/tasks/reference/publish-test-results-v2). 
 
 * **API(s)**. Test results published directly by using the [Test Management API(s)](/rest/api/azure/devops/test/results/list).
 

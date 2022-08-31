@@ -97,7 +97,7 @@ To execute Rake in the context of the current bundle (as defined in your Gemfile
 
 The sample code includes unit tests written using [RSpec](https://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter. 
 
-Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit style test results to the server. You get a rich test reporting experience that you can use for troubleshooting any failed tests and for test timing analysis.
+Add the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task to publish JUnit style test results to the server. You get a rich test reporting experience that you can use for troubleshooting any failed tests and for test timing analysis.
 
 ```yaml
 - task: PublishTestResults@2

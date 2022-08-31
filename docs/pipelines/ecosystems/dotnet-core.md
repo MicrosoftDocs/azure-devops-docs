@@ -418,7 +418,7 @@ steps:
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 ```
 
-If you choose to run the `dotnet test` command, specify the test results logger and coverage options. Then use the [Publish Test Results](../tasks/test/publish-test-results.md) task:
+If you choose to run the `dotnet test` command, specify the test results logger and coverage options. Then use the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task:
 
 ```yaml
 steps:

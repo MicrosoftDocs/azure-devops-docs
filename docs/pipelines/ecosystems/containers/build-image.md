@@ -64,7 +64,7 @@ Once you build an image, you'll push the image to Azure Container Registry, Dock
 
    > [!TIP]
    > Learn more about how to push the image to [Azure Container Registry](acr-template.md) or [push it other container registries](./push-image.md) such as Google Container Registry or Docker Hub.
-   > Learn more about the [Docker task](../../tasks/build/docker.md) used in the above sample.
+   > Learn more about the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) used in the above sample.
    > Instead of using the recommended Docker task, it is also possible to invoke docker commands directly using a [command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2)(script)
 
 ## Clean up resources
@@ -107,7 +107,7 @@ steps:
 
 ### How can I use a self-hosted agent?
 
-You need to have Docker installed on your self-hosted machine before creating a container image. Add the [Docker installer task](../../tasks/tool/docker-installer.md) in your pipeline before to the [Docker task](../../tasks/build/docker.md) that builds your image. 
+You need to have Docker installed on your self-hosted machine before creating a container image. Add the [Docker installer task](../../tasks/tool/docker-installer.md) in your pipeline before to the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) that builds your image. 
 
 
 ### How can I create a script-based Docker build instead of using the docker task?
@@ -119,7 +119,7 @@ docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
 ```
 
 This command creates an equivalent image to one built with the Docker task. 
-The Docker task itself internally calls the Docker binary on a script, and also stitches together a few more commands to provide a few more benefits. Learn more in the [Docker task documentation](../../tasks/build/docker.md).
+The Docker task itself internally calls the Docker binary on a script, and also stitches together a few more commands to provide a few more benefits. Learn more in the [Docker task documentation](/azure/devops/pipelines/tasks/reference/docker-v2).
 
 ### Is reutilizing layer caching during builds possible on Azure Pipelines?
 
