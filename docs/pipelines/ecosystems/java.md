@@ -206,7 +206,7 @@ To build with a command line or script, add one of the following snippets to you
 
 #### Inline script
 
-The `script:` step runs an inline script using Bash on Linux and macOS and Command Prompt on Windows. For details, see the [Bash](../tasks/utility/bash.md) or [Command line](/azure/devops/pipelines/tasks/reference/powershell-v2) task.
+The `script:` step runs an inline script using Bash on Linux and macOS and Command Prompt on Windows. For details, see the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) or [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task.
 
 ```yaml
 steps:
