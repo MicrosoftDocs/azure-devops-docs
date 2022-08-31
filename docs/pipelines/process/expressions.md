@@ -426,6 +426,9 @@ steps:
 ### split
 * Splits a string into substrings based on the specified delimiting characters 
 * Min parameters: 2. Max parameters: 2
+* The first parameter is the string to split
+* The second parameter is the delimiting characters
+* Returns an array of substrings. The array includes empty strings when the delimiting characters appear consecutively or at the end of the string
 * Example: 
   ```yml
   variables:
