@@ -11,6 +11,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
 Use this task to build and deploy an Azure Static Web App.
+This task only works on Linux build agents.
 
 ## YAML snippet
 
