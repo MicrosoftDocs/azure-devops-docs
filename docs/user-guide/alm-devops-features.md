@@ -1059,7 +1059,7 @@ Use features supported by these familiar clients to manage your project and illu
         &#160;&#160;[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/visual-studio-build.png":::
-        &#160;&#160;[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)  
+        &#160;&#160;[Visual Studio and MSbuild](/azure/devops/pipelines/tasks/reference/vsbuild-v1)  
   
         :::image type="icon" source="../pipelines/tasks/build/media/xamarin-android.png":::
         &#160;&#160;[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)  

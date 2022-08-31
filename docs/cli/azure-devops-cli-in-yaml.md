@@ -19,7 +19,7 @@ ms.date: 09/22/2021
 If you wish to use Azure DevOps CLI with a YAML pipeline, you can use the following example to understand how YAML can be used to install Azure CLI, add the Azure DevOps extension, and run Azure DevOps CLI commands.
 
 > [!NOTE]
-> The steps in this article show how to authenticate with Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](../pipelines/tasks/deploy/azure-cli.md).
+> The steps in this article show how to authenticate with Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2).
 
 ## Authenticate with Azure DevOps
 

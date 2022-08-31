@@ -37,5 +37,5 @@ If the built-in tasks don't meet your needs, you can use other methods to script
 View the YAML snippets in each of the following tasks for some examples:
 
 * [Azure PowerShell task](../../../tasks/deploy/azure-powershell.md)
-* [Azure CLI task](../../../tasks/deploy/azure-cli.md)
+* [Azure CLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2)
 * [FTP task](../../../tasks/utility/ftp-upload.md)

@@ -122,7 +122,7 @@ It is often required to build your app in multiple configurations. The following
 
 ## Restore dependencies
 
-You can use the [NuGet task](../../tasks/package/nuget.md) to install and update NuGet package dependencies. 
+You can use the [NuGet task](/azure/devops/pipelines/tasks/reference/nu-get-command-v2) to install and update NuGet package dependencies. 
 You can also download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository with the NuGet task. 
 
 This code restores a solution from a project-scoped feed in the same organization. 

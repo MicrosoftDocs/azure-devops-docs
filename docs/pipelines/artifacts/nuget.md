@@ -22,7 +22,7 @@ There are various ways to create your NuGet packages such as using Visual Studio
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-To create a NuGet package, add the following snippet to your pipeline YAML file. See [NuGet task](../tasks/package/nuget.md) for more details.
+To create a NuGet package, add the following snippet to your pipeline YAML file. See [NuGet task](/azure/devops/pipelines/tasks/reference/nu-get-command-v2) for more details.
 
 ```yaml
 - task: NuGetCommand@2
