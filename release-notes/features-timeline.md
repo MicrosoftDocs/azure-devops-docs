@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/14/2022
+ms.date: 8/10/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,9 +35,6 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="1"><strong>2022 Q2</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
-    </tr>
 <tr><td rowspan="7"><strong>2022 Q3</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954" data-raw-source="[Associate all public APIs with PAT scopes](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954)">Associate all public APIs with PAT scopes</a></td><td>General</td><td>TBD</td>    
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032 data-raw-source="[Adding Assigned To avatar to child items on cards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032)">Adding Assigned To avatar to child items on cards</a></td><td>Boards</td><td>Future</td>
@@ -119,6 +116,22 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="3"><a href="2022/sprint-208-update.md" data-raw-source="[12 August 2022](2022/sprint-208-update.md)"> 12 August 2022</a></td>
+    <td>Improved error message when failing to load pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>General availability of Ubuntu 22.04 for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Announcing deprecation of Ubuntu 18.04 images</td><td>Pipelines</td><td>N/A</td></tr>
+</tr>
+    <td rowspan="9"><a href="2022/sprint-207-update.md" data-raw-source="[28 July 2022](2022/sprint-207-update.md)"> 28 July 2022</a></td>
+    <td>Pipelines REST API Security Improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use proxy URLs for GitHub Enterprise integration</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Scheduled builds improvements</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updates to "Run stage state changed" service hook event</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Change in the default scope of access tokens in classic build pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Azure Pipelines support for San Diego release of ServiceNow</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Announcing retirement of Windows 2016 image</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Announcing deprecation of macOS 10.15 Catalina images</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Updated default feed permissions</td><td>Artifacts</td><td>Future</td></tr>
+</tr>
     <td rowspan="5"><a href="2022/sprint-206-update.md" data-raw-source="[14 July 2022](2022/sprint-206-update.md)"> 14 July 2022</a></td>
     <td>Filter on work item history</td><td>Boards</td><td>Future</td></tr> 
     <td>Last Accessed column on Delivery Plans page</td><td>Board</td><td>Future</td></tr>
@@ -127,155 +140,164 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Current project set as default scope for build access token in classic pipelines</td><td>Pipelines</td><td>Future</td></tr>
 </tr>
     <td rowspan="7"><a href="2022/sprint-205-update.md" data-raw-source="[27 June 2022](2022/sprint-205-update.md)"> 27 June 2022</a></td>
-    <td>Project Collection Administrators can opt-in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>Future</td></tr> 
-    <td>Enforcing security validation for all Azure DevOps requests</td><td>General</td><td>Future</td></tr>
-    <td>Assigned To children in Kanban cards</td><td>Boards</td><td>Future</td></tr>
+    <td>Project Collection Administrators can opt-in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>N/A</td></tr> 
+    <td>Enforcing security validation for all Azure DevOps requests</td><td>General</td><td>N/A</td></tr>
+    <td>Assigned To children in Kanban cards</td><td>Boards</td><td>2022</td></tr>
     <td>General availability of Query by Parent Id</td><td>Boards</td><td>Future</td></tr>
-    <td>Support Group Managed Service Accounts as agent service account</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Informational runs</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Build Definition REST API retentionRules property is obsolete</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support Group Managed Service Accounts as agent service account</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Informational runs</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Build Definition REST API retentionRules property is obsolete</td><td>Pipelines</td><td>2022</td></tr>
 </tr>
     <td rowspan="4"><a href="2022/sprint-204-update.md" data-raw-source="[2 June 2022](2022/sprint-204-update.md)"> 2 June 2022</a></td> 
-    <td>Improved "Show more items" UX</td><td>Boards</td><td>Future</td></tr>
-    <td>General availability of Copy Dashboard</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved "Show more items" UX</td><td>Boards</td><td>2022</td></tr>
+    <td>General availability of Copy Dashboard</td><td>Boards</td><td>2022</td></tr>
     <td>Ubuntu 22.04 in preview for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Preview of macOS 12 Monterey for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
 </tr>
     <td rowspan="4"><a href="2022/sprint-203-update.md" data-raw-source="[4 May 2022](2022/sprint-203-update.md)"> 4 May 2022</a></td> 
     <td>Query by Parent Id (private preview)</td><td>Boards</td><td>Future</td></tr>
-    <td>Move to column position on Kanban Board</td><td>Boards</td><td>Future</td></tr>
-    <td>Added "Will not Fix" value to Bug reason field</td><td>Boards</td><td>Future</td></tr>
-    <td>Upstream cross-organization packages</td><td>Artifacts</td><td>Future</td></tr>
+    <td>Move to column position on Kanban Board</td><td>Boards</td><td>2022</td></tr>
+    <td>Added "Will not Fix" value to Bug reason field</td><td>Boards</td><td>2022</td></tr>
+    <td>Upstream cross-organization packages</td><td>Artifacts</td><td>N/A</td></tr>
 </tr>
     <td rowspan="6"><a href="2022/sprint-202-update.md" data-raw-source="[20 April 2022](2022/sprint-202-update.md)"> 20 April 2022</a></td> 
-    <td>Auditing is now an opt-in feature for your organization</td><td>General</td><td>Future</td></tr>
-    <td>Fixed looping login issue due to incorrectly configured IP conditional access policies</td><td>General</td><td>Future</td></tr>
-    <td>Guest users will only see public user data</td><td>General</td><td>Future</td></tr>
-    <td>New Boards Hub now available in public preview</td><td>Boards</td><td>Future</td></tr>
-    <td>Extend YAML pipelines template to pass stage, job, and deployment context information</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Auditing is now an opt-in feature for your organization</td><td>General</td><td>N/A</td></tr>
+    <td>Fixed looping login issue due to incorrectly configured IP conditional access policies</td><td>General</td><td>N/A</td></tr>
+    <td>Guest users will only see public user data</td><td>General</td><td>N/A</td></tr>
+    <td>New Boards Hub now available in public preview</td><td>Boards</td><td>2022</td></tr>
+    <td>Extend YAML pipelines template to pass stage, job, and deployment context information</td><td>Pipelines</td><td>2022</td></tr>
     <td>Updated retirement date for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
 </tr>
     <td rowspan="4"><a href="2022/sprint-201-update.md" data-raw-source="[29 March 2022](2022/sprint-201-update.md)">29 March 2022</a></td> 
-    <td>Remove the ability to download a deleted attachment from work item history</td><td>Boards</td><td>Future</td></tr>
-    <td>New extension points for Pipelines details view</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Improved migration to Azure DevOps Services</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Improvement to Pipelines Runs REST API</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Remove the ability to download a deleted attachment from work item history</td><td>Boards</td><td>2022</td></tr>
+    <td>New extension points for Pipelines details view</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Improved migration to Azure DevOps Services</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Improvement to Pipelines Runs REST API</td><td>Pipelines</td><td>2022</td></tr>
 </tr> 
     <td rowspan="3"><a href="2022/sprint-200-update.md" data-raw-source="[28 February 2022](2022/sprint-200-update.md)">28 February 2022</a></td> 
-    <td>Updates to Azure File Copy task</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Improvement to user interface</td><td>Artifacts</td><td>Future</td></tr>
-    <td>Support for additional diagram types in wiki pages</td><td>Wiki</td><td>Future</td></tr>
+    <td>Updates to Azure File Copy task</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Improvement to user interface</td><td>Artifacts</td><td>N/A</td></tr>
+    <td>Support for additional diagram types in wiki pages</td><td>Wiki</td><td>2022</td></tr>
 </tr> 
     <td rowspan="3"><a href="2022/sprint-199-update.md" data-raw-source="[11 February 2022](2022/sprint-199-update.md)">11 February 2022</a></td> 
-    <td>Improvements to strengthen security in Azure DevOps</td><td>General</td><td>Future</td></tr>
-    <td>Changes to third-party applications access</td><td>General</td><td>Future</td></tr>
+    <td>Improvements to strengthen security in Azure DevOps</td><td>General</td><td>N/A</td></tr>
+    <td>Changes to third-party applications access</td><td>General</td><td>N/A</td></tr>
     <td>Pipelines Agent runtime upgrade planning</td><td>Pipelines</td><td>N/A</td></tr>
 </tr> 
     <td rowspan="2"><a href="2022/sprint-198-update.md" data-raw-source="[19 January 2022](2022/sprint-198-update.md)">19 January 2022</a></td> 
-    <td>The default agent specification for pipelines will be Windows-2022 </td><td>Pipelines</td><td>N/A</td></tr>
-    <td>Pipeline folder rename validates permissions</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>The default agent specification for pipelines will be Windows-2022 </td><td>Pipelines</td><td>2022</td></tr>
+    <td>Pipeline folder rename validates permissions</td><td>Pipelines</td><td>2022</td></tr>
     <td rowspan="2"><a href="2021/sprint-196-update.md" data-raw-source="[6 December 2021](2021/sprint-196-update.md)">6 December 2021</a></td> 
     <td>Announcing retirement of macOS 10.14 Mojave images</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Brownout schedule for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
     <td rowspan="7"><a href="2021/sprint-195-update.md" data-raw-source="[16 November 2021](2021/sprint-195-update.md)">16 November 2021</a></td> 
-    <td>Assign Azure DevOps Administrator role to an Azure AD group</td><td>General</td><td>Future</td></tr>
-    <td>Automatic retries for a task</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Consume inputs from another task in a decorator</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Improvements to service connections usage history</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Assign Azure DevOps Administrator role to an Azure AD group</td><td>General</td><td>N/A</td></tr>
+    <td>Automatic retries for a task</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Consume inputs from another task in a decorator</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Improvements to service connections usage history</td><td>Pipelines</td><td>N/A</td></tr>
     <td>The default agent specification for Classic pipelines is now Windows-2019</td><td>Pipelines</td><td>N/A</td></tr>
-    <td>Improvements to Copy Dashboard</td><td>Reporting</td><td>Future</td></tr>
-    <td>Filter on null values in burndown chart widget</td><td>Reporting</td><td>Future</td></tr>
+    <td>Improvements to Copy Dashboard</td><td>Reporting</td><td>2022</td></tr>
+    <td>Filter on null values in burndown chart widget</td><td>Reporting</td><td>2022</td></tr>
     <td rowspan="5"><a href="2021/sprint-194-update.md" data-raw-source="[19 October 2021](2021/sprint-194-update.md)">19 October 2021</a></td> 
-    <td>Post neutral status to GitHub when a build is skipped</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Access to all pipelines is turned off by default in protected resources</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Inject task before or after specified target tasks using a decorator</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Post neutral status to GitHub when a build is skipped</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Access to all pipelines is turned off by default in protected resources</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Inject task before or after specified target tasks using a decorator</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Announcing a deprecation schedule for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Announcing deprecation of macOS 10.14 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
     <td rowspan="7"><a href="2021/sprint-193-update.md" data-raw-source="[28 September 2021](2021/sprint-193-update.md)">28 September 2021</a></td> 
-    <td>Improved tenant switch requests reliability</td><td>General</td><td>Future</td></tr>
-    <td>Emphasize tags in Delivery Plans using colors</td><td>Boards</td><td>Future</td></tr>
-    <td>Filter cards based on boolean field types in Delivery Plans</td><td>Boards</td><td>Future</td></tr>
-    <td>Work item title are always visible in Delivery Plan cards</td><td>Boards</td><td>Future</td></tr>
-    <td>Show light green colored dependency icon for work items that have dependencies with no issues</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved tenant switch requests reliability</td><td>General</td><td>N/A</td></tr>
+    <td>Emphasize tags in Delivery Plans using colors</td><td>Boards</td><td>2022</td></tr>
+    <td>Filter cards based on boolean field types in Delivery Plans</td><td>Boards</td><td>2022</td></tr>
+    <td>Work item title are always visible in Delivery Plan cards</td><td>Boards</td><td>2022</td></tr>
+    <td>Show light green colored dependency icon for work items that have dependencies with no issues</td><td>Boards</td><td>2022</td></tr>
     <td>macOS-latest label will soon point to macOS-11 image</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Updated schedule for removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
     </tr> 
     <td rowspan="10"><a href="2021/sprint-192-update.md" data-raw-source="[8 September 2021](2021/sprint-192-update.md)">8 September 2021</a></td>
-    <td>New YAML conditional expressions</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Support for wild cards in path filters</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Support for multiple statuses in Bitbucket</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Allow contributors to skip seeking PR comments prior to build validation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>New YAML conditional expressions</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Support for wild cards in path filters</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Support for multiple statuses in Bitbucket</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Allow contributors to skip seeking PR comments prior to build validation</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Windows Server 2022 with Visual Studio 2022 is now available on Microsoft-hosted agents (preview)</td><td>Pipelines</td><td>N/A</td></tr>
     <td>General availability of macOS 11 Big Sur on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
-    <td>New TFVC pages are generally available</td><td>Repos</td><td>Future</td></tr>
-    <td>Configure branch creators to not get "Manage permissions" on their branches</td><td>Repos</td><td>Future</td></tr>
-    <td>Prevent fork users from voting on their upstream PRs</td><td>Repos</td><td>Future</td></tr>
+    <td>New TFVC pages are generally available</td><td>Repos</td><td>2022</td></tr>
+    <td>Configure branch creators to not get "Manage permissions" on their branches</td><td>Repos</td><td>2022</td></tr>
+    <td>Prevent fork users from voting on their upstream PRs</td><td>Repos</td><td>2022</td></tr>
     </tr>   
     <td rowspan="3"><a href="2021/sprint-191-update.md" data-raw-source="[19 August 2021](2021/sprint-191-update.md)">19 August 2021</a></td>
-    <td>Improve web experience to better handle re-authentication requests</td><td>General</td><td>Future</td></tr>
-    <td>Improvements to Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Improve web experience to better handle re-authentication requests</td><td>General</td><td>N/A</td></tr>
+    <td>Improvements to Delivery Plans</td><td>Boards</td><td>2022</td></tr>
     <td>Support for environment variables in Linux Scale Set agents</td><td>Pipelines</td><td>N/A</td></tr>
     </tr>   
     <td rowspan="5"><a href="2021/sprint-190-update.md" data-raw-source="[4 August 2021](2021/sprint-190-update.md)">29 July 2021</a></td>
-    <td>Display correct persona on commit links</td><td>Boards</td><td>Future</td></tr>
-    <td>Support queuing or serial deployments as an option in exclusive lock check</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Support for Quebec version of ServiceNow</td><td>Pipelines</td><td>N/A</td></tr>
-    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Windows and macOS agents</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Changes to PublishBuildArtifacts and DownloadBuildArtifacts tasks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Display correct persona on commit links</td><td>Boards</td><td>2022</td></tr>
+    <td>Support queuing or serial deployments as an option in exclusive lock check</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Support for Quebec version of ServiceNow</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Windows and macOS agents</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Changes to PublishBuildArtifacts and DownloadBuildArtifacts tasks</td><td>Pipelines</td><td>N/A</td></tr>
     </tr>    
     <td rowspan="6"><a href="2021/sprint-188-update.md" data-raw-source="[17 June 2021](2021/sprint-188-update.md)">17 June 2021</a></td>
-    <td>Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</td><td>General</td><td>Future</td></tr>
-    <td>Conditional access policy support for IPv6 traffic</td><td>General</td><td>Future</td></tr>
-    <td>Retain pipelines that are consumed in other pipelines</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Changes in the automatic creation of environments</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Remove Insights dialogue from Build Pipeline</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Updates to Team Foundation Version Control (TFVC) Windows Shell extension for Visual Studio 2019</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</td><td>General</td><td>N/A</td></tr>
+    <td>Conditional access policy support for IPv6 traffic</td><td>General</td><td>N/A</td></tr>
+    <td>Retain pipelines that are consumed in other pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Changes in the automatic creation of environments</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Remove Insights dialogue from Build Pipeline</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Updates to Team Foundation Version Control (TFVC) Windows Shell extension for Visual Studio 2019</td><td>Pipelines</td><td>N/A</td></tr>
     </tr>    
     <td rowspan="7"><a href="2021/sprint-187-update.md" data-raw-source="[26 May 2021](2021/sprint-187-update.md)">26 May 2021</a></td>
-    <td>Delivery Plans 2.0 general availability</td><td>Board</td><td>Future</td></tr>
-    <td>New iteration capacity REST API</td><td>Board</td><td>Future</td></tr>
-    <td>Copy Dashboard is now available in public preview</td><td>Board</td><td>Future</td></tr>
-    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Permissions and checks on variable groups and secure files</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Preview of templates support in YAML editors</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Delivery Plans 2.0 general availability</td><td>Board</td><td>2022</td></tr>
+    <td>New iteration capacity REST API</td><td>Board</td><td>N/A</td></tr>
+    <td>Copy Dashboard is now available in public preview</td><td>Board</td><td>2022</td></tr>
+    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Permissions and checks on variable groups and secure files</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Preview of templates support in YAML editors</td><td>Pipelines</td><td>2022</td></tr>
     <td>Ubuntu-16.04 will be removed from Microsoft-hosted pools in September 2021</td><td>Pipelines</td><td>N/A</td></tr>
     </tr>
     <td rowspan="4"><a href="2021/sprint-186-update.md" data-raw-source="[05 May 2021](2021/sprint-186-update.md)">05 May 2021</a></td>
-    <td>PAT lifecycle management API general availability</td><td>General</td><td>Future</td></tr>
-    <td>Fixed several issues with Delivery Plans 2.0</td><td>Board</td><td>Future</td></tr>
-    <td>Repos as a protected resource in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Enable empty recycle bin for feeds</td><td>Artifacts</td><td>Future</td></tr>
+    <td>PAT lifecycle management API general availability</td><td>General</td><td>N/A</td></tr>
+    <td>Fixed several issues with Delivery Plans 2.0</td><td>Board</td><td>2022</td></tr>
+    <td>Repos as a protected resource in YAML pipelines</td><td>Pipelines</td><td>2022</td></tr>
+    <td>Enable empty recycle bin for feeds</td><td>Artifacts</td><td>N/A</td></tr>
     </tr>
     <td rowspan="2"><a href="2021/sprint-185-update.md" data-raw-source="[13 April 2021](2021/sprint-185-update.md)">13 April 2021</a></td>
-    <td>Delivery Plans 2.0 Dependency tracking cleanup</td><td>Boards</td><td>Future</td></tr>
+    <td>Delivery Plans 2.0 Dependency tracking cleanup</td><td>Boards</td><td>2022</td></tr>
     </tr>
-    <tr><td>Display custom work item types in burndown widget</td><td>Reporting</td><td>Future</td></tr>
+    <tr><td>Display custom work item types in burndown widget</td><td>Reporting</td><td>2022</td></tr>
+    <tr>
+    <td rowspan="6"><a href="2021/sprint-184-update.md" data-raw-source="[23 March 2021](2021/sprint-184-update.md)">23 March 2021</a></td>
+    <td>Changes to Azure Pipelines free grants</td><td>Pipelines</td><td>N/A</td></tr>
+    </tr>
+    <tr><td>Removal of per-pipeline retention policies in classic builds</td><td>Pipelines</td><td>2022</td></tr>
+    <tr><td>New controls for environment variables in pipelines</td><td>Pipelines</td><td>2022</td></tr>
+    <tr><td>Generate unrestricted token for fork builds</td><td>Pipelines</td><td>2022</td></tr>
+    <tr><td>Change in Az, Azure, and Azure RM preinstalled modules</td><td>Pipelines</td><td>N/A</td></tr>
+    <tr><td>Disable a repository</td><td>Repos</td><td>2022</td></tr>
     <tr>
     <td rowspan="7"><a href="2021/sprint-183-update.md" data-raw-source="[03 March 2021](2021/sprint-183-update.md)">03 March 2021</a></td>
-    <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td></tr>
+    <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>N/A</td></tr>
     </tr>
-    <tr><td>Hide Organization Settings</td><td>General</td><td>Future</td></tr>
-    <tr><td>Token management events now in Audit Logs</td><td>General</td><td>Future</td></tr>
-    <tr><td>PAT lifecycle management API (private preview)</td><td>General</td><td>Future</td></tr>
-    <tr><td>Approver details available in audit logs</td><td>Pipelines</td><td>Future</td></tr>
-    <tr><td>Change in process for obtaining free pipelines grant in public projects</td><td>Pipelines</td><td>Future</td></tr>
-    <tr><td>Changes to Azure Artifacts upstream behavior</td><td>Artifacts</td><td>Future</td></tr>
+    <tr><td>Hide Organization Settings</td><td>General</td><td>N/A</td></tr>
+    <tr><td>Token management events now in Audit Logs</td><td>General</td><td>N/A</td></tr>
+    <tr><td>PAT lifecycle management API (private preview)</td><td>General</td><td>N/A</td></tr>
+    <tr><td>Approver details available in audit logs</td><td>Pipelines</td><td>N/A</td></tr>
+    <tr><td>Change in process for obtaining free pipelines grant in public projects</td><td>Pipelines</td><td>N/A</td></tr>
+    <tr><td>Changes to Azure Artifacts upstream behavior</td><td>Artifacts</td><td>N/A</td></tr>
     <tr>
     <td rowspan="5"><a href="2021/sprint-182-update.md" data-raw-source="[04 February 2021](2021/sprint-182-update.md)">04 February 2021</a></td>
-    <td>Limited people-picker search and tagging</td><td>General</td><td>Future</td>
+    <td>Limited people-picker search and tagging</td><td>General</td><td>N/A</td>
     </tr>
-    <tr><td>Removed items on work items hub</td><td>Boards</td><td>Future</td></tr>
-    <tr><td>Delivery Plans 2.0: Increase team limit to 15</td><td>Boards</td><td>Future</td></tr>
-    <tr><td>.NET Core 3.0 to be removed from Linux and macOS hosted agents</td><td>Pipelines</td><td>Future</td></tr>
-    <tr><td>Group By Tags available in chart widgets</td><td>Reporting</td><td>Future</td></tr>
+    <tr><td>Removed items on work items hub</td><td>Boards</td><td>2022</td></tr>
+    <tr><td>Delivery Plans 2.0: Increase team limit to 15</td><td>Boards</td><td>2022</td></tr>
+    <tr><td>.NET Core 3.0 to be removed from Linux and macOS hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
+    <tr><td>Group By Tags available in chart widgets</td><td>Reporting</td><td>2022</td></tr>
     <tr>
     <td rowspan="4"><a href="2021/sprint-181-update.md" data-raw-source="[14 January 2021](2021/sprint-181-update.md)">14 January 2021</a></td>
-    <td>Delivery Plans: Rollup Information</td><td>Boards</td><td>Future</td>
+    <td>Delivery Plans: Rollup Information</td><td>Boards</td><td>2022</td>
     </tr>
-    <tr><td>Delivery Plans: Condensed views</td><td>Boards</td><td>Future</td></tr>
-    <tr><td>"uses" statement for pre-declaring resources</td><td>Pipelines</td><td>Future</td></tr>
-    <tr><td>Manual Validation for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Delivery Plans: Condensed views</td><td>Boards</td><td>2022</td></tr>
+    <tr><td>"uses" statement for pre-declaring resources</td><td>Pipelines</td><td>N/A</td></tr>
+    <tr><td>Manual Validation for YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
     <tr>
     <td rowspan="10"><a href="2020/sprint-179-update.md" data-raw-source="[03 December 2020](2020/sprint-179-update.md)">03 December 2020</a></td>
     <td>Single-click to toggle between inline and diff views</td><td>Repos</td><td>Future</td>
@@ -293,7 +315,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="4"><a href="2020/sprint-178-update.md" data-raw-source="[12 November 2020](2020/sprint-178-update.md)">12 November 2020</a></td>
     <td>Removed items on the Work Items page</td><td>Boards</td><td>2020.1</td>
     </tr>
-    <tr><td>Delivery Plans (Preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Delivery Plans (Preview)</td><td>Boards</td><td>2022</td></tr>
     <tr><td>Improve YAML conversion in the classic build designer</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
     <tr>
@@ -1128,8 +1150,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Manage permissions directly on Azure AD groups</td><td></td><td>N/A</td></tr>
         <tr><td>Consider warning of single Project Collection Administrator</td><td></td><td>N/A</td></tr>
         <tr><td>Connect or disconnect a VSTS account to Azure Active Directory via new Azure portal</td><td></td><td>N/A</td></tr>
-
-* TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
         <tr>
             <td rowspan="22"><a href="/previous-versions/azure/devops/2017/dec-11-vsts" data-raw-source="[11 Dec 2017](/previous-versions/azure/devops/2017/dec-11-vsts)">11 Dec 2017</a></td>
             <td>Track code pushes to a Git repo to builds and releases</td><td></td>
@@ -4534,6 +4554,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 
 ## Azure DevOps Server Build Numbers
 
+
+> [!NOTE]
+> TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
+
 <table>
 <thead>
         <tr>
@@ -4543,6 +4567,21 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
 </thead>
 <tbody>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops" data-raw-source="[2022 RC1](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops)">2022 RC1</a></td>
+          <td>August 9, 2022</td>
+          <td>19.205.32728.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#azure-devops-server-2020-update-12-release-date-may-17-2022" data-raw-source="[2020.1.2 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops#azure-devops-server-2020-update-12-release-date-may-17-2022)">2020.1.2</a></td>
+          <td>May 17, 2022</td>
+          <td>18.181.32404.7</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops#azure-devops-server-202002-release-date-may-17-2022" data-raw-source="[2020.0.2 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops#azure-devops-server-202002-release-date-may-17-2022)">2020.0.2</a></td>
+          <td>May 17, 2022</td>
+          <td>18.170.32404.6</td>
+        </tr>
         <tr>
           <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true)">2020.1.1</a></td>
           <td>August 26, 2021</td>

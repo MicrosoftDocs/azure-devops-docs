@@ -4,7 +4,7 @@ description: How to use feed views to share your packages
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 04/07/2022
+ms.date: 08/25/2022
 monikerRange: '<= azure-devops'
 ---
  
@@ -39,21 +39,54 @@ With Azure Artifacts, you can promote packages to a specific to only share a sub
 
 ## Promote packages using the REST API
 
-In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API.
-
-The URI varies based on the package type:
-```
-NuGet: https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-npm: https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-Python: https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-Universal Packages: https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-```
+In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API. The URI varies based on the package type:
 
 Use the actual user-facing name and version of the package for the `{packageName}` and `{packageVersion}` fields, respectively. If your feed is organization-scoped, omit the `{project}` field.
 
 The body of the request is a [JSON Patch](https://jsonpatch.com/) document adding the view to the end of the `views` array.
 
-### Example
+- **NuGet**:
+
+    ```Command
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+    
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
+
+- **npm**:
+  
+    ```Command
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+    
+    Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation) to construct the body of your request. See [npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-7.1&preserve-view=true) for more details.
+
+- **Python**:
+   
+    ```Command
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+    
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
+
+- **Maven**:
+
+    ```Command
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feed}/maven/groups/{groupId}/artifacts/{artifactId}/versions/{version}?api-version=7.1-preview.1
+    ```
+    
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Maven  - update package version](/api/azure/devops/artifactspackagetypes/maven/update-package-version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
+
+- **Universal packages**:
+    
+    ```Command
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=7.1-preview.1
+    ```
+    
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-7.1&preserve-view=true) for more details.
+
+- **Example**:
+
 ```http
 PATCH https://pkgs.dev.azure.com/fabrikam-fiber-inc/litware/_apis/packaging/feeds/litware-tools/nuget/packages/LitWare.Common/versions/1.0.0?api-version=5.1-preview.1 HTTP/1.1
 Content-Type: application/json-patch+json
@@ -67,16 +100,8 @@ Content-Type: application/json-patch+json
 }
 ```
 
-### Further reading
 > [!TIP]
 > Check out the [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) to learn how to interact with Azure DevOps REST API.
-
-* [API docs (NuGet)](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true)
-* [API docs (npm)](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true)
-* [API docs (Python)](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true)
-* [API docs (Universal Packages)](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true)
-
-
 
 ## Manage views
 

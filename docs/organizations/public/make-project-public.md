@@ -26,7 +26,7 @@ You can easily switch a private project to a public project, and vice-versa.  Be
 ## Prerequisites
 
 - You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
-- As an organization owner, you can change policies and change project information. If you're not the owner, then you must be a member of the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md).
+- You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 ## Enable anonymous access to projects for your organization
 
@@ -37,7 +37,7 @@ Before you can change a private project, to a public project, you must enable an
 2. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. Then choose **Organization settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+	> ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)  
 
 3. Choose the **Policies** page, and select **On** for **Allow public projects**.
 

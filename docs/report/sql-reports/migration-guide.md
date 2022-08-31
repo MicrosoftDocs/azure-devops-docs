@@ -68,7 +68,7 @@ The following tools support interaction with the Analytics service:
 
 ### Query guidelines, query performance and latency 
 
-Analytics is not a real-time time store. It is a curated copy of data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. To learn more, see [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md).
+Analytics is not a real-time time store. It is a curated copy of data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and reduces the effect reporting scenarios have on Azure DevOps. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics. To learn more, see [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
 
 
 ### Analytics permissions

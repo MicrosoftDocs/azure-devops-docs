@@ -653,11 +653,10 @@ You can use the macros described in the following table to filter your queries b
 ---
 :::row:::
    :::column span="1":::
-      **@RecentProjectActivity**  
+      **@RecentProjectActivity** <sup>1</sup>  
    :::column-end:::
    :::column span="3":::
-      Use with the **ID** field and **In** operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md).  
-      The **@RecentProjectActivity** macro is supported for Azure Boards (cloud service) only at this time.
+      Use with the **ID** field and **In** operator to list work items that have been recently updated. The number of work items listed depends on the work tracking activity of the project. For highly active projects, the macro will list work items that have been updated in the project within the last 30 days or so. For less active projects, however, this list could include work items older than 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). The number of work items returned is capped at 5000. 
    :::column-end:::
 :::row-end:::
 ---
@@ -719,7 +718,7 @@ You can use the macros described in the following table to filter your queries b
  
 
 > [!NOTE]  
-> 1. The **@MyRecentActivity**, **@RecentMentions**, and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+> 1. The **@MyRecentActivity**, **@RecentMentions**, and **@RecentProjectActivity** macros are supported for TFS 2018.2 and later versions.  
 > 2. The **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, and **@StartOfYear** macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
 
 

@@ -2,14 +2,14 @@
 metadata:
   title: Frequent questions about billing management
   titleSuffix: Azure DevOps
-  ms.custom: seodec18, freshness-fy22
+  ms.custom: seodec18, freshness-fy22q1
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.technology: devops-billing
   ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 03/07/2022
+  ms.date: 08/05/2022
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -67,7 +67,7 @@ sections:
           A: As part of the change to user assignment-based billing, we've also switched from monthly to daily billing. When you give a user paid access for a few weeks, or even a few days, you pay only for the time they got assigned to the paid access, rather than for a full month. As we switch your organization from monthly to daily billing, your next Azure bill is likely lower than it was previously. The next month is back to normal once a full month of daily charges has accumulated.
 
       - question: |
-          Q: Does daily pro-rated charges apply to other purchases also?
+          Q: Do daily pro-rated charges apply to other purchases also?
         answer: |
           A: Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased 5 MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case you will be charged approximately one-third of the monthly cost of 5 hosted pipelines.
 
@@ -198,7 +198,7 @@ sections:
       - question: |
           Q: How can I get a list of all the users I'm paying for under multi-organization billing?
         answer: |
-          A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on email address. 
+          A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on sign-in address (e.g. contoso@contoso.com). You can find the sign-in address under the Username column in the exported file.
           
       - question: |
           Q: Why are additional free user grants removed when multi-organization billing is enabled?
@@ -213,7 +213,7 @@ sections:
 
           1. Go to [Azure portal > Subscriptions](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade), and then select **Cost analysis**.
 
-             ![In Azure portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
+             ![Screenshot of Azure portal, Subscriptions button selection.](media/billing-faq/cost-management-cost-analysis.png) 
 
       - question: |
           Q: How do I see only my Azure DevOps charges?
@@ -223,7 +223,7 @@ sections:
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           2. Filter on **Service name** = **Azure DevOps**.
           
-             ![Filter by service name](media/billing-faq/filter-by-service-name.png)
+             ![Screenshot showing filter by service name.](media/billing-faq/filter-by-service-name.png)
           
       - question: |
           Q: How much am I currently spending on Azure DevOps?
@@ -233,7 +233,7 @@ sections:
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           2. View by **Daily costs**.
           
-             ![View by Daily costs](media/billing-faq/view-daily-costs.png)
+             ![Screenshot of view by Daily costs.](media/billing-faq/view-daily-costs.png)
           
       - question: |
           Q: What services do I pay for in Azure DevOps?
@@ -243,7 +243,7 @@ sections:
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           2. Group by **Meter subcategory**.
           
-             ![Group by Meter subcategory](media/billing-faq/group-by-meter-subcategory.png)
+             ![Screenshot of group by Meter subcategory.](media/billing-faq/group-by-meter-subcategory.png)
           
       - question: |
           Q: How can I split Azure DevOps charges by organization?
@@ -254,15 +254,15 @@ sections:
           
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           
-             ![In Azure portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
+             ![Screenshot of Azure portal, selected Subscriptions button, and then Cost analysis.](media/billing-faq/cost-management-cost-analysis.png) 
           
             - Filter based on tag, and see only charges for a given organization or
           
-               ![Filter based on tag](media/billing-faq/filter-based-on-tag.png)
+               ![Screenshot of filtering based on tag.](media/billing-faq/filter-based-on-tag.png)
           
             - Group by tag, and see charges stacked by organization
           
-               ![Group by tag, see stacked charges](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
+               ![Screenshot of grouping by tag showing stacked charges.](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
           
           ## Azure portal integration
 
@@ -344,9 +344,9 @@ sections:
         answer: |
           A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service. Select an Azure subscription, which is a billing account, from a presented list of Azure subscriptions that are linked to your sign-in credentials. Since the name of your Azure subscription defaults to the type of billing account, it's often clear whether the Azure subscription is part of your Enterprise Agreement. For example, subscriptions can be named "Pay-As-You-Go" or "Enterprise Agreement".
           
-          Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization Owner role. Only organization Owners can set up new Azure billing in an Enterprise Agreement. 
+          Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
           
-          Ask your Enterprise Administrator to add you as an organization Owner within the Azure Enterprise portal. If you can't find this person, [submit a support ticket](https://aka.ms/AzureEntSupport) and request the contact information. You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
+          Ask your Enterprise Administrator to add you as an organization owner within the Azure Enterprise portal. If you can't find this person, [submit a support ticket](https://aka.ms/AzureEntSupport) and request the contact information. You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
           
       - question: |
           Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy Azure DevOps?

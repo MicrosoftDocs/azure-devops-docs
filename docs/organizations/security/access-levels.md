@@ -46,7 +46,7 @@ Assign users or groups of users to one of the following access levels:
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
@@ -88,7 +88,7 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end  
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="3":::
       **Feature**
@@ -574,7 +574,7 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020" 
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
 

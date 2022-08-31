@@ -20,8 +20,7 @@ Learn how to manage your organization's security policies that determine how app
 
 ## Prerequisites
 
-To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](/azure/devops/organizations/security/request-changes-permissions)
+You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 [!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 

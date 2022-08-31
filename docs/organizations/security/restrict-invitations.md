@@ -30,7 +30,7 @@ can add users who are already in the organization to their team       |
 
 ## Prerequisites
 
-- You must be a member of the **Project Collection Administrator** group to manage this policy. To get added, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 ## Turn off policy
 
@@ -38,7 +38,7 @@ can add users who are already in the organization to their team       |
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
    
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Under Security, select **Policies**, and then move the toggle to **off**.   
 

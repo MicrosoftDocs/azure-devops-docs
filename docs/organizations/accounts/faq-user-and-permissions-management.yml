@@ -38,18 +38,18 @@ sections:
       - question: |
           Q: Why can't I manage users?
         answer: |
-          A: You must be a member of the Project Collection Administrators group or [Organization owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
+          A: You must be a member of the Project Collection Administrators group or [organization Owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
           
           <a name="find-owner"></a>
           
       - question: |
-          Q: How do I find the organization Owner?
+          Q: How do I find the organization owner?
         answer: |
           A: If you have at least Basic access, you can find the current owner in your organization settings.
           
           1. Go to your **Organization settings**.
           
-             ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+             ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
           
           2. Find the current owner.
           

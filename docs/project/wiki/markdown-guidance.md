@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/04/2022
+ms.date: 08/03/2022
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -531,13 +531,8 @@ The path to the image file can be a relative path or the absolute path in Git or
 - Resize image: `IMAGE_URL =WIDTHxHEIGHT`
   > [!NOTE]
   > Be sure to include a space before the equal sign.
-  >
-
-  - Example: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =500x250)`
-  - It's also possible to specify only the WIDTH by leaving out the HEIGHT value: `IMAGE_URL =WIDTHx`
-
-> [!TIP]
-> We don't support SVG file types.
+  >- Example: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =500x250)`
+  >- It's also possible to specify only the WIDTH by leaving out the HEIGHT value: `IMAGE_URL =WIDTHx`
 
 ## Checklist or task list
 

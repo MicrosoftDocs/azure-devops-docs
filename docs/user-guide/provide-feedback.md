@@ -56,7 +56,7 @@ We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) 
 
 ## Documentation feedback
 
-All docs on docs.microsoft.com have a ratings tool in the lower right-hand corner of the page. It asks "Is this content helpful?" Answer **Yes** or **No** depending on your experience.
+All articles on Microsoft Docs have a ratings tool in the lower right-hand corner of the page. It asks "Is this content helpful?" Answer **Yes** or **No** depending on your experience.
 
 Add more detailed feedback by selecting the **Tell us more** link after selecting **Yes** or **No**. Check an appropriate box and enter what we can do to improve the content for you! Although we can't reply back, we collect and review this feedback regularly, and use your sentiments in our content planning.
 
@@ -79,43 +79,53 @@ The more details, the better!
 
 ## What platform/version am I using? 
 
-You can tell what platform you use from the URL you use to connect to Azure DevOps Services or Azure DevOps Server.
+You can tell what platform you use by opening the **About** page for Azure DevOps Services or Azure DevOps Server. From a web browser, choose 
+ 
 
 ### Azure DevOps Services
 
-An Azure DevOps URL consists of an organization name and dev.azure.com, for example: ```https://dev.azure.com/{yourorganization}```.  
+Enter the following URL for your organization, specifying the organization name. 
 
-To learn the version number, enter the following address in a web browser:
-
-`https://dev.azure.com/{yourorganization}/_home/About`
-
+```https://dev.azure.com/YourOrganizationName/_home/About```. 
 
 A page similar to the following example opens showing the version number.
-
-![Learn the version number of Azure DevOps](media/version-azure-devops.png)
+ 
+:::image type="content" source="media/provide-feedback/version-azure-devops.png" alt-text="Screenshot of About page for Azure DevOps Services.":::
 
 
 ### Azure DevOps Server 
 
-An on-premises URL consists of a server name, port number, and collection name, for example: 
+Open the **About** page from the profile menu as shown in the following image. 
 
-`https://ServerName:8080/tfs/CollectionName`
+:::image type="content" source="media/provide-feedback/about-menu-selection-on-premises.png" alt-text="Screenshot of profile menu":::
 
-To learn the version number, enter the following address in a web browser:
+The corresponding browser URL is:
 
-```
-https://ServerName:8080/tfs/_home/About
-```
+```https://ServerName/CollectionName/_home/About```
 
-A page similar to the following example opens showing the version number.
+A page similar to the following image opens showing the version number.
 
-<img src="../media/version-tfs.png" alt="Azure DevOps Server About page, version number" />
+:::image type="content" source="media/provide-feedback/version-azure-devops-on-premises.png" alt-text="Screenshot of About page for Azure DevOps Server on-premises.":::
+ 
+### Version numbers
+
+|**On-premises release**|**Version**|**About help page version**| **Build number** | 
+|-------------------|-------|-----------------------| -----------------------|  
+|Azure DevOps Server 2022|RC1|(AzureDevOpsServer_20220720.1)|19.205.32728.1 |  
+|Azure DevOps Server 2020|Update 1.1|Version Azure DevOps Server 2020 Update 1.2| 18.181.31230.2|   
+|Azure DevOps Server 2020|RTW|Version Dev 18.M170.9| 18.170.30830.2  |
+|Azure DevOps Server 2019|Update 1|Version Dev17.M153.6| 17.153.29522.3 |  
+ 
+
+<!--- 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
-> |On-premises release | Update | Version number | 18.181.31202.1
+> |On-premises release | Update | Version number |  
 > |-------------|--------|----------------|
-> |**Azure DevOps Server 2020** | 2020.1 | 18.181.31230.2 |
+> |**Azure DevOps Server 2022** | RC1| 19.205.32720.1 |
+> |**Azure DevOps Server 2020** | 2020.1.1 | 18.181.31230.2 |
+> |  | 2020.1 | 18.181.31230.2 |
 > |  | 2020.0.1 Patch 3  | 18.170.31228.1 |
 > |  | 2020.0.1 Patch 2  | 18.170.31123.3  |
 > |  | RTW  | 18.170.30830.2  |
@@ -168,6 +178,8 @@ A page similar to the following example opens showing the version number.
 > |           | RTM   | 9.0.21022.8| 
 > | **Azure DevOps Server 2005** | SP1    | 8.0.50727.762| 
 > |          |  RTM  | 8.0.50727.147| 
+
+-->
 
 ## Related articles
 

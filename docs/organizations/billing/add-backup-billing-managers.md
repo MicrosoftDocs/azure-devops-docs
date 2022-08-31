@@ -2,13 +2,13 @@
 title: Add a user who can set up billing for Azure DevOps
 titleSuffix: Azure DevOps Services
 description: Add a user who can set up and change billing for Azure DevOps.
-ms.custom: seodec18, freshness-fy22
+ms.custom: seodec18, freshness-fy22q1
 ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 01/25/2022
+ms.date: 08/05/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -39,30 +39,30 @@ For more information about these roles, see [Azure roles](/azure/role-based-acce
 
 2. Enter *subscriptions* in the search box, and then select **Subscriptions** from the drop-down menu. If more than one subscription is listed, choose the subscription to modify.
 
-   ![Choose the subscription to modify for backup billing manager](media/add-backup-billing-manager/choose-subscription-to-modify.png)
+   ![Screenshot of highlighted subscription to modify for backup billing manager.](media/add-backup-billing-manager/choose-subscription-to-modify.png)
 
 3. Select **Access control (IAM)**.
 
-   ![Choose access control, and then add](media/add-backup-billing-manager/choose-access-control.png)
+   ![Screenshot showing highlighted Access control (IAM) button in Azure portal.](media/add-backup-billing-manager/choose-access-control.png)
 
 4. Choose **Add**.
 
-   ![Add role assignment Azure portal](media/add-backup-billing-manager/add-role-assignment.png)
+   ![Screenshot showing highlighted Add button.](media/add-backup-billing-manager/add-role-assignment.png)
 
 5. Select the user's *role* and *assignment* type from the dropdown menus.
 
-   ![Choose a role and assignment type](media/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
+   ![Screenshot showing user role and assignment type dropdown menus.](media/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
 
 6. Select a user or group by entering their *name* or *email alias*. (Select a device by entering its *name*.)
 
-   ![Select a user, group, or device by the name or email alias](media/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
+   ![Screenshot showing selected member name and email alias.](media/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
 
 7. Choose **Save**, once you're done with your update.
 
 Now you have a user who can [set up](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization.
 
-> [!Note]
-> To give access to a user who's not in your directory, the user must accept the email invitation before they can access the Azure subscription.
+> [!NOTE]
+> To give access to a user who's not in your directory, the user must accept their email invitation before they can access the Azure subscription.
 
 ## Next steps
 
@@ -75,4 +75,3 @@ Now you have a user who can [set up](set-up-billing-for-your-organization-vs.md)
 * [Change your Azure subscription for billing](change-azure-subscription.md)
 * [Learn about Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [Get Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
-

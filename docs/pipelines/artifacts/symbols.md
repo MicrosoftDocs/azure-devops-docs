@@ -84,7 +84,7 @@ Aside from Azure Artifacts symbol server, you can also publish your symbols to a
 
 ## Publish portable PDBs to Azure Artifacts symbol server
 
-Portable PDBs are symbol files that can be created and used on all platforms unlike the traditional PDBs which are used on Windows only. If you're using portable PDBs, you still need to use the **Index Sources and Publish Symbols** task to publish your symbols. For portable PDBs, the build does the indexing, however you should use SourceLink to index the symbols as part of your pipeline.
+Portable PDBs are symbol files that can be created and used on all platforms unlike the traditional PDBs which are used on Windows only. For portable PDBs, the build does the indexing, but you still need to use the **Index Sources and Publish Symbols** task to publish your symbols.
 
 ### Use Source Link in .NET projects
 
@@ -94,7 +94,7 @@ Source link is a set of tools that allow developers to debug their source code b
 
   ```xml
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
   </ItemGroup>
   ```
 
@@ -102,7 +102,7 @@ Source link is a set of tools that allow developers to debug their source code b
 
   ```xml
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.1.1" PrivateAssets="All"/>
   </ItemGroup>
   ```
 
@@ -110,29 +110,13 @@ Source link is a set of tools that allow developers to debug their source code b
 
   ```xml
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.AzureDevOpsServer.Git" Version="1.0.0" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.AzureDevOpsServer.Git" Version="1.1.1" PrivateAssets="All"/>
   </ItemGroup>
   ```
 
-### Set up the build task
-
-The next step is to modify the build task in your pipeline to invoke Source Link during the build process.
-
-1. From your pipeline definition, select the **Build solution** task. You can search for and add the **Visual Studio build** task to your pipeline if you don't have it already.
- 
-1. Add the following snippet to the **MSBuild arguments**.
-
-    ```Argument
-    /p:SourceLinkCreate=true
-    ```
-
-1. Select **Save & queue** when you are done.
-
-    :::image type="content" source="../../artifacts/symbols/media/build-solution-task-classic.png" alt-text="MSBuild arguments in the build solution task":::
-
 ### Set up the publish task
 
-The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. Because we are using the **Visual Studio build** task to index our source, we will disable indexing in the publish task.
+The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. Because we are using Source Link, we will disable indexing in the publish task.
 
 1. From your pipeline definition, select `+` to add a new task.
 
@@ -146,14 +130,20 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 
 - **Task version**: **2.\\***.
 
-- **Index sources**: Uncheck to disable indexing. Indexing is done during build. See the [previous step](#set-up-the-publish-task) for more details.
+- **Index sources**: Uncheck to disable indexing. Source indexing in the publish task is not needed when using Source Link.
 
 - **Publish symbols**: indicates whether to publish the symbol files. 
     - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
 
+> [!IMPORTANT]
+> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
+
 ::: moniker-end
 
 ## Set up Visual Studio
+
+> [!NOTE]
+> Visual Studio for Mac does not support provide support debugging using symbol servers. 
 
 Before starting to consume our symbols from Azure Artifacts symbol server, let's make sure that Visual Studio is set up properly:
 
@@ -173,9 +163,6 @@ Before starting to consume our symbols from Azure Artifacts symbol server, let's
 
 > [!NOTE]
 > Checking the **Enable source server support** option enables you to use [Source Server](/visualstudio/debugger/general-debugging-options-dialog-box) when there is no source code on the local machine or the symbol file does not match the source code. If you want to enable third-party source code debugging, uncheck the **Enable Just My Code** checkbox.
-
-> [!IMPORTANT]
-> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
 
 ## FAQs
 

@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 08/03/2022
 --- 
 
 # Stakeholder access quick reference
@@ -131,7 +131,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2022" 
 :::row:::
    :::column span="1":::
       **Boards** 
@@ -236,7 +236,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Create query charts
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2022" 
 :::row:::
    :::column span="1":::
       **Delivery Plans** 
@@ -249,7 +249,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops" 
+::: moniker range="< azure-devops-2022" 
 :::row:::
    :::column span="1":::
       **Delivery Plans** (Extension)
@@ -270,8 +270,11 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
 
 
 ::: moniker range=">= azure-devops-2019" 
+
 ## Azure Pipelines 
+
 ::: moniker-end
+
 
 ::: moniker range="azure-devops" 
 The following table summarizes the features available to **Stakeholder** access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all features listed under **Public project**.  Without this feature enabled, **Stakeholder** access users can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
@@ -355,7 +358,7 @@ The following table summarizes the features **Stakeholder** access users have to
       **Features can't use**
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="1":::
       Dashboards
@@ -369,7 +372,7 @@ The following table summarizes the features **Stakeholder** access users have to
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops" 
+::: moniker range="< azure-devops-2020" 
 :::row:::
    :::column span="1":::
       Dashboards

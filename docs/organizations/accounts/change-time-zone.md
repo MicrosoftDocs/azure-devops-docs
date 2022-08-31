@@ -31,7 +31,7 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Go to **Overview**, and then select the time zone from the dropdown menu.
 

@@ -40,7 +40,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
    

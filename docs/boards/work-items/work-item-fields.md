@@ -113,7 +113,7 @@ For an overview of all system and predefined fields that are defined for the def
 Because custom fields are defined for an organization or project collection, you can't add a custom field to a process with the same field name that you add to another process.  
 
 When adding custom fields, note the following limits:  
-*   A maximum of 256 fields can be defined for each WIT  
+*   A maximum of 64 fields can be defined for each WIT  
 *   A maximum of 512 fields can be defined per process   
 
 The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a project collection. This restriction encourages organizations to use common fields across projects and work item types.

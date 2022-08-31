@@ -132,8 +132,9 @@ Responsible for configuring project-level resources, including:
 
 ::: moniker range="azure-devops"
 
-### Organization Owners and Project Collection Administrators
+### Organization owners and Project Collection Administrators
 
+Organization owners are automatically members of the Project Collection Administrators group.
 Responsible for configuring organization-level resources, including the following tasks:
 
 - Manage billing  
