@@ -405,7 +405,7 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](../tasks/tool/node-js.md), [Copy File](../tasks/utility/copy-files.md)s, and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. 
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](../tasks/tool/node-js.md), [Copy File](/azure/devops/pipelines/tasks/reference/copy-files-v2)s, and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. 
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -570,7 +570,7 @@ To upload the entire working directory of files, use the [Publish Build Artifact
     PathtoPublish: '$(System.DefaultWorkingDirectory)'
 ```
 
-To upload a subset of files, first copy the necessary files from the working directory to a staging directory with the [Copy Files](../tasks/utility/copy-files.md) task, and then use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md).
+To upload a subset of files, first copy the necessary files from the working directory to a staging directory with the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) task, and then use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md).
 
 ```yaml
 - task: CopyFiles@2
