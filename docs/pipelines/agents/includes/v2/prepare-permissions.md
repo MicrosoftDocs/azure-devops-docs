@@ -62,6 +62,9 @@ Learn more about [how agents communicate](../../agents.md#communication).
 3. [Create a personal access token](../../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
    ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
+   
+  <!--Please add an image here to choose the Organization for which the PAT is being created. Currently there is an active bug due to which only PAT for "All accessible Organizations" works. Here is the Bug: https://dev.azure.com/mseng/AzureDevOps/_workitems/edit/1942506 -->
+    ![image](https://user-images.githubusercontent.com/45830002/187760366-285ea9df-754e-4856-a207-6c7a7733ffc2.png)
 
 ::: moniker-end
 
