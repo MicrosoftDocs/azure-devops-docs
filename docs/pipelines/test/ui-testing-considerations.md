@@ -172,7 +172,7 @@ Use the `TestContext.AddTestAttachment()` method available in NUnit 3.7 or highe
 
 ---
 
-If you use the [Publish Test Results task](../tasks/test/publish-test-results.md)
+If you use the [Publish Test Results task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2)
 to publish results, test result attachments can only be published if you are using
 the VSTest (TRX) results format or the [NUnit 3.0 results](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
 format. 

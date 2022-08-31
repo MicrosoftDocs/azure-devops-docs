@@ -240,7 +240,7 @@ Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compi
 
 ::: moniker range=">=azure-devops-2020"
 
-Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results using the built-in [publish test results](../tasks/test/publish-test-results.md) task.
+Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results using the built-in [publish test results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
 
 If your test framework doesn't support JUnit output, add support through a partner reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your test script to use the JUnit reporter, or if the reporter supports command-line options, pass those options into the task definition.
 
@@ -268,7 +268,7 @@ If you defined a `test` script in your project package.json file, you can invoke
 
 ### Publish test results
 
-To publish the results, use the [Publish Test Results](../tasks/test/publish-test-results.md) task.
+To publish the results, use the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task.
 
 ```yaml
 - task: PublishTestResults@2
@@ -301,7 +301,7 @@ The following example uses [nyc](https://github.com/istanbuljs/nyc), the Istanbu
 
 ::: moniker range="< azure-devops"
 
-Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your pipeline to publish test results along with code coverage results by using Istanbul.
+Use the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your pipeline to publish test results along with code coverage results by using Istanbul.
 
 Set the Control Options for the Publish Test Results task to run the task even if a previous task has failed, unless the deployment was canceled.
 
@@ -316,7 +316,7 @@ Run tests in headless browsers as part of your pipeline with tools like [Protrac
 1. Configure your test framework (usually with a reporter plug-in or configuration) to output JUnit-formatted test results.
 1. Set up a script task to run any CLI commands needed to start the headless browser instances.
 1. Run the end-to-end tests in the pipeline stages along with your unit tests.
-1. Publish the results by using the same [Publish Test Results](../tasks/test/publish-test-results.md) task alongside your unit tests.
+1. Publish the results by using the same [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task alongside your unit tests.
 
 ## Package web apps
 
@@ -498,7 +498,7 @@ If the steps in your gulpfile.js file require authentication with an npm registr
 - script: gulp                       # include any additional options that are needed
 ```
 
-Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit or xUnit test results to the server.
+Add the [Publish Test Results](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) task to publish JUnit or xUnit test results to the server.
 
 ```yaml
 - task: PublishTestResults@2
