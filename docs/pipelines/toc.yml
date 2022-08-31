@@ -222,8 +222,6 @@
           href: ecosystems/java-webapp.md
         - name: Java to web app with MicroProfile
           href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
-        - name: Java to Azure Function
-          href: ecosystems/java-function.md
     - name: Android
       href: ecosystems/android.md
       displayName: android sdk, xamarin, android sdk platform tools
