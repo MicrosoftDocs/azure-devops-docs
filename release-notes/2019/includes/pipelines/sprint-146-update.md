@@ -118,7 +118,7 @@ trigger:
 
 Until now, pull request validation builds for forked repositories didn’t have permission to upload and download build artifacts or change the build number. Permissions were restricted because it was insecure to make the agent’s broader-scoped permissions available during a fork build triggered by an unknown user. With this update, agent permissions are scoped so that your pipeline can perform these operations if you need to.
 
-Below is an example of the YAML that you can use to archive build outputs in a tar.gz file into the artifact staging directory. Then, it publishes the output to Azure Pipelines to be associated with the build. For more details, see the documentation on [Archive Files task](/azure/devops/pipelines/tasks/utility/archive-files?tabs=yaml&view=azure-devops&preserve-view=true)  and [Publish Build Artifacts task](/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops&preserve-view=true).
+Below is an example of the YAML that you can use to archive build outputs in a tar.gz file into the artifact staging directory. Then, it publishes the output to Azure Pipelines to be associated with the build. For more details, see the documentation on [Archive Files task](/azure/devops/pipelines/tasks/utility/archive-files?tabs=yaml&view=azure-devops&preserve-view=true)  and [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1?view=azure-devops&preserve-view=true).
 
 ```yaml
 - task: ArchiveFiles@2

@@ -153,7 +153,7 @@ You can configure the output path by adding an argument to the Xamarin.iOS task:
       args: /p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"
 ```
 
-This example locates the .ipa in the Build Artifact Staging Directory. It's ready to get pushed into Azure DevOps as an artifact to each build run. To push it into Azure DevOps, add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline.
+This example locates the .ipa in the Build Artifact Staging Directory. It's ready to get pushed into Azure DevOps as an artifact to each build run. To push it into Azure DevOps, add a [Publish Artifact task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) to the end of your pipeline.
 
 For more information about signing and provisioning your iOS app, 
 see [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app).
@@ -238,7 +238,7 @@ jobs:
 
 # [Classic](#tab/classic)
 
-Expand menu Advanced for the Xamarin.iOS build task and add **/p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"** in the input field Arguments to place the generated .ipa package in the Build Artifact Staging Directory. To push it into Azure DevOps, add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline. 
+Expand menu Advanced for the Xamarin.iOS build task and add **/p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"** in the input field Arguments to place the generated .ipa package in the Build Artifact Staging Directory. To push it into Azure DevOps, add a [Publish Artifact task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) to the end of your pipeline. 
 
 ---
 

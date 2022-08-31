@@ -153,7 +153,7 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
@@ -449,7 +449,7 @@ Note: This variable is available in TFS 2015.4.
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
-A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
+A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/reference/copy-files-v2" data-raw-source="[Copy files](/azure/devops/pipelines/tasks/reference/copy-files-v2)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1" data-raw-source="[Publish build artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1)">Publish build artifacts</a> tasks.
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 

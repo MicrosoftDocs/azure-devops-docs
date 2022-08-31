@@ -115,7 +115,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ### Retain artifacts with the build record
 
-Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
+Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks
 to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ```yaml

@@ -339,7 +339,7 @@ stages:
 
 ## Migrate from build artifacts
 
-Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) can still be downloaded using [Download Build Artifacts](../tasks/utility/download-build-artifacts.md), but we recommend using the latest [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task instead.
+Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) can still be downloaded using [Download Build Artifacts](../tasks/utility/download-build-artifacts.md), but we recommend using the latest [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task instead.
 
 When migrating from build artifacts to pipeline artifacts:
 
