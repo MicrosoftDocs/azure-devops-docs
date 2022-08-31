@@ -204,9 +204,9 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines)
 > 
 > In the Visual Studio Build arguments, on the **Visual Studio Version** menu, make sure to select version of Visual Studio that you're using.
 
-The new build pipeline offers you some new options. See [Visual Studio Build](../tasks/build/visual-studio-build.md).
+The new build pipeline offers you some new options. See [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1).
 
-Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (for building solutions), [MSBuild task](../tasks/build/msbuild.md) (for building individual projects).
+Learn more: [Visual Studio Build task](/azure/devops/pipelines/tasks/reference/vsbuild-v1) (for building solutions), [MSBuild task](../tasks/build/msbuild.md) (for building individual projects).
 
 #### Test
 

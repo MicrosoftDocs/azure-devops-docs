@@ -361,7 +361,7 @@ It is helpful to narrow whether a build or release failure is the result of an A
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 
 ::: moniker range="azure-devops"
@@ -460,7 +460,7 @@ The MSBuild and Visual Studio Build tasks already add `/nr:false` to the argumen
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
 #### MSBuild and /maxcpucount:[n]
 
-By default the build tasks such as [MSBuild](../tasks/build/msbuild.md) and [Visual Studio Build](../tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
+By default the build tasks such as [MSBuild](../tasks/build/msbuild.md) and [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
 
 Try adding the `/m:1` argument to your build tasks to force MSBuild to run only one process at a time.
 

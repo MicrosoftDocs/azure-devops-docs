@@ -9,7 +9,7 @@ ms.technology: devops-cicd-tasks
 
 ### Should I use the Visual Studio Build task or the MSBuild task?
 
-If you are building a solution, in most cases you should use the [Visual Studio Build task](../build/visual-studio-build.md). This task automatically:
+If you are building a solution, in most cases you should use the [Visual Studio Build task](/azure/devops/pipelines/tasks/reference/vsbuild-v1). This task automatically:
 
 * Sets the `/p:VisualStudioVersion` property for you. This forces MSBuild to use a particular set of targets that increase the likelihood of a successful build.
 
