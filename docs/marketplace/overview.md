@@ -44,7 +44,7 @@ You can quickly add extensions to your organization by doing the following steps
 1. Search and find extensions for your organization in the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 2. Install the extension from the Marketplace and start using it in Azure DevOps.
 
-To upload, install, or assign extensions you need [Project Collection Administrator or organization owner permissions](./faq-extensions.yml).
+To upload, install, or assign extensions you must be a member of the [Project Collection Administrators group](../organizations/security/change-organization-collection-level-permissions.md). Organization owners are automatically members of this group.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
