@@ -51,7 +51,7 @@ When setting up a build pipeline for your Visual Studio database project, use th
 When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1) task.
 
 * * *
-See also [authentication information when using the Azure SQL Database Deployment task](../tasks/deploy/sql-azure-dacpac-deployment.md#arguments).
+See also [authentication information when using the Azure SQL Database Deployment task](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1).
 
 ## SQL scripts
 
