@@ -176,7 +176,7 @@ The following Azure tasks are validated with Azure Stack Hub:
 * [Azure PowerShell](../tasks/deploy/azure-powershell.md)
 * [Azure File Copy](../tasks/deploy/azure-file-copy.md)
 * [Azure Resource Group Deployment](../tasks/deploy/azure-resource-group-deployment.md)
-* [Azure App Service Deploy](../tasks/deploy/azure-rm-web-app-deployment.md)
+* [Azure App Service Deploy](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4)
 * [Azure App Service Manage](../tasks/deploy/azure-app-service-manage.md) 
 * [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md)
 
