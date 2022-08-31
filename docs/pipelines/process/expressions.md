@@ -436,7 +436,7 @@ steps:
     value: prod1,prod2 
   steps:  
     - ${{ each env in split(parameters.environments, ',')}}:
-        - script: ./deploy.sh --environment ${{ env }}
+      - script: ./deploy.sh --environment ${{ env }}
   ```
 
 ::: moniker-end
