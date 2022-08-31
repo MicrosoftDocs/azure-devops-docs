@@ -110,6 +110,6 @@ You can use wildcards to download the latest version of your Universal Packages.
 ## Related articles
 
 - [Publish and download universal packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
-- [universal package task](../../pipelines/tasks/package/universal-packages.md).
+- [universal package task](/azure/devops/pipelines/tasks/reference/universal-packages-v0).
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md).
 - [Configure permissions](../feeds/feed-permissions.md)

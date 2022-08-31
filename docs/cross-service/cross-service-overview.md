@@ -317,7 +317,7 @@ The following table summarizes the integration points between Azure Boards and A
       Query Work Items task. Ensure the number of matching work items returned from a query is within a threshold.
    :::column-end::: 
    :::column span="2":::
-       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../pipelines/tasks/utility/work-item-query.md).  
+       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0).  
    :::column-end:::
 :::row-end:::
 --- 
@@ -371,7 +371,7 @@ The following table summarizes the integration features between Azure Repos and 
       Code coverage
    :::column-end::: 
    :::column span="2":::
-      Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](../pipelines/tasks/test/publish-code-coverage-results.md) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
+      Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
    :::column-end:::
 :::row-end:::
 ---

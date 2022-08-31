@@ -102,7 +102,7 @@ The operating system processor architecture of the agent host. Valid values are:
 <tr>
 <td>Agent.ToolsDirectory</td>
 <td>
-The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/tool/node-js" data-raw-source="[Node Tool Installer](../../tasks/tool/node-js.md)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/tool/use-python-version" data-raw-source="[Use Python Version](../../tasks/tool/use-python-version.md)">Use Python Version</a> to switch between multiple versions of a tool.
+The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/reference/node-tool-v0" data-raw-source="[Node Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/reference/use-python-version-v0" data-raw-source="[Use Python Version](/azure/devops/pipelines/tasks/reference/use-python-version-v0)">Use Python Version</a> to switch between multiple versions of a tool.
 These tasks will add tools from this directory to <code>PATH</code> so that subsequent build steps can use them.
 <br><br>
 Learn about <a href="https://go.microsoft.com/fwlink/?linkid=2008884" data-raw-source="[managing this directory on a self-hosted agent](https://go.microsoft.com/fwlink/?linkid=2008884)">managing this directory on a self-hosted agent</a>.

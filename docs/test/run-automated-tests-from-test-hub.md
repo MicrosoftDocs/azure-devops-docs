@@ -71,7 +71,7 @@ In addition, you'll need:
 
 5. You need the Visual Studio Test Platform to be installed on the agent computer.
    If Visual Studio is already installed on the agent computer, you can skip this step.
-   If not, you must add the [Visual Studio Test Platform Installer task](../pipelines/tasks/test/visual-studio-test-agent-deployment.md)
+   If not, you must add the [Visual Studio Test Platform Installer task](/azure/devops/pipelines/tasks/reference/deploy-visual-studio-test-agent-v2)
    to the pipeline definition.
 
 6. Add the [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to the release pipeline and configure it as follows:

@@ -48,7 +48,7 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
+When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1) task.
 
 * * *
 See also [authentication information when using the Azure SQL Database Deployment task](../tasks/deploy/sql-azure-dacpac-deployment.md#arguments).
@@ -202,9 +202,9 @@ When you set up a build pipeline, make sure that the SQL script to deploy the da
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-- First, use an [Azure PowerShell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- First, use an [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
 - Second, use a [Command line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
-- Third, use another [Azure PowerShell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
+- Third, use another [Azure PowerShell](/azure/devops/pipelines/tasks/reference/azure-powershell-v5) task to remove the firewall rule in Azure.
 
 * * *
 ## Azure service connection

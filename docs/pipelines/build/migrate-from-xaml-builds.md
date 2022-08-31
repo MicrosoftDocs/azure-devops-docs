@@ -206,7 +206,7 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines)
 
 The new build pipeline offers you some new options. See [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1).
 
-Learn more: [Visual Studio Build task](/azure/devops/pipelines/tasks/reference/vsbuild-v1) (for building solutions), [MSBuild task](../tasks/build/msbuild.md) (for building individual projects).
+Learn more: [Visual Studio Build task](/azure/devops/pipelines/tasks/reference/vsbuild-v1) (for building solutions), [MSBuild task](/azure/devops/pipelines/tasks/reference/msbuild-v1) (for building individual projects).
 
 #### Test
 
@@ -305,9 +305,9 @@ offers hundreds of extensions that you can install to add tasks that extend your
 A major feature of the new build system is its emphasis on using scripts to customize your build pipeline. You can check your scripts into version control and customize your build using any of these methods:
 
 * [PowerShell scripts](/azure/devops/pipelines/tasks/reference/powershell-v2) (Windows)
-* [Batch scripts](../tasks/utility/batch-script.md) (Windows)
+* [Batch scripts](/azure/devops/pipelines/tasks/reference/batch-script-v1) (Windows)
 * [Command prompt](/azure/devops/pipelines/tasks/reference/cmd-line-v2)
-* [Shell scripts](../tasks/utility/shell-script.md) (macOS and Linux)
+* [Shell scripts](/azure/devops/pipelines/tasks/reference/shell-script-v2) (macOS and Linux)
 
 > [!TIP]
 > 

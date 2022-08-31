@@ -401,7 +401,7 @@ steps:
 ```
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
-The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads the Node.js version if it is not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
+The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads the Node.js version if it is not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) script logs the location of the Node.js version on disk.
 
 ::: moniker-end
 
@@ -461,7 +461,7 @@ On the [Variables tab](../build/variables.md) define this variable:
 
 #### Save & queue
 
-Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
+Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](/azure/devops/pipelines/tasks/reference/node-tool-v0) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) task logs the location of the Node.js version on disk.
 
 * * *
 

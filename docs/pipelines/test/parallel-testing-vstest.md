@@ -184,7 +184,7 @@ to validate the app functionality.
 
      > [!TIP]
      > If the test machines do not have Visual Studio installed, you can use the
-     > [Visual Studio Test Platform Installer task](../tasks/tool/vstest-platform-tool-installer.md) to
+     > [Visual Studio Test Platform Installer task](/azure/devops/pipelines/tasks/reference/visual-studio-test-platform-installer-v1) to
      > acquire the required version of the test platform.
 
 
