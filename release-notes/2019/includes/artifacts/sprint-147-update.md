@@ -8,7 +8,7 @@ Until now, many Artifacts-related build tasks didn't provide full support for Az
 
 - [npm](/azure/devops/pipelines/tasks/package/npm?view=azure-devops&preserve-view=true)
 - [NuGet](/azure/devops/pipelines/tasks/package/nuget?view=azure-devops&preserve-view=true) - restore and push commands only
-- [.NET Core CLI](/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azure-devops&preserve-view=true) - restore and NuGet push commands only
+- [.NET Core CLI](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-devops&preserve-view=true) - restore and NuGet push commands only
 - [Universal Packages](/azure/devops/pipelines/artifacts/universal-packages?tabs=yaml&view=azure-devops&preserve-view=true)
 - [npm Authenticate](/azure/devops/pipelines/tasks/package/npm-authenticate?view=azure-devops&preserve-view=true), [Pip Authenticate](/azure/devops/pipelines/tasks/package/pip-authenticate?view=azure-devops&preserve-view=true), [Twine Upload Authenticate](/azure/devops/pipelines/tasks/package/twine-authenticate?view=azure-devops&preserve-view=true)
     > [!NOTE]
