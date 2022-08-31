@@ -93,7 +93,7 @@ The code coverage artifacts published during the build can be viewed under the *
 
 :::moniker-end
 
-* If you use the [Visual Studio Test](../tasks/test/vstest.md) task to collect coverage for .NET and .NET Core apps, the artifact contains
+* If you use the [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2) task to collect coverage for .NET and .NET Core apps, the artifact contains
   **.coverage** files that can be downloaded and used for further analysis in Visual Studio.
 
   ![View .coverage reports](media/review-code-coverage-results/view-dot-coverage-report.png)
@@ -110,7 +110,7 @@ The code coverage artifacts published during the build can be viewed under the *
 
 * [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) publishes code coverage results to Azure Pipelines or TFS,
   which were produced by a build in [Cobertura](https://cobertura.github.io/cobertura/) or [JaCoCo](https://www.eclemma.org/jacoco/) format. 
-* Built-in tasks such as [Visual Studio Test](../tasks/test/vstest.md),
+* Built-in tasks such as [Visual Studio Test](/azure/devops/pipelines/tasks/reference/vstest-v2),
   [.NET Core](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2), [Ant](../tasks/build/ant.md), [Maven](../tasks/build/maven.md),
   [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and [Gradle](../tasks/build/gradle.md)
   provide the option to publish code coverage data to the pipeline.

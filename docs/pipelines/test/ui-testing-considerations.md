@@ -154,7 +154,7 @@ Most UI testing frameworks provide the ability to capture screenshots.
 The screenshots collected are available as an attachment to the test results
 when these results are published to the server. 
 
-If you use the [Visual Studio test task](../tasks/test/vstest.md) to run tests,
+If you use the [Visual Studio test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests,
 captured screenshots must be added as a result file in order to be available
 in the test report. For this, use the following code:
 
@@ -190,7 +190,7 @@ Result attachments cannot be published if you use JUnit or xUnit test results. T
 
 ### Capture video
 
-If you use the [Visual Studio test task](../tasks/test/vstest.md) to run tests,
+If you use the [Visual Studio test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests,
 video of the test can be captured and is automatically available as an attachment
 to the test result. For this, you must configure the
 [video data collector in a **.runsettings** file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
