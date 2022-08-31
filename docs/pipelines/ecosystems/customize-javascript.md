@@ -405,7 +405,7 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](../tasks/tool/node-js.md), [Copy File](/azure/devops/pipelines/tasks/reference/copy-files-v2)s, and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. 
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](../tasks/tool/node-js.md), [Copy File](/azure/devops/pipelines/tasks/reference/copy-files-v2)s, and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. 
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -562,7 +562,7 @@ After you've built and tested your app, you can upload the build output to Azure
 
 ### Publish files to Azure Pipelines
 
-To upload the entire working directory of files, use the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task and add the following to your `azure-pipelines.yml` file.
+To upload the entire working directory of files, use the [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task and add the following to your `azure-pipelines.yml` file.
 
 ```yaml
 - task: PublishBuildArtifacts@1
@@ -570,7 +570,7 @@ To upload the entire working directory of files, use the [Publish Build Artifact
     PathtoPublish: '$(System.DefaultWorkingDirectory)'
 ```
 
-To upload a subset of files, first copy the necessary files from the working directory to a staging directory with the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) task, and then use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md).
+To upload a subset of files, first copy the necessary files from the working directory to a staging directory with the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) task, and then use the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1).
 
 ```yaml
 - task: CopyFiles@2
@@ -637,7 +637,7 @@ To publish this archive to a web app, see [Azure web app deployment](../targets/
 
 ### Publish artifacts to Azure Pipelines
 
-Use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) to publish files from your build to Azure Pipelines.
+Use the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) to publish files from your build to Azure Pipelines.
 
 ### Publish to an npm registry
 

@@ -167,7 +167,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ### Keep artifacts with the build record
 
-Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. Your APK gets stored with the build record or test, and gets deployed in later pipelines. For more information, see [Artifacts](../artifacts/pipeline-artifacts.md).
+Add the [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) and [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) tasks. Your APK gets stored with the build record or test, and gets deployed in later pipelines. For more information, see [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ::: moniker range="> tfs-2018"
 
@@ -266,7 +266,7 @@ A: You can build and sign your app bundle with an inline script and a secure fil
 
 Next, use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](../tasks/utility/bash.md) tasks to download your keystore and build and sign your app bundle.
 
-In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](../tasks/utility/publish-build-artifacts.md) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
 
 ```yaml
 - task: DownloadSecureFile@1

@@ -18,7 +18,7 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
 * Restore dependencies, build your project, and test with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) or a [script](../scripts/cross-platform-scripting.md).
 * Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Package and deliver your code with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) and the [publish build artifacts task](../tasks/utility/publish-build-artifacts.md).
+* Package and deliver your code with the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) and the [publish build artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1).
 * Publish to a [NuGet feed](../artifacts/nuget.md).
 * Deploy your [web app to Azure](../targets/webapp.md).
 
