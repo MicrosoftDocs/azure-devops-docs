@@ -435,7 +435,7 @@ steps:
   - name: environments
     value: prod1,prod2 
   steps:  
-    - ${{ each env in split(parameters.environments, ',')}}:
+    - ${{ each env in split(variables.environments, ',')}}:
       - script: ./deploy.sh --environment ${{ env }}
   ```
 
