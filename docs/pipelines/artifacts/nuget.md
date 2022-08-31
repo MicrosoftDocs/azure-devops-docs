@@ -161,7 +161,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
     versionEnvVar: <VERSION_ENVIRONMENT_VARIABLE>
 ```
 
-**Example using the** [Command line task](../tasks/utility/command-line.md) (NuGet.exe):
+**Example using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (NuGet.exe):
 
 ```yaml
   - task: NuGetAuthenticate@1
@@ -173,7 +173,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
     displayName: "Push"          
 ```
 
-**Example using the** [Command line task](../tasks/utility/command-line.md) (dotnet):
+**Example using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (dotnet):
 
   ```yaml
     - task: NuGetAuthenticate@1

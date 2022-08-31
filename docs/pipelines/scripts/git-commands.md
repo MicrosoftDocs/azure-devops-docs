@@ -185,7 +185,7 @@ On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
+|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to main
 
@@ -235,7 +235,7 @@ Yes
 
 [Batch Script](../tasks/utility/batch-script.md)
 
-[Command Line](../tasks/utility/command-line.md)
+[Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2)
 
 [PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2)
 

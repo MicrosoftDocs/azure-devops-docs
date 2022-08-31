@@ -125,7 +125,7 @@ The following example installs the latest version of the [Angular CLI](https://c
 
 ::: moniker range="< azure-devops"
 
-Use the [npm](../tasks/package/npm.md) or [command-line](../tasks/utility/command-line.md) tasks in your pipeline to install tools on your build agent.
+Use the [npm](../tasks/package/npm.md) or [command-line](/azure/devops/pipelines/tasks/reference/cmd-line-v2) tasks in your pipeline to install tools on your build agent.
 
 ::: moniker-end
 
@@ -206,7 +206,7 @@ Use a script stage to invoke [Yarn](https://yarnpkg.com) to restore dependencies
 
 ::: moniker range="< azure-devops"
 
-Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke [Yarn](https://yarnpkg.com).
+Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke [Yarn](https://yarnpkg.com).
 
 ::: moniker-end
 
@@ -340,7 +340,7 @@ The next example uses the [npm](../tasks/package/npm.md) task to call `npm run b
 
 ::: moniker range="< azure-devops"
 
-Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke your packaging tool, such as `webpack` or  Angular's `ng build`.
+Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke your packaging tool, such as `webpack` or  Angular's `ng build`.
 
 ::: moniker-end
 
