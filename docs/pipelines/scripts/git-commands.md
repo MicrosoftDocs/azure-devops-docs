@@ -237,7 +237,7 @@ Yes
 
 [Command Line](../tasks/utility/command-line.md)
 
-[PowerShell](../tasks/utility/powershell.md)
+[PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2)
 
 [Shell Script](../tasks/utility/shell-script.md)
 

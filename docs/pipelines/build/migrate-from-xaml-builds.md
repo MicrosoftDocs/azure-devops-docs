@@ -304,7 +304,7 @@ offers hundreds of extensions that you can install to add tasks that extend your
 
 A major feature of the new build system is its emphasis on using scripts to customize your build pipeline. You can check your scripts into version control and customize your build using any of these methods:
 
-* [PowerShell scripts](../tasks/utility/powershell.md) (Windows)
+* [PowerShell scripts](/azure/devops/pipelines/tasks/reference/powershell-v2) (Windows)
 * [Batch scripts](../tasks/utility/batch-script.md) (Windows)
 * [Command prompt](../tasks/utility/command-line.md)
 * [Shell scripts](../tasks/utility/shell-script.md) (macOS and Linux)
