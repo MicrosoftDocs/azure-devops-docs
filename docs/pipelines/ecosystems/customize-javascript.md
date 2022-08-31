@@ -206,7 +206,7 @@ Use a script stage to invoke [Yarn](https://yarnpkg.com) to restore dependencies
 
 ::: moniker range="< azure-devops"
 
-Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke [Yarn](https://yarnpkg.com).
+Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task in your pipeline to invoke [Yarn](https://yarnpkg.com).
 
 ::: moniker-end
 
@@ -232,7 +232,7 @@ You can call compilers directly from the pipeline by using the script task. Thes
 
 ::: moniker range="< azure-devops"
 
-Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compile script defined in your project package.json to build the code. Use the [Bash](../tasks/utility/bash.md) task to compile your code if you don't have a separate script defined in your project configuration.
+Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compile script defined in your project package.json to build the code. Use the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task to compile your code if you don't have a separate script defined in your project configuration.
 
 ::: moniker-end
 
@@ -340,7 +340,7 @@ The next example uses the [npm](../tasks/package/npm.md) task to call `npm run b
 
 ::: moniker range="< azure-devops"
 
-Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke your packaging tool, such as `webpack` or  Angular's `ng build`.
+Use the [CLI](/azure/devops/pipelines/tasks/reference/cmd-line-v2) or [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task in your pipeline to invoke your packaging tool, such as `webpack` or  Angular's `ng build`.
 
 ::: moniker-end
 

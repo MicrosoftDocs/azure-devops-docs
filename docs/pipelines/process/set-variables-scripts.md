@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 When you use PowerShell and Bash scripts in your pipelines, it's often useful to be able to set variables that you can then use in future tasks. Scripts are great for when you want to do something that isn't supported by a task like calling a custom REST API and parsing the response. 
 
-You'll use the `task.setvariable` logging command to set variables in [PowerShell](../scripts/powershell.md) and [Bash](../tasks/utility/bash.md) scripts. 
+You'll use the `task.setvariable` logging command to set variables in [PowerShell](../scripts/powershell.md) and [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) scripts. 
 
 > [!NOTE] 
 > Deployment jobs use a different syntax for output variables. To learn more about support for output variables in deployment jobs, see [Deployment jobs](./deployment-jobs.md#support-for-output-variables).

@@ -127,7 +127,7 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 > [!NOTE]
 > The Android Emulator is currently available only on the **Hosted macOS** agent.
 
-Create the [Bash](../tasks/utility/bash.md) task and copy paste the code below in order to install and run the emulator. 
+Create the [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) task and copy paste the code below in order to install and run the emulator. 
 Don't forget to arrange the emulator parameters to fit your testing environment.
  The emulator starts as a background process and is available in later tasks.
 
@@ -264,7 +264,7 @@ task to increase the rollout percentage of an application that was previously re
 
 A: You can build and sign your app bundle with an inline script and a secure file. To do so, first download your keystore and [store it as a secure file in the Library](../library/secure-files.md). Then, create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md). 
 
-Next, use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](../tasks/utility/bash.md) tasks to download your keystore and build and sign your app bundle.
+Next, use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](/azure/devops/pipelines/tasks/reference/bash-v3) tasks to download your keystore and build and sign your app bundle.
 
 In this YAML file, download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, use [Copy Files](/azure/devops/pipelines/tasks/reference/copy-files-v2) to copy the app bundle. From there, create and save an artifact with [Publish Build Artifact](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
 
