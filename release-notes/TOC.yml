@@ -4,6 +4,10 @@
   items:
   - name: "2022"
     items:
+    - name: August 12
+      href: 2022/sprint-208-update.md
+    - name: July 29
+      href: 2022/sprint-207-update.md
     - name: July 14
       href: 2022/sprint-206-update.md
     - name: June 27
@@ -179,12 +183,12 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: June 2022
+  - name: July 2022
     href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: June 2022
+    href: docswhatsnew/azure-devops-docs-2022-06.md
   - name: May 2022
     href: docswhatsnew/azure-devops-docs-2022-05.md
-  - name: April 2022
-    href: docswhatsnew/azure-devops-docs-2022-04.md
 - name: Azure Boards
   items:
   - name: "2022"
@@ -336,6 +340,10 @@
   items:
   - name: "2022"
     items:
+    - name: August 12
+      href: 2022/pipelines/sprint-208-update.md
+    - name: July 29
+      href: 2022/pipelines/sprint-207-update.md
     - name: July 14
       href: 2022/pipelines/sprint-206-update.md
     - name: June 27
@@ -484,6 +492,8 @@
   items:
   - name: "2022"
     items:
+    - name: July 29
+      href: 2022/artifacts/sprint-207-update.md
     - name: May 4
       href: 2022/artifacts/sprint-203-update.md
     - name: February 28

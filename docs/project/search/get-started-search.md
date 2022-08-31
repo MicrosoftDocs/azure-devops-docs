@@ -26,7 +26,7 @@ Take an at-a-glance look at all of the [search features](#search-features-usage-
 - When searching across the organization or collection, only results for which a project member has access are listed.
 - Stakeholder wiki search results are limited to provisioned wikis. Because published wikis require access to regular repositories, which Stakeholders don't have access to, results for published wikis don't appear in the search results. Similarly, Code search results don't appear for Stakeholders.
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 > [!IMPORTANT]
 > For Code search, a Collection Administrator must [Install and configure search](install-configure-search.md).

@@ -34,7 +34,7 @@ Before you can create a public project, you must enable anonymous access for you
 2. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. Then, choose **Admin settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+	> ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)  
 
 3. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.
 

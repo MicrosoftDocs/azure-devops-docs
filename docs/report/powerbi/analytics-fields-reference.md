@@ -1,5 +1,5 @@
 ---
-title: Analytics work item fields reference
+title: Work tracking properties reference for Analytics 
 titleSuffix: Azure DevOps
 description: Work item fields available from the Analytics service
 ms.technology: devops-analytics
@@ -7,11 +7,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/26/2022
+ms.date: 08/12/2022
 ---
 
 
-# Analytics work item fields reference 
+# Work tracking properties reference 
 
 [!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
  
@@ -54,7 +54,7 @@ You use the `WorkItemRevisions` entity set to load all the revisions for a given
 
 ## Work item fields 
 
-The fields you can select in an **Analytics view** correspond to regular work tracking fields and select Analytics data store fields, such as **Cycle Time Days** and **Lead Time Days**. These fields, most of which are listed and described in the following table, are defined for the following entity types, unless otherwise specified. (Fields that are specific to the CMMI process aren't fully included in this list.) 
+The fields you can select in an **Analytics view** correspond to regular work tracking fields and select Analytics data store fields, such as **Cycle Time Days** and **Lead Time Days**. These fields, most of which are listed and described in the following table, are defined for the following entity types, unless otherwise specified. (Fields that are specific to the Scrum and CMMI process aren't fully included in this list.) 
 
 - `WorkItem`  
 - `WorkItemRevision`  
@@ -68,7 +68,8 @@ The fields you can select in an **Analytics view** correspond to regular work tr
 |-------------------------------------|---------------|--------------------------------------|
 |**Accepted By**<br/>`AcceptedBy` | UserSK | Name of the person who responded to a code review.<br/>`Microsoft.VSTS.CodeReview.AcceptedBy` |   
 |**Accepted Date**<br/> `AcceptedDate` | DateTimeOffset | Date and time when the person responded to the code review.<br/>`Microsoft.VSTS.CodeReview.AcceptedDate`  |     
-| **Activated By** <br/>`ActivatedBy` | UserSK | Name of the team member who activated or reactivated the work item.<br/>`Microsoft.VSTS.Common.ActivatedBy`   |     
+| **Activated By** <br/>`ActivatedBy` | UserSK | Name of the team member who activated or reactivated the work item.<br/>`Microsoft.VSTS.Common.ActivatedBy`   |   
+|**Activated Date**<br/> `ActivatedDate` | DateTimeOffset | Date and time when a team member activated or reactivated a bug or work item.<br/>`Microsoft.VSTS.CodeReview.ActivatedDate`  |       
 |**Activity**<br/>`Activity` | String | The type of activity that is required to perform a task.<br/>`Microsoft.VSTS.Common.Activity`<br/><br/>The type of activity or discipline that is assigned to a task. Allowed values are: **Deployment**, **Design**, **Development**, **Documentation**, **Requirements**, and **Testing**. (Agile, Scrum, and Basic process) <br/>`Microsoft.VSTS.Common.Activity`  | 
 |**Area Path**<br/>`AreaPath`<br/>`AreaSK`  | String  | Groups the work items into product feature or team areas. The area must be a valid node in the project hierarchy.<br/>`System.AreaPath`     |    
 |**Assigned To** <br/>`AssignedTo`<br/>`AssignedToUserSK`  | Double  | The name of the team member who currently owns the work item.<br/>`System.AssignedTo`    |     
@@ -213,7 +214,7 @@ The following surrogate keys (SK) properties can be used to filter or construct 
 
 - [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
 - [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
-- [Query guidelines for Analytics with OData](../extend-analytics/odata-query-guidelines.md)
+- [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md) 
 
 

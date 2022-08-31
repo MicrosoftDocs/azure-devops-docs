@@ -40,7 +40,7 @@ For more information about the new built-in Azure AD roles, see [Administrator r
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 3. Select **Azure Active Directory**, and then switch the toggle to turn on the policy, restricting organization creation.
 
    ![Turn on Azure AD policy](media/azure-ad-tenant-policy/azure-ad-turn-policy-on.png)

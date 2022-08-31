@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 08/03/2022
 ---
 
 # Interactively filter backlogs, boards, queries, and plans in Azure Boards
@@ -212,7 +212,7 @@ Supported options are indicated with a ✔️ or listed.
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2022"
 :::row:::
    :::column span="1.5":::
      [**Delivery Plans**](../plans/review-team-plans.md)
@@ -237,7 +237,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops-2022"
 :::row:::
    :::column span="1.5":::
      [**Plans**](../extensions/delivery-plans.md)
@@ -654,7 +654,7 @@ Along with the standard filter functions summarized in the previous table, the f
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops-2022"
 :::row:::
    :::column span="2":::
      [**Plans**](../extensions/delivery-plans.md)
@@ -799,7 +799,7 @@ To add columns or fields, see the following articles:
 	For example, here we open the filter toolbar for the Kanban board, **Backlog items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of choosing Filter function](media/filter-boards/filter-kb-choose-filter-services.png)
+	> ![Screenshot of choosing Filter function.](media/filter-boards/filter-kb-choose-filter-services.png)
 	::: moniker-end
 
 	::: moniker range="< azure-devops-2019"
@@ -862,13 +862,14 @@ The filter criteria ignores the following characters when the field value starts
 Here we filter the Kanban board to only show those cards that include 'web', either in the title, tag, or field.
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter using keyword search.](media/filter-boards/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](media/filter-boards/filter-kb-text-web-services.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 Here we filter the Kanban board to only show those cards that include 'Web', either in the title, tag, or displayed field.
-![Kanban board, Filter using keyword search, earlier versions.](media/filter-boards/filter-options-web.png)
+
+![Screenshot of Kanban board, Filter using keyword search, TFS 2018.](media/filter-boards/filter-options-web.png)
 ::: moniker-end
 
 
@@ -877,7 +878,7 @@ Here we filter the Kanban board to only show those cards that include 'Web', eit
 Here we filter the Backlog with **Show Parents** enabled, to only show work items that include 'web'. 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog, Hierarchy, Filter using keyword search.](media/filter/filter-backlog-web-keyword.png)
+> ![Screenshot of Backlog, Hierarchy, Filter using keyword search.](media/filter/filter-backlog-web-keyword.png)
 
 The filtered set is always a flat list, even if you've selected to show parents. 
 
@@ -903,22 +904,16 @@ With filtering turned on, choose one or more values from the multi-select drop-d
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
-::: moniker range="<= azure-devops-2019"
-
-![Enable kanban field-based filtering, earlier versions](media/filter-boards/filter-kb-choose-filter.png)
-::: moniker-end
-
 For example, here we filter for all items assigned to Jamal and Raisa.
-
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
+> ![Screenshot of enable Kanban board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
-![Kanban board, Filter on assignment field, earlier versions](media/filter-boards/filter-kb-filters-chosen.png)
+![Screenshot of Kanban board, Filter on assignment field, Azure DevOps Server 2019 and TFS 2018.](media/filter-boards/filter-kb-filters-chosen.png)
 ::: moniker-end
 
 
@@ -945,7 +940,7 @@ Cards are filtered based on the assignments made in the following order and logi
 Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
 
 > [!div class="mx-imgBorder"]  
-> ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
+> ![Screenshot of filtered backlog based on the keyword "issues".](media/filter/filter-issues-keyword.png)   
 
 
 <a id="parent-filter"></a>
@@ -966,11 +961,11 @@ Here, we choose two features on which to filter the board.
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter on Parent field](media/filter-boards/filter-kb-parent-filters-services.png)
+> ![Screenshot of Kanban board, Filter on Parent field.](media/filter-boards/filter-kb-parent-filters-services.png)
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-![Kanban board, Filter on parent work items](media/filter-boards/filter-kb-choose-parent-work-items.png)
+![Screenshot of Kanban board, Filter on parent work items.](media/filter-boards/filter-kb-choose-parent-work-items.png)
 ::: moniker-end
 
 The final board displays just those stories linked as child work items to the selected features.
@@ -993,7 +988,7 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 ::: moniker range="< azure-devops-2019"
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of filtering board based on tags, TFS 2017 and 2018 versions. ](../queries/media/add-tags/filter-backlog-tags.png) 
+> ![Screenshot of filtering board based on tags, TFS 2018. ](../queries/media/add-tags/filter-backlog-tags.png) 
 ::: moniker-end
 
 To learn more about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
@@ -1018,7 +1013,6 @@ To learn more, see [Query work item history and discussion fields](../queries/hi
 
 ## Related articles  
 
-
 - [Set up your Backlogs and Boards](set-up-your-backlog.md)
 - [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)
 - [Change column options](set-column-options.md)
@@ -1028,6 +1022,5 @@ To learn more, see [Query work item history and discussion fields](../queries/hi
 - [Tags](../queries/add-tags-to-work-items.md) 
 - [Query work items that you're following](../work-items/follow-work-items.md#query-work-items-that-youre-following)
 - [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
-
 
 <!--- Other filter features cross-service such as Filter pipelines -->

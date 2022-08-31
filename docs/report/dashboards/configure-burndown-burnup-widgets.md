@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'  
-ms.date: 09/27/2021
+ms.date: 07/26/2022
 ---
 
 # Configure a Burndown or Burnup widget 
@@ -146,7 +146,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    
 	> [!NOTE]  
 	> All field criteria are AND-ed together. That is, work items must match all the field criteria to be included in the burndown or burnup chart.
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2022"
 	You can even filter on a null value for the **Field Criteria**. This behavior is consistent with a query using the same field criteria. Here we select to filter on work items whose **Activity** value isn't defined. 
 
 	:::image type="content" source="media/burndown/field-criteria-null-value.png" alt-text="Screenshot of Field Criteria that equals a null value for Activity.":::

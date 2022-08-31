@@ -173,7 +173,7 @@ The following table provides _*a partial list*_ of the **WorkItemRevision** enti
 
 ## Related articles 
 
-- [Query guidelines for Analytics with OData](odata-query-guidelines.md)
+- [OData Analytics query guidelines](odata-query-guidelines.md)
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
 - [Exploring Analytics OData metadata](analytics-metadata.md)

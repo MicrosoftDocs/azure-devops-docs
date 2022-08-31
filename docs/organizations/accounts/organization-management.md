@@ -90,7 +90,7 @@ For more information about adding users to your organization, see the following 
 
 ### Azure AD
 
-If you manage your users with Azure Azure AD, you can connect your organization to Azure AD and manage access through Azure AD. If you already use Azure AD, [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md).
+If you manage your users with Azure AD, you can connect your organization to Azure AD and manage access through Azure AD. If you already use Azure AD, [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md).
 
 Do the following tasks, to add users through Azure AD:
 
@@ -137,7 +137,7 @@ A best practice is to manage users through security groups. You can use the defa
    
    #### Manage organization settings
    
-   - [Change organization Owner](change-organization-ownership.md)
+   - [Change organization owner](change-organization-ownership.md)
    - [Rename organization](rename-organization.md)
    - [Delete an organization](delete-your-organization.md)
    - [Recover a deleted organization](recover-your-organization.md)

@@ -21,14 +21,14 @@ A privacy policy is a legal requirement for all websites and apps that collect o
 
 ## Prerequisites
 
-You must be [an organization owner](../security/look-up-organization-owner.md) or [a member of the Project Collection Administrators group](../security/look-up-project-collection-administrators.md) to add a privacy policy URL.
+You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 ## Add your privacy policy URL in Azure DevOps
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. In the **Overview** tab, add your privacy policy URL, and then select **Save**.
 

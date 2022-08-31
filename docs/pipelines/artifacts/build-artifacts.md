@@ -229,6 +229,8 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 - If you are publishing your packages to a file share, make sure you provide access to the build agent.
 
+- Make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts) if your organization is using a firewall.
+
 ## Related articles
 
 - [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)

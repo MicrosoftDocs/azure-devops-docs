@@ -1,14 +1,14 @@
 ---
 title: Overview of billing articles
 titleSuffix: Azure DevOps 
-ms.custom: seodec18, freshness-fy22, contperf-fy22q3
+ms.custom: seodec18, freshness-fy22q1, contperf-fy22q3
 description: Understand billing management tasks, including how to set up billing, make purchases, and change the Azure subscription for billing.
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 01/18/2022
+ms.date: 08/05/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -32,7 +32,7 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 ::: moniker range="< azure-devops"
 
-Make some purchases for Azure DevOps Server on your monthly Azure bill.  
+Make purchases for Azure DevOps Server on your monthly Azure bill.  
 
 * [Azure DevOps Server pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 * [How to buy CALs or access to the Test Services page](buy-access-tfs-test-hub.md)
@@ -43,7 +43,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
 During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services are billed via Azure. You aren't required to pay for or use any other Azure services.
  
-The following links take you to the paid services that are offered by Microsoft:
+The following links take you to the paid services offered by Microsoft:
 
  * [Buy Basic access for users](buy-basic-access-add-users.md)
  * [Buy Azure Test Plans](buy-basic-access-add-users.md)

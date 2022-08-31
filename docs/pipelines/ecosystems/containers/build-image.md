@@ -3,9 +3,7 @@ title: Build an image
 description: Build container images
 ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
-ms.author: atulmal
-author: azooinmyluggage
-ms.date: 03/03/2022
+ms.date: 08/26/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -36,7 +34,7 @@ Once you build an image, you'll push the image to Azure Container Registry, Dock
    > You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
    > You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 
-4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you're building a Linux app, use `ubuntu-1604` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
+4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you're building a Linux app, use `ubuntu-latest` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
  
    ```yaml
            trigger:
@@ -72,11 +70,12 @@ Once you build an image, you'll push the image to Azure Container Registry, Dock
 ## Clean up resources
 
 If you're not going to continue to use this application, delete your pipeline and code repository.
+
 ## FAQ
 
 ### What pre-cached images are available on hosted agents?
 
-Some commonly used images are pre-cached on Microsoft-hosted agents to avoid long time intervals spent in pulling these images from the container registry for every job. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/virtual-environments/releases) repository.
+Some commonly used images are pre-cached on Microsoft-hosted agents to avoid long time intervals spent in pulling these images from the container registry for every job. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/runner-images/releases) repository.
 
 ### How do I set the BuildKit variable for my docker builds?
 
@@ -124,9 +123,9 @@ The Docker task itself internally calls the Docker binary on a script, and also 
 
 ### Is reutilizing layer caching during builds possible on Azure Pipelines?
 
-In the current design of Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine (based on the image generated from [azure-pipelines-image-generation](https://github.com/microsoft/azure-pipelines-image-generation) repository templates). These virtual machines are cleaned up after the job reaches completion, not persisted and thus not reusable for subsequent jobs. The ephemeral nature of virtual machines prevents the reuse of cached Docker layers.
+In the current design of Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine (based on the image generated from [azure-pipelines-image-generation](https://github.com/microsoft/azure-pipelines-image-generation) repository templates). These virtual machines are cleaned up after the job reaches completion, not persisted and thus not reusable for subsequent jobs. The ephemeral nature of virtual machines prevents the reuse of cached Docker layers. One workaround for Microsoft-hosted agents is to have a multi-stage build that produces two images and pushes them to an image registry in an early stage. Then, you can tell Docker to use these images as a cache source with the `--cache-from` argument. 
 
-However, you can cache Docker layers with self-hosted agents because the ephemeral lifespan problem isn't applicable for these agents. You could also create multiple images in a multi-stage build as an alternate solution. 
+You can cache Docker layers with self-hosted agents without any workarounds because the ephemeral lifespan problem isn't applicable for these agents. 
 
 ### How to build Linux container images for architectures other than x64?
 
