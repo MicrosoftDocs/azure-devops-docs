@@ -378,7 +378,7 @@
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/build/xcode-build.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/reference/Unkown?"
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/xcode-v4"
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/build/jenkins-queue-job.md",
