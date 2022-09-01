@@ -618,7 +618,7 @@ Use the following parameters when you define and secure a connection to a NuGet 
 |       Username        |                                                                                          Required when connection type is **Basic authentication**. The username for authentication.                                                                                           |
 |       Password        |                                                                                           Required when connection type is **Basic authentication**. The password for the username.                                                                                            |
 
-To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nu-get-authenticate-v1).
+To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1).
 
 ### Python package download service connection
 
