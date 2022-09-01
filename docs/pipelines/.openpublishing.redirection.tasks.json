@@ -54,7 +54,7 @@
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/package/nuget.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/reference/nu-get-command-v2"
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/nuget-command-v2"
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/utility/download-pipeline-artifact.md",
@@ -126,7 +126,7 @@
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/package/nuget-authenticate.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/reference/nu-get-authenticate-v1"
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1"
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/utility/manual-validation.md",
@@ -190,7 +190,7 @@
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/tool/nuget.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/reference/nu-get-tool-installer-v1"
+      "redirect_url": "/azure/devops/pipelines/tasks/reference/nuget-tool-installer-v1"
     },
     {
       "source_path_from_root": "/docs/pipelines/tasks/package/npm-authenticate.md",
