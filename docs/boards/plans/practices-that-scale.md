@@ -121,7 +121,7 @@ Along with the above practices, you'll find more guidance around scaling your Ag
 
 ### Industry resources
 - [Agile manifesto](https://agilemanifesto.org)
-- [Agile Alliance](http://guide.agilealliance.org/)  
+- [Agile Alliance](https://www.agilealliance.org/)  
 - [Scaled Agile Lean Development - The Principles](http://scaledprinciples.org/)  
 
 ### Practices that don't scale
