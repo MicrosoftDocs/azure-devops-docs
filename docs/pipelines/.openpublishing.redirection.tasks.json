@@ -1,6 +1,10 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/docs/pipelines/tasks/index.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/reference"
+    },
+    {
       "source_path_from_root": "/docs/pipelines/tasks/utility/powershell.md",
       "redirect_url": "/azure/devops/pipelines/tasks/reference/powershell-v2"
     },
