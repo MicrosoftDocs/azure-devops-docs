@@ -85,7 +85,7 @@ trigger:
 ```
 
 > [!NOTE]
-> If you are using Azure DevOps Server 2020 or newer, Azure Repos Git, and repository resource CI triggers, do not set the `batch` property on any of the repository CI triggers other than the `self` repository. `batch` is only supported for CI triggers defined on the `self` repository.
+> `batch` is not supported in repository resource triggers.
 
 To clarify this example, let us say that a push `A` to master caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started. 
 

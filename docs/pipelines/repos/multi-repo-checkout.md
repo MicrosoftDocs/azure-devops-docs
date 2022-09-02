@@ -235,7 +235,7 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 > [!IMPORTANT]
 > Repository resource triggers only work for Azure Repos Git repositories in the same organization at present. They do not work for GitHub or Bitbucket repository resources.
 >
-> If you are using repository resource triggers, do not set the `batch` property on any of the repository CI triggers other than the `self` repository. `batch` is only supported for CI triggers defined on the `self` repository.
+> `batch` is not supported in repository resource triggers.
 
 If you do not specify a `trigger` section in a repository resource, then the pipeline won't be triggered by changes to that repository. If you specify a `trigger` section, then the behavior for triggering is similar to how CI triggers work for the self repository.
 
