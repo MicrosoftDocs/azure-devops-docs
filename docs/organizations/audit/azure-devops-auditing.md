@@ -42,12 +42,12 @@ Auditing events can be accessed through two methods on the Auditing page in your
 
 ## Prerequisites
 
-Auditing is turned off by default for all Azure DevOps Services organizations and can be [toggled on and off](#enable-and-disable-auditing) by Organization owners and Project Collection Administrators in the *Organization Settings* page.
+Auditing is turned off by default for all Azure DevOps Services organizations and can be [toggled on and off](#enable-and-disable-auditing) by organization Owners and Project Collection Administrators in the *Organization Settings* page.
 By default, Project Collection Administrators are the only group that has full access to the Auditing feature.
 
 ### Audit permissions
 
-- By default, members of the **Organization owners** and **Project Collection Administrators** groups have full access to all Auditing features.
+- By default, members of the **organization Owners** and **Project Collection Administrators** groups have full access to all Auditing features.
 - Specific Audit permissions can be granted to any group via the Security Permissions page in Organization Settings. 
 
 > [!NOTE]  

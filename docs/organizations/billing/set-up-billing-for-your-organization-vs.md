@@ -25,7 +25,7 @@ Set up billing in Azure DevOps before you make purchases, so it's already in pla
 ## Prerequisites
 
 * If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now.
-* To set up billing, you must be a member of the [**Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) or be an [**organization Owner**](../security/look-up-organization-owner.md).
+* You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 > [!NOTE]
 > The [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/) isn't supported.

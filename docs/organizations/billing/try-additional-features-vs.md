@@ -22,7 +22,7 @@ Basic users have full access to Azure Test Plans during the 30-day trial. After 
 
 ## Prerequisites
 
-To try Azure Test Plans, you must be the [**organization Owner**](../security/look-up-organization-owner.md) or a member of the [**Project Collection Administrators** group](../security/look-up-project-collection-administrators.md) group. If you created the organization or collection, you're automatically a member of this group.
+You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 ## Try Azure Test Plans
 

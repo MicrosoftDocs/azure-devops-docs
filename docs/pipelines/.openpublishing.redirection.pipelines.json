@@ -64,6 +64,11 @@
       "source_path_from_root":"/docs/pipelines/ecosystems/configure-javascript.md",
       "redirect_url":"/azure/devops/pipelines/ecosystems/customize-javascript",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/ecosystems/java-function.md",
+      "redirect_url":"/azure/azure-functions/functions-how-to-azure-devops",
+      "redirect_document_id": false
     }
   ]
 }
