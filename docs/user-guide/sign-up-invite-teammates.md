@@ -15,11 +15,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-When you sign up for [Azure DevOps](what-is-azure-devops.md), you get the following tier of free services:
+When you sign up for Azure DevOps, you get the following tier of free services:
 
 [!INCLUDE [free-tier](../includes/free-tier.md)]
 
-You can sign up for Azure DevOps with either a Microsoft or GitHub account.
+You can sign up for Azure DevOps with either a [Microsoft](#sign-up-with-a-microsoft-account) or [GitHub](#sign-up-with-a-github-account) account. For more information, see What is [Azure DevOps?](what-is-azure-devops.md)
 ## Sign up with a Microsoft account
 
 1. If you don't have one, [create a Microsoft account now](https://azure.microsoft.com/services/devops/).
