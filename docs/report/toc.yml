@@ -57,7 +57,7 @@
     displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation
 - name: Work tracking guidance
   items:
-  - name: Burndown guidance
+  - name: Burndown and burnup guidance
     href: dashboards/burndown-guidance.md
     displayname: scope increase, scope creep, risk
   - name: Cumulative flow & lead/cycle time guidance

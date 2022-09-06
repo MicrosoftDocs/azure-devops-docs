@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 04/09/2021
+ms.date: 09/02/2022
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -234,6 +234,8 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 
 > [!IMPORTANT]
 > Repository resource triggers only work for Azure Repos Git repositories in the same organization at present. They do not work for GitHub or Bitbucket repository resources.
+>
+> `batch` is not supported in repository resource triggers.
 
 If you do not specify a `trigger` section in a repository resource, then the pipeline won't be triggered by changes to that repository. If you specify a `trigger` section, then the behavior for triggering is similar to how CI triggers work for the self repository.
 

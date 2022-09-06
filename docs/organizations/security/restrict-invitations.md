@@ -30,7 +30,7 @@ can add users who are already in the organization to their team       |
 
 ## Prerequisites
 
-- You must be a member of the **Project Collection Administrator** group to manage this policy. To get added, see [Change project collection-level permissions](change-organization-collection-level-permissions.md). 
+You must be a member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 
 ## Turn off policy
 
