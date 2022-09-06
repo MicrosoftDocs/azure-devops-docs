@@ -6,7 +6,7 @@ ms.topic: include
 ## Invite users
 
 
-Invite users to your organization by adding their email address or GitHub ID to your organization. For GitHub user invitations, ensure you've [enabled the policy, *Invite GitHub users*](../user-guide/sign-up-invite-teammates.md#enable-github-invitations) in **Organization settings** > **Policies**.
+Invite users to your organization by adding their email address or GitHub ID to your organization. For GitHub user invitations, ensure you've enabled the policy, *Invite GitHub users* in **Organization settings** > **Policies**.
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
