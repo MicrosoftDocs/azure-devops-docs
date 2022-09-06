@@ -29,7 +29,7 @@ In the following example, we will be ignoring all files except the ones in the *
 ```
 
 > [!IMPORTANT]
-> The *.artifactignore* file must be in the directory provided to the `targetPath` argument in your [Publish Pipeline Artifacts](../../pipelines/tasks/utility/publish-pipeline-artifact.md) task.
+> The *.artifactignore* file must be in the directory provided to the `targetPath` argument in your [Publish Pipeline Artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
 ## Syntax
 

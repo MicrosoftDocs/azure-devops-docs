@@ -56,7 +56,7 @@ Welcome to what's new in the Azure DevOps docs from May 1, 2022 through May 31, 
 - [Deploy to IIS servers with Azure Pipelines and WinRM](/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-winrm)
 - [Build and test Go projects](/azure/devops/pipelines/ecosystems/go)
 - [Use Azure Key Vault secrets in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault)
-- [Package: NuGet Authenticate](/azure/devops/pipelines/tasks/package/nuget-authenticate)
+- [Package: NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nu-get-command-v2-authenticate)
 
 ## Report
 

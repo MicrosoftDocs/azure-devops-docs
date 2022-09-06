@@ -204,7 +204,7 @@ The YAML file contains the following key elements:
 - Each stage has a `pool` element that specifies one or more virtual machines (VMs) in which the pipeline runs the `steps`. By default, the `pool` element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
 - The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md), and `script`, which runs an arbitrary set of commands. 
 
-- The first task under Build stage is [UsePythonVersion](../tasks/tool/use-python-version.md), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
+- The first task under Build stage is [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
 Then we have script-based task that creates a virtual environment and installs dependencies from file (requirements.txt).
 
    ```yaml
@@ -224,7 +224,7 @@ Then we have script-based task that creates a virtual environment and installs d
    ```
 
 
-- Next step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md) task to the end of the YAML file:
+- Next step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](/azure/devops/pipelines/tasks/reference/archive-files-v2) task to the end of the YAML file:
 
    ```yaml
    - task: ArchiveFiles@2
@@ -249,8 +249,8 @@ Then we have script-based task that creates a virtual environment and installs d
 
 - In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). By using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Instead, you can pre-create the environment and provide the `environmentName`.
 
-- Within the deployment job, first task is [UsePythonVersion](../tasks/tool/use-python-version.md), which specifies the version of Python to use on the build agent. 
-- We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
+- Within the deployment job, first task is [UsePythonVersion](/azure/devops/pipelines/tasks/reference/use-python-version-v0), which specifies the version of Python to use on the build agent. 
+- We then use the [AzureWebApp](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
     ```yaml
   jobs:
