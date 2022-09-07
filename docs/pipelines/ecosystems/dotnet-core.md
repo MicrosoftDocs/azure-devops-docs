@@ -146,19 +146,13 @@ See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the [UseDotNet@2](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) task to your YAML file.
 
-To install the preview version of the 5.0.x SDK for building and 3.0.x for running tests that target NET Core 3.0.x, add the following snippet:
+To install 6.0.x SDK for building, add the following snippet:
 
 ```yaml
 steps:
 - task: UseDotNet@2
   inputs:
-    version: '5.0.x'
-    includePreviewVersions: true # Required for preview versions
-
-- task: UseDotNet@2
-  inputs:
-    version: '3.0.x'
-    packageType: runtime
+    version: '6.0.x'
 ```
 
 Windows agents already include a .NET Core runtime. To install a newer SDK, set `performMultiLevelLookup` to `true` in the following snippet: 
