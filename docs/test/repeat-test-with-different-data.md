@@ -1,6 +1,6 @@
 ---
 title: Repeat a test with different data
-description: Learn about manual and exploratory testing. Repeat a test with different data in Azure Test Plan and Team Foundation Server.
+description: Learn about manual and exploratory testing. Repeat a test with different data in Azure Test Plans and Team Foundation Server.
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.technology: devops-test
 ms.topic: conceptual
