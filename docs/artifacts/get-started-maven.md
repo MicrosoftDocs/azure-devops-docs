@@ -25,7 +25,7 @@ This quickstart will guide you through setting up your Maven project to connect 
 [!INCLUDE [](includes/maven/pom-and-settings.md)]
 
 > [!TIP]
-> If you are using [Maven task](../pipelines/tasks/build/maven.md), set the `mavenAuthenticateFeed` argument to true to automatically authenticate with your Maven feed.
+> If you are using [Maven task](/azure/devops/pipelines/tasks/reference/maven-v3), set the `mavenAuthenticateFeed` argument to true to automatically authenticate with your Maven feed.
 
 ## Publish artifacts
 

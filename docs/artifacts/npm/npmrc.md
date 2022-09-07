@@ -147,7 +147,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 ## Pipeline authentication
 
-Azure Artifacts recommend using the [npm authenticate task](../../pipelines/tasks/package/npm-authenticate.md) to authenticate with your pipeline. When using a task runner such as gulp or Grunt, you'll need to add the npm authenticate task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the config file.
+Azure Artifacts recommend using the [npm authenticate task](/azure/devops/pipelines/tasks/reference/npm-authenticate-v0) to authenticate with your pipeline. When using a task runner such as gulp or Grunt, you'll need to add the npm authenticate task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the config file.
 
 ### [Classic](#tab/classic)
 

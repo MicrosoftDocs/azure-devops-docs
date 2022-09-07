@@ -27,7 +27,7 @@ PowerShell Core runs on any platform.
 
 1. Push your PowerShell script to your repo.
 
-2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](../tasks/utility/powershell.md) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](../tasks/utility/powershell.md) but Windows PowerShell and will only work on a Windows agent.
+2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) but Windows PowerShell and will only work on a Windows agent.
 
 ```yaml
 # for PowerShell Core
@@ -41,7 +41,7 @@ steps:
 
 ### [Classic](#tab/classic)
 
-1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](../tasks/utility/powershell.md) works for PowerShell Core and Windows PowerShell. 
+1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](/azure/devops/pipelines/tasks/reference/powershell-v2) works for PowerShell Core and Windows PowerShell. 
 
     :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
 
