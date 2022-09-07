@@ -14,11 +14,11 @@ monikerRange: 'azure-devops'
 
 Azure Pipelines can be used to deploy to Kubernetes clusters offered by multiple cloud providers. This document contains the concepts associated with setting up deployments for any Kubernetes cluster.
 
-While it's possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the [KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) and [Kubernetes service connection](../../library/service-endpoints.md) are the recommended approach. 
+While it's possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) and [Kubernetes service connection](../../library/service-endpoints.md) are the recommended approach. 
 
 ## KubernetesManifest task
 
-The [KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) has the added benefits of being able to check for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or kustomization.yaml or Docker compose files, and aid in deployment strategy roll outs.
+The [KubernetesManifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) has the added benefits of being able to check for object stability before marking a task as success/failure. The task can also perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or kustomization.yaml or Docker compose files, and aid in deployment strategy roll outs.
 
 ## Kubernetes resource in environments
 
@@ -85,5 +85,5 @@ To allow image pull from private registries, before the `deploy` action, the `cr
 ## Alternatives
 
 Instead of using the KubernetesManifest task for deployment, one can also use the following alternatives:
-- [Kubectl task](../../tasks/deploy/kubernetes.md)
+- [Kubectl task](/azure/devops/pipelines/tasks/reference/kubernetes-v1)
 - kubectl invocation on script. For example: ```script: kubectl apply -f manifest.yml```

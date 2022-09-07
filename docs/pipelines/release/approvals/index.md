@@ -33,10 +33,10 @@ By using gates, approvals, and manual intervention you can take full control of 
 | Scenario | Feature(s) to use |
 | --- | --- |
 | A user must manually validate the change request and approve the deployment to a certain stage. | [Pre-deployment approvals](approvals.md) |
-| A user must manually sign out after deployment before the release is triggered to other stages. | [Post-deployment approvals](approvals.md) |
+| A user must manually sign off after deployment before the release is triggered to other stages. | [Post-deployment approvals](approvals.md) |
 | A team wants to ensure there are no active issues in the work item or problem management system before deploying a build to a stage.  | [Pre-deployment gates](gates.md) |
 | A team wants to ensure there are no reported incidents after deployment, before triggering a release. | [Post-deployment gates](gates.md) |
-| After deployment, a team wants to wait for a specified time before prompting users to sign out. | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
+| After deployment, a team wants to wait for a specified time before prompting users to sign off. | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
 | During deployment, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation)| 
 | During deployment, a team wants to prompt users to enter a value for a parameter used by the deployment tasks, or allow users to edit the release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation) | 
 | During deployment, a team wants to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
@@ -46,7 +46,7 @@ You can combine all three techniques within a release pipeline to fully achieve 
 In addition, you can install an extension that integrates with *ServiceNow* to help you control and manage your deployments through Service Management methodologies such as ITIL. For more information, see [Integrate with ServiceNow change management](servicenow.md).
 
 > [!NOTE]
-> The time delay before pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
+> The time delay before pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](/azure/devops/pipelines/tasks/reference/delay-v1) in your release pipeline.
 
 ```YAML
 # Delay further execution of a workflow by a fixed time

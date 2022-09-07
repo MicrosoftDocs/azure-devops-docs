@@ -174,7 +174,7 @@ jobs:
 ```
 
 In addition, Azure Pipelines provides a [docker
-task](../tasks/build/docker.md)
+task](/azure/devops/pipelines/tasks/reference/docker-v2)
 that allows you to run, build, or push an image.
 
 ## Agent Selection
