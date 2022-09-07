@@ -46,7 +46,7 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 |[Bamboo](https://confluence.atlassian.com/bamboo/using-webhooks-1018270680.html)    | Build completed, Code pushed | Queue a build |
 |[Campfire](https://go.microsoft.com/fwlink/?LinkID=393613)   |  All | Post a message to a room |
 |[Datadog](./services/datadog.md)  |  All  | Post an event in Datadog |
-|[Flowdock](https://www.flowdock.com/api/integration-getting-started)   | All   |  Post a message to a team inbox or chat |
+|[Flowdock](https://github.com/flowdock/api-docs/blob/master/docs/integration-getting-started.md)   | All   |  Post a message to a team inbox or chat |
 |[Grafana](./services/grafana.md)  | Release deployment completed | Add annotation to Grafana database |
 |HipChat    | (No longer supported)        | |
 |[HockeyApp](https://aka.ms/vsts-hockeyapp-integration)   | Work item updated| Send notification |
