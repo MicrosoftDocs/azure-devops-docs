@@ -85,7 +85,7 @@ Your typical development process includes developing code locally and periodical
 The main branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in Azure Pipelines or TFS so that certain tasks only execute on your main branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions.
 
 #### [YAML](#tab/yaml/)
-Edit the `azure-pipelines.yml` file in your `main` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task.
+Edit the `azure-pipelines.yml` file in your `main` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -102,7 +102,7 @@ YAML builds are not yet available on TFS.
 
 #### [Classic](#tab/classic/)
 1. Locate the build pipeline that services your main branch. Select **Edit**.
-2. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) task.
+2. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](../tasks/utility/publish-build-artifacts.md) task.
 3. Select **Control Options** for the task on the bottom right hand part of your screen.
 4. Select the dropdown for **Run this task** and choose **Custom conditions**.
 

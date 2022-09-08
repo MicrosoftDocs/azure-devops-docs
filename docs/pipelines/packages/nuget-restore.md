@@ -41,7 +41,7 @@ With NuGet Package Restore you can install all your project's dependency without
     :::image type="content" source="media/nuget-restore-classic.png" alt-text="Screenshot that shows how to configure the NuGet restore task.":::
 
 > [!NOTE]
-> Classic NuGet restore uses the [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](/azure/devops/pipelines/tasks/reference/nuget-tool-installer-v1) if you want to use a different NuGet version.
+> Classic NuGet restore uses the [NuGetCommand@2](../tasks/package/nuget.md) task. By default, this version uses NuGet 4.1.0. Use the [NuGet Tool Installer task](../tasks/tool/nuget.md) if you want to use a different NuGet version.
 
 ## Restore packages with NuGet CLI
 
