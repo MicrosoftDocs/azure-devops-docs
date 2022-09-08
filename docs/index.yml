@@ -167,7 +167,7 @@ tools:
       url: ./pipelines/apps/windows/cpp.md
     - title: Docker 
       imageSrc: ./pipelines/media/index/logo_dockercontainer.svg
-      url: /azure/devops/pipelines/tasks/reference/docker-v2
+      url: ./pipelines/tasks/build/docker.md
     - title: Java
       imageSrc: /media/logos/logo_java.svg
       url: ./pipelines/ecosystems/java.md

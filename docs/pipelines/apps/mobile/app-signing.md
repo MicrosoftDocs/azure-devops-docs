@@ -34,7 +34,7 @@ Follow these steps to sign your Android app while keeping your signing certifica
 
 1. First, obtain a keystore file that contains your signing certificate. The [Android documentation](https://developer.android.com/studio/publish/app-signing.html#generate-key) describes the process of generating a keystore file and its corresponding key.
 
-1. Create your build pipeline from the Android or Xamarin.Android build template. Or, if you already have a build pipeline, add the [Android Signing](/azure/devops/pipelines/tasks/reference/android-signing-v3) task after the task that builds your APK.
+1. Create your build pipeline from the Android or Xamarin.Android build template. Or, if you already have a build pipeline, add the [Android Signing](../../tasks/build/android-signing.md) task after the task that builds your APK.
 
 1. Find the Android Signing task's **Sign the APK** checkbox and enable it.
 
@@ -100,7 +100,7 @@ Use this method when you do not have enduring access to the build agent, such as
 
 ##### Visual Editor
 
-1. Add the [Install Apple Certificate](/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2) task to your build before the Xcode or Xamarin.iOS task.
+1. Add the [Install Apple Certificate](../../tasks/utility/install-apple-certificate.md) task to your build before the Xcode or Xamarin.iOS task.
 1. Next to the **Certificate (P12)** field, click the settings icon and upload your P12 file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Once your certificate has been uploaded to the Secure Files library, select it in the **Certificate (P12)** dropdown.
 1. Go to the **Variables** tab and add a variable named `P12password`. Set its value to the password of your certificate. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
@@ -110,7 +110,7 @@ Use this method when you do not have enduring access to the build agent, such as
 
 1. Upload your P12 file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Go to the **Variables** tab and add a variable named `P12password`. Set its value to the password of your certificate. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
-1. Add the [Install Apple Certificate](/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2) task to your YAML before the Xcode or Xamarin.iOS task:
+1. Add the [Install Apple Certificate](../../tasks/utility/install-apple-certificate.md) task to your YAML before the Xcode or Xamarin.iOS task:
 
    ```yaml
    - task: InstallAppleCertificate@2
@@ -123,7 +123,7 @@ Use this method when you do not have enduring access to the build agent, such as
 
 ##### Visual Editor
 
-1. Add the [Install Apple Provisioning Profile](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) task to your build before the Xcode or Xamarin.iOS task.
+1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your build before the Xcode or Xamarin.iOS task.
 1. For the **Provisioning profile location** option, choose **Secure Files** (in YAML, `secureFiles`).
 1. Next to the **Provisioning profile** field, click the settings icon and upload your provisioning profile file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Once your certificate has been uploaded to the Secure Files library, select it in the **Provisioning profile** dropdown.
@@ -132,7 +132,7 @@ Use this method when you do not have enduring access to the build agent, such as
 ##### Sample YAML
 
 1. Upload your provisoning profile to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
-1. Add the [Install Apple Provisioning Profile](/azure/devops/pipelines/tasks/reference/install-apple-provisioning-profile-v1) task to your YAML before the Xcode or Xamarin.iOS task:
+1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your YAML before the Xcode or Xamarin.iOS task:
 
    ```yaml
    - task: InstallAppleProvisioningProfile@1

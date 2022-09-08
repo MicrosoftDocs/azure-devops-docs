@@ -64,6 +64,6 @@ There's a policy for managing leaked PATs! For more information, see [Revoke lea
 ### Q: Can I use a personal access token as an ApiKey to publish NuGet packages to an Azure Artifacts feed using the dotnet/nuget.exe command line?
 
 A: No. Azure Artifacts does not support passing a personal access token as an ApiKey. When using a local development environment, it is recommended to install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts. See the following examples for more details: [dotnet](../../artifacts/nuget/dotnet-exe.md), [NuGet.exe](../../artifacts/nuget/publish.md).
-If you want to publish your packages using Azure Pipelines, use the [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1) task to authenticate with your feed [example](../../pipelines/artifacts/nuget.md#publish-a-package).
+If you want to publish your packages using Azure Pipelines, use the [NuGet Authenticate](../../pipelines/tasks/package/nuget-authenticate.md) task to authenticate with your feed [example](../../pipelines/artifacts/nuget.md#publish-a-package).
 
 ::: moniker-end

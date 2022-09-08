@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 # Deployment strategies for Kubernetes in Azure Pipelines
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-[Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) currently supports canary deployment strategy. This document explains the guidelines and best practices around the usage of this task for setting up canary deployments to Kubernetes.
+[Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) currently supports canary deployment strategy. This document explains the guidelines and best practices around the usage of this task for setting up canary deployments to Kubernetes.
 
 ## Overview of canary deployment strategy
 You can use canary deployment strategy to partially deploy the new changes so that the new changes coexist with the current deployments before  a full rollout. In this phase, usually a final check and comparison of the two versions is done. During this phase, there are application health checks and performance monitoring using metrics originating from both the versions. If the canary is found to be at least at par or better than the currently deployed version, a complete rollout of the new changes begins. If the canary is found to be performing worse than the currently deployed versions, the new changes are rejected, and a complete rollout, which could lead to regression, is avoided.

@@ -185,7 +185,7 @@ On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
+|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to main
 
@@ -221,7 +221,7 @@ On the [build tab](../tasks/index.md) add this as the last task:
 
 | Task | Arguments |
 | ---- | --------- |
-| :::image type="icon" source="../tasks/utility/media/batch-script.png"::: <br/>[Utility: Batch Script](/azure/devops/pipelines/tasks/reference/batch-script-v1)<br />Run merge.bat. | **Path**: `merge.bat` |
+| :::image type="icon" source="../tasks/utility/media/batch-script.png"::: <br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
 
 ## FAQ
 
@@ -233,13 +233,13 @@ Yes
 
 ### Which tasks can I use to run Git commands?
 
-[Batch Script](/azure/devops/pipelines/tasks/reference/batch-script-v1)
+[Batch Script](../tasks/utility/batch-script.md)
 
-[Command Line](/azure/devops/pipelines/tasks/reference/cmd-line-v2)
+[Command Line](../tasks/utility/command-line.md)
 
-[PowerShell](/azure/devops/pipelines/tasks/reference/powershell-v2)
+[PowerShell](../tasks/utility/powershell.md)
 
-[Shell Script](/azure/devops/pipelines/tasks/reference/shell-script-v2)
+[Shell Script](../tasks/utility/shell-script.md)
 
 
 ### How do I avoid triggering a CI build when the script pushes?
