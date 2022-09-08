@@ -47,7 +47,7 @@ Welcome to what's new in the Azure DevOps docs from July 1, 2022 through July 31
 - [Configure schedules for pipelines](/azure/devops/pipelines/process/scheduled-triggers)
 - [How to securely use variables and parameters in your pipeline](/azure/devops/pipelines/security/inputs)
 - [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines and Azure Machine Learning](/azure/devops/pipelines/targets/azure-machine-learning)
-- [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2)
+- [Docker task](/azure/devops/pipelines/tasks/build/docker)
 
 ## Project
 

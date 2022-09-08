@@ -22,7 +22,7 @@ There are various ways to create your NuGet packages such as using Visual Studio
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-To create a NuGet package, add the following snippet to your pipeline YAML file. See [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) for more details.
+To create a NuGet package, add the following snippet to your pipeline YAML file. See [NuGet task](../tasks/package/nuget.md) for more details.
 
 ```yaml
 - task: NuGetCommand@2
@@ -110,7 +110,7 @@ From the **NuGet task** in your pipeline definition, select **Pack options**, an
 - - -
 
 > [!NOTE]
-> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) for more details.
+> `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) for more details.
 
 
 ```yaml
@@ -161,7 +161,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
     versionEnvVar: <VERSION_ENVIRONMENT_VARIABLE>
 ```
 
-**Example using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (NuGet.exe):
+**Example using the** [Command line task](../tasks/utility/command-line.md) (NuGet.exe):
 
 ```yaml
   - task: NuGetAuthenticate@1
@@ -173,7 +173,7 @@ To publish a package to an external NuGet feed, add the following snippet to you
     displayName: "Push"          
 ```
 
-**Example using the** [Command line task](/azure/devops/pipelines/tasks/reference/cmd-line-v2) (dotnet):
+**Example using the** [Command line task](../tasks/utility/command-line.md) (dotnet):
 
   ```yaml
     - task: NuGetAuthenticate@1
