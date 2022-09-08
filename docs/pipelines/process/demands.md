@@ -29,7 +29,7 @@ Use demands to make sure that the capabilities your pipeline needs are present o
 
 ## Task demands
 
-Some tasks won't run unless one or more demands are met by the agent. For example, the [Visual Studio Build](/azure/devops/pipelines/tasks/reference/vsbuild-v1) task demands that ```msbuild``` and ```visualstudio``` are installed on the agent.
+Some tasks won't run unless one or more demands are met by the agent. For example, the [Visual Studio Build](../tasks/build/visual-studio-build.md) task demands that ```msbuild``` and ```visualstudio``` are installed on the agent.
 
 ## Manually entered demands
 
