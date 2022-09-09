@@ -27,6 +27,8 @@ In this example, the project is configured to delete pipeline runs after only th
 
 If a pipeline in this project is important and runs should be retained for longer than thirty days, this task ensures the run will be valid for two years by [adding a new retention lease](/rest/api/azure/devops/build/leases/add).
 
+# [Powershell](#tab/powershell)
+
 ```
 - task: PowerShell@2
   condition: and(succeeded(), not(canceled()))
@@ -43,6 +45,44 @@ If a pipeline in this project is important and runs should be retained for longe
       $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
       Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
 ```
+
+# [Azure CLI/ Bash](#tab/cli)
+```  
+ - task: AzureCLI@2
+          condition: and(succeeded(), not(canceled()))
+          name: RetainOnSuccess
+          displayName: Retain on Success
+          inputs:
+            azureSubscription: 'Your Service Connection'
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              curl -X POST $(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1 -H 'Content-type: application/json' -H 'Authorization: bearer $(system.AccessToken)' -d '[{ daysValid: 365, definitionId: $(System.DefinitionId), ownerId: "User:$(Build.RequestedForId)", protectPipeline: false, runId: $(Build.BuildId) }]' 
+``` 
+# [REST API Task](#tab/task)
+```
+- task: InvokeRESTAPI@1
+          displayName: 'Retain on Success'
+          inputs:
+            connectionType: connectedServiceName
+            serviceConnection: Your Service Connection
+            method: POST
+            headers: |
+              {
+                "Content-type": "application/json",
+                "Authorization": "bearer $(system.AccessToken)"
+              }
+            body: |
+              [{
+                "daysValid": 365,
+                "definitionId": $(System.DefinitionId),
+                "ownerId": "User:$(Build.RequestedForId)",
+                "protectPipeline": false,
+                "runId": $(Build.BuildId)
+              }]
+            waitForCompletion: 'false'
+```
+* * *
 
 #### Question: can a pipeline be retained for _less_ than the configured project values?
 
@@ -86,7 +126,7 @@ The `Build` stage can retain the pipeline as in the above examples, but with one
   script: |
     $contentType = "application/json";
     $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-    $rawRequest = @{ daysValid = 3; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+    $rawRequest = @{ daysValid = 365; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
     $request = ConvertTo-Json @($rawRequest);
     $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
     $newLease = Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
