@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 8/10/2022
+ms.date: 9/12/2022
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,21 +35,24 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="7"><strong>2022 Q3</strong></td>
+<tr><td rowspan="6"><strong>2022 Q3</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954" data-raw-source="[Associate all public APIs with PAT scopes](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954)">Associate all public APIs with PAT scopes</a></td><td>General</td><td>TBD</td>    
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032 data-raw-source="[Adding Assigned To avatar to child items on cards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032)">Adding Assigned To avatar to child items on cards</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313 data-raw-source="[Filter to work item history](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313)">Filter to work item history</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203 data-raw-source="[Save Comment Improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203)">Save Comment Improvements</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1973004 data-raw-source="[Get Attachment URL link](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1973004)">Get Attachment URL link</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951703" data-raw-source="[Build retention improvements as part of next on-premises server release](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951703)">Build retention improvements as part of next on-premises server release</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951707" data-raw-source="[Pipelines scalability improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951707)">Pipelines scalability improvements</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
 </tr>
-<tr><td rowspan="6"><strong>2022 Q4</strong></td>
+<tr><td rowspan="10"><strong>2022 Q4</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1972967 data-raw-source="[Emoji support in work item tags](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1972967)">Emoji support in work item tags</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317 data-raw-source="[Add `Move to Column` and `Move to Swimlane` functionality to core product](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317)">Add `Move to Column` and `Move to Swimlane` functionality to core product</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204 data-raw-source="[Ability to change link type from Web UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204)">Ability to change link type from Web UI</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713 data-raw-source="[Credential-free pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713)">Credential-free pipelines</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423 data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960 data-raw-source="[Pull Request widget to allow for the selection of many repos](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960)">Pull Request widget to allow for the selection of many repos</a></td><td>Reporting</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978962 data-raw-source="[Rollup columns for query results](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978962)">Rollup columns for query results</a></td><td>Reporting</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
 <tr><td rowspan="10"><strong>Future</strong></td>
@@ -116,6 +119,16 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="8"><a href="2022/sprint-209-update.md" data-raw-source="[12 September 2022](2022/sprint-209-update.md)"> 12 September 2022</a></td>
+    <td>Increase Delivery Plans team limit from 15 to 20</td><td>Boards</td><td>Future</td></tr>
+    <td>Fixed bug in Reporting Work Item Links Get API</td><td>Boards</td><td>Future</td></tr>
+    <td>New Boards Hub bug fixes</td><td>Boards</td><td>Future</td></tr>
+    <td>Disable showing the last commit message for a pipeline run</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Consumed resources and template parameters in Pipelines Runs Rest API</td><td>Pipelines</td><td>Future</td></tr>    
+    <td>Add support for string split function in YAML expression</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Do not sync tags when fetching a Git repository</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updated brownout schedule for Ubuntu 18.04 images</td><td>Pipelines</td><td>N/A</td></tr>
+</tr>
     <td rowspan="3"><a href="2022/sprint-208-update.md" data-raw-source="[12 August 2022](2022/sprint-208-update.md)"> 12 August 2022</a></td>
     <td>Improved error message when failing to load pipelines</td><td>Pipelines</td><td>Future</td></tr>
     <td>General availability of Ubuntu 22.04 for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
@@ -645,7 +658,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         <tr><td>Single hosted pool</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>kustomize and kompose as bake options in KubernetesManifest task</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Support for cluster admin credentials in HelmDeploy task</td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td>In-product support for flaky test management</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>In-product support for flaky test management</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Improvements to the Deployment Center for WebApp in the Azure portal</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Enhancements to DevOps Project for virtual machine</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Terraform integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>

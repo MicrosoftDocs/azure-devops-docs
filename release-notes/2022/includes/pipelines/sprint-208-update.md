@@ -2,7 +2,7 @@
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 8/12/2022
+ms.date: 9/8/2022
 ms.topic: include
 ---
 
@@ -26,7 +26,7 @@ The Ubuntu 22.04 image is now generally available for Azure Pipelines hosted age
 
 Please note, the ubuntu-latest image label will continue to point to ubuntu-20.04.
 
-### Announcing deprecation of Ubuntu 18.04 images
+### Announcing deprecation of Ubuntu 18.04 images (updated)
 
 Azure Pipelines is deprecating the Ubuntu 18.04 image (`ubuntu-18.04`) on our hosted pools. This image will be retired December 1st. You may start to see longer queue times.
 
@@ -36,16 +36,21 @@ There are several ways you can identify which pipelines are using the ubuntu-18.
 * This [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages) can be run to help you find pipelines using deprecated images, including ubuntu-18.04.
 * We are scheduling short "brownouts". Any ubuntu-18.04 runs will fail during the brownout period. Therefore, it is recommended to migrate your pipelines prior to the brownouts.
 
-#### Brownout schedule
-* August 22, 12:00 UTC - August 22, 16:00 UTC
-* August 30, 12:00 UTC - August 30, 18:00 UTC
-* September 7, 12:00 UTC - September 7, 20:00 UTC
-* September 15, 10:00 UTC - September 15, 20:00 UTC
-* September 23, 10:00 UTC - September 23, 22:00 UTC
-* October 3, 0:00 UTC - October 4, 0:00 UTC
-* October 11, 0:00 UTC - October 12, 0:00 UTC
-* October 19, 0:00 UTC - October 20, 0:00 UTC
-* October 31, 0:00 UTC - November 1, 0:00 UTC
-* November 8, 0:00 UTC - November 9, 0:00 UTC
-* November 16, 0:00 UTC - November 17, 0:00 UTC
-* November 24, 0:00 UTC - November 25, 0:00 UTC
+#### Brownout schedule (updated)
+* October 3, 12:00 UTC - October 3, 14:00 UTC
+* October 18, 14:00 UTC - October 18, 16:00 UTC
+* November 15, 18:00 UTC - November 15, 20:00 UTC
+* November 30, 20:00 UTC - November 30, 22:00 UTC
+* December 15, 20:00 UTC - December 16 00:00 UTC
+* January 5, 10.00 UTC - January 5, 14.00 UTC
+* January 13, 12.00 UTC - January 13, 16.00 UTC
+* January 18, 14.00 UTC - January 18, 18.00 UTC
+* January 24, 16.00 UTC - January 24, 20.00 UTC
+* February 1, 18.00 UTC - February 1, 22.00 UTC
+* February 7, 16.00 UTC - February 7, 22.00 UTC
+* February 13, 14.00 UTC - February 13, 22.00 UTC
+* February 21, 10.00 UTC - February 21, 22.00 UTC
+* February 28, 10.00 UTC - February 28, 22.00 UTC
+* March 6, 00.00 UTC - March 7, 00.00 UTC
+* March 13, 00.00 UTC - March 14, 00.00 UTC
+* March 21, 00.00 UTC - March 22, 00.00 UTC

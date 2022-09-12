@@ -2,7 +2,7 @@
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 7/28/2022
+ms.date: 9/8/2022
 ms.topic: include
 ---
 
@@ -40,7 +40,7 @@ We fixed an issue that was causing a pipeline's schedule information to become c
 
 Azure Pipelines is removing Windows 2016 image (`vs2017-win2016`) from our hosted pools on July 31st. To learn more on how to identify pipelines using deprecated images including Windows 2016, check out our blog post [Hosted Pipelines Image Deprecation](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/).
 
-### Announcing deprecation of macOS 10.15 Catalina images
+### Announcing deprecation of macOS 10.15 Catalina images (updated)
 
 Azure Pipelines is deprecating macOS 10.15 Catalina images (`macOS-1015`) on our hosted pools. This image will be retired September 30th. You may start to see longer queue times.
 
@@ -49,16 +49,15 @@ To help you better identify which pipelines are using the macOS-1015 image, we a
 * A [script](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages) is available to help you find pipelines using deprecated images, including macOS-1015
 * We are scheduling short "brownouts". Any macOS-1015 runs will fail during the brownout period. Therefore, it is recommended to migrate your pipelines prior to the brownouts.
 
-**Brownout schedule**
-* August 1, 12:00 UTC - August 1, 14:00 UTC
-* August 9, 16:00 UTC - August 9, 18:00 UTC
-* August 17, 14:00 UTC - August 17, 18:00 UTC
-* August 25, 14:00 UTC - August 25, 20:00 UTC
-* September 2, 12:00 UTC - September 2, 22:00 UTC
-* September 8, 00:00 UTC - September 9, 00:00 UTC
-* September 14, 00:00 UTC - September 15, 00:00 UTC
-* September 20, 00:00 UTC - September 21, 00:00 UTC
-* September 26, 00:00 UTC - September 27, 00:00 UTC
+#### Brownout schedule (updated)
+* October 7, 10:00 UTC - October 7, 16:00 UTC
+* October 14, 12:00 UTC - October 14, 18:00 UTC
+* October 21, 14:00 UTC - October 21, 20:00 UTC
+* October 28, 16:00 UTC - October 28, 22:00 UTC
+* November 4, 22:00 UTC - November 5, 04:00 UTC
+* November 11, 04:00 UTC - November 11, 10:00 UTC
+* November 18, 06:00 UTC - November 18, 12:00 UTC
+* November 25, 08:00 UTC - November 25, 14:00 UTC
 
 ### Updates to "Run stage state changed" service hook event
 
