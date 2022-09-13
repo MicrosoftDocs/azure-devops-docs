@@ -71,15 +71,15 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root":"/docs/pipelines/test/cloud-based-load-test.md",
+      "source_path_from_root":"/docs/pipelines/tasks/test/cloud-based-load-test.md",
       "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing"
     },
     {
-      "source_path_from_root":"/docs/pipelines/test/cloud-based-web-performance-test.md",
+      "source_path_from_root":"/docs/pipelines/tasks/test/cloud-based-web-performance-test.md",
       "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing"
     },
     {
-      "source_path_from_root":"/docs/pipelines/test/run-jmeter-load-test.md",
+      "source_path_from_root":"/docs/pipelines/tasks/test/run-jmeter-load-test.md",
       "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing"
     }
   ]
