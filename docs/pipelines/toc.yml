@@ -415,7 +415,7 @@
        - name: Azure SQL database
          href: targets/azure-sqldb.md
        - name: Azure MySQL database
-         href: targets/azure-mysql.md
+         href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
     - name: Azure Virtual Machine Scale Set
       items:
       - name: Deploy a virtual machine scale set
