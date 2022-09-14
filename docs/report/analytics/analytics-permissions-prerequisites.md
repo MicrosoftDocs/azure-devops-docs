@@ -132,8 +132,8 @@ In addition, consider the following actions:
 
 To report on pipelines and tests results, make sure you add test tasks to the pipeline definition. To learn more, see [Build and release tasks-Test](../../pipelines/tasks/index.md#test). 
 
-If you're just getting started, consider reviewing this learn module, 
-[Run quality tests in your build pipeline by using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline).
+If you're just getting started, consider reviewing this Learn module, 
+[Run quality tests in your build pipeline by using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline).
 
 ::: moniker-end
 
@@ -147,5 +147,3 @@ If you're just getting started, consider reviewing this learn module,
 
 
  
-
-
