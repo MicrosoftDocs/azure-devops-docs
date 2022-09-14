@@ -1005,12 +1005,12 @@
     - name: Microsoft Learn
       items:
         - name: Create a build pipeline
-          href: /learn/modules/create-a-build-pipeline/
+          href: /training/modules/create-a-build-pipeline/
         - name: Implement a code workflow in your build pipeline by using Git and GitHub
-          href: /learn/modules/implement-code-workflow/index
+          href: /training/modules/implement-code-workflow/index
         - name: Run quality tests in your build pipeline
-          href: /learn/modules/run-quality-tests-build-pipeline/index
+          href: /training/modules/run-quality-tests-build-pipeline/index
         - name: Manage build dependencies with Azure Artifacts
-          href: /learn/modules/manage-build-dependencies/index
+          href: /training/modules/manage-build-dependencies/index
     - name: Automated testing
       href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
