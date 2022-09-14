@@ -144,7 +144,7 @@ Follow the links provided in the following table to learn more about the Azure s
       - [Deploy to Azure SQL Database](targets/azure-sqldb.md)
       - [Azure SQL Database Deployment task](tasks/deploy/sql-azure-dacpac-deployment.md)
       - [Azure Database for MySQL Deployment task](tasks/deploy/azure-mysql-deployment.md)
-      - [Quickstart: Deploy to Azure MySQL](targets/azure-mysql.md)
+      - [Quickstart: Deploy to Azure MySQL](/azure/mysql/single-server/azure-pipelines-mysql-deploy)
       - [Set up a CI/CD pipeline with the Azure Cosmos DB Emulator build task in Azure DevOps](/azure/cosmos-db/tutorial-setup-ci-cd)
    :::column-end:::
 :::row-end:::
