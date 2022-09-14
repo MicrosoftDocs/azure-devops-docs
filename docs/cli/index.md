@@ -74,7 +74,7 @@ Commands:
     feedback         : Displays information on how to provide feedback to the Azure DevOps CLI team.
     invoke           : This command will invoke request for any DevOps area and resource. Please use
                        only json output as the response of this command is not fixed. Helpful docs -
-                       https://docs.microsoft.com/rest/api/azure/devops/.
+                       https://learn.microsoft.com/rest/api/azure/devops/.
     login            : Set the credential (PAT) to use for a particular organization.
     logout           : Clear the credential for all or a particular organization.
 ```

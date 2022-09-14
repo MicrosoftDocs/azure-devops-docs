@@ -22,7 +22,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 
 <br/> 
 
-> [!VIDEO https://docs.microsoft.com/shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
+> [!VIDEO https://learn.microsoft.com/shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
 
 > [!NOTE]   
 > Azure DevOps only supports integation with GitHub repositories or Azure Repos Git repositories. Integration with other Git repositories is not supported.  
@@ -161,4 +161,3 @@ Once you've configured the connection, you can complete the following tasks.
 - [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)  
 
  
-
