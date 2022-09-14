@@ -386,7 +386,7 @@
     - name: Azure App Service (Web Apps)
       items:
         - name: App Service
-          href: targets/webapp.md
+          href: /azure/app-service/deploy-azure-pipelines
         - name: Azure Web App for Containers
           href: apps/cd/deploy-docker-webapp.md
           displayName: containers, docker, azure web app
@@ -415,7 +415,7 @@
        - name: Azure SQL database
          href: targets/azure-sqldb.md
        - name: Azure MySQL database
-         href: targets/azure-mysql.md
+         href: /azure/mysql/single-server/azure-pipelines-mysql-deploy
     - name: Azure Virtual Machine Scale Set
       items:
       - name: Deploy a virtual machine scale set
