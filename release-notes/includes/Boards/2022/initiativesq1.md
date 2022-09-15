@@ -9,7 +9,7 @@ description: Boards Initiatives 2022 Q1
 hide_comments: true
 ---
 
-
+# 2022 Q1 Initiatives
 ## Increase Delivery Plans team limit from 15 to 20
 Delivery Plans lets you view multiple backlogs and multiple teams across your organization. Previously, you could view 15 team backlogs, including a mix of backlogs and teams from different projects. In this sprint we increased the maximum limit from 15 to 20.
 
