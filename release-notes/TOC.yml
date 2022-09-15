@@ -1,8 +1,5 @@
 - name: Feature timeline
   href: features-timeline.md
-  items:
-  - name: "2022"
-    href: roadmap/2023/q3initiatives.md
 - name: Released features
   href: features-timeline-released.md
 - name: Azure DevOps Services
