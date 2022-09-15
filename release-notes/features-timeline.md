@@ -45,6 +45,7 @@ No initiatives planned for release at this time.
 
 #### [**Future**](#tab/future)
 
+---
 ## Additional features
 #### [**2022 Q1**](#tab/2022-q1)
 
