@@ -32,6 +32,7 @@ Each feature is linked to the public roadmap project where you can learn more ab
 #### [**2022 Q1**](#tab/2022-q1)
 
 [!INCLUDE [sprint-209-update-links](2022/includes/boards/sprint-209-update-links.md)] 
+[!INCLUDE [sprint-209-update](2022/includes/boards/sprint-209-update.md)]
 
 #### [**2022 Q2**](#tab/2022-q2)
 No initiatives planned for release at this time.   

@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Feature Timeline
+title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 9/12/2022
@@ -8,7 +8,7 @@ ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
-# Azure DevOps Feature Timeline
+# Azure DevOps Released Features
 
 ---
 
