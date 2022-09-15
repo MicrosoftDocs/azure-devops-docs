@@ -1,5 +1,7 @@
 - name: Feature timeline
   href: features-timeline.md
+- name: Released features
+  href: features-timeline-released.md
 - name: Azure DevOps Services
   items:
   - name: "2022"
