@@ -19,7 +19,7 @@ hide_comments: true
 
 ---
 
-# Features under development
+## Features under development
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. 
 
@@ -28,7 +28,8 @@ Each feature is linked to the public roadmap project where you can learn more ab
 > [!NOTE]   
 > Items indicated with an :::image type="icon" source="media/required-icon.png" border="false"::: exclamation icon require enablement of a preview feature. To learn how to enable or disable a preview feature, see [Manage or enable features](/azure/devops/project/navigation/preview-features).  
 
-## Initiatives Title Placeholder
+## Initiatives
+### Initiatives Title Placeholder
 #### [**2022 Q1**](#tab/2022-q1)
 
 #### [**2022 Q2**](#tab/2022-q2)
