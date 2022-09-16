@@ -25,22 +25,12 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 Each feature is linked to the public roadmap project where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The "Timeframe" column reflects when the feature will be available on Azure DevOps Services, the "Area" column reflects the area of the product the feature aligns with most, and the "Server" column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
 
-> [!NOTE]   
-> Items indicated with an :::image type="icon" source="media/required-icon.png" border="false"::: exclamation icon require enablement of a preview feature. To learn how to enable or disable a preview feature, see [Manage or enable features](/azure/devops/project/navigation/preview-features).  
-
 ## Initiatives
 ### Initiatives Title Placeholder
-#### [**2022 Q1**](#tab/2022-q1)
-- [Boards](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#boards)
-#### [**2022 Q2**](#tab/2022-q2)
-No initiatives planned for release at this time.   
-
 #### [**2022 Q3**](#tab/2022-q3)
-No initiatives planned for release at this time.   
-
+- [Admin](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#admin)
 #### [**2022 Q4**](#tab/2022-q4)
 No initiatives planned for release at this time.   
-
 #### [**Future**](#tab/future)
 
 ---
