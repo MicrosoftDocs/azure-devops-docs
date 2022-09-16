@@ -50,11 +50,11 @@ You can rename a single project multiple times and reuse older names. After you 
 
 2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
 
-   ![Enter a new name, and then select Save to rename your project](media/rename-project/rename-project-azure-devops.png)
+   ![Screenshot showing new name entry and highlighted save button.](media/rename-project/rename-project-azure-devops.png)
 
 3. To confirm the rename, enter the new project name, check the box next to, "I understand the consequences of renaming this project," and then select **Save**.
 
-   ![Enter new project name, check the box, and then save](media/rename-project/rename-project-confirm.png)
+   ![Screenshot showing new name confirmation screen with save button.](media/rename-project/rename-project-confirm.png)
 
 ::: moniker-end  
 
@@ -64,12 +64,12 @@ You can rename a single project multiple times and reuse older names. After you 
 2. From the Projects page, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **actions** for the project that you want to rename, and then choose **Rename**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Rename.](media/rename-project/choose-rename-menu-option.png)
+	> ![Screenshot showing highlighted Rename selection.](media/rename-project/choose-rename-menu-option.png)
 
 3. Edit the name. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Enter a new project name](media/rename-project/rename-project-dialog.png)
+	> ![Screenshot showing new project name entry and OK button.](media/rename-project/rename-project-dialog.png)
 	
 	If you can't find the **Rename project** option, then you're not a member of the **Project Administrators** group for that project. 
 
@@ -137,7 +137,7 @@ For the following clients, execute a get or check-in and then the workspace mapp
 - Visual Studio 2010 (Only supports server workspaces)  
 - Team Explorer Everywhere (2012 or later versions)  
 
-![Source control explorer, get latest version](media/rename-project/tfvc-get.png)
+![Screenshot of source control explorer, showing get latest version selection.](media/rename-project/tfvc-get.png)
 
 <a id="tfvc-local"></a>
 

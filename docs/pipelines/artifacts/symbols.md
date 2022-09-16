@@ -179,5 +179,5 @@ A: This is not possible at the moment. Source indexing is not currently supporte
 - [Symbols overview](../../artifacts/concepts/symbols.md).
 - [Debug with Visual Studio](../../artifacts/symbols/debug-with-symbols-visual-studio.md).
 - [Debug with WinDbg](../../artifacts/symbols/debug-with-symbols-windbg.md).
-- [Index Sources & Publish Symbols task](/azure/devops/pipelines/tasks/reference/publish-symbols-v2).
+- [Index Sources & Publish Symbols task](../tasks/build/index-sources-publish-symbols.md).
 - [Configure retention policies](../policies/retention.md).

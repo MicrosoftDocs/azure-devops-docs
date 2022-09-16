@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 # Bake manifests
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-You can use the bake action in the [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0) to bake templates into Kubernetes manifest files. The action lets you use tools such as [Helm](https://helm.sh), [kustomize](https://github.com/kubernetes-sigs/kustomize), and [kompose](https://github.com/kubernetes/kompose). With baking, these Kubernetes manifest files are usable for deployments to the cluster.
+You can use the bake action in the [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) to bake templates into Kubernetes manifest files. The action lets you use tools such as [Helm](https://helm.sh), [kustomize](https://github.com/kubernetes-sigs/kustomize), and [kompose](https://github.com/kubernetes/kompose). With baking, these Kubernetes manifest files are usable for deployments to the cluster.
 
 The bake action of the Kubernetes manifest task provides visibility into the transformation between input templates and the end manifest files that are used in deployments. 
 
@@ -49,7 +49,7 @@ You can consume baked manifest files downstream (in tasks) as inputs for the dep
 ```
 
 > [!NOTE]
-> To use Helm directly for managing releases and rollbacks, see the [Package and Deploy > Helm Charts task](/azure/devops/pipelines/tasks/reference/helm-deploy-v0).
+> To use Helm directly for managing releases and rollbacks, see the [Package and Deploy > Helm Charts task](../../tasks/deploy/helm-deploy.md).
 
 ## Kustomize example
 
