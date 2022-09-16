@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy21q4, pipelinesresourcesrefresh
 description: What are resources?
 ms.topic: conceptual
 ms.date: 07/27/2022
-monikerRange: '>= azure-devops-2020'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # About resources for Azure Pipelines

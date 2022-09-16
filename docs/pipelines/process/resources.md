@@ -4,8 +4,8 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 01/21/2022
-monikerRange: azure-devops
+ms.date: 09/15/2022
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Define resources in YAML
@@ -567,6 +567,9 @@ steps:
 
 ---
 
+::: moniker range=">= azure-devops-2020"
+
+
 ## Define a `packages` resource
 
 You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. 
@@ -613,7 +616,11 @@ steps:
 
 ---
 
+
 ## Define a `webhooks` resource
+
+> [!NOTE]
+> Webhooks were released in Azure DevOps Server 2020.1. 
 
 With other resources (such as pipelines, containers, build, and packages) you can consume artifacts and enable automated triggers. However, you can't automate your deployment process based on other external events or services. The `webhooks` resource enables you to integrate your pipeline with any external service and automate the workflow. You can subscribe to any external events through its webhooks (GitHub, GitHub Enterprise, Nexus, Artifactory, and so on) and trigger your pipelines.
 
@@ -670,6 +677,8 @@ steps:
 ```
 
 ---
+
+::: moniker-end
 
 ## Manual version picker for resources in the create run dialogue
 
