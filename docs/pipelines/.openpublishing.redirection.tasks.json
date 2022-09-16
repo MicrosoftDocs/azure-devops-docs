@@ -539,9 +539,6 @@
     {
       "source_path_from_root": "/docs/pipelines/tasks/deploy/copy-files-over-ssh.md",
       "redirect_url": "/azure/devops/pipelines/tasks/reference/copy-files-over-ssh-v0"
-    },
-    {
-      "source_path_from_root": "/docs/pipelines/tasks/test/run-jmeter-load-test.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/reference/azure-load-test-v1"
-    }  ]
+    }
+  ]
 }
