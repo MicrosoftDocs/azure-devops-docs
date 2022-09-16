@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 01/21/2022
-monikerRange: azure-devops
+ms.date: 09/15/2022
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Define resources in YAML
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
@@ -567,6 +567,9 @@ steps:
 
 ---
 
+::: moniker range=">= azure-devops-2020"
+
+
 ## Define a `packages` resource
 
 You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. 
@@ -613,7 +616,11 @@ steps:
 
 ---
 
+
 ## Define a `webhooks` resource
+
+> [!NOTE]
+> Webhooks were released in Azure DevOps Server 2020.1. 
 
 With other resources (such as pipelines, containers, build, and packages) you can consume artifacts and enable automated triggers. However, you can't automate your deployment process based on other external events or services. The `webhooks` resource enables you to integrate your pipeline with any external service and automate the workflow. You can subscribe to any external events through its webhooks (GitHub, GitHub Enterprise, Nexus, Artifactory, and so on) and trigger your pipelines.
 
@@ -670,6 +677,8 @@ steps:
 ```
 
 ---
+
+::: moniker-end
 
 ## Manual version picker for resources in the create run dialogue
 
@@ -761,11 +770,11 @@ Resource triggers can fail to execute for the following reasons.
 
 Using a `pipelines` resource is a way to consume artifacts from a CI pipeline and also configure automated triggers. A resource gives you full visibility into the process by displaying the version consumed, artifacts, commits, and work items. When you define a pipeline resource, the associated artifacts get automatically downloaded in deployment jobs.
 
-You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` task internally uses the [Download Pipeline Artifacts task](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2).
+You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` task internally uses the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md).
 
 ### Why should I use `resources` instead of the Download Pipeline Artifacts task?
 
-When you use the [Download Pipeline Artifacts task](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) directly, you miss traceability and triggers. Sometimes it makes sense to use the Download Pipeline Artifacts task directly. For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template wants to add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
+When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss traceability and triggers. Sometimes it makes sense to use the Download Pipeline Artifacts task directly. For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template wants to add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build information to a task.
 
 ### How can I trigger a pipeline run when my Docker Hub image gets updated? 
 

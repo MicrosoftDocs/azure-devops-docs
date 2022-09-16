@@ -87,7 +87,7 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
 
 1. **Edit** your *azure-pipelines.yml* file.
 
-1. Update the [Node.js Tool Installer task](/azure/devops/pipelines/tasks/reference/node-tool-v0) to use Node.js version 16 LTS.
+1. Update the [Node.js Tool Installer task](../tasks/tool/node-js.md) to use Node.js version 16 LTS.
 
     ```yaml
     trigger:
@@ -111,7 +111,7 @@ When you're done, you have a working YAML file *azure-pipelines.yml* in your rep
       displayName: 'npm build'
     ``` 
 
-1. Add new tasks to your pipeline to copy your npm package, package.json, and to publish your artifact. The [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) copies files from local path on the agent where your source code files are downloaded and saves files to a local path on the agent where any artifacts are copied to before being pushed to their destination. Those files are saved into a *npm* folder. The pipeline-artifacts[Publish Pipeline Artifact task](../artifacts/pipeline-artifacts.md), downloads the files from the earlier Copy Files tasks and makes them available as pipeline artifacts that will be published with your pipeline build.  
+1. Add new tasks to your pipeline to copy your npm package, package.json, and to publish your artifact. The [Copy Files task](../tasks/utility/copy-files.md) copies files from local path on the agent where your source code files are downloaded and saves files to a local path on the agent where any artifacts are copied to before being pushed to their destination. Those files are saved into a *npm* folder. The pipeline-artifacts[Publish Pipeline Artifact task](../artifacts/pipeline-artifacts.md), downloads the files from the earlier Copy Files tasks and makes them available as pipeline artifacts that will be published with your pipeline build.  
 
     ```yaml
     - task: CopyFiles@2

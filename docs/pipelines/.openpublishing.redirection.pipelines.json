@@ -69,6 +69,33 @@
       "source_path_from_root":"/docs/pipelines/ecosystems/java-function.md",
       "redirect_url":"/azure/azure-functions/functions-how-to-azure-devops",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/webapp.md",
+      "redirect_url":"/azure/app-service/deploy-azure-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/azure-mysql.md",
+      "redirect_url":"/azure/mysql/single-server/azure-pipelines-mysql-deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/tasks/test/cloud-based-load-test.md",
+      "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/tasks/test/cloud-based-web-performance-test.md",
+      "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/tasks/test/run-jmeter-load-test.md",
+      "redirect_url":"/azure/devops/pipelines/tasks/test/azure-load-testing",
+      "redirect_document_id": false
     }
   ]
 }
+
+
