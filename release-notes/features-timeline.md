@@ -35,20 +35,21 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="6"><strong>2022 Q3</strong></td>
+<tr><td rowspan="7"><strong>2022 Q3</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954" data-raw-source="[Associate all public APIs with PAT scopes](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954)">Associate all public APIs with PAT scopes</a></td><td>General</td><td>TBD</td>    
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203 data-raw-source="[Save Comment Improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203)">Save Comment Improvements</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1973004 data-raw-source="[Get Attachment URL link](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1973004)">Get Attachment URL link</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032 data-raw-source="[Adding Assigned To avatar to child items on cards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032)">Adding Assigned To avatar to child items on cards</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313 data-raw-source="[Filter to work item history](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313)">Filter to work item history</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951703" data-raw-source="[Build retention improvements as part of next on-premises server release](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951703)">Build retention improvements as part of next on-premises server release</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951707" data-raw-source="[Pipelines scalability improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951707)">Pipelines scalability improvements</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
 </tr>
 <tr><td rowspan="10"><strong>2022 Q4</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1972967 data-raw-source="[Emoji support in work item tags](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1972967)">Emoji support in work item tags</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317 data-raw-source="[Add `Move to Column` and `Move to Swimlane` functionality to core product](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317)">Add `Move to Column` and `Move to Swimlane` functionality to core product</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204 data-raw-source="[Ability to change link type from Web UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204)">Ability to change link type from Web UI</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203 data-raw-source="[Save Comment Improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203)">Save Comment Improvements</a></td><td>Boards</td><td>Future</td>      
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713 data-raw-source="[Credential-free pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713)">Credential-free pipelines</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423 data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960 data-raw-source="[Pull Request widget to allow for the selection of many repos](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960)">Pull Request widget to allow for the selection of many repos</a></td><td>Reporting</td><td>Future</td>
@@ -61,9 +62,9 @@ Each feature is linked to the public roadmap project where you can learn more ab
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>General</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678 data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678)">Access events for PAT, SSH will be available in the Auditing Log</a></td><td>General</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307 data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Artifacts</td><td>TBD</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196 data-raw-source="[Preview attachments for word, excel, ppt, project, pdf from the work item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Preview attachments for word, excel, ppt, project, pdf from the work item</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td>   
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>TBD</td>
     </tr>
@@ -156,20 +157,20 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Project Collection Administrators can opt-in for notifications related to personal access tokens found in a GitHub public repository</td><td>General</td><td>N/A</td></tr> 
     <td>Enforcing security validation for all Azure DevOps requests</td><td>General</td><td>N/A</td></tr>
     <td>Assigned To children in Kanban cards</td><td>Boards</td><td>2022</td></tr>
-    <td>General availability of Query by Parent Id</td><td>Boards</td><td>Future</td></tr>
+    <td>General availability of Query by Parent Id</td><td>Boards</td><td>2022</td></tr>
     <td>Support Group Managed Service Accounts as agent service account</td><td>Pipelines</td><td>2022</td></tr>
     <td>Informational runs</td><td>Pipelines</td><td>2022</td></tr>
     <td>Build Definition REST API retentionRules property is obsolete</td><td>Pipelines</td><td>2022</td></tr>
 </tr>
     <td rowspan="4"><a href="2022/sprint-204-update.md" data-raw-source="[2 June 2022](2022/sprint-204-update.md)"> 2 June 2022</a></td> 
-    <td>Improved "Show more items" UX</td><td>Boards</td><td>2022</td></tr>
+    <td>Improved "Show more items" UX</td><td>Boards</td><td>Future</td></tr>
     <td>General availability of Copy Dashboard</td><td>Boards</td><td>2022</td></tr>
     <td>Ubuntu 22.04 in preview for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Preview of macOS 12 Monterey for Azure Pipeline hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
 </tr>
     <td rowspan="4"><a href="2022/sprint-203-update.md" data-raw-source="[4 May 2022](2022/sprint-203-update.md)"> 4 May 2022</a></td> 
-    <td>Query by Parent Id (private preview)</td><td>Boards</td><td>Future</td></tr>
-    <td>Move to column position on Kanban Board</td><td>Boards</td><td>2022</td></tr>
+    <td>Query by Parent Id (private preview)</td><td>Boards</td><td>2022</td></tr>
+    <td>Move to column position on Kanban Board</td><td>Boards</td><td>Future</td></tr>
     <td>Added "Will not Fix" value to Bug reason field</td><td>Boards</td><td>2022</td></tr>
     <td>Upstream cross-organization packages</td><td>Artifacts</td><td>N/A</td></tr>
 </tr>
@@ -177,7 +178,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Auditing is now an opt-in feature for your organization</td><td>General</td><td>N/A</td></tr>
     <td>Fixed looping login issue due to incorrectly configured IP conditional access policies</td><td>General</td><td>N/A</td></tr>
     <td>Guest users will only see public user data</td><td>General</td><td>N/A</td></tr>
-    <td>New Boards Hub now available in public preview</td><td>Boards</td><td>2022</td></tr>
+    <td>New Boards Hub now available in public preview</td><td>Boards</td><td>Future</td></tr>
     <td>Extend YAML pipelines template to pass stage, job, and deployment context information</td><td>Pipelines</td><td>2022</td></tr>
     <td>Updated retirement date for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
 </tr>
@@ -259,9 +260,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Updates to Team Foundation Version Control (TFVC) Windows Shell extension for Visual Studio 2019</td><td>Pipelines</td><td>N/A</td></tr>
     </tr>    
     <td rowspan="7"><a href="2021/sprint-187-update.md" data-raw-source="[26 May 2021](2021/sprint-187-update.md)">26 May 2021</a></td>
-    <td>Delivery Plans 2.0 general availability</td><td>Board</td><td>2022</td></tr>
-    <td>New iteration capacity REST API</td><td>Board</td><td>N/A</td></tr>
-    <td>Copy Dashboard is now available in public preview</td><td>Board</td><td>2022</td></tr>
+    <td>Delivery Plans 2.0 general availability</td><td>Boards</td><td>2022</td></tr>
+    <td>New iteration capacity REST API</td><td>Boards</td><td>N/A</td></tr>
+    <td>Copy Dashboard is now available in public preview</td><td>Boards</td><td>2022</td></tr>
     <td>Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Permissions and checks on variable groups and secure files</td><td>Pipelines</td><td>2022</td></tr>
     <td>Preview of templates support in YAML editors</td><td>Pipelines</td><td>2022</td></tr>
@@ -269,7 +270,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </tr>
     <td rowspan="4"><a href="2021/sprint-186-update.md" data-raw-source="[05 May 2021](2021/sprint-186-update.md)">05 May 2021</a></td>
     <td>PAT lifecycle management API general availability</td><td>General</td><td>N/A</td></tr>
-    <td>Fixed several issues with Delivery Plans 2.0</td><td>Board</td><td>2022</td></tr>
+    <td>Fixed several issues with Delivery Plans 2.0</td><td>Boards</td><td>2022</td></tr>
     <td>Repos as a protected resource in YAML pipelines</td><td>Pipelines</td><td>2022</td></tr>
     <td>Enable empty recycle bin for feeds</td><td>Artifacts</td><td>N/A</td></tr>
     </tr>
@@ -340,7 +341,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <tr><td>Save an unhealthy agent for investigation in scale set agents</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
-    <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>
+    <td>Customize work item state when pull request is merged</td><td>Boards</td><td>2022</td>
     </tr>
     <tr><td>Parent field on the task board</td><td>Boards</td><td>2020.1</td></tr>
     <tr><td>Org-level setting for default branch</td><td>Repos</td><td>Future</td></tr>
@@ -375,7 +376,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <tr><td>Update Package Version REST API now available for Maven packages</td><td>Artifacts</td><td>Future</td></tr>
     <tr>
     <td rowspan="5"><a href="2020/sprint-173-update.md" data-raw-source="[03 August 2020](2020/sprint-173-update.md)">03 August 2020</a></td>
-    <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
+    <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>2022</td>
     </tr>
     <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
     <tr><td>Updates to Mac OS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
@@ -387,7 +388,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     </tr>
     <tr><td>Copy work item to copy children</td><td>Boards</td><td>2020.1</td></tr>
     <tr><td>Improved rules for activated and resolved fields</td><td>Boards</td><td>2020.1</td></tr>
-    <tr><td>System work item types on backlogs and boards (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>System work item types on backlogs and boards (private preview)</td><td>Boards</td><td>2020.1</td></tr>
     <tr><td>Exclusive deployment lock policy</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Stages filters for pipeline resource triggers</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Generic webhook based triggers for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
