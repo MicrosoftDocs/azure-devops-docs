@@ -47,6 +47,7 @@ No features planned for release at this time.
 
 #### [**Future**](#tab/future)
 
+---
 ## How to provide feedback
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
