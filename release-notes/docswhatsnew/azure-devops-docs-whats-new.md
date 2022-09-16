@@ -1,121 +1,85 @@
 ---
-title: "Azure DevOps docs: What's new for July 1, 2022 - July 31, 2022"
-description: "What's new in the Azure DevOps docs for July 1, 2022 - July 31, 2022."
-ms.date: 08/01/2022
+title: "Azure DevOps docs: What's new for August 1, 2022 - August 31, 2022"
+description: "What's new in the Azure DevOps docs for August 1, 2022 - August 31, 2022."
+ms.date: 09/08/2022
 ---
 
-# Azure DevOps docs: What's new for July 1, 2022 - July 31, 2022
+# Azure DevOps docs: What's new for August 1, 2022 - August 31, 2022
 
-Welcome to what's new in the Azure DevOps docs from July 1, 2022 through July 31, 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from August 1, 2022 through August 31, 2022. This article lists some of the major changes to docs during this period.
 
 ## Artifacts
 
-### New articles
-
-- [Connect to Azure Artifacts feeds (dotnet)](/azure/devops/artifacts/nuget/dotnet-setup)
-
 ### Updated articles
 
-- [Configure upstream behavior](/azure/devops/artifacts/concepts/upstream-behavior)
-- [Set up your project and connect to Azure Artifacts](/azure/devops/artifacts/npm/npmrc)
-- [Connect to Azure Artifacts feeds (NuGet.exe)](/azure/devops/artifacts/nuget/nuget-exe)
+- [Project-scoped feeds](/azure/devops/artifacts/feeds/project-scoped-feeds)
+- [Use npm audit](/azure/devops/artifacts/npm/npm-audit)
 - [Use an Azure Artifacts feed as a private PowerShell repository](/azure/devops/artifacts/tutorials/private-powershell-library)
-
-## Boards
-
-### Updated articles
-
-- [Query work item history and discussion fields in Azure Boards](/azure/devops/boards/queries/history-and-auditing)
-
-## Integrate
-
-### Updated articles
-
-- [Authorize access to REST APIs with OAuth 2.0](/azure/devops/integrate/get-started/authentication/oauth)
-
-## Organizations
-
-### Updated articles
-
-- [Create and manage inherited processes](/azure/devops/organizations/settings/work/manage-process)
 
 ## Pipelines
 
-### Updated articles
+### New articles
 
-- [Define approvals and checks](/azure/devops/pipelines/process/approvals)
-- [Configure schedules for pipelines](/azure/devops/pipelines/process/scheduled-triggers)
-- [How to securely use variables and parameters in your pipeline](/azure/devops/pipelines/security/inputs)
-- [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines and Azure Machine Learning](/azure/devops/pipelines/targets/azure-machine-learning)
-- [Docker task](/azure/devops/pipelines/tasks/build/docker)
-
-## Project
+- [Secure access to Azure Repos from pipelines](/azure/devops/pipelines/security/secure-access-to-repos)
 
 ### Updated articles
 
-- [Manage or enable features](/azure/devops/project/navigation/preview-features)
-- [Publish a Git repository to a wiki](/azure/devops/project/wiki/publish-repo-to-wiki)
+- [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
+- [Restore NuGet packages in Azure Pipelines](/azure/devops/pipelines/packages/nuget-restore)
+- [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens)
+- [Deployment gates](/azure/devops/pipelines/release/approvals/gates)
+- [Integrate with ServiceNow change management](/azure/devops/pipelines/release/approvals/servicenow)
 
-## Repos
+## Report
+
+### New articles
+
+- [Best practices to use when querying Analytics](/azure/devops/report/analytics/analytics-best-practices)
+- [Permissions and prerequisites to access Analytics in Azure DevOps](/azure/devops/report/analytics/analytics-permissions-prerequisites)
+- [Query Analytics in Azure DevOps](/azure/devops/report/analytics/analytics-query-parts)
+- [Analytics query tools in Azure DevOps](/azure/devops/report/analytics/analytics-query-tools)
+- [Configure a chart for work items widget](/azure/devops/report/dashboards/configure-chart-work-items-widget)
 
 ### Updated articles
 
-- [Forks](/azure/devops/repos/git/forks)
-- [Suspend your work and manage your shelvesets](/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets)
-
+- [Install or enable the Analytics service](/azure/devops/report/dashboards/analytics-extension)
+- [Burndown and burnup guidance](/azure/devops/report/dashboards/burndown-guidance)
+- [Track progress with status and trend query-based charts](/azure/devops/report/dashboards/charts)
+- [Configure a Burndown or Burnup widget](/azure/devops/report/dashboards/configure-burndown-burnup-widgets)
+- [Sample reports and quick reference index](/azure/devops/report/extend-analytics/quick-ref)
+- [Data available from Analytics](/azure/devops/report/powerbi/data-available-in-analytics)
+- [What is Analytics?](/azure/devops/report/powerbi/what-is-analytics)
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-07-01..2022-07-31).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2022-08-01..2022-08-31).
 
-- [Incorrect Value Documented #12530](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12530)
-- [Inconsistent targetPath vs. Destination Folder #12522](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12522)
-- [Mismatched parameter name #12521](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12521)
-- [Install link says `Maven Apache` instead of `Apache Maven` #12493](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12493)
-- [What happens to a PAT if user account is disabled? #12481](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12481)
-- [unneccesary null check #12476](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12476)
-- [Mistake in documentation #12461](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12461)
-- [Incorrect URL #12448](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12448)
-- [Typo: "approach" -> "approval" #12446](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12446)
-- [set-up-the-build-task step is unnecessary in SourceLink doc #12436](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12436)
-- [Azure Devops task versions #12435](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12435)
-- [Add missing git tags example to Build.SourceBranchName documentation for clarity #12417](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12417)
-- [Yeh but what about all these other words???? #12355](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12355)
-- [Misleading info about costs #12318](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12318)
-- [OAuth guidance should describe how to authenticate using an Azure Active Directory application #12283](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12283)
-- [Why do force developers to USE yaml? #12212](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12212)
-- [Docs ambiguity: Two different PAT examples provided without explaining differences #12197](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12197)
-- [No information on how these settings and per-user notification subscriptions interact #11994](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11994)
-- [@Mention via API and Power Automate #11840](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11840)
-- [Wrong information about which env variables are being populated by the task   #11772](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11772)
-- [[Cache Task] docker cache seems not working #11228](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11228)
-- [.well-known/openid-configuration #11048](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11048)
-- [Please update this answers for SSH keys #8867](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8867)
-- [NuGet instructions folder possibly incorrect #8685](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8685)
-- [No discussion of authentication when driving Azure Machine Learning from Pipelines #8579](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8579)
-- [Resetting or modifying client npmrc set up #8185](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8185)
+- [Docker cache example - add CLI parameter #12610](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12610)
+- [Is there a version for VS For MAC? #12604](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12604)
+- [Outdated RestApi #12602](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12602)
+- [MachineNames is required #12558](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12558)
+- [Resource URL incorrect for build.complete event message #12550](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12550)
+- [SVG Images are supported #12542](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12542)
+- [Missing details about the server version #12526](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12526)
+- [Documentation still lacking... #12511](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12511)
+- [using azure artifacts as psrepository no longer works #12293](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12293)
+- [Publish Maven artifacts #12186](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12186)
+- [unvalidate bundle cache when lockfile changed #12184](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12184)
+- [PublishPipelineArtifact@1 has different input names #11874](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11874)
+- [Reutilizing Docker layer caching in ephemeral microsoft hosted agents is possible #11552](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11552)
+- [Misleading DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE #11057](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11057)
+- [Pipeline Caching - .net - Why `packages.lock,json` file is required? #6806](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6806)
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
 - [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (2)
-- [akyamada-ms](https://github.com/akyamada-ms) (1)
-- [Anubhav-gangwal](https://github.com/Anubhav-gangwal) (1)
-- [dylan-apera](https://github.com/dylan-apera) - Dylan Apera (1)
-- [EDToft](https://github.com/EDToft) (1)
-- [fingineering](https://github.com/fingineering) - Otrek (1)
-- [flcdrg](https://github.com/flcdrg) - David Gardiner (1)
-- [garryv](https://github.com/garryv) - Garry Viergever (1)
-- [glenchao](https://github.com/glenchao) - Glen Chao (1)
-- [iamNoah1](https://github.com/iamNoah1) - Noah Ispas (1)
-- [kaito-ms](https://github.com/kaito-ms) - Kaito Kataoka (1)
-- [Keppchen](https://github.com/Keppchen) (1)
-- [maxmed](https://github.com/maxmed) - Mohamed Ahmed (1)
-- [Meir017](https://github.com/Meir017) - Meir Blachman (1)
-- [mleziva](https://github.com/mleziva) - PaC#man (1)
-- [Mukesh05](https://github.com/Mukesh05) - Mukesh Kumar (1)
-- [pazand](https://github.com/pazand) (1)
-- [raydixon](https://github.com/raydixon) - Ray Dixon (1)
-- [RecursiveGeek](https://github.com/RecursiveGeek) - Hans Dickel (1)
-- [tobybaratta](https://github.com/tobybaratta) - Toby Baratta (1)
+- [conradj3](https://github.com/conradj3) - Conrad Johnson (1)
+- [EvgenyMosk](https://github.com/EvgenyMosk) - Yevhenii Moskovchenko (1)
+- [pnwguy](https://github.com/pnwguy) (1)
+- [reecelikesramen](https://github.com/reecelikesramen) - Reece Holmdahl (1)
+- [RTudosa](https://github.com/RTudosa) (1)
+- [sarika-gurkha](https://github.com/sarika-gurkha) - Sarika Gurkha (1)
+- [si-chan](https://github.com/si-chan) - Si Chan (1)
+- [Zac-Knitter](https://github.com/Zac-Knitter) - Zac Knitter (1)
