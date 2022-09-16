@@ -57,7 +57,7 @@ The following table summarizes the policies you can define to customize a branch
        Off  
    :::column-end:::
    :::column span="3"::: 
-      Encourage traceability by checking for linked work items on pull requests
+      Encourage traceability by checking for linked work items on pull requests.
    :::column-end:::
 :::row-end:::
 
