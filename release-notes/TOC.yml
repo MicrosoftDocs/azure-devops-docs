@@ -184,7 +184,7 @@
               href: 2018/jan-24-vsts.md
             - name: "2017 through 2012"
               href: /previous-versions/azure/devops/index
-            expanded: false
+          expanded: false
     - name: By service
       items:
       - name: Azure Boards
@@ -276,18 +276,16 @@
             href: 2019/boards/sprint-147-update.md
           - name: January 14
             href: 2019/boards/sprint-146-update.md
-          expanded: false
-        expanded: false
       - name: Azure Repos
         items:
         - name: "2021"
           items:
-          - name: September 8
-            href: 2021/repos/sprint-192-update.md
-          - name: June 17
-            href: 2021/repos/sprint-188-update.md
-          - name: March 23
-            href: 2021/repos/sprint-184-update.md
+            - name: September 8
+              href: 2021/repos/sprint-192-update.md
+            - name: June 17
+              href: 2021/repos/sprint-188-update.md
+            - name: March 23
+              href: 2021/repos/sprint-184-update.md
           expanded: false
         - name: "2020"
           items:
@@ -335,7 +333,6 @@
           - name: February 4
             href: 2019/repos/sprint-147-update.md
           expanded: false
-        expanded: false
       - name: Azure Pipelines
         items:
         - name: "2022"
@@ -689,7 +686,7 @@
           expanded: false
         expanded: false
   - name: Azure DevOps Server
-      href: /azure/devops/server/release-notes/azuredevops2020
+    href: /azure/devops/server/release-notes/azuredevops2020
   - name: Documentation updates
     items:
     - name: What's new
