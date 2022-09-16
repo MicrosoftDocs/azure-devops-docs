@@ -1,14 +1,14 @@
 ---
-title: Azure DevOps Feature Timeline
+title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 9/12/2022
 ms.topic: article
 ms.technology: devops-release-notes
-description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
+description: Azure DevOps feature roadmap
 hide_comments: true
 ---
-# Azure DevOps Feature Timeline
+# Azure DevOps Roadmap
 
 ---
 
@@ -19,11 +19,11 @@ hide_comments: true
 
 ---
 
-## Features under development
+## Product roadmap
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. 
 
-Each feature is linked to the public roadmap project where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The "Timeframe" column reflects when the feature will be available on Azure DevOps Services, the "Area" column reflects the area of the product the feature aligns with most, and the "Server" column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
+Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The year and quarter tabs reflect when the feature will be available on Azure DevOps Services.
 
 ## Initiatives
 ### Security

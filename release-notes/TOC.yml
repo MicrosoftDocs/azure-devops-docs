@@ -1,4 +1,4 @@
-- name: Feature timeline
+- name: Roadmap
   href: features-timeline.md
 - name: Released features
   href: features-timeline-released.md
@@ -687,15 +687,15 @@
         expanded: false
   - name: Azure DevOps Server
     href: /azure/devops/server/release-notes/azuredevops2020
-  - name: Documentation updates
-    items:
-    - name: What's new
-      href: docswhatsnew/index.yml
-    - name: July 2022
-      href: docswhatsnew/azure-devops-docs-whats-new.md
-    - name: June 2022
-      href: docswhatsnew/azure-devops-docs-2022-06.md
-    - name: May 2022
-      href: docswhatsnew/azure-devops-docs-2022-05.md
+- name: Documentation updates
+  items:
+  - name: What's new
+    href: docswhatsnew/index.yml
+  - name: July 2022
+    href: docswhatsnew/azure-devops-docs-whats-new.md
+  - name: June 2022
+    href: docswhatsnew/azure-devops-docs-2022-06.md
+  - name: May 2022
+    href: docswhatsnew/azure-devops-docs-2022-05.md
 - name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

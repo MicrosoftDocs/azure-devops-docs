@@ -5,7 +5,7 @@ ms.author: glmorale
 ms.date: 9/12/2022
 ms.topic: article
 ms.technology: devops-release-notes
-description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
+description: Azure DevOps release notes and server build numbers
 hide_comments: true
 ---
 # Azure DevOps Released Features
