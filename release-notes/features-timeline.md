@@ -28,7 +28,10 @@ Each feature is linked to the public roadmap project where you can learn more ab
 ## Initiatives
 ### Security
 #### [**2022 Q3**](#tab/2022-q3)
+**Boards**
 - [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+
+**Pipelines**
 - [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
 #### [**2022 Q4**](#tab/2022-q4)
 No features planned for release at this time.   
