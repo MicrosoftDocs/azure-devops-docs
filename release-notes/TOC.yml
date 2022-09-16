@@ -105,47 +105,47 @@
           - name: January 13
             href: 2020/sprint-163-update.md
           expanded: false
-        - name: "2019"
-          items:
-          - name: December 16
-            href: 2019/sprint-162-update.md
-          - name: December 2
-            href: 2019/sprint-161-update.md
-          - name: November 4
-            href: 2019/sprint-160-update.md
-          - name: October 14
-            href: 2019/sprint-159-update.md
-          - name: September 23
-            href: 2019/sprint-158-update.md
-          - name: September 3
-            href: 2019/sprint-157-update.md
-          - name: August 12
-            href: 2019/sprint-156-update.md
-          - name: July 22
-            href: 2019/sprint-155-update.md
-          - name: July 1
-            href: 2019/sprint-154-update.md
-          - name: June 10
-            href: 2019/sprint-153-update.md
-          - name: May 20
-            href: 2019/sprint-152-update.md
-          - name: May 13
-            href: 2019/build-may.md
-          - name: April 30
-            href: 2019/sprint-151-update.md
-          - name: April 8
-            href: 2019/sprint-150-update.md
-          - name: March 19
-            href: 2019/sprint-149-update.md
-          - name: February 25
-            href: 2019/sprint-148-update.md
-          - name: February 4
-            href: 2019/sprint-147-update.md
-          - name: January 14
-            href: 2019/sprint-146-update.md
-          expanded: false
         - name: Archive
           items:
+          - name: "2019"
+            items:
+            - name: December 16
+              href: 2019/sprint-162-update.md
+            - name: December 2
+              href: 2019/sprint-161-update.md
+            - name: November 4
+              href: 2019/sprint-160-update.md
+            - name: October 14
+              href: 2019/sprint-159-update.md
+            - name: September 23
+              href: 2019/sprint-158-update.md
+            - name: September 3
+              href: 2019/sprint-157-update.md
+            - name: August 12
+              href: 2019/sprint-156-update.md
+            - name: July 22
+              href: 2019/sprint-155-update.md
+            - name: July 1
+              href: 2019/sprint-154-update.md
+            - name: June 10
+              href: 2019/sprint-153-update.md
+            - name: May 20
+              href: 2019/sprint-152-update.md
+            - name: May 13
+              href: 2019/build-may.md
+            - name: April 30
+              href: 2019/sprint-151-update.md
+            - name: April 8
+              href: 2019/sprint-150-update.md
+            - name: March 19
+              href: 2019/sprint-149-update.md
+            - name: February 25
+              href: 2019/sprint-148-update.md
+            - name: February 4
+              href: 2019/sprint-147-update.md
+            - name: January 14
+              href: 2019/sprint-146-update.md
+            expanded: false
           - name: "2018"
             items:
             - name: December 4
@@ -184,7 +184,7 @@
               href: 2018/jan-24-vsts.md
             - name: "2017 through 2012"
               href: /previous-versions/azure/devops/index
-          expanded: false
+            expanded: false
     - name: By service
       items:
       - name: Azure Boards
