@@ -26,25 +26,21 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 Each feature is linked to the public roadmap project where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The "Timeframe" column reflects when the feature will be available on Azure DevOps Services, the "Area" column reflects the area of the product the feature aligns with most, and the "Server" column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
 
 ## Initiatives
-### Initiatives Title Placeholder
+### Security
 #### [**2022 Q3**](#tab/2022-q3)
-- [Admin](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#admin)
+- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
 #### [**2022 Q4**](#tab/2022-q4)
-No initiatives planned for release at this time.   
+No features planned for release at this time.   
 #### [**Future**](#tab/future)
 
 ---
 ## Additional features
-#### [**2022 Q1**](#tab/2022-q1)
-
-#### [**2022 Q2**](#tab/2022-q2)
-No initiatives planned for release at this time.   
-
 #### [**2022 Q3**](#tab/2022-q3)
-No initiatives planned for release at this time.   
-
+- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
 #### [**2022 Q4**](#tab/2022-q4)
-No initiatives planned for release at this time.   
+No features planned for release at this time.   
 
 #### [**Future**](#tab/future)
 
