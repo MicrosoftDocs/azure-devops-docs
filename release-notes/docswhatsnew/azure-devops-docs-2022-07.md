@@ -73,7 +73,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Mismatched parameter name #12521](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12521)
 - [Install link says `Maven Apache` instead of `Apache Maven` #12493](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12493)
 - [What happens to a PAT if user account is disabled? #12481](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12481)
-- [unneccesary null check #12476](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12476)
+- [unnecessary null check #12476](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12476)
 - [Mistake in documentation #12461](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12461)
 - [Incorrect URL #12448](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12448)
 - [Typo: "approach" -> "approval" #12446](https://github.com/MicrosoftDocs/azure-devops-docs/issues/12446)
