@@ -80,9 +80,12 @@ For Azure Blob Storage, customer data gets replicated three times within a singl
 
 To protect against accidental deletion of data, Microsoft also takes point-in-time backups of both the blobs in Azure Blob Storage, and the databases in Azure SQL Database. There's a separate copy of all blobs, and changes are appended to each storage account. Because this data is immutable, you don't need to rewrite any existing storage as part of the backup procedures. 
 
-Backups are a standard part of Azure SQL Database, and Azure DevOps makes use of this. We maintain 28 days' worth of your data. In both cases, these backups are also replicated in a paired region, helping to ensure that you recover from a regional outage.
+Backups are a standard part of Azure SQL Database, and Azure DevOps makes use of this. We maintain 28 days' worth of your data. In both cases, these backups are also replicated in a paired region, helping to ensure that we recover from a regional outage. 
 
-A further protection is that Microsoft can recover entire organizations for up to 28 days after deletion. This is because we perform a "soft delete" for organization deletion operations.
+A further protection is that customers can recover their deleted organizations or projects for up to 28 days after deletion. Deleted organizations and projects are in a "soft deleted" stage for 28 days allowing customers to recover as needed. After 28 days they are permanently deleted and cannot be restored.
+
+>[!IMPORTANT]
+> Accidental deletion here refers to scenarios that arise as a result of an incident on our services and doesn't include accidental deletion of assets (e.g., repositories, work items, attachments, artifacts) by customers.  We do not support restoring assets that are accidently deleted by customers as these backups are meant for business continuity and aid recovery from outage or disaster scenarios only. 
 
 ### Practice is critical
 
