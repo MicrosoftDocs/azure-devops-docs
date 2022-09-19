@@ -256,7 +256,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 > [!NOTE]
 > **Duration** is used only when **Date started** and **Date completed** are not available.
 >
-> The fully Qualified name format for **testName** is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
+> The fully qualified name format for **testName** is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
 
 <a name="docker"></a>
 
