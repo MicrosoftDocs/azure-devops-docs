@@ -77,10 +77,10 @@ A: **No**. Your tokens will not migrate and you will need to [regenerate your Pe
 
 ### Q: If I have feedback or additional questions is there somewhere I can reach out?
 
-A: **Yes**. You can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). 
-
+A: You can search the [developer community portal](https://developercommunity.visualstudio.com/report?space=21&entry=problem) to see if your question is asked and answered and if not, please open up a new issue. If you need assistance with a failed import, please contact Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). 
 <!-- ENDSECTION --> 
 
 ## Related articles
 
 - [Migration and process model FAQs](faqs.yml)
+
