@@ -54,11 +54,11 @@ If you're just getting started, we recommend you review and get started with the
       [DevOps solutions on Azure](https://azure.microsoft.com/solutions/devops/#products)
    :::column-end::: 
    :::column span="3":::
-      Use end-to-end solutions on Azure to implement DevOps practices throughout application planning, development, delivery, and operations. Apply the right combination of DevOps technologies, culture, and processes to enable continual software delivery and better value for customers. Get started with the following learn modules: 
-      - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)  
-      - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)  
-      - [Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines](/learn/modules/cna-deploy-maintain/)
-      - [Load test Azure web apps by using Azure DevOps](/learn/modules/load-test-web-app-azure-devops/)
+      Use end-to-end solutions on Azure to implement DevOps practices throughout application planning, development, delivery, and operations. Apply the right combination of DevOps technologies, culture, and processes to enable continual software delivery and better value for customers. Get started with the following Learn modules: 
+      - [Deploy applications with Azure DevOps](/training/paths/deploy-applications-with-azure-devops/)  
+      - [Build applications with Azure DevOps](/training/paths/build-applications-with-azure-devops/)  
+      - [Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines](/training/modules/cna-deploy-maintain/)
+      - [Load test Azure web apps by using Azure DevOps](/training/modules/load-test-web-app-azure-devops/)
    :::column-end:::
 :::row-end:::
 ---
