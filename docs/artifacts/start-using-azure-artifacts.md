@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: chcomley
-ms.date: 05/09/2022
+ms.date: 09/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. With Azure Artifacts, developers can publish packages to their feeds and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
+Azure Artifacts enables developers to share their code efficiently and manage all their packages from one place. With Azure Artifacts, developers can publish packages to their [feeds](./concepts/feeds.md) and share it within the same team, across organizations, and even publicly. Developers can also consume packages from different feeds and public registries such as NuGet.org or npmjs.com. Azure Artifacts supports multiple package types such as NuGet, npm, Python, Maven, and Universal Packages.
 
 ## Prerequisites
 
@@ -122,7 +122,7 @@ The **used** column on the Billing page of your Organization gets updated once a
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
+A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB. Or, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
 ::: moniker-end
 
