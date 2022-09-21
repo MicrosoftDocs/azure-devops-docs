@@ -646,7 +646,7 @@ To escape emojis, enclose them using the \` character.
 
 ## Attachments
 
-#### Supported in: Pull Requests | README files | Wikis
+#### Supported in: Pull Requests | Wikis
 
 In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in your wiki page.
 
