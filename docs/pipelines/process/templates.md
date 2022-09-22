@@ -176,7 +176,7 @@ resources:
     source: sourcePipeline
 
 steps:
- - script: echo "Testing resource template"
+- script: echo "Testing resource template"
 ```
 ::: moniker-end
 
@@ -209,8 +209,8 @@ jobs:
   - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 500) }}:
     - job:
       steps:
-        - powershell: 'Get-ChildItem -Path Env:\'
-        - ${{ testJob.steps }}
+      - powershell: 'Get-ChildItem -Path Env:\'
+      - ${{ testJob.steps }}
 ```
 
 ```yaml
