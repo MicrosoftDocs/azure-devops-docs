@@ -37,22 +37,22 @@ Once you build an image, you'll push the image to Azure Container Registry, Dock
 4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you're building a Linux app, use `ubuntu-latest` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
  
    ```yaml
-           trigger:
-           - main
-           
-           pool:
-             vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
-           
-           variables:
-             imageName: 'pipelines-javascript-docker'
-           
-           steps:
-           - task: Docker@2
-             displayName: Build an image
-             inputs:
-               repository: $(imageName)
-               command: build
-               Dockerfile: app/Dockerfile
+    trigger:
+    - main
+    
+    pool:
+      vmImage: 'ubuntu-latest' 
+    
+    variables:
+      imageName: 'pipelines-javascript-docker'
+    
+    steps:
+    - task: Docker@2
+      displayName: Build an image
+      inputs:
+        repository: $(imageName)
+        command: build
+        Dockerfile: app/Dockerfile
     ```
 
     Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
