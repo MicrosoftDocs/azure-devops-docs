@@ -3,7 +3,7 @@ title: Build container images to deploy apps
 description: Build Linux or Windows container images for app deployment using Azure Pipelines.
 ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
-ms.date: 08/26/2022
+ms.date: 09/22/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -62,13 +62,21 @@ This quickstart shows how to build a container image for app deployment using Az
 
 For more information, see the [Docker task](../../tasks/build/docker.md) used by this sample application. You can also directly invoke Docker commands using a [command line task](../../tasks/utility/command-line.md)(script).
 
-You can build Linux container images using Microsoft-hosted Ubuntu agents or Linux platform-based self-hosted agents. You can build Windows container images using Microsoft-hosted Windows agents or Windows platform based self-hosted agents. All Microsoft-hosted Windows platform-based agents are shipped with the Moby engine and client needed for Docker builds. Currently, you can't use Microsoft-hosted macOS agents to build container images because the Moby engine needed for building the images isn't pre-installed on these agents. For more information, see the [Windows and Linux agent options available with Microsoft-hosted agents](../../agents/hosted.md).
-
 ## Clean up resources
 
 If you don't plan to continue using this application, delete your pipeline and code repository.
 
 ## FAQ
+
+### What agents can I use to build container images?
+
+- You can build Linux container images using Microsoft-hosted Ubuntu agents or Linux platform-based self-hosted agents.
+
+- You can build Windows container images using Microsoft-hosted Windows agents or Windows platform based self-hosted agents. All Microsoft-hosted Windows platform-based agents are shipped with the Moby engine and client needed for Docker builds.
+
+- You currently can't use Microsoft-hosted macOS agents to build container images because the Moby engine needed for building the images isn't pre-installed on these agents.
+
+For more information, see the [Windows and Linux agent options available with Microsoft-hosted agents](../../agents/hosted.md).
 
 ### What pre-cached images are available on hosted agents?
 
@@ -107,7 +115,7 @@ steps:
 
 ### How can I create a script-based Docker build instead of using the Docker task?
 
-You can use the command `build` or any other Docker command.
+You can use the `build` command or any other Docker command.
 
 ```
 docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
@@ -153,4 +161,5 @@ After you build your container image, push the image to Azure Container Registry
 
 > [!div class="nextstepaction"]
 > [Push an image to Azure Container Registry](acr-template.md)
+>
 > [Push an image to Docker Hub or Google Container Registry](push-image.md)
