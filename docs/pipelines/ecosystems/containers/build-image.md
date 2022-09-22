@@ -84,7 +84,9 @@ To avoid spending long intervals pulling these images for every job from the con
 
 ### How do I set the BuildKit variable for my Docker builds?
 
-[BuildKit](https://github.com/moby/buildkit) introduces build improvements around performance, storage management, feature functionality, and security. To enable BuildKit based docker builds, set the **DOCKER_BUILDKIT** variable. BuildKit currently isn't supported on Windows hosts.
+[BuildKit](https://github.com/moby/buildkit) introduces build improvements around performance, storage management, feature functionality, and security. BuildKit currently isn't supported on Windows hosts.
+
+To enable BuildKit based docker builds, set the **DOCKER_BUILDKIT** variable.
 
 ```YAML
 trigger:
