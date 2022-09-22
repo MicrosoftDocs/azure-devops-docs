@@ -30,7 +30,7 @@ This quickstart shows how to build a container image for app deployment using Az
 1. Select **GitHub** as the location for your source code.
 1. Select your repository, and then select **Starter pipeline**.
 
-   - If you're redirected to GitHub for sign in, enter your GitHub credentials.
+   - If you're redirected to GitHub to sign in, enter your GitHub credentials.
    - If you're redirected to GitHub to install the Azure Pipelines app, select **Approve and install**.
 
 1. Replace the contents of **azure-pipelines.yml** with the following code. Based on whether you're deploying a Linux or Windows app, make sure to respectively set `vmImage` to either `ubuntu-latest` or `windows-latest`.
