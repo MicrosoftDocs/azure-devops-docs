@@ -28,35 +28,46 @@ Each feature is linked to an article where you can learn more about a particular
 ## Initiatives
 ### Initiative #1
 #### [**2022 Q3**](#tab/2022-q3)
+**Admin**
+
 **Boards**
-- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
-
-**Pipelines**
-- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
-#### [**2022 Q4**](#tab/2022-q4)
-No features planned for release at this time.   
-#### [**Future**](#tab/future)
-
-### Initiative #2
-#### [**2022 Q3**](#tab/2022-q3)
-**Boards**
-- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
-
-**Pipelines**
-- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
 #### [**2022 Q4**](#tab/2022-q4)
 No features planned for release at this time.   
 #### [**Future**](#tab/future)
 
 ---
+### Initiative #2
+#### [**2022 Q3**](#tab/2022-q3)
+**Boards**
+
+**Pipelines**
+#### [**2022 Q4**](#tab/2022-q4)
+No features planned for release at this time.   
+#### [**Future**](#tab/future)
+No features planned for release at this time.   
+
+---
 ## Additional features
 #### [**2022 Q3**](#tab/2022-q3)
+**Admin**
 - [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+
+**Boards**
+- [Get Attachment URL link](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#get-attachment-url-link)
+- [Adding Assigned To avatar to child items on cards](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#adding-assigned-to-avatar-to-child-items-on-cards)
+- [Filter to work item history](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#filter-to-work-item-history)
+
+**Pipelines**
 - [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
+- [Build retention improvements as part of next on-premises server release](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#build-retention-improvements-as-part-of-next-on-premises-server-release)
+- [Deprecate windows-2016, ubuntu-18, macOS-10.14, and macOS-10.15 images](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#deprecate-windows-2016-ubuntu-18-macos-1014-and-macos-1015-images)
 #### [**2022 Q4**](#tab/2022-q4)
 No features planned for release at this time.   
 
 #### [**Future**](#tab/future)
+
+**
+
 
 ---
 ## How to provide feedback
