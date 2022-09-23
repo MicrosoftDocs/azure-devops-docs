@@ -56,13 +56,13 @@ We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) 
 
 ## Documentation feedback
 
-All articles on Microsoft Docs have a ratings tool in the lower right-hand corner of the page. It asks "Is this content helpful?" Answer **Yes** or **No** depending on your experience.
+All articles on Microsoft Learn have a ratings tool in the lower right-hand corner of the page. It asks "Is this content helpful?" Answer **Yes** or **No** depending on your experience.
 
 Add more detailed feedback by selecting the **Tell us more** link after selecting **Yes** or **No**. Check an appropriate box and enter what we can do to improve the content for you! Although we can't reply back, we collect and review this feedback regularly, and use your sentiments in our content planning.
 
 ## Tips for effective feedback
 
-If you just want to vent about the product or the docs, that's okay. It helps us a lot to know when you're happy or unhappy with an experience. For the most impact, though, provide details so we can better understand what we're doing right or wrong.
+If you just want to vent about the product or the documentation, that's okay. It helps us a lot to know when you're happy or unhappy with an experience. For the most impact, though, provide details so we can better understand what we're doing right or wrong.
 
 * Provide a little context. What problem were you trying to solve? At what point did it go wrong?
 * What's your role? We don't need personal or professional details. Are you a dev? A manager? A business owner? When we understand our audience, we can come up with better solutions for you and other customers doing similar work.
@@ -71,7 +71,7 @@ If you just want to vent about the product or the docs, that's okay. It helps us
 The best feedback we get is clear and precise. For example:
 
 * Product feedback: "I'm a project manager for a small start-up. I'm using Azure DevOps. I'm trying to create work item templates through the UI, but my changes don't seem to persist. It's not clear what I'm doing wrong."
-* Doc feedback: "I'm a dev in a large organization that works on Java apps. I tried to use Maven with your build system in Azure DevOps Server 2017 Update 1 (15.112.26307.0), but I couldn't get the configuration shown in the docs to work."
+* Doc feedback: "I'm a dev in a large organization that works on Java apps. I tried to use Maven with your build system in Azure DevOps Server 2017 Update 1 (15.112.26307.0), but I couldn't get the configuration shown in the documentation to work."
 
 The more details, the better!
 
