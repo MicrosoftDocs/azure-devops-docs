@@ -60,7 +60,7 @@ The Azure Pipelines agent and a number of its tasks use either Node 6 or Node 10
 
 ### Pull Request widget to allow for the selection of many repos
 
-For the [Pull Request widget](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/widget-catalog?view=azure-devops#pull-request). Allow the selection of many repositories to be added at one time. 
+For the [Pull Request widget](https://docs.microsoft.com/azure/devops/report/dashboards/widget-catalog?view=azure-devops#pull-request). Allow the selection of many repositories to be added at one time. 
 
 This feature will address the following developer community [suggestion ticket](https://developercommunity.visualstudio.com/t/allow-multiple-repository-selection-in-pull-reques/982784).
 
