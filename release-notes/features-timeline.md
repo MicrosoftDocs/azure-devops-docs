@@ -26,13 +26,24 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The year and quarter tabs reflect when the feature will be available on Azure DevOps Services.
 
 ## Initiatives
-### Security
+### Initiative #1
 #### [**2022 Q3**](#tab/2022-q3)
 **Boards**
-- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
 
 **Pipelines**
-- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
+- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
+#### [**2022 Q4**](#tab/2022-q4)
+No features planned for release at this time.   
+#### [**Future**](#tab/future)
+
+### Initiative #2
+#### [**2022 Q3**](#tab/2022-q3)
+**Boards**
+- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+
+**Pipelines**
+- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
 #### [**2022 Q4**](#tab/2022-q4)
 No features planned for release at this time.   
 #### [**Future**](#tab/future)
@@ -40,8 +51,8 @@ No features planned for release at this time.
 ---
 ## Additional features
 #### [**2022 Q3**](#tab/2022-q3)
-- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
-- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3initiatives?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
+- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
 #### [**2022 Q4**](#tab/2022-q4)
 No features planned for release at this time.   
 
