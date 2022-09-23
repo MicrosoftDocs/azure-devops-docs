@@ -47,26 +47,54 @@ No features planned for release at this time.
 No features planned for release at this time.   
 
 ---
-## Additional features
+## All features
 #### [**2022 Q3**](#tab/2022-q3)
 **Admin**
-- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+- [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
 
 **Boards**
-- [Get Attachment URL link](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#get-attachment-url-link)
-- [Adding Assigned To avatar to child items on cards](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#adding-assigned-to-avatar-to-child-items-on-cards)
-- [Filter to work item history](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#filter-to-work-item-history)
+- [Get Attachment URL link](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#get-attachment-url-link)
+- [Adding Assigned To avatar to child items on cards](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#adding-assigned-to-avatar-to-child-items-on-cards)
+- [Filter to work item history](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#filter-to-work-item-history)
 
 **Pipelines**
-- [Pipelines scalability improvements](https://review.docs.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
-- [Build retention improvements as part of next on-premises server release](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#build-retention-improvements-as-part-of-next-on-premises-server-release)
-- [Deprecate windows-2016, ubuntu-18, macOS-10.14, and macOS-10.15 images](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#deprecate-windows-2016-ubuntu-18-macos-1014-and-macos-1015-images)
+- [Pipelines scalability improvements](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#pipelines-scalability-improvements)
+- [Build retention improvements as part of next on-premises server release](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#build-retention-improvements-as-part-of-next-on-premises-server-release)
+- [Deprecate windows-2016, ubuntu-18, macOS-10.14, and macOS-10.15 images](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#deprecate-windows-2016-ubuntu-18-macos-1014-and-macos-1015-images)
 #### [**2022 Q4**](#tab/2022-q4)
-No features planned for release at this time.   
+**Boards**
+- [Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#maintain-backlog-hierarchy-when-filters-are-applied)
+- [Emoji support in work item tags](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#emoji-support-in-work-item-tags)
+- [Ability to change link type from Web UI](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#ability-to-change-link-type-from-web-ui)
+- [Save Comment Improvements](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#save-comment-improvements)
+
+**Pipelines**
+- [Credential-free pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#credential-free-pipelines)
+- [Deprecate Node 10 from agent and tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#deprecate-node-10-from-agent-and-tasks)
+
+**Reporting**
+- [Pull Request widget to allow for the selection of many repos](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#pull-request-widget-to-allow-for-the-selection-of-many-repos)
+- [Rollup columns for query results](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#rollup-columns-for-query-results)
+- [Show Link with Parent Name in Query Results Widget](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#show-link-with-parent-name-in-query-results-widget)
 
 #### [**Future**](#tab/future)
+**Admin**
+- [Support Azure Managed Identities and Service Principals](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals)
+- [Auditing GA](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#auditing-ga)
+- [Conditional Access Policy support for device state](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)
+- [Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#access-events-for-pat-ssh-will-be-available-in-the-auditing-log)
 
-**
+**Artifacts**
+- [Package promote task in Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#package-promote-task-in-azure-pipelines)
+- [Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#deprecate-old-azure-artifacts-tasks-in-azure-pipelines-and-default-to-new-auth-only-tasks)
+
+**Boards**
+- [Work Item support for Markdown editing](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#work-item-support-for-markdown-editing)
+- [Improve GitHub Connection Experience](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#improve-github-connection-experience)
+
+**Pipelines**
+- [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)
+- [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)
 
 
 ---
