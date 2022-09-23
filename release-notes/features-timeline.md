@@ -25,28 +25,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The year and quarter tabs reflect when the feature will be available on Azure DevOps Services.
 
-## Initiatives
-### Initiative #1
-#### [**2022 Q3**](#tab/2022-q3)
-**Admin**
-
-**Boards**
-#### [**2022 Q4**](#tab/2022-q4)
-No features planned for release at this time.   
-#### [**Future**](#tab/future)
-
----
-### Initiative #2
-#### [**2022 Q3**](#tab/2022-q3)
-**Boards**
-
-**Pipelines**
-#### [**2022 Q4**](#tab/2022-q4)
-No features planned for release at this time.   
-#### [**Future**](#tab/future)
-No features planned for release at this time.   
-
----
 ## All features
 #### [**2022 Q3**](#tab/2022-q3)
 **Admin**
@@ -96,6 +74,28 @@ No features planned for release at this time.
 - [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)
 - [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)
 
+
+---
+## Initiatives
+### Initiative #1
+#### [**2022 Q3**](#tab/2022-q3)
+**Admin**
+
+**Boards**
+#### [**2022 Q4**](#tab/2022-q4)
+No features planned for release at this time.   
+#### [**Future**](#tab/future)
+
+---
+### Initiative #2
+#### [**2022 Q3**](#tab/2022-q3)
+**Boards**
+
+**Pipelines**
+#### [**2022 Q4**](#tab/2022-q4)
+No features planned for release at this time.   
+#### [**Future**](#tab/future)
+No features planned for release at this time.   
 
 ---
 ## How to provide feedback
