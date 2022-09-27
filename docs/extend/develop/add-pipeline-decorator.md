@@ -84,6 +84,10 @@ Let's take a look at the properties and what they're used for:
 | `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
 | `ms.azure-release-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic RM pipeline. |
 
+> [!NOTE] 
+> [Deployment jobs](../../pipelines/process/deployment-jobs.md) in a YAML pipeline only support `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks` targets.
+> [Jobs](../../pipelines/process/phases.md) support all YAML pipeline targets.
+
 In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` only because we want to run at the end of all build jobs.
 
 This extension contributes a pipeline decorator.
