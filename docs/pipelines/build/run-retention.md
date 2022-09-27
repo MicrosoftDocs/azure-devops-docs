@@ -12,7 +12,7 @@ monikerRange: ">= azure-devops-2020"
 
 [!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
 
-Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are a some examples of tasks that you can add to your yaml pipeline that will cause a run to retain itself.
+Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are some examples of tasks that you can add to your yaml pipeline that will cause a run to retain itself.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ In this example, the project is configured to delete pipeline runs after only th
 
 If a pipeline in this project is important and runs should be retained for longer than thirty days, this task ensures the run will be valid for two years by [adding a new retention lease](/rest/api/azure/devops/build/leases/add).
 
-# [Powershell](#tab/powershell)
+# [PowerShell](#tab/powershell)
 
 ```
 - task: PowerShell@2
@@ -86,7 +86,7 @@ If a pipeline in this project is important and runs should be retained for longe
 
 #### Question: can a pipeline be retained for _less_ than the configured project values?
 
-No, leases do not work in the reverse. If a project is configured to retain for two years, pipeline runs will not be cleaned up by the system for two years. To delete these runs earlier, manually delete them or use the equivalent REST API.
+No, leases don't work in the reverse. If a project is configured to retain for two years, pipeline runs won't be cleaned up by the system for two years. To delete these runs earlier, manually delete them or use the equivalent REST API.
 
 ## Example: Only runs on branches named `releases/*` should be retained for a long time
 
