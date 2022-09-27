@@ -60,7 +60,7 @@ This quickstart shows how to build a container image for app deployment using Az
 
 1. Edit the commit message, and select **Save and run** again to start the pipeline.
 
-For more information, see the [Docker task](../../tasks/build/docker.md) used by this sample application. You can also directly invoke Docker commands using a [command line task](../../tasks/utility/command-line.md)(script).
+For more information, see the [Docker task](../../tasks/build/docker.md) used by this sample application. You can also directly invoke Docker commands using a [command line task](../../tasks/utility/command-line.md).
 
 ## Clean up resources
 
