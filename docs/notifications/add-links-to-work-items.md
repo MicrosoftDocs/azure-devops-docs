@@ -18,51 +18,43 @@ ms.date: 09/28/2021
 
 When you link work items to other objects, you maintain an audit trail of related work for your team. All users can add work item links to internal Azure DevOps objects, like build and release pipelines, and external objects, like in Git and Team Foundation Version Control (TFVC) repositories.
 
-You can link work items to the following internal and external devops objects&mdash;as illustrated in the following image&mdash;:
-::: moniker range=">= azure-devops-2020"
-**Wiki pages** 
-For more information, see the following articles:
-- [Add & edit wiki pages](../project/wiki/add-edit-wiki.md)
-- [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
-
-**Build and release pipelines**: *Build*, *Found in build*, *Integrated in build*, *Integrated in release*
-For more information, see the following articles:
-- [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).
-- [Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-
-**Git repositories**: *Branch*, *Commit*, *Pull Request*, *Tag*
-For more information, see the following articles:
-- [Azure Boards-GitHub integration](../boards/github/index.md)
-- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
-- Set up automatic linking and other settings:
-  - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-
-**TFVC repositories**: *Changeset*, *Shelveset*, *VersionedItem*
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-**Build and release pipelines**: *Build*, *Found in build*, *Integrated in build*, *Integrated in release*
-
-**Git repositories**: *Branch*, *Commit*, *Pull Request*, *Tag*
-Requires connecting your Azure DevOps project and GitHub repository. For more information, see [Azure Boards-GitHub integration](../boards/github/index.md).
-
-**TFVC repositories**: *Changeset*, *Shelveset*, *VersionedItem*
-
-::: moniker-end
-
+You can link work items to the following internal and external devops objects, as illustrated in the following image.
 :::image type="content" source="media/add-link/conceptual-link-types-devops-objects.png" alt-text="Conceptual diagram of link types used to link work items to devops objects.":::
 
+For more information, we've included links to related articles:
+::: moniker range=">= azure-devops-2020"
+- **Wiki pages**:
+  - [Add & edit wiki pages](../project/wiki/add-edit-wiki.md)
+  - [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+- **Build and release pipelines**:
+  - [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).
+  - [Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- **Git repositories**:
+  - [Azure Boards-GitHub integration](../boards/github/index.md)
+  - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+  - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- **TFVC repositories**
+::: moniker-end
+::: moniker range="<= azure-devops-2019"
+- **Build and release pipelines**:
+  - [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).
+  - [Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- **Git repositories**:
+  - [Azure Boards-GitHub integration](../boards/github/index.md)
+  - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+  - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- **TFVC repositories**
+::: moniker-end
 ## Link work items to pull requests
+Link your work items to pull request commits, comments, description, and more.
 
-1. Enter `#` to trigger the `#ID` work item picker in your pull request commits, comments, description, and more. You see a list of 50 work items that you've recently modified or are assigned to you.
+1. Enter `#` to trigger the `#ID` work item picker in your pull request. You see a list of 50 work items that you've recently modified or are assigned to you.
 
    :::image type="content" source="media/link-pr-to-work-item.png" alt-text="Screenshot of work item list produced when entering # in PR description.":::
 
-2. Narrow the list of suggested work items by entering keywords that match the work item type, ID, or title.
+2. Enter up to five keywords that match the work item type, ID, or title to narrow the list of suggested work items.
 
    :::image type="content" source="media/keyword-pr-link.png" alt-text="Screenshot of entering keyword after # and resulting work item in search":::
-
-   To further filter the list, continue to enter up to five keywords until you find a match.
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -70,33 +62,33 @@ Requires connecting your Azure DevOps project and GitHub repository. For more in
 
 [!INCLUDE [temp](../includes/set-work-item-state-pull-request.md)]
 
-Azure DevOps considers the following criteria (in this order) when it attemps to set the state of #mentioned work items:
-- State
-- State Category
-- Keyword
+Azure DevOps considers the following criteria (in this order) when it attempts to set the state of #mentioned work items:
+1. State
+1. State Category
+1. Keyword
 
-The following table describes the criteria logic.
+#### Criteria logic for work item state
+The following table describes the criteria logic for work item state.
 
-| **Criteria**   | **Action**       |
-|----------------|------------------|
-| **If** the value matches a state,| **Then** set it to that state. |
-| **Else If** the value matches a state category, | **Then** set the work item to first state in that category. See the following [note](#note-category-matching). |
-| **Else If** the value matches a keyword,        | **Then** set the work item to matching keyword state. See the following [table](#keyword-action-table).     |
-| **Else**      | Ignore it and do nothing.                  |
+| **Criteria**       | **Action**                 |
+|--------------------|----------------------------|
+| **If** the value matches a state,               | **Then** set it to that state.    |
+| **Else If** the value matches a state category, | **Then** set the work item to first state in that category. See the following [note](#category-note).|
+| **Else If** the value matches a keyword,        | **Then** set the work item to matching keyword state. See the following [section](#criteria-logic-for-work-item-keyword).  |
+| **Else**                                        | Ignore it and do nothing.          |
 
+#### Criteria logic for work item keyword
 The following table describes keyword logic, which helps with intent matching. For example, you might enter “Resolves”, but you really meant “Resolved”. 
 
-<a id="keyword-action-table">  </a>
-
-| **Keyword**                    | **Action**                                               |  
-|:-------------------------------|:---------------------------------------------------------|
+| **Keyword**                    | **Action**                                                |  
+|--------------------------------|:----------------------------------------------------------|
 | Proposed, Proposes, Propose    | Set to the first state in the Proposed category.          |  
 | InProgress                     | Set to the first state in the In Progress category.       |
 | Completed, Completes, Complete | Set to the first state in the Completed category.         |
 | Resolved, Resolves, Resolve    | Set to the first state in the Resolved category.          |
-| Fixes, Fixed, Fix              | Close work item. Except Bug, which gets set to Resolved. |
+| Fixes, Fixed, Fix              | Close work item. Except Bug, which gets set to Resolved.  |
 
-<a id="note-category-matching">  </a>
+<a id="category-note" />
 
 > [!NOTE]  
 > We don't support category matching on projects using a Hosted XML process. Category matching is only available for projects using an inherited process.
