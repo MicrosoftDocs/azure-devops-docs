@@ -186,12 +186,13 @@ You can review usage for the service and for individuals by going to **Organizat
 <a id="limit-records-returned" />
 
 ### Limit the number of records returned 
+
 GET https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems HTTP/1.1
 User-Agent: {application}
 Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
-Host: {OrganizationName}.analytics.visualstudio.com
+Host: analytics.dev.azure.com/{OrganizationName}
 
 
 

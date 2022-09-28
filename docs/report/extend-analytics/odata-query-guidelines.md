@@ -774,7 +774,7 @@ User-Agent: {application}
 Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
-Host: {OrganizationName}.analytics.visualstudio.com
+Host: analytics.dev.azure.com/{OrganizationName}
 ```
 If the dataset exceeds the limit of 1000 records, the query will immediately fail with the following error.
 

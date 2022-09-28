@@ -17,6 +17,7 @@ ms.date: 09/20/2021
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
+
 ## Sprint planning meetings 
 
 Much of sprint planning involves a negotiation between the product owner and the team to determine the focus and work to tackle in the upcoming sprint. It's useful to time-box the planning meeting, restricting it to 4 hours or less. 
@@ -129,11 +130,11 @@ Good Scrum Masters have or develop excellent communication, negotiation, and con
 Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable before it grows into a major issue.  
 
 <a id="daily-scrum-meetings">  </a>
+
 ## Daily Scrum meetings
 Daily Scrum meetings help keep a team focused on what it needs to do the next day. Staying focused helps the team maximize their ability to meet sprint commitments. Your Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less.  
 
 Three aspects of successful Scrum meetings are:
-
 
 *	Everyone stands up. Standing up helps to keep the meetings focused and short. 
 *	They start and end on time and occur at the same time in the same location each day 
@@ -141,6 +142,10 @@ Three aspects of successful Scrum meetings are:
 	*	*What have I accomplished since the most recent Scrum?*  
 	*	*What will I accomplish before the next Scrum?*  
 	*	*What blocking issues or impediments might affect my work?*  
+
+> [!NOTE]   
+> The focus for scrum meetings is on the status of work that needs to be passed from one team member to another team member. 
+ 
 
 Team members should strive to answer their questions quickly and concisely. For example: 
 
