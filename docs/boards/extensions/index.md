@@ -23,10 +23,11 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker range="azure-devops"
 
-## Integrate with Azure Boards extensions 
+## Integrate with Azure Boards 
 
+- [Azure Boards Microsoft Teams](../integrations/boards-teams.md)
 - [Azure Boards Slack](../integrations/boards-slack.md)
-- [Azure Boards Microsoft Teams app](../integrations/boards-teams.md)
+
 
 ::: moniker-end
 
@@ -94,7 +95,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 
 
-## Customize work item types
+## Customizing work item types
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -117,6 +118,10 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
 
 ::: moniker-end
+
+In addition to the above extensions, you can 
+
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -169,11 +174,16 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 ::: moniker-end
 
-## Miscellaneous tools
+## Automation and miscellaneous tools
 
 - [Azure Boards Kanban Tools](https://marketplace.visualstudio.com/items?itemName=alm-devops-rangers.KanbanBoardTools)
 - [Migration Tools for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration)
+- [Microsoft Flow, Power Apps and Power Automate](https://marketplace.visualstudio.com/items?itemName=MS-Flow.microsoftflow)
+- [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
 
 ## Related articles
 
 - [Cross-service integration overview](../../cross-service/cross-service-overview.md)
+- [Power Platform, Connectors, Azure DevOps](/connectors/visualstudioteamservices/)
+- [Azure DevOps Work Items Microsoft Graph connector](/microsoftsearch/azure-devops-connector)
+- [Connect to Azure DevOps from Power Apps](/power-apps/maker/canvas-apps/connections/azure-devops)
