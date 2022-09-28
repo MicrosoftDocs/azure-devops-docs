@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 08/31/2021
+ms.date: 09/28/2023
 ---
  
 
@@ -838,7 +838,13 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 
 ::: moniker-end 
 
+## Automation and Azure DevOps connectors
 
+Several connectors are supported by Microsoft products to support automation or integration with other applications and services. You can learn more from the following resources. 
+
+- [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
+- [Power Automate templates for Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
+- [Microsoft Power Automate documentation](/power-automate/)
  
 ## Related articles
 
