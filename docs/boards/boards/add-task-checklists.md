@@ -44,7 +44,7 @@ Checklists are a feature of all Kanban boards, both product and portfolio backlo
 - Adding a checklist item automatically adds a parent-child link between the parent work item and the checklist item. 
 - For the product-level board:
 	- When **Bugs are managed with tasks**, they're available to add and track within a checklist. 
-	- When **Bugs are managed with requirements**, you can add tasks to bugs that are tracked on the board. Teams make this choice via Board settings, [**Working with bugs**](../../organizations/settings/show-bugs-on-backlog.md).** 
+	- When **Bugs are managed with requirements**, you can add tasks to bugs that are tracked on the board. Teams make this choice via Board settings, [**Working with bugs**](../../organizations/settings/show-bugs-on-backlog.md).
 - Marking any checklist item as "done" moves the work item **State** to done, closed, or completed.  
 - Teams can remove select checklist features by disabling them on the [**Annotations** tab of the Board settings](customize-cards.md#annotations).
 - Tasks or other child items that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
