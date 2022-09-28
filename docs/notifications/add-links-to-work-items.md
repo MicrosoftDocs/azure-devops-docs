@@ -19,34 +19,60 @@ ms.date: 09/28/2021
 When you link work items to other objects, you maintain an audit trail of related work for your team. All users can add work item links to internal Azure DevOps objects, like build and release pipelines, and external objects, like in Git and Team Foundation Version Control (TFVC) repositories.
 
 You can link work items to the following internal and external devops objects, as illustrated in the following table.
-::: moniker range=">= azure-devops-2020"
-|Area|Objects |Link to more information |
-|---------|-----|---------|
-|Build  |Found or integrated in build |
- [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md). |
-|Release     | Integrated in release        | 
-[Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) |
-|Repository   | Pull request, commit, comment, changeset, tag, versioned item | 
-- [Azure Boards-GitHub integration](../boards/github/index.md)
-- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
-- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)   |
-|Wiki | Wiki page                |  
-- [Add & edit wiki pages](../project/wiki/add-edit-wiki.md)
-- [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)       |
-::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
-|Area|Objects |Link to more information |
-|---------|-----|---------|
-|Build  |Found or integrated in build |
- [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md). |
-|Release     | Integrated in release        | 
-[Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) |
-|Repository   | Pull request, commit, comment, changeset, tag, versioned item | 
-- [Azure Boards-GitHub integration](../boards/github/index.md)
-- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
-- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)   |
+::: moniker range=">= azure-devops-2020"
+
+:::row:::
+   :::column span="1":::
+      **Objects**
+   :::column-end::: 
+   :::column span="3":::
+      **More information**  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Build (integrated or found in)
+   :::column-end::: 
+   :::column span="3":::
+      [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+:::column span="1":::
+      Release (integrated)
+   :::column-end::: 
+   :::column span="3":::
+      [Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+:::column span="1":::
+      Repository (pull request, commit, comment, changeset, tag, versioned item)
+   :::column-end::: 
+   :::column span="3":::
+      - [Azure Boards-GitHub integration](../boards/github/index.md)
+      - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+      - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range=">= azure-devops-2020"
+:::row:::
+:::column span="1":::
+      Wiki page
+   :::column-end::: 
+   :::column span="3":::
+      - [Add & edit wiki pages](../project/wiki/add-edit-wiki.md)
+      - [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page) 
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
+---
+
 ## Link work items to pull requests
 Link your work items to pull request commits, comments, description, and more.
 
