@@ -18,32 +18,34 @@ ms.date: 09/28/2021
 
 When you link work items to other objects, you maintain an audit trail of related work for your team. All users can add work item links to internal Azure DevOps objects, like build and release pipelines, and external objects, like in Git and Team Foundation Version Control (TFVC) repositories.
 
-You can link work items to the following internal and external devops objects, as illustrated in the following image.
-:::image type="content" source="media/add-link/conceptual-link-types-devops-objects.png" alt-text="Conceptual diagram of link types used to link work items to devops objects.":::
-
-For more information, we've included links to related articles:
+You can link work items to the following internal and external devops objects, as illustrated in the following table.
 ::: moniker range=">= azure-devops-2020"
-- **Wiki pages**:
-  - [Add & edit wiki pages](../project/wiki/add-edit-wiki.md)
-  - [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
-- **Build and release pipelines**:
-  - [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).
-  - [Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- **Git repositories**:
-  - [Azure Boards-GitHub integration](../boards/github/index.md)
-  - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
-  - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- **TFVC repositories**
+|Area|Objects |Link to more information |
+|---------|-----|---------|
+|Build  |Found or integrated in build |
+ [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md). |
+|Release     | Integrated in release        | 
+[Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) |
+|Repository   | Pull request, commit, comment, changeset, tag, versioned item | 
+- [Azure Boards-GitHub integration](../boards/github/index.md)
+- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)   |
+|Wiki | Wiki page                |  
+- [Add & edit wiki pages](../project/wiki/add-edit-wiki.md)
+- [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)       |
 ::: moniker-end
+
 ::: moniker range="<= azure-devops-2019"
-- **Build and release pipelines**:
-  - [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).
-  - [Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- **Git repositories**:
-  - [Azure Boards-GitHub integration](../boards/github/index.md)
-  - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
-  - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- **TFVC repositories**
+|Area|Objects |Link to more information |
+|---------|-----|---------|
+|Build  |Found or integrated in build |
+ [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md). |
+|Release     | Integrated in release        | 
+[Configure pipelines to support work tracking automation](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) |
+|Repository   | Pull request, commit, comment, changeset, tag, versioned item | 
+- [Azure Boards-GitHub integration](../boards/github/index.md)
+- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)   |
 ::: moniker-end
 ## Link work items to pull requests
 Link your work items to pull request commits, comments, description, and more.
