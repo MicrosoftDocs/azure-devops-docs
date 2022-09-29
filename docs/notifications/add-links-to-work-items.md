@@ -24,21 +24,17 @@ You can link work items to the following internal and external devops objects, a
    :::column span="1":::
       **Objects**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       **More information**  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      Build
-      - Found in build
-      - Integrated in build
-      - Branch
-      - Commit
-      - Pull request
+      **Build**
+  found in build, integrated in build, branch, commit, pull request
    :::column-end::: 
-   :::column span="3":::
+   :::column span="2":::
       - [Link work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
       - [Automatically link work items to builds or releases](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
    :::column-end:::
@@ -46,23 +42,20 @@ You can link work items to the following internal and external devops objects, a
 ---
 :::row:::
 :::column span="1":::
-      Release
-      - Integrated in release stage
+      **Release**
+  integrated in release stage
    :::column-end::: 
-   :::column span="3":::
-      [Automatically link work items to builds or releases](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+   :::column span="2":::
+      - [Automatically link work items to builds or releases](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
 :::column span="1":::
-      Repository
-      - Description
-      - Commit
-      - Comment
-      - and more
+      **Repository**
+  description, commit, comment
    :::column-end::: 
-   :::column span="3":::
+   :::column span="2":::
       - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
       - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
       - [Azure Boards-GitHub integration](../boards/github/index.md)
@@ -72,9 +65,9 @@ You can link work items to the following internal and external devops objects, a
 ::: moniker range=">= azure-devops-2020"
 :::row:::
 :::column span="1":::
-      Wiki page
+      **Wiki**
    :::column-end::: 
-   :::column span="3":::
+   :::column span="2":::
       - [Add & edit wiki pages](../project/wiki/add-edit-wiki.md)
       - [Wiki Markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page) 
    :::column-end:::
