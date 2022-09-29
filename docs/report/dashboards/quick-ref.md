@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/04/2022
+ms.date: 09/28/2022 
 ---
 
 
@@ -187,6 +187,13 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 
 ## Marketplace extensions 
 
+You can find additional functionality to add to your dashboard by installing Marketplace extensions. 
+
+- [Azure Application Insights Widgets](https://marketplace.visualstudio.com/items?itemName=ms-appinsights.ApplicationInsightsWidgets)
+- [Countdown Widget](https://marketplace.visualstudio.com/items?itemName=ALM-DevOpsRangers.CountdownWidget)
+- [GitHub Stats Widget](https://marketplace.visualstudio.com/items?itemName=YodLabs.yodlabs-githubstats)
+- [Work Item Details Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails)
+- [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
 - [Marketplace extension reports](https://marketplace.visualstudio.com/search?term=report&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
 - [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
@@ -195,4 +202,6 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 
 ## Related articles
 
+- [About dashboards, charts, reports, & widgets](overview.md)
+- [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Widget catalog](widget-catalog.md)  
