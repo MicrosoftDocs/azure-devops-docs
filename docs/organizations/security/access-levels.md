@@ -571,6 +571,7 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
  > [!NOTE]   
  > The `earlyAdopter` accountLicenseType is an internal value used solely by Microsoft.  
+ > Does this need to be on a Public Doc??. If available via CLI and not supported, can we deprecate this in future releases
 
 ::: moniker-end
 
