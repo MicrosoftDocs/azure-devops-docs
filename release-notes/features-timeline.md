@@ -30,6 +30,7 @@ Each feature is linked to an article where you can learn more about a particular
 
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. Many of these mechanisms are problematic from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
 
+Option 1
 ## Admin
 
 |Area |Released | 2022 Q4 | 2023 Q1 | 2023 Q2 | Future | 
@@ -38,6 +39,18 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 | Managed Identity and Service Principal support   |  | | Preview | General Availability | |
 | OpenID Connect support for secret-free deployments from Azure Pipelines   |  | | Preview | General Availability | |
 | Azure AD alignment     |  | | | | Full conditional access policy support. Proof of possession token support. Continuous access evaluation support.  |
+
+Option 2
+## Admin
+
+|Area | Feature | Released | 2022<br/> Q4 | 2023<br/> Q1 | 2023<br/> Q2 | Future | 
+|-----|---------|----------|---------|---------|---------|--------|
+| **Personal Access Token control plane and policies** |PAT Lifecycle APIs AAD-Tenant-Scoped Policies|:::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: | | | | |
+||[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)| |General Availability | |
+| **Managed Identity and Service Principal support**   | | | | Preview | General Availability | |
+| **OpenID Connect support for secret-free deployments from Azure Pipelines**   | | | | Preview | General Availability |
+| **Azure AD alignment**     | Full conditional access policy support. Proof of possession token support. Continuous access evaluation support. | | | | | :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false":::  |
+
 
 ---
 ## All features
