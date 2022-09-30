@@ -21,10 +21,25 @@ hide_comments: true
 
 ## Product roadmap
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. 
+This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. At the top you will find a list of our large multi-quarter initiatives and the features that they break down into. Further down you will find the full list of significant features we have planned. 
 
-Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The year and quarter tabs reflect when the feature will be available on Azure DevOps Services.
+Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The year and quarter tabs reflect when we expect the feature to be available on Azure DevOps Services.
 
+## Initiatives
+### Minimizing the risks associated with credential theft
+
+Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. Many of these mechanisms are problematic from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
+
+## Admin
+
+|Area |Released | 2022 Q4 | 2023 Q1 | 2023 Q2 | Future | 
+|----------|----------|----------|----------|----------|----------|
+| Personal Access Token control plane and policies  | PAT Lifecycle APIs AAD-Tenant-Scoped Policies  |[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)| | | |
+| Managed Identity and Service Principal support   |  | | Preview | General Availability | |
+| OpenID Connect support for secret-free deployments from Azure Pipelines   |  | | Preview | General Availability | |
+| Azure AD alignment     |  | | | | Full conditional access policy support. Proof of possession token support. Continuous access evaluation support.  |
+
+---
 ## All features
 #### [**2022 Q3**](#tab/2022-q3)
 **Admin**
@@ -74,28 +89,6 @@ Each feature is linked to an article where you can learn more about a particular
 - [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)
 - [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)
 
-
----
-## Initiatives
-### Initiative #1
-#### [**2022 Q3**](#tab/2022-q3)
-**Admin**
-
-**Boards**
-#### [**2022 Q4**](#tab/2022-q4)
-No features planned for release at this time.   
-#### [**Future**](#tab/future)
-
----
-### Initiative #2
-#### [**2022 Q3**](#tab/2022-q3)
-**Boards**
-
-**Pipelines**
-#### [**2022 Q4**](#tab/2022-q4)
-No features planned for release at this time.   
-#### [**Future**](#tab/future)
-No features planned for release at this time.   
 
 ---
 ## How to provide feedback
