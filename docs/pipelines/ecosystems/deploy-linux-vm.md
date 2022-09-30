@@ -40,16 +40,6 @@ Use the instructions in this article for any app that publishes a web deployment
 https://github.com/MicrosoftDocs/pipelines-javascript
 ```
 
-```
-https://github.com/azure-devops/fabrikam-node
-```
-> [!NOTE]
-> The app was built with [Yeoman](https://yeoman.io/learning/index.html) and uses Express, Bower, and Grunt. The app also has npm package dependencies.
-> The sample also contains a script that sets up Nginx and deploys the app. The script gets executed on the virtual machines - specifically, the script does the following tasks:
-> - Installs Node, Nginx, and PM2
-> - Configures Nginx and PM2
-> - Starts the Node app
-
 #### [Java](#tab/java)
 
 [!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)]
@@ -110,85 +100,85 @@ You need a CI build pipeline that publishes your web app. You also need a deploy
 
 5. Azure Pipelines analyzes your repository and recommends a suitable pipeline template.
 
-#### [Java](#tab/java)
-
-Select the **starter** template and copy this YAML snippet to build your Java project and run tests with Apache Maven. You'll add to this YAML in future steps. :
-
-```YAML
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-stages:
-- stage: Build
-  displayName: Build stage
-  jobs:  
-  - job: Build
-    displayName: Build Maven Project
-    steps:
-    - task: Maven@3
-      displayName: 'Maven Package'
-      inputs:
-        mavenPomFile: 'pom.xml'
-    - task: CopyFiles@2
-      displayName: 'Copy Files to artifact staging directory'
-      inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: '**/target/*.?(war|jar)'
-        TargetFolder: $(Build.ArtifactStagingDirectory)
-    - upload: $(Build.ArtifactStagingDirectory)
-      artifact: drop
-```
-
-For more information, review the steps in [Build your Java app with Maven](java.md) for creating a build.
-
-#### [JavaScript](#tab/javascript)
-
-Select the **starter** template and copy this YAML snippet to build a general Node.js project with npm. You'll add to this YAML in future steps.
-
-```YAML
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-stages:
-- stage: Build
-  displayName: Build stage
-  jobs:  
-  - job: Build
-    displayName: Build
-    steps:
-    - task: NodeTool@0
-      inputs:
-        versionSpec: '16.x'
-      displayName: 'Install Node.js'
-    - script: |
-        npm install
-        npm run build --if-present
-        npm run test --if-present
-      displayName: 'npm install, build and test'
-    - task: ArchiveFiles@2
-      displayName: 'Archive files'
-      inputs:
-        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-        includeRootFolder: false
-        archiveType: zip
-        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-        replaceExistingArchive: true
-    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-      artifact: drop
-```
-For more guidance, review the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build.
-
-- Select **Save and run** > **Commit directly to the main branch** > **Save and run**.
-
-  A new run starts. Wait for the run to complete.
-
-* * * 
+    #### [Java](#tab/java)
+    
+    Select the **starter** template and copy this YAML snippet to build your Java project and run tests with Apache Maven. You'll add to this YAML in future steps. :
+    
+    ```YAML
+    trigger:
+    - main
+    
+    pool:
+      vmImage: ubuntu-latest
+    
+    stages:
+    - stage: Build
+      displayName: Build stage
+      jobs:  
+      - job: Build
+        displayName: Build Maven Project
+        steps:
+        - task: Maven@3
+          displayName: 'Maven Package'
+          inputs:
+            mavenPomFile: 'pom.xml'
+        - task: CopyFiles@2
+          displayName: 'Copy Files to artifact staging directory'
+          inputs:
+            SourceFolder: '$(System.DefaultWorkingDirectory)'
+            Contents: '**/target/*.?(war|jar)'
+            TargetFolder: $(Build.ArtifactStagingDirectory)
+        - upload: $(Build.ArtifactStagingDirectory)
+          artifact: drop
+    ```
+    
+    For more information, review the steps in [Build your Java app with Maven](java.md) for creating a build.
+    
+    #### [JavaScript](#tab/javascript)
+    
+    Select the **starter** template and copy this YAML snippet to build a general Node.js project with npm. You'll add to this YAML in future steps.
+    
+    ```YAML
+    trigger:
+    - main
+    
+    pool:
+      vmImage: ubuntu-latest
+    
+    stages:
+    - stage: Build
+      displayName: Build stage
+      jobs:  
+      - job: Build
+        displayName: Build
+        steps:
+        - task: NodeTool@0
+          inputs:
+            versionSpec: '16.x'
+          displayName: 'Install Node.js'
+        - script: |
+            npm install
+            npm run build --if-present
+            npm run test --if-present
+          displayName: 'npm install, build and test'
+        - task: ArchiveFiles@2
+          displayName: 'Archive files'
+          inputs:
+            rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+            includeRootFolder: false
+            archiveType: zip
+            archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+            replaceExistingArchive: true
+        - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          artifact: drop
+    ```
+    For more guidance, review the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build.
+    
+    - Select **Save and run** > **Commit directly to the main branch** > **Save and run**.
+    
+      A new run starts. Wait for the run to complete.
+    
+    * * * 
 
 ## Define CD steps to deploy to the Linux VM
 
