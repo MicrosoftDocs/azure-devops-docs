@@ -209,8 +209,6 @@ You need a CI build pipeline that publishes your web app. You also need a deploy
    jobs:
    - deployment: VMDeploy
      displayName: Web deploy
-     pool:
-       vmImage: 'ubuntu-latest'
      environment:
        name: <environment name>
        resourceType: VirtualMachine
