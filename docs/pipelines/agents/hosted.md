@@ -48,8 +48,8 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 ### Recent updates
 
 * [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
-* [The Ubuntu 18.04 Actions runner image will begin deprecation on 8/8/22 and will be fully unsupported by 12/1/22](https://github.com/actions/runner-images/issues/6002).
-* [The macOS 10.15 Actions runner image will begin deprecation on 5/31/22 and will be fully unsupported by 8/30/22 in GitHub and by 9/30/22 in Azure DevOps](https://github.com/actions/runner-images/issues/5583).
+* [The Ubuntu 18.04 Actions runner image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/23](https://github.com/actions/runner-images/issues/6002).
+* [The macOS 10.15 Actions runner image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
 * [`windows-latest` workflows will use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
 * [`macOS-latest` workflows will use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
 * [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
