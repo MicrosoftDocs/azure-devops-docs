@@ -144,11 +144,11 @@ You can also configure fetch depth by setting the **Shallow depth** option in th
 
 2. Choose **YAML**, **Get sources**.
 
-    :::image type="content" source="../media/yaml-get-sources-shallow-fetch.png" alt-text="Screenshot of Shallow fetch setting.":::
+    :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Shallow fetch setting.":::
 
 3. Configure the Shallow fetch setting. Uncheck **Shallow fetch** to disable shallow fetch, or check the box and enter a fetch depth to enable shallow fetch.
 
-    :::image type="content" source="../media/get-sources-options.png" alt-text="Screenshot of options.":::
+    :::image type="content" source="../media/get-sources-options-shallow-fetch.png" alt-text="Screenshot of options.":::
 
 > [!NOTE]
 > If you explicitly set `fetchDepth` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI. Setting `fetchDepth: 0` fetches all history and overrides the **Shallow fetch** setting.
