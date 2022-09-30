@@ -144,7 +144,7 @@ You can also configure fetch depth by setting the **Shallow depth** option in th
 
 2. Choose **YAML**, **Get sources**.
 
-    :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources options.":::
+    :::image type="content" source="../media/yaml-get-sources-shalow-fetch.png" alt-text="Screenshot of Shallow fetch setting.":::
 
 3. Configure the Shallow fetch setting. Uncheck **Shallow fetch** to disable shallow fetch, or check the box and enter a fetch depth to enable shallow fetch.
 
