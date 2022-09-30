@@ -139,10 +139,15 @@ steps:
 You can also configure fetch depth by setting the **Shallow depth** option in the pipeline settings UI.
 
 1. Edit your YAML pipeline and choose **More actions**, **Triggers**.
+
     :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
+
 2. Choose **YAML**, **Get sources**.
+
     :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources options.":::
+
 3. Configure the Shallow fetch setting. Uncheck **Shallow fetch** t disable shallow fetch, or check the box and enter a fetch depth to enable shallow fetch.
+
     :::image type="content" source="../media/get-sources-options.png" alt-text="Screenshot of options.":::
 
 > [!NOTE]
