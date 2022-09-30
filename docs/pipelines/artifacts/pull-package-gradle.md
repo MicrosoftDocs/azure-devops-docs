@@ -106,7 +106,7 @@ Run the following command to build your project. Your build output should return
 gradle build
 ```
 
-## Use Gradle in Azure Pipeline
+## Use Gradle in Azure Pipelines
 
 1. Run the following command to create the Gradle wrapper **gradlew**. 
 
