@@ -119,7 +119,7 @@ Use that variable to populate the secret in the above Git command.
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
 > [!IMPORTANT]
-> New pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch.
+> New pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch. To check your pipeline, view the **Shallow fetch** setting in the pipeline settings UI as described in the following section.
 
 # [YAML](#tab/yaml/)
 
@@ -151,7 +151,7 @@ You can also configure fetch depth by setting the **Shallow depth** option in th
     :::image type="content" source="../media/get-sources-options.png" alt-text="Screenshot of options.":::
 
 > [!NOTE]
-> If you explicitly set `fetchDepth` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI.
+> If you explicitly set `fetchDepth` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI. Setting `fetchDepth: 0` fetches all history and overrides the **Shallow fetch** setting.
 
 # [Classic](#tab/classic/)
 
