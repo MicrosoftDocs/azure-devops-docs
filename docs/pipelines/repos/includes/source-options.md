@@ -118,6 +118,9 @@ Use that variable to populate the secret in the above Git command.
 
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
+> [!IMPORTANT]
+> New pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch.
+
 # [YAML](#tab/yaml/)
 
 You can configure the `fetchDepth` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
@@ -132,6 +135,18 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1)
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
+
+You can also configure fetch depth by setting the **Shallow depth** option in the pipeline settings UI.
+
+1. Edit your YAML pipeline and choose **More actions**, **Triggers**.
+    :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
+2. Choose **YAML**, **Get sources**.
+    :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources options.":::
+3. Configure the Shallow fetch setting. Uncheck **Shallow fetch** t disable shallow fetch, or check the box and enter a fetch depth to enable shallow fetch.
+    :::image type="content" source="../media/get-sources-options.png" alt-text="Screenshot of options.":::
+
+> [!NOTE]
+> If you explicitly set `fetchDepth` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI.
 
 # [Classic](#tab/classic/)
 
