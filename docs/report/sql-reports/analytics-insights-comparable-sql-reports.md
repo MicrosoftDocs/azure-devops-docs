@@ -300,7 +300,7 @@ The following table summarizes Analytics reports, widgets, and other tools that 
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Work tracking properties reference](../powerbi/analytics-fields-reference.md)
+> [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
 
 
 ## Related articles 

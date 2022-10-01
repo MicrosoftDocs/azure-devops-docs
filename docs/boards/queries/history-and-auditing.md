@@ -305,6 +305,19 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
+   Revised Date
+   :::column-end:::
+   :::column span="2":::
+   The date and time when a work item was revised or modified.
+
+   Reference name=System.RevisedDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+   Shared Parameter, Shared Step, Test Case
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    State Change Date
    :::column-end:::
    :::column span="2":::
