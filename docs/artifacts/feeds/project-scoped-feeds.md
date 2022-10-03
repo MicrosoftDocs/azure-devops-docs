@@ -14,6 +14,44 @@ monikerRange: '<= azure-devops'
 
 When creating a new Azure Artifacts feed, you can choose to scope your feed to your project or your organization depending on your needs. Feeds that are created through the web interface are project-scoped by default.
 
+## Create a new feed
+
+::: moniker range=">= azure-devops-2019"
+
+Follow the instructions below and select the appropriate scope for your need to create a project-scoped or an organization-scoped feed.
+
+1. Select **Artifacts**, and then select **Create Feed**.
+
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create feed button.":::
+
+1. Give your feed a **Name** and choose its **visibility**. Select **upstream sources** if you want to include packages from public registries.
+
+1. Select **Project** if you want to create a project-scoped feed, otherwise select **Organization**.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/proj-org-scoped-feed.png" alt-text="A screenshot showing how to create project and organization scoped feeds.":::
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Navigate to **Build & Release**, and then select **Packages**.
+
+    :::image type="content" source="../media/goto-feed-hub.png" alt-text="A screenshot showing how to navigate to feeds in TFS.":::
+
+1. Select the dropdown menu, and then select **New feed**.
+
+    :::image type="content" source="../media/new-feed-button.png" alt-text="A screenshot showing how to create a new feed in TFS.":::
+
+1. Give your feed a **Name**, a **Description**, and then select who can read and contribute to your feed. Select **Include external packages** if you want to use packages from public registries.
+
+1. Select **Create** when you're done.
+
+    :::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to set up a new feed in TFS.":::
+
+::: moniker-end
+
 ## Project-scoped vs organization-scoped feeds
 
 A project-scoped feed is scoped to a project instead of an organization. Here are the main differences between the two types of feeds:
@@ -36,44 +74,6 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 
 1. **Connection**:
     * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. See [Package permissions](./feed-permissions.md#pipelines-permissions) for more details.
-
-## Create a feed
-
-::: moniker range=">= azure-devops-2019"
-
-Follow the instructions below and select the appropriate scope for your need to create a project-scoped or an organization-scoped feed.
-
-1. Select **Artifacts**, and then select **Create Feed**.
-
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="A screenshot showing the create feed button.":::
-
-1. Give your feed a **Name** and choose its **visibility**. Select **upstream sources** if you want to include packages from public registries.
-
-1. Select **Project** if you want to create a project-scoped feed, otherwise select **Organization**.
-
-1. Select **Create** when you're done.
-
-:::image type="content" source="../media/proj-org-scoped-feed.png" alt-text="A screenshot showing how to create project and organization scoped feeds.":::
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-1. Navigate to **Build & Release**, and then select **Packages**.
-
-    :::image type="content" source="../media/goto-feed-hub.png" alt-text="A screenshot showing how to navigate to feeds in TFS.":::
-
-1. Select the dropdown menu, and then select **New feed**.
-
-    :::image type="content" source="../media/new-feed-button.png" alt-text="A screenshot showing how to create a new feed in TFS.":::
-
-1. Give your feed a **Name**, a **Description**, and then select who can read and contribute to your feed. Select **Include external packages** if you want to use packages from public registries.
-
-1. Select **Create** when you're done.
-
-:::image type="content" source="../media/new-feed-dialog-azure-tfs.png" alt-text="A screenshot showing how to set up a new feed in TFS.":::
-
-::: moniker-end
 
 ## Security policies
 
