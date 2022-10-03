@@ -39,7 +39,7 @@ Have the following permissions to change your organization's billing subscriptio
 
 3. Select **Billing** > **Change billing**. If you don't see the **Change billing** button, you don't have the [right permissions for access](#prerequisites).
 
-   ![Screenshot showing highlighted Change billing button.](media/shared/select-change-billing.png)
+   :::image type="content" source="media/shared/select-change-billing.png" alt-text="Screenshot showing highlighted Billing and Change billing buttons.":::
 
 4. Choose your Azure subscription, and then select **Save**.
 
