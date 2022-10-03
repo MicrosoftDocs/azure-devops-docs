@@ -4,7 +4,7 @@ description: Learn how to use the Azure CLI to create and deploy a Java applicat
 ms.topic: tutorial
 ms.author: jukullam
 author: JuliaKM
-ms.date: 11/23/2020
+ms.date: 10/03/2022
 monikerRange: 'azure-devops'
 ---
 
@@ -65,7 +65,7 @@ Before you begin, you need:
         vmImage: 'ubuntu-latest'
 
       steps:
-    - task: Maven@3
+    - task: Maven@4
       inputs:
         mavenPomFile: 'pom.xml'
         mavenOptions: '-Xmx3072m'
