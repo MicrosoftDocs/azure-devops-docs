@@ -16,13 +16,13 @@ ms.date: 10/03/2022
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to change the Azure subscription that your Azure DevOps organization uses for billing. You can [remove your billing subscription](#remove-your-billing-subscription) at any time.   
+Learn how to change the Azure subscription that your Azure DevOps organization uses for billing. You might do so if your organization is tied to a subscription of a user who's left the organization. In this case, you'd likely switch to a common subscription or remove the billing. You can [remove your billing subscription](#remove-your-billing-subscription) at any time.   
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
-To change or remove your billing subscription, have the following permissions.
+Have the following permissions to change your organization's billing subscription:
 
 - [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.
 - [Owner or Contributor permission for the Azure subscription](add-backup-billing-managers.md), which you can use to purchase.
@@ -57,6 +57,8 @@ To change or remove your billing subscription, have the following permissions.
 > 4. Use the new user account to link the organization to the target subscription.
 > or
 > Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
+
+Azure DevOps bills the newly saved subscription for your organization.
 
 ## Remove your billing subscription 
 
