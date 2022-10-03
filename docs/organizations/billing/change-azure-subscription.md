@@ -35,7 +35,7 @@ Have the following permissions to change your organization's billing subscriptio
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing highlighted Organization settings button.":::
 
 3. Select **Billing** > **Change billing**. If you don't see the **Change billing** button, you don't have the [right permissions for access](#prerequisites).
 
@@ -43,7 +43,7 @@ Have the following permissions to change your organization's billing subscriptio
 
 4. Choose your Azure subscription, and then select **Save**.
 
-   ![Screenshot showing Azure subscription selection.](media/shared/select-azure-subscription.png)
+   :::image type="content" source="media/shared/select-azure-subscription.png" alt-text="Screenshot showing Azure subscription selection.":::
 
 > [!NOTE]
 > If your organization has access to more than 50 subscriptions and you can't find the target subscription, do one of the following workarounds for this UI limitation:
