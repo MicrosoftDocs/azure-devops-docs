@@ -55,8 +55,8 @@ Have the following permissions to change your organization's billing subscriptio
 > 2. Grant the user account [Owner or Contributor permission](add-backup-billing-managers.md) to the target subscription in the Azure portal. 
 > 3. Add the user account to the [**Project Collection Administrators** group](../security/change-organization-collection-level-permissions.md) for the Azure DevOps organization. 
 > 4. Use the new user account to link the organization to the target subscription.
-> or
-> Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
+> 
+> - Or open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Azure DevOps bills the newly saved subscription for your organization.
 
