@@ -37,15 +37,11 @@ Have the following permissions to change your organization's billing subscriptio
 
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
-
-   ![Screenshot showing Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
-
-4. Select **Change billing**. If you don't see the **Change billing** button, you don't have the [right permissions for access](#prerequisites).
+3. Select **Billing** > **Change billing**. If you don't see the **Change billing** button, you don't have the [right permissions for access](#prerequisites).
 
    ![Screenshot showing highlighted Change billing button.](media/shared/select-change-billing.png)
 
-5. Choose your Azure subscription, and then select **Save**.
+4. Choose your Azure subscription, and then select **Save**.
 
    ![Screenshot showing Azure subscription selection.](media/shared/select-azure-subscription.png)
 

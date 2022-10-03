@@ -40,13 +40,10 @@ When your customer gains access to the CSP-based Azure subscription, they can [s
 
    ![Screenshot of highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3. Select **Billing** > **Change billing**.
 
-   ![Screenshot showing highlighted Billing selection in Organization settings.(../media/shared/select-billing-organization-settings.png)
-4. Select **Change billing**.
+   ![Screenshot of highlighted Billing and Change billing buttons.](../media/shared/select-change-billing.png)
 
-   ![Screenshot of highlighted Change billing button.](../media/shared/select-change-billing.png)
-
-5. Select your CSP Azure subscription that you want to be billed with, and then select **Save**.
+4. Select your CSP Azure subscription that you want to be billed with, and then select **Save**.
 
 Now, you're paying for Azure DevOps with your CSP-based Azure subscription.
