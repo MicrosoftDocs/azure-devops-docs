@@ -3,7 +3,7 @@ title: Add a widget to a team dashboard
 titleSuffix: Azure DevOps
 description: Learn how to select and configure widgets that you add to a team dashboard in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
 ms.author: kaelli
 author: KathrynEE

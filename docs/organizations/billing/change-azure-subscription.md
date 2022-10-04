@@ -3,7 +3,7 @@ title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18, contperf-fy21q1, freshness-fy22q1, contperf-fy22q3
 description: Unlink the Azure subscription that your organization uses for billing and go back to free limits immediately.
-ms.technology: devops-billing
+ms.subservice: azure-devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.topic: how-to
 ms.author: chcomley

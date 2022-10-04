@@ -3,7 +3,7 @@ title: Tasks that support backlogs, boards, & plans in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about tasks that support backlogs, Kanban boards, taskboards, and plans in Azure Boards. 
 ms.custom: "boards-backlogs, seodec18" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.author: kaelli
 author: KathrynEE

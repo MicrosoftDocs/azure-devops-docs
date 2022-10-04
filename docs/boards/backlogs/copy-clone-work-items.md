@@ -3,7 +3,7 @@ title: Copy or clone stories, issues, or other work items in Azure Boards
 titleSuffix: Azure Boards  
 description: Learn how to copy or clone user stories, issues, bugs, tasks, or other work items in Azure Boards. 
 ms.custom: "seodec18, cross-project"   
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.author: kaelli
 author: KathrynEE 

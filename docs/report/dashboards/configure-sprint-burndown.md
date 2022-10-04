@@ -3,7 +3,7 @@ title: View and configure sprint burndown
 titleSuffix: Azure DevOps   
 description: Learn how to configure the sprint burndown in-context chart or widget to track team progress in Azure DevOps.
 ms.custom: dashboards
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

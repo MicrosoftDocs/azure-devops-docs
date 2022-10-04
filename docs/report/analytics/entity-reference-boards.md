@@ -2,7 +2,7 @@
 title: Work tracking metadata reference for Analytics 
 titleSuffix: Azure DevOps
 description: Properties, enumerated types, and members metadata reference for the Analytics service for Azure Boards.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -33,7 +33,7 @@ When querying Analytics for work tracking data, use one of the following entity 
 Use other entity types, such as `Area`, `Iteration`, `Project`, `Team`, or other entities to filter data or select properties to report on. For a summary of example reports, see [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
  
 > [!NOTE]  
-> To generate status and trend reports on test-specific work item types, query the `WorkItems` and `WorkItemSnapshot` entity types and filter based on the work item type. For information on test runs, test results, or other test data, query the `TestRuns`, `TestPoints`, `TestResultsDaily`, `TestSuite` or `TestPointHistorySnapshot` entity types. To learn more, see [Entities and properties reference for Azure Test Plans](../analytics/entity-reference-test-plans.md).
+> To generate status and trend reports on test-specific work item types, query the `WorkItems` and `WorkItemSnapshot` entity types and filter based on the work item type. For information on test runs, test results, or other test data, query the `TestRuns`, `TestPoints`, `TestResultsDaily`, `TestSuite` or `TestPointHistorySnapshot` entity types. To learn more, see [Test metadata reference for Azure DevOps](entity-reference-test-plans.md).
 
 |EntityType  | EntitySet  | Description | 
 |------------|-------------|-------------|  

@@ -3,7 +3,7 @@ title: How we store your credentials
 titleSuffix: Azure DevOps Services 
 description: Learn how Microsoft stores your credentials for Azure DevOps
 ms.topic: article
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

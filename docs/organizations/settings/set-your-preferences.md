@@ -3,7 +3,7 @@ title: Set user preferences
 titleSuffix: Azure DevOps
 ms.custom: contperf-fy22q4
 description: Learn how to change a user's picture, preferred email, and other user preferences from the user's Azure DevOps profile.
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

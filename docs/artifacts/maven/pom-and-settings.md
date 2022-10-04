@@ -1,7 +1,7 @@
 ---
 title: Set up your Maven project
 description: How to set up Maven client
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.assetid: 944f45ee-baa3-45ba-8467-5e7ab2bc47cf
 ms.topic: conceptual
 ms.date: 10/04/2022

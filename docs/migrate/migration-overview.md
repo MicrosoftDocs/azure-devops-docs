@@ -2,7 +2,7 @@
 title: Azure DevOps Server to Services Migration overview
 description: Overview of the high fidelity migration process from Server to Services
 ms.topic: overview
-ms.technology: devops-migrate
+ms.subservice: azure-devops-migrate
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.author: kaelli
 author: KathrynEE

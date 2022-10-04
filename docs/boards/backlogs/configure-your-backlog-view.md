@@ -3,7 +3,7 @@ title: Configure your backlog view in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to set your backlog level, view options, and column options to support your project management tasks in Azure Boards and Azure DevOps.   
 ms.custom: boards-backlogs
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to

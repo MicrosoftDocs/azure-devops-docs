@@ -1,8 +1,8 @@
-﻿---
+---
 title: Deprecation of the Work Item Tracking (WIT) and Test Client OM
 titleSuffix: Azure DevOps
 description: With deprecation of the WIT Client OM, you need to update your code to use REST APIs
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 2C636EA8-6A10-48C1-9620-F792915EBB65
 ms.author: liho
 author: KathrynEE

@@ -3,7 +3,7 @@ title: What is Azure Boards? Tools to manage software development projects.
 titleSuffix: Azure Boards
 description: Learn about the Agile tools Azure Boards provides. 
 ms.custom: boards-get-started, contperf-fy22q2
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE

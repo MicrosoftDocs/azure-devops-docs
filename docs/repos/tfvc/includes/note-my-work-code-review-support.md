@@ -1,11 +1,11 @@
 ---
-ms.technology: devops-code-tfvc
-ms.prod: devops
+ms.service: azure-devops-repos
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
 ms.date: 07/07/2022
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 > [!NOTE]  

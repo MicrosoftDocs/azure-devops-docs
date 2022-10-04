@@ -2,7 +2,6 @@
 title: New Boards Hub public preview.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 4/20/2022
 description: New Boards Hub is now available in public preview.  
 ---

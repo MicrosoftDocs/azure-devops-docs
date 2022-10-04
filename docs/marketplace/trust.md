@@ -2,7 +2,7 @@
 title: Trust a publisher in the Marketplace | Azure DevOps
 description: Learn how to make an informed decision, trusting an extension or publisher in the Marketplace
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
-ms.technology: devops-marketplace
+ms.subservice: azure-devops-marketplace
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

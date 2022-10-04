@@ -1,10 +1,10 @@
 ---
-ms.technology: devops-code-git
-ms.prod: devops
+ms.service: azure-devops-repos
 ms.topic: include
 ms.author: kaelli  
 author: KathrynEE
 ms.date: 02/23/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 

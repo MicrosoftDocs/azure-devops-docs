@@ -1,7 +1,7 @@
 ---
 title: Symbol files
 description: Working with symbols
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07

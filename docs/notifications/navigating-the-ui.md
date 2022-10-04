@@ -2,7 +2,7 @@
 title: Navigating the notifications UI
 titleSuffix: Azure DevOps 
 description: Go to and explore the notifications pages in Azure DevOps.  
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.custom: quarterly-update
 ms.reviewer: wismythe
 ms.author: chcomley

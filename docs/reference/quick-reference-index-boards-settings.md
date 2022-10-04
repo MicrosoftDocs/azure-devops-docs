@@ -3,7 +3,7 @@ title: Quick reference index to Azure Boards settings
 titleSuffix: Azure Boards
 description: Index to concepts and tasks for configuring and customizing Azure Boards.
 ms.custom: quick-reference-index
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:
 ms.topic: reference
 ms.author: kaelli

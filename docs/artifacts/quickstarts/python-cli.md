@@ -1,7 +1,7 @@
 ---
 title: Publish and consume packages from the CLI
 description: Publish and consume Python packages from the command-line interface
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 03/10/2021
 monikerRange: '<= azure-devops'

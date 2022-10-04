@@ -2,7 +2,6 @@
 title: Move work items to a column or swimlane from the work item action menu.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 10/4/2022
 description: With this update, move work items to a column or swimlane from the work item action menu.
 ---

@@ -2,7 +2,7 @@
 title: Import and export categories
 titleSuffix: Azure DevOps  
 description: Import and export categories defined for an Azure DevOps project 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.topic: reference

@@ -2,7 +2,7 @@
 title: Get insights across exploratory test sessions
 description: Manual and exploratory testing - get insights with exploratory testing across your test sessions by using the Microsoft Test & Feedback extension
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x

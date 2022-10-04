@@ -3,10 +3,11 @@ title: Merge strategies and squash merge
 titleSuffix: Azure Repos
 description: Squash merge pull requests to keep a linear Git history. Learn about multiple merge base issues and prevention.
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 11/05/2021
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Merge strategies and squash merge

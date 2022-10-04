@@ -3,7 +3,7 @@ title: Manage Scrum process template artifacts
 titleSuffix: Azure Boards
 ms.custom: work-items
 description: Learn how to use Scrum process objects to plan and track work, monitor progress, and trends when connecting to Azure Boards and Azure DevOps.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
 ms.author: kaelli

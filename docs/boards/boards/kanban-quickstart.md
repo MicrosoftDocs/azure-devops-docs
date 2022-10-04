@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to use the Kanban board to plan and track work in Azure Boards. 
 ms.custom: boards-kanban 
 ms.topic: quickstart
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
