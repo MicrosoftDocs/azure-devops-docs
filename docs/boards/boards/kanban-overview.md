@@ -3,7 +3,7 @@ title: Collaborate with others by managing work items in Azure Boards
 titleSuffix: Azure Boards
 description: Use the web portal to support Kanban, plan and track work. Also, learn to monitor progress in Azure Boards and Azure DevOps.   
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE

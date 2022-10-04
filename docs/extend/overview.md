@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Developing extensions for Azure DevOps
 description: Overview of creating extensions for Azure DevOps.
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22

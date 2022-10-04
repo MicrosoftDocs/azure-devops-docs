@@ -2,7 +2,7 @@
 title: Manage teams, configure team tools 
 titleSuffix: Azure DevOps
 description: Administrators learn how access team tools, add users, configure backlogs, iteration paths, Kanban boards, and more in Azure DevOps. 
-ms.technology: devops-settings 
+ms.subservice: azure-devops-settings
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

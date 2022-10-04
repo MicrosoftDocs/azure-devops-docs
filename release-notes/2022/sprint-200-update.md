@@ -2,7 +2,6 @@
 title: Updates to Azure File Copy task.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 2/28/2022
 description: With this update, we are rolling out a new version of Azure File Copy task.  
 ---

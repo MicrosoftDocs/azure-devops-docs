@@ -2,7 +2,6 @@
 title: Azure Pipelines REST API and other security improvements.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 7/29/2022
 description: Whit this update, we improved the Azure Pipelines REST API security.  
 ---

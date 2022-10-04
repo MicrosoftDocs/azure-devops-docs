@@ -2,7 +2,7 @@
 title: Select backlog navigation levels
 titleSuffix: Azure DevOps
 description: Choose which backlog and portfolio backlogs are active for your team in Azure DevOps. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
 ms.author: kaelli
 author: KathrynEE

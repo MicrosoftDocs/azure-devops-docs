@@ -1,7 +1,7 @@
 ---
 title: Azure Artifacts overview
 description: Learn about Azure Artifacts offering
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn

@@ -3,10 +3,11 @@ title: Properties Command
 titleSuffix: Azure Repos
 description: Properties Command
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

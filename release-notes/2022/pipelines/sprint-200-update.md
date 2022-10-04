@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Pipelines Sprint 200 Update
 description: See the Sprint 200 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 2/28/2022
 ---
 

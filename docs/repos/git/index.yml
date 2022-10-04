@@ -6,12 +6,12 @@ summary: Collaborate on code development using free Git public and private repos
 metadata:
   title: Azure Repos Git Documentation
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
-  ms.prod: devops
-  ms.technology: devops-code-git
+  ms.service: azure-devops-repos
   ms.topic: landing-page
   ms.author: sdanie
   author: steved0x
   ms.date: 06/15/2021
+  ms.subservice: azure-devops-repos-git
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

@@ -3,7 +3,7 @@ title: Sign up for Azure DevOps
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18, contperf-fy22q3, peer-review-fy23 , content-perf-fy23q2 
 description: Sign up for Azure DevOps with a Microsoft or GitHub account.
-ms.technology: devops-new-user 
+ms.subservice: azure-devops-new-user
 ms.topic: how-to 
 ms.author: chcomley
 author: chcomley

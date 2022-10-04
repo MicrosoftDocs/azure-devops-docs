@@ -2,7 +2,7 @@
 title: Events, subscriptions, and notifications
 titleSuffix: Azure DevOps 
 description: Learn about events and subscriptions in Azure DevOps, and how they're used to create notifications to users.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

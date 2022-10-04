@@ -3,7 +3,7 @@ title: View of features and epics on the Feature Timeline
 titleSuffix: Azure DevOps
 description: Learn how to manage portfolios with a calendar view of features and epics on the Feature Timeline. 
 ms.custom: extensions
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE

@@ -2,7 +2,7 @@
 title:  Analytics widgets 
 titleSuffix: Azure DevOps
 description: Learn about the widgets based on Analytics data that you can add to a dashboard in Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -2,7 +2,7 @@
 title: Pipeline outcome summary sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline outcome summary Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
 ms.custom: powerbisample

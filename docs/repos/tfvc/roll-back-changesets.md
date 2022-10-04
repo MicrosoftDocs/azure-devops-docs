@@ -3,10 +3,11 @@ title: Roll back changesets
 titleSuffix: Azure Repos
 description: Roll back changesets
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

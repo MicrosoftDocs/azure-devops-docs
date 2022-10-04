@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.author: chcomley
 author: chcomley
 ms.topic: include

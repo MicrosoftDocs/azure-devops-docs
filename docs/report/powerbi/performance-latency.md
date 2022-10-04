@@ -2,7 +2,7 @@
 title: Performance and latency with Analytics
 titleSuffix: Azure DevOps   
 description: Learn about how data is updated and time requirements associated with querying Analytics. 
-ms.technology: devops-analytics 
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

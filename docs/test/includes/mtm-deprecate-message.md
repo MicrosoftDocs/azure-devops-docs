@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.date: 12/06/2021 
 ---
 

@@ -3,7 +3,7 @@ title: Use personal access tokens
 titleSuffix: Azure DevOps
 ms.custom: contperf-fy20q4, contperf-fy22q3
 description: Learn how to create and manage personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley

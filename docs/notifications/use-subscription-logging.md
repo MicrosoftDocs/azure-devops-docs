@@ -2,7 +2,7 @@
 title: How to enable subscription logging
 titleSuffix: Azure DevOps 
 description: How to use subscription logging to troubleshoot Azure DevOps Services notifications
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

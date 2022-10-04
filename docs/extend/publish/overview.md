@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Package, publish, unpublish extensions | Azure DevOps
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps or Team Foundation Server (TFS).
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17

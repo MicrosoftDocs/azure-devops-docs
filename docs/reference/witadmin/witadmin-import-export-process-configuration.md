@@ -2,7 +2,7 @@
 title: Import or export process configuration  
 titleSuffix: Azure DevOps
 description: Modify the display of the Azure Boards pages that you view through the web portal 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.author: kaelli

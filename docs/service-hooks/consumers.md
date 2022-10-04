@@ -3,7 +3,7 @@ title: Service hook consumers for Azure DevOps Services
 description: Service hooks consumer documentation for Azure DevOps Services
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley

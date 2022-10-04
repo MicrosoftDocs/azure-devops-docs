@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 10/15/2021

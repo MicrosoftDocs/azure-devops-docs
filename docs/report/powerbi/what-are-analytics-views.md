@@ -2,7 +2,7 @@
 title: What are Analytics views?
 titleSuffix: Azure DevOps
 description: Learn how Analytics views work with Azure DevOps and Power BI integration. 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

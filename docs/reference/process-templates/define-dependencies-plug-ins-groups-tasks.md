@@ -2,7 +2,7 @@
 title: Define dependencies for task groups & tasks 
 titleSuffix: TFS
 description: Add a task group or a task to a plug-in file process template to declare dependencies in Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 235eaf03-7012-4c7d-8b16-138f3467a168
 ms.author: kaelli
 author: KathrynEE

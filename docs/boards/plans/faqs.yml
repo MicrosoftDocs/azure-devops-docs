@@ -4,7 +4,7 @@ metadata:
   description: Learn how to get answers to common questions about working with Delivery Plans. 
   titleSuffix: Azure Boards
   ms.custom: boards-queries
-  ms.technology: devops-agile
+  ms.service: azure-devops-boards
   ms.author: kaelli
   author: KathrynEE
   ms.topic: faq

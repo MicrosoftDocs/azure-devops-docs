@@ -2,7 +2,7 @@
 title: Add tabs on query results | Extensions for Azure DevOps
 description: Extend Azure DevOps with your own query results tab.
 ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley

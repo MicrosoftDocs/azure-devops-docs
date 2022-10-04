@@ -3,10 +3,11 @@ title: Workspace TFVC command
 titleSuffix: Azure Repos
 description: Workspace command
 ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Workspace command (Team Foundation Version Control)

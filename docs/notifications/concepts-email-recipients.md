@@ -2,7 +2,7 @@
 title: How notification email recipients get determined
 titleSuffix: Azure DevOps 
 description: Describes how email recipients are determined for notifications and events in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

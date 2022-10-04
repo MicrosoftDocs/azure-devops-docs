@@ -2,7 +2,7 @@
 title: Security terms and acronyms defined
 titleSuffix: Azure DevOps
 description: Key definitions for objects and items used to authenticate and manage users and groups in Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: conceptual 
 ms.custom: has-adal-ref

@@ -2,7 +2,7 @@
 title: Capability Maturity Model Integration (CMMI), background notes
 titleSuffix: Azure Boards
 description: Background notes on the Capability Maturity Model Integration (CMMI) for Development 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
 ms.topic: conceptual
 ms.author: kaelli 

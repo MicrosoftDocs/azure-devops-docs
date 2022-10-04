@@ -3,7 +3,7 @@ title: Copy a dashboard
 titleSuffix: Azure DevOps  
 description: Learn how to copy a project or team dashboard in Azure DevOps. 
 ms.custom: "dashboards, cross-project" 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

@@ -1,7 +1,7 @@
 ---
 title: Get started with Maven packages
 description: learn how to publish and download Maven artifacts
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 05/06/2022

@@ -3,7 +3,7 @@ title: Learn how to create high-performing work item queries
 titleSuffix: Azure Boards
 description: Learn how to create high-performing work item queries in Azure Boards. 
 ms.custom: "boards-queries, linked-from-support"  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

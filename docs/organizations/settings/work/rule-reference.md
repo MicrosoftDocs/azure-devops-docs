@@ -3,7 +3,7 @@ title: Default rule reference
 titleSuffix: Azure DevOps 
 description: Default rules and the rule engine  
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops"

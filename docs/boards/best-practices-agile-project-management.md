@@ -2,7 +2,7 @@
 title: Best practices for Agile project management 
 titleSuffix: Azure Boards
 description: Get started guide for project managers new to Azure Boards to plan and track their projects  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: best-practice
 ms.custom: cross-project  
 ms.author: kaelli

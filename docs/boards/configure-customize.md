@@ -2,7 +2,7 @@
 title: Understand options and choices for configuring and customizing work tracking  customization
 titleSuffix: Azure Boards
 description: Learn about choices to customize or configure Azure Boards and the impact on tools available
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: overview
 ms.assetid: 
 ms.author: kaelli

@@ -3,7 +3,7 @@ title: Navigate in Visual Studio Team Explorer
 titleSuffix: Azure DevOps 
 description: Learn how to download Azure DevOps clients and navigate in Team Explorer 
 keywords: Download Azure DevOps clients 
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: kaelli
 author: KathrynEE

@@ -3,8 +3,7 @@ ms.topic: include
 author: ntrogh
 ms.author: nicktrog
 ms.date: 01/21/2022
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML
