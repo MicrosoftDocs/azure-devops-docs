@@ -231,7 +231,7 @@ Aggregation annotations define the set of [transformations](./odata-supported-fe
 - [Organization and project-scoped queries](account-scoped-queries.md).
 - [Data available from Analytics](../powerbi/data-available-in-analytics.md) 
 - [Query work tracking data using Analytics](analytics-recipes.md)
-- [Work tracking properties reference](../powerbi/analytics-fields-reference.md) 
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
 
 
 ## Related resources 

@@ -294,7 +294,7 @@ Some tasks or features aren't available when you connect to a later version of A
 
 ### Determine your platform version
 
-See [Feedback and support](../../user-guide/provide-feedback.md#platform-version).
+See [Look up your Azure DevOps platform and version](../../user-guide/lookup-platform-version.md).
 
 ## Next steps
 
