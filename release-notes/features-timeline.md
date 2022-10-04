@@ -30,6 +30,8 @@ Each feature is linked to an article where you can learn more about a particular
 
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. Many of these mechanisms are problematic from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
 
+Azure DevOps also supports storing credentials in the form of service connections. These credentials are used in pipelines to gain access to production environments. Unintended or malicious leakage of these credentials can compromise production environments.
+
 Option 1
 ## Admin
 
@@ -39,6 +41,7 @@ Option 1
 | Managed Identity and Service Principal support   |  | | Preview | General Availability | |
 | OpenID Connect support for secret-free deployments from Azure Pipelines   |  | | Preview | General Availability | |
 | Azure AD alignment     |  | | | | Full conditional access policy support. Proof of possession token support. Continuous access evaluation support.  |
+| Secret-free service connections using Open ID Connect |  |  |  Private Preview | Preview | General Availability |
 
 Option 2
 ## Admin
@@ -50,6 +53,7 @@ Option 2
 | **Managed Identity and Service Principal support**   | | | | Preview | General Availability | |
 | **OpenID Connect support for secret-free deployments from Azure Pipelines**   | | | | Preview | General Availability |
 | **Azure AD alignment**     | Full conditional access policy support. Proof of possession token support. Continuous access evaluation support. | | | | | :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false":::  |
+| **Secret-free service connections using Open ID Connect | | | | Private preview | Preview | General Availability
 
 
 ---
@@ -80,7 +84,6 @@ Option 2
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317 data-raw-source="[Add `Move to Column` and `Move to Swimlane` functionality to core product](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317)">Add `Move to Column` and `Move to Swimlane` functionality to core product</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204 data-raw-source="[Ability to change link type from Web UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204)">Ability to change link type from Web UI</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203 data-raw-source="[Save Comment Improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203)">Save Comment Improvements</a></td><td>Boards</td><td>Future</td>      
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713 data-raw-source="[Credential-free pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713)">Credential-free pipelines</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423 data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960 data-raw-source="[Pull Request widget to allow for the selection of many repos](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960)">Pull Request widget to allow for the selection of many repos</a></td><td>Reporting</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978962 data-raw-source="[Rollup columns for query results](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978962)">Rollup columns for query results</a></td><td>Reporting</td><td>Future</td>
@@ -95,6 +98,7 @@ Option 2
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td>   
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713 data-raw-source="[Secret-free service connections](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713)">Secret-free service connections</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>TBD</td>
     </tr>
