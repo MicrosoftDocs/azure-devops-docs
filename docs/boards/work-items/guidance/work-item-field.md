@@ -192,9 +192,10 @@ Values in parenthesis indicate the following criteria:
    - [Resolved By](../../queries/query-by-workflow-changes.md#fields)
    - [Resolved Date](../../queries/query-by-workflow-changes.md#fields)
    - [Resolved Reason](../../queries/query-by-workflow-changes.md#fields)
+   - [Rev](../../queries/history-and-auditing.md#fields) (System)
    - [Reviewed By](guidance-code-review-feedback-field-reference.md#fields)
    - [Reviewed Date](guidance-code-review-feedback-field-reference.md#fields)
-   - [Rev](../../queries/history-and-auditing.md#fields) (System)
+   - [Revised Date](../../queries/history-and-auditing.md#fields) (System, TCM)
    - [Risk](../../queries/planning-ranking-priorities.md#fields) (Agile)
    - [Root Cause](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#fields) (CMMI)
    
