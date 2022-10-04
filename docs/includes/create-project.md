@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.subservice: azure-devops-projects
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm

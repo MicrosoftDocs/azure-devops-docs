@@ -2,7 +2,7 @@
 title: Glossary for public projects in Azure DevOps
 titleSuffix: Azure DevOps Services Public Project
 description: Description of key concepts and terms 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.reviewer:
 ms.author: chcomley

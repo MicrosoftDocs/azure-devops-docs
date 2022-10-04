@@ -3,7 +3,7 @@ title: Find the best tool to add or update stories, bugs, issues, and other work
 titleSuffix: Azure Boards
 description: Learn which tool is best to add or update user stories, bugs, issues, and other work items in Azure Boards. 
 ms.custom: work-items, seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.topic: best-practice
 ms.author: kaelli

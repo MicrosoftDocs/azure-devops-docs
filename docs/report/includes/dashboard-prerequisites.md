@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.topic: include
 ms.date: 04/04/2022
 ---

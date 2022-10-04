@@ -3,7 +3,7 @@ title: Share information in work items and social tools in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to easily share information about work items, queries, and more in Azure Boards.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
 ms.author: kaelli
 author: KathrynEE

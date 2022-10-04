@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure DevOps Sprint 188 Update
 description: See the Sprint 188 feature updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 06/17/2021
 ---
 

@@ -3,7 +3,7 @@ title: Switch project, repository, or team
 titleSuffix: Azure DevOps
 description: Open another project or repository for Azure DevOps
 ms.custom: "navigation, cross-project, cross-service"
-ms.technology: devops-collab 
+ms.subservice: azure-devops-projects 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to

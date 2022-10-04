@@ -2,7 +2,7 @@
 title: Track progress and individual items on the Taskboard
 titleSuffix: Azure Boards and TFS
 description: Learn how to implement scrum by using the sprint dashboard in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: kaelli
 author: KathrynEE

@@ -3,10 +3,11 @@ title: Create a new Git repo
 titleSuffix: Azure Repos
 description: Learn how to create a new Git repo using Visual Studio or Git command line and connect it to Azure Repos.
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 #  Create a new Git repo

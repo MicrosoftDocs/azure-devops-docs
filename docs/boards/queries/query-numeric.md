@@ -3,7 +3,7 @@ title: Query by numeric fields based on effort, schedules, and story points
 titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: kaelli
 author: KathrynEE

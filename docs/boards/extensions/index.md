@@ -3,7 +3,7 @@ title: Extensions for Azure Boards
 description: Learn about Azure Boards extensions that can help you customize or enhance your default experience.
 titleSuffix: Azure Boards 
 ms.custom: extensions
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE

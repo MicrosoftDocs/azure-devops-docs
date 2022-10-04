@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include

@@ -2,7 +2,7 @@
 title: Troubleshooting Excel workbooks integration to SharePoint
 titleSuffix: TFS
 description: Learn how to resolve an error that occurs during the integration of SharePoint and an Excel workbook. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: fdb0f881-7ead-45f5-85c0-189a86d29d7a
 ms.author: kaelli
 author: KathrynEE

@@ -3,7 +3,7 @@ title: Configure a chart for work items widget
 titleSuffix: Azure DevOps  
 description: Learn how to configure a chart for work items widgets to view status, progress, and trend charts in a dashboard based on a flat-based query in Azure DevOps.
 ms.custom: dashboards  
-ms.technology: devops-analytics 
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to

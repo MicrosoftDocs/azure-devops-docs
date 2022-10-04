@@ -3,7 +3,7 @@ title: Add features & epics to a Kanban board
 titleSuffix: Azure Boards
 description: Quickly define and view the status of child features, user stories, or backlog items using Kanban features or epic boards in Azure Boards and Azure DevOps.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: tutorial
 ms.author: kaelli

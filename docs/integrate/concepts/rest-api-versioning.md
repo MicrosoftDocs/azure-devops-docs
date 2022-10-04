@@ -2,7 +2,7 @@
 title: REST API versioning for Azure DevOps
 description: Learn how versioning works for REST APIs for Azure DevOps.
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley

@@ -3,7 +3,7 @@ ms.topic: how-to
 title: Authorize access to REST APIs with OAuth 2.0
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley

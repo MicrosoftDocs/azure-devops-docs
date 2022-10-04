@@ -2,7 +2,7 @@
 title: Use feed views to share packages
 description: How to use feed views to share your packages
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 08/25/2022
 monikerRange: '<= azure-devops'

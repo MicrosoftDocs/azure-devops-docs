@@ -2,7 +2,7 @@
 title: Set permissions and access for manual testing
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to test plans, test suites, test cases, and other test-related features.
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

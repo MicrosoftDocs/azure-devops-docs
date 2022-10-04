@@ -2,7 +2,7 @@
 title: Lead time and Cycle time sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate Lead time and Cycle time Power BI reports.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE

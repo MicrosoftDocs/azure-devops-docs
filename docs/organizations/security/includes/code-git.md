@@ -1,9 +1,10 @@
 ---
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
 ms.date: 04/15/2021
+ms.subservice: azure-devops-repos-git
 ---
 
 <a name="pcbs-has-read-by-default"></a>

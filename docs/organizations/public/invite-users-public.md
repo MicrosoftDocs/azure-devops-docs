@@ -2,7 +2,7 @@
 title: Invite users to contribute to public project
 titleSuffix: Azure DevOps Services Public Project  
 description: Invite others to contribute to your public project  
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.reviewer:
 ms.author: chcomley

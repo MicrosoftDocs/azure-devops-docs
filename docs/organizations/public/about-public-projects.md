@@ -2,7 +2,7 @@
 title: About public projects 
 titleSuffix: Azure DevOps Services
 description: Understand the benefits of creating a public project, provide anonymous users ability to view your projects.
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.author: chcomley
 author: chcomley

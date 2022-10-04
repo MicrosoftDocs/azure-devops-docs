@@ -3,10 +3,11 @@ title: Get started with Git and Visual Studio
 titleSuffix: Azure Repos
 description: Learn how to get started developing your code with Azure Repos, Visual Studio, and Git command-line.
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 12/10/2021
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Get started with Git in Azure Repos

@@ -3,10 +3,11 @@ title: Branches Command
 titleSuffix: Azure Repos
 description: Branches Command
 ms.assetid: dae78c90-c65a-444d-96cb-84027b91ad4a
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

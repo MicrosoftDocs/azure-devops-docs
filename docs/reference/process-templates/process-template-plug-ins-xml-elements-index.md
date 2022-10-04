@@ -2,7 +2,7 @@
 title: Process template plug-ins index
 titleSuffix: Azure DevOps & TFS
 description: Uses to look up the syntax structure and find examples of how to use each element.
-ms.technology: devops-agile 
+ms.service: azure-devops-boards
 ms.assetid: ea3c836a-438b-4d28-9fa4-e29281a96db6
 ms.author: kaelli
 author: KathrynEE

@@ -3,10 +3,11 @@ title: Manage branches in your Git repo
 titleSuffix: Azure Repos
 description: Find your work and search for branches using the branches page in Azure DevOps Services/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 02/23/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Manage branches

@@ -7,8 +7,7 @@ metadata:
   title: Azure Test Plans documentation
   titleSuffix: Azure DevOps 
   description: Test your software using using manual and exploratory testing services to improve your overall code quality. 
-  ms.prod: devops 
-  ms.technology: devops-test
+  ms.service: azure-devops-test-plans
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
   author: KathrynEE 

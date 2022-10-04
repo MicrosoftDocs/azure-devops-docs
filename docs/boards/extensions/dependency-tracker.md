@@ -3,7 +3,7 @@ title: Use the Dependency Tracker extension
 titleSuffix: Azure DevOps
 description: Learn how to plan and manage dependencies across teams, projects, and organizations with the Dependency Tracker.  
 ms.custom: extensions, archive-candidate
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to 
 ms.author: kaelli
 author: KathrynEE
