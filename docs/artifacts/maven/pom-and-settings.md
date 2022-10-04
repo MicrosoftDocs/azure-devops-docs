@@ -8,9 +8,7 @@ ms.date: 10/04/2022
 monikerRange: '<= azure-devops'
 ---
 
- 
-
-# Set up your project and connect to Azure Artifacts
+# Set up your Maven project and connect to feed
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
