@@ -11,7 +11,7 @@ hide_comments: true
 # Azure DevOps 2023 Q2 Features
 
 ## Boards
-
+ 
 ### Maintain backlog hierarchy when filters are applied
 
 As a Boards user, I want to maintain my tree view even when I filter my backlog so that I don't lose context of the work I'm trying to organize.

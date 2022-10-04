@@ -30,82 +30,555 @@ Each feature is linked to an article where you can learn more about a particular
 
 Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Azure Active Directory access tokens. Many of these mechanisms are problematic from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure.
 
-Azure DevOps also supports storing credentials in the form of service connections. These credentials are used in pipelines to gain access to production environments. Unintended or malicious leakage of these credentials can compromise production environments.
-
-Option 1
-## Admin
-
-|Area |Released | 2022 Q4 | 2023 Q1 | 2023 Q2 | Future | 
-|----------|----------|----------|----------|----------|----------|
-| Personal Access Token control plane and policies  | PAT Lifecycle APIs AAD-Tenant-Scoped Policies  |[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)| | | |
-| Managed Identity and Service Principal support   |  | | Preview | General Availability | |
-| OpenID Connect support for secret-free deployments from Azure Pipelines   |  | | Preview | General Availability | |
-| Azure AD alignment     |  | | | | Full conditional access policy support. Proof of possession token support. Continuous access evaluation support.  |
-| Secret-free service connections using Open ID Connect |  |  |  Private Preview | Preview | General Availability |
-
-Option 2
-## Admin
-
-|Area | Feature | Released | 2022<br/> Q4 | 2023<br/> Q1 | 2023<br/> Q2 | Future | 
-|-----|---------|----------|---------|---------|---------|--------|
-| **Personal Access Token control plane and policies** |PAT Lifecycle APIs AAD-Tenant-Scoped Policies|:::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: | | | | |
-||[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)| |General Availability | |
-| **Managed Identity and Service Principal support**   | | | | Preview | General Availability | |
-| **OpenID Connect support for secret-free deployments from Azure Pipelines**   | | | | Preview | General Availability |
-| **Azure AD alignment**     | Full conditional access policy support. Proof of possession token support. Continuous access evaluation support. | | | | | :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false":::  |
-| **Secret-free service connections using Open ID Connect | | | | Private preview | Preview | General Availability
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Feature**
+   :::column-end:::
+   :::column span="":::
+      **Area**
+   :::column-end:::
+   :::column span="":::
+      **Service Timeframe**
+   :::column-end:::
+   :::column span="":::
+      **Server Timeframe**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      **Personal Access Token (PAT) control plane and policies**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      - PAT lifecycle APIs
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: CY2022 Q1
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: Azure DevOps Server 2022
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+     - AAD Tenant Scoped Policies 
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="roadmap/2023/media/checkmark.png" border="false"::: CY2022 Q2
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      - [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4
+   :::column-end:::
+   :::column span="":::
+      Azure DevOps Server 2022 Update 1
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [**Managed Identity and Service Principal support**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals) 
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      CY2023 Q1 (Preview)</br>
+      CY2023 H2 (GA) 
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [**OpenID Connect for secret-free deployments from Azure Pipelines**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#credential-free-pipelines)  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      CY2023 Q2 (Preview)</br>
+      CY2023 H2 (GA) 
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [**Full support for Conditional Access Policies**](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)   
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
 
 
 ---
 ## All features
-
-<table>
-    <thead>
-        <tr>
-            <th>Timeframe</th>
-            <th>Feature</th>
-            <th>Area</th>
-            <th>Server</th>
-        </tr>
-    </thead>
-    <tbody>
-<tr><td rowspan="7"><strong>2022 Q3</strong></td>
-    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954" data-raw-source="[Associate all public APIs with PAT scopes](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954)">Associate all public APIs with PAT scopes</a></td><td>General</td><td>TBD</td>    
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1973004 data-raw-source="[Get Attachment URL link](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1973004)">Get Attachment URL link</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032 data-raw-source="[Adding Assigned To avatar to child items on cards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944032)">Adding Assigned To avatar to child items on cards</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313 data-raw-source="[Filter to work item history](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1944313)">Filter to work item history</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951703" data-raw-source="[Build retention improvements as part of next on-premises server release](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951703)">Build retention improvements as part of next on-premises server release</a></td><td>Pipelines</td><td>Future</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951707" data-raw-source="[Pipelines scalability improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951707)">Pipelines scalability improvements</a></td><td>Pipelines</td><td>Future</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
-</tr>
-<tr><td rowspan="10"><strong>2022 Q4</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1972967 data-raw-source="[Emoji support in work item tags](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1972967)">Emoji support in work item tags</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317 data-raw-source="[Add `Move to Column` and `Move to Swimlane` functionality to core product](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1983317)">Add `Move to Column` and `Move to Swimlane` functionality to core product</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204 data-raw-source="[Ability to change link type from Web UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964204)">Ability to change link type from Web UI</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203 data-raw-source="[Save Comment Improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1964203)">Save Comment Improvements</a></td><td>Boards</td><td>Future</td>      
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423 data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960 data-raw-source="[Pull Request widget to allow for the selection of many repos](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978960)">Pull Request widget to allow for the selection of many repos</a></td><td>Reporting</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978962 data-raw-source="[Rollup columns for query results](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1978962)">Rollup columns for query results</a></td><td>Reporting</td><td>Future</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
-</tr>
-<tr><td rowspan="10"><strong>Future</strong></td>
-    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities and Service Principals](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities and Service Principals</a></td><td>General</td><td>N/A</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1845287" data-raw-source="[Auditing GA](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1845287)">Auditing GA</a></td><td>General</td><td>N/A</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>General</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678 data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678)">Access events for PAT, SSH will be available in the Auditing Log</a></td><td>General</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307 data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Artifacts</td><td>TBD</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td>   
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713 data-raw-source="[Secret-free service connections](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1951713)">Secret-free service connections</a></td><td>Pipelines</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>TBD</td>
-    </tr>
-    </tbody>
-</table>
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Feature**
+   :::column-end:::
+   :::column span="":::
+      **Area**
+   :::column-end:::
+   :::column span="":::
+      **Service Timeframe**
+   :::column-end:::
+   :::column span="":::
+      **Server Timeframe**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Maintain backlog hierarchy when filters are applied](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#maintain-backlog-hierarchy-when-filters-are-applied)  
+   :::column-end:::
+   :::column span="":::
+      Boards
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Emoji support in work item tags](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#emoji-support-in-work-item-tags)  
+   :::column-end:::
+   :::column span="":::
+      Boards
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Ability to change link type from Web UI](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#ability-to-change-link-type-from-web-ui)  
+   :::column-end:::
+   :::column span="":::
+      Boards
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Save Comment Improvements](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#save-comment-improvements)  
+   :::column-end:::
+   :::column span="":::
+      Boards
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Credential-free pipelines](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#credential-free-pipelines)  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Deprecate Node 10 from agent and tasks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#deprecate-node-10-from-agent-and-tasks)  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Pull Request widget to allow for the selection of many repos](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#pull-request-widget-to-allow-for-the-selection-of-many-repos)  
+   :::column-end:::
+   :::column span="":::
+      Reporting
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Rollup columns for query results](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#rollup-columns-for-query-results)  
+   :::column-end:::
+   :::column span="":::
+      Reporting
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Show Link with Parent Name in Query Results Widget](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/2023/q4features?branch=users%2Fglmorale%2Fnewroadmap#show-link-with-parent-name-in-query-results-widget)  
+   :::column-end:::
+   :::column span="":::
+      Reporting
+   :::column-end:::
+   :::column span="":::
+      CY2022 Q4 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Support Azure Managed Identities and Service Principals](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals)  
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      N/A
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Auditing GA](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#auditing-ga)  
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Conditional Access Policy support for device state](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)  
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#access-events-for-pat-ssh-will-be-available-in-the-auditing-log)  
+   :::column-end:::
+   :::column span="":::
+      Platform
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Package promote task in Azure Pipelines](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#package-promote-task-in-azure-pipelines)  
+   :::column-end:::
+   :::column span="":::
+      Artifacts
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      TBD
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#deprecate-old-azure-artifacts-tasks-in-azure-pipelines-and-default-to-new-auth-only-tasks)  
+   :::column-end:::
+   :::column span="":::
+      Artifacts
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      TBD
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Improve GitHub Connection Experience](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#improve-github-connection-experience)  
+   :::column-end:::
+   :::column span="":::
+      Boards
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      Future
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      TBD
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/en-us/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)  
+   :::column-end:::
+   :::column span="":::
+      Pipelines
+   :::column-end:::
+   :::column span="":::
+      Future 
+   :::column-end:::
+   :::column span="":::
+      TBD
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
 
 ---
+
 ## How to provide feedback
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
