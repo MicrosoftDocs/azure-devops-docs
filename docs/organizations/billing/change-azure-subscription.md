@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/03/2022
+ms.date: 10/04/2022
 ---
 
 # Change your organization's billing subscription
@@ -17,6 +17,13 @@ ms.date: 10/03/2022
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Learn how to change the Azure subscription that your Azure DevOps organization uses for billing. You might do so if your organization is tied to a subscription of a user who's left the organization. In this case, you'd likely switch to a common subscription or remove the billing. You can [remove your billing subscription](#remove-your-billing-subscription) at any time.   
+
+See also the following related articles:
+- [Pay for users](buy-basic-access-add-users.md)
+- [Buy access to Azure Test Plans](buy-access-tfs-test-hub.md)
+- [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
+- [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+- [Try Azure Test Plans](try-additional-features-vs.md)
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
@@ -79,3 +86,4 @@ Azure DevOps removes your billing subscription from your organization.
 - [Buy Azure Test Plans](buy-basic-access-add-users.md)
 - [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+- [Add a backup billing manager](add-backup-billing-managers.md)
