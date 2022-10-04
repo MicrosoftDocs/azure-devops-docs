@@ -2,14 +2,14 @@
 metadata:
   title: Frequent questions about billing management
   titleSuffix: Azure DevOps
-  ms.custom: seodec18, freshness-fy22q1
+  ms.custom: seodec18, freshness-fy22q1, engagement-fy23
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.technology: devops-billing
   ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 08/05/2022
+  ms.date: 10/04/2022
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -69,7 +69,7 @@ sections:
       - question: |
           Q: Do daily pro-rated charges apply to other purchases also?
         answer: |
-          A: Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased 5 MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case you will be charged approximately one-third of the monthly cost of 5 hosted pipelines.
+          A: Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased five MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case, you're charged one-third of the monthly cost of five hosted pipelines.
 
       - question: |
           Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
@@ -79,12 +79,12 @@ sections:
       - question: |
           Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
         answer: |
-          A: Since June 1, 2019, on-premises Azure Artifacts, for example, Package Management, is included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
+          A: Since June 1, 2019, on-premises Azure Artifacts, for example, Package Management, is included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no other purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
 
       - question: |
           Q: How do I pay for Azure DevOps support?
         answer: |
-          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/), so you can **Request support**. Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). You can report a service outage from our [service status page](https://status.dev.azure.com/). 
+          A: If you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). You can report a service outage from our [service status page](https://status.dev.azure.com/). 
            
           If you need technical support with Azure DevOps and don't have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
            
@@ -132,7 +132,7 @@ sections:
           <a name="spending-limit"></a>
           
           > [!NOTE]
-          > Remove your spending limit indefinitely. This prevents disabling your Azure subscription when your recurring monthly charges get billed the next month.
+          > Remove your spending limit indefinitely, which prevents disabling your Azure subscription when your recurring monthly charges get billed the next month.
           > Otherwise, all resources billed to this subscription get suspended, including virtual machines and all other workloads.
           
           > [!div class="mx-imgBorder"]
@@ -198,12 +198,12 @@ sections:
       - question: |
           Q: How can I get a list of all the users I'm paying for under multi-organization billing?
         answer: |
-          A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on sign-in address (e.g. contoso@contoso.com). You can find the sign-in address under the Username column in the exported file.
+          A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on sign-in address (for example, contoso@contoso.com). You can find the sign-in address under the Username column in the exported file.
           
       - question: |
-          Q: Why are additional free user grants removed when multi-organization billing is enabled?
+          Q: Why are extra free user grants removed when multi-organization billing is enabled?
         answer: |
-          A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't support multi-organization billing. For that reason, when you enable multi-organization billing, additional free grants are removed. If you have a free grant, [contact our Microsoft Azure support team](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) to request that the grant applied to your Azure subscription instead. For a free grant example, the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html).
+          A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't support multi-organization billing. For that reason, when you enable multi-organization billing, extra free grants are removed. If you have a free grant, [contact our Microsoft Azure support team](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) to request that the grant applied to your Azure subscription instead. For a free grant example, the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html).
           
           ## Understand your bill
           
@@ -288,7 +288,7 @@ sections:
       - question: |
           Q: Why is the location of my organization resource incorrect? 
         answer: |
-          A: This can happen for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-region). To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). This is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, you can update the portal by [removing billing](change-azure-subscription.md#remove-your-billing-subscription) from your organization and then [setting it up](set-up-billing-for-your-organization-vs.md) again.
+          A: The location of your organization resource could be incorrect for various reasons, such as [changing your organization region](../accounts/change-organization-location.md#change-organization-region). To find the location of your organization, [check the region listed in Azure DevOps](../accounts/change-organization-location.md), which is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, you can update the portal by [removing billing](change-azure-subscription.md#remove-your-billing-subscription) from your organization and then [setting it up](set-up-billing-for-your-organization-vs.md) again.
           
       - question: |
           Q: Why is the name of my organization resource incorrect? 
@@ -322,7 +322,7 @@ sections:
       - question: |
           Q: What happens if I cancel my Azure subscription or my credit card expires?
         answer: |
-          A: When the Azure subscription used for billing on your organization isn't in active status - for example, because you cancel it or the credit card used for billing expires - your organization reverts to the free tier of service.
+          A: When the Azure subscription used for billing on your organization isn't in active status - for example, because you canceled the subscription, or the credit card used for billing expired - your organization reverts to the free tier of service.
           
           >[!NOTE]
           >You must keep your Azure subscription in good standing to avoid interruptions in paid services.
@@ -353,14 +353,14 @@ sections:
         answer: |
           A: Yes, you can use these prepaid funds for all services that Azure DevOps offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
           
-          The only exclusion is for extensions offered by partners. These charges appear on your next "overage" invoice. Typically, charges occur monthly, but because of historical rules for some EA customers, an overage invoice might not be issued for several months. Consult a licensing specialist for your EA if you need to know what number of additional purchases aren't eligible for Azure Monetary Commitment funds, trigger an overage invoice.
+          The only exclusion is for extensions offered by partners. These charges appear on your next "overage" invoice. Typically, charges occur monthly, but because of historical rules for some EA customers, an overage invoice might not be issued for several months. Consult a licensing specialist for your EA if you need to know what number of other purchases aren't eligible for Azure Monetary Commitment funds, trigger an overage invoice.
           
   - name: Other questions
     questions:
       - question: |
           Q: Why don't I see Team Projects in the Azure portal?
         answer: |
-          A: You can't create Team Projects or view them in the Azure portal as of September 28, 2018. You can continue to **access** any Team Projects you create via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). The best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
+          A: You can't create Team Projects or view them in the Azure portal as of September 28, 2018. You can continue to **access** any Team Projects you create via the Azure portal through your organization URL (`https://dev.azure.com/{your_organization}`). You can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). The best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
           
       - question: |
           Q: Why is my organization already linked to an Azure subscription?
