@@ -114,9 +114,68 @@ Use that variable to populate the secret in the above Git command.
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
+
+:::moniker range="azure-devops"
+
+### Sync tags
+
+The checkout step uses the `--tags` option when fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline, particularly if you have a large repository with a number of tags. Furthermore, the checkout step syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, Microsoft has added a new option to checkout to control the behavior of syncing tags. This option is available both in classic and YAML pipelines.
+
+Whether to synchronize tags when checking out a repository can be configured in YAML by setting the `fetchTags` property, and in the UI by configuring the **Sync tags** setting.
+
+# [YAML](#tab/yaml/)
+
+You can configure the `fetchTags` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
+
+To configure the setting in YAML, set the `fetchTags` property.
+
+```YAML
+steps:
+- checkout: self
+  fetchTags: true
+```
+
+You can also configure this setting by using the **Sync tags** option in the pipeline settings UI.
+
+1. Edit your YAML pipeline and choose **More actions**, **Triggers**.
+
+    :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
+
+2. Choose **YAML**, **Get sources**.
+
+    :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
+
+3. Configure the **Sync tags** setting.
+
+    :::image type="content" source="../media/get-sources-options-sync-tags.png" alt-text="Screenshot of Sync tags setting.":::
+
+> [!NOTE]
+> If you explicitly set `fetchTags` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI.
+
+# [Classic](#tab/classic/)
+
+You can configure the **Sync tags** setting from the properties of the **Get sources** task in your pipeline.
+
+:::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
+
+---
+
+#### Default behavior
+
+* For existing pipelines created before the release of [Azure DevOps sprint 209](/azure/devops/release-notes/2022/sprint-209-update#do-not-sync-tags-when-fetching-a-git-repository), released in September 2022, the default for syncing tags remains the same as the existing behavior before the **Sync tags** options was added, which is `true`.
+* For new pipelines created after Azure DevOps sprint release 209, the default for syncing tags is `false`.
+
+> [!NOTE]
+> If you explicitly set `fetchTags` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI.
+
+:::moniker-end
+
 ### Shallow fetch
 
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
+
+> [!IMPORTANT]
+> New pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch. To check your pipeline, view the **Shallow fetch** setting in the pipeline settings UI as described in the following section.
 
 # [YAML](#tab/yaml/)
 
@@ -133,11 +192,28 @@ steps:
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
+You can also configure fetch depth by setting the **Shallow depth** option in the pipeline settings UI.
+
+1. Edit your YAML pipeline and choose **More actions**, **Triggers**.
+
+    :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
+
+2. Choose **YAML**, **Get sources**.
+
+    :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
+
+3. Configure the **Shallow fetch** setting. Uncheck **Shallow fetch** to disable shallow fetch, or check the box and enter a **Depth** to enable shallow fetch.
+
+    :::image type="content" source="../media/get-sources-options-shallow-fetch.png" alt-text="Screenshot of options.":::
+
+> [!NOTE]
+> If you explicitly set `fetchDepth` in your `checkout` step, that setting takes priority over the setting configured in the pipeline settings UI. Setting `fetchDepth: 0` fetches all history and overrides the **Shallow fetch** setting.
+
 # [Classic](#tab/classic/)
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
-![Configure Shallow fetch setting.](../media/github/github-options.png)
+:::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
 
 ---
 
@@ -219,7 +295,7 @@ jobs:
 
 This gives the following clean options.
 
-* **outputs**: Same operation as the clean setting described in the previous the checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+* **outputs**: Same operation as the clean setting described in the previous checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
 * **resources**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
 

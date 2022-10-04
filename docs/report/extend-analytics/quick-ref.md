@@ -255,7 +255,7 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
 
 ## Reference
 
-- [Work tracking properties reference](../powerbi/analytics-fields-reference.md)  
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
 - [Analytics views dataset design](../powerbi/data-connector-dataset.md)  
 - [Supported OData functions and clauses](odata-supported-features.md)  
 - [OData API versioning](odata-api-version.md) 

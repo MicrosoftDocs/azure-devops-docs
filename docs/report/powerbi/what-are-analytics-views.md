@@ -91,7 +91,7 @@ For more information on how the dataset is modeled when using the Power BI Data 
 - [What is Power BI Desktop?](/power-bi/fundamentals/desktop-what-is-desktop) 
 - [Data available from Analytics](data-available-in-analytics.md)
 - [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md)
-- [Work tracking properties reference](analytics-fields-reference.md) 
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
 
 
 ## Related resources 
