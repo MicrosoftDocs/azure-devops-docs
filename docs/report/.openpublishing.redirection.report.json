@@ -335,11 +335,6 @@
       "source_path_from_root": "/docs/reference/xml/add-or-modify-work-item-fields-to-support-reporting.md",
       "redirect_url": "/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
       "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/report/powerbi/analytics-fields-reference.md",
-      "redirect_url": "/azure/devops/report/analytics/entity-reference-boards",
-      "redirect_document_id": true
     }
   ]
 }

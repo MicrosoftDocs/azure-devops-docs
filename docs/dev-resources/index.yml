@@ -7,8 +7,7 @@ metadata:
   title: Azure DevOps Developer resources documentation 
   titleSuffix: Azure DevOps 
   description: Use command line interface, REST APIs, typescript tools and more to interface with Azure DevOps .
-  ms.prod: devops 
-  ms.technology: devops-reference
+  ms.subservice: azure-devops-reference
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 

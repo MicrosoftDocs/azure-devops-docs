@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Samples overview | Extensions for Azure DevOps
 description: Overview of the available extension samples for Azure DevOps, including a description, the link to the repo and the contributions they touch.
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91

@@ -2,7 +2,7 @@
 title: Connect to a feed - NuGet.exe
 description: How to connect to an Azure Artifacts feed
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 07/11/2022
 monikerRange: '<= azure-devops'

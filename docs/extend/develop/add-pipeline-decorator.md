@@ -2,7 +2,7 @@
 title: Pipeline decorators
 description: Inject steps before and after every pipeline job
 ms.topic: reference
-ms.technology: devops-cicd
+ms.subservice: azure-devops-ecosystem
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: chcomley
 author: chcomley

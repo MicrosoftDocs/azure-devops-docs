@@ -3,10 +3,11 @@ title: Rollback Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Rollback Command (Team Foundation Version Control)
 ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

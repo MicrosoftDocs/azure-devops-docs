@@ -3,7 +3,7 @@ title: Filter lists, boards, and directories
 titleSuffix: Azure DevOps 
 description: Filter your view to focus on items of interest 
 ms.custom: "navigation, cross-service"
-ms.technology: devops-collab 
+ms.subservice: azure-devops-projects 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to

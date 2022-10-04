@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-reference
+ms.subservice: azure-devops-reference
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include

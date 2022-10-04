@@ -2,7 +2,7 @@
 title: Pipeline stage wise failures sample Power BI report 
 titleSuffix: Azure DevOps
 description: Learn how to generate a pipeline stage wise failure Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
 ms.custom: powerbisample

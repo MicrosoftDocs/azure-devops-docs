@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure DevOps Sprint 195 Update
 description: See the Sprint 195 feature updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 11/16/2021
 ---
 

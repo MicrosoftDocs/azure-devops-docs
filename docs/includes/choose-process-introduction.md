@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.date: 11/04/2021

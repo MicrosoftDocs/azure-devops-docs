@@ -3,7 +3,7 @@ title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps 
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.author: kaelli
 author: KathrynEE

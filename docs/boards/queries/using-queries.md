@@ -3,7 +3,7 @@ title: Define a work item query with the Query Editor in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to create a flat-list, tree, or direct links queries to list, triage, update, and chart work items. 
 ms.custom: "boards-queries, contperf-fy21q3, linked-from-support, cross-project" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.author: kaelli
 author: KathrynEE

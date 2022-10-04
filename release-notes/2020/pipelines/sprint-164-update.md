@@ -3,7 +3,6 @@ title: Azure Pipelines - Sprint 164 Update
 description: See the Sprint 164 pipelines updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 01/28/2020
 ---
 

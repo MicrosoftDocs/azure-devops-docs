@@ -3,7 +3,7 @@ title: Query Analytics
 titleSuffix: Azure DevOps  
 description: Learn how to query the Analytics service to return metadata or filter data for an EntityType.  
 ms.custom: "analytics" 
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

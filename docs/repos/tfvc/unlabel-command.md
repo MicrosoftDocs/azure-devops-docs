@@ -3,10 +3,11 @@ title: Unlabel TFVC command
 titleSuffix: Azure Repos
 description: Learn how to use the unlabel command to remove an item from an existing label.
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

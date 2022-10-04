@@ -2,7 +2,7 @@
 title: Link work items to other objects
 titleSuffix: Azure DevOps
 description: Learn how to link work items to internal Azure DevOps builds, commits, pull requests, and more, and external objects in Git and Team Foundation Version Control repositories. 
-ms.technology: devops-collab 
+ms.subservice: azure-devops-notifications 
 toc: show
 ms.custom: contperf-fy21q2, cross-project, engagement-fy23
 ms.author: chcomley

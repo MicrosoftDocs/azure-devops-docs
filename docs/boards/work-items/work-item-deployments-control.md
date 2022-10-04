@@ -3,7 +3,7 @@ title: Link work items to deployments and other objects
 titleSuffix: Azure Boards
 description: Learn how to link work items to other objects to improve traceability and simplify navigation to those objects in Azure Boards.
 ms.custom: boards-work-items, contperf-fy22q1  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE

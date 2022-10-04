@@ -2,7 +2,7 @@
 title: New work item web form 
 titleSuffix: Azure DevOps
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.author: kaelli
 author: KathrynEE

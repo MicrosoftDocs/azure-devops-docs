@@ -1,7 +1,6 @@
 ---
 title: Build and publish Artifacts using Gradle
-description: How to build and publish artifact with Gradle and Azure Pipelines
-ms.technology: devops-artifacts
+description: How to build and publish artifact with Gradle and Azure Pipelines 
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 08/18/2022

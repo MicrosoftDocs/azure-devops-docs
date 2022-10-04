@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-audit
+ms.subservice: azure-devops-audit
 ms.author: chcomley
 author: chcomley
 ---

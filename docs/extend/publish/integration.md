@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Package and Publish an Integration
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b

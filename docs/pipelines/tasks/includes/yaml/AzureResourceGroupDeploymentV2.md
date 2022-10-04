@@ -3,8 +3,7 @@ ms.topic: include
 author: RoopeshNair
 ms.author: ronai
 ms.date: 02/10/2020
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML

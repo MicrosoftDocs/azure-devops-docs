@@ -2,7 +2,6 @@
 title: Ease customization by migrating projects to the Inheritance process model – VSTS Sprint 139 Update
 author: alexcnichols
 ms.author: alexn
-ms.technology: devops-release-notes
 ms.date: 8/21/2018
 description: In the Sprint 139 Update of Visual Studio Team Services (VSTS), you can now migrate Hosted XML projects to the Inheritance process model to ease customization.
 ---

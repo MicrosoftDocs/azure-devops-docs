@@ -2,7 +2,7 @@
 title: Track information and changes for review meetings in Azure Boards 
 titleSuffix: Azure Boards
 description: Learn about the fields used to track review meetings in the CMMI process for Azure Boards and Azure DevOps.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 35b045a4-1332-499d-97a6-f7797033990d
 ms.topic: conceptual
 ms.author: kaelli

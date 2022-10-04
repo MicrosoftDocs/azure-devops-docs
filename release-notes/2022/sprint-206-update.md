@@ -2,7 +2,6 @@
 title: Filter on work item history.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 7/14/2022
 description: Filter on work item history.  
 ---

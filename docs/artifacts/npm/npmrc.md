@@ -2,7 +2,7 @@
 title: Set up your client's npmrc
 description: How to set up your project and authenticate to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 09/27/2022
 monikerRange: '<= azure-devops'
