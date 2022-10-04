@@ -154,7 +154,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Managed Identity and Service Principal support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals) 
+      [Managed Identity and Service Principal support](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals) 
    :::column-end:::
    :::column span="":::
       Platform
@@ -212,7 +212,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Full support for Conditional Access Policies](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)   
+      [Full support for Conditional Access Policies](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)   
    :::column-end:::
    :::column span="":::
       Platform
@@ -272,22 +272,22 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 
 #### [**Future**](#tab/future)
 **Admin**
-- [Support Azure Managed Identities and Service Principals](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals)
-- [Auditing GA](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#auditing-ga)
-- [Conditional Access Policy support for device state](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)
-- [Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#access-events-for-pat-ssh-will-be-available-in-the-auditing-log)
+- [Support Azure Managed Identities and Service Principals](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-azure-managed-identities-and-service-principals)
+- [Auditing GA](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#auditing-ga)
+- [Conditional Access Policy support for device state](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#conditional-access-policy-support-for-device-state)
+- [Access events for PAT, SSH will be available in the Auditing Log](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#access-events-for-pat-ssh-will-be-available-in-the-auditing-log)
 
 **Artifacts**
-- [Package promote task in Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#package-promote-task-in-azure-pipelines)
-- [Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#deprecate-old-azure-artifacts-tasks-in-azure-pipelines-and-default-to-new-auth-only-tasks)
+- [Package promote task in Azure Pipelines](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#package-promote-task-in-azure-pipelines)
+- [Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#deprecate-old-azure-artifacts-tasks-in-azure-pipelines-and-default-to-new-auth-only-tasks)
 
 **Boards**
-- [Work Item support for Markdown editing](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#work-item-support-for-markdown-editing)
-- [Improve GitHub Connection Experience](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#improve-github-connection-experience)
+- [Work Item support for Markdown editing](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#work-item-support-for-markdown-editing)
+- [Improve GitHub Connection Experience](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#improve-github-connection-experience)
 
 **Pipelines**
-- [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)
-- [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/2023/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)
+- [Support Flexible Orchestration mode in scale set agent pools](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-flexible-orchestration-mode-in-scale-set-agent-pools)
+- [Support Pipelines App with GitHub Enterprise](https://review.learn.microsoft.com/azure/devops/release-notes/roadmap/future?branch=users%2Fglmorale%2Fnewroadmap#support-pipelines-app-with-github-enterprise)
 
 ---
 
