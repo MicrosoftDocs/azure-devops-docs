@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to switch your organization connection from one Azure Active Directory (Azure AD) to another. When you change directories, your project resources remain.
+Learn how to switch your organization connection from one Azure Active Directory (Azure AD) to another. When you change directories, your project resources remain, as there's no impact to them.
 
 For more information about using Azure AD with Azure DevOps, see the [Conceptual overview](access-with-azure-ad.md).
 
