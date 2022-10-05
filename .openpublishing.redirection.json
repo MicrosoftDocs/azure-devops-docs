@@ -39,6 +39,16 @@
       "source_path": "docs/report/powerbi/analytics-fields-reference.md",
       "redirect_url": "/azure/devops/report/analytics/entity-reference-boards",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/project/faq-create-project.yml",
+      "redirect_url": "/azure/devops/organization/project/create-project",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/project/faq-rename-project.yml",
+      "redirect_url": "/azure/devops/organization/project/rename-project",
+      "redirect_document_id": true
     }
   ]
 }
