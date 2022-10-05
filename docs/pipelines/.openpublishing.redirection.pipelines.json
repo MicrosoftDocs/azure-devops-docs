@@ -99,7 +99,13 @@
       "source_path_from_root":"/docs/pipelines/targets/azure-machine-learning.md",
       "redirect_url":"/azure/machine-learning/how-to-devops-machine-learning",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"docs/pipelines/licensing/concurrent-pipelines-tfs.md",
+      "redirect_url":"/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false
     }
+
   ]
 }
 
