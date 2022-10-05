@@ -21,26 +21,39 @@ However, some of our public APIs are currently unassociated with a PAT scope and
 
 ### Get Attachment URL link
 
-I want to be able to go to an attachment, and on the context menu, get the url. "Copy attachment url". This will allow me to cut and paste the url into discussions or descriptions. When I paste the url it should show the name of the file (filename.txt) and that would be a link back to the attachment.  When clicked on, it should download the attachment.
+As a user, I want to be able to go to an attachment, click on the context menu and get the url. This will allow me to cut and paste the url into discussions or descriptions so that I can have a discussion about a specific attachment. Readers can download that attachment directly from the link. When I paste the url it should show the name of the file (filename.txt) and that would be a link back to the attachment.  
 
 > [!div class="mx-imgBorder"]
 > ![Get Attachment URL link](media/boards-2022q3-01.png)
 
 [Suggestion Ticket](https://developercommunity.visualstudio.com/t/link-to-attachments-in-discussion/527072)
 
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
+
 ### Adding Assigned To avatar to child items on cards
 
-Show the assigned to avatar next to the tasks on the board cards. This would allow people to see what tasks are assigned to whom. Also give the ability to assign tasks direct from the card.
+As a user, I want to see the assigned to avatar next to the tasks on the board cards. This would me to see what tasks are assigned to whom. I should also be assign the tasks directly from the action menu.
 
 > [!div class="mx-imgBorder"]
 > ![Adding Assigned To avatar to child items on cards](media/boards-2022q3-02.png)
 
+🚢 [Released in June of 2022](../../../release-notes/2022/sprint-205-update#assigned-to-children-in-kanban-cards)
+
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
+
 ### Filter to work item history
 
-Give the user the ability to search and filter the work item history. Filter by text, person who made the revision, the fields being revised.
+As a user, when looking at the work item history, it is difficult to see who made changes to what fields. I want to be able to filter down revisions on the history tab. Filter by text, person who made the revision, and the fields being revised.
 
 > [!div class="mx-imgBorder"]
 > ![Filter to work item history](media/boards-2022q3-03.png)
+
+🚢 [Released in July of 2022](../../../release-notes/2022/sprint-206-update#filter-on-work-item-history)
+
+> [!NOTE]
+> This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
 
 ## Pipelines
 
