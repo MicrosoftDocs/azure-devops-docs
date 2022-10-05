@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 11/05/2021
+ms.date: 10/05/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -306,7 +306,7 @@ For more information, see [Authenticate access with personal access tokens for A
 ### Azure Resource Manager service connection
 
 Use the following parameters to define and secure a connection to a Microsoft Azure subscription
-using Service Principal Authentication (SPA) or an Azure-Managed Service Identity.
+using Service Principal Authentication (SPA) or an Azure managed Service Identity.
 The dialog offers two main modes:
 
 * **Automated subscription detection**. In this mode, Azure Pipelines queries Azure for all of the subscriptions and instances to which you have access. They use the credentials you're currently signed in with in Azure Pipelines (including Microsoft accounts and School or Work accounts).
