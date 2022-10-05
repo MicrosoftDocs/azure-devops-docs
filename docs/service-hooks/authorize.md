@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 title: Authorize services 
 description: Authorize services to work with Azure DevOps

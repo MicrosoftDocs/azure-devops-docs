@@ -2,7 +2,7 @@
 title: Edit user stories and other work items in bulk in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to quickly make the same change to many work items in Azure Boards using the bulk modify feature. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: "boards-backlogs, seodec18, linked-from-support" 
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.author: kaelli

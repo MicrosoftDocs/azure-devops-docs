@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: An index of articles that explain dashboard, chart, report, and widget tasks for Azure Boards in Azure DevOps.
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

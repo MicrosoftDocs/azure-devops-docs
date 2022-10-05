@@ -3,7 +3,7 @@ metadata:
   title: Work across projects FAQs 
   description: Get answers to common questions about working across projects in Azure DevOps.  
   titleSuffix: Azure DevOps
-  ms.technology: devops-new-user
+  ms.subservice: azure-devops-projects 
   ms.custom: cross-project
   ms.author: kaelli
   author: KathrynEE

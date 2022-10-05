@@ -3,7 +3,7 @@ title: Delete test plans, test cases, and other test artifacts in Azure Boards
 titleSuffix: Azure Boards  
 description: Learn how to delete test plans, test cases, test results, & other test artifacts in Azure Boards. 
 ms.custom: seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.author: kaelli
 author: KathrynEE

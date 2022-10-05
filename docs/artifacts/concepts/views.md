@@ -2,7 +2,7 @@
 title: What are feed views?
 description: Learn about feed views and why it's useful for package release
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 04/07/2022
 monikerRange: '<= azure-devops'

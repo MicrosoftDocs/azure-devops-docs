@@ -2,7 +2,7 @@
 title: Data available from Analytics
 titleSuffix: Azure DevOps
 description: Review the data available for reporting purposes using Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

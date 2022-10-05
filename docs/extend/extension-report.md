@@ -2,7 +2,7 @@
 title: Extension Report | Azure DevOps
 description: Use the Reports feature to track and analyze how your extension is doing and take required actions. 
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley

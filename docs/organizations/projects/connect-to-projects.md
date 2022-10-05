@@ -2,7 +2,7 @@
 title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
-ms.technology: devops-new-user
+ms.subservice: azure-devops-projects
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie

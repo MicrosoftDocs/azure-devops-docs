@@ -1,16 +1,16 @@
 ---
 title: Rename a project - Azure DevOps
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contperf-fy21q3, content-perf-fy23q2
+ms.custom: seodec18, contperf-fy21q3, content-perf-fy23q2, engagement-fy23
 description: Learn how to rename your project, including tasks you need to complete to work with the renamed project.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-projects
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/06/2022
+ms.date: 10/05/2022
 ---
 
 # Rename a project in Azure DevOps
@@ -26,7 +26,7 @@ When you rename a project, Azure DevOps updates the project name in the followin
 You can rename a single project multiple times and reuse older names. After you rename a project, there may be some [required team member actions](#required-user-actions-for-working-with-the-renamed-project).
 
 > [!WARNING]
-> Renaming a project sends email notifications to everyone in the project, if there are less than 1,000 users. If there are greater than 1,000 users in your project, only Project Collection Administrators receive email notifications.
+> When you rename a project, Azure DevOps sends email notifications to everyone in the project if there are less than 1,000 users. If there are greater than 1,000 users in your project, only Project Collection Administrators receive email notifications.
 
 ## Prerequisites
 
@@ -95,7 +95,7 @@ The following results occur following the rename operation.
 
 ## Required user actions for working with the renamed project
 
-Each user within your team must [restart their clients](#restart-clients) and do other actions based on the features they use, like:
+Each user within your team must [restart their clients](#restart-clients) and do some of the following actions, based on the features they use:
 - [Update Git remotes](#update-git-remotes)
 - [Update Team Foundation Version Control (TFVC) server workspaces](#update-tfvc-server-workspaces)
 - [Update TFVC local workspaces](#update-tfvc-local-workspaces)
@@ -198,8 +198,31 @@ The reporting and SharePoint server administrator can manually run these jobs to
 
 ## Related articles
 
-- [FAQs for renaming a project](faq-rename-project.yml)
+- [Delete a project](delete-project.md)
+- [Restore a project](restore-project.md)
 - [Git and Azure Repos](../../repos/git/index.yml)
 - [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Go to Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
 - [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)
+
+## Frequently asked questions (FAQs)
+
+### Q: Why did my attempt to reuse a project name fail due to existing work spaces?
+A: You can't reuse a project name if there are still workspace mappings addressing it. This function helps avoid the ambiguity case where a workspace could be mapped to two projects. Contact the users who have these mappings, and either delete them or [update them](rename-project.md#tfvc-server) to use the new name.
+
+If the user's machine containing the workspace is no longer available, then you can delete the workspace by running the following command from Visual Studio's developer command prompt:
+```tf workspace /delete [/collection:TeamProjectCollectionUrl] workspacename[;workspaceowner]```
+
+### Q: How does renaming a project impact my browser navigation experience?
+
+A: After you rename a project, any browsers with the project opened may encounter some errors. These errors are due to caches held by the browser, which include the old project name. 
+Refresh to make these errors go away since the cache gets repopulated with the new project name.
+          
+### Q: Do other artifacts in the project get renamed when it's renamed?
+
+A: Yes, all artifacts that share the same name get renamed along with the project. The only exceptions are for the default team and repo. The rename of these artifacts is performed as a best effort. 
+For example, if a project *Foo* was renamed to *Bar*, the default team *Foo* wouldn't be renamed if a team named *Bar* already existed in the project.
+          
+### Q: Why can't I open queries saved to a disk after a rename?
+
+A: If you use Visual Studio 2010 and you have queries save to disk, you can't open them after you rename a project. You can use Visual Studio 2012 or newer to open them.

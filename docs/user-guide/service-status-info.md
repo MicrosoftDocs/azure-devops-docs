@@ -3,7 +3,7 @@ title: Service status
 titleSuffix: Azure DevOps 
 description: Understand how Azure DevOps Services status is monitored and available to users. 
 ms.topic: conceptual
-ms.technology: devops-accounts 
+ms.subservice: azure-devops-organizations
 ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.author: chcomley
 author: chcomley

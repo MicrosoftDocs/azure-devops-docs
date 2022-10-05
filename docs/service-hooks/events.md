@@ -3,7 +3,7 @@ title: Service hooks event reference
 titleSuffix: Azure DevOps  
 description: Service hook events supported by Azure DevOps 
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley

@@ -3,10 +3,11 @@ title: LocalVersions Command
 titleSuffix: Azure Repos
 description: LocalVersions Command
 ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
  

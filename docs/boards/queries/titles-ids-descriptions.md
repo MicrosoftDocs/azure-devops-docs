@@ -3,7 +3,7 @@ title: Query by title, ID, or rich-text fields in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn about work queries based on titles, IDs, and rich-text fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: kaelli
 author: KathrynEE

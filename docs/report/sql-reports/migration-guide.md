@@ -2,7 +2,7 @@
 title: Migrate to Analytics from SQL Reporting Services 
 titleSuffix: Azure DevOps 
 description: Learn how to migrate from using the legacy SQL Reporting Services reports to using Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

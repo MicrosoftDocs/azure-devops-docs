@@ -1,7 +1,7 @@
 ---
 title: Manage risk in Azure Boards
 description: Learn how to strategically minimize the variance between the outcome that you want and the actual outcome by managing risk in Azure Boards. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 8df2e7de-3a67-4f3d-9abb-3067fa3ddd75
 ms.topic: conceptual
 ms.author: kaelli

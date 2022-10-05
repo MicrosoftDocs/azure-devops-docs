@@ -3,10 +3,11 @@ title: Destroy Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Destroy Command (Team Foundation Version Control)
 ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

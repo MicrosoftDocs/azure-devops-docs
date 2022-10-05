@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include

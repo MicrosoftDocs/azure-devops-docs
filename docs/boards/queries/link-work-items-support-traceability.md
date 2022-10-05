@@ -2,7 +2,7 @@
 title: Link work items to support traceability in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to support an auto trail of changes and enable quick navigation by linking work items together.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: "boards-queries, cross-project, cross-service"
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli

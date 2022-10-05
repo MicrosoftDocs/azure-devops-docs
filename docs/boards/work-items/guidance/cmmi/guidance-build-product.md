@@ -2,7 +2,7 @@
 title: Build a product in Azure Boards
 titleSuffix: Azure Boards
 description: Use the Capability Maturity Model Integration (CMMI) process to integrate code into a component, a subsystem, a system, or a finished product.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: a3b1291c-ff51-45a9-9f3d-485361705eae
 ms.topic: conceptual
 ms.author: kaelli
