@@ -521,8 +521,6 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 
 **Result:**
 
-![Illustration of linked image](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
-
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 
 - Relative path: `![Image alt text](./image.png)`  
