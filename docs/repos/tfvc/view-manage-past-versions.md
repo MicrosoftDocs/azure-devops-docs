@@ -3,10 +3,11 @@ title: View and manage past versions
 titleSuffix: Azure Repos
 description: View and manage past versions
 ms.assetid: 752b4a6f-4212-4117-a994-03856d0c8ea9
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

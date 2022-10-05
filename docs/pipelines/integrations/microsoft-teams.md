@@ -1,5 +1,6 @@
 ---
-ms.technology: devops-collab
+ms.service: azure-devops
+ms.subservice: azure-devops-integration
 ms.topic: how-to
 ms.custom: freshness-fy22q2, cross-service
 title: Integrate Azure Pipelines and Microsoft Teams

@@ -3,7 +3,7 @@ title: Change time zone
 titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how to change the time zone for your organization or for user profile.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: 
 ms.topic: conceptual
 ms.author: chcomley

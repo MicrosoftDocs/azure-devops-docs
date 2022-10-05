@@ -3,10 +3,11 @@ title: Changeset Command
 titleSuffix: Azure Repos
 description: Changeset Command
 ms.assetid: 74d584cf-277f-41f9-b7a1-642ebab963af
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Changeset Command

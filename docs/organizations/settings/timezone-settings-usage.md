@@ -2,7 +2,7 @@
 title: Timezone settings and usage
 titleSuffix: Azure DevOps  
 description: Understand time zones settings and usage in Azure DevOps  
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

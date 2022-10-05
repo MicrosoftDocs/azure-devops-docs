@@ -3,7 +3,7 @@ title: Change a project from Hosted XML process
 titleSuffix: Azure DevOps      
 description: Upgrade a project that uses a Hosted XML process model to an inherited process in Azure DevOps Services
 ms.custom: inherited-process
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to

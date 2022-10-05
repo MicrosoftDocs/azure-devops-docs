@@ -3,7 +3,7 @@ title: TFVC repository default permissions
 titleSuffix: Azure DevOps
 description: Summary view of default Team Foundation Version Control (TFVC) repository permissions 
 ms.topic: reference
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/14/2021

@@ -41,7 +41,7 @@ You're going to add jobs that run on three platforms.
 
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/javascript?view=azure-devops
+# https://learn.microsoft.com/azure/devops/pipelines/ecosystems/javascript?view=azure-devops
 strategy:
   matrix:
     linux:

@@ -3,7 +3,7 @@ title: Query fields, operators, macros, and variables
 titleSuffix: Azure Boards
 description: Learn about field data types, operators, and macros/variables used by the Query Editor in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.author: kaelli
 author: KathrynEE

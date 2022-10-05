@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.global_help.title: Split columns
 description: Learn how to implement the Kanban pull model by dividing each column into Doing and Done when you work in Azure Boards.  
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
 ms.author: kaelli
 author: KathrynEE

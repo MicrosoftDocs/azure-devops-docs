@@ -2,7 +2,7 @@
 title: Why are my notification emails delayed
 titleSuffix: Azure DevOps 
 description: Troubleshooting steps for delayed emails from notifications in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

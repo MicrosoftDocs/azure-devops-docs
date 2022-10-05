@@ -2,7 +2,7 @@
 title: Clone and update wiki content offline 
 titleSuffix: Azure DevOps 
 description: Add and update pages offline for your built-in team project wiki in Azure DevOps 
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:

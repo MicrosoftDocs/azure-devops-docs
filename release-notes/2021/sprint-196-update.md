@@ -2,7 +2,6 @@
 title: Updates to hosted images
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 12/6/2021
 description: With this update, we are announcing updates to hosted images. 
 ---

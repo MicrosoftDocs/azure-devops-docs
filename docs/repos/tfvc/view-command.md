@@ -3,10 +3,11 @@ title: Retrieve a file using the TFVC View command
 titleSuffix: Azure Repos
 description: Retrieve a file using the TFVC View Command for Azure DevOps Services or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

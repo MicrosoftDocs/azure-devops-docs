@@ -2,7 +2,7 @@
 title: Migration checklist
 titleSuffix: Azure DevOps Services Public Project 
 description: Best practices when changing a private project to a public project 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid:
 ms.reviewer: 
 ms.author: chcomley

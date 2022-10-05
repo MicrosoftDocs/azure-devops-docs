@@ -3,7 +3,7 @@ title: Work Item Query Language (WIQL) reference syntax
 titleSuffix: Azure Boards   
 description: Learn about the reference syntax for the Work Item Query Language used by Azure Boards. 
 ms.custom: boards-queries  
-ms.technology: devops-agile  
+ms.service: azure-devops-boards
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.author: kaelli  
@@ -52,7 +52,7 @@ ASOF '02-11-2020'
 
 
 > [!TIP] 
-> By installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor), you can constructure queries using the Query Editor and then view the WIQL syntax. You can then copy and modify the WIQL syntax and run the query using the **Wiql Playground** hub added to **Boards**.
+> By installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor), you can construct your queries using the Query Editor and then view the WIQL syntax. You can then copy and modify the WIQL syntax and run the query using the **Wiql Playground** hub added to **Boards**.
 
 :::row:::
    :::column span="1":::

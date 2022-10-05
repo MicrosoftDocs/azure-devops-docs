@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn how to manage the policy that allows Team and Project Administrators to invite new users to Azure DevOps Services.
 ms.assetid: 
 ms.topic: how-to
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

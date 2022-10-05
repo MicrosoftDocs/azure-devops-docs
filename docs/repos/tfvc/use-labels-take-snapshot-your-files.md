@@ -3,11 +3,12 @@ title: Use labels to take a snapshot of your files
 titleSuffix: Azure Repos
 description: Learn how labels let you take a snapshot of your files so that, at a later date, you can refer back to that snapshot.
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 07/13/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Use labels to take a snapshot of your files in Azure Repos

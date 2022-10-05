@@ -2,7 +2,7 @@
 title: Run manual tests
 description: Learn about test tools to run manual tests with Azure Test Plans to make sure each of the deliverables meets your user's needs.
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x

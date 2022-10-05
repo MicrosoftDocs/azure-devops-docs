@@ -2,7 +2,7 @@
 title: Source and package componentization
 description: Using Azure Artifacts to facilitate collaboration
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.date: 01/13/2022
 ms.topic: reference
 monikerRange: '<= azure-devops'

@@ -2,7 +2,7 @@
 title: Rollup child work item values to sample report
 titleSuffix: Azure DevOps
 description:  Learn how to generate a rollup of child work item values to the parent Power BI report.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE

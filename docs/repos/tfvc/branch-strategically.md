@@ -3,10 +3,11 @@ title: Branch strategically
 titleSuffix: Azure Repos
 description: Branch strategically
 ms.assetid: f586f036-a63f-40f9-8143-732e1d01323f
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

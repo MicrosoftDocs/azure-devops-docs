@@ -2,7 +2,6 @@
 title: Improvements to strengthen security.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 2/9/2022
 description: With this update, we've included improvement to strengthen security in Azure DevOps. 
 ---
