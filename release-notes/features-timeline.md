@@ -70,7 +70,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      - PAT lifecycle APIs
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAT lifecycle APIs
    :::column-end:::
    :::column span="":::
       Platform
@@ -98,7 +98,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-     - AAD Tenant Scoped Policies 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AAD Tenant Scoped Policies 
    :::column-end:::
    :::column span="":::
       Platform
@@ -126,7 +126,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 :::row-end:::
 :::row:::
    :::column span="":::
-      - [Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Associate all public APIs with PAT scopes](https://review.docs.microsoft.com/azure/devops/release-notes/roadmap/2023/q3features?branch=users%2Fglmorale%2Fnewroadmap#associate-all-public-apis-with-pat-scopes)
    :::column-end:::
    :::column span="":::
       Platform
