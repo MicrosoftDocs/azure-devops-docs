@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-cicd
+ms.subservice: azure-devops-security: devops-cicd
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include

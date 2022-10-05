@@ -2,7 +2,7 @@
 title: Define a work item query for a process template
 titleSuffix: TFS
 description: Use Team Explorer to create a work item query, save as a .wiq file, and add to a process template 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 2e035f4a-c542-487f-96f9-d730e4700af2
 ms.author: kaelli
 author: KathrynEE

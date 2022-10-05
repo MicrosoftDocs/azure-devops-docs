@@ -2,7 +2,7 @@
 title: Customize and manage the test experience
 titleSuffix: Azure DevOps 
 description: Learn how to customize and manage the test experience
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: witadmin
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli

@@ -2,7 +2,7 @@
 title: Query work items by history in Azure Boards  
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: kaelli
 author: KathrynEE
@@ -301,6 +301,19 @@ You can use the following fields to filter queries and create reports. Several o
    :::column-end:::
    :::column span="1":::
    All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Revised Date
+   :::column-end:::
+   :::column span="2":::
+   The date and time when a work item was revised or modified.
+
+   Reference name=System.RevisedDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+   Shared Parameter, Shared Step, Test Case
    :::column-end:::
 :::row-end:::
 :::row:::

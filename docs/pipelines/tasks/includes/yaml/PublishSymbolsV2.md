@@ -3,8 +3,7 @@ ms.topic: include
 author: shashban
 ms.author: shashban
 ms.date: 06/17/2022
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML

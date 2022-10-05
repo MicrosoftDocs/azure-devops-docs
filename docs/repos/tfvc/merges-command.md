@@ -3,10 +3,11 @@ title: Merges Command
 titleSuffix: Azure Repos
 description: Merges Command
 ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

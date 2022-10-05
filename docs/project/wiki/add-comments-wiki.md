@@ -2,7 +2,7 @@
 title: Add comments to wiki pages 
 titleSuffix: Azure DevOps 
 description: Learn how to add comments to wiki pages in Azure DevOps. 
-ms.technology: devops-collab
+ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: conceptual
 ms.assetid:

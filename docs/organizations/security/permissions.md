@@ -2,7 +2,7 @@
 title: Permissions, security groups, and service accounts reference
 titleSuffix: Azure DevOps
 description: Reference guide of security groups, service accounts, and permissions for Azure DevOps
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: conceptual

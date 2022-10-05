@@ -4,7 +4,7 @@ metadata:
   description: Get answers to common questions about working with work item queries in Azure DevOps. 
   titleSuffix: Azure Boards
   ms.custom: boards-queries
-  ms.technology: devops-agile
+  ms.service: azure-devops-boards
   ms.author: kaelli
   author: KathrynEE
   ms.topic: faq

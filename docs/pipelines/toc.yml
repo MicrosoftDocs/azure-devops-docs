@@ -409,7 +409,7 @@
         - name: Build a data pipeline
           href: apps/cd/azure/build-data-pipeline.md
     - name: Azure Machine Learning
-      href: targets/azure-machine-learning.md
+      href: /azure/machine-learning/how-to-devops-machine-learning
     - name: Azure Databases
       items:
        - name: Azure SQL database

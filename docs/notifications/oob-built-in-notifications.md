@@ -2,7 +2,7 @@
 title: Default and supported notifications
 titleSuffix: Azure DevOps
 description: Learn about out of the box or default notifications set in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.custom: cross-project
 ms.topic: conceptual
 toc: show

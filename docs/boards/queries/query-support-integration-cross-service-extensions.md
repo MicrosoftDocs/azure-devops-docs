@@ -3,7 +3,7 @@ title: Cross-service operation queries in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards 
 description: Learn about extra features, like cross-service operations, that are supported by work tracking queries in Azure Boards and Azure DevOps. 
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE

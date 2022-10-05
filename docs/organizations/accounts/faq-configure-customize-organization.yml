@@ -4,7 +4,7 @@ metadata:
   titleSuffix: Azure DevOps
   ms.custom: seodec18
   description: Learn the answers to frequently asked questions (FAQs) about creating, deleting, restoring, and configuring your organization in Azure DevOps.
-  ms.technology: devops-accounts
+  ms.subservice: azure-devops-organizations
   ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
   ms.topic: faq
   ms.author: chcomley

@@ -3,10 +3,11 @@ title: What is Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

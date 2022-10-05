@@ -3,7 +3,7 @@ title: Kanban terms and concepts
 titleSuffix: Azure Boards
 description: Learn about key concepts, the glossary of terms, and available tools used in tracking work using Kanban boards and methods.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

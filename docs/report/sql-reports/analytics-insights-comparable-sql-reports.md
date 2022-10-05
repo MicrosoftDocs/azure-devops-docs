@@ -2,7 +2,7 @@
 title: Get Analytics insights comparable to those provided by SQL Reporting Services reports 
 titleSuffix: Azure DevOps 
 description: Learn how to get insights using Analytics comparable to those provided by the legacy SQL Reporting Services reports.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -300,7 +300,7 @@ The following table summarizes Analytics reports, widgets, and other tools that 
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Work tracking properties reference](../powerbi/analytics-fields-reference.md)
+> [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)
 
 
 ## Related articles 

@@ -2,9 +2,8 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/12/2022
+ms.date: 10/4/2022
 ms.topic: article
-ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
@@ -120,15 +119,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="8"><a href="2022/sprint-209-update.md" data-raw-source="[12 September 2022](2022/sprint-209-update.md)"> 12 September 2022</a></td>
-    <td>Increase Delivery Plans team limit from 15 to 20</td><td>Boards</td><td>Future</td></tr>
-    <td>Fixed bug in Reporting Work Item Links Get API</td><td>Boards</td><td>Future</td></tr>
-    <td>New Boards Hub bug fixes</td><td>Boards</td><td>Future</td></tr>
-    <td>Disable showing the last commit message for a pipeline run</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Consumed resources and template parameters in Pipelines Runs Rest API</td><td>Pipelines</td><td>Future</td></tr>    
-    <td>Add support for string split function in YAML expression</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Do not sync tags when fetching a Git repository</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Updated brownout schedule for Ubuntu 18.04 images</td><td>Pipelines</td><td>N/A</td></tr>
+    <td rowspan="6"><a href="2022/sprint-210-update.md" data-raw-source="[4 October 2022](2022/sprint-210-update.md)"> 4 October 2022</a></td>
+    <td>Personal Access Token (PAT) associated to all public REST APIs</td><td>General</td><td>Future</td></tr>
+    <td>Move to column and move to swimlane</td><td>Boards</td><td>Future</td></tr>
+    <td>PowerShell task performance improvement</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipelines Agent on .NET 6 pre-announcement</td><td>Pipelines</td><td>N/A</td></tr>    
+    <td>Node 16 task runner in pipeline agent</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>New user interface for upstream package search</td><td>Artifacts</td><td>Future</td></tr>
 </tr>
     <td rowspan="3"><a href="2022/sprint-208-update.md" data-raw-source="[12 August 2022](2022/sprint-208-update.md)"> 12 August 2022</a></td>
     <td>Improved error message when failing to load pipelines</td><td>Pipelines</td><td>Future</td></tr>

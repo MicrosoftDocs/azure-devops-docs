@@ -3,10 +3,11 @@ title: Reconcile Command
 titleSuffix: Azure Repos
 description: Reconcile Command
 ms.assetid: ef4aa5f8-b62e-4dd2-9fb8-1e28b7e0123f
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 
