@@ -2,7 +2,7 @@
 title: Connect to a feed and publish NuGet packages - NuGet.exe
 description: How to connect to your feed and publish NuGet packages using the command line
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 06/23/2022
 monikerRange: '<= azure-devops'

@@ -3,10 +3,11 @@ title: Azure DevOps Plugin for IntelliJ, IDEA, Android Studio
 titleSuffix: Azure Repos
 description: Intro to the IntelliJ plugin available for Azure DevOps.
 ms.assetid:
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 11/13/2020
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 

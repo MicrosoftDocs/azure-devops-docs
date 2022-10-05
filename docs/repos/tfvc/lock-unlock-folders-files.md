@@ -3,10 +3,11 @@ title: Lock and unlock folders or files | TFVC
 titleSuffix: Azure Repos
 description: Lock and unlock folders or files using Team Foundation Version Control 
 ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

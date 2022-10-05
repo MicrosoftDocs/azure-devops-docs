@@ -198,7 +198,6 @@ Azure DevOps supports many different authentication mechanisms, including basic 
    :::column-end:::
 :::row-end:::
 
-
 ---
 ## All features
 :::row:::

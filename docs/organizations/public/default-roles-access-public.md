@@ -2,7 +2,7 @@
 title: Default roles & access 
 titleSuffix: Azure DevOps Services Public Project
 description: Overview of public project user roles and access
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.author: chcomley
 author: chcomley

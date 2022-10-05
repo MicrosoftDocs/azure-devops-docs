@@ -3,10 +3,11 @@ title: Git limits
 titleSuffix: Azure Repos
 description: Resource limits applied to Git operations
 ms.assetid: 
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 05/26/2021
 monikerRange: 'azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 

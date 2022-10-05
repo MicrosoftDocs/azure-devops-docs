@@ -33,7 +33,7 @@ semi-automated processes with **approvals** and **on-demand deployments**.
 
 See [Releases in Azure Pipelines](releases.md) to understand releases and deployments and watch the following video to see release pipelines in action.
 
-  > [!VIDEO https://docs.microsoft.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player]
+  > [!VIDEO https://learn.microsoft.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player]
 
 <a name="howrmworks"></a>
 

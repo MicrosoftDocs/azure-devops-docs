@@ -2,7 +2,7 @@
 title: Use the .artifactignore file
 description: Use .artifactignore to exclude files and folders when you publish Artifacts
 ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: reference
 ms.date: 01/26/2022
 monikerRange: 'azure-devops'

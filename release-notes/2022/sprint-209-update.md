@@ -2,7 +2,6 @@
 title: Addressed multiple requests from the Developer Community.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 9/12/2022
 description: With this update, we addressed multiple requests from the Developer Community.  
 ---

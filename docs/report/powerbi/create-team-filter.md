@@ -2,7 +2,7 @@
 title: Apply a team filter to a Power BI report
 titleSuffix: Azure DevOps 
 description: Learn how to create a trend report with a team filter using an Analytics view.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -53,7 +53,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
    
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"TeamName", "TeamSK"})
     in
         #"Select columns"
@@ -70,7 +70,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaName,AreaSK"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Areas?$select=AreaName,AreaSK"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"AreaName", "AreaSK"})
     in
         #"Select columns"
@@ -82,7 +82,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaSK&$expand=Teams($select=TeamSK)"),
+        #"Get table" = VSTS.Feed("https://analytics.dev.azure.com/{OrganizationName}/_odata/v2.0/Areas?$select=AreaSK&$expand=Teams($select=TeamSK)"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"AreaSK", "Teams"}),
         #"Expand Teams" = Table.ExpandTableColumn(#"Select columns", "Teams", {"TeamSK"}, {"TeamSK"})
     in

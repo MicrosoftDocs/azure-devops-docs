@@ -575,8 +575,8 @@ To trigger agent update - request body should be empty.
 > 
 ## Learn more
 
-For more information about agents, see the following modules from the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/) learning path.
-* [Choose a Microsoft-hosted or self-hosted build agent](/learn/modules/host-build-agent/2-choose-a-build-agent)
-* [Host your own build agent in Azure Pipelines](/learn/modules/host-build-agent/)
+For more information about agents, see the following modules from the [Build applications with Azure DevOps](/training/paths/build-applications-with-azure-devops/) learning path.
+* [Choose a Microsoft-hosted or self-hosted build agent](/training/modules/host-build-agent/2-choose-a-build-agent)
+* [Host your own build agent in Azure Pipelines](/training/modules/host-build-agent/)
 
 ::: moniker-end

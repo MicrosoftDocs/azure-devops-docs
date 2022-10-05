@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: include

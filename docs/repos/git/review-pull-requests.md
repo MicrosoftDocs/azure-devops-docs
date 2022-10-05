@@ -3,12 +3,13 @@ title: Review and comment on pull requests
 titleSuffix: Azure Repos
 description: Learn how to review pull requests using Git in Azure Repos, including making comments, adding suggestions, and voting on changes.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: how-to
 ms.author: vijayma
 author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
+ms.subservice: azure-devops-repos-git
 ---
 
 # Review pull requests

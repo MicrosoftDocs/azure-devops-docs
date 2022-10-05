@@ -3,7 +3,7 @@ title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define Azure Boards features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
 ms.author: kaelli
 author: KathrynEE

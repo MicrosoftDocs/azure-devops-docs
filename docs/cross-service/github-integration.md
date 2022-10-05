@@ -2,7 +2,7 @@
 title: GitHub integration overview
 titleSuffix: Azure DevOps
 description: Learn about Azure DevOps integration with GitHub.
-ms.technology: devops-agile 
+ms.subservice: azure-devops-cross-service
 ms.custom: cross-service
 ms.topic: overview
 ms.author: kaelli

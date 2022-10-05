@@ -3,7 +3,7 @@ title: Assign backlog items to a sprint
 titleSuffix: Azure Boards
 description: Learn how to assign work to a sprint or iteration using Agile processes and tools in Azure Boards.
 ms.custom: boards-sprints
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE

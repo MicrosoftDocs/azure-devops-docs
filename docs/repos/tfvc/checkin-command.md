@@ -3,10 +3,11 @@ title: Checkin command
 titleSuffix: Azure Repos
 description: Checkin command
 ms.assetid: 90b18c7c-b0ae-4f46-829f-3a4471614086
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

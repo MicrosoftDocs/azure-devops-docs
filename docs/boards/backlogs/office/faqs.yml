@@ -3,7 +3,7 @@ metadata:
   title: Work in Excel connected to Azure Boards FAQs
   description: Learn answers to frequently asked questions about Excel and Azure Boards.
   titleSuffix: Azure Boards
-  ms.technology: devops-agile
+  ms.service: azure-devops-boards
   ms.author: kaelli
   author: KathrynEE
   ms.topic: faq

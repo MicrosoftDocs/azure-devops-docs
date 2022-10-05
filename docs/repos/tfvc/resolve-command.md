@@ -3,10 +3,11 @@ title: Resolve Command
 titleSuffix: Azure Repos
 description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

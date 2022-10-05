@@ -3,7 +3,7 @@ title: Capability Maturity Model Integration (CMMI) process work item types & wo
 titleSuffix: Azure Boards
 ms.custom: work-items
 description: Learn how to use the CMMI process work item types and workflow to track work in Azure Boards and Azure DevOps.  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
 ms.author: kaelli

@@ -2,7 +2,7 @@
 title: Install extensions for on-premises servers
 description: Find and install extensions for Azure DevOps Server from the Azure DevOps Marketplace.
 ms.topic: conceptual
-ms.technology: devops-marketplace
+ms.subservice: azure-devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.author: chcomley
 author: chcomley

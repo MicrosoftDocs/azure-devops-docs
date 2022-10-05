@@ -2,7 +2,7 @@
 title: Create a public project in Azure DevOps
 titleSuffix: Azure DevOps Services Public Project  
 description: Create or add a public project to your organization 
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.author: chcomley
 author: chcomley

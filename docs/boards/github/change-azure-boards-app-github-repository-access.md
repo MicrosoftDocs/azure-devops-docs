@@ -2,7 +2,7 @@
 title: Change Azure Boards app to allow GitHub repository access 
 titleSuffix: Azure Boards
 description: Learn how to configure the Azure Boards app to allow or suspend GitHub repository access.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE

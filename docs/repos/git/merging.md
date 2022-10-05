@@ -3,10 +3,11 @@ title: Resolve Git merge conflicts
 titleSuffix: Azure Repos
 description: Learn how to resolve merge conflicts stemming from a Git merge or a Git rebase, by using Visual Studio or the command line.
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 04/06/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Resolve merge conflicts

@@ -2,7 +2,7 @@
 title: Add reports via a process template 
 titleSuffix: Azure DevOps Server
 description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Azure DevOps Server 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
 ms.author: kaelli
 author: KathrynEE

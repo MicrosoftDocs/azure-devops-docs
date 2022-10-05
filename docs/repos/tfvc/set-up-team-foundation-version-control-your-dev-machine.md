@@ -3,10 +3,11 @@ title: Team Foundation Version Control on your dev machine
 titleSuffix: Azure Repos
 description: Set up Team Foundation Version Control on your dev machine
 ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

@@ -7,8 +7,7 @@ metadata:
   title: Marketplace & extensibility documentation
   titleSuffix: Azure DevOps 
   description: Discover, manage, and develop extensions and widgets for integration with Azure DevOps. 
-  ms.prod: devops 
-  ms.technology: devops-marketplace
+  ms.subservice: azure-devops-marketplace
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
