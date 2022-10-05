@@ -3,7 +3,7 @@ title: Keyboard shortcuts for Azure Boards
 titleSuffix: Azure Boards
 description: Learn about keyboard shortcuts for the web portal for Azure Boards and Team Explorer.
 ms.custom: Navigation
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE

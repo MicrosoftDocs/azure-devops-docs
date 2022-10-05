@@ -2,7 +2,7 @@
 title: Get started with Stakeholder access 
 titleSuffix: Azure DevOps 
 description: Add & update work items, view work tracking progress with Stakeholder access
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.author: kaelli
 author: KathrynEE
@@ -111,7 +111,7 @@ You can start viewing work items once you connect to a project.
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
@@ -169,7 +169,7 @@ Or, you can add work items to the bottom of the product backlog. Open the backlo
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops"
 
 From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by choosing the **Backlog** link. Also, you can't update the status of a work item by drag-and-drop to a different column or reorder cards within a column. 
 
@@ -290,7 +290,7 @@ From the Kanban board, choose **View as backlog**.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 From the Kanban board, choose **View as backlog**.  
 

@@ -3,7 +3,7 @@ title: Quick reference for concepts related to work item tasks
 titleSuffix: Azure Boards
 description: Learn about query operators, macros, and sample queries used to list work items for Azure Boards and Azure DevOps.
 ms.custom: boards-work-items  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
@@ -317,7 +317,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### On-premises XML process model
 

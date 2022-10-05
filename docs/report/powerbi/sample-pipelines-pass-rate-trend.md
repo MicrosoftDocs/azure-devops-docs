@@ -2,7 +2,7 @@
 title: Pipeline pass rate sample Power BI report 
 titleSuffix: Azure DevOps
 description: How-to generate a pipeline pass rate Power BI report  
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
 ms.custom: powerbisample

@@ -2,8 +2,7 @@
 title: Pipeline test duration sample Power BI reports 
 titleSuffix: Azure DevOps
 description: Learn how to generate a test duration Power BI report for a given pipeline in the project.
-ms.prod: devops
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.manager: mijacobs
 ms.author: kaghai

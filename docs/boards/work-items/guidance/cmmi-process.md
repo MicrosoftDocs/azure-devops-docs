@@ -3,7 +3,7 @@ title: Understand process template artifacts in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
 ms.custom: work-items
 description: Learn about Capability Maturity Model Integration (CMMI) process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards and Azure DevOps. 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
 ms.author: kaelli
@@ -20,7 +20,8 @@ ms.date: 04/01/2022
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They're based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md) process.
 
-<img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" />  
+:::image type="content" source="media/cmmi-process-work-tracking-wits.png" alt-text="Conceptual image, CMMI process work item types.":::
+
 
 Along with the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
@@ -32,15 +33,7 @@ Along with the WITs, teams have access to a set of work item queries to track in
 
 Teams plan their project by capturing features and requirements. When teams work in sprints, they define tasks and link them to requirements. To gain insight into a rollup of requirements across teams, program managers link requirements to a feature. Blocking issues are tracked using issues. For details on using these WITs, see [CMMI process work item types and workflow](cmmi-process-workflow.md)
 
-The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
-
-*Click one of the following images to go to the linked article.*
-
-[![Define stories](../../backlogs/media/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/media/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/media/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/media/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
-
-> [!NOTE]  
-> A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
-
+[!INCLUDE [temp](../../includes/process-guidance-conceptual.md)] 
 
 <a id="shared-queries"></a> 
 
@@ -55,7 +48,7 @@ You can use work item queries to list work items based on their type, such as ch
 
 Or, use one of the shared queries that the CMMI process provides.
 
-![CMMI shared queries](media/IC667909.png)
+![Screenshot of CMMI shared queries.](media/IC667909.png)
 
 [Descriptions of predefined queries](#predefined-queries) are listed later in this article.  
 
@@ -67,25 +60,21 @@ Or, use one of the shared queries that the CMMI process provides.
 
 All processes&mdash;Agile, Scrum, and CMMI&mdash;support <a href="../../../report/dashboards/overview.md" data-raw-source="[building status and trend charts and dashboards](../../../report/dashboards/overview.md)">building status and trend charts and dashboards</a>. Also, several charts are automatically built based on the Agile tools you use. These charts display within the web portal.  
 
-## Create light-weight charts  
-To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
-
-[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/dashboards/charts.md)[![Add dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/dashboards/add-charts-to-dashboard.md)  
-
+[!INCLUDE [temp](../../includes/create-lightweight-charts.md)] 
 
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="< azure-devops-2022"
 
 <a id="reports"></a>
 
 ## SQL Server reports  
 
 
-If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to many CMMI reports. For these reports to be useful, [teams must do certain activities](../../../report/admin/review-team-activities-for-useful-reports.md), such as define build processes, link work items, and update status or remaining work.  
+If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to many CMMI reports. For these reports to be useful, [teams must do certain activities](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports), such as define build processes, link work items, and update status or remaining work.  
 
-If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
 ::: moniker-end
  
 
@@ -96,18 +85,14 @@ If you need to add reporting services or update reports to the latest versions, 
 
 ### CMMI process versions  
 
-As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name. 
+As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Each template provides a `version` element. This element specifies a major and minor version. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
+> | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
 > | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
 > | TFS 2018 | CMMI | 16 |
-> | TFS 2017 | CMMI | 15 |
-> | TFS 2015 | CMMI | 7 |
-> | TFS 2013 | MSF for CMMI Process Improvement 2013 | 7 |
-> | TFS 2012 | MSF for CMMI Process Improvement 6.0  | 6 |
-> | TFS 2008 | MSF for CMMI Process Improvement - v4.*n* |   |
 
 For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
 

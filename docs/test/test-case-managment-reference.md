@@ -2,7 +2,7 @@
 title: Test case management commands (tcm.exe) 
 titleSuffix: Azure DevOps  
 description: Learn which commands you can use to manage Azure Test Plans
-ms.technology: devops-test
+ms.service: azure-devops-test-plans
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE

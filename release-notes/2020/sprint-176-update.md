@@ -2,7 +2,6 @@
 title: Sprint 176
 author: sid-ah
 ms.author: simerzou
-ms.technology: devops-release-notes
 ms.date: 10/01/2020
 description: As an addition to the default repository branch setting, we have now added a default branch name for the org-level so that projects default to the organization setting when the branch name isn't specified.
 ---

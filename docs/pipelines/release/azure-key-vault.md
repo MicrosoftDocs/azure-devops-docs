@@ -233,7 +233,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 1. The text file should contain our secret: *mysecretpassword*.
 
 > [!WARNING]
-> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 ## Clean up resources
 

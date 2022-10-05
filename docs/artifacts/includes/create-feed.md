@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-artifacts
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
@@ -19,13 +19,16 @@ ms.date: 02/14/2022
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
 
-1. Select **Create** when you are done.
+1. Select **Create** when you're done.
+
+> [!NOTE]
+> By default, the *Project Collection Build Service* (org-scoped) and the project-level *Build Service* (project-scoped) are set to **Collaborator** when you create a new feed.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade to TFS 2017 in order to use Azure Artifacts. If this is the first time using your feed, you might be asked to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses-in-tfs)
+Azure Artifacts comes pre-installed in TFS 2018. If this is the first time using your feed, you might be asked to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses-in-tfs)
 
 1. Go to **Build & Release** and select **Packages**.
 
@@ -42,6 +45,6 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
 
-1. Select **Create** when you are done.
+1. Select **Create** when you're done.
 
 ::: moniker-end

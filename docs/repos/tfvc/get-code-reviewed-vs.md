@@ -4,10 +4,11 @@ titleSuffix: Azure Repos
 description: Get a code review from your team using Visual Studio
 ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

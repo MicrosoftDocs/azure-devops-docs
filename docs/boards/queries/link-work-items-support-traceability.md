@@ -2,14 +2,14 @@
 title: Link work items to support traceability in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to support an auto trail of changes and enable quick navigation by linking work items together.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: "boards-queries, cross-project, cross-service"
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 07/26/2022
 ---
 
 # Use links to view dependencies and track related work 
@@ -94,9 +94,9 @@ You can create links between work items by using one of the links control tabs w
 
 <a id="team-services-link" /> 
 
-From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
+From the work item form, you can add a link using the **Related Work** section or from the **Links** tab.
 
-Open a work item and choose the :::image type="icon" source="../media/icons/add-green-icon.png" border="false"::: plus icon to add a link. 
+Open a work item and choose **Add link** or the :::image type="icon" source="../media/icons/add-green-icon.png" border="false"::: plus icon to add a link. 
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -241,12 +241,16 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - And, with the **Development** control, you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range=">= azure-devops-2020"  
 :::image type="content" source="../backlogs/media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"  
-![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
+::: moniker range="azure-devops-2019"  
+:::image type="content" source="../backlogs/media/git/development-control-2019.png" alt-text="Screenshot of work item form, Development control, Azure DevOps Server 2019.":::
+::: moniker-end
+
+::: moniker range="tfs-2018"  
+![Screenshot of work item form, Development control, TFS 2018.](../backlogs/media/drive-git-development-dev-section.png)  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 

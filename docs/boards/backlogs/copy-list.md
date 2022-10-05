@@ -3,7 +3,7 @@ title: Copy a list of stories, issues, or other work items in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to copy a list of user stories, issues, bugs, tasks, or other work items from a backlog or query in Azure Boards.
 ms.custom: seodec18
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
@@ -27,7 +27,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"  
+::: moniker range="< azure-devops"  
 
 > [!TIP]  
 > The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
@@ -41,7 +41,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 	Here we multi-select from the product backlog and choose **Copy to clipboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-work-item-copy-to-clipboard-ts-1.png)
+	> ![Screenshot of backlog page, multi-select items, open context menu, Copy to clipboard.](media/copy-work-item-copy-to-clipboard-ts-1.png)
 
 
 ## Paste the contents into your email client
@@ -50,7 +50,7 @@ Once you've copied your list, you can paste the contents of the clipboard into y
 
 The formatted table contains a link to each work item included in your selected results list. A link to a query that will open only those work items selected is also provided.</p>
 
-![Copy as HTML paste results](media/bulk-modify-copy-as-html-table-results.png)  
+![Screenshot of Copy as HTML paste results.](media/bulk-modify-copy-as-html-table-results.png)  
 
 ## Related articles  
 

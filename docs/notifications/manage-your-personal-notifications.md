@@ -2,13 +2,13 @@
 title: Manage personal notification settings
 titleSuffix: Azure DevOps
 description: Get personally notified, when changes occur to source code, git, work items, and builds in Azure DevOps.
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.custom: contperf-fy22q1, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/04/2022
+ms.date: 07/25/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -30,8 +30,6 @@ For information about team and project-level notifications, see [Team and projec
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
-
-
 ## Prerequisites
 
 - Every user can manage their personal notifications
@@ -52,7 +50,7 @@ The following table shows notification event examples. For more information, see
 
 ::: moniker range="azure-devops"
 
-To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New Account Manager** feature is enabled.
+To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New account manager** feature is enabled.
 
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
@@ -66,7 +64,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-1. Open your **User settings**, and then select **Notification settings** from the resulting list.
+2. Open **User settings**, and then select **Notification settings** from the resulting list.
 
    ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
 
@@ -76,25 +74,21 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. Sign in to your project (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-::: moniker-end
-
-::: moniker range=">= tfs-2018"
-=======
-1. Open your **User settings**, and then select **Notification settings** from the resulting list.
+2. Open **User settings**, and then select **Notification settings** from the resulting list.
 
    ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
-::: moniker-end  
-
-::: moniker range=" < azure-devops"
-
-> [!div class="mx-imgBorder"]
-> ![Go to the personal notifications page.](media/nav-personal-notifications-hub.png)
 
 ::: moniker-end
 
+::: moniker range=" tfs-2018"
 
+Open **User settings**, and then select **Notification settings** from the resulting list.
+
+![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
+
+::: moniker-end
 
 ::: moniker range="tfs-2018"
 
@@ -106,7 +100,7 @@ This view shows all notification subscriptions that you've created or that were 
 
 ::: moniker range="azure-devops"
 
-To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New Account Manager** feature is enabled.
+To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New account manager** feature is enabled.
 
 #### [New Account Manager enabled](#tab/new-account-enabled) 
 
@@ -118,8 +112,6 @@ To access the Preview features options, open your profile menu. The profile menu
 > [!div class="mx-imgBorder"]  
 > ![Personal notification subscriptions, current page.](media/unsubscribe-personal-notifications-newnav.png)
 
-***
-
 ::: moniker-end  
 
 ::: moniker range=" < azure-devops"
@@ -127,7 +119,7 @@ To access the Preview features options, open your profile menu. The profile menu
 :::image type="content" source="media/unsubscribe-personal-notifications.png" alt-text="Screenshot of unsubscribe from notification subscriptions.":::
 
 ::: moniker-end
-
+***
 ::: moniker range=">= tfs-2018"
 
 A notification subscription can be only for you. Or, if you're a team administrator you can ensure that it's shared by everyone on the team.
@@ -189,8 +181,6 @@ With custom personal notification subscriptions, you can define precise criteria
 
 ::: moniker-end  
 
-***
-
 ::: moniker range="> tfs-2018 < azure-devops"
 
 1. From your **Notifications** page, select **New subscription**.
@@ -238,6 +228,8 @@ With custom personal notification subscriptions, you can define precise criteria
    :::image type="content" source="media/manage-personal-notifications-subscription-added.png" alt-text="New subscription added.":::
 
 ::: moniker-end
+
+***
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
 

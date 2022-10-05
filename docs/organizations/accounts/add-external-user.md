@@ -3,7 +3,7 @@ title: Add, invite guest external users to your organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to invite an external user or outside guest to your organization
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
 ms.author: chcomley
@@ -40,7 +40,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
    

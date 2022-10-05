@@ -1,19 +1,19 @@
 ---
 title: Create a project wiki to share information
 titleSuffix: Azure DevOps
-description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps
-ms.technology: devops-collab
-ms.custom: wiki, devx-track-azurecli
+description: Share information with your team and increase collaboration using a built-in team project wiki in Azure DevOps.
+ms.subservice: azure-devops-wiki
+ms.custom: wiki, devx-track-azurecli, devdivchpfy22
 ms.topic: quickstart
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '<= azure-devops'
-ms.date: 03/05/2021
+ms.date: 08/03/2022
 ---
 
-# Create a Wiki for your project
+# Create a wiki for your project
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
@@ -46,7 +46,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-::: moniker range=" <= azure-devops-2020"
+::: moniker range=" < azure-devops"
 
 * You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
 * You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
@@ -60,7 +60,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 #### [Browser](#tab/browser) 
 
-Provision a new Git repository that stores all your wiki pages and related artifacts. From the Wiki landing page, select **Create Project Wiki**. (Even if you use TFVC for source control, you can create a wiki with a Git repository.)
+Provision a new Git repository that stores all your wiki pages and related artifacts. From the wiki landing page, select **Create Project wiki**. (Even if you use TFVC for source control, you can create a wiki with a Git repository.)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -125,8 +125,8 @@ az devops wiki create [--mapped-path]
 
 #### Parameters 
 
-- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify "/" to publish from the root of the repository. 
-- **name**: (Required for the **codewiki** type). Name of the new wiki. If you don't specify a name for type **projectwiki**, then the new wiki will be named *TeamProjectName*.wiki.
+- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify '/' to publish from the root of the repository. 
+- **name**: (Required for the **codewiki** type). Name of the new wiki. If you don't specify a name for type **projectwiki**, then the new wiki will be named *TeamProjectName.wiki*.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 - **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.

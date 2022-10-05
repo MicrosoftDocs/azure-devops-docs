@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.topic: include
 ms.date: 04/04/2022
 ---
@@ -18,7 +18,7 @@ ms.date: 04/04/2022
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).

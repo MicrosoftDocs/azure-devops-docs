@@ -3,7 +3,7 @@ title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
@@ -24,14 +24,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 ## Remove users from your organization
 
-::: moniker range=">= azure-devops-2020"
-
-> [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [Preview page](#tab/preview-page) 
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -39,7 +32,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
@@ -66,17 +59,13 @@ If users no longer require access to a team, project, or your organization, you 
 
 ::: moniker-end
 
-Choose the **Current page** tab for instructions. 
-
-#### [Current page](#tab/current-page)
-
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range="azure-devops-2019"
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
@@ -102,7 +91,7 @@ Choose the **Current page** tab for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
+The **Users** page isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

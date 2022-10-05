@@ -2,7 +2,7 @@
 title: Security best practices
 titleSuffix: Azure DevOps
 description: Best practices for managing security, keeping your information and data secure in Azure DevOps.
-ms.technology: 
+ms.subservice: azure-devops-security
 ms.topic: best-practice
 ms.author: chcomley
 author: chcomley

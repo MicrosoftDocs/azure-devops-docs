@@ -4,6 +4,14 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/sprint-210-update.md
+    - name: September 12
+      href: 2022/sprint-209-update.md
+    - name: August 12
+      href: 2022/sprint-208-update.md
+    - name: July 29
+      href: 2022/sprint-207-update.md
     - name: July 14
       href: 2022/sprint-206-update.md
     - name: June 27
@@ -179,16 +187,20 @@
   items:
   - name: What's new
     href: docswhatsnew/index.yml
-  - name: June 2022
+  - name: August 2022
     href: docswhatsnew/azure-devops-docs-whats-new.md
-  - name: May 2022
-    href: docswhatsnew/azure-devops-docs-2022-05.md
-  - name: April 2022
-    href: docswhatsnew/azure-devops-docs-2022-04.md
+  - name: July 2022
+    href: docswhatsnew/azure-devops-docs-2022-07.md
+  - name: June 2022
+    href: docswhatsnew/azure-devops-docs-2022-06.md
 - name: Azure Boards
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/boards/sprint-210-update.md
+    - name: September 12
+      href: 2022/boards/sprint-209-update.md
     - name: July 14
       href: 2022/boards/sprint-206-update.md
     - name: June 27
@@ -336,6 +348,14 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/pipelines/sprint-210-update.md
+    - name: September 12
+      href: 2022/pipelines/sprint-209-update.md
+    - name: August 12
+      href: 2022/pipelines/sprint-208-update.md
+    - name: July 29
+      href: 2022/pipelines/sprint-207-update.md
     - name: July 14
       href: 2022/pipelines/sprint-206-update.md
     - name: June 27
@@ -484,6 +504,10 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/artifacts/sprint-210-update.md
+    - name: July 29
+      href: 2022/artifacts/sprint-207-update.md
     - name: May 4
       href: 2022/artifacts/sprint-203-update.md
     - name: February 28
@@ -539,6 +563,8 @@
   items:
   - name: "2022"
     items:
+    - name: October 4
+      href: 2022/general/sprint-210-update.md
     - name: June 27
       href: 2022/general/sprint-205-update.md
     - name: April 20

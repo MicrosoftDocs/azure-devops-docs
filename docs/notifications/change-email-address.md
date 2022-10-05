@@ -2,32 +2,28 @@
 title: Change your preferred notification email address
 titleSuffix: Azure DevOps
 description: Change the email address used to receive alerts or email  notifications managed in Azure DevOps  
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/24/2020 
+ms.date: 07/25/2022
 ---
 
 # Change your preferred email address for notifications
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-You can change your preferred email address for notifications from your organization preferences profile page. Notifications are sent by default to the preferred email address for your organization profile. It's typically the email address you signed into Azure DevOps with.
-
+You can change your preferred email address for notifications from your organization preferences profile page. Notifications get sent by default to the preferred email address for your organization profile. This email address is typically the one you used to sign into Azure DevOps.
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Your preferred email address applies across all of your organizations and can't be changed on a per-organization basis.
-> 
-> It may take some time for the settings to take effect.
+> - Your preferred email address applies across all of your organizations and can't be changed on a per-organization basis.
+> - It may take some time for the settings to take effect.
+> - To enable the new user interface for the New account manager, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
-
-> [!NOTE]   
-> To enable the new user interface for the New account manager, see [Manage or enable features](../project/navigation/preview-features.md).
 
 1. From your home page, open user settings :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
@@ -63,7 +59,7 @@ You can change your preferred email address for notifications from your organiza
 
 	:::image type="content" source="../organizations/settings/media/user-preferences/user-profile-dialog-general-tab.png" alt-text="User Profile dialog, General tab":::
 
-For additional settings, see [Set your preferences](../organizations/settings/set-your-preferences.md).
+For other settings, see [Set your preferences](../organizations/settings/set-your-preferences.md).
 
 ::: moniker-end
 
@@ -77,7 +73,7 @@ For additional settings, see [Set your preferences](../organizations/settings/se
 
 3. Update the address and select **Save changes**.
 
-For additional settings, see [Set your preferences](../organizations/settings/set-your-preferences.md).
+For other settings, see [Set your preferences](../organizations/settings/set-your-preferences.md).
 
 ::: moniker-end
 

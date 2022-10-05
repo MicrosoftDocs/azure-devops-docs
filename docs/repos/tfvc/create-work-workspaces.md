@@ -3,10 +3,11 @@ title: Create and work with workspaces
 titleSuffix: Azure Repos
 description: Create and work with workspaces in TFVC
 ms.assetid: 1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

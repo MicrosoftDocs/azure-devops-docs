@@ -1,7 +1,7 @@
 ---
 title: Index Sources & Publish Symbols
 ms.custom: seodec18
-description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
+description: Use the index Sources & Publish Symbols task in Azure Pipelines
 ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.author: shashban
@@ -15,11 +15,11 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+Use this task to index your source code and publish your symbols to a file share or Azure Artifacts symbol server.
 
-Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
+Indexing your source code allows you to use your symbol files to debug your application on a machine other than the one you used to build your application. For example, you can debug an application built by a build agent from a dev machine that does not have the source code.
 
-Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../../../artifacts/concepts/symbols.md); to publish symbols, use this task and see [the walkthrough](../../artifacts/symbols.md).
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names.
 
 ## Demands
 
@@ -160,56 +160,33 @@ None
     </tr>
 </table>
 
-For more information about the different types of tasks and their uses, see [Task control options](../../process/tasks.md#controloptions).
-
 > [!IMPORTANT]
 > To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../../policies/retention.md#delete-a-run).
 
-
-## Open source
-
-This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
-
 ## FAQ
-<!-- BEGINSECTION class="md-qanda" -->
 
-### How does indexing work?
+### Q: How does indexing work?
 
-By choosing to index the sources, an extra section will be injected into the PDB files. PDB files normally contain references to the local source file paths only. For example, ```C:\BuildAgent\_work\1\src\MyApp\Program.cs```. The extra section injected into the PDB file contains mapping instructions for debuggers. The mapping information indicates how to retrieve the server item corresponding to each local path.
+A: By choosing to index the sources, an extra section will be injected into the PDB files. PDB files normally contain references to the local source file paths only E.g: *C:\BuildAgent\_work\1\src\MyApp\Program.cs*. The extra section injected into the PDB file contains mapping instructions for debuggers. The mapping information indicates how to retrieve the server item corresponding to each local path.
 
- The Visual Studio debugger will use the mapping information to retrieve the source file from the server. An actual command to retrieve the source file is included in the mapping information. You may be prompted by Visual Studio whether to run the command. For example
-```
+ The Visual Studio debugger will use the mapping information to retrieve the source file from the server. An actual command to retrieve the source file is included in the mapping information. Example:
+
+```command
 tf.exe git view /collection:http://SERVER:8080/tfs/DefaultCollection /teamproject:"93fc2e4d-0f0f-4e40-9825-01326191395d" /repository:"647ed0e6-43d2-4e3d-b8bf-2885476e9c44" /commitId:3a9910862e22f442cd56ff280b43dd544d1ee8c9 /path:"/MyApp/Program.cs" /output:"C:\Users\username\AppData\Local\SOURCE~1\TFS_COMMIT\3a991086\MyApp\Program.cs" /applyfilters
 ```
 
-### Can I use source indexing on a portable PDB created from a .NET Core assembly?
+### Q: Can I use source indexing on a portable PDB created from a .NET Core assembly?
 
-No, [Source Link](/dotnet/standard/library-guidance/sourcelink) is the equivalent to source indexing for portable PDBs.
+A: No, but you can use [Source Link](/dotnet/standard/library-guidance/sourcelink) instead.
 
-### Where can I learn more about symbol stores and debugging?
+### Q: How long are Symbols retained?
 
-- [Publish symbols for debugging](../../artifacts/symbols.md) 
+A: Symbols are associated with the build that published to Azure Pipelines they are associated with a build. When the build is deleted either manually or using retention policies, the symbols are also deleted. If you want to retain the symbols indefinitely, mark the build as **Retain Indefinitely**.
 
-- [Add symbol server to Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio.md#add-azure-artifacts-symbol-server)
+## Related articles
 
-- [Add symbol server to WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg.md#add-the-symbol-server-to-windbg)
+- [Publish symbols for debugging](../../artifacts/symbols.md)
 
-- [Symbol Server and Symbol Stores](/windows/win32/debug/symbol-servers-and-symbol-stores)
+- [Debug with Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio.md)
 
-- [SymStore](/windows-hardware/drivers/debugger/symstore)
-
-- [Use the Microsoft Symbol Server to obtain debug symbol files](/windows/win32/dxtecharts/debugging-with-symbols)
-
-- [The Srcsrv.ini File](/windows-hardware/drivers/debugger/the-srcsrv-ini-file)
-
-- [Source Server](/windows/win32/debug/source-server-and-source-indexing)
-
-- [Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
-
-[!INCLUDE [temp](../../includes/qa-agents.md)]
-
-### How long are Symbols retained?
-
-When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinitely.
-
-<!-- ENDSECTION -->
+- [Debug with WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg.md)

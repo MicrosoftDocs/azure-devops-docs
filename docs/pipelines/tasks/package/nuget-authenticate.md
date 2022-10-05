@@ -200,7 +200,7 @@ To get verbose logs from the pipeline, add a pipeline variable system.debug to t
 ### How does this task work?
 
 This task installs the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) into the NuGet plugins directory if it is not already installed.  
-It then sets environment variables such as `VSS_NUGET_URI_PREFIXES`, `VSS_NUGET_ACCESSTOKEN`, and `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` to configure the credential provider. These variables remain set for the lifetime of the job.  
+It then sets environment variables such as `VSS_NUGET_URI_PREFIXES` and `VSS_NUGET_ACCESSTOKEN` to configure the credential provider. These variables remain set for the lifetime of the job.  
 When restoring or pushing packages, a NuGet tool executes the credential provider, which uses the above variables to determine if it should return credentials back to the tool.
 
 See the credential provider documentation for more details.

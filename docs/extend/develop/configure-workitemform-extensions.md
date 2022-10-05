@@ -2,7 +2,7 @@
 title: Configure work item form extensions | Extensions for Azure DevOps
 description: Describes how to add and configure work item form extensions in Azure DevOps.
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.custom: freshness-fy22q3
 ms.topic: conceptual
 monikerRange: '<= azure-devops'

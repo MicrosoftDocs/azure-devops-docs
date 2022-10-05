@@ -2,7 +2,7 @@
 title: Set up or configure hierarchical teams in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn how to configure teams to support portfolio backlogs to track progress across teams in Azure Boards and  Azure DevOps.
-ms.technology: devops-agile 
+ms.service: azure-devops-boards
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

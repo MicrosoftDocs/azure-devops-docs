@@ -2,7 +2,7 @@
 title: Customize your work tracking experience
 titleSuffix: Azure DevOps 
 description: Guide to configuring and customizing work tracking features in Azure DevOps  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.custom: process
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.author: kaelli

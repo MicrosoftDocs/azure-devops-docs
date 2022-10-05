@@ -3,12 +3,11 @@ ms.topic: include
 author: vijayma
 ms.author: vijayma
 ms.date: 12/23/2019
-ms.prod: devops
-ms.technology: devops-cicd-tasks
+ms.subservice: azure-devops-pipelines-tasks
 ---
 
 ```YAML
-# Visual Studio build
+# Visual Studio Build
 # Build with MSBuild and set the Visual Studio version property
 - task: VSBuild@1
   inputs:
