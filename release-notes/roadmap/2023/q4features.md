@@ -22,7 +22,7 @@ As a user, I want to maintain my tree view even when I filter my backlog so that
 > [!NOTE]
 > This feature will only be available with the [**New Boards Hubs** preview](https://devblogs.microsoft.com/devops/new-boards-hub-public-preview/).
 
-[Suggestion Ticket](https://developercommunity.visualstudio.com/t/boards-backlogs-please-keep-displaying-the-hierarc/366475)
+[Community suggestion ticket](https://developercommunity.visualstudio.com/t/boards-backlogs-please-keep-displaying-the-hierarc/366475)
 
 ### Emoji support in work item tags
 
@@ -50,7 +50,7 @@ As a user, when I save a discussion, the entire work item (and run work item rul
 > [!div class="mx-imgBorder"]
 > ![Save Comment Improvements](media/boards-2022q4-03.png)
 
-[Suggestion Ticket](https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819)
+[Community suggestion ticket](https://developercommunity.visualstudio.com/t/separate-rights-for-work-item-discussion/365819)
 
 ## Pipelines
 
@@ -70,16 +70,21 @@ The Azure Pipelines agent and a number of its tasks use either Node 6 or Node 10
 
 ### Pull Request widget to allow for the selection of many repos
 
-For the [Pull Request widget](https://docs.microsoft.com/azure/devops/report/dashboards/widget-catalog?view=azure-devops#pull-request). Allow the selection of many repositories to be added at one time. 
+As a user, when I use the [Pull Request widget](https://docs.microsoft.com/azure/devops/report/dashboards/widget-catalog?view=azure-devops#pull-request), I should be allowed to select many repositories. 
 
-This feature will address the following developer community [suggestion ticket](https://developercommunity.visualstudio.com/t/allow-multiple-repository-selection-in-pull-reques/982784).
+[Community suggestion ticket](https://developercommunity.visualstudio.com/t/allow-multiple-repository-selection-in-pull-reques/982784).
 
 ### Rollup columns for query results
 
-Like backlogs, provide rollup columns to query results.
+Like backlogs, I want to be able to add rollup columns to query results.
 
-Addressing dev community suggestion ticket: [Add rollup columns on query results](https://developercommunity.visualstudio.com/t/could-you-add-rollup-columns-on-queries/758096)
+[Community suggestion ticket](https://developercommunity.visualstudio.com/t/could-you-add-rollup-columns-on-queries/758096)
 
 ### Show Link with Parent Name in Query Results Widget
 
-The Query Results Widget will support the name, work item icon, and link for the Parent. When using the parent column in a query in the queries view, a link to the parent item is displayed with an icon showing the work item type. However, the same query on a Query Results widget on a dashboard only shows the ID of the Parent work item.
+The Query Results Widget should a show a link to the parent item is displayed with an icon showing the work item type
+
+> [!div class="mx-imgBorder"]
+> ![show link with parent name in query results widget](media/reporting-2022q4-01.png)
+
+[Community suggestion ticket](https://developercommunity.visualstudio.com/t/query-results-widget-show-link-with-name-of-parent/819009)
