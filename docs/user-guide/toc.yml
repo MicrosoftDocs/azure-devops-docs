@@ -66,6 +66,8 @@
     href: ../organizations/security/allow-list-ip-url.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: Get support or provide feedback
     href: provide-feedback.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json 
+  - name: Look up platform and version
+    href: lookup-platform-version.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: Navigate in Team Explorer

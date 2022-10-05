@@ -2,8 +2,7 @@
 title: Pipeline test summary sample Power BI reports 
 titleSuffix: Azure DevOps
 description: Learn how to generate a test summary Power BI report for a given pipeline in the project.
-ms.prod: devops
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: ravishan
 ms.manager: mijacobs
 ms.author: kaghai

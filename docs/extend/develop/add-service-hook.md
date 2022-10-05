@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 title: Create a consumer service for service hooks | Extensions for Azure DevOps 
 description: Learn how to create a custom consumer service for service hooks in Azure DevOps.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8

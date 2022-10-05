@@ -3,7 +3,6 @@ title: Azure DevOps Release Notes - Azure Artifacts Sprint 203 Update
 description: See the Sprint 203 feature updates for Azure Artifacts, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.technology: devops-release-notes
 ms.date: 05/06/2022
 ---
 

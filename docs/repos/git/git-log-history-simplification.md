@@ -2,10 +2,11 @@
 title: Understand Git history simplification
 description: Learn how git log history simplification works
 ms.topic: conceptual
-ms.technology: devops-code-git
+ms.service: azure-devops-repos
 ms.assetid: 663ea04b-ee1e-41f9-8c5b-dfc269b093c2
 ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Understand Git history simplification

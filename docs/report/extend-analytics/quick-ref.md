@@ -2,7 +2,7 @@
 title: Sample reports and quick reference index for the Analytics service
 titleSuffix: Azure DevOps  
 description: An index of articles that explain how to generate results using OData backed Analytics for Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE
@@ -255,7 +255,7 @@ For Azure DevOps Server 2019, only Azure Boards work tracking data is available 
 
 ## Reference
 
-- [Work tracking properties reference](../powerbi/analytics-fields-reference.md)  
+- [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
 - [Analytics views dataset design](../powerbi/data-connector-dataset.md)  
 - [Supported OData functions and clauses](odata-supported-features.md)  
 - [OData API versioning](odata-api-version.md) 

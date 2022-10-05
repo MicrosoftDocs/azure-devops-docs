@@ -2,7 +2,7 @@
 title: Download permissions report for a pipeline release
 titleSuffix: Azure DevOps Services
 description: Download json-formatted permission report for a pipeline release.  
-ms.technology: devops-audit
+ms.subservice: azure-devops-audit
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to

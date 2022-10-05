@@ -2,7 +2,8 @@
 title: Use the Azure Boards app with Slack
 titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from within Slack.
-ms.technology: devops-agile
+ms.service: azure-devops
+ms.subservice: azure-devops-integration
 ms.topic: how-to
 ms.custom: cross-service
 ms.reviewer: karrg

@@ -3,7 +3,7 @@ title: Troubleshoot access, permission issues
 titleSuffix: Azure DevOps
 description: Find helpful troubleshooting information for resolving access and permission issues in Azure DevOps.  
 ms.assetid: 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley

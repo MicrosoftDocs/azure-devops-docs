@@ -2,7 +2,7 @@
 title: Manage Search, indexing
 description: Get instructions for how to check, pause, resume, and reindex a repository or collection.
 ms.assetid: 
-ms.technology: devops-collab
+ms.subservice: azure-devops-search
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

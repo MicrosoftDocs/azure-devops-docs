@@ -2,7 +2,7 @@
 title: Manage your projects in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to manage, plan, and coordinate the development and maintenance of software products by using tools in Azure Boards.
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 9079e8f8-ce21-4b26-96a1-3f28f9cfa90c
 ms.topic: conceptual
 ms.author: kaelli

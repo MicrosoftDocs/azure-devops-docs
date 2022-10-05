@@ -2,7 +2,7 @@
 title: Control access to functional areas
 titleSuffix: Azure DevOps & TFS
 description: Configure the initial security settings for the following functional areas for a project in Team Foundation Server  
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 6c967b40-4842-41db-9350-bb3320f3e57c
 ms.author: kaelli
 author: KathrynEE

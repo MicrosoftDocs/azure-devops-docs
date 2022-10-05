@@ -3,7 +3,7 @@ title: Create an organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18, contperf-fy20q4, contperf-fy22q3
 description: Learn how to create an organization or project collection with a personal Microsoft account, GitHub account, or work or school account.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.author: chcomley

@@ -3,7 +3,7 @@ title: Add, run, and update inline tests in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
 description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Azure Boards and Azure DevOps.   
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.author: kaelli
 author: KathrynEE

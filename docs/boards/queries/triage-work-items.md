@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.global_help.title: Triage work items
 description: Review and update work items by using the triage mode from the query results view in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
 ms.topic: tutorial
 ms.author: kaelli

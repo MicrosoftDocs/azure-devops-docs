@@ -2,7 +2,7 @@
 title: Use packages from nuget.org
 description: How to use packages from nuget.org with Azure Artifacts
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/14/2022
 monikerRange: '<= azure-devops'

@@ -2,7 +2,7 @@
 title: Configure repos and branches to integrate with work tracking
 titleSuffix: Azure DevOps
 description: Learn how to configure Azure Repos to support integration with Azure Boards and work tracking 
-ms.technology: devops-agile 
+ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE

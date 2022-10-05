@@ -3,10 +3,11 @@ title: Pull changes to your local Git repo
 titleSuffix: Azure Repos
 description: Learn how to use Git fetch, merge, rebase, and pull to get code from others by using Visual Studio or the Git command line.
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 03/29/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-git
 ---
 
 # Update code with fetch, merge, and pull

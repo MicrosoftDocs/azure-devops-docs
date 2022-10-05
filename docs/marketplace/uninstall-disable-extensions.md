@@ -3,7 +3,7 @@ title: Uninstall disable extensions in Azure DevOps
 titleSuffix: Azure DevOps
 description: Uninstall, disable, or remove extensions for Azure DevOps
 ms.topic: conceptual
-ms.technology: devops-marketplace
+ms.subservice: azure-devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.author: chcomley
 author: chcomley

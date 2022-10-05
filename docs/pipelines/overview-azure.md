@@ -54,11 +54,11 @@ If you're just getting started, we recommend you review and get started with the
       [DevOps solutions on Azure](https://azure.microsoft.com/solutions/devops/#products)
    :::column-end::: 
    :::column span="3":::
-      Use end-to-end solutions on Azure to implement DevOps practices throughout application planning, development, delivery, and operations. Apply the right combination of DevOps technologies, culture, and processes to enable continual software delivery and better value for customers. Get started with the following learn modules: 
-      - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)  
-      - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)  
-      - [Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines](/learn/modules/cna-deploy-maintain/)
-      - [Load test Azure web apps by using Azure DevOps](/learn/modules/load-test-web-app-azure-devops/)
+      Use end-to-end solutions on Azure to implement DevOps practices throughout application planning, development, delivery, and operations. Apply the right combination of DevOps technologies, culture, and processes to enable continual software delivery and better value for customers. Get started with the following Learn modules: 
+      - [Deploy applications with Azure DevOps](/training/paths/deploy-applications-with-azure-devops/)  
+      - [Build applications with Azure DevOps](/training/paths/build-applications-with-azure-devops/)  
+      - [Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines](/training/modules/cna-deploy-maintain/)
+      - [Load test Azure web apps by using Azure DevOps](/training/modules/load-test-web-app-azure-devops/)
    :::column-end:::
 :::row-end:::
 ---
@@ -158,7 +158,7 @@ Follow the links provided in the following table to learn more about the Azure s
       Configure a pipeline to integrate with a fully managed, serverless data integration service and unlock insights from all your data. Create an Azure Pipeline that builds and deploys a machine learning model as a web service and to automate the machine learning lifecycle. To learn more, see the following resources: 
       - [Build a data pipeline by using Azure Data Factory, DevOps, and machine learning; Configure Azure Databricks and Azure Data Factory](apps/cd/azure/build-data-pipeline.md#configure-azure-databricks-and-azure-data-factory)
       - [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks)
-      - [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](targets/azure-machine-learning.md).
+      - [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](/azure/machine-learning/how-to-devops-machine-learning).
    :::column-end:::
 :::row-end:::
 --- 
@@ -327,7 +327,7 @@ Follow the links provided in the following table to learn more about the Azure s
 | Azure App Configuration   | Service to centrally manage application settings and feature flags | [Push settings to App Configuration with Azure Pipelines](/azure/azure-app-configuration/push-kv-devops-pipeline), [Pull settings to App Configuration with Azure Pipelines](/azure/azure-app-configuration/pull-key-value-devops-pipeline)                                                            |
 | Azure Blob Storage                                  | Object storage solution for storing large amounts of unstructured data in the cloud  |     [Azure File Copy task](tasks/deploy/azure-file-copy.md)                                                         | 
 | Azure Kubernetes Service                            | Managed Kubernetes service for running containerized applications |  [Build and deploy to Azure Kubernetes Service](ecosystems/kubernetes/aks-template.md)  |
-| Azure Machine Learning                              | Cloud-based environment for working with machine learning models |  [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](targets/azure-machine-learning.md)                                                            |
+| Azure Machine Learning                              | Cloud-based environment for working with machine learning models |  [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](/azure/machine-learning/how-to-devops-machine-learning.md)                                                            |
 | Azure Resource Manager                              | Deployment and management service for Azure. Azure Resource Manager templates (ARM templates) are a way of quickly deploying infrastructure as code.  |    [Integrate ARM templates with Azure Pipelines](/azure/azure-resource-manager/templates/add-template-to-azure-pipelines), [Quickstart: Use an ARM template to deploy a Linux web app to Azure](apps/cd/azure/deploy-arm-template.md) |
 | Azure Container Registry                            | Managed, private Docker registry service   |  [Build and push Docker images to Azure Container Registry](ecosystems/containers/acr-template.md)    |
 | Azure Service Fabric                                | Distributed systems platform that can run in many environments, including Azure or on premises   |    [Tutorial: Deploy an application with CI/CD to a Service Fabric cluster](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts), [Service Fabric Application Deployment task](tasks/deploy/service-fabric-deploy.md)                                                         |

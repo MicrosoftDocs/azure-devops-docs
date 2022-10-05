@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.author: chcomley
 author: chcomley
 ms.topic: include

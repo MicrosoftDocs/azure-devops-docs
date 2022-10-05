@@ -2,7 +2,7 @@
 title: Add users or groups to a team or project
 description: How to guide to add users or groups to a team or project 
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.custom: contperf-fy21q4
 ms.author: kaelli
 author: KathrynEE
