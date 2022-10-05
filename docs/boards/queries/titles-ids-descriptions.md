@@ -3,7 +3,7 @@ title: Query by title, ID, or rich-text fields in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn about work queries based on titles, IDs, and rich-text fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: kaelli
 author: KathrynEE
@@ -105,14 +105,14 @@ While the `Contains` operator runs a table scan, which isn't only slower, but al
 
 Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
-![Editor for flat list query for filtering key words](media/example-work-item-queries/IC675039.png)   
+![Editor for flat list query for filtering key words.](media/example-work-item-queries/IC675039.png)   
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, *. These operators use the full-text search index.
 
 For example, specify **Contains Words** and **inform&#42;** to filter on a text field that contains *inform* or *information* or *informational*. 
 
 > [!div class="mx-imgBorder"] 
-> ![Use wild card with Contains Words](media/text-queries/contains-word-wildcard.png)
+> ![Use wild card with Contains Words.](media/text-queries/contains-word-wildcard.png)
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
@@ -202,8 +202,8 @@ For example, the following query shows how to query across all projects for acti
 
 You can use the following macros to list work items based on recent activity: 
 
-- **@MyRecentActivity**: List items you've recently viewed or modified
-- **@RecentMentions**: List items you were added to via an **@mention** in the last 30 days
+- **@MyRecentActivity**: List items you've recently viewed or modified.
+- **@RecentMentions**: List items you were added to via an **@mention** in the last 30 days.
 - **@RecentProjectActivity**: List items that have been recently created or modified in your project.
 
 Specify the **ID** field and either the **In** or **Not In** operators.  

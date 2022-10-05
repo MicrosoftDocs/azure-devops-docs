@@ -2,7 +2,7 @@
 title: About teams & Agile tools
 titleSuffix: Azure DevOps
 description: Overview for adding and configuring teams in Azure DevOps.
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: kaelli
 author: KathrynEE
@@ -61,10 +61,7 @@ You can rename the default team and reassign a new team as the default.
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-post-2018.png)
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2020"
 

@@ -3,13 +3,13 @@ title: Define, capture, triage, and manage bugs or code defects in Azure Boards
 titleSuffix: Azure Boards 
 description: Define, capture, and triage bugs and code defects to manage technical debt and maintain software quality. 
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 08/03/2022
 ---
 
 # Define, capture, triage, and manage software bugs in Azure Boards
@@ -496,7 +496,7 @@ You can use Power BI to create more complex reports than what you can get from a
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2020"  
+::: moniker range="< azure-devops-2022"  
 
 ### Pre-defined SQL Server bug reports
 

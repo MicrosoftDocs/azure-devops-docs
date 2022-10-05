@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 07/27/2021
+ms.date: 07/29/2022
 
 monikerRange: '<= azure-devops'
 ---
@@ -54,7 +54,7 @@ Environment variables are specific to the operating system you are using. They a
 
 System and user-defined variables also get injected as environment variables for your platform.  When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable name `any.variable` becomes the variable name `$ANY_VARIABLE`.
 
- There there are [variable naming restrictions](#variable-naming-restrictions) for environment variables (example: you can't use `secret` at the start of a variable name). 
+ There are [variable naming restrictions](#variable-naming-restrictions) for environment variables (example: you can't use `secret` at the start of a variable name). 
 
 ## Variable naming restrictions
 
@@ -132,7 +132,7 @@ Runtime expression variables are only expanded when they are used for a value, n
 
 Use macro syntax if you are providing input for a task. 
 
-Choose a runtime expression if you are working with [conditions](conditions.md) and [expressions](expressions.md). The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a runtime expression. 
+Choose a runtime expression if you are working with [conditions](conditions.md) and [expressions](expressions.md). The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a macro expression. 
 
 If you are defining a variable in a template, use a template expression.
 

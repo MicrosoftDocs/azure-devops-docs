@@ -3,7 +3,7 @@ title: Service hook consumers for Azure DevOps Services
 description: Service hooks consumer documentation for Azure DevOps Services
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
-ms.technology: devops-collab
+ms.subservice: azure-devops-service-hooks
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
@@ -225,7 +225,7 @@ Flowdock is chat and inbox for teams.
 
 ### Post a message to a team chat
 
-Post a message about the event to a team chat in Flowdock. To learn more, see [Flowdock Messages API](https://www.flowdock.com/api/messages).
+Post a message about the event to a team chat in Flowdock.
 
 * Consumer ID: **flowdock**
 * Action ID: **postMessageToChat**
@@ -233,7 +233,7 @@ Post a message about the event to a team chat in Flowdock. To learn more, see [F
 * Settings:
   * **flowAPIToken**
     * Flow API token
-    * The authorization token to post messages to a team inbox or a group chat. You can get the flow API Token from Flowdock ([account settings](https://www.flowdock.com/account/tokens)).
+    * The authorization token to post messages to a team inbox or a group chat. You can get the flow API Token from Flowdock (account settings).
     * Data type: **string**
     * Required: **Yes**
   * **flowName**
@@ -259,7 +259,7 @@ Post a message about the event to a team chat in Flowdock. To learn more, see [F
 
 ### Post a message to a team inbox
 
-Post a message about the event to a team inbox in Flowdock. To learn more, see [Flowdock Messages API](https://www.flowdock.com/api/messages).
+Post a message about the event to a team inbox in Flowdock.
 
 * Consumer ID: **flowdock**
 * Action ID: **postMessageToTeamInbox**

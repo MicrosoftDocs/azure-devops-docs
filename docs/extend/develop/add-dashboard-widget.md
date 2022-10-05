@@ -2,7 +2,7 @@
 title: Add a dashboard widget
 titleSuffix: Azure DevOps
 description: Tutorial for creating a widget that you can then add to a dashboard in Azure DevOps or Team Foundation Server (TFS)
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
 ms.author: chcomley

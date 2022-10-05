@@ -3,11 +3,12 @@ title: Merge folders and files
 titleSuffix: Azure Repos
 description: Learn how to use the graphical user interface of Visual Studio to merge together changes made in different branches in Azure Repos.
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 07/13/2022
 ms.custom: kr2b-contr-experiment
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 # Merge folders and files in Azure Repos

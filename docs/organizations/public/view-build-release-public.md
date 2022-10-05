@@ -2,7 +2,7 @@
 title: View environments, releases, pipelines 
 titleSuffix: Azure DevOps Services Public Project
 description: View builds and environments statuses in pipelines for a public project.
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.author: chcomley
 author: chcomley

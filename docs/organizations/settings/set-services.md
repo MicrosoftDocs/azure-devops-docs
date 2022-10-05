@@ -3,12 +3,12 @@ title: Turn a service on or off
 titleSuffix: Azure DevOps
 ms.custom: contperf-fy22q4
 description: Control which services are available for a project from the web portal for Azure DevOps.  
-ms.technology: devops-settings
+ms.subservice: azure-devops-settings
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= azure-devops-2019'  
-ms.date: 04/21/2022
+ms.date: 07/27/2022
 ---
 
 # Turn a service on or off
@@ -25,7 +25,7 @@ Control which services are available through the web portal, by turning a servic
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/change-project-level-permissions.md).
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must have an Azure DevOps project. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/change-project-level-permissions.md).
@@ -54,6 +54,7 @@ Enable and disable services within your project overview settings.
 5. Refresh your web browser to view the updates.
 
 The service we disabled is no longer present in the side bar of Azure DevOps.
+
 ## Related articles
 
 ::: moniker range="azure-devops"
@@ -62,7 +63,7 @@ The service we disabled is no longer present in the side bar of Azure DevOps.
 - [Change the project visibility, public or private](../public/make-project-public.md)
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [About user, team, project, and collection-level settings](about-settings.md)
 ::: moniker-end

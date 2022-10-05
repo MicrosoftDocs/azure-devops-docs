@@ -2,7 +2,7 @@
 title: Add users or groups to an access level 
 titleSuffix: Azure DevOps 
 description: Learn how to set the access level for a user or group based on their license 
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: quickstart
 ms.reviewer:  
@@ -50,7 +50,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
 
@@ -82,7 +82,7 @@ Changes you make to the access level settings take affect immediately. You can a
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Select the access level you want to manage.
 
@@ -145,7 +145,7 @@ You set an access level from its page. Choose **Set as default access level** as
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Stakeholder access level, set as default](media/change-access-levels/set-stakeholder-as-default-2019.png)
 ::: moniker-end

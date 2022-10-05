@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
 description: Learn how to use swimlanes to differentiate different types of work you track on the Kanban board in Azure Board.
 ms.custom: boards-kanban 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.author: kaelli
 author: KathrynEE

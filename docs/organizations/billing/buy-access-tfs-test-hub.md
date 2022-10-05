@@ -1,14 +1,14 @@
 ---
 title: Buy access to Azure Test Plans
 titleSuffix: Azure DevOps Server
-ms.custom: seodec18, freshness-fy22
+ms.custom: seodec18, freshness-fy22q1
 description: Steps for how to buy monthly access to Azure Test Plans. 
-ms.technology: devops-billing
+ms.subservice: azure-devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 01/24/2022
+ms.date: 08/05/2022
 monikerRange: '< azure-devops'
 ---
 # Buy access to Azure Test Plans
@@ -31,16 +31,16 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
    You can use Azure DevOps Server features, like Basic or Azure Test Plans up to your total entitlements across Visual Studio subscription purchases, Azure DevOps Server CALs, and paid users in Azure DevOps.
 
-2. Based on these numbers, pay for Basic users in your organization.  
+2. Based on your total entitlements, pay for Basic users in your organization.  
 
-   Free users can't access Azure DevOps Server. So, add five Basic users who aren’t going to use your server, to ensure everyone else has paid monthly access.
+   Free users can't access Azure DevOps Server. So, add five Basic users who won't use your server, to ensure everyone else has paid monthly access.
 
    Users get invited to your organization, but aren't required to use Azure DevOps. 
 
-3. As the Azure DevOps Server administrator, [add these same users to Azure DevOps Server](../../organizations/security/add-users-team-project.md#add-users-team-project). [Assign their access levels](../../organizations/security/change-access-levels.md).
+3. As the Azure DevOps Server Administrator, [add these same users to Azure DevOps Server](../../organizations/security/add-users-team-project.md#add-users-team-project). [Assign user access levels](../../organizations/security/change-access-levels.md).
 
     > [!NOTE]
-    > Azure DevOps Server doesn't detect what happens in Azure DevOps Services. Make sure to add these users to Azure DevOps Server and assign them the Basic access level.
+    > Azure DevOps Server doesn't detect what happens in Azure DevOps Services. Add these users to Azure DevOps Server and assign them the Basic access level.
     > If you stop paying for these users within your organization, your administrator should remove them from Azure DevOps Server or buy them an Azure DevOps Server CAL.
 
 ## Buy users monthly access to Azure Test Plans
@@ -54,9 +54,9 @@ For more information about the requirements to access Azure Test Plans, see [Cha
     These users get invited to your organization, but aren't required to use Azure DevOps Services. By assigning Basic + Test Plans, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). 
 
     > [!NOTE]
-    > These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
+    > Invited users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
 
-3. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). Give them [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
+3. As the Azure DevOps Server Administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). Give users [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
 
    Test Plans installs automatically in Azure DevOps Server. 
 
@@ -87,9 +87,9 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 
 ### Q: Why should I pay via Azure DevOps Services for my Azure DevOps Server users?
 
-A: You get many benefits, for example:
+A: You get many benefits paying via Azure DevOps Services, for example:
 
-- Paying via Azure DevOps Services gives your users the flexibility to access both Azure DevOps Server and Azure DevOps Services for the same price.
+- Users have the flexibility to access both Azure DevOps Server and Azure DevOps Services for the same price.
 - You can pay monthly for users who need temporary access.
 - You get all the purchasing capabilities that Azure offers like payment via credit card, through a Cloud Solution Provider (CSP) partner, through the Enterprise Agreement, and more.
 

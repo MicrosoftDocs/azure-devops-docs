@@ -3,13 +3,14 @@ title: Add protection to a repository resource
 description: Add checks and pipeline protection to a repository
 ms.custom: pipelinesresourcesrefresh
 ms.reviewer: vijayma
-ms.date: 12/22/2021
-monikerRange: '> azure-devops-2019'
+ms.date: 09/15/2022
+ms.topic: how-to
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Protect a repository resource
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
 
 You can add protection to your [repository resource](resources.md#define-a-repositories-resource) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
 
@@ -40,6 +41,7 @@ You must be a member of the [**Project Administrators** group](../../organizatio
    :::image type="content" source="media/create-check-repository.png" alt-text="Screenshot of configured check and Create button.":::
 
 Your repository has a resource check.
+
 ## Add pipeline permissions to a repository resource
 
 You can also set a repository to only be used on specific pipelines. Restricting a repository to specific pipelines prevents an unauthorized pipeline in your project from using your repository.

@@ -2,12 +2,12 @@
 title: .NET Client Libraries
 description: Easily integrate with Azure DevOps from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
-ms.technology: devops-ecosystem
+ms.subservice: azure-devops-ecosystem
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/05/2022
+ms.date: 07/28/2022
 ---
 
 # .NET client libraries
@@ -69,6 +69,7 @@ For the latest preview versions, see the [NuGet packages gallery](https://www.nu
 |[Microsoft.VisualStudio.Services.Search.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Search.Client)<br/>Provides access to the Search Service via public REST APIs.         |`Microsoft.VisualStudio.Services.Search.Shared.WebApi.dll`, `Microsoft.VisualStudio.Services.Search.WebApi.dll`         |
 |[Microsoft.TeamFoundation.PublishTestResults​](https://www.nuget.org/packages/Microsoft.TeamFoundation.PublishTestResults)<br/>This task can be used to Publish test results and upload test attachments on Azure DevOps. The following results formats are supported with this package: 1. JUnit - publish tests from Junit projects, 2. NUnit- publish tests from Nunit projects, 3. VSTest- publish tests from Visual Studio projects, 4. Xunit- publish tests from Xunit projects          |`Microsoft.TeamFoundation.TestClient.PublishTestResults.dll`         |
 |[Microsoft.VisualStudio.Services.Audit.WebApi](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Audit.WebApi)​<br/>Provides access to the Audit Service via public REST APIs.|`Microsoft.VisualStudio.Services.Audit.WebApi.dll`   |
+| [Microsoft.Azure.Pipelines.Policy.Client](https://www.nuget.org/packages/Microsoft.Azure.Pipelines.Policy.Client/19.207.0-preview)​<br/>Provides access to the pipeline approvals, checks, and authorization via public REST APIs.|`Microsoft.Azure.Pipelines.Policy.Client.dll`  |
 
 > [!TIP]
 > If you have an existing Windows application or service that uses the TFS Client Object Model, use `Microsoft.TeamFoundationServer.ExtendedClient`.

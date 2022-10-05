@@ -3,10 +3,11 @@ title: Status command
 titleSuffix: Azure Repos
 description: Status command
 ms.assetid: e9f0b3a1-b8b1-45cf-b113-9fea2948405d
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

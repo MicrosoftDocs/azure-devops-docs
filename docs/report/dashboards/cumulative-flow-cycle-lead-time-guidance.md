@@ -3,8 +3,7 @@ title: Cumulative flow guidance
 titleSuffix: Azure DevOps   
 description: Learn about using cumulative flow diagrams (CFD) to monitor the flow of work through a system.
 ms.custom: dashboards
-ms.prod: devops  
-ms.technology: devops-analytics  
+ms.subservice: azure-devops-analytics
 ms.topic: conceptual 
 ms.author: kaelli
 author: KathrynEE

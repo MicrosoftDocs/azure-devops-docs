@@ -3,7 +3,7 @@ title: Key concepts, objects, and terms
 titleSuffix: Azure DevOps
 description: Understand the key concepts that support navigation and managing projects available with Azure DevOps
 ms.custom: Navigation
-ms.technology: devops-collab 
+ms.subservice: azure-devops-projects 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

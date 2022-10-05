@@ -2,12 +2,13 @@
 title: Set Git repository permissions
 titleSuffix: Azure Repos
 description: Steps for how to grant or restrict access to a Git repository feature 
-ms.technology: devops-code-git 
+ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
+ms.subservice: azure-devops-repos-git
 ---
 
 
@@ -82,7 +83,7 @@ You can grant or restrict access to a repository by setting the permission state
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Set up upstream sources for your feed
 description: How to configure upstream sources for your Azure Artifacts feeds
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: conceptual
 ms.date: 02/16/2022
 monikerRange: '<= azure-devops'

@@ -2,7 +2,7 @@
 title: Export a list of users and their access levels
 titleSuffix: Azure DevOps
 description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
-ms.technology: devops-security
+ms.subservice: azure-devops-security
 ms.assetid: 
 ms.topic: how-to
 ms.reviewer:  
@@ -22,7 +22,7 @@ ms.date: 05/11/2022
 You can get a list of users and groups that have access to your organization in Azure DevOps by exporting users. The downloaded list also indicates which access level has been granted.
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 You can get a list of users and groups that have access to your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end
 
@@ -73,7 +73,7 @@ From your web portal, you can get a list of the users in your organization and v
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 

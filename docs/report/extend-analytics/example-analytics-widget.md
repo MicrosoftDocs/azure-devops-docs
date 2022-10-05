@@ -2,7 +2,7 @@
 title: Example of an Analytics Widget
 titleSuffix: Azure DevOps 
 description: Learn how to build your own Analytics widget to display in a dashboard in Azure DevOps.
-ms.technology: devops-analytics
+ms.subservice: azure-devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
 ms.author: kaelli
 author: KathrynEE

@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 05/25/2022
@@ -14,7 +14,7 @@ ms.date: 05/25/2022
 
 1. Select **npm**, and then select **Other**.
 
-1. Add a .npmrc file in the same directory as your package.json, and paste the following snippet into your file.
+1. Add a `.npmrc` file in the same directory as your package.json, and paste the following snippet into your file.
 
     ```JSON
     registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/
@@ -24,7 +24,7 @@ ms.date: 05/25/2022
 
 ### Set up credentials
 
-1. Copy the following snippet into your .npmrc file.
+1. Copy the following snippet into your `.npmrc` file.
 
     - **Organization-scoped feed**:
 
@@ -60,7 +60,7 @@ ms.date: 05/25/2022
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
-1. Open your *.npmrc* file and replace the placeholder *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* with your encoded personal access token you just created.
+1. Open your `.npmrc` file and replace the placeholder `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` with your encoded personal access token you just created.
 
 ::: moniker-end
 

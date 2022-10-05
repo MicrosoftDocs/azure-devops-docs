@@ -3,7 +3,7 @@ title: Get started with Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to sign up and start using Azure Boards. Use Azure Boards to add and track work items on a Kanban board.
 ms.custom: boards-get-started 
-ms.technology: devops-new-user
+ms.subservice: azure-devops-new-user
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE

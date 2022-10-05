@@ -3,7 +3,7 @@ title: Change or filter the view for your backlogs in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to switch views and enable from your product or portfolio backlogs in Azure Boards.
 ms.custom: "boards-backlogs, seodec18" 
-ms.technology: devops-agile
+ms.service: azure-devops-boards
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE

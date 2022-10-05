@@ -2,7 +2,7 @@
 title: Use @mentions in work items and pull requests 
 titleSuffix: Azure DevOps 
 description: Alert team members using the @mention control in work items and pull requests. 
-ms.technology: devops-collab
+ms.subservice: azure-devops-notifications
 ms.custom: quarterly-update
 toc: show
 ms.author: chcomley
@@ -23,8 +23,8 @@ The **@mention** control allows you to quickly add a user or group to a work ite
 For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers support searching all users and groups added to Azure AD, not only those users and groups added to your project. To limit the set to project members and groups, see [Manage your organization, Limit  identity search and selection](../user-guide/manage-organization-collection.md#limit-identity-selection).  
 
 > [!NOTE]
-> You can post an @mention via API. [Get the Azure DevOps User Id](/rest/api/azure/devops/wit/work-items/get-work-item?&preserve-view=true/view=azure-devops-rest-7.1), and then run the following code:
-> `"text": "<div><a href=\"#\" data-vss-mention=\"version:2.0,{variable}`
+> You can post an @mention via API. [Get the Azure DevOps User Id](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0), and then add the following html code:
+> `<div><a href="#" data-vss-mention="version:2.0,{user id}">@John Doe</a> Testing mentioning</div>`
 > For more information, see the [Microsoft Power Automate Community forum post](https://powerusers.microsoft.com/t5/Building-Flows/Mention-person-in-azure-devops-work-item/td-p/922467#:~:text=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Frest%2Fapi%2Fazure%2Fdevops%2Fwit%2Fcomments%2Fadd%3Fview%3Dazure-devops-rest-6.0%20You%20can%20use%20a%20html%20in%20the,of%20the%20devops%20user%20you%20want%20to%20mention.).
 
 ::: moniker-end

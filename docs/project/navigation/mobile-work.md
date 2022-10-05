@@ -3,7 +3,7 @@ title: View and update work items via a mobile browser
 titleSuffix: Azure DevOps
 description: View and update work items from your mobile client when using Azure DevOps
 ms.custom: Navigation
-ms.technology: devops-collab
+ms.subservice: azure-devops-projects
 ms.topic: how-to
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
 ms.author: kaelli

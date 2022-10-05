@@ -3,7 +3,7 @@ title: Resolve inactive organization owner and project collection administrator
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign a new owner to an organization when the current owner's inactive.
-ms.technology: devops-accounts
+ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
@@ -80,7 +80,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
    A notification of the ownership transfer with your provided justification is sent to all Azure DevOps Administrators in your Azure AD.
 
-   You're redirected to the organization overview page. If you want to transfer ownership to another user, see [Change organization Owner](change-organization-ownership.md).
+   You're redirected to the organization overview page. If you want to transfer ownership to another user, see [Change organization owner](change-organization-ownership.md).
 
 ## Related articles
 

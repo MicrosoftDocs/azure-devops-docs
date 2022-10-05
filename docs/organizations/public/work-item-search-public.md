@@ -2,7 +2,7 @@
 title: Search for work items
 titleSuffix: Azure DevOps Services Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects.  
-ms.technology: devops-public-projects
+ms.subservice: azure-devops-public-projects
 ms.assetid: 
 ms.author: chcomley
 author: chcomley

@@ -22,7 +22,7 @@
   expanded: true
 - name: Dashboards
   items:
-  - name: Add charts to a dashboard
+  - name: Add charts and built-in reports to a dashboard
     href: dashboards/add-charts-to-dashboard.md
   - name: Add Markdown to a dashboard
     href: dashboards/add-markdown-to-dashboard.md
@@ -36,7 +36,10 @@
   items:
   - name: Create work tracking charts
     href: dashboards/charts.md
-    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line, flat, query
+  - name: Configure charts for work items 
+    href: dashboards/configure-chart-work-items-widget.md
+    displayname: tags, flat, query
   - name: View/configure CFD
     href: dashboards/cumulative-flow.md
     displayname: cumulative flow diagram, in-context report, team, analytics
@@ -54,7 +57,7 @@
     displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation
 - name: Work tracking guidance
   items:
-  - name: Burndown guidance
+  - name: Burndown and burnup guidance
     href: dashboards/burndown-guidance.md
     displayname: scope increase, scope creep, risk
   - name: Cumulative flow & lead/cycle time guidance
@@ -83,8 +86,6 @@
   items:
   - name: Work item field index
     href: ../boards/work-items/guidance/work-item-field.md?bc=%252fazure%252fdevops%252freport%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freport%252ftoc.json
-  - name: Analytics work item fields  
-    href: ./powerbi/analytics-fields-reference.md
   - name: Rollup of work & other fields
     href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Reference

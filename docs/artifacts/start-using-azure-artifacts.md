@@ -1,12 +1,12 @@
 ---
 title: Azure Artifacts overview
 description: Learn about Azure Artifacts offering
-ms.technology: devops-artifacts
+ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: chcomley
-ms.date: 05/09/2022
+ms.date: 09/20/2022
 monikerRange: '<= azure-devops'
 ---
 
@@ -54,13 +54,13 @@ With Azure Artifacts, you can publish and consume different types of packages. S
 
 ## Feature availability
 
-| Package type                      | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
-|-----------------------------------|------------------------| --------------------------------------|  --------------------------------------------|
-| **NuGet packages**                | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
-| **npm packages**                  | Yes                    | Yes                                   | TFS 2017 and TFS 2018                        |
-| **Maven packages**                | Yes                    | Yes                                   | TFS 2018                                     |
-| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020| TFS 2018                                |
-| **Universal Packages**            | Yes                    | No                                    | No                                           |
+| Package type                      | Azure DevOps Services  |          Azure DevOps Server                 |                    TFS-2018                  |
+|-----------------------------------|------------------------|----------------------------------------------|----------------------------------------------|
+| **NuGet packages**                | Yes                    | Yes                                          | Yes                                          |
+| **npm packages**                  | Yes                    | Yes                                          | Yes                                          |
+| **Maven packages**                | Yes                    | Yes                                          | Yes                                          |
+| **Python packages**               | Yes                    | Server 2019 Update 1 and newer, Server 2020  | Yes                                          |
+| **Universal Packages**            | Yes                    | No                                           | No                                           |
 
 ## Artifacts free tier and upgrade
 
@@ -93,12 +93,10 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ### Q: Which artifacts count toward my total billed storage?
 
-A: You get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources. However,
-
-you don't get billed for Pipeline Artifacts, and Pipeline Caching.
+A: You get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources. However, you don't get billed for Pipeline Artifacts, and Pipeline Caching.
 
 > [!NOTE]
-> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, go to your recycle bin and delete them manually.
+> Packages in the recycle bin still count as part of your storage consumption. Those packages get deleted permanently after 30 days. If you want to delete them sooner, navigate to your recycle bin and delete them manually.
 
 ### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
 
@@ -122,7 +120,7 @@ The **used** column on the Billing page of your Organization gets updated once a
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
+A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier. If you used more than 2 GiB of storage, you can only read packages. You can't publish new packages until you lower your storage below 2 GiB. Or, you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
 ::: moniker-end
 

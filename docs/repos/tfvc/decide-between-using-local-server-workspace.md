@@ -3,10 +3,11 @@ title: Decide between using a local or a server workspace
 titleSuffix: Azure Repos
 description: Decide between using a local or a server workspace
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
-ms.technology: devops-code-tfvc
+ms.service: azure-devops-repos
 ms.topic: conceptual
 ms.date: 06/30/2022
 monikerRange: '<= azure-devops'
+ms.subservice: azure-devops-repos-tfvc
 ---
 
 

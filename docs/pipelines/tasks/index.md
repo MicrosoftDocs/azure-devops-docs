@@ -18,6 +18,16 @@ monikerRange: '<= azure-devops'
 
 This article provides an index of built-in tasks. To learn more about tasks, including creating custom tasks, custom extensions, and finding tasks on the Visual Studio Marketplace, see [Tasks concepts](../process/tasks.md).
 
+> [!NOTE]
+> Azure Pipelines is building a new task reference experience with the following improvements.
+> * Task input names and aliases are generated from the task source so they are always up to date.
+> * YAML syntax blocks are generated from the task source so they are up to date.
+> * Supports community contributions with integrated user content such as enhanced task input descriptions, remarks and examples.
+> * Provides task coverage for all supported Azure DevOps versions.
+> * Updated every sprint to cover the latest updates.
+>
+> For a preview, see [Azure Pipelines task index - preview](/azure/devops/pipelines/tasks/reference).
+
 [!INCLUDE [task-list](includes/task-list.md)]
 
 To learn more about tool installer tasks, see [Tool installers](../process/tasks.md#tool-installers).

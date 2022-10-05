@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.technology: devops-cicd
+ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
@@ -755,7 +755,7 @@ Otherwise, it is set to <code>False</code>.</td>
 <tr>
 <td>System.StageName</td>
 <td>A string-based identifier for a stage, typically used for expressing dependencies and accessing output variables.</td>
-<td>Yes</td>
+<td>No</td>
 </tr>
 
 
